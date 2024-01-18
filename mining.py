@@ -1,6 +1,7 @@
 # Import necessary libraries
 from pydriller import *
 import pandas as pd
+from pandas import *
 import matplotlib.pyplot as plt
 import numpy as np
 from dateutil.relativedelta import relativedelta
@@ -12,6 +13,9 @@ import os
 # Insert the paths to the repositories you want to analyse:
 
 repo_paths = [
+    'https://github.com/asdasudbasuidbas/aoufbaui',
+    'https://github.com/dontcare/httpparser',
+    'https://github.com/0xproject/0x-monorepo',
     'https://github.com/cab202/quty',
     'https://github.com/jupyter/jupyter',
     'https://github.com/Kanaries/Rath',
@@ -27,7 +31,7 @@ def extract_github_name(url):
     URL_parts = url.split('/')
     try:
         index = URL_parts.index('github.com')
-        return URL_parts[index + 1] + "-" + URL_parts[index + 2]# Return name after 'github.com'
+        return URL_parts[index + 1] + "-" + URL_parts[index + 2] # Return name after 'github.com'
     except (ValueError, IndexError):
         return "Invalid URL or username not found"
 
@@ -76,8 +80,12 @@ def extract_commits(repo_path):
                 }  
                 commits_data.append(commit_data)
         print(f"Repository {repo_path} extracted successfully.\n")
+    except FileNotFoundError:
+        print(f"Repository {repo_path} not found. Skipping...")
+        return None
     except Exception as e:
         print(f"Error processing repository {repo_path}: {e}")
+        return None
     return commits_data
 
 #--------------------------------------------------------------------------------------------------------------
@@ -108,18 +116,23 @@ def plot_commit_impact_by_top_authors(df, github_name):
     # Filter the DataFrame to include only the top 10 contributors
     top_authors_df = df[df['Author Name'].isin(top_authors)]
 
+    if len(top_authors) < 10:
+        amount_of_authours = len(top_authors)
+    else:
+        amount_of_authours = 10
+
     # Aggregate insertions and deletions for each of the top contributors
     author_impact = top_authors_df.groupby('Author Name').agg({'insertions': 'sum', 'deletions': 'sum'})
     author_impact.plot(kind='bar', stacked=True)
 
     plt.xlabel('Author')
     plt.ylabel('Lines Changed (Insertions + Deletions)')
-    plt.title(f"Commit Impact by Top 10 Authors for {github_name}")
+    plt.title(f"Commit Impact by Top {amount_of_authours} Authors for {github_name}")
     plt.xticks(rotation=45, ha='right')
     plt.subplots_adjust(bottom=0.4)
 
     plt.savefig(os.path.join(github_name, f"{github_name}_commit_impact_by_top_authors.png"))
-    print(f"Commit impact by top 10 authors for {github_name} plotted successfully.")
+    print(f"Commit Impact by Top {amount_of_authours} authors for {github_name} plotted successfully.")
     plt.close()
 
 
@@ -145,15 +158,27 @@ def title_first_character_capital(title):
 
 
 def calculate_commit_scores(commit_message):
+
+    # Maximum allowed length for a commit message title
+    MAX_TITLE_LENGTH = 100  # Can adjust
+
+    if pd.isna(commit_message) or not commit_message.strip():
+        # Handle empty or invalid commit messages
+        return {
+            'length_of_title': 0,
+            'title_ends_with_dots': 0,
+            'title_first_character_capital': 0,
+            'average_score': 0
+        }
     # Assume the first line of commit_message is the title
-    title = commit_message.split('\n', 1)[0]    
+    title = commit_message.split('\n', 1)[0][:MAX_TITLE_LENGTH]  # Truncate long titles
+
         
-    # Calculate scores using the defined functions
+    # Calculate scores using the defined functionss
     scores = {
         'length_of_title': length_of_title_score(title),
         'title_ends_with_dots': title_ends_with_dots(title),
         'title_first_character_capital': title_first_character_capital(title),
-        # Calculate other scores if useful??? Ask Gowri?
     }
     
     # Calculate the average score for this commit message
@@ -200,7 +225,6 @@ def calculate_commit_frequency(df):
 
     return commits_per_day, commits_per_week, commits_per_month
 
-
 def calculate_percentage_with_5_or_more_commits(df):
     author_commit_counts = df['Author Name'].value_counts()
     contributors_with_5_or_more = author_commit_counts[author_commit_counts >= 5]
@@ -221,6 +245,10 @@ def main():
 
         if not os.path.exists(csv_path):
             commits_data = extract_commits(repo_path)
+            if commits_data is None or len(commits_data) == 0:
+                print(f"Skipping repository {repo_path} due to errors or not found.")
+                print("----------------------------------------------------------------")
+                continue
             create_folder(github_name)
             # Export data to CSV
             with open(csv_path, mode='w', newline='', encoding='utf-8') as file:
@@ -231,10 +259,14 @@ def main():
         else:
             print(f"CSV file {csv_path} already exists. Skipping data extraction.\n")
 
-        # Perform analysis on the commits data
-        print(f"Starting data analysis for {github_name}...\n")
-        df = pd.read_csv(csv_path)
-        perform_analysis(df, github_name, analysis_csv_path)
+        # Try to perform analysis on the commits data
+        try:
+            print(f"Starting data analysis for {github_name}...\n")
+            df = pd.read_csv(csv_path)
+            perform_analysis(df, github_name, analysis_csv_path)
+        except Exception as e:
+            print(f"Error during analysis of {github_name}: {e}")
+        
         print("----------------------------------------------------------------")
 
 
@@ -306,5 +338,5 @@ def perform_analysis(df, github_name, analysis_csv_path):
         writer.writerow(analysis_data)
         print(f"Analysis data exported to CSV successfully in {analysis_csv_path}") 
 
-# Run the script
+# # Run the script
 main()
