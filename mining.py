@@ -13,7 +13,7 @@ import os
 # Insert the paths to the repositories you want to analyse:
 
 repo_paths = [
-    'https://github.com/asdasudbasuidbas/aoufbaui',
+    'http://github.com/pythological/unification/',
     'https://github.com/dontcare/httpparser',
     'https://github.com/0xproject/0x-monorepo',
     'https://github.com/cab202/quty',
@@ -158,33 +158,31 @@ def title_first_character_capital(title):
 
 
 def calculate_commit_scores(commit_message):
+    try:
+        # Assume the first line of commit_message is the title
+        title = str(commit_message).split('\n', 1)[0]
 
-    # Maximum allowed length for a commit message title
-    MAX_TITLE_LENGTH = 100  # Can adjust
+        # Calculate scores using the defined functions
+        scores = {
+            'length_of_title': length_of_title_score(title),
+            'title_ends_with_dots': title_ends_with_dots(title),
+            'title_first_character_capital': title_first_character_capital(title),
+        }
 
-    if pd.isna(commit_message) or not commit_message.strip():
-        # Handle empty or invalid commit messages
+        # Calculate the average score for this commit message
+        average_score = sum(scores.values()) / len(scores)
+        scores['average_score'] = average_score
+        return scores
+
+    except Exception:
+        # Handle any error by returning nothing or default scores
         return {
             'length_of_title': 0,
             'title_ends_with_dots': 0,
             'title_first_character_capital': 0,
             'average_score': 0
         }
-    # Assume the first line of commit_message is the title
-    title = commit_message.split('\n', 1)[0][:MAX_TITLE_LENGTH]  # Truncate long titles
 
-        
-    # Calculate scores using the defined functionss
-    scores = {
-        'length_of_title': length_of_title_score(title),
-        'title_ends_with_dots': title_ends_with_dots(title),
-        'title_first_character_capital': title_first_character_capital(title),
-    }
-    
-    # Calculate the average score for this commit message
-    average_score = sum(scores.values()) / len(scores)
-    scores['average_score'] = average_score
-    return scores
 
 
 
@@ -249,13 +247,18 @@ def main():
                 print(f"Skipping repository {repo_path} due to errors or not found.")
                 print("----------------------------------------------------------------")
                 continue
-            create_folder(github_name)
+            
             # Export data to CSV
-            with open(csv_path, mode='w', newline='', encoding='utf-8') as file:
-                writer = csv.DictWriter(file, fieldnames=commits_data[0].keys())
-                writer.writeheader()
-                writer.writerows(commits_data)
-                print(f"Data exported to CSV successfully in {csv_path}.\n")
+            if commits_data:
+                create_folder(github_name)
+                with open(csv_path, mode='w', newline='', encoding='utf-8') as file:
+                    writer = csv.DictWriter(file, fieldnames=commits_data[0].keys())
+                    writer.writeheader()
+                    writer.writerows(commits_data)
+                    print(f"Data exported to CSV successfully in {csv_path}.\n")
+            else:
+                print(f"No commit data extracted for {github_name}.")
+                continue
         else:
             print(f"CSV file {csv_path} already exists. Skipping data extraction.\n")
 
