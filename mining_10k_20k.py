@@ -1,11 +1,15 @@
 # Import necessary libraries
 from pydriller import *
 import pandas as pd
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 from dateutil.relativedelta import relativedelta
 import csv
 import os
+
+matplotlib.use('Agg')
+
 
 #--------------------------------------------------------------------------------------------------------------
 
@@ -19,14 +23,6 @@ for repo in r:
 
 print(repo_paths[0])
 
-#repo_paths = [
-#    'https://github.com/cab202/quty',
-#    'https://github.com/jupyter/jupyter',
-#    'https://github.com/Kanaries/Rath',
-#    'https://github.com/jupyterhub/jupyterhub',
-#    'https://github.com/trimstray/the-book-of-secret-knowledge'
-#]
-
 #--------------------------------------------------------------------------------------------------------------
 
 # Extract the name of the repository from the URL and create an appropriately named folder
@@ -35,7 +31,7 @@ def extract_github_name(url):
     URL_parts = url.split('/')
     try:
         index = URL_parts.index('github.com')
-        return URL_parts[index + 1] + "-" + URL_parts[index + 2]# Return name after 'github.com'
+        return URL_parts[index + 1] + "-" + URL_parts[index + 2] # Return name after 'github.com'
     except (ValueError, IndexError):
         return "Invalid URL or username not found"
 
@@ -84,8 +80,12 @@ def extract_commits(repo_path):
                 }  
                 commits_data.append(commit_data)
         print(f"Repository {repo_path} extracted successfully.\n")
+    except FileNotFoundError:
+        print(f"Repository {repo_path} not found. Skipping...")
+        return None
     except Exception as e:
         print(f"Error processing repository {repo_path}: {e}")
+        return None
     return commits_data
 
 #--------------------------------------------------------------------------------------------------------------
@@ -116,18 +116,23 @@ def plot_commit_impact_by_top_authors(df, github_name):
     # Filter the DataFrame to include only the top 10 contributors
     top_authors_df = df[df['Author Name'].isin(top_authors)]
 
+    if len(top_authors) < 10:
+        amount_of_authours = len(top_authors)
+    else:
+        amount_of_authours = 10
+
     # Aggregate insertions and deletions for each of the top contributors
     author_impact = top_authors_df.groupby('Author Name').agg({'insertions': 'sum', 'deletions': 'sum'})
     author_impact.plot(kind='bar', stacked=True)
 
     plt.xlabel('Author')
     plt.ylabel('Lines Changed (Insertions + Deletions)')
-    plt.title(f"Commit Impact by Top 10 Authors for {github_name}")
+    plt.title(f"Commit Impact by Top {amount_of_authours} Authors for {github_name}")
     plt.xticks(rotation=45, ha='right')
     plt.subplots_adjust(bottom=0.4)
 
     plt.savefig(os.path.join(github_name, f"{github_name}_commit_impact_by_top_authors.png"))
-    print(f"Commit impact by top 10 authors for {github_name} plotted successfully.")
+    print(f"Commit Impact by Top {amount_of_authours} authors for {github_name} plotted successfully.")
     plt.close()
 
 
@@ -153,21 +158,31 @@ def title_first_character_capital(title):
 
 
 def calculate_commit_scores(commit_message):
-    # Assume the first line of commit_message is the title
-    title = commit_message.split('\n', 1)[0]    
-        
-    # Calculate scores using the defined functions
-    scores = {
-        'length_of_title': length_of_title_score(title),
-        'title_ends_with_dots': title_ends_with_dots(title),
-        'title_first_character_capital': title_first_character_capital(title),
-        # Calculate other scores if useful??? Ask Gowri?
-    }
-    
-    # Calculate the average score for this commit message
-    average_score = sum(scores.values()) / len(scores)
-    scores['average_score'] = average_score
-    return scores
+    try:
+        # Assume the first line of commit_message is the title
+        title = str(commit_message).split('\n', 1)[0]
+
+        # Calculate scores using the defined functions
+        scores = {
+            'length_of_title': length_of_title_score(title),
+            'title_ends_with_dots': title_ends_with_dots(title),
+            'title_first_character_capital': title_first_character_capital(title),
+        }
+
+        # Calculate the average score for this commit message
+        average_score = sum(scores.values()) / len(scores)
+        scores['average_score'] = average_score
+        return scores
+
+    except Exception:
+        # Handle any error by returning nothing or default scores
+        return {
+            'length_of_title': 0,
+            'title_ends_with_dots': 0,
+            'title_first_character_capital': 0,
+            'average_score': 0
+        }
+
 
 
 
@@ -189,7 +204,7 @@ def gini_coefficient(commit_counts):
 
 
 def calculate_commit_frequency(df):
-    df['Author Date'] = pd.to_datetime(df['Author Date'])
+    df['Author Date'] = pd.to_datetime(df['Author Date'], utc=True)
 
     # Calculate the total time span of the commits
     time_span = df['Author Date'].max() - df['Author Date'].min()
@@ -207,7 +222,6 @@ def calculate_commit_frequency(df):
     commits_per_month = len(df) / months
 
     return commits_per_day, commits_per_week, commits_per_month
-
 
 def calculate_percentage_with_5_or_more_commits(df):
     author_commit_counts = df['Author Name'].value_counts()
@@ -229,20 +243,33 @@ def main():
 
         if not os.path.exists(csv_path):
             commits_data = extract_commits(repo_path)
-            create_folder(github_name)
+            if commits_data is None or len(commits_data) == 0:
+                print(f"Skipping repository {repo_path} due to errors or not found.")
+                print("----------------------------------------------------------------")
+                continue
+            
             # Export data to CSV
-            with open(csv_path, mode='w', newline='', encoding='utf-8') as file:
-                writer = csv.DictWriter(file, fieldnames=commits_data[0].keys())
-                writer.writeheader()
-                writer.writerows(commits_data)
-                print(f"Data exported to CSV successfully in {csv_path}.\n")
+            if commits_data:
+                create_folder(github_name)
+                with open(csv_path, mode='w', newline='', encoding='utf-8') as file:
+                    writer = csv.DictWriter(file, fieldnames=commits_data[0].keys())
+                    writer.writeheader()
+                    writer.writerows(commits_data)
+                    print(f"Data exported to CSV successfully in {csv_path}.\n")
+            else:
+                print(f"No commit data extracted for {github_name}.")
+                continue
         else:
             print(f"CSV file {csv_path} already exists. Skipping data extraction.\n")
 
-        # Perform analysis on the commits data
-        print(f"Starting data analysis for {github_name}...\n")
-        df = pd.read_csv(csv_path)
-        perform_analysis(df, github_name, analysis_csv_path)
+        # Try to perform analysis on the commits data
+        try:
+            print(f"Starting data analysis for {github_name}...\n")
+            df = pd.read_csv(csv_path)
+            perform_analysis(df, github_name, analysis_csv_path)
+        except Exception as e:
+            print(f"Error during analysis of {github_name}: {e}")
+        
         print("----------------------------------------------------------------")
 
 
@@ -314,5 +341,5 @@ def perform_analysis(df, github_name, analysis_csv_path):
         writer.writerow(analysis_data)
         print(f"Analysis data exported to CSV successfully in {analysis_csv_path}") 
 
-# Run the script
+# # Run the script
 main()

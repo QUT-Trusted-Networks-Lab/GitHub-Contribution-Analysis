@@ -12,17 +12,23 @@ import os
 
 # Insert the paths to the repositories you want to analyse:
 
-repo_paths = [
-    'http://github.com/pythological/unification/',
-    'https://github.com/dontcare/httpparser',
-    'https://github.com/0xproject/0x-monorepo',
-    'https://github.com/cab202/quty',
-    'https://github.com/jupyter/jupyter',
-    'https://github.com/Kanaries/Rath',
-    'https://github.com/jupyterhub/jupyterhub',
-    'https://github.com/trimstray/the-book-of-secret-knowledge'
-]
+f = open('github_top800.csv')
+reader = csv.reader(f)
+repo_paths=[]
+for r in reader:
+    repo_paths.append(r[0])
 
+# repo_paths = [
+#     'http://github.com/pythological/unification/',
+#     'https://github.com/dontcare/httpparser',
+#     'https://github.com/0xproject/0x-monorepo',
+#     'https://github.com/cab202/quty',
+#     'https://github.com/jupyter/jupyter',
+#     'https://github.com/Kanaries/Rath',
+#     'https://github.com/jupyterhub/jupyterhub',
+#     'https://github.com/trimstray/the-book-of-secret-knowledge'
+
+print(repo_paths[0])
 #--------------------------------------------------------------------------------------------------------------
 
 # Extract the name of the repository from the URL and create an appropriately named folder
@@ -204,7 +210,7 @@ def gini_coefficient(commit_counts):
 
 
 def calculate_commit_frequency(df):
-    df['Author Date'] = pd.to_datetime(df['Author Date'])
+    df['Author Date'] = pd.to_datetime(df['Author Date'], utc=True)
 
     # Calculate the total time span of the commits
     time_span = df['Author Date'].max() - df['Author Date'].min()
