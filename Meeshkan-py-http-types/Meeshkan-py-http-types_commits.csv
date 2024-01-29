@@ -1,0 +1,217 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+36b567a602c205064ff5886bbf181ac33fd70ebf,First commit.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-09 11:24:33+02:00,-7200,2019-12-09 11:24:33+02:00,-7200,True,False,"['.gitignore', 'README.md', '__init__.py', 'pyrightconfig.json', 'pytest.ini', 'setup.py', '__init__.py']",[],0,161,161,7,1.0,1.0,1.0
+1c24ba23289ce76b4f8e8c93a102c6b020e2437a,Add boilerplate.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-09 11:30:41+02:00,-7200,2019-12-09 11:30:41+02:00,-7200,True,False,"['README.md', '__init__.py', 'setup.py']",['36b567a602c205064ff5886bbf181ac33fd70ebf'],2,18,20,3,,,
+df72403e43dcae017e637166940025e73d15b7e1,"Add request and response types. (#1)
+
+* Add types.
+
+* Add RequestResponsePair.
+
+* Remove extra import.",Kimmo Sääskilahti,kimmo@meeshkan.com,GitHub,noreply@github.com,2019-12-10 10:50:46+02:00,-7200,2019-12-10 10:50:46+02:00,-7200,True,False,['__init__.py'],['1c24ba23289ce76b4f8e8c93a102c6b020e2437a'],5,112,117,1,,,
+57e02ce55ec823e412ec3cf5fcee76110af3164b,Remove typings paths.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-10 10:54:03+02:00,-7200,2019-12-10 10:54:03+02:00,-7200,True,False,['pyrightconfig.json'],['df72403e43dcae017e637166940025e73d15b7e1'],1,0,1,1,,,
+1c788a0928d136d9d407d4ba8b1ce48874780316,Add upload command.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-10 10:56:32+02:00,-7200,2019-12-10 10:56:32+02:00,-7200,True,False,['setup.py'],['57e02ce55ec823e412ec3cf5fcee76110af3164b'],1,25,26,1,1.0,1.0,1.0
+c78e49660de6b90dfbddd5b64ae9c9d8a350cda1,Fix setup.py command.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-10 13:16:16+02:00,-7200,2019-12-10 13:16:16+02:00,-7200,True,False,"['.gitignore', 'setup.py']",['1c788a0928d136d9d407d4ba8b1ce48874780316'],1,3,4,2,,,
+7efa10f64ad13b2125621116ba98b480932d5f44,"Refactor exports, add tests. (#2)
+
+* Add tests and refactor.
+
+* Refactor a bit.",Kimmo Sääskilahti,kimmo@meeshkan.com,GitHub,noreply@github.com,2019-12-10 13:25:47+02:00,-7200,2019-12-10 13:25:47+02:00,-7200,True,False,"['__init__.py', 'types.py', 'types_test.py']",['c78e49660de6b90dfbddd5b64ae9c9d8a350cda1'],116,147,263,3,1.0,1.0,1.0
+64c52d1fa063af851101bb9bfc607f7cc6958c10,Fix command name.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-10 13:27:06+02:00,-7200,2019-12-10 13:27:06+02:00,-7200,True,False,['setup.py'],['7efa10f64ad13b2125621116ba98b480932d5f44'],1,1,2,1,,,
+a1ffb8e1705f51ab971fa9e997e5d0b5db12a932,Add .circleci.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-10 13:30:03+02:00,-7200,2019-12-10 13:30:03+02:00,-7200,True,False,['config.yml'],['64c52d1fa063af851101bb9bfc607f7cc6958c10'],0,30,30,1,,,
+9681fbbf30f508dddabc349da26915cefcdac08b,Remove upgrade.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-10 13:33:49+02:00,-7200,2019-12-10 13:33:49+02:00,-7200,True,False,['config.yml'],['a1ffb8e1705f51ab971fa9e997e5d0b5db12a932'],1,1,2,1,,,
+6c3c18cb8cf523b47c03b77d82be9032fb7f58b9,"Add pyright step. (#3)
+
+* Try add pyright.
+
+* Tweak path.
+
+* Break types for test.
+
+* Try adding +e.
+
+* Try pipenv shell.
+
+* Another hack.
+
+* Try without setup.py.
+
+* Exit with correct code.
+
+* One more try.
+
+* Try without pipenv.
+
+* Use pyright directly.
+
+* Fix typecheck.
+
+* Do not use python setup.py for test.
+
+* Raise errors.
+
+* Raise also from build.",Kimmo Sääskilahti,kimmo@meeshkan.com,GitHub,noreply@github.com,2019-12-10 15:01:38+02:00,-7200,2019-12-10 15:01:38+02:00,-7200,True,False,"['config.yml', 'setup.py']",['9681fbbf30f508dddabc349da26915cefcdac08b'],12,34,46,2,1.0,1.0,1.0
+d074cba4bbb22ded6ee30394249e47d9de5176b5,Refactor.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-10 15:09:23+02:00,-7200,2019-12-10 15:09:23+02:00,-7200,True,False,['types.py'],['6c3c18cb8cf523b47c03b77d82be9032fb7f58b9'],10,15,25,1,,,
+aaeb77c580d73971fd6b5bb3d194a3bcee318cd4,Add utils.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-10 15:12:31+02:00,-7200,2019-12-10 15:12:31+02:00,-7200,True,False,"['__init__.py', 'utils.py', 'types_test.py']",['d074cba4bbb22ded6ee30394249e47d9de5176b5'],1,7,8,3,,,
+7a0dcafdde5b0776072226842ed272fbf36c64c1,Add badge.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-10 15:18:16+02:00,-7200,2019-12-10 15:18:16+02:00,-7200,True,False,['README.md'],['aaeb77c580d73971fd6b5bb3d194a3bcee318cd4'],0,2,2,1,,,
+5c721a4047bbc39e89c453ad1dd8a1142d582804,"Add utils for parsing requests and responses (#4)
+
+* Add creation utils.
+
+* Add from_url builder, tests to fix.
+
+* Implement stuff.
+
+* Add test for query parameter.
+
+* Change the type of query to allow a list.
+
+* Fix typechecks.
+
+* Remove outdated comment.",Kimmo Sääskilahti,kimmo@meeshkan.com,GitHub,noreply@github.com,2019-12-13 09:34:21+02:00,-7200,2019-12-13 09:34:21+02:00,-7200,True,False,"['types.py', 'utils.py', 'sample.json', 'types_test.py', 'utils_test.py']",['7a0dcafdde5b0776072226842ed272fbf36c64c1'],7,255,262,5,0.5590062111801242,1.0,0.8136645962732919
+465eb9aa60d08f3870c2a7d2706ed4238f892f69,Update README.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-13 09:44:20+02:00,-7200,2019-12-13 09:44:20+02:00,-7200,True,False,['README.md'],['5c721a4047bbc39e89c453ad1dd8a1142d582804'],4,57,61,1,,,
+b62999a14ff47ca23ce60cedc7ff0ba5f1eb015e,Update README more.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-13 09:49:22+02:00,-7200,2019-12-13 09:49:22+02:00,-7200,True,False,"['README.md', 'setup.py']",['465eb9aa60d08f3870c2a7d2706ed4238f892f69'],6,21,27,2,,,
+50831d9d4a8ad26b1c87e5b90c05d6f34892ca4e,Fix a link.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-13 09:51:55+02:00,-7200,2019-12-13 09:51:55+02:00,-7200,True,False,['README.md'],['b62999a14ff47ca23ce60cedc7ff0ba5f1eb015e'],1,1,2,1,,,
+531446cb8ef9c66a5411ca790ca254a595dbf93b,Remove extra lines.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-13 09:52:34+02:00,-7200,2019-12-13 09:52:34+02:00,-7200,True,False,['README.md'],['50831d9d4a8ad26b1c87e5b90c05d6f34892ca4e'],2,0,2,1,,,
+67af4acb6d21a29a210dd64c136bdd31a6d67e82,Bump the version to 0.0.1.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-13 10:05:12+02:00,-7200,2019-12-13 10:05:12+02:00,-7200,True,False,['setup.py'],['531446cb8ef9c66a5411ca790ca254a595dbf93b'],1,1,2,1,,,
+6616b77a2227894261960aa2583b6b8d3905f263,Require recent typeguard.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-13 11:23:46+02:00,-7200,2019-12-13 11:23:46+02:00,-7200,True,False,['setup.py'],['67af4acb6d21a29a210dd64c136bdd31a6d67e82'],1,1,2,1,,,
+758a75c5c4600cc8c4385cf8d1be05c83bdaef51,Make body optional in from_dict.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-19 15:32:00+02:00,-7200,2019-12-19 15:32:00+02:00,-7200,True,False,"['utils.py', 'utils_test.py']",['6616b77a2227894261960aa2583b6b8d3905f263'],0,22,22,2,1.0,1.0,1.0
+edb122063265f7856725761e426e323d0043206b,Bump the version.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-19 15:32:42+02:00,-7200,2019-12-19 15:32:42+02:00,-7200,True,False,['setup.py'],['758a75c5c4600cc8c4385cf8d1be05c83bdaef51'],1,1,2,1,,,
+6df31138e0b7485fe6a118b7d4f9f0170db11971,"Rename body_as_json and status_code. (#6)
+
+* Rename body_as_json and status_code.
+
+* Update readme.",Kimmo Sääskilahti,kimmo@meeshkan.com,GitHub,noreply@github.com,2019-12-19 16:46:43+02:00,-7200,2019-12-19 16:46:43+02:00,-7200,True,False,"['README.md', 'types.py', 'utils.py', 'sample.json', 'types_test.py']",['edb122063265f7856725761e426e323d0043206b'],15,21,36,5,,,
+c3aabfc6d845ed7c3c740379df0382387b6b5f0c,Bump version.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2019-12-19 16:47:31+02:00,-7200,2019-12-19 16:47:31+02:00,-7200,True,False,['setup.py'],['6df31138e0b7485fe6a118b7d4f9f0170db11971'],1,1,2,1,,,
+46e6321f9c6053143a8ed6e5ac1d5ab1a9375cd8,Add LICENSE file and pypi and license badges,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-01-22 16:27:57+01:00,-3600,2020-01-23 08:28:53+01:00,-3600,True,False,"['LICENSE', 'README.md']",['c3aabfc6d845ed7c3c740379df0382387b6b5f0c'],1,24,25,2,,,
+809c40f24ac8736d84564b5926ea116d339d53e6,"Use covariant types Sequence and Mapping. (#9)
+
+* Use covariant types.
+
+* Clean-up.",Kimmo Sääskilahti,kimmo@meeshkan.com,GitHub,noreply@github.com,2020-01-23 15:51:48+02:00,-7200,2020-01-23 15:51:48+02:00,-7200,True,False,['types.py'],['46e6321f9c6053143a8ed6e5ac1d5ab1a9375cd8'],3,3,6,1,,,
+30094648deffc47f85ad883e4cac1ab04abecf36,Rename RequestResponsePair to HttpExchange,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-01-24 02:06:50+01:00,-3600,2020-01-24 02:06:50+01:00,-3600,True,False,"['README.md', 'types.py', 'utils.py', 'utils_test.py']",['809c40f24ac8736d84564b5926ea116d339d53e6'],17,17,34,4,,,
+f0593e113d561deee80392ea90e5e275b9c13e81,"Revert ""Rename RequestResponsePair to HttpExchange""
+
+This reverts commit 30094648deffc47f85ad883e4cac1ab04abecf36.",Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-01-24 02:07:39+01:00,-3600,2020-01-24 02:07:39+01:00,-3600,True,False,"['README.md', 'types.py', 'utils.py', 'utils_test.py']",['30094648deffc47f85ad883e4cac1ab04abecf36'],17,17,34,4,,,
+ce67acbcd7b4a5dba18e52107a2a00eb3caff85e,Rename RequestResponsePair to HttpExchange,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-01-24 02:09:21+01:00,-3600,2020-01-24 09:21:51+01:00,-3600,True,False,"['README.md', 'types.py', 'utils.py', 'utils_test.py']",['f0593e113d561deee80392ea90e5e275b9c13e81'],17,17,34,4,,,
+1e3fe6bee1d4a93735e506ecac6bf1e49e425a8e,Add HttpExchangeBuilder.from_jsonl(),Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-01-24 02:58:00+01:00,-3600,2020-01-24 09:21:51+01:00,-3600,True,False,"['utils.py', 'sample.jsonl', 'utils_test.py']",['ce67acbcd7b4a5dba18e52107a2a00eb3caff85e'],1,20,21,3,1.0,1.0,1.0
+ecd8dded34421b45dbbd2efaed9431fe433347a4,Bump version to 0.0.4.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2020-01-27 10:01:31+02:00,-7200,2020-01-27 10:01:31+02:00,-7200,True,False,['setup.py'],['1e3fe6bee1d4a93735e506ecac6bf1e49e425a8e'],1,1,2,1,,,
+63046a2202a5462180a1f269509ed631ae6d7130,"Update to new schema (res->response, req->request)",Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-01-27 23:14:08+01:00,-3600,2020-01-28 21:22:38+01:00,-3600,True,False,"['.gitignore', 'types.py', 'utils.py', 'sample.json', 'sample.jsonl', 'utils_test.py']",['ecd8dded34421b45dbbd2efaed9431fe433347a4'],16,17,33,6,,,
+8d9fa9fbece44bd804946f93d626b29636926fe7,"Require only one of path and (pathname, query)
+
+Requiring data producers to only write either of
+- path
+- pathname and query
+will make it easier and removes duplication in the format.
+
+The change is transparent to the user of python code since the
+missing properties are recreated from the others on parsing.",Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-01-30 12:32:17+01:00,-3600,2020-01-30 14:00:34+01:00,-3600,True,False,"['utils.py', 'sample.jsonl', 'utils_test.py']",['63046a2202a5462180a1f269509ed631ae6d7130'],12,43,55,3,0.0,0.0,1.0
+3f055f53854b01b83ba08022d2233c4ee586ac67,"Add support for timestamp fields.
+
+Also adds HttpExchangeReader and HttpExchangeWriter classes.",Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-01-31 14:20:52+01:00,-3600,2020-02-03 22:55:04+01:00,-3600,True,False,"['README.md', 'types.py', 'utils.py', 'setup.py', 'sample.json', 'types_test.py', 'utils_test.py']",['8d9fa9fbece44bd804946f93d626b29636926fe7'],26,189,215,7,0.9193548387096774,0.9354838709677419,0.9838709677419355
+2f6e45fb75b51503ba7848ad979de8f54fd9a899,Avoid optional timestamp and drop check_type,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-03 10:45:38+01:00,-3600,2020-02-03 22:55:04+01:00,-3600,True,False,"['types.py', 'utils.py', 'types_test.py']",['3f055f53854b01b83ba08022d2233c4ee586ac67'],13,8,21,3,0.6,0.4,0.0
+7ef2c1f7ae40d632c3da4b11f84417d8287d5988,Fix pyright validation failure,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-03 23:01:39+01:00,-3600,2020-02-03 23:01:39+01:00,-3600,True,False,['utils.py'],['2f6e45fb75b51503ba7848ad979de8f54fd9a899'],2,1,3,1,1.0,0.0,1.0
+8e0ac96e8b114700cad95002d9e8d031d68c462f,Fix some minor pylint warnings,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-04 00:40:46+01:00,-3600,2020-02-04 10:04:49+01:00,-3600,True,False,"['types.py', 'utils.py']",['7ef2c1f7ae40d632c3da4b11f84417d8287d5988'],16,16,32,2,,,
+fa0c1f7b701de0d63a8ab5d625a84bf5d56c22d8,"Fix bug in inferring path from url without path. (#16)
+
+* Fix bug in inferring path from url without path.
+
+* Clean-up.
+
+* Simplify regex.
+
+* Broad regex for domain.",Kimmo Sääskilahti,kimmo@meeshkan.com,GitHub,noreply@github.com,2020-02-07 12:21:00+02:00,-7200,2020-02-07 12:21:00+02:00,-7200,True,False,"['utils.py', 'utils_test.py']",['8e0ac96e8b114700cad95002d9e8d031d68c462f'],12,41,53,2,0.0,0.9473684210526315,1.0
+ddf89a60ac167c46a6f5f2bb8c15624856219119,"Avoid depending on C extension modules
+
+The backports.datetime_fromisoformat dependency compiles C code, which
+makes it a lot harder for users.
+
+Switch instead to dateutil.parser, which also has the advantage that it
+supports arbitrary ISO 8601 strings, while datetime.fromisoformat says
+
+""Caution This does not support parsing arbitrary ISO 8601 strings - it
+is only intended as the inverse operation of datetime.isoformat(). A
+more full-featured ISO 8601 parser, dateutil.parser.isoparse is available
+in the third-party package dateutil.""
+
+From:
+https://docs.python.org/dev/library/datetime.html#datetime.datetime.fromisoformat",Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-07 11:45:37+01:00,-3600,2020-02-07 11:45:37+01:00,-3600,True,False,"['utils.py', 'setup.py', 'utils_test.py']",['fa0c1f7b701de0d63a8ab5d625a84bf5d56c22d8'],12,14,26,3,0.0,0.0,1.0
+659ce7a02030edcdc0315d22ced6f4d9be1c5091,Bump version to 0.0.6,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-07 11:48:28+01:00,-3600,2020-02-07 11:48:28+01:00,-3600,True,False,['setup.py'],['ddf89a60ac167c46a6f5f2bb8c15624856219119'],1,1,2,1,,,
+70d277cb30608ee9d3b7edd8982bcfae7dad92e5,Fix isoparse error messages in all cases,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-07 11:53:23+01:00,-3600,2020-02-07 11:53:23+01:00,-3600,True,False,['utils.py'],['659ce7a02030edcdc0315d22ced6f4d9be1c5091'],9,11,20,1,1.0,1.0,
+b0a88ad8dd8d3c4e3747e263759c0d2a6a13399a,Handle multi-valued query parameters in path building,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-07 11:09:10+01:00,-3600,2020-02-07 11:56:18+01:00,-3600,True,False,"['utils.py', 'utils_test.py']",['fa0c1f7b701de0d63a8ab5d625a84bf5d56c22d8'],3,16,19,2,0.0,1.0,1.0
+db70b27958cf66723b6597fa978f192471fabc47,"Add a version requirement on python-dateutil
+
+Should fix ""ImportError: can not import name 'isoparse'"" when having
+a too old version of the dependency.",Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-07 12:14:12+01:00,-3600,2020-02-07 12:18:57+01:00,-3600,True,False,['setup.py'],['086aa642002a81c5ca905e999b134a25fcedcea4'],2,2,4,1,,,
+a4fb23fa5e2d158d500633989b39fd92cdcd396c,Add black and flake8,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-12 12:08:52+01:00,-3600,2020-02-12 13:51:07+01:00,-3600,True,False,"['config.yml', '.flake8', 'README.md', '__init__.py', 'types.py', 'utils.py', 'setup.py', 'types_test.py', 'utils_test.py']",['db70b27958cf66723b6597fa978f192471fabc47'],184,236,420,9,0.0,1.0,0.75
+c603f8fb373a451ea77b4cb13a6faaa50093d003,Update README (#23),Fredrik Fornwall,fredrik@fornwall.net,GitHub,noreply@github.com,2020-02-14 13:42:08+01:00,-3600,2020-02-14 13:42:08+01:00,-3600,True,False,"['README.md', 'utils_test.py']",['a4fb23fa5e2d158d500633989b39fd92cdcd396c'],65,74,139,2,0.0,1.0,1.0
+03c96c5e5583ecbc4e8972a5bbf6f0a528993536,"Do not serialize bodyAsJson
+
+The bodyAsJson is a utility property and not something to be serialized to
+JSON.
+
+Also add tests that the output of HttpExchangeWriter.write() validates
+against the HTTP Types schema.",Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-13 10:24:11+01:00,-3600,2020-02-21 10:17:50+01:00,-3600,True,False,"['utils.py', 'setup.py', 'http-types-schema.json', 'sample.jsonl', 'utils_test.py']",['c603f8fb373a451ea77b4cb13a6faaa50093d003'],7,131,138,5,0.0,0.2,1.0
+4a43bceb9ba2406eb68eeba4cfec99ede26eb138,Uses dataclasses instead of TypedDict,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-21 14:18:42+02:00,-7200,2020-02-21 14:18:42+02:00,-7200,True,False,"['types.py', 'utils.py', 'setup.py', 'types_test.py', 'utils_test.py']",['03c96c5e5583ecbc4e8972a5bbf6f0a528993536'],78,110,188,5,0.2,0.0,0.8
+bee8288abc2c8cb7807806e0316154f166451e76,Use built-in string to enum support,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-21 14:18:00+01:00,-3600,2020-02-21 14:18:00+01:00,-3600,True,False,"['types.py', 'utils.py']",['4a43bceb9ba2406eb68eeba4cfec99ede26eb138'],19,2,21,2,,,
+023029cb2486afc8ebabd11b17ca2eb1506c24cc,Bumps version,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-21 15:36:01+02:00,-7200,2020-02-21 15:36:01+02:00,-7200,True,False,['setup.py'],['e2b125fa64cc49afe3cc4ba9ca753f61ad800b10'],1,1,2,1,,,
+aba8b5b081501b65a428b64e1b59f7b26f65fbd1,Changes README to better reflect new syntax,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-21 15:39:23+02:00,-7200,2020-02-21 15:39:23+02:00,-7200,True,False,['README.md'],['023029cb2486afc8ebabd11b17ca2eb1506c24cc'],3,3,6,1,,,
+62c57576baed73986e25896854588af7de45f5f6,Update README.md,Fredrik Fornwall,fredrik@fornwall.net,GitHub,noreply@github.com,2020-02-21 14:44:34+01:00,-3600,2020-02-21 14:44:34+01:00,-3600,True,False,['README.md'],['023029cb2486afc8ebabd11b17ca2eb1506c24cc'],1,1,2,1,,,
+b011ad5a22be287b95433e57bc54e0686044f933,Fixes validate protocol,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-21 20:22:46+02:00,-7200,2020-02-21 20:23:08+02:00,-7200,True,False,"['utils.py', 'utils_test.py']",['023029cb2486afc8ebabd11b17ca2eb1506c24cc'],3,8,11,2,1.0,1.0,1.0
+ed382afae6ab13310087c31a1485f63db249bb32,Bumps version,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-21 20:27:44+02:00,-7200,2020-02-21 20:27:44+02:00,-7200,True,False,['setup.py'],['b464389d253ae6d4109fabc769594ee63eeddaaf'],1,1,2,1,,,
+19a8394f07b609f5a27944e13b57e337a1ee15fd,Makes body optional for Request,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-22 09:28:17+02:00,-7200,2020-02-22 09:28:17+02:00,-7200,True,False,['types.py'],['ed382afae6ab13310087c31a1485f63db249bb32'],5,5,10,1,,,
+d99a30a11c13ab18994874e02f48034c20f5be3e,Adds methods for converting from urllib requests and responses,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-24 15:30:40+02:00,-7200,2020-02-24 15:30:40+02:00,-7200,True,False,"['utils.py', 'setup.py', 'utils_test.py']",['19a8394f07b609f5a27944e13b57e337a1ee15fd'],14,64,78,3,1.0,0.631578947368421,1.0
+404b18727c2ef84974b108e6d98cabfec5b5a23b,Reformats files,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-24 17:06:19+02:00,-7200,2020-02-24 17:06:19+02:00,-7200,True,False,"['utils.py', 'utils_test.py']",['d99a30a11c13ab18994874e02f48034c20f5be3e'],22,37,59,2,0.0,0.2857142857142857,1.0
+4b973282caace389c9f8e2717c3822f201bdd76c,Checks,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-24 17:41:27+02:00,-7200,2020-02-24 17:41:27+02:00,-7200,True,False,['utils_test.py'],['404b18727c2ef84974b108e6d98cabfec5b5a23b'],1,1,2,1,,,
+39d5acc4023450127200fd48940645198cd4cb51,Bumps version,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-24 17:45:59+02:00,-7200,2020-02-24 17:45:59+02:00,-7200,True,False,['setup.py'],['b0939c62958db5ad2477faa35447ad5577db2bc8'],1,1,2,1,,,
+7b8759920c5e385c94d4f49f8ac0edca5444732d,String,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-02-24 18:16:11+02:00,-7200,2020-02-24 18:16:11+02:00,-7200,True,False,['utils_test.py'],['39d5acc4023450127200fd48940645198cd4cb51'],0,1,1,1,1.0,1.0,1.0
+fafd735b9736bc1eeaee0ae27d5c489d181b37f8,Default optional fields on dataclasses to None,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-27 09:32:24+01:00,-3600,2020-02-27 10:05:32+01:00,-3600,True,False,"['types.py', 'types_test.py']",['cde45cd18ead2f202dd45a9c0cf4c1fd5c0394c5'],22,39,61,2,1.0,1.0,1.0
+5a777808fb2db3f545999d53c87eb4233b4dcc22,Make data classes frozen,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-27 10:06:56+01:00,-3600,2020-02-27 10:09:29+01:00,-3600,True,False,['types.py'],['fafd735b9736bc1eeaee0ae27d5c489d181b37f8'],3,3,6,1,,,
+5f353808526082e035a1b9ad1a69133b57a7896c,Bump version,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-27 10:10:16+01:00,-3600,2020-02-27 10:10:27+01:00,-3600,True,False,['setup.py'],['5a777808fb2db3f545999d53c87eb4233b4dcc22'],1,1,2,1,,,
+1237c1b8c35ebb167b1bc350cefd7f9ac33fa94e,Avoid serializing bodyAsJson,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-27 11:08:03+01:00,-3600,2020-02-27 11:19:45+01:00,-3600,True,False,"['utils.py', 'sample.jsonl']",['5f353808526082e035a1b9ad1a69133b57a7896c'],8,8,16,2,,,
+6b2b6c2bbf7acfe625f58795057aa57babb664f4,Bump version,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-02-27 11:20:14+01:00,-3600,2020-02-27 11:20:14+01:00,-3600,True,False,['setup.py'],['1237c1b8c35ebb167b1bc350cefd7f9ac33fa94e'],1,1,2,1,,,
+f9f241c3b7b67ad14a1caf384870d0f7bb397f3c,Fix creating Response from dict without body,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-03-02 14:47:48+01:00,-3600,2020-03-02 14:47:48+01:00,-3600,True,False,"['utils.py', 'utils_test.py']",['6b2b6c2bbf7acfe625f58795057aa57babb664f4'],0,10,10,2,1.0,1.0,1.0
+75aa5057d0a8bfcc133946f97fd1543edd1cd591,Bump version to 0.0.13,Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-03-03 09:22:43+01:00,-3600,2020-03-03 09:22:43+01:00,-3600,True,False,['setup.py'],['f9f241c3b7b67ad14a1caf384870d0f7bb397f3c'],1,1,2,1,,,
+86e5c19c9ef585b12022f1651e8470c5a03106b3,"Add serializer methods to HttpExchangeWriter. (#33)
+
+* Add to_json and to_dict methods to writer.
+
+* Add tests, update readme.",Kimmo Sääskilahti,kimmo@meeshkan.com,GitHub,noreply@github.com,2020-03-19 16:16:45+02:00,-7200,2020-03-19 16:16:45+02:00,-7200,True,False,"['README.md', 'utils.py', 'utils_test.py']",['75aa5057d0a8bfcc133946f97fd1543edd1cd591'],15,65,80,3,0.96,0.96,1.0
+691e33a8212cd7d6f520afecacd0ffd3842dac9e,Version 0.0.14.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2020-03-19 16:21:17+02:00,-7200,2020-03-19 16:21:17+02:00,-7200,True,False,['setup.py'],['86e5c19c9ef585b12022f1651e8470c5a03106b3'],2,3,5,1,0.0,1.0,1.0
+a395cb7fbc862a679674fb7faca8d3893d0d127a,Fix formatting setup.py.,Kimmo Sääskilahti,kimmo@meeshkan.com,Kimmo Sääskilahti,kimmo@meeshkan.com,2020-03-19 16:24:32+02:00,-7200,2020-03-19 16:24:32+02:00,-7200,True,False,['setup.py'],['691e33a8212cd7d6f520afecacd0ffd3842dac9e'],2,1,3,1,1.0,0.0,0.0
+bcd677cf1dd417c458d10ea779dc226e5216ff5d,"dataclasses fix (#34)
+
+* dataclasses fix
+
+* black format",Nikolay Zenovkin,aby2sz@gmail.com,GitHub,noreply@github.com,2020-03-31 17:29:57+03:00,-10800,2020-03-31 17:29:57+03:00,-10800,True,False,['setup.py'],['a395cb7fbc862a679674fb7faca8d3893d0d127a'],1,5,6,1,,,
+19eeb0a495cd3b2cfc677dfc329ffb38d268e996,Bumps version,Nikolay Zenovkin,aby2sz@gmail.com,GitHub,noreply@github.com,2020-03-31 17:31:26+03:00,-10800,2020-03-31 17:31:26+03:00,-10800,True,False,['setup.py'],['bcd677cf1dd417c458d10ea779dc226e5216ff5d'],1,1,2,1,,,
+317743cd4e7bd1cc9f210087b111538c2d716837,"Replace setuptools.errors with distutils.errors
+
+Doing this makes us compatible with the
+  python3 -m venv .venv
+setup, without any extra step required to use virtualenv or upgrade
+setuptools.",Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-04-09 11:44:45+02:00,-7200,2020-04-16 12:06:34+02:00,-7200,True,False,['setup.py'],['19eeb0a495cd3b2cfc677dfc329ffb38d268e996'],2,3,5,1,,,
+57872591092ea6bcc7eb33ed4ef4837ac76f30f3,Adds test with recordings,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-06-07 17:42:51+03:00,-10800,2020-06-07 17:42:51+03:00,-10800,True,False,"['recordings.jsonl', 'utils_test.py']",['7b8759920c5e385c94d4f49f8ac0edca5444732d'],0,69,69,2,1.0,1.0,1.0
+20e66976b11b9099e1abb0a05df0d98ed68b634c,Adds meta,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-06-07 17:50:27+03:00,-10800,2020-06-07 17:50:27+03:00,-10800,True,False,"['types.py', 'utils.py', 'http-types-schema.json', 'sample.jsonl']",['b2671413ffe092c4f8bf7b8901256479cda6cb35'],18,41,59,4,0.0,1.0,1.0
+127535926a6a768afa979cd2d6b122935adc0f9c,fixes cache problem,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-06-07 17:52:54+03:00,-10800,2020-06-07 17:52:54+03:00,-10800,True,False,['config.yml'],['20e66976b11b9099e1abb0a05df0d98ed68b634c'],9,0,9,1,,,
+9d98ef537ba3d7d276667d97bf75b5f6832a2082,Fixes formatting,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-06-07 17:56:33+03:00,-10800,2020-06-07 17:56:33+03:00,-10800,True,False,"['utils.py', 'utils_test.py']",['127535926a6a768afa979cd2d6b122935adc0f9c'],7,12,19,2,0.4,1.0,1.0
+09bd6590eaee8543103424bc68699b72dae65441,Uses mypy instead of pyright,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-06-07 18:09:55+03:00,-10800,2020-06-07 18:09:55+03:00,-10800,True,False,"['config.yml', 'README.md', 'pyrightconfig.json', 'setup.py']",['9d98ef537ba3d7d276667d97bf75b5f6832a2082'],14,4,18,4,0.0,1.0,1.0
+66d7d51f0952831dae2157497ab8c41c2ae21ecf,Format,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-06-07 18:12:20+03:00,-10800,2020-06-07 18:12:20+03:00,-10800,True,False,['setup.py'],['09bd6590eaee8543103424bc68699b72dae65441'],2,1,3,1,1.0,0.0,0.0
+8bf43a74d6d12abdd316efb989725633da7865a2,Adds mypy,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-06-07 19:03:46+03:00,-10800,2020-06-07 19:03:46+03:00,-10800,True,False,['setup.py'],['66d7d51f0952831dae2157497ab8c41c2ae21ecf'],1,3,4,1,0.0,1.0,1.0
+6bcfec926ff1c55988655a2c53ee274152f9ffe5,fixes setup.py,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-06-07 19:14:02+03:00,-10800,2020-06-07 19:14:02+03:00,-10800,True,False,['setup.py'],['8bf43a74d6d12abdd316efb989725633da7865a2'],2,1,3,1,1.0,0.0,0.0
+642c82bd32a88ca64cbf9a0c26d7641c1ab90dca,Bumps version,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-06-07 19:23:46+03:00,-10800,2020-06-07 19:23:46+03:00,-10800,True,False,['setup.py'],['533f6a1bd1a9ba0031954a096a1ba3704404747e'],2,3,5,1,0.0,1.0,1.0
+0c78a1eef017e9b9df7d6ee0e223b95d8b7360a9,Reformats setup,Mike Solomon,mike@meeshkan.com,Mike Solomon,mike@meeshkan.com,2020-06-07 19:24:08+03:00,-10800,2020-06-07 19:24:08+03:00,-10800,True,False,['setup.py'],['642c82bd32a88ca64cbf9a0c26d7641c1ab90dca'],2,1,3,1,1.0,0.0,0.0
+015be6164439e9b20edcad1754018f1ed9477113,"Ignore env/ in addition to .venv/
+
+Using env/ as a folder for the virtual environment is common.",Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-07-22 05:47:24+02:00,-7200,2020-07-22 05:47:24+02:00,-7200,True,False,"['.gitignore', 'setup.py']",['0c78a1eef017e9b9df7d6ee0e223b95d8b7360a9'],2,3,5,2,,,
+abb7515639509e8cbcab163b79ab4426a5fb85fe,"Adding more items that need to be ignored
+
+- Adding venv to the ignored directories since it's pretty commonly used as a virtualenv directory name
+
+- Adding Visual Studio specific files and directories to gitignore",soniarizzodev,soniarizzo.dev@gmail.com,Fredrik Fornwall,fredrik@fornwall.net,2020-07-22 11:45:45+02:00,-7200,2020-07-22 12:25:23+02:00,-7200,True,False,"['.gitignore', 'setup.py']",['015be6164439e9b20edcad1754018f1ed9477113'],1,8,9,2,0.0,1.0,1.0
+786dc5fcaf42687c0bc867a7203d09bf1b7017a5,"Populate request.body from bodyAsJson if given
+
+If RequestBuilder.from_dict() is given a bodyAsJson field and no body
+field, it makes sense to populate the requesty.body field with the
+serialized value of bodyAsJson.
+
+Fixes test_runner logging of graphql requests which makes this assumption.",Fredrik Fornwall,fredrik@fornwall.net,Fredrik Fornwall,fredrik@fornwall.net,2020-08-25 11:34:15+02:00,-7200,2020-08-25 12:55:14+02:00,-7200,True,False,"['utils.py', 'setup.py', 'utils_test.py']",['abb7515639509e8cbcab163b79ab4426a5fb85fe'],3,17,20,3,0.9090909090909091,0.9090909090909091,1.0

@@ -1,0 +1,33 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+68fec5fa1fbdbe38ccf17987389ed9a2887c3d15,Add .gitignore,Erik Huizinga,erik.huizinga@nedap.com,Erik Huizinga,erik.huizinga@nedap.com,2018-02-28 15:14:44+01:00,-3600,2018-02-28 15:14:44+01:00,-3600,True,False,['.gitignore'],[],0,119,119,1,,,
+938dd4bcb37ce68921920898ba6f6adeb8d88631,Update .gitignore,Erik Huizinga,erik.huizinga@nedap.com,Erik Huizinga,erik.huizinga@nedap.com,2018-02-28 15:16:08+01:00,-3600,2018-02-28 15:16:08+01:00,-3600,True,False,['.gitignore'],['68fec5fa1fbdbe38ccf17987389ed9a2887c3d15'],14,1,15,1,,,
+bf3bc4ef8455362af37e3478fc651ecc43d585bd,Add license files,Erik Huizinga,erik.huizinga@nedap.com,Erik Huizinga,erik.huizinga@nedap.com,2018-02-28 15:38:48+01:00,-3600,2018-02-28 15:38:48+01:00,-3600,True,False,"['COPYING.LESSER.txt', 'COPYING.txt']",['938dd4bcb37ce68921920898ba6f6adeb8d88631'],0,839,839,2,,,
+5f43319af086658b487f5d58e2fd9627326064c4,Implement unit tests,Erik Huizinga,erik.huizinga@nedap.com,Erik Huizinga,erik.huizinga@nedap.com,2018-03-01 12:22:56+01:00,-3600,2018-03-01 12:22:56+01:00,-3600,True,False,"['__init__.py', 'test_humps.py']",['bf3bc4ef8455362af37e3478fc651ecc43d585bd'],0,76,76,2,0.0,1.0,1.0
+44e4b0918e9dcd0b5ba14fc76633d70d5ecc7ee5,Implement camel case conversion,Erik Huizinga,erik.huizinga@nedap.com,Erik Huizinga,erik.huizinga@nedap.com,2018-03-01 12:23:19+01:00,-3600,2018-03-01 12:23:19+01:00,-3600,True,False,"['__init__.py', 'humps.py']",['5f43319af086658b487f5d58e2fd9627326064c4'],0,54,54,2,0.0,0.0,1.0
+522fbf8a64a1fce47f7d30ef55aa54463d627268,Add distutils setup script,Erik Huizinga,erik.huizinga@nedap.com,Erik Huizinga,erik.huizinga@nedap.com,2018-03-01 12:24:07+01:00,-3600,2018-03-01 12:24:07+01:00,-3600,True,False,"['MANIFEST.in', 'setup.py']",['44e4b0918e9dcd0b5ba14fc76633d70d5ecc7ee5'],0,38,38,2,,,
+e4b44c6d8e9451a0e9971245759e858a4db6a28c,Write README.txt ✍🏽,Erik Huizinga,erik.huizinga@nedap.com,Erik Huizinga,erik.huizinga@nedap.com,2018-03-01 12:24:51+01:00,-3600,2018-03-01 12:24:51+01:00,-3600,True,False,['README.txt'],['522fbf8a64a1fce47f7d30ef55aa54463d627268'],0,27,27,1,,,
+bc5771a7bb9cde763fd2634956413ba4b9efab0d,"Release v0.2.0
+
+Convert README from txt to rst
+
+Change license files
+
+Fix typo
+
+Move file and rename function
+
+Prepare for release v0.2.0",Erik Huizinga,erik.huizinga@nedap.com,Erik Huizinga,erik.huizinga@nedap.com,2018-03-01 14:17:42+01:00,-3600,2018-03-01 19:16:36+01:00,-3600,True,False,"['COPYING.txt', 'LICENSE.txt', 'MANIFEST.in', 'README.rst', 'README.txt', '__init__.py', 'camel.py', 'setup.py', 'test_humps.py']",['e4b44c6d8e9451a0e9971245759e858a4db6a28c'],709,37,746,9,,,
+c231d0b60a474ca1b206bbe2e754748f0fad5f8e,"Release v0.2.1
+
+Improve documentation wording
+
+Bump version number",Erik Huizinga,erik.huizinga@nedap.com,Erik Huizinga,erik.huizinga@nedap.com,2018-03-12 18:06:58+01:00,-3600,2018-03-12 18:16:18+01:00,-3600,True,False,"['README.rst', 'camel.py', 'setup.py']",['bc5771a7bb9cde763fd2634956413ba4b9efab0d'],5,4,9,3,1.0,1.0,0.0
+4b58a47d1c606871a8df5cda4d9a7a38ea6869b7,"Release v0.2.2
+
+Add build and upload shell script
+
+Extend long package description to match README.rst
+
+Add changelog
+
+Bump version number",Erik Huizinga,erik.huizinga@nedap.com,Erik Huizinga,erik.huizinga@nedap.com,2018-03-13 08:54:01+01:00,-3600,2018-03-13 08:57:03+01:00,-3600,True,False,"['CHANGELOG.md', 'MANIFEST.in', 'build-upload.sh', 'setup.py']",['c231d0b60a474ca1b206bbe2e754748f0fad5f8e'],10,60,70,4,,,

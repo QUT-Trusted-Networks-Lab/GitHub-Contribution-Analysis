@@ -1,0 +1,615 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+5d4a613df95c448ec738bedc335791f37e957118,Initial commit,Florian Gabsteiger,florian.g@me.com,GitHub,noreply@github.com,2019-10-13 17:03:47+02:00,-7200,2019-10-13 17:03:47+02:00,-7200,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,779,779,3,,,
+3c3e300332dd645795f85b7f66de362315d10248,"Update README: install, requirements, how-to run and acknowledgments",Florian Gabsteiger,florian.g@me.com,Florian Gabsteiger,florian.g@me.com,2019-10-13 17:50:55+02:00,-7200,2019-10-13 17:50:55+02:00,-7200,True,False,['README.md'],['5d4a613df95c448ec738bedc335791f37e957118'],1,20,21,1,,,
+a92cb939fbff586c5b14b0f2d0715b7d80b0efd5,python package requirements,Florian Gabsteiger,florian.g@me.com,Florian Gabsteiger,florian.g@me.com,2019-10-13 17:51:11+02:00,-7200,2019-10-13 17:51:11+02:00,-7200,True,False,['requirements.txt'],['3c3e300332dd645795f85b7f66de362315d10248'],0,4,4,1,,,
+60d99f7d12b90f93c72e27fdc057c59ba3348c39,added reboot script,Florian Gabsteiger,florian.g@me.com,Florian Gabsteiger,florian.g@me.com,2019-10-13 17:51:27+02:00,-7200,2019-10-13 17:51:27+02:00,-7200,True,False,['arris-tg3442-reboot.py'],['a92cb939fbff586c5b14b0f2d0715b7d80b0efd5'],0,116,116,1,0.15625,1.0,0.15625
+b6f0b8b16f238e1d6960bfd0a8008f81b0cd3d33,code cleanup: remove unnecessary comments,Florian Gabsteiger,florian.g@me.com,Florian Gabsteiger,florian.g@me.com,2019-10-13 17:55:44+02:00,-7200,2019-10-13 17:55:44+02:00,-7200,True,False,['arris-tg3442-reboot.py'],['60d99f7d12b90f93c72e27fdc057c59ba3348c39'],17,5,22,1,,,
+849c17fd292d21d7449047b1d92507dc159daeb3,Print help message in case the user does not enter any parameters and ask if default should be run,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2019-10-13 18:40:35+02:00,-7200,2019-10-13 18:40:35+02:00,-7200,True,False,['arris-tg3442-reboot.py'],['b6f0b8b16f238e1d6960bfd0a8008f81b0cd3d33'],0,5,5,1,1.0,1.0,1.0
+3cdf6514aaa887d342d21f0e82cb80b3a19e3d97,check response status before trying to decode it as json,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2019-10-13 19:06:23+02:00,-7200,2019-10-13 19:06:23+02:00,-7200,True,False,['arris-tg3442-reboot.py'],['849c17fd292d21d7449047b1d92507dc159daeb3'],3,3,6,1,,,
+ea81d06e33104a6dda875a645af078ec7647577b,Added docker,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2019-10-13 19:14:00+02:00,-7200,2019-10-13 19:14:00+02:00,-7200,True,False,['Dockerfile'],['3cdf6514aaa887d342d21f0e82cb80b3a19e3d97'],0,11,11,1,,,
+e7ed055fe34b369aa383ac0727989d949017a630,update readme w.r.t. docker and dockerhub,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2019-10-13 19:35:58+02:00,-7200,2019-10-13 19:35:58+02:00,-7200,True,False,['README.md'],['ea81d06e33104a6dda875a645af078ec7647577b'],0,3,3,1,,,
+dd7aadf2175e86b2e09e99517ec9f319dfedead8,"Updated implementation for firmware Version 01.02.037.03.12.EURO.SIP
+
+Iv and Salt are transmitted to the client via the Index page that sets them in a script tag(javascript)
+
+The Nonce that is sent by the Router when logging in is now beeing sent decrypted, so it has to be decrypted first befor using",frank,comentatorfreak@gmail.com,frank,comentatorfreak@gmail.com,2020-02-28 13:20:33+01:00,-3600,2020-02-28 13:20:33+01:00,-3600,True,False,['arris-tg3442-reboot.py'],['e7ed055fe34b369aa383ac0727989d949017a630'],3,18,21,1,0.2857142857142857,1.0,0.2857142857142857
+53cdb404f055b5a995e3553466726a1cc5e6a0d0,remove unnecessary print,frank,comentatorfreak@gmail.com,frank,comentatorfreak@gmail.com,2020-02-28 13:46:37+01:00,-3600,2020-02-28 13:46:37+01:00,-3600,True,False,['arris-tg3442-reboot.py'],['dd7aadf2175e86b2e09e99517ec9f319dfedead8'],1,0,1,1,,,
+52f2450b6e49419cb522c65741efd57b864849d3,"Fixes to support both firmware versions
+
+It's now checked at the startup if the modem uses the older firmware (mid 2018) or the newer one.
+Depending on this, two different implementations are injected
+into the actual main/login method to keep the communal part as big as possible.
+Any future firmware versions can then be added here.",Florian Gabsteiger,florian.gabsteiger@methodpark.com,Florian Gabsteiger,florian.gabsteiger@methodpark.com,2020-02-29 15:56:24+01:00,-3600,2020-02-29 15:56:24+01:00,-3600,True,False,"['arris-tg3442-reboot.py', 'firmware.py']",['1509f1f06a7cbb1c10673c6082e27f9576bb1b9c'],29,92,121,2,1.0,1.0,0.6111111111111112
+9a3c047e9196ad340d23c518fbbeeca36aceaf5e,Update README to include informtion regarding the supported firmware versions,Florian Gabsteiger,florian.gabsteiger@methodpark.com,Florian Gabsteiger,florian.gabsteiger@methodpark.com,2020-02-29 15:59:52+01:00,-3600,2020-02-29 15:59:52+01:00,-3600,True,False,['README.md'],['52f2450b6e49419cb522c65741efd57b864849d3'],0,5,5,1,,,
+c288ea20cf5b1459d236a24a84d642f6dbd1f9b0,Information on available multi-arch pre-built docker image on dockerhub added to README,Florian Gabsteiger,florian.gabsteiger@methodpark.com,Florian Gabsteiger,florian.gabsteiger@methodpark.com,2020-02-29 20:05:10+01:00,-3600,2020-02-29 20:05:10+01:00,-3600,True,False,['README.md'],['9a3c047e9196ad340d23c518fbbeeca36aceaf5e'],1,4,5,1,,,
+b89ea2076b01c983e1288674bc739f000ec33598,ignore .vscode folder,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-03-07 20:47:23+01:00,-3600,2020-03-07 20:47:23+01:00,-3600,True,False,['.gitignore'],['c288ea20cf5b1459d236a24a84d642f6dbd1f9b0'],0,3,3,1,,,
+d0fafab48f2db19e7660b45b2f6843bca5c60148,Add additional processor architecture for which a pre-built docker image exists,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-05-26 01:55:17+02:00,-7200,2020-05-26 01:55:17+02:00,-7200,True,False,['README.md'],['b89ea2076b01c983e1288674bc739f000ec33598'],0,1,1,1,,,
+c746d4a649dfbe421e1042391a223c7081e91ef2,Create docker.yml,Florian Gabsteiger,florian.gabsteiger@methodpark.de,GitHub,noreply@github.com,2020-06-17 02:03:57+02:00,-7200,2020-06-17 02:03:57+02:00,-7200,True,False,['docker.yml'],['d0fafab48f2db19e7660b45b2f6843bca5c60148'],0,33,33,1,,,
+385bd4d9aa5cd428275d9daaaf5cdfab73b3035d,change license to Apache 2.0,Florian Gabsteiger,florian.gabsteiger@methodpark.de,GitHub,noreply@github.com,2020-06-17 02:11:40+02:00,-7200,2020-06-17 02:11:40+02:00,-7200,True,False,['LICENSE'],['c746d4a649dfbe421e1042391a223c7081e91ef2'],674,201,875,1,,,
+cd50b397254fd80524c6070066d5530844af4863,fix boutifulsop parsed webpage text search by casting the response to string,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-06-18 03:18:39+02:00,-7200,2020-06-18 03:18:39+02:00,-7200,True,False,"['arris-tg3442-reboot.py', 'firmware.py']",['385bd4d9aa5cd428275d9daaaf5cdfab73b3035d'],4,4,8,2,,,
+02719aad701e570613997e7bea0d40490d754aaf,fix missed closing bracket,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-06-20 03:52:46+02:00,-7200,2020-06-20 03:52:46+02:00,-7200,True,False,['arris-tg3442-reboot.py'],['cd50b397254fd80524c6070066d5530844af4863'],1,1,2,1,,,
+9b9ab01a3089f5980d8b6819a8e036b2c5426d7c,formatting cleanup,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-06-20 03:52:56+02:00,-7200,2020-06-20 03:52:56+02:00,-7200,True,False,['arris-tg3442-reboot.py'],['02719aad701e570613997e7bea0d40490d754aaf'],7,1,8,1,1.0,0.0,1.0
+7b1e76f2af922ccb7c447b54040e60d314c385bf,Enable automatic CodeQL analysis,Florian Gabsteiger,florian.gabsteiger@methodpark.de,GitHub,noreply@github.com,2020-09-19 19:52:40+02:00,-7200,2020-09-19 19:52:40+02:00,-7200,True,False,['codeql-analysis.yml'],['9b9ab01a3089f5980d8b6819a8e036b2c5426d7c'],0,66,66,1,,,
+e034618c0c068278e0e9ecf18cb8a0006a0a0595,"add firmware-specific login function to prepare support for new firmwares
+
+The 2020 firmwares require a post request for the initial login.
+This commit should not change anything
+as for the existing firmwares the requests are equal.",Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-10-31 02:16:28+01:00,-3600,2020-10-31 14:42:52+01:00,-3600,True,False,"['arris-tg3442-reboot.py', 'firmware.py']",['7b1e76f2af922ccb7c447b54040e60d314c385bf'],10,27,37,2,1.0,1.0,0.0
+e9c9e27b2681d068bf397df649d7fbc817c257fd,support for new mid 2020 firmware(s),Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-10-31 02:33:38+01:00,-3600,2020-10-31 14:42:52+01:00,-3600,True,False,"['arris-tg3442-reboot.py', 'firmware.py']",['e034618c0c068278e0e9ecf18cb8a0006a0a0595'],8,59,67,2,0.975609756097561,1.0,0.21951219512195122
+7967c76eb99b853f435f0319d1ecba830c09dd30,throw error if firmware version could not be detected,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-10-31 02:34:34+01:00,-3600,2020-10-31 14:42:52+01:00,-3600,True,False,['firmware.py'],['e9c9e27b2681d068bf397df649d7fbc817c257fd'],0,2,2,1,1.0,1.0,1.0
+bbce276aeb405fe07267ff2c8831dedf6908829f,code cleanups without functional changes,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-10-31 02:54:17+01:00,-3600,2020-10-31 14:42:52+01:00,-3600,True,False,['arris-tg3442-reboot.py'],['7967c76eb99b853f435f0319d1ecba830c09dd30'],9,2,11,1,0.0,0.0,0.0
+bcac437feb1a2834db872edebc9dcf67ccaa7eae,cleanup README formatting,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-10-31 03:00:14+01:00,-3600,2020-10-31 14:42:52+01:00,-3600,True,False,['README.md'],['bbce276aeb405fe07267ff2c8831dedf6908829f'],7,16,23,1,,,
+49d2df2b8c2f7f57a7a325631e8daafed47420b7,document newly supported firmwares,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-10-31 03:03:40+01:00,-3600,2020-10-31 14:42:52+01:00,-3600,True,False,['README.md'],['bcac437feb1a2834db872edebc9dcf67ccaa7eae'],0,3,3,1,,,
+2dddf6e10dbe87d56306a23acce4bd55f660e248,Remove dependency to lxml (hard to compile on ARM processors),Mershl,mweires@googlemail.com,Florian Gabsteiger,florian.g@me.com,2020-10-31 17:56:13+01:00,-3600,2020-11-01 02:55:24+01:00,-3600,True,False,"['README.md', 'arris-tg3442-reboot.py', 'requirements.txt']",['49d2df2b8c2f7f57a7a325631e8daafed47420b7'],4,2,6,3,,,
+92a9796877c3256f068b47dec352a6b7d6329d88,Raise an error if restart failed.,Mershl,mweires@googlemail.com,Florian Gabsteiger,florian.g@me.com,2020-10-31 18:02:51+01:00,-3600,2020-11-01 02:55:24+01:00,-3600,True,False,['firmware.py'],['2dddf6e10dbe87d56306a23acce4bd55f660e248'],3,9,12,1,1.0,1.0,0.0
+85685b45f5a0a7096718d23353fe9654d19a6803,fix small typos,Mershl,mweires@googlemail.com,Florian Gabsteiger,florian.g@me.com,2020-10-31 18:04:18+01:00,-3600,2020-11-01 02:55:24+01:00,-3600,True,False,['arris-tg3442-reboot.py'],['92a9796877c3256f068b47dec352a6b7d6329d88'],2,2,4,1,,,
+8080574f2264d71782793c25c0e4dc475318e04a,Add success message after .restart as it is now raising an exception if failed,Mershl,mweires@googlemail.com,Florian Gabsteiger,florian.g@me.com,2020-10-31 18:05:26+01:00,-3600,2020-11-01 02:55:24+01:00,-3600,True,False,['arris-tg3442-reboot.py'],['85685b45f5a0a7096718d23353fe9654d19a6803'],0,1,1,1,,,
+cd17542066c6ebcf164747f2fe58b7a5ddf0ac23,"Mid2020 reports login fails with an additional ""Lockout"" state. Let's report it here.",Mershl,mweires@googlemail.com,Florian Gabsteiger,florian.g@me.com,2020-10-31 18:12:28+01:00,-3600,2020-11-01 02:55:24+01:00,-3600,True,False,['firmware.py'],['8080574f2264d71782793c25c0e4dc475318e04a'],0,3,3,1,1.0,1.0,0.0
+15049ef894738a673b1be1f22f374a208c27c46e,Fix Python 3.9 deprecation warning: implicit float to int convertion.,Mershl,mweires@googlemail.com,Florian Gabsteiger,florian.g@me.com,2020-10-31 18:12:52+01:00,-3600,2020-11-01 02:55:24+01:00,-3600,True,False,['arris-tg3442-reboot.py'],['cd17542066c6ebcf164747f2fe58b7a5ddf0ac23'],1,1,2,1,,,
+fc8454d149a6e4e72b8e5a1265f6c0f8bc0f1c56,add automatic python import sort ci step,Florian Gabsteiger,florian.g@me.com,GitHub,noreply@github.com,2020-11-01 03:25:14+01:00,-3600,2020-11-01 03:25:14+01:00,-3600,True,False,['codeql-analysis.yml'],['15049ef894738a673b1be1f22f374a208c27c46e'],2,8,10,1,,,
+65943649b23a1064e31f5ed1bce331e91cb91c38,rename workflow file to align with title,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-11-01 03:28:23+01:00,-3600,2020-11-01 03:28:23+01:00,-3600,True,False,['code-quality.yml'],['fc8454d149a6e4e72b8e5a1265f6c0f8bc0f1c56'],0,0,0,1,,,
+34a09d5d1df14e81f9e5a27fefb71c815beb4e91,add python import sorter step,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-11-01 03:32:54+01:00,-3600,2020-11-01 03:32:54+01:00,-3600,True,False,['code-quality.yml'],['65943649b23a1064e31f5ed1bce331e91cb91c38'],2,21,23,1,,,
+647855bc1ec12aef0fc4c5d00b751b173149b1c1,cleanup workflow file,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-11-01 03:34:45+01:00,-3600,2020-11-01 03:34:45+01:00,-3600,True,False,['code-quality.yml'],['34a09d5d1df14e81f9e5a27fefb71c815beb4e91'],34,7,41,1,,,
+9b8b0aa77e83b90f311f1556808d011e7c09ebb2,align code style: variable & function names,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-11-01 03:07:09+01:00,-3600,2020-11-02 13:51:23+01:00,-3600,True,False,"['arris-tg3442-reboot.py', 'firmware.py']",['647855bc1ec12aef0fc4c5d00b751b173149b1c1'],35,37,72,2,,,
+e9ba0b93a88cc5d02d3db85a8fcbcc07792b93e1,"adjust success message to align ""runtime warning"" with where it actually occurs",Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-11-01 03:08:24+01:00,-3600,2020-11-02 13:51:23+01:00,-3600,True,False,['arris-tg3442-reboot.py'],['9b8b0aa77e83b90f311f1556808d011e7c09ebb2'],2,2,4,1,,,
+311fea639472ac1d55178cfce6e653f225717b59,run import sorting on push only,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-11-02 15:08:28+01:00,-3600,2020-11-02 15:08:28+01:00,-3600,True,False,['code-quality.yml'],['e9ba0b93a88cc5d02d3db85a8fcbcc07792b93e1'],2,2,4,1,,,
+02edde0eb2c47be9b21c4ce77bc363e5ddf6e0fa,cleanup workflows,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-11-02 15:35:04+01:00,-3600,2020-11-02 15:35:04+01:00,-3600,True,False,"['code-quality.yml', 'docker.yml']",['311fea639472ac1d55178cfce6e653f225717b59'],34,34,68,2,,,
+25f970e10b8b9cb06eb0e7102a6a9c4ee2535010,automatic import sort,GitHub Action,action@github.com,GitHub Action,action@github.com,2020-11-02 14:37:59+00:00,0,2020-11-02 14:37:59+00:00,0,True,False,"['arris-tg3442-reboot.py', 'firmware.py']",['02edde0eb2c47be9b21c4ce77bc363e5ddf6e0fa'],7,9,16,2,,,
+75fb44f11bc627186894779b8a430f7cfc2ec0e9,only create new docker image for changes on master,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-11-02 17:23:44+01:00,-3600,2020-11-02 17:25:41+01:00,-3600,True,False,['docker.yml'],['25f970e10b8b9cb06eb0e7102a6a9c4ee2535010'],0,3,3,1,,,
+06cfd930efa2b5e409b7bd164e19f740730b068c,cleanups & clarifications,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-11-02 17:23:56+01:00,-3600,2020-11-02 17:25:41+01:00,-3600,True,False,['code-quality.yml'],['75fb44f11bc627186894779b8a430f7cfc2ec0e9'],5,6,11,1,,,
+ac5b9a9451c89ec721cea9900af71c1c8ea81dcc,don't expose docker accesstoken as env variable to improve security,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-11-02 17:24:49+01:00,-3600,2020-11-02 17:25:41+01:00,-3600,True,False,['docker.yml'],['06cfd930efa2b5e409b7bd164e19f740730b068c'],3,1,4,1,,,
+0f9eed9473b16b2a928c6cdfc4baee34ad443c3d,replace buildx setup with official action,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-11-02 17:34:22+01:00,-3600,2020-11-02 18:09:59+01:00,-3600,True,False,['docker.yml'],['ac5b9a9451c89ec721cea9900af71c1c8ea81dcc'],5,2,7,1,,,
+be7545a6364c17e196498425811d725d926ad57d,switch to official docker login action,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-11-02 17:42:42+01:00,-3600,2020-11-02 18:09:59+01:00,-3600,True,False,['docker.yml'],['0f9eed9473b16b2a928c6cdfc4baee34ad443c3d'],4,5,9,1,,,
+1dd0e44b0ae99168c1fcfd7e2189a54bb50dcda0,align secrets name with template to simplify future secret usage,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-11-02 17:43:12+01:00,-3600,2020-11-02 18:09:59+01:00,-3600,True,False,['docker.yml'],['be7545a6364c17e196498425811d725d926ad57d'],1,1,2,1,,,
+18920cdf785a3750e19df1c3c8c5da5fef4b958c,setup qemu platform emulator to enable multi-arch docker builds,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-11-02 17:54:59+01:00,-3600,2020-11-02 18:09:59+01:00,-3600,True,False,['docker.yml'],['1dd0e44b0ae99168c1fcfd7e2189a54bb50dcda0'],1,2,3,1,,,
+be70795feb92d990e47d946e16f7f95244df7843,switch to official docker build action,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.g@me.com,2020-11-02 17:56:35+01:00,-3600,2020-11-02 18:09:59+01:00,-3600,True,False,['docker.yml'],['18920cdf785a3750e19df1c3c8c5da5fef4b958c'],10,7,17,1,,,
+466d8ee07615903f940893b41cfa3f662ba66238,keep github actions uptodate automatically,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-11-02 18:14:17+01:00,-3600,2020-11-02 18:14:17+01:00,-3600,True,False,['dependabot.yml'],['be70795feb92d990e47d946e16f7f95244df7843'],0,6,6,1,,,
+f5bf01ce200dcb7a2d10bdaf4fd3b06f38fb7fab,add dependabot for docker & pip,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-11-02 18:18:32+01:00,-3600,2020-11-02 18:18:32+01:00,-3600,True,False,['dependabot.yml'],['466d8ee07615903f940893b41cfa3f662ba66238'],0,8,8,1,,,
+7b855d90ce76ef6dc9b9a29bc2501a3aa4d61060,fix image name on registry to push to,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2020-11-02 18:24:10+01:00,-3600,2020-11-02 18:24:10+01:00,-3600,True,False,['docker.yml'],['f5bf01ce200dcb7a2d10bdaf4fd3b06f38fb7fab'],1,1,2,1,,,
+0c276cec280a415c822bb0f987e4ce9fb9105dfd,"Bump ad-m/github-push-action from v0.5.0 to v0.6.0
+
+Bumps [ad-m/github-push-action](https://github.com/ad-m/github-push-action) from v0.5.0 to v0.6.0.
+- [Release notes](https://github.com/ad-m/github-push-action/releases)
+- [Commits](https://github.com/ad-m/github-push-action/compare/v0.5.0...40bf560936a8022e68a3c00e7d2abefaf01305a6)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2020-11-02 17:17:07+00:00,0,2020-11-02 18:27:11+01:00,-3600,True,False,['code-quality.yml'],['7b855d90ce76ef6dc9b9a29bc2501a3aa4d61060'],1,1,2,1,,,
+2ed77c99db2658ca2b6d898b159906a888826543,"Bump docker/login-action from 1 to 1.9.0
+
+Bumps [docker/login-action](https://github.com/docker/login-action) from 1 to 1.9.0.
+- [Release notes](https://github.com/docker/login-action/releases)
+- [Commits](https://github.com/docker/login-action/compare/v1...v1.9.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-05-12 05:21:54+00:00,0,2021-08-01 10:55:19+02:00,-7200,True,False,['docker.yml'],['0c276cec280a415c822bb0f987e4ce9fb9105dfd'],1,1,2,1,,,
+f3b4bdaceb980ed1f7d3c28c6df1195f40e9d5fe,"Bump docker/setup-buildx-action from 1 to 1.3.0
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 1 to 1.3.0.
+- [Release notes](https://github.com/docker/setup-buildx-action/releases)
+- [Commits](https://github.com/docker/setup-buildx-action/compare/v1...v1.3.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-05-12 05:21:53+00:00,0,2021-08-01 10:55:32+02:00,-7200,True,False,['docker.yml'],['2ed77c99db2658ca2b6d898b159906a888826543'],1,1,2,1,,,
+37e80a3e94c659da896156c9405d06be38874daf,"Bump docker/build-push-action from 2 to 2.4.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 2 to 2.4.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v2...v2.4.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-05-12 05:21:56+00:00,0,2021-08-01 10:55:46+02:00,-7200,True,False,['docker.yml'],['f3b4bdaceb980ed1f7d3c28c6df1195f40e9d5fe'],1,1,2,1,,,
+aac74282192b54c335092dc82762c7edbf6997b7,"Bump actions/checkout from 2 to 2.3.4
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2 to 2.3.4.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2...v2.3.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-05-12 05:22:04+00:00,0,2021-08-01 10:56:04+02:00,-7200,True,False,"['code-quality.yml', 'docker.yml']",['37e80a3e94c659da896156c9405d06be38874daf'],3,3,6,2,,,
+92c56fa666dd4bf80338785d497cc2f7bdfc86f2,add support for Mid2021 firmware,Florian Gabsteiger,florian.gabsteiger@methodpark.com,Florian Gabsteiger,florian.g@me.com,2021-08-01 11:25:41+02:00,-7200,2021-08-01 13:32:57+02:00,-7200,True,False,"['README.md', 'firmware.py']",['aac74282192b54c335092dc82762c7edbf6997b7'],1,9,10,2,0.0,0.0,1.0
+cb3e5c15aaa864d8f47adce83afd8a4073498978,"remove superfluous checkout step
+
+From codeql doc: ""git checkout HEAD^2 is no longer necessary. Please remove this step as Code Scanning recommends analyzing the merge commit for best results.""",Florian Gabsteiger,florian.gabsteiger@methodpark.com,Florian Gabsteiger,florian.gabsteiger@methodpark.com,2021-08-01 11:39:59+02:00,-7200,2021-08-01 11:39:59+02:00,-7200,True,False,['code-quality.yml'],['92c56fa666dd4bf80338785d497cc2f7bdfc86f2'],4,0,4,1,,,
+28ea0647bd91cc8679d5d624e31f5262656c018e,"Bump docker/build-push-action from 2.4.0 to 2.6.1
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 2.4.0 to 2.6.1.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v2.4.0...v2.6.1)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-08-02 11:03:21+00:00,0,2021-08-02 16:03:55+02:00,-7200,True,False,['docker.yml'],['cb3e5c15aaa864d8f47adce83afd8a4073498978'],1,1,2,1,,,
+2e2bda743ae36912412f0d5e231b837fddb659b6,"Bump docker/setup-buildx-action from 1.3.0 to 1.5.1
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 1.3.0 to 1.5.1.
+- [Release notes](https://github.com/docker/setup-buildx-action/releases)
+- [Commits](https://github.com/docker/setup-buildx-action/compare/v1.3.0...v1.5.1)
+
+---
+updated-dependencies:
+- dependency-name: docker/setup-buildx-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-08-02 11:03:24+00:00,0,2021-08-02 16:04:11+02:00,-7200,True,False,['docker.yml'],['28ea0647bd91cc8679d5d624e31f5262656c018e'],1,1,2,1,,,
+f0943d7ff0737fa647b713ca4eaf065888d968f6,"Bump docker/login-action from 1.9.0 to 1.10.0
+
+Bumps [docker/login-action](https://github.com/docker/login-action) from 1.9.0 to 1.10.0.
+- [Release notes](https://github.com/docker/login-action/releases)
+- [Commits](https://github.com/docker/login-action/compare/v1.9.0...v1.10.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/login-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-08-02 11:03:28+00:00,0,2021-08-02 16:04:26+02:00,-7200,True,False,['docker.yml'],['2e2bda743ae36912412f0d5e231b837fddb659b6'],1,1,2,1,,,
+1167ddc7f4ac085c63f930e96828704a3a05838e,"Bump docker/build-push-action from 2.6.1 to 2.7.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 2.6.1 to 2.7.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v2.6.1...v2.7.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-08-20 11:03:59+00:00,0,2021-08-22 17:05:02+02:00,-7200,True,False,['docker.yml'],['f0943d7ff0737fa647b713ca4eaf065888d968f6'],1,1,2,1,,,
+ab928527351d436be22cef01b8381641f5dbec29,"Bump docker/setup-buildx-action from 1.5.1 to 1.6.0
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 1.5.1 to 1.6.0.
+- [Release notes](https://github.com/docker/setup-buildx-action/releases)
+- [Commits](https://github.com/docker/setup-buildx-action/compare/v1.5.1...v1.6.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/setup-buildx-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-09-06 11:03:46+00:00,0,2021-09-08 18:50:58+02:00,-7200,True,False,['docker.yml'],['1167ddc7f4ac085c63f930e96828704a3a05838e'],1,1,2,1,,,
+9ff036c50dca3f9a1498156157bbe10bf7dfb891,"Bump actions/checkout from 2.3.4 to 2.4.0
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2.3.4 to 2.4.0.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.3.4...v2.4.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-11-03 11:08:50+00:00,0,2021-12-21 19:17:11+01:00,-3600,True,False,"['code-quality.yml', 'docker.yml']",['ab928527351d436be22cef01b8381641f5dbec29'],3,3,6,2,,,
+cdbaa3882676d4cd605e07703c19182a8c9b9eac,"Bump docker/login-action from 1.10.0 to 1.12.0
+
+Bumps [docker/login-action](https://github.com/docker/login-action) from 1.10.0 to 1.12.0.
+- [Release notes](https://github.com/docker/login-action/releases)
+- [Commits](https://github.com/docker/login-action/compare/v1.10.0...v1.12.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/login-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2021-12-21 11:04:17+00:00,0,2021-12-21 19:17:20+01:00,-3600,True,False,['docker.yml'],['9ff036c50dca3f9a1498156157bbe10bf7dfb891'],1,1,2,1,,,
+e6de9b633282b455408272bd7c110c7fcab311f5,"Bump docker/build-push-action from 2.7.0 to 2.8.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 2.7.0 to 2.8.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v2.7.0...v2.8.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-01-19 11:03:53+00:00,0,2022-01-21 17:09:08+01:00,-3600,True,False,['docker.yml'],['cdbaa3882676d4cd605e07703c19182a8c9b9eac'],1,1,2,1,,,
+e47408d044fb16ec40774e98e4fe4562949b68ca,add support for end 2021 firmware,Georg Nagel,g.schlmm@gmail.com,Florian Gabsteiger,florian.g@me.com,2022-01-22 12:17:44+01:00,-3600,2022-01-24 14:42:47+01:00,-3600,True,False,"['README.md', 'firmware.py']",['e6de9b633282b455408272bd7c110c7fcab311f5'],0,8,8,2,0.0,0.0,1.0
+1e80b3d9d95bf3ea1215eb80d6f2eaa81c792dfc,add support for phone log,Georg Nagel,g.schlmm@gmail.com,Florian Gabsteiger,florian.g@me.com,2022-01-22 13:28:12+01:00,-3600,2022-01-24 14:44:04+01:00,-3600,True,False,"['README.md', 'arris-tg3442-reboot.py', 'firmware.py']",['e47408d044fb16ec40774e98e4fe4562949b68ca'],4,49,53,3,1.0,1.0,0.75
+288e7d90c338bac07c1b37a873ce5b12db1bf554,phone log: fix no entries condition,Georg Nagel,g.schlmm@gmail.com,Florian Gabsteiger,florian.g@me.com,2022-01-22 14:09:00+01:00,-3600,2022-01-24 14:44:04+01:00,-3600,True,False,['arris-tg3442-reboot.py'],['1e80b3d9d95bf3ea1215eb80d6f2eaa81c792dfc'],2,2,4,1,,,
+71ff8c50409e35a54daee0c245f01489b2d286b8,automatic import sort,GitHub Action,action@github.com,GitHub Action,action@github.com,2022-01-24 13:44:46+00:00,0,2022-01-24 13:44:46+00:00,0,True,False,['arris-tg3442-reboot.py'],['288e7d90c338bac07c1b37a873ce5b12db1bf554'],2,1,3,1,,,
+a0c296531d0821c6b9f8c47632d77bf2536a4906,"Bump docker/build-push-action from 2.8.0 to 2.9.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 2.8.0 to 2.9.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v2.8.0...v2.9.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-02-02 11:06:10+00:00,0,2022-02-05 12:10:02+01:00,-3600,True,False,['docker.yml'],['71ff8c50409e35a54daee0c245f01489b2d286b8'],1,1,2,1,,,
+8f985d3c6f53a25a7456b872b0d1bae31aaee00a,add 01.04.046.12.EURO.PC20 firmware,Georg Nagel,g.schlmm@gmail.com,Florian Gabsteiger,florian.g@me.com,2022-04-01 09:52:38+02:00,-7200,2022-04-03 13:20:54+02:00,-7200,True,False,['firmware.py'],['a0c296531d0821c6b9f8c47632d77bf2536a4906'],0,3,3,1,0.0,0.0,1.0
+d73c227ed695d3fb801fad1f3215dc2c8ab3588c,add new firmware to readme,Georg Nagel,g.schlmm@gmail.com,Florian Gabsteiger,florian.g@me.com,2022-04-01 10:59:04+02:00,-7200,2022-04-03 13:20:54+02:00,-7200,True,False,['README.md'],['8f985d3c6f53a25a7456b872b0d1bae31aaee00a'],0,1,1,1,,,
+cb9e4fc7e900663e7d0fde9874166e6704621bc5,add credits to schelmo,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2022-04-03 13:23:43+02:00,-7200,2022-04-03 13:23:43+02:00,-7200,True,False,['README.md'],['d73c227ed695d3fb801fad1f3215dc2c8ab3588c'],1,1,2,1,,,
+e1faaf0cfaec57afe4e3e6047a176a1223d91eca,"Bump docker/login-action from 1.12.0 to 1.14.1
+
+Bumps [docker/login-action](https://github.com/docker/login-action) from 1.12.0 to 1.14.1.
+- [Release notes](https://github.com/docker/login-action/releases)
+- [Commits](https://github.com/docker/login-action/compare/v1.12.0...v1.14.1)
+
+---
+updated-dependencies:
+- dependency-name: docker/login-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-03-02 11:05:02+00:00,0,2022-04-03 13:24:18+02:00,-7200,True,False,['docker.yml'],['cb9e4fc7e900663e7d0fde9874166e6704621bc5'],1,1,2,1,,,
+41036c2f0657bf4c0a30b24cbf729c1b64717cea,"Bump actions/checkout from 2.4.0 to 3
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2.4.0 to 3.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.4.0...v3)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-03-02 11:05:07+00:00,0,2022-04-03 13:24:25+02:00,-7200,True,False,"['code-quality.yml', 'docker.yml']",['e1faaf0cfaec57afe4e3e6047a176a1223d91eca'],3,3,6,2,,,
+71d63812c5d1175d8f6855f7cce047a33ab5742f,"Bump docker/build-push-action from 2.9.0 to 2.10.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 2.9.0 to 2.10.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v2.9.0...v2.10.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-03-15 11:02:49+00:00,0,2022-04-03 13:24:33+02:00,-7200,True,False,['docker.yml'],['41036c2f0657bf4c0a30b24cbf729c1b64717cea'],1,1,2,1,,,
+6f654fbf5d2819d7bb9cadfde104499fcfdd2d1d,fix repo name in readme,Florian Gabsteiger,florian.gabsteiger@methodpark.de,Florian Gabsteiger,florian.gabsteiger@methodpark.de,2022-04-03 13:29:14+02:00,-7200,2022-04-03 13:29:23+02:00,-7200,True,False,['README.md'],['71d63812c5d1175d8f6855f7cce047a33ab5742f'],1,1,2,1,,,
+430733f35393a9f7342497e3d194a7b07361f10d,add early 2022 firmware,Georg Nagel,g.schlmm@gmail.com,Florian Gabsteiger,florian.g@me.com,2022-04-20 15:11:40+02:00,-7200,2022-04-20 18:07:08+02:00,-7200,True,False,['firmware.py'],['6f654fbf5d2819d7bb9cadfde104499fcfdd2d1d'],0,7,7,1,0.0,0.0,1.0
+6e814bb7d30d9d373d0f00518c804b94ae05dee0,"Bump github/codeql-action from 1 to 2
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 1 to 2.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/v1...v2)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-04-26 11:05:14+00:00,0,2022-05-06 14:35:02+02:00,-7200,True,False,['code-quality.yml'],['430733f35393a9f7342497e3d194a7b07361f10d'],3,3,6,1,,,
+64ab047bdfad04f8ac1629fcfeef0ab1b9f17807,"Bump docker/login-action from 1.14.1 to 2.0.0
+
+Bumps [docker/login-action](https://github.com/docker/login-action) from 1.14.1 to 2.0.0.
+- [Release notes](https://github.com/docker/login-action/releases)
+- [Commits](https://github.com/docker/login-action/compare/v1.14.1...v2.0.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/login-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-05-06 11:05:50+00:00,0,2022-05-06 14:35:09+02:00,-7200,True,False,['docker.yml'],['6e814bb7d30d9d373d0f00518c804b94ae05dee0'],1,1,2,1,,,
+84a71eb08772b172bca18a6a054fdde99cb320c8,"Bump docker/setup-buildx-action from 1.6.0 to 2.0.0
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 1.6.0 to 2.0.0.
+- [Release notes](https://github.com/docker/setup-buildx-action/releases)
+- [Commits](https://github.com/docker/setup-buildx-action/compare/v1.6.0...v2.0.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/setup-buildx-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-05-06 11:05:52+00:00,0,2022-05-06 14:35:17+02:00,-7200,True,False,['docker.yml'],['64ab047bdfad04f8ac1629fcfeef0ab1b9f17807'],1,1,2,1,,,
+f0c4673fac952e2c67f1987a4c6f278672c96ee3,"Bump docker/build-push-action from 2.10.0 to 3.0.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 2.10.0 to 3.0.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v2.10.0...v3.0.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-05-06 11:05:55+00:00,0,2022-05-06 14:42:59+02:00,-7200,True,False,['docker.yml'],['84a71eb08772b172bca18a6a054fdde99cb320c8'],1,1,2,1,,,
+84d071774bd7055f0fb20b1d09bd98203d3a9179,"Bump docker/setup-qemu-action from 1 to 2
+
+Bumps [docker/setup-qemu-action](https://github.com/docker/setup-qemu-action) from 1 to 2.
+- [Release notes](https://github.com/docker/setup-qemu-action/releases)
+- [Commits](https://github.com/docker/setup-qemu-action/compare/v1...v2)
+
+---
+updated-dependencies:
+- dependency-name: docker/setup-qemu-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-05-06 12:35:44+00:00,0,2022-05-06 14:43:07+02:00,-7200,True,False,['docker.yml'],['f0c4673fac952e2c67f1987a4c6f278672c96ee3'],1,1,2,1,,,
+11ee9c47cf7172e02e3a79964de02373377b7edb,"Bump docker/login-action from 2.0.0 to 2.1.0
+
+Bumps [docker/login-action](https://github.com/docker/login-action) from 2.0.0 to 2.1.0.
+- [Release notes](https://github.com/docker/login-action/releases)
+- [Commits](https://github.com/docker/login-action/compare/v2.0.0...v2.1.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/login-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2022-10-12 11:05:20+00:00,0,2023-01-20 18:25:10+01:00,-3600,True,False,['docker.yml'],['84d071774bd7055f0fb20b1d09bd98203d3a9179'],1,1,2,1,,,
+04ba8d85bd439ba639c292b353e6ad66bffadf05,"Bump docker/setup-buildx-action from 2.0.0 to 2.2.1
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 2.0.0 to 2.2.1.
+- [Release notes](https://github.com/docker/setup-buildx-action/releases)
+- [Commits](https://github.com/docker/setup-buildx-action/compare/v2.0.0...v2.2.1)
+
+---
+updated-dependencies:
+- dependency-name: docker/setup-buildx-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-01-20 17:26:00+00:00,0,2023-01-20 18:26:07+01:00,-3600,True,False,['docker.yml'],['11ee9c47cf7172e02e3a79964de02373377b7edb'],1,1,2,1,,,
+f987639a2156c99e8ef0a3b5d0b7f49fe94abbb0,"Bump docker/build-push-action from 3.0.0 to 3.3.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 3.0.0 to 3.3.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v3.0.0...v3.3.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-01-16 11:01:36+00:00,0,2023-01-21 20:50:40+01:00,-3600,True,False,['docker.yml'],['04ba8d85bd439ba639c292b353e6ad66bffadf05'],1,1,2,1,,,
+5eabe039b2ee9821ab6d69e4c0afa9b50902207f,Add support for firmware 01.04.046.25.EURO.PC20,Florian Gabsteiger,florian.g@me.com,Florian Gabsteiger,florian.g@me.com,2023-08-31 11:39:16+02:00,-7200,2023-08-31 11:39:16+02:00,-7200,True,False,['firmware.py'],['f987639a2156c99e8ef0a3b5d0b7f49fe94abbb0'],26,26,52,1,1.0,1.0,0.0
+fc0992da1cb42e705c0158c9cab98f2987bcbe36,clean up firmware file,Florian Gabsteiger,florian.g@me.com,Florian Gabsteiger,florian.g@me.com,2023-08-31 11:43:23+02:00,-7200,2023-08-31 11:43:23+02:00,-7200,True,False,['firmware.py'],['5eabe039b2ee9821ab6d69e4c0afa9b50902207f'],49,51,100,1,,,
+81087308e57b79b420865f473b625ec1876627b1,"Bump docker/build-push-action from 3.3.0 to 4.0.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 3.3.0 to 4.0.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v3.3.0...v4.0.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-01-31 11:00:59+00:00,0,2023-08-31 12:42:41+02:00,-7200,True,False,['docker.yml'],['fc0992da1cb42e705c0158c9cab98f2987bcbe36'],1,1,2,1,,,
+b8b4f06ee2c447354acc56e87fe1478050417e6d,"Bump docker/setup-buildx-action from 2.2.1 to 2.5.0
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 2.2.1 to 2.5.0.
+- [Release notes](https://github.com/docker/setup-buildx-action/releases)
+- [Commits](https://github.com/docker/setup-buildx-action/compare/v2.2.1...v2.5.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/setup-buildx-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-03-10 11:56:52+00:00,0,2023-08-31 12:42:52+02:00,-7200,True,False,['docker.yml'],['81087308e57b79b420865f473b625ec1876627b1'],1,1,2,1,,,
+9ab420d95fb6ffaafd8d646f0f4e621f9537ec31,update README with supported firmware versions,Florian Gabsteiger,florian.g@me.com,Florian Gabsteiger,florian.g@me.com,2023-08-31 12:45:17+02:00,-7200,2023-08-31 12:45:30+02:00,-7200,True,False,['README.md'],['b8b4f06ee2c447354acc56e87fe1478050417e6d'],7,10,17,1,,,
+e6573f77330711e94ec586770759f4c2554a498f,"Bump docker/login-action from 2.1.0 to 2.2.0
+
+Bumps [docker/login-action](https://github.com/docker/login-action) from 2.1.0 to 2.2.0.
+- [Release notes](https://github.com/docker/login-action/releases)
+- [Commits](https://github.com/docker/login-action/compare/v2.1.0...v2.2.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/login-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-08-31 11:13:57+00:00,0,2023-08-31 14:36:18+02:00,-7200,True,False,['docker.yml'],['9ab420d95fb6ffaafd8d646f0f4e621f9537ec31'],1,1,2,1,,,
+94eb7e3ca79faf5b7fb2a52d52360b6c5089d144,"Bump docker/build-push-action from 4.0.0 to 4.1.1
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 4.0.0 to 4.1.1.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v4.0.0...v4.1.1)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-08-31 11:13:44+00:00,0,2023-08-31 17:19:23+02:00,-7200,True,False,['docker.yml'],['e6573f77330711e94ec586770759f4c2554a498f'],1,1,2,1,,,
+8ec871c5874411a6c4f629b54742ac40fa336717,"Bump docker/setup-buildx-action from 2.5.0 to 2.10.0
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 2.5.0 to 2.10.0.
+- [Release notes](https://github.com/docker/setup-buildx-action/releases)
+- [Commits](https://github.com/docker/setup-buildx-action/compare/v2.5.0...v2.10.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/setup-buildx-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-08-31 12:37:13+00:00,0,2023-08-31 17:19:32+02:00,-7200,True,False,['docker.yml'],['94eb7e3ca79faf5b7fb2a52d52360b6c5089d144'],1,1,2,1,,,
+40d29e78d129abc44dd34f2a8e655a9de4d1f710,"Bump actions/checkout from 3 to 4
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-09-05 11:40:13+00:00,0,2023-09-06 09:56:10+02:00,-7200,True,False,"['code-quality.yml', 'docker.yml']",['8ec871c5874411a6c4f629b54742ac40fa336717'],3,3,6,2,,,
+3050b46a3804266289455a4104e4c0ea2ec047fe,"Bump docker/build-push-action from 4.1.1 to 4.2.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 4.1.1 to 4.2.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v4.1.1...v4.2.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-09-08 11:38:26+00:00,0,2023-09-10 11:03:19+02:00,-7200,True,False,['docker.yml'],['40d29e78d129abc44dd34f2a8e655a9de4d1f710'],1,1,2,1,,,
+1fa011146bc9d01706fe4e5a762eac81e6c956a9,"Bump docker/build-push-action from 4.2.0 to 4.2.1
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 4.2.0 to 4.2.1.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v4.2.0...v4.2.1)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-09-11 11:33:05+00:00,0,2023-09-12 10:44:24+02:00,-7200,True,False,['docker.yml'],['3050b46a3804266289455a4104e4c0ea2ec047fe'],1,1,2,1,,,
+41f75a89ba471b1da2375b13c974dd544b316f5a,"Bump docker/setup-qemu-action from 2 to 3
+
+Bumps [docker/setup-qemu-action](https://github.com/docker/setup-qemu-action) from 2 to 3.
+- [Release notes](https://github.com/docker/setup-qemu-action/releases)
+- [Commits](https://github.com/docker/setup-qemu-action/compare/v2...v3)
+
+---
+updated-dependencies:
+- dependency-name: docker/setup-qemu-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-09-12 11:10:21+00:00,0,2023-09-13 11:13:09+02:00,-7200,True,False,['docker.yml'],['1fa011146bc9d01706fe4e5a762eac81e6c956a9'],1,1,2,1,,,
+344dd4581d37e0802c987eb9cfe88295050f6341,"Bump docker/setup-buildx-action from 2.10.0 to 3.0.0
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 2.10.0 to 3.0.0.
+- [Release notes](https://github.com/docker/setup-buildx-action/releases)
+- [Commits](https://github.com/docker/setup-buildx-action/compare/v2.10.0...v3.0.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/setup-buildx-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-09-13 09:13:45+00:00,0,2023-09-13 11:28:11+02:00,-7200,True,False,['docker.yml'],['41f75a89ba471b1da2375b13c974dd544b316f5a'],1,1,2,1,,,
+dd38ee05910feb31f1ddf790f0baf45f49f68212,"Bump docker/login-action from 2.2.0 to 3.0.0
+
+Bumps [docker/login-action](https://github.com/docker/login-action) from 2.2.0 to 3.0.0.
+- [Release notes](https://github.com/docker/login-action/releases)
+- [Commits](https://github.com/docker/login-action/compare/v2.2.0...v3.0.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/login-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-09-13 09:28:45+00:00,0,2023-09-13 13:08:37+02:00,-7200,True,False,['docker.yml'],['344dd4581d37e0802c987eb9cfe88295050f6341'],1,1,2,1,,,
+e92f4d7e2ea5934a3a856b9ee7aa96034912836f,"Bump docker/build-push-action from 4.2.1 to 5.0.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 4.2.1 to 5.0.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v4.2.1...v5.0.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-09-12 11:10:41+00:00,0,2023-09-13 13:21:32+02:00,-7200,True,False,['docker.yml'],['dd38ee05910feb31f1ddf790f0baf45f49f68212'],1,1,2,1,,,
+524c627b65e113e139cf2d914932f7cf5ef558c3,"Bump ad-m/github-push-action from 0.6.0 to 0.8.0
+
+Bumps [ad-m/github-push-action](https://github.com/ad-m/github-push-action) from 0.6.0 to 0.8.0.
+- [Release notes](https://github.com/ad-m/github-push-action/releases)
+- [Commits](https://github.com/ad-m/github-push-action/compare/v0.6.0...v0.8.0)
+
+---
+updated-dependencies:
+- dependency-name: ad-m/github-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-10-10 11:05:08+00:00,0,2023-10-10 16:29:38+02:00,-7200,True,False,['code-quality.yml'],['e92f4d7e2ea5934a3a856b9ee7aa96034912836f'],1,1,2,1,,,
+780767849d9b6485e1399d38b9ab25a89418d431,"Bump docker/build-push-action from 5.0.0 to 5.1.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 5.0.0 to 5.1.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v5.0.0...v5.1.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-11-20 11:36:03+00:00,0,2023-11-21 18:37:19+01:00,-3600,True,False,['docker.yml'],['524c627b65e113e139cf2d914932f7cf5ef558c3'],1,1,2,1,,,
+570eaf70a2735e196d8a5f9786bb8c036503417a,"Bump github/codeql-action from 2 to 3
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 2 to 3.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/v2...v3)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Florian Gabsteiger,florian.g@me.com,2023-12-14 11:33:39+00:00,0,2023-12-14 13:44:39+01:00,-3600,True,False,['code-quality.yml'],['780767849d9b6485e1399d38b9ab25a89418d431'],3,3,6,1,,,

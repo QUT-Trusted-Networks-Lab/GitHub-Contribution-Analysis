@@ -1,0 +1,473 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+3d362d2fb9b4ecdb3a2c7bb4a303066ab311c617,Reimplemented extension classes based on new-style classes.,Jim Fulton,jim@zope.com,Jim Fulton,jim@zope.com,2003-11-28 16:45:03+00:00,0,2003-11-28 16:45:03+00:00,0,True,False,"['ExtensionClass.h', '_ExtensionClass.c', '__init__.py', 'pickle.c', 'setup.py', 'tests.py']",[],0,2358,2358,6,0.1718213058419244,0.27147766323024053,0.6678121420389461
+63b30ebe978250cbeb7f990e4d65ceafb773dff0,Set mime-type or svn-eol property from cvs expansion data,root,root@svn.zope.org,root,root@svn.zope.org,2004-05-11 20:34:59+00:00,0,2004-05-11 20:34:59+00:00,0,True,False,[],['3d362d2fb9b4ecdb3a2c7bb4a303066ab311c617'],0,0,0,0,,,
+7b0b0cf728913799c580b38268fc48d05dff9758,"Tell subversion to expand the Id keyword:
+  - replaced old CVS expansion with a clean $Id$
+  - set the svn:keywords property to ""Id""
+
+When you check-in files in the future and want $Id$ to be expanded,
+make sure it reads ""$Id$"" in that file; then set svn:keywords to ""Id"".
+
+ZODB, ZEO, Persistence and similar packages were not modified since they
+are really maintained elsewhere. Right now, we use a copy of them in our
+Zope/Zope3 trees. We should go back to the module sharing (using
+svn:externals).",Philipp von Weitershausen,philipp@weitershausen.de,Philipp von Weitershausen,philipp@weitershausen.de,2004-05-17 05:59:28+00:00,0,2004-05-17 05:59:28+00:00,0,True,False,"['ExtensionClass.h', '_ExtensionClass.c', '__init__.py', 'tests.py']",['63b30ebe978250cbeb7f990e4d65ceafb773dff0'],4,4,8,4,,,
+a3c0172ced44fc92a8bfc2e000dc6afdcb73f7aa,Changed the way __doc__ is managed to get backward compatible behavior.,Jim Fulton,jim@zope.com,Jim Fulton,jim@zope.com,2004-09-30 21:18:50+00:00,0,2004-09-30 21:18:50+00:00,0,True,False,"['_ExtensionClass.c', 'tests.py']",['7b0b0cf728913799c580b38268fc48d05dff9758'],0,28,28,2,0.1111111111111111,0.1111111111111111,0.1111111111111111
+e4174d38694ed536e9c9ba33080e247e03d7485a,"Merge the Zope part of Zope/branches/jim-fix-zclasses.
+
+Two of the ZClasses tests are disabled here, because they
+run afoul of Zope trunk's security machinery.  Jim needs to look
+at them.  A blurb also needs to be added to CHANGES.txt.
+
+Here are checkin msgs from the branch relating to Zope code
+(the msgs relating to ZODB code were reproduced in the
+ZODB 3.4 branch checkin):
+
+    ------------------------------------------------------------------------
+    r29869 | jim | 2005-04-04 07:04:21 -0400 (Mon, 04 Apr 2005) | 6 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/ZClass.txt
+
+    Added configuration of class factory.
+
+    Use explicit tm for second connection rather than separate thread.
+
+    Added copy test
+
+    ------------------------------------------------------------------------
+    r29868 | jim | 2005-04-04 07:03:57 -0400 (Mon, 04 Apr 2005) | 2 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/_pmc.txt
+
+    Added configuration of class factory.
+
+    ------------------------------------------------------------------------
+    r29776 | jim | 2005-04-01 06:24:31 -0500 (Fri, 01 Apr 2005) | 3 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/OFS/tests/testProductInit.py
+
+    Added clean-up code to remove non-exixtent directoris from products
+    path.
+
+    ------------------------------------------------------------------------
+    r29775 | jim | 2005-04-01 06:24:29 -0500 (Fri, 01 Apr 2005) | 2 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/tests.py
+
+    Added missing abourt to tear-down code
+
+    ------------------------------------------------------------------------
+    r29772 | jim | 2005-04-01 06:24:22 -0500 (Fri, 01 Apr 2005) | 2 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/App/ApplicationManager.py
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/Basic.py
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/ZClass.py
+       M /Zope/branches/jim-fix-zclasses/lib/python/Zope2/App/startup.py
+
+    Removed BoboPOS compatibility code.
+
+    ------------------------------------------------------------------------
+    r29201 | jim | 2005-02-18 07:18:05 -0500 (Fri, 18 Feb 2005) | 3 lines
+    Changed paths:
+       A /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/27.fs
+       A /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/27.txt
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/tests.py
+
+    Added a test for reading ZClasses and their instances from Zope 2.7
+    databases.
+
+    ------------------------------------------------------------------------
+    r29149 | jim | 2005-02-15 07:24:49 -0500 (Tue, 15 Feb 2005) | 2 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/ZClass.txt
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/tests.py
+
+    Made the tests a bit more thorough.
+
+    ------------------------------------------------------------------------
+    r29148 | jim | 2005-02-15 07:24:44 -0500 (Tue, 15 Feb 2005) | 3 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/OFS/tests/testAppInitializer.py
+
+    Made the test cleanup more robust by cleaning up any non-existent
+    directories found in Products.__path__.
+
+    ------------------------------------------------------------------------
+    r29147 | jim | 2005-02-15 07:24:37 -0500 (Tue, 15 Feb 2005) | 3 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/ExtensionClass/ExtensionClass.h
+       M /Zope/branches/jim-fix-zclasses/lib/python/ExtensionClass/_ExtensionClass.c
+
+    Fixed code that assumed that there weren't subclasses of the
+    ExtensionClass meta class.
+
+    ------------------------------------------------------------------------
+    r29136 | jim | 2005-02-13 11:37:33 -0500 (Sun, 13 Feb 2005) | 3 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/ZClass.py
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/ZClass.txt
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/_pmc.py
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/tests.py
+
+    Integrated persistent metaclass with ZClasses and got basic ZClass
+    test to pass.
+
+    ------------------------------------------------------------------------
+    r29135 | jim | 2005-02-13 11:15:15 -0500 (Sun, 13 Feb 2005) | 3 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/ExtensionClass/_ExtensionClass.c
+       M /Zope/branches/jim-fix-zclasses/lib/python/ExtensionClass/tests.py
+
+    Fixed bug in Base __getattro__ that caused __of__ to be missed in
+    instances of instances of subclasses (meta classes) of ExtensionClass.
+
+    ------------------------------------------------------------------------
+    r29072 | jim | 2005-02-07 07:36:07 -0500 (Mon, 07 Feb 2005) | 5 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/Property.py
+       M /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/ZClass.py
+
+    Fixed some code for registering class changes to avoid the
+    registration of data managers that are None.  This code will,
+    eventually, go away, since new persistent classes will
+    take care of their own registration.
+
+    ------------------------------------------------------------------------
+    r29070 | jim | 2005-02-07 07:36:03 -0500 (Mon, 07 Feb 2005) | 3 lines
+    Changed paths:
+       A /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/ZClass.txt
+
+    Created a basic ZClass test. It still isn't used, because the
+    persistent meta class hasn't been integrated yet.
+
+    ------------------------------------------------------------------------
+    r29069 | jim | 2005-02-07 07:36:01 -0500 (Mon, 07 Feb 2005) | 3 lines
+    Changed paths:
+       A /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/_pmc.py
+       A /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/_pmc.txt
+       A /Zope/branches/jim-fix-zclasses/lib/python/ZClasses/tests.py
+
+    Created a meta class for persistent classes.  This is based very
+    loosly on the experimental persistent class code from Zope 3.
+
+    ------------------------------------------------------------------------
+    r29068 | jim | 2005-02-07 07:35:58 -0500 (Mon, 07 Feb 2005) | 2 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/ExtensionClass/_ExtensionClass.c
+
+    Made the ExtensionClass meta class subclassible.
+
+    ------------------------------------------------------------------------
+    r29065 | jim | 2005-02-07 07:35:52 -0500 (Mon, 07 Feb 2005) | 3 lines
+    Changed paths:
+       M /Zope/branches/jim-fix-zclasses/lib/python/OFS/tests/testAppInitializer.py
+
+    Added missing cleanup code to return Products.__path__ to it's
+    original state.",Tim Peters,tim.one@comcast.net,Tim Peters,tim.one@comcast.net,2005-04-07 03:49:30+00:00,0,2005-04-07 03:49:30+00:00,0,True,False,"['ExtensionClass.h', '_ExtensionClass.c', 'tests.py']",['a3c0172ced44fc92a8bfc2e000dc6afdcb73f7aa'],5,35,40,3,0.5,0.5,1.0
+21bb426b265b1f7667c0935414f45046679b6222,"Added a helper function to set (or clear) the __get__ slot depending
+on whether a class has an __of__ definition.",Jim Fulton,jim@zope.com,Jim Fulton,jim@zope.com,2005-04-10 13:03:12+00:00,0,2005-04-10 13:03:12+00:00,0,True,False,"['_ExtensionClass.c', 'tests.py']",['e4174d38694ed536e9c9ba33080e247e03d7485a'],19,123,142,2,0.4782608695652174,1.0,1.0
+cabefb0f503aab00305ad45ef943fb8d8a707f06,"Added basic cyclic GC test.  Note that this test would fail in
+Zope 2.7 and earlier.",Jim Fulton,jim@zope.com,Jim Fulton,jim@zope.com,2005-05-05 10:09:20+00:00,0,2005-05-05 10:09:20+00:00,0,True,False,['tests.py'],['21bb426b265b1f7667c0935414f45046679b6222'],0,28,28,1,1.0,1.0,1.0
+c6c1ced6345631aaa9c50524a95764d59b94c560,fixed GCC 4 compilation problem,Andreas Jung,yet@gmx.de,Andreas Jung,yet@gmx.de,2005-05-19 08:35:58+00:00,0,2005-05-19 08:35:58+00:00,0,True,False,['_ExtensionClass.c'],['cabefb0f503aab00305ad45ef943fb8d8a707f06'],2,2,4,1,,,
+2c17b0a40ce9e661c8bf16a086541046fac2b2ea,add preliminary packaging metadata,Fred Drake,fdrake@acm.org,Fred Drake,fdrake@acm.org,2005-08-26 18:44:53+00:00,0,2005-08-26 18:44:53+00:00,0,True,False,['SETUP.cfg'],['c6c1ced6345631aaa9c50524a95764d59b94c560'],0,6,6,1,,,
+61b19072667a4d2b7f824ca9a5140b3fe9e7b234,"Merge philikon-zope32-integration branch. Basically, this branch entails:
+
+* Updated svn externals to include Zope 3.2 (currently the Zope3 trunk);
+  that includes two new top-level packages, pytz and zodbcode, as well as
+  the following new zope.* packages:
+  - zope.deprecation
+  - zope.dottedname
+  - zope.formlib
+  - zope.index
+  - zope.testbrowser
+
+* Moved to a zpkgutils-based build system, as the Zope 3.2 extension modules
+  require to be built with it. If everything goes ahead as planned, the release
+  tarball will also be built with zpkgutils (some work has also been done in
+  that direction).
+
+* Upgraded Five to the 1.3b release (released today) which is a Zope 3.2-compatible
+  version of Five 1.2b (also released today). Biggest implication of this on the
+  Zope 2 trunk is that the event work by Florent Guillaume has been folded back
+  into the Zope 2 core, i.e. the OFS package.
+
+* A few fixes to the Zope 2 PageTemplate/TAL/TALES implementation to work with the
+  new immutable i18n Messages available since Zope 3.1+ (and standard in Zope 3.2).",Philipp von Weitershausen,philipp@weitershausen.de,Philipp von Weitershausen,philipp@weitershausen.de,2005-11-02 18:34:38+00:00,0,2005-11-02 18:34:38+00:00,0,True,False,['_ExtensionClass.c'],['2c17b0a40ce9e661c8bf16a086541046fac2b2ea'],1,1,2,1,,,
+83357930f7f131578069a44d5c412fe06996f3fd,updated to ZPL 2.1 to be in sync with Zope 3,Andreas Jung,yet@gmx.de,Andreas Jung,yet@gmx.de,2005-11-18 14:39:19+00:00,0,2005-11-18 14:39:19+00:00,0,True,False,"['ExtensionClass.h', '_ExtensionClass.c', '__init__.py', 'pickle.c', 'tests.py']",['61b19072667a4d2b7f824ca9a5140b3fe9e7b234'],5,5,10,5,,,
+769befe64a4ae187e897ee5cca0c8e21855d752c,ExtensionClass eggification,Philipp von Weitershausen,philipp@weitershausen.de,Philipp von Weitershausen,philipp@weitershausen.de,2007-06-03 15:07:08+00:00,0,2007-06-03 15:07:08+00:00,0,True,False,"['buildout.cfg', 'setup.py']",[],0,46,46,2,,,
+38cccd6473598041ff4d0d0ee8b7d630d86fee57,"description, long_description",Philipp von Weitershausen,philipp@weitershausen.de,Philipp von Weitershausen,philipp@weitershausen.de,2007-06-04 15:53:36+00:00,0,2007-06-04 15:53:36+00:00,0,True,False,['setup.py'],['769befe64a4ae187e897ee5cca0c8e21855d752c'],3,7,10,1,,,
+e13d332f40eed9daa7dd9a19d9c72185955aa868,"The ComputedAttribute package is so tightly coupled to ExtensionClass,
+it can just as well be part of that egg.",Philipp von Weitershausen,philipp@weitershausen.de,Philipp von Weitershausen,philipp@weitershausen.de,2007-06-04 16:07:20+00:00,0,2007-06-04 16:07:20+00:00,0,True,False,['setup.py'],['38cccd6473598041ff4d0d0ee8b7d630d86fee57'],0,4,4,1,,,
+20428d148d443cfc19ce7303ef432d1b27c670fd,MethodObject seems like another ExtensionClass-ism that can be packaged with it.,Philipp von Weitershausen,philipp@weitershausen.de,Philipp von Weitershausen,philipp@weitershausen.de,2007-06-05 13:25:49+00:00,0,2007-06-05 13:25:49+00:00,0,True,False,"['README.txt', 'setup.py']",['e13d332f40eed9daa7dd9a19d9c72185955aa868'],5,35,40,2,,,
+175991d34a75a7fbeb358cf2208c913f169afea3,"Change homepage to CheeseShop, bump version number (Zope 2.11a1 has been released).",Philipp von Weitershausen,philipp@weitershausen.de,Philipp von Weitershausen,philipp@weitershausen.de,2007-07-27 16:22:00+00:00,0,2007-07-27 16:22:00+00:00,0,True,False,['setup.py'],['20428d148d443cfc19ce7303ef432d1b27c670fd'],2,2,4,1,,,
+65d189d316d877ee4688de43a674f7b90c674421,Added dev marker and fixed tabs.,Philipp von Weitershausen,philipp@weitershausen.de,Philipp von Weitershausen,philipp@weitershausen.de,2008-01-06 19:17:09+00:00,0,2008-01-06 19:17:09+00:00,0,True,False,['setup.py'],['175991d34a75a7fbeb358cf2208c913f169afea3'],3,3,6,1,,,
+bf9d5d2e94252cc54fb01af72369b8787c0391a2,"Fixed 64-bit compatibility issues for Python 2.5.x / 2.6.x.
+
+o See http://www.python.org/dev/peps/pep-0353/ for details.",Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2009-08-02 17:17:34+00:00,0,2009-08-02 17:17:34+00:00,0,True,False,"['CHANGES.txt', 'setup.py', '_ExtensionClass.c', 'pickle.c']",['06979e9e4cdcdcc8526a94acde4903466e379a3b'],7,31,38,4,0.0,0.0,1.0
+07718a14084c6df8a1d2c8013deb3c56b2c82199,Prep 2.11.2 release.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2009-08-02 17:18:20+00:00,0,2009-08-02 17:18:20+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['bf9d5d2e94252cc54fb01af72369b8787c0391a2'],2,2,4,2,,,
+a944a7dbc74622ef1c0d3207240d4751dea45bb6,svb,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2009-08-02 17:19:19+00:00,0,2009-08-02 17:19:19+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['07718a14084c6df8a1d2c8013deb3c56b2c82199'],1,7,8,2,,,
+99297cf938a13c623e886b4d71f87f17d0f574ef,Further 64-bit fixes (Python 2.4 compatibility).,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2009-08-02 18:05:07+00:00,0,2009-08-02 18:05:07+00:00,0,True,False,"['CHANGES.txt', '_ExtensionClass.c']",['a944a7dbc74622ef1c0d3207240d4751dea45bb6'],3,3,6,2,,,
+54577d693d350f4a602b068e13fb854d2757abc8,Prep 2.11.3 release.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2009-08-02 18:07:42+00:00,0,2009-08-02 18:07:42+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['99297cf938a13c623e886b4d71f87f17d0f574ef'],2,2,4,2,,,
+f9cc1e191beee5beb59f98d9c8b00fe111f81a6e,svb,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2009-08-02 18:31:59+00:00,0,2009-08-02 18:31:59+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['54577d693d350f4a602b068e13fb854d2757abc8'],1,7,8,2,,,
+603d5a5a9b534fee5f89b62005253e18f9f6c709,Added support for method cache in ExtensionClass. Patch contributed by Yoshinori K. Okuji. See LP #486182.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-02-14 21:35:34+00:00,0,2010-02-14 21:35:34+00:00,0,True,False,"['CHANGES.txt', '_ExtensionClass.c']",['f9cc1e191beee5beb59f98d9c8b00fe111f81a6e'],12,51,63,2,0.0,0.0,0.625
+b17ed1e1c68e6b8c9107bf1f17e5051266582302,Removed old build artifacts and some metadata cleanup.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-02-14 21:40:27+00:00,0,2010-02-14 21:40:27+00:00,0,True,False,"['CHANGES.txt', 'buildout.cfg', 'setup.py', 'DEPENDENCIES.cfg', 'SETUP.cfg', 'setup.py', 'SETUP.cfg', 'setup.py', 'DEPENDENCIES.cfg', 'SETUP.cfg', 'setup.py']",['603d5a5a9b534fee5f89b62005253e18f9f6c709'],74,6,80,11,,,
+3f21dd0df519dc1fc446609ae351606266a34079,Prepare ExtensionClass 2.12.0.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-02-14 21:44:08+00:00,0,2010-02-14 21:44:08+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['b17ed1e1c68e6b8c9107bf1f17e5051266582302'],3,3,6,2,,,
+df82b6cf0d3b0f9455ec263f19b791cdc2c4e4df,Bump version,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-02-14 21:44:49+00:00,0,2010-02-14 21:44:49+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['3f21dd0df519dc1fc446609ae351606266a34079'],1,5,6,2,,,
+5bebff1919a7ffe4f9065434e51c2580ea8a61b8,Merged hannosch-lp-143657 branch,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-02-22 17:30:41+00:00,0,2010-02-22 17:30:41+00:00,0,True,False,"['CHANGES.txt', 'setup.py', 'pickle.c', 'tests.py']",['df82b6cf0d3b0f9455ec263f19b791cdc2c4e4df'],13,29,42,4,0.0,0.0,1.0
+459c6471f2863494d5d51dea33d46b9afdd9d48e,Prepare ExtensionClass 2.13.0.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-02-22 17:33:57+00:00,0,2010-02-22 17:33:57+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['5bebff1919a7ffe4f9065434e51c2580ea8a61b8'],2,4,6,2,,,
+79a13d753a768a23695255a6a4855461dcc6d703,Bump version,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-02-22 17:34:39+00:00,0,2010-02-22 17:34:39+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['459c6471f2863494d5d51dea33d46b9afdd9d48e'],1,5,6,2,,,
+3ca86d10cb52dac0eaa023f42433ca2b9dce75cc,Removed cruft in ``pickle/pickle.c`` related to removed ``__getnewargs__``.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2010-03-08 21:58:21+00:00,0,2010-03-08 21:58:21+00:00,0,True,False,"['CHANGES.txt', 'pickle.c']",['79a13d753a768a23695255a6a4855461dcc6d703'],10,2,12,2,0.0,0.0,0.0
+6aef75a2db0f6cebbd1e0d68a018e6c2d54e9d4e,Comply with repository policy.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2010-04-07 15:04:20+00:00,0,2010-04-07 15:04:20+00:00,0,True,False,"['COPYRIGHT.txt', 'LICENSE.txt', 'setup.py', '_ComputedAttribute.c', 'tests.py', 'ExtensionClass.h', '_ExtensionClass.c', '__init__.py', 'pickle.c', 'tests.py', '_MethodObject.c', 'tests.py']",['3ca86d10cb52dac0eaa023f42433ca2b9dce75cc'],11,56,67,12,,,
+a32975fa39eef394817927c76a4974229173acf6,Avoid external,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-04-30 13:44:33+00:00,0,2010-04-30 13:44:33+00:00,0,True,False,['bootstrap.py'],['6aef75a2db0f6cebbd1e0d68a018e6c2d54e9d4e'],0,121,121,1,1.0,1.0,1.0
+d4c13804ad8d0ca4e31650680c11654b1adc9997,Get a working buildout version combination,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-04-30 13:48:40+00:00,0,2010-04-30 13:48:40+00:00,0,True,False,['buildout.cfg'],['a32975fa39eef394817927c76a4974229173acf6'],0,6,6,1,,,
+5838f9ed84887db28b5f88b94376c35e9e2e459e,Removed undeclared testing dependency on zope.testing. Avoid some module global imports.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-04-30 13:55:00+00:00,0,2010-04-30 13:55:00+00:00,0,True,False,"['CHANGES.txt', 'tests.py', 'tests.py', 'tests.py']",['d4c13804ad8d0ca4e31650680c11654b1adc9997'],30,23,53,4,1.0,1.0,1.0
+0e3ee263ee2a4cf967b93196092c4c01be513a69,Prepare ExtensionClass 2.13.1.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-04-30 13:58:01+00:00,0,2010-04-30 13:58:01+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['5838f9ed84887db28b5f88b94376c35e9e2e459e'],2,2,4,2,,,
+ba834f340fa2e122e926979b54d27d78786167df,Bump version,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-04-30 13:59:10+00:00,0,2010-04-30 13:59:10+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['0e3ee263ee2a4cf967b93196092c4c01be513a69'],1,5,6,2,,,
+91574f883f5b101a3f109264b8f13c9bcb1f8d56,LP #587760: Handle tp_basicsize correctly.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-06-16 14:17:54+00:00,0,2010-06-16 14:17:54+00:00,0,True,False,"['CHANGES.txt', '_ExtensionClass.c']",['ba834f340fa2e122e926979b54d27d78786167df'],4,9,13,2,0.0,0.0,0.75
+ef8c18847d3833ca8e0d7a426d5ac8ccb6416ba9,Prepare ExtensionClass 2.13.2.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-06-16 14:30:37+00:00,0,2010-06-16 14:30:37+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['91574f883f5b101a3f109264b8f13c9bcb1f8d56'],2,2,4,2,,,
+2c0cc2d5c0634828f6895b8ce642ce584055cc2d,Bump version,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2010-06-16 14:32:24+00:00,0,2010-06-16 14:32:24+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['ef8c18847d3833ca8e0d7a426d5ac8ccb6416ba9'],1,5,6,2,,,
+afb8488e966752dc3393124504db8eded128f99e,Don't create wrappers when retrieving parent pointers.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2011-11-02 23:11:05+00:00,0,2011-11-02 23:11:05+00:00,0,True,False,"['CHANGES.txt', 'setup.py', '_ExtensionClass.c']",['2c0cc2d5c0634828f6895b8ce642ce584055cc2d'],5,6,11,3,0.0,0.0,1.0
+9aa9876eb7ac590bd05f886204424582a58ec83f,We should work with the latest buildout,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2011-11-06 16:31:01+00:00,0,2011-11-06 16:31:01+00:00,0,True,False,['buildout.cfg'],['afb8488e966752dc3393124504db8eded128f99e'],6,0,6,1,,,
+58c35e4afb41bb76d4c8d6eeb4a520d2c36bfcc3,add manifest,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2011-12-13 13:31:35+00:00,0,2011-12-13 13:31:35+00:00,0,True,False,['MANIFEST.in'],['9aa9876eb7ac590bd05f886204424582a58ec83f'],0,8,8,1,,,
+f2d52d6a31aaec9f63d85e2010ab41f8f66d49e9,Prepare ExtensionClass 4.0a1.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2011-12-13 13:33:23+00:00,0,2011-12-13 13:33:23+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['58c35e4afb41bb76d4c8d6eeb4a520d2c36bfcc3'],3,3,6,2,,,
+f216e51a6fdfe8f0bc20b0599117a0bc4ae6a201,vb,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2011-12-13 13:34:42+00:00,0,2011-12-13 13:34:42+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['f2d52d6a31aaec9f63d85e2010ab41f8f66d49e9'],1,5,6,2,,,
+316219307a75cffc82e5053a33135a90abac031f,add trove classifiers,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-02-10 14:56:35+00:00,0,2013-02-10 14:56:35+00:00,0,True,False,['setup.py'],['f216e51a6fdfe8f0bc20b0599117a0bc4ae6a201'],2,12,14,1,,,
+b6d30ca37483e2b948a8baea6885726d162715c7,reindent arguments,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-02-24 13:32:23+00:00,0,2013-02-24 13:32:23+00:00,0,True,False,['setup.py'],['316219307a75cffc82e5053a33135a90abac031f'],38,39,77,1,,,
+faa20f676c736558e0e685cdf6686c4e1f47eb8f,prepare,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-02-24 13:34:10+00:00,0,2013-02-24 13:34:10+00:00,0,True,False,['CHANGES.txt'],['b6d30ca37483e2b948a8baea6885726d162715c7'],1,2,3,1,,,
+177f30cfd01742d7d48c256d162a39d024fe459a,prepare,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-02-24 13:38:06+00:00,0,2013-02-24 13:38:06+00:00,0,True,False,['setup.py'],['faa20f676c736558e0e685cdf6686c4e1f47eb8f'],1,1,2,1,,,
+f76b9f501b1cfd3fb9bb6da5e68fbdb1fe2de889,vb,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-02-24 13:39:13+00:00,0,2013-02-24 13:39:13+00:00,0,True,False,"['CHANGES.txt', 'setup.py']",['177f30cfd01742d7d48c256d162a39d024fe459a'],1,5,6,2,,,
+cc1cda86c5f21e5edd97ab2b1b2ca4c037326b1c,add ignores,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-02-25 17:05:10+01:00,-3600,2013-02-25 17:05:10+01:00,-3600,True,False,['.gitignore'],['f76b9f501b1cfd3fb9bb6da5e68fbdb1fe2de889'],0,10,10,1,,,
+30d98c8a7c8a83fef20cb6735eabe52f2cc134d4,Update to latest v1 bootstrap,Marius Gedminas,marius@gedmin.as,Marius Gedminas,marius@gedmin.as,2013-03-12 14:30:11+02:00,-7200,2013-03-12 14:30:11+02:00,-7200,True,False,['bootstrap.py'],['cc1cda86c5f21e5edd97ab2b1b2ca4c037326b1c'],65,221,286,1,1.0,1.0,0.2
+e6162e6b307f4b5daeaa697444ab7f70a39da91e,Updated Travis YAML.,Stephan Richter,stephan.richter@gmail.com,Stephan Richter,stephan.richter@gmail.com,2013-03-13 10:02:10-04:00,14400,2013-03-13 10:02:10-04:00,14400,True,False,['.travis.yml'],['30d98c8a7c8a83fef20cb6735eabe52f2cc134d4'],0,11,11,1,,,
+2f8edb2aab2b71881d66365fca8c4be2a517558b,checkpoint,David Glick,david@glicksoftware.com,David Glick,david@glicksoftware.com,2013-03-19 16:30:28-07:00,25200,2013-03-20 12:16:10-07:00,25200,True,False,"['setup.py', '__init__.py', 'tests.py']",['e6162e6b307f4b5daeaa697444ab7f70a39da91e'],30,220,250,3,0.6991150442477876,0.415929203539823,0.7433628318584071
+7213312896e79ba5309e3194f53da691e208eefd,add python reference impl of MethodObject and ComputedAttribute,David Glick,david@glicksoftware.com,David Glick,david@glicksoftware.com,2013-03-20 13:09:45-07:00,25200,2013-03-20 13:09:45-07:00,25200,True,False,"['__init__.py', '__init__.py']",['2f8edb2aab2b71881d66365fca8c4be2a517558b'],2,47,49,2,1.0,1.0,0.5833333333333334
+ec9410f916284ca2039705747e90f026ce295beb,add tox and coverage,David Glick,david@glicksoftware.com,David Glick,david@glicksoftware.com,2013-03-20 20:06:25-07:00,25200,2013-03-20 22:20:06-07:00,25200,True,False,"['.gitignore', 'bootstrap.py', 'setup.py', '__init__.py', 'tests.py', 'tox.ini']",['7213312896e79ba5309e3194f53da691e208eefd'],31,64,95,6,,,
+35911282ced4488bddecbdb50bf261a974898355,add changelog and trove classifier,David Glick,david@glicksoftware.com,David Glick,david@glicksoftware.com,2013-03-20 22:51:27-07:00,25200,2013-03-20 22:51:27-07:00,25200,True,False,"['CHANGES.txt', 'setup.py']",['ec9410f916284ca2039705747e90f026ce295beb'],1,3,4,2,,,
+92d70ac031b33f5433446670be407888df08f025,try to fix travis build,David Glick,david@glicksoftware.com,David Glick,david@glicksoftware.com,2013-03-20 22:57:26-07:00,25200,2013-03-20 22:57:26-07:00,25200,True,False,['.travis.yml'],['35911282ced4488bddecbdb50bf261a974898355'],3,3,6,1,,,
+69a822f82843a69eb8ef162b9d5a8c7a8f06d7fe,fix tests as run by buildout,David Glick,david@glicksoftware.com,David Glick,david@glicksoftware.com,2013-03-22 00:42:39-07:00,25200,2013-03-22 00:42:39-07:00,25200,True,False,"['.travis.yml', 'tests.py', 'tox.ini']",['92d70ac031b33f5433446670be407888df08f025'],13,13,26,3,,,
+187228ca59aa69d7d4e3e10324b2717ea279c878,fix compatibility with C Base's tp_new slot,David Glick,david@glicksoftware.com,David Glick,david@glicksoftware.com,2013-03-25 23:16:40-07:00,25200,2013-03-25 23:16:40-07:00,25200,True,False,"['__init__.py', 'tests.py']",['69a822f82843a69eb8ef162b9d5a8c7a8f06d7fe'],1,14,15,2,1.0,1.0,0.3333333333333333
+fba6d39c4228b3c9ed7673e6efcc2e4298a5fd24,whitespace,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 11:48:23+02:00,-7200,2013-05-04 11:48:23+02:00,-7200,True,False,['tox.ini'],['94c0d06b971c163dd898354b9258f2d2a6df7248'],3,3,6,1,,,
+f77c9d71770f9fc93009252db9b47982dcabd4ca,install tox via buildout,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 11:48:29+02:00,-7200,2013-05-04 11:48:29+02:00,-7200,True,False,['buildout.cfg'],['fba6d39c4228b3c9ed7673e6efcc2e4298a5fd24'],1,5,6,1,,,
+9ced703afb7293a99823b33543f0eb635783011e,more ignores,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 11:52:11+02:00,-7200,2013-05-04 11:52:11+02:00,-7200,True,False,['.gitignore'],['f77c9d71770f9fc93009252db9b47982dcabd4ca'],0,2,2,1,,,
+138566aabb855769e331b35f2386ba91f02928f8,correct version number,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 11:53:03+02:00,-7200,2013-05-04 11:53:03+02:00,-7200,True,False,"['CHANGES.txt', 'setup.py']",['9ced703afb7293a99823b33543f0eb635783011e'],2,2,4,2,,,
+a3e548230c3ae4bd13aec689675da36b00aecf37,update to latest bootstrap,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 11:54:06+02:00,-7200,2013-05-04 11:54:06+02:00,-7200,True,False,['bootstrap.py'],['138566aabb855769e331b35f2386ba91f02928f8'],165,53,218,1,0.0,0.0,0.7058823529411765
+deaed305f14d2ae24fa8241990d3806371aac35c,skip C extensions under Python 3,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 11:55:54+02:00,-7200,2013-05-04 11:55:54+02:00,-7200,True,False,['setup.py'],['a3e548230c3ae4bd13aec689675da36b00aecf37'],1,3,4,1,,,
+c1736efdac192afc75b46b964ea207b645862b34,whitespace,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 11:58:20+02:00,-7200,2013-05-04 11:58:20+02:00,-7200,True,False,['__init__.py'],['deaed305f14d2ae24fa8241990d3806371aac35c'],5,3,8,1,,,
+eb779c99fba7bffd27fcd6706eba1f1ca6704944,whitespace / pep8,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 12:06:58+02:00,-7200,2013-05-04 12:06:58+02:00,-7200,True,False,"['tests.py', '__init__.py', 'tests.py', 'tests.py']",['c1736efdac192afc75b46b964ea207b645862b34'],75,87,162,4,0.6666666666666666,0.3333333333333333,0.0
+4c73c3b4b6f8e3fbfb09886adede4321a9232530,use print as a function,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 12:22:39+02:00,-7200,2013-05-04 12:22:39+02:00,-7200,True,False,"['__init__.py', 'tests.py', 'tests.py']",['eb779c99fba7bffd27fcd6706eba1f1ca6704944'],26,22,48,3,,,
+c3bb5030c1fa4d270a6373ca252c13655ae8105f,deal with some renamed / removed modules,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 12:30:45+02:00,-7200,2013-05-04 13:36:45+02:00,-7200,True,False,"['__init__.py', 'tests.py', '__init__.py']",['4c73c3b4b6f8e3fbfb09886adede4321a9232530'],9,14,23,3,0.0,0.0,0.0
+9f634280879353db18e6667104a4778a0dd2199f,Change `__metaclass__` definition into a Python 2/3 compatible form,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 13:36:52+02:00,-7200,2013-05-04 13:44:50+02:00,-7200,True,False,"['__init__.py', 'tests.py']",['c3bb5030c1fa4d270a6373ca252c13655ae8105f'],28,23,51,2,,,
+ea7e62e4fc87d0389ed702fda7464e1581ad027c,"under Python 3 get is a simply function and not an unbound method
+this might actually hint at a bigger problem",Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 14:09:51+02:00,-7200,2013-05-04 14:09:51+02:00,-7200,True,False,['__init__.py'],['9f634280879353db18e6667104a4778a0dd2199f'],1,2,3,1,1.0,1.0,1.0
+c1426e69f60ffd7ecd9fb5ce93041d9a18e93099,"avoid testing classic class edge-case, which is untestable under Python 3",Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 14:15:40+02:00,-7200,2013-05-04 14:15:40+02:00,-7200,True,False,['tests.py'],['ea7e62e4fc87d0389ed702fda7464e1581ad027c'],4,4,8,1,,,
+8edab6e71d5c70a9a2c1f37b3f9f399192454151,deal with `__cmp__` removal,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 14:31:17+02:00,-7200,2013-05-04 14:31:17+02:00,-7200,True,False,['tests.py'],['c1426e69f60ffd7ecd9fb5ce93041d9a18e93099'],4,4,8,1,,,
+21df4d8b25b015d0805dc42d05c26b279e918064,exlude py3-only branch from coverage,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 14:50:27+02:00,-7200,2013-05-04 14:50:27+02:00,-7200,True,False,['__init__.py'],['8edab6e71d5c70a9a2c1f37b3f9f399192454151'],1,1,2,1,,,
+10026ce5de6d25bd35a5fdda4e651cb5a39788fb,"try to get tox working, though it seems to be running the wrong tests",Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 14:54:37+02:00,-7200,2013-05-04 14:54:37+02:00,-7200,True,False,['tox.ini'],['21df4d8b25b015d0805dc42d05c26b279e918064'],3,3,6,1,,,
+fdc555edee52556770a0ea11540a33e6cbf67be8,note python 3 compatibility and activate travis-ci tests,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 15:01:14+02:00,-7200,2013-05-04 15:01:14+02:00,-7200,True,False,"['.travis.yml', 'CHANGES.txt', 'setup.py']",['10026ce5de6d25bd35a5fdda4e651cb5a39788fb'],2,10,12,3,,,
+d99595ded03941dcd723a910806b22a2c996f100,prepare,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 15:05:24+02:00,-7200,2013-05-04 15:05:24+02:00,-7200,True,False,"['CHANGES.txt', 'setup.py']",['fdc555edee52556770a0ea11540a33e6cbf67be8'],3,3,6,2,,,
+66b6a2cd29a989e47531b12eb2d3afbb0fd70af2,vb,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2013-05-04 15:07:46+02:00,-7200,2013-05-04 15:07:46+02:00,-7200,True,False,"['CHANGES.txt', 'setup.py']",['d99595ded03941dcd723a910806b22a2c996f100'],1,5,6,2,,,
+a246be22cbc93065f90da55f4d01c2466d3b3a4a,Ignore derived.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2014-11-12 11:20:31-05:00,18000,2014-11-12 11:20:31-05:00,18000,True,False,['.gitignore'],['66b6a2cd29a989e47531b12eb2d3afbb0fd70af2'],0,1,1,1,,,
+87218e183d3bc70c46f555480405e45b66557c34,"Nest into Github (.txt -> .rst).
+
+Use 'with open()' to avoid resource warnings on Py3k.",Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2014-11-12 11:21:03-05:00,18000,2014-11-12 11:21:03-05:00,18000,True,False,"['CHANGES.rst', 'README.rst', 'setup.py']",['a246be22cbc93065f90da55f4d01c2466d3b3a4a'],2,5,7,3,,,
+53200343aac004e4fabee42d9629717f9060a092,Add support for Python 3.4.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2014-11-12 11:23:04-05:00,18000,2014-11-12 11:23:04-05:00,18000,True,False,"['CHANGES.rst', 'setup.py', 'tox.ini']",['87218e183d3bc70c46f555480405e45b66557c34'],1,3,4,3,,,
+9cd494d22568046f8f3253fdce7248af117a0d2a,Prep 4.1b1 release.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2014-11-12 11:25:51-05:00,18000,2014-11-12 11:25:51-05:00,18000,True,False,"['CHANGES.rst', 'setup.py']",['53200343aac004e4fabee42d9629717f9060a092'],2,2,4,2,,,
+f5cb4b871d78fc0cba60b24cf3e160c1ae7149e2,Exercise all supported versions.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2014-11-13 08:15:28-05:00,18000,2014-11-13 08:15:28-05:00,18000,True,False,['.travis.yml'],['9cd494d22568046f8f3253fdce7248af117a0d2a'],0,2,2,1,,,
+502a0c987d521f44947c58b906e7318073d4b028,"Ensure tox tests pypy, pypy3.",Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2014-11-13 08:49:41-05:00,18000,2014-11-13 08:49:41-05:00,18000,True,False,['tox.ini'],['f5cb4b871d78fc0cba60b24cf3e160c1ae7149e2'],1,1,2,1,,,
+a3f792f732e7863c86b3ab558f6954844457e20a,"Speed up Travis start via 'sudo: false'.
+
+See: http://blog.travis-ci.com/2014-12-17-faster-builds-with-container-based-infrastructure/",Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2014-12-18 12:04:22-05:00,18000,2014-12-18 12:04:22-05:00,18000,True,False,['.travis.yml'],['502a0c987d521f44947c58b906e7318073d4b028'],0,1,1,1,,,
+dec49aa5175d987a2e1023d61d5c4aac2e5d607f,Ignore buildout artifacts.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2014-12-18 14:25:20-05:00,18000,2014-12-18 14:25:20-05:00,18000,True,False,['.gitignore'],['a3f792f732e7863c86b3ab558f6954844457e20a'],0,3,3,1,,,
+ed7d2bb80b9ad68094a109ff0534270033453180,Update to latest bootstrap.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2014-12-18 14:25:27-05:00,18000,2014-12-18 14:25:27-05:00,18000,True,False,['bootstrap.py'],['dec49aa5175d987a2e1023d61d5c4aac2e5d607f'],42,66,108,1,1.0,1.0,1.0
+236dad822aa6791808ba4b17c5c8012ce455b7af,Prep 4.1 release.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2014-12-18 14:27:55-05:00,18000,2014-12-18 14:27:55-05:00,18000,True,False,"['CHANGES.rst', 'setup.py']",['ed7d2bb80b9ad68094a109ff0534270033453180'],1,6,7,2,,,
+06a1e1ab87717a6da62a08085423525b98f0d6bf,Have the pure-python implementation avoid wrapping __parent__. Fix issue #3.,Jason Madden,jamadden@gmail.com,Jason Madden,jamadden@gmail.com,2015-03-19 16:55:06-05:00,18000,2015-03-19 16:55:06-05:00,18000,True,False,"['__init__.py', 'tests.py']",['236dad822aa6791808ba4b17c5c8012ce455b7af'],2,28,30,2,1.0,1.0,1.0
+3ba1079623c4afd8523df6477dc6f901be25f22a,Specify Extension class as coverage target.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2015-03-20 10:41:09-04:00,14400,2015-03-20 10:41:09-04:00,14400,True,False,['tox.ini'],['236dad822aa6791808ba4b17c5c8012ce455b7af'],1,1,2,1,,,
+70cb9cda808a0acc6e399f1120fcd9a98c0a1997,Make tox actually run the doctest examples.,Jason Madden,jamadden@gmail.com,Jason Madden,jamadden@gmail.com,2015-03-20 12:36:26-05:00,18000,2015-03-20 12:36:26-05:00,18000,True,False,['tox.ini'],['06a1e1ab87717a6da62a08085423525b98f0d6bf'],2,2,4,1,,,
+d0e47966596676d416e39d3067265c9e02ec7a71,Spell common 'nosetests' options in 'setup.cfg'.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2015-03-20 14:12:38-04:00,14400,2015-03-20 14:21:21-04:00,14400,True,False,"['setup.cfg', 'tox.ini']",['3ba1079623c4afd8523df6477dc6f901be25f22a'],2,8,10,2,,,
+68798d8e4492dec82891672ef56cad9954b1242e,"Changelog entry for PR #4.
+
+Target 4.1.1 as next release.",Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2015-03-20 14:39:07-04:00,14400,2015-03-20 14:39:07-04:00,14400,True,False,"['CHANGES.rst', 'setup.py']",['fd39e3ee6592cddecb4c00e5048d0b9022ad8bb5'],1,7,8,2,,,
+d4f463273dd0a0eec6a4426e17d0404b23127bf0,Prep 4.1.1 release.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2015-03-20 14:40:29-04:00,14400,2015-03-20 14:40:29-04:00,14400,True,False,"['CHANGES.rst', 'setup.py']",['68798d8e4492dec82891672ef56cad9954b1242e'],2,2,4,2,,,
+b096a3a6afdeb760535aef365f9927cd46a3e603,svb,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2015-03-20 14:41:29-04:00,14400,2015-03-20 14:41:29-04:00,14400,True,False,"['CHANGES.rst', 'setup.py']",['d4f463273dd0a0eec6a4426e17d0404b23127bf0'],1,6,7,2,,,
+762af92148cffa8f7de86574d638f6c7494bbd22,"fix calling `__class_init__` hook by the Python implementation
+
+Always call `__class_init__` as an unbound function, like the C implementation does,
+so it works even when `__class_init__` is patched in after class creation like
+Zope does to `Persistent`.
+
+The extra check for `__func__` is because getting a function attribute in Python 3
+does not turn it into a method.",David Glick,david@glicksoftware.com,David Glick,david@glicksoftware.com,2015-03-31 18:18:05-07:00,25200,2015-03-31 18:18:05-07:00,25200,True,False,"['CHANGES.rst', '__init__.py', 'tests.py']",['b096a3a6afdeb760535aef365f9927cd46a3e603'],8,25,33,3,0.5,0.5,0.5
+d2e6a73a64e49d9ca52b39332c78c75b7142d115,Prep 4.1.2 release.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2015-04-03 20:05:33-04:00,14400,2015-04-03 20:05:33-04:00,14400,True,False,"['CHANGES.rst', 'setup.py']",['4963a7d442fa5d3172138e025d4371ce79804200'],2,2,4,2,,,
+d5bb17fd04706b92de7a1e40b8695369dc58731e,svb,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2015-04-04 11:49:24-04:00,14400,2015-04-04 11:49:24-04:00,14400,True,False,"['CHANGES.rst', 'setup.py']",['d2e6a73a64e49d9ca52b39332c78c75b7142d115'],1,6,7,2,,,
+e39b80aadc7b8000f98b84447db73d63faea6d66,Add comments and a test to clarify that Base_getattro and friends do not need to use super(),Jason Madden,jamadden@gmail.com,Jason Madden,jamadden@gmail.com,2015-05-05 15:03:07-05:00,18000,2015-05-05 15:03:07-05:00,18000,True,False,"['__init__.py', 'tests.py']",['d5bb17fd04706b92de7a1e40b8695369dc58731e'],3,32,35,2,1.0,1.0,1.0
+75f1f8638c6238536dc11206cbe7986660fd101f,Enable travis caching of pip/eggs,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2016-04-04 13:05:26+02:00,-7200,2016-04-04 13:05:26+02:00,-7200,True,False,['.travis.yml'],['096dca97a2af9fcb60d822c01b7f420f915c9648'],0,4,4,1,,,
+579528de3a1fe8f470afe0836b4f55dfeb5098f6,Drop support for Python 2.6 / 3.2.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2016-09-29 10:29:25-04:00,14400,2016-09-29 10:29:25-04:00,14400,True,False,"['.travis.yml', 'CHANGES.rst', 'setup.py', 'tox.ini']",['75f1f8638c6238536dc11206cbe7986660fd101f'],6,3,9,4,,,
+15d71cc4c2de6d0c581499886ee7a331144105e5,Add support for Python 3.5.,Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2016-09-29 10:30:57-04:00,14400,2016-09-29 10:30:57-04:00,14400,True,False,"['.travis.yml', 'CHANGES.rst', 'setup.py', 'tox.ini']",['579528de3a1fe8f470afe0836b4f55dfeb5098f6'],1,5,6,4,,,
+d83a96e09e3c5d6f4ae0b0187ca3f53cf3cff7fa,"Bump minor version.
+
+Changes to supported Python versions aren't bugfixes.",Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2016-09-29 10:34:28-04:00,14400,2016-09-29 10:34:28-04:00,14400,True,False,['setup.py'],['15d71cc4c2de6d0c581499886ee7a331144105e5'],1,1,2,1,,,
+a9127d1d302f226dcceb389721e487dda93cb907,"Show missing lines in coverage report.
+
+[ci skip]",Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2016-09-29 10:44:34-04:00,14400,2016-09-29 10:44:34-04:00,14400,True,False,['setup.cfg'],['d83a96e09e3c5d6f4ae0b0187ca3f53cf3cff7fa'],0,3,3,1,,,
+0595d8bd5bc54d5a750e3457ed217a5b7be713d6,"Full coverage for '_add_classic_mro'.
+
+Brings coverage to 100%.",Tres Seaver,tseaver@palladion.com,Tres Seaver,tseaver@palladion.com,2016-10-01 17:29:50-04:00,14400,2016-10-01 17:29:50-04:00,14400,True,False,['tests.py'],['14f5aa9fd461e5201690a016bdff277179379991'],0,61,61,1,1.0,1.0,0.9210526315789473
+f6ef36a78d36180876d46941948e0d054b376ccb,"Port the C extensions to Python 3.
+
+Merge pull request #9 from axiros/ExtensionClass/master.",stephan-hof,sh@axiros.com,Hanno Schlichting,hanno@hannosch.eu,2016-09-22 09:14:04+02:00,-7200,2017-01-18 16:35:38+01:00,-3600,True,False,"['MANIFEST.in', 'setup.py', '_ComputedAttribute.c', '__init__.py', 'ExtensionClass.h', '_ExtensionClass.c', '__init__.py', '_compat.h', 'pickle.c', 'tests.py', '_MethodObject.c', '__init__.py', 'tox.ini']",['37269cb8aead9318fbe476e4eac97b1b9c340996'],619,817,1436,13,1.0,1.0,0.046153846153846156
+52cf88e6166d7ac5efb4699a71499fbae1c7aa22,Prefer zope.testrunner to run tests.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-01-18 16:39:44+01:00,-3600,2017-01-18 17:17:46+01:00,-3600,True,False,"['.travis.yml', 'buildout.cfg', 'setup.cfg', 'tox.ini']",['f6ef36a78d36180876d46941948e0d054b376ccb'],11,31,42,4,,,
+d732b334a516c04af86b6be3f60904a1626069a4,Declare support for Python 3.6.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-01-18 16:52:58+01:00,-3600,2017-01-18 17:17:51+01:00,-3600,True,False,"['.travis.yml', 'CHANGES.rst', 'setup.py', 'tox.ini']",['52cf88e6166d7ac5efb4699a71499fbae1c7aa22'],5,12,17,4,,,
+fffe96655ae679b5cc34b5d2b720eba1d84d5289,Tweak ignores and update manifest.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-01-18 17:24:05+01:00,-3600,2017-01-18 17:24:05+01:00,-3600,True,False,"['.gitignore', 'MANIFEST.in', 'buildout.cfg']",['d732b334a516c04af86b6be3f60904a1626069a4'],1,5,6,3,,,
+12a871f0f34f91d521eb10c3db8784ef4d134209,prepare [ci skip],Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-01-18 18:45:42+01:00,-3600,2017-01-18 18:45:42+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['fffe96655ae679b5cc34b5d2b720eba1d84d5289'],2,2,4,2,,,
+8fa975215a2c19661fcd914d3bf2acdc36b4d8f7,vb [ci skip],Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-01-18 18:59:42+01:00,-3600,2017-01-18 18:59:42+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['12a871f0f34f91d521eb10c3db8784ef4d134209'],1,5,6,2,,,
+cc88217205d5253b29259cd2da3a3f33ec3a4345,"Try even harder to avoid cross-pollution of tox env.
+
+pip really tries hard to build wheels and re-uses them in pure/non-pure
+environments resulting in unpredictable environments.",Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-01-18 20:00:27+01:00,-3600,2017-01-18 20:00:27+01:00,-3600,True,False,['tox.ini'],['8fa975215a2c19661fcd914d3bf2acdc36b4d8f7'],2,1,3,1,,,
+ab011fd9348ff419a6d583706eadd9acc17e79a9,Add unittest for ComputedAttribute on class level.,stephan-hof,sh@axiros.com,stephan-hof,sh@axiros.com,2017-01-24 10:09:11+01:00,-3600,2017-01-24 10:11:01+01:00,-3600,True,False,['tests.py'],['cc88217205d5253b29259cd2da3a3f33ec3a4345'],1,26,27,1,1.0,1.0,1.0
+655776b08939061a3e044c65203d670c82f2cee9,WIP: Add unmodified copy of _PyObject_GenericGetAttrWithDict from python2.7,stephan-hof,sh@axiros.com,stephan-hof,sh@axiros.com,2017-01-24 08:04:58+01:00,-3600,2017-01-24 10:11:01+01:00,-3600,True,False,['_ExtensionClass.c'],['ab011fd9348ff419a6d583706eadd9acc17e79a9'],19,117,136,1,0.0,0.0,1.0
+db6a6e019c8fddf70709703c0a1f1e7015294db3,WIP: Get rid of dead code.,stephan-hof,sh@axiros.com,stephan-hof,sh@axiros.com,2017-01-24 08:06:14+01:00,-3600,2017-01-24 10:11:01+01:00,-3600,True,False,['_ExtensionClass.c'],['655776b08939061a3e044c65203d670c82f2cee9'],28,0,28,1,1.0,1.0,0.0
+6617fe128c1591928013af0e7bdc9bba64403849,"WIP: Do not inline _PyObject_GetDictPtr.
+
+Use as much API from python as possible (even if its declared private).
+Its better than copy&paste, which breaks if the internal implementation
+of python changes.",stephan-hof,sh@axiros.com,stephan-hof,sh@axiros.com,2017-01-24 08:14:41+01:00,-3600,2017-01-24 10:11:01+01:00,-3600,True,False,['_ExtensionClass.c'],['db6a6e019c8fddf70709703c0a1f1e7015294db3'],27,7,34,1,1.0,1.0,0.0
+95053001b7c801233a1ae508ac2929e61da4a724,WIP: Make it working under python3 and python2.,stephan-hof,sh@axiros.com,stephan-hof,sh@axiros.com,2017-01-24 08:38:12+01:00,-3600,2017-01-24 10:13:00+01:00,-3600,True,False,"['_ExtensionClass.c', '_compat.h']",['6617fe128c1591928013af0e7bdc9bba64403849'],3,15,18,2,0.0,0.0,1.0
+54320cd7c5463b103d81cb521eb45c20f11ffc9f,Bring back our extension to call of_get of an attribute inside the instance dict.,stephan-hof,sh@axiros.com,stephan-hof,sh@axiros.com,2017-01-24 09:14:54+01:00,-3600,2017-01-24 10:13:14+01:00,-3600,True,False,['_ExtensionClass.c'],['95053001b7c801233a1ae508ac2929e61da4a724'],0,18,18,1,0.0,0.0,1.0
+cd664a9bb23290334f0513b34546ace796d65b17,Fix the python version of Base_getattro.,stephan-hof,sh@axiros.com,stephan-hof,sh@axiros.com,2017-01-25 09:20:45+01:00,-3600,2017-01-25 09:20:45+01:00,-3600,True,False,['__init__.py'],['54320cd7c5463b103d81cb521eb45c20f11ffc9f'],7,33,40,1,0.0,0.0,1.0
+b1f055726c1e458af1c38dc9ea44bca30ac768e5,"Clean ExtensionClass.h (#12)
+
+* Replace tabs with spaces and remove superfluous whitespaces.
+
+* Simplify two macros (by using other macros).
+
+* Replace o->ob_type with Py_TYPE(o)
+
+* Get rid of a wrong round bracket.",stephan-hof,stephan-hof@users.noreply.github.com,Hanno Schlichting,hanno@hannosch.eu,2017-02-02 13:37:41+01:00,-3600,2017-02-02 13:37:41+01:00,-3600,True,False,['ExtensionClass.h'],['fcb0dfbd66bfeaaf3e68efb04819ac12b54129a4'],60,58,118,1,,,
+7e0f1dba0b1548e3652c2b758cc57e41de32c973,prepare,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-02-02 13:42:19+01:00,-3600,2017-02-02 13:42:19+01:00,-3600,True,False,"['.travis.yml', 'CHANGES.rst', 'setup.py']",['b1f055726c1e458af1c38dc9ea44bca30ac768e5'],3,4,7,3,,,
+6a244d289f502624f73fae504b73cb44296e1eed,vb [ci skip],Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-02-02 13:45:12+01:00,-3600,2017-02-02 13:45:12+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['7e0f1dba0b1548e3652c2b758cc57e41de32c973'],1,5,6,2,,,
+4f4b54f7e3c33fa867958635bde18ef7a08f7302,Local variables must be at the top.,stephan-hof,sh@axiros.com,Hanno Schlichting,hanno@hannosch.eu,2017-02-21 10:09:06+01:00,-3600,2017-02-21 11:46:23+01:00,-3600,True,False,['pickle.c'],['6a244d289f502624f73fae504b73cb44296e1eed'],2,2,4,1,,,
+84ee886b10b3345ebf789beee2720322e1df62ce,Remove unused and dangerous macros.,stephan-hof,sh@axiros.com,Hanno Schlichting,hanno@hannosch.eu,2017-02-22 07:17:59+01:00,-3600,2017-02-22 11:38:55+01:00,-3600,True,False,['ExtensionClass.h'],['4f4b54f7e3c33fa867958635bde18ef7a08f7302'],18,0,18,1,,,
+935474f0473a9176d10335d000c1211b0b26e037,Drop support for Python 3.3.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-02-22 11:46:27+01:00,-3600,2017-02-22 11:46:27+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py', 'tox.ini']",['84ee886b10b3345ebf789beee2720322e1df62ce'],10,10,20,3,,,
+cdae4d88cdd23cf705138a5bb9c8ecd64be9b3b5,prepare [ci skip],Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-02-22 11:46:51+01:00,-3600,2017-02-22 11:46:51+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['935474f0473a9176d10335d000c1211b0b26e037'],2,2,4,2,,,
+84e2e6a4e2456ad21aad644ade692a5702910c1d,vb [ci skip],Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-02-22 11:47:47+01:00,-3600,2017-02-22 11:47:47+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['cdae4d88cdd23cf705138a5bb9c8ecd64be9b3b5'],1,5,6,2,,,
+8e07ea57e55bd0429c26e099b185a70c7d1daa1b,"Fail if C extensions couldn't be compiled on compatible platforms.
+
+This avoids silent failures at install or test time, for example
+if the compiler chain isn't set up correctly.",Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-05-04 13:57:50+02:00,-7200,2017-05-04 13:57:50+02:00,-7200,True,False,"['.coveragerc', 'CHANGES.rst', 'setup.py', '__init__.py', 'tests.py', '__init__.py', 'tests.py', '__init__.py', 'tests.py', 'tox.ini']",['84e2e6a4e2456ad21aad644ade692a5702910c1d'],36,93,129,10,1.0,1.0,1.0
+825fbf48a01eaf70d273ca9e9175f7465b38ba14,Avoid code duplication for C extension check.,Hanno Schlichting,hanno@hannosch.eu,Hanno Schlichting,hanno@hannosch.eu,2017-05-11 16:09:21+02:00,-7200,2017-05-11 18:38:02+02:00,-7200,True,False,"['__init__.py', 'tests.py', '__init__.py', 'tests.py', '__init__.py', 'tests.py']",['8e07ea57e55bd0429c26e099b185a70c7d1daa1b'],33,25,58,6,,,
+34d75ca2d8dda94f881dd07c94f13a48bfe80e15,- add Appveyor configuration to automate building Windows eggs,Jens Vagelpohl,jens@netz.ooo,Jens Vagelpohl,jens@netz.ooo,2017-11-27 13:12:44+01:00,-3600,2017-11-27 13:12:44+01:00,-3600,True,False,"['CHANGES.rst', 'appveyor.yml']",['825fbf48a01eaf70d273ca9e9175f7465b38ba14'],0,40,40,2,,,
+a9c045974d60d7bf610c5f4d20638c26dfb1ab6a,"- don't build Python 3.3 wheels on Appveyor, they are unsupported",Jens Vagelpohl,jens@netz.ooo,Jens Vagelpohl,jens@netz.ooo,2017-11-27 13:17:58+01:00,-3600,2017-11-27 13:17:58+01:00,-3600,True,False,['appveyor.yml'],['34d75ca2d8dda94f881dd07c94f13a48bfe80e15'],2,0,2,1,,,
+42c4b8e27003323f41412f441ac9603955087dc8,- tweaks to appveyor config,Jens Vagelpohl,jens@netz.ooo,Jens Vagelpohl,jens@netz.ooo,2017-11-27 17:15:25+01:00,-3600,2017-11-27 17:15:25+01:00,-3600,True,False,['appveyor.yml'],['a9c045974d60d7bf610c5f4d20638c26dfb1ab6a'],1,1,2,1,,,
+93842c74c49d22faa432799d82683e841887753f,"Add Python 3.7 and cleanup .travis.yml/tox.ini/setup.py
+
+- Always build the extensions on CPython, like other projects do. This
+  avoids any chance of poisoning the wheel cache. We already honored
+  PURE_PYTHON at runtime.
+- Avoid buildout on travis. Use the same test command as tox.
+- Simplify the tox buildout command and make it actually work.
+  Previously the bad --test-path resulted in ""TypeError: Module
+  pip._vendor.webencodings.tests does not define any tests""",Jason Madden,jamadden@gmail.com,Jason Madden,jamadden@gmail.com,2018-08-10 06:27:12-05:00,18000,2018-08-10 06:27:12-05:00,18000,True,False,"['.travis.yml', 'CHANGES.rst', 'appveyor.yml', 'setup.py', 'tests.py', 'tox.ini']",['42c4b8e27003323f41412f441ac9603955087dc8'],27,36,63,6,0.0,0.0,0.0
+2934bfd589fe158c2fe48f415b7efcee4ed1a23d,"Reach 100% coverage and add coveralls
+
+This process revealed a bug in the Python implementation of
+Base_getattro: it didn't support data descriptors due to a typo. I
+fixed that.
+
+Currently based on #20 because that's where I started the process.",Jason Madden,jamadden@gmail.com,Jason Madden,jamadden@gmail.com,2018-08-10 11:12:30-05:00,18000,2018-08-10 11:12:30-05:00,18000,True,False,"['.gitignore', '.travis.yml', 'CHANGES.rst', 'tests.py', '__init__.py', 'tests.py', 'tests.py', 'tox.ini']",['93842c74c49d22faa432799d82683e841887753f'],71,112,183,8,1.0,1.0,1.0
+fe5bf81a666a81c3e6d59a7683af6e2ffb2597fb,Add Py37-pure.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2018-10-05 17:49:29+02:00,-7200,2018-10-05 17:49:29+02:00,-7200,True,False,['tox.ini'],['cc2c322bdca1c4d8194201a77c9c65f828faef82'],1,7,8,1,,,
+7975af078cb190e9a257ff2ffcbdea5ad4bf59c9,Make check-manifest happy.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2018-10-05 17:52:11+02:00,-7200,2018-10-05 17:52:11+02:00,-7200,True,False,['MANIFEST.in'],['fe5bf81a666a81c3e6d59a7683af6e2ffb2597fb'],0,9,9,1,,,
+1e549ad59848a4d16391ae6189aeb14874066ecf,Preparing release 4.4,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2018-10-05 17:54:46+02:00,-7200,2018-10-05 17:54:46+02:00,-7200,True,False,"['CHANGES.rst', 'setup.py']",['7975af078cb190e9a257ff2ffcbdea5ad4bf59c9'],6,6,12,2,,,
+96bf981f1b7ea74f3c5b0ca2e4299f95459eb432,Back to development: 4.5,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2018-10-05 18:15:21+02:00,-7200,2018-10-05 18:15:21+02:00,-7200,True,False,"['CHANGES.rst', 'setup.py']",['1e549ad59848a4d16391ae6189aeb14874066ecf'],1,7,8,2,,,
+f93a5754571b62e922a8fe40dfc0ae48389cbc33,"Drop support for Python 3.4; add support for 3.8. (#23)
+
+Refactor tox.ini.",Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2020-03-27 16:26:22+01:00,-3600,2020-03-27 16:26:22+01:00,-3600,True,False,"['.coveragerc', '.travis.yml', 'CHANGES.rst', 'README.rst', 'appveyor.yml', 'bootstrap.py', 'setup.cfg', 'setup.py', 'tox.ini']",['96bf981f1b7ea74f3c5b0ca2e4299f95459eb432'],247,22,269,9,0.0,0.0,0.0
+2531894e4ac5315eafccd43624673ab4274eaa27,"Add failing test for #24
+
+This involves a minor refactoring to be able to test both the C and Python implementations at the same time.",Jason Madden,jamadden@gmail.com,Jason Madden,jamadden@gmail.com,2020-04-09 07:10:32-05:00,18000,2020-04-09 07:10:32-05:00,18000,True,False,"['__init__.py', 'tests.py']",['f93a5754571b62e922a8fe40dfc0ae48389cbc33'],47,115,162,2,1.0,1.0,0.8305084745762712
+8c9899ea3d4c05bfed4e9a962e0a191d73834a0b,Straighten adornments in README.rst and CHANGES.rst,Jason Madden,jamadden@gmail.com,Jason Madden,jamadden@gmail.com,2020-04-09 07:22:49-05:00,18000,2020-04-09 07:22:49-05:00,18000,True,False,"['CHANGES.rst', 'README.rst']",['2531894e4ac5315eafccd43624673ab4274eaa27'],30,36,66,2,,,
+7e6617f5c4ce3777a0afa35a41598be9d480505b,"Fix #24
+
+The Python implementation handles None in class attributes.",Jason Madden,jamadden@gmail.com,Jason Madden,jamadden@gmail.com,2020-04-09 07:28:00-05:00,18000,2020-04-09 07:28:00-05:00,18000,True,False,"['setup.py', '__init__.py']",['8c9899ea3d4c05bfed4e9a962e0a191d73834a0b'],12,30,42,2,0.0,0.0,0.0
+3c8559c5c34c3d701584430c4e5e7b1369f98e86,Add support for Python 3.9 (#22),Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2020-09-30 08:50:48+02:00,-7200,2020-09-30 08:50:48+02:00,-7200,True,False,"['.travis.yml', 'CHANGES.rst', 'setup.py', 'tox.ini']",['51f5aab7913136b2b2a3564365d5a089895a4004'],1,6,7,4,,,
+b47a7287e1ecced60a5f23676b8d307483b04604,Preparing release 4.5.0,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2020-10-07 11:48:28+02:00,-7200,2020-10-07 11:48:28+02:00,-7200,True,False,"['CHANGES.rst', 'setup.py']",['3c8559c5c34c3d701584430c4e5e7b1369f98e86'],2,2,4,2,,,
+311b6ab098b7f0ed24643b2b64e040d83f4ee292,Back to development: 4.5.1,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2020-10-07 11:48:34+02:00,-7200,2020-10-07 11:48:34+02:00,-7200,True,False,"['CHANGES.rst', 'setup.py']",['b47a7287e1ecced60a5f23676b8d307483b04604'],1,7,8,2,,,
+cd39417fbb4f38b296bf13936c1e73d9d7158de3,"Use Python 3.9 final
+
+Committed via https://github.com/asottile/all-repos",Jürgen Gmach,juergen.gmach@googlemail.com,Jürgen Gmach,juergen.gmach@googlemail.com,2020-10-28 10:35:05+01:00,-3600,2020-10-28 10:35:05+01:00,-3600,True,False,['.travis.yml'],['311b6ab098b7f0ed24643b2b64e040d83f4ee292'],1,1,2,1,,,
+2ed647df5191b0e582a3c9f12deaa3da9e129ac7,"Config with C code (#29)
+
+* Lint the code.
+* Create manylinux wheels",Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2021-06-11 17:32:39+02:00,-7200,2021-06-11 17:32:39+02:00,-7200,True,False,"['.coveragerc', '.editorconfig', 'tests.yml', '.gitignore', '.manylinux-install.sh', '.manylinux.sh', '.meta.toml', '.travis.yml', 'CHANGES.rst', 'MANIFEST.in', 'appveyor.yml', 'setup.cfg', 'tests.py', '__init__.py', 'tests.py', 'tests.py', 'tox.ini']",['1096dd9f2748b9038ebd8e17d12ff4a3414ef05f'],125,716,841,17,1.0,1.0,1.0
+a1877517a42c14cba5fefb725791ceb465590c69,Pimp change log.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2021-06-11 17:34:28+02:00,-7200,2021-06-11 17:34:28+02:00,-7200,True,False,['CHANGES.rst'],['2ed647df5191b0e582a3c9f12deaa3da9e129ac7'],1,1,2,1,,,
+980446254cca3ded7aecc062eee97d413f65b2d0,Preparing release 4.5.1,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2021-06-11 17:37:11+02:00,-7200,2021-06-11 17:37:11+02:00,-7200,True,False,"['CHANGES.rst', 'setup.py']",['a1877517a42c14cba5fefb725791ceb465590c69'],2,2,4,2,,,
+c5a137c82203bffdb48788144f607410c2a4dbd9,Back to development: 4.5.2,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2021-06-11 17:37:25+02:00,-7200,2021-06-11 17:37:25+02:00,-7200,True,False,"['CHANGES.rst', 'setup.py']",['980446254cca3ded7aecc062eee97d413f65b2d0'],1,7,8,2,,,
+e476ed1ad0dc5bad5c2ad9123ba4982494fa4f81,"Do not create wheels locally, it has to be done by GHA.",Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2021-06-14 08:11:15+02:00,-7200,2021-06-15 10:49:30+02:00,-7200,True,False,"['.meta.toml', 'setup.cfg']",['c5a137c82203bffdb48788144f607410c2a4dbd9'],1,4,5,2,,,
+1ad77a40ad82b6e33b594d049a187adfb7aece00,- use PyPI token for Appveyor,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2021-06-16 16:45:54+02:00,-7200,2021-06-16 16:45:54+02:00,-7200,True,False,['appveyor.yml'],['e476ed1ad0dc5bad5c2ad9123ba4982494fa4f81'],2,4,6,1,,,
+be400393b6b664ff251daff9ae2b959d20e84af5,- fix .meta.toml,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2021-06-16 17:33:02+02:00,-7200,2021-06-16 17:33:02+02:00,-7200,True,False,['.meta.toml'],['1ad77a40ad82b6e33b594d049a187adfb7aece00'],2,2,4,1,,,
+f6678f5ea62cf04ed0a998b2a6b08c81d4559864,- place comment about the PyPI token into the meta information [ci skip],Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2021-06-17 06:48:21+02:00,-7200,2021-06-17 06:48:21+02:00,-7200,True,False,['.meta.toml'],['cfe762e3df804984e16504aaa02af5f0675f73ad'],0,3,3,1,,,
+14c7e107f08b777ae9a1a1c325b3f12bdab7c17c,"Add support for Python 3.10. (#35)
+
+* Use latest manylinux build containers.
+* Update to current meta/config + disable Python 3.10 on AppVeyor. (It cannot run successfully before the final release.)",Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2021-07-16 08:23:11+02:00,-7200,2021-07-16 08:23:11+02:00,-7200,True,False,"['tests.yml', '.gitignore', '.manylinux-install.sh', '.meta.toml', 'CHANGES.rst', 'appveyor.yml', 'tox.ini']",['f6678f5ea62cf04ed0a998b2a6b08c81d4559864'],8,17,25,7,,,
+7e11c1da2159dd938ad0a9a43e5322828b15ccb5,Oficially support Python 3.10.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2021-12-20 09:32:36+01:00,-3600,2021-12-20 09:32:36+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['14c7e107f08b777ae9a1a1c325b3f12bdab7c17c'],1,2,3,2,,,
+b2bbad2805bc0002fa31d598d3391a77f6f179f1,"Add support for Python 3.11. (#38)
+
+* integrate Dieter's fix for Python 3.11a3
+
+Co-authored-by: Jens Vagelpohl <jens@plyp.com>",Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2022-01-14 08:03:37+01:00,-3600,2022-01-14 08:03:37+01:00,-3600,True,False,"['tests.yml', '.manylinux-install.sh', '.meta.toml', 'CHANGES.rst', 'appveyor.yml', 'buildout.cfg', '_ExtensionClass.c', '_compat.h', 'tox.ini']",['7e11c1da2159dd938ad0a9a43e5322828b15ccb5'],45,90,135,9,0.8,0.8,0.8
+67d6954e64048be1f56f19f703a871b68397ecef,Bumped version for feature release.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-01-14 08:04:33+01:00,-3600,2022-01-14 08:04:33+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['b2bbad2805bc0002fa31d598d3391a77f6f179f1'],3,3,6,2,,,
+81866f8992d0b3443fa89e0fafba647ba1fbf4d9,Preparing release 4.6,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-01-14 08:05:00+01:00,-3600,2022-01-14 08:05:00+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['67d6954e64048be1f56f19f703a871b68397ecef'],2,2,4,2,,,
+df62c5af03e635ba2fa305841327c3f835b8d4d5,Back to development: 4.7,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-01-14 08:05:08+01:00,-3600,2022-01-14 08:05:08+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['81866f8992d0b3443fa89e0fafba647ba1fbf4d9'],1,7,8,2,,,
+1219b61a79e82e96c8f727e0632cb39f108484cc,Update to 3.11.0-alpha.4.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-01-18 08:20:49+01:00,-3600,2022-01-18 08:20:49+01:00,-3600,True,False,"['tests.yml', '.meta.toml']",['df62c5af03e635ba2fa305841327c3f835b8d4d5'],3,3,6,2,,,
+a4e44b21152635007cb9a23303d6577bca0083bd,"Try without coverage-python-version, so coverage >= 6 is used.",Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-01-20 09:31:19+01:00,-3600,2022-01-20 09:31:19+01:00,-3600,True,False,['tests.yml'],['1219b61a79e82e96c8f727e0632cb39f108484cc'],1,1,2,1,,,
+d1cb7035b4f17bf06bf66d82b803c5405ba92346,"Update to current version of meta/config. (#40)
+
+This fixes the GHA test failure for Python 3.11.",Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2022-01-28 08:40:07+01:00,-3600,2022-01-28 08:40:07+01:00,-3600,True,False,"['tests.yml', '.meta.toml']",['a4e44b21152635007cb9a23303d6577bca0083bd'],6,13,19,2,,,
+00a5794a08bf5c2e02e135cd0e09eb470bcf1c71,Add CONTRIBUTING.md via meta/config (#41),Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2022-02-03 08:20:01+01:00,-3600,2022-02-03 08:20:01+01:00,-3600,True,False,"['.meta.toml', 'CONTRIBUTING.md', 'MANIFEST.in']",['d1cb7035b4f17bf06bf66d82b803c5405ba92346'],1,25,26,3,,,
+0d89bccaf69b640c4fd2157f9b7dda79a23ce82c,Update to 3.11.0-alpha.5. (#42),Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2022-02-07 09:17:35+01:00,-3600,2022-02-07 09:17:35+01:00,-3600,True,False,"['tests.yml', '.meta.toml']",['00a5794a08bf5c2e02e135cd0e09eb470bcf1c71'],4,4,8,2,,,
+acdc7a3c8541a52595139c280f54ddff900eab7d,Update to Python 3.11.0a6.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-04-07 08:27:04+02:00,-7200,2022-04-07 09:01:37+02:00,-7200,True,False,"['tests.yml', '.manylinux-install.sh', '.meta.toml']",['0d89bccaf69b640c4fd2157f9b7dda79a23ce82c'],8,8,16,3,,,
+7036f157e130ee592d9f2941d4eb2c01bac22257,Update to 3.11.0-alpha.7 + isort rules. (#47),Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2022-04-22 08:15:09+02:00,-7200,2022-04-22 08:15:09+02:00,-7200,True,False,"['tests.yml', '.gitignore', '.meta.toml', 'setup.cfg', 'setup.py', '__init__.py', 'tests.py', '__init__.py', 'tests.py', '__init__.py', 'tox.ini']",['acdc7a3c8541a52595139c280f54ddff900eab7d'],15,43,58,11,,,
+b1b493a906d56881f258c407300a72607a5d082d,Update to 3.11.0b1.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-05-19 09:21:32+02:00,-7200,2022-05-20 08:04:19+02:00,-7200,True,False,"['tests.yml', '.meta.toml']",['7036f157e130ee592d9f2941d4eb2c01bac22257'],4,4,8,2,,,
+a32803f37532516a14300d318fce980378be8730,Update to 3.11.0b3,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-06-07 08:04:25+02:00,-7200,2022-06-07 08:44:44+02:00,-7200,True,False,"['tests.yml', '.manylinux-install.sh', '.meta.toml']",['b1b493a906d56881f258c407300a72607a5d082d'],6,6,12,3,,,
+14690f95a92f32a5429101741a62bb644b9fadc1,Fix PyPy2 run on GHA.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-07-07 08:18:22+02:00,-7200,2022-07-07 08:39:16+02:00,-7200,True,False,"['tests.yml', '.meta.toml']",['a32803f37532516a14300d318fce980378be8730'],2,10,12,2,,,
+912bc5bfe454b01486a140e637266ac93c5ff126,Update to Python 3.11.0b4.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-08-02 14:14:22+02:00,-7200,2022-08-03 08:44:19+02:00,-7200,True,False,"['tests.yml', '.manylinux-install.sh', '.meta.toml', 'CHANGES.rst', 'tox.ini']",['14690f95a92f32a5429101741a62bb644b9fadc1'],14,74,88,5,,,
+f9c8d990494241f065643bfc5416dd671823d949,Update to Python 3.11.0b5,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-08-04 07:47:44+02:00,-7200,2022-08-04 13:20:28+02:00,-7200,True,False,"['tests.yml', '.meta.toml', 'CHANGES.rst']",['912bc5bfe454b01486a140e637266ac93c5ff126'],10,10,20,3,,,
+f1d7dd507ae597b2861489501bbe8c0fe8061aee,Update to Python 3.11.0rc1,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-09-07 08:02:30+02:00,-7200,2022-09-07 08:21:41+02:00,-7200,True,False,"['tests.yml', '.meta.toml']",['f9c8d990494241f065643bfc5416dd671823d949'],9,9,18,2,,,
+8af4b4d583ce9de48aeade82b6bf64121d489f76,Configuring for c-code (#54),Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2022-09-07 09:23:31+02:00,-7200,2022-09-07 09:23:31+02:00,-7200,True,False,"['tests.yml', '.meta.toml']",['f1d7dd507ae597b2861489501bbe8c0fe8061aee'],1,2,3,2,,,
+8baa99cac178a2c19d48f364be41650a7e6650d2,"Update to current meta/config. (#55)
+
+No longer use -Ofast in CFLAGS as is known to break things. See https://github.com/zopefoundation/meta/pull/155 for reference.",Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2022-09-16 08:44:25+02:00,-7200,2022-09-16 08:44:25+02:00,-7200,True,False,"['tests.yml', '.meta.toml', 'CHANGES.rst']",['8af4b4d583ce9de48aeade82b6bf64121d489f76'],12,16,28,3,,,
+f303035a769ba95a47a1b2304bafe6f94d6526c6,Preparing release 4.7,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-09-16 08:45:51+02:00,-7200,2022-09-16 08:45:51+02:00,-7200,True,False,"['CHANGES.rst', 'setup.py']",['8baa99cac178a2c19d48f364be41650a7e6650d2'],2,2,4,2,,,
+da1bef46678feeb9101ec6045379e61caa20c597,Back to development: 4.8,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-09-16 08:46:12+02:00,-7200,2022-09-16 08:46:12+02:00,-7200,True,False,"['CHANGES.rst', 'setup.py']",['f303035a769ba95a47a1b2304bafe6f94d6526c6'],1,7,8,2,,,
+3c03aaa46108d6fd5c51fb881d87b049b9320aaf,Update to current meta/config.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-10-27 08:16:29+02:00,-7200,2022-10-28 07:37:32+02:00,-7200,True,False,"['tests.yml', '.meta.toml', 'CHANGES.rst', 'appveyor.yml', 'setup.py']",['da1bef46678feeb9101ec6045379e61caa20c597'],16,17,33,5,,,
+102491ebba4bac4365f474a514a01ec64e0fbffc,- prepare release 4.8,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2022-11-03 11:57:15+01:00,-3600,2022-11-03 11:57:15+01:00,-3600,True,False,"['tests.yml', '.manylinux-install.sh', '.meta.toml', 'CHANGES.rst', 'appveyor.yml', 'setup.py', 'tox.ini']",['3c03aaa46108d6fd5c51fb881d87b049b9320aaf'],40,7,47,7,,,
+f99aaa78ede9d8f3efeb9e5f7a4b9884ce2f7a94,- vb [ci skip],Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2022-11-03 12:32:05+01:00,-3600,2022-11-03 12:32:05+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['102491ebba4bac4365f474a514a01ec64e0fbffc'],1,5,6,2,,,
+1199e5e3b38f717c18df5bf349653042230bdfd4,"Update to current meta/config. (#57)
+
+Drop 32-bit Windows support.",Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2022-11-09 08:33:40+01:00,-3600,2022-11-09 08:33:40+01:00,-3600,True,False,"['tests.yml', '.meta.toml', 'appveyor.yml']",['f99aaa78ede9d8f3efeb9e5f7a4b9884ce2f7a94'],12,6,18,3,,,
+1ed6722150e3828da92fc4275b1a71d38cdfe83e,Try out Python 3.12a1. (#58),Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2022-11-10 08:32:23+01:00,-3600,2022-11-10 07:32:23+00:00,0,True,False,"['tests.yml', '.manylinux-install.sh', '.meta.toml', 'CHANGES.rst', 'appveyor.yml', 'tox.ini']",['1199e5e3b38f717c18df5bf349653042230bdfd4'],21,61,82,6,,,
+9bdb06a0d29a9b87b86af6732941d8ad08ca79b7,- Add support for building arm64 wheels on macOS,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2022-11-12 18:36:08+01:00,-3600,2022-11-12 18:36:08+01:00,-3600,True,False,"['tests.yml', '.meta.toml', 'CHANGES.rst']",['1ed6722150e3828da92fc4275b1a71d38cdfe83e'],8,64,72,3,,,
+6b7e0987d9074975f3e21a16101566938be3d3c6,- decouple wheel build and install step,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2022-11-13 10:37:37+01:00,-3600,2022-11-13 10:37:37+01:00,-3600,True,False,['tests.yml'],['9bdb06a0d29a9b87b86af6732941d8ad08ca79b7'],19,10,29,1,,,
+9400865d72ec6d3726b75545eed0fbd9010979a4,- simplify condition,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2022-11-13 10:41:23+01:00,-3600,2022-11-13 10:41:23+01:00,-3600,True,False,['tests.yml'],['6b7e0987d9074975f3e21a16101566938be3d3c6'],2,2,4,1,,,
+74656321d70ce04e457b9ac14611881e35f4a30f,- fix expression,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2022-11-13 10:42:54+01:00,-3600,2022-11-13 10:42:54+01:00,-3600,True,False,['tests.yml'],['9400865d72ec6d3726b75545eed0fbd9010979a4'],1,1,2,1,,,
+94094c3809546ef3865d9469bec77d008f3ee7a4,- prepare release 5.7,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2022-11-17 15:19:06+01:00,-3600,2022-11-17 15:19:06+01:00,-3600,True,False,"['tests.yml', '.manylinux-install.sh', '.meta.toml', 'CHANGES.rst', 'appveyor.yml', 'setup.py', 'tox.ini']",['74656321d70ce04e457b9ac14611881e35f4a30f'],43,8,51,7,,,
+db7b5462d646deac18215aa0981dbeab2f71b07a,- vb [ci skip],Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2022-11-17 16:59:53+01:00,-3600,2022-11-17 16:59:53+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['94094c3809546ef3865d9469bec77d008f3ee7a4'],1,5,6,2,,,
+6b59f118ca3940dc15b0e6e4b83bc080d21adcee,Try out Python 3.12a2.,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2022-12-02 08:23:43+01:00,-3600,2022-12-02 10:48:15+01:00,-3600,True,False,"['tests.yml', '.manylinux-install.sh', '.meta.toml', 'appveyor.yml', 'tox.ini']",['db7b5462d646deac18215aa0981dbeab2f71b07a'],4,43,47,5,,,
+c678b8f07b5ca938e46905e980ab1d74a9e3be39,"- Drop support for Python 2.7, 3.5, 3.6.",Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2023-01-03 14:23:00+01:00,-3600,2023-01-03 14:23:00+01:00,-3600,True,False,"['tests.yml', '.manylinux-install.sh', '.meta.toml', 'CHANGES.rst', 'appveyor.yml', 'setup.cfg', 'setup.py', '_ComputedAttribute.c', '_ExtensionClass.c', '__init__.py', '_compat.h', 'pickle.c', 'tests.py', '_MethodObject.c', 'tox.ini']",['6b59f118ca3940dc15b0e6e4b83bc080d21adcee'],211,31,242,15,0.005988023952095809,0.20958083832335328,1.0
+9937d02ca1612af818cd1a2ac2efeb5e7bd7654b,- add missing python_requires,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2023-01-03 14:40:52+01:00,-3600,2023-01-03 14:40:52+01:00,-3600,True,False,['setup.py'],['c678b8f07b5ca938e46905e980ab1d74a9e3be39'],0,1,1,1,,,
+c288a3e2bf78493021b30c8099aaf5e94f498daa,"Update src/ExtensionClass/_ExtensionClass.c
+
+Co-authored-by: Michael Howitz <mh@gocept.com>",Jens Vagelpohl,jens@plyp.com,GitHub,noreply@github.com,2023-01-04 12:49:11+00:00,0,2023-01-04 12:49:11+00:00,0,True,False,['_ExtensionClass.c'],['9937d02ca1612af818cd1a2ac2efeb5e7bd7654b'],1,1,2,1,,,
+b0e2e4db02ac2bf6083238521a09f5fa0fc266f0,"Fix deprecation warning in tests.
+
+It is deprecated to return anything from a method starting with `test_`.",Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2023-01-19 07:50:52+01:00,-3600,2023-01-19 08:03:53+01:00,-3600,True,False,"['CHANGES.rst', 'tests.py']",['383ff6d9b8ef97817374e8bc390e38a5da668611'],2,4,6,2,,,
+0eab06fad7485c030d3a7d4516b94876674ed7ab,Preparing release 5.0,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2023-01-19 08:09:22+01:00,-3600,2023-01-19 08:09:22+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['b0e2e4db02ac2bf6083238521a09f5fa0fc266f0'],2,2,4,2,,,
+9f9a761b836fc8fa3daa2694494e82de26b4e950,Back to development: 5.1,Michael Howitz,mh@gocept.com,Michael Howitz,mh@gocept.com,2023-01-19 08:09:32+01:00,-3600,2023-01-19 08:09:32+01:00,-3600,True,False,"['CHANGES.rst', 'setup.py']",['0eab06fad7485c030d3a7d4516b94876674ed7ab'],1,7,8,2,,,
+b976ac1295a430df74961ebcf14fa5bf3b0c00c9,Try out Python 3.12a5. (#62),Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2023-03-03 10:29:04+01:00,-3600,2023-03-03 09:29:04+00:00,0,True,False,"['tests.yml', '.meta.toml', 'CHANGES.rst', 'setup.cfg', 'tox.ini']",['9f9a761b836fc8fa3daa2694494e82de26b4e950'],17,17,34,5,,,
+4e00a8f624321ff86dc1b79ba78179ea6a9db9fe,Add preliminary support for Python 3.12b1. (#63),Michael Howitz,mh@gocept.com,GitHub,noreply@github.com,2023-05-26 08:40:31+02:00,-7200,2023-05-26 06:40:31+00:00,0,True,False,"['tests.yml', '.meta.toml', 'CHANGES.rst', 'setup.cfg']",['b976ac1295a430df74961ebcf14fa5bf3b0c00c9'],12,12,24,4,,,
+78190d961c950d578a82bf44d9ebd6466e12d417,Add preliminary support for Python 3.12rc1 (#64),Michael Howitz,icemac@gmx.net,GitHub,noreply@github.com,2023-08-29 08:26:51+02:00,-7200,2023-08-29 06:26:51+00:00,0,True,False,"['tests.yml', '.meta.toml', 'CHANGES.rst', 'tox.ini']",['4e00a8f624321ff86dc1b79ba78179ea6a9db9fe'],11,13,24,4,,,
+676fb53880379c5afa5f04b2815ab7f6dab0269f,Add preliminary support for Python 3.12rc2 (#65),Michael Howitz,icemac@gmx.net,GitHub,noreply@github.com,2023-09-08 08:04:02+02:00,-7200,2023-09-08 08:04:02+02:00,-7200,True,False,"['tests.yml', '.meta.toml', 'CHANGES.rst']",['78190d961c950d578a82bf44d9ebd6466e12d417'],11,11,22,3,,,
+bb40b101cff11fed22d8620e53c9a96941ebc31f,- finalize Python 3.12 support,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2023-10-05 12:22:35+02:00,-7200,2023-10-05 12:22:35+02:00,-7200,True,False,"['tests.yml', '.manylinux-install.sh', '.meta.toml', 'CHANGES.rst', 'appveyor.yml', 'setup.py', 'tox.ini']",['676fb53880379c5afa5f04b2815ab7f6dab0269f'],41,10,51,7,,,
+f4ab2659caee5e49e3fd6e34d35989ad77abfce2,- prepare release 5.1,Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2023-10-05 12:50:35+02:00,-7200,2023-10-05 12:50:35+02:00,-7200,True,False,"['CHANGES.rst', 'setup.py']",['a80c46b2d76d120b7dad9870a5d7354f8a768704'],2,2,4,2,,,
+cf8bbf8fd909cc4457c2cf772ec5f9ec7522acb3,- vb [ci skip],Jens Vagelpohl,jens@plyp.com,Jens Vagelpohl,jens@plyp.com,2023-10-05 13:08:51+02:00,-7200,2023-10-05 13:08:51+02:00,-7200,True,False,"['CHANGES.rst', 'setup.py']",['f4ab2659caee5e49e3fd6e34d35989ad77abfce2'],1,5,6,2,,,

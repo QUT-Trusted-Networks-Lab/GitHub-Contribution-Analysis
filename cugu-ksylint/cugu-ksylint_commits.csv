@@ -1,0 +1,60 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+0d2b085225f77118e340edd50daa4e88d4fc6ac2,First ksylint,Jonas Plum,git@cugu.eu,Jonas Plum,git@cugu.eu,2019-09-29 00:11:39+02:00,-7200,2019-09-29 00:11:39+02:00,-7200,True,False,"['.gitignore', 'README.md', 'azure-pipelines.yml', 'ksy_schema.json', 'lint.py', 'lint_test.py', 'requirements.txt', 'wrong_maps_in_seq.ksy', 'multi_doc.ksy', 'no_newline.ksy', 'test.yaml', 'wrong_indent.ksy', 'wrong_indent_seq.ksy', 'wrong_schema.ksy', 'hello_world.ksy', 'indent_seq.ksy', 'maps_in_seq.ksy']",[],0,919,919,17,0.2727272727272727,0.2727272727272727,1.0
+f9ad231a49042d7cf225105908c214f264f235d2,"Fix CI (#1)
+
+* Remove subtests
+
+* Test cwd
+
+* Fix coverage
+
+* Improve readme",Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-09-29 00:35:46+02:00,-7200,2019-09-29 00:35:46+02:00,-7200,True,False,"['.gitignore', 'README.md', 'azure-pipelines.yml']",['0d2b085225f77118e340edd50daa4e88d4fc6ac2'],12,31,43,3,,,
+6ae8819e719edc6b889f6b7e6802e61a1b2d55f1,"Add ordering checks (#2)
+
+* Add ordering and LICENSE
+
+* Improve tests
+
+* Include order tests",Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-09-29 09:57:35+02:00,-7200,2019-09-29 09:57:35+02:00,-7200,True,False,"['LICENSE', 'README.md', 'azure-pipelines.yml', '__init__.py', 'ksy_schema.json', 'lint.py', 'lint_test.py', 'order.py', 'yamllint_config.py', 'setup.py', 'unordered_1.ksy']",['f9ad231a49042d7cf225105908c214f264f235d2'],59,845,904,11,0.14285714285714285,0.14285714285714285,1.0
+a9cfda24d52a193642b04b097d9e6246d6c9c276,"Improve setup.py (#3)
+
+* Improve setup.py
+
+* Remove python 3.5 support",Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-09-29 10:45:15+02:00,-7200,2019-09-29 10:45:15+02:00,-7200,True,False,"['README.md', 'azure-pipelines.yml', 'setup.py']",['6ae8819e719edc6b889f6b7e6802e61a1b2d55f1'],12,21,33,3,,,
+ee577889d10a9525556d872f89a2373a0a7fcbcd,Fix pypi desc (#4),Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-09-29 10:51:34+02:00,-7200,2019-09-29 10:51:34+02:00,-7200,True,False,['setup.py'],['a9cfda24d52a193642b04b097d9e6246d6c9c276'],0,1,1,1,,,
+485a53d3f4d8949963f41f3fa11f0e7d8e5b4bdb,Use github actions,Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-01 00:28:28+02:00,-7200,2019-10-01 00:28:28+02:00,-7200,True,False,['pythonpackage.yml'],['ee577889d10a9525556d872f89a2373a0a7fcbcd'],0,37,37,1,,,
+6b014e2ae726fc37e4c57ad595af93db14a10653,"Rename package (#5)
+
+* Rename package",Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-01 00:32:32+02:00,-7200,2019-10-01 00:32:32+02:00,-7200,True,False,"['azure-pipelines.yml', '__init__.py', 'ksy_schema.json', 'lint.py', 'order.py', 'yamllint_config.py', 'setup.py', 'lint_test.py']",['485a53d3f4d8949963f41f3fa11f0e7d8e5b4bdb'],5,5,10,8,,,
+a405bcbf451e8c229ca5d04b612b01dde9940bd4,Add release,Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-01 00:36:52+02:00,-7200,2019-10-01 00:36:52+02:00,-7200,True,False,['pythonpackage.yml'],['6b014e2ae726fc37e4c57ad595af93db14a10653'],2,10,12,1,,,
+044835a1e6adab67a0973a482dd1221688e88596,Update version,Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-01 00:41:15+02:00,-7200,2019-10-01 00:41:15+02:00,-7200,True,False,['setup.py'],['a405bcbf451e8c229ca5d04b612b01dde9940bd4'],1,1,2,1,,,
+273d09f32b4a9824b42996bc38b9078e46444d06,Add build step,Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-01 00:48:12+02:00,-7200,2019-10-01 00:48:12+02:00,-7200,True,False,['pythonpackage.yml'],['044835a1e6adab67a0973a482dd1221688e88596'],0,3,3,1,,,
+dbe42c3e023df012ca0f8fd101cba8cca309d786,Raise version,Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-01 00:48:53+02:00,-7200,2019-10-01 00:48:53+02:00,-7200,True,False,['setup.py'],['273d09f32b4a9824b42996bc38b9078e46444d06'],1,1,2,1,,,
+5899fdbab12b9bc35b8ce8643f6eb416967391f3,Install wheel,Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-01 00:55:03+02:00,-7200,2019-10-01 00:55:03+02:00,-7200,True,False,['pythonpackage.yml'],['dbe42c3e023df012ca0f8fd101cba8cca309d786'],0,1,1,1,,,
+e64e0be9526c507e16c4b083e6ec6c03b89a1fd6,Publish only once,Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-01 01:06:39+02:00,-7200,2019-10-01 01:06:39+02:00,-7200,True,False,['pythonpackage.yml'],['5899fdbab12b9bc35b8ce8643f6eb416967391f3'],1,1,2,1,,,
+6b1727eed657b02f6e73166d41ae394d06c19b4f,Add shebang to main executable file (#9),Mikhail Yakshin,greycat.na.kor@gmail.com,Jonas Plum,cugu@users.noreply.github.com,2019-10-04 11:33:53+01:00,-3600,2019-10-04 12:33:53+02:00,-7200,True,False,['lint.py'],['e64e0be9526c507e16c4b083e6ec6c03b89a1fd6'],0,2,2,1,,,
+f8f1b446eb4d07e9f54b89e6c761002be96bd47a,"Fix wording to avoid using bare ""kaitai"" to reference Kaitai Struct"" + misc whitespace fixes (#8)",Mikhail Yakshin,greycat.na.kor@gmail.com,Jonas Plum,cugu@users.noreply.github.com,2019-10-04 11:34:12+01:00,-3600,2019-10-04 12:34:12+02:00,-7200,True,False,['README.md'],['6b1727eed657b02f6e73166d41ae394d06c19b4f'],3,3,6,1,,,
+b02b297e16f8123beb0535e4743cb7d1ae6d3a9f,"Use bash instead of codecov (#10)
+
+* Use bash instead of codecov
+
+* Remove azure pipeline",Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-07 21:36:38+02:00,-7200,2019-10-07 21:36:38+02:00,-7200,True,False,"['pythonpackage.yml', 'azure-pipelines.yml']",['f8f1b446eb4d07e9f54b89e6c761002be96bd47a'],59,1,60,2,,,
+967d206a54e2dd5dbcf80bf78c652618cfe8c380,"Change badges (#11)
+
+* Change badges
+
+* Only upload coverage once
+
+* Add env",Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-07 21:53:12+02:00,-7200,2019-10-07 21:53:12+02:00,-7200,True,False,"['pythonpackage.yml', 'README.md']",['b02b297e16f8123beb0535e4743cb7d1ae6d3a9f'],7,7,14,2,,,
+6cde15c2eaf57b4c5a3c54fa33c7b2cd512ba8c4,Fix badge,Jonas Plum,cugu@users.noreply.github.com,GitHub,noreply@github.com,2019-10-09 01:02:47+02:00,-7200,2019-10-09 01:02:47+02:00,-7200,True,False,['README.md'],['967d206a54e2dd5dbcf80bf78c652618cfe8c380'],1,1,2,1,,,
+368653488583365482cf9c4dfbbb9760fc3b4de7,"Bump pyyaml from 5.1.2 to 5.4
+
+Bumps [pyyaml](https://github.com/yaml/pyyaml) from 5.1.2 to 5.4.
+- [Release notes](https://github.com/yaml/pyyaml/releases)
+- [Changelog](https://github.com/yaml/pyyaml/blob/master/CHANGES)
+- [Commits](https://github.com/yaml/pyyaml/compare/5.1.2...5.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Petr Pučil,petr.pucil@seznam.cz,2021-03-25 23:00:41+00:00,0,2021-08-15 17:03:05+02:00,-7200,True,False,"['requirements.txt', 'setup.py']",['6cde15c2eaf57b4c5a3c54fa33c7b2cd512ba8c4'],2,2,4,2,,,
+0b2ab51ca04d19c7f9ef48937adbb6f0c90f86f6,"Update .gitignore
+
+See https://github.com/github/gitignore/blob/991e760/Python.gitignore",Petr Pucil,petr.pucil@seznam.cz,Petr Pucil,petr.pucil@seznam.cz,2021-08-15 17:04:58+02:00,-7200,2021-08-15 17:05:21+02:00,-7200,True,False,['.gitignore'],['368653488583365482cf9c4dfbbb9760fc3b4de7'],34,20,54,1,,,

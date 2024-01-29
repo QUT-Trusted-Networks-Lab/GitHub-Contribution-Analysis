@@ -1,0 +1,312 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+215d8d6c2dc68a04f5f28414390dedc9020e708d,Initial commit,Paul Moore,p.f.moore@gmail.com,Paul Moore,p.f.moore@gmail.com,2013-12-03 16:42:22+00:00,0,2013-12-03 16:42:22+00:00,0,True,False,"['.gitignore', 'DESCRIPTION.rst', 'README.txt', '__init__.py', 'setup.cfg', 'setup.py', '__init__.py', 'test_simple.py']",[],0,147,147,8,1.0,1.0,1.0
+6979a8dae1d4eeca601a35bf6e870b86a3ddfb8f,Tidy up setup.py and add the mandatory url parameter,Paul Moore,p.f.moore@gmail.com,Paul Moore,p.f.moore@gmail.com,2013-12-03 21:16:45+00:00,0,2013-12-03 21:16:45+00:00,0,True,False,['setup.py'],['215d8d6c2dc68a04f5f28414390dedc9020e708d'],1,9,10,1,,,
+ec93951fcf42c85e1b77d8b8968d6001345cf820,Read the __init__.py file directly to get the package version,Paul Moore,p.f.moore@gmail.com,Paul Moore,p.f.moore@gmail.com,2013-12-03 21:32:03+00:00,0,2013-12-03 21:32:03+00:00,0,True,False,['setup.py'],['6979a8dae1d4eeca601a35bf6e870b86a3ddfb8f'],2,23,25,1,1.0,1.0,1.0
+0ebe2d9c4b16cbae361aab4047ed761563908def,Add a MANIFEST.in to ensure support files are in the sdist,Paul Moore,p.f.moore@gmail.com,Paul Moore,p.f.moore@gmail.com,2013-12-03 21:33:54+00:00,0,2013-12-03 21:33:54+00:00,0,True,False,['MANIFEST.in'],['ec93951fcf42c85e1b77d8b8968d6001345cf820'],0,8,8,1,,,
+bc70c6fbce229d0898d9926f7be671ec65c78f10,give README an rst extension,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-02-22 20:25:21-08:00,28800,2014-02-22 20:25:21-08:00,28800,True,False,['README.rst'],['0ebe2d9c4b16cbae361aab4047ed761563908def'],0,0,0,1,,,
+87e8818afec6c6986834c0a61d3a6a641257e8f5,add link explaning reason for parsing the version,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-02-22 20:54:38-08:00,28800,2014-02-22 20:54:38-08:00,28800,True,False,['setup.py'],['bc70c6fbce229d0898d9926f7be671ec65c78f10'],1,2,3,1,,,
+462655aa02842fbd341e87c4ae2d533283ce895f,focus the README on packaging,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-02-22 21:09:47-08:00,28800,2014-02-22 21:09:47-08:00,28800,True,False,['README.rst'],['87e8818afec6c6986834c0a61d3a6a641257e8f5'],14,3,17,1,,,
+27085663cffca870763540e9539f4ec64b808009,"include actual package data, an uncomment the declarations for it",Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-02-22 21:22:42-08:00,28800,2014-02-22 21:22:42-08:00,28800,True,False,"['MANIFEST.in', 'package_data.dat', 'setup.py']",['462655aa02842fbd341e87c4ae2d533283ce895f'],5,9,14,3,,,
+7b3bc1f3e15781c42ff2f8cb1290bf849512a087,add install_requires,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-02-22 21:28:44-08:00,28800,2014-02-22 21:28:44-08:00,28800,True,False,['setup.py'],['27085663cffca870763540e9539f4ec64b808009'],3,7,10,1,,,
+bd5a133c7d818a3186ab7ded4d77b5d4692fbbe5,README fix,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-02-22 21:29:24-08:00,28800,2014-02-22 21:29:24-08:00,28800,True,False,['README.rst'],['7b3bc1f3e15781c42ff2f8cb1290bf849512a087'],1,1,2,1,,,
+a5a6936131076673f841ef99bde6015bc8ea13bd,README link fix,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-02-22 21:33:17-08:00,28800,2014-02-22 21:33:17-08:00,28800,True,False,['README.rst'],['bd5a133c7d818a3186ab7ded4d77b5d4692fbbe5'],1,1,2,1,,,
+606f198f670cd8b0ce2e1302a16c3d0f1a01f018,use a version that works better with the examples in the PUG,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-02-22 23:15:13-08:00,28800,2014-02-22 23:15:13-08:00,28800,True,False,['__init__.py'],['a5a6936131076673f841ef99bde6015bc8ea13bd'],1,1,2,1,,,
+73d6bd0c37ae5e83c54e46260c54d0b494e06d4e,add missing comma,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-02-26 22:57:43-08:00,28800,2014-02-26 22:57:43-08:00,28800,True,False,['setup.py'],['606f198f670cd8b0ce2e1302a16c3d0f1a01f018'],1,1,2,1,,,
+19919cdef34f35dc19d242cc3e9a70d83aa27439,Fix import of module codecs (for 2/3 compatibility),Alexis Huet,alexis.huet.python@gmail.com,Alexis Huet,alexis.huet.python@gmail.com,2014-02-27 11:39:54-03:00,10800,2014-02-27 11:39:54-03:00,10800,True,False,['setup.py'],['73d6bd0c37ae5e83c54e46260c54d0b494e06d4e'],1,2,3,1,,,
+fbb25363802e0eef08b06172865121661c7c63c0,change dependency to a real project,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-03-10 21:42:41-07:00,25200,2014-03-10 21:42:41-07:00,25200,True,False,['setup.py'],['7b15ca8bcdd6a49b9add9989914533f45e240243'],1,1,2,1,,,
+9b109b4522789762ad9dcd10540872133b6126e1,add data_files example,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-03-11 21:55:48-07:00,25200,2014-03-11 21:55:48-07:00,25200,True,False,"['data_file', 'setup.py']",['fbb25363802e0eef08b06172865121661c7c63c0'],0,7,7,2,,,
+bdd29f389096f450d4bd699ddb829c8907b8bca9,Change contact details to PyPA,Paul Moore,p.f.moore@gmail.com,Paul Moore,p.f.moore@gmail.com,2014-03-20 09:56:26+00:00,0,2014-03-20 09:56:26+00:00,0,True,False,['setup.py'],['9b109b4522789762ad9dcd10540872133b6126e1'],3,3,6,1,,,
+44b62e53e86b0eef323f95ea7d18a036972a8ec3,"""bdist_wheel"" instead of ""wheel"" in setup.cfg",Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-04-02 21:34:10-07:00,25200,2014-04-02 21:34:10-07:00,25200,True,False,['setup.cfg'],['bdd29f389096f450d4bd699ddb829c8907b8bca9'],1,1,2,1,,,
+335acdcd9a2cb276ca470e701d096043f277bcee,"replace the version function with an import, and defer the discussion to the Python Packaging User Guide",Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-05-14 22:46:11-07:00,25200,2014-05-14 22:46:11-07:00,25200,True,False,"['__init__.py', 'setup.py']",['44b62e53e86b0eef323f95ea7d18a036972a8ec3'],19,8,27,2,0.0,0.0,0.0
+43a016f2405cc6231be69cb8b8e1180a39f9e3b5,"Adding absolute path resolution to DESCRIPTION.rst
+
+Fixes #12",Gene Wood,github.com@ewood.users.cementhorizon.com,Gene Wood,github.com@ewood.users.cementhorizon.com,2014-05-19 16:03:15-07:00,25200,2014-05-19 16:03:15-07:00,25200,True,False,['setup.py'],['335acdcd9a2cb276ca470e701d096043f277bcee'],1,1,2,1,,,
+239a4398ca34adfe0df82b02bf4fe69edba0c620,defer the topic of single-sourcing the version to the PPUG.,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-05-19 21:18:12-04:00,14400,2014-05-19 21:18:12-04:00,14400,True,False,"['__init__.py', 'setup.py']",['47692a8dda707255225a68be56b39a6f9648f7c5'],7,4,11,2,,,
+a3a778196c742b8edf8cd6344b98f4cdf8de0b16,reduce the scope of the sampleproject,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-05-19 21:20:43-04:00,14400,2014-05-19 21:20:43-04:00,14400,True,False,['README.rst'],['239a4398ca34adfe0df82b02bf4fe69edba0c620'],2,2,4,1,,,
+050459581a901dced60d3318ad0f4fb113ae44a1,Ensure test example follows PEP 8 guidelines,Simeon Visser,simeon87@gmail.com,Simeon Visser,simeon87@gmail.com,2014-05-25 04:46:02+02:00,-7200,2014-05-25 04:46:02+02:00,-7200,True,False,['test_simple.py'],['0bcad8578d6eaefe2ea88baba601366beecb45a6'],0,2,2,1,,,
+bc1e5c5ba39462ac3ea4a498a5e13c40c12fdcc4,Added line between standard library imports and local imports as specified by PEP 8,Simeon Visser,simeon87@gmail.com,Simeon Visser,simeon87@gmail.com,2014-05-25 04:48:16+02:00,-7200,2014-05-25 04:48:16+02:00,-7200,True,False,['test_simple.py'],['050459581a901dced60d3318ad0f4fb113ae44a1'],0,1,1,1,,,
+d2acf9ea2b99ade23a8b1b4be2084807b518ce81,"Clean up setup.py imports, add notes",Matt Iversen,teh.ivo@gmail.com,Matt Iversen,teh.ivo@gmail.com,2014-05-25 22:53:04+10:00,-36000,2014-05-25 22:53:04+10:00,-36000,True,False,['setup.py'],['c212f07eb85384765fc2adcd985196c1dfa9e989'],9,9,18,1,,,
+582bb22d877b9aa466fc653661268092c865ad4d,add PPUG link to analysis of install_requires vs requirements files,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-05-30 10:08:03-07:00,25200,2014-05-30 10:08:03-07:00,25200,True,False,['setup.py'],['d2acf9ea2b99ade23a8b1b4be2084807b518ce81'],1,3,4,1,,,
+f034b8981128e930b4a5d15b32ccf7ea97f1b880,"Consistently use ' quotes.
+
+The old version mixed ' and "" quotes. This change
+consistently uses ', which were in the majority
+before.",Lars Storjord,larsstor@ifi.uio.no,Lars Storjord,larsstor@ifi.uio.no,2014-05-30 19:17:14+02:00,-7200,2014-05-30 19:17:14+02:00,-7200,True,False,['setup.py'],['582bb22d877b9aa466fc653661268092c865ad4d'],3,3,6,1,,,
+0457213fb9bd48fc4618c22226048bb244e4ef6e,"Fix PEP8 issue.
+
+Should not be spaces around assignment in call to
+setup().",Lars Storjord,larsstor@ifi.uio.no,Lars Storjord,larsstor@ifi.uio.no,2014-05-30 19:18:07+02:00,-7200,2014-05-30 19:18:07+02:00,-7200,True,False,['setup.py'],['f034b8981128e930b4a5d15b32ccf7ea97f1b880'],1,1,2,1,,,
+d4ac5177421d03411ee0b648923d63c5ed315f83,Provide an example of using extras_require.,Chris Jerdonek,chris.jerdonek@gmail.com,Chris Jerdonek,chris.jerdonek@gmail.com,2014-10-03 17:06:12-07:00,25200,2014-10-03 17:06:12-07:00,25200,True,False,['setup.py'],['4191e8ff54e742010ea1218e3e23c62bff08d526'],0,8,8,1,,,
+b4c439fcf0c392bb0ef82ad6107d66fe3c3b901b,Fix URL pointing to discussion about single sourcing the version,Johannes Bornhold,johannes@bornhold.name,Johannes Bornhold,johannes@bornhold.name,2014-11-20 14:43:23+01:00,-3600,2014-11-20 14:43:23+01:00,-3600,True,False,['setup.py'],['a0cb7c83138a83a6e4210d7164a85ae6736fc327'],1,1,2,1,,,
+d87033b8c9e098a9596d50f835d0c911e5bfbf0f,fix the link to the PyPUG tutorial,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2014-12-31 10:23:44-08:00,28800,2014-12-31 10:23:44-08:00,28800,True,False,['README.rst'],['4191e8ff54e742010ea1218e3e23c62bff08d526'],2,2,4,1,,,
+17170f16500119a337f41fb58ea526942f77ac2f,"update link for install_requires in setup.py
+
+Old link is 404'ing, new URL is linked to from https://python-packaging-user-guide.readthedocs.org/en/latest/distributing.html#install-requires",Scott Hulbert,scott@scotthulbert.com,Scott Hulbert,scott@scotthulbert.com,2015-01-02 14:24:11-08:00,28800,2015-01-02 14:24:11-08:00,28800,True,False,['setup.py'],['873c4bbb8c7e77b1a723d2d611ae29a5369eeb9f'],1,1,2,1,,,
+bbe46ac8bca69667d19754d3c930aaf1bae37794,fix link,Scott Hulbert,scott@scotthulbert.com,Scott Hulbert,scott@scotthulbert.com,2015-01-02 17:17:43-08:00,28800,2015-01-02 17:17:43-08:00,28800,True,False,['setup.py'],['17170f16500119a337f41fb58ea526942f77ac2f'],1,1,2,1,,,
+300f04dc44df51492deb859ac98ba521d2c7a17a,Link to single source version was broken.,Thomas Güttler,hv@tbz-pariv.de,Thomas Güttler,hv@tbz-pariv.de,2015-01-07 21:10:46+01:00,-3600,2015-01-07 21:10:46+01:00,-3600,True,False,['setup.py'],['4831321818b52740c0b58b7dc406b83a6a9661d4'],1,1,2,1,,,
+4687e26c8a61e72ae401ec94fc1e5c0e17465b73,Make setup.py PEP8 compliant,Richard Bronosky,richard@bronosky.com,Richard Bronosky,richard@bronosky.com,2015-03-17 11:44:06-04:00,14400,2015-03-17 11:51:53-04:00,14400,True,False,['setup.py'],['3df8e577d7926051c364af1c8772c7ff3f97a396'],9,19,28,1,,,
+e7de7861963274595c5b3b0d6942e35ce5a733bc,Pull long-description directly from README.rst.,Carl Meyer,carl@oddbird.net,Carl Meyer,carl@oddbird.net,2015-09-28 11:03:35-06:00,21600,2015-09-28 11:03:35-06:00,21600,True,False,"['DESCRIPTION.rst', 'MANIFEST.in', 'README.rst', 'setup.py']",['f9b9131491db5110f4dbc839f40b94b0f28fcf85'],16,15,31,4,,,
+ec011c8fad34a1220493a457d79b04c83900ff6f,Add an example with py_modules,Ionel Cristian Mărieș,contact@ionelmc.ro,Ionel Cristian Mărieș,contact@ionelmc.ro,2015-10-12 14:39:20+03:00,-10800,2015-10-12 14:39:20+03:00,-10800,True,False,['setup.py'],['1192f9c7796f1f66114451f3e75615dd80b1757f'],0,3,3,1,,,
+16be69b2ed725ce5d54b2e3487442fe5d2529622,Make it a comment.,Ionel Cristian Mărieș,contact@ionelmc.ro,Ionel Cristian Mărieș,contact@ionelmc.ro,2015-10-14 19:21:27+03:00,-10800,2015-10-14 19:21:27+03:00,-10800,True,False,['setup.py'],['ec011c8fad34a1220493a457d79b04c83900ff6f'],2,3,5,1,,,
+43f17e27b4224f95bf1e163c5a0d626483850288,simpler .gitignore that doesn't include files from tools not covered,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2015-10-17 09:24:27-07:00,25200,2015-10-17 09:24:27-07:00,25200,True,False,['.gitignore'],['68d6119138a3f481d2cbf93699b301fab0bbe347'],38,4,42,1,,,
+b46d588a847598450992b0481c003406274caf3a,clarify the scope of the project,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2015-10-17 09:43:50-07:00,25200,2015-10-17 09:43:50-07:00,25200,True,False,['README.rst'],['68d6119138a3f481d2cbf93699b301fab0bbe347'],0,6,6,1,,,
+441295d000e0ce9a8d7b559f03fed85af53c8e65,tox.ini and .travis.yml to confirm the MANIFEST.in and pep8,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2015-10-17 11:32:47-07:00,25200,2015-10-17 11:32:47-07:00,25200,True,False,"['.travis.yml', 'MANIFEST.in', 'setup.py', 'test_simple.py', 'tox.ini']",['68d6119138a3f481d2cbf93699b301fab0bbe347'],9,58,67,5,,,
+c663000a498c8621eddfabd1d24623ecfb338a8b,"- py26 doesn't have ""setup.py check""
+- remove py35 for now",Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2015-10-17 11:50:22-07:00,25200,2015-10-17 11:50:22-07:00,25200,True,False,"['.travis.yml', 'tox.ini']",['441295d000e0ce9a8d7b559f03fed85af53c8e65'],7,6,13,2,,,
+1bc074c5bc4c58ec7b44e820104b053375ca2856,place comment at top,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2015-10-17 11:58:53-07:00,25200,2015-10-17 11:58:53-07:00,25200,True,False,['.travis.yml'],['c663000a498c8621eddfabd1d24623ecfb338a8b'],2,2,4,1,,,
+74e395f6cbca3c021fa8337bfa40f8d3ca4b308a,"don't include tests, tox.ini, or .travis.yml in the sdist, and don't have check-manifest worrying about it",Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2015-10-17 12:12:09-07:00,25200,2015-10-17 12:12:09-07:00,25200,True,False,"['MANIFEST.in', 'tox.ini']",['1bc074c5bc4c58ec7b44e820104b053375ca2856'],10,1,11,2,,,
+e101d56189ee1f9e7e121d756baeb25db79c7e1a,more comments in tox.ini,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2015-10-17 12:27:20-07:00,25200,2015-10-17 12:27:20-07:00,25200,True,False,['tox.ini'],['74e395f6cbca3c021fa8337bfa40f8d3ca4b308a'],2,8,10,1,,,
+18243e3c665503a80f52eea6056b8cd6a9fa6939,have the tests we're including actually run and pass,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2015-10-17 13:00:09-07:00,25200,2015-10-17 13:00:09-07:00,25200,True,False,"['.gitignore', '__init__.py', 'test_simple.py', 'tox.ini']",['97845ffd416b2e72d81b2ea7623d3ea0ac8e3d63'],6,15,21,4,,,
+9e89dc4ed337d4c125b3a87c245506452af90647,more comments to tox.ini,Marcus Smith,qwcode@gmail.com,Marcus Smith,qwcode@gmail.com,2015-10-17 13:07:17-07:00,25200,2015-10-17 13:07:17-07:00,25200,True,False,['tox.ini'],['18243e3c665503a80f52eea6056b8cd6a9fa6939'],2,2,4,1,,,
+03f569ecaa25be829820d83136c23931f7c68856,Add Python 3.5 classifier to setup.py,Dan Rue,drue@therub.org,Dan Rue,drue@therub.org,2015-12-31 14:13:50-06:00,21600,2015-12-31 14:13:50-06:00,21600,True,False,['setup.py'],['6f9a92126931f352eb1fc42d1ccf600f219a506c'],0,1,1,1,,,
+7d461bd61ff66b3efb9f015934cc6a2bdbcf89cd,Add a LICENSE.txt file,Paul Moore,p.f.moore@gmail.com,Paul Moore,p.f.moore@gmail.com,2016-01-03 11:30:05+00:00,0,2016-01-03 11:30:05+00:00,0,True,False,['LICENSE.txt'],['7d405c76fdae6c4c0acc88bbc6f78faced436bda'],0,19,19,1,,,
+7b70adb2ce58b1720f793d227982052c183ba686,Add license file to MANIFEST.in,Paul Moore,p.f.moore@gmail.com,Paul Moore,p.f.moore@gmail.com,2016-01-03 11:35:08+00:00,0,2016-01-03 11:35:08+00:00,0,True,False,['MANIFEST.in'],['7d461bd61ff66b3efb9f015934cc6a2bdbcf89cd'],0,2,2,1,,,
+60d85f505adab230b8060a19d5841351e5a41bed,"Stop suggesting python 3.2 support
+
+Pip, virtualenv, Jinja have stopped supporting 3.2
+
+In particular it's lack of `u''` syntax makes it harder to write cross-python code.
+
+I think it's roughly time that we don't automatically include it here as well.",Matt Iversen,teh.ivo@gmail.com,Matt Iversen,teh.ivo@gmail.com,2016-01-26 00:18:12+11:00,-39600,2016-01-26 00:18:12+11:00,-39600,True,False,['setup.py'],['62ac1da7125e62307c4138ed1689d485923f98ae'],1,0,1,1,,,
+e2aadcbfe6679e721cee2579287cb3148bd83200,Stop email notifications,Matt Iversen,teh.ivo@gmail.com,Matt Iversen,teh.ivo@gmail.com,2016-01-26 04:24:15+11:00,-39600,2016-01-26 04:24:15+11:00,-39600,True,False,['.travis.yml'],['62ac1da7125e62307c4138ed1689d485923f98ae'],0,3,3,1,,,
+11f77ab9650df1076fe550e63136acee7979f7f2,Fix a typo,Fabrice Bauzac,fbauzac@amadeus.com,Fabrice Bauzac,fbauzac@amadeus.com,2016-02-23 20:31:37+01:00,-3600,2016-02-23 20:31:37+01:00,-3600,True,False,['tox.ini'],['e2aadcbfe6679e721cee2579287cb3148bd83200'],1,1,2,1,,,
+1a3d4d031668242ecf240fae98a66fe13399260a,"rename readme to readme_renderer
+
+See https://github.com/pypa/readme_renderer/blob/master/CHANGES.rst.",Leonardo Pistone,leonardo.pistone@camptocamp.com,Leonardo Pistone,leonardo.pistone@camptocamp.com,2016-02-28 21:26:48+01:00,-3600,2016-02-28 21:26:48+01:00,-3600,True,False,['tox.ini'],['181cd33970ca9267acfc51ad18aacc9d1f9d17b1'],2,2,4,1,,,
+02130aeda025ca86975258f953b5d2531d74e94c,Drop support for Python 2.6,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2016-10-19 18:37:06-04:00,14400,2016-10-19 18:54:15-04:00,14400,True,False,"['.travis.yml', 'MANIFEST.in', 'setup.py', 'tox.ini']",['cec59671175bc2c86563ac80c90ba28b068a1335'],11,3,14,4,,,
+59d3ee5060984abe2ce5b9d35d8319e59654b3e3,Fix name of markup language,Pavlo Kapyshin,i@93z.org,Pavlo Kapyshin,i@93z.org,2016-12-27 14:38:32+02:00,-7200,2016-12-27 14:38:32+02:00,-7200,True,False,['README.rst'],['cec59671175bc2c86563ac80c90ba28b068a1335'],1,2,3,1,,,
+b1a0f038bfe61d62cee3c2c98ceb608900aa1549,"'Programming Language :: Python :: 3.6',",cclauss,cclauss@bluewin.ch,GitHub,noreply@github.com,2017-06-13 09:47:22+02:00,-7200,2017-06-13 09:47:22+02:00,-7200,True,False,['setup.py'],['a9c1287d5f9825d8d8fce32f7ab4bc7813b97179'],0,1,1,1,,,
+e3d3c38ea66b6ff88d3dde6bd8e03c8edeb5f007,Drop Python 3.3,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2017-12-12 14:57:59-06:00,21600,2017-12-12 14:58:46-06:00,21600,True,False,"['.travis.yml', 'setup.py', 'tox.ini']",['f65c5d3a6da427703c9f83e75d65bdbd333f8cce'],4,1,5,3,,,
+4eabd46282b0e5b60e84df741ef948075bbc74f2,Fix Travis config,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2017-12-12 15:33:40-06:00,21600,2017-12-12 15:38:23-06:00,21600,True,False,['.travis.yml'],['e3d3c38ea66b6ff88d3dde6bd8e03c8edeb5f007'],3,6,9,1,,,
+e0a01a06aabb70600d07e5b1014972d64c5f7d70,Test against 3.5 and 3.6,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2017-12-12 14:58:14-06:00,21600,2017-12-12 15:38:23-06:00,21600,True,False,"['.travis.yml', 'tox.ini']",['4eabd46282b0e5b60e84df741ef948075bbc74f2'],1,7,8,2,,,
+61356d4865d873a3554bab1f70311cb8d7a865b3,Update README to direct readers to setup.py,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2017-12-12 17:02:43-06:00,21600,2017-12-12 17:02:43-06:00,21600,True,False,['README.rst'],['ec5230b7d02e0bf9fb11e896417be9e42008554d'],0,7,7,1,,,
+8566959c4a33cb677b75bf4ce35eef1eb255a5ee,Add more comments to setup.py,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2017-12-12 17:03:00-06:00,21600,2017-12-12 17:03:00-06:00,21600,True,False,['setup.py'],['61356d4865d873a3554bab1f70311cb8d7a865b3'],43,95,138,1,,,
+df022c4dc79c9026b66e886ea350f8f4e37ce69e,Address feedback,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2017-12-12 17:31:31-06:00,21600,2017-12-12 17:31:31-06:00,21600,True,False,['setup.py'],['8566959c4a33cb677b75bf4ce35eef1eb255a5ee'],3,6,9,1,,,
+0fb3b13b9a69536324ef554652cecababdde71dd,"Added license field
+
+The license field is referred to in the classifiers section, but wasn't specified anywhere in the example. This commit adds the license field.",Dan Søndergaard,dan1990@gmail.com,GitHub,noreply@github.com,2017-12-19 14:20:07+01:00,-3600,2017-12-19 14:20:07+01:00,-3600,True,False,['setup.py'],['665373c9f492aa901a11fd363f6d0718245d8f08'],0,3,3,1,,,
+a0568c51325dc9e52b1629e6b7bf67f8a7242e63,Fix linting errors,Dan Søndergaard,dan1990@gmail.com,GitHub,noreply@github.com,2017-12-19 14:42:26+01:00,-3600,2017-12-19 14:42:26+01:00,-3600,True,False,['setup.py'],['0fb3b13b9a69536324ef554652cecababdde71dd'],1,1,2,1,,,
+4ac29396ad27661533608175f7b0c1058df86cf3,Removed reference to license field,Dan Søndergaard,dan1990@gmail.com,GitHub,noreply@github.com,2017-12-20 10:15:16+01:00,-3600,2017-12-20 10:15:16+01:00,-3600,True,False,['setup.py'],['a0568c51325dc9e52b1629e6b7bf67f8a7242e63'],4,1,5,1,,,
+e92f8d6f0a1f0d916ab8a507ef764dbc4e456a88,Reword comment in setup.cfg,Paul Moore,p.f.moore@gmail.com,Paul Moore,p.f.moore@gmail.com,2018-01-05 10:54:05+00:00,0,2018-01-05 10:54:05+00:00,0,True,False,['setup.cfg'],['aafe3d8d8b9b27b9b467aec33dc56d344f6c5428'],3,4,7,1,,,
+4d0e97155741594a12ad6cd43bf166ac7115075b,Include LICENSE.txt in wheel,Sebastian Bank,sebastian.bank@uni-leipzig.de,Sebastian Bank,sebastian.bank@uni-leipzig.de,2018-01-10 13:01:49+01:00,-3600,2018-01-10 13:01:49+01:00,-3600,True,False,['setup.cfg'],['bdfb04be82556dfc1faa6df44c549a0e0419d43d'],0,4,4,1,,,
+de866666a88d3819740351d5a5e720dacf367f23,"Add and document the `project_urls` field.
+
+This field corresponds to
+https://packaging.python.org/specifications/core-metadata/#project-url-multiple-use
+and better documentation in the sampleproject will hopefully encourage use.",Philip James,pjj@philipjohnjames.com,Philip James,pjj@philipjohnjames.com,2018-02-21 10:23:34-08:00,28800,2018-02-21 10:23:34-08:00,28800,True,False,['setup.py'],['bdfb04be82556dfc1faa6df44c549a0e0419d43d'],0,12,12,1,,,
+8fc690c911cf46a177484799c16b71e54f706e0e,"Document the relationship between dict key and link text, add more examples",Philip James,pjj@philipjohnjames.com,Philip James,pjj@philipjohnjames.com,2018-02-21 12:01:39-08:00,28800,2018-02-21 12:01:39-08:00,28800,True,False,['setup.py'],['de866666a88d3819740351d5a5e720dacf367f23'],4,8,12,1,,,
+d5dcff4b49a230ea27fb143fce123688138686a3,Fix trailing whitespace,Philip James,pjj@philipjohnjames.com,Philip James,pjj@philipjohnjames.com,2018-02-21 12:05:15-08:00,28800,2018-02-21 12:05:15-08:00,28800,True,False,['setup.py'],['8fc690c911cf46a177484799c16b71e54f706e0e'],1,1,2,1,,,
+5be097071c83c935777bde117fa85cd1f64c690a,"Migrated README to Markdown (PEP 566)
+
+Migrated `README.rst` to `README.md` and updated `setup.py` to match;
+this is in line with PEP 566 and the new long_description_content_type
+arg in setuptools.
+
+Also updated `MANIFEST.in` to include the new `README.md`.
+
+See:
+
+ * [Relevant section in PEP 566](https://www.python.org/dev/peps/pep-0566/#description-content-type-optional)
+ * [The CommonMark specification](http://spec.commonmark.org)
+ * [The Description-Content-Type field documentation in the Python
+   packaging documentation](https://packaging.python.org/specifications/core-metadata/#description-content-type-optional)",Rebecca Turner,637275@gmail.com,Rebecca Turner,637275@gmail.com,2018-03-17 11:58:20-04:00,14400,2018-03-17 22:27:44-04:00,14400,True,False,"['MANIFEST.in', 'README.md', 'README.rst', 'setup.py']",['941f486dd8e7da1148bf35dd34b175089aee5121'],33,48,81,4,,,
+10bef87464422245a05a093cf44e73b2bf4d0248,"Clarified when content_type is optional
+
+Added a comment clarifying that `long_description_content_type` in `setup()`
+is only optional if the `long_description` is written in RST and a quote
+from relevant documentation.",Rebecca Turner,637275@gmail.com,Rebecca Turner,637275@gmail.com,2018-03-20 01:00:31-04:00,14400,2018-03-20 01:04:50-04:00,14400,True,False,['setup.py'],['5be097071c83c935777bde117fa85cd1f64c690a'],0,5,5,1,,,
+79b599a8911ab89544f4115816868bc956aa17e9,"Typos and clarifications
+
+* Changed true quotes to ASCII quotes in `README.md`
+* Fixed a typo (`This projects` instead of `This project`) in
+  `README.md`
+* Changed `rst` to `reStructuredText (rst)` in `setup.py` for
+  people who might not be familiar with the format
+* Added small note to `# Optional` comment on the
+  `long_description_content_type` arg in `setup.py:L70`",Rebecca Turner,637275@gmail.com,Rebecca Turner,637275@gmail.com,2018-03-20 02:00:25-04:00,14400,2018-03-20 02:00:25-04:00,14400,True,False,"['README.md', 'setup.py']",['10bef87464422245a05a093cf44e73b2bf4d0248'],7,7,14,2,,,
+6013c4539465f911a5e6e5247fb1771d0b56f70b,Fix README links,Yeray Diaz Diaz,yeraydiazdiaz@gmail.com,Yeray Diaz Diaz,yeraydiazdiaz@gmail.com,2018-04-08 10:04:20+01:00,-3600,2018-04-08 10:04:20+01:00,-3600,True,False,['README.md'],['c64cc7dc35efdd79e2eb22c653ad0fd70475237f'],4,4,8,1,,,
+1fd9d2ad4dc8c99d8d492740eaf3f1ce8ba9daa5,"Fix check command in CI
+
+There is no need to use the `-r` (`--restructuredtext`) flag with
+`python setup.py check` anymore, as the description is now Markdown",Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2018-04-25 18:23:45-05:00,18000,2018-04-25 18:23:45-05:00,18000,True,False,['tox.ini'],['5e63b5b219c7dd6ee99bc3924798a2f640c7b7ba'],1,1,2,1,,,
+2623b15d212cb59da1c3965d5e35c78103d3a1a7,Update link to Classifer list.,Greg Back,gtback@gmail.com,Dustin Ingram,di@users.noreply.github.com,2018-04-25 17:30:57-05:00,18000,2018-04-25 18:31:36-05:00,18000,True,False,['setup.py'],['6ed1542ffd688714ddf4c824949c6e0704aff6c5'],2,1,3,1,,,
+9ae2387da0dfa6cbe649f69aa8225d7ec305d478,"More information about the 'universal' flag.
+
+When I first encountered the original comment I found it a bit vague because I didn't really know about wheels. I knew that the package I wanted to make wouldn't work on Python 2 so I didn't want to make a universal wheel. But I had to research how this line needed to be changed to do what I wanted, and ended up reading the bdist_wheel.py source to find the answer, which seems excessively difficult. These changes hopefully make it more obvious what to do in my situation.",Robert Bricheno,github2@ambrosia.org.uk,GitHub,noreply@github.com,2018-04-26 18:03:35+01:00,-3600,2018-04-26 18:03:35+01:00,-3600,True,False,['setup.cfg'],['4a52c28cc24f9c2ddff794c8eeb1af8e425b8442'],1,4,5,1,,,
+704a4b4d29976161ce35bf8bcf2898f8994b6783,Removed confusing minutiae,Robert Bricheno,github2@ambrosia.org.uk,GitHub,noreply@github.com,2018-04-27 12:32:30+01:00,-3600,2018-04-27 12:32:30+01:00,-3600,True,False,['setup.cfg'],['9ae2387da0dfa6cbe649f69aa8225d7ec305d478'],2,1,3,1,,,
+ce10821e1391613d14a44a06a07b3d00c18cccf5,"Handle Windows line endings correctly in setup.py
+
+codecs.open doesn't implement universal newlines handling, which
+causes metadata parsing problems if the `README` file uses
+Windows line endings.
+
+Switching to io.open instead gives the Python 3 open()
+semantics (the main reason to prefer codecs.open()
+instead was for Python 2.5 support, which is no longer
+a concern)
+
+Prompted by https://github.com/pypa/packaging-problems/issues/160",Nick Coghlan,ncoghlan@gmail.com,GitHub,noreply@github.com,2018-06-06 01:12:09+10:00,-36000,2018-06-06 01:12:09+10:00,-36000,True,False,['setup.py'],['6a2444b88f48eaa1cf3a2f32fe8bbed8dad82801'],2,5,7,1,,,
+e36874514bfd1e900a52b8419aaade075d8ec5cc,"Clarify usage of readme_renderer in tox.ini
+
+When the sampleproject README was converted from .rst to .md, some of
+the explanatory text was no longer valid.
+See 1fd9d2ad4dc8c99d8d492740eaf3f1ce8ba9daa5.",Greg Back,gtback@gmail.com,Greg Back,gtback@gmail.com,2018-07-02 10:03:47-05:00,18000,2018-07-02 10:03:47-05:00,18000,True,False,['tox.ini'],['129382f0e90ce7f099ba1e9a8e6f6b1e76db0162'],3,9,12,1,,,
+08acfdefe82227942e268debe41d2787380d6740,"Make description optional
+
+`description` keyword corresponds to ""Summary"" metadata field. ""Summary"" is not
+a required field as described below:
+
+https://packaging.python.org/specifications/core-metadata/
+> `Metadata-Version`
+> `Name`
+> `Version`
+> All the other fields are optional.",방성범 (Bang Seongbeom),bangseongbeom@hotmail.com,GitHub,noreply@github.com,2018-08-28 21:58:10+09:00,-32400,2018-08-28 21:58:10+09:00,-32400,True,False,['setup.py'],['5ac45183d55e18d30da3b077e2e6b06a4f289a48'],1,1,2,1,,,
+de62417d626413a7a3d2630e228d48f37aee0227,Fix link to PyPUG section on building wheels,John T. Wodder II,git@varonathe.org,John T. Wodder II,git@varonathe.org,2018-09-15 20:47:56+00:00,0,2018-09-15 20:47:56+00:00,0,True,False,['setup.cfg'],['dc3766c676734261a0ae67dc87809ea050a608b3'],1,1,2,1,,,
+9be24e3a5686e48b60ec3ad90de7eee3c113c4e4,Add Python37 support to setup.py and tox.ini,Ester Ramos,ester.ramos@ktech.com,Ester Ramos,ester.ramos@ktech.com,2018-10-27 11:01:33+01:00,-3600,2018-10-27 11:01:33+01:00,-3600,True,False,"['setup.py', 'tox.ini']",['f3013d8f03e53813df9b096c6fbc069348a97e48'],2,4,6,2,,,
+5064c6292be293dd4df7ef1eb94826300fc38124,"Update setup.cfg
+
+Fixes #85
+
+Replaces deprecated ""license_file"" with the more versatile ""license_files"".
+
+https://wheel.readthedocs.io/en/stable/user_guide.html#including-license-files-in-the-generated-wheel-file",Rui,rneto@rneto.net,GitHub,noreply@github.com,2018-11-14 14:57:25-03:00,10800,2018-11-14 14:57:25-03:00,10800,True,False,['setup.cfg'],['ccf222de224483321dec8126c34cc2ab2a604b96'],2,3,5,1,,,
+5f80d7e37f611c4acd4f62fd1778d7b0d225fc18,"Update setup.cfg
+
+Accept suggestion.
+
+Co-Authored-By: rnetonet <rneto@rneto.net>",Dustin Ingram,di@users.noreply.github.com,GitHub,noreply@github.com,2018-11-14 17:02:36-03:00,10800,2018-11-14 17:02:36-03:00,10800,True,False,['setup.cfg'],['5064c6292be293dd4df7ef1eb94826300fc38124'],1,1,2,1,,,
+a5c864d0f5c19397b12420329abf8f25260403ca,"Demonstrate python_requires usage
+
+Closes #53",Marcel Martin,mail@marcelm.net,GitHub,noreply@github.com,2019-01-30 11:10:52+01:00,-3600,2019-01-30 11:10:52+01:00,-3600,True,False,['setup.py'],['559a84bd6ecbd6b8cd02a105b1f8933956b3f7e7'],0,9,9,1,,,
+8be4b6be00f8fd18350df2dbf00e63672a7a5867,Show how to allow both Python 2 and 3 in python_requires,Marcel Martin,marcel.martin@scilifelab.se,Marcel Martin,marcel.martin@scilifelab.se,2019-01-30 20:35:20+01:00,-3600,2019-01-30 20:35:20+01:00,-3600,True,False,['setup.py'],['a5c864d0f5c19397b12420329abf8f25260403ca'],3,3,6,1,,,
+16ad666c6053a4fe45d5a6871f35176d7cea84e6,Reformat to make flake8 happy,Marcel Martin,marcel.martin@scilifelab.se,Marcel Martin,marcel.martin@scilifelab.se,2019-01-30 20:44:53+01:00,-3600,2019-01-30 20:44:53+01:00,-3600,True,False,['setup.py'],['8be4b6be00f8fd18350df2dbf00e63672a7a5867'],4,4,8,1,,,
+0b40cea8264f38aa545818b0e2716597a678d1b6,fixes broken link to packaging/distribution tutorial,Parker Higgins,parker@parkerhiggins.net,GitHub,noreply@github.com,2019-03-02 19:44:15-05:00,18000,2019-03-02 19:44:15-05:00,18000,True,False,['README.md'],['b064884961dd17607bb40c94649bf8d2c3ea7975'],1,1,2,1,,,
+63e13c737d85bbe503e603376fd3e03422d0c51e,"Update Packaging documentation link
+
+The old link leads to a 404.",Malware Utkonos,utkonos@users.noreply.github.com,GitHub,noreply@github.com,2019-03-26 16:27:47-04:00,14400,2019-03-26 16:27:47-04:00,14400,True,False,['setup.py'],['97f7b3f1cc4229ffd06b38b66a34da88f05596b5'],1,1,2,1,,,
+cbabca3f3f54a6e053e231d4cc89a46550049107,Version 1.3.0,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2019-05-28 15:21:54-05:00,18000,2019-05-28 15:21:54-05:00,18000,True,False,['setup.py'],['0754c8ab224f0886f4939cca3f4ca9e5fd5e5d90'],1,1,2,1,,,
+388156a01d3ca549b25fdfbf6108072790d30b0a,"Update setup.py to remove python 3.4
+
+python 3.4 came to it's EOL so i remove it for setup.py",Makdon,makdon@makdon.me,GitHub,noreply@github.com,2019-07-27 19:38:49+08:00,-28800,2019-07-27 19:38:49+08:00,-28800,True,False,['setup.py'],['cbabca3f3f54a6e053e231d4cc89a46550049107'],2,1,3,1,,,
+25efbf3314423de8e12de244931600a360a14930,Update .travis.yml for removing python 3.4,Makdon,makdon@makdon.me,GitHub,noreply@github.com,2019-07-27 20:39:40+08:00,-28800,2019-07-27 20:39:40+08:00,-28800,True,False,['.travis.yml'],['388156a01d3ca549b25fdfbf6108072790d30b0a'],2,0,2,1,,,
+924aeab7a97079fc064d20953f1792e20debf233,Remove Python 3.4 from tox.ini,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2019-07-27 11:07:16-04:00,14400,2019-07-27 11:07:16-04:00,14400,True,False,['tox.ini'],['25efbf3314423de8e12de244931600a360a14930'],2,1,3,1,,,
+8dc7f310fde89ce5def8bff5cb89fb7a4e8887b5,Use tox-travis to simplify configuration,Albert Tugushev,albert@tugushev.ru,Albert Tugushev,albert@tugushev.ru,2019-09-24 00:53:37+03:00,-10800,2019-09-24 00:54:59+03:00,-10800,True,False,['.travis.yml'],['b0d3f3eeef4e5668d7b59448b43c0f1914d9afc6'],9,5,14,1,,,
+f958fa8d7fb939cd999599c83b0f1a60b2777183,Remove extra whitespace,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2019-11-04 14:27:55-06:00,21600,2019-11-04 14:27:55-06:00,21600,True,False,['tox.ini'],['b0d3f3eeef4e5668d7b59448b43c0f1914d9afc6'],1,1,2,1,,,
+f89336e88d2f5d70c0fa4e40e44a7fabbf3c917a,Add Python 3.8 classifier,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2019-11-04 14:28:16-06:00,21600,2019-11-04 14:28:16-06:00,21600,True,False,['setup.py'],['f958fa8d7fb939cd999599c83b0f1a60b2777183'],0,1,1,1,,,
+1f08cd3f0ef99a58cccc5303707b2665925bb13b,Add Python 3.8 support,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2019-11-04 14:28:48-06:00,21600,2019-11-04 14:28:48-06:00,21600,True,False,"['.travis.yml', 'tox.ini']",['f89336e88d2f5d70c0fa4e40e44a7fabbf3c917a'],1,6,7,2,,,
+cecab2119a195c5e6c732e13379e0e52a676fba8,Bump version,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2019-11-04 14:29:17-06:00,21600,2019-11-04 14:29:17-06:00,21600,True,False,['setup.py'],['1f08cd3f0ef99a58cccc5303707b2665925bb13b'],1,1,2,1,,,
+56d3120cc2a1727c00aad9418e6612abbbd55830,"Switch over to using the src/ layout
+
+Per the discussions at the PyPA packaging mini-summit at PyCon US 2019,
+we decided to switch over to the safer src/ layout.",Paul Ganssle,paul@ganssle.io,Paul Ganssle,paul@ganssle.io,2019-11-16 14:53:58-06:00,21600,2019-11-16 14:55:10-06:00,21600,True,False,"['setup.py', '__init__.py', 'package_data.dat']",['f9d0b1ad99486aed462eba30eeeab31e30c1740a'],1,5,6,3,,,
+83148c568c09179ed93ef9fccd1574549c69749f,Remove basepython for default tox environments,David Tucker,david@tucker.name,David Tucker,david@tucker.name,2019-11-17 14:05:39-08:00,28800,2019-11-17 14:07:19-08:00,28800,True,False,['tox.ini'],['f31ab988d6b8151ab45079b4d962761d9f4d4b2b'],6,1,7,1,,,
+3e7dc62cf240dc4f4fea8974e18169b042606843,Implement PEP 518 and opt into PEP 517 builds,David Tucker,david@tucker.name,David Tucker,david@tucker.name,2019-10-14 11:13:19-07:00,25200,2019-11-20 13:01:27-08:00,28800,True,False,"['MANIFEST.in', 'pyproject.toml', 'tox.ini']",['83148c568c09179ed93ef9fccd1574549c69749f'],0,18,18,3,,,
+e07596dfeff00a7beae1b8c75312d639357fee94,Pass positional arguments to pytest,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2019-12-03 16:01:35-06:00,21600,2019-12-03 16:01:35-06:00,21600,True,False,['tox.ini'],['2cf198529c6c5a4fa50c28505ce6a90266b89868'],1,1,2,1,,,
+04b2941484ab9ce9f38ef3edd3a9143eeaf07931,"Update check-manifest invocation
+
+check-manifest 0.42 updated `--ignore` handling to be more consistent with MANIFEST.in global-exclude directives.  As a result, `tests*` no longer matches files inside a `tests` directory, and you have to use `tests/**` instead.
+
+As an extra complication, check-manifest drops Python 2.7 support.  Since you still have py27 in this tox.ini, this means you get an older check-manifest 0.41, and you have to tell it to ignore the empty `tests` directory that remains after you exclude all the files in it.
+
+For details see the second half of https://github.com/mgedmin/check-manifest/issues/98
+
+I apologize for the inconvenience!",Marius Gedminas,marius@gedmin.as,GitHub,noreply@github.com,2020-05-04 22:08:18+03:00,-10800,2020-05-04 22:08:18+03:00,-10800,True,False,['tox.ini'],['d09af3dbd851d385e56f0aed29875bfa3d3df230'],1,1,2,1,,,
+428f6c0659b542cd4bc218132b50184eb5c2587a,Drop support for EOL Python 2,Hugo,hugovk@users.noreply.github.com,Hugo,hugovk@users.noreply.github.com,2020-05-04 23:03:06+03:00,-10800,2020-05-04 23:03:06+03:00,-10800,True,False,"['.travis.yml', 'setup.cfg', 'setup.py', '__init__.py', 'tox.ini']",['0853b2debb9d719a550cfa0192b8bdb86d54fd2a'],29,7,36,5,,,
+a4117c85bee2ae52b05a8aa74247d5a9739748fd,Simplify check-manifest call with v0.42,Hugo,hugovk@users.noreply.github.com,Hugo,hugovk@users.noreply.github.com,2020-05-05 10:44:36+03:00,-10800,2020-05-05 10:44:36+03:00,-10800,True,False,['tox.ini'],['428f6c0659b542cd4bc218132b50184eb5c2587a'],2,2,4,1,,,
+b10dec0f0585c305dde9d053eb38de07bf0d11a2,"Update sample author email
+
+Per https://groups.google.com/d/msg/pypa-dev/rUNsfIbruHM/LCEx-CB5AgAJ
+the pypa-dev Google Group is now decommissioned.
+Taking this opportunity to make the sample author
+email address more sensical.
+
+Signed-off-by: Sumana Harihareswara <sh@changeset.nyc>",Sumana Harihareswara,sh@changeset.nyc,Sumana Harihareswara,sh@changeset.nyc,2020-05-28 16:57:37-04:00,14400,2020-05-28 17:04:23-04:00,14400,True,False,['setup.py'],['bdfb04be82556dfc1faa6df44c549a0e0419d43d'],2,2,4,1,,,
+851b5f0beccc7037af611beb962a49d34af58a8a,64 Added python logo image to README.md inline,Ryan Long,ryanlong1004@gmail.com,Ryan Long,ryanlong1004@gmail.com,2020-06-13 16:52:10-04:00,14400,2020-06-13 16:52:10-04:00,14400,True,False,['README.md'],['150be5fc818484b78816529bc9ec59440a9bcdab'],0,2,2,1,,,
+77db8e659eb38fc6507589f010d57c35e9e63ee2,119 updated python logo,Ryan Long,ryanlong1004@gmail.com,Ryan Long,ryanlong1004@gmail.com,2020-06-14 11:10:11-04:00,14400,2020-06-14 11:10:11-04:00,14400,True,False,['README.md'],['851b5f0beccc7037af611beb962a49d34af58a8a'],2,13,15,1,,,
+0ceff90ee5d3dea7c305848d941bfeae9bfbfee9,119 updated python logo (removed some other code from my own fork),Ryan Long,ryanlong1004@gmail.com,Ryan Long,ryanlong1004@gmail.com,2020-06-14 11:13:38-04:00,14400,2020-06-14 11:13:38-04:00,14400,True,False,['README.md'],['77db8e659eb38fc6507589f010d57c35e9e63ee2'],12,1,13,1,,,
+c7a4cfb287b680e3b63977fd6ed9d461a100d0f6,26 added simple module and test module,Ryan Long,ryanlong1004@gmail.com,Ryan Long,ryanlong1004@gmail.com,2020-06-14 11:38:04-04:00,14400,2020-06-14 11:38:04-04:00,14400,True,False,"['simple.py', 'test_simple.py']",['150be5fc818484b78816529bc9ec59440a9bcdab'],2,26,28,2,1.0,1.0,1.0
+00bed2f909a40aee9a7b3d2a13dd37f8054d3928,Removed google style rst to remain agnostic,Ryan Long,ryanlong1004@gmail.com,Ryan Long,ryanlong1004@gmail.com,2020-06-14 11:39:27-04:00,14400,2020-06-14 11:39:27-04:00,14400,True,False,['simple.py'],['c7a4cfb287b680e3b63977fd6ed9d461a100d0f6'],10,0,10,1,,,
+c54b977c7ebf379f957db1cf7ce776608c67a521,Removed blank lines,Ryan Long,ryanlong1004@gmail.com,Ryan Long,ryanlong1004@gmail.com,2020-06-14 11:52:12-04:00,14400,2020-06-14 11:52:12-04:00,14400,True,False,['simple.py'],['00bed2f909a40aee9a7b3d2a13dd37f8054d3928'],2,0,2,1,,,
+87a7ae8fbe3ac5e2c6a66f2a45e44e398f1ea54e,Add release automation,Dustin Ingram,di@users.noreply.github.com,Dustin Ingram,di@users.noreply.github.com,2020-06-25 13:47:56-05:00,18000,2020-06-25 13:47:56-05:00,18000,True,False,['release.yml'],['3b73bd9433d031f0873a6cbc5bd04cea2e3407cb'],0,27,27,1,,,
+3b0207a3396b634e41af20e82e0c710194d5f5dd,Version 2.0.0 (#125),Dustin Ingram,di@users.noreply.github.com,GitHub,noreply@github.com,2020-06-25 14:08:53-05:00,18000,2020-06-25 14:08:53-05:00,18000,True,False,['setup.py'],['9b36ed0948ff751aea0e4c0eb6a7fdcaa8917222'],1,1,2,1,,,
+45225b8095590e6f03790dd77ccb92671bc3c788,"106 add commas to keywords in setup.py (#120)
+
+* 106 add commas to keywords in setup.py
+
+* Changed language in setup.py to match change to resolve #106
+
+* Split lines to stay under limit. #106
+
+* Changed language to match example in https://github.com/pypa/packaging.python.org/pull/674/ . #106
+
+* Typo fix. #106",RedBit,ryanlong1004@gmail.com,GitHub,noreply@github.com,2020-06-25 15:18:54-04:00,14400,2020-06-25 14:18:54-05:00,18000,True,False,['setup.py'],['3b0207a3396b634e41af20e82e0c710194d5f5dd'],2,4,6,1,,,
+5db250e8abe6e9bb43924eb2ce10c46322044f8e,Don't fail when releasing an existing version (#126),Dustin Ingram,di@users.noreply.github.com,GitHub,noreply@github.com,2020-06-25 14:19:14-05:00,18000,2020-06-25 14:19:14-05:00,18000,True,False,['release.yml'],['45225b8095590e6f03790dd77ccb92671bc3c788'],0,1,1,1,,,
+52966defd6a61e97295b0bb82cd3474ac3e11c7a,use pathlib (#128),Julin S,48789920+ju-sh@users.noreply.github.com,GitHub,noreply@github.com,2020-06-30 18:34:55+05:18,-19080,2020-06-30 08:16:55-05:00,18000,True,False,['setup.py'],['5db250e8abe6e9bb43924eb2ce10c46322044f8e'],4,3,7,1,,,
+90d44abe361688aba5a189e661423863b34f5208,"Remove Python 3.5 and add 3.9 (#132)
+
+Signed-off-by: Gábor Lipták <gliptak@gmail.com>",Gábor Lipták,gliptak@gmail.com,GitHub,noreply@github.com,2021-01-07 22:30:10-05:00,18000,2021-01-07 21:30:10-06:00,21600,True,False,"['.travis.yml', 'MANIFEST.in', 'setup.py', 'tox.ini']",['52966defd6a61e97295b0bb82cd3474ac3e11c7a'],4,7,11,4,,,
+d2bae02873f8dc964b07b27176efc751f2e58860,"GitHub Actions (#153)
+
+* Slight tweaks to the release workflow
+
+* Add testing workflow
+
+* Support Python 3.10
+
+* Remove Travis-CI config",Dustin Ingram,di@users.noreply.github.com,GitHub,noreply@github.com,2021-10-30 14:34:38-04:00,14400,2021-10-30 13:34:38-05:00,18000,True,False,"['release.yml', 'test.yml', '.travis.yml', 'setup.py', 'tox.ini']",['90d44abe361688aba5a189e661423863b34f5208'],20,30,50,5,,,
+091d322233d7993214272f469f9b27ec6d9b6cfc,"dead link: requirements.txt vs install_requires (#147)
+
+Co-authored-by: Dustin Ingram <di@users.noreply.github.com>",Guillaume Latour,g0latour@gmail.com,GitHub,noreply@github.com,2021-10-30 20:55:21+02:00,-7200,2021-10-30 13:55:21-05:00,18000,True,False,['setup.py'],['d2bae02873f8dc964b07b27176efc751f2e58860'],1,1,2,1,,,
+3a836905fbd687af334db16b16c37cf51dcbc99c,"Fix some dead links (#148)
+
+Co-authored-by: Dustin Ingram <di@users.noreply.github.com>",Marcel Martin,marcel.martin@scilifelab.se,GitHub,noreply@github.com,2021-10-30 22:22:07+02:00,-7200,2021-10-30 16:22:07-04:00,14400,True,False,['setup.py'],['091d322233d7993214272f469f9b27ec6d9b6cfc'],2,2,4,1,,,
+87c524aec9586b92932dc261923dc8686dcfa019,"Remove MANIFEST.in entirely (#155)
+
+* Upgrade the Setuptools version
+
+That way, we can remove items from the manifest file.
+
+* Simplify the manifest file
+
+Remove:
+
+* pyproject.toml (now covered by setuptools>=43.0.0)
+* LICENSE.txt (included by `license_files` and covered by setuptools>=42.0.0)
+* setup.py (which is the file where the build is called)
+
+* Remove README.md from the manifest file
+
+It is now included by default.
+
+* Delete MANIFEST.in
+
+This is no longer necessary. All the items are included by Setuptools.",Diego Ramirez,dr01191115@gmail.com,GitHub,noreply@github.com,2021-11-23 06:34:58-06:00,21600,2021-11-23 06:34:58-06:00,21600,True,False,"['MANIFEST.in', 'pyproject.toml']",['3a836905fbd687af334db16b16c37cf51dcbc99c'],14,1,15,2,,,
+d424e4310bda95f5ae8cfdf1de583a973680cf88,Upgrade actions/checkout and setup-python (#162),Christian Clauss,cclauss@me.com,GitHub,noreply@github.com,2022-03-12 00:48:54+01:00,-3600,2022-03-11 18:48:54-05:00,18000,True,False,['test.yml'],['87c524aec9586b92932dc261923dc8686dcfa019'],2,2,4,1,,,
+918bd331501de42be32666bd5140d04d00b39386,Drop support for Python 3.6 (#165),Dustin Ingram,di@users.noreply.github.com,GitHub,noreply@github.com,2022-03-24 18:23:18-04:00,14400,2022-03-24 18:23:18-04:00,14400,True,False,"['test.yml', 'setup.py', 'tox.ini']",['d424e4310bda95f5ae8cfdf1de583a973680cf88'],56,34,90,3,,,
+d4ee05fdc03e848ed6e7065d8fe8e833a3c8c0b2,Update release.yml (#175),Mizux,mizux.dev@gmail.com,GitHub,noreply@github.com,2022-09-19 18:17:17+02:00,-7200,2022-09-19 12:17:17-04:00,14400,True,False,['release.yml'],['918bd331501de42be32666bd5140d04d00b39386'],1,1,2,1,,,
+db5806e0a3204034c51b1c00dde7d5eb3fa2532e,Remove mention of deprecated setuptools features (#181),Paul Moore,p.f.moore@gmail.com,GitHub,noreply@github.com,2022-12-01 16:53:46+00:00,0,2022-12-01 16:53:46+00:00,0,True,False,"['data_file', 'setup.py', 'tox.ini']",['d4ee05fdc03e848ed6e7065d8fe8e833a3c8c0b2'],19,1,20,3,,,
+aeeb50a948addcb712ad4261df472263514991e1,Move to metadata to `pyproject.toml` (#166),Dustin Ingram,di@users.noreply.github.com,GitHub,noreply@github.com,2022-12-01 13:49:54-05:00,18000,2022-12-01 18:49:54+00:00,0,True,False,"['README.md', 'pyproject.toml', 'setup.cfg', 'setup.py', '__init__.py', 'tox.ini']",['db5806e0a3204034c51b1c00dde7d5eb3fa2532e'],178,156,334,6,,,
+fa13f7ddb228a2fea5f0175299aec5253ba3a3f9,"Remove workflow warnings (#190)
+
+The warnings are:
+Node.js 12 actions are deprecated. Please update the following actions to use Node.js 16: actions/checkout@v2, actions/setup-python@v1. For more information see: https://github.blog/changelog/2022-09-22-github-actions-all-actions-will-begin-running-on-node16-instead-of-node12/.
+The `set-output` command is deprecated and will be disabled soon. Please upgrade to using Environment Files. For more information see: https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/",Simone Rubino,daemo00@gmail.com,GitHub,noreply@github.com,2023-04-26 00:08:50+02:00,-7200,2023-04-25 18:08:50-04:00,14400,True,False,['release.yml'],['aeeb50a948addcb712ad4261df472263514991e1'],2,2,4,1,,,
+fc8d83efd5749853507be959d858629d0aaf5c6e,Update `release.yml` to use Trusted Publishing (#191),Dustin Ingram,di@users.noreply.github.com,GitHub,noreply@github.com,2023-04-26 13:25:03-06:00,21600,2023-04-26 15:25:03-04:00,14400,True,False,['release.yml'],['fa13f7ddb228a2fea5f0175299aec5253ba3a3f9'],1,0,1,1,,,
+bae8ff4f61364453fd259eb505ea8ca99677b388,"Add token permissions to release workflow. (#192)
+
+Required for trusted publishing.",Dustin Ingram,di@users.noreply.github.com,GitHub,noreply@github.com,2023-07-26 16:45:17-04:00,14400,2023-07-26 16:45:17-04:00,14400,True,False,['release.yml'],['fc8d83efd5749853507be959d858629d0aaf5c6e'],0,3,3,1,,,
+3fb1461c7c13b6832ed0f25625b19f2d321a74b7,"Update `release.yml` with release branch for `gh-action-pypi-publish` (#195)
+
+* Update `release.yml` with release branch for `gh-action-pypi-publish`
+
+Per documentation here: https://github.com/pypa/gh-action-pypi-publish
+
+(cc @webknjaz)
+
+* Update .github/workflows/release.yml
+
+Co-authored-by: Sviatoslav Sydorenko <wk.cvs.github@sydorenko.org.ua>
+
+---------
+
+Co-authored-by: Sviatoslav Sydorenko <wk.cvs.github@sydorenko.org.ua>",Dustin Ingram,di@users.noreply.github.com,GitHub,noreply@github.com,2023-08-23 09:46:23-04:00,14400,2023-08-23 09:46:23-04:00,14400,True,False,['release.yml'],['bae8ff4f61364453fd259eb505ea8ca99677b388'],2,2,4,1,,,

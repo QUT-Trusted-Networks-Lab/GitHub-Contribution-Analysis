@@ -1,0 +1,55 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+32c11220de71af801595336ca30691700128964f,Initial commit,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2018-10-23 21:50:52+02:00,-7200,2018-10-23 21:50:52+02:00,-7200,True,False,"['.gitattributes', '.gitignore', 'LICENSE', '__init__.py', '__main__.py', 'meteofrance.py', 'setup.py', 'test.py']",[],0,210,210,8,1.0,1.0,1.0
+6c4083d93e4256457401fcea80bee00a2a1f2bb3,only need postal code,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2018-10-24 14:48:51+02:00,-7200,2018-10-24 14:48:51+02:00,-7200,True,False,"['meteofrance.py', 'setup.py', 'test.py']",['32c11220de71af801595336ca30691700128964f'],23,95,118,3,0.625,1.0,1.0
+7b87ce2cd80d95edb395f84ef2f05cb888c9996a,Update setup.py,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2018-10-24 15:18:09+02:00,-7200,2018-10-24 15:18:09+02:00,-7200,True,False,['setup.py'],['6c4083d93e4256457401fcea80bee00a2a1f2bb3'],3,2,5,1,,,
+7da9d7d2e30f003cfc94bcc04e856d1a127e0ccd,update client,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2018-10-24 20:19:03+02:00,-7200,2018-10-24 20:19:03+02:00,-7200,True,False,"['__init__.py', 'client.py', 'setup.py', 'test.py']",['7b87ce2cd80d95edb395f84ef2f05cb888c9996a'],29,50,79,4,0.0,1.0,1.0
+2f8ae2ddacb036b9ed9393231678e72a4edbaed8,add UV,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2018-10-24 20:32:59+02:00,-7200,2018-10-24 20:32:59+02:00,-7200,True,False,"['client.py', 'setup.py']",['7da9d7d2e30f003cfc94bcc04e856d1a127e0ccd'],7,4,11,2,0.0,1.0,1.0
+4292ddd7fb759277ec05ba84f673e6cda79e3db3,return name,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2018-10-24 20:47:28+02:00,-7200,2018-10-24 20:47:28+02:00,-7200,True,False,"['client.py', 'setup.py']",['2f8ae2ddacb036b9ed9393231678e72a4edbaed8'],1,2,3,2,1.0,1.0,1.0
+db1a5c61b097fa254b3a109230073d7e6ef76dd0,better error handling and some improvements,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2018-10-25 12:52:46+02:00,-7200,2018-10-25 12:52:46+02:00,-7200,True,False,"['client.py', 'setup.py']",['4292ddd7fb759277ec05ba84f673e6cda79e3db3'],33,37,70,2,0.0,0.0,1.0
+c309b64627e921acdf48b7e45fcf9782b1b29b7f,More tests,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2018-10-25 12:52:55+02:00,-7200,2018-10-25 12:52:55+02:00,-7200,True,False,['test.py'],['db1a5c61b097fa254b3a109230073d7e6ef76dd0'],9,34,43,1,,,
+3d80a4c8682ff9d42bde904a1391673601e8b65c,add fetch_at key; emojis forecast; add exceptions,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2018-10-29 15:01:25+01:00,-3600,2018-10-29 15:01:25+01:00,-3600,True,False,"['client.py', 'setup.py', 'test.py']",['c309b64627e921acdf48b7e45fcf9782b1b29b7f'],19,34,53,3,0.125,0.125,0.0
+9a3735eaac0de79913e24713a4cec70a06f8c3a6,weather class and wind bearing,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2018-11-07 12:12:05+01:00,-3600,2018-11-07 12:12:05+01:00,-3600,True,False,['client.py'],['3d80a4c8682ff9d42bde904a1391673601e8b65c'],0,15,15,1,0.0,0.0,1.0
+77a5f1e3be99535a64c018228f70a1ecad1c4aba,0.2.8 : world and 4 days forecast,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2019-02-07 12:53:00+01:00,-3600,2019-02-07 12:53:00+01:00,-3600,True,False,"['client.py', 'setup.py', 'test.py']",['9a3735eaac0de79913e24713a4cec70a06f8c3a6'],7,65,72,3,0.0,0.0,0.9473684210526315
+94a36e02cd3a075f2ee10cb548b1d3c9326e145e,fix for 0.3.0,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2019-02-07 13:56:42+01:00,-3600,2019-02-07 13:56:42+01:00,-3600,True,False,"['client.py', 'setup.py']",['77a5f1e3be99535a64c018228f70a1ecad1c4aba'],2,2,4,2,1.0,0.0,0.0
+5415f6edce8aed96177d0145fa6d8fe07d217b40,"0.3.5 department, one more forecast day",victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2019-03-18 10:25:26+01:00,-3600,2019-03-18 10:25:26+01:00,-3600,True,False,"['client.py', 'setup.py', 'test.py']",['94a36e02cd3a075f2ee10cb548b1d3c9326e145e'],9,34,43,3,0.0,0.0,1.0
+adaa695d6081575b9324c5e78ef2373f24b7d1e9,dept update,victorcerutti,victor.cerutti@gmail.com,victorcerutti,victor.cerutti@gmail.com,2019-03-18 10:43:13+01:00,-3600,2019-03-18 10:43:13+01:00,-3600,True,False,"['client.py', 'setup.py']",['5415f6edce8aed96177d0145fa6d8fe07d217b40'],2,2,4,2,,,
+cb0d7c95f7b3a81d44a525d7dddbed6f46240fb3,Rewrite tests with unittest,Paul Guyot,pguyot@kallisys.net,Paul Guyot,pguyot@kallisys.net,2019-04-21 22:06:31+02:00,-7200,2019-04-21 22:06:31+02:00,-7200,True,False,['test.py'],['adaa695d6081575b9324c5e78ef2373f24b7d1e9'],89,124,213,1,0.3786407766990291,1.0,1.0
+44b542aee77f812508561bb03535539600395c7f,"Save all available forecast data, including today's",Paul Guyot,pguyot@kallisys.net,Paul Guyot,pguyot@kallisys.net,2019-04-21 22:30:41+02:00,-7200,2019-04-24 18:49:37+02:00,-7200,True,False,"['client.py', 'test.py']",['8fa7f411321dfa0c4ef66c218e773915191d00df'],4,37,41,2,0.0,0.8387096774193549,1.0
+49f879214932d5fc444b8c051c86bc9b6363c8e3,0.3.7 : fix missing snow and freeze chance,Victor Cerutti,victor.cerutti@gmail.com,Victor Cerutti,victor.cerutti@gmail.com,2019-06-05 11:05:48+02:00,-7200,2019-06-05 11:05:48+02:00,-7200,True,False,"['client.py', 'setup.py', 'test.py']",['8fa7f411321dfa0c4ef66c218e773915191d00df'],4,11,15,3,0.0,0.0,1.0
+e4a07c569850435650b083ad2f03eb6d18a26330,More robust parsing of forecast,Paul Guyot,pguyot@kallisys.net,Paul Guyot,pguyot@kallisys.net,2019-06-15 16:51:26+02:00,-7200,2019-06-15 16:51:26+02:00,-7200,True,False,"['client.py', 'test.py']",['ac6082701e8ffaf3276ec37c63216e3d38c287ec'],11,13,24,2,0.0,0.0,1.0
+a1c0d4333b92dfc1d1024908a48f37ed1462ba1f,Add print name for disambiguation,Paul Guyot,pguyot@kallisys.net,Paul Guyot,pguyot@kallisys.net,2019-06-15 16:51:48+02:00,-7200,2019-06-15 16:51:48+02:00,-7200,True,False,"['client.py', 'test.py']",['e4a07c569850435650b083ad2f03eb6d18a26330'],1,7,8,2,0.8333333333333334,0.8333333333333334,1.0
+4fd5239eddb5048cb60f7ec0991c02a179df25b8,"Add print name for disambiguation (#1)
+
+Co-authored-by: Paul Guyot <pguyot@kallisys.net>",Maxime Barbier,maxime.barbier1991@gmail.com,GitHub,noreply@github.com,2020-04-05 18:43:50+02:00,-7200,2020-04-05 18:43:50+02:00,-7200,True,False,[],['a1c0d4333b92dfc1d1024908a48f37ed1462ba1f'],0,0,0,0,,,
+7a8f9f51af8707abcbe0c0dff836933e6b98bd2f,"Save forecast data for all available days (#2)
+
+* Add print name for disambiguation (#5)
+
+Good idea.
+
+* Add error description and insee_code (#7)
+
+* Add error description and insee_code
+
+* Add department name
+
+* Add the estimated time of the next rain (#9)
+
+* Calculate date and time of next rain
+
+* Update tests
+
+* Add vscode files in .gitignore
+
+* Prepare next package version 0.3.8
+
+* Save all available forecast data, including today's
+
+* More robust parsing of forecast
+
+* New parameter in constructor to preserve backward compatiblity
+
+Co-authored-by: Paul Guyot <pguyot@kallisys.net>
+Co-authored-by: Oncleben31 <oncleben31@users.noreply.github.com>",Maxime Barbier,maxime.barbier1991@gmail.com,GitHub,noreply@github.com,2020-04-05 18:46:40+02:00,-7200,2020-04-05 18:46:40+02:00,-7200,True,False,"['.gitignore', 'client.py', 'setup.py', 'test.py']",['4fd5239eddb5048cb60f7ec0991c02a179df25b8'],21,92,113,4,0.33962264150943394,0.7169811320754716,0.9811320754716981
+175398cde03d144df3e58e916eacf3080341f415,Update setup.py,Maxime Barbier,maxime.barbier1991@gmail.com,GitHub,noreply@github.com,2020-04-05 18:47:55+02:00,-7200,2020-04-05 18:47:55+02:00,-7200,True,False,['setup.py'],['7a8f9f51af8707abcbe0c0dff836933e6b98bd2f'],2,2,4,1,,,
+7328a857022f263d1609c939851f612c5ed13d08,Update setup.py,Maxime Barbier,maxime.barbier1991@gmail.com,GitHub,noreply@github.com,2020-04-05 18:50:01+02:00,-7200,2020-04-05 18:50:01+02:00,-7200,True,False,['setup.py'],['175398cde03d144df3e58e916eacf3080341f415'],2,2,4,1,,,

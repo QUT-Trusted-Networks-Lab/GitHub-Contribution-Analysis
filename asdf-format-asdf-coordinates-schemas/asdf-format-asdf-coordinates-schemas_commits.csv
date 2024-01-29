@@ -1,0 +1,221 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+caff6400dc2fc058c1a0e2267b0f77be432d64a0,Initial commit,Ed Slavich,eslavich@stsci.edu,Ed Slavich,eslavich@stsci.edu,2021-12-02 16:58:15-05:00,18000,2021-12-02 16:58:15-05:00,18000,True,False,['README.md'],[],0,7,7,1,,,
+aaabf799f2a59da0a7c287c5a2b90a8d30742dcb,Add CI workflow,Ed Slavich,eslavich@stsci.edu,Ed Slavich,eslavich@stsci.edu,2021-12-02 17:14:50-05:00,18000,2021-12-02 17:14:50-05:00,18000,True,False,['ci.yml'],['caff6400dc2fc058c1a0e2267b0f77be432d64a0'],0,59,59,1,,,
+b78ff1aebe63ba22639a1fcf8e9281683ca1cc57,Add schemas and Python package,Ed Slavich,eslavich@stsci.edu,Ed Slavich,eslavich@stsci.edu,2021-12-02 17:02:29-05:00,18000,2021-12-04 12:43:53-05:00,18000,True,False,"['.gitignore', 'CHANGES.rst', 'LICENSE', 'pyproject.toml', 'coordinates-1.0.0.yaml', 'angle-1.0.0.yaml', 'earthlocation-1.0.0.yaml', 'baseframe-1.0.0.yaml', 'cirs-1.0.0.yaml', 'fk4-1.0.0.yaml', 'fk4noeterms-1.0.0.yaml', 'fk5-1.0.0.yaml', 'galactic-1.0.0.yaml', 'galactocentric-1.0.0.yaml', 'gcrs-1.0.0.yaml', 'icrs-1.0.0.yaml', 'icrs-1.1.0.yaml', 'itrs-1.0.0.yaml', 'precessedgeocentric-1.0.0.yaml', 'latitude-1.0.0.yaml', 'longitude-1.0.0.yaml', 'representation-1.0.0.yaml', 'skycoord-1.0.0.yaml', 'spectralcoord-1.0.0.yaml', 'setup.cfg', 'setup.py', '__init__.py', 'integration.py', 'test_integration.py', 'test_manifests.py', 'tox.ini']",['aaabf799f2a59da0a7c287c5a2b90a8d30742dcb'],0,1371,1371,31,0.5142857142857142,1.0,1.0
+9007db7f670be0d5b84401e1a42ed8b10ad01929,"Add classifiers to setup.cfg
+
+Co-authored-by: Mihai Cara <mcara@users.noreply.github.com>",Edward Slavich,eslavich@users.noreply.github.com,Ed Slavich,eslavich@stsci.edu,2021-12-04 10:09:30-05:00,18000,2021-12-04 12:43:53-05:00,18000,True,False,['setup.cfg'],['b78ff1aebe63ba22639a1fcf8e9281683ca1cc57'],1,5,6,1,,,
+8d2c4794f349e5640b34ae7d03576fad2cc923ab,"Drop support for Python 3.6, test with 3.10",Ed Slavich,eslavich@stsci.edu,Ed Slavich,eslavich@stsci.edu,2021-12-04 12:42:50-05:00,18000,2021-12-04 12:43:53-05:00,18000,True,False,"['ci.yml', 'setup.cfg']",['9007db7f670be0d5b84401e1a42ed8b10ad01929'],4,9,13,2,,,
+4e572265fffe530a5dc76c3443be96ff440efc14,Make Python versions strings in YAML,Ed Slavich,eslavich@stsci.edu,Ed Slavich,eslavich@stsci.edu,2021-12-04 12:47:26-05:00,18000,2021-12-04 12:47:26-05:00,18000,True,False,['ci.yml'],['8d2c4794f349e5640b34ae7d03576fad2cc923ab'],6,6,12,1,,,
+75da16ef162315465a418322e9d9c2d3761da813,Use dev pytest with Python 3.10,Ed Slavich,eslavich@stsci.edu,Ed Slavich,eslavich@stsci.edu,2021-12-04 12:55:18-05:00,18000,2021-12-04 12:55:18-05:00,18000,True,False,['tox.ini'],['4e572265fffe530a5dc76c3443be96ff440efc14'],0,2,2,1,,,
+9807b104e601b2ab8c523e2f44d0c2b7e6fd2097,Update changelog for 0.1.0 release,Ed Slavich,eslavich@stsci.edu,Ed Slavich,eslavich@stsci.edu,2021-12-04 13:13:02-05:00,18000,2021-12-04 13:13:12-05:00,18000,True,False,['CHANGES.rst'],['67f360c55bc422e13b9c20b8c5ac4b83f2fe5a27'],1,1,2,1,,,
+12568daf81ecb88c1fdbb5adb18f9397417c6d31,Fix pyproject.toml,Ed Slavich,eslavich@stsci.edu,Ed Slavich,eslavich@stsci.edu,2021-12-04 13:21:56-05:00,18000,2021-12-04 13:21:56-05:00,18000,True,False,['pyproject.toml'],['9807b104e601b2ab8c523e2f44d0c2b7e6fd2097'],1,4,5,1,,,
+5c4f8dfa2bd6ff576128a80b897eaa7c5741afc6,Add __version__ attribute,Ed Slavich,eslavich@stsci.edu,Ed Slavich,eslavich@stsci.edu,2021-12-04 13:25:53-05:00,18000,2021-12-04 13:25:53-05:00,18000,True,False,"['.gitignore', '__init__.py']",['12568daf81ecb88c1fdbb5adb18f9397417c6d31'],0,6,6,2,,,
+665fe9e02ea405dde75fbb59f0d84a9fea9a6b06,Added recursive yaml finding,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-03 15:25:24-05:00,18000,2022-02-03 15:25:24-05:00,18000,True,False,['setup.py'],['5c4f8dfa2bd6ff576128a80b897eaa7c5741afc6'],1,7,8,1,1.0,1.0,1.0
+eabf4914b5259bdb151e642edb62e07a1bc2bef8,Add python 3.8 to CI,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-03 16:59:48-05:00,18000,2022-02-03 16:59:48-05:00,18000,True,False,['ci.yml'],['5c4f8dfa2bd6ff576128a80b897eaa7c5741afc6'],0,5,5,1,,,
+982816a56483bcadc9a0469aca77c9b8edeb79e4,Results of running black on repository.,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-03 17:02:19-05:00,18000,2022-02-03 21:26:01-05:00,18000,True,False,"['test_integration.py', 'test_manifests.py']",['3f0707109d1e71dcda731e00210e048e9c76b557'],3,9,12,2,1.0,1.0,1.0
+5b45ff4494c768388b2025f2739a3e2cd6b32f34,Added black to CI,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-03 17:08:00-05:00,18000,2022-02-03 21:26:01-05:00,18000,True,False,"['ci.yml', 'tox.ini']",['982816a56483bcadc9a0469aca77c9b8edeb79e4'],5,16,21,2,,,
+2ff9a9eb3f4a85eef5d4d3bebec67e8e667267c1,Fix bug in CI run,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-03 19:30:53-05:00,18000,2022-02-03 21:26:01-05:00,18000,True,False,['ci.yml'],['5b45ff4494c768388b2025f2739a3e2cd6b32f34'],2,2,4,1,,,
+61ad381daf0902c03a3b7af027d49f84a8c5a0d3,Update black tox command,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-03 19:34:27-05:00,18000,2022-02-03 21:26:01-05:00,18000,True,False,['tox.ini'],['2ff9a9eb3f4a85eef5d4d3bebec67e8e667267c1'],1,1,2,1,,,
+e31c0271b9e0d61b4ea5fb4a995602b1b7a71f41,Update tox.ini,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-03 19:36:28-05:00,18000,2022-02-03 21:26:01-05:00,18000,True,False,['tox.ini'],['61ad381daf0902c03a3b7af027d49f84a8c5a0d3'],1,1,2,1,,,
+24532e41dbe437679692a400f82b260a54fe98df,Update ci.yml,William Jamieson,wjamieson@stsci.edu,GitHub,noreply@github.com,2022-02-03 21:29:30-05:00,18000,2022-02-03 21:29:30-05:00,18000,True,False,['ci.yml'],['e31c0271b9e0d61b4ea5fb4a995602b1b7a71f41'],0,10,10,1,,,
+ab5c8d4d596f9d0ac83034af069aedb9bef9e2d9,Updated black config,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-21 14:25:30-05:00,18000,2022-02-21 14:25:30-05:00,18000,True,False,"['pyproject.toml', 'setup.py', 'test_integration.py', 'test_manifests.py']",['9d6a8ba2c241a9643a158dcd0edfd6b091c34e72'],9,7,16,4,0.0,0.0,0.0
+f61d3b0b876453e2d3e784cd86d093946721a48e,Added pre-commit configuration,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-21 14:27:22-05:00,18000,2022-02-21 14:27:22-05:00,18000,True,False,['.pre-commit-config.yaml'],['ab5c8d4d596f9d0ac83034af069aedb9bef9e2d9'],0,35,35,1,,,
+436b8d91b91c9ca56bc1c738d5621ad4408c9dd0,Pre-commit modifications,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-21 14:29:42-05:00,18000,2022-02-21 14:29:42-05:00,18000,True,False,"['ci.yml', '.gitignore', 'setup.py', '__init__.py', 'integration.py', 'test_integration.py', 'test_manifests.py']",['f61d3b0b876453e2d3e784cd86d093946721a48e'],7,4,11,7,,,
+5509330252a1a6e3c1e48ec4db43797f722f2fab,Adjustments to setup for better pytest,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-21 14:30:17-05:00,18000,2022-02-21 14:30:17-05:00,18000,True,False,['setup.cfg'],['436b8d91b91c9ca56bc1c738d5621ad4408c9dd0'],0,2,2,1,,,
+f6a5ec5f50b1c35bee23e176258c55dfcc266afc,Updated github ci workflows,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-21 14:33:49-05:00,18000,2022-02-21 14:33:49-05:00,18000,True,False,"['ci.yml', 'tox.ini']",['5509330252a1a6e3c1e48ec4db43797f722f2fab'],40,40,80,2,,,
+3f3a438a63c591d8d21befaeb57eb46e428e97c8,Add changelog workflow,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-21 14:34:58-05:00,18000,2022-02-21 14:34:58-05:00,18000,True,False,['changelog.yml'],['f6a5ec5f50b1c35bee23e176258c55dfcc266afc'],0,19,19,1,,,
+4fbf7061e7171f7b2618fa8c2cc8a2122f6cda8d,Add publish workflow,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-21 14:35:43-05:00,18000,2022-02-21 14:35:43-05:00,18000,True,False,['publish-to-pypi.yml'],['3f3a438a63c591d8d21befaeb57eb46e428e97c8'],0,16,16,1,,,
+06d323debdbe54eb02d428015927fa748b1ad3ba,Updated README badges,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-21 14:38:46-05:00,18000,2022-02-21 14:38:46-05:00,18000,True,False,['README.md'],['4fbf7061e7171f7b2618fa8c2cc8a2122f6cda8d'],2,4,6,1,,,
+846fce82acde1386c7f7f0b0eec18e92906280db,Bring toolchain in line with asdf,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-23 18:05:02-05:00,18000,2022-02-23 18:05:02-05:00,18000,True,False,"['.pre-commit-config.yaml', 'bandit.yaml']",['06d323debdbe54eb02d428015927fa748b1ad3ba'],3,10,13,2,,,
+2e34a03536ca2401e3d5fd86ac990b1768e7b763,Added asdf-astropy and asdf testing ci workflow,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-23 18:08:27-05:00,18000,2022-02-23 18:14:20-05:00,18000,True,False,"['ci.yml', 'pyproject.toml']",['846fce82acde1386c7f7f0b0eec18e92906280db'],0,74,74,2,,,
+a7729b9a187852157882706ab9c1320b876b6495,Added a gitattributes,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-02-23 18:15:28-05:00,18000,2022-02-23 18:17:32-05:00,18000,True,False,"['.gitattributes', 'pyproject.toml']",['2e34a03536ca2401e3d5fd86ac990b1768e7b763'],0,6,6,2,,,
+47e7754c5aaf2d7d3ea49314ad7a90f647373ab6,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/pre-commit-hooks: v4.1.0 → v4.2.0](https://github.com/pre-commit/pre-commit-hooks/compare/v4.1.0...v4.2.0)
+- [github.com/psf/black: 22.1.0 → 22.3.0](https://github.com/psf/black/compare/22.1.0...22.3.0)
+- https://gitlab.com/pycqa/flake8 → https://github.com/PyCQA/flake8
+- [github.com/PyCQA/bandit: 1.7.2 → 1.7.4](https://github.com/PyCQA/bandit/compare/1.7.2...1.7.4)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-04-11 22:09:02+00:00,0,2022-04-11 22:09:02+00:00,0,True,False,['.pre-commit-config.yaml'],['116cc6576c3dcc33a9882069ecfc20fd6bf31605'],4,4,8,1,,,
+bae75003f8cdf91caffa1367273989dd93ef51b7,Add initial documentation,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-06-08 11:37:33-04:00,14400,2022-06-08 11:37:33-04:00,14400,True,False,"['Makefile', 'custom.css', 'logo.ico', 'logo.pdf', 'logo.png', 'base.rst', 'class.rst', 'module.rst', 'changes.rst', 'conf.py', 'index.rst', 'make.bat', 'setup.cfg']",['94aae1265fa9d8b29378faf0fdd019eaedf1ffa8'],0,575,575,13,1.0,1.0,1.0
+72b03c02cbb8c905657e2cd85811b8cf938b1775,Added contributing pages,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-06-08 11:57:06-04:00,14400,2022-06-08 11:57:06-04:00,14400,True,False,"['CONTRIBUTING.rst', 'contributing.rst', 'index.rst']",['bae75003f8cdf91caffa1367273989dd93ef51b7'],0,28,28,3,,,
+7836de72e35e645bba47782ec8827bfd98ad0795,Add schemas to documentation,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-06-08 12:08:24-04:00,14400,2022-06-08 12:08:24-04:00,14400,True,False,"['.gitignore', 'coordinates.rst', 'frames.rst', 'index.rst', 'legacy.rst']",['72b03c02cbb8c905657e2cd85811b8cf938b1775'],0,51,51,5,,,
+403ed9aa631082dba43ba92bd87ac1ce06290acd,Add manifests,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-06-08 12:11:28-04:00,14400,2022-06-08 12:11:28-04:00,14400,True,False,"['index.rst', 'manifests.rst']",['7836de72e35e645bba47782ec8827bfd98ad0795'],0,13,13,2,,,
+3f948a9ae68951929388cf38df922e0ccbe825c4,Add RTD config,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-06-08 12:11:36-04:00,14400,2022-06-08 12:11:36-04:00,14400,True,False,['.readthedocs.yml'],['403ed9aa631082dba43ba92bd87ac1ce06290acd'],0,20,20,1,,,
+32b9b85aa911e18c8458ae3bd0b4d2a4490d315a,Update changes,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-06-08 12:25:35-04:00,14400,2022-06-08 12:25:35-04:00,14400,True,False,['CHANGES.rst'],['3f948a9ae68951929388cf38df922e0ccbe825c4'],0,5,5,1,,,
+575fb4aaff43097dd571cb5c550585bdcacbbb05,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/pre-commit-hooks: v4.2.0 → v4.3.0](https://github.com/pre-commit/pre-commit-hooks/compare/v4.2.0...v4.3.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-06-13 23:15:19+00:00,0,2022-06-13 23:15:19+00:00,0,True,False,['.pre-commit-config.yaml'],['aa8b81c8006a0768f8c026ecbd48152d89422e03'],1,1,2,1,,,
+5df3b567379ddf9cab2b813db997df7dc68eadee,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 22.3.0 → 22.6.0](https://github.com/psf/black/compare/22.3.0...22.6.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-07-04 23:22:49+00:00,0,2022-07-04 23:22:49+00:00,0,True,False,['.pre-commit-config.yaml'],['df5633214ec6f837124b89654efc2e8e77ad9ca9'],1,1,2,1,,,
+87aea57946c3397f0be59184d894f842af3e4738,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/flake8: 4.0.1 → 5.0.2](https://github.com/PyCQA/flake8/compare/4.0.1...5.0.2)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-08-02 00:05:21+00:00,0,2022-08-02 00:05:21+00:00,0,True,False,['.pre-commit-config.yaml'],['32acaab91145bf2f33e94941b1ff2acffc864cc5'],1,1,2,1,,,
+6ab6e23498dadd83c945626092be7091d30938bd,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/flake8: 5.0.2 → 5.0.4](https://github.com/PyCQA/flake8/compare/5.0.2...5.0.4)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-08-08 23:45:14+00:00,0,2022-08-08 23:45:14+00:00,0,True,False,['.pre-commit-config.yaml'],['869db64faae66349bc928ff71bd8b243c68095fe'],1,1,2,1,,,
+51ba3d522dfa922cf898cef5162ac818266dc8ca,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 22.6.0 → 22.8.0](https://github.com/psf/black/compare/22.6.0...22.8.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-09-06 00:19:53+00:00,0,2022-09-06 00:19:53+00:00,0,True,False,['.pre-commit-config.yaml'],['32308a116a60cf95b6e081510ec9bfaef438d4d2'],1,1,2,1,,,
+4eeb5e965b9c06bfaa149f44933e514d623ba29d,Fix CI,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-09-06 14:46:28-04:00,14400,2022-09-06 14:46:28-04:00,14400,True,False,['ci.yml'],['455fe0b76af230546a2b6a5d71da7cb23ecc9055'],5,0,5,1,,,
+e4e048288b61140ee075b0180b66c5d5dfce11ae,Update supported asdf and python versions,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-09-06 14:47:51-04:00,14400,2022-09-06 14:47:51-04:00,14400,True,False,['setup.cfg'],['4eeb5e965b9c06bfaa149f44933e514d623ba29d'],2,2,4,1,,,
+7b7656d7c23f6ca44a4dcc753f0034e1a480da2f,Update changes,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-09-06 14:49:43-04:00,14400,2022-09-06 14:49:43-04:00,14400,True,False,['CHANGES.rst'],['e4e048288b61140ee075b0180b66c5d5dfce11ae'],1,2,3,1,,,
+5b39e7e2328a58743e1ed89ed2e3df8edc21d1ab,Move to a pyproject.toml config,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-09-06 15:26:58-04:00,14400,2022-09-06 15:29:31-04:00,14400,True,False,"['.flake8', 'pyproject.toml', 'setup.cfg', 'setup.py', 'tox.ini']",['e8cc3bdfbe0ebaab380907b6d7f80ef1929e15bf'],80,74,154,5,0.0,0.0,0.0
+2297693e2350ee4f6f0f7f2f005f9e5330628e96,Update docs config for toml,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-09-06 15:37:26-04:00,14400,2022-09-06 15:42:20-04:00,14400,True,False,"['conf.py', 'pyproject.toml']",['5b39e7e2328a58743e1ed89ed2e3df8edc21d1ab'],48,16,64,2,,,
+a715347cebe2dc0de83a3cf6643ae1c41c4e2b66,Update changes,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-09-06 15:49:05-04:00,14400,2022-09-06 15:49:05-04:00,14400,True,False,['CHANGES.rst'],['2297693e2350ee4f6f0f7f2f005f9e5330628e96'],0,1,1,1,,,
+c3a222be2cd44ea771e31f005a2cd268f5874e6c,Clean up flake8,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-09-06 16:10:16-04:00,14400,2022-09-06 16:10:16-04:00,14400,True,False,"['.flake8', '.pre-commit-config.yaml']",['a715347cebe2dc0de83a3cf6643ae1c41c4e2b66'],1,7,8,2,,,
+0b1ef5e71a9e1cf0326294adbcae3dca17c75530,Enable pyupgrade,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-09-06 16:11:06-04:00,14400,2022-09-06 16:11:06-04:00,14400,True,False,"['.pre-commit-config.yaml', 'conf.py']",['c3a222be2cd44ea771e31f005a2cd268f5874e6c'],1,7,8,2,,,
+b5bcb8843a9d711c853d209fd5c0f987b26b632a,Enable blacken-docs,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-09-06 16:11:45-04:00,14400,2022-09-06 16:11:45-04:00,14400,True,False,['.pre-commit-config.yaml'],['0b1ef5e71a9e1cf0326294adbcae3dca17c75530'],0,5,5,1,,,
+8c984b3508a52a2f6deec6ae136d48d7aae67b3e,Update from autoflake8 to autoflake,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-09-10 23:07:14-04:00,14400,2022-09-10 23:07:14-04:00,14400,True,False,['.pre-commit-config.yaml'],['b5bcb8843a9d711c853d209fd5c0f987b26b632a'],3,3,6,1,,,
+fa74856b4138e2f5dd8b9f1b7eee6813613ce57b,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v2.37.3 → v2.38.0](https://github.com/asottile/pyupgrade/compare/v2.37.3...v2.38.0)
+- [github.com/PyCQA/autoflake: v1.5.3 → v1.6.0](https://github.com/PyCQA/autoflake/compare/v1.5.3...v1.6.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-09-20 00:06:18+00:00,0,2022-09-20 00:06:18+00:00,0,True,False,['.pre-commit-config.yaml'],['5a30dd4eab518f211ba92612717b1ef2c13b20b1'],2,2,4,1,,,
+26ed05fa3989aa9bee31e52d0757218ae8204bfc,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v2.38.0 → v2.38.2](https://github.com/asottile/pyupgrade/compare/v2.38.0...v2.38.2)
+- [github.com/PyCQA/autoflake: v1.6.0 → v1.6.1](https://github.com/PyCQA/autoflake/compare/v1.6.0...v1.6.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-09-27 00:17:03+00:00,0,2022-09-27 00:17:03+00:00,0,True,False,['.pre-commit-config.yaml'],['fa973f9e91aa2a20d11352a528e729953f0cf00a'],2,2,4,1,,,
+f0c4de2ca7b58d2b6bba4d830b7957143e9ccd99,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v2.38.2 → v3.1.0](https://github.com/asottile/pyupgrade/compare/v2.38.2...v3.1.0)
+- [github.com/PyCQA/autoflake: v1.6.1 → v1.7.2](https://github.com/PyCQA/autoflake/compare/v1.6.1...v1.7.2)
+- [github.com/psf/black: 22.8.0 → 22.10.0](https://github.com/psf/black/compare/22.8.0...22.10.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-11 01:23:26+00:00,0,2022-10-11 01:23:26+00:00,0,True,False,['.pre-commit-config.yaml'],['8486aeeffb0f24c05f01a9e5d79ea0439579712b'],3,3,6,1,,,
+b374ecb57ae836a2be54dc094642d10290895ae0,Update .pre-commit-config.yaml,William Jamieson,wjamieson@stsci.edu,GitHub,noreply@github.com,2022-10-10 23:41:26-04:00,14400,2022-10-10 23:41:26-04:00,14400,True,False,['.pre-commit-config.yaml'],['f0c4de2ca7b58d2b6bba4d830b7957143e9ccd99'],1,1,2,1,,,
+3ca8763a68374c162361ced16ffefe48afb33fc1,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/autoflake: v1.7.3 → v1.7.6](https://github.com/PyCQA/autoflake/compare/v1.7.3...v1.7.6)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-18 00:31:56+00:00,0,2022-10-18 00:31:56+00:00,0,True,False,['.pre-commit-config.yaml'],['0b02fb3b0d62aa07515f4db216b186206c2f20df'],1,1,2,1,,,
+6e8afc23b48aa612c96c9b074dc32ec6dbc9db9d,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/autoflake: v1.7.6 → v1.7.7](https://github.com/PyCQA/autoflake/compare/v1.7.6...v1.7.7)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-24 23:56:12+00:00,0,2022-10-24 23:56:12+00:00,0,True,False,['.pre-commit-config.yaml'],['b54484c16acb77e8ded0af6731fcb0aad226ded0'],1,1,2,1,,,
+a5c3f337fe3ba46d7401ddfeb71c91fb93cf9f37,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.1.0 → v3.2.0](https://github.com/asottile/pyupgrade/compare/v3.1.0...v3.2.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-11-01 00:51:27+00:00,0,2022-11-01 00:51:27+00:00,0,True,False,['.pre-commit-config.yaml'],['0040393c1e1de5cdae735da28595785007ba1369'],1,1,2,1,,,
+4183f67ac2cb8747977c73748e96b480da07afd0,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.2.0 → v3.2.2](https://github.com/asottile/pyupgrade/compare/v3.2.0...v3.2.2)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-11-15 00:56:27+00:00,0,2022-11-15 00:56:27+00:00,0,True,False,['.pre-commit-config.yaml'],['0ac70b13f45bae068d3136c9975e35d0d565d8e3'],1,1,2,1,,,
+1ee37a7cfe9a692f1f5f3be74016aec11ba298b9,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/pre-commit-hooks: v4.3.0 → v4.4.0](https://github.com/pre-commit/pre-commit-hooks/compare/v4.3.0...v4.4.0)
+- [github.com/PyCQA/autoflake: v1.7.7 → v2.0.0](https://github.com/PyCQA/autoflake/compare/v1.7.7...v2.0.0)
+- [github.com/PyCQA/flake8: 5.0.4 → 6.0.0](https://github.com/PyCQA/flake8/compare/5.0.4...6.0.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-11-29 02:47:15+00:00,0,2022-11-29 02:47:15+00:00,0,True,False,['.pre-commit-config.yaml'],['b57d28b439114b07997e79a2130c6fa4dbea6259'],3,3,6,1,,,
+01444c84e5b63281e99b2219cc793f92426a221e,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.2.2 → v3.3.0](https://github.com/asottile/pyupgrade/compare/v3.2.2...v3.3.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-06 01:18:37+00:00,0,2022-12-06 01:18:37+00:00,0,True,False,['.pre-commit-config.yaml'],['9cd3f6c8fa259567429effe6fce169eed3f8f739'],1,1,2,1,,,
+4cf5175bfc1d321785758a5f6da91dfa74ff40b4,Fix tox,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2022-12-12 21:26:20-05:00,18000,2022-12-12 21:26:20-05:00,18000,True,False,['tox.ini'],['c84e6c08cd2ba1a3c70822344be2341fc9908559'],1,1,2,1,,,
+e3f732fdae62a20170612688d88f63c27a83d743,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.3.0 → v3.3.1](https://github.com/asottile/pyupgrade/compare/v3.3.0...v3.3.1)
+- [github.com/pycqa/isort: 5.10.1 → 5.11.1](https://github.com/pycqa/isort/compare/5.10.1...5.11.1)
+- [github.com/psf/black: 22.10.0 → 22.12.0](https://github.com/psf/black/compare/22.10.0...22.12.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,William Jamieson,wjamieson@stsci.edu,2022-12-13 02:15:56+00:00,0,2022-12-13 09:14:58-05:00,18000,True,False,['.pre-commit-config.yaml'],['f2c5ebb8e23bd98cdc0e07aabe54d2ffd80b6724'],3,3,6,1,,,
+66b9ac7e9ecf82a674045fce3c8e8122707b8a72,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pycqa/isort: 5.11.1 → v5.11.3](https://github.com/pycqa/isort/compare/5.11.1...v5.11.3)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-20 02:17:14+00:00,0,2022-12-20 02:17:14+00:00,0,True,False,['.pre-commit-config.yaml'],['288203bc9160886cbf177ef567ad9cdf46ada827'],1,1,2,1,,,
+9d410a70a365992f635c60f37cbf6f89e987f4e4,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pycqa/isort: v5.11.3 → 5.11.4](https://github.com/pycqa/isort/compare/v5.11.3...5.11.4)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-27 03:14:13+00:00,0,2022-12-27 03:14:13+00:00,0,True,False,['.pre-commit-config.yaml'],['e61d96a444ca3ad93282dd6ea55df3c3656b6d3c'],1,1,2,1,,,
+654cf694a11df68463fb7fcf70e1aa18614e3ec4,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/blacken-docs: v1.12.1 → 1.13.0](https://github.com/asottile/blacken-docs/compare/v1.12.1...1.13.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-01-17 03:24:20+00:00,0,2023-01-17 03:24:20+00:00,0,True,False,['.pre-commit-config.yaml'],['c0d0d4ff48ae914742e7871ff6fd5122585a9e23'],1,1,2,1,,,
+fe7f31ba4c423fd21f3fc7df133e0dc19e5765ce,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/autoflake: v2.0.0 → v2.0.2](https://github.com/PyCQA/autoflake/compare/v2.0.0...v2.0.2)
+- [github.com/pycqa/isort: 5.11.4 → 5.12.0](https://github.com/pycqa/isort/compare/5.11.4...5.12.0)
+- [github.com/psf/black: 22.12.0 → 23.1.0](https://github.com/psf/black/compare/22.12.0...23.1.0)
+- [github.com/PyCQA/bandit: 1.7.4 → 1.7.5](https://github.com/PyCQA/bandit/compare/1.7.4...1.7.5)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-03-14 05:16:18+00:00,0,2023-03-14 05:16:18+00:00,0,True,False,['.pre-commit-config.yaml'],['ac1f3b0597f77cd9432019782820ac009ec4d5e4'],4,4,8,1,,,
+cf5f0743829764993b33da3fdee000e23421c2dd,Update changes,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2023-03-21 10:23:36-04:00,14400,2023-03-21 10:23:36-04:00,14400,True,False,['CHANGES.rst'],['0a61f04fd9d87cc5a273411b1bc626212d93645e'],1,1,2,1,,,
+2dae1cd68878d663e84f1eb04d7d0ede14e355db,Fix the long-description,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2023-03-21 11:01:14-04:00,14400,2023-03-21 11:01:14-04:00,14400,True,False,['pyproject.toml'],['f03b33d909e678f6f6b5d8638de29890dce23e28'],1,1,2,1,,,
+5969dcffbe16d9954b9fcbb4eac22a4cbf2ee0a0,Add asdf-astropy as test dependency,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2023-03-31 10:22:05-04:00,14400,2023-03-31 10:22:05-04:00,14400,True,False,['pyproject.toml'],['8ec334162efad82bc50c7ddcd2bc39a80d1544b3'],0,1,1,1,,,
+5da4667f98bae22e183bb19f4d04589629538830,Update changes,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2023-03-31 10:29:00-04:00,14400,2023-03-31 10:29:00-04:00,14400,True,False,['CHANGES.rst'],['5969dcffbe16d9954b9fcbb4eac22a4cbf2ee0a0'],0,5,5,1,,,
+ed4ff741ca1e2fcbf0e612950ebd6af035191818,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.1.0 → 23.3.0](https://github.com/psf/black/compare/23.1.0...23.3.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-04-04 07:49:10+00:00,0,2023-04-04 07:49:10+00:00,0,True,False,['.pre-commit-config.yaml'],['b4b050befa3ff41240ae988f9a521e11162f0a23'],1,1,2,1,,,
+a8084ee1e5628251d51469c596b5068bd2848b17,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/autoflake: v2.0.2 → v2.1.0](https://github.com/PyCQA/autoflake/compare/v2.0.2...v2.1.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-04-18 03:49:13+00:00,0,2023-04-18 03:49:13+00:00,0,True,False,['.pre-commit-config.yaml'],['f6ed77ba8007ba907f29e22b494b04abb6f0bc4a'],1,1,2,1,,,
+59f52bbaed12031e642835c7cfcaa03d1e9298de,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.3.1 → v3.3.2](https://github.com/asottile/pyupgrade/compare/v3.3.1...v3.3.2)
+- [github.com/PyCQA/autoflake: v2.1.0 → v2.1.1](https://github.com/PyCQA/autoflake/compare/v2.1.0...v2.1.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-04-25 05:34:05+00:00,0,2023-04-25 05:34:05+00:00,0,True,False,['.pre-commit-config.yaml'],['a848a6d907aea470644c7261cd2be70f313c0950'],2,2,4,1,,,
+c8999f4ab200c2171c3ebd3b078f193f2941f22f,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.3.2 → v3.4.0](https://github.com/asottile/pyupgrade/compare/v3.3.2...v3.4.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-09 06:22:58+00:00,0,2023-05-09 06:22:58+00:00,0,True,False,['.pre-commit-config.yaml'],['2b72c62a22f862442cea998043296b9d1dad10f5'],1,1,2,1,,,
+58e3432ed1ea81848c8bd737cf78d23216b1c7c4,Drop astropy dev testing now that astropy.io.misc.asdf is gone,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2023-05-23 14:43:41-04:00,14400,2023-05-23 14:43:41-04:00,14400,True,False,['ci.yml'],['533d6eee646c197bd2ce7d818596c861c1b692b6'],29,0,29,1,,,
+4fcb056eb361612b872d2dc110b34029745ac993,Drop python 3.8 support and add support for 3.11,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2023-05-23 14:46:39-04:00,14400,2023-05-23 16:33:17-04:00,14400,True,False,"['ci.yml', 'pyproject.toml']",['971198c2683fe74f484684eb2bb6ea1a00f8c47e'],7,7,14,2,,,
+72f36492ba88ce24378f39c68233b5b214b45a46,Update changes,William Jamieson,wjamieson@stsci.edu,William Jamieson,wjamieson@stsci.edu,2023-05-23 14:48:22-04:00,14400,2023-05-23 16:33:17-04:00,14400,True,False,['CHANGES.rst'],['4fcb056eb361612b872d2dc110b34029745ac993'],0,1,1,1,,,
+adc13493b8b30c8cd36a921f8046db72343c40b3,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.4.0 → v3.6.0](https://github.com/asottile/pyupgrade/compare/v3.4.0...v3.6.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-13 06:21:27+00:00,0,2023-06-13 06:21:27+00:00,0,True,False,['.pre-commit-config.yaml'],['971198c2683fe74f484684eb2bb6ea1a00f8c47e'],1,1,2,1,,,
+ad87f1eb89a956dc9f8a5c5e8ca3deb48e185da3,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.6.0 → v3.7.0](https://github.com/asottile/pyupgrade/compare/v3.6.0...v3.7.0)
+- [github.com/asottile/blacken-docs: 1.13.0 → 1.14.0](https://github.com/asottile/blacken-docs/compare/1.13.0...1.14.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-20 07:02:18+00:00,0,2023-06-20 07:02:18+00:00,0,True,False,['.pre-commit-config.yaml'],['2920a2e73e14b120bfe431d25c99819ab5f10cd1'],2,2,4,1,,,
+a1bd44b5103b032f3efbf07855eb685bbc25d283,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/autoflake: v2.1.1 → v2.2.0](https://github.com/PyCQA/autoflake/compare/v2.1.1...v2.2.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-27 06:10:25+00:00,0,2023-06-27 06:10:25+00:00,0,True,False,['.pre-commit-config.yaml'],['4dd506154a8ed4b6d8138e78af91cab548c3408a'],1,1,2,1,,,
+a9dfba186a7f57d22cb34c58fd93dbf8041d9c7d,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.7.0 → v3.8.0](https://github.com/asottile/pyupgrade/compare/v3.7.0...v3.8.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-04 07:54:39+00:00,0,2023-07-04 07:54:39+00:00,0,True,False,['.pre-commit-config.yaml'],['6d3a092cb216a6f96ed4ce6027df0410ed719c99'],1,1,2,1,,,
+966fc66ad95e881325e678d201ab140901027fb1,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.8.0 → v3.9.0](https://github.com/asottile/pyupgrade/compare/v3.8.0...v3.9.0)
+- [github.com/psf/black: 23.3.0 → 23.7.0](https://github.com/psf/black/compare/23.3.0...23.7.0)
+- [github.com/asottile/blacken-docs: 1.14.0 → 1.15.0](https://github.com/asottile/blacken-docs/compare/1.14.0...1.15.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-11 08:16:41+00:00,0,2023-07-11 08:16:41+00:00,0,True,False,['.pre-commit-config.yaml'],['e959dd05ac2351a5fbc0ab382a5306c49c70f60f'],3,3,6,1,,,
+ef0ebf93be5f85e3bf57f4d524968109aa047bd8,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.9.0 → v3.10.1](https://github.com/asottile/pyupgrade/compare/v3.9.0...v3.10.1)
+- [github.com/PyCQA/flake8: 6.0.0 → 6.1.0](https://github.com/PyCQA/flake8/compare/6.0.0...6.1.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-01 10:23:54+00:00,0,2023-08-01 10:23:54+00:00,0,True,False,['.pre-commit-config.yaml'],['b23f694af669003fd7170fe3582de07d2e70668e'],2,2,4,1,,,
+a63970d4aa3cf964114106c27499e195b5836929,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/blacken-docs: 1.15.0 → 1.16.0](https://github.com/asottile/blacken-docs/compare/1.15.0...1.16.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-22 09:08:54+00:00,0,2023-08-22 09:08:54+00:00,0,True,False,['.pre-commit-config.yaml'],['b63f0946a10ecf18bda1833b33a8212cef8d9aec'],1,1,2,1,,,
+dd644d484b427dcf47e1f91b01869cf53579492d,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/autoflake: v2.2.0 → v2.2.1](https://github.com/PyCQA/autoflake/compare/v2.2.0...v2.2.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-05 09:53:07+00:00,0,2023-09-05 09:53:07+00:00,0,True,False,['.pre-commit-config.yaml'],['b7de5030f86f3239d4ce6986dcbbc464603271af'],1,1,2,1,,,
+7921e10008e3d29b40433f4e2c1cc17daa2d7f22,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.7.0 → 23.9.1](https://github.com/psf/black/compare/23.7.0...23.9.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-12 11:09:37+00:00,0,2023-09-12 11:09:37+00:00,0,True,False,['.pre-commit-config.yaml'],['3070ab51e0fee7a1654194c9ed69b14fddaff180'],1,1,2,1,,,
+1b2e1ed98c26ec1522dcf6f5c3c2ba6268841fa9,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/pyupgrade: v3.10.1 → v3.13.0](https://github.com/asottile/pyupgrade/compare/v3.10.1...v3.13.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-26 10:27:10+00:00,0,2023-09-26 10:27:10+00:00,0,True,False,['.pre-commit-config.yaml'],['61e81283222b3a462419d824efeb9dfa427be3b2'],1,1,2,1,,,
+57fd76b1204796a53c32ad18d0208ab83021c660,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/pre-commit-hooks: v4.4.0 → v4.5.0](https://github.com/pre-commit/pre-commit-hooks/compare/v4.4.0...v4.5.0)
+- [github.com/asottile/pyupgrade: v3.13.0 → v3.15.0](https://github.com/asottile/pyupgrade/compare/v3.13.0...v3.15.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-09 21:24:10+00:00,0,2023-10-09 21:24:10+00:00,0,True,False,['.pre-commit-config.yaml'],['921b03116e84521f384c61985924d9f2cb708e7b'],2,2,4,1,,,
+4cd27ca81bca386d78d4ad813756251155182ee8,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.9.1 → 23.10.1](https://github.com/psf/black/compare/23.9.1...23.10.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-23 21:16:39+00:00,0,2023-10-23 21:16:39+00:00,0,True,False,['.pre-commit-config.yaml'],['354263c7761832c7653819e028393e5b95460b81'],1,1,2,1,,,

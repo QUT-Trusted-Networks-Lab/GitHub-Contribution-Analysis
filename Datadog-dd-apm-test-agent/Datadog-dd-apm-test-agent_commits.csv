@@ -1,0 +1,625 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+512f8edaab323495455afba18c9eccbc64ee810b,add trace handler,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-07 16:57:45-04:00,14400,2020-06-07 16:57:45-04:00,14400,True,False,"['.gitignore', 'README.md', 'project.clj', 'handler.clj', 'handler_test.clj']",[],0,145,145,5,,,
+42d32edb8e6320bc3583d36c79b0ebe53f50b095,parse and add some validators on traces,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-08 00:37:29-04:00,14400,2020-06-08 00:37:29-04:00,14400,True,False,"['project.clj', 'handler.clj']",['512f8edaab323495455afba18c9eccbc64ee810b'],17,54,71,2,,,
+947cf75fd30c112a50fb3788adaf87832fc1d935,fmt,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-08 00:41:45-04:00,14400,2020-06-08 00:41:45-04:00,14400,True,False,['handler.clj'],['42d32edb8e6320bc3583d36c79b0ebe53f50b095'],54,25,79,1,,,
+3b523fbf6e13cd31823314fce0d48f918cda7cad,add dockerfile,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-08 00:46:42-04:00,14400,2020-06-08 00:46:42-04:00,14400,True,False,['Dockerfile'],['947cf75fd30c112a50fb3788adaf87832fc1d935'],0,9,9,1,,,
+5a60167c21fbbe592df94b6f303741f594ef43ed,fix dependencies,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-08 00:59:23-04:00,14400,2020-06-08 00:59:23-04:00,14400,True,False,"['Dockerfile', 'README.md', 'project.clj']",['3b523fbf6e13cd31823314fce0d48f918cda7cad'],5,14,19,3,,,
+c9073d24d23f348c0089e4c76d8416609fee5ce2,add snapshot endpoint,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-19 00:40:22-04:00,14400,2020-06-19 00:40:22-04:00,14400,True,False,"['README.md', 'handler.clj']",['5a60167c21fbbe592df94b6f303741f594ef43ed'],11,64,75,2,,,
+d86fc9ab57325da49aa495da7abe80df383b0a39,add filehandling,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-19 02:41:34-04:00,14400,2020-06-19 02:41:34-04:00,14400,True,False,"['README.md', 'handler.clj']",['c9073d24d23f348c0089e4c76d8416609fee5ce2'],3,50,53,2,,,
+a50994bc312073fbe18e04d612f3ea2cc23d65cd,clear traces after snapshot,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-19 03:55:14-04:00,14400,2020-06-19 03:55:14-04:00,14400,True,False,['handler.clj'],['d86fc9ab57325da49aa495da7abe80df383b0a39'],9,34,43,1,,,
+cd3fbb1191ca75560398a651450934d5bf3ba3a4,sort child spans,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-19 04:12:18-04:00,14400,2020-06-19 04:12:39-04:00,14400,True,False,['handler.clj'],['a50994bc312073fbe18e04d612f3ea2cc23d65cd'],2,3,5,1,,,
+83290d2bf9b8d62c17e2b8213267403d50784c36,add trace matching,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-20 21:19:11-04:00,14400,2020-06-20 21:19:11-04:00,14400,True,False,['handler.clj'],['cd3fbb1191ca75560398a651450934d5bf3ba3a4'],43,59,102,1,,,
+ed6d4650eedb89972e5aa22f95e8543243492eb7,add matching check,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 00:25:10-04:00,14400,2020-06-21 00:25:10-04:00,14400,True,False,['handler.clj'],['83290d2bf9b8d62c17e2b8213267403d50784c36'],27,46,73,1,,,
+c6702fca55ffb8a51d71ee560799ab2aef521a4b,prettyprint to file,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 00:37:44-04:00,14400,2020-06-21 00:37:44-04:00,14400,True,False,['handler.clj'],['ed6d4650eedb89972e5aa22f95e8543243492eb7'],2,2,4,1,,,
+95544d91a946f7d5d47a57599330f8af568c497a,fix unmatched check,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 02:58:59-04:00,14400,2020-06-21 02:58:59-04:00,14400,True,False,['handler.clj'],['c6702fca55ffb8a51d71ee560799ab2aef521a4b'],18,14,32,1,,,
+afcce4efb3d693969b629ac9358a38d2a7e7e1ae,include traces in mismatch errors,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 03:10:36-04:00,14400,2020-06-21 03:10:36-04:00,14400,True,False,['handler.clj'],['95544d91a946f7d5d47a57599330f8af568c497a'],4,7,11,1,,,
+61b0fb8300b0f95ca09a82eb4113a3c0c64c1d9b,add snapshot path to info,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 03:16:52-04:00,14400,2020-06-21 03:16:52-04:00,14400,True,False,['handler.clj'],['afcce4efb3d693969b629ac9358a38d2a7e7e1ae'],2,2,4,1,,,
+653a9b5a7dfcfb7d420fbc7e4098edb2419a87f2,add shape testing,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 04:26:09-04:00,14400,2020-06-21 04:26:09-04:00,14400,True,False,['handler.clj'],['61b0fb8300b0f95ca09a82eb4113a3c0c64c1d9b'],12,52,64,1,,,
+e6a8b38e717616738f3d244c0ece212cdebc2e8e,add shape render to message,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 04:30:45-04:00,14400,2020-06-21 04:30:45-04:00,14400,True,False,['handler.clj'],['653a9b5a7dfcfb7d420fbc7e4098edb2419a87f2'],1,2,3,1,,,
+f1fc29f83c44168bac4896cf170e3a2617b810c2,add features to readme,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 15:58:07-04:00,14400,2020-06-21 15:58:07-04:00,14400,True,False,"['README.md', 'handler.clj']",['e6a8b38e717616738f3d244c0ece212cdebc2e8e'],2,19,21,2,,,
+1eb7caf725bc64c33b2626272f832db0f84b49e3,add span diffing,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 17:22:35-04:00,14400,2020-06-21 17:22:35-04:00,14400,True,False,['handler.clj'],['f1fc29f83c44168bac4896cf170e3a2617b810c2'],5,64,69,1,,,
+f15d117a9f90b5302210962ae710df754cf014d2,complete metadata checking,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 18:51:37-04:00,14400,2020-06-21 18:51:37-04:00,14400,True,False,"['README.md', 'handler.clj']",['1eb7caf725bc64c33b2626272f832db0f84b49e3'],11,60,71,2,,,
+b2a844a87355449755d580b876bb9b0974d0d4c6,add exception context,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-21 19:15:50-04:00,14400,2020-06-21 19:15:50-04:00,14400,True,False,"['README.md', 'handler.clj']",['f15d117a9f90b5302210962ae710df754cf014d2'],12,21,33,2,,,
+fc75f2a2c0585745da62d0f64d5da131968d3686,more accurate trace matching,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-22 00:18:14-04:00,14400,2020-06-22 00:18:14-04:00,14400,True,False,['handler.clj'],['b2a844a87355449755d580b876bb9b0974d0d4c6'],18,13,31,1,,,
+5024643e05282271ded62cfb675d96797005af33,pretty trace->str,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-22 02:41:17-04:00,14400,2020-06-22 03:02:44-04:00,14400,True,False,['handler.clj'],['fc75f2a2c0585745da62d0f64d5da131968d3686'],45,57,102,1,,,
+eae44159d12be12a903e9a0d817638e79f532bf3,update python decorator,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-22 03:07:59-04:00,14400,2020-06-22 03:07:59-04:00,14400,True,False,"['README.md', 'handler.clj']",['5024643e05282271ded62cfb675d96797005af33'],5,31,36,2,,,
+57028db3ea5d5835de27ff0d22b8386164a965ab,account for meta and metrics not existing,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-22 03:58:57-04:00,14400,2020-06-22 03:58:57-04:00,14400,True,False,['handler.clj'],['eae44159d12be12a903e9a0d817638e79f532bf3'],9,14,23,1,,,
+59f3608ecd46f918603ddd68a6c1db7c62075cf4,handle ignore tags from client,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-22 04:09:06-04:00,14400,2020-06-22 04:09:06-04:00,14400,True,False,['handler.clj'],['57028db3ea5d5835de27ff0d22b8386164a965ab'],17,18,35,1,,,
+54dc5b6fbedfdabbb145b6f53822fa511bb9c979,begin highlighting,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-22 04:38:16-04:00,14400,2020-06-22 04:38:16-04:00,14400,True,False,['handler.clj'],['59f3608ecd46f918603ddd68a6c1db7c62075cf4'],7,30,37,1,,,
+30c16e88aa466fee0b3a63f075ae61e8e27e5326,add traceset context,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-22 05:12:48-04:00,14400,2020-06-22 05:14:03-04:00,14400,True,False,['handler.clj'],['54dc5b6fbedfdabbb145b6f53822fa511bb9c979'],54,80,134,1,,,
+c988bae51b60fbe4b9ed0d0ce24e47a7655739c2,add todos,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-25 01:12:48-04:00,14400,2020-06-25 01:12:48-04:00,14400,True,False,"['README.md', 'handler.clj']",['30c16e88aa466fee0b3a63f075ae61e8e27e5326'],2,10,12,2,,,
+8dee1ec697da358e7c9a1a86e6e0f9ddb78052a0,"fix >2 children tree printing, multi trace printing",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-25 01:50:59-04:00,14400,2020-06-25 01:50:59-04:00,14400,True,False,['handler.clj'],['c988bae51b60fbe4b9ed0d0ce24e47a7655739c2'],11,14,25,1,,,
+202aebf08680a367b5115d0d612bfa333a79bb17,add synchronous start route,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-25 22:52:47-04:00,14400,2020-06-25 22:52:47-04:00,14400,True,False,"['README.md', 'handler.clj']",['8dee1ec697da358e7c9a1a86e6e0f9ddb78052a0'],12,51,63,2,,,
+fc2b91e4be4e76e1e11d7ae33b09869cc8f5a776,handle synchronous tests,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-25 23:31:39-04:00,14400,2020-06-25 23:31:39-04:00,14400,True,False,"['README.md', 'handler.clj']",['202aebf08680a367b5115d0d612bfa333a79bb17'],16,25,41,2,,,
+ee2d0ba6e9f5dde7e38e6bf4ea4186396021e1d6,add file and directory overrides,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-26 00:16:23-04:00,14400,2020-06-26 00:16:23-04:00,14400,True,False,['handler.clj'],['fc2b91e4be4e76e1e11d7ae33b09869cc8f5a776'],6,12,18,1,,,
+f2c1ee311cd38960bfce2b0f2b496fc08e08e54e,"reorganize readme, begin documenting",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-26 00:16:51-04:00,14400,2020-06-26 00:16:51-04:00,14400,True,False,['README.md'],['ee2d0ba6e9f5dde7e38e6bf4ea4186396021e1d6'],61,133,194,1,,,
+c7dd5858f80e995d26c6ff792c792045d57bccab,rename dbug -> test agent,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-26 12:48:41-04:00,14400,2020-06-26 12:48:41-04:00,14400,True,False,"['README.md', 'project.clj', 'handler.clj', 'handler_test.clj']",['f2c1ee311cd38960bfce2b0f2b496fc08e08e54e'],11,11,22,4,,,
+2a4cff5059284c810c7f58b92e84f5cd8465b7ce,use 8126 as the default port,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-26 13:30:05-04:00,14400,2020-06-26 13:30:05-04:00,14400,True,False,"['README.md', 'project.clj', 'handler.clj']",['c7dd5858f80e995d26c6ff792c792045d57bccab'],2,17,19,3,,,
+01dcd7989882905c58937e6f153191f322206043,expose port,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-26 13:33:25-04:00,14400,2020-06-26 13:33:25-04:00,14400,True,False,['Dockerfile'],['2a4cff5059284c810c7f58b92e84f5cd8465b7ce'],0,2,2,1,,,
+2ba040cc598d45ab304f72ce9a80d925f7fe5264,add docker publish action,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-26 13:38:48-04:00,14400,2020-06-26 13:46:16-04:00,14400,True,False,['docker.yml'],['01dcd7989882905c58937e6f153191f322206043'],0,16,16,1,,,
+fef92c13be9a89ad0e0bdb4e70c47db6a440daa5,add todo,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-26 14:06:03-04:00,14400,2020-06-26 14:06:03-04:00,14400,True,False,['README.md'],['2ba040cc598d45ab304f72ce9a80d925f7fe5264'],0,1,1,1,,,
+452b5fb85baeca0532d962dd50d0008b6c8d4c98,fix file check; add debug printing,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-26 15:41:58-04:00,14400,2020-06-26 15:41:58-04:00,14400,True,False,['handler.clj'],['fef92c13be9a89ad0e0bdb4e70c47db6a440daa5'],3,9,12,1,,,
+191a8e431166802022de3fe9209c298c7e08640c,add usage docs,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-26 15:48:56-04:00,14400,2020-06-26 15:48:56-04:00,14400,True,False,['README.md'],['452b5fb85baeca0532d962dd50d0008b6c8d4c98'],0,18,18,1,,,
+af1026e6af400261a643583ec7dc20326ad4bc36,add CI mode,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-26 19:13:19-04:00,14400,2020-06-26 19:13:19-04:00,14400,True,False,['handler.clj'],['191a8e431166802022de3fe9209c298c7e08640c'],4,10,14,1,,,
+b32fdd2f6205457e3bd91ef42fbaa77137ec0d9d,"fix CI mode check, check for circular references",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-27 22:11:13-04:00,14400,2020-06-27 22:11:13-04:00,14400,True,False,['handler.clj'],['af1026e6af400261a643583ec7dc20326ad4bc36'],15,36,51,1,,,
+010e7986fb92e974198608609046598b6385242c,add git to dockerfile,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-27 22:13:12-04:00,14400,2020-06-27 22:13:12-04:00,14400,True,False,['Dockerfile'],['b32fdd2f6205457e3bd91ef42fbaa77137ec0d9d'],0,3,3,1,,,
+04878c9977439ee97f1dbae13bc52f3c427e0a0b,reorganize invariant check functions,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-27 23:16:49-04:00,14400,2020-06-27 23:16:49-04:00,14400,True,False,['handler.clj'],['010e7986fb92e974198608609046598b6385242c'],58,60,118,1,,,
+bd5b1f6d2e1689c4033aba2f8ffcb9e7325a223c,set token even if previous did not complete,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-28 03:10:36-04:00,14400,2020-06-28 03:10:36-04:00,14400,True,False,['handler.clj'],['04878c9977439ee97f1dbae13bc52f3c427e0a0b'],2,17,19,1,,,
+585a471128100d6d4365f9ee5cb14e9486e9392f,update README,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-28 03:11:52-04:00,14400,2020-06-28 03:11:52-04:00,14400,True,False,['README.md'],['bd5b1f6d2e1689c4033aba2f8ffcb9e7325a223c'],20,20,40,1,,,
+20ea14a7578151ea1c72f2f6457c389c3e6cd8a6,switch to proper logging,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-28 13:10:14-04:00,14400,2020-06-28 13:10:14-04:00,14400,True,False,['handler.clj'],['585a471128100d6d4365f9ee5cb14e9486e9392f'],18,21,39,1,,,
+22b9527319e2d804313cae0c419262b165acd9aa,formatting,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-28 13:12:29-04:00,14400,2020-06-28 13:13:10-04:00,14400,True,False,"['project.clj', 'handler.clj']",['20ea14a7578151ea1c72f2f6457c389c3e6cd8a6'],28,24,52,2,,,
+309ca8b06b4dedb8b286128c522161d02e09ea0e,add test workflow to ci,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-28 13:31:35-04:00,14400,2020-06-28 13:40:15-04:00,14400,True,False,"['format.yml', 'README.md', 'project.clj', 'handler_test.clj']",['22b9527319e2d804313cae0c419262b165acd9aa'],15,42,57,4,,,
+e254e8904e69bf8853837e3c9574885a312cbcac,switch auto-reloading mechanism,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-28 14:27:06-04:00,14400,2020-06-28 14:27:06-04:00,14400,True,False,"['README.md', 'project.clj', 'handler.clj', 'handler_test.clj']",['309ca8b06b4dedb8b286128c522161d02e09ea0e'],23,27,50,4,,,
+37d8f976e9dd95149776ac55f9cc293eecba3e43,add global exception handler,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-28 14:50:22-04:00,14400,2020-06-28 15:02:18-04:00,14400,True,False,"['README.md', 'handler.clj', 'handler_test.clj']",['e254e8904e69bf8853837e3c9574885a312cbcac'],33,37,70,3,,,
+41789c0d0f8dee12b9a551c8b74b71467c2bcb68,group traces for snapshots and diffing,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-28 22:29:16-04:00,14400,2020-06-28 22:31:04-04:00,14400,True,False,"['handler.clj', 'handler_test.clj']",['37d8f976e9dd95149776ac55f9cc293eecba3e43'],43,67,110,2,,,
+351e243c8208ec3ac20ae390d4a22288e9070d3b,begin implementing custom output format,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-29 01:15:03-04:00,14400,2020-06-29 01:15:03-04:00,14400,True,False,"['handler.clj', 'handler_test.clj']",['41789c0d0f8dee12b9a551c8b74b71467c2bcb68'],8,159,167,2,,,
+dfdb887451e94aa45d70159a09717c7fba85c7d2,implement ordered snapshot keys and indentation,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-29 03:11:46-04:00,14400,2020-06-29 03:11:46-04:00,14400,True,False,"['handler.clj', 'handler_test.clj']",['351e243c8208ec3ac20ae390d4a22288e9070d3b'],57,115,172,2,,,
+16645bfcaa10f6b00baeed4befd2c4215c3a8c11,implement ordered meta and metrics,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-29 15:16:51-04:00,14400,2020-06-29 15:16:51-04:00,14400,True,False,"['README.md', 'handler.clj', 'handler_test.clj']",['dfdb887451e94aa45d70159a09717c7fba85c7d2'],31,41,72,3,,,
+67bde1e98a215cc92615950f1d58da76f7dcd2ca,finally get indentation working properly,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-29 17:23:07-04:00,14400,2020-06-29 17:23:07-04:00,14400,True,False,"['handler.clj', 'handler_test.clj']",['16645bfcaa10f6b00baeed4befd2c4215c3a8c11'],21,27,48,2,,,
+15a4b8b7b4a615167e69bfdfbaa7581caedb86a8,hook up snapshot format,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-29 17:34:42-04:00,14400,2020-06-29 17:34:42-04:00,14400,True,False,"['handler.clj', 'handler_test.clj']",['67bde1e98a215cc92615950f1d58da76f7dcd2ca'],83,71,154,2,,,
+9484c8ca47921214f910ab2a6071e7384db62257,add additional tags,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-29 18:42:22-04:00,14400,2020-06-29 18:42:22-04:00,14400,True,False,['handler.clj'],['15a4b8b7b4a615167e69bfdfbaa7581caedb86a8'],3,11,14,1,,,
+aeb0c7267a7d07fab694e030cc68712f2f16c050,normalize trace and span ids,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-29 22:30:54-04:00,14400,2020-06-29 22:30:54-04:00,14400,True,False,['handler.clj'],['9484c8ca47921214f910ab2a6071e7384db62257'],6,19,25,1,,,
+6c0a185fa55b343585c78a49e62048205730f5ae,formatting,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-29 22:32:54-04:00,14400,2020-06-29 22:32:54-04:00,14400,True,False,['handler.clj'],['aeb0c7267a7d07fab694e030cc68712f2f16c050'],5,5,10,1,,,
+8279b1b6869c7cb627b991dfb1b7ccd463f73c85,increase the indent for child spans,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-29 22:57:43-04:00,14400,2020-06-29 22:57:43-04:00,14400,True,False,['handler.clj'],['6c0a185fa55b343585c78a49e62048205730f5ae'],1,1,2,1,,,
+0adb744afd9e111e4d6d3edc2e604fe38de2b70d,add more documentation,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-30 00:35:36-04:00,14400,2020-06-30 00:35:36-04:00,14400,True,False,"['README.md', 'handler.clj']",['8279b1b6869c7cb627b991dfb1b7ccd463f73c85'],32,74,106,2,,,
+404be1fa499ec13e8fdb9357c5d854f22b2ac3ce,organize features section of readme,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2020-06-30 02:37:41-04:00,14400,2020-06-30 02:37:41-04:00,14400,True,False,"['README.md', 'handler.clj']",['0adb744afd9e111e4d6d3edc2e604fe38de2b70d'],20,38,58,2,,,
+4e9677968fbdfa8f8cd52dbe4c5170661d6ff734,remove commented lines,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-03-31 22:49:07-04:00,14400,2021-03-31 22:49:07-04:00,14400,True,False,['handler.clj'],['404be1fa499ec13e8fdb9357c5d854f22b2ac3ce'],7,0,7,1,,,
+54e87351c301899eb8492b37c335985d5921ee6a,"handle 0 parent_id root spans
+
+Some clients use a parent_id of 0 to denote a root span.",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-03-31 23:30:23-04:00,14400,2021-03-31 23:30:23-04:00,14400,True,False,"['handler.clj', 'handler_test.clj']",['4e9677968fbdfa8f8cd52dbe4c5170661d6ff734'],15,24,39,2,,,
+fc780c181070e4796623438424a3296c226ce393,reply with valid v0.4 json,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-03-31 23:36:27-04:00,14400,2021-03-31 23:36:27-04:00,14400,True,False,['handler.clj'],['54e87351c301899eb8492b37c335985d5921ee6a'],1,1,2,1,,,
+bde8fe07d5a4324e8ddc76a62339fa88d171fbc5,fix multiple root span check,kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-03-31 23:38:33-04:00,14400,2021-03-31 23:38:33-04:00,14400,True,False,['handler.clj'],['fc780c181070e4796623438424a3296c226ce393'],1,1,2,1,,,
+b383dd79950c010ae8ae6503aba79f6443b9e75c,"fix ci
+
+Some github action features used by setup clojure action were removed.
+
+See https://github.com/DeLaGuardo/setup-clojure/issues/18 for details.",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-03-31 23:46:43-04:00,14400,2021-03-31 23:46:43-04:00,14400,True,False,['format.yml'],['bde8fe07d5a4324e8ddc76a62339fa88d171fbc5'],2,1,3,1,,,
+2edf1369b5ce69c6c925d4abedbb6071140a0144,"remove git from docker image
+
+This feature was experimental and unused.",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-04-06 18:07:37-04:00,14400,2021-04-06 18:07:37-04:00,14400,True,False,['Dockerfile'],['b383dd79950c010ae8ae6503aba79f6443b9e75c'],3,0,3,1,,,
+447636521de12e3792ac85d4c5412371b6efea67,"aot compile the jar
+
+The startup time of the test agent was bordering on 30s in some CI runs
+which isn't acceptable. AOT compiling helps a bit by cutting it down to
+~7 seconds locally on macOS.",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-04-06 18:08:46-04:00,14400,2021-04-06 18:08:46-04:00,14400,True,False,['project.clj'],['2edf1369b5ce69c6c925d4abedbb6071140a0144'],1,2,3,1,,,
+c7240331cbe2ec434f59e927d3486ec9aadcccef,"bump clojure version to 1.10.3
+
+There's an incompatibility with 1.10.1 and building with graalvm
+which has been fixed with later versions.",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-04-08 00:59:07-04:00,14400,2021-04-08 00:59:07-04:00,14400,True,False,['project.clj'],['447636521de12e3792ac85d4c5412371b6efea67'],1,1,2,1,,,
+a20501770e5c992e54ea7629801f9e12eab3425d,"add explicit main function
+
+Before, the entry point to the application was managed by ring. This is
+great for having the server be able to hotreload and other magic but it
+comes at the cost of maintainability when building the app.",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-04-08 01:03:19-04:00,14400,2021-04-08 01:03:19-04:00,14400,True,False,"['project.clj', 'handler.clj']",['c7240331cbe2ec434f59e927d3486ec9aadcccef'],3,11,14,2,,,
+aefec393b5922f546478eda0fb8952ecde5e2fd6,"simplify dockerfile
+
+- Use static jar name
+- Use lein uberjar rather than lein ring uberjar",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-04-08 01:09:50-04:00,14400,2021-04-08 01:09:50-04:00,14400,True,False,"['.dockerignore', 'Dockerfile', 'project.clj']",['a20501770e5c992e54ea7629801f9e12eab3425d'],6,8,14,3,,,
+0211c38af3d64e63e8a2a5ac672959b6af9c573a,"add native docker image using graalvm
+
+Using graalvm drastically decreases the startup time of the test agent
+from the order of seconds to single digit milliseconds.",kyle-verhoog,kyle@verhoog.ca,kyle-verhoog,kyle@verhoog.ca,2021-04-08 01:39:34-04:00,14400,2021-04-08 01:39:34-04:00,14400,True,False,"['docker.yml', 'Dockerfile.native']",['aefec393b5922f546478eda0fb8952ecde5e2fd6'],3,42,45,2,,,
+c5b3435b5a2c1f5dba69cfd55190905438ae8e09,"let port numbers be dynamically set
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",kevin.feng,kevin.feng@datadoghq.com,Kyle Verhoog,kyle.verhoog@datadoghq.com,2021-04-12 19:08:12-04:00,14400,2021-05-06 17:14:59-04:00,14400,True,False,"['README.md', 'handler.clj']",['0211c38af3d64e63e8a2a5ac672959b6af9c573a'],2,6,8,2,,,
+209cd5dcaa35083f6114bc90b6e98c8ce1ed7efd,handle arbitrary http methods for traces endpoint,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle.verhoog@datadoghq.com,2021-05-06 17:16:48-04:00,14400,2021-05-06 17:16:48-04:00,14400,True,False,['handler.clj'],['c5b3435b5a2c1f5dba69cfd55190905438ae8e09'],1,1,2,1,,,
+be790bbb09849d13784de71028508c995059f97e,"Rewrite in Python (#11)
+
+The test agent has been rewritten in Python for several reasons
+
+- More accessible to contributions. Python is basically pseudocode.
+- Start up cost. The startup cost of the JVM was too heavy which was not practical for CI environments.
+- Portability. While still not as portable as a binary, a Python interpreter is usually available or easy to acquire on developer and CI systems.
+
+Along the way a new system has been put in place to do arbitrary checks which can/will be extended to support testing various properties about APM data.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2021-09-09 12:16:05-04:00,14400,2021-09-09 12:16:05-04:00,14400,True,False,"['.dockerignore', 'docker.yml', 'format.yml', 'main.yml', 'publish_pypi.yml', '.gitignore', 'Dockerfile', 'Dockerfile.native', 'README.md', '__init__.py', 'agent.py', 'checks.py', 'context.py', 'snapshot.py', 'trace.py', 'trace_checks.py', 'docker-compose.yml', 'project.clj', 'pyproject.toml', 'config.yaml', '1.0-e192f5064e917083.yaml', 'riotfile.py', 'setup.cfg', 'setup.py', 'handler.clj', 'handler_test.clj', '__init__.py', 'conftest.py', 'test_multi_trace.json', 'test_single_trace.json', 'test_agent.py', 'test_checks.py', 'test_session.py', 'test_snapshot.py', 'test_snapshot_integration.py', 'test_trace.py', 'trace_utils.py']",['209cd5dcaa35083f6114bc90b6e98c8ce1ed7efd'],1045,2878,3923,37,0.34370257966616086,0.7556904400606981,0.7185128983308042
+197a7b469354d7d94aa9cff1a608bf6170940c14,Fix docker github action version,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle.verhoog@datadoghq.com,2021-09-09 12:24:21-04:00,14400,2021-09-09 12:24:21-04:00,14400,True,False,['docker.yml'],['be790bbb09849d13784de71028508c995059f97e'],2,2,4,1,,,
+7eb4a969caf1ecd66228967c2ef84e7f1acc9ac5,Fix container url in README,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle.verhoog@datadoghq.com,2021-09-09 12:27:36-04:00,14400,2021-09-09 12:27:36-04:00,14400,True,False,['README.md'],['197a7b469354d7d94aa9cff1a608bf6170940c14'],1,1,2,1,,,
+3c461c9a4abd5f31403a0f87b920a332fb2754f8,"Fix partial trace chunks
+
+Fixes #13.
+
+The pretty print method should be adapted to work with partial trace
+chunks but this is more work.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-09-15 22:12:15-04:00,14400,2021-09-15 22:16:40-04:00,14400,True,False,"['agent.py', 'test_trace_distributed_same_payload.json', 'test_snapshot_integration.py']",['7eb4a969caf1ecd66228967c2ef84e7f1acc9ac5'],4,100,104,3,0.0,1.0,1.0
+a2e8e6ca0ddb4f6e0447aca9ec6a27afc064aab2,"Order snapshot span representation
+
+This should make the spans more human readable by ordering the more
+important attributes first.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-09-15 22:54:05-04:00,14400,2021-09-16 11:26:51-04:00,14400,True,False,"['snapshot.py', 'test_multi_trace.json', 'test_single_trace.json', 'test_snapshot.py']",['3c461c9a4abd5f31403a0f87b920a332fb2754f8'],63,92,155,4,0.0,1.0,1.0
+606528f6de788be025419f41b7c9732ac64259aa,Add missing release notes,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-09-16 14:41:47-04:00,14400,2021-09-16 14:47:18-04:00,14400,True,False,"['fix-partial-chunks-0db14ce3017e6173.yaml', 'span-ordering-1a7b383aa015bddc.yaml']",['a2e8e6ca0ddb4f6e0447aca9ec6a27afc064aab2'],0,11,11,2,,,
+bfa716699e499b32a35b3caaeac07537a43bce78,Add instructions for generating release notes,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-09-16 14:43:18-04:00,14400,2021-09-16 14:47:18-04:00,14400,True,False,"['README.md', 'riotfile.py']",['606528f6de788be025419f41b7c9732ac64259aa'],10,14,24,2,,,
+c5825a8450e89f649086912691cbd4be97e1263f,Add CI workflow for ensuring release notes,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-09-16 14:43:38-04:00,14400,2021-09-16 14:47:18-04:00,14400,True,False,"['changelog.yml', 'check-releasenotes']",['bfa716699e499b32a35b3caaeac07537a43bce78'],0,79,79,2,,,
+250d6ee62502b299c90701e73706e5e1eb00c5b0,"Fix handling of command line arguments
+
+Arguments were being ignored since the entry point doesn't pass them to
+the entry function.",Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-09-16 15:23:35-04:00,14400,2021-09-16 15:39:42-04:00,14400,True,False,"['agent.py', 'args-88f664c83a96075d.yaml']",['c5825a8450e89f649086912691cbd4be97e1263f'],2,9,11,2,0.0,1.0,1.0
+427d100ae8e69ebe97c2f857d689090cabd3581e,Fix typing of main(),Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-09-16 15:33:12-04:00,14400,2021-09-16 15:39:42-04:00,14400,True,False,"['agent.py', 'riotfile.py']",['250d6ee62502b299c90701e73706e5e1eb00c5b0'],15,15,30,2,,,
+f8e68de58f394be8f8c2f0dec7177df45303f03a,Add version command,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-09-16 15:37:43-04:00,14400,2021-09-16 15:39:42-04:00,14400,True,False,"['__init__.py', 'agent.py', 'version-0c32d2752f154eb9.yaml']",['427d100ae8e69ebe97c2f857d689090cabd3581e'],1,21,22,3,0.23076923076923078,1.0,1.0
+259516384058b9d02fadac4dc0b677b56b59b4bc,Add license,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle.verhoog@datadoghq.com,2021-09-16 15:47:46-04:00,14400,2021-09-16 15:47:46-04:00,14400,True,False,['LICENSE.apache2'],['f8e68de58f394be8f8c2f0dec7177df45303f03a'],0,200,200,1,,,
+4ded3d51cd63e9d2add010adf6264ede12d9a4fd,Add release instructions,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle.verhoog@datadoghq.com,2021-09-16 16:01:23-04:00,14400,2021-09-16 16:01:23-04:00,14400,True,False,['README.md'],['259516384058b9d02fadac4dc0b677b56b59b4bc'],0,15,15,1,,,
+38342cc2f39c7f967a59f7dfa98215d86db6ee5f,Update ghcr registry url,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle.verhoog@datadoghq.com,2021-09-16 16:01:34-04:00,14400,2021-09-16 16:01:34-04:00,14400,True,False,['README.md'],['4ded3d51cd63e9d2add010adf6264ede12d9a4fd'],1,1,2,1,,,
+bab7bd1dcf7e68785898d17d9d6202b09954c19f,"Move span type, meta, metrics up in snapshot output
+
+Also clean up the code a little bit and add a few comments.",Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-09-16 16:52:33-04:00,14400,2021-09-16 17:19:36-04:00,14400,True,False,"['snapshot.py', 'trace.py', 'snapshot-order-type-2d6424e380b2c88f.yaml', 'test_multi_trace.json', 'test_single_trace.json', 'test_trace_distributed_same_payload.json']",['38342cc2f39c7f967a59f7dfa98215d86db6ee5f'],80,91,171,6,,,
+80e1723aece3ef55a87dce59fb32c79b885554e0,Fix required Python version,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-09-16 18:02:27-04:00,14400,2021-09-16 18:09:16-04:00,14400,True,False,"['python-support-1c447acc4607abc7.yaml', 'setup.py']",['bab7bd1dcf7e68785898d17d9d6202b09954c19f'],1,6,7,2,,,
+9309c60598fa596ba2a505801e875529bb149e1f,"Fix BSD license, setup.py",Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-09-21 17:28:10-04:00,14400,2021-09-21 17:30:42-04:00,14400,True,False,"['LICENSE.BSD3', 'setup.py']",['80e1723aece3ef55a87dce59fb32c79b885554e0'],2,26,28,2,,,
+85a357d68d92b38658f735b8a6a4887b031f6179,Fix snapshot error message,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle.verhoog@datadoghq.com,2021-09-24 17:16:01-04:00,14400,2021-09-24 17:16:48-04:00,14400,True,False,['agent.py'],['9309c60598fa596ba2a505801e875529bb149e1f'],2,2,4,1,,,
+fe2ec46c4a898c218f22ec8bda613b8bb696c5bd,"Run CI on pull request as well
+
+CI would previously not run on PRs from forked repositories.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-09-28 17:39:39-04:00,14400,2021-09-28 17:41:45-04:00,14400,True,False,['main.yml'],['85a357d68d92b38658f735b8a6a4887b031f6179'],0,1,1,1,,,
+e83d9985baae91b633dba0c29fcad3621a3a9191,Update to riot 0.8,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-09-28 17:37:52-04:00,14400,2021-09-28 17:44:55-04:00,14400,True,False,"['main.yml', 'riotfile.py']",['fe2ec46c4a898c218f22ec8bda613b8bb696c5bd'],2,3,5,2,,,
+e4bacc559f90043a820c9d6939fdd4cdfd19e779,"Fix matching algorithm
+
+The previous matching algorithm assumed that trace ids would be unique
+across both sets of traces which is not true for snapshots as the traces
+are normalized.
+
+The matching is now done by sorting all the scores and then matching
+based off the best score between traces.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-09-28 16:41:52-04:00,14400,2021-09-28 18:13:58-04:00,14400,True,False,"['agent.py', 'snapshot.py', 'fix-matching-319744b82d2514c1.yaml', 'test_snapshot_integration.py']",['e83d9985baae91b633dba0c29fcad3621a3a9191'],20,37,57,4,0.0,0.0,1.0
+9fd9c37d1f9813eaedc52eba9d0d10cad9f26ffc,"Fix multiple sessions
+
+The API for retrieving traces from the session would return all traces
+matching the session token and not just the most recent traces for the
+session.",Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-09-29 18:21:48-04:00,14400,2021-09-30 16:49:35-04:00,14400,True,False,"['agent.py', 'snapshot.py', 'reuse-session-1670aa569907cf68.yaml', 'test_trace_missing_received.json', 'test_session.py', 'test_snapshot_integration.py']",['e4bacc559f90043a820c9d6939fdd4cdfd19e779'],30,154,184,6,0.0,0.9701492537313433,0.5522388059701493
+d60a18ee40918962c9baca1feca4c52dd9eb05d4,Fix release note code snipped format in README,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle.verhoog@datadoghq.com,2021-10-05 16:59:58-04:00,14400,2021-10-05 16:59:58-04:00,14400,True,False,['README.md'],['9fd9c37d1f9813eaedc52eba9d0d10cad9f26ffc'],0,2,2,1,,,
+3b994d9c7636db45d275a925615483214e86f9b1,Add Python 3.10 support,Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-10-06 18:29:18-04:00,14400,2021-10-06 18:37:30-04:00,14400,True,False,"['main.yml', 'python310-025fbc190363de98.yaml', 'riotfile.py', 'setup.py']",['d60a18ee40918962c9baca1feca4c52dd9eb05d4'],2,7,9,4,,,
+d818b62a155bdd27fd2de3dc369f316e955a30aa,Fix flaky ClientOSError in integration tests,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-10-06 21:29:25-04:00,14400,2021-10-06 21:38:34-04:00,14400,True,False,['test_snapshot_integration.py'],['3b994d9c7636db45d275a925615483214e86f9b1'],1,2,3,1,,,
+55de4901507007713a76312e13c0ae3b6ffba317,"Don't include empty meta/metrics in snapshots
+
+This should help make snapshots more concise.",Kyle Verhoog,kyle.verhoog@datadoghq.com,Kyle Verhoog,kyle@verhoog.ca,2021-10-06 18:17:31-04:00,14400,2021-10-06 21:49:49-04:00,14400,True,False,"['README.md', 'snapshot.py', 'snapshot-empty-maps-2cbe8cea3e7112fa.yaml', 'test_multi_trace.json', 'test_single_trace.json', 'test_trace_distributed_same_payload.json', 'test_trace_missing_received.json', 'test_snapshot.py']",['d818b62a155bdd27fd2de3dc369f316e955a30aa'],52,54,106,8,0.0,0.0,1.0
+048a67b5f55d39405dcebfd30bf3f8875aec2e6e,Various README updates,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-10-06 23:34:29-04:00,14400,2021-10-07 00:41:16-04:00,14400,True,False,['README.md'],['55de4901507007713a76312e13c0ae3b6ffba317'],69,19,88,1,,,
+0298f5c2d7f7b22348df11231e15eac11ca363ce,"Update README even more
+
+- Add image
+- Move checks to a table
+- Add more preamble
+- Rearrange sections",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-10-07 00:14:56-04:00,14400,2021-10-07 00:41:16-04:00,14400,True,False,['README.md'],['048a67b5f55d39405dcebfd30bf3f8875aec2e6e'],64,60,124,1,,,
+e325e6d435c9c59cb9e3fc25deda1d202170d80b,Add logging section,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-10-07 00:28:47-04:00,14400,2021-10-07 00:41:16-04:00,14400,True,False,['README.md'],['0298f5c2d7f7b22348df11231e15eac11ca363ce'],0,16,16,1,,,
+044570c88cb064f082ab571a692907720a030ea6,Add badges,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-10-07 00:36:59-04:00,14400,2021-10-07 00:41:16-04:00,14400,True,False,['README.md'],['e325e6d435c9c59cb9e3fc25deda1d202170d80b'],0,3,3,1,,,
+2095a75ad4e21ec136ae1542682c23ad952f6861,"Fix unconventional usage of ""chunk""",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-10-07 02:48:26-04:00,14400,2021-10-07 02:51:33-04:00,14400,True,False,"['agent.py', 'trace.py']",['044570c88cb064f082ab571a692907720a030ea6'],10,10,20,2,,,
+a1cb24a4e68604d9f95fd8fc91157b741abf9797,"Implement v0.5/traces endpoint
+
+Co-authored-by: Gabriele N. Tornetta <P403n1x87@users.noreply.github.com>",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-10-07 02:31:37-04:00,14400,2021-10-07 09:53:43-04:00,14400,True,False,"['agent.py', 'trace.py', 'v0.5-traces-cf469b0b71398d97.yaml']",['2095a75ad4e21ec136ae1542682c23ad952f6861'],5,93,98,3,0.07042253521126761,0.15492957746478872,0.9859154929577465
+1d0f12ed24cab7cd123379c2f9ac2793481566a1,"Add proxying feature
+
+Proxy trace requests through to an actual agent and return the
+response from the agent.
+
+Co-authored-by: Brett Langdon <me@brett.is>",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2021-10-06 22:54:03-04:00,14400,2021-10-07 12:06:17-04:00,14400,True,False,"['README.md', 'agent.py', 'proxy-37c94e2fb428c6fc.yaml', 'conftest.py']",['a1cb24a4e68604d9f95fd8fc91157b741abf9797'],0,55,55,4,0.06451612903225806,0.0,0.8709677419354839
+7d814c3a6a0a318da6a8de6fee2ef0aab0457541,"feat: Add ddapm-test-agent-fmt command (#45)
+
+New command that can be used to reformat snapshot
+files to ensure a consistent style.
+
+You can also use the command to check/error if files
+are not conforming to the expected format.
+
+$ ddapm-test-agent-fmt -h
+usage: ddapm-test-agent-fmt [-h] [-v] [-c] [--log-level LOG_LEVEL] FILE [FILE ...]
+
+Datadog APM Test Agent Snapshot Formatter
+
+positional arguments:
+  FILE                  Specific snapshot files or directories to format.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         Print version info and exit.
+  -c, --check           Do not rewrite files, error if any files would be changed.
+  --log-level LOG_LEVEL
+                        Set the log level. DEBUG, INFO, WARNING, ERROR, CRITICAL.",Brett Langdon,brett.langdon@datadoghq.com,GitHub,noreply@github.com,2022-01-27 15:54:37-05:00,18000,2022-01-27 15:54:37-05:00,18000,True,False,"['README.md', 'fmt.py', 'add-fmt-command-cc31769942a5fec3.yaml', 'setup.py']",['1d0f12ed24cab7cd123379c2f9ac2793481566a1'],1,141,142,4,0.0,0.23170731707317074,1.0
+5773155e0c658b2b7877c3eac2b7ac33dd1a7c57,fix: ddapmtest-agent-fmt logging (#46),Brett Langdon,brett.langdon@datadoghq.com,GitHub,noreply@github.com,2022-01-28 15:10:11-05:00,18000,2022-01-28 15:10:11-05:00,18000,True,False,"['fmt.py', 'fix-fmt-logging-6a323fd8d5d4eb28.yaml']",['7d814c3a6a0a318da6a8de6fee2ef0aab0457541'],6,10,16,2,,,
+1451ef726b8262f44f28afce6cbd91531d9c71ed,"Move testing dependencies to file
+
+This enables dependencies to be shared between manual installing pip install -e .[testing] and testing and riot.
+
+The snapshots are updated since there have been some ddtrace changes.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-22 18:56:33-04:00,14400,2022-03-22 20:56:41-04:00,14400,True,False,"['main.yml', 'README.md', 'riotfile.py', 'setup.py', 'test_deps.txt', 'test_multi_trace.json', 'test_single_trace.json', 'test_trace_distributed_same_payload.json', 'test_trace_missing_received.json']",['5773155e0c658b2b7877c3eac2b7ac33dd1a7c57'],19,24,43,9,,,
+128ebd345d95519cadc7e5ebfd99d88d3875572e,"Add session requests endpoint
+
+Add endpoint to return all requests made in a session.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-22 22:49:38-04:00,14400,2022-03-23 14:12:53-04:00,14400,True,False,"['README.md', 'agent.py', 'session-requests-b8057811f976220e.yaml', 'test_session.py']",['1451ef726b8262f44f28afce6cbd91531d9c71ed'],0,76,76,4,0.0,1.0,0.975609756097561
+5fa0d4c5c6df05ae7507952242dd1db4634919ae,"Add support for /v0.6/stats
+
+Note that support for snapshotting will be included in a follow-up
+patch.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-23 00:18:52-04:00,14400,2022-03-23 16:17:04-04:00,14400,True,False,"['README.md', 'agent.py', 'tracestats.py', 'trace-stats-97da3a478dabfa99.yaml', 'setup.py', 'conftest.py', 'test_session.py', 'test_stats.py']",['128ebd345d95519cadc7e5ebfd99d88d3875572e'],7,235,242,8,0.42857142857142855,1.0,0.7482993197278912
+d3f12c54275edaed9d3ac152e454e9ff67dbe4c2,Add debug logs to pytest output,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-24 16:28:29-04:00,14400,2022-03-24 17:12:06-04:00,14400,True,False,['setup.cfg'],['5fa0d4c5c6df05ae7507952242dd1db4634919ae'],0,3,3,1,,,
+576980598047e393340bc429a3f07065361e77e3,Rename trace stats test file,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-24 19:15:13-04:00,14400,2022-03-24 19:15:13-04:00,14400,True,False,['test_tracestats.py'],['d3f12c54275edaed9d3ac152e454e9ff67dbe4c2'],0,0,0,1,,,
+4c09fb26f9d319e2d1f60adf43382d0549e8cf9d,Parametrize snapshot mode for testing testagent fixture,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-25 02:09:32-04:00,14400,2022-03-25 02:20:26-04:00,14400,True,False,['test_snapshot_integration.py'],['576980598047e393340bc429a3f07065361e77e3'],2,8,10,1,1.0,0.0,0.0
+d63006189d28ff19c5a8017957220a4d4f7a9476,Rename AggrMetrics,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-25 02:23:29-04:00,14400,2022-03-25 02:27:20-04:00,14400,True,False,['tracestats.py'],['4c09fb26f9d319e2d1f60adf43382d0549e8cf9d'],4,4,8,1,,,
+bf45c70fc63a81f0c924989f8d26242d88814c19,"Upgrade ddtrace usage
+
+ddtrace has deprecated explicit usage of the writer",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-25 12:53:25-04:00,14400,2022-03-25 12:53:25-04:00,14400,True,False,['test_snapshot_integration.py'],['d63006189d28ff19c5a8017957220a4d4f7a9476'],5,5,10,1,,,
+0e68af67711bb580b4cf67e598ac775acb2689ca,"Rename snapshot module
+
+The snapshot module is specific to traces so it makes sense to namespace
+it as such.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-25 14:49:29-04:00,14400,2022-03-25 14:51:47-04:00,14400,True,False,"['agent.py', 'fmt.py', 'trace_snapshot.py', 'conftest.py', 'test_snapshot.py']",['bf45c70fc63a81f0c924989f8d26242d88814c19'],6,6,12,5,,,
+2fdf821b61cce306c9ee40515e329e594d56fd1c,"Use pytest log_level instead of log_cli
+
+log_cli is a little too noisy since it outputs even when tests pass.
+
+The other settings are kept commented in case one would like to use them
+locally for development.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-25 15:00:00-04:00,14400,2022-03-25 15:04:34-04:00,14400,True,False,['setup.cfg'],['0e68af67711bb580b4cf67e598ac775acb2689ca'],2,3,5,1,,,
+56413eb2a400110ea0e2edfde66f2b945bcff243,"Fix custom snapshot filename
+
+The filename before had to include the extension which wasn't intended.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-25 15:23:48-04:00,14400,2022-03-25 15:27:48-04:00,14400,True,False,"['README.md', 'agent.py', 'snapshot-filename-c068de1bc3e50c04.yaml', 'test_snapshot.py']",['2fdf821b61cce306c9ee40515e329e594d56fd1c'],21,31,52,4,0.25,0.75,0.75
+4318bfd8a8844f2a9312a4a0e725b22c0f55ba13,Unpin black version,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-31 13:17:11-04:00,14400,2022-03-31 13:21:36-04:00,14400,True,False,"['riotfile.py', 'conftest.py', 'trace_utils.py']",['56413eb2a400110ea0e2edfde66f2b945bcff243'],7,7,14,3,,,
+1ea0020d50cafea8f28cfa4bcdff2f62001f9058,"Add trace stats snapshot functionality
+
+Implement trace stats snapshotting so that trace stats are included in
+snapshots.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-03-24 23:15:21-04:00,14400,2022-03-31 13:21:52-04:00,14400,True,False,"['README.md', 'agent.py', 'tracestats_snapshot.py', 'trace-stats-snapshot-718ca37385c93e1e.yaml', 'test_trace_stats_tracestats.json', 'test_snapshot.py', 'test_snapshot_integration.py']",['4318bfd8a8844f2a9312a4a0e725b22c0f55ba13'],9,370,379,7,0.12598425196850394,0.7480314960629921,0.7874015748031497
+ee9c03c472b3815ea59475c6dee78dd05fc0b709,"Ignore trace stats file in fmt command
+
+The command was failing for snapshot directories containing both trace
+and trace stats snapshots because it assumes that all json files are
+trace snapshots.
+
+Just ignore the trace stats snapshots for now.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-04-01 13:54:47-04:00,14400,2022-04-01 13:59:27-04:00,14400,True,False,['fmt.py'],['1ea0020d50cafea8f28cfa4bcdff2f62001f9058'],2,12,14,1,0.0,0.0,1.0
+6f2954c045dd2c32cce7f3e751097ffc47f7015d,Fix HTTPStatusCode and snapshot ordering,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-04-07 03:14:25-04:00,14400,2022-04-07 11:16:23-04:00,14400,True,False,"['agent.py', 'tracestats.py', 'tracestats_snapshot.py', 'tracestats-fixes-07152c708e73ef96.yaml', 'test_snapshot.py']",['ee9c03c472b3815ea59475c6dee78dd05fc0b709'],25,52,77,5,0.0,1.0,1.0
+c2558094e6a7d461b2ac419165f23976b96e8489,"Handle span parent_id being undefined
+
+Use the new [`TypedDict`](https://peps.python.org/pep-0655/)
+implementation that supports `NotRequired` and `Required` to better type
+the data that the agent can receive from clients.
+
+Fixes #65.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-05-04 15:37:23-04:00,14400,2022-05-04 16:05:25-04:00,14400,True,False,"['trace.py', 'span-parent-id-a4d7d63fa623361c.yaml', 'setup.py', 'test_trace.py']",['6f2954c045dd2c32cce7f3e751097ffc47f7015d'],11,24,35,4,1.0,0.0,1.0
+55a272153476e046ee410f662f74159e7d584002,"Update readme
+
+- Add banner links
+- Fix incorrect env var in docker command",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-05-06 02:51:14-04:00,14400,2022-05-06 02:51:14-04:00,14400,True,False,['README.md'],['c2558094e6a7d461b2ac419165f23976b96e8489'],3,4,7,1,,,
+889577d743d7a4f763c31b6d33e3a54b3244807c,"Add releasing step
+
+Being on the right branch is pretty crucial",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-05-06 02:54:12-04:00,14400,2022-05-06 02:54:12-04:00,14400,True,False,['README.md'],['55a272153476e046ee410f662f74159e7d584002'],1,5,6,1,,,
+5bdaa59dc8ebc5260a3341e9a885300a9777de14,Fix typo,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-05-06 04:09:30-04:00,14400,2022-05-06 04:09:30-04:00,14400,True,False,['README.md'],['889577d743d7a4f763c31b6d33e3a54b3244807c'],1,1,2,1,,,
+8c2510779790f17fc908805832947ad392c5f748,"Ignore E203
+
+According to https://github.com/psf/black/issues/315 flake8 is in the
+wrong.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-05-09 15:28:07-04:00,14400,2022-05-09 15:28:07-04:00,14400,True,False,['setup.cfg'],['5bdaa59dc8ebc5260a3341e9a885300a9777de14'],1,1,2,1,,,
+cedb9ec412f334c6a86cfda8fb5aba12ba5d1808,Upgrade riot to 0.12.1,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-05-09 20:44:53-04:00,14400,2022-05-09 20:46:14-04:00,14400,True,False,['main.yml'],['8c2510779790f17fc908805832947ad392c5f748'],2,2,4,1,,,
+d6e14860814e8c1a39c5a03a91ec2668149681f5,"Generate better snapshot error messages
+
+Be more verbose about received/expected traces rather than just spitting
+out a normalized trace id.",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-05-09 15:13:10-04:00,14400,2022-05-10 13:20:05-04:00,14400,True,False,"['trace_snapshot.py', 'snapshot-error-messages-de41d9e3207fa30a.yaml', 'test_snapshot.py']",['cedb9ec412f334c6a86cfda8fb5aba12ba5d1808'],17,39,56,3,0.16666666666666666,0.16666666666666666,1.0
+1117b3bf4cc363f22db505a74e0af6d651fb9467,"Handle span `parent_id` being undefined in snapshots (#72)
+
+Fixes a ""missing parent_id"" issue in the snapshot generation.
+
+#66 fixed the issue when receiving traces, this fixes the issue when generating snapshots.
+
+Caveats: this is about the first Python I've written 😉
+
+Fixes #65.
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>
+Co-authored-by: Brett Langdon <brett.langdon@datadoghq.com>",Andrew Lock,andrewlock.net@gmail.com,GitHub,noreply@github.com,2022-05-11 15:43:41+01:00,-3600,2022-05-11 10:43:41-04:00,14400,True,False,"['trace_snapshot.py', 'snapshot-parent-id-7abb860008702e70.yaml', 'test_snapshot.py']",['d6e14860814e8c1a39c5a03a91ec2668149681f5'],4,44,48,3,0.0,1.0,1.0
+6196d59771429dbe3dd1c7e870d48d0d1f856f71,Improve more snapshot error messages (#73),Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-05-11 10:53:12-04:00,14400,2022-05-11 10:53:12-04:00,14400,True,False,"['agent.py', 'trace.py', 'trace_snapshot.py', 'test_snapshot.py']",['1117b3bf4cc363f22db505a74e0af6d651fb9467'],5,10,15,4,0.0,0.0,1.0
+6330d47cca30d65dd82af5b6471f2b8d74d58cf1,"Build docker image for ARM64 using buildx (#75)
+
+This updates the build to use QEMU and buildx to build multi-arch images. I'm only building the amd64 and arm64 versions atm, but we could easily add more if there's demand for it (e.g. linux/386, linux/arm/v7). Didn't seem worth doing now as just adds to the build times
+
+I have tested most of the pieces of this, the only part I can't safely test is the actual final push. You can see a demo run (where we build but don't push the image) here.
+
+Fixes #74
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",Andrew Lock,andrewlock.net@gmail.com,GitHub,noreply@github.com,2022-05-12 15:35:52+01:00,-3600,2022-05-12 10:35:52-04:00,14400,True,False,"['docker.yml', 'docker-arm64-images-a4b6b2cc527327d6.yaml']",['6196d59771429dbe3dd1c7e870d48d0d1f856f71'],21,40,61,2,,,
+a12bdbe053ecab2e5d2e8459cf5fae4d7397832c,"Add testing flag for snapshot generation (#79)
+
+Previously, in order to generate snapshots the pytest fixture had to be
+parametrized to be set to false. This was a bit clunky and not at all
+intuitive for new developers.
+
+Now a flag, `GENERATE_SNAPSHOTS=1` can be passed when running the
+integration tests which will enable the snapshots to be output.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-05-27 17:23:08-04:00,14400,2022-05-27 17:23:08-04:00,14400,True,False,"['README.md', 'test_snapshot_integration.py']",['6330d47cca30d65dd82af5b6471f2b8d74d58cf1'],1,12,13,2,,,
+d3448ae9831a82febb85c2eb72a92c99c1b8af16,"Enable tracestats integration test (#80)
+
+This was added by commented out since trace stats support had not yet
+been added to the python client library. Trace stats was included
+(disabled by default) in v1.1.0.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-05-27 17:37:29-04:00,14400,2022-05-27 17:37:29-04:00,14400,True,False,"['riotfile.py', 'test_trace_stats_tracestats.json', 'test_snapshot_integration.py']",['a12bdbe053ecab2e5d2e8459cf5fae4d7397832c'],17,22,39,3,0.5142857142857142,1.0,0.5142857142857142
+5b6c838ef0a3350caea83a5d16260b7219f0cf01,"feat: add support for distributed traces (#77)
+
+Add support for distributed traces where an instrumented service sends a trace chunk where the root span has a parent not in the trace chunk.
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",Tahir H. Butt,tahir@tahirbutt.com,GitHub,noreply@github.com,2022-05-27 18:02:26-04:00,14400,2022-05-27 18:02:26-04:00,14400,True,False,"['README.md', 'trace.py', 'trace_snapshot.py', 'add-distributed-trace-c35a314698a3b966.yaml', 'test_trace_distributed_propagated.json', 'test_snapshot_integration.py', 'test_trace.py', 'trace_utils.py']",['d3448ae9831a82febb85c2eb72a92c99c1b8af16'],5,106,111,8,0.0,0.6521739130434783,0.5869565217391305
+1d5bee35aae0bb0aee0e00075884abf87aad2678,Remove unnecessary noqa (#81),Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-05-27 18:18:20-04:00,14400,2022-05-27 18:18:20-04:00,14400,True,False,['tracestats.py'],['5b6c838ef0a3350caea83a5d16260b7219f0cf01'],1,1,2,1,,,
+ba59f989e9a4c045883744507a1689129b3ae0c0,"Add support for UDS (#69)
+
+```
+(.venv) ~/d/dd-apm-test-agent ❮❮❮ ddapm-test-agent --uds-path=./apm.socket
+======== Running on http://0.0.0.0:8126, http://unix:/Users/kverhoog/dev/dd-apm-test-agent/apm.socket: ========
+(Press CTRL+C to quit)
+```
+
+Co-authored-by: Colin Higgins <colin-higgins@users.noreply.github.com>
+Co-authored-by: colin-higgins <colin@COLIN-X1.localdomain>",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-06-07 12:07:06-04:00,14400,2022-06-07 12:07:06-04:00,14400,True,False,"['README.md', 'agent.py', 'uds-64b11960931d8b77.yaml']",['1d5bee35aae0bb0aee0e00075884abf87aad2678'],23,30,53,3,0.0,1.0,1.0
+56ee5ecf9fc62d5866ca15628c14e2abb8c48b86,Fix readme formatting,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-06-13 10:25:12-04:00,14400,2022-06-13 10:25:12-04:00,14400,True,False,['README.md'],['ba59f989e9a4c045883744507a1689129b3ae0c0'],1,6,7,1,,,
+a8e7c9783de6b0acee109070e53d6c42edbacbfb,More readme formatting,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-06-13 10:35:46-04:00,14400,2022-06-13 10:35:46-04:00,14400,True,False,['README.md'],['56ee5ecf9fc62d5866ca15628c14e2abb8c48b86'],0,1,1,1,,,
+3210389cc0353fa3729ad2ef9a75703f2810e8a2,"Fix trace_content_length check (#83)
+
+The check assumed that the header would always be included. Some
+clients, particularly the go client, don't include this header.
+
+A regression test could not easily be added since the aiohttp client
+doesn't support _not_ sending the Content-Length header.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-06-13 11:27:21-04:00,14400,2022-06-13 11:27:21-04:00,14400,True,False,"['agent.py', 'trace_checks.py', 'content_length-e1bab75580aa1dcb.yaml', 'conftest.py']",['a8e7c9783de6b0acee109070e53d6c42edbacbfb'],5,14,19,4,1.0,1.0,0.0
+cbc33b5fa9ec24d79c243bfee5ecf891401735c1,Remove unused param,Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-06-13 11:28:41-04:00,14400,2022-06-13 11:28:41-04:00,14400,True,False,['conftest.py'],['3210389cc0353fa3729ad2ef9a75703f2810e8a2'],1,0,1,1,1.0,0.0,1.0
+3d87de9b4ebe4ab78118531a6d192a3a55bc7958,"Return on failure in trace_content_length check
+
+else execution continues which causes an error",Kyle Verhoog,kyle@verhoog.ca,Kyle Verhoog,kyle@verhoog.ca,2022-06-13 12:11:36-04:00,14400,2022-06-13 12:11:36-04:00,14400,True,False,['trace_checks.py'],['cbc33b5fa9ec24d79c243bfee5ecf891401735c1'],0,1,1,1,1.0,1.0,1.0
+3f27bbeee627cf39d6ca1a1a893d2e87a819aedf,"Add /info endpoint support (#85)
+
+The info endpoint exists to allow clients to detect what features are
+available in the agent. The go tracer specifically will only enable
+trace stats computation if it detects that the agent supports the
+feature.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-06-15 15:22:46-04:00,14400,2022-06-15 15:22:46-04:00,14400,True,False,"['agent.py', 'info-34dcd9cbcc382487.yaml', 'test_agent.py']",['3d87de9b4ebe4ab78118531a6d192a3a55bc7958'],0,34,34,3,0.9629629629629629,1.0,0.9629629629629629
+5a034acda24a310f58903228cae314ac2a722721,"Add POST support for tracestats (#86)
+
+@zacharycmontoya found that dotnet uses POST and it is supported by the agent.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-06-30 16:37:43-04:00,14400,2022-06-30 16:37:43-04:00,14400,True,False,"['agent.py', 'tracestats-post-65ce788f81862532.yaml', 'test_tracestats.py']",['3f27bbeee627cf39d6ca1a1a893d2e87a819aedf'],0,18,18,3,0.9166666666666666,1.0,0.0
+90ec01e626ebc30ee7dde93e62665ea3f1d88b28,"Add `metrics.process_id` to default ignored attributes (#89)
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",Andrew Lock,andrewlock.net@gmail.com,GitHub,noreply@github.com,2022-07-01 16:15:56+01:00,-3600,2022-07-01 11:15:56-04:00,14400,True,False,"['README.md', 'trace_snapshot.py', 'Add-metrics.process_id-to-ignored-attributes-62b264f0ea591326.yaml']",['5a034acda24a310f58903228cae314ac2a722721'],5,7,12,3,,,
+a94407f26f0f923c910bd9ab0098cc0ef82b497c,"Decode service in trace stats payloads (#87)
+
+This was missed originally.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-07-01 21:51:52-04:00,14400,2022-07-01 21:51:52-04:00,14400,True,False,"['tracestats.py', 'tracestats-service-2a0a178cbd21b07d.yaml', 'conftest.py']",['90ec01e626ebc30ee7dde93e62665ea3f1d88b28'],0,7,7,3,0.0,1.0,1.0
+af549b9c8345c6f11461e9ad6d3c4092f5fc854b,"Add stall feature for trace requests (#68)
+
+Introduce a new feature that allows the artificial throttling of the test agent for specific (or all) requests to mimic a real agent being under load.
+
+Co-authored-by: Colin Higgins <colin-higgins@users.noreply.github.com>
+Co-authored-by: colin-higgins <colin@COLIN-X1.localdomain>",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-07-05 16:08:53-04:00,14400,2022-07-05 16:08:53-04:00,14400,True,False,"['agent.py', 'checks.py', 'trace_checks.py', 'throttling-590bf58ecb3cc4a5.yaml', 'conftest.py', 'test_checks.py']",['a94407f26f0f923c910bd9ab0098cc0ef82b497c'],5,96,101,6,0.2549019607843137,0.0,0.37254901960784315
+ac99f863c1c3113ea57d028681432dfbf61d7ff9,"Add ClientDropP0s feature to info endpoint (#90)
+
+This feature goes with the /v0.6/stats (trace stats) implementation.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-07-15 16:32:36-04:00,14400,2022-07-15 16:32:36-04:00,14400,True,False,"['agent.py', 'info-drop-p0s-c207889f590340fb.yaml', 'test_agent.py']",['af549b9c8345c6f11461e9ad6d3c4092f5fc854b'],0,6,6,3,1.0,1.0,1.0
+26538593a1b739366f8b37257935cb5d7278b5fb,"feat(telemetry): add initial support for capturing telemetry event requests (#91)
+
+* feat(telemetry): add initial support for capturing telemetry event requests
+
+* add telemetry to info endpoint",Brett Langdon,brett.langdon@datadoghq.com,GitHub,noreply@github.com,2022-07-22 16:03:09-04:00,14400,2022-07-22 16:03:09-04:00,14400,True,False,"['agent.py', 'apmtelemetry.py', 'add-support-telemetry-requests-10737cd3da802ca6.yaml', 'conftest.py', 'test_agent.py', 'test_apmtelemetry.py', 'test_session.py']",['ac99f863c1c3113ea57d028681432dfbf61d7ff9'],2,275,277,7,0.36199095022624433,1.0,0.6877828054298643
+29b2f2d4df29b59daf0cb227d76539ca6424ee14,"Only process trace requests with /test/traces endpoint (#92)
+
+The /test/traces endpoint was using all gathered requests, assuming that
+they were trace requests. This cause the endpoint to fail if telemetry
+or stats requests are sent.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-07-27 09:17:16-04:00,14400,2022-07-27 09:17:16-04:00,14400,True,False,"['agent.py', 'traces-endpoint-f4f9c1d94d6ceda2.yaml']",['26538593a1b739366f8b37257935cb5d7278b5fb'],8,21,29,2,1.0,1.0,1.0
+0345843871f70ea756546ebfa3553fdee36044ac,"Disable flake8-logging-format plugin (#95)
+
+It broke with the latest flake8 release: https://github.com/globality-corp/flake8-logging-format/issues/35",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-08-02 17:22:21-04:00,14400,2022-08-02 17:22:21-04:00,14400,True,False,['riotfile.py'],['29b2f2d4df29b59daf0cb227d76539ca6424ee14'],1,1,2,1,,,
+9c2acf3ff75ab29ddf262b9029b068b2ad85a822,"Update snapshot integration tests for ddtrace 1.3 (#94)
+
+The 1.3 release of ddtrace introduced a new tag which breaks the snapshot integration tests.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-08-02 17:29:42-04:00,14400,2022-08-02 17:29:42-04:00,14400,True,False,"['test_multi_trace.json', 'test_single_trace.json', 'test_trace_distributed_same_payload.json', 'test_trace_missing_received.json']",['0345843871f70ea756546ebfa3553fdee36044ac'],0,6,6,4,,,
+b75aac71c35eba1c860ffb3edcd34d96e6ad6d1a,"Set 722 file permissions on UDS socket (#93)
+
+The permissions of the socket created by aiohttp aren't as permissive as
+the ones set by the real agent. (see
+https://github.com/aio-libs/aiohttp/issues/4155)
+
+from @devinsba:
+
+test agent:
+
+```
+cnb@my-app:/var/run/datadog$ ls -la
+total 4
+drwxr-xr-x 2 root root   60 Aug  1 21:24 .
+drwxr-xr-x 1 root root 4096 Aug  1 21:24 ..
+srwxr-xr-x 1 root root    0 Aug  1 21:24 apm.socket
+```
+
+real agent:
+
+```
+cnb@my-app:/var/run/datadog$ ls -la
+total 4
+drwxr-xr-x 2 root root   80 Aug  1 21:30 .
+drwxr-xr-x 1 root root 4096 Aug  1 21:31 ..
+srwx-w--w- 1 root root    0 Aug  1 21:30 apm.socket
+```
+
+aiohttp doesn't seem to have a configurable way
+to set these permissions but it does let us create and
+manage a socket ourselves, so let's try that.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-08-02 17:44:49-04:00,14400,2022-08-02 17:44:49-04:00,14400,True,False,"['agent.py', 'uds-permissions-903266ac6445b873.yaml']",['9c2acf3ff75ab29ddf262b9029b068b2ad85a822'],1,14,15,2,0.0,0.0,1.0
+24c046e504decfec53d26986231208ca2a134ccf,"Add snapshot commands (#96)
+
+Add commands to start and perform snapshot test cases to ease
+manual/CI usage. The alternative would be to curl and try to parse the
+results which isn't trivial to do.
+
+
+Co-authored-by: Brett Langdon <me@brett.is>",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-08-03 13:18:30-04:00,14400,2022-08-03 13:18:30-04:00,14400,True,False,"['cmd.py', 'snapshot-cmds-de4a561911afee11.yaml', 'riotfile.py', 'setup.py', 'test_snapshot_integration.py']",['b75aac71c35eba1c860ffb3edcd34d96e6ad6d1a'],1,127,128,5,0.19387755102040816,1.0,1.0
+18f119fbe100aacdd49368f8f6132d1013da4f2f,"Add support for profiling (#97)
+
+Just handle the request, nothing else.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-08-08 16:07:55-04:00,14400,2022-08-08 16:07:55-04:00,14400,True,False,"['agent.py', 'profiling-endpoint-0cd209e4e5b6cfc0.yaml', 'test_snapshot_integration.py']",['24c046e504decfec53d26986231208ca2a134ccf'],10,40,50,3,0.7894736842105263,0.8947368421052632,0.8421052631578947
+1f8a3bdb4ff9cd2af3e7e969d82347adb83050f1,"Fix typing (#99)
+
+mypy released a new version which removed the need for some of the  type
+ignores.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-10-04 16:36:42-04:00,14400,2022-10-04 16:36:42-04:00,14400,True,False,"['main.yml', 'agent.py', 'trace_checks.py']",['18f119fbe100aacdd49368f8f6132d1013da4f2f'],7,7,14,3,,,
+36a9aa18c538108be8f41e52ed8bbe90ce590732,"Add `metrics.system.process_id` to ignored tags (#100)
+
+This tag is replacing the system.pid tag.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-10-24 15:53:04-04:00,14400,2022-10-24 15:53:04-04:00,14400,True,False,"['README.md', 'trace_snapshot.py', 'new-process-id-tag-f0ab0daf652e05cc.yaml']",['1f8a3bdb4ff9cd2af3e7e969d82347adb83050f1'],3,8,11,3,,,
+62a1a7d5058eccad9f46174112610d1abdd0e691,"Fix race condition for simultaneous reading and writing (#101)
+
+As discovered in https://github.com/DataDog/system-tests/pull/607,
+concurrent requests to the test agent that read and write the data (like
+sending and retrieving traces) could result in:
+
+```
+  File ""/usr/local/lib/python3.9/site-packages/ddapm_test_agent/agent.py"", line 184, in _traces_from_request
+    return await self._decode_v04_traces(req)
+  File ""/usr/local/lib/python3.9/site-packages/ddapm_test_agent/agent.py"", line 238, in _decode_v04_traces
+    raw_data = await request.read()
+  File ""/usr/local/lib/python3.9/site-packages/aiohttp/web_request.py"", line 649, in read
+    chunk = await self._payload.readany()
+  File ""/usr/local/lib/python3.9/site-packages/aiohttp/streams.py"", line 397, in readany
+    await self._wait(""readany"")
+  File ""/usr/local/lib/python3.9/site-packages/aiohttp/streams.py"", line 295, in _wait
+    raise RuntimeError(
+RuntimeError: readany() called while another coroutine is already waiting for incoming data
+```
+(https://github.com/DataDog/system-tests/actions/runs/3341145276/jobs/5532056812)
+
+This was due to multiple `read()` calls being made on the request
+object.
+
+The solution is to fetch the data once off of the request object and
+then store it on the object. Helpers are added to store requests and
+retrieve the request data when necessary.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2022-10-27 21:00:52-04:00,14400,2022-10-27 21:00:52-04:00,14400,True,False,"['agent.py', 'fix-racecondition-9bd0ef15b7da60fa.yaml', 'conftest.py', 'test_snapshot_integration.py']",['36a9aa18c538108be8f41e52ed8bbe90ce590732'],44,102,146,4,0.3157894736842105,1.0,0.3684210526315789
+91b029e09248e62c795bb9ca7d7cebfb72f5174c,"Pin ddtrace version, update snapshots (#106)
+
+ddtrace v1.6.0 switched to v0.5 encoding which means that error and type
+are always included in the payload. It also means that default values of
+the same type are used rather than null.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-01-19 16:50:10-05:00,18000,2023-01-19 16:50:10-05:00,18000,True,False,"['test_deps.txt', 'test_multi_trace.json', 'test_single_trace.json', 'test_trace_distributed_propagated.json', 'test_trace_distributed_same_payload.json', 'test_trace_missing_received.json']",['62a1a7d5058eccad9f46174112610d1abdd0e691'],14,39,53,6,,,
+558076bea8c303132cb588c1b6c208dbb07f3509,Fix readme branch checks badge (#105),Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-01-19 16:58:03-05:00,18000,2023-01-19 16:58:03-05:00,18000,True,False,['README.md'],['91b029e09248e62c795bb9ca7d7cebfb72f5174c'],1,1,2,1,,,
+ee5a7fa9d5c166ea95ac261642a7d2d6806a8479,Add testing support for 3.11 (#102),Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-01-19 17:01:31-05:00,18000,2023-01-19 17:01:31-05:00,18000,True,False,"['main.yml', 'riotfile.py']",['558076bea8c303132cb588c1b6c208dbb07f3509'],2,2,4,2,,,
+99fc82664176e50bd46956ccd02cdccc7326076c,Fix github readme badge (#107),Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-01-19 17:22:34-05:00,18000,2023-01-19 17:22:34-05:00,18000,True,False,['README.md'],['ee5a7fa9d5c166ea95ac261642a7d2d6806a8479'],1,1,2,1,,,
+b0a71e769167a97fcf7922d49b94626cadcba878,Match isort and black formatting line length (#108),Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-01-23 16:27:40-05:00,18000,2023-01-23 16:27:40-05:00,18000,True,False,"['agent.py', 'checks.py', 'cmd.py', 'fmt.py', 'trace.py', 'trace_checks.py', 'trace_snapshot.py', 'tracestats_snapshot.py', 'pyproject.toml', 'conftest.py', 'test_agent.py', 'test_apmtelemetry.py', 'test_session.py', 'test_snapshot.py', 'test_snapshot_integration.py']",['99fc82664176e50bd46956ccd02cdccc7326076c'],276,87,363,15,1.0,0.34054054054054056,0.2810810810810811
+ea5557591c689338b79f93f8206fbba6fcd6b902,"Remove docker-compose file (#109)
+
+It is not used and doesn't need to be used for local development.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-01-23 17:44:23-05:00,18000,2023-01-23 17:44:23-05:00,18000,True,False,['docker-compose.yml'],['b0a71e769167a97fcf7922d49b94626cadcba878'],8,0,8,1,,,
+cc71f96050a79bbe114b9e82005d92a7a8ca1e4f,"Update docker image to use Python 3.11 (#103)
+
+This should yield some performance benefit and more importantly, better
+error messages to assist with debugging.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-01-23 17:55:49-05:00,18000,2023-01-23 17:55:49-05:00,18000,True,False,"['Dockerfile', 'python310-docker-image-d4e329cfecf6510e.yaml']",['ea5557591c689338b79f93f8206fbba6fcd6b902'],1,5,6,2,,,
+78e3c9dd2584ea3c99097e475ad0878e2c9b4dd6,"chore: codestyle (#111)
+
+Update codestyle with last changes. A minor black release probably now detects new codestyle changes",Alberto Vara,a.vara.1986@gmail.com,GitHub,noreply@github.com,2023-03-22 17:59:30+01:00,-3600,2023-03-22 12:59:30-04:00,14400,True,False,['trace_snapshot.py'],['cc71f96050a79bbe114b9e82005d92a7a8ca1e4f'],1,1,2,1,,,
+aeebe28f86d9282a2d5cc541524cde64edcf5bd5,"feat(remoteconfig): add remote config endpoints (#110)
+
+* feat(remoteconfig): add remote config endpoints
+
+* chore: codestyle
+
+* fix tests
+
+* chore: flake8
+
+* add release notes
+
+* chore: update Mixin to RemoteConfigServer
+
+* chore: codestyle
+
+* chore: update README
+
+* Update README.md
+
+---------
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",Alberto Vara,alberto.vara@datadoghq.com,GitHub,noreply@github.com,2023-03-22 18:32:07+01:00,-3600,2023-03-22 18:32:07+01:00,-3600,True,False,"['README.md', 'agent.py', 'remoteconfig.py', 'add-rcm-endpoints-7e1f949e83e21039.yaml', 'conftest.py', 'test_agent.py', 'test_remoteconfig.py']",['78e3c9dd2584ea3c99097e475ad0878e2c9b4dd6'],0,378,378,7,0.11073825503355705,1.0,0.802013422818792
+232a2c6b92a2b032357741895a49c92c92dce860,"Fix case sensitive headers (#113)
+
+The headers were pointlessly being cast to a normal dictionary from a
+case insensitive multi dict implementation.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-03-23 17:02:00-04:00,14400,2023-03-23 17:02:00-04:00,14400,True,False,"['agent.py', 'trace_checks.py', 'check-http-header-sensitivity-daaa9d9595ae86d6.yaml', 'test_checks.py']",['aeebe28f86d9282a2d5cc541524cde64edcf5bd5'],9,29,38,4,1.0,1.0,1.0
+7a056ad59111f8e527cf6f163d40bcd6f27fe433,fix: Build wheels CI step image (#118),Alberto Vara,alberto.vara@datadoghq.com,GitHub,noreply@github.com,2023-04-18 16:26:07+02:00,-7200,2023-04-18 10:26:07-04:00,14400,True,False,['publish_pypi.yml'],['232a2c6b92a2b032357741895a49c92c92dce860'],1,1,2,1,,,
+f4a3ce932d035e2cced2d09d2fb538c8fd1c4350,"feat(rcm): add session token to endpoints (#117)
+
+* feat(rcm): add session token to endpoints",Alberto Vara,alberto.vara@datadoghq.com,GitHub,noreply@github.com,2023-04-18 16:32:26+02:00,-7200,2023-04-18 16:32:26+02:00,-7200,True,False,"['README.md', 'agent.py', 'remoteconfig.py', 'add-session-to-rcm-endpoints-d97e925a04a99a65.yaml', 'test_remoteconfig.py']",['7a056ad59111f8e527cf6f163d40bcd6f27fe433'],20,61,81,5,1.0,1.0,0.5
+36c85a8e8d51b844ba786c9d2977e71793af00eb,feat: add more informative debug and error messages to test-agent (#119),William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-04-25 11:47:52-04:00,14400,2023-04-25 11:47:52-04:00,14400,True,False,"['agent.py', 'trace.py', 'improve-test-agent-debugging-5759413f1fc5f7fa.yaml']",['f4a3ce932d035e2cced2d09d2fb538c8fd1c4350'],13,25,38,3,0.0,0.0,1.0
+3536ee50c8baaf4d7335d2c32b6b56aff38fe50c,"feat: improve test agent proxying (#120)
+
+* add more informative debugging to test-agent
+
+* move proxying to be first when handling a trace
+
+* add `X-Datadog-Agent-Proxy-Disabled` header check to disabled proxying when handling traces",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-04-26 11:33:26-04:00,14400,2023-04-26 11:33:26-04:00,14400,True,False,"['agent.py', 'improve-test-agent-proxying-a207f0fc81b3ab2d.yaml']",['36c85a8e8d51b844ba786c9d2977e71793af00eb'],12,45,57,2,0.0,1.0,0.0
+79d87fc02ef91ae0f22c79b43af3bbf981c1e156,"Change trace header handling (#121)
+
+* Change headers to use received trace's content-type instead of relying on AioHTTP generated content-type
+
+* Update headers to accept an optional argument of `X-Datadog-Agent-Proxy-Disabled` that disables trace proxying even if an agent URL is set. Also adds another optional argument of `X-Datadog-Proxy-Port` that can be included to update the agent URL on a trace-level basis.
+
+* Update readme and releasenotes",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-04-26 13:08:17-04:00,14400,2023-04-26 13:08:17-04:00,14400,True,False,"['README.md', 'agent.py', 'change-trace-proxy-headers-f9fcbb4efc4fcb95.yaml']",['3536ee50c8baaf4d7335d2c32b6b56aff38fe50c'],8,45,53,3,0.4,0.4,1.0
+553cbd0ae05fcb7440d3a7e35f4ced76fcf9ba7d,"feat: add optional more lenient trace decoder (#122)
+
+This change adds the ability to configure a more lenient trace decoder. The advantage of this decoder is that any floats/ints within the meta field will be left as strings. Additionally, long integers that were originally being decoded to a string are now decoded correctly as integers. To enable the optional tracer, set the DD_DISABLE_TRACE_PARSE_ERRORS or --disable-trace-parse-errors runtime flag with a value of True.
+
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-05-02 09:45:24-04:00,14400,2023-05-02 09:45:24-04:00,14400,True,False,"['README.md', 'agent.py', 'trace.py', 'add-optional-json-parser-10aac54bd1cbe322.yaml', 'conftest.py', 'test_trace.py']",['79d87fc02ef91ae0f22c79b43af3bbf981c1e156'],32,121,153,6,0.3275862068965517,0.4827586206896552,0.7931034482758621
+7f664ab8f6413f932250e1d00a6c7b451ffda90a,"Add `SNAPSHOT_REMOVED_ATTRS` to remove attributes from spans in snapshots (#125)
+
+Add a new optional configuration to allow fields to be removed from the spans. By default, no keys will be removed from the snapshots.
+
+💭 The motivation behind this feature is to get rid of some fields that can be noisy in the snapshots (e.g., start or duration) which could create some massive diffs when regenerating the snapshots.
+
+Note that since the removal of the field start would cause an error when sorting the spans by this field, span_id was used as a fallback. Feel free to tell me if this would cause an issue I didn't consider (this is the reason why both start and span_id shouldn't be removed from the snapshots).",Alexandre Choura,42672104+PROFeNoM@users.noreply.github.com,GitHub,noreply@github.com,2023-05-22 12:52:16-07:00,25200,2023-05-22 15:52:16-04:00,14400,True,False,"['README.md', 'agent.py', 'trace.py', 'trace_snapshot.py', 'allow-attribute-removal-snapshots-314b744b043b97c5.yaml', 'conftest.py', 'test_snapshot.py', 'trace_utils.py']",['553cbd0ae05fcb7440d3a7e35f4ced76fcf9ba7d'],8,272,280,8,0.08695652173913043,0.30434782608695654,0.29347826086956524
+3a8acd3d2003647b130377ac10d268be18a4e59b,"Add request forwarding for telemetry (#123)
+
+This PR adds two middlewares to the Test-Agent. The first middleware stores the request data and headers in Test-Agent memory. The second middleware forwards requests to an optional end destination (such as a real DD Agent) for any requests from the /traces, /stats, or /telemetry endpoints.
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-05-22 16:16:31-04:00,14400,2023-05-22 16:16:31-04:00,14400,True,False,"['agent.py', 'add-request-forwarding-middleware-d3f325166b0f8e9e.yaml']",['7f664ab8f6413f932250e1d00a6c7b451ffda90a'],62,118,180,2,0.5294117647058824,0.5882352941176471,0.0
+43887266389af0df1dc348b6d2446706c579d678,"Add pipeline stats endpoint (#126)
+
+Add pipeline stats endpoint to the test agent.
+
+For now, I'm not storing anything, the goal here is just to avoid errors when trying to submit payloads to the test agent.",Piotr WOLSKI,piotr.wolski42@gmail.com,GitHub,noreply@github.com,2023-05-24 12:02:04-04:00,14400,2023-05-24 12:02:04-04:00,14400,True,False,"['README.md', 'agent.py', 'pipeline_stats_endpoint-e8ad6da735dc2647.yaml']",['3a8acd3d2003647b130377ac10d268be18a4e59b'],0,15,15,3,0.6666666666666666,1.0,0.8333333333333334
+793ec3c107ffcb420d924ad3ff9f1397f7ed106d,"Pool trace check failures and add endpoint to get failures (#124)
+
+This PR adds functionality for pooling CheckTrace failures in-memory within the Test-Agent. Functionality was also added to query the Test-Agent for these failures. If they occurred, the Agent will send a bad response with the failures as the message body. The PR also adds the following environment variables:
+
+DD_POOL_TRACE_CHECK_FAILURES: When set to true, the Test-Agent will pool trace check failures in memory. Can also be set using the --pool-trace-check-failures command line option.
+DD_DISABLE_ERROR_RESPONSES: When set to true, the Test-Agent will disable error responses when a trace check failure occurs. Can also be set using the --disable-error-responses command line option.",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-05-25 15:26:04-04:00,14400,2023-05-25 15:26:04-04:00,14400,True,False,"['README.md', 'agent.py', 'disable-error-responses-and-collect-trace-failures-in-memory-4a199bc7be416709.yaml', 'conftest.py']",['43887266389af0df1dc348b6d2446706c579d678'],21,95,116,4,0.0,0.19148936170212766,0.2978723404255319
+a0549918443bb2e86e0384e7b48e5f933eb0aa03,"Use correct message length in remoteconfig response (#128)
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",Stuart McCulloch,mcculls@gmail.com,GitHub,noreply@github.com,2023-06-05 21:13:24+01:00,-3600,2023-06-05 16:13:24-04:00,14400,True,False,"['remoteconfig.py', 'rc-encoding-length-fix-cc011edea7f8f5b2.yaml']",['793ec3c107ffcb420d924ad3ff9f1397f7ed106d'],1,5,6,2,,,
+326ae1cb4a58d3d758af855318c29d9c4af6a357,Return remote config requests in session requests (#130),Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-06-27 00:42:35-04:00,14400,2023-06-27 00:42:35-04:00,14400,True,False,"['agent.py', 'remoteconfig-requests-1af7abb99c61c069.yaml', 'test_remoteconfig.py']",['a0549918443bb2e86e0384e7b48e5f933eb0aa03'],0,18,18,3,0.9,1.0,1.0
+63410f81e1fe33eb0ac6aab021eddaa475379ab8,"Add flag for enabling non-default checks (#131)
+
+* Add flag for enabling non-default checks",Brian Devins-Suresh,badevins@gmail.com,GitHub,noreply@github.com,2023-06-29 15:21:05-04:00,14400,2023-06-29 15:21:05-04:00,14400,True,False,"['agent.py', 'checks.py', 'additional-checks-3e25e1d310b1de4a.yaml', 'conftest.py']",['326ae1cb4a58d3d758af855318c29d9c4af6a357'],0,28,28,4,0.21052631578947367,0.42105263157894735,0.7894736842105263
+52dfe3e76d7aee5ec893620219a80cdad58a22ad,"Revert ""Add flag for enabling non-default checks (#131)"" (#133)
+
+This reverts commit 63410f81e1fe33eb0ac6aab021eddaa475379ab8.",Brian Devins-Suresh,badevins@gmail.com,GitHub,noreply@github.com,2023-07-07 13:45:38-04:00,14400,2023-07-07 13:45:38-04:00,14400,True,False,"['agent.py', 'checks.py', 'additional-checks-3e25e1d310b1de4a.yaml', 'conftest.py']",['63410f81e1fe33eb0ac6aab021eddaa475379ab8'],28,0,28,4,0.7894736842105263,0.5789473684210527,0.21052631578947367
+3833182b3d864d93c41550ab645c47af8fd855eb,"Make checks opt-in (#134)
+
+* Make checks opt-in
+
+* typo",Brian Devins-Suresh,brian.devinssuresh@datadoghq.com,GitHub,noreply@github.com,2023-07-07 14:37:01-04:00,14400,2023-07-07 14:37:01-04:00,14400,True,False,"['README.md', 'agent.py', 'checks.py', 'trace_checks.py', 'Checks-changed-to-opt-in-8716cac4ecdbb1c2.yaml', 'conftest.py', 'test_checks.py']",['52dfe3e76d7aee5ec893620219a80cdad58a22ad'],33,49,82,7,1.0,1.0,0.0
+b6fa77d60ff79671b743c4ff421d307dbebab480,"feat: improve trace check results endpoint (#129)
+
+* add additional endpoints for getting and clearing Trace Check Results",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-07-12 10:57:32-04:00,14400,2023-07-12 10:57:32-04:00,14400,True,False,"['README.md', 'agent.py', 'checks.py', 'improve-trace-check-results-endpoints-6ab4132628520793.yaml', 'conftest.py', 'test_agent.py']",['3833182b3d864d93c41550ab645c47af8fd855eb'],19,403,422,6,0.19081272084805653,0.8091872791519434,0.3003533568904594
+2843c2fb9939e86d0880cc795a460e782aeedf66,"Add service naming checks (#127)
+
+* add service naming `trace_dd_service` and peer.service `trace_peer_service` Trace Checks",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-07-12 14:56:40-04:00,14400,2023-07-12 14:56:40-04:00,14400,True,False,"['README.md', 'agent.py', 'trace_checks.py', 'add-service-naming-checks-2b68ff51d1b5496d.yaml']",['b6fa77d60ff79671b743c4ff421d307dbebab480'],2,165,167,4,0.0,0.017391304347826087,0.6695652173913044
+602e892ed4df1ff494b3df3d7e379241258c235f,"Update README.md (#136)
+
+Fix intra-document anchor links",Ben Madore,823868+madorb@users.noreply.github.com,GitHub,noreply@github.com,2023-07-24 12:45:14-05:00,18000,2023-07-24 13:45:14-04:00,14400,True,False,['README.md'],['2843c2fb9939e86d0880cc795a460e782aeedf66'],6,6,12,1,,,
+b569eb17511059cb74ecf6d794639d509294426b,Fix README headings (#137),Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-07-25 14:12:47-04:00,14400,2023-07-25 14:12:47-04:00,14400,True,False,['README.md'],['602e892ed4df1ff494b3df3d7e379241258c235f'],7,7,14,1,,,
+f127b47d0bd2a771be30bf7d626e6eea37baf654,"add plain text content type (#138)
+
+add plain/text content-type",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-08-10 11:28:36-04:00,14400,2023-08-10 11:28:36-04:00,14400,True,False,"['agent.py', 'add-support-for-plain-text-responses-00d20bf7b335e75b.yaml']",['b569eb17511059cb74ecf6d794639d509294426b'],0,8,8,2,0.0,0.0,0.0
+34e41d9f5047f4463f8d3cb1768328e3e6ecdcec,"Conti/emit tested integration versions (#140)
+
+Add support for tracking tested integrations",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-10-11 14:16:34-04:00,14400,2023-10-11 14:16:34-04:00,14400,True,False,"['README.md', 'agent.py', 'integration.py', 'remoteconfig.py', 'trace_checks.py', 'support-tracking-of-tested-integrations-ac19ccd1f8333c00.yaml', 'conftest.py', 'test_agent.py']",['f127b47d0bd2a771be30bf7d626e6eea37baf654'],7,194,201,8,0.06976744186046512,0.3875968992248062,0.8527131782945736
+c72b45789eb0b3a4865b585a34b294c55dd64114,"Get all integration requests if session token is none (#141)
+
+Currently, the test agent will only return tested integrations for a specific token, and there is no way to get all tested integrations if multiple tokens were used. This PR changes that to allow for getting all tested integrations if no session token is included.
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-10-12 15:04:22-04:00,14400,2023-10-12 15:04:22-04:00,14400,True,False,"['agent.py', 'fix-getting-tested-integrations-multiple-session-tokens-4ee41d545754f87f.yaml']",['34e41d9f5047f4463f8d3cb1768328e3e6ecdcec'],5,12,17,2,0.0,0.0,1.0
+d112da6f3c33c2d20d9b48e10e4e3ecd14653be0,Add GET support for /v0.7/config (#142),Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-10-23 11:24:15-04:00,14400,2023-10-23 11:24:15-04:00,14400,True,False,"['agent.py', 'rc-get-endpoint-e502f55b7df544e2.yaml', 'test_remoteconfig.py']",['c72b45789eb0b3a4865b585a34b294c55dd64114'],3,12,15,3,0.6666666666666666,1.0,0.6666666666666666
+07e1de931f9ad390d47b931677364aa3a0890177,"Add span link support (#144)
+
+Allow parsing, validating and returning span links.
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",Bob Weinand,bobwei9@hotmail.com,GitHub,noreply@github.com,2023-11-02 14:54:15+01:00,-3600,2023-11-02 09:54:15-04:00,14400,True,False,"['trace.py', 'trace_snapshot.py', 'span-links-1ec76bd2b47a3880.yaml', 'test_snapshot.py']",['d112da6f3c33c2d20d9b48e10e4e3ecd14653be0'],49,325,374,4,0.11510791366906475,0.0,0.9136690647482014
+3f74a3878be65faae361e5f42f456e2e7443d7b2,"Add `/tracer_flare/v1` endpoint with basic form-field validation. (#145)
+
+Test-agent equivalent of DataDog/datadog-agent#20137",Stuart McCulloch,stuart.mcculloch@datadoghq.com,GitHub,noreply@github.com,2023-11-06 21:31:20+00:00,0,2023-11-06 16:31:20-05:00,18000,True,False,"['README.md', 'agent.py', 'add-tracer_flare-endpoint-b2c81510920974d7.yaml', 'test_agent.py', 'test_tracerflare.py']",['07e1de931f9ad390d47b931677364aa3a0890177'],0,87,87,5,0.3333333333333333,0.6666666666666666,0.9833333333333333
+dff9461ac1cc8af6657f830f872fdcff9a631089,"Add `/test/session/tracerflares` endpoint to return all tracer-flares received by the test agent for a given session token. (#146)
+
+... received by the test agent for a given session token.",Stuart McCulloch,stuart.mcculloch@datadoghq.com,GitHub,noreply@github.com,2023-11-10 15:24:38+00:00,0,2023-11-10 10:24:38-05:00,18000,True,False,"['README.md', 'agent.py', 'tracerflare.py', 'session-tracerflares-400ce9b3d3838b40.yaml', 'test_tracerflare.py']",['3f74a3878be65faae361e5f42f456e2e7443d7b2'],24,107,131,5,0.10869565217391304,1.0,0.9782608695652174
+2f88046662ee1eea879e6546fdde59956aa2e64f,"chore: ignore DSM pathway hash within trace snapshot (#147)
+
+Ignore pathway.hash to prevent trace snapshot failures
+
+Co-authored-by: Kyle Verhoog <kyle@verhoog.ca>",William Conti,58711692+wconti27@users.noreply.github.com,GitHub,noreply@github.com,2023-11-10 12:53:41-05:00,18000,2023-11-10 12:53:41-05:00,18000,True,False,"['trace_snapshot.py', 'ignore-dsm-pathway-hash-during-trace-snapshots-f0b99ea267fbad48.yaml']",['dff9461ac1cc8af6657f830f872fdcff9a631089'],1,5,6,2,,,
+914f37031d31338f2e34d3e4cc09f65359f48bc9,"Fix various types (#150)
+
+Looks like a few things were exposed with more recent mypy releases.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-11-30 20:46:58-05:00,18000,2023-11-30 20:46:58-05:00,18000,True,False,"['main.yml', 'README.md', 'agent.py', 'checks.py', 'remoteconfig.py', 'trace_checks.py', 'tracerflare.py', 'riotfile.py', 'test_deps.txt', 'test_snapshot_integration.py']",['2f88046662ee1eea879e6546fdde59956aa2e64f'],51,59,110,10,0.5555555555555556,1.0,1.0
+3506d91e20baf9b4adf24d5eaa6d00d7d554e6a6,"Ignore aiohttp warnings (#151)
+
+aiohttp warns about using str keys on the app instance as it can
+interfere with mypy typing. Right now it spams up the test logs and we
+don't use it that heavily so ignore the warnings.
+
+More on the warning: https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-11-30 20:52:27-05:00,18000,2023-11-30 20:52:27-05:00,18000,True,False,['setup.cfg'],['914f37031d31338f2e34d3e4cc09f65359f48bc9'],0,2,2,1,,,
+af72328b0d784796f7a0fbdac7a5e9b8d2da95c7,"Run ci on master (#152)
+
+CI no longer runs on every commit (to avoid duplicate runs on PRs) but now it doesn't run on master. Even though PRs have to be up to date in order to be merged, running on master gives some more signal to help identify flaky tests.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-12-01 10:34:29-05:00,18000,2023-12-01 10:34:29-05:00,18000,True,False,['main.yml'],['3506d91e20baf9b4adf24d5eaa6d00d7d554e6a6'],0,3,3,1,,,
+17382932874b34c135db8d8eee5b1b4d6982f38d,"Add support for setting trace sample rates (#149)
+
+This enables the testing of Agent returned sample rates.",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-12-01 12:06:32-05:00,18000,2023-12-01 12:06:32-05:00,18000,True,False,"['README.md', 'agent.py', 'sample-rate-1e06ae4cdc933b14.yaml', 'test_agent.py']",['af72328b0d784796f7a0fbdac7a5e9b8d2da95c7'],7,56,63,4,0.16,1.0,0.24
+b7b7c42479c42ce49c68a64964abfd4b04e36ff3,"Make setup command work universally (#153)
+
+Co-authored-by: Brian Devins-Suresh <brian.devinssuresh@datadoghq.com>",Kyle Verhoog,kyle@verhoog.ca,GitHub,noreply@github.com,2023-12-01 12:21:10-05:00,18000,2023-12-01 12:21:10-05:00,18000,True,False,['README.md'],['17382932874b34c135db8d8eee5b1b4d6982f38d'],1,1,2,1,,,
+97d78ff8478737f164982b58b867737b33fbc69b,Fix handling of traceflare requests (#155),Kevin Gosse,krix33@gmail.com,GitHub,noreply@github.com,2023-12-28 18:59:42+01:00,-3600,2023-12-28 18:59:42+01:00,-3600,True,False,"['agent.py', 'tracerflare.py', 'fix-tracerflare-request-parsing-fae18ff9997c216d.yaml']",['b7b7c42479c42ce49c68a64964abfd4b04e36ff3'],9,17,26,3,1.0,1.0,1.0

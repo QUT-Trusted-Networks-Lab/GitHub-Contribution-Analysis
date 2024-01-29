@@ -1,0 +1,526 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+7dc3291b1e529289e315427ed88caad660626e6d,Initial commit,Russell Haering,russellhaering@gmail.com,Russell Haering,russellhaering@gmail.com,2015-01-21 15:22:14-08:00,28800,2015-01-21 15:22:14-08:00,28800,True,False,['LICENSE'],[],0,202,202,1,,,
+51b05ebb3ac98c5ad95779b4e82e35f62b15afc1,Initial Cookiecutter Commit.,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-26 13:15:28-06:00,21600,2015-01-26 13:15:28-06:00,21600,True,False,"['.coveragerc', '.gitignore', '.gitreview', '.mailmap', '.testr.conf', 'CONTRIBUTING.rst', 'HACKING.rst', 'LICENSE', 'MANIFEST.in', 'README.rst', '__init__.py', '__init__.py', 'base.py', 'test_arsenal.py', 'babel.cfg', 'conf.py', 'contributing.rst', 'index.rst', 'installation.rst', 'readme.rst', 'usage.rst', 'openstack-common.conf', 'requirements.txt', 'setup.cfg', 'setup.py', 'test-requirements.txt', 'tox.ini']",[],0,617,617,27,1.0,1.0,1.0
+ca2194bd2a005bd81dfaf16a5fb8919734727c0a,"Added service module from oslo-incubator.
+
+Updated openstack-common.conf to include the service module.
+
+Synced current version of oslo-incubator service module.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-26 13:36:44-06:00,21600,2015-01-26 13:36:44-06:00,21600,True,False,"['__init__.py', '__init__.py', '_i18n.py', 'eventlet_backdoor.py', 'local.py', 'log.py', 'loopingcall.py', 'service.py', 'systemd.py', 'threadgroup.py', 'openstack-common.conf']",['51b05ebb3ac98c5ad95779b4e82e35f62b15afc1'],0,1866,1866,11,0.5751173708920188,0.6889671361502347,0.7946009389671361
+69874a22d502999371aec2c06a64766964f9053a,"Added bare-bones Arsenal service.
+
+Added a bare service object and console entry script modeled off of the
+ironic project.
+
+Modified setup.cfg to refer to arsenal/cmd/director.py as a console
+entry point.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-26 15:27:41-06:00,21600,2015-01-26 15:27:41-06:00,21600,True,False,"['__init__.py', 'director.py', '__init__.py', 'config.py', 'service.py', 'setup.cfg']",['ca2194bd2a005bd81dfaf16a5fb8919734727c0a'],0,104,104,6,1.0,1.0,1.0
+b88ea07c2bd887765f1fcc75698c41d929cb187c,"Added extremely basic logging.
+
+Added a couple of logging lines to Arsenal's service and proved to
+myself that logging works.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-27 14:21:19-06:00,21600,2015-01-27 14:21:19-06:00,21600,True,False,"['service.py', 'openstack-common.conf', 'setup.cfg']",['ea7452860153bb237855bc1af8ac1136af3642ba'],4,7,11,3,1.0,1.0,1.0
+3a737e6757e97f6d705f19b8dd526c64c3b70e8e,"Add support for travis tests
+
+Adding support for travis.ci to test py27 and pep8.",Jay Faulkner,jay@jvf.cc,Jay Faulkner,jay@jvf.cc,2015-01-27 12:51:19-08:00,28800,2015-01-27 13:11:41-08:00,28800,True,False,['.travis.yml'],['ea7452860153bb237855bc1af8ac1136af3642ba'],0,11,11,1,,,
+c34ffcf206317c00835901c357b41148b846d9fc,Added basic version information into Arsenal.,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-27 15:12:12-06:00,21600,2015-01-27 15:12:12-06:00,21600,True,False,"['config.py', 'version.py']",['b88ea07c2bd887765f1fcc75698c41d929cb187c'],1,24,25,2,1.0,1.0,1.0
+9aee4cb558bd2faab24d17297c6a8b5eb031f86e,"Added logging to Arsenal service start to display configuration
+
+Added some INFO-level log output to display all configuration options.
+Should help debugging in the future.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-27 15:53:31-06:00,21600,2015-01-27 15:53:31-06:00,21600,True,False,['service.py'],['c34ffcf206317c00835901c357b41148b846d9fc'],2,10,12,1,1.0,1.0,1.0
+1c2b356d2d33f280f99c6b24fb5b5218a7289590,"Added Exception file and base exception class
+
+Adds exception.py which contains a general base class, ArsenanalException,
+for Arsenal related exceptions. ArsenanalException is adapted from Nova's
+NovaException.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-28 12:21:03-06:00,21600,2015-01-28 12:21:03-06:00,21600,True,False,['exception.py'],['9aee4cb558bd2faab24d17297c6a8b5eb031f86e'],0,77,77,1,0.09090909090909091,0.09090909090909091,0.09090909090909091
+30e10d520965b2debc2e1e15aa265259766e4ea5,"Pulled in IronicClientWrapper from Openstack Nova.
+
+Also integrated the IronicClientWrapper tests into Arsenal tests.
+Made a few changes to the base test case class to support
+IronicClientWrapper tests.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-28 14:10:09-06:00,21600,2015-01-28 14:10:09-06:00,21600,True,False,"['__init__.py', 'ironic_client_wrapper.py', 'base.py', '__init__.py', 'ironic_utils.py', 'test_ironic_client_wrapper.py', 'requirements.txt', 'test-requirements.txt', 'tox.ini']",['1c2b356d2d33f280f99c6b24fb5b5218a7289590'],1,464,465,9,0.6933333333333334,1.0,0.7022222222222222
+dfe1768c3d7b362ad5248f36734b5e822eeecd87,"Pulled in IronicClientWrapper from Openstack Nova.
+
+Also integrated the IronicClientWrapper tests into Arsenal tests.
+Made a few changes to the base test case class to support
+IronicClientWrapper tests.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-28 14:10:09-06:00,21600,2015-01-28 17:03:23-06:00,21600,True,False,"['exception.py', '__init__.py', 'ironic_client_wrapper.py', 'base.py', '__init__.py', 'ironic_utils.py', 'test_ironic_client_wrapper.py', 'requirements.txt', 'tox.ini']",['1c2b356d2d33f280f99c6b24fb5b5218a7289590'],9,463,472,9,0.7772727272727272,1.0,0.7181818181818181
+0f6131fb05b0471c172b3b5ed0ac6a39bb7e379a,Fix test-requirements.txt,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-28 17:15:11-06:00,21600,2015-01-28 17:15:11-06:00,21600,True,False,['test-requirements.txt'],['a8f97f90fa07b988e1c5d2a449dc04d18dbaee99'],1,1,2,1,,,
+71a1df98f756f5a31800fd94c8584685db8106c2,Added configuration option fix for ArsenalException,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-28 17:34:36-06:00,21600,2015-01-28 17:34:36-06:00,21600,True,False,['exception.py'],['0f6131fb05b0471c172b3b5ed0ac6a39bb7e379a'],0,7,7,1,,,
+509c7e78312b1cc52a64da3bb15668aa5f11a426,"Added enough capability to run a periodic task
+
+Changes include:
+- Pulled in periodic_task from oslo-incubator.
+- Created DirectorScheduler class which derivces from PeriodicTask.
+- Added a bare periodic task to DirectorSchedler.
+- Integrated DirectorScheduler with ArsenalService so that the
+        DirectorSchedler's periodic tasks are run from the service.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-28 19:11:19-06:00,21600,2015-01-28 19:15:36-06:00,21600,True,False,"['service.py', '__init__.py', 'scheduler.py', 'periodic_task.py', 'openstack-common.conf']",['0f6131fb05b0471c172b3b5ed0ac6a39bb7e379a'],2,279,281,5,0.4537037037037037,0.7685185185185185,0.6296296296296297
+7e8ac07f743353a9dad1fb297bf9141a6ef4382d,"Moved configuration options from test to ironic_client_wrapper
+
+More appropriate place for those configuration options. At least for
+now.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-29 09:33:35-06:00,21600,2015-01-29 09:33:35-06:00,21600,True,False,"['ironic_client_wrapper.py', 'test_ironic_client_wrapper.py']",['71a1df98f756f5a31800fd94c8584685db8106c2'],34,36,70,2,,,
+5f813f871197da8cc07a3505258d15d0a8ecd176,Update README.rst,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-29 13:00:28-06:00,21600,2015-01-29 13:00:28-06:00,21600,True,False,['README.rst'],['0e44c24b5130eab5d23dba53da16218003460072'],7,9,16,1,,,
+38a7c24e476e5d45faf8e8bc5c4d370ac0ff696d,"Add Travis build image to README.rst
+
+and make the first list fall under the 'About' section",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-29 20:16:54-06:00,21600,2015-01-29 20:16:54-06:00,21600,True,False,['README.rst'],['5f813f871197da8cc07a3505258d15d0a8ecd176'],2,7,9,1,,,
+d7f9abd9bea1f10ddb2ab0790970959dc08b9dc7,Add TODO about measuring cache hits/misses,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-01-29 20:25:27-06:00,21600,2015-01-29 20:25:27-06:00,21600,True,False,['README.rst'],['38a7c24e476e5d45faf8e8bc5c4d370ac0ff696d'],0,1,1,1,,,
+81822fdc3a72cd65d761e0f396cd40e6cf7eec00,Fixed linked to build status image in README.rst,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-02 15:36:52-06:00,21600,2015-02-02 15:36:52-06:00,21600,True,False,['README.rst'],['d7f9abd9bea1f10ddb2ab0790970959dc08b9dc7'],2,2,4,1,,,
+4f05b255a4840cf11f64942ca6e4e038a9461eeb,Added pin requirements to TODO,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-02 15:38:02-06:00,21600,2015-02-02 15:38:02-06:00,21600,True,False,['README.rst'],['81822fdc3a72cd65d761e0f396cd40e6cf7eec00'],0,1,1,1,,,
+171e31294b04c15bf30d77d4cf59bc121ea2a0f1,"Garbage commit, not in a fully working state
+
+But I want it backed up. I will amend this later.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-04 17:28:03-06:00,21600,2015-02-06 17:38:21-06:00,21600,True,False,"['SimpleProportionStrategy.py', '__init__.py', 'base.py']",['1528c740ec16cb56fd8c3deeb10e263b6b2c4c10'],0,309,309,3,0.7443609022556391,0.8721804511278195,0.7518796992481203
+26d9c5daa9b56dd51182d27a1b588dd94fe21350,"Initial 'working' version of SimpleProportionStrategy
+
+Initial working version of SimpleProportionStrategy.
+
+Added a fairly good test that checks the directives to see if they are
+fulfilling the proportion strategy. Needs more tests, and some
+refactoring of some code from simple_proportional_strategy into base.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-10 17:48:31-08:00,28800,2015-02-10 17:48:31-08:00,28800,True,False,"['base.py', 'simple_proportional_strategy.py', '__init__.py', 'test_simple_proportional_strategy.py']",['6e4a8d4e5bfaf00462162e8e2e6ed3f2c2ca2ae9'],45,209,254,4,0.2087912087912088,0.8791208791208791,0.989010989010989
+98d5dfba3f22ceadfd8e20f750d4168da70c9400,"Refactored a bit to segment the directives method
+
+Should promote more reuse of the code written in the future.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-11 11:32:11-08:00,28800,2015-02-11 11:32:11-08:00,28800,True,False,"['base.py', 'simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['26d9c5daa9b56dd51182d27a1b588dd94fe21350'],32,52,84,3,1.0,1.0,0.3684210526315789
+c1c40ae57de8a2ac6f4ffe240629b2799a440d18,Fixed pep8 issues with strategy work,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-11 17:08:08-08:00,28800,2015-02-11 17:08:08-08:00,28800,True,False,"['base.py', 'simple_proportional_strategy.py', 'test_simple_proportional_strategy.py', 'tox.ini']",['98d5dfba3f22ceadfd8e20f750d4168da70c9400'],119,141,260,4,0.0,1.0,1.0
+98cbf9bce247a58127ad39ad47d6712edc9bba9b,"Added node ejection behavior test for SimpleProportionalStrategy
+
+Also refactored things a little in SimpleProportionalStrategy",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-12 11:27:08-08:00,28800,2015-02-12 11:27:08-08:00,28800,True,False,"['simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['c1c40ae57de8a2ac6f4ffe240629b2799a440d18'],22,36,58,2,0.0,1.0,1.0
+c05a63941d3e5cee6a5ee7ddd54b418db7d5b2dc,"Garbage commit, not in a fully working state
+
+But I want it backed up. I will amend this later.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-04 17:28:03-06:00,21600,2015-02-12 11:59:23-08:00,28800,True,False,"['SimpleProportionStrategy.py', '__init__.py', 'base.py']",['d81baa410c71deb3c0c4ce717c4670f48ef36410'],0,309,309,3,0.7443609022556391,0.8721804511278195,0.7518796992481203
+a8ad7088fe398fc6bf684cf274d629186f8de99b,"Initial 'working' version of SimpleProportionStrategy
+
+Initial working version of SimpleProportionStrategy.
+
+Added a fairly good test that checks the directives to see if they are
+fulfilling the proportion strategy. Needs more tests, and some
+refactoring of some code from simple_proportional_strategy into base.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-10 17:48:31-08:00,28800,2015-02-12 11:59:23-08:00,28800,True,False,"['base.py', 'simple_proportional_strategy.py', '__init__.py', 'test_simple_proportional_strategy.py']",['c05a63941d3e5cee6a5ee7ddd54b418db7d5b2dc'],45,209,254,4,0.2087912087912088,0.8791208791208791,0.989010989010989
+55496bc2f0429484421c09add6008f9236ffa892,"Refactored a bit to segment the directives method
+
+Should promote more reuse of the code written in the future.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-11 11:32:11-08:00,28800,2015-02-12 11:59:23-08:00,28800,True,False,"['base.py', 'simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['a8ad7088fe398fc6bf684cf274d629186f8de99b'],32,52,84,3,1.0,1.0,0.3684210526315789
+f1d1f6c6b9aceaeb98e34f776855f100d0c34034,Fixed pep8 issues with strategy work,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-11 17:08:08-08:00,28800,2015-02-12 11:59:23-08:00,28800,True,False,"['base.py', 'simple_proportional_strategy.py', 'test_simple_proportional_strategy.py', 'tox.ini']",['55496bc2f0429484421c09add6008f9236ffa892'],119,141,260,4,0.0,1.0,1.0
+46c50a2c29a484f1c1fd7c833f5ce576ab9fd7fe,"Added node ejection behavior test for SimpleProportionalStrategy
+
+Also refactored things a little in SimpleProportionalStrategy",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-12 11:27:08-08:00,28800,2015-02-12 11:59:23-08:00,28800,True,False,"['simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['f1d1f6c6b9aceaeb98e34f776855f100d0c34034'],22,36,58,2,0.0,1.0,1.0
+d8e4bb88df51bae4ae3c73381de795da0dcefa46,"Addressed brad's comments from pr review
+
+Removed unnecesary random.seed calls
+
+Made node selection for cache_nodes a bit cleaner.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-13 11:05:56-08:00,28800,2015-02-13 11:05:56-08:00,28800,True,False,"['simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['534397768f82773e5f13873aa647aa9b1bb18b43'],63,57,120,2,1.0,0.0,0.25
+674df4f4cc4729dc4ea7dd3ddf633edb0d8cbbd7,"Added bounds checking for percentage in SimpleProportionalStrategy
+
+With an exception and tests.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-15 21:40:32-06:00,21600,2015-02-15 21:40:32-06:00,21600,True,False,"['simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['d8e4bb88df51bae4ae3c73381de795da0dcefa46'],0,30,30,2,1.0,1.0,1.0
+0158059a72abab02fcb0a5b3eae91a2997ec92d5,"Added easier to read __str__ functions to StrategyInput objects
+
+Also fixed format string handling in StrategyAction object",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-17 12:19:53-06:00,21600,2015-02-17 12:19:53-06:00,21600,True,False,['base.py'],['d5cf69febce804354df5ef711ebdedb5e7b1de88'],3,17,20,1,1.0,1.0,0.75
+e650c00f10d7ddc9b9a3525a10c6bf3b71b869f1,"Corrected strategy behavior
+
+Before, it was trying to cache nodes as a proportion of nodes available
+for caching, and not as a porportion of unprovisioned nodes, which is
+the correct behavior.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-17 12:21:04-06:00,21600,2015-02-17 12:21:04-06:00,21600,True,False,['simple_proportional_strategy.py'],['0158059a72abab02fcb0a5b3eae91a2997ec92d5'],16,36,52,1,1.0,1.0,0.6923076923076923
+345fbfa89551f0cde211a0bfc7ab74fa0fff64b7,"Fixed tests to test proportion cached against individual flavors
+
+not the entire pool of nodes.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-17 12:31:23-06:00,21600,2015-02-17 12:31:23-06:00,21600,True,False,['test_simple_proportional_strategy.py'],['e650c00f10d7ddc9b9a3525a10c6bf3b71b869f1'],33,56,89,1,0.6666666666666666,1.0,0.0
+1e0883547412967c38527fdcbab8448d8d2f2ee6,Fixed pep8 issues,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-17 13:05:38-06:00,21600,2015-02-17 13:05:38-06:00,21600,True,False,"['base.py', 'simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['345fbfa89551f0cde211a0bfc7ab74fa0fff64b7'],38,25,63,3,0.0,0.0,0.3333333333333333
+e9990f5173a183071ffabc2bc55d8ebb82ce17aa,"Create NovaClientWrapper to wrap novaclient
+
+Also added novaclient to requirements and pinned ironicclient
+requirement.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-19 17:38:56-06:00,21600,2015-02-19 17:38:56-06:00,21600,True,False,"['nova_client_wrapper.py', 'test_nova_client_wrapper.py', 'requirements.txt']",['b434d8b62fe9195d7640615db07c0d3ba63cc6c4'],1,333,334,3,0.6891891891891891,1.0,0.6013513513513513
+fdc4cded1e8daceb87025771aec61d2d0b5da2fd,"Fixed problems with NovaClientWrapper
+
+and accompanying tests. Tests pass, and I have run-time experience
+seeing the wrapper and actual client calls succeed.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-23 19:02:07-06:00,21600,2015-02-23 19:02:58-06:00,21600,True,False,"['nova_client_wrapper.py', 'test_nova_client_wrapper.py']",['e9990f5173a183071ffabc2bc55d8ebb82ce17aa'],26,45,71,2,0.1,1.0,0.9
+9b58d3a45dc2aa9be6e294926083f618d1c477de,"Added ability to dynamically load a Strategy
+
+Added functionality to dynamically load and return a configured
+Strategy object.
+
+Added exceptions to raise if importing and instantiating the strategy
+object goes wrong.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-23 19:04:59-06:00,21600,2015-02-23 19:04:59-06:00,21600,True,False,['base.py'],['fdc4cded1e8daceb87025771aec61d2d0b5da2fd'],0,61,61,1,0.0,1.0,1.0
+7e42363e7b51eebfb846ec96dcac53aca71ded29,"Added Scout class to retrieve data from Ironic and Nova
+
+Scout will retrieve data from Ironic and Nova, and convert the data to
+forms easily consumable by strategy objects.
+
+Also added some periodic tasks to the scheduler to retrieve data using
+Scout.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-02-23 19:08:18-06:00,21600,2015-02-23 19:08:18-06:00,21600,True,False,"['scheduler.py', 'scout.py']",['9b58d3a45dc2aa9be6e294926083f618d1c477de'],5,111,116,2,1.0,1.0,1.0
+ac87fe5d45993489a8ecaf993e3ca55b267d81da,"Refactored client wrappers
+
+Now wrapped clients will derive from OpenstackClientWrapper, which
+provides client caching, and call retrying.
+
+Adapted NovaClientWrapper and IronicClientWrapper to use
+OpenstackClientWrapper.
+
+Updated tests to reflect the new reality.
+
+Updated novaclient requirement to use 2.22.0.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-03-13 15:37:03-05:00,18000,2015-03-16 10:14:52-05:00,18000,True,False,"['client_wrapper.py', 'ironic_client_wrapper.py', 'nova_client_wrapper.py', 'test_client_wrapper.py', 'test_ironic_client_wrapper.py', 'test_nova_client_wrapper.py', 'requirements.txt']",['7e42363e7b51eebfb846ec96dcac53aca71ded29'],368,403,771,7,0.0,0.0,1.0
+d1eef4e72a062f77acb60b478a1563c861e62f5b,"Adding glance client to requirements and a glance client wrapper
+
+Adds a requirement for the glance client, as well as a wrapper for it,
+and appropriate tests.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-03-16 11:45:25-05:00,18000,2015-03-16 11:45:25-05:00,18000,True,False,"['client_wrapper.py', 'glance_client_wrapper.py', 'test_glance_client_wrapper.py', 'requirements.txt']",['df3dd21f682b49a58818f26b7a557a04ca0638e5'],0,182,182,4,0.42857142857142855,1.0,1.0
+b207307b536eeac643be6b15d1222d8365919eb2,"Clean up some cruft
+
+This commit removes lots of OpenStack cruft that was pulled in via
+cookiecutter or whatever.",Jim Rollenhagen,jim@jimrollenhagen.com,Jim Rollenhagen,jim@jimrollenhagen.com,2015-03-19 16:33:14-07:00,25200,2015-03-19 16:33:14-07:00,25200,True,False,"['CONTRIBUTING.rst', 'HACKING.rst', 'README.rst', 'conf.py', 'index.rst', 'installation.rst', 'usage.rst', 'setup.cfg']",['0cd992211c1b186dbecb0509c2314ad3941c71f9'],45,24,69,8,,,
+59245d65e59e2027877fd50001fb9437eb3577c8,"A big fat commit
+
+Please forgive me. I'm going add a bunch of things in one commit.
+
+- Fixed startup so configuration file is loaded before director module
+        is loaded at director startup.
+- Added utility module to arsenal.common
+- Added LoadClass which provides a somewhat simple way to load a module
+        and class for instantiation dynamically.
+- Made the Scout class abstract.
+- Create an OnMetalScout class which scouts specifically for OnMetal.
+        May need to abstract some of the functionality upwards out of
+        OnMetalScout so it's easier to reuse in other scouts.
+- Updated DirectorScheduler class to load configured scout class using
+        LoadClass.
+- DirectorScheduler now supports a dry run feature, where it will
+        gather information and get directives from the configured
+        strategy, but not execute any of the actions/directives.
+- DirectorScheduler supports configurable spacing for issuing
+        directives and gathering information.
+- Added checksum field to ImageInput in arsenal.strategy.base
+- Added flavor name field to NodeInput in arsenal.strategy.base
+- Added requirement on pyrax because glanceclient :(
+        I want to fix this dependency on pyrax asap.
+- Minor things I'm forgetting.
+
+The upside is this commit brings Arsenal within the realm of minimum
+viable product, which is exciting. Definitely needs more testing
+though. Especially against Ironic with my agent caching patch.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-03-19 20:35:50-05:00,18000,2015-03-19 20:35:50-05:00,18000,True,False,"['director.py', 'service.py', 'util.py', 'onmetal_scout.py', 'scheduler.py', 'scout.py', 'glance_client_wrapper.py', 'base.py', 'simple_proportional_strategy.py', 'test_glance_client_wrapper.py', 'test_simple_proportional_strategy.py', 'requirements.txt']",['0cd992211c1b186dbecb0509c2314ad3941c71f9'],170,476,646,12,0.9205298013245033,1.0,0.8675496688741722
+f2ae4aec7c281c95704b506147a20a4ae4442c98,"Changes after testing against DevStack
+
+Apologies again for a somewhat unfocused commit.
+
+* Added a DevStack scout which should work for testing Aresnal in
+        DevStack using the example agent driver Ironic DevStack configuration.
+* A few small tweaks to OnMetalScout which solves issues found in
+         testing.
+* Small change to the DirectorScheduler to tie updating Ironic node
+        state to generating strategy directives.
+* Made the SimpleProportionalStrategy percentage a configuration option
+        instead of a class argument.
+* Change SimpleProportionalStrategy behavior to not try to
+        cache 'fractional' nodes in order to meet or exceed the
+        percentage directive. This avoids behavior where Arsenal will
+        always cache the last unprovisioned node in order to meet its
+        caching goal, in exchange for not always strictly meeting the
+        caching goal.
+* Updated SimpleProportionalStrategy tests to match behavior.
+* Added an example arsenal configuration file.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-02 14:11:00-05:00,18000,2015-04-02 14:11:00-05:00,18000,True,False,"['devstack_scout.py', 'onmetal_scout.py', 'scheduler.py', 'client_wrapper.py', 'simple_proportional_strategy.py', 'test_simple_proportional_strategy.py', 'arsenal.conf']",['59245d65e59e2027877fd50001fb9437eb3577c8'],49,268,317,7,0.0,1.0,0.9253731343283582
+af89ec96b2fea73e86ed8037a53c834e13a73b88,Removed unnecessary parans,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-07 12:36:27-05:00,18000,2015-04-07 12:36:27-05:00,18000,True,False,['onmetal_scout.py'],['f2ae4aec7c281c95704b506147a20a4ae4442c98'],2,2,4,1,,,
+837244bace923341c1bd838aed589b86da0d0953,"Replace glance client wrapper use of pyrax with keystone-client
+
+Adjusts tests and requirements accordingly.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-07 12:37:53-05:00,18000,2015-04-07 12:37:53-05:00,18000,True,False,"['glance_client_wrapper.py', 'test_glance_client_wrapper.py', 'requirements.txt']",['af89ec96b2fea73e86ed8037a53c834e13a73b88'],19,21,40,3,0.0,1.0,0.0
+a34dd9fc1e2967cb819d6eebbf85d66e98f67d8d,"Add tests for OnMetalScout
+
+Adds some basic tests for the OnMetalScout class.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-07 12:40:06-05:00,18000,2015-04-07 12:40:06-05:00,18000,True,False,['test_onmetal_scout.py'],['837244bace923341c1bd838aed589b86da0d0953'],0,188,188,1,0.7301587301587301,1.0,0.9523809523809523
+511a19e0f5d8f79f3bb5c48cf33b539bd0436166,Update README.rst,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-10 16:39:21-05:00,18000,2015-04-10 16:39:21-05:00,18000,True,False,['README.rst'],['29ff964d31b9d4b08268087f18a057a2e69a40c7'],8,22,30,1,,,
+c008e901653f74b7258d88243bdc264ebf5e2fca,Make configuration options with sensitive data 'secret',Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-10 17:36:40-05:00,18000,2015-04-10 17:36:40-05:00,18000,True,False,"['client_wrapper.py', 'glance_client_wrapper.py', 'ironic_client_wrapper.py', 'nova_client_wrapper.py']",['511a19e0f5d8f79f3bb5c48cf33b539bd0436166'],0,8,8,4,,,
+f1f530fef0022b00cc3f56faf5c281dcc8b4172a,Pull in updated oslo-incubator files,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-20 15:26:21-05:00,18000,2015-04-20 15:26:21-05:00,18000,True,False,"['_i18n.py', 'eventlet_backdoor.py', 'loopingcall.py', 'periodic_task.py', 'service.py', 'systemd.py', 'threadgroup.py']",['c008e901653f74b7258d88243bdc264ebf5e2fca'],30,34,64,7,0.3333333333333333,0.3333333333333333,0.5
+655dad563c70d71d5f3967ac124c8aa684265f78,"Add run_tests.sh and necessary support files to run with Jenkins
+
+Includes updating openstack-common.conf to pull in
+install_venv_common.py and with_venv.sh scripts.
+
+run_tests.sh adapted from Ironic run_tests.sh",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-20 15:29:43-05:00,18000,2015-04-20 15:29:43-05:00,18000,True,False,"['openstack-common.conf', 'run_tests.sh', 'colorizer.py', 'install_venv.py', 'install_venv_common.py', 'with_venv.sh']",['f1f530fef0022b00cc3f56faf5c281dcc8b4172a'],0,841,841,6,0.5701492537313433,0.9432835820895522,0.7014925373134329
+18646fccd914b470b11b5583499a272e098c7fc3,make SimpleProportionalStrategy.directives always return a list,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-23 12:30:05-05:00,18000,2015-04-23 12:30:05-05:00,18000,True,False,['simple_proportional_strategy.py'],['0f446d04cbec581593e0c891708f19ef82e48c0b'],3,3,6,1,,,
+1e05d5ef69e84a0311cf41682003cef8eac6f8cb,Add an unauthorized exception test for OpenstackClientWrapper,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-23 12:31:33-05:00,18000,2015-04-23 12:31:33-05:00,18000,True,False,['test_client_wrapper.py'],['18646fccd914b470b11b5583499a272e098c7fc3'],1,21,22,1,1.0,1.0,0.07692307692307693
+96d5e6c528e2d377b5a0336a8591e50cefd5871d,"Add function arg to GlanceClientWrapper to get an auth token
+
+Allows authorization methods outside of keystone (read rackspace) for
+the glanceclient.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-23 12:32:53-05:00,18000,2015-04-23 12:32:53-05:00,18000,True,False,['glance_client_wrapper.py'],['1e05d5ef69e84a0311cf41682003cef8eac6f8cb'],7,14,21,1,0.4,1.0,1.0
+77aeecd471c83e723befac9b09c1cbdf28f5bfdf,Handle generators in OpenstackClientWrapper.call,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-23 12:39:19-05:00,18000,2015-04-23 12:39:19-05:00,18000,True,False,['client_wrapper.py'],['96d5e6c528e2d377b5a0336a8591e50cefd5871d'],2,16,18,1,0.0,0.0,0.0
+6efb6d7533c75b068e51c1bcb696956990814622,Add pyrax auth function for glance client in OnMetalScout,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-23 12:39:54-05:00,18000,2015-04-23 12:39:54-05:00,18000,True,False,['onmetal_scout.py'],['77aeecd471c83e723befac9b09c1cbdf28f5bfdf'],1,18,19,1,1.0,1.0,1.0
+781363eba82b976f06a4a5c61a2c1f05a1e0344e,Remove abuse of map in DirectorScheduler,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-23 12:41:22-05:00,18000,2015-04-23 12:41:22-05:00,18000,True,False,['scheduler.py'],['6efb6d7533c75b068e51c1bcb696956990814622'],1,2,3,1,0.0,1.0,1.0
+c389986e2d5a5516df4be8cd787a356e8c9b823d,Modify DevStackScout to avoid OnMetalScout's pyrax behavior,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-23 12:55:56-05:00,18000,2015-04-23 12:55:56-05:00,18000,True,False,['devstack_scout.py'],['781363eba82b976f06a4a5c61a2c1f05a1e0344e'],0,10,10,1,1.0,1.0,1.0
+4cb5fb9401d0cd579b181696b0fd04397bf394bc,Simplify generator to list conversion in OpenstackClientWrapper.call,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-23 18:32:20-05:00,18000,2015-04-23 18:32:20-05:00,18000,True,False,['client_wrapper.py'],['c389986e2d5a5516df4be8cd787a356e8c9b823d'],5,2,7,1,1.0,1.0,1.0
+e6ad9f5ed75087e6a4b85e86c989ffc972b29547,"Fix bug in OpenstackClientWrapper.call introduced in previous commit
+
+Not every call is going to return a list. So don't return list(result)
+if the return type is not a generator.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-24 15:01:23-05:00,18000,2015-04-24 15:01:23-05:00,18000,True,False,['client_wrapper.py'],['4cb5fb9401d0cd579b181696b0fd04397bf394bc'],1,1,2,1,,,
+7d8bd0e6d1e2e099ef84b4d6da05fae9f57f2090,Add eventlet to requirements.txt for oslo-incubator,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-29 12:54:54-05:00,18000,2015-04-29 12:54:54-05:00,18000,True,False,['requirements.txt'],['aae314dff4746a0e65e97842c1f609dbcd95d525'],0,1,1,1,,,
+399d1de1d34222018ff623c55a6a47632ee47ec7,Explitly select 'rackspace' auth system in pyrax for OnMetalScout,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-04-29 18:38:52-05:00,18000,2015-04-29 18:38:52-05:00,18000,True,False,['onmetal_scout.py'],['7d8bd0e6d1e2e099ef84b4d6da05fae9f57f2090'],0,1,1,1,1.0,1.0,1.0
+96fe76f109f218e9b07e0defee17b8be6ab30dd0,Update README.rst,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-07 15:48:21-05:00,18000,2015-05-07 15:48:21-05:00,18000,True,False,['README.rst'],['4bb56544c0332f746aecedd0547567799d9c3c8c'],8,1,9,1,,,
+277f687d51a05d06346d0c8ae075d6a5a7c47bb9,Use the sphinx 'read the docs' theme instead of the OpenStack theme.,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-08 17:32:51-05:00,18000,2015-05-08 17:32:51-05:00,18000,True,False,['conf.py'],['96fe76f109f218e9b07e0defee17b8be6ab30dd0'],2,1,3,1,,,
+dfd8eb6bc873a3e46b989dcd08c708c9770d7340,"Add some documentation around installing and configuring Arsenal.
+
+As well as a few changes to the index and root README.rst",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-08 17:34:25-05:00,18000,2015-05-08 17:34:25-05:00,18000,True,False,"['README.rst', 'configuration.rst', 'index.rst', 'installation.rst']",['277f687d51a05d06346d0c8ae075d6a5a7c47bb9'],8,192,200,4,,,
+24160d1b30b3ac02b3a668545079c86e97582943,Remove non-existant reference to root-level CONTRIBUTING.rst,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-08 17:35:09-05:00,18000,2015-05-08 17:35:09-05:00,18000,True,False,['contributing.rst'],['dfd8eb6bc873a3e46b989dcd08c708c9770d7340'],1,1,2,1,,,
+02b42c04d89d0177905d71e74ae9626071cab5aa,"Add more documentation.
+
+Strategy & Scout design documentation.
+Documentation around using arsenal-director.
+Some additions and fixes to configuration documentation.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-11 18:22:46-05:00,18000,2015-05-11 18:22:46-05:00,18000,True,False,"['configuration.rst', 'design.rst', 'index.rst', 'usage.rst']",['24160d1b30b3ac02b3a668545079c86e97582943'],24,215,239,4,,,
+9b728647198b20f4851c4918ddc8f60e8c9d9b3b,Fixed some grammatical/syntax issues in the design documentation page,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-12 12:26:30-05:00,18000,2015-05-12 12:26:30-05:00,18000,True,False,['design.rst'],['02b42c04d89d0177905d71e74ae9626071cab5aa'],8,14,22,1,,,
+9127683c585e77765e1d1e7a86126520f530e0f2,"Added content to the 'contributing' documentation page
+
+Described a simple workflow for making contributions to Arsenal.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-12 12:27:19-05:00,18000,2015-05-12 12:27:19-05:00,18000,True,False,['contributing.rst'],['9b728647198b20f4851c4918ddc8f60e8c9d9b3b'],0,34,34,1,,,
+b2e608e16972bf6d6107ce5b646f250664970468,"Update README.rst
+
+Add documentation badge from readthedocs.org
+Add link to hosted built HTML documentation
+Add instructions on how to build documentation locally",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-12 13:57:20-05:00,18000,2015-05-12 13:57:20-05:00,18000,True,False,['README.rst'],['59aec7507e8cb1230b35b738f0e54e3775c28782'],0,16,16,1,,,
+98acb8cb9898c03d5ec0a6af2ae80f96c688b3d9,"Add RateLimiter object and accompanying tests
+
+Provides an object which rate limits items being withdrawn from the
+limiter.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-13 14:10:02-05:00,18000,2015-05-13 14:10:02-05:00,18000,True,False,"['rate_limiter.py', '__init__.py', 'test_rate_limiter.py']",['9127683c585e77765e1d1e7a86126520f530e0f2'],0,215,215,3,0.45045045045045046,1.0,0.8468468468468469
+649e73d0f2a9aa666d5c828f7c6da49289c0c2e8,"Add cache directive rate limiting
+
+Adds cache directive rate limiting to Arsenal
+Adds documentation for cache directive rate limiting
+Adds example for rate limiting in arsenal.conf",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-13 14:13:55-05:00,18000,2015-05-13 14:13:55-05:00,18000,True,False,"['scheduler.py', 'configuration.rst', 'design.rst', 'arsenal.conf']",['98acb8cb9898c03d5ec0a6af2ae80f96c688b3d9'],7,91,98,4,0.9310344827586207,1.0,1.0
+1de21ebe7d2c90f4d7492094a9d2f4573508c0a9,"Add arsenal.director.scheduler tests
+
+Also fix a couple of things uncovered by unit tests.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-14 12:53:12-05:00,18000,2015-05-14 12:53:12-05:00,18000,True,False,"['scheduler.py', '__init__.py', 'test_scheduler.py']",['649e73d0f2a9aa666d5c828f7c6da49289c0c2e8'],2,96,98,3,1.0,1.0,0.8775510204081632
+24de897cb9d1915f89f4e1cf9b6ddacd1b7c8691,"Small NOTE addition.
+
+Also, trying out Github's feature where you can close an issue from a
+commit message. Since this will be part of the pull request to add
+cache directive rate-limiting.
+
+Closes #22",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-14 15:14:48-05:00,18000,2015-05-14 15:14:48-05:00,18000,True,False,['scheduler.py'],['820cff6ee3e87f06b0c732295f317890b6bb0d77'],3,3,6,1,,,
+ea0d2dd198415d2ba3feea1693255fe39a92bc92,"Handle time going backwards in RateLimiter
+
+Adds test case and some code to handle the case where system time is
+set to a time before the current limit period starts. Seeing how its an
+unlikely/uncommon case, the best way to handle seems to be just
+starting a new limit period. Otherwise the limit period could stretch
+on for a very long time.
+
+Sometime repeatedly turning back the clock would break the rate limit
+behavior, but you've got bigger problems if that's happening imho.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-18 13:28:22-05:00,18000,2015-05-18 13:28:22-05:00,18000,True,False,"['rate_limiter.py', 'test_rate_limiter.py']",['24de897cb9d1915f89f4e1cf9b6ddacd1b7c8691'],1,18,19,2,1.0,1.0,0.0
+bf0a7ecd0790f09db696f2964b1df71a6402e834,Small style fix to scheduler.py,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-19 13:47:47-05:00,18000,2015-05-19 13:47:47-05:00,18000,True,False,['scheduler.py'],['ea0d2dd198415d2ba3feea1693255fe39a92bc92'],4,4,8,1,,,
+3e9210dfb9d7de1afbce3f7529caba7440a3c28e,"Upgrade some useful debug-level log messages to info
+
+This closes #29.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-21 13:06:16-05:00,18000,2015-05-21 13:09:17-05:00,18000,True,False,"['onmetal_scout.py', 'scheduler.py', 'client_wrapper.py']",['24160d1b30b3ac02b3a668545079c86e97582943'],17,15,32,3,1.0,0.0,0.0
+4c96a142cc35a52409cc42360319131aa1548a36,"Changed logging around retry-able exceptions in client_wrapper
+
+In response to review from slick666.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-21 13:41:13-05:00,18000,2015-05-21 13:49:09-05:00,18000,True,False,['client_wrapper.py'],['f8b81d752182c4a3415f6fcf06267468c3cbee84'],2,2,4,1,,,
+e6c1da4a6a226c8ca38783acb683c55928a50f20,"Update the package name and version to 1.0.0.b
+
+Signifying a beta release.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-27 15:20:31-05:00,18000,2015-05-27 15:20:31-05:00,18000,True,False,['setup.cfg'],['4c96a142cc35a52409cc42360319131aa1548a36'],5,8,13,1,,,
+0ea821d46a4f20a422c65d5741220786d823cd63,Add documentation on how to obtain Arsenal from pip,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-28 17:06:19-05:00,18000,2015-05-28 17:06:19-05:00,18000,True,False,['installation.rst'],['c10b2f018a68bfc6c8cb7ec1ea1e97cad207ccb4'],11,31,42,1,,,
+844bda90cf6aa374b008d0ddcedc1559e0e5a19b,"Refactor generic code from SimpleProportionalStratety into base
+
+Closes #24",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-29 12:48:59-05:00,18000,2015-05-29 13:46:28-05:00,18000,True,False,"['base.py', 'simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['0ea821d46a4f20a422c65d5741220786d823cd63'],109,118,227,3,1.0,1.0,0.0
+23370ee8b0f521afddfa6236fef82e26f0eca121,"Add some tests for functionality found in arsenal.strategy.base
+
+Mainly test the image/flavor difference functions for now.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-05-29 13:47:15-05:00,18000,2015-05-29 13:47:15-05:00,18000,True,False,"['test_simple_proportional_strategy.py', 'test_strategy_base.py']",['844bda90cf6aa374b008d0ddcedc1559e0e5a19b'],22,171,193,2,0.8490566037735849,1.0,1.0
+16bb6fccfd8ac1e5749b33a9d72dfe72517782ec,"Fix incorrect package name fed to pbr.
+
+Fixes #36",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-06-09 13:19:51-05:00,18000,2015-06-09 13:23:55-05:00,18000,True,False,"['__init__.py', 'version.py']",['c53cf9eadca2da395e7d0103a48554c4ea7f2663'],5,2,7,2,,,
+16e25825b8d272fdab178f7f080b00f95919598c,"Fix log statement
+
+Fix an improperly formed dictionary argument to log function.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-06-09 15:45:37-05:00,18000,2015-06-09 15:45:37-05:00,18000,True,False,['scheduler.py'],['bb0cf1a7ffd4c87651f07bab12ad992cce8a0073'],1,1,2,1,,,
+3dff6cb0f559cb3ac2e7d1928648fa2532e701b6,"Fix OnMetalScout so it sees nodes in maintenance as provisioned
+
+Fixes #39",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-06-09 21:59:48-05:00,18000,2015-06-10 08:42:06-05:00,18000,True,False,"['onmetal_scout.py', 'test_onmetal_scout.py']",['7987294d461bcd965b8788e01f9a0072dba0763d'],1,28,29,2,1.0,1.0,1.0
+76fbac5e4d3067fc098192d144129922261411cd,"Fix eject node behavior in OnMetalScout
+
+Instead of setting an available node to 'deleted', we now first
+send the node to 'manage', and then 'provide' which will send the node
+through cleaning, thus removing the cached image and reseting the state
+of the machine to before it was cached.
+
+Fixes #41",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-06-22 12:52:52-05:00,18000,2015-06-22 13:06:55-05:00,18000,True,False,"['onmetal_scout.py', 'test_onmetal_scout.py']",['3dff6cb0f559cb3ac2e7d1928648fa2532e701b6'],1,21,22,2,0.1111111111111111,1.0,1.0
+6c154db40c645b0f43cd0b74adc6bfb40fafdb52,Node provision states must be lower-case,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-06-22 13:41:46-05:00,18000,2015-06-22 13:41:46-05:00,18000,True,False,"['onmetal_scout.py', 'test_onmetal_scout.py']",['220af12ad5b4d38e938b2c403bc6bf03caa787b9'],4,4,8,2,,,
+18f08e10cc9621126a2dbfd6b37a44119360fe9e,Update requirements to newer version and pin,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-06-22 17:03:32-05:00,18000,2015-06-22 17:03:32-05:00,18000,True,False,['requirements.txt'],['e71f6f20ee80ecfcc0e271753e4aee581c62bfd5'],4,4,8,1,,,
+6776afbe701998bf38295a59ad776208bcf17c1e,"Fix SimpleProportionalStrategy ejecting provisioned nodes
+
+Fixes #44",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-06-22 17:04:46-05:00,18000,2015-06-22 17:04:46-05:00,18000,True,False,"['simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['18f08e10cc9621126a2dbfd6b37a44119360fe9e'],1,17,18,2,1.0,1.0,1.0
+fabfdbce9ecaf79c607b1782a1d38c3d5763b6a2,Add a small helpful rate limiting log message,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-06-22 17:07:08-05:00,18000,2015-06-22 17:07:08-05:00,18000,True,False,['scheduler.py'],['6776afbe701998bf38295a59ad776208bcf17c1e'],0,2,2,1,1.0,1.0,1.0
+74610c60d07f8a28bac79148ece0bbd8c0ad39dd,"Add weighted image selection
+
+Adds weighted image selection related code to the strategy base, along
+with tests, and has SimpleProportionalStrategy begin to use it.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-07 09:32:30-05:00,18000,2015-07-08 14:15:34-05:00,18000,True,False,"['base.py', 'simple_proportional_strategy.py', 'test_strategy_base.py']",['7d11c3f2db53326dc8f32ddb93e3460618a2ffc7'],7,329,336,3,0.33031674208144796,0.36199095022624433,0.8552036199095022
+ede94252f07e17ce9ed01ed0f2020eddd6ef012d,Add documentation related to image_weights option,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-08 14:26:25-05:00,18000,2015-07-08 14:26:25-05:00,18000,True,False,"['configuration.rst', 'design.rst']",['74610c60d07f8a28bac79148ece0bbd8c0ad39dd'],3,50,53,2,,,
+46f22ee80d6f3b04a9b51af48116353e7d5df7c3,"Pin oslo requirements
+
+A recent change in oslo.serialization broke our tests. Pin oslo
+requirements for the time being.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-08 14:47:26-05:00,18000,2015-07-08 14:47:26-05:00,18000,True,False,['requirements.txt'],['ede94252f07e17ce9ed01ed0f2020eddd6ef012d'],0,6,6,1,,,
+8008b06eb0a4ee8b4a0dd449e4feb3f4fad76e6e,"Add option for default image weights
+
+And remove somewhat complicated and ugly get_default_image_weight
+function.
+
+Also a couple of fixes from github review.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-09 12:42:24-05:00,18000,2015-07-09 12:42:24-05:00,18000,True,False,"['base.py', 'test_strategy_base.py', 'configuration.rst']",['46f22ee80d6f3b04a9b51af48116353e7d5df7c3'],53,29,82,3,0.6538461538461539,0.038461538461538464,0.038461538461538464
+83fd4d7eb391568f9225da7100a526a789a90f42,"Incorporate changes to oslo libraries into Arsenal
+
+Several oslo-incubator libraries have graduated into full-fledged
+libraries. Remove openstack.common code and use the libraries instead.
+
+Also pin the oslo.* libraries and update glanceclient version requirement.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-09 16:21:28-05:00,18000,2015-07-09 16:21:28-05:00,18000,True,False,"['director.py', 'config.py', 'exception.py', 'service.py', 'devstack_scout.py', 'onmetal_scout.py', 'scheduler.py', 'client_wrapper.py', 'glance_client_wrapper.py', 'ironic_client_wrapper.py', 'nova_client_wrapper.py', '__init__.py', '__init__.py', '_i18n.py', 'eventlet_backdoor.py', 'local.py', 'log.py', 'loopingcall.py', 'periodic_task.py', 'service.py', 'systemd.py', 'threadgroup.py', 'base.py', 'simple_proportional_strategy.py', 'base.py', 'test_onmetal_scout.py', 'test_scheduler.py', 'test_client_wrapper.py', 'test_glance_client_wrapper.py', 'test_ironic_client_wrapper.py', 'test_nova_client_wrapper.py', 'test_simple_proportional_strategy.py', 'test_strategy_base.py', 'requirements.txt']",['d4552d06c6e70ec7f6c3e5e968a38cb3d641b6fd'],2150,57,2207,34,0.4459601259181532,0.30849947534102834,0.2266526757607555
+9d4aef84ecbca33b801c28ae2c4b9efc9f2b91ac,"Add rate limiting for eject node directives
+
+Closes #51",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-13 12:11:07-05:00,18000,2015-07-13 12:30:20-05:00,18000,True,False,"['scheduler.py', 'test_scheduler.py']",['bde3098e94928a637f88445f943ab9868b685b30'],33,124,157,2,0.9836065573770492,1.0,0.5081967213114754
+a7912bd7b0ed0c48eea1b1664a039c2009c34fc9,"Add documentation on eject node rate limiting
+
+And small sections on each type of directive, along with helpful
+hyperlinks.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-13 12:30:45-05:00,18000,2015-07-13 12:30:45-05:00,18000,True,False,"['configuration.rst', 'design.rst']",['9d4aef84ecbca33b801c28ae2c4b9efc9f2b91ac'],8,50,58,2,,,
+7180f04bf54d893421fc4b1c3b597c255c78c72c,"Add logging around node statistics whenever directives are issued
+
+Also a configuration option to turn off and on statistics logging.
+
+Adds appropriate tests and documentation.
+
+Closes #50",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-13 14:54:24-05:00,18000,2015-07-14 10:02:25-05:00,18000,True,False,"['scheduler.py', 'base.py', 'test_scheduler.py', 'test_strategy_base.py', 'configuration.rst']",['a5cf8c879837887bc256532d065630b1745ee0d6'],29,141,170,5,0.22972972972972974,0.7567567567567568,0.8243243243243243
+920f2de37bb4f664c8218d55716914de03d9820e,"Fix statistics logging
+
+Modifies statistics testing enough to test for unknown image UUID.
+Fixes #54.
+
+Also small fix to log_image_diffrences to correctly log for retired
+images.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-20 17:27:17-05:00,18000,2015-07-20 17:27:17-05:00,18000,True,False,"['base.py', 'test_strategy_base.py']",['c5e4e38139780d6bae9f620d7e9b7269c28fd066'],11,29,40,2,0.4,0.9,1.0
+837ad8c6f1726dbdfa64e00cb1394fca3e470a7a,"Fix node ejection behavior for SimpleProportionalStrategy
+
+To ensure it doesn't try to cache to ejected nodes immediately.
+
+Fixes #55.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-21 17:24:26-05:00,18000,2015-07-21 17:25:10-05:00,18000,True,False,"['simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['f3acd6a6271b96bc8146fc3b1d37d06c35ff8f23'],8,22,30,2,0.0,0.0,1.0
+317fbcdb3029180e57506ffc1225efac6d23ec0c,"Add function in strategy.base to eject nodes based on image weights
+
+Along with refactoring and a unit test. Stills needs integration with a
+concrete stategy. SimpleProportionalStrategy being the only current candidate.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-07-31 02:20:21-05:00,18000,2015-07-31 02:24:54-05:00,18000,True,False,"['base.py', 'test_strategy_base.py']",['31cdd03b1751f9f730bc791276e8ef7f9fb24587'],35,227,262,2,0.4056603773584906,0.6792452830188679,0.9245283018867925
+8f5827772401407037c656916545a02b09f542ed,moving common unit tests,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-27 17:53:08-07:00,25200,2015-08-27 18:07:07-07:00,25200,True,False,"['__init__.py', 'test_rate_limiter.py']",['571ef12146400f8d595a26788c7892fbf0753740'],0,0,0,2,,,
+9208690c22691c60ee878a774403e40a0e09d0c1,moving director,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-27 17:54:53-07:00,25200,2015-08-27 18:07:08-07:00,25200,True,False,"['__init__.py', 'test_onmetal_scout.py', 'test_scheduler.py']",['8f5827772401407037c656916545a02b09f542ed'],0,0,0,3,,,
+bcfd7f6e2aa0def4dbf77cdfd552ee865384af13,moving extrenal,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-27 17:55:44-07:00,25200,2015-08-27 18:07:08-07:00,25200,True,False,"['__init__.py', 'ironic_utils.py', 'test_client_wrapper.py', 'test_glance_client_wrapper.py', 'test_ironic_client_wrapper.py', 'test_nova_client_wrapper.py']",['9208690c22691c60ee878a774403e40a0e09d0c1'],0,0,0,6,,,
+e969560db9d8fd0de2cc2b0d38a0ef70753b6bc4,moving strategy,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-27 17:56:48-07:00,25200,2015-08-27 18:07:08-07:00,25200,True,False,"['__init__.py', 'test_simple_proportional_strategy.py', 'test_strategy_base.py']",['bcfd7f6e2aa0def4dbf77cdfd552ee865384af13'],0,0,0,3,,,
+fe4ac1d77c8012721854437e0b596d2582a84d7c,moving base and test_arsenal,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-27 17:57:51-07:00,25200,2015-08-27 18:07:08-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['e969560db9d8fd0de2cc2b0d38a0ef70753b6bc4'],0,0,0,2,,,
+97b65b249173729016cad89601f2b3919a4235cf,adding init for unit folder,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-27 17:59:21-07:00,25200,2015-08-27 18:07:08-07:00,25200,True,False,['__init__.py'],['fe4ac1d77c8012721854437e0b596d2582a84d7c'],0,0,0,1,,,
+561c6ec2ce59dbccfb7a40639b1bd170f5bba611,change imports,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-27 18:04:42-07:00,25200,2015-08-27 18:07:08-07:00,25200,True,False,"['test_rate_limiter.py', 'test_onmetal_scout.py', 'test_scheduler.py', 'test_client_wrapper.py', 'test_glance_client_wrapper.py', 'test_ironic_client_wrapper.py', 'test_nova_client_wrapper.py', 'test_simple_proportional_strategy.py', 'test_strategy_base.py', 'test_arsenal.py']",['97b65b249173729016cad89601f2b3919a4235cf'],12,12,24,10,,,
+57129de8df5e46cc9c36fa33e51fc25f4bb4c7a7,functional tests for arsenal - take one,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-27 18:56:29-07:00,25200,2015-08-27 18:56:29-07:00,25200,True,False,"['__init__.py', 'base.py', 'test_arsenal.py']",['571ef12146400f8d595a26788c7892fbf0753740'],0,422,422,3,0.729064039408867,0.896551724137931,0.541871921182266
+51900b99f9bdfe1c09aee523374036ef2d66f8d8,adding mimic to requirements (temp change until mimic release),lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-27 19:15:17-07:00,25200,2015-08-27 19:15:17-07:00,25200,True,False,['test-requirements.txt'],['57129de8df5e46cc9c36fa33e51fc25f4bb4c7a7'],0,1,1,1,,,
+b72ae1fc192cfffc241ed8d8870ca1b202401357,address review comments,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-28 16:34:15-07:00,25200,2015-08-28 16:34:15-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['51900b99f9bdfe1c09aee523374036ef2d66f8d8'],55,90,145,2,0.0,1.0,0.5714285714285714
+e5d1b988102d8da91b1611e4ca2e19c61b7feb85,install mimic from pypi,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-28 16:53:02-07:00,25200,2015-08-28 16:53:02-07:00,25200,True,False,['test-requirements.txt'],['b72ae1fc192cfffc241ed8d8870ca1b202401357'],1,1,2,1,,,
+bb1b76c26c253f79d173550e71cff6b20b48fe7d,fix lint,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-28 17:34:14-07:00,25200,2015-08-28 17:34:14-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['e5d1b988102d8da91b1611e4ca2e19c61b7feb85'],126,123,249,2,0.7916666666666666,1.0,0.7083333333333334
+885089e3b817b101b75ceacb3f0ce1eb13fb546e,adding tests for image-weight 0,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-08-31 11:42:43-07:00,25200,2015-08-31 16:12:16-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['e4024d5e7825a8d5ac0422af824ef597735094f3'],50,91,141,2,0.28,1.0,0.96
+0541078b5c9e420fd3b4dbd52c4a4668c1927b78,adds test for recaching when new nodes are added,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-09-02 11:35:18-07:00,25200,2015-09-02 11:35:18-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['f608e674757105557b9c2d46da7b747bda8f45ce'],10,57,67,2,0.47058823529411764,1.0,0.47058823529411764
+645f6cf37506986ea36fb33e29b17e7d9e02572f,add recache tests when nodes are deleted,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-09-02 16:50:49-07:00,25200,2015-09-02 16:50:49-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['0541078b5c9e420fd3b4dbd52c4a4668c1927b78'],2,41,43,2,0.4074074074074074,1.0,1.0
+239059ce3037397e66392699df428c928330be1e,adds test to verify reccahe when uncached nodes are deleted,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-09-02 20:49:45-07:00,25200,2015-09-02 20:49:45-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['645f6cf37506986ea36fb33e29b17e7d9e02572f'],7,44,51,2,1.0,1.0,0.5454545454545454
+53ee0308a1e19bebd1dff889219dad84d3dc6e30,"Remove files generated by functional testing
+
+Adds code to the functional testing base class to remove files
+generated by tests on tear down. Closes #65.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-09-03 12:54:15-05:00,18000,2015-09-03 12:54:15-05:00,18000,True,False,['base.py'],['f608e674757105557b9c2d46da7b747bda8f45ce'],1,12,13,1,1.0,1.0,0.8571428571428571
+6b0a57b0ec838aa77a154dfb5a1aa860e9c161d2,tests for eject,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-09-04 10:29:39-07:00,25200,2015-09-04 10:29:39-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['77dcef676f1bdaefa0068a3dea25da2101fa3df3'],5,179,184,2,0.36134453781512604,1.0,0.865546218487395
+a36c4dee9fe672edaf76754851f2705c2f0c49b2,address review comments- use args,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-09-04 10:34:11-07:00,25200,2015-09-04 10:34:11-07:00,25200,True,False,['base.py'],['239059ce3037397e66392699df428c928330be1e'],1,1,2,1,,,
+0110f4ea07213f14cea59a63467fa5e4fef55159,adding tests for eject images when images are replaced; and deleted,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-09-08 16:42:24-07:00,25200,2015-09-08 16:42:24-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['eb5811f555fcdfb2548d803829a8406b7d8b44bb'],47,61,108,2,0.6,1.0,1.0
+2fdc4755ae7edf63cbfec418d93e7761c4493901,adds tests for provisioned nodes and 100 percentage_to_cache,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-09-08 20:17:07-07:00,25200,2015-09-08 20:17:07-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['0110f4ea07213f14cea59a63467fa5e4fef55159'],36,142,178,2,0.7096774193548387,0.7419354838709677,0.6451612903225806
+a6dbbc260b3dd57a8d961c7275ae3902a1250b27,fix docstrings and removed unsed undefined function,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-09-09 10:31:53-07:00,25200,2015-09-09 10:31:53-07:00,25200,True,False,"['base.py', 'test_arsenal.py']",['2fdc4755ae7edf63cbfec418d93e7761c4493901'],10,5,15,2,0.0,0.0,0.0
+cb626695bbad88a9096a458e65f1ee93a7aa4ea4,"Fix for image cache weights configuration
+
+Restructures image weights to load from a file containing a single JSON
+object rather than trying to stuff a big dictionary into a single
+configuration option.
+
+Updates documentation to reflect image_weights option being replaced by
+image_weights_filename.
+
+Changes functional tests a bit to leave more artifacts behind and
+gracefully shutdown sub-processes to give them a chance to complete
+rather than brutally killing them, but only if you disable test file
+removal in tearDown first. Also changes functional tests to integrate
+the fact that image weights have their own file now.
+
+Fixes #61. Fixes #62.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-09-15 15:01:10-05:00,18000,2015-09-16 12:21:05-05:00,18000,True,False,"['scheduler.py', 'base.py', 'base.py', 'test_arsenal.py', 'test_strategy_base.py', 'configuration.rst', 'design.rst', 'image_weights.json.example']",['ffec61d8ea9812bac5788a257bb8e3970fe7d188'],61,309,370,8,0.2898550724637681,0.7463768115942029,1.0
+eecc328352fe02182dddc724fb4cf026eaebd7e6,pin mimic version to be greater than 1.8.0,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-09-17 14:50:38-07:00,25200,2015-09-17 14:51:55-07:00,25200,True,False,['test-requirements.txt'],['b1b01fa351582f8b8ec5e7379e3e63a63a64f453'],1,1,2,1,,,
+58065e85464f52cde52a29445842520810040c29,changing the region to prod/mimic on the config,lekhajee,lekha.jeevan@gmail.com,lekhajee,lekha.jeevan@gmail.com,2015-09-24 20:57:16-07:00,25200,2015-09-24 20:57:16-07:00,25200,True,False,['base.py'],['a50b87320b233ff05dedb2f48ea1eb60e8090a7e'],1,1,2,1,,,
+b987a502b6b81198720d5e7fd717770072afcaf9,"Update tox coverage target to run properly
+
+Also bump pbr requirement to latest version.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-10-15 21:48:51-05:00,18000,2015-10-15 21:48:51-05:00,18000,True,False,"['.coveragerc', 'requirements.txt', 'tox.ini']",['a50b87320b233ff05dedb2f48ea1eb60e8090a7e'],5,5,10,3,,,
+0def119b073c27def0af2363ceab56504a160005,"Update OnMetalScout to better resolve flavors on nodes
+
+Along with some tests.
+
+Also, silence really annoying indentation related pep8 failures because
+they don't seem to help me at all, and complain about reasonable looking
+indentation structure.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-10-16 13:49:59-05:00,18000,2015-10-16 13:49:59-05:00,18000,True,False,"['onmetal_scout.py', 'test_onmetal_scout.py', 'tox.ini']",['a50b87320b233ff05dedb2f48ea1eb60e8090a7e'],5,154,159,3,0.6785714285714286,1.0,1.0
+2147e0f15c3c53c5fe4feee640cdfcc0d3fe0585,"Fix Functional Tests
+
+Arsenal was not receiving onmetal flavors from mimic, because the
+region was not set properly. Currently mimic only returns onmetal
+flavors for IAD, which reflects the current reality but will change in
+the future.
+
+Also fix a subtle unit test error for onmetal scout.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2015-10-23 17:38:29-05:00,18000,2015-10-23 17:38:29-05:00,18000,True,False,"['base.py', 'test_onmetal_scout.py']",['0def119b073c27def0af2363ceab56504a160005'],2,3,5,2,,,
+e4868229c7c8b8046a6acc1bcadfd0c2105b2a18,"Prepare Arsenal for OnMetal V2
+
+Refactors Scout classes a bit. Now most Openstack-related Scout functionality
+is in OpenstackScout, which derives from Scout.
+
+OnMetalScout is now OnMetalV1Scout, which derives from OpenstackScout.
+DevstackScout now derives from OpenstackScout instead of from
+OnMetalScout.
+
+Adds OnMetalV2Scout which also derives from OpenstackScout.
+
+Each of (OnMetalV1Scout, OnMetalV2Scout, DevstackScout) all construct
+OpenstackScout with filtration functions to serve their specific needs.
+
+Updates unit and functional tests for these changes.
+
+Updates docs.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-01-29 16:51:47-06:00,21600,2016-01-29 17:06:17-06:00,21600,True,False,"['devstack_scout.py', 'onmetal_scout.py', 'openstack_scout.py', 'base.py', 'test_openstack_scout.py', 'test_scheduler.py', 'design.rst']",['1933be8646a180cc99ac5ea0c15f423dcd2f5d7f'],259,404,663,7,1.0,0.625,0.1875
+37eac0f2b92938aa34e521243e1d0b6c7608b2f2,Fixup OnMetal KNOWN_V2_FLAVORS to match what Ironic reports,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-01-30 15:11:48-06:00,21600,2016-01-30 15:11:48-06:00,21600,True,False,['onmetal_scout.py'],['e4868229c7c8b8046a6acc1bcadfd0c2105b2a18'],5,5,10,1,,,
+f3a5ed7244a8959e5c344512380a4d68e852cdd7,"Add some unit tests for OnMetal scout specific code
+
+And some fixes to said code.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-02-04 19:29:09-06:00,21600,2016-02-04 20:38:09-06:00,21600,True,False,"['onmetal_scout.py', 'test_onmetal_scout.py']",['37eac0f2b92938aa34e521243e1d0b6c7608b2f2'],2,140,142,2,0.19387755102040816,1.0,1.0
+c014caa9a761d8850ef01a69dea58e298c7d4c61,"Turn off Functional tests in Travis for now.
+
+Bypasses #77.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-02-08 18:46:19-06:00,21600,2016-02-08 19:14:20-06:00,21600,True,False,"['.travis.yml', 'tox.ini']",['0c6f5ebf48ec2c664da31c1a816dfe87a74c796b'],1,7,8,2,,,
+bd2bb5fc8b0665d4d3ef89567b9e090fb2b024b3,"Fix a minor bug when there are no flavor_classes for a glance image
+
+And modified a unit test to cover this issue.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-02-08 21:05:32-06:00,21600,2016-02-08 21:05:32-06:00,21600,True,False,"['onmetal_scout.py', 'test_onmetal_scout.py']",['76df919cd0a29035f00078691b3c2c8464098921'],0,20,20,2,0.11764705882352941,1.0,1.0
+28b1e18b8c93173c0bbfb8de7d2157dec7dbeb55,"Fix how the nova client is instantiated by NovaClientWrapper
+
+See https://bugs.launchpad.net/horizon/+bug/1493576 for why the old way
+was wrong.
+
+Removes support for giving NovaClientWrapper an auth token directly,
+but since that's not used in production, nothing was lost, and much was
+gained.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-02-16 22:30:50-06:00,21600,2016-02-16 22:30:50-06:00,21600,True,False,"['nova_client_wrapper.py', 'test_nova_client_wrapper.py']",['5d2493cd0d8be3df9025d722ccc932388b8e2172'],59,56,115,2,0.0,0.0,0.0
+4d61597aa29ac786cc218202a7019a0e02335346,"Refuse to consult strategy or issue directives if no data
+
+Refactors code from SimpleProportionalStrategy into the
+SchedulerDirector class, since if data is missing the scheduler should
+treat that as an error condition and refuse to invoke the strategy or
+issue directives.
+
+It feels more appropriate for this code to live in the scheduler rather
+than a specific strategy.
+
+Includes a unit test and unit/functional test refactoring to accomodate
+changes.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-02-23 17:29:59-06:00,21600,2016-02-23 17:45:56-06:00,21600,True,False,"['scheduler.py', 'simple_proportional_strategy.py', 'test_arsenal.py', 'test_scheduler.py']",['9ea4d37dc6ef529cb78492bf7cf5b6fd54f0b2d5'],30,88,118,4,0.0,0.0,0.7666666666666667
+7ea271f209c586cc066b5b84b342e9fac96cb069,"I think functional tests will be fixed in Travis
+
+since I changed the log message functional tests look for to be at the
+end of 'issue_directives' in the scheduler.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-02-23 17:47:38-06:00,21600,2016-02-23 17:47:38-06:00,21600,True,False,['.travis.yml'],['4d61597aa29ac786cc218202a7019a0e02335346'],1,1,2,1,,,
+9d99d1da848227c06c80060fef2272ac23245e50,"Fix AttributeError and wrong keyword in segregate_nodes
+
+The AttributeError and keyword error are both exposed when a node is
+fed to segregate_nodes which does not exist in 'flavors'.
+
+Along with unit tests which expose and cover these problems.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-02-25 15:30:28-06:00,21600,2016-02-25 15:30:28-06:00,21600,True,False,"['simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['c30112cd6c3ce806a2a33bde91e382fd7b142cee'],2,26,28,2,1.0,1.0,1.0
+8043a24cfe62d0638649c28229bfba96a2127633,"Fix v1 flavor detection
+
+Was picking up v2 flavors, this should be restrictive enough to only
+grab v1 flavor names.",Clif Houck,clif@localhost.localdomain,Clif Houck,clif@localhost.localdomain,2016-03-22 11:00:04-05:00,18000,2016-03-22 11:00:04-05:00,18000,True,False,"['onmetal_scout.py', 'test_onmetal_scout.py']",['22feeb868f9c2534f61c8d4ceec57e309694f101'],1,20,21,2,1.0,1.0,1.0
+7d7c4dc3d4770d4be7eea97307b9b7ce9c624a42,"Bump python-novaclient pin to 2.27.0
+
+Addresses an incompatability with pyrax :<",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-07-06 13:53:20-05:00,18000,2016-07-06 13:53:20-05:00,18000,True,False,['requirements.txt'],['481c1db50f9407836b86aeb8cd29b431f05efa02'],1,1,2,1,,,
+58f1110103fcb252b92d0af30ee69589be5971dc,Fix syntax error in exception.py for Python 3,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-13 15:14:45-06:00,21600,2016-12-13 15:14:45-06:00,21600,True,False,['exception.py'],['09fc98ee1aed54474b84976ac34b45579a26b32c'],1,1,2,1,,,
+878b04e8b4c13aa08ff023bf19ce6ea891e916b4,Use six.moves for configparser in functional tests base,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-13 15:19:28-06:00,21600,2016-12-13 15:19:28-06:00,21600,True,False,['base.py'],['58f1110103fcb252b92d0af30ee69589be5971dc'],2,2,4,1,,,
+aa5a35b213d059553a85ea7ed7d0ec3b643b1964,Replace instances of <dict>.iteritems with six.iteritems(dict),Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-13 15:49:49-06:00,21600,2016-12-13 16:07:01-06:00,21600,True,False,"['exception.py', 'openstack_scout.py', 'base.py', 'simple_proportional_strategy.py', 'base.py', 'base.py', 'test_simple_proportional_strategy.py', 'test_strategy_base.py']",['878b04e8b4c13aa08ff023bf19ce6ea891e916b4'],23,31,54,8,0.0,0.0,1.0
+20d0406ba78311e28c0252ab1e7c2b50989e158b,Fix a few locations where bytes are needed in Py3 by using six.b(),Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-13 16:10:03-06:00,21600,2016-12-13 16:10:03-06:00,21600,True,False,"['base.py', 'test_strategy_base.py']",['aa5a35b213d059553a85ea7ed7d0ec3b643b1964'],4,6,10,2,1.0,1.0,1.0
+99ad0551fb6c1ebaac22b1289ac1b6926247142a,Fixup instances of filter() with list(filter()) for Python 3,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-13 16:23:06-06:00,21600,2016-12-13 16:23:06-06:00,21600,True,False,"['openstack_scout.py', 'scheduler.py', 'base.py', 'simple_proportional_strategy.py', 'test_simple_proportional_strategy.py']",['20d0406ba78311e28c0252ab1e7c2b50989e158b'],35,42,77,5,0.14285714285714285,0.7142857142857143,0.42857142857142855
+4664519249f3c071491ffb92045cccf34a69d487,Fix a few more locations where six.b() is needed for writing files,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-13 16:44:21-06:00,21600,2016-12-13 16:44:21-06:00,21600,True,False,['test_strategy_base.py'],['99ad0551fb6c1ebaac22b1289ac1b6926247142a'],2,2,4,1,,,
+97867a01d5f4c247f722fbe62eb3b89f8f82beb2,"Unit tests for py3.x should pass now
+
+Fixed an instance of map() used to execute a function over a list.
+
+Fixed unit tests for RateLimiter object to handle Python3 style ranges.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-14 09:37:38-06:00,21600,2016-12-14 09:38:44-06:00,21600,True,False,"['scheduler.py', 'test_rate_limiter.py']",['4664519249f3c071491ffb92045cccf34a69d487'],4,5,9,2,0.0,0.0,1.0
+c9b59303ae4479cacd945636b459468b526830fc,"Convert a few instances of map()s to list()s explicitly
+
+For Python 3 compatibility.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-14 11:33:35-06:00,21600,2016-12-14 11:34:33-06:00,21600,True,False,"['openstack_scout.py', 'simple_proportional_strategy.py']",['97867a01d5f4c247f722fbe62eb3b89f8f82beb2'],3,3,6,2,,,
+6f4d4bab54f8a1d5f33d3354717eed253a263181,Add six.b() to some necessary spots,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-14 11:34:59-06:00,21600,2016-12-14 11:34:59-06:00,21600,True,False,['base.py'],['c9b59303ae4479cacd945636b459468b526830fc'],2,2,4,1,,,
+76126f70841d9c6bc11846abdc82aeb990a58aff,Update a few requirements to allow Python3 functional tests to run,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-14 11:35:34-06:00,21600,2016-12-14 11:35:34-06:00,21600,True,False,"['requirements.txt', 'test-requirements.txt']",['6f4d4bab54f8a1d5f33d3354717eed253a263181'],3,3,6,2,,,
+c6d09a7f30ad42bfc3cb93acf390ba0cc09bd9be,Add a py35 target to tox.ini,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-14 11:36:10-06:00,21600,2016-12-14 11:36:10-06:00,21600,True,False,['tox.ini'],['76126f70841d9c6bc11846abdc82aeb990a58aff'],1,1,2,1,,,
+65e76016564cfb125d7321f138ce94bef55c669b,Fix PEP8 issues introduced by Python 3 compatibility commits,Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-14 11:48:14-06:00,21600,2016-12-14 11:48:14-06:00,21600,True,False,"['exception.py', 'openstack_scout.py', 'scheduler.py', 'base.py', 'test_simple_proportional_strategy.py', 'test_strategy_base.py']",['c6d09a7f30ad42bfc3cb93acf390ba0cc09bd9be'],17,12,29,6,1.0,0.25,0.75
+feb8cb5350220e5f3336fdf42d4eec159ac3c4b3,"Make travis use tox-travis, and start testing py35
+
+All tests for py35 should pass now.",Clif Houck,me@clifhouck.com,Clif Houck,me@clifhouck.com,2016-12-14 11:51:45-06:00,21600,2016-12-14 12:38:57-06:00,21600,True,False,"['.travis.yml', 'tox.ini']",['65e76016564cfb125d7321f138ce94bef55c669b'],11,9,20,2,,,

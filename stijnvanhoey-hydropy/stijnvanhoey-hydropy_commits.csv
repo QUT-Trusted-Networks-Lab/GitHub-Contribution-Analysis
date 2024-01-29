@@ -1,0 +1,210 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+84c1119936f279366215d3b4af1bbd13debb1a2e,Initial commit,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-11-11 22:16:51+01:00,-3600,2014-11-11 22:16:51+01:00,-3600,True,False,"['.gitignore', 'README.md']",[],0,58,58,2,,,
+f04ce995d575ea1420d0cae3af03c9d7bccc3bed,working class with time serie subselection,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-11-11 22:18:13+01:00,-3600,2014-11-11 22:18:13+01:00,-3600,True,False,['flowanalysis.py'],['84c1119936f279366215d3b4af1bbd13debb1a2e'],0,461,461,1,0.6388888888888888,0.6388888888888888,0.6166666666666667
+0fc48db768dfaf19bca10c50d62db142e2818b1b,added first set of baseflow selections,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-11-11 22:18:33+01:00,-3600,2014-11-11 22:18:33+01:00,-3600,True,False,['baseflow.py'],['f04ce995d575ea1420d0cae3af03c9d7bccc3bed'],0,115,115,1,1.0,1.0,0.2857142857142857
+aa8bcce7977b9f605cd3a379c74a158844de441b,reading txt data sets of external groups,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-11-11 22:18:54+01:00,-3600,2014-11-11 22:18:54+01:00,-3600,True,False,['reading_third_party_data.py'],['0fc48db768dfaf19bca10c50d62db142e2818b1b'],0,167,167,1,0.24242424242424243,1.0,0.45454545454545453
+58c9b63f69fc2bb9ac1ce2e43ece33f27f51e7fe,added first test-script,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-11-11 22:19:11+01:00,-3600,2014-11-11 22:19:11+01:00,-3600,True,False,['tests.py'],['aa8bcce7977b9f605cd3a379c74a158844de441b'],0,23,23,1,,,
+c7ccc47826951db72c7561aff890fecd4723232b,extended tests,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-11-11 22:24:24+01:00,-3600,2014-11-11 22:24:24+01:00,-3600,True,False,"['flowanalysis.py', 'tests.py']",['58c9b63f69fc2bb9ac1ce2e43ece33f27f51e7fe'],1,3,4,2,,,
+fc2ae906da7dc5f762aed2fdb7008f365293b425,season dates bug fix,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-11-11 22:31:00+01:00,-3600,2014-11-11 22:31:00+01:00,-3600,True,False,['flowanalysis.py'],['c7ccc47826951db72c7561aff890fecd4723232b'],12,16,28,1,0.0,0.0,0.0
+fd61590ab4cd324b96629b56e2d09825259cc47c,started unit test,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-11-12 18:29:19+01:00,-3600,2014-11-12 18:29:19+01:00,-3600,True,False,"['flowanalysis.py', 'tests.py']",['fc2ae906da7dc5f762aed2fdb7008f365293b425'],21,124,145,2,0.48484848484848486,0.48484848484848486,0.8181818181818182
+3459b592a7fcb5b897f2b52aeec81dca748d10ee,solved getitem bug with multiple columns,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-11-25 13:19:52+01:00,-3600,2014-11-25 13:19:52+01:00,-3600,True,False,['flowanalysis.py'],['fd61590ab4cd324b96629b56e2d09825259cc47c'],2,11,13,1,1.0,0.0,1.0
+6c5aa9cc3a5b236eec5ea72c5f727e325d0f735a,extended test,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-12-24 12:03:13+01:00,-3600,2014-12-24 12:03:13+01:00,-3600,True,False,"['flowanalysis.py', 'tests.py']",['3459b592a7fcb5b897f2b52aeec81dca748d10ee'],1,7,8,2,1.0,1.0,1.0
+80b7b4703255e0842f42a55e71a855847946239e,added rest,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-12-24 12:03:46+01:00,-3600,2014-12-24 12:03:46+01:00,-3600,True,False,"['FlowData', 'POT_inspiratie.py', 'RainData']",['6c5aa9cc3a5b236eec5ea72c5f727e325d0f735a'],0,385,385,3,0.2603550295857988,0.5384615384615384,0.6153846153846154
+07ca584ceb8ffba75e6f7b81cbe78ef6bfd1bbf3,tackled partl pandas copywarning loc issue,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-12-27 14:17:52+01:00,-3600,2014-12-27 14:17:52+01:00,-3600,True,False,['flowanalysis.py'],['80b7b4703255e0842f42a55e71a855847946239e'],18,18,36,1,,,
+0cf0328d004d0b6ccab2c00c8de22c24d10e5544,added below and above percentile option,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-12-27 14:43:10+01:00,-3600,2014-12-27 14:43:10+01:00,-3600,True,False,['flowanalysis.py'],['07ca584ceb8ffba75e6f7b81cbe78ef6bfd1bbf3'],46,81,127,1,1.0,1.0,0.8
+cabfaa36e938046ebdbb3f8857da42b49c88ecfe,tarted peak selection algorithm,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-12-27 14:51:29+01:00,-3600,2014-12-27 14:51:29+01:00,-3600,True,False,['flowanalysis.py'],['0cf0328d004d0b6ccab2c00c8de22c24d10e5544'],9,18,27,1,1.0,1.0,1.0
+2c8902252ac352bf2831d1a049e2f1595485584b,first attempt to add peak selectin,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-12-27 23:38:34+01:00,-3600,2014-12-27 23:38:34+01:00,-3600,True,False,"['flowanalysis.py', 'tests.py']",['cabfaa36e938046ebdbb3f8857da42b49c88ecfe'],20,34,54,2,1.0,1.0,1.0
+e113c02c9c2de4b6cf35ff183318532b8865c699,finding high peaks algorithm added,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2014-12-28 13:38:44+01:00,-3600,2015-01-08 18:00:37+01:00,-3600,True,False,"['flowanalysis.py', 'tests.py']",['2c8902252ac352bf2831d1a049e2f1595485584b'],27,98,125,2,1.0,1.0,0.0
+db312f64623bb653306c2b9f6c8ecb0dd7148daf,copy testing added,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-01-08 19:04:09+01:00,-3600,2015-01-13 18:04:27+01:00,-3600,True,False,"['flowanalysis.py', 'tests.py']",['e113c02c9c2de4b6cf35ff183318532b8865c699'],14,18,32,2,1.0,1.0,1.0
+009b0d52d1edab20d47851ab587a30dba78b4711,added documentation and README.rst,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-01-13 18:23:05+01:00,-3600,2015-01-13 18:23:05+01:00,-3600,True,False,"['README.rst', 'Makefile', 'conf.py', 'includeme.rst', 'index.rst', 'make.bat']",['db312f64623bb653306c2b9f6c8ecb0dd7148daf'],0,713,713,6,,,
+e300d6333c6616937af371a70ad1d70193ef12bb,restructering info,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-01-13 18:31:41+01:00,-3600,2015-01-13 18:31:41+01:00,-3600,True,False,"['FlowData', 'POT_inspiratie.py', 'RainData', 'baseflow.py', 'flowanalysis.py', 'reading_third_party_data.py', 'tests.py']",['009b0d52d1edab20d47851ab587a30dba78b4711'],1408,0,1408,7,0.4759259259259259,0.3148148148148148,0.44074074074074077
+0ae61b7d18333529cee46509b1fd9605b5e7a57f,restucering files,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-01-13 18:31:55+01:00,-3600,2015-01-13 18:31:55+01:00,-3600,True,False,"['hydropy_tutorial-checkpoint.ipynb', 'FlowData', 'RainData', 'POT_inspiratie.py', 'baseflow.py', 'flowanalysis.py', 'reading_third_party_data.py', 'tests.py', 'hydropy_tutorial.ipynb']",['e300d6333c6616937af371a70ad1d70193ef12bb'],0,2226,2226,9,0.524074074074074,0.6851851851851852,0.5592592592592592
+8423d02a9c9a73c844d694e4c04affb82932dba4,excluded notebook checkpoints,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-01-13 18:38:25+01:00,-3600,2015-01-13 18:38:25+01:00,-3600,True,False,"['.gitignore', 'hydropy_tutorial-checkpoint.ipynb']",['0ae61b7d18333529cee46509b1fd9605b5e7a57f'],409,2,411,2,,,
+baa229f8c1a5e7dee09a7922896b1dda71f20376,start setup docs,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-01-13 18:58:09+01:00,-3600,2015-01-13 18:58:09+01:00,-3600,True,False,"['README.rst', 'conf.py']",['8423d02a9c9a73c844d694e4c04affb82932dba4'],2,5,7,2,,,
+d1fb7a36721fd502561cd1a7a65acff8004ab866,loaded class,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-01-13 19:12:48+01:00,-3600,2015-01-13 19:12:48+01:00,-3600,True,False,"['conf.py', 'includeme.rst', 'index.rst', 'flowanalysis.py', 'tests.py']",['baa229f8c1a5e7dee09a7922896b1dda71f20376'],21,5,26,5,,,
+b981ee3eb411c7d04f29cedbafb2be46081cf11e,setup and init added,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-01-13 19:13:56+01:00,-3600,2015-01-13 19:13:56+01:00,-3600,True,False,"['__init__.py', 'setup.py']",['d1fb7a36721fd502561cd1a7a65acff8004ab866'],0,15,15,2,,,
+9417333bc3053300f7e1d01026f18fdccbcebef2,cleaned code,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-02-03 22:02:53+01:00,-3600,2015-02-03 22:02:53+01:00,-3600,True,False,"['POT_inspiratie.py', 'flowanalysis.py', 'tests.py']",['b981ee3eb411c7d04f29cedbafb2be46081cf11e'],190,9,199,3,0.7333333333333333,0.3416666666666667,0.125
+bd7da382b7c7c70aaef1fb1bad7a2a282b3787e6,added scipy suggestion,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-02-03 22:38:11+01:00,-3600,2015-02-03 22:38:11+01:00,-3600,True,False,"['flowanalysis.py', 'tests.py']",['9417333bc3053300f7e1d01026f18fdccbcebef2'],2,3,5,2,,,
+65dadedfb87b8bb8e6753b5936bd0d3491b18aa3,setup tutorial,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 10:32:20+02:00,-7200,2015-04-09 10:32:20+02:00,-7200,True,False,"['POT_inspiratie.py', 'flowanalysis.py', 'tests.py', 'hydropy_tutorial.ipynb']",['bd7da382b7c7c70aaef1fb1bad7a2a282b3787e6'],172,2728,2900,4,0.0,1.0,1.0
+9626fa3e018e29309f59684803ed0a4f89b938ea,cleaned tutorial version,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 10:58:47+02:00,-7200,2015-04-09 10:58:47+02:00,-7200,True,False,['hydropy_tutorial.ipynb'],['65dadedfb87b8bb8e6753b5936bd0d3491b18aa3'],2848,7636,10484,1,,,
+704a3810b25fe9ba3f28a605059c5c4d6725ea50,prepared EGU tutorial slides,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 11:26:36+02:00,-7200,2015-04-09 11:26:36+02:00,-7200,True,False,"['README.rst', 'hydropy_tutorial.ipynb']",['9626fa3e018e29309f59684803ed0a4f89b938ea'],73,101,174,2,,,
+7df143b127205326827defdbca40d333a506d2a2,added slides for EGU,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 11:26:56+02:00,-7200,2015-04-09 11:26:56+02:00,-7200,True,False,['hydropy_tutorial.slides.html'],['704a3810b25fe9ba3f28a605059c5c4d6725ea50'],0,8020,8020,1,,,
+c9e6613e5b50062bdb0e6089409aabe1ad9603b7,cleaned test file,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 12:53:38+02:00,-7200,2015-04-09 12:53:38+02:00,-7200,True,False,"['POT_inspiratie.py', 'baseflow.py', 'flowanalysis.py', 'tests.py', 'hydropy_tutorial.ipynb']",['c232db4f3713309e2ab03284bf47887b1751ff38'],6653,395,7048,5,0.75,0.4642857142857143,0.6547619047619048
+a19619f537ba36d17c59f7686b1b59d61d90156a,adapted readmefile,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 12:55:21+02:00,-7200,2015-04-09 12:55:21+02:00,-7200,True,False,"['README.md', 'README.rst', 'flowanalysis.py']",['c9e6613e5b50062bdb0e6089409aabe1ad9603b7'],17,19,36,3,,,
+92b61ec9e7f0a17ffcbf612a930079a17a400cab,updated readme file,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 13:02:22+02:00,-7200,2015-04-09 13:02:22+02:00,-7200,True,False,['README.md'],['a19619f537ba36d17c59f7686b1b59d61d90156a'],7,19,26,1,,,
+3879de1c80e2e142379fed8612b0fc09d6087724,readme set slidestuff,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 13:06:30+02:00,-7200,2015-04-09 13:06:30+02:00,-7200,True,False,['README.md'],['54c6ec376e6d6b67494f879cd3e33f8bd0a77459'],3,4,7,1,,,
+4ae4e1b05c323cdc18da6c0261e23c3764ccdf36,added storm selection,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 14:28:59+02:00,-7200,2015-04-09 14:28:59+02:00,-7200,True,False,"['baseflow.py', 'flowanalysis.py', 'storm.py', 'tests.py']",['3879de1c80e2e142379fed8612b0fc09d6087724'],8,117,125,4,0.0,0.0,0.0
+10a839c613280a48ba30c12bc8fcf2a5232850a9,added storm plotting,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 14:55:55+02:00,-7200,2015-04-09 14:55:55+02:00,-7200,True,False,"['flowanalysis.py', 'storm.py', 'tests.py']",['4ae4e1b05c323cdc18da6c0261e23c3764ccdf36'],12,186,198,3,0.2897196261682243,0.29906542056074764,0.19626168224299065
+8f83b523fcdc08c5e2a4a22e502926a989958ed8,storms addd in tutorial,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 15:02:45+02:00,-7200,2015-04-09 15:02:45+02:00,-7200,True,False,"['flowanalysis.py', 'storm.py', 'hydropy_tutorial.ipynb']",['10a839c613280a48ba30c12bc8fcf2a5232850a9'],56,56,112,3,0.0,1.0,0.0
+49991d4674bea618f95f339c3749c270ed35bd10,finished slides/tutorial egu,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 15:05:12+02:00,-7200,2015-04-09 15:05:12+02:00,-7200,True,False,"['hydropy_tutorial.ipynb', 'hydropy_tutorial.slides.html']",['8f83b523fcdc08c5e2a4a22e502926a989958ed8'],5475,5296,10771,2,,,
+6b5f96bc8f9c063aa0e59fd1bc7f02a687162582,added figures to readme,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 15:09:39+02:00,-7200,2015-04-09 15:09:39+02:00,-7200,True,False,['README.md'],['49991d4674bea618f95f339c3749c270ed35bd10'],1,10,11,1,,,
+e0b1c6a820a0bfd7311b32bcee600443c989a115,added figures to datafolder,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 15:09:56+02:00,-7200,2015-04-09 15:09:56+02:00,-7200,True,False,"['peaks.png', 'recession.png', 'storms.png']",['6b5f96bc8f9c063aa0e59fd1bc7f02a687162582'],0,0,0,3,,,
+e01e908743a88239a46d118578cddec7fd9f6532,data_only is without season,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 17:28:23+02:00,-7200,2015-04-09 17:28:23+02:00,-7200,True,False,"['flowanalysis.py', 'hydropy_tutorial.slides.html']",['7f5e02995c7efc4b8f6c20f25f2070517c0785ca'],7,8,15,2,,,
+1119a2fd343d8669f738f35754f9ac845a33f3ef,improved init file,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 20:36:06+02:00,-7200,2015-04-09 20:36:06+02:00,-7200,True,False,['__init__.py'],['6810ff29dc78d34d89e385c99619e98f45ed2573'],0,1,1,1,,,
+0f496b8af4b35c3c89d178ed86d7d34ed0a98b25,solved remarks joris,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 21:45:33+02:00,-7200,2015-04-09 21:45:33+02:00,-7200,True,False,"['tests.py', 'hydropy_tutorial.ipynb']",['1119a2fd343d8669f738f35754f9ac845a33f3ef'],67,66,133,2,,,
+c5a889feb9bd0430cfe09ec26b3f3548240cf0a1,added BSD license,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 21:47:32+02:00,-7200,2015-04-09 21:47:32+02:00,-7200,True,False,['LICENSE'],['0f496b8af4b35c3c89d178ed86d7d34ed0a98b25'],0,25,25,1,,,
+e83d100533713fc3a8fe8269b622545de46b58d8,corrected link,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-09 22:41:40+02:00,-7200,2015-04-09 22:41:40+02:00,-7200,True,False,['setup.py'],['0f8dc837284157c7c5559a4b54cfa0ada72149fe'],1,1,2,1,,,
+1a4260209e64394d9a419b90fb8df6b2d4036827,updated slides,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-10 16:17:51+02:00,-7200,2015-04-10 16:17:51+02:00,-7200,True,False,['hydropy_tutorial.slides.html'],['ad6766538fe4a1e7b62a6529a444be84250acd2b'],57,57,114,1,,,
+bbdc18da919f02c618cd40eaf12b3ed17f98f284,copy original data to ensure independent usage,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-10 16:39:38+02:00,-7200,2015-04-10 16:39:38+02:00,-7200,True,False,"['flowanalysis.py', 'tests.py']",['ad42eb72497ad6deff59ac4b5e31765c9917dc5c'],2,3,5,2,,,
+26f6ddcfdd0ac1f3b4ac297a4fdced2791991e4b,added acknoledgement for data,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-12 12:27:25+02:00,-7200,2015-04-12 12:27:25+02:00,-7200,True,False,"['README.md', 'hydropy_tutorial.ipynb', 'hydropy_tutorial.slides.html']",['eac86ea4c94abd3431189b8593a05fed4659b6f4'],24,49,73,3,,,
+cf31f25270e6810a5185316e4c000804af320c17,slide update,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-12 14:35:56+02:00,-7200,2015-04-12 14:35:56+02:00,-7200,True,False,"['hydropy_tutorial.ipynb', 'hydropy_tutorial.slides.html']",['75ba34d4ecc1ba9b934add2823a7ed75cbe176da'],119,143,262,2,,,
+715029abd9e28484e8bb8c6fe34525ece11c3d53,Update README.md,Stijn Van Hoey,stijnvanhoey@gmail.com,Stijn Van Hoey,stijnvanhoey@gmail.com,2015-04-12 15:14:11+02:00,-7200,2015-04-12 15:14:11+02:00,-7200,True,False,['README.md'],['26f51858a9012934d4c1a74c558fbe14a5bbc364'],0,2,2,1,,,
+4af2c447aaf314825fd514d8784f5786c51ae5f9,new slide flavor nbviewer adapt,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-13 00:40:19+02:00,-7200,2015-04-13 00:40:19+02:00,-7200,True,False,"['hydropy_tutorial.ipynb', 'hydropy_tutorial.slides.html']",['26f51858a9012934d4c1a74c558fbe14a5bbc364'],91,58,149,2,,,
+4b5091018b1ad33979712064974af5827516bc4b,storm function drywindow claarified,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-04-14 22:58:36+02:00,-7200,2015-04-14 22:58:36+02:00,-7200,True,False,"['storm.py', 'hydropy_tutorial.ipynb', 'hydropy_tutorial.slides.html']",['9cf41bbc778e15422ecd849a8c50f8e0321f8516'],132,190,322,3,0.0,0.0,0.0
+2e916ec17e74fac62a2a4e68ab5e59cb77286d74,adaptede tutorial,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-09-15 10:19:39+02:00,-7200,2015-09-15 10:19:39+02:00,-7200,True,False,['hydropy_tutorial.ipynb'],['e5e82ba5f2382164e1dfa2db1050a1a5f686cdf4'],1,3,4,1,,,
+3498a3165724252af4b9e5bc4f9c97324e570e2c,aded environment conda handling to use binder,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-09-19 15:04:31+02:00,-7200,2015-09-19 15:04:31+02:00,-7200,True,False,"['environment.yml', 'hydropy_tutorial.ipynb']",['2e916ec17e74fac62a2a4e68ab5e59cb77286d74'],84,145,229,2,,,
+14c02483e068a00b64c9b88c281bda2193792ffe,addded binder link,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-09-19 15:06:39+02:00,-7200,2015-09-19 15:06:39+02:00,-7200,True,False,['README.md'],['3498a3165724252af4b9e5bc4f9c97324e570e2c'],0,3,3,1,,,
+5928fcb1fc525d8996b146506e2d1ca61912d470,excluded import pandas bug,stvhoey,stvhoey.vanhoey@ugent.be,stvhoey,stvhoey.vanhoey@ugent.be,2015-09-19 15:11:55+02:00,-7200,2015-09-19 15:11:55+02:00,-7200,True,False,['hydropy_tutorial.ipynb'],['14c02483e068a00b64c9b88c281bda2193792ffe'],3,4,7,1,,,
+5a0d97ed5cb809d72be281856e4895c958909a15,"Added python 3.5 support
+
+modified print to print();
+added from __future__ import print_function;
+modified imports to relative imports;
+added from __future__ import absolute_import
+modified StringIO to io.StringIO
+added manifest file so that data directory gets packaged too. (The
+manifest file also lists some things that might be nice to include in
+the future)
+Added 'include_package_data' line to setup.py so that setup looks for
+MANIFEST.in
+Added python 3.5 classifier to setup.py",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-09-25 20:55:13-04:00,14400,2016-09-25 20:55:13-04:00,14400,True,False,"['MANIFEST.in', '__init__.py', 'flowanalysis.py', 'reading_third_party_data.py', 'storm.py', 'tests.py', 'hydropy_tutorial.ipynb', 'setup.py']",['5928fcb1fc525d8996b146506e2d1ca61912d470'],30,64,94,8,1.0,1.0,1.0
+3618a62ccef734368d6938e3439f4830788a1251,add spyder to .gitignore,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-02 20:45:34-04:00,14400,2016-10-02 20:45:34-04:00,14400,True,False,['.gitignore'],['615a8d98be8166578b1f6753799a7a768cfa82be'],0,4,4,1,,,
+46ac517c3268acc414067cffaabb62d56986a8f0,Add license information,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-02 20:50:46-04:00,14400,2016-10-02 20:50:46-04:00,14400,True,False,"['README.md', '__init__.py', 'setup.py']",['3618a62ccef734368d6938e3439f4830788a1251'],3,9,12,3,,,
+c25bac270d62cd21d3fc2a58430555338e1df847,"Create a testing system
+
+Run tests at the command line with:
+
+`$ python setup.py test",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-02 21:59:07-04:00,14400,2016-10-02 21:59:07-04:00,14400,True,False,"['__init__.py', 'flowanalysis.py', 'setup.py', '__init__.py', 'test_baseflow.py', 'test_flowanalysis.py', 'test_reading_third_party_data.py', 'test_storm.py']",['46ac517c3268acc414067cffaabb62d56986a8f0'],4,77,81,8,1.0,1.0,1.0
+61a43a8bc0c009909abb37a6ec6ec363b6ca8749,"PEP8 compliance
+
+I added and removed spaces to match PEP8 as best as I could. It passed
+the tests for python 2.7 and 3.5, but since there aren't many tests,
+this is really just a test of whether it will build. I also ran the
+Ipython notebook as a test.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-02 22:55:45-04:00,14400,2016-10-02 22:55:45-04:00,14400,True,False,"['baseflow.py', 'flowanalysis.py', 'reading_third_party_data.py', 'storm.py', 'hydropy_tutorial.ipynb', 'setup.py']",['c25bac270d62cd21d3fc2a58430555338e1df847'],334,389,723,6,0.0,0.0,0.0
+40b222592c3d1c2281e5507af8741a54f5d91493,"add tox.ini and .travis.yml files
+
+To start using Travis-CI, we just need to log into Travis, and set up
+the webhook with Github. Directions are here:
+https://docs.travis-ci.com/user/getting-started/
+
+The travis file tells TravisCI what to do for the tests. In this case, I
+set it up to run tox, which uses tox.ini. Tox will run all of the tests
+in python 2.7, 3.3, 3.4, and 3.5. We can also configure it to test the
+documentation, do PEP8 checking (not worth it, IMHO), or even to build
+the documentation with Sphinx, or deploy to PyPI. For now, we'll just do
+our testing!",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-03 20:45:17-04:00,14400,2016-10-03 20:45:17-04:00,14400,True,False,"['.gitignore', '.travis.yml', 'tox.ini']",['615a8d98be8166578b1f6753799a7a768cfa82be'],0,32,32,3,,,
+6bc57eaa25ed10b925a62cc2ead96e71fea685ba,Update .gitignore,Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2016-10-03 20:47:42-04:00,14400,2016-10-03 20:47:42-04:00,14400,True,False,['.gitignore'],['40b222592c3d1c2281e5507af8741a54f5d91493'],1,1,2,1,,,
+dfa1dd0177651c2024038cd30187fc2f0e061634,remove flake8 PEP8 checking from tox.ini,Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2016-10-03 21:26:09-04:00,14400,2016-10-03 21:26:09-04:00,14400,True,False,['tox.ini'],['68c0b3aab92dab9308656a38a758e779fd354118'],6,1,7,1,,,
+5c9bb787fb34c3bd0dd4c438754f91140f065cfc,rerun notebook,stijnvanhoey,stijnvanhoey@gmail.com,stijnvanhoey,stijnvanhoey@gmail.com,2016-10-04 22:02:47+02:00,-7200,2016-10-04 22:02:47+02:00,-7200,True,False,['hydropy_tutorial.ipynb'],['5928fcb1fc525d8996b146506e2d1ca61912d470'],6,12,18,1,,,
+dc4dcdfb9eef177fbeee2236b48e8381d80a8f4a,rename travis file,stijnvanhoey,stijnvanhoey@gmail.com,stijnvanhoey,stijnvanhoey@gmail.com,2016-10-04 22:06:20+02:00,-7200,2016-10-04 22:06:20+02:00,-7200,True,False,['travis.yml'],['0b63e6b7ef45d2c4650afc3be1559740bfe0cf14'],0,0,0,1,,,
+c22c7b008576044be2ea1dc4c12f43c731da3cbb,rename travis file,stijnvanhoey,stijnvanhoey@gmail.com,stijnvanhoey,stijnvanhoey@gmail.com,2016-10-04 22:07:40+02:00,-7200,2016-10-04 22:07:40+02:00,-7200,True,False,['.travis.yml'],['dc4dcdfb9eef177fbeee2236b48e8381d80a8f4a'],0,0,0,1,,,
+26a3ed0d7c6ceed95b11ebd41664ae96b9a96467,"Add 'install_requires' to setup.py
+
+Tests were failing on Travis because our dependencies weren't loading during the build. I added numpy, pandas, and requests (which we'll need soon).",Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2016-10-04 16:41:01-04:00,14400,2016-10-04 16:41:01-04:00,14400,True,False,['setup.py'],['c22c7b008576044be2ea1dc4c12f43c731da3cbb'],0,1,1,1,,,
+302b5286a4ae826982048b168e5bc96c298275d7,"Added scipy & matplotlib;
+
+No need to add standard libraries.",Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2016-10-04 16:55:32-04:00,14400,2016-10-04 16:55:32-04:00,14400,True,False,['setup.py'],['26a3ed0d7c6ceed95b11ebd41664ae96b9a96467'],1,1,2,1,,,
+fc3f03ebf2a8506872899bba0b62a72ebbd52ea5,remove Python 3.3 testing,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-04 19:59:00-04:00,14400,2016-10-04 19:59:13-04:00,14400,True,False,"['.travis.yml', 'tox.ini']",['302b5286a4ae826982048b168e5bc96c298275d7'],3,1,4,2,,,
+40577e7b4911c5ca83958ffcaed628d6074ad45f,"add get_usgs and some tests
+
+This adds get_usgs, request_nwis, extract_nwis_df, and a few tests.  I
+still need to test get_usgs, and test a few edge cases.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-04 23:15:40-04:00,14400,2016-10-04 23:15:40-04:00,14400,True,False,"['__init__.py', 'exceptions.py', 'reading_third_party_data.py', 'test_exceptions.py', 'test_reading_third_party_data.py']",['fc3f03ebf2a8506872899bba0b62a72ebbd52ea5'],6,402,408,5,0.7611940298507462,1.0,0.7014925373134329
+6ecb090f3368e7573a4574b68c32f49508fb3fdc,added my name to the list of contributors!,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-04 23:16:04-04:00,14400,2016-10-04 23:16:04-04:00,14400,True,False,['AUTHORS.rst'],['40577e7b4911c5ca83958ffcaed628d6074ad45f'],0,13,13,1,,,
+8be744ecbe5060392e62c26b6aa5c2ca32880816,Added explaination of what tests I still need,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-04 23:40:02-04:00,14400,2016-10-04 23:40:02-04:00,14400,True,False,['test_reading_third_party_data.py'],['6ecb090f3368e7573a4574b68c32f49508fb3fdc'],64,78,142,1,1.0,1.0,1.0
+a29c0b5d337aab8676d2f16408cad1c1e6f28400,Add notebooks and documentation,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 12:40:39-04:00,14400,2016-10-06 12:40:39-04:00,14400,True,False,"['Additional_Features.ipynb', 'Analyze_USGS_data.ipynb', 'reading_third_party_data.py']",['8be744ecbe5060392e62c26b6aa5c2ca32880816'],3,1054,1057,3,,,
+22721f99eead75a22e0fe076663de921de9826c6,"fixed missing value replacement.
+
+This feature still needs to be tested.
+Also, it can be improved by using the missing data flags given in the
+NWIS response.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 12:42:05-04:00,14400,2016-10-06 12:42:05-04:00,14400,True,False,"['reading_third_party_data.py', 'test_reading_third_party_data.py']",['a29c0b5d337aab8676d2f16408cad1c1e6f28400'],1,7,8,2,1.0,1.0,1.0
+5ebc31e8870bc545e6f818dce43d1de11f72ff56,"add seaborn to required packages
+
+This gets used in the notebooks.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 12:42:30-04:00,14400,2016-10-06 12:42:30-04:00,14400,True,False,['setup.py'],['22721f99eead75a22e0fe076663de921de9826c6'],1,2,3,1,,,
+f60b13fa5e8bdeda5f3af17e7bafc0b35eb80866,Why can't unittest import my tests in Python 2.7?,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 13:40:13-04:00,14400,2016-10-06 13:40:13-04:00,14400,True,False,['test_exceptions.py'],['5ebc31e8870bc545e6f818dce43d1de11f72ff56'],1,1,2,1,,,
+91fd8a4a31bd428e1c71134dae0e748e41ebdad0,"modify setup.py for 2.7 imports
+
+add from __future__ import absolute_import",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 13:41:43-04:00,14400,2016-10-06 13:41:43-04:00,14400,True,False,['setup.py'],['f60b13fa5e8bdeda5f3af17e7bafc0b35eb80866'],1,1,2,1,,,
+f112a2a613f463a11a8fdb3e3ff516a09cfa7133,"cleaned usgs notebook, added link",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 15:25:57-04:00,14400,2016-10-06 15:25:57-04:00,14400,True,False,['Analyze_USGS_data.ipynb'],['91fd8a4a31bd428e1c71134dae0e748e41ebdad0'],299,1,300,1,,,
+d1bf215b7aad2ca08905e72c80a797e450243052,"Fix tests to support Python 2.7
+
+unittest.mock first appeared in Py3.3. So I needed to replace it with
+mock.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 21:01:03-04:00,14400,2016-10-06 21:01:03-04:00,14400,True,False,"['setup.py', 'test_reading_third_party_data.py']",['f112a2a613f463a11a8fdb3e3ff516a09cfa7133'],1,6,7,2,,,
+df297b3124df5d50aa6df5b101b2ba6d4149f8fa,"fix FakeResponse.json() to work Python 2.7
+
+added staticmethod decorator. This fixed for python 2.7.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 21:02:08-04:00,14400,2016-10-06 21:02:08-04:00,14400,True,False,['test_reading_third_party_data.py'],['d1bf215b7aad2ca08905e72c80a797e450243052'],0,2,2,1,1.0,1.0,1.0
+cf5cf8eecb7f75cf2de7f9c98477435320899604,"moved test_get_month into tests folder
+
+I still need to figure out how to use the 'old tests' as a test.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 21:03:33-04:00,14400,2016-10-06 21:03:33-04:00,14400,True,False,"['old_tests.py', 'test_flowanalysis.py']",['df297b3124df5d50aa6df5b101b2ba6d4149f8fa'],17,22,39,2,0.0,0.0,0.0
+4e5bcf67845cb7f4638e8e11d508207b84320f6d,"fixed tutorial to use newly installed seaborn
+
+import of seaborn used to fail; I added it to setup.py requirements
+earlier.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 21:04:39-04:00,14400,2016-10-06 21:04:39-04:00,14400,True,False,['hydropy_tutorial.ipynb'],['cf5cf8eecb7f75cf2de7f9c98477435320899604'],131,126,257,1,,,
+2ad17501075a0bf497afd80169624835596967ed,ignore strange files that we don't need.,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-06 21:05:56-04:00,14400,2016-10-06 21:05:56-04:00,14400,True,False,['.gitignore'],['4e5bcf67845cb7f4638e8e11d508207b84320f6d'],0,2,2,1,,,
+700a640e2d5c83c5b3ce3bedcf54eb97039fe530,Added baseflow separation to notebook.,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-09 19:52:06-04:00,14400,2016-10-09 19:52:06-04:00,14400,True,False,['Additional_Features.ipynb'],['2ad17501075a0bf497afd80169624835596967ed'],2,152,154,1,,,
+63a2f73d8c4a8cf48ff92e32d803f5f3d4aab1eb,Created a Docstring for the package.,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-09 20:30:28-04:00,14400,2016-10-09 20:30:28-04:00,14400,True,False,['__init__.py'],['700a640e2d5c83c5b3ce3bedcf54eb97039fe530'],1,41,42,1,,,
+083d6ffb56cc4f8ad5d913edc3942d33ea7bd07e,"move __future__ imports behind docstring
+
+IPython wasn't finding the hydropy docstring when it occured after the
+import, so I moved the __future__ import. I thought this import was
+special and needed to be very first, but the tests all pass.... so I
+guess we're okay.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-16 14:43:15-04:00,14400,2016-10-16 14:43:15-04:00,14400,True,False,['__init__.py'],['2b1b7dce99c10ccf3a4824250a3dd9feb0881428'],2,2,4,1,,,
+7ba6b9c644d4ae9e2cf02b2f54d238cc2d5b8618,"created draw_map() and __str__ functions
+
+draw_map() will create  a quick IFrame of hydrocloud.org
+__str__(), __repr__(), and _repr_html_() all give our classes access to
+the DataFrame functions of the same name. These allow pretty display of
+the dataframe in IPython.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-16 14:46:08-04:00,14400,2016-10-16 14:46:08-04:00,14400,True,False,"['IPython_functions.ipynb', 'ipython.py']",['083d6ffb56cc4f8ad5d913edc3942d33ea7bd07e'],0,321,321,2,1.0,1.0,1.0
+2cc19727c713bbd10aca061cf2a71091764826f4,"move the __future__ back to the first line
+
+maybe this little change does affect the tests?",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-16 15:19:20-04:00,14400,2016-10-16 15:19:20-04:00,14400,True,False,['__init__.py'],['7ba6b9c644d4ae9e2cf02b2f54d238cc2d5b8618'],1,2,3,1,,,
+865386e40ab220a09a3fb5584e0e99602b13b1c8,added IPython to setup.py,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-16 15:27:58-04:00,14400,2016-10-16 15:27:58-04:00,14400,True,False,['setup.py'],['2cc19727c713bbd10aca061cf2a71091764826f4'],1,1,2,1,,,
+d087148c462c71eabe38fa51a9dce285a9f0a3f2,"moved __future__ imports behind docstring again.
+
+It wasn't the source of the import problems.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2016-10-16 15:31:47-04:00,14400,2016-10-16 15:31:47-04:00,14400,True,False,['__init__.py'],['865386e40ab220a09a3fb5584e0e99602b13b1c8'],2,1,3,1,,,
+7502ce061168d8f75c5b13173a146cb89ca375f8,duck typing preferred,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2017-01-18 19:35:53-05:00,18000,2017-01-18 19:35:53-05:00,18000,True,False,['baseflow.py'],['18a927be077627def3bc5dd277a30c0140117fc3'],9,0,9,1,0.0,0.0,0.6666666666666666
+c024968f8888c5a5c5c4f25fcb09e8e67fb47907,"baseflow functions return DataFrame, not TimeSeries
+
+Removed the reference to TimeSeries and changed to DataFrame.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2017-01-18 19:36:50-05:00,18000,2017-01-18 19:36:50-05:00,18000,True,False,['baseflow.py'],['7502ce061168d8f75c5b13173a146cb89ca375f8'],3,4,7,1,1.0,1.0,1.0
+ee442ab3407af2bc90484c685bed6dae1ae65034,"add baseflow tests
+
+These are really simple- they just make sure that a dataframe is
+returned from the functions if the inputs are all as expected.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2017-01-18 19:37:57-05:00,18000,2017-01-18 19:37:57-05:00,18000,True,False,['test_baseflow.py'],['c024968f8888c5a5c5c4f25fcb09e8e67fb47907'],9,18,27,1,1.0,1.0,1.0
+3e1104596b10587aefc81175d9ce4327e7625080,Update notebooks to reflect changes,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2017-01-18 19:38:27-05:00,18000,2017-01-18 19:38:27-05:00,18000,True,False,"['Additional_Features.ipynb', 'IPython_functions.ipynb', 'hydropy_tutorial.ipynb']",['ee442ab3407af2bc90484c685bed6dae1ae65034'],186,361,547,3,,,
+b5b3df3de829fd6f3678a925e302f360fd6291d0,ignore .cmd files,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2017-01-18 19:39:19-05:00,18000,2017-01-18 19:39:19-05:00,18000,True,False,['.gitignore'],['3e1104596b10587aefc81175d9ce4327e7625080'],0,1,1,1,,,
+e63cf35fbf743d0172c98f72828035edb27dff6d,"update pypi whenever a new tag is pushed
+
+Run travis_pypi_setup.py. It will request your pypi password, then it
+will encrypt it and save it to the .travis.yml file. After this,
+whenever a new version tag is pushed to github, it will update pypi with
+the new distribution.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2017-01-19 15:56:30-05:00,18000,2017-01-19 15:56:30-05:00,18000,True,False,"['.travis.yml', 'travis_pypi_setup.py']",['14bdb865b9c268022634ea257361f94524780895'],0,134,134,2,1.0,1.0,1.0
+dd98ae05fbff03be8b44eb8f86dc0683c58d95cd,update pypi link with travis,stijnvanhoey,stijnvanhoey@gmail.com,stijnvanhoey,stijnvanhoey@gmail.com,2017-02-02 09:25:43+01:00,-3600,2017-02-02 09:25:43+01:00,-3600,True,False,"['.gitignore', '.travis.yml']",['d3139c7f64fc6567aea4dcf881285c0bc5b7950b'],4,18,22,2,,,
+969ba7441352cb2b10d4cc5185a74cc02f76bec5,update emailadress,stijnvanhoey,stijnvanhoey@gmail.com,stijnvanhoey,stijnvanhoey@gmail.com,2017-02-02 10:50:54+01:00,-3600,2017-02-02 10:50:54+01:00,-3600,True,False,['setup.py'],['dd98ae05fbff03be8b44eb8f86dc0683c58d95cd'],1,1,2,1,,,
+f0b90775c1ec1327803ee24c0f4c521d66860236,Update setup.py,Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2017-02-02 20:07:41-05:00,18000,2017-02-02 20:07:41-05:00,18000,True,False,['setup.py'],['969ba7441352cb2b10d4cc5185a74cc02f76bec5'],1,1,2,1,,,
+8b71e1e067dd63d8bcc6455bd199e6b65d7cc2e6,Update MANIFEST.in,Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2017-02-02 21:19:41-05:00,18000,2017-02-02 21:19:41-05:00,18000,True,False,['MANIFEST.in'],['f0b90775c1ec1327803ee24c0f4c521d66860236'],1,1,2,1,,,
+5c59e258caabea86830cfe350069c0a72b39f1f1,"Create setup.cfg
+
+added universal wheel",Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2017-02-02 21:23:48-05:00,18000,2017-02-02 21:23:48-05:00,18000,True,False,['setup.cfg'],['8b71e1e067dd63d8bcc6455bd199e6b65d7cc2e6'],0,2,2,1,,,
+780908d0e55e37b2f540f4ca661bb8f861b595da,"Update setup.py
+
+updated version #, added long_description for pypi, changed url from github.io to the main github page (it gets updated more frequently).",Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2017-02-02 21:38:19-05:00,18000,2017-02-02 21:38:19-05:00,18000,True,False,['setup.py'],['5c59e258caabea86830cfe350069c0a72b39f1f1'],2,9,11,1,,,
+7dac413525358425b0088a64cb56507ae1ba7382,"Update __init__.py
+
+added version # and  copyright.",Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2017-02-02 22:07:05-05:00,18000,2017-02-02 22:07:05-05:00,18000,True,False,['__init__.py'],['780908d0e55e37b2f540f4ca661bb8f861b595da'],3,5,8,1,,,
+ee5c05d5f309d712de709a3da6e8bb069ee3bf71,"Update README.md
+
+Added badges, updated copyright, added some more to the description.",Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2017-02-02 22:53:52-05:00,18000,2017-02-02 22:53:52-05:00,18000,True,False,['README.md'],['7dac413525358425b0088a64cb56507ae1ba7382'],6,18,24,1,,,
+c33516364c491dfdc79534736b6b55307b2a8e0c,Update README.md,Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2017-02-02 22:54:51-05:00,18000,2017-02-02 22:54:51-05:00,18000,True,False,['README.md'],['ee5c05d5f309d712de709a3da6e8bb069ee3bf71'],2,0,2,1,,,
+2f6b488a796d9990035382913ce76cfff4d00e25,"create new rst
+
+README.rst this is needed to display properly on pypi, which apparently
+doesn't read .MD files.",mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2017-02-07 22:14:11-05:00,18000,2017-02-07 22:14:11-05:00,18000,True,False,['README.rst'],['c33516364c491dfdc79534736b6b55307b2a8e0c'],0,91,91,1,,,
+aa62eaefd642b5b01a14771ff2b3dde807544ea7,fixed a couple of errors in readme.rst,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2017-02-07 22:31:37-05:00,18000,2017-02-07 22:31:37-05:00,18000,True,False,['README.rst'],['2f6b488a796d9990035382913ce76cfff4d00e25'],7,6,13,1,,,
+acade2d4ca0e5d54b42a3aac701868c6b37e22eb,more rst errors....,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2017-02-07 22:39:46-05:00,18000,2017-02-07 22:39:46-05:00,18000,True,False,['README.rst'],['aa62eaefd642b5b01a14771ff2b3dde807544ea7'],1,2,3,1,,,
+ff02242ddae66007f3836e69b544fa6b02f8ab00,delete markdown file,mroberge,mroberge.whois@gmail.com,mroberge,mroberge.whois@gmail.com,2017-02-07 22:41:23-05:00,18000,2017-02-07 22:41:23-05:00,18000,True,False,['README.md'],['acade2d4ca0e5d54b42a3aac701868c6b37e22eb'],59,0,59,1,,,
+494290d3ef6797e638b568169b97f643e9f4f27a,"Create CONTRIBUTING.rst
+
+I 'borrowed' this from my hydrofunctions repo.",Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2017-02-07 23:08:07-05:00,18000,2017-02-07 23:08:07-05:00,18000,True,False,['CONTRIBUTING.rst'],['ff02242ddae66007f3836e69b544fa6b02f8ab00'],0,118,118,1,,,
+a8bbd83da5ff8520139e9795d8743f7573188e99,"Update setup.py
+
+readme.md was changed to readme.rst; missing file was causing Travis failure.",Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2017-02-17 20:37:23-05:00,18000,2017-02-17 20:37:23-05:00,18000,True,False,['setup.py'],['c33516364c491dfdc79534736b6b55307b2a8e0c'],1,1,2,1,,,
+492d6e3561a5804f783e6d5777a7379e19c357c9,Update setup.py,Martin Roberge,mroberge@users.noreply.github.com,GitHub,noreply@github.com,2017-02-17 20:39:31-05:00,18000,2017-02-17 20:39:31-05:00,18000,True,False,['setup.py'],['494290d3ef6797e638b568169b97f643e9f4f27a'],1,1,2,1,,,

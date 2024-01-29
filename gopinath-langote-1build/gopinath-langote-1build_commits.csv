@@ -1,0 +1,422 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+8cabc0fbf1deb4d0f245ffeab6646d3fd88eb9ea,Add gitignore,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-23 19:18:12+02:00,-7200,2019-04-23 19:18:12+02:00,-7200,True,False,['.gitignore'],[],0,0,0,1,,,
+cff6069916042ba9629bcabb53bd8a142ad6a287,Add builder class,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-23 20:19:33+02:00,-7200,2019-04-23 20:19:33+02:00,-7200,True,False,"['.gitignore', 'Builder.py', 'requirements.txt']",['8cabc0fbf1deb4d0f245ffeab6646d3fd88eb9ea'],0,27,27,3,1.0,1.0,0.0
+71e592d40c0756f250df1f20aa1e502c34ca3b76,Add command runner,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-23 20:38:15+02:00,-7200,2019-04-23 20:38:15+02:00,-7200,True,False,"['Builder.py', 'CommandRunner.py']",['cff6069916042ba9629bcabb53bd8a142ad6a287'],0,9,9,2,1.0,1.0,1.0
+01dc0860627c479226349f99b3e2ad48effe7c42,♻<fe0f> refactor - extract to method,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-23 20:47:00+02:00,-7200,2019-04-23 20:47:00+02:00,-7200,True,False,"['Builder.py', 'CommandRunner.pyc']",['71e592d40c0756f250df1f20aa1e502c34ca3b76'],5,16,21,2,1.0,1.0,1.0
+eb1f21943c112489281232f69f9196ca32129ac5,remove .pyc file,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-23 21:05:29+02:00,-7200,2019-04-23 21:05:29+02:00,-7200,True,False,['CommandRunner.pyc'],['01dc0860627c479226349f99b3e2ad48effe7c42'],0,0,0,1,,,
+c70be3aa26a1f6ef110e4c65266d34c03c7bba00,♼ move to package,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 11:37:42+02:00,-7200,2019-04-25 11:37:42+02:00,-7200,True,False,"['Builder.py', 'Builder.pyc', 'CommandRunner.py', 'CommandRunner.pyc', 'Main.py', 'requirements.txt']",['eb1f21943c112489281232f69f9196ca32129ac5'],6,12,18,6,1.0,1.0,1.0
+7c01038047b1e050f64fcb3b6ebbd46b1bc6940a,♼ add pretty print,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 11:58:06+02:00,-7200,2019-04-25 11:58:06+02:00,-7200,True,False,"['Builder.py', 'Builder.pyc', 'CommandRunner.py', 'CommandRunner.pyc', 'io.py']",['c70be3aa26a1f6ef110e4c65266d34c03c7bba00'],22,29,51,5,1.0,1.0,1.0
+0975d5fb820401761a72e54c8bbcee934e013291,"☘️ following naming conventions
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 12:01:41+02:00,-7200,2019-04-25 12:01:41+02:00,-7200,True,False,"['builder.py', 'main.py']",['7c01038047b1e050f64fcb3b6ebbd46b1bc6940a'],1,3,4,2,,,
+07bbd6fc8e6007bd472e8c3e1e0f406b34e43290,"☘️ Handle errors in parsing
+Issue: #9",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 13:22:11+02:00,-7200,2019-04-25 13:22:11+02:00,-7200,True,False,"['builder.py', 'command.py', 'io.py', 'project.py', 'utils.py']",['0975d5fb820401761a72e54c8bbcee934e013291'],24,105,129,5,0.7288135593220338,1.0,0.864406779661017
+c3c87e34f6ce1c2c844beece7a920ded583ac093,"Create MIT Licens
+
+Issue: #11",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-04-25 13:32:05+02:00,-7200,2019-04-25 13:32:05+02:00,-7200,True,False,['LICENSE'],['07bbd6fc8e6007bd472e8c3e1e0f406b34e43290'],0,21,21,1,,,
+853d95dd9fd96f72bfc5e00422ab543b9f1c51e6,"☘️ Convert to single python file
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 15:44:25+02:00,-7200,2019-04-25 15:44:25+02:00,-7200,True,False,"['builder.py', 'builder.py', 'command.py', 'io.py', 'main.py', 'project.py', 'utils.py', 'requirements.txt']",['ab049f84006c06d62bfd613278e7078480cff6ac'],140,95,235,8,0.5925925925925926,0.0,0.14814814814814814
+d2849b76a3ebf056f6fa313e33d7d60b37455b47,"☘️ Change file name to 1build
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 15:45:13+02:00,-7200,2019-04-25 15:45:13+02:00,-7200,True,False,['1build'],['853d95dd9fd96f72bfc5e00422ab543b9f1c51e6'],0,0,0,1,,,
+fa3d6d0e1bb5a76dd7d89fd6fde06ca2037aa5d0,"H Support help command
+Issue: #8",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 16:01:04+02:00,-7200,2019-04-25 16:01:04+02:00,-7200,True,False,['1build'],['d2849b76a3ebf056f6fa313e33d7d60b37455b47'],5,12,17,1,,,
+b5b4744a4d0bf9d03153a00a5c3b4737619b0615,"📖 add readme
+Issue: #3",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 16:06:09+02:00,-7200,2019-04-25 16:06:09+02:00,-7200,True,False,['README.md'],['fa3d6d0e1bb5a76dd7d89fd6fde06ca2037aa5d0'],0,1,1,1,,,
+95a48f446bf31d64aaa530cca5aebca1e0d94c4a,"❌ Handle file not found case
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 16:25:28+02:00,-7200,2019-04-25 16:25:28+02:00,-7200,True,False,['1build'],['b5b4744a4d0bf9d03153a00a5c3b4737619b0615'],8,11,19,1,,,
+e0f827894382eead900f1628f1ddd597b026d2e2,"❌ Handle file format error
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 16:39:21+02:00,-7200,2019-04-25 16:39:21+02:00,-7200,True,False,['1build'],['95a48f446bf31d64aaa530cca5aebca1e0d94c4a'],3,16,19,1,,,
+524f4855da17751ba33df7debf77df66b4e872f5,"☘️ use  ruamel.yaml instead of YAML
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 17:08:31+02:00,-7200,2019-04-25 17:08:31+02:00,-7200,True,False,"['1build', 'requirements.txt', 'setup.py']",['e0f827894382eead900f1628f1ddd597b026d2e2'],4,39,43,3,,,
+d8eee1051eb2823ddbca43fdda3227de5f0f3464,"Revert ""☘️ use  ruamel.yaml instead of YAML""
+
+This reverts commit 524f4855da17751ba33df7debf77df66b4e872f5.",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 18:52:44+02:00,-7200,2019-04-25 18:52:44+02:00,-7200,True,False,"['1build', 'requirements.txt', 'setup.py']",['524f4855da17751ba33df7debf77df66b4e872f5'],39,4,43,3,,,
+50d0c75d3119e3b512694440c1e8c53d3267f814,"☘️ use of YAML
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-25 19:28:59+02:00,-7200,2019-04-25 19:28:59+02:00,-7200,True,False,"['1build', 'requirements.txt', 'setup.py']",['d8eee1051eb2823ddbca43fdda3227de5f0f3464'],3,25,28,3,,,
+ec9ac90fb48baba0717cc47fae57a0f85d969eb0,"⎘ use of ruamel.yam
+Issue: #13",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-27 15:49:39+02:00,-7200,2019-04-27 15:49:39+02:00,-7200,True,False,"['1build', 'requirements.txt', 'setup.py']",['50d0c75d3119e3b512694440c1e8c53d3267f814'],6,21,27,3,,,
+70c93e96d509dd8b75e92f4789f60e51c8feea2b,"⎘ add MIT License to setup.py
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-27 16:08:01+02:00,-7200,2019-04-27 16:08:01+02:00,-7200,True,False,['setup.py'],['e8cb92fed52190caf09befd617f7e4bc5a85e245'],0,1,1,1,,,
+fc8df02761ef3c06bffac5f007594c37113fe722,"📂Extract buildFileName constant
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-27 17:16:52+02:00,-7200,2019-04-27 17:16:52+02:00,-7200,True,False,['1build'],['70c93e96d509dd8b75e92f4789f60e51c8feea2b'],5,10,15,1,,,
+6c08413eac19752603719d2b7b44cc57870e12e3,"✳️ Make methods private in 1build
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-27 17:58:05+02:00,-7200,2019-04-27 17:58:05+02:00,-7200,True,False,['1build'],['fc8df02761ef3c06bffac5f007594c37113fe722'],25,25,50,1,,,
+e1e02b32fd26e8536a71041f8bf45990e6edb0a9,"✳️ Update global BUILD_FILE_NAME with passed value
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-27 18:19:51+02:00,-7200,2019-04-27 18:19:51+02:00,-7200,True,False,['1build'],['6c08413eac19752603719d2b7b44cc57870e12e3'],3,12,15,1,,,
+c30478c7538d75d7b650902af1dcd823fb4b2fe6,"🔨Add happy build test using pytest
+Issue: #16",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-27 18:31:43+02:00,-7200,2019-04-27 18:31:43+02:00,-7200,True,False,"['.gitignore', 'requirements.txt', 'build_file.yaml', 'test_1build.py']",['e1e02b32fd26e8536a71041f8bf45990e6edb0a9'],2,32,34,4,1.0,1.0,1.0
+1e89b39c0d18614ea3f5238e304ae305cb651644,"🔨Make test runnable from main folder
+Issue: #16",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-27 18:44:01+02:00,-7200,2019-04-27 18:44:01+02:00,-7200,True,False,['test_1build.py'],['c30478c7538d75d7b650902af1dcd823fb4b2fe6'],2,2,4,1,,,
+8841919d59be75287316bc645b6f6757fc70f2f1,"🔨Add travis ci config file
+Issue: #17",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-27 18:45:18+02:00,-7200,2019-04-27 18:45:18+02:00,-7200,True,False,['.travis.yml'],['1e89b39c0d18614ea3f5238e304ae305cb651644'],0,8,8,1,,,
+3fa8cea0954a122239f2dc3f4ae5474c9d1e6e41,"🔨Add travis ci build status to readme
+Issue: #17",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-27 18:48:48+02:00,-7200,2019-04-27 18:48:48+02:00,-7200,True,False,['README.md'],['8841919d59be75287316bc645b6f6757fc70f2f1'],1,3,4,1,,,
+eb050596304e4be1c23f7a607644f1300c305078,"🔨Remove description from the command
+Issue: #19",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-28 13:41:15+02:00,-7200,2019-04-28 13:41:15+02:00,-7200,True,False,"['1build', 'test_1build.py']",['3fa8cea0954a122239f2dc3f4ae5474c9d1e6e41'],14,6,20,2,0.0,0.0,0.0
+85db4dabfbeecb66a56058e009bb055b17974729,"🔨Fix yaml reader
+Issue: #19",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-04-28 13:56:21+02:00,-7200,2019-04-28 13:56:21+02:00,-7200,True,False,"['1build', 'build_file.yaml']",['eb050596304e4be1c23f7a607644f1300c305078'],16,8,24,2,,,
+d94199fdd4d90de4ac4025da1c9e3460aa4c68f1,📝 add description and usage examples,Alexander Land,landlab@gmail.com,Alexander Land,landlab@gmail.com,2019-04-29 23:34:49+02:00,-7200,2019-04-29 23:34:49+02:00,-7200,True,False,['README.md'],['85db4dabfbeecb66a56058e009bb055b17974729'],1,48,49,1,,,
+ff5e399bdf61e0be3fbf51e8e0cbf33ec6632643,"<1d34> show help if no command specified
+Issue: #18",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-01 19:20:21+02:00,-7200,2019-05-01 19:22:14+02:00,-7200,True,False,['1build'],['85db4dabfbeecb66a56058e009bb055b17974729'],1,1,2,1,,,
+ce853105f814dbc7095aec36229f9017fec53873,"🔨 add test for invalid yaml file
+Issue: #16",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-01 19:20:21+02:00,-7200,2019-05-01 19:42:44+02:00,-7200,True,False,"['1build', 'invalid_yaml_file.yaml', 'test_1build.py']",['ff5e399bdf61e0be3fbf51e8e0cbf33ec6632643'],4,25,29,3,1.0,1.0,1.0
+a07354fe4995e7ba1da7c4095ed7320acca024be,"🔨 add help command
+Issue: #16",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-01 19:20:21+02:00,-7200,2019-05-01 20:11:10+02:00,-7200,True,False,"['.gitignore', '.travis.yml', '1build', 'test_1build.py']",['ce853105f814dbc7095aec36229f9017fec53873'],11,22,33,4,1.0,1.0,1.0
+156d33dac5e083369bf3bc864a19b395e7c91ffb,"🙋🏻‍♂️ Test- should print help if no command specified
+Issue: #16",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-01 19:20:21+02:00,-7200,2019-05-01 20:14:11+02:00,-7200,True,False,['test_1build.py'],['a07354fe4995e7ba1da7c4095ed7320acca024be'],0,13,13,1,1.0,1.0,1.0
+e3bfa9e991a7663a58215f76bd34bc8d7c37dcda,"🤪 remove duplicate test
+Issue: #16",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-01 19:20:21+02:00,-7200,2019-05-01 20:25:49+02:00,-7200,True,False,"['1build', 'test_1build.py']",['156d33dac5e083369bf3bc864a19b395e7c91ffb'],1,15,16,2,1.0,1.0,1.0
+6e2649a0230db53ef685178b1c8c330dd4e64a4b,"🤪 add setup.cfg
+Issue: #6",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-01 19:20:21+02:00,-7200,2019-05-01 21:06:11+02:00,-7200,True,False,"['1build', 'setup.cfg', 'test_1build.py']",['e3bfa9e991a7663a58215f76bd34bc8d7c37dcda'],15,21,36,3,,,
+b5d1cdd2241884e9d152f43ff6720b2b52a9cb5f,"♖ Use different python versions in travis ci.
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-04 15:50:19+02:00,-7200,2019-05-04 15:50:19+02:00,-7200,True,False,['.travis.yml'],['6d4c2d778e439d3e6b5a0fe78369be6d194e210f'],2,5,7,1,,,
+2b5c7a660f25fff57eeb6c5f156aca02e53db7cb,"🐍 show pypi version in readme.
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-04 16:09:51+02:00,-7200,2019-05-04 16:09:51+02:00,-7200,True,False,['README.md'],['b5d1cdd2241884e9d152f43ff6720b2b52a9cb5f'],0,1,1,1,,,
+3015a13cc8018e3e02f96b565ea706ebb324e48a,"% Add codecov to travis.
+Issue: #24",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-04 16:22:47+02:00,-7200,2019-05-04 16:22:47+02:00,-7200,True,False,"['.travis.yml', 'requirements.txt']",['2b5c7a660f25fff57eeb6c5f156aca02e53db7cb'],2,6,8,2,,,
+584f366678ace5ec14e31180faa260d57f387a01,"% Add codecov badge in readme. (#26)
+
+Issue: #24",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-04 16:44:38+02:00,-7200,2019-05-04 16:44:38+02:00,-7200,True,False,['README.md'],['dbf2242f6b59e4591de4031fb0045080313f6ed3'],0,1,1,1,,,
+4630f81f6cd6791cee86f78682512e66d17e7077,"% Add requres.io badge in readme. (#28)
+
+Issue: #27",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-04 16:59:44+02:00,-7200,2019-05-04 16:59:44+02:00,-7200,True,False,['README.md'],['584f366678ace5ec14e31180faa260d57f387a01'],0,1,1,1,,,
+4911cbc97b359eb07b3df6d6ff3b1404f341ca36,"add 1build logo (#32)
+
+* add 1build logo
+
+* updated logo image",Alexander Land,landlab@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-05 21:56:01+02:00,-7200,2019-05-05 21:56:01+02:00,-7200,True,False,"['README.md', '1build-logo.png']",['4630f81f6cd6791cee86f78682512e66d17e7077'],1,3,4,2,,,
+59c45c1d72acccb95df221f3072239eb543bd680,Update pytest from 4.4.1 to 4.4.2 (#36),pyup.io bot,github-bot@pyup.io,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-09 14:45:33+02:00,-7200,2019-05-09 14:45:33+02:00,-7200,True,False,['requirements.txt'],['4911cbc97b359eb07b3df6d6ff3b1404f341ca36'],1,1,2,1,,,
+0ad77efe05458e53220470e3d289eff5c4e5d8d0,"📝Document creating distribution and publish process. (#40)
+
+* 📝Document creating distribution and publishing process.
+Issue: #39",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-09 21:52:30+02:00,-7200,2019-05-09 21:52:30+02:00,-7200,True,False,['pip_publish.md'],['59c45c1d72acccb95df221f3072239eb543bd680'],0,23,23,1,,,
+34e78b86d6e51e8a387590d8c2a9d876159b491f,"🔐 Safety check of dependancies in travis ci. (#38)
+
+Issue: #37",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-09 22:21:59+02:00,-7200,2019-05-09 22:21:59+02:00,-7200,True,False,['.travis.yml'],['0ad77efe05458e53220470e3d289eff5c4e5d8d0'],0,2,2,1,,,
+f9bda97f9e630a9f8ec56927e3e79b48f1144109,"⑩ show number of downloads in readme. (#35)
+
+Issue: #34",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-09 22:25:28+02:00,-7200,2019-05-09 22:25:28+02:00,-7200,True,False,['README.md'],['34e78b86d6e51e8a387590d8c2a9d876159b491f'],0,1,1,1,,,
+2c7c87eb08bc82155ed90286f79dd325ac3a086c,"🍀 Support for before and after command. (#23)
+
+* 👏Improve if on None objects
+
+* 👏follow method naming convention
+
+* ☂️ add documentation for before and after setup
+
+* ☂️ change document to state before & after are optional
+
+* ☂️ give examples of  before & after
+
+* ☂️ remove second command from the list
+
+* ✍️ improve readme",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-10 00:23:39+02:00,-7200,2019-05-10 00:23:39+02:00,-7200,True,False,"['1build', 'README.md', 'build_file.yaml', 'build_file_with_before_and_after.yaml', 'test_1build.py']",['f9bda97f9e630a9f8ec56927e3e79b48f1144109'],18,89,107,5,0.1111111111111111,1.0,1.0
+425abd5b7dce0244686d67f08e7dcad047720e5f,Separate test files for before and after command. (#43),Manish Jain,jaiin.maniish@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-11 20:15:52+02:00,-7200,2019-05-11 20:15:52+02:00,-7200,True,False,"['build_file.yaml', 'build_file_with_after_only.yaml', 'build_file_with_before_and_after.yaml', 'build_file_with_before_only.yaml', 'invalid_yaml_file.yaml', 'test_1build.py', 'test_before_after_setup.py', 'test_utils.py']",['2c7c87eb08bc82155ed90286f79dd325ac3a086c'],28,73,101,8,1.0,1.0,1.0
+06ebd4c01e72248aabd85787fe8af46e2da5465c,Update pytest from 4.4.2 to 4.5.0 (#44),pyup.io bot,github-bot@pyup.io,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-12 11:36:23+02:00,-7200,2019-05-12 11:36:23+02:00,-7200,True,False,['requirements.txt'],['425abd5b7dce0244686d67f08e7dcad047720e5f'],1,1,2,1,,,
+8fca08c56f632e09b6f3c3e972f9845db0c827e2,"🍀 refactor - inline if elses. (#46)
+
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-12 20:00:44+02:00,-7200,2019-05-12 20:00:44+02:00,-7200,True,False,['1build'],['06ebd4c01e72248aabd85787fe8af46e2da5465c'],17,7,24,1,,,
+b194976aba6abc5056fe8d18c797c6a4c624bc45,"Update the logo
+Issue: #29",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-12 20:06:21+02:00,-7200,2019-05-12 20:07:07+02:00,-7200,True,False,"['README.md', '1build-logo.png']",['8fca08c56f632e09b6f3c3e972f9845db0c827e2'],1,0,1,2,,,
+e735cd9be3852c6dd4daffbd0b051c1c15c3b974,"Update readme description
+Issue: #31",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-13 21:46:43+02:00,-7200,2019-05-13 21:46:43+02:00,-7200,True,False,['README.md'],['b194976aba6abc5056fe8d18c797c6a4c624bc45'],49,57,106,1,,,
+31f3443dfa0a6d9c31cf671698318d3b59eae7b9,"Update readme description
+Issue: #31",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-13 21:49:21+02:00,-7200,2019-05-13 21:49:21+02:00,-7200,True,False,['README.md'],['e735cd9be3852c6dd4daffbd0b051c1c15c3b974'],2,2,4,1,,,
+9cb60828844c4b93e55de3465c999286b3cbcbfe,"Update package version in setup.py
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-13 21:55:33+02:00,-7200,2019-05-13 21:55:33+02:00,-7200,True,False,['setup.py'],['31f3443dfa0a6d9c31cf671698318d3b59eae7b9'],1,1,2,1,,,
+0cd52b06f200292632a2dd978b009701433a9653,"Update package version in setup.py
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-13 22:02:40+02:00,-7200,2019-05-13 22:02:40+02:00,-7200,True,False,"['README.md', 'setup.py']",['9cb60828844c4b93e55de3465c999286b3cbcbfe'],3,3,6,2,,,
+25db249bed8aaed230be9c88b59b6edda60d1f0f,Update Readme – fixed typo,Alexander Land,landlab@gmail.com,GitHub,noreply@github.com,2019-05-15 00:15:55+02:00,-7200,2019-05-15 00:15:55+02:00,-7200,True,False,['README.md'],['0cd52b06f200292632a2dd978b009701433a9653'],2,2,4,1,,,
+032c52fec6faf5c8c91ad8cd64cd367b7b6e076a,update README.md,Alexander Land,landlab@gmail.com,GitHub,noreply@github.com,2019-05-15 00:16:51+02:00,-7200,2019-05-15 00:16:51+02:00,-7200,True,False,['README.md'],['25db249bed8aaed230be9c88b59b6edda60d1f0f'],1,1,2,1,,,
+aeec2f0c98e22fd18657d21ec55d9b352b73e358,Update ruamel.yaml from 0.15.94 to 0.15.95 (#47),pyup.io bot,github-bot@pyup.io,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-16 09:56:59+02:00,-7200,2019-05-16 09:56:59+02:00,-7200,True,False,['requirements.txt'],['032c52fec6faf5c8c91ad8cd64cd367b7b6e076a'],1,1,2,1,,,
+072ac37b0cd9cc4688b41044fe2bb9c80aeac199,Update README.md (#48),Manish Jain,jaiin.maniish@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-16 20:43:52+02:00,-7200,2019-05-16 20:43:52+02:00,-7200,True,False,['README.md'],['aeec2f0c98e22fd18657d21ec55d9b352b73e358'],1,1,2,1,,,
+1c1c7cb79c5d8d1ac63dae38a08d04ced41fbcb9,Update ruamel.yaml from 0.15.95 to 0.15.96 (#52),pyup.io bot,github-bot@pyup.io,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-17 22:13:59+02:00,-7200,2019-05-17 22:13:59+02:00,-7200,True,False,['requirements.txt'],['072ac37b0cd9cc4688b41044fe2bb9c80aeac199'],1,1,2,1,,,
+5e07efc0f47aec11ae5044d224d1190027134bd2,"Create onebuild package (#56)
+
+Issue: #54",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-27 13:58:13+02:00,-7200,2019-05-27 13:58:13+02:00,-7200,True,False,"['.travis.yml', '1build', '__init__.py', '__main__.py', 'config_parser.py', 'executor.py', 'input_parser.py', 'main.py', 'project.py', 'utils.py', 'setup.py', '__init__.py', 'test_1build.py', 'test_before_after_setup.py', 'test_utils.py']",['1c1c7cb79c5d8d1ac63dae38a08d04ced41fbcb9'],196,268,464,15,0.8163265306122449,1.0,0.8061224489795918
+356e8356721315c4cc953fc7b38fca034e1c2501,"Add more python versions
+Issue: #53",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-27 15:43:27+02:00,-7200,2019-05-27 15:43:27+02:00,-7200,True,False,['.travis.yml'],['5e07efc0f47aec11ae5044d224d1190027134bd2'],0,8,8,1,,,
+b65c5e0516b7e62335c6d2d7a2bd354c3f464924,"Add more python versions
+Issue: #53",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-27 15:48:17+02:00,-7200,2019-05-27 15:48:17+02:00,-7200,True,False,['.travis.yml'],['356e8356721315c4cc953fc7b38fca034e1c2501'],4,8,12,1,,,
+18a8d66e2aed9ca541ae388240748a2b0ee7b895,"Add more python versions
+Issue: #53",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-27 15:50:04+02:00,-7200,2019-05-27 15:50:04+02:00,-7200,True,False,['.travis.yml'],['b65c5e0516b7e62335c6d2d7a2bd354c3f464924'],2,2,4,1,,,
+8d7350bf38abf0e974df51ef49b44b13ee5a8923,"Add py 3.5 in travis-ci
+Issue: #53",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-27 15:54:59+02:00,-7200,2019-05-27 15:54:59+02:00,-7200,True,False,['.travis.yml'],['18a8d66e2aed9ca541ae388240748a2b0ee7b895'],9,0,9,1,,,
+be3aebbe675144403c5dbc53ef81dafb448d76b6,"Add python 3.5 in travis-ci
+Issue: #53",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-27 15:58:22+02:00,-7200,2019-05-27 15:58:22+02:00,-7200,True,False,['.travis.yml'],['8d7350bf38abf0e974df51ef49b44b13ee5a8923'],1,1,2,1,,,
+4091110a10b65b11fd485d71113283a493064fe6,"Add python 3.5 in classifiers
+Issue: #53",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-27 15:59:16+02:00,-7200,2019-05-27 15:59:16+02:00,-7200,True,False,['setup.py'],['be3aebbe675144403c5dbc53ef81dafb448d76b6'],0,1,1,1,,,
+a9a9a45a4c84367d05930cfbae32726777021ed1,"Show supported python versions
+Issue: #53",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-27 16:07:24+02:00,-7200,2019-05-27 16:07:24+02:00,-7200,True,False,['README.md'],['4091110a10b65b11fd485d71113283a493064fe6'],0,1,1,1,,,
+9ef939527487f302fcf6cab4481624d90489cdab,"Set universal dist to OFF
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-27 16:18:26+02:00,-7200,2019-05-27 16:18:26+02:00,-7200,True,False,['setup.cfg'],['a9a9a45a4c84367d05930cfbae32726777021ed1'],1,1,2,1,,,
+1bf02e13be16862ffaad560877ee0e58784d40fd,"Upgrade 1build version to 0.0.5
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-05-27 16:19:48+02:00,-7200,2019-05-27 16:19:48+02:00,-7200,True,False,['setup.py'],['9ef939527487f302fcf6cab4481624d90489cdab'],1,1,2,1,,,
+e1566c2ed07eac3eae88493a71c09c5e303b4711,Align logo to center (#61),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-30 14:18:09+02:00,-7200,2019-05-30 14:18:09+02:00,-7200,True,False,['README.md'],['1bf02e13be16862ffaad560877ee0e58784d40fd'],2,10,12,1,,,
+b93deb0b2eec4654ca6b761684cff0679ac17dab,Update README.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-30 14:25:08+02:00,-7200,2019-05-30 14:25:08+02:00,-7200,True,False,['README.md'],['e1566c2ed07eac3eae88493a71c09c5e303b4711'],5,3,8,1,,,
+c0c511e183e0ce266e0aa30f17d5061fe3fd0fe4,Center align the badges,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-30 14:39:02+02:00,-7200,2019-05-30 14:39:02+02:00,-7200,True,False,['README.md'],['b93deb0b2eec4654ca6b761684cff0679ac17dab'],7,23,30,1,,,
+d8399b25e2721e584052f7b8ed49833c5da1d651,"Contribution guide (#62)
+
+* Contribution guide
+Issue: #22
+
+* Contribution guide
+Issue: #22",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-30 15:04:27+02:00,-7200,2019-05-30 15:04:27+02:00,-7200,True,False,"['CONTRIBUTING.md', 'README.md']",['c0c511e183e0ce266e0aa30f17d5061fe3fd0fe4'],0,34,34,2,,,
+95e7e8fd21a27a2b0be65773ec0be36e412b771c,Add versioning information,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-30 15:05:54+02:00,-7200,2019-05-30 15:05:54+02:00,-7200,True,False,['README.md'],['d8399b25e2721e584052f7b8ed49833c5da1d651'],0,7,7,1,,,
+efd966a0e78784cd6a53deb72618be9bfa37daa3,Add License information,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-30 15:06:50+02:00,-7200,2019-05-30 15:06:50+02:00,-7200,True,False,['README.md'],['95e7e8fd21a27a2b0be65773ec0be36e412b771c'],0,3,3,1,,,
+9099338b6c1a05932a98f07e86023889822b1fe3,Add LICENSE information,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-30 15:07:36+02:00,-7200,2019-05-30 15:07:36+02:00,-7200,True,False,['README.md'],['efd966a0e78784cd6a53deb72618be9bfa37daa3'],1,1,2,1,,,
+76b153630d0344ca3446df7ee0832958abba5f75,Include contributors information,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-30 15:15:18+02:00,-7200,2019-05-30 15:15:18+02:00,-7200,True,False,['README.md'],['9099338b6c1a05932a98f07e86023889822b1fe3'],0,8,8,1,,,
+4d3e3594c1e64c8bc4521e7ea533fb2534b9b6cf,"Use of argparse to parse input (#65)
+
+* Arg parse demo
+
+* Use of argparse to parse input
+Issue: #49
+
+* lint fix
+Issue: #49
+
+* Parse config file if not help
+Issue: #49",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-30 19:37:56+02:00,-7200,2019-05-30 19:37:56+02:00,-7200,True,False,"['input_parser.py', 'main.py', 'project.py', 'utils.py', 'test_1build.py', 'test_before_after_setup.py', 'test_help.py']",['76b153630d0344ca3446df7ee0832958abba5f75'],54,88,142,7,1.0,1.0,1.0
+895863de45fb74a4bad5aabcd09530c28f05e148,List all available command from current project (#67),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-30 20:39:08+02:00,-7200,2019-05-30 20:39:08+02:00,-7200,True,False,"['README.md', 'input_parser.py', 'main.py', 'utils.py', 'test_help_command.py', 'test_list_command.py']",['4d3e3594c1e64c8bc4521e7ea533fb2534b9b6cf'],20,74,94,6,0.0,1.0,1.0
+11f81c02895f6fb4a9106415643d8919835aaf02,"Add CHANGELOG.md (#69)
+
+Issue: #68",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-31 11:05:28+02:00,-7200,2019-05-31 11:05:28+02:00,-7200,True,False,['CHANGELOG.md'],['895863de45fb74a4bad5aabcd09530c28f05e148'],0,50,50,1,,,
+ac0d7c89e35f8c6da9355f9e0c5ab2001a7f4dc1,Add Changelog section,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-05-31 11:11:30+02:00,-7200,2019-05-31 11:11:30+02:00,-7200,True,False,['README.md'],['11f81c02895f6fb4a9106415643d8919835aaf02'],1,6,7,1,,,
+ba059cea0a63298dc95f02963ff7c7d02a2ebfd9,Update pytest from 4.5.0 to 4.6.0 (#70),pyup.io bot,github-bot@pyup.io,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-02 22:34:54+02:00,-7200,2019-06-02 22:34:54+02:00,-7200,True,False,['requirements.txt'],['ac0d7c89e35f8c6da9355f9e0c5ab2001a7f4dc1'],1,1,2,1,,,
+2c29496458b999ca07628c30a7a37bc247704234,Update pytest from 4.6.0 to 4.6.2 (#72),pyup.io bot,github-bot@pyup.io,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-04 09:34:30+02:00,-7200,2019-06-04 09:34:30+02:00,-7200,True,False,['requirements.txt'],['ba059cea0a63298dc95f02963ff7c7d02a2ebfd9'],1,1,2,1,,,
+9a180263769ec0e2b07c19b254892bc7e916e2b1,Update ruamel.yaml from 0.15.96 to 0.15.97 (#77),pyup.io bot,github-bot@pyup.io,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-06 11:20:16+02:00,-7200,2019-06-06 11:20:16+02:00,-7200,True,False,['requirements.txt'],['2c29496458b999ca07628c30a7a37bc247704234'],1,1,2,1,,,
+abe38a00aad3d7ac79e207ee0dcc3a9f6fa58336,Upgrade ruamel.yaml to 0.15.97 (#78),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-06 11:46:33+02:00,-7200,2019-06-06 11:46:33+02:00,-7200,True,False,['setup.py'],['9a180263769ec0e2b07c19b254892bc7e916e2b1'],1,1,2,1,,,
+2e67b439083031e62fd69b1af78241abe006be1b,"Release 1.0.0 (#76)
+
+Issue: #75",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-06 11:53:40+02:00,-7200,2019-06-06 11:53:40+02:00,-7200,True,False,['CHANGELOG.md'],['abe38a00aad3d7ac79e207ee0dcc3a9f6fa58336'],0,15,15,1,,,
+1fe4aeedcea7671ad0e70b017f616e8abcd98c59,Update CHANGELOG.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-06 13:14:01+02:00,-7200,2019-06-06 13:14:01+02:00,-7200,True,False,['CHANGELOG.md'],['2e67b439083031e62fd69b1af78241abe006be1b'],2,2,4,1,,,
+3f4cdede6fc089ca84776afc7e84bef619ef758c,Show version of `1build` (#80),Mayur Kumbhar,mayur.kumbhar@outlook.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-07 23:23:14+05:18,-19080,2019-06-07 20:05:14+02:00,-7200,True,False,"['README.md', '__init__.py', 'input_parser.py', 'main.py', 'utils.py', 'setup.py', 'test_help_command.py', 'test_version_command.py']",['1fe4aeedcea7671ad0e70b017f616e8abcd98c59'],12,71,83,8,0.1111111111111111,1.0,1.0
+074ed0647135a892148ccdc2f3f999222037294c,"update logo to include motto (#82)
+
+Issue: #81",Mayur Kumbhar,mayur.kumbhar@outlook.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-07 23:44:28+05:18,-19080,2019-06-07 20:26:28+02:00,-7200,True,False,"['README.md', '1build-logo.png']",['3f4cdede6fc089ca84776afc7e84bef619ef758c'],1,1,2,2,,,
+dcc3491c4abc36b0213e337d7a24ecf69439e286,"Add test for scenario where 1build file is not present and add pyc files to gitignore (#86)
+
+* add test for scenario when build file is not found
+
+* add pyc files in gitignore
+
+* rename test case to specify yaml file not in proper format",Ritabrata Moitra,rmoitra@thoughtworks.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-10 14:55:20+05:18,-19080,2019-06-10 10:37:20+01:00,-3600,True,False,"['.gitignore', 'test_1build.py']",['074ed0647135a892148ccdc2f3f999222037294c'],1,12,13,2,1.0,1.0,1.0
+e764188aaa621259c1a0346d15798b98ed9c88e4,"Update issue templates (#85)
+
+* Update issue templates
+
+Update issue template to feature template by github
+
+* Update feature_request.md",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-10 10:52:43+01:00,-3600,2019-06-10 10:52:43+01:00,-3600,True,False,['feature_request.md'],['dcc3491c4abc36b0213e337d7a24ecf69439e286'],0,12,12,1,,,
+0b9f0de03a887706f79d778d14d7a6681a4670dd,Delete feature_request.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-10 10:54:44+01:00,-3600,2019-06-10 10:54:44+01:00,-3600,True,False,['feature_request.md'],['e764188aaa621259c1a0346d15798b98ed9c88e4'],12,0,12,1,,,
+e1a0398997bc056cd7307cb1085007f651e3ba80,Update issue templates (#87),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-10 10:59:40+01:00,-3600,2019-06-10 10:59:40+01:00,-3600,True,False,['1build_issue_templace.md'],['0b9f0de03a887706f79d778d14d7a6681a4670dd'],0,19,19,1,,,
+a0abd6efda03dfc5d63c5075b02c073d6c6b80d1,Update 1build_issue_templace.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-10 11:03:04+01:00,-3600,2019-06-10 11:03:04+01:00,-3600,True,False,['1build_issue_templace.md'],['e1a0398997bc056cd7307cb1085007f651e3ba80'],6,1,7,1,,,
+f9951974042eac0b915f306b1d2edddc736cbab6,Create pull_request_template.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-10 11:17:48+01:00,-3600,2019-06-10 11:17:48+01:00,-3600,True,False,['pull_request_template.md'],['a0abd6efda03dfc5d63c5075b02c073d6c6b80d1'],0,15,15,1,,,
+e46ef3c62d4ed24eca7f58fb0d2684135dec71ef,Update pull_request_template.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-10 11:26:13+01:00,-3600,2019-06-10 11:26:13+01:00,-3600,True,False,['pull_request_template.md'],['f9951974042eac0b915f306b1d2edddc736cbab6'],1,1,2,1,,,
+644f3a6763e8020f2d35909438c3451b3c6ef106,Update pull_request_template.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-10 11:34:25+01:00,-3600,2019-06-10 11:34:25+01:00,-3600,True,False,['pull_request_template.md'],['e46ef3c62d4ed24eca7f58fb0d2684135dec71ef'],0,1,1,1,,,
+e25126fcb19922725820f5aa5e7fae510356fa64,"Add changelog draft (#90)
+
+* Add changelog draft
+Issue: #89
+
+* Include logo change in changelog draft
+Issue: #89
+
+* Include logo change in changelog draft
+Issue: #89",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-10 11:46:06+01:00,-3600,2019-06-10 11:46:06+01:00,-3600,True,False,['CHANGELOG.md'],['644f3a6763e8020f2d35909438c3451b3c6ef106'],0,22,22,1,,,
+03f2e6688db8746b016c36bf0864741bfd31d528,"Bump pytest from 4.6.2 to 4.6.3 (#93)
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 4.6.2 to 4.6.3.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/4.6.3/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/4.6.2...4.6.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],dependabot-preview[bot]@users.noreply.github.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-11 22:10:37+01:00,-3600,2019-06-11 22:10:37+01:00,-3600,True,False,['requirements.txt'],['e25126fcb19922725820f5aa5e7fae510356fa64'],1,1,2,1,,,
+da0fd63217d4d7f116d37c53b9604f4209ce1089,Update CONTRIBUTING.md (#95),Alexander Land,landlab@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-11 23:27:48+02:00,-7200,2019-06-11 22:27:48+01:00,-3600,True,False,['CONTRIBUTING.md'],['03f2e6688db8746b016c36bf0864741bfd31d528'],10,10,20,1,,,
+7d43a5f3766fadbac9d197099fe7ecdf4fca3a85,Update pull_request_template.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-16 18:09:26+01:00,-3600,2019-06-16 18:09:26+01:00,-3600,True,False,['pull_request_template.md'],['da0fd63217d4d7f116d37c53b9604f4209ce1089'],1,1,2,1,,,
+65418449e09f389a2db2efbed914be254adf2e79,"Travis CI use py3 for running tests on all os (#99)
+
+* Travis CI use py3 for running tests on all os
+Issue: #98
+
+* Update changelog
+Issue: #98",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-16 18:31:43+01:00,-3600,2019-06-16 18:31:43+01:00,-3600,True,False,"['.travis.yml', 'CHANGELOG.md']",['7d43a5f3766fadbac9d197099fe7ecdf4fca3a85'],11,7,18,2,,,
+d64ca029215d95504bd40b4d170cbea38b8b8b74,Add init command to create default config file (#97),Ritabrata Moitra,rmoitra@thoughtworks.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-21 17:17:44+05:18,-19080,2019-06-21 13:59:44+02:00,-7200,True,False,"['CHANGELOG.md', 'action_to_command_lookup.py', 'command.py', 'executor.py', 'file_writer.py', 'help_command.py', 'init_command.py', 'input_parser.py', 'list_command.py', 'main.py', 'perform_command.py', 'predefined_actions.py', 'utils.py', 'version_command.py', 'requirements.txt', 'test_file_writer.py', 'test_help_command.py', 'test_init_command.py']",['65418449e09f389a2db2efbed914be254adf2e79'],51,177,228,18,1.0,1.0,0.603448275862069
+82b9517c525a1861e2eb82e4f289d75e193940f0,"Do not override `1build.yaml` if already exists in --init command (#104)
+
+* Do not override file if exists for init command
+Issue: #103
+
+* Add --init support in readme
+Issue: #103",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-21 15:03:17+02:00,-7200,2019-06-21 15:03:17+02:00,-7200,True,False,"['README.md', 'init_command.py', 'test_init_command.py']",['d64ca029215d95504bd40b4d170cbea38b8b8b74'],3,37,40,3,1.0,1.0,0.8888888888888888
+d434c63e9c84e0a5e753b3e2e824c4387654d20a,"Change to python3 - all commands
+Issue: #10",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-21 15:11:50+02:00,-7200,2019-06-21 15:11:50+02:00,-7200,True,False,['pip_publish.md'],['82b9517c525a1861e2eb82e4f289d75e193940f0'],3,3,6,1,,,
+71b6f39a7f49508fe4280fa145633ecd1247c190,"Release 1.1.0 (#106)
+
+* Release 1.1.0
+Issue: #105
+
+* Release 1.1.0
+Issue: #105
+
+* Chage version test to 1.1.0
+Issue: #105",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-06-21 15:39:40+02:00,-7200,2019-06-21 15:39:40+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py', 'test_version_command.py']",['d434c63e9c84e0a5e753b3e2e824c4387654d20a'],4,7,11,3,,,
+37a4bd3f9e6f1fd032c4530bc35895a092effe70,"Execute multiple 1build command at once
+Issue: #102",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-29 12:46:11+02:00,-7200,2019-06-29 12:46:11+02:00,-7200,True,False,"['action_to_command_lookup.py', 'input_parser.py', 'perform_command.py', 'predefined_actions.py', 'test_help_command.py', 'test_perform_command.py']",['71b6f39a7f49508fe4280fa145633ecd1247c190'],8,51,59,6,1.0,0.5806451612903226,1.0
+ef861a6898cbd9697dd3975a111e88ee0f1abfe7,"Revert ""Execute multiple 1build command at once""
+
+This reverts commit 37a4bd3f9e6f1fd032c4530bc35895a092effe70.",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-06-29 12:47:28+02:00,-7200,2019-06-29 12:47:28+02:00,-7200,True,False,"['action_to_command_lookup.py', 'input_parser.py', 'perform_command.py', 'predefined_actions.py', 'test_help_command.py', 'test_perform_command.py']",['37a4bd3f9e6f1fd032c4530bc35895a092effe70'],51,8,59,6,0.0,0.41935483870967744,0.0
+c4c74c43c0bfb67f27f240c00a34b7dbfe7bb7e3,"Bump pytest from 4.6.3 to 5.0.1 (#110)
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 4.6.3 to 5.0.1.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/4.6.3...5.0.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-07-05 14:31:21+02:00,-7200,2019-07-05 14:31:21+02:00,-7200,True,False,['requirements.txt'],['ef861a6898cbd9697dd3975a111e88ee0f1abfe7'],1,1,2,1,,,
+48d653d3e4c551ad651278e9e544144c90cbf061,Update CHANGELOG.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-07-05 14:33:28+02:00,-7200,2019-07-05 14:33:28+02:00,-7200,True,False,['CHANGELOG.md'],['c4c74c43c0bfb67f27f240c00a34b7dbfe7bb7e3'],0,14,14,1,,,
+da89642e417c2004bda375f4a819dda4f9c6a203,"Execute multiple 1build command at once (#109)
+
+* Execute multiple 1build command at once
+Issue: #102
+
+* Update changelog and readme
+Issue: #102",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-07-05 16:43:15+02:00,-7200,2019-07-05 16:43:15+02:00,-7200,True,False,"['README.md', 'action_to_command_lookup.py', 'input_parser.py', 'perform_command.py', 'predefined_actions.py', 'test_help_command.py', 'test_perform_command.py']",['48d653d3e4c551ad651278e9e544144c90cbf061'],25,67,92,7,1.0,0.5806451612903226,1.0
+e44908c122a956dffc62c631c6a3651478add874,"Bump ruamel-yaml from 0.15.97 to 0.15.99 (#113)
+
+Bumps [ruamel-yaml](https://bitbucket.org/ruamel/yaml) from 0.15.97 to 0.15.99.
+- [Changelog](https://bitbucket.org/ruamel/yaml/src/default/CHANGES)
+- [Commits](https://bitbucket.org/ruamel/yaml/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-07-12 18:08:06+02:00,-7200,2019-07-12 18:08:06+02:00,-7200,True,False,['requirements.txt'],['da89642e417c2004bda375f4a819dda4f9c6a203'],1,1,2,1,,,
+684b1ecbcec6fb2c9b420339beeea70208e3c7da,"Bump ruamel-yaml from 0.15.99 to 0.15.100 (#114)
+
+Bumps [ruamel-yaml](https://bitbucket.org/ruamel/yaml) from 0.15.99 to 0.15.100.
+- [Changelog](https://bitbucket.org/ruamel/yaml/src/default/CHANGES)
+- [Commits](https://bitbucket.org/ruamel/yaml/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-07-17 12:44:04+02:00,-7200,2019-07-17 12:44:04+02:00,-7200,True,False,['requirements.txt'],['e44908c122a956dffc62c631c6a3651478add874'],1,1,2,1,,,
+25d39facb349d91024307cfc3855e65660ffdc2b,Update CHANGELOG.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-07-18 17:12:21+02:00,-7200,2019-07-18 17:12:21+02:00,-7200,True,False,['CHANGELOG.md'],['684b1ecbcec6fb2c9b420339beeea70208e3c7da'],0,1,1,1,,,
+3bd839eb145b245e5e64cec2c1e49ed5a15d3c9f,"Bump ruamel-yaml from 0.15.100 to 0.16.0 (#115)
+
+Bumps [ruamel-yaml](https://bitbucket.org/ruamel/yaml) from 0.15.100 to 0.16.0.
+- [Changelog](https://bitbucket.org/ruamel/yaml/src/default/CHANGES)
+- [Commits](https://bitbucket.org/ruamel/yaml/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-07-28 14:52:04+02:00,-7200,2019-07-28 14:52:04+02:00,-7200,True,False,['requirements.txt'],['25d39facb349d91024307cfc3855e65660ffdc2b'],1,1,2,1,,,
+33d5d557d3ea963f1fc802002a57f6750a3b5334,Update CHANGELOG.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-07-28 14:53:29+02:00,-7200,2019-07-28 14:53:29+02:00,-7200,True,False,['CHANGELOG.md'],['3bd839eb145b245e5e64cec2c1e49ed5a15d3c9f'],0,1,1,1,,,
+66fbae19ca66421396adb956bfb87386690baa1d,release 1.1.1 (#116),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-07-28 15:00:39+02:00,-7200,2019-07-28 15:00:39+02:00,-7200,True,False,['__init__.py'],['33d5d557d3ea963f1fc802002a57f6750a3b5334'],1,1,2,1,,,
+701a119a613ebf84e8328c66d0b9f9019d7a996f,version 1.1.1 release changelog,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-07-28 15:05:27+02:00,-7200,2019-07-28 15:05:27+02:00,-7200,True,False,['CHANGELOG.md'],['66fbae19ca66421396adb956bfb87386690baa1d'],1,1,2,1,,,
+bd46601e6e76123cd612d94ca5798fce1161783f,release 1.1.1 test fix (#117),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-07-28 15:08:23+02:00,-7200,2019-07-28 15:08:23+02:00,-7200,True,False,['test_version_command.py'],['701a119a613ebf84e8328c66d0b9f9019d7a996f'],1,1,2,1,,,
+abce6eab3a8ecf34adca843965b53464f3e8dc5d,Add sponsors logo (#118),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-07-29 08:51:27+02:00,-7200,2019-07-29 08:51:27+02:00,-7200,True,False,"['jetbrains.png', 'jetbrains.svg']",['bd46601e6e76123cd612d94ca5798fce1161783f'],0,66,66,2,,,
+db86bd1a2f57267ac339034f6d2e67d1e4ef7b39,Add sponsors section,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-07-29 08:54:49+02:00,-7200,2019-07-29 08:54:49+02:00,-7200,True,False,['README.md'],['abce6eab3a8ecf34adca843965b53464f3e8dc5d'],0,6,6,1,,,
+a88d7c67e11557095e144957cc915281577745ab,Remove svg file,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-07-29 08:55:54+02:00,-7200,2019-07-29 08:55:54+02:00,-7200,True,False,['jetbrains.svg'],['db86bd1a2f57267ac339034f6d2e67d1e4ef7b39'],66,0,66,1,,,
+27f5a6fecdfaa1fa92bedf037e4462b72186cb84,Add files via upload,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-08-05 13:15:01+02:00,-7200,2019-08-05 13:15:01+02:00,-7200,True,False,['1password.png'],['a88d7c67e11557095e144957cc915281577745ab'],0,0,0,1,,,
+a692bdce2643c726915950622ec46fbf4ce02816,1Build reimplementation using GoLang 🚀,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-15 16:59:05+02:00,-7200,2019-08-15 16:59:05+02:00,-7200,True,False,"['1build_issue_templace.md', 'pull_request_template.md', '.gitignore', '.travis.yml', '1build', '1build.go', '1build.yaml', 'CONTRIBUTING.md', 'Gopkg.lock', 'Gopkg.toml', 'README.md', 'io.go', 'parse.go', 'exec.go', 'init.go', 'list.go', 'root.go', 'set.go', 'unset.go', 'utils.go', 'pip_publish.md', '__init__.py', '__main__.py', 'action_to_command_lookup.py', 'command.py', 'config_parser.py', 'file_writer.py', 'help_command.py', 'init_command.py', 'input_parser.py', 'list_command.py', 'main.py', 'perform_command.py', 'predefined_actions.py', 'project.py', 'utils.py', 'version_command.py', 'requirements.txt', 'setup.cfg', 'setup.py', 'cli_test.go', 'definitions.go', 'command_init_fixtures.go', 'command_list_fixtures.go', 'command_root_fixtures.go', 'command_set_fixtures.go', 'command_unset_fixtures.go', 'execute_cmd_fixtures.go', 'fixures.go', 'flag_version_fixtures.go', 'test_utils.go', '__init__.py', 'build_file.yaml', 'build_file_with_after_only.yaml', 'build_file_with_before_and_after.yaml', 'build_file_with_before_only.yaml', 'invalid_yaml_file.yaml', 'test_1build.py', 'test_before_after_setup.py', 'test_file_writer.py', 'test_help_command.py', 'test_init_command.py', 'test_list_command.py', 'test_perform_command.py', 'test_utils.py', 'test_version_command.py']",['27f5a6fecdfaa1fa92bedf037e4462b72186cb84'],845,1478,2323,66,0.6335403726708074,0.8633540372670807,1.0
+b6eb1d1aaf7723fbf8fd35be43838858b37546fd,Update LICENSE,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-15 17:00:39+02:00,-7200,2019-08-15 17:00:39+02:00,-7200,True,False,['LICENSE'],['a692bdce2643c726915950622ec46fbf4ce02816'],1,1,2,1,,,
+27259db13235d21c0d2551d8d75626900062dc23,Move naming from 1buildgo to 1build,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-15 17:05:05+02:00,-7200,2019-08-15 17:05:05+02:00,-7200,True,False,"['.gitignore', '.travis.yml', '1build.go', '1build.yaml', 'CONTRIBUTING.md', 'Gopkg.lock', 'README.md', 'parse.go', 'exec.go', 'init.go', 'list.go', 'root.go', 'set.go', 'unset.go', 'cli_test.go', 'command_init_fixtures.go', 'command_list_fixtures.go', 'command_root_fixtures.go', 'command_set_fixtures.go', 'command_unset_fixtures.go', 'execute_cmd_fixtures.go', 'test_utils.go']",['b6eb1d1aaf7723fbf8fd35be43838858b37546fd'],37,60,97,22,,,
+e26c8bbf65c6c16e09d0692fce1fa01ecb5252e5,Describe unset command in readme,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-15 17:08:15+02:00,-7200,2019-08-15 17:08:15+02:00,-7200,True,False,"['1build.yaml', 'README.md']",['27259db13235d21c0d2551d8d75626900062dc23'],3,6,9,2,,,
+4b2efc50cc9a5538e72e959fd6563b7ba4d86cca,add goreleaser to ignore,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-15 17:14:39+02:00,-7200,2019-08-15 17:14:39+02:00,-7200,True,False,['.gitignore'],['e26c8bbf65c6c16e09d0692fce1fa01ecb5252e5'],1,1,2,1,,,
+d84acfa47c98d251c8563752bd9ac6e1db6328eb,v1.2.0 changelog,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-15 17:22:05+02:00,-7200,2019-08-15 17:22:05+02:00,-7200,True,False,['CHANGELOG.md'],['4b2efc50cc9a5538e72e959fd6563b7ba4d86cca'],0,20,20,1,,,
+314500be56fae18e8f3ad0c33d7f128361c2f41d,v1.2.0 add to latest release,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-15 17:24:02+02:00,-7200,2019-08-15 17:24:02+02:00,-7200,True,False,['README.md'],['d84acfa47c98d251c8563752bd9ac6e1db6328eb'],1,1,2,1,,,
+115432aa6b1a5a74cb7354d5931f937eec6e1dff,typo fix,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-16 14:15:38+02:00,-7200,2019-08-16 14:15:38+02:00,-7200,True,False,['README.md'],['314500be56fae18e8f3ad0c33d7f128361c2f41d'],1,1,2,1,,,
+db712c4688d27524613f192155f72ef4a16aefef,Move to go module from dep,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-16 14:23:51+02:00,-7200,2019-08-16 14:23:51+02:00,-7200,True,False,"['Gopkg.lock', 'Gopkg.toml', 'go.mod', 'go.sum']",['115432aa6b1a5a74cb7354d5931f937eec6e1dff'],128,56,184,4,,,
+03a75de4489051f7f4518a292de0d54deb5330d4,Move to go module from dep,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-16 14:24:14+02:00,-7200,2019-08-16 14:24:14+02:00,-7200,True,False,['.travis.yml'],['db712c4688d27524613f192155f72ef4a16aefef'],2,1,3,1,,,
+6484839f2eff530b7c2449e512ef9e9364b82a31,Upgrade go version,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-16 14:24:48+02:00,-7200,2019-08-16 14:24:48+02:00,-7200,True,False,['.travis.yml'],['03a75de4489051f7f4518a292de0d54deb5330d4'],1,1,2,1,,,
+dddc9bf6745dc9d5152893a1c8356620715f7a0a,go test lock dependencies,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-16 14:26:40+02:00,-7200,2019-08-16 14:26:40+02:00,-7200,True,False,['go.sum'],['6484839f2eff530b7c2449e512ef9e9364b82a31'],0,3,3,1,,,
+b718afc135b3d72cde139346493ee0583a7d2f13,Set gomodule to on,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-16 14:32:43+02:00,-7200,2019-08-16 14:32:43+02:00,-7200,True,False,['.travis.yml'],['dddc9bf6745dc9d5152893a1c8356620715f7a0a'],0,2,2,1,,,
+5c59050aca0b16fe9fbf06b63712c46c131e8f87,"Bump github.com/stretchr/testify from 1.3.0 to 1.4.0 (#124)
+
+Bumps [github.com/stretchr/testify](https://github.com/stretchr/testify) from 1.3.0 to 1.4.0.
+- [Release notes](https://github.com/stretchr/testify/releases)
+- [Commits](https://github.com/stretchr/testify/compare/v1.3.0...v1.4.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-20 18:09:03+02:00,-7200,2019-08-20 18:09:03+02:00,-7200,True,False,"['go.mod', 'go.sum']",['b718afc135b3d72cde139346493ee0583a7d2f13'],1,5,6,2,,,
+21fbe1897e9318c18841fc839c510f57863d2189,Lint fix,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-21 18:58:25+02:00,-7200,2019-08-21 18:59:20+02:00,-7200,True,False,"['io.go', 'parse.go', 'exec.go', 'root.go', 'unset.go', 'utils.go', 'go.mod', 'go.sum']",['5c59050aca0b16fe9fbf06b63712c46c131e8f87'],7,55,62,8,1.0,0.0,0.0
+87980c10203a7917ab8d376d4b6e33f1aaecda80,Go mod fix,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-21 19:02:59+02:00,-7200,2019-08-21 19:02:59+02:00,-7200,True,False,['go.mod'],['21fbe1897e9318c18841fc839c510f57863d2189'],4,0,4,1,,,
+8dbfb1dce5685a7ae6819ea28897ffd8a3eee6cd,lint fix,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-08-24 21:31:09+02:00,-7200,2019-08-24 21:31:09+02:00,-7200,True,False,"['set.go', 'cli_test.go']",['87980c10203a7917ab8d376d4b6e33f1aaecda80'],2,4,6,2,,,
+5705caf46e23a0757cc4e627e777431355ce49a1,Introduce github action workflow,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-08-27 22:21:15+02:00,-7200,2019-08-27 22:21:15+02:00,-7200,True,False,['go.yml'],['8dbfb1dce5685a7ae6819ea28897ffd8a3eee6cd'],0,27,27,1,,,
+39904747cbbaf2116602fd26b84b2104af0f617b,"Update readme with slack chat button (#126)
+
+changelog update
+
+Fixes: #125",Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-08-27 23:07:30+02:00,-7200,2019-08-27 23:07:30+02:00,-7200,True,False,"['README.md', 'CHANGELOG.md']",['5705caf46e23a0757cc4e627e777431355ce49a1'],0,17,17,2,,,
+36bd29c1b2c42bda5b18953211dd60b37a739632,Run GitHub workflow (CI/CD) on mac and ubuntu,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-08-27 23:11:46+02:00,-7200,2019-08-27 23:11:46+02:00,-7200,True,False,"['go.yml', 'CHANGELOG.md']",['39904747cbbaf2116602fd26b84b2104af0f617b'],2,6,8,2,,,
+b10abc7eb177546c828c9478b01263957f4ab088,Update slak invite link,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-05 21:19:06+02:00,-7200,2019-09-05 21:19:06+02:00,-7200,True,False,['README.md'],['36bd29c1b2c42bda5b18953211dd60b37a739632'],1,1,2,1,,,
+53af686c6cd9f14563aec4afc75fb19a6c39b7c0,Fix go-lint issues - #137,Rajat Varyani,37879062+RajatVaryani@users.noreply.github.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-08 18:24:02+05:18,-19080,2019-09-08 15:06:02+02:00,-7200,True,False,"['definitions.go', 'command_init_fixtures.go', 'command_list_fixtures.go', 'command_root_fixtures.go', 'command_set_fixtures.go', 'command_unset_fixtures.go', 'execute_cmd_fixtures.go', 'fixures.go', 'flag_version_fixtures.go', 'test_utils.go']",['b10abc7eb177546c828c9478b01263957f4ab088'],35,40,75,10,,,
+5544687a05f2d2ce18ebe9c9a862e51efe007236,Update contribution to not include go-modules info and remove dep,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-13 10:32:36+02:00,-7200,2019-09-13 10:32:36+02:00,-7200,True,False,"['1build.yaml', 'CONTRIBUTING.md']",['53af686c6cd9f14563aec4afc75fb19a6c39b7c0'],7,12,19,2,,,
+c9de5a79861056f438ab5d25f5038bd319e2d564,Fixes error message and formats command line output (#139),Akhil Bojedla,akhil.bojedla.developer@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-17 13:58:39+02:00,-7200,2019-09-17 13:58:39+02:00,-7200,True,False,"['exec.go', 'onebuild-execution-plan.go', 'root.go', 'utils.go', 'CHANGELOG.md', 'go.mod', 'go.sum', 'command_init_fixtures.go', 'execute_cmd_fixtures.go']",['5544687a05f2d2ce18ebe9c9a862e51efe007236'],94,533,627,9,0.19718309859154928,0.49295774647887325,1.0
+ac2fefb78e4b16850c78e6f73c5881088d6ed4e3,Go module tidy,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-24 11:44:44+02:00,-7200,2019-09-24 11:44:44+02:00,-7200,True,False,"['go.mod', 'go.sum']",['c9de5a79861056f438ab5d25f5038bd319e2d564'],302,6,308,2,,,
+bd537158f3ab1fb0c3a76d1cb70e5849dad8c4e4,Update CHANGELOG.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-09-24 14:33:23+02:00,-7200,2019-09-24 14:33:23+02:00,-7200,True,False,['CHANGELOG.md'],['ac2fefb78e4b16850c78e6f73c5881088d6ed4e3'],2,15,17,1,,,
+efb845491ead9c7b07e4b68548ba230a1a1e501b,Add bot config,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-26 16:08:57+02:00,-7200,2019-09-26 16:08:57+02:00,-7200,True,False,['config.yml'],['bd537158f3ab1fb0c3a76d1cb70e5849dad8c4e4'],0,29,29,1,,,
+af5e968dbb652ad89dfb9bb057d9f943d248efd1,Add release draft bot,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-26 16:18:48+02:00,-7200,2019-09-26 16:18:48+02:00,-7200,True,False,['release-drafter.yml'],['efb845491ead9c7b07e4b68548ba230a1a1e501b'],0,19,19,1,,,
+bb3082cf9f4bcd2b6c1ea8a6bed825d3e42ed088,Add ci reporter bot,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-26 16:32:00+02:00,-7200,2019-09-26 16:32:00+02:00,-7200,True,False,['ci-reporter.yml'],['af5e968dbb652ad89dfb9bb057d9f943d248efd1'],0,8,8,1,,,
+caf43662a35cf48969488ab7081de080b83abc62,Auto comment bot (#146),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-09-26 16:43:59+02:00,-7200,2019-09-26 16:43:59+02:00,-7200,True,False,['auto-comment.yml'],['bb3082cf9f4bcd2b6c1ea8a6bed825d3e42ed088'],0,10,10,1,,,
+21885a60159d6cd9b043bb2ce2ac795aff773def,Auto releaser (#148),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-09-26 19:57:11+02:00,-7200,2019-09-26 19:57:11+02:00,-7200,True,False,['ci-reporter.yml'],['caf43662a35cf48969488ab7081de080b83abc62'],0,8,8,1,,,
+9b4c5cd1d9052989216b1ed833d4ece9a5a39bd0,Update auto-comment.yml,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-09-26 20:05:56+02:00,-7200,2019-09-26 20:05:56+02:00,-7200,True,False,['auto-comment.yml'],['21885a60159d6cd9b043bb2ce2ac795aff773def'],1,1,2,1,,,
+e5d70fcff189f4937360bc326d472025b4200275,Update version in changelog draft (#150),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-09-26 20:14:42+02:00,-7200,2019-09-26 20:14:42+02:00,-7200,True,False,['CHANGELOG.md'],['9b4c5cd1d9052989216b1ed833d4ece9a5a39bd0'],1,1,2,1,,,
+c827caca3eed2c5ae2882d74d8ee6b844fd5153a,Auto releaser (#149),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-09-26 20:15:30+02:00,-7200,2019-09-26 20:15:30+02:00,-7200,True,False,['release-management.yml'],['e5d70fcff189f4937360bc326d472025b4200275'],0,16,16,1,,,
+1d7e0ff9dc996c156d9b4e974a327a428b4121cf,Update release-management.yml,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-09-26 20:19:24+02:00,-7200,2019-09-26 20:19:24+02:00,-7200,True,False,['release-management.yml'],['c827caca3eed2c5ae2882d74d8ee6b844fd5153a'],2,2,4,1,,,
+4fab81498b6e6ff759e2834ff8ef92214994d680,Add contributors in release drafter (#151),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-09-26 20:29:27+02:00,-7200,2019-09-26 20:29:27+02:00,-7200,True,False,"['pull_request_template.md', 'release-drafter.yml', 'CHANGELOG.md']",['1d7e0ff9dc996c156d9b4e974a327a428b4121cf'],3,5,8,3,,,
+1264f8d27d5a698b160dfe65848307f9ef9c94ce,Deprecate Changelog.md file - use release bot instead with contributors information,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-09-26 20:40:40+02:00,-7200,2019-09-26 20:40:40+02:00,-7200,True,False,"['release-drafter.yml', 'release-management.yml']",['4fab81498b6e6ff759e2834ff8ef92214994d680'],12,18,30,2,,,
+a0785779d2d13d3c6d122a9a8ef7b0b3c47d9f0c,"Unset multiple commands at once
+
+logs failed commands",boonwj,3538312+boonwj@users.noreply.github.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-27 12:58:42+01:00,-3600,2019-09-27 13:58:42+02:00,-7200,True,False,"['README.md', 'unset.go', 'command_unset_fixtures.go']",['1264f8d27d5a698b160dfe65848307f9ef9c94ce'],12,130,142,3,0.2857142857142857,0.2857142857142857,1.0
+fc341a1c0c5eeae03e96527f1519f5abc5a88c35,Fix typos (#153),boonwj,3538312+boonwj@users.noreply.github.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-27 16:04:23+01:00,-3600,2019-09-27 17:04:23+02:00,-7200,True,False,"['exec.go', 'utils.go', 'execute_cmd_fixtures.go']",['a0785779d2d13d3c6d122a9a8ef7b0b3c47d9f0c'],6,6,12,3,,,
+a221b7b1e87c8f1a256614cffb7d4df15bb7ba17,Fix go-lint issue,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-27 19:40:51+02:00,-7200,2019-09-27 19:40:51+02:00,-7200,True,False,['onebuild-execution-plan.go'],['fc341a1c0c5eeae03e96527f1519f5abc5a88c35'],1,4,5,1,,,
+55659d167aa120e40896eb558d7c706c0455736a,Rename godoc for methods,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-27 19:44:52+02:00,-7200,2019-09-27 19:44:52+02:00,-7200,True,False,['onebuild-execution-plan.go'],['a221b7b1e87c8f1a256614cffb7d4df15bb7ba17'],2,2,4,1,,,
+51cd32c0dda55d263d7722a8139b2721fbf689d8,Add review dog workflow,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-27 19:49:28+02:00,-7200,2019-09-27 19:49:28+02:00,-7200,True,False,['reviewdog.yml'],['55659d167aa120e40896eb558d7c706c0455736a'],0,14,14,1,,,
+8cefc6a5dc5ff43941d3eb934eb2962ee15fb5b4,Use latest reviewdog version,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-27 19:50:19+02:00,-7200,2019-09-27 19:50:19+02:00,-7200,True,False,['reviewdog.yml'],['51cd32c0dda55d263d7722a8139b2721fbf689d8'],2,2,4,1,,,
+5199f02fe93ea1b20e4c6a00404978970911238e,refactor: extract color printing to utils,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-27 21:09:44+02:00,-7200,2019-09-27 21:09:44+02:00,-7200,True,False,"['parse.go', 'exec.go', 'init.go', 'onebuild-execution-plan.go', 'root.go', 'set.go', 'unset.go', 'printer.go', 'utils.go', 'cli_test.go', 'command_list_fixtures.go', 'command_root_fixtures.go', 'execute_cmd_fixtures.go']",['8cefc6a5dc5ff43941d3eb934eb2962ee15fb5b4'],136,145,281,13,1.0,1.0,0.0
+1b0101b603734f5c3476547ebdb53c53d3673731,"refactor: extract methods, update version",Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-27 21:28:21+02:00,-7200,2019-09-27 21:28:21+02:00,-7200,True,False,"['parse.go', 'exec.go', 'list.go', 'root.go', 'flag_version_fixtures.go']",['5199f02fe93ea1b20e4c6a00404978970911238e'],25,29,54,5,0.0,1.0,1.0
+ff8bd20aee3cc5b681ac28002d28cea100c16a38,Fix execution plan printer to print header,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-27 21:38:34+02:00,-7200,2019-09-27 21:38:34+02:00,-7200,True,False,"['onebuild-execution-plan.go', 'printer.go']",['1b0101b603734f5c3476547ebdb53c53d3673731'],2,1,3,2,1.0,0.0,0.0
+caa32b7bb6d764fee9fd94b025223957f54b4856,Remove version number from installation guide,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-09-28 12:02:01+02:00,-7200,2019-09-28 12:02:01+02:00,-7200,True,False,['README.md'],['ff8bd20aee3cc5b681ac28002d28cea100c16a38'],1,1,2,1,,,
+c84764bedb20cf2e183757d14b856e6421a2bc7f,Add phase banners to the tops of each phase (#157),Ian Howell,ian.howell0@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-30 07:50:54-05:00,18000,2019-09-30 14:50:54+02:00,-7200,True,False,"['exec.go', 'onebuild-execution-plan.go', 'utils.go', 'execute_cmd_fixtures.go']",['caa32b7bb6d764fee9fd94b025223957f54b4856'],2,53,55,4,0.05263157894736842,1.0,1.0
+f3164ff48a1c170019e880aeb5c9246e3940d05f,refactor: extract color logic to one place,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-30 15:52:38+02:00,-7200,2019-09-30 15:52:38+02:00,-7200,True,False,"['exec.go', 'list.go', 'onebuild-execution-plan.go', 'root.go', 'set.go', 'unset.go', 'printer.go', 'command_list_fixtures.go', 'execute_cmd_fixtures.go', 'test_utils.go']",['c84764bedb20cf2e183757d14b856e6421a2bc7f'],60,106,166,10,1.0,1.0,1.0
+b1682f250f3072b5e8765d972621740fb6c55e04,refactor: fix linting,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-09-30 15:57:49+02:00,-7200,2019-09-30 15:57:49+02:00,-7200,True,False,"['printer.go', 'test_utils.go']",['f3164ff48a1c170019e880aeb5c9246e3940d05f'],0,8,8,2,,,
+e96cc7bc3cffa6bcd6526203f8296ee711a530e8,Print total results banner at the end of execution (#160),Evgeny Budilovsky,budevg@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-01 21:45:02+03:00,-10800,2019-10-01 20:45:02+02:00,-7200,True,False,"['exec.go', 'printer.go', 'execute_cmd_fixtures.go']",['b1682f250f3072b5e8765d972621740fb6c55e04'],27,56,83,3,0.18518518518518517,1.0,1.0
+e5a7a77e4570a04431a5ad34bfb566311bb7221b,Pretty print exec results (#164),Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-01 21:58:25+02:00,-7200,2019-10-01 21:58:25+02:00,-7200,True,False,"['parse.go', 'exec.go', 'onebuild-execution-plan.go', 'printer.go', 'utils.go', 'cli_test.go', 'execute_cmd_fixtures.go', 'test_utils.go']",['e96cc7bc3cffa6bcd6526203f8296ee711a530e8'],86,76,162,8,1.0,1.0,0.0
+b7207cf82e5f9cdabb454d86794a01aef8d42876,Fix gofmt,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-03 01:35:31+02:00,-7200,2019-10-03 01:35:31+02:00,-7200,True,False,"['onebuild-execution-plan.go', 'test_utils.go']",['e5a7a77e4570a04431a5ad34bfb566311bb7221b'],2,2,4,2,,,
+be4ccd8d64d73003847b9218580e82a9f565641c,Delete ci-reporter.yml,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-04 10:54:00+02:00,-7200,2019-10-04 10:54:00+02:00,-7200,True,False,['ci-reporter.yml'],['b7207cf82e5f9cdabb454d86794a01aef8d42876'],8,0,8,1,,,
+44238c36aa812dd009812f8c117f1f4911b15d8a,fix lint issues for markdown files,Mayur Kumbhar,mayur.kumbhar@outlook.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-09 02:10:00+05:18,-19080,2019-10-08 22:52:00+02:00,-7200,True,False,"['1build_ssue_templace.md', 'pull_request_template.md', '.remarkrc.yaml', 'CONTRIBUTING.md', 'README.md', 'CHANGELOG.md']",['be4ccd8d64d73003847b9218580e82a9f565641c'],94,110,204,6,,,
+52e0c8bfe750668f81e93d3afce31ad73447792f,Contributors list to readme,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-08 23:37:05+02:00,-7200,2019-10-08 23:37:05+02:00,-7200,True,False,['README.md'],['44238c36aa812dd009812f8c117f1f4911b15d8a'],5,4,9,1,,,
+c98cd80ee4da28d8a3e5d54a5ad0a63c52dcdd5b,Update README.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-09 01:49:44+02:00,-7200,2019-10-09 01:49:44+02:00,-7200,True,False,['README.md'],['52e0c8bfe750668f81e93d3afce31ad73447792f'],1,1,2,1,,,
+526707b57a066740c3353e1b40b86a4e5d577f64,Update README.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-09 01:51:12+02:00,-7200,2019-10-09 01:51:12+02:00,-7200,True,False,['README.md'],['c98cd80ee4da28d8a3e5d54a5ad0a63c52dcdd5b'],1,1,2,1,,,
+2474ad996655be82aaddfaf379ca898941216428,Remove rune-wdith dependency,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-09 13:24:28+02:00,-7200,2019-10-09 13:24:28+02:00,-7200,True,False,"['go.mod', 'go.sum']",['526707b57a066740c3353e1b40b86a4e5d577f64'],3,0,3,2,,,
+e4f3d55749599ad635f01a329d50bae7703576f0,Prepare version 1.4.0,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-09 13:25:24+02:00,-7200,2019-10-09 13:25:24+02:00,-7200,True,False,"['root.go', 'flag_version_fixtures.go']",['2474ad996655be82aaddfaf379ca898941216428'],2,2,4,2,,,
+39b76174a9c3cd33feee1e6f105f52afc0e230d5,Update README.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-09 15:54:18+02:00,-7200,2019-10-09 15:54:18+02:00,-7200,True,False,['README.md'],['e4f3d55749599ad635f01a329d50bae7703576f0'],1,1,2,1,,,
+1bb71fd92026b00fca0255f161e0960b203196bb,Add .goreleaser.yml,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-10 15:02:47+02:00,-7200,2019-10-10 15:03:06+02:00,-7200,True,False,"['.gitignore', '.goreleaser.yml']",['39b76174a9c3cd33feee1e6f105f52afc0e230d5'],1,41,42,2,,,
+c1be561287c98dad73efc1452676b999a5abf6b1,Update tap name,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-10 15:21:33+02:00,-7200,2019-10-10 15:21:33+02:00,-7200,True,False,['.goreleaser.yml'],['1bb71fd92026b00fca0255f161e0960b203196bb'],1,1,2,1,,,
+16e5ed1f7a8cb41f1a573707ff787083428d1866,add Homebrew installation instruction to README,Alexander Lukianchuk,landlab@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-10 16:02:31+02:00,-7200,2019-10-10 16:02:31+02:00,-7200,True,False,['README.md'],['c1be561287c98dad73efc1452676b999a5abf6b1'],2,12,14,1,,,
+8268864389fb961713f292e000a7ab0f8de9c44f,Add ko-fi to readme,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-11 17:03:03+02:00,-7200,2019-10-11 17:03:03+02:00,-7200,True,False,['README.md'],['16e5ed1f7a8cb41f1a573707ff787083428d1866'],3,1,4,1,,,
+d7ee693c956fa060566bb58f2571c9c9cbde1965,Update README.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-11 17:10:45+02:00,-7200,2019-10-11 17:10:45+02:00,-7200,True,False,['README.md'],['8268864389fb961713f292e000a7ab0f8de9c44f'],3,2,5,1,,,
+4b221f6e9e27265049c1403c11b7301158e1590e,1build project setup in 1build config,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-11 17:16:46+02:00,-7200,2019-10-11 17:16:46+02:00,-7200,True,False,['1build.yaml'],['d7ee693c956fa060566bb58f2571c9c9cbde1965'],0,3,3,1,,,
+a039389852c1de22d3bfa391169ad11fdc6be21e,Added delete config file command,diptag,diptanshu.agarwal@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-11 21:02:09+05:18,-19080,2019-10-11 17:44:09+02:00,-7200,True,False,"['io.go', 'delete.go', 'command_delete_fixtures.go', 'fixures.go']",['4b221f6e9e27265049c1403c11b7301158e1590e'],0,116,116,4,0.9818181818181818,0.7272727272727273,1.0
+e27f735a213c4a6f96c78f1a9617e2fa07d7cc00,Update Changelog page,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-11 18:40:33+02:00,-7200,2019-10-11 18:40:33+02:00,-7200,True,False,['README.md'],['a039389852c1de22d3bfa391169ad11fdc6be21e'],1,1,2,1,,,
+a29365c88a537348f1a0293295d1b0486dbfed8d,Delete CHANGELOG.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-11 18:40:54+02:00,-7200,2019-10-11 18:40:54+02:00,-7200,True,False,['CHANGELOG.md'],['e27f735a213c4a6f96c78f1a9617e2fa07d7cc00'],159,0,159,1,,,
+b72acf1ba55a51f2434233b7b57259c307361f3f,Set/Unset Before/After steps,Nikolay Norkin,nikolay.norkin@forward3d.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-15 12:03:14+01:00,-3600,2019-10-15 13:03:14+02:00,-7200,True,False,"['README.md', 'parse.go', 'set.go', 'unset.go', 'command_set_fixtures.go', 'command_unset_fixtures.go']",['a29365c88a537348f1a0293295d1b0486dbfed8d'],38,305,343,6,1.0,1.0,0.7676767676767676
+ac9214c80f7008e31f53634dd87f4007d75d14f9,Update README.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-15 13:09:16+02:00,-7200,2019-10-15 13:09:16+02:00,-7200,True,False,['README.md'],['b72acf1ba55a51f2434233b7b57259c307361f3f'],0,10,10,1,,,
+268f54b11fd25056a2708ebe71414e959ed35b21,Extract color printing to utility,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-22 14:22:29+02:00,-7200,2019-10-22 14:22:29+02:00,-7200,True,False,"['parse.go', 'delete.go', 'exec.go', 'onebuild-execution-plan.go', 'unset.go', 'printer.go']",['ac9214c80f7008e31f53634dd87f4007d75d14f9'],30,48,78,6,0.6666666666666666,1.0,1.0
+467ef747b03b56721c7c379d37c303c42a98d9c0,Test without color formatting,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-22 14:48:11+02:00,-7200,2019-10-22 14:48:11+02:00,-7200,True,False,"['execute_cmd_fixtures.go', 'test_utils.go']",['268f54b11fd25056a2708ebe71414e959ed35b21'],57,34,91,2,0.0,0.0,0.0
+58aeb4705e1356a4cee89597412bec7794ae56e3,Formatting fix,Gopinath Langote,gopinathlangote11@gmail.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-10-22 14:52:23+02:00,-7200,2019-10-22 14:52:23+02:00,-7200,True,False,['printer.go'],['467ef747b03b56721c7c379d37c303c42a98d9c0'],2,3,5,1,,,
+46175e98838fbeb62df67bfb058125c502dec5d7,Create FUNDING.yml,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-25 08:26:28+02:00,-7200,2019-10-25 08:26:28+02:00,-7200,True,False,['FUNDING.yml'],['58aeb4705e1356a4cee89597412bec7794ae56e3'],0,5,5,1,,,
+1074acb8ecedba0816a738180b3668c38d190721,Update FUNDING.yml,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-25 08:28:09+02:00,-7200,2019-10-25 08:28:09+02:00,-7200,True,False,['FUNDING.yml'],['46175e98838fbeb62df67bfb058125c502dec5d7'],0,1,1,1,,,
+ba45355a1e30330edd855d1556a9ded1550a4247,Update README.md,Gopinath Langote,gopinathlangote11@gmail.com,GitHub,noreply@github.com,2019-10-25 08:29:00+02:00,-7200,2019-10-25 08:29:00+02:00,-7200,True,False,['README.md'],['1074acb8ecedba0816a738180b3668c38d190721'],1,0,1,1,,,
+31f64e80427206182e1ddf2dfbc6bb8a465585e8,Fix checking for invalid names used in unset (#180),boonwj,3538312+boonwj@users.noreply.github.com,Gopinath Langote,gopinathlangote11@gmail.com,2019-11-12 01:15:36+08:00,-28800,2019-11-11 18:15:36+01:00,-3600,True,False,"['unset.go', 'command_unset_fixtures.go']",['ba45355a1e30330edd855d1556a9ded1550a4247'],7,56,63,2,0.8,1.0,1.0
+7b49792f047e5f0fdd92b70780606098e39daf94,"Bump github.com/spf13/cobra from 0.0.5 to 0.0.6 (#183)
+
+Bumps [github.com/spf13/cobra](https://github.com/spf13/cobra) from 0.0.5 to 0.0.6.
+- [Release notes](https://github.com/spf13/cobra/releases)
+- [Commits](https://github.com/spf13/cobra/compare/0.0.5...v0.0.6)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-02-21 11:43:23+01:00,-3600,2020-02-21 11:43:23+01:00,-3600,True,False,"['go.mod', 'go.sum']",['31f64e80427206182e1ddf2dfbc6bb8a465585e8'],1,101,102,2,,,
+63a3e6da90916641c0e7805f2e256230421968aa,Add awesome banner,Gopinath Langote,gopinath-langote@users.noreply.github.com,GitHub,noreply@github.com,2020-02-24 15:19:59+01:00,-3600,2020-02-24 15:19:59+01:00,-3600,True,False,['README.md'],['7b49792f047e5f0fdd92b70780606098e39daf94'],0,2,2,1,,,
+de786fe6b45150d9bd55eed243b71e28e96a2121,Feature/flag quiet (#185),ashupatil96,ashutosh.s.patil@outlook.com,GitHub,noreply@github.com,2020-04-01 10:43:18+05:18,-19080,2020-04-01 10:43:18+05:18,-19080,True,False,"['README.md', 'exec.go', 'root.go', 'go.mod', 'go.sum', 'execute_cmd_fixtures.go', 'fixures.go', 'flag_fixtures.go', 'test_utils.go']",['63a3e6da90916641c0e7805f2e256230421968aa'],10,286,296,9,0.6379310344827587,1.0,0.8620689655172413
+9c56a660f208c7489ef961db61a6ebc533f51779,Update go dependencies,gopinath.langote,2912-gopinath.langote@users.noreply.source.golabs.io,gopinath.langote,2912-gopinath.langote@users.noreply.source.golabs.io,2020-04-01 13:36:07+05:18,-19080,2020-04-01 13:36:07+05:18,-19080,True,False,['go.sum'],['de786fe6b45150d9bd55eed243b71e28e96a2121'],9,1,10,1,,,
+586c91278a0d65fe9e3faefd7ca9c3482c761be3,Add releasing new version steps to CONTRIBUTING.md,gopinath.langote,2912-gopinath.langote@users.noreply.source.golabs.io,gopinath.langote,2912-gopinath.langote@users.noreply.source.golabs.io,2020-04-04 16:10:30+05:18,-19080,2020-04-04 16:10:30+05:18,-19080,True,False,['CONTRIBUTING.md'],['9c56a660f208c7489ef961db61a6ebc533f51779'],0,16,16,1,,,
+4963786201996dd6df43a3ab0176eaf2029279ec,Research Paper setup for Journal of Open Source Software  (#191),Deepak Ahire,ahiredeepak20@gmail.com,GitHub,noreply@github.com,2020-05-03 21:54:04+05:18,-19080,2020-05-03 21:54:04+05:18,-19080,True,False,"['README.md', 'paper.bib', 'paper.md']",['586c91278a0d65fe9e3faefd7ca9c3482c761be3'],1,100,101,3,,,
+4ef906617452799f48e3bedfbc7a87f0982a8292,Support interactive commands (#198),Gopinath Langote,gopinath-langote@users.noreply.github.com,GitHub,noreply@github.com,2020-08-16 11:21:23+05:18,-19080,2020-08-16 11:21:23+05:18,-19080,True,False,['exec.go'],['4963786201996dd6df43a3ab0176eaf2029279ec'],1,4,5,1,0.0,1.0,1.0
+b89d62287a5eea2a52dcdecef599e49eccdf5dbd,Execute 1build from specified configuration file (#199),Gopinath Langote,gopinath-langote@users.noreply.github.com,GitHub,noreply@github.com,2020-08-16 13:33:42+05:18,-19080,2020-08-16 13:33:42+05:18,-19080,True,False,"['io.go', 'delete.go', 'exec.go', 'init.go', 'list.go', 'root.go', 'set.go', 'unset.go', 'cli_test.go', 'command_delete_fixtures.go', 'command_init_fixtures.go', 'command_list_fixtures.go', 'command_root_fixtures.go', 'command_set_fixtures.go', 'command_unset_fixtures.go', 'execute_cmd_fixtures.go', 'fixures.go', 'flag_fixtures.go', 'flag_version_fixtures.go', 'test_utils.go']",['4ef906617452799f48e3bedfbc7a87f0982a8292'],105,367,472,20,0.7536231884057971,1.0,0.9565217391304348
+640d93ddf09249c9ee5bc6a0713e31bc0397a850,"Upgrade to GitHub-native Dependabot (#202)
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-05-16 18:40:40+05:18,-19080,2021-05-16 18:40:40+05:18,-19080,True,False,['dependabot.yml'],['b89d62287a5eea2a52dcdecef599e49eccdf5dbd'],0,8,8,1,,,

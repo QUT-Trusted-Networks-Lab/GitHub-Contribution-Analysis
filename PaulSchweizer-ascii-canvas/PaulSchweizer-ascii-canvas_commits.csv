@@ -1,0 +1,214 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+ef7bdf14e2b826886b73c6d186f7a7dca99c836d,Initial commit,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2017-10-01 12:23:54+01:00,-3600,2017-10-01 12:23:54+01:00,-3600,True,False,['LICENSE'],[],0,21,21,1,,,
+cd9676cdf63b581026a9c7de802fda11222d3f1f,Initia commit,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2017-10-01 12:25:48+01:00,-3600,2017-10-01 12:25:48+01:00,-3600,True,False,"['.gitignore', '.tinypipeline.project.json', 'README.md', '__init__.py', 'canvas.py', 'item.py', 'requirements.txt', 'test_canvas.py']",['ef7bdf14e2b826886b73c6d186f7a7dca99c836d'],0,300,300,8,0.7078651685393258,0.4044943820224719,0.9101123595505618
+191bd82592cdf9a263d2c42097545cbc95cd6bbd,Adding setup,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2017-10-01 12:30:29+01:00,-3600,2017-10-01 12:30:29+01:00,-3600,True,False,['setup.py'],['cd9676cdf63b581026a9c7de802fda11222d3f1f'],0,20,20,1,,,
+9ee9676ce285c2bf96202158fa526be988198f8a,Update README.md,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2017-10-02 10:12:20+01:00,-3600,2017-10-02 10:12:20+01:00,-3600,True,False,['README.md'],['191bd82592cdf9a263d2c42097545cbc95cd6bbd'],4,4,8,1,,,
+cd758b862385bd5d4a14e06341c096043538e1f6,Update README.md,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2017-10-02 10:12:31+01:00,-3600,2017-10-02 10:12:31+01:00,-3600,True,False,['README.md'],['9ee9676ce285c2bf96202158fa526be988198f8a'],1,1,2,1,,,
+1b2f27df2ac4e9f0d0577ee2bdca00e5c8451af7,Update README.md,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2017-10-02 15:22:24+01:00,-3600,2017-10-02 15:22:24+01:00,-3600,True,False,['README.md'],['cd758b862385bd5d4a14e06341c096043538e1f6'],0,2,2,1,,,
+9fe39b7635db758f94c73e08fd4289fcd18f534b,cleanup,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2017-12-15 22:34:31+00:00,0,2017-12-15 22:34:48+00:00,0,True,False,"['.tinypipeline.project.json', '.travis.yml']",['1b2f27df2ac4e9f0d0577ee2bdca00e5c8451af7'],4,18,22,2,,,
+9b5e015414e7586d9413a6c5700d415fc61e0c9b,adding badge,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2017-12-15 22:38:21+00:00,0,2017-12-15 22:38:21+00:00,0,True,False,['README.md'],['9fe39b7635db758f94c73e08fd4289fcd18f534b'],1,2,3,1,,,
+dd8390c96b868c2a1be6950ef3616161a7b709c1,Moving to tox,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2018-06-01 22:40:47+01:00,-3600,2018-06-01 22:40:47+01:00,-3600,True,False,"['.gitignore', '.travis.yml', 'requirements.txt', 'tox.ini']",['9b5e015414e7586d9413a6c5700d415fc61e0c9b'],3,10,13,4,,,
+1709eeb43aad2b5af7368e3e1741d70071d9ea7a,Installing travis-tox,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2018-06-01 22:43:11+01:00,-3600,2018-06-01 22:43:11+01:00,-3600,True,False,['.travis.yml'],['dd8390c96b868c2a1be6950ef3616161a7b709c1'],0,1,1,1,,,
+99698eb83d0c57cf02721ceeb81a69448fc7f6e5,"Removing tox again, seems to fail on py3.5
+
+Don't want to investigate the travis/tox issue, so just moving back",Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2018-06-02 18:17:40+01:00,-3600,2018-06-02 18:17:40+01:00,-3600,True,False,"['.travis.yml', 'tox.ini']",['1709eeb43aad2b5af7368e3e1741d70071d9ea7a'],12,2,14,2,,,
+d6293760aa987ba229454be2317a801145bc483b,Fixing list as default value,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2018-06-02 18:21:06+01:00,-3600,2018-06-02 18:21:06+01:00,-3600,True,False,['item.py'],['99698eb83d0c57cf02721ceeb81a69448fc7f6e5'],2,2,4,1,,,
+b91e9eed0463ebc6dc18f439b0ef46591e00af74,"Horizontal line numbers
+
+Also making line numbers optional, default is NO line numbers",Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2018-06-09 16:43:47+01:00,-3600,2018-06-09 16:43:47+01:00,-3600,True,False,"['canvas.py', 'test_canvas.py']",['d6293760aa987ba229454be2317a801145bc483b'],4,14,18,2,0.0,0.3333333333333333,1.0
+03642e7fb698a5a60d401f5647c2758df689dd92,Actually adding the horizontal lines,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2018-06-09 16:45:46+01:00,-3600,2018-06-09 16:45:46+01:00,-3600,True,False,['canvas.py'],['b91e9eed0463ebc6dc18f439b0ef46591e00af74'],0,14,14,1,0.0,0.0,1.0
+ea4f64a2d79b211f96e51af929e301f5a6bf1e21,Converting to single quotes for consistency,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2018-06-09 17:01:47+01:00,-3600,2018-06-09 17:01:47+01:00,-3600,True,False,['canvas.py'],['03642e7fb698a5a60d401f5647c2758df689dd92'],4,4,8,1,,,
+f549c175abe6df25c284a3f64c832205d03a382d,Adding a rectangle as a drawable item,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2018-06-09 17:38:43+01:00,-3600,2018-06-09 17:38:43+01:00,-3600,True,False,"['item.py', 'test_canvas.py']",['ea4f64a2d79b211f96e51af929e301f5a6bf1e21'],1,87,88,2,0.6481481481481481,0.5370370370370371,0.8148148148148148
+9b7b1cc9f3cca32888f5984bb4fe01e54fdbcb82,Test moved to pytest,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2018-07-23 21:49:26+01:00,-3600,2018-07-23 21:49:26+01:00,-3600,True,False,"['.travis.yml', 'item.py', 'test_canvas.py']",['f549c175abe6df25c284a3f64c832205d03a382d'],47,39,86,3,,,
+99b69b40205cbedf4a236295cd4608ffe45e7786,Travis updates,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2018-07-23 21:54:24+01:00,-3600,2018-07-23 21:54:24+01:00,-3600,True,False,['.travis.yml'],['9b7b1cc9f3cca32888f5984bb4fe01e54fdbcb82'],0,7,7,1,,,
+6d3351f0954b62e04f42232505c94341a4329e18,added autodeploy to pypi on tag creation (#1),Anton-4,anton.vanmoere@gmail.com,Paul Schweizer,paulschweizer@gmx.net,2019-01-11 09:58:33+01:00,-3600,2019-01-11 09:58:33+01:00,-3600,True,False,['.travis.yml'],['99b69b40205cbedf4a236295cd4608ffe45e7786'],17,24,41,1,,,
+c1dc8e098e16381417b071c55eaceb06fd5a031e,Setting to version 1.1.0,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-01-11 11:50:52+01:00,-3600,2019-01-11 11:50:52+01:00,-3600,True,False,['setup.py'],['6d3351f0954b62e04f42232505c94341a4329e18'],1,1,2,1,,,
+d2f0b15b127d99392e2c45994f92d25f5c10edb6,Update to v1.2.0,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-01-11 11:53:36+01:00,-3600,2019-01-11 11:53:36+01:00,-3600,True,False,['setup.py'],['c1dc8e098e16381417b071c55eaceb06fd5a031e'],1,1,2,1,,,
+098054e0415a9258bfd6774bbd0629661fa14f21,"WIP: Added type hints, still waiting on resolution of [so issue](https://stackoverflow.com/q/54425358/4200103).",anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-01-29 17:26:34+01:00,-3600,2019-01-29 17:26:34+01:00,-3600,True,False,"['canvas.py', 'item.py']",['d2f0b15b127d99392e2c45994f92d25f5c10edb6'],20,27,47,2,0.0,0.375,1.0
+84c36bac80ea7e759d8eabbd2cb496c0935eef84,"Added nox, updated travis.yml",anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-01-30 09:46:27+01:00,-3600,2019-01-30 09:46:27+01:00,-3600,True,False,"['.travis.yml', 'item.py', 'noxfile.py']",['098054e0415a9258bfd6774bbd0629661fa14f21'],10,42,52,3,1.0,1.0,1.0
+e41cf08d3315258f569738384f9289b6510bd6bb,Adding missing info for pypi (#4),Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-01-30 11:17:12+01:00,-3600,2019-01-30 11:17:12+01:00,-3600,True,False,"['.travis.yml', 'README.md', 'setup.py']",['d2f0b15b127d99392e2c45994f92d25f5c10edb6'],4,12,16,3,,,
+f0b4bf9bdd88988ca33396fcb8e4caafd23305fa,Added script to remove type-hints for all python versions below 3.6,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-01-30 11:29:48+01:00,-3600,2019-01-30 11:29:48+01:00,-3600,True,False,"['.travis.yml', 'strip-type-hints.py', 'setup.py']",['84c36bac80ea7e759d8eabbd2cb496c0935eef84'],1,34,35,3,1.0,1.0,1.0
+2a90bc5e8ee659554c337d996f1c3b21eb6f60d6,forgot to add test-requirements.txt,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-01-30 11:40:52+01:00,-3600,2019-01-30 11:40:52+01:00,-3600,True,False,['test-requirements.txt'],['f0b4bf9bdd88988ca33396fcb8e4caafd23305fa'],0,7,7,1,,,
+a70f9db0669fec796a76b160cb472afca6e43012,removed 2.6 support,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-01-30 12:11:56+01:00,-3600,2019-01-30 12:11:56+01:00,-3600,True,False,"['.travis.yml', 'setup.py']",['54caca99c3b980f83caa62152f2a2e2f82c954b8'],2,1,3,2,,,
+3b82d586f789c3a71fd60f5da134f63308ad6b0d,"- moved testing for different python versions from travis to nox
+- added auto stripping of type hints",anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-01-30 15:03:17+01:00,-3600,2019-01-30 15:03:17+01:00,-3600,True,False,"['.travis.yml', 'strip-type-hints.py', 'noxfile.py', 'strip-type-hints.py']",['a70f9db0669fec796a76b160cb472afca6e43012'],47,57,104,4,1.0,1.0,1.0
+96e08e47a30eaa702a41d54de39611e0643191c3,decided to keep support for 2.6 until we need a lib that does not support it,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-01-30 15:10:48+01:00,-3600,2019-01-30 15:10:48+01:00,-3600,True,False,"['noxfile.py', 'setup.py']",['3b82d586f789c3a71fd60f5da134f63308ad6b0d'],1,2,3,2,,,
+1fea832bcefaa585c7023404276531ad6f8be828,forgot to delete something from travis.yml,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-01-30 15:20:57+01:00,-3600,2019-01-30 15:20:57+01:00,-3600,True,False,['.travis.yml'],['96e08e47a30eaa702a41d54de39611e0643191c3'],3,0,3,1,,,
+b11fa4876093ef4f509fd408f47cd73a66cad336,fixed travis.yml for name of pytests method inside nox file,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-01-30 15:27:10+01:00,-3600,2019-01-30 15:27:10+01:00,-3600,True,False,['.travis.yml'],['1fea832bcefaa585c7023404276531ad6f8be828'],2,5,7,1,,,
+577a08305a67199503bdada7be560aedf6f8db49,"type hints (#3)
+
+* WIP: Added type hints, still waiting on resolution of [so issue](https://stackoverflow.com/q/54425358/4200103).
+
+* Added nox, updated travis.yml
+
+* Added script to remove type-hints for all python versions below 3.6
+
+* forgot to add test-requirements.txt
+
+* removed 2.6 support
+
+* - moved testing for different python versions from travis to nox
+- added auto stripping of type hints
+
+* decided to keep support for 2.6 until we need a lib that does not support it
+
+* forgot to delete something from travis.yml
+
+* fixed travis.yml for name of pytests method inside nox file",Anton-4,anton.vanmoere@gmail.com,Paul Schweizer,paulschweizer@gmx.net,2019-01-31 10:46:25+01:00,-3600,2019-01-31 10:46:25+01:00,-3600,True,False,"['.travis.yml', 'canvas.py', 'item.py', 'noxfile.py', 'setup.py', 'strip-type-hints.py', 'test-requirements.txt']",['e41cf08d3315258f569738384f9289b6510bd6bb'],33,121,154,7,0.52,0.8,1.0
+74bdb8dcb70ad4e780fa9853845c3bda66a38999,moved type hints to .pyi stubs on deploy to prevent python version compatibility issues,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-01 16:32:36+01:00,-3600,2019-02-01 16:32:36+01:00,-3600,True,False,"['.travis.yml', 'setup.py']",['b11fa4876093ef4f509fd408f47cd73a66cad336'],1,4,5,2,,,
+54fbbb27f44fcfc6ca2d5977bcfed6aff03cc2a8,"Type hints fix (#5)
+
+* WIP: Added type hints, still waiting on resolution of [so issue](https://stackoverflow.com/q/54425358/4200103).
+
+* Added nox, updated travis.yml
+
+* Added script to remove type-hints for all python versions below 3.6
+
+* forgot to add test-requirements.txt
+
+* removed 2.6 support
+
+* - moved testing for different python versions from travis to nox
+- added auto stripping of type hints
+
+* decided to keep support for 2.6 until we need a lib that does not support it
+
+* forgot to delete something from travis.yml
+
+* fixed travis.yml for name of pytests method inside nox file
+
+* moved type hints to .pyi stubs on deploy to prevent python version compatibility issues",Anton-4,anton.vanmoere@gmail.com,Paul Schweizer,paulschweizer@gmx.net,2019-02-04 13:52:05+01:00,-3600,2019-02-04 13:52:05+01:00,-3600,True,False,"['.travis.yml', 'setup.py']",['577a08305a67199503bdada7be560aedf6f8db49'],3,6,9,2,,,
+236364e37595c0f83d39d2ab69764852145b983f,added deployment for other python versions,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-06 14:52:59+01:00,-3600,2019-02-06 14:52:59+01:00,-3600,True,False,"['.travis.yml', 'setup.py']",['74bdb8dcb70ad4e780fa9853845c3bda66a38999'],8,24,32,2,,,
+b1cee39a67b31c593947940909b1fc606301ea55,"WIP: fixed python 2 version not being deployed to pypi  (#6)
+
+* WIP: Added type hints, still waiting on resolution of [so issue](https://stackoverflow.com/q/54425358/4200103).
+
+* Added nox, updated travis.yml
+
+* Added script to remove type-hints for all python versions below 3.6
+
+* forgot to add test-requirements.txt
+
+* removed 2.6 support
+
+* - moved testing for different python versions from travis to nox
+- added auto stripping of type hints
+
+* decided to keep support for 2.6 until we need a lib that does not support it
+
+* forgot to delete something from travis.yml
+
+* fixed travis.yml for name of pytests method inside nox file
+
+* moved type hints to .pyi stubs on deploy to prevent python version compatibility issues
+
+* added deployment for other python versions",Anton-4,anton.vanmoere@gmail.com,Paul Schweizer,paulschweizer@gmx.net,2019-02-13 10:30:37+01:00,-3600,2019-02-13 10:30:37+01:00,-3600,True,False,"['.travis.yml', 'setup.py']",['54fbbb27f44fcfc6ca2d5977bcfed6aff03cc2a8'],8,24,32,2,,,
+461dd22164289f1790240db71790d29229bfebec,fixed stage condition syntax error (#7),anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-14 11:49:46+01:00,-3600,2019-02-14 11:49:46+01:00,-3600,True,False,['.travis.yml'],['d3b5153f0b919293c190091a31499cff0ca2f4ea'],31,34,65,1,,,
+4505f02b31dfb20054120467fafe5ff7e66022f6,added ; to yml (#7),anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-14 13:25:28+01:00,-3600,2019-02-14 13:25:28+01:00,-3600,True,False,['.travis.yml'],['3daa0f2e8d3ecbba1846b989284e2a895a7a3fe7'],2,2,4,1,,,
+0b212aa46b6e08ca18989d93bbfc1326a4eb59fe,even more ; (#7),anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-14 13:28:54+01:00,-3600,2019-02-14 13:28:54+01:00,-3600,True,False,['.travis.yml'],['4505f02b31dfb20054120467fafe5ff7e66022f6'],6,6,12,1,,,
+7056bec27ea15d7acc7fc47b88d2e87ec87cabdf,"removed 3.7 stuff because travis does not support it, moved coverage to
+ script instead of test (#7)",anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-14 13:45:12+01:00,-3600,2019-02-14 13:45:12+01:00,-3600,True,False,"['.travis.yml', 'noxfile.py']",['0b212aa46b6e08ca18989d93bbfc1326a4eb59fe'],7,5,12,2,,,
+813911309691069f4b04e3b2efa3b1c26b39bff6,forgot installation of test_requirements (#7),anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-14 16:40:58+01:00,-3600,2019-02-14 16:40:58+01:00,-3600,True,False,['.travis.yml'],['7056bec27ea15d7acc7fc47b88d2e87ec87cabdf'],0,1,1,1,,,
+8f4bc002567f1a3c8470f2997ad76afd9b572eb2,only run coverage for 3.6 (#7),anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-14 16:49:38+01:00,-3600,2019-02-14 16:49:38+01:00,-3600,True,False,['.travis.yml'],['813911309691069f4b04e3b2efa3b1c26b39bff6'],1,3,4,1,,,
+daad3c534b043fa20c9d6dcba21649019013cfb6,another ; (#7),anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-14 16:56:23+01:00,-3600,2019-02-14 16:56:23+01:00,-3600,True,False,['.travis.yml'],['8f4bc002567f1a3c8470f2997ad76afd9b572eb2'],1,1,2,1,,,
+02009e87744ec0037b80e2b9b4ead90adf5ebe0c,"1.2.4 deploy fix (#8)
+
+* WIP: Added type hints, still waiting on resolution of [so issue](https://stackoverflow.com/q/54425358/4200103).
+
+* Added nox, updated travis.yml
+
+* Added script to remove type-hints for all python versions below 3.6
+
+* forgot to add test-requirements.txt
+
+* removed 2.6 support
+
+* - moved testing for different python versions from travis to nox
+- added auto stripping of type hints
+
+* decided to keep support for 2.6 until we need a lib that does not support it
+
+* forgot to delete something from travis.yml
+
+* fixed travis.yml for name of pytests method inside nox file
+
+* moved type hints to .pyi stubs on deploy to prevent python version compatibility issues
+
+* added deployment for other python versions
+
+* fixed stage condition syntax error (#7)
+
+* added ; to yml (#7)
+
+* even more ; (#7)
+
+* removed 3.7 stuff because travis does not support it, moved coverage to
+ script instead of test (#7)
+
+* forgot installation of test_requirements (#7)
+
+* only run coverage for 3.6 (#7)
+
+* another ; (#7)",Anton-4,anton.vanmoere@gmail.com,Paul Schweizer,paulschweizer@gmx.net,2019-02-25 09:12:38+01:00,-3600,2019-02-25 09:12:38+01:00,-3600,True,False,"['.travis.yml', 'noxfile.py']",['b1cee39a67b31c593947940909b1fc606301ea55'],37,41,78,2,,,
+7f3bcff8c2aef51c38cdd4055294a0b23f0a29e7,version bump,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-25 10:45:08+01:00,-3600,2019-02-25 10:45:08+01:00,-3600,True,False,['setup.py'],['daad3c534b043fa20c9d6dcba21649019013cfb6'],1,1,2,1,,,
+95af7abeb3f8bd2496481a4fb2c5c404cac11a11,trying to fix travis syntax errors,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-25 11:44:32+01:00,-3600,2019-02-25 11:44:32+01:00,-3600,True,False,['.travis.yml'],['7f3bcff8c2aef51c38cdd4055294a0b23f0a29e7'],1,1,2,1,,,
+33e3f23a22c826126402948164e5083810ad1547,version bump,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-25 12:04:44+01:00,-3600,2019-02-25 12:04:44+01:00,-3600,True,False,['setup.py'],['95af7abeb3f8bd2496481a4fb2c5c404cac11a11'],1,1,2,1,,,
+9e5209bbf28836abfc52372403cba680a2e70439,it might actually work this time,anton,anton@ml2grow.com,anton,anton@ml2grow.com,2019-02-25 14:50:53+01:00,-3600,2019-02-25 14:50:53+01:00,-3600,True,False,"['.travis.yml', 'setup.py']",['33e3f23a22c826126402948164e5083810ad1547'],2,2,4,2,,,
+8b1cc2a0306bf516a320c19284dc965c538c38ae,"Hints are stripped on import
+
+Unfortunately, the strip_on_import function of strip_hints does not work so I had to set it up this way",Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2019-07-24 22:08:39+02:00,-7200,2019-07-24 22:08:39+02:00,-7200,True,False,"['.gitignore', 'README.md', '__init__.py', 'canvas.py', 'item.py', 'noxfile.py', 'test_canvas.py']",['45341b08c06be68fa126d4b4b9a4e95ee0aac1d3'],89,143,232,7,0.0,1.0,1.0
+042c0db1a3bc9b13f5f96a0e5555a59182c5f42b,travis no longer supports py 2.6 :grinning:,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2019-07-24 22:31:59+02:00,-7200,2019-07-24 22:31:59+02:00,-7200,True,False,['noxfile.py'],['8b1cc2a0306bf516a320c19284dc965c538c38ae'],1,1,2,1,,,
+93b1b0d371a05b2434518c3a022c7f37a6d05b8e,Forgot to remove py2.6 from the travis file,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2019-07-24 22:38:43+02:00,-7200,2019-07-24 22:38:43+02:00,-7200,True,False,['.travis.yml'],['042c0db1a3bc9b13f5f96a0e5555a59182c5f42b'],2,1,3,1,,,
+95f0a5a7f0db6a83918b4afa56adeb906dc9e057,Move strip hints to actual requirements,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2019-07-25 22:42:13+02:00,-7200,2019-07-25 22:42:13+02:00,-7200,True,False,"['requirements.txt', 'test-requirements.txt']",['45341b08c06be68fa126d4b4b9a4e95ee0aac1d3'],1,1,2,2,,,
+5175da60843b01c39c48c065be0296e629202ffa,Update to version 1.3.1,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2019-07-25 22:49:00+02:00,-7200,2019-07-25 22:49:00+02:00,-7200,True,False,['setup.py'],['125af65e30723a201a1819d29ef89bf4f4a2cbb3'],1,1,2,1,,,
+c733544948029ff226dc3cba2a59e93e808e875e,Update .travis.yml,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 09:55:12+02:00,-7200,2019-07-26 09:55:12+02:00,-7200,True,False,['.travis.yml'],['5175da60843b01c39c48c065be0296e629202ffa'],7,0,7,1,,,
+2f7e35a4064b26e175ac2017ede332b351dc46b3,Update .travis.yml,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 10:01:50+02:00,-7200,2019-07-26 10:01:50+02:00,-7200,True,False,['.travis.yml'],['c733544948029ff226dc3cba2a59e93e808e875e'],14,1,15,1,,,
+3320c98cb16a465abcdab44cfc0e3fe69bbaade8,Update .travis.yml,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 10:04:55+02:00,-7200,2019-07-26 10:04:55+02:00,-7200,True,False,['.travis.yml'],['2f7e35a4064b26e175ac2017ede332b351dc46b3'],1,2,3,1,,,
+f82ab866318cca66c68e58348c823c21aa7f12df,Update __init__.py,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 10:07:30+02:00,-7200,2019-07-26 10:07:30+02:00,-7200,True,False,['__init__.py'],['3320c98cb16a465abcdab44cfc0e3fe69bbaade8'],2,2,4,1,,,
+834f502276c2d42fa10360c9aa9412514f6cd638,Update .travis.yml,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 10:14:56+02:00,-7200,2019-07-26 10:14:56+02:00,-7200,True,False,['.travis.yml'],['f82ab866318cca66c68e58348c823c21aa7f12df'],2,2,4,1,,,
+e1ee37cb4fc5a432d0b5d9a048f675fc441d9413,Update .travis.yml,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 10:34:15+02:00,-7200,2019-07-26 10:34:15+02:00,-7200,True,False,['.travis.yml'],['834f502276c2d42fa10360c9aa9412514f6cd638'],1,9,10,1,,,
+cc86dd19ec42d3ffab4343b56c7ad3b32f8e7647,Update .travis.yml,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 10:40:14+02:00,-7200,2019-07-26 10:40:14+02:00,-7200,True,False,['.travis.yml'],['e1ee37cb4fc5a432d0b5d9a048f675fc441d9413'],6,5,11,1,,,
+e04808aed6e1004494eeed09f0d0478292b1f8bf,Update .travis.yml,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 10:42:55+02:00,-7200,2019-07-26 10:42:55+02:00,-7200,True,False,['.travis.yml'],['cc86dd19ec42d3ffab4343b56c7ad3b32f8e7647'],0,1,1,1,,,
+09cb5e33a0cc83535015ebad62b4bb58b2fa30ab,Update strip-type-hints.py,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 10:48:58+02:00,-7200,2019-07-26 10:48:58+02:00,-7200,True,False,['strip-type-hints.py'],['e04808aed6e1004494eeed09f0d0478292b1f8bf'],4,1,5,1,0.0,0.0,0.0
+add4fdbcf14b6c3edad48cb771109d4cbb855235,Update .travis.yml,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 16:58:19+02:00,-7200,2019-07-26 16:58:19+02:00,-7200,True,False,['.travis.yml'],['09cb5e33a0cc83535015ebad62b4bb58b2fa30ab'],2,6,8,1,,,
+75f9a31a046c04cbb35d8ed7159749920e3c8345,Update setup.py,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 17:32:08+02:00,-7200,2019-07-26 17:32:08+02:00,-7200,True,False,['setup.py'],['add4fdbcf14b6c3edad48cb771109d4cbb855235'],1,1,2,1,,,
+3970d3ab84dd9007309aeff705e1ddd53de73fa3,Update .travis.yml,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 17:59:28+02:00,-7200,2019-07-26 17:59:28+02:00,-7200,True,False,['.travis.yml'],['75f9a31a046c04cbb35d8ed7159749920e3c8345'],6,1,7,1,,,
+3a72471de3d0c233c7b5b356d8e97695eca8c6a1,Update setup.py,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-26 18:04:26+02:00,-7200,2019-07-26 18:04:26+02:00,-7200,True,False,['setup.py'],['3970d3ab84dd9007309aeff705e1ddd53de73fa3'],1,1,2,1,,,
+84befd6f3e7071637af8eedda4adb685c2a0f2d1,Update requirements.txt,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-30 12:29:45+02:00,-7200,2019-07-30 12:29:45+02:00,-7200,True,False,['requirements.txt'],['3a72471de3d0c233c7b5b356d8e97695eca8c6a1'],1,1,2,1,,,
+0f056796df9fab5cd4cd88ef66e2159e7d7a1023,"Testing strip on import (#13)
+
+strip on import",Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-30 12:52:51+02:00,-7200,2019-07-30 12:52:51+02:00,-7200,True,False,"['.travis.yml', '__init__.py']",['84befd6f3e7071637af8eedda4adb685c2a0f2d1'],18,17,35,2,,,
+0f1cc84c5d6134717c378b35061ac60fa88b962f,Update requirements.txt,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-30 14:00:10+02:00,-7200,2019-07-30 14:00:10+02:00,-7200,True,False,['requirements.txt'],['0f056796df9fab5cd4cd88ef66e2159e7d7a1023'],1,1,2,1,,,
+8128a6d865028d23ef6f37a2093dd25119f77783,Update setup.py,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-30 14:00:34+02:00,-7200,2019-07-30 14:00:34+02:00,-7200,True,False,['setup.py'],['0f1cc84c5d6134717c378b35061ac60fa88b962f'],1,1,2,1,,,
+1443611450dc2e68a33188daa58724e6e5b43774,Update README.md,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-30 14:06:52+02:00,-7200,2019-07-30 14:06:52+02:00,-7200,True,False,['README.md'],['8128a6d865028d23ef6f37a2093dd25119f77783'],1,1,2,1,,,
+3847eaa943ab22c62ee3509d10035261c455e264,Update .travis.yml,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-30 14:07:47+02:00,-7200,2019-07-30 14:07:47+02:00,-7200,True,False,['.travis.yml'],['1443611450dc2e68a33188daa58724e6e5b43774'],1,3,4,1,,,
+a3f1a81bce6493ee20b5fcf554e5ff04d68c342a,Update __init__.py,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-30 14:12:44+02:00,-7200,2019-07-30 14:12:44+02:00,-7200,True,False,['__init__.py'],['3847eaa943ab22c62ee3509d10035261c455e264'],19,2,21,1,,,
+6a8596eecd2e37f2b011387463d76bdb62adae14,Update __init__.py,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-07-30 14:16:49+02:00,-7200,2019-07-30 14:16:49+02:00,-7200,True,False,['__init__.py'],['a3f1a81bce6493ee20b5fcf554e5ff04d68c342a'],1,1,2,1,,,
+859fd5ff32836cf0d6bfe6c086d614ab96393d54,Adding explicit install requirements,Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2019-08-03 10:29:55+02:00,-7200,2019-08-03 10:29:55+02:00,-7200,True,False,['setup.py'],['6a8596eecd2e37f2b011387463d76bdb62adae14'],2,7,9,1,,,
+12590007800398eb2fbae391c4a92d4ff3250379,Fix typo in README's demo (#15),Ray Luo,rayluo.mba@gmail.com,GitHub,noreply@github.com,2021-06-02 04:59:26-07:00,25200,2021-06-02 13:59:26+02:00,-7200,True,False,['README.md'],['859fd5ff32836cf0d6bfe6c086d614ab96393d54'],1,1,2,1,,,
+15812a9e1a9dcc3a2366e4baf3a56a13bb537560,"Version2 (#16)
+
+* Remove Python2 dependecies, setup with poetry
+
+* Update to pyproject.
+toml
+
+* Cleanup readme",Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2023-11-24 14:18:58+01:00,-3600,2023-11-24 14:18:58+01:00,-3600,True,False,"['.gitignore', '.pre-commit-config.yaml', 'README.md', 'canvas.py', 'item.py', 'poetry.lock', 'pyproject.toml', 'requirements.txt', 'setup.py', 'strip-type-hints.py', 'test-requirements.txt', 'test_canvas.py']",['12590007800398eb2fbae391c4a92d4ff3250379'],154,859,1013,12,0.0,0.5263157894736842,0.5789473684210527
+00942ef173ee9bc4512f3fa8ca5a4d4b923d094b,Cleanup readme,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2023-11-24 14:19:44+01:00,-3600,2023-11-24 14:19:44+01:00,-3600,True,False,['README.md'],['15812a9e1a9dcc3a2366e4baf3a56a13bb537560'],5,0,5,1,,,
+8493599c0593441711f90bab3f98deb0c9761106,"Version2 (#17)
+
+* Remove Python2 dependecies, setup with poetry
+
+* Update to pyproject.
+toml
+
+* Cleanup readme
+
+* Cleanup
+
+* Fix pylint
+
+* Fix more pylint issues
+
+* Fix pylint again",Paul Schweizer,paulschweizer@gmx.net,GitHub,noreply@github.com,2023-11-24 14:44:19+01:00,-3600,2023-11-24 14:44:19+01:00,-3600,True,False,"['publish.yml', 'pylint.yml', 'pytest.yml', '.travis.yml', '__init__.py', 'canvas.py', 'item.py', 'noxfile.py', 'pyproject.toml']",['00942ef173ee9bc4512f3fa8ca5a4d4b923d094b'],83,92,175,9,0.0,0.0,0.0
+857a777e34942b2966a2642f5b5252211ed97645,Now available for Python 3.8.1 and above,Paul Schweizer,paulschweizer@gmx.net,Paul Schweizer,paulschweizer@gmx.net,2023-12-08 12:59:09+01:00,-3600,2023-12-08 12:59:09+01:00,-3600,True,False,"['poetry.lock', 'pyproject.toml', 'setup.py']",['8493599c0593441711f90bab3f98deb0c9761106'],63,60,123,3,,,

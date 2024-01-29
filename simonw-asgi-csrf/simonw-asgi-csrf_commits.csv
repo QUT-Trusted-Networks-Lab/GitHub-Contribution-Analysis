@@ -1,0 +1,86 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+ff4d2f2a162d8161b2cc4a7a0b749261b43b1610,Initial work-in-progress,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-03-01 15:28:38-08:00,28800,2020-03-01 15:29:51-08:00,28800,True,False,"['config.yml', 'LICENSE', 'README.md', 'asgi_csrf.py', 'setup.py', 'test_asgi_csrf.py']",[],0,588,588,6,0.7650602409638554,0.7650602409638554,0.5903614457831325
+82a51e02606d5b28039bb37e72c4d8610233f3e1,Correct spelling of receive,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-03-01 19:18:09-08:00,28800,2020-03-01 19:18:09-08:00,28800,True,False,['asgi_csrf.py'],['ff4d2f2a162d8161b2cc4a7a0b749261b43b1610'],6,6,12,1,,,
+84619ed4d7a803940ec86979b2e70adb04978e10,Fixed bug were POST didn't re-send form correctly,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-03-01 19:18:47-08:00,28800,2020-03-01 19:18:47-08:00,28800,True,False,"['asgi_csrf.py', 'setup.py', 'test_asgi_csrf.py']",['82a51e02606d5b28039bb37e72c4d8610233f3e1'],3,14,17,3,1.0,1.0,1.0
+98fbb7b809c55033b2504d776273b0181424c7be,Release 0.2a,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-03-01 19:19:09-08:00,28800,2020-03-01 19:19:09-08:00,28800,True,False,['setup.py'],['84619ed4d7a803940ec86979b2e70adb04978e10'],1,1,2,1,,,
+f0a8727cb3571a7d7ee4d84580703d77c700b578,Test showing POST data issue is fixed,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-03-01 19:27:32-08:00,28800,2020-03-01 19:27:32-08:00,28800,True,False,"['asgi_csrf.py', 'test_asgi_csrf.py']",['98fbb7b809c55033b2504d776273b0181424c7be'],18,9,27,2,0.0,0.0,1.0
+df854d787aef29b2e8f604959957907bdd079f1e,Release 0.2.1a,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-03-01 19:28:06-08:00,28800,2020-03-01 19:28:06-08:00,28800,True,False,['setup.py'],['f0a8727cb3571a7d7ee4d84580703d77c700b578'],1,1,2,1,,,
+b70233af271c742722a14bae175b98135b01f3ef,Added python-multipart test dependency,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-03-01 19:30:04-08:00,28800,2020-03-01 19:30:04-08:00,28800,True,False,['setup.py'],['df854d787aef29b2e8f604959957907bdd079f1e'],1,3,4,1,,,
+ee2e7447c75d0efbf3c81321fd5d8ce5248a27c1,Fix cookie encoding bug,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-03-01 20:12:14-08:00,28800,2020-03-01 20:12:14-08:00,28800,True,False,['asgi_csrf.py'],['b70233af271c742722a14bae175b98135b01f3ef'],1,4,5,1,0.0,1.0,1.0
+3fc164a9258ebfa616d4e724fcb102b117277c6e,Release 0.2.2a,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-03-01 20:12:31-08:00,28800,2020-03-01 20:12:31-08:00,28800,True,False,['setup.py'],['ee2e7447c75d0efbf3c81321fd5d8ce5248a27c1'],1,1,2,1,,,
+6d3b0f941632d6cc29c64d89cab57dded15bbb69,"Sign csrftoken value with itsdangerous, closes #2",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-03 14:34:04-07:00,25200,2020-06-03 14:35:30-07:00,25200,True,False,"['asgi_csrf.py', 'setup.py', 'test_asgi_csrf.py']",['3fc164a9258ebfa616d4e724fcb102b117277c6e'],29,74,103,3,0.7741935483870968,0.7741935483870968,0.1935483870967742
+4601db07a902e415183a3d11981599b21d4c3052,"Better documentation, including signing secrets. Closes #2",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-03 16:52:21-07:00,25200,2020-06-03 16:52:21-07:00,25200,True,False,['README.md'],['6d3b0f941632d6cc29c64d89cab57dded15bbb69'],5,35,40,1,,,
+758ccd0b00f31811cb14cf38add06da91a678bae,"Release 0.3
+
+Refs #2",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-03 16:53:07-07:00,25200,2020-06-03 16:53:07-07:00,25200,True,False,['setup.py'],['4601db07a902e415183a3d11981599b21d4c3052'],1,1,2,1,,,
+aab0fe2b315c7ab771f1f752e2a456e504cd8bb2,"Specify Path=/ when setting cookies, closes #6",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-04 21:16:16-07:00,25200,2020-06-04 21:16:16-07:00,25200,True,False,"['asgi_csrf.py', 'test_asgi_csrf.py']",['758ccd0b00f31811cb14cf38add06da91a678bae'],1,4,5,2,0.3333333333333333,1.0,1.0
+6f271568edfc483755ce8a08dba5da69b33dfa64,"Release 0.3.1
+
+Refs #6",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-04 21:17:01-07:00,25200,2020-06-04 21:17:08-07:00,25200,True,False,['setup.py'],['aab0fe2b315c7ab771f1f752e2a456e504cd8bb2'],1,1,2,1,,,
+849b397724f909457b10d635a3dd397040cfed92,"Only set csrftoken cookie if needed by page, closes #7
+
+scope['csrftoken'] is now a function that returns a string.
+
+Calling that function lets the middleware know it needs to set the cookie.",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-05 11:32:46-07:00,25200,2020-06-05 11:32:46-07:00,25200,True,False,"['README.md', 'asgi_csrf.py', 'test_asgi_csrf.py']",['6f271568edfc483755ce8a08dba5da69b33dfa64'],9,35,44,3,1.0,1.0,1.0
+67edabeaf0861e10313b677f6769941a47bb3188,"Vary: Cookie header, closes #8",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-05 11:50:03-07:00,25200,2020-06-05 11:50:03-07:00,25200,True,False,"['README.md', 'asgi_csrf.py', 'test_asgi_csrf.py']",['849b397724f909457b10d635a3dd397040cfed92'],4,33,37,3,0.4782608695652174,0.0,1.0
+a45edbbb0e9e968b989217e5ba791be195c64162,"Release 0.4
+
+Refs #7, #8",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-05 11:51:19-07:00,25200,2020-06-05 11:51:19-07:00,25200,True,False,['setup.py'],['67edabeaf0861e10313b677f6769941a47bb3188'],1,1,2,1,,,
+e6058ce879ce4d770d95a4b2548192c8fee4c622,"Vary: Cookie only on pages embedding csrftoken value, closes #9",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-05 16:27:35-07:00,25200,2020-06-05 16:27:35-07:00,25200,True,False,"['asgi_csrf.py', 'test_asgi_csrf.py']",['a45edbbb0e9e968b989217e5ba791be195c64162'],11,35,46,2,0.14285714285714285,0.9047619047619048,0.9523809523809523
+a0647ad673acfc107c2033258efae50f5cb1fb7c,"Release 0.5
+
+Refs #9",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-05 16:28:01-07:00,25200,2020-06-05 16:28:01-07:00,25200,True,False,['setup.py'],['e6058ce879ce4d770d95a4b2548192c8fee4c622'],1,1,2,1,,,
+5d788af47dbb582949ecc5093d4e4745a489fa5b,"Fixed bug with original headers, closes #10",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-05 17:13:11-07:00,25200,2020-06-05 17:13:11-07:00,25200,True,False,"['asgi_csrf.py', 'test_asgi_csrf.py']",['a0647ad673acfc107c2033258efae50f5cb1fb7c'],0,9,9,2,0.6666666666666666,0.6666666666666666,1.0
+65f6ab5ba94fe2b13375121f84b1acdcf7f70462,"Release 0.5.1
+
+Refs #10",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-05 17:13:29-07:00,25200,2020-06-05 17:13:29-07:00,25200,True,False,['setup.py'],['5d788af47dbb582949ecc5093d4e4745a489fa5b'],1,1,2,1,,,
+01a428d0bb63b035cd1a3e276c22f9917a12535b,"Clearer variable name - page_needs_vary_header
+
+page_needs_vary_cookie sounded like the variable controlled setting a cookie.",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-05 17:24:04-07:00,25200,2020-06-05 17:24:04-07:00,25200,True,False,['asgi_csrf.py'],['65f6ab5ba94fe2b13375121f84b1acdcf7f70462'],4,4,8,1,,,
+0d23766c207f8d3af9f2f89d1768fc5e106d0ce8,"Don't CSRF protect Authorization: Bearer ..., refs #11",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-30 17:29:54-07:00,25200,2020-06-30 17:31:45-07:00,25200,True,False,"['README.md', 'asgi_csrf.py', 'test_asgi_csrf.py']",['01a428d0bb63b035cd1a3e276c22f9917a12535b'],0,26,26,3,0.5333333333333333,0.5333333333333333,0.5333333333333333
+d04940887233bacad4c6165a097996342a32afa8,"Don't protect cookie-less requests, unless in always_protect list, closes #11",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-30 17:44:10-07:00,25200,2020-06-30 17:44:10-07:00,25200,True,False,"['README.md', 'asgi_csrf.py', 'test_asgi_csrf.py']",['0d23766c207f8d3af9f2f89d1768fc5e106d0ce8'],9,44,53,3,0.6923076923076923,0.6923076923076923,0.0
+245d8ba268a746abe3155336bb95feaf0eb4330b,"Release 0.6
+
+Refs #11",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-06-30 17:44:50-07:00,25200,2020-06-30 17:44:50-07:00,25200,True,False,['setup.py'],['d04940887233bacad4c6165a097996342a32afa8'],1,1,2,1,,,
+d4a41675a000ad7655c41d57f50b2cc1443aa1d2,Switch master => main,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-08-14 19:26:54-07:00,25200,2020-08-14 19:26:54-07:00,25200,True,False,['README.md'],['245d8ba268a746abe3155336bb95feaf0eb4330b'],1,1,2,1,,,
+3955e6ea9ab93fb1812a10a66432f189fd86b187,"Support multipart/form-data uploads, refs #1",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-08-14 19:25:13-07:00,25200,2020-08-14 19:27:04-07:00,25200,True,False,"['asgi_csrf.py', 'setup.py', 'test_asgi_csrf.py']",['d4a41675a000ad7655c41d57f50b2cc1443aa1d2'],19,126,145,3,0.36470588235294116,0.5294117647058824,0.6588235294117647
+c8bf666eda027b3ff01dd18b7b7c8d5354185d4f,"Release 0.7a0
+
+Refs #1",Simon Willison,swillison@gmail.com,GitHub,noreply@github.com,2020-08-14 19:29:51-07:00,25200,2020-08-14 19:29:51-07:00,25200,True,False,['setup.py'],['3955e6ea9ab93fb1812a10a66432f189fd86b187'],1,1,2,1,,,
+939334f87e4284354ba379bc8e75012b91304cf7,Support releases like 0.7a0,Simon Willison,swillison@gmail.com,GitHub,noreply@github.com,2020-08-14 19:36:23-07:00,25200,2020-08-14 19:36:23-07:00,25200,True,False,['config.yml'],['c8bf666eda027b3ff01dd18b7b7c8d5354185d4f'],1,1,2,1,,,
+9465628c6c84a16f7a3206fa28880d2fa2669385,Switch to GitHub Actions,Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-08-14 20:15:43-07:00,25200,2020-08-14 20:15:43-07:00,25200,True,False,"['config.yml', 'publish.yml', 'test.yml', 'README.md']",['939334f87e4284354ba379bc8e75012b91304cf7'],107,68,175,4,,,
+aae49f029836d07f18d80695ff1959565e8ca395,"Remove limitations note, refs #1",Simon Willison,swillison@gmail.com,GitHub,noreply@github.com,2020-08-14 20:16:33-07:00,25200,2020-08-14 20:16:33-07:00,25200,True,False,['README.md'],['9465628c6c84a16f7a3206fa28880d2fa2669385'],4,0,4,1,,,
+57c215ea154653ac25bd7e770751cf09fad0ad75,"Ensure test coverage is 100%
+
+* Fail if coverage < 100%
+* Upload coverage to codecov.io
+* Upload coverage even if tests failed
+* Test signing secret
+* test_multipart_failure_file_comes_before_token
+
+Now at 100%, closes #13",Simon Willison,swillison@gmail.com,GitHub,noreply@github.com,2020-08-15 11:01:33-07:00,25200,2020-08-15 11:01:33-07:00,25200,True,False,"['test.yml', 'asgi_csrf.py', 'setup.py', 'test_asgi_csrf.py']",['aae49f029836d07f18d80695ff1959565e8ca395'],13,100,113,4,0.6440677966101694,0.9830508474576272,0.8305084745762712
+96434ec73597cab3f5ca41ce351b6de894e5d24a,"Release 0.7
+
+Refs #1, #13",Simon Willison,swillison@gmail.com,GitHub,noreply@github.com,2020-08-15 11:03:37-07:00,25200,2020-08-15 11:03:37-07:00,25200,True,False,['setup.py'],['57c215ea154653ac25bd7e770751cf09fad0ad75'],1,1,2,1,,,
+83d2b4f6bb034b746fd3f20f57ebdbaeae007a73,"codecov.io badge
+
+Refs #13",Simon Willison,swillison@gmail.com,GitHub,noreply@github.com,2020-08-15 11:05:57-07:00,25200,2020-08-15 11:05:57-07:00,25200,True,False,['README.md'],['96434ec73597cab3f5ca41ce351b6de894e5d24a'],0,1,1,1,,,
+5e34261af4777f6191adabc2f5ff5c3acbc57339,"Fix for ASGI error on non-http scopes, closes #15",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2020-08-26 17:38:13-07:00,25200,2020-08-26 17:38:13-07:00,25200,True,False,"['asgi_csrf.py', 'setup.py', 'test_asgi_csrf.py']",['83d2b4f6bb034b746fd3f20f57ebdbaeae007a73'],1,25,26,3,0.7692307692307693,0.7692307692307693,0.7692307692307693
+764914ad7931c29fd00e999a071b458fbef7b4d3,"Release 0.7.1
+
+Refs #15",Simon Willison,swillison@gmail.com,GitHub,noreply@github.com,2020-08-26 18:20:06-07:00,25200,2020-08-26 18:20:06-07:00,25200,True,False,['setup.py'],['5e34261af4777f6191adabc2f5ff5c3acbc57339'],1,1,2,1,,,
+1cd2bacdee12574e72e496a7d61bf63e83ec7015,"Fix tests for httpx >= 0.16, closes #18",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2021-01-23 13:29:27-08:00,28800,2021-01-23 13:29:27-08:00,28800,True,False,"['setup.py', 'test_asgi_csrf.py']",['764914ad7931c29fd00e999a071b458fbef7b4d3'],6,7,13,2,0.0,1.0,1.0
+157647ba91311f17af7c0eafd07e09644bdb82e3,"Release 0.7.2
+
+Refs #18",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2021-01-23 13:30:00-08:00,28800,2021-01-23 13:30:00-08:00,28800,True,False,['setup.py'],['1cd2bacdee12574e72e496a7d61bf63e83ec7015'],1,1,2,1,,,
+0884d9a75d16ae25df04a8fac11c2361a7e7fdb7,"Stop using undocumented httpx methods, closes #19
+
+Refs https://github.com/encode/httpx/issues/1455",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2021-01-23 14:14:00-08:00,28800,2021-01-23 14:14:00-08:00,28800,True,False,['test_asgi_csrf.py'],['157647ba91311f17af7c0eafd07e09644bdb82e3'],18,11,29,1,0.0,0.0,1.0
+01d377e157baae16dc810604fb26d96fc48dbf80,"always_set_cookie=True option, closes #16",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2021-01-23 14:32:24-08:00,28800,2021-01-23 14:32:24-08:00,28800,True,False,"['README.md', 'asgi_csrf.py', 'test_asgi_csrf.py']",['0884d9a75d16ae25df04a8fac11c2361a7e7fdb7'],3,53,56,3,0.0,0.9032258064516129,0.8064516129032258
+bb7178decd99978f62c19e7c9d1c0f4f91e8bcc8,"Release 0.8
+
+Refs #16",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2021-01-23 14:32:55-08:00,28800,2021-01-23 14:32:55-08:00,28800,True,False,['setup.py'],['01d377e157baae16dc810604fb26d96fc48dbf80'],1,1,2,1,,,
+22669faf886dc281e295877784b919e7412dff7d,"skip_if_scope parameter, refs #20",Simon Willison,swillison@gmail.com,Simon Willison,swillison@gmail.com,2021-06-14 17:46:59-07:00,25200,2021-06-14 17:46:59-07:00,25200,True,False,"['README.md', 'asgi_csrf.py', 'test_asgi_csrf.py']",['bb7178decd99978f62c19e7c9d1c0f4f91e8bcc8'],0,54,54,3,0.625,0.8125,0.0
+f1a7e2889b5e7df7d67dbb7d6f483c22dbffae83,"Release 0.9
+
+Refs #20",Simon Willison,swillison@gmail.com,GitHub,noreply@github.com,2021-06-23 12:34:20-07:00,25200,2021-06-23 12:34:20-07:00,25200,True,False,['setup.py'],['22669faf886dc281e295877784b919e7412dff7d'],1,1,2,1,,,

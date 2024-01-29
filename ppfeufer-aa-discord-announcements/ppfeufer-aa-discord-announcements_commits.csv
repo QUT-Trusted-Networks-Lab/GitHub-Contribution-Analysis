@@ -1,0 +1,859 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+54496b3960565b2699eb51a67f294cf121943650,Initial commit,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2022-08-07 23:14:51+02:00,-7200,2022-08-07 23:14:51+02:00,-7200,True,False,"['LICENSE', 'README.md']",[],0,676,676,2,,,
+481854ef8b53c98368ed291879c5db0f59362598,[ADDED] Django App,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 00:13:30+02:00,-7200,2022-08-08 00:13:30+02:00,-7200,True,False,"['.coveragerc', '.editorconfig', '.flake8', 'FUNDING.yml', 'bug_report.md', 'config.yml', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md', 'automated-checks.yml', 'pypi-release.yml', '.gitignore', '.isort.cfg', '.pre-commit-config.yaml', 'CHANGELOG.md', 'CODEOWNERS', 'CODE_OF_CONDUCT.md', 'MANIFEST.in', 'Makefile', 'README.md', '__init__.py', 'admin.py', 'apps.py', 'auth_hooks.py', 'constants.py', '0001_initial.py', '__init__.py', 'models.py', 'codecov.yml', 'pyproject.toml', 'runtests.py', 'setup.cfg', '__init__.py', 'celery.py', 'settings.py', 'urls.py', 'wsgi.py', 'tox.ini']",['54496b3960565b2699eb51a67f294cf121943650'],2,1362,1364,37,,,
+cf1563ea2b058274a0a4e62265ff0ce5304a070f,[ADDED] Models for PingTarget and Webhook,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 00:34:17+02:00,-7200,2022-08-08 00:34:17+02:00,-7200,True,False,"['app_settings.py', '0001_initial.py', 'models.py']",['481854ef8b53c98368ed291879c5db0f59362598'],2,339,341,3,0.6136363636363636,1.0,0.8409090909090909
+11304a8c00f1db541c08c9f0a83535b727afc05e,[ADDED] Contribution guidelines,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 00:34:31+02:00,-7200,2022-08-08 00:34:31+02:00,-7200,True,False,['CONTRIBUTING.md'],['cf1563ea2b058274a0a4e62265ff0ce5304a070f'],0,76,76,1,,,
+7264814af6794161d393c1977ae54750bc2575e1,[ADDED] Admin pages,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 01:02:44+02:00,-7200,2022-08-08 01:02:44+02:00,-7200,True,False,['admin.py'],['11304a8c00f1db541c08c9f0a83535b727afc05e'],0,88,88,1,1.0,1.0,1.0
+1904a27fc58dddfbd447d4d37bb96acbc0fd0ccd,[ADDED] Model graph,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 01:13:14+02:00,-7200,2022-08-08 01:13:14+02:00,-7200,True,False,['aa-discord-announcements-models.png'],['7264814af6794161d393c1977ae54750bc2575e1'],0,0,0,1,,,
+966915ef6ce27a1aa9039857376e2c8b1b7bc14e,[ADDED] Index view,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 01:39:07+02:00,-7200,2022-08-08 01:39:07+02:00,-7200,True,False,"['auth_hooks.py', 'forms.py', 'index.html', 'urls.py', 'views.py']",['1904a27fc58dddfbd447d4d37bb96acbc0fd0ccd'],0,176,176,5,0.48484848484848486,1.0,1.0
+dd7c3421cd036eace47d7d4ddcc0d0cad2c9dcf7,[ADDED] First tests,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 02:11:00+02:00,-7200,2022-08-08 02:11:00+02:00,-7200,True,False,"['auth_hooks.py', 'models.py', '__init__.py', 'test_access.py', 'test_installed_modules.py', 'test_models.py', 'utils.py', 'urls.py', 'setup.cfg']",['966915ef6ce27a1aa9039857376e2c8b1b7bc14e'],5,255,260,9,0.49056603773584906,1.0,0.660377358490566
+ae5e5715346181e33266d546d645a520fd0b74fb,[REMOVED] Nonsensical test,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 02:28:17+02:00,-7200,2022-08-08 02:28:17+02:00,-7200,True,False,['test_models.py'],['dd7c3421cd036eace47d7d4ddcc0d0cad2c9dcf7'],17,0,17,1,0.0,0.0,0.0
+c14554d9900b0e4a757a1d07685af5cc5c63ac7b,[ADDED] Asterisk to mandatory field,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 02:47:47+02:00,-7200,2022-08-08 02:47:47+02:00,-7200,True,False,['forms.py'],['ae5e5715346181e33266d546d645a520fd0b74fb'],1,21,22,1,1.0,1.0,1.0
+268a04aa90839b14f1a993893bd81989c967a9ae,[ADDED] Templates for index view,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 02:48:02+02:00,-7200,2022-08-08 02:48:02+02:00,-7200,True,False,"['base.html', 'index.html', 'announcement.html', 'form.html', 'page-header.html']",['c14554d9900b0e4a757a1d07685af5cc5c63ac7b'],0,75,75,5,,,
+5bfa93a61f6937c9df0ce27dbc8ceda4f95c331d,[ADDED] JS and CSS files (empty for now),Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 03:03:12+02:00,-7200,2022-08-08 03:03:12+02:00,-7200,True,False,"['aa-discord-announcements.css', 'aa-discord-announcements.min.css', 'aa-discord-announcements.js', 'aa-discord-announcements.min.js', 'discord-announcements-css.html', 'discord-announcements-js.html', 'index.html', '__init__.py', 'aa_discord_announcements_versioned_static.py', 'test_templatetags.py']",['268a04aa90839b14f1a993893bd81989c967a9ae'],1,80,81,10,1.0,1.0,1.0
+9df98d40f794682fc93ec0aa2a6c5a80259bf4f8,[ADDED] Ajax calls for form drop-down menus,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 03:29:23+02:00,-7200,2022-08-08 03:29:23+02:00,-7200,True,False,"['aa-discord-announcements.js', 'aa-discord-announcements.min.js', 'index.html', 'announcement-channel.html', 'announcement-targets.html', 'test_ajax_calls.py', 'urls.py', 'views.py']",['5bfa93a61f6937c9df0ce27dbc8ceda4f95c331d'],11,249,260,8,0.5918367346938775,1.0,1.0
+0f0f56582e05e8248c451ce41a809773bf76986d,[ADDED] Send announcement to Discord webhook,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 12:17:03+02:00,-7200,2022-08-08 12:17:03+02:00,-7200,True,False,"['announcement_context.py', 'discord_webhook.py', 'aa-discord-announcements.js', 'aa-discord-announcements.min.js', 'index.html', 'announcement.html', 'copy-paste-text.html', 'form.html', 'test_ajax_calls.py', 'test_models.py', 'urls.py', 'views.py']",['9df98d40f794682fc93ec0aa2a6c5a80259bf4f8'],21,427,448,12,0.22869955156950672,0.757847533632287,1.0
+64a2fa1aef3befd2398d06bf2522b89c8c934713,[ADDED] Copy announcement text to clipboard,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 12:26:44+02:00,-7200,2022-08-08 12:26:44+02:00,-7200,True,False,"['aa-discord-announcements.js', 'aa-discord-announcements.min.js', 'index.html']",['0f0f56582e05e8248c451ce41a809773bf76986d'],2,55,57,3,1.0,1.0,1.0
+468674eedcab632d0a76d996cd76ae82c4b7541e,[ADDED] Check for mandatory form fields,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 12:33:58+02:00,-7200,2022-08-08 12:33:58+02:00,-7200,True,False,"['aa-discord-announcements.js', 'aa-discord-announcements.min.js', 'index.html']",['64a2fa1aef3befd2398d06bf2522b89c8c934713'],2,21,23,3,0.0,1.0,1.0
+64aa61b276932bef69bb14900e0175e817db048b,[ADDED] CSS,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 12:39:01+02:00,-7200,2022-08-08 12:39:01+02:00,-7200,True,False,"['aa-discord-announcements.css', 'aa-discord-announcements.min.css']",['468674eedcab632d0a76d996cd76ae82c4b7541e'],0,19,19,2,,,
+fc3fbf6d3a7e12e9d0d51da9a2cf931475c2ab77,Version bumped to v0.0.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 12:44:57+02:00,-7200,2022-08-08 12:44:57+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['64aa61b276932bef69bb14900e0175e817db048b'],1,8,9,2,,,
+1b37ef4fd8ef9cfb97bef87f1689d39c3379dc56,[FIX] Code style,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 12:54:09+02:00,-7200,2022-08-08 12:54:09+02:00,-7200,True,False,['models.py'],['fc3fbf6d3a7e12e9d0d51da9a2cf931475c2ab77'],31,31,62,1,,,
+a4a9911dd53a24d16ef07466117ed58fffc96852,[FIX] Model field defaults,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 12:58:02+02:00,-7200,2022-08-08 12:58:02+02:00,-7200,True,False,['0001_initial.py'],['1b37ef4fd8ef9cfb97bef87f1689d39c3379dc56'],3,3,6,1,,,
+9f345992c5de41592313358fd4604a16bfb6b05d,[FIX] Typos in help text,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-08 13:02:36+02:00,-7200,2022-08-08 13:02:36+02:00,-7200,True,False,"['0001_initial.py', 'models.py']",['a4a9911dd53a24d16ef07466117ed58fffc96852'],5,5,10,2,,,
+f6f34b698496c798e55e49110e8c2c0dd068c5b6,"[ADDED] Hint text to ""Announcement Text"" field",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-13 13:11:15+02:00,-7200,2022-09-13 13:11:15+02:00,-7200,True,False,"['CHANGELOG.md', 'forms.py']",['9f345992c5de41592313358fd4604a16bfb6b05d'],2,28,30,2,1.0,1.0,1.0
+130920f756560275a85e86ddd0b1608bfe4084c9,[CHANGE] Use MySQL in tox tests,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-13 13:12:41+02:00,-7200,2022-09-13 13:12:41+02:00,-7200,True,False,"['automated-checks.yml', 'tox.ini']",['f6f34b698496c798e55e49110e8c2c0dd068c5b6'],21,71,92,2,,,
+cc9070280879117cdf9b26956183925a4bae02bb,[ADDED] MySQL settings for tests,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-13 13:34:09+02:00,-7200,2022-09-13 13:34:09+02:00,-7200,True,False,['settings.py'],['130920f756560275a85e86ddd0b1608bfe4084c9'],0,14,14,1,,,
+b24fe093b0116f2df78440b7119341e69cca9c13,[MISC] GitHub templates updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-16 15:08:09+02:00,-7200,2022-09-16 15:08:09+02:00,-7200,True,False,"['bug_report.md', 'PULL_REQUEST_TEMPLATE.md']",['cc9070280879117cdf9b26956183925a4bae02bb'],5,3,8,2,,,
+a7f47852fb9d260acd377f5926e514e61c183247,[CHANGE] Test suite updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-16 15:13:10+02:00,-7200,2022-09-16 15:13:10+02:00,-7200,True,False,"['automated-checks.yml', 'Makefile', 'settings.py', 'tox.ini']",['b24fe093b0116f2df78440b7119341e69cca9c13'],14,37,51,4,,,
+06b82a12f09b7cb47c476d4d9f9b5bd367d14420,[MISC] pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-16 15:16:00+02:00,-7200,2022-09-16 15:16:00+02:00,-7200,True,False,['.pre-commit-config.yaml'],['a7f47852fb9d260acd377f5926e514e61c183247'],5,5,10,1,,,
+55b3d3ace3fc60c14be174a9f570b65114d0378e,[CHANGE] Project config updated again and tests for auth_hooks added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-18 11:05:11+02:00,-7200,2022-09-18 11:05:11+02:00,-7200,True,False,"['PULL_REQUEST_TEMPLATE.md', 'automated-checks.yml', '.pre-commit-config.yaml', 'test_auth_hooks.py']",['06b82a12f09b7cb47c476d4d9f9b5bd367d14420'],17,99,116,4,0.38461538461538464,1.0,1.0
+d34377d7b9c7819aef93b04b4b9b457b32f87c67,[REMOVED] Deprecated attributes from `style` and `script` tags,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-18 11:45:44+02:00,-7200,2022-09-18 11:45:44+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py', 'discord-announcements-css.html', 'discord-announcements-js.html']",['55b3d3ace3fc60c14be174a9f570b65114d0378e'],2,9,11,4,,,
+f977ac5e3f86d25dfc5d3f446a2d148dafd5e2e1,[CHANGE] Better template formatting,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-18 11:49:55+02:00,-7200,2022-09-18 11:49:55+02:00,-7200,True,False,"['base.html', 'index.html', 'announcement.html', 'form.html', 'announcement-targets.html']",['d34377d7b9c7819aef93b04b4b9b457b32f87c67'],5,22,27,5,,,
+49c4c8eec02f7566832e46e374e83f3db28fb103,[CHANGE] Code/internal improvements,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-18 13:02:11+02:00,-7200,2022-09-18 13:02:11+02:00,-7200,True,False,"['CONTRIBUTING.md', 'Makefile', 'auth_hooks.py', 'forms.py', 'models.py', '__init__.py', 'test_access.py', 'test_models.py', 'urls.py', 'views.py', '__init__.py', 'celery.py', 'settings.py', 'urls.py']",['f977ac5e3f86d25dfc5d3f446a2d148dafd5e2e1'],43,127,170,14,0.8,1.0,1.0
+a6356036b270715c80eca0c5517b905b16d6374a,[CHANGE] Version bumped to v0.0.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-18 13:03:44+02:00,-7200,2022-09-18 13:03:44+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['49c4c8eec02f7566832e46e374e83f3db28fb103'],1,4,5,2,,,
+5515b18b61a150d6699c2a3705202ad494de9113,[FIX] Grammar,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-18 13:16:01+02:00,-7200,2022-09-18 13:16:01+02:00,-7200,True,False,['CHANGELOG.md'],['a6356036b270715c80eca0c5517b905b16d6374a'],1,1,2,1,,,
+3362a045481621029100302e024b9d04824bbf36,[MISC] Test suite updated - Python 3.11 tests no longer allowed to fail,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-31 21:35:04+01:00,-3600,2022-10-31 21:35:04+01:00,-3600,True,False,['automated-checks.yml'],['5515b18b61a150d6699c2a3705202ad494de9113'],20,22,42,1,,,
+adecb6fcdc0081136f71b844c4c7a117cdd8d16b,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-27 10:24:26+01:00,-3600,2023-01-27 10:24:26+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'admin.py', 'urls.py']",['3362a045481621029100302e024b9d04824bbf36'],35,19,54,3,,,
+beb50768b125f889626b70a4aa95bb2d57b56f01,[MISC] GH workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-27 10:24:46+01:00,-3600,2023-01-27 10:24:46+01:00,-3600,True,False,"['automated-checks.yml', 'pypi-release.yml']",['adecb6fcdc0081136f71b844c4c7a117cdd8d16b'],3,3,6,2,,,
+1af7b5a3036775b9c9fb60f9a2f83262b48e8370,[MISC] GH workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-03-26 14:13:41+02:00,-7200,2023-03-26 14:13:41+02:00,-7200,True,False,"['automated-checks.yml', 'pypi-release.yml']",['beb50768b125f889626b70a4aa95bb2d57b56f01'],5,5,10,2,,,
+ee414351831084465b51c20645f4549bff70fa4f,[MISC] Set the right Python version for the build,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-03-26 14:19:04+02:00,-7200,2023-03-26 14:19:04+02:00,-7200,True,False,"['automated-checks.yml', 'pypi-release.yml']",['1af7b5a3036775b9c9fb60f9a2f83262b48e8370'],3,2,5,2,,,
+0c233602a3676884d1999f1c7c409bab6954d37a,[ADDED] Language files,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-11 23:22:23+02:00,-7200,2023-04-11 23:22:23+02:00,-7200,True,False,"['Makefile', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['ee414351831084465b51c20645f4549bff70fa4f'],4,1527,1531,9,,,
+6d048bdd6e42ab68e715292b76b7ce8b2021362a,"Translated using Weblate (Russian)
+
+Currently translated at 2.5% (1 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/
+
+Translated using Weblate (German)
+
+Currently translated at 100.0% (40 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-11 21:42:04+00:00,0,2023-04-11 21:42:04+00:00,0,True,False,"['django.mo', 'django.po', 'django.mo', 'django.po']",['0c233602a3676884d1999f1c7c409bab6954d37a'],50,64,114,4,,,
+553b3e2151ef5e7051920fe0a8bd491c23d9293d,"[REMOVED] Codacy checks from GH workflows, too unreliable availability",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-13 16:09:22+02:00,-7200,2023-04-13 16:09:22+02:00,-7200,True,False,['automated-checks.yml'],['f3ece91ece41eb4ea9c7af532bda7c6c89404237'],34,1,35,1,,,
+185346c1f4ebf943a60cee8a2d50977dee74a5ca,[ADDED] Translation section to contribution guide,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-13 16:11:21+02:00,-7200,2023-04-13 16:11:21+02:00,-7200,True,False,['CONTRIBUTING.md'],['553b3e2151ef5e7051920fe0a8bd491c23d9293d'],0,10,10,1,,,
+4e63a30e8992dbca6468fbf93330caf43e9b52a1,[CHANGE] Version bumped to v1.0.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-13 17:42:49+02:00,-7200,2023-04-13 17:42:49+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['185346c1f4ebf943a60cee8a2d50977dee74a5ca'],1,8,9,2,,,
+cadc8d01e0230066461a8f5c68104e3faddabaaf,[CHANGE] Grammar and spelling fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-14 02:18:35+02:00,-7200,2023-04-14 02:18:35+02:00,-7200,True,False,"['automated-checks.yml', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'README.md']",['4e63a30e8992dbca6468fbf93330caf43e9b52a1'],29,56,85,4,,,
+17889e2e10e6dcb1273b166945cb8590249765cc,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (40 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-16 15:33:53+00:00,0,2023-04-16 15:33:53+00:00,0,True,False,['django.po'],['cadc8d01e0230066461a8f5c68104e3faddabaaf'],35,47,82,1,,,
+7b614d96a7c8eafa3e92819400459995686a2bb4,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-16 15:33:53+00:00,0,2023-04-16 15:33:53+00:00,0,True,False,['django.mo'],['17889e2e10e6dcb1273b166945cb8590249765cc'],0,0,0,1,,,
+c46ae444eb03c34e69efb5861de20d2b8ec0ee7a,[CHANGE] Version bumped to v1.1.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-16 17:49:14+02:00,-7200,2023-04-16 17:49:14+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['2998f3bffe7e3dd5f902c2426e62f04190ba4c5f'],1,8,9,2,,,
+449160392cca3ae880f964dbe847b5407ee64662,[CHANGE] Makefile updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-18 23:55:33+02:00,-7200,2023-04-18 23:55:33+02:00,-7200,True,False,['Makefile'],['c46ae444eb03c34e69efb5861de20d2b8ec0ee7a'],16,20,36,1,,,
+b9ebc0e8840ffc410fd48d4a6da88c82805480c0,[ADDED] Ukrainian translation file,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 01:16:40+02:00,-7200,2023-04-19 01:16:40+02:00,-7200,True,False,"['Makefile', 'django.pot', 'django.po']",['449160392cca3ae880f964dbe847b5407ee64662'],0,384,384,3,,,
+6e0b6e91bc3c61c0b38e73a0c42b5cdf33bd8188,"Translated using Weblate (French)
+
+Currently translated at 2.5% (1 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/fr/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-18 23:17:02+00:00,0,2023-04-18 23:17:02+00:00,0,True,False,['django.po'],['b9ebc0e8840ffc410fd48d4a6da88c82805480c0'],8,9,17,1,,,
+15c1d2518e96094237617da70ed6bd9a2b592e7c,"Translated using Weblate (Italian)
+
+Currently translated at 2.5% (1 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/it/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-18 23:17:02+00:00,0,2023-04-18 23:17:02+00:00,0,True,False,['django.po'],['6e0b6e91bc3c61c0b38e73a0c42b5cdf33bd8188'],8,9,17,1,,,
+4277b44e019eedcc57d4edfc91c4debf980c6bc0,"Translated using Weblate (Spanish)
+
+Currently translated at 2.5% (1 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/es/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-18 23:17:03+00:00,0,2023-04-18 23:17:03+00:00,0,True,False,['django.po'],['15c1d2518e96094237617da70ed6bd9a2b592e7c'],9,9,18,1,,,
+bc277c2250a72ae288e6bf636ca2ad59f4eab08a,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-18 23:17:03+00:00,0,2023-04-18 23:17:03+00:00,0,True,False,"['django.mo', 'django.mo', 'django.mo']",['4277b44e019eedcc57d4edfc91c4debf980c6bc0'],0,0,0,3,,,
+b9197c52b3e3aa928545b63d0c622b517fd657a1,"[CHANGE] Plural forms for Russian and Ukrainian translations
+
+Set according to » https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 10:55:59+02:00,-7200,2023-04-19 10:55:59+02:00,-7200,True,False,"['django.po', 'django.po']",['b518591ec27376886591571cb98f86265330e87e'],7,2,9,2,,,
+6c0903c87e11774c39b8313a6567bf4bc4c11e7a,"Translated using Weblate (Ukrainian)
+
+Currently translated at 57.5% (23 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-19 15:32:04+00:00,0,2023-04-19 15:32:04+00:00,0,True,False,['django.po'],['b9197c52b3e3aa928545b63d0c622b517fd657a1'],27,37,64,1,,,
+966c07c7a8965436e90621b73dc81a270a575df0,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-19 15:32:04+00:00,0,2023-04-19 15:32:04+00:00,0,True,False,['django.mo'],['6c0903c87e11774c39b8313a6567bf4bc4c11e7a'],0,0,0,1,,,
+8de6a6c59c3281ac6e2b9fd3c1a876e5875af4ac,[CHANGE] Final plural-forms for ru and uk,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 19:17:38+02:00,-7200,2023-04-19 19:17:38+02:00,-7200,True,False,"['django.po', 'django.po']",['3feff56029e7479c767763407fbff6e0263c650d'],3,4,7,2,,,
+415bb4b8fc432ce8b1776c3ef2b184725436814b,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (40 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-20 21:50:16+00:00,0,2023-04-20 21:50:16+00:00,0,True,False,['django.po'],['8de6a6c59c3281ac6e2b9fd3c1a876e5875af4ac'],13,13,26,1,,,
+393cb7afd32f75dc866607531f2aa47afeca6796,"Translated using Weblate (Ukrainian)
+
+Currently translated at 57.5% (23 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-20 21:50:16+00:00,0,2023-04-20 21:50:16+00:00,0,True,False,['django.po'],['415bb4b8fc432ce8b1776c3ef2b184725436814b'],5,6,11,1,,,
+202d8ec70d9b3c5bdb8ace51f6a60d5653c5003d,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-20 21:50:16+00:00,0,2023-04-20 21:50:16+00:00,0,True,False,"['django.mo', 'django.mo']",['393cb7afd32f75dc866607531f2aa47afeca6796'],0,0,0,2,,,
+fdb4d6a5a99caef04d2e7ac2e40a47b1966ec86e,[CHANGE] Moved the build process to PEP 621 / pyproject.toml,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-24 12:15:54+02:00,-7200,2023-04-24 12:15:54+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'MANIFEST.in', '__init__.py', 'pyproject.toml', 'setup.cfg']",['40dfd71f5afe5582f683ab1dcd6455b78286a9ee'],71,57,128,5,,,
+f2efeb45429675fa6330884d8444b768b3a94ff8,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-24 12:43:37+02:00,-7200,2023-04-24 12:43:37+02:00,-7200,True,False,"['.pre-commit-config.yaml', '0001_initial.py']",['fdb4d6a5a99caef04d2e7ac2e40a47b1966ec86e'],16,27,43,2,,,
+adcdf4de1861dc26f779bdcde8aa1f05c4f09987,[FIX] Package name for metadata,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-24 12:45:12+02:00,-7200,2023-04-24 12:45:12+02:00,-7200,True,False,['__init__.py'],['f2efeb45429675fa6330884d8444b768b3a94ff8'],1,1,2,1,,,
+28e2262c28fe8c5ae26645f2e05b69ddb9aeea86,[MISC] MD files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-24 13:00:38+02:00,-7200,2023-04-24 13:00:38+02:00,-7200,True,False,"['CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'README.md']",['0aee4fbb393634dac9a66a641e3b34459032a5a3'],3,13,16,3,,,
+bc18b95174acfce039adfb3d82242c7362bd1b14,[CHANGE] Version bumped to v1.2.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-24 13:02:54+02:00,-7200,2023-04-24 13:02:54+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['28e2262c28fe8c5ae26645f2e05b69ddb9aeea86'],1,9,10,2,,,
+2f359897ab7b54d81afa17114182fb6260684a7c,[CHANGE] Use ellipsis character (`…`) instead of 3 dots,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-26 21:17:00+02:00,-7200,2023-04-26 21:17:00+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'models.py']",['bc18b95174acfce039adfb3d82242c7362bd1b14'],49,62,111,11,,,
+1eda02cbda611ba1fc0d41b0cd9ce1c03e911b9e,"Translated using Weblate (German)
+
+Currently translated at 100.0% (40 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-26 19:21:20+00:00,0,2023-04-26 19:21:20+00:00,0,True,False,['django.po'],['2f359897ab7b54d81afa17114182fb6260684a7c'],9,5,14,1,,,
+e78da9974ab295810519824ee2b0d2a8aca1ca2e,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-26 19:21:20+00:00,0,2023-04-26 19:21:20+00:00,0,True,False,['django.mo'],['1eda02cbda611ba1fc0d41b0cd9ce1c03e911b9e'],0,0,0,1,,,
+fa810ea4d36d946d0b028fd4499dd0080ccf1d14,[CHANGE] And another missing ellipsis character,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-26 21:22:29+02:00,-7200,2023-04-26 21:22:29+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'announcement.html']",['935a0a7940c5af8e36971a348b8e44c4e7fcaa9f'],23,27,50,11,,,
+0e72e89bd8e811d30c053c87283f5d205e67bf2d,[ADDED] Missing migration for string changes,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-26 21:30:53+02:00,-7200,2023-04-26 21:30:53+02:00,-7200,True,False,"['.pre-commit-config.yaml', '0002_use_ellipsis_character_in_strings.py']",['fa810ea4d36d946d0b028fd4499dd0080ccf1d14'],1,35,36,2,,,
+ae36db8b7b8462a2c1850e4c7ccc7ad9e059012f,[FIX] Test case …,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-26 21:47:13+02:00,-7200,2023-04-26 21:47:13+02:00,-7200,True,False,['test_models.py'],['0e72e89bd8e811d30c053c87283f5d205e67bf2d'],3,1,4,1,0.0,0.0,0.0
+047432905af7674302e40ae53b6d9dc9e8448156,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (40 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-27 19:50:23+00:00,0,2023-04-27 19:50:23+00:00,0,True,False,['django.po'],['ae36db8b7b8462a2c1850e4c7ccc7ad9e059012f'],14,8,22,1,,,
+588d288534ad805f61eca36584e45621b49eee23,"Translated using Weblate (German)
+
+Currently translated at 100.0% (40 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-27 19:50:23+00:00,0,2023-04-27 19:50:23+00:00,0,True,False,['django.po'],['047432905af7674302e40ae53b6d9dc9e8448156'],5,3,8,1,,,
+e68e9004641db5b3084fac60daddc1059fa63415,"Translated using Weblate (Ukrainian)
+
+Currently translated at 57.5% (23 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-27 19:50:23+00:00,0,2023-04-27 19:50:23+00:00,0,True,False,['django.po'],['588d288534ad805f61eca36584e45621b49eee23'],10,6,16,1,,,
+92b165d937d92e9630053c6451d94e6fed55ed0c,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-27 19:50:23+00:00,0,2023-04-27 19:50:23+00:00,0,True,False,"['django.mo', 'django.mo', 'django.mo']",['e68e9004641db5b3084fac60daddc1059fa63415'],0,0,0,3,,,
+9c2746915be6e801e78f5a9e815dc71964cbee2b,"Translated using Weblate (Ukrainian)
+
+Currently translated at 65.0% (26 of 40 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-12 20:50:34+00:00,0,2023-05-12 20:50:34+00:00,0,True,False,['django.po'],['2e1810ed5ad211464d5538126d71b7e64c148a8d'],5,6,11,1,,,
+6e566bd30aa69732609cc9cb354aa6e5370d0ad1,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-12 20:50:34+00:00,0,2023-05-12 20:50:34+00:00,0,True,False,['django.mo'],['9c2746915be6e801e78f5a9e815dc71964cbee2b'],0,0,0,1,,,
+33e0e92f3a1bf02c0feabd59c2acb26b810ab24b,[ADDED] Translation to admin forms,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-05-13 16:18:36+02:00,-7200,2023-05-13 16:18:36+02:00,-7200,True,False,"['admin.py', 'django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', '0003_add_verbose_names_to_models.py', 'models.py']",['6f7dda232ac370682b9071a581c069d170eacac6'],166,598,764,13,1.0,0.0,0.0
+da2bfc0dcaa7a8bdd1cce5ec87e98eb963f2bd90,"Translated using Weblate (German)
+
+Currently translated at 100.0% (47 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-13 16:36:15+00:00,0,2023-05-13 16:36:15+00:00,0,True,False,['django.po'],['33e0e92f3a1bf02c0feabd59c2acb26b810ab24b'],16,10,26,1,,,
+f1ecf9596d54b9d453f4be10fd680b39916d3218,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-13 16:36:15+00:00,0,2023-05-13 16:36:15+00:00,0,True,False,['django.mo'],['da2bfc0dcaa7a8bdd1cce5ec87e98eb963f2bd90'],0,0,0,1,,,
+1ea8eebdc4ce0508801ea5aa12c8a261903ec1da,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (47 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-13 17:22:39+00:00,0,2023-05-13 17:22:39+00:00,0,True,False,['django.po'],['f25cef325365b515a8fde94992490033d7ebf231'],17,11,28,1,,,
+e43675fb03cfed56c00046ec3592a6e1299855a6,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-13 17:22:39+00:00,0,2023-05-13 17:22:39+00:00,0,True,False,['django.mo'],['1ea8eebdc4ce0508801ea5aa12c8a261903ec1da'],0,0,0,1,,,
+c508168c14e2512793a58d585ff4756600eb8676,"Translated using Weblate (German)
+
+Currently translated at 100.0% (47 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/
+
+Translated using Weblate (German)
+
+Currently translated at 100.0% (47 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-05-19 23:43:36+00:00,0,2023-05-19 23:43:36+00:00,0,True,False,['django.po'],['18efd483720867b5e219d33bdb41f7473da82ef0'],8,7,15,1,,,
+565c5974f0bba407cc79f001564e4c91f1cded19,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-05-19 23:43:36+00:00,0,2023-05-19 23:43:36+00:00,0,True,False,['django.mo'],['c508168c14e2512793a58d585ff4756600eb8676'],0,0,0,1,,,
+f789872e0fee6b411d8fbb70ec397d77b882555c,"Translated using Weblate (German)
+
+Currently translated at 100.0% (47 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-05-28 05:53:38+00:00,0,2023-05-28 05:53:38+00:00,0,True,False,['django.po'],['cd706a5609cf55a649e7240c831f77120d73cdfa'],2,2,4,1,,,
+ac8b31d901d95b058c6c22edad2a43453c31a145,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-05-28 05:53:38+00:00,0,2023-05-28 05:53:38+00:00,0,True,False,['django.mo'],['f789872e0fee6b411d8fbb70ec397d77b882555c'],0,0,0,1,,,
+dd2f068b4a89dc445a4fa129642e4e81a37e49b3,[CHANGE] App title translatable,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-05-28 08:04:03+02:00,-7200,2023-05-28 08:04:03+02:00,-7200,True,False,"['__init__.py', 'auth_hooks.py', 'django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['f254bba732b80a5958cc58b3cbbda08d2524a44b'],70,71,141,12,,,
+079c4e32baaf65152c8f3ae8de570ec93ac7e369,"Translated using Weblate (Ukrainian)
+
+Currently translated at 55.3% (26 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-14 17:18:06+00:00,0,2023-06-14 17:18:06+00:00,0,True,False,['django.po'],['dd2f068b4a89dc445a4fa129642e4e81a37e49b3'],7,5,12,1,,,
+fd081129ffb4b8297d5e44b5b5b66b1ebb631aea,"Translated using Weblate (German)
+
+Currently translated at 100.0% (47 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-19 07:18:08+00:00,0,2023-06-19 07:18:08+00:00,0,True,False,['django.po'],['fc5693b03cd282b2a11dccf28b4c81552ac4b043'],8,8,16,1,,,
+7c54b50e9638f540b8abefd3dccf3564f86ea389,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-19 07:18:08+00:00,0,2023-06-19 07:18:08+00:00,0,True,False,['django.mo'],['fd081129ffb4b8297d5e44b5b5b66b1ebb631aea'],0,0,0,1,,,
+e01b1db390f8cdfd09a8e2f85289aff61f0f62b6,[MISC] Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-19 11:55:13+02:00,-7200,2023-06-19 11:55:13+02:00,-7200,True,False,['CHANGELOG.md'],['f29c1300afe0debd2ceb75255d990b322832f783'],0,5,5,1,,,
+e4b9c490f1e582836f01f37d65347a3181210232,[CHANGE] New migrations combined,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-19 12:02:44+02:00,-7200,2023-06-19 12:02:44+02:00,-7200,True,False,"['0002_translation_updates.py', '0002_use_ellipsis_character_in_strings.py']",['e01b1db390f8cdfd09a8e2f85289aff61f0f62b6'],36,2,38,2,,,
+37b514e936b0e1cec894da03e1505b4de47d8d35,[REMOVE] Non translatable text from form,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-19 12:11:45+02:00,-7200,2023-06-19 12:15:18+02:00,-7200,True,False,"['forms.py', 'django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['e4b9c490f1e582836f01f37d65347a3181210232'],202,91,293,11,0.0,0.0,0.0
+2f4614b1ebd6c6f76fe55dde29381b85a1c7a296,"Translated using Weblate (German)
+
+Currently translated at 100.0% (45 of 45 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-19 10:18:31+00:00,0,2023-06-19 10:18:31+00:00,0,True,False,['django.po'],['37b514e936b0e1cec894da03e1505b4de47d8d35'],5,3,8,1,,,
+feab40eed4841b206c789d2a4b30809241c92116,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (45 of 45 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-19 10:18:31+00:00,0,2023-06-19 10:18:31+00:00,0,True,False,['django.po'],['2f4614b1ebd6c6f76fe55dde29381b85a1c7a296'],8,6,14,1,,,
+ef8199042477a73b1db809244194a8a3a3369bb1,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-19 10:18:31+00:00,0,2023-06-19 10:18:31+00:00,0,True,False,"['django.mo', 'django.mo']",['feab40eed4841b206c789d2a4b30809241c92116'],0,0,0,2,,,
+a65a931c511eb4383c00f2577bc9fa76063e297b,[CHANGE] Version bumped to v1.2.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-19 12:29:47+02:00,-7200,2023-06-19 12:29:47+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['c54ea01ae724465c50c8b71f36e448f34819bdd6'],1,12,13,2,,,
+10fcc97ee266a50c29b2a17eda000b484e81e6d2,[FIX] Release date,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-19 12:41:22+02:00,-7200,2023-06-19 12:41:22+02:00,-7200,True,False,['CHANGELOG.md'],['a65a931c511eb4383c00f2577bc9fa76063e297b'],1,1,2,1,,,
+e7591df4e1591d379e49512a037b0e69d8f6febd,"[CHANGE] Hint for Discord Markdown formatting re-added
+
+Translatable this time :-)",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-20 02:56:09+02:00,-7200,2023-06-20 02:56:09+02:00,-7200,True,False,"['forms.py', 'django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['10fcc97ee266a50c29b2a17eda000b484e81e6d2'],84,205,289,11,0.0,1.0,1.0
+4ccc4dd551d97709df5c7e9059ae9920d8ccea2a,[MISC] pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-20 02:58:08+02:00,-7200,2023-06-20 02:58:08+02:00,-7200,True,False,['.pre-commit-config.yaml'],['e7591df4e1591d379e49512a037b0e69d8f6febd'],5,5,10,1,,,
+069c4b96f0efbbec31b7f828db8889341df95325,"Translated using Weblate (German)
+
+Currently translated at 100.0% (47 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-21 06:18:10+00:00,0,2023-06-21 06:18:10+00:00,0,True,False,['django.po'],['4ccc4dd551d97709df5c7e9059ae9920d8ccea2a'],6,5,11,1,,,
+41094429d20d4a874fdffb2b7f456d7ee4a5d620,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (47 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-21 06:18:10+00:00,0,2023-06-21 06:18:10+00:00,0,True,False,['django.po'],['069c4b96f0efbbec31b7f828db8889341df95325'],7,7,14,1,,,
+68f89285a052b4261cfdbd3f589943099f62938d,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-21 06:18:10+00:00,0,2023-06-21 06:18:10+00:00,0,True,False,"['django.mo', 'django.mo']",['41094429d20d4a874fdffb2b7f456d7ee4a5d620'],0,0,0,2,,,
+ee6880c78774113962f11430dd0fb38ae5e7c6e5,"Translated using Weblate (German)
+
+Currently translated at 100.0% (47 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-23 08:42:12+00:00,0,2023-06-23 08:42:12+00:00,0,True,False,['django.po'],['c9da2381d4b51c8e0377a395e81accaec047492f'],1,1,2,1,,,
+bbf6088a779b9e6f0e09db9f0c544386a23d6a4d,[CHANGE] App verbose name made translatable,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-23 17:35:54+02:00,-7200,2023-06-23 17:35:54+02:00,-7200,True,False,['apps.py'],['725e6b0d5411bade5878cee8b2284cbdd4448ae3'],1,3,4,1,,,
+40393ad9639bdea9b2d3f88a03c76ae4a9b24c04,"[MISC] Checked grammar and spelling
+
+Yes, even in comments that's important …",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-23 17:36:20+02:00,-7200,2023-06-23 17:36:20+02:00,-7200,True,False,"['discord_webhook.py', 'test_access.py', 'test_ajax_calls.py', 'test_installed_modules.py', 'test_templatetags.py', 'utils.py']",['bbf6088a779b9e6f0e09db9f0c544386a23d6a4d'],9,13,22,6,,,
+4ef3e0e9daf5861088be137198a3410fc2ddbd3d,[ADD] Screenshot folder for Weblate,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-23 17:38:53+02:00,-7200,2023-06-23 17:38:53+02:00,-7200,True,False,['.gitkeep'],['40393ad9639bdea9b2d3f88a03c76ae4a9b24c04'],0,0,0,1,,,
+08cf38dcbce8714976c068cc1c61df4c93955178,"Translated using Weblate (German)
+
+Currently translated at 100.0% (47 of 47 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-23 15:39:51+00:00,0,2023-06-23 15:39:51+00:00,0,True,False,['django.po'],['725e6b0d5411bade5878cee8b2284cbdd4448ae3'],1,1,2,1,,,
+62b97d4de05acad83817c74142d44190d8f14fc5,[ADD] Translation status badge to README,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-23 17:46:34+02:00,-7200,2023-06-23 17:46:34+02:00,-7200,True,False,['README.md'],['4ef3e0e9daf5861088be137198a3410fc2ddbd3d'],0,1,1,1,,,
+22e3346a9376cc659e3094004ec7cd55e91103da,[MISC] codecov config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-23 17:49:24+02:00,-7200,2023-06-23 17:49:24+02:00,-7200,True,False,['codecov.yml'],['62b97d4de05acad83817c74142d44190d8f14fc5'],1,1,2,1,,,
+0529532cd1376f7f228f87b87f8aebc9c33aa57d,[MISC] Translation files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-23 17:50:49+02:00,-7200,2023-06-23 17:50:49+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['30c3b8905bca62d2fc761e552f8c2ebd62ad5de3'],14,76,90,10,,,
+6b20cc562b923b257de682516cfdc9379ebad335,[MISC] Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-23 17:56:31+02:00,-7200,2023-06-23 17:56:31+02:00,-7200,True,False,['CHANGELOG.md'],['0529532cd1376f7f228f87b87f8aebc9c33aa57d'],0,5,5,1,,,
+81ba66cd295ab89ce13aba03e9506ac050c72696,"Translated using Weblate (German)
+
+Currently translated at 100.0% (48 of 48 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-23 16:03:58+00:00,0,2023-06-23 16:03:58+00:00,0,True,False,['django.po'],['6b20cc562b923b257de682516cfdc9379ebad335'],6,5,11,1,,,
+cd626ca9f509eab92a2719f9d5246eec0eb6e51e,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-23 16:03:58+00:00,0,2023-06-23 16:03:58+00:00,0,True,False,['django.mo'],['81ba66cd295ab89ce13aba03e9506ac050c72696'],0,0,0,1,,,
+5cb7dbdfd2dbe488d1abc756d33dc690dcc99140,[REMOVE] Pseudo plural,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-23 18:05:21+02:00,-7200,2023-06-23 18:05:21+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'models.py']",['f642ad107ff3611537e6e4d7c7d3c6a767442140'],24,30,54,11,,,
+84ebe55d3a0d5d8ba33e5c492019ac7294cfa829,"Translated using Weblate (German)
+
+Currently translated at 100.0% (48 of 48 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-24 13:57:03+00:00,0,2023-06-24 13:57:03+00:00,0,True,False,['django.po'],['5cb7dbdfd2dbe488d1abc756d33dc690dcc99140'],7,5,12,1,,,
+59705efcea746896ea5864ca20a1660fe862f210,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (48 of 48 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-24 13:57:04+00:00,0,2023-06-24 13:57:04+00:00,0,True,False,['django.po'],['84ebe55d3a0d5d8ba33e5c492019ac7294cfa829'],10,7,17,1,,,
+3c77b441b3a954216a4a588942e329bbbc1bffb5,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-24 13:57:04+00:00,0,2023-06-24 13:57:04+00:00,0,True,False,"['django.mo', 'django.mo']",['59705efcea746896ea5864ca20a1660fe862f210'],0,0,0,2,,,
+e557825734bf50f5267d02f1a8451eac97f79a11,[ADD] Migration to Plural changes in model help texts,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-28 16:16:32+02:00,-7200,2023-06-28 16:16:32+02:00,-7200,True,False,['0003_fix_pseudo_plural_in_help_text.py'],['462f430f53c503450db9bead5538594775e02013'],0,36,36,1,,,
+100fceeaa46d81992125b626b03dc7b2df1a7392,[MISC] Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-28 16:18:03+02:00,-7200,2023-06-28 16:18:03+02:00,-7200,True,False,['CHANGELOG.md'],['e557825734bf50f5267d02f1a8451eac97f79a11'],0,4,4,1,,,
+329ae92b02b0d1f92189d464c151f83e039a7dc7,"Translated using Weblate (German)
+
+Currently translated at 100.0% (48 of 48 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-28 14:37:29+00:00,0,2023-06-28 14:37:29+00:00,0,True,False,['django.po'],['100fceeaa46d81992125b626b03dc7b2df1a7392'],1,1,2,1,,,
+986c9e53ca8837e9f91ad835da3491a4f87ad173,[CHANGE] Version bumped to 1.2.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-16 17:14:10+02:00,-7200,2023-07-16 17:14:10+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['682c7c78159568f04e93d4d3568b37c4720b625f'],1,4,5,2,,,
+f7051f6d456b71e0555465fb4a91fd76cce13870,[MISC] README updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-16 17:32:58+02:00,-7200,2023-07-16 17:32:58+02:00,-7200,True,False,['README.md'],['986c9e53ca8837e9f91ad835da3491a4f87ad173'],2,4,6,1,,,
+cd1511b31cfb90ee8f6cef0e34c134dc08670bd4,"Translated using Weblate (German)
+
+Currently translated at 100.0% (48 of 48 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-24 21:39:52+00:00,0,2023-07-24 21:39:52+00:00,0,True,False,['django.po'],['f7051f6d456b71e0555465fb4a91fd76cce13870'],2,2,4,1,,,
+8413e6466bac8c07080655cf8d29810ff925d6ec,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-24 21:39:53+00:00,0,2023-07-24 21:39:53+00:00,0,True,False,['django.mo'],['cd1511b31cfb90ee8f6cef0e34c134dc08670bd4'],0,0,0,1,,,
+94bef4aee2935e151481e2ea5c82851fb2e61d0e,"Translated using Weblate (Ukrainian)
+
+Currently translated at 56.2% (27 of 48 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-26 12:39:55+00:00,0,2023-07-26 12:39:55+00:00,0,True,False,['django.po'],['31ae720670491c47fc56766240a4e3898bfeabe9'],13,12,25,1,,,
+b9d0232c9d0c9101d05ebab555c639b60696015f,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-26 12:39:55+00:00,0,2023-07-26 12:39:55+00:00,0,True,False,['django.mo'],['94bef4aee2935e151481e2ea5c82851fb2e61d0e'],0,0,0,1,,,
+ae75bdcbde2445ec6d22e72b15333a5a0ca56dc6,[MISC] Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-26 16:26:50+02:00,-7200,2023-07-26 16:26:50+02:00,-7200,True,False,['CHANGELOG.md'],['107741fcd1aa86e366c99e9e98dd2678698fdc47'],0,4,4,1,,,
+14db2815c415ad16c48801e2bd8fb4efc61bb3d4,"Translated using Weblate (Ukrainian)
+
+Currently translated at 58.3% (28 of 48 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-27 15:39:54+00:00,0,2023-07-27 15:39:54+00:00,0,True,False,['django.po'],['ae75bdcbde2445ec6d22e72b15333a5a0ca56dc6'],3,2,5,1,,,
+f40244b096865f7283a0cea44e5a5d7e8064ae64,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-27 15:39:54+00:00,0,2023-07-27 15:39:54+00:00,0,True,False,['django.mo'],['14db2815c415ad16c48801e2bd8fb4efc61bb3d4'],0,0,0,1,,,
+a157a578fc7f4cdcd01b1dec1cce033e3d162a72,[ADD] Bootstrap CSS fix,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-27 22:32:57+02:00,-7200,2023-07-27 22:33:04+02:00,-7200,True,False,"['CHANGELOG.md', 'aa-bootstrap-fix.css', 'aa-bootstrap-fix.min.css', 'discord-announcements-css.html']",['7ec4a53fbabb4c8dac1827edde0ba5b18d58e0f2'],0,19,19,4,,,
+30c6d26db86ec2bdb92ede9d6c48ba639e5514a7,[ADD] Footer to promote help with the app translation,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-27 22:34:16+02:00,-7200,2023-07-27 22:37:40+02:00,-7200,True,False,"['CHANGELOG.md', 'django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'aa-discord-announcements.css', 'aa-discord-announcements.min.css', 'base.html', 'index.html', 'app-translation-footer.html']",['a157a578fc7f4cdcd01b1dec1cce033e3d162a72'],82,249,331,16,,,
+fa1be0b8b4ee52c2f22b6f7786c43d0a3370a8e2,[FIX] CSS class,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-27 22:50:29+02:00,-7200,2023-07-27 22:50:29+02:00,-7200,True,False,"['aa-bootstrap-fix.css', 'aa-bootstrap-fix.min.css', 'app-translation-footer.html']",['30c6d26db86ec2bdb92ede9d6c48ba639e5514a7'],3,3,6,3,,,
+3db598a3d43dbe0d5cc7f65988e5186aa85a5684,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (50 of 50 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-29 23:45:05+00:00,0,2023-07-29 23:45:05+00:00,0,True,False,['django.po'],['fa1be0b8b4ee52c2f22b6f7786c43d0a3370a8e2'],5,9,14,1,,,
+b993f020a6c5e84dceaf3ebf324777bd32e30ca7,"Translated using Weblate (German)
+
+Currently translated at 100.0% (50 of 50 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-29 23:45:05+00:00,0,2023-07-29 23:45:05+00:00,0,True,False,['django.po'],['3db598a3d43dbe0d5cc7f65988e5186aa85a5684'],4,8,12,1,,,
+4c9e925dcf0ed8b0809446cc34509492e9dd1330,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-29 23:45:05+00:00,0,2023-07-29 23:45:05+00:00,0,True,False,"['django.mo', 'django.mo']",['b993f020a6c5e84dceaf3ebf324777bd32e30ca7'],0,0,0,2,,,
+d4b7f4587df82df325bc41a460721c093a4ed157,[CHANGE] Version bumped to v1.2.3,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-30 02:36:07+02:00,-7200,2023-07-30 02:36:07+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['2e93ef0b22a74440a1caace886fcb9deab0e323a'],1,4,5,2,,,
+187cc6c42623d7298deb509016ce5fa8147900b8,[FIX] Make it easier to translate,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-30 18:38:13+02:00,-7200,2023-07-30 18:38:13+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'app-translation-footer.html']",['309841c16fbb8b825c7974a927b396d80e89f68a'],111,93,204,11,,,
+4fa6430c5e756fc3bddb97b8e17bb3507c46a7c3,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-30 23:01:27+02:00,-7200,2023-07-30 23:01:27+02:00,-7200,True,False,"['.eslintrc.json', '.pre-commit-config.yaml', 'aa-discord-announcements.js', 'celery.py']",['187cc6c42623d7298deb509016ce5fa8147900b8'],24,90,114,4,,,
+07ff8144bd69e4a0a6274d1db8f856a7b0f5f7ec,"Translated using Weblate (German)
+
+Currently translated at 100.0% (50 of 50 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-31 17:40:02+00:00,0,2023-07-31 17:40:02+00:00,0,True,False,['django.po'],['4fa6430c5e756fc3bddb97b8e17bb3507c46a7c3'],13,5,18,1,,,
+054c4ed9137d371b7ea4b3d44ef31c288aacb36c,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (50 of 50 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-31 17:40:02+00:00,0,2023-07-31 17:40:02+00:00,0,True,False,['django.po'],['07ff8144bd69e4a0a6274d1db8f856a7b0f5f7ec'],14,6,20,1,,,
+97029390d1ea00f11dbdf6eddd8db2113e93f62f,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-31 17:40:02+00:00,0,2023-07-31 17:40:02+00:00,0,True,False,"['django.mo', 'django.mo']",['054c4ed9137d371b7ea4b3d44ef31c288aacb36c'],0,0,0,2,,,
+c28d6d5758692fc87c01d9e72f8c31f3105d2f04,[MISC] pre-commit repos fixed and pylint checks added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-02 09:25:14+02:00,-7200,2023-08-02 09:25:14+02:00,-7200,True,False,"['.pre-commit-config.yaml', '.pylintrc', 'models.py', 'settings.py']",['a68fa845da8bf3e4fc3a2e02b24c9412857c2f01'],8,44,52,4,1.0,1.0,0.0
+e4650397aac5dd134c797662877a3ac7a3aac039,[FIX] Bootstrap fix,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-13 10:28:07+02:00,-7200,2023-08-13 10:28:07+02:00,-7200,True,False,"['aa-bootstrap-fix.css', 'aa-bootstrap-fix.min.css']",['c28d6d5758692fc87c01d9e72f8c31f3105d2f04'],6,6,12,2,,,
+0da3aab85597f1bf7b02d79e6e3964bcf9ee067e,"Translated using Weblate (German)
+
+Currently translated at 100.0% (50 of 50 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-09 15:40:06+00:00,0,2023-08-13 08:28:29+00:00,0,True,False,['django.po'],['e4650397aac5dd134c797662877a3ac7a3aac039'],1,1,2,1,,,
+09b66d9966097be70dcc388b81c80536f9fcaf66,[CHANGE] Version bumped to v1.2.4,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-13 10:31:26+02:00,-7200,2023-08-13 10:31:26+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['5e4f73b84e7e251c3997d220755cbd0abc34ece1'],1,12,13,2,,,
+6d4ed652922328cc63ee9de7df6a44941ec3da4b,[MISC] Removed duplicated checks from pre-commit,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-13 10:33:02+02:00,-7200,2023-08-13 10:33:02+02:00,-7200,True,False,['.pre-commit-config.yaml'],['09b66d9966097be70dcc388b81c80536f9fcaf66'],8,0,8,1,,,
+e668e6d483a3b8767cc34a63082365e8b72b69b6,"Translated using Weblate (Spanish)
+
+Currently translated at 100.0% (50 of 50 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-15 18:40:08+00:00,0,2023-08-15 18:40:08+00:00,0,True,False,['django.po'],['032c4a74629140209a69973934bdb3abdfc51832'],48,61,109,1,,,
+abbf3e0e7070d20f7bd3c5fe08f71c996e5aa34c,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-15 18:40:09+00:00,0,2023-08-15 18:40:09+00:00,0,True,False,['django.mo'],['e668e6d483a3b8767cc34a63082365e8b72b69b6'],0,0,0,1,,,
+1390d6aa029b23a12c8ebce5c09cc7c697926f89,[CHANGE] Version bumped to v1.3.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-15 21:24:31+02:00,-7200,2023-08-15 21:24:31+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['ad7d9cf93aab0eecc7dfe8ed42e68a1f211f7a94'],1,8,9,2,,,
+59695aeb41bc136bf2aedea083e1fd1fd5eb719f,"[MISC] pre-commit, linting, source-maps",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-29 01:55:08+02:00,-7200,2023-08-29 01:55:08+02:00,-7200,True,False,"['.eslintrc.json', 'bug_report.md', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md', '.pre-commit-config.yaml', '.stylelintrc.json', 'CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'README.md', 'aa-bootstrap-fix.min.css', 'aa-bootstrap-fix.min.css.map', 'aa-discord-announcements.min.css', 'aa-discord-announcements.min.css.map', 'aa-discord-announcements.js', 'aa-discord-announcements.min.js', 'pyproject.toml', 'tox.ini']",['2398a48c9bc0dda278a1343c55a7556b94ba0b89'],200,246,446,18,,,
+ee0838dd9d2c5dfab20cad2df52eebc2aaf870af,[MISC] pylint config,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-29 01:56:56+02:00,-7200,2023-08-29 01:56:56+02:00,-7200,True,False,"['.pre-commit-config.yaml', '.pylintrc']",['59695aeb41bc136bf2aedea083e1fd1fd5eb719f'],9,17,26,2,,,
+70f91b3f64fa28a5568acc0de475cd8c44ed8110,"Translated using Weblate (Korean)
+
+Currently translated at 100.0% (50 of 50 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-29 15:40:20+00:00,0,2023-08-29 15:40:20+00:00,0,True,False,['django.po'],['ee0838dd9d2c5dfab20cad2df52eebc2aaf870af'],57,61,118,1,,,
+a35aa309325d39e4f83c0b7cc02fdea5a74b735e,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-29 15:40:20+00:00,0,2023-08-29 15:40:20+00:00,0,True,False,['django.mo'],['70f91b3f64fa28a5568acc0de475cd8c44ed8110'],0,0,0,1,,,
+6ca79d1729c5e5087a60a66d073e823865427020,[CHANGE] Version bumped to v1.4.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-29 19:11:15+02:00,-7200,2023-08-29 19:11:15+02:00,-7200,True,False,"['CHANGELOG.md', 'codecov.yml', 'pyproject.toml']",['aad7247574948ae0b1fcb00e2917dbbf8c5e5733'],4,9,13,3,,,
+6d63f007588222d56f573047a1536acf71b65bf1,[FIX] Release date,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-29 19:27:00+02:00,-7200,2023-08-29 19:27:00+02:00,-7200,True,False,['CHANGELOG.md'],['6ca79d1729c5e5087a60a66d073e823865427020'],1,1,2,1,,,
+a7957d41ea6473835328a7255f5b9337ab4524f9,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-31 08:25:24+02:00,-7200,2023-08-31 08:25:24+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'pyproject.toml']",['8081a943ab5912a78d0575c37147a09149997229'],8,8,16,2,,,
+5ec07c8b0a331840d2a5ef614017267bbe75a2c5,"Translated using Weblate (Korean)
+
+Currently translated at 100.0% (50 of 50 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-02 14:40:25+00:00,0,2023-09-02 14:40:25+00:00,0,True,False,['django.po'],['a7957d41ea6473835328a7255f5b9337ab4524f9'],4,5,9,1,,,
+9e6bd6cdf18b8f651b6e98385a6c3543d96a1edf,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-02 14:40:25+00:00,0,2023-09-02 14:40:25+00:00,0,True,False,['django.mo'],['5ec07c8b0a331840d2a5ef614017267bbe75a2c5'],0,0,0,1,,,
+b763d433fc147f2c8d3b4c23e3321c530f605bf1,[CHANGE] Korean translation improved,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-02 18:36:17+02:00,-7200,2023-09-02 18:36:17+02:00,-7200,True,False,"['CHANGELOG.md', 'README.md']",['ff7365608c73237eb262650d18bc57dcd8b407f3'],1,31,32,2,,,
+c2780632381954585f63883d950e8f0fa1fda0c4,[CHANGE] Version bumped to v1.4.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-02 18:37:13+02:00,-7200,2023-09-02 18:37:13+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['b763d433fc147f2c8d3b4c23e3321c530f605bf1'],1,3,4,2,,,
+70c159f739c3c0a6335ec6a222f68fc14c8e2a9c,[FIX] Restore issue templates,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-05 14:02:36+02:00,-7200,2023-09-05 14:02:36+02:00,-7200,True,False,"['bug_report.md', 'feature_request.md', 'dependabot.yml', '.pre-commit-config.yaml']",['34db3e1db68bd3437627fde01e1076c8da6391f7'],12,28,40,4,,,
+666b5d2fcf67a23dc42096be8612ad92f898ef59,[MISC] Contribution guidelines updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-13 02:12:10+02:00,-7200,2023-09-13 02:12:10+02:00,-7200,True,False,['CONTRIBUTING.md'],['cb91e92d4f627aa90612984225fab03d4592532e'],50,85,135,1,,,
+e3289c19e06977993e4a875f3491fec376cf96b3,"Bump codecov/codecov-action from 3 to 4
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 3 to 4.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Changelog](https://github.com/codecov/codecov-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-action/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: codecov/codecov-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-14 18:45:27+00:00,0,2023-09-14 18:45:27+00:00,0,True,False,['automated-checks.yml'],['666b5d2fcf67a23dc42096be8612ad92f898ef59'],1,1,2,1,,,
+052074c37d602e85c439df1f38452adfc222d7fc,[MISC] pre-commit and GH workflow configs updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-18 17:20:00+02:00,-7200,2023-09-18 17:20:00+02:00,-7200,True,False,"['automated-checks.yml', '.pre-commit-config.yaml']",['666b5d2fcf67a23dc42096be8612ad92f898ef59'],17,35,52,2,,,
+e328e46aa621aa15712b8c4bf1495bd23771e08b,[FIX] Grammar in PR template,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 11:09:20+02:00,-7200,2023-09-20 11:09:20+02:00,-7200,True,False,['PULL_REQUEST_TEMPLATE.md'],['04b8f6c519aa7f2d8c70cd912cd9a07801d91a6d'],1,1,2,1,,,
+930282e95ce8fb9da48946e57b32aee6f38c35d0,[ADD] pre-commit.ci configuration,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 15:42:07+02:00,-7200,2023-09-20 15:42:07+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'README.md']",['e328e46aa621aa15712b8c4bf1495bd23771e08b'],0,15,15,2,,,
+859286a4586d18f4cd8690f98afe2e72ee18ab24,[FIX] `actions/checkout` version in GH workflows,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 22:34:27+02:00,-7200,2023-09-20 22:34:27+02:00,-7200,True,False,"['automated-checks.yml', 'potential-duplicates.yml', 'pypi-release.yml']",['930282e95ce8fb9da48946e57b32aee6f38c35d0'],6,41,47,3,,,
+77eb6306c695c22c37d9bc3560dd5592d9d687a3,[FIX] - Capitalization for translatable strings,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-22 19:42:27+02:00,-7200,2023-09-22 19:42:27+02:00,-7200,True,False,"['CHANGELOG.md', 'Makefile', 'forms.py', '0004_alter_pingtarget_options.py', 'models.py']",['859286a4586d18f4cd8690f98afe2e72ee18ab24'],6,32,38,5,,,
+f8549f579d8beaec9e84adabc2ec0faa112dfc16,[MISC] Translation files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-22 19:43:06+02:00,-7200,2023-09-22 19:43:06+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['77eb6306c695c22c37d9bc3560dd5592d9d687a3'],207,302,509,10,,,
+403272f4d2c1f5210b52bd0b47d8da84b9d60656,"Translated using Weblate (German)
+
+Currently translated at 100.0% (51 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-23 00:06:27+00:00,0,2023-09-23 00:06:27+00:00,0,True,False,['django.po'],['f8549f579d8beaec9e84adabc2ec0faa112dfc16'],15,5,20,1,,,
+298b8160c7cf14a9b4a53b0679c92a3929c93858,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (51 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-23 00:06:27+00:00,0,2023-09-23 00:06:27+00:00,0,True,False,['django.po'],['403272f4d2c1f5210b52bd0b47d8da84b9d60656'],16,6,22,1,,,
+80173e259c4493590ca07b6c9fc683bffba6d797,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-23 00:06:28+00:00,0,2023-09-23 00:06:28+00:00,0,True,False,"['django.mo', 'django.mo']",['298b8160c7cf14a9b4a53b0679c92a3929c93858'],0,0,0,2,,,
+264baab43eb699af8f6ff32e9ed13485fc999285,[REMOVE] Wrong option from Makefile,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-23 09:47:33+02:00,-7200,2023-09-23 09:47:33+02:00,-7200,True,False,"['Makefile', 'django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['814aa42632b52b51d5d7a9cd043a1dc2f5c83d30'],15,14,29,11,,,
+617b1f4d540baa822a6ffee0aad13ec5d1291132,"Translated using Weblate (Spanish)
+
+Currently translated at 88.2% (45 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/es/
+
+Translated using Weblate (Spanish)
+
+Currently translated at 88.2% (45 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/es/
+
+Translated using Weblate (Spanish)
+
+Currently translated at 88.2% (45 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:28+00:00,0,2023-09-24 13:13:28+00:00,0,True,False,['django.po'],['264baab43eb699af8f6ff32e9ed13485fc999285'],5,5,10,1,,,
+085fba85f3c3ae2501d86531098ffed50093c599,"Translated using Weblate (French)
+
+Currently translated at 1.9% (1 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/fr/
+
+Translated using Weblate (French)
+
+Currently translated at 1.9% (1 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/fr/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:28+00:00,0,2023-09-24 13:13:28+00:00,0,True,False,['django.po'],['617b1f4d540baa822a6ffee0aad13ec5d1291132'],5,5,10,1,,,
+3099033ed4b55bfd616ab8f676ca2cd2da50ed0f,"Translated using Weblate (Italian)
+
+Currently translated at 1.9% (1 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/it/
+
+Translated using Weblate (Italian)
+
+Currently translated at 1.9% (1 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/it/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:28+00:00,0,2023-09-24 13:13:28+00:00,0,True,False,['django.po'],['085fba85f3c3ae2501d86531098ffed50093c599'],5,5,10,1,,,
+af9d90446376b676b1b86080037a245366f0c1b1,"Translated using Weblate (Japanese)
+
+Currently translated at 0.0% (0 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ja/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:28+00:00,0,2023-09-24 13:13:28+00:00,0,True,False,['django.po'],['3099033ed4b55bfd616ab8f676ca2cd2da50ed0f'],5,6,11,1,,,
+6daafb1a1caf0be913438b451d57ac1f860fe049,"Translated using Weblate (German)
+
+Currently translated at 100.0% (51 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:29+00:00,0,2023-09-24 13:13:29+00:00,0,True,False,['django.po'],['af9d90446376b676b1b86080037a245366f0c1b1'],5,4,9,1,,,
+3e3afb10815616b96c3ca93d26893e6e87d2a554,"Translated using Weblate (Korean)
+
+Currently translated at 88.2% (45 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ko/
+
+Translated using Weblate (Korean)
+
+Currently translated at 88.2% (45 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ko/
+
+Translated using Weblate (Korean)
+
+Currently translated at 88.2% (45 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:29+00:00,0,2023-09-24 13:13:29+00:00,0,True,False,['django.po'],['6daafb1a1caf0be913438b451d57ac1f860fe049'],17,12,29,1,,,
+4f483457f6d950ad25b0039d6846c7000babfa32,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (51 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/
+
+Translated using Weblate (Russian)
+
+Currently translated at 100.0% (51 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:29+00:00,0,2023-09-24 13:13:29+00:00,0,True,False,['django.po'],['3e3afb10815616b96c3ca93d26893e6e87d2a554'],4,4,8,1,,,
+62c6157edc4b5e96d4551af80d70805235bc50ef,"Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 0.0% (0 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/zh_Hans/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:29+00:00,0,2023-09-24 13:13:29+00:00,0,True,False,['django.po'],['4f483457f6d950ad25b0039d6846c7000babfa32'],5,6,11,1,,,
+fad7e37e37b34e71a2daf59e7a084b987fe9e06c,"Translated using Weblate (Ukrainian)
+
+Currently translated at 49.0% (25 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/
+
+Translated using Weblate (Ukrainian)
+
+Currently translated at 49.0% (25 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/
+
+Translated using Weblate (Ukrainian)
+
+Currently translated at 49.0% (25 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/
+
+Translated using Weblate (Ukrainian)
+
+Currently translated at 49.0% (25 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:29+00:00,0,2023-09-24 13:13:29+00:00,0,True,False,['django.po'],['62c6157edc4b5e96d4551af80d70805235bc50ef'],6,6,12,1,,,
+f18d772f62d116e2cb048b4ab146f227694edcb5,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:29+00:00,0,2023-09-24 13:13:29+00:00,0,True,False,"['django.mo', 'django.mo', 'django.mo', 'django.mo', 'django.mo', 'django.mo', 'django.mo']",['fad7e37e37b34e71a2daf59e7a084b987fe9e06c'],0,0,0,7,,,
+be822abbabdb73befbd340c12a39f8a7cdcf9504,[MISC] Forcing Weblate to sync both ways,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-24 16:25:26+02:00,-7200,2023-09-24 16:25:26+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['48d0433efd7148fd62f3b9ebf4dd2809d9f3e536'],36,42,78,10,,,
+6da1a9fab9d32c84644cb866f1214a8e4cf995c1,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.49.0 → v8.50.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.49.0...v8.50.0)
+- [github.com/adamchainz/django-upgrade: 1.14.1 → 1.15.0](https://github.com/adamchainz/django-upgrade/compare/1.14.1...1.15.0)
+- [github.com/asottile/pyupgrade: v3.11.0 → v3.13.0](https://github.com/asottile/pyupgrade/compare/v3.11.0...v3.13.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-25 20:25:38+00:00,0,2023-09-25 20:25:38+00:00,0,True,False,['.pre-commit-config.yaml'],['be822abbabdb73befbd340c12a39f8a7cdcf9504'],3,3,6,1,,,
+9547c2a6edc62cf7f8521970bd4578da0775a390,[MISC] Moved `docs` directory,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 10:11:36+02:00,-7200,2023-09-26 10:11:36+02:00,-7200,True,False,['.gitkeep'],['07e38ba7a0368be9dd8acf87ecddb4c4e9c71b4f'],0,0,0,1,,,
+f388b1d0c535b4bc5ef326e371d180a3bb0bbcb4,[MISC] Contributing guidelines updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 10:12:52+02:00,-7200,2023-09-26 10:12:52+02:00,-7200,True,False,['CONTRIBUTING.md'],['9547c2a6edc62cf7f8521970bd4578da0775a390'],6,11,17,1,,,
+bf0084800c69eb5b1bb2e11a7de77506836ded93,[MISC] Move from development to master,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 10:15:40+02:00,-7200,2023-09-26 10:15:40+02:00,-7200,True,False,"['dependabot.yml', 'automated-checks.yml', 'pypi-release.yml', '.pre-commit-config.yaml', 'pyproject.toml']",['f388b1d0c535b4bc5ef326e371d180a3bb0bbcb4'],6,6,12,5,,,
+51b7edf6295ce87a732a52ec92f56b71b32158e7,[MISC] Test suite updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 10:32:10+02:00,-7200,2023-09-26 10:32:10+02:00,-7200,True,False,"['base.py', 'local.py', 'tox.ini']",['5e96613c0f25c2ccf4367bfe5553481323fe018b'],97,167,264,3,,,
+f76dfb244ecba5b7be354bfe2617177ae8cb7657,[CHANGE] Version bumped to v1.4.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 10:33:32+02:00,-7200,2023-09-26 10:33:32+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['51b7edf6295ce87a732a52ec92f56b71b32158e7'],2,9,11,2,,,
+dec022d74c4d3b3eb3c499a619fa498398783622,[FIX] This app has no public views,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 10:56:56+02:00,-7200,2023-09-26 10:56:56+02:00,-7200,True,False,['local.py'],['b5416e893bf0852a194696e418a42c3d5d3b7570'],3,1,4,1,,,
+c37380c6ef8bbc4a6a5694897b58ee116c3979d1,[MISC] Contribution guidelines updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-27 14:03:12+02:00,-7200,2023-09-27 14:03:12+02:00,-7200,True,False,['CONTRIBUTING.md'],['3bde9b33ddd20c5e3bca851e435ad83a80a101ec'],4,63,67,1,,,
+ba4632f0cc930ef107070b6dbe923a91bf933438,[ADD] JS Map,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-27 18:47:58+02:00,-7200,2023-09-27 18:47:58+02:00,-7200,True,False,"['aa-discord-announcements.min.js', 'aa-discord-announcements.min.js.map']",['c37380c6ef8bbc4a6a5694897b58ee116c3979d1'],1,3,4,2,0.0,0.0,0.0
+9f558396b5681ac2026397f6fd5f9901497c84a2,[MISC] tox tests updated and simplified,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-28 16:52:22+02:00,-7200,2023-09-28 16:52:22+02:00,-7200,True,False,"['automated-checks.yml', 'Makefile', 'pyproject.toml', 'tox.ini']",['ba4632f0cc930ef107070b6dbe923a91bf933438'],24,24,48,4,,,
+f5eba5039fd6a5cd49fcede2ca9a844c7e0b9407,"Translated using Weblate (German)
+
+Currently translated at 100.0% (51 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-30 12:58:53+00:00,0,2023-09-30 12:58:53+00:00,0,True,False,['django.po'],['ff36f6ccac4d4583c3bedf50e713b5342ec34262'],4,4,8,1,,,
+797f44a7252be033b1650e63d927dd09f17034e8,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-30 12:58:53+00:00,0,2023-09-30 12:58:53+00:00,0,True,False,['django.mo'],['f5eba5039fd6a5cd49fcede2ca9a844c7e0b9407'],0,0,0,1,,,
+6b26423aaa80044616643a08d6100e6d97b2f763,[FIX] Grammar in translatable stings,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-30 16:29:00+02:00,-7200,2023-09-30 16:29:00+02:00,-7200,True,False,"['Makefile', 'index.html', 'announcement.html', 'form.html', 'announcement-targets.html']",['e0239be4f14193b99b387b64200dade954873589'],14,17,31,5,,,
+478f27915791994d07940be040518b7781554982,[MISC] Translation files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-30 16:30:03+02:00,-7200,2023-09-30 16:30:03+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['6b26423aaa80044616643a08d6100e6d97b2f763'],596,722,1318,10,,,
+8f0d3fbb0541c841eef639add14f7f8e89fa7a59,[MISC] Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-30 16:30:48+02:00,-7200,2023-09-30 16:30:48+02:00,-7200,True,False,['CHANGELOG.md'],['478f27915791994d07940be040518b7781554982'],0,4,4,1,,,
+a090d13a87e0c2bb5951d4ef47381dc44e4ce771,"Translated using Weblate (German)
+
+Currently translated at 100.0% (51 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-01 14:43:02+00:00,0,2023-10-01 14:43:02+00:00,0,True,False,['django.po'],['8f0d3fbb0541c841eef639add14f7f8e89fa7a59'],18,4,22,1,,,
+c2ad6e19024444a526780e8130b2e997dbf9d08b,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-01 14:43:03+00:00,0,2023-10-01 14:43:03+00:00,0,True,False,['django.mo'],['a090d13a87e0c2bb5951d4ef47381dc44e4ce771'],0,0,0,1,,,
+a2fb294d24f892d54669fe215dd9114a7c31e347,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/tox-dev/pyproject-fmt: 1.1.0 → 1.2.0](https://github.com/tox-dev/pyproject-fmt/compare/1.1.0...1.2.0)
+- [github.com/pylint-dev/pylint: v3.0.0a7 → v3.0.0](https://github.com/pylint-dev/pylint/compare/v3.0.0a7...v3.0.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,Peter Pfeufer,info@ppfeufer.de,2023-10-02 20:20:48+00:00,0,2023-10-03 13:22:19+02:00,-7200,True,False,['.pre-commit-config.yaml'],['91a3c3b1fb9984f09848d58c6c620d22c46b6e5d'],2,2,4,1,,,
+992b182c69a8c5ab85122f68506c5e226c024d25,[MISC] Dependencies in pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-10-03 13:23:44+02:00,-7200,2023-10-03 13:23:44+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'tox.ini']",['a2fb294d24f892d54669fe215dd9114a7c31e347'],5,6,11,2,,,
+567c650c020505102f34cc7f8e5e3f0d6b9845dd,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/pre-commit-hooks: v4.4.0 → v4.5.0](https://github.com/pre-commit/pre-commit-hooks/compare/v4.4.0...v4.5.0)
+- [github.com/pre-commit/mirrors-eslint: v8.50.0 → v8.51.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.50.0...v8.51.0)
+- [github.com/editorconfig-checker/editorconfig-checker.python: 2.7.2 → 2.7.3](https://github.com/editorconfig-checker/editorconfig-checker.python/compare/2.7.2...2.7.3)
+- [github.com/asottile/pyupgrade: v3.13.0 → v3.15.0](https://github.com/asottile/pyupgrade/compare/v3.13.0...v3.15.0)
+- [github.com/abravalheri/validate-pyproject: v0.14 → v0.15](https://github.com/abravalheri/validate-pyproject/compare/v0.14...v0.15)
+- [github.com/pylint-dev/pylint: v3.0.0 → v3.0.1](https://github.com/pylint-dev/pylint/compare/v3.0.0...v3.0.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-16 17:24:01+00:00,0,2023-10-16 17:24:01+00:00,0,True,False,['.pre-commit-config.yaml'],['992b182c69a8c5ab85122f68506c5e226c024d25'],6,6,12,1,,,
+6a25d0ef2aa27cbacbfa8f80bffd6cbe3d9c99c1,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (51 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-03 16:43:03+00:00,0,2023-10-16 20:24:24+00:00,0,True,False,['django.po'],['a7e88dcc51e6a66fcbfd6ada34c1b9b4f0840b36'],26,13,39,1,,,
+1c40d906bfb89c2a13bac1e16ae691f622162053,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-03 16:43:03+00:00,0,2023-10-16 20:24:24+00:00,0,True,False,['django.mo'],['6a25d0ef2aa27cbacbfa8f80bffd6cbe3d9c99c1'],0,0,0,1,,,
+860258bf0e771695a1ef5ef6e57810821912b19b,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.51.0 → v8.52.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.51.0...v8.52.0)
+- [github.com/thibaudcolas/pre-commit-stylelint: v15.10.3 → v15.11.0](https://github.com/thibaudcolas/pre-commit-stylelint/compare/v15.10.3...v15.11.0)
+- [github.com/psf/black: 23.9.1 → 23.10.0](https://github.com/psf/black/compare/23.9.1...23.10.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-23 17:30:34+00:00,0,2023-10-23 17:30:34+00:00,0,True,False,['.pre-commit-config.yaml'],['21c3c4c2297df51bffded1c6f4acbf42bba85ee7'],3,3,6,1,,,
+0a368d12cb293bf98cb64b699647bd82ac9ef59b,"Translated using Weblate (Spanish)
+
+Currently translated at 78.4% (40 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-25 07:04:14+00:00,0,2023-10-25 07:04:14+00:00,0,True,False,['django.po'],['21c3c4c2297df51bffded1c6f4acbf42bba85ee7'],6,8,14,1,,,
+b0d0109027588089b7dbeb801265d6ade53cc20c,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-25 07:04:14+00:00,0,2023-10-25 07:04:14+00:00,0,True,False,['django.mo'],['0a368d12cb293bf98cb64b699647bd82ac9ef59b'],0,0,0,1,,,
+5e270697c86021d50d8c1daee2b69648df00971e,[MISC] pre-commit dependencies updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-10-29 16:50:26+01:00,-3600,2023-10-29 16:50:26+01:00,-3600,True,False,['.pre-commit-config.yaml'],['93f3bc58b895b03aa24a64516aaeef6e75b9cfda'],2,2,4,1,,,
+64f948fe4d7e45490cfb6b3078bb391ab4054b82,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.52.0 → v8.53.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.52.0...v8.53.0)
+- [github.com/psf/black: 23.10.0 → 23.11.0](https://github.com/psf/black/compare/23.10.0...23.11.0)
+- [github.com/tox-dev/pyproject-fmt: 1.2.0 → 1.5.1](https://github.com/tox-dev/pyproject-fmt/compare/1.2.0...1.5.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-13 17:31:40+00:00,0,2023-11-13 17:31:40+00:00,0,True,False,['.pre-commit-config.yaml'],['5e270697c86021d50d8c1daee2b69648df00971e'],3,3,6,1,,,
+7c116f188a3da5fa61977914affa0cdadc45447d,[MISC] pre-commit dependencies updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-11-15 16:19:50+01:00,-3600,2023-11-15 16:19:50+01:00,-3600,True,False,['.pre-commit-config.yaml'],['d998341bf631086c705dfdd44741416d284575c9'],2,2,4,1,,,
+194a8bcaeecace07164c71421e6418d39d00d389,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.53.0 → v8.55.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.53.0...v8.55.0)
+- [github.com/tox-dev/pyproject-fmt: 1.5.1 → 1.5.3](https://github.com/tox-dev/pyproject-fmt/compare/1.5.1...1.5.3)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-04 17:23:49+00:00,0,2023-12-04 17:23:49+00:00,0,True,False,['.pre-commit-config.yaml'],['7c116f188a3da5fa61977914affa0cdadc45447d'],2,2,4,1,,,
+54080d6a60ca3df4bd4c9760caaa2e711beb74ab,"Bump actions/setup-python from 4 to 5
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 5.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v4...v5)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-06 18:57:44+00:00,0,2023-12-06 18:57:44+00:00,0,True,False,"['automated-checks.yml', 'pypi-release.yml']",['7c116f188a3da5fa61977914affa0cdadc45447d'],5,5,10,2,,,
+a18e719d22cf3f74837680372c431108b8dac2f5,"Bump actions/upload-artifact from 3 to 4
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 3 to 4.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-14 19:02:38+00:00,0,2023-12-14 19:02:38+00:00,0,True,False,['automated-checks.yml'],['eae4dd0b11d38bbe8f4579676da7ee349bc2247d'],2,2,4,1,,,
+abe3720df3e69b1287183ec1b05ecdc6816d6c10,Update automated-checks.yml,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2023-12-14 20:20:50+01:00,-3600,2023-12-14 20:20:50+01:00,-3600,True,False,['automated-checks.yml'],['a18e719d22cf3f74837680372c431108b8dac2f5'],41,11,52,1,,,
+3a564a6e7252d0e17bb654fadabf16f975e47ddc,Update automated-checks.yml,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2023-12-14 20:26:37+01:00,-3600,2023-12-14 20:26:37+01:00,-3600,True,False,['automated-checks.yml'],['abe3720df3e69b1287183ec1b05ecdc6816d6c10'],3,1,4,1,,,
+bb4d1f5c0ddb930ea7c9d516d9b288a2aa4e915d,[MISC] Grammar,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-12-14 20:36:44+01:00,-3600,2023-12-14 20:36:44+01:00,-3600,True,False,"['automated-checks.yml', 'pypi-release.yml']",['eec4db3d8ca211a117d1ebe9fb64fdae7d1588e9'],2,2,4,2,,,
+209c0adb03c3c6e45805e7c437f03ea9735035a0,"Translated using Weblate (Korean)
+
+Currently translated at 78.4% (40 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-12-29 09:04:27+00:00,0,2023-12-29 09:04:27+00:00,0,True,False,['django.po'],['bb4d1f5c0ddb930ea7c9d516d9b288a2aa4e915d'],6,6,12,1,,,
+2f9b9975adbf1c0b1ae73fe8114f22fb347021d1,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-12-29 09:04:27+00:00,0,2023-12-29 09:04:27+00:00,0,True,False,['django.mo'],['209c0adb03c3c6e45805e7c437f03ea9735035a0'],0,0,0,1,,,
+c60e21b69e610a9df1465f04a37e5cf6bb493c0e,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.55.0 → v9.0.0-alpha.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.55.0...v9.0.0-alpha.0)
+- [github.com/thibaudcolas/pre-commit-stylelint: v15.11.0 → v16.1.0](https://github.com/thibaudcolas/pre-commit-stylelint/compare/v15.11.0...v16.1.0)
+- [github.com/PyCQA/isort: 5.12.0 → 5.13.2](https://github.com/PyCQA/isort/compare/5.12.0...5.13.2)
+- [github.com/psf/black: 23.11.0 → 23.12.1](https://github.com/psf/black/compare/23.11.0...23.12.1)
+- [github.com/pylint-dev/pylint: v3.0.1 → v3.0.3](https://github.com/pylint-dev/pylint/compare/v3.0.1...v3.0.3)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-01 17:22:02+00:00,0,2024-01-01 17:22:02+00:00,0,True,False,['.pre-commit-config.yaml'],['630a275ad953c8a276e3fe35dd13b8a117db7203'],5,5,10,1,,,
+ba051b1f7d2e26bc87f7659e9b56429899ec6295,[FIX] Dependencies,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2024-01-01 22:10:27+01:00,-3600,2024-01-01 22:10:27+01:00,-3600,True,False,"['.pre-commit-config.yaml', '.stylelintrc.json']",['c60e21b69e610a9df1465f04a37e5cf6bb493c0e'],6,5,11,2,,,
+efa299545123cc127f65ffd1e702b995a52743e6,"Translated using Weblate (French)
+
+Currently translated at 7.8% (4 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/fr/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-11 21:04:27+00:00,0,2024-01-11 21:04:27+00:00,0,True,False,['django.po'],['2efde271f6cf7c417531ab1538f929a53c442d1b'],7,10,17,1,,,
+b937336c4b881b37af1942c4172eb4722388e961,"Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 9.8% (5 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/zh_Hans/
+
+Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 7.8% (4 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/zh_Hans/
+
+Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 7.8% (4 of 51 strings)
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/zh_Hans/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-11 21:04:28+00:00,0,2024-01-11 21:04:28+00:00,0,True,False,['django.po'],['efa299545123cc127f65ffd1e702b995a52743e6'],10,10,20,1,,,
+be3fe2a6d5cd6873959600db91982cdb14917ecd,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Discord Announcements
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-discord-announcements/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-11 21:04:28+00:00,0,2024-01-11 21:04:28+00:00,0,True,False,"['django.mo', 'django.mo']",['b937336c4b881b37af1942c4172eb4722388e961'],0,0,0,2,,,

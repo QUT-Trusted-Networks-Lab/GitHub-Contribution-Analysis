@@ -1,0 +1,27 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+a8e405c3486fdbe361d5c11362026cdf42d18ac7,Initial commit,-,bloodywing@users.noreply.github.com,-,bloodywing@users.noreply.github.com,2015-09-29 18:11:14+02:00,-7200,2015-09-29 18:11:14+02:00,-7200,True,False,"['.gitignore', 'LICENSE']",[],0,174,174,2,,,
+aaa1d99c5416ae447b50191bbfea54af082c15c3,exporting png and icc,bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-09-29 18:27:31+02:00,-7200,2015-09-29 18:27:31+02:00,-7200,True,False,"['__init__.py', '__main__.py', 'kra.py', 'main.py', 'setup.py']",[],0,174,174,5,0.59375,0.59375,1.0
+a426796dccba5e7a34925430caf9fafde7845865,Path inside the .kra file is not always '.kra' basename,bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-09-29 18:44:05+02:00,-7200,2015-09-29 18:44:05+02:00,-7200,True,False,['kra.py'],['45390f49f0b263a457c1f7fffff500d55794a846'],2,8,10,1,,,
+5d1525c926e7bc365f19b56eb42f400af9b9f120,added jpeg convertion and icc support,bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-09-30 01:03:40+02:00,-7200,2015-09-30 01:03:40+02:00,-7200,True,False,"['sRGB.icc', 'kra.py', 'main.py', 'setup.py']",['a426796dccba5e7a34925430caf9fafde7845865'],3,60,63,4,0.6,0.6,1.0
+a16f4466abeb036a9c81dc4dd2b9da8acad89b4a,Update README.md,-,bloodywing@users.noreply.github.com,-,bloodywing@users.noreply.github.com,2015-09-30 01:07:59+02:00,-7200,2015-09-30 01:07:59+02:00,-7200,True,False,['README.md'],['5d1525c926e7bc365f19b56eb42f400af9b9f120'],0,13,13,1,,,
+e7533877b76edee80158133bb5d94f69f2e1689a,Update README.md,-,bloodywing@users.noreply.github.com,-,bloodywing@users.noreply.github.com,2015-09-30 01:08:37+02:00,-7200,2015-09-30 01:08:37+02:00,-7200,True,False,['README.md'],['a16f4466abeb036a9c81dc4dd2b9da8acad89b4a'],5,5,10,1,,,
+1ab342de06910ff3a27af97a9cdde77cd3ef0a0c,"Removed Main() and changed it into a function.
+Some pep8 cleanup
+Better error handling when -p switch is not available",bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-09-30 15:00:28+02:00,-7200,2015-09-30 15:00:28+02:00,-7200,True,False,"['__main__.py', 'kra.py', 'main.py', 'setup.py']",['e7533877b76edee80158133bb5d94f69f2e1689a'],92,82,174,4,0.92,0.92,0.0
+a0c5dda270668b484d46533ca0f4f79bad6c2343,Possible to save a webversion of the png with sRGB Profile.,bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-09-30 16:37:24+02:00,-7200,2015-09-30 16:37:24+02:00,-7200,True,False,['main.py'],['1ab342de06910ff3a27af97a9cdde77cd3ef0a0c'],8,18,26,1,1.0,1.0,1.0
+3241c1cdd79f85b33b5c6c3b4dad664609031b58,export to jpeg now saves an original sized version of the kra.,bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-10-04 13:43:50+02:00,-7200,2015-10-04 13:43:50+02:00,-7200,True,False,['main.py'],['a0c5dda270668b484d46533ca0f4f79bad6c2343'],13,18,31,1,1.0,1.0,0.25
+d346d25b6ba2121b953f211215ec21a514037a43,"Updated readme with another more basic example
+Fixed typo in readme",bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-10-04 13:47:16+02:00,-7200,2015-10-04 13:47:16+02:00,-7200,True,False,['README.md'],['3241c1cdd79f85b33b5c6c3b4dad664609031b58'],1,8,9,1,,,
+0d787dc53b9ba0acd8800d352e724929155f9bc9,"Update setup.py
+bump to version 0.2
+added setup.cfg",bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-10-04 14:01:03+02:00,-7200,2015-10-04 14:01:03+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['d346d25b6ba2121b953f211215ec21a514037a43'],7,16,23,3,,,
+26dcc79cf18164dc1aede8a00478c2a39eef2c67,Added missing downloadurl in setup.py,bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-10-04 14:03:35+02:00,-7200,2015-10-04 14:03:35+02:00,-7200,True,False,['setup.py'],['0d787dc53b9ba0acd8800d352e724929155f9bc9'],0,1,1,1,,,
+646c0794be9c224092e5d7bbdc64e6a380046558,Added missing long_description in setup.py,bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-10-04 14:17:09+02:00,-7200,2015-10-04 14:17:09+02:00,-7200,True,False,['setup.py'],['26dcc79cf18164dc1aede8a00478c2a39eef2c67'],0,8,8,1,,,
+e5d536259235f817b5c071231bb78431e8b00c55,Create jpeg as progressive images if -w is present.,bloodywing,bloodywing@neocomy.net,bloodywing,bloodywing@neocomy.net,2015-10-04 16:18:15+02:00,-7200,2015-10-04 16:18:15+02:00,-7200,True,False,['main.py'],['646c0794be9c224092e5d7bbdc64e6a380046558'],1,1,2,1,,,
+4fbbcf71255fe7c16044ff42cf4b60b615bbd987,"Update main.py
+
+Code cleanup
+* changed file extension from jpeg to jpg
+* icc and png files are write only during save
+* srgb png files now is named -srgb.png instead of _srgb.png",Pierre,bloodywing@users.noreply.github.com,GitHub,noreply@github.com,2017-03-17 13:28:20+01:00,-3600,2017-03-17 13:28:20+01:00,-3600,True,False,['main.py'],['e5d536259235f817b5c071231bb78431e8b00c55'],10,8,18,1,0.0,0.0,0.0
+a6cf83a8a152cc40af9771aa600ed9bfa622fd0d,Initial WhiteSource configuration file,whitesource-bolt-for-github[bot],whitesource-bolt-for-github[bot]@users.noreply.github.com,whitesource-bolt-for-github[bot],whitesource-bolt-for-github[bot]@users.noreply.github.com,2019-03-15 15:03:04+00:00,0,2019-03-15 15:03:04+00:00,0,True,False,['.whitesource'],['4fbbcf71255fe7c16044ff42cf4b60b615bbd987'],0,8,8,1,,,

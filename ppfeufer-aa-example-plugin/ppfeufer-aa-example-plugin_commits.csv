@@ -1,0 +1,138 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+18b20b4af75c43378943cf6a91b92b2c307be474,Initial commit,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2022-03-12 19:38:54+01:00,-3600,2022-03-12 19:38:54+01:00,-3600,True,False,"['LICENSE', 'README.md']",[],0,676,676,2,,,
+11b830bffb7f779ca2ee225acb586027b370003a,Initial commit,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-12 21:16:41+01:00,-3600,2022-03-12 21:20:00+01:00,-3600,True,False,"['.coveragerc', '.editorconfig', '.flake8', 'bug_report.md', 'config.yml', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md', 'automated-checks.yml', 'pypi-release.yml', '.gitignore', '.isort.cfg', '.pre-commit-config.yaml', 'CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'MANIFEST.in', 'Makefile', 'README.md', '__init__.py', 'admin.py', 'app_settings.py', 'apps.py', 'auth_hooks.py', '0001_initial.py', '__init__.py', 'models.py', 'tasks.py', 'base.html', 'index.html', 'tests.py', 'urls.py', 'views.py', 'pyproject.toml', 'runtests.py', 'setup.cfg', '__init__.py', 'celery.py', 'settings.py', 'urls.py', 'wsgi.py', 'tox.ini']",['18b20b4af75c43378943cf6a91b92b2c307be474'],2,1446,1448,40,1.0,1.0,1.0
+21f8b50fdaa1f4c045a37e245b4d711221591a20,Readme updated with the hint to the GitLab Version,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-12 21:25:33+01:00,-3600,2022-03-12 21:25:33+01:00,-3600,True,False,['README.md'],['11b830bffb7f779ca2ee225acb586027b370003a'],0,3,3,1,,,
+1bf5adfcf1f042e4b0a1e52f1d31555f2e62a993,Git links corrected,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-12 21:27:54+01:00,-3600,2022-03-12 21:27:54+01:00,-3600,True,False,['README.md'],['21f8b50fdaa1f4c045a37e245b4d711221591a20'],2,2,4,1,,,
+c3f7a196a4a213a0820b4df4d891e8fbe1d12072,Typo fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-12 21:36:36+01:00,-3600,2022-03-12 21:36:36+01:00,-3600,True,False,['setup.cfg'],['1bf5adfcf1f042e4b0a1e52f1d31555f2e62a993'],1,1,2,1,,,
+a11c9d1e314657156f85f13b6231707499235d42,"MANIFEST file removed, it's redundant",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-13 09:22:44+01:00,-3600,2022-03-13 09:22:44+01:00,-3600,True,False,['MANIFEST.in'],['c3f7a196a4a213a0820b4df4d891e8fbe1d12072'],8,0,8,1,,,
+f1b2bcaa0db2690c3dd6cb94d7619b47aa6852f0,README updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-13 09:58:00+01:00,-3600,2022-03-13 09:58:00+01:00,-3600,True,False,['README.md'],['a11c9d1e314657156f85f13b6231707499235d42'],1,0,1,1,,,
+e6ec80f1651088ba112c2c3742aaa844de84af0a,Makefile added to table of replacement instructions,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-13 10:01:26+01:00,-3600,2022-03-13 10:01:26+01:00,-3600,True,False,['README.md'],['f1b2bcaa0db2690c3dd6cb94d7619b47aa6852f0'],0,2,2,1,,,
+70f005a2437e7d3fa40c73459d90bb970cea00ea,"Set version to 0.1.0 to match Eriks GitLab version
+
+This way my Package Manager doesn't tell me there is a new version all the time ...",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-13 10:07:32+01:00,-3600,2022-03-13 10:07:32+01:00,-3600,True,False,['__init__.py'],['e6ec80f1651088ba112c2c3742aaa844de84af0a'],1,1,2,1,,,
+2df6a2e4c751a4abe2041335a04eeb3a14b52090,"Feature Request template updated
+
+Wrong app name removed",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-04-18 19:39:30+02:00,-7200,2022-04-18 19:40:35+02:00,-7200,True,False,"['feature_request.md', '.pre-commit-config.yaml']",['70f005a2437e7d3fa40c73459d90bb970cea00ea'],6,6,12,2,,,
+2ed2924e21be8fc26b2fe02671b91c7c967708f0,setup.cfg updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-27 06:44:49+02:00,-7200,2022-06-27 06:44:49+02:00,-7200,True,False,['setup.cfg'],['2df6a2e4c751a4abe2041335a04eeb3a14b52090'],3,6,9,1,,,
+66bd61188f1ee938709ce7ba84b03cf669fe4ae5,App tests moved to tests directory,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-27 06:47:04+02:00,-7200,2022-06-27 06:47:04+02:00,-7200,True,False,"['__init__.py', 'test_integration.py']",['2ed2924e21be8fc26b2fe02671b91c7c967708f0'],0,1,1,2,,,
+8923c95230539d6ea811ee4ffc7656cf8a846fc7,Updated `pre-commit` job,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-08 21:00:14+02:00,-7200,2022-07-08 21:00:14+02:00,-7200,True,False,['automated-checks.yml'],['66bd61188f1ee938709ce7ba84b03cf669fe4ae5'],3,3,6,1,,,
+a0b09fc26003012d4246dc5b9f016ae4d18c0da0,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-08 21:01:18+02:00,-7200,2022-07-08 21:01:18+02:00,-7200,True,False,['.pre-commit-config.yaml'],['8923c95230539d6ea811ee4ffc7656cf8a846fc7'],4,4,8,1,,,
+1644759d6ae2485a5cb16bb045ff5a07eb4d64bd,[CHANGED] Test settings updated for Alliance Auth v3,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-17 21:42:39+02:00,-7200,2022-08-17 21:46:10+02:00,-7200,True,False,"['CHANGELOG.md', 'README.md', 'settings.py']",['a0b09fc26003012d4246dc5b9f016ae4d18c0da0'],7,10,17,3,,,
+660951f2734d9544c194b62158df3c5c6c498933,[CHANGE] Updated package name in setup.cfg for PyPi,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-17 21:47:37+02:00,-7200,2022-08-17 21:47:37+02:00,-7200,True,False,"['CHANGELOG.md', 'setup.cfg']",['1644759d6ae2485a5cb16bb045ff5a07eb4d64bd'],1,2,3,2,,,
+5d4d946b9debf60a9a69b682c2c843f3f0ae6286,[MISC] pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-17 22:00:48+02:00,-7200,2022-08-17 22:00:48+02:00,-7200,True,False,['.pre-commit-config.yaml'],['660951f2734d9544c194b62158df3c5c6c498933'],5,22,27,1,,,
+9e03d141c232302e80083137560d28b0c84011b4,[ADDED] Build artifact to workflows,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-17 22:01:01+02:00,-7200,2022-08-17 22:01:01+02:00,-7200,True,False,"['automated-checks.yml', 'CHANGELOG.md']",['5d4d946b9debf60a9a69b682c2c843f3f0ae6286'],6,12,18,2,,,
+8455c874b342e5c067a053d076ab4c59f9e84167,[ADDED] MANIFEST.in file,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-17 22:01:53+02:00,-7200,2022-08-17 22:01:53+02:00,-7200,True,False,['MANIFEST.in'],['9e03d141c232302e80083137560d28b0c84011b4'],0,7,7,1,,,
+825821f95b1df75d2f835186f4205e20715a4e32,[MISC] README updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-17 22:02:15+02:00,-7200,2022-08-17 22:02:15+02:00,-7200,True,False,['README.md'],['8455c874b342e5c067a053d076ab4c59f9e84167'],0,1,1,1,,,
+204f67d56806ddb6093c3cf543a43e93a5d58a8c,[CHANGED] `setup.cfg` and `tox.ini` to reflect the new reality,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-17 22:02:49+02:00,-7200,2022-08-17 22:02:49+02:00,-7200,True,False,"['setup.cfg', 'tox.ini']",['825821f95b1df75d2f835186f4205e20715a4e32'],4,2,6,2,,,
+7625f0ca5bb7ef5944a2f1a3bf88efa705307664,[CHANGED] Version set to 0.0.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-17 22:04:40+02:00,-7200,2022-08-17 22:04:40+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['204f67d56806ddb6093c3cf543a43e93a5d58a8c'],1,5,6,2,,,
+1942fab93d72dbd496dcf01b4acb4593db1f3440,[ADDED] `SITE_URL` to test settings,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-15 16:34:55+02:00,-7200,2022-09-15 16:34:55+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py', 'settings.py']",['7625f0ca5bb7ef5944a2f1a3bf88efa705307664'],1,10,11,3,,,
+9c6d0d229ad81570365ee00d1d94925f0b458f96,[FIX] Date in Changelog,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-15 16:36:11+02:00,-7200,2022-09-15 16:36:11+02:00,-7200,True,False,['CHANGELOG.md'],['1942fab93d72dbd496dcf01b4acb4593db1f3440'],1,1,2,1,,,
+17eb21a29c93b5699a8a90a4634ea3224f4f80bb,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 12:25:31+01:00,-3600,2022-11-26 12:25:31+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'urls.py']",['9c6d0d229ad81570365ee00d1d94925f0b458f96'],14,29,43,2,,,
+a35e139b5db3a9ae206aa981a989c330028a214d,[CHANGE] Example Test Improved,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 12:32:56+01:00,-3600,2022-11-26 12:32:56+01:00,-3600,True,False,"['README.md', 'test_example.py', 'test_integration.py']",['17eb21a29c93b5699a8a90a4634ea3224f4f80bb'],13,43,56,3,1.0,1.0,1.0
+866d7337f4d1d2324c73ed4ad3870a21e26abc2c,[FIX] Assert Function Call in Test,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 12:36:00+01:00,-3600,2022-11-26 12:36:00+01:00,-3600,True,False,['test_example.py'],['a35e139b5db3a9ae206aa981a989c330028a214d'],1,1,2,1,,,
+049d12e6942f59f0fc2a17401a450102bdadd27f,[MISC] `isort` Do Its Thing,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 12:44:51+01:00,-3600,2022-11-26 12:44:51+01:00,-3600,True,False,['test_example.py'],['866d7337f4d1d2324c73ed4ad3870a21e26abc2c'],0,1,1,1,,,
+8b8622bca3fb870f6b8e60983c1f5e1d4b92f176,[UPDATED] GitHub Actions,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 12:57:03+01:00,-3600,2022-11-26 12:57:03+01:00,-3600,True,False,['automated-checks.yml'],['049d12e6942f59f0fc2a17401a450102bdadd27f'],10,12,22,1,,,
+b46fcd660410cc6ee047ef9e66e1c1630728e5a2,[ADDED] Python 3.11 to Test Suite,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 12:57:45+01:00,-3600,2022-11-26 12:57:45+01:00,-3600,True,False,"['automated-checks.yml', 'tox.ini']",['8b8622bca3fb870f6b8e60983c1f5e1d4b92f176'],2,2,4,2,,,
+aae032e15388282c33154f86a081b045e9ac0055,[UPDATED] Build Test Actions,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 13:04:28+01:00,-3600,2022-11-26 13:04:28+01:00,-3600,True,False,['automated-checks.yml'],['b46fcd660410cc6ee047ef9e66e1c1630728e5a2'],2,2,4,1,,,
+3acdeee05cdba61e5ea7db7c809371bea2828894,[ADDED] Directory for Static Files,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 13:06:20+01:00,-3600,2022-11-26 13:06:20+01:00,-3600,True,False,"['README.md', '.gitkeep']",['aae032e15388282c33154f86a081b045e9ac0055'],0,1,1,2,,,
+7335efe7c1ed83864e8b4a456189cf8eb25d1345,[ADDED] `gh-actions` to tox-Tests,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 13:11:32+01:00,-3600,2022-11-26 13:11:32+01:00,-3600,True,False,['tox.ini'],['3acdeee05cdba61e5ea7db7c809371bea2828894'],0,7,7,1,,,
+a0f6782888a2c39f864d9eb2191dadebc562f471,[CHANGED] Version set to v0.0.4,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 13:26:13+01:00,-3600,2022-11-26 13:26:13+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['7335efe7c1ed83864e8b4a456189cf8eb25d1345'],1,14,15,2,,,
+8040e8ce7e3aeabe88a3c95e3dbbb160761c2774,[UPDATED] GH Actions for Release Workflow,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-11-26 13:28:17+01:00,-3600,2022-11-26 13:28:17+01:00,-3600,True,False,['pypi-release.yml'],['a0f6782888a2c39f864d9eb2191dadebc562f471'],2,2,4,1,,,
+cf317b954848d04900808622f79e47f345fc81cf,[UPDATED] Makefile,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-12 09:37:31+02:00,-7200,2023-04-12 09:37:42+02:00,-7200,True,False,['Makefile'],['8040e8ce7e3aeabe88a3c95e3dbbb160761c2774'],4,11,15,1,,,
+1e032dcae6f405925993f88915576bc1b2826090,[ADDED] `locale` directory for language files,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-18 17:51:57+02:00,-7200,2023-04-18 17:51:57+02:00,-7200,True,False,"['Makefile', '.gitkeep']",['cf317b954848d04900808622f79e47f345fc81cf'],16,20,36,2,,,
+81bdf8bbe849b370b1773c2c88d8e0fc0fa3b1f0,[CHANGE] README updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-18 18:01:03+02:00,-7200,2023-04-18 18:01:03+02:00,-7200,True,False,['README.md'],['1e032dcae6f405925993f88915576bc1b2826090'],19,37,56,1,,,
+324939c9253ab4de80171288b120a68d437dca22,[CHANGE] Version bumped to v0.0.5,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-18 18:03:18+02:00,-7200,2023-04-18 18:03:18+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['81bdf8bbe849b370b1773c2c88d8e0fc0fa3b1f0'],1,9,10,2,,,
+28d3091760d8def5336f77d05248a084e1b9e1d3,[ADDED] Ukrainian language to translation file generation,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 01:19:25+02:00,-7200,2023-04-19 01:19:25+02:00,-7200,True,False,['Makefile'],['324939c9253ab4de80171288b120a68d437dca22'],0,2,2,1,,,
+0e93491124f107536804f5d4ddbbd6481f88b138,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-23 21:46:49+02:00,-7200,2023-07-23 21:46:49+02:00,-7200,True,False,"['.pre-commit-config.yaml', '0001_initial.py', 'setup.cfg']",['28d3091760d8def5336f77d05248a084e1b9e1d3'],23,34,57,3,,,
+63700e88716317cee50451c0aad239533149b2bf,[MISC] Version bumped to v0.0.6,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-23 21:48:35+02:00,-7200,2023-07-23 21:48:41+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['0e93491124f107536804f5d4ddbbd6481f88b138'],1,8,9,2,,,
+204e1099eef1fe72ccd8cdebd0a850a367d664af,[FIX] Release date,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-23 21:49:45+02:00,-7200,2023-07-23 21:49:45+02:00,-7200,True,False,['CHANGELOG.md'],['63700e88716317cee50451c0aad239533149b2bf'],1,1,2,1,,,
+ee1bb23ce744a43984df0b6f3b4db47492ba02c1,[FIX] Grammar in PR template,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 11:11:16+02:00,-7200,2023-09-20 11:11:16+02:00,-7200,True,False,['PULL_REQUEST_TEMPLATE.md'],['204e1099eef1fe72ccd8cdebd0a850a367d664af'],7,2,9,1,,,
+3b25f58d35320afd9093ee3d20c95091f675806a,[ADD] pre-commit.ci configuration,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 16:36:16+02:00,-7200,2023-09-20 16:36:16+02:00,-7200,True,False,['.pre-commit-config.yaml'],['ee1bb23ce744a43984df0b6f3b4db47492ba02c1'],0,14,14,1,,,
+c2796d6ac0667a26d626004d20781c66bf1c1797,[FIX] `actions/checkout` version in GH workflows,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 23:00:15+02:00,-7200,2023-09-20 23:00:15+02:00,-7200,True,False,"['automated-checks.yml', 'potential-duplicates.yml', 'pypi-release.yml']",['3b25f58d35320afd9093ee3d20c95091f675806a'],5,40,45,3,,,
+8890fb8223f06466c05e785124f2effcb07fe595,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/adamchainz/django-upgrade: 1.14.0 → 1.15.0](https://github.com/adamchainz/django-upgrade/compare/1.14.0...1.15.0)
+- [github.com/asottile/pyupgrade: v3.9.0 → v3.13.0](https://github.com/asottile/pyupgrade/compare/v3.9.0...v3.13.0)
+- [github.com/pycqa/flake8: 6.0.0 → 6.1.0](https://github.com/pycqa/flake8/compare/6.0.0...6.1.0)
+- https://github.com/pre-commit/mirrors-isort → https://github.com/PyCQA/isort
+- [github.com/PyCQA/isort: v5.10.1 → 5.12.0](https://github.com/PyCQA/isort/compare/v5.10.1...5.12.0)
+- [github.com/psf/black: 23.7.0 → 23.9.1](https://github.com/psf/black/compare/23.7.0...23.9.1)
+- [github.com/asottile/blacken-docs: 1.15.0 → 1.16.0](https://github.com/asottile/blacken-docs/compare/1.15.0...1.16.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-25 20:25:50+00:00,0,2023-09-25 20:25:50+00:00,0,True,False,['.pre-commit-config.yaml'],['c2796d6ac0667a26d626004d20781c66bf1c1797'],7,7,14,1,,,
+26b30fe0c5dd49aa7a6bddcb93e59ede5024fb73,[MISC] Dependency in pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 11:48:54+02:00,-7200,2023-09-26 11:48:54+02:00,-7200,True,False,['.pre-commit-config.yaml'],['5e95f517cd9a1ecc7a86eb64e36241510c0bc1e9'],5,5,10,1,,,
+a9ae2fe9e4ecfc39bcbbccd44ce59fe8b2f1e303,[CHANGE] Moved the build process to PEP 621 / pyproject.toml,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 12:05:14+02:00,-7200,2023-09-26 12:11:12+02:00,-7200,True,False,"['dependabot.yml', 'automated-checks.yml', 'pypi-release.yml', '.pre-commit-config.yaml', 'CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'MANIFEST.in', 'README.md', 'pyproject.toml', 'setup.cfg', 'tox.ini']",['26b30fe0c5dd49aa7a6bddcb93e59ede5024fb73'],163,194,357,11,,,
+5e5ee2e18fa1860bdd391e3327358c963d7768e9,[CHANGE] Test suite updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 12:19:57+02:00,-7200,2023-09-26 12:22:36+02:00,-7200,True,False,"['README.md', 'base.py', 'local.py', 'tox.ini']",['a9ae2fe9e4ecfc39bcbbccd44ce59fe8b2f1e303'],80,171,251,4,,,
+d8318f291de1e873f9943ea31879ebaac688e1d5,[CHANGE] Version bumped to v0.0.7,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-27 10:55:20+02:00,-7200,2023-09-27 10:55:43+02:00,-7200,True,False,"['dependabot.yml', 'CHANGELOG.md', '__init__.py', 'pyproject.toml']",['5e5ee2e18fa1860bdd391e3327358c963d7768e9'],3,6,9,4,,,
+0a0c93afd52d16fcbf8e2028784c1972e974a7c5,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/tox-dev/pyproject-fmt: 1.1.0 → 1.2.0](https://github.com/tox-dev/pyproject-fmt/compare/1.1.0...1.2.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-02 20:20:59+00:00,0,2023-10-02 20:20:59+00:00,0,True,False,['.pre-commit-config.yaml'],['d8318f291de1e873f9943ea31879ebaac688e1d5'],1,1,2,1,,,
+cb7e79f9b281a412eb93b7f9eb287c973a242b6a,[MISC] Dependencies in pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-10-03 11:59:36+02:00,-7200,2023-10-03 11:59:57+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'Makefile']",['5e6b91275e29eea88a22512fb4dfc8938810c120'],17,29,46,2,,,
+28634ea7c892897640182b7d4562030cbdd086bb,"[FIX] Don't use `tox` for `pyproject-fmt` hook
+
+It might change the Python version in the classifiers without us wanting so …",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-10-03 12:19:57+02:00,-7200,2023-10-03 12:20:59+02:00,-7200,True,False,['.pre-commit-config.yaml'],['cb7e79f9b281a412eb93b7f9eb287c973a242b6a'],2,0,2,1,,,
+a6d86fb5b6706acdb6db1657c82655886e3cfd5a,[MISC] Turns out we _do need this …,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-10-03 13:20:28+02:00,-7200,2023-10-03 13:20:28+02:00,-7200,True,False,['.pre-commit-config.yaml'],['28634ea7c892897640182b7d4562030cbdd086bb'],0,2,2,1,,,
+9732f67685f73b3622172b649e1741d59c7a51f1,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/pre-commit-hooks: v4.4.0 → v4.5.0](https://github.com/pre-commit/pre-commit-hooks/compare/v4.4.0...v4.5.0)
+- [github.com/editorconfig-checker/editorconfig-checker.python: 2.7.2 → 2.7.3](https://github.com/editorconfig-checker/editorconfig-checker.python/compare/2.7.2...2.7.3)
+- [github.com/asottile/pyupgrade: v3.13.0 → v3.15.0](https://github.com/asottile/pyupgrade/compare/v3.13.0...v3.15.0)
+- [github.com/abravalheri/validate-pyproject: v0.14 → v0.15](https://github.com/abravalheri/validate-pyproject/compare/v0.14...v0.15)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-16 17:23:58+00:00,0,2023-10-16 17:23:58+00:00,0,True,False,['.pre-commit-config.yaml'],['a6d86fb5b6706acdb6db1657c82655886e3cfd5a'],4,4,8,1,,,
+f3e8e3955e7e20280eb7bce81686336a94072166,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.9.1 → 23.10.1](https://github.com/psf/black/compare/23.9.1...23.10.1)
+- [github.com/tox-dev/pyproject-fmt: 1.2.0 → 1.4.1](https://github.com/tox-dev/pyproject-fmt/compare/1.2.0...1.4.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-06 17:23:32+00:00,0,2023-11-06 17:23:32+00:00,0,True,False,['.pre-commit-config.yaml'],['cf833b8e54b76e7e731924d6372a4163c8ca88a4'],2,2,4,1,,,
+eda79b82ee6a25fea8d88db0d3715c5bf2d70fd0,[MISC] pre-commit dependencies updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-11-07 14:44:08+01:00,-3600,2023-11-07 14:44:08+01:00,-3600,True,False,['.pre-commit-config.yaml'],['e5fa13e47586aa038386d629a67968f99e360008'],1,1,2,1,,,
+ec2e4bb9ae445f6c9984370f85f51347c4cef164,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.10.1 → 23.11.0](https://github.com/psf/black/compare/23.10.1...23.11.0)
+- [github.com/tox-dev/pyproject-fmt: 1.4.1 → 1.5.1](https://github.com/tox-dev/pyproject-fmt/compare/1.4.1...1.5.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-13 17:31:27+00:00,0,2023-11-13 17:31:27+00:00,0,True,False,['.pre-commit-config.yaml'],['eda79b82ee6a25fea8d88db0d3715c5bf2d70fd0'],2,2,4,1,,,
+b992204306bc47b17e0c505118485192292256a9,[MISC] pre-commit dependencies updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-11-15 16:40:41+01:00,-3600,2023-11-15 16:45:40+01:00,-3600,True,False,['.pre-commit-config.yaml'],['e234249d51f855fe9c293289240e0c02d3e5787d'],18,44,62,1,,,
+56782d6d75634cc0e99a9af5c89f638e8389fdcc,[FIX] blank noqa,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-11-15 16:50:16+01:00,-3600,2023-11-15 16:50:16+01:00,-3600,True,False,['celery.py'],['b992204306bc47b17e0c505118485192292256a9'],1,1,2,1,,,
+9dd54bb3d6099eb5c31c708b7ac09f63dbd52e00,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.53.0 → v8.55.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.53.0...v8.55.0)
+- [github.com/tox-dev/pyproject-fmt: 1.5.1 → 1.5.3](https://github.com/tox-dev/pyproject-fmt/compare/1.5.1...1.5.3)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-04 17:24:02+00:00,0,2023-12-04 17:24:02+00:00,0,True,False,['.pre-commit-config.yaml'],['56782d6d75634cc0e99a9af5c89f638e8389fdcc'],2,2,4,1,,,
+80240538f2fab39e4844c8b80d831325895c44d7,"Bump actions/setup-python from 4 to 5
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 5.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v4...v5)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-06 15:37:09+00:00,0,2023-12-06 15:37:09+00:00,0,True,False,"['automated-checks.yml', 'pypi-release.yml']",['56782d6d75634cc0e99a9af5c89f638e8389fdcc'],4,4,8,2,,,
+5f36c7988a016515d143e8d83334f1387ead8929,"Bump actions/upload-artifact from 3 to 4
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 3 to 4.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 15:59:37+00:00,0,2023-12-15 15:59:37+00:00,0,True,False,['automated-checks.yml'],['789debe0b1889bd6b21a82088e080dc3d4b5e94e'],2,2,4,1,,,
+00686ae3efb32e0e4620ad351a27fe1a3fcac7c8,Update pypi-release.yml,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 17:24:12+01:00,-3600,2023-12-15 17:24:12+01:00,-3600,True,False,['pypi-release.yml'],['5f36c7988a016515d143e8d83334f1387ead8929'],1,1,2,1,,,
+f833b8cad2541e9f3fe82c854a03811df3804540,Update automated-checks.yml,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 17:27:50+01:00,-3600,2023-12-15 17:27:50+01:00,-3600,True,False,['automated-checks.yml'],['00686ae3efb32e0e4620ad351a27fe1a3fcac7c8'],39,26,65,1,,,
+4d83c40f93640e320af464816380d685ed39b9d2,Update automated-checks.yml,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 17:35:03+01:00,-3600,2023-12-15 17:35:03+01:00,-3600,True,False,['automated-checks.yml'],['f833b8cad2541e9f3fe82c854a03811df3804540'],6,6,12,1,,,
+9be7832ad3c301492b7a34d3f670fc0faafeaa9b,Codecov commented out,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 17:38:41+01:00,-3600,2023-12-15 17:38:41+01:00,-3600,True,False,['automated-checks.yml'],['4d83c40f93640e320af464816380d685ed39b9d2'],16,16,32,1,,,
+6b401eb2b28867feadfee48dc172f8f84b390caa,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.55.0 → v9.0.0-alpha.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.55.0...v9.0.0-alpha.0)
+- [github.com/PyCQA/isort: 5.12.0 → 5.13.2](https://github.com/PyCQA/isort/compare/5.12.0...5.13.2)
+- [github.com/psf/black: 23.11.0 → 23.12.1](https://github.com/psf/black/compare/23.11.0...23.12.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-01 17:21:58+00:00,0,2024-01-01 17:21:58+00:00,0,True,False,['.pre-commit-config.yaml'],['83849cc2f87d429aa5aca811816613c2d5a40af8'],3,3,6,1,,,
+d79a6e78388a8bf13625c01d60b0685945edea51,[FIX] Dependencies,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2024-01-01 22:28:53+01:00,-3600,2024-01-01 22:28:53+01:00,-3600,True,False,['.pre-commit-config.yaml'],['6b401eb2b28867feadfee48dc172f8f84b390caa'],3,3,6,1,,,

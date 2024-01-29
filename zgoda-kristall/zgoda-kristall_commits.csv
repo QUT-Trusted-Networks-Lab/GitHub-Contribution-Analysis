@@ -1,0 +1,250 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+ac395f19287b06f3d908d20d6d40ee5948321a73,Initial commit,Jarek Zgoda,jarek.zgoda@gmail.com,GitHub,noreply@github.com,2019-04-04 23:46:49+02:00,-7200,2019-04-04 23:46:49+02:00,-7200,True,False,"['LICENSE', 'README.md']",[],0,31,31,2,,,
+e3244d4fcbf41f1afb51f6b97cc2cd2ee81be988,Initial,Jarek Zgoda,jarek.zgoda@cirrus.com,Jarek Zgoda,jarek.zgoda@cirrus.com,2019-06-02 10:32:11+02:00,-7200,2019-06-02 10:32:11+02:00,-7200,True,False,"['.gitignore', 'MANIFEST.in', 'README.md', 'Makefile', '.gitkeep', '.gitkeep', 'conf.py', 'index.rst', 'make.bat', 'base.txt', 'dev.txt', 'test.txt', 'setup.cfg', 'setup.py', '__init__.py', '_metadata.py', 'application.py', '__init__.py']",['ac395f19287b06f3d908d20d6d40ee5948321a73'],2,354,356,18,1.0,1.0,1.0
+6a89561db787dcdf8c5da12e851aad738a9ebb4e,I'm back,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-20 15:19:07+01:00,-3600,2019-12-20 15:19:07+01:00,-3600,True,False,"['.editorconfig', 'base.txt', 'dev.txt', 'test.txt', 'setup.cfg', 'setup.py', '__init__.py', '_metadata.py', '_version.py', 'application.py']",['e3244d4fcbf41f1afb51f6b97cc2cd2ee81be988'],71,119,190,10,1.0,1.0,1.0
+2e975a30aac77e9578fe7d89389f8daa339866d9,"There will be application, request and response",Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-20 15:40:54+01:00,-3600,2019-12-20 15:40:54+01:00,-3600,True,False,"['application.py', 'request.py', 'response.py']",['6a89561db787dcdf8c5da12e851aad738a9ebb4e'],1,15,16,3,1.0,1.0,0.0
+a33dfa5b45014f5d2d4e986959bf4fff9e48b548,It lives,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-23 23:04:07+01:00,-3600,2019-12-23 23:04:07+01:00,-3600,True,False,"['README.md', 'README.rst', 'app.py', 'setup.py', 'application.py']",['2e975a30aac77e9578fe7d89389f8daa339866d9'],12,78,90,5,1.0,1.0,0.5
+f69e744b6ad7126eb9e3cacd28a3d7319baeaa41,Goals updated,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-24 00:02:25+01:00,-3600,2019-12-24 00:02:25+01:00,-3600,True,False,['README.rst'],['a33dfa5b45014f5d2d4e986959bf4fff9e48b548'],0,9,9,1,,,
+9fa8d3caa71bdf6914e2849fba2b2493225339bf,"Return JSON, ffs",Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-24 00:09:37+01:00,-3600,2019-12-24 00:09:37+01:00,-3600,True,False,"['app.py', 'application.py']",['f69e744b6ad7126eb9e3cacd28a3d7319baeaa41'],3,14,17,2,1.0,1.0,1.0
+1f819282ef7706a36215ca26d963a91860fc1596,Clarify JSON support level,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-24 23:45:28+01:00,-3600,2019-12-24 23:45:28+01:00,-3600,True,False,"['README.rst', 'application.py', 'request.py', 'response.py']",['9fa8d3caa71bdf6914e2849fba2b2493225339bf'],24,104,128,4,0.3225806451612903,0.3225806451612903,0.3870967741935484
+057de31573257e3fbb258fa9928cbe043bc79b44,"Further improved JSON support
+
+Allow iverriding both encoder and decoder.",Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-25 00:57:59+01:00,-3600,2019-12-25 00:57:59+01:00,-3600,True,False,"['README.rst', 'app.py', 'application.py', 'request.py']",['1f819282ef7706a36215ca26d963a91860fc1596'],3,29,32,4,1.0,1.0,0.5294117647058824
+4aab191d0558fb009c0e1125fd38aac0708c7a2b,Polls example,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-25 10:58:26+01:00,-3600,2019-12-25 10:58:26+01:00,-3600,True,False,"['app.py', 'app.py', '.babelrc', '.gitignore', 'README.md', 'package.json', 'favicon.ico', 'android-chrome-192x192.png', 'android-chrome-512x512.png', 'apple-touch-icon.png', 'favicon-16x16.png', 'favicon-32x32.png', 'mstile-150x150.png', 'app.js', 'index.js', 'style.css', 'index.js', 'manifest.json', 'index.js', 'style.css', 'index.js', 'style.css', 'index.css', 'browserMocks.js', 'fileMocks.js', 'setupTests.js', 'header.test.js']",['057de31573257e3fbb258fa9928cbe043bc79b44'],0,372,372,27,1.0,1.0,1.0
+09c4bef93799f5eba5d839c4a4b6e325cc0f8d72,Installation doc,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-25 11:13:23+01:00,-3600,2019-12-25 11:13:23+01:00,-3600,True,False,"['README.rst', 'conf.py', 'index.rst', 'quickstart.rst']",['4aab191d0558fb009c0e1125fd38aac0708c7a2b'],8,34,42,4,,,
+67cd675e079704e7b5752d7b78315f9801efebcc,Readme for polls example,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-25 12:02:11+01:00,-3600,2019-12-25 12:02:11+01:00,-3600,True,False,"['README.md', 'package.json', 'preact.config.js', 'index.css']",['09c4bef93799f5eba5d839c4a4b6e325cc0f8d72'],18,58,76,4,1.0,1.0,1.0
+784324e83db39abcf8fcb6ac4a79d08588e745b8,Almost complete backend,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-25 13:15:24+01:00,-3600,2019-12-25 13:15:24+01:00,-3600,True,False,"['.gitignore', 'LICENSE', 'app.py', 'setup.cfg', 'setup.py', '__init__.py', '_version.py', 'app.py', 'cli.py', 'models.py', 'resource.py', 'schema.py']",['67cd675e079704e7b5752d7b78315f9801efebcc'],37,362,399,12,1.0,1.0,0.7755102040816326
+d69dca11cfb986de94378b9e55796b1261fb3ca8,Backend for Polls example,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-27 16:36:46+01:00,-3600,2019-12-27 16:36:46+01:00,-3600,True,False,"['app.py', 'models.py', 'resource.py']",['784324e83db39abcf8fcb6ac4a79d08588e745b8'],39,55,94,3,1.0,1.0,0.4090909090909091
+967dfc4e264c1c50ee4d9aa6d07c30de436bc80c,Display poll list in UI,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-27 19:07:08+01:00,-3600,2019-12-27 19:07:08+01:00,-3600,True,False,"['app.js', 'index.js', 'style.css', 'index.js', 'style.css', 'index.js', 'style.css']",['d69dca11cfb986de94378b9e55796b1261fb3ca8'],138,30,168,7,0.0,0.0,0.0
+35037f3f2aa33df1b76e5dbb09fe96ab00fe55c8,Poll page in UI,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-27 19:50:08+01:00,-3600,2019-12-27 19:50:08+01:00,-3600,True,False,"['app.js', 'index.js', 'index.js', 'style.css']",['967dfc4e264c1c50ee4d9aa6d07c30de436bc80c'],1,38,39,4,1.0,1.0,1.0
+e3d5191dfa4a531f2702ccc6010c7cebf8c995b1,Context locals,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-27 23:31:44+01:00,-3600,2019-12-27 23:31:44+01:00,-3600,True,False,"['README.rst', 'quickstart.rst', 'resource.py', 'schema.py', 'application.py', 'utils.py']",['35037f3f2aa33df1b76e5dbb09fe96ab00fe55c8'],10,47,57,6,0.0,1.0,0.6666666666666666
+60e2ac3b928acad745bcd78f941d3b1f7bb5c239,Display poll options,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-27 23:58:28+01:00,-3600,2019-12-27 23:58:28+01:00,-3600,True,False,['index.js'],['e3d5191dfa4a531f2702ccc6010c7cebf8c995b1'],0,9,9,1,0.0,1.0,1.0
+bed78cd607d22fa28e5180909aee8a31b6e2c568,"Better resource endpoint registration
+
+There is no point in registering endpoints for all methods found in
+resource object, it's still the same resource.",Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-28 10:25:58+01:00,-3600,2019-12-28 10:25:58+01:00,-3600,True,False,"['resource.py', 'application.py']",['60e2ac3b928acad745bcd78f941d3b1f7bb5c239'],9,15,24,2,0.5,0.5,0.5
+ac273e122c50661f915df31588b203d7da2efbdc,Name of endpoint did change,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-28 10:28:16+01:00,-3600,2019-12-28 10:28:16+01:00,-3600,True,False,['resource.py'],['bed78cd607d22fa28e5180909aee8a31b6e2c568'],1,1,2,1,,,
+ca4a2da25ad2848131364d8d9d063b5349332f57,"Less in local storage, better annotations",Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-31 15:00:12+01:00,-3600,2019-12-31 15:00:12+01:00,-3600,True,False,"['package.json', 'application.py', 'request.py', 'utils.py']",['ac273e122c50661f915df31588b203d7da2efbdc'],13,13,26,4,0.0,0.0,0.0
+fb8ba9f39a56c6112c6505610b6444aab69b7876,Allow specifying endpoint name in resource object,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-31 15:55:06+01:00,-3600,2019-12-31 15:55:06+01:00,-3600,True,False,['application.py'],['ca4a2da25ad2848131364d8d9d063b5349332f57'],1,1,2,1,,,
+2eda15033968170f8959934d68e1617b4fa6f885,Back to Pony,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2019-12-31 17:20:26+01:00,-3600,2019-12-31 17:20:26+01:00,-3600,True,False,"['.gitignore', 'setup.py', 'models.py', 'schema.py', 'app.js']",['fb8ba9f39a56c6112c6505610b6444aab69b7876'],23,53,76,5,,,
+04730ab1c31180f3c3a840cc005a6d7adc4c704e,Do not use local and local_manager at all,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-01 17:14:57+01:00,-3600,2020-01-01 17:15:28+01:00,-3600,True,False,"['application.py', 'utils.py']",['2eda15033968170f8959934d68e1617b4fa6f885'],26,21,47,2,0.5,0.5,1.0
+c2bf0f97e8d7e8210441a5697df863966a5ff675,Polls example updated,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-01 18:32:49+01:00,-3600,2020-01-01 18:32:49+01:00,-3600,True,False,"['resource.py', 'schema.py', 'setup.cfg', 'application.py', 'utils.py']",['04730ab1c31180f3c3a840cc005a6d7adc4c704e'],52,47,99,5,1.0,0.0,0.5714285714285714
+ab4ba45c9c5137685e3680216399bfe9ab0f1b4f,Todo example to replace polls,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-01 20:22:20+01:00,-3600,2020-01-01 20:22:20+01:00,-3600,True,False,"['.gitignore', 'LICENSE', 'README.md', 'setup.cfg', 'setup.py', '__init__.py', '_version.py', 'app.py', 'cli.py', 'models.py', 'resource.py', 'schema.py', '.gitignore', 'README.md', 'favicon.ico', 'icon.png', 'manifest.json', 'package.json', 'preact.config.js', 'index.js', 'style.css', 'application.py']",['c2bf0f97e8d7e8210441a5697df863966a5ff675'],1,551,552,22,1.0,1.0,0.7878787878787878
+43d03528b51fd5f76e5a6524151e320f6eb28010,Use different Preact project preset,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-01 22:10:10+01:00,-3600,2020-01-01 22:10:10+01:00,-3600,True,False,"['.babelrc', '.gitignore', 'package.json', 'app.js', 'favicon.ico', 'android-chrome-192x192.png', 'android-chrome-512x512.png', 'apple-touch-icon.png', 'favicon-16x16.png', 'favicon-32x32.png', 'mstile-150x150.png', 'Home.js', 'index.js', 'manifest.json', 'style.css', 'index.css', 'browserMocks.js', 'fileMocks.js', 'setupTests.js', 'header.test.js']",['ab4ba45c9c5137685e3680216399bfe9ab0f1b4f'],25,156,181,20,1.0,1.0,1.0
+da5c8cf7e398650829a89497cb1e41a51aeb9ac1,Docs update,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-02 01:00:03+01:00,-3600,2020-01-02 01:00:03+01:00,-3600,True,False,"['index.rst', 'why.rst']",['43d03528b51fd5f76e5a6524151e320f6eb28010'],0,102,102,2,,,
+6fde97d5022dcfd718c2cf2cd009ec6535718fc0,"Remove Polls example, superseded by Todos",Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-02 01:01:53+01:00,-3600,2020-01-02 01:01:53+01:00,-3600,True,False,"['.gitignore', 'LICENSE', 'README.md', 'setup.cfg', 'setup.py', '__init__.py', '_version.py', 'app.py', 'cli.py', 'models.py', 'resource.py', 'schema.py', '.babelrc', '.gitignore', 'README.md', 'package.json', 'preact.config.js', 'favicon.ico', 'android-chrome-192x192.png', 'android-chrome-512x512.png', 'apple-touch-icon.png', 'favicon-16x16.png', 'favicon-32x32.png', 'mstile-150x150.png', 'app.js', 'index.js', 'manifest.json', 'index.js', 'style.css', 'index.js', 'style.css', 'index.css', 'browserMocks.js', 'fileMocks.js', 'setupTests.js', 'header.test.js']",['da5c8cf7e398650829a89497cb1e41a51aeb9ac1'],719,0,719,36,0.1337579617834395,0.0,0.11464968152866242
+2247ebc40d2b796a1b99625dc79df415548114d5,Add reference to README,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-02 01:07:27+01:00,-3600,2020-01-02 01:07:27+01:00,-3600,True,False,['README.rst'],['6fde97d5022dcfd718c2cf2cd009ec6535718fc0'],1,3,4,1,,,
+d2f089397456989cce6846e7c8e98d84cdd0fb9f,Remove pointless code,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-02 12:03:26+01:00,-3600,2020-01-02 12:03:26+01:00,-3600,True,False,['utils.py'],['2247ebc40d2b796a1b99625dc79df415548114d5'],7,0,7,1,0.0,0.0,0.0
+a6c01f71709bbf37f358714d347080e4b57c4dd6,Some more docs,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-02 12:40:51+01:00,-3600,2020-01-02 12:40:51+01:00,-3600,True,False,"['why.rst', 'application.py', 'utils.py']",['d2f089397456989cce6846e7c8e98d84cdd0fb9f'],3,79,82,3,0.5263157894736842,0.5263157894736842,0.47368421052631576
+c308404c51bb254e3375ee7c04e81bf769414f73,API docs,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-02 14:57:16+01:00,-3600,2020-01-02 14:57:16+01:00,-3600,True,False,"['conf.py', 'index.rst', 'kristall.rst', 'modules.rst', 'why.rst', 'application.py', 'request.py', 'response.py', 'utils.py']",['a6c01f71709bbf37f358714d347080e4b57c4dd6'],12,109,121,9,0.0,1.0,0.72
+2d02c7da19bba469fa2bd7c35fd6dbecae0b7d69,I hate javascript,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-03 00:51:48+01:00,-3600,2020-01-03 00:51:48+01:00,-3600,True,False,['Home.js'],['c308404c51bb254e3375ee7c04e81bf769414f73'],12,21,33,1,1.0,1.0,1.0
+3e040a066c5d1e3b9ecafc746104e296d6392c57,"Remove Click from requirements, it's not yet used",Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-03 11:22:18+01:00,-3600,2020-01-03 11:22:18+01:00,-3600,True,False,"['README.rst', 'setup.py']",['2d02c7da19bba469fa2bd7c35fd6dbecae0b7d69'],7,5,12,2,,,
+b1d64ab0403ece82825307d04251396e85e9deff,Disable debugger in dev server,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-03 11:44:43+01:00,-3600,2020-01-03 11:44:43+01:00,-3600,True,False,"['README.md', 'setup.py', 'cli.py']",['3e040a066c5d1e3b9ecafc746104e296d6392c57'],13,9,22,3,,,
+6c552ac8c1abfd5bbfd0998da99032d3a3d6a840,README for todos example,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-03 11:55:06+01:00,-3600,2020-01-03 11:55:06+01:00,-3600,True,False,['README.md'],['b1d64ab0403ece82825307d04251396e85e9deff'],2,4,6,1,,,
+b8d89bea0f8537d184e5709371a9f44c1712cc0e,"User select done, now user create",Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-03 14:57:32+01:00,-3600,2020-01-03 14:57:32+01:00,-3600,True,False,"['cli.py', 'resource.py', 'Home.js']",['6c552ac8c1abfd5bbfd0998da99032d3a3d6a840'],9,49,58,3,1.0,1.0,1.0
+6b951e503fcfe45c277a9ee3f5c580da0093de2b,User create form,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-03 16:02:45+01:00,-3600,2020-01-03 16:02:45+01:00,-3600,True,False,['Home.js'],['b8d89bea0f8537d184e5709371a9f44c1712cc0e'],5,22,27,1,1.0,1.0,1.0
+dd38b34eacfbb7035bae7d7c5517ab580d684e0f,Wrestling Javascript,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-03 17:29:41+01:00,-3600,2020-01-03 17:29:41+01:00,-3600,True,False,['Home.js'],['6b951e503fcfe45c277a9ee3f5c580da0093de2b'],17,57,74,1,1.0,1.0,1.0
+9491bf4e786baadadc026c2e298ea6a10631d0a3,Keep state in parent component,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-04 16:13:01+01:00,-3600,2020-01-04 16:13:01+01:00,-3600,True,False,['Home.js'],['dd38b34eacfbb7035bae7d7c5517ab580d684e0f'],19,18,37,1,1.0,1.0,1.0
+fa9d1d5aa25463d23562fe7ac7cf55185891d994,Display user todos,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-04 19:31:33+01:00,-3600,2020-01-04 19:31:33+01:00,-3600,True,False,"['app.py', 'resource.py', 'schema.py', 'Home.js']",['9491bf4e786baadadc026c2e298ea6a10631d0a3'],14,46,60,4,0.4074074074074074,1.0,0.8148148148148148
+76b54ce58ecb7328dd387e89027f69f7ac7a8b43,Add todo form,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-05 15:42:13+01:00,-3600,2020-01-05 15:42:13+01:00,-3600,True,False,"['cli.py', 'resource.py', 'schema.py', 'Home.js']",['fa9d1d5aa25463d23562fe7ac7cf55185891d994'],16,95,111,4,0.5740740740740741,1.0,0.8888888888888888
+b5a57dd8e4dbb114397570245475700c3c8fe1e7,State down,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-05 16:38:33+01:00,-3600,2020-01-05 16:38:33+01:00,-3600,True,False,['Home.js'],['76b54ce58ecb7328dd387e89027f69f7ac7a8b43'],4,4,8,1,,,
+9dee1d50e92c9a2c4150d642c41013baeb2bb313,NCU,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-08 12:44:56+01:00,-3600,2020-01-08 12:44:56+01:00,-3600,True,False,['package.json'],['b5a57dd8e4dbb114397570245475700c3c8fe1e7'],1,1,2,1,,,
+0a83cfa86a6551ce860b4c44293fa179247c0e1a,Properly pass props and state to render() method,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-08 13:04:40+01:00,-3600,2020-01-08 13:04:40+01:00,-3600,True,False,['Home.js'],['9dee1d50e92c9a2c4150d642c41013baeb2bb313'],9,9,18,1,,,
+1d9d184047fda36fd14518158d2046f789bd11da,NCU,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-13 17:58:22+01:00,-3600,2020-01-13 17:59:47+01:00,-3600,True,False,['package.json'],['0a83cfa86a6551ce860b4c44293fa179247c0e1a'],1,1,2,1,,,
+3c4a99205a413fbe4e52ebc882f600258e635861,Tests for Request class,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-19 18:20:05+01:00,-3600,2020-01-19 18:20:05+01:00,-3600,True,False,['test_request.py'],['1d9d184047fda36fd14518158d2046f789bd11da'],0,92,92,1,1.0,1.0,1.0
+1fcd822284687a4a5cebe22ceffd3ad094eb02c9,Tests for response object,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-19 19:58:53+01:00,-3600,2020-01-19 19:58:53+01:00,-3600,True,False,"['application.py', '__init__.py', 'test_application.py', 'test_request.py', 'test_response.py']",['3c4a99205a413fbe4e52ebc882f600258e635861'],4,69,73,5,1.0,1.0,0.95
+6b70d2cdaf3e0329c8db62d79e0c37c4685f5843,Deepsource and Travis,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-19 20:45:21+01:00,-3600,2020-01-19 20:45:21+01:00,-3600,True,False,"['.deepsource.toml', '.travis.yml']",['1fcd822284687a4a5cebe22ceffd3ad094eb02c9'],0,37,37,2,,,
+d54f581f51bea1366cf7a2caca96ffe1d723d359,Enable deepsource in travis,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-19 20:59:57+01:00,-3600,2020-01-19 20:59:57+01:00,-3600,True,False,"['.deepsource.toml', '.travis.yml', 'setup.py']",['6b70d2cdaf3e0329c8db62d79e0c37c4685f5843'],1,10,11,3,,,
+818754b330a59c5058d63cdd470a1af5931ed265,Deepsource is a joke,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-19 21:47:49+01:00,-3600,2020-01-19 21:47:49+01:00,-3600,True,False,"['.deepsource.toml', '.travis.yml']",['d54f581f51bea1366cf7a2caca96ffe1d723d359'],25,3,28,2,,,
+ebdf532c88bae9eae5658b5f87525138d465b151,Badges,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-19 21:57:49+01:00,-3600,2020-01-19 21:57:49+01:00,-3600,True,False,['README.rst'],['818754b330a59c5058d63cdd470a1af5931ed265'],0,12,12,1,,,
+08c890490ada2c880d24c06d342d3012486a85c2,Test for default error handler,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-19 22:21:27+01:00,-3600,2020-01-19 22:21:27+01:00,-3600,True,False,['test_application.py'],['ebdf532c88bae9eae5658b5f87525138d465b151'],0,10,10,1,1.0,1.0,1.0
+0ea96592cc9fe731e04af45f9a5c44955ef03514,"All missing tests
+
+And some unreachable code removed.",Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-20 15:59:59+01:00,-3600,2020-01-20 15:59:59+01:00,-3600,True,False,"['application.py', 'test_application.py', 'test_utils.py']",['08c890490ada2c880d24c06d342d3012486a85c2'],67,133,200,3,1.0,1.0,1.0
+2b359f827ee0487ad78c1a0bdf71064c90496cc6,Package uploaded to PyPI,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-20 16:40:34+01:00,-3600,2020-01-20 16:40:34+01:00,-3600,True,False,"['README.rst', 'setup.py']",['0ea96592cc9fe731e04af45f9a5c44955ef03514'],1,2,3,2,,,
+78c8afcf8367c56b49704f234f20ae74f389f848,NCU,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-26 00:05:55+01:00,-3600,2020-01-26 00:05:55+01:00,-3600,True,False,['package.json'],['2b359f827ee0487ad78c1a0bdf71064c90496cc6'],1,1,2,1,,,
+f290db72a2e0a89c8629a2eedbbfed58404d7b72,Updated example with sqlite options,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-01-31 12:49:44+01:00,-3600,2020-01-31 12:51:16+01:00,-3600,True,False,"['models.py', 'package.json']",['78c8afcf8367c56b49704f234f20ae74f389f848'],11,17,28,2,1.0,1.0,1.0
+2f41399a32f70c93f81450dea6f8e7be4553834b,Werkzeug 1.0 compat,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-02-16 23:29:06+01:00,-3600,2020-02-16 23:29:06+01:00,-3600,True,False,['setup.py'],['f290db72a2e0a89c8629a2eedbbfed58404d7b72'],1,0,1,1,,,
+ddf660e165c7a50a7db7732822f0a245a5a11d6c,"General update
+
+* new ReST linter
+* removed unused dev packages from setup.py
+* adapted to Werkzeug 1.0
+* updated Preact in examples",Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-03-11 14:34:39+01:00,-3600,2020-03-11 14:36:50+01:00,-3600,True,False,"['README.rst', 'package.json', 'setup.py']",['2f41399a32f70c93f81450dea6f8e7be4553834b'],8,8,16,3,,,
+bde0042b8837045c6ee0df767f01277bd9df0b80,Updated deps in TODO example,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-05-14 20:18:20+02:00,-7200,2020-05-14 20:19:39+02:00,-7200,True,False,['package.json'],['ddf660e165c7a50a7db7732822f0a245a5a11d6c'],2,2,4,1,,,
+f16421d875d0d5261e9ce01e9d3e3a91f045aa11,We're beta now,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-05-18 09:16:32+02:00,-7200,2020-05-18 09:16:32+02:00,-7200,True,False,"['setup.py', '_version.py']",['bde0042b8837045c6ee0df767f01277bd9df0b80'],12,8,20,2,0.0,0.0,0.0
+9ef05ca1b474ccdee1685eb42e56bf01dc7377a4,Unreachable,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-05-18 09:19:16+02:00,-7200,2020-05-18 09:19:16+02:00,-7200,True,False,['setup.py'],['f16421d875d0d5261e9ce01e9d3e3a91f045aa11'],1,0,1,1,0.0,0.0,0.0
+7a5f2fe03b790bbe179de7f1565db73c210e0c5e,Settle on Picnic CSS,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-09-16 22:55:57+02:00,-7200,2020-09-16 22:56:31+02:00,-7200,True,False,"['package.json', 'index.js']",['9ef05ca1b474ccdee1685eb42e56bf01dc7377a4'],8,5,13,2,,,
+85a024cae75f17bd8cafbb5eaee5fe0e3c5cd326,Setup cleanup,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-09-16 23:02:42+02:00,-7200,2020-09-16 23:02:42+02:00,-7200,True,False,['setup.py'],['7a5f2fe03b790bbe179de7f1565db73c210e0c5e'],9,4,13,1,,,
+e6a2fe2f5a1433a6a340e617528e832e1007f1ac,Remove unfinished example,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-12 20:37:03+01:00,-3600,2020-11-12 20:37:03+01:00,-3600,True,False,"['.gitignore', 'LICENSE', 'README.md', 'setup.cfg', 'setup.py', '__init__.py', '_version.py', 'app.py', 'cli.py', 'models.py', 'resource.py', 'schema.py', '.babelrc', '.gitignore', 'README.md', 'package.json', 'preact.config.js', 'app.js', 'favicon.ico', 'android-chrome-192x192.png', 'android-chrome-512x512.png', 'apple-touch-icon.png', 'favicon-16x16.png', 'favicon-32x32.png', 'mstile-150x150.png', 'Home.js', 'index.js', 'manifest.json', 'index.css', 'browserMocks.js', 'fileMocks.js', 'setupTests.js', 'header.test.js']",['85a024cae75f17bd8cafbb5eaee5fe0e3c5cd326'],898,0,898,33,0.13131313131313133,0.0,0.10774410774410774
+9aabfcae3e61518b72d573188f9cd934ef31e3b3,We've got pre-/post-request hooks,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-12 21:57:06+01:00,-3600,2020-11-12 21:57:06+01:00,-3600,True,False,"['setup.cfg', 'setup.py', '_version.py', 'application.py', 'test_application.py', 'test_handler_hooks.py', 'test_request.py', 'test_response.py']",['e6a2fe2f5a1433a6a340e617528e832e1007f1ac'],95,181,276,8,0.8125,0.3333333333333333,0.6041666666666666
+a75bd9b7f6322191baf2847671a02bb5dd8f16f3,Switch to Actions,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-12 22:12:55+01:00,-3600,2020-11-12 22:12:55+01:00,-3600,True,False,"['dependabot.yml', 'release.yml', 'tests.yml', '.travis.yml']",['9aabfcae3e61518b72d573188f9cd934ef31e3b3'],23,95,118,4,,,
+7025c038776a051e878e2b10b29a694d720ac486,YAML linted and new badges,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-12 22:23:20+01:00,-3600,2020-11-12 22:23:20+01:00,-3600,True,False,"['release.yml', 'tests.yml', 'README.rst']",['a75bd9b7f6322191baf2847671a02bb5dd8f16f3'],8,10,18,3,,,
+ed9cb7ddb5128a96a7ee71a71fc3ef7316a641ba,Cleaned it up,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-12 22:33:41+01:00,-3600,2020-11-12 22:33:41+01:00,-3600,True,False,['_version.py'],['7025c038776a051e878e2b10b29a694d720ac486'],1,1,2,1,,,
+a803421ad20b974e95c02d6e57b3f6a18e4cb4d8,Create SECURITY.md,Jarek Zgoda,jarek.zgoda@gmail.com,GitHub,noreply@github.com,2020-11-12 22:44:43+01:00,-3600,2020-11-12 22:44:43+01:00,-3600,True,False,['SECURITY.md'],['ed9cb7ddb5128a96a7ee71a71fc3ef7316a641ba'],0,9,9,1,,,
+8c9922c76c3b654def822b3e898ae3995c5f7e31,Dummy release to test CodeQL analysis,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-12 22:52:02+01:00,-3600,2020-11-12 22:52:02+01:00,-3600,True,False,"['release.yml', '_version.py']",['a803421ad20b974e95c02d6e57b3f6a18e4cb4d8'],25,38,63,2,,,
+87110e2fa2092be6c76b44617ca5627196249b18,Run PyPI deployment only if there's no security issues,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-12 23:09:54+01:00,-3600,2020-11-12 23:09:54+01:00,-3600,True,False,['release.yml'],['8c9922c76c3b654def822b3e898ae3995c5f7e31'],0,1,1,1,,,
+e040846582a07787c7385fb4ec572906e90b952c,Run tests also against 3.9,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-12 23:12:53+01:00,-3600,2020-11-12 23:12:53+01:00,-3600,True,False,['tests.yml'],['87110e2fa2092be6c76b44617ca5627196249b18'],2,2,4,1,,,
+1ca9ec2a8ad2739e98754919ab7c4f39bd0f9fe7,Reformatted docs/why,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-12 23:29:52+01:00,-3600,2020-11-12 23:29:52+01:00,-3600,True,False,"['why.rst', 'setup.py']",['e040846582a07787c7385fb4ec572906e90b952c'],66,12,78,2,,,
+d0622c8dc6dc4fc07b1a7e4699096108447a9e2c,RTD control file,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-12 23:33:41+01:00,-3600,2020-11-12 23:33:41+01:00,-3600,True,False,['.readthedocs.yml'],['1ca9ec2a8ad2739e98754919ab7c4f39bd0f9fe7'],0,12,12,1,,,
+12cfe51b95ec38f155b7ffb8d082bc9e49834a1c,Meta,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-13 21:48:10+01:00,-3600,2020-11-13 21:48:10+01:00,-3600,True,False,"['MANIFEST.in', 'conf.py', 'setup.py']",['d0622c8dc6dc4fc07b1a7e4699096108447a9e2c'],2,8,10,3,,,
+7e8727e0cea515b15947bb36b1639e099db343c3,Reformat docs,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-13 21:57:43+01:00,-3600,2020-11-13 21:57:43+01:00,-3600,True,False,"['index.rst', 'quickstart.rst']",['12cfe51b95ec38f155b7ffb8d082bc9e49834a1c'],25,6,31,2,,,
+78e23f7ff75582ef3ec43c6a7463e3aca7f77b0b,New todos example [WIP],Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-16 00:15:16+01:00,-3600,2020-11-16 00:16:55+01:00,-3600,True,False,"['README.rst', 'why.rst', '.gitignore', 'README.md', 'favicon.ico', 'icon.png', 'backend.py', 'manifest.json', 'package.json', 'preact.config.js', 'requirements.txt', 'index.js', 'style.css', 'sw.js', 'template.html']",['7e8727e0cea515b15947bb36b1639e099db343c3'],40,225,265,15,0.7575757575757576,1.0,0.9090909090909091
+50ff7123f44914f8896093e60035aac5397aa10e,Todos example contd [WIP],Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-16 17:52:09+01:00,-3600,2020-11-16 17:52:09+01:00,-3600,True,False,"['.editorconfig', '.gitignore', 'backend.py', 'favicon.ico', 'icon.png', 'form.js', 'item.js', 'list.js', 'index.js', 'manifest.json', 'style.css', 'template.html']",['78e23f7ff75582ef3ec43c6a7463e3aca7f77b0b'],31,67,98,12,1.0,1.0,1.0
+66f7c2ff4e70e9c96471cb48f8cb7acf5b5938b0,Update todo data,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-17 10:09:48+01:00,-3600,2020-11-17 10:09:48+01:00,-3600,True,False,['backend.py'],['50ff7123f44914f8896093e60035aac5397aa10e'],1,16,17,1,1.0,1.0,0.21428571428571427
+93a8378bf92134681670f84c08e7ea3067fd504d,Styled and displays todo,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-17 16:17:15+01:00,-3600,2020-11-17 16:17:15+01:00,-3600,True,False,"['backend.py', 'form.js', 'item.js', 'list.js', 'index.js', 'style.css']",['66f7c2ff4e70e9c96471cb48f8cb7acf5b5938b0'],15,88,103,6,0.5686274509803921,1.0,1.0
+18bba241b1a3b062b43f50dea5cd3814075c841f,Completed checkbox,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-17 16:52:15+01:00,-3600,2020-11-17 16:52:15+01:00,-3600,True,False,"['README.md', 'item.js']",['93a8378bf92134681670f84c08e7ea3067fd504d'],2,11,13,2,0.0,0.0,0.0
+873ba7aa4c515f47c0ffc603c164a0c14830a23b,Complete task button,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-17 20:51:17+01:00,-3600,2020-11-17 20:51:17+01:00,-3600,True,False,"['.gitignore', 'backend.py', 'package.json', 'form.js', 'item.js', 'index.js']",['18bba241b1a3b062b43f50dea5cd3814075c841f'],13,70,83,6,0.4146341463414634,1.0,0.9024390243902439
+b95e42ad08be7cc5593e12eb1b39de74152f928f,Refresh list upon adding todo,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-18 10:56:25+01:00,-3600,2020-11-18 10:56:25+01:00,-3600,True,False,"['form.js', 'index.js', 'style.css']",['873ba7aa4c515f47c0ffc603c164a0c14830a23b'],8,12,20,3,1.0,1.0,1.0
+05c6583a99fb9b0e16e64c62b15e105cee202432,Finally it looks,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-18 14:21:51+01:00,-3600,2020-11-18 14:21:51+01:00,-3600,True,False,"['package.json', 'form.js', 'item.js', 'index.js', 'style.css']",['b95e42ad08be7cc5593e12eb1b39de74152f928f'],41,21,62,5,1.0,0.0,0.0
+70ba5031e0ba7861c1c3390d4ac80d19f81ffc94,Updated README,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-18 16:03:51+01:00,-3600,2020-11-18 16:03:51+01:00,-3600,True,False,['README.rst'],['05c6583a99fb9b0e16e64c62b15e105cee202432'],3,3,6,1,,,
+dee581e8c9aa01f9648581d5c244bc117d108d1a,Todo example ready,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-11-18 22:25:49+01:00,-3600,2020-11-18 22:25:49+01:00,-3600,True,False,"['README.md', 'backend.py', 'item.js', 'index.js', 'style.css']",['70ba5031e0ba7861c1c3390d4ac80d19f81ffc94'],8,38,46,5,1.0,1.0,1.0
+d3d6253733049289ec05a84c3c0f0ff6bbdc23dd,Remove obsolete PIP feature,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-12-02 01:58:26+01:00,-3600,2020-12-02 01:58:26+01:00,-3600,True,False,['tests.yml'],['dee581e8c9aa01f9648581d5c244bc117d108d1a'],1,1,2,1,,,
+c0ee8c9ac306552a7be3f6a6322bf37f5681b25f,Fix RTD build,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2020-12-14 20:41:19+01:00,-3600,2020-12-14 20:41:19+01:00,-3600,True,False,['setup.py'],['d3d6253733049289ec05a84c3c0f0ff6bbdc23dd'],2,6,8,1,,,
+d0ac9b786862a9ab81405b508fc0a391fe184a32,"Bump actions/cache from v2.1.3 to v2.1.4 (#1)
+
+Bumps [actions/cache](https://github.com/actions/cache) from v2.1.3 to v2.1.4.
+- [Release notes](https://github.com/actions/cache/releases)
+- [Commits](https://github.com/actions/cache/compare/v2.1.3...26968a09c0ea4f3e233fdddbafd1166051a095f6)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-03-02 00:37:07+01:00,-3600,2021-03-02 00:37:07+01:00,-3600,True,False,"['release.yml', 'tests.yml']",['c0ee8c9ac306552a7be3f6a6322bf37f5681b25f'],2,2,4,2,,,
+895290203a7348424f30823fd3fba03c79d1b464,"Bump pypa/gh-action-pypi-publish from v1.4.1 to v1.4.2 (#2)
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from v1.4.1 to v1.4.2.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.4.1...27b31702a0e7fc50959f5ad993c78deac1bdfc29)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-03-02 00:39:18+01:00,-3600,2021-03-02 00:39:18+01:00,-3600,True,False,['release.yml'],['d0ac9b786862a9ab81405b508fc0a391fe184a32'],1,1,2,1,,,
+b766a34a0546a8615672fa888087b092c986a971,New Coveralls broke,Jarek Zgoda,jarek.zgoda@gmail.com,Jarek Zgoda,jarek.zgoda@gmail.com,2021-04-15 21:17:55+02:00,-7200,2021-04-15 21:17:55+02:00,-7200,True,False,['tests.yml'],['895290203a7348424f30823fd3fba03c79d1b464'],0,1,1,1,,,
+59ee8e0456eada4b25e273bb28d91985b076f688,"Bump actions/cache from v2.1.4 to v2.1.5 (#3)
+
+Bumps [actions/cache](https://github.com/actions/cache) from v2.1.4 to v2.1.5.
+- [Release notes](https://github.com/actions/cache/releases)
+- [Commits](https://github.com/actions/cache/compare/v2.1.4...1a9e2138d905efd099035b49d8b7a3888c653ca8)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-15 21:31:58+02:00,-7200,2021-04-15 21:31:58+02:00,-7200,True,False,"['release.yml', 'tests.yml']",['b766a34a0546a8615672fa888087b092c986a971'],2,2,4,2,,,
+8df6d75edcd04b8e47b99f715bda0af8d87a8a3c,Update README (#4),Jarek Zgoda,jarek.zgoda@gmail.com,GitHub,noreply@github.com,2021-04-15 22:21:48+02:00,-7200,2021-04-15 22:21:48+02:00,-7200,True,False,['README.rst'],['59ee8e0456eada4b25e273bb28d91985b076f688'],2,1,3,1,,,
+adbf7b5697cab2369b6f0d3bac17182996bd0632,"Bump actions/setup-python from 2 to 2.2.2 (#5)
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2 to 2.2.2.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2...v2.2.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-06-02 15:12:18+02:00,-7200,2021-06-02 15:12:18+02:00,-7200,True,False,"['release.yml', 'tests.yml']",['8df6d75edcd04b8e47b99f715bda0af8d87a8a3c'],2,2,4,2,,,
+6f6151dce0aa0ca6d36c7a58c18806c06899c89c,"Bump actions/cache from 2.1.5 to 2.1.6 (#6)
+
+Bumps [actions/cache](https://github.com/actions/cache) from 2.1.5 to 2.1.6.
+- [Release notes](https://github.com/actions/cache/releases)
+- [Commits](https://github.com/actions/cache/compare/v2.1.5...v2.1.6)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-10-15 21:49:01+02:00,-7200,2021-10-15 21:49:01+02:00,-7200,True,False,"['release.yml', 'tests.yml']",['adbf7b5697cab2369b6f0d3bac17182996bd0632'],2,2,4,2,,,
+fc404183b0a32350f67deb259306c5a6afa258b7,"Bump actions/checkout from 2.3.4 to 2.3.5 (#7)
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2.3.4 to 2.3.5.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.3.4...v2.3.5)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-10-15 21:49:13+02:00,-7200,2021-10-15 21:49:13+02:00,-7200,True,False,"['release.yml', 'tests.yml']",['6f6151dce0aa0ca6d36c7a58c18806c06899c89c'],3,3,6,2,,,
+2b9e06c18c2abd01b044e5ee1219b59be9e7ba91,"Bump actions/checkout from 2.3.5 to 2.4.0 (#8)
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2.3.5 to 2.4.0.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.3.5...v2.4.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-11-15 17:48:01+01:00,-3600,2021-11-15 17:48:01+01:00,-3600,True,False,"['release.yml', 'tests.yml']",['fc404183b0a32350f67deb259306c5a6afa258b7'],3,3,6,2,,,
+9ffc6b441087bb2cd2734679fb7c483769dd343e,"Bump actions/setup-python from 2.2.2 to 2.3.0 (#9)
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2.2.2 to 2.3.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.2.2...v2.3.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-11-21 15:46:59+01:00,-3600,2021-11-21 15:46:59+01:00,-3600,True,False,"['release.yml', 'tests.yml']",['2b9e06c18c2abd01b044e5ee1219b59be9e7ba91'],2,2,4,2,,,
+58b67b7d9642f65a9ae5502397f2789ffca449f1,"Bump actions/setup-python from 2.3.0 to 2.3.1 (#11)
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2.3.0 to 2.3.1.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.3.0...v2.3.1)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-11-29 22:37:56+01:00,-3600,2021-11-29 22:37:56+01:00,-3600,True,False,"['release.yml', 'tests.yml']",['9ffc6b441087bb2cd2734679fb7c483769dd343e'],2,2,4,2,,,
+bbfcfe2fcf25ec9459b54245a72dbd6f86d46821,"Bump actions/cache from 2.1.6 to 2.1.7 (#10)
+
+Bumps [actions/cache](https://github.com/actions/cache) from 2.1.6 to 2.1.7.
+- [Release notes](https://github.com/actions/cache/releases)
+- [Commits](https://github.com/actions/cache/compare/v2.1.6...v2.1.7)
+
+---
+updated-dependencies:
+- dependency-name: actions/cache
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-11-29 22:38:14+01:00,-3600,2021-11-29 22:38:14+01:00,-3600,True,False,"['release.yml', 'tests.yml']",['58b67b7d9642f65a9ae5502397f2789ffca449f1'],2,2,4,2,,,
+c27b6f95a0ea11dd1469b044a4f8febc63914f4a,Use native pip cache,Jarek Zgoda,jarek.zgoda@gmail.com,GitHub,noreply@github.com,2021-12-02 20:01:53+01:00,-3600,2021-12-02 20:01:53+01:00,-3600,True,False,['tests.yml'],['bbfcfe2fcf25ec9459b54245a72dbd6f86d46821'],10,4,14,1,,,
+3e72d7de97c19814d9ccad4e5316d32b1fb03c9d,No longer running Py38,Jarek Zgoda,jarek.zgoda@gmail.com,GitHub,noreply@github.com,2021-12-02 20:03:23+01:00,-3600,2021-12-02 20:03:23+01:00,-3600,True,False,['tests.yml'],['c27b6f95a0ea11dd1469b044a4f8febc63914f4a'],1,1,2,1,,,
+3b28097739074987c4bf0bbf5702a946cb00f9c9,"Bump pypa/gh-action-pypi-publish from 1.4.2 to 1.5.0 (#12)
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from 1.4.2 to 1.5.0.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.4.2...v1.5.0)
+
+---
+updated-dependencies:
+- dependency-name: pypa/gh-action-pypi-publish
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-14 17:51:54+01:00,-3600,2022-01-14 17:51:54+01:00,-3600,True,False,['release.yml'],['3e72d7de97c19814d9ccad4e5316d32b1fb03c9d'],1,1,2,1,,,

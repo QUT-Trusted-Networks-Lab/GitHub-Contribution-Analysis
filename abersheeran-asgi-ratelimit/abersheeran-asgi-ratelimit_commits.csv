@@ -1,0 +1,189 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+333ba7af7484fac1ae041ff0ce555a32924845d9,Initial commit,子休,AberSheeran@qq.com,子休,AberSheeran@qq.com,2020-05-20 14:11:41+08:00,-28800,2020-05-20 14:11:41+08:00,-28800,True,False,"['.gitattributes', '.gitignore', 'LICENSE', 'README.md', 'index.md', '__init__.py', '__version__.py', 'mkdocs.yml', 'pyproject.toml', 'docs.py', 'upload.py']",[],0,402,402,11,1.0,1.0,1.0
+c05f16d6a3b74f4d1119ad7b13bf1347a37dbef1,init,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-05-22 01:13:12+08:00,-28800,2020-05-22 01:13:12+08:00,-28800,True,False,"['pypi.yml', 'test.yml', 'README.md', 'mkdocs.yml', 'poetry.lock', 'pyproject.toml', '__init__.py', '__version__.py', '__init__.py', 'mongo.py', 'redis.py', 'core.py', 'rule.py', 'types.py', 'docs.py', 'upload.py', '__init__.py', '__init__.py', 'test_redis.py']",['333ba7af7484fac1ae041ff0ce555a32924845d9'],49,1223,1272,19,0.3193717277486911,0.4816753926701571,0.45549738219895286
+ef34b113fc5c2c0ccf17e2de47b90ad3d1d151a5,update poetry.lock,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-05-22 01:15:46+08:00,-28800,2020-05-22 01:15:46+08:00,-28800,True,False,['poetry.lock'],['c05f16d6a3b74f4d1119ad7b13bf1347a37dbef1'],19,19,38,1,,,
+cd93d17a0f0ce249afae8e98af14be94af278292,add client_ip judge,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-05-22 14:09:06+08:00,-28800,2020-05-22 14:09:06+08:00,-28800,True,False,"['__init__.py', 'ip.py', '__init__.py', 'test_ip.py']",['ef34b113fc5c2c0ccf17e2de47b90ad3d1d151a5'],0,64,64,4,0.08695652173913043,0.08695652173913043,1.0
+97f289c56ccd9de3a6ccd14a0ebc4fdc4e238dc2,update README.md,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-05-22 14:42:16+08:00,-28800,2020-05-22 14:42:16+08:00,-28800,True,False,['README.md'],['cd93d17a0f0ce249afae8e98af14be94af278292'],1,12,13,1,,,
+ed57864cabade7176e3337bf0eee76b0353a8158,add re match url,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-05-22 15:37:23+08:00,-28800,2020-05-22 15:37:23+08:00,-28800,True,False,"['core.py', 'test_redis.py']",['97f289c56ccd9de3a6ccd14a0ebc4fdc4e238dc2'],10,22,32,2,0.0,0.0,0.2222222222222222
+b54748539b7cfd97a46458b59c53105465ba1071,async def AUTH_FUNCTION,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-05-22 15:47:31+08:00,-28800,2020-05-22 15:47:31+08:00,-28800,True,False,"['README.md', 'ip.py', 'core.py', 'test_ip.py', 'test_redis.py']",['ed57864cabade7176e3337bf0eee76b0353a8158'],9,9,18,5,0.0,1.0,0.0
+b06a14cf5430b365888b901d78665928e9f3265e,only http,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-05-22 16:04:37+08:00,-28800,2020-05-22 16:04:37+08:00,-28800,True,False,['core.py'],['b54748539b7cfd97a46458b59c53105465ba1071'],0,3,3,1,0.0,0.0,0.0
+1a0c54f394e42b810ba35dfe2e28fad680a718c0,use lua script in redis decrease,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-05-25 18:52:37+08:00,-28800,2020-05-25 18:52:37+08:00,-28800,True,False,['redis.py'],['b06a14cf5430b365888b901d78665928e9f3265e'],21,17,38,1,1.0,1.0,1.0
+755bc17999ebf1c56d849f89413fdbdc7b86bea7,fix redis,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-05-29 15:23:29+08:00,-28800,2020-05-29 15:23:29+08:00,-28800,True,False,['redis.py'],['1a0c54f394e42b810ba35dfe2e28fad680a718c0'],1,5,6,1,1.0,1.0,0.0
+d079db61390f8a724aaeaf21d96edd647dc0a142,v0.1.1,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-05-29 15:50:31+08:00,-28800,2020-05-29 15:50:31+08:00,-28800,True,False,"['pyproject.toml', '__version__.py']",['755bc17999ebf1c56d849f89413fdbdc7b86bea7'],2,2,4,2,,,
+0cc742f396441ccf9d09ccbc0703c1297c1b1570,Update README.md,子休,me@abersheeran.com,GitHub,noreply@github.com,2020-06-15 22:38:13+08:00,-28800,2020-06-15 22:38:13+08:00,-28800,True,False,['README.md'],['d079db61390f8a724aaeaf21d96edd647dc0a142'],0,11,11,1,,,
+d2a0a803742818283b0537ef588468ac0f8f08aa,Update README.md,子休,me@abersheeran.com,GitHub,noreply@github.com,2020-06-15 22:43:02+08:00,-28800,2020-06-15 22:43:02+08:00,-28800,True,False,['README.md'],['0cc742f396441ccf9d09ccbc0703c1297c1b1570'],1,1,2,1,,,
+0867599f79e89008025ec552160be79cfe1d73f0,"change: client_ip
+add: jwt",abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-06-15 23:54:30+08:00,-28800,2020-06-15 23:54:30+08:00,-28800,True,False,"['.coveragerc', 'test.yml', 'README.md', 'poetry.lock', 'pyproject.toml', 'ip.py', 'jwt.py', '__init__.py', 'test_ip.py', 'test_jwt.py']",['d2a0a803742818283b0537ef588468ac0f8f08aa'],83,227,310,10,0.5,1.0,0.5
+ee041fd0dd105d48b1d7b2aaac99ff035b0327eb,Update README.md,子休,me@abersheeran.com,GitHub,noreply@github.com,2020-06-20 00:22:50+08:00,-28800,2020-06-20 00:22:50+08:00,-28800,True,False,['README.md'],['0867599f79e89008025ec552160be79cfe1d73f0'],0,6,6,1,,,
+227f6a5065c0111fac6cb30b758cbf11bce49196,update to 0.2,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-06-28 03:04:16+08:00,-28800,2020-06-28 03:04:16+08:00,-28800,True,False,"['README.md', 'poetry.lock', '__version__.py', '__init__.py', 'ip.py', 'jwt.py', 'session.py', '__init__.py', 'base.py', 'redis.py', 'core.py', 'test_ip.py', 'test_jwt.py', 'test_session.py', 'test_base.py', 'test_redis.py']",['0867599f79e89008025ec552160be79cfe1d73f0'],99,243,342,16,0.56,0.54,0.6
+63917cb6b4dfdc25f0c8b864b41fd8ea2f0f0bce,fix readme.md,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-06-28 03:05:26+08:00,-28800,2020-06-28 03:05:26+08:00,-28800,True,False,['README.md'],['e0c01bd0cd98e18c82fcb0fc4410d739e2a4994d'],1,1,2,1,,,
+30ca0a3842537c849a5ce021d9ff485b46337999,v0.2.0,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-06-28 03:06:50+08:00,-28800,2020-06-28 03:06:50+08:00,-28800,True,False,['pyproject.toml'],['63917cb6b4dfdc25f0c8b864b41fd8ea2f0f0bce'],1,1,2,1,,,
+779644218d685256dc02d78a1091ffacd63986a1,delete send disconnect,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-07-12 06:46:58+08:00,-28800,2020-07-12 06:46:58+08:00,-28800,True,False,['core.py'],['30ca0a3842537c849a5ce021d9ff485b46337999'],1,0,1,1,1.0,1.0,1.0
+6cfaaec11f7f4e6ed597b98adb0956877e4acbd7,close #1,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-08-06 23:19:40+08:00,-28800,2020-08-06 23:19:40+08:00,-28800,True,False,"['base.py', 'mongo.py', 'redis.py', 'rule.py', 'test_redis.py']",['779644218d685256dc02d78a1091ffacd63986a1'],17,59,76,5,0.3611111111111111,1.0,0.6388888888888888
+c9742ab6d948a7ce8a8b5b96f4a255cb868bb646,100% coverage,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-08-06 23:19:47+08:00,-28800,2020-08-06 23:19:47+08:00,-28800,True,False,['test.yml'],['6cfaaec11f7f4e6ed597b98adb0956877e4acbd7'],1,1,2,1,,,
+5c9c6d0f42b4a0c87d2a5aea1bae3a2880267aa4,Update coverage config,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-08-06 23:24:56+08:00,-28800,2020-08-06 23:24:56+08:00,-28800,True,False,"['.coveragerc', 'pyproject.toml']",['c9742ab6d948a7ce8a8b5b96f4a255cb868bb646'],21,15,36,2,,,
+cc40f0664e36214728a6dbdb1bd95358c8782f26,add `pragma: no cover`,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-08-06 23:27:35+08:00,-28800,2020-08-06 23:27:35+08:00,-28800,True,False,['jwt.py'],['5c9c6d0f42b4a0c87d2a5aea1bae3a2880267aa4'],2,2,4,1,,,
+e3b919619405235168014d4148102c9a3eb1da10,Update README.md,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-08-06 23:32:02+08:00,-28800,2020-08-06 23:32:02+08:00,-28800,True,False,['README.md'],['cc40f0664e36214728a6dbdb1bd95358c8782f26'],0,6,6,1,,,
+8c3b665528b34556f8908a5e3d91c87880c985f0,v0.3.0,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-08-06 23:34:48+08:00,-28800,2020-08-06 23:34:48+08:00,-28800,True,False,"['pyproject.toml', '__version__.py']",['e3b919619405235168014d4148102c9a3eb1da10'],2,2,4,2,,,
+e1a859b361cbd52dbdc97653956a38244aecc333,Update README.md,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-08-06 23:42:17+08:00,-28800,2020-08-06 23:42:17+08:00,-28800,True,False,['README.md'],['8c3b665528b34556f8908a5e3d91c87880c985f0'],1,1,2,1,,,
+f0c03b231f265b3fa6ffc3ffc7df56ce300d1077,"Change to block all request, description in README.md",abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-09-02 14:13:01+08:00,-28800,2020-09-02 14:13:01+08:00,-28800,True,False,"['base.py', 'redis.py']",['e1a859b361cbd52dbdc97653956a38244aecc333'],8,8,16,2,,,1.0
+e57f5dcea21174e81c48097532749b1ee5316b7a,v0.3.1,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-09-02 14:14:34+08:00,-28800,2020-09-02 14:14:34+08:00,-28800,True,False,"['pyproject.toml', '__version__.py']",['f0c03b231f265b3fa6ffc3ffc7df56ce300d1077'],2,2,4,2,,,
+79675804abdf83c3b3a2547bd989a366a576fb2e,Fix read group from jwt,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-09-14 16:43:16+08:00,-28800,2020-09-14 16:43:16+08:00,-28800,True,False,['jwt.py'],['e57f5dcea21174e81c48097532749b1ee5316b7a'],1,4,5,1,0.0,1.0,1.0
+4ff63c8a31b4f7ef50baf73af163841c6714cee4,Add more tests to cover all code,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-09-14 16:48:50+08:00,-28800,2020-09-14 16:48:50+08:00,-28800,True,False,['test_jwt.py'],['79675804abdf83c3b3a2547bd989a366a576fb2e'],1,24,25,1,,,
+86a8a0bce321f1df9adc16bf83186a6dc206a16d,v0.3.2,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-09-14 16:53:10+08:00,-28800,2020-09-14 16:53:10+08:00,-28800,True,False,"['pyproject.toml', '__version__.py']",['4ff63c8a31b4f7ef50baf73af163841c6714cee4'],2,2,4,2,,,
+019e27e1d9607ac0ecba0172b62ebca61d284072,Update dev dependencies,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-12-05 17:46:30+08:00,-28800,2020-12-05 17:46:30+08:00,-28800,True,False,"['poetry.lock', 'pyproject.toml', 'test_redis.py']",['86a8a0bce321f1df9adc16bf83186a6dc206a16d'],330,269,599,3,0.0,0.0,1.0
+e8851459d71029bb5fc6b551a284e11ae5132ebd,Allow set custom response on blocked,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-12-05 17:47:00+08:00,-28800,2020-12-05 17:47:00+08:00,-28800,True,False,['core.py'],['019e27e1d9607ac0ecba0172b62ebca61d284072'],2,9,11,1,0.0,1.0,0.0
+63c404cd87f663eae13bad18f1c78c41d07012c2,Update README.md,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-12-05 17:53:10+08:00,-28800,2020-12-05 17:53:10+08:00,-28800,True,False,['README.md'],['e8851459d71029bb5fc6b551a284e11ae5132ebd'],0,13,13,1,,,
+0bfa542cda751ed2624ef50bdc2362e3783f4b13,v0.4.0,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2020-12-05 17:55:24+08:00,-28800,2020-12-05 17:55:24+08:00,-28800,True,False,"['pyproject.toml', '__version__.py']",['63c404cd87f663eae13bad18f1c78c41d07012c2'],2,2,4,2,,,
+e64c2737c6b3a25eb99e7c48bcc63cd86423ae6f,Update README.md,Aber,me@abersheeran.com,GitHub,noreply@github.com,2020-12-29 22:04:35+08:00,-28800,2020-12-29 22:04:35+08:00,-28800,True,False,['README.md'],['0bfa542cda751ed2624ef50bdc2362e3783f4b13'],0,3,3,1,,,
+323ddda77424b1df66647fb7be0e4514a4658c72,Add more code examples to Readme (#7),mlen,422316+mlen108@users.noreply.github.com,GitHub,noreply@github.com,2021-01-21 15:13:29+00:00,0,2021-01-21 23:13:29+08:00,-28800,True,False,['README.md'],['e64c2737c6b3a25eb99e7c48bcc63cd86423ae6f'],17,78,95,1,,,
+0b1f7227a4df96be34fbacce124acdd6a94be19f,Fix README description,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2021-01-21 23:16:39+08:00,-28800,2021-01-21 23:16:39+08:00,-28800,True,False,['README.md'],['323ddda77424b1df66647fb7be0e4514a4658c72'],12,9,21,1,,,
+fea7276e35007373f26a5bb205bee5f30a463787,Another redis implementation (#10),euri10,euri10@users.noreply.github.com,GitHub,noreply@github.com,2021-03-27 18:55:49+01:00,-3600,2021-03-28 01:55:49+08:00,-28800,True,False,"['poetry.lock', 'redis.py', 'slidingredis.py', 'rule.py', 'test_session.py', 'test_base.py', 'test_redis.py']",['0b1f7227a4df96be34fbacce124acdd6a94be19f'],204,406,610,7,0.611764705882353,1.0,0.5647058823529412
+3247f826071c608e522b58e54b073eac6af607a8,"Added Handling Auth Errors (#13)
+
+* Added ASGIAPPError
+
+Basically the same as ASGIAPP type with the addition of an Exception parameter
+
+* Added default_401 function
+
+Default error handler for on_auth_error
+
+* Added on_auth_error to RateLimitMiddleware
+
+All exceptions from RateLimitMiddleware.authenticate are send to RateLimitMiddleware.on_auth_error and __call__ returns after that
+
+* Added one test for missing auth
+
+Test sends a request with empty headers to make sure the EmptyInformation exception is handled by on_auth_error and a 401 status code is returned
+
+* Leave handling auth error to user
+
+on_auth_error will be None by default and will raise the exception in the auth function. If user provides a on_auth_error parameter, it will be called and its reponse returned
+
+* Remove ASGIAppError
+
+It's not needed anymore
+
+* Remove added test form test_redis
+
+* Added tests to test_core.py
+
+Includes tests for 200 response, raising exceptions by default, returning 401 based on user-defined on_auth_error and etc
+
+* Updated readme to include on_auth_error
+
+Added explanation for authentication errors and how to define a custom error handler
+
+Co-Authored-By: Aber <me@abersheeran.com>
+
+* Fix typo
+
+* Added advanced usage
+
+Added an example to the readme for advanced usage of the error handler
+
+* Fix type annotation and missing async
+
+- Fixed type annotation for on_auth_handler parameter
+- added async to the inner function of the advanced usage example in the readme
+
+Co-Authored-By: Aber <me@abersheeran.com>
+
+Co-authored-by: Aber <me@abersheeran.com>",allerter,45076212+allerter@users.noreply.github.com,GitHub,noreply@github.com,2021-03-31 20:06:53+04:30,-16200,2021-03-31 23:36:53+08:00,-28800,True,False,"['README.md', 'core.py', 'test_core.py']",['fea7276e35007373f26a5bb205bee5f30a463787'],2,128,130,3,0.38666666666666666,0.7466666666666667,0.72
+7aec8f771eb7cd7a6ec467930030ed60227592b2,Added warning in README about patter order (#17),euri10,euri10@users.noreply.github.com,GitHub,noreply@github.com,2021-04-06 09:49:43+02:00,-7200,2021-04-06 15:49:43+08:00,-28800,True,False,['README.md'],['3247f826071c608e522b58e54b073eac6af607a8'],0,2,2,1,,,
+75d619663f877e74839b9e6b625b5e38f5f67e6a,Allow using ssl with redis backends (#23),hepaajan,hepaajan@iki.fi,GitHub,noreply@github.com,2021-05-18 11:10:03+03:00,-10800,2021-05-18 16:10:03+08:00,-28800,True,False,"['redis.py', 'slidingredis.py']",['7aec8f771eb7cd7a6ec467930030ed60227592b2'],2,4,6,2,1.0,1.0,0.0
+140fa1a96f329be3febc7878765789e2943a7ab5,"Added more supported versions of py and redis in CI (#24)
+
+* Added more supported versions of py and redis
+
+* 3.10 ?
+
+* ^ hours of live CI debugging CI can save you 5 min of reading the logs ?
+
+Error: Version 3.10-dev with arch x64 not found
+Available versions:
+
+2.7.18 (x64)
+3.5.10 (x64)
+3.6.13 (x64)
+3.7.10 (x64)
+3.8.10 (x64)
+3.9.5 (x64)",euri10,euri10@users.noreply.github.com,GitHub,noreply@github.com,2021-05-20 15:21:20+02:00,-7200,2021-05-20 21:21:20+08:00,-28800,True,False,['test.yml'],['75d619663f877e74839b9e6b625b5e38f5f67e6a'],2,2,4,1,,,
+327d99dbc29d2b05e4b215b227608df76018492e,"Added isort flake8 and their respective config, and blake + fixes (#25)
+
+* Added isort flake8 and their respective config, and blake + fixes
+Modified CI to add black/isort/flake8
+
+* Blacked post rebase with master
+
+* Removed pytest-cov from CI
+
+* Fix version coverage
+
+* Fix ip coverage
+
+* Fix jwt auth coverage
+
+* Corrected fix ip coverage
+
+* Real fix...
+
+* Blacked
+
+* Ignore those lines on partial coverage since we can test those (would have to wait 2 long ?)
+
+* Blacked again
+
+* Simplified core",euri10,euri10@users.noreply.github.com,GitHub,noreply@github.com,2021-05-21 03:40:16+02:00,-7200,2021-05-21 09:40:16+08:00,-28800,True,False,"['.flake8', 'test.yml', 'poetry.lock', 'pyproject.toml', '__init__.py', 'ip.py', 'jwt.py', 'session.py', '__init__.py', 'base.py', 'redis.py', 'slidingredis.py', 'core.py', 'rule.py', 'test_ip.py', 'test_jwt.py', 'test_base.py', 'test_core.py', 'test_ratelimit.py']",['140fa1a96f329be3febc7878765789e2943a7ab5'],57,104,161,19,0.375,0.375,0.875
+29ff60dda04f4e3bb5b84907e5f9ec8d0576bc15,Update and rename test.yml to ci.yml,Aber,me@abersheeran.com,GitHub,noreply@github.com,2021-06-15 15:16:41+08:00,-28800,2021-06-15 15:16:41+08:00,-28800,True,False,['ci.yml'],['327d99dbc29d2b05e4b215b227608df76018492e'],2,18,20,1,,,
+ee5671056911474b4f4a10fddaf27326053039c8,Optimize lua code in default redis backend (#15),Aber,me@abersheeran.com,GitHub,noreply@github.com,2021-06-15 15:22:03+08:00,-28800,2021-06-15 15:22:03+08:00,-28800,True,False,"['pyproject.toml', 'base.py', 'redis.py', 'slidingredis.py', 'rule.py', 'test_base.py', 'test_redis.py']",['29ff60dda04f4e3bb5b84907e5f9ec8d0576bc15'],214,104,318,7,0.7926829268292683,1.0,0.7682926829268293
+c427683dfb6e6e9fd402a5a6bc887e5a223be5c8,Reformat README,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2021-06-16 10:26:13+08:00,-28800,2021-06-16 10:26:13+08:00,-28800,True,False,['README.md'],['ee5671056911474b4f4a10fddaf27326053039c8'],2,4,6,1,,,
+591d367b8c86d98cfc37c01e318adfd76ee842b7,Make response header `Retry-after` (#27),Aber,me@abersheeran.com,GitHub,noreply@github.com,2021-06-23 17:11:07+08:00,-28800,2021-06-23 17:11:07+08:00,-28800,True,False,"['base.py', 'redis.py', 'slidingredis.py', 'core.py', 'rule.py', 'test_redis.py']",['c427683dfb6e6e9fd402a5a6bc887e5a223be5c8'],30,62,92,6,0.8260869565217391,0.9130434782608695,0.21739130434782608
+9e9c00da1aa16aa24fbd77b4e80e9dbfa13ddba8,v0.5.1,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2021-06-23 17:14:41+08:00,-28800,2021-06-23 17:14:41+08:00,-28800,True,False,"['pyproject.toml', '__version__.py']",['591d367b8c86d98cfc37c01e318adfd76ee842b7'],2,2,4,2,,,
+f81ecbda417e53e1572fa5689b2367bec8642073,Fixed version test,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2021-06-23 17:17:48+08:00,-28800,2021-06-23 17:17:48+08:00,-28800,True,False,['test_ratelimit.py'],['9e9c00da1aa16aa24fbd77b4e80e9dbfa13ddba8'],1,1,2,1,,,
+68d3b9f157ce95655742d5dc710730ddbcbe0d42,Docs: fix custom block (#31),euri10,euri10@users.noreply.github.com,GitHub,noreply@github.com,2021-06-29 14:06:33+02:00,-7200,2021-06-29 20:06:33+08:00,-28800,True,False,"['README.md', 'test_core.py']",['f81ecbda417e53e1572fa5689b2367bec8642073'],4,49,53,2,0.42857142857142855,1.0,0.6785714285714286
+08d3a818d65021a843f94338568426d1d231e9f4,Make multiple APIs share the flow control (#33),Aber,me@abersheeran.com,GitHub,noreply@github.com,2021-07-07 09:32:15+08:00,-28800,2021-07-07 09:32:15+08:00,-28800,True,False,"['README.md', 'core.py', 'rule.py', 'test_core.py']",['68d3b9f157ce95655742d5dc710730ddbcbe0d42'],7,46,53,4,0.0,0.8636363636363636,0.8636363636363636
+7a55f33eae478eb57c4a3ce8301ad34aae37879f,v0.6.0,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2021-07-07 09:35:08+08:00,-28800,2021-07-07 09:35:08+08:00,-28800,True,False,"['pyproject.toml', '__version__.py']",['08d3a818d65021a843f94338568426d1d231e9f4'],2,2,4,2,,,
+4c7e2908a80a327cb0822bce53526dc78f66aa93,Support customize user & group key in jwt (#41),Ethon,48890023@qq.com,GitHub,noreply@github.com,2021-12-24 20:52:31+08:00,-28800,2021-12-24 20:52:31+08:00,-28800,True,False,"['poetry.lock', 'jwt.py', 'test_jwt.py']",['7a55f33eae478eb57c4a3ce8301ad34aae37879f'],188,277,465,3,1.0,1.0,0.0
+e4614a230747bdbbcd996933c1f1ca4d0bc8a7c2,v0.6.1,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2021-12-29 06:15:27+00:00,0,2021-12-29 06:15:27+00:00,0,True,False,"['pyproject.toml', '__version__.py']",['4c7e2908a80a327cb0822bce53526dc78f66aa93'],2,2,4,2,,,
+504de6dca1eb99762114a0886d502679a608799e,Check the args when init class and fix some typo. (#44),Ethon,huangsong@leyantech.com,GitHub,noreply@github.com,2022-01-04 12:52:34+08:00,-28800,2022-01-04 12:52:34+08:00,-28800,True,False,"['core.py', 'rule.py', 'test_ip.py', 'test_jwt.py', 'test_core.py']",['e4614a230747bdbbcd996933c1f1ca4d0bc8a7c2'],32,90,122,5,0.0,1.0,0.9333333333333333
+31e74bf3934358bc99ee520b6612944897462962,Support simple limiter in memory (#46),Ethon,huangsong@leyantech.com,GitHub,noreply@github.com,2022-01-12 14:36:41+08:00,-28800,2022-01-12 14:36:41+08:00,-28800,True,False,"['README.md', 'poetry.lock', 'pyproject.toml', '__version__.py', 'simple.py', 'backend_utils.py', 'test_redis.py', 'test_simple.py']",['504de6dca1eb99762114a0886d502679a608799e'],116,326,442,8,0.4956521739130435,0.8,0.6
+00eac1196e166e44cd894e5c7c1785c22a5a33db,Added ci for 3.10 (#51),euri10,benoit.barthelet@gmail.com,GitHub,noreply@github.com,2022-01-18 10:31:28+01:00,-3600,2022-01-18 17:31:28+08:00,-28800,True,False,['ci.yml'],['31e74bf3934358bc99ee520b6612944897462962'],1,1,2,1,,,
+9af3a7a32e9eab58460ed67c76959ed13bdfc57c,Fixed python3.10 tests,Aber,me@abersheeran.com,GitHub,noreply@github.com,2022-01-18 22:37:38+08:00,-28800,2022-01-18 22:37:38+08:00,-28800,True,False,['ci.yml'],['00eac1196e166e44cd894e5c7c1785c22a5a33db'],1,1,2,1,,,
+ed145a9b42d23948ee67de00f4af0af87fda99cf,"Switch to redis-py (#57)
+
+* Switch packages aredis to redis-py
+
+* Fix post switch
+
+* Upgraded pytest for CI",euri10,benoit.barthelet@gmail.com,GitHub,noreply@github.com,2022-03-11 08:18:36+01:00,-3600,2022-03-11 15:18:36+08:00,-28800,True,False,"['poetry.lock', 'pyproject.toml', 'redis.py', 'slidingredis.py', 'test_redis.py']",['9af3a7a32e9eab58460ed67c76959ed13bdfc57c'],195,299,494,5,0.0,0.0,1.0
+90a0e08d14fee034a5704fc90d044acb2157111d,Use subprocess.check_call replace os.system,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2022-03-17 01:22:38+00:00,0,2022-03-17 01:22:38+00:00,0,True,False,['upload.py'],['ed145a9b42d23948ee67de00f4af0af87fda99cf'],6,7,13,1,,,
+a1cee5113f49d9a694c5c67a3c5720a41b3bc426,black .,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2022-03-17 02:17:20+00:00,0,2022-03-17 02:17:20+00:00,0,True,False,['upload.py'],['90a0e08d14fee034a5704fc90d044acb2157111d'],1,3,4,1,,,
+a472c0fd455d24fd5f99aedcdae7d507f2b67652,v0.8.0,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2022-03-17 02:48:23+00:00,0,2022-03-17 02:48:23+00:00,0,True,False,"['pyproject.toml', '__version__.py']",['a1cee5113f49d9a694c5c67a3c5720a41b3bc426'],2,2,4,2,,,
+fb30fc200abe8d0a49f14715de87d7a34813ef53,Use token to publish pypi,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2022-03-17 03:52:17+00:00,0,2022-03-17 03:52:17+00:00,0,True,False,['pypi.yml'],['a472c0fd455d24fd5f99aedcdae7d507f2b67652'],1,1,2,1,,,
+923264fa4091df555e7ef2c1e8a5cf347d2c9e15,Fix import error in example,Aber,me@abersheeran.com,GitHub,noreply@github.com,2022-03-25 09:24:08+08:00,-28800,2022-03-25 09:24:08+08:00,-28800,True,False,['README.md'],['fb30fc200abe8d0a49f14715de87d7a34813ef53'],1,2,3,1,,,
+c79d69477851df81a1d7cd269fc40e4e63e083cb,Add py.typed (#62),Aber,me@abersheeran.com,GitHub,noreply@github.com,2022-05-06 10:45:17+08:00,-28800,2022-05-06 10:45:17+08:00,-28800,True,False,['py.typed'],['923264fa4091df555e7ef2c1e8a5cf347d2c9e15'],0,0,0,1,,,
+159e704d3ad03f76012f07c198cd1e22ac2b39af,Fixed zero rating behaviour in MemoryBackend (#64),Aber,me@abersheeran.com,GitHub,noreply@github.com,2022-05-07 10:31:11+08:00,-28800,2022-05-07 10:31:11+08:00,-28800,True,False,['simple.py'],['c79d69477851df81a1d7cd269fc40e4e63e083cb'],21,20,41,1,1.0,1.0,0.0
+64982232d226309db5659e99c4f55cad1e41776c,Use dependency injection StrictRedis object (#63),Aber,me@abersheeran.com,GitHub,noreply@github.com,2022-05-07 10:32:03+08:00,-28800,2022-05-07 10:32:03+08:00,-28800,True,False,"['README.md', 'redis.py', 'slidingredis.py', 'test_redis.py', 'test_core.py']",['159e704d3ad03f76012f07c198cd1e22ac2b39af'],46,21,67,5,0.0,0.0,1.0
+a4bfb3a93f56ad1184841b68667a722690b78984,v0.9.0,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2022-05-07 10:41:33+08:00,-28800,2022-05-07 10:41:33+08:00,-28800,True,False,"['pyproject.toml', '__version__.py']",['64982232d226309db5659e99c4f55cad1e41776c'],2,2,4,2,,,
+986aaa33a2e1a9f8e24c3d4d889128dd0bb15a9a,Update LICENSE,Aber,me@abersheeran.com,GitHub,noreply@github.com,2022-05-08 15:04:52+08:00,-28800,2022-05-08 15:04:52+08:00,-28800,True,False,['LICENSE'],['a4bfb3a93f56ad1184841b68667a722690b78984'],1,1,2,1,,,
+30dc41723a904508c0e776a3ff80d170feffa4d3,"Feature: Add method to Rule (#67)
+
+* add method to rule, add test and update readme
+
+* add method rate limiting support to redis backends, update tests
+
+* add support for by client rate limiting to memorybackend
+
+* add method docs
+
+* fix formatting, reduce down to one search for matching rule
+
+* revert blocking change to block user
+
+* fix error in test, update remove rule test to include http method
+
+* update method in remove rule to default",pat,patrickhennis@gmail.com,GitHub,noreply@github.com,2022-10-25 02:23:03-04:00,14400,2022-10-25 14:23:03+08:00,-28800,True,False,"['README.md', 'core.py', 'rule.py', 'test_simple.py', 'test_core.py']",['986aaa33a2e1a9f8e24c3d4d889128dd0bb15a9a'],5,76,81,5,0.0,0.8823529411764706,0.8823529411764706
+3a57befe84b584c7f08a9c9c5ea071c6e38be082,v0.10.0,abersheeran,me@abersheeran.com,abersheeran,me@abersheeran.com,2022-12-07 05:20:56+00:00,0,2022-12-07 05:20:56+00:00,0,True,False,"['pyproject.toml', '__version__.py']",['30dc41723a904508c0e776a3ff80d170feffa4d3'],2,2,4,2,,,
+eabbe81d7110099462446423d2a4673eb557c2c0,Drop Python3.6 and update dependencies (#70),Aber,me@abersheeran.com,GitHub,noreply@github.com,2023-03-07 13:57:14+08:00,-28800,2023-03-07 13:57:14+08:00,-28800,True,False,"['ci.yml', 'poetry.lock', 'pyproject.toml', 'redis.py', 'core.py', 'test_jwt.py', 'test_redis.py', 'test_simple.py', 'test_core.py']",['3a57befe84b584c7f08a9c9c5ea071c6e38be082'],581,370,951,9,,,

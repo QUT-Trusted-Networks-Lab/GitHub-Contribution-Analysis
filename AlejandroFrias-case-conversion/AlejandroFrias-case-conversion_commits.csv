@@ -1,0 +1,156 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+486b85c2d6f2ebe8f091e5bb5e3ba928ca34a191,case conversion python package,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-01 11:40:45-08:00,28800,2016-03-01 11:40:45-08:00,28800,True,False,"['LICENSE.txt', 'README.md', '__init__.py', 'case_conversion.py', 'case_conversion_test.py', 'case_parse.py', 'setup.cfg', 'setup.py']",[],0,422,422,8,0.2573099415204678,0.2573099415204678,0.19883040935672514
+3237e0204f9d8dd1da7c498e1e7b828dedda8ab5,setting up setup,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-01 11:46:30-08:00,28800,2016-03-01 11:46:30-08:00,28800,True,False,['setup.py'],['486b85c2d6f2ebe8f091e5bb5e3ba928ca34a191'],4,4,8,1,,,
+dc1d50f712328298b56318cae7c9f32b73b74df0,Adding documentationa and setup,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-01 12:10:25-08:00,28800,2016-03-01 12:10:25-08:00,28800,True,False,"['README.md', '__init__.py', 'case_conversion.py', 'case_parse.py', 'setup.py', '__init__.py', 'case_conversion_test.py']",['3237e0204f9d8dd1da7c498e1e7b828dedda8ab5'],2,17,19,7,1.0,1.0,1.0
+2d5dd6ad2db60f88bc318300808b8f1d945ef244,test aliases for dashcase,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-01 12:22:59-08:00,28800,2016-03-01 12:22:59-08:00,28800,True,False,"['__init__.py', 'case_conversion_test.py']",['dc1d50f712328298b56318cae7c9f32b73b74df0'],0,7,7,2,,,
+a51b48e8d3b7575935404cad3626112b26f9a541,update license,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-01 13:09:33-08:00,28800,2016-03-01 13:09:33-08:00,28800,True,False,['LICENSE.txt'],['2d5dd6ad2db60f88bc318300808b8f1d945ef244'],0,2,2,1,,,
+bba51bd56576bde4b57e18c5f069fd1c9e1cfbda,fixing setup error,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-01 13:22:36-08:00,28800,2016-03-01 13:22:36-08:00,28800,True,False,['setup.py'],['a51b48e8d3b7575935404cad3626112b26f9a541'],11,0,11,1,0.0,0.0,0.0
+d6ec924f1e161291f1fd23cb5001408d6ee64800,bumping version for bug fix,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-01 13:25:29-08:00,28800,2016-03-01 13:25:29-08:00,28800,True,False,['setup.py'],['bba51bd56576bde4b57e18c5f069fd1c9e1cfbda'],2,2,4,1,,,
+bc91e01863a2b1717804b0b4e6c4b63e44b64924,link typo,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-01 13:32:20-08:00,28800,2016-03-01 13:32:20-08:00,28800,True,False,['README.md'],['d6ec924f1e161291f1fd23cb5001408d6ee64800'],1,1,2,1,,,
+c3b34e05cc0202bb11181dd6512c6bd55ef8c8db,supporting unicode now,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-01 15:50:50-08:00,28800,2016-03-01 15:50:50-08:00,28800,True,False,"['case_parse.py', 'setup.py', 'case_conversion_test.py']",['bc91e01863a2b1717804b0b4e6c4b63e44b64924'],24,183,207,3,0.96,0.96,0.0
+0032ec593b85cb87519800deb62b92bbcf37a7a2,updating test docstrings,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-01 19:29:41-08:00,28800,2016-03-01 19:29:41-08:00,28800,True,False,['case_conversion_test.py'],['c3b34e05cc0202bb11181dd6512c6bd55ef8c8db'],4,6,10,1,,,
+f88409624dbaf178ea2a032b570a38f59cda623c,testing for single word strings,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-03 14:14:38-08:00,28800,2016-03-03 14:14:38-08:00,28800,True,False,"['README.md', 'case_conversion.py', 'case_parse.py', 'case_conversion_test.py']",['0032ec593b85cb87519800deb62b92bbcf37a7a2'],88,237,325,4,0.8695652173913043,0.782608695652174,0.30434782608695654
+49b6ddf643942452401efc48565bbcf7dfc2f09c,updating docs,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-03 14:38:30-08:00,28800,2016-03-03 14:38:30-08:00,28800,True,False,"['README.md', 'case_conversion_test.py']",['f88409624dbaf178ea2a032b570a38f59cda623c'],26,41,67,2,,,
+cdc63e02120e018d12457dbdb94c33fa8eaa6d49,bump version because of param change of name,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2016-03-03 14:44:05-08:00,28800,2016-03-03 14:44:05-08:00,28800,True,False,"['README.md', 'setup.py']",['49b6ddf643942452401efc48565bbcf7dfc2f09c'],4,5,9,2,,,
+d6b23cc541f5162e11954a9e1631f773819ed900,Add tox file to make running parameterized build easy.,Lucas Wiman,lucaswiman@counsyl.com,Lucas Wiman,lucaswiman@counsyl.com,2016-12-23 21:56:18-08:00,28800,2016-12-23 22:00:33-08:00,28800,True,False,"['.gitignore', 'tox.ini']",['cdc63e02120e018d12457dbdb94c33fa8eaa6d49'],0,12,12,2,,,
+17655f4b099ac840712dd95ad989f7b41301b83c,Fix import errors from implicit-relative imports.,Lucas Wiman,lucaswiman@counsyl.com,Lucas Wiman,lucaswiman@counsyl.com,2016-12-23 21:58:44-08:00,28800,2016-12-23 22:00:33-08:00,28800,True,False,['__init__.py'],['d6b23cc541f5162e11954a9e1631f773819ed900'],1,3,4,1,,,
+62939d4ceac7189d5a28a826b047fa2512510fc7,unicode and iteritems.,Lucas Wiman,lucaswiman@counsyl.com,Lucas Wiman,lucaswiman@counsyl.com,2016-12-23 21:59:02-08:00,28800,2016-12-23 22:00:33-08:00,28800,True,False,"['case_parse.py', 'case_conversion_test.py']",['17655f4b099ac840712dd95ad989f7b41301b83c'],2,3,5,2,,,
+4936c5460669b20feb354dc4b2c07246cdac480d,Bump bugfix version.,Lucas Wiman,lucaswiman@counsyl.com,Lucas Wiman,lucaswiman@counsyl.com,2016-12-23 22:00:18-08:00,28800,2016-12-23 22:00:33-08:00,28800,True,False,['setup.py'],['62939d4ceac7189d5a28a826b047fa2512510fc7'],1,1,2,1,,,
+14e6635647595c9288db6f733c8f52101ad61324,"Fix python 4 compatibility.
+
+See http://astrofrog.github.io/blog/2016/01/12/stop-writing-python-4-incompatible-code/",Lucas Wiman,lucaswiman@counsyl.com,Lucas Wiman,lucaswiman@counsyl.com,2016-12-23 22:05:42-08:00,28800,2016-12-23 22:05:42-08:00,28800,True,False,['case_parse.py'],['4936c5460669b20feb354dc4b2c07246cdac480d'],2,2,4,1,,,
+b43252637fe5fa3782e32f49457f8caa6fc155a8,adding doc strings and screaming_snakecase alias of constcase,Alejandro Frias,alejandro@counsyl.com,Alejandro Frias,alejandro@counsyl.com,2017-04-24 14:49:41-07:00,25200,2017-04-24 14:49:41-07:00,25200,True,False,"['README.md', '__init__.py', 'case_conversion.py', 'setup.py', 'case_conversion_test.py']",['b03d68a23ff4f6cf4ba9ded07bfa0c4f52e1ba2c'],7,207,214,5,1.0,1.0,0.9047619047619048
+1da0ff0e479368a76ac76793d307dbc23843f0e6,Conservative refactoring and cleanups.,Ben Felder,ben@felder.io,Ben Felder,ben@felder.io,2018-03-04 14:23:50+01:00,-3600,2018-03-04 14:23:50+01:00,-3600,True,False,"['.gitignore', 'case_conversion.py', 'case_parse.py', 'test.py']",['b43252637fe5fa3782e32f49457f8caa6fc155a8'],241,370,611,4,1.0,1.0,1.0
+8b4651899884b0b7fb73a2973008969dbb2a63ee,"Changes to docstrings, and other parts of code as requested in review.",Ben Felder,ben@felder.io,Ben Felder,ben@felder.io,2018-03-05 19:55:29+01:00,-3600,2018-03-05 19:55:29+01:00,-3600,True,False,"['.gitignore', 'case_conversion.py', 'case_parse.py', 'setup.py']",['1da0ff0e479368a76ac76793d307dbc23843f0e6'],18,60,78,4,,,
+a03978b444248f4cbbbfdd0e60dde54c4840fbb0,WIP - major refactoring.,Ben Felder,ben@felder.io,Ben Felder,ben@felder.io,2018-03-11 21:48:06+01:00,-3600,2018-03-11 21:48:06+01:00,-3600,True,False,"['.gitignore', 'Pipfile', 'Pipfile.lock', '__init__.py', 'case_conversion.py', 'case_parse.py']",['8b4651899884b0b7fb73a2973008969dbb2a63ee'],523,613,1136,6,0.2727272727272727,1.0,0.0
+553964eac5b678a9264dc420a698e1e26df16dfd,WIP - Added more case conversions.,Ben Felder,ben@felder.io,Ben Felder,ben@felder.io,2018-03-11 22:27:40+01:00,-3600,2018-03-11 22:27:40+01:00,-3600,True,False,['case_conversion.py'],['a03978b444248f4cbbbfdd0e60dde54c4840fbb0'],1,26,27,1,1.0,1.0,0.0
+37adcb01b0066b5060aa5d3f40a042dc7965dbaa,WIP - Added two more case conversions.,Ben Felder,ben@felder.io,Ben Felder,ben@felder.io,2018-03-12 21:04:24+01:00,-3600,2018-03-12 21:04:24+01:00,-3600,True,False,['case_conversion.py'],['553964eac5b678a9264dc420a698e1e26df16dfd'],1,8,9,1,1.0,1.0,0.0
+8224e99a4f4c55857c3d53f09ea6b059ba08727b,Migrated to poetry.,Ben Felder,ben@felder.io,Ben Felder,ben@felder.io,2020-02-20 19:43:21+01:00,-3600,2020-02-20 19:43:21+01:00,-3600,True,False,"['Pipfile', 'Pipfile.lock', 'pyproject.toml', 'setup.cfg', 'setup.py', 'tox.ini']",['71332680ac90ce96bd99f657e7fe441fe9eb5cef'],128,56,184,6,,,
+6d7d4c6c402f2b9d54ad62fdeef1cc0e19bafb86,Rename LICENSE.txt to LICENSE.md,Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-20 19:46:04+01:00,-3600,2020-02-20 19:46:04+01:00,-3600,True,False,['LICENSE.md'],['bbc379feb1b5726304a2c4dbea76a5960809fe5c'],0,0,0,1,,,
+61dbc3c56bcec5aaff1d7acc142a7fb79e830779,Remove tst.py from .gitignore,Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-20 19:46:47+01:00,-3600,2020-02-20 19:46:47+01:00,-3600,True,False,['.gitignore'],['6d7d4c6c402f2b9d54ad62fdeef1cc0e19bafb86'],3,0,3,1,,,
+8d8c95ae850a7f8d30c5de80b73d9014ad4477d3,"Expanding tests (#22)
+
+* Make CaseConverter importable
+
+* Adapt to tests to work with CaseConverter class
+
+* Rename test.py to test_conversions.py
+
+* Migrate to pytest
+
+* Replace tox for matrix tests with a GitHub Action
+
+* Remove python version 3.9 from ci.yml, as it is not yet supported
+
+* Add test_segment_string
+
+* Add test_sanitize_acronyms
+
+* Add test_sanitize_acronyms_raises_on_invalid_acronyms
+
+* Add test_normalize_words
+
+* Add test_determine_case
+
+* Add test_simple_acronym_detection
+
+* Add test_advanced_acronym_detection
+
+* Add test_parse_case
+
+* Add pytest-cov
+
+* Add tests for places mutmut suggested",Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-23 16:08:10+01:00,-3600,2020-02-23 16:08:10+01:00,-3600,True,False,"['ci.yml', '__init__.py', 'case_conversion.py', 'pyproject.toml', 'test.py', 'test_conversions.py', 'test_internals.py']",['61dbc3c56bcec5aaff1d7acc142a7fb79e830779'],427,564,991,7,1.0,1.0,0.5652173913043478
+6520f7674fb6d163ff217c6b7e9ae397d1846a48,"Ditch regex (#23)
+
+* Remove dependency on regex
+
+* Pythonize function names
+
+* Pythonize variable names
+
+* Advertise `dependency free` in README
+
+* Remove regex from pyproject.toml",Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-23 18:44:22+01:00,-3600,2020-02-23 18:44:22+01:00,-3600,True,False,"['README.md', 'case_conversion.py', 'pyproject.toml']",['8d8c95ae850a7f8d30c5de80b73d9014ad4477d3'],46,67,113,3,1.0,1.0,1.0
+1acf04cd6c1f091043dc6d8d90b1e7edefbe2f6c,Dropped support for python <3.6 (#24),Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-23 18:54:07+01:00,-3600,2020-02-23 18:54:07+01:00,-3600,True,False,"['README.md', 'case_conversion.py']",['6520f7674fb6d163ff217c6b7e9ae397d1846a48'],6,2,8,2,,,
+ad6e57651e4ccf1d4a3d5b1bec9e3fd63eb343ab,"Add type annotations (#25)
+
+* Type annotate via pytest-monkeytype
+
+* Made mypy happy
+
+* Add mypy check to CI",Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-23 20:26:06+01:00,-3600,2020-02-23 20:26:06+01:00,-3600,True,False,"['ci.yml', 'case_conversion.py', 'pyproject.toml']",['1acf04cd6c1f091043dc6d8d90b1e7edefbe2f6c'],67,79,146,3,0.5521472392638037,0.656441717791411,0.5705521472392638
+fdc67c5cf07cbaa47be3d6b930244b5cd0144b6b,"Various refactorings (#26)
+
+* Simplify bool chain in _char_is_sep
+
+* Enumify case type
+
+* Move alias functionality in own file
+
+* Break up monolith into smaller files
+
+* Remove unused imports
+
+* Add E203 to flake8 ignore list
+
+* Add flake8 to CI",Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-23 21:49:12+01:00,-3600,2020-02-23 21:49:12+01:00,-3600,True,False,"['ci.yml', '__init__.py', 'alias.py', 'case_conversion.py', 'converter.py', 'types.py', 'utils.py', 'pyproject.toml', 'test_conversions.py', 'test_internals.py']",['ad6e57651e4ccf1d4a3d5b1bec9e3fd63eb343ab'],831,903,1734,10,0.0,0.0,0.0
+85489764c3e7c598eb0d2c906a74acec51edb19d,"More refactorings (#27)
+
+* Unrawify docstrings
+
+* Upgrade syntax to python3.6+
+
+* Remove leading underscore from util functions
+
+* Configure isort interoperability with black
+
+* Rewrite loop in normalize_words
+
+* Remove unused main invocation in test_conversions
+
+* Make variable names more descriptive
+
+* Introduce for-else loop in advanced_acronym_detection
+
+* Pythonize if
+
+* Rename variable was_upper to was_all_upper to better reflect its purpose
+
+* Update docstrings of all conversion functions
+
+* Update docstring of parse_case
+
+* Remove aliasing
+
+* Declassify conversion methods
+
+* Move parse_case into its own file
+
+* Mirror test and src dir structure
+
+* Work on types
+
+* Use splat to simplify conversion functions
+
+* Update docstrings of convenience functions
+
+* Update docstrings in utils
+
+* Restrict flake8 to src",Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-24 16:29:55+01:00,-3600,2020-02-24 16:29:55+01:00,-3600,True,False,"['ci.yml', '__init__.py', 'alias.py', 'converter.py', 'parser.py', 'types.py', 'utils.py', 'pyproject.toml', 'test_converter.py', 'test_parser.py', 'test_types.py', 'test_utils.py']",['fdc67c5cf07cbaa47be3d6b930244b5cd0144b6b'],500,574,1074,12,0.0,1.0,1.0
+db2b3d9029a153dedad8c9aa8d1ba81013959271,"Update readme (#28)
+
+* Update features section
+
+* Update code examples
+
+* Create Credits section
+
+* Update introductory section
+
+* Add Contribute section",Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-24 17:12:07+01:00,-3600,2020-02-24 17:12:07+01:00,-3600,True,False,['README.md'],['85489764c3e7c598eb0d2c906a74acec51edb19d'],30,63,93,1,,,
+69a3cd5baa742abd8e44e0c348091b81f3258375,"Add CI badge
+
+See: https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow#adding-a-workflow-status-badge-to-your-repository",Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-24 17:18:54+01:00,-3600,2020-02-24 17:18:54+01:00,-3600,True,False,['README.md'],['db2b3d9029a153dedad8c9aa8d1ba81013959271'],0,2,2,1,,,
+9a70ea28949e02846aca2f4e538306c068b980b3,Add PyPI badge,Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-24 17:22:34+01:00,-3600,2020-02-24 17:22:34+01:00,-3600,True,False,['README.md'],['69a3cd5baa742abd8e44e0c348091b81f3258375'],0,1,1,1,,,
+a62128c14691e87865435ae56c15119f38de65c5,Add badge for python versions,Ben Felder,20211140+pykong@users.noreply.github.com,GitHub,noreply@github.com,2020-02-24 17:24:56+01:00,-3600,2020-02-24 17:24:56+01:00,-3600,True,False,['README.md'],['9a70ea28949e02846aca2f4e538306c068b980b3'],0,1,1,1,,,

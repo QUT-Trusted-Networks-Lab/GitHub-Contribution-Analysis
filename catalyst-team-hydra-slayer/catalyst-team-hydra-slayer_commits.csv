@@ -1,0 +1,123 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+0e24ea691fb692f11daaf3256e6d8303559848ef,Initial commit,Sergey Kolesnikov,scitator@gmail.com,Sergey Kolesnikov,scitator@gmail.com,2021-07-15 08:49:13+03:00,-10800,2021-07-15 08:58:28+03:00,-10800,True,False,"['.gitignore', 'LICENSE', 'README.md', '__init__.py', '__version__.py', 'requirements.txt', 'setup.py']",[],0,461,461,7,1.0,1.0,1.0
+db2532c09b36cefc612db176fdc253386d5db412,base workflows added,Yauheni Kachan,19803638+bagxi@users.noreply.github.com,Yauheni Kachan,19803638+bagxi@users.noreply.github.com,2021-07-16 15:30:43+03:00,-10800,2021-07-16 15:30:43+03:00,-10800,True,False,"['CODEOWNERS', 'FUNDING.yml', 'stale.yml', 'greetings.yml']",['0e24ea691fb692f11daaf3256e6d8303559848ef'],0,55,55,4,,,
+9691ca10b53bb925236ce9225fc4ea1321a6d448,"v0.1.0rc0 (#1)
+
+* catalyst's hydra slayer added
+
+* tests added
+
+* codestyle added; `setup.py` updated
+
+* github actions added
+
+* setup.cfg - redundant fields removed
+
+* setup.py replaced with poetry
+
+* docs added
+
+* add docs versioning
+
+* upd actions
+
+* fix: codestyle",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-07-26 20:47:53+03:00,-10800,2021-07-26 20:47:53+03:00,-10800,True,False,"['codestyle.yml', 'deploy_publish.yml', 'deploy_push.yml', 'test.yml', '.mergify.yml', 'README.md', 'Makefile', 'icon.png', 'slayer.png', 'versions.html', 'conf.py', 'index.rst', 'exceptions.rst', 'factory.rst', 'registry.rst', 'install.rst', 'quickstart.rst', '__init__.py', '__version__.py', 'exceptions.py', 'factory.py', 'registry.py', 'poetry.lock', 'pyproject.toml', 'requirements.txt', 'setup.cfg', 'setup.py', '__init__.py', 'foo.py', 'test_factory.py', 'test_registry.py']",['db2532c09b36cefc612db176fdc253386d5db412'],127,2248,2375,31,0.5251396648044693,0.7150837988826816,0.5837988826815642
+0ae9b25b951497fde16042b9a3097933212b8a2f,dump catalyst-codestyle from 21.06 to 21.07rc0,Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-08-06 00:35:18+03:00,-10800,2021-08-06 00:35:18+03:00,-10800,True,False,"['poetry.lock', 'pyproject.toml', 'setup.cfg']",['9691ca10b53bb925236ce9225fc4ea1321a6d448'],18,858,876,3,,,
+8c0144a8158b73935c8f8b162dca292c1a996393,dump catalyst-codestyle from 21.06 to 21.07rc0 (#3),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-08-10 11:48:46+03:00,-10800,2021-08-10 11:48:46+03:00,-10800,True,False,[],['0ae9b25b951497fde16042b9a3097933212b8a2f'],0,0,0,0,,,
+c635a3c857ef8146f73f138bd481bffd17217063,fix: github workflows renamed (#4),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-08-10 11:57:57+03:00,-10800,2021-08-10 11:57:57+03:00,-10800,True,False,"['build.yml', 'codestyle.yml', 'deploy_push.yml', 'deploy_release.yml', 'greetings.yml']",['8c0144a8158b73935c8f8b162dca292c1a996393'],4,4,8,5,,,
+f43e751dc65e8e05235c797a6b9b15be689b572a,"docs update (#5)
+
+* description added
+
+* usage examples added",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-08-11 11:38:54+03:00,-10800,2021-08-11 11:38:54+03:00,-10800,True,False,"['README.md', 'advanced_fire_magic.png', 'basic_fire_magic.png', 'expert_fire_magic.png', 'index.rst', 'exceptions.rst', 'factory.rst', 'registry.rst', 'examples.rst', 'quickstart.rst']",['c635a3c857ef8146f73f138bd481bffd17217063'],32,310,342,10,,,
+cfa084c44a1ee5f01ff68445660c1ba137333cb8,fix: examples updated (#6),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,Yauheni Kachan,19803638+bagxi@users.noreply.github.com,2021-08-11 15:55:39+03:00,-10800,2021-08-11 16:10:53+03:00,-10800,True,False,"['README.md', 'examples.rst']",['f43e751dc65e8e05235c797a6b9b15be689b572a'],78,100,178,2,,,
+93a6d6fc5259918217ea7eb0d16bcf21c138aac3,"fix: pyyaml removed from dependencies (#8)
+
+Hydra-slayer meant to be used to process parameters,
+not to read them from a file. So remove YAML and JSON from dependencies.",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-08-28 19:36:55+03:00,-10800,2021-08-28 19:36:55+03:00,-10800,True,False,['pyproject.toml'],['cfa084c44a1ee5f01ff68445660c1ba137333cb8'],2,0,2,1,,,
+8320a15e1aaa04ecde9fb7fa9dd4b943eaefa26e,"fix: `collections.MutableMapping` DeprecationWarning (#9)
+
+DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-08-28 19:44:19+03:00,-10800,2021-08-28 19:44:19+03:00,-10800,True,False,['registry.py'],['93a6d6fc5259918217ea7eb0d16bcf21c138aac3'],2,2,4,1,,,
+d1b4fece977f7fa4ea0d4e7005bd9b12029cd0c8,"feat: `hydra_slayer.functional` module added (#10)
+
+* feat: `hydra_slayer.functional` added; support of `*args` parameter added
+
+* refactor: `Registry.get*` methods replaced corresponding methods from with `hydra_slayer.functional`
+
+* feat: support for `**kwargs` in `functional.get_from_params` added
+
+* docs: examples updated, typos in docs fixed
+
+* docs: docstrings in `functional` updated",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-08-30 08:07:54+03:00,-10800,2021-08-30 08:07:54+03:00,-10800,True,False,"['README.md', 'index.rst', 'functional.rst', 'examples.rst', 'install.rst', '__init__.py', 'exceptions.py', 'factory.py', 'functional.py', 'registry.py', 'foo.py', 'foobar.py', 'test_functional.py', 'test_registry.py']",['8320a15e1aaa04ecde9fb7fa9dd4b943eaefa26e'],319,815,1134,14,0.26463104325699743,0.8702290076335878,0.6870229007633588
+d63ad090bef6c35322cc41b93c8b245d980e5348,ci: workflow for codestyle check added (#12),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-08-30 14:15:33+03:00,-10800,2021-08-30 14:15:33+03:00,-10800,True,False,"['codestyle.yml', '__init__.py', 'poetry.lock', 'test_factory.py']",['d1b4fece977f7fa4ea0d4e7005bd9b12029cd0c8'],108,71,179,4,,,
+b2ddea30f4fdf02e63e5572923f2c9067c897f50,fix: `deepcopy cannot pickle '_io.TextIOWrapper' object` (#11),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-08-30 15:00:10+03:00,-10800,2021-08-30 15:00:10+03:00,-10800,True,False,['functional.py'],['d63ad090bef6c35322cc41b93c8b245d980e5348'],3,2,5,1,,,
+d8a24f9f5c169bf0b9c798a520790165c0cca746,docs: indents fixed (#13),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-08-30 15:29:38+03:00,-10800,2021-08-30 15:29:38+03:00,-10800,True,False,"['factory.py', 'registry.py']",['b2ddea30f4fdf02e63e5572923f2c9067c897f50'],16,17,33,2,,,
+5c5a6f0eec3fac22abfab0e28c3b81bb96b274e5,docs: hydra-slayer logo updated (#14),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-09-01 18:08:46+03:00,-10800,2021-09-01 18:08:46+03:00,-10800,True,False,"['README.md', 'catalyst.png', 'slayer.png', 'slayer_sidebar_logo.png', 'conf.py', 'index.rst']",['d8a24f9f5c169bf0b9c798a520790165c0cca746'],3,4,7,6,,,
+fa20c0517cbec74b536cf906b0f98edb2040c9bb,refactor: `RegistryException` replaced with built-in Exceptions (#15),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-09-05 00:49:05+03:00,-10800,2021-09-05 00:49:05+03:00,-10800,True,False,"['index.rst', 'exceptions.rst', 'exceptions.py', 'functional.py', 'registry.py', 'test_factory.py', 'test_functional.py', 'test_registry.py']",['5c5a6f0eec3fac22abfab0e28c3b81bb96b274e5'],52,22,74,8,0.2,0.2,0.2
+0cac011c0d0338e26e421ddd357d4f17c7c8d02c,ci: os version added into cache keys (#16),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-09-08 23:33:34+03:00,-10800,2021-09-08 23:33:34+03:00,-10800,True,False,"['build.yml', 'codestyle.yml', 'deploy_push.yml', 'deploy_release.yml']",['fa20c0517cbec74b536cf906b0f98edb2040c9bb'],4,4,8,4,,,
+1276fb08043d83f1d4c8a6f14ccb6dd3db390c48,docs: example with `Registry` added (#17),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-09-08 23:44:34+03:00,-10800,2021-09-08 23:44:34+03:00,-10800,True,False,['examples.rst'],['0cac011c0d0338e26e421ddd357d4f17c7c8d02c'],1,41,42,1,,,
+7ac14fcbc56a0a9d8c5c377dd528502d7a586b70,docs: example with *args added (#18),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-09-09 12:18:49+03:00,-10800,2021-09-09 12:18:49+03:00,-10800,True,False,['examples.rst'],['1276fb08043d83f1d4c8a6f14ccb6dd3db390c48'],22,129,151,1,,,
+0c9931d4c677e2e6e10f025ba089787fe0d2a3ea,refactor: dump catalyst-codestyle from 21.07rc0 to 21.09 (#19),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-09-10 21:18:12+03:00,-10800,2021-09-10 21:18:12+03:00,-10800,True,False,"['codestyle.yml', '.gitignore', 'poetry.lock', 'pyproject.toml', 'setup.cfg', 'test_functional.py', 'test_registry.py']",['7ac14fcbc56a0a9d8c5c377dd528502d7a586b70'],349,340,689,7,,,
+d4c017bb9d9824b85cadfc089972520448c4848e,"release: dump version to ""v0.2.0"" (#20)",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-09-10 22:45:14+03:00,-10800,2021-09-10 22:45:14+03:00,-10800,True,False,['pyproject.toml'],['0c9931d4c677e2e6e10f025ba089787fe0d2a3ea'],1,1,2,1,,,
+954ebfd5dcf72e0f838d82629139c45db2b0a221,ci: if expression syntax in github actions fixed (#21),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-09-11 10:13:43+03:00,-10800,2021-09-11 10:13:43+03:00,-10800,True,False,['build.yml'],['d4c017bb9d9824b85cadfc089972520448c4848e'],1,1,2,1,,,
+ae6039fed969f62c4d3afb20697417b139d98c7f,refactor: bump `catalyst-codestyle` from v21.09 to v21.09.1 (#22),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-09-17 11:01:42+03:00,-10800,2021-09-17 11:01:42+03:00,-10800,True,False,"['poetry.lock', 'pyproject.toml', 'setup.cfg']",['954ebfd5dcf72e0f838d82629139c45db2b0a221'],16,18,34,3,,,
+d4541c42ca33731712c2f51e69ddc164acb8da46,refactor: bump `catalyst-codestyle` from v21.09.1 to v21.09.2 (#23),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-09-17 21:58:15+03:00,-10800,2021-09-17 21:58:15+03:00,-10800,True,False,"['poetry.lock', 'pyproject.toml']",['ae6039fed969f62c4d3afb20697417b139d98c7f'],9,9,18,2,,,
+79db2e6f5470103067e733aa533451d81413649e,refactor: noqa for WPS removed (#25),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-10-19 17:00:49+03:00,-10800,2021-10-19 17:00:49+03:00,-10800,True,False,"['conf.py', 'test_factory.py', 'test_registry.py']",['d4541c42ca33731712c2f51e69ddc164acb8da46'],12,12,24,3,,,
+af87664c3b6af3677a209a048a68307fc6fe9743,feat: `_mode_` keyword added (#26),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-10-20 09:25:32+03:00,-10800,2021-10-20 09:25:32+03:00,-10800,True,False,"['examples.rst', 'factory.py', 'functional.py', 'registry.py', 'test_factory.py']",['79db2e6f5470103067e733aa533451d81413649e'],22,96,118,5,0.8095238095238095,0.9523809523809523,0.6190476190476191
+3a574081cc106bf63aedda6441181a2ce18db326,"release: dump version to ""v0.3.0""",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,Yauheni Kachan,19803638+bagxi@users.noreply.github.com,2021-10-25 22:43:40+03:00,-10800,2021-10-25 22:43:40+03:00,-10800,True,False,['pyproject.toml'],['af87664c3b6af3677a209a048a68307fc6fe9743'],1,1,2,1,,,
+e760242e4c85d0a636f66515cab6bca2d89bfd58,"refactor: `metafactory_factory` added (#28)
+
+Logic behind meta factories e.g. `_mode_` key-value, moved from
+`factory.default_meta_factory` and `functional._meta_factory_call`
+into `factory.metafactory_factory`",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-11-12 00:38:47+03:00,-10800,2021-11-12 00:38:47+03:00,-10800,True,False,"['__init__.py', 'factory.py', 'functional.py', 'registry.py', 'foobar.py', 'test_factory.py', 'test_functional.py', 'test_registry.py']",['3a574081cc106bf63aedda6441181a2ce18db326'],131,255,386,8,0.0,1.0,1.0
+233d7872a9be37df1ae82b95007e04df6ef72cea,"docs: examples for `metafactory_factory` fixed (#29)
+
+* docs: examples for `metafactory_factory` fixed
+
+* refactor: list of flake8 codes to ignore updated",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-11-15 19:12:21+03:00,-10800,2021-11-15 19:12:21+03:00,-10800,True,False,"['factory.py', 'setup.cfg']",['e760242e4c85d0a636f66515cab6bca2d89bfd58'],22,30,52,2,,,
+b18ee5e34cb956b8a849e334c3994074dc7ccbc6,feat: `_var_` keyword PoC (#30),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-11-18 20:17:09+03:00,-10800,2021-11-18 20:17:09+03:00,-10800,True,False,"['functional.py', 'registry.py', 'test_functional.py', 'test_registry.py']",['233d7872a9be37df1ae82b95007e04df6ef72cea'],15,109,124,4,0.6301369863013698,0.8082191780821918,0.6712328767123288
+71056a274e3a790fd3fad3fc0a4e8c7fb4b4b260,fix: check of var type added (#31),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-11-18 22:32:03+03:00,-10800,2021-11-18 22:32:03+03:00,-10800,True,False,"['functional.py', 'test_functional.py']",['b18ee5e34cb956b8a849e334c3994074dc7ccbc6'],1,21,22,2,0.0,0.9411764705882353,0.9411764705882353
+da314e56bf6d54714d2be2c596bfeaee8dba299a,"feat: support of `<var>.<attr>` added (#32)
+
+* feat: support of `_attr_` keyword added (PoC)
+
+* refactor: `_attr_` keyword merged with `_var_`
+
+* fix: support of *args parameters for `_attr_` added",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-11-20 11:48:29+03:00,-10800,2021-11-20 11:48:29+03:00,-10800,True,False,"['factory.py', 'functional.py', 'registry.py', 'foobar.py', 'test_functional.py', 'test_registry.py']",['71056a274e3a790fd3fad3fc0a4e8c7fb4b4b260'],59,251,310,6,0.39490445859872614,1.0,0.7515923566878981
+05f737cf601f167d45c336babc89e5cc9139890b,docs: example with simple training loop in Catalyst added (#33),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2021-11-20 21:29:08+03:00,-10800,2021-11-20 21:29:08+03:00,-10800,True,False,['examples.rst'],['da314e56bf6d54714d2be2c596bfeaee8dba299a'],2,93,95,1,,,
+98ab69de5f09a791a69f4e860be417d674bc7e86,"release: dump version to ""v0.4.0""",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,Yauheni Kachan,19803638+bagxi@users.noreply.github.com,2021-11-21 11:05:36+03:00,-10800,2021-11-21 11:05:36+03:00,-10800,True,False,['pyproject.toml'],['05f737cf601f167d45c336babc89e5cc9139890b'],1,1,2,1,,,
+3b2512a314771c6a0e8e290be8794d24224d2723,docs: link to logo updated (for PYPI) (#35),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2022-01-04 11:39:21+03:00,-10800,2022-01-04 11:39:21+03:00,-10800,True,False,['README.md'],['98ab69de5f09a791a69f4e860be417d674bc7e86'],1,1,2,1,,,
+05a4de228ded5bfd11f40eec860c882fe3c595c9,build: dependencies updated (#37),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2022-01-20 14:45:58+03:00,-10800,2022-01-20 14:45:58+03:00,-10800,True,False,"['poetry.lock', 'pyproject.toml']",['3b2512a314771c6a0e8e290be8794d24224d2723'],213,277,490,2,,,
+a08f1b7f4b2ea4240a3648553086edc87a106fc9,"test: workflows for Python 3.10 added (#36)
+
+* test: workflows for Python 3.10 added
+
+* refactor: installation of Poetry updated",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2022-01-20 15:03:36+03:00,-10800,2022-01-20 15:03:36+03:00,-10800,True,False,"['build.yml', 'codestyle.yml', 'deploy_push.yml', 'deploy_release.yml']",['05a4de228ded5bfd11f40eec860c882fe3c595c9'],9,9,18,4,,,
+d334ecc7449e87871623b21f41a6cf6c99023160,docs: github links fixed (#38),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2022-01-22 00:33:08+03:00,-10800,2022-01-22 00:33:08+03:00,-10800,True,False,['index.rst'],['a08f1b7f4b2ea4240a3648553086edc87a106fc9'],3,3,6,1,,,
+0e698793496a7c26f2c321ebcbeccab742894dde,build: dev dependencies updated (#39),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2022-02-07 23:01:26+03:00,-10800,2022-02-07 23:01:26+03:00,-10800,True,False,['poetry.lock'],['d334ecc7449e87871623b21f41a6cf6c99023160'],36,41,77,1,,,
+c7352fa52318d837193d0b8ecd236749717c39ab,"fix: ""Version 3.6 with arch x64 not found"" (#42)
+
+* fix: ""Version 3.6 with arch x64 not found""
+
+* fix: black requires Python >= XXX
+
+* fix: ""Poetry installation failed."" in ubuntu 18.04 python 3.6 resolved",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2023-03-07 14:51:59+03:00,-10800,2023-03-07 14:51:59+03:00,-10800,True,False,"['build.yml', 'pyproject.toml']",['0e698793496a7c26f2c321ebcbeccab742894dde'],1,3,4,2,,,
+028030ca127035fcff317adea4148ff61800f4ba,"fix: ""no signature found for builtin"" resolved (#41)",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2023-03-07 14:58:28+03:00,-10800,2023-03-07 14:58:28+03:00,-10800,True,False,['functional.py'],['c7352fa52318d837193d0b8ecd236749717c39ab'],2,9,11,1,1.0,1.0,1.0
+965e23352b5defa8b504f72416ef76f65f7d86e7,"release: dump version to ""v0.4.1""",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,Yauheni Kachan,19803638+bagxi@users.noreply.github.com,2023-03-07 15:03:52+03:00,-10800,2023-03-07 15:03:52+03:00,-10800,True,False,['pyproject.toml'],['028030ca127035fcff317adea4148ff61800f4ba'],1,1,2,1,,,
+3b96a051cfb71cf0d144bf02f28b76f3498e2459,build: drop support for Python 3.6 (#43),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2024-01-04 20:05:22+03:00,-10800,2024-01-04 20:05:22+03:00,-10800,True,False,"['build.yml', 'codestyle.yml', 'deploy_push.yml', 'deploy_release.yml', 'poetry.lock', 'pyproject.toml']",['965e23352b5defa8b504f72416ef76f65f7d86e7'],895,2043,2938,6,,,
+e599f1104b5a31306165efa9ad3caa598e7fb11c,test: coverage added (#44),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2024-01-04 20:19:28+03:00,-10800,2024-01-04 20:19:28+03:00,-10800,True,False,"['build.yml', 'poetry.lock', 'pyproject.toml']",['3b96a051cfb71cf0d144bf02f28b76f3498e2459'],2,96,98,3,,,
+41c2153df0d5c27a241798b25d2ba346921daf86,"test: 100% coverage (#45)
+
+* test: additional tests for functional.py added
+
+* test: additional tests for the factory.py added
+
+* test: additional tests for test_registry.py added
+
+* fix: extraction of kwargs from factory name is now working",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2024-01-04 23:15:56+03:00,-10800,2024-01-04 23:15:56+03:00,-10800,True,False,"['functional.py', 'registry.py', 'foobar.py', 'test_factory.py', 'test_functional.py', 'test_registry.py']",['e599f1104b5a31306165efa9ad3caa598e7fb11c'],36,282,318,6,0.8904109589041096,1.0,0.9863013698630136
+a211130a2069e55363613182c881d162a845debc,docs: DeprecationWarning: invalid escape sequence \* in hydra-slayer (#46),Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2024-01-04 23:36:52+03:00,-10800,2024-01-04 23:36:52+03:00,-10800,True,False,"['factory.py', 'functional.py', 'registry.py', 'test_functional.py']",['41c2153df0d5c27a241798b25d2ba346921daf86'],15,15,30,4,,,
+d6614ecec5630d590a24eec45620878a91f73562,"build: dump pytest to ""^7.2.0"" (#47)
+
+`ReDoS in py library when used with subversion` fixed:
+https://github.com/catalyst-team/hydra-slayer/security/dependabot/2",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,GitHub,noreply@github.com,2024-01-04 23:54:07+03:00,-10800,2024-01-04 23:54:07+03:00,-10800,True,False,"['poetry.lock', 'pyproject.toml']",['a211130a2069e55363613182c881d162a845debc'],32,23,55,2,,,
+580b1ae4858dc3efaf3e049eb5487f6c0fd56d4e,"release: dump version to ""v0.5.0""",Yauheni Kachan,19803638+bagxi@users.noreply.github.com,Yauheni Kachan,19803638+bagxi@users.noreply.github.com,2024-01-04 23:57:11+03:00,-10800,2024-01-04 23:57:33+03:00,-10800,True,False,['pyproject.toml'],['d6614ecec5630d590a24eec45620878a91f73562'],1,1,2,1,,,

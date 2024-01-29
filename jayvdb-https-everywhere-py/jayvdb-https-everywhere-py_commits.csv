@@ -1,0 +1,115 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+665bbf76348371ce6ef56d372c08c6852733e00b,Initial commit,John Vandenberg,jayvdb@gmail.com,GitHub,noreply@github.com,2020-02-26 00:51:28+07:00,-25200,2020-02-26 00:51:28+07:00,-25200,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,332,332,3,,,
+873a5b780fa4a2ce88746ed66fe6881bdb2dad21,Initial cut,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 00:57:58+07:00,-25200,2020-02-26 01:01:59+07:00,-25200,True,False,"['README.md', '__init__.py', '_chrome_preload_hsts.py', '_fetch.py', '_fixme.py', '_rules.py', '_unregex.py', '_util.py', 'adapter.py', 'session.py', 'setup.py', '__init__.py', 'test_adapter.py', 'test_fetch.py', 'test_preload.py', 'test_rewrite.py', 'test_rules.py', 'test_session.py', 'test_unregex.py', 'tox.ini']",['665bbf76348371ce6ef56d372c08c6852733e00b'],2,3209,3211,20,0.5645645645645646,0.6106106106106106,0.9019019019019019
+bed74713c7abb895885bda3992d7968a285845ce,test_fetch: Fix Windows assertion,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 09:15:49+07:00,-25200,2020-02-26 10:01:25+07:00,-25200,True,False,"['test_fetch.py', 'test_rewrite.py', 'test_rules.py']",['873a5b780fa4a2ce88746ed66fe6881bdb2dad21'],15,19,34,3,1.0,1.0,1.0
+893299900f6613eafea4762178c8d54bc99f6518,test_rules: Avoid symlink for Windows users,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 09:30:34+07:00,-25200,2020-02-26 10:01:25+07:00,-25200,True,False,['test_rules.py'],['bed74713c7abb895885bda3992d7968a285845ce'],1,3,4,1,,,
+077cb7a038c33ba4d4d2a7535353457887f5fc7a,"README.md: Add usage section
+
+Related to https://github.com/jayvdb/https-everywhere-py/issues/13",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 10:00:37+07:00,-25200,2020-02-26 10:01:25+07:00,-25200,True,False,"['README.md', 'adapter.py']",['893299900f6613eafea4762178c8d54bc99f6518'],5,46,51,2,,,
+60550f1f700401af69ed346aef938605e3926aad,"Add Appveyor CI
+
+Closes https://github.com/jayvdb/https-everywhere-py/issues/1",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 08:43:06+07:00,-25200,2020-02-26 10:01:54+07:00,-25200,True,False,"['.appveyor.yml', 'README.md']",['077cb7a038c33ba4d4d2a7535353457887f5fc7a'],1,14,15,2,,,
+ea0e1682e00ad43bd1d6237f459f4a7ef6ae6286,"split_regex: Disable remainder on Python 3.8
+
+This isnt compatible with Python 3.8 and is unnecessary.
+
+Fixes https://github.com/jayvdb/https-everywhere-py/issues/15",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 12:15:23+07:00,-25200,2020-02-26 14:19:19+07:00,-25200,True,False,"['_unregex.py', 'test_unregex.py']",['60550f1f700401af69ed346aef938605e3926aad'],27,71,98,2,0.6363636363636364,0.8181818181818182,0.0
+d3663b627f7b0bdab8905b90dc2f620e2c21ac54,_fetch.py: Python 3.5 support,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 11:41:02+07:00,-25200,2020-02-26 15:12:01+07:00,-25200,True,False,['_fetch.py'],['ea0e1682e00ad43bd1d6237f459f4a7ef6ae6286'],1,4,5,1,0.0,1.0,1.0
+898b7f65bf15e59832db438da5137f9365bbf486,"_fetch.py: Allow older os.makedirs
+
+Disregard errors during older os.makedirs.
+Worst case, those users can create ~/.cache manually.",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 13:01:51+07:00,-25200,2020-02-26 15:12:01+07:00,-25200,True,False,['_fetch.py'],['d3663b627f7b0bdab8905b90dc2f620e2c21ac54'],1,7,8,1,1.0,1.0,1.0
+860d10a1835fb87bd4966d54f1cb2ede343c1907,test_rewrite: Add Python 2 support,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 12:54:32+07:00,-25200,2020-02-26 15:12:01+07:00,-25200,True,False,['test_rewrite.py'],['898b7f65bf15e59832db438da5137f9365bbf486'],3,7,10,1,,,
+dbf0574337a02db690dfe99ae2d1cecdfefb05fd,"test_rules: Skip on Python 3.4 due to lxml
+
+Installing lxml on older Python 3 is problematic.
+Skip the test module.",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 12:45:07+07:00,-25200,2020-02-26 15:12:01+07:00,-25200,True,False,"['test_rules.py', 'tox.ini']",['860d10a1835fb87bd4966d54f1cb2ede343c1907'],4,6,10,2,,,
+8fa54496edd69f10caca44248c7451ae80531972,tox.ini: Block colorama 0.4.2 on py34,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 12:02:24+07:00,-25200,2020-02-26 15:12:01+07:00,-25200,True,False,['tox.ini'],['dbf0574337a02db690dfe99ae2d1cecdfefb05fd'],1,2,3,1,,,
+b2a88622dc3926bc70790f25a0c95920f37dc723,"_rules: Fix Python 2.7 SyntaxError
+
+Related to https://github.com/jayvdb/https-everywhere-py/issues/20",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 12:47:29+07:00,-25200,2020-02-26 15:13:52+07:00,-25200,True,False,['_rules.py'],['8fa54496edd69f10caca44248c7451ae80531972'],1,1,2,1,,,
+a183011ad8b905530eaf5454ee45d92b2d03930b,"setup.py: Allow Python 2.7 & 3.4+
+
+Python 2.7 has several bugs yet.",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 10:34:00+07:00,-25200,2020-02-26 15:14:04+07:00,-25200,True,False,"['.appveyor.yml', 'setup.py', 'tox.ini']",['b2a88622dc3926bc70790f25a0c95920f37dc723'],4,8,12,3,,,
+63d7504529b951e3fc95e726a7f71bc938fc045e,test_fetch: Add MacOS support,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 14:38:21+07:00,-25200,2020-02-26 21:02:12+07:00,-25200,True,False,['test_fetch.py'],['a183011ad8b905530eaf5454ee45d92b2d03930b'],2,4,6,1,1.0,1.0,1.0
+4d97cd7c68695ebe0eb1e33f5d83e6a5abb334e4,"_fetch: Python 2.7 gzip
+
+Related to https://github.com/jayvdb/https-everywhere-py/issues/20",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 16:18:38+07:00,-25200,2020-02-26 23:06:59+07:00,-25200,True,False,['_fetch.py'],['63d7504529b951e3fc95e726a7f71bc938fc045e'],1,6,7,1,0.0,1.0,1.0
+7a28c4b1adacbb274f92c8b8d6f718c02fcff488,"test_rules: Allow https-everything to be missing
+
+This allows testing without the large fetch.",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 15:59:33+07:00,-25200,2020-02-26 23:07:06+07:00,-25200,True,False,['test_rules.py'],['4d97cd7c68695ebe0eb1e33f5d83e6a5abb334e4'],1,2,3,1,,,
+442b99ccbdb1b92287bc035f1ad6384dfe47ac3d,"Add Python 2 support
+
+Force `str` to be `unicode`.
+
+Related to https://github.com/jayvdb/https-everywhere-py/issues/20",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 16:48:33+07:00,-25200,2020-02-26 23:07:07+07:00,-25200,True,False,"['_rules.py', '_unregex.py', 'adapter.py', 'test_adapter.py', 'test_fetch.py', 'test_preload.py', 'test_rewrite.py', 'test_rules.py', 'test_session.py', 'test_unregex.py']",['7a28c4b1adacbb274f92c8b8d6f718c02fcff488'],3,38,41,10,1.0,1.0,0.0
+1e3679686bcf2e8e55a3018acb9d83d88293490d,"Make sre-yield (master) an optional dependency
+
+Closes https://github.com/jayvdb/https-everywhere-py/issues/3",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 17:05:46+07:00,-25200,2020-02-26 23:07:17+07:00,-25200,True,False,"['_rules.py', '_unregex.py', 'setup.py', 'test_unregex.py', 'tox.ini']",['442b99ccbdb1b92287bc035f1ad6384dfe47ac3d'],18,31,49,5,0.0,0.0,1.0
+0acaf2771275558d8cb298b8eb92f5ab0c255683,".appveyor.yml: Add Python 2.7 job
+
+Closes https://github.com/jayvdb/https-everywhere-py/issues/20",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 18:24:47+07:00,-25200,2020-02-26 23:07:17+07:00,-25200,True,False,['.appveyor.yml'],['1e3679686bcf2e8e55a3018acb9d83d88293490d'],0,1,1,1,,,
+8645f563579fbce79f20739949025da29256aef2,"Add Cirrus CI with Python 2.7
+
+Adds Linux and macOS jobs.
+
+Closes https://github.com/jayvdb/https-everywhere-py/issues/21",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-26 14:17:50+07:00,-25200,2020-02-26 23:07:43+07:00,-25200,True,False,"['.cirrus.yml', 'tox.ini']",['0acaf2771275558d8cb298b8eb92f5ab0c255683'],1,34,35,2,,,
+87102f6c6129e6809d8da771178b81bf106cd27f,"setup.py: v0.2.1
+
+Also add CHANGELOG.md and __version__ in __init__",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-27 08:03:22+07:00,-25200,2020-02-27 08:03:22+07:00,-25200,True,False,"['CHANGELOG.md', '__init__.py', 'setup.py']",['8645f563579fbce79f20739949025da29256aef2'],1,25,26,3,,,
+552f8e5b141b8728666c3d213ae0a351f2452543,CHANGELOG.md: Revise descriptions,John Vandenberg,jayvdb@gmail.com,GitHub,noreply@github.com,2020-02-27 08:08:16+07:00,-25200,2020-02-27 08:08:16+07:00,-25200,True,False,['CHANGELOG.md'],['87102f6c6129e6809d8da771178b81bf106cd27f'],3,3,6,1,,,
+1586c59960007e26e5cce343c3bf3eb01b01707e,README.md: Fix code block backticks,John Vandenberg,jayvdb@gmail.com,GitHub,noreply@github.com,2020-02-27 08:09:39+07:00,-25200,2020-02-27 08:09:39+07:00,-25200,True,False,['README.md'],['552f8e5b141b8728666c3d213ae0a351f2452543'],1,1,2,1,,,
+1858ed7f25e872645981b32f251d9526914cfe07,setup.cfg: Publish universal wheels,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-27 08:52:17+07:00,-25200,2020-02-27 08:52:17+07:00,-25200,True,False,['setup.cfg'],['1586c59960007e26e5cce343c3bf3eb01b01707e'],0,5,5,1,,,
+435275499b1027c97671a2a8cb99fd10685ae34a,Add Apache license header to setup and init,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-27 08:56:59+07:00,-25200,2020-02-27 08:56:59+07:00,-25200,True,False,"['__init__.py', 'setup.py']",['1858ed7f25e872645981b32f251d9526914cfe07'],1,36,37,2,,,
+cc7a1271fad570df8cbb7241c5e78f88a8391517,".*.yml: Send coverage to codecov
+
+Use codecov-bash and encrypted token in .cirrus.yml
+Use codecov-python in .appveyor.yml
+
+Closes https://github.com/jayvdb/https-everywhere-py/issues/26",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-27 09:23:27+07:00,-25200,2020-02-27 10:50:49+07:00,-25200,True,False,"['.appveyor.yml', '.cirrus.yml']",['435275499b1027c97671a2a8cb99fd10685ae34a'],3,9,12,2,,,
+e8a7921574aa338a73d41b86e984fee6567dad1b,"tox.ini: Default to fail coverage under 95%
+
+Allow 65% coverage only on Python 3.4 where lxml is not
+being installed.
+
+Increase maxfail so that one website cant easily stop the CI.
+
+Related to https://github.com/jayvdb/https-everywhere-py/issues/16",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-27 10:40:13+07:00,-25200,2020-02-27 10:51:12+07:00,-25200,True,False,"['.cirrus.yml', 'tox.ini']",['cc7a1271fad570df8cbb7241c5e78f88a8391517'],1,4,5,2,,,
+733e25b6b59d55064909cdbc9af17ece16654c6b,README.md: Add shields [skip ci],John Vandenberg,jayvdb@gmail.com,GitHub,noreply@github.com,2020-02-27 11:15:09+07:00,-25200,2020-02-27 11:15:09+07:00,-25200,True,False,['README.md'],['e8a7921574aa338a73d41b86e984fee6567dad1b'],1,5,6,1,,,
+ff87af7de3a244d6eb85abc80d8697c485cabeda,".appveyor.yml: Set min coverage to 65 for py27,34",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-27 11:53:39+07:00,-25200,2020-02-27 11:56:18+07:00,-25200,True,False,['.appveyor.yml'],['733e25b6b59d55064909cdbc9af17ece16654c6b'],0,2,2,1,,,
+49da4f40b45219f5e3cd6134ab4df6302eb9a364,.appveyor.yml: Lower mix coverage to 60% for py27,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-27 13:09:25+07:00,-25200,2020-02-27 13:09:25+07:00,-25200,True,False,['.appveyor.yml'],['ff87af7de3a244d6eb85abc80d8697c485cabeda'],1,1,2,1,,,
+3b5cb40307fb11028b7ab3fdb39d40bf6329d641,tox.ini: Allow posargs,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-27 12:54:26+07:00,-25200,2020-02-27 15:25:08+07:00,-25200,True,False,['tox.ini'],['49da4f40b45219f5e3cd6134ab4df6302eb9a364'],1,1,2,1,,,
+69f7cbd2f13b925a3bbec42e05453053fdfc3a87,"Add block adapters
+
+Closes https://github.com/jayvdb/https-everywhere-py/issues/33",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-27 12:54:40+07:00,-25200,2020-02-27 16:11:05+07:00,-25200,True,False,"['README.md', 'adapter.py', 'test_adapter.py']",['3b5cb40307fb11028b7ab3fdb39d40bf6329d641'],6,96,102,3,0.62,1.0,0.5
+2a94e1c26a0d6b0ca23bf19454f91f8800f3dcdf,Integrate RedirectAdapter into class tree,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-02-27 12:54:40+07:00,-25200,2020-02-27 16:11:46+07:00,-25200,True,False,['adapter.py'],['69f7cbd2f13b925a3bbec42e05453053fdfc3a87'],90,63,153,1,0.782608695652174,0.0,1.0
+c45f70637d0fcfdfa37d430bbb20d6108e5d067b,"Cirrus: Fix Python 2.7
+
+Closes https://github.com/jayvdb/https-everywhere-py/issues/34",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-03-08 21:21:30+07:00,-25200,2020-03-08 22:29:32+07:00,-25200,True,False,['.cirrus.yml'],['2a94e1c26a0d6b0ca23bf19454f91f8800f3dcdf'],1,2,3,1,,,
+4618a2a061f78fb13bb54651d82cd4f35e67191f,handle_error: Fix logging bug,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-03-08 22:30:52+07:00,-25200,2020-03-08 22:30:52+07:00,-25200,True,False,['adapter.py'],['c45f70637d0fcfdfa37d430bbb20d6108e5d067b'],4,3,7,1,0.0,0.0,1.0
+c45e019dbfc89728da09276ca6e3876106a40ffe,MANIFEST.in: Add,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-03-20 09:22:31+07:00,-25200,2020-03-20 09:22:31+07:00,-25200,True,False,['MANIFEST.in'],['4618a2a061f78fb13bb54651d82cd4f35e67191f'],0,5,5,1,,,
+cadbcdf60368103365cca78ab0f32e598d6b4d33,Replace logzero with logging-helper,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-03-22 10:25:34+07:00,-25200,2020-03-22 10:25:34+07:00,-25200,True,False,"['_chrome_preload_hsts.py', '_rules.py', '_unregex.py', 'adapter.py', 'setup.py']",['c45e019dbfc89728da09276ca6e3876106a40ffe'],14,10,24,5,,,
+b293a0891588d3c7cbd127564cdaec444166fcc1,HSTS Preload: Add checks,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-03-22 18:05:10+07:00,-25200,2020-03-22 18:34:44+07:00,-25200,True,False,"['_chrome_preload_hsts.py', '_util.py', 'test_preload.py']",['cadbcdf60368103365cca78ab0f32e598d6b4d33'],18,115,133,3,0.1875,0.1875,0.0
+df047f319518f949628daad95e020b013711d5cf,HSTS Preload: Use reversed hostname dict,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-03-22 20:25:40+07:00,-25200,2020-03-22 20:27:40+07:00,-25200,True,False,"['_chrome_preload_hsts.py', '_util.py']",['b293a0891588d3c7cbd127564cdaec444166fcc1'],26,33,59,2,1.0,1.0,1.0
+5cb6b65e87bf0aa3a7200a976a8b078287735531,"HSTS Preload: Name parsing fixes
+
+Add lots of tests, and remove logic to block Google and
+""single label names"".
+
+Fixes https://github.com/jayvdb/https-everywhere-py/issues/10",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-03-22 21:59:45+07:00,-25200,2020-03-22 22:13:07+07:00,-25200,True,False,"['_chrome_preload_hsts.py', '_util.py', 'test_preload.py', 'test_util.py']",['df047f319518f949628daad95e020b013711d5cf'],9,91,100,4,0.47692307692307695,1.0,1.0
+685ace7030f0bcd87d8ded16109993480b0161d2,"_rules: Time and log ruleset reduction
+
+Closes https://github.com/jayvdb/https-everywhere-py/issues/4",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-03-22 23:30:51+07:00,-25200,2020-03-23 00:14:28+07:00,-25200,True,False,"['_rules.py', 'test_rules.py']",['5cb6b65e87bf0aa3a7200a976a8b078287735531'],14,47,61,2,0.09090909090909091,0.09090909090909091,0.0
+a3f2b42d3f85eaeda15f75a564ff95ead720b429,Release 0.2.2,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-03-23 00:38:15+07:00,-25200,2020-03-23 00:38:15+07:00,-25200,True,False,"['CHANGELOG.md', '__init__.py', 'setup.py']",['685ace7030f0bcd87d8ded16109993480b0161d2'],3,21,24,3,,,
+df9c145f98c9548be1791765701589d74f5f1651,"AppVeyor CI: Skip fedmsg
+
+Fails on AppVeyor.
+
+Related to https://github.com/jayvdb/https-everywhere-py/issues/37",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-04-11 14:45:15+07:00,-25200,2020-04-12 09:00:06+07:00,-25200,True,False,['.appveyor.yml'],['a3f2b42d3f85eaeda15f75a564ff95ead720b429'],1,1,2,1,,,
+a19719479fb2013daf8cb961e96896b1e7071c22,"AppVeyor CI: Merge Python 3.5+ jobs
+
+Closes https://github.com/jayvdb/https-everywhere-py/issues/31",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-04-11 13:55:16+07:00,-25200,2020-04-12 09:00:19+07:00,-25200,True,False,['.appveyor.yml'],['df9c145f98c9548be1791765701589d74f5f1651'],4,1,5,1,,,
+b25084a2edd875689e4da8876cde611dc7f61a7c,"Add MozillaPreloadHSTSAdapter
+
+Closes https://github.com/jayvdb/https-everywhere-py/issues/11",John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2020-04-12 12:32:39+07:00,-25200,2020-04-12 12:40:07+07:00,-25200,True,False,"['README.md', '_chrome_preload_hsts.py', '_fetch.py', '_mozilla_preload_hsts.py', 'adapter.py', 'test_adapter.py', 'test_preload.py']",['a19719479fb2013daf8cb961e96896b1e7071c22'],49,219,268,7,0.5196078431372549,0.5980392156862745,1.0
+d643a6649c24426eec270125eef39ebf9c9b7d58,Add Semgrep CI,semgrep.dev on behalf of @jayvdb,support@r2c.dev,semgrep.dev,support@r2c.dev,2021-10-26 23:19:10+00:00,0,2021-10-26 23:19:10+00:00,0,True,False,['semgrep.yml'],['b25084a2edd875689e4da8876cde611dc7f61a7c'],0,16,16,1,,,

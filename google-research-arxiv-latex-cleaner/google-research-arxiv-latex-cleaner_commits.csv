@@ -1,0 +1,260 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+5e67ffc8ad7211ce8fa342e67a11da7be9a600bf,arXiv LaTeX cleaner moved to its own repo from https://github.com/google-research/google-research/tree/master/arxiv_latex_cleaner.,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-01-08 08:46:41+01:00,-3600,2019-01-08 08:46:41+01:00,-3600,True,False,"['CONTRIBUTING.md', 'LICENSE', 'README.md', '__init__.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'requirements.txt', 'fig1.tex', 'im1_included.png', 'im2_included.jpg', 'im_not_included.png', 'main.aux', 'main.bbl', 'main.bib', 'main.tex', 'fig1.tex', 'im1_included.png', 'im2_included.jpg', 'main.bbl', 'main.tex']",[],0,703,703,20,0.507177033492823,0.9043062200956937,0.8133971291866029
+4a08438428ade75182cb935e630deab74180bbdc,Update README.md,Kento Nozawa,k_nzw@klis.tsukuba.ac.jp,GitHub,noreply@github.com,2019-01-20 17:22:50+09:00,-32400,2019-01-20 17:22:50+09:00,-32400,True,False,['README.md'],['5e67ffc8ad7211ce8fa342e67a11da7be9a600bf'],1,1,2,1,,,
+cf46bf3d83716d7f524260ae6d2167c4516b5820,Make arxiv_latex_cleaner.py work under Windows,Dominique Vaufreydaz,Dominique.Vaufreydaz@inria.fr,Dominique Vaufreydaz,Dominique.Vaufreydaz@inria.fr,2019-04-19 10:30:36+02:00,-7200,2019-04-19 10:30:36+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['d036e3e5578efed3373071532ab37d6ef15cce6c'],0,25,25,1,1.0,1.0,1.0
+e6109d581ac3687a3c90693464694d31165a94d4,Homogenizing style of PR.,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2019-04-19 11:39:49+02:00,-7200,2019-04-19 11:39:49+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['34b42aa6e6c7c6c60dfe3ef63980d670b8529720'],12,4,16,1,,,
+06220d6db55e45414722752b675972482af2635f,Fixing tests,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2019-04-19 11:44:44+02:00,-7200,2019-04-19 11:44:44+02:00,-7200,True,False,"['.gitignore', 'arxiv_latex_cleaner_test.py']",['e6109d581ac3687a3c90693464694d31165a94d4'],3,4,7,2,,,
+37062800808822417f03139476259afec15b737a,Add option to compress PDF images using Ghostscript,Ramin Nabati,mnabati@vols.utk.edu,Ramin Nabati,mnabati@vols.utk.edu,2019-05-01 23:25:48-04:00,14400,2019-05-02 00:01:57-04:00,14400,True,False,['arxiv_latex_cleaner.py'],['06220d6db55e45414722752b675972482af2635f'],2,30,32,1,0.6521739130434783,0.8695652173913043,0.2608695652173913
+9db8ea5e645802040296d852e93f783d6007b05f,Minor styling edits. Fixing broken test.,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-06-03 14:06:41+02:00,-7200,2019-06-03 14:06:41+02:00,-7200,True,False,"['.gitignore', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['eefef3d991ec71e38fdd6c9be55db5fffc8f85f9'],17,19,36,3,0.0,0.0,1.0
+53ccbca497a0d668835ce0e0d9cd0095eec1c4fa,Update README.md,Jordi Pont-Tuset,jponttuset@google.com,GitHub,noreply@github.com,2019-06-03 14:29:43+02:00,-7200,2019-06-03 14:29:43+02:00,-7200,True,False,['README.md'],['9db8ea5e645802040296d852e93f783d6007b05f'],0,3,3,1,,,
+367d60724a6b04467d4f85487b385edaa8baedf1,Adding the option to remove commands and environments (for now \begin{comment}\end{comment}),Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-06-04 11:46:09+02:00,-7200,2019-06-04 11:46:09+02:00,-7200,True,False,"['arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'main.tex', 'main.tex']",['53ccbca497a0d668835ce0e0d9cd0095eec1c4fa'],50,122,172,4,0.68,1.0,0.68
+f8517361b7f199c5af96141612ac3b26fa6076fe,Update README.md,Jordi Pont-Tuset,jponttuset@google.com,GitHub,noreply@github.com,2019-06-04 11:49:05+02:00,-7200,2019-06-04 11:49:05+02:00,-7200,True,False,['README.md'],['367d60724a6b04467d4f85487b385edaa8baedf1'],0,3,3,1,,,
+f0c0882271113d52da110700e62dfe3f4e0b4c44,Copying only the referenced TeX files outside the root,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-06-05 08:26:28+02:00,-7200,2019-06-05 08:26:28+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['f8517361b7f199c5af96141612ac3b26fa6076fe'],9,22,31,1,0.6666666666666666,1.0,1.0
+685c7453da98d59dc7991e39771c2fa5bb007762,Updating test for unreferenced data,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-06-05 08:34:43+02:00,-7200,2019-06-05 08:34:43+02:00,-7200,True,False,['unreferenced_data.txt'],['f0c0882271113d52da110700e62dfe3f4e0b4c44'],0,1,1,1,,,
+aae17709eb59c9dd31d42a761f3104b4d98dfb69,Better tex inclusion detection. README updated.,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-06-05 10:25:23+02:00,-7200,2019-06-05 10:25:23+02:00,-7200,True,False,"['data_included.txt', 'data_not_included.txt', 'figure_included.tex', 'figure_not_included.tex', 'figure_not_included_2.tex', 'data_included.txt', 'figure_included.tex']",['685c7453da98d59dc7991e39771c2fa5bb007762'],0,7,7,7,,,
+e8facbb54038e44c1720ee180c31453ab816511c,Better tex inclusion detection. README updated.,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-06-05 10:25:38+02:00,-7200,2019-06-05 10:25:38+02:00,-7200,True,False,"['README.md', 'arxiv_latex_cleaner.py', 'fig1.tex', 'unreferenced_data.txt', 'main.tex', 'fig1.tex', 'main.tex']",['aae17709eb59c9dd31d42a761f3104b4d98dfb69'],27,73,100,7,0.7727272727272727,0.0,1.0
+4184f8085122774d74ff5c99611e530a8d62c87e,"Allow commands_to_delete to work with nested commands
+
+This commit introduces the possibility to execute commands_to_delete
+with nested commands (issue #9) by improving the regex expression
+that matches the user-defined custom command.
+It also improves the regex expression used to match comments environment
+that was affected by the same problem.
+
+Limitation #1: in commands_to_delete max 2 nested levels are supported.
+Limitation #2: the \end{comment} has to be followed by a newline character.",Sebastiano,mianosebastiano@gmail.com,Sebastiano,mianosebastiano@gmail.com,2019-06-18 16:38:30+02:00,-7200,2019-06-18 19:15:40+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['e8facbb54038e44c1720ee180c31453ab816511c'],3,8,11,1,1.0,1.0,1.0
+6fcc9c4c5c318c2cde2c58a67016885484543eed,Updated tests with nested commands support,Sebastiano,mianosebastiano@gmail.com,Sebastiano,mianosebastiano@gmail.com,2019-06-18 19:16:17+02:00,-7200,2019-06-18 20:32:22+02:00,-7200,True,False,"['arxiv_latex_cleaner.py', 'main.tex', 'main.tex']",['4184f8085122774d74ff5c99611e530a8d62c87e'],2,5,7,3,,,
+144351064ae9b6526018785e50087d19738a8bb8,Fixing tests after PR. Leaving the comment sign at the end of the line is necessary not to affect spacings.,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-06-19 08:54:19+02:00,-7200,2019-06-19 08:54:19+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['48488518bc58960fd85ffc98e585aa677dc4f048'],8,9,17,1,0.0,0.0,0.0
+adc040a298e3392a65c9606fa7f9ebf8e5e7241f,"Update requirements.txt
+
+I was installing arxiv-latex-cleaner in a vanilla notebook and received this error: ""ImportError: No module named setuptools""
+
+Updating the requirements to install setuptools fixed this.",Gustavo Pinto,gustavohenrique.86@gmail.com,GitHub,noreply@github.com,2019-07-01 16:28:49-03:00,10800,2019-07-01 16:28:49-03:00,10800,True,False,['requirements.txt'],['144351064ae9b6526018785e50087d19738a8bb8'],0,1,1,1,,,
+2cc4a2a8b8ce092984d0eb26dd8c0b6929c5f4a9,"- Updating pillow, due to CVE-2019-16865",Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-12-12 10:52:52+01:00,-3600,2019-12-12 10:52:52+01:00,-3600,True,False,['requirements.txt'],['ea4db65744837bb1205a4fd14b56244b2e639c34'],1,1,2,1,,,
+76801745447c751bd2ea5268f6b4dbd4e68d8159,Minor code simplifications,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-12-12 11:36:05+01:00,-3600,2019-12-12 11:36:05+01:00,-3600,True,False,['arxiv_latex_cleaner.py'],['2cc4a2a8b8ce092984d0eb26dd8c0b6929c5f4a9'],2,2,4,1,,,
+34c88d082351c3f5b2c36a8606252b8469e996f5,Minor doc update,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2019-12-12 13:51:12+01:00,-3600,2019-12-12 13:51:12+01:00,-3600,True,False,['arxiv_latex_cleaner.py'],['76801745447c751bd2ea5268f6b4dbd4e68d8159'],1,1,2,1,,,
+d9b71eeae37533b7858b4d836c02a713cc93a867,"♻️ Refactoring into a package
+
+Add empty `arxiv_latex_cleaner/__main__.py`
+Add empty `arxiv_latex_cleaner/_version.py`
+Move `arxiv_latex_cleaner.py` into package directory
+Move `arxiv_latex_cleaner_test.py` into package directory",hayesall,alexander@batflyer.net,hayesall,alexander@batflyer.net,2019-12-13 08:15:55-05:00,18000,2019-12-13 08:15:55-05:00,18000,True,False,"['__main__.py', '_version.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['34c88d082351c3f5b2c36a8606252b8469e996f5'],3,3,6,4,,,
+429fc57ea1ffe436aef39ea6157f0205b19fecb2,"🏗️ Packaging arxiv_latex_cleaner
+
+Add empty `__init__.py`
+Add version information in `arxiv_latex_cleaner/_version.py`",hayesall,alexander@batflyer.net,hayesall,alexander@batflyer.net,2019-12-13 09:27:31-05:00,18000,2019-12-13 09:27:31-05:00,18000,True,False,"['__init__.py', '_version.py']",['d9b71eeae37533b7858b4d836c02a713cc93a867'],0,30,30,2,,,
+59d192386e55efaf80c4f55ac79467c1e424029e,"🐛 Fixing import structure in tests
+
+Fix `import` --> `from ... import`
+
+Reworking this as a package changed the way import statements
+work during testing. This fixes the import structure to make
+tests pass again.",hayesall,alexander@batflyer.net,hayesall,alexander@batflyer.net,2019-12-13 09:28:34-05:00,18000,2019-12-13 09:28:34-05:00,18000,True,False,['arxiv_latex_cleaner_test.py'],['429fc57ea1ffe436aef39ea6157f0205b19fecb2'],1,1,2,1,,,
+8ceef79b7af21d20c77f8954cc1602d2569b7b8e,"♻️ Refactoring main module
+
+Drop `__main__` block from `arxiv_latex_cleaner`
+Start using `run_arxiv_cleaner` as a public method
+Fix test to reflect public `run_arxiv_cleaner`
+Add argument parsing to `arxiv_latex_cleaner.__main__`",hayesall,alexander@batflyer.net,hayesall,alexander@batflyer.net,2019-12-13 09:31:24-05:00,18000,2019-12-13 09:31:24-05:00,18000,True,False,"['__main__.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['59d192386e55efaf80c4f55ac79467c1e424029e'],46,84,130,3,0.9117647058823529,0.0,0.0
+0898a3dbf032efa18b160e7416ccd77311475555,"✨ Adding setup.py with `__main__` entry point
+
+Add `exit(0)` to `__main__`
+Add `setup.py` with an entry point to the main module",hayesall,alexander@batflyer.net,hayesall,alexander@batflyer.net,2019-12-13 09:48:41-05:00,18000,2019-12-13 09:48:41-05:00,18000,True,False,"['__main__.py', 'setup.py']",['8ceef79b7af21d20c77f8954cc1602d2569b7b8e'],0,42,42,2,,,
+10211c7790e4816085e311dc072d3588826e990b,"✏️ Updating README description
+
+Add console script explanation, and optional installation info",hayesall,alexander@batflyer.net,hayesall,alexander@batflyer.net,2019-12-13 09:58:22-05:00,18000,2019-12-13 09:58:22-05:00,18000,True,False,['README.md'],['0898a3dbf032efa18b160e7416ccd77311475555'],4,25,29,1,,,
+98e6e75f0e988f266b004e5469d551c24e09744c,"👌 Fixing re.sub expressions and docstring
+
+Fix two re.sub commands and a docstring",hayesall,alexander@batflyer.net,hayesall,alexander@batflyer.net,2019-12-13 12:11:51-05:00,18000,2019-12-13 12:11:51-05:00,18000,True,False,['arxiv_latex_cleaner.py'],['10211c7790e4816085e311dc072d3588826e990b'],3,3,6,1,,,
+498dfa9b975bf0d8d2eb59230f04456aabf22df8,"✏️ Fixing typo where a space was missing
+
+Fix missing space after ""user-defined""",hayesall,alexander@batflyer.net,hayesall,alexander@batflyer.net,2019-12-13 12:20:31-05:00,18000,2019-12-13 12:20:31-05:00,18000,True,False,['__main__.py'],['98e6e75f0e988f266b004e5469d551c24e09744c'],1,1,2,1,,,
+8de5050cda4b11d45155881d544d82b04eca6941,Files and figures referenced in the comments are not copied.,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2020-02-24 14:12:57+01:00,-3600,2020-02-24 14:12:57+01:00,-3600,True,False,"['.gitignore', 'arxiv_latex_cleaner.py', 'main.tex']",['3b58117ca19f46a4825528aa3133a2c8eb1e6933'],63,69,132,3,0.0,1.0,0.0
+6fe243a3bc6c057fc44ef4c0b27d7ee3c3e66954,PDF resolution adjustable. Images can be kept untouched.,Jordi Pont-Tuset,jponttuset@google.com,Jordi Pont-Tuset,jponttuset@google.com,2020-02-24 15:07:24+01:00,-3600,2020-02-24 15:07:24+01:00,-3600,True,False,"['README.md', '__main__.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['8de5050cda4b11d45155881d544d82b04eca6941'],49,79,128,4,0.0,0.6666666666666666,0.13333333333333333
+da1400e4e34694cc5963537e67e7c02362ea26b5,Prevent ghostscript from auto-rotating pages,Eric Heiden,eric-heiden@outlook.com,GitHub,noreply@github.com,2020-03-07 02:10:59-08:00,28800,2020-03-07 02:10:59-08:00,28800,True,False,['arxiv_latex_cleaner.py'],['6fe243a3bc6c057fc44ef4c0b27d7ee3c3e66954'],1,2,3,1,,,
+151dd3115d025c7899847bf57f763fab680b6179,Setting up PyPi,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-05-18 22:03:52+02:00,-7200,2020-05-18 22:03:52+02:00,-7200,True,False,"['_version.py', 'setup.py']",['8065adcef747558077072faafe2ece2d86d5e744'],2,2,4,2,,,
+998036d55a32bf505953e32407d74dcef68d6bd0,Adding PyPi long description,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-05-18 22:12:02+02:00,-7200,2020-05-18 22:12:02+02:00,-7200,True,False,"['_version.py', 'setup.py']",['151dd3115d025c7899847bf57f763fab680b6179'],2,6,8,2,,,
+cd9d66f2ae7599a5ddd8558f024fcd71de3b7aaf,- Linking to PyPi,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-05-19 11:12:41+02:00,-7200,2020-05-19 11:12:41+02:00,-7200,True,False,"['README.md', '_version.py']",['998036d55a32bf505953e32407d74dcef68d6bd0'],5,11,16,2,,,
+a6751a43c4ad9b7fbbedf671c650311c657abf15,PyPI GitHub Release deployment prep,Kacper Sokol,ks1591@my.bristol.ac.uk,Kacper Sokol,ks1591@my.bristol.ac.uk,2020-05-24 14:26:32+01:00,-3600,2020-05-24 14:26:32+01:00,-3600,True,False,"['release-workflow.yml', '.gitignore', 'MANIFEST.in', 'arxiv_latex_cleaner_test.py', 'requirements.txt', 'setup.py']",['cd9d66f2ae7599a5ddd8558f024fcd71de3b7aaf'],5,64,69,6,,,
+ada72bad4b0d2837beb1dcf4b0e3ffd8ef4d70d7,Test workflow on Test PyPI,Kacper Sokol,ks1591@my.bristol.ac.uk,Kacper Sokol,ks1591@my.bristol.ac.uk,2020-05-24 14:39:44+01:00,-3600,2020-05-24 14:39:44+01:00,-3600,True,False,"['release-workflow.yml', 'setup.py']",['a6751a43c4ad9b7fbbedf671c650311c657abf15'],3,3,6,2,,,
+01adc75a324ce51f1d69fe01455da3e6f9a065a2,PR cleanup,Kacper Sokol,ks1591@my.bristol.ac.uk,Kacper Sokol,ks1591@my.bristol.ac.uk,2020-05-24 14:45:24+01:00,-3600,2020-05-24 14:45:24+01:00,-3600,True,False,"['release-workflow.yml', 'README.md', 'setup.py']",['ada72bad4b0d2837beb1dcf4b0e3ffd8ef4d70d7'],3,3,6,3,,,
+f1897b3addc83d5ab8906dbab35be1618b46a9ea,Dummy version to test PyPi deployment,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-06-08 17:28:46+02:00,-7200,2020-06-08 17:28:46+02:00,-7200,True,False,"['README.md', '_version.py']",['349329b1da11bc5163ae4d059fabb0df87a361f4'],2,2,4,2,,,
+faef7e7f230eb47d0ba7a93819fa2b6c0913fdfd,added support for tikzpicture source code replacement with externalized pdfs,Sebastian Dörner,doerner@inue.uni-stuttgart.de,Sebastian Dörner,doerner@inue.uni-stuttgart.de,2020-06-15 19:54:40+02:00,-7200,2020-06-15 19:54:40+02:00,-7200,True,False,"['__main__.py', 'arxiv_latex_cleaner.py']",['cd9d66f2ae7599a5ddd8558f024fcd71de3b7aaf'],5,39,44,2,0.7368421052631579,0.0,1.0
+d63df0c15917ca43ff3e63395844def07031c426,"Update to README.md - tikzpicture feature
+
+added description on tikzpicture replacement feature",sdnr,sdnr@users.noreply.github.com,GitHub,noreply@github.com,2020-06-24 18:31:22+02:00,-7200,2020-06-24 18:31:22+02:00,-7200,True,False,['README.md'],['b9706de1fa2984b39b0afe082a0bc2d3907ea8cd'],0,16,16,1,,,
+0952b067433f52c8be7ffd8c2b8285212da4c4b8,"Update to README.md
+
+mentioning tikz externalization manual earlier",sdnr,sdnr@users.noreply.github.com,GitHub,noreply@github.com,2020-06-24 18:37:52+02:00,-7200,2020-06-24 18:37:52+02:00,-7200,True,False,['README.md'],['d63df0c15917ca43ff3e63395844def07031c426'],2,2,4,1,,,
+15e8258aa2e1ff52f0baa464640950e3c0ee0139,"- moved content split outside of _replace_tikzpicture function
+- now checking for parameter use_external_tikz in _split_all_files",Sebastian Dörner,doerner@inue.uni-stuttgart.de,Sebastian Dörner,doerner@inue.uni-stuttgart.de,2020-06-25 18:47:53+02:00,-7200,2020-06-25 18:47:53+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['0952b067433f52c8be7ffd8c2b8285212da4c4b8'],8,11,19,1,0.0,0.0,1.0
+481984bcbfd62a865a59a923764c7030ce944e41,added unit tests for tikzpicture feature,Sebastian Dörner,doerner@inue.uni-stuttgart.de,Sebastian Dörner,doerner@inue.uni-stuttgart.de,2020-06-25 18:51:21+02:00,-7200,2020-06-25 18:51:21+02:00,-7200,True,False,"['arxiv_latex_cleaner_test.py', 'figure_not_included.pdf', 'test1.pdf', 'test2.pdf', 'figure_included.tikz', 'main.tex', 'test1.pdf', 'test2.pdf', 'figure_included.tikz', 'main.tex']",['15e8258aa2e1ff52f0baa464640950e3c0ee0139'],1,67,68,10,0.8,1.0,0.2
+a64362b622e45cd17746f4408c6f15fb4ce698bb,"Apply suggestions from code review
+
+added all suggestions
+
+Co-authored-by: Jordi Pont-Tuset <jponttuset@gmail.com>",sdnr,sdnr@users.noreply.github.com,GitHub,noreply@github.com,2020-07-09 16:25:41+02:00,-7200,2020-07-09 16:25:41+02:00,-7200,True,False,"['README.md', '__main__.py', 'arxiv_latex_cleaner.py']",['481984bcbfd62a865a59a923764c7030ce944e41'],6,5,11,3,,,
+f5b9106306d4af0df93f215664867fef5a3325e9,removed dead code and reformatted for line margin,Sebastian Dörner,doerner@inue.uni-stuttgart.de,Sebastian Dörner,doerner@inue.uni-stuttgart.de,2020-07-09 16:40:49+02:00,-7200,2020-07-09 16:40:49+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['a64362b622e45cd17746f4408c6f15fb4ce698bb'],18,19,37,1,1.0,1.0,1.0
+3e14488fdb45e32c68b726ec6011f5b6a5a60dbb,Formatting,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-07-10 08:24:25+02:00,-7200,2020-07-10 08:24:25+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['f5b9106306d4af0df93f215664867fef5a3325e9'],55,53,108,1,0.6666666666666666,1.0,0.6666666666666666
+808d85eaea81adf901949c64d38d131a75dd64a7,Fixes small problem and formats test,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-07-10 08:56:35+02:00,-7200,2020-07-10 08:56:35+02:00,-7200,True,False,['arxiv_latex_cleaner_test.py'],['f5452f42212e3f3abf50f6ec65e1a6d08377c3b9'],13,19,32,1,,,
+8dd7fa1ce8f2bb61fb9a2baf6a56f7f23d5de6fe,v0.1.5,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-07-10 08:59:09+02:00,-7200,2020-07-10 08:59:09+02:00,-7200,True,False,['_version.py'],['808d85eaea81adf901949c64d38d131a75dd64a7'],1,1,2,1,,,
+2045634c0b52bad482c9b3a0b507a7add84450e2,Fixes encoding problems in Windows. See #24,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-07-10 09:24:52+02:00,-7200,2020-07-10 09:24:52+02:00,-7200,True,False,"['_version.py', 'arxiv_latex_cleaner.py']",['8dd7fa1ce8f2bb61fb9a2baf6a56f7f23d5de6fe'],3,3,6,2,,,
+783940115e96dbeb1ff993cd55729d9286eb69b3,Add unit test for iffalse,Waiss Azizian,waiss.azizian@ens.fr,Waiss Azizian,waiss.azizian@ens.fr,2020-08-01 12:10:48+02:00,-7200,2020-08-01 12:10:48+02:00,-7200,True,False,['arxiv_latex_cleaner_test.py'],['2045634c0b52bad482c9b3a0b507a7add84450e2'],0,19,19,1,1.0,1.0,0.0
+392ae1935acc4edad06868f880a88839ffe812cf,Add iffalse in test_complete,Waiss Azizian,waiss.azizian@ens.fr,Waiss Azizian,waiss.azizian@ens.fr,2020-08-01 12:11:21+02:00,-7200,2020-08-01 12:11:21+02:00,-7200,True,False,"['main.tex', 'main.tex']",['783940115e96dbeb1ff993cd55729d9286eb69b3'],0,16,16,2,,,
+9c32037984ab4895538e37fec6e4456c962b3288,Add feature removing iffalse,Waiss Azizian,waiss.azizian@ens.fr,Waiss Azizian,waiss.azizian@ens.fr,2020-08-01 12:12:04+02:00,-7200,2020-08-01 12:12:04+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['392ae1935acc4edad06868f880a88839ffe812cf'],0,27,27,1,0.045454545454545456,0.045454545454545456,1.0
+29211c2c5b01a0ff0c9c235d5c62bef59789d5a9,Update tests with whitespace convention,Waiss Azizian,waiss.azizian@ens.fr,Waiss Azizian,waiss.azizian@ens.fr,2020-08-02 11:38:46+02:00,-7200,2020-08-02 11:38:46+02:00,-7200,True,False,"['arxiv_latex_cleaner_test.py', 'main.tex']",['9c32037984ab4895538e37fec6e4456c962b3288'],3,18,21,2,,,
+ee3cc212a309292eba5a41537677edc942599eca,Update func with whitespace convention,Waiss Azizian,waiss.azizian@ens.fr,Waiss Azizian,waiss.azizian@ens.fr,2020-08-02 11:39:34+02:00,-7200,2020-08-02 11:39:34+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['29211c2c5b01a0ff0c9c235d5c62bef59789d5a9'],2,6,8,1,0.0,0.0,1.0
+6101d8028395ab0b10b41751370e2023e5adeb88,"Apply style suggestions from code review
+
+Co-authored-by: Jordi Pont-Tuset <jponttuset@gmail.com>",Waïss Azizian,waiss.azizian@ens.fr,GitHub,noreply@github.com,2020-08-02 11:41:15+02:00,-7200,2020-08-02 11:41:15+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['ee3cc212a309292eba5a41537677edc942599eca'],5,5,10,1,,,
+ea448a082c5bcaaca2c7de30bc25408906ff5f88,Minor style changes,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-08-02 20:15:31+02:00,-7200,2020-08-02 20:15:31+02:00,-7200,True,False,"['_version.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['43728b0cba195e9387c8c837a32ffd940cdabb69'],6,5,11,3,0.0,0.0,1.0
+ccbdb1194562e626fff4d04f74782d7c76254aba,Marking python 3 only,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-08-03 07:21:04+02:00,-7200,2020-08-03 07:21:04+02:00,-7200,True,False,"['README.md', '_version.py', 'setup.py']",['ea448a082c5bcaaca2c7de30bc25408906ff5f88'],5,9,14,3,,,
+8310b0f8be3682165c9022d4053d7bab26c9798f,adds `--config` argument,Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-08 12:59:11+02:00,-7200,2020-09-08 21:00:05+02:00,-7200,True,False,"['__main__.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'requirements.txt']",['ccbdb1194562e626fff4d04f74782d7c76254aba'],3,102,105,4,0.43243243243243246,0.6216216216216216,0.3783783783783784
+a3861179a134cfed4b155fdfbacdf575c061b684,"adds ""_find_and_replace_patterns""",Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-08 14:41:20+02:00,-7200,2020-09-08 21:00:25+02:00,-7200,True,False,"['arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['8310b0f8be3682165c9022d4053d7bab26c9798f'],24,106,130,2,0.6060606060606061,0.8939393939393939,0.5757575757575758
+a91f22cd1caf7722b9bb9546c6ff6758f07be801,adds logger,Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-08 16:29:20+02:00,-7200,2020-09-08 21:00:58+02:00,-7200,True,False,"['__main__.py', 'arxiv_latex_cleaner.py']",['a3861179a134cfed4b155fdfbacdf575c061b684'],7,13,20,2,1.0,0.0,1.0
+0364a57df5653dd1601abeebfb7ad1c87d5afbdf,adds example config,Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-08 16:48:15+02:00,-7200,2020-09-08 21:01:27+02:00,-7200,True,False,['cleaner_config.yaml'],['a91f22cd1caf7722b9bb9546c6ff6758f07be801'],0,16,16,1,,,
+92742828e9d4318fcb210ef98b893e539b5727ee,small fix,Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-08 17:32:30+02:00,-7200,2020-09-08 21:01:48+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['0364a57df5653dd1601abeebfb7ad1c87d5afbdf'],3,3,6,1,,,
+0d4a241cbad834248a46e2ca35b224514c7be881,algorithmic improvements,Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-08 17:47:58+02:00,-7200,2020-09-08 21:02:05+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['92742828e9d4318fcb210ef98b893e539b5727ee'],9,16,25,1,0.0,1.0,1.0
+5657dce7bdef04ac477af9bbbc652d82989a29a8,improved logging,Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-08 19:21:59+02:00,-7200,2020-09-08 21:02:21+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['0d4a241cbad834248a46e2ca35b224514c7be881'],7,10,17,1,0.0,1.0,1.0
+c8636a483e015b6c116c7dbaf1e6e379c9ac464c,adds verbose flag,Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-08 19:24:03+02:00,-7200,2020-09-08 21:02:34+02:00,-7200,True,False,['__main__.py'],['5657dce7bdef04ac477af9bbbc652d82989a29a8'],0,5,5,1,,,
+0f7e0ec0674767cbe177b48cf607845c838b9d2b,README update,Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-08 20:34:12+02:00,-7200,2020-09-08 21:02:46+02:00,-7200,True,False,"['README.md', 'cleaner_config.yaml']",['c8636a483e015b6c116c7dbaf1e6e379c9ac464c'],1,34,35,2,,,
+8f80282f0ff7721306f3aca09800e765cca562a6,small fix,Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-09 08:47:47+02:00,-7200,2020-09-09 09:06:44+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['0f7e0ec0674767cbe177b48cf607845c838b9d2b'],19,24,43,1,0.0,0.0,1.0
+7cd7c7d9d0c6021d111862b8c9227f1921da7d49,fix _find_and_replace_pattern bug,Sandro Braun,supermario94123@gmail.com,Sandro Braun,supermario94123@gmail.com,2020-09-09 09:14:49+02:00,-7200,2020-09-09 09:14:49+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['8f80282f0ff7721306f3aca09800e765cca562a6'],10,5,15,1,1.0,0.0,0.0
+debe0488e502951ce1d803b7c59a994646236c02,Formatting and some fixes in the tests.,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-09-11 15:55:04+02:00,-7200,2020-09-11 15:55:04+02:00,-7200,True,False,"['README.md', '__main__.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['7cd7c7d9d0c6021d111862b8c9227f1921da7d49'],195,243,438,4,0.0,1.0,1.0
+1c1464ee98e284b957c9c75b33e2881ecfdf71f1,Minor README fix.,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-09-11 15:59:45+02:00,-7200,2020-09-11 15:59:45+02:00,-7200,True,False,['README.md'],['debe0488e502951ce1d803b7c59a994646236c02'],3,2,5,1,,,
+4ccb79af736af1f70c79915c04d2883c9d125352,v0.1.9,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-09-11 16:22:06+02:00,-7200,2020-09-11 16:22:06+02:00,-7200,True,False,"['README.md', '_version.py']",['e1ac0cc58bb72425e8c8ae1022d7abdc7346c46a'],2,2,4,2,,,
+919d74eb2099d5dbeb058875a9558e4e5e2c682f,v0.1.10,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2020-09-11 16:25:12+02:00,-7200,2020-09-11 16:25:12+02:00,-7200,True,False,"['README.md', '_version.py']",['4ccb79af736af1f70c79915c04d2883c9d125352'],9,9,18,2,,,
+8032928e2f64365bba5267bb9cca5bd9b1c2479b,Escapes the dot in file patterns. Fixes #34.,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-01-06 20:58:19+01:00,-3600,2021-01-06 20:58:19+01:00,-3600,True,False,"['arxiv_latex_cleaner.py', 'setup.py']",['919d74eb2099d5dbeb058875a9558e4e5e2c682f'],6,7,13,2,0.0,0.0,1.0
+aed019211851a530625e76165c335836bb1e711d,v0.1.11,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-01-06 21:00:54+01:00,-3600,2021-01-06 21:00:54+01:00,-3600,True,False,"['README.md', '_version.py']",['8032928e2f64365bba5267bb9cca5bd9b1c2479b'],2,2,4,2,,,
+2915034b8c4bf7f2a74b32dc8f71ddf68c047a1c,"Fix external_tikz regression
+
+Fix a regression introduced by commit 8310b0f8be3682165c9022d4053d7bab26c9798f which removed the --use_external_tikz command-line switch",Andrea,andryandrew@gmail.com,GitHub,noreply@github.com,2021-01-10 11:42:31+01:00,-3600,2021-01-10 11:42:31+01:00,-3600,True,False,['__main__.py'],['aed019211851a530625e76165c335836bb1e711d'],0,7,7,1,,,
+0741961828280bed59268a72b191e9f95dcfd196,v0.1.12,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-01-10 16:24:35+01:00,-3600,2021-01-10 16:24:35+01:00,-3600,True,False,"['README.md', '_version.py']",['3d3b960a310debfec4b72844af3771147243b21d'],2,2,4,2,,,
+79b458f5f7a0e73b30121400aff5b9d49d6377bd,Add the option to disable strip_whitespace while finding and replacing patterns,Gilbert Shih,ldes89150@gmail.com,Gilbert Shih,ldes89150@gmail.com,2021-01-19 01:08:42-05:00,18000,2021-01-19 01:08:42-05:00,18000,True,False,['arxiv_latex_cleaner.py'],['0741961828280bed59268a72b191e9f95dcfd196'],1,3,4,1,0.0,1.0,1.0
+673eb77b72adf15ceb41aebafa5d0457e2d3f1f7,update example yaml,Gilbert Shih,ldes89150@gmail.com,Gilbert Shih,ldes89150@gmail.com,2021-01-19 01:16:29-05:00,18000,2021-01-19 01:16:29-05:00,18000,True,False,['cleaner_config.yaml'],['79b458f5f7a0e73b30121400aff5b9d49d6377bd'],2,7,9,1,,,
+975e88374b2b6ea6929df94d27364eb491fe5415,v0.1.13,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-01-19 08:38:19+01:00,-3600,2021-01-19 08:38:19+01:00,-3600,True,False,"['README.md', '_version.py', 'cleaner_config.yaml']",['6b2f8c2e76759ae9206eab786bf4cf35c2318f87'],3,3,6,3,,,
+91570c934eab8d17032e736794d21bbe27c4fe14,Add the option to keep the bib files,Giulio Romualdi,giulio.romualdi@gmail.com,Giulio Romualdi,giulio.romualdi@gmail.com,2021-02-24 11:51:15+01:00,-3600,2021-02-24 11:54:24+01:00,-3600,True,False,"['__main__.py', 'arxiv_latex_cleaner.py']",['975e88374b2b6ea6929df94d27364eb491fe5415'],6,16,22,2,0.0,0.0,1.0
+1ef87e94732cc3b3292e69dfe465d5f4c663fa91,Style formatting and updating readme (v0.1.14),Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-02-24 13:59:54+01:00,-3600,2021-02-24 13:59:54+01:00,-3600,True,False,"['README.md', '__main__.py', '_version.py', 'arxiv_latex_cleaner.py']",['d8b1a390b165c622919833497058e799f5146bf7'],16,22,38,4,0.0,0.0,1.0
+2d9de6f3ab010f08bde09190252b9c858520d316,More robust output folder definition (e.g. it now acceptsto run it on '.') and test fix (v0.1.15),Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-03-04 12:05:46+01:00,-3600,2021-03-04 12:05:46+01:00,-3600,True,False,"['README.md', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['1ef87e94732cc3b3292e69dfe465d5f4c663fa91'],2,9,11,3,0.0,1.0,1.0
+3b481f6445501a578355ecc92be251a0858a0da3,v0.1.15,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-03-04 12:06:26+01:00,-3600,2021-03-04 12:06:26+01:00,-3600,True,False,"['README.md', '_version.py']",['2d9de6f3ab010f08bde09190252b9c858520d316'],2,2,4,2,,,
+c35561a7c5e4e66c3f492c6b6a673c324375cb67,Strip everything after \end{document},sbirchfield,41599412+sbirchfield@users.noreply.github.com,GitHub,noreply@github.com,2021-03-24 19:10:20-07:00,25200,2021-03-24 19:10:20-07:00,25200,True,False,['arxiv_latex_cleaner.py'],['3b481f6445501a578355ecc92be251a0858a0da3'],1,11,12,1,1.0,1.0,1.0
+dd19128ca1d92f0cee28d8da83ca4a0f82d956b7,"Fixes PR, adds tests",Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-03-25 09:05:09+01:00,-3600,2021-03-25 09:05:09+01:00,-3600,True,False,"['README.md', '_version.py', 'arxiv_latex_cleaner.py', 'main.tex', 'main.tex']",['fefec40698a96fbc68d50a6031257b7b54532b8e'],6,14,20,5,,,
+837c738fadc9d2cc14dabfdf617a7df6777b7c04,Not leaving empty lines when removing commands (Fixes #43),Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-03-30 12:06:51+02:00,-7200,2021-03-30 12:06:51+02:00,-7200,True,False,"['arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'main.tex', 'main.tex']",['dd19128ca1d92f0cee28d8da83ca4a0f82d956b7'],18,25,43,4,1.0,,
+1514451e56037e495c193b36784e831fe2c8e3c1,v0.1.17,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-03-30 12:07:54+02:00,-7200,2021-03-30 12:07:54+02:00,-7200,True,False,"['README.md', '_version.py']",['837c738fadc9d2cc14dabfdf617a7df6777b7c04'],2,2,4,2,,,
+0691ac8e79ad18c417d2f454083724e855ad1df2,Modifies _remove_command to avoid [catastrophic backtracking](https://www.regular-expressions.info/catastrophic.html),Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-03-30 17:47:33+02:00,-7200,2021-03-30 17:47:33+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['1514451e56037e495c193b36784e831fe2c8e3c1'],6,19,25,1,1.0,0.0,1.0
+96996905262646b24fbc81488452b775e36db06a,v0.1.18,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-03-30 17:48:08+02:00,-7200,2021-03-30 17:48:08+02:00,-7200,True,False,"['README.md', '_version.py']",['0691ac8e79ad18c417d2f454083724e855ad1df2'],2,2,4,2,,,
+f887a0ba5c8c10e850f029c054f514382584ddac,Improving documentation for,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-03-30 21:11:16+02:00,-7200,2021-03-30 21:11:16+02:00,-7200,True,False,"['README.md', '__main__.py', '_version.py']",['96996905262646b24fbc81488452b775e36db06a'],5,16,21,3,,,
+fc3d0db618b85c2ef1730cf1eee984bc477f709d,Fix the order of args in gs to actually disable AutoRotatePages,Pingchuan Ma,pika7ma@gmail.com,Pingchuan Ma,pika7ma@gmail.com,2021-04-30 15:50:43-04:00,14400,2021-04-30 15:50:43-04:00,14400,True,False,['arxiv_latex_cleaner.py'],['f887a0ba5c8c10e850f029c054f514382584ddac'],2,2,4,1,,,
+fdf11f7c524c5ee955a155863fdac0f07122e38d,v0.1.21,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-05-03 08:09:26+02:00,-7200,2021-05-03 08:09:26+02:00,-7200,True,False,"['README.md', '_version.py']",['5d4bfead4d8dc20769a38d58cdccca5fbc8faf8e'],2,2,4,2,,,
+3851e38a462d8342fc6fd28557bbe1440c3e6c80,"support ""\if0"" on top of ""\iffalse""",gabriben,37249800+gabriben@users.noreply.github.com,GitHub,noreply@github.com,2021-08-24 11:55:30+02:00,-7200,2021-08-24 11:55:30+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['fdf11f7c524c5ee955a155863fdac0f07122e38d'],1,1,2,1,,,
+647423e9bff7632dde3d2152978bb26f62ab6588,v0.1.21,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2021-08-30 14:55:23+02:00,-7200,2021-08-30 14:55:23+02:00,-7200,True,False,"['README.md', '_version.py']",['536752458f9a625443b5709a4137eac569a7405e'],2,2,4,2,,,
+d7f9a8a8ddf4293d289672e76a6e9d0baa3fb329,Fixes#45,Penghui Guo,guopenghui668@gmail.com,Penghui Guo,guopenghui668@gmail.com,2022-01-18 02:46:37+08:00,-28800,2022-01-18 02:46:37+08:00,-28800,True,False,"['arxiv_latex_cleaner.py', 'main.tex']",['647423e9bff7632dde3d2152978bb26f62ab6588'],2,7,9,2,1.0,0.0,1.0
+daa5dec52bbfe99c6e8944b25c372cafde308567,Fixes#45.,Penghui Guo,guopenghui668@gmail.com,Penghui Guo,guopenghui668@gmail.com,2022-01-18 18:08:46+08:00,-28800,2022-01-18 18:08:46+08:00,-28800,True,False,['arxiv_latex_cleaner.py'],['d7f9a8a8ddf4293d289672e76a6e9d0baa3fb329'],5,5,10,1,,1.0,
+5aaa5ec36e514bf979c7d21b480591cfe80e2090,Fixes #53,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-01-18 11:35:40+01:00,-3600,2022-01-18 11:35:40+01:00,-3600,True,False,['requirements.txt'],['7332e5f7c1fd8e9c491545c39a16ebd08cdb199c'],1,1,2,1,,,
+ed427e238fbfe04f1cce77335ff99bc454733ed0,Fixes test,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-01-18 11:37:59+01:00,-3600,2022-01-18 11:37:59+01:00,-3600,True,False,['main.tex'],['5aaa5ec36e514bf979c7d21b480591cfe80e2090'],0,1,1,1,,,
+304c416a15560b3f3b5fcda8e07c9e60786b9e13,Fixes formatting and small issues,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-01-18 11:50:45+01:00,-3600,2022-01-18 11:50:45+01:00,-3600,True,False,"['arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['ed427e238fbfe04f1cce77335ff99bc454733ed0'],5,14,19,2,0.0,0.875,0.5
+e855b2d719505f8be4434e404952a20a9cb98b24,v0.1.23,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-01-18 11:54:28+01:00,-3600,2022-01-18 11:54:28+01:00,-3600,True,False,['_version.py'],['304c416a15560b3f3b5fcda8e07c9e60786b9e13'],1,1,2,1,,,
+bec9d832f44f49c3fe65e83e4e89e3058f31d0d2,"fixes google-research/arxiv-latex-cleaner#22 (#25)
+
+* fixes google-research/arxiv-latex-cleaner#22
+
+* Improve file reference check
+
+Better check for images. Now accommodates for graphicspath
+by means of a weaker reference check for images.
+See pull request #25 for details.
+
+Co-authored-by: P. R. Vaidyanathan <vaidyanathan@ac.tuwien.ac.at>",Aditya Sriram,aditya95sriram@gmail.com,GitHub,noreply@github.com,2022-01-19 13:40:32+01:00,-3600,2022-01-19 13:40:32+01:00,-3600,True,False,"['arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'im1.png', 'im3_included.png', 'im4_included.png', 'im4_not_included.png', 'im5_included.jpg', 'im5_not_included.jpg', 'im3_included.png', 'main.tex', 'data_included.txt', 'im3_included.png', 'im4_included.png', 'im5_included.jpg', 'im3_included.png', 'main.tex']",['e855b2d719505f8be4434e404952a20a9cb98b24'],6,152,158,16,0.4457831325301205,1.0,0.5301204819277109
+ffe40dff506a86cfd27baa8494fec3aa143bd8cc,Minor style reformatting,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-01-19 13:46:52+01:00,-3600,2022-01-19 13:46:52+01:00,-3600,True,False,"['arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['bec9d832f44f49c3fe65e83e4e89e3058f31d0d2'],82,102,184,2,0.0,1.0,0.14285714285714285
+00918f146a54b0edd011b63a1bab3bef380faa4e,v0.1.24,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-01-19 13:47:41+01:00,-3600,2022-01-19 13:47:41+01:00,-3600,True,False,['_version.py'],['ffe40dff506a86cfd27baa8494fec3aa143bd8cc'],1,1,2,1,,,
+ece47a29f7151d5235fefdc86b804b8e595cdaa7,"fix path split bug and add tests (#55)
+
+* fixed path split blug in _search_reference
+* now works for paths with more than 2 parents
+* add tests for _search_reference
+
+Co-authored-by: P. R. Vaidyanathan <vaidyanathan@ac.tuwien.ac.at>",Aditya Sriram,aditya95sriram@gmail.com,GitHub,noreply@github.com,2022-01-20 17:02:34+01:00,-3600,2022-01-20 17:02:34+01:00,-3600,True,False,"['arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['00918f146a54b0edd011b63a1bab3bef380faa4e'],28,225,253,2,0.10126582278481013,1.0,0.8481012658227848
+afe8c405a344c1051d2b66f64ad18256ba5c24ac,v0.1.25,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-01-20 17:06:06+01:00,-3600,2022-01-20 17:06:06+01:00,-3600,True,False,"['_version.py', 'arxiv_latex_cleaner_test.py']",['ece47a29f7151d5235fefdc86b804b8e595cdaa7'],152,156,308,2,1.0,,0.0
+2008b826cd29d058f21b019e1182f3b61fda0798,Improve the code highlighting in the README (#58),Santiago Castro,bryant1410@gmail.com,GitHub,noreply@github.com,2022-02-28 05:18:15-05:00,18000,2022-02-28 11:18:15+01:00,-3600,True,False,['README.md'],['afe8c405a344c1051d2b66f64ad18256ba5c24ac'],6,6,12,1,,,
+400fb94640fe6dd1b5e62f8d240fe614f187f9cd,"Fix relative filenames referenced with './' in tex (#56)
+
+* Fix relative filenames referenced with './' in tex
+
+some files 'path/to/file' are referenced in tex as './path/to/file'
+thus add prefix for relative paths starting with './' or '.\' to regex search
+
+* Add unit test for images starting with '.'
+
+* Add includegraphics with a path starting with './'
+
+* Result for includepgraphics starting with './'",Vaufreyd,github@domshome.net,GitHub,noreply@github.com,2022-03-31 13:36:47+02:00,-7200,2022-03-31 13:36:47+02:00,-7200,True,False,"['arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'main.tex', 'main.tex']",['2008b826cd29d058f21b019e1182f3b61fda0798'],0,15,15,4,0.0,1.0,0.8571428571428571
+877b04e55a54897db431bf70892305262ab88e0d,"remove ""\if false"" or ""\if 0"" blocks that contain spaces (#59)",Andy Lin,32576375+andylin-hao@users.noreply.github.com,GitHub,noreply@github.com,2022-03-31 19:38:07+08:00,-28800,2022-03-31 13:38:07+02:00,-7200,True,False,"['arxiv_latex_cleaner.py', 'main.tex']",['400fb94640fe6dd1b5e62f8d240fe614f187f9cd'],2,8,10,2,,,
+c9fea1443d7d3c7912d12be6f4a929087bcb6943,Formatting and version,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-03-31 13:49:59+02:00,-7200,2022-03-31 13:49:59+02:00,-7200,True,False,"['README.md', '_version.py', 'arxiv_latex_cleaner.py']",['877b04e55a54897db431bf70892305262ab88e0d'],8,10,18,3,0.0,0.0,1.0
+e1861f179c913832bce95468ede2fabe9d044183,Revert bad formatting in README.md,Jordi Pont-Tuset,jponttuset@gmail.com,GitHub,noreply@github.com,2022-03-31 14:00:29+02:00,-7200,2022-03-31 14:00:29+02:00,-7200,True,False,['README.md'],['c9fea1443d7d3c7912d12be6f4a929087bcb6943'],3,2,5,1,,,
+95797416e419ccccda6c7e81528bb0f46dfa11b6,"Change text file comparison to get rid of end of line. Now, tests pass on Windows and Linux (need to be tested on MacOSX). (#62)",Vaufreyd,github@domshome.net,GitHub,noreply@github.com,2022-04-13 17:36:45+02:00,-7200,2022-04-13 17:36:45+02:00,-7200,True,False,['arxiv_latex_cleaner_test.py'],['e1861f179c913832bce95468ede2fabe9d044183'],4,5,9,1,,,
+df1a4f5c6f5361e844b1abb5bea3fc3154462665,"Add an option to delete commands but keep their wrapped text (#60)
+
+* remove ""\if false"" or ""\if 0"" blocks that contain spaces
+* Add an option to delete commands but keep their wrapped text",Andy Lin,32576375+andylin-hao@users.noreply.github.com,GitHub,noreply@github.com,2022-04-13 23:42:31+08:00,-28800,2022-04-13 17:42:31+02:00,-7200,True,False,"['__main__.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'main.tex', 'main.tex']",['95797416e419ccccda6c7e81528bb0f46dfa11b6'],20,83,103,5,0.2857142857142857,0.42857142857142855,0.0
+8a3ce0f1d1990060446f46af397c54c1ae911dfa,Formatting and version,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-04-13 17:58:25+02:00,-7200,2022-04-13 17:58:25+02:00,-7200,True,False,"['README.md', '_version.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['df1a4f5c6f5361e844b1abb5bea3fc3154462665'],38,59,97,4,0.4444444444444444,0.4444444444444444,0.0
+ed8519a8821dfbfe50fc75cbddf58523d15a2892,"fixes #46 (Custom command \figref is treated as \fi) (#66)
+
+* remove nested if's doesn't remove custom commands
+
+* remove duplicated test file",Jessica Zhang,jessicajzhang03@gmail.com,GitHub,noreply@github.com,2022-08-18 04:05:20-04:00,14400,2022-08-18 10:05:20+02:00,-7200,True,False,"['arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['8a3ce0f1d1990060446f46af397c54c1ae911dfa'],1,5,6,2,,,
+b9787be9c32d885df912410a8fc7a223c2bdc20f,v0.1.28,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-08-18 10:13:19+02:00,-7200,2022-08-18 10:13:19+02:00,-7200,True,False,"['README.md', '_version.py']",['ed8519a8821dfbfe50fc75cbddf58523d15a2892'],2,2,4,2,,,
+eb5e18699d81d04b44d71922081529fba0dba314,"Fix --commands_to_delete failing to match deeply nested commands and hanging (#69)
+
+* added testcase for deeply nested commands
+
+* bugfix for deeply_nested_command_keep_text failing
+using regex instead of re",joellindegger,99451966+joellindegger@users.noreply.github.com,GitHub,noreply@github.com,2022-09-21 09:16:32+02:00,-7200,2022-09-21 09:16:32+02:00,-7200,True,False,"['arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'requirements.txt']",['b9787be9c32d885df912410a8fc7a223c2bdc20f'],15,22,37,3,,,
+ea9d6db134963c2396d00ca0f5112bdd39cb763c,Autoformatting and bump to v0.1.29,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-09-21 09:50:03+02:00,-7200,2022-09-21 09:50:03+02:00,-7200,True,False,"['README.md', '_version.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['eb5e18699d81d04b44d71922081529fba0dba314'],11,14,25,4,,,
+c20105277084de4bfd309e40a815aca5ee5be797,Implement performance fix from @mseitzer in #70 (#72),Matthew Andres Moreno,mmore500.login@gmail.com,GitHub,noreply@github.com,2022-11-20 06:15:11-08:00,28800,2022-11-20 15:15:11+01:00,-3600,True,False,['arxiv_latex_cleaner.py'],['ea9d6db134963c2396d00ca0f5112bdd39cb763c'],1,1,2,1,,,
+3f554025e89adc0669e6c6f333ca9ebe47ea44bf,v0.1.30,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2022-11-20 15:18:04+01:00,-3600,2022-11-20 15:18:04+01:00,-3600,True,False,"['README.md', '_version.py']",['c20105277084de4bfd309e40a815aca5ee5be797'],2,2,4,2,,,
+26277bd094570df268b75021c9e6c65fd32e709a,"add --resize_images argument in README.md (#74)
+
+without the --resize_images argument in the first example call in the README file, the argument --im_size 500 has no effect.",Jonas Schult,JonasSchult@users.noreply.github.com,GitHub,noreply@github.com,2022-12-05 21:09:32+01:00,-3600,2022-12-05 21:09:32+01:00,-3600,True,False,['README.md'],['3f554025e89adc0669e6c6f333ca9ebe47ea44bf'],1,1,2,1,,,
+0188876d82b046686d7f2b57fd9fa0212375121d,Add .fls and .fdb_latexmk to list of extensions to delete (#76),philgzl,services@philgzl.com,GitHub,noreply@github.com,2023-04-17 09:12:03+02:00,-7200,2023-04-17 09:12:03+02:00,-7200,True,False,['arxiv_latex_cleaner.py'],['26277bd094570df268b75021c9e6c65fd32e709a'],1,1,2,1,,,
+154546866e90741bff861404ba5e668cc8243015,"Add svg package support (#77)
+
+* Add svg package support
+
+* Update README.md",philgzl,services@philgzl.com,GitHub,noreply@github.com,2023-04-17 09:13:16+02:00,-7200,2023-04-17 09:13:16+02:00,-7200,True,False,"['README.md', '__main__.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['0188876d82b046686d7f2b57fd9fa0212375121d'],0,98,98,4,0.6666666666666666,0.6666666666666666,0.8518518518518519
+adc493cf16bfad22637db4447881832114120f4d,"Remove user-defined environments (#80)
+
+* Add new argument --environments_to_remove ENV [ENV ...]
+
+Introduce a new argument `--environments_to_remove` to remove user-defined
+environments, analogous to the existing `--commands_to_remove`.
+
+* Add testcase for the --environments_to_remove argument",Bernd Busse,bernd@busse-net.de,GitHub,noreply@github.com,2023-07-03 13:36:38+02:00,-7200,2023-07-03 13:36:38+02:00,-7200,True,False,"['__main__.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'main.tex', 'main.tex']",['154546866e90741bff861404ba5e668cc8243015'],1,27,28,5,0.6666666666666666,1.0,1.0
+b1c6883bb3f63ffb40359dda01537faa5a84a37f,"-  -->
+- Small typo fixes
+- Add new parameter to the README page.
+- Bump version",Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2023-07-04 10:13:08+02:00,-7200,2023-07-04 10:13:08+02:00,-7200,True,False,"['README.md', '__main__.py', '_version.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'requirements.txt']",['adc493cf16bfad22637db4447881832114120f4d'],22,31,53,6,,,
+7ab2cebc7768a76f117da278aae63107eb845ffb,Graduate to v1.0.0. Add Homebrew instructions,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2023-07-04 10:21:54+02:00,-7200,2023-07-04 10:21:54+02:00,-7200,True,False,"['README.md', '_version.py']",['b1c6883bb3f63ffb40359dda01537faa5a84a37f'],1,7,8,2,,,
+9dab909ad23d1ad9633a8e004a63c3fd07ffdff9,Minor change in the README,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2023-07-04 10:24:42+02:00,-7200,2023-07-04 10:24:42+02:00,-7200,True,False,"['README.md', '_version.py']",['7ab2cebc7768a76f117da278aae63107eb845ffb'],2,2,4,2,,,
+bc996fcb6e4bc2bc27f21f7c31c85938e431ca5b,"Accept zip-compressed folders as `input_dir` (#83)
+
+* accept zipped inputs
+
+* adapt",Michael Weiss,code@mweiss.ch,GitHub,noreply@github.com,2023-09-11 14:02:34+02:00,-7200,2023-09-11 14:02:34+02:00,-7200,True,False,"['__main__.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py', 'tex.zip']",['9dab909ad23d1ad9633a8e004a63c3fd07ffdff9'],54,73,127,4,0.0,0.0,1.0
+9f47c5a68d38c05030e03b23d3208cae3a694c8a,"Adds Homebrew installation instructions (#64)
+
+Can be installed as `arxiv_latex_cleaner` command line utility using Homebrew.",Tristan Naumann,tristan.naumann@gmail.com,GitHub,noreply@github.com,2023-11-06 04:52:26-05:00,18000,2023-11-06 10:52:26+01:00,-3600,True,False,[],['bc996fcb6e4bc2bc27f21f7c31c85938e431ca5b'],0,0,0,0,,,
+ae6732ef50ed8b93e0c07b3f5f37422e6db67915,"Regex-escape filename components (#84)
+
+Co-authored-by: Jae-Won Chung <jaewon.chung.cs@gmail.com>",Jae-Won Chung,jwnchung@umich.edu,GitHub,noreply@github.com,2023-12-14 16:48:16+09:00,-32400,2023-12-14 08:48:16+01:00,-3600,True,False,['arxiv_latex_cleaner.py'],['9f47c5a68d38c05030e03b23d3208cae3a694c8a'],13,10,23,1,1.0,0.0,1.0
+9d0fd370b6f8706c239d895b1e41042ec0934341,Autoformat and bump version,Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2023-12-14 09:00:50+01:00,-3600,2023-12-14 09:00:50+01:00,-3600,True,False,"['README.md', '__main__.py', '_version.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['ae6732ef50ed8b93e0c07b3f5f37422e6db67915'],459,620,1079,5,0.0,0.525,0.625
+ca4e73a026985bed121189433418b6231146e123,Clarify only compatible with Python 3.9+,Jordi Pont-Tuset,jponttuset@gmail.com,GitHub,noreply@github.com,2024-01-15 17:37:33+01:00,-3600,2024-01-15 17:37:33+01:00,-3600,True,False,['README.md'],['9d0fd370b6f8706c239d895b1e41042ec0934341'],1,1,2,1,,,
+20a98ee04933461131a2cfb677caabb1618774c5,Fixed issue #82: % inside of url link is not treated as comment (#87),Dylan Duhamel,70403658+dylduhamel@users.noreply.github.com,GitHub,noreply@github.com,2024-01-17 14:08:25-05:00,18000,2024-01-17 20:08:25+01:00,-3600,True,False,['arxiv_latex_cleaner.py'],['ca4e73a026985bed121189433418b6231146e123'],10,29,39,1,1.0,0.0,1.0
+4b7168b9af154c102353d881c16f22dd02a89cef,"Revert ""Fixed issue #82: % inside of url link is not treated as comment (#87)""
+
+This reverts commit 20a98ee04933461131a2cfb677caabb1618774c5.",Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2024-01-17 20:16:21+01:00,-3600,2024-01-17 20:16:21+01:00,-3600,True,False,['arxiv_latex_cleaner.py'],['20a98ee04933461131a2cfb677caabb1618774c5'],29,10,39,1,0.0,1.0,0.0
+ada0c67c4e2f2d845c8ff22ef6d33c690656d2b7,"Issue 82 fix (#88)
+
+* Fixed issue #82: % inside of url link is not treated as comment
+
+* test_remove_comments_inline tests pass",Dylan Duhamel,70403658+dylduhamel@users.noreply.github.com,GitHub,noreply@github.com,2024-01-17 15:21:20-05:00,18000,2024-01-17 21:21:20+01:00,-3600,True,False,['arxiv_latex_cleaner.py'],['4b7168b9af154c102353d881c16f22dd02a89cef'],10,29,39,1,1.0,0.0,1.0
+12228fd8fc94fb9ac5276901838e3d25ca3b9438,"Add test for URLs with percents, autoformat, and bump version",Jordi Pont-Tuset,jponttuset@gmail.com,Jordi Pont-Tuset,jponttuset@gmail.com,2024-01-17 21:26:42+01:00,-3600,2024-01-17 21:26:42+01:00,-3600,True,False,"['README.md', '_version.py', 'arxiv_latex_cleaner.py', 'arxiv_latex_cleaner_test.py']",['ada0c67c4e2f2d845c8ff22ef6d33c690656d2b7'],31,39,70,4,0.0,0.0,1.0

@@ -1,0 +1,237 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+cdaaa7116d42966c88f460eb50fe66f61df5527a,first commit,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2011-07-15 11:45:10-07:00,25200,2011-07-15 11:45:10-07:00,25200,True,False,"['Makefile', 'README', 'kytea-struct.h', 'kytea.h', 'mykytea.cpp', 'mykytea.hpp', 'mykytea.i', 'mykytea_test.py']",[],0,593,593,8,0.610062893081761,0.9371069182389937,1.0
+4335dd3c87ec9b20743fef72f12db1a0c6d5c552,Modify README,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2011-07-15 14:26:59-07:00,25200,2011-07-15 14:26:59-07:00,25200,True,False,['README'],['cdaaa7116d42966c88f460eb50fe66f61df5527a'],1,5,6,1,,,
+87511336e91698969daf8ba7be86c1854e3ddbea,"Add ""mykytea_wrap.cxx""",chezou,chezou@gmail.com,chezou,chezou@gmail.com,2011-07-15 14:28:55-07:00,25200,2011-07-15 14:28:55-07:00,25200,True,False,['mykytea_wrap.cxx'],['4335dd3c87ec9b20743fef72f12db1a0c6d5c552'],0,15682,15682,1,0.14590984974958263,0.49607679465776294,0.9361435726210351
+cb1abd354adf792ee3bdbf203feb1b001e9655ff,Added setup.py,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2011-07-18 17:33:59-07:00,25200,2011-07-18 17:33:59-07:00,25200,True,False,"['Makefile', 'README', 'setup.py']",['87511336e91698969daf8ba7be86c1854e3ddbea'],17,25,42,3,,,
+de022957aed50e4ecfffc59139952d939a1e641b,Changed README,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2011-07-18 17:40:17-07:00,25200,2011-07-18 17:40:17-07:00,25200,True,False,['README.md'],['cb1abd354adf792ee3bdbf203feb1b001e9655ff'],3,12,15,1,,,
+02ce2921e3fd39281f96e8816e8fac3cabcf1618,Remove kytea.h and kytea-struct.h,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2011-07-18 18:39:00-07:00,25200,2011-07-18 18:39:00-07:00,25200,True,False,"['Makefile', 'README.md', 'kytea-struct.h', 'kytea.h', 'mykytea.i']",['de022957aed50e4ecfffc59139952d939a1e641b'],314,7,321,5,0.0,0.14705882352941177,0.0
+e6aeb0fff96f989d6462f2a04a720355a350b554,Modified README,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2011-07-18 18:42:36-07:00,25200,2011-07-18 18:42:36-07:00,25200,True,False,['README.md'],['02ce2921e3fd39281f96e8816e8fac3cabcf1618'],1,1,2,1,,,
+a8d694bdf1ee7bef877ea0dfb30a7e39a95902f6,changed for KyTea 0.3.2,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2011-09-07 09:56:32-07:00,25200,2011-09-07 09:56:32-07:00,25200,True,False,['mykytea_wrap.cxx'],['e6aeb0fff96f989d6462f2a04a720355a350b554'],21,26,47,1,,,
+a021e49879dfc70e014f8ea88ba8b7563b32d519,Deleted comments for building by Visual Studio,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2012-03-17 07:16:42-07:00,25200,2012-03-17 07:16:42-07:00,25200,True,False,"['mykytea.cpp', 'mykytea.hpp', 'mykytea_wrap.cxx']",['a8d694bdf1ee7bef877ea0dfb30a7e39a95902f6'],99,160,259,3,0.0,1.0,1.0
+a987944733c70875dbc6f260c675dcc5f919dfe9,Modified README,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2012-03-17 07:29:02-07:00,25200,2012-03-17 07:29:02-07:00,25200,True,False,['README.md'],['a021e49879dfc70e014f8ea88ba8b7563b32d519'],10,14,24,1,,,
+ddf9872c09bb76b4b7801e076aff9fd495211e69,Supported initialization with runtime argments,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2012-04-04 06:44:57-07:00,25200,2012-04-04 06:44:57-07:00,25200,True,False,"['mykytea.cpp', 'mykytea.hpp', 'mykytea_test.py']",['a987944733c70875dbc6f260c675dcc5f919dfe9'],14,42,56,3,1.0,1.0,1.0
+76f1bbe2eb778ee6913165fee3f260a76b6767d6,Added catch exception in interface file,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2012-04-04 06:47:47-07:00,25200,2012-04-04 06:47:47-07:00,25200,True,False,['mykytea.i'],['ddf9872c09bb76b4b7801e076aff9fd495211e69'],0,11,11,1,,,
+2e54af7857a9315c9093a61d26a0e4ee9cfd6e9f,Deleted dupulicated Struct in interface file,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2012-04-04 06:55:33-07:00,25200,2012-04-04 06:55:33-07:00,25200,True,False,['mykytea.i'],['76f1bbe2eb778ee6913165fee3f260a76b6767d6'],4,1,5,1,,,
+a0405ce93af3d183d9dad5a30d90f1b712cc38e8,Modified README,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2012-04-04 06:57:37-07:00,25200,2012-04-04 06:57:37-07:00,25200,True,False,['README.md'],['2e54af7857a9315c9093a61d26a0e4ee9cfd6e9f'],6,7,13,1,,,
+5114a5ca90536f3986d6ed0c673f87d9afe94fff,Supported initialization with runtime arguments,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2012-04-04 07:03:08-07:00,25200,2012-04-04 07:03:08-07:00,25200,True,False,['mykytea_wrap.cxx'],['a0405ce93af3d183d9dad5a30d90f1b712cc38e8'],364,756,1120,1,0.0,0.0,1.0
+4fbf00b879f94a6b6e6b65f38642a5978d3b9177,Fixed for API change with v0.4.2,chezou,chezou@gmail.com,chezou,chezou@gmail.com,2012-11-08 06:52:10-08:00,28800,2012-11-08 06:52:10-08:00,28800,True,False,"['mykytea.cpp', 'mykytea_wrap.cxx']",['5114a5ca90536f3986d6ed0c673f87d9afe94fff'],42,197,239,2,0.007142857142857143,0.3,1.0
+d754568b90060add3547d48c5fffc5701f2c2622,Fixed for KyTea 0.4.4,Chezou,chezou+github@gmail.com,Chezou,chezou+github@gmail.com,2013-02-28 00:10:25+09:00,-32400,2013-02-28 00:10:25+09:00,-32400,True,False,"['README.md', 'mykytea.hpp', 'mykytea_wrap.cxx']",['4fbf00b879f94a6b6e6b65f38642a5978d3b9177'],886,2241,3127,3,0.03771849126034959,0.0,0.8003679852805887
+0b200200bdc3a04a357bfbbdcda1f2a9afc33515,Modified README,Chezou,chezou+github@gmail.com,Chezou,chezou+github@gmail.com,2013-04-09 07:22:53+09:00,-32400,2013-04-09 07:22:53+09:00,-32400,True,False,['README.md'],['d754568b90060add3547d48c5fffc5701f2c2622'],3,5,8,1,,,
+6ae3d224b145341f22b2cebd951771c0f624a585,Fix compilation error for gcc 4.8.2,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-01-15 16:41:37+09:00,-32400,2015-01-15 16:41:37+09:00,-32400,True,False,['mykytea.cpp'],['0b200200bdc3a04a357bfbbdcda1f2a9afc33515'],1,2,3,1,,,
+9657b65da95a32651f56b755cb2c7ce74f60336e,Update mykytea_wrap.cxx,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-01-15 21:35:10+09:00,-32400,2015-01-15 21:35:24+09:00,-32400,True,False,['mykytea_wrap.cxx'],['6ae3d224b145341f22b2cebd951771c0f624a585'],191,189,380,1,0.0,0.0,1.0
+299ede443043a157681461034c939894243cc708,Fix parse argument bug which shorten 0th index of array,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-01-21 01:17:04+09:00,-32400,2015-01-21 01:17:04+09:00,-32400,True,False,['mykytea.cpp'],['9657b65da95a32651f56b755cb2c7ce74f60336e'],18,14,32,1,1.0,1.0,1.0
+e2d47ff5c07aac95a780cfce5bba0bf9bb11536f,"changed to use setuptools by default, instead of distutils",Tetsuya Morimoto,tetsuya.morimoto@gmail.com,Tetsuya Morimoto,tetsuya.morimoto@gmail.com,2015-04-01 17:33:41+09:00,-32400,2015-04-01 17:33:41+09:00,-32400,True,False,"['README.md', 'setup.py']",['299ede443043a157681461034c939894243cc708'],1,11,12,2,,,
+5a1b960c29d3973030574774faef158768a35aac,Fix option copy prepend to be broken by strok(),Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-09 21:45:28+09:00,-32400,2015-05-09 21:49:31+09:00,-32400,True,False,['mykytea.cpp'],['fd9dfa2122cc84bf6824824e26038ebebb34d060'],2,2,4,1,,,
+af45b4f89c388a0ee0bb568c775955ac2b2c64dd,Update wrap file,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-09 21:48:31+09:00,-32400,2015-05-09 21:49:31+09:00,-32400,True,False,['mykytea_wrap.cxx'],['5a1b960c29d3973030574774faef158768a35aac'],26,28,54,1,1.0,1.0,1.0
+19fbd45a60f6f16d8c2fecf7ad9fb08aba00d8b6,Add install on Makefile,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-09 21:56:27+09:00,-32400,2015-05-09 21:56:27+09:00,-32400,True,False,['Makefile'],['af45b4f89c388a0ee0bb568c775955ac2b2c64dd'],1,4,5,1,,,
+771b9ed59e4726e7794013f13a25f45bdc428430,Add .gitignore,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-12 23:44:01+09:00,-32400,2015-05-12 23:44:01+09:00,-32400,True,False,['.gitignore'],['19fbd45a60f6f16d8c2fecf7ad9fb08aba00d8b6'],0,59,59,1,,,
+c80c2964be94a5fd42c5bbb762780b2a382444e7,Move files to lib directory,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-13 00:05:58+09:00,-32400,2015-05-13 00:06:22+09:00,-32400,True,False,"['Makefile', 'mykytea.cpp', 'mykytea.hpp', 'mykytea.i', 'mykytea_wrap.cxx']",['771b9ed59e4726e7794013f13a25f45bdc428430'],1,1,2,5,,,
+204865489e1143015b2af4b8388bab63200e2a9a,Modify README,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-13 00:06:35+09:00,-32400,2015-05-13 00:06:35+09:00,-32400,True,False,['setup.py'],['c80c2964be94a5fd42c5bbb762780b2a382444e7'],5,10,15,1,,,
+d2bc1f48a5717770dc4104c441825cf7c3e13206,Add files for pypi registration,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-13 00:06:59+09:00,-32400,2015-05-13 00:06:59+09:00,-32400,True,False,"['LICENSE', 'MANIFEST.in', 'info.py', 'version.py']",['204865489e1143015b2af4b8388bab63200e2a9a'],0,36,36,4,,,
+c4dba889789878c5c9e65cbb3cdd37b8ef572270,Add install command,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-13 00:19:16+09:00,-32400,2015-05-13 00:19:16+09:00,-32400,True,False,['README.md'],['d2bc1f48a5717770dc4104c441825cf7c3e13206'],0,5,5,1,,,
+7015c1abc8b69326be2a9837a2d394f7721e959f,Modify .gitignore,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-14 20:43:31+09:00,-32400,2015-05-14 20:43:31+09:00,-32400,True,False,['.gitignore'],['c4dba889789878c5c9e65cbb3cdd37b8ef572270'],1,2,3,1,,,
+6ec788b7004855e7a59771cfd36e18df0fde2895,Add __init__.py,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-14 20:43:46+09:00,-32400,2015-05-14 20:43:46+09:00,-32400,True,False,['__init__.py'],['7015c1abc8b69326be2a9837a2d394f7721e959f'],0,0,0,1,,,
+1b7da9f8eb7e81ad99190186a9c52ff6bcc2616b,Fix setup.py,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-14 20:59:13+09:00,-32400,2015-05-14 20:59:13+09:00,-32400,True,False,['setup.py'],['6ec788b7004855e7a59771cfd36e18df0fde2895'],3,13,16,1,,,
+803494888aac63e1f191126c56ffb38f5efb090f,Add hpp for ext_module,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-14 21:26:17+09:00,-32400,2015-05-14 21:26:17+09:00,-32400,True,False,['setup.py'],['4906a5422b2a9be002684975fbbbd1ecaffb42f7'],1,1,2,1,,,
+a1de8b4d84e096b9d015befd994fa5df41ac1b97,Add include_dirs for ext_module,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-14 21:41:58+09:00,-32400,2015-05-14 21:41:58+09:00,-32400,True,False,['setup.py'],['803494888aac63e1f191126c56ffb38f5efb090f'],1,2,3,1,,,
+f4df0350d51e971a571c29f2eb059c5f5c9002e8,Clean generated files with 'make clean',cocoatomo,cocoatomo77@gmail.com,cocoatomo,cocoatomo77@gmail.com,2015-05-14 23:25:15+09:00,-32400,2015-05-14 23:25:15+09:00,-32400,True,False,['Makefile'],['a1de8b4d84e096b9d015befd994fa5df41ac1b97'],1,3,4,1,,,
+09a3d1963f65e73c34901eb5da3877dd87ee739e,Use unittest module for unit test,cocoatomo,cocoatomo77@gmail.com,cocoatomo,cocoatomo77@gmail.com,2015-05-15 01:22:21+09:00,-32400,2015-05-15 01:22:21+09:00,-32400,True,False,"['Makefile', 'mykytea_test.py']",['f4df0350d51e971a571c29f2eb059c5f5c9002e8'],0,81,81,2,0.32786885245901637,1.0,1.0
+b8a11b47c82c6cfe195c9b0c5d8ad24053150aa7,Test if type of probability part is float,cocoatomo,cocoatomo77@gmail.com,cocoatomo,cocoatomo77@gmail.com,2015-05-16 07:08:28+09:00,-32400,2015-05-16 07:08:28+09:00,-32400,True,False,['mykytea_test.py'],['09a3d1963f65e73c34901eb5da3877dd87ee739e'],49,51,100,1,1.0,1.0,1.0
+39df8c741af9fc94bc64db737af2bc7ad62b18f2,Remove model argument in test,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 20:51:05+09:00,-32400,2015-05-17 20:51:05+09:00,-32400,True,False,['mykytea_test.py'],['e9a4948dd1d1ffc8ad43da3b2862544a322bccbb'],2,5,7,1,,,
+4e0b285d7ba61d47eeea9f622a5c7de69a4fbd0b,Move test file,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 20:54:20+09:00,-32400,2015-05-17 20:54:20+09:00,-32400,True,False,"['README.md', 'mykytea_test.py']",['39df8c741af9fc94bc64db737af2bc7ad62b18f2'],1,1,2,2,,,
+b69f455caeb14af4f8fc8439b165170f10cb5e2b,Enable `python setup.py test`,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 21:14:30+09:00,-32400,2015-05-17 21:14:30+09:00,-32400,True,False,"['mykytea_test.py', 'setup.py']",['4e0b285d7ba61d47eeea9f622a5c7de69a4fbd0b'],0,6,6,2,1.0,1.0,1.0
+597d7fa9d97cc370aa408f6893f127a5a72ac47a,Add .travis.yml,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 21:17:41+09:00,-32400,2015-05-17 21:27:02+09:00,-32400,True,False,['.travis.yml'],['b69f455caeb14af4f8fc8439b165170f10cb5e2b'],0,17,17,1,,,
+69a83941890d74d901ee42c2573b7ccbb32248e1,Add including ctsdlib,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 21:38:30+09:00,-32400,2015-05-17 21:38:30+09:00,-32400,True,False,['mykytea.hpp'],['597d7fa9d97cc370aa408f6893f127a5a72ac47a'],0,1,1,1,,,
+fb1e05a72ba5dc24d8e3e2a6b0ceb370b780e4b3,Modify setup.py,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 21:43:47+09:00,-32400,2015-05-17 21:43:47+09:00,-32400,True,False,['setup.py'],['69a83941890d74d901ee42c2573b7ccbb32248e1'],0,1,1,1,,,
+77f04cb99432f62864edecf31bb75b3048f5b6e6,Change test directory,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 21:57:08+09:00,-32400,2015-05-17 21:57:08+09:00,-32400,True,False,['Makefile'],['fb1e05a72ba5dc24d8e3e2a6b0ceb370b780e4b3'],1,1,2,1,,,
+ae099d01fa71cfa8c367a4bc3b8c2bd388c04a06,Fix .travis.yml,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 21:58:26+09:00,-32400,2015-05-17 22:03:16+09:00,-32400,True,False,['.travis.yml'],['77f04cb99432f62864edecf31bb75b3048f5b6e6'],3,5,8,1,,,
+427202b5b5d0f9d1a09104464b9a35960eb1885d,Fix .travis.yml,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 21:58:26+09:00,-32400,2015-05-17 22:14:29+09:00,-32400,True,False,['.travis.yml'],['ae099d01fa71cfa8c367a4bc3b8c2bd388c04a06'],1,1,2,1,,,
+5153f92f103b309bfc4de1192c035e62c7c469f6,Add debug print,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 22:12:31+09:00,-32400,2015-05-17 22:18:12+09:00,-32400,True,False,['mykytea_test.py'],['427202b5b5d0f9d1a09104464b9a35960eb1885d'],0,2,2,1,,,
+8312813b91489025ac7f181efc8edc3b1a7de1a2,Remove sudo,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 22:30:20+09:00,-32400,2015-05-17 22:44:31+09:00,-32400,True,False,['.travis.yml'],['5153f92f103b309bfc4de1192c035e62c7c469f6'],1,1,2,1,,,
+0c0af182b641ee59f3eb187d9e7f314eb1f661f9,"Revert ""Add debug print""
+
+This reverts commit 5153f92f103b309bfc4de1192c035e62c7c469f6.",Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 22:45:05+09:00,-32400,2015-05-17 22:45:05+09:00,-32400,True,False,['mykytea_test.py'],['8312813b91489025ac7f181efc8edc3b1a7de1a2'],2,0,2,1,,,
+57b0835b330f39ec2d8cccfcea035f5a3f25184e,Fix Makefile,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-05-17 23:12:29+09:00,-32400,2015-05-17 23:15:16+09:00,-32400,True,False,['Makefile'],['0c0af182b641ee59f3eb187d9e7f314eb1f661f9'],0,2,2,1,,,
+34409465c30a0f8911317c7074705fa4f7394512,replace the words 'ruby' with 'python',TOKUNAGA Hiroyuki,tkng@preferred.jp,TOKUNAGA Hiroyuki,tkng@preferred.jp,2015-05-12 14:16:44+09:00,-32400,2015-05-19 15:05:08+09:00,-32400,True,False,['README.md'],['57b0835b330f39ec2d8cccfcea035f5a3f25184e'],1,1,2,1,,,
+1611a154f202f3b016eea70dfd9cb49fecb48f9b,"add #include <cstdlib>
+
+Required to compile in Debian",Pedro,karudoso@gmail.com,Pedro,karudoso@gmail.com,2015-08-14 18:24:16+02:00,-7200,2015-08-14 18:24:16+02:00,-7200,True,False,['mykytea.cpp'],['a39e53bb853cc7ff53052bfc7126017c06706d98'],0,1,1,1,,,
+484698355acb460ff8305bf6d2b6b9572f722b54,Bump up to 0.1.1,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-08-15 23:55:27+09:00,-32400,2015-08-15 23:55:27+09:00,-32400,True,False,"['info.py', 'setup.py', 'version.py']",['532fe0c5b2ac97725b6201e980d672640468f528'],2,4,6,3,,,
+87aba18707507d985ec4e19d66ab544031d0c846,Fix MANIFEST.in,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-08-31 22:56:54+09:00,-32400,2015-08-31 22:56:54+09:00,-32400,True,False,['MANIFEST.in'],['484698355acb460ff8305bf6d2b6b9572f722b54'],0,1,1,1,,,
+e1160b402d10db529bec864cfb85e43364843ba6,Bump up,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2015-08-31 22:59:08+09:00,-32400,2015-08-31 22:59:08+09:00,-32400,True,False,"['info.py', 'setup.py', 'version.py']",['87aba18707507d985ec4e19d66ab544031d0c846'],4,4,8,3,,,
+6adfbb68181b73c11b87bfb3cc425385019506e9,Add print brace,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2016-03-28 21:51:25+09:00,-32400,2016-03-28 21:51:25+09:00,-32400,True,False,['mykytea_test.py'],['e1160b402d10db529bec864cfb85e43364843ba6'],3,3,6,1,,,
+fe757c655bbfa3c5dd983a980740e2c42cf31ff9,Bump up swig,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2016-03-28 21:52:12+09:00,-32400,2016-03-28 21:52:12+09:00,-32400,True,False,['mykytea_wrap.cxx'],['6adfbb68181b73c11b87bfb3cc425385019506e9'],831,1038,1869,1,0.16783216783216784,0.0,0.7902097902097902
+73a709656af99cccbd8945decaa20ff00f83663f,Add python 3.5 into .travis.yml,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2016-03-28 22:34:57+09:00,-32400,2016-03-28 22:34:57+09:00,-32400,True,False,['.travis.yml'],['fe757c655bbfa3c5dd983a980740e2c42cf31ff9'],0,1,1,1,,,
+c74400357ecc58753feea70836629d286a8beb37,Bump up,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2016-03-29 10:25:02+09:00,-32400,2016-03-29 10:27:21+09:00,-32400,True,False,"['README.md', 'info.py', 'setup.py', 'version.py']",['b7b4eea89683b566382a9189b5eae42530db9b5e'],8,7,15,4,,,
+e53db0119ac583a12803d95bfc85c268bfee66c4,Remove useless file,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2016-03-29 10:44:01+09:00,-32400,2016-03-29 10:44:01+09:00,-32400,True,False,"['MANIFEST.in', 'info.py', 'setup.py']",['c74400357ecc58753feea70836629d286a8beb37'],18,7,25,3,,,
+c9d1e15709c8d69537c2ce678e1d359f14405557,Remove version.py,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2016-03-29 17:55:52+09:00,-32400,2016-03-29 17:55:52+09:00,-32400,True,False,"['MANIFEST.in', 'setup.py', 'version.py']",['e53db0119ac583a12803d95bfc85c268bfee66c4'],5,2,7,3,,,
+fc71961199ed8d5834cd6e06deb6893ef66c9082,Update keywords,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2016-03-29 17:57:52+09:00,-32400,2016-03-29 18:02:48+09:00,-32400,True,False,['setup.py'],['c9d1e15709c8d69537c2ce678e1d359f14405557'],1,1,2,1,,,
+a82992825acc907cfc1b6ddd899a9ab7e6158f83,Add badge,Michiaki Ariga,chezou+github@gmail.com,Michiaki Ariga,chezou+github@gmail.com,2016-03-29 22:25:46+09:00,-32400,2016-03-29 22:25:46+09:00,-32400,True,False,['README.md'],['fc71961199ed8d5834cd6e06deb6893ef66c9082'],0,3,3,1,,,
+785b60991d67605a8ee8a4cd32f15ad71ff36b50,"OSX travis (#12)
+
+OSX travis",Aki Ariga,chezou+github@gmail.com,GitHub,noreply@github.com,2017-11-18 22:58:33+09:00,-32400,2017-11-18 22:58:33+09:00,-32400,True,False,"['.gitattribute', '.travis.yml', 'install.sh']",['a82992825acc907cfc1b6ddd899a9ab7e6158f83'],9,61,70,3,,,
+d6b7deed1d738fa0f2bcffba0e03b1ca77e856e3,"Deploy wheels to GitHub Release from travis (#13)
+
+* Add Github relase deployment
+
+* Fix docker build execution
+
+* Fix travis badge
+
+* Set bash explicitly
+
+* Fix and operator
+
+* Fix install script to ensure execution for docker wheel creation
+
+* Add executable bit for shell scripts
+
+* Fix typo
+
+* Add which pip for debug
+
+* Add make clean to fix i386 wheel biuld
+
+* Fix make distclean
+
+* Add export for OSX pyenv
+
+* Fix distclean point
+
+* Use make clean insted of make distclean
+
+* Fix osx build
+
+* Fix make test
+
+* Remove CR
+
+* Activate venv
+
+* Add Python 3.6 for macOS",Aki Ariga,chezou+github@gmail.com,GitHub,noreply@github.com,2017-11-19 22:18:11+09:00,-32400,2017-11-19 22:18:11+09:00,-32400,True,False,"['.travis.yml', 'build-wheels.sh', 'install.sh', 'README.md', 'mykytea_wrap.cxx']",['785b60991d67605a8ee8a4cd32f15ad71ff36b50'],158,450,608,5,0.3898305084745763,0.15254237288135594,0.9576271186440678
+cd9b033ed3dd9f7698d72c83f6dc16a403b7a032,"Build Windows wheels (#15)
+
+* Modify setup.py for Windows build
+
+* Add appveyor.yml
+
+* Bump up artifact
+
+* Remove Python 2.7
+
+* Rename CI directory
+
+* Add Python 3.7 for linux and macos",Aki Ariga,chezou+github@gmail.com,GitHub,noreply@github.com,2018-11-27 12:44:19+09:00,-32400,2018-11-27 12:44:19+09:00,-32400,True,False,"['.travis.yml', 'appveyor.yml', 'build-wheels.sh', 'build.bat', 'install.sh', 'setup.py']",['d6b7deed1d738fa0f2bcffba0e03b1ca77e856e3'],24,70,94,6,,,
+e4a949094dbfbaaa9aadfe2230704cbb67b8d01d,Bump up v0.1.4,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2018-11-27 12:46:13+09:00,-32400,2018-11-27 12:46:13+09:00,-32400,True,False,['setup.py'],['cd9b033ed3dd9f7698d72c83f6dc16a403b7a032'],2,2,4,1,,,
+49c7a8e451295fb70a1917d6feab2172e4031619,Add long description,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2018-11-27 21:23:18+09:00,-32400,2018-11-27 21:31:20+09:00,-32400,True,False,['setup.py'],['e4a949094dbfbaaa9aadfe2230704cbb67b8d01d'],0,2,2,1,,,
+6d6e6c48ba3e43b651f4a6290f84595f6420415e,Add badges,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2018-11-28 10:47:12+09:00,-32400,2018-11-28 10:47:12+09:00,-32400,True,False,['README.md'],['49c7a8e451295fb70a1917d6feab2172e4031619'],0,2,2,1,,,
+df7a0d58dca3aa20e5942ce2c1dc4b2be3f8c8f5,"chore: bump swig generated file (#16)
+
+* chore: bump swig generated file
+
+* test: update Python versions
+
+* chore: update setup.py
+
+* fix: adopt manylinux2010 with using SWIG 4.0.1 for manylinux
+
+* chore: remove redundant option for SWIG
+
+* test: use 3.8.1 for macOS since 3.8.2 not released on pyenv yet
+
+* fix: manylinux script
+
+* Update build-wheels.sh",Aki Ariga,chezou+github@gmail.com,GitHub,noreply@github.com,2020-03-01 15:12:30+09:00,-32400,2020-03-01 15:12:30+09:00,-32400,True,False,"['.gitignore', '.travis.yml', 'Makefile', 'build-wheels.sh', 'build.bat', 'install.sh', 'mykytea_wrap.cxx', 'setup.py']",['6d6e6c48ba3e43b651f4a6290f84595f6420415e'],2835,2193,5028,8,1.0,0.6085011185682326,0.0
+a686e34680ed4a1de7b37bb962ed4d7c3a6366c0,chore: bump up 0.1.5,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2020-03-01 16:51:58+09:00,-32400,2020-03-01 16:51:58+09:00,-32400,True,False,['setup.py'],['df7a0d58dca3aa20e5942ce2c1dc4b2be3f8c8f5'],1,1,2,1,,,
+ddfd70aab79ccc5ba3f17ca6fba1e06e104af099,chore: deploy pypi instead of GitHub release,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2020-03-01 17:12:50+09:00,-32400,2020-03-01 20:16:03+09:00,-32400,True,False,"['.travis.yml', 'appveyor.yml', 'build.bat']",['a686e34680ed4a1de7b37bb962ed4d7c3a6366c0'],15,20,35,3,,,
+4e8248144c3081f04ead8dfb79f566c2edea9bea,"Build wheels for 3.9, 3.10 (#19)
+
+* Move to github actions
+
+* Fix windows preparation
+
+* install automake
+
+* Install autoconf
+
+* Remove Linux apt install
+
+* Remove appveyor command
+
+* Skip windows
+
+* Use environment variable instead
+
+* Install dependencies
+
+* No sudo
+
+* Skip some enviroments
+
+* Fix typo
+
+* Add windows
+
+* Fix windows command
+
+* Use wget for Windows
+
+* Use run for Windows again
+
+* Use old image for windows
+
+* Skip win32
+
+* Upload after release
+
+* Drop 3.6, add 3.9, 3.10",Aki Ariga,chezou+github@gmail.com,GitHub,noreply@github.com,2021-10-29 20:47:49-07:00,25200,2021-10-30 12:47:49+09:00,-32400,True,False,"['wheels.yml', '.travis.yml', 'README.md', 'appveyor.yml', 'build-wheels.sh', 'build.bat', 'install.sh', 'setup.py']",['ddfd70aab79ccc5ba3f17ca6fba1e06e104af099'],218,97,315,8,,,
+44ac264d39ce291023e72a8bf7e0c8f8c6b57b0a,Bump 0.1.6,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2021-10-29 20:54:00-07:00,25200,2021-10-29 20:54:00-07:00,25200,True,False,['setup.py'],['4e8248144c3081f04ead8dfb79f566c2edea9bea'],1,1,2,1,,,
+64bf220ddd540f6f373435136102da5f109004b1,Add KYTEA_DIR environment variable to build with kytea at arbitrary path,Max H. Gerlach,git@maxgerlach.de,Max H. Gerlach,git@maxgerlach.de,2022-02-14 17:15:26+01:00,-3600,2022-02-14 17:15:26+01:00,-3600,True,False,"['Makefile', 'setup.py']",['44ac264d39ce291023e72a8bf7e0c8f8c6b57b0a'],3,17,20,2,,,
+34fd29f1c389ef1ffd62f3fd7b00fcef452b43cf,"Drop manylinux2010 and support macOS arm64 (#21)
+
+* Drop manylinux2010
+
+* Resurrect CIBW_SKIP
+
+* Use CIBW_BUILD explicitly
+
+* Bump cibuildwheel version
+
+* Change job name
+
+* Add CIBW_ARCHS to support arm64",Aki Ariga,chezou+github@gmail.com,GitHub,noreply@github.com,2022-02-15 10:41:32-08:00,28800,2022-02-15 10:41:32-08:00,28800,True,False,['wheels.yml'],['44ac264d39ce291023e72a8bf7e0c8f8c6b57b0a'],5,77,82,1,,,
+e172e70484e227909e1348bfe8ca959b495f3118,Bump 0.1.7,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2022-02-16 09:48:21-08:00,28800,2022-02-16 09:49:01-08:00,28800,True,False,['setup.py'],['34fd29f1c389ef1ffd62f3fd7b00fcef452b43cf'],1,1,2,1,,,
+5da68430aa1a2f72db2de3111110a3f14ec3b3a4,Use setuptools_scm for version number,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2022-02-17 09:26:11-08:00,28800,2022-02-17 09:26:11-08:00,28800,True,False,"['.gitignore', 'setup.py']",['9bf1f8f5c5d0f3614ae411829666838e9ce767bf'],31,33,64,2,,,
+73ffafc15bf2a1e76bbf7758470920760aeb720e,Use pyproject.toml and setup.cfg as much as possible,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2022-02-17 09:41:50-08:00,28800,2022-02-17 09:41:50-08:00,28800,True,False,"['pyproject.toml', 'setup.cfg', 'setup.py']",['5da68430aa1a2f72db2de3111110a3f14ec3b3a4'],21,30,51,3,,,
+569fdc6fe7a88f8c989a7b0942802fdd32e96d59,Fix redundant key,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2022-02-17 09:44:20-08:00,28800,2022-02-17 09:44:20-08:00,28800,True,False,['setup.py'],['73ffafc15bf2a1e76bbf7758470920760aeb720e'],2,1,3,1,,,
+5d84641954f29403bfb1381bd4b11f4498ec121e,Add before build,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2022-02-17 10:00:26-08:00,28800,2022-02-17 10:00:26-08:00,28800,True,False,['wheels.yml'],['569fdc6fe7a88f8c989a7b0942802fdd32e96d59'],0,1,1,1,,,
+c5564e5e5981cf3e83dc0d45bb53a1c906c71331,Explicitly install setuptools_scm,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2022-02-17 10:02:13-08:00,28800,2022-02-17 10:02:13-08:00,28800,True,False,['wheels.yml'],['5d84641954f29403bfb1381bd4b11f4498ec121e'],1,1,2,1,,,
+3fcaa78ca9bc8b9e07b62d22063f23a634cae426,Make GitHub Action SCM versioning aware,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2022-02-17 10:13:11-08:00,28800,2022-02-17 10:13:11-08:00,28800,True,False,"['wheels.yml', 'pyproject.toml']",['c5564e5e5981cf3e83dc0d45bb53a1c906c71331'],2,10,12,2,,,
+6b17c792d08283a0bfa9219b304a3d581cf3face,"Drop arm64 wheel for macOS
+
+Since there is a report that arm64 wheel doesn't work properly, stop
+building arm64 macOS wheel.
+https://github.com/chezou/Mykytea-python/pull/20#issuecomment-1043121341
+
+This may be an issue around repair wheel with delocate, but can't tackle
+it since the maintainer doesn't have the environment.
+https://cibuildwheel.readthedocs.io/en/stable/faq/#macos-passing-dyld_library_path-to-delocate",Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2022-02-17 17:25:54-08:00,28800,2022-02-17 17:25:54-08:00,28800,True,False,['wheels.yml'],['d11b1df9b985507d94fe795e414281dc5f5530bf'],14,0,14,1,,,
+268fd7794575f7f7c857976c41fbd783d96b8368,Use windows-2019 image,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2024-01-12 17:45:58-08:00,28800,2024-01-12 17:45:58-08:00,28800,True,False,['wheels.yml'],['3a2818eb4594944d32293275860605fab2bc1856'],4,4,8,1,,,
+16ccae9c028d219787595a868f56e8d2e73d064d,Update dependent actions,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2024-01-12 17:57:39-08:00,28800,2024-01-12 18:21:43-08:00,28800,True,False,['wheels.yml'],['268fd7794575f7f7c857976c41fbd783d96b8368'],9,12,21,1,,,
+945ab8a5cd8aa5ba9a123f7bbdc9bbb4ea015e44,Fix macOS CI,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2024-01-12 18:48:49-08:00,28800,2024-01-12 18:48:49-08:00,28800,True,False,['wheels.yml'],['e903ceed408bd90df2a851697c5a03878e14d50c'],10,10,20,1,,,
+aae87f4586aed7b2b5ddb7681b74afb984d05f32,Build Python 3.11 and 3.12 wheels,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2024-01-12 19:17:57-08:00,28800,2024-01-12 19:17:57-08:00,28800,True,False,['wheels.yml'],['178e8728cd50e9c55f2caaabbef1a3c52115468e'],12,25,37,1,,,
+0fd5d26a1e6a12184fd298badf1c40e1c732c545,Fix classifiers,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2024-01-12 22:03:56-08:00,28800,2024-01-12 22:03:56-08:00,28800,True,False,['setup.cfg'],['c8d07a9388feea36fb2b50a5c1c3bcebdd45d0db'],1,2,3,1,,,
+98e65ad7af9c9cc5593a67d5406dba00ec3bc885,Generate mykytea_wrap.cxx with swig 4.1.1,Aki Ariga,ariga@treasure-data.com,Aki Ariga,ariga@treasure-data.com,2024-01-12 23:16:15-08:00,28800,2024-01-12 23:16:15-08:00,28800,True,False,['mykytea_wrap.cxx'],['0fd5d26a1e6a12184fd298badf1c40e1c732c545'],989,1096,2085,1,0.0,0.0,0.847457627118644
+29230f56ad14fbd291169a62b2ef59f3fc71b489,Generate mykytea_wrap.cxx with swig 4.1.1,Aki Ariga,chezou+github@gmail.com,Aki Ariga,ariga@treasure-data.com,2024-01-12 23:16:15-08:00,28800,2024-01-12 23:58:34-08:00,28800,True,False,['mykytea_wrap.cxx'],['0fd5d26a1e6a12184fd298badf1c40e1c732c545'],989,1096,2085,1,0.0,0.0,0.847457627118644
+a8978cee3b050b8ed7da8843d2952f256247cb4c,Use pyproject.toml as much as possible,Aki Ariga,chezou+github@gmail.com,Aki Ariga,ariga@treasure-data.com,2024-01-12 23:56:10-08:00,28800,2024-01-12 23:58:40-08:00,28800,True,False,"['pyproject.toml', 'setup.cfg']",['29230f56ad14fbd291169a62b2ef59f3fc71b489'],24,36,60,2,,,
+5f1d30132f6cce0b8331ce064c439d9e141b4e55,"Revert ""Use pyproject.toml as much as possible""",Aki Ariga,chezou+github@gmail.com,GitHub,noreply@github.com,2024-01-13 00:29:02-08:00,28800,2024-01-13 00:29:02-08:00,28800,True,False,"['pyproject.toml', 'setup.cfg']",['0870c97d13ae38653517d6bee82664d3e5394123'],36,24,60,2,,,
+25df00037a96400a1492b7d9545e2012ff86ca29,Update setup.cfg,Aki Ariga,chezou+github@gmail.com,GitHub,noreply@github.com,2024-01-13 00:30:20-08:00,28800,2024-01-13 00:30:20-08:00,28800,True,False,['setup.cfg'],['22e590b0a78babc11e8e2618e1c5100ef67dbca1'],1,1,2,1,,,
+7fb4f558cd519354098a6483e87dc2b583ad8a20,"Add macOS build script for wheel
+
+This is based on @nikitalita's script on fugashi's repo.
+See details in https://github.com/polm/fugashi/pull/80",Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2024-01-14 15:35:51-08:00,28800,2024-01-14 16:44:27-08:00,28800,True,False,"['macos-build.sh', 'wheels.yml']",['25df00037a96400a1492b7d9545e2012ff86ca29'],5,83,88,2,,,
+dc8d0b9515a3ac9ecd029c72e043904fd1269f26,Update README,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2024-01-14 17:01:37-08:00,28800,2024-01-14 17:01:37-08:00,28800,True,False,['README.md'],['a21d2f4b54baa082cf5f0ed920e755743351f223'],23,69,92,1,,,
+fa23d4b19d4c4acf3597e957406735d6d0288222,"Use Trusted Publishers
+
+https://docs.pypi.org/trusted-publishers/using-a-publisher/",Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2024-01-14 17:32:11-08:00,28800,2024-01-14 17:32:11-08:00,28800,True,False,['wheels.yml'],['dc8d0b9515a3ac9ecd029c72e043904fd1269f26'],3,3,6,1,,,
+27b25c16a371f497eaffaadce32890e01cecbb5c,Update README,Aki Ariga,chezou+github@gmail.com,Aki Ariga,chezou+github@gmail.com,2024-01-15 17:30:17-08:00,28800,2024-01-15 17:30:17-08:00,28800,True,False,['README.md'],['fa23d4b19d4c4acf3597e957406735d6d0288222'],11,22,33,1,,,

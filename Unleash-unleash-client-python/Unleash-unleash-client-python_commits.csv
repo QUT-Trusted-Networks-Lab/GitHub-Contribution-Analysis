@@ -1,0 +1,1803 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+600ed95a2ee6b30d8e6931debfab56b3039546fe,Initial commit,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-02 17:53:08-04:00,14400,2018-10-02 17:53:08-04:00,14400,True,False,['README.md'],[],0,2,2,1,,,
+108a077b8921c72188142c13d9c91ba2194d39b3,Initial commit.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-02 18:10:02-04:00,14400,2018-10-02 18:10:02-04:00,14400,True,False,"['.gitignore', 'Pipfile', 'Pipfile.lock', 'pytest.ini', 'setup.config', 'setup.py', 'test.py', '__init__.py']",['600ed95a2ee6b30d8e6931debfab56b3039546fe'],0,443,443,8,1.0,1.0,1.0
+5e371d07d1b7ae4fe2c20c2681e279cfa3bf1f7e,"Initial setup, pt 1.",Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 05:29:06-04:00,14400,2018-10-03 05:29:06-04:00,14400,True,False,"['.gitignore', 'LICENSE.md', 'Pipfile', 'Pipfile.lock', '__init__.py', '__init__.py', 'constants.py', '__init__.py', 'utils.py', 'pylintrc', 'pytest.ini', 'setup.py', '__init__.py', 'test_initialization.py']",['108a077b8921c72188142c13d9c91ba2194d39b3'],61,839,900,14,0.582089552238806,1.0,0.582089552238806
+1f7807a34072d2fac807ccf4eacc44542bf9d40f,Adding license to README.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 05:30:58-04:00,14400,2018-10-03 05:30:58-04:00,14400,True,False,['README.md'],['5e371d07d1b7ae4fe2c20c2681e279cfa3bf1f7e'],1,5,6,1,,,
+35ffc3cacddf5a679b3aa12a905280032096a800,Sphinx.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 05:44:08-04:00,14400,2018-10-03 05:44:08-04:00,14400,True,False,"['Makefile', 'UnleashClient.api.rst', 'UnleashClient.periodic_tasks.rst', 'UnleashClient.rst', 'conf.py', 'index.rst', 'modules.rst']",['1f7807a34072d2fac807ccf4eacc44542bf9d40f'],0,282,282,7,,,
+9d9369c42faea5a78202e96410e285f15cffe0e6,CircleCI.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 06:04:12-04:00,14400,2018-10-03 06:04:12-04:00,14400,True,False,['config.yaml'],['35ffc3cacddf5a679b3aa12a905280032096a800'],0,34,34,1,,,
+b0bec8213f231d2f50bc66e7910e89bf08198d2a,Renaming config.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 06:08:21-04:00,14400,2018-10-03 06:08:21-04:00,14400,True,False,['config.yml'],['f85c03a5ed0ab776bf77a5e1e63665185b695ce9'],0,34,34,1,,,
+0e17666d660cbd1298c233bf7d054e2a7b5bc21b,"Fixing flake8 issues, added default config.",Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 06:37:38-04:00,14400,2018-10-03 06:37:38-04:00,14400,True,False,"['config.yaml', '__init__.py']",['b0bec8213f231d2f50bc66e7910e89bf08198d2a'],39,0,39,2,0.0,0.0,0.0
+9cb6632054c4af45dc56666e59314c4bafdb142c,"Fixing flake8 issues, added default config.",Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 06:39:00-04:00,14400,2018-10-03 06:39:00-04:00,14400,True,False,"['.flake8', '__init__.py', 'setup.py']",['0e17666d660cbd1298c233bf7d054e2a7b5bc21b'],4,6,10,3,,,
+cbcc27bf0d0028ad5a71cbd72d257f1b98737eb2,Adding pylint.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 06:42:36-04:00,14400,2018-10-03 06:42:36-04:00,14400,True,False,"['Pipfile', 'Pipfile.lock']",['9cb6632054c4af45dc56666e59314c4bafdb142c'],1,66,67,2,,,
+60c321ab52493527de5a0acc0e374213f969c54c,Commenting temp code.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 06:44:12-04:00,14400,2018-10-03 06:44:12-04:00,14400,True,False,['__init__.py'],['cbcc27bf0d0028ad5a71cbd72d257f1b98737eb2'],20,20,40,1,0.0,0.0,0.0
+c84c08ee95188437f2a6f7df35baf83830600273,CI,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 06:46:35-04:00,14400,2018-10-03 06:46:35-04:00,14400,True,False,['config.yml'],['60c321ab52493527de5a0acc0e374213f969c54c'],1,1,2,1,,,
+1c47d0668e4ef3f70775cbf62515a7e7aef82989,CI,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 06:49:17-04:00,14400,2018-10-03 06:49:17-04:00,14400,True,False,['config.yml'],['c84c08ee95188437f2a6f7df35baf83830600273'],1,1,2,1,,,
+6b65a154e47a64d46b42d13b8964703699a17b0e,CI,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-03 06:51:55-04:00,14400,2018-10-03 06:51:55-04:00,14400,True,False,['config.yml'],['1c47d0668e4ef3f70775cbf62515a7e7aef82989'],2,2,4,1,,,
+f6ba457d35f2f5b87145fca184df3431d65b8bc9,"Implement register and feature API calls
+
+* Implement registration and features.
+
+* Feature implementation.
+
+* Pylint issues.
+
+* Mypy fix.
+
+* Adding documentation.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-04 20:49:01-04:00,14400,2018-10-04 20:49:01-04:00,14400,True,False,"['config.yml', 'Pipfile', 'Pipfile.lock', '__init__.py', 'features.py', 'register.py', 'constants.py', '__init__.py', '__init__.py', 'test_e2e.py', 'testing_constants.py', '__init__.py', '__init__.py', 'test_feature.py', 'test_register.py', 'test_initialization.py', 'testing_constants.py', 'unleash_mocks.py']",['6b65a154e47a64d46b42d13b8964703699a17b0e'],14,275,289,18,0.4186046511627907,1.0,0.4186046511627907
+76911f44d3d716a3065796a58fa67b531f41746b,"Yak Shaving 1: Reorganization
+
+* Filename reorg, constant consolidation.
+
+* Streamline responses.
+
+* Organized mocks.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-04 22:24:18-04:00,14400,2018-10-04 22:24:18-04:00,14400,True,False,"['config.yml', 'README.md', 'features.py', 'register.py', 'constants.py', '__init__.py', 'test_e2e.py', 'testing_constants.py', '__init__.py', '__init__.py', 'test_feature.py', 'test_register.py', 'test_initialization.py', '__init__.py', '__init__.py', 'mock_features.py', 'testing_constants.py']",['f6ba457d35f2f5b87145fca184df3431d65b8bc9'],33,42,75,17,0.0,0.0,0.0
+03c1fb881ddcd7cbe8658a33d3846b4a80aec0c3,"Implementing Unleash default strategies
+
+* Added base Strategy & DefaultStrategy.
+
+* userWithId strategy implemented.
+
+* Adding mmh3
+
+* Implemented Gradual Rollout with user ID strategy.
+
+* Implement gradualRolloutWithSessionId.
+
+* Adding GradualRolloutRandom strategy.
+
+* * Implements RemoteAddress strategy
+* Adds overrideable load_provisioning() method to superclass Strategy.  This is called in __init__() to mimize re-loading provisioning.
+
+* Adding ApplicationHostname category.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-09 01:40:58-04:00,14400,2018-10-09 01:40:58-04:00,14400,True,False,"['.flake8', '.gitignore', 'Pipfile', 'Pipfile.lock', '__init__.py', 'ApplicationHostname.py', 'Default.py', 'GradualRolloutRandom.py', 'GradualRolloutSessionId.py', 'GradualRolloutUserId.py', 'RemoteAddress.py', 'Strategy.py', 'UserWithId.py', '__init__.py', 'utils.py', 'mypy.ini', 'test_e2e.py', 'test_feature.py', 'test_register.py', 'test_applicationhostname.py', 'test_defaultstrategy.py', 'test_gradualrolloutrandom.py', 'test_gradualrolloutwithsessionid.py', 'test_gradualrolloutwithuserid.py', 'test_remoteaddress.py', 'test_userwithids.py', '__init__.py', 'data_generator.py']",['76911f44d3d716a3065796a58fa67b531f41746b'],7,532,539,28,0.8491228070175438,0.9087719298245615,0.519298245614035
+438182657d63f430831b874f4ce6ef15f97170cc,"Implemented Features object and lifecycle strategy
+
+* Added Features object.
+* Removed stat tracking from strategies.
+* Added loading feature.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-10 05:53:07-04:00,14400,2018-10-10 05:53:07-04:00,14400,True,False,"['.flake8', 'Pipfile', 'Pipfile.lock', '__init__.py', 'features.py', 'loader.py', 'ApplicationHostname.py', 'Default.py', 'GradualRolloutRandom.py', 'GradualRolloutSessionId.py', 'GradualRolloutUserId.py', 'RemoteAddress.py', 'Strategy.py', 'UserWithId.py', 'pylintrc', 'pytest.ini', 'test_applicationhostname.py', 'test_defaultstrategy.py', 'test_gradualrolloutrandom.py', 'test_gradualrolloutwithsessionid.py', 'test_gradualrolloutwithuserid.py', 'test_remoteaddress.py', 'test_userwithids.py', 'test_features.py', 'test_loader.py', 'data_generator.py', 'mock_all_features.py', 'testing_constants.py']",['03c1fb881ddcd7cbe8658a33d3846b4a80aec0c3'],214,338,552,28,0.0,0.0,1.0
+3547581baf496029b6990e6d04f36e3cb8885ba8,"Added class variables for strategy, class, and scheduler. (#14)",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-10 07:03:46-04:00,14400,2018-10-10 07:03:46-04:00,14400,True,False,"['Pipfile', 'Pipfile.lock', '__init__.py', 'pylintrc', 'test_client.py']",['438182657d63f430831b874f4ce6ef15f97170cc'],21,71,92,5,0.9,1.0,0.9
+bf5e74b9a66a33552863c02e0bad75b93ebe6b4c,"Added function to fetch provisioning and refresh strategies. (#16)
+
+Implemented methods (is_enabled, initialize_client, deinitialize_client) to UnleashClient.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-10 21:00:50-04:00,14400,2018-10-10 21:00:50-04:00,14400,True,False,"['config.yml', '.flake8', '__init__.py', 'loader.py', '__init__.py', 'fetch_and_load.py', '__init__.py', 'test_fetch_and_load.py', 'test_client.py']",['3547581baf496029b6990e6d04f36e3cb8885ba8'],19,125,144,9,0.55,0.9833333333333333,0.7
+5203d8cc2e543c6d991d462aa42249b2c38e6992,Added periodic actions (fetch/metrics) and wired up main client,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-11 06:07:47-04:00,14400,2018-10-11 06:07:47-04:00,14400,True,False,"['Pipfile', '__init__.py', '__init__.py', 'metrics.py', 'constants.py', '__init__.py', 'send_metrics.py', 'pytest.ini', 'test_e2e.py', 'test_metrics.py', 'test_aggregate_and_send_metrics.py', 'test_client.py', 'mock_metrics.py', 'testing_constants.py']",['bf5e74b9a66a33552863c02e0bad75b93ebe6b4c'],32,261,293,14,0.31746031746031744,1.0,0.4603174603174603
+1f1f29d8328a3d44f4aea6456e5740fc9e7f131a,"Il/i 8 releaseprep (#18)
+
+* Pinning required packages.
+
+* Added README
+
+* Adding coveralls.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-11 07:37:15-04:00,14400,2018-10-11 07:37:15-04:00,14400,True,False,"['config.yml', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py']",['5203d8cc2e543c6d991d462aa42249b2c38e6992'],8,129,137,5,,,
+844e170a5c7b16eaa86fa2b094f178c07feccebd,"Setup.py improvements, prepping for automatic bumps.",Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-11 18:25:31-04:00,14400,2018-10-11 18:25:31-04:00,14400,True,False,"['.bumpversion.cfg', 'CHANGELOG.md', 'Makefile', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py']",['1f1f29d8328a3d44f4aea6456e5740fc9e7f131a'],60,50,110,7,,,
+c1dab03445d055d04104cd22650e1caed8c439f7,More bumpversion tweaks.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-11 18:27:29-04:00,14400,2018-10-11 18:27:29-04:00,14400,True,False,['.bumpversion.cfg'],['844e170a5c7b16eaa86fa2b094f178c07feccebd'],0,2,2,1,,,
+33617f8b4880d1abb1f5ab14746c76382d377999,"Preparing for submission
+
+* Setup.py improvements, prepping for automatic bumps.
+
+* More bumpversion tweaks.
+
+* More bumpversion tweaks.
+
+* Finalized bumpversion.
+
+* Makefile and twine.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-11 20:04:30-04:00,14400,2018-10-11 20:04:30-04:00,14400,True,False,"['.bumpversion.cfg', 'CHANGELOG.md', 'Makefile', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py']",['1f1f29d8328a3d44f4aea6456e5740fc9e7f131a'],60,212,272,7,,,
+229d9f1c82129fe9d1e068d09a07b2c93e9894c2,Final changes to bumpversion.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-11 20:12:06-04:00,14400,2018-10-11 20:12:06-04:00,14400,True,False,['.bumpversion.cfg'],['149e9eeafe166f993510bb125e6f33268fad67a9'],3,4,7,1,,,
+421427c1f17d628be5617b8ede8bd383bc821644,"""Automatic version bump via bumpversion.""",Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-11 20:12:16-04:00,14400,2018-10-11 20:12:16-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['229d9f1c82129fe9d1e068d09a07b2c93e9894c2'],3,4,7,3,,,
+9a44d927d19a604dca51bd5e2a21d6ef6a0ac683,"Minor tweaks and documentation.
+
+* Move from Sphinx to MKdocs
+* Comment cleanups
+* Added templates.
+* Adding site to gitignore.
+* Adding project site to README.md",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-12 04:41:38-04:00,14400,2018-10-12 04:41:38-04:00,14400,True,False,"['.bumpversion.cfg', 'ISSUE_TEMPLATE.md', 'PULL_REQUEST_TEMPLATE.md', '.gitignore', 'CHANGELOG.md', 'Pipfile', 'Pipfile.lock', 'README.md', '__init__.py', 'features.py', 'loader.py', 'Strategy.py', 'Makefile', 'changelog.md', 'development.md', 'index.md', 'resources.md', 'UnleashClient.api.rst', 'UnleashClient.periodic_tasks.rst', 'UnleashClient.rst', 'conf.py', 'index.rst', 'modules.rst', 'unleashclient.md', 'mkdocs.yml', 'setup.py']",['421427c1f17d628be5617b8ede8bd383bc821644'],385,311,696,26,0.0,0.68,0.28
+2bc378a13cc7dbc5f535006a9c842188797de6c5,Changelog.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-12 04:43:50-04:00,14400,2018-10-12 04:43:50-04:00,14400,True,False,['changelog.md'],['9a44d927d19a604dca51bd5e2a21d6ef6a0ac683'],1,7,8,1,,,
+066f4e6de2f7a599fef5a698380ad660bdf03ea2,Automatic version bump via bumpversion.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-12 04:44:16-04:00,14400,2018-10-12 04:44:16-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['2bc378a13cc7dbc5f535006a9c842188797de6c5'],3,4,7,3,,,
+1117edf2c26905be0b50e5877d955585ad1191e1,Create CODE_OF_CONDUCT.md,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-12 05:00:14-04:00,14400,2018-10-12 05:00:14-04:00,14400,True,False,['CODE_OF_CONDUCT.md'],['066f4e6de2f7a599fef5a698380ad660bdf03ea2'],0,46,46,1,,,
+555601fb4687c92fe36662e42384819101c0e75e,Added feature and bug templates,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-12 05:08:15-04:00,14400,2018-10-12 05:08:15-04:00,14400,True,False,"['ISSUE_TEMPLATE.md', 'bug_report.md', 'feature_request.md']",['1117edf2c26905be0b50e5877d955585ad1191e1'],22,43,65,3,,,
+252a442e8cb393b388d496b2a02b6cd906a5a490,Create CONTRIBUTING.md,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-12 05:22:59-04:00,14400,2018-10-12 05:22:59-04:00,14400,True,False,['CONTRIBUTING.md'],['555601fb4687c92fe36662e42384819101c0e75e'],0,56,56,1,,,
+1d12a189b186bb12f7275cf2372f8648000d50a5,Update CONTRIBUTING.md,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-12 05:49:20-04:00,14400,2018-10-12 05:49:20-04:00,14400,True,False,['CONTRIBUTING.md'],['252a442e8cb393b388d496b2a02b6cd906a5a490'],2,2,4,1,,,
+a9aca813a12b24cec3da4e8f2fb408c5af5c1f3f,"Improve caching. (#27)
+
+* Cache persists full provisioning instead of parsed provisioning.
+
+* Added pytest decorator to generate caches in various states (empty, with data).
+Added tests for request failures in  fetch_and_load().",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-12 08:16:02-04:00,14400,2018-10-12 08:16:02-04:00,14400,True,False,"['.flake8', 'loader.py', 'fetch_and_load.py', 'changelog.md', 'test_feature.py', 'test_fetch_and_load.py', 'test_client.py', 'test_loader.py', 'decorators.py', '__init__.py']",['1d12a189b186bb12f7275cf2372f8648000d50a5'],52,117,169,10,0.5172413793103449,1.0,1.0
+8713eb05c802a9c5ad35a554f39360ba47b302f8,Automatic version bump via bumpversion.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-10-12 08:19:42-04:00,14400,2018-10-12 08:19:42-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['a9aca813a12b24cec3da4e8f2fb408c5af5c1f3f'],3,3,6,3,,,
+587869f71d5f30a038381cbb2588f811f02c2c6a,"requirements.txt generation
+
+Add requirements.txt's for the non-pipenvly-inclined",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-12 14:57:19-04:00,14400,2018-10-12 14:57:19-04:00,14400,True,False,"['Makefile', 'README.md', 'requirements-dev.txt', 'requirements.txt']",['a9aca813a12b24cec3da4e8f2fb408c5af5c1f3f'],2,82,84,4,,,
+b3e9e865ac95bd29254c0579dd2f8a3a0374f674,"Add tests cases for error handling.
+
+* Automatic version bump via bumpversion.
+
+* Added error cases to tests.
+Added script to test imported package.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-12 18:13:39-04:00,14400,2018-10-12 18:13:39-04:00,14400,True,False,"['.bumpversion.cfg', 'Pipfile', 'constants.py', 'setup.py', 'e2e_as_a_script.py', 'test_remoteaddress.py', 'test_client.py', 'test_features.py']",['587869f71d5f30a038381cbb2588f811f02c2c6a'],9,77,86,8,1.0,1.0,1.0
+a1e25ccc442a1caa90e7c774936b14a6264f1456,Added client spec tests (& fixed a bunch of bugs),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-13 05:47:33-04:00,14400,2018-10-13 05:47:33-04:00,14400,True,False,"['PULL_REQUEST_TEMPLATE.md', 'Pipfile', '__init__.py', 'features.py', 'loader.py', 'GradualRolloutRandom.py', 'GradualRolloutSessionId.py', 'GradualRolloutUserId.py', 'UserWithId.py', 'utils.py', 'e2e_as_a_script.py', 'test_e2e.py', '__init__.py', 'test_01_simple_examples.py', 'test_02_user_with_id_strategy.py', 'test_03_gradual_rollout_user_id_strategy.py', 'test_04_gradual_rollout_session_id_strategy.py', 'test_05_gradual_rollout_random_strategy.py', 'test_06_remote_address_strategy.py', 'test_07_multiple_strategies.py', 'test_applicationhostname.py', 'test_userwithids.py']",['b3e9e865ac95bd29254c0579dd2f8a3a0374f674'],63,1212,1275,22,0.9860724233983287,0.9916434540389972,0.9944289693593314
+991d5a63d782db9299e3c6fc0a1ef46d68631f05,Release v0.3.0,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-13 06:09:22-04:00,14400,2018-10-13 06:09:22-04:00,14400,True,False,"['.bumpversion.cfg', 'Makefile', 'README.md', 'constants.py', 'changelog.md', 'setup.py']",['a1e25ccc442a1caa90e7c774936b14a6264f1456'],6,16,22,6,,,
+f03225db9589a5406689500c91847b34efa08a6d,Custom strategies,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-13 08:03:39-04:00,14400,2018-10-13 08:03:39-04:00,14400,True,False,"['Makefile', 'README.md', '__init__.py', 'register.py', 'constants.py', 'loader.py', 'fetch_and_load.py', 'changelog.md', 'customstrategies.md', 'strategy.md', 'unleashclient.md', 'mkdocs.yml', 'test_register.py', 'test_fetch_and_load.py', 'test_custom_strategy.py', 'test_loader.py', 'decorators.py', '__init__.py', 'mock_custom_strategy.py', 'testing_constants.py']",['991d5a63d782db9299e3c6fc0a1ef46d68631f05'],78,281,359,20,0.6764705882352942,0.9852941176470589,0.36764705882352944
+4ffecd8614d2dc917994e9484480501272b9837c,v1.0.0,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-13 08:15:59-04:00,14400,2018-10-13 08:15:59-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['89ceca718154aa55649291725c8607ab19daa729'],3,3,6,3,,,
+20554a9f6744e8c6dbb71462b250480f4d5bc9f5,"Rc v1.0.1 (#36)
+
+* Small fix.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-13 09:57:52-04:00,14400,2018-10-13 09:57:52-04:00,14400,True,False,"['.bumpversion.cfg', 'README.md', 'constants.py', 'setup.py']",['4ffecd8614d2dc917994e9484480501272b9837c'],4,4,8,4,,,
+6302903e1b29d087687c3a21fde4e4056398e413,"Moved to Unleash org.
+
+* Setting up CI.
+
+* Make improvements.
+
+* Setup.py changes and package updates.
+
+* Tweaking docs and README.md
+
+* Requirements updates.
+
+* Updating README with new documentation URL.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-27 07:38:18-04:00,14400,2018-10-27 07:38:18-04:00,14400,True,False,"['Makefile', 'Pipfile', 'Pipfile.lock', 'README.md', 'changelog.md', 'development.md', 'requirements-dev.txt', 'requirements.txt', 'setup.py']",['20554a9f6744e8c6dbb71462b250480f4d5bc9f5'],209,124,333,9,,,
+a90fd1c7a3172e4e176b02b832537d47e88076d3,"rc 1.0.2
+
+* Changelog.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-10-27 07:43:41-04:00,14400,2018-10-27 07:43:41-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['6302903e1b29d087687c3a21fde4e4056398e413'],3,6,9,4,,,
+7ac01aef7d0f3210340802930d06e0650af5e0fe,Match other language versions by moving `/api` to the initialization. (#5),Alex Shafer,shafer.alex@gmail.com,Ivan Lee,ivanklee86@gmail.com,2018-12-07 07:16:29-05:00,18000,2018-12-07 07:16:29-05:00,18000,True,False,"['README.md', 'constants.py', 'index.md', 'testing_constants.py']",['a90fd1c7a3172e4e176b02b832537d47e88076d3'],9,9,18,4,,,
+8156a46a02a3ca7a69043963f6e8d7ae5cd87000,"Rc 2.0.0 (#6)
+
+* Updating changelog.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2018-12-07 08:50:40-05:00,18000,2018-12-07 08:50:40-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['7ac01aef7d0f3210340802930d06e0650af5e0fe'],3,8,11,4,,,
+a9ea0c32e64b6b2cbfe021c993ca5da4b51beb61,"Il/fix stats (#10)
+
+* Integration tests, swing 1.
+
+* Modify aggregate_and_send_metrics to store/get last metrics sent time from file cache.
+
+* update changelog.
+
+* Fixed linting errors.
+
+* Fixed linting errors.
+
+* Correctly synch fcache.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-04-03 19:58:25-04:00,14400,2019-04-03 19:58:25-04:00,14400,True,False,"['__init__.py', 'constants.py', 'send_metrics.py', 'changelog.md', 'integration.py', 'test_aggregate_and_send_metrics.py']",['8156a46a02a3ca7a69043963f6e8d7ae5cd87000'],9,52,61,6,0.0,1.0,0.6
+83625bf04f5f332d1f4797849b9e711573a583f5,"Rc 2.0.1 (#11)
+
+* Changelog for v2.0.1
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-04-12 05:21:48-04:00,14400,2019-04-12 05:21:48-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['a9ea0c32e64b6b2cbfe021c993ca5da4b51beb61'],4,4,8,4,,,
+d4ee510f895ba3ceda3345fe2e0084b3e24fdec2,"Support python 3.5 (#9)
+
+* Support python 3.5
+- Convert Python 3.6 syntax to 3.5
+- Convert Python 3.6 API (json.loads) to 3.5
+- Downgrade mimesis to Python 3.5 compatible version 2.1.0
+- Explicitly include pathlib2 dependency as it was previously implicitly used
+- Update CircleCI build to use Python 3.5
+- Fix wrongly placed flake8 noqa flag
+
+* Fix a mypy missing import complaint
+
+* Fix instantiation of Default strategy",Martijn Baay,martijn.baay@gmail.com,Ivan Lee,ivanklee86@gmail.com,2019-04-13 15:12:48+02:00,-7200,2019-04-13 09:12:48-04:00,14400,True,False,"['config.yml', 'Pipfile', 'Pipfile.lock', '__init__.py', 'features.py', 'loader.py', 'test_fetch_and_load.py']",['83625bf04f5f332d1f4797849b9e711573a583f5'],245,277,522,7,,,
+095a50a2ce379a2320b2d5fd3c78e13e46b98be9,"Remove pipenv, support Python 3.5, 3.6, 3.7, 3.8 in CI
+
+* Remove Pipfile and go with straight pip.
+
+* Working local tox.
+
+* Python 3.5 + conda.
+
+* Documentation and notes.
+
+* CircleCi tox, part 1
+
+* Reformat circleci
+
+* PoC using tox-conda.
+
+* Some tweaks and cleanup.
+
+* CI changes for pipenv deletion.
+
+* CI fix.
+
+* Python 3.5 support.
+
+* CI improvements.
+
+* Parallel tox.
+
+* Adding 35 and 38.
+
+* Tox in venv.
+
+* Add python version badge.
+
+* Local for tox-conda support, tweak 'cause no 3.8 yet
+
+* Update changelog.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-04-13 09:28:21-04:00,14400,2019-04-13 09:28:21-04:00,14400,True,False,"['config.yml', 'Makefile', 'Pipfile', 'Pipfile.lock', 'README.md', '__init__.py', 'changelog.md', 'development.md', 'pytest.ini', 'requirements-dev.txt', 'requirements-local.txt', 'requirements-package.txt', 'requirements.txt', 'setup.py', 'tox-osx.ini', 'tox.ini']",['d4ee510f895ba3ceda3345fe2e0084b3e24fdec2'],809,244,1053,16,,,
+a0a8f630c169b20f681ce991f6f88bfd8b1c886b,"v2.1.0 release
+
+* Update changelog.
+
+* oops didn't need to bump.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-04-13 09:35:26-04:00,14400,2019-04-13 09:35:26-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md']",['095a50a2ce379a2320b2d5fd3c78e13e46b98be9'],3,3,6,3,,,
+653e30177bb2b4361aa33907717d06c54dec277d,allow configuration of cache directory (#14),Martijn Baay,martijn.baay@gmail.com,Ivan Lee,ivanklee86@gmail.com,2019-04-15 13:15:58+02:00,-7200,2019-04-15 07:15:58-04:00,14400,True,False,['__init__.py'],['a0a8f630c169b20f681ce991f6f88bfd8b1c886b'],2,4,6,1,0.0,1.0,0.0
+0cb407ec805e559765dab8888dfc26611709839b,"rc-2.2.0
+
+* Update changelog and client documentation.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-04-15 07:30:33-04:00,14400,2019-04-15 07:30:33-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'unleashclient.md', 'setup.py']",['653e30177bb2b4361aa33907717d06c54dec277d'],3,7,10,5,,,
+4acc52a237b9bd388fc7a79b4f07d5e4627df741,Fixes issue where datetimes are sent w/out timezone. (#17),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-04-23 04:52:39-04:00,14400,2019-04-23 04:52:39-04:00,14400,True,False,"['__init__.py', 'register.py', 'send_metrics.py', 'changelog.md', 'test_aggregate_and_send_metrics.py']",['0cb407ec805e559765dab8888dfc26611709839b'],9,14,23,5,,,
+3ee6afc78dc0ac0fb25fd83f9221b46b6293710b,v2.2.1,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-04-23 04:58:18-04:00,14400,2019-04-23 04:58:18-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['4acc52a237b9bd388fc7a79b4f07d5e4627df741'],3,3,6,3,,,
+d922065d754b9bedf93ddf9a92b78dba5f6da1da,"Fixes and enhances disable_XYZ in client. (#20)
+
+* Fixes bug where disable_metrics didn't work.
+* Adds disable_registration option.
+* Update documentation.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-05-02 17:45:48-04:00,14400,2019-05-02 17:45:48-04:00,14400,True,False,"['README.md', '__init__.py', 'changelog.md', 'unleashclient.md', 'pylintrc', 'integration_gitlab.py', 'test_client.py', 'testing_constants.py']",['3ee6afc78dc0ac0fb25fd83f9221b46b6293710b'],12,123,135,8,0.8518518518518519,1.0,0.9259259259259259
+97131fef6457020a6dcc5537b35775e0f5a614a6,Automatic version bump via bumpversion. (#21),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-05-02 17:58:45-04:00,14400,2019-05-02 17:58:45-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['d922065d754b9bedf93ddf9a92b78dba5f6da1da'],3,3,6,3,,,
+0714d707001dd7e8a793781c51ae8e72fb514375,Add manifest file. (#25),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-07-02 09:03:08-04:00,14400,2019-07-02 09:03:08-04:00,14400,True,False,['MANIFEST.in'],['97131fef6457020a6dcc5537b35775e0f5a614a6'],0,1,1,1,,,
+39c80bf39b9232b84a18d666928cb8312ef8c6cf,"feat: add support static context fields (#24)
+
+* feat: add support static context fields
+
+* fix: lint complaints
+
+* fix: Increase max attributes to 17",Ivar Conradi Østhus,ivarconr@gmail.com,GitHub,noreply@github.com,2019-07-30 14:40:48+02:00,-7200,2019-07-30 14:40:48+02:00,-7200,True,False,"['README.md', '__init__.py', 'constants.py', 'loader.py', 'pylintrc', 'setup.py', 'test_client.py', 'decorators.py', 'mock_features.py', 'testing_constants.py']",['0714d707001dd7e8a793781c51ae8e72fb514375'],5,73,78,10,0.2727272727272727,1.0,0.7575757575757576
+5fec9d31d99807599ce1af9b24e9b5aed754d0c9,"Rc 2.4.0 (#28)
+
+* Update changelog.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-07-30 19:32:35-04:00,14400,2019-07-30 19:32:35-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['39c80bf39b9232b84a18d666928cb8312ef8c6cf'],3,8,11,4,,,
+5c9146219fd07edc3ae3a49e51d06643a3af8eff,"Better handle initialization if cache not present and Unleash server not accessible (#30)
+
+* Add logging documentation.
+
+* Better handles cases where cache is not present and Unleash server is not accessible during startup.
+
+* Update changelog.
+
+* Fix flake8 issues.
+
+* Make integration scrip generic again.
+
+* Make integration scrip generic again.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-08-20 13:51:26-04:00,14400,2019-08-20 13:51:26-04:00,14400,True,False,"['loader.py', 'fetch_and_load.py', 'changelog.md', 'index.md', 'integration.py', 'test_client.py']",['5fec9d31d99807599ce1af9b24e9b5aed754d0c9'],40,149,189,6,0.9285714285714286,0.9285714285714286,0.9285714285714286
+e277fc83f0b22941ac5cad6a741352e8b76e703a,"rc-2.5.0 (#31)
+
+* Update release notes.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-08-20 14:13:36-04:00,14400,2019-08-20 14:13:36-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['5c9146219fd07edc3ae3a49e51d06643a3af8eff'],5,5,10,4,,,
+c974ca29cc4dc3ea5e2e9af017553806ad156d2e,Remove Pipfile. (#33),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-08-26 06:48:24-04:00,14400,2019-08-26 06:48:24-04:00,14400,True,False,"['Pipfile', 'Pipfile.lock']",['e277fc83f0b22941ac5cad6a741352e8b76e703a'],0,0,0,2,,,
+1ea4c8db1c395773f02300fa97b8cdc08ea845f8,"Bump pytest-html from 1.20.0 to 1.22.0 (#34)
+
+Bumps [pytest-html](https://github.com/pytest-dev/pytest-html) from 1.20.0 to 1.22.0.
+- [Release notes](https://github.com/pytest-dev/pytest-html/releases)
+- [Changelog](https://github.com/pytest-dev/pytest-html/blob/master/CHANGES.rst)
+- [Commits](https://github.com/pytest-dev/pytest-html/compare/v1.20.0...v1.22.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-08-26 08:39:07-04:00,14400,2019-08-26 08:39:07-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['c974ca29cc4dc3ea5e2e9af017553806ad156d2e'],2,2,4,2,,,
+e2f53da35c29dca279a3d91e4c27191481b129dc,"Bump pytest-xdist from 1.28.0 to 1.29.0 (#35)
+
+Bumps [pytest-xdist](https://github.com/pytest-dev/pytest-xdist) from 1.28.0 to 1.29.0.
+- [Release notes](https://github.com/pytest-dev/pytest-xdist/releases)
+- [Changelog](https://github.com/pytest-dev/pytest-xdist/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest-xdist/compare/v1.28.0...v1.29.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-08-26 13:28:57-04:00,14400,2019-08-26 13:28:57-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['1ea4c8db1c395773f02300fa97b8cdc08ea845f8'],2,2,4,2,,,
+d0a32f0b7bd0fd96be66e40bdc6bbc57846044ac,"Bump coveralls from 1.7.0 to 1.8.2 (#36)
+
+Bumps [coveralls](https://github.com/coveralls-clients/coveralls-python) from 1.7.0 to 1.8.2.
+- [Release notes](https://github.com/coveralls-clients/coveralls-python/releases)
+- [Changelog](https://github.com/coveralls-clients/coveralls-python/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/coveralls-clients/coveralls-python/compare/1.7.0...1.8.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-08-26 13:47:24-04:00,14400,2019-08-26 13:47:24-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['e2f53da35c29dca279a3d91e4c27191481b129dc'],2,2,4,2,,,
+3dace1fc1adaa74a8f03ce0f3fc3aa3ab31c0538,"Bump pytest-cov from 2.6.1 to 2.7.1 (#37)
+
+Bumps [pytest-cov](https://github.com/pytest-dev/pytest-cov) from 2.6.1 to 2.7.1.
+- [Release notes](https://github.com/pytest-dev/pytest-cov/releases)
+- [Changelog](https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest-cov/compare/v2.6.1...v2.7.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-08-26 13:53:59-04:00,14400,2019-08-26 13:53:59-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['d0a32f0b7bd0fd96be66e40bdc6bbc57846044ac'],2,2,4,2,,,
+23a84cc58e8c6966006d325994d9f3732529a08a,"Bump pytest-runner from 4.4 to 5.1 (#39)
+
+Bumps [pytest-runner](https://github.com/pytest-dev/pytest-runner) from 4.4 to 5.1.
+- [Release notes](https://github.com/pytest-dev/pytest-runner/releases)
+- [Changelog](https://github.com/pytest-dev/pytest-runner/blob/master/CHANGES.rst)
+- [Commits](https://github.com/pytest-dev/pytest-runner/compare/4.4...5.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-08-27 08:34:39-04:00,14400,2019-08-27 08:34:39-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['3dace1fc1adaa74a8f03ce0f3fc3aa3ab31c0538'],2,2,4,2,,,
+e04827634fb0657561c5386856b0c4599248c675,"Bump requests from 2.21.0 to 2.22.0 (#43)
+
+Bumps [requests](https://github.com/requests/requests) from 2.21.0 to 2.22.0.
+- [Release notes](https://github.com/requests/requests/releases)
+- [Changelog](https://github.com/psf/requests/blob/master/HISTORY.md)
+- [Commits](https://github.com/requests/requests/compare/v2.21.0...v2.22.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-08-27 08:45:22-04:00,14400,2019-08-27 08:45:22-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt', 'setup.py']",['23a84cc58e8c6966006d325994d9f3732529a08a'],3,3,6,3,,,
+d04d814acd2f6836332c8b4419dc0efc2331eb3c,"Bump tox from 3.8.6 to 3.13.2 (#40)
+
+Bumps [tox](https://github.com/tox-dev/tox) from 3.8.6 to 3.13.2.
+- [Release notes](https://github.com/tox-dev/tox/releases)
+- [Changelog](https://github.com/tox-dev/tox/blob/master/docs/changelog.rst)
+- [Commits](https://github.com/tox-dev/tox/compare/3.8.6...3.13.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-08-27 08:48:38-04:00,14400,2019-08-27 08:48:38-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['e04827634fb0657561c5386856b0c4599248c675'],2,2,4,2,,,
+556b25d08f4331c0fb07c682fe28d3caf8f30cbb,"Bump apscheduler from 3.6.0 to 3.6.1 (#42)
+
+Bumps [apscheduler](https://github.com/agronholm/apscheduler) from 3.6.0 to 3.6.1.
+- [Release notes](https://github.com/agronholm/apscheduler/releases)
+- [Changelog](https://github.com/agronholm/apscheduler/blob/master/docs/versionhistory.rst)
+- [Commits](https://github.com/agronholm/apscheduler/compare/v3.6.0...v3.6.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-08-27 08:57:46-04:00,14400,2019-08-27 08:57:46-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt', 'setup.py']",['d04d814acd2f6836332c8b4419dc0efc2331eb3c'],3,3,6,3,,,
+8d9923e983b85d2cf4fa078afc8a16d1a7daadaf,"Switch to using minor python versions for CI. (#45)
+
+* Switch to using minor python versions for CI.
+
+* Update Python 3.8 image.
+
+* Remove Python 3.8 for now. :)  Revisit when hit GA.
+
+* CI WIP.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-08-28 04:31:14-04:00,14400,2019-08-28 04:31:14-04:00,14400,True,False,"['config.yml', 'changelog.md']",['556b25d08f4331c0fb07c682fe28d3caf8f30cbb'],18,19,37,2,,,
+177c589c162c8ba54290b2cff3ca48373787addd,"Bump pytest from 4.4.0 to 5.1.1 (#44)
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 4.4.0 to 5.1.1.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/4.4.0...5.1.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-08-28 04:38:52-04:00,14400,2019-08-28 04:38:52-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['8d9923e983b85d2cf4fa078afc8a16d1a7daadaf'],2,2,4,2,,,
+ce7f69028265fd7aae774aa41144b4f5e078c91d,"Bump pytest from 5.1.1 to 5.1.2 (#46)
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 5.1.1 to 5.1.2.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/5.1.1...5.1.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-09-02 05:34:47-04:00,14400,2019-09-02 05:34:47-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['177c589c162c8ba54290b2cff3ca48373787addd'],2,2,4,2,,,
+bd0829d21cd997a28862754a2372a4e087e0fd23,"Bump tox from 3.13.2 to 3.14.0 (#47)
+
+Bumps [tox](https://github.com/tox-dev/tox) from 3.13.2 to 3.14.0.
+- [Release notes](https://github.com/tox-dev/tox/releases)
+- [Changelog](https://github.com/tox-dev/tox/blob/master/docs/changelog.rst)
+- [Commits](https://github.com/tox-dev/tox/compare/3.13.2...3.14.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-09-04 04:18:53-04:00,14400,2019-09-04 04:18:53-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['ce7f69028265fd7aae774aa41144b4f5e078c91d'],2,2,4,2,,,
+2e0485753c55cf928782b2aa311ca1c93d384e68,"Improve CI for contributors.
+
+* Don't archive linting versions (to make CI easier to read for non-members of Unleash org).
+
+* For slightly involved main client setup.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-09-06 06:24:54-04:00,14400,2019-09-06 06:24:54-04:00,14400,True,False,"['config.yml', 'pylintrc']",['bd0829d21cd997a28862754a2372a4e087e0fd23'],7,3,10,2,,,
+daebf5f0932a788007671ec1c83522b67b9c1075,"Add ability to forward request kwargs (#48)
+
+* For example, if trying to get feature toggles from on-prem Unleash server, being able to pass `verify=False` to requests would allow for bypassing self-signed certificate verification
+* Also, refactored unit test to reduce code duplication",briandcho,briandcho@yahoo.com,Ivan Lee,ivanklee86@gmail.com,2019-09-07 01:19:12-07:00,25200,2019-09-07 04:19:12-04:00,14400,True,False,"['__init__.py', 'features.py', 'metrics.py', 'register.py', 'fetch_and_load.py', 'send_metrics.py', 'test_feature.py', 'test_metrics.py', 'test_register.py', 'test_aggregate_and_send_metrics.py', 'test_fetch_and_load.py', 'test_client.py', 'testing_constants.py']",['2e0485753c55cf928782b2aa311ca1c93d384e68'],90,66,156,13,0.0,0.0,0.0
+f7cb5f38f429be1566cb98adbe5f0772968c9ab6,"v4.6.0
+
+* Add documentation.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-09-07 05:14:47-04:00,14400,2019-09-07 05:14:47-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'unleashclient.md', 'setup.py']",['daebf5f0932a788007671ec1c83522b67b9c1075'],4,25,29,5,,,
+6cdfcfb2701ac67048882eba82dbe9c33c659d22,"Bump twine from 1.13.0 to 1.14.0 (#51)
+
+Bumps [twine](https://github.com/pypa/twine) from 1.13.0 to 1.14.0.
+- [Release notes](https://github.com/pypa/twine/releases)
+- [Changelog](https://github.com/pypa/twine/blob/master/docs/changelog.rst)
+- [Commits](https://github.com/pypa/twine/compare/1.13.0...1.14.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-09-09 04:18:11-04:00,14400,2019-09-09 04:18:11-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['f7cb5f38f429be1566cb98adbe5f0772968c9ab6'],2,2,4,2,,,
+50936558cfee8dcc1cd5cc1e3067100617790c1f,"Bump tox-conda from 0.2.0 to 0.2.1 (#53)
+
+Bumps [tox-conda](https://github.com/tox-dev/tox-conda) from 0.2.0 to 0.2.1.
+- [Release notes](https://github.com/tox-dev/tox-conda/releases)
+- [Changelog](https://github.com/tox-dev/tox-conda/blob/master/CHANGES.rst)
+- [Commits](https://github.com/tox-dev/tox-conda/compare/0.2.0...0.2.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-09-17 05:01:36-04:00,14400,2019-09-17 05:01:36-04:00,14400,True,False,['requirements-local.txt'],['6cdfcfb2701ac67048882eba82dbe9c33c659d22'],1,1,2,1,,,
+ab06449ada3d06a12b137e03f7819d12059830dc,"Bump twine from 1.14.0 to 1.15.0 (#54)
+
+Bumps [twine](https://github.com/pypa/twine) from 1.14.0 to 1.15.0.
+- [Release notes](https://github.com/pypa/twine/releases)
+- [Changelog](https://github.com/pypa/twine/blob/master/docs/changelog.rst)
+- [Commits](https://github.com/pypa/twine/compare/1.14.0...1.15.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-09-18 04:59:00-04:00,14400,2019-09-18 04:59:00-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['50936558cfee8dcc1cd5cc1e3067100617790c1f'],2,2,4,2,,,
+8e9f75d4d64c7c948b88468de9e9646e1bf3c173,"Bump pytest from 5.1.2 to 5.1.3
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 5.1.2 to 5.1.3.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/5.1.2...5.1.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2019-09-23 04:45:45+00:00,0,2019-09-24 19:26:22+00:00,0,True,False,"['requirements-local.txt', 'requirements.txt']",['ab06449ada3d06a12b137e03f7819d12059830dc'],2,2,4,2,,,
+cdc54f67cc5cbebb70ef7449d099d9cfabc90721,"Bump pylint from 2.3.1 to 2.4.1 (#58)
+
+Bumps [pylint](https://github.com/PyCQA/pylint) from 2.3.1 to 2.4.1.
+- [Release notes](https://github.com/PyCQA/pylint/releases)
+- [Changelog](https://github.com/PyCQA/pylint/blob/master/ChangeLog)
+- [Commits](https://github.com/PyCQA/pylint/compare/pylint-2.3.1...pylint-2.4.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-09-26 03:50:45-04:00,14400,2019-09-26 03:50:45-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['8e9f75d4d64c7c948b88468de9e9646e1bf3c173'],2,2,4,2,,,
+8a269ae3e7e819c2ab6c523a547dfb7025cc694f,"Bump pytest from 5.1.3 to 5.2.0 (#60)
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 5.1.3 to 5.2.0.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/5.1.3...5.2.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,Ivan Lee,ivanklee86@gmail.com,2019-09-30 09:55:39-04:00,14400,2019-09-30 09:55:39-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['cdc54f67cc5cbebb70ef7449d099d9cfabc90721'],2,2,4,2,,,
+4c261289c550be8c95a2f0d46691beb1a1f2487d,"Bump pytest-xdist from 1.29.0 to 1.30.0
+
+Bumps [pytest-xdist](https://github.com/pytest-dev/pytest-xdist) from 1.29.0 to 1.30.0.
+- [Release notes](https://github.com/pytest-dev/pytest-xdist/releases)
+- [Changelog](https://github.com/pytest-dev/pytest-xdist/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest-xdist/compare/v1.29.0...v1.30.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2019-10-02 06:08:29+00:00,0,2019-10-06 17:55:51+00:00,0,True,False,"['requirements-local.txt', 'requirements.txt']",['8a269ae3e7e819c2ab6c523a547dfb7025cc694f'],2,2,4,2,,,
+81c71c672c7063b11693a664c84d2850c8d316e9,"Bump pylint from 2.4.1 to 2.4.2
+
+Bumps [pylint](https://github.com/PyCQA/pylint) from 2.4.1 to 2.4.2.
+- [Release notes](https://github.com/PyCQA/pylint/releases)
+- [Changelog](https://github.com/PyCQA/pylint/blob/master/ChangeLog)
+- [Commits](https://github.com/PyCQA/pylint/compare/pylint-2.4.1...pylint-2.4.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2019-10-01 05:44:32+00:00,0,2019-10-06 17:56:27+00:00,0,True,False,"['requirements-local.txt', 'requirements.txt']",['4c261289c550be8c95a2f0d46691beb1a1f2487d'],2,2,4,2,,,
+f5c5b8dc228cf4163859c9bd52116062df57c4d8,"Bump pytest from 5.2.0 to 5.2.1
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 5.2.0 to 5.2.1.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/5.2.0...5.2.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2019-10-07 05:01:01+00:00,0,2019-10-07 05:49:34+00:00,0,True,False,"['requirements-local.txt', 'requirements.txt']",['81c71c672c7063b11693a664c84d2850c8d316e9'],2,2,4,2,,,
+3558598e0fd5e6a77c84579a2adb201bd8031a19,Bump pytest-cov from 2.7.1 to 2.8.1 (#66),dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2019-10-07 17:58:55+00:00,0,2019-10-07 17:58:55+00:00,0,True,False,"['requirements-local.txt', 'requirements.txt']",['f5c5b8dc228cf4163859c9bd52116062df57c4d8'],2,2,4,2,,,
+c8faddb7fbce1894020a38ee84e12e74bfd45c24,"Add flexibleRollout strategy (#64)
+
+* Add flexibleRollout strategy to test.
+
+* Fix mock name.
+
+* Rename Feature file to be consistent with other object files.
+
+* Add marsmallow as dependency.
+
+* Add FlexibleRollout strategy (and Constraints)
+
+* Support loading flexibleRollout strategies.
+
+* Be safe when serializing configs.
+
+* Add script for testing client w/unleashhosted.
+
+* Refactored FlexibleRollout strategy & classes to support context for all strategies.
+
+* Refactor to remove marshmallow.
+- Remove marshmallow due to complexity in supporting custom strategies.
+- Added Constraint parsing to Strategies_v2.
+- Added provisioning parsing back to Strategies_v2 (to make it easier to migrate existing strategies).
+- Incremental change to loader.
+
+* Store all strategies in the Strategies.py file.
+
+* Update default strategies to use StrategyV2 as base.
+- This enables constraints!
+- Modified strategy loader logic to handle provisioning more sanely.
+- Strategy loader will now check if strategy is based on Strategy or StrategyV2 and load provisioning as appropriate.
+
+* Fix linting.
+
+* Fixed issue with checking for StrategyV2 derived classes in loader.
+
+* Add test demonstrating StrategyV2 custom objects.
+
+* Improve loader tests to make sure strategies are loaded.
+
+* Add strategy constraints spec test.
+
+* Add flexible rollout spec tests.
+
+* Add documentation.
+
+* Update test_feature_42sessionid_enabled spec test description.
+
+* Update test_feature_42sessionid_enabled spec test description.
+
+* Clean up default value/constraint handling.
+
+* Add Feature.constraints.empty spec test.
+
+* Address feedback on StrategyV2 by merging changes into Strategy.
+- Reworked Strategy & Constraint methods to use apply/execute.
+- Updated Custom Strategy documentation.
+
+* Remove old mention of StrategyV2
+
+* Add deprecation warning if users uses old custom strategies.
+
+* Reworked warning to occur at startup.
+
+* Only run check if custom strategies are present.
+
+* Back to one strategy",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-10-09 07:44:36-04:00,14400,2019-10-09 07:44:36-04:00,14400,True,False,"['__init__.py', 'Constraint.py', '__init__.py', 'deprecation_warnings.py', 'Feature.py', '__init__.py', 'loader.py', 'ApplicationHostname.py', 'Default.py', 'FlexibleRolloutStrategy.py', 'GradualRolloutRandom.py', 'GradualRolloutSessionId.py', 'GradualRolloutUserId.py', 'RemoteAddress.py', 'Strategy.py', 'UserWithId.py', '__init__.py', 'utils.py', 'changelog.md', 'customstrategies.md', 'pytest.ini', 'integration_unleashhosted.py', 'test_09_strategy_constraints.py', 'test_10_flexible_rollout.py', 'test_applicationhostname.py', 'test_defaultstrategy.py', 'test_flexiblerollout.py', 'test_gradualrolloutrandom.py', 'test_gradualrolloutwithsessionid.py', 'test_gradualrolloutwithuserid.py', 'test_remoteaddress.py', 'test_userwithids.py', 'test_client.py', 'test_constraints.py', 'test_custom_strategy.py', 'test_loader.py', 'mock_all_features.py', 'mock_custom_strategy.py', 'StrategyV2.py', '__init__.py', 'testing_constants.py']",['3558598e0fd5e6a77c84579a2adb201bd8031a19'],73,1262,1335,41,0.7641277641277642,0.8992628992628993,0.9533169533169533
+c908805e0719d770db21fa301f9cd26410cf01b0,"Unpin dev dependencies to reduce signal:noise ratio from Dependabot (#69)
+
+* Unpin dev packages.
+
+* Unpin dev packages.
+
+* Pin mimesis.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-10-09 08:02:45-04:00,14400,2019-10-09 08:02:45-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt']",['c8faddb7fbce1894020a38ee84e12e74bfd45c24'],34,34,68,2,,,
+5f6d95a4bbd70c9125032ee2790af2ff1be9bd5f,"v3.0.0 (#70)
+
+* Fix formatting.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-10-09 08:18:10-04:00,14400,2019-10-09 08:18:10-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['c908805e0719d770db21fa301f9cd26410cf01b0'],4,8,12,4,,,
+f183cc3ab34d4da2862c6db2ef6adc0f24714d55,"Support Python 3.8 (#72)
+
+* Try out Python 3.8 again.
+
+* Fix CI.
+
+* Fix CI.
+
+* Update docs and classifiers.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-10-10 02:45:17-04:00,14400,2019-10-10 02:45:17-04:00,14400,True,False,"['config.yml', 'changelog.md', 'setup.py']",['5f6d95a4bbd70c9125032ee2790af2ff1be9bd5f'],17,22,39,3,,,
+197239534549c73fcc4b22e44f7dec9ed183e100,v3.1.0,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-10-10 03:00:50-04:00,14400,2019-10-10 03:00:50-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['f183cc3ab34d4da2862c6db2ef6adc0f24714d55'],3,3,6,3,,,
+d7ad5f9526f260416357f8505f8497ee4c321387,"Custom context should be passed in the properties sub-property of the context (#75)
+
+* Custom context should be passed in the properties sub-property of the context.
+
+* Pin pytest-html to version that supports Python 3.5",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-10-10 09:49:18-04:00,14400,2019-10-10 09:49:18-04:00,14400,True,False,"['Constraint.py', 'requirements.txt', 'test_09_strategy_constraints.py']",['197239534549c73fcc4b22e44f7dec9ed183e100'],3,5,8,3,0.0,0.0,1.0
+ee7558e771d7b292a77a0b3851f6d81b38a3acdd,"v3.1.1 (#76)
+
+* Update changelog.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-10-10 10:04:03-04:00,14400,2019-10-10 10:04:03-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['d7ad5f9526f260416357f8505f8497ee4c321387'],3,8,11,4,,,
+438479c349d9d53d5c8b4f4ce62f12acc0bdfc59,"Bump mimesis from 2.0.1 to 2.1.0
+
+Bumps [mimesis](https://github.com/lk-geimfari/mimesis) from 2.0.1 to 2.1.0.
+- [Release notes](https://github.com/lk-geimfari/mimesis/releases)
+- [Changelog](https://github.com/lk-geimfari/mimesis/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/lk-geimfari/mimesis/compare/v2.0.1...2.1.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2019-10-11 05:30:22+00:00,0,2019-10-11 06:11:05+00:00,0,True,False,['requirements.txt'],['ee7558e771d7b292a77a0b3851f6d81b38a3acdd'],1,1,2,1,,,
+af0bcd62f9c8ac42781c7975bab0469bdf7d2f48,"Add fallback function so users can customize default values. (#79)
+
+* Add fallback function so users can customize default values.
+
+* Clean up new unit test.
+
+* Defer evaluation of fallback for catch-all exception.
+
+* Update documenation for fallback function feature.
+
+* Add unit test for context usage in fallback function.
+
+* Fix mock requirement.
+
+* Add pytest-mock.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-10-24 12:31:08-04:00,14400,2019-10-24 12:31:08-04:00,14400,True,False,"['README.md', '__init__.py', 'Feature.py', 'changelog.md', 'index.md', 'strategy.md', 'requirements.txt', 'setup.py', 'test_client.py']",['438479c349d9d53d5c8b4f4ce62f12acc0bdfc59'],14,92,106,9,0.65625,0.21875,0.65625
+5af4736f51ad1539e8f3cb0df89ce2d34b6c6c86,v3.2.0,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-10-24 12:47:08-04:00,14400,2019-10-24 12:47:08-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['af0bcd62f9c8ac42781c7975bab0469bdf7d2f48'],3,3,6,3,,,
+e587ab1e725ea1698a356a0f59716a5e04eb48ba,"Support variations (#82)
+
+* Set up Variations and implement varient overrides.
+- Set up Variations object and added override handling.
+- Centralized logic for fetching values from context.
+
+* Add logic to get seed for calculations.
+
+* Implement select_variant() and implicit logic on Variants object.
+- Add argument to customize normalization in hashing function.
+
+* Use Python 3.5 compatable type hinting.
+
+* Load variations during provisioning handling.
+- Accept variations in Feature constructor.
+- Added mock for feature w/variation.
+
+* Fix linting issues.
+
+* Fix test.
+
+* Add select_variant() method to Feature.
+
+* Add select_variant() method to main client.
+
+* Type hinting fix.
+
+* Another unit test fix + start of spec tests.
+
+* Finished spec tests.
+
+* Fix handling of feature flags with no strategies.
+
+* Add documentation.
+
+* Add integration test for variants.
+
+* Handle case where variants key is present but no values are in list.
+
+* Update behavior of no-strategy use case.
+
+* Variants not varients.
+
+* Use generic userId.
+
+* Update return type.
+
+* Rename variant method.
+
+* Remove feature flag fallbacks from get_variant()
+
+* Update changelog.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-11-02 08:02:27-04:00,14400,2019-11-02 08:02:27-04:00,14400,True,False,"['README.md', '__init__.py', 'constants.py', 'Constraint.py', 'Feature.py', 'loader.py', 'utils.py', 'Variants.py', '__init__.py', 'changelog.md', 'index.md', 'integration_unleashhosted.py', 'test_01_simple_examples.py', 'test_08_variants.py', 'test_client.py', 'test_custom_strategy.py', 'test_features.py', 'test_loader.py', 'test_variants.py', 'mock_all_features.py', 'mock_features.py', 'mock_variants.py']",['5af4736f51ad1539e8f3cb0df89ce2d34b6c6c86'],32,1067,1099,22,0.3227990970654628,0.9480812641083521,0.8893905191873589
+af3472bbf03c834533f7a5104313ba4da48bbfb0,"v3.3.0 (#83)
+
+* Automatic version bump via bumpversion.
+
+* Clean up some spacing.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-11-02 08:19:16-04:00,14400,2019-11-02 08:19:16-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['e587ab1e725ea1698a356a0f59716a5e04eb48ba'],3,8,11,4,,,
+d8a47892bd05735780091609f46e33928fe77e9a,Bump apscheduler from 3.6.1 to 3.6.3 (#84),dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2019-11-05 10:00:38+00:00,0,2019-11-05 10:00:38+00:00,0,True,False,"['requirements-local.txt', 'requirements.txt', 'setup.py']",['af3472bbf03c834533f7a5104313ba4da48bbfb0'],3,3,6,3,,,
+2fdfddbf03d04e91677f41d12e8b9ef1f7aa0fcf,"Fallback function should not be called from is_enabled() on feature
+
+* Only call fallback function if exception (feature flag not found, other general exception) occurs when evaluating feature.
+
+* Update documentation.
+
+* Add changelog.
+
+* Fix linting issues.
+
+* Fix unit tests.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-11-15 11:21:09-05:00,18000,2019-11-15 11:21:09-05:00,18000,True,False,"['README.md', '__init__.py', 'Feature.py', 'changelog.md', 'index.md', 'test_client.py']",['d8a47892bd05735780091609f46e33928fe77e9a'],20,19,39,6,0.0,1.0,1.0
+6b26296738103507e621cee3b731031ce0c46832,v3.4.0,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-11-15 11:53:20-05:00,18000,2019-11-15 11:53:20-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['2fdfddbf03d04e91677f41d12e8b9ef1f7aa0fcf'],3,3,6,3,,,
+63867b8b982290000adccf75f800646cf5f6fcef,Fix custom strategy documentation. (#89),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-11-26 16:29:27-05:00,18000,2019-11-26 16:29:27-05:00,18000,True,False,['customstrategies.md'],['6b26296738103507e621cee3b731031ce0c46832'],1,1,2,1,,,
+4278dbbd749876c28ed6bd00ba1d213ff2755fe5,"Fix custom strategy documentation. (#90)
+
+* Fix strategy import.
+* Fix custom strategy documentation based on feedback + improve Unleash Hosted integration test.
+
+* Update Unleash Hosted integration test to include custom strategy.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2019-12-11 01:22:15-05:00,18000,2019-12-11 01:22:15-05:00,18000,True,False,"['customstrategies.md', 'integration_unleashhosted.py']",['63867b8b982290000adccf75f800646cf5f6fcef'],7,34,41,2,1.0,1.0,1.0
+e052926c9a3bf9ea28eba92bc76072924f3212fe,"Move CI to Github Actions (#92)
+
+* Archive CircleCI CI/CD.
+
+* Setup initial PR.
+
+* Set coveralls token.
+
+* Add tox tests.
+
+* Cross-platform.
+
+* Rework matrixed tox tests.
+
+* REvert OS matrix.
+
+* Try and fix tox issue.
+
+* Add OSX and Windows tests back.
+
+* Add notifications.
+
+* Attempt overall notification.
+
+* Cut down on message + test failures.
+
+* Notification take 2.
+
+* Remove failure.
+
+* Update docs, add release workflow, update README.
+
+* Remove not-helpful exclusion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2020-01-07 09:06:10-05:00,18000,2020-01-07 09:06:10-05:00,18000,True,False,"['config.yml', 'pull_request.yml', 'release.yml', 'README.md', 'changelog.md', 'development.md']",['4278dbbd749876c28ed6bd00ba1d213ff2755fe5'],5,119,124,6,,,
+95056d3458580448dbf946f461b338e63a57d4cc,"Add badging for Github actions. (#93)
+
+* Rename actions.
+* Add badge.
+* Only show master CI.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2020-01-07 21:12:50-05:00,18000,2020-01-07 21:12:50-05:00,18000,True,False,"['pull_request.yml', 'release.yml', 'README.md']",['e052926c9a3bf9ea28eba92bc76072924f3212fe'],3,3,6,3,,,
+31f5ee537b8a8e1d6eb6a560085f13c6a898e8ba,v3.4.1: Release prep.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2020-01-07 21:22:01-05:00,18000,2020-01-07 21:22:01-05:00,18000,True,False,['development.md'],['95056d3458580448dbf946f461b338e63a57d4cc'],1,1,2,1,,,
+6a8543c6b1dab79b4c82aa37045c2d46b96f243d,Automatic version bump via bumpversion.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2020-01-07 21:22:43-05:00,18000,2020-01-07 21:22:43-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['31f5ee537b8a8e1d6eb6a560085f13c6a898e8ba'],3,3,6,3,,,
+10d4e22e505ee1114b1756a0335217aad3076c0d,HOTFIX: Fix release dependencies.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2020-01-07 21:27:29-05:00,18000,2020-01-07 21:27:29-05:00,18000,True,False,"['release.yml', 'changelog.md']",['6a8543c6b1dab79b4c82aa37045c2d46b96f243d'],2,3,5,2,,,
+a6341489d765a0715a20fcaab9b03505c9afb280,Automatic version bump via bumpversion.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2020-01-07 21:27:54-05:00,18000,2020-01-07 21:27:54-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['10d4e22e505ee1114b1756a0335217aad3076c0d'],3,3,6,3,,,
+0f428fcc27486da5b8d591a6181d728c47e9552a,"Bump requests from 2.22.0 to 2.23.0 (#94)
+
+Bumps [requests](https://github.com/psf/requests) from 2.22.0 to 2.23.0.
+- [Release notes](https://github.com/psf/requests/releases)
+- [Changelog](https://github.com/psf/requests/blob/master/HISTORY.md)
+- [Commits](https://github.com/psf/requests/compare/v2.22.0...v2.23.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-02-20 11:10:18-05:00,18000,2020-02-20 11:10:18-05:00,18000,True,False,"['requirements-local.txt', 'requirements.txt', 'setup.py']",['a6341489d765a0715a20fcaab9b03505c9afb280'],3,3,6,3,,,
+7240cb7b7b8ec83c693c1a742405391b9470cdb1,"Add better API error logging. (#97)
+
+* Update integration tests & add heroku script.
+
+* Add HTTP and exception logging.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2020-05-11 08:30:38-04:00,14400,2020-05-11 08:30:38-04:00,14400,True,False,"['features.py', 'metrics.py', 'register.py', 'utils.py', 'pytest.ini', 'integration_unleashheroku.py', 'integration_unleashhosted.py', 'test_feature.py']",['0f428fcc27486da5b8d591a6181d728c47e9552a'],14,59,73,8,0.5714285714285714,1.0,0.5714285714285714
+5b8449878e3e8e860789fb74528d8346fdd88a29,"Bump requests from 2.23.0 to 2.24.0 (#102)
+
+Bumps [requests](https://github.com/psf/requests) from 2.23.0 to 2.24.0.
+- [Release notes](https://github.com/psf/requests/releases)
+- [Changelog](https://github.com/psf/requests/blob/master/HISTORY.md)
+- [Commits](https://github.com/psf/requests/compare/v2.23.0...v2.24.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-21 05:39:34-04:00,14400,2020-07-21 05:39:34-04:00,14400,True,False,"['requirements-local.txt', 'requirements.txt', 'setup.py']",['7240cb7b7b8ec83c693c1a742405391b9470cdb1'],3,3,6,3,,,
+7256c285dcae2903f0fe365b1da24e4cd1acd5c1,Deprecate default_value. (#100),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2020-07-21 05:39:46-04:00,14400,2020-07-21 05:39:46-04:00,14400,True,False,"['__init__.py', 'deprecation_warnings.py', 'Feature.py', 'changelog.md', 'unleashclient.md', 'test_client.py']",['5b8449878e3e8e860789fb74528d8346fdd88a29'],15,34,49,6,0.7142857142857143,1.0,0.7142857142857143
+fe6041a5d4cf4a7596917de904ad0bd94fb9532d,"Bump requests from 2.24.0 to 2.25.0 (#108)
+
+Bumps [requests](https://github.com/psf/requests) from 2.24.0 to 2.25.0.
+- [Release notes](https://github.com/psf/requests/releases)
+- [Changelog](https://github.com/psf/requests/blob/master/HISTORY.md)
+- [Commits](https://github.com/psf/requests/compare/v2.24.0...v2.25.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-16 15:44:05-05:00,18000,2020-11-16 15:44:05-05:00,18000,True,False,"['requirements-local.txt', 'requirements.txt', 'setup.py']",['7256c285dcae2903f0fe365b1da24e4cd1acd5c1'],3,3,6,3,,,
+75858ebfdae4d68c9f192823fab5cf66bcd9e73f,"v3.5.0 (#111)
+
+* Update changelog.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2020-11-20 13:14:38-05:00,18000,2020-11-20 13:14:38-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['fe6041a5d4cf4a7596917de904ad0bd94fb9532d'],4,6,10,4,,,
+6eba21761213a6bbda8dd2f0547da2ea7aa9518b,Correct typos in `Feature` docstrings (#112),Vasilis Gerakaris,vgerak@gmail.com,GitHub,noreply@github.com,2020-11-26 17:46:56+02:00,-7200,2020-11-26 10:46:56-05:00,18000,True,False,['Feature.py'],['75858ebfdae4d68c9f192823fab5cf66bcd9e73f'],2,2,4,1,,,
+8eee2a6fe4742afc443a2b0c866811bce204ace5,"Fix Github Actions for PRs from a forked repo (#115)
+
+* Add pull_request_target to trigger PR workflow.
+
+* Fix formatting.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2020-11-30 14:37:17-05:00,18000,2020-11-30 14:37:17-05:00,18000,True,False,['pull_request.yml'],['6eba21761213a6bbda8dd2f0547da2ea7aa9518b'],1,3,4,1,,,
+41a3d43e4beb108e1c8356ee25daa1a65c92d92d,Use project name in Contributing.md (#114),Vasilis Gerakaris,vasilis.gerakaris@navarino.gr,GitHub,noreply@github.com,2020-11-30 21:38:06+02:00,-7200,2020-11-30 14:38:06-05:00,18000,True,False,['CONTRIBUTING.md'],['8eee2a6fe4742afc443a2b0c866811bce204ace5'],1,1,2,1,,,
+3e40ff36b18dd6d1798b8213729e90ea8b383109,Fix typos and minor styling issues (#113),Vasilis Gerakaris,vasilis.gerakaris@navarino.gr,GitHub,noreply@github.com,2020-11-30 22:08:02+02:00,-7200,2020-11-30 15:08:02-05:00,18000,True,False,"['__init__.py', 'features.py', 'metrics.py', 'register.py', 'constants.py', 'Constraint.py', 'Feature.py', 'loader.py', 'send_metrics.py', 'Strategy.py', 'utils.py', 'Variants.py']",['41a3d43e4beb108e1c8356ee25daa1a65c92d92d'],38,34,72,12,0.0,0.0,0.0
+cf5a3e8f28bc9ff9dcbcd1320d41ace935747428,"Bump requests from 2.25.0 to 2.25.1 (#119)
+
+Bumps [requests](https://github.com/psf/requests) from 2.25.0 to 2.25.1.
+- [Release notes](https://github.com/psf/requests/releases)
+- [Changelog](https://github.com/psf/requests/blob/master/HISTORY.md)
+- [Commits](https://github.com/psf/requests/compare/v2.25.0...v2.25.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-21 05:53:35-05:00,18000,2020-12-21 05:53:35-05:00,18000,True,False,"['requirements-local.txt', 'requirements.txt', 'setup.py']",['3e40ff36b18dd6d1798b8213729e90ea8b383109'],3,3,6,3,,,
+c87f4e509a04a0ef9db6f0cd163c80f7f1ec985e,"rc-3.5.1 (#120)
+
+* Update documentation.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2020-12-21 06:08:20-05:00,18000,2020-12-21 06:08:20-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['cf5a3e8f28bc9ff9dcbcd1320d41ace935747428'],3,6,9,4,,,
+6ad4b45c02f366422b2ff9f8bdef7fd1e8655e0b,"Bump apscheduler from 3.6.3 to 3.7.0 (#121)
+
+Bumps [apscheduler](https://github.com/agronholm/apscheduler) from 3.6.3 to 3.7.0.
+- [Release notes](https://github.com/agronholm/apscheduler/releases)
+- [Changelog](https://github.com/agronholm/apscheduler/blob/v3.7.0/docs/versionhistory.rst)
+- [Commits](https://github.com/agronholm/apscheduler/compare/v3.6.3...v3.7.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-20 04:30:22-05:00,18000,2021-01-20 04:30:22-05:00,18000,True,False,"['requirements-local.txt', 'requirements.txt', 'setup.py']",['c87f4e509a04a0ef9db6f0cd163c80f7f1ec985e'],3,3,6,3,,,
+d7ece2276353df359f95fbfdb1fb1d057c02a76e,"Log errors from submitting metrics as warnings and not exceptions. (#123)
+
+* Log metric API calls as warnings.
+
+* Update documentation.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-01-20 06:38:20-05:00,18000,2021-01-20 06:38:20-05:00,18000,True,False,"['metrics.py', 'changelog.md']",['6ad4b45c02f366422b2ff9f8bdef7fd1e8655e0b'],1,3,4,2,,,
+1bc059ab652fd15bb46db7abd40a64b5b55c1cfa,"Log strategy failures once (#124)
+
+* Only log failed/invalid strategies once.
+
+* Support Python 3.9",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-01-20 06:40:34-05:00,18000,2021-01-20 06:40:34-05:00,18000,True,False,"['pull_request.yml', 'constants.py', 'loader.py', 'setup.py', 'test_loader.py', 'mock_all_features.py', 'tox.ini']",['d7ece2276353df359f95fbfdb1fb1d057c02a76e'],13,39,52,7,0.0,0.0,0.0
+846702ea0c8bbb58d9b8fa99bd29815f9ee8bd72,"v3.6.0 (#125)
+
+* Update documentation.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-01-20 07:13:08-05:00,18000,2021-01-20 07:13:08-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['1bc059ab652fd15bb46db7abd40a64b5b55c1cfa'],3,7,10,4,,,
+4c93ad2e9d920375de04b13014e78ff6eddc9f95,"Fix issue with updating in-memory variants in the loader (#127)
+
+The loader previously attempted to update the variants attribute
+of Feature. The correct attribute is variations.
+
+A unit test has been added to ensure that updating the in-memory
+update of variations works as expected.
+
+Co-authored-by: Su Ann Ling <suann@otovo.com>
+
+Co-authored-by: Su Ann Ling <suann@otovo.com>",Simen Aasland,simenaasland@users.noreply.github.com,GitHub,noreply@github.com,2021-02-05 10:39:55+01:00,-3600,2021-02-05 04:39:55-05:00,18000,True,False,"['loader.py', 'test_loader.py']",['846702ea0c8bbb58d9b8fa99bd29815f9ee8bd72'],6,23,29,2,1.0,1.0,1.0
+2061e762493bcf41ae6c6fa579e2a7b24cfe4bd1,"v3.6.1 (#128)
+
+* Add release notes.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-02-05 04:59:24-05:00,18000,2021-02-05 04:59:24-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['4c93ad2e9d920375de04b13014e78ff6eddc9f95'],4,6,10,4,,,
+50163545b161f956a6697272272b943927f7c07e,"Rename 'variations' property on Feature to 'variants' (#130)
+
+* Remove 'variations' verbiage in favor of 'variants'.
+
+* Fix typo.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-02-10 14:25:20-05:00,18000,2021-02-10 14:25:20-05:00,18000,True,False,"['Feature.py', 'loader.py', 'changelog.md', 'test_loader.py']",['2061e762493bcf41ae6c6fa579e2a7b24cfe4bd1'],5,6,11,4,,,
+c2766b5f73dd860c899ce206cf05778d9d661782,chore: update documentation link for variants,Ivar Conradi Østhus,ivarconr@gmail.com,GitHub,noreply@github.com,2021-02-10 20:26:17+01:00,-3600,2021-02-10 20:26:17+01:00,-3600,True,False,['README.md'],['50163545b161f956a6697272272b943927f7c07e'],1,1,2,1,,,
+219b9a275f0d69147fa566a59fa67efbcb5b05d6,"Only send metrics for toggles that have been used. (#131)
+
+* Only send metrics for toggles that have been used.
+
+* Cleanup.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-02-11 04:24:56-05:00,18000,2021-02-11 04:24:56-05:00,18000,True,False,"['send_metrics.py', 'changelog.md', 'test_aggregate_and_send_metrics.py']",['c2766b5f73dd860c899ce206cf05778d9d661782'],1,10,11,3,0.0,1.0,0.6666666666666666
+c885f2966474f6449a47166e7dd5705f0be2b5e8,"v3.6.2 (#132)
+
+* Update changelog.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-02-11 04:50:08-05:00,18000,2021-02-11 04:50:08-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['219b9a275f0d69147fa566a59fa67efbcb5b05d6'],3,5,8,4,,,
+78a6c682bb0f06d04f1be61dfa30028c52dec023,client: don't use mutable defaults (#134),Alexandre Viau,alexandre@alexandreviau.net,GitHub,noreply@github.com,2021-03-18 12:36:40-04:00,14400,2021-03-18 12:36:40-04:00,14400,True,False,['__init__.py'],['c885f2966474f6449a47166e7dd5705f0be2b5e8'],6,12,18,1,0.0,0.0,0.0
+38af02eeefa324aeb6efe1e4ffbfe84ae0b02e48,"Fix Pylint ‘R1729: Use a generator instead’ warnings (#137)
+
+This fixes two instances of Pylint warning about ‘R1729: Use a generator
+instead’.
+
+It also adds pylint to tox.ini, to keep it in sync with the tox-osx.ini
+file, and with the Github Actions setup.",wouter bolsterlee,wouter@bolsterl.ee,GitHub,noreply@github.com,2021-03-18 19:50:21+01:00,-3600,2021-03-18 14:50:21-04:00,14400,True,False,"['Feature.py', 'Strategy.py', 'tox.ini']",['78a6c682bb0f06d04f1be61dfa30028c52dec023'],2,3,5,3,,,
+bfd71172a751bcb0f9229507b17e923d5cecb346,Remove dependancies version pinning (#135),Israël Hallé,isra017@gmail.com,GitHub,noreply@github.com,2021-03-18 14:57:29-04:00,14400,2021-03-18 14:57:29-04:00,14400,True,False,"['changelog.md', 'setup.py']",['38af02eeefa324aeb6efe1e4ffbfe84ae0b02e48'],4,3,7,2,,,
+d14e9887d9146372ab2a3b619c4d459f22b9cbf6,Fix flake8 warnings in tests (#138),wouter bolsterlee,wouter@bolsterl.ee,GitHub,noreply@github.com,2021-03-18 20:13:00+01:00,-3600,2021-03-18 15:13:00-04:00,14400,True,False,"['integration_unleashheroku.py', 'integration_unleashhosted.py', 'StrategyV2.py']",['bfd71172a751bcb0f9229507b17e923d5cecb346'],6,7,13,3,,,
+770ecb0a1c57bcaddf5212b900cb95f970dcbf9e,"pre-v4.0.0 chores (cleanup requirements, deprecate Python 3.5 (#139)
+
+* Unpin dependencies in requirement.txt files.
+
+* Remove Python 3.5 typing.
+
+* Deprecate Python 3.5 support.
+
+* Unpin versions.
+
+* Update changelog.
+
+* Deprecate 'default_value' argument in is_enabled().",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-03-18 16:35:19-04:00,14400,2021-03-18 16:35:19-04:00,14400,True,False,"['pull_request.yml', '__init__.py', 'deprecation_warnings.py', 'changelog.md', 'requirements-local.txt', 'requirements.txt', 'setup.py', 'tox.ini']",['d14e9887d9146372ab2a3b619c4d459f22b9cbf6'],31,21,52,8,0.375,0.0,0.375
+fbf7d5a42e239bef08b45e8a70540bd1265cd505,"rc-v4.0.0 (#140)
+
+* Update changelog.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-03-18 16:53:05-04:00,14400,2021-03-18 16:53:05-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['770ecb0a1c57bcaddf5212b900cb95f970dcbf9e'],3,5,8,4,,,
+e2319089d100fc484bc58e68774c129712b8ff92,"Add client support for projects (#141)
+
+* Add project upport to client (part 1)
+
+* Refactor test constants and add periodic function tests.
+
+* Add full client test for project.
+
+* Update documentation.
+
+* Fix parameter passing, derp.
+
+* Correct version change.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-03-22 08:57:32-04:00,14400,2021-03-22 08:57:32-04:00,14400,True,False,"['pull_request.yml', 'Makefile', 'README.md', '__init__.py', 'features.py', 'fetch_and_load.py', 'changelog.md', 'development.md', 'unleashclient.md', 'pytest.ini', 'test_feature.py', 'test_fetch_and_load.py', 'test_client.py', 'mock_features.py', 'testing_constants.py']",['fbf7d5a42e239bef08b45e8a70540bd1265cd505'],15,130,145,15,0.5272727272727272,0.9636363636363636,0.8181818181818182
+f85ca073299d8b139d6c4e7caa1a9d4c5ae24192,"rc-4.1.0 (#142)
+
+* Update documentation.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-03-22 09:13:05-04:00,14400,2021-03-22 09:13:05-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['e2319089d100fc484bc58e68774c129712b8ff92'],4,4,8,4,,,
+5e3686c90485062ec2aeae0357c1c8b750eb416c,"Client support for custom stickiness (#143)
+
+* Allow custom fields in FlexibleRollout Strategy.
+
+* Allow custom fields in Variants.
+
+* Add spec tests for ""11-strategy-constraints-edge-cases.json""
+
+* Add spec tests for ""12-custom-stickiness.json"".
+
+* Update changelog.
+
+* Add spec tests to Makefile.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-03-25 18:16:14-04:00,14400,2021-03-25 18:16:14-04:00,14400,True,False,"['Makefile', 'FlexibleRolloutStrategy.py', 'Variants.py', 'changelog.md', 'test_11_strategy_constraints_edge_cases.py', 'test_12_custom_stickiness.py', 'test_flexiblerollout.py', 'test_variants.py', 'mock_variants.py']",['f85ca073299d8b139d6c4e7caa1a9d4c5ae24192'],11,578,589,9,0.5380710659898477,0.9289340101522843,1.0
+1dcd2c6cebc32103f708cb24057f6405d196a506,HOTFIX: Fix CI to run on PR merge branch.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2021-03-26 06:02:44-04:00,14400,2021-03-26 06:02:44-04:00,14400,True,False,"['pull_request.yml', 'mock_variants.py']",['5e3686c90485062ec2aeae0357c1c8b750eb416c'],2,2,4,2,,,
+f19b4b03b51e4a994eb33eacd28e53c2fe7939f0,"Fix issues introduced by custom stickiness support! (#147)
+
+* Fix issues with stickiness when key is not available.
+
+* Revert stickiness fallback.
+
+* Revert the revert!
+
+* Run PR tests on pull request, not on master. :facepalm:",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-03-26 16:28:25-04:00,14400,2021-03-26 16:28:25-04:00,14400,True,False,"['FlexibleRolloutStrategy.py', 'Variants.py', 'test_10_flexible_rollout.py']",['1dcd2c6cebc32103f708cb24057f6405d196a506'],8,11,19,3,0.0,0.0,1.0
+2252c124f2feedba098220c9649f551b45563fc5,"rc-4.2.0 (#148)
+
+* Update changelog.
+
+* Fix typo.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-03-26 18:36:08-04:00,14400,2021-03-26 18:36:08-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['f19b4b03b51e4a994eb33eacd28e53c2fe7939f0'],5,5,10,4,,,
+d4e94182118cbd4bac28b8b7257904bc0544b475,docs: fix README typo (#149),artiom,artiom.lunev@gmail.com,GitHub,noreply@github.com,2021-04-03 13:47:09+01:00,-3600,2021-04-03 08:47:09-04:00,14400,True,False,['README.md'],['2252c124f2feedba098220c9649f551b45563fc5'],1,1,2,1,,,
+32febf25beb490a74a497cb276a1ac57de4ebade,Update README.md (#152),Ivar Conradi Østhus,ivarconr@gmail.com,GitHub,noreply@github.com,2021-05-30 18:06:13+02:00,-7200,2021-05-30 12:06:13-04:00,14400,True,False,['README.md'],['d4e94182118cbd4bac28b8b7257904bc0544b475'],1,4,5,1,,,
+b36e7ec466c1407200ca81e269839be3f3a290aa,"Exclude test package from dist & wheel (#155)
+
+Co-authored-by: Ameya Joshi <v-ameyaj@zillowgroup.com>",ameyajoshi99,ameyajoshi99@gmail.com,GitHub,noreply@github.com,2021-06-03 14:30:09+05:30,-19800,2021-06-03 05:00:09-04:00,14400,True,False,['setup.py'],['32febf25beb490a74a497cb276a1ac57de4ebade'],1,1,2,1,,,
+e28232fd157a17ba5e81a1a9e4f4a82d6d895197,"Configure log level of verbose messages (#156)
+
+* Allow configuration of caution log levels.
+
+* Rename to verbose_log_level.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-06-03 05:09:58-04:00,14400,2021-06-03 05:09:58-04:00,14400,True,False,"['README.md', '__init__.py', 'changelog.md', 'unleashclient.md', 'integration_unleashhosted.py']",['b36e7ec466c1407200ca81e269839be3f3a290aa'],10,19,29,5,0.0,0.0,0.0
+6054a6e3deb48f65fd3bc6e272e401a46356f013,"Raises exception on registration if client is initialized with invalid URL (#157)
+
+* Raise ValueError on registration if Unleash is initialized with an invalid URL.
+
+* Update changelog.
+
+* Be specific on which exceptions are raised.
+
+* Doc update.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-06-03 06:06:03-04:00,14400,2021-06-03 06:06:03-04:00,14400,True,False,"['register.py', 'changelog.md', 'unleashclient.md', 'test_client.py']",['e28232fd157a17ba5e81a1a9e4f4a82d6d895197'],0,22,22,4,0.7272727272727273,1.0,0.7272727272727273
+ba9e8ed134bebcc3b878fac3cec4ab066f452aa4,v4.3.0 (#158),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-06-03 06:26:32-04:00,14400,2021-06-03 06:26:32-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['6054a6e3deb48f65fd3bc6e272e401a46356f013'],4,4,8,4,,,
+8ab7231683b3dcdd6a92a16af6fc670c732b5d39,"Allow to run unleash clients as context managers (#159)
+
+* Allow to run unleash clients as context managers
+
+The
+
+```
+with UnleashClient(...) as client:
+    client.is_enabled(...)
+```
+
+idiom is very pythonic. It reduces the code size over the current
+explicit initialization and destruction and ensures the client will be
+destroyed even if there are exceptions during its lifetime (i.e, the
+user's program fails before destroying its client).
+
+* Update docs",Piojo,47329970+Piojo@users.noreply.github.com,GitHub,noreply@github.com,2021-06-07 11:47:41+02:00,-7200,2021-06-07 05:47:41-04:00,14400,True,False,"['__init__.py', 'unleashclient.md', 'test_client.py']",['ba9e8ed134bebcc3b878fac3cec4ab066f452aa4'],2,29,31,3,1.0,1.0,0.75
+81816422008ba3887254b53afae40b26a3dc2aab,"v4.4.0 (#160)
+
+* Update changelog.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-06-08 06:46:55-04:00,14400,2021-06-08 06:46:55-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['8ab7231683b3dcdd6a92a16af6fc670c732b5d39'],3,6,9,4,,,
+b23173bdd74e37dad1ab37589633e4668817b9d5,"Include py.typed marker in sdist/wheel packages (#162)
+
+This marks the package as ‘typing friendly’ and enables tools like mypy
+to actually type check code using this library.
+
+Closes #161.",wouter bolsterlee,wouter@bolsterl.ee,GitHub,noreply@github.com,2021-07-02 09:15:20+00:00,0,2021-07-02 05:15:20-04:00,14400,True,False,"['MANIFEST.in', 'py.typed', 'setup.py']",['81816422008ba3887254b53afae40b26a3dc2aab'],0,2,2,3,,,
+c2bd7abf6f2e8b38e11b522f51dc963e89d3ba9a,add types-requests dependency to fix the build with mypy 0.900+ (#163),wouter bolsterlee,wouter@bolsterl.ee,GitHub,noreply@github.com,2021-07-02 09:16:47+00:00,0,2021-07-02 05:16:47-04:00,14400,True,False,['requirements.txt'],['b23173bdd74e37dad1ab37589633e4668817b9d5'],0,1,1,1,,,
+e80e128104491f07ee709d78f4975d80eb12cbe6,"Chore/il/small fixes 20210702 (#166)
+
+* Change coveralls to not require token.
+
+* Fix api URL sanitation.
+
+* Changelog update plus some minor local dev changes.
+
+* Add documentation about the URL.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-07-02 06:40:27-04:00,14400,2021-07-02 06:40:27-04:00,14400,True,False,"['pull_request.yml', 'Makefile', 'README.md', '__init__.py', 'changelog.md', 'requirements-dev.txt']",['c2bd7abf6f2e8b38e11b522f51dc963e89d3ba9a'],5,13,18,6,,,
+f1dbd7b857f427b5c4b3dfc77a197ed3efca06fb,Automatic version bump via bumpversion. (#167),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-07-02 07:02:16-04:00,14400,2021-07-02 07:02:16-04:00,14400,True,False,"['.bumpversion.cfg', 'constants.py', 'setup.py']",['e80e128104491f07ee709d78f4975d80eb12cbe6'],3,3,6,3,,,
+78a97549693d8374e6eb6fbe7537330eb32fd97b,"Fix new pylint recommendations and local tests. (#175)
+
+* Fix new pylint recommendations and local tests.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-10-23 05:08:40-04:00,14400,2021-10-23 05:08:40-04:00,14400,True,False,"['Makefile', 'register.py', 'deprecation_warnings.py', 'utils.py']",['f1dbd7b857f427b5c4b3dfc77a197ed3efca06fb'],6,9,15,4,,,
+0c1b3ccfcdb76ffbfdd2b8f759319a1cac66c346,Tweak max args in pylint.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2021-10-23 05:10:59-04:00,14400,2021-10-23 05:10:59-04:00,14400,True,False,['pylintrc'],['78a97549693d8374e6eb6fbe7537330eb32fd97b'],1,1,2,1,,,
+c1e048c861a4a78ea5a06c39f11a28bebbd8afc0,"feat: Adds jitter for refresh_interval (#172)
+
+* feat: Adds jitter for refresh_interval
+
+BREAKING CHANGE: closes #171 May break code when parameters to UnleashClient are not used as keyword arguments.
+
+* feat: Adds jitter for metrics_interval
+
+BREAKING CHANGE: closes Unleash#171 May break code when parameters to UnleashClient are not used as keyword arguments.
+
+* docs: Information on metrics_jitter
+
+Co-authored-by: jstolarski <jstolarski@grupazpr.pl>",Jakub STOLARSKI,jakub.stolarski+github@gmail.com,GitHub,noreply@github.com,2021-10-23 11:18:55+02:00,-7200,2021-10-23 05:18:55-04:00,14400,True,False,"['README.md', '__init__.py', 'unleashclient.md', 'test_client.py', 'testing_constants.py']",['0c1b3ccfcdb76ffbfdd2b8f759319a1cac66c346'],5,27,32,5,0.0,0.625,0.625
+0102d9532655ffa7074b10f1c7fd0d2f4b8a6035,Create codeql-analysis.yml,Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-10-26 08:30:22-04:00,14400,2021-10-26 08:30:22-04:00,14400,True,False,['codeql-analysis.yml'],['c1e048c861a4a78ea5a06c39f11a28bebbd8afc0'],0,71,71,1,,,
+ff4e6ad4db7da3fadbb8bf84a832fcc6252e9bc8,"Support HTTP 304 on /client/feature requests (#176)
+
+* Add cache key for etag.
+
+* Parse etag from feature request.
+
+* Add caching for etag header.
+
+* Use cached value to set If-None-Match header if present.
+
+* Add e2e test for caching.
+
+* Don't send metrics if there's nothing to report.
+
+* Fix issue with test cache generation, linting.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-10-28 06:44:18-04:00,14400,2021-10-28 06:44:18-04:00,14400,True,False,"['__init__.py', 'features.py', 'constants.py', 'fetch_and_load.py', 'send_metrics.py', 'test_feature.py', 'test_aggregate_and_send_metrics.py', 'test_fetch_and_load.py', 'test_client.py', 'decorators.py', 'testing_constants.py']",['0102d9532655ffa7074b10f1c7fd0d2f4b8a6035'],32,128,160,11,0.6716417910447762,0.23880597014925373,0.6716417910447762
+f3c0d58364d090020555174dac0f4db0e103e8d9,"Sanely handle multiple client initialization (#177)
+
+* Make custom strategy test more resiliant.
+
+* Add exception handling to is_initialized() call.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2021-11-11 04:28:10-05:00,18000,2021-11-11 04:28:10-05:00,18000,True,False,"['README.md', '__init__.py', 'index.md', 'test_client.py', 'test_custom_strategy.py']",['ff4e6ad4db7da3fadbb8bf84a832fcc6252e9bc8'],49,87,136,5,0.6,1.0,1.0
+5c4f62edba6b0102076040db07ca63816a0d5a2e,"docs: Add some details for running the client under wsgi (#179)
+
+* docs: Add some details for running the client under wsgi
+
+* docs: Patch spelling mistake in docs: faily -> fairly
+
+Co-authored-by: Simmon Hornby <simon@getunleash.ai>",sighphyre,liquidwicked64@gmail.com,GitHub,noreply@github.com,2021-11-11 11:46:20+02:00,-7200,2021-11-11 04:46:20-05:00,18000,True,False,['README.md'],['f3c0d58364d090020555174dac0f4db0e103e8d9'],1,11,12,1,,,
+cd396b4a075d467d3d6baf68f099d2c03af16fa4,"update the url of Variant documentation (#180)
+
+Co-authored-by: Ivan Lee <ivanklee86@gmail.com>",donghui,977675308@qq.com,GitHub,noreply@github.com,2021-11-11 17:48:11+08:00,-28800,2021-11-11 04:48:11-05:00,18000,True,False,['README.md'],['5c4f62edba6b0102076040db07ca63816a0d5a2e'],2,2,4,1,,,
+2c5cbecdc6cfd2c5ac9bb34e2ae6612b6a61c8a6,"Improve initialization code block.
+
+Add syntax highlighting and spacing to initialization code block.
+
+It seems all other code blocks have syntax highlighting, but not this one, even if it's the most involved example on the page.
+
+Also: add some newlines to make it easier to see what's going on.",Thomas Heartman,thomas@getunleash.ai,GitHub,noreply@github.com,2021-11-29 13:34:16+01:00,-3600,2021-11-29 13:34:16+01:00,-3600,True,False,['README.md'],['cd396b4a075d467d3d6baf68f099d2c03af16fa4'],1,3,4,1,,,
+a615c124ebc57f7a0a8f3c418cb852510c5c5342,highlight small code sample,Thomas Heartman,thomas@getunleash.ai,GitHub,noreply@github.com,2021-11-29 13:38:56+01:00,-3600,2021-11-29 13:38:56+01:00,-3600,True,False,['README.md'],['2c5cbecdc6cfd2c5ac9bb34e2ae6612b6a61c8a6'],1,1,2,1,,,
+1bf2608bb5f6af05d6bc95ad77238dbe9710dadf,docs: Link to flask sdk in docs,sighphyre,liquidwicked64@gmail.com,sighphyre,liquidwicked64@gmail.com,2021-12-03 08:58:49+02:00,-7200,2021-12-03 08:58:49+02:00,-7200,True,False,['README.md'],['6597163dada191fedfe89bd3333cc48b7befed1c'],1,5,6,1,,,
+cbaa16f702e4872e4cce1414d508aa050264e000,"Update README.md
+
+Co-authored-by: Thomas Heartman <thomas@getunleash.ai>",sighphyre,liquidwicked64@gmail.com,GitHub,noreply@github.com,2021-12-06 10:27:27+02:00,-7200,2021-12-06 10:27:27+02:00,-7200,True,False,['README.md'],['1bf2608bb5f6af05d6bc95ad77238dbe9710dadf'],1,1,2,1,,,
+d92c783f87b1d616ff114123a75632bffd5a9946,"Update README.md
+
+Co-authored-by: Thomas Heartman <thomas@getunleash.ai>",sighphyre,liquidwicked64@gmail.com,GitHub,noreply@github.com,2021-12-06 10:28:04+02:00,-7200,2021-12-06 10:28:04+02:00,-7200,True,False,['README.md'],['cbaa16f702e4872e4cce1414d508aa050264e000'],1,1,2,1,,,
+0a378e35ec0a8e7e08163c63a4c5e149dc87fda4,"chore: update links after renaming master -> main (#183)
+
+* chore: update links after renaming master -> main
+
+* Fix code scanning for branch rename.
+
+Co-authored-by: Ivan Lee <ivanklee86@gmail.com>",Thomas Heartman,thomas@getunleash.ai,GitHub,noreply@github.com,2022-01-03 16:24:44+01:00,-3600,2022-01-03 10:24:44-05:00,18000,True,False,"['codeql-analysis.yml', 'CONTRIBUTING.md', 'README.md', 'development.md']",['80784a6d969e00030b21a5fcdab53b1ec5f23730'],7,7,14,4,,,
+28c996423dc30bc1cef0dfe622f12ba4162fc9b2,"v5.0.0 release (#184)
+
+* Update changelog.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-01-03 10:54:01-05:00,18000,2022-01-03 10:54:01-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['0a378e35ec0a8e7e08163c63a4c5e149dc87fda4'],3,11,14,4,,,
+caaca5ad15d4a12fd19ca8e4f9cf6b0c513f729c,"fix: do not try to parse unmodified feature flags (#186)
+
+As mentioned in #185 the client should not attempt to parse 
+the request body if the returned http status code was 304 as 
+servers like gitlab send an empty response body in this case.
+
+The result from get_feature_toggles gets ignored in
+fetch_and_load_features if None is returned.",Jan Losinski,losinskij@gmail.com,GitHub,noreply@github.com,2022-01-07 09:37:27+01:00,-3600,2022-01-07 03:37:27-05:00,18000,True,False,['features.py'],['28c996423dc30bc1cef0dfe622f12ba4162fc9b2'],0,3,3,1,0.0,0.0,0.0
+9b80101742a29055e3f0fb6e41266bd027cd4a45,Fix linting and set up Gitlab integration tests.,ivanklee86,ivanklee86@gmail.com,ivanklee86,ivanklee86@gmail.com,2022-01-07 04:04:38-05:00,18000,2022-01-07 04:04:38-05:00,18000,True,False,"['features.py', 'integration_gitlab.py']",['caaca5ad15d4a12fd19ca8e4f9cf6b0c513f729c'],3,3,6,2,,,
+202db949f6119c43854c262bf070f060b5072e22,"Release v5.0.1 (#187)
+
+* Update changelog.
+
+* Automatic version bump via bumpversion.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-01-07 04:34:01-05:00,18000,2022-01-07 04:34:01-05:00,18000,True,False,"['.bumpversion.cfg', 'constants.py', 'changelog.md', 'setup.py']",['9b80101742a29055e3f0fb6e41266bd027cd4a45'],3,5,8,4,,,
+13687698f0aec15f61bfa14a0d1cca248c836ed0,"Modernize unleash-client-python (#188)
+
+* Move tool configure to pyproject.toml.
+
+* Use setuptools_scm for versioning.
+
+* Remove unneeded MANIFEST.in.
+
+* Clean more unneeded files.
+
+* WIP sphinx.
+
+* Use importlib_metadata to support 3.6/3.7
+
+* New docs WIP.
+
+* Working changelog.
+
+* Checkpoint.
+
+* Update UnleashClient documentation.
+
+* Fix linting.
+
+* Test with Python 3.10.
+
+* Tweak python matrix.
+
+* Add doc release pipeline.
+
+* Pin publish versin.
+
+* Point at right dir.
+
+* Edit on Github and final tweaks.
+
+* Officially add Python 3.10 support.
+
+* Don't generate coverage from spec tests.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-01-12 02:06:41-05:00,18000,2022-01-12 02:06:41-05:00,18000,True,False,"['.bumpversion.cfg', 'config.yml', 'pull_request.yml', 'release-docs.yml', 'release-package.yml', '.gitignore', 'CHANGELOG.md', 'MANIFEST.in', 'Makefile', 'README.md', '__init__.py', 'constants.py', 'Constraint.py', 'Feature.py', 'ApplicationHostname.py', 'Default.py', 'FlexibleRolloutStrategy.py', 'GradualRolloutRandom.py', 'GradualRolloutSessionId.py', 'GradualRolloutUserId.py', 'RemoteAddress.py', 'Strategy.py', 'UserWithId.py', 'Variants.py', 'Makefile', 'changelog.rst', 'conf.py', 'customstrategies.md', 'customstrategies.rst', 'development.md', 'development.rst', 'index.md', 'index.rst', 'installation.rst', 'make.bat', 'resources.md', 'strategy.md', 'strategy.rst', 'unleashclient.md', 'unleashclient.rst', 'usage.rst', 'wsgi.rst', 'mypy.ini', 'pylintrc', 'pyproject.toml', 'pytest.ini', 'requirements-dev.txt', 'requirements-package.txt', 'requirements.txt', 'setup.config', 'setup.py', 'tox-osx.ini', 'tox.ini']",['202db949f6119c43854c262bf070f060b5072e22'],1027,603,1630,53,0.75,1.0,1.0
+7471490f8db0cedca6a908bd2d66aa0b818c5807,"Continue cleanup (#189)
+
+* Post-doc rework readme updates.
+
+* Clean up local tox.
+
+* Remove mkdocs.yaml now that we've switched to sphinx.
+
+* Remove OSX specific tox and local after testing.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-01-12 03:12:57-05:00,18000,2022-01-12 03:12:57-05:00,18000,True,False,"['Makefile', 'README.md', 'development.rst', 'mkdocs.yml', 'requirements-local.txt', 'tox-osx.ini', 'tox.ini']",['13687698f0aec15f61bfa14a0d1cca248c836ed0'],100,14,114,7,,,
+f5900b8dadb140bf1a9e8420e2b380e9571c5847,"Cache abstraction (#193)
+
+* Create cache abstraction and FileCache adapter
+
+* All tests passing
+
+* Move fixtures to conftest
+
+* Rename ondisk_cache to cache
+
+* Drop cache_directory param
+
+* Fix typing
+
+* Fix tests",Walison Filipe,walisonfilipe@hotmail.com,GitHub,noreply@github.com,2022-02-22 07:49:05-03:00,10800,2022-02-22 05:49:05-05:00,18000,True,False,"['__init__.py', 'cache.py', 'loader.py', 'fetch_and_load.py', 'send_metrics.py', 'conftest.py', 'test_aggregate_and_send_metrics.py', 'test_fetch_and_load.py', 'test_client.py', 'test_loader.py']",['7471490f8db0cedca6a908bd2d66aa0b818c5807'],102,153,255,10,1.0,1.0,0.68
+01d7d2d70b38bf1973b80e12fc0a81989868fca6,"Tweaks to abstract cache logic (#195)
+
+* Add cache_directory back to arguments.
+
+* Add typing.
+
+* Add documentation for custom caches.
+
+* Update changelog.
+
+* Fix typing in cache_directory.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-03-04 05:12:07-05:00,18000,2022-03-04 05:12:07-05:00,18000,True,False,"['CHANGELOG.md', '__init__.py', 'cache.py', 'basecache.rst', 'customcache.rst', 'index.rst']",['f5900b8dadb140bf1a9e8420e2b380e9571c5847'],12,72,84,6,0.0,0.0,0.0
+b34d8914b6abbc860e7c38274ae584c3c5c3f4e6,"Add new constraint operators (#192)
+
+* Add (and load) new Constraint configuration.
+
+* Refactor constraint object to sparate logic.
+
+* Add string operators and inverted support.
+
+* Add numeric operators.
+
+* Support date operators and currentTime context value.
+
+* Add semver operator.
+
+* Add spec tests.
+
+* Install types.
+
+* Initialize semver vars.
+
+* Round 2 of spec changes.
+
+* Set default value.
+
+* Move constraint from default to Constraint.apply()",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-03-04 05:58:19-05:00,18000,2022-03-04 05:58:19-05:00,18000,True,False,"['pull_request.yml', 'CHANGELOG.md', '__init__.py', 'Constraint.py', 'utils.py', 'pyproject.toml', 'requirements.txt', 'setup.py', 'test_13_constraint_operators.py', 'test_14_constraint_semver_operators.py', 'test_constraints.py', 'mock_constraints.py', 'mock_features.py', 'tox.ini']",['01d7d2d70b38bf1973b80e12fc0a81989868fca6'],42,1814,1856,14,0.936734693877551,0.8408163265306122,1.0
+b1437cb64afdcd26a8b9843b814815ee15d6a4cb,Update changelog. (#196),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-03-07 05:43:07-05:00,18000,2022-03-07 05:43:07-05:00,18000,True,False,['CHANGELOG.md'],['b34d8914b6abbc860e7c38274ae584c3c5c3f4e6'],1,1,2,1,,,
+aafb389267417b70f20613c42d455e0a6847716f,Fix logging in UCP. (#198),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-03-15 06:44:57-04:00,14400,2022-03-15 06:44:57-04:00,14400,True,False,"['CHANGELOG.md', 'utils.py']",['b1437cb64afdcd26a8b9843b814815ee15d6a4cb'],5,5,10,2,,,
+4c7bc98e7919f5f3ae91ca1c732337be61b2d17b,"Change logging if no feature flags are returned from server (#200)
+
+* Reduce level and reword message if no features are returned from server (whether 304 or error).
+
+* Update changelog.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-04-02 07:30:42-04:00,14400,2022-04-02 07:30:42-04:00,14400,True,False,"['CHANGELOG.md', 'fetch_and_load.py']",['aafb389267417b70f20613c42d455e0a6847716f'],1,4,5,2,,,
+3a756cc3c2602edbbbd9b8988b14fa9167cbed7c,"Upgrade to GitHub-native Dependabot (#151)
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-04-22 19:16:36+02:00,-7200,2022-04-22 19:16:36+02:00,-7200,True,False,['dependabot.yml'],['4c7bc98e7919f5f3ae91ca1c732337be61b2d17b'],0,21,21,1,,,
+175fe734cbaba41829b770e0437f1a5d2d949227,"Add flag to disable toggle polling from the server (#205)
+
+In this case only cache will be used.",Povilas Balciunas,balciunas90@gmail.com,GitHub,noreply@github.com,2022-04-23 13:17:19+01:00,-3600,2022-04-23 08:17:19-04:00,14400,True,False,['__init__.py'],['3a756cc3c2602edbbbd9b8988b14fa9167cbed7c'],17,31,48,1,0.0,0.0,1.0
+bee3b8b621e397c7e8325d4c35f5b3f6c015e617,"Add bootstrapping (#206)
+
+* Add bootstrapping.
+
+* Add documentation.
+
+* Remove unused imports.
+
+* Update UnleashClient/cache.py
+
+Co-authored-by: sighphyre <liquidwicked64@gmail.com>
+
+* Make bootstrapped a cache attribute.
+
+Co-authored-by: sighphyre <liquidwicked64@gmail.com>",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-05-02 05:56:16-04:00,14400,2022-05-02 05:56:16-04:00,14400,True,False,"['CHANGELOG.md', '__init__.py', 'cache.py', 'basecache.rst', 'filecache.rst', 'index.rst', 'test_client.py', 'mock_bootstrap.json']",['175fe734cbaba41829b770e0437f1a5d2d949227'],3,202,205,8,0.7215189873417721,0.9620253164556962,0.810126582278481
+576d4ad49e075cec40e8cda461c5873fb12a009a,Update README for v5.2.0.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2022-05-02 06:03:49-04:00,14400,2022-05-02 06:03:49-04:00,14400,True,False,['CHANGELOG.md'],['bee3b8b621e397c7e8325d4c35f5b3f6c015e617'],0,1,1,1,,,
+72a1ce4656b4e237eb20f42a080ae182efca5004,"Update usage.rst (#207)
+
+Update documentation on how to set default value.",Michael Klich,inirudebwoy@users.noreply.github.com,GitHub,noreply@github.com,2022-05-09 17:16:45+02:00,-7200,2022-05-09 11:16:45-04:00,14400,True,False,['usage.rst'],['576d4ad49e075cec40e8cda461c5873fb12a009a'],2,5,7,1,,,
+2489ae9a2069628ae1d312855fc375baddaca004,"# meta: add 'new items to project board' workflow
+
+This change adds a workflow to automatically add new issues and PRs to
+a specified project board for easier watching and triaging.",Thomas Heartman,thomas@getunleash.ai,Thomas Heartman,thomas@getunleash.ai,2022-05-11 13:41:58+02:00,-7200,2022-05-11 13:41:58+02:00,-7200,True,False,['add-to-project.yml'],['72a1ce4656b4e237eb20f42a080ae182efca5004'],0,14,14,1,,,
+52496f7e2293dd4a70d843b085a6477c8e15fdfc,"docs(readme): update `default_value`, fix toggle naming (#208)
+
+* docs: use url-friendly toggle names in examples
+
+Unleash doesn't support spaces in toggle names, so it makes sense to
+remove spaces from the examples.
+
+* docs: specify replacements for the default_value keyword arg
+
+* docs: update usage.rst
+
+Update usage.rst with the same changes I've made in the readme: url-friendly toggle names and updating `fallback_function`/`default_value`.
+
+* docs: fix formatting",Thomas Heartman,thomas@getunleash.ai,GitHub,noreply@github.com,2022-05-19 12:23:52+02:00,-7200,2022-05-19 06:23:52-04:00,14400,True,False,"['README.md', 'usage.rst']",['2489ae9a2069628ae1d312855fc375baddaca004'],22,26,48,2,,,
+c6d698b365362d9e90365951f96878b11f990887,"meta: add external PRs to project board
+
+The `pull_request` hook runs in the context of the proposed changes. That means that for forks, this action won't have access to the required secrets for it to complete. As such, PRs from outside contributors won't work correctly.
+
+The `pull_request_target` hook, however, runs in the context of the target branch, and thus has all the permissions it needs. The [github docs for this hook](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target) also indicate that this is the way to go:
+
+> This event allows your workflow to do things like label or comment on pull requests from forks. Avoid using this event if you need to build or run code from the pull request.
+
+## Interesting note for PRs
+
+It seems that when this change is proposed as a PR, the expected action (_add new item to project board_) does not run. However, this does not affect other new PRs. After merging, the pipeline works and triggers as expected, for both external and internal contributors.",Thomas Heartman,thomas@getunleash.ai,GitHub,noreply@github.com,2022-05-20 15:33:00+02:00,-7200,2022-05-20 15:33:00+02:00,-7200,True,False,['add-to-project.yml'],['52496f7e2293dd4a70d843b085a6477c8e15fdfc'],1,1,2,1,,,
+2c434507980b0afb51434d5ab2b2bd2fc5dbd407,docs: fix some spelling in usage.rst,sighphyre,liquidwicked64@gmail.com,sighphyre,liquidwicked64@gmail.com,2022-05-31 08:32:41+02:00,-7200,2022-05-31 08:32:41+02:00,-7200,True,False,['usage.rst'],['136819cac7a83e8504db5157438d6762de46a4e0'],2,2,4,1,,,
+736b13f555f5f9d852401992bfeaba148d4b7d72,"docs: add a section on getting the client working with celery (#210)
+
+docs: add a section on getting the client working with celery",sighphyre,liquidwicked64@gmail.com,GitHub,noreply@github.com,2022-05-31 14:52:34+02:00,-7200,2022-05-31 14:52:34+02:00,-7200,True,False,"['celery.rst', 'index.rst']",['33cb92811ea90d3f712359d322f14a7eefd86005'],0,20,20,2,,,
+38959f99c2a166cacd78ab904326c0cca63eb89c,"Feature/global segments (#212)
+
+* feat: implement handling for global segments
+
+* chore: include support drop for python 3.6 so this builds",sighphyre,liquidwicked64@gmail.com,GitHub,noreply@github.com,2022-06-24 09:01:09+02:00,-7200,2022-06-24 09:01:09+02:00,-7200,True,False,"['pull_request.yml', 'constants.py', 'loader.py', 'Strategy.py', 'Variants.py', 'development.rst', 'pyproject.toml', 'setup.py', 'conftest.py', 'test_15-global-constraints.py', 'test_loader.py', 'mock_features.py', 'tox.ini']",['736b13f555f5f9d852401992bfeaba148d4b7d72'],33,386,419,13,0.8285714285714286,0.8428571428571429,0.7857142857142857
+af592d01b656b631296ef70c8558dd22db2ef34e,"fix: removes docstring ref to `default_value` argument.
+
+This argument was made obsolete a while ago and makes the client crash
+when used.",Thomas Heartman,thomas@getunleash.ai,Thomas Heartman,thomas@getunleash.ai,2022-06-27 10:55:18+02:00,-7200,2022-06-27 10:55:18+02:00,-7200,True,False,['__init__.py'],['38959f99c2a166cacd78ab904326c0cca63eb89c'],1,0,1,1,1.0,0.0,1.0
+ed9f3eed8db48e4e79caeea664a6c6bd3f33b259,"meta: add stale bot config (reference unleash/.github)
+
+This change adds a stale bot configuration with a reference to the [org-wide Unleash configuration](https://github.com/Unleash/.github/blob/main/.github/stale.yml).
+
+## About the change
+
+We're adding stale bot as a way to help us manage issues that don't see any activity. When that happens, it's usually because we don't have further resources to work on something or because we're missing information. These issues often go forgotten and end up lying around open. This is an attempt to get around that.
+
+The config file contains the details for how long the bot waits before touching an issue and then how much longer before it closes it if no further activity occurs. (Currently set to 30 and 10 days respectively.)
+
+## Keeping issues open
+
+If there are long-standing issues that should _not_ be closed or marked as stale, you can label it with one of the `exemptLabels` in the stale config file (for instance: `pinned`). That'll keep stale bot from touching the issue at all.
+
+## For maintainers
+
+We know there are differing views on whether stale bots are healthy or not, and we would not want to impose a bot on a repo that we do not control. So if you're not sure this is a good idea (or if you're sure that it _isn't_), let us know, and we'll have a discussion. If we come to the conclusion that it's not the right decision (for whatever reason), then we're happy to leave the bot out.
+
+Further, if you're happy to accept the stale bot, but don't like the org-wide configuration, then we can also override parts or all of the config to make it fit better with this repo.",Thomas Heartman,thomas@getunleash.ai,Thomas Heartman,thomas@getunleash.ai,2022-07-05 09:51:52+02:00,-7200,2022-07-05 09:51:52+02:00,-7200,True,False,['stale.yml'],['af592d01b656b631296ef70c8558dd22db2ef34e'],0,1,1,1,,,
+c47f071d01ee67161b984ace600660b3ccdc2809,"Add retries to get features (#218)
+
+* Add retries to get features
+
+Create session and provide it with a custom HTTPAdapter, that has max_retries set.
+
+Related issue: https://github.com/Unleash/unleash-client-python/issues/217
+
+* Fix Retry type
+
+* Fix import, use urllib3.Retry instead of Sonarype suggestion",Jan-Hendrik Boll,jboll@redhat.com,GitHub,noreply@github.com,2022-09-01 13:45:30+02:00,-7200,2022-09-01 07:45:30-04:00,14400,True,False,"['features.py', 'constants.py', 'test_feature.py']",['615ca5b439563bca6fb181980fbed6a88d0ca28b'],12,40,52,3,0.7647058823529411,0.7647058823529411,0.7647058823529411
+1861dd9ced7bf1d4c45eab949d5250280b9883e7,"Small fixes and v5.3.0 prep (#219)
+
+* Add request timeout to cache bootstrap from URL.
+
+* Only send Slack messages if not a fork (so CI doesn't fail for contributers).
+
+* Update README.md.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-09-01 08:22:30-04:00,14400,2022-09-01 08:22:30-04:00,14400,True,False,"['pull_request.yml', 'CHANGELOG.md', 'cache.py']",['c47f071d01ee67161b984ace600660b3ccdc2809'],3,8,11,3,,,
+0fcfb6fee3e4ed285e7e167f399746ef892a2bf3,"Remove old bootstrapped parameter from the documentation (#222)
+
+Fixes #220",Maarten Derickx,maarten.derickx@navara.nl,GitHub,noreply@github.com,2022-09-28 14:03:28+02:00,-7200,2022-09-28 08:03:28-04:00,14400,True,False,"['__init__.py', 'cache.py']",['1861dd9ced7bf1d4c45eab949d5250280b9883e7'],3,1,4,2,,,
+efdaa6586def08451f07d4ed6fe92b5f7287b1f6,"Allow customization of  APScheduler (#223)
+
+* Remove deceptive boostrap argument.
+
+* Allow customization of the APS scheduler.
+
+* Go home VScode you're drunk.
+
+* Allow customization of the APS scheduler.
+
+* Go home VScode you're drunk.
+
+* Remove some exploratory code.
+
+* Test with lowewr interval, possibly change for the future.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-09-29 05:06:34-04:00,14400,2022-09-29 05:06:34-04:00,14400,True,False,"['__init__.py', 'pyproject.toml', 'test_client.py']",['0fcfb6fee3e4ed285e7e167f399746ef892a2bf3'],8,81,89,3,0.0,0.6,0.6444444444444445
+16b5d08e191bb78bbb3beedf21bd3f3fc20c1fb7,Update changelog for v5.4.0 (#224),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-09-29 05:26:29-04:00,14400,2022-09-29 05:26:29-04:00,14400,True,False,['CHANGELOG.md'],['efdaa6586def08451f07d4ed6fe92b5f7287b1f6'],0,4,4,1,,,
+686307613afb1f9129d6510e1d750fb21ee8b2a8,Try (again) to not send Slack messages on forks. (#225),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2022-09-29 05:46:26-04:00,14400,2022-09-29 05:46:26-04:00,14400,True,False,['pull_request.yml'],['16b5d08e191bb78bbb3beedf21bd3f3fc20c1fb7'],1,1,2,1,,,
+9aa528a78fe54df8efee0c4d929537693dccac28,"Client Spec Test Rewrite (#226)
+
+* Rewrites the client specification tests to consume the actual project, rather use custom implementations of those tests
+
+* fix: resolve an issue where the global context properties would override the environment in the token
+
+* fix and issue where stickiness calculations would fail if the required property was on the context properties object
+
+* fix an issue where advanced constraints would fail on floats
+
+* fix an issue where dates and timezones would be incorrectly handled for constraints
+
+* add special case handling for NOT_IN operators to match client spec
+
+* allow date constraints to operate on either a datetime object or a iso string",Simon Hornby,liquidwicked64@gmail.com,GitHub,noreply@github.com,2022-11-15 09:36:04+02:00,-7200,2022-11-15 09:36:04+02:00,-7200,True,False,"['pull_request.yml', '.gitignore', 'Makefile', '__init__.py', 'constants.py', 'Constraint.py', 'FlexibleRolloutStrategy.py', 'utils.py', 'Variants.py', 'development.rst', 'get-spec.sh', 'test_01_simple_examples.py', 'test_02_user_with_id_strategy.py', 'test_03_gradual_rollout_user_id_strategy.py', 'test_04_gradual_rollout_session_id_strategy.py', 'test_05_gradual_rollout_random_strategy.py', 'test_06_remote_address_strategy.py', 'test_07_multiple_strategies.py', 'test_08_variants.py', 'test_09_strategy_constraints.py', 'test_10_flexible_rollout.py', 'test_11_strategy_constraints_edge_cases.py', 'test_12_custom_stickiness.py', 'test_13_constraint_operators.py', 'test_14_constraint_semver_operators.py', 'test_15-global-constraints.py', 'test_client_specs.py', 'test_constraints.py', 'tox.ini']",['686307613afb1f9129d6510e1d750fb21ee8b2a8'],4329,141,4470,29,0.2189841798501249,0.0,0.0
+7b47394995bd4e4731ae776f0b6de6e86e5e4bd9,"move to mmhash3 library (#229)
+
+move to updated fork of murmurhash library",Simon Hornby,liquidwicked64@gmail.com,GitHub,noreply@github.com,2022-11-29 14:35:03+02:00,-7200,2022-11-29 14:35:03+02:00,-7200,True,False,"['requirements.txt', 'setup.py']",['9aa528a78fe54df8efee0c4d929537693dccac28'],2,2,4,2,,,
+d37ec32a436f62cc1e12c329418c225ce1a65c68,Update changelog for v5.4.1 (#230),Simon Hornby,liquidwicked64@gmail.com,GitHub,noreply@github.com,2022-11-29 16:14:27+02:00,-7200,2022-11-29 16:14:27+02:00,-7200,True,False,['CHANGELOG.md'],['7b47394995bd4e4731ae776f0b6de6e86e5e4bd9'],6,13,19,1,,,
+5366468608aa66a6a70e144042ef7f1b574b8759,"Feat/block multiple constructions (#231)
+
+* feat: warn when multiple SDKs are instantiated and allow consumer to either opt in or opt out of multiple instances
+
+* fix: tox got updated and broke the build",Simon Hornby,liquidwicked64@gmail.com,GitHub,noreply@github.com,2023-01-05 14:21:56+02:00,-7200,2023-01-05 14:21:56+02:00,-7200,True,False,"['__init__.py', 'utils.py', 'test_client.py', 'tox.ini']",['d37ec32a436f62cc1e12c329418c225ce1a65c68'],4,97,101,4,0.9642857142857143,0.9642857142857143,0.9642857142857143
+61c8c5a27c59284ff7bcc6a9e9afc5e57b7366d7,"Docs/update readme (#232)
+
+* docs: update code block casing
+
+Using `Python` (upper-case ""p"") instead of `python` breaks docusaurus'
+Prism implementation. So to make the integration with the docs more
+appealing, I'm lowercasing the language blocks.
+
+* docs: merge with sdk documentation from docs.getunleash.io
+
+This change merges the readme with the docs that currently exist at
+docs.getunleash.io to prep the readme for inclusion
+
+* docs: add bash language annotation
+
+* docs: remove leftover code block title",Thomas Heartman,thomas@getunleash.ai,GitHub,noreply@github.com,2023-01-12 14:16:30+01:00,-3600,2023-01-12 14:16:30+01:00,-3600,True,False,['README.md'],['5366468608aa66a6a70e144042ef7f1b574b8759'],12,19,31,1,,,
+6703bf8cfb8ca00e88a02db5e79124bd03424256,chore: disable a few new pylint warnings for code that's been around for a while (#236),Simon Hornby,liquidwicked64@gmail.com,GitHub,noreply@github.com,2023-02-23 12:56:36+02:00,-7200,2023-02-23 12:56:36+02:00,-7200,True,False,"['__init__.py', 'features.py']",['61c8c5a27c59284ff7bcc6a9e9afc5e57b7366d7'],0,3,3,2,,,
+8e2db3218d2438ef20410e3db25d27c16e7b7455,fix: Account for inversion in NOT_IN operator where context_value is None (#235),Bharat Kunwar,brtknr@bath.edu,GitHub,noreply@github.com,2023-02-24 08:42:24+00:00,0,2023-02-24 10:42:24+02:00,-7200,True,False,"['Constraint.py', 'test_constraints.py', 'mock_constraints.py']",['6703bf8cfb8ca00e88a02db5e79124bd03424256'],2,24,26,3,1.0,1.0,1.0
+8172750c034610cd97056a73c4b107897e373bc3,"feat: Extend Feature object with new attributes (#237)
+
+* Add in impression data property from Unleash server response",Aleksandr Omyshev,a.omyshev@gmail.com,GitHub,noreply@github.com,2023-03-01 10:33:47+02:00,-7200,2023-03-01 10:33:47+02:00,-7200,True,False,"['Feature.py', 'loader.py', 'test_features.py', 'test_loader.py', 'mock_all_features.py', 'mock_bootstrap.json', 'mock_custom_strategy.py', 'mock_features.py']",['8e2db3218d2438ef20410e3db25d27c16e7b7455'],352,384,736,8,0.125,0.75,0.25
+5bbdc6cda19d8d6b73552148f29e707d3d23b5cc,Pin apscheduler to < 4.0.0. (#241),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2023-03-20 04:05:39-04:00,14400,2023-03-20 04:05:39-04:00,14400,True,False,['setup.py'],['8172750c034610cd97056a73c4b107897e373bc3'],1,1,2,1,,,
+1fcedbfe83b3fe44479a7023f62289ea7f0b6192,"Impression events for ucp (#243)
+
+* Finish implementing event callback, linting.
+
+* Add initial devcontainer config.
+
+* Fix linting.
+
+* Some more tweaks.
+
+* Support Python 3.11 and remove Slack notifications.
+
+* Add simple poc tests for event callbacks.
+
+* Fix linting.
+
+* Update documents.
+
+* Add Python 3.11 support to classifiers.
+
+* Update .devcontainer/devcontainer.json
+
+Co-authored-by: Simon Hornby <liquidwicked64@gmail.com>
+
+---------
+
+Co-authored-by: Simon Hornby <liquidwicked64@gmail.com>",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2023-04-06 19:14:46-04:00,14400,2023-04-06 19:14:46-04:00,14400,True,False,"['Dockerfile', 'devcontainer.json', 'post_install.sh', 'pull_request.yml', '__init__.py', 'features.py', 'events.py', 'development.rst', 'events.rst', 'index.rst', 'strategy.rst', 'requirements.txt', 'setup.py', 'test_client.py', 'mock_features.py', 'tox.ini']",['5bbdc6cda19d8d6b73552148f29e707d3d23b5cc'],31,222,253,16,0.18181818181818182,0.0,0.5
+10180688ac213a360ff02c1972443030f05496c2,Update documentation and clean up some old dependencies. (#244),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2023-04-07 03:55:52-04:00,14400,2023-04-07 03:55:52-04:00,14400,True,False,"['CHANGELOG.md', 'cache.py', 'events.py', 'conf.py', 'customcache.rst', 'eventcallbacks.rst', 'events.rst', 'index.rst', 'requirements.txt']",['1fcedbfe83b3fe44479a7023f62289ea7f0b6192'],6,59,65,9,,,
+699ca31087e37405e9c6e3f902ae674d3adf1848,"Add black, ruff, and isort to development toolchain. (#245)
+
+* Add black, ruff, and isort to development toolchain.
+
+* Fix formatting.
+
+* Simplify CI pipeline to use make.
+
+* Fix order?
+
+* Fix syntax for Makefile.
+
+* Add some missing optional type hints.
+
+* Add pre-commit config.
+
+* Fix linting.
+
+* Add .lift.toml.
+
+* Some small formatting tweaks.
+
+* Some tweaks for devx.
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* Tweaks to allow signed commits.
+
+* Fix lintiing on docs.
+
+---------
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2023-04-14 19:28:09-04:00,14400,2023-04-14 19:28:09-04:00,14400,True,False,"['Dockerfile', 'devcontainer.json', 'post_install.sh', '.flake8', 'PULL_REQUEST_TEMPLATE.md', 'pull_request.yml', 'release-docs.yml', 'release-package.yml', '.gitignore', '.lift.toml', '.pre-commit-config.yaml', 'LICENSE.md', 'Makefile', '__init__.py', '__init__.py', 'features.py', 'metrics.py', 'register.py', 'cache.py', 'constants.py', 'Constraint.py', '__init__.py', 'deprecation_warnings.py', 'events.py', 'Feature.py', '__init__.py', 'loader.py', '__init__.py', 'fetch_and_load.py', 'send_metrics.py', 'ApplicationHostname.py', 'FlexibleRolloutStrategy.py', 'GradualRolloutRandom.py', 'GradualRolloutSessionId.py', 'GradualRolloutUserId.py', 'RemoteAddress.py', 'Strategy.py', 'UserWithId.py', '__init__.py', 'utils.py', 'Variants.py', '__init__.py', 'basecache.rst', 'changelog.rst', 'conf.py', 'development.rst', 'eventcallbacks.rst', 'filecache.rst', 'unleashclient.rst', 'get-spec.sh', 'pyproject.toml', 'requirements.txt', 'setup.py', 'conftest.py', 'integration.py', 'integration_gitlab.py', 'integration_unleashheroku.py', 'integration_unleashhosted.py', 'test_client_specs.py', 'test_feature.py', 'test_metrics.py', 'test_register.py', 'test_aggregate_and_send_metrics.py', 'test_fetch_and_load.py', 'test_applicationhostname.py', 'test_defaultstrategy.py', 'test_flexiblerollout.py', 'test_gradualrolloutrandom.py', 'test_gradualrolloutwithsessionid.py', 'test_gradualrolloutwithuserid.py', 'test_remoteaddress.py', 'test_userwithids.py', 'test_client.py', 'test_constraints.py', 'test_custom_strategy.py', 'test_features.py', 'test_loader.py', 'test_variants.py', '__init__.py', 'data_generator.py', '__init__.py', 'mock_all_features.py', 'mock_bootstrap.json', 'mock_constraints.py', 'mock_custom_strategy.py', 'mock_features.py', 'mock_metrics.py', 'mock_variants.py', 'StrategyV2.py', 'testing_constants.py', 'tox.ini']",['10180688ac213a360ff02c1972443030f05496c2'],1434,1788,3222,91,0.0,0.5775,0.6975
+ec7558077b5364013e374910408a0835c28b6fe1,"More cleanup & modernization (#247)
+
+* Remove un-needed flake8 config.
+
+* Reorganize .gitignore.
+
+* Update changelog.
+
+* Reorg requirements, add script folder.
+
+* Fix tox.
+
+* Test switch to pyproject.toml.
+
+* Doc dev improvements, add pylint back for vscode, pyenv based devcontainer.",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2023-04-17 04:13:18-04:00,14400,2023-04-17 04:13:18-04:00,14400,True,False,"['Dockerfile', 'devcontainer.json', 'post_install.sh', '.flake8', 'release-package.yml', '.gitignore', 'CHANGELOG.md', 'Makefile', 'metrics.py', 'eventcallbacks.rst', 'pyproject.toml', 'requirements.txt', 'get-spec.sh', 'setup.py', 'tox.ini']",['699ca31087e37405e9c6e3f902ae674d3adf1848'],92,138,230,15,0.0,0.0,0.0
+9c4831b85940d407d3c73d15671211e46c958f24,[Hotfix]: Fix doc build.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2023-04-17 08:20:01+00:00,0,2023-04-17 08:20:01+00:00,0,True,False,['release-docs.yml'],['ec7558077b5364013e374910408a0835c28b6fe1'],4,1,5,1,,,
+88cf488df9b15600c0a99d552629e5e6a1dafcb0,"feat: add variant metrics (#253)
+
+## Description
+
+This change adds most variant metrics functionality to the Python SDK.
+Variant metrics should be counted whenever get_variant is called:
+
+- if a feature doesn't have variants, register the disabled variant
+- if a feature is disabled, register the disabled variant
+- otherwise, register the variant that was returned
+
+There is one piece of functionality that isn't included in this PR:
+
+- if a feature doesn't exist, it should still register the disabled variant.
+
+As far as I can tell, this SDK doesn't count metrics for toggles that don't exist, so there was no obvious way to add variant metrics for these features. Both of those cases will be implemented in a follow-up PR.
+
+## Discussion points
+
+### Serialization of emtpy dicts
+
+When serializing metrics, I have done the simple thing and added the variant counts dict, regardless of whether it is empty or not. It might be preferable to not include that key at all if the feature doesn't have any variant metrics. I'd be happy to implement that if we think that's better.
+
+### Tests
+
+I extended the `test_aggregate_and_send_metrics` test with variant data instead of adding a new test. Because variant metrics now are a part of metrics, that felt reasonable. However, we can create a separate test if that's preferable.
+
+### Counting variants on the feature level
+
+The variant counting is currently handled on the feature (`Feature` class) level instead of on the variant (`Variant` class) level.
+This was done for a few reasons:
+- most importantly: we want to count stats for the disabled variant. Because the disabled variant isn't added as part of the `Feature`'s variants, we'd have to count this separately if we placed counts on the `Variant` level.
+- `yes_count` and `no_count` are already tracked on the feature, so it felt natural to count variants there too
+- it simplifies serialization and the `reset_stats` method
+
+### Casting `DISABLED_VARIANT[""name""]`
+
+Described in the [inline comment](https://github.com/Unleash/unleash-client-python/pull/253#discussion_r1205484173):
+
+
+
+This cast appears to be the only way to get the linter to accept that we get a string here. As far as I can tell, ""name"" should always exist and will always be a string. However, the disabled variant isn't typed in any particular way, so it just shows up as a Dict[str, object].
+
+I'd rather avoid this cast if I can, but I don't know if it's possible without re-architecting significant portions of the code and introducing breaking changes. Input would be much appreciated.
+
+
+
+## Type of change
+
+Please delete options that are not relevant.
+
+- [X] New feature (non-breaking change which adds functionality)
+
+# How Has This Been Tested?
+
+Please describe the tests that you ran to verify your changes.
+
+- [X] Unit tests
+- [ ] Spec Tests
+- [ ] Integration tests / Manual Tests
+
+# Checklist:
+
+- [X] My code follows the style guidelines of this project
+- [X] I have performed a self-review of my own code
+- [X] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [X] My changes generate no new warnings
+- [X] I have added tests that prove my fix is effective or that my feature works
+- [X] New and existing unit tests pass locally with my changes (the ETAG test is failing, but it fails on main too)
+- [ ] Any dependent changes have been merged and published in downstream modules (I don't think there are any downstream modules?)
+
+
+## Commits
+
+* Tests: add tests for some variant metrics scenarios
+
+* Chore: make black happy
+
+* tests: fix test logic
+
+* feat: count variants
+
+* feat: reset variant count stats
+
+* Tests: fix
+
+* feat: count variants
+
+* Test: ensure variants are reset on reset_stats
+
+* Tests: make tests test the correct thing
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* Test: ensure that variant data is sent correctly
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* feat: add type annotation to variant counts dict
+
+* feat: import Dict typing
+
+* feat: describe param
+
+* Chore: cast str
+
+* Chore: remove comment
+
+* Update tests/unit_tests/test_features.py
+
+Co-authored-by: Simon Hornby <liquidwicked64@gmail.com>
+
+* fix: prefix `_count_variant` with an underscore to ""hide"" the method
+
+---------
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Co-authored-by: Simon Hornby <liquidwicked64@gmail.com>",Thomas Heartman,thomas@getunleash.ai,GitHub,noreply@github.com,2023-06-05 11:39:46+02:00,-7200,2023-06-05 11:39:46+02:00,-7200,True,False,"['Feature.py', 'send_metrics.py', 'test_aggregate_and_send_metrics.py', 'test_features.py']",['9c4831b85940d407d3c73d15671211e46c958f24'],2,59,61,4,0.6511627906976745,1.0,0.9534883720930233
+5f877debd0add1217bdfdfe6645eaa8d7fdeece0,docs(UnleashClient): add disable_registration docstrings (#251),Lujeni,account@thebault.co,GitHub,noreply@github.com,2023-06-07 09:45:24+02:00,-7200,2023-06-07 09:45:24+02:00,-7200,True,False,['__init__.py'],['88cf488df9b15600c0a99d552629e5e6a1dafcb0'],1,2,3,1,,,
+97f59cd14c12bb1daa6e57d08694ac7edf9567fe,docs(cache): fix typo in docstrings (#252),Lujeni,account@thebault.co,GitHub,noreply@github.com,2023-06-07 09:45:40+02:00,-7200,2023-06-07 09:45:40+02:00,-7200,True,False,['cache.py'],['5f877debd0add1217bdfdfe6645eaa8d7fdeece0'],1,1,2,1,,,
+52be459f64beb6655fdb1e41f6b6d0a1b9093dcd,"test: skip failing test (#258)
+
+# Description
+
+This PR skips the test that's currently failing until July 1st. We suspect the reason it's failing is because of a dependency and/or something in the scaffolding. It suddenly started failing a few weeks ago. We have spent some hours looking into what's wrong, but haven't been able to fix it just yet.
+
+Please delete options that are not relevant.
+
+## Commits 
+
+* tests: skip failing tests
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* tests: skip test until July
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+---------
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",Thomas Heartman,thomas@getunleash.ai,GitHub,noreply@github.com,2023-06-07 10:22:12+02:00,-7200,2023-06-07 08:22:12+00:00,0,True,False,['test_feature.py'],['97f59cd14c12bb1daa6e57d08694ac7edf9567fe'],0,7,7,1,,,
+d2a193c0b2b66e6d8695ad685ac197fcfa4b2af9,"chore: remove duplicated test (#257)
+
+This test appears to be the **exact same** as the one right above
+it (`test_uc_server_error`): copying one into the other triggers no
+changes from git.
+
+Unless I'm missing something, I suggest we remove it because it's both
+confusing to have two identical tests, and because it takes 20 seconds
+to sleep.",Thomas Heartman,thomas@getunleash.ai,GitHub,noreply@github.com,2023-06-07 10:48:33+02:00,-7200,2023-06-07 08:48:33+00:00,0,True,False,['test_client.py'],['52be459f64beb6655fdb1e41f6b6d0a1b9093dcd'],21,0,21,1,0.0,0.0,0.0
+0805c6b39836dfe995e141e948efab9ddbcbb59e,"Count metrics for non-existing features (#256)
+
+## Description
+
+This PR is the follow-up to #253 and makes the client track metrics for features that don't exist.
+
+It achieves this by modifying the Unleash client's `is_enabled` and `get_variant` methods:
+Whenever they are called with a feature that doesn't exist, we create a new feature with that name, `enabled = False`, no strategies, and no variants. The feature gets added to the clients list of features, and is then queried for its state (to track metrics; we know it'll be false).
+
+The tests ensure that metrics are sent for these nonexistent features, but does not care about the implementation, so we should be able to change that as much as we want later.
+
+### Discussion point
+
+I've been back and forth a couple of times regarding how best to track these features. Because the `send_metrics` function already takes care of everything related to sending and resetting metrics, it'd be nice to leave that as it is. As such, it'd be nice to track nonexistent features as part of the regular list of features. 
+
+The current implementation uses a boolean field to indicate whether a feature exists only to track metrics or whether it should be evaluated properly. I considered using a subclass to tell them apart instead, but because the loader (`loader.py`) simply **updates** the objects instead of replacing them wholesale (probably to preserve metrics), then that caused some problems.
+
+## Commits
+
+* Test: add initial tests for new metrics behavior
+
+* test: make tests run properly
+
+* Feat: register metrics for features that don't exist
+
+* Chore: run black
+
+* Test: check that metrics are tracked before initialization too
+
+* Test: remove test that didn't make sense
+
+* feat: use a `only_for_metrics` field for metrics-only toggles
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+---------
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",Thomas Heartman,thomas@getunleash.ai,GitHub,noreply@github.com,2023-06-07 11:08:42+02:00,-7200,2023-06-07 09:08:42+00:00,0,True,False,"['__init__.py', 'Feature.py', 'loader.py', 'test_client.py']",['d2a193c0b2b66e6d8695ad685ac197fcfa4b2af9'],2,81,83,4,0.725,0.75,0.725
+46b93b7b726297deb3b07e009799afb4be310c89,"Fix warning scheduler_executor without scheduler (#249)
+
+* Fix warning scheduler_executor without scheduler",Nikolay Hubanov,nikolay.hubanov@gmail.com,GitHub,noreply@github.com,2023-06-26 16:57:21+03:00,-10800,2023-06-26 15:57:21+02:00,-7200,True,False,"['__init__.py', 'test_client.py']",['0805c6b39836dfe995e141e948efab9ddbcbb59e'],3,3,6,2,,,
+4a4fafb352a998097235925f60ae5b2266d6c610,HOTFIX: Fix release.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2023-06-30 11:50:42+00:00,0,2023-06-30 11:50:42+00:00,0,True,False,['release-package.yml'],['9c4831b85940d407d3c73d15671211e46c958f24'],3,0,3,1,,,
+6e9f6e853cb4ec4f4f98dd20681706cc5dfbc012,"[pre-commit.ci] pre-commit autoupdate (#248)
+
+updates:
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.260 → v0.0.275](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.260...v0.0.275)
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-30 07:58:57-04:00,14400,2023-06-30 07:58:57-04:00,14400,True,False,['.pre-commit-config.yaml'],['a6f41231afde0874a6aa75df6e28861807654af2'],1,1,2,1,,,
+15c9000fc1d609c7966f89c210e050a9017269ed,HOTFIX: Fix dependencies for new package install.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2023-06-30 11:58:38-04:00,14400,2023-06-30 12:00:04-04:00,14400,True,False,['pyproject.toml'],['6e9f6e853cb4ec4f4f98dd20681706cc5dfbc012'],0,10,10,1,,,
+0e7b894851c5a9bec69e9926fcc07a87250fb958,"feat: strategy variants (#265)
+
+* feat: strategy variants
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* fix linter
+
+* add unit tests
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* add unit tests
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* lint
+
+* cleanup
+
+* cleanup
+
+* cleanup
+
+* cleanup
+
+* fix linter complaints
+
+* fix linter complaints
+
+* fix linter complaints
+
+* fix logic
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* formatting
+
+* improvements
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* bug fixes
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* remove constraint noise from test
+
+* fix tests
+
+* fix tests
+
+* fix ruff complaining
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* fix PR comments
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+---------
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",andreas-unleash,andreas@getunleash.ai,GitHub,noreply@github.com,2023-08-03 11:56:36+03:00,-10800,2023-08-03 11:56:36+03:00,-10800,True,False,"['__init__.py', 'constants.py', 'Constraint.py', 'deprecation_warnings.py', 'Feature.py', 'loader.py', 'RemoteAddress.py', 'Strategy.py', '__init__.py', 'Variants.py', 'test_client_specs.py', 'test_feature.py', 'test_strategy_variants.py', 'test_client.py', 'test_features.py']",['15c9000fc1d609c7966f89c210e050a9017269ed'],67,221,288,15,0.9797979797979798,0.5555555555555556,0.797979797979798
+528e1f7f7889461e30d52502dc37746c31925f8e,[pre-commit.ci] pre-commit autoupdate (#263),pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-08 02:12:03+00:00,0,2023-08-08 02:12:03+00:00,0,True,False,['.pre-commit-config.yaml'],['0e7b894851c5a9bec69e9926fcc07a87250fb958'],3,3,6,1,,,
+7865daea0b40000b22433dfbfacd72f01badf687,"fix: small patch to make linter happy on main (#271)
+
+* fix: small patch to improve lints
+
+* chore: bump test ignore dates",Simon Hornby,liquidwicked64@gmail.com,GitHub,noreply@github.com,2023-09-06 08:50:33+02:00,-7200,2023-09-06 08:50:33+02:00,-7200,True,False,"['test_feature.py', 'test_features.py']",['528e1f7f7889461e30d52502dc37746c31925f8e'],2,2,4,2,,,
+3645ecb3101224fcec411a0f3079ca80ec8fa1c9,"Fix issue with Python sphinx installation (#272)
+
+* Low-effort attempts to fix Windows builds.
+
+* It's early.
+
+* Test w/out sphinx.
+
+* Move sphinx installation to different file & target.
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+---------
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2023-09-11 04:47:37-04:00,14400,2023-09-11 04:47:37-04:00,14400,True,False,"['pull_request.yml', 'release-docs.yml', 'Makefile', 'requirements-docs.txt', 'requirements.txt']",['7865daea0b40000b22433dfbfacd72f01badf687'],12,15,27,5,,,
+df5e0de110d03fc68a46840fe1cb584a6892be1b,feat: add request timeout and request retries parameters and override… (#270),Salar Nosrati-Ershad,snosratiershad@gmail.com,GitHub,noreply@github.com,2023-09-12 11:13:13+03:30,-12600,2023-09-12 09:43:13+02:00,-7200,True,False,"['features.py', 'metrics.py', 'register.py', 'cache.py']",['3645ecb3101224fcec411a0f3079ca80ec8fa1c9'],10,25,35,4,0.4,0.8666666666666667,0.0
+7a3b6d3b002e7368d11f4573b3b64fd286c03e24,fix: make check_date_operators work with dateutil < 2.8.1 (#273),Salar Nosrati-Ershad,snosratiershad@gmail.com,GitHub,noreply@github.com,2023-09-18 11:48:00+03:30,-12600,2023-09-18 10:18:00+02:00,-7200,True,False,['Constraint.py'],['df5e0de110d03fc68a46840fe1cb584a6892be1b'],3,12,15,1,0.0,0.0,1.0
+32d2f7346c755560d5facda7d3c580784108413e,fix: update response mock for etag test (#277),yjabri,yjabri@gmail.com,GitHub,noreply@github.com,2023-10-20 01:21:08-07:00,25200,2023-10-20 10:21:08+02:00,-7200,True,False,['test_feature.py'],['7a3b6d3b002e7368d11f4573b3b64fd286c03e24'],10,1,11,1,1.0,0.0,0.0
+b1d5b70773855163806d1fe6f62290b414fdda6d,bug: fix broken link (#279),Jaanus Sellin,sellinjaanus@gmail.com,GitHub,noreply@github.com,2023-10-23 13:06:22+03:00,-10800,2023-10-23 13:06:22+03:00,-10800,True,False,['README.md'],['32d2f7346c755560d5facda7d3c580784108413e'],1,1,2,1,,,
+5133699f3ff2fa31da032f6c0cc88543d2404638,"Dependent features (#274)
+
+* update specs
+
+* add dependencies to feature
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* delay failing test issue
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* feat: feature dependencies
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* test feature dependencies
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* add more dependency test cases
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* refactor: dependency test from bootstrapping
+
+* fix: feature dependencies arguments
+
+* fix: don't send metrics for parent features
+
+---------
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",Tymoteusz Czech,2625371+Tymek@users.noreply.github.com,GitHub,noreply@github.com,2023-10-24 13:32:11+02:00,-7200,2023-10-24 13:32:11+02:00,-7200,True,False,"['__init__.py', 'constants.py', 'Feature.py', 'loader.py', 'test_client.py', 'test_features.py', 'mock_features.py']",['b1d5b70773855163806d1fe6f62290b414fdda6d'],9,245,254,7,0.45794392523364486,0.6635514018691588,0.037383177570093455
+971a0b01f62088c419a59ffb17e284c7eb49231a,Add support for semver 3 while maintaining backwards compatability with semver 2 (#280),Chaitanya Parsana,chaitanya.parsana@cbsinteractive.com,GitHub,noreply@github.com,2023-10-28 04:19:04-07:00,25200,2023-10-28 07:19:04-04:00,14400,True,False,"['Constraint.py', 'pyproject.toml']",['5133699f3ff2fa31da032f6c0cc88543d2404638'],6,11,17,2,,,
+2e120b6b561c8f7e8d671064eae735e4bd813103,Update CHANGELOG. (#281),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2023-10-28 07:56:24-04:00,14400,2023-10-28 07:56:24-04:00,14400,True,False,['CHANGELOG.md'],['971a0b01f62088c419a59ffb17e284c7eb49231a'],1,21,22,1,,,
+8e981b3d9b3e85b8954435adcd40a9f2fd18f56d,HOTFIX: Fix document release on package publish.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2023-10-28 08:17:27-04:00,14400,2023-10-28 08:19:11-04:00,14400,True,False,"['pull_request.yml', 'release-package.yml']",['2e120b6b561c8f7e8d671064eae735e4bd813103'],5,6,11,2,,,
+4285bb5872c4d1cc6891a800642f92bd4d5e9674,Some final docs cleanup.,Ivan Lee,ivanklee86@gmail.com,Ivan Lee,ivanklee86@gmail.com,2023-10-28 08:19:40-04:00,14400,2023-10-28 08:19:40-04:00,14400,True,False,['release-docs.yml'],['8e981b3d9b3e85b8954435adcd40a9f2fd18f56d'],4,4,8,1,,,
+1ef714c128c68d4fd18baa8606160de54959fcd8,fix: variants will now distribute correctly when used with a gradual rollout strategy (#282),Simon Hornby,liquidwicked64@gmail.com,GitHub,noreply@github.com,2023-10-30 14:17:38+01:00,-3600,2023-10-30 15:17:38+02:00,-7200,True,False,"['constants.py', 'utils.py', 'Variants.py', 'test_strategy_variants.py', 'test_features.py', 'test_variants.py']",['4285bb5872c4d1cc6891a800642f92bd4d5e9674'],11,18,29,6,0.8,0.8,0.0
+2ddb217b0e417e11212abf00e09b48a4fb9a4438,Documentation updates. (#283),Ivan Lee,ivanklee86@gmail.com,GitHub,noreply@github.com,2023-10-31 06:05:31-04:00,14400,2023-10-31 06:05:31-04:00,14400,True,False,['CHANGELOG.md'],['1ef714c128c68d4fd18baa8606160de54959fcd8'],2,5,7,1,,,
+eef68c823639460fc3f9df5d32813ac1e727a3c0,"feat: add is_feature_enabled to variant response (#285)
+
+* feat: add is_feature_enabled to variant response
+
+* style: linting
+
+* Update UnleashClient/features/Feature.py
+
+Co-authored-by: Simon Hornby <liquidwicked64@gmail.com>
+
+* Update UnleashClient/features/Feature.py
+
+Co-authored-by: Simon Hornby <liquidwicked64@gmail.com>
+
+* refactor: rename is_feature_enabled to feature_enabled
+
+* refactor: favor dict comprehension over copy
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* test: favor mock bootstrap over mock API
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+---------
+
+Co-authored-by: Simon Hornby <liquidwicked64@gmail.com>
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",Nuno Góis,github@nunogois.com,GitHub,noreply@github.com,2023-11-07 11:26:21+00:00,0,2023-11-07 11:26:21+00:00,0,True,False,"['constants.py', 'Feature.py', 'Variants.py', 'test_client_specs.py', 'test_client.py', 'test_features.py', 'mock_features.py']",['2ddb217b0e417e11212abf00e09b48a4fb9a4438'],9,86,95,7,0.24444444444444444,1.0,1.0
+0cc36b0ccf20857b9681058d0bb44c5f7847a0bd,chore: bump client spec (#286),Nuno Góis,github@nunogois.com,GitHub,noreply@github.com,2023-11-08 15:36:59+00:00,0,2023-11-08 15:36:59+00:00,0,True,False,"['constants.py', 'test_client_specs.py']",['eef68c823639460fc3f9df5d32813ac1e727a3c0'],6,2,8,2,1.0,0.0,0.0
+1181cf2373de4ea7443c2d904a1b3b16d8286d32,fix: typos in request timeout (#291),Mateusz Kwasniewski,kwasniewski.mateusz@gmail.com,GitHub,noreply@github.com,2023-11-23 10:31:11+01:00,-3600,2023-11-23 10:31:11+01:00,-3600,True,False,"['features.py', 'metrics.py', 'register.py']",['0cc36b0ccf20857b9681058d0bb44c5f7847a0bd'],6,6,12,3,,,
+aa25e1605cf945f25265e97267195ae91b3dee67,feat: configurable timeout and retries (#292),Mateusz Kwasniewski,kwasniewski.mateusz@gmail.com,GitHub,noreply@github.com,2023-11-24 14:41:57+01:00,-3600,2023-11-24 14:41:57+01:00,-3600,True,False,"['__init__.py', 'features.py', 'metrics.py', 'register.py', 'fetch_and_load.py', 'send_metrics.py', 'test_feature.py', 'test_metrics.py', 'test_register.py', 'test_aggregate_and_send_metrics.py', 'test_fetch_and_load.py', 'test_client.py', 'testing_constants.py']",['1181cf2373de4ea7443c2d904a1b3b16d8286d32'],16,108,124,13,0.0,0.8571428571428571,0.6571428571428571
+3aa9f8141ca992db955afadbd449beeaa3a9adb6,Add missing parenthesis (#293),Matt Petiteau,mpetiteau.pro@gmail.com,GitHub,noreply@github.com,2023-11-29 07:18:02+00:00,0,2023-11-29 09:18:02+02:00,-7200,True,False,['usage.rst'],['aa25e1605cf945f25265e97267195ae91b3dee67'],0,1,1,1,,,
+a0dfabdcf0e6656b8add42a7bba35b77f7c8391f,"Fix/double execution result (#294)
+
+The change in this pull request proposes to remove the double call to Strategy.execute().
+
+Co-authored-by: ClementDelgrange <clement.delgrange@hotmail.fr>
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",Fredrik Strand Oseberg,fredrik.no@gmail.com,GitHub,noreply@github.com,2023-11-29 12:57:46+01:00,-3600,2023-11-29 12:57:46+01:00,-3600,True,False,"['Feature.py', 'test_client.py']",['3aa9f8141ca992db955afadbd449beeaa3a9adb6'],6,29,35,2,0.0,1.0,1.0
+f4679aba884b602be0d7fbc36ff0288b422cb166,"docs: update readme (#295)
+
+Updates the README.md with steps to run the testing suite locally",Fredrik Strand Oseberg,fredrik.no@gmail.com,GitHub,noreply@github.com,2023-11-29 15:42:34+01:00,-3600,2023-11-29 15:42:34+01:00,-3600,True,False,['README.md'],['a0dfabdcf0e6656b8add42a7bba35b77f7c8391f'],0,68,68,1,,,
+2777e1f50b0f42d8400a74232c6555a8b56a497d,chore: update changelog.md,Fredrik Oseberg,fredrik.no@gmail.com,Fredrik Oseberg,fredrik.no@gmail.com,2023-11-29 16:17:38+01:00,-3600,2023-11-29 16:17:38+01:00,-3600,True,False,['CHANGELOG.md'],['f4679aba884b602be0d7fbc36ff0288b422cb166'],0,15,15,1,,,
+0c0dcab0cf4136e676789e6ad3fe0f56c2a04d8d,fix: remove trailing whitespace (#297),Fredrik Strand Oseberg,fredrik.no@gmail.com,GitHub,noreply@github.com,2023-11-30 09:55:35+01:00,-3600,2023-11-30 09:55:35+01:00,-3600,True,False,['CHANGELOG.md'],['2777e1f50b0f42d8400a74232c6555a8b56a497d'],2,2,4,1,,,

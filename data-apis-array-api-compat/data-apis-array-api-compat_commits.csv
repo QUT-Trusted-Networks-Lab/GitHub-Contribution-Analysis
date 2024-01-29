@@ -1,0 +1,507 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+2620ada078f54ef323baa18fdd9da6648f6d3960,Initial commit,Aaron Meurer,asmeurer@gmail.com,GitHub,noreply@github.com,2022-09-26 13:31:09-06:00,21600,2022-09-26 13:31:09-06:00,21600,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,152,152,3,,,
+a3216545ac3e6d2dabc44a364234e232c42d8873,Start compat library,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-09-26 16:15:44-06:00,21600,2022-09-26 16:15:44-06:00,21600,True,False,['__init__.py'],['2620ada078f54ef323baa18fdd9da6648f6d3960'],0,1,1,1,,,
+e272020916e41a8f75e9e1820ac3c4b76d0a58fe,"Add some basic aliases, and some basic documentation",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-09-26 16:28:08-06:00,21600,2022-09-26 16:28:08-06:00,21600,True,False,"['__init__.py', '_aliases.py']",['a3216545ac3e6d2dabc44a364234e232c42d8873'],0,43,43,2,,,
+75420e94a0517f231c3cbf82592169c91dfe572e,Add some text to the README,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-09-26 16:31:17-06:00,21600,2022-09-26 16:31:17-06:00,21600,True,False,['README.md'],['e272020916e41a8f75e9e1820ac3c4b76d0a58fe'],2,32,34,1,,,
+422910b532aac46c6db3d4b1693719caf019a65d,Add separate linalg.py file,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-09-26 16:33:08-06:00,21600,2022-09-26 16:33:08-06:00,21600,True,False,"['__init__.py', 'linalg.py']",['75420e94a0517f231c3cbf82592169c91dfe572e'],0,2,2,2,,,
+5e9b1b068587288ebb31443f15117538198c395b,Add matrix_norm and vector_norm,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-09-27 17:04:30-06:00,21600,2022-09-27 17:04:30-06:00,21600,True,False,"['__init__.py', 'linalg.py']",['422910b532aac46c6db3d4b1693719caf019a65d'],1,57,58,2,0.08695652173913043,0.08695652173913043,0.0
+0a3eafdf30f3f3f8d8c0aa171087192a1bbb026a,Add several functions which are only slightly modified from numpy,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-09-27 17:14:43-06:00,21600,2022-09-27 17:14:43-06:00,21600,True,False,"['_aliases.py', 'linalg.py']",['5e9b1b068587288ebb31443f15117538198c395b'],2,101,103,2,1.0,1.0,0.9166666666666666
+7661247be3a22484d5538ec94597dd6c8791d6de,Add several names to linalg that are not in np.linalg,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 16:06:02-06:00,21600,2022-10-05 16:06:02-06:00,21600,True,False,['linalg.py'],['0a3eafdf30f3f3f8d8c0aa171087192a1bbb026a'],1,6,7,1,,,
+3c224a5a6f43f4087f9cd52613c9c19a6a5adf52,"Add matrix_transpose, svdvals, and vecdot",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 18:45:29-06:00,21600,2022-10-05 18:45:29-06:00,21600,True,False,['linalg.py'],['7661247be3a22484d5538ec94597dd6c8791d6de'],2,29,31,1,1.0,1.0,0.35294117647058826
+1a053c9f98f2611cc29b1d34feb1ae33bb840c5b,"Fix definition of abs, max, min, and round",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 18:45:52-06:00,21600,2022-10-05 18:45:52-06:00,21600,True,False,['__init__.py'],['3c224a5a6f43f4087f9cd52613c9c19a6a5adf52'],0,3,3,1,,,
+0686979b7ccb537f3be06920b7d54dc3fb00cfd1,Add matrix_transpose and vecdot to the main namespace,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 18:46:16-06:00,21600,2022-10-05 18:46:16-06:00,21600,True,False,['__init__.py'],['1a053c9f98f2611cc29b1d34feb1ae33bb840c5b'],0,2,2,1,,,
+fbaf586d796799eeb31752c763156640226d6d4f,Add a comment with known differences from the spec to the docstring,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 18:46:25-06:00,21600,2022-10-05 18:46:25-06:00,21600,True,False,['__init__.py'],['0686979b7ccb537f3be06920b7d54dc3fb00cfd1'],0,10,10,1,,,
+38a6644373f50359caefb5dbc66f94e64887983d,Move the builtin overrides to _aliases.py,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 18:47:41-06:00,21600,2022-10-05 18:47:41-06:00,21600,True,False,"['__init__.py', '_aliases.py']",['fbaf586d796799eeb31752c763156640226d6d4f'],3,3,6,2,,,
+cda717e6ee9e7e4bc920d1e78f9974d682572d82,Add more known incompatibilities,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 18:53:22-06:00,21600,2022-10-05 18:53:22-06:00,21600,True,False,['__init__.py'],['38a6644373f50359caefb5dbc66f94e64887983d'],0,5,5,1,,,
+9811f3cec04e2d38e466287f2870e39cb5c527c2,Wrap linalg functions that return namedtuples,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 18:53:35-06:00,21600,2022-10-05 18:53:35-06:00,21600,True,False,['linalg.py'],['cda717e6ee9e7e4bc920d1e78f9974d682572d82'],2,34,36,1,1.0,1.0,1.0
+4c0b4d457efe64889a9f3b850deb2f29f58baaa4,"Add std and var, and define __all__ in _alaises.py",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 19:03:28-06:00,21600,2022-10-05 19:03:28-06:00,21600,True,False,['_aliases.py'],['9811f3cec04e2d38e466287f2870e39cb5c527c2'],25,52,77,1,1.0,1.0,0.0
+c037d2b40e714f035530fc21615dad8c406a6537,Add the linalg namedtuples to __all__,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 19:04:38-06:00,21600,2022-10-05 19:04:38-06:00,21600,True,False,['linalg.py'],['4c0b4d457efe64889a9f3b850deb2f29f58baaa4'],1,2,3,1,,,
+abafd2730ee1ad81457d816b6acd128f07db501b,"Add creation function wrappers with the device keyword
+
+Also add _typing.py with type annotation definitions",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 19:19:25-06:00,21600,2022-10-05 19:19:25-06:00,21600,True,False,"['_aliases.py', '_typing.py']",['c037d2b40e714f035530fc21615dad8c406a6537'],3,194,197,2,0.8333333333333334,1.0,0.02631578947368421
+2ba341198c6d10c88fa8762a6d328e4a8f6788d9,Add reshape wrapper,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 19:24:02-06:00,21600,2022-10-05 19:24:02-06:00,21600,True,False,['_aliases.py'],['abafd2730ee1ad81457d816b6acd128f07db501b'],0,4,4,1,1.0,1.0,1.0
+88e811b1b008923700de0c513e54cd0bea917328,Add the copy keyword argument to reshape,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 21:57:23-06:00,21600,2022-10-05 21:57:23-06:00,21600,True,False,['_aliases.py'],['2ba341198c6d10c88fa8762a6d328e4a8f6788d9'],1,6,7,1,1.0,1.0,0.0
+3de4460e002504441fd934494d94261d506b0e2e,Add reshape to __all__,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-05 21:57:31-06:00,21600,2022-10-05 21:57:31-06:00,21600,True,False,['_aliases.py'],['88e811b1b008923700de0c513e54cd0bea917328'],1,1,2,1,,,
+172bb57502dd28230fb18f5fe21f4a728fb96ede,Add argsort and sort wrappers,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-06 15:23:49-06:00,21600,2022-10-06 15:23:49-06:00,21600,True,False,['_aliases.py'],['3de4460e002504441fd934494d94261d506b0e2e'],1,35,36,1,1.0,1.0,0.0
+e7ac55be3e020d7bcf0055061f059e5cffef739b,"Move from numpy.linalg import * to the top of the file
+
+Otherwise the wrappers in the file do not override the NumPy definitions.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-06 15:32:48-06:00,21600,2022-10-06 15:32:48-06:00,21600,True,False,['linalg.py'],['172bb57502dd28230fb18f5fe21f4a728fb96ede'],6,6,12,1,,,
+547f0078343bfb03ed4942f30df4e55c6df8e143,"Add cholesky(), matrix_rank(), and pinv() wrappers",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-06 15:33:22-06:00,21600,2022-10-06 15:33:22-06:00,21600,True,False,['linalg.py'],['e7ac55be3e020d7bcf0055061f059e5cffef739b'],7,39,46,1,1.0,1.0,0.2777777777777778
+078c823a86ed959bb055b88f814e879f02012ae5,Add device() and to_device() helper functions,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-06 15:49:50-06:00,21600,2022-10-06 15:49:50-06:00,21600,True,False,"['__init__.py', '_helpers.py']",['547f0078343bfb03ed4942f30df4e55c6df8e143'],2,73,75,2,0.0,1.0,1.0
+c28b5f1e2688e6606e3d2ff59cb56e3a3f0f8955,Fix import,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-18 14:13:36-06:00,21600,2022-10-18 14:13:36-06:00,21600,True,False,['__init__.py'],['078c823a86ed959bb055b88f814e879f02012ae5'],1,1,2,1,,,
+4d1829f78b2bdc1cb530fd99882461f888909d74,Add sum() and prod() wrappers to handle float promotion,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-18 16:11:39-06:00,21600,2022-10-18 16:11:39-06:00,21600,True,False,['_aliases.py'],['c28b5f1e2688e6606e3d2ff59cb56e3a3f0f8955'],1,27,28,1,1.0,1.0,0.0
+e8f7c24b3c76376518f7d9d4aecaff6abadd21cf,Add aliases for diagonal() and trace(),Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-20 15:47:44-06:00,21600,2022-10-20 15:47:44-06:00,21600,True,False,['linalg.py'],['4d1829f78b2bdc1cb530fd99882461f888909d74'],1,10,11,1,1.0,1.0,1.0
+ac4e03a55c1091be94d751e648f5bb9a2c7a0b0c,"Add aliases for ceil(), floor(), and trunc()",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-10-20 15:47:58-06:00,21600,2022-10-20 15:47:58-06:00,21600,True,False,['_aliases.py'],['e8f7c24b3c76376518f7d9d4aecaff6abadd21cf'],1,19,20,1,1.0,1.0,1.0
+53557d4bcc18007f309ddb77b06b12b71a00a0b1,Fix an import in __init__.py so the package can be vendored,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-07 16:15:52-07:00,25200,2022-11-07 16:15:52-07:00,25200,True,False,['__init__.py'],['ac4e03a55c1091be94d751e648f5bb9a2c7a0b0c'],3,5,8,1,,,
+fd798e15f2e39fbc71eb3a0e0bc6ae69b2aa471e,Add is_array_obj and get_namespace helpers,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-07 16:16:16-07:00,25200,2022-11-07 16:16:16-07:00,25200,True,False,['_helpers.py'],['53557d4bcc18007f309ddb77b06b12b71a00a0b1'],3,42,45,1,1.0,0.21052631578947367,1.0
+391b08b09fdd67c7399e16e523ee59ddcc297fb6,"Fix asarray(copy=True)
+
+Fixes #5.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-14 16:00:59-07:00,25200,2022-11-14 16:00:59-07:00,25200,True,False,['_aliases.py'],['fd798e15f2e39fbc71eb3a0e0bc6ae69b2aa471e'],0,7,7,1,0.0,0.0,0.0
+9f2afe84eb1e88f01c53bbd8027a12e19510a17c,Add a get_xp decorator to support multiple array namespaces,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-14 17:49:10-07:00,25200,2022-11-14 17:49:10-07:00,25200,True,False,"['_helpers.py', '_internal.py']",['391b08b09fdd67c7399e16e523ee59ddcc297fb6'],2,37,39,2,0.0,0.7692307692307693,1.0
+e9c52c46934ebf582e938bd5d53ccba255393233,"Add get_xp decorator to genericize the namespace for the aliases
+
+I still need to factor out uses of 'np' in other places in the code.
+
+I'm also not completely sure about the solution for asarray(). asarray() can't
+just infer the namespace from the input like every other function can. For
+now, I have added a namespace keyword argument to it, which defaults to numpy.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-16 22:55:12-07:00,25200,2022-11-16 22:55:12-07:00,25200,True,False,"['_aliases.py', '_helpers.py', '_internal.py']",['9f2afe84eb1e88f01c53bbd8027a12e19510a17c'],77,183,260,3,0.71875,0.71875,0.375
+17513568dc0199364a33c46acaacea0ab1d1cdb0,Require the namespace argument to asarray() when it's ambiguous,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-16 22:58:35-07:00,25200,2022-11-16 22:58:35-07:00,25200,True,False,['_aliases.py'],['e9c52c46934ebf582e938bd5d53ccba255393233'],4,9,13,1,0.0,0.0,0.0
+b3a12d92e840be6ef0f87f568d68a4f58b55c7e7,"Move all the NumPy functionality into a numpy submodule
+
+There will also be a 'cupy' submodule. Common code will be factored out into
+the 'common' submodule.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-17 22:12:40-07:00,25200,2022-11-17 22:12:40-07:00,25200,True,False,"['__init__.py', '_internal.py', '__init__.py', '_helpers.py', '__init__.py', '_aliases.py', '_helpers.py', '_typing.py', 'linalg.py']",['17513568dc0199364a33c46acaacea0ab1d1cdb0'],63,70,133,9,0.0,0.0,1.0
+cf4083a9ce365f6247c84ec63eac1f63252105b2,"Move the wrapper code into common/, and make linalg use @get_xp",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 17:21:42-07:00,25200,2022-11-28 17:21:42-07:00,25200,True,False,"['_aliases.py', 'linalg.py', '_aliases.py', '_helpers.py', 'linalg.py']",['b3a12d92e840be6ef0f87f568d68a4f58b55c7e7'],626,679,1305,5,0.6111111111111112,0.6111111111111112,0.0
+7333696f188a97236e485b2cef2ed26047b6d5eb,Move _typing.py from numpy/ to common/,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 17:22:58-07:00,25200,2022-11-28 17:22:58-07:00,25200,True,False,"['_typing.py', '__init__.py']",['cf4083a9ce365f6247c84ec63eac1f63252105b2'],0,20,20,2,,,
+076848ed261b6dcd89cec5809a523dc35def7500,"Add a cupy submodule
+
+Full support still needs to be tested, and also we need to double check if any
+of the aliases are unnecessary for cupy.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 17:49:24-07:00,25200,2022-11-28 17:49:24-07:00,25200,True,False,"['_aliases.py', '_helpers.py', '__init__.py', '_aliases.py', 'linalg.py', '__init__.py', '_helpers.py']",['7333696f188a97236e485b2cef2ed26047b6d5eb'],99,174,273,7,0.16216216216216217,0.21621621621621623,0.21621621621621623
+ed5705fbc86df007e562c6f62cd43d116d43b30a,Rename numpy_array_api_compat/ to array_api_compat/,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 17:52:23-07:00,25200,2022-11-28 17:52:23-07:00,25200,True,False,"['README.md', '__init__.py', '_internal.py', '__init__.py', '_aliases.py', '_helpers.py', '_typing.py', 'linalg.py', '__init__.py', '_aliases.py', 'linalg.py', '__init__.py', '_aliases.py', 'linalg.py']",['076848ed261b6dcd89cec5809a523dc35def7500'],2,16,18,14,,,
+420c0daf678f1e8607bda1c778f00407847519ba,Add __array_api_version__,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 17:57:22-07:00,25200,2022-11-28 17:57:22-07:00,25200,True,False,"['__init__.py', '__init__.py']",['ed5705fbc86df007e562c6f62cd43d116d43b30a'],0,4,4,2,,,
+005852f719dcf3e6b1f6eb7f72b3bb7d1501da9c,Remove library-specific stuff from common/_typing.py,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 22:32:58-07:00,25200,2022-11-28 22:39:04-07:00,25200,True,False,"['_typing.py', '_typing.py', '_typing.py']",['420c0daf678f1e8607bda1c778f00407847519ba'],39,92,131,3,,,
+2912c9e3291423ce2713c99c01ccee65f175371f,"Refactor how get_xp works
+
+Now instead of guessing the array library from the input with get_namespace,
+the array library is hard-coded into the wrapped function based on which
+subnamespace it is imported from.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 22:39:16-07:00,25200,2022-11-28 22:40:48-07:00,25200,True,False,"['_internal.py', '_aliases.py', '_helpers.py', 'linalg.py', '_aliases.py', 'linalg.py', '_aliases.py', 'linalg.py']",['005852f719dcf3e6b1f6eb7f72b3bb7d1501da9c'],213,301,514,8,0.0,0.0,1.0
+5775b11dd011dd835569699a812580d842a46d47,Rename common.linalg to common._linalg,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 22:42:48-07:00,25200,2022-11-28 22:42:48-07:00,25200,True,False,"['_linalg.py', 'linalg.py', 'linalg.py']",['2912c9e3291423ce2713c99c01ccee65f175371f'],32,34,66,3,,,
+936a8ad8d89b501fab2d38044c9bfcd8ef153e08,Fix arange(),Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 22:43:37-07:00,25200,2022-11-28 22:43:37-07:00,25200,True,False,['_aliases.py'],['5775b11dd011dd835569699a812580d842a46d47'],1,1,2,1,,,
+d88f709f061459fa748db5af8728dff7da075720,Fix cupy asarray to create cupy arrays instead of numpy arrays,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 22:44:42-07:00,25200,2022-11-28 22:44:42-07:00,25200,True,False,['_aliases.py'],['936a8ad8d89b501fab2d38044c9bfcd8ef153e08'],2,2,4,1,,,
+360ea18798f9aa7d628ce0e64044120ab152def6,Re-enable the signature fix in get_xp,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 22:50:34-07:00,25200,2022-11-28 22:50:34-07:00,25200,True,False,['_internal.py'],['d88f709f061459fa748db5af8728dff7da075720'],3,2,5,1,1.0,1.0,1.0
+fece5e0609e2d01e68f2793c97a8644123a7f2da,Fix some issues with the linalg wrapping,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-28 22:59:56-07:00,25200,2022-11-28 22:59:56-07:00,25200,True,False,"['_linalg.py', 'linalg.py', 'linalg.py']",['360ea18798f9aa7d628ce0e64044120ab152def6'],13,30,43,3,,,
+c91360b9228cf2df69b20562047d966af062e403,Export helpers to the top-level namespace,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-30 14:25:24-07:00,25200,2022-11-30 14:25:24-07:00,25200,True,False,"['__init__.py', '__init__.py']",['fece5e0609e2d01e68f2793c97a8644123a7f2da'],0,2,2,2,,,
+d19c1a2a9cd936973de3b74fbc2b1dcdbbe36afb,Fix full_like and linspace,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-30 14:26:20-07:00,25200,2022-11-30 14:26:20-07:00,25200,True,False,['_aliases.py'],['c91360b9228cf2df69b20562047d966af062e403'],2,2,4,1,,,
+6c54b6b34c5cb957556eb86d043d71ec2072694c,Fix permute_dims,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-30 14:32:18-07:00,25200,2022-11-30 14:32:18-07:00,25200,True,False,['_aliases.py'],['d19c1a2a9cd936973de3b74fbc2b1dcdbbe36afb'],1,1,2,1,,,
+e996d22a8f867b4b324c8a9ea63d811aa2208fcf,Add more information to the README,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-30 17:22:54-07:00,25200,2022-11-30 17:22:54-07:00,25200,True,False,"['README.md', '__init__.py']",['6c54b6b34c5cb957556eb86d043d71ec2072694c'],30,142,172,2,,,
+82365ebf22c85076094a9d66516c423c36f232a7,Add a test that vendoring works,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-30 17:36:56-07:00,25200,2022-11-30 17:36:56-07:00,25200,True,False,"['__init__.py', 'test_vendoring.py', '__init__.py', 'uses_cupy.py', 'uses_numpy.py', '__init__.py', '_compat']",['e996d22a8f867b4b324c8a9ea63d811aa2208fcf'],0,59,59,7,1.0,1.0,1.0
+a83b15c49f028d4c4481b6f446a06b86a5152c1a,Fixes to the README,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-11-30 17:42:26-07:00,25200,2022-11-30 17:42:26-07:00,25200,True,False,['README.md'],['82365ebf22c85076094a9d66516c423c36f232a7'],4,4,8,1,,,
+8d2d37ab6e00c5416474e9bf1699f5ec3f2254fb,Fix missing sentence in the README,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-05 15:59:27-07:00,25200,2022-12-05 15:59:27-07:00,25200,True,False,['README.md'],['a83b15c49f028d4c4481b6f446a06b86a5152c1a'],1,2,3,1,,,
+732b4933fb46c0384f341a8c687e225dd0adacd2,Move vendor_test to the top-level,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-05 16:01:19-07:00,25200,2022-12-05 16:01:19-07:00,25200,True,False,"['_compat', '__init__.py', 'uses_cupy.py', 'uses_numpy.py', '__init__.py', '_compat']",['8d2d37ab6e00c5416474e9bf1699f5ec3f2254fb'],1,1,2,6,,,
+cb682cd33f33f09e960bb52888e95b7a94394bb2,Add a setup.py,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-05 16:24:57-07:00,25200,2022-12-05 16:24:57-07:00,25200,True,False,['setup.py'],['6dfc00be5ac9972ddafddc635963e2cc95114b75'],0,27,27,1,,,
+946320ab91a897859cba2982d28ba0a327dfca4a,Add __version__,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-05 16:28:01-07:00,25200,2022-12-05 16:28:01-07:00,25200,True,False,['__init__.py'],['cb682cd33f33f09e960bb52888e95b7a94394bb2'],0,2,2,1,,,
+395489eb68489deda3bb92c3cdc1d90c89413d97,DOC: a trivial typo,Evgeni Burovski,evgeny.burovskiy@gmail.com,GitHub,noreply@github.com,2022-12-07 18:14:59+06:00,-21600,2022-12-07 18:14:59+06:00,-21600,True,False,['README.md'],['108dcfa21b10c9d8df6dafed1079a0a699bce30f'],1,1,2,1,,,
+f4748e5332eaa8cca468cc8a4e7bac2e48a21d75,"Make the basic renames simple aliases instead of wrappers
+
+This removes the overhead for these functions, and also makes it so that they
+are still NumPy ufuncs with all the corresponding ufunc keywords and methods.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 16:02:10-07:00,25200,2022-12-15 16:26:58-07:00,25200,True,False,"['_aliases.py', '_aliases.py', '_aliases.py']",['6dfc00be5ac9972ddafddc635963e2cc95114b75'],68,32,100,3,0.0,0.0,0.4166666666666667
+055f7931f1369acf448992bf93cbd0358dd87a6e,"Pass **kwargs through to wrapped functions
+
+This allows passing NumPy-specific keyword arguments through, like
+asarray(order='F').
+
+This won't work with keyword arguments that are renamed.
+
+This is not done for new functions that aren't in NumPy, like unique_all,
+permute_dims, matrix_norm, etc.
+
+Fixes ##10.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 16:32:49-07:00,25200,2022-12-15 16:32:49-07:00,25200,True,False,"['_aliases.py', '_linalg.py']",['f4748e5332eaa8cca468cc8a4e7bac2e48a21d75'],57,93,150,2,0.5,0.9722222222222222,0.0
+203788b8a28d8e46c5205350843a20905ba5d3a5,Add a GitHub Actions workflow to run the test suite,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:01:04-07:00,25200,2022-12-15 17:01:04-07:00,25200,True,False,['tests.yml'],['88e3d7749425964e2513806f93a853741e98e47f'],0,56,56,1,,,
+0fc9e0604db5af7a52e8d4b99dd908dac672db8c,Add a GitHub Actions workflow file for running the array API testsuite,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:19:24-07:00,25200,2022-12-15 17:19:24-07:00,25200,True,False,['array-api-tests.yml'],['203788b8a28d8e46c5205350843a20905ba5d3a5'],0,37,37,1,,,
+932c95f63d03f642eb2130a479d669105658ab4a,Fix the name of the GitHub Actions directory,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:23:22-07:00,25200,2022-12-15 17:23:22-07:00,25200,True,False,"['array-api-tests.yml', 'tests.yml']",['0fc9e0604db5af7a52e8d4b99dd908dac672db8c'],0,0,0,2,,,
+045ab587872635b575c81053e7cbc77417d2b905,Fix the job name in the array API tests GitHub Action,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:24:45-07:00,25200,2022-12-15 17:24:45-07:00,25200,True,False,['array-api-tests.yml'],['932c95f63d03f642eb2130a479d669105658ab4a'],3,2,5,1,,,
+176fdbe79a94f56620daf4b094b24dac48ae06f7,Fix array-api-tests.yml checkout action syntax,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:26:50-07:00,25200,2022-12-15 17:26:50-07:00,25200,True,False,['array-api-tests.yml'],['045ab587872635b575c81053e7cbc77417d2b905'],2,3,5,1,,,
+bd52c125aeac3752110982e8ef3b18f479026b73,Set NPY_PROMOTION_STATE=weak in the NumPy tests,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:27:02-07:00,25200,2022-12-15 17:27:02-07:00,25200,True,False,['array-api-tests.yml'],['176fdbe79a94f56620daf4b094b24dac48ae06f7'],0,1,1,1,,,
+28bdf35869ff297bbad57740efacb2c48a7ac9f4,Fix checkout action syntax,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:28:29-07:00,25200,2022-12-15 17:28:29-07:00,25200,True,False,['array-api-tests.yml'],['bd52c125aeac3752110982e8ef3b18f479026b73'],1,1,2,1,,,
+f98ef777cada31da8d48379664c8f5aa28a87977,Run the array API tests in all versions of Python,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:29:03-07:00,25200,2022-12-15 17:29:03-07:00,25200,True,False,['array-api-tests.yml'],['28bdf35869ff297bbad57740efacb2c48a7ac9f4'],1,1,2,1,,,
+1ea0b59b85e2a24b9c257d17fd69c852104ad63b,Install the array-api-tests requirements,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:29:59-07:00,25200,2022-12-15 17:29:59-07:00,25200,True,False,['array-api-tests.yml'],['f98ef777cada31da8d48379664c8f5aa28a87977'],0,1,1,1,,,
+bb76c9de0167c1c76939a899e65f4f052f988a3d,Use strings for version numbers,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:31:28-07:00,25200,2022-12-15 17:31:28-07:00,25200,True,False,['array-api-tests.yml'],['1ea0b59b85e2a24b9c257d17fd69c852104ad63b'],1,1,2,1,,,
+3b41b94d78db5459ec9086e50cda998ef9657606,Fix setting of PYTHONPATH,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:32:57-07:00,25200,2022-12-15 17:32:57-07:00,25200,True,False,['array-api-tests.yml'],['bb76c9de0167c1c76939a899e65f4f052f988a3d'],1,1,2,1,,,
+1b4a33f19667d1437ffa433694221949c1f38d73,Use pip instead of conda in the main tests CI job,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:34:33-07:00,25200,2022-12-15 17:34:33-07:00,25200,True,False,['tests.yml'],['3b41b94d78db5459ec9086e50cda998ef9657606'],33,2,35,1,,,
+96226cb49c00ae564c841dd0d05c3be44a2cf838,Fix pip command,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2022-12-15 17:35:42-07:00,25200,2022-12-15 17:35:42-07:00,25200,True,False,['tests.yml'],['1b4a33f19667d1437ffa433694221949c1f38d73'],1,1,2,1,,,
+6127c00d190f743ddb32a848d0239b6e7fb36899,"Use an XFAILs file on CI
+
+This requires https://github.com/data-apis/array-api-tests/pull/157 to work.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-02 18:57:22-07:00,25200,2023-01-02 18:57:22-07:00,25200,True,False,"['array-api-tests.yml', 'numpy-xfails.txt']",['96226cb49c00ae564c841dd0d05c3be44a2cf838'],1,50,51,2,,,
+1db44cbbc718e55bf4f941ab5a9a60adca36d296,Temporarily use https://github.com/data-apis/array-api-tests/pull/157 on CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-02 18:59:29-07:00,25200,2023-01-02 18:59:29-07:00,25200,True,False,['array-api-tests.yml'],['6127c00d190f743ddb32a848d0239b6e7fb36899'],1,5,6,1,,,
+1651824c8ffcbc74996f3825f2018db2257934ce,Fix CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-02 19:02:36-07:00,25200,2023-01-02 19:02:36-07:00,25200,True,False,['array-api-tests.yml'],['1db44cbbc718e55bf4f941ab5a9a60adca36d296'],1,1,2,1,,,
+f49f42b2865fb7f4ae0b01ab6ab21c4f6786a88b,Start pytorch compatibility layer,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-06 17:59:37-07:00,25200,2023-01-06 17:59:37-07:00,25200,True,False,"['__init__.py', '_aliases.py', 'linalg.py']",['cda03db388f30bcfdab9b52c91c9fa7584ad450c'],0,48,48,3,1.0,1.0,0.4375
+4b957489ab7241221a6fe28fcaa7bce84e5b71a3,Add vendor tests for torch,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-06 18:08:49-07:00,25200,2023-01-06 18:08:49-07:00,25200,True,False,"['test_vendoring.py', 'uses_torch.py']",['f49f42b2865fb7f4ae0b01ab6ab21c4f6786a88b'],0,26,26,2,1.0,1.0,1.0
+1ecb7cac2457342d7bea13345cdbefbf35edc11d,Replace torch expand_dims wrapper to a wrapper around unsqueeze,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-09 14:11:22-07:00,25200,2023-01-09 14:11:22-07:00,25200,True,False,['_aliases.py'],['4b957489ab7241221a6fe28fcaa7bce84e5b71a3'],6,1,7,1,0.0,0.0,0.0
+52b60549e6bebcc19f41d06a89279d0f8c1d304e,Add torch support to the helper functions,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-09 15:30:56-07:00,25200,2023-01-09 15:30:56-07:00,25200,True,False,['_helpers.py'],['1ecb7cac2457342d7bea13345cdbefbf35edc11d'],2,21,23,1,0.8571428571428571,0.0,0.7142857142857143
+c484dbff2acc576a4362c95a06afd91507cbcbb2,Add max and min wrappers for torch,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-09 15:31:42-07:00,25200,2023-01-09 15:31:42-07:00,25200,True,False,['_aliases.py'],['52b60549e6bebcc19f41d06a89279d0f8c1d304e'],1,15,16,1,1.0,1.0,0.0
+3023a8943de8b316fdc955bce948cd40026485ec,Add a wrapper for torch.prod,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-09 15:48:38-07:00,25200,2023-01-09 15:48:38-07:00,25200,True,False,['_aliases.py'],['c484dbff2acc576a4362c95a06afd91507cbcbb2'],0,38,38,1,0.41379310344827586,0.0,0.41379310344827586
+a1bbd9bd1e766ffb5c07989dc1a1a30df23eee11,Add the torch prod wrapper to __all__,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-09 15:48:50-07:00,25200,2023-01-09 15:48:50-07:00,25200,True,False,['_aliases.py'],['3023a8943de8b316fdc955bce948cd40026485ec'],1,1,2,1,,,
+dba7fa7320454a1911f76056a732b0b4b509ac57,Return a copy from max and min with axis=(),Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-10 13:32:17-07:00,25200,2023-01-10 13:32:17-07:00,25200,True,False,['_aliases.py'],['a1bbd9bd1e766ffb5c07989dc1a1a30df23eee11'],2,2,4,1,,,
+44d91e1bf8664ba99a9634f87e6fa2228ca593c8,Add a size() helper function,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-10 13:41:13-07:00,25200,2023-01-10 13:41:13-07:00,25200,True,False,"['README.md', '_helpers.py']",['dba7fa7320454a1911f76056a732b0b4b509ac57'],1,17,18,2,1.0,1.0,1.0
+1faea7ba8e4b8e410816ac91fe4d58bafab75b19,Add any and all torch wrappers and fix some issues with prod,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-10 14:33:24-07:00,25200,2023-01-10 14:33:24-07:00,25200,True,False,['_aliases.py'],['44d91e1bf8664ba99a9634f87e6fa2228ca593c8'],11,68,79,1,0.10256410256410256,0.5128205128205128,0.0
+ad4484dc57f2ebf5f558e4245fbf0ca544720bd7,Add astype torch wrapper,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-10 18:30:31-07:00,25200,2023-01-10 18:30:31-07:00,25200,True,False,['_aliases.py'],['1faea7ba8e4b8e410816ac91fe4d58bafab75b19'],1,5,6,1,1.0,1.0,0.0
+db3241da9e4926227d2d9f9f5e4ab4669e5fdbc7,Cast the input to prod/all/any to tensor,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-10 18:35:14-07:00,25200,2023-01-10 18:35:33-07:00,25200,True,False,['_aliases.py'],['ad4484dc57f2ebf5f558e4245fbf0ca544720bd7'],0,3,3,1,0.0,0.3333333333333333,0.0
+3f0d91397637bb43fca0ce4a93f25c9819b4d085,More logical order for some functions,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-10 18:35:43-07:00,25200,2023-01-10 18:35:43-07:00,25200,True,False,['_aliases.py'],['db3241da9e4926227d2d9f9f5e4ab4669e5fdbc7'],4,8,12,1,,,
+2d25dd26e85dca045823557ad35674f44ae69ec4,"Add wrappers for two-argument elementwise functions
+
+PyTorch doesn't do correct type promotion when one of the arguments is a
+scalar. We unfortunately can't do anything about this for the actual
+operators.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-23 21:19:21-07:00,25200,2023-01-23 21:19:21-07:00,25200,True,False,['_aliases.py'],['3f0d91397637bb43fca0ce4a93f25c9819b4d085'],2,134,136,1,0.6097560975609756,0.6097560975609756,0.926829268292683
+c4c0cfa7f70a044655fe61504f66ad11a34ea534,Add bitwise_invert to torch,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-24 11:25:04-07:00,25200,2023-01-24 11:25:04-07:00,25200,True,False,['_aliases.py'],['2d25dd26e85dca045823557ad35674f44ae69ec4'],6,8,14,1,,,
+a1917f8a20938a640f49d9fdf8c4ab02128b426f,Add torch wrappers for broadcast_to and can_cast,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-24 11:58:07-07:00,25200,2023-01-24 11:58:07-07:00,25200,True,False,['_aliases.py'],['c4c0cfa7f70a044655fe61504f66ad11a34ea534'],5,15,20,1,1.0,1.0,1.0
+ae28ce0e4b471358a36e6fa4e1c44575772f1521,Add torch arange wrapper,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-24 12:26:09-07:00,25200,2023-01-24 12:26:09-07:00,25200,True,False,['_aliases.py'],['a1917f8a20938a640f49d9fdf8c4ab02128b426f'],1,24,25,1,0.0,0.0,0.0
+c3d933491ebc2ce395e4bcede327ffd339324d71,Add a wrapper for torch.eye,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-24 13:48:43-07:00,25200,2023-01-24 13:48:43-07:00,25200,True,False,['_aliases.py'],['ae28ce0e4b471358a36e6fa4e1c44575772f1521'],2,19,21,1,1.0,1.0,0.0
+f4d6df1bdba8a5ea4350dd5a87374751cbade2bb,Add pytorch linspace wrapper,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-24 14:03:03-07:00,25200,2023-01-24 14:03:03-07:00,25200,True,False,['_aliases.py'],['c3d933491ebc2ce395e4bcede327ffd339324d71'],1,15,16,1,1.0,1.0,0.0
+14b651918a77003df81f3324fec2d68cf2b747d1,Add torch squeeze wrapper,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-24 14:29:55-07:00,25200,2023-01-24 14:29:55-07:00,25200,True,False,['_aliases.py'],['f4d6df1bdba8a5ea4350dd5a87374751cbade2bb'],2,31,33,1,1.0,0.45,0.0
+db3f579f2ee03b076721f426b9dcb8e55a4693ee,Add torch flip and roll wrappers,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-24 14:43:27-07:00,25200,2023-01-24 14:43:27-07:00,25200,True,False,['_aliases.py'],['14b651918a77003df81f3324fec2d68cf2b747d1'],2,15,17,1,1.0,1.0,0.0
+27b7e8caa5ee1783a23adbf79ea00c089a3bb67c,Add a torch wrapper for nonzero,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-24 14:47:22-07:00,25200,2023-01-24 14:47:22-07:00,25200,True,False,['_aliases.py'],['db3f579f2ee03b076721f426b9dcb8e55a4693ee'],2,5,7,1,1.0,1.0,1.0
+e8866449b6d584cf5c0e099ed963a676caf38d6e,Fix pyflakes warning,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-24 14:49:25-07:00,25200,2023-01-24 14:49:25-07:00,25200,True,False,['_aliases.py'],['27b7e8caa5ee1783a23adbf79ea00c089a3bb67c'],1,1,2,1,,,
+fd5d1793ac20272f12669b8e16db329d17bb5da2,Add torch wrapper for where,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-01-24 14:50:36-07:00,25200,2023-01-24 15:30:06-07:00,25200,True,False,['_aliases.py'],['e8866449b6d584cf5c0e099ed963a676caf38d6e'],2,6,8,1,1.0,1.0,0.0
+a5f3253e5b9a3aee445af31c3fa6db2717e0defc,Add sort wrapper to torch,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-01 17:40:32-07:00,25200,2023-02-01 17:40:32-07:00,25200,True,False,['_aliases.py'],['fd5d1793ac20272f12669b8e16db329d17bb5da2'],1,6,7,1,1.0,1.0,0.0
+4a71e63a5aaf3290356721a84b5a8092e0d30834,Pass kwargs through some torch wrappers,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-01 17:41:22-07:00,25200,2023-02-01 17:41:22-07:00,25200,True,False,['_aliases.py'],['a5f3253e5b9a3aee445af31c3fa6db2717e0defc'],14,30,44,1,0.0,0.375,0.0
+157fc1eb1ef229ca330c42a5a8ceb1f65c9adfab,"Add torch mean(), std(), and var() wrappers",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-01 18:13:30-07:00,25200,2023-02-01 18:13:30-07:00,25200,True,False,['_aliases.py'],['4a71e63a5aaf3290356721a84b5a8092e0d30834'],3,75,78,1,0.28888888888888886,1.0,0.0
+c3efe6ae4d46ba881089687e7ec0ec1ed757b103,Add torch sum() and prod() wrappers,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-02 17:51:25-07:00,25200,2023-02-02 17:51:25-07:00,25200,True,False,['_aliases.py'],['157fc1eb1ef229ca330c42a5a8ceb1f65c9adfab'],6,47,53,1,0.0,0.0,0.0
+ed46247f82accfaa02b6bd02f93ee9287e4ff128,Add unique_* wrappers to torch,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-03 18:27:17-07:00,25200,2023-02-03 18:27:17-07:00,25200,True,False,['_aliases.py'],['c3efe6ae4d46ba881089687e7ec0ec1ed757b103'],1,36,37,1,1.0,1.0,1.0
+eaf53587b2fa969170e050d3b195e7321b93aad5,Just raise NotImplementedError in pytorch unique_all(),Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-03 19:18:46-07:00,25200,2023-02-03 19:18:46-07:00,25200,True,False,['_aliases.py'],['ed46247f82accfaa02b6bd02f93ee9287e4ff128'],9,5,14,1,0.0,0.0,0.0
+cd25f472e3dd5fa6a56f08ebb5ac69bea90fe975,Fix to_device for pytorch tensors,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-09 17:32:40-07:00,25200,2023-02-09 17:32:40-07:00,25200,True,False,['_helpers.py'],['eaf53587b2fa969170e050d3b195e7321b93aad5'],2,2,4,1,,,
+98ed0b2647f0ed542667d578062701d9b8d0e026,Restrict the names imported from torch into the compat submodule,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-09 17:32:51-07:00,25200,2023-02-09 17:32:51-07:00,25200,True,False,['__init__.py'],['cd25f472e3dd5fa6a56f08ebb5ac69bea90fe975'],2,7,9,1,,,
+be4b5343a4708021236af1499c5bd6d4e9487949,Allow torch sum and prod to upcast uint8 to int64,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-09 17:33:24-07:00,25200,2023-02-09 17:33:24-07:00,25200,True,False,['_aliases.py'],['98ed0b2647f0ed542667d578062701d9b8d0e026'],4,8,12,1,,,
+ecda0175bfd3462af3ef941ebbe0d62d4da7a6a5,Don't unnecessarily flip the axes in flip(),Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-09 17:33:37-07:00,25200,2023-02-09 17:33:37-07:00,25200,True,False,['_aliases.py'],['be4b5343a4708021236af1499c5bd6d4e9487949'],1,1,2,1,,,
+3ccee1b57fab25f9f5ec4ccd34a46b7114ed0018,Comment out dead code in the torch unique_all() wrapper,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-09 17:33:51-07:00,25200,2023-02-09 17:33:51-07:00,25200,True,False,['_aliases.py'],['ecda0175bfd3462af3ef941ebbe0d62d4da7a6a5'],5,6,11,1,0.0,0.0,0.0
+7699755b89ee6730a3c9dba97e106c196c09706a,Use flatten instead of ravel,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-09 19:04:16-07:00,25200,2023-02-09 19:04:16-07:00,25200,True,False,['_aliases.py'],['3ccee1b57fab25f9f5ec4ccd34a46b7114ed0018'],1,1,2,1,,,
+d38bad5c6c258e5faecd9297eea78d00041355b6,Improve some error messages,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-10 01:27:52-07:00,25200,2023-02-10 01:27:52-07:00,25200,True,False,['_aliases.py'],['7699755b89ee6730a3c9dba97e106c196c09706a'],3,5,8,1,1.0,0.0,1.0
+5c2ad1456e7a13359f18c6751770405681ead789,Increase the number of max examples in the tests,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-10 15:44:42-07:00,25200,2023-02-10 15:44:42-07:00,25200,True,False,['array-api-tests.yml'],['1651824c8ffcbc74996f3825f2018db2257934ce'],1,1,2,1,,,
+24c0ea377b0891ddcb0135f882c038fe0171ba8c,Use a better function name and use unsqueeze instead of None indexing,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-13 16:17:23-07:00,25200,2023-02-13 16:17:23-07:00,25200,True,False,['_aliases.py'],['d38bad5c6c258e5faecd9297eea78d00041355b6'],9,13,22,1,1.0,1.0,0.0
+73191e116bcf3e5c172c14177cc1099df1b48451,Fix __all__ for numpy and cupy,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-16 16:33:37-07:00,25200,2023-02-16 16:33:37-07:00,25200,True,False,"['_aliases.py', '_aliases.py', '_aliases.py']",['cda03db388f30bcfdab9b52c91c9fa7584ad450c'],7,10,17,3,,,
+24c1cd36ff17c99ce16f2026d42fa3dda4a16816,"Decrease the number of max examples in the tests
+
+1000 makes them take too long.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-16 17:47:30-07:00,25200,2023-02-16 17:47:30-07:00,25200,True,False,['array-api-tests.yml'],['022b29d00820462b74dadccfb9412ab4ae76b656'],1,1,2,1,,,
+e5cadda3b88852d8398ad7d08bee580d99b73171,Trigger CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-16 19:47:56-07:00,25200,2023-02-16 19:47:56-07:00,25200,True,False,[],['24c1cd36ff17c99ce16f2026d42fa3dda4a16816'],0,0,0,0,,,
+6554b0d324447b6539674792f75688745448fbfb,See what happens when we remove xfail_strict=True,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-16 22:38:44-07:00,25200,2023-02-16 22:38:44-07:00,25200,True,False,['array-api-tests.yml'],['e5cadda3b88852d8398ad7d08bee580d99b73171'],1,1,2,1,,,
+e8bbfd70ab5d1c02d20db87aadcdf50ff8735d53,Try using a skips file instead of an xfails file,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-17 00:42:38-07:00,25200,2023-02-17 00:42:38-07:00,25200,True,False,['array-api-tests.yml'],['6554b0d324447b6539674792f75688745448fbfb'],1,1,2,1,,,
+4c82b34b2595d3878bdae49ddcf2f699f21a9a87,Add missing xfail,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-17 18:35:21-07:00,25200,2023-02-17 18:35:21-07:00,25200,True,False,['numpy-xfails.txt'],['e8bbfd70ab5d1c02d20db87aadcdf50ff8735d53'],0,1,1,1,,,
+0bff25380d5e956059c60c0806a497ced85fd029,"Revert ""Try using a skips file instead of an xfails file""
+
+This reverts commit e8bbfd70ab5d1c02d20db87aadcdf50ff8735d53.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-17 18:35:38-07:00,25200,2023-02-17 18:35:38-07:00,25200,True,False,['array-api-tests.yml'],['4c82b34b2595d3878bdae49ddcf2f699f21a9a87'],1,1,2,1,,,
+2303be2545adbcf734e651b736fa386646b98621,"Revert ""See what happens when we remove xfail_strict=True""
+
+This reverts commit 6554b0d324447b6539674792f75688745448fbfb.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-17 18:35:43-07:00,25200,2023-02-17 18:35:43-07:00,25200,True,False,['array-api-tests.yml'],['0bff25380d5e956059c60c0806a497ced85fd029'],1,1,2,1,,,
+15eff4ef51df75b403c598348e27d0caedff2e43,Increase max examples to 300,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-17 20:01:22-07:00,25200,2023-02-17 20:01:22-07:00,25200,True,False,['array-api-tests.yml'],['2303be2545adbcf734e651b736fa386646b98621'],1,1,2,1,,,
+48d1ae14b14a1cb55c881eb5f21dd4ccc98d901c,Add pytorch-xfails.txt (still need to validate),Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-17 20:03:25-07:00,25200,2023-02-17 20:03:25-07:00,25200,True,False,['pytorch-xfails.txt'],['24c0ea377b0891ddcb0135f882c038fe0171ba8c'],0,151,151,1,,,
+866647d3f86555ac2968097c8ac7a12a071a0681,Move main namespace linear algebra helpers to _aliases.py,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-17 20:38:29-07:00,25200,2023-02-17 20:38:29-07:00,25200,True,False,"['_aliases.py', '_linalg.py']",['48d1ae14b14a1cb55c881eb5f21dd4ccc98d901c'],35,39,74,2,,,
+c441f33e0f16eea5762743a32a96b8184b6390f7,Fix main namespace linalg functions in numpy and cupy,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-17 20:51:47-07:00,25200,2023-02-17 20:52:27-07:00,25200,True,False,"['_aliases.py', '_linalg.py', '_aliases.py', 'linalg.py', '_aliases.py', 'linalg.py']",['85b71de93e5f2d9b19d7fc2e921255aabb1aac71'],10,13,23,6,,,
+04eef189da6014d77a97ad68eba8f751a077230d,Add main namespace linalg functions to the torch wrapper,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-17 20:53:28-07:00,25200,2023-02-17 20:53:28-07:00,25200,True,False,"['_aliases.py', '_aliases.py']",['c441f33e0f16eea5762743a32a96b8184b6390f7'],3,17,20,2,1.0,1.0,0.0
+453ecb8c80170ce39e858761c65890c8f762c49c,Add torch wrapper for matmul,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-17 20:57:56-07:00,25200,2023-02-17 20:57:56-07:00,25200,True,False,['_aliases.py'],['04eef189da6014d77a97ad68eba8f751a077230d'],1,7,8,1,1.0,1.0,0.0
+5a3bbbe576e0ea3fb0f4ca6e826bae1ae57fc719,"Finish torch wrappers for matmul, vecdot, and tensordot",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-20 14:37:10-07:00,25200,2023-02-20 14:37:10-07:00,25200,True,False,['_aliases.py'],['453ecb8c80170ce39e858761c65890c8f762c49c'],9,18,27,1,1.0,0.0,0.0
+b8bbdc80fe8ff8a2a9ec2ee60a77e3030e040ef5,Clean up pytorch-xfails file,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-20 17:11:15-07:00,25200,2023-02-20 17:11:15-07:00,25200,True,False,['pytorch-xfails.txt'],['5a3bbbe576e0ea3fb0f4ca6e826bae1ae57fc719'],28,53,81,1,,,
+607bab6a4b86556c8090ec7a1b9230f90d38d7f9,Extract common pytest variables into an environment variable,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-20 17:12:52-07:00,25200,2023-02-20 17:12:52-07:00,25200,True,False,['array-api-tests.yml'],['15eff4ef51df75b403c598348e27d0caedff2e43'],1,4,5,1,,,
+7aeb23ddd38b8486640971f078ae2e5c4c2562fb,Reduce max examples back to 200 and remove -o xfail_strict=True,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-20 17:13:17-07:00,25200,2023-02-20 17:13:17-07:00,25200,True,False,['array-api-tests.yml'],['607bab6a4b86556c8090ec7a1b9230f90d38d7f9'],1,1,2,1,,,
+7d176b91a8b6f9baf917414e53b2b51d9f29eb63,Update pytorch-xfails.txt,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-20 18:03:37-07:00,25200,2023-02-20 18:03:37-07:00,25200,True,False,['pytorch-xfails.txt'],['b8bbdc80fe8ff8a2a9ec2ee60a77e3030e040ef5'],2,3,5,1,,,
+1ffcb15e870e03e10cf9be9c2e5718380aa55418,Install pytorch in on CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-20 18:08:23-07:00,25200,2023-02-20 18:08:23-07:00,25200,True,False,['tests.yml'],['17c0a9163000bd294ce76e1a9b2e04e501e371c4'],1,1,2,1,,,
+0db034da8d3dd2787f08d1599f315d01293ef7d0,Make the GitHub Actions workflow reusable so that we can test pytorch,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-20 18:15:06-07:00,25200,2023-02-20 18:15:06-07:00,25200,True,False,"['array-api-tests-numpy.yml', 'array-api-tests-torch.yml', 'array-api-tests.yml', 'torch-xfails.txt']",['1ffcb15e870e03e10cf9be9c2e5718380aa55418'],5,28,33,4,,,
+39cbfd42ee1e54be3caa9760e13a8b3109217130,Fix workflow path,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-20 18:17:42-07:00,25200,2023-02-20 18:17:42-07:00,25200,True,False,"['array-api-tests-numpy.yml', 'array-api-tests-torch.yml']",['0db034da8d3dd2787f08d1599f315d01293ef7d0'],4,4,8,2,,,
+c3d0d8ee12545abee67e39c8a85e3328a9164a09,Fix variable interpolation syntax,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-20 18:18:56-07:00,25200,2023-02-20 18:18:56-07:00,25200,True,False,['array-api-tests.yml'],['39cbfd42ee1e54be3caa9760e13a8b3109217130'],4,4,8,1,,,
+cf21cea4e5eeddc837372d0c6354bcce4aa8fc67,Allow specifying extra pytest args in the test yamls,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-21 15:35:10-07:00,25200,2023-02-21 15:35:10-07:00,25200,True,False,['array-api-tests.yml'],['c3d0d8ee12545abee67e39c8a85e3328a9164a09'],1,5,6,1,,,
+a95eeb6b3c096d751aab2dca4a25a8d7a74be1f5,Enable verbose output for the torch tests,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-21 15:35:20-07:00,25200,2023-02-21 15:35:20-07:00,25200,True,False,['array-api-tests-torch.yml'],['cf21cea4e5eeddc837372d0c6354bcce4aa8fc67'],0,1,1,1,,,
+4737dc0cafca6c9c0518441d8a8a5cd213a9de88,"Revert ""Enable verbose output for the torch tests""
+
+This reverts commit a95eeb6b3c096d751aab2dca4a25a8d7a74be1f5.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-21 16:14:27-07:00,25200,2023-02-21 16:14:27-07:00,25200,True,False,['array-api-tests-torch.yml'],['a95eeb6b3c096d751aab2dca4a25a8d7a74be1f5'],1,0,1,1,,,
+ea9c1e22c2fc14bd6db4f1c8a32c57402ecbc94e,Skip the torch test that crashes the CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-21 16:20:56-07:00,25200,2023-02-21 16:20:56-07:00,25200,True,False,"['array-api-tests.yml', 'numpy-skips.txt', 'torch-skips.txt']",['4737dc0cafca6c9c0518441d8a8a5cd213a9de88'],1,4,5,3,,,
+4904411779c1bd6c0b2f2c032edcc83bff97e797,Skip another test that crashes on CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-21 17:31:44-07:00,25200,2023-02-21 17:31:44-07:00,25200,True,False,"['torch-skips.txt', 'torch-xfails.txt']",['ea9c1e22c2fc14bd6db4f1c8a32c57402ecbc94e'],3,4,7,2,,,
+039af599a5345e95471b5c903b8a3dbdf0ff3070,Disable linalg in the torch CI tests,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-21 18:03:59-07:00,25200,2023-02-21 18:03:59-07:00,25200,True,False,['array-api-tests-torch.yml'],['4904411779c1bd6c0b2f2c032edcc83bff97e797'],0,1,1,1,,,
+367c4b6e6ca829dfb8133dfa89431ad4a8da293e,Add missing torch xfails,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-21 18:16:25-07:00,25200,2023-02-21 18:16:25-07:00,25200,True,False,['torch-xfails.txt'],['039af599a5345e95471b5c903b8a3dbdf0ff3070'],0,9,9,1,,,
+f3ee38cdb1b3be44758ceb500f888ed1dc20e25a,Do a verbose CI run for the pytorch array API tests,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-22 13:08:26-07:00,25200,2023-02-22 13:08:26-07:00,25200,True,False,['array-api-tests-torch.yml'],['367c4b6e6ca829dfb8133dfa89431ad4a8da293e'],1,1,2,1,,,
+c631fa3e77a299b5e097345d2aa233b081a47197,"Revert ""Do a verbose CI run for the pytorch array API tests""
+
+This reverts commit f3ee38cdb1b3be44758ceb500f888ed1dc20e25a.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-22 13:08:46-07:00,25200,2023-02-22 13:08:46-07:00,25200,True,False,['array-api-tests-torch.yml'],['f3ee38cdb1b3be44758ceb500f888ed1dc20e25a'],1,1,2,1,,,
+33dacf9a50981e3c5caf7f8c6631630d075a2d29,Add some missing torch xfails,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-22 13:12:43-07:00,25200,2023-02-22 13:12:43-07:00,25200,True,False,['torch-xfails.txt'],['c631fa3e77a299b5e097345d2aa233b081a47197'],0,2,2,1,,,
+82b8defd49722d43209357bfaa70c64519a05109,Do a verbose output run of the torch array API tests (with the correct flag this time),Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-22 13:56:24-07:00,25200,2023-02-22 13:56:24-07:00,25200,True,False,['array-api-tests-torch.yml'],['33dacf9a50981e3c5caf7f8c6631630d075a2d29'],1,1,2,1,,,
+b014c1b460c8dd22693704ef4d18638e66abdf7a,"Revert ""Do a verbose output run of the torch array API tests (with the correct flag this time)""
+
+This reverts commit 82b8defd49722d43209357bfaa70c64519a05109.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-22 13:56:48-07:00,25200,2023-02-22 13:56:48-07:00,25200,True,False,['array-api-tests-torch.yml'],['82b8defd49722d43209357bfaa70c64519a05109'],1,1,2,1,,,
+124d6c331102b538c0384b7f2f52b882fdab71cd,Add a missing torch xfail,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-22 14:42:17-07:00,25200,2023-02-22 14:42:17-07:00,25200,True,False,['torch-xfails.txt'],['b014c1b460c8dd22693704ef4d18638e66abdf7a'],0,1,1,1,,,
+847a9e5b12567b4607d007381ff21a4dffba8087,Add a missing torch xfail,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-22 15:36:17-07:00,25200,2023-02-22 15:36:17-07:00,25200,True,False,['torch-xfails.txt'],['124d6c331102b538c0384b7f2f52b882fdab71cd'],0,1,1,1,,,
+0857b86c278418b65be355962cd8412c0d521e81,"Skip test_floor_divide, which core dumps on CI",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-22 17:15:45-07:00,25200,2023-02-22 17:15:45-07:00,25200,True,False,['torch-skips.txt'],['847a9e5b12567b4607d007381ff21a4dffba8087'],0,1,1,1,,,
+6354cd963cb6753edb2d1cbba6076c9209f16fae,Add a missing torch xfail,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-22 18:20:57-07:00,25200,2023-02-22 18:20:57-07:00,25200,True,False,['torch-xfails.txt'],['0857b86c278418b65be355962cd8412c0d521e81'],0,1,1,1,,,
+0565dee5fb3a20639f46a27440e09e94741e751d,Update the README,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 14:30:21-07:00,25200,2023-02-23 14:30:21-07:00,25200,True,False,['README.md'],['6354cd963cb6753edb2d1cbba6076c9209f16fae'],69,150,219,1,,,
+e9b447c52ced97f4f9d203c29056af3b8167d8cc,Fix some formatting in the README,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 14:32:27-07:00,25200,2023-02-23 14:32:27-07:00,25200,True,False,['README.md'],['0565dee5fb3a20639f46a27440e09e94741e751d'],3,6,9,1,,,
+bb4d3af335eedbc922513224c08ca8273cd41cba,Typo fix,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 14:33:16-07:00,25200,2023-02-23 14:33:16-07:00,25200,True,False,['README.md'],['e9b447c52ced97f4f9d203c29056af3b8167d8cc'],1,1,2,1,,,
+5545635faa2a1b05e2f2eb9c60d4c3f214b0fd89,"Update torch reduction functions that don't support multiple axes
+
+Instead of applying them multiple times, we move the dimensions to the end and
+flatten, and apply them once.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 14:50:42-07:00,25200,2023-02-23 14:50:42-07:00,25200,True,False,['_aliases.py'],['bb4d3af335eedbc922513224c08ca8273cd41cba'],28,24,52,1,1.0,1.0,1.0
+a78f733adc3995ca07dddbf77628e584676fe2dc,Add a test skip that crashes on CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 14:52:13-07:00,25200,2023-02-23 14:52:13-07:00,25200,True,False,['torch-skips.txt'],['5545635faa2a1b05e2f2eb9c60d4c3f214b0fd89'],0,1,1,1,,,
+0cefa7b007010275cab90077ab57946823c57d4c,Add a CHANGELOG for the upcoming 1.1 release,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 15:01:55-07:00,25200,2023-02-23 15:01:55-07:00,25200,True,False,['CHANGELOG.md'],['a78f733adc3995ca07dddbf77628e584676fe2dc'],0,22,22,1,,,
+1aceff51a270677a0ce4127701f4c92e73100a3f,Add more skips for tests that crash on CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 15:03:28-07:00,25200,2023-02-23 15:03:28-07:00,25200,True,False,['torch-skips.txt'],['0cefa7b007010275cab90077ab57946823c57d4c'],0,2,2,1,,,
+b016d4c90b8b45fac6c68fb3147ad202ea3a8bf4,Skip a torch test that crashes CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 15:53:09-07:00,25200,2023-02-23 15:53:09-07:00,25200,True,False,['torch-skips.txt'],['1aceff51a270677a0ce4127701f4c92e73100a3f'],0,1,1,1,,,
+1cd43f20472bcb4e2f199306b9916d366c5607f3,Add a torch xfail,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 16:27:29-07:00,25200,2023-02-23 16:27:29-07:00,25200,True,False,['torch-xfails.txt'],['b016d4c90b8b45fac6c68fb3147ad202ea3a8bf4'],0,3,3,1,,,
+c8a5a70e4f68c5d5cb0491498567c74151c35d90,Add a script to manually run the cupy tests,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 16:52:28-07:00,25200,2023-02-23 16:52:28-07:00,25200,True,False,['test_cupy.sh'],['1cd43f20472bcb4e2f199306b9916d366c5607f3'],0,26,26,1,,,
+7261dae61bf18aaab835d3dbf49016a17e174e13,Add a torch skip,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-23 16:53:57-07:00,25200,2023-02-23 16:53:57-07:00,25200,True,False,['torch-skips.txt'],['1cd43f20472bcb4e2f199306b9916d366c5607f3'],0,1,1,1,,,
+0368c8fb3e05bbb95648768ab6c1ec8339124403,Use cupy specific skips and xfails,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 15:09:12-07:00,25200,2023-02-24 15:09:12-07:00,25200,True,False,"['cupy-skips.txt', 'cupy-xfails.txt', 'test_cupy.sh']",['c8a5a70e4f68c5d5cb0491498567c74151c35d90'],1,154,155,3,,,
+2b456c25489544b34aa7b2c1187d23dee1e0a431,Allow passing pytest args through in test_cupy.sh,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 15:09:46-07:00,25200,2023-02-24 15:09:46-07:00,25200,True,False,['test_cupy.sh'],['0368c8fb3e05bbb95648768ab6c1ec8339124403'],1,1,2,1,,,
+046ffd0164c099f3552e9ec2e096a811aecbe4cb,Add a shebang to test_cupy.sh,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 15:10:22-07:00,25200,2023-02-24 15:10:22-07:00,25200,True,False,['test_cupy.sh'],['2b456c25489544b34aa7b2c1187d23dee1e0a431'],0,1,1,1,,,
+c3eb0d5739b8525d3036f7244f709b5b24ace993,Make the hypothesis examples database persistent in test_cupy.sh,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 15:16:45-07:00,25200,2023-02-24 15:16:45-07:00,25200,True,False,['test_cupy.sh'],['046ffd0164c099f3552e9ec2e096a811aecbe4cb'],0,5,5,1,,,
+111a12264a140717af2c016dae5864e2dff4f59a,Fix sort() and argsort() with cupy,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 16:28:04-07:00,25200,2023-02-24 16:28:04-07:00,25200,True,False,['_aliases.py'],['c3eb0d5739b8525d3036f7244f709b5b24ace993'],6,11,17,1,1.0,1.0,0.0
+09b5a6f49dfd0ca25e2134b4d1866e3024c0f5b6,Add comments for the rest of the cupy xfails,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 16:31:27-07:00,25200,2023-02-24 16:31:27-07:00,25200,True,False,['cupy-xfails.txt'],['111a12264a140717af2c016dae5864e2dff4f59a'],5,16,21,1,,,
+1908a00ff6d55fab1a6f28ff1bccdcb2b5d50b1a,Fix argument quoting in test_cupy.sh,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 17:24:29-07:00,25200,2023-02-24 17:24:29-07:00,25200,True,False,['test_cupy.sh'],['b780b9ada4a21531856c49801e65ad78041f4e8c'],1,1,2,1,,,
+5cbd1c05cd3fa08ace419ae33c2c929fa72f767a,Update cupy skips and xfails,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 17:24:45-07:00,25200,2023-02-24 17:24:45-07:00,25200,True,False,"['cupy-skips.txt', 'cupy-xfails.txt']",['1908a00ff6d55fab1a6f28ff1bccdcb2b5d50b1a'],0,10,10,2,,,
+6a63d5c15ea5fab41a6037e1e89043efd99c5042,Update cupy xfails,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 17:36:38-07:00,25200,2023-02-24 17:36:38-07:00,25200,True,False,['cupy-xfails.txt'],['5cbd1c05cd3fa08ace419ae33c2c929fa72f767a'],0,1,1,1,,,
+175f195417c1a85ebc98c38b16de72cc8a267a03,Update test_cupy.sh to run the vendoring tests,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 17:50:45-07:00,25200,2023-02-24 17:50:45-07:00,25200,True,False,['test_cupy.sh'],['6a63d5c15ea5fab41a6037e1e89043efd99c5042'],0,3,3,1,,,
+d1c7999a30ed404d9d7b41173ad0baad8cbcfc6c,Add a minor CHANGELOG entry,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 17:53:23-07:00,25200,2023-02-24 17:53:23-07:00,25200,True,False,['CHANGELOG.md'],['6a63d5c15ea5fab41a6037e1e89043efd99c5042'],0,2,2,1,,,
+2fb0a0a1b3c96b248a9201a015b160be346c7d65,Bump the version to 1.1,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 17:53:39-07:00,25200,2023-02-24 17:53:39-07:00,25200,True,False,"['CHANGELOG.md', '__init__.py']",['0e923b6552784142299e336d0630141fd6dd7611'],2,2,4,2,,,
+3470b36544d96a93ab92286127b1a177e0b0b588,Add a missing torch skip,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-02-24 18:02:13-07:00,25200,2023-02-24 18:02:13-07:00,25200,True,False,['torch-skips.txt'],['2fb0a0a1b3c96b248a9201a015b160be346c7d65'],0,1,1,1,,,
+c30b59eb6ff4461f7194e91eda6e68c2535a1ab7,Adds pytorch to get_namespace,Thomas J. Fan,thomasjpfan@gmail.com,Thomas J. Fan,thomasjpfan@gmail.com,2023-03-01 12:40:32-05:00,18000,2023-03-01 12:43:24-05:00,18000,True,False,"['_helpers.py', 'test_get_namespace.py']",['b143d0257896a1a316500760c28f1bb97f60bd80'],0,21,21,2,0.46153846153846156,0.46153846153846156,1.0
+2c4157cd9d8493a6c9a25156b2cbfc8a9adf9830,Calls __array_namespace__ when input already adopts ArrayAPI spec,Thomas J. Fan,thomasjpfan@gmail.com,Thomas J. Fan,thomasjpfan@gmail.com,2023-03-03 15:11:04-05:00,18000,2023-03-03 15:15:34-05:00,18000,True,False,"['_helpers.py', 'test_get_namespace.py']",['945609e64536a88d0f507d222140f97fa68776da'],1,8,9,2,1.0,1.0,1.0
+19dc4109e25f6c05dec98db5c2597300aa983597,"Add torch wrappers for ones(), zeros(), and empty()
+
+This allows shape to be passed as a keyword argument.
+
+Fixes #22.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 15:50:43-07:00,25200,2023-03-06 15:50:43-07:00,25200,True,False,['_aliases.py'],['e2203df4e412289ed64eeb70468dd02b0e72e607'],3,25,28,1,1.0,1.0,0.0
+642bbd1941b91935f0a33987b132db4bd442b410,Allow the xfails and skips files to be specified as inputs,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 16:11:10-07:00,25200,2023-03-06 16:11:10-07:00,25200,True,False,['array-api-tests.yml'],['19dc4109e25f6c05dec98db5c2597300aa983597'],2,9,11,1,,,
+6b6b48774126f528913143ea9240ec9c1d3b4c97,"Use package-version as an input instead
+
+GitHub Actions expressions are very limited in what you can do with them. The
+default cannot reference another variable, and there is no way to do
+manipulation or ""if"" clauses with them.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 16:47:57-07:00,25200,2023-03-06 16:47:57-07:00,25200,True,False,['array-api-tests.yml'],['642bbd1941b91935f0a33987b132db4bd442b410'],9,5,14,1,,,
+80a20e8797eac36f593ae2d2a940ff553d03957d,Add GitHub Actions tests for NumPy 1.21,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 16:50:04-07:00,25200,2023-03-06 16:50:04-07:00,25200,True,False,"['array-api-tests-numpy-1-21.yml', 'numpy-1-21-xfails.txt']",['6b6b48774126f528913143ea9240ec9c1d3b4c97'],0,59,59,2,,,
+c24abe424269fbad15b958c468abcd396f12e5a6,Fix workflow names,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 16:52:01-07:00,25200,2023-03-06 16:52:01-07:00,25200,True,False,"['array-api-tests-numpy-1-21.yml', 'array-api-tests-numpy.yml', 'array-api-tests-torch.yml']",['80a20e8797eac36f593ae2d2a940ff553d03957d'],3,3,6,3,,,
+e414cf4acfa4c0450436d5d74a33c33b1715d00d,Try fixing the pytest invocation,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 16:56:30-07:00,25200,2023-03-06 16:56:30-07:00,25200,True,False,['array-api-tests.yml'],['c24abe424269fbad15b958c468abcd396f12e5a6'],1,1,2,1,,,
+592ededdf6956c970a4652f232dd76ecc071233a,Use a different approach to get a different xfails file for numpy 1.21,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 17:02:46-07:00,25200,2023-03-06 17:02:46-07:00,25200,True,False,"['array-api-tests-numpy-1-21.yml', 'array-api-tests.yml']",['e414cf4acfa4c0450436d5d74a33c33b1715d00d'],2,11,13,2,,,
+2490692a98764b696c6b25dfc1acdff87c645538,Fix typo,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 18:35:18-07:00,25200,2023-03-06 18:35:18-07:00,25200,True,False,['array-api-tests.yml'],['592ededdf6956c970a4652f232dd76ecc071233a'],1,1,2,1,,,
+ab3a1c9fb753681e7ca6b0719efc658fc2fdd479,Don't run NumPy 1.21 in Python 3.11,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 23:12:59-07:00,25200,2023-03-06 23:12:59-07:00,25200,True,False,['array-api-tests-numpy-1-21.yml'],['2490692a98764b696c6b25dfc1acdff87c645538'],0,4,4,1,,,
+68dd2eaa71663db99cc9480be202ed16c57f80b7,Use better syntax to skip 3.11,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 23:15:45-07:00,25200,2023-03-06 23:15:45-07:00,25200,True,False,['array-api-tests-numpy-1-21.yml'],['ab3a1c9fb753681e7ca6b0719efc658fc2fdd479'],4,2,6,1,,,
+912fd11544edaac9744a14e986624c60ab435384,Set the Python version in an environment variable,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-06 23:20:19-07:00,25200,2023-03-06 23:20:19-07:00,25200,True,False,"['array-api-tests-numpy-1-21.yml', 'array-api-tests.yml']",['68dd2eaa71663db99cc9480be202ed16c57f80b7'],1,2,3,2,,,
+8358e1c23a39f5cf3d5a87800bae9f009f5582d0,Move the Numpy 1.21 skip to the main config file,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 14:22:28-07:00,25200,2023-03-07 14:22:28-07:00,25200,True,False,"['array-api-tests-numpy-1-21.yml', 'array-api-tests.yml']",['912fd11544edaac9744a14e986624c60ab435384'],3,4,7,2,,,
+eaf7b0aa0199990638f10b3c761ea52c58e58fde,Try to fix workflow syntax,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 14:23:05-07:00,25200,2023-03-07 14:23:05-07:00,25200,True,False,['array-api-tests.yml'],['8358e1c23a39f5cf3d5a87800bae9f009f5582d0'],1,1,2,1,,,
+20c56befa0d71321afe115c2dbb7c21e16ab75fe,Try to fix workflow syntax,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 14:25:49-07:00,25200,2023-03-07 14:25:49-07:00,25200,True,False,['array-api-tests.yml'],['eaf7b0aa0199990638f10b3c761ea52c58e58fde'],1,1,2,1,,,
+78dc3e52251ede5e83f7974e2f7b311461bef254,Move the if down to the steps,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 14:30:49-07:00,25200,2023-03-07 14:30:49-07:00,25200,True,False,['array-api-tests.yml'],['20c56befa0d71321afe115c2dbb7c21e16ab75fe'],4,4,8,1,,,
+e7e1fb5e3968e6b4b0b8454bf91046b3ee7b0cbe,"Fix torch std() with integral float correction
+
+Fixes #24",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 14:33:40-07:00,25200,2023-03-07 14:34:29-07:00,25200,True,False,['_aliases.py'],['78dc3e52251ede5e83f7974e2f7b311461bef254'],4,6,10,1,0.0,0.0,0.0
+30f4faccc45337ab648e4c04a7c1596ede207550,"Make get_namespace() raise TypeError instead of ValueError
+
+Fixes #26.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 15:15:22-07:00,25200,2023-03-07 15:15:22-07:00,25200,True,False,['_helpers.py'],['e7e1fb5e3968e6b4b0b8454bf91046b3ee7b0cbe'],3,3,6,1,,,
+5ff736612898cb061c2703948e84acfe15d85a22,Add some more tests for get_namespace,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 15:15:43-07:00,25200,2023-03-07 15:15:43-07:00,25200,True,False,['test_get_namespace.py'],['30f4faccc45337ab648e4c04a7c1596ede207550'],1,20,21,1,1.0,1.0,1.0
+bb5da85f63bb3abe54f57749e8385068782cb024,Add an example to the get_namespace docstring,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 15:17:05-07:00,25200,2023-03-07 15:17:05-07:00,25200,True,False,['_helpers.py'],['5ff736612898cb061c2703948e84acfe15d85a22'],0,7,7,1,,,
+54f5f6444c2b1cc0dd7e3c6c7b92bb328f0c830c,"Fix some compatibility issues with NumPy 1.21
+
+The equal_nan keyword to unique() and np._CopyMode aren't in this version.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 15:39:17-07:00,25200,2023-03-07 15:39:17-07:00,25200,True,False,['_aliases.py'],['bb5da85f63bb3abe54f57749e8385068782cb024'],6,25,31,1,0.0,0.6923076923076923,0.6923076923076923
+5eba5fe9a297e32baa52643e5d6daeb35ab9168c,Update NumPy 1.21 XFAILs,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 16:33:03-07:00,25200,2023-03-07 16:33:03-07:00,25200,True,False,['numpy-1-21-xfails.txt'],['54f5f6444c2b1cc0dd7e3c6c7b92bb328f0c830c'],0,119,119,1,,,
+a1bb95847a8239f51f14a15a76607e533b9fb9fc,Add notes about minumum supported versions in the README,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 16:42:51-07:00,25200,2023-03-07 16:42:51-07:00,25200,True,False,['README.md'],['5eba5fe9a297e32baa52643e5d6daeb35ab9168c'],0,20,20,1,,,
+e722706e9a373450ce749bcdee59706b4cedc2d4,Add the api_version keyword to get_namespace,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 17:56:30-07:00,25200,2023-03-07 17:56:30-07:00,25200,True,False,"['_helpers.py', 'test_get_namespace.py']",['a1bb95847a8239f51f14a15a76607e533b9fb9fc'],14,21,35,2,0.25,0.25,0.0
+008e1b0021544e1ad82f1f0c21719821f26d7ff5,Update NumPy 1.12 XFAILs,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 18:00:52-07:00,25200,2023-03-07 18:00:52-07:00,25200,True,False,['numpy-1-21-xfails.txt'],['e722706e9a373450ce749bcdee59706b4cedc2d4'],62,87,149,1,,,
+6ba689ea19f102022da1ff4dd472506a4200c6b4,Update NumPy 1.21 xfails,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-07 19:24:24-07:00,25200,2023-03-07 19:24:24-07:00,25200,True,False,['numpy-1-21-xfails.txt'],['008e1b0021544e1ad82f1f0c21719821f26d7ff5'],1,13,14,1,,,
+f652dd412e1907edec92395b191ddd33ff2836bf,Add some missing NumPy 1.21 XFAILs,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-08 15:03:53-07:00,25200,2023-03-08 15:03:53-07:00,25200,True,False,['numpy-1-21-xfails.txt'],['6ba689ea19f102022da1ff4dd472506a4200c6b4'],1,9,10,1,,,
+902fefdbc3a5acdd4aecc25a966159ea7ce78a87,Add a CHANGELOG for a 1.1.1 release,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-08 15:09:11-07:00,25200,2023-03-08 15:09:11-07:00,25200,True,False,['CHANGELOG.md'],['f652dd412e1907edec92395b191ddd33ff2836bf'],0,21,21,1,,,
+eaf1e5260d41058ee261484e5b3f00f816964374,"Rename get_namespace to array_namespace
+
+get_namespace is maintained as a backwards compatible alias.
+
+Fixes #19.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-08 15:15:12-07:00,25200,2023-03-08 15:15:12-07:00,25200,True,False,"['CHANGELOG.md', 'README.md', '_aliases.py', '_helpers.py', 'test_array_namespace.py', 'test_get_namespace.py']",['902fefdbc3a5acdd4aecc25a966159ea7ce78a87'],51,65,116,6,1.0,1.0,1.0
+d2f9ba923da772a9f357b272f1529eb74677854d,Add some missing NumPy 1.21 XFAILs,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-08 16:38:08-07:00,25200,2023-03-08 17:00:43-07:00,25200,True,False,['numpy-1-21-xfails.txt'],['902fefdbc3a5acdd4aecc25a966159ea7ce78a87'],0,4,4,1,,,
+c992c88380bf5f7c6420c09903e4d7d64d63e86c,Fix the job name for NumPy 1.21,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-08 16:39:12-07:00,25200,2023-03-08 17:00:51-07:00,25200,True,False,['array-api-tests-numpy.yml'],['d2f9ba923da772a9f357b272f1529eb74677854d'],1,1,2,1,,,
+14a7ca372448fdfd37aac0c4e80c53ce730aa1bb,Add missing NumPy 1.21 XFAILs,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-09 16:27:39-07:00,25200,2023-03-09 16:27:39-07:00,25200,True,False,['numpy-1-21-xfails.txt'],['c992c88380bf5f7c6420c09903e4d7d64d63e86c'],0,2,2,1,,,
+9fb5d98617b0637dcb1fca38881465e91b2eea39,Add missing NumPy 1.21 xfails,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-09 17:32:02-07:00,25200,2023-03-09 17:32:02-07:00,25200,True,False,['numpy-1-21-xfails.txt'],['14a7ca372448fdfd37aac0c4e80c53ce730aa1bb'],0,2,2,1,,,
+8403874f35673eaa01a7e9610d06e89822e76b14,Add a numpy 1.21 xfail,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-10 00:18:40-07:00,25200,2023-03-10 00:18:40-07:00,25200,True,False,['numpy-1-21-xfails.txt'],['9fb5d98617b0637dcb1fca38881465e91b2eea39'],0,1,1,1,,,
+f85f4271df6966a35200661550105b4ddccb3e50,Add a missing NumPy 1.21 xfail,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-10 13:47:06-07:00,25200,2023-03-10 13:47:06-07:00,25200,True,False,['numpy-1-21-xfails.txt'],['8403874f35673eaa01a7e9610d06e89822e76b14'],0,1,1,1,,,
+f8cbed459432a8f55ad50bc12785df762b9b8272,Update XFAILs,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-10 15:37:16-07:00,25200,2023-03-10 15:37:16-07:00,25200,True,False,"['numpy-1-21-xfails.txt', 'numpy-xfails.txt']",['07063877626eaf2b1d0f4f4ab134cd8a25217765'],0,10,10,2,,,
+791698f8757a0f51a37bc693aec2e30647b69b1c,"Skip the same tests on NumPy as Torch
+
+They also cause floating-point exceptions on CI. There must be some issue with
+the underlying CI math library.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-10 16:57:37-07:00,25200,2023-03-10 16:57:37-07:00,25200,True,False,['numpy-skips.txt'],['f8cbed459432a8f55ad50bc12785df762b9b8272'],0,10,10,1,,,
+63e57dc5ba3641924bef95c12d4ca4c2e48335fa,Update 1.1.1 release date to today,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-10 16:58:40-07:00,25200,2023-03-10 16:58:40-07:00,25200,True,False,['CHANGELOG.md'],['2807a6a341d3d5736384b6a1704b0ed6a5678165'],1,1,2,1,,,
+269a6da2c27b97da3f6b71d919d70ff4c6125585,Add a missing numpy 1.12 xfail,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-10 17:27:05-07:00,25200,2023-03-10 17:27:54-07:00,25200,True,False,['numpy-1-21-xfails.txt'],['791698f8757a0f51a37bc693aec2e30647b69b1c'],0,1,1,1,,,
+0feabdb183dbe31a5231dec401d4bcfc677810d8,Add a missing skip,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-10 18:21:01-07:00,25200,2023-03-10 18:21:01-07:00,25200,True,False,"['numpy-skips.txt', 'torch-skips.txt']",['269a6da2c27b97da3f6b71d919d70ff4c6125585'],14,16,30,2,,,
+42a110df335a4321ac5bd39905a8dbf34a592936,Bump version to 1.1.1,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-11 00:06:52-07:00,25200,2023-03-11 00:06:52-07:00,25200,True,False,['__init__.py'],['8ae1865909bc0e10e8cf72f0e666d0cc2ff151e5'],1,1,2,1,,,
+0bef9825c4035ec306459043d7f0eafa34446bfa,Add isdtype implementation for numpy/cupy with some initial testing,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-13 18:08:26-06:00,21600,2023-03-13 18:08:26-06:00,21600,True,False,"['_aliases.py', '_aliases.py', '_aliases.py', '_helpers.py', 'test_array_namespace.py', 'test_isdtype.py']",['58cd3b9484c706b8947cc1bbbe1cbbf2c2dda378'],2,142,144,6,0.125,0.42045454545454547,0.6363636363636364
+fa772de34fc906ca650e7e8bdeec2d192c9dc5b5,Fix test skipping for cupy,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-13 18:25:36-06:00,21600,2023-03-13 18:25:36-06:00,21600,True,False,['_helpers.py'],['0bef9825c4035ec306459043d7f0eafa34446bfa'],1,1,2,1,,,
+a375e9df8c3e6d6b8139c4bbf66f85499e287b4e,Test complex dtypes in test_isdtype,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-13 18:30:08-06:00,21600,2023-03-13 18:30:08-06:00,21600,True,False,"['_aliases.py', 'test_isdtype.py']",['fa772de34fc906ca650e7e8bdeec2d192c9dc5b5'],0,7,7,2,0.0,0.5714285714285714,0.5714285714285714
+7c7c02e394505e4fc888a2a615f50b79a79388aa,Test additional dtypes in test_isdtype,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-13 18:30:22-06:00,21600,2023-03-13 18:30:22-06:00,21600,True,False,['test_isdtype.py'],['a375e9df8c3e6d6b8139c4bbf66f85499e287b4e'],1,23,24,1,1.0,1.0,1.0
+fc90e1b6103812d4ee30a52e7f6711ebf3b6b275,Add isdtype support for pytorch,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-13 18:34:59-06:00,21600,2023-03-13 18:34:59-06:00,21600,True,False,['_aliases.py'],['7c7c02e394505e4fc888a2a615f50b79a79388aa'],4,45,49,1,0.0,0.0,0.0
+a8c92e50e075a09cf02b976de216bffa8a61c19f,Return instead of skipping (so there are no skips in the test output),Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-13 18:47:20-06:00,21600,2023-03-13 18:47:20-06:00,21600,True,False,['test_isdtype.py'],['fc90e1b6103812d4ee30a52e7f6711ebf3b6b275'],1,2,3,1,,,
+c55eb4375cd33c7b686fdc09e7149b2faf732d63,"Fix the tril and triu functions in torch
+
+They did not support the k keyword argument.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-17 17:14:09-06:00,21600,2023-03-17 17:14:09-06:00,21600,True,False,['_aliases.py'],['0cf6967368c303bb4f334257857aefad99c6f042'],3,12,15,1,1.0,1.0,1.0
+8ca03d2ade54e61335dd26ce2a1759dae432cfad,Add missing names to torch.linalg,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-17 17:21:38-06:00,21600,2023-03-17 17:22:19-06:00,21600,True,False,"['__init__.py', '__init__.py', 'linalg.py']",['c55eb4375cd33c7b686fdc09e7149b2faf732d63'],8,19,27,3,,,
+e2d202f8098fc91c6c82dd755c90cdf7d1b853f6,Remove torch linalg xfails,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-17 18:11:26-06:00,21600,2023-03-17 18:11:26-06:00,21600,True,False,['torch-xfails.txt'],['8ca03d2ade54e61335dd26ce2a1759dae432cfad'],11,0,11,1,,,
+1a79fb0b3981498154092617888db98f906867a8,Move 'array = torch.Tensor' under 'if TYPE_CHECKING',Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-17 18:24:26-06:00,21600,2023-03-17 18:24:26-06:00,21600,True,False,['_aliases.py'],['e2d202f8098fc91c6c82dd755c90cdf7d1b853f6'],2,3,5,1,,,
+148a892047cbff89ef0685a5e62df03c89a326fc,Define torch.linalg.cross wrapper,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-17 18:24:52-06:00,21600,2023-03-17 18:24:52-06:00,21600,True,False,['linalg.py'],['1a79fb0b3981498154092617888db98f906867a8'],4,16,20,1,1.0,1.0,0.0
+968e499205ecb7d93dcaa3778ca7ee3ab910ca3e,Add implementation for torch.linalg.vecdot for integer dtypes,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-27 19:43:42-06:00,21600,2023-03-27 19:43:42-06:00,21600,True,False,['linalg.py'],['b32a5b32892f5f4b5052ef54a04b8ed51936b008'],1,22,23,1,1.0,1.0,0.0
+dfc12755e19040dc00935007cdbff8de74509f82,Pass kwargs through to torch.linalg.vecdot,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-27 19:50:00-06:00,21600,2023-03-27 19:50:00-06:00,21600,True,False,['linalg.py'],['968e499205ecb7d93dcaa3778ca7ee3ab910ca3e'],2,4,6,1,0.0,1.0,0.0
+d6bf189a46a2ce3d2fd0349dc13540ce0a25d03b,Add wrapper for torch.linalg.solve that does correct type promotion,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-27 19:50:50-06:00,21600,2023-03-27 19:50:50-06:00,21600,True,False,['linalg.py'],['dfc12755e19040dc00935007cdbff8de74509f82'],1,6,7,1,1.0,1.0,0.0
+e6aa969ec511c6ea6c30b636baa1d0de512990bb,The torch log1p test can apparently fail on CI too,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-28 18:39:03-06:00,21600,2023-03-28 18:39:03-06:00,21600,True,False,['torch-xfails.txt'],['d6bf189a46a2ce3d2fd0349dc13540ce0a25d03b'],2,2,4,1,,,
+32fc8e77ff9c403c2a463737a3bd24077a2aaa30,Add missing numpy 1.21 xfail,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-28 19:28:36-06:00,21600,2023-03-28 19:28:36-06:00,21600,True,False,['numpy-1-21-xfails.txt'],['e6aa969ec511c6ea6c30b636baa1d0de512990bb'],0,1,1,1,,,
+05204b3b0c6815e8b71b7717b598539edc2db889,Fix the naming of the numpy jobs on CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-28 19:29:49-06:00,21600,2023-03-28 19:29:49-06:00,21600,True,False,"['array-api-tests-numpy-1-21.yml', 'array-api-tests-numpy.yml']",['32fc8e77ff9c403c2a463737a3bd24077a2aaa30'],2,2,4,2,,,
+67ec13fc300a7486dbe6aabc49e17e59b23b3c60,Add note about torch linalg testing on CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-31 16:42:14-06:00,21600,2023-03-31 16:42:14-06:00,21600,True,False,['array-api-tests-torch.yml'],['5d3a92cc9d15a909da13ded3f6ff6b811b4c4cd2'],0,2,2,1,,,
+04dea11b5ecd97c9d0b1dbf4776bd0fdb0d83ef6,Update changelog for a 1.2 release,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-31 16:43:48-06:00,21600,2023-03-31 16:43:48-06:00,21600,True,False,['CHANGELOG.md'],['67ec13fc300a7486dbe6aabc49e17e59b23b3c60'],0,12,12,1,,,
+ee02637865eddc1a116c21e21aa5ee5a891e2f27,Bump version to 1.2,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-03-31 16:44:40-06:00,21600,2023-03-31 16:44:40-06:00,21600,True,False,['__init__.py'],['04dea11b5ecd97c9d0b1dbf4776bd0fdb0d83ef6'],1,1,2,1,,,
+835c3351d218e8cdba24e8e2e910c1b7f7fe78db,Update release date,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-04-03 14:47:44-06:00,21600,2023-04-03 14:47:44-06:00,21600,True,False,['CHANGELOG.md'],['ee02637865eddc1a116c21e21aa5ee5a891e2f27'],1,1,2,1,,,
+8c872f0bb02d447b3b00d6a487f1c46752ba7afb,Update torch.take and torch.result_type for the 2022 spec,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-04-18 14:49:55-06:00,21600,2023-04-18 14:49:55-06:00,21600,True,False,"['__init__.py', '_aliases.py']",['9ef7f72fa91ddc4561148f906d386d08e65def7d'],2,17,19,2,1.0,1.0,0.0
+b9ceea9d452addc041e57a5e01c6473ae0898958,"ENH: support CuPy to_device ""cpu""
+
+* allow `to_device(x, ""cpu"")` for CuPy--this makes
+it easier to write portable unit tests where the
+expected value is on the host (a NumPy array)
+
+* otherwise, you can end up writing different shims
+in downstream libraries to move the array-like back
+to the host (`.get()` for CuPy...); if CuPy conforms
+to the standard, we shouldn't need this shim long-term",Tyler Reddy,tyler.je.reddy@gmail.com,Tyler Reddy,tyler.je.reddy@gmail.com,2023-04-28 11:57:05-06:00,21600,2023-04-28 11:57:05-06:00,21600,True,False,"['_helpers.py', 'test_common.py']",['9ef7f72fa91ddc4561148f906d386d08e65def7d'],0,28,28,2,0.75,0.75,0.75
+de687812064138fe51b1d3030b91eeed3d1203c3,Use the main array-api-tests repo instead of my fork on CI,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-04-28 14:09:05-06:00,21600,2023-04-28 14:09:05-06:00,21600,True,False,['array-api-tests.yml'],['2ec609d302b429d322714c8234952b1c32488bd2'],5,1,6,1,,,
+0b4fcd965569fc29171403d6cf4bca9e2d093d54,Don't perform the reshape in-place when copy=False for numpy and cupy,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-04-28 16:15:30-06:00,21600,2023-04-28 16:15:30-06:00,21600,True,False,['_aliases.py'],['de687812064138fe51b1d3030b91eeed3d1203c3'],3,4,7,1,1.0,1.0,0.0
+977fcebdf7ca91370070ac2f0c288b976d5b64ec,"Add reshape() to torch
+
+The copy keyword raises NotImplementedError for now",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-04-28 16:16:17-06:00,21600,2023-04-28 16:16:17-06:00,21600,True,False,['_aliases.py'],['0b4fcd965569fc29171403d6cf4bca9e2d093d54'],2,12,14,1,1.0,1.0,0.0
+4eb945c9aaf1724cdf729a48f77aa68a95b20471,ENH: disallow passing array-like to array_namespace,Pamphile Roy,roy.pamphile@gmail.com,Pamphile Roy,roy.pamphile@gmail.com,2023-05-02 17:23:44+02:00,-7200,2023-05-02 17:23:44+02:00,-7200,True,False,"['_helpers.py', 'test_array_namespace.py']",['9ef7f72fa91ddc4561148f906d386d08e65def7d'],9,2,11,2,0.3333333333333333,0.3333333333333333,0.3333333333333333
+9507a42fd1eee6b7fbf88a75e5fb549b2d32dbf9,TST: use previous array test,Pamphile Roy,roy.pamphile@gmail.com,Pamphile Roy,roy.pamphile@gmail.com,2023-05-04 12:36:21+02:00,-7200,2023-05-04 12:36:21+02:00,-7200,True,False,['test_array_namespace.py'],['4eb945c9aaf1724cdf729a48f77aa68a95b20471'],2,6,8,1,1.0,1.0,1.0
+398279b9d1f4bc23ea13c5f1100aeefd23ab4d7d,Update __array_api_version__ to 2022.12 for numpy and cupy,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-08 16:17:08-06:00,21600,2023-06-08 16:17:08-06:00,21600,True,False,"['__init__.py', '__init__.py']",['8c872f0bb02d447b3b00d6a487f1c46752ba7afb'],2,2,4,2,,,
+48cc74569756ad73765043c2234e166fcfd86418,"Fix numpy/cupy sum(), prod(), and trace() for complex upcasting with dtype=None",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-08 16:17:25-06:00,21600,2023-06-08 16:17:25-06:00,21600,True,False,"['_aliases.py', '_linalg.py']",['398279b9d1f4bc23ea13c5f1100aeefd23ab4d7d'],7,18,25,2,0.0,1.0,0.0
+50e273db780042c84ef199928175cf20fc2ff6b8,Fix some minor signature issues in the torch wrappers,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-09 14:45:38-06:00,21600,2023-06-09 14:45:38-06:00,21600,True,False,['_aliases.py'],['48cc74569756ad73765043c2234e166fcfd86418'],8,15,23,1,1.0,1.0,0.5
+d26a84775bdd4212070b683dc579ad812ffb6053,Use the master branch of array-api-tests everywhere,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-16 16:23:11-06:00,21600,2023-06-16 16:23:11-06:00,21600,True,False,"['array-api-tests.yml', 'test_cupy.sh']",['50e273db780042c84ef199928175cf20fc2ff6b8'],9,2,11,2,,,
+b3aaf877bab8180b5a04588f5455715518460a37,Fix syntax error,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-16 18:02:37-06:00,21600,2023-06-16 18:02:37-06:00,21600,True,False,['_aliases.py'],['2d65f3934302876e6ea8b845393795e9f2429b45'],1,1,2,1,,,
+d43850c8662872e4ca62aebffb81dc7006386c32,Update cupy xfails,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-16 21:47:16-06:00,21600,2023-06-16 21:47:16-06:00,21600,True,False,['cupy-xfails.txt'],['b3aaf877bab8180b5a04588f5455715518460a37'],0,5,5,1,,,
+1637aa33cd830ab57454ad4fbdfa8b43b759e56e,XFAIL test_square everywhere due to https://github.com/data-apis/array-api-tests/issues/190,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-19 15:24:57-06:00,21600,2023-06-19 15:24:57-06:00,21600,True,False,"['numpy-1-21-xfails.txt', 'numpy-xfails.txt', 'torch-xfails.txt']",['d43850c8662872e4ca62aebffb81dc7006386c32'],0,12,12,3,,,
+91b7bf32418c6b72e1a77de69d600f30fe349b13,Update torch xfails for functions that don't support complex numbers,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-19 15:50:58-06:00,21600,2023-06-19 15:50:58-06:00,21600,True,False,['torch-xfails.txt'],['1637aa33cd830ab57454ad4fbdfa8b43b759e56e'],0,7,7,1,,,
+ce5e7b721fc004b17c518c4bc8db323a84e723f8,Update README,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-19 15:51:55-06:00,21600,2023-06-19 15:51:55-06:00,21600,True,False,['README.md'],['91b7bf32418c6b72e1a77de69d600f30fe349b13'],2,0,2,1,,,
+68dd6296c63383ebc56b9cb22a374f6f20cd3d8a,Update README,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-20 11:59:51-06:00,21600,2023-06-20 11:59:51-06:00,21600,True,False,['README.md'],['ce5e7b721fc004b17c518c4bc8db323a84e723f8'],5,2,7,1,,,
+6bd5e43531f2d9c139f6baa73bbe5be02c14b155,Bump version to 1.3,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-06-20 12:05:07-06:00,21600,2023-06-20 12:05:07-06:00,21600,True,False,"['CHANGELOG.md', '__init__.py']",['68dd6296c63383ebc56b9cb22a374f6f20cd3d8a'],1,17,18,2,,,
+874ede29a765943e1c87373509a7fb1c472732d4,Fix broken link to 2022.12 standard,kadykov,62546709+kadykov@users.noreply.github.com,GitHub,noreply@github.com,2023-07-04 16:21:13+02:00,-7200,2023-07-04 16:21:13+02:00,-7200,True,False,['README.md'],['34e9d0ca7f18a0256c131f1c473eb9b5e13af92c'],2,2,4,1,,,
+4fd4a0dbe2338fe366a4f9fb7e57e536b2ce1465,"Fix the torch.take() wrapper to make axis optional for ndim = 1
+
+Closes #34",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-07-15 11:16:10-05:00,18000,2023-07-15 11:16:10-05:00,18000,True,False,['_aliases.py'],['dab6775d3831eca0512a1b4ef6e5f8a439574cda'],1,5,6,1,1.0,1.0,0.0
+2e23d9493461a73e26ea7b1cfa476363afe82cee,"DOC: Add PyPI and Conda-forge install instructions
+
+* c.f.
+   - https://pypi.org/project/array-api-compat/
+   - https://anaconda.org/conda-forge/array-api-compat",Matthew Feickert,matthew.feickert@cern.ch,Matthew Feickert,matthew.feickert@cern.ch,2023-07-15 17:12:49-05:00,18000,2023-07-15 17:12:52-05:00,18000,True,False,['README.md'],['dab6775d3831eca0512a1b4ef6e5f8a439574cda'],0,14,14,1,,,
+01817b6f8c2ece3d85bbb054197f6834bf909514,"MNT: Add requires-python metadata
+
+* Add requires-python metadata through the addition of setuptools's
+  python_requires in setup.py.
+   - c.f. https://peps.python.org/pep-0621/#requires-python
+   - Set minimum required python to 3.8 as Python 3.7 is EOL as of 2023-06-27.
+     c.f. https://devguide.python.org/versions/#unsupported-versions
+
+* The addition of requires-python is to provide guards to keep older
+  CPython versions from installing releases that could contain
+  unrunnable code.",Matthew Feickert,matthew.feickert@cern.ch,Matthew Feickert,matthew.feickert@cern.ch,2023-07-15 22:17:15-05:00,18000,2023-07-15 22:17:55-05:00,18000,True,False,['setup.py'],['ae7aa8efe660e75bd4f7605dd4f5fddcc4bf34d9'],0,1,1,1,,,
+bbca293dd15dd08b568b5a6030fb42af8e4e85c6,DOC: Add Python version PyPI trove classifier metadata,Matthew Feickert,matthew.feickert@cern.ch,Matthew Feickert,matthew.feickert@cern.ch,2023-07-15 22:25:09-05:00,18000,2023-07-15 22:25:09-05:00,18000,True,False,['setup.py'],['01817b6f8c2ece3d85bbb054197f6834bf909514'],0,4,4,1,,,
+5b073a15012f413fd2208bbd52ffff99713b8d29,"CI: Add publishing to PyPI and TestPyPI with trusted publishers
+
+* Use the OpenID Connect (OIDC) standard to publish to PyPI and TestPyPI
+  using PyPI's ""Trusted Publisher"" implementation to publish without
+  using API tokens stored as GitHub Actions secrets. Use an optional
+  GitHub Actions environment to further restrict publishing to selected
+  branches for additional security.
+   - c.f. https://blog.pypi.org/posts/2023-04-20-introducing-trusted-publishers/
+   - c.f. https://docs.pypi.org/trusted-publishers/",Matthew Feickert,matthew.feickert@cern.ch,Matthew Feickert,matthew.feickert@cern.ch,2023-07-16 10:41:17-05:00,18000,2023-08-18 13:22:07-05:00,18000,True,False,['publish-package.yml'],['546fa3d65dde1cc20c68b2d22241f7977a8c08fa'],0,105,105,1,,,
+1f146b616760ac74162cb8928e3901879914a980,"MNT: Add Dependabot config for GitHub Actions updates
+
+* Add Dependabot config for weekly updates to GitHub Actions for
+  security best practices.
+   - c.f. https://learn.scientific-python.org/development/guides/gha-basic/#updating",Matthew Feickert,matthew.feickert@cern.ch,Matthew Feickert,matthew.feickert@cern.ch,2023-07-18 00:55:14-05:00,18000,2023-08-18 13:22:08-05:00,18000,True,False,['dependabot.yml'],['5b073a15012f413fd2208bbd52ffff99713b8d29'],0,12,12,1,,,
+f0470686b7d296f678a91a5b20ee5c17eaab1d51,BUG: fix `torch.result_type` cross-kind promotion (#55),Lucas Colley,51488791+lucascolley@users.noreply.github.com,GitHub,noreply@github.com,2023-09-06 09:05:53+01:00,-3600,2023-09-06 10:05:53+02:00,-7200,True,False,['_aliases.py'],['546fa3d65dde1cc20c68b2d22241f7977a8c08fa'],0,2,2,1,0.0,0.0,1.0
+da6cf4429623b5af427a2d2a4d511109ac308af2,Add release notes for 1.4,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-11 16:29:49-06:00,21600,2023-09-11 16:29:49-06:00,21600,True,False,['CHANGELOG.md'],['31aec6281c5c61ccc58c9cb5dbf80a207f4707df'],0,17,17,1,,,
+3a150bd7b4bbf8d2bcf0677cdf324ae4f5829473,XFAIL test_linspace for numpy 1.21,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-11 21:53:12-06:00,21600,2023-09-11 21:53:12-06:00,21600,True,False,['numpy-1-21-xfails.txt'],['da6cf4429623b5af427a2d2a4d511109ac308af2'],0,3,3,1,,,
+c542163e69598b567161e4a1cd5688bab6cbcdc6,"CI: Fix tag serach value for TestPyPI publishing
+
+* As the tag events that trigger workflows are not prefixed by 'v' but
+  instead just use SemVer numbers the GitHub Actions `startsWith`
+  function can only check if a tag has been pushed, as `startsWith`
+  does not support regex.
+   - c.f. https://docs.github.com/en/actions/learn-github-actions/expressions#startswith",Matthew Feickert,matthew.feickert@cern.ch,Matthew Feickert,matthew.feickert@cern.ch,2023-09-11 23:45:49-05:00,18000,2023-09-11 23:45:49-05:00,18000,True,False,['publish-package.yml'],['31aec6281c5c61ccc58c9cb5dbf80a207f4707df'],1,1,2,1,,,
+34ba74f7447383195e464103d03991fc52f7c0fc,"CI: Quote regex to avoid syntax error
+
+* Regex on tag must be quoted to avoid YAML syntax error.",Matthew Feickert,matthew.feickert@cern.ch,Matthew Feickert,matthew.feickert@cern.ch,2023-09-12 02:08:06-05:00,18000,2023-09-12 02:08:48-05:00,18000,True,False,['publish-package.yml'],['058c38a62598ba242f9cf96fcad12209ae6dc4c4'],2,2,4,1,,,
+49094b9e8ddd5738112dde9825d32d6d1aff675a,Add numpy 1.21 xfail,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-12 12:25:11-06:00,21600,2023-09-12 12:25:11-06:00,21600,True,False,['numpy-1-21-xfails.txt'],['b9255eae62a384730525bc93a9bcd63d25161c1e'],0,1,1,1,,,
+160e0d8af4784b29f7599129494bd23eae54aa99,Automatically create a GitHub release from a tag,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-13 15:48:05-06:00,21600,2023-09-13 15:48:05-06:00,21600,True,False,['publish-package.yml'],['49094b9e8ddd5738112dde9825d32d6d1aff675a'],0,6,6,1,,,
+0d8b2c637250a2565f58eb47db64a8e681e667e5,Bump version to 1.4,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-13 15:49:53-06:00,21600,2023-09-13 15:49:53-06:00,21600,True,False,['__init__.py'],['160e0d8af4784b29f7599129494bd23eae54aa99'],1,1,2,1,,,
+f32ee93d1c91d0a142728a4bbe0407ccad101e9c,Create the release after publishing to test pypi,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-13 16:16:02-06:00,21600,2023-09-13 16:16:02-06:00,21600,True,False,['publish-package.yml'],['0d8b2c637250a2565f58eb47db64a8e681e667e5'],6,6,12,1,,,
+078927993385cc024399ec08ad4a22d5a34ab47c,Fix release date,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-13 16:53:01-06:00,21600,2023-09-13 16:53:01-06:00,21600,True,False,['CHANGELOG.md'],['f32ee93d1c91d0a142728a4bbe0407ccad101e9c'],1,1,2,1,,,
+693f5da5910837d0699dc09e23bb66e503329b94,Add contents: write permissions for the release action,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-13 21:24:09-06:00,21600,2023-09-13 21:24:09-06:00,21600,True,False,['publish-package.yml'],['078927993385cc024399ec08ad4a22d5a34ab47c'],0,1,1,1,,,
+84d8a8d50c25029d2f495622188bcacef3faa034,Disable test pypi for now,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-14 01:09:43-06:00,21600,2023-09-14 01:09:43-06:00,21600,True,False,['publish-package.yml'],['693f5da5910837d0699dc09e23bb66e503329b94'],10,10,20,1,,,
+e1523e2450c89ec4f7fd6a39ed10c67ebd303ad2,"Fix publish to pypi action to actually run
+
+Apparently the release created by the action doesn't recursively cause the
+action to run.",Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-14 15:07:12-06:00,21600,2023-09-14 15:07:12-06:00,21600,True,False,['publish-package.yml'],['84d8a8d50c25029d2f495622188bcacef3faa034'],1,1,2,1,,,
+68486f3ab4cfa19edc1b15ff2eb9c33614f99660,Uncomment test pypi stuff,Aaron Meurer,asmeurer@gmail.com,Aaron Meurer,asmeurer@gmail.com,2023-09-14 15:36:46-06:00,21600,2023-09-14 15:36:46-06:00,21600,True,False,['publish-package.yml'],['e1523e2450c89ec4f7fd6a39ed10c67ebd303ad2'],10,10,20,1,,,
+8117a4b9a6caa95627ed40e8e1920da4ac0874ff,"MAINT: NumPy normalize_axis_tuple
+
+* this function moved from NumPy core to the public
+API in recent NumPy builds, and is causing
+SciPy CI failures here:
+https://github.com/scipy/scipy/actions/runs/6555137521/job/17803175138?pr=19402
+
+* normally I'd use PEP440 for this (either
+vendored or through the appropriate PyPA lib)
+but maybe you'd prefer to cheat like this
+on major version vs. more infrastructure?",Tyler Reddy,tyler.je.reddy@gmail.com,Tyler Reddy,tyler.je.reddy@gmail.com,2023-10-18 11:44:24-06:00,21600,2023-10-18 11:44:24-06:00,21600,True,False,['_linalg.py'],['5c82ea33318594b9411b111d2d76cce2846afeec'],1,5,6,1,,,
+e27958beb2156b766f5e6cc49df2a0e6e2b25ed3,"Bump actions/checkout from 2 to 4 (#60)
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2 to 4.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-09 21:27:08+01:00,-3600,2023-11-09 21:27:08+01:00,-3600,True,False,"['array-api-tests.yml', 'publish-package.yml', 'tests.yml']",['affd3a56927d3d1c178023121f43c9fa624eced0'],4,4,8,3,,,
+8ee2507882e270a49fc915c8d3f7aa74d3eff378,"Add `newaxis` to torch aliases
+
+Closes gh-64",Ralf Gommers,ralf.gommers@gmail.com,Ralf Gommers,ralf.gommers@gmail.com,2023-11-09 22:18:26+01:00,-3600,2023-11-14 15:14:35+01:00,-3600,True,False,['_aliases.py'],['e27958beb2156b766f5e6cc49df2a0e6e2b25ed3'],2,3,5,1,,,
+51d7832f048f58d47237d35fb1e7561d8ebfe259,"Bump actions/setup-python from 1 to 4 (#59)
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 1 to 4.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v1...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Ralf Gommers <ralf.gommers@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-15 14:24:20+01:00,-3600,2023-11-15 14:24:20+01:00,-3600,True,False,"['array-api-tests.yml', 'tests.yml']",['12859ceb113330ac969e8b6ea5bbd891a220a8a5'],2,2,4,2,,,
+f432d3031d9e07384255813927ae85bb289233db,MAINT: improve error message for `array_namespace`,Lucas Colley,lucas.colley8@gmail.com,lucascolley,lucas.colley8@gmail.com,2023-12-11 21:26:40+00:00,0,2023-12-11 21:43:31+00:00,0,True,False,['_helpers.py'],['874c2ff83dcf7d52e4d5a6d1c389cb38d1f8187d'],1,1,2,1,,,
+4c1d7b9568a8cbd3dd81ff7e3247802d85606e1f,"Update array_api_compat/common/_helpers.py
+
+Co-authored-by: Aaron Meurer <asmeurer@gmail.com>",Lucas Colley,lucas.colley8@gmail.com,GitHub,noreply@github.com,2023-12-12 15:12:47+00:00,0,2023-12-12 15:12:47+00:00,0,True,False,['_helpers.py'],['f432d3031d9e07384255813927ae85bb289233db'],1,1,2,1,,,
+88814e5103efbb3b077c03520ff18a3bdefc62f8,BUG: fix cholesky upper decomp for complex dtypes (#61),Lucas Colley,lucas.colley8@gmail.com,GitHub,noreply@github.com,2024-01-03 20:33:42+00:00,0,2024-01-03 21:33:42+01:00,-3600,True,False,['_linalg.py'],['874c2ff83dcf7d52e4d5a6d1c389cb38d1f8187d'],2,5,7,1,1.0,1.0,0.0
+13b9cbb4e49619329fa3e387e964cfcf3b2ef885,"Bump actions/upload-artifact from 3 to 4 (#75)
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 3 to 4.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-03 21:37:17+01:00,-3600,2024-01-03 21:37:17+01:00,-3600,True,False,['publish-package.yml'],['88814e5103efbb3b077c03520ff18a3bdefc62f8'],1,1,2,1,,,
+f0c57d6eab3c9f0ddeae55d55ddb11c2f40cec4e,"Bump actions/download-artifact from 3 to 4 (#74)
+
+Bumps [actions/download-artifact](https://github.com/actions/download-artifact) from 3 to 4.
+- [Release notes](https://github.com/actions/download-artifact/releases)
+- [Commits](https://github.com/actions/download-artifact/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/download-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-03 21:37:29+01:00,-3600,2024-01-03 21:37:29+01:00,-3600,True,False,['publish-package.yml'],['13b9cbb4e49619329fa3e387e964cfcf3b2ef885'],1,1,2,1,,,
+9e53230aa0d6227d978a6e592169574d7ad669a0,"Bump actions/setup-python from 4 to 5 (#70)
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 5.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v4...v5)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-03 21:38:21+01:00,-3600,2024-01-03 21:38:21+01:00,-3600,True,False,"['array-api-tests.yml', 'publish-package.yml', 'tests.yml']",['f0c57d6eab3c9f0ddeae55d55ddb11c2f40cec4e'],3,3,6,3,,,

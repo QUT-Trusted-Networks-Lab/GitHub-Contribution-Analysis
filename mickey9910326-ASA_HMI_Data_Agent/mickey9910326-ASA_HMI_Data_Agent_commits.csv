@@ -1,0 +1,349 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+eec11f724f7d2c9936a040eff44440714e0014cb,project init,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2017-11-19 18:15:27+08:00,-28800,2017-11-19 18:15:27+08:00,-28800,True,False,"['.editorconfig', '.gitignore']",[],0,22,22,2,,,
+ea70a681b6f2ee4aa5ed4b9278caefb5e627e872,init,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2017-11-19 18:16:16+08:00,-28800,2017-11-19 18:16:16+08:00,-28800,True,False,"['.gitignore', 'Makefile', 'mainwindow.ui', 'pyqtwindow.py', 'requirements.txt', 'setup.py', 'test.py']",['eec11f724f7d2c9936a040eff44440714e0014cb'],2,267,269,7,0.23333333333333334,1.0,1.0
+8e0a603f1f5ff2882fc370086cceb437e09d17c5,update ui,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2017-11-19 21:07:19+08:00,-28800,2017-11-19 21:07:19+08:00,-28800,True,False,"['.gitignore', 'mainwindow.ui', 'pyqtwindow.py']",['ea70a681b6f2ee4aa5ed4b9278caefb5e627e872'],146,319,465,3,0.08888888888888889,1.0,1.0
+43d6d891b99c2e9b4a8dbaa84cebdeb2886783c9,update with functions,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2017-11-20 02:34:56+08:00,-28800,2017-11-20 02:34:56+08:00,-28800,True,False,"['Makefile', 'listport.py', 'main.py', 'mainwindow.ui', 'pyqtwindow.py', 'requirements.txt', 'setup.py', 'test.py']",['8e0a603f1f5ff2882fc370086cceb437e09d17c5'],105,433,538,8,0.2484472049689441,0.8881987577639752,1.0
+8a9d1e4c0bc5695a3f4516957b91d0352bacc4e8,update ui and func,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2017-11-20 20:44:39+08:00,-28800,2017-11-20 20:44:39+08:00,-28800,True,False,"['Makefile', 'decodeASAformat.py', 'main.py', 'mainwindow.ui', 'pyqtwindow.py', 'setup.py']",['43d6d891b99c2e9b4a8dbaa84cebdeb2886783c9'],17,508,525,6,0.11855670103092783,0.2706185567010309,0.9226804123711341
+6245f5eb30fca0c5802b419c0860ab8357d8912d,update strucr send,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2017-11-22 06:01:21+08:00,-28800,2017-11-22 06:01:21+08:00,-28800,True,False,['main.py'],['8a9d1e4c0bc5695a3f4516957b91d0352bacc4e8'],8,39,47,1,0.07407407407407407,0.0,1.0
+2784c84b7e898b523ba4e7e4fa086a69a2b4289e,update,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2017-11-22 14:21:01+08:00,-28800,2017-11-22 14:21:01+08:00,-28800,True,False,"['decodeASAformat.py', 'main.py', 'testStruc.py']",['6245f5eb30fca0c5802b419c0860ab8357d8912d'],12,68,80,3,0.6216216216216216,0.6216216216216216,0.6216216216216216
+1ae1ce74ae0e14964c8da1c53f961419e089544e,add function to handle struct data,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2017-11-22 20:18:22+08:00,-28800,2017-11-22 20:18:22+08:00,-28800,True,False,"['decodeASAformat.py', 'main.py']",['2784c84b7e898b523ba4e7e4fa086a69a2b4289e'],25,27,52,2,0.0,0.5,0.75
+f34eebcfe008d4ca863e358272a2c841fc7d1068,update struct func,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2017-11-23 18:00:56+08:00,-28800,2017-11-23 18:00:56+08:00,-28800,True,False,['main.py'],['1ae1ce74ae0e14964c8da1c53f961419e089544e'],25,33,58,1,0.0,0.0,1.0
+3725b0c2fc68ee9d00f33c72f6bfa56d54b2f2c9,更新UI：新增i8轉String按鈕,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-02 12:37:48+08:00,-28800,2018-01-02 12:37:48+08:00,-28800,True,False,['mainwindow.ui'],['f34eebcfe008d4ca863e358272a2c841fc7d1068'],5,37,42,1,,,
+2688558d49fabf36bfc0927be54afe118a52b10a,更新UI：新增主要分頁群組，分為HMI、燒錄M128、STK500,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-02 12:55:54+08:00,-28800,2018-01-02 12:55:54+08:00,-28800,True,False,['mainwindow.ui'],['3725b0c2fc68ee9d00f33c72f6bfa56d54b2f2c9'],342,366,708,1,,,
+10d32c15d01c72cf24486e54004b80748dd518bc,更新UI：新增String轉ui8按鈕,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-02 16:47:02+08:00,-28800,2018-01-02 16:47:02+08:00,-28800,True,False,['mainwindow.ui'],['2688558d49fabf36bfc0927be54afe118a52b10a'],3,10,13,1,,,
+f5063ca6cff06c69f0d1f00c47a3cb8d06c8212a,新增功能：實作ui8、String互相轉換,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-02 16:48:35+08:00,-28800,2018-01-02 16:48:35+08:00,-28800,True,False,"['decodeASAformat.py', 'main.py']",['10d32c15d01c72cf24486e54004b80748dd518bc'],1,132,133,2,0.06722689075630252,0.08403361344537816,1.0
+8a91db7eff94cbe0d434a60d6738fc2965dc3251,功能新增：在接收區增加字串轉換按鈕,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-02 22:43:52+08:00,-28800,2018-01-02 22:43:52+08:00,-28800,True,False,"['main.py', 'mainwindow.ui', 'pyqtwindow.py']",['f5063ca6cff06c69f0d1f00c47a3cb8d06c8212a'],30,136,166,3,0.10666666666666667,0.9333333333333333,1.0
+e0a715424e815b6caaad82a808629075b753a177,改變建構流程,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-02 23:43:22+08:00,-28800,2018-01-02 23:43:22+08:00,-28800,True,False,"['Makefile', 'setup.py']",['8a91db7eff94cbe0d434a60d6738fc2965dc3251'],12,9,21,2,,,
+3f37c228827172c652f61bddaeb7060231240ac8,"重構：將UI分割成三大部分
+
+ - 更新makefile
+ - 加入UItest.py以測試UI
+ - 將UI分割成 Ui_MainWindow, Ui_MainWidgetHMI, Ui_MainWidgetAvrdude, Ui_MainWidgetAsaProg",mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-09 23:31:58+08:00,-28800,2018-01-09 23:31:58+08:00,-28800,True,False,"['Makefile', 'UItest.py', 'mainwindow.ui', 'asa_prog.ui', 'avrdude.ui', 'hmi.ui', 'mainwindow.ui', 'mainwindow.ui.autosave', 'ui_asa_prog.py', 'ui_avrdude.py', 'ui_hmi.py', 'ui_mainwindow.py']",['e0a715424e815b6caaad82a808629075b753a177'],470,953,1423,12,0.14181818181818182,1.0,1.0
+e1327900d6aa302f86b1756a457aaa6b8a10dced,"重構：重構串列埠區塊
+
+- 新增測試檔main0.py
+- 新增按鈕及功能：更新串列埠，以更新可選擇串列埠
+- 處理串列埠 Exception",mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-10 14:05:14+08:00,-28800,2018-01-10 14:05:14+08:00,-28800,True,False,"['Makefile', 'main0.py', 'hmi.ui', 'mainwindow.ui.autosave', 'ui_hmi.py']",['3f37c228827172c652f61bddaeb7060231240ac8'],59,346,405,5,0.1346153846153846,0.5192307692307693,1.0
+d5cbeca222174fdfece76dc9843c260410d866d1,"重構：重建文字對話區
+
+- 文字對話區物件以text_作為開頭
+- 文字對話區相關函式以text_作為開頭",mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-10 14:54:19+08:00,-28800,2018-01-10 14:54:19+08:00,-28800,True,False,"['main0.py', 'hmi.ui', 'ui_hmi.py']",['e1327900d6aa302f86b1756a457aaa6b8a10dced'],84,90,174,3,0.9411764705882353,1.0,1.0
+e18ffaba06203f26010767024e252cb67d5f6c83,重構：實現收發區基本功能,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-18 23:44:43+08:00,-28800,2018-01-18 23:44:43+08:00,-28800,True,False,['main0.py'],['d5cbeca222174fdfece76dc9843c260410d866d1'],64,66,130,1,0.75,1.0,1.0
+a3fdd0def249c305e8e5b3846a47c1b2c76abec9,重構：將hmi功能部分搬移到HMI.py中,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-22 21:52:25+08:00,-28800,2018-01-22 21:52:25+08:00,-28800,True,False,"['main0.py', 'hmi.ui', 'ui_hmi.py']",['e18ffaba06203f26010767024e252cb67d5f6c83'],387,98,485,3,0.5238095238095238,0.21904761904761905,0.0
+ab19ef256d63424b8b60a600bcfcaae75daad10f,重構：加入hmi.py,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-22 21:58:18+08:00,-28800,2018-01-22 21:58:18+08:00,-28800,True,False,['hmi.py'],['a3fdd0def249c305e8e5b3846a47c1b2c76abec9'],0,180,180,1,0.6065573770491803,0.8114754098360656,0.7950819672131147
+484e61efcc625a2209eb1815cc276956a2bb816b,重構：完成接收發送功能,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-22 23:01:42+08:00,-28800,2018-01-22 23:01:42+08:00,-28800,True,False,"['Makefile', 'UItest.py', 'hmi.py', 'main.py', 'main0.py']",['ab19ef256d63424b8b60a600bcfcaae75daad10f'],412,220,632,5,0.3220338983050847,0.0,0.0
+04b737a2e5d445bed51857cb47dd2b5a7cd962fa,更新UI：做出STK500燒錄使用介面,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-01-31 00:27:06+08:00,-28800,2018-01-31 00:27:06+08:00,-28800,True,False,"['avrdude.ui', 'ui_avrdude.py']",['8fa665b7dbd001ae1406f805bf2edc2107b0bd1a'],19,1210,1229,2,0.0,1.0,1.0
+a03630dd49f584f83bdfcc3010c90f6cc0aa6aec,實作flash、eeprom區塊,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-08 11:22:14+08:00,-28800,2018-02-08 11:22:14+08:00,-28800,True,False,"['avrdude.py', 'main.py']",['04b737a2e5d445bed51857cb47dd2b5a7cd962fa'],0,86,86,2,0.6666666666666666,1.0,0.6666666666666666
+5849b8ba574c95766aa418147931b0be11b48fe8,完成串列埠設定區域,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-15 00:10:24+08:00,-28800,2018-02-15 00:10:24+08:00,-28800,True,False,"['avrdude.py', 'avrdude.ui', 'ui_avrdude.py']",['a03630dd49f584f83bdfcc3010c90f6cc0aa6aec'],22,59,81,3,0.3888888888888889,1.0,0.6111111111111112
+d25ab6c8179dab5f8ec3bb47401b59f52aa13ed7,完成更新指令部分,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-21 03:55:46+08:00,-28800,2018-02-21 03:55:46+08:00,-28800,True,False,"['avrdude.py', 'avrdude.ui', 'ui_avrdude.py']",['5849b8ba574c95766aa418147931b0be11b48fe8'],28,94,122,3,0.3333333333333333,0.3888888888888889,0.9444444444444444
+480453385f467e5f581f1324b44a3f5a13896d77,完成ShellCmd及terminal部分,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-21 16:48:26+08:00,-28800,2018-02-21 16:48:26+08:00,-28800,True,False,['avrdude.py'],['d25ab6c8179dab5f8ec3bb47401b59f52aa13ed7'],2,52,54,1,0.90625,1.0,0.90625
+7619bbf3cde01c7ef1c8d055fe31238dd5a64df4,更新ui 縮小terminal字體以及改為等寬字體,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-21 16:58:15+08:00,-28800,2018-02-21 16:58:15+08:00,-28800,True,False,"['avrdude.ui', 'ui_avrdude.py']",['480453385f467e5f581f1324b44a3f5a13896d77'],4,16,20,2,0.0,1.0,1.0
+9681873a5aa0e8f2866982402b09d9839b787664,新增avrdudeConfParser以處理mcu資訊,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-22 02:54:08+08:00,-28800,2018-02-22 02:54:08+08:00,-28800,True,False,"['avrdude.conf', 'avrdudeConfParser.py', 'testAvrdudeConfParser.py']",['7619bbf3cde01c7ef1c8d055fe31238dd5a64df4'],0,14868,14868,3,0.07142857142857142,0.07142857142857142,1.0
+2ccc9e81682a5c61a730a28c4286263797741c67,更新 AvrdudeConfPraser 新增 GetBasicInfoByDesc,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-22 16:16:45+08:00,-28800,2018-02-22 16:16:45+08:00,-28800,True,False,"['avrdudeConfParser.py', 'testAvrdudeConfParser.py']",['9681873a5aa0e8f2866982402b09d9839b787664'],64,174,238,2,0.9166666666666666,0.9166666666666666,0.0
+8244d0e7da56540cb4f98e15c3341b6d3133c974,完成MCU選擇功能,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-22 17:09:40+08:00,-28800,2018-02-22 17:09:40+08:00,-28800,True,False,"['avrdude.py', 'avrdudeConfParser.py', 'testAvrdudeConfParser.py']",['2ccc9e81682a5c61a730a28c4286263797741c67'],8,41,49,3,0.0,0.9090909090909091,0.09090909090909091
+9160fc14846facec571956110f7dbc4babc1cd34,更新UI方便觀看,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-22 19:32:10+08:00,-28800,2018-02-22 19:32:10+08:00,-28800,True,False,"['avrdude.ui', 'ui_avrdude.py']",['8244d0e7da56540cb4f98e15c3341b6d3133c974'],0,124,124,2,0.0,1.0,1.0
+827bc3b465af70e7fa52535d92e0ea197cc66cd2,燒錄flash、eeprom強制使用intel hex,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 16:03:55+08:00,-28800,2018-02-23 16:03:55+08:00,-28800,True,False,['avrdude.py'],['9160fc14846facec571956110f7dbc4babc1cd34'],6,2,8,1,1.0,1.0,0.0
+e3a1f9b87ac90aa7360f121effd0913e04eedc84,修正shell不會自動停止問題,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 16:14:04+08:00,-28800,2018-02-23 16:14:04+08:00,-28800,True,False,['avrdude.py'],['827bc3b465af70e7fa52535d92e0ea197cc66cd2'],2,2,4,1,,,
+20a1392d0a4c2cc737bbb1dea58af1fabb10835e,完成flash eeprom 單獨執行之功能,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 16:29:57+08:00,-28800,2018-02-23 16:29:57+08:00,-28800,True,False,['avrdude.py'],['e3a1f9b87ac90aa7360f121effd0913e04eedc84'],8,34,42,1,1.0,1.0,1.0
+031b2f90385c7785daafde8db8ff7faf83ce6401,增加Fuse&Lock的初始值,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 16:34:07+08:00,-28800,2018-02-23 16:34:07+08:00,-28800,True,False,['avrdude.py'],['20a1392d0a4c2cc737bbb1dea58af1fabb10835e'],0,7,7,1,0.0,1.0,0.0
+f8f8640eee17425fd8eec9782a47d6e71f1d8d6e,增加註解,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 16:37:09+08:00,-28800,2018-02-23 16:37:09+08:00,-28800,True,False,['avrdude.py'],['031b2f90385c7785daafde8db8ff7faf83ce6401'],0,2,2,1,,,
+2998992df9c1ce147d9e8c57fbd81258a624b9fa,"Feat/avrdude 基本功能 (#2)
+
+* 更新UI：做出STK500燒錄使用介面
+
+* 實作flash、eeprom區塊
+
+* 完成串列埠設定區域
+
+* 完成更新指令部分
+
+* 完成ShellCmd及terminal部分
+
+* 更新ui 縮小terminal字體以及改為等寬字體
+
+* 新增avrdudeConfParser以處理mcu資訊
+
+* 更新 AvrdudeConfPraser 新增 GetBasicInfoByDesc
+
+* 完成MCU選擇功能
+
+* 更新UI方便觀看
+
+* 燒錄flash、eeprom強制使用intel hex
+
+* 修正shell不會自動停止問題
+
+* 完成flash eeprom 單獨執行之功能
+
+* 增加Fuse&Lock的初始值
+
+* 增加註解",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-02-23 16:47:26+08:00,-28800,2018-02-23 16:47:26+08:00,-28800,True,False,"['avrdude.conf', 'avrdude.py', 'avrdudeConfParser.py', 'main.py', 'testAvrdudeConfParser.py', 'avrdude.ui', 'ui_avrdude.py']",['8fa665b7dbd001ae1406f805bf2edc2107b0bd1a'],21,16629,16650,7,0.14496644295302014,0.8859060402684564,0.9315436241610738
+aac47c30de8c67e13b0eab94369df77b2acdcb91,文件更新：增加readme,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 17:49:44+08:00,-28800,2018-02-23 17:49:44+08:00,-28800,True,False,['readme.md'],['2998992df9c1ce147d9e8c57fbd81258a624b9fa'],0,23,23,1,,,
+fc9ea759fa8befc7569641a9409440b007c2cc32,文件更新：增加解決高dpi顯示問題之解決方法,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 18:13:20+08:00,-28800,2018-02-23 18:13:20+08:00,-28800,True,False,['readme.md'],['aac47c30de8c67e13b0eab94369df77b2acdcb91'],0,3,3,1,,,
+7d697ff3ef101659e0fa87bd021665b583826c1a,修正錯誤：自動將avrdude.conf搬移到目標目錄中,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 18:14:24+08:00,-28800,2018-02-23 18:14:24+08:00,-28800,True,False,['setup.py'],['fc9ea759fa8befc7569641a9409440b007c2cc32'],0,1,1,1,,,
+7b56b3ab9762d436458cb3ec65527f143b77950e,UI更新：新增ASA_PROG 之UI,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 18:57:04+08:00,-28800,2018-02-23 18:57:04+08:00,-28800,True,False,['asa_prog.ui'],['7d697ff3ef101659e0fa87bd021665b583826c1a'],13,123,136,1,,,
+4fa8f2753bbfea09674b6830b1fe748f083929a5,更新功能：完成ASA PROG之基本功能,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 19:53:34+08:00,-28800,2018-02-23 19:53:34+08:00,-28800,True,False,"['asaprog.py', 'main.py', 'ui_asa_prog.py']",['7b56b3ab9762d436458cb3ec65527f143b77950e'],6,187,193,3,0.4765625,1.0,0.9140625
+2e68858c165888f62e556c4fefbe48f631363bb3,更新功能：增加cmd_ASA_loader，並更新輸出方法,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-23 19:56:41+08:00,-28800,2018-02-23 19:56:41+08:00,-28800,True,False,"['setup.py', 'cmd_ASA_loader.exe']",['4fa8f2753bbfea09674b6830b1fe748f083929a5'],0,1,1,2,,,
+03cd2d1423f4b5257d4ad4d34a44ead0db4e26eb,將測試檔案搬移到Test資料夾下,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-24 19:57:54+08:00,-28800,2018-02-24 19:57:54+08:00,-28800,True,False,"['.gitignore', 'UItest.py', '__init__.py', 'testAvrdudeConfParser.py', 'testStruc.py', '__init__.py', 'testAvrdudeConfParser.py', 'testStruc.py']",['a059e9ced9338744c924a73c77ba84d9a8b24c75'],23,25,48,8,,,
+fc119d0d88aab9a2d2e6f287b2b9595b3d402599,UI更新：更新字體方便觀看,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-24 21:37:03+08:00,-28800,2018-02-24 21:37:03+08:00,-28800,True,False,"['setup.py', 'asa_prog.ui', 'hmi.ui', 'ui_asa_prog.py', 'ui_hmi.py']",['03cd2d1423f4b5257d4ad4d34a44ead0db4e26eb'],14,64,78,5,0.0,1.0,1.0
+d7ffddc0947f70fcfe95c92c53b3202394fe1dfa,錯誤修正：修正輸入cmd_ASA_loader參數錯誤問題,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-24 22:28:32+08:00,-28800,2018-02-24 22:28:32+08:00,-28800,True,False,['asaprog.py'],['fc119d0d88aab9a2d2e6f287b2b9595b3d402599'],1,3,4,1,1.0,1.0,1.0
+172c93e0a441c0ef7c8df4aebcb42d3810d01aeb,錯誤修正：串列埠無法關部問題修正,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-24 22:29:21+08:00,-28800,2018-02-24 22:29:21+08:00,-28800,True,False,['hmi.py'],['d7ffddc0947f70fcfe95c92c53b3202394fe1dfa'],2,2,4,1,,,
+b2c0b5a9c9bf083e316cd38fa7421b085f1e8b58,文件更新：增加無法載入DLL之問題解決辦法,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-24 22:47:20+08:00,-28800,2018-02-24 22:47:20+08:00,-28800,True,False,['readme.md'],['172c93e0a441c0ef7c8df4aebcb42d3810d01aeb'],10,11,21,1,,,
+c33b875ffdb2d11671bd1a6106b77f5ed5bc81a2,新增功能：完成選取、儲存、刪除設定檔之功能,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-25 03:49:29+08:00,-28800,2018-02-25 03:49:29+08:00,-28800,True,False,"['avrdude.py', 'avrdude_settings.ini', 'setup.py', 'avrdude.ui', 'ui_avrdude.py']",['d755967ce8fa7fa897923041fe50fcb23bd91b68'],2,177,179,5,0.10679611650485436,1.0,0.9320388349514563
+1846c0278d16e5e2448b8aaf18971695f8491d73,新增功能；mcu偵測,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-25 04:21:48+08:00,-28800,2018-02-25 04:21:48+08:00,-28800,True,False,['avrdude.py'],['c33b875ffdb2d11671bd1a6106b77f5ed5bc81a2'],0,10,10,1,0.8,1.0,0.8
+5e8ab53ff900eb4c01a644f389514a99cc73f319,新增功能：增加termainal訊息方便理解,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-25 04:26:29+08:00,-28800,2018-02-25 04:26:29+08:00,-28800,True,False,['avrdude.py'],['1846c0278d16e5e2448b8aaf18971695f8491d73'],0,5,5,1,1.0,1.0,1.0
+17e3f52d96723b49350d1996511c4ee83dc7468b,新增功能：單獨讀寫Fuse或Lock,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-02-25 05:44:13+08:00,-28800,2018-02-25 05:44:13+08:00,-28800,True,False,"['avrdude.py', 'setup.py', 'fuse_extra.txt', 'fuse_high.txt', 'fuse_low.txt', 'lock.txt']",['5e8ab53ff900eb4c01a644f389514a99cc73f319'],3,79,82,6,0.5862068965517241,1.0,0.896551724137931
+38563b46f14103d2cbed62e188f7e9ffaf5509c9,Create LICENSE,mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-02-25 07:40:02+08:00,-28800,2018-02-25 07:40:02+08:00,-28800,True,False,['LICENSE'],['db87fb08bbca43d91a066e8bc80c7910d8faa76a'],0,21,21,1,,,
+bed60a37337bcffe3e8b5bc0eb2e2a14ef506c50,Update LICENSE,mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-03-01 10:54:41+08:00,-28800,2018-03-01 10:54:41+08:00,-28800,True,False,['LICENSE'],['6d5f35c3445be65e07b27a483161f437cc0292c6'],21,674,695,1,,,
+4f161249da72c348b9ab5e801a65f9f853dbf85a,Add bit selector UI,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-01 15:46:14+08:00,-28800,2018-03-01 15:46:14+08:00,-28800,True,False,"['Makefile', 'avrdude.py', 'setup.py', 'bit_selector.ui', 'ui_bit_selector.py']",['b8a37b3b77e36c34374c457d83a1df31c63a40fe'],1,977,978,5,0.014044943820224719,1.0,0.9971910112359551
+2292ecfac7c619467fe5fc3be44332a799b556c6,新增功能：BitSelecor would update value from mainWindow,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-04 03:22:50+08:00,-28800,2018-03-04 03:22:50+08:00,-28800,True,False,"['avrdude.py', 'bit_selector.ui', 'ui_bit_selector.py']",['4f161249da72c348b9ab5e801a65f9f853dbf85a'],264,399,663,3,0.10714285714285714,0.8035714285714286,0.9821428571428571
+f5e08fcb38674e7e5fbe3f86285e3206b367077f,新增功能：BitsSelector中顯示FuseBit的名稱,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-04 05:04:15+08:00,-28800,2018-03-04 05:04:15+08:00,-28800,True,False,"['avrdude.py', 'bits_info.ini', 'setup.py', 'bit_selector.ui', 'ui_bit_selector.py']",['2292ecfac7c619467fe5fc3be44332a799b556c6'],431,408,839,5,1.0,0.0,0.0
+de262477eb0402eccdf450267dcbe96b19ed18a4,更新UI：移除未實作之按鈕，並更新TAB順序,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-04 05:12:44+08:00,-28800,2018-03-04 05:12:44+08:00,-28800,True,False,"['avrdude.ui', 'ui_avrdude.py']",['f5e08fcb38674e7e5fbe3f86285e3206b367077f'],526,498,1024,2,1.0,0.0,0.0
+ddfedc3710cb3e25e8b48894ac11a28653641e25,Aute tar files in setup.py,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-04 05:45:31+08:00,-28800,2018-03-04 05:45:31+08:00,-28800,True,False,['setup.py'],['581f87585ce1273945a7d7344366db997c16c7e3'],8,3,11,1,,,
+6ebf658c553b55dafa43ff40c60f9b43ca4cd5a7,Update readme,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-04 09:03:16+08:00,-28800,2018-03-04 09:03:16+08:00,-28800,True,False,['readme.md'],['ddfedc3710cb3e25e8b48894ac11a28653641e25'],15,30,45,1,,,
+54830c3e344b5eee9f313b0c91eb1ea42c41df14,UI更新：錯字糾正、中文字體改為微軟正黑體,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-07 03:57:41+08:00,-28800,2018-03-07 03:57:41+08:00,-28800,True,False,"['asa_prog.ui', 'avrdude.ui', 'hmi.ui', 'mainwindow.ui', 'ui_asa_prog.py', 'ui_avrdude.py', 'ui_hmi.py', 'ui_mainwindow.py']",['6ebf658c553b55dafa43ff40c60f9b43ca4cd5a7'],9,62,71,8,0.0,1.0,1.0
+ba312a47bc496b5bf6d8958983a8a11c124f527f,fix bug: handle exception of shell.stop when shell is not start,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-07 04:13:05+08:00,-28800,2018-03-07 04:13:05+08:00,-28800,True,False,['avrdude.py'],['54830c3e344b5eee9f313b0c91eb1ea42c41df14'],8,12,20,1,1.0,1.0,1.0
+94cd7722b093e084cbaed648774b2a5b84acd915,Add dep avrdude,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-07 07:40:28+08:00,-28800,2018-03-07 07:40:28+08:00,-28800,True,False,"['avrdude.conf', 'avrdude.exe']",['ba312a47bc496b5bf6d8958983a8a11c124f527f'],0,14972,14972,2,,,
+1313cf7d2b63ffb10094eac73d3d498f679cf2b6,use new tools path and add new setup way,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-07 07:41:18+08:00,-28800,2018-03-07 07:41:18+08:00,-28800,True,False,"['asaprog.py', 'avrdude.py', 'avrdudeConfParser.py', 'main.py', 'setup.py', 'setup0.py']",['94cd7722b093e084cbaed648774b2a5b84acd915'],7,50,57,6,,,
+ee2e050e35df8d409eda909aa3385c72639c3858,UI更新：bitselector 無功能bit使用灰字處理,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-12 20:38:38+08:00,-28800,2018-03-12 20:38:38+08:00,-28800,True,False,['avrdude.py'],['1313cf7d2b63ffb10094eac73d3d498f679cf2b6'],5,25,30,1,0.0,0.0,1.0
+17ed04689319705042525b649643bc23467c7cd9,新增功能：bitselector增加part m128 m168,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-12 20:47:43+08:00,-28800,2018-03-12 20:47:43+08:00,-28800,True,False,['bits_info.ini'],['ee2e050e35df8d409eda909aa3385c72639c3858'],0,24,24,1,,,
+7468695a9f16a99bf471b3db2066c985eef3c854,Change setup method,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-12 21:00:47+08:00,-28800,2018-03-12 21:00:47+08:00,-28800,True,False,"['setup.py', 'setup0.py']",['17ed04689319705042525b649643bc23467c7cd9'],47,18,65,2,,,
+5f5b6fa09d31bdb93b4c7f8f1ead907ede31d898,更新版本號為0.2.1,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-12 21:01:17+08:00,-28800,2018-03-12 21:01:17+08:00,-28800,True,False,['setup.py'],['7468695a9f16a99bf471b3db2066c985eef3c854'],1,1,2,1,,,
+e3234d595879e9f0b611a23bdc46ce7a2611e6ff,更新UI：將STK500內開始燒錄改為START,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-13 11:25:25+08:00,-28800,2018-03-13 11:25:25+08:00,-28800,True,False,['avrdude.ui'],['5f5b6fa09d31bdb93b4c7f8f1ead907ede31d898'],2,2,4,1,,,
+1ae121eff40e1d165d13226440b2906544d762a2,use shell to hide cmd windows,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-13 12:06:46+08:00,-28800,2018-03-13 12:06:46+08:00,-28800,True,False,"['asaprog.py', 'avrdude.py', 'ui_avrdude.py']",['e3234d595879e9f0b611a23bdc46ce7a2611e6ff'],16,17,33,3,0.0,1.0,1.0
+9c728ea681f7a5eaaab6ae8ef796c262c6c284e9,版本號前加_,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-13 12:22:44+08:00,-28800,2018-03-13 12:22:44+08:00,-28800,True,False,['setup.py'],['1ae121eff40e1d165d13226440b2906544d762a2'],7,7,14,1,,,
+e303d642ae23582196f055b6e7e6774f07efdd71,HMI：串列埠打開時，視窗標題會提示,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-13 12:32:09+08:00,-28800,2018-03-13 12:32:09+08:00,-28800,True,False,['hmi.py'],['9c728ea681f7a5eaaab6ae8ef796c262c6c284e9'],0,3,3,1,0.0,0.0,1.0
+4d92da3aaedc0ca2a54d0eb1656dec3b2b879f78,更新版本號為0.2.2,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-13 12:33:15+08:00,-28800,2018-03-13 12:33:15+08:00,-28800,True,False,['setup.py'],['e303d642ae23582196f055b6e7e6774f07efdd71'],1,1,2,1,,,
+4f0963b9850a09e9c4a3196860b13b5391356d29,fix bugs of spilt,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-13 13:50:36+08:00,-28800,2018-03-13 13:50:36+08:00,-28800,True,False,['asaprog.py'],['4d92da3aaedc0ca2a54d0eb1656dec3b2b879f78'],1,1,2,1,,,
+29a48c43d6c085900e8b11d93657e4df25902968,Change avrdude to version 5.1,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-17 15:18:26+08:00,-28800,2018-03-17 15:18:26+08:00,-28800,True,False,"['avrdude.conf', 'avrdude_settings.ini', 'bits_info.ini', 'avrdude.conf', 'avrdude.exe']",['4f0963b9850a09e9c4a3196860b13b5391356d29'],18926,4671,23597,5,,,
+5867dbaafc5a06cb8b509f7ec620133de2379339,Change version to v0.2.3,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-17 15:21:43+08:00,-28800,2018-03-17 15:21:43+08:00,-28800,True,False,['setup.py'],['29a48c43d6c085900e8b11d93657e4df25902968'],1,1,2,1,,,
+7c6b4fa6bcc822d8fe98dbf79827e764a91e58f2,修復錯誤：FuseLow、FuseHigh讀取相反問題,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-17 16:39:42+08:00,-28800,2018-03-17 16:39:42+08:00,-28800,True,False,['avrdude.py'],['5867dbaafc5a06cb8b509f7ec620133de2379339'],2,2,4,1,,,
+78c904db051536a9acc1caa65a6a7e670ceac047,更新版本號為v0.2.4,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-03-17 16:45:41+08:00,-28800,2018-03-17 16:45:41+08:00,-28800,True,False,['setup.py'],['7c6b4fa6bcc822d8fe98dbf79827e764a91e58f2'],1,1,2,1,,,
+ea37e7f10a6ef01ed5f211ce4f0c6c285116205b,續傳功能修正,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-18 12:08:20+08:00,-28800,2018-04-18 12:08:20+08:00,-28800,True,False,['hmi.py'],['78c904db051536a9acc1caa65a6a7e670ceac047'],12,82,94,1,0.07692307692307693,0.07692307692307693,1.0
+2cbf052e098da63d08ac294f4dbd3c4a182ac3c1,更新版本號為v0.2.5,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-18 12:21:23+08:00,-28800,2018-04-18 12:21:23+08:00,-28800,True,False,['setup.py'],['ea37e7f10a6ef01ed5f211ce4f0c6c285116205b'],1,1,2,1,,,
+9de76e9a4044c6fd46479dfa66a06477ae0e1421,UI更新：增加儲存檔案介面，並更改HMI部分檔案結構,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-19 15:08:40+08:00,-28800,2018-04-19 15:08:40+08:00,-28800,True,False,"['Makefile', '__init__.py', 'hmi.py', 'hmi_save_diolog.py', 'main.py', 'hmi.ui', 'hmi_save.ui', 'hmi_save_diolog.ui', 'ui_hmi.py', 'ui_hmi_save_diolog.py']",['2cbf052e098da63d08ac294f4dbd3c4a182ac3c1'],9,281,290,10,0.08955223880597014,1.0,0.9701492537313433
+355123481bac499711a977bf8267b8254ced14e9,新增儲存mat格式功能,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-19 17:18:42+08:00,-28800,2018-04-19 17:18:42+08:00,-28800,True,False,"['hmi.py', 'hmi_save_diolog.py', 'hmi_save_diolog.ui', 'ui_hmi_save_diolog.py']",['9de76e9a4044c6fd46479dfa66a06477ae0e1421'],29,114,143,4,0.3111111111111111,0.3111111111111111,1.0
+5a6a17f4adcd3d2bec153502f52bb66d5b57c91d,更新功能：save mat file as assigned type,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-22 10:18:55+08:00,-28800,2018-04-22 10:18:55+08:00,-28800,True,False,['hmi_save_diolog.py'],['355123481bac499711a977bf8267b8254ced14e9'],30,12,42,1,,,
+0ee39812bbaec3207ae596f758e02e757d0b8d4f,新增功能：讀取mat檔案,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-22 20:11:57+08:00,-28800,2018-04-22 20:11:57+08:00,-28800,True,False,"['Makefile', 'hmi.py', 'hmi_load_dialog.py', 'hmi_load_dialog.ui', 'ui_hmi_load_dialog.py']",['5a6a17f4adcd3d2bec153502f52bb66d5b57c91d'],0,291,291,5,0.17699115044247787,0.7964601769911505,0.9292035398230089
+566ab91edda6a639adf7e0fbb82dea0d7d8306e2,"新增功能：HmiLoadDialog
+
+- HmiLoadDialog moveUp
+- HmiLoadDialog moveDown
+- HmiLoadDialog Delete
+- load data from HmiLoadDialog",mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-22 23:15:23+08:00,-28800,2018-04-22 23:15:23+08:00,-28800,True,False,"['hmi.py', 'hmi_load_dialog.py']",['0ee39812bbaec3207ae596f758e02e757d0b8d4f'],12,88,100,2,0.45714285714285713,0.7,0.9857142857142858
+ad54114b379be78ecbe86bfcafcb063069fa1f04,修改上下移動函式,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-23 00:17:24+08:00,-28800,2018-04-23 00:17:24+08:00,-28800,True,False,['hmi_load_dialog.py'],['566ab91edda6a639adf7e0fbb82dea0d7d8306e2'],20,27,47,1,1.0,1.0,1.0
+a6eab2df85f39b66cf2b5c00e6558ad0984b59d3,update text decoder,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-24 17:21:49+08:00,-28800,2018-04-24 17:21:49+08:00,-28800,True,False,['text_decoder.py'],['ad54114b379be78ecbe86bfcafcb063069fa1f04'],0,255,255,1,0.16279069767441862,0.16279069767441862,0.9813953488372092
+869b4ddfba725914621bb21a2ac4ab6c0d6dbedc,update hmi save dialog,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 00:23:56+08:00,-28800,2018-04-26 00:23:56+08:00,-28800,True,False,"['Makefile', 'hmi.py', 'hmi_save_dialog.py', 'hmi_save.ui', 'hmi_save_dialog.ui', 'ui_hmi_save_dialog.py', 'ui_hmi_save_diolog.py']",['a6eab2df85f39b66cf2b5c00e6558ad0984b59d3'],43,191,234,7,0.010638297872340425,1.0,1.0
+744ed6a87ec0ae95f0067a6f5315e15bb91a1e25,update SaveDialog: load rom hmi,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 03:43:03+08:00,-28800,2018-04-26 03:43:03+08:00,-28800,True,False,"['hmi.py', 'hmi_save_dialog.py', 'text_decoder.py', 'ui_hmi_save_dialog.py']",['869b4ddfba725914621bb21a2ac4ab6c0d6dbedc'],34,57,91,4,0.0,0.7391304347826086,0.9565217391304348
+1b77a462d0d22c413796dfc267c0d53beec4b9d1,add decoder test,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 03:43:47+08:00,-28800,2018-04-26 03:43:47+08:00,-28800,True,False,['test_decoder.py'],['744ed6a87ec0ae95f0067a6f5315e15bb91a1e25'],0,18,18,1,,,
+618eb4648ac0b767c36b6b3e8b589ed315c93f0a,update save mat file in HmiSaveDialog,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 04:27:37+08:00,-28800,2018-04-26 04:27:37+08:00,-28800,True,False,['hmi_save_dialog.py'],['1b77a462d0d22c413796dfc267c0d53beec4b9d1'],44,10,54,1,1.0,1.0,0.0
+05d2d0ae1e41bdb378651f88a55b70fb5ddbb7f7,update HmiLoadDialog,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 06:41:55+08:00,-28800,2018-04-26 06:41:55+08:00,-28800,True,False,"['hmi_load_dialog.py', 'hmi_load_dialog.ui', 'ui_hmi_load_dialog.py']",['618eb4648ac0b767c36b6b3e8b589ed315c93f0a'],75,172,247,3,0.46808510638297873,0.9787234042553191,0.9574468085106383
+ca0cca01cf182f1a60256421fd9ca775f2648ac8,更新setup方法，並更新版本號為v0.2.6,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 07:50:24+08:00,-28800,2018-04-26 07:50:24+08:00,-28800,True,False,['setup.py'],['05d2d0ae1e41bdb378651f88a55b70fb5ddbb7f7'],4,16,20,1,,,
+ce25e8f956a2eb3bb119fe6959cb7d9e55b1ca7b,更新setup方法，並更新版本號為v0.2.6,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 07:50:24+08:00,-28800,2018-04-26 07:51:49+08:00,-28800,True,False,['setup.py'],['b7ad540d917fa18392a48accba543e7db37ef14a'],4,16,20,1,,,
+0d2d04d315f17b82a8c598ab629b626365333446,move decodeASAformat.py to hmi folder,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 14:06:17+08:00,-28800,2018-04-26 14:06:17+08:00,-28800,True,False,"['decodeASAformat.py', 'hmi.py', 'hmi_load_dialog.py', 'hmi_save_dialog.py']",['ce25e8f956a2eb3bb119fe6959cb7d9e55b1ca7b'],3,3,6,4,,,
+299144006af2935f9798ccd6d356d4d84a973e38,move files into corresponding folder,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 14:28:25+08:00,-28800,2018-04-26 14:28:25+08:00,-28800,True,False,"['.editorconfig', '__init__.py', 'asaprog.py', '__init__.py', 'avrdude.py', 'avrdudeConfParser.py', 'avrdude_settings.ini', 'hmi_load_dialog.py', 'hmi_save_dialog.py', 'main.py', 'pyqtwindow.py', 'testAvrdudeConfParser.py', 'ui_asa_prog.py', 'ui_avrdude.py', 'ui_bit_selector.py', 'ui_hmi.py', 'ui_hmi_load_dialog.py', 'ui_hmi_save_dialog.py', 'ui_hmi_save_diolog.py', 'ui_mainwindow.py']",['0d2d04d315f17b82a8c598ab629b626365333446'],304,16,320,20,1.0,0.0,0.0
+324b22789f789c3e92a15e1998bb8913dcffbc81,update test files' name,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 14:36:01+08:00,-28800,2018-04-26 14:36:01+08:00,-28800,True,False,"['test_avrdude_conf_parser.py', 'test_hni_struct.py', 'test_ui.py']",['299144006af2935f9798ccd6d356d4d84a973e38'],2,2,4,3,,,
+074d040c7650c8b9b875a28f33c4ecbec3058717,aename test as Test1,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 14:58:04+08:00,-28800,2018-04-26 14:58:04+08:00,-28800,True,False,"['__init__.py', 'test_avrdude_conf_parser.py', 'test_decoder.py', 'test_hni_struct.py', 'test_ui.py']",['324b22789f789c3e92a15e1998bb8913dcffbc81'],1,0,1,5,,,
+4ca7569ea6b85fb778bab7ce0e86252de411468b,update gen ui method in makefile and setup.py,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 15:07:56+08:00,-28800,2018-04-26 15:07:56+08:00,-28800,True,False,"['Makefile', 'hmi.py', 'setup.py']",['074d040c7650c8b9b875a28f33c4ecbec3058717'],13,13,26,3,,,
+248c978703e14c4ba023acff0da78a182e93b85b,rename Test floder as test,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-26 15:09:50+08:00,-28800,2018-04-26 15:09:50+08:00,-28800,True,False,"['__init__.py', 'test_avrdude_conf_parser.py', 'test_decoder.py', 'test_hni_struct.py', 'test_ui.py']",['4ca7569ea6b85fb778bab7ce0e86252de411468b'],0,0,0,5,,,
+02bb83dc80bc8d915770913c9e874a9f8e4bef14,update requirements,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-04-30 12:45:28+08:00,-28800,2018-04-30 12:45:28+08:00,-28800,True,False,['requirements.txt'],['248c978703e14c4ba023acff0da78a182e93b85b'],0,0,0,1,,,
+08fbaf84243b942cb5f11102e4ba92d716f888bc,update path in setup.py,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-05-08 16:17:20+08:00,-28800,2018-05-08 16:17:20+08:00,-28800,True,False,['setup.py'],['02bb83dc80bc8d915770913c9e874a9f8e4bef14'],6,5,11,1,,,
+447dd0feb4c1f502898dbb0a53ef7258810c78db,更新UI：更新avr prog的UI,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-05-10 10:47:53+08:00,-28800,2018-05-10 10:47:53+08:00,-28800,True,False,"['test_ui.py', 'asa_prog.ui', 'ui_asa_prog.py']",['08fbaf84243b942cb5f11102e4ba92d716f888bc'],34,52,86,3,1.0,,
+d04610146c760012f4b5d725dc49a68af7151ef9,change packet length from one byte to two,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-05-12 14:53:04+08:00,-28800,2018-05-12 14:53:04+08:00,-28800,True,False,['hmi.py'],['ea79f49a114ac899a765914464c757139cd9c3a9'],59,61,120,1,1.0,1.0,0.0
+588b0fbbc26a9ae8331ff05136e08bda1a28247f,fix bugs,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-05-14 16:29:25+08:00,-28800,2018-05-14 16:29:25+08:00,-28800,True,False,['hmi.py'],['d04610146c760012f4b5d725dc49a68af7151ef9'],69,19,88,1,0.0,0.0,1.0
+90a0a931b3d1b8f1672896e6985bda66d62c374b,update version to 0.3.0,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-05-14 16:40:26+08:00,-28800,2018-05-14 16:40:26+08:00,-28800,True,False,['setup.py'],['588b0fbbc26a9ae8331ff05136e08bda1a28247f'],1,1,2,1,,,
+680cdd0f1b031604cb49869a69249990034f44ea,更新ASA_PROG之UI,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-05-15 22:50:28+08:00,-28800,2018-05-15 22:50:28+08:00,-28800,True,False,"['asa_prog.ui', 'ui_asa_prog.py']",['447dd0feb4c1f502898dbb0a53ef7258810c78db'],76,46,122,2,0.8333333333333334,0.0,0.0
+2281aaa43ee655f27d2a81a307e280437e9d9b66,更新UI: 新增燒錄狀態顯示,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-05-16 18:11:40+08:00,-28800,2018-05-16 18:11:40+08:00,-28800,True,False,"['asa_prog.ui', 'ui_asa_prog.py']",['680cdd0f1b031604cb49869a69249990034f44ea'],49,119,168,2,0.0,1.0,1.0
+18dd5d7ee0f55491f10ac8cffb8fa8f57b754fef,"完成ASA_M128燒錄功能
+
+- 更新requirements: 增加py_asa_loader
+- 更新asaprog\asaprog.py",mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-05-16 18:14:21+08:00,-28800,2018-05-16 18:14:21+08:00,-28800,True,False,"['asaprog.py', 'requirements.txt']",['2281aaa43ee655f27d2a81a307e280437e9d9b66'],53,143,196,2,0.015384615384615385,0.5384615384615384,0.8307692307692308
+7674e7d568ee3bccb631962d8452fbb7deaec0fb,"update version to v0.3.1
+
+- remove ASA_cmd_loader",mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-05-16 22:49:32+08:00,-28800,2018-05-16 22:49:32+08:00,-28800,True,False,"['setup.py', 'cmd_ASA_loader.exe']",['a274a8f66dcb1dbd8a9598b7ee66fd91c4712c41'],2,3,5,2,,,
+149a6855033381973e152b9be83c9f8d4c196423,"Fix some bugs (#15)
+
+* fix can't load file in avrdude
+
+* hmi support big5 and utf8",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-06-20 01:31:38+08:00,-28800,2018-06-20 01:31:38+08:00,-28800,True,False,"['avrdude.py', 'hmi.py']",['7674e7d568ee3bccb631962d8452fbb7deaec0fb'],64,70,134,2,0.0,0.0,1.0
+a3a0747b6ec89b7ebcb370ecaeacc622bdb5d2c5,"Dev (#16)
+
+* move main files into package folder asa_hmi_data_agent
+
+* update enterypoint in setup.py
+
+* remove unnecessary files
+
+* update tests
+
+* move setting files into folder settings
+
+* update setup.py
+
+* add *.spec to gitignore",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-06-20 23:26:54+08:00,-28800,2018-06-20 23:26:54+08:00,-28800,True,False,"['.gitignore', '__init__.py', '__main__.py', '__init__.py', 'asaprog.py', '__init__.py', 'avrdude.py', 'avrdudeConfParser.py', '__init__.py', 'decodeASAformat.py', 'hmi.py', 'hmi_load_dialog.py', 'hmi_save_dialog.py', 'text_decoder.py', 'listport.py', 'ui_asa_prog.py', 'ui_avrdude.py', 'ui_bit_selector.py', 'ui_hmi.py', 'ui_hmi_load_dialog.py', 'ui_hmi_save_dialog.py', 'ui_hmi_save_diolog.py', 'ui_mainwindow.py', '__init__.py', 'avrdude_settings.ini', 'bits_info.ini', 'setup.py', '__init__.py', 'test_hni_struct.py', 'conftest.py', 'test_avrdude_conf_parser.py', 'test_decoder.py', 'test_hmi_struct.py', 'test_ui.py']",['149a6855033381973e152b9be83c9f8d4c196423'],49,1375,1424,34,0.004830917874396135,1.0,1.0
+fa48ffdfd004dfb44e29a9df8fb4ea6ab89e6912,"update version to v0.3.2 and add changelog, releasenote",mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-06-20 23:51:08+08:00,-28800,2018-06-20 23:51:08+08:00,-28800,True,False,"['CHANGELOG', 'RELEASENOTE.txt', 'setup.py']",['a3a0747b6ec89b7ebcb370ecaeacc622bdb5d2c5'],1,34,35,3,,,
+fb7613d95a2481e747c3dd33d13c381d3438bb73,move mainwindow out of __main__.py,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-06-21 10:14:13+08:00,-28800,2018-06-21 10:14:13+08:00,-28800,True,False,"['__main__.py', 'mainwindow.py', 'setup.py']",['fa48ffdfd004dfb44e29a9df8fb4ea6ab89e6912'],48,54,102,3,1.0,1.0,1.0
+7fc2c767b6744c01cf5f4623f8d3d4b257ee9690,remove unnecessary files and functions,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-06-21 10:17:52+08:00,-28800,2018-06-21 10:17:52+08:00,-28800,True,False,"['__init__.py', '__init__.py', '__init__.py', 'mainwindow.py']",['fb7613d95a2481e747c3dd33d13c381d3438bb73'],16,0,16,4,0.0,0.0,0.0
+84c81e5f8c983ce58b70201620f697bc8f65651d,auto toggle hmi serialport if other page ues it,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-06-21 11:55:51+08:00,-28800,2018-06-21 11:55:51+08:00,-28800,True,False,"['asaprog.py', 'avrdude.py', 'hmi.py', 'mainwindow.py']",['7fc2c767b6744c01cf5f4623f8d3d4b257ee9690'],15,45,60,4,0.08,0.4,0.08
+9986466f91a9da8737a1fd488100e78905881edb,update setup.py,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-06-21 16:54:09+08:00,-28800,2018-06-21 16:54:09+08:00,-28800,True,False,"['setup.py', 'ui_asa_prog.py', 'ui_avrdude.py', 'ui_bit_selector.py', 'ui_hmi.py', 'ui_mainwindow.py']",['84c81e5f8c983ce58b70201620f697bc8f65651d'],1317,5,1322,6,0.9951690821256038,0.0,0.0
+24c61ba07b7bfd394bfa5bd66cdf45ed1ec750f7,update hmi_ui,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-06-21 17:18:29+08:00,-28800,2018-06-21 17:18:29+08:00,-28800,True,False,"['Makefile', 'ui_hmi.py', 'hmi.ui']",['9986466f91a9da8737a1fd488100e78905881edb'],15,45,60,3,0.0,1.0,1.0
+1d27a73f33dd34ed39f4066d284dc8dd63c761e3,add hmi lost connect handler,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-06-22 04:35:47+08:00,-28800,2018-06-22 04:35:47+08:00,-28800,True,False,['hmi.py'],['24c61ba07b7bfd394bfa5bd66cdf45ed1ec750f7'],66,83,149,1,0.6153846153846154,0.6923076923076923,0.9230769230769231
+73a86495d499595d388cbbcc72d4b7cd3df844f9,"Doc (#17)
+
+* doc init
+
+* add doc os hmi text exchange
+
+* update requirements
+
+* update requirements
+
+* update requirements
+
+* update requirements
+
+* update img link
+
+* add example receive array data
+
+* add example of exchange array data",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-06-22 09:11:12+08:00,-28800,2018-06-22 09:11:12+08:00,-28800,True,False,"['.gitignore', 'Makefile', 'array_receive.png', 'array_send_0.png', 'array_send_1.png', 'array_send_2.png', 'array_send_3.png', 'array_send_4.png', 'array_send_5.png', 'array_send_6.png', 'array_send_7.png', 'array_send_8.png', 'save_array_0.png', 'save_array_1.png', 'save_array_2.png', 'save_array_3.png', 'serial_group.png', 'test_array_receive_log.png', 'text_receive.png', 'text_receive2.png', 'text_send.png', 'mainwindow_hmi.png', 'conf.py', 'index.rst', 'make.bat', 'usage.rst', 'requirements.txt']",['1d27a73f33dd34ed39f4066d284dc8dd63c761e3'],0,500,500,27,,,
+713015e24aa24cd3b92079141581df8a7a31f5e2,"Dev (#18)
+
+* update checksun of hmi array
+* update reaadme",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-06-22 10:17:47+08:00,-28800,2018-06-22 10:17:47+08:00,-28800,True,False,"['hmi.py', 'conf.py', 'usage.rst', 'readme.md']",['73a86495d499595d388cbbcc72d4b7cd3df844f9'],41,38,79,4,,,
+2e285c70b7cbe810f36847bd5d6f7c6b87a67816,Update readme.md,mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-06-22 10:25:16+08:00,-28800,2018-06-22 10:25:16+08:00,-28800,True,False,['readme.md'],['713015e24aa24cd3b92079141581df8a7a31f5e2'],4,3,7,1,,,
+7c6304dfa0e89c18ce2214b401c85fa049fb23b0,Update readme.md,mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-06-22 10:26:08+08:00,-28800,2018-06-22 10:26:08+08:00,-28800,True,False,['readme.md'],['2e285c70b7cbe810f36847bd5d6f7c6b87a67816'],1,2,3,1,,,
+df63a9dd7ac53b52dd7ee3298ed80288a96333b2,Update readme.md,mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-06-22 10:27:36+08:00,-28800,2018-06-22 10:27:36+08:00,-28800,True,False,['readme.md'],['7c6304dfa0e89c18ce2214b401c85fa049fb23b0'],1,1,2,1,,,
+ddc096e53d3411b5725a5ee6c58c96040f8c20b5,"rebuild hmi functions (#19)
+
+* use hmipac to replace decoder in hmi
+
+* use hmipac to replace data handling functinos in hmi
+
+* use new format of text
+
+* add text_to_data and data_to_text 
+
+* simplify ui
+
+* use new log functions
+
+* simplify the codes",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-07-29 03:59:50+08:00,-28800,2018-07-29 03:59:50+08:00,-28800,True,False,"['.gitignore', 'data_to_text.py', 'decodeASAformat.py', 'hmi.py', 'hmi_load_dialog.py', 'hmi_save_dialog.py', 'text_decoder.py', 'text_to_data.py', '__init__.py', '__main__.py', 'decoder.py', 'encoder.py', 'type.py', 'ui_hmi.py', 'ui_hmi_load_dialog.py', 'ui_hmi_save_dialog.py', 'conftest.py', 'conftest.py', 'test_data_to_text.py', 'test_restructure_data.py', 'test_text_to_data.py', 'conftest.py', 'test_decode_sturct.py', 'test_decoder_handler.py', 'test_decoder_handler0.py', 'test_dtype_to_fs.py', 'test_encoder.py', 'test_formatstrings.py', 'test_getStDtype.py', 'test_decoder.py', 'test_hmi_struct.py', 'hmi.ui', 'hmi_load_dialog.ui', 'hmi_save_dialog.ui']",['df63a9dd7ac53b52dd7ee3298ed80288a96333b2'],1394,1975,3369,34,0.9665551839464883,1.0,1.0
+9db0f9e36620936930453a7f90f479059f5c1f36,update VERSION to 0.4.0,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-07-29 04:29:58+08:00,-28800,2018-07-29 04:29:58+08:00,-28800,True,False,"['CHANGELOG', 'RELEASENOTE.txt', 'setup.py']",['ddc096e53d3411b5725a5ee6c58c96040f8c20b5'],1,34,35,3,,,
+b374b75940e4ac6a762d585933eca1cd26ae9498,"update version to 4.1.0 (#20)
+
+* add test of data_to_text
+
+* add prog stk500 to m128
+
+* update avrdude debug print
+
+* set hmi_save_dialog, hmi_load_dialog ad modal
+
+* fix hex unfound bug
+
+* fix hmi receive gata bug
+
+* update stk500 prog btn text
+
+* update version to 4.1.0",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-07-30 14:28:02+08:00,-28800,2018-07-30 14:28:02+08:00,-28800,True,False,"['CHANGELOG', 'RELEASENOTE.txt', 'asaprog.py', 'avrdude.py', 'hmi.py', 'ui_asa_prog.py', 'ui_hmi_load_dialog.py', 'ui_hmi_save_dialog.py', 'setup.py', 'test_data_to_text.py', 'm128_stk500.hex', 'asa_prog.ui', 'hmi_load_dialog.ui', 'hmi_save_dialog.ui']",['9db0f9e36620936930453a7f90f479059f5c1f36'],58,270,328,14,0.5909090909090909,1.0,1.0
+244a6956d06a18a008a51b744e09f382f881032f,"update version to 0.4.2 (#22)
+
+- 修復檢查碼錯誤
+- 新增發送資料log
+- 處理一些崩潰情況",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-09-18 14:26:07+08:00,-28800,2018-09-18 14:26:07+08:00,-28800,True,False,"['CHANGELOG', 'RELEASENOTE.txt', 'hmi.py', 'decoder.py', 'encoder.py', 'setup.py']",['b374b75940e4ac6a762d585933eca1cd26ae9498'],20,59,79,6,0.47619047619047616,0.5714285714285714,0.9523809523809523
+9eec9cfbbbb20cc805f206e3e2324e5dfb6f09b2,Update readme.md,mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-10-02 11:12:09+08:00,-28800,2018-10-02 11:12:09+08:00,-28800,True,False,['readme.md'],['244a6956d06a18a008a51b744e09f382f881032f'],11,6,17,1,,,
+30b05e2e0d071a6486693f04dd97b7aa1f0be691,"update setup.py and tools dep (#24)
+
+* update setup.py and update avrdude version
+
+* update bits_info to meets the avrdude 6.3
+
+* update setting to meet avrdude
+
+* fix after save setting will change back to default
+
+* update version",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-10-12 03:46:28+08:00,-28800,2018-10-12 03:46:28+08:00,-28800,True,False,"['.gitignore', 'CHANGELOG', 'RELEASENOTE.txt', 'avrdude.py', 'ui_asa_prog.py', 'ui_avrdude.py', 'ui_bit_selector.py', 'ui_hmi.py', 'ui_hmi_load_dialog.py', 'ui_hmi_save_dialog.py', 'ui_mainwindow.py', 'get_tool_files.py', 'pyuic_all_ui.py', 'avrdude_settings.ini', 'bits_info.ini', 'setup.py', 'avrdude.conf', 'avrdude.exe', 'm128_stk500.hex', 'hmi_save.ui']",['9eec9cfbbbb20cc805f206e3e2324e5dfb6f09b2'],15814,182,15996,20,0.9830508474576272,1.0,1.0
+04b259d5e1926133dee23bd71bc1ab8d80d580fe,"update doc (#25)
+
+* doc init
+
+* add doc os hmi text exchange
+
+* update requirements
+
+* update requirements
+
+* update requirements
+
+* update requirements
+
+* update img link
+
+* add example receive array data
+
+* add example of exchange array data
+
+* update index",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2018-10-12 03:47:40+08:00,-28800,2018-10-12 03:47:40+08:00,-28800,True,False,"['conf.py', 'hmi.rst', 'hmi_example_1.rst', 'hmi_example_2.rst', 'hmi_example_3.rst', 'index.rst', 'usage.rst']",['30b05e2e0d071a6486693f04dd97b7aa1f0be691'],271,280,551,7,,,
+287056fc47ec6bd13662de8fc845dac193b8bf45,更新AVRDUDE parser,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-12-19 20:28:44+08:00,-28800,2018-12-19 20:28:44+08:00,-28800,True,False,"['avrdudeConfParser.py', 'test_avrdude_conf_parser.py']",['04b259d5e1926133dee23bd71bc1ab8d80d580fe'],134,55,189,2,0.0,0.0,1.0
+8211843fbcb4f5518dbb332cae09f5f0d04eb777,更新devive搜尋方法,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2018-12-20 14:28:31+08:00,-28800,2018-12-20 14:28:31+08:00,-28800,True,False,"['avrdude.py', 'avrdudeConfParser.py']",['287056fc47ec6bd13662de8fc845dac193b8bf45'],77,6,83,2,1.0,0.98,0.02
+c98b96dcd386d4b1ac1f6cc3d1d0b9c0c96d208e,完成adt-loader雛形,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-01 13:55:44+08:00,-28800,2019-02-01 13:55:44+08:00,-28800,True,False,"['RELEASENOTE.txt', '__main__.py', 'adt-loader.py', 'adt-term.py', 'util.py', 'mainwindow.py', 'socket_api.py']",['8211843fbcb4f5518dbb332cae09f5f0d04eb777'],1,137,138,7,0.44565217391304346,1.0,1.0
+ce7e5cc22a5db9534078931308ff668f2d7616e1,新增雙terminal功能,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-01 17:51:20+08:00,-28800,2019-02-01 17:51:20+08:00,-28800,True,False,"['Makefile', 'adt_settings.py', 'mainwindow.py', 'ui_adt_settings.py', 'ui_asa_prog.py', 'ui_avrdude.py', 'ui_bit_selector.py', 'ui_hmi.py', 'ui_hmi_load_dialog.py', 'ui_hmi_save_dialog.py', 'ui_hmi_save_diolog.py', 'ui_mainwindow.py', 'adt_settings.ui', 'avrdude.ui', 'mainwindow.ui']",['c98b96dcd386d4b1ac1f6cc3d1d0b9c0c96d208e'],110,191,301,15,1.0,0.0,0.0
+23e75c075a1c077bd0848a29dbc5d108ce4d0aca,更新需求及setup腳本,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-01 23:08:56+08:00,-28800,2019-02-01 23:08:56+08:00,-28800,True,False,"['.editorconfig', 'requirements.txt', 'setup.py']",['ce7e5cc22a5db9534078931308ff668f2d7616e1'],4,6,10,3,,,
+79a01729e7ce8f12f1a5eee4dd58a3c2d10db05f,"Completet adt-term tool, can control terminal",mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-03 15:51:16+08:00,-28800,2019-02-03 15:51:16+08:00,-28800,True,False,"['adt-term.py', 'util.py', 'adt_settings.py', 'mainwindow.py', 'socket_api.py']",['23e75c075a1c077bd0848a29dbc5d108ce4d0aca'],16,186,202,5,0.6666666666666666,0.8518518518518519,0.8
+001aa8b34d0bd80881889dd26a9b78145394abea,update adt-tools comu method,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-03 17:01:47+08:00,-28800,2019-02-03 17:01:47+08:00,-28800,True,False,"['adt-term.py', 'mainwindow.py', 'socket_api.py']",['79a01729e7ce8f12f1a5eee4dd58a3c2d10db05f'],47,105,152,3,0.0,0.45,0.475
+aa66ab78818effe1f0e47773ffdf4f4c0ae823c9,移動cli_toos到asa_hmi_data_agent中,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-03 17:15:52+08:00,-28800,2019-02-03 17:15:52+08:00,-28800,True,False,"['__main__.py', 'commands.py', 'socket_handler.py', 'tool_loader.py', 'tool_term.py', 'socket_api.py']",['001aa8b34d0bd80881889dd26a9b78145394abea'],35,31,66,6,,,
+fbc7daca691786dade5fbbcb26c56d37842e5148,Complete setup_exec to build all exec and zip it,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-03 22:27:14+08:00,-28800,2019-02-03 22:27:14+08:00,-28800,True,False,"['__main__.py', '__main__.py', 'util.py', '__main__.py', 'build_adt_loader.py', 'build_adt_term.py', 'build_data_agent.py', 'util.py', 'pyuic_all_ui.py', 'setup_egg.py', 'setup_exec.py', 'util.py']",['aa66ab78818effe1f0e47773ffdf4f4c0ae823c9'],1,203,204,12,1.0,1.0,1.0
+de086719552018581605986fcc22b3b920462f2f,更新 setup 方式，使其支援pypi的發布方式,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-04 00:42:08+08:00,-28800,2019-02-04 00:42:08+08:00,-28800,True,False,"['.gitignore', '__init__.py', '__main__.py', '__init__.py', '__main__.py', '__init__.py', '__main__.py', 'avrdude.py', 'avrdudeConfParser.py', '__init__.py', '__main__.py', '__init__.py', '__main__.py', 'avrdude_settings.ini', 'bits_info.ini', 'fuse_extra.txt', 'fuse_high.txt', 'fuse_low.txt', 'lock.txt', '__init__.py', '__main__.py', 'ui_mainwindow.py', 'util.py', 'build_data_agent.py', 'get_tool_files.py', 'setup_exec.py', 'setup_pre_pypi.py', 'util.py', 'setup.py', 'mainwindow.ui']",['fbc7daca691786dade5fbbcb26c56d37842e5148'],112,105,217,30,0.0,1.0,1.0
+2aebdf9dabc23607daf562096fa6bca19ef7a78d,complete adt_loader,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-04 15:23:19+08:00,-28800,2019-02-04 15:23:19+08:00,-28800,True,False,"['CHANGELOG', '__init__.py', '__main__.py', 'loader.py', '__init__.py', 'tool_loader.py', 'mainwindow.py', 'socket_api.py']",['de086719552018581605986fcc22b3b920462f2f'],62,108,170,8,0.10714285714285714,1.0,0.17857142857142858
+ea5cd960cda29294ba54178f8ea71aa18ea1270b,update version to 0.5.0,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-04 16:00:50+08:00,-28800,2019-02-04 16:00:50+08:00,-28800,True,False,"['CHANGELOG', 'RELEASENOTE.txt', 'readme.md', 'util.py', 'setup.py']",['2aebdf9dabc23607daf562096fa6bca19ef7a78d'],11,100,111,5,,,
+0607afb9cb2204880b9ee39095a081c9c8c11f9f,"update version to 0.5.0 (#27)
+
+* 更新AVRDUDE parser
+
+* 更新devive搜尋方法
+
+* 完成adt-loader雛形
+
+* 新增雙terminal功能
+
+* 更新需求及setup腳本
+
+* Completet adt-term tool, can control terminal
+
+* update adt-tools comu method
+
+* 移動cli_toos到asa_hmi_data_agent中
+
+* Complete setup_exec to build all exec and zip it
+
+* 更新 setup 方式，使其支援pypi的發布方式
+
+* complete adt_loader
+
+* update version to 0.5.0",mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2019-02-04 16:01:50+08:00,-28800,2019-02-04 16:01:50+08:00,-28800,True,False,"['.editorconfig', '.gitignore', 'CHANGELOG', 'Makefile', 'RELEASENOTE.txt', '__init__.py', '__main__.py', 'adt_settings.py', '__init__.py', '__main__.py', 'loader.py', '__init__.py', '__main__.py', 'avrdude.py', 'avrdudeConfParser.py', '__init__.py', '__main__.py', 'commands.py', 'socket_handler.py', 'tool_loader.py', 'tool_term.py', '__init__.py', '__main__.py', 'mainwindow.py', 'avrdude_settings.ini', 'bits_info.ini', 'socket_api.py', 'fuse_extra.txt', 'fuse_high.txt', 'fuse_low.txt', 'lock.txt', '__init__.py', '__main__.py', 'ui_adt_settings.py', 'ui_asa_prog.py', 'ui_avrdude.py', 'ui_bit_selector.py', 'ui_hmi.py', 'ui_hmi_load_dialog.py', 'ui_hmi_save_dialog.py', 'ui_hmi_save_diolog.py', 'ui_mainwindow.py', 'util.py', 'readme.md', 'requirements.txt', '__main__.py', '__main__.py', 'build_adt_loader.py', 'build_adt_term.py', 'build_data_agent.py', 'util.py', 'get_tool_files.py', 'pyuic_all_ui.py', 'setup_exec.py', 'setup_pre_pypi.py', 'util.py', 'setup.py', 'test_avrdude_conf_parser.py', 'adt_settings.ui', 'avrdude.ui', 'mainwindow.ui']",['04b259d5e1926133dee23bd71bc1ab8d80d580fe'],444,1067,1511,61,0.5770308123249299,0.9299719887955182,0.803921568627451
+82be404830954954abfaafa3c3fb4e91146f0392,rename list_port as getAvailableSerialPorts,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-09 02:58:14+08:00,-28800,2019-02-09 02:58:14+08:00,-28800,True,False,"['adt_settings.py', 'loader.py', 'avrdude.py', 'hmi.py', 'listport.py', 'mainwindow.py']",['ea5cd960cda29294ba54178f8ea71aa18ea1270b'],12,13,25,6,,,
+476aaef5b8a13dea85a1cd70b9f77f397cdc232e,更新腳本引用方法,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-09 19:44:41+08:00,-28800,2019-02-09 19:44:41+08:00,-28800,True,False,"['__main__.py', '__main__.py', 'build_adt_loader.py', 'build_adt_term.py', 'build_data_agent.py', 'conf.py', 'util.py', 'conf.py', 'get_tool_files.py', 'pyuic_all_ui.py', 'setup_exec.py', 'setup_pre_pypi.py', 'util.py']",['82be404830954954abfaafa3c3fb4e91146f0392'],7,33,40,13,,,
+c8dd50979bdff2475b9c6a25085cb92a13540934,更新asaloader部分coding style,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-09 21:32:57+08:00,-28800,2019-02-09 21:32:57+08:00,-28800,True,False,"['settings.json', 'Makefile', '__init__.py', 'loader.py', '__init__.py', '__main__.py', 'loader.py', 'mainwindow.py', '__init__.py', 'ui_widget_asa_loader.py', 'widget_asa_loader.ui']",['476aaef5b8a13dea85a1cd70b9f77f397cdc232e'],257,258,515,11,0.4,0.8,1.0
+da867c6ecf034319f06a86ae5852453981e06a68,更新 HMI AVRDUDE 部分coding style,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-09 22:38:06+08:00,-28800,2019-02-09 22:38:06+08:00,-28800,True,False,"['.gitignore', 'settings.json', 'loader.py', '__init__.py', 'avrdude.py', '__init__.py', 'hmi.py', 'mainwindow.py']",['c8dd50979bdff2475b9c6a25085cb92a13540934'],335,371,706,8,0.8148148148148148,0.9259259259259259,1.0
+4907ac1074f8baad73c9cb9370f93dcbc9c759c3,修正adt-term clear錯誤,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-11 16:26:43+08:00,-28800,2019-02-11 16:26:43+08:00,-28800,True,False,['mainwindow.py'],['da867c6ecf034319f06a86ae5852453981e06a68'],7,7,14,1,,,
+0f1ead15a8aa7dfd5df38bf651dc0cac5284249e,修正些許錯誤,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-11 16:43:39+08:00,-28800,2019-02-11 16:43:39+08:00,-28800,True,False,"['tool_loader.py', 'mainwindow.py', 'socket_api.py', 'util.py', 'setup.py']",['4907ac1074f8baad73c9cb9370f93dcbc9c759c3'],18,10,28,5,0.5,0.0,0.0
+e4f793e050eade514d7201ad2ac9d7b1c02f8868,修正terminal無法正常接收訊息錯誤,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-02-14 16:54:23+08:00,-28800,2019-02-14 16:54:23+08:00,-28800,True,False,"['CHANGELOG', 'hmi.py', 'decoder.py', 'test_sendmsg.py']",['0f1ead15a8aa7dfd5df38bf651dc0cac5284249e'],8,21,29,4,1.0,1.0,1.0
+d1dce76882969ab46a5714fc34d43baf9338879f,"更新HMI UI及功能
+
+ - 新增格式警告燈
+ - 將發送陣列、結構、矩陣按鈕合併",LiYu87,mickey9910326@gmail.com,LiYu87,mickey9910326@gmail.com,2019-07-02 03:02:15+00:00,0,2019-07-02 03:02:15+00:00,0,True,False,"['data_to_text.py', 'dec_cmd_str.py', 'hmi.py', 'hmi_load_dialog.py', 'hmi_new_data_dialog.py', 'text_to_data.py', '__init__.py', 'decode.py', 'decoder.py', '__init__.py', 'decoder.py', 'encoder.py', 'pac_type.py', 'type.py', 'ui_avrdude.py', 'ui_hmi.py', 'ui_hmi_new_data_dialog.py', 'ui_mainwindow.py', 'ui_widget_asa_loader.py', 'ui_widget_hmi_new_sd.py', 'ui_widget_hmi_new_sop.py', 'conftest.py', 'conftest.py', 'test_get_matrix.py', 'test_get_struct.py', 'test_isTextFormated.py', 'test_send_pac.py', 'conftest.py', 'test_de_str.py', 'conftest.py', 'test_decodeMtFs.py', 'test_decoder.py', 'test_encoder.py', 'test_fs2dt.py', 'test_mt2str.py', 'test_de_str.py', 'test_mt2str.py', 'avrdude.ui', 'hmi.ui', 'hmi_new_data_dialog.ui', 'mainwindow.ui', 'widget_asa_loader.ui', 'widget_hmi_new_sd.ui', 'widget_hmi_new_sop.ui']",['ed340d0cd39adac986da500129fbc7aadf4776d4'],2089,5433,7522,44,0.22540381791483113,0.6145374449339207,0.9743024963289281
+36723100466653f58b5d1d891ed25d0f7b01d18b,更新版本為0.6.0,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-02 11:06:41+08:00,-28800,2019-07-02 11:06:41+08:00,-28800,True,False,"['util.py', 'setup.py']",['f473a47ae3724f938789e7ef2ffa42f1f43a0972'],2,2,4,2,,,
+e974c39794d55fe209a096f7e80f99479444c9ec,修正自動送資料送出兩次ACK問題，更新版本為0.6.1,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-02 13:19:22+08:00,-28800,2019-07-02 13:19:22+08:00,-28800,True,False,"['RELEASENOTE.txt', 'hmi.py', 'util.py', 'setup.py']",['36723100466653f58b5d1d891ed25d0f7b01d18b'],6,24,30,4,1.0,1.0,1.0
+4f81d86c4628ca3b8782cb044db31657cdd58243,更新HMI支持UTF8編碼，更新版本為0.6.2,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-03 11:02:34+08:00,-28800,2019-07-03 11:02:34+08:00,-28800,True,False,['hmi.py'],['e974c39794d55fe209a096f7e80f99479444c9ec'],1,11,12,1,0.1,0.1,1.0
+0d7ea3db31a5bf0a271783740d7a676d31864c24,更新版本號為0.6.2,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-03 11:03:23+08:00,-28800,2019-07-03 11:03:23+08:00,-28800,True,False,"['util.py', 'setup.py']",['4f81d86c4628ca3b8782cb044db31657cdd58243'],2,2,4,2,,,
+e536d1b8ef207a305c036bc38ed9af1ad1f323f0,修復船錯誤封包崩潰問題，並更新版本成0.6.3,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-03 13:53:41+08:00,-28800,2019-07-03 13:53:41+08:00,-28800,True,False,"['hmi.py', 'util.py', 'setup.py']",['0d7ea3db31a5bf0a271783740d7a676d31864c24'],20,22,42,3,0.0,0.0,1.0
+7502e59a68c58498bf1113edd025ddaef99e6fbf,修正錯誤型態的signal,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-03 16:33:46+08:00,-28800,2019-07-03 16:33:46+08:00,-28800,True,False,['hmi.py'],['e536d1b8ef207a305c036bc38ed9af1ad1f323f0'],6,7,13,1,0.0,0.0,1.0
+8c030e1882e9760f244230d9331ea039ac707ee4,修正矩陣解析錯誤，並更新版本成0.6.4,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-05 12:53:03+08:00,-28800,2019-07-05 12:53:03+08:00,-28800,True,False,['decoder.py'],['7502e59a68c58498bf1113edd025ddaef99e6fbf'],1,2,3,1,0.0,0.0,1.0
+5cd56e7e053301aad1e4564aff2a0b9eeb748567,修正斷訊後無法再選擇串列埠,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-08 08:54:46+08:00,-28800,2019-07-08 08:54:46+08:00,-28800,True,False,['hmi.py'],['8c030e1882e9760f244230d9331ea039ac707ee4'],0,3,3,1,1.0,1.0,1.0
+1153671eb3f9fbb0804250646883ba76d879c57d,將忙碌後同步訊息更改為Ready,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-08 08:55:14+08:00,-28800,2019-07-08 08:55:14+08:00,-28800,True,False,['hmi.py'],['5cd56e7e053301aad1e4564aff2a0b9eeb748567'],1,1,2,1,,,
+3ebfb8c8bd5ebb414e51f0bc6de30c015f6073f2,修正修改內容後按輾變成非同步按鈕問題,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-15 15:59:35+08:00,-28800,2019-07-15 15:59:35+08:00,-28800,True,False,['hmi.py'],['1153671eb3f9fbb0804250646883ba76d879c57d'],3,2,5,1,1.0,1.0,0.0
+ad0ad64b654b7b944c7ce6adab74b945f678ecce,更新版本號為0.6.5,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-15 16:05:16+08:00,-28800,2019-07-15 16:05:16+08:00,-28800,True,False,"['util.py', 'setup.py']",['3ebfb8c8bd5ebb414e51f0bc6de30c015f6073f2'],2,2,4,2,,,
+8dd09b78a5abb1f4b0641f8dd95bf5333e57849e,增加HMI對話框自動置底功能,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-22 20:40:28+08:00,-28800,2019-07-22 20:40:28+08:00,-28800,True,False,['hmi.py'],['ad0ad64b654b7b944c7ce6adab74b945f678ecce'],0,8,8,1,1.0,1.0,1.0
+e3753bd537680dab5ad38ea253a47df109286038,更新版本號為0.6.6,mickey9910326,mickey9910326@gmail.com,mickey9910326,mickey9910326@gmail.com,2019-07-23 11:49:09+08:00,-28800,2019-07-23 11:49:09+08:00,-28800,True,False,"['RELEASENOTE.txt', 'util.py', 'setup.py']",['8dd09b78a5abb1f4b0641f8dd95bf5333e57849e'],2,6,8,3,,,
+597061fa1fbd6d4449361b2eec45a5c103dc243d,Update readme.md,mickey9910326,mickey9910326@gmail.com,GitHub,noreply@github.com,2019-11-09 18:40:24+08:00,-28800,2019-11-09 18:40:24+08:00,-28800,True,False,['readme.md'],['e3753bd537680dab5ad38ea253a47df109286038'],106,2,108,1,,,

@@ -1,0 +1,614 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+f9dbf00051bece29dbdc349f6f3f73bd1e83c4f3,Initial commit,Yuvi Panda,yuvipanda@gmail.com,GitHub,noreply@github.com,2018-08-07 18:32:03-07:00,25200,2018-08-07 18:32:03-07:00,25200,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,135,135,3,,,
+e84b1778dd481df07d4327f74296a62afaeee6e9,"Add function to get image manifest from docker registry
+
++ tests",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-07 18:48:09-07:00,25200,2018-08-07 18:48:09-07:00,25200,True,False,"['__init__.py', 'registry.py', 'setup.py', 'test_registry.py']",['f9dbf00051bece29dbdc349f6f3f73bd1e83c4f3'],0,99,99,4,0.5116279069767442,1.0,0.5116279069767442
+e9831119931ee6c1adb88760cb2a748b440821cd,Add circleci for unit tests,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-07 18:52:15-07:00,25200,2018-08-07 18:52:15-07:00,25200,True,False,"['config.yml', 'dev-requirements.txt', 'setup.py']",['e84b1778dd481df07d4327f74296a62afaeee6e9'],0,40,40,3,,,
+a09fcaf2351925ad8567fc6961e572fb38b557a6,Try set up test summary views in CircleCI,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-07 18:57:43-07:00,25200,2018-08-07 18:58:34-07:00,25200,True,False,['config.yml'],['e9831119931ee6c1adb88760cb2a748b440821cd'],1,5,6,1,,,
+0bb071deadc3c8decd1fa6f6fc89a9ddcac1fe39,"Make get_image_manifest interface better
+
+Test gcr.io too",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-07 19:19:10-07:00,25200,2018-08-07 19:19:10-07:00,25200,True,False,"['registry.py', 'test_registry.py']",['a09fcaf2351925ad8567fc6961e572fb38b557a6'],6,31,37,2,0.26666666666666666,0.0,1.0
+a394675d56a8b2a3f44870c4d71894c73a443e1f,"Handle missing images properly in registry code
+
+I continue to be not a fan of the docker image registry v2
+API",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-09 13:17:46-07:00,25200,2018-08-09 13:17:46-07:00,25200,True,False,"['registry.py', 'test_registry.py']",['0bb071deadc3c8decd1fa6f6fc89a9ddcac1fe39'],1,13,14,2,0.6666666666666666,0.6666666666666666,1.0
+75dd60d4181f75629e384dc5e1bc36b939699386,"Add image builder reconciliation loop
+
+- We check the registry if image exists & build it if it does not.
+  This is 'level triggered', rather than edge-triggered (where
+  we depend on the series of git commits that we are deploying)
+- Add a test that ensures this actually works!",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-09 13:36:07-07:00,25200,2018-08-09 13:36:07-07:00,25200,True,False,"['gitutils.py', 'imagebuilder.py', 'test_imagebuilder.py']",['a394675d56a8b2a3f44870c4d71894c73a443e1f'],0,121,121,3,0.55,1.0,1.0
+cc10809b30df047cfee85f97617e330ea5b5a8d4,"Refactor to be simpler
+
+- Use dockerpy to talk to the registry too! This is new,
+  and also helps with authentication etc.
+- Split out various components of ensure_image so we can test
+  them separately
+- Use a custom registry in a docker image for testing. This makes
+  it super fast, and sidesteps a lot of issues.",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-09 14:51:28-07:00,25200,2018-08-09 14:51:28-07:00,25200,True,False,"['imagebuilder.py', 'registry.py', 'test_imagebuilder.py', 'test_registry.py']",['75dd60d4181f75629e384dc5e1bc36b939699386'],164,121,285,4,1.0,1.0,0.0
+c6d1dcd5f14b6d660207005773ff5834bc8633da,Make gitutils work with relative paths,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-09 15:26:51-07:00,25200,2018-08-09 15:26:51-07:00,25200,True,False,['gitutils.py'],['cc10809b30df047cfee85f97617e330ea5b5a8d4'],0,1,1,1,1.0,1.0,1.0
+10cf79625c5c9deb34c2d904a453f69413a935fe,"Add hubploy-image-builder commandline
+
+Takes path + image name, builds and pushes image if needed",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-09 15:30:22-07:00,25200,2018-08-09 15:30:22-07:00,25200,True,False,"['imagebuilder.py', 'setup.py', 'test_imagebuilder.py']",['c6d1dcd5f14b6d660207005773ff5834bc8633da'],21,52,73,3,0.08,1.0,1.0
+2c2b2f41710255c4549e166268dcf50738a505d6,Fix failing tests,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-09 15:36:15-07:00,25200,2018-08-09 15:36:15-07:00,25200,True,False,['test_imagebuilder.py'],['10cf79625c5c9deb34c2d904a453f69413a935fe'],5,5,10,1,,,
+1b35265f79b4c8b4ca9ecf1e63a6f024e16aa554,Slightly better output,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-09 15:42:24-07:00,25200,2018-08-09 15:42:24-07:00,25200,True,False,['imagebuilder.py'],['2c2b2f41710255c4549e166268dcf50738a505d6'],2,5,7,1,0.0,1.0,1.0
+2e4884de2a18b3f616fe0aace69ed06e484c6380,Set up registry in circleci for unit tests,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:27:02-07:00,25200,2018-08-10 11:27:02-07:00,25200,True,False,"['config.yml', 'test_imagebuilder.py']",['1b35265f79b4c8b4ca9ecf1e63a6f024e16aa554'],0,7,7,2,1.0,1.0,1.0
+714d14c7221799b58262c59951595d708395fbf7,Fix typo in docker registry image,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:28:27-07:00,25200,2018-08-10 11:28:53-07:00,25200,True,False,['config.yml'],['2e4884de2a18b3f616fe0aace69ed06e484c6380'],1,1,2,1,,,
+02d5c14f26ccd0db518e04bd2b6c9b65f6aefc89,Add docker as a requirement,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:29:49-07:00,25200,2018-08-10 11:29:49-07:00,25200,True,False,['setup.py'],['714d14c7221799b58262c59951595d708395fbf7'],1,2,3,1,,,
+e7d6c58d345aad060d23cae194bfb51c7e3fcb21,"yield answer from local_registry fixture
+
+This is how fixtures work, no returns",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:31:04-07:00,25200,2018-08-10 11:31:04-07:00,25200,True,False,['test_imagebuilder.py'],['02d5c14f26ccd0db518e04bd2b6c9b65f6aefc89'],1,2,3,1,0.0,1.0,1.0
+b5a90fb0c14d9fcb8459294bb62a190d45d5de34,Fix git setup for CI,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:33:39-07:00,25200,2018-08-10 11:33:39-07:00,25200,True,False,['config.yml'],['e7d6c58d345aad060d23cae194bfb51c7e3fcb21'],1,4,5,1,,,
+88e733d67c1a2cad57a75c8262ea7325094af311,Try using machine executor on CircleCI,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:40:51-07:00,25200,2018-08-10 11:40:51-07:00,25200,True,False,['config.yml'],['b5a90fb0c14d9fcb8459294bb62a190d45d5de34'],5,1,6,1,,,
+e2d7f601d2573bbfa151f0bd30336f217334387a,"Explicitly call Python3.5 in machine executor
+
+Python3 doesn't point to installed python3. Boo",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:44:45-07:00,25200,2018-08-10 11:44:45-07:00,25200,True,False,['config.yml'],['88e733d67c1a2cad57a75c8262ea7325094af311'],1,1,2,1,,,
+4258b800d625bc01e7b9a05fef0cf6611c2c219c,"Explicitly set python version to use
+
+Looks like we're using pyenv",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:46:55-07:00,25200,2018-08-10 11:46:55-07:00,25200,True,False,['config.yml'],['e2d7f601d2573bbfa151f0bd30336f217334387a'],1,2,3,1,,,
+fa585db7c0663814b9e9f35d49aed305db5f7c47,Explicitly install py3.6 before using it,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:49:31-07:00,25200,2018-08-10 11:49:31-07:00,25200,True,False,['config.yml'],['4258b800d625bc01e7b9a05fef0cf6611c2c219c'],1,2,3,1,,,
+9df6a51c0d7dec82807258b5fff581c883b0468d,Specify exact 3.6 version for python3,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:50:38-07:00,25200,2018-08-10 11:50:38-07:00,25200,True,False,['config.yml'],['fa585db7c0663814b9e9f35d49aed305db5f7c47'],2,2,4,1,,,
+16a4f8c93d48e64f7d396da0c5b783e161ed8b68,"Cache pyenv root too
+
+So we don't have to redownload python3.6 all the time",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:53:25-07:00,25200,2018-08-10 11:54:10-07:00,25200,True,False,['config.yml'],['9df6a51c0d7dec82807258b5fff581c883b0468d'],0,1,1,1,,,
+a2280c1f3b9b105e109d08ad07468fba8b0d0333,"Try running rehash after pyenv installation
+
+Meh.",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:54:37-07:00,25200,2018-08-10 11:54:37-07:00,25200,True,False,['config.yml'],['16a4f8c93d48e64f7d396da0c5b783e161ed8b68'],0,1,1,1,,,
+6e8e993a94d3557500285d5998b889ffa7469c77,Specify python version in cache key,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 11:58:20-07:00,25200,2018-08-10 11:58:20-07:00,25200,True,False,['config.yml'],['a2280c1f3b9b105e109d08ad07468fba8b0d0333'],3,3,6,1,,,
+8176328a962bccd4a0bb0f4cb5eb3cd2f7c871ce,Add documentation,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-10 12:26:48-07:00,25200,2018-08-10 12:26:48-07:00,25200,True,False,"['Makefile', 'conf.py', 'image-builder.rst', 'index.rst']",['6e8e993a94d3557500285d5998b889ffa7469c77'],0,236,236,4,,,
+a36fc67b135f89e286b2916b0d431f1b2c0b83af,Allow passing in credentials for registry manually,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-14 10:23:05-06:00,21600,2018-08-14 10:23:05-06:00,21600,True,False,"['imagebuilder.py', 'test_imagebuilder.py']",['8176328a962bccd4a0bb0f4cb5eb3cd2f7c871ce'],19,43,62,2,0.0,1.0,0.4782608695652174
+e0f4a2c01ba4f403733c1f33c495d634243d8f21,Properly handle missing image in gcr.io,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-14 10:31:05-06:00,21600,2018-08-14 10:31:05-06:00,21600,True,False,['imagebuilder.py'],['a36fc67b135f89e286b2916b0d431f1b2c0b83af'],1,2,3,1,,,
+c32f564315836c517d2487d6d28d75d88f0e581b,Fail build when it actually fails,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-14 11:29:33-06:00,21600,2018-08-14 11:33:13-06:00,21600,True,False,"['imagebuilder.py', 'test_imagebuilder.py']",['e0f4a2c01ba4f403733c1f33c495d634243d8f21'],0,14,14,2,1.0,1.0,0.7777777777777778
+84f8e7cc57dab1d8005a36d617ce0542e196821a,Try not to have extra newlines in build output,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-14 11:44:07-06:00,21600,2018-08-14 11:44:07-06:00,21600,True,False,['imagebuilder.py'],['c32f564315836c517d2487d6d28d75d88f0e581b'],1,2,3,1,,,
+01b723405e2bbcf750e4aafef1444d290503c25f,Use the authenticated client for pushing docker image,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-14 16:27:54-06:00,21600,2018-08-14 16:27:54-06:00,21600,True,False,['imagebuilder.py'],['84f8e7cc57dab1d8005a36d617ce0542e196821a'],2,1,3,1,1.0,0.0,0.0
+44a6a29d1766328a853f1498fbd41e445cbd5074,Fail command if push failed,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-14 16:30:04-06:00,21600,2018-08-14 16:30:04-06:00,21600,True,False,['imagebuilder.py'],['01b723405e2bbcf750e4aafef1444d290503c25f'],0,2,2,1,0.0,0.0,1.0
+176a72c12fec468e58cb3ecf85a9f42c20080e43,Show full image spec when not building image,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-15 14:50:13-06:00,21600,2018-08-15 14:50:13-06:00,21600,True,False,['imagebuilder.py'],['44a6a29d1766328a853f1498fbd41e445cbd5074'],3,4,7,1,,,
+9eea205e7422b31b14e8ea13ce8f0b26a3cdc93b,"Pull previously built images before rebuilding
+
+*should* help with caching",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-15 16:26:49-06:00,21600,2018-08-15 16:26:49-06:00,21600,True,False,['imagebuilder.py'],['176a72c12fec468e58cb3ecf85a9f42c20080e43'],2,11,13,1,0.0,0.0,0.5714285714285714
+499626d1fa6f0ae0c958cfa4c6a9d2355d879fb6,Try to use cache from pulled image when building new image,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-15 16:44:05-06:00,21600,2018-08-15 16:52:09-06:00,21600,True,False,['imagebuilder.py'],['9eea205e7422b31b14e8ea13ce8f0b26a3cdc93b'],9,29,38,1,0.8,0.8,0.2
+765b21474ea030d7e4a3db34e903d93e58c899a2,Add helm based deploy command,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-15 19:59:36-06:00,21600,2018-08-15 19:59:36-06:00,21600,True,False,"['helm.py', 'setup.py']",['499626d1fa6f0ae0c958cfa4c6a9d2355d879fb6'],0,117,117,2,0.0,1.0,0.2857142857142857
+508d63dfe6dd27c3b4a4f08c31d2b8f2516d7bf7,Update chart dependencies before deploying,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-16 14:04:56-06:00,21600,2018-08-16 14:04:56-06:00,21600,True,False,['helm.py'],['765b21474ea030d7e4a3db34e903d93e58c899a2'],0,10,10,1,0.0,1.0,0.0
+5ef0d3f554fa5a3e19230ed1c5eff67929eec3fa,"Allow missing config files when deploying
+
+Not all things need to be overridden",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-16 16:37:46-06:00,21600,2018-08-16 16:37:46-06:00,21600,True,False,['helm.py'],['508d63dfe6dd27c3b4a4f08c31d2b8f2516d7bf7'],9,14,23,1,0.0,1.0,0.0
+55c00aa5ecf960a3be5be94fe814c7285c15843b,"Allow non-secret staging / prod config
+
+You end up with hostnames & stuff that should not be secret",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-16 16:58:15-06:00,21600,2018-08-16 16:58:15-06:00,21600,True,False,['helm.py'],['5ef0d3f554fa5a3e19230ed1c5eff67929eec3fa'],3,9,12,1,0.0,1.0,0.0
+71a9089be4cdc37d72135c9c681c935e81a12ccb,"Don't pass --debug to helm
+
+This leaks secrets all over lol",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-08-16 17:03:36-06:00,21600,2018-08-16 17:03:36-06:00,21600,True,False,['helm.py'],['55c00aa5ecf960a3be5be94fe814c7285c15843b'],1,0,1,1,1.0,0.0,1.0
+9b98eefb177de64532d0d7f6b798e0544c3242cd,support repo2docker for building,Derek Ludwig,dludwig@continuum.io,yuvipanda,yuvipanda@gmail.com,2018-09-12 14:47:41-07:00,25200,2018-11-28 13:11:10-08:00,28800,True,False,"['helm.py', 'imagebuilder.py']",['71a9089be4cdc37d72135c9c681c935e81a12ccb'],10,27,37,2,0.3125,0.0,0.75
+48a8320a2992f485d0229ab5faea69920a35cd00,add --version flag,Derek Ludwig,dludwig@continuum.io,yuvipanda,yuvipanda@gmail.com,2018-09-18 14:50:14-07:00,25200,2018-11-28 13:11:10-08:00,28800,True,False,['helm.py'],['9b98eefb177de64532d0d7f6b798e0544c3242cd'],10,19,29,1,0.0,0.7777777777777778,0.3333333333333333
+7fad59623ff3927f9a980f2c106e9645f5e1fa65,Hardcode 'jovyan' as username,Derek Ludwig,dludwig@continuum.io,yuvipanda,yuvipanda@gmail.com,2018-09-18 17:00:18-07:00,25200,2018-11-28 13:11:34-08:00,28800,True,False,['imagebuilder.py'],['48a8320a2992f485d0229ab5faea69920a35cd00'],1,2,3,1,1.0,1.0,0.0
+5629aa89bbe9fe8d17067670c5dd13a2dd8ba8c3,hardcode uid,Derek Ludwig,dludwig@continuum.io,yuvipanda,yuvipanda@gmail.com,2018-09-18 17:11:02-07:00,25200,2018-11-28 13:11:43-08:00,28800,True,False,['imagebuilder.py'],['7fad59623ff3927f9a980f2c106e9645f5e1fa65'],1,1,2,1,,,
+591487356042f61f770e6417b42ca0607a94d143,Add 'develop' as choice of environment,Derek Ludwig,dludwig@continuum.io,yuvipanda,yuvipanda@gmail.com,2018-10-23 12:52:04-07:00,25200,2018-11-28 13:11:43-08:00,28800,True,False,['helm.py'],['5629aa89bbe9fe8d17067670c5dd13a2dd8ba8c3'],1,1,2,1,,,
+c202f1a16e16d8c714b16e3ef46d92c496063b9d,"Add missing \n to failing Dockerfile test
+
+Now it fails for better reasons!",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-11-28 14:00:10-08:00,28800,2018-11-28 14:00:10-08:00,28800,True,False,['test_imagebuilder.py'],['591487356042f61f770e6417b42ca0607a94d143'],1,1,2,1,,,
+36823a53e0c25823b75f14fd2ad7f34fabdfade2,"Use repo2docker to build everything
+
+This removes support for building images *without* using
+repo2docker. Since repo2docker also works with Dockerfiles,
+there are no functional differences here.",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-11-28 14:00:31-08:00,28800,2018-11-28 15:47:18-08:00,28800,True,False,"['imagebuilder.py', 'setup.py']",['c202f1a16e16d8c714b16e3ef46d92c496063b9d'],27,8,35,2,0.17647058823529413,0.17647058823529413,0.8235294117647058
+da75e285d03a446246bc9a38d8eacad13c93a24d,"Install repo2docker from master manually
+
+Installing from a repo in setup.py is a clusterfuck",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-11-28 16:06:43-08:00,28800,2018-11-28 16:06:43-08:00,28800,True,False,"['config.yml', 'setup.py']",['36823a53e0c25823b75f14fd2ad7f34fabdfade2'],1,3,4,2,,,
+72ca8b1a88868bd313820183058ac0d540c9c468,Catch SystemExit from Repo2Docker for now,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-11-28 16:48:07-08:00,28800,2018-11-28 16:48:07-08:00,28800,True,False,['test_imagebuilder.py'],['da75e285d03a446246bc9a38d8eacad13c93a24d'],1,1,2,1,,,
+05f24d80f6bc3a973663159de2fa64894d443be2,"Skip installing python if already exists
+
+Should unbreak CI?",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-11-28 16:52:42-08:00,28800,2018-11-28 16:52:42-08:00,28800,True,False,['config.yml'],['72ca8b1a88868bd313820183058ac0d540c9c468'],1,1,2,1,,,
+4a207af275552911f26f25c75265b42c0a98091f,Dump less information when pulling image,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-11-28 17:26:22-08:00,28800,2018-11-28 17:26:22-08:00,28800,True,False,['imagebuilder.py'],['05f24d80f6bc3a973663159de2fa64894d443be2'],4,2,6,1,0.0,0.0,0.0
+33bc8ea685593e17b997440bdf8fdb3b4c32369f,Move pushing code to repo2docker as well,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-12-05 12:13:27-08:00,28800,2018-12-05 12:13:27-08:00,28800,True,False,['imagebuilder.py'],['05f24d80f6bc3a973663159de2fa64894d443be2'],15,10,25,1,1.0,1.0,0.0
+1ba8b588039a4a01a97a3ad612bc0fcf2f9cf937,"Refactor to be more git-aware
+
+imagebuilder previously checked if the image existed on
+the registry before building it. While technically cleaner,
+this caused the following problems:
+
+- Building in CI for PRs becomes impossible when using private
+  registries
+- It doesn't actually make the code that much cleaner
+- Local builds are just as easy to trigger when using --commit-range,
+  with official/master...HEAD (or origin/master...HEAD) to build
+  changed files.
+- It made testing more complicated
+
+Instead, we now reuse the same logic from chartpress,
+and use git commits to figure out when to build an image.",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-12-05 15:02:54-08:00,28800,2018-12-05 15:02:54-08:00,28800,True,False,"['gitutils.py', 'imagebuilder.py', 'test_imagebuilder.py']",['33bc8ea685593e17b997440bdf8fdb3b4c32369f'],127,91,218,3,1.0,0.0,0.0
+c1f2015cdbcaf2159ddccbc4f332aacad192c86a,"Provide unified 'hubploy' command with subcommands
+
+Much neater than separate command names",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-12-05 15:23:19-08:00,28800,2018-12-05 15:23:19-08:00,28800,True,False,"['helm.py', 'imagebuilder.py', 'setup.py']",['1ba8b588039a4a01a97a3ad612bc0fcf2f9cf937'],62,4,66,3,1.0,0.0,0.0
+19b580276db921cb7b4c1769ecd9f9b35e2f0e98,"Add missing __main__.py file
+
+The continuing perils of a `git commit -p` based workflow",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-12-05 16:23:02-08:00,28800,2018-12-05 16:23:02-08:00,28800,True,False,['__main__.py'],['c1f2015cdbcaf2159ddccbc4f332aacad192c86a'],0,58,58,1,0.0,1.0,1.0
+c7e50ad5101855f14fb6afefd297412a220ced0d,Fix last_modified_commit to work when n > 1,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-12-11 19:11:07-08:00,28800,2018-12-11 19:11:07-08:00,28800,True,False,['gitutils.py'],['19b580276db921cb7b4c1769ecd9f9b35e2f0e98'],1,1,2,1,,,
+37fdf48531beb279651c7e339e8657930857b049,"Support passing cache_from to repo2docker
+
+Depends on https://github.com/jupyter/repo2docker/pull/496
+to work",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-12-11 19:12:10-08:00,28800,2018-12-11 19:12:10-08:00,28800,True,False,['imagebuilder.py'],['c7e50ad5101855f14fb6afefd297412a220ced0d'],15,15,30,1,1.0,1.0,0.0
+9d324a5a1503492bc85553ac1bbf8f53db8b5cee,"Don't depend on un-merged features of r2d
+
+Previous commit depended on https://github.com/jupyter/repo2docker/pull/496,
+which wasn't strictly necessary. This now works with master of r2d",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-12-11 20:31:28-08:00,28800,2018-12-11 20:31:28-08:00,28800,True,False,['imagebuilder.py'],['37fdf48531beb279651c7e339e8657930857b049'],9,13,22,1,1.0,1.0,0.0
+31d23e56e6631ef130df113c996bba9f1d93f70b,"Explicitly depend on repo2docker>=0.7
+
+It was just released! We no longer need to depend
+on master",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-12-12 09:10:07-08:00,28800,2018-12-12 09:10:07-08:00,28800,True,False,"['config.yml', 'setup.py']",['9d324a5a1503492bc85553ac1bbf8f53db8b5cee'],3,1,4,2,,,
+9dec59bc4a8d16a60c4c2e823ea34a226ad450c2,Fix typo in passing --push to repo2docker,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-12-12 09:16:10-08:00,28800,2018-12-12 09:16:10-08:00,28800,True,False,['imagebuilder.py'],['31d23e56e6631ef130df113c996bba9f1d93f70b'],1,1,2,1,,,
+f3eac7acf7054293dd329f345ea32ef56be2b03d,"Revert ""Dump less information when pulling image""",Yuvi Panda,yuvipanda@gmail.com,GitHub,noreply@github.com,2018-12-18 11:40:35-08:00,28800,2018-12-18 11:40:35-08:00,28800,True,False,['imagebuilder.py'],['8add222988628b8303eedc6cd2634f33dcd3d35d'],2,4,6,1,1.0,1.0,1.0
+7327a8f9756b36fd3e7dbc91280b2c33d5ad5f1d,"Work with repo2docker master rather than released version
+
+I need latest updates to Julia BuildPack in master, unfortunately",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2019-01-17 16:25:25-08:00,28800,2019-01-17 16:25:25-08:00,28800,True,False,['imagebuilder.py'],['1dee08302cbd26a2022dfaf0a5c85be9bdad7440'],11,8,19,1,0.0,0.0,1.0
+0b2ea6c8bc48f23945ca656450544b91025b095f,Fix typo,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2019-01-18 00:06:24-08:00,28800,2019-01-18 00:06:24-08:00,28800,True,False,['imagebuilder.py'],['7327a8f9756b36fd3e7dbc91280b2c33d5ad5f1d'],1,1,2,1,,,
+50a9e27f4f498ec96728c3517656f41313d58961,"Introduce hubploy.yaml
+
+- Contains meta-information about the deployment process
+- Currently used for registry auth info & image_name",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2019-01-23 13:08:34-08:00,28800,2019-01-23 13:09:17-08:00,28800,True,False,"['__main__.py', 'auth.py', 'config.py', 'helm.py', 'imagebuilder.py']",['0b2ea6c8bc48f23945ca656450544b91025b095f'],15,133,148,5,0.9523809523809523,0.9206349206349206,0.42857142857142855
+1c3e7d15ab617c6e57fb81ec060efcd582d9346a,Authenticate to GKE with hubploy.yaml,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2019-01-23 14:58:19-08:00,28800,2019-01-23 14:58:19-08:00,28800,True,False,"['__main__.py', 'auth.py']",['50a9e27f4f498ec96728c3517656f41313d58961'],0,3,3,2,0.5,1.0,0.5
+8c5ac4b8924a211a7f624b622e1a900dbc13ee9f,"Return a longer git hash such that it has an alpha.
+
+To avoid a go/helm issue which converts an all digit string into an
+exponential.",ryanlovett,rylo@berkeley.edu,ryanlovett,rylo@berkeley.edu,2019-01-28 17:31:50-08:00,28800,2019-01-28 17:31:50-08:00,28800,True,False,['gitutils.py'],['1c3e7d15ab617c6e57fb81ec060efcd582d9346a'],4,23,27,1,1.0,1.0,0.8571428571428571
+7dab0db22f7c79aef01c4c73e798764318817a70,"Allow using hubploy with charts that wrap z2jh
+
+Fixes #9",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2019-02-07 11:11:27-08:00,28800,2019-02-07 11:11:27-08:00,28800,True,False,['helm.py'],['a669af14f208d585105cc7eb7a1bdb7dd24927ca'],2,7,9,1,0.0,0.0,0.0
+e00e7a50ba4bfb2c9f3d5c98a898bdad34eefb94,Update README.md,Ryan Abernathey,ryan.abernathey@gmail.com,GitHub,noreply@github.com,2019-02-20 11:38:38-05:00,18000,2019-02-20 11:38:38-05:00,18000,True,False,['README.md'],['7dab0db22f7c79aef01c4c73e798764318817a70'],0,4,4,1,,,
+9a61172e9963182a2cd3dd049d49bec3ec6cb3e0,templates for aws auth functions,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-02-20 09:17:00-08:00,28800,2019-02-20 09:17:00-08:00,28800,True,False,['auth.py'],['a3f3ba2f168eda16d71fa46629087ae6280c4811'],0,50,50,1,1.0,1.0,0.22857142857142856
+8985d24781efa792cbd5c7d993a7f84c75fb3201,"Filled in aws registry auth boilerplate in `auth.py`. Introduces
+assumption that AWS creds are present as environment variables.",Andrew Pawloski,apawloski@gmail.com,Andrew Pawloski,apawloski@gmail.com,2019-02-20 16:34:32-05:00,18000,2019-02-20 16:34:32-05:00,18000,True,False,['auth.py'],['9a61172e9963182a2cd3dd049d49bec3ec6cb3e0'],8,12,20,1,0.0,1.0,0.5
+3ee08e4809327d263c13debc5e6670bd7ac4b8e4,rename cluster auth function for aws,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-02-20 16:20:56-08:00,28800,2019-02-20 16:20:56-08:00,28800,True,False,['auth.py'],['8985d24781efa792cbd5c7d993a7f84c75fb3201'],1,1,2,1,,,
+f3e26f1409d94320d1cc7690daacc23a6a465c06,"Bump repo2docker requirement
+
+We've needed this for a while, but had to force install
+it from master wherever used. This makes that problem
+go away",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2019-02-21 07:38:25-08:00,28800,2019-02-21 07:38:25-08:00,28800,True,False,['setup.py'],['a3f3ba2f168eda16d71fa46629087ae6280c4811'],1,1,2,1,,,
+6aabea771a0ca6ef1593297f0ceccf075a46c7e4,Modified AWS auth to read credentials from  (rather than their own environment variables),Andrew Pawloski,apawloski@gmail.com,Andrew Pawloski,apawloski@gmail.com,2019-02-27 13:39:40-05:00,18000,2019-02-27 13:39:40-05:00,18000,True,False,['auth.py'],['3ee08e4809327d263c13debc5e6670bd7ac4b8e4'],1,5,6,1,0.0,1.0,0.0
+f29ee98d683aea182f1ac05b26f6de5080c81d8e,Fixed provider logic in auth.py,Andrew Pawloski,apawloski@gmail.com,Andrew Pawloski,apawloski@gmail.com,2019-02-27 16:04:48-05:00,18000,2019-02-27 16:04:48-05:00,18000,True,False,['auth.py'],['6aabea771a0ca6ef1593297f0ceccf075a46c7e4'],1,1,2,1,,,
+0ab798130b76f1a9bbbfd77ede46a30dbb31c1e0,Added EKS cluster auth,Andrew Pawloski,apawloski@gmail.com,Andrew Pawloski,apawloski@gmail.com,2019-02-27 16:09:25-05:00,18000,2019-02-27 16:09:25-05:00,18000,True,False,['auth.py'],['f29ee98d683aea182f1ac05b26f6de5080c81d8e'],9,4,13,1,0.0,0.0,1.0
+f71358688398b2c3ef6fa966c74fe748c33573d8,Added boto3 to requirements for AWS interaction,Andrew Pawloski,apawloski@gmail.com,Andrew Pawloski,apawloski@gmail.com,2019-02-27 16:14:55-05:00,18000,2019-02-27 16:14:55-05:00,18000,True,False,['dev-requirements.txt'],['0ab798130b76f1a9bbbfd77ede46a30dbb31c1e0'],0,1,1,1,,,
+4251d853694b99555e6c15e0542cfd8594d83429,move boto3 import to lower auth function,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-02-27 16:30:59-08:00,28800,2019-02-27 16:30:59-08:00,28800,True,False,['auth.py'],['f71358688398b2c3ef6fa966c74fe748c33573d8'],1,2,3,1,1.0,,0.0
+96b24044b80dabf1467bb99e119ef76e4710e3bc,raise filenotfounderror for missing aws creds,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-02-27 16:40:57-08:00,28800,2019-02-27 16:40:57-08:00,28800,True,False,['auth.py'],['4251d853694b99555e6c15e0542cfd8594d83429'],0,8,8,1,0.5,1.0,0.0
+ba4ff2cbe6335ba28979081c61ae5fa651038a97,fix typo in filename var,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-02-27 16:43:13-08:00,28800,2019-02-27 16:43:13-08:00,28800,True,False,['auth.py'],['96b24044b80dabf1467bb99e119ef76e4710e3bc'],4,4,8,1,,,
+0e7eb5f367b7974507320eb3edfcba3667a81dd9,try using amazon-ecr-credential-helper for aws auth,Scott Henderson,scottyhq@gmail.com,Scott Henderson,scottyhq@gmail.com,2019-03-01 11:54:59-08:00,28800,2019-03-01 11:54:59-08:00,28800,True,False,['auth.py'],['ba4ff2cbe6335ba28979081c61ae5fa651038a97'],17,7,24,1,1.0,0.0,1.0
+bba2c99571c899858e17e8d66ab3d4b09fe0dbb5,add env= keyword to aws eks subprocess call,Scott Henderson,scottyhq@gmail.com,Scott Henderson,scottyhq@gmail.com,2019-03-01 12:45:46-08:00,28800,2019-03-01 12:45:46-08:00,28800,True,False,['auth.py'],['0e7eb5f367b7974507320eb3edfcba3667a81dd9'],3,4,7,1,1.0,1.0,0.0
+4d230165346a9e1610af26134f8eb46db57a7ec6,hack: set AWS_SHARED_CREDENTIALS_FILE in  helm script,Scott Henderson,scottyhq@gmail.com,Scott Henderson,scottyhq@gmail.com,2019-03-01 17:20:11-08:00,28800,2019-03-01 17:20:11-08:00,28800,True,False,['helm.py'],['bba2c99571c899858e17e8d66ab3d4b09fe0dbb5'],1,4,5,1,,,
+fb3a3ff269b73fd40619aa9a51b58a19d7ceb0f4,added region to aws eks command,Scott Henderson,scottyhq@gmail.com,Scott Henderson,scottyhq@gmail.com,2019-03-01 19:13:25-08:00,28800,2019-03-01 19:13:25-08:00,28800,True,False,"['auth.py', 'helm.py']",['4d230165346a9e1610af26134f8eb46db57a7ec6'],4,5,9,2,0.0,1.0,0.0
+8705e58f46622d6ede96029da81c09fd807fdd36,"Add --check-registry option to image building
+
+This checks if the image we are going to build is already
+present in the remote registry, and if not, forces a rebuild.
+
+This is a more reliable way to force rebuilds during deployments,
+since COMMIT_RANGE might not work for a variety of reasons:
+
+1. Previous deployment failed (even though PR succeeded). This would
+   mean there would be no rebuild / push in new deployment, and
+   helm deploy would fail since it can't find the image we are
+   looking for
+2. CircleCI is terrible at giving us COMMIT_RANGE, and any workarounds
+   we bring up are messy. It doesn't give us the merged PR's number
+   reliably, causing many problems.
+
+This brings back code that was removed in
+https://github.com/yuvipanda/hubploy/commit/1ba8b588039a4a01a97a3ad612bc0fcf2f9cf937
+
+We also need a patched version of docker-py, due to
+https://github.com/docker/docker-py/issues/2225",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2019-03-03 14:31:11+05:18,-19080,2019-03-03 14:31:11+05:18,-19080,True,False,"['__main__.py', 'imagebuilder.py']",['f3e26f1409d94320d1cc7690daacc23a6a465c06'],12,40,52,2,0.7142857142857143,1.0,0.8095238095238095
+8b37dbb4d255c2f225894dd2ddef9cbc188e9d8b,"Fix commit-range build detection logic
+
+Fix up the logic determining this to be a little less complex.",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2019-03-03 14:47:37+05:18,-19080,2019-03-03 14:47:37+05:18,-19080,True,False,['imagebuilder.py'],['8705e58f46622d6ede96029da81c09fd807fdd36'],6,6,12,1,,,
+cd35c0e2917344430c072ea361d22d86909c4c1d,another take at auth for aws,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-03-03 08:41:18-08:00,28800,2019-03-03 08:41:18-08:00,28800,True,False,['auth.py'],['4d230165346a9e1610af26134f8eb46db57a7ec6'],23,42,65,1,0.0,1.0,1.0
+91eccd13a2d1fd15d7f95a8c4ca3b5355f5d45a7,remove boto from env,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-03-03 09:10:23-08:00,28800,2019-03-03 09:10:23-08:00,28800,True,False,"['dev-requirements.txt', 'helm.py']",['fc55116ede59723a26f18ffcb7bb48e29497ac82'],4,5,9,2,,,
+4b5a73cf355da22aa4490f358d547585cd6ac0c8,no email from aws ecr command,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-03-03 10:13:47-08:00,28800,2019-03-03 10:13:47-08:00,28800,True,False,['auth.py'],['91eccd13a2d1fd15d7f95a8c4ca3b5355f5d45a7'],2,5,7,1,1.0,1.0,0.0
+70610b1dcde49a94843845abad043d1fd1cd36b9,fix tyop,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-03-03 10:51:35-08:00,28800,2019-03-03 10:51:35-08:00,28800,True,False,['auth.py'],['4b5a73cf355da22aa4490f358d547585cd6ac0c8'],5,3,8,1,0.0,0.0,1.0
+6e393dadb8c7ff5a48270faa819d7fc4c972371a,revert email handling,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-03-03 11:04:34-08:00,28800,2019-03-03 11:04:34-08:00,28800,True,False,['auth.py'],['70610b1dcde49a94843845abad043d1fd1cd36b9'],3,6,9,1,1.0,1.0,0.0
+b3f99375216be1a6adcc1d542e2e5a851b87ab1f,fix local env restore,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2019-03-03 11:14:24-08:00,28800,2019-03-03 11:14:24-08:00,28800,True,False,['auth.py'],['6e393dadb8c7ff5a48270faa819d7fc4c972371a'],3,3,6,1,,,
+9f14032e86b5e0ec3c76000e72c29e59acd942ca,going back to ecr-credential-helper,Scott Henderson,scottyhq@gmail.com,Scott Henderson,scottyhq@gmail.com,2019-03-03 22:21:25-08:00,28800,2019-03-03 22:21:25-08:00,28800,True,False,['auth.py'],['b3f99375216be1a6adcc1d542e2e5a851b87ab1f'],18,11,29,1,0.0,0.0,1.0
+bcca58f7a2d331f1d474c3239142ad9b3a104467,"added service_key argument to registy_auth_aws (not used), changed AWS_SHARED_CREDENTIALS_FILE to AWS_CONFIG_FILE",Scott Henderson,scottyhq@gmail.com,Scott Henderson,scottyhq@gmail.com,2019-03-03 23:01:05-08:00,28800,2019-03-03 23:01:05-08:00,28800,True,False,['auth.py'],['9f14032e86b5e0ec3c76000e72c29e59acd942ca'],2,2,4,1,,,
+2dadcfdd2f431904b6c29049f9fdfbdff0b3708c,"Copy repository contents into /srv/repo
+
+$HOME is generally mounted as a persistent directory, so we
+should put the repo files somewhere else for now.",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2019-03-04 14:25:39+05:18,-19080,2019-03-04 14:25:39+05:18,-19080,True,False,['imagebuilder.py'],['f5a1d2f9aaa98d1929570458a92e02b9eba41b1b'],0,1,1,1,1.0,1.0,0.0
+bcaee0ddb9aa9932d1622bc4691dbbf3f0f52070,refactored aws authentication to use .aws directory,Scott Henderson,scottyhq@gmail.com,Scott Henderson,scottyhq@gmail.com,2019-03-04 13:28:20-08:00,28800,2019-03-04 13:28:20-08:00,28800,True,False,['auth.py'],['bcca58f7a2d331f1d474c3239142ad9b3a104467'],32,17,49,1,0.0,0.0,0.0
+c26e27dbb04f9741cfa8637c011029376f471d94,changed credDir to cred_dir,Scott Henderson,scottyhq@gmail.com,GitHub,noreply@github.com,2019-03-04 20:38:37-08:00,28800,2019-03-04 20:38:37-08:00,28800,True,False,['auth.py'],['7af03365b0fa6e03fbdae67c963a9bf2c6fa5361'],4,4,8,1,,,
+bbb2d146785f6ac6c7f8397ff3d0b0ba184c9a1f,Add Azure cluster authenticator,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-06-22 06:42:19-04:00,14400,2019-06-23 04:48:39-04:00,14400,True,False,['auth.py'],['7015b4db0da8c04cdbe5edaeecf9d74ae0d45e66'],0,39,39,1,0.0,1.0,0.18181818181818182
+ea89e1acb8edf90d88df344633ed7e0783b387ea,Add Azure registry authenticator,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-06-23 04:10:09-04:00,14400,2019-06-23 04:48:39-04:00,14400,True,False,['auth.py'],['bbb2d146785f6ac6c7f8397ff3d0b0ba184c9a1f'],0,34,34,1,0.0,0.047619047619047616,0.19047619047619047
+00451bbf5a4aaccd9b2483536beb9c835a263379,Add documentation,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-06-23 05:28:51-04:00,14400,2019-06-23 05:28:51-04:00,14400,True,False,['auth.py'],['ea89e1acb8edf90d88df344633ed7e0783b387ea'],3,35,38,1,,,
+0cc38e3fe0b963f3b7d6625a6c6313b67d3cfeca,Use service principal client id which is more robust,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-06-26 11:09:49-04:00,14400,2019-06-26 11:09:49-04:00,14400,True,False,['auth.py'],['00451bbf5a4aaccd9b2483536beb9c835a263379'],16,10,26,1,1.0,0.0,1.0
+ed4714498e69142eef4b8bfc5e7f0bc2c97314f4,"Use key names from service principal commands in Azure
+
+This uses the keys in the JSON file created by the
+`az ad sp` command here as well, instead of making our own.",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2019-07-05 22:14:44-07:00,25200,2019-07-05 22:14:44-07:00,25200,True,False,['auth.py'],['37e6a58794b54a55695cbbc871c39bd0e2e13069'],18,13,31,1,,,
+f413ded637b56615ccf1db7d12b13ba1e0f4df13,Catch new error when build fails in repo2docker,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-15 11:57:27+08:00,-28800,2019-10-15 11:57:27+08:00,-28800,True,False,['test_imagebuilder.py'],['08590da2ec65aa6f2c32a6c4434ae75ab09eff5a'],2,2,4,1,,,
+e9caaaa06c7cc6a86e72d9d6216e28d7829242eb,"Support *building* multiple images
+
+Doesn't support substituting them in various helm config
+yet",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 08:28:20-07:00,25200,2019-10-17 08:28:20-07:00,25200,True,False,['imagebuilder.py'],['f413ded637b56615ccf1db7d12b13ba1e0f4df13'],4,18,22,1,0.0,1.0,0.0
+3e7a0a795ffeaa0c6a7353ff89e65192dbbfee72,"Use 'safe' YAML serializer
+
+We don't have to save the YAML back, so it is ok to
+not use 'rt'",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 08:48:55-07:00,25200,2019-10-17 08:48:55-07:00,25200,True,False,['config.py'],['e9caaaa06c7cc6a86e72d9d6216e28d7829242eb'],1,1,2,1,,,
+73dfe3f1ce498a1835a721d422b9ad317c75124c,"Refactor images config to be a class
+
+- There are enough unclean functions that were passing
+  shared state around for it to be a real class
+- Makes it easier to support multiple images per deployment
+- Removes the integration tests we had. Those were very
+  flaky anyway. Should be replaced by proper unit tests.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 09:51:22-07:00,25200,2019-10-17 09:53:02-07:00,25200,True,False,"['__main__.py', 'config.py', 'imagebuilder.py', 'test_imagebuilder.py']",['3e7a0a795ffeaa0c6a7353ff89e65192dbbfee72'],244,168,412,4,0.4117647058823529,0.0,0.6323529411764706
+6dcfa9ae3aae2c44263791babcf82ed8aee4149c,Fixup helm image tag substitution to work with Image class,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 10:00:06-07:00,25200,2019-10-17 10:07:20-07:00,25200,True,False,"['config.py', 'helm.py']",['73dfe3f1ce498a1835a721d422b9ad317c75124c'],15,9,24,2,1.0,1.0,1.0
+3b64e6fbd955239c5fc715cba14d0a0cece63938,Only parse image_config_path if it exists,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 10:15:03-07:00,25200,2019-10-17 10:15:03-07:00,25200,True,False,['config.py'],['6dcfa9ae3aae2c44263791babcf82ed8aee4149c'],1,3,4,1,0.0,0.0,1.0
+7dea4ad9427ba2032f31cfe13d87b3900c5ee3e4,Fixup circle-ci config & add simple unit tests,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 15:47:49-07:00,25200,2019-10-17 15:48:07-07:00,25200,True,False,"['config.yml', 'test_imagebuilder.py']",['3b64e6fbd955239c5fc715cba14d0a0cece63938'],7,127,134,2,0.75,1.0,0.890625
+104073443d07fd3cb91843c6ca9766bece615a21,"Use correct version of python 3.5 for cache info
+
+This is python version available in CircleCI machine,
+as gleaned from https://raw.githubusercontent.com/circleci/image-builder/picard-vm-image/provision.sh",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 15:50:02-07:00,25200,2019-10-17 15:50:02-07:00,25200,True,False,['config.yml'],['7dea4ad9427ba2032f31cfe13d87b3900c5ee3e4'],3,3,6,1,,,
+3bf127b65a6a5fd40387d6be003ef0673ebbd8a5,"Use python 3.7 in CI
+
+The machine image seems to have pyenv installed by default,
+let's see how it works",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 15:52:54-07:00,25200,2019-10-17 15:52:54-07:00,25200,True,False,['config.yml'],['104073443d07fd3cb91843c6ca9766bece615a21'],3,4,7,1,,,
+3ffdb12fb23a34e94dc94fdc7705c7285e0c33b7,Upload code coverage stats,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 15:57:25-07:00,25200,2019-10-17 15:57:25-07:00,25200,True,False,"['config.yml', 'dev-requirements.txt']",['3bf127b65a6a5fd40387d6be003ef0673ebbd8a5'],1,4,5,2,,,
+c83ca33e4cccf6ae997ce2ca92a6f700ccf331e8,"Remove 'latest' tag determination
+
+This actually never worked, as I discovered while trying to
+write a test for it",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 16:04:57-07:00,25200,2019-10-17 16:04:57-07:00,25200,True,False,['config.py'],['3ffdb12fb23a34e94dc94fdc7705c7285e0c33b7'],7,4,11,1,0.0,0.0,1.0
+e30e6543d1c9548428131582530a377dd26844ce,"Separate code coverage upload step in circleci
+
+Otherwise it is possible that the pytest step is listed as
+success even though the py.test command fails, because the codecov
+step succeeded. Not sure if this is actually true though.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 16:38:05-07:00,25200,2019-10-17 16:42:03-07:00,25200,True,False,['config.yml'],['c83ca33e4cccf6ae997ce2ca92a6f700ccf331e8'],0,5,5,1,,,
+10e34b8a785ddc6fcdd2041f8de9b6a5096c8ad9,Add test for fetching previous versions of docker images,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 17:14:34-07:00,25200,2019-10-17 17:14:34-07:00,25200,True,False,['test_imagebuilder.py'],['e30e6543d1c9548428131582530a377dd26844ce'],3,48,51,1,0.0,1.0,1.0
+fc6ab670105d63195e56e565323cc73dc35ef746,Cleanup some stylistic issues found by pyflakes,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 17:23:32-07:00,25200,2019-10-17 17:27:52-07:00,25200,True,False,"['__main__.py', 'config.py', 'gitutils.py', 'helm.py', 'setup.py', 'test_imagebuilder.py']",['10e34b8a785ddc6fcdd2041f8de9b6a5096c8ad9'],10,14,24,6,1.0,1.0,1.0
+41a5046ceaff773dd8bcb0b9124f0ce44179d723,"Don't mark requests as an explicit dependency
+
+It is not",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 17:28:54-07:00,25200,2019-10-17 17:28:54-07:00,25200,True,False,['setup.py'],['fc6ab670105d63195e56e565323cc73dc35ef746'],1,0,1,1,,,
+e288a8cf0acd85f002f902d61da68d0a403d5eca,"Show code coverage as CI status only, not comment",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-10-17 17:29:57-07:00,25200,2019-10-17 17:29:57-07:00,25200,True,False,['.codecov.yml'],['41a5046ceaff773dd8bcb0b9124f0ce44179d723'],0,2,2,1,,,
+cf82dfa92568a0d6ef8a0958ccfcfab22c7f97ab,"Add a basic CircleCI orb
+
+Can be used by other repositories to build images, and eventually
+deploy them. This prevents code duplication",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-11-22 16:45:02-08:00,28800,2019-11-22 16:45:02-08:00,28800,True,False,['orb.yml'],['cf688d92df28b7d3d476a01fec5b168cc1c7afdd'],0,102,102,1,,,
+43d8c8e5610c015598f1fe9c753e04927f2804f4,Validate orbs as part of CI,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-11-25 09:53:18-08:00,28800,2019-11-25 09:53:18-08:00,28800,True,False,"['config.yml', 'orb.yml']",['cf82dfa92568a0d6ef8a0958ccfcfab22c7f97ab'],1,12,13,2,,,
+6f684ad1e6c360a427e961a10ff42508c38511fd,"Accept wider variety of errors for image not found
+
+ECR doesn't seem to give us a NotFound exception, instead
+showering us a nice 500",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-11-27 19:37:47-08:00,28800,2019-11-27 19:38:54-08:00,28800,True,False,['config.py'],['ed48018601936e0f03514cce6cbd0b664c75de18'],0,3,3,1,1.0,1.0,1.0
+9c9d7a0160c67469e617a3f3bc61f9a66525ef01,Try to detect commitrange automatically,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-11-27 19:58:58-08:00,28800,2019-11-27 19:58:58-08:00,28800,True,False,"['__main__.py', 'commitrange.py']",['6f684ad1e6c360a427e961a10ff42508c38511fd'],2,23,25,2,0.9,0.9,1.0
+66e26d4bdff645ee2e27706b78b9721168c58238,Provide a better error message when autodetection fails,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-11-27 21:00:36-08:00,28800,2019-11-27 21:02:21-08:00,28800,True,False,['__main__.py'],['9c9d7a0160c67469e617a3f3bc61f9a66525ef01'],0,7,7,1,0.0,0.0,1.0
+03414203dbc72b65ab39aa618a7e980e5553cb22,Add helm timeout option,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-11-30 05:24:35-05:00,18000,2019-11-30 05:32:06-05:00,18000,True,False,"['__main__.py', 'helm.py']",['6f684ad1e6c360a427e961a10ff42508c38511fd'],3,12,15,2,0.0,0.0,0.4444444444444444
+3b1e02a15127c16ca34803b2370aa3443098438c,Add helm force option,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-11-30 05:28:56-05:00,18000,2019-11-30 05:42:42-05:00,18000,True,False,"['__main__.py', 'helm.py']",['03414203dbc72b65ab39aa618a7e980e5553cb22'],4,14,18,2,0.0,0.0,0.5
+860e3b66a9102ed8b6e262078ff85061b049ce69,Fix comma,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-11-30 08:22:40-05:00,18000,2019-11-30 08:22:40-05:00,18000,True,False,['__main__.py'],['3b1e02a15127c16ca34803b2370aa3443098438c'],1,1,2,1,,,
+62c85e0225cd5bf0bd26214426674cc8940115eb,Remove nargs from timeout,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-11-30 15:54:10-05:00,18000,2019-11-30 18:12:14-05:00,18000,True,False,['__main__.py'],['860e3b66a9102ed8b6e262078ff85061b049ce69'],1,0,1,1,1.0,1.0,0.0
+36e0665a62d7f94f0b1b413077bd3419d3729e41,Remove extraneous comma,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-11-30 18:11:43-05:00,18000,2019-11-30 18:12:21-05:00,18000,True,False,['__main__.py'],['62c85e0225cd5bf0bd26214426674cc8940115eb'],1,1,2,1,,,
+62295064a168a18b3afa07f81a433d52cc30a0c3,Remove nargs from force,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-12-01 12:39:51-05:00,18000,2019-12-01 12:39:51-05:00,18000,True,False,['__main__.py'],['36e0665a62d7f94f0b1b413077bd3419d3729e41'],1,0,1,1,1.0,1.0,0.0
+5e2eeea219441300e0acf8e6ea8621660f042a79,Add default for force,Tim Crone,tjcrone@gmail.com,Tim Crone,tjcrone@gmail.com,2019-12-02 09:06:09-05:00,18000,2019-12-02 09:06:09-05:00,18000,True,False,['helm.py'],['62295064a168a18b3afa07f81a433d52cc30a0c3'],1,1,2,1,,,
+4d5a4a13eb180470557bf1ed7b645ce44669a9f6,Try to detect commitrange automatically,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-11-27 19:58:58-08:00,28800,2019-12-02 08:34:39-08:00,28800,True,False,"['__main__.py', 'commitrange.py']",['9ab545f6e3ecb33c8edc101747ecc0e2427af13f'],2,23,25,2,0.9,0.9,1.0
+a3f0b11e119c31f8bdefed40d7b8840640e21f1c,Provide a better error message when autodetection fails,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-11-27 21:00:36-08:00,28800,2019-12-02 08:34:39-08:00,28800,True,False,['__main__.py'],['4d5a4a13eb180470557bf1ed7b645ce44669a9f6'],0,7,7,1,0.0,0.0,1.0
+d0d04ba6f215bcb4fd08d07ec9bfe366bf2c7189,Don't fail AWS ECR auth when no ~/.docker exists,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-12-02 08:33:34-08:00,28800,2019-12-02 08:34:39-08:00,28800,True,False,['auth.py'],['a3f0b11e119c31f8bdefed40d7b8840640e21f1c'],5,10,15,1,0.0,1.0,0.0
+bc625371857a730534da2a0faf90dfbe332ccd14,"Actually use provided AWS creds for EKS
+
+Previously, it had worked by accident where the credentials
+for ECR were already in place",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-12-02 08:33:48-08:00,28800,2019-12-02 08:34:39-08:00,28800,True,False,['auth.py'],['d0d04ba6f215bcb4fd08d07ec9bfe366bf2c7189'],0,8,8,1,1.0,1.0,0.0
+b2bc1522f960e8e667626f04b5309108932c3f3a,"Set force's default to False
+
+Non-default arguments can not follow default args",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-12-02 08:47:03-08:00,28800,2019-12-02 08:47:03-08:00,28800,True,False,['helm.py'],['bc625371857a730534da2a0faf90dfbe332ccd14'],1,1,2,1,,,
+71ff0750bd461ffe6c67fee54641e984262603d0,"use 'aws2' as aws CLI command
+
+We install that into our docker image",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-12-10 12:29:34-08:00,28800,2019-12-10 12:29:34-08:00,28800,True,False,['auth.py'],['9d29893913ec7c96c5a87cb151615abe929e8942'],1,1,2,1,,,
+b507fbf073c5ef9c982d51fbb18e884e2cfe792f,Add workflow to tag & push image,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-12-10 12:34:34-08:00,28800,2019-12-10 12:35:09-08:00,28800,True,False,['docker-push.yaml'],['71ff0750bd461ffe6c67fee54641e984262603d0'],0,14,14,1,,,
+cfab2d2b73dbb81dbed608cc4dd9df9ff7650ec5,Add missing Dockerfile,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-12-10 12:36:09-08:00,28800,2019-12-10 12:36:09-08:00,28800,True,False,['Dockerfile'],['b507fbf073c5ef9c982d51fbb18e884e2cfe792f'],0,31,31,1,,,
+02ff82ae50363c9d0cbb77eafe383e63f200eaa9,"Handle ECR registry with no image properly
+
+I wish all registries would agree on wtf to return",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-12-11 10:37:01-08:00,28800,2019-12-11 10:37:01-08:00,28800,True,False,['config.py'],['cfab2d2b73dbb81dbed608cc4dd9df9ff7650ec5'],0,2,2,1,1.0,1.0,1.0
+7e1ece72fa74cc8c0a25b40c04ae304602da694d,Fix typo in PATH setup,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2019-12-19 12:39:08-08:00,28800,2019-12-19 12:39:08-08:00,28800,True,False,['Dockerfile'],['02ff82ae50363c9d0cbb77eafe383e63f200eaa9'],1,1,2,1,,,
+7c2f17389c27ee29582f2be005dfd6b3ab2d8db0,"Specifiy helm path with an environment variable
+
+Lets us do helm 2 / 3 simultaneously",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-22 11:04:26-08:00,28800,2020-01-22 11:04:26-08:00,28800,True,False,['helm.py'],['7e1ece72fa74cc8c0a25b40c04ae304602da694d'],2,5,7,1,,,
+1767689c5277400a473b9f239a851f75051d8240,Add helm3 to docker image,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-22 13:01:33-08:00,28800,2020-01-22 13:01:33-08:00,28800,True,False,['Dockerfile'],['7c2f17389c27ee29582f2be005dfd6b3ab2d8db0'],1,7,8,1,,,
+6498dfe5a13496ff773206b5e72b7b158e6cf9e6,Ignore repo2docker requirement for now,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-01-30 16:24:32-08:00,28800,2020-01-31 14:40:48-08:00,28800,True,False,['setup.py'],['1767689c5277400a473b9f239a851f75051d8240'],2,2,4,1,,,
+cb8fed045e941f987b0e25bec0cec792d4af9bda,"Removed comma, added comment",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-01-31 14:34:30-08:00,28800,2020-01-31 14:41:02-08:00,28800,True,False,['setup.py'],['6498dfe5a13496ff773206b5e72b7b158e6cf9e6'],1,2,3,1,,,
+9f0edf7abe2007d8eba83c7aeff6ad7302909ec4,Made auth.py functions context managers. Updated main to reflect this for building.,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-04 13:44:39-08:00,28800,2020-02-04 14:24:43-08:00,28800,True,False,"['__main__.py', 'auth.py']",['1767689c5277400a473b9f239a851f75051d8240'],28,49,77,2,,,
+a4eade69662928129ec8ae81dc0b5743de9e09a3,Working context managers for AWS config file location,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-04 14:12:19-08:00,28800,2020-02-04 14:24:43-08:00,28800,True,False,"['__main__.py', 'auth.py']",['9f0edf7abe2007d8eba83c7aeff6ad7302909ec4'],33,50,83,2,0.0,1.0,0.0
+9a87a72338f108b952e9b0c2b6c79994066a455d,"Removed old code, added comments",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-04 14:15:48-08:00,28800,2020-02-04 14:24:43-08:00,28800,True,False,['auth.py'],['a4eade69662928129ec8ae81dc0b5743de9e09a3'],13,5,18,1,,,
+07c3e83b5cabd66781c2144465d67c801798fd6e,Yield nothing instead of 0,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-04 15:45:54-08:00,28800,2020-02-04 15:51:02-08:00,28800,True,False,['auth.py'],['9a87a72338f108b952e9b0c2b6c79994066a455d'],6,6,12,1,,,
+28a1a383c8d5e9ac1c6a7c1e128daf7d4f9701a9,Removed aliases for context generators,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-04 15:46:24-08:00,28800,2020-02-04 15:51:02-08:00,28800,True,False,['__main__.py'],['07c3e83b5cabd66781c2144465d67c801798fd6e'],2,2,4,1,,,
+0cf9a2111a7fcbd508f0e604ca62a37268097d12,Changed method for unsetting env variable,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-04 15:48:28-08:00,28800,2020-02-04 15:51:02-08:00,28800,True,False,['auth.py'],['28a1a383c8d5e9ac1c6a7c1e128daf7d4f9701a9'],2,2,4,1,,,
+017e4548e61c4fff5e91e80d8a25a99fdd8b7cbe,Updated comment,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-04 15:49:21-08:00,28800,2020-02-04 15:51:02-08:00,28800,True,False,['auth.py'],['0cf9a2111a7fcbd508f0e604ca62a37268097d12'],1,1,2,1,,,
+43e7618aaae12386d30109cf9c0b67d29ae011aa,Updated repo2docker requirement,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-07 09:58:04-08:00,28800,2020-02-07 10:01:33-08:00,28800,True,False,['setup.py'],['cb8fed045e941f987b0e25bec0cec792d4af9bda'],3,2,5,1,,,
+64d77c04955a4aa19d7fdd72420b5ac56f6b5a93,"Revert ""Authenticator Updates (with special attention to AWS)""",Yuvi Panda,yuvipanda@gmail.com,GitHub,noreply@github.com,2020-02-10 22:22:31+05:18,-19080,2020-02-10 22:22:31+05:18,-19080,True,False,"['__main__.py', 'auth.py']",['d8939cda3cc0247f2fb9dc413206390c46197776'],93,63,156,2,1.0,0.0,1.0
+e5f3abb415ff3e8923b0964c8fdbb826ccba3dd8,Changed aws2 to aws,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-14 12:03:42-08:00,28800,2020-02-14 12:03:42-08:00,28800,True,False,['auth.py'],['c0367cc6d2f3e5d78282f8732346ed8e6074108e'],1,1,2,1,,,
+d954c948530cafb1035d14e6efbc4a0b45a8f369,Removed symlink command,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-14 12:03:52-08:00,28800,2020-02-14 12:03:52-08:00,28800,True,False,['Dockerfile'],['e5f3abb415ff3e8923b0964c8fdbb826ccba3dd8'],2,1,3,1,,,
+02f96a4d2c0e21a470be93ffc858cf7fcef00cae,"Allow running hubploy as a module
+
+This makes python3 -m hubploy work",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-19 15:05:21+05:18,-19080,2020-02-19 15:05:21+05:18,-19080,True,False,['__main__.py'],['a02fb01bbc4a698b2cc85f9677e9881dac8d438a'],0,3,3,1,,,
+edf788812b2441b10b8f935ae951b5f6bd5a84d5,"Create kubernetes namespace explicitly
+
+helm3 doesn't support auto-creating namespaces, so we must
+do it explicitly for it. I'd like us to eventually not",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-19 15:05:49+05:18,-19080,2020-02-19 15:06:26+05:18,-19080,True,False,"['helm.py', 'setup.py']",['02f96a4d2c0e21a470be93ffc858cf7fcef00cae'],0,23,23,2,0.0,0.0,0.0
+0ba32e8b9f14ca5046392f2c489d86de68c8ddf2,Cache v2 to enable new requirements,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-02-19 13:05:41-08:00,28800,2020-02-19 13:05:41-08:00,28800,True,False,['config.yml'],['edf788812b2441b10b8f935ae951b5f6bd5a84d5'],3,3,6,1,,,
+d29b385e31450f9c27553b5f8d5bab9eaaeddfb0,"Upgrade pip in CI
+
+We were running into setuptools incompatibilities otherwise",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-20 09:54:33+05:18,-19080,2020-02-20 09:54:33+05:18,-19080,True,False,['config.yml'],['ef697b06bda075127f8869c033e9b86d6dec0991'],0,1,1,1,,,
+42fcc830687314cfa054bf22ad9403331b5319cb,"Don't use any cache if an exact match isn't found
+
+Seems to cause a number of problems with conflicting,
+incompatible dependencies. The time hit is worth it",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-20 09:57:17+05:18,-19080,2020-02-20 09:57:17+05:18,-19080,True,False,['config.yml'],['d29b385e31450f9c27553b5f8d5bab9eaaeddfb0'],2,1,3,1,,,
+66ccc26665796bf54f61f4ffc8a942e98fe1e68b,"Add option to not try to re-use cache
+
+GitHub actions has a 14G disk space limit. If we try to
+pull in a 9G image and then try to build another 9G image,
+we just fail by being out of disk space.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-03 16:57:17+05:18,-19080,2020-03-03 16:58:34+05:18,-19080,True,False,"['__main__.py', 'config.py']",['700535069d646e9262f501ac7243860b72434aad'],6,12,18,2,0.16666666666666666,0.16666666666666666,1.0
+c3f270f11c4aa60314a125fdd1ebbed65b8a643b,add atomic and cleanup args to hubploy cli,Joseph Hamman,jhamman@ucar.edu,Joseph Hamman,jhamman@ucar.edu,2020-03-12 23:21:17-07:00,25200,2020-03-12 23:21:17-07:00,25200,True,False,"['__main__.py', 'helm.py']",['66ccc26665796bf54f61f4ffc8a942e98fe1e68b'],4,22,26,2,0.0,0.0,0.4444444444444444
+3785a111c27a9138ac7ba7469e3c4b14d4f5fef7,"Error when deployment dir isn't found
+
+This is most often caused by:
+
+1. Calling hubploy from the wrong directory
+2. Typo in deployment name
+3. Prefixing the deployment name with `deployment/` to match
+   the directory structure.
+
+hubploy will now provide meaningful error messages for each
+of these conditions.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-25 16:41:05+05:18,-19080,2020-03-25 16:50:54+05:18,-19080,True,False,"['__main__.py', 'config.py']",['d619b2da6cae00c1b14b05b176fb66a5413eb01f'],5,19,24,2,0.6,0.6,0.6
+e72c07b224875a909d2e8643da61098f0e0df03e,"Don't cache *anything* in circleci
+
+pyenv + caching seem to be nothing but trouble.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-25 16:59:27+05:18,-19080,2020-03-25 17:01:28+05:18,-19080,True,False,['config.yml'],['3785a111c27a9138ac7ba7469e3c4b14d4f5fef7'],11,4,15,1,,,
+4d60426fcaacada8477df8a1dbd2a42f33356c34,"Remove references to 'path' from hubploy commandline
+
+Was confusing a lot of people!",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-26 14:31:32+05:18,-19080,2020-03-26 14:31:32+05:18,-19080,True,False,['__main__.py'],['18505b7ac27ad31b8dfad18af3719d9ef43106e0'],2,2,4,1,,,
+63c668d0c4a074ed0bd2df265cda4dfdfcd2840b,Bump version number,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-26 18:48:28+05:18,-19080,2020-03-26 18:48:28+05:18,-19080,True,False,['setup.py'],['c359df8b9bc5fe92bec9e719802fc4caed39bd02'],1,1,2,1,,,
+1b57576468ab5f06a792defb5bcc1e219f0bbcc4,"Ensure `credHelpers` key exists in ~/.docker/config.json
+
+`hubploy build` authenticates to AWS ECR by adding an `credHelpers`
+entry pointing to [ecr-login](1) to ~/.docker/config.json.
+If a ~/.docker/config.json file already exists but does not
+have a `credHelpers` entry, a KeyError was raised and hubploy
+failed.
+
+[1]: https://github.com/awslabs/amazon-ecr-credential-helper",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-27 15:55:47+05:18,-19080,2020-03-27 16:30:09+05:18,-19080,True,False,['auth.py'],['63c668d0c4a074ed0bd2df265cda4dfdfcd2840b'],2,3,5,1,,,
+b5baa030a902204b791a8d1428af7f29ef8e214c,"Rename 'gitutils' to 'utils'
+
+Most things in 'gitutils' were not specific to git.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-27 16:55:12+05:18,-19080,2020-03-27 17:29:20+05:18,-19080,True,False,"['config.py', 'utils.py', 'test_imagebuilder.py']",['1b57576468ab5f06a792defb5bcc1e219f0bbcc4'],10,10,20,3,,,
+ce4227fb573b59df0b0af1ba76bc422bc96e8ed7,"Throw an error when image name is not specified
+
+When filling out [hubploy-template](1), it is easy to miss
+filling out the image name in hubploy.yaml. This produced
+unclear error messages straight from docker-py. Instead,
+we print a clearer error message.
+
+[1]: https://github.com/yuvipanda/hubploy-template",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-27 17:06:41+05:18,-19080,2020-03-27 17:29:25+05:18,-19080,True,False,['config.py'],['b5baa030a902204b791a8d1428af7f29ef8e214c'],0,4,4,1,1.0,1.0,0.0
+303a4671ac1776ef6923de2a081dca3f7bb96d3e,"Manually upgrade setuptools
+
+The google auth package requires a more updated version of setuptools. Strangely, this never breaks the docker build the first time around, but it does on the second.",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-03-05 15:38:05-08:00,28800,2020-03-31 14:41:03-07:00,25200,True,False,['config.yml'],['405a7c0d0569917974a4a561fafde2c46bcd93bf'],1,1,2,1,,,
+ac27c7db71141a74dedfccce7f619201bf5fea17,"Deploy step uses context managers
+
+This enables us to set the credential location only while we are working and then unset it when we are done.
+
+Currently, this is only configured for AWS, but could be enabled for other cloud providers.",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-03-31 16:32:58-07:00,25200,2020-03-31 16:32:58-07:00,25200,True,False,"['__main__.py', 'auth.py']",['405a7c0d0569917974a4a561fafde2c46bcd93bf'],8,21,29,2,0.0,1.0,0.0
+a95259cb684ca8c5eeb6e5b5bc1feccc5920fb3e,"Build step uses context managers
+
+This enables us to set the credential location only while we are working and then unset it when we are done.
+
+Currently only configured for AWS.
+
+In addition, the logic for push and check_registry had to be moved to the auth function. We want to run the context manager every time we get past the first condition in the deploy step.",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-03-31 16:43:17-07:00,25200,2020-03-31 16:43:17-07:00,25200,True,False,"['__main__.py', 'auth.py']",['ac27c7db71141a74dedfccce7f619201bf5fea17'],41,59,100,2,0.2857142857142857,1.0,0.0
+57b57b8e5563530ecc1c7162ad091a751af2a9be,Import context managers,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-03-31 16:44:00-07:00,25200,2020-03-31 16:44:00-07:00,25200,True,False,['auth.py'],['a95259cb684ca8c5eeb6e5b5bc1feccc5920fb3e'],0,1,1,1,,,
+4f73c32610e599e67201aac3be1ae023be71291c,Remove old code,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-03-31 16:45:34-07:00,25200,2020-03-31 16:45:34-07:00,25200,True,False,['auth.py'],['57b57b8e5563530ecc1c7162ad091a751af2a9be'],10,0,10,1,0.5,0.0,1.0
+3058c95558f179a4e302a358d31d4879e55c1440,Add comments,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-03-31 16:45:57-07:00,25200,2020-03-31 16:45:57-07:00,25200,True,False,['auth.py'],['4f73c32610e599e67201aac3be1ae023be71291c'],1,4,5,1,,,
+fd8121ab02832cb3c21d6039c05b2ed7388e44d5,"Document the deployment process with a flowchart
+
+Tries to describe the whole process with the minimal
+number of steps",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-04-02 11:40:19+05:18,-19080,2020-04-02 12:03:00+05:18,-19080,True,False,"['conf.py', 'index.rst']",['63c668d0c4a074ed0bd2df265cda4dfdfcd2840b'],6,43,49,2,,,
+46dddfd71042674fe5c4d478bc30ff27bece39ff,Document components of hubploy workflow,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-04-02 11:55:35+05:18,-19080,2020-04-02 12:03:09+05:18,-19080,True,False,['index.rst'],['fd8121ab02832cb3c21d6039c05b2ed7388e44d5'],20,28,48,1,,,
+d200ec2d127523f38cef63c726398722f4d5e962,Document known limitations of hubploy,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-04-02 12:02:31+05:18,-19080,2020-04-02 12:03:09+05:18,-19080,True,False,['index.rst'],['46dddfd71042674fe5c4d478bc30ff27bece39ff'],1,10,11,1,,,
+df47629858d15c8926b8bd409adada0fbb23d3fc,Add requirements for successfully building docs,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-04-02 12:22:19+05:18,-19080,2020-04-02 12:22:19+05:18,-19080,True,False,['doc-requirements.txt'],['d200ec2d127523f38cef63c726398722f4d5e962'],0,2,2,1,,,
+b05ab4af5bd0e345f39a09756702ee7d912cceb2,Move OS var assignment to try block,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-04-02 11:33:28-07:00,25200,2020-04-02 11:33:28-07:00,25200,True,False,['auth.py'],['3058c95558f179a4e302a358d31d4879e55c1440'],7,5,12,1,,,
+34c17a91346e8dc39dae240ad4bc55612ca5cf48,Reset env variable to previous value if it had one,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-04-02 13:24:13-07:00,25200,2020-04-02 13:24:13-07:00,25200,True,False,['auth.py'],['b05ab4af5bd0e345f39a09756702ee7d912cceb2'],0,10,10,1,0.5,1.0,0.0
+74330d77fdc9204d17f7e1e27308e641c62b49fb,Consolidate env var manipulation into a function,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-04-02 15:08:42-07:00,25200,2020-04-02 15:08:42-07:00,25200,True,False,['auth.py'],['34c17a91346e8dc39dae240ad4bc55612ca5cf48'],6,13,19,1,1.0,1.0,1.0
+17a7fb6c154bd1501e31519d0167171f59b12b62,"Manage the kubeconfig with a temp file
+
+Also managing it like the AWS credentials file: set and use the file while in the context of cluster authentication, then reset everything when done.",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-04-02 15:15:30-07:00,25200,2020-04-02 15:15:30-07:00,25200,True,False,['auth.py'],['74330d77fdc9204d17f7e1e27308e641c62b49fb'],0,11,11,1,0.0,1.0,0.0
+aa86aecee59fb8236e9928476be3300d9f67a839,Move similar commands together for clarity,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-04-03 14:45:19-07:00,25200,2020-04-06 12:17:26-07:00,25200,True,False,['auth.py'],['17a7fb6c154bd1501e31519d0167171f59b12b62'],1,2,3,1,,,
+eee72c0d646d22215454e3965680dbe72bf85238,"Correct syntax for missing env variable
+
+Yuvi let me know the correct way to use existing functions to get the environment variable if it exists and an empty string if it does not. This allows me to delete the custom function.",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-04-06 11:13:36-07:00,25200,2020-04-06 12:17:42-07:00,25200,True,False,['auth.py'],['aa86aecee59fb8236e9928476be3300d9f67a839'],14,3,17,1,0.0,0.0,0.0
+f88dc72e6b79255a6395587f4499a3199c612b98,"Cleaned up env variable unsetting
+
+Helper function consolidates the logic here: If the environment variable had a value beforehand, put that value back. If there was no previous value, delete the current value.",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-04-06 11:32:32-07:00,25200,2020-04-06 12:17:52-07:00,25200,True,False,['auth.py'],['eee72c0d646d22215454e3965680dbe72bf85238'],7,13,20,1,1.0,1.0,1.0
+262245613b081f14bfc9ae1bacf0d3b89602ac76,"Pass updated kubeconfig location
+
+Now that we are specifying the kubeconfig file location, we need to tell load_kube_config() where that is explicitly. It doesn't inherently read that environment variable.",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-04-08 09:39:08-07:00,25200,2020-04-08 09:39:08-07:00,25200,True,False,['helm.py'],['f88dc72e6b79255a6395587f4499a3199c612b98'],1,3,4,1,0.0,0.0,0.0
+47a8ebb3ff64513988584e3e6fa3e17f099f9e8e,"Updated environment file handling
+
+Default value is None, so we can differentiate between an empty variable and a missing variable. Also, the unsetting function will delete the value that hubploy uses always, and then set it to the old value if there was one.",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-04-08 09:43:11-07:00,25200,2020-04-08 09:43:11-07:00,25200,True,False,['auth.py'],['262245613b081f14bfc9ae1bacf0d3b89602ac76'],7,7,14,1,0.0,0.0,0.0
+a880de05846756ca9605296900258813a48ae482,"Use a temporary KUBECONFIG file for all cluster auth
+
+The current context for kubectl should ideally not change
+when running hubploy. Almost all the tools used for fetching
+cluster auth info write credentials to file specified in
+KUBECONFIG. Temporarily setting that var for the course of
+our deployment works great - helm can read from it too!",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-04-13 18:03:02+05:18,-19080,2020-04-13 18:03:02+05:18,-19080,True,False,['auth.py'],['4676ddd91f9f8730ef46a08566654a2ceb8ebc9e'],25,25,50,1,1.0,0.0,1.0
+3cfd3c9a0c7e75c914f3fce6f6dcfb254b1fe75a,Remove unused and wrong image-builder docs,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-04-23 18:13:46+05:18,-19080,2020-04-23 18:13:46+05:18,-19080,True,False,['image-builder.rst'],['a9c62e0c6ebed869ea08ca129ee1dd6875fd9351'],34,0,34,1,,,
+6e9b257a28c9b5efdf948fea92d6406eeebc4904,"Support --set-string and avoid numerical image tag bug
+
+When using the helm CLI and `--set`, it cannot know when it receives
+it's argument if the value was meant as a string or as an integer if it
+receives the string `12334567`.
+
+The helm CLI has opted to have the `--set-string` flag to enforce a set
+value to be a string value even if it looks numerical. We should ensure
+that we always set image tags and names as strings, or we run into
+issues like
+https://github.com/earthlab/hub-ops/pull/199#issuecomment-619099629.",Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-04-24 19:46:15+02:00,-7200,2020-04-24 19:46:24+02:00,-7200,True,False,"['__main__.py', 'helm.py']",['6eaa4030e3facd2a3dcdeaa693405eac8909641b'],10,32,42,2,0.0,0.0,0.7272727272727273
+d8ba7dc5c50c53a5063e08835c0f08216b62c186,"Add option to specify which images to build explicitly
+
+When building multiple images, you might want to do those
+steps separately. This is particularly important on GitHub
+actions, where the GitHub hosted runners only have 14G of
+disk space. You can clean out docker image cache between
+runs to make enough space.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-04-30 12:05:36+05:18,-19080,2020-04-30 12:05:36+05:18,-19080,True,False,['__main__.py'],['6e0ecb936e872fe57cd85fc1a1807f0f230a249d'],1,17,18,1,0.0,0.0,1.0
+8c3e13fd0e1da11d2f9cfd4e21da047a9a6ff378,Fix image building when authentication isn't needed,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-04-30 12:15:54+05:18,-19080,2020-04-30 12:15:54+05:18,-19080,True,False,['auth.py'],['d8ba7dc5c50c53a5063e08835c0f08216b62c186'],1,4,5,1,0.0,0.0,0.0
+0632b20cb83b3336715ce4a2bf87fcd7bf27451b,"Add support for a 'secrets' submodule
+
+Often, you want to keep all your secrets in an entirely
+different git repo than your public deployment repo. With
+this change, the 'secret' repo can be referenced here as a
+submodule in the path 'secrets'. The same config paths
+(deployments/<deployment>/(config|secret)/(common|staging|prod).yaml)
+works inside the secrets repo too.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-05-05 17:19:57+05:18,-19080,2020-05-05 17:19:57+05:18,-19080,True,False,['helm.py'],['8c3e13fd0e1da11d2f9cfd4e21da047a9a6ff378'],1,8,9,1,0.0,0.0,0.0
+a5aa57818e21a67ec7e9ce872af74944397d85e7,Use full path for helm files under secrets/ subdir,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-05-11 16:27:25+05:18,-19080,2020-05-11 16:27:25+05:18,-19080,True,False,['helm.py'],['0632b20cb83b3336715ce4a2bf87fcd7bf27451b'],1,1,2,1,,,
+be2c749e9b0fbfa8a54ba19c93fdf1b3a85487b1,make images in hubploy.yaml optional,Scott Henderson,scottyh@uw.edu,Scott Henderson,scottyh@uw.edu,2020-05-19 11:51:22-07:00,25200,2020-05-19 11:51:22-07:00,25200,True,False,"['auth.py', 'config.py', 'helm.py']",['792987afe839daad8b81ec57a9b8e07712e9f3f3'],24,22,46,3,0.6666666666666666,0.6666666666666666,0.0
+396e07f6b2cd58a0f51880108f9f227f5011ba73,"Stop repeated checks for parent images
+
+The git log command we use will give us the same
+commit hash over and over again if that was the first
+time that directory had been committed. This meant we
+would repeatedly check for the existence of the same image.
+
+This fixes that by stopping the generator once we
+repeat tags",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-05-20 16:15:22+05:18,-19080,2020-05-20 16:15:22+05:18,-19080,True,False,['config.py'],['792987afe839daad8b81ec57a9b8e07712e9f3f3'],1,7,8,1,1.0,1.0,1.0
+8b2cb24987ee2dd7c81e77743fc3d08616d9ad11,leave auth changes for another day,Scott Henderson,scottyh@uw.edu,Scott Henderson,scottyh@uw.edu,2020-05-20 13:48:02-07:00,25200,2020-05-20 13:48:02-07:00,25200,True,False,['auth.py'],['be2c749e9b0fbfa8a54ba19c93fdf1b3a85487b1'],19,10,29,1,0.0,0.0,1.0
+5b8986997ee3f41bd45ea31827587012ea96744b,actually drop auth.py from pr,Scott Henderson,scottyh@uw.edu,Scott Henderson,scottyh@uw.edu,2020-05-20 13:52:01-07:00,25200,2020-05-20 13:52:01-07:00,25200,True,False,['auth.py'],['8b2cb24987ee2dd7c81e77743fc3d08616d9ad11'],0,12,12,1,,,
+9baae70a8915c0bd8416ee5717ce7021294e2679,Initial commit plus first draft of repo setup how-to doc,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-22 15:04:18-07:00,25200,2020-05-22 15:04:18-07:00,25200,True,False,"['hubploy-build-jupyterhub-image.rst', 'hubploy-deploy-jupyterhub-repo-setup.rst', 'hubploy-setup-dev-environment.rst', 'index.rst', 'topic-directory-structure.rst', 'topic-values-yaml-overriding.rst']",['eaefd689c5767750a4be31e34647b58a4aa56aaa'],0,228,228,6,,,
+937dd70e8333b748cee53a092219338e80a9eb07,Corrected section links,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-26 17:14:00-07:00,25200,2020-05-26 17:14:00-07:00,25200,True,False,['hubploy-deploy-jupyterhub-repo-setup.rst'],['9baae70a8915c0bd8416ee5717ce7021294e2679'],23,12,35,1,,,
+f83f969cb6535cafa70220a65725f8961e756d7e,Added toctrees to structure the linking of these sections,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-26 17:14:43-07:00,25200,2020-05-26 17:14:43-07:00,25200,True,False,"['index.rst', 'index.rst', 'index.rst']",['937dd70e8333b748cee53a092219338e80a9eb07'],5,34,39,3,,,
+676b1a740e1ba5eead9808449e1cc17a642cf2fa,"Titles
+
+Just want files there to remind me what to do. Titles can be changed, but are there to silence warnings from sphinx-build.",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-26 17:26:36-07:00,25200,2020-05-26 17:26:36-07:00,25200,True,False,"['hubploy-build-jupyterhub-image.rst', 'topic-directory-structure.rst', 'topic-values-yaml-overriding.rst']",['f83f969cb6535cafa70220a65725f8961e756d7e'],0,9,9,3,,,
+56b79bd19ef0b8f4e637978e35e060c1ecc99ce1,First pass on the dev environment how-to,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-26 18:08:08-07:00,25200,2020-05-26 18:08:08-07:00,25200,True,False,['hubploy-setup-dev-environment.rst'],['676b1a740e1ba5eead9808449e1cc17a642cf2fa'],0,63,63,1,,,
+440f5c6073735a9f194b32fe190b071fcb447597,Wrap lines at 100 characters for easier diffing,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-27 11:21:21-07:00,25200,2020-05-27 11:21:21-07:00,25200,True,False,"['hubploy-deploy-jupyterhub-repo-setup.rst', 'hubploy-setup-dev-environment.rst']",['56b79bd19ef0b8f4e637978e35e060c1ecc99ce1'],40,107,147,2,,,
+4e2b071ed78883324a1138fb14d85b13f1bfed2d,Updates for first draft of Custom Hubploy How-To,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-27 11:32:53-07:00,25200,2020-05-27 11:32:53-07:00,25200,True,False,['hubploy-setup-dev-environment.rst'],['440f5c6073735a9f194b32fe190b071fcb447597'],3,11,14,1,,,
+b9af46572559439b8fa6bf59703e921200440a30,Quash build warnings / syntax errors that arose from link breaking paragraphs.,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-27 12:15:25-07:00,25200,2020-05-27 12:15:25-07:00,25200,True,False,"['hubploy-deploy-jupyterhub-repo-setup.rst', 'hubploy-setup-dev-environment.rst']",['4e2b071ed78883324a1138fb14d85b13f1bfed2d'],31,37,68,2,,,
+5d3959a22fd2d43c1de8f7670f0575b65f506e06,First draft for these two topics. Sphinx build is passing.,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-27 14:36:53-07:00,25200,2020-05-27 14:36:53-07:00,25200,True,False,"['topic-directory-structure.rst', 'topic-values-yaml-overriding.rst']",['b9af46572559439b8fa6bf59703e921200440a30'],0,165,165,2,,,
+d780a14d334bc5229cafa15eb57b44dab3f70eee,Added reference section and config value reference.,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-27 15:29:34-07:00,25200,2020-05-27 15:29:34-07:00,25200,True,False,"['index.rst', 'index.rst', 'reference-hubploy-configuration-values.rst']",['5d3959a22fd2d43c1de8f7670f0575b65f506e06'],0,188,188,3,,,
+2d92fea0f813943a590ec2a870aa2f8a6f58f869,White space formatting,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-05-27 15:29:47-07:00,25200,2020-05-27 15:29:47-07:00,25200,True,False,['index.rst'],['d780a14d334bc5229cafa15eb57b44dab3f70eee'],0,2,2,1,,,
+cac9146e89a67329629ee0ed02b60c2615c04e2b,Update Dockerfile's gcloud and helm versions,Erik Sundell,erik.i.sundell@gmail.com,GitHub,noreply@github.com,2020-06-12 12:59:26+02:00,-7200,2020-06-12 12:59:26+02:00,-7200,True,False,['Dockerfile'],['eaefd689c5767750a4be31e34647b58a4aa56aaa'],4,4,8,1,,,
+e11364af0be7ae27e500b890089b7e10ddc58309,Updated docstrings,Erik Sundell,erik@sundellopensource.se,Erik Sundell,erik@sundellopensource.se,2020-06-14 15:12:30+02:00,-7200,2020-06-14 15:12:30+02:00,-7200,True,False,"['auth.py', 'commitrange.py', 'config.py', 'helm.py', 'utils.py']",['6eaa4030e3facd2a3dcdeaa693405eac8909641b'],22,23,45,5,,,
+135ef1e23d009338fb6c799e0201d88967f1a747,update registry_auth_aws to handle role assumption,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-04-30 17:08:25+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['98d693b0e4a7e357509477be5bc70039898d09eb'],29,42,71,1,0.0,0.0,0.0
+0c5a6fe4601b56576cc9b05fbcee396a19b906cc,use 'aws assume-role' instead,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-04-30 17:15:42+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['135ef1e23d009338fb6c799e0201d88967f1a747'],2,5,7,1,0.0,0.0,0.0
+91e98297920b2be68e57080f672e81e52a553ea1,update cluster_auth_aws to use eks role,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-04-30 17:27:47+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['0c5a6fe4601b56576cc9b05fbcee396a19b906cc'],18,29,47,1,0.0,0.0,0.0
+c7c44976b5b10c59d869ee37bed0a1dc422c0568,assume-role is part of 'sts',cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-04-30 17:44:00+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['91e98297920b2be68e57080f672e81e52a553ea1'],2,2,4,1,,,
+77e6fd250e40a3e4702fa39fa36421e56d993e66,add yield statements,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-04-30 18:25:54+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['c7c44976b5b10c59d869ee37bed0a1dc422c0568'],0,4,4,1,0.0,0.0,0.0
+5c06849124a1885feb93caac47e111441e1a2c2f,spaces,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-01 12:56:18+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['77e6fd250e40a3e4702fa39fa36421e56d993e66'],2,0,2,1,,,
+a6b8931d2c2657018a7cc318f06ffd2cfe1f5ba2,generalize role names in params and use only one yield,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-01 16:17:56+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['5c06849124a1885feb93caac47e111441e1a2c2f'],12,8,20,1,1.0,1.0,1.0
+25a657d487957ac9692763dccb782c6a16491b98,remove spaces between = in function signatures,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-01 16:18:51+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['a6b8931d2c2657018a7cc318f06ffd2cfe1f5ba2'],2,2,4,1,,,
+ddccff52b7c3caa4f33b8c7355f8ff2f4d9bac23,make some requested changes,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-01 17:39:13+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['25a657d487957ac9692763dccb782c6a16491b98'],6,14,20,1,0.8333333333333334,0.8333333333333334,0.8333333333333334
+2a2d305dc04498aea8508df005eb571c3bc93276,re-work scope for context managers,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-01 18:35:13+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['ddccff52b7c3caa4f33b8c7355f8ff2f4d9bac23'],44,53,97,1,0.0,0.0,0.0
+c4e3cd6d4b0815c22aa4e28537445388d92a62c1,fix wrong var name,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-01 18:53:46+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['2a2d305dc04498aea8508df005eb571c3bc93276'],1,1,2,1,,,
+0ad02ae10a10a56c66f5832ced3b0f6ef956c783,update comment,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-01 19:43:01+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['c4e3cd6d4b0815c22aa4e28537445388d92a62c1'],1,1,2,1,,,
+e6cb22de71e718d8431f3240326d8cf6a140d160,use env vars for AWS creds / use boto3,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-04 15:14:21+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,"['auth.py', 'helm.py']",['0ad02ae10a10a56c66f5832ced3b0f6ef956c783'],23,46,69,2,0.0,0.0,0.15
+1afa6f1a966cdd973a86910cb34a106027f79c04,also set AWS_ROLE_SESSION_NAME,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-04 16:19:20+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,"['auth.py', 'helm.py']",['e6cb22de71e718d8431f3240326d8cf6a140d160'],12,9,21,2,1.0,1.0,1.0
+1a5b094605f4a04403061848836f552fe485e0a0,also set AWS_ROLE_SESSION_NAME,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-04 16:24:39+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['1afa6f1a966cdd973a86910cb34a106027f79c04'],4,10,14,1,0.0,0.0,0.0
+9957b6296c6902968b00cdaf12e743e44e9f1c38,don't set AWS_ROLE_SESSION_NAME,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-05 13:48:20+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['1a5b094605f4a04403061848836f552fe485e0a0'],5,5,10,1,1.0,1.0,1.0
+f6c14fd408ba9c7af7666070de492d0a86923be6,uninstall any existing deployment before trying to install,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-06 16:06:15+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,"['auth.py', 'helm.py']",['9957b6296c6902968b00cdaf12e743e44e9f1c38'],2,5,7,2,0.0,0.0,0.0
+5a4bad5eb20c4bc4fa9b9f9d0a2241417dc9a72c,temporarily ignore failure to delete non-existant deployment,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-06 21:20:50+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['helm.py'],['f6c14fd408ba9c7af7666070de492d0a86923be6'],3,7,10,1,0.0,0.0,0.0
+10fa11decfc0284879854db4fe38ecf6a726e483,update comment,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-06 23:17:14+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['helm.py'],['5a4bad5eb20c4bc4fa9b9f9d0a2241417dc9a72c'],0,4,4,1,,,
+4bcdaaf17cf37d5bdf5ba3d5bdbcfa8da5f4a829,requested changes to auth and helm; they are untested; more to come,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-12 14:09:26+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,"['auth.py', 'helm.py']",['10fa11decfc0284879854db4fe38ecf6a726e483'],29,13,42,2,1.0,1.0,1.0
+5f60f91bdb6c9c8bc87785968d918cec31492e70,"save original env vars, restore if they existed before",cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-12 14:47:05+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['4bcdaaf17cf37d5bdf5ba3d5bdbcfa8da5f4a829'],8,16,24,1,0.0,0.0,0.0
+9cf1e258d9ed20efc3769c005d144eeda6648e87,move registry definition,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-20 18:00:51+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['auth.py'],['5f60f91bdb6c9c8bc87785968d918cec31492e70'],1,2,3,1,,,
+47c26be2edd64849f57d0367779324e6613362f3,require boto3,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,YuviPanda,yuvipanda@gmail.com,2020-05-20 18:03:31+00:00,0,2020-06-24 18:47:52+05:18,-19080,True,False,['setup.py'],['9cf1e258d9ed20efc3769c005d144eeda6648e87'],1,2,3,1,,,
+6da6e51de04e5bbea459af5f5ecfbf5823b8f811,"get rid of update_kubeconfig, move call to after if/else",cslocum,ec2-user@ip-172-31-85-194.ec2.internal,cslocum,ec2-user@ip-172-31-85-194.ec2.internal,2020-06-24 15:54:56+00:00,0,2020-06-24 15:54:56+00:00,0,True,False,['auth.py'],['47c26be2edd64849f57d0367779324e6613362f3'],14,5,19,1,0.42857142857142855,0.42857142857142855,0.0
+1694ed1f7665e5f7e72b8492bf4998f6bbad91e5,Support decrypting secrets from sops,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-06-24 18:11:17+05:18,-19080,2020-06-25 23:33:07+05:18,-19080,True,False,"['auth.py', 'helm.py']",['a064b2cc7847b93c77d91223db897366c8e63ad9'],31,81,112,2,0.03571428571428571,0.07142857142857142,0.8928571428571429
+cf20fa354f43eba661599a01273aad0ee0c25e1e,Dockerfile: update Helm patch versions,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-06-28 18:43:11+02:00,-7200,2020-06-28 18:43:11+02:00,-7200,True,False,['Dockerfile'],['5909c58f9500b58c5fe2f79325cdbf4eabb034f2'],3,3,6,1,,,
+6fcb34df03b03ada75b1cf58c8df0d7276685841,Dockerfile: update gcloud version,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-06-28 19:05:46+02:00,-7200,2020-06-28 19:38:13+02:00,-7200,True,False,['Dockerfile'],['cf20fa354f43eba661599a01273aad0ee0c25e1e'],2,1,3,1,,,
+87bad2e3a55a8d2c86e946b068dd341bccb9d3fc,Dockerfile: install SOPS,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-06-28 19:06:31+02:00,-7200,2020-06-28 19:39:04+02:00,-7200,True,False,['Dockerfile'],['6fcb34df03b03ada75b1cf58c8df0d7276685841'],4,10,14,1,,,
+1727796ec0f3bfff8f08541d5b6238be993e135f,Dockerfile: refactoring for readability,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-06-28 19:24:20+02:00,-7200,2020-06-28 19:39:07+02:00,-7200,True,False,['Dockerfile'],['87bad2e3a55a8d2c86e946b068dd341bccb9d3fc'],8,22,30,1,,,
+00ad6d3d5275ede38438dedb2cf613d4c4afb838,"Dockerfile: helm2/helm3 binaries with helm symlinking to helm2
+
+Like this, it is easier for people to start using HELM_EXECUTABLE
+reliably now and in the future to pin their desired version if we want
+to transition to Helm 3 by default.",Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-06-28 19:30:34+02:00,-7200,2020-06-28 19:39:07+02:00,-7200,True,False,['Dockerfile'],['1727796ec0f3bfff8f08541d5b6238be993e135f'],4,5,9,1,,,
+1df10c2f61615599e3171ba18e8858e1bb140fcd,GitHub Actions: detect commit range for pushes as well,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-06-28 22:02:23+02:00,-7200,2020-06-28 22:02:23+02:00,-7200,True,False,['commitrange.py'],['406508144f45044d547fb643e6a6edc44f62d9f7'],0,13,13,1,1.0,1.0,1.0
+5bcd34e6962117813d32a07c237bfa403cb693a1,"Use dpkg to install sops, not apt-get
+
+Cleaner this way",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-07-03 00:41:06+05:18,-19080,2020-07-03 00:41:06+05:18,-19080,True,False,['Dockerfile'],['abf6cf8ef93b02ff7be99be7e327c46a073711e0'],1,1,2,1,,,
+0a596a079f6322015e7a28cf8c5878304b79f0e9,Use python 3.8 for docker image,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-07-03 15:04:53+05:18,-19080,2020-07-03 15:04:53+05:18,-19080,True,False,['Dockerfile'],['5bcd34e6962117813d32a07c237bfa403cb693a1'],1,1,2,1,,,
+7f61648fefe8201651ba88cd0ae9374a88b3fc70,"Fix --push being broken
+
+When doing deploys, https://github.com/yuvipanda/hubploy/pull/85 made
+it so that args.commit_range is always set on GitHub Actions.
+However, this means we can't use --check-registry anymore, since
+--commit-range will always be set.
+
+This fixes the autodetection logic a little to make this better",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-07-03 15:47:17+05:18,-19080,2020-07-03 15:47:17+05:18,-19080,True,False,"['__main__.py', 'config.py']",['0a596a079f6322015e7a28cf8c5878304b79f0e9'],10,10,20,2,0.0,1.0,1.0
+3c985ee6ede1408e667ea7694737000212e2944e,Changed function signatures and parameters within the functions,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-08-18 11:17:00-07:00,25200,2020-08-18 11:17:00-07:00,25200,True,False,['auth.py'],['7f61648fefe8201651ba88cd0ae9374a88b3fc70'],4,4,8,1,,,
+1ee95d470e298529f32f59519a309bd27d1cc682,Updated docs to have aws terminology for hubploy.yaml,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-08-18 11:17:25-07:00,25200,2020-08-18 11:17:25-07:00,25200,True,False,['reference-hubploy-configuration-values.rst'],['3c985ee6ede1408e667ea7694737000212e2944e'],12,12,24,1,,,
+0a500e365604c3ab26d4fe6f51f01ea04400c6f9,"Hard-coded backwards compatibility for hubploy.yaml keys
+
+Will not work for multiple images",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-08-21 12:16:32-07:00,25200,2020-08-21 12:16:32-07:00,25200,True,False,['config.py'],['ec1eef9b403b2254cc09c52dd569529086114f3b'],0,19,19,1,0.0,0.0,1.0
+deedbdf5a2e2071fc69c8a3349053f5e6f9a24b6,"Added message if image doesn't need building, changed pre-build message to 'images found'",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-08-21 12:17:19-07:00,25200,2020-08-21 12:17:19-07:00,25200,True,False,['__main__.py'],['0a500e365604c3ab26d4fe6f51f01ea04400c6f9'],1,3,4,1,0.0,0.0,1.0
+a01a6dad8122e84d54702390d02d1f3836adef77,Let GitHub Actions commit range detection crash gracefully on --force pushes,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-08-25 02:58:34+02:00,-7200,2020-08-25 02:58:58+02:00,-7200,True,False,"['commitrange.py', 'utils.py']",['8a55ab078d6b25afcf292846905c3107ec83f9a8'],1,14,15,2,1.0,1.0,1.0
+7fb1d4186396e5700f1eeb85955e4d144eae5933,Add terraform setup to .gitignore,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-08-26 13:53:45+05:18,-19080,2020-08-26 13:53:45+05:18,-19080,True,False,['.gitignore'],['8a55ab078d6b25afcf292846905c3107ec83f9a8'],0,5,5,1,,,
+83356a3f04a94a1d70045f89c25ac0b38d5b63e3,"Support kubeconfig as an auth provider
+
+Sometimes, you just wanna ship a kubeconfig file and
+call it a day. This adds support for that",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-09-11 21:03:34+05:18,-19080,2020-09-11 21:03:34+05:18,-19080,True,False,['auth.py'],['6742809fc1d8676859fe5442478c95c41c7ad050'],20,28,48,1,0.1111111111111111,0.1111111111111111,1.0
+ccace14fdbd77aa47cef31eeb502bf2d90c770c8,"Support proving a dockercfg file directly
+
+We can use a standard docker config file (from ~/.docker/config)
+to provide creds. Almost all registries provide this one way
+or other. Doing this in Azure with Service Principals requires
+more permissions than I currently have.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-09-14 16:14:51+05:18,-19080,2020-09-14 16:16:45+05:18,-19080,True,False,['auth.py'],['d52dac16422586d7876825e565999a597899a45b'],0,17,17,1,0.7333333333333333,0.7333333333333333,0.7333333333333333
+212701783abbf07d496031d23f7757a05d1bd220,Updated hubploy installation instructions,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 10:31:16-07:00,25200,2020-10-05 10:31:16-07:00,25200,True,False,['hubploy-setup-dev-environment.rst'],['7f61648fefe8201651ba88cd0ae9374a88b3fc70'],2,7,9,1,,,
+781d33bac49eede3e572a1c1007d49fd4a4ce440,Simplify / clarify the prerequisities section,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 10:44:00-07:00,25200,2020-10-05 10:44:00-07:00,25200,True,False,['hubploy-setup-dev-environment.rst'],['212701783abbf07d496031d23f7757a05d1bd220'],10,5,15,1,,,
+13dcf8240ec3d7c8774d824613278dae7a982df9,newline for readability,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 10:44:16-07:00,25200,2020-10-05 10:44:16-07:00,25200,True,False,['hubploy-setup-dev-environment.rst'],['781d33bac49eede3e572a1c1007d49fd4a4ce440'],0,1,1,1,,,
+6fb8bf94aec084bea60a699697440d3089dbd797,Add in link,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 10:45:18-07:00,25200,2020-10-05 10:45:18-07:00,25200,True,False,['hubploy-setup-dev-environment.rst'],['13dcf8240ec3d7c8774d824613278dae7a982df9'],1,2,3,1,,,
+31571efc70fffaf8147cbc5b6d57dea7106657aa,Fix typo,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 10:45:55-07:00,25200,2020-10-05 10:45:55-07:00,25200,True,False,['index.rst'],['6fb8bf94aec084bea60a699697440d3089dbd797'],1,1,2,1,,,
+543692b34878563363708cd76fd46148e09c9383,Link to the GitHub repo immediately,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 10:47:40-07:00,25200,2020-10-05 10:47:40-07:00,25200,True,False,['index.rst'],['31571efc70fffaf8147cbc5b6d57dea7106657aa'],1,2,3,1,,,
+3b6d7de0d4377d3d9ec0fc98c227b8d3f0462948,Add notes about images key and image folder being optional,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 10:55:39-07:00,25200,2020-10-05 10:55:39-07:00,25200,True,False,"['reference-hubploy-configuration-values.rst', 'topic-directory-structure.rst']",['543692b34878563363708cd76fd46148e09c9383'],1,4,5,2,,,
+5ac13a9cd4ed534cbce8e269b87c41181d0b85bf,Normalize numbered list formatting,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 10:58:43-07:00,25200,2020-10-05 10:58:43-07:00,25200,True,False,['hubploy-deploy-jupyterhub-repo-setup.rst'],['3b6d7de0d4377d3d9ec0fc98c227b8d3f0462948'],21,21,42,1,,,
+2b56a2245ab92e07d030cbb5d89dfeb8e961865f,Remove bold sentence,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 10:59:08-07:00,25200,2020-10-05 10:59:08-07:00,25200,True,False,['hubploy-deploy-jupyterhub-repo-setup.rst'],['5ac13a9cd4ed534cbce8e269b87c41181d0b85bf'],2,1,3,1,,,
+c92cad610acff37816a92a79cbe05306148dca6f,Fix tabbing formatting,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 11:00:41-07:00,25200,2020-10-05 11:00:41-07:00,25200,True,False,['hubploy-deploy-jupyterhub-repo-setup.rst'],['2b56a2245ab92e07d030cbb5d89dfeb8e961865f'],4,4,8,1,,,
+4b3f670b1ad7ef3ad464fd4d55e917a455b3ce85,Make this section use # instead of numbers,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 11:03:39-07:00,25200,2020-10-05 11:03:39-07:00,25200,True,False,['hubploy-deploy-jupyterhub-repo-setup.rst'],['c92cad610acff37816a92a79cbe05306148dca6f'],2,2,4,1,,,
+3f97c2265dd1d3e8fc487bdcd5d3e31269b5719f,"Add notes about access keys, especially on AWS",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 11:07:07-07:00,25200,2020-10-05 11:07:07-07:00,25200,True,False,['hubploy-deploy-jupyterhub-repo-setup.rst'],['4b3f670b1ad7ef3ad464fd4d55e917a455b3ce85'],1,6,7,1,,,
+0e2badf32a9d43ef8f6a043ee2f79e2bb722a176,Fix tabbing,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 11:14:51-07:00,25200,2020-10-05 11:14:51-07:00,25200,True,False,['hubploy-deploy-jupyterhub-repo-setup.rst'],['3f97c2265dd1d3e8fc487bdcd5d3e31269b5719f'],12,12,24,1,,,
+d86d1d1a4285130c6c795272b5fc44e422cf8c03,fix list syntax typo,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-05 11:15:06-07:00,25200,2020-10-05 11:15:06-07:00,25200,True,False,['hubploy-deploy-jupyterhub-repo-setup.rst'],['0e2badf32a9d43ef8f6a043ee2f79e2bb722a176'],1,1,2,1,,,
+65eeed4865429bffe422113387fc19bca43b7c91,Add Helm Version documentation,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-07 12:00:52-07:00,25200,2020-10-07 12:00:52-07:00,25200,True,False,"['index.rst', 'topic-helm-versions.rst']",['d86d1d1a4285130c6c795272b5fc44e422cf8c03'],1,64,65,2,,,
+3b2c762793ee29d53b88fd10007141e95fbe3e43,Add Contribution Guide,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-07 12:01:15-07:00,25200,2020-10-07 12:01:15-07:00,25200,True,False,"['contribution-guide.rst', 'index.rst']",['65eeed4865429bffe422113387fc19bca43b7c91'],1,86,87,2,,,
+f536502564e23f2c80a369f2d86c9638b913c2e2,Modify contribution section to point to the full contribution guide,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-07 12:01:33-07:00,25200,2020-10-07 12:01:33-07:00,25200,True,False,['hubploy-setup-dev-environment.rst'],['3b2c762793ee29d53b88fd10007141e95fbe3e43'],0,3,3,1,,,
+f792dbb829e02b8f65b164ed1f72aa42c6406d9c,"Change wording, add colons",Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-07 12:05:48-07:00,25200,2020-10-07 12:05:48-07:00,25200,True,False,['topic-helm-versions.rst'],['f536502564e23f2c80a369f2d86c9638b913c2e2'],2,2,4,1,,,
+c97eff62f35790a0281cbbeee9e0df136317daf9,Add in example and note about using helm 2 by default,Sebastian Alvis,sebialvis@gmail.com,Sebastian Alvis,sebialvis@gmail.com,2020-10-07 13:28:08-07:00,25200,2020-10-07 13:28:08-07:00,25200,True,False,['topic-helm-versions.rst'],['f792dbb829e02b8f65b164ed1f72aa42c6406d9c'],0,14,14,1,,,
+779ce4a1059dc0198d8cfddb6993656a382b3843,Activate cluster credentials just-in-time,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-11-18 10:40:28+01:00,-3600,2020-11-18 10:44:08+01:00,-3600,True,False,"['__main__.py', 'helm.py']",['5b4443ff1f4e372c6faf47cb7d6dca363fd61a6f'],15,16,31,2,,,0.0
+9f05ffcfd1643c753335286fb8a52f7908f52efb,aws: fail loudly if both aws service_key and role_arn are set,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-11-18 19:42:53+01:00,-3600,2020-11-19 01:11:40+01:00,-3600,True,False,['auth.py'],['a099edc6af1e3a0ea70d74573f8420022d7da177'],8,12,20,1,0.0,0.0,0.0
+bef8d21c65319a3fb220fd0b9125cf137773ef68,aws: avoid unset variables finally,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-11-18 19:55:58+01:00,-3600,2020-11-19 01:11:57+01:00,-3600,True,False,['auth.py'],['9f05ffcfd1643c753335286fb8a52f7908f52efb'],13,12,25,1,,,
+f8338735dc5fadaec143b1f98fd8506d916ed9bb,"aws: use more informative RoleSessionName
+
+I read up about RoleSessionName in
+https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html.
+
+> An identifier for the assumed role session.
+
+As that, I figured it would make sense to provide some detail about what
+assumed the role, and therefore hubploy-registry-auth and
+hubploy-cluster-auth seemed like more descriptive options so anyone
+inspecting this from some AWS audit console can realize its hubploy
+doing things.",Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-11-18 19:59:18+01:00,-3600,2020-11-19 01:11:57+01:00,-3600,True,False,['auth.py'],['bef8d21c65319a3fb220fd0b9125cf137773ef68'],8,2,10,1,1.0,1.0,1.0
+38f009ef7fc4d30195fc0a537ef076bb2c5f00f4,aws: fail loudly on invalid service_key,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-11-18 20:20:19+01:00,-3600,2020-11-19 01:11:57+01:00,-3600,True,False,['auth.py'],['f8338735dc5fadaec143b1f98fd8506d916ed9bb'],0,3,3,1,0.0,0.0,0.0
+40063aa0865e196896549da1ec8c0b77eb3cbce8,"aws: configure ~/.docker both service_key and role_ref
+
+This commit is just moving the configuration of ~/.docker to run both
+when using service_key and role_ref.",Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-11-18 20:24:12+01:00,-3600,2020-11-19 01:11:57+01:00,-3600,True,False,['auth.py'],['38f009ef7fc4d30195fc0a537ef076bb2c5f00f4'],15,15,30,1,,,
+3e567a19ccebf713367f7e0707151a22c90bc743,aws: update inline comments,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-11-19 01:08:20+01:00,-3600,2020-11-19 05:16:27+01:00,-3600,True,False,['auth.py'],['40063aa0865e196896549da1ec8c0b77eb3cbce8'],3,4,7,1,,,
+d388b6f4dd826002186d754590f3c04859018527,Update sops/helm in Dockerfile,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-11-18 19:18:55+01:00,-3600,2020-11-19 07:53:05+01:00,-3600,True,False,['Dockerfile'],['5b4443ff1f4e372c6faf47cb7d6dca363fd61a6f'],3,3,6,1,,,
+f36fceb21b81064665fb62a87806889ed2f94c02,aws: refactor out common auth logic from registry/cluster,Erik Sundell,erik.i.sundell@gmail.com,Erik Sundell,erik.i.sundell@gmail.com,2020-11-19 03:24:56+01:00,-3600,2020-11-20 12:10:17+01:00,-3600,True,False,['auth.py'],['66cafb5cc10dddaedd34a5a1896a289b3d354c2e'],71,31,102,1,1.0,1.0,1.0
+4908155ea2eb63b45abe4d52832d84056656f0cb,Bump version number,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-12-30 10:18:23+05:18,-19080,2020-12-30 10:18:23+05:18,-19080,True,False,['setup.py'],['7fa79b1830d74c30055243191eed1181d53ff800'],1,1,2,1,,,
+e5b8a04e6fd9f8066dd455276abcf223233a9f58,"Fix dockercfg auth provider
+
+See
+https://github.com/utoronto-2i2c/jupyterhub-deploy/runs/1624829291?check_suite_focus=true
+for error this should hopefully fix.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-12-30 13:08:24+05:18,-19080,2020-12-30 13:08:24+05:18,-19080,True,False,['auth.py'],['4908155ea2eb63b45abe4d52832d84056656f0cb'],6,15,21,1,1.0,1.0,1.0
+1e1af51865ac746f69c88df26b933e63c5269576,"Get name of temporary directory properly
+
+d.name is provided for NamedTemporaryFile, not
+for directories.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2021-01-05 11:35:25+05:18,-19080,2021-01-05 11:35:25+05:18,-19080,True,False,['auth.py'],['e5b8a04e6fd9f8066dd455276abcf223233a9f58'],2,2,4,1,,,
+d3bbc867455eed4bb7f8ac527b1d405b5b08479a,"Don't delete local charts before each deploy
+
+This forces each deploy to download upstream charts,
+adding deployment time. helm dep up makes sure that old
+versions of charts aren't hanginga round, so this isn't
+necessary",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2021-05-05 11:19:03+05:18,-19080,2021-05-05 11:19:03+05:18,-19080,True,False,['helm.py'],['6c1752dbb925711df3e1d3f0b291a7458767b8fc'],10,3,13,1,1.0,1.0,1.0
+dfc00254abb30d8887230472e83b405ff5872933,Bump version,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2021-05-05 11:20:27+05:18,-19080,2021-05-05 11:20:27+05:18,-19080,True,False,['setup.py'],['d3bbc867455eed4bb7f8ac527b1d405b5b08479a'],1,1,2,1,,,
+63d4f9b30f39f47644752e482c638693cc9da75a,Updated elgohr/Publish-Docker-Github-Action to a supported version (v5),Lars Gohr,lars@gohr.digital,Lars Gohr,lars@gohr.digital,2022-12-30 22:54:15+01:00,-3600,2022-12-30 22:54:15+01:00,-3600,True,False,['docker-push.yaml'],['dfc00254abb30d8887230472e83b405ff5872933'],1,1,2,1,,,
+9a164e7be967dba0ed6568c0ae1bb3ea1466dfe5,bump builds to use a modern ubuntu,shane knapp,incomplete@gmail.com,shane knapp,incomplete@gmail.com,2023-10-16 11:21:30-07:00,25200,2023-10-16 11:21:30-07:00,25200,True,False,['config.yml'],['dfc00254abb30d8887230472e83b405ff5872933'],2,2,4,1,,,
+92e03199f7f28f7491bdba075069396c463bfcc4,hopefully this won't break TOO much lol,shane knapp,incomplete@gmail.com,shane knapp,incomplete@gmail.com,2023-10-16 11:53:03-07:00,25200,2023-10-16 11:53:03-07:00,25200,True,False,"['config.yml', 'Dockerfile']",['fc859a1c757a15e31bec8ec4db497c4686f8995e'],2,2,4,2,,,
+4e3e9db4e56399008dc4c8a88731e5098f9b7249,try and install python first i guess,shane knapp,incomplete@gmail.com,shane knapp,incomplete@gmail.com,2023-10-16 11:54:26-07:00,25200,2023-10-16 11:54:26-07:00,25200,True,False,['config.yml'],['92e03199f7f28f7491bdba075069396c463bfcc4'],0,1,1,1,,,
+7c948c7ca9cbfb6fe653109aacf8b1ef3c653266,install tk to squash python warning,shane knapp,incomplete@gmail.com,shane knapp,incomplete@gmail.com,2023-10-16 12:02:27-07:00,25200,2023-10-16 12:02:27-07:00,25200,True,False,['config.yml'],['4e3e9db4e56399008dc4c8a88731e5098f9b7249'],0,1,1,1,,,

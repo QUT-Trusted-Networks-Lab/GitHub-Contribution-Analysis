@@ -1,0 +1,807 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+f1005a730e3640556a840977faad6aff420c391c,Initial commit,James,l3uddz@gmail.com,James,l3uddz@gmail.com,2016-12-20 17:48:02+00:00,0,2016-12-20 17:48:02+00:00,0,True,False,['README.md'],[],0,1,1,1,,,
+ffb17f613c34708986198601cbccb754da9fccac,first commit,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2016-12-20 18:18:53+00:00,0,2016-12-20 18:18:53+00:00,0,True,False,"['.gitignore', 'bot.py', 'config.py', 'bencode.py', 'requirements.txt', 'sonarr.py', 'iptorrents.py', 'morethan.py', 'utils.py']",['f1005a730e3640556a840977faad6aff420c391c'],0,810,810,9,0.39593908629441626,0.5279187817258884,0.9670050761421319
+1b453a40d572bcf4dce00ba234cc49366f3d4e39,changes to get working on linux - also should be using latest thirdparty libs now.,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2016-12-20 22:04:00+00:00,0,2016-12-20 22:04:00+00:00,0,True,False,"['bot.py', 'requirements.txt', 'iptorrents.py', 'morethan.py']",['ffb17f613c34708986198601cbccb754da9fccac'],12,26,38,4,0.0,0.0,1.0
+714b4cea493d8f057026c352f26c4f8cc83b9c4a,fixed logic with stored cookies,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2016-12-20 23:26:04+00:00,0,2016-12-20 23:26:04+00:00,0,True,False,"['iptorrents.py', 'morethan.py']",['1b453a40d572bcf4dce00ba234cc49366f3d4e39'],8,8,16,2,,,
+b7a169b51b60c66b9eb1d436bcb0f755d008eda9,"quick fix of iptorrents torrent files being determined as invalid.
+more work could be done here to improve the torrent validator.",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2016-12-20 23:38:43+00:00,0,2016-12-20 23:38:43+00:00,0,True,False,"['iptorrents.py', 'morethan.py', 'utils.py']",['714b4cea493d8f057026c352f26c4f8cc83b9c4a'],4,3,7,3,0.0,0.0,0.0
+3abab9b2373b034e9989bfefe6b90301f920ccdd,"added a run.sh script to start the screen in a seperate detached screen.
+fixed iptorrents parse and added indexer to sonarr notification.",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2016-12-22 15:30:21+00:00,0,2016-12-22 15:30:21+00:00,0,True,False,"['run.sh', 'sonarr.py', 'iptorrents.py', 'morethan.py']",['b7a169b51b60c66b9eb1d436bcb0f755d008eda9'],6,10,16,4,0.6666666666666666,1.0,0.0
+a81bf5af86a25bb8f7ab58ee6ddfa66ba087ff3d,sonarr now shows debug messages.,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2016-12-22 15:37:06+00:00,0,2016-12-22 15:37:06+00:00,0,True,False,"['sonarr.py', 'iptorrents.py']",['3abab9b2373b034e9989bfefe6b90301f920ccdd'],1,1,2,2,0.0,0.0,0.0
+935c0e49f046a973da87b29cecfb36d2f3c8ac88,readme change,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2016-12-27 18:11:06+00:00,0,2016-12-27 18:11:06+00:00,0,True,False,['README.md'],['a81bf5af86a25bb8f7ab58ee6ddfa66ba087ff3d'],1,16,17,1,,,
+fae706c9f4357744d0d385c60a1747e640108371,"no longer uses cookies/logs into trackers. uses auth_key and torrent_pass , same as autodl-irssi",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-06 21:46:38+00:00,0,2017-01-06 21:46:38+00:00,0,True,False,"['bot.py', 'config.py', 'iptorrents.py', 'morethan.py']",['935c0e49f046a973da87b29cecfb36d2f3c8ac88'],223,58,281,4,0.9607843137254902,0.7941176470588235,0.0
+6b1a1e88c6257ca5ebdf06e394467542ea2ec4d0,added systemd file & readme changes,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 13:04:04+00:00,0,2017-01-07 13:04:04+00:00,0,True,False,"['README.md', 'run.sh', 'announced.service']",['fae706c9f4357744d0d385c60a1747e640108371'],12,30,42,3,,,
+24179b4d464c6a017cc2b6f20251a57e58eee538,"added btn - needs testing but should be very close to operational (dont have BTN)
+irc nickname can be modified now for each individual tracker via config file",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 16:24:51+00:00,0,2017-01-07 16:24:51+00:00,0,True,False,"['bot.py', 'config.py', 'btn.py', 'morethan.py', 'utils.py']",['6b1a1e88c6257ca5ebdf06e394467542ea2ec4d0'],9,165,174,5,0.175,0.3875,1.0
+fbb34b4e3b1db4952caf04d80d5127d862f7b3ac,Update README.md,James,l3uddz@gmail.com,GitHub,noreply@github.com,2017-01-07 17:09:41+00:00,0,2017-01-07 17:09:41+00:00,0,True,False,['README.md'],['24179b4d464c6a017cc2b6f20251a57e58eee538'],2,1,3,1,,,
+d7d1801c5e820e0664a957363c83e0c80827fbe4,default config,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 17:16:38+00:00,0,2017-01-07 17:16:38+00:00,0,True,False,['settings.cfg.default'],['fbb34b4e3b1db4952caf04d80d5127d862f7b3ac'],0,22,22,1,,,
+389eefc109796ccbea9f225a0dbcf70502befb4c,more appropriate default port,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 17:23:17+00:00,0,2017-01-07 17:23:17+00:00,0,True,False,"['config.py', 'settings.cfg.default']",['d7d1801c5e820e0664a957363c83e0c80827fbe4'],2,2,4,2,,,
+84b449e93f35d358e9f7c7c89354aa08b67219a9,added nickserv identifiy support,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 17:59:55+00:00,0,2017-01-07 17:59:55+00:00,0,True,False,"['bot.py', 'config.py', 'settings.cfg.default']",['389eefc109796ccbea9f225a0dbcf70502befb4c'],3,14,17,3,0.5,1.0,1.0
+61ac2ee97583f96f0c7d0d0a003bdf34ae2738ca,added join announce channel on invite,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 18:16:22+00:00,0,2017-01-07 18:16:22+00:00,0,True,False,['bot.py'],['84b449e93f35d358e9f7c7c89354aa08b67219a9'],0,4,4,1,1.0,1.0,0.0
+3708199c874495927647ef3be75e4335683defb8,parser adjustment,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 18:46:25+00:00,0,2017-01-07 18:46:25+00:00,0,True,False,['btn.py'],['61ac2ee97583f96f0c7d0d0a003bdf34ae2738ca'],3,4,7,1,1.0,1.0,1.0
+061a8b61a736ab99a56352a8a3b0771a60fa4905,log alignment fix,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 19:13:42+00:00,0,2017-01-07 19:13:42+00:00,0,True,False,['bot.py'],['3708199c874495927647ef3be75e4335683defb8'],1,1,2,1,,,
+2692a37f1dc31948024af3de2525e2e370346ad2,parser adjustments,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 19:26:55+00:00,0,2017-01-07 19:26:55+00:00,0,True,False,['btn.py'],['061a8b61a736ab99a56352a8a3b0771a60fa4905'],2,3,5,1,0.0,1.0,1.0
+92ba617089df78a38f3e44b0a0d3b28f6b52cacd,should have fixed the script whoising people....,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 20:44:56+00:00,0,2017-01-07 20:44:56+00:00,0,True,False,['bot.py'],['2692a37f1dc31948024af3de2525e2e370346ad2'],3,8,11,1,1.0,1.0,0.0
+04681b1e5fb6a289516482f52d0d60bac5f840bf,address fix,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 21:25:04+00:00,0,2017-01-07 21:25:04+00:00,0,True,False,['btn.py'],['92ba617089df78a38f3e44b0a0d3b28f6b52cacd'],1,1,2,1,,,
+b5fb36d71c8c8099cfb3f3f845e6945f599e9ff6,will now work with .torrent at the end of the link,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 22:10:03+00:00,0,2017-01-07 22:10:03+00:00,0,True,False,"['btn.py', 'iptorrents.py', 'morethan.py']",['04681b1e5fb6a289516482f52d0d60bac5f840bf'],3,4,7,3,,,
+6369dcd802d6cae9390ec193448f06763f363913,Update README.md,James,l3uddz@gmail.com,GitHub,noreply@github.com,2017-01-07 23:29:39+00:00,0,2017-01-07 23:29:39+00:00,0,True,False,['README.md'],['b5fb36d71c8c8099cfb3f3f845e6945f599e9ff6'],3,3,6,1,,,
+f689d26e3fbfb7c80b75f9280dfbfa8475e782f2,improved announcement logs readability for iptorrents,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-07 23:54:48+00:00,0,2017-01-07 23:54:48+00:00,0,True,False,['iptorrents.py'],['6369dcd802d6cae9390ec193448f06763f363913'],3,4,7,1,1.0,1.0,1.0
+6e07afb58c5dbadf61a3b73a983cde46cc077640,fixed privsmg logger (was not logging the correct sender),l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-08 00:02:08+00:00,0,2017-01-08 00:02:08+00:00,0,True,False,['bot.py'],['f689d26e3fbfb7c80b75f9280dfbfa8475e782f2'],1,1,2,1,,,
+e2bbc98a4f456c2a9a767b6963e7183d05f8650c,Update README.md,James,l3uddz@gmail.com,GitHub,noreply@github.com,2017-01-08 09:56:56+00:00,0,2017-01-08 09:56:56+00:00,0,True,False,['README.md'],['6e07afb58c5dbadf61a3b73a983cde46cc077640'],0,3,3,1,,,
+92be4092a4e61292022bbb6ad0ce79a5a72498a3,Update README.md,James,l3uddz@gmail.com,GitHub,noreply@github.com,2017-01-08 10:02:52+00:00,0,2017-01-08 10:02:52+00:00,0,True,False,['README.md'],['e2bbc98a4f456c2a9a767b6963e7183d05f8650c'],1,7,8,1,,,
+f5c6f513b8bd0e6d33dad5330a75cf6bc09181a3,Update README.md,James,l3uddz@gmail.com,GitHub,noreply@github.com,2017-01-08 10:05:51+00:00,0,2017-01-08 10:05:51+00:00,0,True,False,['README.md'],['92be4092a4e61292022bbb6ad0ce79a5a72498a3'],0,7,7,1,,,
+5938e3a5aa33889b17b6b84242bb5818e06fd2f1,logs to console aswell as file now.,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-08 10:43:26+00:00,0,2017-01-08 10:43:26+00:00,0,True,False,['bot.py'],['6e07afb58c5dbadf61a3b73a983cde46cc077640'],0,13,13,1,,,
+8b9f4a8006a89696d2c09a1fea173d5fe4b289fd,added log to console / file setting,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-08 11:39:57+00:00,0,2017-01-08 11:39:57+00:00,0,True,False,"['bot.py', 'config.py', 'settings.cfg.default']",['5938e3a5aa33889b17b6b84242bb5818e06fd2f1'],19,33,52,3,0.0,1.0,1.0
+78071bfe8de5eb770418d9a8701461b5b096d309,same thing different way,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-08 13:54:46+00:00,0,2017-01-08 13:54:46+00:00,0,True,False,['bot.py'],['f8036572b7ce20364917bb89a586d2b3cb7a6ead'],1,1,2,1,,,
+5ca45d8b35bc194191acbf533d935f8c9dff3eb4,reduced boiler plate code to add new trackers,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-08 17:13:31+00:00,0,2017-01-08 17:13:31+00:00,0,True,False,"['bot.py', 'btn.py', 'iptorrents.py', 'morethan.py', 'utils.py']",['78071bfe8de5eb770418d9a8701461b5b096d309'],235,106,341,5,1.0,1.0,0.0
+ef5c61795f68608577388d8e685db74db165454d,variables refactored for improved readability,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-08 17:23:49+00:00,0,2017-01-08 17:23:49+00:00,0,True,False,"['btn.py', 'iptorrents.py', 'morethan.py']",['5ca45d8b35bc194191acbf533d935f8c9dff3eb4'],18,21,39,3,,,
+47f0f61cc4fd2144340817bf6c020c3522480b47,addition to last commit,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-08 17:26:26+00:00,0,2017-01-08 17:26:26+00:00,0,True,False,"['btn.py', 'morethan.py']",['ef5c61795f68608577388d8e685db74db165454d'],6,6,12,2,,,
+813193f563ec429cf6be4c98ad88a027629fcdae,get_id now supports custom pattern if supplied,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-09 11:51:52+00:00,0,2017-01-09 11:51:52+00:00,0,True,False,"['iptorrents.py', 'utils.py']",['47f0f61cc4fd2144340817bf6c020c3522480b47'],5,10,15,2,1.0,1.0,0.0
+0bbe3076954908049771989df1946c0f30241ac4,relocated trackers class,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-09 21:44:20+00:00,0,2017-01-09 21:44:20+00:00,0,True,False,"['bot.py', '__init__.py']",['813193f563ec429cf6be4c98ad88a027629fcdae'],47,53,100,2,0.0,1.0,1.0
+2da32fe11ba321c6a1f22ef933adf0937bd247bf,moved sonarr route point to Trackers,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-09 21:55:56+00:00,0,2017-01-09 21:55:56+00:00,0,True,False,"['bot.py', '__init__.py']",['0bbe3076954908049771989df1946c0f30241ac4'],83,81,164,2,,,
+c6add904fc835dfd3d9e5427ce2f808f9493268c,relocated irc class,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-09 22:17:31+00:00,0,2017-01-09 22:17:31+00:00,0,True,False,"['bot.py', 'irc.py']",['2da32fe11ba321c6a1f22ef933adf0937bd247bf'],59,73,132,2,1.0,1.0,0.0
+768ff93b2b00a1686528b78822329ca3b09e6c1e,comment to go with a hopefully a temporary fix,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-09 22:35:50+00:00,0,2017-01-09 22:35:50+00:00,0,True,False,['irc.py'],['c6add904fc835dfd3d9e5427ce2f808f9493268c'],1,1,2,1,0.0,0.0,1.0
+b5e916d798ea4ea8ccc7a750bcf61e8c8437abc8,develop irc tracker,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-10 02:22:33+00:00,0,2017-01-10 02:22:33+00:00,0,True,False,['develop.py'],['768ff93b2b00a1686528b78822329ca3b09e6c1e'],0,49,49,1,1.0,1.0,1.0
+b58cd10a61eb4e0fbf64768162b1c7f061bd8e8c,improved the removal of whitespace from torrent titles for generated download links,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-10 03:02:29+00:00,0,2017-01-10 03:02:29+00:00,0,True,False,"['btn.py', 'iptorrents.py', 'morethan.py', 'utils.py']",['b5e916d798ea4ea8ccc7a750bcf61e8c8437abc8'],3,12,15,4,0.0,1.0,1.0
+88aef32834be4b154946e3d401a0dee8d1909926,disabling develop tracker by default,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-10 03:08:17+00:00,0,2017-01-10 03:08:17+00:00,0,True,False,['develop.py'],['b58cd10a61eb4e0fbf64768162b1c7f061bd8e8c'],1,1,2,1,,,
+d587146443eabe55a636d7b3c07db87785780d91,ignore further changes to default develop tracker,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-10 03:10:15+00:00,0,2017-01-10 03:10:15+00:00,0,True,False,['.gitignore'],['88aef32834be4b154946e3d401a0dee8d1909926'],1,4,5,1,,,
+f72585f6ca1aa2f1f33be89a92bfb70befa53274,no message,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-10 03:12:01+00:00,0,2017-01-10 03:12:01+00:00,0,True,False,['.gitignore'],['d587146443eabe55a636d7b3c07db87785780d91'],1,1,2,1,,,
+9afad70597910c47ea56d9ce1dd4f1c9e66ee8f6,removed develop tracker,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-10 03:15:28+00:00,0,2017-01-10 03:15:28+00:00,0,True,False,"['.gitignore', 'develop.py']",['f72585f6ca1aa2f1f33be89a92bfb70befa53274'],53,1,54,2,0.0,0.0,0.0
+28a606938084983e27a9e442308282111103d68d,fix return,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-12 15:47:28+00:00,0,2017-01-12 15:47:28+00:00,0,True,False,['__init__.py'],['1099863e140d501b37c179f252b881307ce4ef92'],1,1,2,1,,,
+0f6384d40bdbfffe1b8cdee2157f5bce71bfdf57,"removed torrent server, it was not needed, web left in place for web ui",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-12 23:47:05+00:00,0,2017-01-12 23:47:05+00:00,0,True,False,"['bot.py', 'bencode.py', '__init__.py', 'btn.py', 'iptorrents.py', 'morethan.py', 'utils.py']",['28a606938084983e27a9e442308282111103d68d'],196,6,202,7,0.9181818181818182,0.6181818181818182,0.2636363636363636
+eb4b33a3f312d228dd8aa5250554ae5e145bbbd8,start of webui,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 02:31:42+00:00,0,2017-01-13 02:31:42+00:00,0,True,False,"['bot.py', 'requirements.txt', 'sonarr.py', 'bootstrap.min.css', 'glyphicons-halflings-regular.eot', 'glyphicons-halflings-regular.svg', 'glyphicons-halflings-regular.ttf', 'glyphicons-halflings-regular.woff', 'glyphicons-halflings-regular.woff2', 'bootstrap.min.js', 'styles.min.css', 'user.css', 'common.js', 'jquery.min.js', 'script.min.js', 'settings.js', 'index.html', 'logs.html', 'settings.html', 'trackers.html', 'webui.py']",['0f6384d40bdbfffe1b8cdee2157f5bce71bfdf57'],6,898,904,21,0.9272030651340997,0.8620689655172413,0.9252873563218391
+230af5de8de9fbfa2e64f02a097046efbe179e3d,added basic logs page,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 04:38:44+00:00,0,2017-01-13 04:38:44+00:00,0,True,False,"['logs.js', 'logs.html', 'webui.py']",['eb4b33a3f312d228dd8aa5250554ae5e145bbbd8'],2,44,46,3,1.0,1.0,1.0
+ab76c84fe1941500e900e738b16dd196e126501b,added httpbasicauth,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 05:06:42+00:00,0,2017-01-13 05:06:42+00:00,0,True,False,"['settings.cfg.default', 'settings.html', 'webui.py']",['230af5de8de9fbfa2e64f02a097046efbe179e3d'],1,26,27,3,0.7142857142857143,1.0,1.0
+ae158478cb10df81556983a3c3c636a09c2c7bb5,requirements update,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 05:07:04+00:00,0,2017-01-13 05:07:04+00:00,0,True,False,['requirements.txt'],['ab76c84fe1941500e900e738b16dd196e126501b'],0,1,1,1,,,
+42a181a1968a2fa04b8fb224d13791167b5844cf,removed aiohttp,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 05:51:23+00:00,0,2017-01-13 05:51:23+00:00,0,True,False,"['bot.py', 'irc.py', 'requirements.txt', 'sonarr.py', '__init__.py', 'btn.py', 'iptorrents.py', 'morethan.py']",['ae158478cb10df81556983a3c3c636a09c2c7bb5'],43,16,59,8,0.75,0.0,1.0
+b74f039b2466b6771249c2bd1fdd87742ba6fcf7,commented/reduced some logs,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 06:00:48+00:00,0,2017-01-13 06:00:48+00:00,0,True,False,"['btn.py', 'iptorrents.py', 'morethan.py']",['42a181a1968a2fa04b8fb224d13791167b5844cf'],3,3,6,3,0.0,0.0,0.0
+fdcec134d8b2208c87c3ef6e0caef262fc1ae990,fixed spacing,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 06:05:29+00:00,0,2017-01-13 06:05:29+00:00,0,True,False,['settings.html'],['b74f039b2466b6771249c2bd1fdd87742ba6fcf7'],2,2,4,1,,,
+47f0f1dcfbd2e68b6c200ae264bcd853ebf57b0a,"added sqlite database and index page is operational now.
+statistics and graphs could come in future.",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 06:48:55+00:00,0,2017-01-13 06:48:55+00:00,0,True,False,"['.gitignore', 'config.py', 'db.py', 'requirements.txt', 'index.html', 'btn.py', 'iptorrents.py', 'morethan.py', 'webui.py']",['fdcec134d8b2208c87c3ef6e0caef262fc1ae990'],25,54,79,9,0.0,1.0,1.0
+c34db714b877cd95c4425beb5b1f9110d5238dea,using pony instead of peewee,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 07:50:50+00:00,0,2017-01-13 07:50:50+00:00,0,True,False,"['db.py', 'requirements.txt', 'btn.py', 'iptorrents.py', 'morethan.py', 'webui.py']",['47f0f1dcfbd2e68b6c200ae264bcd853ebf57b0a'],24,23,47,6,1.0,1.0,1.0
+235e2b0ecaa641ebbe52f575b750a66b00e7da47,value fix,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 07:55:52+00:00,0,2017-01-13 07:55:52+00:00,0,True,False,['settings.html'],['c34db714b877cd95c4425beb5b1f9110d5238dea'],1,1,2,1,,,
+656b08f5409939c1d576222feae5f855a25b76b6,added limit to index page tables and event manager file,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 08:40:51+00:00,0,2017-01-13 08:40:51+00:00,0,True,False,['manager.py'],['235e2b0ecaa641ebbe52f575b750a66b00e7da47'],0,0,0,1,,,
+a0ef12e0774d5395bc65ccf58143a660fd9cbcea,limit on index table size and start of event manager,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-13 08:41:27+00:00,0,2017-01-13 08:41:27+00:00,0,True,False,"['bot.py', 'manager.py', 'webui.py']",['656b08f5409939c1d576222feae5f855a25b76b6'],2,28,30,3,1.0,1.0,1.0
+8ec66265fc94bf189c16b28313356d63dc4ee2a1,"sqlite database store for announcements/snatched torrents.
+start of manager to manage webui/irc thread",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-14 06:12:52+00:00,0,2017-01-14 06:12:52+00:00,0,True,False,"['bot.py', 'db.py', 'irc.py', 'manager.py', 'requirements.txt', 'btn.py', 'iptorrents.py', 'morethan.py', 'webui.py']",['a0ef12e0774d5395bc65ccf58143a660fd9cbcea'],42,109,151,9,0.6458333333333334,1.0,1.0
+e13f684a2f76d75a46212fc8bba5ed9d6920eb29,"show newest announcements first.
+limit lists to 20",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-14 07:04:04+00:00,0,2017-01-14 07:04:04+00:00,0,True,False,['webui.py'],['8ec66265fc94bf189c16b28313356d63dc4ee2a1'],2,2,4,1,,,
+0763ab1ced0b32cce13db7258f0a0578b1133834,replace spaces with . in torrent titles,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-14 07:25:57+00:00,0,2017-01-14 07:25:57+00:00,0,True,False,"['btn.py', 'iptorrents.py', 'morethan.py']",['e13f684a2f76d75a46212fc8bba5ed9d6920eb29'],6,12,18,3,0.0,1.0,1.0
+7a77437d164f2763a491fe9c9eb2330e4ef6458a,snatched/announced table caption now has color,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-14 08:01:49+00:00,0,2017-01-14 08:01:49+00:00,0,True,False,"['index.js', 'index.html']",['0763ab1ced0b32cce13db7258f0a0578b1133834'],7,10,17,2,,,
+78f978c96a299a0ae81147ada9af8deb35ce5a39,"added rotating log files, maximum of 5 megabytes - 5 backups.",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-15 10:47:53+00:00,0,2017-01-15 10:47:53+00:00,0,True,False,"['.gitignore', 'bot.py']",['7a77437d164f2763a491fe9c9eb2330e4ef6458a'],6,10,16,2,,,
+7a01908804bf08420cf6f5a3c4ddfc09061b43c7,fix for approved items not being added to database (forgot to tell requests to read/expect json result),l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-16 11:57:07+00:00,0,2017-01-16 11:57:07+00:00,0,True,False,['sonarr.py'],['78f978c96a299a0ae81147ada9af8deb35ce5a39'],1,1,2,1,,,
+405aa05a53aada4bcbc2bb4ebd40b132a7ee5bb3,will now join tracker channel on successful nickserv identification,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-17 17:16:57+00:00,0,2017-01-17 17:16:57+00:00,0,True,False,['irc.py'],['7a01908804bf08420cf6f5a3c4ddfc09061b43c7'],1,4,5,1,1.0,1.0,1.0
+4ced90c2f12b11ee5bfafb8d53aa5880cf9dedf0,added ttn tracker (TransmitTheNet),l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-17 18:07:17+00:00,0,2017-01-17 18:07:17+00:00,0,True,False,"['config.py', 'settings.cfg.default', 'trackers.html', 'ttn.py', 'webui.py']",['405aa05a53aada4bcbc2bb4ebd40b132a7ee5bb3'],1,141,142,5,0.19642857142857142,0.17857142857142858,1.0
+32241bd4052eace78e33521ec0f1908c52c2817c,readme changes,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-17 19:12:34+00:00,0,2017-01-17 19:12:34+00:00,0,True,False,['README.md'],['4ced90c2f12b11ee5bfafb8d53aa5880cf9dedf0'],20,35,55,1,,,
+067b667b60cbce4bea9879aa3da764762feceb7a,snatched/announced table column adjustment,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-17 19:50:55+00:00,0,2017-01-17 19:50:55+00:00,0,True,False,['index.html'],['32241bd4052eace78e33521ec0f1908c52c2817c'],2,2,4,1,,,
+b0865af418c4c792c3bfde5571fe396840ecab05,translate torrent titles that begin with @,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-17 20:21:17+00:00,0,2017-01-17 20:21:17+00:00,0,True,False,['ttn.py'],['067b667b60cbce4bea9879aa3da764762feceb7a'],1,6,7,1,0.0,0.0,1.0
+281e41de43cf0498e12ab40d0629d09ddf654215,log parse regex improvement,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-17 20:44:01+00:00,0,2017-01-17 20:44:01+00:00,0,True,False,['webui.py'],['b0865af418c4c792c3bfde5571fe396840ecab05'],1,1,2,1,,,
+44b5c6ec32e3e38c3aec0931b04fa2b46dd901c2,ttn now handles releases without a specified group,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-17 20:55:16+00:00,0,2017-01-17 20:55:16+00:00,0,True,False,['ttn.py'],['281e41de43cf0498e12ab40d0629d09ddf654215'],5,9,14,1,0.0,0.0,1.0
+4646db50de6a29996d4ce6a1e775b8d16ad2b298,"ttn remove ? from torrent titles.
+replace spaces with periods for submitted torrent titles to sonarr",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-17 21:04:02+00:00,0,2017-01-17 21:04:02+00:00,0,True,False,"['sonarr.py', 'ttn.py']",['44b5c6ec32e3e38c3aec0931b04fa2b46dd901c2'],2,3,5,2,,,
+af1d7c29ac00ccc416a3e33b803ae58548de48f4,added utils function to strip bad characters from generated ttn torrent titles and future trackers who need similar custom parsing.,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-18 12:36:57+00:00,0,2017-01-18 12:36:57+00:00,0,True,False,"['ttn.py', 'utils.py']",['4646db50de6a29996d4ce6a1e775b8d16ad2b298'],1,7,8,2,1.0,1.0,1.0
+a71146dc274d9e0a87386fb4e4c9ec10b4fed190,improvements to strip_torrent_name func,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-18 13:15:59+00:00,0,2017-01-18 13:15:59+00:00,0,True,False,['utils.py'],['af1d7c29ac00ccc416a3e33b803ae58548de48f4'],3,6,9,1,1.0,1.0,1.0
+4eadaae441d04b3544039c32577c07dc7de80970,ttn should now replace date hypons with periods in torrent names.,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-18 14:31:58+00:00,0,2017-01-18 14:31:58+00:00,0,True,False,['ttn.py'],['a71146dc274d9e0a87386fb4e4c9ec10b4fed190'],1,1,2,1,,,
+fe9b637e00802634534ac54136546993c0c700dd,added freshon,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-18 14:32:06+00:00,0,2017-01-18 14:32:06+00:00,0,True,False,"['README.md', 'config.py', 'settings.cfg.default', 'trackers.html', 'freshon.py', 'webui.py']",['4eadaae441d04b3544039c32577c07dc7de80970'],4,114,118,6,0.3055555555555556,0.8611111111111112,1.0
+665031a28756387a8c1a4726560d1af14dac68d2,increased reconnect attempts,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-22 16:27:06+00:00,0,2017-01-22 16:27:06+00:00,0,True,False,['irc.py'],['fe9b637e00802634534ac54136546993c0c700dd'],0,1,1,1,,,
+4f32aff0ab70d4d6316f1b73b2855f36958976f9,"improvements to formatted torrent name func.
+(ttn and other trackers that require building a torrent name from their prettified announcements)",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-22 18:21:56+00:00,0,2017-01-22 18:21:56+00:00,0,True,False,"['requirements.txt', 'ttn.py', 'utils.py']",['665031a28756387a8c1a4726560d1af14dac68d2'],11,24,35,3,0.0,1.0,1.0
+ecc95f8e7f8ee1de06cd3c133d1c2781fa09ab4f,doesnt replace all hyphons with spaces anymore. only hyphons within dates (2017-01-01),l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-23 17:16:28+00:00,0,2017-01-23 17:16:28+00:00,0,True,False,['utils.py'],['4f32aff0ab70d4d6316f1b73b2855f36958976f9'],2,7,9,1,0.0,1.0,1.0
+09b4990e246b242781dc2a742affe0edc21a3137,icon change,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-24 00:09:00+00:00,0,2017-01-24 00:09:00+00:00,0,True,False,"['index.html', 'logs.html', 'settings.html', 'trackers.html', 'utils.py']",['ecc95f8e7f8ee1de06cd3c133d1c2781fa09ab4f'],5,5,10,5,,,
+cfe108d36adbe8655c68807f1f830849b0e87d89,"added ability to manually recheck announcement + download torrent.
+
+This requires removing your brain.db and starting again, sorry.",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-24 02:27:51+00:00,0,2017-01-24 02:27:51+00:00,0,True,False,"['db.py', 'toastr.css', 'toastr.min.css', 'bs-animation.js', 'index.js', 'toastr.js', 'index.html', 'btn.py', 'freshon.py', 'iptorrents.py', 'morethan.py', 'ttn.py', 'webui.py']",['09b4990e246b242781dc2a742affe0edc21a3137'],72,433,505,13,0.8045977011494253,0.7586206896551724,0.9540229885057471
+3677a19968169919af39e9b4b27e1c939e7655c2,use full screen space available,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-24 13:36:35+00:00,0,2017-01-24 13:36:35+00:00,0,True,False,"['index.html', 'logs.html', 'settings.html', 'trackers.html']",['cfe108d36adbe8655c68807f1f830849b0e87d89'],8,8,16,4,,,
+2e37ed68fe978d11e85b4da7b89ecba16811c6d2,added relative time to snatched torrents table.,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-24 14:31:00+00:00,0,2017-01-24 14:31:00+00:00,0,True,False,"['index.html', 'utils.py', 'webui.py']",['3677a19968169919af39e9b4b27e1c939e7655c2'],0,55,55,3,0.16666666666666666,0.16666666666666666,1.0
+e880be062a7699c7407ceb044b3b011352bc0673,added time to announced torrents table,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-24 14:57:42+00:00,0,2017-01-24 14:57:42+00:00,0,True,False,['index.html'],['2e37ed68fe978d11e85b4da7b89ecba16811c6d2'],1,3,4,1,,,
+e6bc44bc3f021fefa1143bdd37a142aea6ea56af,remove double periods from formatted torrent names,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-24 15:31:36+00:00,0,2017-01-24 15:31:36+00:00,0,True,False,['utils.py'],['e880be062a7699c7407ceb044b3b011352bc0673'],0,5,5,1,0.6666666666666666,1.0,1.0
+04c5a0c23973269fb65b46ff2a24dea1c3c163fe,hopefully sorts out long torrent titles in the tables,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-25 12:54:52+00:00,0,2017-01-25 12:54:52+00:00,0,True,False,['index.html'],['e6bc44bc3f021fefa1143bdd37a142aea6ea56af'],2,2,4,1,,,
+f12d5ee840f4ec2d8b6968b460cc2e61bcbb5259,hopefully improvements to table torrent title's,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-25 16:03:03+00:00,0,2017-01-25 16:03:03+00:00,0,True,False,"['index.css', 'index.html']",['04c5a0c23973269fb65b46ff2a24dea1c3c163fe'],4,19,23,2,,,
+3f29394067ecd9d0e82232c32f6fb0f0bef3364a,should fix the table sizing issues......,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-25 17:04:31+00:00,0,2017-01-25 17:04:31+00:00,0,True,False,"['index.css', 'index.html']",['f12d5ee840f4ec2d8b6968b460cc2e61bcbb5259'],15,11,26,2,,,
+434d918413433a934cc4f7f5bcbbeadd1e326d95,added shebang,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-27 19:45:13+00:00,0,2017-01-27 19:45:13+00:00,0,True,False,['bot.py'],['3f29394067ecd9d0e82232c32f6fb0f0bef3364a'],0,1,1,1,,,
+3086f3a3596f899d9b4778b8baa285426798bb7f,"added torrent server to faciltate trackers with cookie requirements
+added hd-torrents
+improved successful nickserv identification detection",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-29 15:25:12+00:00,0,2017-01-29 15:25:12+00:00,0,True,False,"['.gitignore', 'README.md', 'config.py', 'irc.py', 'manager.py', 'settings.cfg.default', 'trackers.html', 'hdtorrents.py', 'utils.py', 'webui.py']",['434d918413433a934cc4f7f5bcbbeadd1e326d95'],6,211,217,10,0.3157894736842105,0.5157894736842106,0.5684210526315789
+08f142a78bdaaf35ee1be7bd52b89483b413429e,fix on_raw,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-29 15:38:44+00:00,0,2017-01-29 15:38:44+00:00,0,True,False,['irc.py'],['3086f3a3596f899d9b4778b8baa285426798bb7f'],1,1,2,1,,,
+487e3fb3ec9c69ecac3c7c8eab21a33a8b2456b3,strip tailing ; from cookie setting,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-29 15:45:15+00:00,0,2017-01-29 15:45:15+00:00,0,True,False,['hdtorrents.py'],['08f142a78bdaaf35ee1be7bd52b89483b413429e'],1,1,2,1,,,
+f309a3637afb8d58e89dc268a2a1cb8534a7ca4a,"ignore non tv shows from hdtorrents
+fix for nickserv identification detection",l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-29 16:34:01+00:00,0,2017-01-29 16:34:01+00:00,0,True,False,"['irc.py', 'freshon.py', 'hdtorrents.py', 'iptorrents.py', 'ttn.py']",['487e3fb3ec9c69ecac3c7c8eab21a33a8b2456b3'],2,9,11,5,0.0,0.6666666666666666,1.0
+ad22ceead53fecd9d2f1faf60c3de00cbb892e8d,replace localhost in webui download links with request hostname,l3uddz,l3uddz@gmail.com,l3uddz,l3uddz@gmail.com,2017-01-30 16:56:08+00:00,0,2017-01-30 16:56:08+00:00,0,True,False,"['index.html', 'webui.py']",['f309a3637afb8d58e89dc268a2a1cb8534a7ca4a'],3,14,17,2,1.0,1.0,1.0
+95a540cc9c62cc73c4e0ff08e2fbcd86ce08baaa,Update README.md,James,l3uddz@gmail.com,GitHub,noreply@github.com,2017-04-03 15:23:59+01:00,-3600,2017-04-03 15:23:59+01:00,-3600,True,False,['README.md'],['ad22ceead53fecd9d2f1faf60c3de00cbb892e8d'],0,1,1,1,,,
+a2640150f98a09ed670a04097b1fe428d429bd67,"TTN is now Nebulance
+
+Signed-off-by: h3tts <root@localhost>",h3tts,root@localhost,h3tts,root@localhost,2017-08-09 08:41:22+02:00,-7200,2017-08-09 09:12:15+02:00,-7200,True,False,"['README.md', 'config.py', 'settings.cfg.default', 'trackers.html', 'nbl.py', 'webui.py']",['95a540cc9c62cc73c4e0ff08e2fbcd86ce08baaa'],28,28,56,6,,,
+03519b6b7f6a16fbc5830e09af653f274ef02141,"No more freshon
+
+Signed-off-by: h3tts <root@localhost>",h3tts,root@localhost,h3tts,root@localhost,2017-08-09 09:45:41+02:00,-7200,2017-08-09 09:45:41+02:00,-7200,True,False,"['README.md', 'config.py', 'settings.cfg.default', 'trackers.html', 'freshon.py', 'webui.py']",['a2640150f98a09ed670a04097b1fe428d429bd67'],112,1,113,6,0.6944444444444444,0.1388888888888889,0.0
+ae19cdc96768defe696f733e22a1f490a2329d8a,Add support for XSpeeds,h3tts,root@localhost,h3tts,root@localhost,2017-08-13 11:50:59+02:00,-7200,2017-08-13 13:09:41+02:00,-7200,True,False,"['README.md', 'config.py', 'settings.cfg.default', 'trackers.html', 'xspeeds.py', 'webui.py']",['33e5eda4944590a4598b8138eaf3389271a6469e'],0,107,107,6,0.29411764705882354,0.8529411764705882,1.0
+e86d951b6259facb0f1c51eddfc4e962f73d8b51,Add support for Filelist,ajhanwar97@gmail.com,ajhanwar97@gmail.com,ajhanwar97@gmail.com,ajhanwar97@gmail.com,2017-10-14 10:24:47+02:00,-7200,2017-10-14 10:24:47+02:00,-7200,True,False,"['README.md', 'config.py', 'settings.cfg.default', 'trackers.html', 'flro.py', 'webui.py']",['755ba47a6ae277ee07721876c50216943a370206'],0,107,107,6,0.29411764705882354,0.8529411764705882,1.0
+5e99fdbaa334299f6099dd39345e80d2a420b06f,NBL is now using a different announce channel,ajhanwar97@gmail.com,ajhanwar97@gmail.com,ajhanwar97@gmail.com,ajhanwar97@gmail.com,2017-10-14 11:10:50+02:00,-7200,2017-10-14 11:10:50+02:00,-7200,True,False,['nbl.py'],['e86d951b6259facb0f1c51eddfc4e962f73d8b51'],1,1,2,1,,,
+6b8872c3fd6e9bb7c164eb6eac297ad102ddc992,latest pydle?,Chris Royer,stealthgyro@gmail.com,Chris Royer,stealthgyro@gmail.com,2018-03-26 14:12:07-05:00,18000,2018-03-26 14:12:07-05:00,18000,True,False,"['README.md', 'requirements.txt']",['51cdbdbca86820c2d4476c845ddd4428cb1c3b31'],1,18,19,2,,,
+97464e3a54e2bbe3b7c7ba2b9a6383442c2344a5,forced older tornado like pydle wants,Chris Royer,stealthgyro@gmail.com,Chris Royer,stealthgyro@gmail.com,2018-03-26 14:17:04-05:00,18000,2018-03-26 14:17:04-05:00,18000,True,False,['requirements.txt'],['6b8872c3fd6e9bb7c164eb6eac297ad102ddc992'],0,1,1,1,,,
+4d739837c074c1e2486e9bb0a8bb5626b8267fde,Cleaned up the readme,Chris Royer,stealthgyro@gmail.com,Chris Royer,stealthgyro@gmail.com,2018-03-26 14:32:39-05:00,18000,2018-03-26 14:32:39-05:00,18000,True,False,['README.md'],['97464e3a54e2bbe3b7c7ba2b9a6383442c2344a5'],17,0,17,1,,,
+102fbfc30dcce875aedc16e2c5ecc1bf3655fdb2,"Added Radarr, TL and AR",dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 09:04:10+02:00,-7200,2018-03-31 09:04:10+02:00,-7200,True,False,['config.py'],['57c6c879dec932f39d220f4de8bdd6eaa17e4f91'],0,13,13,1,0.0,1.0,1.0
+e81a75336302470d7190e505a95f6ace91d7dd8b,"Added Radarr, TL and AR",dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 09:05:36+02:00,-7200,2018-03-31 09:05:36+02:00,-7200,True,False,['settings.cfg.default'],['102fbfc30dcce875aedc16e2c5ecc1bf3655fdb2'],0,16,16,1,,,
+951fd82499eee1f0606d5199e471aa4569448b33,added radarr support,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 09:08:28+02:00,-7200,2018-03-31 09:08:28+02:00,-7200,True,False,['iptorrents.py'],['e81a75336302470d7190e505a95f6ace91d7dd8b'],19,36,55,1,0.0,0.0,0.6153846153846154
+dad9032d0e95cf2711d8f73e2428e6b3aefcbf48,Create radarr.py,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 09:11:35+02:00,-7200,2018-03-31 09:11:35+02:00,-7200,True,False,['radarr.py'],['951fd82499eee1f0606d5199e471aa4569448b33'],0,33,33,1,0.0,1.0,0.0
+6078407f9381c389f8f6e1ffb603f663c1fd5c2e,Create alpharatio.py,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 09:15:54+02:00,-7200,2018-03-31 09:15:54+02:00,-7200,True,False,['alpharatio.py'],['dad9032d0e95cf2711d8f73e2428e6b3aefcbf48'],0,97,97,1,0.27906976744186046,0.27906976744186046,0.8837209302325582
+ae89138ea8c3666ae59b95ea732e8aa4c29aab38,Create torrentleech.py,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 09:18:38+02:00,-7200,2018-03-31 09:18:38+02:00,-7200,True,False,['torrentleech.py'],['6078407f9381c389f8f6e1ffb603f663c1fd5c2e'],0,98,98,1,0.2727272727272727,0.2727272727272727,0.8863636363636364
+c57d93979a9787ed0170f9bb464133f5f0c4eb2a,Update README.md,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 09:33:35+02:00,-7200,2018-03-31 09:33:35+02:00,-7200,True,False,['README.md'],['ae89138ea8c3666ae59b95ea732e8aa4c29aab38'],8,10,18,1,,,
+127a46905b2625f4518f4c32c9949f5709d64c5f,Update README.md,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 09:33:49+02:00,-7200,2018-03-31 09:33:49+02:00,-7200,True,False,['README.md'],['c57d93979a9787ed0170f9bb464133f5f0c4eb2a'],1,1,2,1,,,
+ff11c04cf3fd91c305430379268f969e34d3e2af,Update README.md,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 09:37:30+02:00,-7200,2018-03-31 09:37:30+02:00,-7200,True,False,['README.md'],['127a46905b2625f4518f4c32c9949f5709d64c5f'],6,6,12,1,,,
+361ac69f8084b4511fa99b094f3794c254e7138f,Update announced.service,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 09:38:26+02:00,-7200,2018-03-31 09:38:26+02:00,-7200,True,False,['announced.service'],['ff11c04cf3fd91c305430379268f969e34d3e2af'],3,3,6,1,,,
+1816f7a093d48dee5ea5e3cdb0f8ebf487e112ee,addedd radarr support,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 10:00:03+02:00,-7200,2018-03-31 10:00:03+02:00,-7200,True,False,['webui.py'],['361ac69f8084b4511fa99b094f3794c254e7138f'],0,52,52,1,0.40625,0.46875,1.0
+b4271aa85d52fc8f8539625c5109c5f13bdb7091,Update README.md,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 10:03:29+02:00,-7200,2018-03-31 10:03:29+02:00,-7200,True,False,['README.md'],['1816f7a093d48dee5ea5e3cdb0f8ebf487e112ee'],1,2,3,1,,,
+2ce3952d6ce205d16217025a81bcdb8b68dd79a1,Update db.py,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 11:20:11+02:00,-7200,2018-03-31 11:20:11+02:00,-7200,True,False,['db.py'],['b4271aa85d52fc8f8539625c5109c5f13bdb7091'],0,2,2,1,,,
+432902ccca955199388fd4c7a4ba40ded866ca9b,Update index.html,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 11:22:56+02:00,-7200,2018-03-31 11:22:56+02:00,-7200,True,False,['index.html'],['2ce3952d6ce205d16217025a81bcdb8b68dd79a1'],1,5,6,1,,,
+e64a8f6c09b859e89e953bbf449fc7c17a9f8ce0,"broken, needs more work",dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 11:25:23+02:00,-7200,2018-03-31 11:25:23+02:00,-7200,True,False,['webui.py'],['432902ccca955199388fd4c7a4ba40ded866ca9b'],2,2,4,1,0.5666666666666667,0.5666666666666667,0.0
+61fa006af52172d3b51eed1f9109569c33ca00e8,added PVR to db call,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 11:27:54+02:00,-7200,2018-03-31 11:27:54+02:00,-7200,True,False,['alpharatio.py'],['e64a8f6c09b859e89e953bbf449fc7c17a9f8ce0'],4,4,8,1,,,
+7fb77a9f98f519cb02eedbf7a2fa548e7c02db19,added PVR to db call,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 11:28:33+02:00,-7200,2018-03-31 11:28:33+02:00,-7200,True,False,['iptorrents.py'],['61fa006af52172d3b51eed1f9109569c33ca00e8'],4,4,8,1,,,
+dc3c270094a85ca158bb81291f6351dd0ab6f046,added PVR to db call,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 11:29:42+02:00,-7200,2018-03-31 11:29:42+02:00,-7200,True,False,['torrentleech.py'],['7fb77a9f98f519cb02eedbf7a2fa548e7c02db19'],4,4,8,1,,,
+29f15ae0122351e747cdc3c679e66c9068257022,Update README.md,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 11:31:43+02:00,-7200,2018-03-31 11:31:43+02:00,-7200,True,False,['README.md'],['dc3c270094a85ca158bb81291f6351dd0ab6f046'],1,1,2,1,,,
+6458f7ef2a17aaeb158c762be06b7af6d14ea5cf,fixed column width,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 11:40:18+02:00,-7200,2018-03-31 11:40:18+02:00,-7200,True,False,['index.html'],['29f15ae0122351e747cdc3c679e66c9068257022'],4,4,8,1,,,
+bbb3c61c3d03f8a9952fa54502c2c71f4fdc6ac6,cleaned up the code,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 12:28:11+02:00,-7200,2018-03-31 12:28:11+02:00,-7200,True,False,['torrentleech.py'],['6458f7ef2a17aaeb158c762be06b7af6d14ea5cf'],27,25,52,1,1.0,1.0,0.0
+af53c9c19c091132ff240e689662c0be187b61b7,cleaned up the code,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 12:36:00+02:00,-7200,2018-03-31 12:36:00+02:00,-7200,True,False,['alpharatio.py'],['bbb3c61c3d03f8a9952fa54502c2c71f4fdc6ac6'],24,22,46,1,1.0,1.0,0.0
+721a275026b73a6574a8451d364aad6f455ebc3a,cleaned up the code,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 12:37:20+02:00,-7200,2018-03-31 12:37:20+02:00,-7200,True,False,['iptorrents.py'],['af53c9c19c091132ff240e689662c0be187b61b7'],27,25,52,1,1.0,1.0,0.0
+11167280e2b74a03d4329f6b7e384389b79a55b0,fixed some variables,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 12:48:57+02:00,-7200,2018-03-31 12:48:57+02:00,-7200,True,False,['iptorrents.py'],['721a275026b73a6574a8451d364aad6f455ebc3a'],1,1,2,1,,,
+2628bc1de3c30eecd64fec30d80585ee9f672610,fixed some variables,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 12:52:07+02:00,-7200,2018-03-31 12:52:07+02:00,-7200,True,False,['alpharatio.py'],['11167280e2b74a03d4329f6b7e384389b79a55b0'],1,1,2,1,,,
+ac9d522bdffc8edf44d185cd8dff5bfc6afaf97f,fixed some variables,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 14:17:40+02:00,-7200,2018-03-31 14:17:40+02:00,-7200,True,False,['iptorrents.py'],['2628bc1de3c30eecd64fec30d80585ee9f672610'],5,5,10,1,,,1.0
+39950b935265bb54268c48e78d4ac25dafcb5ab6,fixed some variables,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 14:18:43+02:00,-7200,2018-03-31 14:18:43+02:00,-7200,True,False,['torrentleech.py'],['ac9d522bdffc8edf44d185cd8dff5bfc6afaf97f'],5,5,10,1,,,1.0
+188c1b30886e3e7b9bd2a7b2f62eb34227975461,fixed some variables,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 14:20:12+02:00,-7200,2018-03-31 14:20:12+02:00,-7200,True,False,['alpharatio.py'],['39950b935265bb54268c48e78d4ac25dafcb5ab6'],6,6,12,1,,,1.0
+8f47a417c5f936de40785dd970b4006d276c8ce7,Create revolutiontt.py,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 19:34:12+02:00,-7200,2018-03-31 19:34:12+02:00,-7200,True,False,['revolutiontt.py'],['188c1b30886e3e7b9bd2a7b2f62eb34227975461'],0,94,94,1,0.5897435897435898,0.5897435897435898,0.5897435897435898
+e78ed9e9b609f012a0330a42afde39117434f100,added RTT support,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 19:36:34+02:00,-7200,2018-03-31 19:36:34+02:00,-7200,True,False,['config.py'],['8f47a417c5f936de40785dd970b4006d276c8ce7'],0,5,5,1,0.0,1.0,1.0
+5d2f87d9047153f5ea7cac1a134413387fdab1de,added RTT support,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 19:37:33+02:00,-7200,2018-03-31 19:37:33+02:00,-7200,True,False,['settings.cfg.default'],['e78ed9e9b609f012a0330a42afde39117434f100'],0,6,6,1,,,
+3260e39cfbf866d75781aa9bbb942b89243d05a4,Update README.md,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-03-31 19:43:00+02:00,-7200,2018-03-31 19:43:00+02:00,-7200,True,False,['README.md'],['caa925ce7d905fc8b828f5585651de43c3f87e24'],0,1,1,1,,,
+78927172505f953fa2507dbae59f1f0b524afd90,fixed identification with IRC bot,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-02 12:17:21+02:00,-7200,2018-04-02 12:17:21+02:00,-7200,True,False,['alpharatio.py'],['3260e39cfbf866d75781aa9bbb942b89243d05a4'],0,1,1,1,,,
+1e83e758f267670166014aa42045abbe971b8b8e,added ability to identify with IRC bot,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-02 12:18:05+02:00,-7200,2018-04-02 12:18:05+02:00,-7200,True,False,['__init__.py'],['78927172505f953fa2507dbae59f1f0b524afd90'],1,1,2,1,,,
+d94ea9ec0d54cca973463cd60cab3d56d289dddf,added ability to identify with IRC bot,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-02 12:20:03+02:00,-7200,2018-04-02 12:20:03+02:00,-7200,True,False,['irc.py'],['1e83e758f267670166014aa42045abbe971b8b8e'],0,7,7,1,1.0,1.0,0.8333333333333334
+c313f9856ef52b896f36836aa3e83426a700b9a1,fixed invitation by IRC bot,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-02 12:37:35+02:00,-7200,2018-04-02 12:37:35+02:00,-7200,True,False,['revolutiontt.py'],['d94ea9ec0d54cca973463cd60cab3d56d289dddf'],0,1,1,1,,,
+5565b66aa93f10ea439ded575dd04f57a04247ef,moved a check to prevent errors,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-02 12:38:39+02:00,-7200,2018-04-02 12:38:39+02:00,-7200,True,False,['irc.py'],['c313f9856ef52b896f36836aa3e83426a700b9a1'],2,2,4,1,,,
+116f7bbd17ce3cd878b727d1cdb25e8631a423a6,Update iptorrents.py,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-02 12:42:06+02:00,-7200,2018-04-02 12:42:06+02:00,-7200,True,False,['iptorrents.py'],['5565b66aa93f10ea439ded575dd04f57a04247ef'],0,1,1,1,,,
+a3a7ca8c2b27f4fed94c12bc71719a673f122b76,Update torrentleech.py,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-02 12:42:22+02:00,-7200,2018-04-02 12:42:22+02:00,-7200,True,False,['torrentleech.py'],['116f7bbd17ce3cd878b727d1cdb25e8631a423a6'],0,1,1,1,,,
+cc9508d66b83da682488d0d1b72f327b5fce8ff7,added a variable,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-02 12:44:19+02:00,-7200,2018-04-02 12:44:19+02:00,-7200,True,False,['settings.cfg.default'],['a3a7ca8c2b27f4fed94c12bc71719a673f122b76'],0,4,4,1,,,
+a7fbab6324b2e6370aed85b41fb8e558e5207678,fixed identification with IRC bot,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-02 12:45:15+02:00,-7200,2018-04-02 12:45:15+02:00,-7200,True,False,['config.py'],['cc9508d66b83da682488d0d1b72f327b5fce8ff7'],0,4,4,1,0.0,1.0,1.0
+43ae8cba0005de49abe46729ff62052014d0e687,added invite,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-02 13:07:12+02:00,-7200,2018-04-02 13:07:12+02:00,-7200,True,False,['torrentleech.py'],['a7fbab6324b2e6370aed85b41fb8e558e5207678'],1,1,2,1,,,
+54b0a4b4a5654f58d96d35c682f31299d59b5eda,Adjust Frontend to notify different PVR depending on release,solen0id,max.patzelt@posteo.de,solen0id,max.patzelt@posteo.de,2018-04-02 22:49:19+02:00,-7200,2018-04-02 22:49:19+02:00,-7200,True,False,"['index.js', 'settings.js', 'index.html', 'settings.html']",['43ae8cba0005de49abe46729ff62052014d0e687'],15,46,61,4,1.0,1.0,1.0
+469ecec49156c5949665933ca2e46cbc8b5d5da2,added ability to check radarr API key ... notification still broken,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-03 00:04:34+02:00,-7200,2018-04-03 00:04:34+02:00,-7200,True,False,['webui.py'],['43ae8cba0005de49abe46729ff62052014d0e687'],6,6,12,1,0.43333333333333335,0.43333333333333335,1.0
+e62816ab35f2e4448d6ef175e89ad5296661f18a,fixed notify button,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-03 00:15:04+02:00,-7200,2018-04-03 00:15:04+02:00,-7200,True,False,['webui.py'],['0dca25caea61c1c84000494f1689d3cbd10607b5'],58,13,71,1,0.5185185185185185,0.5185185185185185,0.0
+67eef302015a5e240b59d5d8827043e9c9e97504,Update README.md,dawtmaytrikx,dawtmaytrikx@fake.mail,GitHub,noreply@github.com,2018-04-03 00:17:47+02:00,-7200,2018-04-03 00:17:47+02:00,-7200,True,False,['README.md'],['e62816ab35f2e4448d6ef175e89ad5296661f18a'],2,2,4,1,,,
+b77e959e0ac7ad5e8289cb3e831976ae77b33121,Added delay feature/setting,some-guy-23,some-guy-23@users.noreply.github.com,some-guy-23,some-guy-23@users.noreply.github.com,2018-05-28 11:56:17-04:00,14400,2018-05-28 11:56:17-04:00,14400,True,False,"['.gitignore', 'config.py', 'settings.cfg.default', 'index.html', 'logs.html', 'settings.html', 'trackers.html', 'alpharatio.py', 'btn.py', 'flro.py', 'hdtorrents.py', 'iptorrents.py', 'morethan.py', 'nbl.py', 'revolutiontt.py', 'torrentleech.py', 'xspeeds.py', 'webui.py']",['67eef302015a5e240b59d5d8827043e9c9e97504'],23,218,241,18,0.0,0.0,0.84
+45b2917c7ca85d4d1d87811ddaf3037dd3e641a5,"Pin pydle at 0.8.3, update requests to 2.19.1.",Donald Webster,fryfrog@gmail.com,Donald Webster,fryfrog@gmail.com,2019-02-28 14:02:40-08:00,28800,2019-02-28 14:02:40-08:00,28800,True,False,['requirements.txt'],['67eef302015a5e240b59d5d8827043e9c9e97504'],2,2,4,1,,,
+6d41b1734a8f95829650a126e2efc6ded01781ce,Remove extra spaces.,Donald Webster,fryfrog@gmail.com,Donald Webster,fryfrog@gmail.com,2019-02-28 16:03:59-08:00,28800,2019-02-28 16:03:59-08:00,28800,True,False,['irc.py'],['1f9ddab4693c97741de39cd855df11388c1325c8'],1,1,2,1,,,
+c155a635b551a109078dd9235277c4c673a47750,Clean up more white space.,Donald Webster,fryfrog@gmail.com,Donald Webster,fryfrog@gmail.com,2019-02-28 16:09:58-08:00,28800,2019-02-28 16:09:58-08:00,28800,True,False,['iptorrents.py'],['6d41b1734a8f95829650a126e2efc6ded01781ce'],6,5,11,1,,,
+49c4d68af9ee65c28f29076792db06b76fa6cb9c,Add invite_cmd to btn.py.,Donald Webster,fryfrog@gmail.com,Donald Webster,fryfrog@gmail.com,2019-02-28 16:10:30-08:00,28800,2019-02-28 16:10:30-08:00,28800,True,False,['btn.py'],['c155a635b551a109078dd9235277c4c673a47750'],0,1,1,1,,,
+3c01ae12abc98c1bc35054b5c8ec6cb4eec12663,Add Sonarr to BTN pvr_name.,Donald Webster,fryfrog@gmail.com,Donald Webster,fryfrog@gmail.com,2019-02-28 16:46:06-08:00,28800,2019-02-28 16:46:06-08:00,28800,True,False,['btn.py'],['49c4d68af9ee65c28f29076792db06b76fa6cb9c'],1,1,2,1,,,
+b04ad5ad989a4bf50b365c7c7ca407248710eaf1,Change requirements too.,Donald Webster,fryfrog@gmail.com,Donald Webster,fryfrog@gmail.com,2019-02-28 16:48:38-08:00,28800,2019-02-28 16:48:38-08:00,28800,True,False,['requirements.txt'],['3c01ae12abc98c1bc35054b5c8ec6cb4eec12663'],9,9,18,1,,,
+e88ef549dc9d7c13d326c3c29f925bd345bb8f55,Fix how you list the arg.,Donald Webster,fryfrog@gmail.com,Donald Webster,fryfrog@gmail.com,2019-02-28 16:52:50-08:00,28800,2019-02-28 16:52:50-08:00,28800,True,False,['btn.py'],['b04ad5ad989a4bf50b365c7c7ca407248710eaf1'],1,1,2,1,,,
+dd165282fa44232c64ddeb4c17569ad0714690b4,Upgrade pydle,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-11 20:20:02+01:00,-3600,2019-11-16 23:08:13+01:00,-3600,True,False,['requirements.txt'],['e88ef549dc9d7c13d326c3c29f925bd345bb8f55'],1,1,2,1,,,
+72f0de3cbc566474ee95172e3a0ef1437a01c56a,Upgrade to Python3.7,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-11 20:20:26+01:00,-3600,2019-11-16 23:08:39+01:00,-3600,True,False,['irc.py'],['dd165282fa44232c64ddeb4c17569ad0714690b4'],16,15,31,1,,,
+202bb0df306043a2da2513faa17106c9f6538855,Split invite command to separate nick variable,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-16 19:20:01+01:00,-3600,2019-11-16 23:08:44+01:00,-3600,True,False,"['irc.py', '__init__.py', 'alpharatio.py', 'btn.py', 'morethan.py']",['72f0de3cbc566474ee95172e3a0ef1437a01c56a'],5,10,15,5,0.0,1.0,1.0
+f6ab574c043d9bdde1ae6eba67fa76c0052f45f9,Use user mode command to detect +r,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-16 19:22:30+01:00,-3600,2019-11-17 00:14:33+01:00,-3600,True,False,['irc.py'],['202bb0df306043a2da2513faa17106c9f6538855'],1,2,3,1,,,
+6331b5046ff81f2644596e6b48b44c7d2cb85e65,Cleanup spaces,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-16 19:28:06+01:00,-3600,2019-11-17 00:14:33+01:00,-3600,True,False,"['config.py', 'irc.py', 'alpharatio.py', 'revolutiontt.py', 'torrentleech.py', 'webui.py']",['f6ab574c043d9bdde1ae6eba67fa76c0052f45f9'],23,22,45,6,,,
+b335d3c97872512ab2fb43018490118ca5410014,Use unverfied TLS for MoreThan,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-16 20:02:31+01:00,-3600,2019-11-17 00:14:33+01:00,-3600,True,False,['morethan.py'],['6331b5046ff81f2644596e6b48b44c7d2cb85e65'],2,2,4,1,,,
+158e81bb242e1a66ca6dc024b60b686eae3e558c,Add PVR info to all DB writes,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-16 20:48:23+01:00,-3600,2019-11-17 00:14:33+01:00,-3600,True,False,"['flro.py', 'hdtorrents.py', 'morethan.py', 'nbl.py', 'xspeeds.py']",['b335d3c97872512ab2fb43018490118ca5410014'],10,10,20,5,,,
+c83b395122b28f173f72c744f9185651b4b065a4,Make bot.py executable,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-16 20:49:53+01:00,-3600,2019-11-17 00:14:33+01:00,-3600,True,False,['bot.py'],['158e81bb242e1a66ca6dc024b60b686eae3e558c'],0,0,0,1,,,
+d56927eaad1565d2ee317e83788516c2e9b2cb62,Remove invite command from MoreThan,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-16 23:11:01+01:00,-3600,2019-11-17 00:14:33+01:00,-3600,True,False,['morethan.py'],['c83b395122b28f173f72c744f9185651b4b065a4'],2,2,4,1,,,
+eb7feccbb8b4db5a69007d5ae88a4303a8135368,"Only join channel once
+
+Joining channel is delayed until any authentication is performed.
+For channels which require no authentication these steps are skipped.
+The order of precedence is:
+1. Identify with nickserv
+2. Request invite to channel
+3. Join channel
+
+Skip step 1 or 2 by not configuring them.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-17 00:27:59+01:00,-3600,2019-11-18 18:45:07+01:00,-3600,True,False,['irc.py'],['d56927eaad1565d2ee317e83788516c2e9b2cb62'],12,20,32,1,1.0,1.0,1.0
+b103d01ca0be0fabab04d901e1b4e9746bc50b74,Add tracker Red,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-16 23:09:53+01:00,-3600,2019-11-18 19:53:24+01:00,-3600,True,False,"['config.py', 'settings.cfg.default', 'red.py']",['eb7feccbb8b4db5a69007d5ae88a4303a8135368'],0,106,106,3,0.3,0.45,1.0
+90ea6bccb6ae06f06153809492f16b1d8c946fac,Add Lidarr support,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-11-17 15:25:00+01:00,-3600,2019-11-18 19:53:24+01:00,-3600,True,False,"['config.py', 'lidarr.py', 'settings.cfg.default', 'red.py']",['b103d01ca0be0fabab04d901e1b4e9746bc50b74'],3,41,44,4,0.8823529411764706,1.0,0.11764705882352941
+b58f3ff7a9b27e75c3a71f47a4d99521ceead4fe,Never stop reconnect,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-01 14:58:48+01:00,-3600,2019-12-01 14:58:48+01:00,-3600,True,False,['irc.py'],['90ea6bccb6ae06f06153809492f16b1d8c946fac'],1,1,2,1,,,
+855ed2720ebe317389cd0a7cff533267978cc3b1,"Merge backends to one implementation
+
+Pushing releases to Sonarr/Radarr/Lidarr is largely the same so merging
+the implementation makes sense.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2019-11-20 19:44:53+01:00,-3600,2019-12-01 15:10:21+01:00,-3600,True,False,"['backend.py', 'lidarr.py', 'radarr.py', 'sonarr.py', 'alpharatio.py', 'btn.py', 'flro.py', 'hdtorrents.py', 'iptorrents.py', 'morethan.py', 'nbl.py', 'red.py', 'revolutiontt.py', 'torrentleech.py', 'xspeeds.py', 'webui.py']",['b58f3ff7a9b27e75c3a71f47a4d99521ceead4fe'],132,77,209,16,0.6086956521739131,0.0,1.0
+320c21c3862b3fdc5a647d2619f70fedfec39f6f,"Use tracker object instead of dict
+
+Use the tracker objects directly instead of extracting its data members
+to a dictionary.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2019-11-18 19:17:05+01:00,-3600,2019-12-01 15:11:38+01:00,-3600,True,False,"['irc.py', '__init__.py', 'webui.py']",['855ed2720ebe317389cd0a7cff533267978cc3b1'],35,24,59,3,1.0,0.0,0.0
+485eaac75336af4f1131108485cd6efbd03ca626,"Set default log level INFO
+
+* Add command line argument to enable verbose logging.
+* Adjust some log levels",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-04 09:34:41+01:00,-3600,2019-12-04 09:34:41+01:00,-3600,True,False,"['backend.py', 'bot.py', 'db.py', 'irc.py', 'manager.py', '__init__.py', 'alpharatio.py', 'btn.py', 'flro.py', 'hdtorrents.py', 'iptorrents.py', 'morethan.py', 'nbl.py', 'red.py', 'revolutiontt.py', 'torrentleech.py', 'xspeeds.py']",['320c21c3862b3fdc5a647d2619f70fedfec39f6f'],50,41,91,17,1.0,1.0,1.0
+c7960828605c459f4d878bd35e27540ed637fcc7,"Call parent on_connect
+
+Call parent on_connect in order to reset reconnect counter and thereby
+reset the increasing reconnect timer.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-15 20:55:00+01:00,-3600,2019-12-15 20:55:00+01:00,-3600,True,False,['irc.py'],['485eaac75336af4f1131108485cd6efbd03ca626'],0,1,1,1,1.0,1.0,1.0
+225f543e0f9167f1037c07301657eac0e99eee58,Starting to remove config stuff,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-02 16:01:05+01:00,-3600,2020-01-04 19:58:09+01:00,-3600,True,False,"['config.py', 'irc.py', 'webui.py']",['c7960828605c459f4d878bd35e27540ed637fcc7'],143,82,225,3,1.0,0.5537190082644629,0.0
+6ed590d8bda2cdea98101c7e9db84464171c787d,Initial weird validate config,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-04 09:05:03+01:00,-3600,2020-01-04 19:58:09+01:00,-3600,True,False,"['bot.py', 'config.py', 'irc.py', 'manager.py']",['225f543e0f9167f1037c07301657eac0e99eee58'],3,26,29,4,1.0,0.0,1.0
+7b41a7bb19fe076fb4b83a239043842efed1da55,Create tracker configuration with xml and user config,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-04 16:33:55+01:00,-3600,2020-01-04 19:58:09+01:00,-3600,True,False,"['bot.py', 'config.py', 'irc.py', 'manager.py', 'tracker_config.py']",['6ed590d8bda2cdea98101c7e9db84464171c787d'],10,191,201,5,0.3728813559322034,0.5508474576271186,0.8813559322033898
+958e5d9782a52dbd71d62ee28558e91d7dcbf68b,"Port and section workarounds
+
+Port is always 6667 unless specified in user config because it's not specified in xml.
+Replace . with _ in XML type as profig reads it as subsection",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-04 20:06:55+01:00,-3600,2020-01-04 19:58:09+01:00,-3600,True,False,"['irc.py', 'manager.py', 'tracker_config.py']",['7b41a7bb19fe076fb4b83a239043842efed1da55'],6,11,17,3,0.0,0.6666666666666666,1.0
+04b5aae17bc5ee11969859fbd5cab8c06d9c7fda,Changed to single server object in XML config,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-04 20:09:58+01:00,-3600,2020-01-04 19:58:09+01:00,-3600,True,False,"['irc.py', 'tracker_config.py']",['958e5d9782a52dbd71d62ee28558e91d7dcbf68b'],10,9,19,2,1.0,1.0,0.0
+87ca7e7019b20ad31f3f93bf1f0b1ba9f3eaa21c,Add properties to TrackerConfig,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-06 22:27:27+01:00,-3600,2020-01-04 19:58:09+01:00,-3600,True,False,"['irc.py', 'manager.py', 'tracker_config.py']",['04b5aae17bc5ee11969859fbd5cab8c06d9c7fda'],27,44,71,3,1.0,1.0,1.0
+cb517bff74d9b80f92d69a70fadb36f422ec4669,Init alot of config tracker values,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-07 10:15:50+01:00,-3600,2020-01-04 19:58:09+01:00,-3600,True,False,"['bot.py', 'config.py', 'irc.py', 'manager.py', 'tracker_config.py']",['87ca7e7019b20ad31f3f93bf1f0b1ba9f3eaa21c'],26,85,111,5,0.5609756097560976,0.04878048780487805,1.0
+8da909f1c9a6f0adcdb337c6dfbab6b73e6f534a,Successful first link generated from announcement,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-07 19:09:15+01:00,-3600,2020-01-04 20:11:01+01:00,-3600,True,False,"['announcement.py', 'backend.py', 'config.py', 'irc.py', 'tracker_config.py', 'webui.py']",['cb517bff74d9b80f92d69a70fadb36f422ec4669'],88,155,243,6,1.0,0.0,0.44
+f08eb911752e1ea09d07cd8d28e5b8d233fac806,Parse announcement with varenc variable,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-07 21:48:49+01:00,-3600,2020-01-04 20:11:08+01:00,-3600,True,False,"['announcement.py', 'tracker_config.py']",['8da909f1c9a6f0adcdb337c6dfbab6b73e6f534a'],61,53,114,2,0.0,0.6,1.0
+72b2fef6895c9228f10e4bcc09712c2abaa1eb22,Configuration validation at start,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-07 23:02:30+01:00,-3600,2020-01-04 20:11:08+01:00,-3600,True,False,"['announcement.py', 'bot.py', 'config.py', 'manager.py', 'tracker_config.py']",['f08eb911752e1ea09d07cd8d28e5b8d233fac806'],39,60,99,5,0.0,1.0,1.0
+79e6bb0ef50bbec1d73e25a3b23166db5edeb67e,Handle categories-ish and notify backend,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-08 21:36:50+01:00,-3600,2020-01-04 20:11:08+01:00,-3600,True,False,"['announcement.py', 'backend.py', 'config.py', 'tracker_config.py']",['72b2fef6895c9228f10e4bcc09712c2abaa1eb22'],49,142,191,4,0.7297297297297297,0.918918918918919,1.0
+58c704a13d5b1ed6d2e8e752993a57aea31d8d62,Split announcement parser and manager to different files,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-16 20:33:11+01:00,-3600,2020-01-04 20:11:08+01:00,-3600,True,False,"['announcement_manager.py', 'announcement_parser.py', 'backend.py', 'irc.py']",['79e6bb0ef50bbec1d73e25a3b23166db5edeb67e'],37,71,108,4,0.0,1.0,1.0
+1eda841de3fce1d7ced95d51c5d86620561add21,"Check source and target of IRC message
+
+Do not try to parse messages not from expected source and to expected
+target.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-17 20:12:20+01:00,-3600,2020-01-04 20:11:08+01:00,-3600,True,False,"['announce_parser.py', 'announcement_manager.py', 'backend.py', 'irc.py', 'message_handler.py', 'tracker_config.py']",['58c704a13d5b1ed6d2e8e752993a57aea31d8d62'],81,82,163,6,0.6,1.0,0.0
+7b47657eb34631230217848e1d313283f927a591,"Move backend decision to backen module
+
+Message handler asks the backend module which backends to notify rather
+than the announcement parser deciding it.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-23 00:56:53+01:00,-3600,2020-01-09 20:39:12+01:00,-3600,True,False,"['announce_parser.py', 'backend.py', 'message_handler.py', 'tracker_config.py']",['1eda841de3fce1d7ced95d51c5d86620561add21'],85,62,147,4,1.0,1.0,0.0
+a322dfabd43e800df6250493b7a41ad487e3a181,"Prepend ""Irc"" to indexer when notifying",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-30 19:55:28+01:00,-3600,2020-01-09 20:39:17+01:00,-3600,True,False,['backend.py'],['7b47657eb34631230217848e1d313283f927a591'],1,1,2,1,,,
+eaad1b2a1e9d5ae8ca2b87266e609dd6c5d515fc,Rename bot.py to arrnounced.py,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-30 20:15:38+01:00,-3600,2020-01-09 20:39:17+01:00,-3600,True,False,['arrnounced.py'],['a322dfabd43e800df6250493b7a41ad487e3a181'],0,0,0,1,,,
+eb93cf90138f03652a7d47ca5606a86be5959560,"Remove trackers directory
+
+Remove pluginbase dependency and utils used by the trackers",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-30 20:16:55+01:00,-3600,2020-01-11 13:57:52+01:00,-3600,True,False,"['announce_parser.py', 'backend.py', 'message_handler.py', 'requirements.txt', '__init__.py', 'alpharatio.py', 'btn.py', 'flro.py', 'hdtorrents.py', 'iptorrents.py', 'morethan.py', 'nbl.py', 'red.py', 'revolutiontt.py', 'torrentleech.py', 'xspeeds.py', 'utils.py', 'webui.py']",['eaad1b2a1e9d5ae8ca2b87266e609dd6c5d515fc'],1180,8,1188,18,0.5089463220675944,0.36182902584493043,0.2047713717693837
+de6ab70e4523deb4d9e0f2bda01715a3aa85f070,Remove executable from tracker_config.py,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-30 22:34:52+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,['tracker_config.py'],['eb93cf90138f03652a7d47ca5606a86be5959560'],0,0,0,1,,,
+46a3ea0f1b7fb190c15c5a0240dcf9e1944f1583,"Re-enable webui
+
+Web UI was disabled because it was easier to debug IRC",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-30 23:26:58+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,['manager.py'],['de6ab70e4523deb4d9e0f2bda01715a3aa85f070'],3,3,6,1,1.0,1.0,1.0
+c1e188a756c5f9620b17c533959fc43bfcf1ddee,"User lower case IRC channel name
+
+Using lower case in order for _isAnnouncement() to work.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-31 00:02:54+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['irc.py', 'message_handler.py', 'tracker_config.py']",['46a3ea0f1b7fb190c15c5a0240dcf9e1944f1583'],2,3,5,3,0.0,1.0,0.0
+818e48bf882010df65b1ee19c7e5675d245046df,Update db.Snatched parameters,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-31 12:31:57+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,['message_handler.py'],['c1e188a756c5f9620b17c533959fc43bfcf1ddee'],1,1,2,1,,,
+2cc6a812db70af88da288ff61b36709104d08c83,"Remove config validation of server
+
+As the server section practically is optional explicit checks that it
+exists is removed. Check that the fields are non empty is done
+elsewhere.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-31 12:47:09+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,['config.py'],['818e48bf882010df65b1ee19c7e5675d245046df'],11,0,11,1,1.0,1.0,0.0
+f29bfeb2674aabf558b5b3c82928a965b01f6a6f,"Update config names
+
+Rename config section as I find it more descriptive:
+server -> webui
+bot -> log
+
+log fields update as well",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-31 12:48:29+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['arrnounced.py', 'config.py', 'webui.py']",['2cc6a812db70af88da288ff61b36709104d08c83'],20,20,40,3,,,
+25e40ad4552903bb8f4a2b023ed10da843cd13f4,"Start removal of web UI config interface
+
+As the configuration implementation writes all default fields regardless
+if they are present in file it sort of messes up the structure of the
+config file.
+
+The need to update the configuration at runtime is small as I see it.
+Combined with the process has to be restarted for the changes to
+have an impact it not a very valueable interface.
+
+As the trackers are no longer hardcoded it makes no sense keeping and
+maintaining the interface.
+
+Thus it is being removed.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-31 12:53:06+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['index.html', 'logs.html', 'settings.html', 'trackers.html', 'webui.py']",['f29bfeb2674aabf558b5b3c82928a965b01f6a6f'],327,2,329,5,0.0,0.0,0.0
+ec4ddd4f921622e70d2e31f60572ad604a2110c2,"Remove settings web UI interface
+
+The settings view is a lot more static than the tracker settings view.
+However, the config implementation still writes all default values to
+file which is undesired. The process also has to be restarted to the
+changes to take affect.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-31 13:07:35+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['settings.js', 'index.html', 'logs.html', 'settings.html', 'webui.py']",['25e40ad4552903bb8f4a2b023ed10da843cd13f4'],119,3,122,5,0.8695652173913043,0.0,0.0
+8f2774608f7e59bc93a4e8d82eab2f2579fad2a7,"Add command line flags for config locations
+
+One flag for specifying where the tracker XML configurations are
+located.
+
+One flag for specifying the user configuration file. Since specifying
+the path requires parsing of input parameters before parsing config the
+config cannot be fetched in the global scope of each module. The API to
+the config has either been extended to fetch the data when necessary or
+the config is given as a parameter.
+
+Because of this it was convenient to also only notify configured
+backends.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-31 17:33:26+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['arrnounced.py', 'backend.py', 'config.py', 'irc.py', 'manager.py', 'tracker_config.py', 'webui.py']",['ec4ddd4f921622e70d2e31f60572ad604a2110c2'],63,111,174,7,0.3333333333333333,1.0,1.0
+0ad2e2344b902afac24d63bff9f512c498b65de7,"Add flag for data directory
+
+Command line flag for specifying where logs and database shall be stored",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2019-12-31 18:00:13+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['arrnounced.py', 'db.py']",['8f2774608f7e59bc93a4e8d82eab2f2579fad2a7'],10,9,19,2,1.0,1.0,0.0
+b68cc738eea9867d47c20e74c38f401dd6821693,"Sanitize incoming IRC messages
+
+Clean out color codes and HTML escaped characters before parsing
+announcement.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-01 17:55:34+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['arrnounced.py', 'message_handler.py', 'utils.py']",['0ad2e2344b902afac24d63bff9f512c498b65de7'],5,13,18,3,0.8,1.0,0.8
+79aa6db31a9a63d0de35d663bfeb38a48dc517f5,"Add category regex in user config
+
+Some trackers have a category in their announcements which helps decide
+which backend to notify. Since the form and language of the categories
+may vary a lot it can be specified in the configuation with for example
+category_sonarr.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-01 20:10:27+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['backend.py', 'config.py', 'message_handler.py', 'tracker_config.py']",['b68cc738eea9867d47c20e74c38f401dd6821693'],36,55,91,4,0.0,0.0,0.4666666666666667
+86652604169ff1bc68d7db2a18c9424084fb2275,"Fix multi notification from web UI
+
+Since more than one backend may be specified the web UI notification is
+updated to notify all of them, or until one accepts.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-01 20:49:29+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['backend.py', 'index.js', 'webui.py']",['79aa6db31a9a63d0de35d663bfeb38a48dc517f5'],22,26,48,3,0.3333333333333333,0.3333333333333333,1.0
+91785e6f754b0f625aa6e8a1b6a93c6ed13f3c1f,"Ignore unwanted messages
+
+Use ignore regex from XML configs to ignore unwanted messages. The
+""expected"" values decides if the regex should match the ignored messages
+or the allowed messages.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-01 22:37:23+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['announce_parser.py', 'tracker_config.py']",['86652604169ff1bc68d7db2a18c9424084fb2275'],5,22,27,2,0.7692307692307693,0.7692307692307693,1.0
+80c6dbe91babb7a72e295549ad4d577c494cbd46,Clean up imports,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-02 13:42:26+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['announce_parser.py', 'arrnounced.py', 'backend.py', 'config.py', 'db.py', 'irc.py', 'manager.py', 'message_handler.py', 'settings.cfg.default', 'tracker_config.py', 'utils.py', 'webui.py']",['91785e6f754b0f625aa6e8a1b6a93c6ed13f3c1f'],29,20,49,12,,,
+511d7ca449413185b81410828c646eb33ed50ec0,"Remove string format in logging
+
+Use the logging facility's builting formating implementation",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-02 14:25:08+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['announce_parser.py', 'backend.py', 'config.py', 'tracker_config.py']",['80c6dbe91babb7a72e295549ad4d577c494cbd46'],18,20,38,4,,,
+123f234684ae05b0c2ca64f283c00741aec755fe,Update name to Arrnounced,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-02 14:36:33+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['README.md', 'webui.py']",['511d7ca449413185b81410828c646eb33ed50ec0'],3,3,6,2,,,
+db90af6a19b7c2052e3736f43053769866f65649,"Create example configuration
+
+For now the configuration is documented in an example config file",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-02 15:57:37+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['example.cfg', 'settings.cfg.default']",['123f234684ae05b0c2ca64f283c00741aec755fe'],100,106,206,2,,,
+b41386fd625ea8d23fa39197f475f1f68bb6ff01,Add unnotified announcments to database,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-02 16:57:39+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['backend.py', 'message_handler.py', 'webui.py']",['db90af6a19b7c2052e3736f43053769866f65649'],6,3,9,3,1.0,1.0,1.0
+401a5d14b1dfabe2d52383353b142d67ea324c8e,"Freeze python requirements
+
+Remove tornade and Unidecode",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-02 19:24:08+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,['requirements.txt'],['b41386fd625ea8d23fa39197f475f1f68bb6ff01'],9,7,16,1,,,
+ba5d94cab15e2d8fa08ac7dcdcd5c7156190b26b,Update README,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-02 19:28:11+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,['README.md'],['401a5d14b1dfabe2d52383353b142d67ea324c8e'],52,24,76,1,,,
+4e3583cc8c22c4460bb5869fa4c4e2f12e64d9f5,Change default data dir to ~/.arrnounced,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-03 17:01:46+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['README.md', 'arrnounced.py']",['ba5d94cab15e2d8fa08ac7dcdcd5c7156190b26b'],16,43,59,2,,,
+11e38e0743c70c06fa5a7089315019c7e3a3ee6d,Move sources to src directory,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-03 17:18:31+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['README.md', 'announce_parser.py', 'arrnounced.py', 'backend.py', 'config.py', 'db.py', 'irc.py', 'manager.py', 'message_handler.py', 'bootstrap.min.css', 'glyphicons-halflings-regular.eot', 'glyphicons-halflings-regular.svg', 'glyphicons-halflings-regular.ttf', 'glyphicons-halflings-regular.woff', 'glyphicons-halflings-regular.woff2', 'bootstrap.min.js', 'index.css', 'styles.min.css', 'toastr.css', 'toastr.min.css', 'user.css', 'bs-animation.js', 'common.js', 'index.js', 'jquery.min.js', 'logs.js', 'script.min.js', 'settings.js', 'toastr.js', 'index.html', 'logs.html', 'tracker_config.py', 'utils.py', 'webui.py']",['4e3583cc8c22c4460bb5869fa4c4e2f12e64d9f5'],1,1,2,34,,,
+8384fce3f4ed4660902072f44e0a1cee13ef3581,Add Dockerfile,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-03 22:40:19+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['.dockerignore', 'Dockerfile', 'README.md', 'example.cfg', 'config.py']",['11e38e0743c70c06fa5a7089315019c7e3a3ee6d'],3,55,58,5,,,
+4ee0bcb206b8679c30c2f9bdc79fc1a5ae1d2f76,Remove unused function in irc.py,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-04 20:12:24+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,['irc.py'],['8384fce3f4ed4660902072f44e0a1cee13ef3581'],8,0,8,1,0.0,0.0,0.0
+2ab63fdd55f8002ca9125328838d08d8fe324f24,"Set Flask's template directory
+
+Default Flask behaviour requires the template directory to be located
+in the current work directory. It is now basded on where webui.py is
+located.
+
+Also status.log was hardocded in webui.py and it's now propagated
+by main.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-04 22:18:39+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['arrnounced.py', 'manager.py', 'webui.py']",['4ee0bcb206b8679c30c2f9bdc79fc1a5ae1d2f76'],13,21,34,3,1.0,1.0,1.0
+0c9ddf1eeb64e381f3fc802af4ee4b939de8ef22,"Move log setup and extraction
+
+Logging related knowledge is moved to its own module for ease of
+maintenance.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-05 16:51:58+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['arrnounced.py', 'log.py', 'manager.py', 'webui.py']",['2ab63fdd55f8002ca9125328838d08d8fe324f24'],36,45,81,4,1.0,1.0,0.3333333333333333
+de5adf136efd4c2084a08f3a579ab4ac79c79ef4,"In-site login form
+
+Ditching HTTP authentication in favor of a normal login form. Since we
+only use a single user the implementation is very basic.
+
+Login can now be disabled by removing username and password from the
+configuration.
+
+Renamed username and passowrd field in configuration file",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-06 18:29:41+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['example.cfg', 'requirements.txt', 'config.py', 'index.html', 'login.html', 'logs.html', 'webui.py']",['0c9ddf1eeb64e381f3fc802af4ee4b939de8ef22'],32,114,146,7,0.782608695652174,0.782608695652174,1.0
+f23e6c15aa0faa119d8a22b670b704b65febafd0,Change comments in example.cfg,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-06 18:55:51+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,['example.cfg'],['de5adf136efd4c2084a08f3a579ab4ac79c79ef4'],47,47,94,1,,,
+a0f01fc95dff91775d03ff2f8c9ba9e3d883e303,"Rename PVR to backend
+
+Change the remaining places. This includes column in database which
+breaks backwards database compatibility.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-06 19:14:52+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['db.py', 'message_handler.py', 'index.js', 'index.html']",['f23e6c15aa0faa119d8a22b670b704b65febafd0'],20,20,40,4,,,
+54bbda9ec02b2b41a9606734d72929e558d27cf3,Async sleep to not block on announcement,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-07 18:59:47+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,"['irc.py', 'message_handler.py']",['a0f01fc95dff91775d03ff2f8c9ba9e3d883e303'],4,5,9,2,,,
+da9b4760c1cf30463b433468b9a2d4eda0a94ca8,Update log tag in message_handler,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-11 11:16:02+01:00,-3600,2020-01-11 13:58:46+01:00,-3600,True,False,['message_handler.py'],['54bbda9ec02b2b41a9606734d72929e558d27cf3'],1,1,2,1,,,
+dacb59e474add264be65a15c277717b0363222d6,Update README,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-11 14:28:35+01:00,-3600,2020-01-11 14:28:35+01:00,-3600,True,False,['README.md'],['da9b4760c1cf30463b433468b9a2d4eda0a94ca8'],6,4,10,1,,,
+655ff1903ee003cec6701e83a41f2073fbfc3d9a,Remove systemd service file,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-11 15:04:48+01:00,-3600,2020-01-11 15:04:48+01:00,-3600,True,False,['announced.service'],['dacb59e474add264be65a15c277717b0363222d6'],14,0,14,1,,,
+c3aa2dd1d00bb85ff2395a04c6e7942383c94a75,Clean up code,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-11 17:13:54+01:00,-3600,2020-01-11 17:26:52+01:00,-3600,True,False,"['backend.py', 'config.py', 'irc.py', 'log.py', 'manager.py', 'utils.py', 'webui.py']",['655ff1903ee003cec6701e83a41f2073fbfc3d9a'],14,11,25,7,0.5,0.5,0.5
+c4600f4731371cb5f4573cf1efac6858054825bb,Access js and css without logging in,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-01-11 17:15:11+01:00,-3600,2020-01-11 17:26:52+01:00,-3600,True,False,['webui.py'],['c3aa2dd1d00bb85ff2395a04c6e7942383c94a75'],1,0,1,1,,,
+8e356075d18ea603476afcbf0988f9fef8f5acb6,Print backend connection exceptions,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-02-10 18:46:59+01:00,-3600,2020-02-10 18:46:59+01:00,-3600,True,False,['backend.py'],['c4600f4731371cb5f4573cf1efac6858054825bb'],3,2,5,1,1.0,0.0,1.0
+a62f2f6b8be22f40976cf33bf16165fa0660554f,Parse XML server tag as lists,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-12 17:49:50+01:00,-3600,2020-02-22 09:31:58+01:00,-3600,True,False,['tracker_config.py'],['8e356075d18ea603476afcbf0988f9fef8f5acb6'],8,18,26,1,0.0,0.0,1.0
+8da8e276faaa05578b165469337b42452814dbe8,"Rename user config parameters
+
+nick       -> irc_nickname
+nick_pass  -> irc_ident_passowrd
+tls        -> irc_tls
+tls_verify -> irc_tls_verify
+inviter    -> irc_inviter
+invite_cmd -> irc_invite_cmd
+delay      -> announce_delay",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-15 21:40:55+01:00,-3600,2020-02-22 09:31:58+01:00,-3600,True,False,"['example.cfg', 'config.py', 'irc.py', 'message_handler.py', 'tracker_config.py']",['a62f2f6b8be22f40976cf33bf16165fa0660554f'],50,50,100,5,,,
+484e5fd4873c3e083045a53f5b678467ce7b8fc1,Replace single quotes with double,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-15 21:44:03+01:00,-3600,2020-02-22 09:31:58+01:00,-3600,True,False,"['config.py', 'tracker_config.py']",['8da8e276faaa05578b165469337b42452814dbe8'],48,48,96,2,,,
+003ac3edd7ad4a44e2d339987da7919fab46ae8a,"Add mandatory irc config parameters
+
+Server and channels are added to the user configuration. The new
+parameters as well as IRC port are mandatory.
+
+They are not yet used though.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-15 22:25:30+01:00,-3600,2020-02-22 09:31:58+01:00,-3600,True,False,"['example.cfg', 'config.py', 'irc.py']",['484e5fd4873c3e083045a53f5b678467ce7b8fc1'],12,24,36,3,0.6,1.0,0.4
+321835bd1f0f703944629ab1121019a83e2125b8,Connect to server from user config,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-16 11:38:45+01:00,-3600,2020-02-22 09:31:58+01:00,-3600,True,False,['tracker_config.py'],['003ac3edd7ad4a44e2d339987da7919fab46ae8a'],4,4,8,1,,,
+2e8f31457bfabef8414e965109a91f55fdde5884,"Accept annoucements from all names
+
+Use all announcer names in the tracker files",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-16 11:44:01+01:00,-3600,2020-02-22 09:31:58+01:00,-3600,True,False,"['message_handler.py', 'tracker_config.py']",['321835bd1f0f703944629ab1121019a83e2125b8'],3,5,8,2,1.0,1.0,1.0
+5991bc639c1795e76459e6be9d81a8a69e5ca301,"Join channel from user config
+
+Invites and announcements from channels specified in user config or XML
+files are accepted.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-16 14:43:29+01:00,-3600,2020-02-22 09:31:58+01:00,-3600,True,False,"['irc.py', 'message_handler.py', 'tracker_config.py']",['2e8f31457bfabef8414e965109a91f55fdde5884'],11,21,32,3,1.0,1.0,1.0
+ddb540331bca37e9d482e5d2b309f167818c2927,Read ignore XML tag to named tuple,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-02-17 19:45:06+01:00,-3600,2020-02-22 09:35:54+01:00,-3600,True,False,"['announce_parser.py', 'tracker_config.py']",['5991bc639c1795e76459e6be9d81a8a69e5ca301'],4,5,9,2,,,
+86af619ddd5afc1864f8ecafdc4f384260287219,Remove obsolete TODO,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-02-22 11:24:00+01:00,-3600,2020-02-22 11:24:00+01:00,-3600,True,False,['tracker_config.py'],['ddb540331bca37e9d482e5d2b309f167818c2927'],1,0,1,1,,,
+6021c7ecde9a43ef1d9e64e8ffe38ba461f205fd,"Parse tracker optional attribute
+
+Regex patterns may be optional in multiline patterns",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-01-11 21:29:33+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,['tracker_config.py'],['86af619ddd5afc1864f8ecafdc4f384260287219'],4,7,11,1,1.0,1.0,0.6666666666666666
+a16e1906aaaa8e12a5eb5381fadb9ef88b2cd67d,"Add unit test for announce_parser
+
+Unit tests added for single line patterns",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-01-26 13:55:21+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,"['run_tests.py', 'tracker_config.py', '__init__.py', 'test_announce_parser.py']",['6021c7ecde9a43ef1d9e64e8ffe38ba461f205fd'],4,100,104,4,0.8032786885245902,1.0,0.5901639344262295
+b4823340bb208ef886e2c30eea91fa0bab69468b,"Add basic multiline matching
+
+Single and parallel multiline announcement works.
+Unfinished implementation for optional announcements.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-01-26 15:52:07+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,"['announce_parser.py', 'tracker_config.py', 'test_announce_parser.py']",['a16e1906aaaa8e12a5eb5381fadb9ef88b2cd67d'],28,152,180,3,0.04950495049504951,0.5247524752475248,0.7029702970297029
+d28c1f59537f6c44abab8af91a22fc989091b84c,"Optional multi patterns sort of works
+
+Both optional in middle and at end implemented but unit test point to
+some problem. Something is not cleaned up.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-23 19:27:52+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,"['announce_parser.py', 'test_announce_parser.py']",['b4823340bb208ef886e2c30eea91fa0bab69468b'],7,31,38,2,0.0,0.8095238095238095,0.9523809523809523
+5936089d92f2c2d0297f620d9ac4fa641cef0539,Cleanup of multi line parsing,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-23 20:19:04+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,"['announce_parser.py', 'test_announce_parser.py']",['d28c1f59537f6c44abab8af91a22fc989091b84c'],39,68,107,2,1.0,1.0,1.0
+ea0d0c49bfab29fd6f6ba67aa6ca99d4dd969a25,"Add multiline unit tests
+
+Mostly variations of optional patterns.
+Also annoucement in wrong order after first one is matched.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-24 21:09:12+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,['test_announce_parser.py'],['5936089d92f2c2d0297f620d9ac4fa641cef0539'],3,101,104,1,0.0,1.0,1.0
+cf1d600b6d9464763e9743194ef8ced1ca1e7bd9,Order announce_parser functions,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-29 20:22:13+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,['announce_parser.py'],['ea0d0c49bfab29fd6f6ba67aa6ca99d4dd969a25'],71,77,148,1,,,
+bed5d180f2895a995ce98672658e0f57002a5e95,Use namedtuple for Announcement,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-02-29 20:23:03+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,['announce_parser.py'],['cf1d600b6d9464763e9743194ef8ced1ca1e7bd9'],5,2,7,1,0.0,0.0,1.0
+5fea9333c407172a4b3f8c4cc57c4da18d52d03d,Use tracker type as unique key,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-01 00:01:25+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,"['announce_parser.py', 'tracker_config.py', 'test_announce_parser.py']",['bed5d180f2895a995ce98672658e0f57002a5e95'],10,14,24,3,1.0,1.0,1.0
+37b32403e8f92481f71e588c6309904a44de5219,"Discard multi announcements that are too old
+
+If more than 15 seconds passed since the first pattern in the
+multiannouncement was received the announcement is discarded.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-01 13:28:20+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,"['announce_parser.py', 'test_announce_parser.py']",['5fea9333c407172a4b3f8c4cc57c4da18d52d03d'],4,55,59,2,1.0,0.9696969696969697,0.9696969696969697
+4ed884f92a0aec3934860ce1c71ac062472cac2b,"Threadsafe multi announcement data structure
+
+Modification of the top dictionary, the lists it holds and the
+MultilineMatches themselves are protected with one mutex. Once an
+announcment is considered done it is removed from its list and no longer
+accessed by multiple threads.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-01 14:24:12+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,['announce_parser.py'],['37b32403e8f92481f71e588c6309904a44de5219'],7,9,16,1,0.0,1.0,1.0
+bc44e89b6b052d66459a0fc211e6735cfdf878b7,Add coverage report to unittests,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-01 14:51:38+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,"['.gitignore', 'requirements.txt', 'run_tests.py', 'test_announce_parser.py']",['4ed884f92a0aec3934860ce1c71ac062472cac2b'],1,25,26,4,,,
+489cb1fe576dd5fa037a2a9093eb2f92b87c2158,Ignore autodl-trackers repository,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-01 14:52:30+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,['.gitignore'],['bc44e89b6b052d66459a0fc211e6735cfdf878b7'],0,3,3,1,,,
+cd0508e6eee62be5c5a1ab3da08be05af07b2443,Cleanup multiline parser logging,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-01 15:22:47+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,['announce_parser.py'],['489cb1fe576dd5fa037a2a9093eb2f92b87c2158'],2,3,5,1,1.0,0.0,0.0
+7c522772e9b70ed15722e62ba8ccb7cd08c5dac8,Update supported trackers in README,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-02 19:01:30+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,['README.md'],['cd0508e6eee62be5c5a1ab3da08be05af07b2443'],3,1,4,1,,,
+09bd6ba5ca5106f4f05c70348b9234906fae180b,Add unittest for too old parallel announcement,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-02 20:08:19+01:00,-3600,2020-03-06 19:50:59+01:00,-3600,True,False,['test_announce_parser.py'],['7c522772e9b70ed15722e62ba8ccb7cd08c5dac8'],1,23,24,1,0.0,1.0,1.0
+906d557ae73e44483ba26418e21df55d776332e0,Improve backend error handling,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-03-06 20:52:03+01:00,-3600,2020-03-08 15:58:07+01:00,-3600,True,False,['backend.py'],['09bd6ba5ca5106f4f05c70348b9234906fae180b'],8,22,30,1,0.0,0.0,0.0
+8781ceeb200b0d5ea2f3b017dc63c1434831c607,Handle relative path to database,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-03-15 19:43:02+01:00,-3600,2020-03-15 19:43:02+01:00,-3600,True,False,['db.py'],['906d557ae73e44483ba26418e21df55d776332e0'],1,2,3,1,,,
+2cefd9acb27492b570aefaf2d445740ebc9513fc,"Create pythonapp.yml
+
+Perform lint and unit tests on push",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-21 08:17:12+01:00,-3600,2020-03-21 09:04:52+01:00,-3600,True,False,"['pythonapp.yml', 'run_tests.py']",['8781ceeb200b0d5ea2f3b017dc63c1434831c607'],3,48,51,2,,,
+4169c122d0c4cac94f7ef98ad44b78b823d48922,Correct requirement.txt syntax,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-03-21 10:59:47+01:00,-3600,2020-03-21 10:59:47+01:00,-3600,True,False,['requirements.txt'],['2cefd9acb27492b570aefaf2d445740ebc9513fc'],1,1,2,1,,,
+085ebc904b5f600cdde63562e9976ba5cfcdaf8f,"webui: Dropdown for backend notification
+
+Chose what configured backend to notify from web UI.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-03-21 19:03:41+01:00,-3600,2020-03-22 11:37:03+01:00,-3600,True,False,"['backend.py', 'index.css', 'index.html', 'webui.py']",['4169c122d0c4cac94f7ef98ad44b78b823d48922'],14,36,50,4,1.0,1.0,1.0
+3ad9c9996d172cca678bedd26f37bf73137f4a20,"Fix backend notification from webui
+
+Move some backend logic to backend module",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-03-21 21:47:45+01:00,-3600,2020-03-22 11:37:03+01:00,-3600,True,False,"['backend.py', 'webui.py']",['085ebc904b5f600cdde63562e9976ba5cfcdaf8f'],21,21,42,2,1.0,1.0,
+ef884ea7fc98d279cb5bfd68014fd867e636a723,Reduce spam on bad responses from backends,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-03-24 19:16:30+01:00,-3600,2020-03-24 19:16:45+01:00,-3600,True,False,['backend.py'],['3ad9c9996d172cca678bedd26f37bf73137f4a20'],3,2,5,1,1.0,1.0,1.0
+ef931eef27348f82254d601f96d094a7b9f147bb,"New database design
+
+* Use database relations instead of duplicating data.
+* Move database queries to db module
+
+Since the query for snatches returns tuples it is a bit more
+inconvienient when using the data. But for the greater good is should be
+fine. Converting to named tuple or similar seems like a waste.
+
+Convert script included to read the old design from one file and write
+the new design to another one.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-03-21 11:00:49+01:00,-3600,2020-03-28 10:36:21+01:00,-3600,True,False,"['convert_db.py', 'backend.py', 'db.py', 'message_handler.py', 'index.html', 'webui.py']",['ef884ea7fc98d279cb5bfd68014fd867e636a723'],17,123,140,6,1.0,0.98,0.8
+6dbf51c51d7fa668eef90d5d090b6de7a95186a5,Update README with db update,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-03-28 10:25:38+01:00,-3600,2020-03-28 10:37:24+01:00,-3600,True,False,['README.md'],['ef931eef27348f82254d601f96d094a7b9f147bb'],0,10,10,1,,,
+d5c74b88515dbd6ab687cbfecd83660f532c64a5,Release v0.3,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-03-28 11:08:58+01:00,-3600,2020-03-28 11:08:58+01:00,-3600,True,False,['README.md'],['6dbf51c51d7fa668eef90d5d090b6de7a95186a5'],2,2,4,1,,,
+5a1d186b32162b317b1762b8602342b0b3050bda,"Replace XML parser with defusedxml
+
+Bandit pointed out that the Pythons's ElementTree is vulnerable to XML
+attacks. defusedxml is a drop in replacement.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-03-29 13:11:10+02:00,-7200,2020-03-29 13:13:40+02:00,-7200,True,False,"['requirements.txt', 'tracker_config.py']",['d5c74b88515dbd6ab687cbfecd83660f532c64a5'],1,2,3,2,,,
+945c020c9c4f63c042f1972b8934835b21731154,Black-ified Python files,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-29 14:09:20+02:00,-7200,2020-04-05 18:21:47+02:00,-7200,True,False,"['convert_db.py', 'run_tests.py', 'announce_parser.py', 'arrnounced.py', 'backend.py', 'config.py', 'db.py', 'irc.py', 'log.py', 'manager.py', 'message_handler.py', 'tracker_config.py', 'utils.py', 'webui.py', 'test_announce_parser.py']",['5a1d186b32162b317b1762b8602342b0b3050bda'],311,606,917,15,0.04477611940298507,0.681592039800995,0.7114427860696517
+46a92779eacc43c7eedf92222d556025356cf2ce,Pass flake8,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-29 15:03:43+02:00,-7200,2020-04-05 18:21:47+02:00,-7200,True,False,"['convert_db.py', 'backend.py', 'config.py', 'db.py', 'irc.py', 'message_handler.py', 'tracker_config.py', 'utils.py', 'webui.py']",['945c020c9c4f63c042f1972b8934835b21731154'],15,16,31,9,0.6666666666666666,0.6666666666666666,0.6666666666666666
+2e033205268e60fd943684bb30a5e77876ebb7e5,Add .pre-commit-config.yaml and .flake8,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-28 14:21:08+01:00,-3600,2020-04-05 18:21:47+02:00,-7200,True,False,"['.flake8', '.pre-commit-config.yaml']",['46a92779eacc43c7eedf92222d556025356cf2ce'],0,30,30,2,,,
+b2ed337a967880d87a0bd11ff8582f583c7f6666,Add bandit and black to github action,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-03-29 11:21:53+02:00,-7200,2020-04-05 18:21:47+02:00,-7200,True,False,['pythonapp.yml'],['2e033205268e60fd943684bb30a5e77876ebb7e5'],11,7,18,1,,,
+a05e3383d5992e60d2023f81df0f5fdaa3ff24cd,Correct spelling in README,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-05 18:29:34+02:00,-7200,2020-04-05 18:29:34+02:00,-7200,True,False,['README.md'],['b2ed337a967880d87a0bd11ff8582f583c7f6666'],1,1,2,1,,,
+6501bc07177a064279fbd8cd0e5e4c1fdeaaf33a,Update html title to Arrnounced,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-08 08:07:15+02:00,-7200,2020-04-08 08:07:15+02:00,-7200,True,False,"['index.html', 'logs.html']",['a05e3383d5992e60d2023f81df0f5fdaa3ff24cd'],2,2,4,2,,,
+dba85f559d7ed41904345c1c3df9e9fe92bc748a,Update pydle to 0.9.4rc1,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-09 18:29:44+02:00,-7200,2020-04-09 18:29:44+02:00,-7200,True,False,['requirements.txt'],['6501bc07177a064279fbd8cd0e5e4c1fdeaaf33a'],1,1,2,1,,,
+e9e22dd8331484ddb5292cba40b101a23fc87273,"Strip whitespace from match groups
+
+Also prepend Irc to multi pattern indexers.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-12 19:59:20+02:00,-7200,2020-04-13 11:12:54+02:00,-7200,True,False,"['announce_parser.py', 'backend.py', 'test_announce_parser.py']",['dba85f559d7ed41904345c1c3df9e9fe92bc748a'],5,7,12,3,,,
+9c1074919299de8df47ed8b4fc638b3dc18a7084,"Fix comments in example config
+
+Also added example of type with period.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-22 19:15:27+02:00,-7200,2020-04-22 19:15:50+02:00,-7200,True,False,['example.cfg'],['e9e22dd8331484ddb5292cba40b101a23fc87273'],49,49,98,1,,,
+1e7f9da353690eaf758a22a9d030043613d87240,Correct docker examples in README,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-22 19:58:17+02:00,-7200,2020-04-22 19:58:42+02:00,-7200,True,False,['README.md'],['9c1074919299de8df47ed8b4fc638b3dc18a7084'],5,5,10,1,,,
+8e201bbb90d2009790d8886ab35595c797076c6e,Update database design update information,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-22 19:59:51+02:00,-7200,2020-04-22 19:59:51+02:00,-7200,True,False,['README.md'],['1e7f9da353690eaf758a22a9d030043613d87240'],10,10,20,1,,,
+918d8189e316ad567dddc33dc7f87c6b85b96084,Restructure README,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-23 17:49:06+02:00,-7200,2020-04-23 17:49:06+02:00,-7200,True,False,['README.md'],['8e201bbb90d2009790d8886ab35595c797076c6e'],19,17,36,1,,,
+65b5841129548244c6f0c6c565040cb283d177de,Move example URLs to make it clear they are optional,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-23 18:21:30+02:00,-7200,2020-04-23 18:21:30+02:00,-7200,True,False,"['README.md', 'example.cfg']",['918d8189e316ad567dddc33dc7f87c6b85b96084'],6,5,11,2,,,
+08c0be91f88ae6953520c8a1c228392a0978954d,Add feature list to README,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-23 19:36:18+02:00,-7200,2020-04-23 19:45:32+02:00,-7200,True,False,['README.md'],['65b5841129548244c6f0c6c565040cb283d177de'],8,10,18,1,,,
+d4cfb33a77ccb1a9b7e6cceb149f7690ab093c0d,Code block path in README,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-23 19:55:43+02:00,-7200,2020-04-23 19:55:43+02:00,-7200,True,False,['README.md'],['08c0be91f88ae6953520c8a1c228392a0978954d'],1,1,2,1,,,
+2e9cc37c022586665be1ebbf079a284affdeec4f,Add venv hint in README,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-23 20:01:26+02:00,-7200,2020-04-23 20:01:26+02:00,-7200,True,False,['README.md'],['d4cfb33a77ccb1a9b7e6cceb149f7690ab093c0d'],1,4,5,1,,,
+f658064cd3fe5a51c63c81b7c9ee5fcc2d691b20,"Update docker Python version to 3.8.2
+
+Also move to debian based image",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-23 20:05:39+02:00,-7200,2020-04-23 20:05:39+02:00,-7200,True,False,['Dockerfile'],['2e9cc37c022586665be1ebbf079a284affdeec4f'],2,2,4,1,,,
+1a3e3b4dd3baeb9d1cf191f2e59ac824fdf9bf78,UI disclaimer,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-24 08:54:47+02:00,-7200,2020-04-24 08:59:52+02:00,-7200,True,False,['README.md'],['f658064cd3fe5a51c63c81b7c9ee5fcc2d691b20'],0,1,1,1,,,
+62f25f84fa9cb7f36dcf7fd23c27970af78aa360,Clarify notification in config,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-24 09:33:56+02:00,-7200,2020-04-24 09:33:56+02:00,-7200,True,False,['example.cfg'],['1a3e3b4dd3baeb9d1cf191f2e59ac824fdf9bf78'],0,1,1,1,,,
+8385f58719dce28c69ca639791d3c74348287caf,Release v0.4,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-24 10:21:56+02:00,-7200,2020-04-24 10:21:56+02:00,-7200,True,False,[],['62f25f84fa9cb7f36dcf7fd23c27970af78aa360'],0,0,0,0,,,
+e2dc4fb6f7aad843b1c9511548b17baa1dae36e9,Add dockerhub link,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-24 18:21:45+02:00,-7200,2020-04-24 18:21:45+02:00,-7200,True,False,['README.md'],['8385f58719dce28c69ca639791d3c74348287caf'],0,2,2,1,,,
+5392c2c43dc6dc65ba9ba9cc49efb46af8ae5db8,Parse webui port as int,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-24 20:15:25+02:00,-7200,2020-04-24 20:15:25+02:00,-7200,True,False,"['config.py', 'webui.py']",['e2dc4fb6f7aad843b1c9511548b17baa1dae36e9'],2,2,4,2,,,
+a7ea35039b60722a354f886492863f320d8a6488,Update gitignore for autodl-trackers,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-01 08:08:24+02:00,-7200,2020-05-01 08:08:24+02:00,-7200,True,False,['.gitignore'],['5392c2c43dc6dc65ba9ba9cc49efb46af8ae5db8'],1,1,2,1,,,
+206ff54853f26686746dcf9d779c01e7934b48c3,"Remove MITM web endpoint
+
+No plan on supporting this atm",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-26 15:09:39+02:00,-7200,2020-05-01 09:51:36+02:00,-7200,True,False,"['manager.py', 'utils.py', 'webui.py']",['a7ea35039b60722a354f886492863f320d8a6488'],87,4,91,3,0.9629629629629629,0.9629629629629629,0.9629629629629629
+8ed4c0cc0379c909f1554ec58213bf73b885f2ee,Unit test config,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-24 20:17:52+02:00,-7200,2020-05-01 10:41:00+02:00,-7200,True,False,"['both_lidarr.cfg', 'both_radarr.cfg', 'both_sonarr.cfg', 'cannot_notify_lidarr.cfg', 'cannot_notify_radarr.cfg', 'cannot_notify_sonarr.cfg', 'default.cfg', 'empty_value.cfg', 'missing_backend.cfg', 'missing_channels.cfg', 'missing_invite_cmd.cfg', 'missing_inviter.cfg', 'missing_nickname.cfg', 'missing_password.cfg', 'missing_port.cfg', 'missing_server.cfg', 'missing_username.cfg', 'override_default.cfg', 'two_trackers.cfg', 'test_config.py']",['206ff54853f26686746dcf9d779c01e7934b48c3'],0,550,550,20,0.2894736842105263,1.0,1.0
+dbcee20276e2417faea9738512887db125fa4662,Unit test ignore patterns,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-25 11:43:13+02:00,-7200,2020-05-01 10:41:00+02:00,-7200,True,False,['test_announce_parser.py'],['8ed4c0cc0379c909f1554ec58213bf73b885f2ee'],3,41,44,1,0.46875,1.0,0.90625
+592854c11a25ae0f4273b71ed0ef2744d9bc130f,Use threads instead of workers,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-01 10:16:54+02:00,-7200,2020-05-01 10:42:01+02:00,-7200,True,False,"['requirements.txt', 'irc.py', 'manager.py']",['dbcee20276e2417faea9738512887db125fa4662'],51,22,73,3,0.0,0.0,0.0
+0b98045e5fe848c038d996953ac2a6629e6cf318,Capture Flask exception,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-02 11:31:16+02:00,-7200,2020-05-02 11:31:16+02:00,-7200,True,False,['webui.py'],['592854c11a25ae0f4273b71ed0ef2744d9bc130f'],6,9,15,1,1.0,1.0,1.0
+eb7f8461fecac446b4a0479740b620ce16fad415,Clarity autodl-trackers mount in README,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-09 11:51:56+02:00,-7200,2020-05-09 11:51:56+02:00,-7200,True,False,['README.md'],['0b98045e5fe848c038d996953ac2a6629e6cf318'],1,1,2,1,,,
+6bc0aefb19b0d1071abc9244db715e31ad989039,Contain announce info in object,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-06 19:14:00+02:00,-7200,2020-05-09 19:39:39+02:00,-7200,True,False,"['announce_parser.py', 'backend.py', 'db.py', 'message_handler.py', 'utils.py', 'webui.py', 'test_announce_parser.py']",['eb7f8461fecac446b4a0479740b620ce16fad415'],54,59,113,7,0.5,0.5,1.0
+97ebf34a9c704ae9c818765b0beaec8649442785,Correct delay log,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-10 20:42:30+02:00,-7200,2020-05-10 20:42:30+02:00,-7200,True,False,['message_handler.py'],['6bc0aefb19b0d1071abc9244db715e31ad989039'],1,1,2,1,,,
+3ba3bb11d958a9dbeaf0dc6cf15a6d42a4e5f210,Log tracker config parsing errors,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-10 20:46:36+02:00,-7200,2020-05-10 20:47:26+02:00,-7200,True,False,['tracker_config.py'],['97ebf34a9c704ae9c818765b0beaec8649442785'],5,8,13,1,0.0,0.0,1.0
+789b91d08e35226a20563a97baf32fd5be19e1d5,Visible overflow for renotify dropdown,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-12 17:24:59+02:00,-7200,2020-05-12 17:24:59+02:00,-7200,True,False,['index.css'],['3ba3bb11d958a9dbeaf0dc6cf15a6d42a4e5f210'],0,4,4,1,,,
+8d1458b1ef1a6551147e85a9c37461e67aa3a637,html: Set url link id,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-15 09:43:42+02:00,-7200,2020-05-15 09:43:42+02:00,-7200,True,False,['index.html'],['789b91d08e35226a20563a97baf32fd5be19e1d5'],10,10,20,1,,,
+7f60cdac467f49f5ce3aed754f2e368b5137df2e,Add twbsPagination,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-18 16:39:49+02:00,-7200,2020-05-18 16:39:49+02:00,-7200,True,False,['jquery.twbsPagination.min.js'],['8d1458b1ef1a6551147e85a9c37461e67aa3a637'],0,10,10,1,1.0,0.8888888888888888,0.9629629629629629
+aaa640088fbbfed7551843298a0b5647dbaf46e5,Remove flask table render template,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-18 16:47:44+02:00,-7200,2020-05-18 16:47:44+02:00,-7200,True,False,"['index.html', 'webui.py']",['7f60cdac467f49f5ce3aed754f2e368b5137df2e'],51,3,54,2,0.0,0.0,0.0
+546d6dae0332a429b7ad34313ace82bab292d1fc,"Pageinate announcements
+
+The initial table is empty. twbsPagination triggers an initial page
+switch which fetches the data. Might be unnecessary to make an
+additional request for each page load but I think it is fine for now.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-18 16:51:42+02:00,-7200,2020-05-18 16:51:42+02:00,-7200,True,False,"['db.py', 'bs-animation.js', 'index.js', 'index.html', 'webui.py']",['aaa640088fbbfed7551843298a0b5647dbaf46e5'],7,127,134,5,0.6571428571428571,1.0,0.6571428571428571
+90b5767a217b1e0e31b924e627b49dc2b06931d8,"Paginate snatches
+
+Same caveats as for announcements apply",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-18 17:23:35+02:00,-7200,2020-05-18 17:23:35+02:00,-7200,True,False,"['db.py', 'index.js', 'index.html', 'webui.py']",['546d6dae0332a429b7ad34313ace82bab292d1fc'],1,65,66,4,1.0,1.0,0.8235294117647058
+5d42be8ebc8e05b85d6cf25dcdef68d039eac56c,Position paginators,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-21 21:29:19+02:00,-7200,2020-05-21 21:29:19+02:00,-7200,True,False,"['index.css', 'index.html']",['90b5767a217b1e0e31b924e627b49dc2b06931d8'],12,18,30,2,,,
+b08f8e53522aa6db8ec46a855e75aaf5bb7a9754,Hide logout button when login disabled,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-23 14:19:12+02:00,-7200,2020-05-23 14:19:12+02:00,-7200,True,False,"['index.html', 'webui.py']",['5d42be8ebc8e05b85d6cf25dcdef68d039eac56c'],0,3,3,2,1.0,1.0,1.0
+bfc13c270bbec870b01a6a79950e3115e997c9a6,"Handle non-capturing groups
+
+Optional groups are for example specified with ""(?: (.*))?"". Ignore
+these group when nothing was captured.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-27 17:34:35+02:00,-7200,2020-05-27 17:34:35+02:00,-7200,True,False,"['announce_parser.py', 'test_announce_parser.py']",['b08f8e53522aa6db8ec46a855e75aaf5bb7a9754'],27,59,86,2,0.0,0.9375,1.0
+05f51f8df53af8e1bf8647def0f3891b2eb71f7c,Capture and exit on db init errors,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-08 13:53:54+02:00,-7200,2020-05-29 09:47:40+02:00,-7200,True,False,"['arrnounced.py', 'db.py']",['bfc13c270bbec870b01a6a79950e3115e997c9a6'],7,16,23,2,1.0,1.0,1.0
+bc4caf3bdc790d7a5d506fe3bc0cc67fd005edaf,Enable verbose via env,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-04-26 14:52:44+02:00,-7200,2020-05-29 09:52:28+02:00,-7200,True,False,"['Dockerfile', 'README.md', 'arrnounced.py']",['05f51f8df53af8e1bf8647def0f3891b2eb71f7c'],8,4,12,3,,,
+ee4712b27bc7f62f8b874a5712425ff17a319aaa,Minor README update,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-29 10:06:08+02:00,-7200,2020-05-29 10:06:08+02:00,-7200,True,False,['README.md'],['bc4caf3bdc790d7a5d506fe3bc0cc67fd005edaf'],1,1,2,1,,,
+7d3587624d0ba7fdfa7ee1d8a4b953420cdce3b7,Release v0.5,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-29 10:09:40+02:00,-7200,2020-05-29 10:09:40+02:00,-7200,True,False,[],['ee4712b27bc7f62f8b874a5712425ff17a319aaa'],0,0,0,0,,,
+07c269c87b0f55a38c952a128bb2e41a60f29851,Handle missing groups in message parser,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-27 18:11:38+02:00,-7200,2020-05-29 11:11:37+02:00,-7200,True,False,"['announce_parser.py', 'test_announce_parser.py']",['7d3587624d0ba7fdfa7ee1d8a4b953420cdce3b7'],12,43,55,2,1.0,1.0,0.5454545454545454
+a06a93b0843ea7ea1444ddf152e292184e6b8b25,Add htmlcov to gitignore,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-29 11:12:21+02:00,-7200,2020-05-29 11:12:21+02:00,-7200,True,False,['.gitignore'],['07c269c87b0f55a38c952a128bb2e41a60f29851'],0,1,1,1,,,
+ff31438f80e40460d4a6a27ae1aac3c1de8d2f9b,"Process parsed message in separate module
+
+Processing the parsed messae is done in separate objects based on what
+processing is configured. So far only ""var"" is implemented as that was
+implemented since before",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-30 15:17:24+02:00,-7200,2020-05-30 15:34:51+02:00,-7200,True,False,"['announce_parser.py', 'announcement.py', 'message_handler.py', 'tracker_config.py', 'utils.py', 'webui.py', 'test_announce_parser.py']",['a06a93b0843ea7ea1444ddf152e292184e6b8b25'],278,364,642,7,1.0,0.0,0.0
+6c5211074ab1ca88956d95bc6a9b28914478f5f7,"Add unit test for announcement
+
+Also run specific unit test",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-06-19 14:28:06+02:00,-7200,2020-06-19 14:28:06+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'run_tests.py', 'announcement.py', 'test_announcement.py']",['ff31438f80e40460d4a6a27ae1aac3c1de8d2f9b'],2,94,96,4,0.10204081632653061,1.0,0.46938775510204084
+ceb148b37e1be348760fb8689e0f455949a06e9e,Add Var unit tests,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-06-19 15:28:45+02:00,-7200,2020-06-19 15:28:45+02:00,-7200,True,False,"['announcement.py', 'test_announce_parser.py', 'test_announcement.py']",['6c5211074ab1ca88956d95bc6a9b28914478f5f7'],8,166,174,3,0.0,1.0,1.0
+55bd1e30b6ce25c4f2d1f5a740cf6086f4135132,"Use only one Extract type
+
+Use the same type for both message parsing and post processing",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-06-19 16:38:39+02:00,-7200,2020-06-19 16:38:39+02:00,-7200,True,False,"['announcement.py', 'tracker_config.py']",['ceb148b37e1be348760fb8689e0f455949a06e9e'],25,23,48,2,,,0.0
+9bbf4098161790c1ddd471f6f305a222f1e5b86b,Move Extract processing to announcement module,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-06-19 20:31:26+02:00,-7200,2020-06-19 20:31:26+02:00,-7200,True,False,"['announce_parser.py', 'announcement.py', 'test_announce_parser.py', 'test_announcement.py']",['55bd1e30b6ce25c4f2d1f5a740cf6086f4135132'],26,145,171,4,0.2545454545454545,1.0,0.8909090909090909
+a29fd2ecef594972138221559225cd4dc2aac447,Implement ExtractOne,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-06-27 21:10:39+02:00,-7200,2020-06-27 21:10:39+02:00,-7200,True,False,"['announcement.py', 'tracker_config.py', 'test_announcement.py']",['9bbf4098161790c1ddd471f6f305a222f1e5b86b'],7,74,81,3,1.0,1.0,0.9444444444444444
+094ce58fc969e2e5a41ad813e25877fee4429b91,Implement ExtractTags,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-07-04 20:35:30+02:00,-7200,2020-07-04 20:35:30+02:00,-7200,True,False,"['announcement.py', 'tracker_config.py', 'test_announcement.py']",['a29fd2ecef594972138221559225cd4dc2aac447'],8,191,199,3,0.7659574468085106,0.8368794326241135,0.8297872340425532
+30184bb799d7e8ad1dc321011731e74467562382,Implement VarReplace,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-07-04 20:50:55+02:00,-7200,2020-07-04 20:50:55+02:00,-7200,True,False,"['announcement.py', 'tracker_config.py', 'test_announcement.py']",['094ce58fc969e2e5a41ad813e25877fee4429b91'],15,79,94,3,1.0,1.0,0.7872340425531915
+6e3a2f9cb1ffce335249c62b9158f2b6d3a9e265,Implement SetRegex,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-07-04 21:04:45+02:00,-7200,2020-07-04 21:04:45+02:00,-7200,True,False,"['announcement.py', 'tracker_config.py', 'test_announcement.py']",['30184bb799d7e8ad1dc321011731e74467562382'],6,56,62,3,1.0,1.0,0.7105263157894737
+4800196e858ebca46e2c0160ea062a50ee5361ab,Print error message for missing XML attributes,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-07-05 15:06:48+02:00,-7200,2020-07-05 15:06:48+02:00,-7200,True,False,['tracker_config.py'],['6e3a2f9cb1ffce335249c62b9158f2b6d3a9e265'],9,16,25,1,0.0,1.0,1.0
+b52807c3c73bc63df9f52db1fbb0398b69de6cca,Implement If,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-07-05 17:01:14+02:00,-7200,2020-07-05 17:01:14+02:00,-7200,True,False,"['announcement.py', 'tracker_config.py', 'test_announcement.py']",['4800196e858ebca46e2c0160ea062a50ee5361ab'],6,138,144,3,0.4090909090909091,1.0,0.9
+51713ac023090162e1958669808338eabe7bf2ba,Print warning when HTTP headers are configured,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-07-11 22:36:15+02:00,-7200,2020-07-11 22:36:15+02:00,-7200,True,False,"['announcement.py', 'tracker_config.py', 'test_announcement.py']",['b52807c3c73bc63df9f52db1fbb0398b69de6cca'],6,33,39,3,1.0,1.0,0.8
+c3e69fd759a8994dc8246720f7253f6b0662f3c7,Update pydle to 0.9.4,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-07-11 22:47:14+02:00,-7200,2020-07-11 22:47:14+02:00,-7200,True,False,['requirements.txt'],['51713ac023090162e1958669808338eabe7bf2ba'],1,1,2,1,,,
+5482162bdcd1a8e12855ae371edf4a78dfe67474,Handle missing user config variables,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-08-05 16:57:32+02:00,-7200,2020-08-05 19:19:32+02:00,-7200,True,False,"['announcement.py', 'tracker_config.py']",['c3e69fd759a8994dc8246720f7253f6b0662f3c7'],13,42,55,2,0.56,0.56,0.0
+47f058c3744b9eaa1b3cae7b1fe2ad1b2037767c,Add clean shutdown,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-05-01 10:19:48+02:00,-7200,2020-08-05 20:35:38+02:00,-7200,True,False,"['irc.py', 'manager.py', 'webui.py']",['5482162bdcd1a8e12855ae371edf4a78dfe67474'],31,33,64,3,,,
+d0d61ff96b7036fa966ff2f0c1fa8c90d7e9d855,Guard shutdown page with config option,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-12 13:24:47+02:00,-7200,2020-10-12 13:41:03+02:00,-7200,True,False,"['config.py', 'webui.py']",['47f058c3744b9eaa1b3cae7b1fe2ad1b2037767c'],2,10,12,2,0.8333333333333334,1.0,1.0
+c1e9407d560c3052ba0ec4c4892d8497d5fa7937,Add ParseStatus to announce_parser,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-11 21:27:31+02:00,-7200,2020-10-12 13:41:03+02:00,-7200,True,False,['announce_parser.py'],['d0d61ff96b7036fa966ff2f0c1fa8c90d7e9d855'],17,34,51,1,1.0,1.0,0.625
+7458c6c73eb4b51d13d53abdb93cfe8f0fddbc72,"Add default variables
+
+A number of default variables are used at the start of message parsing.
+Some of them might be expected to exists when processing announcements.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-12 10:22:28+02:00,-7200,2020-10-12 13:41:03+02:00,-7200,True,False,"['announce_parser.py', 'utils.py', 'test_announce_parser.py']",['c1e9407d560c3052ba0ec4c4892d8497d5fa7937'],25,103,128,3,0.25757575757575757,1.0,1.0
+a8644b39ff59fd285fdebe8f81d2feeeec6b26c8,Use PRIVMSG for identification,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-12 14:21:45+02:00,-7200,2020-10-12 14:21:45+02:00,-7200,True,False,['irc.py'],['7458c6c73eb4b51d13d53abdb93cfe8f0fddbc72'],1,4,5,1,1.0,1.0,1.0
+6471ab5797a6fbc3f6b3c98d146ec74bc54d5afe,Update black version to 20.8b1,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-12 14:42:02+02:00,-7200,2020-10-12 14:42:02+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'announce_parser.py', 'backend.py', 'db.py', 'webui.py', 'test_announce_parser.py', 'test_announcement.py']",['a8644b39ff59fd285fdebe8f81d2feeeec6b26c8'],28,68,96,7,0.0,0.925,0.975
+5b441060cbc0e5449d96096fcd96f74a441b677a,"Check empty torrentUrl and torrentName
+
+As the default variable values were introduced the torrentUrl and
+torrentName are never not set. Instead they are empty if not update at
+message parsing.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-25 19:51:51+01:00,-3600,2020-10-25 19:51:51+01:00,-3600,True,False,['announcement.py'],['6471ab5797a6fbc3f6b3c98d146ec74bc54d5afe'],2,2,4,1,,,
+9c370504d8c775702b742154f9be70125e97b789,Renotify using enum numeric value,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-25 15:28:20+01:00,-3600,2020-10-25 19:58:54+01:00,-3600,True,False,"['backend.py', 'index.js', 'tracker_config.py', 'webui.py']",['5b441060cbc0e5449d96096fcd96f74a441b677a'],44,45,89,4,0.0,0.0,0.0
+9d24cfa4f94005da496b0255079ba6da8ab6f309,"Refactor backends to classes
+
+Implement polymorphism by inheritance. Using the object instances in
+interface as much as possible but not always possible.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-25 18:57:10+01:00,-3600,2020-10-25 19:58:54+01:00,-3600,True,False,"['backend.py', 'message_handler.py', 'tracker_config.py', 'webui.py']",['9c370504d8c775702b742154f9be70125e97b789'],138,164,302,4,1.0,1.0,0.0
+8107d5a1c63b69b7ab7f07c17291141055bb8e60,"Refactor Backend class
+
+Break up the notify function in different parts",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-25 20:26:18+01:00,-3600,2020-10-25 20:26:18+01:00,-3600,True,False,"['backend.py', 'tracker_config.py']",['9d24cfa4f94005da496b0255079ba6da8ab6f309'],38,33,71,2,1.0,1.0,1.0
+7318e0a4f35f62725406b53bedc7ff9334b5fe39,Release v0.6,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-31 10:35:35+01:00,-3600,2020-10-31 10:35:35+01:00,-3600,True,False,[],['8107d5a1c63b69b7ab7f07c17291141055bb8e60'],0,0,0,0,,,
+51ac4656fa70fd536fa998e30d1eb9d0927c90aa,"Support download torrent file with HTTPS
+
+Default behaviour uses torrentUrl variable from tracker files. It can be
+changed to use torrentSslUrl with user config option torrent_https.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-11-08 20:21:24+01:00,-3600,2020-11-08 20:21:24+01:00,-3600,True,False,"['example.cfg', 'announcement.py', 'config.py', 'tracker_config.py', 'override_default.cfg', 'test_announcement.py', 'test_config.py']",['7318e0a4f35f62725406b53bedc7ff9334b5fe39'],4,134,138,7,0.04504504504504504,1.0,0.990990990990991
+49554f3216db7ebab1b15a807447afd00aa8469f,Change profig to tomlkit in requirements.txt,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-11-22 21:00:56+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,['requirements.txt'],['51ac4656fa70fd536fa998e30d1eb9d0927c90aa'],1,1,2,1,,,
+d1c98dc7023d47b39e21926004d50390428b2d41,"Use tomlkit for config.py
+
+config functionality is maintained but the interface is changed so
+Arrnounced does not start.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-11-29 21:06:16+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'arrnounced.py', 'config.py', 'log.py', 'both_lidarr.cfg', 'both_lidarr.toml', 'both_radarr.cfg', 'both_radarr.toml', 'both_sonarr.cfg', 'both_sonarr.toml', 'cannot_notify_lidarr.cfg', 'cannot_notify_lidarr.toml', 'cannot_notify_radarr.cfg', 'cannot_notify_radarr.toml', 'cannot_notify_sonarr.cfg', 'cannot_notify_sonarr.toml', 'default.cfg', 'default.toml', 'empty_value.cfg', 'empty_value.toml', 'missing_backend.cfg', 'missing_backend.toml', 'missing_channels.cfg', 'missing_channels.toml', 'missing_invite_cmd.cfg', 'missing_invite_cmd.toml', 'missing_inviter.cfg', 'missing_inviter.toml', 'missing_nickname.cfg', 'missing_nickname.toml', 'missing_password.cfg', 'missing_password.toml', 'missing_port.cfg', 'missing_port.toml', 'missing_server.cfg', 'missing_server.toml', 'missing_username.cfg', 'missing_username.toml', 'override_default.cfg', 'override_default.toml', 'two_trackers.cfg', 'two_trackers.toml', 'test_config.py']",['49554f3216db7ebab1b15a807447afd00aa8469f'],440,571,1011,43,0.17592592592592593,1.0,0.9722222222222222
+0afda196aa0d0bb308c6bb08de27c88df9bb1885,Test config webui shutdown,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-11-30 17:47:57+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['default.toml', 'override_default.toml', 'test_config.py']",['d1c98dc7023d47b39e21926004d50390428b2d41'],0,6,6,3,0.0,1.0,1.0
+66eab81119df9a0441c35b0aa23109896cc56a4e,"Update rest of Arrnounced to use TOML
+
+The API towards tomlkit changes slightly compared to profig. Since it is
+not possible to set values to None in tomlkit .get() has to be used
+instead.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-11-30 20:14:18+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['example.cfg', 'example.toml', 'backend.py', 'config.py', 'tracker_config.py']",['0afda196aa0d0bb308c6bb08de27c88df9bb1885'],150,133,283,5,,,
+631784098bccd5e1e56c251acc1315a73245abdb,Wrap TOML config in UserConfig class,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-04 22:13:45+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['arrnounced.py', 'backend.py', 'config.py', 'log.py', 'manager.py', 'tracker_config.py', 'webui.py', 'invalid_toml.toml', 'test_config.py']",['66eab81119df9a0441c35b0aa23109896cc56a4e'],312,315,627,9,1.0,0.0,0.0
+3999d1eaf1cc78dfcf1072960478a4d783227611,Add logging info about the TOML change,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-06 16:08:58+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['arrnounced.py', 'config.py']",['631784098bccd5e1e56c251acc1315a73245abdb'],1,14,15,2,0.8888888888888888,1.0,1.0
+d88cc0178af171cbc9d4accb27a4d556ed845497,"Remove workaround for trackers with period in type
+
+profig did not handle sections with period in the name very well.
+Removing the workaround replacing period with underscore. Informing users
+of the change when applicable.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-06 16:38:33+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['example.toml', 'tracker_config.py', 'default.toml', 'two_trackers.toml', 'test_config.py']",['3999d1eaf1cc78dfcf1072960478a4d783227611'],17,25,42,5,0.0,0.0,1.0
+0db3472cb31b2defbea15247c7885769001462cb,"Add subsection ""trackers"" to config file
+
+In order to easily find trackers in the config file they are moved into
+their own subsection",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-09 19:16:43+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['example.toml', 'config.py', 'tracker_config.py', 'both_lidarr.toml', 'both_radarr.toml', 'both_sonarr.toml', 'cannot_notify_lidarr.toml', 'cannot_notify_radarr.toml', 'cannot_notify_sonarr.toml', 'default.toml', 'empty_value.toml', 'invalid_toml.toml', 'missing_backend.toml', 'missing_channels.toml', 'missing_invite_cmd.toml', 'missing_inviter.toml', 'missing_nickname.toml', 'missing_port.toml', 'missing_server.toml', 'override_default.toml', 'two_trackers.toml', 'test_config.py']",['d88cc0178af171cbc9d4accb27a4d556ed845497'],149,123,272,22,1.0,1.0,0.0
+64339901082db2469fd7d374f8927d48db8b8806,"Move tracker settings to subsection
+
+To make a clear distinction on which users settings are required by the
+tracker they are moved to a separate TOML section
+[trackers.<tracker type>.settings]. This also prevents the very slim
+risk there is a conflict with tracker settings and Arrnounced
+settings.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-12 22:41:44+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['example.toml', 'announcement.py', 'config.py', 'tracker_config.py', 'override_default.toml', 'settings.toml', 'test_announcement.py', 'test_config.py']",['0db3472cb31b2defbea15247c7885769001462cb'],17,55,72,8,0.0,1.0,0.9473684210526315
+3263729104b20b1badc81fa041f3d34140ba0faa,"Move backends to subsection
+
+In order to support multiple backends of the same type they are moved to
+its own subsection.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-20 17:48:55+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['example.toml', 'arrnounced.py', 'backend.py', 'config.py', 'index.js', 'tracker_config.py', 'webui.py', 'both_lidarr.toml', 'both_radarr.toml', 'both_sonarr.toml', 'cannot_notify_lidarr.toml', 'cannot_notify_sonarr.toml', 'default.toml', 'empty_value.toml', 'invalid_backend_type.toml', 'invalid_toml.toml', 'missing_backend_type.toml', 'missing_channels.toml', 'missing_invite_cmd.toml', 'missing_inviter.toml', 'missing_nickname.toml', 'missing_password.toml', 'missing_port.toml', 'missing_server.toml', 'missing_username.toml', 'override_default.toml', 'settings.toml', 'two_trackers.toml', 'test_announcement.py', 'test_config.py']",['64339901082db2469fd7d374f8927d48db8b8806'],293,296,589,30,0.7755102040816326,0.0,0.7551020408163265
+828fee2f29e0ff80257b4c099b874bb157c12d0d,Print IRC connection errors,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-23 20:51:47+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,['irc.py'],['3263729104b20b1badc81fa041f3d34140ba0faa'],2,2,4,1,1.0,1.0,0.0
+9e6989f2ea05ad24d48a63fb31f0bcd2fea9b89d,"Cast host and port config values
+
+Tomlkit uses its own types for int and string which causes problem with
+the standard library. More specifically the name resolution for URLs
+fail.
+
+Have not yet seen any issue with the webui host and port but since it
+might be used in the same way somewhere underneath they are casted as
+well.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-23 21:26:23+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['config.py', 'tracker_config.py']",['828fee2f29e0ff80257b4c099b874bb157c12d0d'],4,4,8,2,,,
+b1f496dabefb43311f19765c09555e54389dab48,"Check user config types
+
+In order to give the user as much info as early as possible and to be
+sure that the configuration is valid each config field is checked to
+have the correct type. Arrnounced terminates if invalid types are found.",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-27 13:30:11+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['config.py', 'invalid_backend_toml_type.toml', 'invalid_category_type.toml', 'invalid_mandatory_type.toml', 'invalid_optional_type.toml', 'invalid_settings_type.toml', 'test_config.py']",['9e6989f2ea05ad24d48a63fb31f0bcd2fea9b89d'],33,194,227,7,0.13953488372093023,0.13953488372093023,0.8372093023255814
+cfd895780113e659045eff1ca2c0c4cd66504359,Update default config path in README and Dockerfile,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-28 16:56:22+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['Dockerfile', 'README.md']",['b1f496dabefb43311f19765c09555e54389dab48'],5,5,10,2,,,
+da562b3a9f08839f37e14bb46f2faa96155cdc3f,Update bandit to 1.7.0,WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-28 17:05:06+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'config.py', 'test_config.py']",['cfd895780113e659045eff1ca2c0c4cd66504359'],3,7,10,3,0.0,0.0,1.0
+dea0634448052719b79e3425b24483ea30e4295b,"Update pony to 0.7.14
+
+Update required to suppport Python 3.9",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-31 12:15:52+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,['requirements.txt'],['da562b3a9f08839f37e14bb46f2faa96155cdc3f'],1,1,2,1,,,
+28f1e4af516d4e3335969b9f356821b1e4fc381a,"Rename notify to notify_backends
+
+Rename user config field to make the purpose clearer",WeAnnounce,weannounce@protonmail.com,weannounce,57846972+weannounce@users.noreply.github.com,2020-12-31 12:19:53+01:00,-3600,2020-12-31 12:55:33+01:00,-3600,True,False,"['example.toml', 'config.py', 'tracker_config.py', 'both_lidarr.toml', 'both_radarr.toml', 'both_sonarr.toml', 'cannot_notify_lidarr.toml', 'override_default.toml', 'test_announcement.py', 'test_config.py']",['dea0634448052719b79e3425b24483ea30e4295b'],18,18,36,10,,,
+7be5a94d1780ee41039c79f910418f9857879750,Release v0.7,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-12-31 14:53:04+01:00,-3600,2020-12-31 14:53:04+01:00,-3600,True,False,[],['28f1e4af516d4e3335969b9f356821b1e4fc381a'],0,0,0,0,,,
+ef7cd805fa917e343beb35458d9ae071ac61687a,Update README with TOML info,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-12-31 15:30:43+01:00,-3600,2020-12-31 15:30:43+01:00,-3600,True,False,['README.md'],['7be5a94d1780ee41039c79f910418f9857879750'],0,4,4,1,,,
+8b0b031ab9d629591df4bb997414cfd541f40803,"Capture requests exceptions
+
+Capture any connection error from backends connections",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-01-02 19:22:02+01:00,-3600,2021-01-02 19:22:02+01:00,-3600,True,False,"['backend.py', 'irc.py']",['ef7cd805fa917e343beb35458d9ae071ac61687a'],6,10,16,2,0.0,1.0,1.0
+7837ba60770476742621056af094abc30aa4b678,Capture database transaction errors,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-01-02 20:32:36+01:00,-3600,2021-01-02 20:32:36+01:00,-3600,True,False,['message_handler.py'],['8b0b031ab9d629591df4bb997414cfd541f40803'],6,18,24,1,1.0,1.0,1.0
+f342b5e9606bc303923a6b643a7cd7382855e13e,"Add IRC modes wrapper
+
+Class to handle non RFC1495 parameter modes since pydle throws
+uncatchable exceptions due to them. The class stores all non-RFC1459
+parameter modes sent by the server. When a mode update occurs it removes
+the non-RFC1459 modes and forwards the rest to pydle.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-01-05 10:42:15+01:00,-3600,2021-01-05 11:33:39+01:00,-3600,True,False,"['irc.py', 'irc_modes.py']",['7837ba60770476742621056af094abc30aa4b678'],3,79,82,2,1.0,1.0,0.6578947368421053
+bda6aaf65f6410e13d7b632628215c80e384ec3d,"Show logout link if login required
+
+The logs page was still showing the logout link in case login was
+disabled.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-31 11:03:40+01:00,-3600,2021-01-06 15:58:10+01:00,-3600,True,False,"['logs.html', 'webui.py']",['f342b5e9606bc303923a6b643a7cd7382855e13e'],1,5,6,2,1.0,1.0,1.0
+72d996a5f3838680a33b31fc9b429bb4c0088652,"Refactor tracker config classes and initialization
+
+Keep XML parsing in separate file. Move the tracker config accumulation
+into another file in preparation for a Tracker composing config and
+status.
+The tracker objects initialization is move to the manager",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-11-03 20:37:31+01:00,-3600,2021-01-06 15:58:10+01:00,-3600,True,False,"['manager.py', 'tracker.py', 'tracker_xml_config.py', 'test_announce_parser.py', 'test_announcement.py']",['bda6aaf65f6410e13d7b632628215c80e384ec3d'],178,155,333,5,1.0,0.0,0.0
+1b8c6bc502ae7b183b37d51e7953af08af3b7bfe,"Start using Tracker object
+
+Introducing the Tracker umbrella type accumulating tracker config and
+tarcker status objects.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-11-03 21:38:31+01:00,-3600,2021-01-06 15:58:10+01:00,-3600,True,False,"['announce_parser.py', 'announcement.py', 'backend.py', 'irc.py', 'manager.py', 'message_handler.py', 'tracker.py', 'test_announce_parser.py', 'test_announcement.py']",['72d996a5f3838680a33b31fc9b429bb4c0088652'],261,278,539,9,1.0,1.0,1.0
+bf4aa1420ccf98c7d579a7f81fff46a32798501b,"Create web_handler
+
+Move as much stuff as possible out of webui which is not related to
+flask",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-01-06 17:44:44+01:00,-3600,2021-01-06 17:47:51+01:00,-3600,True,False,"['web_handler.py', 'webui.py']",['1b8c6bc502ae7b183b37d51e7953af08af3b7bfe'],62,116,178,2,1.0,1.0,1.0
+81914ad77e9f3761dad0a5cadbaacddafc836cc4,"Config channels to lower case
+
+If the user enters a channel with capital letters it will not match
+_is_announcement(...)",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-02-14 15:31:26+01:00,-3600,2021-02-14 15:32:16+01:00,-3600,True,False,['tracker.py'],['bf4aa1420ccf98c7d579a7f81fff46a32798501b'],1,3,4,1,1.0,1.0,1.0
+0764d260e4fbe98331700873dedd8da31f4fb815,Replace requests with aiohttp in requirements,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-16 21:37:20+01:00,-3600,2021-12-16 21:37:20+01:00,-3600,True,False,['requirements.txt'],['81914ad77e9f3761dad0a5cadbaacddafc836cc4'],1,1,2,1,,,
+a6ee59449d409014963f95a43081525d8dabcaeb,"Decrease db_session scope
+
+Pony is not compatible with async/await statements. More specifically,
+when the context manager is active await is not possible. The database
+sessions are therefore changed to what's essential even though it may
+cause several session per event. Multiple session per event is rare
+though, it only happens if a release is snatched. Should be fine.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-16 21:42:46+01:00,-3600,2021-12-16 22:04:47+01:00,-3600,True,False,"['message_handler.py', 'web_handler.py']",['0764d260e4fbe98331700873dedd8da31f4fb815'],12,16,28,2,0.0,1.0,1.0
+e5d4cc0a05efa5f936c167264953a747bb11bcf0,Add helper class for eventloop actions,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-16 21:47:10+01:00,-3600,2021-12-16 22:04:47+01:00,-3600,True,False,['eventloop_utils.py'],['a6ee59449d409014963f95a43081525d8dabcaeb'],0,35,35,1,1.0,1.0,1.0
+f73e711be814f0dc0d8014b0beef0322a9c8d457,Move shutdown handling to web_handler,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-16 21:52:11+01:00,-3600,2021-12-16 22:04:47+01:00,-3600,True,False,"['irc.py', 'web_handler.py']",['e5d4cc0a05efa5f936c167264953a747bb11bcf0'],15,11,26,2,0.0,0.0,0.0
+6c8b1142899e4263e3b312a4ba272e61c84c3ca3,Add SessionProvider for HTTP requests,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-16 21:56:52+01:00,-3600,2021-12-16 22:04:47+01:00,-3600,True,False,['session_provider.py'],['f73e711be814f0dc0d8014b0beef0322a9c8d457'],0,37,37,1,1.0,1.0,0.3181818181818182
+e0608daf48dc92c830eac96b7f3bcaf12e59a7cf,"Backends use aiohttp
+
+Use the session provider to call backends. Since calls now occur
+concurrently, they are locked per backend as the same release may be
+snatched multiple times otherwise.
+
+Extra eventloop handling required to close the session and to perform
+renotifies from the Flask thread.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-16 22:00:19+01:00,-3600,2021-12-16 22:04:47+01:00,-3600,True,False,"['backend.py', 'message_handler.py', 'web_handler.py']",['6c8b1142899e4263e3b312a4ba272e61c84c3ca3'],54,49,103,3,1.0,0.0,0.0
+26970daa6d35030cbd34a6b5e5511fe8b757e83a,Allow backend stop task to start,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-18 16:51:07+01:00,-3600,2021-12-18 16:51:07+01:00,-3600,True,False,['eventloop_utils.py'],['e0608daf48dc92c830eac96b7f3bcaf12e59a7cf'],0,3,3,1,1.0,1.0,1.0
+bc3bd2a09fa67a7cfde74a4fdc0e4d02aa1ade97,Add basic pyproject.toml,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-18 17:08:33+01:00,-3600,2021-12-18 17:08:33+01:00,-3600,True,False,['pyproject.toml'],['26970daa6d35030cbd34a6b5e5511fe8b757e83a'],0,14,14,1,,,
+1129a5efafb2f56adb478fc13915642dd7849f45,Replace req.tx with pyproject.toml,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-18 17:10:57+01:00,-3600,2021-12-18 18:08:11+01:00,-3600,True,False,"['pyproject.toml', 'requirements.txt']",['bc3bd2a09fa67a7cfde74a4fdc0e4d02aa1ade97'],11,10,21,2,,,
+ddd5885d3ac0741bd034d9b5a36215ddb7023193,"Move source files according to poetry needs
+
+Re-add requests as it will be used for check ability",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-18 17:34:18+01:00,-3600,2021-12-18 18:08:11+01:00,-3600,True,False,"['__init__.py', 'announce_parser.py', 'announcement.py', 'arrnounced.py', 'backend.py', 'config.py', 'db.py', 'eventloop_utils.py', 'irc.py', 'irc_modes.py', 'log.py', 'manager.py', 'message_handler.py', 'session_provider.py', 'bootstrap.min.css', 'glyphicons-halflings-regular.eot', 'glyphicons-halflings-regular.svg', 'glyphicons-halflings-regular.ttf', 'glyphicons-halflings-regular.woff', 'glyphicons-halflings-regular.woff2', 'bootstrap.min.js', 'index.css', 'styles.min.css', 'toastr.css', 'toastr.min.css', 'user.css', 'common.js', 'index.js', 'jquery.min.js', 'jquery.twbsPagination.min.js', 'logs.js', 'script.min.js', 'settings.js', 'toastr.js', 'index.html', 'login.html', 'logs.html', 'tracker.py', 'tracker_xml_config.py', 'utils.py', 'web_handler.py', 'webui.py', 'pyproject.toml', 'run_tests.py', 'test_announce_parser.py', 'test_announcement.py', 'test_config.py']",['1129a5efafb2f56adb478fc13915642dd7849f45'],5,9,14,47,,,
+6ef7423f2d1abe1e69ec0393a0467efd4d7e747a,"Fix import for arrnounced package
+
+The new way of executing the script is:
+python -m arrnounced.arrnounced
+
+This way the arrnounced package is added to the import path",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-18 18:31:34+01:00,-3600,2021-12-18 18:31:34+01:00,-3600,True,False,"['announce_parser.py', 'backend.py', 'cli.py', 'db.py', 'irc.py', 'log.py', 'manager.py', 'message_handler.py', 'tracker_xml_config.py', 'web_handler.py', 'webui.py', 'pyproject.toml']",['ddd5885d3ac0741bd034d9b5a36215ddb7023193'],32,40,72,12,0.0,0.0,1.0
+0dbe8a2dd4900b6b01110754b49c4dd0e54d79f4,Remove requests from code,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-18 20:56:32+01:00,-3600,2021-12-18 20:56:32+01:00,-3600,True,False,"['webui.py', 'pyproject.toml']",['6ef7423f2d1abe1e69ec0393a0467efd4d7e747a'],6,5,11,2,1.0,0.0,0.0
+e103a1afb39cc13352d7ea9319ea6316a46a499b,Ignore poetry dist directory,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-18 22:53:50+01:00,-3600,2021-12-18 22:53:50+01:00,-3600,True,False,['.gitignore'],['0dbe8a2dd4900b6b01110754b49c4dd0e54d79f4'],0,1,1,1,,,
+5369aeb6344c32552dcdbec7dd77dcf9717ed0d7,Add poetry lock file,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-18 22:54:04+01:00,-3600,2021-12-18 22:54:04+01:00,-3600,True,False,['poetry.lock'],['e103a1afb39cc13352d7ea9319ea6316a46a499b'],0,772,772,1,,,
+3ac5fb77a4a62c1b217704e7dc346313a04a9598,Add readme to poetry build,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 10:51:58+01:00,-3600,2021-12-19 10:51:58+01:00,-3600,True,False,['pyproject.toml'],['5369aeb6344c32552dcdbec7dd77dcf9717ed0d7'],0,1,1,1,,,
+81c587094e1b9907d98a57103cb8f01f86db4d9e,Run unit tests with poetry,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 14:27:52+01:00,-3600,2021-12-19 14:27:52+01:00,-3600,True,False,['.pre-commit-config.yaml'],['3ac5fb77a4a62c1b217704e7dc346313a04a9598'],2,1,3,1,,,
+647ab833707e34ab8175755a1f9f192f8ecdcd49,"Add version flag
+
+Move the file and dir checks to after argument parsing, since the
+version should be printable regardless if the default arguments are
+valid.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 14:28:20+01:00,-3600,2021-12-19 14:28:20+01:00,-3600,True,False,"['__init__.py', 'cli.py', 'pyproject.toml']",['81c587094e1b9907d98a57103cb8f01f86db4d9e'],14,31,45,3,0.6666666666666666,0.6666666666666666,1.0
+5ac09dc059e97c13a3c4f7da2db4b62039191dd5,Add manual github actions trigger,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 18:52:36+01:00,-3600,2021-12-19 18:55:55+01:00,-3600,True,False,['pythonapp.yml'],['0865adb4fa15f78fae411251efe668e4391d7a86'],0,1,1,1,,,
+21bd8d1301064a33489d51fe49b9ae8581d8b712,Update poetry lock file (requests removed),WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 19:10:00+01:00,-3600,2021-12-19 19:10:00+01:00,-3600,True,False,['poetry.lock'],['5ac09dc059e97c13a3c4f7da2db4b62039191dd5'],52,1,53,1,,,
+61c2d7dd873f9bee24babe316df0af2e4643e690,Update pre-commit and actions verions,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 18:38:41+01:00,-3600,2021-12-19 19:10:28+01:00,-3600,True,False,"['pythonapp.yml', '.pre-commit-config.yaml']",['21bd8d1301064a33489d51fe49b9ae8581d8b712'],6,6,12,2,,,
+148c9d29bb1f872cdd6a57958870aeb5442c9b26,Update github actions to use poetry,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 18:45:59+01:00,-3600,2021-12-19 19:10:28+01:00,-3600,True,False,['pythonapp.yml'],['61c2d7dd873f9bee24babe316df0af2e4643e690'],10,14,24,1,,,
+c8208e7d796e00a3fcb8536feb020f00c8af2160,Release 0.7.1,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 19:17:48+01:00,-3600,2021-12-19 19:17:48+01:00,-3600,True,False,['pyproject.toml'],['148c9d29bb1f872cdd6a57958870aeb5442c9b26'],1,1,2,1,,,
+d8e5f676317c1ce698c8297873fde2964d8969bc,"Downgrade python version to at most 3.9
+
+aiohttp is not compatible with 3.10",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 19:28:04+01:00,-3600,2021-12-19 19:29:10+01:00,-3600,True,False,"['poetry.lock', 'pyproject.toml']",['c8208e7d796e00a3fcb8536feb020f00c8af2160'],3,3,6,2,,,
+8251b0ad9232bd429d4b0c15a0bf337408c55cc9,"Update README with pip instructions
+
+Also remove mention of Python version in readme as that info can be
+found in PyPI",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 20:58:43+01:00,-3600,2021-12-19 21:03:59+01:00,-3600,True,False,['README.md'],['d8e5f676317c1ce698c8297873fde2964d8969bc'],19,15,34,1,,,
+0f4f2e772ae0c7bd25ebf84420679bdba6e4c5a9,Release 0.7.2,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-19 21:06:17+01:00,-3600,2021-12-19 21:06:17+01:00,-3600,True,False,['pyproject.toml'],['8251b0ad9232bd429d4b0c15a0bf337408c55cc9'],1,1,2,1,,,
+13107e1b54fa60c992a32e553f8ac79737e68ccf,"Add SessionProvider get function
+
+The get function is tailored for checking if backends are accessible. It
+only logs a warning on failure.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-20 21:12:11+01:00,-3600,2021-12-20 21:12:11+01:00,-3600,True,False,['session_provider.py'],['0f4f2e772ae0c7bd25ebf84420679bdba6e4c5a9'],0,13,13,1,1.0,1.0,1.0
+cac1bf1ca4181f436547643fa90922fc9d7aba8d,"Add liveness check to backends
+
+Use the diskspace endpoint for the check. Init the eventloop_util
+earlier in order to inject the liveness checks.
+
+Also add a Radarr API fallback as the config does not specify which API
+should be used. Possibly extend the config with this.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-20 21:14:09+01:00,-3600,2021-12-20 21:14:09+01:00,-3600,True,False,"['backend.py', 'irc.py', 'manager.py']",['13107e1b54fa60c992a32e553f8ac79737e68ccf'],5,51,56,3,1.0,1.0,1.0
+48a7bfb53cbfd6bf41e78ae623568fb4f349a12e,Add backend check debug log,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-28 20:33:16+01:00,-3600,2021-12-28 20:33:16+01:00,-3600,True,False,['backend.py'],['cac1bf1ca4181f436547643fa90922fc9d7aba8d'],1,4,5,1,1.0,1.0,1.0
+b3b467dae7239118ba8513654ddbf12ee34d507c,Log HTTP header warning only once,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-30 10:41:14+01:00,-3600,2021-12-30 10:41:14+01:00,-3600,True,False,['announcement.py'],['48a7bfb53cbfd6bf41e78ae623568fb4f349a12e'],4,10,14,1,1.0,1.0,0.0
+ee49d3e0eb7479d93d1eadad4c427d0c008b4cd2,"Simple db age implementation
+
+Just a proof of concept. Thread does not join, the age is hard-coded
+etc.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-28 21:43:15+01:00,-3600,2021-12-30 12:01:51+01:00,-3600,True,False,"['db.py', 'manager.py']",['b3b467dae7239118ba8513654ddbf12ee34d507c'],4,21,25,2,0.0,1.0,1.0
+06f1a65d49077271494d2ceeb729f862926f5a43,Add db_purge_days to config,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-30 12:01:06+01:00,-3600,2021-12-30 12:01:51+01:00,-3600,True,False,"['config.py', 'example.toml', 'override_default.toml', 'test_config.py']",['ee49d3e0eb7479d93d1eadad4c427d0c008b4cd2'],0,18,18,4,0.3333333333333333,0.3333333333333333,1.0
+4f158c0ef441743873d47f3c43cda6a2a6d7c2b7,Use config purge days,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-30 12:15:31+01:00,-3600,2021-12-30 12:15:31+01:00,-3600,True,False,['db.py'],['06f1a65d49077271494d2ceeb729f862926f5a43'],5,8,13,1,1.0,1.0,1.0
+706c45d4a2f20bee2c3e9e035d4482a2e62f959a,Terminate db thread on shutdown,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-30 12:30:10+01:00,-3600,2021-12-30 12:30:10+01:00,-3600,True,False,"['db.py', 'web_handler.py']",['4f158c0ef441743873d47f3c43cda6a2a6d7c2b7'],3,14,17,2,1.0,1.0,1.0
+2e1b0e55bc7e04b5a8e7a5e4560bb633123d5f8e,Purge database once a day,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-12-30 14:57:14+01:00,-3600,2021-12-30 14:57:14+01:00,-3600,True,False,['db.py'],['706c45d4a2f20bee2c3e9e035d4482a2e62f959a'],1,2,3,1,1.0,1.0,1.0
+a9d130df4cf631a2f505dd997e253a440d684853,Allow disable automatic db purge,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-01 18:57:10+01:00,-3600,2022-01-01 19:02:11+01:00,-3600,True,False,"['db.py', 'example.toml']",['2e1b0e55bc7e04b5a8e7a5e4560bb633123d5f8e'],1,2,3,2,,,
+37dea164689780d88090d69cc7893e1ef5a936aa,"Use delete return value
+
+len(old) took a long long time",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-02 11:25:52+01:00,-3600,2022-01-02 11:25:52+01:00,-3600,True,False,"['db.py', 'irc.py']",['a9d130df4cf631a2f505dd997e253a440d684853'],4,4,8,2,0.0,0.0,0.0
+426e3bc9c16d3ffed48faf9bc9ff36d84927e542,"Support Python versions 3.7-3.9
+
+3.6 is EoL
+3.10 is not supported by pony",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-02 11:52:18+01:00,-3600,2022-01-02 18:17:18+01:00,-3600,True,False,"['poetry.lock', 'pyproject.toml']",['136e63ab803f90b1ce9426bec0c15938750f8c41'],13,64,77,2,,,
+40397bddfe0be1fa3d425376b8e0a9c818c7b4b7,Release 0.8.0,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-02 18:32:25+01:00,-3600,2022-01-02 18:32:25+01:00,-3600,True,False,['pyproject.toml'],['426e3bc9c16d3ffed48faf9bc9ff36d84927e542'],1,1,2,1,,,
+88cdcd0ab909df31e0ac40ab5d71b2e85579073e,"Replace ORM purge with SQL query
+
+Using ORM was painfully slow and used too much memory. This is a lot
+quicker and less resource intense.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-03 21:42:43+01:00,-3600,2022-01-08 19:19:34+01:00,-3600,True,False,['db.py'],['40397bddfe0be1fa3d425376b8e0a9c818c7b4b7'],8,18,26,1,0.0,1.0,1.0
+17f7707550905adbc4099128f1349fb54367e8cf,"Improve logging
+
+* Change db purge log to info
+* Add thread finish logs",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-08 21:24:09+01:00,-3600,2022-01-08 21:46:46+01:00,-3600,True,False,"['db.py', 'irc.py', 'webui.py']",['88cdcd0ab909df31e0ac40ab5d71b2e85579073e'],1,4,5,3,0.3333333333333333,1.0,1.0
+2bbc36a194510947388b5dc82a6ac0143c192a45,Add pyproject homepage,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-03 20:17:24+01:00,-3600,2022-01-08 21:48:28+01:00,-3600,True,False,['pyproject.toml'],['17f7707550905adbc4099128f1349fb54367e8cf'],0,1,1,1,,,
+6a986eb1ff6e8dbead8c3413e55d3fbd5b93d909,Release 0.8.1,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-08 21:02:58+01:00,-3600,2022-01-08 21:48:28+01:00,-3600,True,False,['pyproject.toml'],['2bbc36a194510947388b5dc82a6ac0143c192a45'],1,1,2,1,,,
+6882f2acb7b0ea1bdd485f0af21ed241f773d26a,Create docker image with pip package,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-03 19:26:01+01:00,-3600,2022-01-08 22:26:02+01:00,-3600,True,False,['Dockerfile'],['6a986eb1ff6e8dbead8c3413e55d3fbd5b93d909'],12,7,19,1,,,
+e9ff479c8bebdebc339f16cf945cce07c2750bfd,Add simple status web endpoint,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-10-31 11:05:20+01:00,-3600,2022-01-09 11:52:06+01:00,-3600,True,False,"['irc.py', 'index.html', 'logs.html', 'status.html', 'web_handler.py', 'webui.py']",['6882f2acb7b0ea1bdd485f0af21ed241f773d26a'],0,63,63,6,1.0,1.0,1.0
+f95b7f7a23a14b36dcccfee90cec3048c5c7e6cb,Set basic IRC status,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2020-11-22 14:59:56+01:00,-3600,2022-01-09 11:52:16+01:00,-3600,True,False,"['irc.py', 'tracker.py']",['e9ff479c8bebdebc339f16cf945cce07c2750bfd'],3,67,70,2,1.0,1.0,0.5
+a240e0b7ddcb61542b1f172134053cded555983c,Simple real time update of status page,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-01-09 10:40:42+01:00,-3600,2022-01-09 12:38:24+01:00,-3600,True,False,"['manager.py', 'status.html', 'tracker.py', 'webui.py']",['f95b7f7a23a14b36dcccfee90cec3048c5c7e6cb'],5,65,70,4,0.9583333333333334,1.0,1.0
+f17af6c88af847d2371a8ff41ced8e8bf82fcd51,"Status HTML table created
+
+Upon page load the table is filled with crude information which is not
+updated in real time",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-01-09 11:39:34+01:00,-3600,2022-01-09 12:38:52+01:00,-3600,True,False,"['irc.py', 'manager.py', 'status.html', 'tracker.py', 'webui.py']",['a240e0b7ddcb61542b1f172134053cded555983c'],10,66,76,5,1.0,1.0,1.0
+bc174ea62d2f973660dff18ea23a8b3ad22d5412,Real time update of tracker status table,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-01-09 12:06:49+01:00,-3600,2022-01-09 12:39:13+01:00,-3600,True,False,"['irc.py', 'manager.py', 'status.html', 'tracker.py']",['f17af6c88af847d2371a8ff41ced8e8bf82fcd51'],9,27,36,4,0.6666666666666666,1.0,1.0
+f078671203c74a5aa3389d12ebee7b6906554415,Update tracker status with announcements,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-01-10 14:38:00+01:00,-3600,2022-01-09 12:39:16+01:00,-3600,True,False,"['announcement.py', 'db.py', 'message_handler.py', 'status.html', 'tracker.py', 'web_handler.py', 'webui.py']",['bc174ea62d2f973660dff18ea23a8b3ad22d5412'],19,53,72,7,0.8421052631578947,1.0,0.8421052631578947
+8f631d5ab32c40e1c6f079e37f6d5a105b7bb9f0,Initiate TrackerStatus with latest timestamps,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-01-10 15:27:23+01:00,-3600,2022-01-09 12:39:16+01:00,-3600,True,False,"['db.py', 'manager.py', 'tracker.py', 'webui.py']",['f078671203c74a5aa3389d12ebee7b6906554415'],1,33,34,4,0.0,0.3076923076923077,0.8846153846153846
+8916cdafca32181bfb04338ef2fec673be719a95,Handle rejected channel joins,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2021-01-10 17:37:52+01:00,-3600,2022-01-09 12:39:30+01:00,-3600,True,False,"['irc.py', 'manager.py', 'status.html', 'tracker.py']",['8f631d5ab32c40e1c6f079e37f6d5a105b7bb9f0'],38,126,164,4,1.0,1.0,0.8767123287671232
+e5d0ead7d6623af47974e39d85f305dd76a61d23,Add Flask-SocketIO dependency,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-09 12:45:05+01:00,-3600,2022-01-09 12:45:05+01:00,-3600,True,False,"['poetry.lock', 'pyproject.toml']",['8916cdafca32181bfb04338ef2fec673be719a95'],4,72,76,2,,,
+b51598df8740b6f384da6170d5a7ce41b6f54d95,Init status table with socketio update,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-16 12:07:02+01:00,-3600,2022-01-16 12:07:02+01:00,-3600,True,False,"['status.html', 'web_handler.py', 'webui.py']",['e5d0ead7d6623af47974e39d85f305dd76a61d23'],23,37,60,3,0.0,0.0,0.0
+ef79b35facc0a5da7a02a622f9f2849317bb6fcf,Use same function to init and update tracker status,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-16 12:24:03+01:00,-3600,2022-01-16 12:24:03+01:00,-3600,True,False,['status.html'],['b51598df8740b6f384da6170d5a7ce41b6f54d95'],27,32,59,1,,,
+948510dc2777d6dea5e4e0ed25928f989c481875,Repair socketio room join,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-16 12:45:53+01:00,-3600,2022-01-16 12:45:53+01:00,-3600,True,False,"['status.html', 'tracker.py', 'webui.py']",['ef79b35facc0a5da7a02a622f9f2849317bb6fcf'],36,26,62,3,1.0,1.0,1.0
+77d5fb654e2460a7c0364c638ab140931a161dab,Only update relevant status info,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-16 15:50:26+01:00,-3600,2022-01-16 15:50:26+01:00,-3600,True,False,"['status.html', 'tracker.py', 'webui.py']",['948510dc2777d6dea5e4e0ed25928f989c481875'],23,47,70,3,1.0,1.0,1.0
+f324fc9ea45a73414b3e0645b606da4d161dac5d,"Works quite well
+
+* Glyphicons added to status page
+* Table proportions seems ok
+* Text and icons centered
+* Channel status updated to look nicer
+
+When disconnecting the channel list isn't cleared though.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-16 18:09:14+01:00,-3600,2022-01-16 18:09:14+01:00,-3600,True,False,"['status.html', 'tracker.py', 'webui.py']",['77d5fb654e2460a7c0364c638ab140931a161dab'],32,81,113,3,1.0,1.0,1.0
+7e646201556d0ef4e08ca1c643636cfb88e2bf0b,Clear channels on disconnect and align table cells,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-16 19:06:07+01:00,-3600,2022-01-16 19:06:07+01:00,-3600,True,False,"['status.css', 'status.html']",['f324fc9ea45a73414b3e0645b606da4d161dac5d'],8,35,43,2,,,
+a4e2be38f2e6dd536dc40772b4af5021375fecb4,Some cleanup,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-16 19:32:05+01:00,-3600,2022-01-16 19:32:05+01:00,-3600,True,False,"['status.html', 'webui.py']",['7e646201556d0ef4e08ca1c643636cfb88e2bf0b'],11,2,13,2,0.0,0.0,0.0
+f68369d6c1f87e4a0672906c5574dac50bebde06,"Move shutdown to signal handler
+
+socketio replaces the werkzeug dev webserver when using eventlet and so
+the shutdown endpoint does no longer work. Moving the shutdown to a
+signal handler, which makes sense anyway, as it's easy to make graceful
+shutdown from CLI.
+
+IRC and db threads as well as backend's session are shutdown and closed
+properly. The web thread has no natural flag or event for shutdown that
+I can find. There is probably some hacky way to send SystemExit
+exception to it but might as well just terminate the program.",WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-01-31 21:17:54+01:00,-3600,2022-02-05 21:54:44+01:00,-3600,True,False,"['config.py', 'manager.py', 'web_handler.py', 'webui.py', 'test_config.py']",['a4e2be38f2e6dd536dc40772b4af5021375fecb4'],42,23,65,5,0.0,0.09090909090909091,0.0
+0e23f92c6a63841696a82674269d5bd0fd68e7af,Require login to enter status room,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-05 22:26:04+01:00,-3600,2022-02-05 22:26:04+01:00,-3600,True,False,['webui.py'],['f68369d6c1f87e4a0672906c5574dac50bebde06'],6,2,8,1,0.0,0.0,0.0
+cbe535bd098e4f41b9fc0cdc1a8720913305099f,Update site header,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-05 23:16:08+01:00,-3600,2022-02-05 23:16:08+01:00,-3600,True,False,"['login.html', 'logs.html', 'status.html']",['efd6f5c5ee6696035a460ea10691c088519ccb64'],3,3,6,3,,,
+65b62576771d6c51dd9fac47dd4955d6a81c09af,Add screenshots to README,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-05 23:31:47+01:00,-3600,2022-02-06 12:34:59+01:00,-3600,True,False,"['README.md', 'index.PNG', 'status.gif']",['cbe535bd098e4f41b9fc0cdc1a8720913305099f'],0,7,7,3,,,
+9d95796eb16c55206f1d7073fe5e4ac3fe3e2547,Fix status menu styling,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-06 12:37:06+01:00,-3600,2022-02-06 12:37:06+01:00,-3600,True,False,['index.html'],['65b62576771d6c51dd9fac47dd4955d6a81c09af'],1,1,2,1,,,
+91aa3582b4c54c5a78b3e8a02f3d8d0d96bb3fd8,Set status page upcoming release,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-06 13:29:26+01:00,-3600,2022-02-06 13:29:26+01:00,-3600,True,False,['README.md'],['9d95796eb16c55206f1d7073fe5e4ac3fe3e2547'],1,1,2,1,,,
+ac8d5badbdf3b03eb7537ab925120722ea445248,Update pre-commit versions,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-07 20:47:03+01:00,-3600,2022-02-07 20:47:03+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'db.py']",['91aa3582b4c54c5a78b3e8a02f3d8d0d96bb3fd8'],3,4,7,2,,,
+b5534a13591f739bfd930110e2c8e8bab75fdbbb,Let pool disconnect IRC clients,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-13 13:36:24+01:00,-3600,2022-02-13 13:36:52+01:00,-3600,True,False,"['irc.py', 'manager.py']",['ac8d5badbdf3b03eb7537ab925120722ea445248'],5,5,10,2,,,
+5e80234d0bdf23d1320ea562bcceca94a4b87f94,Update Python docker version,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-13 14:34:44+01:00,-3600,2022-02-13 14:35:27+01:00,-3600,True,False,['Dockerfile'],['b5534a13591f739bfd930110e2c8e8bab75fdbbb'],1,2,3,1,,,
+6ba2034e82ffee1a498cfd469e21f552859d6d9f,Create docker dev target for easier testing,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-13 14:35:08+01:00,-3600,2022-02-13 14:35:27+01:00,-3600,True,False,['Dockerfile'],['5e80234d0bdf23d1320ea562bcceca94a4b87f94'],0,6,6,1,,,
+0d8bb4a94a523f6e02388118803c7921469dd148,Release 0.9.0,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-13 13:40:12+01:00,-3600,2022-02-13 14:35:27+01:00,-3600,True,False,"['poetry.lock', 'pyproject.toml']",['6ba2034e82ffee1a498cfd469e21f552859d6d9f'],158,132,290,2,,,
+0ca8b8d009ae0f3d42f9d151ca3cc6a8833aa4f2,Remove upcoming release readme info,WeAnnounce,weannounce@protonmail.com,WeAnnounce,weannounce@protonmail.com,2022-02-13 15:14:44+01:00,-3600,2022-02-13 15:14:44+01:00,-3600,True,False,['README.md'],['0d8bb4a94a523f6e02388118803c7921469dd148'],1,1,2,1,,,

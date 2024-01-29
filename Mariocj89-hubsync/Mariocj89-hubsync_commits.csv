@@ -1,0 +1,128 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+15228d50b4df1552a4cfcb0ad5cb49b100f4f799,First awesome commit,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-03 23:30:31+00:00,0,2015-11-06 19:04:15+00:00,0,True,False,"['.gitignore', 'hubsync.py', '__init__.py', 'github.py', 'sync.py', 'workspace.py', 'requirements.txt']",[],0,398,398,7,0.5571428571428572,0.5,0.4857142857142857
+17aff8e4640bcfba3a4e7085a37b74797e66b58f,Add github module unit tests,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-04 22:20:00+00:00,0,2015-11-06 19:04:18+00:00,0,True,False,"['__init__.py', '__init__.py', 'github_test.py']",['15228d50b4df1552a4cfcb0ad5cb49b100f4f799'],0,89,89,3,1.0,1.0,1.0
+dd721c519465480a3a7360a2c2e31749f76e4ced,Add pypi meta files,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-10 22:09:26+00:00,0,2015-11-10 22:45:05+00:00,0,True,False,"['LICENSE.txt', 'README.rst', 'sync.py', 'setup.py']",['17aff8e4640bcfba3a4e7085a37b74797e66b58f'],0,54,54,4,1.0,1.0,0.3333333333333333
+989cce5aff0092cc3a788131a8cd108e1166d12a,Add setup.cfg for test configuration,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-11 18:14:38+00:00,0,2015-11-11 18:14:38+00:00,0,True,False,['setup.cfg'],['dd721c519465480a3a7360a2c2e31749f76e4ced'],0,5,5,1,,,
+ee31b0f8a904c688c64655595a512af78d4e09e1,Build Org/repo through factory method,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-11 21:52:22+00:00,0,2015-11-11 21:52:22+00:00,0,True,False,"['github.py', 'requirements.txt', 'github_test.py']",['989cce5aff0092cc3a788131a8cd108e1166d12a'],15,66,81,3,0.30303030303030304,1.0,0.8181818181818182
+71f5c8f1b43f4902334feb024387c4a51922afea,Clean stale branches,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-11 22:43:28+00:00,0,2015-11-11 22:46:40+00:00,0,True,False,['sync.py'],['ee31b0f8a904c688c64655595a512af78d4e09e1'],8,30,38,1,0.9565217391304348,0.9565217391304348,0.8695652173913043
+1d9e276d1ea6022a0f1df3fe7d834330a2430adf,Bump version,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-11 22:48:10+00:00,0,2015-11-11 23:06:34+00:00,0,True,False,"['CONTRIBUTING.md', 'README.rst', 'setup.py']",['71f5c8f1b43f4902334feb024387c4a51922afea'],3,38,41,3,,,
+3ca1455d651a85b22ed6f06c80645a62fee8c1a6,Update dependencies,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-12 09:43:34+00:00,0,2015-11-12 22:14:56+00:00,0,True,False,['setup.py'],['1d9e276d1ea6022a0f1df3fe7d834330a2430adf'],1,3,4,1,,,
+9a1300bc07fd5d9066652075436e2bf4003038d9,"Move Executable to the bin folder
+
+Move hubsync.py to a bin folder as it is causing issue being a module.
+Closes #1",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-12 22:25:19+00:00,0,2015-11-12 22:25:19+00:00,0,True,False,"['hubsync', 'setup.py']",['3ca1455d651a85b22ed6f06c80645a62fee8c1a6'],1,1,2,2,,,
+a8f61974182dc7ae5cb5a4668dfab836e23aacc5,"Raise when using wrong paths for local Orgs/Repos
+
+A new exception hierarchy is created based from Exception to represent
+workspace specific exceptions",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-17 18:58:39+00:00,0,2015-11-17 18:58:39+00:00,0,True,False,['workspace.py'],['9a1300bc07fd5d9066652075436e2bf4003038d9'],7,32,39,1,1.0,1.0,0.6
+5e883f56683af559c6447808fb317bf03fa85f24,"Add design doc in the docstring of hubsync/sync.py
+
+Explanation about some design choices",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-17 18:59:51+00:00,0,2015-11-17 18:59:51+00:00,0,True,False,['sync.py'],['a8f61974182dc7ae5cb5a4668dfab836e23aacc5'],1,10,11,1,,,
+1e572b33e958a655e3a8245e648482b00d393bfb,Add workspace unit tests,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-17 19:00:36+00:00,0,2015-11-17 19:00:36+00:00,0,True,False,['workspace_tests.py'],['5e883f56683af559c6447808fb317bf03fa85f24'],0,88,88,1,1.0,1.0,0.92
+5d186f78998a8b407b970f18fa3565c73b4d4d4f,"Reformat project code
+
+Automatic reformat of the code using Pycharm tool",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-17 19:06:55+00:00,0,2015-11-17 19:06:55+00:00,0,True,False,"['README.rst', 'hubsync', 'github.py', 'sync.py', 'workspace.py', 'setup.py', 'github_test.py', 'workspace_tests.py']",['1e572b33e958a655e3a8245e648482b00d393bfb'],21,36,57,8,1.0,1.0,0.0
+6eda3e4b7b56fa6b3cc8b1ed5592b4f8137618ab,Read default api arguments from home config file,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-18 21:06:38+00:00,0,2015-11-18 21:06:38+00:00,0,True,False,['hubsync'],['5d186f78998a8b407b970f18fa3565c73b4d4d4f'],6,22,28,1,,,
+66293da42d8c6ab8cf96049d6b3aea13ef8678e9,Fix typo in test dependencies for setup.py,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-21 10:16:29+00:00,0,2015-11-21 10:16:29+00:00,0,True,False,['setup.py'],['6eda3e4b7b56fa6b3cc8b1ed5592b4f8137618ab'],1,1,2,1,,,
+f17cc72c297f233ae0c775f8cb571bd3fa503c1f,Display defaults in command line help,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-21 10:33:02+00:00,0,2015-11-21 10:33:02+00:00,0,True,False,['hubsync'],['66293da42d8c6ab8cf96049d6b3aea13ef8678e9'],1,3,4,1,,,
+5abfcfe6ea0b56f4966b77b0d8b04bd2fd00ea23,"Add workspace path option to the prompt and config file
+
+Closes #2",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-21 10:39:30+00:00,0,2015-11-21 10:39:30+00:00,0,True,False,"['hubsync', 'setup.py']",['f17cc72c297f233ae0c775f8cb571bd3fa503c1f'],7,15,22,2,,,
+014d49c7a5c2bf517be367695c58bb864cf5ca60,Add .venv to gitignore,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-21 10:59:43+00:00,0,2015-11-21 10:59:43+00:00,0,True,False,['.gitignore'],['5abfcfe6ea0b56f4966b77b0d8b04bd2fd00ea23'],1,2,3,1,,,
+c299ccb5a680f7112eaccdda3aa1135b805af161,Improve error report when bad credentials,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-21 14:30:23+00:00,0,2015-11-21 14:30:23+00:00,0,True,False,['hubsync'],['014d49c7a5c2bf517be367695c58bb864cf5ca60'],1,10,11,1,,,
+e392dc133e8859403f4c85bb510651cf8bb7e1c2,"Support for custom repo/org shell commands
+
+Support to add pre/post hook within repos and organization to fully
+customize the actions to be taken for each with them.
+
+Closes #8",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-22 19:44:54+00:00,0,2015-11-23 20:41:08+00:00,0,True,False,"['hubsync', 'sync.py']",['c299ccb5a680f7112eaccdda3aa1135b805af161'],4,20,24,2,0.5,0.5,0.125
+3b6aa5573a4db4e6ce835c91b86dbd8c73e5c5eb,"Create a broad sync method for SyncHelper
+
+New method that takes a workspace and api object instead of the list or
+organizations in them.",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-22 20:48:00+00:00,0,2015-11-23 20:41:56+00:00,0,True,False,"['hubsync', 'sync.py']",['e392dc133e8859403f4c85bb510651cf8bb7e1c2'],4,6,10,2,1.0,1.0,0.0
+752253f1fe2df1fe45661a5a36ebeb877448f61c,"Add integration tests
+
+Added integration tests by running them in a temp folder and mocking the
+messages received from the requests send to github",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-23 20:39:39+00:00,0,2015-11-23 20:41:56+00:00,0,True,False,"['sync.py', '__init__.py', 'sanity_test.py']",['3b6aa5573a4db4e6ce835c91b86dbd8c73e5c5eb'],1,101,102,3,0.6666666666666666,1.0,1.0
+f243d231a9fb4463b25ba1532aed205943705194,"Make pre and post single commands
+
+We cannot use lists as config files have no support for list. An option
+can be to use yaml config files instead of the plain python config files",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-23 21:33:18+00:00,0,2015-11-23 21:33:21+00:00,0,True,False,"['hubsync', 'sync.py', 'sanity_test.py']",['752253f1fe2df1fe45661a5a36ebeb877448f61c'],4,37,41,3,0.0,1.0,1.0
+c4ad88eb29de4ba255c26feb72d272f2f82bfbf9,Bump version in setup.py,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-23 21:35:38+00:00,0,2015-11-23 21:35:38+00:00,0,True,False,['setup.py'],['f243d231a9fb4463b25ba1532aed205943705194'],1,1,2,1,,,
+7eac6e89590695540496b5fe8091205c7648e2d4,"Fix bug when creating a local org folder
+
+When creating an org the base path parameter was missing.
+A small refactor was required",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-23 21:54:13+00:00,0,2015-11-23 21:54:13+00:00,0,True,False,['sync.py'],['c4ad88eb29de4ba255c26feb72d272f2f82bfbf9'],19,16,35,1,0.0,0.0,1.0
+60d939a844c175a2d5f0c48752c3d30e4c1b025c,Add .travis.yml for travis integration,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-23 21:58:38+00:00,0,2015-11-23 22:33:44+00:00,0,True,False,"['.travis.yml', 'README.rst', 'requirements.txt', 'sanity_test.py']",['7eac6e89590695540496b5fe8091205c7648e2d4'],4,20,24,4,,,
+9cbbc6610e17f5c94fabbaf6722f3cf8a573d9af,"Python 3 support
+
+- Some minor issues
+- Fix Config Parser import
+- Reimplement zip_pairs",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-23 22:16:47+00:00,0,2015-11-23 23:29:56+00:00,0,True,False,"['hubsync', 'sync.py', 'sanity_test.py', 'github_test.py', 'sync_test.py']",['60d939a844c175a2d5f0c48752c3d30e4c1b025c'],20,77,97,5,1.0,0.8378378378378378,0.8378378378378378
+0748024804dc0a636feb2f3be331c011ddcbe225,"Move to new travis infrastructure
+
+See https://docs.travis-ci.com/user/migrating-from-legacy/",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-23 23:32:18+00:00,0,2015-11-23 23:32:23+00:00,0,True,False,['.travis.yml'],['9cbbc6610e17f5c94fabbaf6722f3cf8a573d9af'],1,5,6,1,,,
+4de15350805e9f6c230267c80fa25c905dfb0f0b,Update CONTRIBUTING.md,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-23 23:40:01+00:00,0,2015-11-23 23:40:01+00:00,0,True,False,['CONTRIBUTING.md'],['0748024804dc0a636feb2f3be331c011ddcbe225'],3,3,6,1,,,
+a3ef748ffea38f518636b70e2b065b3dcf45e187,Add coveralls to the travis build,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-25 23:24:22+00:00,0,2015-11-25 23:25:06+00:00,0,True,False,['.travis.yml'],['4de15350805e9f6c230267c80fa25c905dfb0f0b'],0,4,4,1,,,
+b588b45f593299c6677b552432cd618397910c99,Update for new version,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-25 23:32:09+00:00,0,2015-11-25 23:32:09+00:00,0,True,False,"['README.rst', 'setup.py']",['a3ef748ffea38f518636b70e2b065b3dcf45e187'],4,10,14,2,,,
+c888684a3545a25ac09ca658b5c6fceb777dea49,Add some more guidelines for contributing,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-26 20:36:35+00:00,0,2015-11-26 20:36:35+00:00,0,True,False,"['CONTRIBUTING.md', 'README.rst']",['b588b45f593299c6677b552432cd618397910c99'],2,6,8,2,,,
+e85bdfb2a3b38ffbd1b7b42289ae764ff4ed5805,"Extract all config related functionality into a module
+
+Move all config related definition and defaults to a config module which
+will hold all the logic about how to extract the config, defaults, etc
+in a structured way",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-26 22:14:00+00:00,0,2015-11-26 22:14:00+00:00,0,True,False,"['hubsync', 'config.py', 'sync.py', 'requirements.txt', 'setup.py', 'sanity_test.py', 'config_test.py']",['c888684a3545a25ac09ca658b5c6fceb777dea49'],46,155,201,7,1.0,1.0,0.8387096774193549
+47076ad24664e140ce104a11a2845395ae40da27,Fix bug when matching using izip pairs,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-28 22:01:27+00:00,0,2015-11-28 22:01:27+00:00,0,True,False,"['hubsync', 'sync.py', 'sync_test.py']",['e85bdfb2a3b38ffbd1b7b42289ae764ff4ed5805'],9,21,30,3,1.0,1.0,1.0
+74a33076b1618358c102471aa8b1423932be8d3a,"Add option to supress interactive mode
+
+This option will allow to disable prompting the user, which will be
+really handy for integration testing",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-28 22:01:59+00:00,0,2015-11-28 22:02:04+00:00,0,True,False,"['config.py', 'sync.py']",['47076ad24664e140ce104a11a2845395ae40da27'],12,34,46,2,0.9333333333333333,0.9333333333333333,0.6
+1ed303728615c84a3e034ee4bf49ad17f34f0b6a,Release 0.1.9,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-28 22:04:30+00:00,0,2015-11-28 22:04:30+00:00,0,True,False,['setup.py'],['74a33076b1618358c102471aa8b1423932be8d3a'],1,1,2,1,,,
+e996937189db32784ab9d7a369b86256cd478360,Bump minor version,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-28 22:04:51+00:00,0,2015-11-28 22:06:21+00:00,0,True,False,"['sync.py', 'setup.py']",['1ed303728615c84a3e034ee4bf49ad17f34f0b6a'],2,3,5,2,,,
+f7d452dded42cf330a0118622dbfc0d979205350,Bugfix when comparing repo names,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-28 22:09:34+00:00,0,2015-11-28 22:09:34+00:00,0,True,False,['sync.py'],['e996937189db32784ab9d7a369b86256cd478360'],1,1,2,1,,,
+7f869e4752e25f9144bc8280c6457881bea96f06,"Dont promp to clone repo/org locally
+
+It makes no sense to annoy the user when the main purpose of the script
+is to clone stuff locally. We can add in the future a feature to ignore
+repos and orgs",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-30 21:08:04+00:00,0,2015-11-30 21:08:04+00:00,0,True,False,['sync.py'],['f7d452dded42cf330a0118622dbfc0d979205350'],17,7,24,1,1.0,1.0,1.0
+7d570c10808b5761d994a65b663d99bdabaf1b12,Refactor removing local stale repos/orgs,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-30 22:38:27+00:00,0,2015-11-30 22:38:27+00:00,0,True,False,['sync.py'],['7f869e4752e25f9144bc8280c6457881bea96f06'],18,13,31,1,0.75,0.0,1.0
+f22cf695f8c1300fe05c251eb54aa7d82cd412f3,Ensure the release part of the context manager is always run,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-30 22:40:56+00:00,0,2015-11-30 22:40:56+00:00,0,True,False,['sync.py'],['7d570c10808b5761d994a65b663d99bdabaf1b12'],4,8,12,1,1.0,1.0,1.0
+7894917223f940cf5717317821150a76e5bab2ff,Fix cloning of repos,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-11-30 22:56:03+00:00,0,2015-11-30 23:13:15+00:00,0,True,False,"['sync.py', 'setup.py', 'sanity_test.py']",['f22cf695f8c1300fe05c251eb54aa7d82cd412f3'],4,51,55,3,0.1388888888888889,1.0,0.1388888888888889
+1e30a5b535c3de47e245088789323a95cd6dab2e,Add function to get user repositories,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-02 23:29:45+00:00,0,2015-12-02 23:31:45+00:00,0,True,False,"['github.py', 'github_test.py']",['7894917223f940cf5717317821150a76e5bab2ff'],0,54,54,2,0.3333333333333333,1.0,1.0
+9073ab3845df33615d23a5cb1c52d849283f15ce,"Add option to clone users repository
+
+Add an option in the config file to clone the user's repos
+Closes #15",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-02 23:50:46+00:00,0,2015-12-03 00:41:33+00:00,0,True,False,"['config.py', 'github.py', 'sync.py', 'setup.py', 'sanity_test.py', 'github_test.py']",['1e30a5b535c3de47e245088789323a95cd6dab2e'],6,59,65,6,0.8974358974358975,1.0,0.8974358974358975
+fa28919d3d968fead742138484fcc81a6fca46d4,Add tests for hubsync.sync.yesno_as_boolean,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-03 00:45:17+00:00,0,2015-12-03 00:56:31+00:00,0,True,False,['sync_test.py'],['9073ab3845df33615d23a5cb1c52d849283f15ce'],0,8,8,1,1.0,1.0,1.0
+11d8bcee4249f0c961f8a3aa213f47af2f711386,Add config file info to README,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-03 00:54:11+00:00,0,2015-12-03 01:16:00+00:00,0,True,False,['README.rst'],['fa28919d3d968fead742138484fcc81a6fca46d4'],0,17,17,1,,,
+a9a38c28dd97e087960f61e673df188f3d69c469,Add logging option to the script to ease debug,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-05 12:31:15+00:00,0,2015-12-05 12:31:15+00:00,0,True,False,"['hubsync', 'github.py']",['11d8bcee4249f0c961f8a3aa213f47af2f711386'],1,18,19,2,1.0,1.0,1.0
+6d764cf6f3bb3a08f7191fb5db9fbccda26f48cb,"Create forks for organizations
+
+Add an option automatically create forks and and the remote for it for
+the repos in orgs that an user belongs to.
+
+Closes #17",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-05 21:58:35+00:00,0,2015-12-05 21:58:35+00:00,0,True,False,"['config.py', 'github.py', 'sync.py', 'sanity_test.py', 'github_test.py']",['a9a38c28dd97e087960f61e673df188f3d69c469'],5,45,50,5,0.21212121212121213,0.3333333333333333,0.8484848484848485
+82da22d0c0c4a48fda80f3e204a6bb655b0759b4,"Dont disable push for the repos that the user owns
+
+Push will be diabled for the repos an unser dont not own and upstream
+wont be created as it makes no sense",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-05 22:05:14+00:00,0,2015-12-05 22:05:14+00:00,0,True,False,['sync.py'],['6d764cf6f3bb3a08f7191fb5db9fbccda26f48cb'],9,12,21,1,0.0,0.0,1.0
+e265049115721102a4ccb747d9393e09e57abaa2,Add travis config to report coverage results to codecov,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-05 22:13:22+00:00,0,2015-12-05 22:13:22+00:00,0,True,False,['.travis.yml'],['82da22d0c0c4a48fda80f3e204a6bb655b0759b4'],1,4,5,1,,,
+717f5cac17997bb39bffbc82e91c0881a463b2e6,"Add script to capture github req/res
+
+Closes #16",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-06 15:21:01+00:00,0,2015-12-06 15:21:01+00:00,0,True,False,['capture_gh_api.py'],['e265049115721102a4ccb747d9393e09e57abaa2'],0,98,98,1,0.06779661016949153,0.5932203389830508,0.5254237288135594
+90954624b41d387722e3ee3f0212550abcd107ad,"Cache request to get user details
+
+This request is being sent to often as we just need the user name.
+Caching it improves the execution time",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-08 00:30:15+00:00,0,2015-12-08 00:30:15+00:00,0,True,False,"['github.py', 'sync.py']",['717f5cac17997bb39bffbc82e91c0881a463b2e6'],5,8,13,2,1.0,1.0,0.6666666666666666
+13e92134148c7408e1ac30b26ebcc052118cbe66,Add recorder github test,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-08 00:31:15+00:00,0,2015-12-08 00:31:15+00:00,0,True,False,"['capture_gh_api.py', 'gh_responses.py', 'recorded_gh_test.py', 'sanity_test.py']",['90954624b41d387722e3ee3f0212550abcd107ad'],10,51790,51800,4,0.030303030303030304,0.9393939393939394,0.9090909090909091
+96e24bbeede7e532b6be5483dc2383892bbb73de,bump version,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-08 00:42:13+00:00,0,2015-12-08 00:42:13+00:00,0,True,False,['setup.py'],['13e92134148c7408e1ac30b26ebcc052118cbe66'],1,1,2,1,,,
+d2bd37a569e88a0f6bb3b99a28a990ecfeb6bf6c,Add option to match orgs/repos ignoring case,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-09 21:20:50+00:00,0,2015-12-09 21:21:06+00:00,0,True,False,"['config.py', 'github.py', 'sync.py', 'setup.py']",['96e24bbeede7e532b6be5483dc2383892bbb73de'],6,13,19,4,0.0,1.0,0.3333333333333333
+1646f1688df122e7fbc0bff0711065fb1188a3ec,Fix integration captured tests,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-09 22:22:05+00:00,0,2015-12-09 22:22:05+00:00,0,True,False,"['github.py', 'capture_gh_api.py', 'captured_gh_tests.py', 'gh_responses.pickle', 'gh_responses.py', 'recorded_gh_test.py']",['d2bd37a569e88a0f6bb3b99a28a990ecfeb6bf6c'],51744,71,51815,6,0.37142857142857144,1.0,1.0
+127e76343ff25fd8845b714cdf9f53979c40b7cf,Minor fixes in the doc,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-09 22:45:07+00:00,0,2015-12-09 22:45:07+00:00,0,True,False,"['README.rst', 'config.py']",['1646f1688df122e7fbc0bff0711065fb1188a3ec'],4,6,10,2,,,
+5276616633a36d7e30965c7ce5d3faa5f95f6852,Fix captured tests in python3,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-09 22:51:13+00:00,0,2015-12-09 23:15:15+00:00,0,True,False,"['capture_gh_api.py', 'captured_gh_tests.py', 'gh_responses.pickle']",['127e76343ff25fd8845b714cdf9f53979c40b7cf'],4,5,9,3,,,
+04cc3a61a0f84ecfd0a826e5530360fa5c1fa259,"Include config options in the README file
+
+Closes #10",Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-10 22:24:19+00:00,0,2015-12-10 22:32:41+00:00,0,True,False,"['README.rst', 'config.py']",['5276616633a36d7e30965c7ce5d3faa5f95f6852'],3,47,50,2,,,
+3552740f5b2306d14a024017a4d76d399cae48b3,Pull origin instead of just fetching,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-10 23:07:11+00:00,0,2015-12-11 00:14:43+00:00,0,True,False,"['sync.py', 'setup.py']",['04cc3a61a0f84ecfd0a826e5530360fa5c1fa259'],3,6,9,2,1.0,1.0,1.0
+5489f33236f56fd670e093a387ed3df90ec1cb80,Fix boolean parsin form config file,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-12 14:50:13+00:00,0,2015-12-12 14:52:22+00:00,0,True,False,"['config.py', 'setup.py']",['3552740f5b2306d14a024017a4d76d399cae48b3'],3,10,13,2,1.0,1.0,0.0
+c2902da2cad69ff66df91fbe150238bac484c3fa,Set upstream only on org repos,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-12 14:56:00+00:00,0,2015-12-12 14:56:17+00:00,0,True,False,"['README.rst', 'sync.py', 'setup.py']",['5489f33236f56fd670e093a387ed3df90ec1cb80'],3,4,7,3,1.0,1.0,0.0
+d1c43df76c381147cd176afc1e1c5eb03366e3d4,Set fork remote for all repos in orgs,Mario Corchero,mariocj89@gmail.com,Mario Corchero,mariocj89@gmail.com,2015-12-12 17:37:47+00:00,0,2015-12-12 17:38:04+00:00,0,True,False,"['sync.py', 'setup.py']",['c2902da2cad69ff66df91fbe150238bac484c3fa'],4,2,6,2,1.0,1.0,0.0

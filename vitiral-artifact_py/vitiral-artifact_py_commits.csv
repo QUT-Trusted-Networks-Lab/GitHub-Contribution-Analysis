@@ -1,0 +1,131 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+904e4214424aa32190b1a1efe73e959c4b13fea4,initial commit,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 08:33:23-07:00,25200,2019-07-19 08:33:23-07:00,25200,True,False,"['.gitignore', 'LICENSE-APACHE', 'LICENSE-MIT', 'Makefile', 'README.md', '__init__.py', '__main__.py', 'artifact.py', 'completion.py', 'name.py', 'utils.py', 'requirements.txt', '__init__.py']",[],0,252,252,13,1.0,1.0,0.5081967213114754
+06364a9faada15d65ce0591e8887fd0d6227779f,Add settings and other classes,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 09:36:11-07:00,25200,2019-07-19 09:36:20-07:00,25200,True,False,"['README.md', '__init__.py', 'settings.py', 'utils.py', 'simple.md', 'test_utils.py']",['904e4214424aa32190b1a1efe73e959c4b13fea4'],4,108,112,6,1.0,1.0,0.6382978723404256
+3e2d70004fc7181a5503336e9928d4a14b8766d1,add test for basic settings,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 10:25:42-07:00,25200,2019-07-19 10:25:42-07:00,25200,True,False,"['artifact.py', 'load.py', 'name.py', 'project.py', 'settings.py', 'utils.py', 'simple.md', 'simple.yml', 'empty', 'test_files.py', 'test_utils.py']",['06364a9faada15d65ce0591e8887fd0d6227779f'],4,113,117,11,1.0,1.0,0.8888888888888888
+02bbc3ced39101228e6968904c86ac17a3ea9532,fix code,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 11:19:31-07:00,25200,2019-07-19 11:19:31-07:00,25200,True,False,"['Makefile', '__init__.py', 'artifact.py', 'completion.py', 'load.py', 'name.py', 'settings.py', 'utils.py', 'test_files.py']",['3e2d70004fc7181a5503336e9928d4a14b8766d1'],40,52,92,9,1.0,1.0,0.3333333333333333
+80edec6df75f69f15786cc025824c965b640f8fb,WIP loading artifacts,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 12:54:27-07:00,25200,2019-07-19 12:54:27-07:00,25200,True,False,"['artifact.py', 'load.py', 'name.py', 'project.py', 'requirements.txt']",['02bbc3ced39101228e6968904c86ac17a3ea9532'],29,118,147,5,0.6470588235294118,1.0,0.8235294117647058
+253228c7c7eb7ac3ecd2e0912d761fdc4118946a,basic artifact loading,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 13:10:36-07:00,25200,2019-07-19 13:10:36-07:00,25200,True,False,"['artifact.py', 'project.py', 'settings.py', 'utils.py', 'simple.md', 'simple.yml']",['80edec6df75f69f15786cc025824c965b640f8fb'],18,63,81,6,1.0,1.0,1.0
+baab2742eefd55968d58afb508ee2098f9471da4,fix name,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 13:44:03-07:00,25200,2019-07-19 13:44:03-07:00,25200,True,False,"['Makefile', 'artifact.py', 'load.py', 'name.py', 'utils.py', 'requirements.txt', 'test_name.py']",['253228c7c7eb7ac3ecd2e0912d761fdc4118946a'],12,59,71,7,1.0,0.6333333333333333,1.0
+0b2afc2f1ddef6ce06c3660a977375cb1188b461,calculate parts,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 15:10:36-07:00,25200,2019-07-19 15:10:36-07:00,25200,True,False,"['artifact.py', 'completion.py', 'load.py', 'name.py', 'settings.py', 'utils.py', 'simple.md', 'simple.yml', 'test_name.py']",['baab2742eefd55968d58afb508ee2098f9471da4'],25,95,120,9,1.0,0.9459459459459459,0.7567567567567568
+57342d7d3a91e9568f55d3c459776bf9231694a2,python2 failing,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 15:26:36-07:00,25200,2019-07-19 15:26:36-07:00,25200,True,False,"['artifact.py', 'completion.py', 'name.py', 'project.py', 'settings.py', 'utils.py']",['0b2afc2f1ddef6ce06c3660a977375cb1188b461'],26,59,85,6,1.0,1.0,0.7142857142857143
+0590a6161e2d86df95a6425fdf711de9882d8f3f,keep order of artifacts,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 15:50:54-07:00,25200,2019-07-19 15:50:58-07:00,25200,True,False,"['Makefile', 'artifact.py', 'completion.py', 'load.py', 'name.py', 'project.py', 'settings.py', 'utils.py', 'test_files.py']",['57342d7d3a91e9568f55d3c459776bf9231694a2'],7,37,44,9,1.0,1.0,1.0
+51594d305ff301c9f5281de8c8e1ce1aad4afb52,add license header,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 15:53:00-07:00,25200,2019-07-19 15:53:00-07:00,25200,True,False,"['__init__.py', 'artifact.py', 'completion.py', 'load.py', 'name.py', 'project.py', 'settings.py', 'utils.py']",['0590a6161e2d86df95a6425fdf711de9882d8f3f'],0,132,132,8,1.0,1.0,1.0
+fefa99eaf20cdbc97fe3be30895952eea1b0f4f4,"Graph skeleton, need to work on code reading first",Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 16:44:18-07:00,25200,2019-07-19 18:42:49-07:00,25200,True,False,"['code.py', 'completion.py', 'load.py', 'name.py', 'test_name.py']",['51594d305ff301c9f5281de8c8e1ce1aad4afb52'],19,191,210,5,1.0,1.0,0.9166666666666666
+1376d807216bf5b80ecd827eb319b57d48ce7d0a,read code links,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 17:15:19-07:00,25200,2019-07-19 18:43:17-07:00,25200,True,False,"['Makefile', 'artifact.py', 'code.py', 'completion.py', 'load.py', 'name.py', 'settings.py', 'utils.py', 'simple.yml', 'README.md', 'expected.yml', 'script.py', 'deep.py', 'exclude.py', 'ignore.py', 'simple.py', 'test_code.py', 'test_files.py']",['fefa99eaf20cdbc97fe3be30895952eea1b0f4f4'],28,329,357,18,0.3125,0.875,0.4140625
+f38a73075d9d7b19f962cd506234769ab1d53e6d,fix,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 19:02:21-07:00,25200,2019-07-19 19:02:21-07:00,25200,True,False,"['artifact.py', 'code.py', 'load.py', 'name.py', 'settings.py', 'test_code.py', 'test_name.py']",['1376d807216bf5b80ecd827eb319b57d48ce7d0a'],77,63,140,7,0.3157894736842105,0.3157894736842105,0.9736842105263158
+56cd2353318e120de24fd42f13fddfb692410627,WIP wired it all together,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 20:07:38-07:00,25200,2019-07-19 20:07:38-07:00,25200,True,False,"['artifact.py', 'completion.py', 'load.py']",['f38a73075d9d7b19f962cd506234769ab1d53e6d'],58,32,90,3,0.0,0.0,1.0
+3fa8ccf54476185b0fac576dfce6a34b7b29dccc,implemented completion calculations,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 20:24:04-07:00,25200,2019-07-19 20:24:04-07:00,25200,True,False,"['artifact.py', 'completion.py', 'load.py', 'simple.yml', 'expected.yml']",['56cd2353318e120de24fd42f13fddfb692410627'],47,30,77,5,0.0,0.0,0.23076923076923078
+a49dbb9c598115822a467483e3ec1ab318c7a33b,nearly done with dump,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 21:09:51-07:00,25200,2019-07-19 21:09:51-07:00,25200,True,False,"['Makefile', 'artifact.py', 'dump.py', 'project.py', 'settings.py']",['3fa8ccf54476185b0fac576dfce6a34b7b29dccc'],1,107,108,5,1.0,1.0,0.6197183098591549
+d85e75e2f2710d1d250e8325be23edd594f288a7,still having issues with dump,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 21:34:52-07:00,25200,2019-07-19 21:34:52-07:00,25200,True,False,"['artifact.py', 'dump.py', 'load.py', 'project.py', 'settings.py', 'utils.py', 'dump.md', 'test_files.py']",['a49dbb9c598115822a467483e3ec1ab318c7a33b'],28,82,110,8,0.0,1.0,1.0
+5b1e5745372657292a95555f78ffbf2a6f5e325f,"dump is almost working, no references exist",Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 21:42:41-07:00,25200,2019-07-19 21:42:41-07:00,25200,True,False,['dump.md'],['d85e75e2f2710d1d250e8325be23edd594f288a7'],1,0,1,1,,,
+1c9b518ba745edd242072d238f4e3838b14d705d,"dump is almost working, no references exist",Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 21:43:16-07:00,25200,2019-07-19 21:43:16-07:00,25200,True,False,['dump.py'],['5b1e5745372657292a95555f78ffbf2a6f5e325f'],0,1,1,1,0.0,1.0,1.0
+bcdabacbd4467d3d0024ee4934541f888bc48212,dumping links like a champ,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 22:14:52-07:00,25200,2019-07-19 22:14:52-07:00,25200,True,False,"['dump.py', 'settings.py', 'simple.yml', 'README.md', 'dump.md', 'expected.yml']",['1c9b518ba745edd242072d238f4e3838b14d705d'],5,37,42,6,0.9230769230769231,0.0,0.7692307692307693
+e4e9345de717ad807510466f3fc88dcc056ac233,actually add extra attributes,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 22:28:11-07:00,25200,2019-07-19 22:28:11-07:00,25200,True,False,"['artifact.py', 'load.py', 'settings_bottom.md', 'settings_bottom.yml', 'simple.yml', 'expected.yml']",['bcdabacbd4467d3d0024ee4934541f888bc48212'],0,82,82,6,0.6470588235294118,0.0,0.8235294117647058
+627c06e1c2477e251f12c1713826165bef581ba1,work out some bugs,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 22:50:55-07:00,25200,2019-07-19 22:50:55-07:00,25200,True,False,"['load.py', 'extra_attributes.md', 'extra_attributes.yml', 'settings_bottom.md', 'settings_bottom.yml', 'test_files.py']",['e4e9345de717ad807510466f3fc88dcc056ac233'],8,75,83,6,1.0,1.0,1.0
+0049160a35c80fb45c3493153339854afd274197,py2 is failing on calculating the spc,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 23:09:54-07:00,25200,2019-07-19 23:09:54-07:00,25200,True,False,"['artifact.py', 'load.py', 'settings.py', 'utils.py']",['627c06e1c2477e251f12c1713826165bef581ba1'],14,56,70,4,0.1,1.0,0.0
+d9a5bfc7e26b361208ca29b9f38740e1f4a21691,fix py2 division issue,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 23:10:51-07:00,25200,2019-07-19 23:10:51-07:00,25200,True,False,"['completion.py', 'load.py']",['0049160a35c80fb45c3493153339854afd274197'],2,2,4,2,,,
+d9110f2b7d774c09ec1beecf33c9d1b2516abc29,cmdline tools,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-19 23:58:17-07:00,25200,2019-07-19 23:58:17-07:00,25200,True,False,"['__init__.py', 'artifact.py', 'load.py', 'project.py', 'utils.py']",['d9a5bfc7e26b361208ca29b9f38740e1f4a21691'],22,118,140,5,0.0,0.0,0.9710144927536232
+57435d1e20b9e186691b1209e298ac0caafb9fce,"Wow, this is a great tool",Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-20 00:14:59-07:00,25200,2019-07-20 00:14:59-07:00,25200,True,False,"['README.md', 'artifact.py']",['d9110f2b7d774c09ec1beecf33c9d1b2516abc29'],1,65,66,2,,,
+b50b736eb2ba4edef05d4e9f2bfb3e4846b1fa36,I think I know what's wrong,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-20 00:57:20-07:00,25200,2019-07-20 00:57:20-07:00,25200,True,False,"['Makefile', 'README.md', '__init__.py', 'README.md', 'expected.yml']",['57435d1e20b9e186691b1209e298ac0caafb9fce'],2,19,21,5,0.0,0.0,1.0
+e8cb049a83844289a7dc7cc2fc9517d61ce415af,"slightly better, still way too many spaces",Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-20 01:00:26-07:00,25200,2019-07-20 01:00:26-07:00,25200,True,False,"['README.md', 'code.py', 'dump.py', 'test_code.py']",['b50b736eb2ba4edef05d4e9f2bfb3e4846b1fa36'],7,12,19,4,,,
+812989fba98119d01704511d09194252198a45a6,fix minor issues,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-20 12:35:01-07:00,25200,2019-07-20 12:35:01-07:00,25200,True,False,"['README.md', '__init__.py', 'artifact.py', 'dump.py', 'utils.py', 'README.md', 'dump.md', 'expected.yml']",['e8cb049a83844289a7dc7cc2fc9517d61ce415af'],30,62,92,8,0.32,0.8,1.0
+f15c9ad5a5a20cc1662c2d755ac326ac4e96430e,Major refactor: remove text attribute and do significant cleanup.,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-20 12:40:09-07:00,25200,2019-07-22 08:19:42-07:00,25200,True,False,"['README.md', '__init__.py', 'artifact.py', 'completion.py', 'dump.py', 'load.py', 'project.py', 'extra_attributes.yml', 'settings_bottom.yml', 'simple.yml', 'expected.yml', 'test_files.py']",['812989fba98119d01704511d09194252198a45a6'],270,176,446,12,1.0,1.0,1.0
+df8407b362d83227e57928665171eb1a551c9024,final cleanup,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-21 23:05:10-07:00,25200,2019-07-22 08:20:23-07:00,25200,True,False,"['README.md', 'code.py', 'settings.py']",['f15c9ad5a5a20cc1662c2d755ac326ac4e96430e'],0,39,39,3,,,
+3488b96c417bbb281ebc1af3a68f3c2aa0a1443c,update README,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-22 08:19:11-07:00,25200,2019-07-22 08:20:23-07:00,25200,True,False,['README.md'],['df8407b362d83227e57928665171eb1a551c9024'],13,93,106,1,,,
+56bebb1160695936f49b50d23181a4fabe6891d2,add last implemented links,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-22 08:22:06-07:00,25200,2019-07-22 08:22:06-07:00,25200,True,False,"['README.md', '__init__.py']",['3488b96c417bbb281ebc1af3a68f3c2aa0a1443c'],1,7,8,2,,,
+047517ee4f7e591314b520d184c7ff940ecc0d7e,experimenting,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-22 09:09:43-07:00,25200,2019-07-22 09:09:43-07:00,25200,True,False,['README.md'],['56bebb1160695936f49b50d23181a4fabe6891d2'],20,29,49,1,,,
+378a7e725f175743702db1db4ee5b08b46211ea2,update README links to use html anchors,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-22 09:44:20-07:00,25200,2019-07-22 09:46:51-07:00,25200,True,False,['README.md'],['047517ee4f7e591314b520d184c7ff940ecc0d7e'],13,17,30,1,,,
+6127a65e8abdeb6713ff22abb79d140dccbd7c59,use correct code_url,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-22 09:48:30-07:00,25200,2019-07-22 09:49:09-07:00,25200,True,False,['README.md'],['378a7e725f175743702db1db4ee5b08b46211ea2'],5,5,10,1,,,
+7ccb0eb516965d3bc8d691aad7bf26c24666c534,--no-edit,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-22 09:49:41-07:00,25200,2019-07-22 09:49:41-07:00,25200,True,False,['README.md'],['6127a65e8abdeb6713ff22abb79d140dccbd7c59'],4,4,8,1,,,
+e61ed1aa783faefba477dd8236c59211e7b7b573,use correct line number,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-22 09:51:05-07:00,25200,2019-07-22 09:51:05-07:00,25200,True,False,"['README.md', 'dump.py', 'dump.md']",['7ccb0eb516965d3bc8d691aad7bf26c24666c534'],10,10,20,3,,,
+8462d93f9a44468959103121e981030efd826824,fix references and add binary script,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-22 10:03:52-07:00,25200,2019-07-22 10:17:57-07:00,25200,True,False,"['.gitignore', 'Makefile', 'README.md', 'artifact_py', 'dump.py', 'requirements.txt', 'setup.py', 'dump.md']",['e61ed1aa783faefba477dd8236c59211e7b7b573'],27,128,155,8,1.0,1.0,1.0
+3c3c0fe82d0f50128fa8e12b70531589dcc81c39,minor fix,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-22 10:20:08-07:00,25200,2019-07-22 10:20:08-07:00,25200,True,False,['README.md'],['8462d93f9a44468959103121e981030efd826824'],1,0,1,1,,,
+f360a55e32fd6cc41c6461334528d0849d36ec15,update README for contributing,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-26 19:13:04-07:00,25200,2019-07-26 19:13:04-07:00,25200,True,False,['README.md'],['3c3c0fe82d0f50128fa8e12b70531589dcc81c39'],0,16,16,1,,,
+a7efa7a3a6a657bccf7aa2ba3683efbb897f31e2,minor readme fix,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-26 19:15:15-07:00,25200,2019-07-26 19:15:15-07:00,25200,True,False,['README.md'],['f360a55e32fd6cc41c6461334528d0849d36ec15'],2,0,2,1,,,
+f8e0dc45a366160daba958113c432b7ed0175716,add python difference,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-26 19:16:22-07:00,25200,2019-07-26 19:16:22-07:00,25200,True,False,['README.md'],['a7efa7a3a6a657bccf7aa2ba3683efbb897f31e2'],0,2,2,1,,,
+99c732613172930cff39204acc3a04292f75e8fd,add inline reference links,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-26 19:24:52-07:00,25200,2019-07-26 19:27:01-07:00,25200,True,False,"['README.md', 'dump.py', 'dump.md']",['f8e0dc45a366160daba958113c432b7ed0175716'],9,39,48,3,0.5,0.5,0.8125
+6b561b9dd08baaa79a864ea340bce4b692851750,make fix,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-26 19:27:29-07:00,25200,2019-07-26 19:27:29-07:00,25200,True,False,"['README.md', 'dump.py']",['99c732613172930cff39204acc3a04292f75e8fd'],6,12,18,2,1.0,1.0,0.0
+0d9e36828084886514642353576cec5fafed3db3,add empty code links,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-26 19:33:13-07:00,25200,2019-07-26 19:33:13-07:00,25200,True,False,['README.md'],['6b561b9dd08baaa79a864ea340bce4b692851750'],3,8,11,1,,,
+623344d93fd65c369d4e0ae909c637fb555bdf44,fix header,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-26 19:34:17-07:00,25200,2019-07-26 19:34:17-07:00,25200,True,False,['README.md'],['0d9e36828084886514642353576cec5fafed3db3'],1,1,2,1,,,
+3e8bffefed3fcb28bbadca2f8cd0ad1414b9e243,add unit tests,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-07-26 19:35:21-07:00,25200,2019-07-26 19:35:21-07:00,25200,True,False,"['README.md', '__init__.py']",['623344d93fd65c369d4e0ae909c637fb555bdf44'],0,4,4,2,,,
+c88deae4dc9e36e018a4687286c1b61ac2b01831,"#1: Fix Lint Issues
+
+Fixed up __init__ and utils submodule.
+
+__init__.py changes:
+- re-ordered __future__ import and module docstring to match standard 
+format
+- spelling fixes
+- added function docstring for fail fn
+- removed unused variable length
+- for too-many-branches lint, disabled the lint and wrote out more 
+useful description of how to deal with the smell in TODO that lint 
+detects (because it requires larger code changes to actually fix this 
+lint, outside the scope of this initial issue.)
+- renamed single letter variables, this is a controversial lint and 
+single letter variables could optionally be allowed instead by a 
+pylintrc file.
+
+utils.py changes:
+- added module docstring
+- disabled too-few-public-methods lint on the KeyCmp superclass, another 
+controversial lint which could be disabled flat-out if desired.
+- disabled unused import warning on anchor_txt to_unicode import, as the 
+import is forwarded.
+- removed superfluous else statements
+- added docstrings for all functions
+- renamed itemtype parameter for ensure_list to item_type, standard 
+style",Joshua Thompson,joshua.thompson@sera4.com,Joshua Thompson,joshua.thompson@sera4.com,2019-07-30 13:51:47-04:00,14400,2019-07-30 13:51:47-04:00,14400,True,False,"['__init__.py', 'utils.py']",['3e8bffefed3fcb28bbadca2f8cd0ad1414b9e243'],21,33,54,2,0.3333333333333333,0.3333333333333333,0.0
+ae56abc2c6cc56f96f10e1079ed5e40aaac7025d,"Fixed up name submodule.
+
+name.py changes:
+- Added module docstring
+- Added class docstrings for Name and SubPart
+- renamed ty to art_type, another controversial short-name lint which 
+could also be added to the list of allowed short-names in a pylintrc
+- Added docstrings for various methods within this file. In my opinion, 
+these docstrings for very short functions are actually nonproductive and 
+harmful, creating duplicate maintenance on future code changes. I would 
+suggest the addition of a docstring-min-length item in a pylintrc file 
+to not require docstrings on functions below a certain number of lines 
+in length (I would suggest 5 lines)",Joshua Thompson,joshua.thompson@sera4.com,Joshua Thompson,joshua.thompson@sera4.com,2019-07-30 16:42:53-04:00,14400,2019-07-30 16:42:53-04:00,14400,True,False,['name.py'],['c88deae4dc9e36e018a4687286c1b61ac2b01831'],6,17,23,1,,,
+5b33c61395312641bc4b3d3da12ade2e48721a71,Started fixing settings submodule.,Joshua Thompson,joshua.thompson@sera4.com,Joshua Thompson,joshua.thompson@sera4.com,2019-07-30 17:15:39-04:00,14400,2019-07-30 17:15:39-04:00,14400,True,False,['settings.py'],['ae56abc2c6cc56f96f10e1079ed5e40aaac7025d'],5,3,8,1,0.0,0.0,0.0
+de0ca9435a21508e8f884ea82be49347a8f874ac,"Added custom pylintrc, and pylint-exit",Joshua Thompson,joshua.thompson@sera4.com,Joshua Thompson,joshua.thompson@sera4.com,2019-08-01 10:41:41-04:00,14400,2019-08-01 10:41:41-04:00,14400,True,False,"['.pylintrc', 'Makefile', 'name.py', 'utils.py']",['5b33c61395312641bc4b3d3da12ade2e48721a71'],11,547,558,4,,,
+4fceeeebd3dc9eb93cd0364b4ea3ed60a236d805,"Completed fixing settings submodule.
+
+settings.py changes:
+- transferred pylint too-many-args warning into descriptive TODO warning
+- made settings a subclass of object
+- added docstrings",Joshua Thompson,joshua.thompson@sera4.com,Joshua Thompson,joshua.thompson@sera4.com,2019-08-01 11:19:50-04:00,14400,2019-08-01 11:19:50-04:00,14400,True,False,['settings.py'],['de0ca9435a21508e8f884ea82be49347a8f874ac'],2,5,7,1,,,
+86ce3cb333822191dee8183eba91cb6181d6ce37,"Fixed completion submodule.
+
+completion.py changes:
+- switched import/docstring order
+- removed unused imports
+- added class docstrings
+- removed unneeded else statements",Joshua Thompson,joshua.thompson@sera4.com,Joshua Thompson,joshua.thompson@sera4.com,2019-08-01 11:28:30-04:00,14400,2019-08-01 11:28:30-04:00,14400,True,False,['completion.py'],['4fceeeebd3dc9eb93cd0364b4ea3ed60a236d805'],8,6,14,1,0.0,0.0,0.0
+e79b96bedcff15faa69c21bf85b03b81d9286d45,"Fixed code submodule.
+
+code.py changes:
+- added docstrings
+- renamed shadowing variables
+- removed unused imports",Joshua Thompson,joshua.thompson@sera4.com,Joshua Thompson,joshua.thompson@sera4.com,2019-08-01 17:28:55-04:00,14400,2019-08-01 17:28:55-04:00,14400,True,False,"['.pylintrc', 'code.py']",['86ce3cb333822191dee8183eba91cb6181d6ce37'],10,15,25,2,,,
+06732ab664558be56032086840be075000cfb818,"Started fixing load submodule.
+
+load.py changes:
+- removed unused imports
+- added docstrings",Joshua Thompson,joshua.thompson@sera4.com,Joshua Thompson,joshua.thompson@sera4.com,2019-08-01 17:34:49-04:00,14400,2019-08-01 17:34:49-04:00,14400,True,False,['load.py'],['e79b96bedcff15faa69c21bf85b03b81d9286d45'],3,3,6,1,,,
+84535253e00400ffcde5b5b83d1d82d2219702e8,enable zipping all dependencies,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-08-22 20:57:28-07:00,25200,2019-08-22 20:57:28-07:00,25200,True,False,"['.gitignore', 'Makefile', 'artifact_py_local', 'setup.py']",['3e8bffefed3fcb28bbadca2f8cd0ad1414b9e243'],7,35,42,4,,,
+86063c4f1c1ea42117436dfd7553690493ab31a3,add travis,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-08-22 21:06:23-07:00,25200,2019-08-22 21:06:23-07:00,25200,True,False,['.travis.yml'],['84535253e00400ffcde5b5b83d1d82d2219702e8'],0,12,12,1,,,
+edbbd531f12c9e0e0be43906846c976b40239dba,fix #1: fix remaining minor lints,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-08-22 21:37:14-07:00,25200,2019-08-22 21:38:36-07:00,25200,True,False,"['.pylintrc', 'README.md', '__init__.py', 'artifact.py', 'dump.py', 'load.py', 'project.py', 'settings.py', 'utils.py']",['7a6ab5b7cb8a428afcdecbb2832f3e54bb585896'],47,89,136,9,1.0,1.0,1.0
+cf404a440d10e7bba85268f46861769bc88195e9,"partial #2: add lint module and lints for
+- partof links that do not exist
+- A REQ or SPC being partof a TST
+- Extra impl links in code",Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-08-22 22:03:25-07:00,25200,2019-08-23 07:41:12-07:00,25200,True,False,"['.travis.yml', 'Makefile', '__init__.py', 'artifact_py', 'code.py', 'dump.py', 'lint.py', 'load.py', 'name.py', 'README.md', 'dump.md', 'expected.yml', 'lints.yml', 'script.py', 'deep.py', 'exclude.py', 'ignore.py', 'simple.py', 'lints.yml', 'test_files.py']",['11f6c6e1792adb17fca3af5f7ef867f632d21597'],63,348,411,20,0.8795180722891566,1.0,0.3855421686746988
+41b8ce9dd06411f7171e9a4c79a5c714363128e6,"Fix #2: add remaining lints
+
+- add lint for invalid references
+- add design reference lints",Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-08-23 12:07:42-07:00,25200,2019-08-23 18:20:10-07:00,25200,True,False,"['Makefile', 'artifact.py', 'code.py', 'lint.py', 'settings.py', 'setup.py', 'README.md', 'dump.md', 'expected.yml', 'lints.yml', 'lints.yml', 'test_code.py']",['932b04d957bdde1e3757d4b6e3195adf13e9f61a'],17,134,151,12,0.6862745098039216,0.6862745098039216,1.0
+9230ff21d886019cf9e16050ae9f00b56ce7f567,fix #5: add test for done,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-08-23 18:49:51-07:00,25200,2019-08-24 12:30:03-07:00,25200,True,False,"['.travis.yml', 'Makefile', 'README.md', 'code.py', 'lint.py', 'settings.py', 'utils.py', 'README.md', 'dump.md', 'expected.yml']",['41b8ce9dd06411f7171e9a4c79a5c714363128e6'],46,88,134,10,1.0,1.0,1.0
+ad34562eb24828452e16f395b2912ac9f55f2197,update readme,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2019-08-25 11:04:52-07:00,25200,2019-08-25 11:04:52-07:00,25200,True,False,['README.md'],['1f9b4b246ab8f55442046c851d9dd0cdaa3045e5'],4,95,99,1,,,
+e547542f9188dc9142b3333e6b2d2a59a4a8e3bb,abandoned,Rett Berg,rett@google.com,Rett Berg,rett@google.com,2020-08-04 07:48:34-06:00,21600,2020-08-04 07:48:34-06:00,21600,True,False,['README.md'],['ad34562eb24828452e16f395b2912ac9f55f2197'],0,3,3,1,,,

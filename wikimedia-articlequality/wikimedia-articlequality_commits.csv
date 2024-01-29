@@ -1,0 +1,682 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+9a808d26c6fea86edf194dbab49f8349521a0a2c,Initial module structure.  Nothing is working.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-05-29 09:46:55-05:00,18000,2014-05-29 09:46:55-05:00,18000,True,False,"['.gitattributes', 'PLACEHOLDER', '__init__.py', '__init__.py', 'functions.py', 'prediction.py', 'qualpredictions.py', 'text_classifier.py', 'classify_text.py', '__init__.py', '_qualmetrics.py', 'infonoise.py', 'wikitext.py', '__init__.py', 'en_us.py', 'language.py', '__init__.py']",[],0,630,630,17,0.26141078838174275,0.6058091286307054,0.6639004149377593
+af2cd198d95cb10b0bc2e9490fea5ec5b128bb4b,Moved examples out to top directory.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-05-29 09:47:46-05:00,18000,2014-05-29 09:47:46-05:00,18000,True,False,['classify_text.py'],['9a808d26c6fea86edf194dbab49f8349521a0a2c'],0,0,0,1,,,
+7e164ecffaaa9650f6ec20e0b6f5cf95054e0754,Create README.md,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2014-05-29 09:52:19-05:00,18000,2014-05-29 09:52:19-05:00,18000,True,False,['README.md'],['af2cd198d95cb10b0bc2e9490fea5ec5b128bb4b'],0,4,4,1,,,
+34b09e60e97405b6d4c49defcdff65cb5f5408b4,Create .gitignore,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2014-05-29 09:54:37-05:00,18000,2014-05-29 09:54:37-05:00,18000,True,False,['.gitignore'],['7e164ecffaaa9650f6ec20e0b6f5cf95054e0754'],0,54,54,1,,,
+19bc51361dd565d6d10f7d3bf3e035d1096af9d7,Settled on API. see examples/ Still filling in details and working on being pickleable,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-04 16:08:00-05:00,18000,2014-06-04 16:08:00-05:00,18000,True,False,"['.gitignore', 'classify_text.py', 'train_test_model.py', '__init__.py', '__init__.py', 'functions.py', 'prediction.py', 'qualpredictions.py', 'text_classifier.py', '__init__.py', '_qualmetrics.py', 'infonoise.py', 'wikitext.py', '__init__.py', 'en.py', 'language.py', '__init__.py', 'functions.py', 'model.py', 'rf_text.py']",['34b09e60e97405b6d4c49defcdff65cb5f5408b4'],26,247,273,20,0.4375,1.0,0.6785714285714286
+9652faf862d5c1332a32e86754fa23b8b3c5e966,Refactoring some more.  API nearly complete.  Still working on getting the thing actually working.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-07 14:41:15-05:00,18000,2014-06-07 14:41:15-05:00,18000,True,False,"['classify_text.py', 'train_test_model.py', '__init__.py', 'assessments.py', '__init__.py', 'functions.py', 'prediction.py', 'qualpredictions.py', 'text_classifier.py', '__init__.py', '_qualmetrics.py', 'extractor.py', '__init__.py', 'infonoise.py', 'wikitext.py', 'wikitext_and_infonoise.py', '__init__.py', 'en.py', 'language.py', '__init__.py', 'functions.py', 'model.py', 'rf_text.py', '__init__.py', 'autovivifying.py']",['19bc51361dd565d6d10f7d3bf3e035d1096af9d7'],670,238,908,25,0.8315789473684211,0.2789473684210526,0.37894736842105264
+ef789d6769f497421d919454f0dacb00306dedb0,Added preliminary requirements.txt,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-07 14:42:58-05:00,18000,2014-06-07 14:42:58-05:00,18000,True,False,['requirements.txt'],['9652faf862d5c1332a32e86754fa23b8b3c5e966'],0,3,3,1,,,
+36d530baa659504862602ef233f12af96f379ae3,Removed path append stuff from imports.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-07 14:44:23-05:00,18000,2014-06-07 14:44:23-05:00,18000,True,False,['train_test_model.py'],['ef789d6769f497421d919454f0dacb00306dedb0'],9,3,12,1,,,
+234b752b9b8e758b2ca28b567c59b447e49f957a,Fixed some issues with the examples.  They run now.  Not sure if they are 'working',halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-09 08:58:53-05:00,18000,2014-06-09 08:58:53-05:00,18000,True,False,"['classify_text.py', 'train_test_model.py', '__init__.py', 'wikitext_and_infonoise.py', 'rf_text.py']",['36d530baa659504862602ef233f12af96f379ae3'],26,32,58,5,,,
+1784a25cb896cf125bc0e0b7955f37e8355cc8f4,"Added to_file, from_file to RFTextModel.  Reporting of probs is still a little broken.",halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-10 09:58:25-05:00,18000,2014-06-10 09:58:25-05:00,18000,True,False,"['classify_text.py', 'train_test_model.py', 'model.py', 'rf_text.py']",['234b752b9b8e758b2ca28b567c59b447e49f957a'],6,27,33,4,1.0,1.0,1.0
+77fb4940a55d82ed49fec838ad264edabfc05792,Working RFTextModel.  Writing to and from files.  Training real data.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-11 09:55:00-05:00,18000,2014-06-11 09:55:00-05:00,18000,True,False,"['.gitignore', 'classify_text.py', 'test_model.py', 'train_model.py', 'train_test_model.py', 'assessments.py', '__init__.py', 'extractor.py', 'wikitext_and_infonoise.py', 'rf_text.py', 'add_text.py']",['1784a25cb896cf125bc0e0b7955f37e8355cc8f4'],60,147,207,11,0.08333333333333333,0.08333333333333333,1.0
+d1f78872905e78e4c7a0ec47856e48ea47c0e220,Move readme to RST for pypi,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-11 09:57:08-05:00,18000,2014-06-11 09:57:08-05:00,18000,True,False,['README.rst'],['77fb4940a55d82ed49fec838ad264edabfc05792'],0,0,0,1,,,
+63c83f041871e0d44e9f2baf31377801c4dd4ed1,"Added setup.py, VERSION and a MANIFEST.  setup.py install works.",halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-11 10:05:20-05:00,18000,2014-06-11 10:05:20-05:00,18000,True,False,"['.gitignore', 'MANIFEST.in', 'VERSION', 'requirements.txt', 'setup.py', 'en.py', 'language.py']",['d1f78872905e78e4c7a0ec47856e48ea47c0e220'],23,66,89,7,1.0,1.0,1.0
+4f58cf387f2c67271554d8a3a2dd99eb3305c44f,Added enwiki model file and minimal docs.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-12 09:29:36-05:00,18000,2014-06-12 09:29:36-05:00,18000,True,False,"['.gitignore', 'README.rst', 'Makefile', 'conf.py', 'index.rst', 'enwiki.rf_text.model', 'add_text.py']",['63c83f041871e0d44e9f2baf31377801c4dd4ed1'],4,579,583,7,1.0,1.0,1.0
+fc815844c45d84f09ed71cae867c1f20a73245df,Completed basic documentation.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-12 12:29:05-05:00,18000,2014-06-12 12:29:05-05:00,18000,True,False,"['README.rst', 'conf.py', 'features.rst', 'index.rst', 'languages.rst', 'models.rst', 'classify_text.py', 'test_model.py', 'train_model.py', 'requirements.txt', '__init__.py', 'wikitext_and_infonoise.py', '__init__.py', 'english.py', 'language.py', 'rf_text.py']",['4f58cf387f2c67271554d8a3a2dd99eb3305c44f'],43,164,207,16,1.0,1.0,1.0
+9452d3039886e7cb207e27c0f77619dc55c2ec21,Add link to repo to docs,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-12 12:29:51-05:00,18000,2014-06-12 12:29:51-05:00,18000,True,False,['index.rst'],['fc815844c45d84f09ed71cae867c1f20a73245df'],0,1,1,1,,,
+e42462899f3fb124e4c65a3977baa466ee34066f,Adds license,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-12 12:36:03-05:00,18000,2014-06-12 12:36:03-05:00,18000,True,False,"['LICENSE', 'setup.py']",['9452d3039886e7cb207e27c0f77619dc55c2ec21'],1,22,23,2,,,
+b803456946f3cb1cfc753bf450aab72b20ef84ea,"Update README.rst
+
+Fix typo",nettrom,nettrom@gmail.com,nettrom,nettrom@gmail.com,2014-06-12 12:55:32-05:00,18000,2014-06-12 12:55:32-05:00,18000,True,False,['README.rst'],['e42462899f3fb124e4c65a3977baa466ee34066f'],1,1,2,1,,,
+38fee1b85a23d4f099565f4c9d8f3c6f0bde8fb8,Fixed example in documentation.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-12 13:11:42-05:00,18000,2014-06-12 13:11:42-05:00,18000,True,False,['index.rst'],['e42462899f3fb124e4c65a3977baa466ee34066f'],0,1,1,1,,,
+0547adf1fe64a10d1ae4841fc8a9f210562f863e,Fixed Morten's last name in docs.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-12 13:15:55-05:00,18000,2014-06-12 13:15:55-05:00,18000,True,False,['index.rst'],['38b128ee0a6561ebb35cc1bb87383490bba2cff4'],1,1,2,1,,,
+87caa08d4d74d64a00b4e10672fb876ed96a0619,Change table in readme to header and list.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-06-12 13:18:49-05:00,18000,2014-06-12 13:18:49-05:00,18000,True,False,['README.rst'],['0547adf1fe64a10d1ae4841fc8a9f210562f863e'],1,2,3,1,,,
+86e031d218e0b56d820b6eb82fec304f97fef2f4,fix documenation backwardsness,notconfusing,isalix@gmail.com,notconfusing,isalix@gmail.com,2014-06-28 14:56:51-07:00,25200,2014-06-28 14:56:51-07:00,25200,True,False,['index.rst'],['87caa08d4d74d64a00b4e10672fb876ed96a0619'],4,5,9,1,,,
+dfadd48d186f4ac464f6d2da647f2c6501ee9764,division by zero check,notconfusing,isalix@gmail.com,notconfusing,isalix@gmail.com,2014-06-28 19:09:34-07:00,25200,2014-06-28 19:09:34-07:00,25200,True,False,['infonoise.py'],['86e031d218e0b56d820b6eb82fec304f97fef2f4'],5,9,14,1,0.0,1.0,1.0
+9c97919971be14144b013d436504612dee2c9b78,division by zero check,notconfusing,isalix@gmail.com,notconfusing,isalix@gmail.com,2014-06-28 19:09:34-07:00,25200,2014-06-28 19:13:04-07:00,25200,True,False,['infonoise.py'],['86e031d218e0b56d820b6eb82fec304f97fef2f4'],5,9,14,1,0.0,1.0,1.0
+a110409ae552f52c78269448f9444c2c6299a6f2,Updated version and fixed setup.py issue.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2014-07-21 09:20:56-05:00,18000,2014-07-21 09:20:56-05:00,18000,True,False,"['VERSION', 'setup.py']",['40d95e712842b4c4261a33c313a4c8e303ba1689'],3,3,6,2,,,
+06a6186e2539dc347db05bd86853e0be654fbcdd,Restructures wikiclass to make use of the revscoring package.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-02-24 18:33:29-06:00,21600,2015-02-24 18:33:29-06:00,21600,True,False,"['VERSION', 'extract_features', 'train_test', 'assessments.py', '__init__.py', 'parsed_revision_text.py', 'extract_features.py', '__init__.py', 'char_length.py', 'enwiki.py', 'extractor.py', 'headings.py', 'infonoise.py', 'links.py', 'infonoise.py', 'wikitext.py', 'references.py', 'templates.py', '__init__.py', 'test_char_length.py', 'wikitext_and_infonoise.py', '__init__.py', 'english.py', 'language.py', '__init__.py', 'model.py', 'rf_text.py', '__init__.py', 'rf.py', 'train_test.py', 'util.py', 'autovivifying.py']",['a110409ae552f52c78269448f9444c2c6299a6f2'],480,377,857,32,1.0,0.578125,0.484375
+e603fe930c2d94d69f96abad1affd5a628c2ba85,Adds tests for all features and datasources.  Minor fixes to rf and train_test too.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-02-24 19:40:01-06:00,21600,2015-02-24 19:40:01-06:00,21600,True,False,"['enwiki.rf_text.20150215.model', '__init__.py', 'test_parsed_revision_text.py', 'test_headings.py', 'test_infonoise.py', 'test_links.py', 'test_references.py', 'test_templates.py', '__init__.py', 'rf.py', 'train_test.py']",['06a6186e2539dc347db05bd86853e0be654fbcdd'],30,184,214,11,0.7213114754098361,1.0,0.6721311475409836
+22c7534b0d7b87bafda18c6c1659089c9fc630d9,Fixes minor issues in feature extractor script.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-02-25 15:34:02-06:00,21600,2015-02-25 15:34:02-06:00,21600,True,False,"['extract_features.py', 'char_length.py']",['e603fe930c2d94d69f96abad1affd5a628c2ba85'],10,15,25,2,1.0,1.0,0.0
+e68c1bf7dde97c6ff002327e4ca75fb1ba1b24d0,Removes duplicate feature definitions (now part of revscoring) and adds utility files for extracting quality classes from XML dumps.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-07-27 11:45:01-05:00,18000,2015-07-27 11:45:01-05:00,18000,True,False,"['Makefile', 'index.rst', 'extract_features', 'setup.py', 'train_test', 'utility', '__init__.py', 'parsed_revision_text.py', 'test_parsed_revision_text.py', 'extract_features.py', '__init__.py', 'enwiki.py', 'extractor.py', '__init__.py', 'test_enwiki.py', 'test_extractor.py', '__init__.py', 'enwiki.py', '__init__.py', 'char_length.py', 'enwiki.py', 'headings.py', 'infonoise.py', 'links.py', 'references.py', 'templates.py', 'test_char_length.py', 'test_headings.py', 'test_infonoise.py', 'test_links.py', 'test_references.py', 'test_templates.py', '__init__.py', 'rf.py', 'train_test.py', 'util.py', '__init__.py', 'extract_features.py', 'extract_labelings.py', 'fetch_text.py', 'wikiclass.py']",['22c7534b0d7b87bafda18c6c1659089c9fc630d9'],541,593,1134,41,0.0,0.0,0.08196721311475409
+b542321c32175fe8c033d15c13bf1d19ec5ebbe5,Removes old models.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-08-06 10:48:51-05:00,18000,2015-08-06 10:48:51-05:00,18000,True,False,"['enwiki.rf_text.20150215.model', 'enwiki.rf_text.model']",['e68c1bf7dde97c6ff002327e4ca75fb1ba1b24d0'],6,0,6,2,,,
+770cecfaf05812f2e4cbb237d3911d9abd8ff6ac,Finishes enwiki extractor.  Works with 'extract_labelings' utility.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-08-18 14:03:21-05:00,18000,2015-08-18 14:03:21-05:00,18000,True,False,"['enwiki.py', 'extractor.py', 'test_enwiki.py']",['b542321c32175fe8c033d15c13bf1d19ec5ebbe5'],28,43,71,3,0.7272727272727273,0.8181818181818182,0.5454545454545454
+66e2740f1f72e71f0290d268d1240f27e6fcb5d4,Adds frwiki extractor based on morten's note. https://docs.google.com/spreadsheets/d/1lXLbvVbNmM1y-R28ggfqr8bP4g77jPfd4ge439RBMic/edit#gid=0,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-08-18 14:04:10-05:00,18000,2015-08-18 14:04:10-05:00,18000,True,False,"['frwiki.py', 'test_frwiki.py', 'extract_labelings.py']",['770cecfaf05812f2e4cbb237d3911d9abd8ff6ac'],25,253,278,3,0.192090395480226,1.0,0.9943502824858758
+ca63630bd4ad26bf6254557f1a6be96acd6a553f,Minor fixes to makefile,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-08-18 14:06:28-05:00,18000,2015-08-18 14:06:28-05:00,18000,True,False,['Makefile'],['66e2740f1f72e71f0290d268d1240f27e6fcb5d4'],8,7,15,1,,,
+1265e903a025811b3bb603587ba11883b8563d59,Adds logging config to extract_labelings,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-08-19 16:10:35-07:00,25200,2015-08-19 16:10:35-07:00,25200,True,False,['extract_labelings.py'],['ca63630bd4ad26bf6254557f1a6be96acd6a553f'],1,8,9,1,0.0,1.0,0.0
+fa9e1643439ac3cc381251ece85200f5a07bce5a,Removes post '/' stuff from title during normalization.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-08-19 16:12:04-07:00,25200,2015-08-19 16:12:04-07:00,25200,True,False,['extract_labelings.py'],['1265e903a025811b3bb603587ba11883b8563d59'],3,3,6,1,0.0,0.0,0.0
+eb4e8e1a7df402b758d33f2eba549a20605ecb43,Switches extract_labelings to use mwxml library and solves a title parsing issue.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-08-26 12:17:03-05:00,18000,2015-08-26 12:17:03-05:00,18000,True,False,['extract_labelings.py'],['fa9e1643439ac3cc381251ece85200f5a07bce5a'],8,9,17,1,1.0,1.0,1.0
+4240ada92cda394506909fdeef7936a15c06f145,Fixes makefile issues and adds frwiki to the makefile.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-08-26 18:55:04+00:00,0,2015-08-26 18:55:04+00:00,0,True,False,['Makefile'],['eb4e8e1a7df402b758d33f2eba549a20605ecb43'],2,9,11,1,,,
+63616e7e6381588cda77e2c795ee52eef35712d7,Adds error handling in case mwparserfromhell fails.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-08-26 18:55:23+00:00,0,2015-08-26 18:55:23+00:00,0,True,False,['extractor.py'],['4240ada92cda394506909fdeef7936a15c06f145'],3,12,15,1,0.0,0.0,0.0
+ad3ab47a96aa92d95fbf1f4b8074514652c2473e,Fixes to feature extraction and Makefile to make it work on stat3.  Whole flow for enwiki working.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-09-03 14:18:09+00:00,0,2015-09-03 14:18:09+00:00,0,True,False,"['Makefile', 'enwiki.py', 'extract_features.py', 'fetch_text.py']",['63616e7e6381588cda77e2c795ee52eef35712d7'],35,51,86,4,0.8181818181818182,0.8181818181818182,0.0
+eb6be973b17a362d860297f05774837b2e55ea57,Adds extract_text utility.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-09-03 10:29:56-05:00,18000,2015-09-03 10:29:56-05:00,18000,True,False,"['extract_labelings.py', 'extract_text.py']",['ad3ab47a96aa92d95fbf1f4b8074514652c2473e'],1,107,108,2,0.2692307692307692,0.3269230769230769,0.40384615384615385
+17a1841ccb8981472ac20b277e8adde4b34c85dc,Adds new utilities to main utility documentation.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-09-03 10:30:58-05:00,18000,2015-09-03 10:30:58-05:00,18000,True,False,['wikiclass.py'],['eb6be973b17a362d860297f05774837b2e55ea57'],1,2,3,1,,,
+7e4d18372c8d335b68cbb56103390eaccc2846ce,Adds rev_id and page_id to text fetch/extract output.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-09-03 10:36:04-05:00,18000,2015-09-03 10:36:04-05:00,18000,True,False,"['extract_text.py', 'fetch_text.py']",['17a1841ccb8981472ac20b277e8adde4b34c85dc'],4,10,14,2,0.0,0.16666666666666666,0.0
+82a884b9f16473fa4e44b8ec15a087a066c7a0aa,minor improvements to verbose output for extraction.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-09-03 10:39:47-05:00,18000,2015-09-03 10:39:47-05:00,18000,True,False,"['extractor.py', 'extract_text.py']",['7e4d18372c8d335b68cbb56103390eaccc2846ce'],6,17,23,2,0.0,0.0,0.0
+47fcc87530dbc72b5cfb45f946cf879e0426a62a,Cleanup all around.  Documentation updated for new version.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-09-03 16:22:32-05:00,18000,2015-09-03 16:22:32-05:00,18000,True,False,"['MANIFEST.in', 'Makefile', 'README.rst', 'VERSION', 'Makefile', 'conf.py', 'extractors.rst', 'features.rst', 'functions.rst', 'index.rst', 'languages.rst', 'models.rst', 'utilities.rst', 'enwiki.wp10.rf.model', 'setup.py', '__init__.py', '__init__.py', 'enwiki.py', 'extractor.py', 'frwiki.py', 'enwiki.py', '__init__.py', 'extract_features.py', 'extract_labelings.py', 'extract_text.py', 'fetch_text.py', 'score.py']",['82a884b9f16473fa4e44b8ec15a087a066c7a0aa'],332,560,892,27,1.0,1.0,0.0
+ab84b381f980df7065dfa1e597ddb21cf2c53733,Renames README to .md and updates setup and requirements for recent refactorings.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-09-03 16:27:14-05:00,18000,2015-09-03 16:27:14-05:00,18000,True,False,"['README.md', 'requirements.txt', 'setup.py']",['47fcc87530dbc72b5cfb45f946cf879e0426a62a'],5,5,10,3,,,
+a1f409c60a4bb9029cafe10c8cd443ca9ebc83d4,Minor updates to Makefile and extract_text for running on stat3,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-09-04 19:10:54+00:00,0,2015-09-04 19:10:54+00:00,0,True,False,"['Makefile', 'extract_text.py']",['82a884b9f16473fa4e44b8ec15a087a066c7a0aa'],9,8,17,2,1.0,0.0,
+7e6230b4f2a09be705f39f8faefc9ed6b25595eb,Update functions.rst,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-09-08 14:30:00-05:00,18000,2015-09-08 14:30:00-05:00,18000,True,False,['functions.rst'],['10a2aed17c3b57b99a9d6608de3a3302e8282f9e'],5,5,10,1,,,
+e29e315ed27e4a966e99cea937d9519a86a3fd90,README.rst --> README.md,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-09-24 14:38:05-05:00,18000,2015-09-24 14:38:05-05:00,18000,True,False,['MANIFEST.in'],['7e6230b4f2a09be705f39f8faefc9ed6b25595eb'],1,1,2,1,,,
+3f779801b6b880d0c47270046433a7bf1519b392,Increments version to 0.1.1,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-09-24 14:38:48-05:00,18000,2015-09-24 14:38:48-05:00,18000,True,False,"['setup.py', '__init__.py']",['e29e315ed27e4a966e99cea937d9519a86a3fd90'],2,2,4,2,,,
+017d36d4c764f209525e28a3a206699b648896c1,Fixes issue with generator requirements in setup.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-09-25 09:10:22-05:00,18000,2015-09-25 09:10:22-05:00,18000,True,False,['setup.py'],['3f779801b6b880d0c47270046433a7bf1519b392'],11,11,22,1,,,
+a469b3c10deed9681a58a0c7b72cb8548742c501,Increments version to 0.1.2,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-09-25 09:13:45-05:00,18000,2015-09-25 09:13:45-05:00,18000,True,False,"['setup.py', '__init__.py']",['017d36d4c764f209525e28a3a206699b648896c1'],2,2,4,2,,,
+82d89cda21fc9be9e89c229438c6fc68b8a19f26,Adds frwiki stuff to Makefile,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-10-06 22:47:36+00:00,0,2015-10-06 22:47:36+00:00,0,True,False,['Makefile'],['a469b3c10deed9681a58a0c7b72cb8548742c501'],2,44,46,1,,,
+ff6f73492bca2bf24ac993c9238cac04007be74b,Cleanup to feature sets for enwiki and frwiki.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-10-06 17:56:33-05:00,18000,2015-10-06 17:56:33-05:00,18000,True,False,"['enwiki.py', 'frwiki.py', 'extract_features.py']",['82d89cda21fc9be9e89c229438c6fc68b8a19f26'],3,33,36,3,,,
+a77503512593a4c068875c0d8b0518733c1716b2,Spaces to tabs in Makefile:,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-10-06 17:58:15-05:00,18000,2015-10-06 17:58:15-05:00,18000,True,False,['Makefile'],['ff6f73492bca2bf24ac993c9238cac04007be74b'],18,18,36,1,,,
+b4f2e81f8a5660ed43f93c3980c2afda2652abda,Updates enwiki model and adds frwiki model,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-10-07 14:56:15+00:00,0,2015-10-07 14:56:15+00:00,0,True,False,"['enwiki.wp10.rf.model', 'frwiki.wp10.rf.model', 'extract_text.py']",['a77503512593a4c068875c0d8b0518733c1716b2'],8,9,17,3,,,1.0
+1517906bea2614cc2afb648f28c4cd9a82068d7b,Increments version to 0.1.3,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-10-07 14:58:54+00:00,0,2015-10-07 14:59:52+00:00,0,True,False,"['setup.cfg', 'setup.py', '__init__.py']",['b4f2e81f8a5660ed43f93c3980c2afda2652abda'],2,4,6,3,,,
+a407916e2dda6bea97f19fd287205dde5091e616,Bumps requirement revscoring >= 0.6.6,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-10-07 15:06:39+00:00,0,2015-10-07 15:06:39+00:00,0,True,False,['requirements.txt'],['1517906bea2614cc2afb648f28c4cd9a82068d7b'],1,1,2,1,,,
+18b17177353679b9631f2c2d07051f71aad42bbc,Switches text extraction to be API-based.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-10-07 23:23:30+00:00,0,2015-10-07 23:23:30+00:00,0,True,False,"['Makefile', 'fetch_text.py']",['a407916e2dda6bea97f19fd287205dde5091e616'],10,14,24,2,0.5,0.5,0.0
+f6d396169085805844d7390ddba22241568865a4,Adds debug logging to extract_features.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-10-07 19:04:59-05:00,18000,2015-10-07 19:04:59-05:00,18000,True,False,['extract_features.py'],['a77503512593a4c068875c0d8b0518733c1716b2'],3,13,16,1,0.0,0.0,1.0
+6322c361430641b645a0ad335ae90a336b749a83,frwiki --> 9k sample.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-10-08 00:33:19+00:00,0,2015-10-08 00:33:19+00:00,0,True,False,['Makefile'],['5f62a88f74e387ef0cd0810d2b82d285972dd29b'],19,20,39,1,,,
+fe9693901da67573fbede9c50f4ac91159ed9f02,Adds verbose option to extract_features and uses it in the Makefile.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-10-08 00:41:02+00:00,0,2015-10-08 00:41:02+00:00,0,True,False,"['Makefile', 'extract_features.py']",['6322c361430641b645a0ad335ae90a336b749a83'],4,11,15,2,1.0,1.0,0.0
+d4af2ef4820107c76a97ca21a7a63081d257332a,Updates frwiki model to 0.0.2,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-10-08 00:41:22+00:00,0,2015-10-08 00:41:22+00:00,0,True,False,['frwiki.wp10.rf.model'],['fe9693901da67573fbede9c50f4ac91159ed9f02'],2,2,4,1,,,
+3e5bfcb3f5cdf62755a9182c79c05facdb9cf9d6,Adds new templates_that_match meta feature and frwiki stuff. (WIP),halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-10-29 19:36:11-05:00,18000,2015-10-29 19:36:11-05:00,18000,True,False,"['frwiki.py', '__init__.py', 'meta.py', 'revision.py', '__init__.py', 'test_meta.py']",['d4af2ef4820107c76a97ca21a7a63081d257332a'],1,137,138,6,1.0,1.0,0.7037037037037037
+1a2e8c13cfbce9cddc397bdfd5423250c6e51d48,"Fix template list
+
+* Remove ""Article/Bac[ _]à[ _]sable"" (it's the sandbox for the ""Article"" template)
+* Fix typo in ""Lien web""
+* Remove ""Palette[ _]Modèles[ _]bibliographiques"" (navigation template between bibliography templates)",Guillaume Paumier,gp@guillaumepaumier.com,Guillaume Paumier,gp@guillaumepaumier.com,2015-10-30 11:31:35-07:00,25200,2015-10-30 11:31:35-07:00,25200,True,False,['frwiki.py'],['3e5bfcb3f5cdf62755a9182c79c05facdb9cf9d6'],4,2,6,1,,,
+5bc9412e12633a89183353d7582e9c79c4c93531,"Adds who, citation_needed and main_article templates to enwiki",halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-10-31 12:13:04-05:00,18000,2015-10-31 12:13:04-05:00,18000,True,False,['enwiki.py'],['1a2e8c13cfbce9cddc397bdfd5423250c6e51d48'],5,35,40,1,,,
+f4cee2c9ba13b5c214fb7ebb2c9231e2c4ec3250,Fixes some issues with template matching.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-10-31 12:13:36-05:00,18000,2015-10-31 12:13:36-05:00,18000,True,False,"['meta.py', 'test_meta.py']",['5bc9412e12633a89183353d7582e9c79c4c93531'],8,7,15,2,0.0,0.0,0.0
+accabc0011fde11ba568ee7001af48179c89af28,Adds tests for enwiki and frwiki featurelists.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-10-31 12:14:13-05:00,18000,2015-10-31 12:14:13-05:00,18000,True,False,"['frwiki.py', '__init__.py', 'test_enwiki.py', 'test_frwiki.py', 'revision.py']",['f4cee2c9ba13b5c214fb7ebb2c9231e2c4ec3250'],44,225,269,5,1.0,1.0,1.0
+ef360fa357bdf438d0681aeaa519b1fe985963f3,Fixes minor issues in feature lists for enwiki and frwiki (divide by zero),halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-10-31 18:50:34+00:00,0,2015-10-31 18:50:34+00:00,0,True,False,"['enwiki.py', 'frwiki.py']",['821935b3b25cb5897e5feaa6b0229a96c687526a'],3,3,6,2,,,
+aa4edc1ea84ef392c1abdfdac8ddd6786aba67de,Adds parallelization to extract_features,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-10-31 13:58:30-05:00,18000,2015-10-31 13:58:30-05:00,18000,True,False,"['extract_features.py', 'fetch_text.py']",['ef360fa357bdf438d0681aeaa519b1fe985963f3'],22,52,74,2,0.0,0.0,0.6111111111111112
+680a4808f895dfc852d4bbc128aa42006c88efc4,Adds not_an_article filter,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-10-31 15:05:45-05:00,18000,2015-10-31 15:05:45-05:00,18000,True,False,"['extract_text.py', 'fetch_text.py']",['aa4edc1ea84ef392c1abdfdac8ddd6786aba67de'],3,27,30,2,0.36363636363636365,0.36363636363636365,0.36363636363636365
+788e84f73c5ccdd8b8c7bdfba0ed3b66050efa1e,Updates frwiki model and increments version in Makefile.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-11-12 22:22:05+00:00,0,2015-11-12 22:22:05+00:00,0,True,False,"['Makefile', 'frwiki.wp10.rf.model']",['680a4808f895dfc852d4bbc128aa42006c88efc4'],6,5,11,2,,,
+1d437f8736f19fc9d70300f5512494ed91941920,Bumps revscoring requirement to 0.7.2,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2015-11-12 17:40:19-06:00,21600,2015-11-12 17:40:19-06:00,21600,True,False,['requirements.txt'],['788e84f73c5ccdd8b8c7bdfba0ed3b66050efa1e'],1,1,2,1,,,
+8834508beb55ea3650c351901e0406ae1ea8012b,Increments version to 0.2.0.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-11-12 17:43:32-06:00,21600,2015-11-12 17:43:32-06:00,21600,True,False,"['setup.py', '__init__.py']",['1d437f8736f19fc9d70300f5512494ed91941920'],2,2,4,2,,,
+c512a1c4bf7a7a734b4f131e251399f564fd1435,Updates requirement for mwtypes >= 0.2.0,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-11-12 18:12:17-06:00,21600,2015-11-12 18:12:17-06:00,21600,True,False,['requirements.txt'],['8834508beb55ea3650c351901e0406ae1ea8012b'],1,1,2,1,,,
+01e58a4c9b80cb148439b09aa05eee803ea70cdb,Increments version to 0.2.1,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-11-12 18:13:02-06:00,21600,2015-11-12 18:13:02-06:00,21600,True,False,"['setup.py', '__init__.py']",['c512a1c4bf7a7a734b4f131e251399f564fd1435'],2,2,4,2,,,
+8b197bfe31ae19adb76d74367fae096188fd1d0b,Bumps revscoring requirement to 0.7.10 and fixes issues this causes.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-12-13 10:13:45-06:00,21600,2015-12-13 10:13:45-06:00,21600,True,False,"['requirements.txt', 'extract_features.py', 'score.py']",['01e58a4c9b80cb148439b09aa05eee803ea70cdb'],3,10,13,3,,,
+3115223bf5a13492b822b7fbb65a367f0791e94a,Increments version to 0.2.2,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2015-12-13 10:14:19-06:00,21600,2015-12-13 10:14:19-06:00,21600,True,False,"['setup.py', '__init__.py']",['8b197bfe31ae19adb76d74367fae096188fd1d0b'],2,2,4,2,,,
+380e1eaa15ac116ec0cbb22effb36ebc2eaa60b3,"Drop using mw and use proper libraries instead
+
+Using mwreverts, mwxml, mwapi instead of mw",amir,ladsgroup@gmail.com,amir,ladsgroup@gmail.com,2016-03-10 14:21:52+03:30,-12600,2016-03-10 14:21:52+03:30,-12600,True,False,"['requirements.txt', 'add_text.py', 'extractor.py', 'test_enwiki.py', 'test_frwiki.py']",['3115223bf5a13492b822b7fbb65a367f0791e94a'],22,25,47,5,,,
+d9b0b5ca07a2cf6c02570c84efd86aa3cf5ad663,Increment version to 0.2.3,amir,ladsgroup@gmail.com,amir,ladsgroup@gmail.com,2016-03-10 14:24:15+03:30,-12600,2016-03-10 14:24:15+03:30,-12600,True,False,"['setup.py', '__init__.py']",['380e1eaa15ac116ec0cbb22effb36ebc2eaa60b3'],2,2,4,2,,,
+20f5708d5b5f8ec9235d1879091bebb27f5b931a,Updates enwiki and frwiki feature_lists for revscoring 1.0,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-20 16:06:19-06:00,21600,2016-03-13 18:40:18+00:00,0,True,False,"['tox.ini', 'enwiki.py', 'frwiki.py', 'wikipedia.py', '__init__.py', 'meta.py', 'revision.py', '__init__.py', 'test_meta.py']",['25df10af2b283edaa609e821441a6d94f168a6a0'],165,130,295,9,0.0,0.0,0.32
+e867554c466fdf892fa7b32a908888bf0e203f7a,Adds tuning reports to Makefile.,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-20 16:31:41-06:00,21600,2016-03-13 18:40:18+00:00,0,True,False,"['Makefile', 'classifiers.params.yaml', 'frwiki.wp10.md']",['20f5708d5b5f8ec9235d1879091bebb27f5b931a'],36,107,143,3,,,
+9aa5463eb76159cdc33def8b7db0eaac36d6852d,Adds nettrom enwiki wp10 sample.,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-20 18:25:20-06:00,21600,2016-03-13 18:40:18+00:00,0,True,False,['enwiki.rev_wp10.nettrom_30k.tsv'],['e867554c466fdf892fa7b32a908888bf0e203f7a'],0,29454,29454,1,,,
+09a97e71697bbdadef0e1c23a9256ad8d9384cbc,Adds nettrom sample model to Makefile,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-20 18:31:28-06:00,21600,2016-03-13 18:40:18+00:00,0,True,False,['Makefile'],['9aa5463eb76159cdc33def8b7db0eaac36d6852d'],1,32,33,1,,,
+91a836ee1e429b3ece1a69b3a494ac5af3c70bec,Adds tuning reports to makefile.,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-20 19:06:02-06:00,21600,2016-03-13 18:40:18+00:00,0,True,False,['Makefile'],['09a97e71697bbdadef0e1c23a9256ad8d9384cbc'],1,13,14,1,,,
+13bfbdbd571557f72569190d8873822cdc7ba6cb,"Updates for frwiki, still not getting the fitness we used to get.",Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-21 21:54:36+00:00,0,2016-03-13 18:40:21+00:00,0,True,False,"['Makefile', 'enwiki.nettrom_wp10.rf.model', 'enwiki.nettrom_wp10.md', 'enwiki.wp10.md', 'frwiki.wp10.md', 'fetch_text.py']",['91a836ee1e429b3ece1a69b3a494ac5af3c70bec'],12,616,628,6,1.0,1.0,0.0
+73eeb36668d2a98564298765a5804c91d287c751,Adds basic counts for cn templates and dict_words/word to frwiki feature list,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-22 09:07:57-06:00,21600,2016-03-13 18:40:21+00:00,0,True,False,['frwiki.py'],['13bfbdbd571557f72569190d8873822cdc7ba6cb'],1,7,8,1,,,
+b87531b091b09f7305d2c5e27cfb2c07847fb560,Updates to frwiki model and incr. version to 0.2.0.  Seems to be working now.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-22 15:59:00+00:00,0,2016-03-13 18:40:30+00:00,0,True,False,"['Makefile', 'frwiki.wp10.rf.model', 'frwiki.py', 'wikipedia.py', 'extract_labelings.py']",['73eeb36668d2a98564298765a5804c91d287c751'],15,22,37,5,,,
+f368a45a23d220fd7b13e2a845587c59e0dca6f6,Removed old wp10 model that doesn't work with revscoring v1.0,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-22 16:24:46+00:00,0,2016-03-13 18:40:32+00:00,0,True,False,['enwiki.wp10.rf.model'],['b87531b091b09f7305d2c5e27cfb2c07847fb560'],3,0,3,1,,,
+7283d11fccc0bd065aba91708290af58b77b078f,Adds statistics to models in Makefile,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-27 22:03:48+00:00,0,2016-03-13 18:40:32+00:00,0,True,False,['Makefile'],['f368a45a23d220fd7b13e2a845587c59e0dca6f6'],4,10,14,1,,,
+b9a26320469a1b3d3649e7e4165983782db15274,Adds new models with updated statistics.,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-01-27 16:18:14-06:00,21600,2016-03-13 18:40:57+00:00,0,True,False,"['Makefile', 'enwiki.nettrom_wp10.rf.model', 'frwiki.wp10.rf.model']",['7283d11fccc0bd065aba91708290af58b77b078f'],5,4,9,3,,,
+f944810e3e23f4566ec9cee645f88e7080f60e09,Update makefile with new test statistics,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-03-13 18:39:31+00:00,0,2016-03-13 18:40:57+00:00,0,True,False,['Makefile'],['b9a26320469a1b3d3649e7e4165983782db15274'],6,10,16,1,,,
+32528003285ec06bf4c0083238322f9ea4bb25b4,Adds revscoring 1.1.0 to requirements.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-03-14 19:33:44+00:00,0,2016-03-14 19:33:44+00:00,0,True,False,['requirements.txt'],['f944810e3e23f4566ec9cee645f88e7080f60e09'],1,1,2,1,,,
+32540efef3d0011afb34d7af9851e9220b55d3bc,Adds updated enwiki and frwiki models.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-03-14 19:34:29+00:00,0,2016-03-14 19:34:29+00:00,0,True,False,"['enwiki.nettrom_wp10.rf.model', 'frwiki.wp10.rf.model']",['32528003285ec06bf4c0083238322f9ea4bb25b4'],4,4,8,2,,,
+a38c4a5da396b4a1dfa9bd8c50c013375066870e,Updates feature extractor for revscoring 1.x,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-03-14 19:35:36+00:00,0,2016-03-14 19:35:36+00:00,0,True,False,['extract_features.py'],['32540efef3d0011afb34d7af9851e9220b55d3bc'],2,2,4,1,,,
+20635cbd0f5a6167811ff7ec1f0cdc64f0ce9c8d,Increments version to 0.3.0,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2016-03-17 17:01:12-05:00,18000,2016-03-17 17:01:12-05:00,18000,True,False,"['setup.py', '__init__.py']",['e7109eb038c3fa9599abcd955cf33b279503dfe3'],2,2,4,2,,,
+57e42cbc262b719ccb192adbe412d15902d0ee32,"Add Russian assessment extractor, fix typo in French",Morten Wang,nettrom@gmail.com,Morten Wang,nettrom@gmail.com,2016-03-21 18:21:33-07:00,25200,2016-03-21 18:21:33-07:00,25200,True,False,"['frwiki.py', 'ruwiki.py']",['20635cbd0f5a6167811ff7ec1f0cdc64f0ce9c8d'],1,61,62,2,1.0,1.0,1.0
+567220619cb406aaa00dd8c97937e26c04910621,Add HTML comment detection and removal in WikiProject template paramters,Morten Wang,nettrom@gmail.com,Morten Wang,nettrom@gmail.com,2016-04-24 09:52:38-07:00,25200,2016-04-24 09:52:38-07:00,25200,True,False,"['enwiki.py', 'frwiki.py', 'test_enwiki.py']",['20635cbd0f5a6167811ff7ec1f0cdc64f0ce9c8d'],2,12,14,3,0.0,1.0,1.0
+3ea167a6c3b921e0b5ba0218388af2de547ff7cc,fix missing mwp import,Morten Wang,morten@cs.umn.edu,Morten Wang,morten@cs.umn.edu,2016-04-24 12:02:01-05:00,18000,2016-04-24 12:02:01-05:00,18000,True,False,"['enwiki.py', 'frwiki.py']",['567220619cb406aaa00dd8c97937e26c04910621'],0,4,4,2,,,
+6451b361b4401f826289e57aafeb77eb4959af30,Adds flexibility to revscoring requirement.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2016-04-27 08:53:33-05:00,18000,2016-04-27 08:53:33-05:00,18000,True,False,['requirements.txt'],['e0d3bb7158fd46cd7581e21b8c010750ca2d3a78'],1,1,2,1,,,
+44ed8d78e4a82020c22380dab768e7f6372c7e40,Increments version to 0.3.1,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2016-04-27 08:54:08-05:00,18000,2016-04-27 08:54:08-05:00,18000,True,False,"['setup.py', '__init__.py']",['6451b361b4401f826289e57aafeb77eb4959af30'],2,2,4,2,,,
+1fffaf1ee42d52ba67c79f67a33ea9edff19887e,"Add HTML comment filtering to Russian, add testcase",Morten Wang,morten@cs.umn.edu,Morten Wang,morten@cs.umn.edu,2016-05-02 11:53:32-05:00,18000,2016-05-02 11:53:32-05:00,18000,True,False,"['ruwiki.py', 'test_ruwiki.py']",['baa857771c2050981d3c91132dfdf6645234a8af'],2,127,129,2,0.09174311926605505,1.0,0.963302752293578
+fb748f74751c95d7035b4decc068f3ffc39336ab,"Bugfix, wrong variable name",Morten Wang,morten@cs.umn.edu,Morten Wang,morten@cs.umn.edu,2016-05-02 11:55:25-05:00,18000,2016-05-02 11:55:25-05:00,18000,True,False,['frwiki.py'],['1fffaf1ee42d52ba67c79f67a33ea9edff19887e'],1,1,2,1,,,
+c974c52acaab996362b4a02f4897984b588b0e1d,"Add 'mediawiki-utilities' to requirements.txt
+
+See https://github.com/wiki-ai/wikiclass/issues/15 and https://github.com/wiki-ai/wikiclass/issues/11.",Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2016-05-15 12:15:27-03:00,10800,2016-05-15 12:15:31-03:00,10800,True,False,['requirements.txt'],['44ed8d78e4a82020c22380dab768e7f6372c7e40'],0,1,1,1,,,
+bd80450ecc3973045fe40f83a6c8855e6df55749,"Adds ruwiki model, feature_lists and makefile bits.",Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-06-07 21:13:16+00:00,0,2016-06-07 21:13:16+00:00,0,True,False,"['Makefile', 'ruwiki.wp10.rf.model', 'ruwiki.wp10.md', 'ruwiki.py']",['344e33693aab84de0320acc3a0d5dffa94793d8b'],0,306,306,4,,,
+2e2f4c6786da689812114d244bf330e99e9e2a42,Switches RF for GradientBoosting models in Makefile.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-08-11 15:22:13+00:00,0,2016-08-11 15:22:13+00:00,0,True,False,['Makefile'],['10b7ee54753e77cc0e9f1bbd8e83f4dd7785af41'],23,39,62,1,,,
+b55632ad714babc641fe212e00181be1b6f4c250,Moves models to new gradient_boosting filename,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-08-11 15:23:19+00:00,0,2016-08-11 15:23:19+00:00,0,True,False,"['enwiki.nettrom_wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model']",['2e2f4c6786da689812114d244bf330e99e9e2a42'],0,0,0,3,,,
+d80da92521e8867e8979768b32f9d8adef16fd29,Rebuilt all models as gradient boosting.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-08-11 19:10:45+00:00,0,2016-08-11 19:10:45+00:00,0,True,False,"['.gitignore', 'enwiki.nettrom_wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model']",['b55632ad714babc641fe212e00181be1b6f4c250'],8,9,17,4,,,
+576dad45f11b765b1d74c32f8f58f209579aa4ce,"Revert ""Add 'mediawiki-utilities' to requirements.txt""",Aaron Halfaker,aaron.halfaker@gmail.com,GitHub,noreply@github.com,2016-09-02 08:46:50-05:00,18000,2016-09-02 08:46:50-05:00,18000,True,False,['requirements.txt'],['c3aee5bf8829e8a34c51f844b85a11dd040ee163'],1,0,1,1,,,
+55719c782aba12e31afd3c2f5e1f0c618078dd6c,"Add utilities/extract_scores.py
+
+https://phabricator.wikimedia.org/T135684
+
+I tested it on the recent dump and it worked just fine",amir,Ladsgroup@gmail.com,amir,Ladsgroup@gmail.com,2016-09-02 05:41:33+00:00,0,2016-09-02 14:07:15+00:00,0,True,False,['extract_scores.py'],['b2530f34949a15d75c277399e940936303ee79bd'],0,102,102,1,0.19047619047619047,1.0,0.5952380952380952
+7cea1f1d362fc7e6620507ec98dcfd544bea3e33,Minor fix for extract_scores.py in verbose,amir,Ladsgroup@gmail.com,amir,Ladsgroup@gmail.com,2016-09-02 14:40:25+00:00,0,2016-09-02 14:40:25+00:00,0,True,False,['extract_scores.py'],['81499c9165f4cc3d4ff637c77cf5b21d0adc1f5e'],1,1,2,1,,,
+c4c7c24f71ac3ef9c2031c3a5b58ce4cddd94ea6,Skip redirects in extract_scores.py,amir,Ladsgroup@gmail.com,amir,Ladsgroup@gmail.com,2016-09-04 18:05:14+00:00,0,2016-09-04 18:05:14+00:00,0,True,False,['extract_scores.py'],['7cea1f1d362fc7e6620507ec98dcfd544bea3e33'],1,1,2,1,,,
+0833c6cbf8d78b9c36c9a77118fe15393def9ce4,Fixes division with modifiers in wikipedia.article,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2016-09-16 15:18:59-05:00,18000,2016-09-16 15:18:59-05:00,18000,True,False,['wikipedia.py'],['14f6e598929129b18a8ac89631aa1fec2734e56f'],6,6,12,1,,,
+528ff741d8e338ae8390112a7e524b6e6fb14250,Updates models using fixed feature definitions.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-09-16 21:13:08+00:00,0,2016-09-16 21:13:08+00:00,0,True,False,"['enwiki.nettrom_wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model']",['0833c6cbf8d78b9c36c9a77118fe15393def9ce4'],6,6,12,3,,,
+6900b87714403660b3fa705f4ca550e4e21c26d2,"Extract scores monthly, biannually, annually, every revision or latest",halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-09-09 11:24:24-05:00,18000,2016-10-13 22:35:47+00:00,0,True,False,['extract_scores.py'],['34aa6b7a69a116208ce4802efc8d80276fd584ac'],48,191,239,1,0.28421052631578947,0.0,0.6842105263157895
+ad7d5e7b886144c270635fbc4fce65bc6f2db4cd,Fixes divide by zero issues in ruwiki and frwiki feature lists.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-10-03 09:24:47+00:00,0,2016-10-13 22:36:31+00:00,0,True,False,"['frwiki.py', 'ruwiki.py']",['6900b87714403660b3fa705f4ca550e4e21c26d2'],2,2,4,2,,,
+8569756dfc1d1e05fcfb9a963336af87994b123e,Adds weights for ruwiki predicted classes.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-10-03 09:25:14+00:00,0,2016-10-13 22:36:31+00:00,0,True,False,['extract_scores.py'],['ad7d5e7b886144c270635fbc4fce65bc6f2db4cd'],1,8,9,1,,,
+d3af9139f94d8d05e4188bb93e0c4c5b3aab6f02,Updates for revscoring 1.3.0,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2016-10-13 15:51:52-05:00,18000,2016-10-13 17:37:06-05:00,18000,True,False,"['Makefile', 'enwiki.labeling_revisions.nettrom_30k.json', 'enwiki.rev_wp10.nettrom_30k.tsv', 'requirements.txt', '__init__.py', 'extractor.py', 'test_enwiki.py', 'test_frwiki.py', 'test_ruwiki.py', '__init__.py', 'extract_features.py', 'extract_from_text.py', 'extract_labelings.py', 'extract_text.py', 'fetch_text.py', 'score.py']",['d428449cd4451ff8ddf3c6d4fc841b012eb52e8f'],29940,29979,59919,16,1.0,1.0,1.0
+dd8125164c84169bc86e33f9624504794bcab5ce,Removes class name rewriting for ruwiki.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2016-10-13 17:33:47-05:00,18000,2016-10-13 17:37:06-05:00,18000,True,False,['ruwiki.py'],['d3af9139f94d8d05e4188bb93e0c4c5b3aab6f02'],11,14,25,1,,,
+b2dffd691d7fea395f97e8b1bfee9089d4be27ed,Updates extract_scores script to use proper ruwiki classnames,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2016-10-13 17:39:30-05:00,18000,2016-10-13 17:39:30-05:00,18000,True,False,['extract_scores.py'],['dd8125164c84169bc86e33f9624504794bcab5ce'],17,24,41,1,0.42857142857142855,0.0,0.42857142857142855
+eaf171eefef6841aae8e3e55d48cd76417ee9a14,article_quality --> wp10,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-10-21 18:44:10+00:00,0,2016-10-21 18:44:10+00:00,0,True,False,['enwiki.labeling_revisions.nettrom_30k.json'],['b2dffd691d7fea395f97e8b1bfee9089d4be27ed'],29454,29454,58908,1,,,
+93ec759f2a362ab854c96b0997cd31abb4c12bff,Cleans up extract_from_text utility>,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-10-21 18:44:55+00:00,0,2016-10-21 18:44:55+00:00,0,True,False,['extract_from_text.py'],['eaf171eefef6841aae8e3e55d48cd76417ee9a14'],10,10,20,1,,,
+2965f27269e6431075339ff1b675c5558eb14986,Updates makefile and models.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2016-10-21 18:45:13+00:00,0,2016-10-21 18:45:13+00:00,0,True,False,"['Makefile', 'enwiki.nettrom_wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model']",['93ec759f2a362ab854c96b0997cd31abb4c12bff'],38,37,75,4,,,
+8220812bf0f943a53a2be4d45bbcfaffb6fa52e4,Rebuilt models using revscoring==1.3.3,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-01-05 23:29:36+00:00,0,2017-01-05 23:29:36+00:00,0,True,False,"['enwiki.nettrom_wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model', 'requirements.txt']",['929bd61ce758a661add7ebb877ad2b887972c623'],7,7,14,4,,,
+82b87b9927b9e9ee6a30484bda71441ad03ab945,Implements about.py pattern.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2017-01-07 12:45:16-06:00,21600,2017-01-07 12:45:16-06:00,21600,True,False,"['setup.py', '__init__.py', 'about.py']",['8220812bf0f943a53a2be4d45bbcfaffb6fa52e4'],9,23,32,3,,,
+851957ec3823cd769dee3796b4e35364242f0737,Increments version to 0.3.2,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2017-01-07 12:46:05-06:00,21600,2017-01-07 12:46:05-06:00,21600,True,False,['about.py'],['82b87b9927b9e9ee6a30484bda71441ad03ab945'],1,1,2,1,,,
+a253239ed15ed410fe806ec9872fb162daa4d3cc,Let mwparserfromhell strip HTML comments,Morten Wang,nettrom@gmail.com,Morten Wang,nettrom@gmail.com,2017-03-09 14:57:58-08:00,28800,2017-03-09 14:57:58-08:00,28800,True,False,"['enwiki.py', 'frwiki.py', 'ruwiki.py']",['851957ec3823cd769dee3796b4e35364242f0737'],15,3,18,3,1.0,0.0,0.0
+301bd5cc70fb4903d5345088f83eb172083a9a3f,"Add example that should break, but needs testing",Morten Wang,nettrom@gmail.com,Morten Wang,nettrom@gmail.com,2017-03-16 11:49:02-07:00,25200,2017-03-16 11:49:02-07:00,25200,True,False,['test_enwiki.py'],['a253239ed15ed410fe806ec9872fb162daa4d3cc'],1,18,19,1,0.0,1.0,1.0
+b3254171325a98d45bda56927a58920602fd4934,Adds basic extraction pattern for item quality model.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2017-04-08 13:14:48-05:00,18000,2017-04-08 13:14:48-05:00,18000,True,False,"['Makefile', 'wikidatawiki.stratified_revisions.5k_sample.json', 'fetch_item_info.py', 'wikiclass.py']",['851957ec3823cd769dee3796b4e35364242f0737'],0,5198,5198,4,0.28735632183908044,0.5057471264367817,0.8275862068965517
+21707695b8d7f4288f4dc2cf81c7299ee10e10d7,Add Wikidata low-QID items,GlorianY,daniel.glorian20@gmail.com,GitHub,noreply@github.com,2017-04-09 18:46:14+02:00,-7200,2017-04-09 18:46:14+02:00,-7200,True,False,['Makefile'],['b3254171325a98d45bda56927a58920602fd4934'],3,5,8,1,,,
+5eab6788ad174a9955daec6a7e4cc00fad14bb6f,Add the Quarry link,GlorianY,daniel.glorian20@gmail.com,GitHub,noreply@github.com,2017-04-09 20:25:33+02:00,-7200,2017-04-09 20:25:33+02:00,-7200,True,False,['Makefile'],['21707695b8d7f4288f4dc2cf81c7299ee10e10d7'],1,1,2,1,,,
+b0fe327a384e55fe72ed2a606683570dbf773581,Updates the stratified revision sample for Wikidata.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2017-04-10 13:11:30-05:00,18000,2017-04-10 13:11:30-05:00,18000,True,False,"['Makefile', 'wikidatawiki.stratified_revisions.5k_sample.json', 'requirements.txt', 'fetch_item_info.py']",['5eab6788ad174a9955daec6a7e4cc00fad14bb6f'],5012,5013,10025,4,,,
+8137aa958534a92f2daa1c9a9352342eeb728b26,Fixes bug in fetch_item_info and regenerates 5k_sample,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2017-04-11 14:06:08-05:00,18000,2017-04-11 14:06:08-05:00,18000,True,False,"['wikidatawiki.stratified_revisions.5k_sample.json', 'fetch_item_info.py']",['20f08a1f5d1ab344eb94468ba364722a27b96200'],5000,5001,10001,2,0.0,0.0,1.0
+e3e0b3e23e54e212c00c84d947eb0c9e0335495d,Create trwiki.p,M. Serdar Karaman,Mavrikant@users.noreply.github.com,GitHub,noreply@github.com,2017-05-07 03:17:16+03:00,-10800,2017-05-07 03:17:16+03:00,-10800,True,False,['trwiki.p'],['8137aa958534a92f2daa1c9a9352342eeb728b26'],0,68,68,1,,,
+8855137be0e07a93d9576c74033939dd481447ab,Rename trwiki.p to trwiki.py,M. Serdar Karaman,Mavrikant@users.noreply.github.com,GitHub,noreply@github.com,2017-05-07 03:18:20+03:00,-10800,2017-05-07 03:18:20+03:00,-10800,True,False,['trwiki.py'],['e3e0b3e23e54e212c00c84d947eb0c9e0335495d'],0,0,0,1,,,
+1c84a2d27eb928d282741e566b240d01f55d3343,Add Item quality model,amir,Ladsgroup@gmail.com,amir,Ladsgroup@gmail.com,2017-05-15 19:55:19+00:00,0,2017-05-15 19:55:19+00:00,0,True,False,"['Makefile', 'wikidatawiki.item_quality.md', 'wikibase.py', 'wikidatawiki.py', 'fetch_labels.py', 'util.py']",['8137aa958534a92f2daa1c9a9352342eeb728b26'],2,478,480,6,0.797752808988764,0.6292134831460674,0.797752808988764
+2eaf0cab4f8de5c34485a1f9b424597a54720a45,Fix Makefile issue,amir,Ladsgroup@gmail.com,amir,Ladsgroup@gmail.com,2017-05-20 17:11:41+00:00,0,2017-05-20 17:11:41+00:00,0,True,False,"['Makefile', 'wikidatawiki.item_quality.rf.model', 'wikidatawiki.wp10.md']",['1c84a2d27eb928d282741e566b240d01f55d3343'],1,4,5,3,,,
+81fcca8c1add8cc3d6fc52ad2cb4c5d4d565d993,Minor fix to major_minor for item quality in Makefile.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2017-05-21 12:21:01+02:00,-7200,2017-05-21 12:21:01+02:00,-7200,True,False,['Makefile'],['5c9e8dfe5849f85a356dc5dfcc5ff57a1b7165c2'],1,1,2,1,,,
+3867691105724f7ad738b21b897aba30e92b9100,Minor fix to wikidata item_quality model version,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2017-05-21 12:23:46+02:00,-7200,2017-05-21 12:23:46+02:00,-7200,True,False,['wikidatawiki.item_quality.rf.model'],['81fcca8c1add8cc3d6fc52ad2cb4c5d4d565d993'],2,2,4,1,,,
+e5f4ba1ef75ea3b11015b753cde0072bb86f1804,Update trwiki.py,M. Serdar Karaman,Mavrikant@users.noreply.github.com,GitHub,noreply@github.com,2017-06-07 00:18:14+03:00,-10800,2017-06-07 00:18:14+03:00,-10800,True,False,['trwiki.py'],['8855137be0e07a93d9576c74033939dd481447ab'],1,0,1,1,,,
+4e3d026d7da04b44bb40e6d339c12a5655b058ef,Remove unnecessary mwparserfromhell import,Morten Wang,nettrom@gmail.com,Morten Wang,nettrom@gmail.com,2017-06-06 15:53:57-07:00,25200,2017-06-06 15:53:57-07:00,25200,True,False,"['enwiki.py', 'frwiki.py', 'ruwiki.py']",['2477b633ce7a4e8c3403b8d25cebf45ab49dd88c'],6,0,6,3,,,
+3762e42d46602e9d64a982d3f5c5b60446642e66,dzn,M. Serdar Karaman,Mavrikant@users.noreply.github.com,GitHub,noreply@github.com,2017-06-07 08:49:57+03:00,-10800,2017-06-07 08:49:57+03:00,-10800,True,False,['trwiki.py'],['e5f4ba1ef75ea3b11015b753cde0072bb86f1804'],12,8,20,1,0.0,0.0,0.0
+7f2224a42cc7aaa41d0b3d972416939d92cbeb6f,"Frwikisource page_level model  (#34)
+
+* Adds data extraction for frwikisource.
+
+* Adds feature list for frwikisource.
+
+* Updates to frwikisource features.
+
+* Fixes minor bug in frwikisource features.
+
+* Extends makefile for frwikisource.
+
+* Extends frwikisource features.
+
+* Adds frwikisource page_level model and actual tuning.",Aaron Halfaker,aaron.halfaker@gmail.com,Devin/Zppix,megadev44s.mail@gmail.com,2017-06-07 18:40:56+02:00,-7200,2017-06-07 11:40:56-05:00,18000,True,False,"['Makefile', 'frwikisource.page_level.gradient_boosting.model', 'frwikisource.page_level.md', 'frwikisource.page_level.old.md', 'frwikisource.py', 'wikisource.py']",['3867691105724f7ad738b21b897aba30e92b9100'],1,558,559,6,,,
+58305e4569c0856aac3f4afc7c223e84d411482e,Link to the main repo instead of halfak's fork,Devin/Zppix,megadev44s.mail@gmail.com,GitHub,noreply@github.com,2017-06-09 11:19:51-05:00,18000,2017-06-09 11:19:51-05:00,18000,True,False,['README.md'],['11afc915aa6ffbbeb303024705c856489e0cfbb7'],1,1,2,1,,,
+974a334a25cd584becfac4b4f5bc1b5e8565f21d,update the repo links on pythonhosted website,Devin/Zppix,megadev44s.mail@gmail.com,GitHub,noreply@github.com,2017-06-10 16:46:38-05:00,18000,2017-06-10 16:46:38-05:00,18000,True,False,['index.rst'],['83a5710c0ff1d885a6a16b536dd661777403f8df'],2,2,4,1,,,
+dcf085316ac92ee036cd800202ef7a147fae6086,Adds Make lines for extracting trwiki labels and minor fixes to extractor.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-06-11 17:49:24+00:00,0,2017-06-11 17:49:24+00:00,0,True,False,"['Makefile', 'trwiki.py']",['ffd43a73533c204e55a330f76ece4ebc5d10ce3e'],4,16,20,2,0.0,0.0,1.0
+d72d211e03ec885a80f2c3966b7692226f1eb4ae,Adds last bits for trwiki wp10 model and the model itself.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-06-15 21:11:50+00:00,0,2017-06-15 21:11:50+00:00,0,True,False,"['Makefile', 'trwiki.wp10.gradient_boosting.model', 'trwiki.wp10.md', 'trwiki.py', 'trwiki.py']",['dcf085316ac92ee036cd800202ef7a147fae6086'],6,331,337,5,0.0,0.0,1.0
+a8dc74374e3563758ac12ebe003a57b0e2d23f4a,Update about.py in wikiclass folder to the right github link,Pix1234,Megadev44s.mail@gmail.com,Pix1234,Megadev44s.mail@gmail.com,2017-06-16 17:02:07-05:00,18000,2017-06-16 17:02:07-05:00,18000,True,False,['about.py'],['ae04cca539085096e98df1dbd1833239c36dc735'],2,2,4,1,,,
+9ad35672d1035fdfed776700d08c20ee1dc54d6a,Fixes trwiki extractor so that it works for 'baslagıç' and rebuilds model.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-06-19 16:04:15+00:00,0,2017-06-19 16:04:15+00:00,0,True,False,"['Makefile', 'trwiki.wp10.gradient_boosting.model', 'trwiki.py']",['d72d211e03ec885a80f2c3966b7692226f1eb4ae'],3,4,7,3,,,
+7f709c1992104df7ffad6c2f454f8441658f2887,"Remove target files when commands error out
+
+See https://phabricator.wikimedia.org/T168904",Adam Roses Wight,awight@wikimedia.org,Adam Roses Wight,awight@wikimedia.org,2017-06-28 14:02:13-07:00,25200,2017-06-28 14:02:13-07:00,25200,True,False,['Makefile'],['36acf266ae5a8346423cc96f4ceff23b77f999b4'],0,3,3,1,,,
+b1b6552f604c02d48f734a21df093181057c4da1,Replace filenames with automatic Make variables,Adam Roses Wight,awight@wikimedia.org,Adam Roses Wight,awight@wikimedia.org,2017-06-28 14:02:46-07:00,25200,2017-06-28 14:02:46-07:00,25200,True,False,['Makefile'],['7f709c1992104df7ffad6c2f454f8441658f2887'],139,102,241,1,,,
+8bd31fbd8d32101872dfdec9c4c24f41872620e7,Adds new features to wikidatawiki.py (Glorian),GlorianY,daniel.glorian20@gmail.com,halfak,aaron.halfaker@gmail.com,2017-06-12 13:21:37+02:00,-7200,2017-06-29 15:05:01-05:00,18000,True,False,"['excluded_qids.csv', 'wikidatawiki.py']",['ce3032b2418ff0b4fa54160376dee9ce61b8279c'],4,630,634,2,1.0,0.6938775510204082,1.0
+876f6c1c560abcbc612bd14864672d39d7d0a1ff,Cleans up wikidatawiki feature list definitions.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2017-06-29 16:20:29-05:00,18000,2017-06-29 16:20:29-05:00,18000,True,False,"['excluded_qids.csv', 'wikidatawiki.py', 'wikimedia.py']",['8bd31fbd8d32101872dfdec9c4c24f41872620e7'],615,198,813,3,0.0,0.5,0.0
+a7cb066a6e13dfbd3120012d2dbd5b10eb69bb51,Adds minor fixes to wikidatawiki features and rebuilds model.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-06-29 21:46:52+00:00,0,2017-06-29 21:46:52+00:00,0,True,False,"['wikidatawiki.item_quality.rf.model', 'wikidatawiki.py']",['876f6c1c560abcbc612bd14864672d39d7d0a1ff'],3,7,10,2,1.0,0.0,1.0
+a88e2d1bb21057bdc7fd45a0fe7072e9133d1235,"Update enwiki.py
+
+fix name for ""who"" templates",Aaron Halfaker,aaron.halfaker@gmail.com,GitHub,noreply@github.com,2017-07-15 12:29:21-05:00,18000,2017-07-15 12:29:21-05:00,18000,True,False,['enwiki.py'],['ed63147f0192bae0758a81c81ed0de8b5d0669e8'],1,1,2,1,,,
+9526ae2468b9f14ea83db62ff57e8c4fa53e0213,Updates wikidatawiki tuning report.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-08-01 15:04:07+00:00,0,2017-08-01 15:04:07+00:00,0,True,False,['wikidatawiki.item_quality.md'],['a88e2d1bb21057bdc7fd45a0fe7072e9133d1235'],180,180,360,1,,,
+353e86fcc3bc9fa647d8ec9c226c548a2516d184,Updates enwiki model.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-08-02 22:40:17+00:00,0,2017-08-02 22:40:17+00:00,0,True,False,['enwiki.nettrom_wp10.gradient_boosting.model'],['a88e2d1bb21057bdc7fd45a0fe7072e9133d1235'],2,2,4,1,,,
+7a7cee5f5d0c7290bee63d739523557e4543496d,Resolves mwxml/mwtypes version conflict.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-08-02 22:40:37+00:00,0,2017-08-02 22:40:37+00:00,0,True,False,['requirements.txt'],['353e86fcc3bc9fa647d8ec9c226c548a2516d184'],2,2,4,1,,,
+a14b91d2e511244488fd8c63cd413a5c61987a2a,Removes old out of date tuning report for wikidatawiki.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-08-02 22:42:24+00:00,0,2017-08-02 22:42:24+00:00,0,True,False,['wikidatawiki.wp10.md'],['7a7cee5f5d0c7290bee63d739523557e4543496d'],0,0,0,1,,,
+f7f9aa0a4dbc912c127956322d82d522a67666c8,Bumps revscoring requirement to 2.0,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-08-12 10:25:06-04:00,14400,2017-08-12 16:18:49+00:00,0,True,False,['requirements.txt'],['b5e2a9d1f640a9ff66fdecc4ebec061d83f3d701'],1,1,2,1,,,
+39d861629ad120c5f8fe1111c17fe4639daf4244,Updates the Makefile for revscoring 2.0,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-08-12 10:25:33-04:00,14400,2017-08-12 16:18:49+00:00,0,True,False,['Makefile'],['f7f9aa0a4dbc912c127956322d82d522a67666c8'],79,105,184,1,,,
+bfe4f03d5b5d035606023d9a713b18c79c0be4e3,Updates models for revscoring 2.0,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-08-12 16:14:18+00:00,0,2017-08-12 16:20:48+00:00,0,True,False,"['frwiki.wp10.gradient_boosting.model', 'frwikisource.page_level.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model', 'trwiki.wp10.gradient_boosting.model', 'wikidatawiki.item_quality.rf.model']",['39d861629ad120c5f8fe1111c17fe4639daf4244'],11,8,19,5,,,
+8214fef54c25cd162510a89955ff18ad65a5db92,Adds trwiki to default model builds.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-08-13 14:40:58+00:00,0,2017-08-13 14:44:15+00:00,0,True,False,['Makefile'],['bfe4f03d5b5d035606023d9a713b18c79c0be4e3'],4,10,14,1,,,
+96b78566c8b3be9b4fe239b0106748933570cdf6,Adds updated trwiki model for revscoring 2.0,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-08-13 14:44:31+00:00,0,2017-08-13 14:44:31+00:00,0,True,False,['trwiki.wp10.gradient_boosting.model'],['8214fef54c25cd162510a89955ff18ad65a5db92'],0,3,3,1,,,
+10465011240bbc10fcfd5205fb61594b7b00b523,Rebuilds enwiki model with revscoring 2.0 -- something went wrong before.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-08-13 15:40:14+00:00,0,2017-08-13 15:40:14+00:00,0,True,False,['enwiki.nettrom_wp10.gradient_boosting.model'],['96b78566c8b3be9b4fe239b0106748933570cdf6'],2,2,4,1,,,
+821725a4d6f824ce19ff94e41c8579d0dae0a8e6,Fix typo in feature name,Sage Ross,ragesoss@gmail.com,GitHub,noreply@github.com,2017-08-31 14:07:57-07:00,25200,2017-08-31 14:07:57-07:00,25200,True,False,['enwiki.py'],['80a595bd466996476acbfbc40a70edc412f23402'],1,1,2,1,,,
+0244e6cad128878b3242deba9f9f9d09ab62483a,"Update classification examples to revscoring 2.0
+
+The example usage described in the readme and in the classification example
+in the ""examples"" folder used syntax from an older version. This commit
+updates those two to use the newer syntax, as well as referring to the
+current model in the repository.",Morten Wang,nettrom@gmail.com,Morten Wang,nettrom@gmail.com,2017-09-11 14:08:34-07:00,25200,2017-09-11 14:08:34-07:00,25200,True,False,"['README.md', 'classify_text.py']",['875aa774f006bd957cec7d3793c32e3f1e0522a5'],9,8,17,2,,,
+b1bb460a06093f8972c92ef94f8e0143963c72eb,Updates enwiki.labeling_revisions.nettrom_30k.json based on https://doi.org/10.6084/m9.figshare.1375406.v2,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2017-09-12 15:28:34-05:00,18000,2017-09-12 15:28:34-05:00,18000,True,False,['enwiki.labeling_revisions.nettrom_30k.json'],['83be589eceb25adea6ba88e6ad7e325b9524f34e'],29454,32460,61914,1,,,
+1fbf634a513720ea01ba18ea2cf5aa7c07d81f1f,Updates model and makefile for new nettrom data.,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-09-12 21:10:00+00:00,0,2017-09-12 21:10:00+00:00,0,True,False,"['Makefile', 'enwiki.labeling_revisions.nettrom_30k.json', 'enwiki.nettrom_wp10.gradient_boosting.model']",['b1bb460a06093f8972c92ef94f8e0143963c72eb'],32463,32463,64926,3,,,
+ef5194f5935f274eff12a75c8e5eaa9daac2686a,Rebuilds models for revscoring 2.0.8,Aaron Halfaker,aaron.halfaker@gmail.com,Aaron Halfaker,aaron.halfaker@gmail.com,2017-10-07 16:32:17+00:00,0,2017-10-07 16:32:17+00:00,0,True,False,"['enwiki.nettrom_wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'frwikisource.page_level.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model', 'trwiki.wp10.gradient_boosting.model', 'wikidatawiki.item_quality.rf.model']",['c4a081130d748971f2018207abbf792fae117e78'],12,12,24,6,,,
+3dea4d10df910e1a528d11c63c41c4f14feebc1f,"Start travis checks, move to pytest",Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2017-10-30 13:17:12+01:00,-3600,2017-10-30 13:17:12+01:00,-3600,True,False,"['.travis.yml', 'test_enwiki.py', 'test_extractor.py', 'test_frwiki.py', 'test_ruwiki.py', 'test_enwiki.py', 'test_frwiki.py']",['e80091124232d995f833420142cb96728eca8b58'],22,35,57,7,,,
+1ad71142d7fb1b955b5ce08e8205d3e3cd93aada,Trying to fix travis,Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2017-10-31 18:17:16+01:00,-3600,2017-10-31 18:17:16+01:00,-3600,True,False,['.travis.yml'],['e0490f97f2410047404d23da16b074d853ce3c86'],0,4,4,1,,,
+688645fbf799fd54a22a644cdbeddb3d4252ec2e,"Fix flake8 errors, fix test errors",Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2017-10-31 19:43:24+01:00,-3600,2017-10-31 19:56:40+01:00,-3600,True,False,"['.travis.yml', 'add_text.py', 'setup.py', 'about.py', 'enwiki.py', 'extractor.py', 'frwiki.py', 'ruwiki.py', 'test_enwiki.py', 'test_extractor.py', 'trwiki.py', 'enwiki.py', 'frwiki.py', 'frwikisource.py', 'ruwiki.py', 'test_enwiki.py', 'test_frwiki.py', 'trwiki.py', 'wikibase.py', 'wikidatawiki.py', 'wikimedia.py', 'wikipedia.py', 'extract_from_text.py', 'extract_labelings.py', 'extract_scores.py', 'extract_text.py', 'fetch_item_info.py', 'fetch_labels.py', 'fetch_text.py', 'util.py', 'wikiclass.py']",['1ad71142d7fb1b955b5ce08e8205d3e3cd93aada'],92,120,212,31,0.0,1.0,0.3333333333333333
+3b5f438663a1896be85ae4de2aff4fe326bf3724,"Use correct model class
+
+Bug: T179874",Adam Roses Wight,awight@wikimedia.org,Adam Roses Wight,awight@wikimedia.org,2017-11-07 11:04:17-05:00,18000,2017-11-07 11:04:17-05:00,18000,True,False,['score.py'],['8b786fe7dcd4c6c8896e311494379a961315df02'],2,2,4,1,,,
+2687c053495149efab6f49bddca1637cd4c18563,"Use correct model class in doc
+
+Bug: T179874",Adam Roses Wight,awight@wikimedia.org,Adam Roses Wight,awight@wikimedia.org,2017-11-07 11:04:17-05:00,18000,2017-11-07 11:11:14-05:00,18000,True,False,['index.rst'],['a22eb602319f7f0245126847681d0781668eed13'],2,2,4,1,,,
+eb45e5c8a9c04d200c7948c96827eaf53db67776,Make codecov less obtrusive,Adam Roses Wight,awight@wikimedia.org,Adam Roses Wight,awight@wikimedia.org,2017-12-21 11:34:11-05:00,18000,2017-12-21 11:34:11-05:00,18000,True,False,['.codecov.yml'],['a22eb602319f7f0245126847681d0781668eed13'],0,7,7,1,,,
+36c6185459331d5162f2258ec9e41679a5b9ffd0,Extends revscoring requirement to include 2.1.x,Aaron Halfaker,aaron.halfaker@gmail.com,GitHub,noreply@github.com,2018-01-03 18:22:03-06:00,21600,2018-01-03 18:22:03-06:00,21600,True,False,['requirements.txt'],['1e58a2b2936ce51d3ecaef9b90178c7370c3045d'],1,1,2,1,,,
+f4c476ef6e9867c14d0b2f8ed8bc52b45adaff47,"Remove deprecated parameter
+
+Bug: T184727",Adam Roses Wight,awight@wikimedia.org,Adam Roses Wight,awight@wikimedia.org,2018-01-11 10:38:00-05:00,18000,2018-01-11 10:38:00-05:00,18000,True,False,['Makefile'],['802f8e04805685f51ae17855c31c2a2803b6cb04'],2,1,3,1,,,
+8018c50f5f81b9dd51d04d16602223a291ef9258,Update tuning config,Adam Roses Wight,awight@wikimedia.org,Adam Roses Wight,awight@wikimedia.org,2018-01-11 11:35:41-05:00,18000,2018-01-11 11:35:41-05:00,18000,True,False,['classifiers.params.yaml'],['f4c476ef6e9867c14d0b2f8ed8bc52b45adaff47'],16,16,32,1,,,
+de5b7c2630d7d5c164cce5516c4b50af59fc264c,"New enwiki feature: total length of paragraphs without references
+
+Bug: T174384",Phantom42,nikitav30@gmail.com,Aaron Halfaker,ahalfaker@wikimedia.org,2018-01-13 12:44:50+02:00,-7200,2018-01-16 23:53:12+00:00,0,True,False,"['enwiki.nettrom_wp10.gradient_boosting.model', 'enwiki.nettrom_wp10.md', 'enwiki.py', 'test_enwiki.py']",['e5879f93bd29c41d6f125ce817fb1f7ac30688db'],189,222,411,4,0.0,1.0,1.0
+c6f4b78531ec4a32c8b45f643c0c880e096fa343,Rebuilds models for revscoring 2.1.0,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2018-01-17 20:36:54+00:00,0,2018-01-17 20:36:54+00:00,0,True,False,"['enwiki.nettrom_wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'frwikisource.page_level.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model', 'trwiki.wp10.gradient_boosting.model', 'wikidatawiki.item_quality.rf.model']",['de5b7c2630d7d5c164cce5516c4b50af59fc264c'],12,12,24,6,,,
+f932a901905400de5458be1bfd04b429f5b4f821,"Add Persian Wikipedia features
+
+Bug: T174684",Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2018-03-12 00:07:40+01:00,-3600,2018-03-12 00:07:40+01:00,-3600,True,False,"['fawiki.py', 'test_fawiki.py']",['6707f581baaf220f98453621321e847bc0a033d0'],0,190,190,2,0.7123287671232876,1.0,1.0
+c96ad238bc1a2027fc1d86849a36ba58def38a7b,"Rename wikiclass to articlequality
+
+Bug: T181820",Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2018-04-11 14:19:59+02:00,-7200,2018-04-11 17:12:08+02:00,-7200,True,False,"['.travis.yml', 'Makefile', 'README.md', '__init__.py', 'about.py', '__init__.py', 'enwiki.py', 'extractor.py', 'frwiki.py', 'ruwiki.py', '__init__.py', 'test_enwiki.py', 'test_extractor.py', 'test_frwiki.py', 'test_ruwiki.py', 'trwiki.py', '__init__.py', 'enwiki.py', 'fawiki.py', 'frwiki.py', 'frwikisource.py', 'ruwiki.py', '__init__.py', 'test_enwiki.py', 'test_fawiki.py', 'test_frwiki.py', 'trwiki.py', 'wikibase.py', 'wikidatawiki.py', 'wikimedia.py', 'wikipedia.py', 'wikisource.py', '__init__.py', 'extract_from_text.py', 'extract_labelings.py', 'extract_scores.py', 'extract_text.py', 'fetch_item_info.py', 'fetch_labels.py', 'fetch_text.py', 'score.py', 'util.py', 'wikiclass.py', 'conf.py', 'extractors.rst', 'functions.rst', 'index.rst', 'utilities.rst', 'classify_text.py', 'test_model.py', 'train_model.py', 'setup.py', 'enwiki.nettrom_wp10.md', 'enwiki.wp10.md', 'frwiki.wp10.md', 'frwikisource.page_level.md', 'frwikisource.page_level.old.md', 'ruwiki.wp10.md', 'trwiki.wp10.md', 'wikidatawiki.item_quality.md', 'utility', '__init__.py', '__init__.py']",['6696462a53c42ffea7f6385dd3c9ac58e7e1af0d'],130,131,261,63,,,
+e0c920bc1ce907f9ea278d343fa8f5755e517cad,Bump revscoring to 2.2.2,Adam Wight,awight@wikimedia.org,Adam Wight,awight@wikimedia.org,2018-04-16 19:54:48+00:00,0,2018-04-16 19:54:48+00:00,0,True,False,['requirements.txt'],['9c46192032fbf0d18164e313c58c90b4ba14330c'],1,1,2,1,,,
+a7af7f12edd7ebe7c3393a35716684f8c1bcf1b8,"Rename wikiclass, leftovers
+
+Bug: T181820",Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2018-04-18 16:05:34+02:00,-7200,2018-04-18 16:05:34+02:00,-7200,True,False,['articlequality.py'],['9c46192032fbf0d18164e313c58c90b4ba14330c'],0,0,0,1,,,
+cf963b284b7e985e60eb20c53f6f8006c263318f,"Rename articlequality main entry module
+
+Bug: T181820",Adam Wight,awight@wikimedia.org,Adam Wight,awight@wikimedia.org,2018-04-17 00:06:57+00:00,0,2018-04-19 15:27:34-07:00,25200,True,False,['articlequality.py'],['e0c920bc1ce907f9ea278d343fa8f5755e517cad'],0,0,0,1,,,
+4919b2ad25496ba7de3b5eae2208ac831257fdfa,Rebuild models for revscoring-2.2.2,Adam Wight,awight@wikimedia.org,Adam Wight,awight@wikimedia.org,2018-04-19 22:02:22+00:00,0,2018-04-19 15:27:52-07:00,25200,True,False,"['enwiki.nettrom_wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'frwikisource.page_level.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model', 'trwiki.wp10.gradient_boosting.model', 'wikidatawiki.item_quality.rf.model']",['cf963b284b7e985e60eb20c53f6f8006c263318f'],12,12,24,6,,,
+41a73e36a920bb76f8f36fddeadbed2539c7e73a,"Euwiki wp10 model (#67)
+
+* Adds features and extraction for euwiki.
+
+* Adds euwiki tuning.
+
+* Adds model for euwiki.
+
+* Fixes host for extraction for euwiki and rebuilds model.
+
+* Fake8 fixes.",Aaron Halfaker,aaron.halfaker@gmail.com,Adam Roses Wight,spam@ludd.net,2018-05-25 11:12:40-05:00,18000,2018-05-25 18:12:40+02:00,-7200,True,False,"['Makefile', 'euwiki.py', 'test_euwiki.py', 'euwiki.wp10.gradient_boosting.model', 'euwiki.wp10.md']",['8b8c67e7f0a7b39088fc26f05b6e747eb139181a'],2,354,356,5,0.5116279069767442,1.0,1.0
+e3e224ddc763ad6728f00e6f6a17e406c586c0e2,"Rename pagelevel prediction classes in frwikisource (#68)
+
+According to https://phabricator.wikimedia.org/T195979#4249618
+
+Bug: T195979",Amir Sarabadani,Ladsgroup@gmail.com,Adam Roses Wight,spam@ludd.net,2018-06-05 10:46:35+02:00,-7200,2018-06-05 10:46:35+02:00,-7200,True,False,"['Makefile', 'frwikisource.page_level.gradient_boosting.model', 'frwikisource.page_level.md']",['41a73e36a920bb76f8f36fddeadbed2539c7e73a'],213,14,227,3,,,
+532071812df736270c1db345b9bc2e04603b6e4b,Start fawiki wp10 model,Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2018-04-11 14:02:07+02:00,-7200,2018-07-10 14:32:57+00:00,0,True,False,['Makefile'],['e3e224ddc763ad6728f00e6f6a17e406c586c0e2'],0,75,75,1,,,
+319a9650a9950346fa02c0d44ce1eb088a11f939,Start fawiki wp10 model,Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2018-04-11 14:02:07+02:00,-7200,2018-07-10 14:32:57+00:00,0,True,False,"['Makefile', 'fetch_labels.py']",['532071812df736270c1db345b9bc2e04603b6e4b'],13,22,35,2,1.0,0.0,1.0
+3f3b8132e15853273e843454bc958fde0981c998,"Add fawiki wp10 model
+
+Bug: T190050",Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2018-04-14 15:58:59+00:00,0,2018-07-10 14:32:58+00:00,0,True,False,"['Makefile', 'fawiki.wp10.gradient_boosting.model', 'fawiki.wp10.md']",['319a9650a9950346fa02c0d44ce1eb088a11f939'],23,212,235,3,,,
+1c92b38ede9f0a2aacbd55034ca83913b7ca68b8,Add the new campaign,Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2018-07-09 13:39:42+00:00,0,2018-07-10 14:33:00+00:00,0,True,False,"['Makefile', 'fawiki.wp10.gradient_boosting.model', 'fawiki.wp10.md']",['3f3b8132e15853273e843454bc958fde0981c998'],180,185,365,3,,,
+e9c056826ab2bcd151c6f550a5c14a2b04d75e51,Fix stub statistics for Persian Wikipedia,Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2018-07-10 14:26:44+00:00,0,2018-07-10 14:33:01+00:00,0,True,False,"['Makefile', 'fawiki.wp10.gradient_boosting.model', 'fawiki.wp10.md']",['1c92b38ede9f0a2aacbd55034ca83913b7ca68b8'],165,165,330,3,,,
+480c879881d5286453e75e5fcdc83c0619efea9f,Update link to the github repo,Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2018-08-22 16:57:59+02:00,-7200,2018-08-22 17:17:00+02:00,-7200,True,False,"['README.md', 'about.py', 'index.rst']",['73e7aa93845023d58032d2cc9cc350aa2ded6131'],4,4,8,3,,,
+57edf786636548bed466aa4e9d9e213fe8d1093b,"glwiki article quality model (#70)
+
+* Adds glwiki to the makefile.
+
+* Adds features for glwiki
+
+* Adds tuning and model for glwiki.
+
+Adds tuning and model for glwiki to LFS.  Also includes basic LFS
+config so future models will be automatically added to LFS.",Aaron Halfaker,aaron.halfaker@gmail.com,Adam Roses Wight,spam@ludd.net,2018-11-29 15:21:19-06:00,21600,2018-11-29 13:21:19-08:00,28800,True,False,"['.gitattributes', 'Makefile', 'glwiki.py', 'glwiki.wp10.gradient_boosting.model', 'glwiki.wp10.md']",['480c879881d5286453e75e5fcdc83c0619efea9f'],0,308,308,5,,,
+5efaaa898761d5e426c983c54ad6666dc259f507,"Updates for revscoring 2.3.0 (#71)
+
+* Updated for revscoring 2.3.0 -- make, features, requirments
+
+* Models for revscoring 2.3.0 updates.
+
+* Minor flake8 fix
+
+* Adds model_info for all models.
+
+* Adds model_info calls to the Makefile.",Aaron Halfaker,aaron.halfaker@gmail.com,Adam Roses Wight,spam@ludd.net,2018-12-21 15:50:53-06:00,21600,2018-12-21 13:50:53-08:00,28800,True,False,"['Makefile', 'wikidatawiki.py', '.no-delete', 'enwiki.nettrom_wp10.md', 'euwiki.wp10.md', 'fawiki.wp10.md', 'frwiki.wp10.md', 'frwikisource.page_level.md', 'glwiki.wp10.md', 'ruwiki.wp10.md', 'trwiki.wp10.md', 'wikidatawiki.item_quality.md', 'enwiki.nettrom_wp10.gradient_boosting.model', 'euwiki.wp10.gradient_boosting.model', 'fawiki.wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'frwikisource.page_level.gradient_boosting.model', 'glwiki.wp10.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model', 'trwiki.wp10.gradient_boosting.model', 'wikidatawiki.item_quality.rf.model', 'requirements.txt']",['57edf786636548bed466aa4e9d9e213fe8d1093b'],112,892,1004,22,0.0,1.0,0.0
+c69b64f68bb33c4a4093850ee32ee20b0a2dac89,(WIP) Adds item_completes to wikidatawiki.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-01-10 17:40:55-06:00,21600,2019-01-10 17:40:55-06:00,21600,True,False,['wikidatawiki.py'],['5efaaa898761d5e426c983c54ad6666dc259f507'],1,27,28,1,1.0,1.0,1.0
+fe6c0e80c99fe8473dee0c96c7417c87d128da1d,"Add tests, fix style for item_completeness Feature",Marius Hoch,hoo@online.de,Marius Hoch,hoo@online.de,2019-01-17 02:35:53+01:00,-3600,2019-01-17 02:35:53+01:00,-3600,True,False,"['test_wikidatawiki.py', 'wikidatawiki.py']",['c69b64f68bb33c4a4093850ee32ee20b0a2dac89'],11,38,49,2,1.0,1.0,1.0
+1d0feffdcecbbee6fa11903531edc5e4e91b41e3,WIP A wikidatawiki model with item completeness,Marius Hoch,hoo@stat1007.eqiad.wmnet,Marius Hoch,hoo@online.de,2019-01-17 21:09:05+00:00,0,2019-01-17 22:20:04+01:00,-3600,True,False,"['Makefile', 'wikidatawiki.item_quality.md', 'wikidatawiki.item_quality.gradient_boosting.model', 'wikidatawiki.item_quality.rf.model', 'wikidatawiki.item_quality.md']",['95a6e90ffd3cbbece2edad61e6192281f1eeece0'],257,239,496,5,,,
+930f464dd5209eb8677dd74c46e9704d1b2e2263,"Add words_to_watch and rebuild the model
+
+https://phabricator.wikimedia.org/T214091",Marius Hoch,hoo@online.de,Marius Hoch,hoo@online.de,2019-01-30 01:04:16+00:00,0,2019-02-05 23:42:22+00:00,0,True,False,"['Makefile', 'enwiki.py', 'enwiki.nettrom_wp10.md', 'enwiki.nettrom_wp10.gradient_boosting.model', 'enwiki.nettrom_wp10.md']",['590eca55d8e1af561dce041c69df09b71b5b55c6'],226,231,457,5,,,
+902d23b0f6fd05af7bf6e00bec7eef5592885e4e,"Remove tuning report for deleted enwiki wp10 model
+
+The model has been removed in 2016 (f368a45a23)
+so no need to keep the tuning report around.",Marius Hoch,hoo@online.de,Marius Hoch,hoo@online.de,2019-02-06 00:47:57+01:00,-3600,2019-02-06 00:48:37+01:00,-3600,True,False,['enwiki.wp10.md'],['590eca55d8e1af561dce041c69df09b71b5b55c6'],199,0,199,1,,,
+747b7fdfc9ce404119b949d1379442e9e746af3a,Rebuilds ruwiki model with revscoring 2.3.4,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-02-08 18:49:11+00:00,0,2019-02-08 18:49:11+00:00,0,True,False,"['ruwiki.wp10.md', 'ruwiki.wp10.gradient_boosting.model']",['0e18b959a98d126619028f9482ace8dd78ce50f6'],50,50,100,2,,,
+cb65d4befdcb7398c3e80b4c8665c454cfb695fc,"Rebuild all models except ruwiki and trwiki with revscoring 2.3.3
+
+Bug: T215406",Amir Sarabadani,ladsgroup@gmail.com,Amir Sarabadani,ladsgroup@gmail.com,2019-02-08 22:28:46+00:00,0,2019-02-08 22:37:58+00:00,0,True,False,"['enwiki.nettrom_wp10.md', 'euwiki.wp10.md', 'fawiki.wp10.md', 'frwiki.wp10.md', 'frwikisource.page_level.md', 'glwiki.wp10.md', 'wikidatawiki.item_quality.md', 'enwiki.nettrom_wp10.gradient_boosting.model', 'euwiki.wp10.gradient_boosting.model', 'fawiki.wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'frwikisource.page_level.gradient_boosting.model', 'glwiki.wp10.gradient_boosting.model', 'wikidatawiki.item_quality.gradient_boosting.model']",['c5b81249567b50d7df1afbc76b71f6ec420cef92'],392,392,784,14,,,
+0132081e884425a18bbed1d8fe880a42e4475c49,Rebuilds trwiki model with revscoring 2.3.4,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-02-14 16:32:36+00:00,0,2019-02-14 16:32:36+00:00,0,True,False,"['trwiki.wp10.md', 'trwiki.wp10.gradient_boosting.model']",['c5b81249567b50d7df1afbc76b71f6ec420cef92'],61,61,122,2,,,
+d79b4f0351d62f6ca935400190cd9fd20a79be48,"Add ability to do a fast filtering pass before parsing wikitext, and svwiki extractor
+
+If the template name is nowhere to be seen in the unparsed wikitext, the template can't be in the wikitext.
+Based on this assumption, this new feature allows template extraction to be much faster.
+
+svwiki extractor written based on information provided at https://phabricator.wikimedia.org/T202202",Gilles Dubuc,gilles@wikimedia.org,Gilles Dubuc,gilles@wikimedia.org,2019-03-14 12:48:06+01:00,-3600,2019-03-18 14:47:29+01:00,-3600,True,False,"['extractor.py', 'svwiki.py']",['3e3c9887db73aec7fdb8b0f9de113ab0823c7bcf'],0,53,53,2,1.0,1.0,0.7692307692307693
+49f90aa1e60fdd169bb27723de09558d33ef0971,Adds Makefile stuff for svwiki model.,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,ahalfaker@wikimedia.org,2019-04-30 09:31:25-05:00,18000,2019-04-30 14:52:20+00:00,0,True,False,['Makefile'],['48e9564a9cb8b33bd4a63dbdb7369dc3881369aa'],9,80,89,1,,,
+77d61600f22be59202cfde89dff267944237b16e,Updates fetch_text for new rvslots API param,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-04-30 14:52:56+00:00,0,2019-04-30 14:52:56+00:00,0,True,False,['fetch_text.py'],['49f90aa1e60fdd169bb27723de09558d33ef0971'],3,4,7,1,0.0,1.0,0.0
+b84de7cbb90b25893ddae81d5e39a24b49fe1836,Adds Makefile stuff for svwiki model.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-04-30 09:31:25-05:00,18000,2019-04-30 11:15:43-05:00,18000,True,False,['Makefile'],['77d61600f22be59202cfde89dff267944237b16e'],2,0,2,1,,,
+2066b1bc6ed714daf51793d610f57c39669aab46,Adds svwiki feature_list,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-04-30 11:14:27-05:00,18000,2019-04-30 11:15:43-05:00,18000,True,False,['svwiki.py'],['b84de7cbb90b25893ddae81d5e39a24b49fe1836'],0,33,33,1,,,
+9de49714384ef78264fd4a433a99c21abdeed808,Tunes and trains svwiki model.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-04-30 17:10:27+00:00,0,2019-04-30 17:10:27+00:00,0,True,False,"['Makefile', 'fetch_text.py', 'svwiki.wp10.md', 'svwiki.wp10.gradient_boosting.model', 'svwiki.wp10.md']",['2066b1bc6ed714daf51793d610f57c39669aab46'],3,275,278,5,,,
+918882ec2ed948e24247ca4dadc892fc06e309df,Fixes docs in svwiki feature_list,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-04-30 17:13:39+00:00,0,2019-04-30 17:13:39+00:00,0,True,False,['svwiki.py'],['9de49714384ef78264fd4a433a99c21abdeed808'],1,1,2,1,,,
+c80a210209e6cabbbbe5a0659f2fbed2e4180d8a,Minor improvements to fitness for svwiki model.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-05-08 14:42:41+00:00,0,2019-05-08 14:42:41+00:00,0,True,False,"['Makefile', 'svwiki.wp10.md', 'svwiki.wp10.gradient_boosting.model', 'svwiki.wp10.md']",['918882ec2ed948e24247ca4dadc892fc06e309df'],223,223,446,4,,,
+4aa408a96e11d8780ac5d652005360b9036d81bd,Adds RELEASE_CRITERIA.md,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-07-18 10:47:45-05:00,18000,2019-07-18 10:48:34-05:00,18000,True,False,['RELEASE_CRITERIA.md'],['6a280e578510b5c141a5ced97190784b8184792b'],0,15,15,1,,,
+4bcbc6b2b0c129771177fe59264f00ff2b147b74,Remove old example code.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-07-18 11:29:19-05:00,18000,2019-07-18 11:29:19-05:00,18000,True,False,"['test_model.py', 'train_model.py']",['6a280e578510b5c141a5ced97190784b8184792b'],48,0,48,2,,,
+9958802538306c895ce1bf7fa7b214a65e9866c6,Adds feature for short format notes for enwiki,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-07-18 12:51:09-05:00,18000,2019-07-18 12:53:21-05:00,18000,True,False,"['enwiki.py', 'test_enwiki.py']",['6a280e578510b5c141a5ced97190784b8184792b'],10,35,45,2,1.0,1.0,1.0
+0e715c6709287f3c0c2a68b55f0837758cc4e98d,Increments version to 0.4.0,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-07-25 14:36:25+00:00,0,2019-07-25 14:36:25+00:00,0,True,False,['about.py'],['32d03e6200b0829446a55fa4a5797d94806521ef'],1,1,2,1,,,
+377a17064d03a4ca38d2989bf38699d3890f30e9,Minor formatting fixes to readme,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-07-25 10:45:52-05:00,18000,2019-07-25 10:45:52-05:00,18000,True,False,['README.md'],['0e715c6709287f3c0c2a68b55f0837758cc4e98d'],2,3,5,1,,,
+3cae8dfc610e6d3f303ce710dc76b4897a09e1f3,Adds new content_type param to setup.py,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-07-25 10:46:16-05:00,18000,2019-07-25 10:46:16-05:00,18000,True,False,['setup.py'],['377a17064d03a4ca38d2989bf38699d3890f30e9'],0,1,1,1,,,
+67addc7a16de52cea2728e0caa27e9952c860d08,Minor fix to requirements (revscoring 2.4.x),halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-07-25 10:47:45-05:00,18000,2019-07-25 10:47:45-05:00,18000,True,False,['requirements.txt'],['3cae8dfc610e6d3f303ce710dc76b4897a09e1f3'],1,1,2,1,,,
+33379c3ef7bb0cdc81830c4d9f0436cf211e5fa9,Increments version to 0.4.1,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-07-25 10:48:01-05:00,18000,2019-07-25 10:48:01-05:00,18000,True,False,['about.py'],['67addc7a16de52cea2728e0caa27e9952c860d08'],1,1,2,1,,,
+b19c3fecc4a90715d006996982f648a85bbd3aec,Rebuilds models using revscoring==2.5.1,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-07-30 16:09:14+00:00,0,2019-07-30 16:09:14+00:00,0,True,False,"['enwiki.nettrom_wp10.md', 'euwiki.wp10.md', 'fawiki.wp10.md', 'frwiki.wp10.md', 'frwikisource.page_level.md', 'glwiki.wp10.md', 'ruwiki.wp10.md', 'trwiki.wp10.md', 'wikidatawiki.item_quality.md', 'enwiki.nettrom_wp10.gradient_boosting.model', 'euwiki.wp10.gradient_boosting.model', 'fawiki.wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'frwikisource.page_level.gradient_boosting.model', 'glwiki.wp10.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model', 'svwiki.wp10.gradient_boosting.model', 'trwiki.wp10.gradient_boosting.model', 'wikidatawiki.item_quality.gradient_boosting.model', 'requirements.txt']",['7ccde78861613dce34054692d0cb8c047cda88a5'],553,550,1103,20,,,
+ed345c231976970daa507d73c8876b2b9a63cf39,Adds svwiki model and adds it to Makefile top.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-08-06 16:40:48+00:00,0,2019-08-06 16:40:48+00:00,0,True,False,"['Makefile', 'svwiki.wp10.md', 'svwiki.wp10.gradient_boosting.model']",['b19c3fecc4a90715d006996982f648a85bbd3aec'],51,56,107,3,,,
+e4af644d1e8ccc2b80cd6f3da758d24155b597b5,add changelog,Andy Craze,acraze@wikimedia.org,Andy Craze,acraze@wikimedia.org,2019-08-12 14:55:27-07:00,25200,2019-08-12 14:55:27-07:00,25200,True,False,['CHANGELOG.md'],['7e2b2ab177cad78930c99c63894e30d1ee6f0178'],0,200,200,1,,,
+dc7b80fc8bf998955de3f1ac2c4a0c2dd4ce723f,automate pypi release from travis,Andy Craze,acraze@wikimedia.org,Andy Craze,acraze@wikimedia.org,2019-08-09 17:58:28-07:00,25200,2019-08-12 16:04:39-07:00,25200,True,False,"['.travis.yml', 'deploy.sh']",['7e2b2ab177cad78930c99c63894e30d1ee6f0178'],1,9,10,2,,,
+e937880a007408d2636d90396d26079b666ec578,"update documentation link
+
+point to automated docs build on readthedocs",Andy Craze,acraze@wikimedia.org,GitHub,noreply@github.com,2019-08-14 15:05:48-07:00,25200,2019-08-14 15:05:48-07:00,25200,True,False,['README.md'],['0a02339e99bdba098ed40c82468b71b65a4e4983'],1,1,2,1,,,
+24318bb70c36ac87c826b05ba0829501de97a34b,fix pkg name in README,Andy Craze,acraze@wikimedia.org,GitHub,noreply@github.com,2019-08-15 09:25:04-07:00,25200,2019-08-15 09:25:04-07:00,25200,True,False,['README.md'],['e937880a007408d2636d90396d26079b666ec578'],1,1,2,1,,,
+b77709bbe6d2e41753e251f1c4cd8ad8e9656a1a,add sphinx-build test steps to ci,Andy Craze,acraze@wikimedia.org,Andy Craze,acraze@wikimedia.org,2019-09-06 16:05:27-07:00,25200,2019-09-06 16:17:31-07:00,25200,True,False,"['.travis.yml', 'requirements.txt']",['2aa8fade4f3e06820efabec862bc36b5b4d6706c'],0,7,7,2,,,
+a1397417a2b44a532512ebea2c5d0faea7f14994,Cleanup for sphinx docs.  No warnings.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-09-09 13:37:36-05:00,18000,2019-09-09 13:37:36-05:00,18000,True,False,"['articlequality.py', '__init__.py', 'enwiki.py', 'frwiki.py', 'ruwiki.py', 'svwiki.py', 'trwiki.py', '__init__.py', 'functions.rst', 'Makefile', 'conf.py', 'extractors.rst', 'index.rst', 'requirements.txt', 'utilities.rst']",['b77709bbe6d2e41753e251f1c4cd8ad8e9656a1a'],69,72,141,15,,,
+5eb37f99672ca4d946b64f2d0d81e54b390e4245,Adds nitpicky sphinx check to CI,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-09-09 13:38:12-05:00,18000,2019-09-09 14:47:20-05:00,18000,True,False,['.travis.yml'],['a1397417a2b44a532512ebea2c5d0faea7f14994'],2,2,4,1,,,
+a1a072cefa40ff7eeb7478b520d87cb1f916cc47,fix travis doc build,Andy Craze,acraze@wikimedia.org,Andy Craze,acraze@wikimedia.org,2019-09-13 17:23:30-07:00,25200,2019-09-13 17:23:30-07:00,25200,True,False,['.travis.yml'],['5eb37f99672ca4d946b64f2d0d81e54b390e4245'],2,2,4,1,,,
+33e5ccbaf839944fbb37046ad8ff9774b675abd8,fix readme index link,Andy Craze,acraze@wikimedia.org,Andy Craze,acraze@wikimedia.org,2019-09-18 15:35:45-07:00,25200,2019-09-18 15:48:38-07:00,25200,True,False,"['README.md', 'index.rst']",['a1a072cefa40ff7eeb7478b520d87cb1f916cc47'],2,2,4,2,,,
+048e58c227e490beb63ad7220e824afd772db383,"Add features for words that match eu, en, es dicts",kevinbazira,kvnbzr@gmail.com,kevinbazira,kvnbzr@gmail.com,2019-10-17 18:43:55+03:00,-10800,2019-10-17 18:43:55+03:00,-10800,True,False,['euwiki.py'],['04e8dc62b5e9f005bd272ffe48d8fa1d5e80b41a'],0,7,7,1,,,
+bc720ae003a4e3499f9bb191bd5d84c3fa470714,"Add es,eu dict installs to Tavis CI image",kevinbazira,kvnbzr@gmail.com,kevinbazira,kvnbzr@gmail.com,2019-10-18 10:25:58+03:00,-10800,2019-10-18 10:25:58+03:00,-10800,True,False,['.travis.yml'],['048e58c227e490beb63ad7220e824afd772db383'],0,2,2,1,,,
+6c2dca4ecc3d43d449ea0ae63e4d6513c36bd299,Update Travis CI Linux distro,kevinbazira,kvnbzr@gmail.com,kevinbazira,kvnbzr@gmail.com,2019-10-18 20:13:09+03:00,-10800,2019-10-18 20:13:09+03:00,-10800,True,False,['.travis.yml'],['bc720ae003a4e3499f9bb191bd5d84c3fa470714'],1,1,2,1,,,
+b8de66614a9f5c853eff688ba883c91e9899ef8e,Bumps revscoring requirement to 2.6.x,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-10-18 14:39:08-05:00,18000,2019-10-18 14:39:08-05:00,18000,True,False,['requirements.txt'],['6c2dca4ecc3d43d449ea0ae63e4d6513c36bd299'],1,1,2,1,,,
+9dc27eea1e4431c49737556f811df5e720087e96,Adds new euwiki sample and human labeled data to the Makefile.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2019-06-04 15:12:30-05:00,18000,2019-11-04 10:47:25-06:00,21600,True,False,['Makefile'],['cc62742e568bc87a64f1ea886c91f8834c19323b'],9,23,32,1,,,
+bc180f0ddf460430c4639f7296f495fd0427657a,Updates tuning report for euwiki.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-11-06 19:45:27+00:00,0,2019-11-06 19:45:27+00:00,0,True,False,['euwiki.wp10.md'],['213b3c85068d4c89ecee7feb09ca529710e642e4'],167,167,334,1,,,
+81155db1fb953f3eb8ab4c1865fa92b5f63615ae,Rebuilds euwiki model with new parameters.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-11-06 19:50:40+00:00,0,2019-11-06 21:31:08+00:00,0,True,False,"['Makefile', 'euwiki.wp10.md', 'euwiki.wp10.gradient_boosting.model', 'euwiki.wp10.random_forest.model']",['bc180f0ddf460430c4639f7296f495fd0427657a'],73,74,147,4,,,
+ed5567a0baaca719893ecb0ae52fb30e0f44ce01,Updates to enwiki model for revscoring-2.6.2,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-12-16 16:03:20+00:00,0,2019-12-16 16:03:20+00:00,0,True,False,"['Makefile', 'enwiki.nettrom_wp10.md', 'enwiki.nettrom_wp10.gradient_boosting.model', 'requirements.txt']",['f5b555be15745302eb584e1fe37bf4961ae58711'],62,62,124,4,,,
+2289b257cb21804dd60e3ae8e0fca95c403c9152,Rebuilds euwiki model excluding category_links from the prediction.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2019-12-18 19:33:30+00:00,0,2020-01-06 20:18:35+00:00,0,True,False,"['euwiki.py', 'euwiki.wp10.md', 'euwiki.wp10.random_forest.model']",['a0205993a26c945138633094cf2b7bca9f172278'],51,52,103,3,,,
+e7c86757711ccfa51e6a1f493345730d0d0535cb,"updated outdated docs link
+
+The readme pointed to the old wikiclass docs, this updated the link to point to our new readthedocs link.",Andy Craze,acraze@wikimedia.org,GitHub,noreply@github.com,2020-01-06 12:40:33-08:00,28800,2020-01-06 12:40:33-08:00,28800,True,False,['README.md'],['e2ba48de13887afb09e5894656aa7afa789e48e0'],1,1,2,1,,,
+878bcee0cc620576a6743c9916d416754bf4e47f,Cleans up usage of 'revision' in enwiki.py features.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2020-03-02 13:07:07-06:00,21600,2020-03-02 13:07:07-06:00,21600,True,False,['enwiki.py'],['549cdcdf15138d37d1400304547fac259d3a18d7'],6,1,7,1,,,
+a09a9b9ed5131207e280308f9f3a2af36e7e632f,"Create articlequality.feature_lists.enwiki.image_links Feature
+
+    Images are only counted when they are in the format:
+    [[File:Something.jpg]].
+    However, there are other patterns of adding images into tags and
+    templates. This PR matches such patterns and counts them
+    to give the total number of images.
+
+Task: T180822",Habeeb Shopeju,shopejuh@gmail.com,Habeeb Shopeju,shopejuh@gmail.com,2020-02-26 09:02:29+01:00,-3600,2020-03-03 22:43:10+01:00,-3600,True,False,"['enwiki.py', 'test_enwiki.py', 'requirements.txt']",['8d0f9e860a1ae5df807da802e9677da952104add'],3,158,161,3,0.3163265306122449,1.0,1.0
+417127460c242cd67a44d29c18dbcd70e0d763fd,"Add english.idioms.revision.matches
+
+Idioms can be problematic in formal articles. So,
+a list of idioms are needed to track them when they appear
+in the articles.
+
+Task: T247000",Habeeb Shopeju,shopejuh@gmail.com,Habeeb Shopeju,shopejuh@gmail.com,2020-03-05 20:46:09+01:00,-3600,2020-03-05 20:55:54+01:00,-3600,True,False,['enwiki.py'],['a09a9b9ed5131207e280308f9f3a2af36e7e632f'],0,7,7,1,,,
+0f25dbf4f251b480c3d0e4b1e5b02e14a1eb7f7a,Rebuild enwiki model with new image counts.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-03-05 15:16:19+00:00,0,2020-03-10 20:09:30+00:00,0,True,False,"['enwiki.nettrom_wp10.md', 'enwiki.nettrom_wp10.gradient_boosting.model']",['182631fe7f9025c3d7ad96d969e1a02e8dc5a60c'],43,43,86,2,,,
+c539bf97e0a6a8731f8cd06278e34ea4f15352c0,"Adds extractor for ptwiki with tests
+
+Also changes all from_template() methods to work as generators.",Chaitanya Mittal,chtnnh@gmail.com,Aaron Halfaker,ahalfaker@wikimedia.org,2020-03-11 20:47:10+04:00,-14400,2020-03-19 19:58:31+00:00,0,True,False,"['__init__.py', 'enwiki.py', 'extractor.py', 'frwiki.py', 'ptwiki.py', 'ruwiki.py', 'svwiki.py', 'test_ptwiki.py', 'trwiki.py']",['182631fe7f9025c3d7ad96d969e1a02e8dc5a60c'],10,93,103,9,0.3902439024390244,1.0,0.9024390243902439
+2a6432efdbcfc5c8ff3f704cb9e78446c6a35dfe,Adds the ptwiki pipeline and minor cleanups to extractor.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-06 13:49:57+00:00,0,2020-04-06 13:49:57+00:00,0,True,False,"['Makefile', '__init__.py', 'extractor.py', 'ptwiki.py', 'extract_labelings.py']",['749fd8faf75bd13d2994fe58b7237b6cf637ff9d'],16,110,126,5,0.0,0.6666666666666666,1.0
+6872fbbe0c306c870bc40f5a7a813e8899c572aa,Init feature_lists/ptwiki.py complete with tests,Chaitanya Mittal,chtnnh@gmail.com,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-06 20:10:27+04:00,-14400,2020-04-06 16:14:56+00:00,0,True,False,"['ptwiki.py', 'test_ptwiki.py']",['2a6432efdbcfc5c8ff3f704cb9e78446c6a35dfe'],0,327,327,2,0.6056338028169014,1.0,1.0
+ddb01089812ccd2313e830e2019b873ad4a57e1b,Adds ptwiki model with tuning and info.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-06 20:08:54+00:00,0,2020-04-06 20:08:54+00:00,0,True,False,"['Makefile', 'ptwiki.wp10.md', 'ptwiki.wp10.gradient_boosting.model', 'ptwiki.wp10.md']",['6872fbbe0c306c870bc40f5a7a813e8899c572aa'],1,275,276,4,,,
+5d7da6fd5000c76c4d52ceab86117e8a4de7ccb6,Fixes flake8 issues.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-06 20:14:01+00:00,0,2020-04-06 20:14:01+00:00,0,True,False,['extract_labelings.py'],['ddb01089812ccd2313e830e2019b873ad4a57e1b'],2,4,6,1,1.0,1.0,1.0
+635f2d0a5aad0c3e67d1315ebddeb72137448fcf,Adds myspell-pt to travis config.:,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-06 20:15:13+00:00,0,2020-04-06 20:15:13+00:00,0,True,False,['.travis.yml'],['5d7da6fd5000c76c4d52ceab86117e8a4de7ccb6'],0,1,1,1,,,
+c23aacd586b0889ea0ac26d32a9bb6b223821e88,Fixes ptwiki extractor test for new behavior.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-06 20:30:15+00:00,0,2020-04-06 20:30:15+00:00,0,True,False,['test_ptwiki.py'],['635f2d0a5aad0c3e67d1315ebddeb72137448fcf'],3,3,6,1,,,
+0e1769679901821ae9073dfc42d6537ccf028a83,Use mwp to parse ptwiki templates and handle AB/AD labels.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-07 14:36:59+00:00,0,2020-04-07 14:36:59+00:00,0,True,False,"['.gitignore', 'ptwiki.py', 'test_ptwiki.py']",['c23aacd586b0889ea0ac26d32a9bb6b223821e88'],13,45,58,3,1.0,1.0,1.0
+bacb604448bff13231ad59aa189b8caa35b5c281,ptwiki feature cleanup  (Thanks to Helder),Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-07 15:02:36+00:00,0,2020-04-07 15:02:36+00:00,0,True,False,"['ptwiki.py', 'test_ptwiki.py']",['0e1769679901821ae9073dfc42d6537ccf028a83'],21,38,59,2,0.8888888888888888,1.0,1.0
+2dd9f959785bd01b1b7c9efe1d7efdb1edd16c30,Rebuilds ptwiki model after feature cleanup.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-07 20:07:21+00:00,0,2020-04-07 20:07:21+00:00,0,True,False,"['ptwiki.py', 'ptwiki.wp10.md', 'ptwiki.wp10.gradient_boosting.model']",['bacb604448bff13231ad59aa189b8caa35b5c281'],53,57,110,3,1.0,1.0,1.0
+971ab5fff85c186ec9187674b34c0e1ea01a121a,More feature and extractor cleanup for ptwiki.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-13 20:58:49+00:00,0,2020-04-13 20:58:49+00:00,0,True,False,"['ptwiki.py', 'test_ptwiki.py', 'ptwiki.py']",['2dd9f959785bd01b1b7c9efe1d7efdb1edd16c30'],18,26,44,3,0.42857142857142855,0.0,1.0
+21f3fe1de447ce115d06886b16e2652f0faa4b4b,Rebuilds ptwiki model.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-14 17:50:17+00:00,0,2020-04-14 17:50:17+00:00,0,True,False,"['ptwiki.wp10.md', 'ptwiki.wp10.gradient_boosting.model']",['971ab5fff85c186ec9187674b34c0e1ea01a121a'],46,46,92,2,,,
+d5a8e3c0e61197d0f1f39f86269c25a8d60a298a,Addresses some flake8 issues.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-16 16:13:24+00:00,0,2020-04-16 16:13:24+00:00,0,True,False,"['ptwiki.py', 'test_ptwiki.py', 'ptwiki.py', 'test_ptwiki.py']",['21f3fe1de447ce115d06886b16e2652f0faa4b4b'],7,1,8,4,1.0,0.0,0.0
+c5f8c817ae56c0c8b09b365a03e5ca55483ed1c2,Handle spaces or underscore in ptwiki CN templates.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-17 19:34:16+00:00,0,2020-04-17 19:34:16+00:00,0,True,False,['ptwiki.py'],['d5a8e3c0e61197d0f1f39f86269c25a8d60a298a'],4,4,8,1,,,
+55c6ed60135af9d4d3629d9adcef0779db2fdf43,Increments version to 0.4.2,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-17 20:13:37+00:00,0,2020-04-17 20:13:37+00:00,0,True,False,"['CHANGELOG.md', 'about.py']",['d97dc39bbb28a4aa47225725f98520a5a5892048'],1,6,7,2,,,
+9bcbcf8b0da6912c9fce65b8f72d1a4b7318038b,"Fix doc for ptwiki extractor
+
+This extractor is more similar to frwiki's than enwiki's.",Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-04-24 16:25:21-03:00,10800,2020-04-24 16:25:21-03:00,10800,True,False,['ptwiki.py'],['55c6ed60135af9d4d3629d9adcef0779db2fdf43'],4,6,10,1,,,
+771c05204bd0a7f2d4571fe5542c2ac4e10d7865,"Update extract_labelings doc
+
+Follow-up to d3af9139f94d8d05e4188bb93e0c4c5b3aab6f02",Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-04-24 18:13:30-03:00,10800,2020-04-24 18:13:30-03:00,10800,True,False,['extract_labelings.py'],['ef99c8ac5d06edb83fe0b3d419860ed4d4f9a4ee'],1,1,2,1,,,
+71763d7e8e079b06eff3cf0d24eb187fe86d61a0,"Fix misleading dataset filenames
+
+Follows up 2a6432efdbcfc5c8ff3f704cb9e78446c6a35dfe
+
+For ptwiki.labelings.20200301.json, ""5"" is the least frequent label, 
+with only 1224 ocurrences. As such, we restrict all six labels to only 
+1200, and since 6*1200 = 7200 (!= 9000), change the filenames to reflect 
+that.",Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-04-28 09:29:00-03:00,10800,2020-04-28 09:29:00-03:00,10800,True,False,['Makefile'],['ada9078f74ca263d49ee24596695e961559a4aea'],7,7,14,1,,,
+bbfaf0633a826db7416e77f6ab97a90d4a7894a7,Fix typo in user_agent,Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-04-28 11:14:36-03:00,10800,2020-04-28 11:14:36-03:00,10800,True,False,['fetch_text.py'],['adb4e8b10311d750651b5ba152af99bc9adb938f'],1,1,2,1,,,
+f7dd6e60d02dcd9f60ad687ddfdc7b652616bfff,Added words_to_watch to feature_lists/ptwiki.py,Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-04-28 21:08:48+04:00,-14400,2020-04-28 21:08:48+04:00,-14400,True,False,"['ptwiki.py', 'requirements.txt']",['1eadecab5e22538e1c5bfcb8cfcef370aba2a797'],2,7,9,2,,,
+363d81ebafe620961a2cb4962f622d5446eb1ee5,"Detect labels in old ptwiki templates
+
+Before ""Template:Marca de projeto"" was created, there were separate
+templates for each wikiproject, such as ""Template:Asteróide/Marca"" and
+[many
+others](https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Projetos/Padroniza%C3%A7%C3%A3o/Marcas?oldid=57257364#Marcas_n%C3%A3o-padronizadas)
+
+Not detecting these could make [migration
+edits](https://pt.wikipedia.org/wiki/Discuss%C3%A3o:Ciclismo_nos_Jogos_Pan-Americanos_de_2007_-_Cross-country_masculino?diff=39571846)
+to be treated as if they were the first having a given label.",Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-04-28 20:26:55-03:00,10800,2020-04-29 08:39:29-03:00,10800,True,False,"['ptwiki.py', 'test_ptwiki.py']",['1eadecab5e22538e1c5bfcb8cfcef370aba2a797'],30,65,95,2,0.0,1.0,1.0
+2d0146988a9a404940f62605716c69753c0e7687,Rebuild ptwiki model with new features,Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-04-30 14:34:15+00:00,0,2020-04-30 14:34:15+00:00,0,True,False,"['ptwiki.wp10.md', 'ptwiki.wp10.gradient_boosting.model']",['f7dd6e60d02dcd9f60ad687ddfdc7b652616bfff'],58,58,116,2,,,
+4441ea2eeda014860549515f0d847584763517a8,Rebuilds ptwiki models with more observations.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-04-30 15:31:36+00:00,0,2020-04-30 15:31:36+00:00,0,True,False,"['Makefile', 'ptwiki.wp10.md', 'ptwiki.wp10.gradient_boosting.model']",['363d81ebafe620961a2cb4962f622d5446eb1ee5'],59,59,118,3,,,
+c121baae72934378705fb9ea1f8fb0fd55c5a8a5,Added new secondary feature in words_to_watch to feature_lists/ptwiki.py,Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-05-04 19:08:48+04:00,-14400,2020-05-04 19:08:48+04:00,-14400,True,False,['ptwiki.py'],['67fcd4b37c293ad8b255278f6d2b8b6d67039248'],1,2,3,1,,,
+c7504ecee1df0502202806d68ea5e4ae24b4ae9c,Rebuilt model with updated dataset,Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-05-04 19:31:48+00:00,0,2020-05-04 19:31:48+00:00,0,True,False,"['ptwiki.wp10.md', 'ptwiki.wp10.gradient_boosting.model', 'ptwiki.wp10.md']",['67fcd4b37c293ad8b255278f6d2b8b6d67039248'],214,214,428,3,,,
+152d77acf109c0b18757aee05997f16967fceb80,Rebuilt model with updated dataset,Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-05-04 20:10:50+00:00,0,2020-05-04 20:10:50+00:00,0,True,False,"['ptwiki.wp10.md', 'ptwiki.wp10.gradient_boosting.model']",['5d7a457677693f875d3e2dacb2902b0d99374070'],45,45,90,2,,,
+a686107e685b70d5173eba4a5462c4ffb0441809,"Match articles to talk pages using the API
+
+See https://phabricator.wikimedia.org/T251608",Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-05-05 08:09:00-03:00,10800,2020-05-05 09:02:28-03:00,10800,True,False,"['extract_labelings.py', 'fetch_text.py']",['5a7b0054af8f018d5569acc35648fc0293d0ed40'],3,18,21,2,0.8,0.8,0.7
+c758aebdb58d783635561f46a6cf217e98686d74,Update page_title and talk_page_title,Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-05-05 19:19:14-03:00,10800,2020-05-05 19:19:14-03:00,10800,True,False,"['extract_labelings.py', 'fetch_text.py']",['a686107e685b70d5173eba4a5462c4ffb0441809'],19,21,40,2,0.0,0.0,0.0
+912a2e9a29d955cff1ed4efdc207f339fefbfad4,Output `talk_page_id` when the page is not found,Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-05-06 15:08:38-03:00,10800,2020-05-06 15:08:38-03:00,10800,True,False,['fetch_text.py'],['c758aebdb58d783635561f46a6cf217e98686d74'],2,1,3,1,1.0,1.0,1.0
+8f4cd44829b5a49fc7d308dfcd2e482ba1c4eaeb,Keep the talk page name from dumps,Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-05-06 17:32:47-03:00,10800,2020-05-06 17:32:47-03:00,10800,True,False,"['extract_labelings.py', 'fetch_text.py']",['912a2e9a29d955cff1ed4efdc207f339fefbfad4'],4,4,8,2,,,
+c3b9b310e9b5d76c56183b0a780a8026950c6d58,"Fix extraction when there are multiple reverts
+
+* Invert the reverted status recursively
+* Add tests for the new behavior",Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-04-28 09:55:24-03:00,10800,2020-05-07 15:08:24-03:00,10800,True,False,"['extractor.py', 'test_ptwiki.py']",['5a7b0054af8f018d5569acc35648fc0293d0ed40'],59,140,199,2,0.125,0.975,0.85
+55f65a4a1b807d1a40a5c03855b0618b2c702e8f,Add weighted_sum utility to articlequality/utilities to calculate weighted sum from revscoring score output,Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-05-15 19:46:48+04:00,-14400,2020-05-15 19:46:48+04:00,-14400,True,False,['weighted_sum.py'],['1eadecab5e22538e1c5bfcb8cfcef370aba2a797'],0,58,58,1,1.0,1.0,0.6956521739130435
+84e21b56d7b5fd5a4be5d323f6db9124f42d2182,Fix minor issues in articlequality/utilities/weighted_sum.py,Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-05-15 21:01:10+04:00,-14400,2020-05-15 21:01:10+04:00,-14400,True,False,['weighted_sum.py'],['55f65a4a1b807d1a40a5c03855b0618b2c702e8f'],2,3,5,1,,,
+2611e5b6d557291cf4e2565b7a163ef70f9c5ef8,Fixed travis error in previous commit,Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-05-15 21:24:34+04:00,-14400,2020-05-15 21:24:34+04:00,-14400,True,False,['weighted_sum.py'],['84e21b56d7b5fd5a4be5d323f6db9124f42d2182'],1,2,3,1,1.0,1.0,0.0
+a5d87b593a0c8d9f630b624fadd8bc0bf0c0062e,Simplifies extractor for a two-pass flow.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2020-05-18 15:30:10-05:00,18000,2020-05-19 15:17:44-05:00,18000,True,False,"['extractor.py', 'test_ptwiki.py']",['943ba133f418579df9a0ac2e37fcd4c2030b5ff6'],67,76,143,2,0.0,1.0,1.0
+d45172394f860c7926b0d9ee87c3e0dc0369a0e3,"Convert page id to string explicitly
+
+Otherwise, when a line such as
+```
+{""dump_talk_page_title"": ""U-597"", ""talk_page_id"": 4294172, ""timestamp"": ""20140129153907"", ""project"": ""marca de projeto"", ""wp10"": ""1""}
+```
+is processed, we get an error like this:
+```
+Traceback (most recent call last):
+  File ""./utility"", line 4, in <module>
+    articlequality.main()
+  File ""/home/he7d3r/projects/articlequality/articlequality/articlequality.py"", line 54, in main
+    module.main(sys.argv[2:])
+  File ""/home/he7d3r/projects/articlequality/articlequality/utilities/fetch_text.py"", line 48, in main
+    run(labelings, output, session, verbose)
+  File ""/home/he7d3r/projects/articlequality/articlequality/utilities/fetch_text.py"", line 53, in run
+    for labeling in fetch_text(session, labelings, verbose=verbose):
+  File ""/home/he7d3r/projects/articlequality/articlequality/utilities/fetch_text.py"", line 89, in fetch_text
+    labeling['talk_page_id'] + "" "" + labeling['timestamp'])
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+Makefile:553: recipe for target 'datasets/ptwiki.labeled_revisions.with_text.9k_2020.json' failed
+make: *** [datasets/ptwiki.labeled_revisions.with_text.9k_2020.json] Error 1
+```
+This is a curious example, where the talk page was created BEFORE the content page:
+* 2014-01-29T15:39:07 https://pt.wikipedia.org/w/index.php?title=Discuss%C3%A3o:U-597&oldid=38035204
+* 2014-01-29T15:39:08‎ https://pt.wikipedia.org/w/index.php?title=U-597&oldid=38035205",Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-05-20 16:57:53-03:00,10800,2020-05-20 17:43:08-03:00,10800,True,False,['fetch_text.py'],['c3a66b04b52b23adab14011d61995dbd2e38684a'],1,2,3,1,0.0,0.0,0.0
+05578ef2334fee291ef632a60d9783ef5c74262f,Build new ptwiki model with data since 2014,Helder,he7d3r@gmail.com,Helder,he7d3r@gmail.com,2020-05-18 19:50:17-03:00,10800,2020-05-22 20:42:01-03:00,10800,True,False,"['Makefile', 'ptwiki.wp10.md', 'ptwiki.wp10.gradient_boosting.model', 'ptwiki.wp10.md']",['4aba6c085adb308f3f54f247ee00baee39d03192'],238,244,482,4,,,
+8ecc0532623828e9fca852db30ab3a9139193d94,Modified to use revscoring 2.8.1,Habeeb Shopeju,shopejuh@gmail.com,Habeeb Shopeju,shopejuh@gmail.com,2020-06-02 18:53:12+01:00,-3600,2020-06-02 20:17:29+01:00,-3600,True,False,"['.travis.yml', 'enwiki.py', 'extractor.py', 'frwiki.py', 'trwiki.py', 'fetch_item_info.py', 'requirements.txt', 'tox.ini']",['4aba6c085adb308f3f54f247ee00baee39d03192'],8,8,16,8,,,
+bcb74e782f09360dc1e9d1fff70f45510e20ccfb,Changed to v2.8.2,Habeeb Shopeju,shopejuh@gmail.com,Habeeb Shopeju,shopejuh@gmail.com,2020-06-03 15:55:17+01:00,-3600,2020-06-03 15:55:17+01:00,-3600,True,False,['requirements.txt'],['8ecc0532623828e9fca852db30ab3a9139193d94'],1,1,2,1,,,
+1a4a2161c7b260fd1aad6c5b580fd8736281c3bf,Rebuilds all models.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-06-04 18:22:22+00:00,0,2020-06-04 18:22:22+00:00,0,True,False,"['enwiki.nettrom_wp10.md', 'euwiki.wp10.md', 'fawiki.wp10.md', 'frwiki.wp10.md', 'frwikisource.page_level.md', 'glwiki.wp10.md', 'ruwiki.wp10.md', 'svwiki.wp10.md', 'trwiki.wp10.md', 'wikidatawiki.item_quality.md', 'enwiki.nettrom_wp10.gradient_boosting.model', 'euwiki.wp10.random_forest.model', 'fawiki.wp10.gradient_boosting.model', 'frwiki.wp10.gradient_boosting.model', 'frwikisource.page_level.gradient_boosting.model', 'glwiki.wp10.gradient_boosting.model', 'ruwiki.wp10.gradient_boosting.model', 'svwiki.wp10.gradient_boosting.model', 'trwiki.wp10.gradient_boosting.model', 'wikidatawiki.item_quality.gradient_boosting.model']",['6441bb0b47bf80fdf8f0a4e395b86180b28fc8ea'],543,543,1086,20,,,
+5162f0573fe16e62abc00333df819c1537a969f9,Rebuilds ptwiki models with revscoring-2.8.2,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2020-06-24 14:41:19+00:00,0,2020-06-24 14:41:19+00:00,0,True,False,"['Makefile', 'ptwiki.wp10.md', 'ptwiki.wp10.gradient_boosting.model']",['3eea22e2b50fd7552a05117e8381aa5c30f0b0b6'],54,56,110,3,,,
+8fc0538c580beb70a5832150571a4c2d0abf42ba,fix module names import type,Andy Craze,acraze@wikimedia.org,Andy Craze,acraze@wikimedia.org,2020-06-24 10:20:45-07:00,25200,2020-06-25 09:35:21-07:00,25200,True,False,"['__init__.py', '__init__.py']",['2b1ed6eaedb22cfd30660274c6a2c95e6eee9c40'],4,7,11,2,,,
+fc310abb81705dc94647ffb9a7ba2a532da52122,Init extractors/ukwiki.py,Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-05-28 20:11:08+04:00,-14400,2020-06-26 23:23:07+04:00,-14400,True,False,['ukwiki.py'],['c5df6cd1d7aff8146ed59d32d0892fffe7509118'],0,63,63,1,1.0,1.0,1.0
+dc2811fb77f72d3dd2b93e25d10ba93c8a9f9df1,"Fixes to extractors/ukwiki.py
+
+Init test file for extractors/ukwiki.py
+
+Add revision templates to extractors/tests/test_ukwiki.py
+
+Add ukwiki labelings extractor to Makefile and add revision templates in extractors/tests/test_ukwiki.py
+
+Fix minor typo in Makefile
+
+Fix minor issue in extractors/ukwiki.py
+
+Fix error in extractors/ukwiki.py
+
+Minor change to Makefile
+
+Init feature_lists/ukwiki.py
+
+Build Makefile pipeline for ukwiki
+
+Placeholder commit to test feature_lists/ukwiki.py
+
+Fixed minor typo in Makefile
+
+Train initial model for ukwiki
+
+Fix travis errors
+
+Fix build error
+
+Edit makefile to change order of quality in ukwiki
+
+Edit articlequality/extractors/ukwiki.py",Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-05-28 22:21:39+04:00,-14400,2020-07-17 18:23:15+04:00,-14400,True,False,"['Makefile', 'ukwiki.py', 'ukwiki.py', 'ukwiki.wp10.md', 'ukwiki.wp10.gradient_boosting.model']",['fc310abb81705dc94647ffb9a7ba2a532da52122'],26,351,377,5,1.0,1.0,1.0
+f21c91a7d338a14af5e5b8bc1f34b7905cea95ce,Rebuild model for ukwiki,Chaitanya Mittal,chtnnh@gmail.com,Chaitanya Mittal,chtnnh@gmail.com,2020-07-17 14:14:53+00:00,0,2020-07-17 18:23:21+04:00,-14400,True,False,"['ukwiki.wp10.md', 'ukwiki.wp10.gradient_boosting.model']",['dc2811fb77f72d3dd2b93e25d10ba93c8a9f9df1'],57,57,114,2,,,
+c4d09e2abf9e3c472b6c11191e66482dded23cd2,Rebuilds ukwiki with class order.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2020-07-17 16:24:18-05:00,18000,2020-07-17 16:24:18-05:00,18000,True,False,"['Makefile', 'ukwiki.wp10.md', 'ukwiki.wp10.gradient_boosting.model']",['843ee38e635d3858fd543a613b6a15e3c327280c'],54,54,108,3,,,
+c914047876e892243314491ae1ee0b4e46e3805c,"Add is_scholarlyarticle feature
+
+Scholarly articles have a different structure and often don't have many
+labels other than the one in the original language. This impacts them to
+a degree larger than what would be appropriate.
+
+Note that this effect likely cannot seen in the current training data
+was collected during a time when there were no scholarly articles and
+thus contains none.",Michael Große,mic.grosse@googlemail.com,Michael Große,mic.grosse@googlemail.com,2020-07-30 12:39:08+02:00,-7200,2020-07-30 14:17:14+02:00,-7200,True,False,['wikidatawiki.py'],['7448dbb7ce9c00d526b408176342639e16ab630b'],0,7,7,1,,,
+bb0e838485aa348f83292dbeb84268fb9d0e5500,Add some basic installation instructions to the readme,Michael Große,mic.grosse@googlemail.com,Michael Große,mic.grosse@googlemail.com,2020-07-30 13:25:50+02:00,-7200,2020-07-31 18:46:48+02:00,-7200,True,False,['README.md'],['7448dbb7ce9c00d526b408176342639e16ab630b'],0,13,13,1,,,
+3f891df1e2a4f6ed6492612e635151904d1f7435,"Move tests to outside of the production code
+
+It's standard in python
+
+(See similar PRs like ores#320 and bug T219360)",Amir Sarabadani,Ladsgroup@gmail.com,Amir Sarabadani,Ladsgroup@gmail.com,2020-08-18 14:46:08+02:00,-7200,2020-08-18 14:52:52+02:00,-7200,True,False,"['.travis.yml', 'test_extractor.py', '__init__.py', 'test_enwiki.py', 'test_extractor.py', 'test_frwiki.py', 'test_ptwiki.py', 'test_ruwiki.py', '__init__.py', 'test_enwiki.py', 'test_euwiki.py', 'test_fawiki.py', 'test_frwiki.py', 'test_ptwiki.py', 'test_wikidatawiki.py']",['7448dbb7ce9c00d526b408176342639e16ab630b'],14,14,28,15,,,
+d0d88fd24ac6078fe11cf3e21364c5a39a96ef54,"Reduce the size of wikidata model and simplify its logic
+
+For finding out what's the ""Wikimedia reference"" (=""Imported from
+English Wikipedia"" for example), this model maintains the whole list of
+Wikimedia projects. This is suboptimal for several reasons:
+ - The list needs maintaining, there will be new wikis added
+ - It'll be slow to check all values against this list
+ - It increases the memory footprint of the model (after this change the
+   model binary file is 200KB smaller).
+
+You can simply use property P143 instead of the value:
+https://www.wikidata.org/wiki/Property:P143
+Its English label is ""imported from Wikimedia project""
+
+I haven't retrained the model yet but I will do it on stat machines
+soon.",Amir Sarabadani,Ladsgroup@gmail.com,Amir Sarabadani,Ladsgroup@gmail.com,2020-07-27 23:35:41+02:00,-7200,2020-08-19 14:14:38+02:00,-7200,True,False,"['wikidatawiki.py', 'wikimedia.py']",['023e5491647fb100a42c8ab72236b48680d5fa93'],89,3,92,2,,,
+aaf77a37e7aabf7376e072e25250c67b4d130eee,"Add tests
+
+This paves the way for adding even more tests for wikidata",Amir Sarabadani,Ladsgroup@gmail.com,Amir Sarabadani,Ladsgroup@gmail.com,2020-08-19 15:29:42+02:00,-7200,2020-08-19 15:35:29+02:00,-7200,True,False,"['wikidatawiki.py', 'Q7251.json', 'test_wikidatawiki.py']",['d0d88fd24ac6078fe11cf3e21364c5a39a96ef54'],3,30,33,3,1.0,1.0,1.0
+2cb5bad4723a817036ff9f3e3e2f4f8eff95ddfe,"removed signal: number of sitelinks from wikibase
+
+See: https://phabricator.wikimedia.org/T260768",gtzatchkova,guergana.tzatchkova@wikimedia.de,gtzatchkova,guergana.tzatchkova@wikimedia.de,2020-08-20 17:51:05+02:00,-7200,2020-08-20 17:51:05+02:00,-7200,True,False,['wikibase.py'],['023e5491647fb100a42c8ab72236b48680d5fa93'],1,0,1,1,,,
+00ba24884e4e489f93848accf87c824bdcebef54,added test instructions to README,gtzatchkova,guergana.tzatchkova@wikimedia.de,gtzatchkova,guergana.tzatchkova@wikimedia.de,2020-08-24 10:36:43+02:00,-7200,2020-08-24 10:36:43+02:00,-7200,True,False,['README.md'],['b38cac78f47094ef8f2a3767cec91b137cb55f68'],0,8,8,1,,,
+c9473fb54840b6738c29cc94120876a8a3c2077f,"Add a list of external identifiers for wikidata features
+
+This is the only half-decent solution I managed to find after checking
+everything, including but not limited to:
+ - Adding it as a separate dataset
+ - Adding EntityDoc datasource
+   (https://github.com/wikimedia/revscoring/pull/496)
+ - Trying caching
+(More details in https://phabricator.wikimedia.org/T260778#6403173)
+
+Bug: T259351",Amir Sarabadani,Ladsgroup@gmail.com,Michael Große,mic.grosse@googlemail.com,2020-08-25 12:09:16+02:00,-7200,2020-08-26 01:11:29+02:00,-7200,True,False,"['property_datatypes.py', 'wikidatawiki.py', 'test_wikidatawiki.py']",['533a0f2afc8c05c2d103e799fbb3c60901bc2b41'],5,5321,5326,3,1.0,0.2222222222222222,1.0
+479ede9e647dc6e1b8af4f697ce47fd63f82f000,"Reverse the condition in external identifier detection
+
+The number of external identifiers is so big that it makes sense the
+flip the condition on finding external identifiers and assume everything
+is external identifier unless proven otherwise.",Amir Sarabadani,Ladsgroup@gmail.com,Michael Große,mic.grosse@googlemail.com,2020-08-25 16:17:12+02:00,-7200,2020-08-26 01:11:29+02:00,-7200,True,False,"['property_datatypes.py', 'wikidatawiki.py']",['c9473fb54840b6738c29cc94120876a8a3c2077f'],5297,2566,7863,2,,,
+2650bf6aaa3ca6c5a47e78ea34b9b575c3603403,"add docs to properties datatype list (#150)
+
+This list was automatically generated and then manually reformatted. This process is being documented so it can be repeated consistently and be improved upon.
+
+Currently, this documentation is in the only file of this type. Should this file be moved to its own directory at some point, it might make sense to move this documentation to its own README.md
+
+Bug: T261295",Ichi Rarámuri,pestanias@yahoo.com,GitHub,noreply@github.com,2020-08-28 04:47:50-05:00,18000,2020-08-28 11:47:50+02:00,-7200,True,False,['property_datatypes.py'],['ae86ab29323ae0aee96ffff29a233c9bfd3780f3'],0,13,13,1,,,
+11a1baf7d1afaefa5f93eea94d0b277746eba785,"Add is_astronomical_object feature for wikidatawiki
+
+Bug: T260770",Amir Sarabadani,Ladsgroup@gmail.com,Amir Sarabadani,Ladsgroup@gmail.com,2020-08-28 14:10:32+02:00,-7200,2020-08-28 14:20:21+02:00,-7200,True,False,"['wikidatawiki.py', '__init__.py', 'items_lists.py', 'property_datatypes.py', 'test_wikidatawiki.py']",['2650bf6aaa3ca6c5a47e78ea34b9b575c3603403'],9,70,79,5,0.15789473684210525,1.0,1.0
+4d80418e690ebda7c14a3590cec498e9ed7d9aef,Add documentation for list of astronomical objects,Amir Sarabadani,Ladsgroup@gmail.com,Amir Sarabadani,Ladsgroup@gmail.com,2020-08-28 16:59:50+02:00,-7200,2020-08-28 16:59:50+02:00,-7200,True,False,['items_lists.py'],['11a1baf7d1afaefa5f93eea94d0b277746eba785'],0,2,2,1,,,
+67d413b3cd19ff85e49823bf78af21580fb0c7f9,Add the feature to the list,Amir Sarabadani,Ladsgroup@gmail.com,Amir Sarabadani,Ladsgroup@gmail.com,2020-08-28 21:21:17+02:00,-7200,2020-08-28 21:21:17+02:00,-7200,True,False,['wikidatawiki.py'],['4d80418e690ebda7c14a3590cec498e9ed7d9aef'],0,1,1,1,,,
+8727b574cc16eb445c904d9db5cb10ddb8acbac0,added retraining model info,gtzatchkova,guergana.tzatchkova@wikimedia.de,gtzatchkova,guergana.tzatchkova@wikimedia.de,2020-08-31 14:45:12+02:00,-7200,2020-08-31 14:45:12+02:00,-7200,True,False,['README.md'],['581a2aaa14eecb692588956a66bbdde74a278fc1'],0,6,6,1,,,
+6fd686282921d4590d4d490298793e147c0bca64,added non-external-id statement count as a signal,gtzatchkova,guergana.tzatchkova@wikimedia.de,gtzatchkova,guergana.tzatchkova@wikimedia.de,2020-08-31 17:08:21+02:00,-7200,2020-08-31 17:08:21+02:00,-7200,True,False,"['wikidatawiki.py', 'test_wikidatawiki.py']",['581a2aaa14eecb692588956a66bbdde74a278fc1'],2,17,19,2,1.0,1.0,1.0
+7c1dfc2f3222eb006a366bd9a80c720fba9bb752,"Update README.md
+
+Co-authored-by: Michael Große <mic.grosse@googlemail.com>",Ichi Rarámuri,guergana.tzatchkova@wikimedia.de,GitHub,noreply@github.com,2020-09-07 02:56:58-05:00,18000,2020-09-07 02:56:58-05:00,18000,True,False,['README.md'],['8727b574cc16eb445c904d9db5cb10ddb8acbac0'],1,1,2,1,,,
+60d207154ccbcbf938eeabf5fb79ffd879f1bbbd,"Update README.md
+
+Co-authored-by: Michael Große <mic.grosse@googlemail.com>",Ichi Rarámuri,guergana.tzatchkova@wikimedia.de,GitHub,noreply@github.com,2020-09-07 04:04:55-05:00,18000,2020-09-07 04:04:55-05:00,18000,True,False,['README.md'],['7c1dfc2f3222eb006a366bd9a80c720fba9bb752'],1,1,2,1,,,
+9cc3039fb1138bc580619f8f5af7ca44512a230c,"Add ratio-based references features
+
+These are useful in case of finding how many of statements have proper
+references and if an item is properly referenced or not.
+
+There's a feature that hold the total number of references but it's not
+useful and I'm not sure the model combine it properly with the total
+number of claims
+
+_filter_nonexternal_identifier_statements is called multiple times while
+evaluating a single entity. It might be worthwhile to look into whether
+using an LRUCache here would improve performance.",Amir Sarabadani,Ladsgroup@gmail.com,Michael Große,mic.grosse@googlemail.com,2020-08-28 23:35:42+02:00,-7200,2020-09-07 15:26:24+02:00,-7200,True,False,"['wikidatawiki.py', 'test_wikidatawiki.py']",['d9912510a38c63fe1df138c6ae201a01f307e572'],3,83,86,2,1.0,1.0,1.0
+e39551a1446de3350647f37fa42e5aaed0a8dada,"Extract pytest fixture
+
+This entity is useful for other tests as well, so extract it into a
+reusable fixture.",Michael Große,mic.grosse@googlemail.com,Michael Große,mic.grosse@googlemail.com,2020-09-07 15:37:25+02:00,-7200,2020-09-07 15:52:45+02:00,-7200,True,False,['test_wikidatawiki.py'],['9cc3039fb1138bc580619f8f5af7ca44512a230c'],30,33,63,1,1.0,1.0,1.0
+c1d1dda9d08fbbfd757672ee74e812371beea914,"Add check for image and commons media
+
+Should improve accuracy of dump scoring which doesn't use property
+suggester data. Maybe also of API scoring by giving higher weight to
+images/media types.
+
+Co-Authored-by: Marius Hoch <hoo@online.de>
+Co-Authored-by: gtzatchkova <guergana.tzatchkova@wikimedia.de>",Michael Große,mic.grosse@googlemail.com,Michael Große,mic.grosse@googlemail.com,2020-08-26 00:58:24+02:00,-7200,2020-09-07 15:58:29+02:00,-7200,True,False,"['wikidatawiki.py', 'property_datatypes.py', 'test_wikidatawiki.py']",['e39551a1446de3350647f37fa42e5aaed0a8dada'],6,106,112,3,1.0,1.0,1.0
+49845d9f29c9752a2cf1d92b4c249d412db6e000,"Fix fatal error when creating the model info
+
+This did not affect the actual training of the network, but it caused an
+fatal error in the last step when running `revscoring model_info`",Michael Große,mic.grosse@googlemail.com,Michael Große,mic.grosse@googlemail.com,2020-09-07 17:30:06+02:00,-7200,2020-09-07 17:30:06+02:00,-7200,True,False,['wikidatawiki.py'],['d088831d779d5c0d97f4ca39e02453b23f0b3ea4'],1,2,3,1,,,
+e77162d4a6e9d2c9ed010574296f4a38cf3a9562,updated variables and function names,gtzatchkova,guergana.tzatchkova@wikimedia.de,gtzatchkova,guergana.tzatchkova@wikimedia.de,2020-09-07 17:52:14+02:00,-7200,2020-09-07 17:52:14+02:00,-7200,True,False,"['wikidatawiki.py', 'test_wikidatawiki.py']",['6fd686282921d4590d4d490298793e147c0bca64'],7,7,14,2,,,
+bf63e0e8006591e1018e53e77b7073d4db80b22b,Fix the flake8 error,Amir Sarabadani,Ladsgroup@gmail.com,Amir Sarabadani,Ladsgroup@gmail.com,2020-09-07 19:35:06+02:00,-7200,2020-09-07 19:35:06+02:00,-7200,True,False,['test_wikidatawiki.py'],['9a4b5dacc38888d31c5a5fc6a858dbc28675f79e'],0,1,1,1,,,
+7ffb5676ba8d33f6e877a8e1818a5979412207e2,"Add tests to ensure item parts are being counted correctly
+
+Bug: T261328",Amir Sarabadani,Ladsgroup@gmail.com,Amir Sarabadani,Ladsgroup@gmail.com,2020-09-08 19:18:56+02:00,-7200,2020-09-08 19:18:56+02:00,-7200,True,False,['test_wikidatawiki.py'],['bf63e0e8006591e1018e53e77b7073d4db80b22b'],0,31,31,1,0.0,1.0,1.0
+264644c1406f0d2cabfec06521f18ca8c88d17b7,"Fix extract_scores utility
+
+ScorerModel has been deprecated and you need to use Model instead.
+That's what has been done already in commits like
+https://github.com/wikimedia/revscoring/commit/99cf055dc21bb6736b433b4602b538a30d6241be
+
+Bug: T261330",Amir Sarabadani,Ladsgroup@gmail.com,Amir Sarabadani,Ladsgroup@gmail.com,2020-09-09 00:40:38+02:00,-7200,2020-09-09 00:40:38+02:00,-7200,True,False,"['extract_scores.py', 'score.py']",['bf63e0e8006591e1018e53e77b7073d4db80b22b'],3,3,6,2,,,
+18fcdc49156a6ba100775a37408a0a0ae308da46,updated var names and fixed descriptions,gtzatchkova,guergana.tzatchkova@wikimedia.de,gtzatchkova,guergana.tzatchkova@wikimedia.de,2020-09-09 12:50:05+02:00,-7200,2020-09-09 12:50:05+02:00,-7200,True,False,"['wikidatawiki.py', 'test_wikidatawiki.py']",['b96c05a726c27d25c702949576d23ad03e083fa6'],9,9,18,2,,,
+6e482eb888b56d20504b6732f1c5b20f07e2e7ac,"Split important languages to have their own feature
+
+Currently, if an item has 4 out of 10 important languages as label,
+they'll get a feature like ""4"" which reduces the good predictors like
+the difference between English and Chinese. With this change they get a
+bigger set of features in a one-hot encoding way. For example
+[0, 0, 1, 0, 1, 0, 1, 0, ...]
+
+This increases number of correct predictions on the labelled dataset
+from 4175 to 4198 (out of 4951).",Amir Sarabadani,Ladsgroup@gmail.com,Michael Große,mic.grosse@googlemail.com,2020-09-10 10:44:00+02:00,-7200,2020-09-10 14:22:56+02:00,-7200,True,False,"['wikidatawiki.py', 'test_wikidatawiki.py']",['23536023cc27967eb322402527e4dbde4ebe1fb0'],25,73,98,2,0.0,1.0,1.0
+ae9808e905c06a4f48e36a3122bfeec4d75ca363,"Remove impactless property suggester feature
+
+It turned out, that this feature has no significant effect on the
+scoring of an item revision. And what slight effect it has seemed to be
+minimally negative.
+
+In addition, it comes with significant drawbacks as it requires live
+requests to the wikidata API during training and scoring via the API.
+Those requests are too numerous while processing dumps, so they were
+always skipped there. This meant that revisions could theoretically have
+had a different score when scored via the API or based on dumps, which
+is also undesirable.
+
+Bug: https://phabricator.wikimedia.org/T261850",Michael Große,mic.grosse@googlemail.com,Michael Große,mic.grosse@googlemail.com,2020-09-10 14:40:42+02:00,-7200,2020-09-10 16:59:44+02:00,-7200,True,False,"['wikidatawiki.py', 'test_wikidatawiki.py']",['6e482eb888b56d20504b6732f1c5b20f07e2e7ac'],45,0,45,2,0.0,0.0,0.0
+e60bd92a81c0abfb5405c75ae04e4c824413bcfe,"Add new wikidata model
+
+Trained on stat1005",Amir Sarabadani,ladsgroup@stat1005.eqiad.wmnet,Amir Sarabadani,ladsgroup@stat1005.eqiad.wmnet,2020-09-08 23:22:54+00:00,0,2020-09-10 19:32:45+00:00,0,True,False,"['Makefile', 'wikidatawiki.item_quality.md', 'wikidatawiki.item_quality.gradient_boosting.model', 'wikidatawiki.item_quality.md']",['f479d3fe7917fcecddfb77df249160be244b86d6'],212,224,436,4,,,
+ededed16c66e24ebe932dfbe9c2d833bdf7cbd59,Rebase and rebuild,Amir Sarabadani,ladsgroup@stat1005.eqiad.wmnet,Amir Sarabadani,ladsgroup@stat1005.eqiad.wmnet,2020-09-09 16:27:24+00:00,0,2020-09-10 19:45:40+00:00,0,True,False,['wikidatawiki.item_quality.gradient_boosting.model'],['e60bd92a81c0abfb5405c75ae04e4c824413bcfe'],0,0,0,1,,,
+d70ccdf164bee29287404f6a1e2df37c1dbfdcb9,Rebbase and rebuild again,Amir Sarabadani,ladsgroup@stat1005.eqiad.wmnet,Amir Sarabadani,ladsgroup@stat1005.eqiad.wmnet,2020-09-10 19:50:45+00:00,0,2020-09-10 19:50:45+00:00,0,True,False,"['wikidatawiki.item_quality.md', 'wikidatawiki.item_quality.gradient_boosting.model']",['ededed16c66e24ebe932dfbe9c2d833bdf7cbd59'],47,47,94,2,,,
+9dcd4280a06a1eadf3fcefe34f4239e366120fde,"Allow setting custom classes and weights when extracting scores
+
+This is needed to allow running the extract_scores utility for wikidata
+dumps as well, as the Wikidata model's class weights conflict with
+the predefined ones.",Michael Große,mic.grosse@googlemail.com,Michael Große,mic.grosse@googlemail.com,2020-09-10 16:53:46+02:00,-7200,2020-09-14 11:21:55+02:00,-7200,True,False,['extract_scores.py'],['6e482eb888b56d20504b6732f1c5b20f07e2e7ac'],0,16,16,1,0.3333333333333333,0.3333333333333333,1.0
+831344e14a53992895715fb3d51d00616a7a2529,Fix flake8 errors,Amir Sarabadani,Ladsgroup@gmail.com,Michael Große,mic.grosse@googlemail.com,2020-09-14 12:38:22+02:00,-7200,2020-09-14 12:51:31+02:00,-7200,True,False,"['wikidatawiki.py', 'test_wikidatawiki.py']",['aed147875ab844228b477136c1e6ba6f8da4a072'],4,12,16,2,1.0,1.0,1.0
+9ad948b2a14d45be7f59de9938d0723715f9edad,"Rebuild models but on stretch
+
+The stat machines are upgraded to buster making the previous model unusable in production
+due to the pickle inconsistency...",Ladsgroup,ladsgroup@ores-staging-01.ores-staging.eqiad1.wikimedia.cloud,Ladsgroup,ladsgroup@ores-staging-01.ores-staging.eqiad1.wikimedia.cloud,2020-10-26 18:20:29+00:00,0,2020-10-26 18:20:29+00:00,0,True,False,"['wikidatawiki.item_quality.md', 'wikidatawiki.item_quality.gradient_boosting.model']",['05a0620ad5253e186f628b923b07467527bb25aa'],45,45,90,2,,,
+b8ab74d2d8983ee2b88ff4be5270fcad62e653ac,"Rebuild the wikidata model, again, this time with the frozen requirements
+
+Given the different schemas in scipy, the other one didn't work either...",Ladsgroup,ladsgroup@ores-staging-01.ores-staging.eqiad1.wikimedia.cloud,Amir Sarabadani,Ladsgroup@gmail.com,2020-10-26 18:57:51+00:00,0,2020-10-26 20:55:09+01:00,-3600,True,False,"['wikidatawiki.item_quality.md', 'wikidatawiki.item_quality.gradient_boosting.model']",['9ad948b2a14d45be7f59de9938d0723715f9edad'],32,32,64,2,,,
+0d73caf598088ddbd7be82682d9689a88aee5e5c,Adds nlwiki model with basic features.,Aaron Halfaker,ahalfaker@wikimedia.org,halfak,aaron.halfaker@gmail.com,2021-01-31 03:11:59+00:00,0,2021-03-28 16:59:31-07:00,25200,True,False,"['Makefile', 'nlwiki.py', 'nlwiki.wp10.md', 'nlwiki.wp10.gradient_boosting.model', 'nlwiki.wp10.md']",['b8ab74d2d8983ee2b88ff4be5270fcad62e653ac'],0,385,385,5,,,
+1b55cc1e52105811fee598f2f9b2794d2d566d8d,Fixes template names for dutch citation needed,Aaron Halfaker,ahalfaker@wikimedia.org,halfak,aaron.halfaker@gmail.com,2021-02-25 16:50:27+00:00,0,2021-03-28 16:59:31-07:00,25200,True,False,['nlwiki.py'],['0d73caf598088ddbd7be82682d9689a88aee5e5c'],3,3,6,1,,,
+9ab054bb53117249a3d0c480a16fa56df370c127,nlwiki update,Cdrpar07,shgcdr07@ores-misc-01.ores-staging.eqiad1.wikimedia.cloud,halfak,aaron.halfaker@gmail.com,2021-03-12 15:51:27+00:00,0,2021-03-28 16:59:31-07:00,25200,True,False,"['nlwiki.py', 'nlwiki.wp10.md', 'nlwiki.wp10.gradient_boosting.model', 'nlwiki.wp10.md']",['1b55cc1e52105811fee598f2f9b2794d2d566d8d'],209,216,425,4,,,
+f8efe0f07755605b4b074d88e32ef3fe157a3869,Update nlwiki.py,Paritosh Singh,55727824+Sharingan-Coder01@users.noreply.github.com,halfak,aaron.halfaker@gmail.com,2021-03-19 10:13:53+04:00,-14400,2021-03-28 16:59:31-07:00,25200,True,False,['nlwiki.py'],['9ab054bb53117249a3d0c480a16fa56df370c127'],6,0,6,1,,,
+d3d777592e5c1dd3261274f64f259df7379a0560,Handles flake8 issue with nlwiki features.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2021-03-28 16:53:12-07:00,25200,2021-03-28 16:59:31-07:00,25200,True,False,['nlwiki.py'],['f8efe0f07755605b4b074d88e32ef3fe157a3869'],2,4,6,1,,,
+9ae87b9fbfd56d70c733fcdab56655d2299f1e07,Disable deploy to pypie,Amir Sarabadani,Ladsgroup@gmail.com,GitHub,noreply@github.com,2021-05-04 06:35:09+02:00,-7200,2021-05-04 06:35:09+02:00,-7200,True,False,['.travis.yml'],['d3d777592e5c1dd3261274f64f259df7379a0560'],5,5,10,1,,,
+355af1a42c1a7173039f9ac636561d383fa24279,Adds manually extracted nlwiki labels.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2021-09-23 08:26:48-07:00,25200,2021-09-23 08:26:48-07:00,25200,True,False,['nlwiki.human_labels.manually_extracted.json'],['9ae87b9fbfd56d70c733fcdab56655d2299f1e07'],0,64,64,1,,,
+ed260ae537968165504f9782a51368823e8a7b17,nlwiki features for infobox and list_items,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2021-09-23 08:41:13-07:00,25200,2021-09-23 08:41:13-07:00,25200,True,False,"['nlwiki.py', 'wikipedia.py', 'requirements.txt']",['355af1a42c1a7173039f9ac636561d383fa24279'],2,7,9,3,,,
+b5655b584ee48257bf16af328dc1b4c077a1b20f,nlwiki features for infobox and list_items,halfak,aaron.halfaker@gmail.com,Aaron Halfaker,ahalfaker@wikimedia.org,2021-09-23 08:41:13-07:00,25200,2021-09-23 15:52:12+00:00,0,True,False,"['nlwiki.py', 'wikipedia.py', 'requirements.txt']",['355af1a42c1a7173039f9ac636561d383fa24279'],3,8,11,3,,,
+dd9540c9cec5a7a36b75d9892dfd817fa2a4c876,Builds new nlwiki model.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2021-09-23 16:32:45+00:00,0,2021-09-23 16:32:45+00:00,0,True,False,"['Makefile', 'nlwiki.py', 'nlwiki.human_labels.manually_extracted.json', 'nlwiki.wp10.md', 'nlwiki.wp10.gradient_boosting.model', 'nlwiki.wp10.md']",['b5655b584ee48257bf16af328dc1b4c077a1b20f'],274,279,553,6,,,
+ba72c4e50832fbe98728ef68528d198cbbc6d036,"Adds sample of probable D, C, and B-class articles for review.",Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2021-09-29 22:57:49+00:00,0,2021-09-29 23:21:22+00:00,0,True,False,"['Makefile', 'nlwiki.latest_scores.20210901.100_Ds_Cs_and_Bs.json']",['dd9540c9cec5a7a36b75d9892dfd817fa2a4c876'],0,112,112,2,,,
+cca9362cea124b7a6e6cb3358711718930bd705a,"Adds probably Ds, Cs, and Bs for nlwiki to makefile",Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2021-12-13 00:15:10+00:00,0,2021-12-13 00:15:17+00:00,0,True,False,['Makefile'],['32ac9269753274d6955e6742ecc9abad056be821'],5,14,19,1,,,
+b20cb7469cda7402bb28d8b339c44a3956f7185f,Extends fetch_labels utility and nlwiki pipeline.,halfak,aaron.halfaker@gmail.com,halfak,aaron.halfaker@gmail.com,2021-12-12 17:02:38-08:00,28800,2021-12-12 17:02:38-08:00,28800,True,False,"['Makefile', 'fetch_labels.py']",['cca9362cea124b7a6e6cb3358711718930bd705a'],15,65,80,2,0.038461538461538464,0.038461538461538464,1.0
+8980c955f9e616c33fb59b2e4352fe40794a29a4,Adds nlwiki_models with new C & D class definition.,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2021-12-13 01:08:26+00:00,0,2021-12-13 01:08:26+00:00,0,True,False,"['Makefile', 'nlwiki.wp10.md', 'nlwiki.wp10.gradient_boosting.model', 'nlwiki.wp10.md']",['b20cb7469cda7402bb28d8b339c44a3956f7185f'],219,219,438,4,,,
+14ad34cc721e974a4c84c90b195d81bca1d2dbf3,Rebuilds enwiki model with revscoring 2.11.1,Aaron Halfaker,ahalfaker@wikimedia.org,Aaron Halfaker,ahalfaker@wikimedia.org,2022-02-01 19:27:21+00:00,0,2022-02-01 19:27:21+00:00,0,True,False,"['enwiki.nettrom_wp10.md', 'enwiki.nettrom_wp10.gradient_boosting.model']",['9b1d43f7e23b1d59eb1de5ca19a96d44641a7a09'],50,50,100,2,,,
+2caf486bc86efbf5e566b5850d41248b533926a5,Increments version to 0.4.3,Aiko Chou,achou@wikimedia.org,Aiko Chou,achou@wikimedia.org,2022-05-26 13:22:31+02:00,-7200,2022-05-26 13:22:31+02:00,-7200,True,False,"['CHANGELOG.md', 'about.py']",['205043ed9309c69eb34e816bc602bd5c99e82a2c'],1,46,47,2,,,
+bb9e711565d75c16d5b664a09978fb61305e897a,"feature-lists: Add sfn templates to fawiki features
+
+This enables revscoring to process shortened footnote templates
+as part of fawiki articlequality features.
+
+Bug: T314302",kevinbazira,kvnbzr@gmail.com,kevinbazira,kvnbzr@gmail.com,2022-09-01 11:40:10+03:00,-10800,2022-09-02 09:30:19+03:00,-10800,True,False,"['fawiki.py', 'test_fawiki.py']",['dd720d145560b8d55b363cbe3d8e97b2c0d323ff'],9,34,43,2,1.0,1.0,1.0
+55bc0f8fefcc83d8bf8a1a352712132f7d97ca0b,"Retrain fawiki articlequality model
+
+Having added sfn templates to fawiki features in T314302,
+the fawiki articlequality model has been retrained so that
+it can perform better when ref tags are changed to sfn templates.
+
+Bug: T317531",kevinbazira,kvnbzr@gmail.com,kevinbazira,kvnbzr@gmail.com,2022-10-03 17:34:50+04:00,-14400,2022-10-03 17:34:50+04:00,-14400,True,False,"['fawiki.wp10.md', 'fawiki.wp10.gradient_boosting.model']",['1d028cf2891765cd1b31e98fd0a341a43c546dd7'],54,54,108,2,,,
+1318f1e1c933a58aece7bf4b3457501e4009f7a5,feat: add github action that pushes to PYPI (#175),Ilias Sarantopoulos,isaranto@users.noreply.github.com,GitHub,noreply@github.com,2022-12-21 16:59:27+02:00,-7200,2022-12-21 16:59:27+02:00,-7200,True,False,"['publish_python_package.yml', 'CHANGELOG.md', 'about.py']",['401a9803913e3844ce0eda4e00636a0917f91d43'],1,49,50,3,,,
+0b83f3fcef394c3b51394663b7f7c7b5447adb68,add dropped support warning message (#176),Ilias Sarantopoulos,isaranto@users.noreply.github.com,GitHub,noreply@github.com,2023-12-18 18:52:45+02:00,-7200,2023-12-18 18:52:45+02:00,-7200,True,False,['README.md'],['1318f1e1c933a58aece7bf4b3457501e4009f7a5'],0,24,24,1,,,

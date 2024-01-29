@@ -1,0 +1,75 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+e0111b117346cd4a3d13bafc5e83f487386e55c6,init,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2018-05-24 11:36:34-05:00,18000,2018-05-24 11:36:34-05:00,18000,True,False,"['__init__.py', 'client.py', 'test_ksmyvoteinfo.py']",[],0,147,147,3,1.0,1.0,0.3333333333333333
+a50e28706f21e41e3e01b6f07a46daee907a45f0,init,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2018-05-24 11:36:40-05:00,18000,2018-05-24 11:36:40-05:00,18000,True,False,['Makefile'],['e0111b117346cd4a3d13bafc5e83f487386e55c6'],0,7,7,1,,,
+2480ba761ecc088bf761efac9578bbc6a5e78a8f,init,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2018-05-24 11:36:48-05:00,18000,2018-05-24 11:36:48-05:00,18000,True,False,['setup.py'],['a50e28706f21e41e3e01b6f07a46daee907a45f0'],0,11,11,1,,,
+0850e4af152a2a068041323c835813126328cdd9,Fail and Pass tests work,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2018-05-24 12:02:30-05:00,18000,2018-05-24 12:02:30-05:00,18000,True,False,"['client.py', 'test_ksmyvoteinfo.py']",['2480ba761ecc088bf761efac9578bbc6a5e78a8f'],114,125,239,2,0.0,1.0,0.7142857142857143
+ebd15e57fb85a19086086cb2402aa010669b208c,add gitignore,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2018-05-24 12:03:51-05:00,18000,2018-05-24 12:03:51-05:00,18000,True,False,['.gitignore'],['0850e4af152a2a068041323c835813126328cdd9'],0,4,4,1,,,
+8384037eae926513f462ceabf07c23772101fb80,Add README and LICENSE,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2018-05-24 12:08:48-05:00,18000,2018-05-24 12:08:48-05:00,18000,True,False,"['LICENSE', 'README.md']",['ebd15e57fb85a19086086cb2402aa010669b208c'],0,46,46,2,,,
+760ecba036ab76ffee35790381e701c088fe69f6,First pass at Travis CI,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2018-05-24 12:13:25-05:00,18000,2018-05-24 12:13:25-05:00,18000,True,False,"['.travis.yml', 'Makefile', 'requirements.txt']",['8384037eae926513f462ceabf07c23772101fb80'],0,22,22,3,,,
+452b575e251edb3e2efb10fd4a3d0db91095871e,"Add travis badge, fix build cmd",Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2018-05-24 12:15:12-05:00,18000,2018-05-24 12:15:12-05:00,18000,True,False,"['.travis.yml', 'README.md']",['760ecba036ab76ffee35790381e701c088fe69f6'],7,2,9,2,,,
+b36a48dd047d648cac93bb83718f75f308d10a75,"Travis test (#1)
+
+* add dateutil dependency
+
+* fix package name",Peter Karman,karpet@peknet.com,GitHub,noreply@github.com,2018-05-24 14:11:56-05:00,18000,2018-05-24 14:11:56-05:00,18000,True,False,"['__init__.py', 'requirements.txt']",['452b575e251edb3e2efb10fd4a3d0db91095871e'],0,2,2,2,,,
+5b816e22927231c769194d2e7ef690e95f854986,Release 0.2 with install_requires and example syntax fix,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2018-06-01 12:00:18-05:00,18000,2018-06-01 12:00:18-05:00,18000,True,False,"['Makefile', 'README.md', 'client.py', 'setup.py']",['b36a48dd047d648cac93bb83718f75f308d10a75'],6,14,20,4,,,
+3fcc7a56bd919a45dab3f1d3829160e46b3dc5c3,"Return BeautifulSoup object, not text string, on success (#2)
+
+* Return BeautifulSoup object, not text string, on success
+
+* Fix failing test",Peter Karman,karpet@peknet.com,GitHub,noreply@github.com,2018-07-02 11:08:49-05:00,18000,2018-07-02 11:08:49-05:00,18000,True,False,"['client.py', 'setup.py', 'test_ksmyvoteinfo.py']",['5b816e22927231c769194d2e7ef690e95f854986'],4,4,8,3,,,
+203f8ca30def7002edd4f384a33db057fc8e3bc1,"Parse HTML results into structured tree, including multiple matches (#3)",Peter Karman,karpet@peknet.com,GitHub,noreply@github.com,2018-07-16 08:43:39-05:00,18000,2018-07-16 08:43:39-05:00,18000,True,False,"['README.md', 'client.py', 'setup.py', 'test_ksmyvoteinfo.py']",['3fcc7a56bd919a45dab3f1d3829160e46b3dc5c3'],9,38,47,4,0.09090909090909091,0.09090909090909091,0.8181818181818182
+fb2a035a9d601eb1409a03c0733ef312e5a4cfab,"Add sample ballot links (#4)
+
+* Parse sample ballot links on successful search, make url configurable
+
+* bump version",Peter Karman,karpet@peknet.com,GitHub,noreply@github.com,2018-07-16 15:20:49-05:00,18000,2018-07-16 15:20:49-05:00,18000,True,False,"['client.py', 'setup.py']",['203f8ca30def7002edd4f384a33db057fc8e3bc1'],5,21,26,2,0.45454545454545453,1.0,0.7272727272727273
+1876e5f1dea6cc39ae0bfa399e3a5807f52d1f68,Release 0.6 with href sample ballot fix (#5),Peter Karman,karpet@peknet.com,GitHub,noreply@github.com,2018-07-17 11:50:28-05:00,18000,2018-07-17 11:50:28-05:00,18000,True,False,"['client.py', 'setup.py']",['fb2a035a9d601eb1409a03c0733ef312e5a4cfab'],3,3,6,2,,,
+ff05edef9a9eb0384f0e33f183e51fce5a407814,"Add elections and districts, release 0.7 (#6)",Peter Karman,karpet@peknet.com,GitHub,noreply@github.com,2018-10-08 10:12:47-05:00,18000,2018-10-08 10:12:47-05:00,18000,True,False,"['client.py', 'setup.py']",['1876e5f1dea6cc39ae0bfa399e3a5807f52d1f68'],4,34,38,2,0.07142857142857142,0.0,0.75
+23384433beeba3d6571c2f0fa0a2d0da1b4c9f88,"New SOS VV site (#7)
+
+* python3
+
+* start refactor for new SOS site
+
+* basic working parsed registrant page
+
+* fix test
+
+* bump version, test deps
+
+* no more robobrowser
+
+* add make install target
+
+* note TODO for multiple results
+
+* bump version
+
+* support multiple registrants, backcompat
+
+* whitespace
+
+* fix name/address keys
+
+* fix version",Peter Karman,karpet@peknet.com,GitHub,noreply@github.com,2020-05-13 23:56:54-05:00,18000,2020-05-13 23:56:54-05:00,18000,True,False,"['Makefile', 'README.md', '__init__.py', 'client.py', 'requirements.txt', 'setup.py', 'test_ksmyvoteinfo.py']",['ff05edef9a9eb0384f0e33f183e51fce5a407814'],174,161,335,7,0.75,1.0,0.4166666666666667
+25d53577dfb5481197c705cdf7967b0211930db4,version 1.2 with county parser,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2020-05-24 15:11:30-05:00,18000,2020-05-24 15:11:30-05:00,18000,True,False,"['client.py', 'counties.py', 'setup.py']",['23384433beeba3d6571c2f0fa0a2d0da1b4c9f88'],3,125,128,3,0.18181818181818182,0.18181818181818182,1.0
+1c4e14392a2583e44c242a671b540d3e0587d2cb,Return polling location for default election (#9),Peter Karman,karpet@peknet.com,GitHub,noreply@github.com,2020-08-04 16:23:57-05:00,18000,2020-08-04 16:23:57-05:00,18000,True,False,"['client.py', 'setup.py']",['2426d5904ff27642c587b15126225c4344d6bc40'],4,19,23,2,0.0,0.6363636363636364,0.36363636363636365
+f7af9e04cb728c8815e655e4299d8034732b5b17,"mock server (#10)
+
+* flake8+black, KSMYVOTEINFO_ENV=mock support
+
+* fix README, add mock
+
+* bump version
+
+* add GH actions
+
+* remove travis CI
+
+* .flake8, fix GH python version
+
+* python 3.1 ??",Peter Karman,karpet@peknet.com,GitHub,noreply@github.com,2022-04-04 11:49:24-05:00,18000,2022-04-04 11:49:24-05:00,18000,True,False,"['.flake8', 'pull_request.yml', '.travis.yml', 'Makefile', 'README.md', '__init__.py', 'client.py', 'counties.py', 'setup.py']",['1c4e14392a2583e44c242a671b540d3e0587d2cb'],315,514,829,9,0.0,0.0,0.5454545454545454
+3190cb081c8aea5c813fd6d004133858795db051,fix README,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2022-04-04 11:50:58-05:00,18000,2022-04-04 11:50:58-05:00,18000,True,False,['README.md'],['f7af9e04cb728c8815e655e4299d8034732b5b17'],1,1,2,1,,,
+b5cc8899cb28eb7d3eb6af0180b8eac72b5a914a,remove Travis badge,Peter Karman,karpet@peknet.com,Peter Karman,karpet@peknet.com,2022-04-04 11:51:51-05:00,18000,2022-04-04 11:51:51-05:00,18000,True,False,['README.md'],['3190cb081c8aea5c813fd6d004133858795db051'],2,0,2,1,,,
+157c3e7a3b2018f8e78ab4567822705d808df256,Preserve city with comma (#11),Peter Karman,karpet@peknet.com,GitHub,noreply@github.com,2022-07-05 10:12:13-05:00,18000,2022-07-05 10:12:13-05:00,18000,True,False,"['client.py', 'setup.py', 'test_ksmyvoteinfo.py']",['b5cc8899cb28eb7d3eb6af0180b8eac72b5a914a'],3,5,8,3,1.0,1.0,1.0

@@ -1,0 +1,78 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+ecc7421c61a093d4d2ee1c50e0850e4a919e8a2b,"Initial Commit
+
+This initial commit contains a lot of code, and the majority of it was
+simply pulled out of the https://github.com/sallamander/dl-playground
+repository in order to build a stand-alone package that included the
+Keras-centric training / evaluation code for PyTorch networks.
+
+Major changes / additions added in the initial commit largely reolve around
+the addition of the `backend.py` in order to allow for Keras to be used
+with a `numpy` backend, rather than requiring tensorflow or some other
+backend that would add an additional dependency, or creating a PyTorch
+backend, which would be a much larger effort.",Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-06-27 17:23:42+00:00,0,2019-07-06 23:47:14+00:00,0,True,False,"['.gitignore', '__init__.py', 'backend.py', 'model.py', 'setup.py', '__init__.py', '__init__.py', 'test_model.py']",[],0,1735,1735,8,0.47277936962750716,0.7440305635148042,0.5262655205348615
+f24dd0cdc391d78337f105fc1bd28e95723127e2,Add LICENSE,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-06 23:50:26+00:00,0,2019-07-06 23:50:26+00:00,0,True,False,['LICENSE'],['ecc7421c61a093d4d2ee1c50e0850e4a919e8a2b'],0,34,34,1,,,
+10e6eb74a83d97870c73d4ba7329026a7e3aa32c,Add fit and evaluate methods to Model class,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-07 01:43:15+00:00,0,2019-07-07 01:43:15+00:00,0,True,False,"['model.py', 'test_model.py']",['f24dd0cdc391d78337f105fc1bd28e95723127e2'],38,174,212,2,0.0,0.0,0.0
+970697c51b6fb17fbba71914ae29a95ddb7b5719,Rename backend => numpy_backend.py,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-07 01:43:52+00:00,0,2019-07-07 01:48:01+00:00,0,True,False,"['model.py', 'numpy_backend.py']",['10e6eb74a83d97870c73d4ba7329026a7e3aa32c'],0,3,3,2,,,
+451533f7947a48a14497109028ac1879e4e89bce,Add categorical_accuracy metric and tests,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-07 01:58:01+00:00,0,2019-07-07 01:58:01+00:00,0,True,False,"['metrics.py', 'test_metrics.py']",['970697c51b6fb17fbba71914ae29a95ddb7b5719'],0,57,57,2,0.13793103448275862,1.0,1.0
+f0b97a32f3902e55e56e04ea4184bd374b995c2c,Fix pep8 violations,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-07 02:03:23+00:00,0,2019-07-07 02:03:23+00:00,0,True,False,"['model.py', 'numpy_backend.py', 'test_metrics.py']",['451533f7947a48a14497109028ac1879e4e89bce'],12,20,32,3,0.2857142857142857,0.2857142857142857,0.0
+0e5160d6fdb81c31fa18912fc8222012ac96f671,"Fix incorrect sample # display in progress bar
+
+The last batch may not necessarily be a complete batch, and the `Model.fit`
+was assuming that each batch was a full one, leaving a possibly incorrect
+display in the progress bar and possibly incorrect calculations for the last
+batch.",Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-07 02:25:50+00:00,0,2019-07-07 02:26:11+00:00,0,True,False,['model.py'],['f0b97a32f3902e55e56e04ea4184bd374b995c2c'],1,1,2,1,,,
+bf9cacf6d529258787e3ff5ffc2e35851fe082fa,Add MNIST MLP example,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-07 02:28:10+00:00,0,2019-07-07 02:28:10+00:00,0,True,False,['mnist_mlp.py'],['0e5160d6fdb81c31fa18912fc8222012ac96f671'],0,58,58,1,,,
+89aeecc8e2a324e1a04be068420c3c2dc463883a,Add MNIST CNN example,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-07 02:28:33+00:00,0,2019-07-07 16:49:34+00:00,0,True,False,"['mnist_cnn.py', 'mnist_mlp.py', 'metrics.py', 'setup.py']",['bf9cacf6d529258787e3ff5ffc2e35851fe082fa'],7,108,115,4,1.0,1.0,1.0
+6b29d9191ea3b1d3e0481454ee1987a2acad0998,Update categorical_accuracy to work for sequences,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-08 17:25:25+00:00,0,2019-07-08 17:25:25+00:00,0,True,False,"['metrics.py', 'test_metrics.py']",['89aeecc8e2a324e1a04be068420c3c2dc463883a'],33,100,133,2,0.0,1.0,1.0
+24f34d07f3dbf65a93dafa837af132a4d110be96,Add Addition RNN example,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-08 17:31:42+00:00,0,2019-07-08 17:31:42+00:00,0,True,False,['addition_rnn.py'],['6b29d9191ea3b1d3e0481454ee1987a2acad0998'],0,263,263,1,1.0,1.0,0.6923076923076923
+04a2b2079f6ec1d056b06e95639d0ef8671c6766,Add binary_accuracy metric,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-08 19:31:46+00:00,0,2019-07-08 19:31:46+00:00,0,True,False,"['metrics.py', 'test_metrics.py']",['24f34d07f3dbf65a93dafa837af132a4d110be96'],3,57,60,2,0.14285714285714285,1.0,1.0
+3c7f63aa448c15f1d3ada87f403a53b81956f812,Add LSTM IMDB classification example,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-08 19:32:27+00:00,0,2019-07-08 19:32:27+00:00,0,True,False,['imdb_lstm.py'],['04a2b2079f6ec1d056b06e95639d0ef8671c6766'],0,119,119,1,1.0,1.0,0.8333333333333334
+c54bf3b9117df110217198fbd687b1334e97a453,Move setup.py to the correct place,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-08 19:34:13+00:00,0,2019-07-08 20:11:21+00:00,0,True,False,"['addition_rnn.py', 'imdb_lstm.py', 'mnist_cnn.py', 'mnist_mlp.py', 'setup.py', 'test_metrics.py', 'test_model.py']",['3c7f63aa448c15f1d3ada87f403a53b81956f812'],12,12,24,7,,,
+a37cea7ebbcbd10ef5fd7fc67fc52ee89554e15c,Add examples README.md,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-08 20:18:09+00:00,0,2019-07-08 20:21:01+00:00,0,True,False,"['README.md', 'addition_rnn.py', 'imdb_lstm.py', 'mnist_cnn.py', 'mnist_mlp.py']",['c54bf3b9117df110217198fbd687b1334e97a453'],0,33,33,5,,,
+5b4bb4475cf83bb252ad2d5dfe5d8ad19cde4593,Add final touches before publishing,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-10 16:08:53+00:00,0,2019-07-10 16:46:09+00:00,0,True,False,"['README.md', 'README.md', '__init__.py', 'setup.cfg', 'setup.py']",['a37cea7ebbcbd10ef5fd7fc67fc52ee89554e15c'],9,124,133,5,,,
+71e82e739d003c628dc5ceffbb2c675ef50cf159,"Add MVP TensorBoard callback
+
+The TensorBoard callback doesn't have all of the functionality that the Keras
+version does, but it's a start and will be expanded upon over time.",Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-14 15:16:58+00:00,0,2019-07-14 15:17:09+00:00,0,True,False,"['callbacks.py', 'setup.py', 'test_callbacks.py']",['5b4bb4475cf83bb252ad2d5dfe5d8ad19cde4593'],1,278,279,3,0.18181818181818182,1.0,0.5804195804195804
+3638676dbc6edc93b7d2a5b08fba15585e0aa98c,"Expose ktorch-compatible Keras callbacks
+
+Several Keras callbacks work out of the box with the ktorch Model class, and
+importing those in the ktorch.callbacks module will make it easier for users
+to learn this and use these ktorch-compatible callbacks. In addition, it is
+also documented in the ktorch.callbacks docstring.",Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-14 15:24:06+00:00,0,2019-07-14 15:24:06+00:00,0,True,False,['callbacks.py'],['71e82e739d003c628dc5ceffbb2c675ef50cf159'],2,14,16,1,,,
+932df949f51dacb894734842ee978ad580c88f8e,Fix ktorch.__init__,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-14 17:11:42+00:00,0,2019-07-14 17:12:12+00:00,0,True,False,"['README.md', '__init__.py']",['3638676dbc6edc93b7d2a5b08fba15585e0aa98c'],3,1,4,2,,,
+ba4ebd839c4b4aabba0d3278e8d30357e84d3264,Add Model.predict method,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-14 16:04:17+00:00,0,2019-07-14 17:43:09+00:00,0,True,False,"['addition_rnn.py', 'mnist_mlp.py', 'model.py', 'setup.py']",['932df949f51dacb894734842ee978ad580c88f8e'],7,26,33,4,1.0,1.0,0.0
+a02abe0bff5da63e2ab8d89c895854d4938982d2,Update release number,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-15 19:09:17+00:00,0,2019-07-17 02:48:49+00:00,0,True,False,['setup.py'],['ba4ebd839c4b4aabba0d3278e8d30357e84d3264'],4,5,9,1,,,
+270d241bdee23ae85b47d1bfd771b458eddd043f,Update version number,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-17 02:53:25+00:00,0,2019-07-17 02:55:59+00:00,0,True,False,['setup.py'],['a02abe0bff5da63e2ab8d89c895854d4938982d2'],2,2,4,1,,,
+9bf621496389109e0221245710a367cfe8a56fbd,Update setup.py to include all dependencies,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-07-17 03:02:53+00:00,0,2019-07-17 03:02:53+00:00,0,True,False,['setup.py'],['270d241bdee23ae85b47d1bfd771b458eddd043f'],2,4,6,1,,,
+fd30df2fd869b769072590a99cebf999e0c262d7,Add TopK accuracy metric,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-08-14 00:51:28+00:00,0,2019-08-14 00:51:28+00:00,0,True,False,"['metrics.py', 'test_metrics.py']",['9bf621496389109e0221245710a367cfe8a56fbd'],1,181,182,2,1.0,1.0,0.44155844155844154
+5b527dbabaab8458449db9ca8288f07fc18ce023,Add model attribute to fix broken ModelCheckpoint callback,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-08-26 21:53:15+00:00,0,2019-08-26 21:53:15+00:00,0,True,False,['model.py'],['fd30df2fd869b769072590a99cebf999e0c262d7'],0,1,1,1,1.0,1.0,0.0
+3cb9c10510e55e0cd91c3361a4173d5363f00086,Fix tests for TopKCategoricalAccuracy,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-08-28 17:22:09+00:00,0,2019-08-28 19:00:14+00:00,0,True,False,"['model.py', 'test_metrics.py', 'test_model.py']",['5b527dbabaab8458449db9ca8288f07fc18ce023'],10,19,29,3,1.0,1.0,0.0
+99f9964f58cdd3bd3f8fd6cd8af5892986d122f8,Update FileWriter __init__ because of signature changes,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-08-28 22:22:03+00:00,0,2019-09-02 23:03:45+00:00,0,True,False,"['callbacks.py', 'test_callbacks.py']",['3cb9c10510e55e0cd91c3361a4173d5363f00086'],4,4,8,2,,,
+6469558c8774b9c9d4336f5c385963f4079394ae,Allow initialized optimizer to be passed into Model.compile,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-08-29 16:15:27+00:00,0,2019-09-03 13:42:11+00:00,0,True,False,['model.py'],['99f9964f58cdd3bd3f8fd6cd8af5892986d122f8'],13,15,28,1,0.0,0.0,0.0
+e7be643a8e24e21df48f58c62a21572bb8dcee7e,Integration tests for ktorch.model.Model,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-09-02 23:25:45+00:00,0,2019-09-03 15:35:26+00:00,0,True,False,"['model.py', 'setup.py', 'test_model.py', 'test_callbacks.py', 'test_metrics.py', 'test_model.py']",['6469558c8774b9c9d4336f5c385963f4079394ae'],10,213,223,6,0.379746835443038,0.9873417721518988,0.5063291139240507
+90f8b8a832112a43cfc260aa457a4f556beda57e,Fill in incomplete docstring,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-09-03 15:40:10+00:00,0,2019-09-03 15:40:10+00:00,0,True,False,['callbacks.py'],['e7be643a8e24e21df48f58c62a21572bb8dcee7e'],4,6,10,1,,,
+2ebdf40e759610cd714399e97eb394747975557c,Update list of optimizers tested in TestModel.test_compile,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-09-03 15:45:25+00:00,0,2019-09-03 15:45:25+00:00,0,True,False,['test_model.py'],['90f8b8a832112a43cfc260aa457a4f556beda57e'],6,10,16,1,0.0,1.0,1.0
+64e76cd146f5231a0e94dd444ddbdc21ae393eeb,Allow initialized loss to be passed into Model.compile,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-09-03 15:59:37+00:00,0,2019-09-03 15:59:37+00:00,0,True,False,"['model.py', 'test_model.py', 'test_model.py']",['2ebdf40e759610cd714399e97eb394747975557c'],18,28,46,3,0.0,0.3333333333333333,0.3333333333333333
+7fad0f9db9e0aa882613898d428dc57b8e8d3dd8,Alter Model integration tests to run on CPU and GPU,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-09-03 16:59:12+00:00,0,2019-09-03 21:37:46+00:00,0,True,False,"['conftest.py', 'test_model.py']",['64e76cd146f5231a0e94dd444ddbdc21ae393eeb'],128,177,305,2,0.9130434782608695,1.0,1.0
+705ef1e2f689858ab8b7813006d88be46a0f4dd6,"Add initial, limited implementation of multi-output training
+
+This commit allows for multi-output training in (very) limited way (at least
+compared to what is possible with the Keras Model class). In particular, users
+must specify multiple outputs via the `__init__` of the Model class using the
+`n_outputs` parameter.  Then, the targets passed to the network must be a list
+of torch.Tensor objects whose length matches `n_outputs` passed to the init.
+The network passed to the `Model.__init__`, must return `n_outputs` number of
+outputs. The objective function will be applied to each pair of (targets,
+outputs) and summed with equal weights, and each metric will be applied to each
+pair of (targets, outputs). Subsequent commits will make updates and make
+extensions to this limited functionality to bring it more in line with what the
+Keras Model class offers.",Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-09-04 00:55:43+00:00,0,2019-09-06 14:17:10+00:00,0,True,False,"['README.md', 'metrics.py', 'model.py', 'test_model.py', 'test_model.py']",['7fad0f9db9e0aa882613898d428dc57b8e8d3dd8'],80,920,1000,5,0.0,0.2732732732732733,0.8378378378378378
+b99d03b41da5a88545c125751011d2451930f8ae,Rename _default_callbacks => _load_default_callbacks,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-09-07 13:43:32+00:00,0,2019-09-07 13:43:32+00:00,0,True,False,"['model.py', 'test_model.py']",['705ef1e2f689858ab8b7813006d88be46a0f4dd6'],19,19,38,2,,,
+37b45d8691af5cfa7e9257424eee65ef75e7d561,"Add ability to specify loss-weights
+
+This commit also includes some cleanup and refactoring of other code in the
+Model class, specifically in the `compile`, `train_on_batch, and
+`test_on_batch`.",Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-09-07 17:04:48+00:00,0,2019-09-08 21:17:56+00:00,0,True,False,"['model.py', 'test_model.py']",['b99d03b41da5a88545c125751011d2451930f8ae'],150,393,543,2,0.05673758865248227,1.0,0.0
+aacf80ee7c4285a4ac849cfa5f44675b67073dc6,Add LRFinder callback,Sean Sall,sean@arterys.com,Sean Sall,sean@arterys.com,2019-09-12 22:34:49+00:00,0,2019-09-16 00:36:00+00:00,0,True,False,"['callbacks.py', 'model.py', 'setup.py', 'test_callbacks.py']",['37b45d8691af5cfa7e9257424eee65ef75e7d561'],6,410,416,4,0.2793522267206478,0.8785425101214575,0.8178137651821862

@@ -1,0 +1,367 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+714704758ee32ab016f3f02cf8c23ff22e4214e4,"import pybluez version 0.14 from MIT servers
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@1 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2007-11-12 20:57:16+00:00,0,2007-11-12 20:57:16+00:00,0,True,False,"['CHANGELOG', 'COPYING', 'README', '__init__.py', 'bluez.py', 'btcommon.py', 'msbt.py', 'osx.py', 'widcomm.py', 'btmodule.c', 'btmodule.h', 'btsdp.c', 'btsdp.h', 'gendoc', 'inquiry-with-rssi.py', 'l2-mtu.py', 'l2-unreliable-client.py', 'l2-unreliable-server.py', 'read-local-bdaddr.py', 'write-inquiry-scan.py', 'bluezchat.glade', 'bluezchat.gladep', 'bluezchat.py', 'asynchronous-inquiry.py', 'inquiry.py', 'l2capclient.py', 'l2capserver.py', 'rfcomm-client.py', 'rfcomm-server.py', 'sdp-browse.py', '_msbt.c', '_osxbt.c', 'setup.py', '_widcomm.cpp', 'inquirer.cpp', 'inquirer.hpp', 'l2capconn.cpp', 'l2capconn.hpp', 'l2capif.cpp', 'l2capif.hpp', 'rfcommif.cpp', 'rfcommport.cpp', 'rfcommport.hpp', 'sdpservice.cpp', 'util.cpp', 'util.h']",[],0,11653,11653,46,0.3448395490026019,0.5951431049436253,0.8267129228100607
+6c4c15facf978f6e8cf9837db369542f9411762e,"fix bluez discover_devices duration usage, don't hardcode to 8 (gustavo chain)
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@2 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2007-12-17 02:11:19+00:00,0,2007-12-17 02:11:19+00:00,0,True,False,['bluez.py'],['714704758ee32ab016f3f02cf8c23ff22e4214e4'],1,1,2,1,,,
+5755fa7958eba40fa48a86976184938f3dc31be2,"update changelog for previous fix
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@3 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2007-12-17 02:12:08+00:00,0,2007-12-17 02:12:08+00:00,0,True,False,['CHANGELOG'],['6c4c15facf978f6e8cf9837db369542f9411762e'],0,5,5,1,,,
+6fa03bacd22cd9ec10886e73f61ec83c3f6b8db0,"search for wbtapi.dll before importing widcomm
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@4 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2008-01-20 19:11:49+00:00,0,2008-01-20 19:11:49+00:00,0,True,False,"['CHANGELOG', '__init__.py']",['5755fa7958eba40fa48a86976184938f3dc31be2'],9,17,26,2,,,
+fd5ebe4148b29c2e4c7ba520fe8347e341296db1,"0.15 release
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@6 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2008-01-21 23:01:51+00:00,0,2008-01-21 23:01:51+00:00,0,True,False,"['CHANGELOG', 'MANIFEST.in', 'gendoc', 'release_checklist', 'setup.py']",['6fa03bacd22cd9ec10886e73f61ec83c3f6b8db0'],21,34,55,5,,,
+9f93dee09a9d065f5c42f5eda6634991d2e01e25,"fix advanced examples import _bluetooth --> import bluetooth._bluetooth
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@12 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2008-04-28 16:23:32+00:00,0,2008-04-28 16:23:32+00:00,0,True,False,"['inquiry-with-rssi.py', 'l2-unreliable-client.py', 'read-local-bdaddr.py', 'write-inquiry-scan.py']",['fd5ebe4148b29c2e4c7ba520fe8347e341296db1'],4,4,8,4,,,
+4729382b23beb83339f7e1881e4a2fec14d8760f,"remove gendoc from docs.
+add missing fileno method to widcomm sockets
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@13 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2008-09-02 17:51:32+00:00,0,2008-09-02 17:51:32+00:00,0,True,False,"['README', 'widcomm.py']",['9f93dee09a9d065f5c42f5eda6634991d2e01e25'],8,2,10,2,0.0,0.0,0.0
+fdd78328accfc115d7674bea6895143598e5a9a6,"fix variable naming in inquiry.py example
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@14 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2008-10-29 17:31:28+00:00,0,2008-10-29 17:31:28+00:00,0,True,False,"['CHANGELOG', 'inquiry.py']",['4729382b23beb83339f7e1881e4a2fec14d8760f'],1,5,6,2,,,
+ff3ee7997742e5980030c63b66848e8926a051f2,"only import msbt if widcomm completely fails
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@15 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2008-11-22 18:01:04+00:00,0,2008-11-22 18:01:04+00:00,0,True,False,"['__init__.py', 'msbt.py']",['fdd78328accfc115d7674bea6895143598e5a9a6'],3,2,5,2,,,
+64301ab0e4c19c2773e76a755b9001c993593aff,"update changelog
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@16 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2008-11-22 18:02:32+00:00,0,2008-11-22 18:02:32+00:00,0,True,False,['CHANGELOG'],['ff3ee7997742e5980030c63b66848e8926a051f2'],0,2,2,1,,,
+d36b5f853a7715f2b8e9807d539e8e73bfa357b3,"comment out debugging printf
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@17 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-01-09 02:39:40+00:00,0,2009-01-09 02:39:40+00:00,0,True,False,['rfcommif.cpp'],['64301ab0e4c19c2773e76a755b9001c993593aff'],1,1,2,1,1.0,0.0,0.0
+f83e066bfd34772cb90a782c41e28d3f8d3b50b4,"suppress debugging messages
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@18 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-01-12 05:57:36+00:00,0,2009-01-12 05:57:36+00:00,0,True,False,"['widcomm.py', 'rfcommport.cpp']",['d36b5f853a7715f2b8e9807d539e8e73bfa357b3'],2,2,4,2,,,
+5207fc0dd856ce9c556cb9ebe99e3f8e0a167a08,"fix memory error (Jens Göpfert)
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@19 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-02-05 18:36:37+00:00,0,2009-02-05 18:36:37+00:00,0,True,False,['_msbt.c'],['f83e066bfd34772cb90a782c41e28d3f8d3b50b4'],1,1,2,1,,,
+d4354d212055d33e2b8e15852326e0a8d48bf804,"0.16 release
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@20 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-02-05 18:44:22+00:00,0,2009-02-05 18:44:22+00:00,0,True,False,"['CHANGELOG', 'setup.py']",['5207fc0dd856ce9c556cb9ebe99e3f8e0a167a08'],3,8,11,2,,,
+fa9d123053ccb63a7e963ad7c34917a54e3eaed3,"DeviceDiscoverer do not override duration parameter (roelhuybrechts)
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@21 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-06-05 23:44:21+00:00,0,2009-06-05 23:44:21+00:00,0,True,False,['bluez.py'],['d4354d212055d33e2b8e15852326e0a8d48bf804'],1,0,1,1,1.0,0.0,1.0
+8abffbf0431582172571a50891e9d74a40453433,"DeviceDiscoverer may specify bluetooth device_id (roelhuybrechts)
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@22 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-06-05 23:46:33+00:00,0,2009-06-05 23:46:33+00:00,0,True,False,['bluez.py'],['fa9d123053ccb63a7e963ad7c34917a54e3eaed3'],2,9,11,1,1.0,1.0,1.0
+9a0c618445c1539d88bffc90932fd5a36f15dc8d,"bugfix for linux 2.6.30+ zero out struct sockaddr
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@23 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-10-15 01:42:16+00:00,0,2009-10-15 01:42:16+00:00,0,True,False,['btmodule.c'],['8abffbf0431582172571a50891e9d74a40453433'],0,1,1,1,0.0,0.0,0.0
+56176f3ab3ae8fd893c1cccfdcdc51293e151084,"0.17 release
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@24 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-10-15 17:44:58+00:00,0,2009-10-15 17:44:58+00:00,0,True,False,"['CHANGELOG', 'setup.py']",['9a0c618445c1539d88bffc90932fd5a36f15dc8d'],3,11,14,2,,,
+a92a04910df76a879a77a0ed6bbe1a43f88bb8dc,"apply Carlo Segato's patch for linux 2.6.30+
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@25 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-11-01 22:18:46+00:00,0,2009-11-01 22:18:46+00:00,0,True,False,['btmodule.c'],['56176f3ab3ae8fd893c1cccfdcdc51293e151084'],4,4,8,1,,,
+4dfd9412eecc2fddf228cb013b612f67ab20878d,"Apply Lukas Hetzenecker's patch for Widcomm stack
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@26 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-11-01 22:20:17+00:00,0,2009-11-01 22:20:17+00:00,0,True,False,"['setup.py', 'l2capif.cpp', 'rfcommif.cpp']",['a92a04910df76a879a77a0ed6bbe1a43f88bb8dc'],2,5,7,3,,,
+ce9dc42d95667472ea50cefb1ccf23d86b5e1085,"include widcomm/util.h in source distribution
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@27 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-11-01 22:50:06+00:00,0,2009-11-01 22:50:06+00:00,0,True,False,['MANIFEST.in'],['4dfd9412eecc2fddf228cb013b612f67ab20878d'],0,1,1,1,,,
+3c868ca0908fe847580175f97f1502a1d62fff05,"0.18 release
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@28 bcb67f6a-c13e-0410-b0c7-e53ae835acad",LuHe@gmx.at,LuHe@gmx.at@bcb67f6a-c13e-0410-b0c7-e53ae835acad,LuHe@gmx.at,LuHe@gmx.at@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2009-11-27 22:42:10+00:00,0,2009-11-27 22:42:10+00:00,0,True,False,"['CHANGELOG', 'setup.py']",['ce9dc42d95667472ea50cefb1ccf23d86b5e1085'],209,217,426,2,,,
+20ea88af7ac8b62acbf2605da3d48777040ae912,"add non-rssi inquiry results in example (issue #29)
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@31 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-04-29 20:16:38+00:00,0,2010-04-29 20:16:38+00:00,0,True,False,['inquiry-with-rssi.py'],['3c868ca0908fe847580175f97f1502a1d62fff05'],0,8,8,1,0.0,0.0,1.0
+e658eb4b668e6fbaef5ccf380d56c087324b8194,"update release_checklist - don't tag on release
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@32 bcb67f6a-c13e-0410-b0c7-e53ae835acad",ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,ashuang,ashuang@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-04-29 20:17:12+00:00,0,2010-04-29 20:17:12+00:00,0,True,False,['release_checklist'],['20ea88af7ac8b62acbf2605da3d48777040ae912'],3,1,4,1,,,
+91033bb20580dae37314898baf81323795980402,"Fixes L2CAP MTU function, adds L2CAP options functions
+
+This commit fixes the L2CAP options manipulation, updating it to latest
+BlueZ l2cap_options structure. This is a temporary fix; the ideal place
+to manipulate this struct is in C module.
+
+Implemented get/set_l2cap_options(socket) functions, and set_l2cap_mtu()
+just uses those functions. Also, homonymous methods have been added to
+BluetoothSocket class for convenience.
+
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@33 bcb67f6a-c13e-0410-b0c7-e53ae835acad",elvis.pfutzenreuter,elvis.pfutzenreuter@bcb67f6a-c13e-0410-b0c7-e53ae835acad,elvis.pfutzenreuter,elvis.pfutzenreuter@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-05-31 17:41:34+00:00,0,2010-05-31 17:41:34+00:00,0,True,False,['bluez.py'],['e658eb4b668e6fbaef5ccf380d56c087324b8194'],5,55,60,1,1.0,1.0,1.0
+319832bd10ceac03e02acb1982cb04d04633365b,"Fixed bluez btohl() and htobl() functions
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@34 bcb67f6a-c13e-0410-b0c7-e53ae835acad",elvis.pfutzenreuter,elvis.pfutzenreuter@bcb67f6a-c13e-0410-b0c7-e53ae835acad,elvis.pfutzenreuter,elvis.pfutzenreuter@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-06-01 23:10:01+00:00,0,2010-06-01 23:10:01+00:00,0,True,False,['btmodule.c'],['91033bb20580dae37314898baf81323795980402'],2,12,14,1,0.0,0.0,1.0
+5aaa145f2492ea603f72559417f0b6d53ccbf71f,"Added module version (using the Python quasi-standard way)
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@35 bcb67f6a-c13e-0410-b0c7-e53ae835acad",elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-07-05 01:29:33+00:00,0,2010-07-05 01:29:33+00:00,0,True,False,['__init__.py'],['319832bd10ceac03e02acb1982cb04d04633365b'],0,2,2,1,,,
+608e7f8169354e2bf377074c7f3c8a00f553a4fd,"Added hci_get_route BlueZ function, and some L2CAP-related constants
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@36 bcb67f6a-c13e-0410-b0c7-e53ae835acad",elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-07-05 02:48:46+00:00,0,2010-07-05 02:48:46+00:00,0,True,False,['btmodule.c'],['5aaa145f2492ea603f72559417f0b6d53ccbf71f'],0,42,42,1,0.0,0.7391304347826086,1.0
+02c6aae1acf993ca5c8e32116a50783a338d9cbc,"Added setl2capsecurity() method to BluetoothSocket, updated CHANGELOG/version
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@37 bcb67f6a-c13e-0410-b0c7-e53ae835acad",elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-07-05 05:14:12+00:00,0,2010-07-05 05:14:12+00:00,0,True,False,"['CHANGELOG', 'bluez.py', 'btmodule.c', 'setup.py']",['608e7f8169354e2bf377074c7f3c8a00f553a4fd'],2,60,62,4,0.0,0.84375,1.0
+b0302a48adb825e9b537aaed49ef6c0d81f5fb09,"Added BT_DEFER_SETUP constant for deferred accept()s
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@38 bcb67f6a-c13e-0410-b0c7-e53ae835acad",elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-07-05 18:54:10+00:00,0,2010-07-05 18:54:10+00:00,0,True,False,['btmodule.c'],['02c6aae1acf993ca5c8e32116a50783a338d9cbc'],0,5,5,1,0.0,0.0,1.0
+21918a247816f41c97596ff427e8ae8b6723b73d,"Added hci_role() function to get master/slave role
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@39 bcb67f6a-c13e-0410-b0c7-e53ae835acad",elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-07-05 19:16:45+00:00,0,2010-07-05 19:16:45+00:00,0,True,False,['btmodule.c'],['b0302a48adb825e9b537aaed49ef6c0d81f5fb09'],1,32,33,1,1.0,1.0,1.0
+d624152614f1806562df9df26062b0b04f265a88,"Added hci_read_clock and hci_acl_conn_handle functions
+
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@40 bcb67f6a-c13e-0410-b0c7-e53ae835acad",elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,elvis.pfutzenreuter@gmail.com,elvis.pfutzenreuter@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-07-05 20:14:29+00:00,0,2010-07-05 20:14:29+00:00,0,True,False,['btmodule.c'],['21918a247816f41c97596ff427e8ae8b6723b73d'],1,74,75,1,0.0,1.0,1.0
+8a56bb741d31c6b52b81b04dea1738d913698dc6,"Fix for issue #33
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@41 bcb67f6a-c13e-0410-b0c7-e53ae835acad",jaraco@jaraco.com,jaraco@jaraco.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,jaraco@jaraco.com,jaraco@jaraco.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2010-07-07 14:31:35+00:00,0,2010-07-07 14:31:35+00:00,0,True,False,['setup.py'],['d624152614f1806562df9df26062b0b04f265a88'],2,6,8,1,,,
+a078625e593db1c72f6e435e3952c986c0d6d778,"Updated build script to work with Visual Studio 2010 and build on 64-bit systems
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@46 bcb67f6a-c13e-0410-b0c7-e53ae835acad",jaracosan,jaracosan@bcb67f6a-c13e-0410-b0c7-e53ae835acad,jaracosan,jaracosan@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2011-08-02 02:44:01+00:00,0,2011-08-02 02:44:01+00:00,0,True,False,['setup.py'],['8a56bb741d31c6b52b81b04dea1738d913698dc6'],12,25,37,1,0.0,1.0,1.0
+3c32b047d9de5eb4b9c76abeea1809ef11bdc414,"Added lookup_class argument to discover_devices
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@51 bcb67f6a-c13e-0410-b0c7-e53ae835acad",lukas.hetzenecker@gmail.com,lukas.hetzenecker@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,lukas.hetzenecker@gmail.com,lukas.hetzenecker@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2011-09-18 20:37:48+00:00,0,2011-09-18 20:37:48+00:00,0,True,False,"['CHANGELOG', '__init__.py', 'bluez.py', 'msbt.py', 'widcomm.py', 'btmodule.c', '_msbt.c']",['a078625e593db1c72f6e435e3952c986c0d6d778'],26,88,114,7,0.0,0.0,0.11538461538461539
+1004bb3935c2c3cc258c0e293fdedd9945561fd4,"Allow threads during the initialization of the inquiry in widcomm
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@52 bcb67f6a-c13e-0410-b0c7-e53ae835acad",lukas.hetzenecker@gmail.com,lukas.hetzenecker@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,lukas.hetzenecker@gmail.com,lukas.hetzenecker@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2011-09-18 20:40:13+00:00,0,2011-09-18 20:40:13+00:00,0,True,False,"['CHANGELOG', 'inquirer.cpp']",['3c32b047d9de5eb4b9c76abeea1809ef11bdc414'],1,9,10,2,1.0,1.0,1.0
+d46598fb338ce16ea19a83faaaf13baae860ce98,"Add Extended Inquiry Response event
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@53 bcb67f6a-c13e-0410-b0c7-e53ae835acad",lukas.hetzenecker@gmail.com,lukas.hetzenecker@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,lukas.hetzenecker@gmail.com,lukas.hetzenecker@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2011-09-18 20:56:27+00:00,0,2011-09-18 20:56:27+00:00,0,True,False,"['CHANGELOG', 'bluez.py', 'btmodule.c']",['1004bb3935c2c3cc258c0e293fdedd9945561fd4'],5,53,58,3,0.058823529411764705,0.058823529411764705,0.9411764705882353
+920c260c813969f81cfbdc7784bc7a52c0a7ebc4,"Fix for linux kernel 3
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@54 bcb67f6a-c13e-0410-b0c7-e53ae835acad",lukas.hetzenecker@gmail.com,lukas.hetzenecker@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,lukas.hetzenecker@gmail.com,lukas.hetzenecker@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2011-09-18 21:04:42+00:00,0,2011-09-18 21:04:42+00:00,0,True,False,"['CHANGELOG', '__init__.py', 'setup.py']",['d46598fb338ce16ea19a83faaaf13baae860ce98'],2,7,9,3,,,
+9621946661dfcc019959c07a36e5791d31a902a3,"fix previous patch (add semicolons)
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@55 bcb67f6a-c13e-0410-b0c7-e53ae835acad",lukas.hetzenecker@gmail.com,lukas.hetzenecker@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,lukas.hetzenecker@gmail.com,lukas.hetzenecker@gmail.com@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2011-09-25 12:53:30+00:00,0,2011-09-25 12:53:30+00:00,0,True,False,['btmodule.c'],['920c260c813969f81cfbdc7784bc7a52c0a7ebc4'],2,2,4,1,,,
+dc563fe80d63f93984cbd22cf7a2ac64c71fbfb9,"Port to python3.3 - builds for both 3.3(3.x) and 2.7(2.x)
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@56 bcb67f6a-c13e-0410-b0c7-e53ae835acad",karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2014-01-10 19:02:06+00:00,0,2014-01-10 19:02:06+00:00,0,True,False,"['__init__.py', 'bluez.py', 'btcommon.py', 'msbt.py', 'btmodule.c', 'btsdp.c', 'asynchronous-inquiry.py', 'inquiry.py', 'l2capclient.py', 'l2capserver.py', 'rfcomm-client.py', 'rfcomm-server.py', 'sdp-browse.py', '_msbt.c', 'setup.py', '_widcomm.cpp', 'inquirer.cpp', 'l2capconn.cpp', 'l2capif.cpp', 'rfcommif.cpp', 'rfcommport.cpp', 'sdpservice.cpp']",['9621946661dfcc019959c07a36e5791d31a902a3'],140,362,502,22,1.0,1.0,0.005208333333333333
+a054fabdc5ee90e845f0d813a73fe50a12feeb01,"Added missing python3 port files
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@57 bcb67f6a-c13e-0410-b0c7-e53ae835acad",karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2014-01-13 11:08:28+00:00,0,2014-01-13 11:08:28+00:00,0,True,False,['port3.h'],['dc563fe80d63f93984cbd22cf7a2ac64c71fbfb9'],0,17,17,1,,,
+c81ee239241d482fac1d7cf22c73b8e903c89bae,"Preparations for release 0.20
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@58 bcb67f6a-c13e-0410-b0c7-e53ae835acad",karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2014-01-13 23:11:12+00:00,0,2014-01-13 23:11:12+00:00,0,True,False,"['CHANGELOG', 'MANIFEST.in', 'setup.py']",['a054fabdc5ee90e845f0d813a73fe50a12feeb01'],1,9,10,3,,,
+91616a323858841ecef3d96fddacb441e000be8d,"Port to python3
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@59 bcb67f6a-c13e-0410-b0c7-e53ae835acad",karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2014-01-14 22:41:19+00:00,0,2014-01-14 22:41:19+00:00,0,True,False,['l2capclient.py'],['c81ee239241d482fac1d7cf22c73b8e903c89bae'],0,3,3,1,,,
+e4fa063ce603285662dbd543c7410e483cd86787,"Fix for issue 54, link to pybluez on google code provieded
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@60 bcb67f6a-c13e-0410-b0c7-e53ae835acad",karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2014-01-19 18:07:57+00:00,0,2014-01-19 18:07:57+00:00,0,True,False,['README'],['91616a323858841ecef3d96fddacb441e000be8d'],1,1,2,1,,,
+cdcbf6cba80c95d1e8a9c00b8fbaf8e9a7cd6e85,"Fix for issue 28, update of build instructions
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@61 bcb67f6a-c13e-0410-b0c7-e53ae835acad",karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2014-01-19 19:01:53+00:00,0,2014-01-19 19:01:53+00:00,0,True,False,['README'],['e4fa063ce603285662dbd543c7410e483cd86787'],4,5,9,1,,,
+68d3a3de43ee2e3a62fce76760d50ef5472af213,"Advanced examples ported to python 3
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@63 bcb67f6a-c13e-0410-b0c7-e53ae835acad",karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2014-01-19 19:47:52+00:00,0,2014-01-19 19:47:52+00:00,0,True,False,"['inquiry-with-rssi.py', 'l2-mtu.py', 'l2-unreliable-client.py', 'l2-unreliable-server.py', 'read-local-bdaddr.py', 'write-inquiry-scan.py']",['cdcbf6cba80c95d1e8a9c00b8fbaf8e9a7cd6e85'],60,60,120,6,,,
+a5854a1da492e0fe53aa0c605c21c2fc617d3ccc,"Minor fixes to ported python code
+
+git-svn-id: https://pybluez.googlecode.com/svn/trunk@64 bcb67f6a-c13e-0410-b0c7-e53ae835acad",karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,karulis@wp.pl,karulis@wp.pl@bcb67f6a-c13e-0410-b0c7-e53ae835acad,2014-01-19 20:13:38+00:00,0,2014-01-19 20:13:38+00:00,0,True,False,"['__init__.py', 'bluez.py', 'msbt.py', 'osx.py', 'widcomm.py', 'bluezchat.py']",['68d3a3de43ee2e3a62fce76760d50ef5472af213'],19,18,37,6,1.0,1.0,1.0
+0118dac626c90000a6f47e08d60ad44e1680109e,Added docs files in version 0.7 - ported from svn,Pete,you@example.com,Pete,you@example.com,2014-10-26 11:39:24+01:00,-3600,2014-10-26 11:39:24+01:00,-3600,True,False,"['epydoc.css', 'index.html', 'bluetooth-module.html', 'bluetooth.BluetoothError-class.html', 'bluetooth.BluetoothSocket-class.html', 'bluetooth.DeviceDiscoverer-class.html', 'epydoc.css', 'exceptions.EnvironmentError-class.html', 'exceptions.Exception-class.html', 'exceptions.IOError-class.html', 'exceptions.StandardError-class.html', 'frames.html', 'help.html', 'index.html', 'indices.html', 'toc-bluetooth-module.html', 'toc-everything.html', 'toc.html', 'trees.html', 'bluetooth-module.html', 'bluetooth.BluetoothError-class.html', 'bluetooth.BluetoothSocket-class.html', 'bluetooth.DeviceDiscoverer-class.html', 'epydoc.css', 'exceptions.EnvironmentError-class.html', 'exceptions.Exception-class.html', 'exceptions.IOError-class.html', 'exceptions.StandardError-class.html', 'frames.html', 'help.html', 'index.html', 'indices.html', 'toc-bluetooth-module.html', 'toc-everything.html', 'toc.html', 'trees.html']",['a5854a1da492e0fe53aa0c605c21c2fc617d3ccc'],0,11337,11337,36,,,
+183f3050fc7e43c0fe5934c56f85882d24f5f8c2,Version update,karulis,karulis@in.in,karulis,karulis@in.in,2015-01-06 16:14:00+01:00,-3600,2015-01-06 16:14:00+01:00,-3600,True,False,['__init__.py'],['0118dac626c90000a6f47e08d60ad44e1680109e'],1,1,2,1,,,
+5fafe55fb1076edee1ca8149ffad3794a77a75a7,Fix for compilation wornings for python 3.x on linux,karulis,karulis@,karulis,karulis@,2015-01-07 00:38:05+01:00,-3600,2015-01-07 00:38:05+01:00,-3600,True,False,['btmodule.c'],['183f3050fc7e43c0fe5934c56f85882d24f5f8c2'],1,1,2,1,,,
+d3e78c9cb5619ffe1f675c4134e4fbac5adce5f9,Merge of patch from Peter Donis and refactoring,Pete,you@example.com,Pete,you@example.com,2015-02-01 18:29:04+01:00,-3600,2015-02-01 19:45:01+01:00,-3600,True,False,"['bluez.py', 'asynchronous-inquiry.py']",['5fafe55fb1076edee1ca8149ffad3794a77a75a7'],22,23,45,2,1.0,1.0,0.0
+396945f3103dfe476ee66b047683f014f0897b51,"Fix for issue 76: Problem with inuiring unicode names on windows8.1 with
+python3.4
+    On Widnows part C-code side inquiry is done for all flags (lookup_names,
+    lookup_class) and filtering of returned information is done in Python side -
+    - for simplification of code",karulis,karulis,karulis,karulis,2015-02-06 21:39:19+01:00,-3600,2015-02-07 23:17:39+01:00,-3600,True,False,"['msbt.py', 'inquiry.py', '_msbt.c']",['d3e78c9cb5619ffe1f675c4134e4fbac5adce5f9'],26,39,65,3,0.0,0.0,0.0
+bf2949c943df5d50b2e6962d8e859afadfbefed0,"Fix for issue 60: warnings during build for windows (ms visual studio 2010
+express)",karulis,karulis,karulis,karulis,2015-02-07 22:04:42+01:00,-3600,2015-02-07 23:17:50+01:00,-3600,True,False,['_msbt.c'],['396945f3103dfe476ee66b047683f014f0897b51'],14,14,28,1,,,0.0
+d3ca16f203ad3ba891041ce93fb73ef984bcf242,Initial changes after porting to github,Pete,you@example.com,Pete,you@example.com,2015-03-15 13:43:50+01:00,-3600,2015-03-15 13:43:50+01:00,-3600,True,False,['README'],['bf2949c943df5d50b2e6962d8e859afadfbefed0'],10,10,20,1,,,
+b22f37e18a6e723af743aff6f36bde6210ded168,Fix for issue 77: No way to select device id for device discovery,karulis,karulis@,Pete,you@example.com,2015-02-08 19:01:45+01:00,-3600,2015-03-15 13:48:30+01:00,-3600,True,False,"['bluez.py', 'msbt.py', 'btmodule.c', 'inquiry.py']",['d3ca16f203ad3ba891041ce93fb73ef984bcf242'],8,44,52,4,0.0,0.8,0.8
+e5646b28c82fe854a740d8c616454f8a520c880f,Created wrapper for hci_filter,karulis,karulis@,karulis,karulis@,2015-03-31 20:40:39+02:00,-7200,2015-03-31 20:40:39+02:00,-7200,True,False,['btmodule.h'],['b22f37e18a6e723af743aff6f36bde6210ded168'],0,10,10,1,,,
+95f5396f0737b41e6f777faf83ea892c95133df9,Added function to create filter object,debian,debian@localhost.localdomain,debian,debian@localhost.localdomain,2015-04-01 07:13:44-08:00,28800,2015-04-01 07:13:44-08:00,28800,True,False,"['btmodule.c', 'setup.py']",['e5646b28c82fe854a740d8c616454f8a520c880f'],8,100,108,2,1.0,1.0,0.5263157894736842
+631d0e9d5c5ca46c01b2764e1394fbb7ae218407,Added function to clear ptype,debian,debian@localhost.localdomain,debian,debian@localhost.localdomain,2015-04-01 07:43:05-08:00,28800,2015-04-01 07:43:05-08:00,28800,True,False,['btmodule.c'],['95f5396f0737b41e6f777faf83ea892c95133df9'],3,13,16,1,1.0,1.0,1.0
+9119819fd3bd48b7e36e4fae21852069e3cc0a39,Existing macros used for implementation,debian,debian@localhost.localdomain,debian,debian@localhost.localdomain,2015-04-02 02:06:50-08:00,28800,2015-04-02 02:06:50-08:00,28800,True,False,['btmodule.c'],['631d0e9d5c5ca46c01b2764e1394fbb7ae218407'],36,15,51,1,0.0,0.0,0.0
+5a22d81d709dac13f7853dcc5440eef39eaa3c11,New hci filter implementation works with python 2,karulis,karulis@,karulis,karulis@,2015-04-03 19:26:08+02:00,-7200,2015-04-03 19:26:08+02:00,-7200,True,False,"['bluez.py', 'btmodule.c']",['9119819fd3bd48b7e36e4fae21852069e3cc0a39'],96,100,196,2,0.0,1.0,1.0
+6cdb79486f7b0c512b08e5e7484d74774c336458,Minor fixes,karulis,karulis@,karulis,karulis@,2015-04-05 00:13:59+02:00,-7200,2015-04-05 00:13:59+02:00,-7200,True,False,"['bluez.py', 'btmodule.c']",['5a22d81d709dac13f7853dcc5440eef39eaa3c11'],26,12,38,2,0.0,0.0,0.0
+77084c72fae41fa3e660a2aecef3cf72233554a5,Simpe async inq works,karulis,karulis@,karulis,karulis@,2015-04-05 00:35:23+02:00,-7200,2015-04-05 00:35:23+02:00,-7200,True,False,['bluez.py'],['6cdb79486f7b0c512b08e5e7484d74774c336458'],14,14,28,1,1.0,1.0,0.0
+862921966ee42a0aa5b08167c954e2bd4d73c2d5,Updated dev id in inq example,karulis,karulis@,karulis,karulis@,2015-04-05 00:44:31+02:00,-7200,2015-04-05 00:44:31+02:00,-7200,True,False,['inquiry.py'],['77084c72fae41fa3e660a2aecef3cf72233554a5'],1,1,2,1,,,
+b4a1eebf13ca0d87493cf428bb96126483dcd3d0,Rssi value fix and one TODO left,karulis,karulis@,karulis,karulis@,2015-04-05 01:04:00+02:00,-7200,2015-04-05 01:04:00+02:00,-7200,True,False,['bluez.py'],['862921966ee42a0aa5b08167c954e2bd4d73c2d5'],7,15,22,1,1.0,1.0,1.0
+835ef4ae48f404c85f8a6c942593305657ea9119,Rssi value fix and one TODO left,karulis,karulis@,karulis,karulis@,2015-04-05 01:04:38+02:00,-7200,2015-04-05 01:04:38+02:00,-7200,True,False,['bluez.py'],['b4a1eebf13ca0d87493cf428bb96126483dcd3d0'],1,1,2,1,,,
+1e258b37642d4f32a48f29112e2276fff9308a45,filter_init implemented,karulis,karulis@,karulis,karulis@,2015-04-05 01:23:28+02:00,-7200,2015-04-05 01:23:28+02:00,-7200,True,False,['btmodule.c'],['835ef4ae48f404c85f8a6c942593305657ea9119'],1,1,2,1,1.0,1.0,0.0
+1d6ff7ffc3c7c3bd4f7fa8adf6135652b8c880f4,Rssi inq example ported to python3,karulis,karulis@,karulis,karulis@,2015-04-05 14:02:36+02:00,-7200,2015-04-05 14:02:36+02:00,-7200,True,False,"['bluez.py', 'inquiry-with-rssi.py']",['1e258b37642d4f32a48f29112e2276fff9308a45'],6,6,12,2,0.0,0.0,1.0
+b210377464d3d70ba6f20143096a68b41fb39809,Local BT addr example ported to python3,karulis,karulis@,karulis,karulis@,2015-04-05 14:12:45+02:00,-7200,2015-04-05 14:12:45+02:00,-7200,True,False,['read-local-bdaddr.py'],['1d6ff7ffc3c7c3bd4f7fa8adf6135652b8c880f4'],1,7,8,1,,,
+1c0ab4bbd39e20b5981a5423001237160c5c4e6d,Version updated to 0.21,karulis,karulis@,karulis,karulis@,2015-04-05 14:23:43+02:00,-7200,2015-04-05 14:23:43+02:00,-7200,True,False,"['__init__.py', 'setup.py']",['b210377464d3d70ba6f20143096a68b41fb39809'],2,2,4,2,,,
+4438afee336b1ba160fc2000be0c5462b38c41d2,Release 0.21 preparation,karulis,karulis@,karulis,karulis@,2015-04-05 14:47:44+02:00,-7200,2015-04-05 14:47:44+02:00,-7200,True,False,"['CHANGELOG', 'release_checklist']",['1c0ab4bbd39e20b5981a5423001237160c5c4e6d'],8,21,29,2,,,
+0fc30ea69c38d4d663754696038598bebb31148a,Release 0.21 preparation pt.2,karulis,karulis@,karulis,karulis@,2015-04-05 14:48:45+02:00,-7200,2015-04-05 14:48:45+02:00,-7200,True,False,['CHANGELOG'],['4438afee336b1ba160fc2000be0c5462b38c41d2'],1,1,2,1,,,
+b82d1d3188f315c960a31efc0fede047e6e38e7a,Update in setup.py script,karulis,karulis@wp.pl,karulis,karulis@wp.pl,2015-04-05 23:13:50+02:00,-7200,2015-04-05 23:13:50+02:00,-7200,True,False,['setup.py'],['0fc30ea69c38d4d663754696038598bebb31148a'],6,7,13,1,,,
+96b8c1a5d93e081a9216eaa1eff993ed12e54e80,Fix for issue 78 pt.1,karulis,karulis@,karulis,karulis@,2015-04-25 22:53:56+02:00,-7200,2015-04-25 22:53:56+02:00,-7200,True,False,"['btmodule.c', 'port3.h']",['b82d1d3188f315c960a31efc0fede047e6e38e7a'],1,3,4,2,,,
+af09fe74977121e8203c0dce007b1eb733943421,Indentation fix,karulis,karulis@,karulis,karulis@,2015-04-25 22:57:42+02:00,-7200,2015-04-25 22:57:42+02:00,-7200,True,False,['port3.h'],['96b8c1a5d93e081a9216eaa1eff993ed12e54e80'],12,12,24,1,,,
+6395197c7fd81f9605228208f193d57c4efacd13,Refactoring in l2-unreliable-client.py,karulis,karulis@,karulis,karulis@,2015-04-25 23:31:47+02:00,-7200,2015-04-25 23:31:47+02:00,-7200,True,False,"['bluez.py', 'l2-unreliable-client.py']",['af09fe74977121e8203c0dce007b1eb733943421'],43,10,53,2,0.0,0.0,0.0
+d89eddac3f0d3b1400b17f5e09af98af40ba0a61,Fix for issue 72: No adapter detected - WP8.1,karulis,karulis,karulis,karulis,2015-05-09 11:52:00+02:00,-7200,2015-05-09 11:52:00+02:00,-7200,True,False,['_msbt.c'],['6395197c7fd81f9605228208f193d57c4efacd13'],2,31,33,1,0.0,0.76,1.0
+0baafcac8d9d9cc8b691ba1d839dade3163b5a32,Initial preparation to use gattlib,debian,debian@localhost.localdomain,debian,debian@localhost.localdomain,2015-05-11 08:08:20-08:00,28800,2015-05-11 08:08:20-08:00,28800,True,False,['setup.py'],['d89eddac3f0d3b1400b17f5e09af98af40ba0a61'],1,4,5,1,,,
+f0f0dcb42ecd2bb907d119a1a4b2cb50baf3ac69,Transparent importing gattlib module,debian,debian@debian.pl.abb.com,debian,debian@debian.pl.abb.com,2015-05-12 10:41:07-05:00,18000,2015-05-12 10:41:07-05:00,18000,True,False,['ble.py'],['0baafcac8d9d9cc8b691ba1d839dade3163b5a32'],0,2,2,1,,,
+59b5853c558223f604b85f47bb3da1cb05b47c2c,Check for minimal version of bluez before gattlib install,debian,debian@debian.pl.abb.com,debian,debian@debian.pl.abb.com,2015-05-13 10:01:33-05:00,18000,2015-05-13 10:01:33-05:00,18000,True,False,['setup.py'],['f0f0dcb42ecd2bb907d119a1a4b2cb50baf3ac69'],1,10,11,1,,,
+fe51a38f0be30009afe47e0c7d0d63c838a58d17,Added implementation for sock_getsockopt and sock_setsockopt,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,2015-05-14 16:36:09+02:00,-7200,2015-05-14 16:36:09+02:00,-7200,True,False,['_msbt.c'],['d89eddac3f0d3b1400b17f5e09af98af40ba0a61'],0,66,66,1,0.0,1.0,1.0
+72c6aaeac3a74c827555cbe7aee742fc618bcf42,Version update to 0.22,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,2015-05-14 17:15:29+02:00,-7200,2015-05-14 17:15:29+02:00,-7200,True,False,"['__init__.py', 'setup.py']",['d89eddac3f0d3b1400b17f5e09af98af40ba0a61'],2,2,4,2,,,
+23f5c5db42e7c7aad484c437879573ef694e5b14,Added sockopt constants,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,2015-05-14 17:04:10+02:00,-7200,2015-05-14 18:02:43+02:00,-7200,True,False,['_msbt.c'],['fe51a38f0be30009afe47e0c7d0d63c838a58d17'],12,18,30,1,0.7407407407407407,0.0,0.0
+17f68e2591e19a217770c09b0e403aa2030c6987,Final fixes,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,2015-05-15 13:36:19+02:00,-7200,2015-05-15 15:35:37+02:00,-7200,True,False,['_msbt.c'],['23f5c5db42e7c7aad484c437879573ef694e5b14'],6,6,12,1,,,
+82ba6e7eea891889573378d963751514796f5373,Removed code duplication and hci_get_route now throws exception in case of no BT device,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,2015-05-15 16:25:18+02:00,-7200,2015-05-15 16:25:18+02:00,-7200,True,False,"['bluez.py', 'btmodule.c']",['72c6aaeac3a74c827555cbe7aee742fc618bcf42'],46,16,62,2,1.0,0.0,0.0
+0e3a51e6f2799aa034fab3e935fb4372068d479c,hci_get_route error set from errno,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,U-EUROPE\PLPIKAR1,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,2015-05-15 16:42:17+02:00,-7200,2015-05-15 16:42:17+02:00,-7200,True,False,['btmodule.c'],['82ba6e7eea891889573378d963751514796f5373'],2,1,3,1,1.0,0.0,0.0
+0d8d618e74b400e3a5c98779caa1b9b23d34bec0,Example update,karulis,karulis@,karulis,karulis@,2015-05-16 12:44:01+02:00,-7200,2015-05-16 12:44:01+02:00,-7200,True,False,['inquiry.py'],['0e3a51e6f2799aa034fab3e935fb4372068d479c'],1,1,2,1,,,
+6e4af2bb1857b72ee3c204f647d81146635c0e5b,Patch merge,karulis,karulis@wp.pl,karulis,karulis@wp.pl,2015-05-17 15:35:59+02:00,-7200,2015-05-17 15:35:59+02:00,-7200,True,False,['bluez.py'],['a7152dde0b91038d5dd0e1ad46c52df62c6446c7'],4,4,8,1,,,
+a35b65c8112c1848e6ebe4cff3843305fbeee6ce,Device discovery with BluetoothFindFirstDevice,karulis,karulis@wp.pl,karulis,karulis@wp.pl,2015-05-22 12:55:09+02:00,-7200,2015-05-22 12:55:09+02:00,-7200,True,False,"['_msbt.c', 'port3.h']",['469434f05c8ce63d965ba6863b9e71c88af9f5f4'],99,44,143,2,1.0,1.0,0.0
+fed2e755c83d2c38f19e226575f92e22a686ca0b,Fix in inquiry.py for name encoding issues,karulis,karulis,karulis,karulis,2015-05-22 13:33:06+02:00,-7200,2015-05-22 13:33:06+02:00,-7200,True,False,['inquiry.py'],['a35b65c8112c1848e6ebe4cff3843305fbeee6ce'],1,4,5,1,,,
+0f6821843c9cc9b12afb481b403a7143e1a43cff,Final fixes,karulis,karulis,karulis,karulis,2015-05-22 14:23:34+02:00,-7200,2015-05-22 14:26:10+02:00,-7200,True,False,"['msbt.py', 'inquiry.py', '_msbt.c']",['fed2e755c83d2c38f19e226575f92e22a686ca0b'],11,24,35,3,0.0,1.0,0.0
+d7d706d7102eb0973a0f5e1a14cde341ae815886,Removed compilation warnings of widcomm stack,karulis,karulis,karulis,karulis,2015-05-22 16:51:23+02:00,-7200,2015-05-22 16:51:23+02:00,-7200,True,False,"['inquirer.cpp', 'util.cpp']",['6961b70bc1a1e9af97ab982ccd8826f560d99f7e'],7,7,14,2,,,
+597d38585ba87cf0f9d1104e5f633bbcdb9f70a2,Patch for issue 40 merged,karulis,karulis,karulis,karulis,2015-05-22 23:47:13+02:00,-7200,2015-05-22 23:47:13+02:00,-7200,True,False,"['msbt.py', 'rfcomm-server.py', '_msbt.c']",['d7d706d7102eb0973a0f5e1a14cde341ae815886'],46,19,65,3,1.0,1.0,0.0
+ab4beaadaae175b561cd77741986cf5fd764a6a5,Reverted changes in rfcomm-server.py,karulis,karulis,karulis,karulis,2015-05-23 11:36:31+02:00,-7200,2015-05-23 11:36:31+02:00,-7200,True,False,['rfcomm-server.py'],['597d38585ba87cf0f9d1104e5f633bbcdb9f70a2'],1,1,2,1,,,
+d14f4550011c612d84c08f25d2b88b964c7216ae,Refactoring in msbt_setblocking,karulis,karulis,karulis,karulis,2015-05-23 12:16:19+02:00,-7200,2015-05-23 12:16:19+02:00,-7200,True,False,['_msbt.c'],['cc72bc9785ec55701a6a43552c00342a526eaaf8'],12,2,14,1,1.0,0.0,0.0
+664f14221c2b953c504060cd878b65f62ca05214,"Fix for issue 85: When cancelling device discovery, DeviceDiscoverer does not call inquiry_complete()",karulis,karulis@localhost.localdomain,karulis,karulis@localhost.localdomain,2015-05-23 09:49:45+02:00,-7200,2015-05-23 09:49:45+02:00,-7200,True,False,['bluez.py'],['d14f4550011c612d84c08f25d2b88b964c7216ae'],4,12,16,1,1.0,1.0,1.0
+c0bce6490283dc4249e8bde3ac10dc48dcf8e10f,Added example for ble scan - based on pygattlib,karulis,karulis@,karulis,karulis@,2015-05-29 00:38:00+02:00,-7200,2015-05-29 00:38:00+02:00,-7200,True,False,['scan.py'],['59b5853c558223f604b85f47bb3da1cb05b47c2c'],0,7,7,1,,,
+d0046bb23af45c78107f7b46350012750fa64d6a,Added readme,karulis,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,karulis,PLPIKAR1@pl-l-R9035GCP.europe.abb.com,2015-06-02 18:26:48+02:00,-7200,2015-06-02 18:26:48+02:00,-7200,True,False,['README.rst'],['664f14221c2b953c504060cd878b65f62ca05214'],0,81,81,1,,,
+7d3aa58f513469f227c7aafd8ecc3dc6cd71142c,Added readme pt.1,karulis,me@w.pl,karulis,me@w.pl,2015-06-02 18:38:15+02:00,-7200,2015-06-02 18:38:15+02:00,-7200,True,False,['README.rst'],['d0046bb23af45c78107f7b46350012750fa64d6a'],23,23,46,1,,,
+19f489ed3d619d61842d113810849488443b6ef8,Added readme pt.2,karulis,me@w.pl,karulis,me@w.pl,2015-06-02 18:40:16+02:00,-7200,2015-06-02 18:40:16+02:00,-7200,True,False,['README.rst'],['7d3aa58f513469f227c7aafd8ecc3dc6cd71142c'],9,9,18,1,,,
+a7111dce321316c2bc0ddf135f3b6fd2646afe6e,Added readme pt.3,karulis,me@w.pl,karulis,me@w.pl,2015-06-02 18:47:15+02:00,-7200,2015-06-02 18:47:15+02:00,-7200,True,False,['README.rst'],['19f489ed3d619d61842d113810849488443b6ef8'],4,6,10,1,,,
+7919ba537a330f98bc601277bef30177639a7ac0,Added readme pt.4,karulis,me@w.pl,karulis,me@w.pl,2015-06-02 18:58:04+02:00,-7200,2015-06-02 18:58:04+02:00,-7200,True,False,['README.rst'],['a7111dce321316c2bc0ddf135f3b6fd2646afe6e'],17,28,45,1,,,
+d59ec655622b7e19556312787d7298052dc974e4,Added readme pt.5,karulis,me@w.pl,karulis,me@w.pl,2015-06-02 18:59:11+02:00,-7200,2015-06-02 18:59:11+02:00,-7200,True,False,['README.rst'],['7919ba537a330f98bc601277bef30177639a7ac0'],2,2,4,1,,,
+8b052f58adaa747a3e621209c71b5fbcdc5a224e,Added optional installation of gattlib from bitbucket,karulis,karulis@localhost.localdomain,karulis,karulis@localhost.localdomain,2015-06-05 00:15:28+02:00,-7200,2015-06-05 00:15:28+02:00,-7200,True,False,['setup.py'],['c0bce6490283dc4249e8bde3ac10dc48dcf8e10f'],3,4,7,1,,,
+1b1a5fd7cfc705d6a515158ae540241e9e85a564,Added optional installation of gattlib from bitbucket - cleanup,karulis,karulis@localhost.localdomain,karulis,karulis@localhost.localdomain,2015-06-05 00:21:39+02:00,-7200,2015-06-05 00:21:39+02:00,-7200,True,False,['setup.py'],['8b052f58adaa747a3e621209c71b5fbcdc5a224e'],12,1,13,1,,,
+668604f84a16a05b1fcb087de4452ae18ff6e257,Initial fix,karulis,me@w.pl,karulis,me@w.pl,2015-06-25 16:29:57+02:00,-7200,2015-06-25 16:29:57+02:00,-7200,True,False,['btmodule.c'],['57871c6105a56996b9d94603c5d0e894c4d833b0'],38,56,94,1,0.0,0.3157894736842105,1.0
+91269b7cdd11d669b90c0ec529b25d60ddb1a8a2,Restored old version of hci filter,karulis,me@wp.pl,karulis,me@wp.pl,2015-06-26 05:16:35-05:00,18000,2015-06-26 05:16:35-05:00,18000,True,False,"['btmodule.c', 'btmodule.h']",['668604f84a16a05b1fcb087de4452ae18ff6e257'],157,52,209,2,0.59375,0.34375,0.3125
+4c1aba5d288260be9ccd64d559bdb5cf75050d65,Updates to ble dependency,karulis,me@wp.pl,karulis,me@wp.pl,2015-06-26 06:59:03-05:00,18000,2015-06-26 06:59:03-05:00,18000,True,False,"['README.rst', 'beacon.py', 'beacon_scan.py', 'scan.py', 'setup.py']",['57871c6105a56996b9d94603c5d0e894c4d833b0'],2,45,47,5,1.0,1.0,0.46153846153846156
+7c9fa301ce545fd43d92d24d37b39606f0855fa2,Updates to ble dependency pt.1,karulis,me@wp.pl,karulis,me@wp.pl,2015-06-26 07:04:32-05:00,18000,2015-06-26 07:04:32-05:00,18000,True,False,['README.rst'],['4c1aba5d288260be9ccd64d559bdb5cf75050d65'],2,1,3,1,,,
+5ec09d4e0a5005ea026d530e251c0fa2cff4b846,Updates to ble dependency - readme update,karulis,me@wp.pl,karulis,me@wp.pl,2015-06-26 07:08:35-05:00,18000,2015-06-26 07:08:35-05:00,18000,True,False,['README.rst'],['7c9fa301ce545fd43d92d24d37b39606f0855fa2'],2,5,7,1,,,
+f593c611ef24fa4a4258b03ea50b11cc04a315c2,Updates to ble dependency - readme update,karulis,me@wp.pl,karulis,me@wp.pl,2015-06-26 07:11:49-05:00,18000,2015-06-26 07:11:49-05:00,18000,True,False,['README.rst'],['5ec09d4e0a5005ea026d530e251c0fa2cff4b846'],1,1,2,1,,,
+328ab28709f1260d0b2a93122b647ebaef658c2e,Updates to ble dependency - readme update,karulis,me@wp.pl,karulis,me@wp.pl,2015-06-26 07:13:14-05:00,18000,2015-06-26 07:13:14-05:00,18000,True,False,['README.rst'],['f593c611ef24fa4a4258b03ea50b11cc04a315c2'],2,0,2,1,,,
+5c8a76fdaa590d59feb2ac040dac4a99174fbee0,Updates to ble dependency - readme update,karulis,me@wp.pl,karulis,me@wp.pl,2015-06-26 07:14:13-05:00,18000,2015-06-26 07:14:13-05:00,18000,True,False,['README.rst'],['328ab28709f1260d0b2a93122b647ebaef658c2e'],0,2,2,1,,,
+420a7670edb2b548a4ae4da988b0f93ab6e082b9,Working fix,karulis,me@wp.pl,karulis,me@wp.pl,2015-06-30 10:15:39-05:00,18000,2015-06-30 10:15:39-05:00,18000,True,False,['btmodule.c'],['91269b7cdd11d669b90c0ec529b25d60ddb1a8a2'],15,9,24,1,1.0,1.0,0.0
+d34d42b48f81854ab93829d4e6b727fd4478e5c3,Updated version for gattlib dependency,karulis,me@wp.pl,karulis,me@wp.pl,2015-06-30 10:27:05-05:00,18000,2015-06-30 10:27:05-05:00,18000,True,False,['setup.py'],['5c8a76fdaa590d59feb2ac040dac4a99174fbee0'],1,1,2,1,,,
+ef483f7948cb00aa6f9a9c1d359067ea507dc774,Fixes in example scripts,karulis,karulis@wp.pl,karulis,karulis@wp.pl,2015-07-02 20:57:47+00:00,0,2015-07-02 20:57:47+00:00,0,True,False,"['l2-unreliable-server.py', 'l2capserver.py']",['90a6c3218fc03b4dd1c4096112288a626d148baa'],9,2,11,2,,,
+e34653d32cd3bb6ddaccb7c08a0ad80d96f48104,Fixes in example scripts,karulis,karulis@,karulis,karulis@,2015-07-03 00:34:25+02:00,-7200,2015-07-03 00:34:25+02:00,-7200,True,False,"['bluez.py', 'l2capclient.py', 'l2capserver.py']",['ef483f7948cb00aa6f9a9c1d359067ea507dc774'],2,4,6,3,,,
+181e2f0b7cad1a345890742619eb4fe4e6452169,Initial merge of lightblue library,karulis,karulis@,karulis,karulis@,2015-07-04 13:29:44+02:00,-7200,2015-07-04 13:30:55+02:00,-7200,True,False,"['BBBluetoothChannelDelegate.h', 'BBBluetoothChannelDelegate.m', 'BBBluetoothOBEXClient.h', 'BBBluetoothOBEXClient.m', 'BBBluetoothOBEXServer.h', 'BBBluetoothOBEXServer.m', 'BBLocalDevice.h', 'BBLocalDevice.m', 'BBMutableOBEXHeaderSet.h', 'BBMutableOBEXHeaderSet.m', 'BBOBEXHeaderSet.h', 'BBOBEXHeaderSet.m', 'BBOBEXRequest.h', 'BBOBEXRequest.m', 'BBOBEXRequestHandler.h', 'BBOBEXRequestHandler.m', 'BBOBEXResponse.h', 'BBOBEXResponse.m', 'BBServiceAdvertiser.h', 'BBServiceAdvertiser.m', 'BBStreamingInputStream.h', 'BBStreamingInputStream.m', 'BBStreamingOutputStream.h', 'BBStreamingOutputStream.m', 'LightAquaBlue.bridgesupport', 'InfoPlist.strings', 'Info.plist', 'LightAquaBlue.h', 'blam.mode1v3', 'project.pbxproj', 'LightAquaBlue_Prefix.pch', 'OBEXFileTransferDictionary.plist', 'OBEXObjectPushDictionary.plist', 'SerialPortDictionary.plist', 'advertising-notes.txt', '_IOBluetooth.py', '_IOBluetoothUI.py', '_LightAquaBlue.py', '__init__.py', '_bluetoothsockets.py', '_lightblue.py', '_lightbluecommon.py', '_macutil.py', '_obex.py', '_obexcommon.py', '_osxbt.c', 'obex.py', 'setup.py']",['e34653d32cd3bb6ddaccb7c08a0ad80d96f48104'],790,10166,10956,48,0.5313046519762155,0.608604407135362,0.8933193424274222
+a20bc2e558dba75b7cf44da2a7683e41c1899917,Fixes related to l2-unreliable-client.py,karulis,karulis@wp.pl,karulis,karulis@wp.pl,2015-07-06 11:35:13+00:00,0,2015-07-06 11:35:13+00:00,0,True,False,"['bluez.py', 'btmodule.c']",['e34653d32cd3bb6ddaccb7c08a0ad80d96f48104'],3,3,6,2,,,
+86f6c050c91130c54c8a17597c250d2182b32303,Fixes in example scritp l2-mtu.py,karulis,karulis@wp.pl,karulis,karulis@wp.pl,2015-07-15 13:55:20+00:00,0,2015-07-15 13:55:20+00:00,0,True,False,['l2-mtu.py'],['a20bc2e558dba75b7cf44da2a7683e41c1899917'],1,1,2,1,,,
+b7de4e23d977919aaf9df7cbef5d59f0eac55c0f,Ble read device name script added,karulis,me@wp.pl,karulis,me@wp.pl,2015-07-22 10:51:08-05:00,18000,2015-07-22 10:51:08-05:00,18000,True,False,['read_name.py'],['86f6c050c91130c54c8a17597c250d2182b32303'],0,38,38,1,1.0,1.0,1.0
+9ecaf4c3493cb47069b87921eb571a349fc79b89,placeholder code from piotrek -- still need to test this...,Travis W. Peters,traviswp@gmail.com,Travis W. Peters,traviswp@gmail.com,2015-07-24 20:50:09-07:00,25200,2015-07-24 20:50:09-07:00,25200,True,False,['osx.py'],['181e2f0b7cad1a345890742619eb4fe4e6452169'],1,95,96,1,1.0,1.0,0.0
+906614db2689b1e76c603ecfbba199813d613bf7,setup updated for os x; seems to run fine but isn't installing properly...,Travis W. Peters,traviswp@gmail.com,Travis W. Peters,traviswp@gmail.com,2015-07-24 20:51:11-07:00,25200,2015-07-24 20:51:11-07:00,25200,True,False,['setup.py'],['9ecaf4c3493cb47069b87921eb571a349fc79b89'],7,30,37,1,,,
+5cadc5a6a889246d58693a901bd12d892f779383,Preparations for release 0.22,karulis,me@wp.pl,karulis,me@wp.pl,2015-08-05 09:38:54-05:00,18000,2015-08-05 09:38:54-05:00,18000,True,False,['setup.py'],['b7de4e23d977919aaf9df7cbef5d59f0eac55c0f'],69,59,128,1,1.0,0.0,0.0
+42c1a0df5b969568f256c0ab3be2754c7c4a6df4,Preparations for release 0.22 pt.2,karulis,me@wp.pl,karulis,me@wp.pl,2015-08-05 09:53:35-05:00,18000,2015-08-05 09:53:35-05:00,18000,True,False,['CHANGELOG'],['5cadc5a6a889246d58693a901bd12d892f779383'],1,23,24,1,,,
+1505df1c5e6f99477c45f70f713d12467b1a405f,install working for osx,Travis W. Peters,traviswp@gmail.com,Travis W. Peters,traviswp@gmail.com,2015-08-06 18:11:12-07:00,25200,2015-08-06 18:11:12-07:00,25200,True,False,['setup.py'],['906614db2689b1e76c603ecfbba199813d613bf7'],1,18,19,1,1.0,1.0,1.0
+a5fa14187cc3c311990fc96fda6174c01c94ac43,updated osx.py also needed for successful install; inquiry.py runs successfully now.,Travis W. Peters,traviswp@gmail.com,Travis W. Peters,traviswp@gmail.com,2015-08-06 18:11:55-07:00,25200,2015-08-06 18:11:55-07:00,25200,True,False,['osx.py'],['1505df1c5e6f99477c45f70f713d12467b1a405f'],18,40,58,1,0.45161290322580644,0.45161290322580644,0.12903225806451613
+c7f598f94cc6aed6da229a6a03d49464dc83c067,rearragning function order to match msbt.py,Travis W. Peters,traviswp@gmail.com,Travis W. Peters,traviswp@gmail.com,2015-08-06 18:37:31-07:00,25200,2015-08-06 18:37:31-07:00,25200,True,False,['osx.py'],['a5fa14187cc3c311990fc96fda6174c01c94ac43'],4,3,7,1,,,
+9107e6c1098d8f7a8ec76e11735d0a48a2468432,cleaning up old commented out code,Travis W. Peters,traviswp@gmail.com,Travis W. Peters,traviswp@gmail.com,2015-08-06 18:44:21-07:00,25200,2015-08-06 18:44:21-07:00,25200,True,False,['setup.py'],['c7f598f94cc6aed6da229a6a03d49464dc83c067'],6,4,10,1,,,
+85c9eb5e47bc057689506164d5b9aff32c133e66,sdp-browse.py supported on osx now.,Travis W. Peters,traviswp@gmail.com,Travis W. Peters,traviswp@gmail.com,2015-08-09 16:36:54-07:00,25200,2015-08-09 16:36:54-07:00,25200,True,False,"['osx.py', 'sdp-browse.py']",['9107e6c1098d8f7a8ec76e11735d0a48a2468432'],31,61,92,2,0.0,1.0,0.11764705882352941
+be639288b1e345f38816e9f101f03ad4d8016b57,"adding basic read-local-bdaddr support -- this is not ideal it adds to the pybluez API, but there isn't an analogous way on osx to do what is done on windows or gnu/linux.",Travis W. Peters,traviswp@gmail.com,Travis W. Peters,traviswp@gmail.com,2015-08-10 17:57:53-07:00,25200,2015-08-10 17:57:53-07:00,25200,True,False,"['osx.py', 'read-local-bdaddr.py']",['85c9eb5e47bc057689506164d5b9aff32c133e66'],6,16,22,2,1.0,1.0,1.0
+62399475515ea5a875bd3eb8e8f357266fb441b4,updating README with mac instructions,Travis W. Peters,traviswp@gmail.com,Travis W. Peters,traviswp@gmail.com,2015-08-13 18:38:49-07:00,25200,2015-08-13 18:38:49-07:00,25200,True,False,['README.rst'],['be639288b1e345f38816e9f101f03ad4d8016b57'],0,20,20,1,,,
+173b5d883fe9106b23ac4e7f789a929b0e3696cd,Update README.rst,Travis Peters,traviswp@gmail.com,Travis Peters,traviswp@gmail.com,2015-08-17 21:45:11-07:00,25200,2015-08-17 21:45:11-07:00,25200,True,False,['README.rst'],['62399475515ea5a875bd3eb8e8f357266fb441b4'],21,22,43,1,,,
+3a201a5e70e24dd18f8ea375209b660b62dac411,"advertise_service() enhancement
+
+Add sub-routine ""adv_available()"" which raise exception
+if there is no advertisable device.",Sim Young-Bo,ybsim@khu.ac.kr,Sim Young-Bo,ybsim@khu.ac.kr,2015-08-18 22:24:27+09:00,-32400,2015-08-18 22:31:44+09:00,-32400,True,False,['btmodule.c'],['42c1a0df5b969568f256c0ab3be2754c7c4a6df4'],0,145,145,1,0.08653846153846154,0.08653846153846154,1.0
+e322ba43f2bf572eb832dad37f74ab30f06f3e46,just code clean up,Sim Young-Bo,ybsim@khu.ac.kr,Sim Young-Bo,ybsim@khu.ac.kr,2015-08-19 09:45:45+09:00,-32400,2015-08-19 09:45:45+09:00,-32400,True,False,['btmodule.c'],['3a201a5e70e24dd18f8ea375209b660b62dac411'],7,3,10,1,1.0,1.0,0.0
+b39db3acada7f03e1b07a987a5e17caaee4fae1d,Add gitignore file & Code Clean-up,Sim Young-Bo,ybsim@khu.ac.kr,Sim Young-Bo,ybsim@khu.ac.kr,2015-08-20 03:16:54+09:00,-32400,2015-08-20 06:10:03+09:00,-32400,True,False,"['.gitignore', 'btmodule.c']",['e322ba43f2bf572eb832dad37f74ab30f06f3e46'],50,48,98,2,0.0,0.0,0.0
+405da05af1a90d4767b5b442046bb69319a7bdd0,Fix in l2-mtu.py script,karulis,karulis@,karulis,karulis@,2015-08-24 23:16:29+02:00,-7200,2015-08-24 23:16:29+02:00,-7200,True,False,['l2-mtu.py'],['42c1a0df5b969568f256c0ab3be2754c7c4a6df4'],2,2,4,1,,,
+34faf39c0dc6409dc8463d02e3eb5beb3c5d38ad,Fix in ble read_name.py script,karulis,me@wp.pl,karulis,me@wp.pl,2015-08-26 10:35:36-05:00,18000,2015-08-26 10:35:36-05:00,18000,True,False,['read_name.py'],['405da05af1a90d4767b5b442046bb69319a7bdd0'],1,4,5,1,1.0,1.0,1.0
+4ae38476b355d71cbe1119fe41c6d3fe71f7730b,Readme update,karulis,me@wp.pl,karulis,me@wp.pl,2015-08-27 10:21:55-05:00,18000,2015-08-27 10:21:55-05:00,18000,True,False,['README.rst'],['34faf39c0dc6409dc8463d02e3eb5beb3c5d38ad'],31,66,97,1,,,
+195a1de06475a929004c167a39fefb2de2318379,Readme update,karulis,me@wp.pl,karulis,me@wp.pl,2015-08-27 10:23:38-05:00,18000,2015-08-27 10:23:38-05:00,18000,True,False,['README.rst'],['4ae38476b355d71cbe1119fe41c6d3fe71f7730b'],135,135,270,1,,,
+f5ccc777abe681e9c7a0c2fe5784cbedb9299194,Initial impl for local adapters listing - not compiling,karulis,me@wp.pl,karulis,me@wp.pl,2015-08-28 11:26:21-05:00,18000,2015-08-28 11:26:21-05:00,18000,True,False,['_msbt.c'],['647198b994ce3458384b8680e68e368d85fbfd0e'],0,52,52,1,0.0,1.0,1.0
+f87e356a8a5943dda4ce3e8c424e27cb71d9c059,updating package dir handling in setup.py according to piotrek's comments.,Travis W. Peters,traviswp@gmail.com,Travis W. Peters,traviswp@gmail.com,2015-09-02 23:23:12-07:00,25200,2015-09-02 23:23:12-07:00,25200,True,False,['setup.py'],['173b5d883fe9106b23ac4e7f789a929b0e3696cd'],15,4,19,1,0.0,0.0,0.0
+ebcc25d8c15e5c237cefdd45957fc8e869d1ef9d,Minors,me,me@mac,me,me@mac,2015-09-04 23:55:54+02:00,-7200,2015-09-04 23:55:54+02:00,-7200,True,False,"['osx.py', 'setup.py']",['e8ad801816267de55b3fa9e885d5eb2868f13349'],45,44,89,2,0.9714285714285714,1.0,0.7428571428571429
+94fcaff4e73a4eb907358c5f4d03874a2d5c2d42,Inquiry for 2.7 works,me,me@mac,me,me@mac,2015-09-15 15:14:51+02:00,-7200,2015-09-15 15:14:51+02:00,-7200,True,False,['_lightblue.py'],['65884eca182cd0a4973e33f310a812be4800e1cd'],0,1,1,1,,,
+4ad8426c2959a633e03f6556128ec29fc525daae,SDP browse work in progress,me,me@mac,me,me@mac,2015-09-21 21:47:21+02:00,-7200,2015-09-21 21:47:21+02:00,-7200,True,False,['_lightblue.py'],['94fcaff4e73a4eb907358c5f4d03874a2d5c2d42'],3,2,5,1,1.0,1.0,1.0
+065cb4685c2dc6b4c9b8bf6d2d00efd91ded3c68,SDP runs but with empty data,me,me@mac,me,me@mac,2015-09-21 21:58:03+02:00,-7200,2015-09-21 21:58:03+02:00,-7200,True,False,['_lightblue.py'],['4ad8426c2959a633e03f6556128ec29fc525daae'],9,2,11,1,0.0,0.0,0.0
+016d780e87b299b51e0f80355e6b67829570d90c,Added TODO regarding SDP browse,me,me@mac,me,me@mac,2015-09-21 22:21:47+02:00,-7200,2015-09-21 22:21:47+02:00,-7200,True,False,['_lightblue.py'],['065cb4685c2dc6b4c9b8bf6d2d00efd91ded3c68'],0,4,4,1,,,
+f8f0e6214157a058673881db5af136085e31fc91,Run 2to3 script on osx code,me,me@mac,me,me@mac,2015-09-22 19:55:20+02:00,-7200,2015-09-22 19:55:20+02:00,-7200,True,False,"['_IOBluetooth.py', '_IOBluetoothUI.py', '_LightAquaBlue.py', '__init__.py', '_bluetoothsockets.py', '_lightblue.py', '_lightbluecommon.py', '_macutil.py', '_obex.py', '_obexcommon.py', 'obex.py']",['016d780e87b299b51e0f80355e6b67829570d90c'],45,965,1010,11,0.6383838383838384,0.7090909090909091,0.7151515151515152
+b02e3121015eba58d49e1c03802b087210b8029d,Support for python 3.5,karulis,karulis@wp.pl,karulis,karulis@wp.pl,2015-09-22 23:47:48+02:00,-7200,2015-09-22 23:47:48+02:00,-7200,True,False,['setup.py'],['647198b994ce3458384b8680e68e368d85fbfd0e'],0,2,2,1,0.0,0.0,1.0
+b6130cae0ab75796216dce2c90c50e18532a12cc,Removed pyobjec dependency in setup.py - will require manual install,me,me@mac,me,me@mac,2015-09-25 11:16:26+02:00,-7200,2015-09-25 11:16:26+02:00,-7200,True,False,['setup.py'],['f8f0e6214157a058673881db5af136085e31fc91'],1,1,2,1,,,
+9cc7a871eccffa59ef267291dc0637f5da615cfe,Added _getport to bt soc object - needed by lightblue implementation,me,me@mac,me,me@mac,2015-09-25 11:21:44+02:00,-7200,2015-09-25 11:21:44+02:00,-7200,True,False,['osx.py'],['b6130cae0ab75796216dce2c90c50e18532a12cc'],0,5,5,1,1.0,1.0,0.75
+fb024236fa75c10214b7c67bebacc792fbd0097c,Use of proper protocole defined values for lightblue,karulis,me@w.pl,karulis,me@w.pl,2015-09-25 11:30:59+02:00,-7200,2015-09-25 11:30:59+02:00,-7200,True,False,['osx.py'],['9cc7a871eccffa59ef267291dc0637f5da615cfe'],9,8,17,1,0.0,0.0,1.0
+b7ee0a0e4bca5b69751edfa07b7408fee6aa0fed,Fix for dynamicaly selected rfcomm port,me,me@mac,me,me@mac,2015-09-25 11:46:24+02:00,-7200,2015-09-25 11:46:24+02:00,-7200,True,False,['_lightblue.py'],['fb024236fa75c10214b7c67bebacc792fbd0097c'],1,1,2,1,,,
+8fa89790c9e7dd7c173d32455f72d15f114c910a,Rfcomm connection works - problem with SDP service uuid,me,me@mac,me,me@mac,2015-09-27 21:45:30+02:00,-7200,2015-09-27 21:45:30+02:00,-7200,True,False,"['osx.py', '_lightblue.py']",['0313057517887499c662d6f9a4b02c662bc00950'],14,14,28,2,1.0,1.0,1.0
+7d2493f27f2dfda20866469fa174e6de422276c8,Minor fixes,me,me@mac,me,me@mac,2015-09-27 22:17:17+02:00,-7200,2015-09-27 22:17:17+02:00,-7200,True,False,['_lightblue.py'],['8fa89790c9e7dd7c173d32455f72d15f114c910a'],12,1,13,1,1.0,1.0,1.0
+006a1e831ce1c9148884178e88aeb38fefe7c856,Lint fixes,karulis,me@w.pl,karulis,me@w.pl,2015-09-28 14:55:00+02:00,-7200,2015-09-28 14:55:00+02:00,-7200,True,False,['osx.py'],['7d2493f27f2dfda20866469fa174e6de422276c8'],7,12,19,1,,,
+1141e685dd20c00066a90d5ed68b06ce6bc22cf0,Added uuid arg for service adv in osx implementation,karulis,me@w.pl,karulis,me@w.pl,2015-09-28 16:54:29+02:00,-7200,2015-09-28 16:54:29+02:00,-7200,True,False,"['osx.py', 'BBServiceAdvertiser.h', 'BBServiceAdvertiser.m', '_lightblue.py']",['006a1e831ce1c9148884178e88aeb38fefe7c856'],24,25,49,4,0.0,1.0,1.0
+a252a931470659b64c4594182d355b0a11700733,Added uuid arg to sdp advertise - not tested,me,me@mac,me,me@mac,2015-09-29 10:48:45+02:00,-7200,2015-09-29 10:48:45+02:00,-7200,True,False,"['osx.py', 'BBServiceAdvertiser.m']",['1141e685dd20c00066a90d5ed68b06ce6bc22cf0'],6,13,19,2,0.0,1.0,1.0
+333762a0191ba38ba687125d9cff99d08eaa6ab3,Update in read local address,karulis,me@w.pl,karulis,me@w.pl,2015-09-29 16:25:40+02:00,-7200,2015-09-29 16:25:40+02:00,-7200,True,False,"['msbt.py', 'read-local-bdaddr.py', '_msbt.c']",['f5ccc777abe681e9c7a0c2fe5784cbedb9299194'],26,31,57,3,1.0,0.0,0.0
+b2aa32fb49d81deb984e642ae285c2f6064c9f49,Commented out code removed,me,me@mac,me,me@mac,2015-09-29 16:42:37+02:00,-7200,2015-09-29 16:42:37+02:00,-7200,True,False,['BBServiceAdvertiser.m'],['a252a931470659b64c4594182d355b0a11700733'],4,0,4,1,,,
+2cfbe4377c0d602312e4e777961002096485e871,Updates in read-local-bdaddr.py example,karulis,me@wp.pl,karulis,me@wp.pl,2015-09-29 09:56:22-05:00,18000,2015-09-29 09:56:22-05:00,18000,True,False,['read-local-bdaddr.py'],['333762a0191ba38ba687125d9cff99d08eaa6ab3'],3,3,6,1,0.0,1.0,1.0
+38634a16f8ecb2dbcac3e6cc4a12ec713d5f7b8b,Read local bt addres refactored for linux,karulis,me@w.pl,karulis,me@w.pl,2015-09-30 16:25:24+02:00,-7200,2015-09-30 16:25:24+02:00,-7200,True,False,"['bluez.py', 'read-local-bdaddr.py']",['bf6d304450ff1ae2acf598afcf6a3e2736d78fba'],38,28,66,2,1.0,0.0,0.0
+d816d9707500fc24bd6913fcdfe9ac55001c5295,Python3 support on osx,me,me@mac,me,me@mac,2015-10-01 17:39:33+02:00,-7200,2015-10-01 17:39:33+02:00,-7200,True,False,"['_bluetoothsockets.py', '_lightblue.py', '_macutil.py']",['b2aa32fb49d81deb984e642ae285c2f6064c9f49'],17,17,34,3,,,
+56dfdd45fe34e74a60d4ed1291116352d2c569c2,Signature fixes,karulis,me@w.pl,karulis,me@w.pl,2015-10-01 17:42:35+02:00,-7200,2015-10-01 17:42:35+02:00,-7200,True,False,['_obex.py'],['d816d9707500fc24bd6913fcdfe9ac55001c5295'],13,13,26,1,,,
+404ffbd1200c93627bda7ed1d091971017c73dee,Readme update,karulis,me@w.pl,karulis,me@w.pl,2015-10-09 15:34:34+02:00,-7200,2015-10-09 15:34:34+02:00,-7200,True,False,['README.rst'],['2a22e61fb21c27b47898c2674662de65162b485f'],16,2,18,1,,,
+c1b2fabd37fe7cdeef978142ffbf8ca5d5f894cd,Removed trailing white spaces,karulis,me@wp.pl,karulis,me@wp.pl,2015-10-09 10:13:02-05:00,18000,2015-10-09 10:13:02-05:00,18000,True,False,"['BBBluetoothChannelDelegate.h', 'BBBluetoothChannelDelegate.m', 'BBBluetoothOBEXClient.h', 'BBBluetoothOBEXClient.m', 'BBBluetoothOBEXServer.h', 'BBBluetoothOBEXServer.m', 'BBMutableOBEXHeaderSet.h', 'BBMutableOBEXHeaderSet.m', 'BBOBEXHeaderSet.h', 'BBOBEXHeaderSet.m', 'BBOBEXRequest.h', 'BBOBEXRequest.m', 'BBOBEXRequestHandler.h', 'BBOBEXRequestHandler.m', 'BBOBEXResponse.h', 'BBOBEXResponse.m', 'BBServiceAdvertiser.h', 'BBServiceAdvertiser.m', 'BBStreamingInputStream.h', 'BBStreamingInputStream.m', 'BBStreamingOutputStream.h', 'BBStreamingOutputStream.m', 'LightAquaBlue.bridgesupport', 'InfoPlist.strings', 'LightAquaBlue.h', 'advertising-notes.txt', '_IOBluetooth.py', '_IOBluetoothUI.py', '_LightAquaBlue.py', '__init__.py', '_bluetoothsockets.py', '_lightblue.py', '_lightbluecommon.py', '_macutil.py', '_obex.py', '_obexcommon.py']",['404ffbd1200c93627bda7ed1d091971017c73dee'],1212,1212,2424,36,,,
+86f3536bfe52d14388baf64c483faa50fb697c7e,readme: add read-local-bdaddr.py to the list of Windows supported examples,Thomas LEVEIL,thomas.leveil@alyotech.fr,Thomas LEVEIL,thomas.leveil@alyotech.fr,2015-12-10 17:17:46+01:00,-3600,2015-12-10 17:22:20+01:00,-3600,True,False,['README.rst'],['c1b2fabd37fe7cdeef978142ffbf8ca5d5f894cd'],0,2,2,1,,,
+4f947dca75897c173d851e0bdf27ea0115e7a0b4,"fix broken install on Windows / 2.7 / VS9
+
+Install is broken if you use python <3.3 and Visual Studio 9 on Windows (regression introduced with b02e3121).
+
+- install Visual Studio 9 (`C:\Program Files\Microsoft SDKs\Windows\v6.0A\`)
+- install Python 2.7
+- python setup.py install
+
+> Could not find the Windows Platform SDK
+
+    $  git clone git@github.com:karulis/pybluez.git
+    Cloning into 'pybluez'...
+    remote: Counting objects: 1029, done.
+    emote: Total 1029 (delta 0), reused 0 (delta 0), pack-reused 1029R
+    Receiving objects: 100% (1029/1029), 389.54 KiB | 0 bytes/s, done.
+    Resolving deltas: 100% (632/632), done.
+    Checking connectivity... done.
+
+    Thomas@Thomas-PC MINGW64 /c/tmp
+    $  cd pybluez/
+
+    Thomas@Thomas-PC MINGW64 /c/tmp/pybluez (master)
+    $  git:(master) python
+    Python 2.7.11 (v2.7.11:6d1b6a68f775, Dec  5 2015, 20:32:19) [MSC v.1500 32 bit (Intel)] on win32
+    Type ""help"", ""copyright"", ""credits"" or ""license"" for more information.
+    >>>
+
+    Thomas@Thomas-PC MINGW64 /c/tmp/pybluez (master)
+    $  git:(master) file ""C:/Program Files/Microsoft SDKs/Windows/v6.0A/""
+    C:/Program Files/Microsoft SDKs/Windows/v6.0A/: directory
+
+    Thomas@Thomas-PC MINGW64 /c/tmp/pybluez (master)
+    $  git:(master) python setup.py install
+    Could not find the Windows Platform SDK",Thomas LEVEIL,thomasleveil@gmail.com,Thomas LEVEIL,thomasleveil@gmail.com,2015-12-10 22:35:51+01:00,-3600,2015-12-10 22:35:51+01:00,-3600,True,False,['setup.py'],['c1b2fabd37fe7cdeef978142ffbf8ca5d5f894cd'],1,1,2,1,,,
+2dd1cca2698ced37c6a33c41f84f73e68d1888aa,setup: refactor sys.version tests,Thomas LEVEIL,thomasleveil@gmail.com,Thomas LEVEIL,thomasleveil@gmail.com,2015-12-10 22:41:37+01:00,-3600,2015-12-10 22:41:37+01:00,-3600,True,False,['setup.py'],['4f947dca75897c173d851e0bdf27ea0115e7a0b4'],2,2,4,1,,,
+42070d95b626b4ae08d1d2b1c29cc9a58129a8dc,Fixes for issue 108: OSX import errors,me,me@mac,me,me@mac,2015-12-12 14:26:25+01:00,-3600,2015-12-12 14:26:25+01:00,-3600,True,False,['setup.py'],['13314bbba1c6f801978535b29796220714653bb4'],2,6,8,1,,,
+e5d8af79d514175d33df0f12543c4aba51da3d39,Avoid bridge support for the PyOBJC versions >= 2.4,Yurii Shevchuk,mail@itdxer.com,Yurii Shevchuk,mail@itdxer.com,2016-03-02 11:12:45+02:00,-7200,2016-03-02 12:03:35+02:00,-7200,True,False,['_IOBluetooth.py'],['42070d95b626b4ae08d1d2b1c29cc9a58129a8dc'],34,50,84,1,,,
+30b24762aa9b9d7cc1c83230edaae7d300260177,Delete objc variable in any case.,Yurii Shevchuk,mail@itdxer.com,Yurii Shevchuk,mail@itdxer.com,2016-03-02 12:13:27+02:00,-7200,2016-03-02 12:13:27+02:00,-7200,True,False,['_IOBluetooth.py'],['e5d8af79d514175d33df0f12543c4aba51da3d39'],1,1,2,1,,,
+56c4dd5456a872b8af9516cc20f60ec1240a4750,Remove useless import.,Yurii Shevchuk,mail@itdxer.com,Yurii Shevchuk,mail@itdxer.com,2016-03-02 13:00:16+02:00,-7200,2016-03-02 13:00:16+02:00,-7200,True,False,['_IOBluetooth.py'],['30b24762aa9b9d7cc1c83230edaae7d300260177'],1,0,1,1,,,
+38fc1c2eeed232067ecd1303ed45fe4bec1ef61e,Replace python 2 buffer function to memoryview.,Yurii Shevchuk,mail@itdxer.com,Yurii Shevchuk,mail@itdxer.com,2016-03-05 19:24:19+02:00,-7200,2016-03-05 19:27:43+02:00,-7200,True,False,"['_bluetoothsockets.py', '_macutil.py', '_obex.py', 'setup.py']",['30b24762aa9b9d7cc1c83230edaae7d300260177'],3,4,7,4,,,
+4eb1e3913e9987dbda9564fd6f9cc7881069d5f8,"Update README
+
+Added the name of the package where you can find the BlueZ headers",HuGo Sales,hdcs333@gmail.com,HuGo Sales,hdcs333@gmail.com,2016-03-18 17:19:17+00:00,0,2016-03-18 17:19:17+00:00,0,True,False,['README'],['42070d95b626b4ae08d1d2b1c29cc9a58129a8dc'],1,1,2,1,,,
+e5802ba65b4097f833d2b5d76f1cb82458e8f432,Changed return type of read_local_bdaddr to list,karulis,karulis@,karulis,karulis@,2016-03-20 12:55:12+01:00,-3600,2016-03-20 12:55:12+01:00,-3600,True,False,"['bluez.py', 'osx.py']",['eb89e6c2c84007cd82d767b4ff018c562c2ad7de'],3,3,6,2,,,
+67f84014aa1abe1307f3a2774491aefcd3cd5aa9,"refactor given feedback from PR #111
+
+see https://github.com/karulis/pybluez/pull/111#issuecomment-198741707",Thomas LEVEIL,thomasleveil@gmail.com,Thomas LEVEIL,thomasleveil@gmail.com,2016-03-20 18:57:19+01:00,-3600,2016-03-20 19:06:18+01:00,-3600,True,False,['setup.py'],['e5802ba65b4097f833d2b5d76f1cb82458e8f432'],6,10,16,1,0.0,0.0,1.0
+ce4190c62e92a1a756f02455b1f48c8539034a14,"Fix : ""Could not find the Windows Platform SDK"" when using Visual C++ for Python 2.7",Thomas LEVEIL,thomasleveil@gmail.com,Thomas LEVEIL,thomas.leveil@alyotech.fr,2016-03-20 19:00:51+01:00,-3600,2016-03-21 15:47:50+01:00,-3600,True,False,['setup.py'],['67f84014aa1abe1307f3a2774491aefcd3cd5aa9'],0,5,5,1,0.0,0.0,1.0
+347320e0eb4de977aaafd872fc31813098ca01ec,Just remove unnecessary ';',almondg,almond.sandbox@gmail.com,almondg,almond.sandbox@gmail.com,2016-06-06 16:49:38+03:00,-10800,2016-06-06 16:49:38+03:00,-10800,True,False,['bluez.py'],['35296f4246e084928292fd22a232f06307711564'],1,1,2,1,,,
+94ddff5ffac538a5f55f30c29d4e7fcfad9b5e7c,Fixed various bugs introduced by the new pyobjc version on OSX,Chad Spensky,cspensky@cs.ucsb.edu,Chad Spensky,cspensky@cs.ucsb.edu,2016-06-22 12:00:03-07:00,25200,2016-06-22 12:00:03-07:00,25200,True,False,"['_IOBluetooth.py', '_bluetoothsockets.py', '_lightblue.py']",['35296f4246e084928292fd22a232f06307711564'],23,66,89,3,1.0,1.0,0.0
+49f85a23192a7ca7cbf5327606c3c0c1de4fb1b2,Just remove unnecessary ';',almondg,almond.sandbox@gmail.com,Chad Spensky,cspensky@cs.ucsb.edu,2016-06-06 16:49:38+03:00,-10800,2016-06-22 12:01:16-07:00,25200,True,False,['bluez.py'],['94ddff5ffac538a5f55f30c29d4e7fcfad9b5e7c'],1,1,2,1,,,
+b4eb23f224eac41fcfb2473c4bbf675bbb1ce41d,Fixed method spelling,Yurii Shevchuk,mail@itdxer.com,GitHub,noreply@github.com,2016-06-26 17:43:18+03:00,-10800,2016-06-26 17:43:18+03:00,-10800,True,False,['_macutil.py'],['a4277082ee414fce186fbfd83db099b65507b009'],1,1,2,1,,,
+2f8636de6bb1b0162862b97dcf67e5ccd0fc5922,OSX installation requires only pyobjc core and Cocoa,me,me@mac,me,me@mac,2016-07-08 23:40:05+02:00,-7200,2016-07-08 23:40:05+02:00,-7200,True,False,['setup.py'],['a4277082ee414fce186fbfd83db099b65507b009'],1,1,2,1,,,
+6af0d59008cf521eedab99c5b6d0f868e3ff2c8f,"Fix error on Mac ""objc.BadPrototypeError: Objective-C expects 1 arguments...""
+
+Version 3.2 of PyObjC introduced a backwards incompatible change. Now methods that do not have a trailing slash need to be decorated with @objc.python_method. I've decorated only the methods that would preclude me from executing simple device discovery. Maybe more methods need to be decorated.
+
+See the ""Backward compatibility note"" under Version 3.2
+https://pythonhosted.org/pyobjc/core/changelog.html",b4be1,b.a.belousov@gmail.com,b4be1,b.a.belousov@gmail.com,2017-03-07 16:57:04+01:00,-3600,2017-03-07 16:57:04+01:00,-3600,True,False,"['_bluetoothsockets.py', '_lightblue.py', '_macutil.py']",['9d20fc2c6b6e3e18175421b5c3c478be37d618cf'],0,6,6,3,,,
+f7e2398e2bfe5a7ff3b04c5042c61fe782bcdbfc,Modernize LightAquaBlue.xcodeproj,Ryan Govostes,rgovostes+git@gmail.com,Ryan Govostes,rgovostes+git@gmail.com,2017-11-15 14:37:36+09:00,-32400,2017-11-15 14:37:36+09:00,-32400,True,False,"['.gitignore', 'Info.plist', 'project.pbxproj', 'contents.xcworkspacedata']",['b58f5bfd45d5ffa1d4315e973fde1bdd6a3e5c5b'],15,66,81,4,,,
+d5e09dc3f941e035c7e99c6106dd0d628ac26c77,Build LightAquaBlue.framework inside the lightblue package,Ryan Govostes,rgovostes+git@gmail.com,Ryan Govostes,rgovostes+git@gmail.com,2017-11-15 14:38:19+09:00,-32400,2017-11-15 14:38:19+09:00,-32400,True,False,"['_LightAquaBlue.py', 'setup.py']",['f7e2398e2bfe5a7ff3b04c5042c61fe782bcdbfc'],73,54,127,2,,,
+57df0b1a332ccffe77e850e5e7c10fd856bb640f,Fix some warnings inside LightAquaBlue,Ryan Govostes,rgovostes+git@gmail.com,Ryan Govostes,rgovostes+git@gmail.com,2017-11-15 14:38:46+09:00,-32400,2017-11-15 14:38:46+09:00,-32400,True,False,"['BBBluetoothOBEXClient.h', 'BBBluetoothOBEXClient.m', 'BBBluetoothOBEXServer.h', 'BBMutableOBEXHeaderSet.m', 'BBOBEXHeaderSet.h', 'BBOBEXHeaderSet.m', 'BBOBEXRequest.m', 'BBOBEXRequestHandler.m', 'BBServiceAdvertiser.m', 'BBStreamingInputStream.h', 'BBStreamingInputStream.m', 'BBStreamingOutputStream.m']",['d5e09dc3f941e035c7e99c6106dd0d628ac26c77'],34,29,63,12,0.2,0.0,0.0
+09c7b9af4f92eda7227001131a099febb8e713ef,Add LIAC capability to inquiries,Ratmir Karabut,rkarabut@gmail.com,Ratmir Karabut,rkarabut@gmail.com,2017-12-01 22:26:05+03:00,-10800,2017-12-01 22:26:05+03:00,-10800,True,False,"['bluez.py', 'btcommon.py', 'btmodule.c']",['b58f5bfd45d5ffa1d4315e973fde1bdd6a3e5c5b'],8,14,22,3,0.0,0.0,0.0
+bbb8e788c383e0c533fefbc5ce571e0558aa2088,Fix a mistake,Ratmir Karabut,rkarabut@gmail.com,Ratmir Karabut,rkarabut@gmail.com,2017-12-01 22:30:09+03:00,-10800,2017-12-01 22:30:09+03:00,-10800,True,False,['bluez.py'],['09c7b9af4f92eda7227001131a099febb8e713ef'],1,1,2,1,,,

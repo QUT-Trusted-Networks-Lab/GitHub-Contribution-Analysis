@@ -1,0 +1,23 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+c92c9d3b4f0f4e928150f708867e9f923281ce7b,Initial commit,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,GitHub,noreply@github.com,2022-10-06 18:08:20+03:30,-12600,2022-10-06 18:08:20+03:30,-12600,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,152,152,3,,,
+107f255bb49415547c2d1aa61c32c04caa6018c6,[feat] add websocket modules,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,2022-10-06 14:52:29+00:00,0,2022-10-06 14:52:29+00:00,0,True,False,"['base_request.py', 'manager.py', 'ws.py']",['c92c9d3b4f0f4e928150f708867e9f923281ce7b'],0,330,330,3,0.7128205128205128,0.8307692307692308,0.5846153846153846
+940c2bd670b7118f969d3649240052d326b13f64,[feat] add requirements and main entry,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,2022-10-06 14:53:20+00:00,0,2022-10-06 14:53:20+00:00,0,True,False,"['main.py', 'requirements.txt']",['107f255bb49415547c2d1aa61c32c04caa6018c6'],0,34,34,2,,,
+debf0eb26e5ed979285a97fc53504b4488f978d3,[feat] move callback outside manager for scalability,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,2022-10-06 14:57:50+00:00,0,2022-10-06 14:57:50+00:00,0,True,False,"['manager.py', 'ws.py', 'main.py']",['940c2bd670b7118f969d3649240052d326b13f64'],27,23,50,3,0.0,1.0,0.0
+7ba52b689c2bed04d097d236d5b272fdc31e0004,Update README.md,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,GitHub,noreply@github.com,2022-10-06 19:22:14+03:30,-12600,2022-10-06 19:22:14+03:30,-12600,True,False,['README.md'],['debf0eb26e5ed979285a97fc53504b4488f978d3'],1,14,15,1,,,
+8d4b9946b831c67b705b99393b37e6a46335b0d1,Update README.md,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,GitHub,noreply@github.com,2022-10-06 19:41:29+03:30,-12600,2022-10-06 19:41:29+03:30,-12600,True,False,['README.md'],['7ba52b689c2bed04d097d236d5b272fdc31e0004'],2,10,12,1,,,
+2b36918e7b3c97c6af352c5786e69c5dc2544757,"add multithreaded WebSockets (#1)
+
+* [feat] update create_eventloop to be compatible with threads
+
+* add threaded WebSockets
+
+* [feat] add more markets + fix requirements.txt",Keivan Ipchi Hagh,keivanipchihagh@gmail.com,GitHub,noreply@github.com,2022-10-06 21:00:56+03:30,-12600,2022-10-06 21:00:56+03:30,-12600,True,False,"['manager.py', 'threads.py', 'utils.py', 'ws.py', 'main.py', 'requirements.txt']",['8d4b9946b831c67b705b99393b37e6a46335b0d1'],27,117,144,6,1.0,1.0,0.8181818181818182
+7b68beb45af125a5e76a2eeffd8fc50fecd4c58e,"Update README.md
+
+Signed-off-by: Keivan Ipchi Hagh <keivanipchihagh@gmail.com>",Keivan Ipchi Hagh,keivanipchihagh@gmail.com,GitHub,noreply@github.com,2022-10-06 21:10:15+03:30,-12600,2022-10-06 21:10:15+03:30,-12600,True,False,['README.md'],['2b36918e7b3c97c6af352c5786e69c5dc2544757'],3,3,6,1,,,
+1e60e9fd712685113548698edb859048d3d637ee,"Update README.md
+
+Signed-off-by: Keivan Ipchi Hagh <keivanipchihagh@gmail.com>",Keivan Ipchi Hagh,keivanipchihagh@gmail.com,GitHub,noreply@github.com,2022-10-06 21:19:14+03:30,-12600,2022-10-06 21:19:14+03:30,-12600,True,False,['README.md'],['7b68beb45af125a5e76a2eeffd8fc50fecd4c58e'],8,8,16,1,,,
+9e1a89f5a94af89864c3ee2319ab46f59ee3360f,Update issue templates,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,GitHub,noreply@github.com,2022-10-06 21:21:07+03:30,-12600,2022-10-06 21:21:07+03:30,-12600,True,False,"['bug_report.md', 'feature_request.md']",['1e60e9fd712685113548698edb859048d3d637ee'],0,58,58,2,,,
+571b85a72a99b536cb7fdb2c56676311440445f6,"[feat, deploy] deploy to pypi + enhancement",Keivan Ipchi Hagh,keivanipchihagh@gmail.com,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,2022-10-06 20:57:45+00:00,0,2022-10-06 20:57:45+00:00,0,True,False,"['__init__.py', 'manager.py', 'utils.py', '__init__.py', 'base_request.py', 'threads.py', 'ws.py', 'release.sh', 'setup.py']",['9e1a89f5a94af89864c3ee2319ab46f59ee3360f'],22,66,88,9,0.0,1.0,0.5
+ddff9d13f62ffe792bf80b473ad73b4221f41f8b,"[deploy, fix] add Docker deployment files + bug-fix",Keivan Ipchi Hagh,keivanipchihagh@gmail.com,Keivan Ipchi Hagh,keivanipchihagh@gmail.com,2022-10-07 08:26:04+00:00,0,2022-10-07 08:26:04+00:00,0,True,False,"['build.sh', 'Dockerfile', 'docker-compose.yml', 'manager.py', 'setup.py']",['571b85a72a99b536cb7fdb2c56676311440445f6'],3,58,61,5,1.0,1.0,1.0

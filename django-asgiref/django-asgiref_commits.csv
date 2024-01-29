@@ -1,0 +1,932 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+8d186763a67c4a1a9a4eb14a7e5917facaa1be5f,Initial commit,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2015-12-23 17:05:40+00:00,0,2015-12-23 17:05:40+00:00,0,True,False,"['.gitignore', 'README.rst', 'asgi_inmemory.py', 'setup.py']",[],0,123,123,4,0.5151515151515151,0.5151515151515151,0.696969696969697
+e63ceefd43c1e6bd0c791916ce602eb204926752,Rename to asgiref,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-01-02 08:28:59-08:00,28800,2016-01-02 08:28:59-08:00,28800,True,False,"['README.rst', '__init__.py', 'inmemory.py', 'setup.py']",['8d186763a67c4a1a9a4eb14a7e5917facaa1be5f'],13,23,36,4,,,0.0
+c829c36669d8e9cf797f6bf1a4d9cea02c715640,Use version from package,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-01-02 22:45:34-08:00,28800,2016-01-02 22:45:34-08:00,28800,True,False,['setup.py'],['e63ceefd43c1e6bd0c791916ce602eb204926752'],1,1,2,1,,,
+448162c9cee2f58d4c7940e0040a97d36e4c1610,Update .gitignore,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-01-02 22:46:51-08:00,28800,2016-01-02 22:46:51-08:00,28800,True,False,['.gitignore'],['c829c36669d8e9cf797f6bf1a4d9cea02c715640'],0,1,1,1,,,
+ed3f2968bb2b888b42cf4d3611f0623de6c1d8aa,"Add start of conformance suite, fix inmemory backend chan names",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-01-17 14:01:28-08:00,28800,2016-01-17 14:01:28-08:00,28800,True,False,"['conformance.py', 'inmemory.py', '__init__.py', 'test_inmemory.py']",['448162c9cee2f58d4c7940e0040a97d36e4c1610'],11,132,143,4,0.7246376811594203,1.0,1.0
+696210d6be17ace59652ab24b7e859fc940e2a0c,Combine tests into one and start on group tests,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-01-17 14:15:56-08:00,28800,2016-01-17 14:15:56-08:00,28800,True,False,"['conformance.py', 'test_inmemory.py']",['ed3f2968bb2b888b42cf4d3611f0623de6c1d8aa'],6,67,73,2,0.5227272727272727,1.0,1.0
+5914d98f792db5f8cc91141187f21695ec3eaf8c,"Remove group expiry test, as it's not part of ASGI (yet?)",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-01-17 14:21:21-08:00,28800,2016-01-17 14:21:21-08:00,28800,True,False,['conformance.py'],['696210d6be17ace59652ab24b7e859fc940e2a0c'],5,0,5,1,0.5,0.0,0.0
+741e6eb1976f6c8e6e5cb04399386dedf2e0586b,Add group implementation into inmemory backend,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-02-05 12:39:40-08:00,28800,2016-02-05 12:39:40-08:00,28800,True,False,['inmemory.py'],['5914d98f792db5f8cc91141187f21695ec3eaf8c'],23,56,79,1,1.0,1.0,0.6842105263157895
+1b92dc5e3270b7866e5c55b66fb9eb34837845b0,"Fix new channel names on py3, add travis config",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-02-05 16:17:02-08:00,28800,2016-02-05 16:17:02-08:00,28800,True,False,"['.travis.yml', 'README.rst', 'conformance.py', 'inmemory.py']",['741e6eb1976f6c8e6e5cb04399386dedf2e0586b'],2,15,17,4,1.0,1.0,1.0
+335ed4fea2f923a065b66ece1cd75c534dc66001,Typo in travis config,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-02-05 16:18:29-08:00,28800,2016-02-05 16:18:29-08:00,28800,True,False,['.travis.yml'],['1b92dc5e3270b7866e5c55b66fb9eb34837845b0'],1,1,2,1,,,
+722d2411496136e19514febcc9cff7df938b0a9d,Bump to 0.9,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-02-05 16:21:10-08:00,28800,2016-02-05 16:21:10-08:00,28800,True,False,['__init__.py'],['335ed4fea2f923a065b66ece1cd75c534dc66001'],1,1,2,1,,,
+1063feb2c917f0bfb0cb2718c53734edb8d1b294,Start work on ASGI/WSGI adapter module,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-02-09 16:48:28-08:00,28800,2016-02-09 16:48:28-08:00,28800,True,False,"['test_wsgi.py', 'wsgi.py']",['722d2411496136e19514febcc9cff7df938b0a9d'],0,172,172,2,0.5119047619047619,0.7738095238095238,0.7142857142857143
+de2a770b1fc60d2065a26ab9b5e520ad0cb6d81a,Thread locking for inmemory backend,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-03 17:24:33-08:00,28800,2016-03-03 17:24:33-08:00,28800,True,False,['inmemory.py'],['1063feb2c917f0bfb0cb2718c53734edb8d1b294'],20,25,45,1,1.0,0.75,0.5
+0c6bb189ed0a5e1b994c8d08346288de73ef283c,Releasing 0.9.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-03 17:25:21-08:00,28800,2016-03-03 17:25:21-08:00,28800,True,False,['__init__.py'],['de2a770b1fc60d2065a26ab9b5e520ad0cb6d81a'],1,1,2,1,,,
+07dc9f1c6c8ee2bcb8d9b142bdf6556b4600a457,Update asgiref to adhere to new single-reply-channel spec,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-21 16:29:21-07:00,25200,2016-03-21 16:29:21-07:00,25200,True,False,"['conformance.py', 'inmemory.py', 'wsgi.py']",['0c6bb189ed0a5e1b994c8d08346288de73ef283c'],6,12,18,3,0.0,1.0,1.0
+b48ccf2b3a4c92d0259500d19b872ac06de959d6,Releasing 0.10,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-21 16:33:02-07:00,25200,2016-03-21 16:33:02-07:00,25200,True,False,['__init__.py'],['07dc9f1c6c8ee2bcb8d9b142bdf6556b4600a457'],1,1,2,1,,,
+b6ecc83b9efb761816f60b82470d6d8bd98250c3,"Change conformance test suite to subclassable, test group expiry.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-27 11:06:48-07:00,25200,2016-03-27 11:06:48-07:00,25200,True,False,['conformance.py'],['b48ccf2b3a4c92d0259500d19b872ac06de959d6'],151,193,344,1,1.0,1.0,1.0
+4858248ed3cd6cb47c2fa69cbc8832aaf28317df,Releasing 0.11.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-27 11:07:35-07:00,25200,2016-03-27 11:07:35-07:00,25200,True,False,['__init__.py'],['b6ecc83b9efb761816f60b82470d6d8bd98250c3'],1,1,2,1,,,
+38b5561aac978d0cc33071a6f40e310c5704cc95,Mark as a universal wheel,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-27 11:10:13-07:00,25200,2016-03-27 11:10:13-07:00,25200,True,False,"['.gitignore', 'setup.cfg']",['4858248ed3cd6cb47c2fa69cbc8832aaf28317df'],0,3,3,2,,,
+a2704ec7404d1a868be8015b3715de47626f54f5,Add group expiry to inmemory backend,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-27 11:19:30-07:00,25200,2016-03-27 11:19:30-07:00,25200,True,False,"['inmemory.py', 'test_inmemory.py']",['38b5561aac978d0cc33071a6f40e310c5704cc95'],11,28,39,2,0.0,0.5,0.08333333333333333
+08929f361acf47254bb730865a417bd4c141a35d,Fix conformance tests on py2,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-27 11:25:42-07:00,25200,2016-03-27 11:25:42-07:00,25200,True,False,['conformance.py'],['a2704ec7404d1a868be8015b3715de47626f54f5'],15,27,42,1,1.0,1.0,1.0
+55546daa794a8a597f6a1ad1ab5a7aa4807dafe5,Release 0.11.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-27 13:26:54-07:00,25200,2016-03-27 13:26:54-07:00,25200,True,False,['__init__.py'],['08929f361acf47254bb730865a417bd4c141a35d'],1,1,2,1,,,
+b58a28c6475321c512111b24a5e8451c8c90134b,Fixed #104: Bad implemention of group-discard-on-message-expire,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-29 10:45:59+01:00,-3600,2016-03-29 10:45:59+01:00,-3600,True,False,"['inmemory.py', 'test_inmemory.py']",['55546daa794a8a597f6a1ad1ab5a7aa4807dafe5'],3,21,24,2,1.0,1.0,1.0
+dc5ea724eaf22e4745fda21c57db9903067e9717,Releasing 0.11.2,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-03-29 10:46:35+01:00,-3600,2016-03-29 10:46:35+01:00,-3600,True,False,['__init__.py'],['b58a28c6475321c512111b24a5e8451c8c90134b'],1,1,2,1,,,
+280b9c7767b544b101b0e932177656a15daf6151,Implement channel capacity for conformance suite and inmemory,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-05-05 22:39:03-07:00,25200,2016-05-05 22:39:03-07:00,25200,True,False,"['conformance.py', 'inmemory.py', 'test_inmemory.py']",['dc5ea724eaf22e4745fda21c57db9903067e9717'],5,29,34,3,1.0,1.0,0.5
+0eb3775c0e2a7f669f34d349ab2e4ac003be51e1,Add another test to make sure the API is met,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-05-05 22:41:10-07:00,25200,2016-05-05 22:41:10-07:00,25200,True,False,['conformance.py'],['280b9c7767b544b101b0e932177656a15daf6151'],0,7,7,1,1.0,1.0,1.0
+7a6997c2e40194b14bf7789997bc23e2dbb1524f,Releasing version 0.12.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-05-05 22:47:29-07:00,25200,2016-05-05 22:47:44-07:00,25200,True,False,"['README.rst', '__init__.py']",['0eb3775c0e2a7f669f34d349ab2e4ac003be51e1'],1,7,8,2,,,
+a40aa358bf1f726a9da322c77459bb1dc656b7a0,Remove useless unicode channel name test (not in spec),Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-05-06 18:33:43-07:00,25200,2016-05-06 18:33:43-07:00,25200,True,False,['conformance.py'],['7a6997c2e40194b14bf7789997bc23e2dbb1524f'],10,0,10,1,0.0,0.0,0.0
+d9163b0641721d1083c285113e5bb6c2bae88017,Releasing 0.12.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-05-06 18:34:06-07:00,25200,2016-05-06 18:34:06-07:00,25200,True,False,['__init__.py'],['a40aa358bf1f726a9da322c77459bb1dc656b7a0'],1,1,2,1,,,
+54e71241ce7fe8258fdd79ad94adf124bde74d46,"Write base channel layer, give it capacity check code",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-05-07 12:18:59-07:00,25200,2016-05-07 12:18:59-07:00,25200,True,False,"['base_layer.py', 'inmemory.py', 'test_base_layer.py']",['d9163b0641721d1083c285113e5bb6c2bae88017'],6,114,120,3,1.0,1.0,0.6086956521739131
+3bcd92e7a84d39751bb1bd1c9fb0b3dd2713858d,Releasing 0.13.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-05-07 12:22:43-07:00,25200,2016-05-07 12:22:43-07:00,25200,True,False,"['README.rst', '__init__.py']",['54e71241ce7fe8258fdd79ad94adf124bde74d46'],1,13,14,2,,,
+d87eb4102200c325959e5981e8813f7d8992e981,Add version shield to README,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-05-07 12:26:16-07:00,25200,2016-05-07 12:26:16-07:00,25200,True,False,['README.rst'],['3bcd92e7a84d39751bb1bd1c9fb0b3dd2713858d'],0,3,3,1,,,
+c2d93f5e63aa64c30f01755dedc5f7bbddb4482a,Add channel and group name validators to base layer,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-06-08 23:26:25+00:00,0,2016-06-08 23:26:25+00:00,0,True,False,"['base_layer.py', 'test_base_layer.py']",['d87eb4102200c325959e5981e8813f7d8992e981'],1,51,52,2,1.0,1.0,1.0
+a2d93b7a3356581ae77441818503d04ade23184b,Releasing 0.13.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-06-08 23:30:02+00:00,0,2016-06-08 23:30:02+00:00,0,True,False,['__init__.py'],['c2d93f5e63aa64c30f01755dedc5f7bbddb4482a'],1,1,2,1,,,
+ce788c29ffa1d413b69b65dd1f49b9f265e51afc,Better channel name handling,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-06-08 23:34:43+00:00,0,2016-06-08 23:34:43+00:00,0,True,False,['inmemory.py'],['a2d93b7a3356581ae77441818503d04ade23184b'],11,13,24,1,1.0,1.0,0.0
+2b388f3403f61245af8b2fa5c58e76f8b3bd28d5,Improve conformance suite,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-06-08 23:37:28+00:00,0,2016-06-08 23:37:28+00:00,0,True,False,"['conformance.py', 'test_wsgi.py']",['ce788c29ffa1d413b69b65dd1f49b9f265e51afc'],5,27,32,2,1.0,1.0,1.0
+0c951c96e811b9f73a25fc6f86d1dabda16c5a22,Releasing version 0.13.2,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-06-08 23:38:54+00:00,0,2016-06-08 23:38:54+00:00,0,True,False,['__init__.py'],['2b388f3403f61245af8b2fa5c58e76f8b3bd28d5'],1,1,2,1,,,
+8f1056310a43ab207b0aefb2837d4c10ff4cec10,Releasing version 0.13.3,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-06-09 00:06:37+00:00,0,2016-06-09 00:06:37+00:00,0,True,False,['__init__.py'],['0c951c96e811b9f73a25fc6f86d1dabda16c5a22'],1,1,2,1,,,
+35e8b427f57b31f6d85e99722ff44f9d26b6f176,Add group_channels function to groups,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-07-16 22:41:26-07:00,25200,2016-07-16 22:41:26-07:00,25200,True,False,"['conformance.py', 'inmemory.py']",['8f1056310a43ab207b0aefb2837d4c10ff4cec10'],1,13,14,2,0.2,1.0,1.0
+090a0a6a58eae66a1701819a475254265198b8ee,Releasing version 0.14.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-07-16 22:44:06-07:00,25200,2016-07-16 22:44:06-07:00,25200,True,False,"['Makefile', '__init__.py']",['35e8b427f57b31f6d85e99722ff44f9d26b6f176'],1,17,18,2,,,
+f4f11e67e8051ba58619775c2cb86ebbc6e8559f,Updated base_layer.BaseChannelLayer.valid_channel_name/valid_group_name to include more easily explained errors,Jeremy Spencer,jeremytiki@gmail.com,Jeremy Spencer,jeremytiki@gmail.com,2016-09-03 19:39:45-04:00,14400,2016-09-03 19:39:45-04:00,14400,True,False,['base_layer.py'],['090a0a6a58eae66a1701819a475254265198b8ee'],10,13,23,1,1.0,1.0,1.0
+b12b81ac1861e8df9898651f267c57a96c47f7d2,Added underscore to list of approved symbols used in Group/Channel names,Jeremy Spencer,jeremytiki@gmail.com,Jeremy Spencer,jeremytiki@gmail.com,2016-09-05 17:09:28-04:00,14400,2016-09-05 17:09:28-04:00,14400,True,False,['base_layer.py'],['f4f11e67e8051ba58619775c2cb86ebbc6e8559f'],2,3,5,1,,,
+7ffaa5d641277faa0848e0c899eaad6907a9f96f,Add maintenance and security README,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-09-09 12:52:19+01:00,-3600,2016-09-09 12:52:19+01:00,-3600,True,False,['README.rst'],['090a0a6a58eae66a1701819a475254265198b8ee'],0,13,13,1,,,
+af044dea938f2f50c96d896c9b648e8764a73953,Django-ification,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-09-09 13:27:40+01:00,-3600,2016-09-09 13:27:40+01:00,-3600,True,False,"['README.rst', 'setup.py']",['7ffaa5d641277faa0848e0c899eaad6907a9f96f'],6,6,12,2,,,
+25b6b50fc8c144198e34e1fda3627d4b6bc0f150,Fixed TypeError checking in base_layer and fixed tests to check for Excemption instead of returning false,Jeremy Spencer,jeremytiki@gmail.com,Jeremy Spencer,jeremytiki@gmail.com,2016-09-11 20:42:11-04:00,14400,2016-09-11 20:42:11-04:00,14400,True,False,"['__init__.cpython-35.pyc', 'base_layer.cpython-35.pyc', 'conformance.cpython-35.pyc', 'inmemory.cpython-35.pyc', 'base_layer.py', '__init__.cpython-35.pyc', 'test_base_layer.cpython-35.pyc', 'test_inmemory.cpython-35.pyc', 'test_wsgi.cpython-35.pyc', 'test_base_layer.py']",['b12b81ac1861e8df9898651f267c57a96c47f7d2'],13,27,40,10,0.0,1.0,1.0
+7bde0bccd30d4ef513b01ff7e946c7bde07ddbf6,Updated gitignore to ignore all __pycache__ directories,Jeremy Spencer,jeremytiki@gmail.com,Jeremy Spencer,jeremytiki@gmail.com,2016-09-11 20:46:39-04:00,14400,2016-09-11 20:46:39-04:00,14400,True,False,"['.gitignore', '__init__.cpython-35.pyc', 'base_layer.cpython-35.pyc', 'conformance.cpython-35.pyc', 'inmemory.cpython-35.pyc', '__init__.cpython-35.pyc', 'test_base_layer.cpython-35.pyc', 'test_inmemory.cpython-35.pyc', 'test_wsgi.cpython-35.pyc']",['25b6b50fc8c144198e34e1fda3627d4b6bc0f150'],0,2,2,9,,,
+76840fa44512c4a7fa01e4cc0a55b959b4e9d633,Altert Channel.send on the inmemory layer to send a copy of the message.,Oskar Hahn,mail@oshahn.de,Oskar Hahn,mail@oshahn.de,2016-11-02 00:19:30+01:00,-3600,2016-11-04 10:29:51+01:00,-3600,True,False,"['conformance.py', 'inmemory.py']",['3e632273e07f0e3ab0d20dc3133f5cfba4b5afeb'],1,14,15,2,1.0,1.0,1.0
+4a1b348108e81c301c18f4ff9087819dc5912ecd,Deprecate receive_many in favour of receive.,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-11-04 13:52:43+01:00,-3600,2016-11-04 13:53:52+01:00,-3600,True,False,['base_layer.py'],['4a786dd406135ae2680cade2dcec5ea32be5b16f'],1,9,10,1,1.0,1.0,0.0
+ad9c63832461bf380daecec8caaf30e9e787faf6,Convert test and channel layer uses of receive_many to receive,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-11-04 14:24:40+01:00,-3600,2016-11-04 14:24:40+01:00,-3600,True,False,"['README.rst', '__init__.py', 'conformance.py', 'inmemory.py', 'test_inmemory.py', 'wsgi.py']",['4a1b348108e81c301c18f4ff9087819dc5912ecd'],19,19,38,6,,,
+693b0ed286a70f01f5d8d40a8f24e05b341834fa,Releasing 1.0.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2016-11-04 14:25:27+01:00,-3600,2016-11-04 14:25:27+01:00,-3600,True,False,['CHANGELOG.txt'],['ad9c63832461bf380daecec8caaf30e9e787faf6'],0,6,6,1,,,
+9d365a7e2535edd00174f26895cb8cb94bf660a3,validation method for multiple  channel names,navyad,navyad.pro@gmail.com,navyad,navyad.pro@gmail.com,2016-12-13 17:10:04+05:30,-19800,2016-12-13 17:10:04+05:30,-19800,True,False,"['base_layer.py', 'test_base_layer.py']",['693b0ed286a70f01f5d8d40a8f24e05b341834fa'],0,34,34,2,1.0,1.0,1.0
+f8cec00683baf2580c924484d3d141a2dc015f66,Add missed abstract method.,Artem Malyshev,proofit404@gmail.com,Artem Malyshev,proofit404@gmail.com,2016-12-16 05:22:16+03:00,-10800,2016-12-16 05:22:16+03:00,-10800,True,False,['base_layer.py'],['4c4a269923807f32a2299281a042ec3f49ae7679'],0,3,3,1,1.0,1.0,1.0
+4dbfdfe6bb876c15db7dee334dd524c780ec8006,Split send_group and group_channels conformance tests.,Artem Malyshev,proofit404@gmail.com,Artem Malyshev,proofit404@gmail.com,2016-12-21 02:53:56+03:00,-10800,2016-12-21 02:53:56+03:00,-10800,True,False,['conformance.py'],['f8a6416eae60fcd223ba5a48c957c0ab7893fd07'],9,21,30,1,1.0,1.0,1.0
+ec14d49b77cf3363d4db2ad0654bff8c39c9caea,"Removing exceptions redefinitions
+
+Removing redefinitions of ChannelFull and MessageTooLarge, as they are already defined in BaseChannelLayer",Bartek Ogryczak,b.ogryczak@gmail.com,GitHub,noreply@github.com,2017-01-10 17:05:35-08:00,28800,2017-01-10 17:05:35-08:00,28800,True,False,['inmemory.py'],['1485bcdefa1cec4fb7004931d54d53d7981334ca'],6,0,6,1,,,
+41e69118c59755ebd0a6c19c658c212111ab0ce3,Add License,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-01-23 10:07:25-08:00,28800,2017-01-23 10:07:34-08:00,28800,True,False,['LICENSE'],['f68c5fc06bcdc0bb5c7c76433e47dfc64dc9c295'],0,27,27,1,,,
+6832d44f5f28a597a6f5e841f17d6e12aef1dcf0,Added underscores into name error message,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-01-23 10:10:25-08:00,28800,2017-01-23 10:10:25-08:00,28800,True,False,['base_layer.py'],['41e69118c59755ebd0a6c19c658c212111ab0ce3'],1,1,2,1,,,
+e7cac8152a4aade3aa24f6182de3d78fd8b7fc88,"tox, and all the Pythons  (#13)
+
+* Add tox and test against more Python versions
+
+I agreed with Andrew to add tox alongside Travis for testing against
+against all supported Python versions. This commit achieves that.
+
+Travis and tox configuration are prone to duplicate information. I
+reduced that by introducing a requirements_dev.txt, which contains all
+requirements that are needed to start developing/testing. This should
+also ease the process for a new contributor (once documented).
+
+I did remove usage of unittest2, because as far as I understand, the
+package only backports features already added to Python 2.7. I also
+could not find any usage of it; SkipTest works just as well when using
+unittest instead of unittest2. But please do correct me, I'm likely to
+be wrong!
+
+* Document supported Python versions
+
+This commit adds a short blurb on what Python versions are supported.
+
+As I plan to standardize how to run tests across all Channels projects,
+I think it makes sense to also just link to the central contributing
+guidelines. I plan to update those later.",Maik Hoepfel,m@maikhoepfel.de,Andrew Godwin,andrew@aeracode.org,2017-01-27 03:09:11+01:00,-3600,2017-01-26 18:09:11-08:00,28800,True,False,"['.gitignore', '.travis.yml', 'README.rst', 'conformance.py', 'setup.py', 'tox.ini']",['6832d44f5f28a597a6f5e841f17d6e12aef1dcf0'],19,31,50,6,0.0,0.0,0.0
+c92185b695ee74b01c7f38a749264bb5b4e1dc23,"Exclude tests from PyPI package. (#15)
+
+* Ignore Python2 bytecode.
+
+* Move tests outside of PyPI package.
+
+* Exclude tests from find packages instruction.",Artem Malyshev,proofit404@gmail.com,Andrew Godwin,andrew@aeracode.org,2017-03-19 21:18:19+03:00,-10800,2017-03-19 11:18:19-07:00,25200,True,False,"['.gitignore', 'setup.py', '__init__.py', 'test_base_layer.py', 'test_inmemory.py', 'test_wsgi.py']",['e7cac8152a4aade3aa24f6182de3d78fd8b7fc88'],5,6,11,6,,,
+e2ff0fd52a49f91f7dd7c9ceb8f8e119d6492bb8,Releasing 1.0.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-03-19 11:22:29-07:00,25200,2017-03-19 11:22:29-07:00,25200,True,False,"['CHANGELOG.txt', '__init__.py']",['c92185b695ee74b01c7f38a749264bb5b4e1dc23'],1,7,8,2,,,
+7212e4a33ea2f1d8c5ac1a70d71cdc365410a7e2,Implement new-style process-local channels,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-03-27 19:04:24-07:00,25200,2017-03-27 19:04:24-07:00,25200,True,False,"['base_layer.py', 'conformance.py', 'inmemory.py', 'test_wsgi.py']",['e2ff0fd52a49f91f7dd7c9ceb8f8e119d6492bb8'],26,61,87,4,0.09090909090909091,0.0,0.0
+31636cb42624d23c9b5edf78d601357c6b30e77b,Add extra conformance tests for process-local channels,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-03-28 18:25:01-07:00,25200,2017-03-28 18:25:01-07:00,25200,True,False,['conformance.py'],['7212e4a33ea2f1d8c5ac1a70d71cdc365410a7e2'],0,30,30,1,1.0,1.0,1.0
+6d8314e7d47d25e7f773ce17af53defb780115fa,Releasing 1.1.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-04-01 15:03:24+01:00,-3600,2017-04-01 15:03:24+01:00,-3600,True,False,"['CHANGELOG.txt', '__init__.py']",['31636cb42624d23c9b5edf78d601357c6b30e77b'],1,7,8,2,,,
+0dd33450e7fe7987ba3d343ab03d14f4b3ef840c,Fix problem with sending same message twice,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-04-02 15:15:38+01:00,-3600,2017-04-02 15:15:38+01:00,-3600,True,False,"['conformance.py', 'inmemory.py']",['6d8314e7d47d25e7f773ce17af53defb780115fa'],1,6,7,2,0.0,1.0,0.8
+b682a0c6564789e8e6f3f11e20e84c63e7c2e6b2,Releasing 1.1.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-04-02 15:16:07+01:00,-3600,2017-04-02 15:16:07+01:00,-3600,True,False,"['CHANGELOG.txt', '__init__.py']",['0dd33450e7fe7987ba3d343ab03d14f4b3ef840c'],1,6,7,2,,,
+65bb012f31440b91f79c85dfdedc606d86c742e6,"Valid channel names (#18)
+
+Updates `valid_channel_names` to take a `receive` parameter like `valid_channel_name`.",Tobias Kunze,rixx@cutebit.de,Andrew Godwin,andrew@aeracode.org,2017-04-08 16:18:51+02:00,-7200,2017-04-08 17:18:51+03:00,-10800,True,False,['base_layer.py'],['b682a0c6564789e8e6f3f11e20e84c63e7c2e6b2'],3,3,6,1,,,0.0
+d9a35694a41cd111c65b730c28680795655396ac,Extend conformance test suite with group_send/ChannelFull test,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-04-10 18:50:41+02:00,-7200,2017-04-11 08:32:58+01:00,-3600,True,False,['conformance.py'],['65bb012f31440b91f79c85dfdedc606d86c742e6'],0,12,12,1,1.0,1.0,1.0
+b741685af1e63f16b52040cd0b3fc790d44a1512,"Clarify meaning of ""alphanumerics""",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-05-02 10:22:51-07:00,25200,2017-05-02 10:22:51-07:00,25200,True,False,['base_layer.py'],['d9a35694a41cd111c65b730c28680795655396ac'],3,3,6,1,,,
+0fcba0aa795e5a463c5192deb2c2cbda520ad5df,"Optionally retry on receive in ConformanceTest (#19)
+
+Allows conformance tests to work correctly with backends that do not always receive all messages on the first call (e.g. sharded)",Ben Greenberg,bgreenberg@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2017-05-16 15:16:26-07:00,25200,2017-05-16 15:16:26-07:00,25200,True,False,['conformance.py'],['b741685af1e63f16b52040cd0b3fc790d44a1512'],25,43,68,1,0.0,1.0,1.0
+f75974cd2f7b9708581f23c21920a12272beb6e9,Releasing 1.1.2,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-05-16 15:45:18-07:00,25200,2017-05-16 15:45:18-07:00,25200,True,False,"['CHANGELOG.txt', '__init__.py']",['0fcba0aa795e5a463c5192deb2c2cbda520ad5df'],1,7,8,2,,,
+37497874816b34afa41fa6cf778e302b7529ae4e,Start on generic worker base class,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-05-19 12:02:42-07:00,25200,2017-05-19 12:03:10-07:00,25200,True,False,['worker.py'],['f75974cd2f7b9708581f23c21920a12272beb6e9'],0,86,86,1,0.5555555555555556,1.0,0.5833333333333334
+c4f99615ec89db1e8e31e28f7527d6efc7e010a4,Add generic benchmark tool for channel layers,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-05-20 15:48:13-07:00,25200,2017-05-20 15:48:13-07:00,25200,True,False,"['benchmark.py', 'setup.py']",['37497874816b34afa41fa6cf778e302b7529ae4e'],1,179,180,2,0.35398230088495575,0.5575221238938053,0.911504424778761
+6ec8f5e8a54c5359626d9b1536fddd65647f4bc5,Add send throughput and channel name parameter to benchmarker,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-05-20 16:06:58-07:00,25200,2017-05-20 16:06:58-07:00,25200,True,False,['benchmark.py'],['c4f99615ec89db1e8e31e28f7527d6efc7e010a4'],5,14,19,1,0.0,0.4444444444444444,1.0
+f4cae3494ddebea116b66e4ebf0a4708e485c6bb,Add benchmarker to README,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-05-20 16:09:20-07:00,25200,2017-05-20 16:09:20-07:00,25200,True,False,['README.rst'],['6ec8f5e8a54c5359626d9b1536fddd65647f4bc5'],0,16,16,1,,,
+58fdcfe7e3c1132b04cf6453f5f69a416c862da2,Improve benchmarker to use subprocess,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-05-22 16:48:07-07:00,25200,2017-05-22 16:48:07-07:00,25200,True,False,['benchmark.py'],['f4cae3494ddebea116b66e4ebf0a4708e485c6bb'],16,40,56,1,0.47368421052631576,0.6842105263157895,1.0
+a60bf115907adeb1790b69270142ca13b5119691,Add receive_async and async conformance test start,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-05-22 16:55:31-07:00,25200,2017-05-22 16:55:31-07:00,25200,True,False,"['conformance.py', 'conformance_async.py', 'inmemory.py', 'inmemory_async.py']",['58fdcfe7e3c1132b04cf6453f5f69a416c862da2'],1,47,48,4,1.0,1.0,1.0
+3f28f32fee944471c0d06b09d8893f3164de620c,Use a python 3.4 compatible syntax for async,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-05-22 16:57:20-07:00,25200,2017-05-22 16:57:20-07:00,25200,True,False,"['conformance_async.py', 'inmemory_async.py']",['a60bf115907adeb1790b69270142ca13b5119691'],4,7,11,2,1.0,1.0,1.0
+6af1c12509ce4c33f99e8e84c7fd7a16503f76ad,"Verify async extension against its methods. (#20)
+
+Otherwise in Python 2 mode an extension might claim to be async when it cannot be.",Artem Malyshev,proofit404@gmail.com,Andrew Godwin,andrew@aeracode.org,2017-06-03 21:46:05+03:00,-10800,2017-06-03 11:46:05-07:00,25200,True,False,"['conformance.py', 'inmemory.py']",['3f28f32fee944471c0d06b09d8893f3164de620c'],1,23,24,2,1.0,1.0,1.0
+4c2984ceb68a1832eeb0974f7d3a81e7fe3454d3,Add classifiers to setup.py (#21),David Sanders,dsanders11@ucsbalum.com,Andrew Godwin,andrew@aeracode.org,2017-07-16 21:15:30-07:00,25200,2017-07-16 21:15:30-07:00,25200,True,False,['setup.py'],['6af1c12509ce4c33f99e8e84c7fd7a16503f76ad'],0,15,15,1,,,
+d7476cdd9f098366364771069838990722349c60,Travis - test on Trusty (#22),Adam Johnson,me@adamj.eu,Andrew Godwin,andrew@aeracode.org,2017-07-26 20:00:14+01:00,-3600,2017-07-26 12:00:14-07:00,25200,True,False,['.travis.yml'],['4c2984ceb68a1832eeb0974f7d3a81e7fe3454d3'],0,1,1,1,,,
+e80342156b6deef6e71e486c50fe3c8c2974dacf,Start on 2.0 release,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-08-07 17:18:36+10:00,-36000,2017-08-07 17:18:36+10:00,-36000,True,False,['consumers.py'],['3f28f32fee944471c0d06b09d8893f3164de620c'],0,29,29,1,1.0,1.0,0.21428571428571427
+0ad52409735109a85238b5b068c77c0f4e60e59e,"Improve channel and group name validation (#23)
+
+Add more explicit error messages and length checks.",Jason Robinson,mail@jasonrobinson.me,Andrew Godwin,andrew@aeracode.org,2017-08-23 06:33:56+03:00,-10800,2017-08-22 23:33:56-04:00,14400,True,False,['base_layer.py'],['d7476cdd9f098366364771069838990722349c60'],18,21,39,1,1.0,1.0,1.0
+5fdb3d55f734f80a7410714fce798de6a6d3ae8d,Correct spelling mistake (#24),Edward Betts,edward@4angle.com,Andrew Godwin,andrew@aeracode.org,2017-09-01 20:53:31+01:00,-3600,2017-09-01 12:53:31-07:00,25200,True,False,['base_layer.py'],['0ad52409735109a85238b5b068c77c0f4e60e59e'],1,1,2,1,,,
+c64d4ddae20e85e1b00363cd5ae816c8cb928b40,Start of class-thread application wrapper (doesn't work yet),Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-09-07 21:25:14-07:00,25200,2017-09-07 21:25:14-07:00,25200,True,False,['applications.py'],['e80342156b6deef6e71e486c50fe3c8c2974dacf'],0,38,38,1,1.0,1.0,0.5555555555555556
+efa02b79d30e070133c18ea1d3dd2ba3739b5923,Significantly improve on the threadpooling application model,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-10-16 19:44:29-07:00,25200,2017-10-16 19:44:29-07:00,25200,True,False,['applications.py'],['c64d4ddae20e85e1b00363cd5ae816c8cb928b40'],20,96,116,1,1.0,1.0,0.43333333333333335
+b51e2598ae470b6a4bf93bc8255365e2e5a9246a,Better names and make it all more generic,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-10-16 22:47:43-07:00,25200,2017-10-16 22:47:43-07:00,25200,True,False,['applications.py'],['efa02b79d30e070133c18ea1d3dd2ba3739b5923'],56,45,101,1,1.0,1.0,0.375
+ad3bdfa6b59e5a11a6c48f5499e1b01bd3642e9f,Allow async_to_sync to go to a non-main thread,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-12 23:38:12-08:00,28800,2017-11-12 23:38:12-08:00,28800,True,False,['applications.py'],['b51e2598ae470b6a4bf93bc8255365e2e5a9246a'],3,2,5,1,0.0,0.0,0.0
+090d1cdd8241cbdde4347cbec84dac7309575de6,Add new server module for ASGI server base classes,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-19 19:09:28-08:00,28800,2017-11-19 19:09:28-08:00,28800,True,False,['server.py'],['ad3bdfa6b59e5a11a6c48f5499e1b01bd3642e9f'],0,156,156,1,0.7246376811594203,0.8260869565217391,0.5072463768115942
+c588b17282878fbe62f8b10372f8042eb430d8d8,Rearrange and remove old code,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-19 19:09:53-08:00,28800,2017-11-19 19:09:53-08:00,28800,True,False,"['applications.py', 'base_layer.py', 'benchmark.py', 'conformance.py', 'conformance_async.py', 'consumers.py', 'inmemory.py', 'inmemory_async.py', 'sync.py', 'worker.py', 'test_base_layer.py', 'test_inmemory.py', 'test_wsgi.py']",['090d1cdd8241cbdde4347cbec84dac7309575de6'],1311,101,1412,13,0.37142857142857144,0.16090225563909774,0.21052631578947367
+51511b593e15a486ee69746749606e68f64e1ebc,Remove double defined function,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-19 19:10:15-08:00,28800,2017-11-19 19:10:15-08:00,28800,True,False,['sync.py'],['c588b17282878fbe62f8b10372f8042eb430d8d8'],13,0,13,1,0.0,0.0,0.0
+59a4fbeef0612d48aa24f1a61a1d84a81ba12eb6,Bumping version number to an alpha one,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-19 19:20:58-08:00,28800,2017-11-19 19:20:58-08:00,28800,True,False,['__init__.py'],['51511b593e15a486ee69746749606e68f64e1ebc'],1,1,2,1,,,
+97bfbde195b4edb7fe10f8ea923510f31d19b978,Pick a non-beta number so requirements work right,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-19 19:22:41-08:00,28800,2017-11-19 19:22:41-08:00,28800,True,False,['__init__.py'],['59a4fbeef0612d48aa24f1a61a1d84a81ba12eb6'],1,1,2,1,,,
+605628d0f5d6dd50db44d069a4a55fe75da79dec,"Remove more old junk, get testing working again",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-27 00:18:35-08:00,28800,2017-11-27 00:18:35-08:00,28800,True,False,"['.travis.yml', 'applications.py', 'wsgi.py', 'setup.cfg', 'setup.py', '__init__.py', 'test_sync.py']",['97bfbde195b4edb7fe10f8ea923510f31d19b978'],126,33,159,7,0.8367346938775511,0.3877551020408163,0.4489795918367347
+5712ab67af5f3382a97a3a9542f9fcadad62892f,Add WSGI-to-ASGI adapter,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 16:20:05-08:00,28800,2017-11-28 16:20:05-08:00,28800,True,False,"['wsgi.py', 'test_wsgi.py']",['605628d0f5d6dd50db44d069a4a55fe75da79dec'],0,185,185,2,0.30578512396694213,0.71900826446281,0.5041322314049587
+a20e592a462f04eff9f7c1f7158bd6a3b9e97f0d,Add env var for worker pool size and test pool limits.,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 16:20:28-08:00,28800,2017-11-28 16:20:28-08:00,28800,True,False,"['sync.py', 'test_sync.py']",['5712ab67af5f3382a97a3a9542f9fcadad62892f'],2,16,18,2,1.0,1.0,1.0
+99b66212bfaa70dff65894f1ae0843afc9a1139a,README and ignore updates,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 16:20:44-08:00,28800,2017-11-28 16:20:44-08:00,28800,True,False,"['.gitignore', 'README.rst']",['a20e592a462f04eff9f7c1f7158bd6a3b9e97f0d'],32,50,82,2,,,
+8a024e8023eb9f3c4ee968bd4743d39326f6a6f6,Move ASGI spec over into this repo,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 16:31:20-08:00,28800,2017-11-28 16:31:20-08:00,28800,True,False,['asgi.rst'],['99b66212bfaa70dff65894f1ae0843afc9a1139a'],0,234,234,1,,,
+3abaaed1319a42d5e1d3764cc0aa8190ac5936c0,Add WWW spec,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 16:40:05-08:00,28800,2017-11-28 16:40:05-08:00,28800,True,False,"['asgi.rst', 'www.rst']",['8a024e8023eb9f3c4ee968bd4743d39326f6a6f6'],1,332,333,2,,,
+075175592c74ea1d8df796fe4c19c28bdd1d5793,Releasing 2.0.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 16:59:27-08:00,28800,2017-11-28 16:59:27-08:00,28800,True,False,"['CHANGELOG.txt', 'README.rst']",['31174b1ff549fe9d529720a55ee3b32f3dd89313'],1,12,13,2,,,
+44a798a26e9462abb3f55240acc747cf52296036,Modify description and entrypoints,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 17:10:37-08:00,28800,2017-11-28 17:10:37-08:00,28800,True,False,['setup.py'],['075175592c74ea1d8df796fe4c19c28bdd1d5793'],4,1,5,1,,,
+64a12bb80a1b998cf65998d89fd17bf41be6ee2f,"Change to using ""http.response.content"" as chunk is already a HTTP thing",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 17:15:04-08:00,28800,2017-11-28 17:15:04-08:00,28800,True,False,"['wsgi.py', 'www.rst', 'test_wsgi.py']",['44a798a26e9462abb3f55240acc747cf52296036'],11,11,22,3,,,
+796483748276b3413f95fe196f690ba944908de4,Releasing 2.0.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 17:20:57-08:00,28800,2017-11-28 17:20:57-08:00,28800,True,False,"['CHANGELOG.txt', '__init__.py']",['64a12bb80a1b998cf65998d89fd17bf41be6ee2f'],1,7,8,2,,,
+d8ab5d09a533fe1ea5898a0376e2b1db9a82463f,Add import sort linting,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 17:41:46-08:00,28800,2017-11-28 17:41:46-08:00,28800,True,False,"['.travis.yml', 'server.py', 'sync.py', 'wsgi.py']",['796483748276b3413f95fe196f690ba944908de4'],5,7,12,4,,,
+6e3844fd0084590b695f5643d7bec6c84e21364f,Add quote checking and linting,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 17:44:04-08:00,28800,2017-11-28 17:44:31-08:00,28800,True,False,"['.travis.yml', 'wsgi.py']",['d8ab5d09a533fe1ea5898a0376e2b1db9a82463f'],3,4,7,2,,,
+76f87a87ac8622c88a6c5007b152492d9fa30b23,Add flake8 linting,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 17:50:09-08:00,28800,2017-11-28 17:50:09-08:00,28800,True,False,"['.travis.yml', 'sync.py', 'wsgi.py', 'setup.cfg', 'test_wsgi.py']",['6e3844fd0084590b695f5643d7bec6c84e21364f'],2,15,17,5,,,
+f916aba3230b36a2141a7c1991cb343fb65b6d92,Also lint tests,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-28 17:54:06-08:00,28800,2017-11-28 17:54:06-08:00,28800,True,False,"['.travis.yml', 'test_sync.py']",['76f87a87ac8622c88a6c5007b152492d9fa30b23'],4,5,9,2,,,
+f3faf4b89d759f35210942cd393a304778b603ef,Add testing aid for ASGI applications,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-29 20:55:43-08:00,28800,2017-11-29 20:55:43-08:00,28800,True,False,"['testing.py', 'setup.py', 'test_wsgi.py']",['f916aba3230b36a2141a7c1991cb343fb65b6d92'],23,49,72,3,1.0,1.0,1.0
+2a36ee43faa102f9ce792253db9c90da784e3f9b,Better error handling for ApplicationCommunicator,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-29 21:10:21-08:00,28800,2017-11-29 21:10:21-08:00,28800,True,False,['testing.py'],['f3faf4b89d759f35210942cd393a304778b603ef'],4,25,29,1,1.0,1.0,1.0
+f7d8f38f14fea64091df474263681025361b95b2,"Unify both HTTP request and response to ""body"" rather than ""content""",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-29 21:11:36-08:00,28800,2017-11-29 21:16:47-08:00,28800,True,False,"['wsgi.py', 'www.rst', 'test_wsgi.py']",['2a36ee43faa102f9ce792253db9c90da784e3f9b'],23,23,46,3,,,
+3d295565b60655a431ae7d4f4900904971e80c93,Don't raise exceptions during ApplicationCommunicator deletion,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2017-11-29 21:16:56-08:00,28800,2017-11-29 21:16:56-08:00,28800,True,False,['testing.py'],['f7d8f38f14fea64091df474263681025361b95b2'],3,3,6,1,,,
+5febae3e494c89119185592b86266663b3667658,Tox is no longer used.,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-01-06 20:54:36-08:00,28800,2018-01-06 20:54:36-08:00,28800,True,False,['tox.ini'],['3d295565b60655a431ae7d4f4900904971e80c93'],5,0,5,1,,,
+c1f6a214d954e24a736c866ba4acc81d1be834cd,Fix a few issues with testing stuff,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-01-19 22:26:52-08:00,28800,2018-01-19 22:26:52-08:00,28800,True,False,"['sync.py', 'testing.py']",['5febae3e494c89119185592b86266663b3667658'],3,7,10,2,1.0,1.0,0.0
+4b09480309b3e5bdf3404a026909986c9f87242a,Releasing 2.1.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-01-19 22:29:48-08:00,28800,2018-01-19 22:29:48-08:00,28800,True,False,"['CHANGELOG.txt', '__init__.py']",['c1f6a214d954e24a736c866ba4acc81d1be834cd'],1,6,7,2,,,
+538ce5ee92962307db1082552839df7d0037176a,Fix test for new AppCommunicator signature,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-01-20 00:20:26-08:00,28800,2018-01-20 00:20:26-08:00,28800,True,False,['test_wsgi.py'],['4b09480309b3e5bdf3404a026909986c9f87242a'],2,2,4,1,,,
+9223f0be259ecfb234d344269e9b61b9126b37f4,Allow calls to AsyncToSync inside SyncToAsync.,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-02 23:17:48-08:00,28800,2018-02-02 23:17:48-08:00,28800,True,False,"['sync.py', 'test_sync.py']",['538ce5ee92962307db1082552839df7d0037176a'],5,43,48,2,1.0,1.0,0.9473684210526315
+75421ac49550ab950555490f11517d647fb9863a,Releasing 2.1.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-02 23:19:33-08:00,28800,2018-02-02 23:19:33-08:00,28800,True,False,"['CHANGELOG.txt', '__init__.py']",['9223f0be259ecfb234d344269e9b61b9126b37f4'],1,6,7,2,,,
+1eba5f69bbdec7df9f03f857a6f9ffc4d2b8f651,Clarify that request:more_body is optional,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-03 12:00:09-08:00,28800,2018-02-03 12:00:09-08:00,28800,True,False,['www.rst'],['75421ac49550ab950555490f11517d647fb9863a'],1,2,3,1,,,
+cb9181a7ccd5e72e0d493c377c8237acb6092465,Fixed #26: Allow AsyncToSync to work outside of a SyncToAsync context,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-03 12:48:52-08:00,28800,2018-02-03 12:48:52-08:00,28800,True,False,"['sync.py', 'test_sync.py']",['1eba5f69bbdec7df9f03f857a6f9ffc4d2b8f651'],9,30,39,2,0.0,1.0,0.75
+74fb5edc90981ef2529840455fbb1ccdbd90ef60,Add deploy stage to Travis,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-03 12:51:45-08:00,28800,2018-02-03 12:51:45-08:00,28800,True,False,['.travis.yml'],['cb9181a7ccd5e72e0d493c377c8237acb6092465'],0,13,13,1,,,
+77db8db794221a44884c0ab7ffbe01272e7e6c21,Use new event loop inside AsyncToSync,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-03 23:02:33-08:00,28800,2018-02-03 23:02:33-08:00,28800,True,False,['sync.py'],['74fb5edc90981ef2529840455fbb1ccdbd90ef60'],1,1,2,1,,,
+3561bb1b2b846ead7641c273a24a414e1111488b,Releasing 2.1.2,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-03 23:43:35-08:00,28800,2018-02-03 23:43:35-08:00,28800,True,False,"['CHANGELOG.txt', '__init__.py']",['77db8db794221a44884c0ab7ffbe01272e7e6c21'],1,15,16,2,,,
+d264a705add96d40d01463395c4e6591a58a6141,Remove old release makefile,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-04 11:10:01-08:00,28800,2018-02-04 11:10:01-08:00,28800,True,False,['Makefile'],['3561bb1b2b846ead7641c273a24a414e1111488b'],16,0,16,1,,,
+4ebaafe8f3a1e6fb0e362113458bd0482951fd59,Add wait() on ApplicationCommunicator,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-04 11:10:11-08:00,28800,2018-02-04 11:10:11-08:00,28800,True,False,['testing.py'],['d264a705add96d40d01463395c4e6591a58a6141'],0,8,8,1,1.0,1.0,1.0
+bba4996b21bb5658a390697c7734165e6dc7e2d6,Releasing 2.1.3,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-04 11:11:31-08:00,28800,2018-02-04 11:11:31-08:00,28800,True,False,"['CHANGELOG.txt', '__init__.py']",['4ebaafe8f3a1e6fb0e362113458bd0482951fd59'],1,8,9,2,,,
+a16f11813294067bab2595eb25b17e6f3cf4cd63,Fixed #27: Return values from SyncToAsync/AsyncToSync,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-04 11:45:04-08:00,28800,2018-02-04 11:45:04-08:00,28800,True,False,"['sync.py', 'test_sync.py']",['bba4996b21bb5658a390697c7734165e6dc7e2d6'],6,12,18,2,0.0,1.0,1.0
+db4b3a0c95074e84ba39cd0bff1d08f8c7495dbf,Make classes also decorators and fix ASGI_THREADS,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-07 16:59:25-08:00,28800,2018-02-07 16:59:25-08:00,28800,True,False,"['sync.py', 'test_sync.py']",['a16f11813294067bab2595eb25b17e6f3cf4cd63'],31,104,135,2,1.0,1.0,0.967741935483871
+a9f6a77d9f45dd9d2cac01beacf7c888cbea0c4e,Releasing 2.1.4,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-07 17:11:52-08:00,28800,2018-02-07 17:11:52-08:00,28800,True,False,"['CHANGELOG.txt', '__init__.py']",['db4b3a0c95074e84ba39cd0bff1d08f8c7495dbf'],1,9,10,2,,,
+9d42cb57129bd8d94a529a5c95dcf9f5d35a9beb,Prevent calling async_to_sync from an async thread,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-07 17:27:58-08:00,28800,2018-02-07 17:27:58-08:00,28800,True,False,"['sync.py', 'test_sync.py']",['a9f6a77d9f45dd9d2cac01beacf7c888cbea0c4e'],0,27,27,2,0.4117647058823529,1.0,0.4117647058823529
+229027ba7fef05c85299ee817dfffe36125f8fa2,Set our new event loop as global active inside async_to_sync,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-11 16:49:43-08:00,28800,2018-02-11 16:49:43-08:00,28800,True,False,['sync.py'],['9d42cb57129bd8d94a529a5c95dcf9f5d35a9beb'],0,2,2,1,0.0,1.0,0.0
+6cdeff123b55f80ba64e953d2de2028087563a27,"Copy WSGI's ""don't send response headers until first body chunk""",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-14 11:34:32-08:00,28800,2018-02-14 11:34:32-08:00,28800,True,False,['www.rst'],['229027ba7fef05c85299ee817dfffe36125f8fa2'],1,2,3,1,,,
+c05f5a0d30ea3cfc47e6efb27dcbef8a9a163484,Releasing 2.1.5,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-14 15:43:00-08:00,28800,2018-02-14 15:43:00-08:00,28800,True,False,"['CHANGELOG.txt', '__init__.py']",['6cdeff123b55f80ba64e953d2de2028087563a27'],1,9,10,2,,,
+b49a3e4b74c5d80d1bd0cffc2c0469160870ac32,Allow async_to_sync to run inside threads without active loops,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-16 10:19:49-08:00,28800,2018-02-16 10:19:49-08:00,28800,True,False,"['sync.py', 'test_sync.py']",['c05f5a0d30ea3cfc47e6efb27dcbef8a9a163484'],5,23,28,2,1.0,1.0,1.0
+c7e0065843a63f08a3e02970dc4bcf91f37bb153,Use create_task rather than ensure_future,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-17 09:59:26-08:00,28800,2018-02-17 09:59:26-08:00,28800,True,False,['sync.py'],['b49a3e4b74c5d80d1bd0cffc2c0469160870ac32'],1,1,2,1,,,
+67ad7e05f7d996a476317cf91f94aa34af1e9ed2,Replicate shutdown logic from asyncio.run(),Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-17 10:07:06-08:00,28800,2018-02-17 10:07:06-08:00,28800,True,False,['sync.py'],['c7e0065843a63f08a3e02970dc4bcf91f37bb153'],3,9,12,1,0.0,0.0,0.0
+1848c19bcdf40674457da4c5024c693cfb4f2ff3,Releasing 2.1.6,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-19 12:09:23-08:00,28800,2018-02-19 12:09:23-08:00,28800,True,False,"['CHANGELOG.txt', '__init__.py']",['67ad7e05f7d996a476317cf91f94aa34af1e9ed2'],1,8,9,2,,,
+04c2f806cdf6124990d171b200ea1f210bf935ba,"Small fixes to the spec (#29)
+
+Remove executable bit from non-executable files, small typo & consistency fixes and clarify wording around ""connection"" and ""socket"".",Ran Benita,ran234@gmail.com,Andrew Godwin,andrew@aeracode.org,2018-02-23 18:37:38+02:00,-7200,2018-02-23 08:37:38-08:00,28800,True,False,"['.gitignore', '.travis.yml', 'CHANGELOG.txt', 'LICENSE', 'README.rst', '__init__.py', 'setup.cfg', 'asgi.rst', 'www.rst']",['1848c19bcdf40674457da4c5024c693cfb4f2ff3'],12,12,24,9,,,
+f31b4be51dcca3a855d80dc0e90cce8086f641de,Fixed #30: Make it clear we only want real floats,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-23 09:12:44-08:00,28800,2018-02-23 09:14:36-08:00,28800,True,False,['asgi.rst'],['04c2f806cdf6124990d171b200ea1f210bf935ba'],1,1,2,1,,,
+daebab19124cf85150fff5ffa2457beee92cf49f,Give cancelled tasks a chance to exit and cancel their children,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-23 10:20:10-08:00,28800,2018-02-23 10:20:10-08:00,28800,True,False,['testing.py'],['f31b4be51dcca3a855d80dc0e90cce8086f641de'],5,20,25,1,0.0,1.0,1.0
+7ca0ca0346433bd84b669999278247b684be826e,Re-add classifiers,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-23 19:30:11-08:00,28800,2018-02-23 19:30:11-08:00,28800,True,False,['setup.py'],['daebab19124cf85150fff5ffa2457beee92cf49f'],0,15,15,1,,,
+1319c5a835f1cc000d5c4593ffc205ddc253a4e5,"Fix specification of default `body` to `b""""` rather than `""""` (#31)",Ran Benita,ran234@gmail.com,Andrew Godwin,andrew@aeracode.org,2018-02-24 20:17:46+02:00,-7200,2018-02-24 10:17:46-08:00,28800,True,False,['www.rst'],['7ca0ca0346433bd84b669999278247b684be826e'],2,2,4,1,,,
+dfb76d4e23d0851021ee44529e90bac2453b50e4,Make classifiers make sense,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-02-24 10:43:22-08:00,28800,2018-02-24 10:43:40-08:00,28800,True,False,['setup.py'],['1319c5a835f1cc000d5c4593ffc205ddc253a4e5'],4,1,5,1,,,
+b986deba5c40ba792298217e178fd529383bcfda,"Fixed #33: Clarify that the `websocket` protocol does not expose fragmentation (#34)
+
+It is up to the ASGI server to assemble the fragments and deliver only
+complete messages to the application. To make it clear, replace mentions
+of ""frames"" with ""messages"", according to the terminology of the RFC:
+
+    After a successful handshake, clients and servers transfer data back
+    and forth in conceptual units referred to in this specification as
+    ""messages"".  On the wire, a message is composed of one or more
+    frames. [...]
+
+    A frame has an associated type.  Each frame belonging to the same
+    message contains the same type of data.
+
+https://tools.ietf.org/html/rfc6455#section-1.2",Ran Benita,ran234@gmail.com,Andrew Godwin,andrew@aeracode.org,2018-02-26 00:37:01+02:00,-7200,2018-02-25 14:37:01-08:00,28800,True,False,['www.rst'],['dfb76d4e23d0851021ee44529e90bac2453b50e4'],8,13,21,1,,,
+6210736715cd489255efbece2a3c0e15883de656,Don't re-raise CancelledError in Communicator.wait,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-03-06 18:32:15-08:00,28800,2018-03-06 18:32:40-08:00,28800,True,False,['testing.py'],['b986deba5c40ba792298217e178fd529383bcfda'],3,6,9,1,1.0,1.0,1.0
+1d612ac738d0e75db3bfdfb5effc574defedb1d7,Releasing 2.2.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-03-06 18:33:46-08:00,28800,2018-03-06 18:33:46-08:00,28800,True,False,"['CHANGELOG.txt', '__init__.py']",['6210736715cd489255efbece2a3c0e15883de656'],1,9,10,2,,,
+6a1912aff4df6268430dae42312f4923fb2460b1,Make asyncio explicit in spec,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-03-11 20:27:07+00:00,0,2018-03-11 20:27:07+00:00,0,True,False,['asgi.rst'],['1d612ac738d0e75db3bfdfb5effc574defedb1d7'],2,2,4,1,,,
+5f7b669050e17fce5a36a97d72e28b22f39a17c9,"Add receive_nothing to ApplicationCommunicator
+
+Allows for easier testing of ""no message received""",Daniel Gilge,33256939+dgilge@users.noreply.github.com,Andrew Godwin,andrew@aeracode.org,2018-03-15 16:09:05+01:00,-3600,2018-03-15 08:09:05-07:00,25200,True,False,"['testing.py', 'test_testing.py']",['6a1912aff4df6268430dae42312f4923fb2460b1'],0,56,56,2,0.3125,1.0,0.78125
+027e5afd602b1753e8d9baceefc2c7af59f44c69,Releasing version 2.3.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-04-11 20:48:08-07:00,25200,2018-04-11 20:48:08-07:00,25200,True,False,"['CHANGELOG.txt', '__init__.py']",['5f7b669050e17fce5a36a97d72e28b22f39a17c9'],1,7,8,2,,,
+2e92fe245620332a6e57d2e3d1342839758e64b8,Clarify that ASGI constructors should be called in a threadpool,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-04-13 09:34:16-07:00,25200,2018-04-13 09:34:16-07:00,25200,True,False,['asgi.rst'],['027e5afd602b1753e8d9baceefc2c7af59f44c69'],0,4,4,1,,,
+1aad0d1623f05738377d1f872ceea44226ac69b1,Clean up ASGI spec and stick a version on it,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-13 09:45:31-04:00,14400,2018-05-13 09:45:31-04:00,14400,True,False,['asgi.rst'],['2e92fe245620332a6e57d2e3d1342839758e64b8'],18,24,42,1,,,
+55459a6538bd2d89fc23c9ee6f7f4c49490a6574,"Bump async-timeout version to 3.0 (#40)
+
+Resolves dependency conflict with aiohttp.",Till Theato,theato@ttill.de,Andrew Godwin,andrew@aeracode.org,2018-05-13 16:18:15+02:00,-7200,2018-05-13 10:18:15-04:00,14400,True,False,['setup.py'],['1aad0d1623f05738377d1f872ceea44226ac69b1'],1,1,2,1,,,
+ad4069016a05205d9123cf1bb38451967af3a827,Update and clarify some spec stuff,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-14 16:33:46-04:00,14400,2018-05-14 16:34:04-04:00,14400,True,False,"['asgi.rst', 'www.rst']",['55459a6538bd2d89fc23c9ee6f7f4c49490a6574'],15,93,108,2,,,
+3ba8cb5492c3a53415ba52f426a3a2302e3e89ed,Fixed #41: Empty WSGI responses were not sending headers,syntonym,syntonym@users.noreply.github.com,Andrew Godwin,andrew@aeracode.org,2018-05-16 03:27:16+02:00,-7200,2018-05-15 21:27:16-04:00,14400,True,False,"['wsgi.py', 'test_wsgi.py']",['ad4069016a05205d9123cf1bb38451967af3a827'],0,36,36,2,0.21428571428571427,1.0,1.0
+972e333b87705c9b326e77eab8686ec099bcaeeb,Add Sphinx docs section for narrative docs & spec discussion,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-17 22:22:27-07:00,25200,2018-05-17 22:23:04-07:00,25200,True,False,"['.gitignore', 'Makefile', 'conf.py', 'index.rst', 'introduction.rst', 'index.rst', 'main.rst', 'www.rst']",['3ba8cb5492c3a53415ba52f426a3a2302e3e89ed'],0,305,305,8,,,
+629d01d3833c72de1f56148df481c171b29de883,Fix alabaster theme,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-17 22:31:49-07:00,25200,2018-05-17 22:31:49-07:00,25200,True,False,['conf.py'],['972e333b87705c9b326e77eab8686ec099bcaeeb'],2,5,7,1,,,
+51635138e179ceb092328b63b8cfc4748d1b4112,"Clarify types in ASGI/WWW spec for headers, addresses",Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-17 22:58:11-07:00,25200,2018-05-17 22:58:11-07:00,25200,True,False,['www.rst'],['629d01d3833c72de1f56148df481c171b29de883'],16,16,32,1,,,
+2962a4723b3290f56759a71068e6f508cc4fb2cf,Add error handling and tighten up send/receive definition,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-18 21:50:57-07:00,25200,2018-05-18 21:50:57-07:00,25200,True,False,['asgi.rst'],['51635138e179ceb092328b63b8cfc4748d1b4112'],2,21,23,1,,,
+935ebc117c8da8dd7e0317f202c328221f331cc6,Say that extra keys are fine.,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-18 21:52:53-07:00,25200,2018-05-18 21:52:53-07:00,25200,True,False,['asgi.rst'],['2962a4723b3290f56759a71068e6f508cc4fb2cf'],2,6,8,1,,,
+cac55dab03164342823af89e9d7733a30cad7cc6,Add middleware notes to spec,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-20 11:17:41-07:00,25200,2018-05-20 11:17:41-07:00,25200,True,False,['asgi.rst'],['935ebc117c8da8dd7e0317f202c328221f331cc6'],0,24,24,1,,,
+7c713ac412a2895505ce64865330e55d026e8239,Change timeout requirement to use semver comparator,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-23 10:15:15+02:00,-7200,2018-05-23 10:15:15+02:00,-7200,True,False,['setup.py'],['cac55dab03164342823af89e9d7733a30cad7cc6'],1,1,2,1,,,
+f836439c5f6797b7ccfd3c75d7b12351d17e54b1,Releasing 2.3.1,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-23 10:16:58+02:00,-7200,2018-05-23 10:16:58+02:00,-7200,True,False,"['CHANGELOG.txt', '__init__.py']",['7c713ac412a2895505ce64865330e55d026e8239'],1,8,9,2,,,
+104620520286f7d230470a2f15e944bec48708a7,Change ASGI_THREADS to do things to default threadpool instead,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-23 10:28:09+02:00,-7200,2018-05-23 10:28:37+02:00,-7200,True,False,['sync.py'],['f836439c5f6797b7ccfd3c75d7b12351d17e54b1'],8,6,14,1,,,
+a40ba14aa25d7de7faefa69ccd5f9ae2387ce7c6,Fix tests for new executor stuff,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-23 11:20:24+02:00,-7200,2018-05-23 11:20:24+02:00,-7200,True,False,['test_sync.py'],['104620520286f7d230470a2f15e944bec48708a7'],2,4,6,1,0.0,1.0,1.0
+2bd62c4b241340ca79292c3b9ef3ad87715e64c8,Fix version to include 2.0 for now (3.0 appears unfindable),Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-23 14:12:22+02:00,-7200,2018-05-23 14:12:22+02:00,-7200,True,False,['setup.py'],['a40ba14aa25d7de7faefa69ccd5f9ae2387ce7c6'],1,1,2,1,,,
+720abc575b152fdc758c347b1507faa6610fe90d,Releasing 2.3.2,Andrew Godwin,andrewgodwin@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2018-05-23 14:13:26+02:00,-7200,2018-05-23 14:13:26+02:00,-7200,True,False,"['CHANGELOG.txt', '__init__.py']",['2bd62c4b241340ca79292c3b9ef3ad87715e64c8'],1,7,8,2,,,
+85b47063580d80c90d19ae6ff88c74aaf2e194ab,"WWW Spec changes (#42)
+
+* Add websocket denial responses to a common extensions section
+
+This allows HTTP responses such as 401, authentication required to be
+sent to the client by a framework that requires authenticated
+websocket connections. It would also allow for redirect responses or
+other more exotic framework responses.
+
+* Add a server push message extension
+
+This specifies how a client should indicate that a HTTP/2 server push
+should be initiated.",Phil Jones,philip.graham.jones@googlemail.com,Andrew Godwin,andrew@aeracode.org,2018-06-02 06:41:18+01:00,-3600,2018-06-01 22:41:18-07:00,25200,True,False,"['extensions.rst', 'index.rst']",['720abc575b152fdc758c347b1507faa6610fe90d'],1,76,77,2,,,
+1eab2638e08f4038decc46e134698212a93467a9,Update asgi.rst (#46),Samir Madhavan,samir.madhavan@gmail.com,Andrew Godwin,andrew@aeracode.org,2018-06-13 23:32:14+05:30,-19800,2018-06-13 11:02:14-07:00,25200,True,False,['asgi.rst'],['85b47063580d80c90d19ae6ff88c74aaf2e194ab'],1,1,2,1,,,
+df34bd0d96d9d04d160e0835cb2d0bee5cd0752b,"Cross-reference ""HTTP & WebSocket"" in ASGI spec (#48)
+
+Instead of linking to the raw rst version on github, use a cross-reference
+to ""www"" document so that navigation stays within generated
+documentation and the reader gets a rendered version.",Denis Laxalde,denis@laxalde.org,Andrew Godwin,andrew@aeracode.org,2018-06-25 01:24:16+02:00,-7200,2018-06-24 16:24:16-07:00,25200,True,False,['asgi.rst'],['1eab2638e08f4038decc46e134698212a93467a9'],1,1,2,1,,,
+c3b2a5df7e32fdeac26f361dc3d2097ad9602d07,Fix client/server types,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-06-24 11:05:09-07:00,25200,2018-06-24 16:28:17-07:00,25200,True,False,['www.rst'],['df34bd0d96d9d04d160e0835cb2d0bee5cd0752b'],5,5,10,1,,,
+d25b326dfaeacac44f9dd91c080894fd02851abb,Clarify send/receive keys,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-06-24 16:28:04-07:00,25200,2018-06-24 16:28:17-07:00,25200,True,False,['www.rst'],['c3b2a5df7e32fdeac26f361dc3d2097ad9602d07'],4,8,12,1,,,
+ba908f01ea5d8e37a8422b3929685802a4103e51,"Clarify backpressure handling on connection close (#49)
+
+This makes it clear that the send awaitable callable should unblock
+and act as a no-op after the connection has closed.",Phil Jones,philip.graham.jones@googlemail.com,Andrew Godwin,andrew@aeracode.org,2018-06-25 00:31:08+01:00,-3600,2018-06-24 16:31:08-07:00,25200,True,False,['asgi.rst'],['d25b326dfaeacac44f9dd91c080894fd02851abb'],2,7,9,1,,,
+9d65a355fe1bb4c54ed3818dab7ace8f6524fc9b,Actually get all the spec types right,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-06-25 09:53:07-07:00,25200,2018-06-25 09:53:32-07:00,25200,True,False,['www.rst'],['ba908f01ea5d8e37a8422b3929685802a4103e51'],5,5,10,1,,,
+887ac8d78b9fda48c4315ed54f5f0475761d6661,"Allow for http.disconnect after response sending (#53)
+
+This allows for ASGI applications to call the receive after sending a
+response by indicating the application should receive a disconnect
+message. This in turn allows the sending and receiving tasks to have
+separate lifespans.",Phil Jones,philip.graham.jones@googlemail.com,Andrew Godwin,andrew@aeracode.org,2018-08-06 23:16:00+01:00,-3600,2018-08-06 15:16:00-07:00,25200,True,False,['www.rst'],['9d65a355fe1bb4c54ed3818dab7ace8f6524fc9b'],3,4,7,1,,,
+bd46344603a74db14f71ee613411287a6297e423,Spice up the docs a bit!,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-08-16 22:06:59-07:00,25200,2018-08-16 22:07:17-07:00,25200,True,False,"['README.rst', 'implementations.rst', 'index.rst']",['887ac8d78b9fda48c4315ed54f5f0475761d6661'],4,73,77,3,,,
+f831746b928060fe4e76e9b52845c0ee6ddf12de,Move to the default RTD sphinx theme,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-08-16 22:10:11-07:00,25200,2018-08-16 22:10:11-07:00,25200,True,False,['conf.py'],['bd46344603a74db14f71ee613411287a6297e423'],1,1,2,1,,,
+cb19e4e2296f8508aeaa6e7bf4f83353f89dc894,Add right heading level to implementations,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-08-16 22:11:36-07:00,25200,2018-08-16 22:11:36-07:00,25200,True,False,['implementations.rst'],['f831746b928060fe4e76e9b52845c0ee6ddf12de'],0,1,1,1,,,
+3922f09614473f49c502a94717f9722ef5caf082,Add API Star and Quart,Andrew Godwin,andrew@aeracode.org,GitHub,noreply@github.com,2018-08-17 14:05:53-07:00,25200,2018-08-17 14:05:53-07:00,25200,True,False,['implementations.rst'],['cb19e4e2296f8508aeaa6e7bf4f83353f89dc894'],0,18,18,1,,,
+58760921b21d5d39b0cc4760980fc22d531ccc47,Run tests against Python 3.7 and add classifier (#62),Michael,michael-k@users.noreply.github.com,Andrew Godwin,andrew@aeracode.org,2018-08-24 23:45:33+00:00,0,2018-08-25 09:45:33+10:00,-36000,True,False,"['.travis.yml', 'setup.py']",['3922f09614473f49c502a94717f9722ef5caf082'],0,4,4,2,,,
+3814f652439fe85e76978559649d10cf318b5bdd,"Add ASGI versioning to the scope definition (#60)
+
+This allows frameworks to know what version of the ASGI specification
+the server implements. This in turn allows features to be added to the
+specification for framework usage.",Phil Jones,philip.graham.jones@googlemail.com,Andrew Godwin,andrew@aeracode.org,2018-08-26 03:45:29+01:00,-3600,2018-08-26 12:45:29+10:00,-36000,True,False,['asgi.rst'],['58760921b21d5d39b0cc4760980fc22d531ccc47'],4,8,12,1,,,
+5947ae40a37d7b8d9238063f25d075d42a81ea19,Implement Black formatter,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-08-27 14:24:27+10:00,-36000,2018-08-27 14:24:27+10:00,-36000,True,False,"['.travis.yml', 'server.py', 'sync.py', 'wsgi.py', 'test_sync.py', 'test_testing.py', 'test_wsgi.py']",['3814f652439fe85e76978559649d10cf318b5bdd'],69,84,153,7,0.2,0.8,0.6
+5a371829297342eab73dc42b7faa5757dfac035c,Fix Travis release stage,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-08-29 17:59:15-07:00,25200,2018-08-29 17:59:15-07:00,25200,True,False,['.travis.yml'],['5947ae40a37d7b8d9238063f25d075d42a81ea19'],1,1,2,1,,,
+9d56198087ef2de6a16ff925e1dff6583f1eac13,Add notes to spec about launching coroutines,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-09-24 10:53:24-07:00,25200,2018-09-24 10:53:24-07:00,25200,True,False,['asgi.rst'],['5a371829297342eab73dc42b7faa5757dfac035c'],0,14,14,1,,,
+63681c87026067861fbab41da0a2b4a4d07bca09,"Drop API Star (#67)
+
+Drop API Star, since from 0.6 onwards it's [descoped into a framework-agnostic suite of API tools](https://github.com/encode/apistar/pull/624), rather than a complete server implementation. (Starlette has picked up the mantle for my own work on an ASGI framework implementation.)",Tom Christie,tom@tomchristie.com,Andrew Godwin,andrew@aeracode.org,2018-09-27 19:01:46+01:00,-3600,2018-09-27 11:01:46-07:00,25200,True,False,['implementations.rst'],['9d56198087ef2de6a16ff925e1dff6583f1eac13'],8,0,8,1,,,
+c365b9b9334d7128c04dcd95c4657a77e0709a1b,"Add a lifespan protocol (#63)
+
+This allows for frameworks to provide the ability to call async code
+to setup before a single request, e.g. creating a connection pool, and
+cleanup after all requests, e.g. releasing the connection pool
+connections.",Phil Jones,philip.graham.jones@googlemail.com,Andrew Godwin,andrew@aeracode.org,2018-09-28 07:55:55+01:00,-3600,2018-09-27 23:55:55-07:00,25200,True,False,"['index.rst', 'asgi.rst', 'lifespan.rst']",['63681c87026067861fbab41da0a2b4a4d07bca09'],0,114,114,3,,,
+1cc89373938781070eb0c86e6d088087541c04ff,Clarify close behaviour for websocket close message.,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-10-06 11:57:08+02:00,-7200,2018-10-06 11:57:42+02:00,-7200,True,False,['www.rst'],['c365b9b9334d7128c04dcd95c4657a77e0709a1b'],0,10,10,1,,,
+dd288e02dc47d1ba026022ee68da341d9c2239a5,Add missing spec include file,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-10-14 16:28:52-07:00,25200,2018-10-14 16:28:52-07:00,25200,True,False,['lifespan.rst'],['1cc89373938781070eb0c86e6d088087541c04ff'],0,1,1,1,,,
+164207ba7614c8d9ccc0816170e529167715d189,"Update to ""shutdown"" in the lifespan spec",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2018-10-15 10:12:36-07:00,25200,2018-10-15 10:12:36-07:00,25200,True,False,['lifespan.rst'],['dd288e02dc47d1ba026022ee68da341d9c2239a5'],6,6,12,1,,,
+69013c49d6cd2a64aec61d1904118111f06b3bd7,Lowercase headers coming back from WSGI responses (#68),Tom Christie,tom@tomchristie.com,Andrew Godwin,andrew@aeracode.org,2018-10-20 00:10:55+01:00,-3600,2018-10-19 16:10:55-07:00,25200,True,False,"['wsgi.py', 'test_wsgi.py']",['164207ba7614c8d9ccc0816170e529167715d189'],2,2,4,2,,,
+3dc982ad848b616077874ea2d392c08ec6a71428,"Fix cleanup/shutdown
+
+I just found out that I've implemented the lifespan protocol the wrong way in [Asgish](https://github.com/almarklein/asgish), because I misread the docs. This change fixes some ambiguities with earlier naming.",Almar Klein,almar.klein@gmail.com,GitHub,noreply@github.com,2018-10-24 14:32:11+02:00,-7200,2018-10-24 14:32:11+02:00,-7200,True,False,['lifespan.rst'],['69013c49d6cd2a64aec61d1904118111f06b3bd7'],6,6,12,1,,,
+0c612e39401c356a5fc1b5fea6395cd98284aedd,include LICENSE in package,Carlo,carlodri@users.noreply.github.com,GitHub,noreply@github.com,2018-10-29 14:43:42+01:00,-3600,2018-10-29 14:43:42+01:00,-3600,True,False,['MANIFEST.in'],['112457f91030e80327229b7179734e0c143ca2fb'],0,1,1,1,,,
+e3e1cc84612065b0b61c03e96fdfb8a7854a5f85,Threadpool operations should run in same contextvars context.,Tom Christie,tom@tomchristie.com,Tom Christie,tom@tomchristie.com,2018-12-03 09:32:31+00:00,0,2018-12-03 09:32:31+00:00,0,True,False,['sync.py'],['8cc4899d1154480865426e52bae753e6ba532cdc'],3,17,20,1,1.0,1.0,0.0
+220fbe39bf1935e544a6e48aa9635a99bb7ec217,Black formatting,Tom Christie,tom@tomchristie.com,Tom Christie,tom@tomchristie.com,2018-12-05 14:27:28+00:00,0,2018-12-05 14:27:28+00:00,0,True,False,['sync.py'],['e3e1cc84612065b0b61c03e96fdfb8a7854a5f85'],1,2,3,1,,,
+492611cc0bc0d66e7dede558f8aad8603134f826,"Clarify www spec for path definition
+
+RFC 7320 section 5.3 allows for the request target to be in an
+absolute form (5.3.1) which servers MUST allow. The current ASGI
+servers (Hypercorn, Uvicorn & Daphne) will all pass on the full
+request-target (minus query string) to the ASGI application rather
+than, as the previous version of this specification suggested, just
+the path part of the URL. This should help ASGI app developers
+understand whether to assume the path will always be just the path.",pgjones,philip.graham.jones@googlemail.com,pgjones,philip.graham.jones@googlemail.com,2018-12-22 10:35:23+00:00,0,2018-12-22 10:42:09+00:00,0,True,False,['www.rst'],['6851a3444a8f23645815d3a0d70d4de852205fc2'],3,6,9,1,,,
+b4a96c358ca83da31543135aa33d7b1b456012d0,Minor typos (#75),Jesús Cea,jcea@jcea.es,Andrew Godwin,andrew@aeracode.org,2019-01-12 03:25:40+01:00,-3600,2019-01-11 18:25:40-08:00,28800,True,False,"['extensions.rst', 'index.rst', 'introduction.rst', 'asgi.rst', 'lifespan.rst']",['5fe2e535e64f85ada8078ad6aabf5e418b77d26b'],6,6,12,5,,,
+bf927f4172d082a605642975a2950514fce34c90,"Add http_version to the Websocket scope (#76)
+
+This is required now that websockets over HTTP/2 has been defined in RFC 8441.",Phil Jones,philip.graham.jones@googlemail.com,Andrew Godwin,andrew@aeracode.org,2019-01-17 19:16:55+00:00,0,2019-01-17 12:16:55-07:00,25200,True,False,['www.rst'],['b4a96c358ca83da31543135aa33d7b1b456012d0'],0,3,3,1,,,
+7d1768d2c97a4bdbdb9338bf95683b63803dc0de,Bump pytest version to see if it fixes test failures,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-01-11 18:30:45-08:00,28800,2019-02-23 10:43:29-08:00,28800,True,False,['setup.py'],['bf927f4172d082a605642975a2950514fce34c90'],2,2,4,1,,,
+1e87886eb85431979b75368bcc78a15170492485,Fix test suite,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-02-23 10:41:05-08:00,28800,2019-02-23 10:43:29-08:00,28800,True,False,['setup.py'],['7d1768d2c97a4bdbdb9338bf95683b63803dc0de'],1,1,2,1,,,
+7f89bd6e12c1d77782971ae2a4da4488d7128c99,"Allow headers to be specified in the accept message (#79)
+
+This allows an application to specify additional headers to send to
+the client in the handshake response, for example cookie settings.",Phil Jones,philip.graham.jones@googlemail.com,Andrew Godwin,andrew@aeracode.org,2019-02-23 21:23:28+00:00,0,2019-02-23 13:23:28-08:00,28800,True,False,['www.rst'],['1e87886eb85431979b75368bcc78a15170492485'],0,7,7,1,,,
+6269216be8e985344cd2b184a930b2beb6687506,Add spec versioning to HTTP/WebSocket,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-02-23 13:27:25-08:00,28800,2019-02-23 13:27:25-08:00,28800,True,False,['www.rst'],['7f89bd6e12c1d77782971ae2a4da4488d7128c99'],1,7,8,1,,,
+cb459f8e2c1ac0c0b469bff1bd4275cc2cef9c26,"Move spec_version into the ""asgi"" key",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-02-25 13:54:02-08:00,28800,2019-02-25 13:54:02-08:00,28800,True,False,"['asgi.rst', 'www.rst']",['6269216be8e985344cd2b184a930b2beb6687506'],2,5,7,2,,,
+55e9ac45f15e89df58b1e9af54e5fe17be8f9322,Really try to clarify this spec version stuff,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-03-01 09:45:07-08:00,28800,2019-03-01 09:45:07-08:00,28800,True,False,['www.rst'],['cb459f8e2c1ac0c0b469bff1bd4275cc2cef9c26'],4,19,23,1,,,
+e4015bf8fb68cbd5de0d63d7927cf61a30b0714f,Fix version that accept headers was added in,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-03-03 17:17:35-08:00,28800,2019-03-03 17:17:35-08:00,28800,True,False,['www.rst'],['55e9ac45f15e89df58b1e9af54e5fe17be8f9322'],1,1,2,1,,,
+8ae25bd625b6da8b5f5cfe11e93bd33ea7bd456e,"3.0: Single-callable style applications & lifecycle improvements (#80)
+
+This switches the ASGI specification to use a single, async callable, as well as improving the error behaviour of the lifecycle scope type.",Andrew Godwin,andrew@aeracode.org,GitHub,noreply@github.com,2019-03-20 14:30:59-07:00,25200,2019-03-20 14:30:59-07:00,25200,True,False,"['compatibility.py', 'testing.py', 'wsgi.py', 'asgi.rst', 'lifespan.rst', 'www.rst', 'test_compatibility.py']",['e4015bf8fb68cbd5de0d63d7927cf61a30b0714f'],50,250,300,7,1.0,0.8135593220338984,0.8813559322033898
+e3552d90a84ee47c283dbcc376699887703db2ff,Releasing 3.0.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-03-20 14:33:05-07:00,25200,2019-03-20 14:33:05-07:00,25200,True,False,"['CHANGELOG.txt', '__init__.py']",['8ae25bd625b6da8b5f5cfe11e93bd33ea7bd456e'],1,8,9,2,,,
+5f45237336d7c20e6b516c96e901b4d61860bc6e,Bump version and dates properly,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-03-20 14:37:50-07:00,25200,2019-03-20 14:37:50-07:00,25200,True,False,"['asgi.rst', 'lifespan.rst', 'www.rst']",['e3552d90a84ee47c283dbcc376699887703db2ff'],3,3,6,3,,,
+768a0718269c309bf2a5a3c4c9558d55c56283d5,"Add a threadlocal drop-in replacement as ""local""",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-04-13 12:38:44+02:00,-7200,2019-04-13 12:38:44+02:00,-7200,True,False,"['README.rst', 'local.py', 'sync.py', 'test_local.py']",['5f45237336d7c20e6b516c96e901b4d61860bc6e'],2,143,145,4,0.6811594202898551,1.0,0.8115942028985508
+51d5c4618a34a16cb6a14624e0e4d35dc92978ae,Fix implementation and tests for the local module,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-04-13 13:04:23+02:00,-7200,2019-04-13 13:04:23+02:00,-7200,True,False,"['local.py', 'sync.py', 'test_local.py']",['768a0718269c309bf2a5a3c4c9558d55c56283d5'],14,67,81,3,1.0,1.0,1.0
+7b9f5d772245d85d2138acb326c07acbd5851e9e,Releasing 3.1.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-04-13 13:59:15+02:00,-7200,2019-04-13 13:59:15+02:00,-7200,True,False,"['CHANGELOG.txt', '__init__.py']",['51d5c4618a34a16cb6a14624e0e4d35dc92978ae'],1,8,9,2,,,
+0ad2c43ae84aa6a9eb7c86feb4fe5319e3b061ea,Clean up local storage for dead threads/tasks,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-04-13 14:26:43+02:00,-7200,2019-04-13 14:26:43+02:00,-7200,True,False,"['local.py', 'test_local.py']",['7b9f5d772245d85d2138acb326c07acbd5851e9e'],2,61,63,2,1.0,0.7352941176470589,0.9705882352941176
+67cadff205f1e41512b2b2924df8221bdcfd274d,Releasing 3.1.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-04-13 14:30:24+02:00,-7200,2019-04-13 14:30:24+02:00,-7200,True,False,"['CHANGELOG.txt', '__init__.py']",['0ad2c43ae84aa6a9eb7c86feb4fe5319e3b061ea'],1,7,8,2,,,
+3dcc852ee8249f4d3096ae8b450c1e753d55d041,"Local maps better now between threads and tasks
+
+Allows recursive lookup through a whole call stack, similar to
+contextvars.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-04-16 17:54:29-07:00,25200,2019-04-16 17:54:29-07:00,25200,True,False,"['local.py', 'sync.py', 'test_local.py']",['67cadff205f1e41512b2b2924df8221bdcfd274d'],37,186,223,3,0.961038961038961,0.7662337662337663,0.7142857142857143
+82ef31b73983b182d98502c3ea5a8d0f0032e011,Added tests showing threads and method locals side-by-side,Tobias Kunze,r@rixx.de,Andrew Godwin,andrew@aeracode.org,2019-04-17 02:56:48+02:00,-7200,2019-04-17 01:56:48+01:00,-3600,True,False,['test_local.py'],['3dcc852ee8249f4d3096ae8b450c1e753d55d041'],0,51,51,1,0.2857142857142857,1.0,1.0
+95536ef83ac264bdce1bacbe88aef4b0d07e9666,Add thread_critical note and remove sync-scope doc,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-04-17 16:51:16-07:00,25200,2019-04-17 16:52:19-07:00,25200,True,False,"['README.rst', 'asgi.rst']",['82ef31b73983b182d98502c3ea5a8d0f0032e011'],10,6,16,2,,,
+265e4e7d26c51cfc4b167b574e72568704393392,Releasing 3.1.2,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-04-17 19:24:56-07:00,25200,2019-04-17 19:24:56-07:00,25200,True,False,"['CHANGELOG.txt', '__init__.py']",['95536ef83ac264bdce1bacbe88aef4b0d07e9666'],2,11,13,2,,,
+90535f2ba6aa45ef8e44abe37dc7b718ed18252a,"Clarified general and spec documentation
+
+* Fix a few typographical errors, punctuation, etc.
+* Make data types in keys specifications for protocols more scannable by moving them to a reliable location
+* Rephrase a few passages for clarity
+* Make key formatting consistent with other spec docs",Dane Hillard,github@danehillard.com,Andrew Godwin,andrew@aeracode.org,2019-04-22 16:45:29-04:00,14400,2019-04-22 13:45:29-07:00,25200,True,False,"['extensions.rst', 'introduction.rst', 'index.rst', 'asgi.rst', 'lifespan.rst', 'www.rst']",['265e4e7d26c51cfc4b167b574e72568704393392'],216,224,440,6,,,
+fae4ef00dddae173d4c6000d4d8da50d0bfe4953,Update introduction to reflect ASGI 3,Andrew Godwin,andrew@aeracode.org,GitHub,noreply@github.com,2019-04-22 13:51:23-07:00,25200,2019-04-22 13:51:23-07:00,25200,True,False,['introduction.rst'],['90535f2ba6aa45ef8e44abe37dc7b718ed18252a'],12,6,18,1,,,
+e31a26463d002399b3301c92c570de9c9f4a9d1d,"Fixed and documented docs process
+
+* Comment out `html_sidebars` lines from `docs/conf.py` to get default Sphinx theme when building docs out of the box
+* Add section in README.rst about how to build the docs
+
+Fixed #84.",Dane Hillard,github@danehillard.com,Andrew Godwin,andrew@aeracode.org,2019-04-25 17:42:40-04:00,14400,2019-04-25 14:42:40-07:00,25200,True,False,"['README.rst', 'conf.py']",['fae4ef00dddae173d4c6000d4d8da50d0bfe4953'],9,34,43,2,,,
+525159b44f31054e19679a09e59fea8d80ae359a,"Cleaner indentation of code example
+
+The Python code example function body was indented 8 spaces instead of 4.",Simon Willison,simonw@eventbrite.com,Andrew Godwin,andrew@aeracode.org,2019-04-25 22:35:06-07:00,25200,2019-04-25 22:35:06-07:00,25200,True,False,['introduction.rst'],['e31a26463d002399b3301c92c570de9c9f4a9d1d'],3,3,6,1,,,
+1ce4570158d6aeb2b9376d202f56704a3c8009c5,"Run linting after the tests
+
+Changes the linting to only run after tests pass, and makes Black output in diff mode.",Daniel Hahler,github@thequod.de,Andrew Godwin,andrew@aeracode.org,2019-05-06 16:32:49+02:00,-7200,2019-05-06 10:32:49-04:00,14400,True,False,['.travis.yml'],['525159b44f31054e19679a09e59fea8d80ae359a'],2,2,4,1,,,
+5873209466f6e826557de782cea56ea5909973c9,pytest: use testpaths instead of addopts,Daniel Hahler,git@thequod.de,Andrew Godwin,andrew@aeracode.org,2019-05-08 16:52:35+02:00,-7200,2019-05-08 07:52:35-07:00,25200,True,False,['setup.cfg'],['1ce4570158d6aeb2b9376d202f56704a3c8009c5'],1,1,2,1,,,
+2a48c67545c9bdf64d3ed1b6fb98820dd72f8893,Set `REMOTE_ADDR` from scope['client'] in WSGI adapter,Masashi SHIBATA,c-bata@users.noreply.github.com,Andrew Godwin,andrew@aeracode.org,2019-05-21 13:56:05+09:00,-32400,2019-05-20 21:56:05-07:00,25200,True,False,['wsgi.py'],['5873209466f6e826557de782cea56ea5909973c9'],0,4,4,1,0.0,0.0,0.0
+71aeefcbb505dd134cb73d468089f01de6b699a7,Clarify that receive is also an awaitable (#93),Simon Willison,swillison@gmail.com,Andrew Godwin,andrew@aeracode.org,2019-06-14 08:29:54-07:00,25200,2019-06-14 08:29:54-07:00,25200,True,False,['introduction.rst'],['2a48c67545c9bdf64d3ed1b6fb98820dd72f8893'],2,2,4,1,,,
+095ef694972f586c96b2b83e1f7f1e8f23f4a485,"Add an optional raw_path to web scopes (refs #87)
+
+This adds a new optional `raw_path` key to the HTTP and WebSocket scopes that allows servers to provide the raw, uninterpreted path as best they can.",Simon Willison,swillison@gmail.com,Andrew Godwin,andrew@aeracode.org,2019-06-17 09:29:51-07:00,25200,2019-06-17 09:29:51-07:00,25200,True,False,['www.rst'],['71aeefcbb505dd134cb73d468089f01de6b699a7'],0,8,8,1,,,
+b6c1612f454935ce1aa41d5344acd1a65dd3fc12,"Fixed #97: Reworked Lifespan example to ASGI 3
+
+The actual protocol remains unchanged.",Andrew Godwin,andrew@aeracode.org,GitHub,noreply@github.com,2019-06-24 23:43:35-07:00,25200,2019-06-24 23:43:35-07:00,25200,True,False,['lifespan.rst'],['095ef694972f586c96b2b83e1f7f1e8f23f4a485'],0,23,23,1,,,
+327245dc7e30a8fe5cc94d083db05e6fceee1920,"AsyncToSync: used asyncio._get_running_loop for check
+
+Simpler and available since Python 3.5",Daniel Hahler,git@thequod.de,Andrew Godwin,andrew@aeracode.org,2019-06-27 19:32:30+02:00,-7200,2019-06-27 10:32:30-07:00,25200,True,False,['sync.py'],['b6c1612f454935ce1aa41d5344acd1a65dd3fc12'],10,5,15,1,1.0,1.0,1.0
+5dc1836169afd91d5ec6259961d2def7b0538356,Fix broken document `lifespan`,T.Kameyama,41364327+tkamenoko@users.noreply.github.com,Andrew Godwin,andrew@aeracode.org,2019-07-06 03:28:47+09:00,-32400,2019-07-05 11:28:47-07:00,25200,True,False,['lifespan.rst'],['327245dc7e30a8fe5cc94d083db05e6fceee1920'],34,0,34,1,,,
+9c6df6e02700092eb19adefff3552d44388f69b8,"Vendoring async_timeout to remove all dependencies
+
+This helps keep Django at only a single level of dependencies.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-07-05 11:49:54-07:00,25200,2019-07-05 11:50:33-07:00,25200,True,False,"['testing.py', 'timeout.py', 'setup.py']",['5dc1836169afd91d5ec6259961d2def7b0538356'],7,131,138,3,1.0,1.0,0.8051948051948052
+c0fdf92290b94f04b9f9c02cfdb190727a708c8a,Releasing 3.1.3,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-07-05 11:53:12-07:00,25200,2019-07-05 11:53:12-07:00,25200,True,False,"['CHANGELOG.txt', '__init__.py']",['9c6df6e02700092eb19adefff3552d44388f69b8'],1,9,10,2,,,
+4a48f4fdb8bcc3e8bfa46aa122db97e9cf31eb65,"Revert ""AsyncToSync: used asyncio._get_running_loop for check""
+
+This reverts commit 327245dc7e30a8fe5cc94d083db05e6fceee1920.
+
+Turns out we need to support Python 3.5 for Channels.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-07-07 09:01:33-07:00,25200,2019-07-07 09:01:33-07:00,25200,True,False,['sync.py'],['c0fdf92290b94f04b9f9c02cfdb190727a708c8a'],5,10,15,1,0.0,0.0,0.0
+a00a15b7d79d981520c229508719d5037b49f68e,Releasing 3.1.4,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-07-07 09:02:54-07:00,25200,2019-07-07 09:02:54-07:00,25200,True,False,"['CHANGELOG.txt', 'README.rst', '__init__.py', 'setup.py']",['4a48f4fdb8bcc3e8bfa46aa122db97e9cf31eb65'],2,9,11,4,,,
+d4de008e4d42d42365b03a1560821cf3a8729983,"Fixed unittest collection with @async_to_sync on Python 3.7
+
+Uses functools.update_wrapper to ensure __qualname__ (along with any other future callable attributes) are preserved correctly.",Carlton Gibson,carlton@noumenal.es,Andrew Godwin,andrew@aeracode.org,2019-07-09 03:19:30+02:00,-7200,2019-07-08 18:19:30-07:00,25200,True,False,"['sync.py', 'test_sync.py']",['a00a15b7d79d981520c229508719d5037b49f68e'],1,9,10,2,1.0,1.0,0.6666666666666666
+2d29f99cba65c25870aa90f74cbeb694ef7e7445,"Add a thread_sensitive mode to SyncToAsync
+
+Intended for DB code and similar stuff that has to run on one thread",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-07-17 21:28:44-07:00,25200,2019-07-17 21:34:19-07:00,25200,True,False,"['sync.py', 'test_sync.py']",['d4de008e4d42d42365b03a1560821cf3a8729983'],3,125,128,2,0.6129032258064516,1.0,0.8387096774193549
+67e2703b799543ef5ef03c47ce76a18c1f194289,Remove rogue line from a bad rebase,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-07-17 21:37:57-07:00,25200,2019-07-17 21:37:57-07:00,25200,True,False,['test_sync.py'],['2d29f99cba65c25870aa90f74cbeb694ef7e7445'],1,0,1,1,0.0,0.0,0.0
+3a8f32f88f08c481cb3fdd707a409638a7abcf77,"Move the sync-in-main-thread shortcut up
+
+This puts it before the args manipulation for contextvars",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-07-17 21:42:01-07:00,25200,2019-07-17 21:42:01-07:00,25200,True,False,['sync.py'],['67e2703b799543ef5ef03c47ce76a18c1f194289'],9,9,18,1,,,
+85b80b071b946281bf7aa2440151740be51a8938,"Improved thread_sensitive implementation
+
+It can now handle infinite nesting of async and sync.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-07-24 21:30:27-07:00,25200,2019-07-24 21:30:27-07:00,25200,True,False,"['README.rst', 'current_thread_executor.py', 'local.py', 'sync.py', 'test_sync.py']",['3a8f32f88f08c481cb3fdd707a409638a7abcf77'],67,309,376,5,0.6907216494845361,0.6701030927835051,0.5567010309278351
+5f7de42422dd2f332936e06a61e26af66f5fdfdd,"Tidy up some small issues with sync stuff
+
+Remove a magic constant, and fix a misleading comment.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-07-25 13:27:45-07:00,25200,2019-07-25 13:27:45-07:00,25200,True,False,"['local.py', 'sync.py']",['85b80b071b946281bf7aa2440151740be51a8938'],3,5,8,2,,,
+4543fc4d97827b53145456d9e44e1193962b2a5c,Releasing 3.2.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-07-29 10:02:56-07:00,25200,2019-07-29 10:02:56-07:00,25200,True,False,"['CHANGELOG.txt', '__init__.py']",['5f7de42422dd2f332936e06a61e26af66f5fdfdd'],1,8,9,2,,,
+ff3ebb2bf1009bd5829b9b4ba8b817bd2c706a23,"Propagate exceptions across sync/async boundaries
+
+This is a bit hacky, but the best portable way of doing this I could
+find for now.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-08-05 12:30:53+10:00,-36000,2019-08-05 12:32:21+10:00,-36000,True,False,['sync.py'],['4543fc4d97827b53145456d9e44e1193962b2a5c'],6,28,34,1,0.0,0.0,0.0
+699fe3b790257651f4bba5452f36557fc47c783a,Releasing 3.2.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-08-05 14:26:55+10:00,-36000,2019-08-05 14:26:55+10:00,-36000,True,False,"['CHANGELOG.txt', '__init__.py']",['ff3ebb2bf1009bd5829b9b4ba8b817bd2c706a23'],1,7,8,2,,,
+771b68c144f3e30d6569a83ed79045362a8af0ba,Copied method's __self__ in sync_to_async,Tim Bell,timothybell@gmail.com,Andrew Godwin,andrew@aeracode.org,2019-08-05 15:51:38+10:00,-36000,2019-08-05 15:51:38+10:00,-36000,True,False,"['sync.py', 'test_sync.py']",['699fe3b790257651f4bba5452f36557fc47c783a'],0,26,26,2,1.0,1.0,0.7333333333333333
+b086f96db7b03be5c6704686ccddad8510d1d970,Make SyncToAsync values appear as coroutine funcs,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-08-11 11:32:11-07:00,25200,2019-08-11 11:32:11-07:00,25200,True,False,"['sync.py', 'test_sync.py']",['771b68c144f3e30d6569a83ed79045362a8af0ba'],0,14,14,2,1.0,1.0,0.8571428571428571
+ce7b54c328c328184041b9ab399f2ba06ed2c80c,"Made WsgiToAsgi pass SERVER_PORT as a string
+
+WSGI applications expect to receive SERVER_PORT as a string, whereas ASGI defines `server` as a (str, int) tuple.",Jeremy Lainé,jeremy.laine@m4x.org,Andrew Godwin,andrew@aeracode.org,2019-08-28 16:16:27+02:00,-7200,2019-08-28 07:16:27-07:00,25200,True,False,['wsgi.py'],['b086f96db7b03be5c6704686ccddad8510d1d970'],2,2,4,1,,,
+6662e6f861d19eccf0e816213e8d50db725954f0,"Made WsgiToAsgi check scope type (#118)
+
+Currently, we validate that messages are of type ""http.request"". However
+this validation only occurs when the first message is received. This may
+be too late for servers (such as hypercorn) which try to determine
+support for the lifespan extension.
+
+This change checks that scope[""type""] is ""http"" to provide early
+failure.",Jeremy Lainé,jeremy.laine@m4x.org,Andrew Godwin,andrew@aeracode.org,2019-08-28 16:16:54+02:00,-7200,2019-08-28 07:16:54-07:00,25200,True,False,['wsgi.py'],['ce7b54c328c328184041b9ab399f2ba06ed2c80c'],0,2,2,1,1.0,1.0,0.0
+203231722d7b4db2a89cdf7eb22272535f091d27,"Made AsgiToWsgi pass root_path as SCRIPT_NAME (#119)
+
+In order to properly support applications which are not mounted at the
+root, we need to pass the ASGI `root_path` as the WSGI `SCRIPT_NAME`.",Jeremy Lainé,jeremy.laine@m4x.org,Andrew Godwin,andrew@aeracode.org,2019-08-29 09:03:15+02:00,-7200,2019-08-29 00:03:15-07:00,25200,True,False,['wsgi.py'],['6662e6f861d19eccf0e816213e8d50db725954f0'],1,1,2,1,,,
+0d798fc186535bf5205933299ef74e8b3d257013,"Handle request body split across messages in WSGI
+
+Maps a multi-part ASGI request body into a single WSGI input file object.",Christopher Head,chead@chead.ca,Andrew Godwin,andrew@aeracode.org,2019-08-29 22:40:35-07:00,25200,2019-08-29 22:40:35-07:00,25200,True,False,"['wsgi.py', 'test_wsgi.py']",['203231722d7b4db2a89cdf7eb22272535f091d27'],14,61,75,2,0.3333333333333333,1.0,0.8333333333333334
+c8aea7f3016487b1735268957ede82c03cf00d99,Releasing 3.2.2,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2019-08-29 22:46:12-07:00,25200,2019-08-29 22:46:12-07:00,25200,True,False,"['CHANGELOG.txt', '__init__.py']",['0d798fc186535bf5205933299ef74e8b3d257013'],1,12,13,2,,,
+e03cf4a7e68bb4328bc80457367248fa772d4461,"Clarify aspects of the server push extension (#121)
+
+* Clarify the ""acceptance"" of a push promise
+
+It isn't accepted directly but rather the client can indicate it
+doesn't accept any push promises or it can reject specific ones.
+
+* Clarify how the server should set the authority header
+
+I think this makes sense as the push promise should relate to the
+request that has triggered it. I also think as it is a pseudo header
+it is the server's responsibility to set it.",Phil Jones,philip.graham.jones@googlemail.com,Andrew Godwin,andrew@aeracode.org,2019-09-10 18:29:29+00:00,0,2019-09-10 11:29:29-07:00,25200,True,False,['extensions.rst'],['c8aea7f3016487b1735268957ede82c03cf00d99'],3,6,9,1,,,
+36c3e8dc70bf38fe2db87ac20b514f21aaf5ea9d,"Fixed #120: Clarify Pseudo header treatment
+
+Specifically that Pseudo headers are not an application concern, but
+rather are a concern of the server (as they are specific to the
+protocol).
+
+Additionally this requires an ASGI server to create a host
+header. Doing so ensures that ASGI applications can continue to assume
+a host header exists.
+
+Note there can only be one host header which should be at the start as
+per RFC-7230, https://tools.ietf.org/html/rfc7230#section-5.4.",Phil Jones,philip.graham.jones@googlemail.com,Andrew Godwin,andrew@aeracode.org,2019-09-10 18:53:46+00:00,0,2019-09-10 11:53:46-07:00,25200,True,False,"['extensions.rst', 'www.rst']",['e03cf4a7e68bb4328bc80457367248fa772d4461'],6,15,21,2,,,
+29a4652a3f7f8076568dee982062cad78bbd6855,Include regression tests in MANIFEST.in to include them in PyPI tarball,Kurt Mosiejczuk,kurt.mosiejczuk@gmail.com,Andrew Godwin,andrew@aeracode.org,2019-09-16 19:08:34-04:00,14400,2019-09-16 16:08:34-07:00,25200,True,False,['MANIFEST.in'],['36c3e8dc70bf38fe2db87ac20b514f21aaf5ea9d'],0,1,1,1,,,
+f65c04d7f3c7d8942a5552980c431ca065605a83,Support Python 3.8 (#130),laevilgenius,13280256+laevilgenius@users.noreply.github.com,Andrew Godwin,andrew@aeracode.org,2019-10-22 00:29:33+03:00,-10800,2019-10-21 14:29:33-07:00,25200,True,False,"['.travis.yml', 'testing.py', 'setup.py']",['29a4652a3f7f8076568dee982062cad78bbd6855'],8,6,14,3,,,
+94cc73a16f9d2b510c8982b10089617d456b4f20,"Fixed headers example in introduction
+
+Headers was not a list of two-length iterables.",Adam Johnson,me@adamj.eu,Andrew Godwin,andrew@aeracode.org,2019-10-23 16:19:32+01:00,-3600,2019-10-23 08:19:32-07:00,25200,True,False,['introduction.rst'],['f65c04d7f3c7d8942a5552980c431ca065605a83'],1,1,2,1,,,
+dd09962654196ac0816c3a049459e7ea78c5c7ea,Releasing 3.2.3,Carlton Gibson,carlton.gibson@noumenal.es,Carlton Gibson,carlton.gibson@noumenal.es,2019-10-23 21:20:13+02:00,-7200,2019-10-23 21:20:13+02:00,-7200,True,False,"['CHANGELOG.txt', '__init__.py']",['94cc73a16f9d2b510c8982b10089617d456b4f20'],1,7,8,2,,,
+ff4f665b4322bf6c7ea4158af7577bdf0a088a0d,"Declared python_requires in setup.py
+
+This will prevent installation on unsupported Python versions.",Adam Johnson,me@adamj.eu,Andrew Godwin,andrew@aeracode.org,2019-11-04 18:52:41+00:00,0,2019-11-04 11:52:41-07:00,25200,True,False,['setup.py'],['dd09962654196ac0816c3a049459e7ea78c5c7ea'],0,1,1,1,,,
+4fa1c540c33552dbf109a6fa65475561bab2adc8,Added support for naive introspection of wrapped sync_to_async functions (#137),John Cass,john.cass77@gmail.com,Andrew Godwin,andrew@aeracode.org,2019-11-19 17:43:48+02:00,-7200,2019-11-19 08:43:48-07:00,25200,True,False,"['sync.py', 'test_sync.py']",['ff4f665b4322bf6c7ea4158af7577bdf0a088a0d'],0,25,25,2,1.0,1.0,0.9411764705882353
+e47947e1add08e7103ef514abb63aa9e1e7bc790,Add notes about Transfer-Encoding: chunked (#96),Andrew Godwin,andrew@aeracode.org,GitHub,noreply@github.com,2020-01-08 10:10:44-07:00,25200,2020-01-08 10:10:44-07:00,25200,True,False,['www.rst'],['4fa1c540c33552dbf109a6fa65475561bab2adc8'],0,19,19,1,,,
+911215ca81a6956df4de7e282f954654443b1fcd,"Fixed #145: Pending async tasks/generators cancellation
+
+This ensures that all async tasks, including generators, are cancelled during the async loop shutdown as part of async_to_sync. The logic is based on that in `asyncio.run()`.",bjd183,bjd183@users.noreply.github.com,GitHub,noreply@github.com,2020-02-28 18:48:31-08:00,28800,2020-02-29 02:48:31+00:00,0,True,False,['sync.py'],['e47947e1add08e7103ef514abb63aa9e1e7bc790'],0,17,17,1,0.0,0.0,0.0
+34817788d2caec9b65a54741495d6ed7d44b499c,"Propagated changes to contextvars ""upstream"" for SyncToAsync
+
+Mirrors the downstream propagation of contextvars so that control flow is still respected.",Colton Myers,colton.myers@gmail.com,GitHub,noreply@github.com,2020-03-09 10:53:14-06:00,21600,2020-03-09 10:53:14-06:00,21600,True,False,"['.gitignore', 'sync.py', 'test_sync_contextvars.py']",['911215ca81a6956df4de7e282f954654443b1fcd'],1,47,48,3,0.5789473684210527,0.0,0.5789473684210527
+b57e27f300f96c1393618417cc20a917d06e7312,Releasing 3.2.4,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-03-10 09:17:09-06:00,21600,2020-03-10 09:17:09-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['34817788d2caec9b65a54741495d6ed7d44b499c'],1,9,10,2,,,
+43740dca083048f97c7aee43bd4b877eb3903dc3,"Copied method's __self__ in async_to_sync
+
+This allows instance methods to work fully.",Mariusz Felisiak,felisiak.mariusz@gmail.com,GitHub,noreply@github.com,2020-03-11 18:10:03+01:00,-3600,2020-03-11 11:10:03-06:00,21600,True,False,"['sync.py', 'test_sync.py']",['b57e27f300f96c1393618417cc20a917d06e7312'],0,24,24,2,1.0,1.0,0.7333333333333333
+34ae066c9ca38cb8f9acb24ff5bbbd29062035f3,Releasing 3.2.5,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-03-11 11:12:09-06:00,21600,2020-03-11 11:12:09-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['43740dca083048f97c7aee43bd4b877eb3903dc3'],1,7,8,2,,,
+ee9ec761b57d4259962b306e02dc9a9c2416c8f0,"Removed use of asyncio.Task.all_tasks() for Python 3.7+
+
+This improves the earlier patch to use the right codepath dependent on the Python version (`asyncio.Task.all_tasks()` is deprecated in 3.7 and above)",bjd183,bjd183@users.noreply.github.com,GitHub,noreply@github.com,2020-03-14 12:01:47-07:00,25200,2020-03-14 13:01:47-06:00,21600,True,False,['sync.py'],['34ae066c9ca38cb8f9acb24ff5bbbd29062035f3'],1,4,5,1,0.0,0.0,0.0
+a0bbe901ffe19cd927219989b7125a920ea1e5c3,"New implementation of Local
+
+This one stores on threads/tasks directly, much like the implementation in the standard library. This removes the need for garbage-collection of local storage, and should be more compatible with libraries that override threading, like gevent.
+
+Fixes #144.",Andrew Godwin,andrew@aeracode.org,GitHub,noreply@github.com,2020-03-19 16:15:30-06:00,21600,2020-03-19 16:15:30-06:00,21600,True,False,"['local.py', 'test_local.py']",['ee9ec761b57d4259962b306e02dc9a9c2416c8f0'],69,23,92,2,0.0,0.20833333333333334,0.0
+e2f04d9aaf20c3ea793de431f08360c3274996c1,Releasing 3.2.6,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-03-23 15:38:36-06:00,21600,2020-03-23 15:39:18-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['a0bbe901ffe19cd927219989b7125a920ea1e5c3'],1,9,10,2,,,
+e4367c571fd1833bda0b7ff0bd68d924916352da,"Prevent accidental reuse of storage between Locals
+
+Local was using attributes on Threads/Tasks to store its state,
+separated by the id() of the Local object. When locals were deleted and
+reused, new Locals would occasionally get the same ID as old ones and
+wrongly inherit their storage.
+
+This commit attacks this in two ways:
+ - Randomised suffixes for the attribute names in addition to IDs
+ - Deletion of storage dicts from all threads/tasks on Local deletion
+
+Thanks to the CPython developers for having a test for this I could
+borrow and use to find the problem!",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-03-24 10:36:06-06:00,21600,2020-03-24 10:36:06-06:00,21600,True,False,"['local.py', 'test_local.py']",['e2f04d9aaf20c3ea793de431f08360c3274996c1'],14,80,94,2,1.0,1.0,0.9761904761904762
+648dee0b7c7212129562ba60ca14752e04ccb03c,Releasing 3.2.7,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-03-24 10:40:06-06:00,21600,2020-03-24 10:40:06-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['e4367c571fd1833bda0b7ff0bd68d924916352da'],1,8,9,2,,,
+edd0570a4f6e46f0948afa5ef197a192bb95b7b7,"Fix memory leak in Local
+
+The _context_refs array of weak references was only freed
+when the whole Local object was deleted: even when the
+referenced objects weren't there anymore, the array of
+empty refs was still there.
+
+This is a problem in django where Local() objects are kept
+at the global scope in multiple places and never cleared.",Kevin Michel,kevin.michel@sereema.com,GitHub,noreply@github.com,2020-05-05 18:00:14+02:00,-7200,2020-05-05 10:00:14-06:00,21600,True,False,['local.py'],['648dee0b7c7212129562ba60ca14752e04ccb03c'],9,7,16,1,0.0,0.0,0.0
+d56b8fef2649f0dd0438f218022e6b03ea58cd4b,"Remove bdist_wheel from setup.cfg (#160)
+
+The package is Python 3 only, as such the wheel should not be marked as
+""universal"" because it does not support Python 2.
+
+https://wheel.readthedocs.io/en/stable/user_guide.html?highlight=universal#building-wheels
+
+> If your project contains no C extensions and is expected to work on
+> both Python 2 and 3, …",Jon Dufresne,jon.dufresne@gmail.com,GitHub,noreply@github.com,2020-05-25 01:17:18-07:00,25200,2020-05-25 09:17:18+01:00,-3600,True,False,['setup.cfg'],['edd0570a4f6e46f0948afa5ef197a192bb95b7b7'],3,0,3,1,,,
+723e5b97e836649df33e109f839a225c53110c63,"Remove executable bit from setup.py (#162)
+
+The file has no shebang, so it should not be executed directly.",Jon Dufresne,jon.dufresne@gmail.com,GitHub,noreply@github.com,2020-05-25 11:39:03-07:00,25200,2020-05-25 19:39:03+01:00,-3600,True,False,['setup.py'],['d56b8fef2649f0dd0438f218022e6b03ea58cd4b'],0,0,0,1,,,
+c2b9b021a8949c003eac4f509324fad7004eb1a4,"Move setup information to declarative setup.cfg (#161)
+
+Use a declarative syntax to avoid mixing code and configuration.
+Simplifies handling of long description and version by reducing some
+boilerplate.
+
+For details on this setuptools feature, see:
+https://setuptools.readthedocs.io/en/latest/setuptools.html#configuring-setup-using-setup-cfg-files
+
+Django made the same move to setup.cfg in:
+https://github.com/django/django/commit/85efc14a2edac532df1a9ad4dd9b6d4a4dcf583e
+
+The name argument remains in setup.py for compatibility with GitHub's
+dependency/security features. See:
+https://github.com/github/semantic/issues/562
+
+Additionally:
+
+- Add 'Programming Language :: Python :: 3 :: Only' trove classifier.
+- Remove unnecessary long_description_content_type from setup as
+  reStructuredText is the default.
+- Use HTTPs for GitHub URL in setup.
+- Add project URLs to setup.",Jon Dufresne,jon.dufresne@gmail.com,GitHub,noreply@github.com,2020-05-30 08:41:41-07:00,25200,2020-05-30 09:41:41-06:00,21600,True,False,"['setup.cfg', 'setup.py']",['723e5b97e836649df33e109f839a225c53110c63'],43,41,84,2,,,
+7016443f6245b759ec846a71491a0d6ae7a95961,"📝 Update references to app as callable in intro (#164)
+
+And update example.",Sebastián Ramírez,tiangolo@gmail.com,GitHub,noreply@github.com,2020-06-01 17:48:07+02:00,-7200,2020-06-01 09:48:07-06:00,21600,True,False,['introduction.rst'],['c2b9b021a8949c003eac4f509324fad7004eb1a4'],10,12,22,1,,,
+77a0fad225e15dd2e7e4b6f18d39b4b8ada4e124,"📝 Update ASGI spec: rewording, clarify flows, types (#165)",Sebastián Ramírez,tiangolo@gmail.com,GitHub,noreply@github.com,2020-06-01 17:53:09+02:00,-7200,2020-06-01 09:53:09-06:00,21600,True,False,['asgi.rst'],['7016443f6245b759ec846a71491a0d6ae7a95961'],47,53,100,1,,,
+f8428f83e022ca58547085e2a846d6b18c98dca3,"Update ASGI - HTTP - WebSocket sub-specs (#166)
+
+Rewording for consistency, referring to a single callable and making even directions explicit",Sebastián Ramírez,tiangolo@gmail.com,GitHub,noreply@github.com,2020-06-01 18:10:04+02:00,-7200,2020-06-01 10:10:04-06:00,21600,True,False,['www.rst'],['77a0fad225e15dd2e7e4b6f18d39b4b8ada4e124'],47,49,96,1,,,
+c4f3ae18339b80e5e862f90adfcecbd2deba15fb,Update ASGI sub-spec: Lifespan (#167),Sebastián Ramírez,tiangolo@gmail.com,GitHub,noreply@github.com,2020-06-01 18:11:17+02:00,-7200,2020-06-01 10:11:17-06:00,21600,True,False,['lifespan.rst'],['f8428f83e022ca58547085e2a846d6b18c98dca3'],19,20,39,1,,,
+b887a7b79b9a91cd96185dfb7ea35ee156bd9e07,Unpinned test dependencies. (#173),Carlton Gibson,carlton@noumenal.es,GitHub,noreply@github.com,2020-06-11 20:07:55+02:00,-7200,2020-06-11 20:07:55+02:00,-7200,True,False,"['.travis.yml', 'setup.cfg']",['c4f3ae18339b80e5e862f90adfcecbd2deba15fb'],2,3,5,2,,,
+4c725fa56ae31e45dc99192ac08a9c534107b236,Added FastAPI to Implementations (#168),Sebastián Ramírez,tiangolo@gmail.com,GitHub,noreply@github.com,2020-06-14 00:16:23+02:00,-7200,2020-06-13 16:16:23-06:00,21600,True,False,['implementations.rst'],['b887a7b79b9a91cd96185dfb7ea35ee156bd9e07'],0,10,10,1,,,
+3a7ba9283267ebb73d0909f724735af796553e30,"Propagated and restored contextvars in async_to_sync (#171)
+
+sync_to_async already makes sure that contextvars are properly
+propagated, but async_to_sync does not.
+
+In Django 3.1, this fixes the behavior of got_request_exception which
+would otherwise be called in a different context than before_request or
+after_request under the following circumstances:
+
+1. An ASGI request has been made
+2. There is at least one sync middleware",Markus Unterwaditzer,markus@unterwaditzer.net,GitHub,noreply@github.com,2020-06-15 18:25:05+02:00,-7200,2020-06-15 10:25:05-06:00,21600,True,False,"['sync.py', 'test_sync_contextvars.py']",['4c725fa56ae31e45dc99192ac08a9c534107b236'],19,64,83,2,1.0,1.0,1.0
+fd58c47c7b7b67a4419de08f900073333d01fc04,Releasing 3.2.8,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-06-15 10:31:13-06:00,21600,2020-06-15 10:31:13-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['3a7ba9283267ebb73d0909f724735af796553e30'],1,8,9,2,,,
+256a1fde869878c2b7231d6761b68bf128fa58b0,"Rewrote how context is propagated in AsyncToSync (#175)
+
+This avoids exception-related errors in downstream users (e.g. Django)",Markus Unterwaditzer,markus@unterwaditzer.net,GitHub,noreply@github.com,2020-06-16 22:17:16+02:00,-7200,2020-06-16 14:17:16-06:00,21600,True,False,['sync.py'],['fd58c47c7b7b67a4419de08f900073333d01fc04'],18,15,33,1,0.0,0.0,0.0
+eca0825c56350502954bab3ae07ce2e87c929eeb,Releasing 3.2.9,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-06-16 14:18:34-06:00,21600,2020-06-16 14:18:34-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['256a1fde869878c2b7231d6761b68bf128fa58b0'],1,7,8,2,,,
+3f3de1e1527a9f4d91306cda065012b87b1f7b4d,Fixed a crash in Local.__del__ due to buggy WeakSet impl (#176),Markus Unterwaditzer,markus@unterwaditzer.net,GitHub,noreply@github.com,2020-06-18 20:33:57+02:00,-7200,2020-06-18 12:33:57-06:00,21600,True,False,"['local.py', 'test_local.py']",['eca0825c56350502954bab3ae07ce2e87c929eeb'],5,27,32,2,1.0,1.0,1.0
+81205c788dd8f3e6a0fcb10ad3a97c6e7655743d,Releasing 3.2.10,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-06-18 12:44:42-06:00,21600,2020-06-18 12:44:42-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['3f3de1e1527a9f4d91306cda065012b87b1f7b4d'],1,7,8,2,,,
+3020b4a309033ad0b7041dda7712b0ed729e338f,"Fixed #177: Changed misleading ""http handshake""",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-06-19 10:14:19-06:00,21600,2020-06-19 10:14:19-06:00,21600,True,False,['www.rst'],['81205c788dd8f3e6a0fcb10ad3a97c6e7655743d'],1,1,2,1,,,
+d464ce6412727f329a35db3538adb422e97ad874,"Fix WSGI adapter encoding
+
+WSGI requires `latin-1` encoding for path strings, and ASGI operates with UTF-8. This fixes the adapter so it translates them correctly.",子休,AberSheeran@qq.com,GitHub,noreply@github.com,2020-07-15 00:40:49+08:00,-28800,2020-07-14 10:40:49-06:00,21600,True,False,"['wsgi.py', 'test_wsgi.py']",['3020b4a309033ad0b7041dda7712b0ed729e338f'],2,44,46,2,0.15625,1.0,1.0
+4e1cd89a224e4c8c4efc33c83e97ea2e5b718edd,Fixed #188: WWW spec titles were inconsistent,euri10,euri10@users.noreply.github.com,GitHub,noreply@github.com,2020-08-15 11:37:32-07:00,25200,2020-08-15 12:37:32-06:00,21600,True,False,['www.rst'],['d464ce6412727f329a35db3538adb422e97ad874'],2,4,6,1,,,
+3e475d2019d19731dd421dd2e75bd75f61e24584,Fixed anchor links in spec to be better,euri10,euri10@users.noreply.github.com,GitHub,noreply@github.com,2020-08-16 12:02:45-07:00,25200,2020-08-16 13:02:45-06:00,21600,True,False,['www.rst'],['4e1cd89a224e4c8c4efc33c83e97ea2e5b718edd'],4,6,10,1,,,
+1c9d06329dbd679a7c564b0652147855a721edb4,"Clarified ""Optional"" meaning (#190)
+
+This clarifies that optional implies the key is missing, not that the
+key is present with a value of say None (as optional means in the
+Python typing context).",Phil Jones,philip.graham.jones@googlemail.com,GitHub,noreply@github.com,2020-08-17 17:29:25+01:00,-3600,2020-08-17 10:29:25-06:00,21600,True,False,"['lifespan.rst', 'www.rst']",['3e475d2019d19731dd421dd2e75bd75f61e24584'],69,81,150,2,,,
+4ab9d8ea79bc202aa52ab4e71f315a65d025a377,Fixed #193: Bumped docs version to 3.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-09-07 10:37:07-06:00,21600,2020-09-07 10:37:27-06:00,21600,True,False,['conf.py'],['1c9d06329dbd679a7c564b0652147855a721edb4'],2,2,4,1,,,
+66a6e68af258d626f5004ef305255b3154e552d4,"Fixed #194: Made async_to_sync work inside a fork
+
+sync_to_async was keeping a threadlocal for the main event loop that was
+invalid, but still present, after a process fork. This makes
+async_to_sync check for the PID for that parent loop as well as the mere
+presence of it, fixing this problem and letting it make a new loop in
+the subprocess.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-09-11 11:26:04-06:00,21600,2020-09-11 11:26:04-06:00,21600,True,False,"['sync.py', 'test_sync.py']",['4ab9d8ea79bc202aa52ab4e71f315a65d025a377'],2,41,43,2,0.08333333333333333,0.08333333333333333,0.7083333333333334
+7becc9daca2628c46af1cb7e46b4c47c1ea27adf,"Making thread_sensitive=True the default
+
+This makes thread_sensitive=True the default behaviour for SyncToAsync.
+
+It's easy to run afoul of thread-sensitive code when dealing with
+databases or frameworks like Django, and while the penalty for having
+this on by default is just slightly worse performance, the penalty for
+having it off is very confusing bugs all over the place - so, to keep
+with the Django culture of safety first, it's best to default this on.
+
+Additionally, this allows thread_sensitive to be passed into the
+`sync_to_async` decorator, so if people are sure their code is safe and
+want to run it in its own thread for performance reasons, they can use
+`@sync_to_async(thread_sensitive=False)`.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-09-11 11:43:12-06:00,21600,2020-09-11 11:43:12-06:00,21600,True,False,"['README.rst', 'sync.py', 'test_sync.py']",['66a6e68af258d626f5004ef305255b3154e552d4'],18,44,62,3,1.0,1.0,1.0
+cc1877efc8bcf5b6e606eb5c50cfdcca1213c83a,Fix import sorting in previous commit.,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-09-11 11:49:50-06:00,21600,2020-09-11 11:49:50-06:00,21600,True,False,['test_sync.py'],['7becc9daca2628c46af1cb7e46b4c47c1ea27adf'],3,2,5,1,,,
+cfd82e48a2059ff93ce20b94e1755c455e3c3d29,Fix linting with unused import removal,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-09-16 15:35:02-06:00,21600,2020-09-16 15:35:02-06:00,21600,True,False,['test_sync.py'],['cc1877efc8bcf5b6e606eb5c50cfdcca1213c83a'],1,1,2,1,,,
+03b0dbb518e3bbf6c4083ae1e51bd6e2062fa503,"Clamped WsgiToAsgi response body using Content-Length value
+
+This makes it adhere correctly to this part of the WSGI spec. Fixes #195.",kmichel,kha.hem@gmail.com,GitHub,noreply@github.com,2020-09-17 01:21:38+02:00,-7200,2020-09-16 17:21:38-06:00,21600,True,False,"['wsgi.py', 'test_wsgi.py']",['cfd82e48a2059ff93ce20b94e1755c455e3c3d29'],0,143,143,2,0.02586206896551724,0.6293103448275862,0.9655172413793104
+3834d13a8f5da921bb5f8ca16ee66d353fdbdadb,Added rpc.py to Implementations (#198),Aber,me@abersheeran.com,GitHub,noreply@github.com,2020-10-01 04:43:02+08:00,-28800,2020-09-30 14:43:02-06:00,21600,True,False,['implementations.rst'],['03b0dbb518e3bbf6c4083ae1e51bd6e2062fa503'],0,11,11,1,,,
+e1e0dd9a900966b29345e6069c0fdbc9a449e97f,"Added ZeroCopy extension
+
+Adds a new ASGI extension spec to allow zero-copy (""sendfile"") options for sending HTTP response bodies.",Aber,me@abersheeran.com,GitHub,noreply@github.com,2020-10-01 05:55:58+08:00,-28800,2020-09-30 15:55:58-06:00,21600,True,False,['extensions.rst'],['3834d13a8f5da921bb5f8ca16ee66d353fdbdadb'],0,51,51,1,,,
+7dba5ff61313dfd1535de200590b9155abde20f0,Releasing 3.3.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-10-09 10:27:33-06:00,21600,2020-10-09 10:27:33-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['e1e0dd9a900966b29345e6069c0fdbc9a449e97f'],1,9,10,2,,,
+f3d14d941a503c45d277b5feedc21c9da404cc0f,Corrected a typo in the README,Felix Yan,felixonmars@archlinux.org,GitHub,noreply@github.com,2020-10-15 23:23:23+08:00,-28800,2020-10-15 09:23:23-06:00,21600,True,False,['README.rst'],['7dba5ff61313dfd1535de200590b9155abde20f0'],1,1,2,1,,,
+880f5b5a2fbaedb07d44a6191b36b921d2f741f8,Added a2wsgi to implementations,Aber,me@abersheeran.com,GitHub,noreply@github.com,2020-10-27 23:48:13+08:00,-28800,2020-10-27 09:48:13-06:00,21600,True,False,['implementations.rst'],['f3d14d941a503c45d277b5feedc21c9da404cc0f'],0,12,12,1,,,
+eabe149eb68160afa04de1f5eb4b3fd88d9ed81d,"Remove deprecated 'sudo: false' from Travis configuraiton
+
+https://blog.travis-ci.com/2018-11-19-required-linux-infrastructure-migration",Jon Dufresne,jon.dufresne@gmail.com,Carlton Gibson,carlton@noumenal.es,2020-11-01 10:37:43-08:00,28800,2020-11-01 20:40:58+01:00,-3600,True,False,['.travis.yml'],['880f5b5a2fbaedb07d44a6191b36b921d2f741f8'],3,0,3,1,,,
+5c249e818bd5e7acef957e236535098c3aff7b42,Document and test Python 3.9 support (#208),Jon Dufresne,jon.dufresne@gmail.com,GitHub,noreply@github.com,2020-11-01 11:41:54-08:00,28800,2020-11-01 12:41:54-07:00,25200,True,False,"['.travis.yml', 'setup.cfg']",['eabe149eb68160afa04de1f5eb4b3fd88d9ed81d'],0,2,2,2,,,
+24ff4dc9ed1c0838df302f812cbe8b4a8962ca32,"Update StatelessServer to use ASGI v3 application.  (#211)
+
+Adjusted StatelessServer to use ASGI 3 single-callable style",Luis Saavedra,571849+lsaavedr@users.noreply.github.com,GitHub,noreply@github.com,2020-11-09 12:22:34-03:00,10800,2020-11-09 08:22:34-07:00,25200,True,False,"['server.py', 'test_server.py']",['5c249e818bd5e7acef957e236535098c3aff7b42'],1,15,16,2,0.8571428571428571,1.0,0.5714285714285714
+46b769c39e57eac50e6df44eef1636a4ca7496dc,"Use GitHub actions
+
+This is intended to replace Travis CI",Carlton Gibson,carlton@noumenal.es,GitHub,noreply@github.com,2020-11-09 16:30:01+01:00,-3600,2020-11-09 08:30:01-07:00,25200,True,False,"['tests.yml', '.travis.yml', 'sync.py', 'test_compatibility.py', 'test_local.py', 'tox.ini']",['24ff4dc9ed1c0838df302f812cbe8b4a8962ca32'],50,86,136,6,,,
+318c9322d4f4dce3d0f501fed1bb28ebcc37d510,Fixed typo in test case docstring,Carlton Gibson,carlton@noumenal.es,GitHub,noreply@github.com,2020-11-09 18:08:22+01:00,-3600,2020-11-09 10:08:22-07:00,25200,True,False,['test_server.py'],['46b769c39e57eac50e6df44eef1636a4ca7496dc'],1,1,2,1,,,
+ee967d2e3be77bb4c5082542a538e1c77a37a031,Added change notes for v3.3.1.,Carlton Gibson,carlton.gibson@noumenal.es,Carlton Gibson,carlton.gibson@noumenal.es,2020-11-18 17:23:10+01:00,-3600,2020-11-18 17:23:10+01:00,-3600,True,False,['CHANGELOG.txt'],['318c9322d4f4dce3d0f501fed1bb28ebcc37d510'],0,6,6,1,,,
+3a0bdfbc206322b82d2aaf77852f7b6bc10c7385,"Stopped spinning in CurrentThreadExecutor.run_until_future()
+
+Rather that spinning on
+- check for work, non-blocking
+- check the future
+- sleep briefly
+
+We can register a done callback on the future, which will be called
+with the future itself as an arugment. Registering our task queue's
+`put()` method lets us use the future itself as a sentinal value.
+
+Now we can use `queue.get()` in blocking fashion. If we find the job
+is the future we're waiting on, we're done getting tasks and we
+return, otherwise we run the job and go back to blocking on
+`queue.get()` for more tasks.
+
+This noticeably cuts down on CPU usage in run_until_future().",Alejandro R. Sedeño,asedeno@mit.edu,GitHub,noreply@github.com,2020-11-19 12:04:14-05:00,18000,2020-11-19 10:04:14-07:00,25200,True,False,['current_thread_executor.py'],['ee967d2e3be77bb4c5082542a538e1c77a37a031'],13,8,21,1,1.0,1.0,0.0
+e14932bcc6c0287898ae2ba24d1f872a2c5aedc5,"Allowed for unix sockets in the ASGI scope
+
+As the server could be serving over a Unix socket the ``server`` ASGI
+scope value should allow the path (address) alone with the port as
+``None`` (as the socket has no port).",Phil Jones,philip.graham.jones@googlemail.com,GitHub,noreply@github.com,2020-11-22 21:26:34+00:00,0,2020-11-22 14:26:34-07:00,25200,True,False,['www.rst'],['3a0bdfbc206322b82d2aaf77852f7b6bc10c7385'],5,7,12,1,,,
+5b86d9684e1f3c28956fb0dfe8d4f4a427be8f87,"Copied unix socket usage to Websocket scope
+
+This was missed in e14932bcc6c0287898ae2ba24d1f872a2c5aedc5 but
+applies.",Phil Jones,philip.graham.jones@googlemail.com,GitHub,noreply@github.com,2020-12-24 18:03:51+00:00,0,2020-12-24 11:03:51-07:00,25200,True,False,['www.rst'],['e14932bcc6c0287898ae2ba24d1f872a2c5aedc5'],4,5,9,1,,,
+596ff2cda1dc37bce938703e285674a2b1dade85,"Removed typo from invalid character
+
+There was an invalid character in `missing` that showed up as `miss ing`.",James Timmins,jameshtimmins@gmail.com,GitHub,noreply@github.com,2021-01-11 18:27:51-08:00,28800,2021-01-11 19:27:51-07:00,25200,True,False,['www.rst'],['5b86d9684e1f3c28956fb0dfe8d4f4a427be8f87'],1,1,2,1,,,
+6ac90bce27c83ec037d5375bc6f4f3ad18ec5097,"Added support for context-specific thread pool executors
+
+Prior to this commit, there was only 1 global per-process
+ThreadPoolExecutor used when thread_sensitive=True.
+
+This results in tasks mixing sync/async effectively blocking once they
+have contention for the sync thread.
+
+This commit allows for the use of a task-specific thread executor. The
+result is that async/sync mixed mode call chains will use exactly 2
+threads in most cases:
+
+* 1 asyncio thread (running the event loop)
+* 1 sync thread (running any sync tasks)
+
+This now guarantees that a request chain, for example, will re-use the
+same sync thread.",Allan Feldman,6374032+a-feld@users.noreply.github.com,GitHub,noreply@github.com,2021-01-12 12:06:39-05:00,18000,2021-01-12 10:06:39-07:00,25200,True,False,"['README.rst', 'sync.py', 'test_sync.py']",['596ff2cda1dc37bce938703e285674a2b1dade85'],7,93,100,3,0.8444444444444444,0.1111111111111111,0.5555555555555556
+cf99cb74f90f179373d09930ca89cdb23098d5a4,"Added typing for ASGI Scopes, messages, and frameworks
+
+These are useful for users of asgiref to type check their ASGI
+usage. It also serves as the reference typing for the ASGI
+Specification.
+
+This does not include typing for the actual ASGI functions (yet).",Phil Jones,philip.graham.jones@googlemail.com,GitHub,noreply@github.com,2021-01-17 00:59:39+00:00,0,2021-01-16 17:59:39-07:00,25200,True,False,"['typing.py', 'setup.cfg']",['6ac90bce27c83ec037d5375bc6f4f3ad18ec5097'],0,209,209,2,1.0,1.0,0.3333333333333333
+33be2dff4b0f39d6547cd4701348541c6b578df1,Fixed type annotations when run with mypy on Python 3.6,Thomas Grainger,tagrain@gmail.com,GitHub,noreply@github.com,2021-01-23 17:44:45+00:00,0,2021-01-23 10:44:45-07:00,25200,True,False,['typing.py'],['cf99cb74f90f179373d09930ca89cdb23098d5a4'],5,6,11,1,,,
+96cbb8c9d0ad330f11657add92e0d7cc96aa8659,"Added a py.typed marker file for PEP 561 compliance
+
+This allows the new type hints for the ASGI scopes and messages to be
+used. Without this mypy ignores anything from asgiref.",Phil Jones,philip.graham.jones@googlemail.com,GitHub,noreply@github.com,2021-01-24 19:05:14+00:00,0,2021-01-24 12:05:14-07:00,25200,True,False,"['MANIFEST.in', 'py.typed']",['33be2dff4b0f39d6547cd4701348541c6b578df1'],0,1,1,2,,,
+2b6174c517e1b0f46b456d2fa5984ef2e1801684,"Internalized thread sensitive context management in asgiref/sync.py
+
+Rather than using an external context management function, this commit
+updates the thread_sensitive mode to reference an internal contextvar.
+
+This approach mainly allows for the thread executor to be shut down when
+the context exits, rather than relying on the thread pool shutting down
+when going out of scope.
+
+This approach also has other advantages:
+
+* Context variable management cannot be broken by omitting the
+  current_context_func arg
+
+* This approach opens the door to more complex management techniques
+  such as enforcing a thread pool limit.",Allan Feldman,6374032+a-feld@users.noreply.github.com,GitHub,noreply@github.com,2021-02-01 13:48:28-05:00,18000,2021-02-01 11:48:28-07:00,25200,True,False,"['README.rst', 'sync.py', 'test_sync.py', 'test_sync_contextvars.py']",['96cbb8c9d0ad330f11657add92e0d7cc96aa8659'],51,120,171,4,0.9428571428571428,0.9428571428571428,1.0
+d35966bf3058b358a3c84da129f9aa2d6ee62a13,"Typechecked annotations (and droped support for python 3.5)
+
+Also adds mypy to enforce typing",Thomas Grainger,tagrain@gmail.com,GitHub,noreply@github.com,2021-02-04 18:21:36+00:00,0,2021-02-04 11:21:36-07:00,25200,True,False,"['tests.yml', 'README.rst', 'local.py', 'sync.py', 'timeout.py', 'conf.py', 'setup.cfg', 'setup.py', 'tox.ini']",['2b6174c517e1b0f46b456d2fa5984ef2e1801684'],27,89,116,9,1.0,1.0,1.0
+3b50d890074779a99e34f65b381508de4861a767,Releasing 3.3.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2020-11-09 08:55:10-07:00,25200,2021-02-04 11:31:20-07:00,25200,True,False,['__init__.py'],['d35966bf3058b358a3c84da129f9aa2d6ee62a13'],1,1,2,1,,,
+cc8f04c43f174c7ece2eb3f9591fdcb11e01a208,Fix typing error with contextvars,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-02-04 11:31:43-07:00,25200,2021-02-04 11:31:43-07:00,25200,True,False,['sync.py'],['3b50d890074779a99e34f65b381508de4861a767'],2,2,4,1,,,
+e15ad732b43906a4259f44f9c78fcbab5d25ed2f,Try even more serious way to hide contextvars from 3.6,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-02-04 11:39:54-07:00,25200,2021-02-04 11:39:54-07:00,25200,True,False,['sync.py'],['cc8f04c43f174c7ece2eb3f9591fdcb11e01a208'],4,5,9,1,,,
+9734d478f19734ae9168490b81dcb29ffd29ce6a,Fix lint error,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-02-04 11:41:53-07:00,25200,2021-02-04 11:43:42-07:00,25200,True,False,['sync.py'],['e15ad732b43906a4259f44f9c78fcbab5d25ed2f'],1,1,2,1,,,
+7aa8d7e16c6901d42e9efb50f155515b6f049e5f,Defined SyncToAsync.thread_sensitive_context type,Thomas Grainger,tagrain@gmail.com,GitHub,noreply@github.com,2021-02-04 19:06:22+00:00,0,2021-02-04 12:06:22-07:00,25200,True,False,['sync.py'],['9734d478f19734ae9168490b81dcb29ffd29ce6a'],4,6,10,1,,,
+95b8a15ed54b60264590579952b5261cad0f040b,"Add pyupgrade pre-commit config
+
+Also configure it to run as part of tox checks, add some Black config",Thomas Grainger,tagrain@gmail.com,GitHub,noreply@github.com,2021-02-09 00:50:18+00:00,0,2021-02-08 17:50:18-07:00,25200,True,False,"['.pre-commit-config.yaml', 'current_thread_executor.py', 'local.py', 'server.py', 'sync.py', 'timeout.py', 'conf.py', 'setup.py', 'test_wsgi.py', 'tox.ini']",['7aa8d7e16c6901d42e9efb50f155515b6f049e5f'],42,73,115,10,,,
+6469d0f3486dae0b6229e12d32ae6695600ed3ec,"Added reason to the WebSocket close (#235)
+
+This is allowed as per RFC 6455 but previously not supported in
+ASGI. This allows servers/applications to use the reason if desired.",Phil Jones,philip.graham.jones@googlemail.com,GitHub,noreply@github.com,2021-02-09 00:50:53+00:00,0,2021-02-08 17:50:53-07:00,25200,True,False,"['typing.py', 'www.rst']",['95b8a15ed54b60264590579952b5261cad0f040b'],2,8,10,2,,,
+7921bf04dfa71cebc9294e8f06936cdb63166674,Added type checks for functions passed to async_to_sync/sync_to_async,Adam Johnson,me@adamj.eu,GitHub,noreply@github.com,2021-02-12 04:59:33+00:00,0,2021-02-11 21:59:33-07:00,25200,True,False,"['CHANGELOG.txt', 'sync.py', 'test_sync.py']",['6469d0f3486dae0b6229e12d32ae6695600ed3ec'],0,65,65,3,0.9411764705882353,0.9411764705882353,0.8823529411764706
+a528275e424eb31067250c14be2a88ebf797ea52,Added test to ensure async_to_sync works in except,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-02-20 16:55:16-07:00,25200,2021-02-20 16:55:16-07:00,25200,True,False,['test_sync.py'],['7921bf04dfa71cebc9294e8f06936cdb63166674'],0,18,18,1,1.0,1.0,1.0
+9aae49cb14000e15e1d38003b32874b930d8f6a5,"Rename ""master"" to ""main""",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-03-06 11:22:19-07:00,25200,2021-03-06 11:22:19-07:00,25200,True,False,['tests.yml'],['a528275e424eb31067250c14be2a88ebf797ea52'],1,1,2,1,,,
+b3257f6ca844ddb303f4d10f5dd66d86ecf43200,"Add parameterization to executor
+
+Allows users to pass in an optional executor to SyncToAsync to override the default.",Joshua Haertel,josh.haertel@gmail.com,GitHub,noreply@github.com,2021-03-13 11:22:51-07:00,25200,2021-03-13 11:22:51-07:00,25200,True,False,"['sync.py', 'test_sync.py']",['9aae49cb14000e15e1d38003b32874b930d8f6a5'],6,62,68,2,0.0,0.5476190476190477,0.35714285714285715
+c1d3d97d212c6e6ba1c29905f38fa611c7269779,"Clarify response header capitalisation
+
+We don't actually REQUIRE lowercase, it's just a nice convention to have. Some rare clients do, actually, care about case, so carve out a best-effort channel for that.",Andrew Godwin,andrew@aeracode.org,GitHub,noreply@github.com,2021-03-23 15:44:15-06:00,21600,2021-03-23 15:44:15-06:00,21600,True,False,['www.rst'],['b3257f6ca844ddb303f4d10f5dd66d86ecf43200'],1,2,3,1,,,
+fef906941fbb1c4ac4872e017c24e73b3d08a6b7,"Fix second lowercase mention
+
+Same reasoning as c1d3d97d212c6e6ba1c29905f38fa611c7269779",Andrew Godwin,andrew@aeracode.org,GitHub,noreply@github.com,2021-03-23 16:01:09-06:00,21600,2021-03-23 16:01:09-06:00,21600,True,False,['www.rst'],['c1d3d97d212c6e6ba1c29905f38fa611c7269779'],3,5,8,1,,,
+95e654b1a559ce58f6b0a34d534c3b7f3f3f0005,"Fixed #247: CancelledError was over-propagating
+
+A change during our linter update resulted in SyncToAsync's exception
+handling changing from `except:` to `except Exception:`, which actually
+excludes CancelledError as it inherits from `BaseException`, not
+`Exception`. This fixes it so that raising CancelledError does not
+mysteriously propagate to all future calls.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-04-05 10:50:29-06:00,21600,2021-04-05 10:50:29-06:00,21600,True,False,['sync.py'],['fef906941fbb1c4ac4872e017c24e73b3d08a6b7'],1,1,2,1,,,
+505b55dec078fc21b1a44030855249efa3b7e75b,"Move more things to BaseException
+
+I don't see a reason these need to be Exception rather than
+BaseException, so lowering them down to check the base class instead.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-04-05 10:54:56-06:00,21600,2021-04-05 10:54:56-06:00,21600,True,False,['sync.py'],['95e654b1a559ce58f6b0a34d534c3b7f3f3f0005'],2,2,4,1,,,
+5f2cf5ca988fa18b57076a1f9bfa2469ebc6be2f,Releasing 3.3.2,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-04-05 10:58:23-06:00,21600,2021-04-05 10:58:23-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['505b55dec078fc21b1a44030855249efa3b7e75b'],3,13,16,2,,,
+34d1602c90ff1f5f0ca70919bc9c6a268285f80a,Add release instructions to README,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-04-05 13:34:02-06:00,21600,2021-04-05 13:34:11-06:00,21600,True,False,['README.rst'],['5f2cf5ca988fa18b57076a1f9bfa2469ebc6be2f'],0,12,12,1,,,
+bfc85d6e19670320a6cc1cfaa320887fd0b48213,"Fixed type checks for functions passed to async_to_sync/sync_to_async
+
+On Python < 3.8 a functool.partial is not detected as async function,
+which is due to a bug in inspect module, see https://bugs.python.org/issue33261
+
+This commit adds a proper type check for earlier Python versions and fixes #251.",Eugene,junta.kristobal@gmail.com,GitHub,noreply@github.com,2021-04-06 18:33:37+03:00,-10800,2021-04-06 09:33:37-06:00,21600,True,False,"['sync.py', 'test_sync.py']",['34d1602c90ff1f5f0ca70919bc9c6a268285f80a'],2,58,60,2,1.0,1.0,1.0
+07bffa4d017629ca472f67821a7984930aa6e08b,Releasing 3.3.3,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-04-06 09:39:00-06:00,21600,2021-04-06 09:39:00-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['bfc85d6e19670320a6cc1cfaa320887fd0b48213'],1,8,9,2,,,
+d0ce78b1cd5640d902c6d9123fcddade63912962,"Switch async_to_sync type error to a warning
+
+Detecting if a function is async in Python has a lot of false
+negatives, so this is a lot safer while async code we call all makes
+sure it has the coroutinefunction flag set.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-04-06 12:26:38-06:00,21600,2021-04-06 12:26:38-06:00,21600,True,False,"['sync.py', 'test_sync.py']",['07bffa4d017629ca472f67821a7984930aa6e08b'],7,10,17,2,,,
+4b10ca000ffdde78266f054d226c7a2892ee01b4,Releasing 3.3.4,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-04-06 12:28:23-06:00,21600,2021-04-06 12:28:23-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['d0ce78b1cd5640d902c6d9123fcddade63912962'],1,8,9,2,,,
+35919960cda726fc3c11e04eff2ee6a5c34c3159,"Add missed changelog notes for 3.3.2 (#255)
+
+From #233.",Adam Johnson,me@adamj.eu,GitHub,noreply@github.com,2021-04-07 18:28:20+01:00,-3600,2021-04-07 11:28:20-06:00,21600,True,False,['CHANGELOG.txt'],['4b10ca000ffdde78266f054d226c7a2892ee01b4'],0,3,3,1,,,
+d6ad948055c284973789d43fce78c094abed9813,Use tox-py in CI,Adam Johnson,me@adamj.eu,GitHub,noreply@github.com,2021-04-17 17:52:51+01:00,-3600,2021-04-17 10:52:51-06:00,21600,True,False,['tests.yml'],['35919960cda726fc3c11e04eff2ee6a5c34c3159'],4,6,10,1,,,
+83d482340b2be2ba5bb5914dce85e260d05319ae,"Fix deprecation warnings for python 3.10
+
+asyncio.get_event_loop, asyncio.ensure_future, asyncio.wait and asyncio.gather all have warnings in 3.10 to use them in ways that have been possible since 3.7, so this updates the codebase to use the new ways for 3.7+ and retain a compatibility layer for 3.6 for the time being.",vaartis,vaartis@kotobank.ch,GitHub,noreply@github.com,2021-05-22 07:02:22+03:00,-10800,2021-05-21 22:02:22-06:00,21600,True,False,"['compatibility.py', 'server.py', 'sync.py', 'test_sync.py', 'test_sync_contextvars.py', 'tox.ini']",['d6ad948055c284973789d43fce78c094abed9813'],16,45,61,6,0.45454545454545453,0.9090909090909091,0.9090909090909091
+d1ee83f29dd25831e78ddd20f2bd0779e22b896e,"Fixed type hints for sync_to_async()
+
+Use `@overload` to specify the two different sets of types for `sync_to_async()`. This prevents any errors in the example shown in #254.",Adam Johnson,me@adamj.eu,GitHub,noreply@github.com,2021-05-22 18:19:41+01:00,-3600,2021-05-22 11:19:41-06:00,21600,True,False,['sync.py'],['83d482340b2be2ba5bb5914dce85e260d05319ae'],3,21,24,1,1.0,1.0,0.5
+cd15242b12c85c529ef1cb0811ef5d62768b85f6,Improved coverage on same-header keys,euri10,euri10@users.noreply.github.com,GitHub,noreply@github.com,2021-05-30 19:19:25+02:00,-7200,2021-05-30 11:19:25-06:00,21600,True,False,['test_wsgi.py'],['d1ee83f29dd25831e78ddd20f2bd0779e22b896e'],2,5,7,1,0.0,1.0,1.0
+13d0b82a505a753ef116e11b62a6dfcae6a80987,Raise an error on thread-sensitive deadlocks,Samantha Hughes,shughes-uk@users.noreply.github.com,GitHub,noreply@github.com,2021-05-30 23:00:26-07:00,25200,2021-05-31 00:00:26-06:00,21600,True,False,"['sync.py', 'test_sync.py']",['cd15242b12c85c529ef1cb0811ef5d62768b85f6'],0,42,42,2,0.7037037037037037,0.7037037037037037,0.7037037037037037
+d44f63e0fe23f91010b969fa9a789c932bac6ec1,"Fixed typo on README
+
+Fixed misspelling of ""crucially"" on the README.",Marcelo Trylesinski,marcelotryle@gmail.com,GitHub,noreply@github.com,2021-06-26 18:33:11+02:00,-7200,2021-06-26 10:33:11-06:00,21600,True,False,['README.rst'],['13d0b82a505a753ef116e11b62a6dfcae6a80987'],1,1,2,1,,,
+7c24756d80b258a30947a3ec184942940d8e7eb5,Fixed extensions type on HTTPScope and WebsocketScope,Marcelo Trylesinski,marcelotryle@gmail.com,GitHub,noreply@github.com,2021-06-26 18:43:35+02:00,-7200,2021-06-26 10:43:35-06:00,21600,True,False,['typing.py'],['d44f63e0fe23f91010b969fa9a789c932bac6ec1'],2,2,4,1,,,
+2843f67aab31e6c708c114630a446ad795014a0a,"Renamed Websocket* types to WebSocket*
+
+This matches our usage of the noun elsewhere in specs, and the official spelling.",Marcelo Trylesinski,marcelotryle@gmail.com,GitHub,noreply@github.com,2021-06-27 22:19:18+02:00,-7200,2021-06-27 14:19:18-06:00,21600,True,False,"['_pep562.py', 'typing.py', 'test_deprecated_types.py', 'tox.ini']",['7c24756d80b258a30947a3ec184942940d8e7eb5'],21,172,193,4,1.0,1.0,1.0
+97a44dbb45141dc6760e150a6cb33a9da3008908,Fixed mis-matching isort and black configuration,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-06-27 14:25:07-06:00,21600,2021-06-27 14:25:07-06:00,21600,True,False,"['typing.py', 'setup.cfg']",['2843f67aab31e6c708c114630a446ad795014a0a'],3,15,18,2,,,
+cc7b61881f2c1ea0d01bc77d83afa96aa15906d8,"Leave flake8 on 119 chars
+
+It cares about docstrings whereas Black doesn't, so this is a happy
+medium.",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-06-27 14:28:09-06:00,21600,2021-06-27 14:28:09-06:00,21600,True,False,['setup.cfg'],['97a44dbb45141dc6760e150a6cb33a9da3008908'],1,1,2,1,,,
+b1085d87568db4408dc44eab1ec791d9e69be43a,Releasing 3.4.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-06-27 14:33:37-06:00,21600,2021-06-27 14:33:37-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['cc7b61881f2c1ea0d01bc77d83afa96aa15906d8'],1,22,23,2,,,
+6b5dba4834bc4d6410f63d8b2eaf1359b7ad7f75,Add makefile for easy releases,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-06-27 16:15:09-06:00,21600,2021-06-27 16:15:09-06:00,21600,True,False,['Makefile'],['b1085d87568db4408dc44eab1ec791d9e69be43a'],0,8,8,1,,,
+e8797d47f4006e4e817fda507ec1eacfed4faf60,Fix deadlock detection failing during exceptions,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-06-30 13:02:18-06:00,21600,2021-06-30 13:02:18-06:00,21600,True,False,"['sync.py', 'test_sync.py']",['6b5dba4834bc4d6410f63d8b2eaf1359b7ad7f75'],18,43,61,2,0.8823529411764706,0.8823529411764706,0.8823529411764706
+c8975426fb9a9e0a431b4d93b53e70c3316e8e0e,Releasing 3.4.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-07-01 10:16:44-06:00,21600,2021-07-01 10:16:44-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['e8797d47f4006e4e817fda507ec1eacfed4faf60'],1,8,9,2,,,
+c9d6d1ae742307e03d1072630c030123e0c2ad99,Fix release makefile in all-clean situation,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-07-01 10:17:55-06:00,21600,2021-07-01 10:17:55-06:00,21600,True,False,['Makefile'],['c8975426fb9a9e0a431b4d93b53e70c3316e8e0e'],1,1,2,1,,,
+6d19d453347ccb13b5cc8998d18b1a7f94ac523c,"Added TLS specification
+
+This adds a TLS ASGI extension designed to wrap around other extensions and provide cipher and certificate information.",jonfoster,jon@jon-foster.co.uk,GitHub,noreply@github.com,2021-07-10 18:05:17+01:00,-3600,2021-07-10 11:05:17-06:00,21600,True,False,"['extensions.rst', 'index.rst', 'tls.rst', 'tls.rst']",['c9d6d1ae742307e03d1072630c030123e0c2ad99'],0,209,209,4,,,
+177777accd219fca99823f78454346c4abf28547,Fixed `async_to_async` typo,Alejandro R. Sedeño,asedeno@mit.edu,GitHub,noreply@github.com,2021-07-15 12:37:01-04:00,14400,2021-07-15 10:37:01-06:00,21600,True,False,['test_sync.py'],['6d19d453347ccb13b5cc8998d18b1a7f94ac523c'],2,2,4,1,,,
+213ee0fb5727cbd658e1a3bb305c31c7c677c771,"New sync_to_async tests, one of which triggers a deadlock
+
+In these tests, we are waiting on a mulitprocessing.Event to be set,
+with the wait in `sync_to_async()`.
+
+The event is being set in an `asyncio.Task` that sleeps and then calls
+set, also in `sync_to_async()`. This allows us to kick off the process
+that would `set()` the event in advance of `wait()`ing for the event,
+as the event might be triggered by some consumer event.
+
+If both `sync_to_async()` calls are `thread_sensitive=True`, then
+before `await sync_to_async(event.set)()` can run `event.set()`,
+`sync_to_async(event.wait)()` has consumed the thread.
+
+asgiref.timeout is used to get us out of the deadlock so the tests can
+run to completion, and in the case of Timeout we `set()` the event to
+release the `wait()`.
+
+Finally, we await on the setting Task regardless of whether or not
+there was a timeout.",Alejandro R. Sedeño,asedeno@mit.edu,GitHub,noreply@github.com,2021-07-15 12:42:35-04:00,14400,2021-07-15 10:42:35-06:00,21600,True,False,['test_sync.py'],['177777accd219fca99823f78454346c4abf28547'],0,73,73,1,1.0,1.0,1.0
+4841c13285944cef87e120e23e764c4de2bbd511,Improved docs - Starlette supports WebSockets,Radosław Piliszek,radoslaw.piliszek@gmail.com,GitHub,noreply@github.com,2021-08-08 19:10:36+02:00,-7200,2021-08-08 11:10:36-06:00,21600,True,False,['implementations.rst'],['213ee0fb5727cbd658e1a3bb305c31c7c677c771'],1,1,2,1,,,
+f53fbef809e6b75076e03595efa865db04dbeaeb,"Decide current_task method to use at import time
+
+Saves 1 hasattr call per usage of Local.__getattr__",Keryn Knight,keryn@kerynknight.com,GitHub,noreply@github.com,2021-08-16 16:21:17+01:00,-3600,2021-08-16 09:21:17-06:00,21600,True,False,['sync.py'],['4841c13285944cef87e120e23e764c4de2bbd511'],6,4,10,1,0.0,0.0,0.0
+b3a65e34e9f445a1ccc234282deedafe4b8b5de2,Removed class variable which has been unused since a0bbe90,Keryn Knight,keryn@kerynknight.com,GitHub,noreply@github.com,2021-08-18 15:12:01+01:00,-3600,2021-08-18 08:12:01-06:00,21600,True,False,['local.py'],['f53fbef809e6b75076e03595efa865db04dbeaeb'],2,0,2,1,,,
+dfe87b2633d111f4f67c2cdb29a8c1ebe2eb8dae,Fixed #292: Use get_event_loop in class-level code,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2021-08-18 08:19:53-06:00,21600,2021-08-18 08:20:12-06:00,21600,True,False,['sync.py'],['b3a65e34e9f445a1ccc234282deedafe4b8b5de2'],1,3,4,1,,,
+c758984f4ab4864ac5787ef90d03b3589b2bcb90,"Move current_task import choice to module definition time
+
+Saves 1 hasattr call per usage of asgiref.timeout.current_task, and the same on Local.__getattr__/__setattr__ (which depends indirectly on SyncToAsync.get_current_task)
+
+Note that the module level variable used in the timeout module has to be aliased to another name, because `current_task` is already in use by the public function name.",Keryn Knight,keryn@kerynknight.com,GitHub,noreply@github.com,2021-08-28 21:40:08+01:00,-3600,2021-08-28 14:40:08-06:00,21600,True,False,"['compatibility.py', 'sync.py', 'timeout.py']",['dfe87b2633d111f4f67c2cdb29a8c1ebe2eb8dae'],9,6,15,3,0.0,0.0,0.0
+7bc055c0883db13ca8622e11ab116d0bd180acaf,Update implementations.rst (#295),Adam Hopkins,adam@amhopkins.com,GitHub,noreply@github.com,2021-09-06 13:25:34+03:00,-10800,2021-09-06 11:25:34+01:00,-3600,True,False,['implementations.rst'],['c758984f4ab4864ac5787ef90d03b3589b2bcb90'],0,9,9,1,,,
+4364f9b4bb052d9ec54b806867fd859b07c39186,"Changed how StatelessServer handles event loops
+
+Co-authored-by: bright.hsu <bright.hsu@tdsc.com.tw>",bright2227,64823610+bright2227@users.noreply.github.com,GitHub,noreply@github.com,2021-09-18 02:58:09+08:00,-28800,2021-09-17 12:58:09-06:00,21600,True,False,"['server.py', 'test_server.py']",['7bc055c0883db13ca8622e11ab116d0bd180acaf'],8,146,154,2,1.0,1.0,0.7849462365591398
+6689c0a1e820a5c32532f069e945da8230d808ad,"Added stacklevel to warning in AsyncToSync.
+
+Outputs the line from the calling code when printing the warning, which makes it
+easier to track down the problem without re-running with `-Werror`.",Carlton Gibson,carlton.gibson@noumenal.es,Carlton Gibson,carlton.gibson@noumenal.es,2021-10-14 09:20:42+02:00,-7200,2021-10-14 09:21:05+02:00,-7200,True,False,['sync.py'],['4364f9b4bb052d9ec54b806867fd859b07c39186'],1,3,4,1,0.0,0.0,0.0
+02fecb6046bb5ec0dbbad00ffcd2043e893fcea5,"Drop Python 3.6 (#307)
+
+Python 3.6 is now EOL, and we had to do a lot of work to support it, so this cleans a lot up.",Andrew Chen Wang,60190294+Andrew-Chen-Wang@users.noreply.github.com,GitHub,noreply@github.com,2021-12-27 12:46:22-05:00,18000,2021-12-27 10:46:22-07:00,25200,True,False,"['tests.yml', '.pre-commit-config.yaml', 'README.rst', '_pep562.py', 'compatibility.py', 'sync.py', 'timeout.py', 'typing.py', 'setup.cfg', 'test_sync.py', 'test_sync_contextvars.py', 'tox.ini']",['6689c0a1e820a5c32532f069e945da8230d808ad'],189,55,244,12,0.2727272727272727,0.2727272727272727,0.3181818181818182
+2eda55127a82618f83bb54788fecd239babb86ce,"Added testing for Python 3.10.
+
+This also fixes deprecation warnings in tests/test_server.py.",Mariusz Felisiak,felisiak.mariusz@gmail.com,Mariusz Felisiak,felisiak.mariusz@gmail.com,2022-01-14 08:29:48+01:00,-3600,2022-01-14 20:37:52+01:00,-3600,True,False,"['tests.yml', 'setup.cfg', 'test_server.py']",['02fecb6046bb5ec0dbbad00ffcd2043e893fcea5'],4,8,12,3,1.0,1.0,1.0
+b2e1c9dfdef212e69fc00adc8c83ffbc6fbac73c,"Fixed pytest_asyncio deprecation warning.
+
+This fixes pytest_asyncio's deprecation warning: ""The 'asyncio_mode'
+default value will change to 'strict' in future, please explicitly use
+'asyncio_mode=strict' or 'asyncio_mode=auto' in pytest configuration
+file.""",Mariusz Felisiak,felisiak.mariusz@gmail.com,Mariusz Felisiak,felisiak.mariusz@gmail.com,2022-01-14 09:00:04+01:00,-3600,2022-01-14 20:37:52+01:00,-3600,True,False,['setup.cfg'],['2eda55127a82618f83bb54788fecd239babb86ce'],0,1,1,1,,,
+8b615134bd481c4262356ad3194fbeff9240d0d3,"Releasing 3.5.0
+
+(Includes scheduled removal of the old Websocket types)",Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2022-01-22 09:49:00-07:00,25200,2022-01-22 09:54:07-07:00,25200,True,False,"['CHANGELOG.txt', '__init__.py', 'typing.py', 'test_deprecated_types.py']",['b2e1c9dfdef212e69fc00adc8c83ffbc6fbac73c'],62,14,76,4,0.0,0.0,0.0
+3554e05def93e086690d19e9f38e593f1b5b7b61,Fix allowed values for `spec_version` on WebSocket and HTTP Connection scopes (#312),Marcelo Trylesinski,marcelotryle@gmail.com,GitHub,noreply@github.com,2022-01-25 00:44:41+01:00,-3600,2022-01-24 16:44:41-07:00,25200,True,False,['www.rst'],['8b615134bd481c4262356ad3194fbeff9240d0d3'],4,4,8,1,,,
+464553a72214ccd60bd4fa5be5ddafd6dea002e1,"Rewrote multiprocessing test to use no local functions
+
+Makes it pass when when multiprocessing uses spawn to start processes (like under Mac OS).",Carl Friedrich Bolz-Tereick,cfbolz@gmx.de,GitHub,noreply@github.com,2022-02-05 19:08:45+01:00,-3600,2022-02-05 11:08:45-07:00,25200,True,False,['test_sync.py'],['3554e05def93e086690d19e9f38e593f1b5b7b61'],20,21,41,1,0.0,0.0,0.0
+cde961b13c69b90216c4c1c81d1ad1ca1bc22b48,"Fixed a typographical error
+
+Fix Version History and Copyright headings level under Lifespan Protocol chapter.",RyomaHan,ryomahan1996@gmail.com,GitHub,noreply@github.com,2022-03-14 07:41:40+08:00,-28800,2022-03-13 17:41:40-06:00,21600,True,False,['lifespan.rst'],['464553a72214ccd60bd4fa5be5ddafd6dea002e1'],2,2,4,1,,,
+d451a724c93043b623e83e7f86743bbcd9a05c45,"Remove `SOCK_NONBLOCK` from socket creation on tests (#321)
+
+This fixes running tests on Mac OS X, which lacks the `SOCK_NONBLOCK` socket flag creation.",Rafael Fernández López,ereslibre@kde.org,GitHub,noreply@github.com,2022-04-01 16:47:46+02:00,-7200,2022-04-01 08:47:46-06:00,21600,True,False,"['.pre-commit-config.yaml', 'test_server.py']",['cde961b13c69b90216c4c1c81d1ad1ca1bc22b48'],3,5,8,2,1.0,1.0,0.5
+add576498d1e0a7eea8d70b08418d77fecd92f56,"Preserve CurrentThreadExecutor across create_task (#320)
+
+Fixes #214.",Anders Kaseorg,andersk@mit.edu,GitHub,noreply@github.com,2022-04-18 21:49:36-07:00,25200,2022-04-18 22:49:36-06:00,21600,True,False,"['sync.py', 'test_sync.py']",['d451a724c93043b623e83e7f86743bbcd9a05c45'],1,19,20,2,0.5,0.5,0.5
+12f6355d50c271aab821a37dbf2cde5863cc2643,Releasing 3.5.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2022-04-30 15:16:11-06:00,21600,2022-04-30 15:16:11-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['add576498d1e0a7eea8d70b08418d77fecd92f56'],1,8,9,2,,,
+ab7379a59f9b8a43c4239553bcb35f98a83f4903,"Don't warn 'non-async-marked callable' for async callable instance (#325)
+
+Look for `__call__` methods on the awaitable as well as checking it directly.",Petter Friberg,petter@5monkeys.se,GitHub,noreply@github.com,2022-05-10 16:59:51+02:00,-7200,2022-05-10 08:59:51-06:00,21600,True,False,"['sync.py', 'test_sync.py']",['12f6355d50c271aab821a37dbf2cde5863cc2643'],1,30,31,2,0.7368421052631579,0.7368421052631579,0.7368421052631579
+df1e582f530d9c9b49e54cef37079497c54ec504,"Disallow async callable class instances as callable for `sync.SyncToAsync` (#328)
+
+i.e. passing an instance defining `async def __call__(...)` to `sync.SyncToAsync` will raise a `TypeError`",Petter Friberg,petter_friberg@hotmail.com,GitHub,noreply@github.com,2022-05-10 21:32:22+02:00,-7200,2022-05-10 13:32:22-06:00,21600,True,False,"['sync.py', 'test_sync.py']",['ab7379a59f9b8a43c4239553bcb35f98a83f4903'],1,17,18,2,0.6923076923076923,0.6923076923076923,0.6923076923076923
+7794c2a0ffd6786e186e5adae3e75bb9246b0183,"Fix `root_path` in WebSocket Connection Scope (#329)
+
+Everything already treats it (correctly) as a unicode string.",Aber,me@abersheeran.com,GitHub,noreply@github.com,2022-05-13 00:59:25+08:00,-28800,2022-05-12 10:59:25-06:00,21600,True,False,['www.rst'],['df1e582f530d9c9b49e54cef37079497c54ec504'],1,1,2,1,,,
+67b2e812632e7771d560c59e48e6c6fc68ff402d,Releasing 3.5.2,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2022-05-16 14:33:08-06:00,21600,2022-05-16 14:33:08-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['7794c2a0ffd6786e186e5adae3e75bb9246b0183'],1,10,11,2,,,
+6b1222a48f77fbe743a4ac476fb21e24a70a26c8,Improve wording on 'WSGI Compatibility' section (#331),Marcelo Trylesinski,marcelotryle@gmail.com,GitHub,noreply@github.com,2022-05-22 21:13:06+02:00,-7200,2022-05-22 13:13:06-06:00,21600,True,False,['www.rst'],['67b2e812632e7771d560c59e48e6c6fc68ff402d'],1,1,2,1,,,
+22c6767e753007c83a85962e7f460aa6358b2398,Use update_wrapper in SyncToAsync.__get__ (#335),Léni,lenigauffier@gmail.com,GitHub,noreply@github.com,2022-07-01 19:10:41+02:00,-7200,2022-07-01 11:10:41-06:00,21600,True,False,"['.gitignore', 'sync.py']",['6b1222a48f77fbe743a4ac476fb21e24a70a26c8'],1,3,4,2,1.0,1.0,0.0
+6a0cae060c0d96d7bf0d5a3dc38dbde090ab3e1a,Removed support for ASGI_THREADS environment variable,Carlton Gibson,carlton.gibson@noumenal.es,GitHub,noreply@github.com,2022-07-13 18:18:33+02:00,-7200,2022-07-13 10:18:33-06:00,21600,True,False,"['CHANGELOG.txt', 'sync.py']",['22c6767e753007c83a85962e7f460aa6358b2398'],9,10,19,2,,,
+30ecdef20eabffd195b2c9b68a6d7798a1d84ef7,Added stronger wording for lifespans/event loops,Adrian Garcia Badaracco,1755071+adriangb@users.noreply.github.com,GitHub,noreply@github.com,2022-07-23 22:41:22-05:00,18000,2022-07-23 21:41:22-06:00,21600,True,False,['lifespan.rst'],['6a0cae060c0d96d7bf0d5a3dc38dbde090ab3e1a'],3,7,10,1,,,
+5118b709a04c0972bc812333b3aa92b08735dacf,"Clarify handling of disconnect WS code
+
+The WebSocket spec says the default for this is 1005, but we're putting it here for extra clarity.",Andrew Godwin,andrew@aeracode.org,GitHub,noreply@github.com,2022-08-15 22:29:25-06:00,21600,2022-08-15 22:29:25-06:00,21600,True,False,['www.rst'],['30ecdef20eabffd195b2c9b68a6d7798a1d84ef7'],1,3,4,1,,,
+85d87d52decda98c494f4bfe3ba4f8e98189f1b9,"Early hints extension (#342)
+
+This gives an ASGI mechanism for the application to indicate to the server what early hints to send.",Phil Jones,philip.graham.jones@googlemail.com,GitHub,noreply@github.com,2022-08-25 11:54:09+01:00,-3600,2022-08-25 13:54:09+03:00,-10800,True,False,['extensions.rst'],['5118b709a04c0972bc812333b3aa92b08735dacf'],0,34,34,1,,,
+33851c2f76cb2cd10ba371a1008ecf993fd9193e,"Reworded contract for http.disconnect
+
+Closes #334",Adrian Garcia Badaracco,1755071+adriangb@users.noreply.github.com,GitHub,noreply@github.com,2022-09-09 15:22:29-05:00,18000,2022-09-09 14:22:29-06:00,21600,True,False,['www.rst'],['85d87d52decda98c494f4bfe3ba4f8e98189f1b9'],3,3,6,1,,,
+835351b3f373077ee6e7a7b0ef1001dc299deb85,Used proper SPDX identifier in setup.cfg,Maximilian,Shortfinga@users.noreply.github.com,GitHub,noreply@github.com,2022-09-16 19:46:11+02:00,-7200,2022-09-16 11:46:11-06:00,21600,True,False,['setup.cfg'],['33851c2f76cb2cd10ba371a1008ecf993fd9193e'],1,1,2,1,,,
+3b5aaff55ca8f5d1c6ea5cd010a88ad34041dada,Added HTTP Trailers extension,Marcelo Trylesinski,marcelotryle@gmail.com,GitHub,noreply@github.com,2022-09-25 10:19:54+01:00,-3600,2022-09-25 10:19:54+01:00,-3600,True,False,"['typing.py', 'extensions.rst', 'www.rst']",['835351b3f373077ee6e7a7b0ef1001dc299deb85'],6,65,71,3,,,
+9acb1a2ee6ad89408f1f71c812e397a72344d072,Added missing `HTTPResponseTrailersEvent` to `ASGISendEvent`,Marcelo Trylesinski,marcelotryle@gmail.com,GitHub,noreply@github.com,2022-11-06 16:47:10+01:00,-3600,2022-11-06 08:47:10-07:00,25200,True,False,['typing.py'],['3b5aaff55ca8f5d1c6ea5cd010a88ad34041dada'],0,1,1,1,,,
+8b76e05b80a944aa9f3527072120db635ef9d31e,Tweak conf.py to fix Sphinx warnings (#355),Adrian Garcia Badaracco,1755071+adriangb@users.noreply.github.com,GitHub,noreply@github.com,2022-11-14 11:35:16-06:00,21600,2022-11-14 10:35:16-07:00,25200,True,False,['conf.py'],['9acb1a2ee6ad89408f1f71c812e397a72344d072'],2,2,4,1,,,
+72c5ca1fe0aac4d241eabfebdc9f37c0eb8415c0,Updated flake8 repo location in pre-commit config to github.,David Smith,smithdc@gmail.com,Carlton Gibson,carlton@noumenal.es,2022-12-14 19:23:02+00:00,0,2022-12-14 21:05:13+01:00,-3600,True,False,['.pre-commit-config.yaml'],['8b76e05b80a944aa9f3527072120db635ef9d31e'],1,1,2,1,,,
+467c154f9c18b3132baf0c4bd5e0cb3cc0355a33,Updated pre-commit versions and fixed linting errors.,David Smith,smithdc@gmail.com,Carlton Gibson,carlton@noumenal.es,2022-12-14 19:32:17+00:00,0,2022-12-14 21:05:13+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'timeout.py', 'test_server.py']",['72c5ca1fe0aac4d241eabfebdc9f37c0eb8415c0'],9,10,19,3,,,
+36f37c9ee5bf2d1f240db23643734f1225a0b5fd,Added coroutine detection shims for Python 3.12 (#360),Carlton Gibson,carlton.gibson@noumenal.es,GitHub,noreply@github.com,2022-12-14 21:09:46+01:00,-3600,2022-12-14 21:09:46+01:00,-3600,True,False,"['compatibility.py', 'sync.py', 'test_sync.py']",['467c154f9c18b3132baf0c4bd5e0cb3cc0355a33'],9,37,46,3,1.0,1.0,1.0
+ea7901655444df6e3bd2ca487a0937046d97939a,"Updated timeout helper to use get_running_loop(). (#337)
+
+* Update timeout helper to use get_running_loop().
+* Deprecated loop argument to timeout().",Carlton Gibson,carlton.gibson@noumenal.es,GitHub,noreply@github.com,2022-12-15 19:21:44+01:00,-3600,2022-12-15 19:21:44+01:00,-3600,True,False,"['CHANGELOG.txt', 'timeout.py']",['36f37c9ee5bf2d1f240db23643734f1225a0b5fd'],1,11,12,2,0.0,1.0,1.0
+bea951e725b472e7fe4a4a50937a23a911354065,Added Python 3.11 support,baseplate-admin,61817579+baseplate-admin@users.noreply.github.com,GitHub,noreply@github.com,2022-12-17 05:40:34+06:00,-21600,2022-12-16 16:40:34-07:00,25200,True,False,"['tests.yml', 'setup.cfg', 'tox.ini']",['ea7901655444df6e3bd2ca487a0937046d97939a'],1,3,4,3,,,
+7a6c631f8c98cbfa4968a6296bbb915e22294420,Added release note for coroutine detection shims.,Carlton Gibson,carlton.gibson@noumenal.es,Carlton Gibson,carlton@noumenal.es,2022-12-15 12:15:43+01:00,-3600,2022-12-20 10:02:26+01:00,-3600,True,False,['CHANGELOG.txt'],['bea951e725b472e7fe4a4a50937a23a911354065'],2,18,20,1,,,
+79a1d01565533d79dd44ff92eabcd3a91354c20d,Releasing 3.6.0.,Carlton Gibson,carlton.gibson@noumenal.es,Carlton Gibson,carlton@noumenal.es,2022-12-20 09:59:55+01:00,-3600,2022-12-20 10:02:26+01:00,-3600,True,False,"['CHANGELOG.txt', '__init__.py']",['7a6c631f8c98cbfa4968a6296bbb915e22294420'],2,2,4,2,,,
+36022636d3390c1c1cbb952336a34d652a6bfb26,Add Debug extension (#365),Marcelo Trylesinski,marcelotryle@gmail.com,GitHub,noreply@github.com,2022-12-29 18:38:18+01:00,-3600,2022-12-29 10:38:18-07:00,25200,True,False,"['typing.py', 'extensions.rst']",['79a1d01565533d79dd44ff92eabcd3a91354c20d'],0,33,33,2,,,
+730d865506adf565d53e5a67cceb9f796dc472ba,"Simplified contextvars usage.
+
+Contextvars are unconditionally available since dropping Python 3.6
+support in 02fecb6046bb5ec0dbbad00ffcd2043e893fcea5.",Carlton Gibson,carlton.gibson@noumenal.es,Carlton Gibson,carlton@noumenal.es,2023-01-12 11:12:06+01:00,-3600,2023-01-12 18:30:53+01:00,-3600,True,False,"['sync.py', 'test_sync_contextvars.py']",['36022636d3390c1c1cbb952336a34d652a6bfb26'],11,6,17,2,1.0,1.0,1.0
+325e6348d5f744faf1285b27a65fed8188f820e4,"Update isort version in pre-commit (#371)
+
+Update isort to 5.11.5 due to https://github.com/PyCQA/isort/issues/2083
+Note 5.12.0 is out but has already dropped support for python 3.7",Dan Sloan,827555+LucidDan@users.noreply.github.com,GitHub,noreply@github.com,2023-02-19 14:03:36+11:00,-39600,2023-02-18 20:03:36-07:00,25200,True,False,['.pre-commit-config.yaml'],['730d865506adf565d53e5a67cceb9f796dc472ba'],1,1,2,1,,,
+003c39d9a87aa41658798f388b0fb187156896b0,Add Granian (#374),Leon,Leon0824@users.noreply.github.com,GitHub,noreply@github.com,2023-02-22 08:50:21+08:00,-28800,2023-02-21 17:50:21-07:00,25200,True,False,['implementations.rst'],['325e6348d5f744faf1285b27a65fed8188f820e4'],0,9,9,1,,,
+9e7c3ae63dd39b8b41bd45e86b4b444a2a02d8da,Add NGINX Unit (#375),Leon,Leon0824@users.noreply.github.com,GitHub,noreply@github.com,2023-02-24 18:49:16+08:00,-28800,2023-02-24 03:49:16-07:00,25200,True,False,['implementations.rst'],['003c39d9a87aa41658798f388b0fb187156896b0'],0,8,8,1,,,
+ec63b100f294bf2080072404c4f137f444fd119a,"Add extensions[""lifespan.state""] (#354)",Adrian Garcia Badaracco,1755071+adriangb@users.noreply.github.com,GitHub,noreply@github.com,2023-03-03 16:20:50-06:00,21600,2023-03-03 15:20:50-07:00,25200,True,False,"['typing.py', 'setup.cfg', 'lifespan.rst', 'www.rst']",['9e7c3ae63dd39b8b41bd45e86b4b444a2a02d8da'],2,59,61,4,,,
+627e29b8028a8cf4da2950d23da5532e5e763aa0,"Clarified ambigious section of lifespan[""state""] spec",Adrian Garcia Badaracco,1755071+adriangb@users.noreply.github.com,GitHub,noreply@github.com,2023-03-04 11:31:26-06:00,21600,2023-03-04 10:31:26-07:00,25200,True,False,"['lifespan.rst', 'www.rst']",['ec63b100f294bf2080072404c4f137f444fd119a'],6,4,10,2,,,
+5cdc44c242e0ee1de36dfbf151c2b5592760d2ba,✏ Fix micro-typo (nano-typo) in Lifespan spec: `state` (#377),Sebastián Ramírez,tiangolo@gmail.com,GitHub,noreply@github.com,2023-03-06 18:30:39+01:00,-3600,2023-03-06 10:30:39-07:00,25200,True,False,['lifespan.rst'],['627e29b8028a8cf4da2950d23da5532e5e763aa0'],1,1,2,1,,,
+861a59d7006d28b71157c735669f6c9de036aa87,add starlite to application frameworks (#378),Tobi DEGNON,tobidegnon@proton.me,GitHub,noreply@github.com,2023-03-10 18:50:51+01:00,-3600,2023-03-10 10:50:51-07:00,25200,True,False,['implementations.rst'],['5cdc44c242e0ee1de36dfbf151c2b5592760d2ba'],0,10,10,1,,,
+03571587bf0f61ddff77f1f6fe3593439cb92f48,Fixed typo in lifespan state spec (#379),Florimond Manca,florimond.manca@protonmail.com,GitHub,noreply@github.com,2023-03-12 22:57:39+01:00,-3600,2023-03-12 15:57:39-06:00,21600,True,False,['lifespan.rst'],['861a59d7006d28b71157c735669f6c9de036aa87'],1,1,2,1,,,
+be6635e0e79009e55cf7a999614186f061f9f09b,Added __traceback_hide__ to skip frames in tracebacks (#383),Jon Janzen,jon@jonjanzen.com,GitHub,noreply@github.com,2023-03-31 12:38:42-07:00,25200,2023-03-31 13:38:42-06:00,21600,True,False,"['current_thread_executor.py', 'sync.py']",['03571587bf0f61ddff77f1f6fe3593439cb92f48'],0,10,10,2,0.2,0.2,0.2
+ec4b25d4300536b0b2340091363fba9b6b5e1cde,Removed extra call to asyncio.wait_for (#382),Jon Janzen,jon@jonjanzen.com,GitHub,noreply@github.com,2023-03-31 12:38:56-07:00,25200,2023-03-31 13:38:56-06:00,21600,True,False,['sync.py'],['be6635e0e79009e55cf7a999614186f061f9f09b'],2,1,3,1,1.0,1.0,1.0
+30d891fab0a7caa265bda0cbe04bb35a00a3b3b9,Rename Starlite to Litestar (#384),Tobi DEGNON,tobidegnon@proton.me,GitHub,noreply@github.com,2023-04-11 16:14:13+01:00,-3600,2023-04-11 09:14:13-06:00,21600,True,False,['implementations.rst'],['ec4b25d4300536b0b2340091363fba9b6b5e1cde'],3,3,6,1,,,
+e22d765397fe24497c32224b99ac244f1f79db99,Better garbage-collection on exceptions in sync_to_async (#386),Taha Jahangir,mtjahangir@gmail.com,GitHub,noreply@github.com,2023-04-30 20:13:32+03:30,-12600,2023-04-30 10:43:32-06:00,21600,True,False,['sync.py'],['30d891fab0a7caa265bda0cbe04bb35a00a3b3b9'],0,3,3,1,0.0,0.0,0.0
+c3d70c3e7a1b7a73d2688c574d47766ebfa100d1,"Remove ""wait for body"" response constraint",Marcelo Trylesinski,marcelotryle@gmail.com,GitHub,noreply@github.com,2023-05-02 23:20:42+02:00,-7200,2023-05-02 15:20:42-06:00,21600,True,False,['www.rst'],['e22d765397fe24497c32224b99ac244f1f79db99'],3,1,4,1,,,
+7c8d31c05957bd644f9cead04206f11a0011c3d4,Add information about when to start sending response (#389),Kristján Valur Jónsson,sweskman@gmail.com,GitHub,noreply@github.com,2023-05-06 04:53:15+00:00,0,2023-05-05 21:53:15-07:00,25200,True,False,['www.rst'],['c3d70c3e7a1b7a73d2688c574d47766ebfa100d1'],1,6,7,1,,,
+fd7a63c591653146379b55e68a29883b9bf7e706,"Mention BlackSheep as one of the implementation (#391)
+
+Co-authored-by: Santosh Bandichode <santosh.bandichode@cyberium.info>",techntools,71767293+techntools@users.noreply.github.com,GitHub,noreply@github.com,2023-05-15 23:07:06+05:30,-19800,2023-05-15 11:37:06-06:00,21600,True,False,['implementations.rst'],['7c8d31c05957bd644f9cead04206f11a0011c3d4'],0,11,11,1,,,
+72f45c5feb158f71c5b5fb337e323c7bacd6c7b3,Improve sync.py typing and utilities performance (#390),Thiago Bellini Ribeiro,hackedbellini@gmail.com,GitHub,noreply@github.com,2023-05-18 20:32:06-03:00,10800,2023-05-18 17:32:06-06:00,21600,True,False,"['current_thread_executor.py', 'sync.py']",['fd7a63c591653146379b55e68a29883b9bf7e706'],62,137,199,2,0.0,0.5121951219512195,0.0
+89cfe10fd58eca207c3f9db2bbfee5d7b8bd1108,Releasing 3.7.0,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2023-05-23 10:48:47-06:00,21600,2023-05-23 10:48:47-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['72f45c5feb158f71c5b5fb337e323c7bacd6c7b3'],1,17,18,2,,,
+db2e53a66be92cb4b073408e4faf37db709699e9,Pin typing_extensions high enough for our use of it,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2023-05-23 23:21:59-06:00,21600,2023-05-23 23:21:59-06:00,21600,True,False,['setup.cfg'],['89cfe10fd58eca207c3f9db2bbfee5d7b8bd1108'],1,1,2,1,,,
+085ba6a1ce520468e00be2a7c03aac0901068749,Releasing 3.7.1,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2023-05-23 23:23:47-06:00,21600,2023-05-23 23:23:47-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['db2e53a66be92cb4b073408e4faf37db709699e9'],1,8,9,2,,,
+09a234e109e7d60a9ce62764b24ff83470d3d2ff,"Type sync_to_async/async_to_async as returning callables
+
+Fix #394",Thiago Bellini Ribeiro,thiago@bellini.dev,GitHub,noreply@github.com,2023-05-27 14:19:48-03:00,10800,2023-05-27 11:19:48-06:00,21600,True,False,['sync.py'],['085ba6a1ce520468e00be2a7c03aac0901068749'],5,55,60,1,1.0,1.0,0.2727272727272727
+a90aeb93c424c471400118879cb652cddc1726a8,Releasing 3.7.2,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2023-05-27 11:20:46-06:00,21600,2023-05-27 11:20:46-06:00,21600,True,False,"['CHANGELOG.txt', '__init__.py']",['09a234e109e7d60a9ce62764b24ff83470d3d2ff'],1,7,8,2,,,
+78128f185b17b5f23e269bfb052d9d0ffb05c05b,Replaced broken Travis badge with GitHub Actions,Aarni Koskela,akx@iki.fi,GitHub,noreply@github.com,2023-06-13 20:05:07+03:00,-10800,2023-06-13 11:05:07-06:00,21600,True,False,['README.rst'],['a90aeb93c424c471400118879cb652cddc1726a8'],2,2,4,1,,,
+5c41b17dfc79892a40a0dac2a90e6d0b352788ce,Adjusted changelog for 3.7.0 to reflect that `Local` isn't `contextvars` yet (#401),Aarni Koskela,akx@iki.fi,GitHub,noreply@github.com,2023-07-07 16:56:22+03:00,-10800,2023-07-07 07:56:22-06:00,21600,True,False,['CHANGELOG.txt'],['78128f185b17b5f23e269bfb052d9d0ffb05c05b'],1,1,2,1,,,
+d1ee1faf3e8056766876c6b9baea87478a5f2472,Clarify that raw_path does not include the query string (#402),Simon Willison,swillison@gmail.com,GitHub,noreply@github.com,2023-08-03 08:26:59-07:00,25200,2023-08-03 09:26:59-06:00,21600,True,False,['www.rst'],['5c41b17dfc79892a40a0dac2a90e6d0b352788ce'],4,4,8,1,,,
+d920c3c44f59ef037be3a09a41a5640014cfb1e2,"Allow nesting sync_to_async via asyncio.wait_for (#367)
+
+Change the order of fallbacks used by SyncToAsync to find the appropriate executor for sync code, so it prefers to use AsyncToSync.loop_thread_executors rather than thread_sensitive_context. Add test case to demonstrate problem.",James Thorniley,james.thorniley@gmail.com,GitHub,noreply@github.com,2023-09-18 19:53:31+01:00,-3600,2023-09-18 14:53:31-04:00,14400,True,False,"['local.py', 'sync.py', 'testing.py', 'test_local.py', 'test_sync.py']",['d1ee1faf3e8056766876c6b9baea87478a5f2472'],209,206,415,5,1.0,1.0,0.5555555555555556
+2ddc82c1bd658f247d19f62724982941d97800f3,Add `pathsend` extension (#407),Giovanni Barillari,g@baro.dev,GitHub,noreply@github.com,2023-09-23 20:17:33+02:00,-7200,2023-09-23 12:17:33-06:00,21600,True,False,"['typing.py', 'extensions.rst']",['d920c3c44f59ef037be3a09a41a5640014cfb1e2'],0,41,41,2,,,
+56cc620bc277add138e3c6e8f3920be04b3aff00,"Handle `""client"": None` in WsgiToAsgi adapter (#411)",Eric Zhang,ekzhang1@gmail.com,GitHub,noreply@github.com,2023-10-06 14:52:53-04:00,14400,2023-10-06 12:52:53-06:00,21600,True,False,['wsgi.py'],['2ddc82c1bd658f247d19f62724982941d97800f3'],1,1,2,1,,,
+09ed8e952c728091cfac9b0ddc154dc2b4c734bc,"Dropped Python 3.7 support
+
+Includes mypy error fix.",Mariusz Felisiak,felisiak.mariusz@gmail.com,GitHub,noreply@github.com,2023-10-12 21:11:06+02:00,-7200,2023-10-12 13:11:06-06:00,21600,True,False,"['tests.yml', '.pre-commit-config.yaml', 'README.rst', 'current_thread_executor.py', 'sync.py', 'typing.py', 'setup.cfg', 'setup.py', 'asgi.rst', 'tox.ini']",['56cc620bc277add138e3c6e8f3920be04b3aff00'],54,17,71,10,0.25,0.25,0.25
+ebb1edbb222afe7775e79927cafd2025c78d971a,Added Python 3.12 support.,Mariusz Felisiak,felisiak.mariusz@gmail.com,GitHub,noreply@github.com,2023-10-13 20:59:44+02:00,-7200,2023-10-13 12:59:44-06:00,21600,True,False,"['tests.yml', 'setup.cfg', 'tox.ini']",['09ed8e952c728091cfac9b0ddc154dc2b4c734bc'],6,10,16,3,,,
+0c7b964d000a27b95b9ea55c7d39ab2696bfb212,"Add Connexion to implementations.rst (#418)
+
+Connexion has joined the ASGI ecosystem with their 3.0.0 release in which they adopted the ASGI interface.",Robbe Sneyders,robbe.sneyders@gmail.com,GitHub,noreply@github.com,2023-11-06 21:41:23+01:00,-3600,2023-11-06 13:41:23-07:00,25200,True,False,['implementations.rst'],['ebb1edbb222afe7775e79927cafd2025c78d971a'],0,13,13,1,,,
+d95e378e8bf5f0c8c87f4cfd888a0ac26c13fc5a,Clarified Cookie header behaviour in HTTP/2,Dan Sloan,827555+LucidDan@users.noreply.github.com,GitHub,noreply@github.com,2023-11-10 16:47:15+11:00,-39600,2023-11-09 22:47:15-07:00,25200,True,False,['www.rst'],['0c7b964d000a27b95b9ea55c7d39ab2696bfb212'],4,19,23,1,,,
+6cfe72456e14d29ac8babd18dbb6e19af1d6899e,Add Esmerald to implementations (#425),Tiago Silva,tiago.arasilva@gmail.com,GitHub,noreply@github.com,2023-12-20 02:41:36+00:00,0,2023-12-19 19:41:36-07:00,25200,True,False,['implementations.rst'],['d95e378e8bf5f0c8c87f4cfd888a0ac26c13fc5a'],54,63,117,1,,,
+19e14e7ab91a5f03b7b32dccae69f74933399cb4,Added tests for asyncio.shield with sync and async Django-style middlware (#432),ttys0dev,126845556+ttys0dev@users.noreply.github.com,GitHub,noreply@github.com,2024-01-14 11:42:40-07:00,25200,2024-01-14 11:42:40-07:00,25200,True,False,['test_sync.py'],['6cfe72456e14d29ac8babd18dbb6e19af1d6899e'],0,119,119,1,0.4358974358974359,1.0,1.0
+6f62c16028ea366c06860dce4c47c6aec161d0f5,Specify an IOError when send() is called on a closed connection (#431),Adrian Garcia Badaracco,1755071+adriangb@users.noreply.github.com,GitHub,noreply@github.com,2024-01-16 13:27:05-03:00,10800,2024-01-16 09:27:05-07:00,25200,True,False,['www.rst'],['19e14e7ab91a5f03b7b32dccae69f74933399cb4'],0,11,11,1,,,
+3f0147dc79bae052113b31a02db4f2bdfffc7d4e,Update WWW spec version due to 6f62c16,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2024-01-16 09:29:20-07:00,25200,2024-01-16 09:30:00-07:00,25200,True,False,['www.rst'],['6f62c16028ea366c06860dce4c47c6aec161d0f5'],2,3,5,1,,,
+088d6a5583af2632ecf736214af5c9b5fab4700d,Fix doc-building config and spec changelog,Andrew Godwin,andrew@aeracode.org,Andrew Godwin,andrew@aeracode.org,2024-01-20 11:06:05-07:00,25200,2024-01-20 11:06:05-07:00,25200,True,False,"['.readthedocs.yaml', 'www.rst']",['3f0147dc79bae052113b31a02db4f2bdfffc7d4e'],1,13,14,2,,,
+0503c2c4df06dbe56f04689fe537325f28dbbe8b,Fix task cancellation propagation to subtasks when using sync middleware (#435),ttys0dev,126845556+ttys0dev@users.noreply.github.com,GitHub,noreply@github.com,2024-01-26 23:13:55-07:00,25200,2024-01-26 23:13:55-07:00,25200,True,False,"['sync.py', 'test_sync.py']",['088d6a5583af2632ecf736214af5c9b5fab4700d'],17,201,218,2,0.39849624060150374,0.7969924812030075,0.7894736842105263

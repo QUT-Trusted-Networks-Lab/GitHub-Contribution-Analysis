@@ -1,0 +1,950 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+5febd5687373266d7f9974439b5b20bbac76956c,Initial commit,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2020-12-24 00:05:02+01:00,-3600,2020-12-24 00:05:02+01:00,-3600,True,False,"['LICENSE', 'README.md']",[],0,675,675,2,,,
+cb20ff86c215ac3db6d365de07a244c7492a43e8,working prototype,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-24 01:55:54+01:00,-3600,2020-12-24 01:55:54+01:00,-3600,True,False,"['.flake8', 'automated-checks.yml', 'pypi-release.yml', '.gitignore', '.pre-commit-config.yaml', 'CHANGELOG.md', 'MANIFEST.in', 'Makefile', 'README.md', '__init__.py', 'admin.py', 'app_settings.py', 'apps.py', 'auth_hooks.py', '0001_initial.py', '__init__.py', 'models.py', 'providers.py', 'fleetfinder.css', 'fleetfinder.min.css', 'multi-select.min.css', 'slimselect.min.css', 'slimselect.min.js', 'tasks.py', 'base.html', 'multi-select-css.html', 'slim-select-css.html', 'slim-select-js.html', 'create_fleet.html', 'dashboard.html', 'edit_fleet.html', 'fleet_details.html', 'join_fleet.html', 'tests.py', 'urls.py', 'utils.py', 'views.py', 'fleet_advert_create.png', 'fleet_invite.png', 'fleet_view.png', 'fleets.png', 'setup.py']",['5febd5687373266d7f9974439b5b20bbac76956c'],1,1376,1377,42,0.49743589743589745,0.6641025641025641,0.7974358974358975
+438996b526efe57d5985de248d234e8730a01d42,import order fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-24 09:41:52+01:00,-3600,2020-12-24 09:41:52+01:00,-3600,True,False,"['__init__.py', 'models.py', 'tasks.py', 'urls.py', 'utils.py', 'views.py', 'setup.py']",['cb20ff86c215ac3db6d365de07a244c7492a43e8'],15,23,38,7,0.0,0.0,0.0
+48608585f5fc58ae3efbdf2cda2d875004e93ce7,old images removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-25 00:41:24+01:00,-3600,2020-12-25 00:41:24+01:00,-3600,True,False,"['fleet_advert_create.png', 'fleet_invite.png', 'fleet_view.png', 'fleets.png']",['438996b526efe57d5985de248d234e8730a01d42'],0,0,0,4,,,
+36e8de77219313f57de70e826c966c34447af95f,some cleanup and cs tweaks,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-25 00:41:40+01:00,-3600,2020-12-25 00:41:40+01:00,-3600,True,False,"['README.md', '__init__.py', 'app_settings.py', 'apps.py', 'auth_hooks.py', 'models.py', 'providers.py', 'fleetfinder.css', 'tasks.py', 'multi-select-css.html', 'slim-select-css.html', 'urls.py', 'utils.py', 'views.py', 'setup.py']",['48608585f5fc58ae3efbdf2cda2d875004e93ce7'],38,203,241,15,1.0,0.0,0.0
+e5070d19ca9bf1065e456cf4b7306db82c9c2c79,fleet_commander  is now a EveCharacter model,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-30 01:22:01+01:00,-3600,2020-12-30 01:22:01+01:00,-3600,True,False,"['0001_initial.py', 'models.py', 'fleetfinder.css', 'fleetfinder.min.css', 'tasks.py', 'dashboard.html', 'fleet_details.html', 'views.py']",['36e8de77219313f57de70e826c966c34447af95f'],20,88,108,8,0.0,1.0,0.6666666666666666
+d051a6a3c25614d4826551b367cf33795a42e954,"deactivate page reload for now
+
+until we find a better solution",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-30 01:24:06+01:00,-3600,2020-12-30 01:24:06+01:00,-3600,True,False,['fleet_details.html'],['e5070d19ca9bf1065e456cf4b7306db82c9c2c79'],3,3,6,1,,,
+4c2e6c4c8c9afe3f609f30e95ca3fcc80cca1ee1,css block re-arranged,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-30 01:29:02+01:00,-3600,2020-12-30 01:29:02+01:00,-3600,True,False,"['create_fleet.html', 'edit_fleet.html', 'join_fleet.html']",['d051a6a3c25614d4826551b367cf33795a42e954'],19,22,41,3,,,
+94acf59eb438cc487b6c332eb0e943096978ae19,datatable for dashboard configured,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-30 01:37:30+01:00,-3600,2020-12-30 01:37:30+01:00,-3600,True,False,['dashboard.html'],['4c2e6c4c8c9afe3f609f30e95ca3fcc80cca1ee1'],0,13,13,1,,,
+c9bdc5d8e04e43fb85520984947f1ce07ca163a7,General model fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-30 01:47:45+01:00,-3600,2020-12-30 01:47:45+01:00,-3600,True,False,"['0001_initial.py', 'models.py']",['94acf59eb438cc487b6c332eb0e943096978ae19'],22,26,48,2,,,
+55f7457e78e2e5862a309793af7182748d470335,automated checks updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-30 01:49:32+01:00,-3600,2020-12-30 01:49:32+01:00,-3600,True,False,['automated-checks.yml'],['c9bdc5d8e04e43fb85520984947f1ce07ca163a7'],10,45,55,1,,,
+9f27b7f783d15a0aac2f4e87476db2d54919d584,version set to v0.1.0-alpha.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-30 01:51:33+01:00,-3600,2020-12-30 01:51:33+01:00,-3600,True,False,['__init__.py'],['55f7457e78e2e5862a309793af7182748d470335'],1,1,2,1,,,
+fd6956876606cf584bc7647c80bf46244a8e7841,"fleet details view re-done
+
+- Datatables in fleet details view set up properly
+- UI in fleet details view re-done
+- Fleet details are nor refreshed every 15 seconds via Datatables reload",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-05 23:54:22+01:00,-3600,2021-01-05 23:54:22+01:00,-3600,True,False,"['tasks.py', 'fleet_details.html', 'urls.py', 'views.py']",['9f27b7f783d15a0aac2f4e87476db2d54919d584'],100,157,257,4,0.18181818181818182,1.0,0.7272727272727273
+49996c2badc75f8eec9549b7489b4108fa2c8949,v0.1.0-alpha.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-05 23:54:38+01:00,-3600,2021-01-05 23:54:38+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['fd6956876606cf584bc7647c80bf46244a8e7841'],3,24,27,2,,,
+067eb98c1c46b64852c928899664b1e42a0047e3,release date fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-06 00:00:15+01:00,-3600,2021-01-06 00:00:15+01:00,-3600,True,False,['CHANGELOG.md'],['49996c2badc75f8eec9549b7489b4108fa2c8949'],1,1,2,1,,,
+2789f5dd14dc7e346c6a5e8ef3a327d9cdc5ae38,permission fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-06 00:11:19+01:00,-3600,2021-01-06 00:11:19+01:00,-3600,True,False,['base.html'],['067eb98c1c46b64852c928899664b1e42a0047e3'],1,1,2,1,,,
+36d598fbfa57e607afa9c0cd9572201f211963a1,v0.1.0-alpha.3,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-06 00:12:12+01:00,-3600,2021-01-06 00:12:12+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['2789f5dd14dc7e346c6a5e8ef3a327d9cdc5ae38'],1,8,9,2,,,
+d1dc36e89a245844c1c1f4df5a3652ec4a26c79d,useragent for EDI calls defined,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-07 17:43:58+01:00,-3600,2021-01-07 17:43:58+01:00,-3600,True,False,"['__init__.py', 'providers.py']",['36d598fbfa57e607afa9c0cd9572201f211963a1'],1,11,12,2,,,
+1365e9d49712eee0d51deab5b6a539179b775b3e,improved logging a bit,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-07 18:02:18+01:00,-3600,2021-01-07 18:02:18+01:00,-3600,True,False,"['tasks.py', 'utils.py', 'views.py']",['d1dc36e89a245844c1c1f4df5a3652ec4a26c79d'],6,46,52,3,0.9166666666666666,1.0,0.5833333333333334
+b2b7e4596c7f66f6d953e4a252c730e845d7236d,more logging improvements,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-07 18:19:30+01:00,-3600,2021-01-07 18:19:30+01:00,-3600,True,False,['views.py'],['1365e9d49712eee0d51deab5b6a539179b775b3e'],1,7,8,1,1.0,1.0,1.0
+d3f8486386f3e915dcba0e2f3ddc644fafdac45c,Django 2 support dropped,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-12 08:53:53+01:00,-3600,2021-01-12 08:53:53+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py', 'setup.py']",['b2b7e4596c7f66f6d953e4a252c730e845d7236d'],2,8,10,3,,,
+efdc759eb70a3865024cc4bab84bbe505bf199ba,ESI error checks hardened,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-25 18:14:58+01:00,-3600,2021-01-25 18:14:58+01:00,-3600,True,False,['tasks.py'],['d3f8486386f3e915dcba0e2f3ddc644fafdac45c'],17,166,183,1,0.2948717948717949,0.38461538461538464,0.6923076923076923
+4fad790da182563ea1fa51298d9d44fcd8004737,dashboard fleet table data per ajax,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-25 19:08:49+01:00,-3600,2021-01-25 19:08:49+01:00,-3600,True,False,"['datetime.js', 'datetime.min.js', 'dashboard.html', 'urls.py', 'views.py']",['efdc759eb70a3865024cc4bab84bbe505bf199ba'],41,280,321,5,0.43119266055045874,0.926605504587156,0.8256880733944955
+f00e83a4259ad543e00ace589702e6fbb2665026,"changelog updated, new version set",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-25 19:12:44+01:00,-3600,2021-01-25 19:12:44+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['4fad790da182563ea1fa51298d9d44fcd8004737'],1,13,14,2,,,
+2a1be160038139bef8b98e9e6c41ee06b9723be0,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-03-04 12:17:03+01:00,-3600,2021-03-04 12:17:03+01:00,-3600,True,False,['.pre-commit-config.yaml'],['f00e83a4259ad543e00ace589702e6fbb2665026'],2,3,5,1,,,
+12135943bd328b8aad0b40dd53b764dd4a9c0dc1,isort added to pre-commit,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-03-24 20:24:20+01:00,-3600,2021-03-24 20:24:20+01:00,-3600,True,False,"['.isort.cfg', '.pre-commit-config.yaml', 'auth_hooks.py', '0001_initial.py', 'providers.py', 'tasks.py', 'urls.py', 'views.py', 'setup.py']",['2a1be160038139bef8b98e9e6c41ee06b9723be0'],35,35,70,9,,,
+3e54589ff7ebce89ed05394a8cd525a090121085,workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-05-01 18:48:45+02:00,-7200,2021-05-01 18:48:45+02:00,-7200,True,False,"['automated-checks.yml', '.pre-commit-config.yaml']",['12135943bd328b8aad0b40dd53b764dd4a9c0dc1'],18,2,20,2,,,
+fa4641eea7c54ce73c7ce319e4fcac387bb0036c,github workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-05-02 14:32:42+02:00,-7200,2021-05-02 14:32:42+02:00,-7200,True,False,"['automated-checks.yml', 'pypi-release.yml']",['3e54589ff7ebce89ed05394a8cd525a090121085'],3,8,11,2,,,
+2734e7aff1773ca4682d1d0cafa3ebf8c8322de4,[FIX] workflow release trigger,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-05-05 15:16:19+02:00,-7200,2021-05-05 15:16:19+02:00,-7200,True,False,['pypi-release.yml'],['fa4641eea7c54ce73c7ce319e4fcac387bb0036c'],1,1,2,1,,,
+fe6f5efe821db774064fc9da7b263a8c19e37060,pre-commit updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-05-07 21:31:14+02:00,-7200,2021-05-07 21:31:14+02:00,-7200,True,False,"['.editorconfig', '.pre-commit-config.yaml', 'tasks.py', 'utils.py', 'views.py']",['2734e7aff1773ca4682d1d0cafa3ebf8c8322de4'],9,60,69,5,,,
+afc35326c2c9f529555ad30ae2ed4096853074fe,fix indentation,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-05-07 22:45:26+02:00,-7200,2021-05-07 22:45:26+02:00,-7200,True,False,['join_fleet.html'],['fe6f5efe821db774064fc9da7b263a8c19e37060'],2,2,4,1,,,
+6aa1945452013f0b72c2d38adf3bddea9e999215,model graph added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-06-11 21:02:08+02:00,-7200,2021-06-11 21:02:08+02:00,-7200,True,False,"['Makefile', 'aa-fleetfinder-models.png']",['afc35326c2c9f529555ad30ae2ed4096853074fe'],2,5,7,2,,,
+04aaa03464188305bfdaac59bf185e0bf1efadbe,py39 and django32 compat,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-07-08 09:06:05+02:00,-7200,2021-07-08 09:06:05+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py', 'setup.py']",['6aa1945452013f0b72c2d38adf3bddea9e999215'],1,10,11,3,,,
+d8ba88b0971a186030f6f8e3284394bfd8e90cb6,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-07-08 09:06:57+02:00,-7200,2021-07-08 09:06:57+02:00,-7200,True,False,['.pre-commit-config.yaml'],['04aaa03464188305bfdaac59bf185e0bf1efadbe'],7,7,14,1,,,
+c35ed2ca7b17ac79f54d3b693b5ff9c24770f392,github workflow updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-07-08 09:12:18+02:00,-7200,2021-07-08 09:12:18+02:00,-7200,True,False,['automated-checks.yml'],['d8ba88b0971a186030f6f8e3284394bfd8e90cb6'],1,8,9,1,,,
+39a94d8fb8365d3262a484de6819b31a47a6bd04,github workflows and templates,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-07-08 10:23:52+02:00,-7200,2021-07-08 10:23:52+02:00,-7200,True,False,"['bug_report.md', 'config.yml', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md', 'automated-checks.yml']",['c35ed2ca7b17ac79f54d3b693b5ff9c24770f392'],1,90,91,5,,,
+e974b091d3f175667158fb85995c8a202c4f5463,setup.py updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 12:49:45+01:00,-3600,2021-11-15 12:49:45+01:00,-3600,True,False,['setup.py'],['39a94d8fb8365d3262a484de6819b31a47a6bd04'],32,50,82,1,,,
+de4b400f01f8888864a1facf7d0bd1069997fab3,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 12:50:36+01:00,-3600,2021-11-15 12:50:36+01:00,-3600,True,False,['.pre-commit-config.yaml'],['e974b091d3f175667158fb85995c8a202c4f5463'],6,6,12,1,,,
+a81d00bef0d677d982570a1e56a2875c7e9a6578,GH template updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 12:51:50+01:00,-3600,2021-11-15 12:51:50+01:00,-3600,True,False,['feature_request.md'],['de4b400f01f8888864a1facf7d0bd1069997fab3'],2,2,4,1,,,
+be77d015abe9b985533f4497b4916c8133f0543c,GH workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 12:53:34+01:00,-3600,2021-11-15 12:53:34+01:00,-3600,True,False,"['automated-checks.yml', 'pypi-release.yml']",['a81d00bef0d677d982570a1e56a2875c7e9a6578'],24,105,129,2,,,
+62b001664baef5ad76dc4fec3f1b7135af7d9b44,Code of conduct added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 13:04:48+01:00,-3600,2021-11-15 13:04:48+01:00,-3600,True,False,['CODE_OF_CONDUCT.md'],['be77d015abe9b985533f4497b4916c8133f0543c'],0,133,133,1,,,
+5e090399cc05498159b5c2b5d11c946d5821eb9a,Contributing guidelines added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 13:05:02+01:00,-3600,2021-11-15 13:05:02+01:00,-3600,True,False,['CONTRIBUTING.md'],['62b001664baef5ad76dc4fec3f1b7135af7d9b44'],0,57,57,1,,,
+c34c561bf96e77a1ccf866e74c73e323197bece6,Codeowners file added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 13:05:13+01:00,-3600,2021-11-15 13:05:13+01:00,-3600,True,False,['CODEOWNERS'],['5e090399cc05498159b5c2b5d11c946d5821eb9a'],0,1,1,1,,,
+4d58144b85712774ae42293616b5d9a56393c05a,Basic test suite added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 13:05:54+01:00,-3600,2021-11-15 13:05:54+01:00,-3600,True,False,"['.coveragerc', '.editorconfig', '.gitignore', 'Makefile', 'codecov.yml', 'runtests.py', '__init__.py', 'celery.py', 'settings.py', 'urls.py', 'wsgi.py', 'tox.ini']",['c34c561bf96e77a1ccf866e74c73e323197bece6'],3,442,445,12,,,
+cfeab0c1ffcf2c5fcdebd7179f627ec36872b4ad,Badges added to readme,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 13:11:34+01:00,-3600,2021-11-15 13:11:34+01:00,-3600,True,False,['README.md'],['4d58144b85712774ae42293616b5d9a56393c05a'],0,11,11,1,,,
+b738507ad3825c58ea5fd2b850a59bae56774ad3,codecov badge updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 13:13:00+01:00,-3600,2021-11-15 13:13:00+01:00,-3600,True,False,['README.md'],['cfeab0c1ffcf2c5fcdebd7179f627ec36872b4ad'],1,1,2,1,,,
+5fb11a6107e5f6c6e9456852c0cc680ba2eb0aa8,Django 3.1 removed from tests,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 13:21:08+01:00,-3600,2021-11-15 13:21:08+01:00,-3600,True,False,"['automated-checks.yml', 'setup.py', 'tox.ini']",['b738507ad3825c58ea5fd2b850a59bae56774ad3'],6,1,7,3,,,
+85f5d44005f0771ed8346ea7584b015e24771463,Version bumped to v0.1.0-alpha.7,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 13:26:20+01:00,-3600,2021-11-15 13:26:20+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['5fb11a6107e5f6c6e9456852c0cc680ba2eb0aa8'],1,8,9,2,,,
+a2abd896b86cc54025dd68bfc342b59ab888ab95,Fix motd field,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-15 13:31:50+01:00,-3600,2021-11-15 13:31:50+01:00,-3600,True,False,"['0002_alter_fleet_motd.py', 'models.py']",['85f5d44005f0771ed8346ea7584b015e24771463'],1,19,20,2,,,
+c66ee0dc6e26be91360362bcdfecae4818d2e42a,tox test suite updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-26 02:10:18+01:00,-3600,2021-11-26 02:10:18+01:00,-3600,True,False,"['automated-checks.yml', 'tox.ini']",['a2abd896b86cc54025dd68bfc342b59ab888ab95'],5,53,58,2,,,
+a8213014ed544884f83a5c4272f507c84f91ca0b,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-26 02:11:32+01:00,-3600,2021-11-26 02:11:32+01:00,-3600,True,False,['.pre-commit-config.yaml'],['c66ee0dc6e26be91360362bcdfecae4818d2e42a'],4,9,13,1,,,
+1cbebe26fb45d6e07b06a91790fea457774b6f41,setup.py updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-26 02:16:16+01:00,-3600,2021-11-26 02:16:16+01:00,-3600,True,False,['setup.py'],['a8213014ed544884f83a5c4272f507c84f91ca0b'],2,3,5,1,,,
+34ce94d3c93f1fadbe5608e9009e289b63202944,"Minimum requirements updated
+
+  - Python 3.7
+  - Alliance Auth v2.9.3",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-30 07:25:37+01:00,-3600,2021-11-30 07:25:37+01:00,-3600,True,False,"['automated-checks.yml', '.pre-commit-config.yaml', 'CHANGELOG.md', '__init__.py', 'setup.py', 'tox.ini']",['1cbebe26fb45d6e07b06a91790fea457774b6f41'],60,20,80,6,,,
+f36fde468774a0e8a710ad6f0f9787089fd7b072,config files updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-12-26 07:33:48+01:00,-3600,2021-12-26 07:33:55+01:00,-3600,True,False,"['.isort.cfg', '.pre-commit-config.yaml', 'app_settings.py', 'apps.py', 'auth_hooks.py', '0001_initial.py', '0002_alter_fleet_motd.py', 'models.py', 'providers.py', 'tasks.py', 'urls.py', 'utils.py', 'views.py', 'runtests.py', 'setup.py', 'celery.py', 'settings.py', 'urls.py', 'wsgi.py']",['34ce94d3c93f1fadbe5608e9009e289b63202944'],5,54,59,19,,,
+c2e0e0bd6bc407dee7c4329768b8683534bbde27,isort config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-12-29 20:16:54+01:00,-3600,2021-12-29 20:16:54+01:00,-3600,True,False,['.isort.cfg'],['f36fde468774a0e8a710ad6f0f9787089fd7b072'],2,4,6,1,,,
+dc219f0e34a48ef7226fc187c34ebbdba0b31365,Makefile updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-12-30 17:54:52+01:00,-3600,2021-12-30 17:54:52+01:00,-3600,True,False,['Makefile'],['c2e0e0bd6bc407dee7c4329768b8683534bbde27'],0,4,4,1,,,
+f6f6ac22fe634ba8ad0e097e0917421830e3f778,AA>=2.9.4 is testing for Python 3.11 and so do we,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-12-30 17:55:14+01:00,-3600,2021-12-30 17:55:14+01:00,-3600,True,False,"['automated-checks.yml', 'tox.ini']",['dc219f0e34a48ef7226fc187c34ebbdba0b31365'],3,6,9,2,,,
+8ae31e1ee9af58bd49f54baed9643f443d832137,setup.py updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-12-30 18:05:15+01:00,-3600,2021-12-30 18:05:15+01:00,-3600,True,False,['setup.py'],['f6f6ac22fe634ba8ad0e097e0917421830e3f778'],0,1,1,1,,,
+5d6430338fa31b8bb0eae908a82e110ca6b5b693,Added check for merge conflicts to pre-commit config,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 12:01:14+01:00,-3600,2022-01-30 12:01:14+01:00,-3600,True,False,['.pre-commit-config.yaml'],['8ae31e1ee9af58bd49f54baed9643f443d832137'],0,1,1,1,,,
+260ab35d23caa504fed029a75341a48dfaec1921,Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 12:03:20+01:00,-3600,2022-01-30 12:03:20+01:00,-3600,True,False,"['CHANGELOG.md', 'setup.py']",['5d6430338fa31b8bb0eae908a82e110ca6b5b693'],1,13,14,2,,,
+a06747349e8f2ea19ec82b264e8e10d512ca2b32,switched to `path` in url config,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-02-02 10:34:24+01:00,-3600,2022-02-02 10:39:14+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'CHANGELOG.md', 'README.md', 'urls.py']",['260ab35d23caa504fed029a75341a48dfaec1921'],22,21,43,4,,,
+1cb53a18ece59838dee504b45fda882d8480ea13,Test output changed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-02-02 10:46:16+01:00,-3600,2022-02-02 10:46:16+01:00,-3600,True,False,"['Makefile', 'tox.ini']",['a06747349e8f2ea19ec82b264e8e10d512ca2b32'],2,2,4,2,,,
+f0527dfea5c56d48b64029abe3df4b7cdbc39eba,Version bumped to v0.1.0-alpha.9,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-02-02 13:30:38+01:00,-3600,2022-02-02 13:30:38+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['1cb53a18ece59838dee504b45fda882d8480ea13'],6,8,14,2,,,
+f017ee7b71e32ee0bc2fa2a0ee91bf73c37a9b9d,[FIX] cannot import name 'ugettext_lazy' from 'django.utils.translation',Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-02-27 16:01:30+01:00,-3600,2022-02-27 16:01:30+01:00,-3600,True,False,"['CHANGELOG.md', 'auth_hooks.py']",['f0527dfea5c56d48b64029abe3df4b7cdbc39eba'],1,6,7,2,,,
+293eca3a774cbe8d1e35a875622eded4665ef3bb,Version bumped to v0.1.0-alpha.10,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2022-02-28 11:05:02+01:00,-3600,2022-02-28 11:05:02+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['5772ae3e466c0c5405a657c61973cba4380a1614'],1,4,5,2,,,
+2656bb9f25a806c8d41f490aeff65ce2a090e2e6,URL config for tests updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-02-28 11:11:39+01:00,-3600,2022-02-28 11:11:39+01:00,-3600,True,False,['urls.py'],['293eca3a774cbe8d1e35a875622eded4665ef3bb'],2,2,4,1,,,
+ab968c1e247495b6889d8eeb9aedd1310a2d20a3,"Switch to setup.cfg (#6)
+
+* Switch to setup.cfg instead of setup.py
+
+* Let's test a Release with the setup.cfg stuff
+
+* [FIX] Classifiers in setup.cfg
+
+* Make docstrings great again!
+
+* Added package discovery to setup.cfg (hopefully)
+
+* setup.py removed
+
+* Makefile updated
+
+* No longer needed command removed
+
+* [FIX] Isolated build
+
+Error: ERROR: pyproject.toml file found.
+To use a PEP 517 build-backend you are required to configure tox to use an isolated_build:
+https://tox.readthedocs.io/en/latest/example/package.html",Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2022-03-01 14:20:13+01:00,-3600,2022-03-01 14:20:13+01:00,-3600,True,False,"['automated-checks.yml', 'pypi-release.yml', '.pre-commit-config.yaml', 'CHANGELOG.md', 'Makefile', '__init__.py', 'pyproject.toml', 'setup.cfg', 'setup.py', 'tox.ini']",['2656bb9f25a806c8d41f490aeff65ce2a090e2e6'],86,101,187,10,,,
+33a9ee72f62fec3bd2fecc653f7c0379a278638d,Deprecation removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-02 16:46:57+01:00,-3600,2022-03-02 16:46:57+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py', 'admin.py', 'apps.py', 'settings.py']",['ab968c1e247495b6889d8eeb9aedd1310a2d20a3'],6,5,11,5,,,
+e63b05447deba4c3d0af9053d2ea7606767a13ec,Test suite for AA 3.x and Django 4 added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-02 16:57:11+01:00,-3600,2022-03-02 16:57:11+01:00,-3600,True,False,"['automated-checks.yml', 'CHANGELOG.md', 'settings_aa3x.py', 'tox.ini']",['33a9ee72f62fec3bd2fecc653f7c0379a278638d'],13,371,384,4,,,
+8c07af9e1ec6fcef1c40f854b053d1ab0f9be131,Minimum AA version set to 2.11.0 for the time being,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-02 16:58:39+01:00,-3600,2022-03-02 16:58:39+01:00,-3600,True,False,"['CHANGELOG.md', 'setup.cfg']",['e63b05447deba4c3d0af9053d2ea7606767a13ec'],1,6,7,2,,,
+900e75188a5ced7e060a3f7c79cc7bb9a5904671,Django 4 added to setup classifiers,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-02 17:06:04+01:00,-3600,2022-03-02 17:06:04+01:00,-3600,True,False,['setup.cfg'],['8c07af9e1ec6fcef1c40f854b053d1ab0f9be131'],0,1,1,1,,,
+137e1d616cd0fe5c0caf2e4e879194daee074784,Version bumped to v0.1.0-alpha.15,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-02 23:49:55+01:00,-3600,2022-03-02 23:49:55+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['3a80d5ed154dbf607786e43ac6601032ca2e0c43'],1,4,5,2,,,
+125a4885e10a6d7b45fddbe64c66c2aadc2feea8,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-05-01 07:55:59+02:00,-7200,2022-05-01 07:55:59+02:00,-7200,True,False,['.pre-commit-config.yaml'],['137e1d616cd0fe5c0caf2e4e879194daee074784'],5,19,24,1,,,
+d8cc5158984162ba6559c05f435093aeb453fe11,"""Buy me a coffee"" added",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-05-08 21:52:46+02:00,-7200,2022-05-08 21:52:46+02:00,-7200,True,False,"['FUNDING.yml', 'README.md']",['125a4885e10a6d7b45fddbe64c66c2aadc2feea8'],0,3,3,2,,,
+3a4a8731e1060afb6f5e3419d06ead1b3fcbc9ad,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-05-20 22:23:07+02:00,-7200,2022-05-20 22:23:07+02:00,-7200,True,False,['.pre-commit-config.yaml'],['d8cc5158984162ba6559c05f435093aeb453fe11'],3,6,9,1,,,
+1a29bde800d09fa5f84c485df925b13c2bb7407f,codeql-action updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-04 13:07:47+02:00,-7200,2022-06-04 13:07:47+02:00,-7200,True,False,['automated-checks.yml'],['3a4a8731e1060afb6f5e3419d06ead1b3fcbc9ad'],1,1,2,1,,,
+af9ee5e63365717e96e326db4b176eb312699114,Updated tox tests for the new alpha version of Alliance Auth 3,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-07 10:29:47+02:00,-7200,2022-06-07 10:29:47+02:00,-7200,True,False,['tox.ini'],['1a29bde800d09fa5f84c485df925b13c2bb7407f'],2,6,8,1,,,
+d25b60bed264466d90187634217efa77a52c55b1,isort config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-24 18:52:36+02:00,-7200,2022-06-24 18:54:53+02:00,-7200,True,False,"['.isort.cfg', 'create_fleet.html', 'dashboard.html', 'edit_fleet.html', 'fleet_details.html', 'join_fleet.html', '__init__.py', 'fleetfinder_versioned_static.py', 'tests.py', '__init__.py', 'test_access.py', 'test_templatetags.py', 'utils.py']",['af9ee5e63365717e96e326db4b176eb312699114'],26,171,197,13,0.5405405405405406,1.0,0.5405405405405406
+239b4490039bee76cce40925960a9ba35e595e83,Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-24 18:55:28+02:00,-7200,2022-06-24 18:55:28+02:00,-7200,True,False,['CHANGELOG.md'],['d25b60bed264466d90187634217efa77a52c55b1'],0,4,4,1,,,
+151e457e84932320128b5cdf9dc66980eaf5087d,"AVOID_CDN setting removed, we serve always locally (GDPR)",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-24 18:58:50+02:00,-7200,2022-06-24 18:59:14+02:00,-7200,True,False,"['CHANGELOG.md', 'app_settings.py', 'multi-select-css.html', 'slim-select-css.html', 'slim-select-js.html', 'utils.py', 'views.py']",['239b4490039bee76cce40925960a9ba35e595e83'],99,8,107,7,0.7857142857142857,0.7380952380952381,0.7380952380952381
+4f1027d9038f3eed17c18c734ddb30132e6760c5,Version bumped to v0.1.0-alpha.16,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-24 19:02:44+02:00,-7200,2022-06-24 19:02:44+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['151e457e84932320128b5cdf9dc66980eaf5087d'],1,4,5,2,,,
+cd298b614b13289214def4a5c8de076a205b8bdc,Switch to f-strings for formatted strings,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-26 11:17:36+02:00,-7200,2022-06-26 11:17:36+02:00,-7200,True,False,"['CHANGELOG.md', 'views.py']",['4f1027d9038f3eed17c18c734ddb30132e6760c5'],30,21,51,2,0.38461538461538464,0.0,0.0
+bb5dfbd9eaec07b4480e6b301a5817883b301738,Templates cleaned up,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-26 11:40:34+02:00,-7200,2022-06-26 11:40:34+02:00,-7200,True,False,"['CHANGELOG.md', 'base.html', 'multi-select-css.html', 'slim-select-css.html', 'slim-select-js.html', 'create-fleet.html', 'dashboard.html', 'edit-fleet.html', 'fleet-details.html', 'join-fleet.html', 'header-navigation.html', 'views.py']",['cd298b614b13289214def4a5c8de076a205b8bdc'],44,39,83,12,,,
+a29d37bc27ee259d62806045c85c5bf56e96d6e6,pre-commit updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-11 07:26:58+02:00,-7200,2022-07-11 07:26:58+02:00,-7200,True,False,"['automated-checks.yml', '.pre-commit-config.yaml']",['bb5dfbd9eaec07b4480e6b301a5817883b301738'],7,7,14,2,,,
+a29ea8dd3de237030f588d2e4d1a415479248013,tox tests updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-11 07:27:22+02:00,-7200,2022-07-11 07:27:22+02:00,-7200,True,False,['tox.ini'],['a29d37bc27ee259d62806045c85c5bf56e96d6e6'],1,1,2,1,,,
+c30301ffc40674666a1ea58c3f5550cde9bac92e,Version bumped to v0.1.0-alpha.17,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-11 07:30:20+02:00,-7200,2022-07-11 07:30:20+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['7f6ce5030d83c5d13db2aa058736efd05dd2be82'],1,4,5,2,,,
+adadd6674e64c7d5e0abf2b75072e9ab913bf847,[MISC] Template cleanup and HTML fixes,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 11:12:48+02:00,-7200,2022-08-23 11:12:48+02:00,-7200,True,False,"['fleetfinder.css', 'fleetfinder.min.css', 'base.html', 'multi-select-css.html', 'slim-select-css.html', 'slim-select-js.html', 'create-fleet.html', 'dashboard.html', 'edit-fleet.html', 'fleet-details.html', 'join-fleet.html', 'setup.cfg']",['c30301ffc40674666a1ea58c3f5550cde9bac92e'],47,53,100,12,,,
+12d60328aabb7242a82fb4a728a565756d7ed009,[MISC] pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 11:16:04+02:00,-7200,2022-08-23 11:16:04+02:00,-7200,True,False,['.pre-commit-config.yaml'],['adadd6674e64c7d5e0abf2b75072e9ab913bf847'],4,4,8,1,,,
+6d986be1c6474cc3eb77459a18279cb2a8be403b,[CHANGED] CSS moved to bundled HTML template,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 11:20:33+02:00,-7200,2022-08-23 11:20:33+02:00,-7200,True,False,"['CHANGELOG.md', 'aa-bootstrap-fix.css', 'aa-bootstrap-fix.min.css', 'fleetfinder-css.html', 'create-fleet.html', 'dashboard.html', 'edit-fleet.html', 'fleet-details.html', 'join-fleet.html']",['12d60328aabb7242a82fb4a728a565756d7ed009'],15,27,42,9,,,
+63a272a5bd415985de6c6588336620ac27d60dbf,[CHANGED] Test frameworks and minimum requirements,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 11:27:47+02:00,-7200,2022-08-23 11:28:47+02:00,-7200,True,False,"['automated-checks.yml', 'CHANGELOG.md', 'setup.cfg', 'settings.py', 'settings_aa3x.py', 'tox.ini']",['6d986be1c6474cc3eb77459a18279cb2a8be403b'],373,78,451,6,,,
+02fdca34a7489f061f16037687c76f725e5fef00,[CHANGED] Logger messages changed to f-strings and spelling fixes,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 12:09:31+02:00,-7200,2022-08-23 12:09:31+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py', 'apps.py', 'auth_hooks.py', 'models.py', 'tasks.py', 'urls.py', 'utils.py', 'views.py']",['63a272a5bd415985de6c6588336620ac27d60dbf'],63,47,110,9,0.8125,0.5625,0.25
+3ba90dc3513d74b60211cde3200208cd4887e56c,[CHANGED] Using `allianceauth-app-utils` for logging,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 12:17:49+02:00,-7200,2022-08-23 12:17:49+02:00,-7200,True,False,"['CHANGELOG.md', 'tasks.py', 'utils.py', 'views.py', 'setup.cfg']",['02fdca34a7489f061f16037687c76f725e5fef00'],30,8,38,5,0.0,0.0,1.0
+0d94859d8b95d4283fa620bf2188c1d3d3f7c785,[REMOVED] Unused code,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 12:32:10+02:00,-7200,2022-08-23 12:32:10+02:00,-7200,True,False,"['CHANGELOG.md', '0003_delete_fleetinformation.py', 'models.py', 'tasks.py', 'views.py']",['3ba90dc3513d74b60211cde3200208cd4887e56c'],78,29,107,5,1.0,0.23076923076923078,0.3076923076923077
+c706e0c88b867959bb268b29444967ba079dec23,[CHANGED] Task ESI error handling improved,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 13:13:21+02:00,-7200,2022-08-23 13:13:21+02:00,-7200,True,False,"['CHANGELOG.md', 'tasks.py']",['0d94859d8b95d4283fa620bf2188c1d3d3f7c785'],29,43,72,2,0.07692307692307693,0.0,1.0
+72ce8f81f1da3dbb7d7e1b395fcdf458058b522b,[CHANGED] Moved constants to their own file,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 13:20:45+02:00,-7200,2022-08-23 13:20:45+02:00,-7200,True,False,"['CHANGELOG.md', 'constants.py', 'tasks.py']",['c706e0c88b867959bb268b29444967ba079dec23'],47,54,101,3,,,
+d3a9d95df16809d7a1944a294017d9c9b970cafc,[MISC] Better log output,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 13:37:46+02:00,-7200,2022-08-23 13:37:46+02:00,-7200,True,False,['tasks.py'],['72ce8f81f1da3dbb7d7e1b395fcdf458058b522b'],1,6,7,1,0.0,0.0,1.0
+96c9d1e999c476d502d26a774aea293904f71df7,[CHANGED] `related_name` for group restrictions in model,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 13:51:42+02:00,-7200,2022-08-23 13:51:42+02:00,-7200,True,False,"['CHANGELOG.md', '0004_alter_fleet_groups.py', 'models.py', 'tasks.py']",['d3a9d95df16809d7a1944a294017d9c9b970cafc'],7,29,36,4,1.0,0.0,1.0
+eee9336816cfd1bff1fd74ac2e5b0e656dd32334,[ADDED] `related_name` to `fleet_commander` in model,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 14:54:31+02:00,-7200,2022-08-23 14:54:31+02:00,-7200,True,False,"['CHANGELOG.md', 'aa-fleetfinder-models.png', '0005_alter_fleet_fleet_commander.py', 'models.py']",['96c9d1e999c476d502d26a774aea293904f71df7'],1,33,34,4,,,
+f373466d4faee0c227e98ccbde8706a35f7a3c85,[MISC] Formatting,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 15:19:34+02:00,-7200,2022-08-23 15:19:34+02:00,-7200,True,False,"['dashboard.html', 'fleet-details.html']",['eee9336816cfd1bff1fd74ac2e5b0e656dd32334'],9,8,17,2,,,
+375634aea808dc43ddbc2ff8299cd5abc7bea8d3,[CHANGED] Version bumped to v0.1.0-alpha.18,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 15:37:37+02:00,-7200,2022-08-23 15:37:37+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py', 'constants.py', 'providers.py', 'tasks.py', 'test_access.py']",['f373466d4faee0c227e98ccbde8706a35f7a3c85'],11,21,32,6,,,
+aef927830e49cb384b06f788d9eed8553bb812b9,[CHANGED] Dashboard error message replaced with Django message API,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-23 16:10:17+02:00,-7200,2022-08-23 16:10:17+02:00,-7200,True,False,"['CHANGELOG.md', 'dashboard.html', 'views.py']",['375634aea808dc43ddbc2ff8299cd5abc7bea8d3'],12,12,24,3,0.0,0.0,
+9c189f1e483e990813f76f8a1aef34f7174a1ad4,[MISC] GitHub templates updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-16 15:25:42+02:00,-7200,2022-09-16 15:25:42+02:00,-7200,True,False,"['bug_report.md', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md']",['aef927830e49cb384b06f788d9eed8553bb812b9'],5,4,9,3,,,
+d96a16385d17db2cb5a956ec5b402e72aeee0c52,[MISC] pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-16 15:26:41+02:00,-7200,2022-09-16 15:26:41+02:00,-7200,True,False,['.pre-commit-config.yaml'],['9c189f1e483e990813f76f8a1aef34f7174a1ad4'],5,5,10,1,,,
+32a45d9d22b4973988b6b24cb4d3514fd6b3906c,[CHANGE] Test suite updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-16 15:28:48+02:00,-7200,2022-09-16 15:28:48+02:00,-7200,True,False,"['automated-checks.yml', 'Makefile', 'settings.py', 'tox.ini']",['d96a16385d17db2cb5a956ec5b402e72aeee0c52'],21,109,130,4,,,
+6edaafa69911f175220f1d5f89ce58229f194ec3,[CHANGE] Code/internal improvements,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-18 15:02:19+02:00,-7200,2022-09-18 15:03:00+02:00,-7200,True,False,"['PULL_REQUEST_TEMPLATE.md', 'automated-checks.yml', '.pre-commit-config.yaml', 'CHANGELOG.md', 'CONTRIBUTING.md', 'Makefile', '__init__.py', 'auth_hooks.py', 'constants.py', 'models.py', 'tasks.py', 'base.html', 'datetime-js.html', 'create-fleet.html', 'dashboard.html', 'edit-fleet.html', 'fleet-details.html', 'join-fleet.html', '__init__.py', 'test_access.py', 'test_auth_hooks.py', 'test_templatetags.py', 'utils.py', 'urls.py', 'views.py', '__init__.py', 'celery.py', 'settings.py', 'urls.py']",['32a45d9d22b4973988b6b24cb4d3514fd6b3906c'],91,224,315,29,0.3448275862068966,1.0,0.9310344827586207
+becdd7f2034ee984ccee7cb01db66500b1a75b85,[REMOVED] Auto retry for ESI and OS errors in tasks,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-21 23:49:57+02:00,-7200,2022-10-21 23:49:57+02:00,-7200,True,False,"['CHANGELOG.md', 'constants.py', 'tasks.py']",['6edaafa69911f175220f1d5f89ce58229f194ec3'],21,10,31,3,,,
+f31b1c330f3a04f969368de5b50d3dbee29290b1,[MISC] Updated `actions/checkout` to v3,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-22 00:56:17+02:00,-7200,2022-10-22 00:56:17+02:00,-7200,True,False,['automated-checks.yml'],['becdd7f2034ee984ccee7cb01db66500b1a75b85'],5,5,10,1,,,
+1127526045427e636f064556927c3b62ed97c2dd,[MISC] All GitHub actions updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-22 01:13:10+02:00,-7200,2022-10-22 01:13:10+02:00,-7200,True,False,['automated-checks.yml'],['f31b1c330f3a04f969368de5b50d3dbee29290b1'],16,16,32,1,,,
+db4e59e89718fadb7d0c9e3dfd18d2df030bb559,[MISC] Set python-version for pre-commit,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-22 01:27:38+02:00,-7200,2022-10-22 01:27:38+02:00,-7200,True,False,['automated-checks.yml'],['1127526045427e636f064556927c3b62ed97c2dd'],0,2,2,1,,,
+55fe5623e28f7d0d9944194e710e88834e4cdfe3,[MISC] Test suite updated - Python 3.11 tests no longer allowed to fail,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-31 21:43:09+01:00,-3600,2022-10-31 21:43:09+01:00,-3600,True,False,['automated-checks.yml'],['db4e59e89718fadb7d0c9e3dfd18d2df030bb559'],4,4,8,1,,,
+b5ac486b7a337c48d5d9230c02984ea6337a7af4,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-05 15:57:10+01:00,-3600,2023-01-05 15:57:10+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'urls.py']",['55fe5623e28f7d0d9944194e710e88834e4cdfe3'],15,15,30,2,,,
+dd821067f62119c0bb850fae178049834fd159d5,[FIX] UTF-8 characters in log message,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-05 15:57:22+01:00,-3600,2023-01-05 15:57:22+01:00,-3600,True,False,"['CHANGELOG.md', 'tasks.py']",['b5ac486b7a337c48d5d9230c02984ea6337a7af4'],1,5,6,2,,,
+e5e384ffc90d707e3fdb120e840b3347a3feba05,[CHANGED] Version bumped to v0.1.0-alpha.20,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-05 16:00:03+01:00,-3600,2023-01-05 16:00:03+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['dd821067f62119c0bb850fae178049834fd159d5'],1,4,5,2,,,
+5c33f109f2d9be4afe20d571172e1ffab20310d1,[MISC] Make pylint a bit less angry,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-10 18:38:41+01:00,-3600,2023-01-10 18:38:41+01:00,-3600,True,False,['tasks.py'],['e5e384ffc90d707e3fdb120e840b3347a3feba05'],1,1,2,1,,,
+abd1b2a2d28023c3db14a5ecbc05aa9d4f9fc429,[MISC] GH workflow: upload coverage reports on push to `master` branch,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-10 18:39:35+01:00,-3600,2023-01-10 18:39:35+01:00,-3600,True,False,['automated-checks.yml'],['5c33f109f2d9be4afe20d571172e1ffab20310d1'],2,2,4,1,,,
+8b9ce37eeee80e68e2d2db82426dabcb30025121,[FIX] Typo in variable name,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-10 18:40:54+01:00,-3600,2023-01-10 18:40:54+01:00,-3600,True,False,['tasks.py'],['abd1b2a2d28023c3db14a5ecbc05aa9d4f9fc429'],2,2,4,1,,,
+20ebbccc83e91fe79e5d9d859adc57cbb67fe25f,[CHANGE] Migrations reset,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-10 18:48:35+01:00,-3600,2023-01-10 18:48:35+01:00,-3600,True,False,"['0001_initial.py', '0002_alter_fleet_motd.py', '0003_delete_fleetinformation.py', '0004_alter_fleet_groups.py', '0005_alter_fleet_fleet_commander.py']",['8b9ce37eeee80e68e2d2db82426dabcb30025121'],130,8,138,5,,,
+b6f29776b5aaa5f47ec2ab51950ed3a5a937f90a,[CHANGED] Version bumped to v1.0.0-beta.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-10 19:05:03+01:00,-3600,2023-01-10 19:05:03+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['20ebbccc83e91fe79e5d9d859adc57cbb67fe25f'],1,8,9,2,,,
+ae67e40b33fa156c32210f1376a03718188aa06e,[MISC] GH workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-27 10:28:42+01:00,-3600,2023-01-27 10:28:42+01:00,-3600,True,False,"['pypi-release.yml', '.pre-commit-config.yaml']",['b6f29776b5aaa5f47ec2ab51950ed3a5a937f90a'],4,4,8,2,,,
+4743fbfa196949cfacb7b3cc50cf1d1981327c9f,[MISC] GH workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-03-26 14:21:16+02:00,-7200,2023-03-26 14:21:16+02:00,-7200,True,False,"['automated-checks.yml', 'pypi-release.yml']",['ae67e40b33fa156c32210f1376a03718188aa06e'],6,5,11,2,,,
+103564927ed2b560274363fbe42634fe9257c525,[ADDED] Language files,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-12 08:37:01+02:00,-7200,2023-04-12 08:37:01+02:00,-7200,True,False,"['Makefile', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['4743fbfa196949cfacb7b3cc50cf1d1981327c9f'],4,1279,1283,9,,,
+729626d3624c488543487396b049be6b333800c6,[CHANGED] Translatable string fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-12 11:16:00+02:00,-7200,2023-04-12 11:16:00+02:00,-7200,True,False,"['django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'create-fleet.html']",['103564927ed2b560274363fbe42634fe9257c525'],33,9,42,9,,,
+6d1a2f1fa7026af2b2f82c077115b21d7d091947,"Merge remote-tracking branch 'origin/development' into development
+
+Translated using Weblate (Russian)
+
+Currently translated at 12.5% (4 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Fleetfinder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-12 09:55:30+00:00,0,2023-04-12 09:55:30+00:00,0,True,False,['django.po'],['729626d3624c488543487396b049be6b333800c6'],15,19,34,1,,,
+b045b2243bdae4a936e6f94f546f21b09b75a78d,"Translated using Weblate (German)
+
+Currently translated at 100.0% (32 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Fleetfinder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/
+
+Merge remote-tracking branch 'origin/development' into development
+
+Translated using Weblate (German)
+
+Currently translated at 21.8% (7 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Fleetfinder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-12 09:55:30+00:00,0,2023-04-12 09:55:30+00:00,0,True,False,['django.po'],['6d1a2f1fa7026af2b2f82c077115b21d7d091947'],39,45,84,1,,,
+128fc30cf2d38c1f5d031ae0011b0f1c4816a1a9,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleetfinder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-12 09:55:30+00:00,0,2023-04-12 09:55:30+00:00,0,True,False,"['django.mo', 'django.mo']",['b045b2243bdae4a936e6f94f546f21b09b75a78d'],0,0,0,2,,,
+7c965964aaa4a4d9cbba1660278e9da2668e77cc,[REMOVED] Obsolete translation strings from language files,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-12 12:05:49+02:00,-7200,2023-04-12 12:05:49+02:00,-7200,True,False,"['django.po', 'django.po']",['46a535389bab051b0ce7aecb526942e1e20ef205'],8,0,8,2,,,
+0ac8ad37d5649a5767cc72d47d9a2a7e24f068e9,"[REMOVED] Codacy checks from GH workflows, too unreliable availability",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-13 18:13:32+02:00,-7200,2023-04-13 18:13:32+02:00,-7200,True,False,['automated-checks.yml'],['7c965964aaa4a4d9cbba1660278e9da2668e77cc'],34,1,35,1,,,
+ebb8675e8024c50f0581cb9673bc7ca076c97ef5,[ADDED] Translation section to contribution guide,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-13 18:13:50+02:00,-7200,2023-04-13 18:13:50+02:00,-7200,True,False,['CONTRIBUTING.md'],['0ac8ad37d5649a5767cc72d47d9a2a7e24f068e9'],0,10,10,1,,,
+d0a26a91f7c1fd411d2a3773708046a7890b65c1,[CHANGE] Version bumped to v1.0.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-13 18:31:54+02:00,-7200,2023-04-13 18:31:54+02:00,-7200,True,False,"['CHANGELOG.md', 'README.md', '__init__.py']",['ebb8675e8024c50f0581cb9673bc7ca076c97ef5'],2,79,81,3,,,
+26a0fc049ae221732fc7606324add77025934966,[CHANGE] Readme updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-13 18:33:58+02:00,-7200,2023-04-13 18:33:58+02:00,-7200,True,False,['README.md'],['d0a26a91f7c1fd411d2a3773708046a7890b65c1'],5,0,5,1,,,
+67cd2f967fec9cbf006cce06bfe5581aea833587,[CHANGE] Grammar and spelling,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-14 02:29:57+02:00,-7200,2023-04-14 02:29:57+02:00,-7200,True,False,"['automated-checks.yml', 'CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'README.md']",['26a0fc049ae221732fc7606324add77025934966'],17,35,52,5,,,
+17ea2b8fed0dbff0177620b4e163ee12c42ffcb2,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (31 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-16 16:11:28+00:00,0,2023-04-16 16:11:28+00:00,0,True,False,['django.po'],['26a0fc049ae221732fc7606324add77025934966'],33,36,69,1,,,
+086fd55af45fc73bc54c62f55eb924aa58f7c433,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-16 16:11:28+00:00,0,2023-04-16 16:11:28+00:00,0,True,False,['django.mo'],['17ea2b8fed0dbff0177620b4e163ee12c42ffcb2'],0,0,0,1,,,
+e58b462cae999561b63e227b691d59834debaf9b,[CHANGE] Version bumped to v1.1.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-16 18:29:00+02:00,-7200,2023-04-16 18:29:00+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['963f203586144c5af3173ac4b3b5b5aadcbccfc7'],1,8,9,2,,,
+4cf85d56052ef1adae558d998658923eea617aac,[CHANGE] Makefile updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-18 23:57:32+02:00,-7200,2023-04-18 23:57:32+02:00,-7200,True,False,['Makefile'],['e58b462cae999561b63e227b691d59834debaf9b'],16,20,36,1,,,
+cf93309130d8867fcaee3b232fdfad61f525d705,[ADDED] Ukrainian translation file,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 01:20:37+02:00,-7200,2023-04-19 01:20:37+02:00,-7200,True,False,"['Makefile', 'django.pot', 'django.po']",['4cf85d56052ef1adae558d998658923eea617aac'],0,316,316,3,,,
+1e932c9ddd11d6d8f70ed8a91709189f50796e4d,"[CHANGE] Plural forms for Russian and Ukrainian translations
+
+Set according to » https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 10:58:40+02:00,-7200,2023-04-19 10:58:40+02:00,-7200,True,False,"['django.po', 'django.po']",['cf93309130d8867fcaee3b232fdfad61f525d705'],7,2,9,2,,,
+ed22c40177d19de52c8a4272fc37be456e95dc92,[CHANGE] Final plural-forms for ru and uk,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 19:23:20+02:00,-7200,2023-04-19 19:23:20+02:00,-7200,True,False,"['django.po', 'django.po']",['1e932c9ddd11d6d8f70ed8a91709189f50796e4d'],2,4,6,2,,,
+a2b236b933ae7d4c7dd017d36455d96715e434fd,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (31 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-21 14:50:16+00:00,0,2023-04-21 14:50:16+00:00,0,True,False,['django.po'],['ed22c40177d19de52c8a4272fc37be456e95dc92'],3,3,6,1,,,
+85a4df33d3293e032ec51b6a75f1e7bddea904a1,"Translated using Weblate (Ukrainian)
+
+Currently translated at 6.4% (2 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-21 14:50:17+00:00,0,2023-04-21 14:50:17+00:00,0,True,False,['django.po'],['a2b236b933ae7d4c7dd017d36455d96715e434fd'],4,4,8,1,,,
+5e787739a103e517f9007982041c4be9a7592477,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-21 14:50:17+00:00,0,2023-04-21 14:50:17+00:00,0,True,False,"['django.mo', 'django.mo']",['85a4df33d3293e032ec51b6a75f1e7bddea904a1'],0,0,0,2,,,
+005a3ea8551f2e69b93ac6d3e9f405b216f3f487,[CHANGE] Moved the build process to PEP 621 / pyproject.toml,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-25 16:54:27+02:00,-7200,2023-04-25 16:54:27+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'MANIFEST.in', '__init__.py', 'pyproject.toml', 'setup.cfg']",['90c4a986cf48f6524171c5c6749dccb743d5e68f'],69,55,124,5,,,
+869fff9ce595800a652cd7902b21c58e832699f1,[MISC] md files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-25 17:10:14+02:00,-7200,2023-04-25 17:10:14+02:00,-7200,True,False,"['CODE_OF_CONDUCT.md', 'CONTRIBUTING.md']",['3e5f74b7bc8e6b06e24c9c12666f6992dff6006a'],4,11,15,2,,,
+48022fab87e053d5f908383f315457b971c100d8,[CHANGE] Version bumped to v1.2.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-25 17:12:08+02:00,-7200,2023-04-25 17:12:08+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['869fff9ce595800a652cd7902b21c58e832699f1'],1,8,9,2,,,
+9b6719f1652e47115e390bb953c9079d9b5d7460,"Translated using Weblate (Ukrainian)
+
+Currently translated at 35.4% (11 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-12 20:50:32+00:00,0,2023-05-12 20:50:32+00:00,0,True,False,['django.po'],['48022fab87e053d5f908383f315457b971c100d8'],18,18,36,1,,,
+b42bf40aee22b4518bf23fdc89b3fc84c8b8263e,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-12 20:50:32+00:00,0,2023-05-12 20:50:32+00:00,0,True,False,['django.mo'],['9b6719f1652e47115e390bb953c9079d9b5d7460'],0,0,0,1,,,
+354bebdee4f29e3dd3c36ba411a154666914dc84,"Translated using Weblate (German)
+
+Currently translated at 100.0% (31 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/
+
+Translated using Weblate (German)
+
+Currently translated at 100.0% (31 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Peter Pfeufer (Weblate),weblate@ppfeufer.de,Peter Pfeufer (Weblate),weblate@ppfeufer.de,2023-05-14 13:02:43+00:00,0,2023-05-14 13:02:43+00:00,0,True,False,['django.po'],['72bfdb97ed86693e7291a9c81e52eac76a0ffe81'],3,3,6,1,,,
+8bd43acb86cbc97de9c1aad663b35d8b893ce5ba,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Peter Pfeufer (Weblate),weblate@ppfeufer.de,Peter Pfeufer (Weblate),weblate@ppfeufer.de,2023-05-14 13:02:43+00:00,0,2023-05-14 13:02:43+00:00,0,True,False,['django.mo'],['354bebdee4f29e3dd3c36ba411a154666914dc84'],0,0,0,1,,,
+346de0ef4482348dad8a6911898116d9cf36c532,"Translated using Weblate (German)
+
+Currently translated at 100.0% (31 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-05-15 13:52:25+00:00,0,2023-05-15 13:52:25+00:00,0,True,False,['django.po'],['b3c9dfce3c112f47a696ba5a32cbb320af67786e'],2,2,4,1,,,
+f3a6773e15a1847cbeb2297379be3f3c092ab58b,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-05-15 13:52:25+00:00,0,2023-05-15 13:52:25+00:00,0,True,False,['django.mo'],['346de0ef4482348dad8a6911898116d9cf36c532'],0,0,0,1,,,
+5df60c8a898ceeb30d930cf5e059612a03ec7c35,"Translated using Weblate (German)
+
+Currently translated at 100.0% (31 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-05-19 23:43:35+00:00,0,2023-05-19 23:43:35+00:00,0,True,False,['django.po'],['3445d717e57ce8e8d4ab2f8a66ce8bf0bb8ca03e'],3,3,6,1,,,
+d2d3fc9fff93e16620a271e16948d65658112e18,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-05-19 23:43:35+00:00,0,2023-05-19 23:43:35+00:00,0,True,False,['django.mo'],['5df60c8a898ceeb30d930cf5e059612a03ec7c35'],0,0,0,1,,,
+ee51def2e12ad331415abf069bda8ba4f1014cd8,"Translated using Weblate (Ukrainian)
+
+Currently translated at 35.4% (11 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-14 16:18:05+00:00,0,2023-06-14 16:18:05+00:00,0,True,False,['django.po'],['b3cce2495a34bd0178fbfea11f51e97d3ebd82e2'],3,4,7,1,,,
+25e27a855b6b7a64029219dca80bcb627129d6d0,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-14 16:18:05+00:00,0,2023-06-14 16:18:05+00:00,0,True,False,['django.mo'],['ee51def2e12ad331415abf069bda8ba4f1014cd8'],0,0,0,1,,,
+539c20ed82d0545f1b674c9cd61ae0199814d61c,[MISC] README updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-16 11:45:42+02:00,-7200,2023-06-16 11:45:42+02:00,-7200,True,False,['README.md'],['308f6073d3ce759a4eeebb0ddca8ede89ce98e5f'],0,3,3,1,,,
+1ea04ea3589f14b754593d4ffc9c891987576d83,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (31 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-19 18:18:08+00:00,0,2023-06-19 18:18:08+00:00,0,True,False,['django.po'],['539c20ed82d0545f1b674c9cd61ae0199814d61c'],4,4,8,1,,,
+d759f07a61a7123d85eb8922336c49c8c1f20b50,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-19 18:18:08+00:00,0,2023-06-19 18:18:08+00:00,0,True,False,['django.mo'],['1ea04ea3589f14b754593d4ffc9c891987576d83'],0,0,0,1,,,
+b4b35eedb5ae5f3bcc7858119de497d9a631e303,"Translated using Weblate (German)
+
+Currently translated at 100.0% (31 of 31 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-23 08:42:12+00:00,0,2023-06-23 08:42:12+00:00,0,True,False,['django.po'],['09d8704cf53ec3f0751beff8f570c7a62bf50013'],3,3,6,1,,,
+e8041f06ee3f962d55d159b38a126c82c19ede08,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-23 08:42:13+00:00,0,2023-06-23 08:42:13+00:00,0,True,False,['django.mo'],['b4b35eedb5ae5f3bcc7858119de497d9a631e303'],0,0,0,1,,,
+95507d0e7ed9041811ef6355ff6f8faa5ca01383,[CHANGE] Use the native message system instead of forcing our own,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-24 20:13:44+02:00,-7200,2023-06-24 20:13:44+02:00,-7200,True,False,['views.py'],['b450320c3b305db413dca92f68acfd058a40ffb9'],10,8,18,1,1.0,0.0,0.0
+89bb4f5252b436762d4a5edab03db6b6418302c1,[ADD] Translation status badge to README,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-24 20:15:53+02:00,-7200,2023-06-24 20:15:53+02:00,-7200,True,False,['README.md'],['95507d0e7ed9041811ef6355ff6f8faa5ca01383'],0,1,1,1,,,
+e7425f2c6a22b5aead67e623bad967a6cb88709a,[FIX] No type cast needed here,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-24 20:21:40+02:00,-7200,2023-06-24 20:21:40+02:00,-7200,True,False,['views.py'],['89bb4f5252b436762d4a5edab03db6b6418302c1'],4,2,6,1,1.0,1.0,0.0
+b0321c7c94c323342e281462b90067e9aae7143a,[REMOVE] Unused template section,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-24 20:31:51+02:00,-7200,2023-06-24 20:31:51+02:00,-7200,True,False,['create-fleet.html'],['e7425f2c6a22b5aead67e623bad967a6cb88709a'],4,0,4,1,,,
+2380d7f76a2ded0ba666ddabb9b7d3d021258e9d,[CHANGE] Translatability improved,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-24 20:49:40+02:00,-7200,2023-06-24 20:49:40+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py', 'apps.py', 'auth_hooks.py', '0002_model_verbose_names.py', 'models.py', 'test_access.py', 'utils.py']",['b0321c7c94c323342e281462b90067e9aae7143a'],14,92,106,8,,,
+17b2b86b1c31b5ce5014ff197b21a5af45f72f8b,[MISC] codecov config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-28 14:08:35+02:00,-7200,2023-06-28 14:08:35+02:00,-7200,True,False,['codecov.yml'],['2380d7f76a2ded0ba666ddabb9b7d3d021258e9d'],1,1,2,1,,,
+b6802fdc31fd27698a00042bd77bc055def8ae45,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-28 14:11:26+02:00,-7200,2023-06-28 14:11:26+02:00,-7200,True,False,"['.pre-commit-config.yaml', '0001_initial.py']",['17b2b86b1c31b5ce5014ff197b21a5af45f72f8b'],20,31,51,2,,,
+19ba577688903087c67e6dab34c2f631c5fe2cdb,[CHANGE] Error tracking for ESI fleets moved to the DB,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-28 15:35:42+02:00,-7200,2023-06-28 15:35:42+02:00,-7200,True,False,"['CHANGELOG.md', 'constants.py', '0003_fleet_esi_error_count_fleet_last_esi_error_and_more.py', '0004_fleet_esi_fleet_id_alter_fleet_esi_error_count_and_more.py', '0005_remove_fleet_esi_fleet_id.py', 'models.py', 'tasks.py']",['b6802fdc31fd27698a00042bd77bc055def8ae45'],194,343,537,7,1.0,0.0,1.0
+7d2c109f1c5ee02ef6f6a59c4eee1cba6e3be39a,[CHANGE] New migrations merged into 1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-28 15:39:46+02:00,-7200,2023-06-28 15:39:46+02:00,-7200,True,False,"['0002_esi_error_handling_and_verbose_names.py', '0003_fleet_esi_error_count_fleet_last_esi_error_and_more.py', '0004_fleet_esi_fleet_id_alter_fleet_esi_error_count_and_more.py', '0005_remove_fleet_esi_fleet_id.py']",['19ba577688903087c67e6dab34c2f631c5fe2cdb'],110,32,142,4,,,
+ce767343151ca4b5291bde86459fb577f8f02a23,[MISC] Translation files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-28 15:43:09+02:00,-7200,2023-06-28 15:43:09+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['7d2c109f1c5ee02ef6f6a59c4eee1cba6e3be39a'],231,730,961,10,,,
+456a4644aab8d3661c0c46e4a1fa10780c6ec277,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (42 of 42 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-29 14:19:14+00:00,0,2023-06-29 14:19:14+00:00,0,True,False,['django.po'],['ce767343151ca4b5291bde86459fb577f8f02a23'],20,17,37,1,,,
+d00920e81407c5f95ab4277a214fb5831d12641c,"Translated using Weblate (German)
+
+Currently translated at 100.0% (42 of 42 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-29 14:19:14+00:00,0,2023-06-29 14:19:14+00:00,0,True,False,['django.po'],['456a4644aab8d3661c0c46e4a1fa10780c6ec277'],18,19,37,1,,,
+df580f03fed57f08750eeb68513b8959acfd5aba,"Translated using Weblate (Ukrainian)
+
+Currently translated at 28.5% (12 of 42 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-29 14:19:14+00:00,0,2023-06-29 14:19:14+00:00,0,True,False,['django.po'],['d00920e81407c5f95ab4277a214fb5831d12641c'],7,6,13,1,,,
+173215e05b3b50cf6b548dac7a53b54cf438cee9,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-06-29 14:19:14+00:00,0,2023-06-29 14:19:14+00:00,0,True,False,"['django.mo', 'django.mo', 'django.mo']",['df580f03fed57f08750eeb68513b8959acfd5aba'],0,0,0,3,,,
+b595fdcafd1730c44546cc1b97891bb6410080e2,[CHANGE] Version bumped to v1.3.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-30 12:35:16+02:00,-7200,2023-06-30 12:35:16+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['d94069445b1041707cf2af33a3031c255d73fac3'],1,4,5,2,,,
+69e6010dc621dcda2c0c627034b7eb687d0266dc,[ADD] Screenshots folder,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-12 04:10:56+02:00,-7200,2023-07-12 04:10:56+02:00,-7200,True,False,['.gitkeep'],['b595fdcafd1730c44546cc1b97891bb6410080e2'],0,0,0,1,,,
+e0729aba4f2d08f34dd5458459b60545c2ff26c7,[ADD] Screenshots for Weblate,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-12 04:46:18+02:00,-7200,2023-07-12 04:46:18+02:00,-7200,True,False,"['aa-fleetfinder-available-fleets-overview.jpg', 'aa-fleetfinder-create-fleet-form.jpg']",['69e6010dc621dcda2c0c627034b7eb687d0266dc'],0,0,0,2,,,
+65c08d13b2be68eb5615c85c38d1cf178147cc50,"[CHANGE] Explanation improved, I hope …",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-12 04:48:18+02:00,-7200,2023-07-12 04:48:18+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'create-fleet.html', 'edit-fleet.html', 'join-fleet.html']",['e0729aba4f2d08f34dd5458459b60545c2ff26c7'],111,127,238,13,,,
+314cd7932f1f6dd5e6a92d44d6bb0abb051a596e,[ADD] Scheduled task to installation guide,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-12 12:57:33+02:00,-7200,2023-07-12 12:57:33+02:00,-7200,True,False,['README.md'],['65c08d13b2be68eb5615c85c38d1cf178147cc50'],2,17,19,1,,,
+b35ac6ec985a782aa10c48b250c0e8fc4e546291,"Translated using Weblate (German)
+
+Currently translated at 100.0% (42 of 42 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-13 09:39:00+00:00,0,2023-07-13 09:39:00+00:00,0,True,False,['django.po'],['314cd7932f1f6dd5e6a92d44d6bb0abb051a596e'],12,7,19,1,,,
+852cf1ed4c46862c51ee8fafcdd28ebe7495adaf,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (42 of 42 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-13 09:39:00+00:00,0,2023-07-13 09:39:00+00:00,0,True,False,['django.po'],['b35ac6ec985a782aa10c48b250c0e8fc4e546291'],12,6,18,1,,,
+cbc970fcaa26bfc5323a80768fa9847f27fef4c8,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-13 09:39:00+00:00,0,2023-07-13 09:39:00+00:00,0,True,False,"['django.mo', 'django.mo']",['852cf1ed4c46862c51ee8fafcdd28ebe7495adaf'],0,0,0,2,,,
+3d12e8616a4ad7a72635bf967bab6ee34fe85b59,"Translated using Weblate (Ukrainian)
+
+Currently translated at 40.4% (17 of 42 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/
+
+Translated using Weblate (Ukrainian)
+
+Currently translated at 40.4% (17 of 42 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-26 13:02:01+00:00,0,2023-07-26 13:02:01+00:00,0,True,False,['django.po'],['adbae8963370eb6ea4d6f6141435c8bff68e0775'],8,9,17,1,,,
+b5c8cfea8861f0b7211f5c5c8951570fb06d30e4,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-26 13:02:01+00:00,0,2023-07-26 13:02:01+00:00,0,True,False,['django.mo'],['3d12e8616a4ad7a72635bf967bab6ee34fe85b59'],0,0,0,1,,,
+3ce62dac0a2b6a4a232201bd1782c86058cd4b0e,[MISC] Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-26 15:37:41+02:00,-7200,2023-07-26 15:37:41+02:00,-7200,True,False,['CHANGELOG.md'],['f038b1a935b5b6acde70ce443b459ba6415c62d1'],0,4,4,1,,,
+bc9142250a60475ccdbc283b71550a1e2d679208,[ADD] Footer to promote help with the app translation,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-27 23:27:51+02:00,-7200,2023-07-27 23:27:51+02:00,-7200,True,False,"['CHANGELOG.md', 'django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'fleetfinder.css', 'fleetfinder.min.css', 'base.html', 'create-fleet.html', 'dashboard.html', 'edit-fleet.html', 'fleet-details.html', 'join-fleet.html', 'app-translation-footer.html']",['3ce62dac0a2b6a4a232201bd1782c86058cd4b0e'],24,188,212,20,,,
+9409ade9340a67281d3d095213d2dc9c873af210,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-29 23:45:06+00:00,0,2023-07-29 23:45:06+00:00,0,True,False,['django.po'],['bc9142250a60475ccdbc283b71550a1e2d679208'],4,8,12,1,,,
+a03a2e5b017fa2cd9863983cc558c9751ce1e393,"Translated using Weblate (German)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-29 23:45:06+00:00,0,2023-07-29 23:45:06+00:00,0,True,False,['django.po'],['9409ade9340a67281d3d095213d2dc9c873af210'],4,8,12,1,,,
+41c57af5d3161c374b014cfdd85630397d4b915a,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-29 23:45:06+00:00,0,2023-07-29 23:45:06+00:00,0,True,False,"['django.mo', 'django.mo']",['a03a2e5b017fa2cd9863983cc558c9751ce1e393'],0,0,0,2,,,
+a9919bf73da85807b7ee902db6d03d7ebb7ce2d6,[CHANGE] Version bumped to v1.3.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-30 02:52:10+02:00,-7200,2023-07-30 02:52:10+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['1260c7b73fa179da5d7acbc95f9fd1cedf96fb37'],1,4,5,2,,,
+165846dc40ea9c4b432269e4d4da9c7fd8a9ea10,[CHANGE] Make it easier to translate,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-30 18:43:11+02:00,-7200,2023-07-30 18:43:11+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'app-translation-footer.html']",['1c67c2e42df3b01ef56c0d5d45bb4c5f98216929'],111,93,204,11,,,
+ec300e0078ee28869abb53f39108364a80580d6b,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-30 23:05:13+02:00,-7200,2023-07-30 23:05:13+02:00,-7200,True,False,"['.eslintrc.json', '.pre-commit-config.yaml', 'celery.py']",['165846dc40ea9c4b432269e4d4da9c7fd8a9ea10'],23,89,112,3,,,
+4de13abbbafcfe69d4718e1f5ad34f2a5477801c,"Translated using Weblate (German)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-31 17:40:01+00:00,0,2023-07-31 17:40:01+00:00,0,True,False,['django.po'],['ec300e0078ee28869abb53f39108364a80580d6b'],13,5,18,1,,,
+0733f1eacffbc59cbb4f936cd57e508f0b79de26,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-31 17:40:01+00:00,0,2023-07-31 17:40:01+00:00,0,True,False,['django.po'],['4de13abbbafcfe69d4718e1f5ad34f2a5477801c'],14,6,20,1,,,
+9ee1caaaf992ab29d0e34d54f222c468e16ad121,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-31 17:40:01+00:00,0,2023-07-31 17:40:01+00:00,0,True,False,"['django.mo', 'django.mo']",['0733f1eacffbc59cbb4f936cd57e508f0b79de26'],0,0,0,2,,,
+10ec4e78b092f30b4c3e89d42387e9c17bc0a66a,[MISC] Fixed pre-commit repos and added pylint checks,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-02 09:38:36+02:00,-7200,2023-08-02 09:38:36+02:00,-7200,True,False,"['.pre-commit-config.yaml', '.pylintrc', 'tasks.py', 'views.py', 'settings.py']",['b7e51f56e706a6bd256275ae1c4f6a8d0ba0cf8a'],12,47,59,5,0.0,1.0,1.0
+c6451c9db174b73fe0f5e1d3f3b4ae948adbbfe7,"Translated using Weblate (German)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/
+
+Translated using Weblate (German)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-12 12:28:25+00:00,0,2023-08-12 12:28:25+00:00,0,True,False,['django.po'],['10ec4e78b092f30b4c3e89d42387e9c17bc0a66a'],2,2,4,1,,,
+0871abe3ee9d11fb5899e97a99b5699f42bb0c99,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-12 12:28:25+00:00,0,2023-08-12 12:28:25+00:00,0,True,False,['django.mo'],['c6451c9db174b73fe0f5e1d3f3b4ae948adbbfe7'],0,0,0,1,,,
+15e74828507cd2d252253b53408c7c6625f9f0f2,[FIX] Bootstrap CSS fix,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-13 11:17:52+02:00,-7200,2023-08-13 11:18:19+02:00,-7200,True,False,"['CHANGELOG.md', 'aa-bootstrap-fix.css', 'aa-bootstrap-fix.min.css']",['a8565706f00fdfeef3256a208ff9939db43d2abd'],6,10,16,3,,,
+bcffc6a99068027fc91e2be56de5313f9cdf943b,[CHANGE] Version bumped to v1.3.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-13 11:19:28+02:00,-7200,2023-08-13 11:19:28+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['15e74828507cd2d252253b53408c7c6625f9f0f2'],1,4,5,2,,,
+d37943b83a965b2b4e5b392d14148d3432d36b99,[REMOVE] Duplicate pre-commit checks,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-13 11:20:46+02:00,-7200,2023-08-13 11:20:46+02:00,-7200,True,False,['.pre-commit-config.yaml'],['bcffc6a99068027fc91e2be56de5313f9cdf943b'],8,0,8,1,,,
+2be4fe8f9dc536008777839d860ec0f05deafc51,"Translated using Weblate (Spanish)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/es/
+
+Translated using Weblate (Spanish)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-15 21:40:09+00:00,0,2023-08-15 21:40:09+00:00,0,True,False,['django.po'],['77051cc937f4a1ab5acaa6245b1d1928972936dc'],48,56,104,1,,,
+ce7cc517f7712beac79adc8bceba1bb772c65658,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-15 21:40:09+00:00,0,2023-08-15 21:40:09+00:00,0,True,False,['django.mo'],['2be4fe8f9dc536008777839d860ec0f05deafc51'],0,0,0,1,,,
+48a414df63426af1389b595e24dcadd403b992dd,[CHANGE] Version bumped to v1.4.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-15 23:49:14+02:00,-7200,2023-08-15 23:49:14+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['dc021bb6868858aba3c2ca6f66ca8aa700012ddf'],1,8,9,2,,,
+1c318b6a6e68ec7a6d30bb81cb04f14036102237,"[MISC] pre-commit, linting and source-maps",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-29 02:09:57+02:00,-7200,2023-08-29 02:09:57+02:00,-7200,True,False,"['.eslintrc.json', 'bug_report.md', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md', '.pre-commit-config.yaml', '.pylintrc', '.stylelintrc.json', 'CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'README.md', 'aa-bootstrap-fix.min.css', 'aa-bootstrap-fix.min.css.map', 'fleetfinder.min.css', 'fleetfinder.min.css.map', 'fleet-details.html', 'pyproject.toml', 'tox.ini']",['a2b3473ce75838c1e8e6618a5bb68d95234289e0'],231,268,499,18,,,
+2fc6e016630fda72becd7b6ef46751dcf36d9ac5,"Translated using Weblate (Spanish)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-30 17:40:20+00:00,0,2023-08-30 17:40:20+00:00,0,True,False,['django.po'],['1c318b6a6e68ec7a6d30bb81cb04f14036102237'],2,2,4,1,,,
+a4d7330f35564316947d5f0cbfde3dbb51d01398,"Translated using Weblate (Korean)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-30 17:40:21+00:00,0,2023-08-30 17:40:21+00:00,0,True,False,['django.po'],['2fc6e016630fda72becd7b6ef46751dcf36d9ac5'],51,53,104,1,,,
+3ec2da77516cd35418cd8fbdaa2d7b0adc112261,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-30 17:40:21+00:00,0,2023-08-30 17:40:21+00:00,0,True,False,['django.po'],['a4d7330f35564316947d5f0cbfde3dbb51d01398'],3,3,6,1,,,
+1bd4d2282189697e1209e6aa008adbac5f88b5b4,"Translated using Weblate (German)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/
+
+Translated using Weblate (German)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-30 17:40:21+00:00,0,2023-08-30 17:40:21+00:00,0,True,False,['django.po'],['3ec2da77516cd35418cd8fbdaa2d7b0adc112261'],1,1,2,1,,,
+b88855ae2b1d1bd1917f5556627de13a6c1d5c54,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-30 17:40:21+00:00,0,2023-08-30 17:40:21+00:00,0,True,False,"['django.mo', 'django.mo']",['1bd4d2282189697e1209e6aa008adbac5f88b5b4'],0,0,0,2,,,
+febc5872ce186140595e615569a61b9cad3b4f33,[CHANGE] Version set to v1.5.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-30 22:11:59+02:00,-7200,2023-08-30 22:12:32+02:00,-7200,True,False,"['CHANGELOG.md', 'README.md', 'codecov.yml', 'pyproject.toml']",['a3065ddb262b1828500ad14351cf5802bf10b465'],4,27,31,4,,,
+500a791f60de1dd65b6991f22fd9306d96746d9d,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-31 08:27:33+02:00,-7200,2023-08-31 08:27:33+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'pyproject.toml']",['d705a740ef9b59c405758d6486f14aac924c48bf'],8,8,16,2,,,
+9214d50d3429e404f707aec0127f5947255510aa,"Translated using Weblate (Korean)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ko/
+
+Translated using Weblate (Korean)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-02 15:40:23+00:00,0,2023-09-02 15:40:23+00:00,0,True,False,['django.po'],['500a791f60de1dd65b6991f22fd9306d96746d9d'],4,5,9,1,,,
+ceb163fc04500ba743e4f29b8e7a6c5f9f24ddd6,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-02 15:40:23+00:00,0,2023-09-02 15:40:23+00:00,0,True,False,['django.mo'],['9214d50d3429e404f707aec0127f5947255510aa'],0,0,0,1,,,
+113c3b24ef94009ab5792716af751a37db916026,[CHANGE] Version bumped to v1.5.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-02 18:58:52+02:00,-7200,2023-09-02 18:58:52+02:00,-7200,True,False,"['CHANGELOG.md', 'README.md', 'pyproject.toml']",['28390da7cd5e56f25645558268bd175679247394'],15,15,30,3,,,
+3c88a4317e792e9f44e69da419fc478a8e7f1316,[FIX] Restore issue templates,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-05 14:55:38+02:00,-7200,2023-09-05 14:55:38+02:00,-7200,True,False,"['bug_report.md', 'feature_request.md', 'dependabot.yml', '.pre-commit-config.yaml']",['8c1804442bdb8656521e970eca803ea50f678254'],12,28,40,4,,,
+bed9ffae94a8fa18788cdeb4f1d0e792207682a2,[MISC] Contribution guidelines updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-13 02:08:24+02:00,-7200,2023-09-13 02:08:24+02:00,-7200,True,False,['CONTRIBUTING.md'],['9c1719687b825ebc5c3d12c2c2f89322983e5b29'],35,88,123,1,,,
+eb5af95da580420a1954ebbdf7988cedb3eb802f,"Bump codecov/codecov-action from 3 to 4
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 3 to 4.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Changelog](https://github.com/codecov/codecov-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-action/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: codecov/codecov-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-15 05:17:33+00:00,0,2023-09-15 05:17:33+00:00,0,True,False,['automated-checks.yml'],['bed9ffae94a8fa18788cdeb4f1d0e792207682a2'],1,1,2,1,,,
+bd5369c5626e10ed86af5a441f1aca47b01b284f,[MISC] Contribution guidelines updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-15 09:57:31+02:00,-7200,2023-09-15 09:57:31+02:00,-7200,True,False,['CONTRIBUTING.md'],['77ae73e3a76d95bbec7af27e095e3c88ca582192'],8,69,77,1,,,
+a7d739b16edb8fbef60e71f790c6ffd8b10cb237,[FIX] Revert dependabot update as it's not working,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-15 10:36:32+02:00,-7200,2023-09-15 10:36:32+02:00,-7200,True,False,['automated-checks.yml'],['bd5369c5626e10ed86af5a441f1aca47b01b284f'],1,1,2,1,,,
+c542e0aea6b716fd8603b404afa2c0e4b1963947,[MISC] pre-commit and GH workflow configs updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-18 17:19:13+02:00,-7200,2023-09-18 17:19:13+02:00,-7200,True,False,"['automated-checks.yml', '.pre-commit-config.yaml']",['a7d739b16edb8fbef60e71f790c6ffd8b10cb237'],17,35,52,2,,,
+d9a6c1209729873be5b4938b30c22a75b627468c,[FIX] Grammar in PR template,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 11:08:50+02:00,-7200,2023-09-20 11:08:50+02:00,-7200,True,False,['PULL_REQUEST_TEMPLATE.md'],['c542e0aea6b716fd8603b404afa2c0e4b1963947'],1,1,2,1,,,
+12d4c749810784b82817b73525416f62ed2a6b73,[ADD] pre-commit.ci configuration,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 16:36:54+02:00,-7200,2023-09-20 16:36:54+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'README.md']",['d9a6c1209729873be5b4938b30c22a75b627468c'],0,15,15,2,,,
+aac0d0197208c27e39db9af2f96c6a2e32ddd523,[FIX] `actions/checkout` version in GH workflows,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 23:00:49+02:00,-7200,2023-09-20 23:00:49+02:00,-7200,True,False,"['automated-checks.yml', 'potential-duplicates.yml', 'pypi-release.yml']",['12d4c749810784b82817b73525416f62ed2a6b73'],6,41,47,3,,,
+828978a39a55c6abaa11ebe2b3b5f1ee22dbfffd,"Translated using Weblate (German)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-21 19:25:51+00:00,0,2023-09-21 19:25:51+00:00,0,True,False,['django.po'],['aac0d0197208c27e39db9af2f96c6a2e32ddd523'],2,2,4,1,,,
+4cd65571aa9803f313636b0e6df7c65f547b6a0c,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-21 19:25:51+00:00,0,2023-09-21 19:25:51+00:00,0,True,False,['django.mo'],['828978a39a55c6abaa11ebe2b3b5f1ee22dbfffd'],0,0,0,1,,,
+7ddaeaf2f3bba425b3a29da679e845ad9aca4f65,[MISC] Translation files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-21 21:29:38+02:00,-7200,2023-09-21 21:29:38+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['90e1d214baa497277d61d9e18eea3f61afb2816d'],34,35,69,10,,,
+29e005924cf896b47b9d25efd0f68b8a1ec23ab3,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-22 16:21:16+00:00,0,2023-09-22 16:21:16+00:00,0,True,False,['django.po'],['7ddaeaf2f3bba425b3a29da679e845ad9aca4f65'],6,6,12,1,,,
+aa6289a8e751f53f6cbfb42f7c62f147802f5e86,"Translated using Weblate (German)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-22 16:21:17+00:00,0,2023-09-22 16:21:17+00:00,0,True,False,['django.po'],['29e005924cf896b47b9d25efd0f68b8a1ec23ab3'],4,4,8,1,,,
+30193f0288095810f807327ad05d9a7191498a33,"Translated using Weblate (Korean)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-22 16:21:17+00:00,0,2023-09-22 16:21:17+00:00,0,True,False,['django.po'],['aa6289a8e751f53f6cbfb42f7c62f147802f5e86'],6,6,12,1,,,
+79ca877254ef37f55d6c7701629890da324e4777,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-22 16:21:17+00:00,0,2023-09-22 16:21:17+00:00,0,True,False,"['django.mo', 'django.mo', 'django.mo']",['30193f0288095810f807327ad05d9a7191498a33'],0,0,0,3,,,
+ee21dff9e8466b33b9ae03118dc2b058d3563420,[FIX] Capitalization for translatable strings,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-22 20:33:03+02:00,-7200,2023-09-22 20:33:26+02:00,-7200,True,False,"['CHANGELOG.md', 'Makefile', '0003_alter_fleet_fleet_commander_alter_fleet_groups_and_more.py', 'models.py', 'providers.py', 'create-fleet.html', 'dashboard.html', 'edit-fleet.html', 'fleet-details.html', 'join-fleet.html', 'header-navigation.html', 'views.py']",['b06fe5cc8fb21a218ab76ea718b7eb989361d8a9'],32,109,141,12,,,
+e5ff5ad337637aa57e85d9e47e510a248ddeee8e,[MISC] Translation files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-22 20:34:31+02:00,-7200,2023-09-22 20:34:31+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['ee21dff9e8466b33b9ae03118dc2b058d3563420'],618,812,1430,10,,,
+6892ec5367a2a59ac0a902625e6e2553fcf089dd,[ADD] Missing translation string,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-22 20:39:29+02:00,-7200,2023-09-22 20:39:29+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'join-fleet.html']",['e5ff5ad337637aa57e85d9e47e510a248ddeee8e'],79,39,118,11,,,
+67ab80f787036ea5d6f079e207829604e902af52,"Translated using Weblate (Korean)
+
+Currently translated at 70.4% (31 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-23 00:06:31+00:00,0,2023-09-23 00:06:31+00:00,0,True,False,['django.po'],['6892ec5367a2a59ac0a902625e6e2553fcf089dd'],12,4,16,1,,,
+10244dfb414153b90757bba3d8c6961efc4e26ea,"Translated using Weblate (Spanish)
+
+Currently translated at 61.3% (27 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-23 00:06:31+00:00,0,2023-09-23 00:06:31+00:00,0,True,False,['django.po'],['67ab80f787036ea5d6f079e207829604e902af52'],8,6,14,1,,,
+2944c87bb5c43562135eee02ec9cde1237abad73,"Translated using Weblate (German)
+
+Currently translated at 100.0% (45 of 45 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/
+
+Translated using Weblate (German)
+
+Currently translated at 95.5% (43 of 45 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-23 00:06:31+00:00,0,2023-09-23 00:06:31+00:00,0,True,False,['django.po'],['10244dfb414153b90757bba3d8c6961efc4e26ea'],38,10,48,1,,,
+bab98ebf55db763fae325c632187c3e888e3f88c,"Translated using Weblate (Russian)
+
+Currently translated at 70.4% (31 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/
+
+Translated using Weblate (Russian)
+
+Currently translated at 70.4% (31 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-23 00:06:31+00:00,0,2023-09-23 00:06:31+00:00,0,True,False,['django.po'],['2944c87bb5c43562135eee02ec9cde1237abad73'],12,4,16,1,,,
+0e8453df8a0526cd793c4252d68de549efeaef13,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-23 00:06:31+00:00,0,2023-09-23 00:06:31+00:00,0,True,False,"['django.mo', 'django.mo', 'django.mo', 'django.mo']",['bab98ebf55db763fae325c632187c3e888e3f88c'],0,0,0,4,,,
+e565e965c6cf53a6d3d485d0efb350a9ca7b8e9c,[REMOVE] Wrong option from Makefile,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-23 09:46:04+02:00,-7200,2023-09-23 09:46:04+02:00,-7200,True,False,"['Makefile', 'django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['8ea9c1faea0dd027ad6ebd63010c282666127378'],24,19,43,11,,,
+cff787598790e119ca25659b9c565aaeb5b8d1e3,"Translated using Weblate (German)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:19+00:00,0,2023-09-24 13:13:19+00:00,0,True,False,['django.po'],['e565e965c6cf53a6d3d485d0efb350a9ca7b8e9c'],3,3,6,1,,,
+a822bc8fe078e0491c3768e03ab100c2e5277a9a,"Translated using Weblate (Spanish)
+
+Currently translated at 61.3% (27 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/es/
+
+Translated using Weblate (Spanish)
+
+Currently translated at 61.3% (27 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/es/
+
+Translated using Weblate (Spanish)
+
+Currently translated at 61.3% (27 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:19+00:00,0,2023-09-24 13:13:19+00:00,0,True,False,['django.po'],['cff787598790e119ca25659b9c565aaeb5b8d1e3'],3,3,6,1,,,
+3a47e1b27378185411f268dbfe3868fea27643e3,"Translated using Weblate (French)
+
+Currently translated at 0.0% (0 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/fr/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:19+00:00,0,2023-09-24 13:13:19+00:00,0,True,False,['django.po'],['a822bc8fe078e0491c3768e03ab100c2e5277a9a'],5,7,12,1,,,
+37340bec325d75a9221236dc4fed5c243ed1485d,"Translated using Weblate (Italian)
+
+Currently translated at 0.0% (0 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/it/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:19+00:00,0,2023-09-24 13:13:19+00:00,0,True,False,['django.po'],['3a47e1b27378185411f268dbfe3868fea27643e3'],5,7,12,1,,,
+d12ae33eee617425cf1f726d33e47f0ffe16ff47,"Translated using Weblate (Japanese)
+
+Currently translated at 0.0% (0 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ja/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:20+00:00,0,2023-09-24 13:13:20+00:00,0,True,False,['django.po'],['37340bec325d75a9221236dc4fed5c243ed1485d'],5,6,11,1,,,
+cc031f0eb5c671c02c0ef9346f028cfdcbf3f104,"Translated using Weblate (Korean)
+
+Currently translated at 70.4% (31 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ko/
+
+Translated using Weblate (Korean)
+
+Currently translated at 70.4% (31 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ko/
+
+Translated using Weblate (Korean)
+
+Currently translated at 70.4% (31 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:20+00:00,0,2023-09-24 13:13:20+00:00,0,True,False,['django.po'],['d12ae33eee617425cf1f726d33e47f0ffe16ff47'],6,5,11,1,,,
+68b367effaf705621f4f3d6220aecca2e2f2443f,"Translated using Weblate (Ukrainian)
+
+Currently translated at 27.2% (12 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/
+
+Translated using Weblate (Ukrainian)
+
+Currently translated at 27.2% (12 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/
+
+Translated using Weblate (Ukrainian)
+
+Currently translated at 27.2% (12 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/
+
+Translated using Weblate (Ukrainian)
+
+Currently translated at 27.2% (12 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:20+00:00,0,2023-09-24 13:13:20+00:00,0,True,False,['django.po'],['cc031f0eb5c671c02c0ef9346f028cfdcbf3f104'],5,6,11,1,,,
+9e5155b0de3947d98f02abd485a8bb1b097a8395,"Translated using Weblate (Russian)
+
+Currently translated at 70.4% (31 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/
+
+Translated using Weblate (Russian)
+
+Currently translated at 70.4% (31 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/
+
+Translated using Weblate (Russian)
+
+Currently translated at 70.4% (31 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:20+00:00,0,2023-09-24 13:13:20+00:00,0,True,False,['django.po'],['68b367effaf705621f4f3d6220aecca2e2f2443f'],5,4,9,1,,,
+6817e8fd3ec587d9777de448b29f41d09f0cbf96,"Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 0.0% (0 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/zh_Hans/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:20+00:00,0,2023-09-24 13:13:20+00:00,0,True,False,['django.po'],['9e5155b0de3947d98f02abd485a8bb1b097a8395'],5,6,11,1,,,
+77fc703f6a888019f4f37d43ecd610b8a162e336,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:13:20+00:00,0,2023-09-24 13:13:20+00:00,0,True,False,"['django.mo', 'django.mo', 'django.mo', 'django.mo', 'django.mo', 'django.mo']",['6817e8fd3ec587d9777de448b29f41d09f0cbf96'],0,0,0,6,,,
+21425cf52d4d2cbefc2e90229e8162d1f10aaf68,[MISC] Forcing Weblate to sync both ways,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-24 16:27:26+02:00,-7200,2023-09-24 16:27:26+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['8613d84738dd2bc86dbc16bbfc50a1c22ad88ba3'],29,31,60,10,,,
+986c11b7ccb765d404f2370fa123c1269dd9cfc7,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.49.0 → v8.50.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.49.0...v8.50.0)
+- [github.com/adamchainz/django-upgrade: 1.14.1 → 1.15.0](https://github.com/adamchainz/django-upgrade/compare/1.14.1...1.15.0)
+- [github.com/asottile/pyupgrade: v3.11.0 → v3.13.0](https://github.com/asottile/pyupgrade/compare/v3.11.0...v3.13.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-25 20:26:09+00:00,0,2023-09-25 20:26:09+00:00,0,True,False,['.pre-commit-config.yaml'],['21425cf52d4d2cbefc2e90229e8162d1f10aaf68'],3,3,6,1,,,
+0363d6d5f4dca8d76b6435c582c6f4865ac12741,[MISC] Moved `docs` directory to project root,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 12:31:07+02:00,-7200,2023-09-26 12:31:07+02:00,-7200,True,False,"['.gitkeep', 'aa-fleetfinder-available-fleets-overview.jpg', 'aa-fleetfinder-create-fleet-form.jpg']",['6eb19ec756ea100cb227674b067589c698c4b4aa'],0,0,0,3,,,
+4313ac84159b8ecb77ce0d5dbb23c6324385c457,[MISC] Move from development to master,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 12:32:44+02:00,-7200,2023-09-26 12:32:44+02:00,-7200,True,False,"['dependabot.yml', 'automated-checks.yml', 'pypi-release.yml', '.pre-commit-config.yaml']",['0363d6d5f4dca8d76b6435c582c6f4865ac12741'],5,5,10,4,,,
+433daff775445bcf8f0b7be8ac16adf80f944d9c,[CHANGE] Test suite updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 12:55:51+02:00,-7200,2023-09-26 12:55:51+02:00,-7200,True,False,"['CHANGELOG.md', 'CONTRIBUTING.md', 'pyproject.toml', 'base.py', 'local.py', 'tox.ini']",['37d3036bca2af71317ef0c067e1a480e1d949302'],105,184,289,6,,,
+9fd4e7324aaea1c9393e1f8981e377cc7e2db98b,[CHANGE] Version bumped to v1.5.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 12:58:49+02:00,-7200,2023-09-26 12:58:49+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['433daff775445bcf8f0b7be8ac16adf80f944d9c'],1,3,4,2,,,
+2e40175c75e4d73d5842679257e3af3b4c83301f,"Translated using Weblate (Spanish)
+
+Currently translated at 63.6% (28 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-28 10:42:59+00:00,0,2023-09-28 10:42:59+00:00,0,True,False,['django.po'],['529cb5f6a2cfa30000f9390df5772fb74ac24cc6'],5,3,8,1,,,
+f686d3b8b8dfeb2bd22cf70f45727a549e93ef27,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-28 10:42:59+00:00,0,2023-09-28 10:42:59+00:00,0,True,False,['django.mo'],['2e40175c75e4d73d5842679257e3af3b4c83301f'],0,0,0,1,,,
+4f4990a991f1117dc577440e08558a15e616dcf1,[MISC] tox tests updated and simplified,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-28 17:20:33+02:00,-7200,2023-09-28 17:20:33+02:00,-7200,True,False,"['automated-checks.yml', 'Makefile', 'pyproject.toml', 'tox.ini']",['529cb5f6a2cfa30000f9390df5772fb74ac24cc6'],24,23,47,4,,,
+c034e2b711c049409cdb6d206fc51df6ddd6cda1,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/tox-dev/pyproject-fmt: 1.1.0 → 1.2.0](https://github.com/tox-dev/pyproject-fmt/compare/1.1.0...1.2.0)
+- [github.com/pylint-dev/pylint: v3.0.0a7 → v3.0.0](https://github.com/pylint-dev/pylint/compare/v3.0.0a7...v3.0.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,Peter Pfeufer,info@ppfeufer.de,2023-10-02 20:21:08+00:00,0,2023-10-03 13:30:22+02:00,-7200,True,False,['.pre-commit-config.yaml'],['6b4775e37d9b0f7c011edd61eee0a2f3d38fdc52'],2,2,4,1,,,
+5b27b20deb724a1cdcc7e960381fa1e9291f7575,[MISC] Dependencies in pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-10-03 13:31:27+02:00,-7200,2023-10-03 13:31:27+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'Makefile', 'tox.ini']",['c034e2b711c049409cdb6d206fc51df6ddd6cda1'],13,17,30,3,,,
+b2df6f79c0a0326ce51c2d78f090329da115f7f2,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/pre-commit-hooks: v4.4.0 → v4.5.0](https://github.com/pre-commit/pre-commit-hooks/compare/v4.4.0...v4.5.0)
+- [github.com/pre-commit/mirrors-eslint: v8.50.0 → v8.51.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.50.0...v8.51.0)
+- [github.com/editorconfig-checker/editorconfig-checker.python: 2.7.2 → 2.7.3](https://github.com/editorconfig-checker/editorconfig-checker.python/compare/2.7.2...2.7.3)
+- [github.com/asottile/pyupgrade: v3.13.0 → v3.15.0](https://github.com/asottile/pyupgrade/compare/v3.13.0...v3.15.0)
+- [github.com/abravalheri/validate-pyproject: v0.14 → v0.15](https://github.com/abravalheri/validate-pyproject/compare/v0.14...v0.15)
+- [github.com/pylint-dev/pylint: v3.0.0 → v3.0.1](https://github.com/pylint-dev/pylint/compare/v3.0.0...v3.0.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-16 17:24:11+00:00,0,2023-10-16 17:24:11+00:00,0,True,False,['.pre-commit-config.yaml'],['5b27b20deb724a1cdcc7e960381fa1e9291f7575'],6,6,12,1,,,
+427ea7b23c126da0a9be45b8395213bc26fd6f7a,"Translated using Weblate (Ukrainian)
+
+Currently translated at 27.2% (12 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-03 11:31:45+00:00,0,2023-10-16 20:26:18+00:00,0,True,False,['django.po'],['1c3a3be730e970cabfd946720f11c376b9c4ab91'],5,5,10,1,,,
+a435b4464fa419c569904f051888b0d2cba754d2,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (44 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-03 11:31:46+00:00,0,2023-10-16 20:26:18+00:00,0,True,False,['django.po'],['427ea7b23c126da0a9be45b8395213bc26fd6f7a'],35,12,47,1,,,
+3a83f3995d3fb2db6f5334996f10bbf11110286e,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-03 11:31:46+00:00,0,2023-10-16 20:26:19+00:00,0,True,False,"['django.mo', 'django.mo']",['a435b4464fa419c569904f051888b0d2cba754d2'],0,0,0,2,,,
+831841da65dff7ba80bb022257831c2f209490ac,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.51.0 → v8.52.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.51.0...v8.52.0)
+- [github.com/thibaudcolas/pre-commit-stylelint: v15.10.3 → v15.11.0](https://github.com/thibaudcolas/pre-commit-stylelint/compare/v15.10.3...v15.11.0)
+- [github.com/psf/black: 23.9.1 → 23.10.0](https://github.com/psf/black/compare/23.9.1...23.10.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-23 17:30:57+00:00,0,2023-10-23 17:30:57+00:00,0,True,False,['.pre-commit-config.yaml'],['da4f86a642724bbb1cd177c713d57152c9b85758'],3,3,6,1,,,
+3e2fdf39df90f21a961d594839684f0c836fde00,[MISC] pre-commit dependencies updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-10-25 13:51:40+02:00,-7200,2023-10-25 13:51:40+02:00,-7200,True,False,['.pre-commit-config.yaml'],['037d669137a28087632091cb5b6895f2cabdc548'],2,2,4,1,,,
+93f6f14d1d1e08ac5fb75896ecec46eb01445b4b,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.52.0 → v8.53.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.52.0...v8.53.0)
+- [github.com/psf/black: 23.10.0 → 23.11.0](https://github.com/psf/black/compare/23.10.0...23.11.0)
+- [github.com/tox-dev/pyproject-fmt: 1.2.0 → 1.5.1](https://github.com/tox-dev/pyproject-fmt/compare/1.2.0...1.5.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-13 17:31:49+00:00,0,2023-11-13 17:31:49+00:00,0,True,False,['.pre-commit-config.yaml'],['3e2fdf39df90f21a961d594839684f0c836fde00'],3,3,6,1,,,
+3513e111433f5e3fe4609b8e8842e3a3c9856064,[MISC] pre-commit dependencies updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-11-15 16:52:27+01:00,-3600,2023-11-15 16:52:27+01:00,-3600,True,False,['.pre-commit-config.yaml'],['b6c3e9f699c516b94e4264c5ce2100b2fd34500f'],4,8,12,1,,,
+86dbabca33fced6693c44fcbb590b9edfd24844a,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.53.0 → v8.55.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.53.0...v8.55.0)
+- [github.com/tox-dev/pyproject-fmt: 1.5.1 → 1.5.3](https://github.com/tox-dev/pyproject-fmt/compare/1.5.1...1.5.3)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-04 17:23:55+00:00,0,2023-12-04 17:23:55+00:00,0,True,False,['.pre-commit-config.yaml'],['3513e111433f5e3fe4609b8e8842e3a3c9856064'],2,2,4,1,,,
+96972fa1f51b272377c3595ec3e4777709a98557,"Bump actions/setup-python from 4 to 5
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 5.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v4...v5)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-07 05:10:31+00:00,0,2023-12-07 05:10:31+00:00,0,True,False,"['automated-checks.yml', 'pypi-release.yml']",['ec41b19d303797ab13267c2b6b7c537d040a8e42'],5,5,10,2,,,
+8055c56f8b0dcaff36c612433d016ed9c13f9f90,"Bump actions/upload-artifact from 3 to 4
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 3 to 4.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 06:06:09+00:00,0,2023-12-15 06:06:09+00:00,0,True,False,['automated-checks.yml'],['a674dd8e2b355a6632603ce5c58cbff9486a5022'],2,2,4,1,,,
+75d64b75d77a797796ea4c6d5c03eb339312e81a,Update automated-checks.yml,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 10:57:07+01:00,-3600,2023-12-15 10:57:07+01:00,-3600,True,False,['automated-checks.yml'],['8055c56f8b0dcaff36c612433d016ed9c13f9f90'],43,11,54,1,,,
+34e246a40a04c95bca21ee44363fe5b9b02aae13,Update pypi-release.yml,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 10:57:26+01:00,-3600,2023-12-15 10:57:26+01:00,-3600,True,False,['pypi-release.yml'],['75d64b75d77a797796ea4c6d5c03eb339312e81a'],1,1,2,1,,,
+fb96f490040b7321a965891ba5b1361f2376f285,"Translated using Weblate (Korean)
+
+Currently translated at 72.7% (32 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-12-29 10:04:27+00:00,0,2023-12-29 10:04:27+00:00,0,True,False,['django.po'],['44bc0a4155a6655711a3c599b880ada122f264f9'],5,5,10,1,,,
+679b110680cb2694d25548de9f2f9c6cf6c1ed0c,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-12-29 10:04:27+00:00,0,2023-12-29 10:04:27+00:00,0,True,False,['django.mo'],['fb96f490040b7321a965891ba5b1361f2376f285'],0,0,0,1,,,
+d12bfffd8cb320c66e34de37f08055aa7af3bb46,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.55.0 → v9.0.0-alpha.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.55.0...v9.0.0-alpha.0)
+- [github.com/thibaudcolas/pre-commit-stylelint: v15.11.0 → v16.1.0](https://github.com/thibaudcolas/pre-commit-stylelint/compare/v15.11.0...v16.1.0)
+- [github.com/PyCQA/isort: 5.12.0 → 5.13.2](https://github.com/PyCQA/isort/compare/5.12.0...5.13.2)
+- [github.com/psf/black: 23.11.0 → 23.12.1](https://github.com/psf/black/compare/23.11.0...23.12.1)
+- [github.com/pylint-dev/pylint: v3.0.1 → v3.0.3](https://github.com/pylint-dev/pylint/compare/v3.0.1...v3.0.3)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-01 17:22:00+00:00,0,2024-01-01 17:22:00+00:00,0,True,False,['.pre-commit-config.yaml'],['8831da102fb0e67812137f8179cbba554c936ba5'],5,5,10,1,,,
+98c67e97b6cc9ea06d5ee936d2b64580b91e1116,[FIX] Dependencies,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2024-01-01 22:36:27+01:00,-3600,2024-01-01 22:36:27+01:00,-3600,True,False,"['.pre-commit-config.yaml', '.stylelintrc.json']",['d12bfffd8cb320c66e34de37f08055aa7af3bb46'],11,6,17,2,,,
+403cbaa0a3c47088cd9ca433c40c0a147997e98e,"Translated using Weblate (French)
+
+Currently translated at 4.5% (2 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/fr/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-11 21:04:29+00:00,0,2024-01-11 21:04:29+00:00,0,True,False,['django.po'],['f999eb48cce729b493eae3b61262ce889f02d2cc'],8,9,17,1,,,
+040dc010b50f2dbc1dd84a5f566e29e7ca4b6aa7,"Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 11.3% (5 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/zh_Hans/
+
+Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 11.3% (5 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/zh_Hans/
+
+Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 11.3% (5 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/zh_Hans/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-11 21:04:29+00:00,0,2024-01-11 21:04:29+00:00,0,True,False,['django.po'],['403cbaa0a3c47088cd9ca433c40c0a147997e98e'],10,10,20,1,,,
+4dfec6bc542f12f96a5e622a9f36d1389e950743,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-11 21:04:29+00:00,0,2024-01-11 21:04:29+00:00,0,True,False,"['django.mo', 'django.mo']",['040dc010b50f2dbc1dd84a5f566e29e7ca4b6aa7'],0,0,0,2,,,
+8e772f66409e7c2d4e87f02bd73fef16bda2921a,"Translated using Weblate (French)
+
+Currently translated at 4.5% (2 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/fr/
+
+Translated using Weblate (French)
+
+Currently translated at 4.5% (2 of 44 strings)
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/fr/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-12 19:05:20+00:00,0,2024-01-12 19:05:20+00:00,0,True,False,['django.po'],['6bdf843ef8bebb7c555179c3868791beb81d7b2f'],4,5,9,1,,,
+42ac5ae77685214095f130168d6f35ed80869731,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Fleet Finder
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-fleetfinder/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-12 19:05:20+00:00,0,2024-01-12 19:05:20+00:00,0,True,False,['django.mo'],['8e772f66409e7c2d4e87f02bd73fef16bda2921a'],0,0,0,1,,,

@@ -1,0 +1,239 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+9196221c3b0246e11986c9707eafde02a4fd193d,Initial commit,microsoft-github-operations[bot],55726097+microsoft-github-operations[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-30 12:49:04+00:00,0,2020-09-30 12:49:04+00:00,0,True,False,['.gitignore'],[],0,350,350,1,,,
+7d270c97dc1916402d52ab624859b98a528d393e,v1.0.0 of asconnect,Microsoft Open Source,microsoftopensource@users.noreply.github.com,Dale Myers,dalemy@microsoft.com,2020-09-30 05:49:15-07:00,25200,2020-09-30 14:29:26+01:00,-3600,True,False,"['.gitignore', 'launch.json', 'settings.json', 'CODE_OF_CONDUCT.md', 'LICENSE', 'README.md', 'SECURITY.md', '__init__.py', 'app_client.py', 'app_info_client.py', 'beta_review_client.py', 'build_client.py', 'client.py', 'exceptions.py', 'httpclient.py', 'itms.py', '__init__.py', 'app_info.py', 'app_store.py', 'app_store_version_localizations.py', 'apps.py', 'beta_app_review.py', 'beta_detail.py', 'beta_groups.py', 'builds.py', 'common.py', 'idfa.py', 'localization.py', 'screenshots.py', 'screenshot_client.py', 'sorting.py', 'utilities.py', 'version_client.py', 'azure-pipelines.yml', 'poetry.lock', 'pylintrc', 'pyproject.toml', 'stylecheck.sh', 'test.sh', '__init__.py', 'conftest.py', 'test_asconnect.py']",['9196221c3b0246e11986c9707eafde02a4fd193d'],350,4747,5097,42,0.34923757993113624,0.8155435317265125,0.4058042302016724
+da6d605dfb32536197079a5036c878fc67f44034,Bump to v1.0.1,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2020-09-30 13:59:42+01:00,-3600,2020-09-30 14:29:29+01:00,-3600,True,False,['pyproject.toml'],['7d270c97dc1916402d52ab624859b98a528d393e'],1,1,2,1,,,
+1de159ca009ed3738d064fc2e37c2e25a768f668,Update repo information,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2020-09-30 14:34:26+01:00,-3600,2020-09-30 14:34:26+01:00,-3600,True,False,['pyproject.toml'],['da6d605dfb32536197079a5036c878fc67f44034'],3,3,6,1,,,
+ec46b774e4e4e4842d36349cb7573aa8925d34b7,Bump to 1.0.2,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2020-09-30 14:34:36+01:00,-3600,2020-09-30 14:34:36+01:00,-3600,True,False,['pyproject.toml'],['1de159ca009ed3738d064fc2e37c2e25a768f668'],1,1,2,1,,,
+e8976794da20cbd3c10cac8504553382e2930c00,Proposed fix,Alex Fiannaca,alfianna@microsoft.com,Alex Fiannaca,alfianna@microsoft.com,2020-10-09 11:09:58-07:00,25200,2020-10-09 11:09:58-07:00,25200,True,False,['app_info.py'],['ec46b774e4e4e4842d36349cb7573aa8925d34b7'],3,3,6,1,,,
+d61f6e9690ed2066c4dda9f8f78d18d203f135bc,Use altool for uploads,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2020-10-16 15:44:30+01:00,-3600,2020-10-16 15:44:30+01:00,-3600,True,False,"['README.md', '__init__.py', 'altool.py', 'build_client.py', 'itms.py', 'utilities.py', 'test_asconnect.py']",['ec46b774e4e4e4842d36349cb7573aa8925d34b7'],158,132,290,7,1.0,0.0,0.6956521739130435
+99de8c25264639efc88b62aa17752368e9188b07,Bump to v2.0.0,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2020-10-16 15:45:13+01:00,-3600,2020-10-16 15:45:13+01:00,-3600,True,False,['pyproject.toml'],['d61f6e9690ed2066c4dda9f8f78d18d203f135bc'],1,1,2,1,,,
+06d39b637c2752d91068fd7cbf5b8b6c331f8607,"Make exception creation more flexible
+
+This may have been crashing in several cases, but it's difficult to tell.",Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2020-10-26 10:09:15+00:00,0,2020-10-26 10:09:15+00:00,0,True,False,['exceptions.py'],['7cb903352268382617b82bb6b3736a9f4da2a17c'],5,5,10,1,,,
+5de6cb1cd39cf108902287c34572c7f3df36dab4,Bump to v2.0.1,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2020-10-26 10:09:46+00:00,0,2020-10-26 10:09:46+00:00,0,True,False,['pyproject.toml'],['06d39b637c2752d91068fd7cbf5b8b6c331f8607'],1,1,2,1,,,
+44233b7040b6d5da1027749af00a7661c136bee6,Add retry logic to upload,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2020-10-28 11:13:28+00:00,0,2020-10-28 11:13:28+00:00,0,True,False,['altool.py'],['5de6cb1cd39cf108902287c34572c7f3df36dab4'],5,29,34,1,0.0,0.0,0.0
+1912fda89778bdb1d5296fbf56726ee8fdd6763d,Bump to v2.0.2,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2020-10-28 11:13:43+00:00,0,2020-10-28 11:13:43+00:00,0,True,False,['pyproject.toml'],['44233b7040b6d5da1027749af00a7661c136bee6'],1,1,2,1,,,
+b511481064f347baaf6685d5ab4d32f1bcabbbc1,Improve logging,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-02-26 11:42:43+00:00,0,2021-02-26 11:42:43+00:00,0,True,False,['version_client.py'],['1912fda89778bdb1d5296fbf56726ee8fdd6763d'],0,3,3,1,0.0,1.0,0.0
+30b178b1b99f2b8bcaf3c12a98dc94ff174a63e4,Do not throw on new attributes/properties,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-02-26 11:43:03+00:00,0,2021-02-26 11:43:03+00:00,0,True,False,['httpclient.py'],['b511481064f347baaf6685d5ab4d32f1bcabbbc1'],7,3,10,1,1.0,1.0,1.0
+ea5b969fbd4e305a24426991048ed5e8e87a137a,Bump to v2.0.3,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-02-26 11:44:11+00:00,0,2021-02-26 11:44:11+00:00,0,True,False,['pyproject.toml'],['30b178b1b99f2b8bcaf3c12a98dc94ff174a63e4'],1,1,2,1,,,
+5198c4362429600b2bb9eb7cc3c39d9217c1ce48,Tenacity,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-02-26 14:09:07+00:00,0,2021-02-26 14:09:07+00:00,0,True,False,"['version_client.py', 'poetry.lock', 'pyproject.toml']",['ea5b969fbd4e305a24426991048ed5e8e87a137a'],343,400,743,3,,,
+73f8767084cd0649b81f533f18a806ebcd535bd6,help getting started,Aaron Crespo,aaroncrespo@gmail.com,Aaron Crespo,aaroncrespo@gmail.com,2021-06-07 13:00:24-04:00,14400,2021-06-07 13:00:24-04:00,14400,True,False,"['README.md', 'requirements.txt']",['ea5b969fbd4e305a24426991048ed5e8e87a137a'],0,19,19,2,,,
+90b29388840f1c180967bf475ad867b482507c63,change the docs.,Aaron Crespo,aaroncrespo@gmail.com,Aaron Crespo,aaroncrespo@gmail.com,2021-06-07 16:54:12-04:00,14400,2021-06-07 16:54:12-04:00,14400,True,False,"['README.md', 'requirements.txt']",['73f8767084cd0649b81f533f18a806ebcd535bd6'],19,2,21,2,,,
+1e777c47c27d2abb10950ec214d8b89a7a72e96a,Add test for setting IDFA,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-06-08 15:10:55+01:00,-3600,2021-06-08 15:10:55+01:00,-3600,True,False,['test_asconnect.py'],['5198c4362429600b2bb9eb7cc3c39d9217c1ce48'],0,24,24,1,0.0,1.0,1.0
+af63643b196b71446fe6c6cf853e8fb8e6b2549f,Update style dependencies,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-06-08 15:42:31+01:00,-3600,2021-06-08 15:42:31+01:00,-3600,True,False,"['altool.py', 'app_client.py', 'app_info_client.py', 'beta_review_client.py', 'build_client.py', 'httpclient.py', 'app_info.py', 'app_store.py', 'apps.py', 'beta_detail.py', 'screenshots.py', 'screenshot_client.py', 'sorting.py', 'version_client.py', 'poetry.lock', 'pylintrc', 'pyproject.toml', 'conftest.py', 'test_asconnect.py']",['5127c4645c05652d5c1c5b51292a68757997e606'],455,694,1149,19,0.0,0.9631336405529954,0.6682027649769585
+92f968f80ce8114cad4a874b6c8e30836d93b4bc,create and get phased releases.,Aaron Crespo,aaroncrespo@gmail.com,Aaron Crespo,aaroncrespo@gmail.com,2021-06-07 16:11:02-04:00,14400,2021-06-09 11:26:42-04:00,14400,True,False,"['README.md', 'app_client.py', 'app_store.py', 'version_client.py', 'test_asconnect.py']",['af63643b196b71446fe6c6cf853e8fb8e6b2549f'],4,119,123,5,0.7567567567567568,1.0,0.21621621621621623
+d32d2bb7f7f2e578a211fd5ed5c984a78da93cb5,add the last API.,Aaron Crespo,aaroncrespo@gmail.com,Aaron Crespo,aaroncrespo@gmail.com,2021-06-08 09:50:08-04:00,14400,2021-06-09 11:26:46-04:00,14400,True,False,"['README.md', 'app_store.py', 'version_client.py']",['92f968f80ce8114cad4a874b6c8e30836d93b4bc'],8,54,62,3,0.3333333333333333,1.0,0.3333333333333333
+b2d6c881d9d7a7a84990db99d8ef446219731079,style checked,Aaron Crespo,aaroncrespo@gmail.com,Aaron Crespo,aaroncrespo@gmail.com,2021-06-08 10:36:21-04:00,14400,2021-06-09 11:26:46-04:00,14400,True,False,['version_client.py'],['d32d2bb7f7f2e578a211fd5ed5c984a78da93cb5'],12,6,18,1,0.0,0.0,0.0
+91c8a6030b2fed4d087d3e006767d332951a9c58,rebase,Aaron Crespo,aaroncrespo@gmail.com,Aaron Crespo,aaroncrespo@gmail.com,2021-06-08 10:46:51-04:00,14400,2021-06-09 11:26:46-04:00,14400,True,False,['test_asconnect.py'],['b2d6c881d9d7a7a84990db99d8ef446219731079'],1,1,2,1,0.0,1.0,1.0
+9bb463717811a1998fc5a3d4b45c32dc5440a0f4,style check,Aaron Crespo,aaroncrespo@gmail.com,Aaron Crespo,aaroncrespo@gmail.com,2021-06-08 11:13:34-04:00,14400,2021-06-09 11:26:46-04:00,14400,True,False,['test_asconnect.py'],['91c8a6030b2fed4d087d3e006767d332951a9c58'],5,2,7,1,0.0,0.0,0.0
+259eeb27ea3a9658c673d762064e90bd771d933f,phased release refinements,Aaron Crespo,aaroncrespo@gmail.com,Aaron Crespo,aaroncrespo@gmail.com,2021-06-16 11:44:04-04:00,14400,2021-06-16 11:44:04-04:00,14400,True,False,"['README.md', 'app_store.py', 'version_client.py', 'test_asconnect.py']",['9bb463717811a1998fc5a3d4b45c32dc5440a0f4'],14,53,67,4,1.0,1.0,1.0
+d32daca2964f8911df83b0081cb2cb910d624bc5,"Update tests/test_asconnect.py
+
+Co-authored-by: Dale <1363082+dalemyers@users.noreply.github.com>",Aaron Crespo,aaroncrespo@gmail.com,GitHub,noreply@github.com,2021-06-17 11:41:36-04:00,14400,2021-06-17 11:41:36-04:00,14400,True,False,['test_asconnect.py'],['259eeb27ea3a9658c673d762064e90bd771d933f'],1,1,2,1,,,
+c132b85d68a45958b4e052824ffc9c1bbf53991d,pr feedback,Aaron Crespo,aaroncrespo@gmail.com,Aaron Crespo,aaroncrespo@gmail.com,2021-06-17 11:43:22-04:00,14400,2021-06-17 11:43:22-04:00,14400,True,False,['version_client.py'],['259eeb27ea3a9658c673d762064e90bd771d933f'],3,1,4,1,1.0,0.0,1.0
+336b3361c9b9e04710709b29f7b3d297bce5ecb4,Style check cleanup,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-06-17 16:56:15+01:00,-3600,2021-06-17 16:56:15+01:00,-3600,True,False,"['app_client.py', 'app_store.py', 'version_client.py', 'test_asconnect.py']",['34853d85add5afa6ac6506878febd19e17f95534'],18,8,26,4,,,
+28c4d6f9a2007d6f41e76efda70f8a858d37f3b1,Bump to 2.1.0,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-06-17 16:56:36+01:00,-3600,2021-06-17 16:56:36+01:00,-3600,True,False,['pyproject.toml'],['336b3361c9b9e04710709b29f7b3d297bce5ecb4'],1,1,2,1,,,
+6bc4fec2bf79938a6cd23f09480a7d2da704b767,Increase logging,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-07-08 13:41:07+01:00,-3600,2021-07-08 13:41:07+01:00,-3600,True,False,"['app_client.py', 'app_info_client.py', 'beta_review_client.py', 'build_client.py', 'app_info.py', 'app_store.py', 'app_store_version_localizations.py', 'apps.py', 'beta_app_review.py', 'beta_detail.py', 'beta_groups.py', 'builds.py', 'common.py', 'idfa.py', 'localization.py', 'screenshots.py', 'screenshot_client.py', 'version_client.py']",['28c4d6f9a2007d6f41e76efda70f8a858d37f3b1'],81,210,291,18,0.0,0.9473684210526315,0.4473684210526316
+919fdab99fc0ef73bf3250e59312ca2252144b7e,Bump to 2.1.1,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-07-08 14:17:30+01:00,-3600,2021-07-08 14:17:30+01:00,-3600,True,False,['pyproject.toml'],['6bc4fec2bf79938a6cd23f09480a7d2da704b767'],1,1,2,1,,,
+c94c8313c94efeb8c5a2c61563e267009cac2142,"Add set_uses_idfa method
+
+There is currently an asconnect bug where it ignores the `usesIdfa` attribute if you set it when creating the app. To work around it, call this new `set_uses_idfa` after creation.",Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-09-10 11:36:27+01:00,-3600,2021-09-10 11:36:27+01:00,-3600,True,False,"['version_client.py', 'test_asconnect.py']",['919fdab99fc0ef73bf3250e59312ca2252144b7e'],1,32,33,2,0.0,1.0,1.0
+1a3b3335af6f70df907792e0427e1dd1f268ec4f,Bump to 2.2.0,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-09-10 11:36:44+01:00,-3600,2021-09-10 11:36:44+01:00,-3600,True,False,['pyproject.toml'],['c94c8313c94efeb8c5a2c61563e267009cac2142'],1,1,2,1,,,
+0892f3f48dd1d3dbd9e6eea202b2038742108675,Add retry logic to get for 401 error (#8),Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-09-15 11:38:31+01:00,-3600,2021-09-15 11:38:31+01:00,-3600,True,False,"['launch.json', 'exceptions.py', 'httpclient.py', 'screenshot_client.py', 'version_client.py']",['1a3b3335af6f70df907792e0427e1dd1f268ec4f'],19,121,140,5,0.45714285714285713,0.7571428571428571,0.6857142857142857
+1b9d97eda705c2e7fd181d42a088b855ba5f8bdf,Bump to 2.2.1,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-09-15 11:38:55+01:00,-3600,2021-09-15 11:38:55+01:00,-3600,True,False,['pyproject.toml'],['0892f3f48dd1d3dbd9e6eea202b2038742108675'],1,1,2,1,,,
+55ec5c0ce5d154b00099bd37db0746ae71b0de92,Add Users client,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-10-05 13:44:31+01:00,-3600,2021-10-05 13:44:31+01:00,-3600,True,False,"['client.py', 'httpclient.py', '__init__.py', 'users.py', 'users_client.py', 'test_asconnect.py']",['1b9d97eda705c2e7fd181d42a088b855ba5f8bdf'],0,127,127,6,0.8918918918918919,0.918918918918919,0.5405405405405406
+e1761f7aeaf16697c6227f45e14f721dbb6d1667,Remove unused import,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-10-19 12:03:18+01:00,-3600,2021-10-19 12:03:18+01:00,-3600,True,False,['users.py'],['55ec5c0ce5d154b00099bd37db0746ae71b0de92'],1,1,2,1,,,
+a343bc245e5dc14dd422171ff2b6b061503d5d42,Fix type warning,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-10-19 12:03:28+01:00,-3600,2021-10-19 12:03:28+01:00,-3600,True,False,['users_client.py'],['e1761f7aeaf16697c6227f45e14f721dbb6d1667'],1,1,2,1,,,
+8f813d45506e2ea68b1928822fa2ce5e82e5899c,Retry on timeout for upload,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-10-19 12:03:36+01:00,-3600,2021-10-19 12:03:36+01:00,-3600,True,False,['altool.py'],['a343bc245e5dc14dd422171ff2b6b061503d5d42'],1,19,20,1,1.0,1.0,1.0
+79194f932c5e17ca16b0344f7ebff504c70853e2,Bump to 2.2.1,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-10-19 12:04:09+01:00,-3600,2021-10-19 12:04:09+01:00,-3600,True,False,['pyproject.toml'],['8f813d45506e2ea68b1928822fa2ce5e82e5899c'],1,1,2,1,,,
+9a2e803d23b620b84275ab326543f7cbe5634ada,Use tokens for only 10 minutes at most,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-11-11 09:53:00+00:00,0,2021-11-11 09:53:00+00:00,0,True,False,['httpclient.py'],['79194f932c5e17ca16b0344f7ebff504c70853e2'],1,4,5,1,0.0,1.0,1.0
+1dffb66eb6149e9a5c8368c7b695e5a751fb5cb6,Bump to 2.2.3,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-11-11 09:53:16+00:00,0,2021-11-11 09:53:16+00:00,0,True,False,['pyproject.toml'],['9a2e803d23b620b84275ab326543f7cbe5634ada'],1,1,2,1,,,
+973c90d36958ce056107fa98c9a2422f64977f14,Add additional token logging,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-11-23 10:20:20+00:00,0,2021-11-23 10:20:20+00:00,0,True,False,['httpclient.py'],['1dffb66eb6149e9a5c8368c7b695e5a751fb5cb6'],2,4,6,1,0.0,1.0,1.0
+8ed59f7768b5fd4de88c75ce6869ea31247bd3b2,Bump to 2.2.4,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-11-23 10:20:39+00:00,0,2021-11-23 10:20:39+00:00,0,True,False,['pyproject.toml'],['973c90d36958ce056107fa98c9a2422f64977f14'],1,1,2,1,,,
+0bd1f0e6b24e33718363fe77abdcff644c65e338,Set HTTP client log,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-11-23 15:50:31+00:00,0,2021-11-23 15:50:31+00:00,0,True,False,"['client.py', 'httpclient.py']",['8ed59f7768b5fd4de88c75ce6869ea31247bd3b2'],8,6,14,2,1.0,0.0,1.0
+a0370e8b7c1e281af67dfbc42b6921b0556ad904,Bump to 2.2.5,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-11-23 15:50:43+00:00,0,2021-11-23 15:50:43+00:00,0,True,False,['pyproject.toml'],['0bd1f0e6b24e33718363fe77abdcff644c65e338'],1,1,2,1,,,
+e4f06624428c8692742f0dfa2e5b9aad6c2453ec,"Reduce max age of tokens from 20 minutes to 15 minutes
+
+I suspect that we are hitting a clock skew bug with 20 minutes where Apple doesn't think that the token is valid since it can't be more than 20 minutes old.",Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-11-25 16:00:06+00:00,0,2021-11-25 16:00:06+00:00,0,True,False,['httpclient.py'],['a0370e8b7c1e281af67dfbc42b6921b0556ad904'],4,9,13,1,0.0,1.0,1.0
+334fa08c38a6f03976e23eef41b7c5c1da6854f1,Bump to 2.2.6,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2021-11-25 16:00:32+00:00,0,2021-11-25 16:00:32+00:00,0,True,False,['pyproject.toml'],['e4f06624428c8692742f0dfa2e5b9aad6c2453ec'],1,1,2,1,,,
+ac92df0c15487f490a28fc1a4f55cd24a85c2d88,enable altool logging,Kejia Kang,kekang@microsoft.com,Kejia Kang,kekang@microsoft.com,2022-01-05 22:48:54+08:00,-28800,2022-01-05 22:48:54+08:00,-28800,True,False,['altool.py'],['334fa08c38a6f03976e23eef41b7c5c1da6854f1'],0,1,1,1,0.0,0.0,0.0
+0529647a4d09f0facb274de8df0c5390be2245b0,Bump to 2.2.7,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2022-01-05 15:03:38+00:00,0,2022-01-05 15:03:38+00:00,0,True,False,['pyproject.toml'],['c24ad5f5ae122f6158536939b4977ed73d7f9640'],1,1,2,1,,,
+d219d2cb785fd1dce6e363d72b819faf7def1ff6,Retry on 401 auth issue for upload,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2022-01-25 14:17:04+08:00,-28800,2022-01-25 14:17:04+08:00,-28800,True,False,"['altool.py', 'build_client.py']",['0529647a4d09f0facb274de8df0c5390be2245b0'],1,4,5,2,0.3333333333333333,1.0,0.3333333333333333
+8d6159ad782b40f9f2c8e2d1570bea0854194774,Run black,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2022-01-25 09:31:21+00:00,0,2022-01-25 09:31:21+00:00,0,True,False,"['altool.py', 'build_client.py']",['9f0f6ab9af6969daf826f4c265c3df52d366b1a2'],2,2,4,2,,,
+46c6e4b7047e4cc2cfeb6c91c806105de28f4dc6,Bump to 2.2.8,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2022-01-25 09:31:43+00:00,0,2022-01-25 09:31:43+00:00,0,True,False,['pyproject.toml'],['8d6159ad782b40f9f2c8e2d1570bea0854194774'],1,1,2,1,,,
+d1615d4cdc3ce6d51e54a6555503673e9445bef6,Add retry on submitting for review,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2022-02-25 11:00:24+08:00,-28800,2022-02-25 11:00:24+08:00,-28800,True,False,['version_client.py'],['46c6e4b7047e4cc2cfeb6c91c806105de28f4dc6'],6,18,24,1,0.0,1.0,0.0
+1c725dc2036f0617854f19b9a310a91c42239c72,Retry on server-side issue only,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2022-02-25 17:29:06+08:00,-28800,2022-02-25 17:29:06+08:00,-28800,True,False,['version_client.py'],['d1615d4cdc3ce6d51e54a6555503673e9445bef6'],3,3,6,1,,,
+7a2db09925e47cab0ceaf9ac09d3ddb33fd53b75,Bump to 2.2.9,Dale Myers,dalemy@microsoft.com,Dale Myers,dalemy@microsoft.com,2022-02-28 09:26:47+00:00,0,2022-02-28 09:26:47+00:00,0,True,False,['pyproject.toml'],['dc1f1deba34b9fa81fdb816512b14b7a540315f9'],1,1,2,1,,,
+b76e445ec6121a233970fdd6d00c47a8bd7b13b1,"Bump pyjwt from 1.7.1 to 2.4.0
+
+Bumps [pyjwt](https://github.com/jpadilla/pyjwt) from 1.7.1 to 2.4.0.
+- [Release notes](https://github.com/jpadilla/pyjwt/releases)
+- [Changelog](https://github.com/jpadilla/pyjwt/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/jpadilla/pyjwt/compare/1.7.1...2.4.0)
+
+---
+updated-dependencies:
+- dependency-name: pyjwt
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-05-25 04:46:44+00:00,0,2022-05-25 04:46:44+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['7a2db09925e47cab0ceaf9ac09d3ddb33fd53b75'],9,24,33,2,,,
+b17cb8f2cd5c0fed247a975b9597dfe0aaab7df5,Make some attributes of AppStoreVersionLocalization optional,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2022-07-15 14:31:26+08:00,-28800,2022-07-15 14:31:26+08:00,-28800,True,False,['app_store_version_localizations.py'],['1c725dc2036f0617854f19b9a310a91c42239c72'],3,3,6,1,,,
+528894d743c87e319d8dcc77683c935fc8aeb816,Fix typo,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2022-07-15 14:31:45+08:00,-28800,2022-07-15 14:31:45+08:00,-28800,True,False,['version_client.py'],['b17cb8f2cd5c0fed247a975b9597dfe0aaab7df5'],1,1,2,1,,,
+d1a290f0c1b9124e01a91b859ff46fd31575633b,Bump to 2.2.10,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2022-10-21 16:59:29+08:00,-28800,2022-10-21 16:59:29+08:00,-28800,True,False,['pyproject.toml'],['73addcbc197c80e62286852a46b9d680614cfa45'],1,1,2,1,,,
+439a5f094f351ed7fce92946fc62c95b7051709f,"Bump certifi from 2021.5.30 to 2022.12.7
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2021.5.30 to 2022.12.7.
+- [Release notes](https://github.com/certifi/python-certifi/releases)
+- [Commits](https://github.com/certifi/python-certifi/compare/2021.05.30...2022.12.07)
+
+---
+updated-dependencies:
+- dependency-name: certifi
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-09 06:18:43+00:00,0,2022-12-09 06:18:43+00:00,0,True,False,['poetry.lock'],['d1a290f0c1b9124e01a91b859ff46fd31575633b'],22,22,44,1,,,
+78e8e76404baab9cd8905e0a6e4e7b334218cee5,"Bump cryptography from 3.4.7 to 39.0.1
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 3.4.7 to 39.0.1.
+- [Release notes](https://github.com/pyca/cryptography/releases)
+- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/3.4.7...39.0.1)
+
+---
+updated-dependencies:
+- dependency-name: cryptography
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-02-08 01:39:18+00:00,0,2023-02-08 01:39:18+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['acff5aa1b0fbb1ad7d23554189b94a19ba094ca0'],400,409,809,2,,,
+5cc2affc10ebc626ee4c8d49442cece2149ac0b1,Fix missing module import,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-02-13 10:56:01+08:00,-28800,2023-02-13 10:56:01+08:00,-28800,True,False,['version_client.py'],['7676c4db253036e14e60516b29ccdad5f7106b5e'],0,1,1,1,,,
+507e284883a3a791182ec4fbb8a519d6ab0da699,Bump to 2.2.11,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-02-13 23:14:54+08:00,-28800,2023-02-13 23:14:54+08:00,-28800,True,False,['pyproject.toml'],['1688849447c05a349482353a0e5bec88427ad88b'],1,1,2,1,,,
+300f72d1e1f1d030b9cae187590180778cabb4be,"PyJWT returns a string in version 2+
+
+Fixes https://github.com/microsoft/asconnect/issues/19",Dale,1363082+dalemyers@users.noreply.github.com,GitHub,noreply@github.com,2023-02-14 17:03:10+00:00,0,2023-02-14 17:03:10+00:00,0,True,False,['httpclient.py'],['507e284883a3a791182ec4fbb8a519d6ab0da699'],1,4,5,1,0.0,1.0,1.0
+fa0a0b015e9ce1f664bb03d128c456cb46141a7a,Bump to 2.2.12,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-03-07 10:42:58+08:00,-28800,2023-03-07 10:42:58+08:00,-28800,True,False,['pyproject.toml'],['da94e89bf89ba1a97502cd7582b13c1984df4a76'],1,1,2,1,,,
+a08c8ada8f915a4f388a2fd6e234d43f0c246671,Update dependencies,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-03-25 00:08:50+08:00,-28800,2023-03-25 00:08:50+08:00,-28800,True,False,"['poetry.lock', 'pyproject.toml']",['fa0a0b015e9ce1f664bb03d128c456cb46141a7a'],547,648,1195,2,,,
+fb6012121113dce08aaaade26f46c640869b6010,Fix lint,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-03-25 00:28:52+08:00,-28800,2023-03-25 00:28:52+08:00,-28800,True,False,"['httpclient.py', 'utilities.py', 'version_client.py', 'pylintrc', 'conftest.py', 'test_asconnect.py']",['a08c8ada8f915a4f388a2fd6e234d43f0c246671'],13,8,21,6,,,
+cf5038109018b2c9142913e67fa28039dce51a4f,Add lint,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-03-25 00:43:42+08:00,-28800,2023-03-25 00:43:42+08:00,-28800,True,False,['lint.yml'],['fb6012121113dce08aaaade26f46c640869b6010'],0,42,42,1,,,
+aae34889bc5a83b9937ac2ed58eb48b4e4b753c7,Fix env,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-03-25 00:50:17+08:00,-28800,2023-03-25 00:50:17+08:00,-28800,True,False,['lint.yml'],['cf5038109018b2c9142913e67fa28039dce51a4f'],4,2,6,1,,,
+229eb824609d222cb33599a462858f497c96d4dc,Remove unused azure pipeline definition,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-03-25 00:54:08+08:00,-28800,2023-03-25 00:54:08+08:00,-28800,True,False,['azure-pipelines.yml'],['aae34889bc5a83b9937ac2ed58eb48b4e4b753c7'],59,0,59,1,,,
+ba0589cf6431a75d7f72d6c0ef2e5363780aa303,get attached build,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-04-11 15:32:51+08:00,-28800,2023-04-11 15:32:51+08:00,-28800,True,False,"['version_client.py', 'test_asconnect.py']",['c6c8dcbedea139fbfd36a2e067fda18553fde162'],0,35,35,2,1.0,1.0,1.0
+65d03630b4e5854c8ad67fdf5521c2d85e2abf6d,Fix lint,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-04-11 15:40:14+08:00,-28800,2023-04-11 15:40:14+08:00,-28800,True,False,['version_client.py'],['ba0589cf6431a75d7f72d6c0ef2e5363780aa303'],1,1,2,1,,,
+4f170b9e24bcdd0aa6dbd6fcbcaf50221e0c3e94,Add publish workflow,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-04-11 16:35:24+08:00,-28800,2023-04-11 16:35:24+08:00,-28800,True,False,['publish.yml'],['0e5cc9f568926e6e581bb0cee761d6ecbab7cdab'],0,36,36,1,,,
+4a30bb02945a792aaf6461e731dfff8a8f45257b,Fix indent,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-04-11 16:36:47+08:00,-28800,2023-04-11 16:36:47+08:00,-28800,True,False,['publish.yml'],['4f170b9e24bcdd0aa6dbd6fcbcaf50221e0c3e94'],5,5,10,1,,,
+6bb57803cfdeee417afc885860993ef933066ab9,Bump to 2.2.13,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-04-11 16:43:07+08:00,-28800,2023-04-11 16:43:07+08:00,-28800,True,False,['pyproject.toml'],['6caff02f46c5c3169df81d15119afbfdb1f5eafe'],1,1,2,1,,,
+e3bf6105933723225439fe1619b17f11846469ba,"Bump requests from 2.28.2 to 2.31.0
+
+Bumps [requests](https://github.com/psf/requests) from 2.28.2 to 2.31.0.
+- [Release notes](https://github.com/psf/requests/releases)
+- [Changelog](https://github.com/psf/requests/blob/main/HISTORY.md)
+- [Commits](https://github.com/psf/requests/compare/v2.28.2...v2.31.0)
+
+---
+updated-dependencies:
+- dependency-name: requests
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-23 06:27:24+00:00,0,2023-05-23 06:27:24+00:00,0,True,False,['poetry.lock'],['6bb57803cfdeee417afc885860993ef933066ab9'],6,6,12,1,,,
+0d979be36f40e7bb6736c702c968ddc0c30ab5b3,Fix screenshots,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-05-26 17:11:18+08:00,-28800,2023-05-26 17:11:18+08:00,-28800,True,False,['screenshots.py'],['5948741b89644aae5cbe2cde9352d2403233a2ca'],1,4,5,1,,,
+d18d5c874413e5bee4f6c001ce62af9e2c541cb3,Bump to 3.0.0,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-05-26 17:13:17+08:00,-28800,2023-05-26 17:13:17+08:00,-28800,True,False,['pyproject.toml'],['0d979be36f40e7bb6736c702c968ddc0c30ab5b3'],1,1,2,1,,,
+80ea0a4fac0364017d67507b8f9cf275c57a55cc,Fix ScreenshotDisplayTypes,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-05-27 00:15:02+08:00,-28800,2023-05-27 00:15:02+08:00,-28800,True,False,['screenshots.py'],['a990c07ef349c5532bf6876335e9e78aeefaf71f'],3,6,9,1,,,
+b5b52f3cfcb13c6ccdf8e34368bab9a0a1a22de3,Bump to 3.0.1,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-05-29 10:25:34+08:00,-28800,2023-05-29 10:25:34+08:00,-28800,True,False,['pyproject.toml'],['1e21ba31495e607ee60ad8a098f4a839ec6a6b12'],1,1,2,1,,,
+5242cf98ef7ff5e9dd7eb9b526e69cf0a6afe244,"Bump cryptography from 40.0.0 to 41.0.0
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 40.0.0 to 41.0.0.
+- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/40.0.0...41.0.0)
+
+---
+updated-dependencies:
+- dependency-name: cryptography
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-02 20:24:23+00:00,0,2023-06-02 20:24:23+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['b5b52f3cfcb13c6ccdf8e34368bab9a0a1a22de3'],27,27,54,2,,,
+dda4b6396cc47b205bcc58d575c5c65ff57e3752,"Migrate to Azure publishing gateway (#28)
+
+* Create Azure Pipeline for publishing
+
+* Fix typo
+
+* Add ESRP release process
+
+* Update main publisher
+
+* Bump to 3.0.2 for testing
+
+* Remove github publish action
+
+* Disable CI for publishing
+
+* Force refresh PR
+
+* Disable CI on Azure UI instead
+
+* Disabled on PR validation
+
+---------
+
+Co-authored-by: Jasper Guo <jiuboguo@microsoft.com>",guojiubo,guojiubo@gmail.com,GitHub,noreply@github.com,2023-07-05 15:41:59+08:00,-28800,2023-07-05 15:41:59+08:00,-28800,True,False,"['publish.yml', 'publish.yml', 'pyproject.toml']",['f55db3fdbc4451d616f6b0505b38d3bdb5319fcf'],37,40,77,3,,,
+8c252a376c9f04ec4970b3024dc951dd57958902,"Bump cryptography from 41.0.0 to 41.0.3
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 41.0.0 to 41.0.3.
+- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/41.0.0...41.0.3)
+
+---
+updated-dependencies:
+- dependency-name: cryptography
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-02 02:04:05+00:00,0,2023-08-02 02:04:05+00:00,0,True,False,['poetry.lock'],['dda4b6396cc47b205bcc58d575c5c65ff57e3752'],60,25,85,1,,,
+d67f33716980c9f1f5e8a0309c2e20990a791258,"Bump certifi from 2022.12.7 to 2023.7.22 (#30)
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2022.12.7 to 2023.7.22.
+- [Commits](https://github.com/certifi/python-certifi/compare/2022.12.07...2023.07.22)
+
+---
+updated-dependencies:
+- dependency-name: certifi
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-07 10:33:41+08:00,-28800,2023-09-07 10:33:41+08:00,-28800,True,False,['poetry.lock'],['4286dc70bd713b1bcffe9cfe489a15b39a7a16f1'],3,3,6,1,,,
+1290be5aa968a8d09d7827ba640a27bf12f2a0a0,"Allow customization of release type (#32)
+
+Co-authored-by: Jasper Guo <jiuboguo@microsoft.com>",guojiubo,guojiubo@gmail.com,GitHub,noreply@github.com,2023-09-08 12:08:06+08:00,-28800,2023-09-08 12:08:06+08:00,-28800,True,False,['app_client.py'],['d67f33716980c9f1f5e8a0309c2e20990a791258'],2,12,14,1,0.0,1.0,0.0
+377aacec0419becee109fee81a9cf48a25431b2b,Bump to 3.0.3,Jasper Guo,jiuboguo@microsoft.com,Jasper Guo,jiuboguo@microsoft.com,2023-09-08 12:09:16+08:00,-28800,2023-09-08 12:09:16+08:00,-28800,True,False,['pyproject.toml'],['1290be5aa968a8d09d7827ba640a27bf12f2a0a0'],1,1,2,1,,,
+a03258756059d7e77486452e86f3e0110a414113,"Bump cryptography from 41.0.3 to 41.0.4
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 41.0.3 to 41.0.4.
+- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/41.0.3...41.0.4)
+
+---
+updated-dependencies:
+- dependency-name: cryptography
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-21 20:57:43+00:00,0,2023-09-21 20:57:43+00:00,0,True,False,['poetry.lock'],['377aacec0419becee109fee81a9cf48a25431b2b'],25,25,50,1,,,
+dbf251af92d5c503a10031fe758e5d625b778968,"Bump urllib3 from 1.26.15 to 1.26.17
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 1.26.15 to 1.26.17.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/1.26.15...1.26.17)
+
+---
+updated-dependencies:
+- dependency-name: urllib3
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-03 03:13:16+00:00,0,2023-10-03 03:13:16+00:00,0,True,False,['poetry.lock'],['5184a79bc5fbc3c6bfac5c64d9867bc3fca32172'],4,4,8,1,,,

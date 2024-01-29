@@ -1,0 +1,1542 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+71bea095b65d769418120758fd1d6eb6a67b0576,Initial commit,Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2021-05-26 07:34:48+02:00,-7200,2021-05-26 07:34:48+02:00,-7200,True,False,"['.gitignore', 'LICENSE']",[],0,150,150,2,,,
+4ef8c258cf46fae3631a233ee58066af3797e06a,"Kick off (#1)
+
+This is the very first version of the meta model.
+Mind that the meta-model is still a work in progress, so this version is
+neither complete nor valid.
+
+The current meta-model should serve only as a starting point for further
+collaboration.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-12 09:50:54+01:00,-3600,2021-11-12 09:50:54+01:00,-3600,True,False,"['.gitignore', 'aas-core3-meta.iml', 'csv-plugin.xml', 'Project_Default.xml', 'profiles_settings.xml', 'misc.xml', 'modules.xml', 'vcs.xml', '__init__.py', 'marker.py', 'v3rc1.py', 'verification.py', 'requirements.txt']",['71bea095b65d769418120758fd1d6eb6a67b0576'],0,1527,1527,13,0.40730337078651685,1.0,0.21348314606741572
+7eb808fc9b76ab4e48bf57c20088390c27e4c4e6,"Rename to aas-core-meta repository (#2)
+
+We rename the repository and the underlying Python package so that we
+can accomodate more than version 3.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-12 09:53:18+01:00,-3600,2021-11-12 09:53:18+01:00,-3600,True,False,"['__init__.py', 'marker.py', 'v3rc1.py', 'verification.py']",['4ef8c258cf46fae3631a233ee58066af3797e06a'],0,0,0,4,,,
+a373c3349330d5d56af455c0c0a1057705de3f82,Create README.md (#3),Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-12 11:23:47+01:00,-3600,2021-11-12 11:23:47+01:00,-3600,True,False,['README.md'],['7eb808fc9b76ab4e48bf57c20088390c27e4c4e6'],0,2,2,1,,,
+098027e7a09b7aefbd797df4b2a8bf977f664989,"Review on 12.11.2021 (#4)
+
+Co-authored-by: Marcin Sadurski <sadu@zhaw.ch>",Marcin Sadurski,37665173+sadelko@users.noreply.github.com,GitHub,noreply@github.com,2021-11-12 11:40:30+01:00,-3600,2021-11-12 11:40:30+01:00,-3600,True,False,['v3rc1.py'],['a373c3349330d5d56af455c0c0a1057705de3f82'],43,108,151,1,0.35555555555555557,1.0,0.3333333333333333
+49bbb542dab8e139286678a7686cbe6884eaea26,"From 4.7.8 to 4.7.13. 2021-11-16 (#5)
+
+Co-authored-by: Nico Braunisch <nico.braunisch@tu-dresden.de>",Marcin Sadurski,37665173+sadelko@users.noreply.github.com,GitHub,noreply@github.com,2021-11-16 15:45:45+01:00,-3600,2021-11-16 15:45:45+01:00,-3600,True,False,['v3rc1.py'],['098027e7a09b7aefbd797df4b2a8bf977f664989'],32,802,834,1,0.015873015873015872,1.0,0.015873015873015872
+ab1e2e0341c13f94504807de95b1e8dc5e6d4f43,"Finish V3RC1 till security model (#6)
+
+This patch finalizes V3RC1 with all the models till security, after the
+joint session of @sadelko and @manu3756.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-17 14:15:08+01:00,-3600,2021-11-17 14:15:08+01:00,-3600,True,False,['v3rc1.py'],['49bbb542dab8e139286678a7686cbe6884eaea26'],86,396,482,1,0.17647058823529413,1.0,0.17647058823529413
+6e1cbbb2fc3b03071941b200d08fe83c8347b161,"Make v3rc1 conform to future pre-commit checks (#7)
+
+This patch makes the meta-model v3rc1 conform to the pre-commit checks
+which we will merge in a future pull request.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-17 16:09:15+01:00,-3600,2021-11-17 16:09:15+01:00,-3600,True,False,"['aas-core3-meta.iml', 'misc.xml', 'marker.py', 'v3rc1.py', 'verification.py']",['ab1e2e0341c13f94504807de95b1e8dc5e6d4f43'],528,532,1060,5,0.0,0.0,0.0
+809dd1ef5b46bb084138a7e0a3db16da15345818,"Add pre-commit, setup.py and CI (#8)
+
+This patch introduces the pre-commit checks (formatting, mypy, making
+sure the meta-models are importable *etc.*).",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-17 16:12:06+01:00,-3600,2021-11-17 16:12:06+01:00,-3600,True,False,"['check-commit-messages-in-push.yml', 'check-pull-request-title-and-description.yml', 'ci.yml', 'publish-to-pypi.yml', 'csv-plugin.xml', 'rist.xml', 'CONTRIBUTING.rst', 'README.md', 'README.rst', '__init__.py', 'py.typed', 'additional-verbs-in-imperative-mood.txt', 'check_init_and_setup_coincide.py', 'precommit.py', 'setup.py']",['6e1cbbb2fc3b03071941b200d08fe83c8347b161'],3,622,625,15,0.0,0.0,1.0
+1e25c6b6fa1301b705df8d458511898de00d7aff,"Rename `URI` abbreviations (#9)
+
+Rename `*_uri` to `*_URI` to make for better identifiers in target
+languages.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-17 16:20:58+01:00,-3600,2021-11-17 16:20:58+01:00,-3600,True,False,['v3rc1.py'],['809dd1ef5b46bb084138a7e0a3db16da15345818'],1,1,2,1,,,
+fca93a105ba484ac51a36c8041ccdc8bc33ead1b,"Release 2021.11.20a2 (#10)
+
+This is a pre-release to test publishing to PyPI.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-17 16:22:52+01:00,-3600,2021-11-17 16:22:52+01:00,-3600,True,False,"['__init__.py', 'setup.py']",['1e25c6b6fa1301b705df8d458511898de00d7aff'],2,2,4,2,,,
+28016e319c4cd75f64bf53ec8a708fc7b61e9bc7,"In-line type aliases (#11)
+
+This patch removes the aliasing of built-in types such as
+`Value_data_type` for `str` *etc.*",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-17 16:35:04+01:00,-3600,2021-11-17 16:35:04+01:00,-3600,True,False,['v3rc1.py'],['fca93a105ba484ac51a36c8041ccdc8bc33ead1b'],28,17,45,1,,,
+9916f668c93952f14b42d3364cd766d66c8218d0,"Fix V3RC1 for JSON schema generation (#12)
+
+This patch includes various minor fixes so that aas-core-codegen can
+translate it into a JSON schema.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-18 00:18:50+01:00,-3600,2021-11-18 00:18:50+01:00,-3600,True,False,"['marker.py', 'v3rc1.py']",['28016e319c4cd75f64bf53ec8a708fc7b61e9bc7'],124,145,269,2,0.5,1.0,0.5
+f10122d62354c7b9cac9ab1eaa3ad1a14deef4cc,"Add security part to V3RC1 (#13)
+
+This patch includes the classes related to the security to V3RC1.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-18 00:44:45+01:00,-3600,2021-11-18 00:44:45+01:00,-3600,True,False,['v3rc1.py'],['9916f668c93952f14b42d3364cd766d66c8218d0'],26,488,514,1,0.8,1.0,0.2545454545454545
+aff7928684e4008e95f8775424ec393af91927bb,"Add V3RC2 (#14)
+
+This patch adds the meta-model for V3RC2. It also makes minor changes to
+V3RC1 to make the two meta-models easier to compare.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-18 01:23:34+01:00,-3600,2021-11-18 01:23:34+01:00,-3600,True,False,"['rist.xml', 'v3rc1.py', 'v3rc2.py']",['f10122d62354c7b9cac9ab1eaa3ad1a14deef4cc'],9,2651,2660,3,0.16066481994459833,1.0,0.06509695290858726
+9c3b002bb19af4c03dc04ab8f260557cd99c2ba6,"Implement RC2 up to 6.8.2.3 in the book (#16)
+
+Co-authored-by: Nico Braunisch <nico.braunisch@tu-dresden.de>",Marcin Sadurski,37665173+sadelko@users.noreply.github.com,GitHub,noreply@github.com,2021-11-19 14:46:59+01:00,-3600,2021-11-19 14:46:59+01:00,-3600,True,False,"['marker.py', 'v3rc1.py', 'v3rc2.py']",['aff7928684e4008e95f8775424ec393af91927bb'],131,257,388,3,1.0,1.0,0.3181818181818182
+e97900f18a2347d422ff6005577ceb78001f55d9,"Change V3RC1 after diff against the JSON Schema (#17)
+
+We compared ""official"" JSON Schema [1] against the generated ones, and
+changed the meta-model for V3RC1 accordingly. Mind that many parts of
+the ""official"" JSON Schema were not documented properly in the book [2],
+so we had to leave them out in the meta-model as well.
+
+[1]: https://github.com/admin-shell-io/aas-specs/blob/master/schemas/json/aas.json
+[2]: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/Details_of_the_Asset_Administration_Shell_Part1_V3.pdf?__blob=publicationFile&v=5",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-19 16:30:27+01:00,-3600,2021-11-19 16:30:27+01:00,-3600,True,False,['v3rc1.py'],['9c3b002bb19af4c03dc04ab8f260557cd99c2ba6'],32,30,62,1,0.0,0.0,0.0
+3c15703bc4ceee10ede02d6f2aa32b0548a9cba6,"First draft RC2. (#18)
+
+Co-authored-by: Nico Braunisch <nico.braunisch@tu-dresden.de>",Marcin Sadurski,37665173+sadelko@users.noreply.github.com,GitHub,noreply@github.com,2021-11-22 13:58:57+01:00,-3600,2021-11-22 13:58:57+01:00,-3600,True,False,"['marker.py', 'v3rc1.py', 'v3rc2.py']",['e97900f18a2347d422ff6005577ceb78001f55d9'],53,58,111,3,1.0,1.0,1.0
+68b3e648566023615038e4f25af27eb13b2482ba,Fixed Chapter Marks in RC2 (#19),Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2021-11-25 10:38:50+01:00,-3600,2021-11-25 10:38:50+01:00,-3600,True,False,['v3rc2.py'],['3c15703bc4ceee10ede02d6f2aa32b0548a9cba6'],62,62,124,1,,,
+b42a36bc73d605ef1fb4aafe7d4eaeb47ae2ccf2,"Implement Bugfixes in RC1 (#20)
+
+* Implemented Bugfixes in RC1
+Add: Inheritence AdministrativeInformation  -> HasDataSpecification
+Add: Class Has_extensions
+Add: Class Extension
+
+* Removed Duplicat Has_semantics",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2021-11-25 13:34:47+01:00,-3600,2021-11-25 13:34:47+01:00,-3600,True,False,"['.name', 'aas-core3-meta.iml', 'codeStyleConfig.xml', 'misc.xml', 'v3rc1.py', 'v3rc2.py']",['68b3e648566023615038e4f25af27eb13b2482ba'],111,176,287,6,1.0,1.0,0.13333333333333333
+14f7e0d91bc014009353a9424e0babe0a88f0036,"Log better error messages in precommit (#21)
+
+Currently, the precommit fails with exceptions whenever a command
+execution fails. This is confusing for the developer since it is hard to
+distinguish genuin precommit failures from bugs in the precommit script.
+
+Therefore we log messages to STDERR instead of raising exceptions.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-26 09:16:11+01:00,-3600,2021-11-26 09:16:11+01:00,-3600,True,False,['precommit.py'],['b42a36bc73d605ef1fb4aafe7d4eaeb47ae2ccf2'],9,37,46,1,0.0,0.0,1.0
+8d6de556f9d2cf2a00f626c7c1a254cb7d60365f,"Introduce `Ref` marker (#22)
+
+We introduce a generic class as a marker for references which are
+represented with `ref*` in the book.
+
+In this patch, we fix only v3RC1 and leave V3RC2 for the following
+patches.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-26 10:11:32+01:00,-3600,2021-11-26 10:11:32+01:00,-3600,True,False,"['aas-core3-meta.iml', 'misc.xml', 'marker.py', 'v3rc1.py']",['14f7e0d91bc014009353a9424e0babe0a88f0036'],55,92,147,4,0.0,1.0,0.2
+6f0cf5971fc6c84dc59b46d829bc735653fa9ce8,"Introduce `is_superset_of` marker (#23)
+
+This marker helps us model the relationships between different
+enumerations. We need the marker since Python does not support
+inheritance of enumerations.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-26 10:57:41+01:00,-3600,2021-11-26 10:57:41+01:00,-3600,True,False,"['marker.py', 'v3rc1.py']",['8d6de556f9d2cf2a00f626c7c1a254cb7d60365f'],49,59,108,2,1.0,1.0,1.0
+dde625209e4f0050f4f5ea9bb918ce4125d46729,"Rename `json_serialization` to `serialization` (#24)
+
+The serialization needs to specify the concrete type since the given
+type is abstract and the implemented de-serializations need to know
+the concrete type up-front.
+
+Therefore, the previous JSON serialization settings generalize also to
+all serializations (including XML).",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-26 11:05:21+01:00,-3600,2021-11-26 11:05:21+01:00,-3600,True,False,"['marker.py', 'v3rc1.py']",['6f0cf5971fc6c84dc59b46d829bc735653fa9ce8'],7,9,16,2,1.0,1.0,1.0
+d250b8a7ce57a44a466994fefa72b0ed1627f89a,"Make `Constraint` model-typed in V3RC1 (#25)
+
+The `Constraint` shows up in properties, but it is an abstract class.
+Therefore, the deserializers need to know the model type upfront.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-26 11:18:56+01:00,-3600,2021-11-26 11:18:56+01:00,-3600,True,False,['v3rc1.py'],['dde625209e4f0050f4f5ea9bb918ce4125d46729'],0,1,1,1,,,
+b23f8a46b80078211bf46e7b6943343e9386e6e0,"Changes in RC2 on 2021-11-26 (#26)
+
+Add Serilization
+Add REF[...]
+Chnage Enum",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2021-11-26 14:23:21+01:00,-3600,2021-11-26 14:23:21+01:00,-3600,True,False,['v3rc2.py'],['d250b8a7ce57a44a466994fefa72b0ed1627f89a'],56,29,85,1,,,
+76f5374cf273970590d4b5b1b5b16ad28146071f,"Fix issues discovered in codegen for v3rc1 (#27)
+
+This patch encompasses all the fixes for the issues which were
+discovered only at the codegen phase. Since we are introducing `Ref`
+type, we could not run the codegen before.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-11-28 22:07:45+01:00,-3600,2021-11-28 22:07:45+01:00,-3600,True,False,"['.name', 'v3rc1.py']",['b23f8a46b80078211bf46e7b6943343e9386e6e0'],72,51,123,2,0.0,1.0,0.0
+913e825f2f0cf79903b0914e034cdc1cc78d3b18,"Change indexes in new rc2 version (#28)
+
+* Changes in RC2 on 2021-11-26
+Add Serilization
+Add REF[...]
+Chnage Enum
+
+* Change indexes in new version of RC2",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2021-12-07 09:47:52+01:00,-3600,2021-12-07 09:47:52+01:00,-3600,True,False,['v3rc2.py'],['76f5374cf273970590d4b5b1b5b16ad28146071f'],62,62,124,1,,,
+88b618c82f78392a47ee58cf2657ae6df8e5a418,"Fix V3RC2 for code generation (#29)
+
+This patch includes the fixes necessary so that we can generate the JSON
+schema for it. We merely reacted to errors returned by the code
+generator.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2021-12-13 23:05:58+01:00,-3600,2021-12-13 23:05:58+01:00,-3600,True,False,"['csv-plugin.xml', 'v3rc2.py', 'verification.py']",['913e825f2f0cf79903b0914e034cdc1cc78d3b18'],142,191,333,3,0.0,1.0,0.0
+6bd173a028df31bc6d6bc9cc2322e304d435837f,"Sync with aas-core-codegen (#30)
+
+The latest version of aas-core-codegen introduced changes in the
+meta-model. We sync the meta-models to make them conformant.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-02-17 05:36:21+01:00,-3600,2022-02-17 05:36:21+01:00,-3600,True,False,"['csv-plugin.xml', 'rist.xml', 'marker.py', 'v3rc1.py', 'v3rc2.py', 'verification.py']",['88b618c82f78392a47ee58cf2657ae6df8e5a418'],594,762,1356,6,0.0,1.0,0.9459459459459459
+28461695691e41966be0f21b82cc95702354e110,"Fix omitted renames in V3RC02 (#31)
+
+We forgot to propagate the renames of the ``value`` attribute to the
+constructor in #30. This patch fixes the issue.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-02-17 05:43:16+01:00,-3600,2022-02-17 05:43:16+01:00,-3600,True,False,['v3rc2.py'],['6bd173a028df31bc6d6bc9cc2322e304d435837f'],6,6,12,1,,,
+79761ff3e5c0b5fb674ea324607ec3033a6c0d8d,"Add Fragment in V3.0RC01 (#32)
+
+We introduce attribute fragment for the marker
+@reference_in_the_book. The Fragment allows us to link back to the
+(sub-)section in the original spec PDF.
+
+Co-authored-by: Marko Ristin <marko.ristin@gmail.com>",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-02-18 13:36:19+01:00,-3600,2022-02-18 13:36:19+01:00,-3600,True,False,"['marker.py', 'v3rc1.py']",['28461695691e41966be0f21b82cc95702354e110'],24,127,151,2,0.0,1.0,0.0
+8967e65773e5dc5377aebaa77f632463697c7f81,"Update V3RC01 after a round of SHACL review (#33)
+
+We compared the generated SHACL schema against the ""official"" one. This
+patch contains all the resolved differences.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-02 18:55:28+01:00,-3600,2022-03-02 18:55:28+01:00,-3600,True,False,['v3rc1.py'],['79761ff3e5c0b5fb674ea324607ec3033a6c0d8d'],76,78,154,1,1.0,1.0,1.0
+ab7501d6fcfbb7e7d8bbaa35462f93071bbf90e6,"Make postfixes after SHACL review of V3RC01 (#34)
+
+This patch comprises post-fixes which were omitted by mistake after the
+review against the ""official"" SHACL schema for V3RC01.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-02 19:16:12+01:00,-3600,2022-03-02 19:16:12+01:00,-3600,True,False,['v3rc1.py'],['8967e65773e5dc5377aebaa77f632463697c7f81'],0,1,1,1,,,
+ef3b97391e1845fbfbdeb98601bac04f8566a2c6,"Write constraint references as `:constraintref:` (#35)
+
+We include structured references for constraints. They are necessary
+so that it is easier to generate links in the browsable documentation.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-03 07:36:22+01:00,-3600,2022-03-03 07:36:22+01:00,-3600,True,False,"['v3rc1.py', 'v3rc2.py']",['ab7501d6fcfbb7e7d8bbaa35462f93071bbf90e6'],26,26,52,2,,,
+8e31dc3e3f12ece0ced1f0ed6a4960ef3a61b134,"Fix data specifications in V3RC01 (#36)
+
+We went once more over the book and fixed the properties of the data
+specifications.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-03 12:52:19+01:00,-3600,2022-03-03 12:52:19+01:00,-3600,True,False,['v3rc1.py'],['ef3b97391e1845fbfbdeb98601bac04f8566a2c6'],8,15,23,1,0.0,1.0,0.0
+9554280415539aded2b06dbc316ca1236f7683bf,"Fix V3RC01 after diffing official JSON schema (#37)
+
+We fix minor plurals/singulars in V3RC01 after comparing the generated
+schema against the official one.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-03 13:08:15+01:00,-3600,2022-03-03 13:08:15+01:00,-3600,True,False,['v3rc1.py'],['8e31dc3e3f12ece0ced1f0ed6a4960ef3a61b134'],6,6,12,1,,,
+e7093100c434a1a220ba49fc19111fa28c14f2e0,"Make properties optional in AAS environment (#38)
+
+We need to make the root-level lists in the environment optional so that
+JSON and SHACL schemas coincide. Moreover, this makes the handling of
+lists consistent across the meta-model since all the other lists are
+marked as optional.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-03 20:48:55+01:00,-3600,2022-03-03 20:48:55+01:00,-3600,True,False,"['v3rc1.py', 'v3rc2.py']",['9554280415539aded2b06dbc316ca1236f7683bf'],33,14,47,2,1.0,0.0,1.0
+bd49a80adb6b22e0c22eca38e7f706defde64814,"Revise python metamodel according to current RC02
+
+This is an update of the Python metamodel to the state of 
+`DotAAS V3.0 RC02` as documented by 2022-03-16. 
+
+This was necessary because a new version of the document is being 
+updated for RC02. First, all classes and attributes from chapter 5.7.2 
+up to and including chapter 5.7.12 were revised.",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-03-23 18:19:39+01:00,-3600,2022-03-23 18:19:39+01:00,-3600,True,False,['v3rc2.py'],['e7093100c434a1a220ba49fc19111fa28c14f2e0'],1015,1450,2465,1,0.06802721088435375,1.0,0.05442176870748299
+3bd01fc7840a46c7134c429fa8196f11f5895475,"Make V3RC02 comply with the aas-core-codegen (#41)
+
+We fix V3RC02 so that it complies with the latest aas-core-codegen (at
+HEAD, to be released shortly thereafter).
+
+Notably, we had to fix:
+
+* The order of the constructor arguments to match the order of the
+  properties (including the inherited ones),
+* The optional qualifier (in particular, on ``idShort``) since we do not
+  allow co-variant properties yet,
+* Constraints as field lists (instead of machine-unreadable text), and
+* Propagated the property ``checksum`` where necessary.
+
+There were a couple of minor fixes which we omit here for brevity
+(*e.g.*, a duplicate docstring and such).",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-28 10:38:14+02:00,-7200,2022-03-28 10:38:14+02:00,-7200,True,False,['v3rc2.py'],['bd49a80adb6b22e0c22eca38e7f706defde64814'],282,375,657,1,1.0,1.0,0.46153846153846156
+ac41e2c713e81c3ecd7b3d0ad745d36e464d523a,"Make V3RC01 comply with aas-core-codegen (#42)
+
+We polish V3RC01 so that it also complies with aas-core-codegen, which
+we want to include in our pre-commit checks.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-28 11:08:30+02:00,-7200,2022-03-28 11:08:30+02:00,-7200,True,False,['v3rc1.py'],['3bd01fc7840a46c7134c429fa8196f11f5895475'],154,196,350,1,,,
+b9d48bf4a3c00f43ee0878cb6fa226d90a7052fe,"Add aas-core-codegen to pre-commit checks (#43)
+
+We add the latest version of aas-core-codegen to the pre-commit checks
+so that we discover meta-model inconcisistencies as early as possible.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-28 16:13:18+02:00,-7200,2022-03-28 16:13:18+02:00,-7200,True,False,"['rist.xml', 'precommit.py', 'setup.py']",['ac41e2c713e81c3ecd7b3d0ad745d36e464d523a'],12,31,43,3,0.0,0.0,1.0
+d92f58199eaea7a532ec6b7d6cc0bb64faf1f1dd,"Fix references to classes and attributes in V3RC02 (#44)
+
+We type out the references in the documnetation using our pre-defined
+Sphinx notation throughout the meta-model so that they can be properly
+included in the code and schema generation.
+
+Additionally, we make the literals explicit by using double backticks.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-28 18:53:06+02:00,-7200,2022-03-28 18:53:06+02:00,-7200,True,False,['v3rc2.py'],['b9d48bf4a3c00f43ee0878cb6fa226d90a7052fe'],134,155,289,1,,,
+6c06f630e50886983e4282c5ceafe0d4de4b3304,"Make `id` lowercase (#45)
+
+The UAG Verwaltungsschale does not consider ""ID"" to be an initialism and
+thus they write it everywhere as a non-abbreviation (as opposed to IEC,
+which is written as upper-case). This is relevant for camelCase
+identifiers.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-28 18:57:59+02:00,-7200,2022-03-28 18:57:59+02:00,-7200,True,False,['v3rc2.py'],['d92f58199eaea7a532ec6b7d6cc0bb64faf1f1dd'],179,179,358,1,,,
+3f6528f3c236f249f4699becda67f15a5f647b71,"Revise obsolete TODOs (#46)
+
+We go over the TODOs and delete the obsolete ones which were either
+superseded by the code or which can not be implemented (*e.g.*, the
+constraints on the references).",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-28 19:04:45+02:00,-7200,2022-03-28 19:04:45+02:00,-7200,True,False,['v3rc2.py'],['6c06f630e50886983e4282c5ceafe0d4de4b3304'],21,3,24,1,,,
+f333a45203e40fa5e4aa07cc1f3ad942c602a649,"Make all lists optional in V3RC02 (#47)
+
+We make all `0..*` lists optional to avoid confusion and be a bit more
+consistent with the book. In the future, we should add invariants that
+the lists must not be empty if specified.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-28 19:31:03+02:00,-7200,2022-03-28 19:31:03+02:00,-7200,True,False,['v3rc2.py'],['3f6528f3c236f249f4699becda67f15a5f647b71'],32,22,54,1,0.6,0.0,0.6
+c8c2b4addfcdf008dab41ebaa514acf897c9d8d5,"Upgrade `black` to 22.3.0 (#49)
+
+We had problems on the remote CI server, so we update black to the
+latest version.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-30 09:33:59+02:00,-7200,2022-03-30 09:33:59+02:00,-7200,True,False,['setup.py'],['f333a45203e40fa5e4aa07cc1f3ad942c602a649'],1,1,2,1,,,
+eb43b236d87fa1e57edbca9c128a0c89158626b4,"Introduce `Date_time_stamp_UTC` in V3RC02 (#48)
+
+The time stamps need to be in UTC, so we have to make invariants on the
+strings.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-30 09:36:04+02:00,-7200,2022-03-30 09:36:04+02:00,-7200,True,False,['v3rc2.py'],['c8c2b4addfcdf008dab41ebaa514acf897c9d8d5'],13,10,23,1,,,
+b7fb3d7dbba13252f5ed4f4a518a09e16fd2263d,"Sort out constrained primitives (#50)
+
+This change removes double patterns and double constrained primitives.
+Notably, `MIME_typed` goes away and we introduce `Content_type`
+according to the book.
+
+Furthermore, we set the correct references in the book (according to the
+latest version -- though these are always in flux).
+
+Finally, we make `Value_data_type` a string to reflect that it can
+contain *any* value of the XML basic types.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-30 11:54:42+02:00,-7200,2022-03-30 11:54:42+02:00,-7200,True,False,['v3rc2.py'],['eb43b236d87fa1e57edbca9c128a0c89158626b4'],51,12,63,1,,,
+93625beb6efa62d609e4cdbe03d0a9909a3e1bda,"Fix dangling reference in data specs for V3RC02 (#51)
+
+There was a dangling reference in the data specification. We referred to
+the attribute `category`, but the data specification is referred to and
+has no attribute `category`.
+
+This dangling reference has not been discovered due to the bug in
+aas-core-codegen.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-03-30 13:08:51+02:00,-7200,2022-03-30 13:08:51+02:00,-7200,True,False,['v3rc2.py'],['b7fb3d7dbba13252f5ed4f4a518a09e16fd2263d'],1,2,3,1,,,
+86c52528a22fb771e1a9e4099f5efa5f20b97ed6,"Write the invariants for V3RC02 (#52)
+
+We go through the meta-model and write out the missing invariants.
+Along the way, we fix all the errors and inconsistencies we could find.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-07 02:19:25+02:00,-7200,2022-04-07 02:19:25+02:00,-7200,True,False,"['csv-plugin.xml', 'rist.xml', 'v3rc1.py', 'v3rc2.py', '__init__.py', 'test_v3rc2.py']",['93625beb6efa62d609e4cdbe03d0a9909a3e1bda'],108,2294,2402,6,0.7408560311284047,1.0,0.9961089494163424
+018f5d77b9fa937d00dc900b0018ee4533210761,"Release 2022.4.30a1 (#53)
+
+This is a pre-release of the major release coming up on 2022-04-30.
+
+* Revisit V3RC01 and V3RC02 according to the current state of the book.
+* Formalize the constraints as invariants for V3RC02.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-07 10:07:27+02:00,-7200,2022-04-07 10:07:27+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['86c52528a22fb771e1a9e4099f5efa5f20b97ed6'],6,15,21,3,,,
+5cf57240c6eccfc36195f245aae37625a0776479,"Fix docstring for ``matches_BCP_47`` in V3RC02 (#54)
+
+When a triple quote is left on the same line as the docstring, it
+produces a block quote which we actually do not parse in
+aas-core-codegen.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-07 12:05:23+02:00,-7200,2022-04-07 12:05:23+02:00,-7200,True,False,['v3rc2.py'],['018f5d77b9fa937d00dc900b0018ee4533210761'],1,2,3,1,0.0,1.0,1.0
+8a459d61bd8eedc0bd2535ad5496a60ddf482920,"Remove redunant nullability checks in V3RC02 (#55)
+
+We remove redunadant nullability checks in invariants for non-optional
+properties. These redundancies became only clear when we generated and
+compiled the C# code.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-07 12:07:44+02:00,-7200,2022-04-07 12:07:44+02:00,-7200,True,False,['v3rc2.py'],['5cf57240c6eccfc36195f245aae37625a0776479'],2,1,3,1,,,
+c52b4db49a2d2f477391aa56bb7842830029d52f,"Release 2022.4.30a2 (#56)
+
+This is a pre-release version.
+
+* Remove redundant nullability checks in V3RC02 (#55)
+* Fix docstring for ``matches_BCP_47`` in V3RC02 (#54)",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-07 12:11:26+02:00,-7200,2022-04-07 12:11:26+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['8a459d61bd8eedc0bd2535ad5496a60ddf482920'],3,10,13,3,,,
+0acaf25ca6934ab7b2a8acf3c667eb56048f81d7,Review key.value and key_elements.fragment (#57),Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-04-07 13:23:56+02:00,-7200,2022-04-07 13:23:56+02:00,-7200,True,False,['v3rc2.py'],['c52b4db49a2d2f477391aa56bb7842830029d52f'],18,4,22,1,,,
+f85c8f78b9b753f919caf67667ee1c9397951258,"Update ``aas-core-codegen`` to 0.0.7 (#58)
+
+We use ``aas-core-codegen`` to run smoke tests in order to ensure that
+the meta-models can be translated into programming code and schemas.
+This helps us discover the errors as early as possible.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-09 08:07:19+02:00,-7200,2022-04-09 08:07:19+02:00,-7200,True,False,['setup.py'],['0acaf25ca6934ab7b2a8acf3c667eb56048f81d7'],1,1,2,1,,,
+0a617af9e0760f93ca435082be800ad0edf29cee,"Re-order V3RC02 classes to match V3RC01 (#59)
+
+We re-order the classes in V3RC02 to make the diff from the RC01 as
+minimal as possible.
+
+Additionally, we make all the minor changes to sync up with the current
+working version of the meta-model. Note, however, that the working
+version is still unstable, so many more changes are expected in the
+future.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-09 08:50:11+02:00,-7200,2022-04-09 08:50:11+02:00,-7200,True,False,"['.gitignore', 'v3rc2.py']",['f85c8f78b9b753f919caf67667ee1c9397951258'],1164,1027,2191,2,1.0,0.0,1.0
+b814a780862415fad238b1c55896977c2f7e7ba9,"Release 2022.4.30a3 (#60)
+
+* Review key.value and key_elements.fragment (#57)
+* Re-order V3RC02 classes to match V3RC01 (#59)",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-09 08:57:30+02:00,-7200,2022-04-09 08:57:30+02:00,-7200,True,False,"['.gitignore', 'CHANGELOG.rst', '__init__.py', 'setup.py']",['0a617af9e0760f93ca435082be800ad0edf29cee'],3,11,14,4,,,
+601e8542da2bf59a700fcb8b43dd856ca5053588,"Remove data specifications from V3RC02 (#61)
+
+The data specifications are not part of the core meta-model so we remove
+them. They are kept in ``obsolete/`` directory for future reference.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-09 09:41:08+02:00,-7200,2022-04-09 09:41:08+02:00,-7200,True,False,"['v3rc2.py', 'v3rc2.py']",['b814a780862415fad238b1c55896977c2f7e7ba9'],495,4414,4909,2,0.3435897435897436,1.0,0.5147435897435897
+0d79bcf7c4d9c021158fed12eefb66f427e4c566,"Release 2022.4.30a4 (#62)
+
+This is a pre-release version.
+
+* Remove data specifications from V3RC02 (#61)",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-09 09:42:58+02:00,-7200,2022-04-09 09:42:58+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['601e8542da2bf59a700fcb8b43dd856ca5053588'],2,8,10,3,,,
+fdee7940301469ebe273a42b6ffb1acc6d26d5a5,"Fix dangling references in V3RC02 (#63)
+
+We mistakenly omitted to run the pre-commit script and there were a
+couple of dangling constraint references since we removed the data
+specifications from V3RC02.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-09 09:46:23+02:00,-7200,2022-04-09 09:46:23+02:00,-7200,True,False,['v3rc2.py'],['0d79bcf7c4d9c021158fed12eefb66f427e4c566'],15,0,15,1,,,
+c18d0abf29d8f617a789fc6d49a13f14b4dfbea2,"Release 2022.4.30a5 (#64)
+
+This is a pre-release version.
+
+* Fix dangling references in V3RC02 (#63)",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-09 09:48:30+02:00,-7200,2022-04-09 09:48:30+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['fdee7940301469ebe273a42b6ffb1acc6d26d5a5'],2,8,10,3,,,
+a6def1e837ef01b6821159898e60cbc3ca89afe6,"Remove class ``View`` from V3RC02 (#65)
+
+We remove the class ``View`` from V3RC02 as it has been also removed in
+the book.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-20 10:26:50+02:00,-7200,2022-04-20 10:26:50+02:00,-7200,True,False,['v3rc2.py'],['c18d0abf29d8f617a789fc6d49a13f14b4dfbea2'],53,0,53,1,1.0,0.0,1.0
+f97df5e9c05a7ba48cf005fa9c378755d5ac7b4e,"Release 2022.4.30a6 (#66)
+
+This is a pre-release version.
+
+* Remove class ``View`` from V3RC02 (#65)",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-04-20 10:28:30+02:00,-7200,2022-04-20 10:28:30+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['a6def1e837ef01b6821159898e60cbc3ca89afe6'],2,8,10,3,,,
+8a3ea5ac69905c2b4823c5f58ce8be260511b6ca,"Fix invariants in V3RC02 (#67)
+
+We fix the reference implementation of the invariants while we are
+translating them for aas-core3.0rc02-csharp.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-06 16:25:29+02:00,-7200,2022-05-06 16:25:29+02:00,-7200,True,False,['v3rc2.py'],['f97df5e9c05a7ba48cf005fa9c378755d5ac7b4e'],4,4,8,1,,,
+fea36e9b86fea1938c8414d93dac645a8a7095ce,"Check category only if set in V3RC02 (#68)
+
+We fix the invariant that checked the value of a category such that it
+only applies if the category has been set, as the category is an
+optional property.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-14 22:53:55+02:00,-7200,2022-05-14 22:53:55+02:00,-7200,True,False,['v3rc2.py'],['8a3ea5ac69905c2b4823c5f58ce8be260511b6ca'],3,6,9,1,,,
+199fa3c5f1dbc9421e5acfa74b0d1c143159f04c,"Fix the non-sensical invariant in Entity in V3RC02 (#69)
+
+We had a mistake in the invariant of the ``Entity`` class that was
+always failing. Namely, we have to XOR global asset ID and specific
+asset ID, but we simply XOR'ed the values with themselves.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-15 00:17:47+02:00,-7200,2022-05-15 00:17:47+02:00,-7200,True,False,['v3rc2.py'],['fea36e9b86fea1938c8414d93dac645a8a7095ce'],2,2,4,1,,,
+68c5e9981ae1bf47b3e78a377976da815564f5af,"Remove setting default values in constructors (#70)
+
+We remove the assignment of default values to properties in constructors
+in V3RC02 since the book is not explicit about how this should be
+implemented. If we set the properties to default values, the client can
+not distinguish anymore between the case ""no value provided"" and ""the
+explicit value has been provided"".
+
+While it might be easier for the client to simply see what value is
+there (and many clients might want to disregard the case whether it was
+simply the default set in constructor or the actual explicit assignment
+of a value), this behavior also makes for surprising round-trip logic
+where the de-serialization -- serialization does not give the result
+equal to the expected starting point.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-17 21:24:38+02:00,-7200,2022-05-17 21:24:38+02:00,-7200,True,False,['v3rc2.py'],['199fa3c5f1dbc9421e5acfa74b0d1c143159f04c'],1,1,2,1,,,
+e8b88889964089ca1be46aa2e6340e4c3c6cde04,"Introduce `get_*_or_default` as methods to V3rc2 (#71)
+
+In #70, we removed the assignments to default values in the constructors
+in order to be able to test for round-trip conversions free of side
+effects. This makes the life of the clients a bit more cumbersome as it
+forces them to litter their code with countless ``if X is null then
+default value`` checks.
+
+In this patch, we introduce for each property with a default value a
+getter method which returns the default value if the property is null.
+
+We currently implemented this with implementation-specific methods. This
+is admittedly error-prone and does not conform with the idea that most
+code should be automatically generated. Unfortunately, we lack time at
+the moment as we focus on the release of the schemas and C# SDK which,
+on their part, need automatically generated test data.
+
+When the time permits, we should come back and make these methods
+transpilable at least.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-18 07:18:50+02:00,-7200,2022-05-18 07:18:50+02:00,-7200,True,False,['v3rc2.py'],['68c5e9981ae1bf47b3e78a377976da815564f5af'],1,28,29,1,1.0,1.0,1.0
+d7b7230fc18b568b7fc53b5163dee503d2401b7d,"Release 2022.5.30a1 (#72)
+
+This is a pre-release version.
+
+* Introduce ``get_*_or_default`` as methods to V3rc2 (#71)
+* Remove setting default values in constructors (#70)
+* Fix the nonsensical invariant in Entity in V3RC02 (#69)
+* Check category only if set in V3RC02 (#68)
+* Fix invariants in V3RC02 (#67)",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-18 14:44:09+02:00,-7200,2022-05-18 14:44:09+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['e8b88889964089ca1be46aa2e6340e4c3c6cde04'],2,13,15,3,,,
+2713dcc2983d471c4c85d713062f351dee9eef75,"Reference default values in V3RC02 (#73)
+
+We use attribute references (``:attr:``) to reference default values for
+the properties. This is useful as we would be reported an error if we
+ever remove the referenced object from the meta-model, but forget to
+update the documentation of a property.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-20 12:21:52+02:00,-7200,2022-05-20 12:21:52+02:00,-7200,True,False,['v3rc2.py'],['d7b7230fc18b568b7fc53b5163dee503d2401b7d'],2,2,4,1,,,
+f3c3c93ab4a37373a7ffb44dd0432eca4d2a8d69,"Fix cardinalities in patterns of V3RC02 (#74)
+
+We extend the regular expressions from [the official XML docs] to
+include the number of decimals in finite integers.
+
+[the official XML docs]: https://www.w3.org/TR/xmlschema11-2/",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-20 15:42:11+02:00,-7200,2022-05-20 15:42:11+02:00,-7200,True,False,"['v3rc2.py', 'test_v3rc2.py']",['2713dcc2983d471c4c85d713062f351dee9eef75'],9,9,18,2,,,
+c327c094ab4b5ce18a05991de5002d4de243a84b,"Verify `xs:string` in v3RC02 (#75)
+
+XML standard disallows `NUL` character and it can't be even encoded. We
+therefore add a verification for such a character as a pattern.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-20 16:54:06+02:00,-7200,2022-05-20 16:54:06+02:00,-7200,True,False,"['rist.xml', 'v3rc2.py', 'test_v3rc2.py']",['f3c3c93ab4a37373a7ffb44dd0432eca4d2a8d69'],0,28,28,3,1.0,1.0,1.0
+283712d907950f03410898e8a3021f66e6540021,"Test for date-times without seconds and minutes
+
+We explicitly want to document the behavior of the patterns when
+the date/times miss the minues and the seconds parts.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2022-05-20 22:18:28+02:00,-7200,2022-05-20 22:18:28+02:00,-7200,True,False,['test_v3rc2.py'],['c327c094ab4b5ce18a05991de5002d4de243a84b'],0,18,18,1,1.0,1.0,1.0
+dc7732d8ad3da8a6459db1f2d216a4159294f7fb,"Test for scientific notation in ``xs:decimal`` (#76)
+
+We explicitly document that the scientific notation is not allowed for
+``xs:decimal`` since that was not immediately clear without thoroughly
+studying the regular expression.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-20 23:01:18+02:00,-7200,2022-05-20 23:01:18+02:00,-7200,True,False,['test_v3rc2.py'],['283712d907950f03410898e8a3021f66e6540021'],0,3,3,1,1.0,1.0,1.0
+1d0c91951a2b21a2f0e01c7e3614fb1233bdc132,"Test for zeros in ``xs:nonPositiveInteger``
+
+We test for zeros prefixed with zeros to document the exact behavior, so
+that we can simply refer to the unit tests whenever unsure.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2022-05-20 23:24:07+02:00,-7200,2022-05-20 23:24:07+02:00,-7200,True,False,['test_v3rc2.py'],['dc7732d8ad3da8a6459db1f2d216a4159294f7fb'],0,3,3,1,1.0,1.0,1.0
+3b73233d43be8dc5de1f9264297401561a4b7933,Revise Referencing (#77),Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-05-23 19:35:06+02:00,-7200,2022-05-23 19:35:06+02:00,-7200,True,False,['v3rc2.py'],['1d0c91951a2b21a2f0e01c7e3614fb1233bdc132'],145,277,422,1,0.0,0.0,0.0
+8e1b88ab150154846337f9033dde37e87b01a96c,"Revise Submodel_element_collection
+
+Rename Submodel_element_struct to Submodel_element_collection
+This was necessary to achieve compliance with rc02",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-05-23 22:03:34+02:00,-7200,2022-05-23 22:03:34+02:00,-7200,True,False,['v3rc2.py'],['3b73233d43be8dc5de1f9264297401561a4b7933'],6,6,12,1,,,
+33bdfc71f7e856ad04b720e6825abef07177c71a,"Revise Qualifier with Qualifier_type
+
+Add Attribute Qualifier_type in Qualifier and
+Enumeration for kinds of qualifiers.
+This was necessary to achieve compliance with rc02.",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-05-23 22:36:12+02:00,-7200,2022-05-23 22:36:12+02:00,-7200,True,False,['v3rc2.py'],['8e1b88ab150154846337f9033dde37e87b01a96c'],0,34,34,1,1.0,1.0,0.0
+78cd51942df988a47c8035167e8fa959f5be286e,"Rename IdentifierKeyValuePair
+
+Revise IdentifierKeyValuePair to SpecificAssetId
+This was necessary to achieve compliance with rc02",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-05-23 22:53:47+02:00,-7200,2022-05-23 22:53:47+02:00,-7200,True,False,['v3rc2.py'],['33bdfc71f7e856ad04b720e6825abef07177c71a'],13,17,30,1,,,
+015519cc3f26e7cd0515a0417f8e159b4b4e6ebc,"Refactor sections 5.7.3 to 5.7.10 of RC02 (#81)
+
+* Corrections from sections 5.7.3 to 5.7.10 for v3.0.RC02
+* Correct typo for Resource.path explanation.
+* Refactor for CI
+Resource: Asset_kind --> Path_type
+Several updates to explanations
+Specific_Asset_Id.external_subject_id is not optional
+Several updates to the new sections in the PDF
+Blob.MIME_type --> Blob.content_type
+Fragment_keys has no Global_reference
+
+Co-authored-by: Nico Braunisch <nico.braunisch@tu-dresden.de>",Sebastian Bader,sebastian.r.bader@web.de,GitHub,noreply@github.com,2022-05-24 13:58:26+02:00,-7200,2022-05-24 13:58:26+02:00,-7200,True,False,['v3rc2.py'],['78cd51942df988a47c8035167e8fa959f5be286e'],42,50,92,1,,,
+ae22da5f261ba8854240cb867f971d416b5502ce,"Add DataSpecification and Content
+
+Readd class DataSpecification from section 6.2 and add 
+abstract class DataSpecificationContent from section 6.2. 
+This was necessary because of the need of in the schema 
+generation.",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-05-24 14:54:05+02:00,-7200,2022-05-24 14:54:05+02:00,-7200,True,False,['v3rc2.py'],['015519cc3f26e7cd0515a0417f8e159b4b4e6ebc'],0,60,60,1,1.0,1.0,0.0
+28eeeec072afd2e854f51b720ab5b2ca4e0c5402,"Change Contributors
+
+Add new Contributor to README.md
+This was necessary because new participants 
+join the project",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-05-24 15:00:28+02:00,-7200,2022-05-24 15:00:28+02:00,-7200,True,False,['README.rst'],['ae22da5f261ba8854240cb867f971d416b5502ce'],0,1,1,1,,,
+e8539896067268f6281f6f8436c065946c531a90,"Review V3RC02 for Sections 5.7.2 to 5.7.6 (#84)
+
+We compare our meta-model against the book for the Sections in the
+finalized version of the book, and fix the inconsistencies.
+
+Since we use ``any`` in the invariants, we have to upgrade
+aas-core-codegen to 0.0.10.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-24 23:12:43+02:00,-7200,2022-05-24 23:12:43+02:00,-7200,True,False,"['v3rc2.py', 'setup.py']",['28eeeec072afd2e854f51b720ab5b2ca4e0c5402'],289,377,666,2,0.0,1.0,0.0547945205479452
+bb24dc9534a8e9fdd189b43778bf5b067948486d,"Introduce constraint AASd-116 in V3RC02 (#85)
+
+We finally understood the text of the constraint and formalize it in the
+meta-model through this patch.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-25 08:25:15+02:00,-7200,2022-05-25 08:25:15+02:00,-7200,True,False,"['rist.xml', 'v3rc2.py']",['e8539896067268f6281f6f8436c065946c531a90'],5,25,30,2,,,
+dc205c1e36609c481e30c7d9a3bdd53e0f285d89,"Fix constraint AASd-119 in V3RC02 (#86)
+
+We figured out that the text of the constraint in the book had an error.
+The implication should be reversed. Hence we fix the constraint in our
+meta-model hoping that it will be fixed in the book as well.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-25 08:33:32+02:00,-7200,2022-05-25 08:33:32+02:00,-7200,True,False,['v3rc2.py'],['bb24dc9534a8e9fdd189b43778bf5b067948486d'],9,12,21,1,,,
+af7a0d4d6fe92667c0d089e4ab72d161513e4620,"Fix ``is_model_reference_to`` in V3RC02 (#87)
+
+We reflect the changes in the book regarding ``ModelReference`` /
+``GlobalReference`` / ``Reference`` in the verification function
+``is_model_reference_to``.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-25 09:06:03+02:00,-7200,2022-05-25 09:06:03+02:00,-7200,True,False,['v3rc2.py'],['dc205c1e36609c481e30c7d9a3bdd53e0f285d89'],30,8,38,1,1.0,1.0,1.0
+f57a6394cdd33b30908b4a4fd1d04980f935a091,"Fix plurals in V3RC02 (#88)
+
+We omitted ""-s"" suffixes in a couple of properties in V3RC02. This patch
+fixes the names.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-25 14:14:47+02:00,-7200,2022-05-25 14:14:47+02:00,-7200,True,False,['v3rc2.py'],['af7a0d4d6fe92667c0d089e4ab72d161513e4620'],6,6,12,1,,,
+ab517f6ef8ea57f28a41ff86e332e76b1c5b04cb,"Make pre-commit more user friendly (#89)
+
+We check for failures in commands called from pre-commit and report them
+in a more user-friendly way. This is important for new contributors who
+are not familiar with the precommit script and get scared away in case
+of exceptions.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-25 15:12:22+02:00,-7200,2022-05-25 15:12:22+02:00,-7200,True,False,"['csv-plugin.xml', 'rist.xml', 'precommit.py']",['f57a6394cdd33b30908b4a4fd1d04980f935a091'],29,58,87,3,0.0,0.8571428571428571,0.14285714285714285
+8567752c170aa2a0486fb27de4728fcc9ec74f07,"Execute unit tests in pre-commit (#90)
+
+We run unit tests in pre-commit since we now add crucial tests for the
+meta-model and assertions in there.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-25 15:18:39+02:00,-7200,2022-05-25 15:18:39+02:00,-7200,True,False,['precommit.py'],['ab517f6ef8ea57f28a41ff86e332e76b1c5b04cb'],0,20,20,1,0.0,0.0,1.0
+db2610470d96d5c8c8b23fc16412c4ee7725848d,"Fix naming in V3RC02 (#91)
+
+A couple of names were inconsistent. We add assertion to the tests to
+ensure that the mistakes in naming do not re-appear.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-25 15:49:54+02:00,-7200,2022-05-25 15:49:54+02:00,-7200,True,False,"['v3rc2.py', 'test_v3rc2.py']",['8567752c170aa2a0486fb27de4728fcc9ec74f07'],48,241,289,2,0.06993006993006994,0.06993006993006994,1.0
+bd56f0b51f3bb45df358bfa2359e41d61c2cff5d,"Assert that literals correspond to classes (#92)
+
+We add unit tests to assert that the enumeration literals related to the
+classes are properly specified so that no literal is neither missing nor
+superflouous.
+
+This is necessary so that we can easily detect mismatch in the
+enumerations against the actual class hierarchy.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-25 16:13:20+02:00,-7200,2022-05-25 16:13:20+02:00,-7200,True,False,['test_v3rc2.py'],['db2610470d96d5c8c8b23fc16412c4ee7725848d'],1,94,95,1,0.0,0.0,1.0
+26ac6f95ab11a94095e9ca1d8d27135165b75c80,"Undo #86 and update constraint AASd-119 (#93)
+
+We consulted with other people, and we specified the constraint AASd-119
+a bit more precisely in the book. Consequently, we update our meta-model
+to reflect the changes.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-25 17:00:52+02:00,-7200,2022-05-25 17:00:52+02:00,-7200,True,False,"['v3rc2.py', 'test_v3rc2.py']",['bd56f0b51f3bb45df358bfa2359e41d61c2cff5d'],49,146,195,2,0.0,0.0,1.0
+6495faee9f3d0f44edef4a54c193beb3f6b58057,"Review V3RC02 for Sections 5.7.7 to 5.7.12 (#94)
+
+We compare our meta-model against the book and make changes either to
+our meta-model or report findings and inconsistencies back to the
+authors of the book.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-26 07:40:34+02:00,-7200,2022-05-26 07:40:34+02:00,-7200,True,False,"['rist.xml', 'v3rc2.py', 'setup.py', 'test_v3rc2.py']",['26ac6f95ab11a94095e9ca1d8d27135165b75c80'],134,298,432,4,1.0,1.0,1.0
+6ce9f3c015a463e04952bc1870b35c189df3194c,"Add note about AASd-115 in V3RC02 (#95)
+
+We add a note explaining why the constraint AASd-115 is rather a
+guideline than a constraint in the strict sense
+(`semantic_id_list_element` should be assumed if the elements of
+Submodel Element List have no semantic ID specified).",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-26 07:50:34+02:00,-7200,2022-05-26 07:50:34+02:00,-7200,True,False,['v3rc2.py'],['6495faee9f3d0f44edef4a54c193beb3f6b58057'],0,6,6,1,,,
+7663ba0c80b56758ce66d9960a99787a895f602f,"Release 2022.5.26 (#96)
+
+This is the version of our meta-model tailored to the finalized version
+of the book for V3RC02.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-05-26 07:51:38+02:00,-7200,2022-05-26 07:51:38+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['6ce9f3c015a463e04952bc1870b35c189df3194c'],2,7,9,3,,,
+ae5656ecb22a2fc53604074133d461db347e665d,"Make `RelationshipElement` concrete in V3RC02 (#103)
+
+We marked the class `RelationshipElement` abstract by mistake. It is
+concrete in the book.
+
+Fixes #97.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-03 14:42:47+02:00,-7200,2022-06-03 14:42:47+02:00,-7200,True,False,['v3rc2.py'],['7663ba0c80b56758ce66d9960a99787a895f602f'],1,0,1,1,,,
+f158313f4e2b5b84f99af210c3131aa515e79839,"Sort out `modelType` in V3RC02 (#104)
+
+We re-visit the serialization settings as we mistakenly set `modelType`.
+For some classes, it was redundant since they inherit from `Referable`.
+Other classes, such as `Qualifier`, had it set by mistake as a remnant
+from a previous refactoring.
+
+Fixes #100, #101, #102.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-03 14:44:08+02:00,-7200,2022-06-03 14:44:08+02:00,-7200,True,False,['v3rc2.py'],['ae5656ecb22a2fc53604074133d461db347e665d'],4,1,5,1,,,
+3a3860e7ab42d107964041d2c2b0c35b961a4bbb,"Release 2022.6.3 (#105)
+
+In this version we fix a couple of inconsistencies with the book which
+were spotted during the reviews.
+
+* Sort out ``modelType`` in V3RC02 (#104)
+* Make ``RelationshipElement`` concrete in V3RC02 (#103)",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-03 14:58:00+02:00,-7200,2022-06-03 14:58:00+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['f158313f4e2b5b84f99af210c3131aa515e79839'],2,10,12,3,,,
+9cb08ee4425456b540f87f0831589dc7e4560299,"Fix AnyURI patterns for UTF-32 (#106)
+
+We update to the fix in abnf-to-regex 1.1.1. Namely, the UTF-32
+characters above 0xffff has not been correctly escaped.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-15 17:28:34+02:00,-7200,2022-06-15 17:28:34+02:00,-7200,True,False,"['v3rc1.py', 'v3rc2.py']",['3a3860e7ab42d107964041d2c2b0c35b961a4bbb'],14,18,32,2,0.0,1.0,1.0
+97508cdad79eac516892f983ec04819ba38c0f3c,"Fix length invariant of id-shorts in V3RC2 (#107)
+
+We mistakenly copy/pasted the invariant from a class. This broke the
+invariant as the ID-short is now a constrained primitive.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-17 18:13:28+02:00,-7200,2022-06-17 18:13:28+02:00,-7200,True,False,['v3rc2.py'],['9cb08ee4425456b540f87f0831589dc7e4560299'],1,1,2,1,,,
+426b80d126949ec31a8bdac7034063a9f56cb804,"Fix invariant on specific_asset_id in V3RC2 (#108)
+
+We make the invariant culturally-explicit by specifying the regular
+expression. The invariant involves case-folding which is
+culture-specific, but we assume English here.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-17 18:17:00+02:00,-7200,2022-06-17 18:17:00+02:00,-7200,True,False,['v3rc2.py'],['97508cdad79eac516892f983ec04819ba38c0f3c'],1,17,18,1,1.0,1.0,1.0
+9f8868a22359798aa3eae113e1bd044257384cd5,"Release 2022.6.17 (#109)
+
+This is a bug-fix version, where our spec turned out to be  incorrect
+from the programming point of view.
+
+* Fix invariant on specific_asset_id in V3RC2 (#108)
+* Fix length invariant of id-shorts in V3RC2 (#107)
+* Fix AnyURI patterns for UTF-32 (#106)",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-17 18:37:31+02:00,-7200,2022-06-17 18:37:31+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['426b80d126949ec31a8bdac7034063a9f56cb804'],2,11,13,3,,,
+75544af77d1389511d87bf50803dfcb9a3c0d7e0,"Remove unique idShort from list elements in V3RC02 (#110)
+
+The elements in a ``Submodel_element_list`` should have no ID-shorts,
+hence also no unique ID-shorts.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-19 10:38:37+02:00,-7200,2022-06-19 10:38:37+02:00,-7200,True,False,['v3rc2.py'],['9f8868a22359798aa3eae113e1bd044257384cd5'],5,0,5,1,,,
+b630cae971d6e35691357074a7ab442b6ce77388,"Remove ill-defined constraint 116 from V3RC02 (#111)
+
+The constraint involves an ill-defined comparison between a string and a
+reference, so we could not implement it.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-19 11:08:15+02:00,-7200,2022-06-19 11:08:15+02:00,-7200,True,False,['v3rc2.py'],['75544af77d1389511d87bf50803dfcb9a3c0d7e0'],14,7,21,1,,,
+20e912899def3164dd2fba88c6b5cad44b215026,"Include tests in re-formating (#112)
+
+We re-format test code to make the diffs minimal.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-19 11:20:57+02:00,-7200,2022-06-19 11:20:57+02:00,-7200,True,False,"['precommit.py', 'test_v3rc2.py']",['b630cae971d6e35691357074a7ab442b6ce77388'],292,285,577,2,0.0,0.0,0.0
+24ac04f6c5fa4b305dd9587647cc83c6510497bb,"Fix nullness in inv. AASd-119 in V3RC02 (#113)
+
+We explicitly check for ""is not None"" in the invariants corresponding to
+AASd-119 as the verification raises null assertions otherwise.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-19 11:24:54+02:00,-7200,2022-06-19 11:24:54+02:00,-7200,True,False,"['v3rc2.py', 'test_v3rc2.py']",['20e912899def3164dd2fba88c6b5cad44b215026'],18,26,44,2,0.0,0.0,1.0
+ed14c8ab08f252776d502327d54d37cccb0dbe47,"Check non-none of message broker in inv. of V3RC02 (#114)
+
+We need to explicitly check that the message broker is specified in the
+invariant, lest a null exception is raised.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-19 11:32:18+02:00,-7200,2022-06-19 11:32:18+02:00,-7200,True,False,['v3rc2.py'],['24ac04f6c5fa4b305dd9587647cc83c6510497bb'],1,2,3,1,,,
+ae4ffbac4c7cbd1c82b1556e3568ebacdeb8101a,"Fix `xs:string` pattern for V3RC02 (#115)
+
+The previous pattern was too permissive and did not follow the
+specification by the letter. We also learned a great deal about UTF-16
+and UTF-32 along the way, so the previous pattern was also a reflection
+of our own ignorance.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-19 12:28:43+02:00,-7200,2022-06-19 12:28:43+02:00,-7200,True,False,"['v3rc2.py', 'test_v3rc2.py']",['ed14c8ab08f252776d502327d54d37cccb0dbe47'],2,14,16,2,1.0,1.0,1.0
+32a8acc4f6b5fdcf5dbb221449fa8f97fcb03df1,"Invert AASd-119 in V3RC02 (#116)
+
+We invert the implication in the constraint AASd-119 as it made no sense
+to us. We reported the mistake to the authors of the book, and continue
+developing under assumption that the text of the constraint will
+eventually change.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-19 17:58:04+02:00,-7200,2022-06-19 17:58:04+02:00,-7200,True,False,"['v3rc2.py', 'additional-verbs-in-imperative-mood.txt', 'test_v3rc2.py']",['ae4ffbac4c7cbd1c82b1556e3568ebacdeb8101a'],18,22,40,3,0.0,0.0,1.0
+ea1d25b64b3a54e31537d198ab517b3b1553cba5,"Release 2022.6.19 (#117)
+
+This is a version with fixes which were necessary for generating
+the JSON test data automatically using aas-core3.0rc02-testgen,
+and making sure that the aas-core-codegen generates the C# code
+such that it passes all the unit tests for JSON.
+
+XML tests are still pending.
+
+* Invert AASd-119 in V3RC02 (#116)
+* Fix ``xs:string`` pattern for V3RC02 (#115)
+* Check non-none of message broker in inv. of V3RC02 (#114)
+* Fix nullness in inv. AASd-119 in V3RC02 (#113)
+* Remove ill-defined constraint 116 from V3RC02 (#111)
+* Remove unique idShort from list elements in V3RC02 (#110)",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-19 18:07:55+02:00,-7200,2022-06-19 18:07:55+02:00,-7200,True,False,"['rist.xml', 'CHANGELOG.rst', '__init__.py', 'setup.py']",['32a8acc4f6b5fdcf5dbb221449fa8f97fcb03df1'],3,20,23,4,,,
+1eca41d35ea17c5fd1e0ee82873628c568374c31,"Revert back AASd-119 in V3RC02 (#118)
+
+It has become clear that the text of AASd-119 is indeed correct after a
+mail correspondence with the authors of the book. Hence, we revert it
+back to its original state.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-20 10:27:41+02:00,-7200,2022-06-20 10:27:41+02:00,-7200,True,False,"['v3rc2.py', 'test_v3rc2.py']",['ea1d25b64b3a54e31537d198ab517b3b1553cba5'],21,18,39,2,1.0,1.0,0.0
+40de9ab52b5b8e766a8a26866e3133a8a7e386bc,"Enforce Extension value match type in V3RC02 (#119)
+
+We forgot to add an invariant to ensure that the extension's value
+matches its XSD type.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-20 14:39:39+02:00,-7200,2022-06-20 14:39:39+02:00,-7200,True,False,['v3rc2.py'],['1eca41d35ea17c5fd1e0ee82873628c568374c31'],0,9,9,1,,,
+62c3ad1b0461650142e9fe1bfb6b71bec57f33bf,"Release 2022.6.20 (#120)
+
+This is a minor bug-fix version. We release it so we can start working
+on tests with XML data.
+
+* Enforce Extension value match type in V3RC02 (#119)
+* Revert back AASd-119 in V3RC02 (#118)",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-20 17:09:04+02:00,-7200,2022-06-20 17:09:04+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['40de9ab52b5b8e766a8a26866e3133a8a7e386bc'],2,10,12,3,,,
+b4e8c91d721fb2bb4eaecdd1e50f301b99ef161d,"Ensure Data elmeent category in V3RC02
+
+We document a post-condition in the getter-or-default for the category
+of a data element in V3RC02.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2022-06-21 12:33:17+02:00,-7200,2022-06-21 12:33:17+02:00,-7200,True,False,['v3rc2.py'],['62c3ad1b0461650142e9fe1bfb6b71bec57f33bf'],0,7,7,1,,,
+7724f1fdb005165ceb5e7ea2a0d26fccceadc975,"Encapsulate data element category in V3RC02 (#121)
+
+We encapsulate the invariant on the category of a data element in a
+separate function in V3RC02.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-21 13:20:42+02:00,-7200,2022-06-21 13:20:42+02:00,-7200,True,False,['v3rc2.py'],['b4e8c91d721fb2bb4eaecdd1e50f301b99ef161d'],13,26,39,1,1.0,1.0,1.0
+fc6c716616e2106b2c6afaad84012c4d2e6bf3f6,"Release 2022.6.21 (#122)
+
+This is a minor enhancement version. We implement the invariant on
+the category of a data element in a more systematic manner.
+
+* Encapsulate data element category in V3RC02 (#121)
+* Ensure Data element category in V3RC02",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-21 13:27:18+02:00,-7200,2022-06-21 13:27:18+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py', 'setup.py']",['7724f1fdb005165ceb5e7ea2a0d26fccceadc975'],2,10,12,3,,,
+955806c0a0da46274824ebc92b993ca12bf35ad7,"Make data specification concrete (#123)
+
+We have to make ``DataSpecification`` concrete so that we can generate a
+complete example of an environment.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-21 15:32:12+02:00,-7200,2022-06-21 15:32:12+02:00,-7200,True,False,['v3rc2.py'],['fc6c716616e2106b2c6afaad84012c4d2e6bf3f6'],1,0,1,1,,,
+0fa34d1ee06e892c5660a3e8cc39f0b50750ff88,"Make ``DataSpecificationContent`` concrete (#124)
+
+We have to make ``DataSpecificationContent`` concrete so that we can
+effectively test the ``Environment`` with a complete test example.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-21 15:42:35+02:00,-7200,2022-06-21 15:42:35+02:00,-7200,True,False,['v3rc2.py'],['955806c0a0da46274824ebc92b993ca12bf35ad7'],1,0,1,1,,,
+a71c2a803d769494ff395ec29c276880760a99b1,Update book url,Nico Braunisch,nico.braunisch@tu-dresden.de,Nico Braunisch,nico.braunisch@tu-dresden.de,2022-06-23 11:38:22+02:00,-7200,2022-06-23 11:38:22+02:00,-7200,True,False,['v3rc2.py'],['0fa34d1ee06e892c5660a3e8cc39f0b50750ff88'],4,2,6,1,,,
+d0468ef0e7ef88f96a8e8e32949348e3ae6a2613,"Update book url
+
+Change the URL for reference in the book",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-06-23 11:43:42+02:00,-7200,2022-06-23 11:43:42+02:00,-7200,True,False,['v3rc2.py'],['a71c2a803d769494ff395ec29c276880760a99b1'],1,1,2,1,,,
+11edba53d9c580b116f97728dd4311b642a422cc,"Formalize reference comparison in V3RC02 (#127)
+
+The constraint AASd-107 requires a reference comparison, but the
+reference comparison has not been properly defined. Therefore we
+introduce a separate function to formalize that references are compared
+by their keys and type.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-24 12:07:39+02:00,-7200,2022-06-24 12:07:39+02:00,-7200,True,False,"['v3rc2.py', 'additional-verbs-in-imperative-mood.txt']",['d0468ef0e7ef88f96a8e8e32949348e3ae6a2613'],1,23,24,2,1.0,0.0,1.0
+5f563afead0aea96a919d8672e19a74b4c42275f,"Make specific asset IDs a list in V3RC02 (#129)
+
+We made a mistake and diverged from the book. See [this issue] in
+adminshell-io/aas-specs repository.
+
+[this issue]: https://github.com/admin-shell-io/aas-specs/issues/193",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-29 09:23:18+02:00,-7200,2022-06-29 09:23:18+02:00,-7200,True,False,['v3rc2.py'],['11edba53d9c580b116f97728dd4311b642a422cc'],5,5,10,1,,,
+d91ecb65d454ae0b2c697643f11ef4b846caf953,"Compare references by values only in V3RC02 (#133)
+
+According to the book, ""5.7.10.5 Matching Algorithm for References"",
+references should be compared only by values and the types in the keys
+as well as the type of the reference should be ignored.
+
+Fixes #130.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-30 09:25:43+02:00,-7200,2022-06-30 09:25:43+02:00,-7200,True,False,['v3rc2.py'],['5f563afead0aea96a919d8672e19a74b4c42275f'],7,4,11,1,0.0,1.0,0.0
+dfa1194adf1a43b649fde0ff29406c7e0b22b02a,"Remove trailing whitespace in V3RC02 (#134)
+
+We remove the whitespace since it inadvertently slipped into the
+docstrings.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-30 09:43:55+02:00,-7200,2022-06-30 09:43:55+02:00,-7200,True,False,['v3rc2.py'],['d91ecb65d454ae0b2c697643f11ef4b846caf953'],42,42,84,1,,,
+e25c6b92f00aba8241bae5bb473c5ecde900ab57,"Add ``Identifiable`` in ``AAS_Identifiables`` (#135)
+
+We fix the enumeration literals in the subsets of ``Key_types``.
+
+Fixes #131.
+
+Replaces #132.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-30 10:09:27+02:00,-7200,2022-06-30 10:09:27+02:00,-7200,True,False,"['v3rc2.py', 'test_v3rc2.py']",['dfa1194adf1a43b649fde0ff29406c7e0b22b02a'],6,122,128,2,1.0,1.0,0.0
+93f0af271351674b06e0cbfd4f4e031ff275f439,"Check for trailing whitespace in CI (#136)
+
+We had problems with diffing files where whitespace slipped in.
+Therefore we add a check / auto-healing fix in the pre-commit script to
+explicitly check for the trailing whitespace, including also docstrings.
+
+Black ignored docstrings so that was part of the problem.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-30 10:11:45+02:00,-7200,2022-06-30 10:11:45+02:00,-7200,True,False,"['rist.xml', 'precommit.py']",['e25c6b92f00aba8241bae5bb473c5ecde900ab57'],5,52,57,2,0.0,0.0,1.0
+00a83bf627d48f51eaf057ddbdffbde90e4df1f7,"Deprecate V3RC01 (#137)
+
+We have to undertake big changes related to transforming enumeration
+subsets into set constants. Therefore we deprecate V3RC01 meta-model at
+this point since it is of little relevance and has few to no users.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-06-30 10:39:41+02:00,-7200,2022-06-30 10:39:41+02:00,-7200,True,False,"['aas-core3-meta.iml', 'additional-verbs-in-imperative-mood.txt', 'v3rc1.py']",['93f0af271351674b06e0cbfd4f4e031ff275f439'],0,5,5,3,,,
+5c6ac67ec55b85cbd970ec7e9e9cfdaedcfa166f,"Introduce constants (#138)
+
+This is a major change. We introduce constants in the meta-model
+including constant primitive values, constant sets of primitive values
+as well as constant sets of enumeration literals.
+
+The continuous integration is expected to fail as we change
+aas-core-codegen in parallel, and this change is incompatible with the
+current main branch of aas-core-codegen.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-07-10 11:24:12+02:00,-7200,2022-07-10 11:24:12+02:00,-7200,True,False,"['marker.py', 'v3rc2.py', 'v3rc2.py', 'v3rc1.py', 'test_v3rc2.py']",['00a83bf627d48f51eaf057ddbdffbde90e4df1f7'],540,400,940,5,0.5,0.11538461538461539,0.0
+7051d10706600482d7838e39f3ea952e43a81825,"Update aas-core-codegen to 6b55dbc (#139)
+
+We update the dependencies to [aas-core-codegen 6b55dbc] so that the
+continuous integration, which failed as planned in the previous commit,
+can now pass.
+
+[aas-core-codegen 6b55dbc]: https://github.com/aas-core-works/aas-core-codegen/commit/6b55dbc",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-07-10 12:28:00+02:00,-7200,2022-07-10 12:28:00+02:00,-7200,True,False,['setup.py'],['5c6ac67ec55b85cbd970ec7e9e9cfdaedcfa166f'],1,1,2,1,,,
+99ce5f0847264c741ba03655cffa72005e3b58e2,"Use index access and for-in-range in constraints (#140)
+
+We formalize the constraints AASd-121 to 128 using index access and
+for-loops over ranges.
+
+The remote CI is expected to fail as aas-core-codegen needs to be
+updated in sync.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-07-11 00:12:30+02:00,-7200,2022-07-11 00:12:30+02:00,-7200,True,False,['v3rc2.py'],['7051d10706600482d7838e39f3ea952e43a81825'],2,106,108,1,,,
+ed81978455224838e31c8a04d3103c3a08eac1ea,"Update aas-core-codegen to f698a1c (#141)
+
+We update the aas-core-codegen as dependency to
+[aas-core-codegen f698a1c]. In the previous commit, the remote CI failed
+as we had to update both aas-core-meta and aas-core-codegen in sync.
+
+With this change, the remote CI runs again.
+
+[aas-core-codegen f698a1c]: https://github.com/aas-core-works/aas-core-codegen/commit/f698a1c",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-07-11 00:35:44+02:00,-7200,2022-07-11 00:35:44+02:00,-7200,True,False,['setup.py'],['99ce5f0847264c741ba03655cffa72005e3b58e2'],1,1,2,1,,,
+29f8bef47edffd2bee10f56ddcb0b465c7502466,"Handle ``FileNotFound`` in precommit script (#142)
+
+If the command could not be executed since the file could not be found,
+we catch the exception instead of blowing up as the stack trace is scare
+and uninformative for the user.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-07-13 07:32:53+02:00,-7200,2022-07-13 07:32:53+02:00,-7200,True,False,['precommit.py'],['ed81978455224838e31c8a04d3103c3a08eac1ea'],5,23,28,1,0.0,0.0,0.0
+ab276a88135af94ba14fddc162a94ed1ac574758,"Make transpilable general verification function (#143)
+
+We remove the non-implementation marker for general verification
+function which current aas-core-codegen can transpile.
+
+The remove continuous integration is expected to fail as we are
+introducing breaking changes in sync between aas-core-codegen and
+aas-core-meta. The CI will be restored in the following commit.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-07-13 07:42:08+02:00,-7200,2022-07-13 07:42:08+02:00,-7200,True,False,['v3rc2.py'],['29f8bef47edffd2bee10f56ddcb0b465c7502466'],19,7,26,1,0.0,0.0,0.0
+c81f9afedd2bcfe5c822ff5626e45f4fb8d1f42f,"Update to aas-core-codegen a2ba2a5 (#144)
+
+We update to [aas-core-codegen a2ba2a5] so that the remote CI runs
+again which was intentionally broken in [ab276a8].
+
+[ab276a8]: https://github.com/aas-core-works/aas-core-meta/commit/ab276a88135af94ba14fddc162a94ed1ac574758
+[aas-core-codegen a2ba2a5]: https://github.com/aas-core-works/aas-core-codegen/commit/a2ba2a5",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-07-13 09:16:56+02:00,-7200,2022-07-13 09:16:56+02:00,-7200,True,False,['setup.py'],['ab276a88135af94ba14fddc162a94ed1ac574758'],1,1,2,1,,,
+727f7012a5049760d1a9c99a4155ac1ae7a6b98a,"Make data specification references global in V3RC2 (#145)
+
+We add a constraint that the references to data specifications in
+``Has_data_specifications`` must be global.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-07-13 14:34:00+02:00,-7200,2022-07-13 14:34:00+02:00,-7200,True,False,['v3rc2.py'],['c81f9afedd2bcfe5c822ff5626e45f4fb8d1f42f'],0,10,10,1,,,
+e808e375830ea2e17ddc7a6510a86e7aa442a076,"Remove data specifications from Environment (#146)
+
+We remove the data specifications from the Environment in V3RC02.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-07-13 14:47:42+02:00,-7200,2022-07-13 14:47:42+02:00,-7200,True,False,['v3rc2.py'],['727f7012a5049760d1a9c99a4155ac1ae7a6b98a'],7,0,7,1,0.0,0.0,1.0
+32e4a040e48990b5c5c5048a6951ad99c8f1c1b8,"Include Chapter 6 and 7
+
+Add Chapter DataSpecificationIEC61360
+Add Chapter DataSpecificationPhysicalUnit
+Add Chapter Security",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-07-18 10:55:29+02:00,-7200,2022-07-18 10:55:29+02:00,-7200,True,False,"['v3rc2.py', 'test_v3rc2.py']",['e808e375830ea2e17ddc7a6510a86e7aa442a076'],20,678,698,2,0.36666666666666664,0.9916666666666667,0.225
+034fd5b440570c18b333a1eda5485aae110045d4,"Revise Chapter 6 and 7 for RC02 (#148)
+
+This is a revision of the data structures we defined previously for 
+Chapter 6 and 7, but eventually removed as we, erroneously, 
+deemed them as outside the core meta-model.
+
+We:
+* Update  Class DataSpecification to RC02
+* Update  Class DataSpecificationContent to RC02
+* Update  Class DataTypeIEC61360 to RC02
+* Update Class DataSpecificationIEC61360 to RC02
+* Add Class Category_Concept_Description
+* Update Class DataSpecificationPhysicalUnit  to RC02
+* Add Chapter Security",Nico Braunisch,nico.braunisch@tu-dresden.de,GitHub,noreply@github.com,2022-08-01 10:20:23+02:00,-7200,2022-08-01 10:20:23+02:00,-7200,True,False,"['v3rc2.py', 'additional-verbs-in-imperative-mood.txt', 'test_v3rc2.py']",['32e4a040e48990b5c5c5048a6951ad99c8f1c1b8'],125,275,400,3,1.0,0.0,1.0
+b92316482a1aaf46c94adf65646cffefde4aaf92,"Embed data specifications in V3RC02 (#150)
+
+Concerning the data specifications, we embed them within
+`Has_data_specification` instead of referencing them *via* a global
+reference. The working group decided to change the rules for
+serialization *after* the book was published. The data specifications
+are critical in applications, but there is no possibility to access
+them through a data channel as they are not part of an environment.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-01 13:55:02+02:00,-7200,2022-08-01 13:55:02+02:00,-7200,True,False,"['v3rc2.py', 'additional-verbs-in-imperative-mood.txt']",['034fd5b440570c18b333a1eda5485aae110045d4'],41,35,76,2,1.0,1.0,1.0
+fe15606e26c89b5a620d38cd9079adb1998d86e0,"Remove security part of V3RC02 (#152)
+
+We remove the security part of the meta-model V3RC02 since the security
+will be (most probably) implemented using [ODRL].
+
+[ODRL]: https://en.wikipedia.org/wiki/ODRL",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-17 18:40:22+02:00,-7200,2022-08-17 18:40:22+02:00,-7200,True,False,['v3rc2.py'],['b92316482a1aaf46c94adf65646cffefde4aaf92'],298,0,298,1,0.3148148148148148,0.0,0.6481481481481481
+f9f203cfc4b43e09776bfe70a2bcf71a50aaae35,"Remove redundant parentheses in V3RC02 (#153)
+
+This is merely a cosmetic change in code, no semantics involved.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-17 18:57:38+02:00,-7200,2022-08-17 18:57:38+02:00,-7200,True,False,['v3rc2.py'],['fe15606e26c89b5a620d38cd9079adb1998d86e0'],8,8,16,1,,,
+6f61d2501169119807de03547a7fe3cad1f50b19,"Fix embedded data specifications in V3RC02 (#154)
+
+We make the specs follow Chapter 9.2.5 of the book.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-17 19:04:03+02:00,-7200,2022-08-17 19:04:03+02:00,-7200,True,False,['v3rc2.py'],['f9f203cfc4b43e09776bfe70a2bcf71a50aaae35'],81,109,190,1,0.058823529411764705,1.0,0.058823529411764705
+c913cb42334282116b35ad85650a93d9d3f404d1,"Define XML namespace (#155)
+
+We define the XML namespace for the whole meta-model. This is necessary
+so that the generation of XSD, RDF+SHACL schemas and XML
+de/serialization are all in sync.
+
+The continuous integration is expected to fail, as it depends on
+aas-core-codegen which also needs to change in sync.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-17 19:43:10+02:00,-7200,2022-08-17 19:43:10+02:00,-7200,True,False,['v3rc2.py'],['6f61d2501169119807de03547a7fe3cad1f50b19'],0,1,1,1,,,
+3aa5a82650300608a096048a34912ea23edb1de8,"Upgrade aas-core-codegen to dac0ca1 (#156)
+
+We upgrade the version of aas-core-codegen used in continuous
+integration to dac0ca1 since it included breaking changes which we had
+to update in sync with aas-core-meta.
+
+The continuous integration is now expected to pass.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-19 11:46:12+02:00,-7200,2022-08-19 11:46:12+02:00,-7200,True,False,['setup.py'],['c913cb42334282116b35ad85650a93d9d3f404d1'],1,1,2,1,,,
+08f5bb160001fa28c2b24b95fce11c36fb2fc5ca,"Enforce that lists have min. length 1 in V3RC02 (#157)
+
+We add an assertion in the tests to check that we infer the minimum
+length for all the lists to be 1 except for lists where the end user
+defines the semantic (*i.e.*, `Submodel_element_list` and
+`Submodel_element_collection`).
+
+This change is necessary so that we avoid ambiguity for the end users
+since the distinction in semantics of a null list and an empty list is
+not well-defined.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-19 12:11:09+02:00,-7200,2022-08-19 12:11:09+02:00,-7200,True,False,"['v3rc2.py', 'common.py', 'test_v3rc2.py']",['3aa5a82650300608a096048a34912ea23edb1de8'],6,352,358,3,0.1038961038961039,0.1038961038961039,1.0
+d2491f1b35bcc78fabbdda31613b037ca111d605,"Refactor tests to use aas-core-codegen (#158)
+
+Previously, we used Python ``inspect`` to iterate over the symbols in
+the aas-core-meta in the tests. This is cumbersome and misses a lot of
+edge cases.
+
+Therefore, we leverage aas-core-codegen, parse the model into the
+intermediate representation and perform checks on the intermediate
+representation instead.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-19 16:05:54+02:00,-7200,2022-08-19 16:05:54+02:00,-7200,True,False,"['setup.py', 'common.py', 'test_v3rc2.py']",['08f5bb160001fa28c2b24b95fce11c36fb2fc5ca'],137,240,377,3,0.18867924528301888,0.18867924528301888,1.0
+0d9656451ae06bbc862bdd1829a6e7328d2bb257,"Convert ``Lang_string_set`` to a list in V3RC02 (#159)
+
+We mistakenly modelled ``Lang_string_set`` as a class instead of a list
+(see the issue #128). With this change, we de-structure all
+``Lang_string_set`` as lists.
+
+Additionally, we enforce that the affected properties have
+the appropriate invariants defined through automatic tests.
+
+Fixes #128.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-19 16:29:36+02:00,-7200,2022-08-19 16:29:36+02:00,-7200,True,False,"['csv-plugin.xml', 'v3rc2.py', 'setup.py', 'common.py', 'test_v3rc2.py']",['d2491f1b35bcc78fabbdda31613b037ca111d605'],88,307,395,5,0.0,0.0,1.0
+1ae5aa0c94aa979b97edf12d6d547281a2486c95,"Remove redundant nullability check in V3RC02 (#160)
+
+We remove the nullability check in the invariants in
+``Data_specification_physical_unit`` for the property ``definition``
+since it is not optional.
+
+While the semantic did not change, the C# compiler complained about the
+nullability since it could not be inferred anymore.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-19 17:03:43+02:00,-7200,2022-08-19 17:03:43+02:00,-7200,True,False,['v3rc2.py'],['0d9656451ae06bbc862bdd1829a6e7328d2bb257'],5,3,8,1,,,
+95e7dbfa17018b5f91f45b25066fbc4a196e3628,"Write invariants for data specifications in V3RC02 (#161)
+
+We formalize the invariants for the concept descriptions since now the
+data specifications are embedded.
+
+We make the verification functions implementation-specific since the
+casts are very clumsy to formalize and transpile in a readable way
+across languages. For example, since Python does not have
+a null-coalescing operator, formalizing the constraints such as
+``AASc-004`` would involve walrus operator and would result in
+an unreadable invariant.
+
+Therefore, we decided to encapsulate the logic in these few functions
+and estimate the maintenance effort to dwarf the effort needed to get
+this right in aas-core-codegen.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-19 19:54:38+02:00,-7200,2022-08-19 19:54:38+02:00,-7200,True,False,['v3rc2.py'],['1ae5aa0c94aa979b97edf12d6d547281a2486c95'],33,414,447,1,0.031007751937984496,0.8294573643410853,1.0
+de5b6392048935f976343dfe44335b6217f68d4f,"Describe all invariants in V3RC02 (#162)
+
+We describe all the invariants in V3RC02 with a human-readable text. In
+consequence, this gives us human-readable messages in the SDKs. Such
+messages are important when the programs are used by non-programmers,
+such as GUI editors.
+
+At this point, we also change all ``> 0`` to ``>= 1`` in invariants, so
+that the formalized condition matches better the invariant description.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-21 16:31:48+02:00,-7200,2022-08-21 16:31:48+02:00,-7200,True,False,['v3rc2.py'],['95e7dbfa17018b5f91f45b25066fbc4a196e3628'],47,91,138,1,,,
+bd6266ca9318310ee2e0b5449ebd112230b0ca84,"Re-phrase ""null"" to ""not set"" in invariants (#163)
+
+We replace ""null"" with ""not set"" in the invariant descriptions to obtain
+invariant descriptions which generalize better across different
+programming languages. For example, ""null"" is ""none"" in Python, so this
+could cause some confusion.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-21 17:09:44+02:00,-7200,2022-08-21 17:09:44+02:00,-7200,True,False,['v3rc2.py'],['de5b6392048935f976343dfe44335b6217f68d4f'],21,21,42,1,,,
+cccea938e9e9df81505c99216f0a588c0ed0f70c,"Re-introduce the pattern for date/time stamps UTC (#165)
+
+We removed the invariant on the pattern since it is doubly checked in
+the ``matches_xs_date_time_stamp_utc`` and
+``is_xs_date_time_stamp_utc``. However, this was a mistake as we now can
+not infer the pattern for the schemas and test generation.
+
+Therefore, we re-introduce the invariant.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-21 18:35:48+02:00,-7200,2022-08-21 18:35:48+02:00,-7200,True,False,"['v3rc2.py', 'additional-verbs-in-imperative-mood.txt']",['bd6266ca9318310ee2e0b5449ebd112230b0ca84'],0,6,6,2,,,
+086ad18d9fe90d1e7bf4ceb22c2fc98b5d074f8d,"Update to aas-core-codegen b8e378f (#164)
+
+We update to [aas-core-codegen b8e378f] so that the continuous
+integration forces all invariants to have a description.
+
+[aas-core-codegen b8e378f]: https://github.com/aas-core-works/aas-core-codegen/commit/b8e378f",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-21 19:00:03+02:00,-7200,2022-08-21 19:00:03+02:00,-7200,True,False,['setup.py'],['cccea938e9e9df81505c99216f0a588c0ed0f70c'],1,1,2,1,,,
+c804643900217bc76d79608de266d6940068e574,"Enforce min. length on submodel element value (#166)
+
+Originally, we left out the constraint on
+``Submodel_element_list.value`` and
+``Submodel_element_collection.value`` related to the length as we wanted
+to allow the distinction between null lists and empty lists, which the
+user could define per semantic ID.
+
+However, this is problematic as many users are not aware of the
+distinction. Therefore, we keep consistency with all the other lists in
+the meta-model.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-24 11:49:55+02:00,-7200,2022-08-24 11:49:55+02:00,-7200,True,False,"['.gitignore', 'v3rc2.py', 'test_v3rc2.py']",['086ad18d9fe90d1e7bf4ceb22c2fc98b5d074f8d'],13,13,26,3,1.0,1.0,0.0
+8d909e9ee24463c7000881c64acd923603eb2056,"Fix mistake with ``valueReferencePairTypes`` (#167)
+
+We erroneously transribed from the book ``valueReferencePairTypes``
+whereas the correct name of the attribute was ``valueReferencePair`` in
+the class ``ValueList``.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-24 11:55:14+02:00,-7200,2022-08-24 11:55:14+02:00,-7200,True,False,['v3rc2.py'],['c804643900217bc76d79608de266d6940068e574'],8,6,14,1,0.0,0.0,0.0
+1df1729d364367ca460e43a40b19d9d3edc19930,"Reference properties from interfaces (#168)
+
+So far, we referenced the properties as properties of a concrete class
+in the documentation instead of referencing them to the most abstract
+class which defines them.
+
+This creates problems with [docfx] in C# so we reference the
+properties as properties of the abstract class.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-08-26 13:50:28+02:00,-7200,2022-08-26 13:50:28+02:00,-7200,True,False,['v3rc2.py'],['8d909e9ee24463c7000881c64acd923603eb2056'],5,5,10,1,,,
+b518b3b2924c372401eea2c12abc8317f8f30905,"Change XML namespace to a conventional one (#169)
+
+We strip the subdomain and add the HTTPS protocol to follow the
+conventions.
+
+See the issue: https://github.com/admin-shell-io/aas-specs/issues/75",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-09-01 10:28:39+02:00,-7200,2022-09-01 10:28:39+02:00,-7200,True,False,['v3rc2.py'],['1df1729d364367ca460e43a40b19d9d3edc19930'],1,1,2,1,,,
+95055a55a8c8f60d75fb48c26eb932ff99945dd2,"Fix casing of some enumeration literals (#170)
+
+We fix the casing of the enumeration literals ``Direction`` and
+``State_of_event``. We transcribed the upper case from the book by
+mistake.
+
+This was the original issue:
+https://github.com/admin-shell-io/aas-specs/issues/214",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-09-01 10:35:58+02:00,-7200,2022-09-01 10:35:58+02:00,-7200,True,False,['v3rc2.py'],['b518b3b2924c372401eea2c12abc8317f8f30905'],4,4,8,1,,,
+931b355682c4a7b84a2fb94932cf09bcf7ce9a1f,"Fix wrong case in ``xs:NonNegativeInteger`` (#171)
+
+In the V3RC02, we mistakenly capitalized the data type, where it should
+have been named ``xs:nonNegativeInteger`` (lowercase first).",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-09-02 18:36:52+02:00,-7200,2022-09-02 18:36:52+02:00,-7200,True,False,['v3rc2.py'],['95055a55a8c8f60d75fb48c26eb932ff99945dd2'],1,1,2,1,,,
+c105869d3cace5cab1d3959a3bbe2ef128e5d60f,"Remove checks on commit messages in CI (#173)
+
+GitHub started to re-flow the text of the pull request so we disable the
+checks on commit messages in CI as we can not control the text anymore.",Marko Ristin,marko.ristin@gmail.com,GitHub,noreply@github.com,2022-10-28 16:49:40+02:00,-7200,2022-10-28 16:49:40+02:00,-7200,True,False,"['check-commit-messages-in-push.yml', 'check-pull-request-title-and-description.yml', 'additional-verbs-in-imperative-mood.txt']",['931b355682c4a7b84a2fb94932cf09bcf7ce9a1f'],90,0,90,3,,,
+e63c0c967c67ff8cb53e77e4645292ef336b3325,"Fix minor cosmetics in documentation (#172)
+
+While working on Python SDK, we noticed a couple of documentation errors
+and fix them in this patch.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2022-10-28 16:51:19+02:00,-7200,2022-10-28 16:51:19+02:00,-7200,True,False,['v3rc2.py'],['c105869d3cace5cab1d3959a3bbe2ef128e5d60f'],10,12,22,1,,,
+3ffe72745ff2d4a5ccf53bc8b23f2601c335f09d,"Sort out references (#174)
+
+Previously, due to ignorance, we annotated references with different
+prefixes (attributes with ``~`` and classes and constants with ``.``).
+Eventually, we learned more about Sphinx and how it deals with
+references (see [1]).
+
+In this change, we sort out the referencing and make it a bit clearer:
+
+* attributes, classes and constants must be references as-are,
+* appearance prefixes ``!`` and ``~`` are ignored (as target languages
+  usually do not work like Sphinx), and
+* relaxed qualified names (references prefixed with a ``.``) are
+  disallowed as we can only resolve references *within* the meta-model
+  and not outside it.
+
+This change is harmonized with the respective change in
+[aas-core-codegen 46ddb38f].
+
+[1]: https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#xref-syntax
+[aas-core-codegen 46ddb38f]: https://github.com/aas-core-works/aas-core-codegen/commit/46ddb38f",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2022-10-29 21:20:01+02:00,-7200,2022-10-29 21:20:01+02:00,-7200,True,False,"['v3rc2.py', 'setup.py']",['e63c0c967c67ff8cb53e77e4645292ef336b3325'],181,181,362,2,,,
+b2d12308970d139e39d56be073d96a4f758e58f5,"Fix pattern for ``xs:float`` and ``xs:double`` (#175)
+
+We fix the pattern in V3RC02 for ``xs:float`` and ``xs:double`` as the
+previous pattern allowed for partial matches and non-integer exponents.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2022-10-30 13:12:46+01:00,-3600,2022-10-30 13:12:46+01:00,-3600,True,False,"['v3rc2.py', 'test_v3rc2.py']",['3ffe72745ff2d4a5ccf53bc8b23f2601c335f09d'],14,28,42,2,1.0,1.0,1.0
+a8e66218c4539309761e187affa38d3436014cb3,"Disallow positive-signed `xs:float` and `xs:double` (#176)
+
+We disallow the positive sign in front of ``xs:float`` and ``xs:double``
+as they are not part of the valid lexical representation.
+
+See also [1] for more details.
+
+[1]: https://www.oreilly.com/library/view/xml-schema/0596002521/re67.html",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2022-10-30 14:26:20+01:00,-3600,2022-10-30 14:26:20+01:00,-3600,True,False,"['v3rc2.py', 'test_v3rc2.py']",['b2d12308970d139e39d56be073d96a4f758e58f5'],6,8,14,2,0.0,0.0,0.0
+d180dbbf9fe96521cd9e7b5ffce515efe2494484,"Sync naming with the published schemas for V3RC02 (#178)
+
+Unfortunately, we had a bug in aas-core-codegen e2a7a806 (2022-10-30)
+and prior versions where we generated the names for JSON and RDF
+schemas based on a hard-wired list of abbreviations in
+*aas-core-codegen* instead of relying on the naming in aas-core-meta.
+This list has not been updated before publishing the schemas, so we
+have to stick with the unexpected casing in the names. To maintain
+the compatibility with the schemas, we allow for capitalization of
+certain abbreviations where uppercase would be expected. Concretely,
+this was the case with abbreviations ""AAS"" and ""XSD"".",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2022-11-02 11:22:35+01:00,-3600,2022-11-02 11:22:35+01:00,-3600,True,False,"['v3rc2.py', 'test_v3rc2.py']",['a8e66218c4539309761e187affa38d3436014cb3'],76,117,193,2,0.0,0.0,1.0
+e3707bfaf4ec2de3a3060221c8633b91e699fee7,"Remove double spaces in V3RC02 (#179)
+
+We introduced a couple of unexpected double whitespaces in the
+docstrings. In this patch, we search and replace them with single
+whitespaces.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2022-11-30 20:45:47+01:00,-3600,2022-11-30 20:45:47+01:00,-3600,True,False,['v3rc2.py'],['d180dbbf9fe96521cd9e7b5ffce515efe2494484'],5,5,10,1,,,
+a4b27e8865bc57565f5d00f33f8e24d27b8c11de,"Write HTML generator (#180)
+
+We implement a generator of HTML documentation to make the browsing
+through the meta-model a bit easier.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-01-18 18:54:01+01:00,-3600,2023-01-18 18:54:01+01:00,-3600,True,False,"['generate-doc.yml', '.gitignore', 'csv-plugin.xml', 'rist.xml', '__init__.py', 'description.py', 'for_metamodel.py', 'main.py', 'mypy.ini', 'precommit.py', 'setup.py']",['e3707bfaf4ec2de3a3060221c8633b91e699fee7'],76,2979,3055,11,0.1835245046923879,0.3931178310740355,0.48175182481751827
+0f773ce0856aee1603e928bddb565248fc82012a,"Fix generate-doc workflow (#181)
+
+We had an indention mistake.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-01-18 18:58:54+01:00,-3600,2023-01-18 18:58:54+01:00,-3600,True,False,"['generate-doc.yml', 'test-generate-doc.yml']",['a4b27e8865bc57565f5d00f33f8e24d27b8c11de'],1,29,30,2,,,
+6bf4a44fccc16fb9030cd26484776ecc8b7a80cc,"Generate docs on pushes to main branch (#182)
+
+We change the generate doc workflow to respond to pushes to the main
+branch.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-01-18 19:00:56+01:00,-3600,2023-01-18 19:00:56+01:00,-3600,True,False,['generate-doc.yml'],['0f773ce0856aee1603e928bddb565248fc82012a'],2,1,3,1,,,
+735f33719c8b61b70864c32c78a5d52ff2dba257,"Move CSS and JS to roof of the HTML (#183)
+
+We missed that each model would have a separate CSS and JS. This is
+unnecessary, and can slow down the development. We move CSS and JS to
+the root of HTML, and share them among the models.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-01-18 19:10:08+01:00,-3600,2023-01-18 19:10:08+01:00,-3600,True,False,"['common.py', 'for_metamodel.py', 'main.py']",['6bf4a44fccc16fb9030cd26484776ecc8b7a80cc'],108,110,218,3,0.0,1.0,1.0
+8b3adf3da267f97dde114e3f8a185467185517ca,"Generate usages for our types in htmlgen (#185)
+
+Usages of our types are very handy when examining the meta-model as a
+whole, and tracing how it all fits together.
+
+For a longer discussion and the background, see [this relevant issue] on
+aas-core-codegen.
+
+[this relevant issue]: https://github.com/aas-core-works/aas-core-codegen/issues/29",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-01-18 19:50:16+01:00,-3600,2023-01-18 19:50:16+01:00,-3600,True,False,['for_metamodel.py'],['735f33719c8b61b70864c32c78a5d52ff2dba257'],11,121,132,1,0.16853932584269662,0.16853932584269662,0.7640449438202247
+42407fced42243c498c07e9e2977a915452ebd3e,"Write first draft of V3 of the meta-model (#186)
+
+This is the initial version of the formalized V3 meta-model translated
+from the book.
+
+The book has not been published yet! This version is intended only for
+the review.
+
+Co-authored-by: Igor Garmaev <garmaev@gmx.de>
+Co-authored-by: Sebastian Heppner <s.heppner@plt.rwth-aachen.de>",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-01-25 15:15:32+01:00,-3600,2023-01-25 15:15:32+01:00,-3600,True,False,"['rist.xml', 'v3.py', 'common.py', 'test_v3.py', 'test_v3rc2.py']",['8b3adf3da267f97dde114e3f8a185467185517ca'],234,7234,7468,5,0.3978798586572438,0.841696113074205,0.680565371024735
+32d4fa1164a81494295c9d2e1bdbf2ffe9e9b183,"Extend contributors in Readme
+
+We add Igor Garmaev und Sebastian Heppner as contributors for their
+work on V3.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-01-25 15:17:29+01:00,-3600,2023-01-25 15:17:29+01:00,-3600,True,False,['README.rst'],['42407fced42243c498c07e9e2977a915452ebd3e'],0,2,2,1,,,
+222769593ac8fddf3ee4b6df8a359a4f49d5cfb4,"Fix book version in V3 (#187)
+
+We fix the book version as it was a trail from the V3RC02.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-01-25 15:19:36+01:00,-3600,2023-01-25 15:19:36+01:00,-3600,True,False,['v3.py'],['32d4fa1164a81494295c9d2e1bdbf2ffe9e9b183'],5,2,7,1,,,
+b8456864ab2aca93e4ddad8f6a027d183fd20e5d,"Remove constraints AASd 50 and 50b in V3 (#190)
+
+The constraints AASd 50 and 50b have been removed in V3, and we
+propagate the changes to our meta-model.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 17:48:10+01:00,-3600,2023-02-08 17:48:10+01:00,-3600,True,False,['v3.py'],['222769593ac8fddf3ee4b6df8a359a4f49d5cfb4'],5,0,5,1,,,
+c18fa6efa56fa37de0aed693e6ed38a613fb4e20,"Introduce abstract lang string to V3 (#192)
+
+We introduce an abstract class, `Abstract_lang_string`, and many other
+derived concrete classes to model the langStrings of different length,
+as specified in the book.
+
+The abstract class `Abstract_lang_string` is explicitly modelled without
+the model type in order to avoid confusion for the reader of JSON and
+XML schemas.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 18:08:20+01:00,-3600,2023-02-08 18:08:20+01:00,-3600,True,False,"['v3.py', 'test_v3.py']",['b8456864ab2aca93e4ddad8f6a027d183fd20e5d'],23,79,102,2,0.875,0.875,0.25
+dea13d0763ae65e2139e3a5919c896718d4a74f8,"Rename ""modeling"" to ""modelling"" in V3 (#193)
+
+We write ""modelling"" instead of ""modeling"" to reflect the changes in the
+book.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 18:12:58+01:00,-3600,2023-02-08 18:12:58+01:00,-3600,True,False,"['v3.py', 'test_v3.py']",['c18fa6efa56fa37de0aed693e6ed38a613fb4e20'],14,14,28,2,,,
+04afd275d39745b6bb6b8949b8607e7ca9f7d106,"Remove `Short_name` from V3 (#194)
+
+The constrained primitive `Short_name` is not used in the metamodel
+anymore. We remove it since it seems redundant for the moment.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 20:53:49+01:00,-3600,2023-02-08 20:53:49+01:00,-3600,True,False,['v3.py'],['dea13d0763ae65e2139e3a5919c896718d4a74f8'],10,0,10,1,,,
+987dc753d049a1b59f032d5d1c70a934faac84e9,"Fix URL to BCP 47 in the docs of V3 (#195)
+
+We fix the URL to point to IETF instead of Wikipedia, as it is more
+precise.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 20:56:29+01:00,-3600,2023-02-08 20:56:29+01:00,-3600,True,False,['v3.py'],['04afd275d39745b6bb6b8949b8607e7ca9f7d106'],1,1,2,1,,,
+f18ff5b8d0c21a5dff5e1470004f7f9ec7e0fe4f,"Rename ""atomic"" to ""simple"" in V3
+
+We fix the docs to refer to ""simple"" XSD types instead of the ""atomic""
+types since that is the terminology used by XML standard.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2023-02-08 20:57:15+01:00,-3600,2023-02-08 20:57:15+01:00,-3600,True,False,['v3.py'],['987dc753d049a1b59f032d5d1c70a934faac84e9'],1,1,2,1,,,
+ca9abbe1641d74bf3522e4884d6eeb0d9b04f132,"Make `refers_to` a list in V3 (#196)
+
+The extension's `refers_to` property is made to a list to reflect
+changes in the book.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 21:01:25+01:00,-3600,2023-02-08 21:01:25+01:00,-3600,True,False,"['v3.py', 'test_v3.py']",['f18ff5b8d0c21a5dff5e1470004f7f9ec7e0fe4f'],2,9,11,2,0.0,0.0,1.0
+51f725c75a2d48bda104c8e8ce1cea74b2258ddf,"Limit extension's `name` to `Name_type` (#197)
+
+The constrained primitive `Name_type` limits the length of the `name`
+property of the `Extension`. This reflects the specs in the book.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 21:04:44+01:00,-3600,2023-02-08 21:04:44+01:00,-3600,True,False,['v3.py'],['ca9abbe1641d74bf3522e4884d6eeb0d9b04f132'],2,2,4,1,,,
+ba1e6fced96db92727910a8b28ac288f221112eb,"Update docs of `Modelling_kind` in V3 (#198)
+
+We update the description of the literals of `Modelling_kind` to latest
+state of the book.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 21:07:13+01:00,-3600,2023-02-08 21:07:13+01:00,-3600,True,False,['v3.py'],['51f725c75a2d48bda104c8e8ce1cea74b2258ddf'],17,4,21,1,,,
+9dd437036677e1b16ded2a173e75bfb7df5a43e1,"Reformat AASd-20 invariant in V3
+
+This is just a minor reformat of the invariant body to be consistent
+with the remainder of the file.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2023-02-08 21:08:44+01:00,-3600,2023-02-08 21:08:44+01:00,-3600,True,False,['v3.py'],['ba1e6fced96db92727910a8b28ac288f221112eb'],1,2,3,1,,,
+4f1a6cad61f7009473f2cbd888b64acac0d98d20,"Implement AASd-116 in V3
+
+The class `Asset_information` now contains specific asset IDs as a list
+(as oposed to V3RC02) so we can now implement AASd-116.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2023-02-08 21:11:56+01:00,-3600,2023-02-08 21:11:56+01:00,-3600,True,False,['v3.py'],['9dd437036677e1b16ded2a173e75bfb7df5a43e1'],7,19,26,1,,,
+3ebe4ceed8f5028eea9a7839dc5f44f0678a4446,"Make AASd-119 transpilable in V3
+
+We refactor the invariant corresponding to AASd-119 to make it
+transpilable in V3.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2023-02-08 21:16:50+01:00,-3600,2023-02-08 21:16:50+01:00,-3600,True,False,['v3.py'],['4f1a6cad61f7009473f2cbd888b64acac0d98d20'],4,9,13,1,,,
+46e0394a5c028996577f937e9d2e3ba0b8cce69b,"Remove AASd-119 from `Submodel_element` in V3
+
+We remove the invariant corresponding to AASd-119 from
+`Submodel_element` class since it is defined in the context of
+`Submodel`.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2023-02-08 21:18:15+01:00,-3600,2023-02-08 21:18:15+01:00,-3600,True,False,['v3.py'],['3ebe4ceed8f5028eea9a7839dc5f44f0678a4446'],15,0,15,1,,,
+c66dec7fbdc1f2de473736eca2f135b855d010cc,"Move `value` in `Submodel_element_list` in V3
+
+We change the order of the properties to reflect the book.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2023-02-08 21:20:15+01:00,-3600,2023-02-08 21:21:22+01:00,-3600,True,False,['v3.py'],['46e0394a5c028996577f937e9d2e3ba0b8cce69b'],9,9,18,1,,,
+56cd4a8172d8b20091feaf77a203067beb52c8b7,"Move `Entity_type` in V3
+
+We move the enumeration `Entity_type` in the file to better reflect the
+order in the book.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2023-02-08 21:23:00+01:00,-3600,2023-02-08 21:23:00+01:00,-3600,True,False,['v3.py'],['c66dec7fbdc1f2de473736eca2f135b855d010cc'],22,22,44,1,,,
+643f0405e0b480551560688f2755dc7b94b5a9c9,"Make specific asset IDs multiple in Entity of V3
+
+We make the property `specific_asset_ids` to a list and adapt the
+invariants accordingly to reflect the book.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2023-02-08 21:28:28+01:00,-3600,2023-02-08 21:28:28+01:00,-3600,True,False,['v3.py'],['56cd4a8172d8b20091feaf77a203067beb52c8b7'],10,16,26,1,,,
+df22a954d4b13b7f99a9f6cbf9e7a01c4a8b2810,"Say ""external"" instead of ""global"" in V3
+
+We refer to ""external"" references instead of ""global"" references in the
+docs of V3, following the book.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2023-02-08 21:32:35+01:00,-3600,2023-02-08 21:32:35+01:00,-3600,True,False,['v3.py'],['643f0405e0b480551560688f2755dc7b94b5a9c9'],2,2,4,1,,,
+4c674671208d7a898d60761a8f6c6a99b171178d,"Update data specifications in V3 (#199)
+
+We update the data specifications in V3 to follow more closely the book.
+
+Namely:
+
+* We fix the constraint identifiers and corresponding invariants,
+* We change the types of the properties accordingly,
+* We shuffle the order of the properties to reflect better the tables in
+  the book, and
+* We update the documentation, where applicable.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 21:46:51+01:00,-3600,2023-02-08 21:46:51+01:00,-3600,True,False,['v3.py'],['df22a954d4b13b7f99a9f6cbf9e7a01c4a8b2810'],51,157,208,1,1.0,1.0,1.0
+0661aa0a688948e55b9ecbe0d195e443175ce867,"Fix formatting of AASc-3a-008 in V3
+
+We fix the formatting of the invariant for AASc-3a-008 for better
+readability.",Marko Ristin,marko.ristin@gmail.com,Marko Ristin,marko.ristin@gmail.com,2023-02-08 21:58:48+01:00,-3600,2023-02-08 21:58:48+01:00,-3600,True,False,['v3.py'],['4c674671208d7a898d60761a8f6c6a99b171178d'],1,1,2,1,,,
+2df7186e65838f9d4e17ddc1e85b685a5d960641,"Change order of enum literals in V3 (#200)
+
+We change the order of enumeration literals to reflect better the tables
+in the book.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 22:02:49+01:00,-3600,2023-02-08 22:02:49+01:00,-3600,True,False,['v3.py'],['0661aa0a688948e55b9ecbe0d195e443175ce867'],32,36,68,1,,,
+3f93eaf9818f4a8c5971d3d23d0c0f6b2bd72072,"Fix external *vs* global reference in V3 (#201)
+
+We mistakenly wrote external references in V3 where global references
+were appropriate.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 22:08:06+01:00,-3600,2023-02-08 22:08:06+01:00,-3600,True,False,['v3.py'],['2df7186e65838f9d4e17ddc1e85b685a5d960641'],2,2,4,1,,,
+1b48b5a9d316181bf09d9ae1a4a8d549fcb02c53,"Fix description of AAS sub. elements as keys in V3 (#202)
+
+We fix the erroneous description of the constant set
+`AAS_submodel_elements_as_keys`.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 22:10:48+01:00,-3600,2023-02-08 22:10:48+01:00,-3600,True,False,['v3.py'],['3f93eaf9818f4a8c5971d3d23d0c0f6b2bd72072'],1,1,2,1,,,
+6ca945d17f2b66c7a63f2ca261a1b8b977d310a9,"Make ""ID"" an abbreviation in V3 (#203)
+
+We follow Merriam-Webster [1] and StackOverflow [2], and spell ""ID""
+uppercase as initialism.
+
+Due to shadowing, we had to rename the *type*, a constrained primitive,
+`ID_short` to `ID_short_type`.
+
+[1]: https://www.britannica.com/dictionary/ID[2]
+[2]: https://stackoverflow.com/questions/1151338/id-or-id-on-user-interface",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-08 22:44:24+01:00,-3600,2023-02-08 22:44:24+01:00,-3600,True,False,"['v3.py', 'test_v3.py']",['1b48b5a9d316181bf09d9ae1a4a8d549fcb02c53'],342,369,711,2,0.0,0.0,1.0
+301f668fb9fb4cbe23ff552ed0d3f12c12d1e7a7,"Adapt module docstring (#216)
+
+The meta-model documentation is confusing as so far that it is not
+clear whether the work presented herein is supported by IDTA or
+is independent.
+
+Fixes #210.
+
+Co-authored-by: Marko Ristin <marko@ristin.ch>",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-22 10:24:02+01:00,-3600,2023-02-22 10:24:02+01:00,-3600,True,False,['v3.py'],['6ca945d17f2b66c7a63f2ca261a1b8b977d310a9'],1,7,8,1,,,
+b55e0aa0e7ea22dae2bb8e2009d415015ca68d4a,"Fix invariant of AASd-133 in V3 (#217)
+
+The invariant for AASd-133 in V3 was actually at the correct location,
+but the related property names were incorrect.
+
+See: Chapter 5.3.4, page 68 in the DotAAS Part1a.
+
+Fixes #211.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-22 10:28:01+01:00,-3600,2023-02-22 10:28:01+01:00,-3600,True,False,['v3.py'],['301f668fb9fb4cbe23ff552ed0d3f12c12d1e7a7'],2,2,4,1,,,
+4b62844e0f61c4c12a950d68c29aa8e2960ca5f0,"[V3] Add missing value of `Asset_kind` enum (#220)
+
+The value `NotApplicable` as introduced in the spec was missing.
+
+Fixes #206.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-22 10:33:17+01:00,-3600,2023-02-22 10:33:17+01:00,-3600,True,False,['v3.py'],['b55e0aa0e7ea22dae2bb8e2009d415015ca68d4a'],0,5,5,1,,,
+1cd4a7f51fa43e13d7673bc88d94f3c35a1c6e18,"[V3] Remove `Data_specification_physical_unit` (#224)
+
+Data specification for physical units is removed from V3 spec. We do
+not have this change written in the spec, but we have oral confirmation
+*via* the IDTA.
+
+Fixes #188.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-22 10:47:02+01:00,-3600,2023-02-22 10:47:02+01:00,-3600,True,False,['v3.py'],['4b62844e0f61c4c12a950d68c29aa8e2960ca5f0'],114,1,115,1,1.0,0.0,1.0
+1df2ae26c40d3d64a8463246951d0f189e2f48f5,"Update existing refs to the curr version of the book (#225)
+
+We update the references in the book. Originally, the meta-model was
+defined in a single self-referencing book, but eventually it was 
+split in multiple parts for better readability.
+
+We still did not reflect this in aas-core-codegen, so the references 
+in this patch refer sometimes to DotAAS Part 1, but other times to 
+Part 3.
+
+Wherever possible, we referenced DotAAS Part 1a. When necessary, we 
+added an inline comment when referencing DotAAS Part 3a.
+
+In the future, we will change aas-core-codegen to operate on URLs and
+deprecate structured references (such as section index).
+
+Co-authored-by: zrgt <garmaev@gmx.de>",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-22 10:54:55+01:00,-3600,2023-02-22 10:54:55+01:00,-3600,True,False,['v3.py'],['1cd4a7f51fa43e13d7673bc88d94f3c35a1c6e18'],76,82,158,1,,,
+2579cc803291d841b8e9b3880adbb5965c5de12b,"Generate list of concrete descendants in htmlgen (#226)
+
+It is often very hard to figure out who implements a given parent class,
+so we list all the concrete descendants in that class page for easier
+browsing.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-22 13:32:17+01:00,-3600,2023-02-22 13:32:17+01:00,-3600,True,False,"['.gitignore', 'for_metamodel.py', 'main.py']",['1df2ae26c40d3d64a8463246951d0f189e2f48f5'],0,34,34,3,0.0,0.034482758620689655,0.034482758620689655
+4025b155a740335b62852df327c29714bb8043b8,"[V3] Constrain `Administrative_information`
+
+We update the constraints to reflect the specification in the book,
+which introduced a new type for the properties `version` and 
+`revision`.
+
+Originally, in our meta-model, empty values were allowed and we also
+did not impose any regular expressions.
+
+Fixes #215.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-22 14:48:22+01:00,-3600,2023-02-22 14:48:22+01:00,-3600,True,False,['v3.py'],['2579cc803291d841b8e9b3880adbb5965c5de12b'],6,44,50,1,1.0,1.0,1.0
+c09880fa2a7097a05162ef4f144916b7e3eb5ca9,"[V3] Document divergence from the spec at AASd-116 (#219)
+
+In the book, `AASd-116` imposes a case-insensitive equality against 
+`globalAssetId`. This is culturally-dependent, and depends on 
+the system settings. For example, the case-folding for 
+the letters ""i"" and ""I"" is different in Turkish from English.
+
+Fixes #205.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-22 15:06:15+01:00,-3600,2023-02-22 15:06:15+01:00,-3600,True,False,"['v3.py', 'for_metamodel.py']",['4025b155a740335b62852df327c29714bb8043b8'],5,26,31,2,1.0,1.0,1.0
+9e6d926f6ee5deb660a4ed189d78d9c75289bc3e,"[V3] Note the location of `AASd-129` invariant (#218)
+
+Some confusion was caused by the location where constraint AASd-129 is
+described, and the location where it was implemented as invariant.
+
+Namely, the constraint is described in the class `Qualifiable`, while 
+the invariant belongs to the class `Submodel`. Since we can not access 
+parent instances in the meta-model, we had to define the invariant at 
+`Submodel` class so that we could access all the children.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-22 15:21:08+01:00,-3600,2023-02-22 15:21:08+01:00,-3600,True,False,"['aas-core-meta.iml', 'v3.py']",['c09880fa2a7097a05162ef4f144916b7e3eb5ca9'],0,18,18,2,,,
+394656afdccd6ac2d39940b35854a361e167adcf,"Adapt type of value in Data_spec_IEC_61360 and Value_reference_pair (#227)
+
+We propagate the changes discussed in the last meeting of the IDTA
+worsktream AAS.
+
+Fixes #208.
+Fixes #209.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-24 14:20:40+01:00,-3600,2023-02-24 14:20:40+01:00,-3600,True,False,['v3.py'],['9e6d926f6ee5deb660a4ed189d78d9c75289bc3e'],4,14,18,1,,,
+7777f0aa8d06bd2a5d2a22889105c6174f93e54b,"Highlight separation from IDTA in the docs (#229)
+
+While aas-core-meta team works closely with IDTA, it is not *officially*
+part of it.
+
+We make this distinction a bit more explicit in the documentation of
+the meta-models.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-24 14:25:03+01:00,-3600,2023-02-24 14:25:03+01:00,-3600,True,False,"['v3.py', 'v3rc2.py', 'for_metamodel.py']",['394656afdccd6ac2d39940b35854a361e167adcf'],8,14,22,3,,,
+3d7af4381d9fd13dc4cfb9fa3f18d74c60018221,"[V3] Add `work-in-progress` to version to avoid confusion (#228)
+
+We add a suffix `-work-in-progress` to let the readers know that this
+version of the meta-model is still not complete, and is expected to 
+change in the very near future.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-24 14:30:29+01:00,-3600,2023-02-24 14:30:29+01:00,-3600,True,False,['v3.py'],['7777f0aa8d06bd2a5d2a22889105c6174f93e54b'],1,1,2,1,,,
+32921521e2b81d4064cbb9bbe0033e45c81be147,"Refer to contributors in the license
+
+We follow the advice from [stackexchange question], and refer to 
+contributors instead of ""aas-core-meta"" as the copyright owner.
+
+[stackexchange question]: https://opensource.stackexchange.com/questions/7124/can-a-github-organization-assert-copyright",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-24 14:42:39+01:00,-3600,2023-02-24 14:42:39+01:00,-3600,True,False,['LICENSE'],['3d7af4381d9fd13dc4cfb9fa3f18d74c60018221'],1,1,2,1,,,
+cbbc2d29daafd5cb456a9ffab62d0dd548ea4e0b,"List IDTA as contributors
+
+We add IDTA to the list of contributors because of the project work,
+and to make the legal situation of the copyright ownership more
+explicit.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-02-24 14:44:41+01:00,-3600,2023-02-24 14:44:41+01:00,-3600,True,False,['README.rst'],['32921521e2b81d4064cbb9bbe0033e45c81be147'],0,1,1,1,,,
+4c09e5536fb755bdc5f7ab506addc20d005693ff,"[V3.0] Reformulate confusing paragraph in module docstring (#233)
+
+Rework the explanation for why two implementations of the
+enumeration `AAS_submodel_elements` exist in the model.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-02-28 19:27:33+01:00,-3600,2023-02-28 19:27:33+01:00,-3600,True,False,['v3.py'],['cbbc2d29daafd5cb456a9ffab62d0dd548ea4e0b'],9,6,15,1,,,
+2fe273fa228a94043354dcf4e08bd75f5fb8a1a1,"[V3] Fix version and revision types (#234)
+
+The patterns in version and revision type had slashes as invalid
+prefixes and suffixes.
+
+This patch fixes the issue.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-01 17:16:41+01:00,-3600,2023-03-01 17:16:41+01:00,-3600,True,False,['v3.py'],['4c09e5536fb755bdc5f7ab506addc20d005693ff'],2,2,4,1,,,
+d11454b125a86e9c033ed3bee55b322e4ff43453,"[V3] Fix invariants for ``Administrative_information`` (#235)
+
+We fix the invariant of ``Administrative_information`` for the
+``revision`` property, which contained a reference to
+``version`` by a copy-paste error.
+
+We also adjust the invariant messages for readability in downstream
+code.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-03 17:34:02+01:00,-3600,2023-03-03 17:34:02+01:00,-3600,True,False,['v3.py'],['2fe273fa228a94043354dcf4e08bd75f5fb8a1a1'],3,3,6,1,,,
+89473c9c5b8c85df7aa3cfa6057ef1c2097a3643,"[V3] Fix len. invariant for version and revision (#236)
+
+We fix the length invariants for `version` and `revision` of
+`Administrative_information`. At this point, we also fix the texts of
+the invariants for readability in downstream applications.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-03 17:47:40+01:00,-3600,2023-03-03 17:47:40+01:00,-3600,True,False,['v3.py'],['d11454b125a86e9c033ed3bee55b322e4ff43453'],6,4,10,1,,,
+4b6381907bbac01299bf198e774db34c8d09bd47,"[V3] Fix invariant for Constraint AASd-129 (#237)
+
+We add a nullability check which has not been discovered by our
+(admittedly still limited) type inference during the smoke test.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-03 17:56:38+01:00,-3600,2023-03-03 17:56:38+01:00,-3600,True,False,['v3.py'],['89473c9c5b8c85df7aa3cfa6057ef1c2097a3643'],1,2,3,1,,,
+0069e6af259b2b606f68e9d7190ea9dcd85e64b7,"[V3] Check nullability in invariant of AASd-014 (#238)
+
+We omitted by mistake a nullability check which was revealed by mypy in
+Python SDK.
+
+This patch fixes the issue.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-03 18:06:38+01:00,-3600,2023-03-03 18:06:38+01:00,-3600,True,False,['v3.py'],['4b6381907bbac01299bf198e774db34c8d09bd47'],0,1,1,1,,,
+a104bb78411c744ca9936c04fc4b8d573cb446b2,"[V3] Fix either-or logic in AASd-131 (#239)
+
+The logic for the constraint AASd-131 has been incorrectly implemented.
+Namely, the implementation used the logical ""or"" instead of ""exclusive or"".
+
+This patch fixes the issue.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-03 18:17:51+01:00,-3600,2023-03-03 18:17:51+01:00,-3600,True,False,['v3.py'],['0069e6af259b2b606f68e9d7190ea9dcd85e64b7'],4,10,14,1,,,
+2e0320c027258db41c85b7302461de7866fd65dc,"[V3] Fix invariant for AASd-119 to use default (#248)
+
+We omitted to use ``kind_or_default`` by mistake, and used ``kind``
+instead.
+
+This patch fixes the issue.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-11 18:30:06+01:00,-3600,2023-03-11 18:30:06+01:00,-3600,True,False,"['v3.py', 'test_v3.py']",['a104bb78411c744ca9936c04fc4b8d573cb446b2'],3,3,6,2,,,
+97dd12a420a682062d125bad961ae7ca0dc8bc09,"[V3] Follow text to re-write logic of AASd-129 (#249)
+
+We had another look at the text of the invariant:
+
+> Constraint AASd-129: If any qualifier kind value of a Submodel element
+> qualifier is equal to TemplateQualifier then the submodel element shall
+> be part of a submodel template, i.e. a Submodel with submodel kind
+> value is equal to ""Template"".
+
+We understand it in a simplified form as follows.
+If any qualifier of a submodel element is a template qualifier, then
+the submodel kind is equal to ""Template"".
+
+We adapt the logic of the submodel invariant accordingly.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-11 18:52:18+01:00,-3600,2023-03-11 18:52:18+01:00,-3600,True,False,['v3.py'],['2e0320c027258db41c85b7302461de7866fd65dc'],4,4,8,1,,,
+62ea5a8085ff578acf69a3e757d912f6f30d3e96,"Fix invariant for AASd-129 (#250)
+
+We got the logic wrong in #249. Namely, when a submodel element has no
+qualifiers, the predicate are still satisfied and imply that the
+submodel has to be a template.
+
+This patch (hopefully) solves the issue. We tested the logic preliminary
+on aas-core3.0-testgen and it seems to work.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-11 19:48:06+01:00,-3600,2023-03-11 19:48:06+01:00,-3600,True,False,['v3.py'],['97dd12a420a682062d125bad961ae7ca0dc8bc09'],5,5,10,1,,,
+a606a52ae242c7c69f99ff601a0396cc80658b30,"[v3.0] Fix typo in docstring of Administrative_information (#241)
+
+There exists no `submodel template_ID`.
+What is meant here is the ID of a submodel template`.
+This typo is fixed to avoid confusion.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-03-15 15:36:44+01:00,-3600,2023-03-15 15:36:44+01:00,-3600,True,False,['v3.py'],['62ea5a8085ff578acf69a3e757d912f6f30d3e96'],1,1,2,1,,,
+2f822c915aeba43f58331569592b7da7c0130452,"[V3] Remove occurances of global references in docstring (#243)
+
+``Reference_type.Global_reference`` was renamed to 
+``External_reference`` to avoid confusion with 
+the seperate ``Key_types.Global_reference``.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-03-15 15:38:21+01:00,-3600,2023-03-15 15:38:21+01:00,-3600,True,False,['v3.py'],['a606a52ae242c7c69f99ff601a0396cc80658b30'],4,4,8,1,,,
+d46eff4d84545ba7cc153f83478e0a13533ad050,"[V3] Separate types for `version` and `revision` (#247)
+
+We create separate types `Version_type` and `Revision_type` for 
+`Administrative_information/version` and 
+`Administrative_information/revision` inherited from 
+`Non_empty_XML_serializable_string`, similar to how it's done in 
+`Name_type`.
+
+This improves consistency.
+
+Fixes #240.",Igor Garmaev,56840636+zrgt@users.noreply.github.com,GitHub,noreply@github.com,2023-03-15 15:40:17+01:00,-3600,2023-03-15 15:40:17+01:00,-3600,True,False,['v3.py'],['2f822c915aeba43f58331569592b7da7c0130452'],34,34,68,1,,,
+9ccd31e5ccbd91b8b3a6805fc088573c42f1adb3,"[V3] Remove dubious invariant from Concept Descr. (#252)
+
+The invariant related to category ``VALUE`` seems to be off as it does
+not match the text description of the invariant.
+
+Related to #251.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-15 16:09:33+01:00,-3600,2023-03-15 16:09:33+01:00,-3600,True,False,['v3.py'],['d46eff4d84545ba7cc153f83478e0a13533ad050'],16,0,16,1,,,
+d86d80148d80866fd1cddc87bd13b0d241c8b994,"[V3] Fix order of `Fragment_keys` Fixes #244 (#255)
+
+The order of `Fragment_keys` was changed in the spec to be
+alphabetic. We adopt this change.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-03-17 11:41:21+01:00,-3600,2023-03-17 11:41:21+01:00,-3600,True,False,['v3.py'],['9ccd31e5ccbd91b8b3a6805fc088573c42f1adb3'],1,1,2,1,,,
+1e55d3fcdae8151f0f35093b5f578cda6d55486f,"[V3] Implement Constraint AASd-117 (#256)
+
+We implement the constraint AASd-117 by help of assertion tests.
+
+This supersedes #254.
+
+Fixes #253.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-17 15:33:21+01:00,-3600,2023-03-17 15:33:21+01:00,-3600,True,False,"['v3.py', 'setup.py', 'test_v3.py']",['d86d80148d80866fd1cddc87bd13b0d241c8b994'],25,459,484,3,0.1076923076923077,0.29615384615384616,1.0
+e6e7127eb22639bd0cb5b35122f40adedeb6609c,"Refactor code from `test_v3` to `common` (#257)
+
+We refactor the test code to `tests.common` module to make it available
+to future meta-model versions.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-17 16:37:57+01:00,-3600,2023-03-17 16:37:57+01:00,-3600,True,False,"['common.py', 'test_v3.py']",['1e55d3fcdae8151f0f35093b5f578cda6d55486f'],149,182,331,2,0.0,0.0,1.0
+3191ea54fbd4921e88dda68707b95b454f8fb951,"[V3] Polish invariants and references (#258)
+
+We noticed that there were style inconsistencies in the invariants (with
+ending dot and without, camel-case names *etc.*). Additionally, some
+references were linked, some were not *etc.*.
+
+We go over the meta-model and try to fix as many inconsistencies as
+possible.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-17 16:45:55+01:00,-3600,2023-03-17 16:45:55+01:00,-3600,True,False,"['v3.py', 'test_v3.py']",['e6e7127eb22639bd0cb5b35122f40adedeb6609c'],106,137,243,2,0.0,0.0,1.0
+02712deeff530a75fda99aee25961aa4ea38a420,"[V3] Use type strengthening for AASd-117 (#261)
+
+We use type strengthening instead of invariants so that compilers can
+detect null exceptions at compile time.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-21 23:56:38+01:00,-3600,2023-03-21 23:56:38+01:00,-3600,True,False,"['v3.py', 'setup.py', 'test_v3.py']",['3191ea54fbd4921e88dda68707b95b454f8fb951'],56,35,91,3,1.0,1.0,0.0
+c673df8aa9c944f67a7e6d5adf3f1a9c975b5fc5,"[V3] Make ID-shorts optional in `Identifiable` (#264)
+
+We misinterpreted Constraint AASd-117, and made ID-shorts required in
+identifiables.
+
+This patch fixes the issue by making ID-shorts optional in
+`Identifiable` class again.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-22 15:18:49+01:00,-3600,2023-03-22 15:18:49+01:00,-3600,True,False,"['v3.py', 'test_v3.py']",['02712deeff530a75fda99aee25961aa4ea38a420'],16,10,26,2,0.0,0.0,1.0
+57e09c8e47b99b17d8e4453f3b7c3348fba6cdcc,"[V3] Add a check for `entity_type` in invariant for `AASd-014` (#260)
+
+We fix the implementation of invariant for `AASd-014` by adding a missed
+check for `entity_type`.
+
+Fixes #259.",Igor Garmaev,56840636+zrgt@users.noreply.github.com,GitHub,noreply@github.com,2023-03-22 15:39:26+01:00,-3600,2023-03-22 15:39:26+01:00,-3600,True,False,['v3.py'],['c673df8aa9c944f67a7e6d5adf3f1a9c975b5fc5'],1,2,3,1,,,
+a67ac2f64c48e5e6a60a6ee41aedd15e11258413,"[V3] Improve documentation (#263)
+
+We fix documentation findings:
+
+* Remove references to `Data_type_def` from the module docstring, as
+  it has been removed in v3.0 of the spec.  Fixes #231.
+* Add missing spec docstring to `Key.type`. Fixes #242.
+* Expand description to `AAS_referables` to include its necessity to
+  exist, since this enum does not exist in the spec. Fixes #246 
+* Document in the module docstring that `AASc-3a-003` cannot be 
+  implemented. Fixes #251.
+* Document in the module docstring, how `Lang_string`-subtypes are 
+  implemented. Fixes #262.",s-heppner,s.heppner@plt.rwth-aachen.de,GitHub,noreply@github.com,2023-03-22 15:42:59+01:00,-3600,2023-03-22 15:42:59+01:00,-3600,True,False,['v3.py'],['57e09c8e47b99b17d8e4453f3b7c3348fba6cdcc'],12,48,60,1,,,
+0b256cc9aecc97aabc6609d918e496a2a22abd3f,"[V3] Fix constructors of `Identifiable`'s (#265)
+
+We forgot to update the constructors after #264, and fix the issue in
+this patch.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-22 16:23:36+01:00,-3600,2023-03-22 16:23:36+01:00,-3600,True,False,['v3.py'],['a67ac2f64c48e5e6a60a6ee41aedd15e11258413'],4,4,8,1,,,
+5ef70d372f2838a33ae3950f9051a877c2ed8889,"Detect issues in code with pylint (#266)
+
+We run pylint on htmlgen and tests to detect issues in code. We skip the
+meta-models intentionally, as they do not conform to ""normal"" code
+expected by pylint.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-03-22 17:38:49+01:00,-3600,2023-03-22 17:38:49+01:00,-3600,True,False,"['description.py', 'for_metamodel.py', 'main.py', 'precommit.py', 'pylint.rc', 'setup.py', 'common.py', 'test_v3.py', 'test_v3rc2.py']",['0b256cc9aecc97aabc6609d918e496a2a22abd3f'],48,55,103,9,0.0,0.0,1.0
+2e66256f0e235f69e927dd87ca5e545425f8ea2c,"List all descendants of a cls in html-doc (#267)
+
+Currently, only concrete descendants are listed in the generated HTML
+documentation. However, many readers want to see a full list of
+descendants, and not only the concrete ones.
+
+Therefore, we introduced ``descendants`` property in [aas_core_codegen.intermediate.Class], and leverage it in this patch.
+
+[aas_core_codegen.intermediate.Class]: https://github.com/aas-core-works/aas-core-codegen/blob/b2c0e4a8e5622d2718371a5999d4aa3be9a9af9b/aas_core_codegen/intermediate/_types.py#L1437",Igor Garmaev,56840636+zrgt@users.noreply.github.com,GitHub,noreply@github.com,2023-03-24 14:49:42+01:00,-3600,2023-03-24 14:49:42+01:00,-3600,True,False,"['for_metamodel.py', 'setup.py']",['5ef70d372f2838a33ae3950f9051a877c2ed8889'],4,4,8,2,,,
+8f18a8cc586dac01eb5c0b2d75ca8f8c52be0484,"[V3] Remove ""in-progress"" suffix from the version (#268)
+
+As the schemas have been officially published, we remove the
+""in-progress"" suffix from the version identifier.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-04-19 23:11:23+02:00,-7200,2023-04-19 23:11:23+02:00,-7200,True,False,['v3.py'],['2e66256f0e235f69e927dd87ca5e545425f8ea2c'],1,1,2,1,,,
+14243549eee8d569ba0cd2c9753159db1ae7e0bc,"[V3] Fix AASd-116 (#271)
+
+We enforce global asset ID to be set if any of the specific asset IDs
+are set to `globalAssetId`. The text of the invariant is a bit
+ambiguous, so this has been discovered only eventually.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-06-02 16:04:37+02:00,-7200,2023-06-02 16:04:37+02:00,-7200,True,False,['v3.py'],['8f18a8cc586dac01eb5c0b2d75ca8f8c52be0484'],2,3,5,1,,,
+e3657776530d1430f7f8ae9a19772d69c5c95408,"[V3] Fix nullability check in AASc-3a-009 (#272)
+
+We mistakenly checked for nullability instead of *non-nullability* in
+the constraint AASc-3a-009.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-06-09 10:15:33+02:00,-7200,2023-06-09 10:15:33+02:00,-7200,True,False,['v3.py'],['14243549eee8d569ba0cd2c9753159db1ae7e0bc'],2,4,6,1,,,
+5671db752f8fdbc6c0ac95c6cb72af382cbde875,"Fix nullability check in AASd-129 (#273)
+
+We forgot to use `kind_or_default`, which is a non-nullable, and used a
+`kind`, which can be `None`. The patch fixes this issue.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-06-09 10:49:54+02:00,-7200,2023-06-09 10:49:54+02:00,-7200,True,False,['v3.py'],['e3657776530d1430f7f8ae9a19772d69c5c95408'],1,1,2,1,,,
+2a81612dab519215621c55c8e3b434f441e5f588,"[V3RC2] Fix nullability checks in invariants (#274)
+
+We missed to ensure non-nullability in various invariants, and fix them
+in this patch. This was revealed once we implemented stricter
+nullability checks in aas-core-codegen, which is to be merged in
+shortly.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-06-09 12:25:44+02:00,-7200,2023-06-09 12:25:44+02:00,-7200,True,False,"['v3rc2.py', 'test_v3rc2.py']",['5671db752f8fdbc6c0ac95c6cb72af382cbde875'],5,7,12,2,,,
+44756fb27f6c087dbda8cca37f278bd8e15d0228,"Fix indention for notes in constraints (#275)
+
+We erroneously intertwined the remarks and constraints in some of the
+docstrings. Moreover, some notes were not properly indented, and were
+thus parsed as remarks instead of notes referring to the respective
+constraint.
+
+This patch fixes the issue.
+
+This is directly related to [the issue #16 in aas-core3.0-csharp].
+
+[the issue #16 in aas-core3.0-csharp]: https://github.com/aas-core-works/aas-core3.0-csharp/issues/16",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-06-24 08:56:40+02:00,-7200,2023-06-24 08:56:40+02:00,-7200,True,False,['v3.py'],['2a81612dab519215621c55c8e3b434f441e5f588'],55,57,112,1,,,
+85bdaf20e87c2b18eccb48a246d32164bd01b4aa,"Deprecate reference in the book (#276)
+
+The original meta-model book has been split into different parts, and
+there is no single book anymore. We therefore deprecate the references
+in the book as their maintenance over different books would be too cumbersome.
+
+Instead, we fix a single version for the meta-model and the single XML
+namespace.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-06-24 12:10:12+02:00,-7200,2023-06-24 12:10:12+02:00,-7200,True,False,"['marker.py', 'v3.py', 'v3rc2.py', 'for_metamodel.py', 'main.py', 'setup.py']",['44756fb27f6c087dbda8cca37f278bd8e15d0228'],302,21,323,6,0.8703703703703703,0.018518518518518517,1.0
+396c850c18ca9a7abc9d512ca13c54a287b3f8c0,"Add `non_mutating` marker (#277)
+
+We introduce the marker `non_mutating` to mark instance methods as
+non-mutating, *i.e.*, ""const"" in C++ jargon.
+
+This is necessary so that we can generate later tighter code in C++ and
+related languages with ""const"" qualifiers for the member functions.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-07-07 10:46:47+02:00,-7200,2023-07-07 10:46:47+02:00,-7200,True,False,"['marker.py', 'v3.py', 'setup.py']",['85bdaf20e87c2b18eccb48a246d32164bd01b4aa'],1,22,23,3,1.0,1.0,1.0
+d0f72bd6e36fde19b3b8bfdd2f61fc1918460706,"[V3] Fix inclusive OR in AASd-131 (#280)
+
+We misinterpreted the text of the constraint AASd-131. We understood
+""Either ... or ..."" as an exclusive OR, whereas it should be understood
+as inclusive OR.
+
+Fixes #278.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-09-08 09:43:44+02:00,-7200,2023-09-08 09:43:44+02:00,-7200,True,False,['v3.py'],['396c850c18ca9a7abc9d512ca13c54a287b3f8c0'],5,4,9,1,,,
+4d7e59ebd0ec2300c5cc8501b82c27d67df56e92,"[V3] Fix AASc-3a-010-for-NAND (#281)
+
+We misinterpreted the text of the constraint AASc-3a-010. It does *not*
+mean an exclusive OR, but rather a NAND. Both `value` and `value_list`
+*should not* be specified.
+
+This patch adjusts the code to fit the text, to the best of our
+understanding.
+
+We also remove the redundant part of the constraint related to the
+length of `value_reference_pairs` of `value_list` as that is already
+verified in the class `Value_list`.
+
+Fixes #279.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-09-08 09:44:20+02:00,-7200,2023-09-08 09:44:20+02:00,-7200,True,False,['v3.py'],['d0f72bd6e36fde19b3b8bfdd2f61fc1918460706'],7,3,10,1,,,
+4be96d10c6709dac43473aa1e7ce801a32ff12cb,"Change naming in htmlgen (#284)
+
+We change the naming so that URIs can be used as URLs from
+`https://admin-shell.io/AAS/3/0` and future versions.
+
+At this point, we also implement code highlighting ourselves, so that
+the properties, enumerations and constants are clickable in the code.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-10-20 14:56:22+02:00,-7200,2023-10-20 14:56:22+02:00,-7200,True,False,"['aas-core3-meta.iml', 'common.py', 'description.py', 'for_metamodel.py', 'naming.py', 'transpilation.py', 'setup.py']",['4d7e59ebd0ec2300c5cc8501b82c27d67df56e92'],285,1676,1961,7,0.1585014409221902,0.35350624399615754,0.8376560999039385
+ece667f8302af71613f98bfa4f359e607fa60254,"Fix inheritance naming in htmlgen (#285)
+
+We fix naming for classes in inherited invariants.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-10-20 15:30:08+02:00,-7200,2023-10-20 15:30:08+02:00,-7200,True,False,['for_metamodel.py'],['4be96d10c6709dac43473aa1e7ce801a32ff12cb'],2,2,4,1,,,
+327df2e423251aab5553052cc4a5217638a5d6a1,"Fix naming in titles in htmlgen (#286)
+
+We forgot to add html-specific naming in titles, so we fix that in this
+commit.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-10-20 15:34:07+02:00,-7200,2023-10-20 15:34:07+02:00,-7200,True,False,['for_metamodel.py'],['ece667f8302af71613f98bfa4f359e607fa60254'],5,9,14,1,0.0,0.0,0.0
+4205ae6b1da3a4d966f7a688d6156b8752636875,"[V3] Fix invariant descriptions with escapes (#291)
+
+We have to represent escapes in invariant descriptions as literals since
+Sphinx interpretes them as escaped characters otherwise. See [Sphinx
+docs] and [this StackOverflow question].
+
+[Sphinx docs]: https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#escaping-mechanism
+[this StackOverflow question]: https://stackoverflow.com/questions/57265111/escape-special-characters-in-restructuredtext-sphinx",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-11-09 11:53:29+01:00,-3600,2023-11-09 11:53:29+01:00,-3600,True,False,['v3.py'],['327df2e423251aab5553052cc4a5217638a5d6a1'],1,1,2,1,,,
+318807d599d3cd22561ea8909e9def108a02fc80,"Fix invariant descriptions inconsistency (#290)
+
+We made mistakes in the descriptions of the invariants for `Lang_string_short_name_type_IEC_61360` and 
+`Lang_string_preferred_name_type_IEC_61360` where the descriptions
+mismatched the invariant logic, which fits the specs.
+
+This patch fixes the descriptions.
+
+Fixes #288.
+Fixes #289.",Igor Garmaev,56840636+zrgt@users.noreply.github.com,GitHub,noreply@github.com,2023-11-09 11:55:54+01:00,-3600,2023-11-09 11:55:54+01:00,-3600,True,False,['v3.py'],['4205ae6b1da3a4d966f7a688d6156b8752636875'],2,2,4,1,,,
+87e8fbfeb51afdb295dac0975ee0924205c2f5bd,"Fix htmlgen for pattern verifications (#293)
+
+We transpile pattern verification functions to HTML code. This is
+something we haven't done in codegen, and a bug eventually slipped in
+where the errors were unexpectedly silenced. Notable, the `re.match`
+function has not been set properly in the transpilation environment.
+
+In this patch, we fix both the error reporting in the main program as
+well as the transpilation of pattern verifications.
+
+Fixes #292.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2023-11-09 12:51:32+01:00,-3600,2023-11-09 12:51:32+01:00,-3600,True,False,"['for_metamodel.py', 'main.py', 'transpilation.py']",['318807d599d3cd22561ea8909e9def108a02fc80'],9,54,63,3,0.0,0.0,0.5294117647058824
+22a1de78dbf334bd4b1cd8c936df413beced212b,"Add missing docstring for AASd-120 (#295)
+
+Previously, AASd-120 was already implemented as invariant, however
+it was not mentioned in the docstring of class `Submodel_element_list`.
+
+This commit adds the missing mention in the docstring.
+
+Fixes #294",s-heppner,s.heppner@iat.rwth-aachen.de,GitHub,noreply@github.com,2024-01-26 12:13:36+01:00,-3600,2024-01-26 12:13:36+01:00,-3600,True,False,['v3.py'],['87e8fbfeb51afdb295dac0975ee0924205c2f5bd'],0,5,5,1,,,
+c9692bcb5a023672332cdc72f7185c726ffc7471,"[V3] Fix message for duplicate languages (#301)
+
+We fix the confusing messages of the constraints related to language
+strings. Namely, ""Xxx specifies no duplicate languages"" can be
+misunderstood such that `Xxx` should actually specify duplicate
+languages, but does not.
+
+Obviously, we want to specify unique languages in such properties.
+
+Fixes #299.",Marko Ristin,marko@ristin.ch,GitHub,noreply@github.com,2024-01-26 12:34:23+01:00,-3600,2024-01-26 12:34:23+01:00,-3600,True,False,"['v3.py', 'test_v3.py']",['22a1de78dbf334bd4b1cd8c936df413beced212b'],7,7,14,2,,,

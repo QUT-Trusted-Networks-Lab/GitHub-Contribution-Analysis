@@ -1,0 +1,77 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+c7980c8b5d91d06e901214f98cc05a573c023065,Initial commit,Foufou,techlee@qq.com,GitHub,noreply@github.com,2020-08-15 13:49:13+08:00,-28800,2020-08-15 13:49:13+08:00,-28800,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,332,332,3,,,
+85efa5dcdc4f47b581a5a870586056e257bdf319,feat: main functions (#1),Nekotoxin,Nekotoxin@outlook.com,GitHub,noreply@github.com,2022-06-26 14:39:33+08:00,-28800,2022-06-26 14:39:33+08:00,-28800,True,False,"['.gitignore', '__init__.py', 'watcher.py', 'rbac_model.conf', 'rbac_policy.csv', 'requirements.txt', 'test_etcd_watcher.py']",['c7980c8b5d91d06e901214f98cc05a573c023065'],0,170,170,7,1.0,1.0,0.8103448275862069
+12385b33a80284c0b23a164e40fb76ed65033246,fix: add ci and more testbench for etcd watcher,Nekotoxin,Nekotoxin@outlook.com,Nekotoxin,Nekotoxin@outlook.com,2022-06-28 13:27:33+08:00,-28800,2022-06-28 14:14:55+08:00,-28800,True,False,"['semantic.yml', 'release.yml', '.gitignore', 'README.md', '__init__.py', 'watcher.py', 'requirements.txt', 'test_etcd_watcher.py', '__init__.py', 'test_etcd_watcher.py']",['85efa5dcdc4f47b581a5a870586056e257bdf319'],57,180,237,10,1.0,1.0,1.0
+4c460fc8128a9680baaad0b077e86a6efe66c4f1,"fix: fix release error temporarily (#6)
+
+* fix: fix release error temporarily
+
+* fix: fix release error temporarily",Nekotoxin,Nekotoxin@outlook.com,GitHub,noreply@github.com,2022-07-02 14:03:01+08:00,-28800,2022-07-02 14:03:01+08:00,-28800,True,False,['release.yml'],['d4b260279dd3d7385581c07a7cbe7ecdd5cbe413'],19,20,39,1,,,
+282743997ca1d9d0bd449a3f740f7977f8ae8340,"feat: implement watcher-ex
+
+Signed-off-by: Nekotoxin <Nekotoxin@outlook.com>",Nekotoxin,Nekotoxin@outlook.com,Nekotoxin,Nekotoxin@outlook.com,2022-07-08 14:03:10+08:00,-28800,2022-07-08 14:03:10+08:00,-28800,True,False,"['watcher.py', 'test_etcd_watcher.py']",['4c460fc8128a9680baaad0b077e86a6efe66c4f1'],16,103,119,2,0.5128205128205128,1.0,0.10256410256410256
+4452e1ea7019a300186647fe8c3349b49f10fab6,ci: Upload coverage data to coveralls.io,Jon Lee,techlee@qq.com,Jon Lee,techlee@qq.com,2022-07-10 19:16:13+08:00,-28800,2022-07-10 20:08:23+08:00,-28800,True,False,['release.yml'],['4c460fc8128a9680baaad0b077e86a6efe66c4f1'],21,20,41,1,,,
+4f51150e95aa5aae5180d93e4124f6e3e14e5f34,"fix: add needed files for release info (#12)
+
+* fix: add needed files for release info
+
+* fix: add needed files for release info",Nekotoxin,Nekotoxin@outlook.com,GitHub,noreply@github.com,2022-07-14 10:51:36+08:00,-28800,2022-07-14 10:51:36+08:00,-28800,True,False,"['.releaserc.json', 'pyproject.toml', 'requirements.txt', 'setup.cfg', 'setup.py']",['14bd27d000cbc2ec3e202699f3ede22dcdd2b6f5'],0,64,64,5,,,
+f2c6f3300244bebb2715392138a94322d3b081e2,"chore(release): 1.0.0 [skip ci]
+
+# 1.0.0 (2022-07-14)
+
+### Bug Fixes
+
+* add ci and more testbench for etcd watcher ([12385b3](https://github.com/pycasbin/etcd-watcher/commit/12385b33a80284c0b23a164e40fb76ed65033246))
+* add needed files for release info ([#12](https://github.com/pycasbin/etcd-watcher/issues/12)) ([4f51150](https://github.com/pycasbin/etcd-watcher/commit/4f51150e95aa5aae5180d93e4124f6e3e14e5f34))
+* fix release error temporarily ([#6](https://github.com/pycasbin/etcd-watcher/issues/6)) ([4c460fc](https://github.com/pycasbin/etcd-watcher/commit/4c460fc8128a9680baaad0b077e86a6efe66c4f1))
+
+### Features
+
+* implement watcher-ex ([2827439](https://github.com/pycasbin/etcd-watcher/commit/282743997ca1d9d0bd449a3f740f7977f8ae8340))
+* main functions ([#1](https://github.com/pycasbin/etcd-watcher/issues/1)) ([85efa5d](https://github.com/pycasbin/etcd-watcher/commit/85efa5dcdc4f47b581a5a870586056e257bdf319))",semantic-release-bot,semantic-release-bot@martynus.net,semantic-release-bot,semantic-release-bot@martynus.net,2022-07-14 02:53:29+00:00,0,2022-07-14 02:53:29+00:00,0,True,False,"['CHANGELOG.md', 'setup.cfg']",['4f51150e95aa5aae5180d93e4124f6e3e14e5f34'],1,18,19,2,,,
+67597e64ce3ec5535a93c4cd2a11d8a52aab1e38,"docs: Add readme (#13)
+
+* docs: add readme
+
+* docs: add readme",Nekotoxin,Nekotoxin@outlook.com,GitHub,noreply@github.com,2022-07-18 23:18:14+08:00,-28800,2022-07-18 23:18:14+08:00,-28800,True,False,"['README.md', 'setup.py']",['f2c6f3300244bebb2715392138a94322d3b081e2'],2,37,39,2,,,
+925e22715712709ec091344de79718b8d2e0d0e4,"chore(release): 1.0.0 [skip ci]
+
+# 1.0.0 (2022-07-18)
+
+### Bug Fixes
+
+* add ci and more testbench for etcd watcher ([12385b3](https://github.com/pycasbin/etcd-watcher/commit/12385b33a80284c0b23a164e40fb76ed65033246))
+* add needed files for release info ([#12](https://github.com/pycasbin/etcd-watcher/issues/12)) ([4f51150](https://github.com/pycasbin/etcd-watcher/commit/4f51150e95aa5aae5180d93e4124f6e3e14e5f34))
+* fix release error temporarily ([#6](https://github.com/pycasbin/etcd-watcher/issues/6)) ([4c460fc](https://github.com/pycasbin/etcd-watcher/commit/4c460fc8128a9680baaad0b077e86a6efe66c4f1))
+
+### Features
+
+* implement watcher-ex ([2827439](https://github.com/pycasbin/etcd-watcher/commit/282743997ca1d9d0bd449a3f740f7977f8ae8340))
+* main functions ([#1](https://github.com/pycasbin/etcd-watcher/issues/1)) ([85efa5d](https://github.com/pycasbin/etcd-watcher/commit/85efa5dcdc4f47b581a5a870586056e257bdf319))",semantic-release-bot,semantic-release-bot@martynus.net,semantic-release-bot,semantic-release-bot@martynus.net,2022-07-18 15:47:22+00:00,0,2022-07-18 15:47:22+00:00,0,True,False,['CHANGELOG.md'],['67597e64ce3ec5535a93c4cd2a11d8a52aab1e38'],0,15,15,1,,,
+0b38a582f88148c98139c6c0b5b2f7699961b069,fix: update setup name to casbin_etcd_watcher (#15),Jon,techlee@qq.com,GitHub,noreply@github.com,2022-07-19 00:10:18+08:00,-28800,2022-07-19 00:10:18+08:00,-28800,True,False,['setup.py'],['925e22715712709ec091344de79718b8d2e0d0e4'],1,1,2,1,,,
+9cf367f0297ebd9f508e235e54a8351196970eff,"chore(release): 1.0.1 [skip ci]
+
+## [1.0.1](https://github.com/pycasbin/etcd-watcher/compare/v1.0.0...v1.0.1) (2022-07-19)
+
+### Bug Fixes
+
+* add needed files for release info ([#12](https://github.com/pycasbin/etcd-watcher/issues/12)) ([4f51150](https://github.com/pycasbin/etcd-watcher/commit/4f51150e95aa5aae5180d93e4124f6e3e14e5f34))
+* update setup name to casbin_etcd_watcher ([#15](https://github.com/pycasbin/etcd-watcher/issues/15)) ([0b38a58](https://github.com/pycasbin/etcd-watcher/commit/0b38a582f88148c98139c6c0b5b2f7699961b069))",semantic-release-bot,semantic-release-bot@martynus.net,semantic-release-bot,semantic-release-bot@martynus.net,2022-07-19 03:53:42+00:00,0,2022-07-19 03:53:42+00:00,0,True,False,"['CHANGELOG.md', 'setup.cfg']",['0b38a582f88148c98139c6c0b5b2f7699961b069'],1,9,10,2,,,
+f11c2f5393cd838558adb32e4c98e14305020773,fix: update readme and requirements.txt (#16),Nekotoxin,Nekotoxin@outlook.com,GitHub,noreply@github.com,2022-07-20 23:17:48+08:00,-28800,2022-07-20 23:17:48+08:00,-28800,True,False,"['README.md', 'requirements.txt']",['9cf367f0297ebd9f508e235e54a8351196970eff'],5,2,7,2,,,
+2967ec030f824e113322b8bcc9a28b80fa54120f,"chore(release): 1.0.2 [skip ci]
+
+## [1.0.2](https://github.com/pycasbin/etcd-watcher/compare/v1.0.1...v1.0.2) (2022-07-25)
+
+### Bug Fixes
+
+* update readme and requirements.txt ([#16](https://github.com/pycasbin/etcd-watcher/issues/16)) ([f11c2f5](https://github.com/pycasbin/etcd-watcher/commit/f11c2f5393cd838558adb32e4c98e14305020773))",semantic-release-bot,semantic-release-bot@martynus.net,semantic-release-bot,semantic-release-bot@martynus.net,2022-07-25 15:40:26+00:00,0,2022-07-25 15:40:26+00:00,0,True,False,"['CHANGELOG.md', 'setup.cfg']",['f11c2f5393cd838558adb32e4c98e14305020773'],1,8,9,2,,,
+b6cae381d948c3eff00faa9ab6d3633c4cced9da,"chore: migrate from setup.py to pyproject.toml (#17)
+
+* chore: migrate from setup.py to pyproject.toml
+
+* chore: set major version of semantic release
+
+* ci: update python versions
+
+* ci: update node version",abichinger,andreas.bichinger@gmail.com,GitHub,noreply@github.com,2023-10-31 03:08:58+01:00,-3600,2023-10-31 10:08:58+08:00,-28800,True,False,"['release.yml', '.gitignore', '.releaserc.json', 'package.json', 'pyproject.toml', 'setup.cfg', 'setup.py']",['2967ec030f824e113322b8bcc9a28b80fa54120f'],52,51,103,7,,,

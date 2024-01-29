@@ -1,0 +1,38 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+4a41f41b2de84c62ddd0eea4c747ae0fd9787ea9,Initial commit,Cyril Picard,Cyril@picard.ch,GitHub,noreply@github.com,2020-01-21 19:35:32+01:00,-3600,2020-01-21 19:35:32+01:00,-3600,True,False,['LICENSE'],[],0,674,674,1,,,
+52b09fcbe284df4707e33d0c342192a4ddc6e95b,Initial code commit,Cyril Picard,cyril.picard@epfl.ch,Cyril Picard,cyril.picard@epfl.ch,2020-01-21 19:41:36+01:00,-3600,2020-01-21 19:41:36+01:00,-3600,True,False,"['.gitignore', 'README.md', '__init__.py', 'hv4dr.c', 'hv4dx.c', 'hv5dr.c', 'wfg.c', 'wfg.h', 'hv4dr.pyx', 'hv5dr.pyx', 'wfg.pyx', 'wfg_common.pxd', 'pyproject.toml', 'setup.py', 'CF7.dat', 'ctse3.dat', 'ctsei3.dat', 'test_hv4dr.py', 'test_hv5dr.py', 'test_wfg.py']",['4a41f41b2de84c62ddd0eea4c747ae0fd9787ea9'],0,4975,4975,20,0.28880045480386585,0.49516770892552586,0.7538374076179648
+ee7329e7c432494d7543f2069a5e75192e0828ae,Create pythonpackage.yml,Cyril Picard,cyril.picard@epfl.ch,GitHub,noreply@github.com,2020-01-21 19:48:19+01:00,-3600,2020-01-21 19:48:19+01:00,-3600,True,False,['pythonpackage.yml'],['52b09fcbe284df4707e33d0c342192a4ddc6e95b'],0,34,34,1,,,
+465a6b268952b72d21b626d14f7f7f57d2f46fdf,Update pythonpackage.yml,Cyril Picard,cyril.picard@epfl.ch,GitHub,noreply@github.com,2020-01-21 19:50:50+01:00,-3600,2020-01-21 19:50:50+01:00,-3600,True,False,['pythonpackage.yml'],['ee7329e7c432494d7543f2069a5e75192e0828ae'],1,1,2,1,,,
+3757c5c913f1c59377ecc1fe990d612d732604ba,Run pytest through setup.py,Cyril Picard,cyril.picard@epfl.ch,GitHub,noreply@github.com,2020-01-21 19:53:15+01:00,-3600,2020-01-21 19:53:15+01:00,-3600,True,False,['pythonpackage.yml'],['465a6b268952b72d21b626d14f7f7f57d2f46fdf'],2,1,3,1,,,
+4a9e1bd27a886594dce077d8fd9c96558ecb7ed8,Update pythonpackage.yml,Cyril Picard,cyril.picard@epfl.ch,GitHub,noreply@github.com,2020-01-21 19:59:15+01:00,-3600,2020-01-21 19:59:15+01:00,-3600,True,False,['pythonpackage.yml'],['3757c5c913f1c59377ecc1fe990d612d732604ba'],1,2,3,1,,,
+ae2dacc50dee8f99956b5c5923e4ab7b68dec01c,Update python CI to test on macOS and windows,Cyril Picard,cyril.picard@epfl.ch,GitHub,noreply@github.com,2020-01-21 20:16:05+01:00,-3600,2020-01-21 20:16:05+01:00,-3600,True,False,['pythonpackage.yml'],['4a9e1bd27a886594dce077d8fd9c96558ecb7ed8'],3,3,6,1,,,
+37b8c3be485a830dccb10794d28c0c22eeeebd9d,"Implement build and publish CI (#1)
+
+* Update python build line for Windows
+
+* Fix numpy int size for Windows
+
+* Configure CI to build wheels
+
+* Use PEP517's build mechanism
+
+* Add upload to test PyPI
+
+* Build manylinux wheels
+
+* Correct to manylinux before push
+
+* Fix CI
+
+* Add publish for tagged versions
+
+* Use versionneer
+
+* Fix various build issues
+
+* Fix build for python 3.5
+
+* Change versioneer style",Cyril Picard,cyril.picard@epfl.ch,GitHub,noreply@github.com,2020-01-22 21:47:17+01:00,-3600,2020-01-22 21:47:17+01:00,-3600,True,False,"['.gitattributes', 'pythonpackage.yml', 'MANIFEST.in', '__init__.py', '_version.py', 'hv4dr.pyx', 'hv5dr.pyx', 'wfg.pyx', 'pyproject.toml', 'setup.cfg', 'setup.py', 'versioneer.py']",['ae2dacc50dee8f99956b5c5923e4ab7b68dec01c'],12,2444,2456,12,0.28343949044585987,0.2537154989384289,0.6656050955414012
+0297643af0a0b3efc060c4703f63ad30cc741a2c,Build for python 3.9,Cyril Picard,cyril.picard@epfl.ch,GitHub,noreply@github.com,2021-04-23 15:33:55+02:00,-7200,2021-04-23 15:33:55+02:00,-7200,True,False,['pythonpackage.yml'],['37b8c3be485a830dccb10794d28c0c22eeeebd9d'],1,1,2,1,,,
+44362ff26f677f0a4618ca3064555358a240e280,Update pythonpackage.yml,Cyril Picard,cyril.picard@epfl.ch,GitHub,noreply@github.com,2021-04-26 08:54:21+02:00,-7200,2021-04-26 08:54:21+02:00,-7200,True,False,['pythonpackage.yml'],['0297643af0a0b3efc060c4703f63ad30cc741a2c'],1,1,2,1,,,
+ca88ad5d556a730090e81bb849fb6f491a1dd601,Do not publish to pypi test on master,Cyril Picard,cyril.picard@epfl.ch,GitHub,noreply@github.com,2021-04-27 21:41:00+02:00,-7200,2021-04-27 21:41:00+02:00,-7200,True,False,['pythonpackage.yml'],['44362ff26f677f0a4618ca3064555358a240e280'],5,0,5,1,,,

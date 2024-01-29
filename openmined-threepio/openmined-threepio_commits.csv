@@ -1,0 +1,344 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+67b2eb10d9e7c4f945f2ea197b0ea4870ad986f9,Create README.md,Patrick Cason,me@patrickcason.com,GitHub,noreply@github.com,2020-01-07 13:39:42-03:00,10800,2020-01-07 13:39:42-03:00,10800,True,False,['README.md'],[],0,3,3,1,,,
+f32ec3ae3e7c97aa969a7eb40cd90c8415a55bcf,"Initial commit of scrapy docs crawler
+
+This contains initial prototypes of tensorflow, tfjs, and pytorch docs
+crawler.",Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-09 14:04:57+00:00,0,2020-01-09 16:18:48+00:00,0,True,False,"['.gitignore', '__init__.py', 'items.py', 'middlewares.py', 'pipelines.py', 'settings.py', '__init__.py', 'tf_spider.py', 'tfjs_spider.py', 'torch_spider.py', 'scrapy.cfg', 'tf-functions.txt', 'tfjs-functions.txt', 'torch-functions.txt', 'format_json.py', 'match_functions.py', 'poetry.lock', 'pyproject.toml']",['67b2eb10d9e7c4f945f2ea197b0ea4870ad986f9'],0,1836,1836,18,0.7386363636363636,0.7386363636363636,0.7954545454545454
+a2bed29412855111781bd6fc058235a01012b780,Update spiders to generate json from docs pages,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-09 16:19:15+00:00,0,2020-01-09 16:19:15+00:00,0,True,False,"['items.py', 'tf_spider.py', 'tfjs_spider.py', 'torch_spider.py']",['f32ec3ae3e7c97aa969a7eb40cd90c8415a55bcf'],13,49,62,4,0.0,0.0,1.0
+2137e89c3f39467c97b1a12daeef82f1adfb94a0,Remove unused output & helper functions,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-14 09:14:40+00:00,0,2020-01-14 09:14:40+00:00,0,True,False,"['tf-functions.txt', 'tfjs-functions.txt', 'torch-functions.txt', 'format_json.py', 'match_functions.py']",['a2bed29412855111781bd6fc058235a01012b780'],749,0,749,5,,,
+46a84dcbf382fde42c89bb56e4dd7c6d9a5477a8,Automatically output to json,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-14 09:15:48+00:00,0,2020-01-14 09:15:48+00:00,0,True,False,"['pipelines.py', 'settings.py']",['2137e89c3f39467c97b1a12daeef82f1adfb94a0'],9,20,29,2,1.0,1.0,0.5
+49c22fbc7e6277039c62275d061f9dea29a86223,Remove unnecessary print lines,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-14 10:51:26+00:00,0,2020-01-14 10:51:26+00:00,0,True,False,"['tfjs_spider.py', 'torch_spider.py']",['46a84dcbf382fde42c89bb56e4dd7c6d9a5477a8'],7,2,9,2,1.0,1.0,0.0
+3ea20ccd7389bc79b75e3d8f6d0c8041d43f0eca,automate the running of crawlers into script,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-14 10:57:28+00:00,0,2020-01-14 10:57:28+00:00,0,True,False,"['tf.json', 'tfjs.json', 'torch.json', 'run_crawlers.sh']",['49c22fbc7e6277039c62275d061f9dea29a86223'],0,1568,1568,4,,,
+32b1d1d90cdae8025b8ccf949d0d39c4c1adff42,Add README for crawler,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-14 10:58:00+00:00,0,2020-01-14 10:58:00+00:00,0,True,False,['README.md'],['3ea20ccd7389bc79b75e3d8f6d0c8041d43f0eca'],0,22,22,1,,,
+08708982902ec108ff665ae0a6be53e0c0a2a2e7,Add github issue templates,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-14 17:22:14+00:00,0,2020-01-14 17:25:36+00:00,0,True,False,"['bug_report.md', 'improvement.md', 'new_request.md', 'other.md']",['67b2eb10d9e7c4f945f2ea197b0ea4870ad986f9'],0,122,122,4,,,
+b0cf0e54bd403fdd04014db2e20c1fb92bce289c,"Add version attribute for each spider (#3)
+
+Currently the docs version is static",amrmkayid,amrkayid2027@gmail.com,amrmkayid,amrkayid2027@gmail.com,2020-01-19 18:08:50+02:00,-7200,2020-01-19 18:08:50+02:00,-7200,True,False,"['pipelines.py', 'tf_spider.py', 'tfjs_spider.py', 'torch_spider.py', 'torch.json', 'tfjs.json', 'tf.json']",['a29223629dd8881e2fc4e6db4715756dba41d33f'],472,485,957,7,1.0,1.0,1.0
+1f008526952254afa5067359030f8229ad5a9925,Add missing urls for torch (#7),amrmkayid,amrkayid2027@gmail.com,amrmkayid,amrkayid2027@gmail.com,2020-01-19 18:32:14+02:00,-7200,2020-01-19 18:32:14+02:00,-7200,True,False,"['torch_spider.py', 'torch.json']",['b0cf0e54bd403fdd04014db2e20c1fb92bce289c'],0,94,94,2,0.0,1.0,1.0
+0cdc69f751e5798a41c2fc5235462290f85c782c,Change output grouping (#3),amrmkayid,amrkayid2027@gmail.com,amrmkayid,amrkayid2027@gmail.com,2020-01-20 19:38:20+02:00,-7200,2020-01-20 19:38:20+02:00,-7200,True,False,"['pipelines.py', '2.1.json', '1.5.1.json', '1.4.0.json']",['b0cf0e54bd403fdd04014db2e20c1fb92bce289c'],2,2,4,4,,,
+b3e76019a7c2862a9036dcdf6d55d5e1f87c0859,Change TorchSpider to extend CrawlSpider and use rules for crawling,amrmkayid,amrkayid2027@gmail.com,amrmkayid,amrkayid2027@gmail.com,2020-01-21 17:25:19+02:00,-7200,2020-01-21 17:25:19+02:00,-7200,True,False,"['torch_spider.py', 'torch.json']",['1f008526952254afa5067359030f8229ad5a9925'],170,265,435,2,1.0,0.0,0.0
+1a242c98b95dcfc9c5248f45eff05266de484784,feat: init scaffolding for javascript package,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-15 17:16:18+00:00,0,2020-01-22 09:50:59+00:00,0,True,False,"['.editorconfig', '.gitattributes', '.gitignore', '.remarkignore', '.travis.yml', 'LICENSE', 'README.md', 'index.js', 'package-lock.json', 'package.json', 'test.js']",['a29223629dd8881e2fc4e6db4715756dba41d33f'],81,11851,11932,11,1.0,1.0,1.0
+629973ffee9fa5bb2ba2660486c2319b17af5895,fix: switch to rollups and resolve pr review,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-22 09:51:53+00:00,0,2020-01-22 09:51:53+00:00,0,True,False,"['.travis.yml', 'README.md', 'package.json', 'rollup.config.js']",['1a242c98b95dcfc9c5248f45eff05266de484784'],30,71,101,4,,,
+324a9c009239e55b8910315e9daee066699c381e,fix: use peerDepedencies & dist/main.js for main,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-25 15:48:52+00:00,0,2020-01-25 15:48:52+00:00,0,True,False,['package.json'],['629973ffee9fa5bb2ba2660486c2319b17af5895'],4,5,9,1,,,
+14583dd1f8b8f5e46c59400b7723afb1b86e7e46,Update README.md,Patrick Cason,me@patrickcason.com,GitHub,noreply@github.com,2020-01-28 16:23:59+00:00,0,2020-01-28 16:23:59+00:00,0,True,False,['README.md'],['324a9c009239e55b8910315e9daee066699c381e'],1,1,2,1,,,
+89a03ce428974fa1c8519eb93824cd2aeaba1b19,fix: switch main build to use cjs extension,Mike Nolan,me@michael-nolan.com,GitHub,noreply@github.com,2020-01-28 16:30:00+00:00,0,2020-01-28 16:30:00+00:00,0,True,False,['package.json'],['14583dd1f8b8f5e46c59400b7723afb1b86e7e46'],1,1,2,1,,,
+7a42234b5ddc277003fdac1898bd17a7b26fc4e1,"fix: switch rollup package to fix security vuln
+
+Resolves #12",Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-29 17:38:53+00:00,0,2020-01-29 17:42:34+00:00,0,True,False,"['package-lock.json', 'package.json']",['5c6700bcd35e65973e0c02329073a604ffbb28e9'],276,133,409,2,,,
+649c8f725e5b9cdc3cc3774f811458cf20c5d4b3,fix: use new plugin in rollup config,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-30 22:10:05+00:00,0,2020-01-30 22:10:05+00:00,0,True,False,['rollup.config.js'],['7a42234b5ddc277003fdac1898bd17a7b26fc4e1'],1,1,2,1,,,
+2a84c68e727fb4e3bf78ceda9b0531fbcb77fdba,fix: output crawled documents as valid json,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-06 08:30:59+00:00,0,2020-02-06 08:30:59+00:00,0,True,False,"['pipelines.py', 'settings.py', '2.1.json', '1.5.1.json', '1.4.0.json']",['e6353251858f8c0977e81e06a02a04f2a5107095'],1759,1720,3479,5,0.0,0.0,1.0
+70f7e7808baa47aa90d6b231db6e9c7c1df2a76b,"feat: create initial mapping of function names
+
+Resolves #20",Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-10 08:55:34+00:00,0,2020-02-10 08:55:34+00:00,0,True,False,"['.gitignore', 'aggregate_crawler_output.py', 'items.py']",['795b479c86810e48f3be9798db790738645b4d09'],6,47,53,3,1.0,1.0,1.0
+128f5c6a92b8f577841f664a0743edf300fb2fb0,feat: match argument translation across libraries,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-14 11:03:40+00:00,0,2020-02-14 11:03:40+00:00,0,True,False,['aggregate_crawler_output.py'],['70f7e7808baa47aa90d6b231db6e9c7c1df2a76b'],4,64,68,1,0.5957446808510638,0.7021276595744681,0.5531914893617021
+6937f581513a62de46de9191bf722d0b21901f64,fix: removed early return crawling for torch docs,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-18 08:31:52+00:00,0,2020-02-18 16:37:50+00:00,0,True,False,"['torch_spider.py', '1.4.0.json']",['6e915da54ddab1aa1112389351bbb58490da3804'],74,378,452,2,,,
+62519348786889fc1dc85c22e9a6503b2d08e07f,feat: initial python translation,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-19 15:52:42+00:00,0,2020-02-19 15:53:25+00:00,0,True,False,"['aggregate_crawler_output.py', 'MANIFEST.in', 'README.rst', 'poetry.lock', 'pyproject.toml', '__init__.py', 'threepio.py', 'utils.py', '__init__.py', 'test_pythreepio.py', 'mapped_commands.json']",['ee0de129ec44d8acfb11f8001ef4ed8c442fb88b'],16,54850,54866,11,1.0,1.0,0.7027027027027027
+31135cce401c9301339efad933a175a33bff6cda,refactor: move js package into it's own dir,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-19 16:40:22+00:00,0,2020-02-19 16:40:22+00:00,0,True,False,"['index.js', 'package-lock.json', 'package.json', 'rollup.config.js', 'test.js']",['ee0de129ec44d8acfb11f8001ef4ed8c442fb88b'],940,467,1407,5,,,
+7be309fce2ccb7448c405df325e6922474e4e530,fix: fix travis build,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-19 16:47:56+00:00,0,2020-02-19 16:50:05+00:00,0,True,False,['.travis.yml'],['31135cce401c9301339efad933a175a33bff6cda'],0,2,2,1,,,
+0fa252bbeabc30646a7ed7341f150a402643dbac,fix: remove . from filename to fix rollup & others,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-19 16:58:05+00:00,0,2020-02-19 17:01:11+00:00,0,True,False,"['.travis.yml', 'index.js', 'package-lock.json', 'package.json', 'rollup.config.js', 'test.js']",['7be309fce2ccb7448c405df325e6922474e4e530'],1,1,2,6,,,
+d17f11fdecdfd0e6790b639a36df361cc9712689,feat: tests for tf & torch matmul,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-20 16:22:11+00:00,0,2020-02-20 16:22:11+00:00,0,True,False,"['poetry.lock', 'pyproject.toml', 'threepio.py', 'test_pythreepio.py']",['62519348786889fc1dc85c22e9a6503b2d08e07f'],8,411,419,4,1.0,1.0,1.0
+926796fa2bfd113763fc2b89057276afb8d89efd,Create python CI action workflow,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-21 08:27:52+00:00,0,2020-02-21 09:23:53+00:00,0,True,False,['pythonpackage.yml'],['49d567569765fe0bd046982e3bacef692672b40c'],0,41,41,1,,,
+07e18117d3c0ff888adc675587ad2076e8f767e0,fix: flake8 errors,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-21 09:29:57+00:00,0,2020-02-24 09:52:46+00:00,0,True,False,"['pythonpackage.yml', 'pyproject.toml', 'threepio.py', 'utils.py', 'test_pythreepio.py', 'tox.ini']",['926796fa2bfd113763fc2b89057276afb8d89efd'],14,18,32,6,1.0,1.0,0.0
+89b49cd59bd1e7eb7750fac24d15b0406a6a7d46,fix: switch to requirements.txt,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-24 15:09:29+00:00,0,2020-02-24 15:25:24+00:00,0,True,False,"['pythonpackage.yml', 'requirements.txt']",['07e18117d3c0ff888adc675587ad2076e8f767e0'],7,11,18,2,,,
+29be76fa0b52801d82e9b24cace9cb1f6202dd8d,ci: nodejs package testing,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-25 09:52:58+00:00,0,2020-02-25 10:25:43+00:00,0,True,False,['nodejs.yml'],['89b49cd59bd1e7eb7750fac24d15b0406a6a7d46'],0,34,34,1,,,
+cabc4e037e8f244a6da1ef9076550e6ef108a93d,fix: remove travis config,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-25 10:33:18+00:00,0,2020-02-25 10:33:18+00:00,0,True,False,['.travis.yml'],['29be76fa0b52801d82e9b24cace9cb1f6202dd8d'],9,0,9,1,,,
+8d374864632fdffd60e1266e0e3274e8bbd8b76f,fix: remove poetry config,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-25 10:43:38+00:00,0,2020-02-25 10:43:38+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['cabc4e037e8f244a6da1ef9076550e6ef108a93d'],546,0,546,2,,,
+8c7b16b12705eb5fd2e9e89603613df21d252778,chore: flake8 corrections on crawler,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-27 13:28:08+00:00,0,2020-02-27 13:28:08+00:00,0,True,False,"['aggregate_crawler_output.py', 'pipelines.py', 'settings.py', 'tf_spider.py', 'tfjs_spider.py', 'torch_spider.py']",['f5155572eea965c4929e12ce1a64e1f956bf2e29'],106,46,152,6,0.0,0.3333333333333333,0.0
+4458406d7aee41b88208f1037091368f3e64fdda,ci: add flake8 linting to crawler ci,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-27 13:31:06+00:00,0,2020-02-27 13:31:06+00:00,0,True,False,"['crawler.yml', 'pythonpackage.yml']",['8c7b16b12705eb5fd2e9e89603613df21d252778'],1,29,30,2,,,
+08427bccb0301f967b9659a753d323512af1a802,chore: more flake8 fixes,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-27 14:11:15+00:00,0,2020-02-27 14:11:15+00:00,0,True,False,"['aggregate_crawler_output.py', 'pipelines.py', 'tf_spider.py', 'tfjs_spider.py', 'torch_spider.py']",['4458406d7aee41b88208f1037091368f3e64fdda'],10,7,17,5,,,
+2431afd109e2e6e7f8b97de40d15876660e79ce3,fix: fail github ci on flake8 errors,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-27 14:12:43+00:00,0,2020-02-27 14:12:43+00:00,0,True,False,['crawler.yml'],['08427bccb0301f967b9659a753d323512af1a802'],4,1,5,1,,,
+7d5ccca669d4687dea78fa1cf50935ce40208452,"feat: switch to jest for testing library
+
+This will help us conform to syft.js's test library",Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-01-31 14:14:27+00:00,0,2020-02-27 14:38:47+00:00,0,True,False,"['package-lock.json', 'package.json']",['8d374864632fdffd60e1266e0e3274e8bbd8b76f'],4058,8043,12101,2,,,
+62952ae3bd0b4f1e8690577ba0d5fe9ff15ca008,fix: docs crawler ouputs to correct files,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-14 16:29:22+00:00,0,2020-02-27 14:38:47+00:00,0,True,False,"['aggregate_crawler_output.py', '2.1.json', '1.5.1.json']",['7d5ccca669d4687dea78fa1cf50935ce40208452'],1470,34715,36185,3,,,
+0031957c660b9565a01b8c061d4802908564fd95,fix: fix tests with new docs format,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-14 16:30:12+00:00,0,2020-02-27 14:38:47+00:00,0,True,False,"['package-lock.json', 'package.json', '_constants.js', 'threepio.js']",['62952ae3bd0b4f1e8690577ba0d5fe9ff15ca008'],1,156,157,4,1.0,0.46153846153846156,1.0
+c21139b4f11dc09c1d0d451a4608d8801dd6ed04,chore: outline of argument matching method,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-17 08:54:24+00:00,0,2020-02-27 14:38:47+00:00,0,True,False,['threepio.js'],['0031957c660b9565a01b8c061d4802908564fd95'],0,16,16,1,1.0,1.0,1.0
+ca5c2a27ea7aaff347d89b26ac17cc348ddb72a2,feat: add additional test scaffolding for plan #1,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-27 12:06:20+00:00,0,2020-02-27 14:38:47+00:00,0,True,False,"['.gitignore', 'aggregate_crawler_output.py', '.babelrc', 'index.js', 'rollup.config.js', '_constants.js', '_errors.js', 'command.js', 'index.js', 'threepio.js', 'pytorch.js', 'test.js', 'threepio.test.js']",['c21139b4f11dc09c1d0d451a4608d8801dd6ed04'],32,159,191,13,1.0,1.0,0.5
+e30c741bc2e14502f95bd0d196157a20f159f62f,fix: rename dir to reflect texting fixtures,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-27 14:22:44+00:00,0,2020-02-27 14:38:47+00:00,0,True,False,"['pytorch.js', 'threepio.test.js']",['ca5c2a27ea7aaff347d89b26ac17cc348ddb72a2'],1,1,2,2,,,
+25a3ca99c89ab3ada9cdf867f833343daeec1ab5,fix: remove accidental merge conflict,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-02-27 14:38:59+00:00,0,2020-02-27 14:38:59+00:00,0,True,False,['aggregate_crawler_output.py'],['e30c741bc2e14502f95bd0d196157a20f159f62f'],10,0,10,1,1.0,1.0,1.0
+905f9ce53aa35dd9bda8b72ba3597ab61d4ed3da,refactor: move package.json up to root,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-03 15:52:50+00:00,0,2020-03-03 15:52:50+00:00,0,True,False,"['package-lock.json', 'package.json']",['3dc0ae2330d9531a61aba3cea739673d33149691'],0,0,0,2,,,
+8241eb72aba44f010120c3894df97985fe86f60d,fix: re-write refs in package.json for new loc,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-03 15:53:31+00:00,0,2020-03-03 15:53:31+00:00,0,True,False,"['package-lock.json', 'package.json']",['905f9ce53aa35dd9bda8b72ba3597ab61d4ed3da'],684,853,1537,2,,,
+b7fe8fa6cd4b9a9646ab4b73f65cec8b23d47bdf,fix: make package npm-installable from git,Vova Manannikov,vova@promail.spb.ru,Vova Manannikov,vova@promail.spb.ru,2020-03-04 13:10:59+03:00,-10800,2020-03-04 13:10:59+03:00,-10800,True,False,"['rollup.config.js', 'package.json']",['167f11782720b0a65d63bf49b3e47bfbe534c263'],2,3,5,2,,,
+d4e55562ed04ea4ebdfc72546d15565858de3752,fix: export Command class in js package,Vova Manannikov,vova@promail.spb.ru,Vova Manannikov,vova@promail.spb.ru,2020-03-04 13:31:56+03:00,-10800,2020-03-04 13:31:56+03:00,-10800,True,False,['index.js'],['b7fe8fa6cd4b9a9646ab4b73f65cec8b23d47bdf'],1,1,2,1,,,
+9d47208be8b2263581479972e4e9e9649296171f,fix: remove type:module from package.json,Vova Manannikov,vova@promail.spb.ru,Vova Manannikov,vova@promail.spb.ru,2020-03-05 09:51:54+03:00,-10800,2020-03-05 09:51:54+03:00,-10800,True,False,['package.json'],['d4e55562ed04ea4ebdfc72546d15565858de3752'],1,0,1,1,,,
+4f2c73c9cd92c03386003871a25a49abc05859e7,feat: add numpy support (#37),AmrMKayid,amrmkayid@gmail.com,AmrMKayid,amrmkayid@gmail.com,2020-03-09 16:12:18+02:00,-7200,2020-03-09 16:12:18+02:00,-7200,True,False,"['numpy_spider.py', '1.17.0.json']",['633d4da30adbbf9f438ce15e8f67ea7e4f320557'],0,7846,7846,2,0.0,0.0,1.0
+02551159e64a5e13d3724883c5842e2a6efe4b70,feat: inital jax support (#40),AmrMKayid,amrmkayid@gmail.com,AmrMKayid,amrmkayid@gmail.com,2020-03-10 19:49:48+02:00,-7200,2020-03-10 19:49:48+02:00,-7200,True,False,"['jax_spider.py', '0.1.59.json']",['4f2c73c9cd92c03386003871a25a49abc05859e7'],0,297,297,2,0.0,0.0,1.0
+4716292cc11c6ae029f9fc1ca3b89bf652d7942b,ci: ensure actions are run on github PRs,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-11 10:24:33+00:00,0,2020-03-11 10:33:56+00:00,0,True,False,"['crawler.yml', 'nodejs.yml', 'pythonpackage.yml']",['3dc0ae2330d9531a61aba3cea739673d33149691'],3,3,6,3,,,
+cad8eee1c50e03e0017995da7077f6aef5f63731,fix: run flake8 on numpy_spider.py,AmrMKayid,amrmkayid@gmail.com,AmrMKayid,amrmkayid@gmail.com,2020-03-11 14:13:18+02:00,-7200,2020-03-11 14:13:18+02:00,-7200,True,False,['numpy_spider.py'],['32fbeb40982d62406392775157907cc93829e9bf'],12,7,19,1,1.0,1.0,0.0
+b775eeb311eb03ce25aed1864d7a4bf42e9e7549,fix: run flake8 on jax_spider.py,AmrMKayid,amrmkayid@gmail.com,AmrMKayid,amrmkayid@gmail.com,2020-03-11 16:45:32+02:00,-7200,2020-03-11 16:45:32+02:00,-7200,True,False,"['jax_spider.py', 'numpy_spider.py']",['92035d5577425e6ea2c8fc8040d24df307e22cf7'],3,3,6,2,,,
+7236226a76c2500ef6f6aa21d1e8549058966270,feat: move execution to command objects,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-02 13:55:25+00:00,0,2020-03-13 15:12:29+00:00,0,True,False,"['_errors.js', 'command.js', 'threepio.js']",['3f528a1d9558c11e3c646aca1e4c293efc063cf0'],5,11,16,3,1.0,1.0,0.8
+614e76c34a32de4133ecb98409b26f8f524b6b75,test: beef up test suite with auto-translate tests,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-02 13:56:24+00:00,0,2020-03-13 15:12:29+00:00,0,True,False,"['command.test.js', 'pytorch.js', 'threepio.test.js']",['7236226a76c2500ef6f6aa21d1e8549058966270'],18,134,152,3,1.0,1.0,1.0
+5a8f9b7812990714958418385330d7be0e297e71,feat: add error handling for missing translation,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-10 12:55:46+00:00,0,2020-03-13 15:12:29+00:00,0,True,False,"['_constants.js', '_errors.js', 'threepio.js']",['614e76c34a32de4133ecb98409b26f8f524b6b75'],17,18,35,3,0.0,0.0,0.0
+893c1b3d1d04b4633ec5aed06e9daa2872a5f3e3,feat: add tests for additional mnist commands,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-10 12:57:15+00:00,0,2020-03-13 15:12:29+00:00,0,True,False,"['_constants.js', 'pytorch.js', 'threepio.test.js']",['5a8f9b7812990714958418385330d7be0e297e71'],30,61,91,3,0.4074074074074074,1.0,1.0
+f740be5ef4a01ed73fe7315a206ae75c6925a011,feat: word level argument translations in json,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-13 09:50:20+00:00,0,2020-03-13 15:12:30+00:00,0,True,False,"['aggregate_crawler_output.py', '2.1.json', '1.5.1.json', '1.4.0.json', 'mapped_commands.json']",['893c1b3d1d04b4633ec5aed06e9daa2872a5f3e3'],49652,36637,86289,5,0.0,1.0,0.0
+3b0fa1f9b69e764ec63ec5e7578862e3d4419ca1,feat: js use smart arg/kwarg mapping,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-13 09:51:22+00:00,0,2020-03-13 15:12:30+00:00,0,True,False,"['command.js', 'threepio.js', 'pytorch.js', 'threepio.test.js']",['f740be5ef4a01ed73fe7315a206ae75c6925a011'],160,235,395,4,0.0,0.0,0.0
+3f6792c56fb1903fdc4c73ef6dcac3ce960fbe95,refactor: remove code parameter from Command,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-13 14:36:02+00:00,0,2020-03-13 15:12:30+00:00,0,True,False,"['_errors.js', 'command.js', 'threepio.js', 'command.test.js', 'pytorch.js']",['3b0fa1f9b69e764ec63ec5e7578862e3d4419ca1'],44,10,54,5,1.0,1.0,0.14285714285714285
+9b08bba4cd82df32893f4229ffdfede8825c647e,test: add tests for kwargs being translated,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-13 14:36:56+00:00,0,2020-03-13 15:20:18+00:00,0,True,False,"['_errors.js', 'threepio.js', 'command.test.js', 'pytorch.js', 'threepio.test.js']",['3f6792c56fb1903fdc4c73ef6dcac3ce960fbe95'],20,52,72,5,1.0,1.0,1.0
+ad3bc159d23afa6d22784c65edc83935c40f3b1c,fix: move word translations into json,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-13 16:22:24+00:00,0,2020-03-13 16:22:24+00:00,0,True,False,"['aggregate_crawler_output.py', '_constants.js', 'threepio.js', 'mapped_commands.json']",['9b08bba4cd82df32893f4229ffdfede8825c647e'],18928,11782,30710,4,0.0,0.0,0.0
+669c4f862219a5b08ddfabc41f25ffb4c61baa7e,fix: remove tensorflow import from threepio,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-20 09:48:30+00:00,0,2020-03-20 09:48:30+00:00,0,True,False,"['threepio.js', 'threepio.test.js']",['ad3bc159d23afa6d22784c65edc83935c40f3b1c'],7,7,14,2,0.0,1.0,1.0
+dcddeee22cf1f82b3988c757888005d111638f59,test: add dunder'd function names to test suite,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-20 11:56:09+00:00,0,2020-03-20 12:12:07+00:00,0,True,False,"['pytorch.js', 'threepio.test.js']",['669c4f862219a5b08ddfabc41f25ffb4c61baa7e'],0,30,30,2,0.75,1.0,1.0
+616980b968d112eef6b7585758bb86922e43afc4,fix: parse kwargs as objects not arrays,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-20 11:55:37+00:00,0,2020-03-20 12:14:02+00:00,0,True,False,"['threepio.js', 'pytorch.js']",['dcddeee22cf1f82b3988c757888005d111638f59'],16,4,20,2,1.0,0.0,1.0
+dd256a8506325c5c76bfee36a675b65460dbf2e7,feat: support additional commands for syft.js,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-20 13:38:47+00:00,0,2020-03-20 13:38:47+00:00,0,True,False,"['aggregate_crawler_output.py', 'threepio.js', 'pytorch.js', 'threepio.test.js', 'mapped_commands.json']",['616980b968d112eef6b7585758bb86922e43afc4'],14,30,44,5,0.75,1.0,1.0
+3d3fdd13dfb5a1d20738ffc86e3ba494424e13fc,fix: update package.json for np publish,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-23 11:56:43+00:00,0,2020-03-24 09:07:56+00:00,0,True,False,['package.json'],['83ebbed2f309f493c65869f293c504c2a86e887c'],0,6,6,1,,,
+8c8c35f7f9aa14b6934f62b6e3784fbdf2f08986,0.1.0,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-24 09:09:07+00:00,0,2020-03-24 09:09:07+00:00,0,True,False,"['package-lock.json', 'package.json']",['3d3fdd13dfb5a1d20738ffc86e3ba494424e13fc'],2,2,4,2,,,
+e19d7d60e76922bdf0177c8bc0a959e9189d2406,Fix linting,Mike Nolan,me@michael-nolan.com,GitHub,noreply@github.com,2020-03-24 12:58:17+00:00,0,2020-03-24 12:58:17+00:00,0,True,False,['numpy_spider.py'],['fb4cf8fab37258441900b3e234c5e57cbc42df0d'],1,0,1,1,,,
+1a8c5f0d6608b9715f8c7ec266b92051d895dd31,feat: minimize static json down to 4k gzip,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-26 10:37:19+00:00,0,2020-03-27 12:01:16+00:00,0,True,False,"['aggregate_crawler_output.py', 'threepio.js', 'mapped_commands.json', 'mapped_commands_full.json', 'mapped_commands_torch_tfjs.json']",['1398a618ec2a7aa80b0a5a53e18b813b0851c7b5'],67297,56627,123924,5,1.0,0.6111111111111112,0.3333333333333333
+968245b76f4621717b2666d9dacb04573cf774c1,feat: pythreepio smart arg mapping,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-03-27 13:08:44+00:00,0,2020-03-27 13:08:44+00:00,0,True,False,"['.gitignore', 'errors.py', 'threepio.py', 'utils.py', 'test_pythreepio.py']",['1a8c5f0d6608b9715f8c7ec266b92051d895dd31'],26,112,138,5,0.4426229508196721,0.4426229508196721,0.36065573770491804
+761619d5cc29007f812fdf9e8baa6a09ab92f7e3,feat: add build config for pythreepio,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-04-01 10:04:56+01:00,-3600,2020-04-02 12:49:03+01:00,-3600,True,False,"['MANIFEST.in', 'aggregate_crawler_output.py', 'MANIFEST.in', '__init__.py', 'threepio.py', 'utils.py', 'setup.cfg', 'setup.py', '__init__.py', 'mapped_commands_full.json']",['5a143e045ca56560c29d03251cabc61cc8b982f6'],11,31,42,10,0.0,0.0,0.0
+62df668814ef3bd03de83b48249531ce32396956,feat: add manual translations,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-04-13 12:43:02+01:00,-3600,2020-04-13 16:13:14+01:00,-3600,True,False,"['__init__.py', 'aggregate_crawler_output.py', 'translations.py', '_errors.js', 'threepio.js', 'pytorch.js', 'threepio.test.js', 'package-lock.json', 'threepio.py', 'mapped_commands_full.json', 'mapped_commands_torch_tfjs.json']",['03500b5cc57d1846699e0433a709628475a0691e'],756,1566,2322,11,0.0,1.0,1.0
+e9b433a8f411a073d8871a01b0fce8e78de6cb90,feat: add gt translation,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-04-15 11:41:16+01:00,-3600,2020-04-15 11:41:16+01:00,-3600,True,False,"['translations.py', 'mapped_commands_full.json', 'mapped_commands_torch_tfjs.json']",['62df668814ef3bd03de83b48249531ce32396956'],6,11,17,3,,,
+deef61617e0df5e3517a87d6e6a91871c95304f2,feat: add cast js translation,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-04-15 16:20:59+01:00,-3600,2020-04-15 16:27:34+01:00,-3600,True,False,"['_translations.js', 'threepio.js']",['e9b433a8f411a073d8871a01b0fce8e78de6cb90'],10,36,46,2,0.23529411764705882,1.0,1.0
+5f90521de854b8d70f1d2eea0954334ab897dd7a,feat: make lookup of function ref optional,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-04-28 14:46:56+01:00,-3600,2020-04-28 14:46:56+01:00,-3600,True,False,"['threepio.py', 'utils.py', 'test_pythreepio.py']",['bc2ccc2ebd413a3cb97734e5ca251828da812afb'],8,14,22,3,0.6666666666666666,1.0,0.0
+103d23a63984d5b53206742c28dd09b55b564df5,feat: store attrs in Command,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-04-28 14:47:42+01:00,-3600,2020-04-28 14:48:12+01:00,-3600,True,False,"['threepio.py', 'utils.py']",['5f90521de854b8d70f1d2eea0954334ab897dd7a'],2,4,6,2,0.5,1.0,0.0
+59e9edb770aad0106273244ca1bf3cbb6a3829c2,build: v0.0.6,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-04-28 14:48:51+01:00,-3600,2020-04-28 14:50:48+01:00,-3600,True,False,['__init__.py'],['103d23a63984d5b53206742c28dd09b55b564df5'],1,1,2,1,,,
+58f08d925b7a0499258ccf4276c49cd6af95ee1b,fix: support python3.6,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-05-01 16:04:38+01:00,-3600,2020-05-01 16:04:38+01:00,-3600,True,False,"['utils.py', 'requirements.txt']",['59e9edb770aad0106273244ca1bf3cbb6a3829c2'],2,6,8,2,,,
+8b80dbcb74d1d445c372b6cc6410b165289e22c9,build: v0.0.8,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-05-01 16:05:25+01:00,-3600,2020-05-01 16:05:25+01:00,-3600,True,False,['__init__.py'],['58f08d925b7a0499258ccf4276c49cd6af95ee1b'],1,1,2,1,,,
+ea4e684ede205273efdb5f7c3334bcc16cb8a81a,fix: flake8,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-05-18 16:06:39+01:00,-3600,2020-05-18 16:06:39+01:00,-3600,True,False,"['jax_spider.py', 'numpy_spider.py']",['8b80dbcb74d1d445c372b6cc6410b165289e22c9'],2,2,4,2,,,
+4961681826f25cca1f1729e80dfba57b25bf4dd7,fix: remove issue templates to use org templates,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-05-22 10:24:36+01:00,-3600,2020-05-22 10:24:36+01:00,-3600,True,False,"['bug_report.md', 'improvement.md', 'new_request.md', 'other.md']",['bc2ccc2ebd413a3cb97734e5ca251828da812afb'],122,0,122,4,,,
+e75ef8d910d06fbc840c1190db8a7dd38261974f,fix: javascript tests with multi-command,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-05-27 17:13:21+01:00,-3600,2020-05-27 17:13:21+01:00,-3600,True,False,['threepio.js'],['e00291f2402f1b4cac0d4a2830b4b460caf0a574'],2,3,5,1,,,
+76fa19705822878b5723ea11018df7cf9a97b316,test: initial test scaffolding for pythreepio,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-05-27 17:14:07+01:00,-3600,2020-05-27 17:14:07+01:00,-3600,True,False,"['errors.py', 'threepio.py', 'utils.py', 'torch.py', 'test_pythreepio.py']",['e75ef8d910d06fbc840c1190db8a7dd38261974f'],45,217,262,5,0.4482758620689655,0.0,0.5517241379310345
+fb01da8240f3f8405fb1be4c9367c05c0230d0c2,fix: update static map files for multi-command,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-05-27 19:12:20+01:00,-3600,2020-05-27 19:12:20+01:00,-3600,True,False,"['mapped_commands_full.json', 'mapped_commands_torch_tfjs.json']",['76fa19705822878b5723ea11018df7cf9a97b316'],56614,60798,117412,2,,,
+f270e8d7a9947475d53f034897a570ab270978c1,"Fix crawler issues caused by PyTorch documentation format change (#88)
+
+* fix: update aggregator to generate cmd lists
+
+* fix: broken pytorch crawler due to docs update
+
+* fix: correct argument mapping between commands",Mike Nolan,me@michael-nolan.com,GitHub,noreply@github.com,2020-06-02 12:00:05+01:00,-3600,2020-06-02 12:00:05+01:00,-3600,True,False,"['aggregate_crawler_output.py', 'torch_spider.py', '1.4.0.json', 'translations.py', 'mapped_commands_full.json', 'mapped_commands_torch_tfjs.json']",['6e790bcc65687ad165a1c708a96543982b53c141'],3646,3757,7403,6,0.07142857142857142,0.07142857142857142,0.9285714285714286
+d4234bd7b7ad5eda50d003b14cbc38c47040a57f,feat: multi-command translation,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-06-02 14:37:13+01:00,-3600,2020-06-10 16:46:33+01:00,-3600,True,False,"['.gitignore', 'translations.py', '__init__.py', 'command.py', 'errors.py', 'threepio.py', 'utils.py', 'requirements.txt', 'torch.py', 'test_pythreepio.py']",['f270e8d7a9947475d53f034897a570ab270978c1'],99,256,355,10,0.9649122807017544,1.0,0.7017543859649122
+0b635efbe03283c68a6af8f1afbd7259e985f9f2,build: static json update,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-06-10 16:21:04+01:00,-3600,2020-06-10 16:46:46+01:00,-3600,True,False,"['mapped_commands_full.json', 'mapped_commands_torch_tfjs.json']",['d4234bd7b7ad5eda50d003b14cbc38c47040a57f'],10,49,59,2,,,
+f9ec33090d3d352076b0ca2b210ae19932f51d63,fix: xo linting errors,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-06-11 13:49:18+01:00,-3600,2020-06-11 13:49:18+01:00,-3600,True,False,"['rollup.config.js', 'package-lock.json']",['0b635efbe03283c68a6af8f1afbd7259e985f9f2'],1291,1227,2518,2,,,
+a9d1c7434b10080b47b54ed72752067f9db95f95,fix: index.esm.js is missing in npm package,Vova Manannikov,vova@promail.spb.ru,Vova Manannikov,vova@promail.spb.ru,2020-06-12 00:33:29+03:00,-10800,2020-06-12 00:33:29+03:00,-10800,True,False,['package.json'],['c67830454d57b70bdb65b165864570bfb78a1d13'],1,1,2,1,,,
+815d8e16d5d0fc3f5da9f2ad64139d6d8b6fee0f,Add Support section to README.md (#95),Pedro Espíndula,joaopedro.jpse@gmail.com,GitHub,noreply@github.com,2020-06-22 07:41:46-03:00,10800,2020-06-22 11:41:46+01:00,-3600,True,False,['README.md'],['e54d70a4fd684a862ea40844f27ea9f9d14b5f1e'],0,5,5,1,,,
+cdbbebdca49d12b9de2908ef82802a8533b87153,"Readme Updates (#94)
+
+* docs: update main readme to om template
+
+* docs: pythreepio readme
+
+* docs: threepio.js readme
+
+* docs: crawler readme
+
+* docs: add feature info to readme
+
+* Update README.md
+
+Co-authored-by: Patrick Cason <me@patrickcason.com>",Mike Nolan,me@michael-nolan.com,GitHub,noreply@github.com,2020-06-22 13:33:45+01:00,-3600,2020-06-22 13:33:45+01:00,-3600,True,False,"['README.md', 'README.md', 'README.md', 'README.md', 'README.rst']",['815d8e16d5d0fc3f5da9f2ad64139d6d8b6fee0f'],31,181,212,5,,,
+2fc0a89a414a7ab3589c72d5e6855cafbed6af7c,Relative links in readme,Patrick Cason,me@patrickcason.com,GitHub,noreply@github.com,2020-06-22 13:34:57+01:00,-3600,2020-06-22 13:34:57+01:00,-3600,True,False,['README.md'],['cdbbebdca49d12b9de2908ef82802a8533b87153'],3,3,6,1,,,
+42fb787e24e651c8144b2e1b7ab1b914839ec367,Update README.md,Patrick Cason,me@patrickcason.com,GitHub,noreply@github.com,2020-06-22 13:37:49+01:00,-3600,2020-06-22 13:37:49+01:00,-3600,True,False,['README.md'],['2fc0a89a414a7ab3589c72d5e6855cafbed6af7c'],1,1,2,1,,,
+c15c07071e3e43a7df5d9692a78234d40de8ef1c,fix: add optional arg for linear translation,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-06-24 15:06:32+01:00,-3600,2020-06-24 15:06:32+01:00,-3600,True,False,"['translations.py', 'mapped_commands_full.json']",['42fb787e24e651c8144b2e1b7ab1b914839ec367'],0,9,9,2,,,
+7176fa9129b13eb2843868f11742f279d9b2ceb3,build: v0.0.10,Mike Nolan,me@michael-nolan.com,Mike Nolan,me@michael-nolan.com,2020-06-24 15:07:06+01:00,-3600,2020-06-24 15:07:06+01:00,-3600,True,False,['__init__.py'],['c15c07071e3e43a7df5d9692a78234d40de8ef1c'],1,1,2,1,,,
+3ca9d47c1d02b649c4fdfe5fa1a43df3344a88da,Adding the new logo,Patrick Cason,me@patrickcason.com,GitHub,noreply@github.com,2020-06-25 17:01:49+01:00,-3600,2020-06-25 17:01:49+01:00,-3600,True,False,['threepio.png'],['47d78f3c423d1e5538613bd3c9fc13b249fd1f49'],0,0,0,1,,,
+2d9ed1dae0f62893a80b3746a77772a5ba41c8c2,Update README.md,Patrick Cason,me@patrickcason.com,GitHub,noreply@github.com,2020-06-25 17:02:37+01:00,-3600,2020-06-25 17:02:37+01:00,-3600,True,False,['README.md'],['3ca9d47c1d02b649c4fdfe5fa1a43df3344a88da'],1,1,2,1,,,
+f56ae4570391ad97f27ef1e5d62cdd68da74ced7,test: add tests & scaffolding for all frameworks (#98),Mike Nolan,me@michael-nolan.com,GitHub,noreply@github.com,2020-06-29 15:31:25+01:00,-3600,2020-06-29 15:31:25+01:00,-3600,True,False,"['command.py', 'tf.py', 'tfjs.py', 'torch.py', 'test_pythreepio.py', 'test_tf_torch.py', 'test_tfjs_torch.py', 'test_torch_tf.py', 'test_torch_tfjs.py', 'util.py']",['2d9ed1dae0f62893a80b3746a77772a5ba41c8c2'],123,193,316,10,1.0,1.0,0.5882352941176471
+8e186eb881ce58a5bed25b916ef5e4bf15931380,"Fixed type (#97)
+
+* Added documentation for torch_spider.py
+
+* Fixed type
+
+* Added 2 spaces before inline comments
+
+* further flake8 style correction
+
+* fix: flake8",Tvictor,ateniolatobi@gmail.com,GitHub,noreply@github.com,2020-06-30 08:49:04+01:00,-3600,2020-06-30 08:49:04+01:00,-3600,True,False,['torch_spider.py'],['f56ae4570391ad97f27ef1e5d62cdd68da74ced7'],13,65,78,1,0.0,0.0,1.0
+25e35ed6395ca285204fb34663d4f76ac90270c0,feat: add tfjs commands for MNIST example (#99),Vova Manannikov,12518480+vvmnnnkv@users.noreply.github.com,GitHub,noreply@github.com,2020-06-30 11:51:04+03:00,-10800,2020-06-30 09:51:04+01:00,-3600,True,False,"['translations.py', 'threepio.py', 'mapped_commands_full.json', 'tfjs.py', 'test_torch_tfjs.py', 'mapped_commands_torch_tfjs.json']",['8e186eb881ce58a5bed25b916ef5e4bf15931380'],9,192,201,6,1.0,1.0,1.0
+dc13312d2b436843a6bfdcbc11e4a359a0ff361e,"Fixed type #83 (#100)
+
+* # updated inline documentation
+
+* # updated documentation
+
+* # Fix flake8
+
+* # updated comments",Ramesht Shukla,36106177+ramesht007@users.noreply.github.com,GitHub,noreply@github.com,2020-07-01 13:19:47+05:18,-19080,2020-07-01 09:01:47+01:00,-3600,True,False,['tf_spider.py'],['25e35ed6395ca285204fb34663d4f76ac90270c0'],12,47,59,1,,,
+e6e0a85e6b872fdc080bc9ea6b5a227cd909bc34,"Fixed Issue #79 (#102)
+
+* fix: Added docs for jax_spider.py
+
+* fix: Updated documentation
+
+* fix: Corrected typo in the documentation",Tvictor,ateniolatobi@gmail.com,GitHub,noreply@github.com,2020-07-01 12:39:36+01:00,-3600,2020-07-01 12:39:36+01:00,-3600,True,False,['jax_spider.py'],['dc13312d2b436843a6bfdcbc11e4a359a0ff361e'],11,66,77,1,,,
+695a83b510e1390d79419ed09b7ecfea1af68282,"Fixed issue #85 (#103)
+
+* # addded documentation
+
+* # typos corrected",Ramesht Shukla,36106177+ramesht007@users.noreply.github.com,GitHub,noreply@github.com,2020-07-01 16:58:55+05:18,-19080,2020-07-01 12:40:55+01:00,-3600,True,False,['tfjs_spider.py'],['e6e0a85e6b872fdc080bc9ea6b5a227cd909bc34'],8,46,54,1,,,
+9ab88254ac2d4347fd15beb83869f6bfd6d96f56,fix: rewrite due to numpy site update (#106),Tvictor,ateniolatobi@gmail.com,GitHub,noreply@github.com,2020-07-06 11:28:08+01:00,-3600,2020-07-06 11:28:08+01:00,-3600,True,False,['numpy_spider.py'],['695a83b510e1390d79419ed09b7ecfea1af68282'],11,69,80,1,0.0,0.0,1.0
+ccd163a53cd373af824a9102ae1096cb4ff1bbac,"Top-level functions are shadowed by sub-module funcs (#109)
+
+* fix: top-level functions were shadowed by sub-module funcs
+
+* fix: style fix, enable some unit tests
+
+* fix: fix code style
+
+* fix: remove interferring 'add' from tfjs dictionary",Vova Manannikov,12518480+vvmnnnkv@users.noreply.github.com,GitHub,noreply@github.com,2020-07-08 11:30:35+03:00,-10800,2020-07-08 09:30:35+01:00,-3600,True,False,"['aggregate_crawler_output.py', '1.5.1.json', 'command.py', 'mapped_commands_full.json', 'tfjs.py', 'test_torch_tf.py', 'test_torch_tfjs.py', 'mapped_commands_torch_tfjs.json']",['9ab88254ac2d4347fd15beb83869f6bfd6d96f56'],418,698,1116,8,0.0,1.0,1.0
+a830c264eb959ea2554e867ca137e78ca0d781e1,0.2.0 (#115),Mike Nolan,me@michael-nolan.com,GitHub,noreply@github.com,2020-07-08 16:43:16+01:00,-3600,2020-07-08 16:43:16+01:00,-3600,True,False,"['package-lock.json', 'package.json']",['ccd163a53cd373af824a9102ae1096cb4ff1bbac'],2,2,4,2,,,
+bbf94a6853e5278d4b3fd24e28a208748cb91390,"fix: rename package to openmined.threepio (#114)
+
+* fix: rename package to openmined.threepio
+
+* build: publish pythreepio 0.2.0",Mike Nolan,me@michael-nolan.com,GitHub,noreply@github.com,2020-07-08 16:45:36+01:00,-3600,2020-07-08 16:45:36+01:00,-3600,True,False,"['README.md', '__init__.py', 'setup.cfg']",['a830c264eb959ea2554e867ca137e78ca0d781e1'],5,5,10,3,,,
+e10e85a93836a051ab8ad594cd807edb6d9b429d,Added Keras Crawler (#111),Tvictor,ateniolatobi@gmail.com,GitHub,noreply@github.com,2020-07-14 16:55:52+01:00,-3600,2020-07-14 16:55:52+01:00,-3600,True,False,['keras_spider.py'],['bbf94a6853e5278d4b3fd24e28a208748cb91390'],0,54,54,1,0.0,0.0,1.0
+25563c4df70e1047bca97f4e1b226b2f22fda5fe,"Added the inline comments (#104)
+
+* Test
+
+* Added comments in docs-crawler/docs/docs/spiders/numpy_spider.py #81
+
+* Test commit removed.
+
+* Added inline comments#81
+
+* Added inline comments#81
+
+* Added inline comments#81
+
+* Added inline comments#81
+
+* Added inline comments#81
+
+* fix flake8
+
+Co-authored-by: Mike Nolan <me@michael-nolan.com>",Anirban Aaha,55926653+anirbansaha782@users.noreply.github.com,GitHub,noreply@github.com,2020-07-14 21:15:13+05:18,-19080,2020-07-14 16:57:13+01:00,-3600,True,False,['numpy_spider.py'],['e10e85a93836a051ab8ad594cd807edb6d9b429d'],6,9,15,1,,,
+98f7b4223dc92fd2bab7bcb9ed628ba5282b70aa,"py/translate: Map PyTorch tensor __rsub__ to sub for Tensorflow.js. (#122)
+
+* py/translate: Map PyTorch tensor __rsub__ to sub for Tensorflow.js.
+
+* py/translate: Lint
+
+Co-authored-by: Justin Harris <justindharris@gmail.com>",Justin D. Harris,juharris@users.noreply.github.com,GitHub,noreply@github.com,2020-07-23 05:06:42-04:00,14400,2020-07-23 10:06:42+01:00,-3600,True,False,"['translations.py', 'pytorch.js', 'threepio.test.js', 'mapped_commands_full.json', 'tfjs.py', 'test_torch_tfjs.py', 'mapped_commands_torch_tfjs.json']",['25563c4df70e1047bca97f4e1b226b2f22fda5fe'],3,74,77,7,0.9166666666666666,1.0,1.0
+ace7b8863545cc9f7ec28596f2985ff1d8738588,"torch/tfjs: Translate select to gather. (#120)
+
+* torch/tfjs: Translate select to gather.
+
+* torch/tfjs: Add JS tests for translating select to gather.
+
+* Remove extra import in tests.
+
+* pytorch.js: Make prettier.
+
+* pytorch.js: Add comment.
+Mainly to hopefully get the tests to run.
+
+* pytorch.js: Prettier.
+
+* pytorch.js: Prettier.
+
+* js: Correct test.
+
+Co-authored-by: Justin Harris <justindharris@gmail.com>",Justin D. Harris,juharris@users.noreply.github.com,GitHub,noreply@github.com,2020-07-23 09:54:05-04:00,14400,2020-07-23 14:54:05+01:00,-3600,True,False,"['translations.py', 'pytorch.js', 'threepio.test.js', 'mapped_commands_full.json', 'tfjs.py', 'test_torch_tfjs.py', 'mapped_commands_torch_tfjs.json']",['98f7b4223dc92fd2bab7bcb9ed628ba5282b70aa'],3,116,119,7,0.9166666666666666,1.0,1.0
+5ac3e67444bcf12f50aff3147475ec6162d92fa7,"[python] translate: Throw TranslationMissing exception instead of KeyError (#121)
+
+* Fixed: Issue #73 (#108)
+
+* # addded documentation
+
+* # typos corrected
+
+* # added documentation
+
+* # improvements made
+
+Co-authored-by: Mike Nolan <me@michael-nolan.com>
+
+* py/translate: TranslationMissing exception instead of KeyError.
+
+* py/translate: Throw custom exception instead of KeyError.
+
+* Undo changes to aggregate_crawler_output.py
+
+* test_torch_tfjs.py: Use more consistent indenting.
+
+* test_torch_tfjs.py: Add newlines.
+
+* Threepio: Add check for `from_lang`.
+
+Co-authored-by: Ramesht Shukla <36106177+ramesht007@users.noreply.github.com>
+Co-authored-by: Mike Nolan <me@michael-nolan.com>
+Co-authored-by: Justin Harris <justindharris@gmail.com>",Justin D. Harris,juharris@users.noreply.github.com,GitHub,noreply@github.com,2020-07-23 13:57:21-04:00,14400,2020-07-23 18:57:21+01:00,-3600,True,False,"['threepio.py', 'test_torch_tfjs.py']",['ace7b8863545cc9f7ec28596f2985ff1d8738588'],4,16,20,2,1.0,1.0,0.75
+475c14d9911f9e2328475143076c6d57c79535c8,Documented sklearn and keras crawlers and also generated output. (#129),Tvictor,ateniolatobi@gmail.com,GitHub,noreply@github.com,2020-07-27 12:06:19+01:00,-3600,2020-07-27 12:06:19+01:00,-3600,True,False,"['keras_spider.py', 'sklearn_spider.py', '2.3.0.json', '0.23.1.json']",['5ac3e67444bcf12f50aff3147475ec6162d92fa7'],8,509,517,4,0.0,0.0,1.0
+41d6efd71c13f44d3881d4dbf5e917ae8375d27f,"Solved Issue #73 documentation for aggregate_crawler_output.py (#130)
+
+* Added documentation for aggregate_crawler
+
+* Updated docs in aggregate_crawler_output.py",Tvictor,ateniolatobi@gmail.com,GitHub,noreply@github.com,2020-08-10 10:59:49+01:00,-3600,2020-08-10 10:59:49+01:00,-3600,True,False,['aggregate_crawler_output.py'],['475c14d9911f9e2328475143076c6d57c79535c8'],22,280,302,1,,,
+fb331b3633294f5b59edbad169adc861bfe364cd,"build(deps): bump tensorflow from 2.2 to 2.2.1 in /pythreepio (#135)
+
+Bumps [tensorflow](https://github.com/tensorflow/tensorflow) from 2.2 to 2.2.1.
+- [Release notes](https://github.com/tensorflow/tensorflow/releases)
+- [Changelog](https://github.com/tensorflow/tensorflow/blob/master/RELEASE.md)
+- [Commits](https://github.com/tensorflow/tensorflow/compare/v2.2.0...v2.2.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-05 12:12:49+01:00,-3600,2020-10-05 12:12:49+01:00,-3600,True,False,['requirements.txt'],['41d6efd71c13f44d3881d4dbf5e917ae8375d27f'],1,1,2,1,,,
+0a538a3f1ed70b39be541766211f6b84e2136fc3,"added pytorch and tesnorflow translations (#133)
+
+Co-authored-by: Mike Nolan <me@michael-nolan.com>",Ramesht Shukla,36106177+ramesht007@users.noreply.github.com,GitHub,noreply@github.com,2020-10-05 17:03:50+05:18,-19080,2020-10-05 12:45:50+01:00,-3600,True,False,"['supported_translations_PyTorch.md', 'supported_translations_TensorFlow.md']",['fb331b3633294f5b59edbad169adc861bfe364cd'],0,2083,2083,2,,,
+fcd9b3e2e669fc112b15866c38c10e98367831b4,"fix: deprecate js threepio (#137)
+
+* fix: deprecate js threepio
+
+* Update README.md
+
+Co-authored-by: Patrick Cason <me@patrickcason.com>",Mike Nolan,me@michael-nolan.com,GitHub,noreply@github.com,2020-10-05 13:35:01+01:00,-3600,2020-10-05 13:35:01+01:00,-3600,True,False,"['nodejs.yml', 'README.md', '.babelrc', 'README.md', 'rollup.config.js', '_constants.js', '_errors.js', '_translations.js', 'command.js', 'index.js', 'threepio.js', 'command.test.js', 'pytorch.js', 'threepio.test.js', 'package-lock.json', 'package.json']",['0a538a3f1ed70b39be541766211f6b84e2136fc3'],16505,4,16509,16,0.37681159420289856,0.0,0.2028985507246377
+d434a773cf8d49f033e610f0144a1339b5ffb571,"Translated commands for TensorFlow.js (#138)
+
+* Added tensorflow.js translations
+
+* Update supported_translations_TensorFlow.js.md
+
+* upddated commands",Ramesht Shukla,36106177+ramesht007@users.noreply.github.com,GitHub,noreply@github.com,2020-10-07 14:32:03+05:18,-19080,2020-10-07 10:14:03+01:00,-3600,True,False,"['supported_translations_TensorFlow.js.md', 'supported_translations_TensorFlow.md']",['fcd9b3e2e669fc112b15866c38c10e98367831b4'],367,379,746,2,,,
+ea817c30cfc70b5ae490fb6a2a36f04e2326603c,"Added contributers list (#141)
+
+Co-authored-by: Mike Nolan <me@michael-nolan.com>",Ramesht Shukla,36106177+ramesht007@users.noreply.github.com,GitHub,noreply@github.com,2020-10-12 16:20:05+05:18,-19080,2020-10-12 12:02:05+01:00,-3600,True,False,['README.md'],['d434a773cf8d49f033e610f0144a1339b5ffb571'],1,77,78,1,,,
+bcaa39b131ff60967991531baeb061a79e388cb3,"feat: Adds inline comments to utils.py (#140)
+
+* feat: Adds inline comments to utils.py
+
+Would resolve Issue #71 if merged
+
+* feat: Adds additional documentation in sphinx format
+
+Co-authored-by: Mike Nolan <me@michael-nolan.com>",Darigov Research,30328618+darigovresearch@users.noreply.github.com,GitHub,noreply@github.com,2020-10-12 12:14:04+01:00,-3600,2020-10-12 12:14:04+01:00,-3600,True,False,['utils.py'],['ea817c30cfc70b5ae490fb6a2a36f04e2326603c'],0,5,5,1,1.0,1.0,1.0
+ff0470400c59e30fafeecc59d7dca361c615f701,"feat: Adds initial docstring & comments to translations.py (#139)
+
+* feat: Adds initial docstring & comments to translations.py
+
+Would resolve Issue #75
+
+* fix: Removes starting spaces in translations.py
+
+* fix: Adjusts docstring to match flake8 specification",Darigov Research,30328618+darigovresearch@users.noreply.github.com,GitHub,noreply@github.com,2020-10-22 08:20:31+01:00,-3600,2020-10-22 08:20:31+01:00,-3600,True,False,['translations.py'],['bcaa39b131ff60967991531baeb061a79e388cb3'],0,7,7,1,,,
+2a6303cc155deb75a648116e8e4c6f18de1b14de,"Added Auto-Translation script for Command Translations (#142)
+
+* added pytorch and tesnorflow translations
+
+* Added tensorflow.js translations
+
+* Update supported_translations_TensorFlow.js.md
+
+* upddated commands
+
+* # added auto_translations
+
+* Delete supported_translations_TensorFlow.js.md
+
+* Delete supported_translations_TensorFlow.md",Ramesht Shukla,36106177+ramesht007@users.noreply.github.com,GitHub,noreply@github.com,2020-10-23 04:24:04-07:00,25200,2020-10-23 12:24:04+01:00,-3600,True,False,"['auto_translations.py', 'supported_translations_PyTorch.md', 'supported_translations_TensorFlow.js.md', 'supported_translations_TensorFlow.md', 'supported_translations_PyTorch.md', 'supported_translations_TensorFlow.js.md', 'supported_translations_TensorFlow.md']",['ff0470400c59e30fafeecc59d7dca361c615f701'],2095,2231,4326,7,,,
+2fe598ec506dfa9e686c644708d2c89d34aa848f,"Inline docs for threepio.py (#145)
+
+* Inline docs and fix flake8 warnings
+
+* Update threepio.py",Praful932,praful.mohanan@gmail.com,GitHub,noreply@github.com,2021-01-25 15:11:07+05:18,-19080,2021-01-25 09:53:07+00:00,0,True,False,"['command.py', 'threepio.py', 'utils.py', 'tfjs.py', 'test_torch_tf.py', 'test_torch_tfjs.py', 'util.py']",['2a6303cc155deb75a648116e8e4c6f18de1b14de'],39,129,168,7,0.0,0.5555555555555556,1.0
+a36c208f9f63d23d4459a31a059224e0d50eca18,"Update package docs (#147)
+
+* Update package docs
+
+* Apply suggestions from code review
+
+Co-authored-by: Mike Nolan <me@michael-nolan.com>
+
+Co-authored-by: Mike Nolan <me@michael-nolan.com>",Praful932,praful.mohanan@gmail.com,GitHub,noreply@github.com,2021-02-10 20:04:37+05:18,-19080,2021-02-10 14:46:37+00:00,0,True,False,"['README.md', 'command.py', 'errors.py']",['2fe598ec506dfa9e686c644708d2c89d34aa848f'],6,53,59,3,0.0,1.0,1.0

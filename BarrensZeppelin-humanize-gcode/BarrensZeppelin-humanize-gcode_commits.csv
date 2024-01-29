@@ -1,0 +1,94 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+c6b94f14f8ff3392a82c6757da0c6613c36dc891,Initial commit,Oskar Haarklou Veileborg,ohv1020@hotmail.com,Oskar Haarklou Veileborg,ohv1020@hotmail.com,2018-06-09 21:43:35+02:00,-7200,2018-06-09 21:43:35+02:00,-7200,True,False,"['.gitignore', 'Pipfile', 'Pipfile.lock', '__init__.py', 'humanize_gcode.py', 'hucode', 'setup.py']",[],0,450,450,7,0.5,1.0,1.0
+5649d9b38b1af1c3c6a4fcb259c1a57426107850,Create LICENSE,Oskar Haarklou Veileborg,ohv1020@hotmail.com,GitHub,noreply@github.com,2018-06-09 22:01:52+02:00,-7200,2018-06-09 22:01:52+02:00,-7200,True,False,['LICENSE'],['c6b94f14f8ff3392a82c6757da0c6613c36dc891'],0,21,21,1,,,
+4efa02c1816e83c9863beadb397598e3950126a7,Add README.md and more setup.py,Oskar Haarklou Veileborg,ohv1020@hotmail.com,Oskar Haarklou Veileborg,ohv1020@hotmail.com,2018-06-09 22:54:30+02:00,-7200,2018-06-09 22:56:48+02:00,-7200,True,False,"['README.md', 'setup.py']",['5649d9b38b1af1c3c6a4fcb259c1a57426107850'],5,42,47,2,,,
+1e55689c5062f17df4163e1eea0fdae395e2b759,Classify as python 3.6,Oskar Haarklou Veileborg,ohv1020@hotmail.com,Oskar Haarklou Veileborg,ohv1020@hotmail.com,2018-06-15 10:28:08+02:00,-7200,2018-06-15 10:28:08+02:00,-7200,True,False,['setup.py'],['4efa02c1816e83c9863beadb397598e3950126a7'],1,1,2,1,,,
+fbd5b97fe328f9e14b10cde341d9df7277865b59,Cache gcode flavour dicts to reduce startup time,Oskar Haarklou Veileborg,ohv1020@hotmail.com,Oskar Haarklou Veileborg,ohv1020@hotmail.com,2018-07-10 12:38:57+02:00,-7200,2018-07-10 12:38:57+02:00,-7200,True,False,"['Pipfile', 'Pipfile.lock', 'hucode', 'setup.py']",['1e55689c5062f17df4163e1eea0fdae395e2b759'],45,71,116,4,,,
+d7bde52cb9e8c543b1c7cd2db28d551d57c95387,Remove caching from TODO,Oskar Haarklou Veileborg,ohv1020@hotmail.com,Oskar Haarklou Veileborg,ohv1020@hotmail.com,2018-07-10 12:42:32+02:00,-7200,2018-07-10 12:42:32+02:00,-7200,True,False,['README.md'],['fbd5b97fe328f9e14b10cde341d9df7277865b59'],1,0,1,1,,,
+5e35e3ca09ef3625f96ac327c1d8e77ebfcef90b,Update Pipfile.lock and specify python_requires in setup.py,Oskar Haarklou Veileborg,ohv1020@hotmail.com,Oskar Haarklou Veileborg,ohv1020@hotmail.com,2018-12-03 12:34:59+01:00,-3600,2018-12-03 12:34:59+01:00,-3600,True,False,"['Pipfile.lock', 'setup.py']",['d7bde52cb9e8c543b1c7cd2db28d551d57c95387'],66,86,152,2,,,
+319b34d2fe339c13f4036c59a2cc413d04f04127,"Bump urllib3 from 1.24.1 to 1.24.2
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 1.24.1 to 1.24.2.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/master/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/1.24.1...1.24.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2019-10-21 16:47:33+00:00,0,2019-10-21 16:47:33+00:00,0,True,False,['Pipfile.lock'],['5e35e3ca09ef3625f96ac327c1d8e77ebfcef90b'],82,72,154,1,,,
+dbb6ce480d6632b2a6ff7946439e95a4cb50e02d,"Fix smoothie and marlin HTML parsing
+
+Also update dependencies",Oskar Haarklou Veileborg,ohv1020@hotmail.com,Oskar Haarklou Veileborg,ohv1020@hotmail.com,2021-02-09 13:39:36+01:00,-3600,2021-02-09 13:39:42+01:00,-3600,True,False,"['Pipfile.lock', 'humanize_gcode.py', 'setup.py']",['69031c9caf1c081d3ca3be4648165e6f022b986c'],98,142,240,3,0.0,0.0,1.0
+ddb82f4dc6e952aedd4d3aa5255be63da51c89fa,"Bump lxml from 4.6.2 to 4.6.3
+
+Bumps [lxml](https://github.com/lxml/lxml) from 4.6.2 to 4.6.3.
+- [Release notes](https://github.com/lxml/lxml/releases)
+- [Changelog](https://github.com/lxml/lxml/blob/master/CHANGES.txt)
+- [Commits](https://github.com/lxml/lxml/compare/lxml-4.6.2...lxml-4.6.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-03-31 18:54:44+00:00,0,2021-03-31 18:54:44+00:00,0,True,False,['Pipfile.lock'],['dbb6ce480d6632b2a6ff7946439e95a4cb50e02d'],61,62,123,1,,,
+19d69741f58d7548db31e907647700ef59ff2961,"Bump urllib3 from 1.26.4 to 1.26.5
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 1.26.4 to 1.26.5.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/1.26.4...1.26.5)
+
+---
+updated-dependencies:
+- dependency-name: urllib3
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-06-01 22:33:54+00:00,0,2021-06-01 22:33:54+00:00,0,True,False,['Pipfile.lock'],['2f947b5e7b72c6c267bfbb0a7f9a855cc8b665c0'],13,23,36,1,,,
+659f6f42519283aa2aa4cbfad3b155514714c077,"Bump lxml from 4.6.3 to 4.6.5
+
+Bumps [lxml](https://github.com/lxml/lxml) from 4.6.3 to 4.6.5.
+- [Release notes](https://github.com/lxml/lxml/releases)
+- [Changelog](https://github.com/lxml/lxml/blob/master/CHANGES.txt)
+- [Commits](https://github.com/lxml/lxml/compare/lxml-4.6.3...lxml-4.6.5)
+
+---
+updated-dependencies:
+- dependency-name: lxml
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-12-13 19:54:00+00:00,0,2021-12-13 19:54:00+00:00,0,True,False,['Pipfile.lock'],['377c48d995fd1e8828714699085b880dfd4bb70f'],101,148,249,1,,,
+1a497b524cab2517b6c10cc34f63997f3b03472d,"Bump lxml from 4.6.5 to 4.9.1
+
+Bumps [lxml](https://github.com/lxml/lxml) from 4.6.5 to 4.9.1.
+- [Release notes](https://github.com/lxml/lxml/releases)
+- [Changelog](https://github.com/lxml/lxml/blob/master/CHANGES.txt)
+- [Commits](https://github.com/lxml/lxml/compare/lxml-4.6.5...lxml-4.9.1)
+
+---
+updated-dependencies:
+- dependency-name: lxml
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-07-06 19:58:52+00:00,0,2022-07-06 19:58:52+00:00,0,True,False,['Pipfile.lock'],['bb78df2616c6e613b6d2fe8470bf3cd4f48e86e0'],86,105,191,1,,,
+6128f5520230675d627072068ee4c46f13fb2283,"Bump certifi from 2022.6.15 to 2022.12.7
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2022.6.15 to 2022.12.7.
+- [Release notes](https://github.com/certifi/python-certifi/releases)
+- [Commits](https://github.com/certifi/python-certifi/compare/2022.06.15...2022.12.07)
+
+---
+updated-dependencies:
+- dependency-name: certifi
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Oskar Haarklou Veileborg,ohv1020@hotmail.com,2022-12-09 07:09:35+00:00,0,2022-12-09 09:31:11+01:00,-3600,True,False,['Pipfile.lock'],['6fa05d7c9e1cdf58c486472800b26b19a610dedc'],29,23,52,1,,,
+91c5c2af3739cbff36f28687971444c72e4115c5,"Bump certifi from 2022.12.7 to 2023.7.22
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2022.12.7 to 2023.7.22.
+- [Commits](https://github.com/certifi/python-certifi/compare/2022.12.07...2023.07.22)
+
+---
+updated-dependencies:
+- dependency-name: certifi
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Oskar Haarklou Veileborg,ohv1020@hotmail.com,2023-07-25 20:48:08+00:00,0,2023-07-25 22:49:09+02:00,-7200,True,False,['Pipfile.lock'],['6128f5520230675d627072068ee4c46f13fb2283'],90,113,203,1,,,

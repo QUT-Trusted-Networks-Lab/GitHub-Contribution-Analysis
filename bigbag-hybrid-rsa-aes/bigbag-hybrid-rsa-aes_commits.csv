@@ -1,0 +1,66 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+f414b7a223a24e9c290c09f00c21e3a3ba1ea6c7,Initial commit,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-01-02 10:22:10+02:00,-7200,2021-01-02 10:22:10+02:00,-7200,True,False,[],[],0,0,0,0,,,
+bd8a9a8dd00c27ba4a5685a4efabc850499a538b,Add package base,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-01-09 18:13:39+02:00,-7200,2021-01-09 18:13:39+02:00,-7200,True,False,"['.coveragerc', '.flake8', 'dependabot.yml', 'ci.yml', '.gitignore', '.pre-commit-config.yaml', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.rst', '__init__.py', '__init__.py', 'version.py', 'mypy.ini', 'pyproject.toml', 'linters.txt', 'tests.txt', 'setup.py', '__init__.py']",['f414b7a223a24e9c290c09f00c21e3a3ba1ea6c7'],0,553,553,19,,,
+58319403d70a8070dac68344fe9244d3021ef3c5,Add Hybrid cipher,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-01-11 17:30:41+02:00,-7200,2021-01-11 17:30:45+02:00,-7200,True,False,"['__init__.py', 'hybrid_cipher.py', 'jwk.py']",['bd8a9a8dd00c27ba4a5685a4efabc850499a538b'],8,118,126,3,1.0,1.0,0.6666666666666666
+e730fec099db9cd658b35f2ccaa94e4f477206d0,Add code quality workflow,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-01-11 17:32:01+02:00,-7200,2021-01-11 17:32:01+02:00,-7200,True,False,"['ci.yml', 'code.yml']",['58319403d70a8070dac68344fe9244d3021ef3c5'],21,35,56,2,,,
+72fc7022044853cfc64805651f02e04e68a2b449,Purge jwk support,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-01-12 19:30:43+02:00,-7200,2021-01-12 19:30:43+02:00,-7200,True,False,"['__init__.py', 'cipher.py', 'jwk.py', 'setup.py']",['e730fec099db9cd658b35f2ccaa94e4f477206d0'],45,6,51,4,0.0,0.0,0.0
+459e32cb9b91ce33358be5b202bb01184b38d6a9,Add tests,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-01-12 19:30:58+02:00,-7200,2021-01-12 19:30:58+02:00,-7200,True,False,['test_cipher.py'],['72fc7022044853cfc64805651f02e04e68a2b449'],0,19,19,1,1.0,1.0,1.0
+85f6468308173003a6a4588bd9bcf036b6ccfc0c,Purge debug info,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-01-12 19:31:44+02:00,-7200,2021-01-12 19:31:44+02:00,-7200,True,False,['cipher.py'],['459e32cb9b91ce33358be5b202bb01184b38d6a9'],3,0,3,1,0.0,0.0,1.0
+8e399ede3b152f80c8712953ca41c604cde80e33,Update readme (#1),Pavel Liashkov,pavel.liashkov@protonmail.com,GitHub,noreply@github.com,2021-01-14 11:01:29+02:00,-7200,2021-01-14 11:01:29+02:00,-7200,True,False,"['README.rst', 'version.py']",['3f45c3ca3a51a1fb753e9435770e385339d1baac'],2,40,42,2,,,
+bc668ca261c9090aee8b4a4a4ee53f6b3db88d07,Fix package format,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-01-23 22:35:22+02:00,-7200,2021-01-23 22:35:22+02:00,-7200,True,False,['__init__.py'],['8e399ede3b152f80c8712953ca41c604cde80e33'],0,0,0,1,,,
+d39e31bf13122f36c31152e73014ac07ab627b64,Update Readme,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-01-27 17:49:34+02:00,-7200,2021-01-27 17:49:34+02:00,-7200,True,False,"['README.rst', 'version.py']",['bc668ca261c9090aee8b4a4a4ee53f6b3db88d07'],3,3,6,2,,,
+9de6edaf9c893430e845cd73d0b8cd37735f4f9f,Fix readme,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-02-05 17:42:26+02:00,-7200,2021-02-05 17:43:33+02:00,-7200,True,False,"['README.md', 'README.rst', 'version.py', 'setup.py']",['d39e31bf13122f36c31152e73014ac07ab627b64'],49,50,99,4,,,
+4d27b5602625c8931c407cd26dee37af81adeb62,Add security politic,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-02-05 17:47:26+02:00,-7200,2021-02-05 17:47:38+02:00,-7200,True,False,"['SECURITY.md', 'version.py']",['9de6edaf9c893430e845cd73d0b8cd37735f4f9f'],1,9,10,2,,,
+f6b1b3c2d604659ba13625f992be271162c71a48,Update readme,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-02-05 17:49:12+02:00,-7200,2021-02-05 17:49:12+02:00,-7200,True,False,"['README.md', 'version.py']",['4d27b5602625c8931c407cd26dee37af81adeb62'],2,2,4,2,,,
+b956a0bcf864ffb4b85556d549ca49114b068f7b,Fix write mistake,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-02-05 17:50:49+02:00,-7200,2021-02-05 17:50:49+02:00,-7200,True,False,"['README.md', 'version.py']",['f6b1b3c2d604659ba13625f992be271162c71a48'],2,2,4,2,,,
+0172182c9fe45a9f960b9888864061349a6ffc8c,"Bump cryptography from 3.3.1 to 3.4.4 (#5)
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 3.3.1 to 3.4.4.
+- [Release notes](https://github.com/pyca/cryptography/releases)
+- [Changelog](https://github.com/pyca/cryptography/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/3.3.1...3.4.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-10 17:57:47+02:00,-7200,2021-02-10 17:57:47+02:00,-7200,True,False,['setup.py'],['b956a0bcf864ffb4b85556d549ca49114b068f7b'],1,1,2,1,,,
+c34541b40d8c924ae123e2ac5281a4d329b15574,Bump version,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-02-10 17:58:46+02:00,-7200,2021-02-10 17:58:46+02:00,-7200,True,False,['version.py'],['0172182c9fe45a9f960b9888864061349a6ffc8c'],1,1,2,1,,,
+d2f583e1386d6169fb6ef458bbe4ebafa7508a6e,Bump version,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-02-10 17:59:31+02:00,-7200,2021-02-10 17:59:31+02:00,-7200,True,False,['version.py'],['c34541b40d8c924ae123e2ac5281a4d329b15574'],1,1,2,1,,,
+b4b1ba519bf83178ebbdfedc712c2856df421d7d,"Bump cryptography from 3.4.4 to 3.4.5 (#6)
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 3.4.4 to 3.4.5.
+- [Release notes](https://github.com/pyca/cryptography/releases)
+- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/3.4.4...3.4.5)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-15 11:59:53+02:00,-7200,2021-02-15 11:59:53+02:00,-7200,True,False,['setup.py'],['d2f583e1386d6169fb6ef458bbe4ebafa7508a6e'],1,1,2,1,,,
+8fe9c01322e608796455dcb19ad9d60dbd89de11,Bump version,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-02-15 12:05:13+02:00,-7200,2021-02-15 12:05:13+02:00,-7200,True,False,['version.py'],['b4b1ba519bf83178ebbdfedc712c2856df421d7d'],1,1,2,1,,,
+4e8265be22ee392d6d73127f571899bfe24d55ac,"Bump cryptography from 3.4.5 to 3.4.6 (#7)
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 3.4.5 to 3.4.6.
+- [Release notes](https://github.com/pyca/cryptography/releases)
+- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/3.4.5...3.4.6)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-20 20:21:26+02:00,-7200,2021-02-20 20:21:26+02:00,-7200,True,False,['setup.py'],['8fe9c01322e608796455dcb19ad9d60dbd89de11'],1,1,2,1,,,
+88cc6ca416cb7fd582a5e856c12da17f1a1bbd73,Bump version,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-02-20 20:22:21+02:00,-7200,2021-02-20 20:22:21+02:00,-7200,True,False,['version.py'],['4e8265be22ee392d6d73127f571899bfe24d55ac'],1,1,2,1,,,
+50002ed3479fa0a84978ec0232a85cca8e5a041b,Update make file,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-02-20 20:24:11+02:00,-7200,2021-02-20 20:24:11+02:00,-7200,True,False,['Makefile'],['88cc6ca416cb7fd582a5e856c12da17f1a1bbd73'],3,3,6,1,,,
+e64d6d757b729439e46587964e73efa3220addd2,Add settings for codecov,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-02-22 18:21:20+02:00,-7200,2021-02-22 18:21:20+02:00,-7200,True,False,"['ci.yml', 'code.yml', 'README.md', 'codecov.yml', 'version.py']",['50002ed3479fa0a84978ec0232a85cca8e5a041b'],2,31,33,5,,,
+b6f49c7a3f56333f644f5433cc0dd06fa77cf87a,Add command for check code quality,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-03-04 18:40:12+02:00,-7200,2021-03-04 18:40:12+02:00,-7200,True,False,"['ci.yml', 'code.yml', 'Makefile']",['e64d6d757b729439e46587964e73efa3220addd2'],4,18,22,3,,,
+23dc104e5a01a3708f81d688c367791b3fc9494f,"Bump cryptography from 3.4.6 to 3.4.7 (#8)
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 3.4.6 to 3.4.7.
+- [Release notes](https://github.com/pyca/cryptography/releases)
+- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/3.4.6...3.4.7)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-05 12:38:14+03:00,-10800,2021-04-05 12:38:14+03:00,-10800,True,False,['setup.py'],['b6f49c7a3f56333f644f5433cc0dd06fa77cf87a'],1,1,2,1,,,
+3295d8f3319f818311ba9be04dea029b759827d6,Bump version,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-04-05 12:38:57+03:00,-10800,2021-04-05 12:38:57+03:00,-10800,True,False,['version.py'],['23dc104e5a01a3708f81d688c367791b3fc9494f'],1,1,2,1,,,
+a6617633506da898d5b14c0c9c44901ec3e84c3c,Relax reqs version,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2021-07-26 12:44:26+03:00,-10800,2021-07-26 12:44:26+03:00,-10800,True,False,"['version.py', 'setup.py']",['3295d8f3319f818311ba9be04dea029b759827d6'],2,2,4,2,,,
+71066b6389fbbc23c6cb27f54e35d6638cf6d4a4,Update pipeline,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2023-08-03 08:48:22-03:00,10800,2023-08-03 08:48:22-03:00,10800,True,False,"['ci.yml', 'code.yml', 'setup.py']",['a6617633506da898d5b14c0c9c44901ec3e84c3c'],5,13,18,3,,,
+f5eed23967ee4815355af17250ea126c9f92c800,Update version,Pavel Liashkov,pavel.liashkov@protonmail.com,Pavel Liashkov,pavel.liashkov@protonmail.com,2023-08-03 08:51:35-03:00,10800,2023-08-03 08:51:35-03:00,10800,True,False,['version.py'],['71066b6389fbbc23c6cb27f54e35d6638cf6d4a4'],1,1,2,1,,,

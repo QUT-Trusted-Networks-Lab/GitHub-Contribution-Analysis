@@ -1,0 +1,121 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+61cf8cac969f5c053027663a7540c7d497dfd56c,"Initial commit
+
+.gitignore for Python",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-24 17:50:09+02:00,-7200,2020-08-24 17:50:09+02:00,-7200,True,False,['.gitignore'],[],0,138,138,1,,,
+766073f4733d4a14a6e0990dafcce5fe4a00edbc,Adds empty readme and license,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-24 18:50:14+02:00,-7200,2020-08-24 18:50:14+02:00,-7200,True,False,"['LICENSE', 'README.md']",['61cf8cac969f5c053027663a7540c7d497dfd56c'],0,8,8,2,,,
+2d868018c11c74a306ba83120766a404d68256d5,Adds a parser for a single arxiv mail entry,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-24 19:09:06+02:00,-7200,2020-08-24 19:09:06+02:00,-7200,True,False,"['__init__.py', 'entry.py']",['766073f4733d4a14a6e0990dafcce5fe4a00edbc'],0,123,123,2,0.35,0.6,1.0
+89d10cab2ab5197b47a45748999965ae3a90b059,Adds a parser for a full arxiv daily email,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-24 19:09:49+02:00,-7200,2020-08-24 19:09:49+02:00,-7200,True,False,"['__init__.py', 'parser.py']",['2d868018c11c74a306ba83120766a404d68256d5'],0,56,56,2,1.0,1.0,1.0
+e7bd45947c1bdc76fc540f528afcce160288af99,Adds a QThread wrapper around the arxiv parser,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-24 19:10:44+02:00,-7200,2020-08-24 19:10:44+02:00,-7200,True,False,"['ParserThread.py', '__init__.py']",['89d10cab2ab5197b47a45748999965ae3a90b059'],0,29,29,2,1.0,1.0,0.7333333333333333
+92a3f89693102e3556b78164434c723760aa22f5,"Adds a simple proof of concept UI
+
+- Supports drag and drop of EMail text
+- Supports parsing of the Arxiv email text
+- Presents all email entries in a table",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-24 19:11:12+02:00,-7200,2020-08-24 19:11:12+02:00,-7200,True,False,"['ArxivFilter.py', 'ArxivFilter.py', 'ListView.py', '__init__.py']",['e7bd45947c1bdc76fc540f528afcce160288af99'],0,129,129,4,0.7681159420289855,1.0,0.8695652173913043
+0d548a09c4368211b565c2a11bdbf3b43ea13214,Small extension to the README,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-24 19:13:22+02:00,-7200,2020-08-24 19:13:22+02:00,-7200,True,False,['README.md'],['92a3f89693102e3556b78164434c723760aa22f5'],0,12,12,1,,,
+307c01ea8ab470f49f01a203453f98af9b01cc04,Rewrote part of the UI to get away from table widget,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-24 20:57:06+02:00,-7200,2020-08-24 20:57:06+02:00,-7200,True,False,"['ArxivFilter.py', 'ListEntry.py', 'ListView.py', '__init__.py']",['0d548a09c4368211b565c2a11bdbf3b43ea13214'],21,153,174,4,0.6029411764705882,1.0,0.9264705882352942
+49ab27b842f21221ba7b7b4def3955bec1283566,Adds a config yaml loader,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 15:51:06+02:00,-7200,2020-08-25 15:51:57+02:00,-7200,True,False,"['README.md', 'DefinitionLoader.py', '__init__.py']",['307c01ea8ab470f49f01a203453f98af9b01cc04'],0,39,39,3,1.0,1.0,1.0
+c7a9c4b8a39e6ff636cddc5fd0545ab0d25cb899,Integrates config file loading into main program,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 15:52:13+02:00,-7200,2020-08-25 15:52:13+02:00,-7200,True,False,"['ArxivFilter.py', 'ArxivFilter.py']",['49ab27b842f21221ba7b7b4def3955bec1283566'],6,40,46,2,0.09523809523809523,1.0,1.0
+a5470a0318519e93e012fefe3f83e82ec5588bf4,Adds content to fold up list entries,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 15:53:36+02:00,-7200,2020-08-25 15:53:36+02:00,-7200,True,False,['ListEntry.py'],['c7a9c4b8a39e6ff636cddc5fd0545ab0d25cb899'],4,28,32,1,0.0,1.0,1.0
+0051ed8d0420c172a31b0453bf7677c82239b573,Restyles the list entries,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 16:12:53+02:00,-7200,2020-08-25 16:12:53+02:00,-7200,True,False,['ListEntry.py'],['a5470a0318519e93e012fefe3f83e82ec5588bf4'],1,5,6,1,0.0,1.0,1.0
+8d3bea4e40ad6b54b440820852b406f909785fc0,Adds author parsing for each entry,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 16:25:42+02:00,-7200,2020-08-25 16:25:42+02:00,-7200,True,False,['entry.py'],['0051ed8d0420c172a31b0453bf7677c82239b573'],4,32,36,1,1.0,0.0,1.0
+c3d051899b474d33014c9f6f5786115492f34715,Adds Collaboration to the ListEntry view,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 16:26:07+02:00,-7200,2020-08-25 16:26:07+02:00,-7200,True,False,['ListEntry.py'],['8d3bea4e40ad6b54b440820852b406f909785fc0'],1,7,8,1,0.0,1.0,1.0
+7b196376f4ee1ac300e06728199b202bd26012ae,"Fixes bug in ListView clear
+
+Without setting parent to None, the widgets are not actually removed.",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 16:26:28+02:00,-7200,2020-08-25 16:26:28+02:00,-7200,True,False,['ListView.py'],['c3d051899b474d33014c9f6f5786115492f34715'],0,1,1,1,1.0,1.0,1.0
+02bfaa692e763245f085c62459aa4ea8d5a0782e,Removes empty authors from list,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 16:30:05+02:00,-7200,2020-08-25 16:30:05+02:00,-7200,True,False,['entry.py'],['7b196376f4ee1ac300e06728199b202bd26012ae'],1,1,2,1,,,
+7c399bbe38047364ff68793c844920ab2530b55b,Adds a filter class for scoring entries,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 17:14:54+02:00,-7200,2020-08-25 17:14:54+02:00,-7200,True,False,"['__init__.py', 'filter.py', 'scored_entry.py']",['02bfaa692e763245f085c62459aa4ea8d5a0782e'],0,119,119,3,0.6153846153846154,0.6153846153846154,0.7435897435897436
+f393498e0e1c2a43f5ddc79f7cca96b5c2b0db11,Integrates the filter into the workflow,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 17:15:46+02:00,-7200,2020-08-25 17:15:46+02:00,-7200,True,False,"['ArxivFilter.py', 'ListEntry.py']",['7c399bbe38047364ff68793c844920ab2530b55b'],7,22,29,2,0.9,1.0,1.0
+2d8b5becd5021d58f9e539fe75ce12d5211b4b95,Sorts filtered entries by score decreasing,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 18:08:55+02:00,-7200,2020-08-25 18:08:55+02:00,-7200,True,False,['ListView.py'],['f393498e0e1c2a43f5ddc79f7cca96b5c2b0db11'],1,9,10,1,1.0,1.0,1.0
+c8271cad4d8c8615622ddaf7092e0e0614d0e182,Renames the hit entries,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 18:09:38+02:00,-7200,2020-08-25 18:09:38+02:00,-7200,True,False,"['filter.py', 'scored_entry.py']",['2d8b5becd5021d58f9e539fe75ce12d5211b4b95'],5,7,12,2,,,
+3332ac81852e43fa6c3a221d48d85d3816c8d04e,"Fixes bug in config loading
+
+Now also properly expands ~",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 18:09:54+02:00,-7200,2020-08-25 18:09:54+02:00,-7200,True,False,['DefinitionLoader.py'],['c8271cad4d8c8615622ddaf7092e0e0614d0e182'],3,4,7,1,1.0,1.0,1.0
+49d80ee3a284d47276cfb8711856f36b3baff0e7,Adds additional spacing in main window,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 18:10:29+02:00,-7200,2020-08-25 18:10:29+02:00,-7200,True,False,['ArxivFilter.py'],['3332ac81852e43fa6c3a221d48d85d3816c8d04e'],0,2,2,1,0.0,1.0,1.0
+133c2e1972688f8bf3f0848be140733880243059,Adds background color indicating score,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 18:11:30+02:00,-7200,2020-08-25 18:11:30+02:00,-7200,True,False,['ListEntry.py'],['49d80ee3a284d47276cfb8711856f36b3baff0e7'],1,8,9,1,0.0,1.0,1.0
+1cbba7fc633ce5baa43225da933e6838e7f48327,Adds matched fields and score,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 18:11:51+02:00,-7200,2020-08-25 18:11:51+02:00,-7200,True,False,['ListEntry.py'],['133c2e1972688f8bf3f0848be140733880243059'],1,2,3,1,0.0,0.0,1.0
+ac0ee32c092a2cc64ffd5b975e740771a67a2d2f,Fixes a typo,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-25 18:18:00+02:00,-7200,2020-08-25 18:18:00+02:00,-7200,True,False,['ArxivFilter.py'],['1cbba7fc633ce5baa43225da933e6838e7f48327'],1,1,2,1,,,
+667b2797ef979623a562a5b1a8fb8591525a724a,Fixex bug in list matching (breaking Author match),Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-08-31 19:04:36+02:00,-7200,2020-08-31 19:04:36+02:00,-7200,True,False,['filter.py'],['ac0ee32c092a2cc64ffd5b975e740771a67a2d2f'],1,1,2,1,,,
+a044eb58b2f3ba769a1b8fc8984f9319073c029d,Fixes typo,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-22 10:01:10+02:00,-7200,2020-10-22 10:01:10+02:00,-7200,True,False,['filter.py'],['667b2797ef979623a562a5b1a8fb8591525a724a'],1,1,2,1,,,
+87ec14b7c504a5fa24023ce81f055b395c365819,Enables Pasting of E-Mail text with Ctrl-V,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-22 10:12:06+02:00,-7200,2020-10-22 10:12:06+02:00,-7200,True,False,['ArxivFilter.py'],['a044eb58b2f3ba769a1b8fc8984f9319073c029d'],0,15,15,1,0.7142857142857143,1.0,1.0
+21ba8070e5a732c987fc222fb42104e38c540561,Show a usage hint after start-up,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-22 10:34:19+02:00,-7200,2020-10-22 10:34:19+02:00,-7200,True,False,['ArxivFilter.py'],['87ec14b7c504a5fa24023ce81f055b395c365819'],11,25,36,1,0.0,1.0,1.0
+ff3b74a86c9d81585b88f6f7cb9999fcccf88f74,Makes package more pythonic,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-26 10:31:16+01:00,-3600,2020-10-26 10:35:17+01:00,-3600,True,False,"['README.md', '__init__.py', '__main__.py']",['21ba8070e5a732c987fc222fb42104e38c540561'],1,1,2,3,,,
+b8f9dd14eb40ab8e434bebfeabd5585e82785c71,Adds version number to __init__,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-26 10:35:25+01:00,-3600,2020-10-26 10:35:25+01:00,-3600,True,False,['__init__.py'],['ff3b74a86c9d81585b88f6f7cb9999fcccf88f74'],0,2,2,1,,,
+9fc55384a388bae2781414167237cfc9f8d34941,Fixes import bug,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-26 11:11:51+01:00,-3600,2020-10-26 11:11:51+01:00,-3600,True,False,['__main__.py'],['b8f9dd14eb40ab8e434bebfeabd5585e82785c71'],1,1,2,1,,,
+97ec2baba0f4f4fb6dd743b6524a4a54173a119a,Bumps version to 0.3 for official pip release,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-26 11:12:04+01:00,-3600,2020-10-26 11:12:04+01:00,-3600,True,False,"['__init__.py', 'setup.py']",['9fc55384a388bae2781414167237cfc9f8d34941'],1,35,36,2,,,
+c6a3d4e5cdd8e7c0de7d178410d9a91399971aeb,"Properly fixes the pip install bug
+
+After pip install, the package would not run, saying it can not import
+ui.
+This was, because the sub-packages of arxiv_filter were not added to the
+setup.py.
+
+Fixed by now using find_packages() of setuptools",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-26 11:26:39+01:00,-3600,2020-10-26 11:26:39+01:00,-3600,True,False,"['__init__.py', '__main__.py', 'setup.py']",['97ec2baba0f4f4fb6dd743b6524a4a54173a119a'],5,5,10,3,,,
+01844ad267a14c9dced477b09968882bceee035b,"Fixes parsing when copy-paste from thunderbird
+
+Fixes #2
+
+When doing a copy-paste of the E-Mail text from thunderbird under linux,
+the line endings are \r\n instead of \n.
+When drag-n-dropping from the same thunderbird client, the line endings
+are \n.
+
+This bug fix unifies the line-ending, before parsing. Therefore removing
+any issue that might have also occured on a windows computer.",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-30 11:20:30+01:00,-3600,2020-10-30 11:20:30+01:00,-3600,True,False,['parser.py'],['c6a3d4e5cdd8e7c0de7d178410d9a91399971aeb'],0,5,5,1,1.0,1.0,1.0
+1cec98e56d13a1daf9740e78a456b06772b3da6b,"Removes erroneous print statement
+
+Left over from last debugging.",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-30 11:22:53+01:00,-3600,2020-10-30 11:22:53+01:00,-3600,True,False,['parser.py'],['01844ad267a14c9dced477b09968882bceee035b'],1,0,1,1,0.0,0.0,0.0
+118a8fa7d303fd43285ab411a6e5392637822d52,"Extends the readme
+
+- Added details about usage and the config file.",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-30 13:07:38+01:00,-3600,2020-10-30 13:07:38+01:00,-3600,True,False,"['README.md', 'WindowDetails.png', 'WindowEmpty.png', 'WindowFiltered.png']",['1cec98e56d13a1daf9740e78a456b06772b3da6b'],4,126,130,4,,,
+83582748590eb9d6457ab55c9201106ac77f52b5,"Adds example of arXiv E-Mail
+
+Also fixes other typos and makes some further improvements to README
+
+Fixes #1",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-30 13:21:17+01:00,-3600,2020-10-30 13:21:17+01:00,-3600,True,False,"['README.md', 'ArxivEmail.png']",['118a8fa7d303fd43285ab411a6e5392637822d52'],11,27,38,2,,,
+2e65235380ee733d40804de4d47375770d91a7ae,Bump the version number to 0.3.2,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-30 13:22:57+01:00,-3600,2020-10-30 13:22:57+01:00,-3600,True,False,"['__init__.py', 'setup.py']",['83582748590eb9d6457ab55c9201106ac77f52b5'],2,2,4,2,,,
+60bf91ab371454d2dc4594039807a110cbe45c56,"Changes to hard linking images to GITHUB
+
+This allows the images to be also shown on the pypi README page.",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-30 13:25:43+01:00,-3600,2020-10-30 13:25:43+01:00,-3600,True,False,['README.md'],['2e65235380ee733d40804de4d47375770d91a7ae'],4,4,8,1,,,
+c42f28bd41a7615454e9defc518a6b992b414d40,"Fixes the GITHUB image links
+
+Need to link to the ""raw"" image instead of the github image page.",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-30 13:29:45+01:00,-3600,2020-10-30 13:29:45+01:00,-3600,True,False,['README.md'],['60bf91ab371454d2dc4594039807a110cbe45c56'],4,4,8,1,,,
+8490361720f067cb501903b7a1dd938e6289bdc1,Bumps version to 0.3.3 for release fix on pypi,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2020-10-30 13:31:44+01:00,-3600,2020-10-30 13:31:44+01:00,-3600,True,False,"['__init__.py', 'setup.py']",['c42f28bd41a7615454e9defc518a6b992b414d40'],2,2,4,2,,,
+cfe318ad48d96f94a09cbbef811ca70f684da954,Do not abort when the footer of the E-Mail is missing!,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2023-08-30 10:23:08+02:00,-7200,2023-08-30 10:23:08+02:00,-7200,True,False,['parser.py'],['8490361720f067cb501903b7a1dd938e6289bdc1'],4,3,7,1,0.0,0.0,0.0
+4f52a602e06960fb4ffc9a1f24f0935054c2e8a5,"Refactor for better footer handling
+
+- Also properly parse cases where the footer is only the FOOTER_DIVIDER,
+  without any additional lines afterwards.",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2023-08-30 12:15:10+02:00,-7200,2023-08-30 12:15:10+02:00,-7200,True,False,['parser.py'],['cfe318ad48d96f94a09cbbef811ca70f684da954'],4,5,9,1,1.0,1.0,1.0
+5e48244e7e9dae6d1aea82f1a0a937fe51872d3e,Bumps version to 0.3.4 for release fix on pypi,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2023-08-30 12:33:43+02:00,-7200,2023-08-30 12:33:43+02:00,-7200,True,False,"['__init__.py', 'setup.py']",['4f52a602e06960fb4ffc9a1f24f0935054c2e8a5'],2,2,4,2,,,
+86a79ebe13f22e0dc48a6e992d720493748b3f46,"Fix parsing of meta-data on multiple lines
+
+- In certain cases the continuing lines start with a single space
+  instead of a double space -> Support this.",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2023-08-30 14:26:51+02:00,-7200,2023-08-30 14:26:51+02:00,-7200,True,False,['entry.py'],['5e48244e7e9dae6d1aea82f1a0a937fe51872d3e'],2,3,5,1,0.0,0.0,1.0
+1d806400bbc03e005916fb49a7d49b73c576898e,Bumps version to 0.3.5 for release fix on pypi,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2023-08-30 14:31:10+02:00,-7200,2023-08-30 14:31:10+02:00,-7200,True,False,"['__init__.py', 'setup.py']",['86a79ebe13f22e0dc48a6e992d720493748b3f46'],2,2,4,2,,,
+638cd3f8bbe4b6198623ccbffa39e6223e3b1b60,"Implements highlighting of matches in title and abstract
+
+- The parts of the title which are matched are highlighted with an
+  underline.
+- The parts of the abstract which are matched are highlighted in bold.
+
+The sanitizing function had to be changed, in order to allow to go back
+from a match in the sanitized string to the corresponding match in the
+original string.",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2023-08-31 15:23:36+02:00,-7200,2023-08-31 15:23:36+02:00,-7200,True,False,"['filter.py', 'scored_entry.py', 'ListEntry.py']",['1d806400bbc03e005916fb49a7d49b73c576898e'],15,51,66,3,0.0,0.7241379310344828,0.10344827586206896
+eb946b08fee6697a3adff53d5f114a5e8bcb3290,Fixes missing sanitizing of paper title,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2023-09-06 11:09:46+02:00,-7200,2023-09-06 11:09:46+02:00,-7200,True,False,['entry.py'],['638cd3f8bbe4b6198623ccbffa39e6223e3b1b60'],1,1,2,1,,,
+486dfaa9c5f26ad21b56df2d1336918e957fdd12,Split authors also on ' and ' in general,Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2023-09-07 10:24:08+02:00,-7200,2023-09-07 10:24:08+02:00,-7200,True,False,['entry.py'],['eb946b08fee6697a3adff53d5f114a5e8bcb3290'],5,2,7,1,0.0,1.0,0.0
+32e0a771a89fd72eeb856b63711b09bd7316175c,"Explicitely sets the locale to 'C' for parsing
+
+- Other wise dates are parsed incorrectly when the locale is not set to
+  english on the operating system.
+
+Fixes #12",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2023-11-20 18:10:01+01:00,-3600,2023-11-20 18:10:01+01:00,-3600,True,False,['parser.py'],['486dfaa9c5f26ad21b56df2d1336918e957fdd12'],0,7,7,1,0.0,1.0,1.0
+936971127802f63c61b112e71cd22beb1514c09c,"Fixes wrong value for setStretch
+
+- setStrech factor should be an int
+- In Qt6, there is actual type checking in python, and setting the value
+  0.01 (float) leads to an exception.
+- Setting 0 instead of 0.01 one would expect the same behaviour as
+  before, as the 0.01 internally of QT would have anyway been casted to
+  int (and thus to 0).
+
+Should fix #11",Johannes Wüthrich,johannes@deragent.net,Johannes Wüthrich,johannes@deragent.net,2023-11-20 18:16:48+01:00,-3600,2023-11-20 18:16:48+01:00,-3600,True,False,['ListEntry.py'],['32e0a771a89fd72eeb856b63711b09bd7316175c'],2,2,4,1,,,
+d4346d48a99961697773c78f7132f559d78297c3,Allow negative scores in overall score total,Augusto Modanese,augusto.modanese@aalto.fi,Augusto Modanese,augusto.modanese@aalto.fi,2023-11-21 14:23:55+02:00,-7200,2023-11-21 14:23:55+02:00,-7200,True,False,['filter.py'],['936971127802f63c61b112e71cd22beb1514c09c'],5,5,10,1,,,

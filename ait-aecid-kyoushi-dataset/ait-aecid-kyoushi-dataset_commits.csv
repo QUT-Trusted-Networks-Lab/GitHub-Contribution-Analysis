@@ -1,0 +1,196 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+9982aa426e6ccb51ca136b437de2ea33abe8029a,Initial commit,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-30 21:13:50+02:00,-7200,2021-03-30 21:17:02+02:00,-7200,True,False,"['.coverage', '.coveragerc', '.flake8', '.gitignore', '.gitlab-ci.yml', '.pre-commit-config.yaml', 'CONTRIBUTING.md', 'LICENSE', 'Makefile', 'README.md', 'contributing.md', 'cr_icon.svg', 'cr_logo.svg', 'developed_by.svg', 'favicon.ico', 'index.md', 'jquery-3.5.1.min.js', 'jquery.fancybox.min.js', 'license.md', 'extra.css', 'jquery.fancybox.min.css', 'mkdocs.yml', 'mypy.ini', 'poetry.lock', 'pyproject.toml', '__init__.py', 'test.py', '__init__.py', 'test_placeholder.py']",[],0,2360,2360,29,0.9127725856697819,0.7725856697819314,0.9158878504672897
+b4952bdab576dc6e6713eba7fdc1e1cb34afa5e3,Remove poetry log from git,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-30 21:20:06+02:00,-7200,2021-03-30 21:20:06+02:00,-7200,True,False,['poetry.lock'],['9982aa426e6ccb51ca136b437de2ea33abe8029a'],1453,0,1453,1,,,
+fc101838f1e9591d9d6a682a84fb300da9ee4493,Add basic project dependencies,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-30 21:33:43+02:00,-7200,2021-03-30 21:33:43+02:00,-7200,True,False,['pyproject.toml'],['b4952bdab576dc6e6713eba7fdc1e1cb34afa5e3'],0,6,6,1,,,
+6214bc7dc83af57f8c3b5f8ed47b523a950fc398,Remove coverage file from git,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-30 22:30:40+02:00,-7200,2021-03-30 22:30:40+02:00,-7200,True,False,['.coverage'],['fc101838f1e9591d9d6a682a84fb300da9ee4493'],0,0,0,1,,,
+fe63b3ea1b50800f0f04e30dd2fddc96e2d0a1db,Add config file loading util functions,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-30 22:31:05+02:00,-7200,2021-03-30 22:31:05+02:00,-7200,True,False,"['utils.py', 'test.json', 'test.yaml', 'test.yml', 'test_file_loader.py']",['6214bc7dc83af57f8c3b5f8ed47b523a950fc398'],0,128,128,5,1.0,1.0,1.0
+12339684f705f0fe28a5c970911f6fae5ae9a997,Add certifi dependency,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-30 23:16:07+02:00,-7200,2021-03-30 23:16:07+02:00,-7200,True,False,['pyproject.toml'],['fe63b3ea1b50800f0f04e30dd2fddc96e2d0a1db'],0,1,1,1,,,
+bc8645a675e987f9ecf1eaf5853cd204a251c53f,Remove the test py from git,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-31 14:36:39+02:00,-7200,2021-03-31 14:36:46+02:00,-7200,True,False,['test.py'],['12339684f705f0fe28a5c970911f6fae5ae9a997'],83,0,83,1,1.0,0.0,0.0
+7fb1f84a459fcb6e8e379aa7b7143682aaed393b,Add basic structure for loading processors,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-31 16:27:24+02:00,-7200,2021-03-31 16:27:24+02:00,-7200,True,False,"['processors.py', 'templates.py']",['bc8645a675e987f9ecf1eaf5853cd204a251c53f'],0,318,318,2,0.6090909090909091,0.8,0.43636363636363634
+55f2614dbdd56330a6deaa8e38c22784156f76ff,Refactor template logic and fix copy issue in foreach,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-31 17:06:44+02:00,-7200,2021-03-31 17:06:44+02:00,-7200,True,False,"['processors.py', 'templates.py', 'utils.py']",['7fb1f84a459fcb6e8e379aa7b7143682aaed393b'],33,62,95,3,1.0,1.0,0.20833333333333334
+e760e68a316e1838f7d8d63d2cf62c9c6e99cf25,Add cli entrypoint,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-31 17:33:57+02:00,-7200,2021-03-31 17:33:57+02:00,-7200,True,False,"['pyproject.toml', '__main__.py', 'cli.py']",['55f2614dbdd56330a6deaa8e38c22784156f76ff'],0,38,38,3,1.0,1.0,0.6
+696eeb9d6b401e211a7368d7b67633c671ed4d28,Add basic cli commands,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-03-31 22:00:57+02:00,-7200,2021-03-31 22:00:57+02:00,-7200,True,False,"['__init__.py', 'cli.py', 'utils.py']",['e760e68a316e1838f7d8d63d2cf62c9c6e99cf25'],2,140,142,3,0.24,1.0,0.54
+cfba9fcdf17ab8477589f1ac436a9160d02e748c,Add config models and dataset config creating,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-01 13:53:25+02:00,-7200,2021-04-01 13:53:25+02:00,-7200,True,False,"['__init__.py', 'cli.py', 'config.py', 'processors.py', 'utils.py']",['696eeb9d6b401e211a7368d7b67633c671ed4d28'],12,161,173,5,0.45652173913043476,0.021739130434782608,0.2826086956521739
+d690fcd8dab6e7dfdde8059f005503e298612838,Add basic processing logic,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-01 17:52:35+02:00,-7200,2021-04-01 17:52:35+02:00,-7200,True,False,"['__init__.py', 'cli.py', 'config.py', 'processors.py', 'templates.py', 'utils.py']",['cfba9fcdf17ab8477589f1ac436a9160d02e748c'],33,145,178,6,0.28,1.0,0.92
+863b5356b3d6c4285795ecc0e2c510825b26bc7e,Remove distinction between pre and post processors,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-01 18:08:42+02:00,-7200,2021-04-01 18:08:42+02:00,-7200,True,False,"['processors.py', 'utils.py']",['d690fcd8dab6e7dfdde8059f005503e298612838'],32,20,52,2,0.0,0.0,0.0
+ffb11fa690cc71505a84845e358baef4610cd5a3,Do not pre-render processors,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-01 18:19:51+02:00,-7200,2021-04-01 18:19:51+02:00,-7200,True,False,"['cli.py', 'processors.py']",['863b5356b3d6c4285795ecc0e2c510825b26bc7e'],25,8,33,2,1.0,0.0,0.0
+6474ff557c71896060d87255b95976fe07f13bac,Add gzip processor,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-01 19:07:34+02:00,-7200,2021-04-01 19:07:34+02:00,-7200,True,False,['processors.py'],['ffb11fa690cc71505a84845e358baef4610cd5a3'],0,27,27,1,1.0,1.0,1.0
+1085d2075ed4c093d6fdfa47a942a75ada932a5c,Add basic logstash setup,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-02 13:45:01+02:00,-7200,2021-04-02 13:45:01+02:00,-7200,True,False,"['cli.py', 'config.py', 'elasticsearch.py', '__init__.py', 'jvm.options', 'log4j2.properties', 'processors.py', 'templates.py', 'input.conf.j2', 'logstash.yml.j2', 'output.conf.j2', 'pipelines.yml.j2', 'utils.py']",['6474ff557c71896060d87255b95976fe07f13bac'],26,946,972,13,0.16883116883116883,1.0,0.0
+88ad3b501245090a3be7323dc906bbc6cdee8b1f,Add pre processing and option for writing parsed logs to file,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-03 15:45:12+02:00,-7200,2021-04-03 15:45:12+02:00,-7200,True,False,"['cli.py', 'config.py', 'processors.py', 'ecs-template.json.j2', 'input.conf.j2', 'output.conf.j2', 'pipelines.yml.j2', 'pre_process.conf.j2']",['1085d2075ed4c093d6fdfa47a942a75ada932a5c'],12,3090,3102,8,0.3333333333333333,1.0,0.19047619047619047
+0376b75a60fecc1a9e924b02bf1343b0f4597c84,Add pcap and elasticsearch template processors,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-04 20:57:35+02:00,-7200,2021-04-04 20:57:35+02:00,-7200,True,False,"['pyproject.toml', 'pcap.py', 'processors.py']",['88ad3b501245090a3be7323dc906bbc6cdee8b1f'],0,240,240,3,0.022988505747126436,0.5172413793103449,0.022988505747126436
+ad0bdcdd9e10dedccfa9aa6bc6dd2ef551f467f3,Add logstash runner and fallback timestamp in pre process,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-04 21:05:53+02:00,-7200,2021-04-04 21:05:53+02:00,-7200,True,False,"['cli.py', 'config.py', 'parser.py', 'processors.py', 'input.conf.j2', 'pre_process.conf.j2']",['0376b75a60fecc1a9e924b02bf1343b0f4597c84'],23,133,156,6,0.7021276595744681,1.0,0.2765957446808511
+48a6a8ab538e76bb332fa5a556e19f5b08eb3529,Add ingest output option and start end globals,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-07 05:04:45+02:00,-7200,2021-04-07 05:04:45+02:00,-7200,True,False,"['output.conf.j2', 'pre_process.conf.j2']",['ad0bdcdd9e10dedccfa9aa6bc6dd2ef551f467f3'],10,37,47,2,,,
+29034581f89d67fe39e1663f0ddd81b21728204f,Add ingest create and trim processors,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-07 05:06:33+02:00,-7200,2021-04-07 05:06:33+02:00,-7200,True,False,"['elasticsearch.py', 'processors.py', 'utils.py']",['48a6a8ab538e76bb332fa5a556e19f5b08eb3529'],1,234,235,3,0.3113207547169811,0.46226415094339623,0.25471698113207547
+c0e7ebaf339c5972246f6105b5ce9ec3068dc9dd,Add ujson and aiohttp dependecies,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-11 04:01:27+02:00,-7200,2021-04-11 04:01:27+02:00,-7200,True,False,['pyproject.toml'],['29034581f89d67fe39e1663f0ddd81b21728204f'],0,2,2,1,,,
+6d286ee3a0af25aa7d523af1c06f2bfa38eb9856,Add pcap remove filtered fields,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-11 04:03:43+02:00,-7200,2021-04-11 04:03:43+02:00,-7200,True,False,['pcap.py'],['c0e7ebaf339c5972246f6105b5ce9ec3068dc9dd'],1,46,47,1,0.10714285714285714,0.10714285714285714,0.8928571428571429
+327f04c7bc9f48f53b9a22636b15102aa7693f92,Add basic label setup and make elasticsearch available in templates,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-11 04:07:06+02:00,-7200,2021-04-11 04:07:06+02:00,-7200,True,False,"['cli.py', 'labels.py', 'processors.py', 'templates.py', 'utils.py']",['6d286ee3a0af25aa7d523af1c06f2bfa38eb9856'],109,759,868,5,0.6996904024767802,0.718266253869969,0.25696594427244585
+25f8f24d3761e8db80ac264d1125de0e40e3ff87,Add fqdn as default input,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-13 02:06:38+02:00,-7200,2021-04-13 02:06:38+02:00,-7200,True,False,['input.conf.j2'],['327f04c7bc9f48f53b9a22636b15102aa7693f92'],0,1,1,1,,,
+fa155cd2e12596883102f494e21c7a5a58398dbb,Add more label logic,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-13 02:18:00+02:00,-7200,2021-04-13 02:18:00+02:00,-7200,True,False,"['cli.py', 'elasticsearch.py', 'labels.py']",['25f8f24d3761e8db80ac264d1125de0e40e3ff87'],33,381,414,3,0.0,0.37058823529411766,0.0
+bd7c9f70130fe4a98994a9287d02787183c85164,Add print to indicate that a file was deleted when trimming,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-14 03:04:09+02:00,-7200,2021-04-14 03:04:09+02:00,-7200,True,False,['processors.py'],['fa155cd2e12596883102f494e21c7a5a58398dbb'],0,3,3,1,0.0,0.0,0.0
+009fddba8485dffdff2db556ae7ef4da53751e78,Add rudimentary sampling functionality,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-15 16:01:01+02:00,-7200,2021-04-15 16:01:01+02:00,-7200,True,False,"['cli.py', 'labels.py', 'sample.py']",['bd7c9f70130fe4a98994a9287d02787183c85164'],1,341,342,3,0.0,0.23404255319148937,0.0
+b43631ebe334211c7af7de3b94cfdad9e6a1c90a,Add more sampling code,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-04-21 11:41:18+02:00,-7200,2021-04-21 11:41:18+02:00,-7200,True,False,"['cli.py', 'labels.py', 'sample.py', 'templates.py']",['009fddba8485dffdff2db556ae7ef4da53751e78'],121,467,588,4,0.010309278350515464,0.010309278350515464,0.2268041237113402
+a9df3db42db70ea2dbb56e1c92430e984ce8813b,Add basic logic for writing label files,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-05-18 21:26:10+02:00,-7200,2021-05-18 21:26:10+02:00,-7200,True,False,"['cli.py', 'labels.py']",['b43631ebe334211c7af7de3b94cfdad9e6a1c90a'],1,73,74,2,0.21153846153846154,0.9038461538461539,0.0
+366af894beaef900747f1b50df872e3649a56802,Add options to exclude files/indices from label writing,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-05-19 10:08:41+02:00,-7200,2021-05-19 10:08:41+02:00,-7200,True,False,"['cli.py', 'labels.py']",['a9df3db42db70ea2dbb56e1c92430e984ce8813b'],10,55,65,2,0.0,0.5652173913043478,0.0
+378971c840dde6261baae75c721319973dc3c0ca,Bump version to 0.1.0,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-06-09 11:16:56+02:00,-7200,2021-06-09 11:16:56+02:00,-7200,True,False,"['pyproject.toml', '__init__.py']",['366af894beaef900747f1b50df872e3649a56802'],2,2,4,2,,,
+c3b96fd30da82c9e04653a2c7a40c2cca66137ca,"Fix docs build with hotfix adding livereload dep
+
+See https://github.com/mkdocstrings/mkdocstrings/issues/295",Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-06-09 12:17:41+02:00,-7200,2021-06-09 12:17:41+02:00,-7200,True,False,"['mkdocs.yml', 'pyproject.toml']",['ca8ce4d74f1d548e700183662a64948a0ed17d38'],0,2,2,2,,,
+d37000179edbffca0f59a78737b90a784580c55d,Disable strict mode for docs,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-06-09 12:35:10+02:00,-7200,2021-06-09 12:35:10+02:00,-7200,True,False,['mkdocs.yml'],['c3b96fd30da82c9e04653a2c7a40c2cca66137ca'],1,1,2,1,,,
+130fa87d3c3fde9e069164fcaeebcdb0358b02d7,"initial ci-setup (#1)
+
+* initial ci-setup
+
+* added quality-checks to ci
+
+* added quality-checks to ci
+
+* added cache for poetry to ci
+
+* added unit-tests to ci
+
+* add unit-tests with python3.8
+
+* renamed test3.7 to test
+
+* added names to github-workflow
+
+* added names to github-workflow
+
+* use ci workflow on all branches
+
+* create initial cd-pipeline
+
+* add gh-pages action to cd-workflow
+
+* add publish to pypi to github-workflow
+
+* fixed issues with pypi-token in poetry for cd-pipe
+
+* hoocked cd.yml to on-release
+
+* Fix mkdocs config and min versions
+
+* temporarily hóoked cd to pull request
+
+* hóoked cd to release
+
+* removed .gitlab-ci
+
+Co-authored-by: Wolfgang Hotwagner <wolfgang.hotwagner@ait.ac.at>
+Co-authored-by: Maximilian Frank <maximilian.frank@ait.ac.at>",whotwagner,ilovemail@feedyourhead.at,GitHub,noreply@github.com,2021-06-24 12:56:53+02:00,-7200,2021-06-24 12:56:53+02:00,-7200,True,False,"['cd.yml', 'ci.yml', '.gitlab-ci.yml', 'mkdocs.yml', 'pyproject.toml']",['d37000179edbffca0f59a78737b90a784580c55d'],123,108,231,5,,,
+812d31d5f8393b55b6a6eb5722c4b72c4aed475d,"renamed python-package (#4)
+
+Co-authored-by: Wolfgang Hotwagner <wolfgang.hotwagner@ait.ac.at>",whotwagner,ilovemail@feedyourhead.at,GitHub,noreply@github.com,2021-06-25 18:09:35+02:00,-7200,2021-06-25 18:09:35+02:00,-7200,True,False,['pyproject.toml'],['130fa87d3c3fde9e069164fcaeebcdb0358b02d7'],2,2,4,1,,,
+c47f527e554b0b499f0482046f786a8c31feb5e4,Update README.md,whotwagner,ilovemail@feedyourhead.at,GitHub,noreply@github.com,2021-06-25 18:11:17+02:00,-7200,2021-06-25 18:11:17+02:00,-7200,True,False,['README.md'],['812d31d5f8393b55b6a6eb5722c4b72c4aed475d'],4,0,4,1,,,
+2749dba6b7231aa42b92c55e7e41eab79d30a274,Update cd.yml,whotwagner,ilovemail@feedyourhead.at,GitHub,noreply@github.com,2021-06-25 18:24:47+02:00,-7200,2021-06-25 18:24:47+02:00,-7200,True,False,['cd.yml'],['c47f527e554b0b499f0482046f786a8c31feb5e4'],2,1,3,1,,,
+9a8779d9ac0bcedb703ab2eb81d8a55e0ba1c74f,renamed job in cd.yml from test to deploy,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,2021-06-25 18:29:50+02:00,-7200,2021-06-25 18:29:50+02:00,-7200,True,False,['cd.yml'],['2749dba6b7231aa42b92c55e7e41eab79d30a274'],1,1,2,1,,,
+80385ae1feec551160b1eb2e27c3c279b671305a,Fix repo and homepage urls in poetry config (#5),Frank Maximilian,1375575+max-frank@users.noreply.github.com,GitHub,noreply@github.com,2021-06-29 13:34:15+02:00,-7200,2021-06-29 13:34:15+02:00,-7200,True,False,['pyproject.toml'],['9a8779d9ac0bcedb703ab2eb81d8a55e0ba1c74f'],2,2,4,1,,,
+1196687f5427374ab185e88aa34aa38df19e3d67,Use keyword id args for elasticsearch api,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-09-28 15:27:21+02:00,-7200,2021-09-28 15:27:21+02:00,-7200,True,False,"['elasticsearch.py', 'labels.py']",['80385ae1feec551160b1eb2e27c3c279b671305a'],5,9,14,2,0.0,1.0,0.0
+83399db49067b61bf3eef313a91b5f35470969a8,Fix entrypoint script python package config,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-09-28 11:25:36+02:00,-7200,2021-09-28 15:47:48+02:00,-7200,True,False,['pyproject.toml'],['b6649b4bb3724dac83cf0485043a2033255a36ab'],1,1,2,1,,,
+a64b0fa7ee8a68a4519f42fdab9f65dfd30adc78,"Add support for complex codec configuration
+
+Logstash supports 2 types of codec configuration
+
+1. just setting the codec name this will result in using the codecs default settings
+2. using a named hash containting the setting values.
+
+The new input template now supports both options, previously only 1. was supported.",Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-09-28 10:47:53+02:00,-7200,2021-09-28 15:55:26+02:00,-7200,True,False,['input.conf.j2'],['6656d5488816f047c3787ae255c9c96d9ee56271'],0,9,9,1,,,
+bc9b0d7eab8cc59f66c6da63ca7cb10f84bd29af,Update logstash log config model to reflect codec change,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-09-28 11:09:29+02:00,-7200,2021-09-28 15:55:26+02:00,-7200,True,False,['config.py'],['a64b0fa7ee8a68a4519f42fdab9f65dfd30adc78'],1,1,2,1,,,
+5c88cddfb9fc39dad5d277dbfa77b74bbeefa050,Reduce complex codec config indent,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-09-28 11:12:45+02:00,-7200,2021-09-28 15:55:26+02:00,-7200,True,False,['input.conf.j2'],['bc9b0d7eab8cc59f66c6da63ca7cb10f84bd29af'],1,1,2,1,,,
+7ca06ea6f636e41961dd3c75e9d7be6255894593,Disable outputing empty line after codec,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-09-28 11:14:04+02:00,-7200,2021-09-28 15:55:26+02:00,-7200,True,False,['input.conf.j2'],['5c88cddfb9fc39dad5d277dbfa77b74bbeefa050'],1,1,2,1,,,
+1e4ecf669cd8f4966fbea1041c541e39456f443a,Fix codec model definition,Maximilian Frank,maximilian.frank@ait.ac.at,Maximilian Frank,maximilian.frank@ait.ac.at,2021-09-28 11:18:30+02:00,-7200,2021-09-28 15:55:26+02:00,-7200,True,False,['config.py'],['7ca06ea6f636e41961dd3c75e9d7be6255894593'],1,1,2,1,,,
+10fb166ab540cc26db9b514c60a5b56561c3b48e,"Fixed Invalid cross-device link error
+
+If the data-dir and /tmp are on different filesystems, the ""process""-run
+will throw the exception ""Invalid cross-device link"". This bug was fixed
+by using shutil.move().",Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,2021-10-11 13:57:59+02:00,-7200,2021-10-11 14:15:30+02:00,-7200,True,False,['utils.py'],['585244b5c86081a13a72edf20e4687989ea6b1b9'],1,1,2,1,,,
+e6e41641af66eae4c7a358eb36f9619e0e08edc2,remove unused variable temp_path,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,2021-10-11 14:20:35+02:00,-7200,2021-10-11 14:20:35+02:00,-7200,True,False,['utils.py'],['10fb166ab540cc26db9b514c60a5b56561c3b48e'],1,0,1,1,0.0,0.0,1.0
+b1389434ec4ec034ba93c0e5f3dfa66513db84ec,Increase JVM heap size settings (#10),Frank Maximilian,1375575+max-frank@users.noreply.github.com,GitHub,noreply@github.com,2021-10-12 16:14:55+02:00,-7200,2021-10-12 16:14:55+02:00,-7200,True,False,['jvm.options'],['9bc150060300500e365c9925e4b0ccec05e1ef7e'],2,2,4,1,,,
+e8c5e0f2d13cd4dd2484c9c762d8583625257a43,Create LICENSE,whotwagner,ilovemail@feedyourhead.at,GitHub,noreply@github.com,2021-11-04 14:52:06+01:00,-3600,2021-11-04 14:52:06+01:00,-3600,True,False,['LICENSE'],['b1389434ec4ec034ba93c0e5f3dfa66513db84ec'],21,674,695,1,,,
+7111d58d5b50f3ce66a553bc033e11e649f09e4a,"Add more python doc and basic mkdocs (#11)
+
+* Add module descriptions
+
+* Add config module description
+
+* Remove unused class ObservationConfig
+
+* Add class docs for config module
+
+* Split long lines and rename `v` arg to `val`
+
+* Add function docs for elasticsearch util funcs
+
+* Remove unnecessary else
+
+* Add python doc for labels module
+
+* Make pylint happier with labels module
+
+* Add python doc for parser module
+
+* Add missing doc for tshark filtered removal
+
+* Add python doc for processor module
+
+* Add sample module python doc
+
+* Add python doc to templates module
+
+* Add python doc for utils module
+
+* Add mkdocs python API references
+
+* Update min mkdocs-click version
+
+* Add mkdocs CLI reference",Frank Maximilian,1375575+max-frank@users.noreply.github.com,GitHub,noreply@github.com,2021-11-10 10:33:42+01:00,-3600,2021-11-10 10:33:42+01:00,-3600,True,False,"['config.md', 'elasticsearch.md', 'labels.md', 'parser.md', 'pcap.md', 'processors.md', 'sample.md', 'templates.md', 'utils.md', 'cli.md', 'mkdocs.yml', 'pyproject.toml', '__main__.py', 'cli.py', 'config.py', 'elasticsearch.py', 'labels.py', 'parser.py', 'pcap.py', 'processors.py', 'sample.py', 'templates.py', 'utils.py']",['e8c5e0f2d13cd4dd2484c9c762d8583625257a43'],108,1792,1900,23,0.0,0.780905752753978,0.2607099143206854
+04a0da9ddead6ad38256d740397632cb9475d705,"Add more mkdocs doc (#12)
+
+* Move cli reference to top level to toc
+
+* Add strut for getting started doc
+
+* Update mkdocs structure and add rules page
+
+* Add processors overview to mkdocs
+
+* Highlight processor layer in system image
+
+* Activate git lfs
+
+* Add prepare command demo gif
+
+* Add basic getting started format
+
+* Add first sections of process doc
+
+* Upgrade mkdocstrings version
+
+* Add initial example processing doc
+
+* Extend process doc and simplify example files
+
+* Finalize process doc
+
+* Add basic sample command doc
+
+* Rename url macro and extend sample doc a bit
+
+* Add basic labeling doc
+
+* Improve example processing layout",Frank Maximilian,1375575+max-frank@users.noreply.github.com,GitHub,noreply@github.com,2021-11-11 13:02:45+01:00,-3600,2021-11-11 13:02:45+01:00,-3600,True,False,"['.gitattributes', 'cli.md', 'process.md', 'intro.md', 'label.md', 'prepare.md', 'process.md', 'sample.md', 'prepare-demo.gif', 'system.png', 'processors.md', 'rules.md', 'attack_queries.yaml', 'logs.yaml', 'auditd-ingest.yml', '0000_pre_process.conf', 'input.conf', 'openvpn.conf', 'output.conf', '.gitkeep', 'jvm.options', '.gitkeep', 'log4j2.properties', 'logstash.yml', 'openvpn-index-template.json', 'pipelines.yml', 'process.yaml', 'attacker.yaml.j2', 'escalate.yaml.j2', 'foothold.yaml.j2', 'groups.json.j2', 'openvpn.yaml.j2', 'servers.json.j2', 'mkdocs.yml', 'pyproject.toml']",['7111d58d5b50f3ce66a553bc033e11e649f09e4a'],3,4549,4552,35,,,
+06deff17e42dab03f5121ace37e6a3b9572abf69,Upgrade ujson and mypy dependencies,Maximilian Frank,maximilian.frank@ait.ac.at,whotwagner,ilovemail@feedyourhead.at,2021-11-11 11:07:00+01:00,-3600,2021-11-11 13:15:52+01:00,-3600,True,False,['pyproject.toml'],['04a0da9ddead6ad38256d740397632cb9475d705'],2,3,5,1,,,
+ad7c19cf403aa15a866844659a6a2aaa779cb473,"Add modern index and component template processors
+
+Also renames old processor to legacy processor.",Maximilian Frank,maximilian.frank@ait.ac.at,whotwagner,ilovemail@feedyourhead.at,2021-11-11 11:08:58+01:00,-3600,2021-11-11 13:15:52+01:00,-3600,True,False,['processors.py'],['06deff17e42dab03f5121ace37e6a3b9572abf69'],1,159,160,1,0.0,1.0,0.0
+33a8377e38aa1bb61705541af5364c9b6cac1ebe,Make modern templates default for setup processor and back comp option,Maximilian Frank,maximilian.frank@ait.ac.at,whotwagner,ilovemail@feedyourhead.at,2021-11-11 11:34:04+01:00,-3600,2021-11-11 13:15:52+01:00,-3600,True,False,"['processors.py', 'ecs-template.json.j2', 'legacy-ecs-template.json.j2', 'output.conf.j2']",['ad7c19cf403aa15a866844659a6a2aaa779cb473'],2725,5707,8432,4,0.0,1.0,0.0
+407c134255528b059f6e586f7e428368e3356be4,improved github-workflow,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,2021-11-11 13:19:43+01:00,-3600,2021-11-11 13:23:02+01:00,-3600,True,False,"['cd.yml', 'docs.yml']",['33a8377e38aa1bb61705541af5364c9b6cac1ebe'],14,50,64,2,,,
+6f36177548570c03adac1aa48a10926e1c5d6461,Bump version to 0.2.0,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,2021-11-11 13:25:12+01:00,-3600,2021-11-11 13:25:12+01:00,-3600,True,False,"['pyproject.toml', '__init__.py']",['407c134255528b059f6e586f7e428368e3356be4'],2,2,4,2,,,
+8dd780f04f5ce94f25a1ac36680325202791398b,Add docs entry for component and legacy index template processors,Maximilian Frank,maximilian.frank@ait.ac.at,whotwagner,ilovemail@feedyourhead.at,2021-11-11 14:36:39+01:00,-3600,2021-11-12 10:32:57+01:00,-3600,True,False,['processors.md'],['6f36177548570c03adac1aa48a10926e1c5d6461'],0,44,44,1,,,
+28b7d331eaffa13357a11652b6cb1d8a44b3be8b,Update README.md,Max Landauer,landauermax@users.noreply.github.com,GitHub,noreply@github.com,2021-12-14 13:02:32+01:00,-3600,2021-12-14 13:02:32+01:00,-3600,True,False,['README.md'],['8dd780f04f5ce94f25a1ac36680325202791398b'],1,1,2,1,,,
+1d1613f191b037bac54f62ab7fcf53526842539a,fix for problems with search.scan(),Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,2021-12-20 09:11:02+00:00,0,2021-12-20 09:11:02+00:00,0,True,False,['labels.py'],['6f36177548570c03adac1aa48a10926e1c5d6461'],2,3,5,1,,,
+8cd65dce86d39e67c3038a853e281210a96a9332,"Fixed errors with non-utf-8 characters in pcap.py
+
+convert_pcap_to_ecs() throws an exception if it reads non-utf-8
+characters. This commit adds a error-handler to TextIOWrapper
+that replaces non-utf-8 chars with ?",Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,Wolfgang Hotwagner,wolfgang.hotwagner@ait.ac.at,2022-01-18 16:59:16+00:00,0,2022-01-18 16:59:16+00:00,0,True,False,['pcap.py'],['ff86f9817e5bc04519424b8ccbab50ed36cb2d72'],1,1,2,1,,,

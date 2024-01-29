@@ -1,0 +1,114 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+66ec3891c9acc373e8d779611bc01f80b39bb56d,Basic README to set the foundation,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-14 15:43:26+00:00,0,2021-11-14 15:43:26+00:00,0,True,False,['README.md'],[],0,11,11,1,,,
+f295d616904614926414c7415d18c1d3758819f6,Poetry init,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-14 15:44:49+00:00,0,2021-11-14 15:44:49+00:00,0,True,False,['pyproject.toml'],['66ec3891c9acc373e8d779611bc01f80b39bb56d'],0,15,15,1,,,
+c440210b9504629308555f80dc4c27a7d4960e39,Start building out structure,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-14 21:12:33+00:00,0,2021-11-14 21:12:33+00:00,0,True,False,"['main.py', 'poetry.lock', 'pyproject.toml']",['f295d616904614926414c7415d18c1d3758819f6'],0,377,377,3,,,
+654eceeb9bdcaba274eaf0efefc3a14348b01264,Add linting,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-19 16:54:57+00:00,0,2021-11-19 16:54:57+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['c440210b9504629308555f80dc4c27a7d4960e39'],1,42,43,2,,,
+22cfda114f758cc6f7226e73a0849ed1efda19a3,Basic functionality,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-19 16:55:35+00:00,0,2021-11-19 16:55:35+00:00,0,True,False,['main.py'],['654eceeb9bdcaba274eaf0efefc3a14348b01264'],18,81,99,1,1.0,1.0,0.0
+c8802f7729dbd61a246cbff804ac8abea1cc2d91,Catch some exceptions,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-19 17:08:00+00:00,0,2021-11-19 17:08:00+00:00,0,True,False,['main.py'],['22cfda114f758cc6f7226e73a0849ed1efda19a3'],8,13,21,1,1.0,1.0,0.0
+3d5cfc52094f3f267a2135d56834243dd8f4e980,Add support for dry-run,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-19 17:08:15+00:00,0,2021-11-19 17:08:15+00:00,0,True,False,['main.py'],['c8802f7729dbd61a246cbff804ac8abea1cc2d91'],4,6,10,1,,,
+93bcfa74dde6a09ec743f4caadd8e08b67785570,Must specify an action,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-19 17:16:37+00:00,0,2021-11-19 17:16:37+00:00,0,True,False,['main.py'],['3d5cfc52094f3f267a2135d56834243dd8f4e980'],5,7,12,1,,,
+aaacba3146f2835a5e0b173626754e63d193cae5,Make deployments toggleable,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-19 17:26:15+00:00,0,2021-11-19 17:26:15+00:00,0,True,False,['main.py'],['93bcfa74dde6a09ec743f4caadd8e08b67785570'],43,48,91,1,,,
+fc4d80f7a68c50d6f0aaa0246b08ce581256dd00,Add support for StatefulSets,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-19 18:04:21+00:00,0,2021-11-19 18:04:21+00:00,0,True,False,['main.py'],['aaacba3146f2835a5e0b173626754e63d193cae5'],49,92,141,1,0.0,1.0,0.5
+e8aa115c8656cfd8f20d410dea1a85c08f7b3298,Neaten,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-19 18:05:44+00:00,0,2021-11-19 18:05:44+00:00,0,True,False,['main.py'],['fc4d80f7a68c50d6f0aaa0246b08ce581256dd00'],4,2,6,1,,,
+c8f82694d5859ee4d6b577b9412651c44b8f1e18,Lint fixes,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-19 18:16:11+00:00,0,2021-11-19 18:16:11+00:00,0,True,False,['main.py'],['e8aa115c8656cfd8f20d410dea1a85c08f7b3298'],32,53,85,1,0.0,1.0,0.0
+8aee4e2c7866f13229f04d68d10940322bbe5f30,"Add CI tests (#1)
+
+* Add basic CI
+* Lint fixes",Jonathan,me@jonathangazeley.com,GitHub,noreply@github.com,2021-11-19 22:24:40+00:00,0,2021-11-19 22:24:40+00:00,0,True,False,"['test.yml', '.pylintrc', 'main.py', 'poetry.lock', 'pyproject.toml']",['c8f82694d5859ee4d6b577b9412651c44b8f1e18'],10,834,844,5,,,
+dca0f7e074e291764fae604d3b97b526a2c31393,Add README,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-19 22:42:13+00:00,0,2021-11-19 22:42:13+00:00,0,True,False,['README.md'],['8aee4e2c7866f13229f04d68d10940322bbe5f30'],4,22,26,1,,,
+551adb4b622c49891e6a1b6306c8d6703fdd66f1,"Improve docs & metadata (#2)
+
+* Package for use as a script on PyPI",Jonathan,me@jonathangazeley.com,GitHub,noreply@github.com,2021-11-22 15:20:39+00:00,0,2021-11-22 15:20:39+00:00,0,True,False,"['publish.yml', 'test.yml', '.gitignore', 'README.md', '__init__.py', 'main.py', 'pyproject.toml']",['dca0f7e074e291764fae604d3b97b526a2c31393'],7,63,70,7,,,
+b3e56776521715b614c44f4e3a3e03a36ba598e7,Fix script name,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-22 15:27:46+00:00,0,2021-11-22 15:27:46+00:00,0,True,False,['pyproject.toml'],['551adb4b622c49891e6a1b6306c8d6703fdd66f1'],1,1,2,1,,,
+54f1934977293a7267cbd57fce74e2e20f35cfb6,Call main properly,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-22 15:35:25+00:00,0,2021-11-22 15:35:25+00:00,0,True,False,['main.py'],['b3e56776521715b614c44f4e3a3e03a36ba598e7'],1,4,5,1,0.0,0.0,1.0
+283cad00f73f00db878617d7d00453dc5b4e7c51,Refactor to work with main,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-11-22 15:59:11+00:00,0,2021-11-22 15:59:11+00:00,0,True,False,['main.py'],['54f1934977293a7267cbd57fce74e2e20f35cfb6'],37,42,79,1,1.0,1.0,0.0
+9d849d44e41f87d183c9cfcbfda81ced2096733f,"Refactor & fix path (#3)
+
+* Try to fix module path
+* Bring args back into main()",Jonathan,me@jonathangazeley.com,GitHub,noreply@github.com,2021-11-22 16:54:10+00:00,0,2021-11-22 16:54:10+00:00,0,True,False,"['main.py', 'pyproject.toml']",['283cad00f73f00db878617d7d00453dc5b4e7c51'],29,28,57,2,0.0,0.0,1.0
+a18e877624c1ae8bae5419fa9fc17beca588aa45,Rename binary to make this work as a kubectl plugin,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2021-12-06 15:42:45+00:00,0,2021-12-06 15:42:45+00:00,0,True,False,"['README.md', 'pyproject.toml']",['9d849d44e41f87d183c9cfcbfda81ced2096733f'],2,2,4,2,,,
+cc6bcd4bc74c5b438c3215b5689d078178abefd7,"Bump certifi from 2021.10.8 to 2022.12.7
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2021.10.8 to 2022.12.7.
+- [Release notes](https://github.com/certifi/python-certifi/releases)
+- [Commits](https://github.com/certifi/python-certifi/compare/2021.10.08...2022.12.07)
+
+---
+updated-dependencies:
+- dependency-name: certifi
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-23 17:31:11+00:00,0,2022-12-23 17:31:11+00:00,0,True,False,['poetry.lock'],['a18e877624c1ae8bae5419fa9fc17beca588aa45'],33,37,70,1,,,
+0e1be5dc2062db5a8f57b2b463e5108817b535ab,"Bump oauthlib from 3.1.1 to 3.2.1
+
+Bumps [oauthlib](https://github.com/oauthlib/oauthlib) from 3.1.1 to 3.2.1.
+- [Release notes](https://github.com/oauthlib/oauthlib/releases)
+- [Changelog](https://github.com/oauthlib/oauthlib/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/oauthlib/oauthlib/compare/v3.1.1...v3.2.1)
+
+---
+updated-dependencies:
+- dependency-name: oauthlib
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-23 17:31:33+00:00,0,2022-12-23 17:31:33+00:00,0,True,False,['poetry.lock'],['a18e877624c1ae8bae5419fa9fc17beca588aa45'],34,38,72,1,,,
+5b1520662aa7af27a3c39183a8821074fd409077,"Bump oauthlib from 3.2.1 to 3.2.2
+
+Bumps [oauthlib](https://github.com/oauthlib/oauthlib) from 3.2.1 to 3.2.2.
+- [Release notes](https://github.com/oauthlib/oauthlib/releases)
+- [Changelog](https://github.com/oauthlib/oauthlib/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/oauthlib/oauthlib/compare/v3.2.1...v3.2.2)
+
+---
+updated-dependencies:
+- dependency-name: oauthlib
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-17 15:48:33+00:00,0,2023-05-17 15:48:33+00:00,0,True,False,['poetry.lock'],['209992b858ce252894b1315403189e3bb34ba492'],183,183,366,1,,,
+d0a63577b565845e68fd7ad20c0bc43954f62d5d,"Bump requests from 2.26.0 to 2.31.0
+
+Bumps [requests](https://github.com/psf/requests) from 2.26.0 to 2.31.0.
+- [Release notes](https://github.com/psf/requests/releases)
+- [Changelog](https://github.com/psf/requests/blob/main/HISTORY.md)
+- [Commits](https://github.com/psf/requests/compare/v2.26.0...v2.31.0)
+
+---
+updated-dependencies:
+- dependency-name: requests
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-08 10:38:51+00:00,0,2023-06-08 10:38:51+00:00,0,True,False,['poetry.lock'],['05fa8cbfa8546ea02f5c0d17462536ab3d87652c'],9,9,18,1,,,
+ae628446a0ceae574aceea8fa81df421fb61b8dd,"Bump certifi from 2022.12.7 to 2023.7.22
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2022.12.7 to 2023.7.22.
+- [Commits](https://github.com/certifi/python-certifi/compare/2022.12.07...2023.07.22)
+
+---
+updated-dependencies:
+- dependency-name: certifi
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-14 10:58:30+00:00,0,2023-08-14 10:58:30+00:00,0,True,False,['poetry.lock'],['7c80a996d1e99c0d5e3ee7c65b55b1082b1ebf37'],35,5,40,1,,,
+d22d58ed7e7f1b657f594e42f869662eaea45cfa,"Bump urllib3 from 1.26.7 to 1.26.18
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 1.26.7 to 1.26.18.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/1.26.7...1.26.18)
+
+---
+updated-dependencies:
+- dependency-name: urllib3
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-01 15:02:49+00:00,0,2023-11-01 15:02:49+00:00,0,True,False,['poetry.lock'],['5f31a07169d410a3666e976236887580064d177f'],7,7,14,1,,,
+0033303e8b44938e32efa0df99e190d31f97c750,Update deps,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2023-11-22 14:31:53+00:00,0,2023-11-22 14:31:53+00:00,0,True,False,['poetry.lock'],['209992b858ce252894b1315403189e3bb34ba492'],340,498,838,1,,,
+09670ba3d4b77ccfe2bd7720792c1e8ab958657e,Add cache to gitignore,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2023-11-22 16:25:00+00:00,0,2023-11-22 16:25:00+00:00,0,True,False,['.gitignore'],['0033303e8b44938e32efa0df99e190d31f97c750'],0,1,1,1,,,
+5d87a9f39f819ebb196060715f887671a84993cc,Enable filtering by StorageClass,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2023-11-22 16:46:36+00:00,0,2023-11-22 16:46:36+00:00,0,True,False,"['README.md', 'main.py']",['09670ba3d4b77ccfe2bd7720792c1e8ab958657e'],1,59,60,2,0.0,0.0,1.0
+ae650cb3cfe1eb9d4281d9d42470615946291d72,Modernise .pylintrc,Jonathan Gazeley,me@jonathangazeley.com,Jonathan Gazeley,me@jonathangazeley.com,2023-11-22 16:53:22+00:00,0,2023-11-22 16:53:22+00:00,0,True,False,['.pylintrc'],['5d87a9f39f819ebb196060715f887671a84993cc'],584,41,625,1,,,

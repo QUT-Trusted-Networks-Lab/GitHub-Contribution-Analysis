@@ -1,0 +1,25 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+247768ebd6ba807ac3b51846295bf7eb3650331e,Extract hyde markdown extensions from markdown fork.,Lakshmi Vyasarajan,lakshmi.vyas@gmail.com,Lakshmi Vyasarajan,lakshmi.vyas@gmail.com,2013-04-17 17:20:19+05:30,-19800,2013-04-17 17:20:19+05:30,-19800,True,False,"['.gitignore', 'LICENSE', 'MANIFEST.in', 'README.rst', 'dev-requirements.txt', '__init__.py', '__init__.py', '__init__.py', 'passthrough.py', 'sections.py', '__init__.py', '__init__.py', 'sections.html', 'sections.txt', 'test_extensions.py', 'requirements.txt', 'setup.py']",[],0,2065,2065,17,0.7569060773480663,0.7569060773480663,0.56353591160221
+f76762a2eb98cb464e9d4ecb1c0dd2888f208074,"Use `hydedown` as the top level package.
+
+Namespace packages seem to bring about a lot of hurt and there isn't
+any good reason not to use a different but simple top level
+package name.",Lakshmi Vyasarajan,lakshmi.vyas@gmail.com,Lakshmi Vyasarajan,lakshmi.vyas@gmail.com,2013-04-17 18:24:04+05:30,-19800,2013-04-17 18:24:04+05:30,-19800,True,False,"['README.rst', '__init__.py', '__init__.py', '__init__.py', '__init__.py', 'passthrough.py', 'sections.py', '__init__.py', 'sections.html', 'sections.txt', 'test_extensions.py', 'setup.py']",['247768ebd6ba807ac3b51846295bf7eb3650331e'],18,16,34,12,,,
+1a35aad1c0cc116f89b8355cca127e137337cdc3,"Remove recursion for pypy compatibility.
+
+The `assemble` function in `sections` module recurses to modify the
+element tree to include sections and hgroups. Given `pypy`'s low
+recursion depth support, its better to use a non recursive depth
+first traversal of the element tree.
+
+- Make `assemble` non recursive
+- Ensure all element checks are against `None` to remove
+  `FutureWarnings`
+- Add a simple test for `sections`
+- Ensure tests run on pypy",Lakshmi Vyasarajan,lakshmi.vyas@gmail.com,Lakshmi Vyasarajan,lakshmi.vyas@gmail.com,2013-04-19 21:18:50+05:30,-19800,2013-04-19 21:18:50+05:30,-19800,True,False,"['sections.py', 'test_extensions.py', 'setup.py']",['f76762a2eb98cb464e9d4ecb1c0dd2888f208074'],25,92,117,3,0.0,0.8909090909090909,1.0
+c391368eb6e9cef8ddd11ba70073038c3626b535,"Ensure `makeExtension` takes kwargs.
+
+- Change `makeExtension` function to take kwargs for markdown 2.6.x
+  compatibility.
+- Fix PEP8 issues
+- Add setup.cfg to ignore line length warnings",Lakshmi Narasimhan,lakshmi@folds.in,Lakshmi Narasimhan,lakshmi@folds.in,2016-01-23 09:02:46+05:30,-19800,2016-01-23 09:16:08+05:30,-19800,True,False,"['passthrough.py', 'sections.py', 'test_extensions.py', 'requirements.txt', 'setup.cfg', 'setup.py']",['1a35aad1c0cc116f89b8355cca127e137337cdc3'],54,73,127,6,0.6666666666666666,0.5555555555555556,1.0

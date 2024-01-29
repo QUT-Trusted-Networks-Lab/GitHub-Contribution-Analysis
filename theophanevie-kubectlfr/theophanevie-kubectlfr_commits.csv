@@ -1,0 +1,27 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+dc5b1b463e43a1da822136e8117ea9098e1b649e,feat: kubectlfr: init,Théophane Vié,theophanevie@gmail.com,Théophane Vié,theophanevie@gmail.com,2022-01-21 20:29:29+01:00,-3600,2022-01-21 20:29:29+01:00,-3600,True,False,"['poetry.lock', 'pyproject.toml', '__init__.py', 'translation.cpython-39.pyc', 'main.py', 'translation.py']",[],0,100,100,6,1.0,1.0,1.0
+cdc3343cb67f7e44bb82b30fc37c0ead2ec8ee4e,feat: archi: comply to default poetry package,Théophane Vié,theophanevie@gmail.com,Théophane Vié,theophanevie@gmail.com,2022-01-21 20:45:51+01:00,-3600,2022-01-21 20:45:51+01:00,-3600,True,False,"['__init__.py', 'main.py', 'translation.py', 'pyproject.toml', '__init__.py', 'translation.cpython-39.pyc']",['dc5b1b463e43a1da822136e8117ea9098e1b649e'],7,12,19,6,1.0,1.0,1.0
+9a0e9cd553c46dba831c15ff723be7cfed4f6e72,feat: license: init,Théophane Vié,theophanevie@gmail.com,GitHub,noreply@github.com,2022-01-21 21:02:17+01:00,-3600,2022-01-21 21:02:17+01:00,-3600,True,False,['LICENSE'],['cdc3343cb67f7e44bb82b30fc37c0ead2ec8ee4e'],0,21,21,1,,,
+8154ab3a27123e232b4957bb318172dad572a8fc,feat: pyproject: first publish :tada:,Théophane Vié,theophanevie@gmail.com,Théophane Vié,theophanevie@gmail.com,2022-01-21 21:03:12+01:00,-3600,2022-01-21 21:05:33+01:00,-3600,True,False,"['.gitignore', 'README.md', 'pyproject.toml']",['9a0e9cd553c46dba831c15ff723be7cfed4f6e72'],2,16,18,3,,,
+e632a719cbc4846d35d6f82e9b113166fb9db1d1,feat: readme: add description,Théophane Vié,theophanevie@gmail.com,Théophane Vié,theophanevie@gmail.com,2022-01-21 21:24:32+01:00,-3600,2022-01-21 21:32:46+01:00,-3600,True,False,"['README.md', 'translation.py', 'pyproject.toml']",['8154ab3a27123e232b4957bb318172dad572a8fc'],1,38,39,3,,,
+14ec04a7d4e9abc2b386ace30fbbfa4a6da1b1b7,feat: translation: add all main kubectl actions,Théophane Vié,theophanevie@gmail.com,Théophane Vié,theophanevie@gmail.com,2022-01-21 22:16:49+01:00,-3600,2022-01-21 22:16:49+01:00,-3600,True,False,"['translation.py', 'pyproject.toml']",['e632a719cbc4846d35d6f82e9b113166fb9db1d1'],2,46,48,2,,,
+4705182b85991db4f008eedd5604e72fe4dfc045,"feat: coding-style: various improvements
+
+* build(requirements): Add isort package as dev requirement
+
+* build(requirements): Add mypy package as dev requirement
+
+Add static typing check
+
+* refactor: Add missing static typing
+
+* refactor(main): Remove deprecated typing lib
+
+Deprecated as said at last line of
+https://docs.python.org/3/library/typing.html#typing.List
+https://docs.python.org/3/library/typing.html#typing.Dict
+https://docs.python.org/3/library/typing.html#typing.Tuple
+
+* fix: pyproject: add newline
+
+Co-authored-by: Théophane Vié <theophanevie@gmail.com>",Alexandre BERREBI,alexandre.berrebi@businessagile.eu,GitHub,noreply@github.com,2022-01-22 16:07:27+01:00,-3600,2022-01-22 16:07:27+01:00,-3600,True,False,"['__init__.py', 'main.py', 'poetry.lock', 'pyproject.toml']",['14ec04a7d4e9abc2b386ace30fbbfa4a6da1b1b7'],6,104,110,4,,,

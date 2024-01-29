@@ -1,0 +1,17 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+3355296dd3c5704388479542b907a81d555a0d7a,Initial commit,Alexander Ivrii,alexi@il.ibm.com,GitHub,noreply@github.com,2022-10-12 16:05:48+03:00,-10800,2022-10-12 16:05:48+03:00,-10800,True,False,"['.gitignore', 'README.md']",[],0,131,131,2,,,
+fb70bbe2530486a8e1beda026455bcec9ee08f60,Initial commit,AlexanderIvrii,alexi@il.ibm.com,AlexanderIvrii,alexi@il.ibm.com,2022-10-12 21:42:23+03:00,-10800,2022-10-12 21:42:23+03:00,-10800,True,False,"['.gitignore', 'LICENSE', 'README.md', 'setup.py', 'binary_matrix_utils.py', 'examples.py', 'kutin_synthesis.py', 'kutin_synthesis_plugin.py']",['3355296dd3c5704388479542b907a81d555a0d7a'],1,433,434,8,0.47,0.47,0.335
+f1ab6cefe41d63643d7995de109f23a215058b7f,bump version,AlexanderIvrii,alexi@il.ibm.com,AlexanderIvrii,alexi@il.ibm.com,2022-10-12 21:51:16+03:00,-10800,2022-10-12 21:51:16+03:00,-10800,True,False,['setup.py'],['fb70bbe2530486a8e1beda026455bcec9ee08f60'],1,1,2,1,,,
+627439b5c6f28ba1b92c814abfc71bb1c5dacc4c,bug fix and more examples,AlexanderIvrii,alexi@il.ibm.com,AlexanderIvrii,alexi@il.ibm.com,2022-10-12 23:16:05+03:00,-10800,2022-10-12 23:16:05+03:00,-10800,True,False,"['examples.py', 'kutin_synthesis_plugin.py']",['f1ab6cefe41d63643d7995de109f23a215058b7f'],5,54,59,2,0.3870967741935484,1.0,0.967741935483871
+5f7d75562cb97a40c020951e76f05cc55a8f303e,"Fix packaging setup
+
+This commit makes a few small tweaks to the Python package so it's
+installable and importable from a standalone package without the source
+tree. There are a few things that are changed here, the first is the
+namespace of the package is changed to somethign more unique, this could
+be set via the package configuration in the setup.py, but it's easier to
+just use the directory name. The second thing changed is a missing
+__init__.py is added, this is needed to have python treat the directory
+as a package and know it's importable. Third the setup.py is updated to
+set the packages correctly and also add qiskit-terra as a requirement.",Matthew Treinish,mtreinish@kortar.org,Matthew Treinish,mtreinish@kortar.org,2022-10-12 16:36:13-04:00,14400,2022-10-12 16:46:46-04:00,14400,True,False,"['__init__.py', 'binary_matrix_utils.py', 'examples.py', 'kutin_synthesis.py', 'kutin_synthesis_plugin.py', 'setup.py']",['627439b5c6f28ba1b92c814abfc71bb1c5dacc4c'],12,10,22,6,,,
+ae9129495e9feecf14283972791f8cd6bbcfa9d8,Improving README,AlexanderIvrii,alexi@il.ibm.com,AlexanderIvrii,alexi@il.ibm.com,2022-10-16 11:01:21+03:00,-10800,2022-10-16 11:01:21+03:00,-10800,True,False,['README.md'],['d7a5f0ac97e3ce9a8469c165686b4d4dc621acb9'],1,74,75,1,,,

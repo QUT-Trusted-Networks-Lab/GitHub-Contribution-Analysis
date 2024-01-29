@@ -1,0 +1,416 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+3f52a0ad5d7cf0bc63bf44cb80ee781dd6258cd1,first commit,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-29 22:17:50+01:00,-3600,2017-11-23 18:09:09+01:00,-3600,True,False,"['.gitignore', 'LICENSE.txt', '__main__.py', '__init__.py', '_index.stpl', '_upload_form.stpl', 'app.py', 'base.stpl', 'home_index.stpl', 'license_page.stpl', 'normal_index.stpl', 'version.py']",[],0,248,248,12,0.36231884057971014,0.36231884057971014,0.855072463768116
+5189db4b5259683137ad667c09e4faf2e97cfb4c,implement the executable archive,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-29 22:18:53+01:00,-3600,2017-11-23 18:09:09+01:00,-3600,True,False,"['app.py', 'home_index.stpl', 'make_zipapp.sh']",['3f52a0ad5d7cf0bc63bf44cb80ee781dd6258cd1'],0,26,26,3,1.0,1.0,1.0
+d7cb4c482fcbf5a3f1c50b47ee622e7ee0c2e7f1,add regression tests,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-19 16:59:28+01:00,-3600,2017-11-23 18:09:09+01:00,-3600,True,False,"['__main__.py', 'test.bats']",['5189db4b5259683137ad667c09e4faf2e97cfb4c'],0,222,222,2,,,
+d1c8c1a5dcb76fc2ab3fe51d4be2dd7142cab485,"git subrepo clone --branch=release-0.12 https://github.com/bottlepy/bottle
+
+subrepo:
+  subdir:   ""bottle""
+  merged:   ""b891f49""
+upstream:
+  origin:   ""https://github.com/bottlepy/bottle""
+  branch:   ""release-0.12""
+  commit:   ""b891f49""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""???""
+  commit:   ""???""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-08 19:19:59+02:00,-7200,2017-11-23 18:09:09+01:00,-3600,True,False,"['.coveragerc', '.gitignore', '.gitrepo', '.travis.yml', 'AUTHORS', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.rst', 'bottle.py', 'README.txt', 'update.sh', 'api.po', 'async.po', 'changelog.po', 'configuration.po', 'contact.po', 'deployment.po', 'development.po', 'faq.po', 'index.po', 'plugindev.po', 'plugins.po', 'recipes.po', 'routing.po', 'stpl.po', 'tutorial.po', 'tutorial_app.po', 'api.rst', 'async.rst', 'changelog.rst', 'conf.py', 'configuration.rst', 'contact.rst', 'deployment.rst', 'development.rst', 'faq.rst', 'index.rst', 'plugindev.rst', 'index.rst', 'sqlite.rst', 'werkzeug.rst', 'recipes.rst', 'routing.rst', 'stpl.rst', 'tutorial.rst', 'tutorial_app.rst', 'README', 'bottle_sqlite.py', 'setup.py', 'test.py', 'README', 'bottle_werkzeug.py', 'setup.py', 'test.py', 'setup.py', '.coveragerc', 'build_python.sh', 'servertest.py', 'test_auth.py', 'test_config.py', 'test_configdict.py', 'test_contextlocals.py', 'test_environ.py', 'test_fileupload.py', 'test_formsdict.py', 'test_importhook.py', 'test_jinja2.py', 'test_mako.py', 'test_mdict.py', 'test_mount.py', 'test_outputfilter.py', 'test_plugins.py', 'test_resources.py', 'test_route.py', 'test_router.py', 'test_securecookies.py', 'test_sendfile.py', 'test_server.py', 'test_stpl.py', 'test_wsgi.py', 'testall.py', 'tools.py', 'travis_setup.sh', 'jinja2_base.tpl', 'jinja2_inherit.tpl', 'jinja2_simple.tpl', 'mako_base.tpl', 'mako_inherit.tpl', 'mako_simple.tpl', 'stpl_include.tpl', 'stpl_no_vars.tpl', 'stpl_simple.tpl', 'stpl_t2base.tpl', 'stpl_t2inc.tpl', 'stpl_t2main.tpl', 'stpl_unicode.tpl', 'tox.ini']",['d7cb4c482fcbf5a3f1c50b47ee622e7ee0c2e7f1'],0,21913,21913,98,0.8205415081673753,0.8033117028417991,0.7706422018348624
+5835f08200ac9ba51fbb07e561555857b62cdde7,bring bottle to the root,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-09 22:48:57+02:00,-7200,2017-11-23 18:09:09+01:00,-3600,True,False,"['bottle.py', '.coveragerc', '.gitignore', '.travis.yml', 'MANIFEST.in', 'Makefile', 'README.rst', 'README.txt', 'update.sh', 'api.po', 'async.po', 'changelog.po', 'configuration.po', 'contact.po', 'deployment.po', 'development.po', 'faq.po', 'index.po', 'plugindev.po', 'plugins.po', 'recipes.po', 'routing.po', 'stpl.po', 'tutorial.po', 'tutorial_app.po', 'api.rst', 'async.rst', 'changelog.rst', 'conf.py', 'configuration.rst', 'contact.rst', 'deployment.rst', 'development.rst', 'faq.rst', 'index.rst', 'plugindev.rst', 'index.rst', 'sqlite.rst', 'werkzeug.rst', 'recipes.rst', 'routing.rst', 'stpl.rst', 'tutorial.rst', 'tutorial_app.rst', 'README', 'bottle_sqlite.py', 'setup.py', 'test.py', 'README', 'bottle_werkzeug.py', 'setup.py', 'test.py', 'setup.py', '.coveragerc', 'build_python.sh', 'servertest.py', 'test_auth.py', 'test_config.py', 'test_configdict.py', 'test_contextlocals.py', 'test_environ.py', 'test_fileupload.py', 'test_formsdict.py', 'test_importhook.py', 'test_jinja2.py', 'test_mako.py', 'test_mdict.py', 'test_mount.py', 'test_outputfilter.py', 'test_plugins.py', 'test_resources.py', 'test_route.py', 'test_router.py', 'test_securecookies.py', 'test_sendfile.py', 'test_server.py', 'test_stpl.py', 'test_wsgi.py', 'testall.py', 'tools.py', 'travis_setup.sh', 'jinja2_base.tpl', 'jinja2_inherit.tpl', 'jinja2_simple.tpl', 'mako_base.tpl', 'mako_inherit.tpl', 'mako_simple.tpl', 'stpl_include.tpl', 'stpl_no_vars.tpl', 'stpl_simple.tpl', 'stpl_t2base.tpl', 'stpl_t2inc.tpl', 'stpl_t2main.tpl', 'stpl_unicode.tpl', 'tox.ini']",['d1c8c1a5dcb76fc2ab3fe51d4be2dd7142cab485'],18059,0,18059,95,0.08717105263157894,0.02425986842105263,0.06743421052631579
+4f37d9fac8f50ee8050db0c2505bf436afc07db5,trim down bottle,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-22 18:53:03+02:00,-7200,2017-11-23 18:09:09+01:00,-3600,True,False,['bottle.py'],['5835f08200ac9ba51fbb07e561555857b62cdde7'],556,0,556,1,0.31176470588235294,0.35,0.3558823529411765
+5dea9dea2e3d9d72aa5b4bf1709e597f4bf7efd1,"git subrepo clone --branch=0.6.x https://github.com/docopt/docopt
+
+subrepo:
+  subdir:   ""docopt""
+  merged:   ""944641a""
+upstream:
+  origin:   ""https://github.com/docopt/docopt""
+  branch:   ""0.6.x""
+  commit:   ""944641a""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""???""
+  commit:   ""???""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-08 19:21:23+02:00,-7200,2017-11-23 18:09:09+01:00,-3600,True,False,"['.gitignore', '.gitrepo', '.travis.yml', 'LICENSE-MIT', 'MANIFEST.in', 'README.rst', 'TODO', 'conftest.py', 'docopt.py', 'arguments_example.py', 'calculator_example.py', 'counted_example.py', 'git.py', 'git_add.py', 'git_branch.py', 'git_checkout.py', 'git_clone.py', 'git_commit.py', 'git_push.py', 'git_remote.py', 'naval_fate.py', 'odd_even_example.py', 'options_example.py', 'options_shortcut_example.py', 'quick_example.py', 'validation_example.py', 'language_agnostic_testee.py', 'language_agnostic_tester.py', 'setup.cfg', 'setup.py', 'test_docopt.py', 'testcases.docopt', 'tox.ini']",['4f37d9fac8f50ee8050db0c2505bf436afc07db5'],0,3247,3247,33,0.5892215568862276,0.7317365269461078,0.8610778443113772
+d049f4dade9a25618dc060d834ee2ff61c31c011,bring docopt to the root,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-09 22:45:20+02:00,-7200,2017-11-23 18:09:09+01:00,-3600,True,False,"['docopt.py', '.gitignore', '.travis.yml', 'MANIFEST.in', 'README.rst', 'TODO', 'conftest.py', 'arguments_example.py', 'calculator_example.py', 'counted_example.py', 'git.py', 'git_add.py', 'git_branch.py', 'git_checkout.py', 'git_clone.py', 'git_commit.py', 'git_push.py', 'git_remote.py', 'naval_fate.py', 'odd_even_example.py', 'options_example.py', 'options_shortcut_example.py', 'quick_example.py', 'validation_example.py', 'language_agnostic_testee.py', 'language_agnostic_tester.py', 'setup.cfg', 'setup.py', 'test_docopt.py', 'testcases.docopt', 'tox.ini']",['5dea9dea2e3d9d72aa5b4bf1709e597f4bf7efd1'],2638,0,2638,31,0.37184873949579833,0.0,0.008403361344537815
+fcf76b3127a4669c3a3a931b8137911bc7e58768,"git subrepo clone --branch=v5.3 https://github.com/lincolnloop/python-qrcode qrcode
+
+subrepo:
+  subdir:   ""qrcode""
+  merged:   ""e26e0c2""
+upstream:
+  origin:   ""https://github.com/lincolnloop/python-qrcode""
+  branch:   ""v5.3""
+  commit:   ""e26e0c2""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""???""
+  commit:   ""???""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-08 19:32:58+02:00,-7200,2017-11-23 18:09:10+01:00,-3600,True,False,"['.coveragerc', '.gitignore', '.gitrepo', 'CHANGES.rst', 'LICENSE', 'MANIFEST.in', 'PACKAGING.rst', 'README.rst', 'TESTING.rst', 'qr.1', '__init__.py', 'base.py', 'console_scripts.py', 'constants.py', 'exceptions.py', '__init__.py', 'base.py', 'pil.py', 'pure.py', 'svg.py', 'main.py', '__init__.py', 'svg.py', 'test_example.py', 'test_qrcode.py', 'test_script.py', 'util.py', 'setup.cfg', 'setup.py', 'tox.ini']",['d049f4dade9a25618dc060d834ee2ff61c31c011'],0,2806,2806,30,0.6054794520547945,0.6164383561643836,0.7077625570776256
+4ba28d0d2b4da65ddbf2664ee3c9121056503ead,bring qrcode to the root,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-08 17:23:30+02:00,-7200,2017-11-23 18:09:10+01:00,-3600,True,False,"['.coveragerc', '.gitignore', 'CHANGES.rst', 'MANIFEST.in', 'PACKAGING.rst', 'README.rst', 'TESTING.rst', '__init__.py', 'base.py', 'constants.py', 'qr.1', 'exceptions.py', 'main.py', '__init__.py', 'console_scripts.py', '__init__.py', 'base.py', 'pil.py', 'pure.py', 'svg.py', '__init__.py', 'svg.py', 'test_example.py', 'test_qrcode.py', 'test_script.py', 'setup.cfg', 'setup.py', 'tox.ini', 'util.py']",['fcf76b3127a4669c3a3a931b8137911bc7e58768'],1456,3,1459,29,0.17573221757322174,0.16527196652719664,0.26359832635983266
+547f03b978dbf6ddebc9d838e8aa53a00f62ef85,"remove qrcode dependency on six
+
+s/xrange/range/g will build a list in Python 2, but the outcome is the
+same.",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-12 17:20:16+02:00,-7200,2017-11-23 18:09:10+01:00,-3600,True,False,"['main.py', 'util.py']",['4ba28d0d2b4da65ddbf2664ee3c9121056503ead'],32,20,52,2,1.0,0.8333333333333334,0.16666666666666666
+dc5ac15812637d603d16985c31d7cb32b479b3be,stick all licenses together,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-10 22:05:26+02:00,-7200,2017-11-23 18:09:10+01:00,-3600,True,False,"['LICENSE.txt', 'LICENSE', 'LICENSE-MIT', 'LICENSE', 'test.bats']",['547f03b978dbf6ddebc9d838e8aa53a00f62ef85'],86,186,272,5,,,
+212c1495e2125fa8b37c45038992d0786be8320f,remove broken license hyperlinks,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-10-13 13:48:42+02:00,-7200,2017-11-23 18:09:10+01:00,-3600,True,False,"['bottle.py', 'docopt.py']",['dc5ac15812637d603d16985c31d7cb32b479b3be'],2,2,4,2,,,
+b44063715c3e6fca9718c64ea323cc1555cf5e4e,reproductibly build,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-19 18:13:13+01:00,-3600,2017-11-23 18:09:10+01:00,-3600,True,False,['make_zipapp.sh'],['212c1495e2125fa8b37c45038992d0786be8320f'],0,3,3,1,,,
+85efceb8b02361e51974e58ed79613615bb60d35,remove subrepos,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-25 17:42:34+01:00,-3600,2017-11-25 17:42:34+01:00,-3600,True,False,"['bottle.py', '.gitrepo', 'AUTHORS', 'docopt.py', '.gitrepo', '.gitrepo', '__init__.py', 'base.py', 'constants.py', 'exceptions.py', 'main.py', 'util.py']",['b44063715c3e6fca9718c64ea323cc1555cf5e4e'],5162,0,5162,12,0.37195350581177355,0.4728158980127484,0.3918260217472816
+c3fb085f8492de040619222e0ae134839eff889d,"revert ""stick all licenses together""",Louis Bettens,louis@hadronsson.ici,Louis Bettens,louis@bettens.info,2017-11-25 17:37:56+01:00,-3600,2017-11-25 17:46:34+01:00,-3600,True,False,"['LICENSE.txt', 'test.bats']",['85efceb8b02361e51974e58ed79613615bb60d35'],186,0,186,2,,,
+cfcf3c2940c4749691db9b89832a669f0e712339,"revert ""implement the executable archive""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-25 17:44:18+01:00,-3600,2017-11-25 17:47:55+01:00,-3600,True,False,"['app.py', 'home_index.stpl', 'make_zipapp.sh', 'test.bats']",['c3fb085f8492de040619222e0ae134839eff889d'],30,0,30,4,0.0,0.0,0.0
+e1b53559de36ec3293a7e1ae2079a701bb1e9bd8,use travis,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-22 22:48:19+01:00,-3600,2017-11-25 22:44:41+01:00,-3600,True,False,['.travis.yml'],['b44063715c3e6fca9718c64ea323cc1555cf5e4e'],0,15,15,1,,,
+05ba777af1569fb7235f29ac0fa6a99ab1d4186b,"fix overcomplicated usage of pkgutil
+
+pros:
+- more in step with the PyPI variant
+
+cons:
+- breaks on Python 3.3 in release mode",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-25 20:56:45+01:00,-3600,2017-11-25 22:44:41+01:00,-3600,True,False,"['.travis.yml', 'app.py']",['e1b53559de36ec3293a7e1ae2079a701bb1e9bd8'],4,1,5,2,0.0,0.0,0.0
+8a1d5f1f42d0479bb9f59db9efd2e22fa4f53d95,use -u to fix buffering issues,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-25 21:23:56+01:00,-3600,2017-11-25 22:44:41+01:00,-3600,True,False,"['__main__.py', 'app.py', 'test.bats']",['05ba777af1569fb7235f29ac0fa6a99ab1d4186b'],6,2,8,3,0.0,0.0,0.0
+94f9b6d532005cf4c51715d8054249152ee1eb92,add my PGP key,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-23 21:41:29+01:00,-3600,2017-11-25 22:44:41+01:00,-3600,True,False,['release_key.asc'],['8a1d5f1f42d0479bb9f59db9efd2e22fa4f53d95'],0,63,63,1,,,
+baa65f514533f63350a995f83285f26cd8e6a661,bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-25 22:46:49+01:00,-3600,2017-11-25 22:47:04+01:00,-3600,True,False,['version.py'],['94f9b6d532005cf4c51715d8054249152ee1eb92'],1,1,2,1,,,
+53c79747e77a74f7cb645bf0e1328067f09a5a6a,fix race conditions in tests,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-26 19:00:19+01:00,-3600,2017-11-26 19:26:18+01:00,-3600,True,False,['test.bats'],['baa65f514533f63350a995f83285f26cd8e6a661'],0,6,6,1,,,
+0a62642a02fb89eff72fe9e3f6a8c461f4c7562b,make the pypi package,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-25 22:38:29+01:00,-3600,2017-11-26 19:57:03+01:00,-3600,True,False,"['LICENSE.txt', '__main__.py', 'app.py', 'requirements.txt', 'setup.cfg', 'setup.py']",['cfcf3c2940c4749691db9b89832a669f0e712339'],3,56,59,6,0.0,0.0,0.0
+4a39a0d4b0e97c38be9af97e20e145b10b98101b,add pypi travis and adapt tests,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-25 22:33:35+01:00,-3600,2017-11-26 19:57:03+01:00,-3600,True,False,"['.travis.yml', 'test.bats']",['0a62642a02fb89eff72fe9e3f6a8c461f4c7562b'],29,12,41,2,,,
+0b5f227329897fb4fe30f7507642be93a7e92f3c,add version suffix,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-25 22:49:06+01:00,-3600,2017-11-26 19:57:03+01:00,-3600,True,False,['version.py'],['4a39a0d4b0e97c38be9af97e20e145b10b98101b'],1,1,2,1,,,
+778e016271518c15de4e31d717aa3c5a0f50906d,bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-26 20:40:18+01:00,-3600,2017-11-26 20:59:33+01:00,-3600,True,False,['version.py'],['53c79747e77a74f7cb645bf0e1328067f09a5a6a'],1,1,2,1,,,
+15cebd9662c7d398257b21036b24bd12c7b19afb,code improvement on httpshare.version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-26 20:58:44+01:00,-3600,2017-11-26 20:59:33+01:00,-3600,True,False,"['__init__.py', 'version.py']",['778e016271518c15de4e31d717aa3c5a0f50906d'],12,14,26,2,,,
+64523c59e8eabc6c4a53b0381f5679b1821d97be,README.rst,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2017-11-17 15:40:33+01:00,-3600,2018-01-05 18:28:47+01:00,-3600,True,False,"['README.rst', 'demo1.png', 'demo2.png']",['15cebd9662c7d398257b21036b24bd12c7b19afb'],0,81,81,3,,,
+b777ac77a70f0d924ea74e304fc18e8c530c20f9,"add a ""how to quit"" message",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 16:12:34+01:00,-3600,2018-01-21 16:12:34+01:00,-3600,True,False,['__main__.py'],['64523c59e8eabc6c4a53b0381f5679b1821d97be'],0,6,6,1,,,
+a71634296072f9c416e6d78f7e90e3338b37c47d,fix #1,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 16:55:00+01:00,-3600,2018-01-21 16:55:00+01:00,-3600,True,False,['__main__.py'],['b777ac77a70f0d924ea74e304fc18e8c530c20f9'],1,1,2,1,,,
+b19b02294855f6c5a6130291af9df3eaba6dc097,adapt README.rst to the PyPI context,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 17:35:45+01:00,-3600,2018-01-21 17:35:45+01:00,-3600,True,False,['README.rst'],['fe497752ec88877f6c300d6a379cf3d466c1184b'],29,8,37,1,,,
+d52a4163307a683fb1151b7fe7e275930387bef3,use the pypi branch as the homepage link,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 18:00:58+01:00,-3600,2018-01-21 18:00:58+01:00,-3600,True,False,['setup.py'],['b19b02294855f6c5a6130291af9df3eaba6dc097'],1,1,2,1,,,
+55a25468d83c46043f540793daff82b9b07f8512,show README on PyPI,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 18:15:34+01:00,-3600,2018-01-21 18:15:34+01:00,-3600,True,False,['setup.py'],['d52a4163307a683fb1151b7fe7e275930387bef3'],0,2,2,1,,,
+1a09995b35b070d8074de03410c650deed14f606,fix metadata,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 20:27:09+01:00,-3600,2018-01-21 20:27:09+01:00,-3600,True,False,['setup.cfg'],['55a25468d83c46043f540793daff82b9b07f8512'],1,1,2,1,,,
+0136bf024c4552dfeb037760af8acb7c5e5ad419,add zip_safe flag,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 20:28:43+01:00,-3600,2018-01-21 20:52:51+01:00,-3600,True,False,['setup.py'],['1a09995b35b070d8074de03410c650deed14f606'],0,1,1,1,,,
+c40a69eee712ad8afa7059ea95e05510e853e185,use install_requires,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 20:53:18+01:00,-3600,2018-01-21 20:53:18+01:00,-3600,True,False,"['requirements.txt', 'setup.py']",['0136bf024c4552dfeb037760af8acb7c5e5ad419'],3,6,9,2,,,
+bea1539235cd2a127876a1ee3200d3825da42974,add entry_points,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 21:59:13+01:00,-3600,2018-01-21 22:18:12+01:00,-3600,True,False,['setup.py'],['c40a69eee712ad8afa7059ea95e05510e853e185'],0,6,6,1,,,
+be3114de10eb8402340789ba0c9a90d96f6408f2,test using the entry_points,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 21:53:11+01:00,-3600,2018-01-21 22:18:40+01:00,-3600,True,False,['test.bats'],['bea1539235cd2a127876a1ee3200d3825da42974'],1,1,2,1,,,
+67e0ee0f903fe2ce84c93032c697e8f421034098,fix license page,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 22:14:20+01:00,-3600,2018-01-21 22:18:40+01:00,-3600,True,False,['app.py'],['be3114de10eb8402340789ba0c9a90d96f6408f2'],1,1,2,1,,,
+f9281360fba90ef45ddb5742b4261869b9d8f487,update README.rst,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 22:22:46+01:00,-3600,2018-01-21 22:23:18+01:00,-3600,True,False,['README.rst'],['67e0ee0f903fe2ce84c93032c697e8f421034098'],0,6,6,1,,,
+dcfd457badeb49438b0c13cb9cf4fc16a4deb575,bump pypi version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 21:59:06+01:00,-3600,2018-01-21 22:23:18+01:00,-3600,True,False,['setup.py'],['f9281360fba90ef45ddb5742b4261869b9d8f487'],1,1,2,1,,,
+770f95d857936bb6e0df65b1e9657f370020b05b,"revert ""bump pypi version""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 22:36:51+01:00,-3600,2018-01-21 22:37:34+01:00,-3600,True,False,['setup.py'],['dcfd457badeb49438b0c13cb9cf4fc16a4deb575'],1,1,2,1,,,
+921ab8a350f108070c28b2646ed627a868a89cb0,bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-21 22:38:20+01:00,-3600,2018-01-21 22:38:20+01:00,-3600,True,False,['version.py'],['a71634296072f9c416e6d78f7e90e3338b37c47d'],1,1,2,1,,,
+cb98ce5c52c024d1fcbb6db2f62308c757f4e007,"move LICENSE.txt into httpshare/
+
+We remove the constraint on the __main__ import namespace to make room
+for the upcoming changes.
+
+This also adds to the commonality with the pypi version.",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 16:36:04+01:00,-3600,2018-01-24 16:56:15+01:00,-3600,True,False,"['LICENSE.txt', 'app.py', 'make_zipapp.sh']",['921ab8a350f108070c28b2646ed627a868a89cb0'],2,2,4,3,,,
+3f4df3029302a587b9e68ad967ce13d3847255d6,keep a symlink for compatibility,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 16:51:06+01:00,-3600,2018-01-24 16:56:15+01:00,-3600,True,False,['LICENSE.txt'],['cb98ce5c52c024d1fcbb6db2f62308c757f4e007'],0,1,1,1,,,
+525198e653b7d59fcac8ac9f75b661934f6f2a68,"move __main__.py into httpshare/
+
+We remove the constraint on the __main__ import namespace to make room
+for the upcoming changes.
+
+This also adds to the commonality with the pypi version.",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 16:58:24+01:00,-3600,2018-01-24 17:00:30+01:00,-3600,True,False,['__main__.py'],['3f4df3029302a587b9e68ad967ce13d3847255d6'],0,0,0,1,,,
+253728f5ee3dde9933ef703d1bac7189c5aff833,"write a main function
+
+This will help fix #2 when it's merged in the pypi branch",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 16:58:31+01:00,-3600,2018-01-24 17:17:34+01:00,-3600,True,False,"['__init__.py', '__main__.py', 'main.py']",['525198e653b7d59fcac8ac9f75b661934f6f2a68'],73,78,151,3,0.0,1.0,1.0
+4e5ef22f00a87e7fb2964fe676bbce7690716c5a,redo the zipapp building script,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 18:09:11+01:00,-3600,2018-01-24 18:26:43+01:00,-3600,True,False,"['LICENSE.txt', 'README.rst', 'make_zipapp.py', 'make_zipapp.sh', 'bottle.py', 'docopt.py', 'LICENSE.txt', '__init__.py', '_index.stpl', '_upload_form.stpl', 'app.py', 'base.stpl', 'home_index.stpl', 'license_page.stpl', 'main.py', 'normal_index.stpl', 'version.py', '__init__.py', 'base.py', 'constants.py', 'exceptions.py', 'main.py', 'util.py', 'test.bats']",['253728f5ee3dde9933ef703d1bac7189c5aff833'],21,27,48,24,,,
+8d1cea38d02387e3afc2963668d17430d694c2a6,adapt tests,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 16:55:11+01:00,-3600,2018-01-24 18:44:34+01:00,-3600,True,False,"['.travis.yml', 'test.bats']",['4e5ef22f00a87e7fb2964fe676bbce7690716c5a'],9,5,14,2,,,
+d3e803662b4d81ba775f87de5fd1b844927e0d06,move subrepos to a dedicated place,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 18:25:21+01:00,-3600,2018-01-24 18:44:34+01:00,-3600,True,False,"['.gitrepo', 'AUTHORS', '.gitrepo', '.gitrepo']",['8d1cea38d02387e3afc2963668d17430d694c2a6'],0,0,0,4,,,
+f57aca368fb476c8ac51594f4ba1e3428f722a6b,don't use a src/ as per PyPA standards,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 18:54:31+01:00,-3600,2018-01-24 18:56:14+01:00,-3600,True,False,"['LICENSE.txt', 'LICENSE.txt', '__init__.py', '_index.stpl', '_upload_form.stpl', 'app.py', 'base.stpl', 'home_index.stpl', 'license_page.stpl', 'main.py', 'normal_index.stpl', 'version.py']",['a680ee314e48f1c72f94e2f54ab3069de5642695'],1,1,2,12,,,
+58e07372a9ebbc9598e6d1035610a9ab29b04901,hopefully fix #2,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 18:56:29+01:00,-3600,2018-01-24 18:56:29+01:00,-3600,True,False,['setup.py'],['f57aca368fb476c8ac51594f4ba1e3428f722a6b'],1,1,2,1,,,
+b63d40fa7cde454f8e35ab882eb4a9771e14a2a5,clear useless section,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 18:59:22+01:00,-3600,2018-01-24 18:59:22+01:00,-3600,True,False,['test.bats'],['58e07372a9ebbc9598e6d1035610a9ab29b04901'],4,0,4,1,,,
+639212774043930be9bd2f0d33205226b554b197,no need for static/ in this branch,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 19:00:15+01:00,-3600,2018-01-24 19:00:15+01:00,-3600,True,False,"['demo1.png', 'demo2.png']",['b63d40fa7cde454f8e35ab882eb4a9771e14a2a5'],0,0,0,2,,,
+7c41d984ab27be961d95a71ce2968ef32e16ff6b,"untie version information between code and setup
+
+problem is that importing httpshare imports bottle+docopt+qrcode, which
+aren't available before setup has started.  Either we modify main() to
+import them locally or we just do that.  The latter option seems more
+future-proof.",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 19:03:36+01:00,-3600,2018-01-24 19:15:05+01:00,-3600,True,False,['setup.py'],['639212774043930be9bd2f0d33205226b554b197'],5,2,7,1,,,
+a386187205923ef6193280d3e2e0931fa54e831c,fix #4,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 20:04:48+01:00,-3600,2018-01-24 20:04:48+01:00,-3600,True,False,['main.py'],['d3e803662b4d81ba775f87de5fd1b844927e0d06'],0,2,2,1,,,
+a65975c13cc00c80fec46f83df09cfb19bbfbbce,"Revert ""no need for static/ in this branch""
+
+This reverts commit 639212774043930be9bd2f0d33205226b554b197.",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 20:34:16+01:00,-3600,2018-01-24 20:34:16+01:00,-3600,True,False,"['demo1.png', 'demo2.png']",['7c41d984ab27be961d95a71ce2968ef32e16ff6b'],0,0,0,2,,,
+13493306b300e23ae5ebcbca286f61b65642518b,bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 20:35:55+01:00,-3600,2018-01-24 20:35:55+01:00,-3600,True,False,['version.py'],['a386187205923ef6193280d3e2e0931fa54e831c'],1,1,2,1,,,
+c648bd1e5ea31b299742eb0e2fb01cded7fcc12d,bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-24 20:39:02+01:00,-3600,2018-01-24 20:39:02+01:00,-3600,True,False,['setup.py'],['9d57425ac838adaf92880c67841d12d3696fe721'],1,1,2,1,,,
+10b4c2c8eb622e2114737a945d0ac96d933df3a4,"take updated screenshots
+
+use this occasion to add captions and transcripts.",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-27 22:46:35+01:00,-3600,2018-01-27 22:46:35+01:00,-3600,True,False,"['README.rst', 'demo1.png', 'demo2.png']",['13493306b300e23ae5ebcbca286f61b65642518b'],4,43,47,3,,,
+542c922645438209f623d829eab46af71912853a,bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-27 22:52:14+01:00,-3600,2018-01-27 22:52:14+01:00,-3600,True,False,['setup.py'],['d41089b13bd11a50c202fa7406b4845d156c6f61'],1,1,2,1,,,
+d2ab7929bc1164cdd998b14fb0749a78a98e8676,helpful error message on address guessing failure,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-28 19:29:11+01:00,-3600,2018-01-28 19:29:11+01:00,-3600,True,False,['main.py'],['10b4c2c8eb622e2114737a945d0ac96d933df3a4'],4,10,14,1,0.0,0.0,1.0
+a85f43a8114a24c095b3ec5f9450d8e7182a9f01,bump copyright year,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-31 15:09:25+01:00,-3600,2018-01-31 17:20:07+01:00,-3600,True,False,"['LICENSE.txt', '__init__.py', 'app.py', 'main.py', 'version.py', 'test.bats']",['d2ab7929bc1164cdd998b14fb0749a78a98e8676'],6,6,12,6,,,
+87b00be5240b7cbeb9b84621fa806aed984571d1,improve tests so pypi can do coverage,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-31 18:15:55+01:00,-3600,2018-01-31 18:22:04+01:00,-3600,True,False,['test.bats'],['a85f43a8114a24c095b3ec5f9450d8e7182a9f01'],3,12,15,1,,,
+af54a5065e2bfcbab4a018bb9e18ea67c1ba4281,"git subrepo clone --branch=release-0.12 https://github.com/bottlepy/bottle subrepos/bottle
+
+subrepo:
+  subdir:   ""subrepos/bottle""
+  merged:   ""ab4d0c6""
+upstream:
+  origin:   ""https://github.com/bottlepy/bottle""
+  branch:   ""release-0.12""
+  commit:   ""ab4d0c6""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""a7ee886""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-03-23 19:35:21+01:00,-3600,2018-03-23 19:35:21+01:00,-3600,True,False,"['.coveragerc', '.gitignore', '.gitrepo', '.travis.yml', 'AUTHORS', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.rst', 'bottle.py', 'README.txt', 'update.sh', 'api.po', 'async.po', 'changelog.po', 'configuration.po', 'contact.po', 'deployment.po', 'development.po', 'faq.po', 'index.po', 'plugindev.po', 'plugins.po', 'recipes.po', 'routing.po', 'stpl.po', 'tutorial.po', 'tutorial_app.po', 'api.rst', 'async.rst', 'changelog.rst', 'conf.py', 'configuration.rst', 'contact.rst', 'deployment.rst', 'development.rst', 'faq.rst', 'index.rst', 'plugindev.rst', 'index.rst', 'sqlite.rst', 'werkzeug.rst', 'recipes.rst', 'routing.rst', 'stpl.rst', 'tutorial.rst', 'tutorial_app.rst', 'README', 'bottle_sqlite.py', 'setup.py', 'test.py', 'README', 'bottle_werkzeug.py', 'setup.py', 'test.py', 'setup.py', '.coveragerc', 'build_python.sh', 'servertest.py', 'test_auth.py', 'test_config.py', 'test_configdict.py', 'test_contextlocals.py', 'test_environ.py', 'test_fileupload.py', 'test_formsdict.py', 'test_importhook.py', 'test_jinja2.py', 'test_mako.py', 'test_mdict.py', 'test_mount.py', 'test_outputfilter.py', 'test_plugins.py', 'test_resources.py', 'test_route.py', 'test_router.py', 'test_securecookies.py', 'test_sendfile.py', 'test_server.py', 'test_stpl.py', 'test_wsgi.py', 'testall.py', 'tools.py', 'travis_setup.sh', 'jinja2_base.tpl', 'jinja2_inherit.tpl', 'jinja2_simple.tpl', 'mako_base.tpl', 'mako_inherit.tpl', 'mako_simple.tpl', 'stpl_include.tpl', 'stpl_no_vars.tpl', 'stpl_simple.tpl', 'stpl_t2base.tpl', 'stpl_t2inc.tpl', 'stpl_t2main.tpl', 'stpl_unicode.tpl', 'tox.ini']",[],0,21913,21913,98,0.8205415081673753,0.8033117028417991,0.7706422018348624
+1af12d7fc3ccef5c601588c5bdfbbe71c16b75f3,"git subrepo clone --branch=v5.3 https://github.com/lincolnloop/python-qrcode subrepos/qrcode
+
+subrepo:
+  subdir:   ""subrepos/qrcode""
+  merged:   ""e26e0c2""
+upstream:
+  origin:   ""https://github.com/lincolnloop/python-qrcode""
+  branch:   ""v5.3""
+  commit:   ""e26e0c2""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""a7ee886""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-03-23 19:35:40+01:00,-3600,2018-03-23 19:35:40+01:00,-3600,True,False,"['.coveragerc', '.gitignore', '.gitrepo', 'CHANGES.rst', 'LICENSE', 'MANIFEST.in', 'PACKAGING.rst', 'README.rst', 'TESTING.rst', 'qr.1', '__init__.py', 'base.py', 'console_scripts.py', 'constants.py', 'exceptions.py', '__init__.py', 'base.py', 'pil.py', 'pure.py', 'svg.py', 'main.py', '__init__.py', 'svg.py', 'test_example.py', 'test_qrcode.py', 'test_script.py', 'util.py', 'setup.cfg', 'setup.py', 'tox.ini']",['af54a5065e2bfcbab4a018bb9e18ea67c1ba4281'],0,2806,2806,30,0.6054794520547945,0.6164383561643836,0.7077625570776256
+74cb3bc1bc107a8b0f9d72b791d78e4706d27561,"git subrepo clone --branch=0.6.x https://github.com/docopt/docopt subrepos/docopt
+
+subrepo:
+  subdir:   ""subrepos/docopt""
+  merged:   ""5f08e0b""
+upstream:
+  origin:   ""https://github.com/docopt/docopt""
+  branch:   ""0.6.x""
+  commit:   ""5f08e0b""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""a7ee886""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-03-23 19:35:54+01:00,-3600,2018-03-23 19:35:54+01:00,-3600,True,False,"['.gitignore', '.gitrepo', '.travis.yml', 'LICENSE-MIT', 'MANIFEST.in', 'README.rst', 'TODO', 'conftest.py', 'docopt.py', 'arguments_example.py', 'calculator_example.py', 'counted_example.py', 'git.py', 'git_add.py', 'git_branch.py', 'git_checkout.py', 'git_clone.py', 'git_commit.py', 'git_push.py', 'git_remote.py', 'naval_fate.py', 'odd_even_example.py', 'options_example.py', 'options_shortcut_example.py', 'quick_example.py', 'validation_example.py', 'language_agnostic_testee.py', 'language_agnostic_tester.py', 'setup.cfg', 'setup.py', 'test_docopt.py', 'testcases.docopt', 'tox.ini']",['1af12d7fc3ccef5c601588c5bdfbbe71c16b75f3'],0,3247,3247,33,0.5892215568862276,0.7317365269461078,0.8610778443113772
+f585f4308591699049ba0e8f353de004e9c6a7c4,"git subrepo pull --branch=v6.0 subrepos/qrcode
+
+subrepo:
+  subdir:   ""subrepos/qrcode""
+  merged:   ""9a4a0e0""
+upstream:
+  origin:   ""https://github.com/lincolnloop/python-qrcode""
+  branch:   ""v6.0""
+  commit:   ""9a4a0e0""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""a7ee886""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-03-23 19:36:09+01:00,-3600,2018-03-23 19:36:09+01:00,-3600,True,False,"['.coveragerc', '.gitignore', '.gitrepo', 'CHANGES.rst', 'MANIFEST.in', 'README.rst', 'TESTING.rst', 'qr.1', 'LUT.py', 'base.py', 'console_scripts.py', 'pil.py', 'main.py', 'release.py', 'test_qrcode.py', 'test_release.py', 'test_script.py', 'util.py', 'setup.cfg', 'setup.py', 'signing-key.asc', 'tox.ini']",['74cb3bc1bc107a8b0f9d72b791d78e4706d27561'],286,541,827,22,0.0,0.16,0.98
+7a3fef651877e39621c3b6c66d9898c7caf395ca,drop 3.3 because it broke,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-03-23 20:38:48+01:00,-3600,2018-03-23 20:39:16+01:00,-3600,True,False,"['.travis.yml', 'setup.py']",['72b84fa0d3270ec326452314d8d10f4ed09e3c5f'],2,0,2,2,,,
+bcb63311984d4b0253d0aaa8fbbded6ff3d13656,"git subrepo clone --branch=0.3.9 https://github.com/tartley/colorama subrepos/colorama
+
+subrepo:
+  subdir:   ""subrepos/colorama""
+  merged:   ""d83cff2""
+upstream:
+  origin:   ""https://github.com/tartley/colorama""
+  branch:   ""0.3.9""
+  commit:   ""d83cff2""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""a7ee886""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-04-11 21:12:29+02:00,-7200,2018-04-11 21:12:29+02:00,-7200,True,False,"['.gitignore', '.gitrepo', '.travis.yml', 'CHANGELOG.rst', 'LICENSE.txt', 'MANIFEST.in', 'Makefile', 'README.rst', '__init__.py', 'ansi.py', 'ansitowin32.py', 'initialise.py', '__init__.py', 'ansi_test.py', 'ansitowin32_test.py', 'initialise_test.py', 'utils.py', 'winterm_test.py', 'win32.py', 'winterm.py', 'demo.bat', 'demo.sh', 'demo01.py', 'demo02.py', 'demo03.py', 'demo04.py', 'demo05.py', 'demo06.py', 'demo07.py', 'demo08.py', 'fixpath.py', 'requirements-dev.txt', 'requirements.txt', 'ubuntu-demo.png', 'windows-demo.png', 'setup.cfg', 'setup.py', 'tox.ini']",['f585f4308591699049ba0e8f353de004e9c6a7c4'],0,2309,2309,38,0.7246753246753247,0.887012987012987,0.7311688311688311
+8afe362077db08b888efe619a5793091d7f25dce,bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-04-11 22:20:52+02:00,-7200,2018-04-11 22:20:52+02:00,-7200,True,False,['version.py'],['045f7582a3baa0da7840e7ba6d145b944f05711e'],1,1,2,1,,,
+e2c3edc21c41f7ce7a352d43c4c176a409d74fb0,update PyPI link to the new pypi,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-04-11 21:52:41+02:00,-7200,2018-04-11 22:20:55+02:00,-7200,True,False,['README.rst'],['8afe362077db08b888efe619a5793091d7f25dce'],1,1,2,1,,,
+5f5eda63f7785c903340d5ff6b42c62f02bea7f1,bring colorama to the root,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-28 20:34:48+01:00,-3600,2018-04-11 22:20:55+02:00,-7200,True,False,"['__init__.py', 'ansi.py', 'ansitowin32.py', 'initialise.py', 'win32.py', 'winterm.py', 'LICENSE.txt', '.gitignore', '.travis.yml', 'CHANGELOG.rst', 'LICENSE.txt', 'MANIFEST.in', 'Makefile', 'README.rst', '__init__.py', 'ansi_test.py', 'ansitowin32_test.py', 'initialise_test.py', 'utils.py', 'winterm_test.py', 'demo.bat', 'demo.sh', 'demo01.py', 'demo02.py', 'demo03.py', 'demo04.py', 'demo05.py', 'demo06.py', 'demo07.py', 'demo08.py', 'fixpath.py', 'requirements-dev.txt', 'requirements.txt', 'ubuntu-demo.png', 'windows-demo.png', 'setup.cfg', 'setup.py', 'tox.ini']",['1d97bd482e3cd5f81b66fac4b1abbd8215c4475a'],1554,30,1584,38,0.23076923076923078,0.0,0.034739454094292806
+c0f17120e38257f231f5529b204e47b917b811ce,maybe address #3,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-28 20:39:14+01:00,-3600,2018-04-11 22:20:55+02:00,-7200,True,False,['main.py'],['5f5eda63f7785c903340d5ff6b42c62f02bea7f1'],0,5,5,1,0.0,0.0,1.0
+2020f89d9539513cf68afcc8c872c5ac80a7019d,adapt tests,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-01-28 20:54:32+01:00,-3600,2018-04-11 22:21:28+02:00,-7200,True,False,['test.bats'],['c0f17120e38257f231f5529b204e47b917b811ce'],1,30,31,1,,,
+e4af34284fd01fae0776fcec62d4fc979533cb59,migrate to new repository,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-04-30 18:07:20+02:00,-7200,2018-04-30 18:11:40+02:00,-7200,True,False,"['README.rst', 'setup.py']",['a9908c30ef76eb3bf0f867b7f1f18737912a216c'],4,4,8,2,,,
+020b478e5e93e209045f5bb6ac3716ef83526037,release 1.0.5,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-04-11 22:50:50+02:00,-7200,2018-04-30 18:12:04+02:00,-7200,True,False,['setup.py'],['e4af34284fd01fae0776fcec62d4fc979533cb59'],1,2,3,1,,,
+49098029af4abe8995b265de7e6758c6cf0f7f10,reset bottle subrepo (upstream force-push),Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-11-28 21:48:26+01:00,-3600,2018-11-28 21:48:26+01:00,-3600,True,False,"['.coveragerc', '.gitignore', '.gitrepo', '.travis.yml', 'AUTHORS', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.rst', 'bottle.py', 'README.txt', 'update.sh', 'api.po', 'async.po', 'changelog.po', 'configuration.po', 'contact.po', 'deployment.po', 'development.po', 'faq.po', 'index.po', 'plugindev.po', 'plugins.po', 'recipes.po', 'routing.po', 'stpl.po', 'tutorial.po', 'tutorial_app.po', 'api.rst', 'async.rst', 'changelog.rst', 'conf.py', 'configuration.rst', 'contact.rst', 'deployment.rst', 'development.rst', 'faq.rst', 'index.rst', 'plugindev.rst', 'index.rst', 'sqlite.rst', 'werkzeug.rst', 'recipes.rst', 'routing.rst', 'stpl.rst', 'tutorial.rst', 'tutorial_app.rst', 'README', 'bottle_sqlite.py', 'setup.py', 'test.py', 'README', 'bottle_werkzeug.py', 'setup.py', 'test.py', 'setup.py', '.coveragerc', 'build_python.sh', 'servertest.py', 'test_auth.py', 'test_config.py', 'test_configdict.py', 'test_contextlocals.py', 'test_environ.py', 'test_fileupload.py', 'test_formsdict.py', 'test_importhook.py', 'test_jinja2.py', 'test_mako.py', 'test_mdict.py', 'test_mount.py', 'test_outputfilter.py', 'test_plugins.py', 'test_resources.py', 'test_route.py', 'test_router.py', 'test_securecookies.py', 'test_sendfile.py', 'test_server.py', 'test_stpl.py', 'test_wsgi.py', 'testall.py', 'tools.py', 'travis_setup.sh', 'jinja2_base.tpl', 'jinja2_inherit.tpl', 'jinja2_simple.tpl', 'mako_base.tpl', 'mako_inherit.tpl', 'mako_simple.tpl', 'stpl_include.tpl', 'stpl_no_vars.tpl', 'stpl_simple.tpl', 'stpl_t2base.tpl', 'stpl_t2inc.tpl', 'stpl_t2main.tpl', 'stpl_unicode.tpl', 'tox.ini']",['bcb63311984d4b0253d0aaa8fbbded6ff3d13656'],21913,0,21913,98,0.17945849183262474,0.19668829715820094,0.22935779816513763
+b563db5c4a314f154897b127a52d5dcb75816a91,"git subrepo clone --branch=0.12.13 https://github.com/bottlepy/bottle subrepos/bottle
+
+subrepo:
+  subdir:   ""subrepos/bottle""
+  merged:   ""7423aa0""
+upstream:
+  origin:   ""https://github.com/bottlepy/bottle""
+  branch:   ""0.12.13""
+  commit:   ""7423aa0""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""55f8cfd""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-11-28 21:48:55+01:00,-3600,2018-11-28 21:48:55+01:00,-3600,True,False,"['.coveragerc', '.gitignore', '.gitrepo', '.travis.yml', 'AUTHORS', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.rst', 'bottle.py', 'README.txt', 'update.sh', 'api.po', 'async.po', 'changelog.po', 'configuration.po', 'contact.po', 'deployment.po', 'development.po', 'faq.po', 'index.po', 'plugindev.po', 'plugins.po', 'recipes.po', 'routing.po', 'stpl.po', 'tutorial.po', 'tutorial_app.po', 'api.rst', 'async.rst', 'changelog.rst', 'conf.py', 'configuration.rst', 'contact.rst', 'deployment.rst', 'development.rst', 'faq.rst', 'index.rst', 'plugindev.rst', 'index.rst', 'sqlite.rst', 'werkzeug.rst', 'recipes.rst', 'routing.rst', 'stpl.rst', 'tutorial.rst', 'tutorial_app.rst', 'README', 'bottle_sqlite.py', 'setup.py', 'test.py', 'README', 'bottle_werkzeug.py', 'setup.py', 'test.py', 'setup.py', '.coveragerc', 'build_python.sh', 'servertest.py', 'test_auth.py', 'test_config.py', 'test_configdict.py', 'test_contextlocals.py', 'test_environ.py', 'test_fileupload.py', 'test_formsdict.py', 'test_importhook.py', 'test_jinja2.py', 'test_mako.py', 'test_mdict.py', 'test_mount.py', 'test_outputfilter.py', 'test_plugins.py', 'test_resources.py', 'test_route.py', 'test_router.py', 'test_securecookies.py', 'test_sendfile.py', 'test_server.py', 'test_stpl.py', 'test_wsgi.py', 'testall.py', 'tools.py', 'travis_setup.sh', 'jinja2_base.tpl', 'jinja2_inherit.tpl', 'jinja2_simple.tpl', 'mako_base.tpl', 'mako_inherit.tpl', 'mako_simple.tpl', 'stpl_include.tpl', 'stpl_no_vars.tpl', 'stpl_simple.tpl', 'stpl_t2base.tpl', 'stpl_t2inc.tpl', 'stpl_t2main.tpl', 'stpl_unicode.tpl', 'tox.ini']",['49098029af4abe8995b265de7e6758c6cf0f7f10'],0,21913,21913,98,0.8205415081673753,0.8033117028417991,0.7706422018348624
+efe794bb95329e38192ab5578d9e32d0d7a62bb7,"git subrepo pull --branch=0.12.14 subrepos/bottle
+
+subrepo:
+  subdir:   ""subrepos/bottle""
+  merged:   ""7533c5d""
+upstream:
+  origin:   ""https://github.com/bottlepy/bottle""
+  branch:   ""0.12.14""
+  commit:   ""7533c5d""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""55f8cfd""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-11-28 21:50:05+01:00,-3600,2018-11-28 21:50:05+01:00,-3600,True,False,"['.gitrepo', 'bottle.py']",['b563db5c4a314f154897b127a52d5dcb75816a91'],8,10,18,2,1.0,1.0,1.0
+beb29b37dad3a7002baeafd6e5c7ecf82445269f,bump bottle dependency,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-11-28 22:28:16+01:00,-3600,2018-11-28 22:28:16+01:00,-3600,True,False,['setup.py'],['6aad9180d45d15be0724f12acf366518ed8afbd0'],2,2,4,1,,,
+e20f814e78c8488c2044e4c5a0ad27f4da9f88ad,"git subrepo pull --branch=0.12.15 subrepos/bottle
+
+subrepo:
+  subdir:   ""subrepos/bottle""
+  merged:   ""16ba724""
+upstream:
+  origin:   ""https://github.com/bottlepy/bottle""
+  branch:   ""0.12.15""
+  commit:   ""16ba724""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""55f8cfd""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-12-02 19:08:40+01:00,-3600,2018-12-02 19:08:40+01:00,-3600,True,False,"['.gitrepo', 'bottle.py', 'build_python.sh']",['efe794bb95329e38192ab5578d9e32d0d7a62bb7'],7,8,15,3,,,
+4d918edefe2b3f95547a629d80fbd9a838536acb,"git subrepo pull --branch=0.12.16 subrepos/bottle
+
+subrepo:
+  subdir:   ""subrepos/bottle""
+  merged:   ""246c1f6""
+upstream:
+  origin:   ""https://github.com/bottlepy/bottle""
+  branch:   ""0.12.16""
+  commit:   ""246c1f6""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""55f8cfd""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-12-22 18:15:02+01:00,-3600,2018-12-22 18:15:02+01:00,-3600,True,False,"['.gitignore', '.gitrepo', 'bottle.py', 'setup.py']",['e20f814e78c8488c2044e4c5a0ad27f4da9f88ad'],8,10,18,4,,,
+794c3f536ac15858079afcf1026153c136d35096,add maintenance script,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-12-23 18:22:28+01:00,-3600,2018-12-23 18:22:28+01:00,-3600,True,False,['checkout-subrepos.bash'],['a3cd5ab621b2ca768b065d7e7802c3b61ff42c71'],0,41,41,1,,,
+473a19452f408947edcd40e45c494f7fce9772de,"git subrepo pull --branch=0.4.1 subrepos/colorama
+
+subrepo:
+  subdir:   ""subrepos/colorama""
+  merged:   ""d69f83f""
+upstream:
+  origin:   ""https://github.com/tartley/colorama""
+  branch:   ""0.4.1""
+  commit:   ""d69f83f""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""55f8cfd""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-12-23 18:24:22+01:00,-3600,2018-12-23 18:24:22+01:00,-3600,True,False,"['.gitignore', '.gitrepo', '.travis.yml', 'CHANGELOG.rst', 'LICENSE.txt', 'MANIFEST.in', 'Makefile', 'README.rst', '__init__.py', 'ansitowin32.py', 'initialise.py', 'ansi_test.py', 'ansitowin32_test.py', 'initialise_test.py', 'isatty_test.py', 'utils.py', 'winterm_test.py', 'win32.py', 'winterm.py', 'demo.bat', 'demo.sh', 'demo02.py', 'fixpath.py', 'requirements-dev.txt', 'ubuntu-demo.png', 'windows-demo.png', 'setup.cfg', 'setup.py', 'tox.ini']",['4d918edefe2b3f95547a629d80fbd9a838536acb'],140,229,369,29,0.9534883720930233,0.8488372093023255,0.9069767441860465
+2508644b659b6cc47c48539af0c92c4655c26b91,[lint] Keep consistency between uses of os.path,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-12-23 18:41:29+01:00,-3600,2018-12-23 18:41:29+01:00,-3600,True,False,['app.py'],['89b3cd1a93bd708a5eda066ac99e9193885c82ca'],4,3,7,1,,,
+c12c593368f08225c42ed8b57a9fc1c61e53e712,Bump copyright year,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-12-23 18:43:17+01:00,-3600,2018-12-23 18:43:17+01:00,-3600,True,False,"['LICENSE.txt', '__init__.py', 'app.py', 'main.py', 'version.py', 'test.bats']",['2508644b659b6cc47c48539af0c92c4655c26b91'],6,6,12,6,,,
+bfb747eb59a1129c85b46e716ec1eda5976d1c41,Bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-12-23 18:49:58+01:00,-3600,2018-12-23 18:49:58+01:00,-3600,True,False,['version.py'],['c12c593368f08225c42ed8b57a9fc1c61e53e712'],1,1,2,1,,,
+4b7174dcc052d4a762a07ff1c323bd8b52abced3,Add release script,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-12-23 21:14:43+01:00,-3600,2018-12-23 21:14:43+01:00,-3600,True,False,['release.bash'],['beb29b37dad3a7002baeafd6e5c7ecf82445269f'],0,19,19,1,,,
+d82ff0fc9de81c9e0288d6eddf13b421d676ca51,Add Python 3.7 and 3.8-dev to CI,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-12-23 21:26:19+01:00,-3600,2018-12-23 21:26:19+01:00,-3600,True,False,['.travis.yml'],['bfb747eb59a1129c85b46e716ec1eda5976d1c41'],1,2,3,1,,,
+0b3ce79b68fab3200c0337e875210557262f2077,Update dependencies & Bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2018-12-23 22:17:46+01:00,-3600,2018-12-23 22:17:46+01:00,-3600,True,False,['setup.py'],['396cfc1485aa2edcf9207297f39b2c6768072ab6'],3,3,6,1,,,
+891d26c35a6d7be236622a95a5e06bd3eb6d4da4,"git subrepo pull --branch=v6.1 subrepos/qrcode
+
+subrepo:
+  subdir:   ""subrepos/qrcode""
+  merged:   ""d213e02""
+upstream:
+  origin:   ""https://github.com/lincolnloop/python-qrcode""
+  branch:   ""v6.1""
+  commit:   ""d213e02""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""55f8cfd""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-01-15 19:54:07+01:00,-3600,2019-01-15 19:54:07+01:00,-3600,True,False,"['.gitrepo', 'CHANGES.rst', 'qr.1', 'main.py', 'release.py', 'test_qrcode.py', 'test_release.py', 'util.py', 'setup.cfg']",['473a19452f408947edcd40e45c494f7fce9772de'],14,39,53,9,0.6,0.0,1.0
+5d01d619dc9963e74365f03ee35e66f3f07eeeaf,fix CI,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-11 16:50:26+02:00,-7200,2019-06-11 16:50:26+02:00,-7200,True,False,['.travis.yml'],['d82ff0fc9de81c9e0288d6eddf13b421d676ca51'],0,1,1,1,,,
+0e53cd1fb4e9aae8564d56aee6db00ec65e3a7a1,add (not yet passing) tests for issue #6,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-11 18:27:09+02:00,-7200,2019-06-11 18:27:09+02:00,-7200,True,False,['test.bats'],['5d01d619dc9963e74365f03ee35e66f3f07eeeaf'],0,35,35,1,,,
+022c0fb2c509d4d58e2a1ba2eab9d15b21efea3e,tentatively fix #6,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-11 19:22:18+02:00,-7200,2019-06-11 19:22:18+02:00,-7200,True,False,['_index.stpl'],['0e53cd1fb4e9aae8564d56aee6db00ec65e3a7a1'],1,2,3,1,,,
+fcee80ca081193eec35bfdaa1a2d38708434a2ab,adapt tests,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-11 19:24:03+02:00,-7200,2019-06-11 19:24:03+02:00,-7200,True,False,['test.bats'],['022c0fb2c509d4d58e2a1ba2eab9d15b21efea3e'],4,6,10,1,,,
+bd8f2f5bdce615f926f9786a1ba0fece20b718ce,"remove \ from special characters
+
+Doesn't work in Firefox 67. It's a bit of a stretch anyway so I'm ok with that.",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-11 19:25:07+02:00,-7200,2019-06-11 19:25:07+02:00,-7200,True,False,['test.bats'],['fcee80ca081193eec35bfdaa1a2d38708434a2ab'],3,3,6,1,,,
+ff80d01adc0bba71e4b89bacd2a269f596948ea0,Add more characters,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-11 19:35:22+02:00,-7200,2019-06-11 19:35:22+02:00,-7200,True,False,['test.bats'],['bd8f2f5bdce615f926f9786a1ba0fece20b718ce'],3,3,6,1,,,
+79d00975e3ff773ac044804e58d3d7ea2e3be9a7,Add even more characters,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-11 19:43:03+02:00,-7200,2019-06-11 19:43:03+02:00,-7200,True,False,['test.bats'],['ff80d01adc0bba71e4b89bacd2a269f596948ea0'],3,3,6,1,,,
+95b2cae2392190654a98cdfbee47aa0fd4e3f7f6,fix Python 2,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-11 22:16:23+02:00,-7200,2019-06-11 23:27:09+02:00,-7200,True,False,"['_index.stpl', '__init__.py', '__init__.py', 'parse.py']",['79d00975e3ff773ac044804e58d3d7ea2e3be9a7'],1,11,12,4,,,
+f572fed5351540f2ecd31c46da0fb04bbb9539af,"fix differing urllib behavior
+
+Old versions escape ~. It should work the same either way.",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-11 23:38:27+02:00,-7200,2019-06-11 23:38:27+02:00,-7200,True,False,['test.bats'],['95b2cae2392190654a98cdfbee47aa0fd4e3f7f6'],6,11,17,1,,,
+c19417491137e490f8058155231aca2bc9c39dce,add nix build expression,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-12 15:17:20+02:00,-7200,2019-06-12 15:17:20+02:00,-7200,True,False,['default.nix'],['a1f3ad2760cf060e28145e91b52fc4d7414cde6c'],0,30,30,1,,,
+3a44a6eace3a726a0ba6fbc354b14bd0deee04d2,"git subrepo pull --branch=0.12.17 subrepos/bottle
+
+subrepo:
+  subdir:   ""subrepos/bottle""
+  merged:   ""fb4ecad""
+upstream:
+  origin:   ""https://github.com/bottlepy/bottle""
+  branch:   ""0.12.17""
+  commit:   ""fb4ecad""
+git-subrepo:
+  version:  ""0.3.1""
+  origin:   ""https://github.com/ingydotnet/git-subrepo""
+  commit:   ""55f8cfd""",Louis Bettens,louis.bettens@epfl.ch,Louis Bettens,louis.bettens@epfl.ch,2019-06-30 19:52:13+02:00,-7200,2019-06-30 19:52:13+02:00,-7200,True,False,"['.gitrepo', 'bottle.py']",['891d26c35a6d7be236622a95a5e06bd3eb6d4da4'],7,9,16,2,1.0,0.0,1.0
+3baa637162b331d1df56e8525b9900ccd2bff78a,bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-06-30 20:57:38+02:00,-7200,2019-06-30 20:57:38+02:00,-7200,True,False,['version.py'],['898b867ecd227f11b4d49867b89f7b11c838b957'],1,1,2,1,,,
+36e125e98567c941e72bff5fc25b59cb3ed26b86,filter pycache when making zipapp,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-07-02 22:53:58+02:00,-7200,2019-07-02 22:53:58+02:00,-7200,True,False,['make_zipapp.py'],['3baa637162b331d1df56e8525b9900ccd2bff78a'],0,2,2,1,,,
+0b4094d84a832e8705750d41dde1098aa48362ff,loosen PyPI dependencies,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-07-03 16:38:47+02:00,-7200,2019-07-03 16:38:47+02:00,-7200,True,False,['setup.py'],['ee66c7b1647083ec99858a06447785a01f578a7f'],4,4,8,1,,,
+7213f7e6a9ec19074f7c4a1f6cc372d0f66d60f1,fix subpackages inclusion,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-07-03 19:22:42+02:00,-7200,2019-07-03 19:25:13+02:00,-7200,True,False,['setup.py'],['0b4094d84a832e8705750d41dde1098aa48362ff'],1,1,2,1,,,
+c0a08c7ddbf594d8830c5754d32875f5f5c8e843,Deploy on PyPI via CI,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-07-03 22:19:54+02:00,-7200,2019-07-03 22:34:53+02:00,-7200,True,False,['.travis.yml'],['7213f7e6a9ec19074f7c4a1f6cc372d0f66d60f1'],0,10,10,1,,,
+542bdfa1b28c2660ec6164fda519df276c586799,Check version consistency in CI,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-07-03 22:21:34+02:00,-7200,2019-07-03 22:59:11+02:00,-7200,True,False,['.travis.yml'],['c0a08c7ddbf594d8830c5754d32875f5f5c8e843'],0,3,3,1,,,
+4afce05be52a72f4d68491add3b826b8b09b967d,release 1.0.7,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-07-03 22:22:07+02:00,-7200,2019-07-03 22:59:11+02:00,-7200,True,False,['setup.py'],['542bdfa1b28c2660ec6164fda519df276c586799'],1,1,2,1,,,
+1eb63e14c713ac1cfb70cf61668ff20a0399ad16,refactor nix expression,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-07-22 23:47:38+02:00,-7200,2019-07-25 20:59:04+02:00,-7200,True,False,"['default.nix', 'package.nix']",['36e125e98567c941e72bff5fc25b59cb3ed26b86'],18,21,39,2,,,
+8bf619b3bae2dba9fb120947f50ad93c4fb19457,adapt nix expression to PyPI,Louis Bettens,louis.bettens@epfl.ch,Louis Bettens,louis.bettens@epfl.ch,2019-08-03 21:49:00+02:00,-7200,2019-08-03 21:49:00+02:00,-7200,True,False,"['default.nix', 'package.nix']",['cb4bf38bc224a1e8d77ec2d4f8cd0da3bc21130d'],17,21,38,2,,,
+94bce761b667de8d8a434cd9d903f08f03efa407,add 3.7 tag on PyPI,Louis Bettens,louis.bettens@epfl.ch,Louis Bettens,louis.bettens@epfl.ch,2019-08-03 21:51:16+02:00,-7200,2019-08-03 21:52:32+02:00,-7200,True,False,['setup.py'],['8bf619b3bae2dba9fb120947f50ad93c4fb19457'],1,2,3,1,,,
+e3d1467675267aa90533aa45b2d6cec21bc89423,use a nixpkgs helper instead of ad-hoc,Louis Bettens,louis.bettens@epfl.ch,Louis Bettens,louis.bettens@epfl.ch,2019-08-03 23:51:53+02:00,-7200,2019-08-03 23:51:53+02:00,-7200,True,False,['package.nix'],['1eb63e14c713ac1cfb70cf61668ff20a0399ad16'],4,2,6,1,,,
+8b1003b64661181eb520512aea7be611fd88f858,fix derivation for NixOS,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-10-15 19:08:47+02:00,-7200,2019-10-15 19:08:47+02:00,-7200,True,False,['package.nix'],['e3d1467675267aa90533aa45b2d6cec21bc89423'],2,3,5,1,,,
+203049bb28a8f4ab0e0bed494cfe4152e5b5125d,refactor nix expression,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-10-15 21:03:08+02:00,-7200,2019-10-16 23:04:52+02:00,-7200,True,False,['package.nix'],['8b1003b64661181eb520512aea7be611fd88f858'],5,19,24,1,,,
+03c01c4bfcc7b6514cc2a051ed589bc7c7c4db79,Lint nix expression,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-10-16 22:22:42+02:00,-7200,2019-10-16 23:06:50+02:00,-7200,True,False,['package.nix'],['203049bb28a8f4ab0e0bed494cfe4152e5b5125d'],22,22,44,1,,,
+072dc1d8e7c5fb083357cf2eb62f30ad86dab59f,add nix metadata,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-10-16 22:57:21+02:00,-7200,2019-10-16 23:06:52+02:00,-7200,True,False,['package.nix'],['03c01c4bfcc7b6514cc2a051ed589bc7c7c4db79'],0,11,11,1,,,
+3b2301d5a2b13b80af70572b817bb783ab55d004,bump pinned Nixpkgs,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-10-16 23:14:21+02:00,-7200,2019-10-16 23:14:25+02:00,-7200,True,False,['default.nix'],['072dc1d8e7c5fb083357cf2eb62f30ad86dab59f'],2,2,4,1,,,
+4a8376495287686735dfe6a592f5ead3d40025e1,add regression tests for issue #8,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-10-28 16:59:51+01:00,-3600,2019-10-28 17:09:57+01:00,-3600,True,False,['test.bats'],['3b2301d5a2b13b80af70572b817bb783ab55d004'],0,37,37,1,,,
+2a7fa5399e8fc8075994fc88f6f347ec1eb03a65,add tests in nix expression,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-12-07 14:36:25+01:00,-3600,2019-12-07 14:36:25+01:00,-3600,True,False,['package.nix'],['4a8376495287686735dfe6a592f5ead3d40025e1'],2,10,12,1,,,
+7778079d411ce3448c26ee7918b3951c13c4c3d9,make test.bats locale independent,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-12-07 14:47:40+01:00,-3600,2019-12-07 14:47:40+01:00,-3600,True,False,"['package.nix', 'test.bats']",['2a7fa5399e8fc8075994fc88f6f347ec1eb03a65'],2,2,4,2,,,
+e3a8b76bb9df118a935fd3229a083f559345678e,fix botched test,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2019-12-07 14:59:46+01:00,-3600,2019-12-07 14:59:46+01:00,-3600,True,False,['test.bats'],['7778079d411ce3448c26ee7918b3951c13c4c3d9'],2,1,3,1,,,
+6504255c710e187df06be0d5d5568b6057f5d850,Roll out new key,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-14 16:00:35+01:00,-3600,2020-02-14 16:00:35+01:00,-3600,True,False,['release_key.asc'],['e3a8b76bb9df118a935fd3229a083f559345678e'],60,37,97,1,,,
+b3064d9704b2dbee98bf29432fe38f9d76f9d5b8,Bump copyright year,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-14 16:13:09+01:00,-3600,2020-02-14 16:13:09+01:00,-3600,True,False,"['LICENSE.txt', '__init__.py', 'app.py', 'parse.py', 'main.py', 'version.py', 'test.bats']",['6504255c710e187df06be0d5d5568b6057f5d850'],7,7,14,7,,,
+53af63f56a53dda0a4ff30b94e74da3755fd2276,"Nuke version prefixes, what even was I thinking?",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-14 22:39:26+01:00,-3600,2020-02-14 22:39:26+01:00,-3600,True,False,['version.py'],['b3064d9704b2dbee98bf29432fe38f9d76f9d5b8'],6,1,7,1,,,
+2762d4a3f9d884d416ea94d238b3dee47c9dd288,[nix] Enable checks and add sane shell,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-14 22:41:49+01:00,-3600,2020-02-14 22:41:49+01:00,-3600,True,False,"['package.nix', 'shell.nix']",['53af63f56a53dda0a4ff30b94e74da3755fd2276'],1,3,4,2,,,
+3f30a93608b40d3e4f6b9cd2b054d7f207d8d18d,[direnv] Add .envrc,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-14 22:44:42+01:00,-3600,2020-02-14 22:44:42+01:00,-3600,True,False,['.envrc'],['2762d4a3f9d884d416ea94d238b3dee47c9dd288'],0,1,1,1,,,
+fc438a50b2ffdc13bea89567df33892843946281,Refactor version info,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-14 23:17:05+01:00,-3600,2020-02-14 23:23:41+01:00,-3600,True,False,"['package.nix', 'version.json', 'version.py']",['3f30a93608b40d3e4f6b9cd2b054d7f207d8d18d'],7,18,25,3,,,
+028ff808e22196dd8f7d6e8ac85f062436270cfa,Bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-14 23:20:22+01:00,-3600,2020-02-14 23:24:11+01:00,-3600,True,False,['version.json'],['fc438a50b2ffdc13bea89567df33892843946281'],1,1,2,1,,,
+ca5f83a72225ecb0b763e96e147bea5c71cb59fe,Fix TypeError on some versions,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-19 19:01:50+01:00,-3600,2020-02-19 19:26:50+01:00,-3600,True,False,['version.py'],['028ff808e22196dd8f7d6e8ac85f062436270cfa'],1,1,2,1,,,
+d8414b1bad49ad852202f401d8d2258b357ff37b,Improve nix expression,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-19 19:33:04+01:00,-3600,2020-02-19 19:33:04+01:00,-3600,True,False,"['package.nix', 'test.bats']",['ca5f83a72225ecb0b763e96e147bea5c71cb59fe'],15,14,29,2,,,
+6b1a280f36dede27d9e1359d347316928b271128,Refactor nix more,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-19 21:02:24+01:00,-3600,2020-02-19 21:02:24+01:00,-3600,True,False,['package.nix'],['d8414b1bad49ad852202f401d8d2258b357ff37b'],5,3,8,1,,,
+e2ba83ea780a5f6262ae9196e55c9fc23ec8b06a,[nix] Add (install)check phase,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-19 21:38:44+01:00,-3600,2020-02-19 21:38:44+01:00,-3600,True,False,"['package.nix', 'setup.py']",['ac1341ce71d608484c8a0aaa63ee5491f392f362'],2,7,9,2,,,
+ceffa52ad137394e8d8c93643a5966e4e7e71382,Bump bottle dep (bottlepy/bottle#1148),Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-19 21:41:11+01:00,-3600,2020-02-19 21:41:11+01:00,-3600,True,False,['setup.py'],['e2ba83ea780a5f6262ae9196e55c9fc23ec8b06a'],1,1,2,1,,,
+cf2719b6d9cb4cc8ed07932f9bcd704943547204,Add python 3.8 support,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-19 21:44:30+01:00,-3600,2020-02-19 21:44:30+01:00,-3600,True,False,"['.travis.yml', 'setup.py']",['ceffa52ad137394e8d8c93643a5966e4e7e71382'],1,2,3,2,,,
+749af6ae3f0689ac15b572befff9c36036ee6c26,Bump pypi version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-19 21:47:41+01:00,-3600,2020-02-19 21:47:41+01:00,-3600,True,False,['setup.py'],['cf2719b6d9cb4cc8ed07932f9bcd704943547204'],1,1,2,1,,,
+5cf48e205ff86fc3d79f0caf75ff30bc5bd92269,"git subrepo pull --branch=0.12.18 subrepos/bottle
+
+subrepo:
+  subdir:   ""subrepos/bottle""
+  merged:   ""1d531f7""
+upstream:
+  origin:   ""https://github.com/bottlepy/bottle""
+  branch:   ""0.12.18""
+  commit:   ""1d531f7""
+git-subrepo:
+  version:  ""0.4.1""
+  origin:   ""???""
+  commit:   ""???""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-19 22:03:25+01:00,-3600,2020-02-19 22:03:25+01:00,-3600,True,False,"['.gitrepo', 'Makefile', 'bottle.py']",['3a44a6eace3a726a0ba6fbc354b14bd0deee04d2'],21,37,58,3,,,
+fb5acd7b0886e475f4d93afb5658bf5297105391,"git subrepo pull --branch=0.4.3 subrepos/colorama
+
+subrepo:
+  subdir:   ""subrepos/colorama""
+  merged:   ""38e444a""
+upstream:
+  origin:   ""https://github.com/tartley/colorama""
+  branch:   ""0.4.3""
+  commit:   ""38e444a""
+git-subrepo:
+  version:  ""0.4.1""
+  origin:   ""???""
+  commit:   ""???""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-19 22:05:57+01:00,-3600,2020-02-19 22:05:57+01:00,-3600,True,False,"['FUNDING.yml', '.gitrepo', '.travis.yml', 'CHANGELOG.rst', 'ENTERPRISE.md', 'Makefile', 'README.rst', 'SECURITY.md', '__init__.py', 'demo.bat', 'demo.sh', 'demo05.py', 'requirements-dev.txt', 'setup.py', 'tox.ini']",['5cf48e205ff86fc3d79f0caf75ff30bc5bd92269'],27,134,161,15,,,
+733d1a0edd0dfdd8e44218e7e2bcc6d49d172a05,Dump obsolete maintainer script,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2020-02-19 22:13:38+01:00,-3600,2020-02-19 22:13:38+01:00,-3600,True,False,['checkout-subrepos.bash'],['0d6d40f0a909e63e4590bf24e0083c8fe93bd252'],41,0,41,1,,,
+1ee7b9b4e4af9a6cc87a7dc58d50895452d81948,"git subrepo pull --branch=0.12.19 subrepos/bottle
+
+subrepo:
+  subdir:   ""subrepos/bottle""
+  merged:   ""1522198""
+upstream:
+  origin:   ""https://github.com/bottlepy/bottle""
+  branch:   ""0.12.19""
+  commit:   ""1522198""
+git-subrepo:
+  version:  ""0.4.1""
+  origin:   ""???""
+  commit:   ""???""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2021-02-01 11:40:45+01:00,-3600,2021-02-01 11:40:45+01:00,-3600,True,False,"['.gitrepo', 'Makefile', 'bottle.py']",['fb5acd7b0886e475f4d93afb5658bf5297105391'],8,8,16,3,,,
+abf08c657d41615f3e02d39a9a7103afe9a54c41,fix build,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-04-19 16:21:28+02:00,-7200,2022-04-19 16:21:28+02:00,-7200,True,False,"['default.nix', 'package.nix']",['67f70c87cfff98127187d5e889e65b60f8ce7eae'],14,3,17,2,,,
+e7da2c4610c4b74e43627646693b4018e5230a24,flakify,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-04-19 17:24:12+02:00,-7200,2022-04-19 17:24:12+02:00,-7200,True,False,"['.envrc', '.gitignore', 'default.nix', 'flake.lock', 'flake.nix', 'devshell.nix', 'flake-compat.nix', 'package.nix', 'package.nix', 'shell.nix']",['abf08c657d41615f3e02d39a9a7103afe9a54c41'],60,157,217,10,,,
+ac3831c775d6ec8383ea5480e3dc42b6d7e5105c,"git subrepo pull --branch=0.12.20 subrepos/bottle
+
+subrepo:
+  subdir:   ""subrepos/bottle""
+  merged:   ""a2b0ee6""
+upstream:
+  origin:   ""https://github.com/bottlepy/bottle""
+  branch:   ""0.12.20""
+  commit:   ""a2b0ee6""
+git-subrepo:
+  version:  ""0.4.1""
+  origin:   ""???""
+  commit:   ""???""",Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-05-26 17:50:59+02:00,-7200,2022-05-26 17:50:59+02:00,-7200,True,False,"['.gitrepo', 'bottle.py']",['1ee7b9b4e4af9a6cc87a7dc58d50895452d81948'],16,45,61,2,0.05,0.85,1.0
+132be9e074bc69840cf71ee7b149d42e5cdb33e6,bump version,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-05-26 17:58:32+02:00,-7200,2022-05-26 17:58:32+02:00,-7200,True,False,['version.json'],['4f0b8c5e58ee5147efd10c369d654c0190ef213e'],1,1,2,1,,,
+6f4818080525eb689156ffff26e0f736e85d2543,bump copyright year,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-05-26 18:02:45+02:00,-7200,2022-05-26 18:02:45+02:00,-7200,True,False,"['LICENSE.txt', '__init__.py', 'app.py', 'parse.py', 'main.py', 'version.py', 'test.bats']",['132be9e074bc69840cf71ee7b149d42e5cdb33e6'],7,7,14,7,,,
+ecf9b86554e687b6716e12d6bafd8c4fea2202df,nix: fix metadata,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-06-15 16:45:04+02:00,-7200,2022-06-15 16:45:04+02:00,-7200,True,False,['package.nix'],['6f4818080525eb689156ffff26e0f736e85d2543'],1,1,2,1,,,
+dee95c2f674c953792d8678da05136c847fcec90,ci: roll python versions,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-06-15 16:51:07+02:00,-7200,2022-06-15 16:59:46+02:00,-7200,True,False,['.travis.yml'],['ecf9b86554e687b6716e12d6bafd8c4fea2202df'],4,4,8,1,,,
+8fbfff198af1d361e9b2d541dd0ac630c77f85a6,bump deps,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-06-15 17:34:14+02:00,-7200,2022-06-15 17:34:14+02:00,-7200,True,False,['setup.py'],['a100ac7656790992410682c7a3714fc21b55a0a5'],2,2,4,1,,,
+5dfa2afb4682bfbb66bfd3ccbb7a6c53dcc96e32,fix LICENSE.txt,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-06-15 17:43:48+02:00,-7200,2022-06-15 17:43:48+02:00,-7200,True,False,['LICENSE.txt'],['8fbfff198af1d361e9b2d541dd0ac630c77f85a6'],1,1,2,1,,,
+ee1c0dc87e3f1a8cc5353fbad9a5b17c1308e253,release 1.0.9,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-06-15 17:50:09+02:00,-7200,2022-06-15 18:04:23+02:00,-7200,True,False,['setup.py'],['5dfa2afb4682bfbb66bfd3ccbb7a6c53dcc96e32'],1,1,2,1,,,
+7a01101b6e41052d751164bd2c328eae2d003af3,ci: lint config,Louis Bettens,louis@bettens.info,Louis Bettens,louis@bettens.info,2022-06-15 18:12:54+02:00,-7200,2022-06-15 18:12:54+02:00,-7200,True,False,['.travis.yml'],['ee1c0dc87e3f1a8cc5353fbad9a5b17c1308e253'],2,1,3,1,,,

@@ -1,0 +1,49 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+7a6ab750ca85d30bc46cb69a991430f0124cd746,Initial commit,s-holst,mail@s-holst.de,GitHub,noreply@github.com,2020-10-29 12:10:43+09:00,-32400,2020-10-29 12:10:43+09:00,-32400,True,False,['LICENSE'],[],0,21,21,1,,,
+0c5a7f56e10265d0ce95aac8302762da2d6c3d09,Project Import,Stefan Holst,mail@s-holst.de,Stefan Holst,mail@s-holst.de,2020-10-29 16:45:33+09:00,-32400,2020-10-29 16:45:33+09:00,-32400,True,False,"['.gitignore', 'README.md', 'UsageExamples.ipynb', '__init__.py', 'bench.py', 'bittools.py', 'circuit.py', 'logic_sim.py', 'packed_vectors.py', 'saed.py', 'sdf.py', 'stil.py', 'verilog.py', 'wave_sim.py', 'wave_sim_cuda.py', '__init__.py', 'b01.bench', 'b01.v', 'b14.sdf.gz', 'b14.stil.gz', 'b14.v.gz', 'conftest.py', 'gates.sdf', 'gates.v', 'test_bench.py', 'test_circuit.py', 'test_logic_sim.py', 'test_packed_vectors.py', 'test_sdf.py', 'test_stil.py', 'test_verilog.py', 'test_wave_sim.py']",['7a6ab750ca85d30bc46cb69a991430f0124cd746'],0,4083,4083,32,0.3496133496133496,0.5604395604395604,0.5612535612535613
+3ad95153ab4c193586d106dd2561484df7d10dfd,"support more SAED cells, improve verilog parsing, fix inspection warnings",Stefan Holst,mail@s-holst.de,Stefan Holst,mail@s-holst.de,2020-11-23 14:18:27+09:00,-32400,2020-11-23 14:18:27+09:00,-32400,True,False,"['__init__.py', 'saed.py', 'sdf.py', 'verilog.py']",['0c5a7f56e10265d0ce95aac8302762da2d6c3d09'],15,133,148,4,0.23076923076923078,0.0,1.0
+1af346c97a08c9992691322fa0b3697f2cce70b7,overflow notification and wavecap statistics on GPU,Stefan Holst,mail@s-holst.de,Stefan Holst,mail@s-holst.de,2020-11-23 15:11:42+09:00,-32400,2020-11-23 15:11:42+09:00,-32400,True,False,"['wave_sim.py', 'wave_sim_cuda.py', 'test_wave_sim.py']",['3ad95153ab4c193586d106dd2561484df7d10dfd'],28,72,100,3,0.5142857142857142,0.14285714285714285,0.14285714285714285
+6bba7ac359351554535c7af757057fd3100ac61e,support for stripping forks and memory re-use in wavesim.,Stefan Holst,mail@s-holst.de,Stefan Holst,mail@s-holst.de,2020-11-28 10:39:13+09:00,-32400,2020-11-28 10:39:13+09:00,-32400,True,False,"['wave_sim.py', 'wave_sim_cuda.py', 'test_wave_sim.py']",['1af346c97a08c9992691322fa0b3697f2cce70b7'],51,170,221,3,0.20430107526881722,0.3763440860215054,0.6881720430107527
+e1101b5b70fd4db2a9ccc3bdd29e927a2e0957c5,"fix loading of stuck-at fault patterns, support ibuff cell",Stefan Holst,holst@ci.kyutech.ac.jp,Stefan Holst,holst@ci.kyutech.ac.jp,2020-11-29 14:50:16+09:00,-32400,2020-11-29 14:50:16+09:00,-32400,True,False,"['logic_sim.py', 'stil.py']",['6bba7ac359351554535c7af757057fd3100ac61e'],3,9,12,2,0.5,0.5,0.5
+e6ae00996908706a27512ad76c31e84f9c1df38a,"updated b14 benchmark, update wavesim capture api, expand usage examples",Stefan Holst,holst@ci.kyutech.ac.jp,Stefan Holst,holst@ci.kyutech.ac.jp,2020-11-29 22:32:47+09:00,-32400,2020-11-29 22:32:47+09:00,-32400,True,False,"['UsageExamples.ipynb', 'stil.py', 'wave_sim.py', 'wave_sim_cuda.py', 'b14.sdf.gz', 'b14.stil.gz', 'b14.stuck.stil.gz', 'b14.transition.stil.gz', 'b14.v.gz', 'test_stil.py', 'test_wave_sim.py']",['e1101b5b70fd4db2a9ccc3bdd29e927a2e0957c5'],91,624,715,11,1.0,1.0,0.0
+765cb70ca3d06c65e9dcbd864480718d902a1889,add logic depth example,Stefan Holst,holst@ci.kyutech.ac.jp,Stefan Holst,holst@ci.kyutech.ac.jp,2020-12-03 12:15:35+09:00,-32400,2020-12-03 12:15:35+09:00,-32400,True,False,['UsageExamples.ipynb'],['e6ae00996908706a27512ad76c31e84f9c1df38a'],41,157,198,1,,,
+08a22cf2518b52274b9b9a7423cc8ee28d8477f6,"move sources to src, add package info and release 0.0.1",Stefan Holst,mail@s-holst.de,Stefan Holst,mail@s-holst.de,2020-12-04 17:58:33+09:00,-32400,2020-12-04 17:58:33+09:00,-32400,True,False,"['LICENSE.txt', 'MANIFEST.in', 'README.md', 'setup.py', '__init__.py', 'bench.py', 'bittools.py', 'circuit.py', 'logic_sim.py', 'packed_vectors.py', 'saed.py', 'sdf.py', 'stil.py', 'verilog.py', 'wave_sim.py', 'wave_sim_cuda.py']",['765cb70ca3d06c65e9dcbd864480718d902a1889'],8,79,87,16,,,
+64e1de396fd3166d82464fe045a406415927460a,"New m-valued logic arrays, documentation, 0.0.2
+
+- MVArray for multi-valued logic
+- BPArray for bit-parallel storage layout
+- Started documenting with Sphinx
+- Migrated simulators to new BPArray",Stefan Holst,mail@s-holst.de,Stefan Holst,mail@s-holst.de,2020-12-21 20:44:23+09:00,-32400,2020-12-21 20:44:23+09:00,-32400,True,False,"['.gitignore', 'Demo.ipynb', 'README.md', 'README.rst', 'Makefile', 'conf.py', 'datastructures.rst', 'index.rst', 'parsers.rst', 'simulators.rst', 'setup.py', '__init__.py', 'bench.py', 'bittools.py', 'circuit.py', 'logic.py', 'logic_sim.py', 'packed_vectors.py', 'sdf.py', 'stil.py', 'verilog.py', 'wave_sim.py', 'wave_sim_cuda.py', 'test_bench.py', 'test_circuit.py', 'test_logic.py', 'test_logic_sim.py', 'test_packed_vectors.py', 'test_sdf.py', 'test_stil.py', 'test_verilog.py', 'test_wave_sim.py']",['08a22cf2518b52274b9b9a7423cc8ee28d8477f6'],1476,1847,3323,32,0.39316239316239315,0.0,0.6923076923076923
+c9445f2d79d81f404688c68f71fb63802ca64f31,"Docs, __index__, fault injection and TechLib
+
+- Documentation improvements
+- Node and Line objects now provide __index__
+- LogicSim cleanup and improvements (inject_cb, cycle, ...)
+- Introduce TechLib class to organize tech-specific info
+- More human-readable output
+- De-linting",Stefan Holst,mail@s-holst.de,Stefan Holst,mail@s-holst.de,2021-01-16 14:48:27+09:00,-32400,2021-01-16 14:48:27+09:00,-32400,True,False,"['Demo.ipynb', 'LICENSE.txt', 'conf.py', 'index.rst', 'miscellaneous.rst', 'simulators.rst', 'setup.py', '__init__.py', 'bench.py', 'circuit.py', 'logic.py', 'logic_sim.py', 'saed.py', 'sdf.py', 'stil.py', 'techlib.py', 'verilog.py', 'wave_sim.py', 'test_bench.py', 'test_logic_sim.py', 'test_sdf.py', 'test_stil.py', 'test_wave_sim.py']",['64e1de396fd3166d82464fe045a406415927460a'],771,1002,1773,23,0.0,0.0,1.0
+b17ab2d1485928d8d7d92a9043476db48eab7cc7,fixes for IWLS benchmark netlists and older STIL files,Stefan Holst,mail@s-holst.de,Stefan Holst,mail@s-holst.de,2021-01-31 18:28:56+09:00,-32400,2021-01-31 18:28:56+09:00,-32400,True,False,"['logic_sim.py', 'sdf.py', 'stil.py', 'techlib.py', 'verilog.py']",['c9445f2d79d81f404688c68f71fb63802ca64f31'],61,79,140,5,0.0,0.0,0.9230769230769231
+840b816804603c3cad1e366fe3acf71cc2cb3ce9,"Circuit pickle, STIL/SDF/techlib fixes, sdata
+- fix pin indices for various SC lib variants
+- SDF annotation improvements
+- STIL loading improvements
+- Support for per-simulation parameters in WaveSim
+- Circuit is now pickleable and comparable",Stefan Holst,holst@ci.kyutech.ac.jp,Stefan Holst,holst@ci.kyutech.ac.jp,2022-07-21 22:01:51+09:00,-32400,2022-07-21 22:01:51+09:00,-32400,True,False,"['Demo.ipynb', 'LICENSE.txt', 'setup.py', '__init__.py', 'circuit.py', 'logic.py', 'logic_sim.py', 'sdf.py', 'stil.py', 'techlib.py', 'wave_sim.py', 'test_circuit.py', 'test_logic.py', 'test_logic_sim.py', 'test_stil.py', 'test_wave_sim.py']",['b17ab2d1485928d8d7d92a9043476db48eab7cc7'],110,371,481,16,0.40298507462686567,0.8308457711442786,0.48258706467661694
+351d80930604f39571300716ee7508db2abeebe2,"for release 0.0.4
+
+- Circuit: is now pickleable and comparable
+- Circuit: utilities for locating/indexing io-ports
+- Verilog: parser fixes, support yosys-style verilog
+- SDF: parser fixes, full XOR support
+- STIL: parser fixes
+- Simulators: faster, up to 4-input cells, pickleable
+- WaveSim: WSA calculation support
+- WaveSim: Per-simulation parameters and delays
+- Logic: Data are now raw numpy arrays
+- Logic: More tools for bit-packing
+- Added DEF parser
+- Better techlib support for NanGate, SAED, GSC180
+- Tests and docs improvements",Stefan Holst,holst@ci.kyutech.ac.jp,Stefan Holst,holst@ci.kyutech.ac.jp,2023-07-22 16:13:01+09:00,-32400,2023-07-22 16:13:01+09:00,-32400,True,False,"['.gitignore', 'Demo.ipynb', 'LICENSE.txt', 'MANIFEST.in', 'README.rst', 'Makefile', 'circuit.rst', 'conf.py', 'datastructures.rst', 'index.rst', 'logic.rst', 'miscellaneous.rst', 'parsers.rst', 'simulators.rst', 'techlib.rst', 'Introduction.ipynb', 'setup.py', '__init__.py', 'bench.py', 'circuit.py', 'def_file.py', 'logic.py', 'logic_sim.py', 'sdf.py', 'sim.py', 'stil.py', 'techlib.py', 'verilog.py', 'wave_sim.py', 'b14.sdf.gz', 'b14.stuck.stil.gz', 'b14.transition.stil.gz', 'b14.v.gz', 'b15_2ig.sa_nf.stil.gz', 'b15_2ig.sdf.gz', 'b15_2ig.tf_nf.stil.gz', 'b15_2ig.v.gz', 'b15_4ig.sdf.gz', 'b15_4ig.v.gz', 'conftest.py', 'rng_haltonBase2.synth_yosys.v', 'test_bench.py', 'test_circuit.py', 'test_logic.py', 'test_logic_sim.py', 'test_sdf.py', 'test_stil.py', 'test_verilog.py', 'test_wave_sim.py']",['840b816804603c3cad1e366fe3acf71cc2cb3ce9'],3873,7176,11049,49,1.0,1.0,1.0
+821ead0c7a7219ccc1fd70790bbf0301957e8629,add readthedocs conf for py3.8,Stefan Holst,holst@ci.kyutech.ac.jp,Stefan Holst,holst@ci.kyutech.ac.jp,2023-07-22 16:34:57+09:00,-32400,2023-07-22 16:34:57+09:00,-32400,True,False,['.readthedocs.yaml'],['351d80930604f39571300716ee7508db2abeebe2'],0,6,6,1,,,
+eb4e0f45295870247aab14b4c615ccf5d6140e6a,improve readthedocs config,Stefan Holst,holst@ci.kyutech.ac.jp,Stefan Holst,holst@ci.kyutech.ac.jp,2023-07-22 16:40:57+09:00,-32400,2023-07-22 16:40:57+09:00,-32400,True,False,['.readthedocs.yaml'],['821ead0c7a7219ccc1fd70790bbf0301957e8629'],1,10,11,1,,,
+9f9902c6132ca845c7f7d14c441c7cc3a83da81f,remove _static,Stefan Holst,holst@ci.kyutech.ac.jp,Stefan Holst,holst@ci.kyutech.ac.jp,2023-07-22 16:48:51+09:00,-32400,2023-07-22 16:48:51+09:00,-32400,True,False,['conf.py'],['eb4e0f45295870247aab14b4c615ccf5d6140e6a'],1,1,2,1,,,

@@ -1,0 +1,1119 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+92feb79e4c31ad1c5b2c2f01d040ea4e4c79b819,"Start curves crate
+
+Add vector, quadratic and cubic bezier types, and computations.
+
+Computations include derivates, arclength, and area.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-25 09:02:13-08:00,28800,2018-12-26 08:52:23-08:00,28800,True,False,"['.gitignore', 'Cargo.toml', 'LICENSE-APACHE', 'LICENSE-MIT', 'affine.rs', 'bezpath.rs', 'common.rs', 'cubicbez.rs', 'lib.rs', 'line.rs', 'param_curve.rs', 'quadbez.rs', 'vec2.rs']",[],0,1420,1420,13,0.8072487644151565,1.0,0.7528830313014827
+1e556c4bff5dbb701615e115e3adbf70f5a52ca8,"Add curvature trait
+
+No tests yet though, and we might want to flip the sign.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-26 12:17:28-08:00,28800,2018-12-26 12:17:28-08:00,28800,True,False,"['cubicbez.rs', 'line.rs', 'param_curve.rs', 'quadbez.rs']",['92feb79e4c31ad1c5b2c2f01d040ea4e4c79b819'],6,34,40,4,1.0,1.0,0.5882352941176471
+15ea66a444c27c35eb3978711a614d7a19afa67c,Change cubic root finding to ArrayVec,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-26 12:31:54-08:00,28800,2018-12-26 12:31:54-08:00,28800,True,False,"['Cargo.toml', 'common.rs', 'cubicbez.rs', 'quadbez.rs']",['1e556c4bff5dbb701615e115e3adbf70f5a52ca8'],27,31,58,4,0.0,0.0,0.0
+9a07ff87cdef918a15d2080c18f021ef8e7f5147,"Implement inverse arclength.
+
+As part of the work, make subsegment part of the base trait. I have a
+feeling we'll do more shuffling of these traits.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-26 13:09:51-08:00,28800,2018-12-26 14:05:47-08:00,28800,True,False,"['bezpath.rs', 'cubicbez.rs', 'line.rs', 'param_curve.rs', 'quadbez.rs', 'vec2.rs']",['15ea66a444c27c35eb3978711a614d7a19afa67c'],48,182,230,6,0.6630434782608695,0.6630434782608695,1.0
+813290fefb87f4852cb0985ee7521a88309b91b8,Find extrema,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-26 17:12:30-08:00,28800,2018-12-26 17:31:26-08:00,28800,True,False,"['bezpath.rs', 'common.rs', 'cubicbez.rs', 'line.rs', 'param_curve.rs', 'quadbez.rs']",['9a07ff87cdef918a15d2080c18f021ef8e7f5147'],18,185,203,6,0.4020618556701031,0.7731958762886598,0.6804123711340206
+379e16f55bdaeeb574a2bdd21d6ecb759c5e0768,Calculate winding numbers of BezPath,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-26 21:13:27-08:00,28800,2018-12-26 21:13:27-08:00,28800,True,False,"['bezpath.rs', 'param_curve.rs']",['813290fefb87f4852cb0985ee7521a88309b91b8'],0,88,88,2,1.0,1.0,1.0
+12fe3031cd8ed613e8b06f5fd41ed7145e10c4d1,"SVG parsing
+
+WIP",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-26 21:16:22-08:00,28800,2018-12-26 21:16:22-08:00,28800,True,False,"['bezpath.rs', 'lib.rs']",['379e16f55bdaeeb574a2bdd21d6ecb759c5e0768'],21,2,23,2,0.3333333333333333,0.6014492753623188,0.9492753623188406
+e19d872af3bfc1b5a49651c20b2523cfe7be173d,"Explore arclength computation
+
+Add an example to plot arclength error for both the algorithm used
+here and Gauss-Legendre Quadrature. Limit recursion to fix pathological
+case.
+
+See https://github.com/Pomax/BezierInfo-2/issues/77 for more context.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-27 09:14:32-08:00,28800,2018-12-27 09:14:32-08:00,28800,True,False,"['arclen_accuracy.rs', 'cubicbez.rs', 'quadbez.rs']",['12fe3031cd8ed613e8b06f5fd41ed7145e10c4d1'],9,87,96,3,0.5084745762711864,0.5084745762711864,0.8305084745762712
+d081304687f6b64ed40b4ef3088006a738c2e0b8,Add README,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-27 09:52:47-08:00,28800,2018-12-27 10:09:53-08:00,28800,True,False,"['Cargo.toml', 'README.md']",['e19d872af3bfc1b5a49651c20b2523cfe7be173d'],0,38,38,2,,,
+4101c81bbc4be1720a6b44b005f8724f4b86fc58,Checkpoint arclength work,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-27 15:08:42-08:00,28800,2018-12-27 15:08:42-08:00,28800,True,False,['arclen_accuracy.rs'],['d081304687f6b64ed40b4ef3088006a738c2e0b8'],3,111,114,1,0.33766233766233766,0.922077922077922,0.7792207792207793
+f405a82c00c606318f5e68fa6fea6d2caa7ff75f,"Better arclength computation
+
+In which we discover that the Gravesen algorithm isn't as accurate as
+it claims...",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-27 16:08:44-08:00,28800,2018-12-27 16:08:44-08:00,28800,True,False,"['Cargo.toml', 'arclen_accuracy.rs']",['4101c81bbc4be1720a6b44b005f8724f4b86fc58'],11,34,45,2,0.7777777777777778,0.8888888888888888,0.1111111111111111
+decc836b156b944c00eb07b334b8a48aa29ff2c3,"Implement 7-th order
+
+Might not be perfect, but looks pretty good.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-27 17:07:33-08:00,28800,2018-12-27 17:07:33-08:00,28800,True,False,['arclen_accuracy.rs'],['f405a82c00c606318f5e68fa6fea6d2caa7ff75f'],19,23,42,1,0.0,1.0,0.0
+c4f6c4b343f9f16262a8b3c769bef6a86c9cc51d,"More research work on quad arclength
+
+The code is messy but I wanted to keep a record.
+
+Includes an analytical solution and some benchmarks. The analytical
+solution looks like it wins.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-27 18:24:43-08:00,28800,2018-12-27 23:26:23-08:00,28800,True,False,"['quad_arclen.rs', 'arclen_accuracy.rs']",['decc836b156b944c00eb07b334b8a48aa29ff2c3'],12,241,253,2,0.2914285714285714,0.9885714285714285,0.6857142857142857
+a7044acfc6823f7ffaecfc5c213d4aabb7d17422,"Research on arclength of cubic beziers
+
+In examples/cubic_arclen is a pretty good solution to the arclength
+of cubic Béziers, with Gauss-Legendre quadrature, an error metric,
+and adaptive subdivision.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-28 01:18:40-08:00,28800,2018-12-28 09:33:43-08:00,28800,True,False,"['Cargo.toml', 'quad_arclen.rs', 'cubic_arclen.rs']",['c4f6c4b343f9f16262a8b3c769bef6a86c9cc51d'],1,73,74,3,1.0,1.0,0.7916666666666666
+ac584b879653ea5acacc139eaff2d67030bf6f13,"Fix scaling of quadratic arclength
+
+The factor for choosing quadrature was wrong in two ways. First it was
+off by a factor of 4 because I took factors of 2 out of the derivatives.
+Second, it didn't scale with the chord length.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-28 09:51:16-08:00,28800,2018-12-28 09:51:16-08:00,28800,True,False,['arclen_accuracy.rs'],['a7044acfc6823f7ffaecfc5c213d4aabb7d17422'],7,6,13,1,,,
+eeded3d20d88b34d6dece147454a387c1fd2dbf9,"Add inline annotations
+
+Add #[inline] to functions that are very small or could benefit from
+inlining. This has a significant effect on benchmarks.
+
+Also use higher level types for analytical quad arclength calculation,
+as they no longer impact performance and it makes the code easier.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-28 10:05:13-08:00,28800,2018-12-28 10:08:04-08:00,28800,True,False,"['quad_arclen.rs', 'arclen_accuracy.rs', 'affine.rs', 'cubicbez.rs', 'line.rs', 'param_curve.rs', 'quadbez.rs', 'vec2.rs']",['ac584b879653ea5acacc139eaff2d67030bf6f13'],14,74,88,8,1.0,0.0,0.0
+d060b7be42267dd87a0597702709dc8e9a294aae,Checkpoint cubic arclen research,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-28 12:12:56-08:00,28800,2018-12-28 13:00:06-08:00,28800,True,False,"['arclen_accuracy.rs', 'cubic_arclen.rs']",['eeded3d20d88b34d6dece147454a387c1fd2dbf9'],10,145,155,2,1.0,1.0,0.6296296296296297
+b3184bff12be0ce5c69d0eef4e9fc012a8a0d7ba,"Clean up arclength
+
+Move improved arclength computations into main library. Expose generic
+Gaussian quadrature methods. Make analytical QuadBez arclength handle
+pathological (kink) case.
+
+Put adaptive cubic arclength into place.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-28 13:23:46-08:00,28800,2018-12-28 14:34:06-08:00,28800,True,False,"['arclen_accuracy.rs', 'cubic_arclen.rs', 'common.rs', 'cubicbez.rs', 'lib.rs', 'param_curve.rs', 'quadbez.rs']",['d060b7be42267dd87a0597702709dc8e9a294aae'],156,181,337,7,0.0,0.0,0.3617021276595745
+eb595fbc0eb5d797bf450ed31b0062edd2eaeab6,"Rustfmt
+
+Apply rustfmt to codebase. Also add simple arclength computation
+(will be used in blog post).",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-28 16:14:43-08:00,28800,2018-12-28 16:14:43-08:00,28800,True,False,"['quad_arclen.rs', 'arclen_accuracy.rs', 'cubic_arclen.rs', 'affine.rs', 'bezpath.rs', 'common.rs', 'cubicbez.rs', 'line.rs', 'param_curve.rs', 'quadbez.rs', 'vec2.rs']",['b3184bff12be0ce5c69d0eef4e9fc012a8a0d7ba'],249,458,707,11,0.4484536082474227,0.8402061855670103,0.9123711340206185
+f230dace6e46f4ea3ac2b8f18615d27dfa9a038c,"More benchmarks and cubic arclen error experiments
+
+Trying a more sophisticated error metric for cubic arclen.
+
+Also add svg.rs file to repo, which was missing.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-29 08:40:24-08:00,28800,2018-12-29 08:50:38-08:00,28800,True,False,"['cubic_arclen.rs', 'quad_arclen.rs', 'cubic_arclen.rs', 'svg.rs']",['eb595fbc0eb5d797bf450ed31b0062edd2eaeab6'],5,267,272,4,0.6073298429319371,0.5968586387434555,1.0
+934c35bd1370bf3e1c97057771e198994ab38ab9,"More experiments with error metrics
+
+This time, trying maximum curvature. It's promising but too expensive
+to compute to help much.
+
+Also rustfmt again. I need to do that before every commit...",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2018-12-29 14:07:50-08:00,28800,2018-12-29 14:07:50-08:00,28800,True,False,"['cubic_arclen.rs', 'quad_arclen.rs', 'cubic_arclen.rs']",['f230dace6e46f4ea3ac2b8f18615d27dfa9a038c'],30,83,113,3,0.6666666666666666,1.0,1.0
+b6473de40217da2f75e10f4c3968d72ef0c92658,"Add rectangle datatype
+
+Also adds mint conversions, with an optional feature.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-02 10:18:28-08:00,28800,2019-01-02 10:26:23-08:00,28800,True,False,"['Cargo.toml', 'README.md', 'affine.rs', 'lib.rs', 'rect.rs', 'vec2.rs']",['934c35bd1370bf3e1c97057771e198994ab38ab9'],2,263,265,6,0.865546218487395,1.0,0.9411764705882353
+bd1f0a464592a50c4fe649cf382c41c9d9693169,"Add Travis CI
+
+This adds CI through Travis, checks rustfmt, runs tests, and forbids
+warnings. The rustfmt style is pinned to stable. We also currently are
+backwards compatible to rust 1.31.1, but will roll that forward as new
+features are compelling; this just means it's a conscious choice.
+
+Also clean up some warnings :)",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-02 10:52:27-08:00,28800,2019-01-02 10:52:27-08:00,28800,True,False,"['.travis.yml', 'arclen_accuracy.rs', 'cubic_arclen.rs']",['934c35bd1370bf3e1c97057771e198994ab38ab9'],0,22,22,3,,,
+032679adb4d2c96c5e6e534ba8f62f000001d923,"Add Travis badge
+
+This also kicks off a Travis run :)",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-02 11:02:36-08:00,28800,2019-01-02 11:02:36-08:00,28800,True,False,['README.md'],['b6473de40217da2f75e10f4c3968d72ef0c92658'],0,1,1,1,,,
+50d91de5803eca1f211d692e65a3823bd6de0298,"Add IntoIterator to BezPath
+
+We plan to use `IntoIterator<PathEl>` as the main interface for paths,
+so provide ergonomic access to it.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-02 08:53:11-08:00,28800,2019-01-02 12:20:10-08:00,28800,True,False,['bezpath.rs'],['1b840a4d09549ff230afd4e5a51af610edbd952d'],0,9,9,1,1.0,1.0,1.0
+f145a9507185661436e5fb727d80a1a15c82093d,"Add Shape trait
+
+We want to use Shape as the main interface for filling and clipping
+closed paths. One central idea of this trait is that special cases
+(rect, circle) can be preserved, and a consumer can access those or
+just get a path iterator, at its choosing.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-02 17:14:07-08:00,28800,2019-01-02 17:14:07-08:00,28800,True,False,"['bezpath.rs', 'lib.rs', 'rect.rs', 'shape.rs']",['50d91de5803eca1f211d692e65a3823bd6de0298'],2,172,174,4,1.0,0.7972972972972973,1.0
+483f5c1a18bc1d2af6940cc9ba8e59b2c63d5bc8,"Add bounding boxes
+
+Compute bounding boxes for shapes.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-02 18:03:53-08:00,28800,2019-01-02 18:22:22-08:00,28800,True,False,"['bezpath.rs', 'param_curve.rs', 'rect.rs', 'shape.rs']",['f145a9507185661436e5fb727d80a1a15c82093d'],3,28,31,4,1.0,1.0,1.0
+db1b0fbc29abd96c56bdbc60f27ffde4d75b2b66,"Tweaks to Shape trait
+
+I'm still thinking through ways to get around the lack of GAT in the
+path iterator.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-02 21:00:04-08:00,28800,2019-01-02 21:00:04-08:00,28800,True,False,"['bezpath.rs', 'shape.rs']",['483f5c1a18bc1d2af6940cc9ba8e59b2c63d5bc8'],17,23,40,2,,,
+d5306361ea0e807c288a291392000eae6d195979,"Fine-tuning Shape trait
+
+Quite a number of issues with Shape addressed here:
+
+* It's suitable for both open and closed paths.
+
+* Add Shape for Line impl, `as_line` method in Shape, as this is
+  an important case now that Shape can be open.
+
+* The union logic of Rect didn't include the perimeter, so was not
+  ideal for bounding box calculations (a major use case).
+
+Also bumps version to 0.1.2 in preparation for release.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-04 09:16:26-08:00,28800,2019-01-04 09:28:38-08:00,28800,True,False,"['Cargo.toml', 'line.rs', 'rect.rs', 'shape.rs']",['db1b0fbc29abd96c56bdbc60f27ffde4d75b2b66'],30,80,110,4,1.0,1.0,1.0
+88d398fe4b0aa7aafaf443d8d0c493619c956b2f,"Fix BezPath bounding box logic
+
+Now that Rect can't be completely empty, we need to make sure we start
+with the first segment's bounding box, not the default Rect.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-04 13:47:30-08:00,28800,2019-01-04 13:47:30-08:00,28800,True,False,['bezpath.rs'],['d5306361ea0e807c288a291392000eae6d195979'],3,8,11,1,1.0,1.0,1.0
+9547e43cb96b51bd144313d4f8606efa86b757a7,"Add missing Debug implementations
+
+Basic types should always implement Debug to allow easy inspection.
+
+Signed-off-by: Rahix <rahix@rahix.de>",Rahix,rahix@rahix.de,Rahix,rahix@rahix.de,2019-01-05 22:42:21+01:00,-3600,2019-01-05 22:45:38+01:00,-3600,True,False,"['affine.rs', 'bezpath.rs', 'line.rs']",['45357aa8de80823184d9caa1b58ef8634dbf9132'],6,6,12,3,,,
+28d09aac6fbf7dbf3c3e8a7693e3c21b0aeed4bf,"Rework ownership of Shape
+
+Allow either owned shape or reference to be passed to `impl Shape`.
+Allow taking ownership of Vec from BezPath. Add `impl Shape` for for
+slice of PathEl.
+
+There are some open questions, mostly how much to expose iterators
+on PathSeg.
+
+Closes #3",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-06 16:51:59-08:00,28800,2019-01-06 18:20:49-08:00,28800,True,False,"['bezpath.rs', 'shape.rs']",['45357aa8de80823184d9caa1b58ef8634dbf9132'],43,128,171,2,0.6741573033707865,0.46629213483146065,0.03932584269662921
+1d7f37a29c9c15869e04be86149d957e8e05b046,"segment-iter: Make iterator not include index
+
+The iterator should just return the elements.  If a user wishes
+to keep track of indices they should use `.enumerate()`.
+
+Signed-off-by: Rahix <rahix@rahix.de>",Rahix,rahix@rahix.de,Rahix,rahix@rahix.de,2019-01-05 20:34:43+01:00,-3600,2019-01-07 10:47:54+01:00,-3600,True,False,['bezpath.rs'],['9547e43cb96b51bd144313d4f8606efa86b757a7'],15,13,28,1,,,
+4f0181ac2fc92cdc0eafa333d0eb8a87e0ff0049,"segment-iter: Refactor iteration
+
+Signed-off-by: Rahix <rahix@rahix.de>",Rahix,rahix@rahix.de,Rahix,rahix@rahix.de,2019-01-05 21:52:46+01:00,-3600,2019-01-07 10:51:24+01:00,-3600,True,False,['bezpath.rs'],['1d7f37a29c9c15869e04be86149d957e8e05b046'],4,2,6,1,1.0,0.0,0.0
+d30e835c4e8c9868490de4a4dc0436b5f643daff,"segment-iter: Use slice-iterator
+
+Use an existing iterator instead of reimplementing the same
+functionality manually.
+
+Signed-off-by: Rahix <rahix@rahix.de>",Rahix,rahix@rahix.de,Rahix,rahix@rahix.de,2019-01-05 23:06:16+01:00,-3600,2019-01-07 10:51:48+01:00,-3600,True,False,['bezpath.rs'],['4f0181ac2fc92cdc0eafa333d0eb8a87e0ff0049'],6,3,9,1,1.0,0.0,0.0
+b6198cb404014544034d731bdf48fe9ecf7a6164,"segment-iter: Remove unnecessary Option wrappers
+
+Logically start and last should always have values.  This commit
+reflects this in code.  If no value for first could be found (because
+the first element is not a PathEl::Moveto), a panic with a proper
+message will occur.
+
+Signed-off-by: Rahix <rahix@rahix.de>",Rahix,rahix@rahix.de,Rahix,rahix@rahix.de,2019-01-05 23:17:50+01:00,-3600,2019-01-07 10:54:56+01:00,-3600,True,False,['bezpath.rs'],['d30e835c4e8c9868490de4a4dc0436b5f643daff'],16,21,37,1,1.0,0.0,0.0
+a7df858db9aec0b9f3a4cfafd96f457ced44857a,"segment-iter: Reduce code duplication
+
+3/4 match arms do the same thing, so we can pull them together.
+PathEl::Moveto is the only one to continue iteration; Forcing the
+use of `continue` makes this more visible.
+
+Signed-off-by: Rahix <rahix@rahix.de>",Rahix,rahix@rahix.de,Rahix,rahix@rahix.de,2019-01-05 23:24:56+01:00,-3600,2019-01-08 19:04:28+01:00,-3600,True,False,['bezpath.rs'],['b6198cb404014544034d731bdf48fe9ecf7a6164'],18,12,30,1,1.0,0.0,0.0
+b32302e6645710053caaffbe5f2e253acc483dfe,"Add way to get coefficients from Affine
+
+Add `as_coeffs` method to Affine so we can get the coefficients out
+(necessary for conversion to Direct2D types, etc).
+
+Also tweak documentation to explain the convention for rotation
+(partially addressing #4) and the augmented matrix representation of
+Affine, particularly that it's backwards from PostScript.
+
+This doesn't address all of #4, it doesn't change any behavior.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-09 08:45:32-08:00,28800,2019-01-09 08:45:32-08:00,28800,True,False,"['affine.rs', 'vec2.rs']",['6d52349fe3958c13a1180fb1410133af042c1723'],4,33,37,2,1.0,1.0,1.0
+e11e7dbc2be6f188ebfc30063ee9c0979a63e438,"Make rustdoc happy
+
+It tried to interpret the matrix in Affine::new as code.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-09 08:55:02-08:00,28800,2019-01-09 08:55:22-08:00,28800,True,False,['affine.rs'],['b32302e6645710053caaffbe5f2e253acc483dfe'],1,1,2,1,,,
+b8038d5daf1ca7f4aa259d71c1fbd5123f274c27,Clarify documentation about path segment indices,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-09 09:37:08-08:00,28800,2019-01-09 09:37:08-08:00,28800,True,False,['bezpath.rs'],['9d222d46765faaee6a668bdd80ba6a0cca483fe7'],1,9,10,1,,,
+7f9b90cf7e8560837d6c8146e58bc92579f67900,"Bump version to 0.2.0 for release
+
+This version breaks semver. It's an interim release, there are several
+open issues that will result in more semver breakage, but there are
+features needed in here to move piet forward.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-01-11 10:19:31-08:00,28800,2019-01-11 10:19:31-08:00,28800,True,False,['Cargo.toml'],['0a318ca4433d14ae6b33af2ec100e4fda597a9b5'],1,1,2,1,,,
+94ec510dc054b9fec4ead5ad544a2029cbb34853,"Only install rustfmt on stable runs
+
+This fixes travis errors, as it's gone missing on nightly.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-02-19 20:56:49-08:00,28800,2019-02-19 20:56:49-08:00,28800,True,False,['.travis.yml'],['7f9b90cf7e8560837d6c8146e58bc92579f67900'],1,1,2,1,,,
+a31e5393545385c446a17b99f387b8d50d71491f,"Add circle
+
+Part of https://github.com/xi-editor/druid/issues/14",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-02-19 18:54:08-08:00,28800,2019-02-20 08:34:17-08:00,28800,True,False,"['Cargo.toml', 'circle.rs', 'circle.rs', 'lib.rs', 'shape.rs']",['9fd7e5a5ed4cc2b82fe0d73d2325d4d25785b7e6'],4,175,179,5,0.5544554455445545,1.0,1.0
+4a30db9d67a53e7920b5a7d6ae689538b83fae88,correction to Rect::from_points method,Chad Russell,chad@theexperienceengine.com,Chad Russell,chad@theexperienceengine.com,2019-05-02 09:56:06-04:00,14400,2019-05-02 09:56:06-04:00,14400,True,False,['rect.rs'],['e05a02a25d47a2311e84e9851a682827fb2aa2ba'],1,1,2,1,,,
+dfa4c377732b49d6cdee6c9b6ee043b8ad5ba899,"Minor tweaks to bezier paths
+
+Allow multiplication by affine to take a BezPath by reference.
+
+Add ""A"", ""S"", ""H"", ""V"" commands to SVG path parsing. The SVG arc logic
+is adapted from lyon_geom. Thus, Nicolas is credited in the AUTHORS file
+(and there's a bit of bureaucracy around attribution).",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-05-03 19:08:48-07:00,25200,2019-05-06 18:15:52-07:00,25200,True,False,"['AUTHORS', 'LICENSE-APACHE', 'README.md', 'bezpath.rs', 'lib.rs', 'svg.rs']",['3d610b84990bfd8fde557d76fdd85e5ac15224df'],68,412,480,6,0.16153846153846155,0.16153846153846155,0.8615384615384616
+e3fb08bdf4f1bc091db6bb74de13af2dd47935d4,"Fix Rect::union_pt and add inflate
+
+Fixes a cut-and-paste error in Rect::union_pt, and adds an inflate
+method (with the same signature as lyon_geom).",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-05-06 20:33:27-07:00,25200,2019-05-06 20:35:57-07:00,25200,True,False,['rect.rs'],['3d610b84990bfd8fde557d76fdd85e5ac15224df'],1,14,15,1,1.0,1.0,0.0
+34a94f5b34e2ab8f3363b4bd9af23f31cb6b876a,Finer arc to bezier path conversion,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-05-06 21:12:29-07:00,25200,2019-05-06 22:16:17-07:00,25200,True,False,['svg.rs'],['dfa4c377732b49d6cdee6c9b6ee043b8ad5ba899'],16,27,43,1,0.0,1.0,0.3333333333333333
+b50a9065a64336519526110723b458698decf5f2,Update version for 0.2.2 release,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-05-07 06:26:23-07:00,25200,2019-05-07 06:26:23-07:00,25200,True,False,['Cargo.toml'],['0fdd0826fd78cfca545306b091a1236560ab1d58'],1,1,2,1,,,
+d825f3648acc14085cf1d44ab24b0a18ad14659f,"Make Arc public.
+
+Arc to Cubic conversion is done via closure now. So it can be used on
+any container.
+
+Fixed Arc conversion.",Evgeniy Reizner,razrfalcon@gmail.com,Evgeniy Reizner,razrfalcon@gmail.com,2019-06-10 17:46:35+03:00,-10800,2019-06-10 17:46:35+03:00,-10800,True,False,['svg.rs'],['b50a9065a64336519526110723b458698decf5f2'],10,27,37,1,0.4,0.8,0.6
+1512ee40f8c9c42adf1e06bc2c1f98506114f143,Check for linear arcs.,Evgeniy Reizner,razrfalcon@gmail.com,Evgeniy Reizner,razrfalcon@gmail.com,2019-06-10 17:57:54+03:00,-10800,2019-06-10 17:57:54+03:00,-10800,True,False,['svg.rs'],['d825f3648acc14085cf1d44ab24b0a18ad14659f'],8,25,33,1,0.25,0.25,1.0
+19c598500dd52ffb4e17ccf157816dc954c2774e,Fix formatting.,Evgeniy Reizner,razrfalcon@gmail.com,Evgeniy Reizner,razrfalcon@gmail.com,2019-06-10 18:09:43+03:00,-10800,2019-06-10 18:09:43+03:00,-10800,True,False,['svg.rs'],['1512ee40f8c9c42adf1e06bc2c1f98506114f143'],1,1,2,1,,,
+92d85a0430e61211762829a4af90ce8fbb0cb077,Document the Arc methods.,Evgeniy Reizner,razrfalcon@gmail.com,Evgeniy Reizner,razrfalcon@gmail.com,2019-06-16 18:08:11+03:00,-10800,2019-06-16 18:11:02+03:00,-10800,True,False,['svg.rs'],['19c598500dd52ffb4e17ccf157816dc954c2774e'],0,10,10,1,,,
+5234303072d47612b1f3c16f4bfd5af4939ce4e9,Add missing circle shape conversion for references,msiglreith,m.siglreith@gmail.com,msiglreith,m.siglreith@gmail.com,2019-06-16 17:28:24+02:00,-7200,2019-06-16 17:31:50+02:00,-7200,True,False,['shape.rs'],['b50a9065a64336519526110723b458698decf5f2'],0,4,4,1,1.0,1.0,1.0
+8f41e9a209ffe9cdda91bf505c188de4ee423905,Update manifest for 0.2.3 release,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-06-18 15:28:40-04:00,14400,2019-06-18 15:28:40-04:00,14400,True,False,['Cargo.toml'],['07427ab729f1bce9f6fd1d03952ce3e3f2cb2cbf'],1,1,2,1,,,
+4ac0373c442215b99f30ef30bfcd4b53b4c01795,"Add barebones Size and Point types
+
+These implementations are intentionally minimal; I would like to
+avoid adding public API that we might want to break until we have
+a clearer idea of how these types are to be used.
+
+Currently, I think there are two options: either we treat these as
+convenience types that are exposed so that clients that want them
+can use them, and we make minimal changes to public API, _or_ we
+take a larger look at where Vec2 is used and attempt to use these
+types more thoroughly where it makes sense.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-06-18 12:35:42-04:00,14400,2019-06-18 15:51:20-04:00,14400,True,False,"['lib.rs', 'point.rs', 'size.rs']",['8f41e9a209ffe9cdda91bf505c188de4ee423905'],0,148,148,3,1.0,1.0,1.0
+e7bc38ca8122a2393a206240ecffabec3008b250,"Be systematic in vector types
+
+Use Point and Size where appropriate instead of Vec2.
+
+Also rename the bezpath ops to conform to Rust naming conventions
+(move_to rather than moveto, etc).",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-06-19 12:45:08-07:00,25200,2019-06-19 12:56:54-07:00,25200,True,False,"['quad_arclen.rs', 'arclen_accuracy.rs', 'cubic_arclen.rs', 'affine.rs', 'bezpath.rs', 'circle.rs', 'cubicbez.rs', 'line.rs', 'param_curve.rs', 'point.rs', 'quadbez.rs', 'rect.rs', 'shape.rs', 'svg.rs', 'vec2.rs']",['4ac0373c442215b99f30ef30bfcd4b53b4c01795'],255,357,612,15,0.6724137931034483,1.0,0.8448275862068966
+e4d6f3cf50f5d46f795b098876abeedf172f08dd,Small refinement in response to review,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-06-19 18:20:38-07:00,25200,2019-06-19 18:20:38-07:00,25200,True,False,"['point.rs', 'vec2.rs']",['e7bc38ca8122a2393a206240ecffabec3008b250'],19,19,38,2,,,
+8f2cc1ec76044c152e7df91dfbad019ee31d8d4b,"Add Size::clamp
+
+closes #21",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-06-19 17:27:34-04:00,14400,2019-06-20 17:02:05-04:00,14400,True,False,['size.rs'],['0acd5cf8a7032f49f7b4784c3b9277a0c9cb552f'],0,18,18,1,1.0,1.0,0.0
+39b9f68ab5b7aa607654cc2bc30bd1e3336c17db,"Add Rect::with_origin and Rect::with_size
+
+- closes #22",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-06-20 15:33:15-04:00,14400,2019-06-20 17:02:05-04:00,14400,True,False,['rect.rs'],['8f2cc1ec76044c152e7df91dfbad019ee31d8d4b'],0,12,12,1,1.0,1.0,1.0
+066aaee374fb891a8dbf9923892e62cd1d33384e,"Add Point::distance
+
+- closes #24",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-06-20 15:46:58-04:00,14400,2019-06-20 17:02:05-04:00,14400,True,False,['point.rs'],['39b9f68ab5b7aa607654cc2bc30bd1e3336c17db'],2,19,21,1,1.0,1.0,1.0
+4e6f341cbbf84e5ee12a32ab6b96d5ef9996eefb,Update manifest for v0.3.1 release,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-06-20 17:03:31-04:00,14400,2019-06-20 17:05:23-04:00,14400,True,False,['Cargo.toml'],['066aaee374fb891a8dbf9923892e62cd1d33384e'],1,1,2,1,,,
+d73fa5f71705335af7ebfb06366f9d5a9b7ed9be,"Remove ambiguious `impl From<((f64, f64), (f64, f64))> for Rect`
+
+closes #29",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-06-21 14:25:21-04:00,14400,2019-06-21 14:40:41-04:00,14400,True,False,['rect.rs'],['4e6f341cbbf84e5ee12a32ab6b96d5ef9996eefb'],13,0,13,1,0.0,0.0,0.5714285714285714
+7806fd5ad7061fa0adc3b0cef346562026b715e2,"More flexible conversion for Size and Rect
+
+This adds `From<(f64, f64)>` for Size, and uses `impl Into<T>`
+in a number of constructors that previously took `T`.
+
+- closes #28",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-06-21 14:22:07-04:00,14400,2019-06-21 14:40:53-04:00,14400,True,False,"['rect.rs', 'size.rs']",['d73fa5f71705335af7ebfb06366f9d5a9b7ed9be'],5,25,30,2,1.0,1.0,1.0
+6b6cc768dc0a0025d7f62ac7cee94ac92033d1c8,Add Rect::contains,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-06-21 15:53:39-04:00,14400,2019-06-21 17:38:22-04:00,14400,True,False,['rect.rs'],['7806fd5ad7061fa0adc3b0cef346562026b715e2'],0,6,6,1,1.0,1.0,1.0
+027b40f3c1d41f165346b064b782e96ffb0c6ecd,"Update manifest for v0.4.0 release
+
+This is a breaking change here is the removal of
+`impl From<((f64, f64), (f64, f64))> for Rect`.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-06-25 17:16:37-04:00,14400,2019-06-25 17:16:37-04:00,14400,True,False,['Cargo.toml'],['6b6cc768dc0a0025d7f62ac7cee94ac92033d1c8'],1,1,2,1,,,
+29d3eb7257d6c4ebc564b83c5de6ef34c0cd824b,Add rounded rectangle shape,msiglreith,m.siglreith@gmail.com,msiglreith,m.siglreith@gmail.com,2019-06-16 16:20:19+02:00,-7200,2019-07-09 19:27:21+02:00,-7200,True,False,"['lib.rs', 'rounded_rect.rs', 'shape.rs']",['027b40f3c1d41f165346b064b782e96ffb0c6ecd'],1,150,151,3,1.0,1.0,0.71875
+7eadca838a58157ee20cb167fb162a1269153a70,Fix rounded rect bounding box,msiglreith,m.siglreith@gmail.com,msiglreith,m.siglreith@gmail.com,2019-06-16 17:41:38+02:00,-7200,2019-07-09 19:27:21+02:00,-7200,True,False,['rounded_rect.rs'],['29d3eb7257d6c4ebc564b83c5de6ef34c0cd824b'],1,1,2,1,,,
+747777464ab50a089573df867bb6338b2d8b7e7d,Implement path generation for rounded rectangle,msiglreith,m.siglreith@gmail.com,msiglreith,m.siglreith@gmail.com,2019-06-20 21:03:25+02:00,-7200,2019-07-09 19:27:22+02:00,-7200,True,False,"['arc.rs', 'lib.rs', 'rounded_rect.rs', 'svg.rs']",['7eadca838a58157ee20cb167fb162a1269153a70'],63,194,257,4,0.4305555555555556,1.0,1.0
+4d73c856f52bf87030494de0fadca1a7d8718a80,Add rounded rect area test and cleanup,msiglreith,m.siglreith@gmail.com,msiglreith,m.siglreith@gmail.com,2019-06-20 22:50:28+02:00,-7200,2019-07-09 19:27:22+02:00,-7200,True,False,"['arc.rs', 'lib.rs', 'rounded_rect.rs', 'svg.rs']",['747777464ab50a089573df867bb6338b2d8b7e7d'],30,101,131,4,0.0,1.0,1.0
+708c4767f6dc8b55dde8202e710eddec8f7176b2,Implement rounded rectangle winding,msiglreith,m.siglreith@gmail.com,msiglreith,m.siglreith@gmail.com,2019-06-20 23:36:20+02:00,-7200,2019-07-09 19:27:23+02:00,-7200,True,False,['rounded_rect.rs'],['4d73c856f52bf87030494de0fadca1a7d8718a80'],2,27,29,1,1.0,1.0,1.0
+21fffa70e336115a01b4a1f89877ffe3da1b5fd5,Fix rebase issues,msiglreith,m.siglreith@gmail.com,msiglreith,m.siglreith@gmail.com,2019-06-20 23:52:17+02:00,-7200,2019-07-09 19:27:23+02:00,-7200,True,False,"['arc.rs', 'lib.rs', 'rounded_rect.rs', 'svg.rs']",['708c4767f6dc8b55dde8202e710eddec8f7176b2'],29,29,58,4,,,
+28ddbf569e2ce2d5c3bacc0be58ff7e6d51b4018,Address review comments,msiglreith,m.siglreith@gmail.com,msiglreith,m.siglreith@gmail.com,2019-06-21 13:29:32+02:00,-7200,2019-07-09 19:27:23+02:00,-7200,True,False,['rounded_rect.rs'],['21fffa70e336115a01b4a1f89877ffe3da1b5fd5'],51,54,105,1,0.0,0.0,0.0
+b7a5c28d7f0f76adb0a02a25b5d8252dca7f710b,Add rounded rect constructor and missing module documentation,msiglreith,m.siglreith@gmail.com,msiglreith,m.siglreith@gmail.com,2019-06-24 23:16:11+02:00,-7200,2019-07-09 19:27:24+02:00,-7200,True,False,"['arc.rs', 'rounded_rect.rs']",['28ddbf569e2ce2d5c3bacc0be58ff7e6d51b4018'],16,20,36,2,0.0,0.0,1.0
+421fc5c58f0d2bb6094f5a0510858bfdfdf1eaef,"Document tolerance parameter in Shape
+
+Closes #35",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-07-10 09:34:42-07:00,25200,2019-07-10 09:34:42-07:00,25200,True,False,['shape.rs'],['027b40f3c1d41f165346b064b782e96ffb0c6ecd'],1,19,20,1,,,
+a333af221accbc7ee34d726c4d0adc1de9166977,"Document angle convention
+
+Closes #37",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-07-10 14:37:39-07:00,25200,2019-07-10 14:37:39-07:00,25200,True,False,"['affine.rs', 'vec2.rs']",['f7f7c3935a95a9989a042b7d353bbae9c29da1c0'],1,5,6,2,,,
+ce04a0f1fc73c1a4f027f32e772c93068c52e2b3,"Add TranslateScale
+
+Adds a transform that does translation and uniform scale only, and is
+thus suitable for transforming Rect and Circle types.
+
+Also fixes #34 because I needed ZERO.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-07-18 17:51:37-07:00,25200,2019-07-18 17:51:37-07:00,25200,True,False,"['lib.rs', 'rect.rs', 'translate_scale.rs', 'vec2.rs']",['13a60218c954de17467ad187c6aec06b5d0e6983'],2,168,170,4,1.0,1.0,1.0
+5a4315fd3336eda23a8f7e2a9ff0e46387c1267f,"Add inverse, docs, tests",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-07-19 10:26:23-07:00,25200,2019-07-19 10:26:23-07:00,25200,True,False,['translate_scale.rs'],['ce04a0f1fc73c1a4f027f32e772c93068c52e2b3'],3,93,96,1,1.0,1.0,1.0
+b9fc0c62857e9def477a6768660cb5cc69164572,"Additional mul operations
+
+Now TranslateScale works for all bezier orders, rects, rounded rects.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-07-19 10:38:32-07:00,25200,2019-07-19 10:38:32-07:00,25200,True,False,"['bezpath.rs', 'rounded_rect.rs', 'translate_scale.rs']",['5a4315fd3336eda23a8f7e2a9ff0e46387c1267f'],2,81,83,3,1.0,1.0,1.0
+a137217743bfb40e66529979d0dc1b00bc6be1a7,Add PathSeg::reverse & PathSeg::to_cubic,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-07-19 17:10:48-04:00,14400,2019-07-19 21:30:29-04:00,14400,True,False,['bezpath.rs'],['13a60218c954de17467ad187c6aec06b5d0e6983'],0,19,19,1,,,
+f51e15cfc2c21bfa1d993469269c4301467b167e,"Implement 'round' for Point, Size, and Rect
+
+closes #40",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-07-19 16:54:21-04:00,14400,2019-07-19 21:32:31-04:00,14400,True,False,"['point.rs', 'rect.rs', 'size.rs']",['a137217743bfb40e66529979d0dc1b00bc6be1a7'],0,24,24,3,1.0,1.0,1.0
+1ddf762ebe74e0b2fbc804f864a85fe226f49f04,"Remove TransformScale * scalar
+
+Also touch up docstrings a bit.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-07-20 07:06:06-07:00,25200,2019-07-20 07:06:06-07:00,25200,True,False,['translate_scale.rs'],['b9fc0c62857e9def477a6768660cb5cc69164572'],17,8,25,1,0.0,0.0,0.0
+a1f14a3985c004fbf304130d77eb7bb8dd4edb36,"Add Vec2::normalize
+
+- closes #39",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-07-19 19:15:35-04:00,14400,2019-07-20 16:18:40-04:00,14400,True,False,['vec2.rs'],['f51e15cfc2c21bfa1d993469269c4301467b167e'],0,9,9,1,1.0,1.0,1.0
+9fae3653e9531957ff400ce03354bd1c4ab33f48,"Rationalize sign conventions
+
+Document sign conventions in Shape. Add tests to confirm this is
+indeed the behavior. Fix broken cases. Some doc touchup.
+
+Fixes #4",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-07-22 08:01:14-07:00,25200,2019-07-22 08:32:39-07:00,25200,True,False,"['bezpath.rs', 'circle.rs', 'rect.rs', 'rounded_rect.rs', 'shape.rs']",['96b6e7e042eee932fecb749eadd37ff13f0b3ea8'],17,90,107,5,1.0,1.0,1.0
+6e3e20b917e140e31d0ff0d3c2e189261af00786,"Version bump, deps bump, and docs cleanup",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-07-22 10:14:50-04:00,14400,2019-07-22 13:09:23-04:00,14400,True,False,"['Cargo.toml', 'lib.rs', 'line.rs', 'svg.rs']",['539b38b8dfe41a02ec54c8eadee67880634a83d5'],3,9,12,4,,,
+80c483b2534d9e795c152ea327cc06b816611185,"Better fmt::Display impls for Point & Size
+
+These will now respect formatter arguments for percision, width,
+printing the sign, etcetera.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-07-25 11:11:36-07:00,25200,2019-07-25 15:05:38-04:00,14400,True,False,"['Cargo.toml', 'point.rs', 'size.rs']",['6e3e20b917e140e31d0ff0d3c2e189261af00786'],3,34,37,3,1.0,1.0,1.0
+77cf6b58e6bdcebf3fd9786f01f607f5171c734b,"Fix incorrect SVG arc parsing
+
+The arc part of the fix in #16 got lost when the arc logic was refactored
+in #18. This patch reinstates it and adds a basic test.
+
+Fixes #51",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-08-12 07:53:10-07:00,25200,2019-08-12 08:07:35-07:00,25200,True,False,"['arc.rs', 'svg.rs']",['80c483b2534d9e795c152ea327cc06b816611185'],2,12,14,2,0.8333333333333334,1.0,1.0
+b6a4c5a93d49cf2561204b9d2c0b9c3ac28632bc,Bump crate version,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-08-13 13:13:54-04:00,14400,2019-08-13 13:34:55-04:00,14400,True,False,['Cargo.toml'],['a318a2c83dac60728e5dfd0837a442b2ec4481e8'],1,1,2,1,,,
+e78b058ce35b93f2e7cae0991a3d7b5fbd506a77,Implement full serialize -> deserialize roundtrip; add support for quadratic splines in svg parser; stop unknown commands from causing silent parse errors,jatentaki,michal.tyszkiewicz@gmail.com,jatentaki,michal.tyszkiewicz@gmail.com,2019-08-25 11:26:49+02:00,-7200,2019-08-25 11:26:49+02:00,-7200,True,False,"['bezpath.rs', 'cubicbez.rs', 'line.rs', 'quadbez.rs', 'svg.rs']",['b6a4c5a93d49cf2561204b9d2c0b9c3ac28632bc'],7,190,197,5,0.17692307692307693,0.8538461538461538,1.0
+02f57669ec12e886133fee115e270d226d0a02b3,Fix an omission in gen_random_path_sequence and run cargo fmt,jatentaki,michal.tyszkiewicz@gmail.com,jatentaki,michal.tyszkiewicz@gmail.com,2019-08-25 13:14:46+02:00,-7200,2019-08-25 13:14:46+02:00,-7200,True,False,['svg.rs'],['e78b058ce35b93f2e7cae0991a3d7b5fbd506a77'],34,38,72,1,0.0,1.0,1.0
+8d0c810f4116c6f4922fde134086a80457e1832d,"Make quadratic solver numerically robust
+
+Part of the work decribed in review of #58",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-09-03 14:05:28-07:00,25200,2019-09-03 14:05:28-07:00,25200,True,False,['common.rs'],['b329cec826e0bde8192a9771192260b29d45e922'],13,43,56,1,0.0,0.0,0.0
+2a128faa6f17a471584783f280e006727eb9116e,Bump MSRV for copysign,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-09-03 14:16:19-07:00,25200,2019-09-03 14:16:19-07:00,25200,True,False,['.travis.yml'],['8d0c810f4116c6f4922fde134086a80457e1832d'],1,1,2,1,,,
+98d66c3ee5f35488bfedb7907a3cc8bbf85553a4,"Make cubic solving slightly more robust.
+
+There's more to be done to make it really robust, but this should help
+with the common case of computing nearest on a non-curved segment.
+
+Fixes #57",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-09-14 16:06:48-07:00,25200,2019-09-14 16:08:34-07:00,25200,True,False,"['common.rs', 'quadbez.rs']",['750dd595acd6c1ae5b23973b62ed558594a87cdd'],4,33,37,2,0.6666666666666666,0.0,0.2857142857142857
+1d86c1c69ed94276f8e05a659b9a4fbf3c96df2f,Add inverse affine transformation,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-09-18 11:36:17-07:00,25200,2019-09-18 11:36:17-07:00,25200,True,False,['affine.rs'],['750dd595acd6c1ae5b23973b62ed558594a87cdd'],0,34,34,1,1.0,1.0,1.0
+9dfa560fb4402357705417ed209519b0ca5c5761,Add doc comment about non-invertible affines,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-09-22 14:32:02-07:00,25200,2019-09-22 14:32:02-07:00,25200,True,False,['affine.rs'],['1d86c1c69ed94276f8e05a659b9a4fbf3c96df2f'],0,2,2,1,,,
+c0b6830df5813b83517665476c7457c19df92ee0,"Fix typo
+
+This happened when changing to Point from Vec2, it was a cut'n'paste.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-09-25 17:01:09-07:00,25200,2019-09-25 17:01:09-07:00,25200,True,False,['bezpath.rs'],['77cf6b58e6bdcebf3fd9786f01f607f5171c734b'],1,1,2,1,,,
+cb1d3c8c241eb614c6dda67ce6f514d463ffcb26,Rust 2018 fixups,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-10-17 12:27:59-04:00,14400,2019-10-17 14:27:59-04:00,14400,True,False,['arclen_accuracy.rs'],['3e37fdd52faef9d85e3467719c4b32fdf20aae87'],2,2,4,1,,,
+0af2552ea774d3ee69224d9f2034a1f8d6f7b89f,"Make more fns const, and add Affine::FLIP_Y/FLIP_X
+
+FLIP_Y seems like a reasonable inclusion; FLIP_X is provided for
+symmetry.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-10-22 15:22:28-04:00,14400,2019-10-22 15:51:06-04:00,14400,True,False,"['affine.rs', 'point.rs', 'size.rs', 'vec2.rs']",['cb1d3c8c241eb614c6dda67ce6f514d463ffcb26'],6,13,19,4,,,
+ad9545cee1312143b2a5067a421c689041332778,"Implement Display for Vec2
+
+This supports the full range of format options, and so is particularly
+useful for printing truncated output.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-10-25 19:45:17-04:00,14400,2019-10-26 12:15:40-04:00,14400,True,False,['vec2.rs'],['0af2552ea774d3ee69224d9f2034a1f8d6f7b89f'],0,22,22,1,1.0,1.0,1.0
+ae90c4b996cef7cd268dfe16a8ecee3803cc0fa5,Impl Mul/MulAssign for Size & f64,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-10-25 19:32:04-04:00,14400,2019-10-26 12:15:57-04:00,14400,True,False,['size.rs'],['ad9545cee1312143b2a5067a421c689041332778'],0,32,32,1,1.0,1.0,1.0
+69c28d132e5f5e7be340d35a190fd971dd079def,"Add Insets type
+
+This is a minimal implementation, that tries to conform as much as
+possible with the existing Rect implmentation and API.
+
+closes #63",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-10-16 13:16:51-04:00,14400,2019-10-27 13:17:06-04:00,14400,True,False,"['Cargo.toml', 'insets.rs', 'lib.rs', 'rect.rs']",['ae90c4b996cef7cd268dfe16a8ecee3803cc0fa5'],3,219,222,4,1.0,1.0,0.8775510204081632
+0646242a6b23330798feb3b38fd38180246fa3c4,"Impl more ops, improve docs and examples",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-10-17 12:01:50-04:00,14400,2019-10-27 13:17:06-04:00,14400,True,False,"['insets.rs', 'rect.rs']",['69c28d132e5f5e7be340d35a190fd971dd079def'],14,87,101,2,1.0,1.0,1.0
+e2dc55812f8840f670c8c1973d9f33c97e2d14da,Add Rect::min_x/y & max_x/y,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-10-29 10:49:41-04:00,14400,2019-10-29 11:10:30-04:00,14400,True,False,"['Cargo.toml', 'rect.rs']",['0646242a6b23330798feb3b38fd38180246fa3c4'],1,25,26,2,1.0,1.0,1.0
+5774e6ac589f64bd140d15556b1223c9ffed7e7b,"Add `Affine::transform_rect_bbox`
+
+Compute the enclosing bounding box of a Rect after affine transformation.
+This came up during the discussion of
+https://github.com/xi-editor/druid/pull/243",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-11-05 10:32:07-08:00,28800,2019-11-05 10:32:07-08:00,28800,True,False,['affine.rs'],['e2dc55812f8840f670c8c1973d9f33c97e2d14da'],1,16,17,1,1.0,1.0,1.0
+5bec424eda067261ce8d38744004906af9090cda,Typo in doc,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2019-11-05 16:00:00-08:00,28800,2019-11-05 16:00:00-08:00,28800,True,False,['affine.rs'],['5774e6ac589f64bd140d15556b1223c9ffed7e7b'],1,1,2,1,,,
+e83f8dfaabb66776ca7b7d60cc35527ea460cfa6,Add Vec2::round/floor/ceil,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-11-08 14:11:14-05:00,18000,2019-11-08 16:51:08-05:00,18000,True,False,['vec2.rs'],['ce4f9c1ae0245e0d808e137ddb513f25c1971e29'],0,40,40,1,1.0,1.0,1.0
+af0bc539f09b44ee9b119aa65f0caef4f2d782bd,"Add Rect::to_rounded_rect
+
+Another little ergonomics helper. The advantage of this over other
+ways to construct a rounded rect is that it frees you needing
+to bring RoundedRect into scope in the very common case that you
+want to construct a RoundedRect from an existing Rect.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-11-11 16:53:47-05:00,18000,2019-11-12 10:17:26-05:00,18000,True,False,"['Cargo.toml', 'rect.rs']",['e83f8dfaabb66776ca7b7d60cc35527ea460cfa6'],2,11,13,2,1.0,1.0,1.0
+cdd95f15ff10aaf6f121e1e2443186724078f8a0,"Implement FromIterator<PathEl> for BezPath
+
+This allows the user to `collect()` a BezPath from any iterator
+of PathEls.
+
+I wanted to document this but wasn't sure of the best place, so
+I added a note to the from_vec method, which is a place someone
+might look if they were wanting to create a path from an iterator
+currently.
+
+This patch also includes another small iteration-related tweak:
+it deprecates the `IntoIterator` impl for &BezPath (a borrowed
+BezPath) in favor of a simple `iter` method.
+
+This will allow us to add a by-value IntoIterator impl at some
+point in the future, and better matches the patterns in libstd.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-11-26 17:55:12-05:00,18000,2019-11-27 00:37:38-05:00,18000,True,False,"['Cargo.toml', 'bezpath.rs']",['af0bc539f09b44ee9b119aa65f0caef4f2d782bd'],2,29,31,2,1.0,1.0,1.0
+8794a25ed309b786ed9510012978c7066ea60f33,Update arrayvec and rand in Cargo.toml,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-10-29 11:09:37-04:00,14400,2019-11-27 10:11:19-05:00,18000,True,False,"['.travis.yml', 'Cargo.toml']",['cdd95f15ff10aaf6f121e1e2443186724078f8a0'],3,3,6,2,,,
+ea2bace8f6552a8912c862d98f0ebb51b3c0eb16,"Standardize capitalisation of ""2d""",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2019-12-28 09:38:57-08:00,28800,2019-12-28 10:21:57-08:00,28800,True,False,"['point.rs', 'size.rs']",['8794a25ed309b786ed9510012978c7066ea60f33'],4,4,8,2,,,
+e7f28f4979222bb0eda946fee8640f4bd557ff8c,"In BezPath::from_svg, support S/s after l/L/v/V/h/H
+
+According to
+https://www.w3.org/TR/svg-paths/#PathDataCubicBezierCommands, when
+processing shorthand curves, ""If there is no previous command or if the
+previous command was not an C, c, S or s, assume the first control point
+is coincident with the current point."" This PR adopts that assumption.
+
+One example of an SVG path that was not loaded correctly before, but is
+loaded correctly with this PR is the 16th down flag in the Bravura font:
+
+""M272 -796c-6 -13 -13 -17 -20 -17c-14 0 -22 13 -22 26c0 3 0 5 1 9c5 30 8
+60 8 89c0 52 -9 101 -32 149c-69 140 -140 142 -202 144h-5v397s11 1 17
+1s18 -2 20 -13c17 -106 73 -122 127 -180c72 -78 98 -106 108 -174c2 -12 3
+-23 3 -36c0 -61 -22 -121 -25 -127 c-1 -3 -1 -5 -1 -7c0 -4 1 -6 1 -9c18
+-37 29 -78 29 -120v-22c0 -48 -3 -105 -7 -110zM209 -459c2 -3 4 -4 7 -4c5
+0 12 3 13 6c5 8 5 18 7 26c1 7 1 13 1 20c0 32 -9 63 -27 89c-33 49 -87 105
+-148 105h-8c-8 0 -14 -6 -14 -10c0 -1 0 -2 1 -3c21 -82 67 -106 114 -160
+c21 -24 38 -44 54 -69z""
+
+Note that ""s"" follows ""h-5v397"" in this example.",Joshua Netterfield,joshua@nettek.ca,Joshua Netterfield,joshua@nettek.ca,2020-01-10 20:29:15-05:00,18000,2020-01-10 20:42:24-05:00,18000,True,False,['svg.rs'],['ea2bace8f6552a8912c862d98f0ebb51b3c0eb16'],0,4,4,1,0.0,0.0,1.0
+f585f05a08d53f41e6a60d2ad0ee8ae110af6b3b,added constructor for non-uniform scale Affine,Lando,lando.schumpich@gmail.com,Lando,lando.schumpich@gmail.com,2020-01-16 19:13:21+01:00,-3600,2020-01-16 19:13:21+01:00,-3600,True,False,['affine.rs'],['680b4a94d11db6d59e2be323dee721d9bd25ae56'],0,7,7,1,1.0,1.0,1.0
+fdbfcd732cd3e0974d4c28101fe84558ecceaf59,Replaced a long if-else chain with a match,Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 04:28:15+08:00,-28800,2020-01-18 04:28:15+08:00,-28800,True,False,['svg.rs'],['92a407037af3df102b970248d9ef9c7e33530344'],103,113,216,1,0.0,0.0,1.0
+c986a4a6ff605d6e02211a4e2a7209483a6fb5f6,BezPath::to_svg() should probably be implemented in terms of some general write_svg_to(),Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 04:34:36+08:00,-28800,2020-01-18 04:34:36+08:00,-28800,True,False,['svg.rs'],['fdbfcd732cd3e0974d4c28101fe84558ecceaf59'],10,16,26,1,1.0,0.0,1.0
+d987d3f1e801b207711fab6244a5851b9b768182,Added an Error impl for SvgParseError,Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 04:38:12+08:00,-28800,2020-01-18 04:38:12+08:00,-28800,True,False,['svg.rs'],['c986a4a6ff605d6e02211a4e2a7209483a6fb5f6'],0,14,14,1,0.6206896551724138,0.4061302681992337,0.0
+412ecdd3d7311afc8d9d91990b32a2913d79da7c,"Rect::new() and Rect {} were being used inconsistently
+
+Feel free to ignore this one. It just looked odd to have one function go through the
+constructor and another create Rect directly.",Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 05:06:31+08:00,-28800,2020-01-18 05:06:31+08:00,-28800,True,False,['rect.rs'],['d987d3f1e801b207711fab6244a5851b9b768182'],43,27,70,1,0.0,0.0,0.0
+9f7b32a62de3e11eaf30dd12b5d43b104b2e4bf4,#[inline] probably wasn't intended as a doc-comment,Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 05:09:38+08:00,-28800,2020-01-18 05:09:38+08:00,-28800,True,False,['rounded_rect.rs'],['412ecdd3d7311afc8d9d91990b32a2913d79da7c'],1,1,2,1,,,
+ec3207c4a640111052e32da6206149579ffde031,Ran rustfmt using stable (was previously on nightly),Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 05:16:31+08:00,-28800,2020-01-18 05:16:31+08:00,-28800,True,False,"['rect.rs', 'svg.rs']",['9f7b32a62de3e11eaf30dd12b5d43b104b2e4bf4'],17,5,22,2,0.16666666666666666,0.16666666666666666,0.0
+c292eab14336b6615ccd4840b767d7eeec731c99,Enabled the missing_docs lint and filled in any missing docs,Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 05:41:11+08:00,-28800,2020-01-18 05:41:11+08:00,-28800,True,False,"['arc.rs', 'bezpath.rs', 'circle.rs', 'common.rs', 'cubicbez.rs', 'lib.rs', 'line.rs', 'param_curve.rs', 'quadbez.rs', 'rect.rs', 'rounded_rect.rs', 'svg.rs', 'vec2.rs']",['ec3207c4a640111052e32da6206149579ffde031'],3,47,50,13,,,
+73ba0133611828a70a0fb97496a8d91893f48d14,This shouldn't have been a comment at all,Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 05:42:44+08:00,-28800,2020-01-18 05:42:44+08:00,-28800,True,False,['rounded_rect.rs'],['c292eab14336b6615ccd4840b767d7eeec731c99'],1,1,2,1,,,
+74460ef49faa498580fe3be37f3ce8fe84919dc7,"Deleted some disabled println!() calls
+
+(I'm assuming this is all dead code left over after debugging)",Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 05:51:51+08:00,-28800,2020-01-18 05:51:51+08:00,-28800,True,False,"['common.rs', 'cubicbez.rs', 'line.rs', 'param_curve.rs', 'quadbez.rs']",['73ba0133611828a70a0fb97496a8d91893f48d14'],7,0,7,5,,,
+df1c8c92e5c30a3d47227c3cbd91b88f2b164f66,Removed the missing_debug_implementations lint and unnecessary #[derive(Debug)] annotations,Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 20:26:31+08:00,-28800,2020-01-18 20:26:31+08:00,-28800,True,False,"['arc.rs', 'circle.rs', 'lib.rs', 'line.rs', 'rect.rs', 'rounded_rect.rs']",['74460ef49faa498580fe3be37f3ce8fe84919dc7'],7,1,8,6,,,
+90d0e1981d32a07098d2b631ff55aa958a1f9325,Addressed the comments around function documentation,Michael Bryan,michaelfbryan@gmail.com,Michael Bryan,michaelfbryan@gmail.com,2020-01-18 20:28:40+08:00,-28800,2020-01-18 20:28:40+08:00,-28800,True,False,"['bezpath.rs', 'svg.rs']",['df1c8c92e5c30a3d47227c3cbd91b88f2b164f66'],2,7,9,2,,,
+e9bc9086ddbfc83762bd2d562b6a23cb2aa77118,Update version to 0.5.7,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-01-21 15:53:26-05:00,18000,2020-01-21 16:04:42-05:00,18000,True,False,['Cargo.toml'],['1205571f4ba441a8dacc8e5d65d2c163df776f93'],1,1,2,1,,,
+5d73982a85b2d21996815bc6068b725fe7ca9774,"Fix: Link to authors file
+
+The link to the AUTHORS file was missing. This patch fixes this.",Matthias Beyer,mail@beyermatthias.de,GitHub,noreply@github.com,2020-01-29 15:21:03+01:00,-3600,2020-01-29 15:21:03+01:00,-3600,True,False,['README.md'],['e9bc9086ddbfc83762bd2d562b6a23cb2aa77118'],0,1,1,1,,,
+c71ba843d21de607a2569d61da0faf79826cece0,Add Insets::nonnegative & Insets::are_nonnegative,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-01-29 11:55:02-05:00,18000,2020-01-29 14:55:59-05:00,18000,True,False,"['Cargo.toml', 'insets.rs']",['0fe8148e99b888aae6a4657b9d93a799f8185d92'],1,32,33,2,1.0,1.0,1.0
+9c6b80c8cd2fada0c9a654b9f4552b7b51a7df9c,Add Size::to_rect,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-02-15 17:53:52-05:00,18000,2020-02-15 18:14:39-05:00,18000,True,False,"['Cargo.toml', 'size.rs']",['1220aec45f6f9e1c594587b3d55d4343790fecc1'],3,13,16,2,1.0,1.0,1.0
+d2e3c96509d3520ae091ae267b2e4668c71fa8be,"Custom Display and Debug impls for Rect
+
+This lets you specify precision in display, and also
+provides an alternate ({:#?}) representation of Rect that
+prints origin and size.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-02-15 17:46:17-05:00,18000,2020-02-16 00:53:12-05:00,18000,True,False,['rect.rs'],['9c6b80c8cd2fada0c9a654b9f4552b7b51a7df9c'],1,41,42,1,0.4838709677419355,1.0,1.0
+832ea8b7388fae1657f25e0c676bab2c73dec617,"Make Line::new take two impl Intos
+
+This lets you do, `Line::new(Point::ORIGIN, (10., 42.))`, which
+would previously fail because they are different types.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-03-10 12:00:25-04:00,14400,2020-03-10 18:51:29-04:00,14400,True,False,['line.rs'],['d2e3c96509d3520ae091ae267b2e4668c71fa8be'],1,1,2,1,,,
+3f3e8a1960be9e6e386c177175c1a724054fa687,Add ceil/floor/trunc/expand to various shapes.,Kaur Kuut,strom@nevermore.ee,Colin Rofls,colin@cmyr.net,2020-03-16 20:10:58+02:00,-7200,2020-03-16 16:05:14-04:00,14400,True,False,"['common.rs', 'point.rs', 'rect.rs', 'size.rs']",['832ea8b7388fae1657f25e0c676bab2c73dec617'],0,114,114,4,1.0,1.0,1.0
+473e8c1fd4304496f9d8a2c72e4a7c0e07b3be59,Unify ceil/floor/trunc/expand implementations and docs.,Kaur Kuut,strom@nevermore.ee,Colin Rofls,colin@cmyr.net,2020-03-16 21:40:48+02:00,-7200,2020-03-16 16:05:14-04:00,14400,True,False,"['point.rs', 'rect.rs', 'size.rs', 'vec2.rs']",['3f3e8a1960be9e6e386c177175c1a724054fa687'],26,308,334,4,1.0,1.0,1.0
+9738f4343d152fed8283ceaba65c7f4c3ed89834,"Fixup RoundedRect signatures & docs
+
+This was motivated by noticing that RoundedRect::from_origin_size
+took a Vec2 instead of a Size. Now they match the equivalent methods
+on Rect.
+
+Included some doc tweaks while I was in there.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-03-03 16:25:02-05:00,18000,2020-03-17 11:32:38-04:00,14400,True,False,['rounded_rect.rs'],['473e8c1fd4304496f9d8a2c72e4a7c0e07b3be59'],6,22,28,1,1.0,1.0,1.0
+cb918bb63eaeccb258f417402f8bf6bbd1e49785,Add Size::to_rounded_rect,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-03-16 14:04:28-04:00,14400,2020-03-17 12:32:05-04:00,14400,True,False,"['Cargo.toml', 'size.rs']",['9738f4343d152fed8283ceaba65c7f4c3ed89834'],2,11,13,2,1.0,1.0,1.0
+d3a3043e3223427cdc85a304e1fa4a2054968a71,Add Insets::size,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-03-03 15:55:14-05:00,18000,2020-03-17 13:29:46-04:00,14400,True,False,['insets.rs'],['cb918bb63eaeccb258f417402f8bf6bbd1e49785'],1,24,25,1,1.0,1.0,1.0
+a2aa081d659a1342ccd5b3c139342375b24de62b,Implement Add/Sub traits for Size,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-03-03 16:01:31-05:00,18000,2020-03-17 13:32:29-04:00,14400,True,False,['size.rs'],['d3a3043e3223427cdc85a304e1fa4a2054968a71'],1,37,38,1,1.0,1.0,1.0
+f9fbc3efd3edd4dd287fecfef2b3b115e4296449,Add Size::max/min_side,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-03-17 13:37:39-04:00,14400,2020-03-17 14:32:44-04:00,14400,True,False,['size.rs'],['a2aa081d659a1342ccd5b3c139342375b24de62b'],0,26,26,1,1.0,1.0,1.0
+e7cf12a266cd1ca0e2157c2e353649c8240587ce,"Impl Into<Size> for Vec2
+
+This is a hotfix to the fact that 9738f43 broke our stable API.
+
+This  should be removed for 0.6.0.
+
+- closes #95",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-03-17 16:34:20-04:00,14400,2020-03-17 18:22:16-04:00,14400,True,False,"['Cargo.toml', 'size.rs']",['f9fbc3efd3edd4dd287fecfef2b3b115e4296449'],1,9,10,2,1.0,1.0,1.0
+0fb318d6e7fcc9b44ae0adf734a1347b5e1d0bdb,"Adds optional serde support.
+
+All public types are serializable and deserializable except for
+SvgParseError.
+
+Closes #54.",Joe Neeman,joeneeman@gmail.com,Colin Rofls,colin@cmyr.net,2020-03-27 11:32:02-05:00,18000,2020-03-29 11:08:41-04:00,14400,True,False,"['Cargo.toml', 'affine.rs', 'arc.rs', 'bezpath.rs', 'circle.rs', 'cubicbez.rs', 'insets.rs', 'line.rs', 'point.rs', 'quadbez.rs', 'rect.rs', 'rounded_rect.rs', 'size.rs', 'svg.rs', 'translate_scale.rs', 'vec2.rs']",['e7cf12a266cd1ca0e2157c2e353649c8240587ce'],1,24,25,16,,,
+e0597a3f023c0178e0a474c147c7dfb00dea0aa7,Be more permissive in segments_of_slice.,Joe Neeman,joeneeman@gmail.com,Joe Neeman,joeneeman@gmail.com,2020-04-06 22:33:23-05:00,18000,2020-04-06 22:33:23-05:00,18000,True,False,['bezpath.rs'],['0fb318d6e7fcc9b44ae0adf734a1347b5e1d0bdb'],1,8,9,1,,,
+bef34ac7991f429383c175637f676615a4852a1b,Optimize CubicBez::arclen,Aron Granberg,aron.granberg@gmail.com,Aron Granberg,aron.granberg@gmail.com,2020-04-10 19:15:49+02:00,-7200,2020-04-10 19:15:49+02:00,-7200,True,False,['cubicbez.rs'],['0fb318d6e7fcc9b44ae0adf734a1347b5e1d0bdb'],2,2,4,1,,,
+987221abbd746cf1d0981a1aac57d36fd2537ae7,Fix pathological behaviour when computing the arc length of a bezier in which all points were identical,Aron Granberg,aron.granberg@gmail.com,Aron Granberg,aron.granberg@gmail.com,2020-04-10 19:11:45+02:00,-7200,2020-04-11 20:57:40+02:00,-7200,True,False,"['cubic_arclen.rs', 'cubicbez.rs']",['0fb318d6e7fcc9b44ae0adf734a1347b5e1d0bdb'],1,19,20,2,1.0,1.0,1.0
+af3e626a39cea795dc93e997613163e15cb6b7ec,Helper to construct Rect from center and size.,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2020-04-19 11:57:57+01:00,-3600,2020-04-19 11:57:57+01:00,-3600,True,False,['rect.rs'],['4648ab8e942721e697e460094fa136611fc3df61'],1,23,24,1,1.0,1.0,1.0
+a6f79391133eebfb2cb64ecd76c79062f79e68c0,Remove impl of PartialEq,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2020-04-19 17:40:24+01:00,-3600,2020-04-19 17:40:24+01:00,-3600,True,False,['rect.rs'],['af3e626a39cea795dc93e997613163e15cb6b7ec'],2,3,5,1,0.0,0.0,0.0
+d536e6d6ca0f23c77c3b07d3aba5bbdf1fbc85b5,Slight simplification of cubic to_quads,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2020-01-29 12:02:28-08:00,28800,2020-04-23 10:27:41-07:00,25200,True,False,['cubicbez.rs'],['6dbb8ef9d2d776edcaa3945bae4f9c4e96d174fc'],29,26,55,1,1.0,0.0,0.0
+f6b90b19771d3ed450c09c2d66aead813e48d504,"Add BezPath flattening
+
+This implements the fancy flattening algorithm that I've been blogging
+about. It also simplifies the cubic to quadratic conversion and cleans
+up iterator conversions around `BezPath`.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2020-04-23 12:50:48-07:00,25200,2020-04-23 13:42:32-07:00,25200,True,False,"['bezpath.rs', 'cubicbez.rs', 'quadbez.rs']",['d536e6d6ca0f23c77c3b07d3aba5bbdf1fbc85b5'],5,208,213,3,0.45544554455445546,0.6014851485148515,0.7698019801980198
+9d580ce119308f8a28626f33468b51a6ad816b81,"Improve docs
+
+Note that the pretty SVG pictures are stolen directly from the Lyon
+repo. Thanks Nical!",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2020-04-23 15:59:18-07:00,25200,2020-04-23 15:59:18-07:00,25200,True,False,['bezpath.rs'],['f6b90b19771d3ed450c09c2d66aead813e48d504'],2,54,56,1,,,
+81152937dd28ca39e00877d8a1f64b00615ddda4,Remove unneeded refs.,Joe Neeman,joeneeman@gmail.com,Joe Neeman,joeneeman@gmail.com,2020-04-25 19:37:41-05:00,18000,2020-04-25 19:37:41-05:00,18000,True,False,['bezpath.rs'],['e0597a3f023c0178e0a474c147c7dfb00dea0aa7'],4,4,8,1,,,
+af9f125022bea9042c96998488e7f50a7233aaa8,Implement Extend for BezPath.,Joe Neeman,joeneeman@gmail.com,Joe Neeman,joeneeman@gmail.com,2020-04-30 09:56:36-05:00,18000,2020-04-30 09:56:36-05:00,18000,True,False,['bezpath.rs'],['2b1578bf84d158b3b86219ae76ac7693a6b22510'],1,7,8,1,,,
+5d9fabdd4ec800ec180fd647388c67eb90150fd2,Add support for dividing Size by f64.,Kaur Kuut,strom@nevermore.ee,Colin Rofls,colin@cmyr.net,2020-05-05 14:54:32+03:00,-10800,2020-05-07 11:10:10-04:00,14400,True,False,['size.rs'],['ca0fcf9e56de6e2becd25b75c8593e75d4f5ca24'],1,23,24,1,1.0,1.0,1.0
+5ce59c82068244863498d0bb065f67fb23779c92,Add more PartialEq support.,Kaur Kuut,strom@nevermore.ee,Colin Rofls,colin@cmyr.net,2020-05-05 16:37:51+03:00,-10800,2020-05-07 11:12:37-04:00,14400,True,False,"['affine.rs', 'arc.rs', 'circle.rs', 'insets.rs', 'rect.rs', 'rounded_rect.rs']",['5d9fabdd4ec800ec180fd647388c67eb90150fd2'],6,6,12,6,,,
+29eea233ccac5680eade27d715fb70ab2253fac6,Change Rect's expand/trunc to more useful methods.,Kaur Kuut,strom@nevermore.ee,Colin Rofls,colin@cmyr.net,2020-05-05 13:19:34+03:00,-10800,2020-05-07 11:46:06-04:00,14400,True,False,"['rect_expand.rs', 'rect.rs']",['5ce59c82068244863498d0bb065f67fb23779c92'],26,135,161,2,1.0,1.0,1.0
+e2006a63b3d16069d76a2797061d440527a37c6e,"Handle exponential notation in svg numbers
+
+It's valid for numbers in svg to be in exponential notation (eg 1e-3).
+Fixing this lets us parse more files in the MPVG input set.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2020-05-08 20:03:48-07:00,25200,2020-05-08 20:06:43-07:00,25200,True,False,['svg.rs'],['29eea233ccac5680eade27d715fb70ab2253fac6'],0,19,19,1,,,
+062d6b928ae337e6b4f95467c762466ae71ffc04,impl Shape for Arc,Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-10 17:51:36+01:00,-3600,2020-05-11 13:35:59-04:00,14400,True,False,['arc.rs'],['96cf9de66a7689af4d3f2406f3967759831ba5c2'],1,64,65,1,1.0,1.0,1.0
+0250a277499e994aee824c4cc743e2f374d8a5e1,Use iter combinators rather than imperative logic,Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-11 18:25:52+01:00,-3600,2020-05-11 13:35:59-04:00,14400,True,False,['arc.rs'],['062d6b928ae337e6b4f95467c762466ae71ffc04'],26,7,33,1,0.0,0.0,0.0
+0324b6d37ac9029fae2cc43ec7234aa3ffc93e5d,Update crate version (0.6.0),Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-05-11 12:41:24-04:00,14400,2020-05-11 13:36:17-04:00,14400,True,False,['Cargo.toml'],['0250a277499e994aee824c4cc743e2f374d8a5e1'],1,1,2,1,,,
+fed93db02af7e7739314d659282d6d48bfa8d5da,Add SvgLexer::get_flag for arc large_arc/sweep parameters,Al McElrath,hello@yrns.org,Colin Rofls,colin@cmyr.net,2020-05-10 23:09:46-07:00,25200,2020-05-11 13:36:49-04:00,14400,True,False,['svg.rs'],['0324b6d37ac9029fae2cc43ec7234aa3ffc93e5d'],4,20,24,1,,,
+ff0c5998369e24c375a9c40dfcd2fb42bd4b03c0,Add circle segments and ellipses.,Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-13 15:39:37+01:00,-3600,2020-05-22 11:29:51-04:00,14400,True,False,"['circle.rs', 'ellipse.rs', 'lib.rs']",['fed93db02af7e7739314d659282d6d48bfa8d5da'],2,274,276,3,0.7063492063492064,1.0,0.9444444444444444
+ea50119191f0ff122170242c0e6abe85befb9bed,Fix small bug in debug repr of rect.,Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-14 11:57:17+01:00,-3600,2020-05-22 11:29:51-04:00,14400,True,False,['rect.rs'],['ff0c5998369e24c375a9c40dfcd2fb42bd4b03c0'],1,1,2,1,,,
+531daa7ce9bfb085a6f8fb352b27dd0e82e91a0f,Use an `Affine` map to represent `Ellipse`s,Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-16 20:02:42+01:00,-3600,2020-05-22 11:29:51-04:00,14400,True,False,"['ellipse.rs', 'affine.rs', 'circle.rs', 'ellipse.rs', 'vec2.rs']",['ea50119191f0ff122170242c0e6abe85befb9bed'],25,200,225,5,0.7634408602150538,1.0,0.9247311827956989
+5cd29198d4b49e7fd71d91c412e5ddc002d250d8,"Improve Ellipse Shape impl
+
+Use analytic methods for winding number and bounding box.",Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-17 22:29:21+01:00,-3600,2020-05-22 11:29:51-04:00,14400,True,False,"['affine.rs', 'ellipse.rs']",['531daa7ce9bfb085a6f8fb352b27dd0e82e91a0f'],24,69,93,2,0.19047619047619047,1.0,1.0
+530b49e29b95002fadaf3f686ac17fb4b46930bf,Add note about perimeter of ellipse,Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-17 22:40:21+01:00,-3600,2020-05-22 11:29:51-04:00,14400,True,False,['ellipse.rs'],['5cd29198d4b49e7fd71d91c412e5ddc002d250d8'],0,6,6,1,,,
+23d292e56cc5f5b742f78e79243cf7a0dbcae678,Address issues in review.,Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-17 22:55:09+01:00,-3600,2020-05-22 11:29:51-04:00,14400,True,False,['circle.rs'],['530b49e29b95002fadaf3f686ac17fb4b46930bf'],5,38,43,1,1.0,0.46153846153846156,0.07692307692307693
+3066d2538b498163992b3a0d72444b5a1dc41096,"Update src/circle.rs
+
+Co-authored-by: Colin Rofls <colin@cmyr.net>",Richard Dodd (dodj),richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-21 16:47:31+01:00,-3600,2020-05-22 11:29:51-04:00,14400,True,False,['circle.rs'],['23d292e56cc5f5b742f78e79243cf7a0dbcae678'],1,3,4,1,,,
+791fd0556e83107a50fe46fb2f97b4d7740fb7bc,Address remaining issues.,Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-22 14:44:57+01:00,-3600,2020-05-22 11:29:51-04:00,14400,True,False,"['affine.rs', 'ellipse.rs']",['3066d2538b498163992b3a0d72444b5a1dc41096'],17,5,22,2,0.0,0.0,0.0
+8527595c23bbc1580e5b30645567e365c319faa7,"[svg] Better closepath parsing
+
+Handle closepath more carefully, including setting current point back
+to the first point (so subsequent relative coordinates are correct) and
+implement the implicit moveto (was a TODO).
+
+As of this patch, it handles SVGs generated by Inkscape of text
+converted to paths.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2020-05-23 07:53:55-07:00,25200,2020-05-23 07:53:55-07:00,25200,True,False,['svg.rs'],['791fd0556e83107a50fe46fb2f97b4d7740fb7bc'],1,11,12,1,0.0,0.0,1.0
+2d00f307fdc60b25de2534bd91c09919a0274398,Add GitHub actions. (#116),Kaur Kuut,strom@nevermore.ee,GitHub,noreply@github.com,2020-05-28 17:53:06+03:00,-10800,2020-05-28 17:53:06+03:00,-10800,True,False,"['ci.yml', 'cubic_arclen.rs', 'quad_arclen.rs', 'rect_expand.rs', 'clippy.toml', 'arclen_accuracy.rs', 'cubic_arclen.rs', 'rustfmt.toml', 'bezpath.rs', 'circle.rs', 'common.rs', 'cubicbez.rs', 'ellipse.rs', 'insets.rs', 'lib.rs', 'point.rs', 'svg.rs', 'vec2.rs']",['293f968d9a09d311326a5098f50fc630251aaaa0'],24,179,203,18,0.7435897435897436,0.717948717948718,0.8717948717948718
+9579a99aca01d06f4d206a442df53d48bc1e8286,Remove the old Travis CI tests. (#118),Kaur Kuut,strom@nevermore.ee,GitHub,noreply@github.com,2020-05-28 18:13:50+03:00,-10800,2020-05-28 18:13:50+03:00,-10800,True,False,['.travis.yml'],['2d00f307fdc60b25de2534bd91c09919a0274398'],16,0,16,1,,,
+bcae24f0099d7d275599bf506fcdaa009c0f759b,"Add `contained_rect_with_aspect_ratio` fn
+
+Co-authored-by: Colin Rofls <colin@cmyr.net>",Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-05-14 11:31:33+01:00,-3600,2020-05-28 12:50:57-04:00,14400,True,False,['rect.rs'],['9579a99aca01d06f4d206a442df53d48bc1e8286'],0,79,79,1,0.18604651162790697,0.627906976744186,1.0
+21021fb022b2cdc8d2b3bb9d80b8a0d4ea10a485,Bump version to 0.6.1,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-05-28 11:12:04-04:00,14400,2020-05-28 12:51:13-04:00,14400,True,False,['Cargo.toml'],['bcae24f0099d7d275599bf506fcdaa009c0f759b'],1,1,2,1,,,
+e5a1c116395f02dbff2d91c051161e56c19dbad6,"Path segment intersection against line
+
+Adds a method to test intersection of any path segment against a line,
+and report the parameter on both the segment and the line for each
+intersection found.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2020-05-28 15:09:45-07:00,25200,2020-05-28 16:23:10-07:00,25200,True,False,['bezpath.rs'],['21021fb022b2cdc8d2b3bb9d80b8a0d4ea10a485'],0,149,149,1,1.0,1.0,1.0
+5e5cfebda1d58d7b05684a262160f47b39093e52,cargo fmt,Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2020-05-28 16:24:54-07:00,25200,2020-05-28 16:24:54-07:00,25200,True,False,['bezpath.rs'],['e5a1c116395f02dbff2d91c051161e56c19dbad6'],3,4,7,1,,,
+c7d34d56ccee488741b3431f424be4d3d24c8e15,"Add LineIntersection type and tweak some docs
+
+This also bumps our version to 0.6.2",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-05-29 10:55:14-04:00,14400,2020-05-29 14:53:26-04:00,14400,True,False,"['Cargo.toml', 'bezpath.rs']",['0b9ead1e6c156c3376276b9691217b53e8d05980'],14,57,71,2,,,
+b3d0179d53efa57534941a27321a685b22b8b7b4,Remove an old comment,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-06-04 15:18:48-04:00,14400,2020-06-04 15:26:32-04:00,14400,True,False,['shape.rs'],['c7d34d56ccee488741b3431f424be4d3d24c8e15'],3,0,3,1,,,
+3dce841d56af650abf435daabaa6464f4b375549,"Fix clippy breakage from rustc 1.44.0
+
+I don't know we started having failures in BezPath, and I'm
+also not of a mind to get too bothered trying to figure it out.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-06-04 17:47:25-04:00,14400,2020-06-04 17:55:05-04:00,14400,True,False,"['bezpath.rs', 'vec2.rs']",['b3d0179d53efa57534941a27321a685b22b8b7b4'],1,3,4,2,,,
+af1d76be5a0a5f0f9cc60dc1a5ce3c72cd9d47f5,"CubicBez::to_quads always returns at least one quad
+
+This fixes a crash in CubicBez::nearest.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-06-04 15:17:01-04:00,14400,2020-06-04 18:46:03-04:00,14400,True,False,['cubicbez.rs'],['3dce841d56af650abf435daabaa6464f4b375549'],3,10,13,1,1.0,1.0,1.0
+430da12893b93a9b4887d1f0dcd7c7ee805f5d88,Add Ellipse::from_rect and Rect::to_ellipse,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-06-08 15:15:42-04:00,14400,2020-06-08 17:01:24-04:00,14400,True,False,"['ellipse.rs', 'rect.rs']",['af1d76be5a0a5f0f9cc60dc1a5ce3c72cd9d47f5'],8,32,40,2,1.0,1.0,1.0
+3655ada98443ab24b731c77eabecb4f2f5745487,Add aspect ratio function to some types.,Richard Dodd,richard.o.dodd@gmail.com,Colin Rofls,colin@cmyr.net,2020-06-04 19:01:16+01:00,-3600,2020-06-11 21:36:58-04:00,14400,True,False,"['rect.rs', 'size.rs']",['430da12893b93a9b4887d1f0dcd7c7ee805f5d88'],0,30,30,2,1.0,1.0,1.0
+69e2b70185562971582da8830bbdf6d3043eba63,Enable trivially_copy_pass_by_ref clippy lint. (#129),Kaur Kuut,strom@nevermore.ee,GitHub,noreply@github.com,2020-06-24 21:47:52+03:00,-10800,2020-06-24 21:47:52+03:00,-10800,True,False,['lib.rs'],['3655ada98443ab24b731c77eabecb4f2f5745487'],0,1,1,1,,,
+2ff5d50d5075f61bae591830b9b1db18c8322c18,"Add Line::length
+
+This also is an excuse to add a DEFAULT_ACCURACY const, which
+can hopefully be used in more places.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-06-05 18:08:55-04:00,14400,2020-06-26 16:55:57-04:00,14400,True,False,"['line.rs', 'param_curve.rs']",['69e2b70185562971582da8830bbdf6d3043eba63'],2,14,16,2,1.0,1.0,1.0
+44ea519ca39bca96811fdd37430bb33af06c5855,Implement Add/Sub for Line/Vec2,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-07-18 13:03:17-04:00,14400,2020-07-20 12:09:42-04:00,14400,True,False,['line.rs'],['2ff5d50d5075f61bae591830b9b1db18c8322c18'],2,20,22,1,1.0,1.0,1.0
+5a1a5564bf43a80e3ddd8eed7c0ea651f84a0d4c,Update crate version to 0.6.3,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-08-31 13:28:35-04:00,14400,2020-08-31 13:44:50-04:00,14400,True,False,['Cargo.toml'],['44ea519ca39bca96811fdd37430bb33af06c5855'],1,1,2,1,,,
+be43f7a03b2a10bc4bcf8aa45b65134f9fb57af2,Add arithmetic between Points and f64s.,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2020-09-19 13:29:22+01:00,-3600,2020-09-19 13:29:22+01:00,-3600,True,False,['point.rs'],['5a1a5564bf43a80e3ddd8eed7c0ea651f84a0d4c'],0,32,32,1,1.0,1.0,0.0
+92112048be289594aa7830b2fabc8eab0b1c7d8e,Implement Mul<PathSeg> for Affine/TranslateScale,Laurenz,laurmaedje@gmail.com,Colin Rofls,colin@cmyr.net,2020-09-28 09:26:04+02:00,-7200,2020-09-28 09:00:44-04:00,14400,True,False,['bezpath.rs'],['6e2367cdd652e177c6c3f568c2bf454b76a50993'],0,24,24,1,,,
+6ac53a78231d35769e00840ddde177f77bf2cfad,"Add Rect::is_empty and Size::{area, is_empty}",Laurenz,laurmaedje@gmail.com,Colin Rofls,colin@cmyr.net,2020-09-28 16:06:39+02:00,-7200,2020-09-28 15:26:37-04:00,14400,True,False,"['rect.rs', 'size.rs']",['92112048be289594aa7830b2fabc8eab0b1c7d8e'],0,22,22,2,1.0,1.0,1.0
+63ce000d31e99b5b0eb661e5436ed2532e5cd07c,Add tests for existing segments implementation,Laurenz,laurmaedje@gmail.com,Colin Rofls,colin@cmyr.net,2020-09-29 11:41:50+02:00,-7200,2020-09-29 12:41:28-04:00,14400,True,False,['bezpath.rs'],['6ac53a78231d35769e00840ddde177f77bf2cfad'],1,46,47,1,0.4594594594594595,1.0,1.0
+8ba52bd84c0cf19c4b2173c61bd770c2030ac0a7,"Refactor BezPathSegs into Segments
+
+To accomodate for arbitrary iterators, the iterator needed a bit of adjustment. Previously, `BezPath::segments_for_slice` peeked at the first elements of the slice before iteration to find out the start position. Because we can't do that for arbitrary iterators (at least without resorting to `.peekable()`), the `next()` method has an additional branch that fills in the start position in the first iteration. As this branch is executed only once, it should, however, be quite easy on branch prediction.",Laurenz,laurmaedje@gmail.com,Colin Rofls,colin@cmyr.net,2020-09-29 12:13:14+02:00,-7200,2020-09-29 12:41:28-04:00,14400,True,False,['bezpath.rs'],['63ce000d31e99b5b0eb661e5436ed2532e5cd07c'],42,56,98,1,0.0,0.0,0.0
+5aa1ec92f953d1e0981fe9a63c6c3228b1df5916,"Restructure path handling in Shape
+
+- BezPathIter -> PathElementsIter
+- to_bez_path -> to_path_elements
+- into_bez_path -> into_path
+- new to_path that takes &self",Laurenz,laurmaedje@gmail.com,Colin Rofls,colin@cmyr.net,2020-09-29 12:42:48+02:00,-7200,2020-09-29 12:41:28-04:00,14400,True,False,"['circle.rs', 'ellipse.rs', 'arc.rs', 'bezpath.rs', 'circle.rs', 'ellipse.rs', 'line.rs', 'rect.rs', 'rounded_rect.rs', 'shape.rs']",['8ba52bd84c0cf19c4b2173c61bd770c2030ac0a7'],60,88,148,10,1.0,1.0,1.0
+621f074090e891c4a1c46c37d11f00c9ab5b2b0c,"Less allocations in impl Shape for {Arc, Ellipse}
+
+Some of the Shape functions of Arc and Ellipse defer to BezPath. Those previously allocated a new path. With the new segment iterators, these can make use of to_path_segments to become zero-allocation. To do this, the supporting methods in Segments were made pub(crate). Whether it's a good idea to make these fully public, should probably be discussed separately.",Laurenz,laurmaedje@gmail.com,Colin Rofls,colin@cmyr.net,2020-09-29 13:01:03+02:00,-7200,2020-09-29 12:41:28-04:00,14400,True,False,"['arc.rs', 'bezpath.rs', 'ellipse.rs']",['5aa1ec92f953d1e0981fe9a63c6c3228b1df5916'],10,10,20,3,,,
+1fd9842823fbd5f6e137ca26dd91d9370536263e,Remove to_ prefix,Laurenz,laurmaedje@gmail.com,Colin Rofls,colin@cmyr.net,2020-09-29 16:23:12+02:00,-7200,2020-09-29 12:41:28-04:00,14400,True,False,"['arc.rs', 'bezpath.rs', 'circle.rs', 'ellipse.rs', 'line.rs', 'rect.rs', 'rounded_rect.rs', 'shape.rs']",['621f074090e891c4a1c46c37d11f00c9ab5b2b0c'],28,30,58,8,,,
+7e1b8a9a9e4200838d4a7f76707f67ae1a6c475e,Fix new clippy lint,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-13 10:51:41-04:00,14400,2020-10-13 11:10:13-04:00,14400,True,False,['bezpath.rs'],['1fd9842823fbd5f6e137ca26dd91d9370536263e'],4,3,7,1,0.0,0.0,0.0
+3bfb44cb08599382d7d8b742bbc5cc6b7f344237,"Add Shape::contains convenience method
+
+- closes #70",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-13 11:09:44-04:00,14400,2020-10-13 11:42:58-04:00,14400,True,False,['shape.rs'],['7e1b8a9a9e4200838d4a7f76707f67ae1a6c475e'],0,9,9,1,1.0,1.0,1.0
+9ad91f87fb38743dc71ba5badb7ec366bcfc2f7a,Remove BezPath::nearest,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-13 14:33:57-04:00,14400,2020-10-13 14:45:07-04:00,14400,True,False,['bezpath.rs'],['3bfb44cb08599382d7d8b742bbc5cc6b7f344237'],22,0,22,1,0.0,0.0,1.0
+34af82d94ff873e49f774eb6a217a19ef0e6fcf7,Improve docs in bezier.rs,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-13 13:50:00-04:00,14400,2020-10-13 15:18:57-04:00,14400,True,False,['bezpath.rs'],['9ad91f87fb38743dc71ba5badb7ec366bcfc2f7a'],10,86,96,1,,,
+3ab9041d00bf503cabb0e99957682a2a4329cd38,Improve docs in lib.rs and shape.rs,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-13 14:30:22-04:00,14400,2020-10-14 10:55:53-04:00,14400,True,False,"['lib.rs', 'shape.rs']",['34af82d94ff873e49f774eb6a217a19ef0e6fcf7'],19,107,126,2,,,
+222605be659235ebd8e25288f8ac896525087ef5,"Add deprecations for old Shape methods
+
+This isn't strictly necessary but will make updating easier and
+is otherwise harmless.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-14 11:10:34-04:00,14400,2020-10-14 11:42:48-04:00,14400,True,False,['shape.rs'],['3ab9041d00bf503cabb0e99957682a2a4329cd38'],0,11,11,1,1.0,1.0,1.0
+71dc0de49eabd610ae15483da5b615bbb4f938f4,"Tweak ellipse signatures and docs
+
+In preparation for doing a breaking kurbo release, I'm fixing up docs
+and doing some general cleanup.
+
+This tweaks a few method names, deprecating the previous ones. The
+intention is to maintain clarity while keeping names intuitive and
+concise.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-13 10:40:37-04:00,14400,2020-10-14 11:44:25-04:00,14400,True,False,['ellipse.rs'],['222605be659235ebd8e25288f8ac896525087ef5'],37,65,102,1,1.0,1.0,1.0
+54ab6ec283592ac438b2d78b450ce263e56b6120,Bump version to 0.7.0,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-20 16:26:40-04:00,14400,2020-10-20 17:07:30-04:00,14400,True,False,['Cargo.toml'],['71dc0de49eabd610ae15483da5b615bbb4f938f4'],1,1,2,1,,,
+ae810003cf846b902eda06474d27a4780a09309c,"Impl Shape for QuadBez, CubicBez, & PathSeg",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-20 17:04:26-04:00,14400,2020-10-20 18:17:30-04:00,14400,True,False,"['bezpath.rs', 'cubicbez.rs', 'quadbez.rs']",['54ab6ec283592ac438b2d78b450ce263e56b6120'],3,166,169,3,1.0,1.0,1.0
+73faa216032c4b38e86b6d46db68957ab7cc41bd,Address review feedback,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-20 18:11:58-04:00,14400,2020-10-20 18:17:30-04:00,14400,True,False,"['bezpath.rs', 'cubicbez.rs', 'quadbez.rs']",['ae810003cf846b902eda06474d27a4780a09309c'],14,8,22,3,,,
+484b662b884c33d705de95971124a7f297703fc6,"Minor docstring cleanup
+
+These were showing up with weird line breaking in vim + rust-analyzer.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-10-27 14:19:14-04:00,14400,2020-10-27 14:36:08-04:00,14400,True,False,['rect.rs'],['73faa216032c4b38e86b6d46db68957ab7cc41bd'],7,12,19,1,,,
+1f7258e01b1d99328d81e9d530c6cc5c719d73e7,Fix ParamCurveArclen::inv_arclen iteration count,chubei,chubei@oppentech.com,Colin Rofls,colin@cmyr.net,2020-11-04 10:05:18+08:00,-28800,2020-11-08 10:30:09-05:00,18000,True,False,"['cubicbez.rs', 'param_curve.rs']",['484b662b884c33d705de95971124a7f297703fc6'],6,6,12,2,,,
+ab20b79bb017b245e4c36b9561de6ca5c51146b5,Fix 0 iteration count when accuracy is very large,chubei,chubei@oppentech.com,Colin Rofls,colin@cmyr.net,2020-11-05 11:04:22+08:00,-28800,2020-11-08 10:30:09-05:00,18000,True,False,"['cubicbez.rs', 'param_curve.rs']",['1f7258e01b1d99328d81e9d530c6cc5c719d73e7'],1,13,14,2,0.0,1.0,1.0
+22bf3269afd04ecd40c26f84f2b8207ea050e65b,Update Cargo.toml for 0.7.1,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2020-11-05 09:59:57-05:00,18000,2020-11-08 10:30:27-05:00,18000,True,False,['Cargo.toml'],['ab20b79bb017b245e4c36b9561de6ca5c51146b5'],1,1,2,1,,,
+357d50a44ee0cec8fde626c869f6480eedab264e,Add Affine::map_unit_square method.,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2020-11-14 17:35:56+00:00,0,2020-11-14 17:37:28+00:00,0,True,False,['affine.rs'],['22bf3269afd04ecd40c26f84f2b8207ea050e65b'],0,8,8,1,1.0,1.0,1.0
+0977d94e06fcb2eecf6f823ec8a8f8d45c3101a2,Typo,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2020-11-14 18:32:59+00:00,0,2020-11-14 18:32:59+00:00,0,True,False,['affine.rs'],['357d50a44ee0cec8fde626c869f6480eedab264e'],1,1,2,1,,,
+b1ab76ecdbe7746c29ad99ef8d626cb32f311b0b,Add is_finite and is_nan to most types.,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2020-11-22 17:12:06+00:00,0,2020-11-22 17:12:06+00:00,0,True,False,"['affine.rs', 'bezpath.rs', 'circle.rs', 'cubicbez.rs', 'ellipse.rs', 'insets.rs', 'line.rs', 'point.rs', 'quadbez.rs', 'rect.rs', 'rounded_rect.rs', 'size.rs', 'translate_scale.rs', 'vec2.rs']",['9ba7d45972888c3ac8e466f0888195439d9c3ffa'],0,270,270,14,1.0,0.8596491228070176,1.0
+1f20153fcfeb22371fafbae88320c991e532be52,Fix clippy - make by-value for small structs,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2020-11-22 17:26:02+00:00,0,2020-11-22 17:26:02+00:00,0,True,False,"['bezpath.rs', 'line.rs', 'point.rs', 'size.rs', 'vec2.rs']",['b1ab76ecdbe7746c29ad99ef8d626cb32f311b0b'],12,12,24,5,,,
+e236730863c60eaab7e77b361da0bdcd2a6a2e3d,"Clean up intra-crate docs now they are stable.
+
+Older versions of rustc will still work but might get warnings. This was
+the case before this patch, as the crate already uses intra-doc
+references.",Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2020-11-22 18:26:31+00:00,0,2020-11-22 18:26:31+00:00,0,True,False,"['affine.rs', 'bezpath.rs', 'circle.rs', 'ellipse.rs', 'insets.rs', 'lib.rs', 'rect.rs', 'rounded_rect.rs', 'shape.rs', 'size.rs', 'translate_scale.rs', 'vec2.rs']",['9ba7d45972888c3ac8e466f0888195439d9c3ffa'],76,36,112,12,,,
+7b1c3cfe89fd449202e723cd1cece4f4f286c269,"Fix quadratic bezier flattening
+
+There was an off-by-one bug in the iteration of the quad bez flatting
+loop, resulting in missing the last point and thus getting overly coarse
+flattening.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2020-12-04 22:43:41-08:00,28800,2020-12-04 22:43:41-08:00,28800,True,False,['bezpath.rs'],['a0780a7eb76e2104a0665b3b50fd7905393b799c'],1,1,2,1,,,
+729f4b334ddb1b8ebb25a3f5c1e230dd1c7de193,Fix up clippy for rust 1.49,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2021-01-08 14:33:14+00:00,0,2021-01-08 14:33:14+00:00,0,True,False,"['bezpath.rs', 'quadbez.rs', 'svg.rs']",['912444b666f7ea4f6f9a4c48ecd959ad40e3afc0'],15,15,30,3,,,
+ec5c090e3d42a48dcce12350a6fb1d4e47424680,Add a function to scale a rect about the origin.,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2021-01-08 14:22:04+00:00,0,2021-01-08 16:44:16+00:00,0,True,False,['rect.rs'],['cb5beac6388371590ce0d77434982bfebb03f64a'],0,21,21,1,1.0,1.0,1.0
+b09d22b661e0b42c35d17e8a7018562da9102c72,Change the name to be more specific.,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2021-01-08 14:24:07+00:00,0,2021-01-08 16:44:16+00:00,0,True,False,['rect.rs'],['ec5c090e3d42a48dcce12350a6fb1d4e47424680'],6,6,12,1,,,
+50bafdd9fc4dcbbd6c28d774e988a2a36bf5c728,"Remove Into<Size> for Vec2
+
+We want to force these sorts of conversions to be explicit.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-01-27 13:30:07-05:00,18000,2021-01-27 13:48:28-05:00,18000,True,False,['size.rs'],['6e0cc5104e7f6aa11dec67c50582910599d3f1c6'],8,0,8,1,0.0,0.0,0.0
+ba2a8d5e14cb0db9327ed05d700a96c9fde8f087,"Give ParamCurveNearest::nearest a struct return type
+
+This has been a minor papercut since forever; I always forget which
+argument is which.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-01-26 14:40:45-05:00,18000,2021-01-27 13:48:44-05:00,18000,True,False,"['bezpath.rs', 'cubicbez.rs', 'lib.rs', 'line.rs', 'param_curve.rs', 'quadbez.rs']",['50bafdd9fc4dcbbd6c28d774e988a2a36bf5c728'],49,68,117,6,0.0,1.0,1.0
+03d00070e9651bfbbd8d442f4f488bfcb98a091f,Add RoundedRectRadii struct to describe independent corner radius values,joshuawade,wadej@southern.edu,joshuawade,wadej@southern.edu,2021-01-28 13:16:18-05:00,18000,2021-01-28 13:16:18-05:00,18000,True,False,"['lib.rs', 'rounded_rect_radii.rs']",['ba2a8d5e14cb0db9327ed05d700a96c9fde8f087'],0,70,70,2,1.0,1.0,0.5
+3b653957d5e285b9ccf9a747f73c7334a37adadf,Allow independent radii for corners in RoundedRect,joshuawade,wadej@southern.edu,joshuawade,wadej@southern.edu,2021-01-29 21:55:16-05:00,18000,2021-01-29 21:55:16-05:00,18000,True,False,"['arc.rs', 'lib.rs', 'rect.rs', 'rounded_rect.rs', 'rounded_rect_radii.rs', 'size.rs', 'translate_scale.rs']",['03d00070e9651bfbbd8d442f4f488bfcb98a091f'],75,244,319,7,0.7625,0.7125,1.0
+ad46c5031dd93f5e24b16c796de78f72250b30b0,Use impl Into<RoundedRectRadii> in function arguments,joshuawade,wadej@southern.edu,joshuawade,wadej@southern.edu,2021-01-30 15:36:27-05:00,18000,2021-01-30 15:36:27-05:00,18000,True,False,"['rect.rs', 'rounded_rect.rs', 'size.rs']",['3b653957d5e285b9ccf9a747f73c7334a37adadf'],18,20,38,3,1.0,1.0,0.0
+f3843eebc455dc45dd32aa584db1393bf886eef5,Use sum where possible,joshuawade,wadej@southern.edu,joshuawade,wadej@southern.edu,2021-01-30 15:58:08-05:00,18000,2021-01-30 15:58:08-05:00,18000,True,False,['rounded_rect.rs'],['ad46c5031dd93f5e24b16c796de78f72250b30b0'],40,26,66,1,0.0,0.0,0.0
+6871c45ff61d9b049235a4ff317e02d2a5ae9467,"Add an explanation about the meaning of ""top"" in y-up coordinate spaces",joshuawade,wadej@southern.edu,joshuawade,wadej@southern.edu,2021-01-30 16:12:17-05:00,18000,2021-01-30 16:12:17-05:00,18000,True,False,['rounded_rect_radii.rs'],['f3843eebc455dc45dd32aa584db1393bf886eef5'],0,7,7,1,,,
+f20111d24c8b3504204487bed155a397e6235238,Add as_single_radius value,joshuawade,wadej@southern.edu,joshuawade,wadej@southern.edu,2021-01-30 16:44:41-05:00,18000,2021-01-30 16:44:41-05:00,18000,True,False,['rounded_rect_radii.rs'],['6871c45ff61d9b049235a4ff317e02d2a5ae9467'],1,16,17,1,1.0,1.0,1.0
+5ebb454c3680a13ce650dc76cf93c08dcce3ca38,Update version to 0.8.0,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-02-03 15:27:26-05:00,18000,2021-02-04 08:45:28-05:00,18000,True,False,['Cargo.toml'],['52fc6599967f3dafeedfb863b0d0e99f45e408da'],1,1,2,1,,,
+61c5d20989de6aa0c8e4aefb8e6207ae3a0d71fb,Add Affine::IDENTITY constant,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-02-22 14:02:38-05:00,18000,2021-02-22 14:50:25-05:00,18000,True,False,['affine.rs'],['5ebb454c3680a13ce650dc76cf93c08dcce3ca38'],1,4,5,1,,,
+9e80a2f21bac0a8a5a73e6968e7a0b87e0d7f5e5,Impl Add/Sub Vec2 for RoundedRect,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-03-03 11:03:00-05:00,18000,2021-03-03 15:16:35-05:00,18000,True,False,['rounded_rect.rs'],['61c5d20989de6aa0c8e4aefb8e6207ae3a0d71fb'],1,21,22,1,1.0,1.0,1.0
+08962c1eaa18235848881ced7dad9db3060febfd,"Fancier solver for inverse arclength
+
+Use the ITP method for solving inverse arclength, which converges more
+quickly than bisection but is just as robust.
+
+This patch makes the ITP solver available in `common` as well, as it is
+likely to be of general use. It's also nice that the solver is factored
+out from the arclength-specific logic.
+
+Also use the simple analytical solution for inverse arc length of a
+line.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2021-03-12 21:37:17-08:00,28800,2021-03-13 14:11:54-08:00,28800,True,False,"['common.rs', 'line.rs', 'param_curve.rs']",['5ebb454c3680a13ce650dc76cf93c08dcce3ca38'],30,149,179,3,0.11940298507462686,0.8208955223880597,0.31343283582089554
+25ec803ecd1bb908d2b1d8242282b76c060b26d6,Update version to 0.8.1,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-03-28 15:59:39-04:00,14400,2021-03-28 16:06:04-04:00,14400,True,False,['Cargo.toml'],['92575061528760bf63fb7c34daad4d8c4828bfb7'],1,1,2,1,,,
+9c87f9b5356fd9801acce85d37fee46ee5e928ee,"A better test to verify accuracy is as promised
+
+Fixes #176",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2021-04-19 11:02:14-07:00,25200,2021-04-19 11:02:14-07:00,25200,True,False,['cubicbez.rs'],['25ec803ecd1bb908d2b1d8242282b76c060b26d6'],0,11,11,1,1.0,1.0,1.0
+e16f5eeac8797ae11a3878e27b44d092b1edf1c1,Fixup a clippy lint,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-05-06 16:55:54-04:00,14400,2021-06-07 09:44:15-04:00,14400,True,False,['line.rs'],['d7b6918991e7d152a75e6056d83a3382e56e0ba9'],1,1,2,1,,,
+81e8ab5809ebdc9118e33bbd7e3b92eeee1b30be,New clippy lints,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-06-25 14:30:57-04:00,14400,2021-06-25 14:52:25-04:00,14400,True,False,"['arc.rs', 'bezpath.rs', 'cubicbez.rs']",['e16f5eeac8797ae11a3878e27b44d092b1edf1c1'],7,10,17,3,,,
+3a42c12249b75d7a4cc65e46e370d9aca67efd11,Add Point::distance_squared,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-06-25 14:52:54-04:00,14400,2021-06-25 15:38:59-04:00,14400,True,False,['point.rs'],['81e8ab5809ebdc9118e33bbd7e3b92eeee1b30be'],0,6,6,1,1.0,1.0,1.0
+0ef68211223b956942c4a5834d66a2625cb8d575,Add ParialEq to BezPath,0hypercube,0hypercube@gmail.com,Colin Rofls,colin@cmyr.net,2021-06-10 17:03:26+01:00,-3600,2021-06-30 10:44:43-04:00,14400,True,False,['bezpath.rs'],['3a42c12249b75d7a4cc65e46e370d9aca67efd11'],1,1,2,1,,,
+f16d154dd82c8784abd3803d7f6680954e028902,Fix some clippy warnings,Rémi Lauzier,remilauzier@protonmail.com,Colin Rofls,colin@cmyr.net,2021-07-19 01:04:09-04:00,14400,2021-07-29 20:46:50-04:00,14400,True,False,['bezpath.rs'],['0ef68211223b956942c4a5834d66a2625cb8d575'],2,2,4,1,,,
+347dbc7cdfb864ee3b5a6832b8748daf98722ade,"Fix some typo and warning found by intellij idea (#187)
+
+* Fix some typo and warning found by intellij idea
+
+* Apply suggestions from code review
+
+Co-authored-by: Colin Rofls <colin@cmyr.net>",Rémi Lauzier,remilauzier@protonmail.com,GitHub,noreply@github.com,2021-08-02 09:39:54-04:00,14400,2021-08-02 09:39:54-04:00,14400,True,False,"['arclen_accuracy.rs', 'arc.rs', 'bezpath.rs', 'common.rs', 'cubicbez.rs', 'ellipse.rs', 'insets.rs', 'lib.rs', 'line.rs', 'quadbez.rs', 'rect.rs', 'shape.rs', 'vec2.rs']",['f16d154dd82c8784abd3803d7f6680954e028902'],61,59,120,13,1.0,1.0,0.0
+81fbd0691382837b49c4cf26b48bd6dea78b45e4,Compute the minimum distance between two pathsegs.,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-08-25 16:24:08+01:00,-3600,2021-08-25 16:24:08+01:00,-3600,True,False,"['bezpath.rs', 'lib.rs', 'mindist.rs']",['347dbc7cdfb864ee3b5a6832b8748daf98722ade'],1,306,307,3,0.21333333333333335,0.44,0.4266666666666667
+de45b3bcf9e3a802eb6fd83daa2d6b09bf1e6124,Code nits,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-08-25 19:56:11+01:00,-3600,2021-08-25 19:56:11+01:00,-3600,True,False,['mindist.rs'],['81fbd0691382837b49c4cf26b48bd6dea78b45e4'],3,3,6,1,,,
+09b0617eabb9b6b8caa0d509b4e25155339209c3,"Use ArrayVec, improve docs",Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-08-25 20:01:23+01:00,-3600,2021-08-25 20:01:23+01:00,-3600,True,False,['bezpath.rs'],['de45b3bcf9e3a802eb6fd83daa2d6b09bf1e6124'],10,21,31,1,,,
+e860bca21636ffbc2d88f47e5ecde5fc0a5e1653,Fix wrapping of subtraction. Fixes #190,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-08-30 12:35:05+01:00,-3600,2021-08-30 12:35:05+01:00,-3600,True,False,['mindist.rs'],['e964d99f9e0643e4f3457cceb0166d39e91e5b80'],1,15,16,1,1.0,1.0,1.0
+cc0557c9cec6c09959fdab346a3bb12609b66cfc,Also fix bug when curves have different orders,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-08-30 14:46:38+01:00,-3600,2021-08-30 14:46:38+01:00,-3600,True,False,['mindist.rs'],['e860bca21636ffbc2d88f47e5ecde5fc0a5e1653'],1,16,17,1,1.0,1.0,1.0
+2f910acc910ae9a954b8e6ebdc668ad068fbe5a6,"Yeah, this is unnecessary now.",Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-08-30 17:08:50+01:00,-3600,2021-08-30 17:08:50+01:00,-3600,True,False,['mindist.rs'],['cc0557c9cec6c09959fdab346a3bb12609b66cfc'],1,1,2,1,,,
+b76057803f97913f94813d5a322e4f6d32d70ec1,Tidy up.,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-08-30 17:09:33+01:00,-3600,2021-08-30 17:09:33+01:00,-3600,True,False,['mindist.rs'],['2f910acc910ae9a954b8e6ebdc668ad068fbe5a6'],3,2,5,1,0.0,0.0,0.0
+138c89e0cbe819b4f19c1ed8f1d5a946d3762af9,Two utility functions,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-07 12:56:34+01:00,-3600,2021-09-07 12:56:34+01:00,-3600,True,False,"['line.rs', 'vec2.rs']",['006cbf1a09eaee87fbd89e676320f2b85baf2f53'],0,21,21,2,1.0,1.0,1.0
+43dacf3dd401a6a36f9a4ce79beaed4dcefd2d78,fit_inside function,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-07 12:57:41+01:00,-3600,2021-09-07 12:57:41+01:00,-3600,True,False,['cubicbez.rs'],['138c89e0cbe819b4f19c1ed8f1d5a946d3762af9'],0,16,16,1,1.0,1.0,1.0
+da57e599c6c11a0cd8618bb8bfae5ed867db76d0,Split a cubic into n cubics,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-07 12:58:19+01:00,-3600,2021-09-07 12:58:19+01:00,-3600,True,False,['cubicbez.rs'],['43dacf3dd401a6a36f9a4ce79beaed4dcefd2d78'],0,93,93,1,0.1744186046511628,1.0,0.9069767441860465
+f043ea262d25b65d63d5c4b6ecab235b1a991d2f,Approximate a cubic with a single quadratic,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-07 12:59:15+01:00,-3600,2021-09-07 12:59:15+01:00,-3600,True,False,['cubicbez.rs'],['da57e599c6c11a0cd8618bb8bfae5ed867db76d0'],0,22,22,1,0.0,1.0,1.0
+01ed3f0c1379d7424cf7babeaa0735bd62d4de80,Approximate a cubic with a spline,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-07 12:59:43+01:00,-3600,2021-09-07 12:59:43+01:00,-3600,True,False,['cubicbez.rs'],['f043ea262d25b65d63d5c4b6ecab235b1a991d2f'],0,69,69,1,0.24074074074074073,0.24074074074074073,0.24074074074074073
+38c29a568391d39273d000949343cf072887604a,Approximate a series of cubics with a series of quadratic splines,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-07 13:00:02+01:00,-3600,2021-09-07 13:00:02+01:00,-3600,True,False,['cubicbez.rs'],['01ed3f0c1379d7424cf7babeaa0735bd62d4de80'],0,25,25,1,0.0,1.0,1.0
+da1fea124ea37672d0d38ab21679a15d4b30dba0,Test all the above,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-07 13:00:08+01:00,-3600,2021-09-07 13:00:08+01:00,-3600,True,False,['cubicbez.rs'],['38c29a568391d39273d000949343cf072887604a'],2,88,90,1,0.0,1.0,1.0
+8de196bf415e800aae808f4f9037a7bb82faf33d,Rewrite as while loop,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-09 12:20:25+01:00,-3600,2021-09-09 12:20:25+01:00,-3600,True,False,['cubicbez.rs'],['da1fea124ea37672d0d38ab21679a15d4b30dba0'],4,2,6,1,1.0,0.0,0.0
+8b5041f4269586f718868dc4bcc2111e7d8fd348,Use find_map to simplify,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-09 12:20:35+01:00,-3600,2021-09-09 12:20:35+01:00,-3600,True,False,['cubicbez.rs'],['8de196bf415e800aae808f4f9037a7bb82faf33d'],6,1,7,1,0.0,0.0,0.0
+f12b52f48c60b6486cac9e077dd382e7342ca2a6,"Rename intersects to crossing_point, use .cross",Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-09 12:20:58+01:00,-3600,2021-09-09 12:20:58+01:00,-3600,True,False,"['cubicbez.rs', 'line.rs']",['8b5041f4269586f718868dc4bcc2111e7d8fd348'],6,5,11,2,0.0,0.0,0.0
+86fa5e291b8c1c96018b143594f6c39681586a3b,Drop unused .rotate method,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-09 12:21:04+01:00,-3600,2021-09-09 12:21:04+01:00,-3600,True,False,['vec2.rs'],['f12b52f48c60b6486cac9e077dd382e7342ca2a6'],8,0,8,1,0.0,0.0,0.0
+66ac59216def7f248afa1ccbb4010012ea2a2677,"Inline generic case, return an iterator",Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-09 12:21:21+01:00,-3600,2021-09-09 12:21:21+01:00,-3600,True,False,['cubicbez.rs'],['86fa5e291b8c1c96018b143594f6c39681586a3b'],22,21,43,1,,,
+d02a5f327c9f3b0e477cefbc1c01065d31f91679,QuadSpline new type,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-09 12:30:53+01:00,-3600,2021-09-09 12:30:53+01:00,-3600,True,False,"['cubicbez.rs', 'lib.rs', 'quadspline.rs']",['66ac59216def7f248afa1ccbb4010012ea2a2677'],16,40,56,3,0.75,1.0,1.0
+64cc09a31ae8bc22054e9d9d36555490dab63599,"Apply doc fix suggestions from code review
+
+Co-authored-by: Colin Rofls <colin@cmyr.net>",Simon Cozens,simon@simon-cozens.org,GitHub,noreply@github.com,2021-09-09 20:35:37+01:00,-3600,2021-09-09 20:35:37+01:00,-3600,True,False,['quadspline.rs'],['d02a5f327c9f3b0e477cefbc1c01065d31f91679'],3,3,6,1,,,
+67ca7800d05874fd9621c136c63f4c114ce3cb8c,Depublicize fit_inside,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-14 10:55:38+01:00,-3600,2021-09-14 10:55:55+01:00,-3600,True,False,['cubicbez.rs'],['64cc09a31ae8bc22054e9d9d36555490dab63599'],1,1,2,1,,,
+50b04181e8e0db8189decaa696501cba31747eca,Colin’s non allocating iterator,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-14 10:55:50+01:00,-3600,2021-09-14 10:55:55+01:00,-3600,True,False,['cubicbez.rs'],['67ca7800d05874fd9621c136c63f4c114ce3cb8c'],26,53,79,1,0.0,0.0,1.0
+1e357f73c934c3eb2ae1175430b45e4f8fabae61,Less fancy cubics_to_quadratic_splines,Simon Cozens,simon@simon-cozens.org,Simon Cozens,simon@simon-cozens.org,2021-09-14 10:56:56+01:00,-3600,2021-09-14 10:56:56+01:00,-3600,True,False,['cubicbez.rs'],['50b04181e8e0db8189decaa696501cba31747eca'],13,14,27,1,1.0,0.0,0.0
+fcda9e6478c631d4b2117ca1fbf112685e4939f1,"Update src/quadspline.rs
+
+Co-authored-by: Colin Rofls <colin@cmyr.net>",Simon Cozens,simon@simon-cozens.org,GitHub,noreply@github.com,2021-09-14 20:39:57+01:00,-3600,2021-09-14 20:39:57+01:00,-3600,True,False,['quadspline.rs'],['1e357f73c934c3eb2ae1175430b45e4f8fabae61'],1,1,2,1,,,
+6e539b18015dbadcfe81be35f3ba6559803547c4,Fixup some docs and comments,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-09-17 11:37:10-04:00,14400,2021-09-17 11:37:10-04:00,14400,True,False,['cubicbez.rs'],['f4b7ff42e14fc1abd1e43745e19dd9e958a1338d'],3,4,7,1,,,
+eb7d042eb140609ad56b273a608579a0efea4f88,"Fix winding orientation in line case
+
+The line case of PathSeg winding number calculation had its sign wrong.
+
+Fixes #180",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2021-09-17 08:52:39-07:00,25200,2021-09-17 08:57:51-07:00,25200,True,False,['bezpath.rs'],['f4b7ff42e14fc1abd1e43745e19dd9e958a1338d'],1,12,13,1,1.0,1.0,1.0
+f9953e574de2b5cebc33feb664b8155308392b7f,"Prepare for 0.8.2 release
+
+This bumps the crate version, and also reverts two small changes since
+0.8.1 that would've required us to go to 0.9. These changes were
+  suggested by clippy at some point, but do not appear to be warnings
+  any longer?",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-09-17 15:47:08-04:00,14400,2021-09-24 09:33:49-04:00,14400,True,False,"['Cargo.toml', 'bezpath.rs', 'cubicbez.rs']",['36d07fb8cbf95e6b9af974d2ae2cf9355517fc08'],5,5,10,3,,,
+10219758c61c9b8119905e09a434679d4ce74b6f,"Add a custom return type for BezPath::min_dist
+
+This is part of a bit of cleanup before doing a release, and includes a
+few other doc and license fixes. It also makes min_dist_param pub(crate)
+instead of pub; mindist was not exported to this isn't available as
+public API in any case. If someone specifically needs to use this at
+some point we can consider making it public then.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-09-17 11:27:28-04:00,14400,2021-09-24 09:34:47-04:00,14400,True,False,"['bezpath.rs', 'mindist.rs', 'quadspline.rs']",['f9953e574de2b5cebc33feb664b8155308392b7f'],16,67,83,3,,,
+3fb31746da57351b036248e547c448dfaac7e527,Update arrayvec to use const generics,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-09-17 16:06:32-04:00,14400,2021-09-24 09:35:43-04:00,14400,True,False,"['Cargo.toml', 'bezpath.rs', 'common.rs', 'cubicbez.rs', 'line.rs', 'param_curve.rs', 'quadbez.rs']",['10219758c61c9b8119905e09a434679d4ce74b6f'],15,17,32,7,0.0,0.0,0.0
+cc308c01247c24b7c7eba64459e1f21ac6726c2b,"Overwrite `contains` shape method on rect
+
+The normal `contains` is slow because it uses winding. We can do better",jaap aarts,jaap.aarts1@gmail.com,Colin Rofls,colin@cmyr.net,2021-08-04 16:00:16+02:00,-7200,2021-09-24 09:37:05-04:00,14400,True,False,['rect.rs'],['3fb31746da57351b036248e547c448dfaac7e527'],0,5,5,1,1.0,1.0,1.0
+c2ab3f75176df427a71b45bc28abdb3d0c927949,"Specialize `inv_arclen` for `PathSeg` and `ConstPoint`
+
+The default implementation of `ParamCurveArclen::inv_arclen` uses an
+iterative solver. For some types we can skip that:
+- `PathSeg`: forward it to the inner implementation (useful for `Line`)
+- `ConstPoint`: always return 0",Antal Szabó,szabo.antal.92@gmail.com,Colin Rofls,colin@cmyr.net,2021-09-14 03:23:38+02:00,-7200,2021-09-24 09:38:37-04:00,14400,True,False,"['bezpath.rs', 'line.rs']",['cc308c01247c24b7c7eba64459e1f21ac6726c2b'],0,13,13,2,1.0,1.0,0.0
+9bc5fcccfb5af5f655e40e57d002d825a094395d,Update rand dep,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-09-24 09:44:59-04:00,14400,2021-10-05 11:12:00-04:00,14400,True,False,"['Cargo.toml', 'svg.rs']",['c2ab3f75176df427a71b45bc28abdb3d0c927949'],3,7,10,2,,,
+c229a914d303c5989c9e6b1d766def2df27a8185,Optional support for schemars,Matt Campbell,mattcampbell@pobox.com,Colin Rofls,colin@cmyr.net,2021-11-03 10:09:54-05:00,18000,2021-11-03 17:00:46-04:00,14400,True,False,"['Cargo.toml', 'affine.rs', 'arc.rs', 'bezpath.rs', 'circle.rs', 'cubicbez.rs', 'ellipse.rs', 'insets.rs', 'line.rs', 'point.rs', 'quadbez.rs', 'rect.rs', 'rounded_rect.rs', 'rounded_rect_radii.rs', 'size.rs', 'svg.rs', 'translate_scale.rs', 'vec2.rs']",['9bc5fcccfb5af5f655e40e57d002d825a094395d'],1,25,26,18,,,
+1ca29449bb4e654baa45ee7f9b901d642c1efc1d,Update version to 0.8.3,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2021-12-20 11:11:15-05:00,18000,2021-12-20 11:34:26-05:00,18000,True,False,['Cargo.toml'],['c229a914d303c5989c9e6b1d766def2df27a8185'],1,1,2,1,,,
+89d97d9813491773b0be29589d82df03f3b041a3,Replaced sin and cos with sin_cos,Rahul Garg,rahulgargofficial@gmail.com,Rahul Garg,rahulgargofficial@gmail.com,2021-12-22 20:38:55+05:30,-19800,2021-12-22 20:38:55+05:30,-19800,True,False,"['affine.rs', 'arc.rs', 'circle.rs', 'common.rs', 'svg.rs', 'vec2.rs']",['1ca29449bb4e654baa45ee7f9b901d642c1efc1d'],18,23,41,6,0.75,0.75,0.25
+b2fdb9d62b25d23d6b2ed6fb623486b556d4116c,Removed blank lines,Rahul Garg,rahulgargofficial@gmail.com,Rahul Garg,rahulgargofficial@gmail.com,2021-12-22 20:43:55+05:30,-19800,2021-12-22 20:43:55+05:30,-19800,True,False,"['circle.rs', 'common.rs']",['89d97d9813491773b0be29589d82df03f3b041a3'],2,0,2,2,,,
+31a1fb627618ab05ea474ad189b59f9f3ac7bd3c,"Improve documentation and robustness of BezPath
+
+Clearly document the correctness invariants of BezPath and the fact that
+it can represent multiple subpaths. Add debug asserts to catch construction
+of invalid paths.
+
+Note: the test_elements_to_segments_starts_on_quad formerly constructed
+an invalid path and expected particular behavior. This is changed to
+expect a panic on debug assert.
+
+Responsive to #211",Raph Levien,raph@google.com,Raph Levien,raph.levien@gmail.com,2022-01-14 09:33:06-08:00,28800,2022-01-14 09:41:44-08:00,28800,True,False,['bezpath.rs'],['b9247ed0a872cdd63a5b3c64ca5bc1e1392abee8'],17,27,44,1,0.8695652173913043,0.0,0.0
+3ee40cda9b53ce4af1d7cc075b679ca3d6d93dfd,"cargo fmt
+
+Gah, this looked better on one line. Possible I should refactor into a separate function.",Raph Levien,raph.levien@gmail.com,Raph Levien,raph.levien@gmail.com,2022-01-14 09:46:51-08:00,28800,2022-01-14 09:46:51-08:00,28800,True,False,['bezpath.rs'],['31a1fb627618ab05ea474ad189b59f9f3ac7bd3c'],4,16,20,1,1.0,1.0,0.5
+8e8b704779c9435d52850abb5f7c1c0158b2a0a0,Slightly more concise validity checking,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2022-01-14 13:09:16-05:00,18000,2022-01-14 13:10:23-05:00,18000,True,False,['bezpath.rs'],['3ee40cda9b53ce4af1d7cc075b679ca3d6d93dfd'],22,10,32,1,0.0,0.0,0.6153846153846154
+025bfc4be7530c8b3a66ce1a72de6e3a95b78a2a,"BezPath: get_seg() && path_segments() equivalence
+
+This ensures these two methods have equivalent behaviour, and fixes up
+the docs on the former.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2022-01-14 12:47:09-05:00,18000,2022-01-14 13:13:55-05:00,18000,True,False,['bezpath.rs'],['b9247ed0a872cdd63a5b3c64ca5bc1e1392abee8'],3,24,27,1,0.8,0.8,1.0
+05c061eaf7aceb24d833517706d84103ae5bceb7,Update cfg attribute name,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2022-06-03 11:48:07-04:00,14400,2022-06-03 12:09:08-04:00,14400,True,False,['lib.rs'],['d0b956b47f219ba2303b4e2f2d904ea7b946e783'],1,1,2,1,,,
+04c50504f9971181f55529948ff9728c1a619887,Add pop method to BezPath,Jeffrey René Ouimet,profaurore@gmail.com,Colin Rofls,colin@cmyr.net,2022-06-02 22:26:59-04:00,14400,2022-06-03 12:10:33-04:00,14400,True,False,['bezpath.rs'],['05c061eaf7aceb24d833517706d84103ae5bceb7'],0,5,5,1,1.0,1.0,1.0
+9ed4b73dac4f085065d7a6968121581cb8296089,"Change BezPath.pop doc
+
+Co-authored-by: Colin Rofls <colin@cmyr.net>",Jeffrey René Ouimet,91103323+profaurore@users.noreply.github.com,Colin Rofls,colin@cmyr.net,2022-06-03 11:01:56-04:00,14400,2022-06-03 12:10:33-04:00,14400,True,False,['bezpath.rs'],['04c50504f9971181f55529948ff9728c1a619887'],1,1,2,1,,,
+8d4001c681009f2d9261d4ef43ae168c2f464812,"Compute inflection points of cubic bezier
+
+It's useful to know where the inflection points are, possibly just to visualize, possibly because some other algorithm might depend on segments being convex.
+
+Note that quadratic beziers have no inflection points.
+
+Algorithm (cited) adapted from caffeineowl, but with I think a particularly nice higher-level expression.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-07-11 17:17:44-07:00,25200,2022-07-11 17:17:44-07:00,25200,True,False,['cubicbez.rs'],['9ed4b73dac4f085065d7a6968121581cb8296089'],0,38,38,1,0.35714285714285715,1.0,1.0
+e99f675f7eb52b7b6038b26b851ffc2142d35100,Remove debug printing in test,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-07-13 07:19:46-07:00,25200,2022-07-13 07:19:46-07:00,25200,True,False,['cubicbez.rs'],['8d4001c681009f2d9261d4ef43ae168c2f464812'],4,0,4,1,1.0,0.0,0.0
+8429821bfd1e8cee1cc1f83e7649da8d91becf91,"Update src/cubicbez.rs
+
+Co-authored-by: Colin Rofls <colin@cmyr.net>",Raph Levien,raph.levien@gmail.com,GitHub,noreply@github.com,2022-07-13 07:52:21-07:00,25200,2022-07-13 07:52:21-07:00,25200,True,False,['cubicbez.rs'],['e99f675f7eb52b7b6038b26b851ffc2142d35100'],1,1,2,1,,,
+899218a7c0f0a98ac968672bf95ba791d315861f,"Better cubic solver
+
+Apply a better cubic solver, adapted from momentsingraphics.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-08-05 16:55:53-07:00,25200,2022-08-05 17:15:23-07:00,25200,True,False,['common.rs'],['bb7162cded44bc3fb93e38103ef701cd6e5e8789'],24,41,65,1,0.0,0.7777777777777778,0.7777777777777778
+eb658ab952ea84d57c8b0c5e4000ed83aa9a735e,"Quartic solver
+
+Following Orellana and de Michele 2020.
+
+WIP",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-08-18 16:47:25-07:00,25200,2022-08-18 21:45:13-07:00,25200,True,False,['common.rs'],['899218a7c0f0a98ac968672bf95ba791d315861f'],0,290,290,1,0.06299212598425197,0.06299212598425197,0.31496062992125984
+d045510fae7cc4e6202e967d35262c10017c227e,"Add proper tests
+
+Add a suite of tests from the paper. Also some cleanup (getting rid of println).",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-08-19 09:45:09-07:00,25200,2022-08-19 11:10:34-07:00,25200,True,False,['common.rs'],['eb658ab952ea84d57c8b0c5e4000ed83aa9a735e'],34,162,196,1,0.14563106796116504,0.5533980582524272,0.4563106796116505
+c3c75222dd453f289c518646631fb3ac6ca8548a,"Slight simplification of trig case
+
+Use abs and copysign rather than an abs to make the trig case give the highest-value root. This is probably a minor improvement, and makes the code slightly less true to the paper.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-08-23 19:04:34-07:00,25200,2022-08-23 19:04:34-07:00,25200,True,False,['common.rs'],['d045510fae7cc4e6202e967d35262c10017c227e'],7,3,10,1,1.0,1.0,0.0
+e344221daf50f7bc01514c5d4dc36689c8e0fff5,"Switch to better cubic arclength algorithm
+
+This is the technique in https://raphlinus.github.io/curves/graphics/2019/01/04/followups.html, it just took me a while to land it.
+
+Benchmarks show 3-4x improvement (both Intel and ARM M1) and it passes the accuracy tests. Another benefit is that it makes the Gauss-Legendre quadrature coefficient sets more complete, and I anticipate other uses of that soonish.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-08-23 20:18:35-07:00,25200,2022-08-23 20:50:34-07:00,25200,True,False,"['common.rs', 'cubicbez.rs']",['bb7162cded44bc3fb93e38103ef701cd6e5e8789'],36,188,224,2,0.0,1.0,0.0
+3de5e53d83bc5895d74ddc8b58ad21183b653ed5,rustfmt,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-08-23 20:55:52-07:00,25200,2022-08-23 20:55:52-07:00,25200,True,False,['cubicbez.rs'],['e344221daf50f7bc01514c5d4dc36689c8e0fff5'],1,4,5,1,,,
+1970f101ce63855d6eac3e0ad70e5c4253f5a8e2,Clippy,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-08-23 20:59:39-07:00,25200,2022-08-23 20:59:39-07:00,25200,True,False,['cubicbez.rs'],['3de5e53d83bc5895d74ddc8b58ad21183b653ed5'],3,3,6,1,,,
+d421a7eaec7c8689cd9a3d731aa1b346b48b5590,Checkpoint work on offset curves.,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-08-25 13:44:47-07:00,25200,2022-08-25 13:44:47-07:00,25200,True,False,"['lib.rs', 'offset.rs']",['c02b1fc02745b7681dac98169231b7f51c69cbc0'],0,116,116,2,0.7076923076923077,1.0,1.0
+43707593d442e57999d37c61081aec782c81a796,"change Line::is_finite() to involve both points (#228)
+
+* change Line::is_finite() to involve both points
+
+* add unit test
+
+* auto-formatting",Mike Wilkerson,11575183+mlwilkerson@users.noreply.github.com,GitHub,noreply@github.com,2022-09-06 10:02:00-07:00,25200,2022-09-06 13:02:00-04:00,14400,True,False,['line.rs'],['bb7162cded44bc3fb93e38103ef701cd6e5e8789'],2,29,31,1,0.0,1.0,1.0
+a941d81b6c02f045e8d456993981f721a1e9e60e,"More work on offset curves
+
+May be messy.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-09-12 15:28:33-07:00,25200,2022-09-12 15:28:33-07:00,25200,True,False,"['common.rs', 'offset.rs']",['d421a7eaec7c8689cd9a3d731aa1b346b48b5590'],11,185,196,2,0.35507246376811596,1.0,0.5434782608695652
+6559da86b4bdef2ebef35abb7d23cc1b4cdcf7b3,Add bench and example exercising quartic,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-09-12 15:39:44-07:00,25200,2022-09-12 15:39:44-07:00,25200,True,False,"['quartic.rs', 'quad_intersect.rs']",['a941d81b6c02f045e8d456993981f721a1e9e60e'],0,101,101,2,0.24324324324324326,1.0,0.9594594594594594
+9eac1550d559fe9bdcd100bcddcb9ad81e96c0f6,rustfmt,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-09-29 09:19:45-07:00,25200,2022-09-29 09:19:45-07:00,25200,True,False,"['quartic.rs', 'offset.rs']",['6559da86b4bdef2ebef35abb7d23cc1b4cdcf7b3'],7,27,34,2,0.15789473684210525,1.0,1.0
+919620272a59625dc6d1b34fea1aa1ad28b67ab1,Implement GATs,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2022-11-04 12:10:53+00:00,0,2022-11-04 12:19:44+00:00,0,True,False,"['arc.rs', 'bezpath.rs', 'circle.rs', 'cubicbez.rs', 'ellipse.rs', 'line.rs', 'quadbez.rs', 'rect.rs', 'rounded_rect.rs', 'shape.rs']",['de52170e084cf658a2a05c15892e17f5a3f2160f'],30,31,61,10,0.4942084942084942,0.0888030888030888,0.18146718146718147
+ffebc8cd9c6620b986a86153803530e5ba1930f2,"Ignore clippy lints about using i32::from(bool).
+
+I think what we do now is clearer.",Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2022-11-04 12:24:21+00:00,0,2022-11-04 12:24:21+00:00,0,True,False,['lib.rs'],['919620272a59625dc6d1b34fea1aa1ad28b67ab1'],1,2,3,1,,,
+37f6a24a90406edc1bea9ec42cac3089bacfa1ab,"bump version
+
+Bump version to 0.9 for release. Also adds a `Shape` impl for `[PathEl; N]`",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2022-11-22 23:03:00-05:00,18000,2022-11-22 23:03:00-05:00,18000,True,False,"['Cargo.toml', 'bezpath.rs']",['79e5787a57f12d4965fcea01ab9442ecf6795775'],1,41,42,2,,,
+405b1015f8bf35be33cee2a9dd5052fe3c1fde1c,updates to readme,Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2022-11-23 09:46:00-05:00,18000,2022-11-23 09:46:00-05:00,18000,True,False,"['ci.yml', 'Cargo.toml', 'README.md']",['37f6a24a90406edc1bea9ec42cac3089bacfa1ab'],2,8,10,3,,,
+57a5ca22ba7817e6733d0320fda28f7bab3fcaff,"Checkpoint
+
+Strengthen the cubic fit logic, including better error measuring, and start cusp finding. However, it doesn't fully solve the parallel curve problem yet, and I have some refactoring in mind.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-12-23 11:02:41-08:00,28800,2022-12-23 11:14:13-08:00,28800,True,False,"['common.rs', 'offset.rs']",['3bde40a5c2aa63740256b55990de9a738824eed2'],40,165,205,2,0.5161290322580645,0.0,0.43010752688172044
+2465a5efd09906698f621a94ef02f9b2554649a9,"Mostly working offset
+
+This commit gets a new `ParamCurveFit` trait in place, and uses it to compute offsets, but it is not breaking at cusps (which seems to be necessary, fitting through a cusp produces artifacts). Also needs some cleanup.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-12-24 16:40:18-08:00,28800,2022-12-24 16:42:40-08:00,28800,True,False,"['offset.rs', 'common.rs', 'fit.rs', 'lib.rs', 'offset.rs']",['57a5ca22ba7817e6733d0320fda28f7bab3fcaff'],15,380,395,5,0.2857142857142857,0.46218487394957986,0.5168067226890757
+2fab0728fda464051ded9a73a79d843b28ed9c5e,"Reasonably good cusp handling
+
+Use ITP method to find cusps. The logic probably doesn't handle double and higher multiplicity cusps.
+
+Also arguably we should search for double cusps, but this is likely a fairly subtle improvement.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-12-25 18:02:21-08:00,28800,2022-12-26 08:53:29-08:00,28800,True,False,"['offset.rs', 'fit.rs', 'offset.rs']",['2465a5efd09906698f621a94ef02f9b2554649a9'],10,58,68,3,0.0,0.0,1.0
+332425d7849f5701a8805ce0a410f2e473296fa2,"Generic default implementation of area_moment
+
+Also significant cleanup of `CurveOffset`, as a lot of that has moved into the fit module.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-12-26 13:10:49-08:00,28800,2022-12-26 13:16:40-08:00,28800,True,False,"['fit.rs', 'offset.rs']",['2fab0728fda464051ded9a73a79d843b28ed9c5e'],402,114,516,2,0.46120689655172414,0.41810344827586204,0.34051724137931033
+97c53c23890d4f31a95ed6a557c240368af3f7dc,"A bit more optimization
+
+Mostly small changes to CubicOffset.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-12-26 13:38:57-08:00,28800,2022-12-26 14:03:00-08:00,28800,True,False,"['fit.rs', 'offset.rs']",['332425d7849f5701a8805ce0a410f2e473296fa2'],47,7,54,2,1.0,0.03125,0.0
+eb2c6df333f90e706c38a4d5609a4efdd857c5a6,"First draft of optimized fit
+
+This computes an optimized fit (minimum number of segments, minimum error given that number), but without handling cusps.
+
+Also includes an example that plots a quartic polynomial.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-12-26 15:46:25-08:00,28800,2022-12-27 07:49:21-08:00,28800,True,False,"['fit_poly.rs', 'offset.rs', 'fit.rs']",['97c53c23890d4f31a95ed6a557c240368af3f7dc'],7,162,169,3,0.4796747967479675,0.4796747967479675,0.7804878048780488
+2c986ceb8bdb2ffd80ae658fce644debf797ce7a,"Rework moments in ParamCurveFit
+
+Make the ParamCurveFit trait return the raw integrals, for refinement into moments in the curve fitting logic. This is easier and more efficient for new curves, and also facilitates more efficient and robust downstream processing.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-12-27 09:48:22-08:00,28800,2022-12-27 10:41:01-08:00,28800,True,False,['fit.rs'],['eb2c6df333f90e706c38a4d5609a4efdd857c5a6'],48,50,98,1,0.0,0.0,1.0
+4c3779d9a040baaa33ef56e6c1f29cb25d5d4239,"Start work on simplification
+
+The moment_integrals function is probably correct but likely can be optimized.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-12-26 15:46:25-08:00,28800,2022-12-27 13:35:37-08:00,28800,True,False,"['lib.rs', 'simplify.rs']",['2c986ceb8bdb2ffd80ae658fce644debf797ce7a'],0,180,180,2,0.0,1.0,1.0
+7eb67e32fee21e832cd92647bf570daaed098ded,"Implement simplify for bez paths
+
+Implementation of SimplifyBezPath including ParamCurveFit.
+
+This also fixes some issues with the trait and fit implementation.
+
+Also a bit of cleanup, comment fixes, and micro-optimization.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2022-12-27 14:01:57-08:00,28800,2022-12-27 18:03:43-08:00,28800,True,False,"['offset.rs', 'simplify.rs', 'fit.rs', 'simplify.rs']",['4c3779d9a040baaa33ef56e6c1f29cb25d5d4239'],135,178,313,4,1.0,1.0,0.0
+e5220a5972db9f9d962662b0e0604b1b39bf3c45,"More readable SVG output
+
+Changes the SVG writer to emit commas between coordinate components and spaces between coordinates and commands.",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-03-02 17:10:11-05:00,18000,2023-03-02 17:10:11-05:00,18000,True,False,['svg.rs'],['fd839c25ea0c98576c7ce5789305822675a89938'],8,11,19,1,0.0,0.0,1.0
+f9f800cdc830c7670ce6576b329be18f064be4d6,Fix clippy,Rod S,rsheeter@google.com,Rod S,rsheeter@google.com,2023-03-02 14:16:29-08:00,28800,2023-03-02 14:16:29-08:00,28800,True,False,['mindist.rs'],['fd839c25ea0c98576c7ce5789305822675a89938'],1,1,2,1,,,
+f3164ab258f1f93ee391323ab8b743240924cf6e,Add a note that QuadSpline is a b-spline and a way to iterate as quads,Rod S,rsheeter@google.com,Rod S,rsheeter@google.com,2023-03-02 13:53:07-08:00,28800,2023-03-02 14:17:26-08:00,28800,True,False,['quadspline.rs'],['f9f800cdc830c7670ce6576b329be18f064be4d6'],1,106,107,1,0.3484848484848485,1.0,1.0
+efec67584e518914ad920dfd9555026d55ef3884,Please forgive me clippy,Rod S,rsheeter@google.com,Rod S,rsheeter@google.com,2023-03-02 14:10:25-08:00,28800,2023-03-02 14:17:26-08:00,28800,True,False,['quadspline.rs'],['f3164ab258f1f93ee391323ab8b743240924cf6e'],3,6,9,1,1.0,1.0,1.0
+8af9a3b954c16e955221352866183a8fd4ad829f,fmt,Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-03-02 17:24:25-05:00,18000,2023-03-02 17:24:25-05:00,18000,True,False,['svg.rs'],['e5220a5972db9f9d962662b0e0604b1b39bf3c45'],1,4,5,1,,,
+8f5882c85d3f079d9cc80061a4a1eb0336e240a5,Correct comment,Rod S,rsheeter@google.com,Rod S,rsheeter@google.com,2023-03-02 14:26:47-08:00,28800,2023-03-02 14:27:27-08:00,28800,True,False,['quadspline.rs'],['efec67584e518914ad920dfd9555026d55ef3884'],2,1,3,1,,,
+6236dee4739407fb1fa6752e3a9cfc2c378e115b,"Add Affine::skew constructor
+
+Adds a `skew` constructor to `Affine` taking skew factors in the horizontal and vertical direction.",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-03-02 18:17:58-05:00,18000,2023-03-02 18:17:58-05:00,18000,True,False,['affine.rs'],['fd839c25ea0c98576c7ce5789305822675a89938'],0,20,20,1,1.0,1.0,1.0
+1765608420a5585646be033350d1dcbf40fcd0e1,Code review,Rod S,rsheeter@google.com,Rod S,rsheeter@google.com,2023-03-02 18:53:25-08:00,28800,2023-03-02 18:53:50-08:00,28800,True,False,['quadspline.rs'],['8f5882c85d3f079d9cc80061a4a1eb0336e240a5'],21,17,38,1,1.0,0.0,0.0
+4c8a5d444f107fc4fc60587301d6e910ffb09756,"Bump version for release
+
+As it says on the tin: bumps version to 0.9.1.",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-03-03 18:17:57-05:00,18000,2023-03-03 18:17:57-05:00,18000,True,False,['Cargo.toml'],['e685f125458c92b3abbac33409d721259f7a7de2'],1,1,2,1,,,
+8d10d4e00981238f1ba555fe44af000b81aa4ec1,[clippy] Push the rock back up the hill,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2023-03-15 11:37:19-04:00,14400,2023-03-15 14:58:29-04:00,14400,True,False,['svg.rs'],['110dfee8e06ee47ea19951116b7a86f2f2d120ee'],6,6,12,1,,,
+fbaf08204753b93b06042c84c681d4f992d38fe2,Satisfy clippy up to 1.67 beta.,Kaur Kuut,strom@nevermore.ee,Colin Rofls,colin@cmyr.net,2023-01-23 19:50:16+02:00,-7200,2023-03-16 12:49:37-04:00,14400,True,False,"['arclen_accuracy.rs', 'circle.rs', 'cubic_arclen.rs', 'ellipse.rs', 'affine.rs', 'bezpath.rs', 'circle.rs', 'cubicbez.rs', 'ellipse.rs', 'mindist.rs', 'point.rs', 'quadbez.rs', 'rect.rs', 'size.rs', 'svg.rs', 'translate_scale.rs', 'vec2.rs']",['8d10d4e00981238f1ba555fe44af000b81aa4ec1'],44,37,81,17,0.5,0.0,0.0
+1624870ea0f6496d1b7b7329cf170476e05f859c,feat: Port to no_std/libm,jtnunley,jtnunley01@gmail.com,jtnunley,jtnunley01@gmail.com,2023-03-04 09:11:59-08:00,28800,2023-03-17 10:27:41-07:00,25200,True,False,"['ci.yml', 'Cargo.toml', 'circle.rs', 'ellipse.rs', 'affine.rs', 'arc.rs', 'bezpath.rs', 'circle.rs', 'common.rs', 'cubicbez.rs', 'ellipse.rs', 'insets.rs', 'lib.rs', 'line.rs', 'mindist.rs', 'param_curve.rs', 'point.rs', 'quadbez.rs', 'quadspline.rs', 'rect.rs', 'rounded_rect.rs', 'rounded_rect_radii.rs', 'size.rs', 'translate_scale.rs', 'vec2.rs']",['fbaf08204753b93b06042c84c681d4f992d38fe2'],60,238,298,25,0.0,1.0,1.0
+dd9dab405f683263d48cfbf5b7c3b68db4ee3d43,fmt,jtnunley,jtnunley01@gmail.com,jtnunley,jtnunley01@gmail.com,2023-03-04 09:14:31-08:00,28800,2023-03-17 10:27:41-07:00,25200,True,False,"['common.rs', 'cubicbez.rs', 'lib.rs', 'quadspline.rs']",['1624870ea0f6496d1b7b7329cf170476e05f859c'],9,8,17,4,,,
+7cdbf096f35241d39515a2a5b265cd79fb53ac07,Make it so FloatFuncs is only used on no_std,jtnunley,jtnunley01@gmail.com,jtnunley,jtnunley01@gmail.com,2023-03-09 10:06:37-08:00,28800,2023-03-17 10:27:42-07:00,25200,True,False,"['circle.rs', 'ellipse.rs', 'affine.rs', 'arc.rs', 'bezpath.rs', 'circle.rs', 'common.rs', 'cubicbez.rs', 'ellipse.rs', 'mindist.rs', 'param_curve.rs', 'point.rs', 'quadbez.rs', 'rect.rs', 'rounded_rect.rs', 'rounded_rect_radii.rs', 'size.rs', 'vec2.rs']",['dd9dab405f683263d48cfbf5b7c3b68db4ee3d43'],59,65,124,18,1.0,1.0,1.0
+f93d9dc5be9df8625a05ccc3f623e0647ecf6889,Factor out FloatFuncsExtra,jtnunley,jtnunley01@gmail.com,jtnunley,jtnunley01@gmail.com,2023-03-17 12:44:20-07:00,25200,2023-03-17 12:44:20-07:00,25200,True,False,"['arc.rs', 'common.rs', 'quadbez.rs']",['7cdbf096f35241d39515a2a5b265cd79fb53ac07'],32,23,55,3,,,
+6c1a0fc58d9430eb109f8fe6ac01d6a5ba83262d,Standardize copyright headers. (#245),Kaur Kuut,strom@nevermore.ee,GitHub,noreply@github.com,2023-03-18 16:31:44-04:00,14400,2023-03-18 16:31:44-04:00,14400,True,False,"['cubic_arclen.rs', 'quad_arclen.rs', 'rect_expand.rs', 'arclen_accuracy.rs', 'circle.rs', 'cubic_arclen.rs', 'ellipse.rs', 'affine.rs', 'arc.rs', 'bezpath.rs', 'circle.rs', 'common.rs', 'cubicbez.rs', 'ellipse.rs', 'insets.rs', 'lib.rs', 'line.rs', 'mindist.rs', 'param_curve.rs', 'point.rs', 'quadbez.rs', 'quadspline.rs', 'rect.rs', 'rounded_rect.rs', 'rounded_rect_radii.rs', 'shape.rs', 'size.rs', 'svg.rs', 'translate_scale.rs', 'vec2.rs']",['fbaf08204753b93b06042c84c681d4f992d38fe2'],65,85,150,30,,,
+d6ec78270dd19b2abc754fdc0bdd426f48101d0f,"Debug assert BezPath starts with MoveTo
+
+This adds a few debug asserts that will fire if a BezPath is constructed
+and does not start with a `MoveTo` element.",Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2023-03-20 11:34:01-04:00,14400,2023-03-20 12:01:04-04:00,14400,True,False,['bezpath.rs'],['887114e475665a3c06ffaf6f1c45ca38a75b88a3'],1,9,10,1,1.0,1.0,1.0
+6e9d8500ff86015eb575ca651a5f288f7b619458,Implement Affine * Arc,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-03-24 14:43:16+00:00,0,2023-03-24 14:46:16+00:00,0,True,False,['arc.rs'],['d6ec78270dd19b2abc754fdc0bdd426f48101d0f'],1,37,38,1,1.0,1.0,0.4642857142857143
+615f6c4ffab7ddd57f8c7e4e6d87680542ab53e9,Avoid having to do 2 SVDs,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-03-24 14:49:06+00:00,0,2023-03-24 14:49:06+00:00,0,True,False,"['arc.rs', 'ellipse.rs']",['6e9d8500ff86015eb575ca651a5f288f7b619458'],2,8,10,2,1.0,1.0,1.0
+e2f72f9bf53a0ddf5164d42f319f9c0120f73af0,Expose and fix a cubic to quadratic error,Rod S,rsheeter@google.com,Rod S,rsheeter@google.com,2023-03-28 22:38:41-07:00,25200,2023-03-28 22:38:41-07:00,25200,True,False,['cubicbez.rs'],['d6ec78270dd19b2abc754fdc0bdd426f48101d0f'],6,27,33,1,1.0,1.0,1.0
+615d2e7b131d475a27b8e0bce06f2b0d783a0203,"Revert semver breaking change and bump version for release
+
+This reverts the clamp change in #233 (this clippy lint is now set to allow by default due to changes in behavior) to allow a patch release without breaking semver.
+
+Updates the version to 0.9.2.",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-03-29 13:31:53-04:00,14400,2023-03-29 13:31:53-04:00,14400,True,False,"['Cargo.toml', 'size.rs']",['47c9570461f606bb21f6f9e546c2ef1ba4f1530d'],8,3,11,2,,,
+3341305ffc85bcf88018145210d4fbd0a7e77428,prod stuck ci,Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-03-29 13:49:45-04:00,14400,2023-03-29 13:49:45-04:00,14400,True,False,[],['615d2e7b131d475a27b8e0bce06f2b0d783a0203'],0,0,0,0,,,
+5fe47506c3f654a66b6d77baed399acbea818e57,"Warning cleanup
+
+Cleans up warnings and clippy lints. Also makes the copyright strings consistent and adds docstrings to each source file.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-03-29 11:16:52-07:00,25200,2023-03-29 11:30:35-07:00,25200,True,False,"['quartic.rs', 'fit_poly.rs', 'offset.rs', 'quad_intersect.rs', 'simplify.rs', 'common.rs', 'fit.rs', 'offset.rs', 'simplify.rs']",['2dad24c8b8a0da7ed9f5554cf9a7899b6a633402'],23,44,67,9,0.0,0.0,0.75
+693fe582624d9dfc43d3c5f43c887c033fb81eb6,"Make work in no_std
+
+Use core/alloc types, add shims to libm as needed.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-03-29 12:07:18-07:00,25200,2023-03-29 12:07:18-07:00,25200,True,False,"['common.rs', 'fit.rs', 'offset.rs', 'simplify.rs']",['5fe47506c3f654a66b6d77baed399acbea818e57'],4,17,21,4,1.0,1.0,0.0
+900cffbd1e70284d6e48a7e52aa8f401f5d7bd48,"Improve documentation
+
+Add a bunch of explanation, including how to use, how the algorithm works, and limitations that we hope to address.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-03-29 13:06:05-07:00,25200,2023-03-29 13:06:05-07:00,25200,True,False,"['fit.rs', 'offset.rs', 'simplify.rs']",['693fe582624d9dfc43d3c5f43c887c033fb81eb6'],7,93,100,3,,,
+065511281be6590e662e4e8de97425292ab7c547,This PR adds and makes public some helper methods on `Affine`,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-03-30 11:48:37+01:00,-3600,2023-03-30 11:48:37+01:00,-3600,True,False,"['affine.rs', 'ellipse.rs']",['97c5a1cb673912fb824b0c308270f179673f48d8'],6,112,118,2,1.0,1.0,0.6842105263157895
+84d827e2afa510819395f8a02baf8aa9d911e17e,"Respond to review comments
+
+Mostly just doc improvements.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-03-31 10:49:19-07:00,25200,2023-03-31 10:49:19-07:00,25200,True,False,"['fit_poly.rs', 'fit.rs']",['900cffbd1e70284d6e48a7e52aa8f401f5d7bd48'],4,15,19,2,,,
+9e77b4ba8f95289d33772c15d80283898ad49b95,"Make fit_to_bezpath_opt handle cusps
+
+Add cusp handling to the optimizing variant. It should be reasonably numerically robust, but this has not been extensively tested yet.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-04-02 15:36:26-07:00,25200,2023-04-02 20:11:11-07:00,25200,True,False,"['offset.rs', 'bezpath.rs', 'common.rs', 'fit.rs']",['a9abaa8c4d955eb11e659211ab6d6477916a7fc1'],42,165,207,4,0.0,0.3425925925925926,0.0
+95e2f52734013fe91ef8066937ad40ef8e8b9e74,Use alloc::Vec to work in no_std,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-04-02 20:21:29-07:00,25200,2023-04-02 20:21:29-07:00,25200,True,False,['fit.rs'],['9e77b4ba8f95289d33772c15d80283898ad49b95'],0,2,2,1,,,
+721a3a01fd6fb8648da02cf521caf28493f4fe11,"Add alloc feature to serde dependency
+
+Restores serde support for BezPath.
+
+Also bumps version so we can release.",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-04-12 13:56:50-04:00,14400,2023-04-12 13:56:50-04:00,14400,True,False,['Cargo.toml'],['4a150ad5c6533b7548dbf6d2ec8398378283376b'],2,2,4,1,,,
+615ed7ede2d80ae0f3509165c5a2dee6cef69251,[ci] Test serde feature in CI,Colin Rofls,colin@cmyr.net,Colin Rofls,colin@cmyr.net,2023-04-12 14:30:30-04:00,14400,2023-04-13 11:07:04-04:00,14400,True,False,['ci.yml'],['a1ffc585d9bf841bf1eb97edb287510c3a795fd0'],0,3,3,1,,,
+98c761ecc70930323329410c9b964a15dcfe7357,"Work toward making simplification robust
+
+Make quartic solver report failure when there are no real solutions, rather than panicking. Make the ITP solver report its bracket to handle cases where there are discontinuities better.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-04-14 07:06:16-07:00,25200,2023-04-14 07:09:04-07:00,25200,True,False,"['common.rs', 'fit.rs']",['615ed7ede2d80ae0f3509165c5a2dee6cef69251'],8,12,20,2,,,
+34ace6c8d6b95fec198b3614d053e9a02c043ba8,"Create CurveDist abstraction
+
+This commit moves the distance estimation into its own struct, but doesn't change the behavior.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-04-14 08:31:24-07:00,25200,2023-04-14 08:38:25-07:00,25200,True,False,['fit.rs'],['98c761ecc70930323329410c9b964a15dcfe7357'],33,45,78,1,1.0,1.0,0.0
+c5e0f5a9839ca85c77f38f50dd912e5cbbb41eee,"Checkpoint, arc length parametrized error",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-04-14 10:46:47-07:00,25200,2023-04-14 10:55:07-07:00,25200,True,False,['fit.rs'],['34ace6c8d6b95fec198b3614d053e9a02c043ba8'],4,49,53,1,0.46153846153846156,0.9743589743589743,0.6410256410256411
+721d9e48e5ee8137b2f31a1c89400ffcb3f95817,"Checkpoint hybrid approach
+
+Measure whether curve is ""spicy,"" and use arc length measure if so.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-04-14 11:29:26-07:00,25200,2023-04-14 11:29:26-07:00,25200,True,False,['fit.rs'],['c5e0f5a9839ca85c77f38f50dd912e5cbbb41eee'],4,33,37,1,0.0,1.0,0.5833333333333334
+f87631d2f4c927449b0c7a2fb18b12e62db7bbfc,"Apply tighter accuracy bounds
+
+Give up more quickly when accuracy is exceeded, which improves performance.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-04-14 11:45:07-07:00,25200,2023-04-14 12:07:30-07:00,25200,True,False,['fit.rs'],['721d9e48e5ee8137b2f31a1c89400ffcb3f95817'],24,24,48,1,0.0,0.0,0.5
+cde44331acf33e3264873338bd3a315561bc7213,Satisfy clippy,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-04-14 15:27:30-07:00,25200,2023-04-14 15:27:30-07:00,25200,True,False,['fit.rs'],['f87631d2f4c927449b0c7a2fb18b12e62db7bbfc'],1,1,2,1,,,
+5196345f6ec7697a5491f8b819338fe2e2af82a1,"Penalize large d values in cubic fit
+
+Doing so avoids bumps but still allows us to exactly fit cubic.
+
+Also fixes potential angle wraparound issues.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-04-17 15:08:08-07:00,25200,2023-04-18 19:59:40-07:00,25200,True,False,"['bezpath.rs', 'fit.rs', 'simplify.rs']",['cde44331acf33e3264873338bd3a315561bc7213'],13,220,233,3,0.3865546218487395,0.3865546218487395,0.3025210084033613
+de637dda0a5af6ccf8da58ad221d0355010cd8da,Remove stray logging,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-04-18 20:12:50-07:00,25200,2023-04-18 20:12:50-07:00,25200,True,False,['fit.rs'],['5196345f6ec7697a5491f8b819338fe2e2af82a1'],1,1,2,1,1.0,1.0,1.0
+59d41b0e2277b8e13be78c3694699fe239eff081,"This patch adds some common aliases for vec2 methods.
+
+This should hopefully reduce confusion for new users. The suggestion was
+made in #182.",Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-04-24 10:50:07+01:00,-3600,2023-04-24 11:35:30+01:00,-3600,True,False,"['point.rs', 'vec2.rs']",['615ed7ede2d80ae0f3509165c5a2dee6cef69251'],1,39,40,2,1.0,1.0,1.0
+44fe4fcea29e42ad6790f3471707d4e1046ec1bc,"Add div_exact method to match cu2qu rounding behavior
+
+This adds a (currently `pub(crate)`) `Vec2::div_exact` method that performs component wise division and updates the cubic to quad spline code to make use of it. Allows us to match rounding behavior and output of fonttools cu2qu.
+
+I'm unsure if there is a need to expose this method publicly.
+
+Fixes #272",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-04-25 15:09:50-04:00,14400,2023-04-25 15:09:50-04:00,14400,True,False,"['cubicbez.rs', 'vec2.rs']",['615ed7ede2d80ae0f3509165c5a2dee6cef69251'],8,50,58,2,0.20689655172413793,1.0,1.0
+a63261eb3d472966f165f10f36da65a5c45f52db,"Add another test to check our Rust port of cu2qu matches the python original
+
+This test currently fails like so:
+
+ left: `[... (344.58333333333337, 499.5), ...]`,
+ right: `[... (344.5833333333333, 499.49999999999994), ...]`',
+
+https://github.com/linebender/kurbo/pull/273",Cosimo Lupo,clupo@google.com,Cosimo Lupo,clupo@google.com,2023-04-26 13:44:07+01:00,-3600,2023-04-26 13:52:21+01:00,-3600,True,False,['cubicbez.rs'],['552c6add2a2be7f0df4d09bd4e57b610c4b25500'],0,42,42,1,0.0,1.0,1.0
+6b34ad275de24ff49075d730d08cd68b5f2742f4,"multiply by recip in CubicBez::subdivide_3 to match cu2qu.py
+
+Fixes https://github.com/linebender/kurbo/pull/272",Cosimo Lupo,clupo@google.com,Cosimo Lupo,clupo@google.com,2023-04-26 14:08:30+01:00,-3600,2023-04-26 14:08:30+01:00,-3600,True,False,['cubicbez.rs'],['a63261eb3d472966f165f10f36da65a5c45f52db'],8,13,21,1,1.0,0.0,0.0
+3189cb4c43bcc8cb52f2e10298a2ce1b0e3e3aed,"Bump version for release
+
+As it says on the tin: bumps version to 0.9.4",Cosimo Lupo,clupo@google.com,Cosimo Lupo,clupo@google.com,2023-04-26 15:26:19+01:00,-3600,2023-04-26 15:26:19+01:00,-3600,True,False,['Cargo.toml'],['ba16edf1d5d18fb5601ac709f71d6705eb7977e5'],1,1,2,1,,,
+7895ac756b6db0bd99fc12ece3246c5dbba4d251,"A couple of helpers in `bezpath.rs`.
+
+ - Add a method to get mutable access to the elements slice.
+ - Add a method to upcast a `PathSeg` to a `PathEl`, discarding the
+   start point",Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-04-27 13:50:17+01:00,-3600,2023-04-27 13:50:17+01:00,-3600,True,False,['bezpath.rs'],['ac5b2e66d0a9d87ba91792a581edc4d2916f7889'],0,14,14,1,1.0,1.0,1.0
+3afc7be2e9b416d00b442df3aa187b58b95d8b33,"Update src/vec2.rs
+
+OK OK if you prefer this :P
+
+Co-authored-by: Jan Pochyla <jpochyla@gmail.com>",Richard Dodd (dodj),richard.o.dodd@gmail.com,GitHub,noreply@github.com,2023-04-27 14:14:17+01:00,-3600,2023-04-27 14:14:17+01:00,-3600,True,False,['vec2.rs'],['59d41b0e2277b8e13be78c3694699fe239eff081'],1,1,2,1,,,
+b95cc36a1a58cc45d5a41a2aef6cd00fecd6e1fd,"Add documentation of ""bump"" penalty",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-05-04 07:43:42-07:00,25200,2023-05-04 07:43:42-07:00,25200,True,False,['fit.rs'],['de637dda0a5af6ccf8da58ad221d0355010cd8da'],1,14,15,1,,,
+0f2aa2a61559805bc8746dd2ed3bad23c771c8bb,Rustfmt,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-05-04 07:57:52-07:00,25200,2023-05-04 07:57:52-07:00,25200,True,False,['fit.rs'],['b95cc36a1a58cc45d5a41a2aef6cd00fecd6e1fd'],1,1,2,1,,,
+61eb7e704cff578d6dc55f4af33cd85d652c7f08,Allow cloning of iterators over BezPath elements,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-05 16:35:16+01:00,-3600,2023-05-05 16:35:16+01:00,-3600,True,False,['bezpath.rs'],['aa4a58d8a2816ee286f2ac0fc8826681941c2cce'],2,11,13,1,,,
+e660425287be2015364f6d80c9ea1826fe2f24b0,Use derive clone impl,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-09 09:57:53+01:00,-3600,2023-05-09 09:57:53+01:00,-3600,True,False,['bezpath.rs'],['61eb7e704cff578d6dc55f4af33cd85d652c7f08'],9,1,10,1,,,
+73708cdeb58c645ffe9cd70e986308b7b5d9fcc1,Release new version 0.9.5,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-17 18:57:49+01:00,-3600,2023-05-17 18:58:15+01:00,-3600,True,False,['Cargo.toml'],['f21ac2c5c690ea4806da6bfdd6eba7dabdb92645'],1,1,2,1,,,
+2fac1335814280b6ed08c84032975272116a0b04,"Improve TranslateScale
+
+Make interface for TranslateScale more consistent with other parts of kurbo",Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-18 13:06:07+01:00,-3600,2023-05-18 13:06:07+01:00,-3600,True,False,['translate_scale.rs'],['7cd78337876cc95863314a8aef558bb52970fa6f'],13,13,26,1,,,
+9f4acbb6963715a1462978ad89cda871693e9ae4,Add `from_scale_about` method.,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-18 13:26:31+01:00,-3600,2023-05-18 13:26:31+01:00,-3600,True,False,['translate_scale.rs'],['2fac1335814280b6ed08c84032975272116a0b04'],3,21,24,1,1.0,1.0,1.0
+616f1e72a084aa8fe2fb486065cdb0bfead1de16,Fix docs,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-18 13:32:04+01:00,-3600,2023-05-18 13:32:04+01:00,-3600,True,False,['translate_scale.rs'],['9f4acbb6963715a1462978ad89cda871693e9ae4'],1,1,2,1,,,
+47046f1e2617f026a1dea1d4d8eead9d2f117443,Add extra test,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-18 13:33:19+01:00,-3600,2023-05-18 13:33:19+01:00,-3600,True,False,['translate_scale.rs'],['616f1e72a084aa8fe2fb486065cdb0bfead1de16'],1,3,4,1,1.0,1.0,1.0
+0e628dd592bbde72486db7bc6141ac672d92df52,Make test into doctest example,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-18 14:01:34+01:00,-3600,2023-05-18 14:01:34+01:00,-3600,True,False,['translate_scale.rs'],['47046f1e2617f026a1dea1d4d8eead9d2f117443'],10,15,25,1,0.0,0.0,0.0
+4cb545c7f098406c5822b2f226de76f78177275a,"Bump major version, since this is a breaking change.",Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-18 20:21:40+01:00,-3600,2023-05-19 08:02:07+01:00,-3600,True,False,['Cargo.toml'],['0e628dd592bbde72486db7bc6141ac672d92df52'],0,1,1,1,,,
+f1d0b4d5e3f65335db0dfaa296902aec0779ac8a,Remove breaking change,Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-19 08:25:05+01:00,-3600,2023-05-19 08:25:05+01:00,-3600,True,False,"['Cargo.toml', 'translate_scale.rs']",['4cb545c7f098406c5822b2f226de76f78177275a'],8,6,14,2,0.0,0.0,0.0
+2ae4986f0d49d63c1f054450ad5d3c7d699dcd56,"First cut at stroke expansion
+
+This is a starting point; no dashes, only butt and miter.
+
+Also not tested yet.
+
+Will close #285",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-05-18 22:04:57-07:00,25200,2023-05-19 07:10:22-07:00,25200,True,False,"['Cargo.toml', 'lib.rs', 'stroke.rs']",['7cd78337876cc95863314a8aef558bb52970fa6f'],0,261,261,3,0.5986842105263158,0.7302631578947368,0.47368421052631576
+7d044fab871df7072d296d4a02ffdbfdb35bf058,Rustfmt and fix no-std build,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-05-20 07:21:24-07:00,25200,2023-05-20 07:22:37-07:00,25200,True,False,"['lib.rs', 'stroke.rs']",['2ae4986f0d49d63c1f054450ad5d3c7d699dcd56'],7,5,12,2,1.0,1.0,1.0
+6674355aa48635dccda3d406e9b354a3917187f5,"Refine stroke implementation.
+
+Fix some todo() items. Reverse forward and backward so area is positive. Implement line caps and joins.
+
+Make end_point a public method of `PathEl`, as suggested.
+
+Dashes remain, as well as closed paths.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-05-24 17:57:19-07:00,25200,2023-05-24 23:12:40-07:00,25200,True,False,"['bezpath.rs', 'stroke.rs']",['7d044fab871df7072d296d4a02ffdbfdb35bf058'],31,126,157,2,0.02702702702702703,0.0,0.02702702702702703
+20ff82782000092bf9b97308a61dbb6f1146bf58,"Make recommended changes
+
+ - Make `translate` constructor take `impl Into<Vec2>`
+ - Add in removed function and mark deprecated (PR is now
+   backwards-compatible)",Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-05-27 12:59:16+01:00,-3600,2023-05-27 12:59:16+01:00,-3600,True,False,['translate_scale.rs'],['f1d0b4d5e3f65335db0dfaa296902aec0779ac8a'],2,9,11,1,1.0,1.0,1.0
+be41b0d9daf3574e42531015c82f86187ed39733,"Implement closed subpaths
+
+Handle stroking of closed subpaths. This generates two closed subpaths as output, one for the inner contour, one for the outer.
+
+Also apply a threshold for joins.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-05-30 13:05:25-07:00,25200,2023-05-31 10:55:40-07:00,25200,True,False,['stroke.rs'],['6674355aa48635dccda3d406e9b354a3917187f5'],58,89,147,1,0.92,1.0,0.6
+af22c87503dfe6480f7cf3099f96cbf2f854b9f4,"Add dashing
+
+This should handle closed paths and phase, but do need to validate.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-05-26 17:21:44-07:00,25200,2023-05-31 16:16:35-07:00,25200,True,False,['stroke.rs'],['be41b0d9daf3574e42531015c82f86187ed39733'],4,265,269,1,0.1407766990291262,0.5776699029126213,0.9320388349514563
+6e1b2bb99b610eabc2314c1ea8c88f4f0ca2e293,"Add optimization options to strokes
+
+Add an additional argument to stroke expansion. It's designed so it can be Default::default() in the common case, and uses the builder pattern to add more options as needed without breaking semver.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-06-05 16:04:02-07:00,25200,2023-06-05 16:14:28-07:00,25200,True,False,['stroke.rs'],['af22c87503dfe6480f7cf3099f96cbf2f854b9f4'],10,51,61,1,0.95,0.95,0.4
+62fb3a7d024d66423329c885905379864a33c621,"Improve robustness of curve fitting
+
+The main improvement is to try to fit a line when the chord is very short. Very short segments can occur when the cusp finding reports imprecise results, and also the main cubic fit logic is not robust when the chord is short.
+
+I believe the simple subdivision case is now fairly robust in that it won't keep recursing. This is in spite of not having an explicit bound on recursion depth; the theory is that each subdivision reduces the parameter space in half, and at some point you'll reach the point where the chord is shorter than the given tolerance. This is true even for an adversarial break_cusp, as it's bypassed in the short chord case.
+
+The logic for the optimized case is not as careful, in particular break_cusp is not bypassed. I'm curious whether there are still failure cases.
+
+This is likely not the end of the numerical robustness work. In particular, break_cusp can be better tuned to not over-report cusps, and the tangent detection can be improved for cusp and near-cusp source curves. But hopefully this commit gets us to where we at least return a valid fit.
+
+Also adds a test lightly adapted from #269.
+
+Progress toward #269 and #279",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-06-07 16:54:48-07:00,25200,2023-06-07 17:10:15-07:00,25200,True,False,"['fit.rs', 'offset.rs']",['8c07a06d5e04daf0d65abb5a59c63c8003ac59b1'],7,78,85,2,0.2727272727272727,0.34545454545454546,0.32727272727272727
+80399cfec8e4cef943847bebe8e6861d7351fa14,"Implement reflection over a line -> affine transformation
+
+Implementation using Householder matrix, which is numerically robust
+IIUC. Sometimes other operations can be made more robust by using
+reflections.",Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-06-08 10:29:30+01:00,-3600,2023-06-08 10:29:30+01:00,-3600,True,False,['affine.rs'],['8c07a06d5e04daf0d65abb5a59c63c8003ac59b1'],1,84,85,1,0.09615384615384616,1.0,1.0
+6c4907d3b77059ccc752ee9253969e307ede567e,"Draft of regularization method
+
+This is one possible technique for improving the robustness of parallel curve generation - a method to detect cusps and ""regularize"" by perturbing the control points.
+
+The implementation handles cases where the control points are coincident with the endpoints, and also simple cusps, but hasn't been explicitly tuned to handle cases where the control points are nearly co-linear.
+
+It is likely that additional tuning of the ""dimension"" parameter would be worthwhile. As a first approximation, it can just be the accuracy parameter.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-06-20 12:51:48-07:00,25200,2023-06-20 12:51:48-07:00,25200,True,False,"['cubicbez.rs', 'offset.rs']",['62fb3a7d024d66423329c885905379864a33c621'],0,116,116,2,0.038461538461538464,0.038461538461538464,0.9615384615384616
+08f0905565b1ba208cc4a91dedfbe82d5edd244e,Rustfmt,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-06-20 14:15:57-07:00,25200,2023-06-20 14:15:57-07:00,25200,True,False,['cubicbez.rs'],['6c4907d3b77059ccc752ee9253969e307ede567e'],2,2,4,1,,,
+9d5fc8817f1b7fef26d24b73cdca78487fb3cb3b,"Refine stroke expansion
+
+Wire up regularization in parallel curve generation (now merged into branch). Fix zero length segment detection (it was overly eager, also triggering on degenerate tangents).
+
+In response to review comments.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-06-27 07:00:15-07:00,25200,2023-06-27 07:00:15-07:00,25200,True,False,['stroke.rs'],['6497fb61bcf4350912414fcd9985cfd5592a7cf5'],3,7,10,1,1.0,1.0,0.0
+063839e859c87787e88fbfcf31b128f9bf09bb4e,Do regularization consistently,Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-06-27 09:43:31-07:00,25200,2023-06-27 09:43:31-07:00,25200,True,False,['stroke.rs'],['9d5fc8817f1b7fef26d24b73cdca78487fb3cb3b'],4,5,9,1,1.0,1.0,0.0
+c78f761a9026f49a3e1dc975d266a0f297540880,Fix typo: asix -> axis.,Bruce Mitchener,bruce.mitchener@gmail.com,Bruce Mitchener,bruce.mitchener@gmail.com,2023-06-29 13:14:42+07:00,-25200,2023-06-29 13:14:42+07:00,-25200,True,False,['ellipse.rs'],['aa999f76fba700c499631980e6936f46a7d6bbaf'],1,1,2,1,,,
+18cc02eb6bb8bdb7203d0226afb9225cc238f277,ci: Update to actions/checkout@v3.,Bruce Mitchener,bruce.mitchener@gmail.com,Bruce Mitchener,bruce.mitchener@gmail.com,2023-07-07 23:42:02+07:00,-25200,2023-07-07 23:42:02+07:00,-25200,True,False,['ci.yml'],['b3a978ba24554b2bb196b33ad69045b89336f1dd'],5,5,10,1,,,
+b5f780eb40fc2bbea627aca8c15dc72e707521de,"ci: actions-rs/toolchain to dtolnay/rust-toolchain
+
+`actions-rs` actions have been unmaintained for years and produce
+warnings when used as they trigger deprecation notices about
+functionality that GitHub will be removing.",Bruce Mitchener,bruce.mitchener@gmail.com,Bruce Mitchener,bruce.mitchener@gmail.com,2023-07-07 23:42:02+07:00,-25200,2023-07-07 23:42:02+07:00,-25200,True,False,['ci.yml'],['18cc02eb6bb8bdb7203d0226afb9225cc238f277'],20,10,30,1,,,
+cf63413eb1553677eb471b0e9bc2c6d8d9007594,"ci: Remove explicit install of rustfmt.
+
+This is already handled in the toolchain install prior to this
+step.",Bruce Mitchener,bruce.mitchener@gmail.com,Bruce Mitchener,bruce.mitchener@gmail.com,2023-07-07 23:42:03+07:00,-25200,2023-07-07 23:42:03+07:00,-25200,True,False,['ci.yml'],['b5f780eb40fc2bbea627aca8c15dc72e707521de'],3,0,3,1,,,
+0de15bdb9b639582d43d70b91e14428a9d350692,"ci: Run cargo directly, no actions-rs/cargo.
+
+`actions-rs` actions have been unmaintained for years and produce
+warnings when used as they trigger deprecation notices about
+functionality that GitHub will be removing.",Bruce Mitchener,bruce.mitchener@gmail.com,Bruce Mitchener,bruce.mitchener@gmail.com,2023-07-07 23:42:03+07:00,-25200,2023-07-07 23:42:03+07:00,-25200,True,False,['ci.yml'],['cf63413eb1553677eb471b0e9bc2c6d8d9007594'],28,7,35,1,,,
+acea3e87df349293ee1f831a55087e4a972fb98b,"ci/Cargo.toml: Specify and test MSRV.
+
+The MSRV was specified in the README.md, so we can also specify
+it in the standard location and validate it via CI on Linux.",Bruce Mitchener,bruce.mitchener@gmail.com,Bruce Mitchener,bruce.mitchener@gmail.com,2023-07-09 22:02:04+07:00,-25200,2023-07-10 21:49:52+07:00,-25200,True,False,"['ci.yml', 'Cargo.toml']",['a5064eff7e36e9e599cce7814f05ec98e0750a6c'],0,15,15,2,,,
+c1bb90ba331601fb0cfec4f77c6069c5467f3ddb,docs: Small formatting improvements.,Bruce Mitchener,bruce.mitchener@gmail.com,Bruce Mitchener,bruce.mitchener@gmail.com,2023-07-10 14:55:58+07:00,-25200,2023-07-11 22:56:59+07:00,-25200,True,False,"['bezpath.rs', 'common.rs', 'cubicbez.rs', 'fit.rs', 'offset.rs', 'rounded_rect_radii.rs', 'svg.rs']",['4a4e58b507c5a1bc48609e79c11b313281402974'],8,8,16,7,,,
+b22ba21c63cf455dbe22a75df7151caefbe7b501,Rename master branch to main in CI. (#297),Kaur Kuut,strom@nevermore.ee,GitHub,noreply@github.com,2023-07-13 19:47:31+03:00,-10800,2023-07-13 19:47:31+03:00,-10800,True,False,['ci.yml'],['1b6b08cb307f5c1379ec6128beb5cd106f7916fd'],1,1,2,1,,,
+588b18429df00bcbdba9980055d0d47dca132680,Fix minor typos.,Bruce Mitchener,bruce.mitchener@gmail.com,Colin Rofls,colin@cmyr.net,2023-07-19 12:09:08+07:00,-25200,2023-07-19 11:17:02-04:00,14400,True,False,['fit.rs'],['b22ba21c63cf455dbe22a75df7151caefbe7b501'],2,2,4,1,,,
+81848332f9a8b05670f0649c58b767a5c26e562a,"Use SPDX 2.1 license expression.
+
+This improves the usage of automated tooling which consumes the
+license information.",Bruce Mitchener,bruce.mitchener@gmail.com,Bruce Mitchener,bruce.mitchener@gmail.com,2023-07-23 11:11:42+07:00,-25200,2023-07-23 11:11:42+07:00,-25200,True,False,['Cargo.toml'],['588b18429df00bcbdba9980055d0d47dca132680'],1,1,2,1,,,
+32dc6d203afa1b0ff60230c1d53576fd39759fe0,clippy: Fix `useless_vec` warnings.,Bruce Mitchener,bruce.mitchener@gmail.com,Bruce Mitchener,bruce.mitchener@gmail.com,2023-08-31 13:10:34+07:00,-25200,2023-08-31 21:30:58+07:00,-25200,True,False,['cubicbez.rs'],['3d05ef61af197523ad02ca0ada868d9f4c36ced1'],2,2,4,1,,,
+c493b785ea599a6aad4b36e362c755c75ab40085,"Better numerical robustness for stroking
+
+A number of fixes to improve stroke robustness.
+
+Infinite recursion on curve fit is avoided by checking whether subdivision has hit the floating point limit. That said, the quality of curve fit is poor when the input is discontinuous (which does happen for degenerate cubics with cusps, where all points are co-linear).
+
+Thus, in stroking, the degenerate cases are detected and drawn with special-case logic (do_linear). This uses existing drawing capabilities to draw the degenerate cubic with lines and round joins.
+
+Finally, do_join mistakenly detected a half-turn as zero turn, as it was only considering the cross product (which vanishes).
+
+Fixes #300",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-09-15 17:12:17-07:00,25200,2023-09-27 20:32:51-07:00,25200,True,False,"['fit.rs', 'offset.rs', 'stroke.rs']",['32dc6d203afa1b0ff60230c1d53576fd39759fe0'],7,115,122,3,0.011627906976744186,0.38372093023255816,0.13953488372093023
+6fab213f9f84133cb734c4556b6bfd7133b1accc,"Fix incomplete co-linear logic
+
+I was missing the case where the chord reference doesn't match the chord; when it does, the cross-product is clearly zero, but otherwise there are cases where the other two cross-products are zero but the chord isn't.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-09-29 10:30:28-07:00,25200,2023-09-29 10:30:28-07:00,25200,True,False,['stroke.rs'],['c493b785ea599a6aad4b36e362c755c75ab40085'],4,6,10,1,0.0,0.0,0.0
+6dbe46e67ab850597376662890ef06d7fdbc84f3,"Prepare for 0.10 release
+
+Increment version number, and minor tweaks to documentation.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-10-03 09:19:45-07:00,25200,2023-10-03 09:19:45-07:00,25200,True,False,"['Cargo.toml', 'fit.rs', 'lib.rs']",['0c0fb6b50c7ca7a3483429a8cbd157bcbb2b7284'],4,9,13,3,,,
+f205bb2fa35611aaa53de0cca493c86dfccef9e7,"Remove unused `scale` field in StrokeOpts
+
+Also some more doc refinements.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-10-03 09:35:23-07:00,25200,2023-10-03 09:52:09-07:00,25200,True,False,['stroke.rs'],['6dbe46e67ab850597376662890ef06d7fdbc84f3'],15,18,33,1,0.0,0.0,0.0
+0666868eb753da70515031b7da40390b8f89f04c,"Add control_box method to BezPath
+
+This adds a method to `BezPath` that computes a conservative bounding box only taking control points into account.",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-10-03 14:00:32-04:00,14400,2023-10-03 14:00:32-04:00,14400,True,False,['bezpath.rs'],['0c0fb6b50c7ca7a3483429a8cbd157bcbb2b7284'],0,25,25,1,0.0,1.0,1.0
+3b37196f46bd68b4068945aaa1c0a6fc1e8c5430,rustfmt,Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-10-03 14:02:54-04:00,14400,2023-10-03 14:02:54-04:00,14400,True,False,['bezpath.rs'],['0666868eb753da70515031b7da40390b8f89f04c'],1,1,2,1,,,
+938c7dc4af1fb96ab2e96a624feb908cc09d5882,"Add reverse_subpaths() method to BezPath
+
+Returns a new path with winding direction of all subpaths reversed.
+
+This is mostly based on the code here: https://github.com/googlefonts/fontations/blob/d4e07eb3b45836f3241e5a5343fdb697c40d978b/write-fonts/src/pens.rs#L164 which it is intended to replace. Tests are taken from that code as well.",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-10-03 15:32:26-04:00,14400,2023-10-03 15:32:26-04:00,14400,True,False,['bezpath.rs'],['ad67725c82b08d99b87be6e16f4de4e6d6cfb660'],0,137,137,1,0.0,0.0,0.0
+381059ecc97646facaa6d11bddd949661204931c,simplify close_path handling,Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-10-03 15:34:44-04:00,14400,2023-10-03 15:34:44-04:00,14400,True,False,['bezpath.rs'],['938c7dc4af1fb96ab2e96a624feb908cc09d5882'],22,6,28,1,1.0,0.5,1.0
+77908c6a9bdb823848ab972f9cbbef9b97dadfb7,remove useless end_pt,Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-10-03 15:37:05-04:00,14400,2023-10-03 15:37:05-04:00,14400,True,False,['bezpath.rs'],['381059ecc97646facaa6d11bddd949661204931c'],7,4,11,1,1.0,0.5,0.0
+a989b4bb403161d1ab3997958043a49ae93109f9,"review feedback
+
+don't return Option from reverse_subpaths",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-10-03 16:21:18-04:00,14400,2023-10-03 16:21:18-04:00,14400,True,False,['bezpath.rs'],['77908c6a9bdb823848ab972f9cbbef9b97dadfb7'],15,10,25,1,1.0,1.0,0.0
+0ec10ad2127be953fd2d015af3fe22488649983c,"Bump version for release (again!)
+
+Just a patch update to capture `control_box` and `reverse_subpaths`",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-10-03 17:42:09-04:00,14400,2023-10-03 17:42:09-04:00,14400,True,False,['Cargo.toml'],['b1dfb53c967bec95a116adc2d1f1956efeaee927'],1,1,2,1,,,
+afd04d64fa80a9a71a790a9790354b1b6dd21ca8,"Additional tests and fixes for BezPath::reverse_subpaths
+
+The initial PR for this was missing a large batch of test cases. Adding these revealed that subpath reversal did not accurately capture degenerate contours (move only or move + close) which we'd like to retain in glyphs.
+
+This adds the tests and updates the code to pass them (ref: https://github.com/googlefonts/fontations/blob/145a2ae269f30a3fbc217ef9cddb18a8a80a8f5b/write-fonts/src/pens.rs#L562C1-L564C104)",Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-10-04 12:52:34-04:00,14400,2023-10-04 12:52:34-04:00,14400,True,False,['bezpath.rs'],['81a639d743b770e16c7e143abf24a84d81edc6f2'],3,371,374,1,0.3076923076923077,0.967948717948718,1.0
+ecd7b8a68888996e957d2f0a0dc9b43dd1750215,remove redundant tests,Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-10-04 14:19:46-04:00,14400,2023-10-04 14:19:46-04:00,14400,True,False,['bezpath.rs'],['afd04d64fa80a9a71a790a9790354b1b6dd21ca8'],16,0,16,1,0.0,0.0,0.0
+8e555ecb565010863afd396061747bd7710c876b,bump patch for release with reverse_subpath fixes,Chad Brokaw,cbrokaw@gmail.com,Chad Brokaw,cbrokaw@gmail.com,2023-10-04 14:29:23-04:00,14400,2023-10-04 14:29:23-04:00,14400,True,False,['Cargo.toml'],['9c63e00f77447ae2b9945314917ae0aeeb647532'],1,1,2,1,,,
+0bdecb81107ebcfe55045340f5c8b325cc618bd8,clippy: Fix upcoming `items_after_test_module` lint.,Bruce Mitchener,bruce.mitchener@gmail.com,Colin Rofls,colin@cmyr.net,2023-10-07 23:53:53+07:00,-25200,2023-10-10 11:10:42-04:00,14400,True,False,['circle.rs'],['10b328fc58a35e9eea1998c2c43d4ba230ff0942'],10,10,20,1,,,
+e9d460cca155a3a79b21b9aeb8701d0fab14f81f,"clippy: Fix doc_markdown warnings, enable by default.",Bruce Mitchener,bruce.mitchener@gmail.com,Colin Rofls,colin@cmyr.net,2023-10-07 23:44:33+07:00,-25200,2023-10-10 11:51:05-04:00,14400,True,False,"['clippy.toml', 'affine.rs', 'bezpath.rs', 'lib.rs', 'rounded_rect_radii.rs', 'svg.rs']",['0bdecb81107ebcfe55045340f5c8b325cc618bd8'],13,15,28,6,,,
+4d9db4910a8037d5b84e9718515d33d0e8d6313f,"Suppress cusps at endpoints of stroke
+
+Cusps exactly at the endpoint of a degenerate stroke were causing 0-length segments to be generated, which resulted in NaN values in the output.
+
+Fixes #313",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-10-11 17:42:52-07:00,25200,2023-10-11 17:45:29-07:00,25200,True,False,['stroke.rs'],['77908c6a9bdb823848ab972f9cbbef9b97dadfb7'],1,25,26,1,0.9333333333333333,1.0,0.9333333333333333
+030d7933ae71e6ca016bd123e19e2623aef68666,"Add failing test for quadbez panic and add fix.
+
+Before this PR, the `ParamCurveNearest::nearest` method can panic for
+`QuadBez` with certain input. This PR adds a test to avoid the panic.",Richard Dodd,richard.o.dodd@gmail.com,Richard Dodd,richard.o.dodd@gmail.com,2023-10-12 13:36:31+01:00,-3600,2023-10-12 13:36:31+01:00,-3600,True,False,"['.gitignore', 'quadbez.rs']",['e9d460cca155a3a79b21b9aeb8701d0fab14f81f'],0,18,18,2,0.3,0.08148148148148149,0.1814814814814815
+36f274ed26443844420ae8e4e7e1b873b341aa43,"Improve cusp detection for strokes
+
+The cusp detection was failing because a comparison wasn't inclusive enough. In particular, it was trying to compute whether curvature at the point exceeded 1/dimension, without doing division, but both values in the comparison become zero when the derivative vanishes.
+
+Also avoids infinite recursion when break_cusp reports a cusp within ulp of an endpoint. This is supposed to be a violation of the contract, but it's not hard to see how it can happen.
+
+Includes test cases adapted from vello#388",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-10-18 15:36:02-07:00,25200,2023-10-18 15:53:52-07:00,25200,True,False,"['cubicbez.rs', 'fit.rs', 'stroke.rs']",['6d04eddad09892cef16582682c94514c2a2ca062'],19,45,64,3,0.0,1.0,1.0
+11c064fbe1b6dfe4ceed68345763eca705623db7,"Prepare 0.10.4 release; DashIterator doc
+
+Improve documentation of DashIterator and bump version in preparation for release.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-10-19 12:12:30-07:00,25200,2023-10-19 12:12:30-07:00,25200,True,False,"['Cargo.toml', 'stroke.rs']",['3a4057050764afdc581cf4af77304a3d1ab32fb4'],2,14,16,2,,,
+431e59cf42be21f31c0d23b6748f14ac1ddc7250,"Change signature to function
+
+As per review comments",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-10-19 18:40:59-07:00,25200,2023-10-19 18:40:59-07:00,25200,True,False,['stroke.rs'],['11c064fbe1b6dfe4ceed68345763eca705623db7'],47,67,114,1,1.0,0.0,0.0
+8d78aaec16c605ff107a4f3e8ef2e26c091d3239,Making move_to less strict.,platlas,platlas@gmail.com,platlas,platlas@gmail.com,2023-10-29 11:25:03+01:00,-3600,2023-10-29 11:25:03+01:00,-3600,True,False,['bezpath.rs'],['38bc948d321303d24c4748ae055bd966ec9971cf'],18,23,41,1,0.0,0.0,0.0
+32eac6a4dcd7f335b30bd12e1e26e74c215aba96,"Handle special case of fitting a line
+
+When the algorithm is asked to curve-fit a line, area and moment are both zero, which provokes numerical instablily. Just return a straight line in that case.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-11-17 08:28:15-08:00,28800,2023-11-17 08:28:15-08:00,28800,True,False,"['fit.rs', 'offset.rs']",['38bc948d321303d24c4748ae055bd966ec9971cf'],1,16,17,2,0.38461538461538464,0.38461538461538464,0.38461538461538464
+e1032e0afa706e5ce375480287c104550a74a2f7,"More fixes for strokes
+
+Fixes a couple of non-working cases: stroke of an empty path, and a tricky co-linear case where the numerical robustness of the quadratic solve becomes poor.",Raph Levien,raph@google.com,Raph Levien,raph@google.com,2023-11-08 17:16:31-08:00,28800,2023-11-27 14:06:19+01:00,-3600,True,False,['stroke.rs'],['38bc948d321303d24c4748ae055bd966ec9971cf'],1,10,11,1,0.3333333333333333,1.0,1.0
+3efe0182dc3353a161407dde26091e37c6edcd1d,"Add serde/schemars derive to Stroke, Join and Cap.",matt rice,ratmice@gmail.com,matt rice,ratmice+github@gmail.com,2023-10-29 10:54:32-07:00,25200,2023-12-07 17:18:32+00:00,0,True,False,"['Cargo.toml', 'stroke.rs']",['af6f71e75a2d6d90faff7e476c806c40507d0603'],0,8,8,2,,,
+4da6fa9be5526fe6ad08a8364ee6248778b04bcd,Add missing bounds on CircleSegment,matt rice,ratmice@gmail.com,matt rice,ratmice+github@gmail.com,2023-11-06 16:10:27-08:00,28800,2023-12-07 17:19:17+00:00,0,True,False,['circle.rs'],['3efe0182dc3353a161407dde26091e37c6edcd1d'],0,3,3,1,,,
+4ff28d50dc138f7a136e9c179d1783f32aa28468,clippy: Fix `items_after_test_module` and `unused_enumerate_index`,platlas,platlas@gmail.com,platlas,platlas@gmail.com,2024-01-16 20:54:16+01:00,-3600,2024-01-16 20:54:16+01:00,-3600,True,False,"['cubicbez.rs', 'point.rs']",['b604470bf26f7de58dade678a3b4bab81413082a'],17,17,34,2,,,

@@ -1,0 +1,97 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+cb532b6ad7bf593d50864b878f62ba82f85d7844,Initial commit,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-03 14:13:49-05:00,18000,2019-11-03 14:13:49-05:00,18000,True,False,"['.gitignore', 'CMakeLists.txt', 'README.md', 'main.cpp']",[],0,22,22,4,1.0,1.0,1.0
+c6eeae41e0a1a9b34e147421d6c7e412e0fe18cb,Add: Get image dimensions,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-03 14:18:11-05:00,18000,2019-11-03 14:18:11-05:00,18000,True,False,['main.cpp'],['cb532b6ad7bf593d50864b878f62ba82f85d7844'],1,16,17,1,0.0,1.0,1.0
+c98a1b8ad16355e638a02adf6d0b359370e3ef2e,Add: get rgb pixel data,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-03 14:50:34-05:00,18000,2019-11-03 14:50:34-05:00,18000,True,False,['main.cpp'],['c6eeae41e0a1a9b34e147421d6c7e412e0fe18cb'],3,20,23,1,0.0,0.0,1.0
+54f1049c93aa93b906c1a29576acffe077bde4df,Add: function to iterate over pixel brightness values,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-03 16:35:06-05:00,18000,2019-11-03 16:35:06-05:00,18000,True,False,['main.cpp'],['c98a1b8ad16355e638a02adf6d0b359370e3ef2e'],25,32,57,1,1.0,1.0,1.0
+efe7fdf7c5be8b19218a97b90a7831e366da7bec,Remove: c++ files,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-05 21:12:56-05:00,18000,2019-11-05 21:12:56-05:00,18000,True,False,"['CMakeLists.txt', 'main.cpp']",['54f1049c93aa93b906c1a29576acffe077bde4df'],56,0,56,2,0.0,0.0,0.0
+79add82902e3f7b829d0097619e08e3b725f7a93,Get image dimensions and create pixel array,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-05 22:04:04-05:00,18000,2019-11-05 22:04:04-05:00,18000,True,False,['main.py'],['efe7fdf7c5be8b19218a97b90a7831e366da7bec'],0,23,23,1,1.0,1.0,1.0
+eb17e8577a4f0bc04a3f676a34cba369e3ff41a0,Create brightness matrix,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-05 22:26:20-05:00,18000,2019-11-05 22:26:20-05:00,18000,True,False,['main.py'],['79add82902e3f7b829d0097619e08e3b725f7a93'],6,11,17,1,0.0,1.0,1.0
+1b6caa0c24d3a944218149c6f64ea9bf4386e861,Create ascii matrix,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-05 22:48:05-05:00,18000,2019-11-05 22:48:05-05:00,18000,True,False,['main.py'],['eb17e8577a4f0bc04a3f676a34cba369e3ff41a0'],0,10,10,1,0.0,0.0,1.0
+53d4360fd30edaf0c2bd5b2f7cbf1783409e0f58,Print image,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-05 23:11:48-05:00,18000,2019-11-05 23:11:48-05:00,18000,True,False,['main.py'],['1b6caa0c24d3a944218149c6f64ea9bf4386e861'],1,9,10,1,0.0,0.0,1.0
+b69ccf6c0a55b0cc7e4e53e8830c57db2cfe982f,Format: auto-PEP8 formatting,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-09 12:53:20-05:00,18000,2019-11-09 12:53:20-05:00,18000,True,False,['main.py'],['53d4360fd30edaf0c2bd5b2f7cbf1783409e0f58'],3,6,9,1,0.0,0.0,1.0
+21b7016d683182afb4b8b9189f251725b2105b0f,Refactor: split logic into functions,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-09 13:22:12-05:00,18000,2019-11-09 13:22:12-05:00,18000,True,False,['main.py'],['b69ccf6c0a55b0cc7e4e53e8830c57db2cfe982f'],21,60,81,1,1.0,1.0,1.0
+7c1c4ae013a904c9a6afb80d36eeb0783784b9a4,Add: requirements.txt,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-09 13:25:23-05:00,18000,2019-11-09 13:25:23-05:00,18000,True,False,['requirements.txt'],['21b7016d683182afb4b8b9189f251725b2105b0f'],0,2,2,1,,,
+69ad7ef37df25f4618441efe21a7675b305bac13,Rename project to ascii-img,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-10 08:51:06-05:00,18000,2019-11-10 08:51:06-05:00,18000,True,False,['ascii-img.py'],['7c1c4ae013a904c9a6afb80d36eeb0783784b9a4'],1,2,3,1,,,
+3bed6278974bf083869765ca48707647de58f775,Add license,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-10 08:51:21-05:00,18000,2019-11-10 08:51:21-05:00,18000,True,False,['LICENSE'],['69ad7ef37df25f4618441efe21a7675b305bac13'],0,21,21,1,,,
+6977dec33710c0e73d35d85fbe30e12f7795bbf4,Update readme,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-10 10:23:15-05:00,18000,2019-11-10 10:23:15-05:00,18000,True,False,"['.gitignore', 'README.md', '3.png', 'zoomed_in.png', 'zoomed_out.png']",['3bed6278974bf083869765ca48707647de58f775'],3,23,26,5,,,
+de9a05a2cd49d7c8d1f20a0aac4922fef37bcf3a,Fix broken screenshots in readme,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-10 10:29:24-05:00,18000,2019-11-10 10:29:24-05:00,18000,True,False,"['.gitignore', '3.png', 'example.jpg']",['6977dec33710c0e73d35d85fbe30e12f7795bbf4'],1,0,1,3,,,
+f013e2ab268f8728483e781d77e18b4bda265933,Update repo for pypi packaging,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-10 11:56:45-05:00,18000,2019-11-10 11:56:45-05:00,18000,True,False,"['.gitignore', 'README.md', '__init__.py', 'ascii_img.py', 'setup.py']",['de9a05a2cd49d7c8d1f20a0aac4922fef37bcf3a'],1,33,34,5,,,
+dad482888f959d960e1d2afa4ffe54e485003947,Add installation instructions to readme,Jalen Adams,jalen@jalenkadams.me,Jalen Adams,jalen@jalenkadams.me,2019-11-10 12:16:22-05:00,18000,2019-11-10 12:16:22-05:00,18000,True,False,['README.md'],['f013e2ab268f8728483e781d77e18b4bda265933'],0,5,5,1,,,
+556a2616e2ba234e10e1e477a18fb3cc7055b519,"Bump pillow from 6.2.1 to 8.1.1
+
+Bumps [pillow](https://github.com/python-pillow/Pillow) from 6.2.1 to 8.1.1.
+- [Release notes](https://github.com/python-pillow/Pillow/releases)
+- [Changelog](https://github.com/python-pillow/Pillow/blob/master/CHANGES.rst)
+- [Commits](https://github.com/python-pillow/Pillow/compare/6.2.1...8.1.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-03-19 08:14:05+00:00,0,2021-03-19 08:14:05+00:00,0,True,False,['requirements.txt'],['dad482888f959d960e1d2afa4ffe54e485003947'],1,1,2,1,,,
+93240799a0a9f42f9248b165268a7a140d6ed8db,"Bump pillow from 8.1.1 to 8.2.0
+
+Bumps [pillow](https://github.com/python-pillow/Pillow) from 8.1.1 to 8.2.0.
+- [Release notes](https://github.com/python-pillow/Pillow/releases)
+- [Changelog](https://github.com/python-pillow/Pillow/blob/master/CHANGES.rst)
+- [Commits](https://github.com/python-pillow/Pillow/compare/8.1.1...8.2.0)
+
+---
+updated-dependencies:
+- dependency-name: pillow
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-06-08 20:35:34+00:00,0,2021-06-08 20:35:34+00:00,0,True,False,['requirements.txt'],['4ea3ec8a20a3c2519613368dfb5485ddffd5487d'],1,1,2,1,,,
+5092027e4fe2f347071d6319f60c922a8742b719,"Bump pillow from 8.2.0 to 8.3.2
+
+Bumps [pillow](https://github.com/python-pillow/Pillow) from 8.2.0 to 8.3.2.
+- [Release notes](https://github.com/python-pillow/Pillow/releases)
+- [Changelog](https://github.com/python-pillow/Pillow/blob/master/CHANGES.rst)
+- [Commits](https://github.com/python-pillow/Pillow/compare/8.2.0...8.3.2)
+
+---
+updated-dependencies:
+- dependency-name: pillow
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-09-08 01:27:21+00:00,0,2021-09-08 01:27:21+00:00,0,True,False,['requirements.txt'],['f54fce4e5f48e87f7250712fb6cc5529c7c288ab'],1,1,2,1,,,
+1746a8188034a528880a1f20d44ba9f590ea6b8c,"Bump pillow from 8.3.2 to 9.0.0
+
+Bumps [pillow](https://github.com/python-pillow/Pillow) from 8.3.2 to 9.0.0.
+- [Release notes](https://github.com/python-pillow/Pillow/releases)
+- [Changelog](https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst)
+- [Commits](https://github.com/python-pillow/Pillow/compare/8.3.2...9.0.0)
+
+---
+updated-dependencies:
+- dependency-name: pillow
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-13 01:49:14+00:00,0,2022-01-13 01:49:14+00:00,0,True,False,['requirements.txt'],['73558526cc3444652a1497ad3a3efacd04d9edd6'],1,1,2,1,,,
+da1e08f6b9e48da43d78b1241e7dc5d30598452f,"Bump numpy from 1.17.3 to 1.21.0
+
+Bumps [numpy](https://github.com/numpy/numpy) from 1.17.3 to 1.21.0.
+- [Release notes](https://github.com/numpy/numpy/releases)
+- [Changelog](https://github.com/numpy/numpy/blob/main/doc/HOWTO_RELEASE.rst.txt)
+- [Commits](https://github.com/numpy/numpy/compare/v1.17.3...v1.21.0)
+
+---
+updated-dependencies:
+- dependency-name: numpy
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-15 00:53:13+00:00,0,2022-01-15 00:53:13+00:00,0,True,False,['requirements.txt'],['27963ba2ae6d0507b015008013ed505b9ca0244b'],1,1,2,1,,,
+51b4c56505ffb1d8e01bbf9c76ec11d01c51df63,"Bump pillow from 9.0.0 to 9.0.1
+
+Bumps [pillow](https://github.com/python-pillow/Pillow) from 9.0.0 to 9.0.1.
+- [Release notes](https://github.com/python-pillow/Pillow/releases)
+- [Changelog](https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst)
+- [Commits](https://github.com/python-pillow/Pillow/compare/9.0.0...9.0.1)
+
+---
+updated-dependencies:
+- dependency-name: pillow
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-03-12 00:05:07+00:00,0,2022-03-12 00:05:07+00:00,0,True,False,['requirements.txt'],['09267832b26065cdbf6aa6b551614ec33a653027'],1,1,2,1,,,

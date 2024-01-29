@@ -1,0 +1,323 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+5a1e60c4919ea31db502a95da152e03062ec4b97,asap_stereo base commit,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-06-18 11:06:46-04:00,14400,2020-06-18 11:07:12-04:00,14400,True,False,"['.gitignore', 'LICENSE', 'MANIFEST.in', 'README.rst', '__init__.py', 'asap.py', 'asap_ctx.ipynb', 'asap_ctx_pc_align.ipynb', 'asap_hirise.ipynb', 'asap_hirise_apriorism.ipynb', 'asap_hirise_pc_align.ipynb', '__init__.py', '__init__.py', 'asp_ctx_lev1eo2dem.sh', 'asp_ctx_map_ba_pc_align2dem.sh', 'asp_ctx_step2_map2dem.sh', 'ctx_pipeline_part_one.sh', 'ctx_pipeline_part_two.sh', 'ctxedr2lev1eo.sh', 'pedr_bin4pc_align.sh', '__init__.py', 'asp_hirise_ba.sh', 'asp_hirise_map2dem.sh', 'asp_hirise_pc_align2dem.sh', 'asp_hirise_prep.sh', 'hirise_pipeline_part_one.sh', 'hirise_pipeline_part_two.sh', 'pedr_bin4pc_align_hirise.sh', 'old_asap_ctx.ipynb', 'requirements.txt', 'setup.py']",[],0,5870,5870,31,0.612531969309463,0.9411764705882353,0.340153452685422
+f2298b24cefc8335323ebfb085699bb073b5fd36,fix classifier in setup.py,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-06-18 15:41:47-04:00,14400,2020-06-18 15:41:47-04:00,14400,True,False,['setup.py'],['5a1e60c4919ea31db502a95da152e03062ec4b97'],1,1,2,1,,,
+1832f5319bbbb6966535c1f3837de706f60511de,Version 0.0.3 release of asap_stereo,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-06-18 15:47:19-04:00,14400,2020-06-18 15:51:42-04:00,14400,True,False,"['CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'asap_ctx.ipynb', 'asap_hirise.ipynb', 'asap_hirise_apriorism.ipynb', 'old_asap_ctx.ipynb', 'setup.py']",['f2298b24cefc8335323ebfb085699bb073b5fd36'],17,162,179,7,,,
+e529fe6f21a00b88ae5e6076dba56bca40fc9c7e,fix spelling,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-06-18 15:58:16-04:00,14400,2020-06-18 15:58:16-04:00,14400,True,False,['README.rst'],['1832f5319bbbb6966535c1f3837de706f60511de'],2,2,4,1,,,
+69ab7751178a3be2de1b6e535d541c73c65a67e8,Create python-publish.yml,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-06-18 20:00:09+00:00,0,2020-06-18 20:00:09+00:00,0,True,False,['python-publish.yml'],['e529fe6f21a00b88ae5e6076dba56bca40fc9c7e'],0,31,31,1,,,
+a6a17add2ca67b189b56f07804ecd7b3a1223711,more spelling,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-06-18 16:11:44-04:00,14400,2020-06-18 16:11:44-04:00,14400,True,False,['README.rst'],['e529fe6f21a00b88ae5e6076dba56bca40fc9c7e'],8,8,16,1,,,
+7f4aa29d04037655ff63eec34e4bd20e9e33528f,Update README.rst,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-07-27 18:30:04+00:00,0,2020-07-27 18:30:04+00:00,0,True,False,['README.rst'],['ef6f930916433c01310095e2bd0eac6fcd8e510b'],9,9,18,1,,,
+9ae3295d347c03821d77218a80a0942f17fdb81e,adding github action ci and conda environment yml,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-03 08:36:51-04:00,14400,2020-08-03 08:36:51-04:00,14400,True,False,"['ci-workflow.yml', 'asp.yml']",['ef6f930916433c01310095e2bd0eac6fcd8e510b'],0,41,41,2,,,
+368ad20fa1540bcc570f04138a87f8a88e70d821,Update asp.yml,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-03 12:37:56+00:00,0,2020-08-03 12:37:56+00:00,0,True,False,['asp.yml'],['9ae3295d347c03821d77218a80a0942f17fdb81e'],1,0,1,1,,,
+000d3187e5f312390f1abe43cd9dba693532a5aa,Update ci-workflow.yml,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-03 12:39:05+00:00,0,2020-08-03 12:39:05+00:00,0,True,False,['ci-workflow.yml'],['6364798547623c5a635a32e9dc8eec481b6e1a1a'],1,1,2,1,,,
+04cdb9c975efc92b6035b7a198cb3a02affce4ca,start of dispatch workflow for longer running jobs,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-03 08:53:31-04:00,14400,2020-08-03 08:53:31-04:00,14400,True,False,['ci-test.yml'],['000d3187e5f312390f1abe43cd9dba693532a5aa'],0,30,30,1,,,
+9f99237ccf080a7fdf60c1e0aa9e976090074057,Update ci-test.yml,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-03 13:08:42+00:00,0,2020-08-03 13:08:42+00:00,0,True,False,['ci-test.yml'],['04cdb9c975efc92b6035b7a198cb3a02affce4ca'],1,1,2,1,,,
+150f866caebaf870cdde1487541a0bc26a712a76,"Update ci-test.yml
+
+change order in yml",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-03 13:09:35+00:00,0,2020-08-03 13:09:35+00:00,0,True,False,['ci-test.yml'],['9f99237ccf080a7fdf60c1e0aa9e976090074057'],3,3,6,1,,,
+7e6fb4fd8ad216cd20d6dee47bd841777d4d42f3,"Update ci-workflow.yml
+
+changing order in workflow also",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-03 13:16:04+00:00,0,2020-08-03 13:16:04+00:00,0,True,False,['ci-workflow.yml'],['150f866caebaf870cdde1487541a0bc26a712a76'],4,3,7,1,,,
+083b388527e4a445758ce5a047b51479da03b92f,added rescale cub function and allowed gsd tuning for ctx step 9,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-03 12:46:26-04:00,14400,2020-08-03 12:46:26-04:00,14400,True,False,"['ci-test.yml', 'ci-workflow.yml', 'asap.py']",['7e6fb4fd8ad216cd20d6dee47bd841777d4d42f3'],4,33,37,3,0.8888888888888888,1.0,0.0
+f56e840a52a9dd6ab454f1876f8988239ae98fe6,removed bad idea,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-03 13:01:19-04:00,14400,2020-08-03 13:01:19-04:00,14400,True,False,['asap.py'],['083b388527e4a445758ce5a047b51479da03b92f'],1,0,1,1,0.0,0.0,1.0
+62ef9707c696944d7147a1c950d3b046cd876e3c,"start of implementation of ctx workflow into github action, will likely
+not work or will be too slow or something",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-03 13:41:57-04:00,14400,2020-08-03 13:41:57-04:00,14400,True,False,"['ci-test.yml', 'asap.py']",['f56e840a52a9dd6ab454f1876f8988239ae98fe6'],0,28,28,2,1.0,1.0,0.0
+f1d66d02f3604d29f66ef76e972ff326478aad52,adding web service to ctx spiceinit call,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-04 19:31:03-04:00,14400,2020-08-04 19:31:03-04:00,14400,True,False,"['ci-test.yml', 'asap.py']",['62ef9707c696944d7147a1c950d3b046cd876e3c'],4,11,15,2,,,
+45766d7ed9d0084615bc3f94fbdfcb05ac0a3a3b,added minified kernel and dem downloads to test workflow,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-04 21:58:42-04:00,14400,2020-08-04 21:58:42-04:00,14400,True,False,['ci-test.yml'],['f1d66d02f3604d29f66ef76e972ff326478aad52'],5,17,22,1,,,
+a216aacde35abf008c6b8cb40bb4a0452d70ebee,added spicewebserver hack steps using sed,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-04 22:20:26-04:00,14400,2020-08-04 22:20:26-04:00,14400,True,False,['ci-test.yml'],['45766d7ed9d0084615bc3f94fbdfcb05ac0a3a3b'],1,7,8,1,,,
+081d3d664e05d3a7841dade6858162b8cf63023e,"added checks for 0 processes, changes to ci test yml, need to figure out why step 2 never finished",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-05 08:18:48-04:00,14400,2020-08-05 08:18:48-04:00,14400,True,False,"['ci-test.yml', 'asap.py']",['a216aacde35abf008c6b8cb40bb4a0452d70ebee'],2,6,8,2,,,
+268a383caba6cca9491711ca71e6f4b4b8fe7fe5,"Update ci-test.yml
+
+complete kernel set, try without webservice",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-05 18:11:39+00:00,0,2020-08-05 18:11:39+00:00,0,True,False,['ci-test.yml'],['081d3d664e05d3a7841dade6858162b8cf63023e'],3,21,24,1,,,
+90e23bc75e2428a5434d2c3b6b8cee358f6a4405,"Update ci-test.yml
+
+broke apart step2 isis3 steps",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-05 18:46:41+00:00,0,2020-08-05 18:46:41+00:00,0,True,False,['ci-test.yml'],['268a383caba6cca9491711ca71e6f4b4b8fe7fe5'],2,28,30,1,,,
+af666d504bde84004cbf31ada492129cd93b3c09,"Update ci-test.yml
+
+added db file rsync",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-05 19:13:13+00:00,0,2020-08-05 19:13:13+00:00,0,True,False,['ci-test.yml'],['90e23bc75e2428a5434d2c3b6b8cee358f6a4405'],0,2,2,1,,,
+8b1448b0e4e017ff424fab909d311e0f5fdad0c8,"Update ci-test.yml
+
+fixed rescale call",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-05 19:29:42+00:00,0,2020-08-05 19:29:42+00:00,0,True,False,['ci-test.yml'],['af666d504bde84004cbf31ada492129cd93b3c09'],2,2,4,1,,,
+dbea540368c24a3ab9980ba5d1253bb6e06bb68e,"Update ci-test.yml
+
+adding rest of asap ctx first workflow and preview image artifact uploads",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-05 20:38:30+00:00,0,2020-08-05 20:38:30+00:00,0,True,False,['ci-test.yml'],['5a63b97d8637c0cd07d96b35dd1a4e6314e82ad0'],0,72,72,1,,,
+9e5baa33e8738d7386a77f757d1d757f7281bd4c,"Update ci-test.yml
+
+added pwd",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-05 22:08:51+00:00,0,2020-08-05 22:08:51+00:00,0,True,False,['ci-test.yml'],['dbea540368c24a3ab9980ba5d1253bb6e06bb68e'],7,8,15,1,,,
+f1dcef00cb98660bed50bde23c959cec0f0cad13,"fixing a bug where the stereo conf may not be found, expanded test yaml to do 2nd half of asp ctx process",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-05 19:51:31-04:00,14400,2020-08-05 19:51:31-04:00,14400,True,False,"['ci-test.yml', 'asap.py']",['d54e0e84affe7d7ab54d272997c66ca7812ccc19'],6,54,60,2,0.9166666666666666,1.0,0.0
+ec9bfd1f75d4a23cfc2c6d691a90abeca011ad12,fix for wrong bath in yml,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-05 19:54:21-04:00,14400,2020-08-05 19:54:21-04:00,14400,True,False,['ci-test.yml'],['f1dcef00cb98660bed50bde23c959cec0f0cad13'],2,2,4,1,,,
+9c9926496cff7af0cbaa976bba5a3b7e522c8f97,making hq pc alignment optional to save memory on ci worker,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-05 20:51:10-04:00,14400,2020-08-05 20:51:10-04:00,14400,True,False,"['ci-test.yml', 'asap.py']",['ec9bfd1f75d4a23cfc2c6d691a90abeca011ad12'],6,10,16,2,1.0,1.0,0.0
+5a766e84dcb285550884ca573d90b5965feaf633,reducing the number of reference and source points to try to fit into memory requirements,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-05 21:21:10-04:00,14400,2020-08-05 21:21:10-04:00,14400,True,False,['ci-test.yml'],['9c9926496cff7af0cbaa976bba5a3b7e522c8f97'],1,1,2,1,,,
+9f55562e1a6a4c4b2a883fefaace7d2377dfdf16,"fixed semaphore issue with ctx par do (#7)
+
+* simplifying ctx pipeline in a few places
+* I was never calling release on the semaphore with par do, had left out _bg and _done",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-06 12:00:07-04:00,14400,2020-08-06 16:00:07+00:00,0,True,False,"['ci-test.yml', 'asap.py']",['5a766e84dcb285550884ca573d90b5965feaf633'],115,42,157,2,0.0,1.0,0.0
+a7ac95b2147d66a9b6541d797d2795fd3369ac52,"Update python-publish.yml
+
+switch to use pypi token",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-06 14:45:46-04:00,14400,2020-08-06 14:45:46-04:00,14400,True,False,['python-publish.yml'],['9f55562e1a6a4c4b2a883fefaace7d2377dfdf16'],1,1,2,1,,,
+620f52064360f1b1198b21002324683945a7085d,"Add banner (#8)
+
+* added banner and info command",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-06 16:17:24-04:00,14400,2020-08-06 20:17:24+00:00,0,True,False,"['__init__.py', '_version.py', 'asap.py', 'setup.py']",['a7ac95b2147d66a9b6541d797d2795fd3369ac52'],2,27,29,4,1.0,1.0,1.0
+75d3924ae68d33f3c6d953c8c522e493bd9bab16,release 0.0.4,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-06 16:25:53-04:00,14400,2020-08-06 16:25:53-04:00,14400,True,False,['CHANGELOG.md'],['620f52064360f1b1198b21002324683945a7085d'],0,11,11,1,,,
+87f4596dbd2bb6c22f11ce94a1b53c1e1ef9323d,"Update CHANGELOG.md
+
+lol missed that",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-06 20:49:14+00:00,0,2020-08-06 20:49:14+00:00,0,True,False,['CHANGELOG.md'],['75d3924ae68d33f3c6d953c8c522e493bd9bab16'],2,2,4,1,,,
+2effbf36ae1fd14cce5c033820e64c6432a8337f,"added hirise mola pedr pre step 10, updated some docstrings",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-09 15:58:30-04:00,14400,2020-08-09 15:58:30-04:00,14400,True,False,"['README.rst', 'asap.py']",['75d3924ae68d33f3c6d953c8c522e493bd9bab16'],56,69,125,2,1.0,1.0,0.0
+4bbca907198c81b3fc8e80b52b10af2ef0f54463,fix for step twelve postfix,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-09 19:18:40-04:00,14400,2020-08-09 19:18:40-04:00,14400,True,False,['asap.py'],['12a587b79600117be644dcba274e34d1330dacfa'],2,3,5,1,,,
+65c16be4fe289c0aca18e60ba3e26b1d81d5e018,mostly docstring updates to asap class,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-10 12:52:50-04:00,14400,2020-08-10 12:52:50-04:00,14400,True,False,['asap.py'],['4bbca907198c81b3fc8e80b52b10af2ef0f54463'],10,48,58,1,0.0,1.0,0.0
+37c357e1c4314924b7479beefa6f9c3fd3de9924,"added more doc strings, moved par_do to function out of common steps",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-10 19:03:31-04:00,14400,2020-08-10 19:03:31-04:00,14400,True,False,['asap.py'],['65c16be4fe289c0aca18e60ba3e26b1d81d5e018'],37,129,166,1,1.0,1.0,0.35714285714285715
+c261200d34ab63b5208e66602f71643b9cecac00,"removed asp_scripts (#9)
+
+* removed asp_scripts, legacy from partially functional python pipelines
+long since resolved.",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-10 20:07:24-04:00,14400,2020-08-11 00:07:24+00:00,0,True,False,"['ci-workflow.yml', 'asap.py', '__init__.py', '__init__.py', 'asp_ctx_lev1eo2dem.sh', 'asp_ctx_map_ba_pc_align2dem.sh', 'asp_ctx_step2_map2dem.sh', 'ctx_pipeline_part_one.sh', 'ctx_pipeline_part_two.sh', 'ctxedr2lev1eo.sh', 'pedr_bin4pc_align.sh', '__init__.py', 'asp_hirise_ba.sh', 'asp_hirise_map2dem.sh', 'asp_hirise_pc_align2dem.sh', 'asp_hirise_prep.sh', 'hirise_pipeline_part_one.sh', 'hirise_pipeline_part_two.sh', 'pedr_bin4pc_align_hirise.sh', 'old_asap_ctx.ipynb', 'setup.py']",['37c357e1c4314924b7479beefa6f9c3fd3de9924'],2488,5,2493,21,0.045454545454545456,0.0,0.9545454545454546
+a0cada1c17a2d2f4c977195a0d3aca3e1dfd2791,"Add docs (#10)
+
+* start of working autodocs and setup for readthedocs",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-13 19:38:03-04:00,14400,2020-08-13 23:38:03+00:00,0,True,False,"['.readthedocs.yml', 'asap.py', 'Makefile', 'asap_docs.yml', 'conf.py', 'documentation.rst', 'index.rst', 'install.rst', 'intro.rst', 'make.bat']",['c261200d34ab63b5208e66602f71643b9cecac00'],74,335,409,10,1.0,1.0,0.8333333333333334
+668b82a5173d1c5a2abb97481af1e906b8505e98,"Fixing rtd (#11)
+
+* first fixes
+
+* oops
+
+* moving more things to pip for lower memory usage... doubt it will help
+
+* do I actually need all of asp and isis for this, I think not",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-13 20:18:41-04:00,14400,2020-08-14 00:18:41+00:00,0,True,False,['asap_docs.yml'],['a0cada1c17a2d2f4c977195a0d3aca3e1dfd2791'],12,7,19,1,,,
+dda095d48aca08cd0c30f6f431ddf0dfd875c8a7,"Update README.rst
+
+added doc badge",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-14 01:51:15+00:00,0,2020-08-14 01:51:15+00:00,0,True,False,['README.rst'],['668b82a5173d1c5a2abb97481af1e906b8505e98'],0,4,4,1,,,
+54c4bf7a2a9884404a5b9794544d7bfbae66c70a,"wrote intro docs, promised a tutorial",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-14 09:44:50-04:00,14400,2020-08-14 09:44:50-04:00,14400,True,False,['intro.rst'],['dda095d48aca08cd0c30f6f431ddf0dfd875c8a7'],1,64,65,1,,,
+bb55bcfcb6fea4ecfdbc9bb8ddba70fa53898936,added short install guide,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-15 11:05:49-04:00,14400,2020-08-15 11:05:49-04:00,14400,True,False,['install.rst'],['54c4bf7a2a9884404a5b9794544d7bfbae66c70a'],1,61,62,1,,,
+718832b3b3aba16b0e5e9218650c0b351084e42e,added first version of ctx tutorial,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2020-08-15 15:13:38-04:00,14400,2020-08-15 15:13:38-04:00,14400,True,False,"['gpm_one.jpg', 'gpm_two.jpg', 'hill_one.jpg', 'index.rst', 'tutorial.rst']",['bb55bcfcb6fea4ecfdbc9bb8ddba70fa53898936'],1,114,115,5,,,
+6f39a3cfe176ea5c9b6b2c028059ff6222204153,Add ctx notebook walkthrough (#12),Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-23 14:56:09-04:00,14400,2020-08-23 14:56:09-04:00,14400,True,False,"['index.rst', 'step_by_step_ctx.rst', 'tutorial.rst']",['718832b3b3aba16b0e5e9218650c0b351084e42e'],1,390,391,3,,,
+bd0cfa3af850b149f7e0ea5b5de0accbb8eb3f67,"Update README.rst
+
+adding more doc links, removed wrong slurm comment",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-08-23 15:02:21-04:00,14400,2020-08-23 15:02:21-04:00,14400,True,False,['README.rst'],['6f39a3cfe176ea5c9b6b2c028059ff6222204153'],6,14,20,1,,,
+1a885162ead01dbf85fa09e940fb01c63fed685a,fix for doc walkthrough title,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2020-08-23 15:05:53-04:00,14400,2020-08-23 15:05:53-04:00,14400,True,False,['step_by_step_ctx.rst'],['bd0cfa3af850b149f7e0ea5b5de0accbb8eb3f67'],9,3,12,1,,,
+1809d5c93de3d590f1e316609601262f2fdb6917,asap-stereo 0.1.0 release (#15),Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-10-31 22:29:52-04:00,14400,2020-11-01 02:29:52+00:00,0,True,False,"['CHANGELOG.md', 'asap.py', 'conf.py', 'setup.py']",['1a885162ead01dbf85fa09e940fb01c63fed685a'],8,22,30,4,,,
+5f5b129e3dcd43fbf23a5586fbc01692572e04e7,Update README.rst (#16),Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-10-31 22:43:20-04:00,14400,2020-11-01 02:43:20+00:00,0,True,False,['README.rst'],['1809d5c93de3d590f1e316609601262f2fdb6917'],0,5,5,1,,,
+71b8b291769533b2b50d58b37e88337b472eb23f,"Update ci-workflow.yml (#18)
+
+* Update ci-workflow.yml
+
+* Update ci-test.yml",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-11-17 20:35:04-05:00,18000,2020-11-17 20:35:04-05:00,18000,True,False,"['ci-test.yml', 'ci-workflow.yml']",['5f5b129e3dcd43fbf23a5586fbc01692572e04e7'],2,2,4,2,,,
+83dcd018e2282194a01fc71dd38383e51c502d7d,Update python-publish.yml,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-11-18 16:17:44+00:00,0,2020-11-18 16:17:44+00:00,0,True,False,['python-publish.yml'],['71b8b291769533b2b50d58b37e88337b472eb23f'],3,1,4,1,,,
+33d80e85028f08414afb51aef2d5db8ae791da27,"Update asp.yml (#19)
+
+* Update asp.yml, updated various actions I use
+* fixed channel priority
+* added cache",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-12-03 21:40:29-05:00,18000,2020-12-04 02:40:29+00:00,0,True,False,"['ci-test.yml', 'ci-workflow.yml', 'asp.yml']",['83dcd018e2282194a01fc71dd38383e51c502d7d'],5,29,34,3,,,
+dc91021528b73e1009cbce600cf357c7baa3d107,fix for negative (dashes) in pedr file names (#20),Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-12-21 10:45:05-05:00,18000,2020-12-21 10:45:05-05:00,18000,True,False,['asap.py'],['33d80e85028f08414afb51aef2d5db8ae791da27'],1,1,2,1,,,
+16eb3e41a96ea706e11f56c4d7f8aa59fdcb8da4,"adding stereo quality report  (#21)
+
+* adding stereo quality report from https://github.com/rbeyer/scriptorium, keeping licenses, eventually need to refactor things a bit to a lot for cleaner more granular access/ability to do some checks with moody metadata
+* added stereo report to workflow test",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2020-12-24 10:27:35-05:00,18000,2020-12-24 10:27:35-05:00,18000,True,False,"['ci-test.yml', 'asap.py', 'stereo_quality.py', 'asp.yml', 'requirements.txt']",['dc91021528b73e1009cbce600cf357c7baa3d107'],0,546,546,5,0.44879518072289154,0.6114457831325302,0.7349397590361446
+ce745e427207d867d07788a79699b000b5b9e4dc,Update _version.py,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-03-22 15:28:29-04:00,14400,2021-03-22 15:28:29-04:00,14400,True,False,['_version.py'],['16eb3e41a96ea706e11f56c4d7f8aa59fdcb8da4'],2,2,4,1,,,
+4ba3d3954a384034a82a4f4e64ead5525c83fbc1,"Add geodiff for max disp (#14)
+
+* added geodiff to asap to estimate max disparity
+* simplified both hirise and ctx workflows into single notebooks
+* added rescaling/downsampling to notebook workflows",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-04-13 10:58:54-04:00,14400,2021-04-13 10:58:54-04:00,14400,True,False,"['ci-test.yml', 'asap.py', 'asap_ctx_pc_align.ipynb', 'asap_ctx_workflow.ipynb', 'asap_hirise.ipynb', 'asap_hirise_pc_align.ipynb', 'asap_hirise_workflow.ipynb']",['ce745e427207d867d07788a79699b000b5b9e4dc'],770,329,1099,7,0.0,1.0,0.07142857142857142
+bc9de888e8a7d19ae1fe989474b53c758679d090,updated ci workflows,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-04-13 11:01:53-04:00,14400,2021-04-13 11:01:53-04:00,14400,True,False,"['ci-test.yml', 'ci-workflow.yml']",['4ba3d3954a384034a82a4f4e64ead5525c83fbc1'],30,8,38,2,,,
+be273045e9cd455b8dec4e3ae3eb31fda173f190,"May 2021 fixes (#22)
+
+* realized gsd was not provided to mapproject in ctx step, need to have it overwrite the gsd params in case it differs
+
+* fixes for downscaling
+
+* updating versions and changelog, need to update docs soon before version release",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-05-30 15:14:53-04:00,14400,2021-05-30 15:14:53-04:00,14400,True,False,"['CHANGELOG.md', '_version.py', 'asap.py', 'asap_ctx_workflow.ipynb', 'asap_hirise_workflow.ipynb', 'conf.py', 'setup.py']",['bc9de888e8a7d19ae1fe989474b53c758679d090'],26,59,85,7,1.0,1.0,0.0
+e7360210069eba8c248f66d5d776f62e34ea1f6f,updated tutorial document,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-05-30 15:26:35-04:00,14400,2021-05-30 15:26:35-04:00,14400,True,False,['tutorial.rst'],['be273045e9cd455b8dec4e3ae3eb31fda173f190'],29,13,42,1,,,
+43e996e7c6dea6299b80cdacc93268397e12756d,added stereo_quality to docs,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-05-30 15:39:29-04:00,14400,2021-05-30 15:39:29-04:00,14400,True,False,['documentation.rst'],['e7360210069eba8c248f66d5d776f62e34ea1f6f'],0,6,6,1,,,
+46071df530b8c87ecb92f55ec3c08fce5e9d6c22,"more changes to tutorial, updating step-by-step",Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-05-30 18:32:05-04:00,14400,2021-05-30 18:32:05-04:00,14400,True,False,"['asap_ctx_workflow.ipynb', 'asap_docs.yml', 'step_by_step_ctx.rst', 'tutorial.rst']",['43e996e7c6dea6299b80cdacc93268397e12756d'],31,29,60,4,,,
+3095c284a2a91eca3e138341f6e3b2283c36151e,"added quality reports to notebooks, updated instal docs",Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-05-30 19:40:21-04:00,14400,2021-05-30 19:40:21-04:00,14400,True,False,"['asap_ctx_workflow.ipynb', 'asap_hirise_workflow.ipynb', 'install.rst']",['46071df530b8c87ecb92f55ec3c08fce5e9d6c22'],28,87,115,3,,,
+157d37c75b543305f40ba9e3d67aaea5dad4b155,update latex engine for unicode in rtd,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-05-30 21:23:30-04:00,14400,2021-05-30 21:23:30-04:00,14400,True,False,['conf.py'],['3095c284a2a91eca3e138341f6e3b2283c36151e'],0,3,3,1,,,
+0b185000a75549cbf77ac1757d641bc509cb4c10,attempting to fix pygments lexer warnings in rtd,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-05-30 21:39:57-04:00,14400,2021-05-30 21:39:57-04:00,14400,True,False,['asap_docs.yml'],['157d37c75b543305f40ba9e3d67aaea5dad4b155'],0,2,2,1,,,
+aaed4ca86ae4fae21543a606f095e38287e33f25,"migrating github actions to use new 2 step isis conda and asp install (#23)
+
+* migrating github actions to use new 2 step isis conda and asp install method
+* consider a conda lock for isis
+* should also look into making a common workflow/job for the setup of isis/asp/asap between both workflows",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-05-31 09:02:30-04:00,14400,2021-05-31 09:02:30-04:00,14400,True,False,"['ci-test.yml', 'ci-workflow.yml', 'asap.yml', 'asp.yml', 'isis.yml']",['0b185000a75549cbf77ac1757d641bc509cb4c10'],52,112,164,5,,,
+abba2f1d5848331eeb6cdebe69e6a659707fafcd,renaming workflows to more sensible names,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-05-31 09:04:11-04:00,14400,2021-05-31 09:04:11-04:00,14400,True,False,"['ci-test-ctx.yml', 'test_basic.yml']",['aaed4ca86ae4fae21543a606f095e38287e33f25'],0,0,0,2,,,
+b963530f2232d23ece4af626dc5bbd9b3706ebe6,update readme,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-05-31 09:09:58-04:00,14400,2021-05-31 09:09:58-04:00,14400,True,False,['README.rst'],['abba2f1d5848331eeb6cdebe69e6a659707fafcd'],7,6,13,1,,,
+11e117282a893593ee72a70ef5ebd560507c7a01,"asap-stereo 0.2.0 release
+
+* includes big change to single step pipelines thanks to geodiff maxdisp
+estimation
+* documentation updates including new install steps for depenendency
+isolation
+* added stereoquality report code",Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-05-31 09:15:46-04:00,14400,2021-05-31 09:15:46-04:00,14400,True,False,['CHANGELOG.md'],['b963530f2232d23ece4af626dc5bbd9b3706ebe6'],3,8,11,1,,,
+fbe998926ea6438ff0230f00411a064b984685d9,apparently pypi tests readme,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-05-31 09:28:04-04:00,14400,2021-05-31 09:28:14-04:00,14400,True,False,"['python-publish.yml', 'test_basic.yml', 'README.rst', 'asap.yml']",['11e117282a893593ee72a70ef5ebd560507c7a01'],4,12,16,4,,,
+fd6b265428b77079e536de5ce1e652baaa1a17d9,"adds dois to banners and updates readme to root doi
+closes #24",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-06-07 19:19:54-04:00,14400,2021-06-07 19:19:59-04:00,14400,True,False,"['README.rst', 'asap.py']",['fbe998926ea6438ff0230f00411a064b984685d9'],3,7,10,2,,,
+470be19117be113b5e742783da77a86c33fd17a2,"Georef module (#25)
+
+* added georeferencing module, adds several functions to make gcps from image dataset and apply gcps to images using gdal
+
+some todos remain such as adding resampling VRT function to ensure images have similar gsds prior to ipmatch/ipfind. Need to do more with gcps including computing residuals for user and making warp options more flexible",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-06-16 08:40:41-04:00,14400,2021-06-16 08:40:41-04:00,14400,True,False,['asap.py'],['fd6b265428b77079e536de5ce1e652baaa1a17d9'],4,253,257,1,0.9739130434782609,1.0,0.4782608695652174
+1b6e0673dd82cb829b5b1e74b3c6dce61d4fc2b1,added target res param to warp,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-22 19:53:27-04:00,14400,2021-06-22 19:53:27-04:00,14400,True,False,['asap.py'],['470be19117be113b5e742783da77a86c33fd17a2'],2,2,4,1,,,
+5afc01608a37d547e1744e67c430a8cfd6e0a670,"Add ba gcps (#26)
+
+* adds functions to make gcps for asp's ba codes using ipfind/ipmatch to find match points between ctx reference and hirise stereo image pair
+*  found that gdalinfo -stats doesn't always return the min or max on first run, repeated run fixes but maybe a flag can fix it. found ipfind is sensitive to nodata value being min or max
+* fixes for nodata and scaling with crism
+* fixed min/max not being found, could be interpreted as a gdal bug/undocumented difference between cached min/max and stats minimum maximum
+* added feeling lucky to georef
+* updated some docstrings in georef
+* added vargs to BA steps to allow gcp pass in, found a bug with my gcp network
+* looks like something strange with sh.py was causing only 100 gcps to be returned, accumulating the iterator results in gcp plots that look correct
+* fixes kwarg value 0 parsing",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-06-27 13:52:27-04:00,14400,2021-06-27 13:52:27-04:00,14400,True,False,['asap.py'],['1b6e0673dd82cb829b5b1e74b3c6dce61d4fc2b1'],19,171,190,1,0.22115384615384615,0.41346153846153844,0.0
+530b8be0784dce35ed731fea4ace6e469a62195f,"fixed a typo in hirise workflow that actually was breaking things, rescaling not working on hirise side of things because of ISIS ignoring reduced image GSD",Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-27 20:10:51-04:00,14400,2021-06-27 20:10:51-04:00,14400,True,False,['asap_hirise_workflow.ipynb'],['5afc01608a37d547e1744e67c430a8cfd6e0a670'],4,4,8,1,,,
+aef78e53316125e1f1049cb79e1d728ef62c70b2,added option gsd arg to step_five for hirise,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-27 20:19:04-04:00,14400,2021-06-27 20:19:04-04:00,14400,True,False,"['asap.py', 'asap_hirise_workflow.ipynb']",['530b8be0784dce35ed731fea4ace6e469a62195f'],3,9,12,2,0.0,1.0,1.0
+9c38472c87d7becd8bc3bc46a2846e61fdb70639,more typos in hirise script,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-27 20:25:57-04:00,14400,2021-06-27 20:25:57-04:00,14400,True,False,['asap_hirise_workflow.ipynb'],['aef78e53316125e1f1049cb79e1d728ef62c70b2'],2,2,4,1,,,
+4c79af7b3051915f3af488db4115c715fafac920,another fix,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-27 20:31:28-04:00,14400,2021-06-27 20:31:28-04:00,14400,True,False,['asap_hirise_workflow.ipynb'],['9c38472c87d7becd8bc3bc46a2846e61fdb70639'],1,1,2,1,,,
+b688fe483f0d0617e84bc79f735680cc7d37ef0c,"added hillshade preview to hirise, added todo to pedr4align_moody to fix issue with get_srs_info",Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-27 21:05:00-04:00,14400,2021-06-27 21:05:00-04:00,14400,True,False,"['asap.py', 'asap_hirise_workflow.ipynb']",['4c79af7b3051915f3af488db4115c715fafac920'],2,60,62,2,1.0,1.0,0.0
+17e9cd85ac66489401e3a62512308d1abf8ecce9,"added gsd param for hirise step 5 in notebook to allow for downsampling, added max_ba_iterations param for hirise, fixed other todo to use gdal_translate",Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-27 21:15:10-04:00,14400,2021-06-27 21:15:10-04:00,14400,True,False,"['asap.py', 'asap_hirise_workflow.ipynb']",['b688fe483f0d0617e84bc79f735680cc7d37ef0c'],10,10,20,2,0.0,1.0,0.0
+4cf988a1d319423b065f87d72749bd022d493d0f,"some fixes
+* bumped moody to 0.2.1
+* bumped asap_stereo to 0.2.1
+* added full res dem hillshade to hirise workflow
+* fixed typo",Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-28 09:18:14-04:00,14400,2021-06-28 09:18:14-04:00,14400,True,False,"['asap.yml', '_version.py', 'asap_hirise_workflow.ipynb', 'conf.py', 'requirements.txt', 'setup.py']",['17e9cd85ac66489401e3a62512308d1abf8ecce9'],7,60,67,6,,,
+43a2f68d0ec8fbdbbeb89eb0a88d98bd712b7eb1,v0.2.1 release,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-28 09:24:55-04:00,14400,2021-06-28 09:26:02-04:00,14400,True,False,['CHANGELOG.md'],['4cf988a1d319423b065f87d72749bd022d493d0f'],0,13,13,1,,,
+5892a7c3fb5999d25560a625dbcea3db3705f956,added gcp param for notebook hirise workflow,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-28 10:24:27-04:00,14400,2021-06-28 10:24:27-04:00,14400,True,False,"['asap.py', 'asap_hirise_workflow.ipynb']",['43a2f68d0ec8fbdbbeb89eb0a88d98bd712b7eb1'],3,6,9,2,0.0,1.0,0.0
+ec60c11c05002d9b14f67220d16b87bb68b57729,gcp param was in wrong place,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-06-28 18:49:44-04:00,14400,2021-06-28 18:49:44-04:00,14400,True,False,['asap_hirise_workflow.ipynb'],['5892a7c3fb5999d25560a625dbcea3db3705f956'],2,2,4,1,,,
+53a026afa9f4ddf1983c25c94b5dc6551c2f6834,"Update asap_hirise_workflow.ipynb
+
+fix typo for hirise step 9 previews for gsd param",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-06-30 08:51:34-04:00,14400,2021-06-30 08:51:34-04:00,14400,True,False,['asap_hirise_workflow.ipynb'],['ec60c11c05002d9b14f67220d16b87bb68b57729'],2,2,4,1,,,
+5f4f8c54952ef78c120cf7c277bd219e9aece027,"Update asap.py
+
+fix issue in im_feeling_lucky",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-07-01 21:45:34-04:00,14400,2021-07-01 21:45:34-04:00,14400,True,False,['asap.py'],['53a026afa9f4ddf1983c25c94b5dc6551c2f6834'],2,2,4,1,,,
+614e913b1ca12fba5287a0f403425dc923a85dbc,"Refactor common stereo commands (#27)
+
+* need to simplify stereo command to single call with different kwargs
+* some code de-duplication for parallel_stereo calls and improved common stereo step
+* simplifications for step 10/11, optional expanding utility function
+* added postfix configuration and fixups for hirise side",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-07-06 20:06:13-04:00,14400,2021-07-06 20:06:13-04:00,14400,True,False,['asap.py'],['5f4f8c54952ef78c120cf7c277bd219e9aece027'],99,93,192,1,0.0,1.0,0.0
+b35e3b4c202ec8cbac74dbaa0e20a51be16a19bc,"revert move of default params out of common steps, realized it was more useful in common steps",Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-07-07 09:55:53-04:00,14400,2021-07-07 09:55:53-04:00,14400,True,False,['asap.py'],['614e913b1ca12fba5287a0f403425dc923a85dbc'],33,33,66,1,,,
+8e2f38b7144d0e972320a7ca9e3a0287c2b3afca,fixed typo,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-07-07 13:17:21-04:00,14400,2021-07-07 13:17:21-04:00,14400,True,False,['asap.py'],['b35e3b4c202ec8cbac74dbaa0e20a51be16a19bc'],3,3,6,1,,,
+41a5cdb79aa5b833c9475885aa22e3f8fd9cf6ed,small fix for ipmatch,Andrew Annex,andrew.annex@gmail.com,Andrew Annex,andrew.annex@gmail.com,2021-08-03 08:51:48-04:00,14400,2021-08-03 08:51:48-04:00,14400,True,False,['asap.py'],['8e2f38b7144d0e972320a7ca9e3a0287c2b3afca'],2,3,5,1,1.0,1.0,0.0
+4e897634183025a74da677becd739d404bb0103f,"changing all steps to use numeric ordering in names (#28)
+
+* changing all steps to use numeric ordering in names, a major change for sure but will enable easier job runs
+* adding run folder to allow multiple results folders in ctx/hirise
+* added multiple step params to common
+* simplified use of point2dem to use new common function point_to_dem
+* simplified dem_geoid usage
+* more abstraction of postfixes
+* changed folder param to run",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-08-04 10:05:33-04:00,14400,2021-08-04 10:05:33-04:00,14400,True,False,"['ci-test-ctx.yml', 'test_basic.yml', 'asap.py', 'asap_ctx_workflow.ipynb', 'asap_hirise_workflow.ipynb', 'step_by_step_ctx.rst']",['41a5cdb79aa5b833c9475885aa22e3f8fd9cf6ed'],274,365,639,6,0.975609756097561,1.0,0.0
+4f57da1021a431d60616256c64816a5f5ef7f27f,fixed stepbystep,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-08-19 11:01:35-04:00,14400,2021-08-19 11:01:35-04:00,14400,True,False,['step_by_step_ctx.rst'],['4e897634183025a74da677becd739d404bb0103f'],14,14,28,1,,,
+41f48c83eb97a67eb67573d264bbfb89331e9f53,fix for step 9 hirise,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-08-19 12:18:57-04:00,14400,2021-08-19 12:18:57-04:00,14400,True,False,['asap.py'],['4f57da1021a431d60616256c64816a5f5ef7f27f'],2,2,4,1,,,
+9a4a83f42e722f5ccf43675b90998c0f90b6ab74,"fix for just_dem bug with point2dem, need a better fix",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-09-08 19:44:43-04:00,14400,2021-09-08 19:44:43-04:00,14400,True,False,"['asap.py', 'asap_ctx_workflow.ipynb']",['41f48c83eb97a67eb67573d264bbfb89331e9f53'],110,110,220,2,,,
+b8293900d05c47cc8e9a413dc101e525a4d37c65,"missed another non numeric step number, fixed",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-09-08 20:11:20-04:00,14400,2021-09-08 20:11:20-04:00,14400,True,False,['asap_ctx_workflow.ipynb'],['9a4a83f42e722f5ccf43675b90998c0f90b6ab74'],1,1,2,1,,,
+ab33c4f4beb6f3a00affdd6646da4a48ead851d0,"fixing more issues, I need to make the ci test actually run my notebooks...",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-09-08 22:00:38-04:00,14400,2021-09-08 22:00:38-04:00,14400,True,False,['asap_ctx_workflow.ipynb'],['b8293900d05c47cc8e9a413dc101e525a4d37c65'],3,3,6,1,,,
+6efce4b24cee43d7644ce7e89e3ac156677b67d5,added notebook based ci test,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-09-08 22:23:30-04:00,14400,2021-09-08 22:23:30-04:00,14400,True,False,['ci-test-notebook.yml'],['ab33c4f4beb6f3a00affdd6646da4a48ead851d0'],0,107,107,1,,,
+295b48d0e770ab8ecc8a02aae87895eeab58659e,fixed typo,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-09-09 10:01:09-04:00,14400,2021-09-09 10:01:09-04:00,14400,True,False,['ci-test-notebook.yml'],['6efce4b24cee43d7644ce7e89e3ac156677b67d5'],1,1,2,1,,,
+305836d8b715e99b87080e8d8e111ee645382d2f,fixed missing arg flag in ctx notebook,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-09-09 10:20:02-04:00,14400,2021-09-09 10:20:02-04:00,14400,True,False,"['asap.py', 'asap_ctx_workflow.ipynb']",['295b48d0e770ab8ecc8a02aae87895eeab58659e'],4,4,8,2,,,
+3a84587b93d603c7f69a3304d8a68d152b1f7063,"logging more info about isis conda env, missing armadillo, possibly installing too new a version from conda-forge",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-09-09 10:33:52-04:00,14400,2021-09-09 10:33:52-04:00,14400,True,False,"['ci-test-ctx.yml', 'ci-test-notebook.yml', 'test_basic.yml']",['305836d8b715e99b87080e8d8e111ee645382d2f'],5,17,22,3,,,
+f598cf7fc4fc30040ea8e62882025a94c93bef87,"Added step_kwargs for CTX and fix for armadillo 9
+
+* try this fix to ensure armadillo 9 is available
+* more fixes and always log out notebook and folders/files
+* added step_kwargs for step parameter injection, may not work/be robust",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-09-12 19:01:43-04:00,14400,2021-09-12 19:01:43-04:00,14400,True,False,"['ci-test-notebook.yml', 'asap.py', 'asap_ctx_workflow.ipynb', 'isis.yml']",['3a84587b93d603c7f69a3304d8a68d152b1f7063'],18,39,57,4,0.7142857142857143,1.0,0.7142857142857143
+64f70a5e492767ba97d6dc7ba957ee4f72b339c2,"adding seperate conda env caching to speed up builds (#31)
+
+* added seperate conda env caching jobs to speed up subsequent builds",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-09-13 15:21:49-04:00,14400,2021-09-13 15:21:49-04:00,14400,True,False,"['ci-test-ctx.yml', 'ci-test-notebook.yml', 'test_basic.yml']",['f598cf7fc4fc30040ea8e62882025a94c93bef87'],66,394,460,3,,,
+899fef9955aa02b9b6674c717762a473ccd28404,add georef to docs,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-09-13 19:59:38-04:00,14400,2021-09-13 19:59:38-04:00,14400,True,False,['documentation.rst'],['64f70a5e492767ba97d6dc7ba957ee4f72b339c2'],0,6,6,1,,,
+d91738f26e87b8d66ede58c698628abf36b00d19,"bumped isis version, add step kwargs to hirise notebook (#30)
+
+* bumped isis version, add step kwargs to hirise notebook
+* fix case if step_kwargs is none",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2021-09-14 23:18:36-04:00,14400,2021-09-14 23:18:36-04:00,14400,True,False,"['LICENSE', 'asap.py', 'asap_hirise_workflow.ipynb', 'isis.yml']",['899fef9955aa02b9b6674c717762a473ccd28404'],201,205,406,4,0.6666666666666666,1.0,0.6666666666666666
+ccc100459830707174637b594746056583e19002,bump isis cache add ldd to cache jobs,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2021-09-17 10:37:36-04:00,14400,2021-09-17 10:37:36-04:00,14400,True,False,"['ci-test-ctx.yml', 'ci-test-notebook.yml', 'test_basic.yml']",['d91738f26e87b8d66ede58c698628abf36b00d19'],3,6,9,3,,,
+24078d5982f5e68d3d745a11316762e636834fbc,fixes,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-15 19:21:10-07:00,25200,2022-04-15 19:21:10-07:00,25200,True,False,"['asap.py', 'asap_hirise_workflow_w_hiproc.ipynb']",['ccc100459830707174637b594746056583e19002'],8,642,650,2,0.0,1.0,0.0
+f6752acac39aef02b4c2981aff3a30dd5a771e6d,removed bit,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-16 19:03:18-07:00,25200,2022-04-16 19:03:24-07:00,25200,True,False,['asap_hirise_workflow_w_hiproc.ipynb'],['24078d5982f5e68d3d745a11316762e636834fbc'],9,0,9,1,,,
+9f5b36affec2524b2636b0da636987c920bc9572,fixes,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-16 20:41:04-07:00,25200,2022-04-16 20:41:04-07:00,25200,True,False,"['asap.py', 'asap_hirise_workflow_w_hiproc.ipynb']",['f6752acac39aef02b4c2981aff3a30dd5a771e6d'],14,15,29,2,0.0,1.0,0.0
+1fb1851c6b0aa0f59db06052aa33db2221bd39e5,new hiproc workflow now in cli,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-16 20:44:21-07:00,25200,2022-04-16 20:44:21-07:00,25200,True,False,"['asap.py', 'asap_hirise_workflow_hiproc.ipynb']",['9f5b36affec2524b2636b0da636987c920bc9572'],1,6,7,2,0.0,1.0,0.0
+8a009c2cb80b796e50d461b8e8f97de007fa4593,more improvements,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-17 09:15:57-07:00,25200,2022-04-17 09:15:57-07:00,25200,True,False,"['asap_36.yml', 'asap.py']",['1fb1851c6b0aa0f59db06052aa33db2221bd39e5'],9,28,37,2,1.0,0.0,0.0
+1c0c78b409bc464cf3739ee5404dd41234b90c09,fixes for get_srs_info,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-17 09:30:45-07:00,25200,2022-04-17 09:30:45-07:00,25200,True,False,['asap.py'],['8a009c2cb80b796e50d461b8e8f97de007fa4593'],2,4,6,1,1.0,1.0,1.0
+baa1a9e55613ba5a6f5c3ebf7c3115b051269da9,fixes for postfix and black version,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-17 15:48:38-07:00,25200,2022-04-17 15:48:38-07:00,25200,True,False,"['asap.yml', 'asap_36.yml', 'asap.py']",['1c0c78b409bc464cf3739ee5404dd41234b90c09'],1,6,7,3,0.0,1.0,0.0
+c16db2f48d3a3620ac5c5b5971b5bca3f5a8807a,"fixes for sh.py and gdalsrsinfo, but may need more rigor",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-18 17:31:00-07:00,25200,2022-04-18 17:31:00-07:00,25200,True,False,"['asap.py', 'asap_ctx_workflow.ipynb', 'asap_hirise_workflow.ipynb', 'asap_hirise_workflow_hiproc.ipynb']",['baa1a9e55613ba5a6f5c3ebf7c3115b051269da9'],26,33,59,4,0.5,1.0,0.5
+a57961aac688aa2672a5bb6f74909b65fe01cb13,updated ba max iter for unprojected workflow,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-23 10:35:02-07:00,25200,2022-04-23 10:35:02-07:00,25200,True,False,['asap_hirise_workflow_hiproc.ipynb'],['c16db2f48d3a3620ac5c5b5971b5bca3f5a8807a'],40,157,197,1,,,
+91a0c33526cc6662cda831cc4442961e03110f45,worked out why bundle adjust logs were so terse,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-23 10:36:00-07:00,25200,2022-04-23 10:36:00-07:00,25200,True,False,['asap.py'],['a57961aac688aa2672a5bb6f74909b65fe01cb13'],1,2,3,1,0.0,1.0,1.0
+c311aefc28bde83ff0b1aeb0f4ba706d7a89f376,increase ip numbers in pre step 10 for more robustness,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-25 13:34:59-07:00,25200,2022-04-25 13:34:59-07:00,25200,True,False,"['asap.py', 'asap_hirise_workflow_hiproc.ipynb']",['91a0c33526cc6662cda831cc4442961e03110f45'],19,19,38,2,,,
+0c3f8fb58cff6b5e435d32dde47492c6cd0fab1a,added drg to cog command,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-26 12:33:57-07:00,25200,2022-04-26 12:33:57-07:00,25200,True,False,['asap.py'],['c311aefc28bde83ff0b1aeb0f4ba706d7a89f376'],0,26,26,1,0.0,0.0,0.0
+b57d760ef45986d21ca1467f50d2bb9967b1f864,fixes,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-26 12:42:43-07:00,25200,2022-04-26 12:42:43-07:00,25200,True,False,['asap.py'],['0c3f8fb58cff6b5e435d32dde47492c6cd0fab1a'],3,3,6,1,,,
+ff64bc91af4d305ebfdeb93db861281f1b390b88,"changes default srs to custom orthographic projections (#32)
+
+* changes default srs to custom orthographic projections
+
+* added circular mean for longitude range for isis cubes, need to check if range is 0 to 360",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2022-04-27 14:16:18-07:00,25200,2022-04-27 14:16:18-07:00,25200,True,False,['asap.py'],['b57d760ef45986d21ca1467f50d2bb9967b1f864'],3,16,19,1,1.0,1.0,0.08333333333333333
+f24c4eca9cbbb5d9d97d0a16f904096e53ec9165,"added widths to images, update crop image cmd",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-04-30 13:10:33-07:00,25200,2022-04-30 13:11:15-07:00,25200,True,False,"['asap.py', 'asap_ctx_workflow.ipynb', 'asap_hirise_workflow.ipynb', 'asap_hirise_workflow_hiproc.ipynb']",['ff64bc91af4d305ebfdeb93db861281f1b390b88'],94,334,428,4,1.0,1.0,0.0
+6c6c110f94a83141ee82451b4b7f309a0befe44b,attempting to update asap to run against asp 3.1.0 and isis 7.0.0,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-06-21 14:53:09-07:00,25200,2022-06-21 14:53:09-07:00,25200,True,False,"['ci-test-ctx.yml', 'ci-test-notebook.yml', 'test_basic.yml', 'asap.yml', 'asap_36.yml', 'asap_docs.yml', 'isis.yml', 'setup.py']",['f24c4eca9cbbb5d9d97d0a16f904096e53ec9165'],41,19,60,8,,,
+47565b15a2bb151782691179a9dfbf3c587301a8,avoid mamba for isis conda env,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-06-21 15:21:18-07:00,25200,2022-06-21 15:21:18-07:00,25200,True,False,"['ci-test-ctx.yml', 'ci-test-notebook.yml', 'test_basic.yml']",['6c6c110f94a83141ee82451b4b7f309a0befe44b'],6,3,9,3,,,
+23f1a4d96fb6cfc8aae8380adaabbed0e8f544e8,"remove python as a req for isis, should work right?",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-06-21 15:43:21-07:00,25200,2022-06-21 15:43:21-07:00,25200,True,False,"['ci-test-ctx.yml', 'ci-test-notebook.yml', 'test_basic.yml']",['47565b15a2bb151782691179a9dfbf3c587301a8'],3,0,3,3,,,
+7913f23c7a25391ee13471fdaeb9641a7928be02,remove defaults channel,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2022-07-05 10:41:27-07:00,25200,2022-07-05 10:41:27-07:00,25200,True,False,"['asap.yml', 'isis.yml']",['23f1a4d96fb6cfc8aae8380adaabbed0e8f544e8'],2,0,2,2,,,
+b6b6adc04dacefeafbc1f65227154bf4e806d105,fix typo and don't clean patched environment,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2022-07-05 11:01:28-07:00,25200,2022-07-05 11:01:28-07:00,25200,True,False,"['ci-test-ctx.yml', 'ci-test-notebook.yml', 'test_basic.yml']",['7913f23c7a25391ee13471fdaeb9641a7928be02'],1,4,5,3,,,
+679e82156843ab5187e2a77c210aba367ace0e33,added compute footprints function,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-07-07 10:12:49-07:00,25200,2022-07-07 10:12:49-07:00,25200,True,False,['asap.py'],['b6b6adc04dacefeafbc1f65227154bf4e806d105'],0,29,29,1,0.0,1.0,1.0
+5b32154129ce52a6f50b704f57c90238af0a7d0f,slight update,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-07-07 10:35:09-07:00,25200,2022-07-07 10:35:09-07:00,25200,True,False,['asap.py'],['679e82156843ab5187e2a77c210aba367ace0e33'],1,2,3,1,0.0,1.0,1.0
+a08f45453318380603b9722841dc713f1dfb2630,add back defaults and make solve not strict,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-07-07 10:49:32-07:00,25200,2022-07-07 10:49:32-07:00,25200,True,False,"['ci-test-ctx.yml', 'ci-test-notebook.yml', 'test_basic.yml', 'isis.yml']",['5b32154129ce52a6f50b704f57c90238af0a7d0f'],3,1,4,4,,,
+8395a0807d6c0054c15de428a31deab1bbf60d8b,fix for parallel_bundle_adjust,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-07-07 13:28:38-07:00,25200,2022-07-07 13:28:38-07:00,25200,True,False,['asap.py'],['a08f45453318380603b9722841dc713f1dfb2630'],2,1,3,1,1.0,0.0,0.0
+6cb59c7c3fee0d23aa0684a58912c67c704d7ee0,fix typo,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-07-07 13:37:09-07:00,25200,2022-07-07 13:37:09-07:00,25200,True,False,['asap.py'],['8395a0807d6c0054c15de428a31deab1bbf60d8b'],1,1,2,1,,,
+7df51272328a71bba7140e6a9f183c00d42df639,"added cache for asp toolkit in ci-test-ctx.yml, maybe enough to make this a test run for all pushes",Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-07-07 13:50:08-07:00,25200,2022-07-07 13:50:08-07:00,25200,True,False,['ci-test-ctx.yml'],['6cb59c7c3fee0d23aa0684a58912c67c704d7ee0'],3,26,29,1,,,
+172ec2fa5015c165987fc0c57d79a1f57d8fea60,fixed two typos,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-07-07 13:56:44-07:00,25200,2022-07-07 13:56:44-07:00,25200,True,False,['ci-test-ctx.yml'],['7df51272328a71bba7140e6a9f183c00d42df639'],2,2,4,1,,,
+c092dfb52b9c9f2c5f4bfceddedf0ae5a86e16e1,added asp cache to notebook and basic side,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-07-07 14:10:44-07:00,25200,2022-07-07 14:12:18-07:00,25200,True,False,"['ci-test-notebook.yml', 'test_basic.yml']",['172ec2fa5015c165987fc0c57d79a1f57d8fea60'],6,52,58,2,,,
+77c2ba31e422d50cb287c7f1fb05b39dabe613ad,"attempting to update asap to run against asp 3.1.0 and isis 7.0.0 (#33)
+
+* attempting to update asap to run against asp 3.1.0 and isis 7.0.0
+* fix for parallel_bundle_adjust
+* added cache for asp toolkit in ci tests",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2022-07-07 14:36:05-07:00,25200,2022-07-07 14:36:05-07:00,25200,True,False,"['ci-test-ctx.yml', 'ci-test-notebook.yml', 'test_basic.yml', 'asap.yml', 'asap_36.yml', 'asap.py', 'asap_docs.yml', 'isis.yml', 'setup.py']",['f24c4eca9cbbb5d9d97d0a16f904096e53ec9165'],59,128,187,9,0.0,1.0,1.0
+2bf4ec2bcbea1dbeb7ff011182b82fdf3feae00d,"add notebook test to push and pull, use symbolic link for hirise images",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2022-07-09 18:32:36-07:00,25200,2022-07-09 18:32:36-07:00,25200,True,False,"['ci-test-notebook.yml', 'asap.py']",['77c2ba31e422d50cb287c7f1fb05b39dabe613ad'],3,6,9,2,1.0,1.0,1.0
+622d78e73eff9b35295ac25cf591ba287275b02d,simplification of pc_align across ctx/hirise,Andrew Annex,ama6fy@virginia.edu,Andrew Annex,ama6fy@virginia.edu,2022-08-17 15:19:23-07:00,25200,2022-08-17 15:19:23-07:00,25200,True,False,"['asap.py', 'asap_ctx_workflow.ipynb']",['c092dfb52b9c9f2c5f4bfceddedf0ae5a86e16e1'],122,43,165,2,1.0,0.0,1.0
+f9e9810451efaba0e17f2c86239f9469b0453ffc,"added use of ale for speed (#34)
+
+* update some action versions, tests are failing because of ale version yet to be published
+* some expansion allowing camera postfixes to be specified explicitly
+* remove rescaling to allow notebook builds to work
+* new nomap notebook for hirise, need to clean up a bit
+* better step 4 hirise
+* fix get geo diff for two rasters
+* fix typo in pcalign
+* more fixes for geodiff
+* transition to fgr pc-align
+* updated threads on point2dem
+* updated mapproject_both a bit
+* worked out map projection is fast in csm land, need to adjust hirise workflow to map project after bundle adjustment given refdem (or not) to feed stereo
+* new logging of commands method found in sh docs",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2022-12-28 13:08:57-08:00,28800,2022-12-28 13:08:57-08:00,28800,True,False,"['ci-test-ctx.yml', 'ci-test-notebook.yml', 'python-publish.yml', 'test_basic.yml', 'LICENSE', 'asap.yml', 'asap.py', 'asap_hirise_workflow_nomap.ipynb', 'conf.py', 'requirements.txt']",['457fb83484497c50eb2aa951b7818ebb3dbb5cbf'],600,1166,1766,10,0.0,0.225,0.0
+f4d7c54f185391d09c2d039516fd6ef3060f2e9f,update isis to 7.1.0 and asp to 3.2.0,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-01-01 11:30:58-08:00,28800,2023-01-01 11:30:58-08:00,28800,True,False,"['ci-test-ctx.yml', 'isis.yml']",['f9e9810451efaba0e17f2c86239f9469b0453ffc'],4,4,8,2,,,
+f2d216dd8ea0de2b18149f6ebb414cea36c1eb61,umm idk,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-02-08 00:05:55-08:00,28800,2023-02-08 00:05:55-08:00,28800,True,False,['ci-test-ctx.yml'],['f4d7c54f185391d09c2d039516fd6ef3060f2e9f'],1,3,4,1,,,
+9757e0b3ce58245761001e1be70ea83c9a910657,"small bump for build (#35)
+
+* restructure to src layout and use importlib resources
+* fixes for new isis data server
+* rclone added to isis yml 
+* remove ldd test from asap environment test, shouldn't really be there
+* patch cspice so
+* adding kernel db files again in a more explicit way
+* ugly hacks for download script issues",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-02-08 01:43:02-08:00,28800,2023-02-08 01:43:02-08:00,28800,True,False,"['ci-test-ctx.yml', 'python-publish.yml', '.gitignore', '__init__.py', '_version.py', 'isis.yml', 'pyproject.toml', 'setup.py', '__init__.py', 'asap.py', 'asap_ctx_workflow.ipynb', 'asap_hirise_workflow.ipynb', 'asap_hirise_workflow_hiproc.ipynb', 'asap_hirise_workflow_nomap.ipynb', 'stereo_quality.py']",['f2d216dd8ea0de2b18149f6ebb414cea36c1eb61'],128,183,311,15,0.0,1.0,0.0
+e81da4becfe99d7d1c0a80504aa5c42b626f735e,fix geodiff to always return floats in dict,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-02-08 09:55:42-08:00,28800,2023-02-08 09:55:42-08:00,28800,True,False,['asap.py'],['9757e0b3ce58245761001e1be70ea83c9a910657'],0,8,8,1,0.0,0.0,0.0
+c05d94b4737a4e3ec445d9afc40a351b88cb6a69,make action run on push to main,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-02-08 10:10:45-08:00,28800,2023-02-08 10:10:45-08:00,28800,True,False,['ci-test-ctx.yml'],['e81da4becfe99d7d1c0a80504aa5c42b626f735e'],1,5,6,1,,,
+962e5d15b8b5d96bc583120a63ed83845bd4d4fd,updated docs a bit to reflect new version coming and update install docs (#36),Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-03-22 14:49:44-07:00,25200,2023-03-22 14:49:44-07:00,25200,True,False,"['conf.py', 'install.rst', '__init__.py']",['c05d94b4737a4e3ec445d9afc40a351b88cb6a69'],19,25,44,3,,,
+b617a00e31bc499028b333ee361cccf1e88e0207,v0.3.0 release,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-03-22 15:03:21-07:00,25200,2023-03-22 15:03:21-07:00,25200,True,False,['CHANGELOG.md'],['962e5d15b8b5d96bc583120a63ed83845bd4d4fd'],0,26,26,1,,,
+069f0c8a59e58c9a106d4a76dac186bad7d1e222,"Update asap.py
+
+a weird bug I noticed possibly due to changes in sh.py, should hopefully be safe across versions",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-03-27 13:48:37-07:00,25200,2023-03-27 13:48:37-07:00,25200,True,False,['asap.py'],['b617a00e31bc499028b333ee361cccf1e88e0207'],0,1,1,1,1.0,1.0,1.0
+68b754ed13d677f252ec92e9eee0c38b163dde15,"fix for bundle adjust, weird I fixed this before",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-06 22:30:58-07:00,25200,2023-05-06 22:30:58-07:00,25200,True,False,['asap.py'],['069f0c8a59e58c9a106d4a76dac186bad7d1e222'],1,1,2,1,,,
+3a169a155e294934573c20dfc027edb362170252,"switch to pvl, still not sure why my builds were fine a few weeks ago",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-06 23:02:06-07:00,25200,2023-05-06 23:02:06-07:00,25200,True,False,['asap.py'],['68b754ed13d677f252ec92e9eee0c38b163dde15'],9,8,17,1,0.0,0.0,0.0
+52c7d040640af18c91db2f79e95d90e4a17f2cd5,okay fixing pba to fist check the supported params in the docs,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-06 23:12:51-07:00,25200,2023-05-06 23:12:51-07:00,25200,True,False,['asap.py'],['3a169a155e294934573c20dfc027edb362170252'],1,7,8,1,0.0,1.0,1.0
+7c19d7f75e9b6c5314977a87180c1bf83d12bea5,converting quantities to floats,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-06 23:22:44-07:00,25200,2023-05-06 23:22:44-07:00,25200,True,False,['asap.py'],['52c7d040640af18c91db2f79e95d90e4a17f2cd5'],1,1,2,1,,,
+18727089a5f23609213f11232a35c0a593581260,silly issues not appearing locally,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-06 23:44:52-07:00,25200,2023-05-06 23:44:52-07:00,25200,True,False,['asap.py'],['7c19d7f75e9b6c5314977a87180c1bf83d12bea5'],1,1,2,1,,,
+c884a0e7a6b08de2aa6755b3b2b9ada7bba23561,"trying to fix stripping uneeded chars from sh output, very brittle",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-07 00:13:15-07:00,25200,2023-05-07 00:13:15-07:00,25200,True,False,['asap.py'],['18727089a5f23609213f11232a35c0a593581260'],1,1,2,1,,,
+6ef614d07dfdf01fd1c6987dd21791e041fed194,camrange silently adds a .txt extension to the to field at least as far as I can tell from reading the repo and behavior from 7.0.0,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-07 00:52:15-07:00,25200,2023-05-07 00:52:15-07:00,25200,True,False,['asap.py'],['c884a0e7a6b08de2aa6755b3b2b9ada7bba23561'],6,4,10,1,1.0,0.0,0.0
+125a2848307a0d563040aab4549e3a94910060e7,missed a thing,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-07 00:53:03-07:00,25200,2023-05-07 00:53:03-07:00,25200,True,False,['asap.py'],['6ef614d07dfdf01fd1c6987dd21791e041fed194'],1,1,2,1,,,
+25d2491bb960f9be079307623f4cd78192dd6ee8,fix for sh py,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-07 09:43:46-07:00,25200,2023-05-07 09:43:46-07:00,25200,True,False,['asap.py'],['125a2848307a0d563040aab4549e3a94910060e7'],1,1,2,1,,,
+45d353f60016ce432b46be645d666cd3ccd47d47,"## [0.3.1] - 2023-05-07
+Bugfix release for dependency updates
+
+## Changed
+- sh version now required to be newer than or equal to 2.0.0
+
+### Fixed
+- thread parameter for parallel_bundle_adjust, now checks the help to use an available parameter name 
+- changes in sh py 2.0.0 that affected camrange parsing, now using pvl only",Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-07 10:31:25-07:00,25200,2023-05-07 10:31:25-07:00,25200,True,False,"['CHANGELOG.md', 'asap.yml', 'conf.py', 'install.rst', 'pyproject.toml', 'requirements.txt', '__init__.py', 'asap.py']",['25d2491bb960f9be079307623f4cd78192dd6ee8'],22,24,46,8,0.0,0.0,0.0
+d2409e962344ae0263a05df28d52bf413355ec2b,possibly ran into a conda package list cache issue,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-07 10:39:03-07:00,25200,2023-05-07 10:39:03-07:00,25200,True,False,['ci-test-ctx.yml'],['45d353f60016ce432b46be645d666cd3ccd47d47'],0,1,1,1,,,
+5590a217e55bb9ed0b5acc011e5be99184e4d4cb,updating tar bz2 to false as index falls behind,Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-05-07 11:08:11-07:00,25200,2023-05-07 11:08:11-07:00,25200,True,False,['ci-test-ctx.yml'],['d2409e962344ae0263a05df28d52bf413355ec2b'],1,1,2,1,,,
+ccbcfc2359f377ccc23c9741f30a296fd00a99b0,"update asp to 3.3.0 (#37)
+
+* update asp to 3.3.0
+* updated moody",Dr. Andrew Annex,ama6fy@virginia.edu,GitHub,noreply@github.com,2023-08-22 15:48:17-07:00,25200,2023-08-22 15:48:17-07:00,25200,True,False,"['ci-test-ctx.yml', 'README.rst', 'asap.yml']",['5590a217e55bb9ed0b5acc011e5be99184e4d4cb'],11,6,17,3,,,

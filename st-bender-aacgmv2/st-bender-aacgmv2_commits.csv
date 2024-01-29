@@ -1,0 +1,657 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+523e8b1d7aa58de6e7dd4c6967b049d90c986c4e,project skeleton,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-21 14:32:57+02:00,-7200,2015-09-21 14:32:57+02:00,-7200,True,False,"['.bumpversion.cfg', '.cookiecutterrc', '.coveragerc', '.gitignore', '.travis.yml', 'AUTHORS.rst', 'CHANGELOG.rst', 'CONTRIBUTING.rst', 'LICENSE', 'MANIFEST.in', 'README.rst', 'appveyor.yml', 'appveyor-bootstrap.py', 'appveyor-download.py', 'appveyor-with-compiler.cmd', 'bootstrap.py', '.travis.yml', 'appveyor.yml', 'tox.ini', 'authors.rst', 'changelog.rst', 'conf.py', 'contributing.rst', 'index.rst', 'installation.rst', 'readme.rst', 'aacgmv2.rst', 'index.rst', 'requirements.txt', 'spelling_wordlist.txt', 'usage.rst', 'setup.cfg', 'setup.py', '__init__.py', 'test_aacgmv2.py', 'tox.ini']",[],0,1619,1619,36,0.6198347107438017,0.8099173553719008,0.7107438016528925
+4b5133ef92611d7793d814094f31d1a95e8988fb,change some project skeleton things,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-21 14:46:49+02:00,-7200,2015-09-21 14:46:49+02:00,-7200,True,False,"['AUTHORS.rst', 'CHANGELOG.rst', 'LICENSE']",['523e8b1d7aa58de6e7dd4c6967b049d90c986c4e'],17,19,36,3,,,
+1cfe0d2d737517299460dc684d5ed64a5bbec56c,add source,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 10:03:58+02:00,-7200,2015-09-24 10:03:58+02:00,-7200,True,False,"['aacgm_coeffs-12-1900.asc', 'aacgm_coeffs-12-1905.asc', 'aacgm_coeffs-12-1910.asc', 'aacgm_coeffs-12-1915.asc', 'aacgm_coeffs-12-1920.asc', 'aacgm_coeffs-12-1925.asc', 'aacgm_coeffs-12-1930.asc', 'aacgm_coeffs-12-1935.asc', 'aacgm_coeffs-12-1940.asc', 'aacgm_coeffs-12-1945.asc', 'aacgm_coeffs-12-1950.asc', 'aacgm_coeffs-12-1955.asc', 'aacgm_coeffs-12-1960.asc', 'aacgm_coeffs-12-1965.asc', 'aacgm_coeffs-12-1970.asc', 'aacgm_coeffs-12-1975.asc', 'aacgm_coeffs-12-1980.asc', 'aacgm_coeffs-12-1985.asc', 'aacgm_coeffs-12-1990.asc', 'aacgm_coeffs-12-1995.asc', 'aacgm_coeffs-12-2000.asc', 'aacgm_coeffs-12-2005.asc', 'aacgm_coeffs-12-2010.asc', 'aacgm_coeffs-12-2015.asc', 'aacgm_coeffs-12-2020.asc', 'aacgmv2_interface.c', 'README.txt', 'aacgmlib_v2.c', 'aacgmlib_v2.h', 'genmag.c', 'genmag.h', 'igrf12coeffs.txt', 'igrflib.c', 'igrflib.h', 'test_aacgm.c']",['4b5133ef92611d7793d814094f31d1a95e8988fb'],0,19636,19636,35,0.11365260900643316,0.42030021443888493,0.5268048606147248
+40d37673b9593edcdc979f561ffcadc452caf2a3,update testing parameters,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 10:06:35+02:00,-7200,2015-09-24 10:06:35+02:00,-7200,True,False,"['.travis.yml', 'setup.cfg', 'tox.ini']",['1cfe0d2d737517299460dc684d5ed64a5bbec56c'],22,0,22,3,,,
+0f29e1006f17da74acf5097bc11d8d12ef51fe90,add basic test,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 10:06:44+02:00,-7200,2015-09-24 10:06:44+02:00,-7200,True,False,['test_aacgmv2.py'],['40d37673b9593edcdc979f561ffcadc452caf2a3'],1,3,4,1,1.0,1.0,1.0
+fb7e1e518bd0aad06428ee49cc3c9499f8d89666,update license and installation script,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 10:07:08+02:00,-7200,2015-09-24 10:07:08+02:00,-7200,True,False,['setup.py'],['0f29e1006f17da74acf5097bc11d8d12ef51fe90'],10,4,14,1,,,
+07b114b6800ce17560bdf06409e1dc0fd643f5ba,make AppVeyor use MinGW compiler,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 10:13:44+02:00,-7200,2015-09-24 10:13:44+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['fb7e1e518bd0aad06428ee49cc3c9499f8d89666'],0,4,4,2,,,
+6ab25f03258d25802de7712fa159f1c5400071ec,try cygwin compiler on appveyor,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 10:25:47+02:00,-7200,2015-09-24 10:25:47+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['07b114b6800ce17560bdf06409e1dc0fd643f5ba'],2,2,4,2,,,
+7ccb999a9f21f744698c0cc3887eea28ee45d141,try msvc compiler on appveyor,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 10:30:02+02:00,-7200,2015-09-24 10:30:02+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['6ab25f03258d25802de7712fa159f1c5400071ec'],2,2,4,2,,,
+059f03d250dd2fac51782df79fc90c60e24a407c,appveyor revert to mingw32 and add mingw bin dir to path,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 10:36:10+02:00,-7200,2015-09-24 10:36:10+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['7ccb999a9f21f744698c0cc3887eea28ee45d141'],2,6,8,2,,,
+d0ec3b5bb21ed5305ab4f356351bc99baa91809e,remove 2.6 testing,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 10:40:47+02:00,-7200,2015-09-24 10:40:47+02:00,-7200,True,False,"['.travis.yml', 'appveyor.yml', 'setup.cfg', 'tox.ini']",['059f03d250dd2fac51782df79fc90c60e24a407c'],46,0,46,4,,,
+f942f755b39f0d7627e42927137fe6398ba82250,make libpython on appveyor,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 11:06:54+02:00,-7200,2015-09-24 11:06:54+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['d0ec3b5bb21ed5305ab4f356351bc99baa91809e'],0,60,60,2,,,
+4b6d5ddf614d11b3b65a693817084f09da8a41c6,appveyor install gendef,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 11:11:26+02:00,-7200,2015-09-24 11:11:26+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['f942f755b39f0d7627e42927137fe6398ba82250'],0,2,2,2,,,
+3501ac2a4fd93a503dce9c8559810f2bb281f9c9,forgot path to python dll,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 11:15:06+02:00,-7200,2015-09-24 11:15:06+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['4b6d5ddf614d11b3b65a693817084f09da8a41c6'],2,2,4,2,,,
+dffdbd656bb5aeecdab90b695fa603915fefba92,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 11:21:48+02:00,-7200,2015-09-24 11:21:48+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['3501ac2a4fd93a503dce9c8559810f2bb281f9c9'],4,4,8,2,,,
+ae64d3a432efcddea14515b93f4afa45c1903a38,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 11:51:13+02:00,-7200,2015-09-24 11:51:13+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['dffdbd656bb5aeecdab90b695fa603915fefba92'],26,22,48,2,,,
+f94bad522f6dfeff06129e455f75dc3ddfc15f9e,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 11:56:21+02:00,-7200,2015-09-24 11:56:21+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['ae64d3a432efcddea14515b93f4afa45c1903a38'],2,6,8,2,,,
+a5559e642c84943f73e335aa6480cd671b5de4f7,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 11:59:30+02:00,-7200,2015-09-24 11:59:30+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['f94bad522f6dfeff06129e455f75dc3ddfc15f9e'],22,18,40,2,,,
+72679782f063b737a278fe48fcaf941fb2e2b949,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 12:02:23+02:00,-7200,2015-09-24 12:02:23+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['a5559e642c84943f73e335aa6480cd671b5de4f7'],18,18,36,2,,,
+7e3e645d457a4a12fd446b3d35a0578cccf7cc03,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 12:10:37+02:00,-7200,2015-09-24 12:10:37+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['72679782f063b737a278fe48fcaf941fb2e2b949'],22,28,50,2,,,
+e5e812abcdc9aa4ad80f619754d7167e02d515b3,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 12:14:47+02:00,-7200,2015-09-24 12:14:47+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['7e3e645d457a4a12fd446b3d35a0578cccf7cc03'],0,6,6,2,,,
+e6e3973cdd254cbcbac1591c741fcd1c0f47b839,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 12:16:39+02:00,-7200,2015-09-24 12:16:39+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['e5e812abcdc9aa4ad80f619754d7167e02d515b3'],2,2,4,2,,,
+07635748a4d57a39c4b10b0591fa6ead7756e394,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 12:39:40+02:00,-7200,2015-09-24 12:39:40+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['e6e3973cdd254cbcbac1591c741fcd1c0f47b839'],16,16,32,2,,,
+7869f418ed5855b2ae970c60b4c8dbcee48484ce,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 12:49:15+02:00,-7200,2015-09-24 12:49:15+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['07635748a4d57a39c4b10b0591fa6ead7756e394'],2,2,4,2,,,
+3cfc5e6545db13cd0273103584b14e89fac83bff,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 12:56:45+02:00,-7200,2015-09-24 12:56:45+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['7869f418ed5855b2ae970c60b4c8dbcee48484ce'],18,12,30,2,,,
+0074727b79679de0f227f3fd424c73995340b363,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 12:58:08+02:00,-7200,2015-09-24 12:58:08+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['3cfc5e6545db13cd0273103584b14e89fac83bff'],2,0,2,2,,,
+0b0b1ccff032b27b22385ebdae1bb7b5b626c3db,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 12:59:15+02:00,-7200,2015-09-24 12:59:15+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['0074727b79679de0f227f3fd424c73995340b363'],2,2,4,2,,,
+3c6dde7e095edd649c6825d15581a4cfb2a7266d,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 13:07:47+02:00,-7200,2015-09-24 13:07:47+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['0b0b1ccff032b27b22385ebdae1bb7b5b626c3db'],2,20,22,2,,,
+546dee6e85b73f4c427be3403319cb2913748b37,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 13:19:43+02:00,-7200,2015-09-24 13:19:43+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['3c6dde7e095edd649c6825d15581a4cfb2a7266d'],18,18,36,2,,,
+a04c17596102f0cadc46730032495f8dfb48b7f7,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 13:22:04+02:00,-7200,2015-09-24 13:22:04+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['546dee6e85b73f4c427be3403319cb2913748b37'],20,2,22,2,,,
+04d013f841e3c4b8616a46ade0f2a15461968d60,appveyor debug,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 13:45:24+02:00,-7200,2015-09-24 13:45:24+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['a04c17596102f0cadc46730032495f8dfb48b7f7'],0,2,2,2,,,
+da46bbd2e6b9a6d28319a32936391b6cc64522a4,"appveyor revert all mingw stuff, use default compiler",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 14:53:22+02:00,-7200,2015-09-24 14:53:22+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['04d013f841e3c4b8616a46ade0f2a15461968d60'],72,0,72,2,,,
+2c99990b2a91d4490068cfb615690326fbb05377,update C code to work with msvc compiler,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 14:53:48+02:00,-7200,2015-09-24 14:53:48+02:00,-7200,True,False,"['aacgmlib_v2.c', 'igrflib.c']",['da46bbd2e6b9a6d28319a32936391b6cc64522a4'],45,61,106,2,,,
+71f893bec523d85549c65d2b741f69437548b90f,make wrapper compatible with python 3,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-24 15:45:57+02:00,-7200,2015-09-24 15:45:57+02:00,-7200,True,False,['aacgmv2_interface.c'],['2c99990b2a91d4490068cfb615690326fbb05377'],10,17,27,1,1.0,1.0,1.0
+17c16c6983317220bc575566fd24871eb1ba6e7d,update codacy badge,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-25 11:20:13+02:00,-7200,2015-09-25 11:20:13+02:00,-7200,True,False,['README.rst'],['71f893bec523d85549c65d2b741f69437548b90f'],1,1,2,1,,,
+344374d155710a81afb558143dcf7cab4fbf03a7,repackage,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-28 11:50:36+02:00,-7200,2015-09-28 11:50:36+02:00,-7200,True,False,"['setup.py', '__init__.py', 'aacgmv2_interface.c', 'aacgmv2module.c', 'README.txt', 'aacgmlib_v2.c', 'aacgmlib_v2.h', 'genmag.c', 'genmag.h', 'igrf12coeffs.txt', 'igrflib.c', 'igrflib.h', 'test_aacgm.c', 'test_aacgmv2.py']",['17c16c6983317220bc575566fd24871eb1ba6e7d'],88,119,207,14,0.0,1.0,1.0
+d49cea5cff318fb1d22ed8c8eafa389938a3d21a,correct code style stuff,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-28 12:13:43+02:00,-7200,2015-09-28 12:13:43+02:00,-7200,True,False,['__init__.py'],['344374d155710a81afb558143dcf7cab4fbf03a7'],1,4,5,1,,,
+18fe3e320de84747bbf6ac19d80b2e5c9804dec3,write more tests,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-28 13:58:20+02:00,-7200,2015-09-28 13:58:20+02:00,-7200,True,False,"['__init__.py', 'test_aacgmv2.py']",['d49cea5cff318fb1d22ed8c8eafa389938a3d21a'],6,84,90,2,1.0,1.0,1.0
+903d836da20b5e8898ae07ff7ae811573c4d3eb1,get IGRF coefficients from environment variable in C library,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 09:45:51+02:00,-7200,2015-09-29 09:45:51+02:00,-7200,True,False,['igrflib.c'],['18fe3e320de84747bbf6ac19d80b2e5c9804dec3'],4,19,23,1,0.0,1.0,0.5
+6722f17373e076e14124268052bbd7fb814e799e,update package and __init__.py to get IGRF-12 coefficients from envvar,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 09:46:51+02:00,-7200,2015-09-29 09:46:51+02:00,-7200,True,False,"['setup.py', '__init__.py', 'igrf12coeffs.txt']",['903d836da20b5e8898ae07ff7ae811573c4d3eb1'],4,204,208,3,1.0,1.0,1.0
+6d312629dad6189e7a2facccb3abaf8d59a412cb,minor changes to code style,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 09:52:15+02:00,-7200,2015-09-29 09:52:15+02:00,-7200,True,False,['__init__.py'],['6722f17373e076e14124268052bbd7fb814e799e'],1,3,4,1,,,
+c67231f26255db48ad5439c5fb46dfee06747df4,fix bug in C library where IGRF coefficients would not change when changing date,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 10:59:20+02:00,-7200,2015-09-29 10:59:20+02:00,-7200,True,False,['igrflib.c'],['6d312629dad6189e7a2facccb3abaf8d59a412cb'],2,2,4,1,,0.0,
+26ee5d87d1a116fa9a729d40894a48bdb998efb2,test changing dates,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 11:00:00+02:00,-7200,2015-09-29 11:00:00+02:00,-7200,True,False,['test_aacgmv2.py'],['c67231f26255db48ad5439c5fb46dfee06747df4'],17,21,38,1,1.0,1.0,1.0
+979bc4e23e1df44886524ca7efdbafc6aa5f7e71,"use abs() in tests, change some test funcion names",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 11:48:44+02:00,-7200,2015-09-29 11:48:44+02:00,-7200,True,False,['test_aacgmv2.py'],['26ee5d87d1a116fa9a729d40894a48bdb998efb2'],20,20,40,1,,,
+b6c372f72440b039067d93034fbedc6b621c6d87,add more tests,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 11:49:10+02:00,-7200,2015-09-29 11:49:10+02:00,-7200,True,False,['test_aacgmv2.py'],['979bc4e23e1df44886524ca7efdbafc6aa5f7e71'],0,81,81,1,1.0,1.0,1.0
+efae2f429198aac5390c42c374e38e6f79639240,"show error code in error messages, set extension docstring to NULL",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 11:49:58+02:00,-7200,2015-09-29 11:49:58+02:00,-7200,True,False,['aacgmv2module.c'],['b6c372f72440b039067d93034fbedc6b621c6d87'],3,3,6,1,,,
+99ee7f0c300db09a05a1fbee675c68fbaf77e623,rename test file,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 11:51:05+02:00,-7200,2015-09-29 11:51:05+02:00,-7200,True,False,['test_c_aacgmv2.py'],['efae2f429198aac5390c42c374e38e6f79639240'],0,0,0,1,,,
+c7510216f38b805418998ad7106e9a3645779027,fix bug in a previous commit,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 15:48:13+02:00,-7200,2015-09-29 15:48:13+02:00,-7200,True,False,['igrflib.c'],['99ee7f0c300db09a05a1fbee675c68fbaf77e623'],6,6,12,1,,,
+f0a9c70f69710c98e955b51b2ba25cac099efda6,switch testing to numpy,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 15:49:21+02:00,-7200,2015-09-29 15:49:21+02:00,-7200,True,False,"['setup.py', 'test_c_aacgmv2.py']",['c7510216f38b805418998ad7106e9a3645779027'],62,32,94,2,,,
+5bff952a56d316857f50e628eaa891cf567e60fc,add numpydoc to docs requirements,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 15:49:33+02:00,-7200,2015-09-29 15:49:33+02:00,-7200,True,False,['conf.py'],['f0a9c70f69710c98e955b51b2ba25cac099efda6'],1,2,3,1,,,
+ab8b7a47033e924a9ac26c3eac60838fba1aceb6,add python wrapper,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 15:49:44+02:00,-7200,2015-09-29 15:49:44+02:00,-7200,True,False,['wrapper.py'],['5bff952a56d316857f50e628eaa891cf567e60fc'],0,91,91,1,0.0,0.0,0.0
+cb33ac288bb060bb786625ae58aa1ceaabd88c32,constrain lon between -180 and 180,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-09-29 16:01:52+02:00,-7200,2015-09-29 16:01:52+02:00,-7200,True,False,['wrapper.py'],['ab8b7a47033e924a9ac26c3eac60838fba1aceb6'],2,3,5,1,0.0,0.0,0.0
+9d63bfe13d7ac316726dbb32c19e6909a8cff081,test with multiple numpy versions,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-01 15:38:47+02:00,-7200,2015-10-01 15:38:47+02:00,-7200,True,False,"['.travis.yml', 'appveyor.yml', 'setup.cfg', 'tox.ini']",['cb33ac288bb060bb786625ae58aa1ceaabd88c32'],40,250,290,4,,,
+9ad2b1b1d2e43f78b5c17da83f26e1853d65e9cf,update docstring etc.,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-01 15:45:07+02:00,-7200,2015-10-01 15:45:07+02:00,-7200,True,False,"['__init__.py', 'aacgmv2module.c', 'wrapper.py', 'test_c_aacgmv2.py']",['9d63bfe13d7ac316726dbb32c19e6909a8cff081'],23,88,111,4,0.0,0.0,0.0
+352afca27ad398e254637a01b805b18836199e7d,"add MLT calculations, tests for Pythonic wrapper, refactor constants",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-01 15:46:52+02:00,-7200,2015-10-01 15:46:52+02:00,-7200,True,False,"['__init__.py', 'aacgmv2module.c', 'wrapper.py', 'test_c_aacgmv2.py', 'test_py_aacgmv2.py']",['9ad2b1b1d2e43f78b5c17da83f26e1853d65e9cf'],19,414,433,5,0.5550239234449761,1.0,0.7511961722488039
+935068cf7d185c949862ced90b032337353321f7,use python 3.4 as base in travis,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-02 08:51:14+02:00,-7200,2015-10-02 08:51:14+02:00,-7200,True,False,"['.travis.yml', '.travis.yml']",['352afca27ad398e254637a01b805b18836199e7d'],2,2,4,2,,,
+3f60abe3682ff7b23aaf30703270bb35a5465b0e,usedevelop=false in tox,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-02 08:54:32+02:00,-7200,2015-10-02 08:54:32+02:00,-7200,True,False,"['tox.ini', 'tox.ini']",['935068cf7d185c949862ced90b032337353321f7'],9,9,18,2,,,
+3180a43c812bc251159a6455cb1deed390a34192,"revert, remove CFLAGS=-coverage in tox.ini",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-02 08:58:28+02:00,-7200,2015-10-02 08:58:28+02:00,-7200,True,False,"['tox.ini', 'tox.ini']",['3f60abe3682ff7b23aaf30703270bb35a5465b0e'],18,9,27,2,,,
+9676e1bc02381663e7c63fbc9cc4e7180365bbc2,"revert back to Pyhton 3.5 base in Travis
+
+[skip appveyor]",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-02 09:11:56+02:00,-7200,2015-10-02 09:11:56+02:00,-7200,True,False,"['.travis.yml', '.travis.yml']",['3180a43c812bc251159a6455cb1deed390a34192'],2,2,4,2,,,
+2bb8c0655cd6ceabc4ad152a638f5cac384b671b,use CFLAGS=-coverage for this package and not deps,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-02 12:20:00+02:00,-7200,2015-10-02 12:20:00+02:00,-7200,True,False,"['tox.ini', 'setup.py', 'tox.ini']",['9676e1bc02381663e7c63fbc9cc4e7180365bbc2'],0,18,18,3,,,
+419e58376f5c378c6ae48a1dbb6e105a11a6ffd6,minor change to setup.py comment,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-02 13:05:58+02:00,-7200,2015-10-02 13:05:58+02:00,-7200,True,False,['setup.py'],['2bb8c0655cd6ceabc4ad152a638f5cac384b671b'],3,3,6,1,,,
+73398e7ce60beb5ca10c28806a8cd4fe433e91c7,"allow CI failures, add build-only env to AppVeyor for py3.5",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-02 13:39:06+02:00,-7200,2015-10-02 13:39:06+02:00,-7200,True,False,"['.travis.yml', 'appveyor.yml', '.travis.yml', 'appveyor.yml', 'tox.ini', 'tox.ini']",['419e58376f5c378c6ae48a1dbb6e105a11a6ffd6'],2,62,64,6,,,
+61dfa01db46a60c00089bf766d84153c365b8001,remove codecov builds from AppVeyor,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-02 14:00:10+02:00,-7200,2015-10-02 14:00:10+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['73398e7ce60beb5ca10c28806a8cd4fe433e91c7'],93,1,94,2,,,
+a0c68f57369ca08921e2365948c1e28d52977810,add numpydoc to docs requirements,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-02 14:59:13+02:00,-7200,2015-10-02 14:59:13+02:00,-7200,True,False,['requirements.txt'],['61dfa01db46a60c00089bf766d84153c365b8001'],0,1,1,1,,,
+1416c8ad5dfc5c197c2a533838608cdd8ab4206e,update docstring,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-02 15:31:23+02:00,-7200,2015-10-02 15:31:23+02:00,-7200,True,False,['wrapper.py'],['a0c68f57369ca08921e2365948c1e28d52977810'],4,5,9,1,,,
+7db0f9b6e59fea3113f03dad03354b6969983d3c,add test for date vs datetime,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-05 13:29:04+02:00,-7200,2015-10-05 13:29:04+02:00,-7200,True,False,['test_py_aacgmv2.py'],['1416c8ad5dfc5c197c2a533838608cdd8ab4206e'],0,7,7,1,1.0,1.0,1.0
+a41fc6d53541c06b5bd46da3a0494448c6fea449,add CLI,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 12:41:56+02:00,-7200,2015-10-07 12:41:56+02:00,-7200,True,False,"['setup.py', '__main__.py', 'test_cmd_aacgmv2.py', 'test_convert.txt', 'test_convert_mlt.txt', 'test_convert_mlt_single_line.txt', 'test_convert_single_line.txt']",['7db0f9b6e59fea3113f03dad03354b6969983d3c'],1,219,220,7,0.7559055118110236,1.0,1.0
+911a86d64b2a3f1cf1f7201d9cb364e6ec9e4ef7,major add/update documentation,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 12:43:00+02:00,-7200,2015-10-07 12:43:00+02:00,-7200,True,False,"['AUTHORS.rst', 'CONTRIBUTING.rst', 'README.rst', 'installation.rst', 'readme.rst', '_aacgmv2.rst', 'aacgmv2.rst', 'cli.rst', 'index.rst', 'usage.rst', '__init__.py', 'wrapper.py']",['a41fc6d53541c06b5bd46da3a0494448c6fea449'],119,324,443,12,,,
+85777d6e1a610aa807a67df32b572786b115cde7,add MLT tests and doctests,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 12:43:19+02:00,-7200,2015-10-07 12:43:19+02:00,-7200,True,False,"['tox.ini', 'test_py_aacgmv2.py', 'tox.ini']",['911a86d64b2a3f1cf1f7201d9cb364e6ec9e4ef7'],13,22,35,3,1.0,1.0,1.0
+c157e7f8924720ebe1d42fea6a80d57a7494e842,minor cleanup,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 13:07:08+02:00,-7200,2015-10-07 13:07:08+02:00,-7200,True,False,"['README.rst', '__main__.py', 'wrapper.py']",['85777d6e1a610aa807a67df32b572786b115cde7'],14,22,36,3,0.0,1.0,1.0
+6169aa53dd6662ff6b88037bb01690189275b235,"fix numpy test versions, add 1.10",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 13:11:23+02:00,-7200,2015-10-07 13:11:23+02:00,-7200,True,False,"['.travis.yml', 'appveyor.yml', 'appveyor.yml', 'setup.cfg', 'tox.ini']",['c157e7f8924720ebe1d42fea6a80d57a7494e842'],18,169,187,5,,,
+1913860aa2e6ffc09c32e64b29c6e07da2106c6a,add note about testing with numpy 1.10,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 13:26:43+02:00,-7200,2015-10-07 13:26:43+02:00,-7200,True,False,['installation.rst'],['6169aa53dd6662ff6b88037bb01690189275b235'],1,1,2,1,,,
+296207ac3b42b31cb9c4ada8a79e3f4dc0afc41c,remove testing code from testing code,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 13:27:52+02:00,-7200,2015-10-07 13:27:52+02:00,-7200,True,False,['test_cmd_aacgmv2.py'],['1913860aa2e6ffc09c32e64b29c6e07da2106c6a'],2,0,2,1,0.0,0.0,0.0
+9c39944ff480a18064d02939eb37e715650d7580,configure isort,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 13:28:12+02:00,-7200,2015-10-07 13:28:12+02:00,-7200,True,False,['setup.cfg'],['296207ac3b42b31cb9c4ada8a79e3f4dc0afc41c'],1,2,3,1,,,
+483ebb8805119662c2a6fd1f75f2d4ef85dad9c5,run isort,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 13:28:20+02:00,-7200,2015-10-07 13:28:20+02:00,-7200,True,False,"['__main__.py', 'wrapper.py', 'test_c_aacgmv2.py', 'test_cmd_aacgmv2.py', 'test_py_aacgmv2.py']",['9c39944ff480a18064d02939eb37e715650d7580'],17,23,40,5,,,
+f2136c11254ab3d9f5d5bf7c60b501e4a502b71f,Bump version: 0.1.0 → 1.0.0,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 13:31:06+02:00,-7200,2015-10-07 13:31:06+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['483ebb8805119662c2a6fd1f75f2d4ef85dad9c5'],4,7,11,4,,,
+032108c4c244de691fd0ed00de709094120e8915,update changelog,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 13:33:11+02:00,-7200,2015-10-07 13:33:11+02:00,-7200,True,False,['CHANGELOG.rst'],['f2136c11254ab3d9f5d5bf7c60b501e4a502b71f'],2,2,4,1,,,
+230582e46cd210fddb9f47ba05ee3767a85fb7d3,update metadata in setup.py,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 13:41:58+02:00,-7200,2015-10-07 13:41:58+02:00,-7200,True,False,['setup.py'],['032108c4c244de691fd0ed00de709094120e8915'],10,13,23,1,,,
+c9b3382b97abbe719825f36ccb847dc6936c1c7d,"test automatic PyPI upload from AppVeyor
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 14:14:27+02:00,-7200,2015-10-07 14:14:27+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['230582e46cd210fddb9f47ba05ee3767a85fb7d3'],0,2,2,2,,,
+0b34a32636ca8fa5e22516f5a8f25677214b9bd4,"remove nonexistent option from pip call
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 14:18:12+02:00,-7200,2015-10-07 14:18:12+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['c9b3382b97abbe719825f36ccb847dc6936c1c7d'],2,2,4,2,,,
+a5a00efbb6d9f79878ca79f8ee18a1f4f128d75b,"add build-only jobs to AppVeyor
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 14:27:19+02:00,-7200,2015-10-07 14:27:19+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['0b34a32636ca8fa5e22516f5a8f25677214b9bd4'],20,80,100,2,,,
+cf1086c5ed79bf26c504a3b1879808e45c669815,"add build-only jobs to tox.ini
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 14:30:41+02:00,-7200,2015-10-07 14:30:41+02:00,-7200,True,False,"['tox.ini', 'tox.ini']",['a5a00efbb6d9f79878ca79f8ee18a1f4f128d75b'],0,42,42,2,,,
+83db31bd41c50f247bde9fdb572e65eb8c018039,"revine appveyor build process
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 14:46:19+02:00,-7200,2015-10-07 14:46:19+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml', 'tox.ini', 'tox.ini']",['cf1086c5ed79bf26c504a3b1879808e45c669815'],12,12,24,4,,,
+a5251ba387751a68f0e35faca1d9d885734ccf18,"correct appveyor build
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 14:48:45+02:00,-7200,2015-10-07 14:48:45+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['83db31bd41c50f247bde9fdb572e65eb8c018039'],2,2,4,2,,,
+f4a049a5f68478bbb00028dadff24619d5467ee9,"correct appveyor build
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 14:52:22+02:00,-7200,2015-10-07 14:52:22+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml', 'tox.ini', 'tox.ini']",['a5251ba387751a68f0e35faca1d9d885734ccf18'],10,2,12,4,,,
+39a0e2c6d60906df56378d82117a6d307f42bab3,"correct appveyor build
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 14:57:46+02:00,-7200,2015-10-07 14:57:46+02:00,-7200,True,False,"['tox.ini', 'tox.ini']",['f4a049a5f68478bbb00028dadff24619d5467ee9'],8,8,16,2,,,
+5c583b160a1c268a1ac99946e37814eb6a2683c9,"correct appveyor build
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:02:44+02:00,-7200,2015-10-07 15:02:44+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['39a0e2c6d60906df56378d82117a6d307f42bab3'],0,8,8,2,,,
+016c13f730ac95eb7df0ce97443a8d635e1bb1ab,"fix appveyor build
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:12:06+02:00,-7200,2015-10-07 15:12:06+02:00,-7200,True,False,"['tox.ini', 'tox.ini']",['5c583b160a1c268a1ac99946e37814eb6a2683c9'],8,8,16,2,,,
+cafd32793813098c3e2dc3bd12d015de397cc53d,"fix appveyor build
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:16:20+02:00,-7200,2015-10-07 15:16:20+02:00,-7200,True,False,"['tox.ini', 'tox.ini']",['016c13f730ac95eb7df0ce97443a8d635e1bb1ab'],8,8,16,2,,,
+a77e4d375eaae4f507d35039021fb56d9d160549,"fix appveyor build
+
+PYPI_RELEASE",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:25:27+02:00,-7200,2015-10-07 15:25:27+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml', 'tox.ini', 'tox.ini']",['cafd32793813098c3e2dc3bd12d015de397cc53d'],8,24,32,4,,,
+73990c504df8b1034849e3b6f55ab7559ff5d112,appveyor upload wheels on tags,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:29:58+02:00,-7200,2015-10-07 15:29:58+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['a77e4d375eaae4f507d35039021fb56d9d160549'],4,4,8,2,,,
+2674d5edee3de216c317e01615418530ba5ece0c,update changelog,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:31:25+02:00,-7200,2015-10-07 15:31:25+02:00,-7200,True,False,['CHANGELOG.rst'],['73990c504df8b1034849e3b6f55ab7559ff5d112'],0,6,6,1,,,
+edb89902c25b71cff9472e430297bc90be58c749,Bump version: 1.0.0 → 1.0.1,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:31:43+02:00,-7200,2015-10-07 15:31:43+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['2674d5edee3de216c317e01615418530ba5ece0c'],4,4,8,4,,,
+5a338139ef3ee16e89b8821305d48b2b1dd1f64a,fix appveyor build,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:47:33+02:00,-7200,2015-10-07 15:47:33+02:00,-7200,True,False,"['CHANGELOG.rst', 'appveyor.yml', 'appveyor.yml']",['edb89902c25b71cff9472e430297bc90be58c749'],3,3,6,3,,,
+e1e0a3fbe33a0e3896c83a30cdc7e0f91d08771c,Bump version: 1.0.1 → 1.0.2,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:47:42+02:00,-7200,2015-10-07 15:47:42+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['5a338139ef3ee16e89b8821305d48b2b1dd1f64a'],4,4,8,4,,,
+07547dc85d8764c70f5119647a904541f8b6817f,fix appveyor build,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:56:32+02:00,-7200,2015-10-07 15:56:32+02:00,-7200,True,False,"['CHANGELOG.rst', 'appveyor.yml', 'appveyor.yml']",['e1e0a3fbe33a0e3896c83a30cdc7e0f91d08771c'],3,5,8,3,,,
+d2ed96d4d3ed0377609eed6c4fd681bab1e3310e,Bump version: 1.0.2 → 1.0.3,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:56:35+02:00,-7200,2015-10-07 15:56:35+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['07547dc85d8764c70f5119647a904541f8b6817f'],4,4,8,4,,,
+1296f8a56b1b67757e3bed908ba278425c0d452a,fix appveyor build,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:59:38+02:00,-7200,2015-10-07 15:59:38+02:00,-7200,True,False,"['CHANGELOG.rst', 'appveyor.yml']",['d2ed96d4d3ed0377609eed6c4fd681bab1e3310e'],2,2,4,2,,,
+36d38c9bbbf6a2a1e8689445aa04abaf5de032a0,Bump version: 1.0.3 → 1.0.4,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 15:59:41+02:00,-7200,2015-10-07 15:59:41+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['1296f8a56b1b67757e3bed908ba278425c0d452a'],4,4,8,4,,,
+d3873cb42c110043a966b0e9cc8d5f1e923db389,fix appveyor build,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 16:00:31+02:00,-7200,2015-10-07 16:00:31+02:00,-7200,True,False,"['CHANGELOG.rst', 'appveyor.yml', 'appveyor.yml']",['36d38c9bbbf6a2a1e8689445aa04abaf5de032a0'],4,2,6,3,,,
+b59e98defefa903adb5e0a43f7316ffc6acd6a02,Bump version: 1.0.4 → 1.0.5,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-07 16:00:33+02:00,-7200,2015-10-07 16:00:33+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['d3873cb42c110043a966b0e9cc8d5f1e923db389'],4,4,8,4,,,
+d7e46391d7ad319617771811890f527fe1977fd8,fix appveyor build,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 08:00:38+02:00,-7200,2015-10-08 08:00:38+02:00,-7200,True,False,['appveyor.yml'],['b59e98defefa903adb5e0a43f7316ffc6acd6a02'],1,1,2,1,,,
+605db4653324062bfd634e56a4fb093c9d558fd1,Bump version: 1.0.5 → 1.0.6,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 08:00:43+02:00,-7200,2015-10-08 08:00:43+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['d7e46391d7ad319617771811890f527fe1977fd8'],4,4,8,4,,,
+d831d802d7d4fbdbc299e4142be4cb2376354fc9,fix appveyor build,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 08:02:13+02:00,-7200,2015-10-08 08:02:13+02:00,-7200,True,False,"['CHANGELOG.rst', 'appveyor.yml']",['605db4653324062bfd634e56a4fb093c9d558fd1'],2,2,4,2,,,
+d70179f25322f3799e51c91138c9eea79e7ccf90,Bump version: 1.0.6 → 1.0.7,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 08:02:29+02:00,-7200,2015-10-08 08:02:29+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['d831d802d7d4fbdbc299e4142be4cb2376354fc9'],4,4,8,4,,,
+cfba10a2040b6c0be44c81cbdc15a56eb3b5ce5d,add config for codeclimate and landscape,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 09:20:17+02:00,-7200,2015-10-08 09:20:17+02:00,-7200,True,False,"['.codeclimate.yml', '.landscape.yaml']",['d70179f25322f3799e51c91138c9eea79e7ccf90'],0,15,15,2,,,
+d2cd171a652a104a577418a4f7aa483bdbf6dc9b,update badges in readme,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 09:21:17+02:00,-7200,2015-10-08 09:21:17+02:00,-7200,True,False,['README.rst'],['cfba10a2040b6c0be44c81cbdc15a56eb3b5ce5d'],46,50,96,1,,,
+c277edf7f15d72e2cc1eb2efbd1d2f21c728fd74,refine appveyor build process,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 09:21:47+02:00,-7200,2015-10-08 09:21:47+02:00,-7200,True,False,"['CHANGELOG.rst', 'appveyor.yml', 'appveyor.yml', 'tox.ini', 'tox.ini']",['d2cd171a652a104a577418a4f7aa483bdbf6dc9b'],12,22,34,5,,,
+70412a118295b47b199975b70e6ccb3df0a48af6,Bump version: 1.0.7 → 1.0.8,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 09:21:59+02:00,-7200,2015-10-08 09:21:59+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['c277edf7f15d72e2cc1eb2efbd1d2f21c728fd74'],4,4,8,4,,,
+c0c3386b24aa8e264cdb10deda50bfdbae0749a8,refine appveyor build process,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 09:27:42+02:00,-7200,2015-10-08 09:27:42+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['70412a118295b47b199975b70e6ccb3df0a48af6'],2,2,4,2,,,
+299c9af6835093bc9896055ad2414386bf2ea070,update changelog,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 09:28:09+02:00,-7200,2015-10-08 09:28:09+02:00,-7200,True,False,['CHANGELOG.rst'],['c0c3386b24aa8e264cdb10deda50bfdbae0749a8'],1,1,2,1,,,
+6633dd1dabf7feb1692336ab28dd030e3a4c9ae6,Bump version: 1.0.8 → 1.0.9,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 09:28:14+02:00,-7200,2015-10-08 09:28:14+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['299c9af6835093bc9896055ad2414386bf2ea070'],4,4,8,4,,,
+7f9cee7e22b2f179675fd3ae89ef116160d1979b,update changelog,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 09:29:01+02:00,-7200,2015-10-08 09:29:01+02:00,-7200,True,False,['CHANGELOG.rst'],['6633dd1dabf7feb1692336ab28dd030e3a4c9ae6'],1,1,2,1,,,
+768dab714c2e482acc59d977bcb856f82f50c433,add missing files to MANIFEST.in,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 09:37:40+02:00,-7200,2015-10-08 09:37:40+02:00,-7200,True,False,['MANIFEST.in'],['7f9cee7e22b2f179675fd3ae89ef116160d1979b'],1,1,2,1,,,
+660c8305cc3058332d75925709c84d9d65f06e74,update docs,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-08 10:00:46+02:00,-7200,2015-10-08 10:00:46+02:00,-7200,True,False,"['README.rst', 'index.rst', 'installation.rst', '_aacgmv2.rst', 'aacgmv2.rst', 'usage.rst']",['768dab714c2e482acc59d977bcb856f82f50c433'],27,16,43,6,,,
+6363124729abb3f77d81d6efa0d548d960ed6de4,fix appveyor deployment,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-09 09:11:37+02:00,-7200,2015-10-09 09:11:37+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['660c8305cc3058332d75925709c84d9d65f06e74'],2,2,4,2,,,
+79e0b31df4bcff3444e6070db9a98c589c78709c,update changelog,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-09 09:12:06+02:00,-7200,2015-10-09 09:12:06+02:00,-7200,True,False,['CHANGELOG.rst'],['6363124729abb3f77d81d6efa0d548d960ed6de4'],1,1,2,1,,,
+d5b4046112b3d5b18ca6087c220cb029488b8e0c,Bump version: 1.0.9 → 1.0.10,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-09 09:12:13+02:00,-7200,2015-10-09 09:12:13+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['79e0b31df4bcff3444e6070db9a98c589c78709c'],4,4,8,4,,,
+be36e5faa6e9740556153169af1feb1322f7f54d,fix bug in subsolar/MLT conversion,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-26 12:20:11+01:00,-3600,2015-10-26 12:20:11+01:00,-3600,True,False,"['CHANGELOG.rst', 'README.rst', 'wrapper.py', 'test_cmd_aacgmv2.py', 'test_py_aacgmv2.py']",['d5b4046112b3d5b18ca6087c220cb029488b8e0c'],10,16,26,5,,,
+dfb0e72b981639bc0435ac0e9f32b61bb04ae357,Bump version: 1.0.10 → 1.0.11,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-26 12:20:17+01:00,-3600,2015-10-26 12:20:17+01:00,-3600,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['be36e5faa6e9740556153169af1feb1322f7f54d'],4,4,8,4,,,
+76f8720a5b10f389c96c4431296fb8593c4d604a,return nan in forbidden region instead of throwing exception,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-26 14:38:18+01:00,-3600,2015-10-26 14:38:18+01:00,-3600,True,False,"['CHANGELOG.rst', 'aacgmlib_v2.c', 'test_c_aacgmv2.py', 'test_py_aacgmv2.py']",['dfb0e72b981639bc0435ac0e9f32b61bb04ae357'],3,21,24,4,1.0,1.0,1.0
+302cbf700867d39bb242219dc91d63fa83cd0377,remove unused code,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-26 14:39:07+01:00,-3600,2015-10-26 14:39:07+01:00,-3600,True,False,['wrapper.py'],['76f8720a5b10f389c96c4431296fb8593c4d604a'],2,1,3,1,,,
+26f350c476871ad2027302298cbd1057c5127f69,Bump version: 1.0.11 → 1.0.12,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-26 14:41:24+01:00,-3600,2015-10-26 14:41:24+01:00,-3600,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['302cbf700867d39bb242219dc91d63fa83cd0377'],4,4,8,4,,,
+c67b84b9dc65298d0a9e3eb5edbd3c72a368bc21,correctly convert subsol() lat from geocentric to geodetic,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-29 10:48:53+01:00,-3600,2015-10-29 10:48:53+01:00,-3600,True,False,"['README.rst', 'wrapper.py', 'test_cmd_aacgmv2.py', 'test_py_aacgmv2.py']",['26f350c476871ad2027302298cbd1057c5127f69'],10,31,41,4,0.8,0.8,0.6
+db46a00d38f15ad6e9d1741ddaafb205c929ccca,correct documentation,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-30 09:45:08+01:00,-3600,2015-10-30 09:45:08+01:00,-3600,True,False,['wrapper.py'],['c67b84b9dc65298d0a9e3eb5edbd3c72a368bc21'],5,5,10,1,,,
+478211c6354d288f54abf2ee995db2d35c61d21c,update changelog,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-30 09:48:52+01:00,-3600,2015-10-30 09:48:52+01:00,-3600,True,False,['CHANGELOG.rst'],['db46a00d38f15ad6e9d1741ddaafb205c929ccca'],0,7,7,1,,,
+fad866371c5b66a2901c8e727a16731d22e517b2,Bump version: 1.0.12 → 1.0.13,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-10-30 09:48:57+01:00,-3600,2015-10-30 09:48:57+01:00,-3600,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['478211c6354d288f54abf2ee995db2d35c61d21c'],4,4,8,4,,,
+4ec5dd6697772e8c6bb3b6dcafb07e25d623f7c0,typo in readme,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-11-18 10:48:02+01:00,-3600,2015-11-18 10:48:02+01:00,-3600,True,False,['README.rst'],['fad866371c5b66a2901c8e727a16731d22e517b2'],1,1,2,1,,,
+7638bad06829d7934ee3e7d9ec6e017bde8c6f52,remove title from doc index,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-11-18 11:16:05+01:00,-3600,2015-11-18 11:16:05+01:00,-3600,True,False,['index.rst'],['4ec5dd6697772e8c6bb3b6dcafb07e25d623f7c0'],3,0,3,1,,,
+ab219268a23e30de7c018270a313927ef345a9fd,typo in docs,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-11-18 11:18:47+01:00,-3600,2015-11-18 11:18:47+01:00,-3600,True,False,['usage.rst'],['7638bad06829d7934ee3e7d9ec6e017bde8c6f52'],1,1,2,1,,,
+f7ce38ee6868a5c3ca6e46e2d6a86a1bd9e9f485,re-add heading to index page,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-11-18 11:20:53+01:00,-3600,2015-11-18 11:20:53+01:00,-3600,True,False,['index.rst'],['ab219268a23e30de7c018270a313927ef345a9fd'],1,3,4,1,,,
+07d9999e34f510968004dd47bbab321fc2d0acff,typo in documentation,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-11-18 11:31:02+01:00,-3600,2015-11-18 11:31:02+01:00,-3600,True,False,['usage.rst'],['f7ce38ee6868a5c3ca6e46e2d6a86a1bd9e9f485'],1,1,2,1,,,
+afcc9dadde5a90fcf1ace4415a3419749be33f7d,fix documentation,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2015-11-21 16:44:19+01:00,-3600,2015-11-21 16:44:19+01:00,-3600,True,False,['__main__.py'],['07d9999e34f510968004dd47bbab321fc2d0acff'],1,1,2,1,,,
+59feb1e4b12405c4d781090afd81a7f6e587c18b,"Correct documentation
+
+The old numbers were from before the MLT fix (commit be36e5faa6e9740556153169af1feb1322f7f54d), they weren't discovered because the CLI part of the documentation is not doctested.",Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2016-04-06 20:57:25+02:00,-7200,2016-04-06 20:57:25+02:00,-7200,True,False,['usage.rst'],['afcc9dadde5a90fcf1ace4415a3419749be33f7d'],5,5,10,1,,,
+77717828533d14e7313bd50b3f3bbe2401d2edc9,Changed how MLT is calculated,klaundal,karl.laundal@ift.uib.no,klaundal,karl.laundal@ift.uib.no,2016-05-01 14:10:27+02:00,-7200,2016-05-01 14:10:27+02:00,-7200,True,False,['wrapper.py'],['edbb7a3e1ef062eb56924bf72bcc3c05ed08a1dd'],5,96,101,1,0.0,1.0,0.7567567567567568
+98a9f264b2e463b69669eec3453c80458cde3976,Update readme with link to C library and disclaimer,Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-06-16 13:09:37+02:00,-7200,2016-06-16 13:09:37+02:00,-7200,True,False,['README.rst'],['edbb7a3e1ef062eb56924bf72bcc3c05ed08a1dd'],1,2,3,1,,,
+d6dc0a01390b49bfade8b662fb469d2f5fdff933,changed calculation of MLT so that it is always defined,klaundal,karl.laundal@ift.uib.no,klaundal,karl.laundal@ift.uib.no,2016-06-24 13:38:04+02:00,-7200,2016-06-24 13:38:04+02:00,-7200,True,False,['wrapper.py'],['77717828533d14e7313bd50b3f3bbe2401d2edc9'],1,4,5,1,,,
+d98dfb65f116fe5c6b5230552abbde8b7346d82d,update test results to match new MLT calculation,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2016-06-24 16:04:33+02:00,-7200,2016-06-24 16:04:33+02:00,-7200,True,False,"['README.rst', 'test_cmd_aacgmv2.py', 'test_py_aacgmv2.py']",['452c0a98682bf3460e9c9df5e201ec9a1dd4d5bf'],8,8,16,3,,,
+b91a254edfa8e85e1d0476bcad757faa2518ca82,update documentation for convert_mlt,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2016-10-23 22:49:35+02:00,-7200,2016-10-23 22:49:35+02:00,-7200,True,False,['wrapper.py'],['452c0a98682bf3460e9c9df5e201ec9a1dd4d5bf'],25,21,46,1,,,
+e2e9bb5197915e5226f60c2ecd8397218423652c,update documentation formatting,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2016-10-24 07:07:47+02:00,-7200,2016-10-24 07:07:47+02:00,-7200,True,False,['wrapper.py'],['d98dfb65f116fe5c6b5230552abbde8b7346d82d'],35,19,54,1,,,
+bf6bb12628777c0942d8df8d9fdc24e0a49d73a1,update changelog,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2016-10-24 07:10:58+02:00,-7200,2016-10-24 07:10:58+02:00,-7200,True,False,['CHANGELOG.rst'],['e2e9bb5197915e5226f60c2ecd8397218423652c'],1,6,7,1,,,
+e1336b8a2787bdbf09400ad5ba322f1389fcfaad,"Change cast of years to ndarray
+
+Previous implementation broke unit tests",Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-26 08:44:01+02:00,-7200,2016-10-26 08:44:01+02:00,-7200,True,False,['wrapper.py'],['4d19af9ae775424e4fbf662d18fc0d73c457f475'],1,1,2,1,,,
+2db274f2b79f9bef32de6a9979c630b1d1ef8f89,"Change cast of years to ndarray
+
+Previous implementation broke unit tests",Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-26 08:53:25+02:00,-7200,2016-10-26 08:53:25+02:00,-7200,True,False,[],['e1336b8a2787bdbf09400ad5ba322f1389fcfaad'],0,0,0,0,,,
+3a1cb81e2111aa3aa680b8f19c0b74a364e96d53,"Change cast of years to ndarray
+
+Previous implementation broke unit tests",Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-26 09:19:10+02:00,-7200,2016-10-26 09:19:10+02:00,-7200,True,False,[],['2db274f2b79f9bef32de6a9979c630b1d1ef8f89'],0,0,0,0,,,
+80889d18d3c4473c2b4c9422af286f68cced84dd,Fix ndarray cast,Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-26 09:23:03+02:00,-7200,2016-10-26 09:23:03+02:00,-7200,True,False,['wrapper.py'],['3a1cb81e2111aa3aa680b8f19c0b74a364e96d53'],1,1,2,1,,,
+82f27887712c7efa358961a21b57dd80c24fc6a5,Fix ndarray cast,Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-26 09:34:23+02:00,-7200,2016-10-26 09:34:23+02:00,-7200,True,False,['wrapper.py'],['80889d18d3c4473c2b4c9422af286f68cced84dd'],3,3,6,1,,,
+29ed394b3a3b3873da2885851368050a4d6e424e,Fix doctest result,Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-26 09:39:30+02:00,-7200,2016-10-26 09:39:30+02:00,-7200,True,False,['README.rst'],['82f27887712c7efa358961a21b57dd80c24fc6a5'],1,1,2,1,,,
+77368ee57cee7cd9a64e85f09d631c62e3241f32,Fix unittest result,Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-26 09:40:27+02:00,-7200,2016-10-26 09:40:27+02:00,-7200,True,False,['test_cmd_aacgmv2.py'],['29ed394b3a3b3873da2885851368050a4d6e424e'],2,2,4,1,,,
+f27eb1c56864bb99e1e6492249790c95ceb1b534,Update docs badge,Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-26 10:05:00+02:00,-7200,2016-10-26 10:05:00+02:00,-7200,True,False,['README.rst'],['77368ee57cee7cd9a64e85f09d631c62e3241f32'],1,1,2,1,,,
+6b0f0583eabfe0bfa24dec21805296cb96b51dcd,Move import to top of file,Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-26 10:05:23+02:00,-7200,2016-10-26 10:05:23+02:00,-7200,True,False,['__init__.py'],['f27eb1c56864bb99e1e6492249790c95ceb1b534'],2,1,3,1,,,
+a9ad5984fbcd4b6806ec0c4a428ed40f5ad2dd06,Skip codecov on Travis,Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-26 10:09:15+02:00,-7200,2016-10-26 10:09:15+02:00,-7200,True,False,['.travis.yml'],['6b0f0583eabfe0bfa24dec21805296cb96b51dcd'],12,12,24,1,,,
+a3444dab084bbe0596dc80abe09f1e52068d423c,Disable style check,Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-31 08:12:54+01:00,-3600,2016-10-31 08:12:54+01:00,-3600,True,False,['__init__.py'],['a9ad5984fbcd4b6806ec0c4a428ed40f5ad2dd06'],1,1,2,1,,,
+09fb31801c59315f728384333f3d9eb5ca14db98,"Code style, disable check",Christer van der Meeren,cmeeren@gmail.com,GitHub,noreply@github.com,2016-10-31 09:08:03+01:00,-3600,2016-10-31 09:08:03+01:00,-3600,True,False,['__init__.py'],['a3444dab084bbe0596dc80abe09f1e52068d423c'],2,2,4,1,,,
+6b2ae9a7210d596705350129930d9348c84e0366,update changelog,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2016-11-03 22:23:56+01:00,-3600,2016-11-03 22:23:56+01:00,-3600,True,False,['CHANGELOG.rst'],['09fb31801c59315f728384333f3d9eb5ca14db98'],1,1,2,1,,,
+3ec635ff6737f00520543dc29411d28233f17764,Bump version number,Christer van der Meeren,cmeeren@gmail.com,Christer van der Meeren,cmeeren@gmail.com,2016-11-03 22:32:17+01:00,-3600,2016-11-03 22:32:17+01:00,-3600,True,False,"['.bumpversion.cfg', 'conf.py', 'setup.py', '__init__.py']",['6b2ae9a7210d596705350129930d9348c84e0366'],4,4,8,4,,,
+7356ba6f8bd5a23ee56fd61bb231709646ad84d3,"Update aacgm C library to version 2.4
+
+Not an exact 1-to-1 copy because of mixed space/tab indenting in the
+original source.
+
+Procedure: First, diff'ed ignoring white space changes, then applied and
+fixed some left-over space indents with tabs to match the original
+(version 2.2) indenting.
+
+In some places the code is still indented with two spaces instead of
+tabs. We changed only the lines that were modified and kept the others
+as they were.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-16 15:20:01+01:00,-3600,2018-03-16 15:20:01+01:00,-3600,True,False,"['LICENSE-AstAlg.txt', 'README.txt', 'aacgmlib_v2.c', 'aacgmlib_v2.h', 'astalg.h', 'astalglib.c', 'igrflib.c', 'igrflib.h', 'mlt_v2.c', 'mlt_v2.h', 'release_notes.txt', 'rtime.c', 'rtime.h', 'test_aacgm.c']",['3ec635ff6737f00520543dc29411d28233f17764'],312,1940,2252,14,0.32129277566539927,0.6178707224334601,0.33269961977186313
+9b064a85c97d4e9a184a3f5426bf0378e367e41b,"Update py module setup to v2.4 aacgm sources
+
+Version 2.4 of the aacgm C source brought in some extra files.
+Adds those new files to setup.py to build the python module correctly.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-16 15:29:36+01:00,-3600,2018-03-16 15:29:36+01:00,-3600,True,False,['setup.py'],['7356ba6f8bd5a23ee56fd61bb231709646ad84d3'],1,7,8,1,,,
+6b2f3d3615144f887e0446bee245be652b3a6826,"aacgm: Set new environment variable IGRF_COEFFS
+
+Version 2.4 now uses the environment  variable 'IGRF_COEFFS', so we
+better set that as well. Not sure if we could remove 'IGRF_12_COEFFS'.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-16 15:32:03+01:00,-3600,2018-03-16 15:32:03+01:00,-3600,True,False,['__init__.py'],['9b064a85c97d4e9a184a3f5426bf0378e367e41b'],0,1,1,1,1.0,1.0,1.0
+28a30566d1be984962ca0139a965076c9c498701,"aacgm: Fix command line file output
+
+Just passing argparse.FileType() resulted in empty output files when
+used in np.savetxt(). Wrapping it in `with ... as f:` seems to mitigate
+this issue and produces correct output files.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-16 15:35:13+01:00,-3600,2018-03-16 15:35:13+01:00,-3600,True,False,['__main__.py'],['6b2f3d3615144f887e0446bee245be652b3a6826'],2,4,6,1,0.0,1.0,1.0
+596e3da5d2651f6252a0f536756f899b51428055,"Update C submodule tests
+
+Since of at least version 2.4, the returned radius is no longer equal to
+one. Updates the test numbers to reflect that change and uses the
+correct numbers for the tests.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-16 15:38:34+01:00,-3600,2018-03-16 15:38:34+01:00,-3600,True,False,['test_c_aacgmv2.py'],['28a30566d1be984962ca0139a965076c9c498701'],18,17,35,1,0.0,0.0,0.0
+95dfd608c0853f75411e1741a12abd6cd1e81935,"Update py tests
+
+Since of at least version 2.4, the returned radius is no longer equal to
+one. Updates the test numbers to reflect that change and uses the
+correct numbers for the tests for the python module functions.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-16 15:38:34+01:00,-3600,2018-03-16 15:41:04+01:00,-3600,True,False,['test_py_aacgmv2.py'],['596e3da5d2651f6252a0f536756f899b51428055'],13,27,40,1,0.0,1.0,1.0
+9b1bdb3c085edc044353537bb1f2f12a94f4d923,"Fix doctests in README and usage
+
+Reformats the doctest outputs to match the actual outputs.
+The numbers were correct but the slightly different spacing made the
+doctests fail.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 15:15:10+01:00,-3600,2018-03-17 15:15:10+01:00,-3600,True,False,"['README.rst', 'usage.rst']",['95dfd608c0853f75411e1741a12abd6cd1e81935'],7,7,14,2,,,
+87af6a2907021e62e4dc590a3d1f4d46d34653f7,"Fix doctests in README and usage (try #2)
+
+The travis numpy output apparently differs from our local version.
+Tries to fix the output by explicitly setting the numpy printoptions to
+the common(?) lower precision.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 15:15:10+01:00,-3600,2018-03-17 15:35:23+01:00,-3600,True,False,"['README.rst', 'usage.rst']",['9b1bdb3c085edc044353537bb1f2f12a94f4d923'],0,6,6,2,,,
+d87d37ffbb757baf79f1f2b0c53ca97f53640f6d,"Fix doctests in README and usage (try #3)
+
+Moves `set_printoptions` directly before the output.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 15:15:10+01:00,-3600,2018-03-17 16:09:07+01:00,-3600,True,False,['README.rst'],['87af6a2907021e62e4dc590a3d1f4d46d34653f7'],2,3,5,1,,,
+5f1a7db93b1f606ee99caf207f8bee96ec1c63d3,"Fix doctests in README and usage (try #4)
+
+Increases the printoptions precision to match the ""old"" number.
+Updates the outputs to use the higher precision.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 15:15:10+01:00,-3600,2018-03-17 16:18:59+01:00,-3600,True,False,"['README.rst', 'usage.rst']",['d87d37ffbb757baf79f1f2b0c53ca97f53640f6d'],13,12,25,2,,,
+03fd4f29383e7fc5e36038a9645873b6c31c0f8e,"Fix doctests in README and usage (try #5)
+
+Replace the simple variable output by formatted output.
+Should circumvent the compatibility issues with numpy's variable
+formats.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 15:15:10+01:00,-3600,2018-03-17 16:53:39+01:00,-3600,True,False,"['README.rst', 'usage.rst']",['5f1a7db93b1f606ee99caf207f8bee96ec1c63d3'],25,18,43,2,,,
+a1cd13b30c999133364187decfb97b6ec08c31a9,"Fix doctests in README and usage (try #6)
+
+Wraps the variables in `float()` because travis complains about
+
+""Unknown format code 'f' for object of type 'str'""
+
+for whatever reason.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 15:15:10+01:00,-3600,2018-03-17 19:25:49+01:00,-3600,True,False,"['README.rst', 'usage.rst']",['03fd4f29383e7fc5e36038a9645873b6c31c0f8e'],9,9,18,2,,,
+71ecc39f5f8b7871455109dbd8b6f559f7e74d0d,"Return the converted altitude as well
+
+As of version 2.4 of the C aacgm library, the converted altitude
+is supposed to be useful. We promote the returned altitude to the
+python wrapper function so that people can use it if they want to.
+
+Updates the function's inline documentation, the command line interface,
+and the tests (standalone and doctests).",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 20:30:08+01:00,-3600,2018-03-17 20:30:08+01:00,-3600,True,False,"['README.rst', 'usage.rst', '__main__.py', 'wrapper.py', 'test_cmd_aacgmv2.py', 'test_py_aacgmv2.py']",['a1cd13b30c999133364187decfb97b6ec08c31a9'],54,106,160,6,0.5714285714285714,1.0,1.0
+367d59c0c0b978c17ae7016d488b4adc92ca8e89,"Fix file usage in command line interface
+
+We wrapped the output nicely in a `with ... as f:` statement but forgot
+to actually use f in `np.savetxt`.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 20:40:05+01:00,-3600,2018-03-17 20:40:05+01:00,-3600,True,False,['__main__.py'],['71ecc39f5f8b7871455109dbd8b6f559f7e74d0d'],2,2,4,1,,,
+cc515c4401ca31498fb1bcf8633b972c7e9f819e,"CI: Remove python 3.3 testing environments
+
+Travis.ci no longer supports python 3.3.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 22:46:31+01:00,-3600,2018-03-17 22:46:31+01:00,-3600,True,False,"['.travis.yml', 'tox.ini']",['367d59c0c0b978c17ae7016d488b4adc92ca8e89'],75,0,75,2,,,
+17913d01665ab83b60b890c7e27f8280fca7d993,"Fix tox/pytest warning about capturelog
+
+Tox/pytest say that pytest-capturelog made it into the core and we
+shouldn't depend explicitly on it anymore.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 22:52:03+01:00,-3600,2018-03-17 22:52:03+01:00,-3600,True,False,['tox.ini'],['cc515c4401ca31498fb1bcf8633b972c7e9f819e'],1,0,1,1,,,
+6ad77546698616a7a790d311549081db9eb86048,"Silence pytest warning about configuration
+
+Pytest looks now for a ""tool:pytest"" configuration entry instead of
+just ""pytest"".",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-17 22:52:37+01:00,-3600,2018-03-17 22:52:37+01:00,-3600,True,False,['setup.cfg'],['17913d01665ab83b60b890c7e27f8280fca7d993'],1,1,2,1,,,
+9ec081cfd9b4a1850f632c9e4b22456c9d80741f,"CI: Remove pytest-capturelog from tox.ini template
+
+We removed the pytest-capturelog dependence from the generated tox.ini.
+The template is probably a better place for this fix, so that our
+changes are not overwritten when re-generating the configuration files.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-18 11:19:16+01:00,-3600,2018-03-18 11:19:16+01:00,-3600,True,False,['tox.ini'],['6ad77546698616a7a790d311549081db9eb86048'],1,0,1,1,,,
+f198eb22fa6c6dcb2ece559009c3f3e82f97d90b,"CI: Skip codecov in travis template
+
+While removing codecov from the generated config works, changing the
+template will prevent the configuration from being overwritten on
+re-generation.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-18 11:22:23+01:00,-3600,2018-03-18 11:22:23+01:00,-3600,True,False,['.travis.yml'],['9ec081cfd9b4a1850f632c9e4b22456c9d80741f'],1,1,2,1,,,
+a7c5fc2dd9c61fccecbe516b8092de8f448239da,"Remove python 3.3 from setup.cfg matrix
+
+Prevents re-generating the python 3.3 test and build environments.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-18 11:28:16+01:00,-3600,2018-03-18 11:28:16+01:00,-3600,True,False,['setup.cfg'],['f198eb22fa6c6dcb2ece559009c3f3e82f97d90b'],1,0,1,1,,,
+8b4005d27102b9ffddab496cda8bf5e3008510f0,"Remove python 3.3 from appveyor config (generated)
+
+Removing python 3.3 from setup.cfg removed the respective tox
+environment entries from the generated appveyor configuration.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-18 11:31:16+01:00,-3600,2018-03-18 11:31:16+01:00,-3600,True,False,['appveyor.yml'],['a7c5fc2dd9c61fccecbe516b8092de8f448239da'],36,0,36,1,,,
+057b95055c79ef364543956068fdfad35b2ee800,"init: Fix PEP8
+
+Working towards successful flake8 checks.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-18 12:29:06+01:00,-3600,2018-03-18 12:29:06+01:00,-3600,True,False,['__init__.py'],['8b4005d27102b9ffddab496cda8bf5e3008510f0'],0,1,1,1,,,
+6579934b9a4b4abe7eccb8e54f10c4db73bb05a9,"cli: Fix PEP8
+
+Working towards successful flake8 checks.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-18 12:29:06+01:00,-3600,2018-03-18 12:30:14+01:00,-3600,True,False,['__main__.py'],['057b95055c79ef364543956068fdfad35b2ee800'],1,1,2,1,,,
+e7590f14e0d9db22483d5e3a645854c5c1697e53,"setup.cfg: Ignore some flake8 errors
+
+Ignores flake8 errors for successful checks.
+Better ignore those errors than mess with the code too much.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-03-18 12:39:19+01:00,-3600,2018-03-18 12:39:19+01:00,-3600,True,False,['setup.cfg'],['6579934b9a4b4abe7eccb8e54f10c4db73bb05a9'],0,2,2,1,,,
+30da4a46f3cfacc8855e46f8181dcf3085dcbe16,"Try to fix undefined math constants on Windows
+
+M_PI is a POSIX extension which needs _USE_MATH_DEFINES to be defined
+when including <math.h> on Windows. Detected by builds failing on
+AppVeyor, hopefully fixing them.
+
+(Some) References: robotology/QA#81
+https://stackoverflow.com/questions/1727881/how-to-use-the-pi-constant-in-c",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-04-02 20:38:44+02:00,-7200,2018-04-02 20:38:44+02:00,-7200,True,False,['setup.py'],['e7590f14e0d9db22483d5e3a645854c5c1697e53'],0,1,1,1,,,
+e9d05c4ef454477c55aaed510a2d5870d7471381,"MSVC fix: Implement setenv() and unsetenv()
+
+On (AppVeyor's) MSVC, setenv() and unsetenv() are not defined.
+Implements simple versions of those functions, based on AGB's variant,
+slightly updated and re-formatted.
+
+Puts the functions into a separate file to not mess with the original
+code too much. That way, we only have to #include that file in rtime.c
+when we include updates from the original C code.
+
+Uses the solution [1] to properly emulate snprintf() on older
+MSVC platforms.
+
+Reference:
+[1]https://stackoverflow.com/questions/2915672/snprintf-and-visual-studio-2010",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-04-05 21:01:52+02:00,-7200,2018-04-21 17:34:12+02:00,-7200,True,False,"['rtime.c', 'winenv.h']",['30da4a46f3cfacc8855e46f8181dcf3085dcbe16'],0,98,98,2,0.62,0.62,0.38
+a1d0a960e618855bb42092c9d77c7f96c3131798,"MSVC fix: Define isfinite()
+
+On (AppVeyor's) MSVC, isfinite() is not available.
+Defines a macro which compares the value to NAN.
+
+Based on AGB's macro, NAN should be already defined
+when including math.h with _USE_MATH_DEFINES.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-04-05 21:01:52+02:00,-7200,2018-04-21 17:40:37+02:00,-7200,True,False,['mlt_v2.c'],['e9d05c4ef454477c55aaed510a2d5870d7471381'],0,5,5,1,,,
+55e56efffe204381fb314f7eb53090f1f16bf128,"Update package metadata
+
+Updates the authors and e-mail address as well as the github address.
+Working towards a separate package to not confuse it with the original,
+but all authors should be honoured.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-04-21 18:09:10+02:00,-7200,2018-04-21 18:31:32+02:00,-7200,True,False,['setup.py'],['a1d0a960e618855bb42092c9d77c7f96c3131798'],3,3,6,1,,,
+5c62a9db49fa39312e9dd6de8498ee313a00ee57,"Python interface: Only warn and return NaNs
+
+Instead of raising a RuntimeError, only issues a RuntimeWarning and
+return NaNs when the called conversion function returns with an error.
+This prevents `numpy.vectorize` from failing and the user can deal with
+the returned NaNs.
+
+Updates the tests accordingly.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-04-27 16:07:34+02:00,-7200,2018-04-27 16:07:34+02:00,-7200,True,False,"['aacgmv2module.c', 'test_c_aacgmv2.py', 'test_py_aacgmv2.py']",['55e56efffe204381fb314f7eb53090f1f16bf128'],8,10,18,3,0.0,1.0,1.0
+ebb7323c75e48d2a189f9a586ca02b6f42865639,"Update authors list
+
+Adds myself and A. Burrell to the list of authors for correctness.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-05-26 20:29:41+02:00,-7200,2018-05-26 20:29:41+02:00,-7200,True,False,['AUTHORS.rst'],['5c62a9db49fa39312e9dd6de8498ee313a00ee57'],0,2,2,1,,,
+53061938ab08155550146ef7889a37fa8fd08333,"Update author and date in doc configuration
+
+Changes the doc authors to include myself and the previous ones.
+Updates the copyright year to the period 2015--2018.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-05-26 20:30:59+02:00,-7200,2018-05-26 20:34:40+02:00,-7200,True,False,['conf.py'],['ebb7323c75e48d2a189f9a586ca02b6f42865639'],2,2,4,1,,,
+eafc90c24870b5cb221e58c855a48b49772dca7b,"setup: Remove unused `relpath` import
+
+This module was not used.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-05-26 20:38:15+02:00,-7200,2018-05-26 20:38:54+02:00,-7200,True,False,['setup.py'],['53061938ab08155550146ef7889a37fa8fd08333'],1,0,1,1,,,
+b62cff47900f4728fc332aa817a4b0a40f421bc0,"Add codecov to travis config
+
+Adds codecov to travis integration config as suggested by the codecov
+documentation:
+https://github.com/codecov/codecov-python/blob/master/README.md
+
+Changes the template and the generated config.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-05-26 20:54:21+02:00,-7200,2018-05-26 20:58:09+02:00,-7200,True,False,"['.travis.yml', '.travis.yml']",['eafc90c24870b5cb221e58c855a48b49772dca7b'],0,8,8,2,,,
+993ad7f0029b626f38fe53e9791dc1525c33215a,"docs: Fix copyright year typo
+
+We are not yet in the year 20015.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-05-26 21:27:02+02:00,-7200,2018-05-26 21:27:02+02:00,-7200,True,False,['conf.py'],['b62cff47900f4728fc332aa817a4b0a40f421bc0'],1,1,2,1,,,
+125221bd3e05891580d6ed3fcb122cf3435a2066,"Update C version in README
+
+We updated to version 2.4 of the C library but forgot to update the
+README accordingly. The docs should be correct now.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-05-26 21:30:58+02:00,-7200,2018-05-26 21:30:58+02:00,-7200,True,False,['README.rst'],['993ad7f0029b626f38fe53e9791dc1525c33215a'],1,1,2,1,,,
+815a76353a58b73886434675922d49339d4f2d2f,"setup: Remove python 3.3 from supported versions
+
+We didn't support python 3.3 officially for a while now, fixes the
+classifiers to reflect that.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-05-26 21:52:37+02:00,-7200,2018-05-26 21:55:46+02:00,-7200,True,False,['setup.py'],['125221bd3e05891580d6ed3fcb122cf3435a2066'],1,0,1,1,,,
+9ce8dd02e590f02fcedb56b6a516e4f847bc7c8b,"Update changelog
+
+Going to release version 2.3.9 soon, brings the changelog
+up to date. We have less changes than the new ""original"".",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-05-26 21:43:30+02:00,-7200,2018-05-26 21:55:46+02:00,-7200,True,False,['CHANGELOG.rst'],['815a76353a58b73886434675922d49339d4f2d2f'],0,9,9,1,,,
+9b5ee0eefeef1b9d8471f98a31d2cc56f75526c4,"Bump version number
+
+It's been a while since version 2.0.0, so time to update the version
+number. However, we are not yet at 2.4.0.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2018-05-26 21:41:01+02:00,-7200,2018-05-26 22:01:28+02:00,-7200,True,False,"['conf.py', 'setup.py', '__init__.py']",['9ce8dd02e590f02fcedb56b6a516e4f847bc7c8b'],3,3,6,3,,,
+906c05b9619e3cbac5f54c18b01a3229cedf2af0,"Update IGRF coefficients
+
+Updates the IGRF coefficients to v13, and adds the historic data dating
+back to 1590 to keep in touch with the updates in the main package.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:00:57+02:00,-7200,2020-08-05 18:00:57+02:00,-7200,True,False,"['__init__.py', 'igrf13coeffs.txt', 'magmodel_1590-2020.txt']",['9b5ee0eefeef1b9d8471f98a31d2cc56f75526c4'],199,398,597,3,,,
+6cf876d7dc2703f0b38c33d5bf3aee88dc1eb453,"Update AACGM coefficients
+
+Updates the AACGM coefficients to v13, adding historic data dating
+back to 1590 to keep in touch with the updates in the main package.
+
+Removes the v12 data files and updates the import.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:00:57+02:00,-7200,2020-08-05 18:04:00+02:00,-7200,True,False,"['__init__.py', 'aacgm_coeffs-12-1900.asc', 'aacgm_coeffs-12-1905.asc', 'aacgm_coeffs-12-1910.asc', 'aacgm_coeffs-12-1915.asc', 'aacgm_coeffs-12-1920.asc', 'aacgm_coeffs-12-1925.asc', 'aacgm_coeffs-12-1930.asc', 'aacgm_coeffs-12-1935.asc', 'aacgm_coeffs-12-1940.asc', 'aacgm_coeffs-12-1945.asc', 'aacgm_coeffs-12-1950.asc', 'aacgm_coeffs-12-1955.asc', 'aacgm_coeffs-12-1960.asc', 'aacgm_coeffs-12-1965.asc', 'aacgm_coeffs-12-1970.asc', 'aacgm_coeffs-12-1975.asc', 'aacgm_coeffs-12-1980.asc', 'aacgm_coeffs-12-1985.asc', 'aacgm_coeffs-12-1990.asc', 'aacgm_coeffs-12-1995.asc', 'aacgm_coeffs-12-2000.asc', 'aacgm_coeffs-12-2005.asc', 'aacgm_coeffs-12-2010.asc', 'aacgm_coeffs-12-2015.asc', 'aacgm_coeffs-12-2020.asc', 'aacgm_coeffs-13-1590.asc', 'aacgm_coeffs-13-1595.asc', 'aacgm_coeffs-13-1600.asc', 'aacgm_coeffs-13-1605.asc', 'aacgm_coeffs-13-1610.asc', 'aacgm_coeffs-13-1615.asc', 'aacgm_coeffs-13-1620.asc', 'aacgm_coeffs-13-1625.asc', 'aacgm_coeffs-13-1630.asc', 'aacgm_coeffs-13-1635.asc', 'aacgm_coeffs-13-1640.asc', 'aacgm_coeffs-13-1645.asc', 'aacgm_coeffs-13-1650.asc', 'aacgm_coeffs-13-1655.asc', 'aacgm_coeffs-13-1660.asc', 'aacgm_coeffs-13-1665.asc', 'aacgm_coeffs-13-1670.asc', 'aacgm_coeffs-13-1675.asc', 'aacgm_coeffs-13-1680.asc', 'aacgm_coeffs-13-1685.asc', 'aacgm_coeffs-13-1690.asc', 'aacgm_coeffs-13-1695.asc', 'aacgm_coeffs-13-1700.asc', 'aacgm_coeffs-13-1705.asc', 'aacgm_coeffs-13-1710.asc', 'aacgm_coeffs-13-1715.asc', 'aacgm_coeffs-13-1720.asc', 'aacgm_coeffs-13-1725.asc', 'aacgm_coeffs-13-1730.asc', 'aacgm_coeffs-13-1735.asc', 'aacgm_coeffs-13-1740.asc', 'aacgm_coeffs-13-1745.asc', 'aacgm_coeffs-13-1750.asc', 'aacgm_coeffs-13-1755.asc', 'aacgm_coeffs-13-1760.asc', 'aacgm_coeffs-13-1765.asc', 'aacgm_coeffs-13-1770.asc', 'aacgm_coeffs-13-1775.asc', 'aacgm_coeffs-13-1780.asc', 'aacgm_coeffs-13-1785.asc', 'aacgm_coeffs-13-1790.asc', 'aacgm_coeffs-13-1795.asc', 'aacgm_coeffs-13-1800.asc', 'aacgm_coeffs-13-1805.asc', 'aacgm_coeffs-13-1810.asc', 'aacgm_coeffs-13-1815.asc', 'aacgm_coeffs-13-1820.asc', 'aacgm_coeffs-13-1825.asc', 'aacgm_coeffs-13-1830.asc', 'aacgm_coeffs-13-1835.asc', 'aacgm_coeffs-13-1840.asc', 'aacgm_coeffs-13-1845.asc', 'aacgm_coeffs-13-1850.asc', 'aacgm_coeffs-13-1855.asc', 'aacgm_coeffs-13-1860.asc', 'aacgm_coeffs-13-1865.asc', 'aacgm_coeffs-13-1870.asc', 'aacgm_coeffs-13-1875.asc', 'aacgm_coeffs-13-1880.asc', 'aacgm_coeffs-13-1885.asc', 'aacgm_coeffs-13-1890.asc', 'aacgm_coeffs-13-1895.asc', 'aacgm_coeffs-13-1900.asc', 'aacgm_coeffs-13-1905.asc', 'aacgm_coeffs-13-1910.asc', 'aacgm_coeffs-13-1915.asc', 'aacgm_coeffs-13-1920.asc', 'aacgm_coeffs-13-1925.asc', 'aacgm_coeffs-13-1930.asc', 'aacgm_coeffs-13-1935.asc', 'aacgm_coeffs-13-1940.asc', 'aacgm_coeffs-13-1945.asc', 'aacgm_coeffs-13-1950.asc', 'aacgm_coeffs-13-1955.asc', 'aacgm_coeffs-13-1960.asc', 'aacgm_coeffs-13-1965.asc', 'aacgm_coeffs-13-1970.asc', 'aacgm_coeffs-13-1975.asc', 'aacgm_coeffs-13-1980.asc', 'aacgm_coeffs-13-1985.asc', 'aacgm_coeffs-13-1990.asc', 'aacgm_coeffs-13-1995.asc', 'aacgm_coeffs-13-2000.asc', 'aacgm_coeffs-13-2005.asc', 'aacgm_coeffs-13-2010.asc', 'aacgm_coeffs-13-2015.asc', 'aacgm_coeffs-13-2020.asc', 'aacgm_coeffs-13-2025.asc']",['906c05b9619e3cbac5f54c18b01a3229cedf2af0'],15976,56233,72209,114,,,
+47fdfd016da004f583b53867adf0b43af33a16ed,"setup: Fix package data globs
+
+Uses globbing to find the package data to keep future updates small
+since the filenames may change with updates.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:06:02+02:00,-7200,2020-08-05 18:06:02+02:00,-7200,True,False,['setup.py'],['6cf876d7dc2703f0b38c33d5bf3aee88dc1eb453'],1,1,2,1,,,
+b319b2aaef8ed184f543778efea0e7cea32d3d6c,"C: Include upstream changes in C library
+
+Reduces the differences to the upstream version and updates the time
+frame of valid coefficients.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:11:25+02:00,-7200,2020-08-05 18:11:25+02:00,-7200,True,False,"['aacgmlib_v2.c', 'aacgmlib_v2.h', 'igrflib.c', 'igrflib.h', 'mlt_v2.c', 'test_aacgm.c']",['47fdfd016da004f583b53867adf0b43af33a16ed'],42,89,131,6,0.0,0.0,0.3235294117647059
+7a9aeffa05bb9e5fac69149c16f0861fe4e93fbd,"C: Re-indent and whitespace changes
+
+Moves some code to the right place, no functional change.
+
+To keep up with upstream changes.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:13:10+02:00,-7200,2020-08-05 18:16:28+02:00,-7200,True,False,"['aacgmlib_v2.h', 'igrflib.c', 'igrflib.h', 'test_aacgm.c']",['b319b2aaef8ed184f543778efea0e7cea32d3d6c'],16,16,32,4,,,
+a705d65acf6dc891fb623f3a1c360dcbf4a869b8,"C: Remove obsolete coefficient file
+
+It was not in the right place anyway.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:18:05+02:00,-7200,2020-08-05 18:18:05+02:00,-7200,True,False,['igrf12coeffs.txt'],['7a9aeffa05bb9e5fac69149c16f0861fe4e93fbd'],199,0,199,1,,,
+809bffdcc49b42e62aac726be278f43c9d9fc8e9,"C: Update README and release notes
+
+Include updates from upstream.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:19:26+02:00,-7200,2020-08-05 18:19:26+02:00,-7200,True,False,"['README.txt', 'release_notes.txt']",['a705d65acf6dc891fb623f3a1c360dcbf4a869b8'],73,92,165,2,,,
+669e67820d0721ebf7fc3efc0acc461fb5964c19,"tests: Update C-interface test values
+
+The new coefficients changed the outputs slightly, and a lot of tests
+failed. The new numbers are in line with the upstream changes.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:20:10+02:00,-7200,2020-08-05 18:22:19+02:00,-7200,True,False,['test_c_aacgmv2.py'],['809bffdcc49b42e62aac726be278f43c9d9fc8e9'],34,34,68,1,,,
+ad606fa12743a05e8efdd7d35e863ec98e243f7b,"tests: Update cli test values
+
+The new coefficients changed the outputs slightly, and a lot of tests
+failed. The new numbers are in line with the upstream changes.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:20:10+02:00,-7200,2020-08-05 18:22:33+02:00,-7200,True,False,['test_cmd_aacgmv2.py'],['669e67820d0721ebf7fc3efc0acc461fb5964c19'],20,20,40,1,,,
+65235c0045f8c50b42d9ce6f2032578831be577c,"tests: Update more test values
+
+The new coefficients changed the outputs slightly, and a lot of tests
+failed. The new numbers are in line with the upstream changes.
+
+Some changes missed earlier.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:20:10+02:00,-7200,2020-08-05 23:48:42+02:00,-7200,True,False,"['test_cmd_aacgmv2.py', 'test_py_aacgmv2.py']",['ad606fa12743a05e8efdd7d35e863ec98e243f7b'],7,7,14,2,,,
+a1a3750d8d5dd10982ab34bcd36ee68fe20d50d7,"tests: Update doc test values
+
+The new coefficients changed the outputs slightly, and a lot of tests
+failed. The new numbers are in line with the upstream changes.
+
+Fixes the doctests.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 18:20:10+02:00,-7200,2020-08-05 23:49:23+02:00,-7200,True,False,"['README.rst', 'usage.rst']",['65235c0045f8c50b42d9ce6f2032578831be577c'],11,11,22,2,,,
+97687b36a8f1d782dbd9121487fe11d820912905,"py: Use global variable for coefficient file
+
+There is no need to define the coefficient file location again, when it
+is already available from the module.
+The location of the coefficient file is now in one place and set when
+importing the module, using that removes one point of possible failure.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-05 23:49:55+02:00,-7200,2020-08-05 23:49:55+02:00,-7200,True,False,['wrapper.py'],['a1a3750d8d5dd10982ab34bcd36ee68fe20d50d7'],2,1,3,1,,,
+5ff54a18ea8f8e5f9a4b671ac237f4fb0be77ea9,"ci: Update travis builds -- templates [1/3]
+
+Uses a matrix for the individual python versions and for the tox
+environments such that they don't interfere with each other.
+
+Some of the tox commands may fail, prefixed with a hyphen they don't
+render the whole build as failed in those cases.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-07 15:34:56+02:00,-7200,2020-08-07 15:50:55+02:00,-7200,True,False,"['.travis.yml', 'tox.ini']",['97687b36a8f1d782dbd9121487fe11d820912905'],40,18,58,2,,,
+063ae65b412bda5d526d55252d9e5ee18d4dd555,"ci: Update python versions in setup.cfg [2/3]
+
+Increases the python checks up to 3.8.
+
+We probably don't need to check for ancient numpy versions anymore, just
+use the one that's there on the ci machine(s).",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-07 10:34:45+02:00,-7200,2020-08-07 15:50:55+02:00,-7200,True,False,['setup.cfg'],['5ff54a18ea8f8e5f9a4b671ac237f4fb0be77ea9'],3,6,9,1,,,
+7b774206e8cc8b6b1206f5dea8bb1932a3fac81e,"ci: Update generated travis files [3/3]
+
+Updates the files for travis to really run the updated ci setup.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-07 15:40:37+02:00,-7200,2020-08-07 15:50:55+02:00,-7200,True,False,"['.travis.yml', 'tox.ini']",['063ae65b412bda5d526d55252d9e5ee18d4dd555'],182,72,254,2,,,
+0d1a0b1a403d646011c041bb9cd684d1118ba04b,"docs: Require sphinx_rtd_theme
+
+Otherwise the -docs jobs fail with an unavailable module.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-07 10:38:07+02:00,-7200,2020-08-07 16:23:51+02:00,-7200,True,False,['requirements.txt'],['7b774206e8cc8b6b1206f5dea8bb1932a3fac81e'],0,1,1,1,,,
+e43d4b181fd46dc90fa44d2266964a7027884a6b,"ci: Update appveyor builds -- template [1/2]
+
+Increses the python version list on appveyor and removes some old build
+things that are not used anymore.  Some of the tox environments that
+don't exist anymore and only took up job resources.
+
+Updates the setup using some ideas found in the tornado appveyor setup.
+Removes the ""bootstrap"" thing, and without the bootstrap, the \Script
+dir is not populated, but everything should be available normally.
+
+Updates the allowed failures to the new environment setup.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-07 15:34:56+02:00,-7200,2020-08-07 16:23:51+02:00,-7200,True,False,['appveyor.yml'],['0d1a0b1a403d646011c041bb9cd684d1118ba04b'],71,20,91,1,,,
+49612e00d0edd733fb379d190d1d3aa400ee7d17,"ci: Update appveyor build -- generated file [2/2]
+
+Updates the generated file from the changed template.
+Removes some of the old commented left-over stuff.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-07 15:41:46+02:00,-7200,2020-08-07 16:24:37+02:00,-7200,True,False,['appveyor.yml'],['e43d4b181fd46dc90fa44d2266964a7027884a6b'],135,62,197,1,,,
+43c0eb612c7c219974557061e47cc7032409501e,"flake8: Remove unused import
+
+The os module was used to infer the IGRF coefficient file location which
+is now imported from the top level.
+
+Removes that import to make `flake8` happy.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-07 16:59:01+02:00,-7200,2020-08-07 16:59:01+02:00,-7200,True,False,['wrapper.py'],['49612e00d0edd733fb379d190d1d3aa400ee7d17'],1,0,1,1,,,
+587e2059ef96554388f8fed6d24ca9d431eda704,"Update badges
+
+Updates (some of) the badges and links to point to the new locations.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-07 18:28:14+02:00,-7200,2020-08-07 18:41:19+02:00,-7200,True,False,['README.rst'],['43c0eb612c7c219974557061e47cc7032409501e'],14,14,28,1,,,
+5ef5b41019516f211dfdad84ace7052fa4f15fae,"Remove some badges
+
+Some of the analytics are already provided by some of the other
+services and shown by those badges. And sometimes it just doesn't pay
+off to open yet another account just for a badge.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-07 18:46:37+02:00,-7200,2020-08-07 18:46:37+02:00,-7200,True,False,['README.rst'],['587e2059ef96554388f8fed6d24ca9d431eda704'],8,0,8,1,,,
+30316383e57771326def4f02d4bd4b9daf808408,"ci: Enable ""skip ci"" on appveyor
+
+Appveyor is stupid and looks for [skip ci] in the commit title only and
+not in the whole message, so we have to search the message manually and
+exit the builds manually.
+
+References:
+https://github.com/appveyor/ci/issues/1865
+https://github.com/appveyor/ci/issues/1865#issuecomment-423091750",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-07 19:09:14+02:00,-7200,2020-08-07 19:09:14+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['5ef5b41019516f211dfdad84ace7052fa4f15fae'],0,10,10,2,,,
+06f82cc446d4c280ef95108d0af1843580437bbd,"Rename module to avoid name clashes [1/3]
+
+Trying to minimize the impact and the diff to the original sources by
+just renaming the package and the python (main) module.
+
+Seems to be much easier to rename the module directory than setting the
+path explicitly in `setup.py` and seems more compatible with several
+kinds of installation.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-06 10:55:25+02:00,-7200,2020-08-10 14:20:30+02:00,-7200,True,False,"['setup.py', '__init__.py', '__main__.py', 'aacgm_coeffs-13-1590.asc', 'aacgm_coeffs-13-1595.asc', 'aacgm_coeffs-13-1600.asc', 'aacgm_coeffs-13-1605.asc', 'aacgm_coeffs-13-1610.asc', 'aacgm_coeffs-13-1615.asc', 'aacgm_coeffs-13-1620.asc', 'aacgm_coeffs-13-1625.asc', 'aacgm_coeffs-13-1630.asc', 'aacgm_coeffs-13-1635.asc', 'aacgm_coeffs-13-1640.asc', 'aacgm_coeffs-13-1645.asc', 'aacgm_coeffs-13-1650.asc', 'aacgm_coeffs-13-1655.asc', 'aacgm_coeffs-13-1660.asc', 'aacgm_coeffs-13-1665.asc', 'aacgm_coeffs-13-1670.asc', 'aacgm_coeffs-13-1675.asc', 'aacgm_coeffs-13-1680.asc', 'aacgm_coeffs-13-1685.asc', 'aacgm_coeffs-13-1690.asc', 'aacgm_coeffs-13-1695.asc', 'aacgm_coeffs-13-1700.asc', 'aacgm_coeffs-13-1705.asc', 'aacgm_coeffs-13-1710.asc', 'aacgm_coeffs-13-1715.asc', 'aacgm_coeffs-13-1720.asc', 'aacgm_coeffs-13-1725.asc', 'aacgm_coeffs-13-1730.asc', 'aacgm_coeffs-13-1735.asc', 'aacgm_coeffs-13-1740.asc', 'aacgm_coeffs-13-1745.asc', 'aacgm_coeffs-13-1750.asc', 'aacgm_coeffs-13-1755.asc', 'aacgm_coeffs-13-1760.asc', 'aacgm_coeffs-13-1765.asc', 'aacgm_coeffs-13-1770.asc', 'aacgm_coeffs-13-1775.asc', 'aacgm_coeffs-13-1780.asc', 'aacgm_coeffs-13-1785.asc', 'aacgm_coeffs-13-1790.asc', 'aacgm_coeffs-13-1795.asc', 'aacgm_coeffs-13-1800.asc', 'aacgm_coeffs-13-1805.asc', 'aacgm_coeffs-13-1810.asc', 'aacgm_coeffs-13-1815.asc', 'aacgm_coeffs-13-1820.asc', 'aacgm_coeffs-13-1825.asc', 'aacgm_coeffs-13-1830.asc', 'aacgm_coeffs-13-1835.asc', 'aacgm_coeffs-13-1840.asc', 'aacgm_coeffs-13-1845.asc', 'aacgm_coeffs-13-1850.asc', 'aacgm_coeffs-13-1855.asc', 'aacgm_coeffs-13-1860.asc', 'aacgm_coeffs-13-1865.asc', 'aacgm_coeffs-13-1870.asc', 'aacgm_coeffs-13-1875.asc', 'aacgm_coeffs-13-1880.asc', 'aacgm_coeffs-13-1885.asc', 'aacgm_coeffs-13-1890.asc', 'aacgm_coeffs-13-1895.asc', 'aacgm_coeffs-13-1900.asc', 'aacgm_coeffs-13-1905.asc', 'aacgm_coeffs-13-1910.asc', 'aacgm_coeffs-13-1915.asc', 'aacgm_coeffs-13-1920.asc', 'aacgm_coeffs-13-1925.asc', 'aacgm_coeffs-13-1930.asc', 'aacgm_coeffs-13-1935.asc', 'aacgm_coeffs-13-1940.asc', 'aacgm_coeffs-13-1945.asc', 'aacgm_coeffs-13-1950.asc', 'aacgm_coeffs-13-1955.asc', 'aacgm_coeffs-13-1960.asc', 'aacgm_coeffs-13-1965.asc', 'aacgm_coeffs-13-1970.asc', 'aacgm_coeffs-13-1975.asc', 'aacgm_coeffs-13-1980.asc', 'aacgm_coeffs-13-1985.asc', 'aacgm_coeffs-13-1990.asc', 'aacgm_coeffs-13-1995.asc', 'aacgm_coeffs-13-2000.asc', 'aacgm_coeffs-13-2005.asc', 'aacgm_coeffs-13-2010.asc', 'aacgm_coeffs-13-2015.asc', 'aacgm_coeffs-13-2020.asc', 'aacgm_coeffs-13-2025.asc', 'aacgmv2module.c', 'igrf13coeffs.txt', 'magmodel_1590-2020.txt', 'wrapper.py']",['30316383e57771326def4f02d4bd4b9daf808408'],10,10,20,95,,,
+d0886158d8b7207aaf107dec0095b40dca1edebf,"Update tests after module rename [2/3]
+
+Uses the changed module name to make the tests and doctests pass.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-06 10:55:25+02:00,-7200,2020-08-10 14:20:30+02:00,-7200,True,False,"['README.rst', 'usage.rst', 'test_c_aacgmv2.py', 'test_cmd_aacgmv2.py', 'test_py_aacgmv2.py']",['06f82cc446d4c280ef95108d0af1843580437bbd'],22,22,44,5,,,
+91600a9e4813c6643b238771269289469554d152,"Update docs after module rename [3/3]
+
+Uses the changed module name in the documentation and docstrings.
+Rtd still needs to be set up though.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-06 10:55:25+02:00,-7200,2020-08-10 14:20:30+02:00,-7200,True,False,"['README.rst', 'installation.rst', '_aacgmv2.rst', 'aacgmv2.rst', 'cli.rst', 'usage.rst', '__init__.py', '__main__.py', 'wrapper.py']",['d0886158d8b7207aaf107dec0095b40dca1edebf'],25,25,50,9,,,
+df3682109ee4d32e066ff62815dcbcbc8ee06ec9,"README: Update rtd link to renamed package
+
+Points the badge and links to the renamed location.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-10 15:36:49+02:00,-7200,2020-08-10 15:36:49+02:00,-7200,True,False,['README.rst'],['91600a9e4813c6643b238771269289469554d152'],2,2,4,1,,,
+d8157fdd9bcc32dafd4e567852180dbd1d0439db,"docs: Fix typo in module name
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-11 09:45:58+02:00,-7200,2020-08-11 09:45:58+02:00,-7200,True,False,['aacgmv2.rst'],['df3682109ee4d32e066ff62815dcbcbc8ee06ec9'],1,1,2,1,,,
+7f40f1e3f55ef886b5428428f1950dffaddf4a63,"docs: Use package version for docs version
+
+Imports the package version into the docs version instead of manually
+keeping track of updates.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-11 10:09:39+02:00,-7200,2020-08-11 10:09:39+02:00,-7200,True,False,['conf.py'],['d8157fdd9bcc32dafd4e567852180dbd1d0439db'],1,2,3,1,,,
+aadb3106ed86fb3a9a0a0277327a774b4e6137ef,"docs: Update copyright year
+
+There is still some development going on here.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-11 10:12:00+02:00,-7200,2020-08-11 10:12:44+02:00,-7200,True,False,['conf.py'],['7f40f1e3f55ef886b5428428f1950dffaddf4a63'],1,1,2,1,,,
+3c122b0993a454148b65b58d1a3623746fad7e36,"setup: Claim only maintainership
+
+Leaves the original authorship intact and claims only maintainership for
+the package since we don't add too much ourselves.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-11 21:35:11+02:00,-7200,2020-08-11 21:41:54+02:00,-7200,True,False,['setup.py'],['aadb3106ed86fb3a9a0a0277327a774b4e6137ef'],2,4,6,1,,,
+2a0febbe9e11bd4f7721bb218b1de590d8544300,"setup: Update compatible python versions
+
+Completes the list of compatible python versions, 2.7, and all from 3.4
+to 3.8 is supported now.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-11 21:49:36+02:00,-7200,2020-08-11 21:49:36+02:00,-7200,True,False,['setup.py'],['3c122b0993a454148b65b58d1a3623746fad7e36'],0,4,4,1,,,
+9d1cb7d316e4d534ff0682555e7fadc121d9ee42,"Define NAN if not defined
+
+Defines `NAN` if it is not defined to have it available everywhere.
+Helps with building python 3.4 wheels.
+
+Copied from the local `math.h` to use 0.0 / 0.0 for the most compatible
+approach.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-11 14:00:32+02:00,-7200,2020-08-11 21:55:32+02:00,-7200,True,False,['aacgmlib_v2.h'],['2a0febbe9e11bd4f7721bb218b1de590d8544300'],0,5,5,1,,,
+b57d6682fd21580aad8278a00fc1151175ca483a,"ci: Deploy to testpypi -- travis template [1/2]
+
+Adds wheel building and deploying to testpypi to the travis template.
+
+Builds the wheels with cibuildwheel for python 2.7, 3.4 (0.12.0 and
+extra image), and 3.5--3.8 (1.5.5).",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 10:33:35+02:00,-7200,2020-08-12 10:33:35+02:00,-7200,True,False,['.travis.yml'],['9d1cb7d316e4d534ff0682555e7fadc121d9ee42'],0,30,30,1,,,
+63161f38c63c43e7e79970978d4c8317f38814d8,"ci: Deploy to testpypi -- gen travis config [2/2]
+
+Adds wheel building and deploying to testpypi to the travis generated
+configuration.
+
+Builds the wheels with cibuildwheel for python 2.7, 3.4 (0.12.0 and
+extra image), and 3.5--3.8 (1.5.5).",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 10:33:35+02:00,-7200,2020-08-12 10:42:13+02:00,-7200,True,False,['.travis.yml'],['b57d6682fd21580aad8278a00fc1151175ca483a'],0,30,30,1,,,
+125b7adbd5f6b225a8be24e3885f1281cdd6017a,"ci: Deploy osx wheels -- travis template [1/2]
+
+Adds wheel building for osx to the travis template.
+Builds the wheels with cibuildwheel for python 2.7 and 3.5--3.8 (1.5.5).
+
+Includes a setup for windows wheels as well, but twine upload fails.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 10:33:35+02:00,-7200,2020-08-12 10:42:21+02:00,-7200,True,False,['.travis.yml'],['63161f38c63c43e7e79970978d4c8317f38814d8'],0,21,21,1,,,
+589aca7314c93d5649ca6fa8f19b3510725af5e8,"ci: Deploy osx wheels -- gen travis config [2/2]
+
+Adds wheel building for osx to the generated travis config.
+Builds the wheels with cibuildwheel for python 2.7 and 3.5--3.8 (1.5.5).
+
+Includes a setup for windows wheels as well, but twine upload fails.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 10:33:35+02:00,-7200,2020-08-12 10:42:21+02:00,-7200,True,False,['.travis.yml'],['125b7adbd5f6b225a8be24e3885f1281cdd6017a'],0,21,21,1,,,
+28b2b992e0f4f021478849a2a923b4c1144111a6,"readme: Update project badges and links
+
+Now that the renamed package was pushed to pypi, it's time to update the
+badges and links to point to the new (changed) location.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 14:08:00+02:00,-7200,2020-08-12 14:08:00+02:00,-7200,True,False,['README.rst'],['589aca7314c93d5649ca6fa8f19b3510725af5e8'],10,10,20,1,,,
+9eb282a53bc70146553d06998ea810378ab9a0a7,"docs: Fix `scipy` scientific distributions anchor
+
+The anchor to the scientific python distributions seems to have been
+renamed, fixes the docs.
+
+Also fixes ""No newline at end of file"" for interoperability.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 14:13:01+02:00,-7200,2020-08-12 14:15:59+02:00,-7200,True,False,['installation.rst'],['28b2b992e0f4f021478849a2a923b4c1144111a6'],2,2,4,1,,,
+66610246153b686609a54d0daeced06b5805840c,"setup: Update version handling and fix long desc
+
+Uses the regex approach to extract the version number from
+`src/<name>/__init__.py` instead of fixing it here.
+Combines yet another source for it to reduce the chance of mishaps due
+to multiple (possibly different) version numbers in the source code.
+
+Extracts the long_description setting together with the appropriate
+content type since one of the linters was complaining about that.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 16:25:05+02:00,-7200,2020-08-12 16:25:05+02:00,-7200,True,False,['setup.py'],['9eb282a53bc70146553d06998ea810378ab9a0a7'],3,25,28,1,1.0,1.0,1.0
+b3b4363c5745e6a89d4cfaac6a644ee6588953bf,"contribute: Update package name and github links
+
+Updates the package name and the github links to the forked repo.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 17:06:47+02:00,-7200,2020-08-12 17:10:12+02:00,-7200,True,False,['CONTRIBUTING.rst'],['66610246153b686609a54d0daeced06b5805840c'],5,5,10,1,,,
+f1615cc088e5157c1c2afbae46619d1dcee1fe3d,"contribute: Add note about API changes
+
+Adds a note about not to break the public API.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 17:10:24+02:00,-7200,2020-08-12 17:10:24+02:00,-7200,True,False,['CONTRIBUTING.rst'],['b3b4363c5745e6a89d4cfaac6a644ee6588953bf'],0,12,12,1,,,
+8a94abd315578db85da1ef4d2cfe4522e68f35bd,"ci: Deploy tags to pypi -- travis template [1/2]
+
+Adds deploying tagged releases to the main package index.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 17:19:47+02:00,-7200,2020-08-12 17:19:47+02:00,-7200,True,False,['.travis.yml'],['f1615cc088e5157c1c2afbae46619d1dcee1fe3d'],0,12,12,1,,,
+d29fb6c2fcc8975b7592e7249a2182f833dc1320,"ci: Deploy tags to pypi -- gen travis config [2/2]
+
+Adds deploying tagged releases to the main package index.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 17:19:47+02:00,-7200,2020-08-12 17:21:17+02:00,-7200,True,False,['.travis.yml'],['8a94abd315578db85da1ef4d2cfe4522e68f35bd'],0,12,12,1,,,
+f1aa77c45f02ed0a5ce67df0ecfc0a8c858726ed,"readme: Add a link to upstream
+
+Give credit where credit is due.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 18:15:28+02:00,-7200,2020-08-12 18:16:54+02:00,-7200,True,False,['README.rst'],['d29fb6c2fcc8975b7592e7249a2182f833dc1320'],0,4,4,1,,,
+b8328e9d08010f02dc7daf74a5b0ba1fafee88c7,"changes: Update to 2.6.0-rc1
+
+Adds the most notable changes since the last ""release"",
+merged and adapted from upstream.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 17:11:36+02:00,-7200,2020-08-12 18:16:54+02:00,-7200,True,False,['CHANGELOG.rst'],['f1aa77c45f02ed0a5ce67df0ecfc0a8c858726ed'],0,15,15,1,,,
+439a917f4d86c1877fa4ec6b382ac80136d2fbde,"Bump version to release candidate 2.6.0
+
+Preparing the release.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 17:27:25+02:00,-7200,2020-08-12 18:16:54+02:00,-7200,True,False,['__init__.py'],['b8328e9d08010f02dc7daf74a5b0ba1fafee88c7'],1,1,2,1,,,
+1491a25e943146537f460265ddfa5239c501199a,"readme: Update included C version
+
+The C code and coefficients are updated to v2.6.
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-12 18:29:24+02:00,-7200,2020-08-12 18:29:24+02:00,-7200,True,False,['README.rst'],['439a917f4d86c1877fa4ec6b382ac80136d2fbde'],1,1,2,1,,,
+c4b547cb9145905a025426f2c0c2d31d373db89d,"ci: Remove windows from travis builds
+
+That was a try to build and deploy windows wheels on travis.
+But since there are already builds and tests on appveyor, we can expand
+that to also build and upload wheels.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-14 19:20:18+02:00,-7200,2020-08-14 19:20:18+02:00,-7200,True,False,"['.travis.yml', '.travis.yml']",['1491a25e943146537f460265ddfa5239c501199a'],14,0,14,2,,,
+4edda64afb9586598927e1078519a9ee8c88e9e4,"ci: Build and upload windows wheels
+
+Attempts to build wheels on appveyor for upload to pypi
+(tagged releases only).
+
+Updates the template and generated files.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-14 19:28:02+02:00,-7200,2020-08-14 19:36:09+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['c4b547cb9145905a025426f2c0c2d31d373db89d'],10,14,24,2,,,
+4c63012f971aa683eede90b0a09aff10f238b032,"contrib: Tone API changes down bit
+
+[skip ci]",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-14 19:42:26+02:00,-7200,2020-08-14 19:43:07+02:00,-7200,True,False,['CONTRIBUTING.rst'],['4edda64afb9586598927e1078519a9ee8c88e9e4'],1,1,2,1,,,
+fcbd1541b2207e882c0ba45edddd84a195cdda97,"Bump version and changelog
+
+Second release candidate, mainly changes to the ci build systems.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-14 19:44:06+02:00,-7200,2020-08-14 19:44:06+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['4c63012f971aa683eede90b0a09aff10f238b032'],1,6,7,2,,,
+9afedb1be0e7e8730b11eba1f93f6f01082b0c73,"ci: Fix windows wheels
+
+Fixes missing command delimiter in windows wheel build and deploy step.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-14 21:04:47+02:00,-7200,2020-08-14 21:04:47+02:00,-7200,True,False,"['appveyor.yml', 'appveyor.yml']",['fcbd1541b2207e882c0ba45edddd84a195cdda97'],2,2,4,2,,,
+edbdb362be04443e0faff083e8bf5bd63a044b65,"Release 2.6.0
+
+No important changes since rc2, Windows wheels hopefully fixed,
+but they are not essential for the release.",Stefan Bender,stefan.bender@ntnu.no,Stefan Bender,stefan.bender@ntnu.no,2020-08-16 12:08:27+02:00,-7200,2020-08-16 12:08:27+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['9afedb1be0e7e8730b11eba1f93f6f01082b0c73'],1,6,7,2,,,

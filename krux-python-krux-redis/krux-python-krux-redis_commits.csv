@@ -1,0 +1,41 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+83a7038a1f4c57ebb664d4c3925f9ccc41a537f4,Initial commit,jib,github@dwim.org,jib,github@dwim.org,2014-03-23 13:09:56-07:00,25200,2014-03-23 13:09:56-07:00,25200,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,59,59,3,,,
+fd08bff7533b081c9e98d1c178ed63981173ff03,* first addition,Jos Boumans,jos@dwim.org,Jos Boumans,jos@dwim.org,2014-03-24 13:26:37-07:00,25200,2014-03-24 13:26:37-07:00,25200,True,False,"['__init__.py', 'requirements.pip', 'setup.py']",['83a7038a1f4c57ebb664d4c3925f9ccc41a537f4'],0,267,267,3,0.5181818181818182,1.0,0.5818181818181818
+13197accdd9b82739d69160c1910ca680a11a104,Make this library actually pip installable.,Paul Lathrop,paul@tertiusfamily.net,Paul Lathrop,paul@tertiusfamily.net,2014-03-24 16:21:03-07:00,25200,2014-03-24 16:21:03-07:00,25200,True,False,"['requirements.pip', 'setup.py']",['fd08bff7533b081c9e98d1c178ed63981173ff03'],18,8,26,2,,,
+bf011bd9e2d096c465a299ece110c523358ece97,"* add proper test app, use rediserror, not just redis connectino error to catch problems",Jos Boumans,jos@dwim.org,Jos Boumans,jos@dwim.org,2014-03-25 17:25:55-07:00,25200,2014-03-25 17:25:55-07:00,25200,True,False,"['__init__.py', 'setup.py']",['fd08bff7533b081c9e98d1c178ed63981173ff03'],9,35,44,2,1.0,1.0,1.0
+2c44415ef2b6745434184999e1bd0547adea3dd0,"Update to latest standards.
+
+In preparation for writing/releasing a new version, update the project
+setup and code style.",Paul Lathrop,plathrop@salesforce.com,Paul Lathrop,plathrop@salesforce.com,2017-04-14 12:46:17-04:00,14400,2017-04-14 12:46:17-04:00,14400,True,False,"['README.md', '__init__.py', 'requirements.pip', 'setup.py']",['9cff0e6cd1116ad6332f182204d9c3557dbb2b3b'],119,166,285,4,,,
+f258b6de344d6a6acc44e10d74a9cf791f69c9e9,"Refactor into separate modules.
+
+In preparation for adding complexity in the form of Sentinel support and
+a few Sentinel-related utility applications, break the existing code
+into modules.",Paul Lathrop,plathrop@salesforce.com,Paul Lathrop,plathrop@salesforce.com,2017-04-14 15:39:34-04:00,14400,2017-04-14 15:39:34-04:00,14400,True,False,"['__init__.py', 'cli.py', 'client.py', 'setup.py']",['32ada9c40034a4b544afec15fccd073da25ea2e0'],187,233,420,4,,,
+6ca6abf40b4c08378a29556083dab7c005f88e36,Refactor RedisInstance into a separate module.,Paul Lathrop,plathrop@salesforce.com,Paul Lathrop,plathrop@salesforce.com,2017-04-17 14:15:56-04:00,14400,2017-04-17 14:15:56-04:00,14400,True,False,"['__init__.py', 'redis_client.py', 'redis_instance.py']",['f258b6de344d6a6acc44e10d74a9cf791f69c9e9'],58,65,123,3,,,
+d1200b88367179dddc1becde96346e0fb09dc122,Add TODO,Paul Lathrop,plathrop@salesforce.com,Paul Lathrop,plathrop@salesforce.com,2017-04-17 14:17:18-04:00,14400,2017-04-17 14:17:18-04:00,14400,True,False,['cli.py'],['6ca6abf40b4c08378a29556083dab7c005f88e36'],0,2,2,1,,,
+69b7931ce5e9557689570e8ba86490b1d2745cd1,Ignore dev artifacts.,Paul Lathrop,plathrop@salesforce.com,Paul Lathrop,plathrop@salesforce.com,2017-04-18 15:15:23-04:00,14400,2017-04-18 15:15:23-04:00,14400,True,False,['.gitignore'],['d1200b88367179dddc1becde96346e0fb09dc122'],0,2,2,1,,,
+dc182bc135d3382cbd16bf3802b80d1faa737053,"Add development tools
+
+* Add `dev-requirements.pip` which installs ipython, coverage, mock, and
+  nose.
+* Alphabetize transitive dependencies in `requirements.pip`.
+* Add `setup.cfg` to configure development tools.",Paul Lathrop,plathrop@salesforce.com,Paul Lathrop,plathrop@salesforce.com,2017-04-18 15:15:46-04:00,14400,2017-04-18 15:17:10-04:00,14400,True,False,"['dev-requirements.pip', 'requirements.pip', 'setup.cfg']",['69b7931ce5e9557689570e8ba86490b1d2745cd1'],6,48,54,3,,,
+2ef728c491350859faf53c37ca80a8e4ec8b66d2,"Refactor client code and test application.
+
+* Move the test application into redis_client module.
+* Tweak cli module to prepare for adding sentinel support.",Paul Lathrop,plathrop@salesforce.com,Paul Lathrop,plathrop@salesforce.com,2017-04-18 15:43:33-04:00,14400,2017-04-18 15:43:33-04:00,14400,True,False,"['__init__.py', 'cli.py', 'redis_client.py', 'setup.py']",['dc182bc135d3382cbd16bf3802b80d1faa737053'],58,54,112,4,,,
+4a3d94895ebd55bc988c708396ea47c4387c5d82,"Add basic sentinel support.
+
+Note: not much is needed here, as the Sentinel API is very
+straightforward and usable.",Paul Lathrop,plathrop@salesforce.com,Paul Lathrop,plathrop@salesforce.com,2017-04-25 13:51:02-04:00,14400,2017-04-25 13:53:04-04:00,14400,True,False,"['cli.py', 'sentinel.py', 'setup.py', '__init__.py', '__init__.py', 'test_cli.py']",['2ef728c491350859faf53c37ca80a8e4ec8b66d2'],0,166,166,6,1.0,1.0,1.0
+5346552bca8e5dc8aec98f849f562e8fa5a01a11,"Move `[dev-]requirements.pip` to `[dev-]requirements.txt`. (#6)
+
+* mv requirments.pip -> requirements.txt
+
+* bump version
+
+* fix dev-requirments.txt",David Llopis,496931+dllopis-sfdc@users.noreply.github.com,GitHub,noreply@github.com,2019-09-13 14:01:53-07:00,25200,2019-09-13 14:01:53-07:00,25200,True,False,"['dev-requirements.txt', '__init__.py', 'requirements.txt']",['e95bb5bfa34cf501c37f09b7756384271217791b'],2,2,4,3,,,
+835246c18479bc7b96865f487c799e970e45804b,archive,Paul Krohn,pkrohn@salesforce.com,Paul Krohn,pkrohn@salesforce.com,2019-11-11 15:43:01-08:00,28800,2019-11-11 15:43:01-08:00,28800,True,False,['README.md'],['5346552bca8e5dc8aec98f849f562e8fa5a01a11'],0,4,4,1,,,
+1b0234756f408ea09bc26b40ac4e9a5a59de15cc,W-9972083 Open Source Programs Office compliance,dllopis-sfdc,496931+dllopis-sfdc@users.noreply.github.com,dllopis-sfdc,496931+dllopis-sfdc@users.noreply.github.com,2021-10-05 13:12:02-07:00,25200,2021-10-05 13:12:02-07:00,25200,True,False,"['CODE_OF_CONDUCT.md', 'LICENSE.txt', 'SECURITY.md']",['5babcdb3ba76a4ab8383733699b104cac594abd9'],0,113,113,3,,,
+a7b1723a21001ec5d67271f170bc6b1ea6e7f98e,Updated/Added CODEOWNERS with ECCN,svc-scm,48930134+svc-scm@users.noreply.github.com,svc-scm,48930134+svc-scm@users.noreply.github.com,2022-02-11 14:44:22-08:00,28800,2022-02-11 14:44:22-08:00,28800,True,False,['CODEOWNERS'],['1b0234756f408ea09bc26b40ac4e9a5a59de15cc'],0,2,2,1,,,

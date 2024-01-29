@@ -1,0 +1,654 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+5d6220cf428d709d9c548f5f4f4fdb55b4fb59de,Initial Commit,斯蒂庞克轿车,425826492@qq.com,coding.net,support@coding.net,2022-09-20 08:49:17+08:00,-28800,2022-09-20 08:49:17+08:00,-28800,True,False,['README.md'],[],0,1,1,1,,,
+750a2d1628600eabf7b3a2f339684b642f305a0a,"feat: init
+
+实现 DQN, DDQN, PDQN, TD3, DDPG, SAC
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-01 15:30:30+08:00,-28800,2022-10-01 15:30:30+08:00,-28800,True,False,"['README.md', 'dqn.py', 'README.md', 'mujoco210-linux-x86_64.tar.gz', 'requirements.yaml', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'sac.py', 'td3.py', 'struct.jpeg', 'struct.key']",['5d6220cf428d709d9c548f5f4f4fdb55b4fb59de'],1,3190,3191,13,0.4219298245614035,0.8521929824561404,0.5701754385964912
+2acfb37dc607f3fb4dd6152eab1f060543049e7e,"feat: 重构dqn,ddqn,pdqn,ddpg,td3,sac
+
+...
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-01 17:47:12+08:00,-28800,2022-10-01 17:57:40+08:00,-28800,True,False,"['README.md', 'base.py', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'sac.py', 'td3.py', 'struct.jpeg', 'struct.key']",['750a2d1628600eabf7b3a2f339684b642f305a0a'],1992,2168,4160,10,0.0,1.0,1.0
+bc976fb3a975ff401568dfc61437063d4d829af4,"chore: 删除冗余文件
+
+...
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-01 20:33:37+08:00,-28800,2022-10-01 20:33:37+08:00,-28800,True,False,['dqn.py'],['2acfb37dc607f3fb4dd6152eab1f060543049e7e'],364,0,364,1,0.5251798561151079,0.15467625899280577,0.3920863309352518
+5876f31fe13448a8650eb065f8b72abf6965d698,"feat: 完善pre-commit & 调整代码风格
+
+...
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-02 14:52:22+08:00,-28800,2022-10-02 14:52:22+08:00,-28800,True,False,"['.pre-commit-config.yaml', 'README.md', 'base.py', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'sac.py', 'td3.py', 'struct.key']",['bc976fb3a975ff401568dfc61437063d4d829af4'],151,537,688,10,0.10569105691056911,0.9349593495934959,0.8780487804878049
+c39c055abb58c871974cac44bd55ed7042b8dec0,"fix: dqn sample bug
+
+...
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-03 19:29:54+08:00,-28800,2022-10-03 19:29:54+08:00,-28800,True,False,"['ddqn.py', 'dqn.py', 'pdqn.py']",['5876f31fe13448a8650eb065f8b72abf6965d698'],0,6,6,3,1.0,1.0,1.0
+721ad669dc1df77c1fc9387472a033bcb3bf8235,"Accept Merge Request #26: (dev-ppo -> master)
+Merge Request: 实现ppo
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcrl/d/abcrl/git/merge/26",斯蒂庞克轿车,425826492@qq.com,斯蒂庞克轿车,425826492@qq.com,2022-10-11 16:35:15+08:00,-28800,2022-10-11 16:35:15+08:00,-28800,True,False,"['.pre-commit-config.yaml', 'ppo.py']",['c39c055abb58c871974cac44bd55ed7042b8dec0'],6,455,461,2,0.34935897435897434,0.7339743589743589,0.782051282051282
+8ee97d92d02fc3d7da2110189f203c7cbd1fc070,"docs: 更新文档
+
+...
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-11 16:50:03+08:00,-28800,2022-10-11 16:50:03+08:00,-28800,True,False,['README.md'],['721ad669dc1df77c1fc9387472a033bcb3bf8235'],5,7,12,1,,,
+a60a794acb6472507e314ac6a8e5cd2ec70697f8,"style: 调整parse_args代码风格:
+
+...
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-11 19:16:18+08:00,-28800,2022-10-11 19:16:18+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py']",['8ee97d92d02fc3d7da2110189f203c7cbd1fc070'],632,292,924,7,1.0,0.0,0.0
+6a1031c1d006384f0f84d8c23da1cfccb6686a93,"Accept Merge Request #32: (fix-style -> master)
+Merge Request: 调整代码风格 & 修复若干小bug
+
+1. 调整变量名
+2. 修复 ddpg agent.sample kwargs
+3. ppo real_obs问题
+4. ppo model参数调整
+5. 简化 _make_env
+6. 统一使用 np.prod
+7. 调整eval函数
+8. 修复 self.run_name bug
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcrl/d/abcrl/git/merge/32",斯蒂庞克轿车,425826492@qq.com,斯蒂庞克轿车,425826492@qq.com,2022-10-12 15:31:14+08:00,-28800,2022-10-12 15:31:14+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py']",['a60a794acb6472507e314ac6a8e5cd2ec70697f8'],458,313,771,7,1.0,0.14545454545454545,0.030303030303030304
+0bb7f6dd1a65313199080325cebad1b1819950bd,"Accept Merge Request #33: (dev-docker -> master)
+Merge Request: 固定环境 & 配置docker
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcrl/d/abcrl/git/merge/33",斯蒂庞克轿车,425826492@qq.com,斯蒂庞克轿车,425826492@qq.com,2022-10-13 23:18:17+08:00,-28800,2022-10-13 23:18:17+08:00,-28800,True,False,"['Dockerfile', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'poetry.lock', 'pyproject.toml']",['6a1031c1d006384f0f84d8c23da1cfccb6686a93'],0,2713,2713,10,,,
+376099701306108dddbeea212e693f3c1598b316,change dockerfile,sdpkjc,pazyx728@gmail.com,sdpkjc,pazyx728@gmail.com,2022-10-14 03:21:48-04:00,14400,2022-10-14 03:21:48-04:00,14400,True,False,['Dockerfile'],['0bb7f6dd1a65313199080325cebad1b1819950bd'],3,0,3,1,,,
+db19b999971e8ef9f44524daa362e60df9ed2ace,"test: pytest代码
+
+...
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-14 16:29:16+08:00,-28800,2022-10-14 16:29:16+08:00,-28800,True,False,"['test_classic_control.py', 'test_mujoco.py']",['376099701306108dddbeea212e693f3c1598b316'],0,113,113,2,1.0,1.0,1.0
+132d6478b81e79a4b8ef3102d6055bebcf953328,"chore: add gitignore
+
+...
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-14 19:50:58+08:00,-28800,2022-10-14 19:50:58+08:00,-28800,True,False,['.gitignore'],['bac19e3ab5bdc9c4316fd83c41ef14c081f1bd5f'],0,142,142,1,,,
+b2b68d1efdaeda1825610ea252d725e947323b19,"Accept Merge Request #35: (fix-env -> master)
+Merge Request: 修改依赖环境文件和dockerfile
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcrl/d/abcrl/git/merge/35",斯蒂庞克轿车,425826492@qq.com,斯蒂庞克轿车,425826492@qq.com,2022-10-15 03:47:41+08:00,-28800,2022-10-15 03:47:41+08:00,-28800,True,False,"['Dockerfile', 'README.md', 'mujoco210-linux-x86_64.tar.gz', 'requirements.yaml', 'poetry.lock', 'pyproject.toml', 'requirements-dev.yaml', 'requirements.yaml']",['132d6478b81e79a4b8ef3102d6055bebcf953328'],2865,341,3206,8,,,
+1a5c12f4a472fd6ff74c7f6bf2b23aa09ce6e23d,"Accept Merge Request #36: (fix-env-1 -> master)
+Merge Request: fix-env-1
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/36",斯蒂庞克轿车,425826492@qq.com,斯蒂庞克轿车,425826492@qq.com,2022-10-16 02:42:52+08:00,-28800,2022-10-16 02:42:52+08:00,-28800,True,False,"['Dockerfile', 'requirements-dev.in', 'requirements-dev.txt', 'requirements-dev.yaml', 'requirements.in', 'requirements.txt', 'requirements.yaml']",['b2b68d1efdaeda1825610ea252d725e947323b19'],340,542,882,7,,,
+896e773aff87e0d34ac857c232f608ad21aedfa9,"build: 修改依赖文件
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-16 03:40:45+08:00,-28800,2022-10-16 03:40:45+08:00,-28800,True,False,"['requirements-dev.in', 'requirements-dev.txt', 'requirements.txt']",['1a5c12f4a472fd6ff74c7f6bf2b23aa09ce6e23d'],42,42,84,3,,,
+a6de8f42336f21f91375717f54301118d5772bcc,"Accept Merge Request #37: (docs-0 -> master)
+Merge Request: docs: update docs website & README
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/37",斯蒂庞克轿车,425826492@qq.com,斯蒂庞克轿车,425826492@qq.com,2022-10-21 15:35:45+08:00,-28800,2022-10-21 15:35:45+08:00,-28800,True,False,"['LICENSE', 'README.md', 'abstractions.md', 'ddpg.md', 'dqn.md', 'ppo.md', 'sac.md', 'td3.md', 'features.md', 'struct.jpeg', 'index.md', 'install.md', 'ref.md', 'mkdocs.yml']",['896e773aff87e0d34ac857c232f608ad21aedfa9'],63,265,328,14,,,
+667b2fcfbb6d48f67f907da805718a98e9b78e7b,"feat: 增加设备选择参数 & 修改torch.to的代码风格
+Merge Request: 增加设备选择参数 & 修改torch.to的代码风格
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/39",斯蒂庞克轿车,425826492@qq.com,斯蒂庞克轿车,425826492@qq.com,2022-10-21 16:40:02+08:00,-28800,2022-10-21 16:40:02+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'test_classic_control.py', 'test_mujoco.py']",['a6de8f42336f21f91375717f54301118d5772bcc'],46,60,106,9,0.0,1.0,1.0
+df4ac4216ac2f69a91f2b9859a4246c7ca42e02c,"fix: 调整评估过程和并行环境
+Merge Request: 调整评估过程和并行环境
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/42",斯蒂庞克轿车,425826492@qq.com,斯蒂庞克轿车,425826492@qq.com,2022-10-21 23:04:19+08:00,-28800,2022-10-21 23:04:19+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'test_classic_control.py', 'test_mujoco.py']",['667b2fcfbb6d48f67f907da805718a98e9b78e7b'],280,324,604,9,0.3170731707317073,0.6585365853658537,1.0
+793b7bcc8a1141b867cbb05e4d57bd60cbd336fc,"style: 调整变量和空行
+
+...
+
+zyx | pazyx728@gmail.com",zyx-air-m2,pazyx728@gmail.com,zyx-air-m2,pazyx728@gmail.com,2022-10-21 23:14:41+08:00,-28800,2022-10-21 23:14:41+08:00,-28800,True,False,"['pdqn.py', 'ppo.py', 'test_mujoco.py']",['df4ac4216ac2f69a91f2b9859a4246c7ca42e02c'],6,5,11,3,0.0,0.0,0.0
+658d02fb15b2aa0c835f61f9e6acba2cef70462b,"docs: update docs & README
+
+...
+
+zyx | pazyx728@gmail.com",sdpkjc,pazyx728@gmail.com,sdpkjc,pazyx728@gmail.com,2022-10-21 23:56:40+08:00,-28800,2022-10-21 23:56:40+08:00,-28800,True,False,"['README.md', 'index.md']",['793b7bcc8a1141b867cbb05e4d57bd60cbd336fc'],2,2,4,2,,,
+cd5af78e4b40905c5824712d1dceccec749b4358,"添加 benchmark和tuner脚本 & 重构 logger & 更新文档
+Merge Request: 添加 benchmark和tuner脚本 & 重构 logger & 更新文档
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/52",斯蒂庞克轿车,425826492@qq.com,斯蒂庞克轿车,425826492@qq.com,2022-10-31 22:58:32+08:00,-28800,2022-10-31 22:58:32+08:00,-28800,True,False,"['.gitignore', '__init__.py', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'base.py', 'benchmark.py', 'benchmark.toml', 'abstractions.md', 'abstractions.jpg', 'struct.jpeg', 'mkdocs.yml', 'requirements-dev.in', 'requirements-dev.txt', 'requirements.in', 'requirements.txt', 'tuner_sweep_example.py']",['658d02fb15b2aa0c835f61f9e6acba2cef70462b'],1377,1362,2739,21,0.8035714285714286,0.0,0.0
+77c806a42f232a53d0b1bc9ac5c95dbfd1fd853c,"fix: no ""import random"" bug
+
+...
+
+zyx | pazyx728@gmail.com",sdpkjc,pazyx728@gmail.com,sdpkjc,pazyx728@gmail.com,2022-11-01 01:17:16+08:00,-28800,2022-11-01 01:17:16+08:00,-28800,True,False,"['ddpg.py', 'ppo.py', 'sac.py', 'td3.py']",['cd5af78e4b40905c5824712d1dceccec749b4358'],0,4,4,4,,,
+73289fb023355f1d2e46ffb0aa644efcacdbdba9,"feat: 添加模型保存功能 & 修复部分bug
+- 添加模型保存功能
+- 修复部分bug：log_data无sample_step问题；部分代码风格错误
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/55",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-02 16:58:48+08:00,-28800,2022-11-02 16:58:48+08:00,-28800,True,False,"['.gitignore', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'evaluate_model_example.py', 'requirements-dev.in', 'requirements-dev.txt', 'requirements.in', 'requirements.txt', 'test_classic_control.py', 'test_mujoco.py', 'test_utils.py']",['77c806a42f232a53d0b1bc9ac5c95dbfd1fd853c'],120,436,556,16,0.379746835443038,1.0,0.0
+dd045c9451ae863be9553f6330bf4a6930a00a8b,"build: 添加gitpod配置
+
+...
+
+zyx | pazyx728@gmail.com",sdpkjc,pazyx728@gmail.com,sdpkjc,pazyx728@gmail.com,2022-11-02 17:19:40+08:00,-28800,2022-11-02 17:19:40+08:00,-28800,True,False,['.gitpod.yml'],['73289fb023355f1d2e46ffb0aa644efcacdbdba9'],0,2,2,1,,,
+ba78f7e6f553f5091e4490ae2b55cda7516f40c2,"build: 更新dockerfile
+...
+
+zyx | pazyx728@gmail.com",sdpkjc,pazyx728@gmail.com,sdpkjc,pazyx728@gmail.com,2022-11-02 17:56:46+08:00,-28800,2022-11-02 17:56:46+08:00,-28800,True,False,"['CHINA.Dockerfile', 'Dockerfile']",['dd045c9451ae863be9553f6330bf4a6930a00a8b'],3,29,32,2,,,
+3647bf1eb5040345cf159673a3a759b8325344ef,"fix: benchmark.toml
+
+...
+
+zyx | pazyx728@gmail.com",sdpkjc,pazyx728@gmail.com,sdpkjc,pazyx728@gmail.com,2022-11-05 10:45:38+08:00,-28800,2022-11-05 10:45:38+08:00,-28800,True,False,['benchmark.toml'],['ba78f7e6f553f5091e4490ae2b55cda7516f40c2'],2,2,4,1,,,
+213b43539a5dc2fd7400bf834d14d309d64841d2,"Refactor ReplayBuffer & PrioritizedReplayBuffer
+Merge Request: Refactor ReplayBuffer & PrioritizedReplayBuffer
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/58",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-05 10:47:32+08:00,-28800,2022-11-05 10:47:32+08:00,-28800,True,False,"['.pre-commit-config.yaml', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py']",['ba78f7e6f553f5091e4490ae2b55cda7516f40c2'],345,587,932,8,0.49473684210526314,1.0,0.3736842105263158
+a78bd5264aa13a20ffc0213d71dec8ef44e11ab8,"refactor: ppo RolloutBuffer
+Merge Request: refactor: ppo RolloutBuffer
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/63",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-05 15:06:11+08:00,-28800,2022-11-05 15:06:11+08:00,-28800,True,False,"['.pre-commit-config.yaml', 'ppo.py']",['51d86187517c8cce8db96795f796fdaa0989c9b8'],8,118,126,2,0.44047619047619047,1.0,0.27380952380952384
+bad7450aa36357127e248b2c1f75ad07d37e0b1e,"update benchmark file
+Merge Request: update benchmark file
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/64",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-05 15:27:57+08:00,-28800,2022-11-05 15:27:57+08:00,-28800,True,False,['benchmark.toml'],['a78bd5264aa13a20ffc0213d71dec8ef44e11ab8'],0,247,247,1,,,
+aa9e4255f319dee26ac76f9926246d9feccdbd2b,"feat: support wandb tags
+
+...
+
+zyx | pazyx728@gmail.com",sdpkjc,pazyx728@gmail.com,sdpkjc,pazyx728@gmail.com,2022-11-05 15:58:44+08:00,-28800,2022-11-05 15:58:44+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py']",['bad7450aa36357127e248b2c1f75ad07d37e0b1e'],7,49,56,7,0.0,0.0,0.0
+fd862d8fb8e65bcbbe18933ce4f9c9a45fbcd871,"feat: add code consistency test
+Merge Request: feat: add code consistency test
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/67",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-05 16:58:33+08:00,-28800,2022-11-05 16:58:33+08:00,-28800,True,False,"['__init__.py', 'test_codes_consistency.py']",['7b73150b72e1d1a8d8c2a8040c7cea89cb1c6a1e'],0,119,119,2,0.1724137931034483,1.0,1.0
+76f04ad5854451ecc6a220fd459fd2dc82c7a5fb,"update gitpod config
+Merge Request: update gitpod config
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/68",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-05 18:10:05+08:00,-28800,2022-11-05 18:10:05+08:00,-28800,True,False,"['.gitpod.Dockerfile', '.gitpod.yml']",['fd862d8fb8e65bcbbe18933ce4f9c9a45fbcd871'],1,25,26,2,,,
+3f32788be814260ab3351d4d84b62049459b0179,"fix: gitpod error on mujoco env
+
+...
+
+zyx | pazyx728@gmail.com",sdpkjc,pazyx728@gmail.com,sdpkjc,pazyx728@gmail.com,2022-11-05 20:34:47+08:00,-28800,2022-11-05 20:34:47+08:00,-28800,True,False,['.gitpod.Dockerfile'],['76f04ad5854451ecc6a220fd459fd2dc82c7a5fb'],8,3,11,1,,,
+4c273460b3e20207ce5fe07878ad2d1bd7ba467f,"fix: bug of PPO buffer in multi-env
+Merge Request: fix: bug of PPO buffer in multi-env
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/69",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-06 21:05:45+08:00,-28800,2022-11-06 21:05:45+08:00,-28800,True,False,['ppo.py'],['3f32788be814260ab3351d4d84b62049459b0179'],43,42,85,1,1.0,1.0,1.0
+b84dd466f6f262f6d3b75df587aebb6edefdb40c,"Unified codes of buffer style
+Merge Request: Unified codes of buffer style
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/70",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-07 10:47:14+08:00,-28800,2022-11-07 10:47:14+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py']",['4c273460b3e20207ce5fe07878ad2d1bd7ba467f'],221,254,475,7,1.0,1.0,1.0
+ab5187ad16a2ff64486d665dee87e99a80f6c4ea,"update type-hint
+Merge Request: update type-hint
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/72",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-07 13:13:26+08:00,-28800,2022-11-07 13:13:26+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'evaluate_model_example.py', 'test_classic_control.py', 'test_codes_consistency.py', 'test_mujoco.py', 'test_utils.py', 'tuner_sweep_example.py']",['b84dd466f6f262f6d3b75df587aebb6edefdb40c'],143,144,287,13,,,
+c8d4cada6b5e3188fe76c6285d2aa92131478194,fix type isinstance,sdpkjc,pazyx728@gmail.com,sdpkjc,pazyx728@gmail.com,2022-11-07 13:36:48+08:00,-28800,2022-11-07 13:36:48+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py']",['b84dd466f6f262f6d3b75df587aebb6edefdb40c'],7,11,18,7,0.0,1.0,0.0
+f6fe0b9f9a9bfa79f9fbd78f499e7370e6029bc9,"Deprecated sb3 & Upgrade to gym0.26.3
+Merge Request: Deprecated sb3 & Upgrade to gym0.26.3
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/79",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-08 11:06:08+08:00,-28800,2022-11-08 11:06:08+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'benchmark.toml', 'evaluate_model_example.py', 'requirements-dev.in', 'requirements-dev.txt', 'requirements.in', 'requirements.txt', 'test_mujoco.py']",['1ea85665c039eb4edf51a1649f916bf6aa7c4811'],803,246,1049,14,0.0,0.0,0.3333333333333333
+55257c87021ff94bfd572febe65039b5c34108bf,"update docker config
+Merge Request: update docker config
+
+Created By: @斯蒂庞克轿车
+Accepted By: @斯蒂庞克轿车
+URL: https://sdpkjc.coding.net/p/abcdrl/d/abcdrl/git/merge/82",斯蒂庞克轿车,pazyx728@gmail.com,斯蒂庞克轿车,pazyx728@gmail.com,2022-11-09 09:39:47+08:00,-28800,2022-11-09 09:39:47+08:00,-28800,True,False,"['.gitpod.Dockerfile', 'CHINA.Dockerfile', 'Dockerfile', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'benchmark.py', 'evaluate_model_example.py', 'tuner_sweep_example.py']",['f6fe0b9f9a9bfa79f9fbd78f499e7370e6029bc9'],15,30,45,13,,,
+11ab8bf3257761eced0b90fca2be11667634237d,Improving bilingual Documentation! (#1),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-16 10:14:10+08:00,-28800,2022-11-16 10:14:10+08:00,-28800,True,False,"['.pre-commit-config.yaml', 'README.cn.md', 'README.md', 'abstractions.en.md', 'abstractions.zh.md', 'ddpg.md', 'dqn.md', 'ppo.md', 'sac.md', 'td3.md', 'features.en.md', 'features.zh.md', 'index.en.md', 'index.md', 'index.zh.md', 'install.en.md', 'install.md', 'install.zh.md', 'ref.en.md', 'ref.md', 'ref.zh.md', 'mkdocs.yml', 'requirements-dev.txt']",['55257c87021ff94bfd572febe65039b5c34108bf'],202,574,776,23,,,
+8a841bcf61a293af9573d0b0e9c3d87d30220dcb,"Improve the performance of the sample data switching device (#2)
+
+* fix PER ndarr copy
+
+* update to as_tensor",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-16 10:51:54+08:00,-28800,2022-11-16 10:51:54+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py']",['11ab8bf3257761eced0b90fca2be11667634237d'],12,12,24,7,,,
+c27eef84363e78f69db6832dc29661be30d17f4a,"Create pytest action (#4)
+
+* Create test.yml
+
+* fix tests.yml
+
+* Update test.yml",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-16 13:00:41+08:00,-28800,2022-11-16 13:00:41+08:00,-28800,True,False,['test.yml'],['8a841bcf61a293af9573d0b0e9c3d87d30220dcb'],0,42,42,1,,,
+abe3a69c73332b0f2eea7747e9f35eea0494821e,"fix type hint style (#3)
+
+* tuple[Any]
+
+* update dict type hint
+
+* update wrapped type hint
+
+* fix docs type hint",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-16 14:39:00+08:00,-28800,2022-11-16 14:39:00+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'abstractions.en.md', 'abstractions.zh.md', 'evaluate_model_example.py']",['c27eef84363e78f69db6832dc29661be30d17f4a'],114,156,270,10,1.0,1.0,1.0
+0502d29a17d6cf8653f92763b5190ef4a2beec9d,Improving devops (#5),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-16 19:17:42+08:00,-28800,2022-11-16 19:17:42+08:00,-28800,True,False,"['docker.yml', 'pre-commit.yml', 'test.yml', '.gitpod.yml', '.pre-commit-config.yaml', '__init__.py']",['abe3a69c73332b0f2eea7747e9f35eea0494821e'],12,56,68,6,,,
+cd2abdf9a14fc5418198212726f97dca1c3ec88c,Refactor evaluation module (#7),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-19 16:38:53+08:00,-28800,2022-11-19 16:38:53+08:00,-28800,True,False,"['README.cn.md', 'README.md', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'abstractions.en.md', 'abstractions.zh.md', 'abstractions.jpg', 'abstractions.png', 'adam.svg', 'logo.svg', 'index.en.md', 'index.zh.md', 'adam.svg', 'logo.svg', 'mkdocs.yml', 'requirements-dev.txt', 'test_codes_consistency.py']",['0502d29a17d6cf8653f92763b5190ef4a2beec9d'],290,1092,1382,22,0.5,0.5,0.0
+1ad3807d48d035a34ffc145aeb7793ccefd6929a,"Script add wandb tag (#10)
+
+* tentative modify the script of benchmark
+
+* Improve benchmark script",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-20 19:41:42+08:00,-28800,2022-11-20 19:41:42+08:00,-28800,True,False,['benchmark.py'],['cd2abdf9a14fc5418198212726f97dca1c3ec88c'],47,50,97,1,0.2777777777777778,0.0,0.0
+bcd3c435ec72247eb94e9c0e4d6a8ee02be8ec2f,fix ddqn target(#11),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-20 20:05:58+08:00,-28800,2022-11-20 20:05:58+08:00,-28800,True,False,['ddqn.py'],['1ad3807d48d035a34ffc145aeb7793ccefd6929a'],2,2,4,1,,,
+85183b2a23633b8f19cf8ef768885b322c95d75b,fix list of type hint (#12),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-20 20:30:15+08:00,-28800,2022-11-20 20:30:15+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py']",['bcd3c435ec72247eb94e9c0e4d6a8ee02be8ec2f'],7,7,14,7,,,
+34d8d8582c39e827b7bdd6fc9f5b334f978cde2c,"Add Issues & PR template (#13)
+
+* add PR template
+
+* add issues template",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-20 23:59:48+08:00,-28800,2022-11-20 23:59:48+08:00,-28800,True,False,"['bug_report.yml', 'documentation.yml', 'feature_request.yml', 'question.yml', 'PULL_REQUEST_TEMPLATE.md']",['85183b2a23633b8f19cf8ef768885b322c95d75b'],0,187,187,5,,,
+8e22b1759ad5c62d7416ce29c8690e4010996a98,"update license attribution (#15)
+
+* update license attribution",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-21 10:56:52+08:00,-28800,2022-11-21 10:56:52+08:00,-28800,True,False,['LICENSE'],['34d8d8582c39e827b7bdd6fc9f5b334f978cde2c'],0,614,614,1,,,
+f4e9aaaf109b4b26e2d16cabda1543b0bb2d63fc,wrapper overhaul (#16),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-22 15:10:44+08:00,-28800,2022-11-22 15:10:44+08:00,-28800,True,False,"['LICENSE', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', '__init__.py', 'benchmark.py', 'benchmark.toml', 'example_all_wrappers.py', 'example_eval_model.py', 'example_tuner_sweep.py', 'wrapper_eval_step.py', 'wrapper_logger.py', 'wrapper_print_filter.py', 'wrapper_save_model.py', 'test_classic_control.py', 'test_codes_consistency.py', 'test_mujoco.py', 'test_utils.py']",['8e22b1759ad5c62d7416ce29c8690e4010996a98'],614,912,1526,22,1.0,1.0,0.9742268041237113
+461039e4b72e45e83e82be43bda33d6b03628443,"update pre-commit & Fix type-hint (#17)
+
+Add mypy, pyupgrade in pre-commit, fix type-hints, and update pre-commit config.",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-23 11:03:31+08:00,-28800,2022-11-23 11:03:31+08:00,-28800,True,False,"['test.yml', '.pre-commit-config.yaml', 'README.cn.md', 'README.md', '__init__.py', 'ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', '__init__.py', 'benchmark.py', 'example_all_wrappers.py', 'wrapper_logger.py', 'wrapper_save_model.py', 'features.en.md', 'features.zh.md', 'test_codes_consistency.py', 'test_utils.py']",['f4e9aaaf109b4b26e2d16cabda1543b0bb2d63fc'],391,397,788,21,0.0,0.0,1.0
+b435974180c9b3183af7f779f5c9991781a02b54,"Change default branch
+to  main",Adam Zhao,pazyx728@gmail.com,Adam Zhao,pazyx728@gmail.com,2022-11-23 11:06:30+08:00,-28800,2022-11-23 11:06:30+08:00,-28800,True,False,['docker.yml'],['461039e4b72e45e83e82be43bda33d6b03628443'],1,1,2,1,,,
+7adaf154b914d581d1a5d045c7d3538b26045f70,Add Dependabot (#18),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-23 13:50:57+08:00,-28800,2022-11-23 13:50:57+08:00,-28800,True,False,"['dependabot.yml', 'test.yml', 'requirements-dev.txt', 'requirements.txt']",['b435974180c9b3183af7f779f5c9991781a02b54'],25,40,65,4,,,
+5e7701b6c596bdbe056f0410f6d8a3015c1a3ab9,"scripts-examples-overhaul (#20)
+
+* fix mypy error
+
+* fix example
+
+* modify script-example dir
+
+* fix example_tuner_sweep
+
+* fix example_tuner_sweep
+
+* fix tuner example
+
+* overhaul dir
+
+* overhaul all wrappers
+
+* update License
+
+* update .gitignore",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-26 02:31:32+08:00,-28800,2022-11-26 02:31:32+08:00,-28800,True,False,"['.gitignore', 'LICENSE', '__init__.py', 'dqn_all_wrappers.py', 'wrapper_eval_step.py', 'wrapper_logger.py', 'wrapper_print_filter.py', 'wrapper_save_model.py', 'example_tuner_sweep.py', 'benchmark.py', 'benchmark.toml', 'example_eval_model.py', 'example_tuner_sweep.py', 'test_codes_consistency.py', 'test_copy_from.py', 'test_utils.py']",['7adaf154b914d581d1a5d045c7d3538b26045f70'],232,239,471,16,0.0,1.0,0.5
+802050fd4a95ffa5f204633a90610b32fa35cd6d,fix url in mit license shield (#22),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-11-26 02:42:55+08:00,-28800,2022-11-26 02:42:55+08:00,-28800,True,False,"['README.cn.md', 'README.md', 'features.en.md', 'features.zh.md']",['5e7701b6c596bdbe056f0410f6d8a3015c1a3ab9'],4,4,8,4,,,
+e4d7527d428b31953a0f39b86d771b213c784a62,"Fix wandb monitor gym (#26)
+
+* update dataclass frozen
+
+* fix wandb-monitor",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-02 15:05:38+08:00,-28800,2022-12-02 15:05:38+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py', 'wrapper_logger.py']",['802050fd4a95ffa5f204633a90610b32fa35cd6d'],8,53,61,9,0.0,0.0,0.0
+4cdb248fa579e763c46a19d3bd40922f4c11649b,fix logger video (#27),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-02 20:53:43+08:00,-28800,2022-12-02 20:53:43+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py', 'wrapper_logger.py']",['e4d7527d428b31953a0f39b86d771b213c784a62'],54,127,181,9,1.0,1.0,1.0
+aacba881575192782d1cdee1bf5713cfb0cc1de6,fix sync_target (#28),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-02 23:46:09+08:00,-28800,2022-12-02 23:46:09+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py']",['4cdb248fa579e763c46a19d3bd40922f4c11649b'],14,21,35,7,0.0,,
+83d23807117b7c414ac35e61b48ce66bd55013e4,delete chinese annotation (#29),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-03 00:22:53+08:00,-28800,2022-12-03 00:22:53+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py']",['aacba881575192782d1cdee1bf5713cfb0cc1de6'],32,0,32,8,,,
+7a53e2b94a4f594b56c989ac3dc05060af690406,Adjust device parameter (#30),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-03 00:37:49+08:00,-28800,2022-12-03 00:37:49+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py']",['83d23807117b7c414ac35e61b48ce66bd55013e4'],23,19,42,8,1.0,0.0,0.0
+01e2fefaf6f5d479461b6f9691a65911a4568fcc,fix replaybuffer random replace(#31),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-04 23:50:31+08:00,-28800,2022-12-04 23:50:31+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py']",['7a53e2b94a4f594b56c989ac3dc05060af690406'],6,6,12,6,,,
+9cbb201517e1fa447176bf19401d8e40c5c4125d,"Implement dqn in atari env (#25)
+
+* update requirements
+
+* add dqn_atari.py
+
+* add test
+
+* add test
+
+* add benchemark
+
+* update learning-starts
+
+* fix type-hint
+
+* fix ReplayBuffer & TransformReward
+
+* update License
+
+* fix
+
+* fix logger videos in dqn_atari
+
+* fix sync target
+
+* del chinese annotation
+
+* add wrapper test
+
+* fix device
+
+* add envs benchmark args
+
+* fix benchmark.toml args
+
+* add fire reset wrapper
+
+* fix firereset wrapper typehint
+
+* fix dqn_atari replaybuffer
+
+* del firereset
+
+* del tmp file
+
+* add firereset
+
+* fix replaybuffer
+
+* fix replaybuffer
+
+* fix",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-05 14:26:30+08:00,-28800,2022-12-05 14:26:30+08:00,-28800,True,False,"['LICENSE', '__init__.py', 'dqn_atari.py', 'benchmark.toml', 'requirements-dev.txt', 'requirements.txt', 'test_atari.py', 'test_codes_consistency.py', 'test_copy_from.py']",['01e2fefaf6f5d479461b6f9691a65911a4568fcc'],6,674,680,9,0.559322033898305,0.7312348668280871,0.6924939467312349
+f6a0141a6ce573e63a02c2867d11d22ed69d1eca,fix handling time limits problem (#32),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-06 10:22:56+08:00,-28800,2022-12-06 10:22:56+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'dqn_atari.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py']",['9cbb201517e1fa447176bf19401d8e40c5c4125d'],18,9,27,9,1.0,1.0,0.0
+8bce3e7fbbf69cae24858e04f1248050d9036aae,Fix ppo truncated problem (#34),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-06 14:59:15+08:00,-28800,2022-12-06 14:59:15+08:00,-28800,True,False,['ppo.py'],['f6a0141a6ce573e63a02c2867d11d22ed69d1eca'],10,14,24,1,0.0,0.0,0.6666666666666666
+879e8f399388b77caa582bd87854e3e524bf01ab,Remove the redundant parameters in sac (#37),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-08 19:19:43+08:00,-28800,2022-12-08 19:19:43+08:00,-28800,True,False,"['sac.py', 'benchmark.toml']",['8bce3e7fbbf69cae24858e04f1248050d9036aae'],4,0,4,2,1.0,1.0,1.0
+96374c35a1580a62ee7f68302decdafc4a44b140,"Fix ppo in truncated (#38)
+
+* fix ppo in truncated
+
+* fix mutli-env",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-09 17:09:51+08:00,-28800,2022-12-09 17:09:51+08:00,-28800,True,False,['ppo.py'],['879e8f399388b77caa582bd87854e3e524bf01ab'],1,1,2,1,,,
+24f81dda17539f227702e3357404229583119bb1,Fix env seed and exp_name (#39),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-11 03:10:00+08:00,-28800,2022-12-11 03:10:00+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'dqn_atari.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py', 'wrapper_logger.py']",['96374c35a1580a62ee7f68302decdafc4a44b140'],84,67,151,10,1.0,1.0,1.0
+7db218768460edd2827cf10171e77b6a7fcde996,Create codeql.yml (#41),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-13 02:27:53+08:00,-28800,2022-12-13 02:27:53+08:00,-28800,True,False,['codeql.yml'],['24f81dda17539f227702e3357404229583119bb1'],0,52,52,1,,,
+2974d4beea0808c15a103b3411532b5fdb93c31a,"build(deps-dev): bump mkdocs-material from 8.5.10 to 8.5.11 (#23)
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 8.5.10 to 8.5.11.
+- [Release notes](https://github.com/squidfunk/mkdocs-material/releases)
+- [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG)
+- [Commits](https://github.com/squidfunk/mkdocs-material/compare/8.5.10...8.5.11)
+
+---
+updated-dependencies:
+- dependency-name: mkdocs-material
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Adam Zhao <pazyx728@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-13 02:29:01+08:00,-28800,2022-12-13 02:29:01+08:00,-28800,True,False,['requirements-dev.txt'],['7db218768460edd2827cf10171e77b6a7fcde996'],1,1,2,1,,,
+1b1361246a98415fb191138905d86db2e8aec0c3,"build(deps-dev): bump mkdocs-static-i18n from 0.50 to 0.53 (#40)
+
+Bumps [mkdocs-static-i18n](https://github.com/ultrabug/mkdocs-static-i18n) from 0.50 to 0.53.
+- [Release notes](https://github.com/ultrabug/mkdocs-static-i18n/releases)
+- [Commits](https://github.com/ultrabug/mkdocs-static-i18n/commits/0.53)
+
+---
+updated-dependencies:
+- dependency-name: mkdocs-static-i18n
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-13 02:30:23+08:00,-28800,2022-12-13 02:30:23+08:00,-28800,True,False,['requirements-dev.txt'],['2974d4beea0808c15a103b3411532b5fdb93c31a'],1,1,2,1,,,
+b38a59b8621e6fddc68d5494f48ddc3371585d49,"Benchmark init (#33)
+
+* add benchmark args
+
+* fix ppo args file
+
+* update benchmark args
+
+* update benchmark args
+
+* update benchmark.py
+
+* update benchmark.py
+
+* benchmark script add multidevice switch
+
+* update args
+
+* update benchmark.toml
+
+* fix benchmark args in sac pendulm-v1
+
+* update benchmark.toml
+
+* del part of benchmark args
+
+* add delay in benchmark.py
+
+* update docs
+
+* update docs
+
+* update docs
+
+* update docs
+
+* del delay benchmark script",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-13 07:31:53+08:00,-28800,2022-12-13 07:31:53+08:00,-28800,True,False,"['README.cn.md', 'README.md', 'benchmark.py', 'benchmark.toml', 'features.en.md', 'features.zh.md', 'index.en.md', 'index.zh.md']",['1b1361246a98415fb191138905d86db2e8aec0c3'],21,120,141,8,0.0,0.0,0.0
+1d5d6dfa7120eb65cd62880277b60846dabc094f,Improve docker (#42),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-14 21:11:17+08:00,-28800,2022-12-14 21:11:17+08:00,-28800,True,False,"['test.yml', '.gitpod.Dockerfile', '.gitpod.yml', 'CHINA.Dockerfile', 'CITATION.cff', 'Dockerfile', 'LICENSE', 'README.cn.md', 'README.md', 'cu113.Dockerfile', 'docker.test.yml', 'features.en.md', 'features.zh.md', 'index.en.md', 'index.zh.md', 'install.en.md', 'install.zh.md', 'requirements-dev.txt', 'requirements.txt']",['b38a59b8621e6fddc68d5494f48ddc3371585d49'],152,294,446,19,,,
+ce399c7261a129ce22f655e7b03b80fedbbf63f2,fix gitpod dockerfile (#46),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-14 21:17:18+08:00,-28800,2022-12-14 21:17:18+08:00,-28800,True,False,['.gitpod.Dockerfile'],['1d5d6dfa7120eb65cd62880277b60846dabc094f'],2,1,3,1,,,
+0d26b477c6a55f9b99dd48607b6748e19214cbc6,"Refix gitpod (#47)
+
+* fix gitpod dockerfile",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-14 21:26:27+08:00,-28800,2022-12-14 21:26:27+08:00,-28800,True,False,['.gitpod.Dockerfile'],['ce399c7261a129ce22f655e7b03b80fedbbf63f2'],6,4,10,1,,,
+ae83d95fde812265e3143374fd2b993703f149c5,"build(deps): bump fire from 0.4.0 to 0.5.0 (#44)
+
+* build(deps): bump fire from 0.4.0 to 0.5.0
+
+Bumps [fire](https://github.com/google/python-fire) from 0.4.0 to 0.5.0.
+- [Release notes](https://github.com/google/python-fire/releases)
+- [Commits](https://github.com/google/python-fire/compare/v0.4.0...v0.5.0)
+
+---
+updated-dependencies:
+- dependency-name: fire
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+* deprecated wrapper_print_filter
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Adam Zhao <pazyx728@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-15 00:42:01+08:00,-28800,2022-12-15 00:42:01+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'dqn_atari.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py', 'requirements-dev.txt', 'requirements.txt', 'test_codes_consistency.py']",['0d26b477c6a55f9b99dd48607b6748e19214cbc6'],139,38,177,12,0.23076923076923078,0.0,0.38461538461538464
+d4140e4d1bfcc56486e309a50e0b06c85239b0c1,"Fix didnt stop when capture video (#49)
+
+* fix bug
+
+* add test_capture_video()
+
+* add timeout test",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-15 03:43:55+08:00,-28800,2022-12-15 03:43:55+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'dqn_atari.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py', 'test_atari.py', 'test_classic_control.py', 'test_mujoco.py', 'test_utils.py']",['ae83d95fde812265e3143374fd2b993703f149c5'],0,36,36,13,0.9411764705882353,1.0,1.0
+26fd4b6f127f2540c720d96b8e2b901b519d68f7,"build(deps): bump wandb from 0.13.5 to 0.13.6 (#36)
+
+* build(deps): bump wandb from 0.13.5 to 0.13.6
+
+Bumps [wandb](https://github.com/wandb/wandb) from 0.13.5 to 0.13.6.
+- [Release notes](https://github.com/wandb/wandb/releases)
+- [Changelog](https://github.com/wandb/wandb/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/wandb/wandb/compare/v0.13.5...v0.13.6)
+
+---
+updated-dependencies:
+- dependency-name: wandb
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+* add wandb track test
+
+* update test
+
+* add timeout
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Adam Zhao <pazyx728@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-15 11:36:12+08:00,-28800,2022-12-15 11:36:12+08:00,-28800,True,False,"['requirements-dev.txt', 'requirements.txt', 'test_utils.py']",['d4140e4d1bfcc56486e309a50e0b06c85239b0c1'],2,29,31,3,0.0,1.0,1.0
+a3c576a4ef977b77316d3325c92e603d3802add8,"Bump gymnasium to 0.27.0 (#50)
+
+* bump to 0.27.0
+
+* del gym==0.26.2",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-15 12:37:50+08:00,-28800,2022-12-15 12:37:50+08:00,-28800,True,False,"['requirements-dev.txt', 'requirements.txt']",['26fd4b6f127f2540c720d96b8e2b901b519d68f7'],8,2,10,2,,,
+9b77d2fcbfbbbaa6160ab4a4b15ea8adfd9f309b,del torchaudio and torchvision (#51),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-15 12:53:59+08:00,-28800,2022-12-15 12:53:59+08:00,-28800,True,False,"['requirements-dev.txt', 'requirements.txt']",['a3c576a4ef977b77316d3325c92e603d3802add8'],4,0,4,2,,,
+8881a0184f0fd5ec1bd87c076b550d4ca51b777a,"Fix __call__ signatures (#54)
+
+* fix call signatures
+
+* to use combine_signatures",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-16 00:50:19+08:00,-28800,2022-12-16 00:50:19+08:00,-28800,True,False,"['ddpg.py', 'ddqn.py', 'dqn.py', 'dqn_atari.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py', 'wrapper_eval_step.py', 'wrapper_logger.py', 'wrapper_print_filter.py', 'wrapper_save_model.py', 'requirements-dev.txt', 'requirements.txt']",['9b77d2fcbfbbbaa6160ab4a4b15ea8adfd9f309b'],32,66,98,15,1.0,1.0,1.0
+6b0a4af14b2acbe065c95a79deabbc938baf1d90,"build(deps): bump wandb from 0.13.6 to 0.13.7 (#53)
+
+Bumps [wandb](https://github.com/wandb/wandb) from 0.13.6 to 0.13.7.
+- [Release notes](https://github.com/wandb/wandb/releases)
+- [Changelog](https://github.com/wandb/wandb/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/wandb/wandb/compare/v0.13.6...v0.13.7)
+
+---
+updated-dependencies:
+- dependency-name: wandb
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-16 03:37:03+08:00,-28800,2022-12-16 03:37:03+08:00,-28800,True,False,"['requirements-dev.txt', 'requirements.txt']",['8881a0184f0fd5ec1bd87c076b550d4ca51b777a'],2,2,4,2,,,
+77f7a0cbe48ee491c6202cded58c3df8b23d033f,"Mess adjustment (#55)
+
+* modify the special import location
+
+* fix collect loop times
+
+* fix type-hint
+
+* update get_space_shape
+
+* modify citation",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2022-12-27 02:12:55+08:00,-28800,2022-12-27 02:12:55+08:00,-28800,True,False,"['CITATION.bib', 'CITATION.cff', 'README.cn.md', 'README.md', 'ddpg.py', 'ddqn.py', 'dqn.py', 'dqn_atari.py', 'pdqn.py', 'ppo.py', 'sac.py', 'td3.py', 'dqn_all_wrappers.py', 'wrapper_logger.py', 'wrapper_save_model.py']",['6b0a4af14b2acbe065c95a79deabbc938baf1d90'],71,163,234,15,1.0,0.0,1.0
+42e2ea680489ceb7911b1be4748bb4a239c632e5,"Add tutorial docs (#52)
+
+* add tutorial doc file
+
+* update README
+
+* update docs
+
+* fix PEP-515",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-01-01 09:15:13+08:00,-28800,2023-01-01 09:15:13+08:00,-28800,True,False,"['README.cn.md', 'README.md', 'ddqn.py', 'dqn.py', 'pdqn.py', 'dqn_all_wrappers.py', 'wrapper_save_model.py', 'features.en.md', 'features.zh.md', 'index.en.md', 'index.zh.md', 'install.en.md', 'install.zh.md', 'modify.en.md', 'modify.zh.md', 'ref.en.md', 'ref.zh.md', 'run.en.md', 'run.zh.md', 'mkdocs.yml']",['77f7a0cbe48ee491c6202cded58c3df8b23d033f'],47,471,518,20,,,
+973a8eec352622eede12408f8fa1601c8b4fbe45,"Poetry & Pypi & PEP-517 (#58)
+
+* fix test
+
+* add pyproject
+
+* add export requirements files
+
+* add py3.9 test
+
+* add release action",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-01-02 16:51:41+08:00,-28800,2023-01-02 16:51:41+08:00,-28800,True,False,"['pypi-poetry.yml', 'test.yml', '.pre-commit-config.yaml', 'README.cn.md', 'README.md', 'index.en.md', 'index.zh.md', 'mkdocs.yml', 'poetry.lock', 'pyproject.toml', 'requirements-dev.txt', 'requirements-torch-atari-dev.txt', 'requirements-torch-atari.txt', 'requirements-torch-dev.txt', 'requirements-torch-mujoco-dev.txt', 'requirements-torch-mujoco.txt', 'requirements-torch.txt', 'requirements.txt', 'test_atari.py', 'test_classic_control.py', 'test_utils.py']",['42e2ea680489ceb7911b1be4748bb4a239c632e5'],38,3973,4011,21,0.0,1.0,1.0
+5f7e1dc5b854cb52f5aa2ed5aabdda3192273d1f,Add read the docs (#60),Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-01-03 09:06:47+08:00,-28800,2023-01-03 09:06:47+08:00,-28800,True,False,"['.readthedocs.yaml', 'requirements.txt']",['973a8eec352622eede12408f8fa1601c8b4fbe45'],0,20,20,2,,,
+e0be688bed608ac89f6c5bec5d6a355ee2f685b8,"Add macos tests (#61)
+
+* add macos tests",Adam Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-01-03 18:59:33+08:00,-28800,2023-01-03 18:59:33+08:00,-28800,True,False,['test.yml'],['5f7e1dc5b854cb52f5aa2ed5aabdda3192273d1f'],5,14,19,1,,,
+decfa86675f1a739e85dbe69c6a6156e26761336,Deprecated dependabot  (#67),Adam(Yanxiao) Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-01-09 13:54:55+08:00,-28800,2023-01-09 13:54:55+08:00,-28800,True,False,['dependabot.yml'],['e0be688bed608ac89f6c5bec5d6a355ee2f685b8'],13,0,13,1,,,
+8c890d2f5beeae51f527c28d4f22632056859432,"Update docs (#68)
+
+* fix readme typo
+
+* update english docs translation
+
+* update abstractions docs
+
+* update features
+
+* bash to shell
+
+* update logo
+
+* add social_media_card img",Adam(Yanxiao) Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-01-09 20:24:13+08:00,-28800,2023-01-09 20:24:13+08:00,-28800,True,False,"['.pre-commit-config.yaml', 'LICENSE', 'README.cn.md', 'README.md', 'abstractions.en.md', 'abstractions.zh.md', 'features.en.md', 'features.zh.md', 'abstractions.png', 'abstractions_control_flow.png', 'abstractions_data_flow.png', 'adam.svg', 'logo.svg', 'social_media_card.png', 'index.en.md', 'install.en.md', 'install.zh.md', 'adam.svg', 'logo.svg', 'run.en.md', 'run.zh.md']",['decfa86675f1a739e85dbe69c6a6156e26761336'],71,337,408,21,,,
+c3551a07d2044ada765500b9490b2ca8ab411025,"DQN TensorFlow2 implementation (#59)
+
+* add tf requirements
+
+* close #63#64
+
+* implemented dqn with tensorflow
+
+* fix docs
+
+* fix logger
+
+* fix logger
+
+* overhual wrapper
+
+* overhual wrapper
+
+* overhual tests
+
+* update requirements file name
+
+* fix buffer
+
+* fix example_tuner_sweep.py
+
+* overhual utils
+
+* overhual file name
+
+* fix device switch
+
+* fix benchmark config
+
+* update tests
+
+* update set seed sort
+
+* update ci
+
+* update docs
+
+* implemented ddqn with tensorflow
+
+* implemented pdqn with tensorflow
+
+* implemented dqn_atari with tensorflow
+
+* fix ci
+
+* fix dqn_atari_tf
+
+* fix dqn_atari_tf
+
+* fix test
+
+* update docs
+
+* update benchmark
+
+* fix benchmark config
+
+* fix logger",Adam(Yanxiao) Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-02-21 09:15:19+08:00,-28800,2023-02-21 09:15:19+08:00,-28800,True,False,"['pre-commit.yml', 'test.yml', '.pre-commit-config.yaml', 'README.cn.md', 'README.md', '__init__.py', 'ddpg_torch.py', 'ddqn_tf.py', 'ddqn_torch.py', 'dqn_atari_tf.py', 'dqn_atari_torch.py', 'dqn_tf.py', 'dqn_torch.py', 'pdqn_tf.py', 'pdqn_torch.py', 'ppo_torch.py', 'sac_torch.py', 'td3_torch.py', '__init__.py', 'dqn_all_wrappers_torch.py', 'wrapper_eval_step.py', 'wrapper_logger_tf.py', 'wrapper_logger_torch.py', 'wrapper_print_filter.py', 'wrapper_save_model.py', '__init__.py', 'benchmark.py', 'benchmark.toml', 'features.en.md', 'features.zh.md', 'index.en.md', 'index.zh.md', 'install.en.md', 'install.zh.md', 'modify.en.md', 'modify.zh.md', 'agent.svg', 'alg.svg', 'model.svg', 'trainer.svg', 'run.en.md', 'run.zh.md', 'example_eval_model.py', 'example_tuner_sweep.py', 'poetry.lock', 'pyproject.toml', 'requirements-atari-tf-dev.txt', 'requirements-atari-tf.txt', 'requirements-atari-torch-dev.txt', 'requirements-atari-torch.txt', 'requirements-basic-tf-dev.txt', 'requirements-basic-tf.txt', 'requirements-basic-torch-dev.txt', 'requirements-basic-torch.txt', 'requirements-dev.txt', 'requirements-mujoco-tf-dev.txt', 'requirements-mujoco-tf.txt', 'requirements-mujoco-torch-dev.txt', 'requirements-mujoco-torch.txt', 'requirements-tf-dev.txt', 'requirements-tf.txt', 'requirements-torch-dev.txt', 'requirements-torch.txt', 'requirements.txt', 'test_atari_tf.py', 'test_atari_torch.py', 'test_classic_control_tf.py', 'test_classic_control_torch.py', 'test_codes_consistency.py', 'test_examples_torch.py', 'test_mujoco_torch.py', 'test_utils.py', 'test_utils_tf.py', 'test_utils_torch.py', 'test_wrappers_tf.py', 'test_wrappers_torch.py']",['8c890d2f5beeae51f527c28d4f22632056859432'],677,4479,5156,76,0.5239018087855297,0.8042635658914729,0.6459948320413437
+5867721ec96af4bb1883aa28262dfa245e4d18b1,python-fire to tyro (#71),Adam(Yanxiao) Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-03-01 15:32:47+08:00,-28800,2023-03-01 15:32:47+08:00,-28800,True,False,"['pre-commit.yml', '.pre-commit-config.yaml', 'Dockerfile', 'README.cn.md', 'README.md', 'ddpg_torch.py', 'ddqn_tf.py', 'ddqn_torch.py', 'dqn_atari_tf.py', 'dqn_atari_torch.py', 'dqn_tf.py', 'dqn_torch.py', 'pdqn_tf.py', 'pdqn_torch.py', 'ppo_torch.py', 'sac_torch.py', 'td3_torch.py', 'dqn_all_wrappers_torch.py', 'eval_step.py', 'logger_tf.py', 'logger_torch.py', 'model_saver.py', 'print_filter.py', 'wrapper_eval_step.py', 'wrapper_logger_tf.py', 'wrapper_logger_torch.py', 'wrapper_print_filter.py', 'wrapper_save_model.py', 'benchmark.py', 'benchmark.toml', 'cu113.Dockerfile', 'abstractions.en.md', 'abstractions.zh.md', 'adam_dark.svg', 'adam_white.svg', 'social_media_card.png', 'social_media_card.svg', 'index.en.md', 'index.zh.md', 'modify.en.md', 'modify.zh.md', 'ref.en.md', 'ref.zh.md', 'run.en.md', 'run.zh.md', 'example_eval_model.py', 'example_tuner_sweep.py', 'mkdocs.yml', 'poetry.lock', 'pyproject.toml', 'requirements-atari-tf-dev.txt', 'requirements-atari-tf.txt', 'requirements-atari-torch-dev.txt', 'requirements-atari-torch.txt', 'requirements-basic-tf-dev.txt', 'requirements-basic-tf.txt', 'requirements-basic-torch-dev.txt', 'requirements-basic-torch.txt', 'requirements-dev.txt', 'requirements-mujoco-tf-dev.txt', 'requirements-mujoco-tf.txt', 'requirements-mujoco-torch-dev.txt', 'requirements-mujoco-torch.txt', 'requirements-tf-dev.txt', 'requirements-tf.txt', 'requirements-torch-dev.txt', 'requirements-torch.txt', 'requirements.txt', 'test_atari_tf.py', 'test_atari_torch.py', 'test_classic_control_tf.py', 'test_classic_control_torch.py', 'test_codes_consistency.py', 'test_examples_torch.py', 'test_mujoco_torch.py', 'test_utils_tf.py', 'test_utils_torch.py', 'test_wrappers_tf.py', 'test_wrappers_torch.py']",['c3551a07d2044ada765500b9490b2ca8ab411025'],4342,5195,9537,79,1.0,0.37410071942446044,1.0
+5747f2148fa4c522bd949af646437c3394435c98,Fix docs image (#72),Adam(Yanxiao) Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-03-01 15:53:21+08:00,-28800,2023-03-01 15:53:21+08:00,-28800,True,False,"['abstractions.en.md', 'abstractions.zh.md']",['5867721ec96af4bb1883aa28262dfa245e4d18b1'],2,2,4,2,,,
+ebf24441585849ebcc5fde9253e460846175ce05,"Bump wandb to 0.15.0 (#74)
+
+* upgrade wandb
+
+* fix req",Adam(Yanxiao) Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-05-03 00:46:51+08:00,-28800,2023-05-03 00:46:51+08:00,-28800,True,False,"['ddpg_torch.py', 'ddqn_tf.py', 'ddqn_torch.py', 'dqn_atari_tf.py', 'dqn_atari_torch.py', 'dqn_tf.py', 'dqn_torch.py', 'pdqn_tf.py', 'pdqn_torch.py', 'ppo_torch.py', 'sac_torch.py', 'td3_torch.py', 'dqn_all_wrappers_torch.py', 'logger_tf.py', 'logger_torch.py', 'poetry.lock', 'pyproject.toml', 'requirements-atari-tf-dev.txt', 'requirements-atari-tf.txt', 'requirements-atari-torch-dev.txt', 'requirements-atari-torch.txt', 'requirements-basic-tf-dev.txt', 'requirements-basic-tf.txt', 'requirements-basic-torch-dev.txt', 'requirements-basic-torch.txt', 'requirements-dev.txt', 'requirements-mujoco-tf-dev.txt', 'requirements-mujoco-tf.txt', 'requirements-mujoco-torch-dev.txt', 'requirements-mujoco-torch.txt', 'requirements-tf-dev.txt', 'requirements-tf.txt', 'requirements-torch-dev.txt', 'requirements-torch.txt', 'requirements.txt']",['5747f2148fa4c522bd949af646437c3394435c98'],1566,1416,2982,35,0.0,0.0,0.0
+3c94e8e9065af3700ebc48c042e7a9386a142129,"Bump Gym to 0.28.1 & Fix Related bugs (#77)
+
+* upgrade gym
+
+* fix optimize_memory_usage
+
+* fix back",Adam(Yanxiao) Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-05-16 15:37:40+08:00,-28800,2023-05-16 15:37:40+08:00,-28800,True,False,"['dqn_atari_torch.py', 'poetry.lock', 'pyproject.toml', 'requirements-atari-tf-dev.txt', 'requirements-atari-tf.txt', 'requirements-atari-torch-dev.txt', 'requirements-atari-torch.txt', 'requirements-basic-tf-dev.txt', 'requirements-basic-tf.txt', 'requirements-basic-torch-dev.txt', 'requirements-basic-torch.txt', 'requirements-dev.txt', 'requirements-mujoco-tf-dev.txt', 'requirements-mujoco-tf.txt', 'requirements-mujoco-torch-dev.txt', 'requirements-mujoco-torch.txt', 'requirements-tf-dev.txt', 'requirements-tf.txt', 'requirements-torch-dev.txt', 'requirements-torch.txt', 'requirements.txt']",['ebf24441585849ebcc5fde9253e460846175ce05'],575,511,1086,21,0.0,1.0,1.0
+2bc13922a873d37d16e15aaf9898caadf63614c0,bump tyro to 0.5 (#78),Adam(Yanxiao) Zhao,pazyx728@gmail.com,GitHub,noreply@github.com,2023-05-16 17:16:31+08:00,-28800,2023-05-16 17:16:31+08:00,-28800,True,False,"['poetry.lock', 'pyproject.toml', 'requirements-atari-tf-dev.txt', 'requirements-atari-tf.txt', 'requirements-atari-torch-dev.txt', 'requirements-atari-torch.txt', 'requirements-basic-tf-dev.txt', 'requirements-basic-tf.txt', 'requirements-basic-torch-dev.txt', 'requirements-basic-torch.txt', 'requirements-dev.txt', 'requirements-mujoco-tf-dev.txt', 'requirements-mujoco-tf.txt', 'requirements-mujoco-torch-dev.txt', 'requirements-mujoco-torch.txt', 'requirements-tf-dev.txt', 'requirements-tf.txt', 'requirements-torch-dev.txt', 'requirements-torch.txt', 'requirements.txt']",['3c94e8e9065af3700ebc48c042e7a9386a142129'],288,274,562,20,,,

@@ -1,0 +1,1196 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+aeb913cb22e6f048a7d750dd94404c23be9f0c8b,initialize repo,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-16 19:37:14-04:00,14400,2017-06-16 19:37:14-04:00,14400,True,False,"['.gitignore', 'README.md']",[],0,20,20,2,,,
+f2731a5b10405638b2e02fbc1186c5d7d2bd66ea,add methods to download metasearch data to hdf5,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-16 19:37:55-04:00,14400,2017-06-16 19:37:55-04:00,14400,True,False,"['data_grabber.py', 'metasearch_to_hdf5.py', 'utils.py']",['aeb913cb22e6f048a7d750dd94404c23be9f0c8b'],0,394,394,3,0.9120370370370371,1.0,0.49074074074074076
+4992aa0ab7f06661a29223aaedff356fecfa2472,fix: iterate through all rows of dataframe,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-16 19:39:53-04:00,14400,2017-06-16 19:39:53-04:00,14400,True,False,['metasearch_to_hdf5.py'],['f2731a5b10405638b2e02fbc1186c5d7d2bd66ea'],1,1,2,1,,,
+4788c375b2e491b5a1f59241f08f29d3174968ef,remove testing variables,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-16 19:40:40-04:00,14400,2017-06-16 19:40:40-04:00,14400,True,False,['metasearch_to_hdf5.py'],['4992aa0ab7f06661a29223aaedff356fecfa2472'],4,0,4,1,,,
+40f3d4362cc8c7c55e24f12f07f10bedf925d82a,fix save paths,=,jakubk@mit.edu,=,jakubk@mit.edu,2017-06-17 20:49:23-04:00,14400,2017-06-17 20:49:23-04:00,14400,True,False,['metasearch_to_hdf5.py'],['4788c375b2e491b5a1f59241f08f29d3174968ef'],4,3,7,1,1.0,0.0,1.0
+bb340e8fe2626e87e8f2497a53171c036d3f5bf9,add script to run process as sbatch job,=,jakubk@mit.edu,=,jakubk@mit.edu,2017-06-17 20:50:04-04:00,14400,2017-06-17 20:50:04-04:00,14400,True,False,['run_meta_to_hdf5.sh'],['40f3d4362cc8c7c55e24f12f07f10bedf925d82a'],0,9,9,1,,,
+9bf0637e23cc072aaade5c08552550a70777105a,fix: get filetype of urls without suffix,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-18 18:51:04-04:00,14400,2017-06-18 18:51:04-04:00,14400,True,False,"['data_grabber.py', 'utils.py']",['bb340e8fe2626e87e8f2497a53171c036d3f5bf9'],7,22,29,2,0.0,0.0,1.0
+c1dd8c1de99b98f959af570c052f2fd7ba5a00d9,decrease time and memory,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-18 18:51:38-04:00,14400,2017-06-18 18:51:38-04:00,14400,True,False,['run_meta_to_hdf5.sh'],['9bf0637e23cc072aaade5c08552550a70777105a'],2,2,4,1,,,
+f3991cfd08fb0e54a51c2e59d48a6e3d2f64ce2f,do not ignore ipynb except scratch.ipynb,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-20 11:20:35-04:00,14400,2017-06-20 11:20:35-04:00,14400,True,False,['.gitignore'],['c1dd8c1de99b98f959af570c052f2fd7ba5a00d9'],1,3,4,1,,,
+58b3d74959e56fa6496ef7626ee42792086b6b6e,add readme with links to trained nets,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-20 11:21:59-04:00,14400,2017-06-20 11:21:59-04:00,14400,True,False,['README.md'],['f3991cfd08fb0e54a51c2e59d48a6e3d2f64ce2f'],0,19,19,1,,,
+9dfd889cb06295ee2ae2f6277074e488c9f53e69,start vgg16 notebook,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-20 11:22:09-04:00,14400,2017-06-20 11:22:09-04:00,14400,True,False,['vgg16.ipynb'],['58b3d74959e56fa6496ef7626ee42792086b6b6e'],0,105,105,1,,,
+781e916c1e8a78c49d8cbb4ea7ee0e8884316d95,update files,=,jakubk@mit.edu,=,jakubk@mit.edu,2017-06-20 15:45:55-04:00,14400,2017-06-20 15:45:55-04:00,14400,True,False,"['README.md', 'vgg16.ipynb']",['9dfd889cb06295ee2ae2f6277074e488c9f53e69'],10,180,190,2,,,
+a1f5859a6ddc7ea87fdf43367a39130b42fc1e18,update notebook,=,jakubk@mit.edu,=,jakubk@mit.edu,2017-06-27 13:52:33-04:00,14400,2017-06-27 13:52:33-04:00,14400,True,False,['vgg16.ipynb'],['781e916c1e8a78c49d8cbb4ea7ee0e8884316d95'],50,13,63,1,,,
+060da10d7f63bece5b14550003d9e6fd37086d04,add commands to interact with singularity,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-27 15:56:25-04:00,14400,2017-06-27 15:56:25-04:00,14400,True,False,['README.md'],['a1f5859a6ddc7ea87fdf43367a39130b42fc1e18'],0,19,19,1,,,
+5cead89b7cbe0608fcbeacb75399abaf83f4faf4,add singularity bootstrap definition to install h5py,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-27 15:56:42-04:00,14400,2017-06-27 15:56:42-04:00,14400,True,False,['Singularity'],['060da10d7f63bece5b14550003d9e6fd37086d04'],0,20,20,1,,,
+f62ca980a9da46396d3fc35ab504632117de422f,add appending to pre-trained models in procedure,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-27 16:05:30-04:00,14400,2017-06-27 16:05:30-04:00,14400,True,False,['README.md'],['5cead89b7cbe0608fcbeacb75399abaf83f4faf4'],0,3,3,1,,,
+adaa34486d4d49619093616550c801a9e065626c,copy Satra's singularity file; cannot bootstrap singularity image,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-27 17:00:43-04:00,14400,2017-06-27 17:00:43-04:00,14400,True,False,['Singularity'],['f62ca980a9da46396d3fc35ab504632117de422f'],4,59,63,1,,,
+55f462687851acb932e8cb1b44d83430a6fd5fe7,add Dockerfile to build project image,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-27 18:59:32-04:00,14400,2017-06-27 18:59:32-04:00,14400,True,False,['Dockerfile'],['adaa34486d4d49619093616550c801a9e065626c'],0,42,42,1,,,
+d71b035eae0fda854919efd6855653862866b1e2,delete singularity file; was not working,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-27 18:59:42-04:00,14400,2017-06-27 18:59:42-04:00,14400,True,False,['Singularity'],['55f462687851acb932e8cb1b44d83430a6fd5fe7'],75,0,75,1,,,
+893e893fc98587443ab42960d2d93e43392ab260,remove unnecessary ls,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-27 19:05:28-04:00,14400,2017-06-27 19:05:28-04:00,14400,True,False,['Dockerfile'],['d71b035eae0fda854919efd6855653862866b1e2'],1,0,1,1,,,
+9a239442fe63a90bd823f23df1ecfdbd75dddf51,append layers to vgg16 to classify  pixels,=,jakubk@mit.edu,=,jakubk@mit.edu,2017-06-28 12:45:22-04:00,14400,2017-06-28 12:45:22-04:00,14400,True,False,['vgg16.ipynb'],['893e893fc98587443ab42960d2d93e43392ab260'],37,612,649,1,,,
+e8dabf8b9108fefc12b3a6e2113e13945052ef64,upgrade tensorflow + remove unset variable,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-28 12:48:46-04:00,14400,2017-06-28 12:48:46-04:00,14400,True,False,['Dockerfile'],['9a239442fe63a90bd823f23df1ecfdbd75dddf51'],4,1,5,1,,,
+d508d26400f0f390924f40c4d20854d5ede268b8,remove locale-gen,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-28 14:10:00-04:00,14400,2017-06-28 14:10:00-04:00,14400,True,False,['Dockerfile'],['e8dabf8b9108fefc12b3a6e2113e13945052ef64'],3,2,5,1,,,
+492baa9a810492708982fd141b2b13c63abc343d,update path to singularity image,=,jakubk@mit.edu,=,jakubk@mit.edu,2017-06-29 19:01:07-04:00,14400,2017-06-29 19:01:07-04:00,14400,True,False,['README.md'],['e8dabf8b9108fefc12b3a6e2113e13945052ef64'],1,1,2,1,,,
+97e20d16b01e79ac7cb97063314d5be60ad9ae48,update command to run container,=,jakubk@mit.edu,=,jakubk@mit.edu,2017-06-29 19:01:24-04:00,14400,2017-06-29 19:01:24-04:00,14400,True,False,['README.md'],['492baa9a810492708982fd141b2b13c63abc343d'],1,2,3,1,,,
+059e36d47cc35b099f90862f9f849873170e3ab0,create model over vgg16 that outputs 2D array,=,jakubk@mit.edu,=,jakubk@mit.edu,2017-06-29 19:01:53-04:00,14400,2017-06-29 19:01:53-04:00,14400,True,False,['vgg16.ipynb'],['97e20d16b01e79ac7cb97063314d5be60ad9ae48'],183,449,632,1,,,
+3a165f93ce983bd916ee73c301dad36cee478873,enh: install opencv-python,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-06-30 07:48:28-04:00,14400,2017-06-30 07:48:28-04:00,14400,True,False,['Dockerfile'],['793df8c73e947538c5ec909caff6659b64a429d5'],1,1,2,1,,,
+42ac1f8cce1a90d9575d4e4f16320a541dca1247,resize images with opencv instead of scipy,=,jakubk@mit.edu,=,jakubk@mit.edu,2017-06-30 10:15:11-04:00,14400,2017-06-30 10:15:11-04:00,14400,True,False,['vgg16.ipynb'],['3a165f93ce983bd916ee73c301dad36cee478873'],34,152,186,1,,,
+ed009b16e5a78b430cc9f2ac5a6aaa0d17ffe464,remove nvidia drivers (use with singularity>=2.3.0),jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-07-06 21:27:33-04:00,14400,2017-07-06 21:27:33-04:00,14400,True,False,['Dockerfile'],['42ac1f8cce1a90d9575d4e4f16320a541dca1247'],27,5,32,1,,,
+5babc8a8979fcfa0f4c6976b09eb87fd730d6bdb,fix syntax error,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-07-06 21:51:59-04:00,14400,2017-07-06 21:51:59-04:00,14400,True,False,['Dockerfile'],['ed009b16e5a78b430cc9f2ac5a6aaa0d17ffe464'],1,1,2,1,,,
+d547fd711b03c6319595c999d69db12678e840ac,remove singularity command (in main readme),jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-07-06 21:52:16-04:00,14400,2017-07-06 21:52:16-04:00,14400,True,False,['README.md'],['5babc8a8979fcfa0f4c6976b09eb87fd730d6bdb'],10,0,10,1,,,
+cd3a6bc3a6f896c298abeadb0a06365870c447fc,update singularity cmd for version 2.3.1,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-07-06 21:52:31-04:00,14400,2017-07-06 21:52:31-04:00,14400,True,False,['README.md'],['d547fd711b03c6319595c999d69db12678e840ac'],3,2,5,1,,,
+d044a9d06c727bb1ee9d55ce05eef3a22c52ac6c,remove procedure,jakubk,jakubk@mit.edu,jakubk,jakubk@mit.edu,2017-07-10 09:23:58-04:00,14400,2017-07-10 09:23:58-04:00,14400,True,False,['README.md'],['cd3a6bc3a6f896c298abeadb0a06365870c447fc'],8,0,8,1,,,
+f634241e7d0689f3964eb8b9faf1059b6a4145ca,"ADD: nifti download (#2)
+
+* add: methods to download metasearch niftis to /storage
+
+* fix: metasearch to nifti downloader",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2017-09-19 15:47:59-04:00,14400,2017-09-19 15:47:59-04:00,14400,True,False,"['data_grabber.py', 'metasearch_to_hdf5.py', 'metasearch_to_niftis.py', 'run_meta_to_hdf5.sh', 'run_meta_to_niftis.sh', 'utils.py']",['4b9611758c7a18a49897961fd76d65bd594a1b61'],62,148,210,6,0.5897435897435898,1.0,0.717948717948718
+66cd355ec8e045efa6ed4550f8247ca247914908,add: keras implementation of highres3dnet,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2017-12-06 22:09:20-05:00,18000,2017-12-06 22:09:20-05:00,18000,True,False,"['highres3dnet.py', 'highres3dnet.pdf']",['f634241e7d0689f3964eb8b9faf1059b6a4145ca'],0,94,94,2,0.17073170731707318,0.17073170731707318,0.0
+125dcc22efe53fa42fc1d91c06632c168b40a679,install niftynet in dockerfile,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2017-12-06 22:09:53-05:00,18000,2017-12-06 22:09:53-05:00,18000,True,False,"['Dockerfile', 'Dockerfile']",['66cd355ec8e045efa6ed4550f8247ca247914908'],15,38,53,2,,,
+d6cd5ed635fd4f797c4f25fc9b1c97e1a9ebb53a,update documentation,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2017-12-07 14:26:00-05:00,18000,2017-12-07 14:26:21-05:00,18000,True,False,['highres3dnet.py'],['7fe7bfa484b3a333f4da202675071038c05cc9b0'],1,3,4,1,,,
+e9fc2c94a260cd0c9992b6f94bde3696bb255b96,update documentation,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2017-12-07 14:26:00-05:00,18000,2017-12-07 14:26:21-05:00,18000,True,False,['highres3dnet.py'],['6ca3f9209e1ee4e4ad040ae031ebb5a9ed7c245d'],1,3,4,1,,,
+364c8e331f2ed5b87c2f8baa9534f4f2ad8b0d14,add jupyter notebook for training debugging,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2017-12-07 14:28:06-05:00,18000,2017-12-07 14:28:06-05:00,18000,True,False,['highres3dnet.ipynb'],['d6cd5ed635fd4f797c4f25fc9b1c97e1a9ebb53a'],0,164,164,1,,,
+356e977bd8d2fef4508ae58934236f65161d1e8a,add jupyter notebook for training debugging,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2017-12-07 14:28:06-05:00,18000,2017-12-07 14:28:06-05:00,18000,True,False,['highres3dnet.ipynb'],['e9fc2c94a260cd0c9992b6f94bde3696bb255b96'],0,164,164,1,,,
+b5790e68d71333cd424524e41206a9097f406b71,use tf 1.4.0 + prune unnecessary packages,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2017-12-07 15:44:04-05:00,18000,2017-12-07 15:44:04-05:00,18000,True,False,['Dockerfile'],['364c8e331f2ed5b87c2f8baa9534f4f2ad8b0d14'],23,3,26,1,,,
+a8412f226c6ca9456a8a6dc326bc361b2bb84d56,use tf 1.4.0 + prune unnecessary packages,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2017-12-07 15:44:04-05:00,18000,2017-12-07 15:44:04-05:00,18000,True,False,['Dockerfile'],['356e977bd8d2fef4508ae58934236f65161d1e8a'],23,3,26,1,,,
+35ac301b9f9cf857c55a74d22969416205137982,"Add/train keras highres3dnet (#4)
+
+* begin writing framework to train highres3dnet
+
+* remove numpy + change workdir
+
+* add convenience script to run container
+
+* update notebook
+
+* give network layers meaningful names",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2017-12-20 19:28:57-05:00,18000,2017-12-20 19:28:57-05:00,18000,True,False,"['Dockerfile', 'highres3dnet.ipynb', 'highres3dnet.py', 'run_singularity.sh']",['b5790e68d71333cd424524e41206a9097f406b71'],88,328,416,4,0.0,0.0,0.0
+d7610e8270dbb444e3f8d288039e72cd29a80e7c,"Add/train keras highres3dnet (#4)
+
+* begin writing framework to train highres3dnet
+
+* remove numpy + change workdir
+
+* add convenience script to run container
+
+* update notebook
+
+* give network layers meaningful names",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2017-12-20 19:28:57-05:00,18000,2017-12-20 19:28:57-05:00,18000,True,False,"['Dockerfile', 'highres3dnet.ipynb', 'highres3dnet.py', 'run_singularity.sh']",['a8412f226c6ca9456a8a6dc326bc361b2bb84d56'],88,328,416,4,0.0,0.0,0.0
+803379930cdb0be78788f66dae9de8e59228fb47,fix: get highres3dnet to trainable state,=,jakubk@mit.edu,=,jakubk@mit.edu,2018-01-22 12:12:26-05:00,18000,2018-01-22 12:12:26-05:00,18000,True,False,"['highres3dnet.ipynb', 'run_train.sh', 'train.py']",['35ac301b9f9cf857c55a74d22969416205137982'],138,532,670,3,0.6666666666666666,0.6666666666666666,0.7333333333333333
+210219c28ff23012a702b4aba2e034e621061220,fix: get highres3dnet to trainable state,=,jakubk@mit.edu,=,jakubk@mit.edu,2018-01-22 12:12:26-05:00,18000,2018-01-22 12:12:26-05:00,18000,True,False,"['highres3dnet.ipynb', 'run_train.sh', 'train.py']",['d7610e8270dbb444e3f8d288039e72cd29a80e7c'],138,532,670,3,0.6666666666666666,0.6666666666666666,0.7333333333333333
+cb47c12cfaf58dd4ce4b062c0e98b62d42064a1f,"ENH: add highres3dnet and clean up directory structure (#5)
+
+* increase resources
+
+* retry on load or process error
+
+* add methods to combine predicted blocks
+
+* ignore slurm out files
+
+* remove run_singularity.sh
+
+* remove using_pretrained_models directory
+
+* move Dockerfile to root project dir
+
+* move files to new namespace
+
+* initial commit
+
+* initial commit of tensorflow implementation - untested",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-01-30 11:39:44-05:00,18000,2018-01-30 11:39:44-05:00,18000,True,False,"['.gitignore', 'Dockerfile', 'highres3dnet.pdf', 'highres3dnet.ipynb', 'highres3dnet.py', 'highres3dnet_tf.py', 'run_train.sh', 'train.py', 'utils.py', 'run_singularity.sh', 'README.md', 'vgg16.ipynb']",['803379930cdb0be78788f66dae9de8e59228fb47'],1248,514,1762,12,0.41935483870967744,1.0,0.0
+1a5baab4d8e788a558338a8f4608b0b2fb978749,"ENH: add highres3dnet and clean up directory structure (#5)
+
+* increase resources
+
+* retry on load or process error
+
+* add methods to combine predicted blocks
+
+* ignore slurm out files
+
+* remove run_singularity.sh
+
+* remove using_pretrained_models directory
+
+* move Dockerfile to root project dir
+
+* move files to new namespace
+
+* initial commit
+
+* initial commit of tensorflow implementation - untested",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-01-30 11:39:44-05:00,18000,2018-01-30 11:39:44-05:00,18000,True,False,"['.gitignore', 'Dockerfile', 'highres3dnet.pdf', 'highres3dnet.ipynb', 'highres3dnet.py', 'highres3dnet_tf.py', 'run_train.sh', 'train.py', 'utils.py', 'run_singularity.sh', 'README.md', 'vgg16.ipynb']",['210219c28ff23012a702b4aba2e034e621061220'],1248,514,1762,12,0.41935483870967744,1.0,0.0
+488c915368edcd8bd9d753997fe5a512c633b654,"ENH: add tensorflow highres3dnet, metrics, and losses (#6)
+
+* minor updates
+
+* move highresnet to nobrainer.models namespace
+
+* add __init__ files + rm tf file
+
+* add initial losses + scores + utils
+
+* initial tensorflow implementation of highres3dnet
+
+* remove highres3dnet directory
+
+* fix: tensorflow implementations
+
+* rename to
+
+* enh: rewrite with
+
+* rename to model func to highres3dnet
+
+* enh: documentation",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-02-02 19:46:12-05:00,18000,2018-02-02 19:46:12-05:00,18000,True,False,"['Dockerfile', 'README.md', '__init__.py', 'highres3dnet.ipynb', 'highres3dnet.py', 'highres3dnet_tf.py', 'run_train.sh', 'train.py', 'losses.py', 'metrics.py', '__init__.py', 'highres3dnet.py', 'utils.py']",['cb47c12cfaf58dd4ce4b062c0e98b62d42064a1f'],1391,192,1583,13,0.6506024096385542,0.8192771084337349,1.0
+bc905e475439778e498fb26181fcf35f7180edd1,"ENH: add tensorflow highres3dnet, metrics, and losses (#6)
+
+* minor updates
+
+* move highresnet to nobrainer.models namespace
+
+* add __init__ files + rm tf file
+
+* add initial losses + scores + utils
+
+* initial tensorflow implementation of highres3dnet
+
+* remove highres3dnet directory
+
+* fix: tensorflow implementations
+
+* rename to
+
+* enh: rewrite with
+
+* rename to model func to highres3dnet
+
+* enh: documentation",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-02-02 19:46:12-05:00,18000,2018-02-02 19:46:12-05:00,18000,True,False,"['Dockerfile', 'README.md', '__init__.py', 'highres3dnet.ipynb', 'highres3dnet.py', 'highres3dnet_tf.py', 'run_train.sh', 'train.py', 'losses.py', 'metrics.py', '__init__.py', 'highres3dnet.py', 'utils.py']",['1a5baab4d8e788a558338a8f4608b0b2fb978749'],1391,192,1583,13,0.6506024096385542,0.8192771084337349,1.0
+90bb6e58f42b75b08669f9953e24fd184b0aa6f4,"ADD: estimator training function (#7)
+
+* minor updates
+
+* move highresnet to nobrainer.models namespace
+
+* add __init__ files + rm tf file
+
+* add initial losses + scores + utils
+
+* initial tensorflow implementation of highres3dnet
+
+* remove highres3dnet directory
+
+* fix: tensorflow implementations
+
+* rename to
+
+* enh: rewrite with
+
+* rename to model func to highres3dnet
+
+* enh: documentation
+
+* upgrade to tensorflow 1.6.0-rc0
+
+* add by-class dice coefficient method
+
+* use tensorflow math ops
+
+* make shape mismatch error clearer
+
+* rename scores to metrics
+
+* use separate variable scope on each layer
+
+* add: first pass at estimator training function",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-02-08 09:40:13-05:00,18000,2018-02-08 09:40:13-05:00,18000,True,False,"['Dockerfile', '__init__.py', 'losses.py', 'metrics.py', 'highres3dnet.py', 'utils.py', 'train.py']",['488c915368edcd8bd9d753997fe5a512c633b654'],52,314,366,7,0.3401360544217687,0.7210884353741497,0.23129251700680273
+f5e9dde05b56edf8677482a3a9685970cf571716,"ADD: estimator training function (#7)
+
+* minor updates
+
+* move highresnet to nobrainer.models namespace
+
+* add __init__ files + rm tf file
+
+* add initial losses + scores + utils
+
+* initial tensorflow implementation of highres3dnet
+
+* remove highres3dnet directory
+
+* fix: tensorflow implementations
+
+* rename to
+
+* enh: rewrite with
+
+* rename to model func to highres3dnet
+
+* enh: documentation
+
+* upgrade to tensorflow 1.6.0-rc0
+
+* add by-class dice coefficient method
+
+* use tensorflow math ops
+
+* make shape mismatch error clearer
+
+* rename scores to metrics
+
+* use separate variable scope on each layer
+
+* add: first pass at estimator training function",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-02-08 09:40:13-05:00,18000,2018-02-08 09:40:13-05:00,18000,True,False,"['Dockerfile', '__init__.py', 'losses.py', 'metrics.py', 'highres3dnet.py', 'utils.py', 'train.py']",['bc905e475439778e498fb26181fcf35f7180edd1'],52,314,366,7,0.3401360544217687,0.7210884353741497,0.23129251700680273
+54200bc13c0b6e63cea50d143a2f83037ad04024,"ADD: meshnet + documentation (#9)
+
+* rename utils to util
+
+* fix syntax error
+
+* update import
+
+* add documentation
+
+* add meshnet
+
+* fix syntax error
+
+* add: meshnet estimator class
+
+* add util module
+
+* add required args
+
+* add highres3dnet estimator class
+
+* add common io operations
+
+* use new models as estimators
+
+* add reducer option + enh docs",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-02-13 09:03:37-05:00,18000,2018-02-13 09:03:37-05:00,18000,True,False,"['__init__.py', 'io.py', 'losses.py', 'metrics.py', '__init__.py', 'highres3dnet.py', 'meshnet.py', 'util.py', 'util.py', 'train.py']",['90bb6e58f42b75b08669f9953e24fd184b0aa6f4'],237,558,795,10,0.2616822429906542,0.9906542056074766,0.0
+6913f312dadeb52b73abc1422f3354ae44869476,"ADD: meshnet + documentation (#9)
+
+* rename utils to util
+
+* fix syntax error
+
+* update import
+
+* add documentation
+
+* add meshnet
+
+* fix syntax error
+
+* add: meshnet estimator class
+
+* add util module
+
+* add required args
+
+* add highres3dnet estimator class
+
+* add common io operations
+
+* use new models as estimators
+
+* add reducer option + enh docs",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-02-13 09:03:37-05:00,18000,2018-02-13 09:03:37-05:00,18000,True,False,"['__init__.py', 'io.py', 'losses.py', 'metrics.py', '__init__.py', 'highres3dnet.py', 'meshnet.py', 'util.py', 'util.py', 'train.py']",['f5e9dde05b56edf8677482a3a9685970cf571716'],237,558,795,10,0.2616822429906542,0.9906542056074766,0.0
+4819d25e66bd3d976281747459820aef9273b092,"ADD: QuickNAT (#12)
+
+* add initial 2D quicknat implementation
+
+* replace `FUSED_BATCHED_NORM` with `FUSED_BATCH_NORM`
+
+* begin adding tests
+
+* fix  args
+
+* fix hamming + enh dice + enh docs
+
+* add
+
+* ignore top-level models dir
+
+* add json methods + input_fn method
+
+* add quicknat and `get_estimator`
+
+* add initial predict code
+
+* add dice + use tf doc style
+
+* add `get_estimator` method
+
+* add initial cli
+
+* minor doc change
+
+* add: preprocessing methods in their own namespace
+
+* warn and return nan if dice denominator is zero
+
+* add method to get list of indices
+
+* add filters as a parameter
+
+* minor enhancements
+
+* add script to train on data in hdf5
+
+* add method to read aparcaseg mapping
+
+* fix nonzero logic
+
+* minor enhancements
+
+* add predict method logic
+
+* add method to normalize to range [0, 1]
+
+* add: script for prediction using trained model",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-02-23 08:28:37-05:00,18000,2018-02-23 08:28:37-05:00,18000,True,False,"['.gitignore', '__init__.py', 'io.py', 'losses.py', 'metrics.py', '__init__.py', 'highres3dnet.py', 'meshnet.py', 'quicknat.py', 'util.py', 'preprocessing.py', 'test_metrics.py', 'test_util.py', 'util.py', 'predict.py', 'train.py', 'train_on_hdf5.py']",['54200bc13c0b6e63cea50d143a2f83037ad04024'],288,1097,1385,17,0.3545816733067729,1.0,0.33067729083665337
+9b6cba36049d9bc852554b54fc4f52ec3f23c6cb,"ADD: QuickNAT (#12)
+
+* add initial 2D quicknat implementation
+
+* replace `FUSED_BATCHED_NORM` with `FUSED_BATCH_NORM`
+
+* begin adding tests
+
+* fix  args
+
+* fix hamming + enh dice + enh docs
+
+* add
+
+* ignore top-level models dir
+
+* add json methods + input_fn method
+
+* add quicknat and `get_estimator`
+
+* add initial predict code
+
+* add dice + use tf doc style
+
+* add `get_estimator` method
+
+* add initial cli
+
+* minor doc change
+
+* add: preprocessing methods in their own namespace
+
+* warn and return nan if dice denominator is zero
+
+* add method to get list of indices
+
+* add filters as a parameter
+
+* minor enhancements
+
+* add script to train on data in hdf5
+
+* add method to read aparcaseg mapping
+
+* fix nonzero logic
+
+* minor enhancements
+
+* add predict method logic
+
+* add method to normalize to range [0, 1]
+
+* add: script for prediction using trained model",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-02-23 08:28:37-05:00,18000,2018-02-23 08:28:37-05:00,18000,True,False,"['.gitignore', '__init__.py', 'io.py', 'losses.py', 'metrics.py', '__init__.py', 'highres3dnet.py', 'meshnet.py', 'quicknat.py', 'util.py', 'preprocessing.py', 'test_metrics.py', 'test_util.py', 'util.py', 'predict.py', 'train.py', 'train_on_hdf5.py']",['6913f312dadeb52b73abc1422f3354ae44869476'],288,1097,1385,17,0.3545816733067729,1.0,0.33067729083665337
+9ebdbc909b00c80405bacabd190ec3f7e24fbb85,fix: use aparcaseg mapping if not training on brainmask,=,jakubk@mit.edu,=,jakubk@mit.edu,2018-02-28 13:57:33-05:00,18000,2018-02-28 13:57:33-05:00,18000,True,False,['train_on_hdf5.py'],['4819d25e66bd3d976281747459820aef9273b092'],7,7,14,1,1.0,0.0,0.0
+34f27f05d44a4580ec18989a49e57be6ca28dfc4,fix: use aparcaseg mapping if not training on brainmask,=,jakubk@mit.edu,=,jakubk@mit.edu,2018-02-28 13:57:33-05:00,18000,2018-02-28 13:57:33-05:00,18000,True,False,['train_on_hdf5.py'],['9b6cba36049d9bc852554b54fc4f52ec3f23c6cb'],7,7,14,1,1.0,0.0,0.0
+076067153302f501ef49fd8c96f94bed007feb1a,"ADD+FIX: aparcaseg + multi gpu support; fix epochs bug (#14)
+
+* add `aparcaseg-mapping` arg + replace params file output
+
+* remove dice coefficients from tensorboard
+
+In the future, Hamming distance should be added to tensorboard.
+
+* add: multi gpu support
+
+* add+fix: multi gpu option + epoch generator bug",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-07 17:52:20-05:00,18000,2018-03-07 17:52:20-05:00,18000,True,False,"['io.py', 'meshnet.py', 'train_on_hdf5.py']",['9ebdbc909b00c80405bacabd190ec3f7e24fbb85'],33,100,133,3,0.05555555555555555,1.0,0.7037037037037037
+4ee6250f58218bf0e93c123b175f9086515bd9e5,"ADD+FIX: aparcaseg + multi gpu support; fix epochs bug (#14)
+
+* add `aparcaseg-mapping` arg + replace params file output
+
+* remove dice coefficients from tensorboard
+
+In the future, Hamming distance should be added to tensorboard.
+
+* add: multi gpu support
+
+* add+fix: multi gpu option + epoch generator bug",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-07 17:52:20-05:00,18000,2018-03-07 17:52:20-05:00,18000,True,False,"['io.py', 'meshnet.py', 'train_on_hdf5.py']",['34f27f05d44a4580ec18989a49e57be6ca28dfc4'],33,100,133,3,0.05555555555555555,1.0,0.7037037037037037
+8182fcc70e436a628e57e902c1045b04f9c7fc9c,"ADD+ENH: stabilize codebase + make installable + add testing (#17)
+
+* first pass at stable api
+
+* add documentation
+
+* add documentation + fix
+
+* add methods to validate params
+
+* use common interface to instantiate estimators
+
+* add script to convert volumes to hdf5
+
+* use tf 1.6.0 and install pytest
+
+* update tests
+
+* add vols2hdf5 tests and docs
+
+* rename + fix tests
+
+* fix: raise error
+
+* add files for pip install
+
+* add cpu tensorflow
+
+* add test for output csv
+
+* add circleci config
+
+* use prebuilt circleci python container
+
+* do not uninstall tensorflow gpu
+
+* pip install as non-root user
+
+* reduce memory footprint of test
+
+* install package in dockerfile
+
+* fix symlinks
+
+* add normalize option + test
+
+* fix arg error
+
+* fix multiproc preprocess
+
+* fix normalize logic
+
+* fix normalize logic + test
+
+* add+enh: enh hdf5 train script + add tests + docs",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-10 21:18:13-05:00,18000,2018-03-10 21:18:13-05:00,18000,True,False,"['config.yml', 'Dockerfile', 'README.md', '__version__.py', 'metrics_test.py', 'highres3dnet.py', 'highres3dnet_test.py', 'meshnet.py', 'meshnet_test.py', 'quicknat.py', 'util.py', 'util.py', 'util_test.py', 'requirements.txt', 'setup.py', 'train_on_hdf5.py', 'train_on_hdf5_test.py', 'vols2hdf5.py', 'vols2hdf5_test.py']",['076067153302f501ef49fd8c96f94bed007feb1a'],356,1447,1803,19,0.043478260869565216,0.5805626598465473,0.7851662404092071
+2e8dcf45978675b94e4edda9baf35933ab693a37,"ADD+ENH: stabilize codebase + make installable + add testing (#17)
+
+* first pass at stable api
+
+* add documentation
+
+* add documentation + fix
+
+* add methods to validate params
+
+* use common interface to instantiate estimators
+
+* add script to convert volumes to hdf5
+
+* use tf 1.6.0 and install pytest
+
+* update tests
+
+* add vols2hdf5 tests and docs
+
+* rename + fix tests
+
+* fix: raise error
+
+* add files for pip install
+
+* add cpu tensorflow
+
+* add test for output csv
+
+* add circleci config
+
+* use prebuilt circleci python container
+
+* do not uninstall tensorflow gpu
+
+* pip install as non-root user
+
+* reduce memory footprint of test
+
+* install package in dockerfile
+
+* fix symlinks
+
+* add normalize option + test
+
+* fix arg error
+
+* fix multiproc preprocess
+
+* fix normalize logic
+
+* fix normalize logic + test
+
+* add+enh: enh hdf5 train script + add tests + docs",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-10 21:18:13-05:00,18000,2018-03-10 21:18:13-05:00,18000,True,False,"['config.yml', 'Dockerfile', 'README.md', '__version__.py', 'metrics_test.py', 'highres3dnet.py', 'highres3dnet_test.py', 'meshnet.py', 'meshnet_test.py', 'quicknat.py', 'util.py', 'util.py', 'util_test.py', 'requirements.txt', 'setup.py', 'train_on_hdf5.py', 'train_on_hdf5_test.py', 'vols2hdf5.py', 'vols2hdf5_test.py']",['4ee6250f58218bf0e93c123b175f9086515bd9e5'],356,1447,1803,19,0.043478260869565216,0.5805626598465473,0.7851662404092071
+11796642ebd31ebf84d509aaca2b242e2100945d,fix docs,=,jakubk@mit.edu,=,jakubk@mit.edu,2018-03-10 21:22:44-05:00,18000,2018-03-10 21:22:44-05:00,18000,True,False,['README.md'],['8182fcc70e436a628e57e902c1045b04f9c7fc9c'],2,4,6,1,,,
+3d6d7735e81d88d198f5fcb61e83c04b44517f7e,fix docs,=,jakubk@mit.edu,=,jakubk@mit.edu,2018-03-10 21:22:44-05:00,18000,2018-03-10 21:22:44-05:00,18000,True,False,['README.md'],['2e8dcf45978675b94e4edda9baf35933ab693a37'],2,4,6,1,,,
+676846feda55fd5eb26f63787af97b5a07f5504b,"DOCS+TST: add docs to hdf5 train cli + test metrics (#18)
+
+* rm losses
+
+* fix tensorflow and numpy implementations + add tests
+
+* minor fixes
+
+* add documentation to cli
+
+* install scipy
+
+* suppress progress bar
+
+* revert progress bar commit
+
+* fix hamming test
+
+* fix hamming tf impl
+
+* fix mistake in examples
+
+* add tests",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-11 15:24:31-04:00,14400,2018-03-11 15:24:31-04:00,14400,True,False,"['config.yml', '.gitignore', 'README.md', '__init__.py', 'losses.py', 'metrics.py', 'metrics_test.py', 'quicknat.py', 'util.py', 'util_test.py', 'preprocessing.py', 'preprocessing_test.py', 'train_on_hdf5.py']",['11796642ebd31ebf84d509aaca2b242e2100945d'],203,339,542,13,0.6388888888888888,1.0,1.0
+f37c7770a8935057e5583cd902a7cc15aa1b1175,"DOCS+TST: add docs to hdf5 train cli + test metrics (#18)
+
+* rm losses
+
+* fix tensorflow and numpy implementations + add tests
+
+* minor fixes
+
+* add documentation to cli
+
+* install scipy
+
+* suppress progress bar
+
+* revert progress bar commit
+
+* fix hamming test
+
+* fix hamming tf impl
+
+* fix mistake in examples
+
+* add tests",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-11 15:24:31-04:00,14400,2018-03-11 15:24:31-04:00,14400,True,False,"['config.yml', '.gitignore', 'README.md', '__init__.py', 'losses.py', 'metrics.py', 'metrics_test.py', 'quicknat.py', 'util.py', 'util_test.py', 'preprocessing.py', 'preprocessing_test.py', 'train_on_hdf5.py']",['3d6d7735e81d88d198f5fcb61e83c04b44517f7e'],203,339,542,13,0.6388888888888888,1.0,1.0
+dd072cc950c9474c6cf0eeec3ba8ea5178edad08,fix encoding when reading readme,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2018-03-11 15:40:03-04:00,14400,2018-03-11 15:40:03-04:00,14400,True,False,['setup.py'],['676846feda55fd5eb26f63787af97b5a07f5504b'],1,1,2,1,,,
+cf8c9680cedbf76a7beb3e6caac33f1655d4842d,fix encoding when reading readme,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2018-03-11 15:40:03-04:00,14400,2018-03-11 15:40:03-04:00,14400,True,False,['setup.py'],['f37c7770a8935057e5583cd902a7cc15aa1b1175'],1,1,2,1,,,
+748c8804fab65efa78444d7cc5921a9c7f2251f1,"ENH: add config to model_fn (#19)
+
+ENH: add config to model_fn + add eval metrics + enh train on volumes",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-17 17:35:01-04:00,14400,2018-03-17 17:35:01-04:00,14400,True,False,"['config.yml', '.coveragerc', 'Dockerfile', 'Dockerfile.gpu', 'README.md', '__init__.py', 'io.py', 'metrics.py', 'highres3dnet.py', 'meshnet.py', 'quicknat.py', 'util.py', 'util_test.py', 'preprocessing.py', 'preprocessing_test.py', 'util.py', 'requirements.txt', 'train_on_hdf5.py', 'train_on_volumes.py']",['dd072cc950c9474c6cf0eeec3ba8ea5178edad08'],249,694,943,19,0.37218045112781956,0.8947368421052632,0.6879699248120301
+cf990f02c0f126f48d48d9d407080809b262243b,"ENH: add config to model_fn (#19)
+
+ENH: add config to model_fn + add eval metrics + enh train on volumes",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-17 17:35:01-04:00,14400,2018-03-17 17:35:01-04:00,14400,True,False,"['config.yml', '.coveragerc', 'Dockerfile', 'Dockerfile.gpu', 'README.md', '__init__.py', 'io.py', 'metrics.py', 'highres3dnet.py', 'meshnet.py', 'quicknat.py', 'util.py', 'util_test.py', 'preprocessing.py', 'preprocessing_test.py', 'util.py', 'requirements.txt', 'train_on_hdf5.py', 'train_on_volumes.py']",['cf8c9680cedbf76a7beb3e6caac33f1655d4842d'],249,694,943,19,0.37218045112781956,0.8947368421052632,0.6879699248120301
+fd39e842839a7d5416b4b6b356f1d9caeba9a30a,"ENH: fix multi gpu support + generalize utils (#20)
+
+* fix multi-gpu support with evaluation
+
+* add method to validate batch for multi gpu
+
+* minor fixes
+
+* generalize `from_blocks`
+
+* use np.cbrt for cube root
+
+* enhancements
+
+* round cubed root result
+
+* use allclose instead of equal",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-20 19:19:43-04:00,14400,2018-03-20 19:19:43-04:00,14400,True,False,"['metrics.py', 'highres3dnet_test.py', 'meshnet_test.py', 'preprocessing.py', 'preprocessing_test.py', 'util.py', 'predict.py', 'train_on_volumes.py', 'vols2hdf5_test.py']",['748c8804fab65efa78444d7cc5921a9c7f2251f1'],110,213,323,9,0.3333333333333333,0.0,0.6984126984126984
+7ac9f333516c95f01220a7b60c5920c386e5d90e,"ENH: fix multi gpu support + generalize utils (#20)
+
+* fix multi-gpu support with evaluation
+
+* add method to validate batch for multi gpu
+
+* minor fixes
+
+* generalize `from_blocks`
+
+* use np.cbrt for cube root
+
+* enhancements
+
+* round cubed root result
+
+* use allclose instead of equal",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-20 19:19:43-04:00,14400,2018-03-20 19:19:43-04:00,14400,True,False,"['metrics.py', 'highres3dnet_test.py', 'meshnet_test.py', 'preprocessing.py', 'preprocessing_test.py', 'util.py', 'predict.py', 'train_on_volumes.py', 'vols2hdf5_test.py']",['cf990f02c0f126f48d48d9d407080809b262243b'],110,213,323,9,0.3333333333333333,0.0,0.6984126984126984
+ccfca13baca76cb4293fd566201c279f37df60f5,"ENH: highres3dnet (#22)
+
+* rm train.py
+
+* fix name scope
+
+* add options for dropout and removing batchnorm
+
+* style changes
+
+* add model-specific options argument
+
+* use one dockerfile for cpu and gpu
+
+* add documentation for train_on_volumes
+
+* add test for train_on_volumes
+
+* predict 4 classes for aparcaseg
+
+* fix: bug in replace method
+
+The original replace implementation did not safely replace overlapping keys and values. This commit uses an implementation that can safely handle overlapping keys and values.
+
+* fix preprocess_aparcaseg method
+
+* fix preprocess_aparcaseg test
+
+* fix preprocess_aparcaseg zero non-map values",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-31 16:31:15-04:00,14400,2018-03-31 16:31:15-04:00,14400,True,False,"['Dockerfile', 'Dockerfile.gpu', 'README.md', 'metrics.py', 'highres3dnet.py', 'highres3dnet_test.py', 'meshnet.py', 'preprocessing.py', 'preprocessing_test.py', 'train.py', 'train_on_volumes.py', 'train_on_volumes_test.py']",['fd39e842839a7d5416b4b6b356f1d9caeba9a30a'],223,301,524,12,0.0,0.7741935483870968,0.8387096774193549
+8f08accff1428cf6e97ab5620018f7c9966e6f79,"ENH: highres3dnet (#22)
+
+* rm train.py
+
+* fix name scope
+
+* add options for dropout and removing batchnorm
+
+* style changes
+
+* add model-specific options argument
+
+* use one dockerfile for cpu and gpu
+
+* add documentation for train_on_volumes
+
+* add test for train_on_volumes
+
+* predict 4 classes for aparcaseg
+
+* fix: bug in replace method
+
+The original replace implementation did not safely replace overlapping keys and values. This commit uses an implementation that can safely handle overlapping keys and values.
+
+* fix preprocess_aparcaseg method
+
+* fix preprocess_aparcaseg test
+
+* fix preprocess_aparcaseg zero non-map values",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-03-31 16:31:15-04:00,14400,2018-03-31 16:31:15-04:00,14400,True,False,"['Dockerfile', 'Dockerfile.gpu', 'README.md', 'metrics.py', 'highres3dnet.py', 'highres3dnet_test.py', 'meshnet.py', 'preprocessing.py', 'preprocessing_test.py', 'train.py', 'train_on_volumes.py', 'train_on_volumes_test.py']",['7ac9f333516c95f01220a7b60c5920c386e5d90e'],223,301,524,12,0.0,0.7741935483870968,0.8387096774193549
+a8ad77c333e3b02d876def7a3752e6c78f165bd8,"ENH: docs (#23)
+
+* fix cli call
+
+* enh: change summary + rm null characters",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-04-05 14:47:56-04:00,14400,2018-04-05 14:47:56-04:00,14400,True,False,['README.md'],['ccfca13baca76cb4293fd566201c279f37df60f5'],13,28,41,1,,,
+18b99ca9e4c47591c60479ce6e955515e0badb6c,"ENH: docs (#23)
+
+* fix cli call
+
+* enh: change summary + rm null characters",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-04-05 14:47:56-04:00,14400,2018-04-05 14:47:56-04:00,14400,True,False,['README.md'],['8f08accff1428cf6e97ab5620018f7c9966e6f79'],13,28,41,1,,,
+f1f10b516c3712be763fecd76c5948473a5d98e3,"ENH: readme (#24)
+
+* fix cli call
+
+* enh: change summary + rm null characters",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-05-08 10:36:21-04:00,14400,2018-05-08 10:36:21-04:00,14400,True,False,[],['a8ad77c333e3b02d876def7a3752e6c78f165bd8'],0,0,0,0,,,
+8235024753d158e9405b3edd7d427e4099fb065c,"ADD: augmentation + cli + RM hdf5 support (#25)
+
+* use tf 1.8.0
+
+* add methods for augmentation + replace preprocessing with volume
+
+* standardize names
+
+* make compatible with tensorflow SavedModel
+
+* move methods to nobrainer.volume
+
+* move many methods to top-level namespace
+
+* rm hdf5 instructions + add python api instructions
+
+* add methods for training
+
+* add initial predict script
+
+* rm brainbox downloader directory
+
+* add package cli entrypoint
+
+* make versions less specific
+
+* rename as_blocks to to_blocks
+
+* rm hdf5 compat
+
+* add tests for nobrainer.volume
+
+* rename num_epochs to n_epochs
+
+* use main func
+
+* rm top-level shebang files
+
+* rename __main__ to cli
+
+* use nobrainer.cli as the command line entrypoint
+
+* add args for checkpointing + implement evaluation
+
+* use non-overlapping blocks and do not shuffle
+
+* add subparsers + read csv of eval paths
+
+* update for updated cli
+
+* fix minor typo
+
+* remove pandas as requirement
+
+* add info on pb files
+
+* use tensorflow 1.8.0
+
+* add function docs
+
+* use to_blocks instead of as_blocks
+
+* add makefile
+
+* add prediction subparser
+
+* suppress future warnings
+
+* refactor prediction methods + add general predict function
+
+* verify feature and label shape after loading
+
+* refactor code example
+
+* add build, clean-build, and install commands
+
+* ignore distribution dirs
+
+* add save subparser + read mapping for labels
+
+* do not ignore csv files
+
+* move examples to examples directory
+
+* add brain labelling cli examples
+
+* use italicized nobrainer
+
+* rm redundant word",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-05-18 16:23:51-04:00,14400,2018-05-18 16:23:51-04:00,14400,True,False,"['.gitignore', 'Dockerfile', 'Makefile', 'README.md', 'data_grabber.py', 'metasearch_to_hdf5.py', 'metasearch_to_niftis.py', 'run_meta_to_hdf5.sh', 'run_meta_to_niftis.sh', 'utils.py', 'README.md', 'README.md', 'evaluation_data.csv', 'features_labels.csv', 'features_labels.csv', 'predict.py', 'save.py', 'train.py', '50-class-mapping.csv', 'README.md', 'evaluation_data.csv', 'features_labels.csv', '__init__.py', 'cli.py', 'io.py', 'highres3dnet.py', 'predict.py', 'preprocessing.py', 'preprocessing_test.py', 'train.py', 'util.py', 'volume.py', 'volume_test.py', 'predict.py', 'requirements.txt', 'setup.py', 'train_on_hdf5.py', 'train_on_hdf5_test.py', 'train_on_volumes.py', 'train_on_volumes_test.py', 'vols2hdf5.py', 'vols2hdf5_test.py']",['f1f10b516c3712be763fecd76c5948473a5d98e3'],2423,2197,4620,42,0.0390625,0.09375,0.0
+002ec63989ea3eccbcbe145c5b66071f005a8221,"ADD: augmentation + cli + RM hdf5 support (#25)
+
+* use tf 1.8.0
+
+* add methods for augmentation + replace preprocessing with volume
+
+* standardize names
+
+* make compatible with tensorflow SavedModel
+
+* move methods to nobrainer.volume
+
+* move many methods to top-level namespace
+
+* rm hdf5 instructions + add python api instructions
+
+* add methods for training
+
+* add initial predict script
+
+* rm brainbox downloader directory
+
+* add package cli entrypoint
+
+* make versions less specific
+
+* rename as_blocks to to_blocks
+
+* rm hdf5 compat
+
+* add tests for nobrainer.volume
+
+* rename num_epochs to n_epochs
+
+* use main func
+
+* rm top-level shebang files
+
+* rename __main__ to cli
+
+* use nobrainer.cli as the command line entrypoint
+
+* add args for checkpointing + implement evaluation
+
+* use non-overlapping blocks and do not shuffle
+
+* add subparsers + read csv of eval paths
+
+* update for updated cli
+
+* fix minor typo
+
+* remove pandas as requirement
+
+* add info on pb files
+
+* use tensorflow 1.8.0
+
+* add function docs
+
+* use to_blocks instead of as_blocks
+
+* add makefile
+
+* add prediction subparser
+
+* suppress future warnings
+
+* refactor prediction methods + add general predict function
+
+* verify feature and label shape after loading
+
+* refactor code example
+
+* add build, clean-build, and install commands
+
+* ignore distribution dirs
+
+* add save subparser + read mapping for labels
+
+* do not ignore csv files
+
+* move examples to examples directory
+
+* add brain labelling cli examples
+
+* use italicized nobrainer
+
+* rm redundant word",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-05-18 16:23:51-04:00,14400,2018-05-18 16:23:51-04:00,14400,True,False,"['.gitignore', 'Dockerfile', 'Makefile', 'README.md', 'data_grabber.py', 'metasearch_to_hdf5.py', 'metasearch_to_niftis.py', 'run_meta_to_hdf5.sh', 'run_meta_to_niftis.sh', 'utils.py', 'README.md', 'README.md', 'evaluation_data.csv', 'features_labels.csv', 'features_labels.csv', 'predict.py', 'save.py', 'train.py', '50-class-mapping.csv', 'README.md', 'evaluation_data.csv', 'features_labels.csv', '__init__.py', 'cli.py', 'io.py', 'highres3dnet.py', 'predict.py', 'preprocessing.py', 'preprocessing_test.py', 'train.py', 'util.py', 'volume.py', 'volume_test.py', 'predict.py', 'requirements.txt', 'setup.py', 'train_on_hdf5.py', 'train_on_hdf5_test.py', 'train_on_volumes.py', 'train_on_volumes_test.py', 'vols2hdf5.py', 'vols2hdf5_test.py']",['18b99ca9e4c47591c60479ce6e955515e0badb6c'],2423,2197,4620,42,0.0390625,0.09375,0.0
+289bc6a84d48354f42a3e4b6d3483847ccb91de7,"ENH+FIX: itershape and prediction (#26)
+
+* do not check loaded shape against volume shape
+
+* use .get_fdata instead of .dataobj
+
+* flip, rotate, and shift in a random axis
+
+* specify utf-8 encoding
+
+* break >80 character line
+
+* standardize function signature
+
+* standardize function signature
+
+* add apache license 2.0
+
+* update args from volume data generator
+
+* evaluate less frequently
+
+* revert read_volume to use .dataobj
+
+* remove volume_shape dependency
+
+* add save_csv method
+
+* standardize imports
+
+* add tests for nobrainer.io
+
+* add pytest fixture to save niftis for testing
+
+* do not install scipy explicitly
+
+* update func documentation
+
+* replace volume-shape for train and eval loop
+
+* add tests for cli
+
+* standardize function calls
+
+* make labels ints
+
+* replace volume_shape for train eval loop
+
+* clarify error message in _get_n_blocks
+
+* install quietly
+
+* do not upgrade pip as nonroot
+
+* upgrade pip as nonroot and modify PATH
+
+* enh: predict per block
+
+* fix shape error
+
+* temporarily add logging message
+
+* add prelim batch size support
+
+* add initial support for progress bar
+
+* fix spelling error
+
+* show progbar after creation
+
+* get mean of nonzero dice scores only
+
+* use tf.losses for softmax cross entropy
+
+* use float32 and int32 as x and y dtypes in datagen
+
+* add batch-size option for prediction",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-05-31 16:29:09-04:00,14400,2018-05-31 16:29:09-04:00,14400,True,False,"['config.yml', 'LICENSE', '__init__.py', '__version__.py', 'cli.py', 'cli_test.py', 'io.py', 'io_test.py', 'metrics.py', 'metrics_test.py', '__init__.py', 'highres3dnet.py', 'highres3dnet_test.py', 'meshnet.py', 'meshnet_test.py', 'quicknat.py', 'util.py', 'util_test.py', 'predict.py', 'testing.py', 'train.py', 'util.py', 'util_test.py', 'volume.py', 'volume_test.py']",['8235024753d158e9405b3edd7d427e4099fb065c'],287,690,977,25,1.0,1.0,1.0
+c0319e472b07414c5e13f4ca623e6baba34bb5f0,"ENH+FIX: itershape and prediction (#26)
+
+* do not check loaded shape against volume shape
+
+* use .get_fdata instead of .dataobj
+
+* flip, rotate, and shift in a random axis
+
+* specify utf-8 encoding
+
+* break >80 character line
+
+* standardize function signature
+
+* standardize function signature
+
+* add apache license 2.0
+
+* update args from volume data generator
+
+* evaluate less frequently
+
+* revert read_volume to use .dataobj
+
+* remove volume_shape dependency
+
+* add save_csv method
+
+* standardize imports
+
+* add tests for nobrainer.io
+
+* add pytest fixture to save niftis for testing
+
+* do not install scipy explicitly
+
+* update func documentation
+
+* replace volume-shape for train and eval loop
+
+* add tests for cli
+
+* standardize function calls
+
+* make labels ints
+
+* replace volume_shape for train eval loop
+
+* clarify error message in _get_n_blocks
+
+* install quietly
+
+* do not upgrade pip as nonroot
+
+* upgrade pip as nonroot and modify PATH
+
+* enh: predict per block
+
+* fix shape error
+
+* temporarily add logging message
+
+* add prelim batch size support
+
+* add initial support for progress bar
+
+* fix spelling error
+
+* show progbar after creation
+
+* get mean of nonzero dice scores only
+
+* use tf.losses for softmax cross entropy
+
+* use float32 and int32 as x and y dtypes in datagen
+
+* add batch-size option for prediction",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-05-31 16:29:09-04:00,14400,2018-05-31 16:29:09-04:00,14400,True,False,"['config.yml', 'LICENSE', '__init__.py', '__version__.py', 'cli.py', 'cli_test.py', 'io.py', 'io_test.py', 'metrics.py', 'metrics_test.py', '__init__.py', 'highres3dnet.py', 'highres3dnet_test.py', 'meshnet.py', 'meshnet_test.py', 'quicknat.py', 'util.py', 'util_test.py', 'predict.py', 'testing.py', 'train.py', 'util.py', 'util_test.py', 'volume.py', 'volume_test.py']",['002ec63989ea3eccbcbe145c5b66071f005a8221'],287,690,977,25,1.0,1.0,1.0
+d9b7b11737b6295a7913b15b5b8f0648b48fea84,allow features to be dict + add export outputs in predict (#27),Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-06-02 12:31:45-04:00,14400,2018-06-02 12:31:45-04:00,14400,True,False,['meshnet.py'],['c0319e472b07414c5e13f4ca623e6baba34bb5f0'],3,16,19,1,0.0,1.0,0.0
+dfb062115f235002434afb9107028f0168d04a33,allow features to be dict + add export outputs in predict (#27),Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-06-02 12:31:45-04:00,14400,2018-06-02 12:31:45-04:00,14400,True,False,['meshnet.py'],['289bc6a84d48354f42a3e4b6d3483847ccb91de7'],3,16,19,1,0.0,1.0,0.0
+7572e7afa87e103a0e1bd1c38cda72ea3706c81a,Added variational networks,Patrick McClure,mcclureps@radium.nimh.nih.gov,Patrick McClure,mcclureps@radium.nimh.nih.gov,2018-06-04 16:25:10-04:00,14400,2018-06-04 16:25:10-04:00,14400,True,False,"['__init__.py', 'cli.py', '__init__.py', 'meshnetvwn.py', 'meshnetwn.py', 'util.py', 'vwn_conv.py']",['c0319e472b07414c5e13f4ca623e6baba34bb5f0'],1,2757,2758,7,0.042735042735042736,0.6068376068376068,0.4453941120607787
+1f1e3b40701441c5657db95aec82c362e33be0d7,Updated meshnetwn and meshnetvwn code,Patrick McClure,mcclureps@radium.nimh.nih.gov,Patrick McClure,mcclureps@radium.nimh.nih.gov,2018-06-11 14:07:24-04:00,14400,2018-06-11 14:07:24-04:00,14400,True,False,"['meshnet.py', 'meshnetvwn.py', 'meshnetwn.py', 'meshnetwn_old.py']",['7572e7afa87e103a0e1bd1c38cda72ea3706c81a'],45,348,393,4,0.09210526315789473,0.3223684210526316,0.0
+14504c729923618e2be1f7cd282123a1197577a4,nao_update_1,Nao Rho,skdh2010@gmail.com,Nao Rho,skdh2010@gmail.com,2018-06-18 15:01:44-04:00,14400,2018-06-18 15:01:44-04:00,14400,True,False,"['cli.py', 'predict.py']",['1f1e3b40701441c5657db95aec82c362e33be0d7'],21,274,295,2,0.0,0.06962025316455696,0.3924050632911392
+9b677c7fc12d6c087de30dca554a1381d910cacc,Returns Variance and Entropy,Nao Rho,skdh2010@gmail.com,Nao Rho,skdh2010@gmail.com,2018-06-18 15:21:01-04:00,14400,2018-06-18 15:21:01-04:00,14400,True,False,['predict.py'],['14504c729923618e2be1f7cd282123a1197577a4'],21,1,22,1,1.0,1.0,1.0
+37544d2ec25f810b6621294f55e3f24afe1525cd,fix: number of max steps for train_eval,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2018-06-19 09:07:46-04:00,14400,2018-06-19 09:07:46-04:00,14400,True,False,['train.py'],['d9b7b11737b6295a7913b15b5b8f0648b48fea84'],4,9,13,1,0.0,1.0,0.0
+b017e4647bd1a1937c35b76cf587cdc36e0e8400,enh: do not overlap if strides is None,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2018-06-19 09:09:24-04:00,14400,2018-06-19 09:09:24-04:00,14400,True,False,['volume.py'],['37544d2ec25f810b6621294f55e3f24afe1525cd'],19,81,100,1,0.0,0.0,0.022222222222222223
+f781b0e3baa2d01bd4e774726756110dd38f3a0f,added Variance Threshold by Nao Rho,Nao Rho,skdh2010@gmail.com,Nao Rho,skdh2010@gmail.com,2018-06-20 15:13:20-04:00,14400,2018-06-20 15:13:20-04:00,14400,True,False,"['cli.py', 'predict.py']",['9b677c7fc12d6c087de30dca554a1381d910cacc'],0,25,25,2,0.0,0.6086956521739131,0.2608695652173913
+16f02c8b9a89ba311352e333143e9d7e3496f114,removed variance threshold,Nao Rho,skdh2010@gmail.com,Nao Rho,skdh2010@gmail.com,2018-07-12 11:36:47-04:00,14400,2018-07-12 11:36:47-04:00,14400,True,False,"['cli.py', 'predict.py']",['f781b0e3baa2d01bd4e774726756110dd38f3a0f'],22,0,22,2,1.0,0.3333333333333333,0.7142857142857143
+74961bb92cc97ed064f0c154c2ad03a4cc010c7d,add module for validating multiclass predictions with a ground truth,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-06 14:32:48-04:00,14400,2018-08-06 14:32:48-04:00,14400,True,False,['validate.py'],['d7add03095a0a317e9b5878e41ffba3ff2a82df4'],0,138,138,1,0.0,1.0,0.0
+d88e8fb0f44a73748f95df97e637b55e083a508d,add validate function to cli,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-06 14:33:30-04:00,14400,2018-08-06 14:33:30-04:00,14400,True,False,['cli.py'],['74961bb92cc97ed064f0c154c2ad03a4cc010c7d'],10,71,81,1,0.0,0.0,1.0
+3e9dd5040d497191a0cbf0cedb8f1a702083162a,tidy predict and validate in cli.py,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-06 15:54:42-04:00,14400,2018-08-06 15:54:42-04:00,14400,True,False,['cli.py'],['d88e8fb0f44a73748f95df97e637b55e083a508d'],89,23,112,1,1.0,1.0,0.0
+e00becb8e835457a20848798a9bb18238d596f4e,add sanity check for number of samples,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-06 15:55:01-04:00,14400,2018-08-06 15:55:01-04:00,14400,True,False,['predict.py'],['3e9dd5040d497191a0cbf0cedb8f1a702083162a'],0,4,4,1,0.0,0.0,0.0
+bbecbf5c59cb536039c8e5df2662e1a2d9fd5f8a,finish validate functionality,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-06 16:15:01-04:00,14400,2018-08-06 16:15:01-04:00,14400,True,False,['validate.py'],['e00becb8e835457a20848798a9bb18238d596f4e'],12,41,53,1,0.0,0.0,0.0
+3398611f3a965a20643af678a04f13d13b45ba01,make pep8 changes,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-06 16:56:46-04:00,14400,2018-08-06 16:56:46-04:00,14400,True,False,"['cli.py', 'predict.py', 'validate.py']",['bbecbf5c59cb536039c8e5df2662e1a2d9fd5f8a'],145,134,279,3,0.0,0.0,0.0
+dfff73c30055965c268aab4d0107b867db67c8c7,add validation to parser,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-06 16:59:07-04:00,14400,2018-08-06 16:59:07-04:00,14400,True,False,['cli.py'],['3398611f3a965a20643af678a04f13d13b45ba01'],2,35,37,1,0.0,0.9,1.0
+954869919a3f68ae62f2ef45ef614ad79748b52a,switch to kernel-wise noise,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-08 14:18:42-04:00,14400,2018-08-08 14:18:42-04:00,14400,True,False,['vwn_conv.py'],['dfff73c30055965c268aab4d0107b867db67c8c7'],1,1,2,1,,,
+2d976a79e06d554e4de8aec2dd78d9392fac4563,fix corpus callosum labels,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-08 14:19:15-04:00,14400,2018-08-08 14:19:15-04:00,14400,True,False,['50-class-mapping.csv'],['954869919a3f68ae62f2ef45ef614ad79748b52a'],1,6,7,1,,,
+375fdccd3e743d6d604a372c0e6e63e4b6fafef5,fix validate parsing and reading from a csv for validation,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-08 16:33:17-04:00,14400,2018-08-08 16:33:17-04:00,14400,True,False,"['cli.py', 'validate.py']",['2d976a79e06d554e4de8aec2dd78d9392fac4563'],26,42,68,2,0.0,1.0,0.8461538461538461
+64f58818abd4d679d6fe7748a9234020a2a562da,finish bug fixes for validation with patrick,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-08 16:48:27-04:00,14400,2018-08-08 16:48:27-04:00,14400,True,False,['validate.py'],['375fdccd3e743d6d604a372c0e6e63e4b6fafef5'],14,12,26,1,1.0,0.6,1.0
+51554eba9c847e75d7419ef8890efded0830d476,save dice within loop,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-08 17:14:56-04:00,14400,2018-08-08 17:14:56-04:00,14400,True,False,['validate.py'],['64f58818abd4d679d6fe7748a9234020a2a562da'],3,3,6,1,,,
+3369964fd207c08da2cbbe9522bb6cb548ac4c7a,fix prediction save,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-08 17:47:49-04:00,14400,2018-08-08 17:47:49-04:00,14400,True,False,['cli.py'],['51554eba9c847e75d7419ef8890efded0830d476'],3,3,6,1,,,
+dbede0cdb8d9978e3179a26c6ce12e3ce24a891a,change default normalizer to none,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-09 16:06:34-04:00,14400,2018-08-09 16:06:34-04:00,14400,True,False,"['predict.py', 'validate.py']",['3369964fd207c08da2cbbe9522bb6cb548ac4c7a'],6,19,25,2,0.2857142857142857,0.2857142857142857,0.2857142857142857
+7bd056851941f87b00769b40d0efa0965ec2fb3f,fix validate and add test,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-10 11:38:08-04:00,14400,2018-08-10 11:38:08-04:00,14400,True,False,"['predict.py', 'validate.py']",['dbede0cdb8d9978e3179a26c6ce12e3ce24a891a'],10,47,57,2,0.2,0.88,0.76
+853b1b65b0df8e3f6e750cf2774c393d64681c38,add validate to readme,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-10 11:38:15-04:00,14400,2018-08-10 11:38:15-04:00,14400,True,False,['README.md'],['7bd056851941f87b00769b40d0efa0965ec2fb3f'],0,11,11,1,,,
+60b4e9190864ffe1cec8b74f7ee3da280186219a,small changes to validate code,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-10 12:42:21-04:00,14400,2018-08-10 12:42:21-04:00,14400,True,False,['validate.py'],['853b1b65b0df8e3f6e750cf2774c393d64681c38'],3,1,4,1,1.0,1.0,1.0
+b77beb3b3f048677d8cb7c7090a33d548b0af1ee,reapply 9db6d6d83dbdb9563cfc9e02c1ed47e8261233f4 which was lost duing merge,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-13 13:04:19-04:00,14400,2018-08-13 13:04:19-04:00,14400,True,False,['train.py'],['60b4e9190864ffe1cec8b74f7ee3da280186219a'],9,4,13,1,1.0,0.0,1.0
+29566936630d997d0a6c1064e4a54cc9f51ed395,revert shuffle default to false,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-13 17:06:33-04:00,14400,2018-08-13 17:06:33-04:00,14400,True,False,['volume.py'],['b77beb3b3f048677d8cb7c7090a33d548b0af1ee'],1,1,2,1,,,
+8aa0e47a55c2f4fe1e0f30f83287b87137794dbe,log scaled l2-loss,leej3,johnleenimh@gmail.com,leej3,johnleenimh@gmail.com,2018-08-13 17:07:31-04:00,14400,2018-08-13 17:07:31-04:00,14400,True,False,['meshnetwn.py'],['29566936630d997d0a6c1064e4a54cc9f51ed395'],6,3,9,1,1.0,1.0,1.0
+ae7f952419cf7d9b20bdf5d2ae682b338697b9da,use tf 1.9.0 + install keras skimage seaborn,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2018-08-24 17:15:17-04:00,14400,2018-08-24 17:15:17-04:00,14400,True,False,['Dockerfile'],['dfb062115f235002434afb9107028f0168d04a33'],3,10,13,1,,,
+6e3bec27759b39093efae565d8d8a730f785185b,rm match_histogram,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2018-08-24 17:15:37-04:00,14400,2018-08-24 17:15:37-04:00,14400,True,False,['volume.py'],['ae7f952419cf7d9b20bdf5d2ae682b338697b9da'],26,0,26,1,0.0,0.0,1.0
+a2ebe04c67035d7072ca32eee32ac9c5e596e047,Update README.md,Satrajit Ghosh,satrajit.ghosh@gmail.com,GitHub,noreply@github.com,2018-09-15 11:55:16-04:00,14400,2018-09-15 11:55:16-04:00,14400,True,False,['README.md'],['6e3bec27759b39093efae565d8d8a730f785185b'],0,4,4,1,,,
+8cffeb91628b83ebec08f790992280c51e12c813,"ENH: bugfixes (#31)
+
+* fix: number of max steps for train_eval
+
+* enh: do not overlap if strides is None",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-09-24 17:21:36-04:00,14400,2018-09-24 17:21:36-04:00,14400,True,False,"['train.py', 'volume.py']",['6b0fe0f8a582ece360d06c2caddeb6db7aea0219'],23,90,113,2,0.0,0.0,0.02127659574468085
+3ba7231f353ae8f512e0d66385026f172f36fb26,"Update nobrainer/cli.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:47:13-05:00,18000,2018-11-29 13:47:13-05:00,18000,True,False,['cli.py'],['8aa0e47a55c2f4fe1e0f30f83287b87137794dbe'],1,1,2,1,,,
+9504205f0910fa4a9b1c9fccf231edc1c2ab9567,"Update nobrainer/cli.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:47:26-05:00,18000,2018-11-29 13:47:26-05:00,18000,True,False,['cli.py'],['3ba7231f353ae8f512e0d66385026f172f36fb26'],1,1,2,1,,,
+1a0b4960e697f417aa8db62bd1da4b88f76def94,"Update nobrainer/cli.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:47:39-05:00,18000,2018-11-29 13:47:39-05:00,18000,True,False,['cli.py'],['9504205f0910fa4a9b1c9fccf231edc1c2ab9567'],1,1,2,1,,,
+6f597fd337ce080bda74f936cabfa61960281e22,"Update nobrainer/cli.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:47:54-05:00,18000,2018-11-29 13:47:54-05:00,18000,True,False,['cli.py'],['1a0b4960e697f417aa8db62bd1da4b88f76def94'],1,1,2,1,,,
+a8ca028d47bedf27d1c28ebc9b84a4372c892c01,"Update nobrainer/cli.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:48:03-05:00,18000,2018-11-29 13:48:03-05:00,18000,True,False,['cli.py'],['6f597fd337ce080bda74f936cabfa61960281e22'],1,1,2,1,,,
+851450e7b8dae728f04521be69baf8456dae87bb,"Update nobrainer/predict.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:48:11-05:00,18000,2018-11-29 13:48:11-05:00,18000,True,False,['predict.py'],['a8ca028d47bedf27d1c28ebc9b84a4372c892c01'],1,1,2,1,,,
+fa98e8f37439df602c80f70c5a6f9ec49e873829,"Update nobrainer/predict.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:48:20-05:00,18000,2018-11-29 13:48:20-05:00,18000,True,False,['predict.py'],['851450e7b8dae728f04521be69baf8456dae87bb'],1,1,2,1,,,
+920b8d4d7d1dba869984088eab0dd0b323fec676,"Update nobrainer/predict.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:48:29-05:00,18000,2018-11-29 13:48:29-05:00,18000,True,False,['predict.py'],['fa98e8f37439df602c80f70c5a6f9ec49e873829'],1,1,2,1,,,
+5f9bfcfd3569f4855c811094ffdf8f4c7aed2654,"Update nobrainer/cli.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:48:59-05:00,18000,2018-11-29 13:48:59-05:00,18000,True,False,['cli.py'],['920b8d4d7d1dba869984088eab0dd0b323fec676'],1,1,2,1,,,
+1de2f98c0434776981afe1d36c37a4900b6d198c,"Update nobrainer/cli.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:49:29-05:00,18000,2018-11-29 13:49:29-05:00,18000,True,False,['cli.py'],['5f9bfcfd3569f4855c811094ffdf8f4c7aed2654'],1,1,2,1,,,
+e466d2dede5637380e766a32675763a623e705c4,"Update nobrainer/models/meshnetvwn.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:50:03-05:00,18000,2018-11-29 13:50:03-05:00,18000,True,False,['meshnetvwn.py'],['1de2f98c0434776981afe1d36c37a4900b6d198c'],1,1,2,1,,,
+2ee76a639944122e158f30f30b34c3580f10ad08,"Update nobrainer/predict.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:50:59-05:00,18000,2018-11-29 13:50:59-05:00,18000,True,False,['predict.py'],['e466d2dede5637380e766a32675763a623e705c4'],1,1,2,1,,,
+652d0247cd368354d1c3a271a55c2f342e2e206a,"Update nobrainer/predict.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:52:14-05:00,18000,2018-11-29 13:52:14-05:00,18000,True,False,['predict.py'],['2ee76a639944122e158f30f30b34c3580f10ad08'],1,1,2,1,,,
+20447f20d97bd5cc45a0edcf8e5e5d203ae24d33,"Update nobrainer/predict.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:52:55-05:00,18000,2018-11-29 13:52:55-05:00,18000,True,False,['predict.py'],['652d0247cd368354d1c3a271a55c2f342e2e206a'],1,1,2,1,,,
+af2102d77e8545935c94a559dd71516b02b7a3d4,"Update nobrainer/predict.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:53:17-05:00,18000,2018-11-29 13:53:17-05:00,18000,True,False,['predict.py'],['20447f20d97bd5cc45a0edcf8e5e5d203ae24d33'],1,1,2,1,,,
+9d53ee8a69a3c42b5b5e48d9020fc805b90eec77,"Update nobrainer/predict.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:53:37-05:00,18000,2018-11-29 13:53:37-05:00,18000,True,False,['predict.py'],['af2102d77e8545935c94a559dd71516b02b7a3d4'],1,1,2,1,,,
+ab7cbef21678506698e76cc8978434fcb755b97f,"Update nobrainer/predict.py
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 13:54:09-05:00,18000,2018-11-29 13:54:09-05:00,18000,True,False,['predict.py'],['9d53ee8a69a3c42b5b5e48d9020fc805b90eec77'],1,1,2,1,,,
+10e3d93d5add7884be8df74d63899d194aa6337f,"Apply suggestions from code review
+
+Co-Authored-By: leej3 <leej3@users.noreply.github.com>",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2018-11-29 14:00:09-05:00,18000,2018-11-29 14:00:09-05:00,18000,True,False,['predict.py'],['ab7cbef21678506698e76cc8978434fcb755b97f'],13,13,26,1,,,
+549cf8bd9566a052c60b2b38a4c2a75df81eef83,"ADD: 3D UNet (#38)
+
+* add 3d unet
+
+* add tf version arg + rm scikit-image seaborn
+
+* fix: use padding with correct number of filters
+
+* use drop_remainder in dset batch + require tf >= 1.10.0
+
+* add nobrainer.losses
+
+* add all files temporarily
+
+* minor clean ups
+
+* fix syntax error
+
+* remove unused import
+
+* rm util_test
+
+* fix variable names
+
+* add axis arg to streaming_x funcs
+
+* remove unused code
+
+* fix tests for tversky
+
+* mv losses test file",Jakub Kaczmarzyk,jakubk@mit.edu,GitHub,noreply@github.com,2019-01-02 10:59:08-05:00,18000,2019-01-02 10:59:08-05:00,18000,True,False,"['Dockerfile', '__init__.py', 'losses.py', 'losses_test.py', 'medium.npy', 'metrics.py', 'metrics_test.py', '__init__.py', 'highres3dnet.py', 'meshnet.py', 'unet2d.py', 'unet3d.py', 'util.py', 'strong.npy', 'util.py', 'util_test.py', 'volume.py', 'volume_test.py', 'weak.npy', 'setup.py']",['8cffeb91628b83ebec08f790992280c51e12c813'],310,864,1174,20,0.0,0.9411764705882353,0.02422145328719723
+df300b32a174ccaf437e12c1d1ccbac4c9c92255,Removed assumption of 256^3 volumes for the KLD loss,patrick-mcclure,patrick.s.mcclure@gmail.com,patrick-mcclure,patrick.s.mcclure@gmail.com,2019-01-29 10:03:42-05:00,18000,2019-01-29 10:03:42-05:00,18000,True,False,"['meshnetvwn.py', 'meshnetwn.py']",['10e3d93d5add7884be8df74d63899d194aa6337f'],3,3,6,2,,,
+9038e375725a31ad5b8afa7e39723f7638d79411,Enabled specification of validation output path,patrick-mcclure,patrick.s.mcclure@gmail.com,patrick-mcclure,patrick.s.mcclure@gmail.com,2019-01-29 10:34:57-05:00,18000,2019-01-29 10:34:57-05:00,18000,True,False,"['cli.py', 'predict.py', 'validate.py', 'pac_2530_orig.nii_dice.npy', 'pac_2535_orig.nii_dice.npy', 'pac_2547_orig.nii_dice.npy', 'pac_2560_orig.nii_dice.npy', 'pac_2581_orig.nii_dice.npy', 'pac_2582_orig.nii_dice.npy', 'pac_2589_orig.nii_dice.npy']",['df300b32a174ccaf437e12c1d1ccbac4c9c92255'],6,12,18,10,0.0,0.6666666666666666,0.6666666666666666
+5c0af8726b7ebe70a65735bcfe7565ed339bab28,removed outputs,patrick-mcclure,patrick.s.mcclure@gmail.com,patrick-mcclure,patrick.s.mcclure@gmail.com,2019-01-29 10:37:38-05:00,18000,2019-01-29 10:37:38-05:00,18000,True,False,"['pac_2530_orig.nii_dice.npy', 'pac_2535_orig.nii_dice.npy', 'pac_2547_orig.nii_dice.npy', 'pac_2560_orig.nii_dice.npy', 'pac_2581_orig.nii_dice.npy', 'pac_2582_orig.nii_dice.npy', 'pac_2589_orig.nii_dice.npy']",['9038e375725a31ad5b8afa7e39723f7638d79411'],0,0,0,7,,,
+44d330d23f0775c6393824c6885b49089e16b8a7,vadlidation test function,patrick-mcclure,patrick.s.mcclure@gmail.com,patrick-mcclure,patrick.s.mcclure@gmail.com,2019-01-29 10:53:17-05:00,18000,2019-01-29 10:53:17-05:00,18000,True,False,['validate.py'],['5c0af8726b7ebe70a65735bcfe7565ed339bab28'],25,0,25,1,1.0,0.0,0.0
+4dd379cea594285e0de62be7d8f5280da873402c,Added spike-and-slab variational model,patrick-mcclure,patrick.s.mcclure@gmail.com,patrick-mcclure,patrick.s.mcclure@gmail.com,2019-02-28 12:42:03-05:00,18000,2019-02-28 12:42:03-05:00,18000,True,False,"['cli.py', '__init__.py', 'bayesian_dropout.py', 'meshnetbvwn.py', 'meshnetbwn.py', 'meshnetvwn.py', 'meshnetwn.py', 'util.py', 'validate.py']",['44d330d23f0775c6393824c6885b49089e16b8a7'],5,706,711,9,0.1323529411764706,0.4264705882352941,0.03823529411764706
+3bd95fa2f3cd24add9457d650165098fef180ec7,Fixed naming of saved uncertainty volumes,patrick-mcclure,patrick.s.mcclure@gmail.com,patrick-mcclure,patrick.s.mcclure@gmail.com,2019-06-20 17:02:58-04:00,14400,2019-06-20 17:02:58-04:00,14400,True,False,"['cli.py', 'validate.py']",['92942a31794c4306b6cb406c8a89539d9b192e69'],11,20,31,2,0.0,0.0,0.625
+dd4bbe1c5a2b2f1c463eab5332e4e1e317394fca,add GPU dockerfile support,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-07 09:00:39-07:00,25200,2019-08-07 09:00:39-07:00,25200,True,False,"['.gitignore', 'Dockerfile.gpu', 'cli_click.py', 'requirements.txt', 'setup.py', 'mri_convert', 'mri_convert.bin', 'license.txt']",['3bd95fa2f3cd24add9457d650165098fef180ec7'],3,177,180,8,0.09230769230769231,0.09230769230769231,0.046153846153846156
+df2ae40170a7035bea61310cd652716a31b65b6a,update readme for distribution,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-07 09:02:46-07:00,25200,2019-08-07 09:02:46-07:00,25200,True,False,['README.md'],['dd4bbe1c5a2b2f1c463eab5332e4e1e317394fca'],30,19,49,1,,,
+5bd1f61df6abf16a640459233e13f0046ce85c16,do nearest interpolation to orig space,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-07 11:04:59-07:00,25200,2019-08-07 11:04:59-07:00,25200,True,False,['cli_click.py'],['97b6d9586a9848b1c142d4eb5fd9a55a9cbd8928'],5,9,14,1,1.0,1.0,0.0
+8efac1fbeedcadd89b1830163d218e311f33ad9b,update readme,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-07 14:27:31-07:00,25200,2019-08-07 14:27:31-07:00,25200,True,False,['README.md'],['5bd1f61df6abf16a640459233e13f0046ce85c16'],1,7,8,1,,,
+da4dc4abd96e869dc8b5c6f340f10264ba49528b,update cpu dockerfile,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-13 22:55:13-04:00,14400,2019-08-13 22:55:13-04:00,14400,True,False,['Dockerfile'],['1cf093ba19893c3e6f19e6c9fe86d2cfe219950e'],16,23,39,1,,,
+57783567bb498f1e08ba79d7decf9bb9d632c633,update README,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-13 23:13:17-04:00,14400,2019-08-13 23:13:17-04:00,14400,True,False,['README.md'],['da4dc4abd96e869dc8b5c6f340f10264ba49528b'],0,10,10,1,,,
+54835135b6576b6f64a5f3127137ed9e634bd1be,update README,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-13 23:33:50-04:00,14400,2019-08-13 23:33:50-04:00,14400,True,False,['README.md'],['57783567bb498f1e08ba79d7decf9bb9d632c633'],2,4,6,1,,,
+7c631ae41b16f7738af15466fa16eae070bdfc16,fix: ensure output dtype and data are the same,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-14 13:38:06-04:00,14400,2019-08-14 13:38:06-04:00,14400,True,False,['cli_click.py'],['54835135b6576b6f64a5f3127137ed9e634bd1be'],1,5,6,1,0.25,0.25,0.0
+bf3b26f11f3410e2e5527defdee190c0a9484f7f,add figure 4 from manuscript,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2019-08-16 09:39:58-04:00,14400,2019-08-16 09:39:58-04:00,14400,True,False,"['README.md', 'figure4.png']",['7c631ae41b16f7738af15466fa16eae070bdfc16'],0,2,2,2,,,
+38b0c25d906d9b0c07f68423f7ee81795ca3afd6,"remove `--docker-login` from `singularity pull`.
+
+because the docker image is public, users do not need to log into dockerhub to download the image.",Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2019-08-16 09:40:30-04:00,14400,2019-08-16 09:40:30-04:00,14400,True,False,['README.md'],['bf3b26f11f3410e2e5527defdee190c0a9484f7f'],1,1,2,1,,,
+8ff726696ac2d551376c682ca5be58464115e7cc,fix: change output to a prefix closes #7,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-20 22:06:03-04:00,14400,2019-08-20 22:06:03-04:00,14400,True,False,['cli_click.py'],['233eafc56f6cbb43fd6167fb8b7ac5d0d3ab81d7'],6,5,11,1,1.0,1.0,1.0
+7e2b2bdee58962f229befe9375fc5afeadd4aa3c,fix outprefix and update readme,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-20 22:32:41-04:00,14400,2019-08-20 22:32:41-04:00,14400,True,False,"['README.md', 'cli_click.py']",['8ff726696ac2d551376c682ca5be58464115e7cc'],5,4,9,2,1.0,1.0,1.0
+93d7fc8e6427f40ff8aa40da4c98af9487544149,"rm nobrainer from repo and make it a dependency
+
+Changes introduced by this commit:
+  - removes nobrainer remnants from this repository (including .circleci, .coveragerc, examples [pertained to nobrainer], and nobrainer).
+  - makes pmmclure's version of nobrainer a dependency of kwyk
+  - adds setup.cfg file with metadata
+  - creates namespace `kwyk`, which only contains the cli `kwyk/cli.py`.
+  - renames the command-line tool to `kwyk`.
+  - adds versioneer to produce neat version strings",Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2019-08-23 19:38:46-04:00,14400,2019-08-23 19:38:46-04:00,14400,True,False,"['config.yml', '.coveragerc', '.gitattributes', 'Dockerfile', 'Dockerfile.gpu', 'MANIFEST.in', 'Makefile', 'README.md', 'README.md', 'evaluation_data.csv', 'features_labels.csv', 'features_labels.csv', 'predict.py', 'save.py', 'train.py', '50-class-mapping.csv', 'README.md', 'evaluation_data.csv', 'features_labels.csv', 'mri_convert', 'mri_convert.bin', 'license.txt', '__init__.py', '_version.py', 'cli.py', '__init__.py', '__version__.py', 'cli.py', 'cli_test.py', 'io.py', 'io_test.py', 'losses.py', 'losses_test.py', 'medium.npy', 'metrics.py', 'metrics_test.py', '__init__.py', 'bayesian_dropout.py', 'highres3dnet.py', 'highres3dnet_test.py', 'meshnet.py', 'meshnet_test.py', 'meshnetbvwn.py', 'meshnetbwn.py', 'meshnetcwn.py', 'meshnetvwn.py', 'meshnetwn.py', 'meshnetwn_old.py', 'quicknat.py', 'unet2d.py', 'unet3d.py', 'util.py', 'util_test.py', 'vwn_conv.py', 'wn_conv.py', 'predict.py', 'strong.npy', 'testing.py', 'train.py', 'util.py', 'validate.py', 'volume.py', 'volume_test.py', 'weak.npy', 'requirements.txt', 'saved_model.pb', 'variables.data-00000-of-00001', 'variables.index', 'saved_model.pb', 'variables.data-00000-of-00001', 'variables.index', 'saved_model.pb', 'variables.data-00000-of-00001', 'variables.index', 'setup.cfg', 'setup.py', 'versioneer.py']",['7e2b2bdee58962f229befe9375fc5afeadd4aa3c'],9167,2433,11600,77,0.9218455743879472,0.20495919648462022,0.7602008788449467
+36958ce295770dbc8a91b4d2b6604ac22ad9eced,download saved models,Jakub Kaczmarzyk,jakubk@mit.edu,Jakub Kaczmarzyk,jakubk@mit.edu,2019-08-23 20:56:28-04:00,14400,2019-08-23 20:56:28-04:00,14400,True,False,"['Dockerfile', 'Dockerfile.gpu']",['93d7fc8e6427f40ff8aa40da4c98af9487544149'],5,13,18,2,,,
+eb246902f7736c2d5dd0bc78f62f780ab1315e30,doc: update README for docker tags,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-08-26 20:03:24-04:00,14400,2019-08-26 20:03:24-04:00,14400,True,False,['README.md'],['f93d4cad56a732864a30a97e6939537f81e0fde1'],0,10,10,1,,,
+22b69cf09c390928ef6f1b7c7ff6b9470a61ae6e,enh: add eletemtry to kwyk,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-09-02 13:15:10-04:00,14400,2019-09-02 13:15:10-04:00,14400,True,False,"['cli.py', 'setup.cfg']",['eb246902f7736c2d5dd0bc78f62f780ab1315e30'],3,5,8,2,0.0,0.0,0.0
+adb88e3958433afb87b840d6d248afddeb36aeb2,fix: a bit more resilient version checking,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2019-09-04 09:52:17-04:00,14400,2019-09-04 09:52:17-04:00,14400,True,False,"['Dockerfile', 'cli.py']",['e3f7b8140210da7986b5cc0b56c36dc84143ccdb'],3,9,12,2,0.0,0.0,0.0
+57e1af29573684ea5aaf3b6fd546856688669794,"doc: update note for singularity environment variables
+
+closes #13",Satrajit Ghosh,satrajit.ghosh@gmail.com,GitHub,noreply@github.com,2019-10-25 14:35:53-04:00,14400,2019-10-25 14:35:53-04:00,14400,True,False,['README.md'],['adb88e3958433afb87b840d6d248afddeb36aeb2'],0,2,2,1,,,
+e57784714c53bd9e4348102f05d416d167d16fd9,Update README.md,Satrajit Ghosh,satrajit.ghosh@gmail.com,GitHub,noreply@github.com,2019-11-11 12:51:59-05:00,18000,2019-11-11 12:51:59-05:00,18000,True,False,['README.md'],['adb88e3958433afb87b840d6d248afddeb36aeb2'],1,3,4,1,,,
+2d80f06e2e7fc2f53fb7d5b6cc14425321350498,add average uncertainty to cli,Hoda Rajaei,rajaei.hoda@gmail.com,Hoda Rajaei,rajaei.hoda@gmail.com,2021-02-19 12:29:29-08:00,28800,2021-02-19 12:29:29-08:00,28800,True,False,['cli.py'],['fb12cb6324b7bfc7ed3dc385ca43ee3202d02fe8'],1,8,9,1,0.0,0.0,0.0
+154d902937b2b446821bbf494260b1d5b0de0919,"- modified Dockerfiles
+- edited README for uncertainty
+- add dockerignore file",Hoda Rajaei,rajaei.hoda@gmail.com,Hoda Rajaei,rajaei.hoda@gmail.com,2021-02-26 15:45:12-08:00,28800,2021-02-26 15:45:12-08:00,28800,True,False,"['Dockerfile', 'Dockerfile.gpu', 'README.md']",['2d80f06e2e7fc2f53fb7d5b6cc14425321350498'],2,3,5,3,,,
+c52da2e36b702351a2394e0826dc707b8f9bcd55,"README, .dockerignore",Hoda Rajaei,rajaei.hoda@gmail.com,Hoda Rajaei,rajaei.hoda@gmail.com,2021-02-26 15:59:34-08:00,28800,2021-02-26 15:59:34-08:00,28800,True,False,"['.dockerignore', 'README.md']",['154d902937b2b446821bbf494260b1d5b0de0919'],1,6,7,2,,,
+9be17e2fe4c846177cb2f799c6158bd0901ae745,fix get-pip.py url,Jakub Kaczmarzyk,jakub.kaczmarzyk@gmail.com,Jakub Kaczmarzyk,jakub.kaczmarzyk@gmail.com,2021-04-15 09:51:21-04:00,14400,2021-04-15 09:51:21-04:00,14400,True,False,"['Dockerfile', 'Dockerfile.gpu']",['68f5b9324fe7df17b05f7b0fca4f3713b7c7d4d6'],2,2,4,2,,,
+27ec9ef356a2558c533559e8499e971e07081b3d,fix: allow processing multiple files at a time,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2021-06-24 21:51:51-04:00,14400,2021-06-24 21:51:51-04:00,14400,True,False,['cli.py'],['ebdc566acb2fc1347e594da645ee5985843eeb77'],7,29,36,1,1.0,1.0,0.0
+52fd213e56bb10e5c735651af69e4d493e66b490,allow using infile path in output.,Satrajit Ghosh,satrajit.ghosh@gmail.com,GitHub,noreply@github.com,2022-03-26 11:06:25-04:00,14400,2022-03-26 11:06:25-04:00,14400,True,False,['cli.py'],['638edd85bfffe154180e0b861c0dc5c7ad5754fc'],3,9,12,1,0.0,0.0,0.0
+7c07078fa8fbe47f16680f7e7ff09381c4bf4646,try a variant of stemming,Satrajit Ghosh,satrajit.ghosh@gmail.com,GitHub,noreply@github.com,2022-03-28 16:11:52-04:00,14400,2022-03-28 16:11:52-04:00,14400,True,False,['cli.py'],['52fd213e56bb10e5c735651af69e4d493e66b490'],3,3,6,1,,,
+8fc17abe3535b05c8277e8e5064f0a3b65ab4187,fix python3.5 error for Path,Hoda Rajaei,rajaei.hoda@gmail.com,Hoda Rajaei,rajaei.hoda@gmail.com,2022-03-31 02:57:04+04:30,-16200,2022-03-31 02:57:04+04:30,-16200,True,False,['cli.py'],['7c07078fa8fbe47f16680f7e7ff09381c4bf4646'],1,1,2,1,,,
+21bd1d0db43b7c32ea2877e6d12662ea45d7ef1b,Update README.md,Hoda Rajaei,rajaei.hoda@gmail.com,GitHub,noreply@github.com,2022-03-31 22:14:02-07:00,25200,2022-03-31 22:14:02-07:00,25200,True,False,['README.md'],['8fc17abe3535b05c8277e8e5064f0a3b65ab4187'],2,15,17,1,,,
+b898a36667fb9b25a4c7c9644e9c0d85275f7932,Update README.md,Hoda Rajaei,rajaei.hoda@gmail.com,GitHub,noreply@github.com,2022-04-06 06:35:25-07:00,25200,2022-04-06 06:35:25-07:00,25200,True,False,['README.md'],['3d903fc45710e9ade5fcc7e463bbf9b92b27b892'],1,10,11,1,,,
+659fd4814a91b1fc77d3fcb183b42705e2a37101,Update README.md,Satrajit Ghosh,satrajit.ghosh@gmail.com,GitHub,noreply@github.com,2022-04-06 09:42:38-04:00,14400,2022-04-06 09:42:38-04:00,14400,True,False,['README.md'],['b898a36667fb9b25a4c7c9644e9c0d85275f7932'],1,1,2,1,,,
+9d27bd067598229513276b0d1bc73229a68a9788,update dockerfile,Satrajit Ghosh,satra@mit.edu,Satrajit Ghosh,satra@mit.edu,2022-09-03 09:51:59-04:00,14400,2022-09-03 09:51:59-04:00,14400,True,False,['Dockerfile.gpu'],['47b0998087314a963154385ae4b3a2ed31541862'],1,1,2,1,,,

@@ -1,0 +1,587 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+adf1d899ea511f4b7e50cd4e093083d6bc459767,Create .gitignore,Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-02-26 13:04:39+01:00,-3600,2014-02-26 13:04:39+01:00,-3600,True,False,['.gitignore'],[],0,36,36,1,,,
+53e6200edd0ec0c173504a72d3e8568e4ef09a87,"Initial commit
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-02-25 09:33:09+01:00,-3600,2014-02-26 17:01:44+01:00,-3600,True,False,"['MANIFEST.in', 'README.rst', '__init__.py', 'application.wsgi', 'config.py', 'version.py', 'setup.py']",['adf1d899ea511f4b7e50cd4e093083d6bc459767'],0,308,308,7,0.48717948717948717,1.0,1.0
+eb1f803785dfe34ef56e19a13ac88fe4229831b5,Initial default configuration,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-02-26 17:34:38+01:00,-3600,2014-02-26 17:34:38+01:00,-3600,True,False,['config.py'],['53e6200edd0ec0c173504a72d3e8568e4ef09a87'],0,67,67,1,,,
+d37b6d3762e7832885d748244f2187d63df18def,"Index page addition
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@gmail.com>",Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-02-27 09:41:31+01:00,-3600,2014-02-27 09:41:31+01:00,-3600,True,False,"['__init__.py', 'config.py', 'bootstrap.min.css', 'favicon.ico', 'page.html']",['eb1f803785dfe34ef56e19a13ac88fe4229831b5'],3,96,99,5,1.0,1.0,1.0
+f22053027b680fd250b36da13254450132df386a,Status pages improvements,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-02-27 13:42:57+01:00,-3600,2014-02-27 13:42:57+01:00,-3600,True,False,"['__init__.py', 'jumbotron-narrow.css', 'index.html', 'page.html', 'status.html']",['d37b6d3762e7832885d748244f2187d63df18def'],26,124,150,5,1.0,1.0,1.0
+7d61cefd2eb1093991f444344036558617c3ec0a,"Hotfix email matching
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-02-28 09:55:31+01:00,-3600,2014-02-28 09:55:36+01:00,-3600,True,False,['__init__.py'],['f22053027b680fd250b36da13254450132df386a'],3,3,6,1,,,
+eb9b12b20cffdc38b5282fdaab5f344c2b8694d0,Ignore instance folder,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-02-28 10:22:36+01:00,-3600,2014-02-28 10:22:36+01:00,-3600,True,False,['.gitignore'],['7d61cefd2eb1093991f444344036558617c3ec0a'],0,3,3,1,,,
+8e3c195ee51d14dc1edc5cd4e57ad896de9529a8,Error message clarification,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-02-28 11:18:36+01:00,-3600,2014-02-28 11:18:36+01:00,-3600,True,False,['__init__.py'],['eb9b12b20cffdc38b5282fdaab5f344c2b8694d0'],1,1,2,1,,,
+c08461ac828c18ef328757b1e511eb1fa25ca4f8,Indentation and length checking,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-03-03 09:04:38+01:00,-3600,2014-03-03 09:04:38+01:00,-3600,True,False,['__init__.py'],['8e3c195ee51d14dc1edc5cd4e57ad896de9529a8'],1,9,10,1,0.0,0.0,1.0
+b2e8f409ab74270535c147a1ecb2d06d699e34b4,Enabling Travis-CI service.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-17 10:11:37+01:00,-3600,2014-03-17 10:12:02+01:00,-3600,True,False,['.travis.yml'],['c08461ac828c18ef328757b1e511eb1fa25ca4f8'],0,5,5,1,,,
+a9c5bd0c4d570574ce6becf843209953398c586b,Simple test for nominal pull_request and ping cases.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-17 10:10:53+01:00,-3600,2014-03-17 10:21:26+01:00,-3600,True,False,"['setup.py', 'test_ping.py', 'test_pull_request.py']",['b2e8f409ab74270535c147a1ecb2d06d699e34b4'],1,72,73,3,0.16666666666666666,1.0,1.0
+738cb18533b73f05d16706e3a418dfc1d0e34425,Factor out the Kwalitee object for github events.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-17 10:39:45+01:00,-3600,2014-03-17 10:39:45+01:00,-3600,True,False,"['__init__.py', 'kwalitee.py']",['a9c5bd0c4d570574ce6becf843209953398c586b'],103,131,234,2,1.0,1.0,0.8461538461538461
+213f9043c9d9c9e1c43e7d7fe8e082f53f62f340,Giving back the stacktrace in case of exception.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-17 10:58:03+01:00,-3600,2014-03-17 10:58:03+01:00,-3600,True,False,"['__init__.py', 'test_ping.py']",['738cb18533b73f05d16706e3a418dfc1d0e34425'],2,20,22,2,1.0,1.0,1.0
+b18fe13380a96f5f08896282d797d5f8902b0e6b,Using nose with coverage for tests.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-18 14:17:05+01:00,-3600,2014-03-18 14:17:05+01:00,-3600,True,False,"['.gitignore', '.travis.yml', 'setup.cfg', 'setup.py']",['c3b32e08f99f32b3c9b1271afd5bc24b22fc7be0'],3,17,20,4,,,
+8f760afca55d941ba709017221d9803f4ed2aed4,"Refactoring of check_messages (with tests).
+
+* check_messages is no longer responsible to talk to GitHub anymore.
+
+* check_message checks one message at the time (hence no trailing s).
+
+* _check_bullets accepts only ""*"" as a bullet character.
+
+* _check_bullets doesn't allow signatures between/before some bullet points.
+
+* 100% coverage tested.",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-18 14:24:09+01:00,-3600,2014-03-18 14:24:09+01:00,-3600,True,False,"['__init__.py', 'config.py', 'kwalitee.py', 'test_check_message.py', 'test_ping.py', 'test_pull_request.py']",['b18fe13380a96f5f08896282d797d5f8902b0e6b'],62,307,369,6,0.8518518518518519,0.7685185185185185,0.46296296296296297
+825d85075e9819b3ee427fad4fe81a6848bc248d,Better error messages and true 100% coverage.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-18 14:39:35+01:00,-3600,2014-03-18 14:40:10+01:00,-3600,True,False,"['kwalitee.py', 'test_ping.py']",['8f760afca55d941ba709017221d9803f4ed2aed4'],3,23,26,2,1.0,1.0,1.0
+e177a19b589fda60c07f1333d43b3706fe6c0642,Putting the access_token authorization back in.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-18 15:18:56+01:00,-3600,2014-03-18 16:23:05+01:00,-3600,True,False,"['__init__.py', 'kwalitee.py', 'test_pull_request.py']",['825d85075e9819b3ee427fad4fe81a6848bc248d'],7,33,40,3,0.7692307692307693,1.0,0.9230769230769231
+4ed224b0956f73b1cfb95cbd076a14b1750bb34b,Better documentation and usage of the assertions.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-18 16:59:35+01:00,-3600,2014-03-18 16:59:35+01:00,-3600,True,False,"['test_check_message.py', 'test_ping.py', 'test_pull_request.py']",['e177a19b589fda60c07f1333d43b3706fe6c0642'],26,37,63,3,1.0,1.0,1.0
+d49f1edfc147026f5eaabfd9823b99c56810988e,Testing GET /status/sha1 and clean up post-test.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-18 17:00:07+01:00,-3600,2014-03-18 17:17:44+01:00,-3600,True,False,"['test_pull_request.py', 'test_status.py']",['4ed224b0956f73b1cfb95cbd076a14b1750bb34b'],0,52,52,2,0.8125,1.0,1.0
+3f119013eeaf2f910435410db31a3d3e94dae39f,"Removing useless main function
+
+* gunicorn or paster are great alternatives to run your development
+  server.",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-18 17:00:27+01:00,-3600,2014-03-18 17:17:51+01:00,-3600,True,False,['__init__.py'],['d49f1edfc147026f5eaabfd9823b99c56810988e'],5,1,6,1,0.0,0.0,0.0
+1515b3c76466913dfb53149ba47c14a3e4f2597f,Testing the homepage.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-18 17:08:58+01:00,-3600,2014-03-18 17:17:51+01:00,-3600,True,False,['test_index.py'],['3f119013eeaf2f910435410db31a3d3e94dae39f'],0,51,51,1,0.0,1.0,1.0
+83e0f3ca3b67f77c2c6b201a15636e7f529a7f34,"Python 2.6 is not supported anymore.
+
+* unittest.TestCase.assertIn and assertRegexpMatches were introduced in
+  Python 2.7. TestCase could be monkeypatched in the future to work
+  around this.",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-18 21:03:39+01:00,-3600,2014-03-18 21:12:30+01:00,-3600,True,False,['.travis.yml'],['1515b3c76466913dfb53149ba47c14a3e4f2597f'],1,0,1,1,,,
+65cd4d201bfa95a21411af0eb4a75a1c246ee3c6,"Ignore pull requests with title ""WIP""",Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-03-19 10:47:04+01:00,-3600,2014-03-19 10:47:27+01:00,-3600,True,False,"['kwalitee.py', 'test_pull_request.py']",['c3b32e08f99f32b3c9b1271afd5bc24b22fc7be0'],1,103,104,2,0.0,1.0,1.0
+47bbe6a07333ca2e4735e8658fcfff9f1c6db3a4,Test coverage addition,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-03-19 10:47:53+01:00,-3600,2014-03-19 10:47:53+01:00,-3600,True,False,"['.coveragerc', 'setup.py']",['65cd4d201bfa95a21411af0eb4a75a1c246ee3c6'],1,3,4,2,,,
+1da890853244edba2982a41ae285e2fdcb69bfa9,Fix missing filename in test,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-03-19 10:59:33+01:00,-3600,2014-03-19 10:59:33+01:00,-3600,True,False,['test_pull_request.py'],['16cc273ea1a7d958f9dfabeb31dea36c2f8fccb0'],0,1,1,1,0.0,1.0,1.0
+fe3b531a1fc3605ae7c3141021fc3afce4cda5b2,README updates,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-03-19 11:09:17+01:00,-3600,2014-03-19 11:09:17+01:00,-3600,True,False,"['README.rst', 'run-tests.sh']",['1da890853244edba2982a41ae285e2fdcb69bfa9'],0,60,60,2,,,
+b6d1043e6c349e2ee7fe3259d3d0d0a0c4045653,travis configuration improvements,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-03-19 11:12:00+01:00,-3600,2014-03-19 11:33:31+01:00,-3600,True,False,['.travis.yml'],['fe3b531a1fc3605ae7c3141021fc3afce4cda5b2'],1,39,40,1,,,
+b7c1e806918f59cc34efddb266687de8ff910f09,Python 3.3 compatibility fixes,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-03-19 11:26:42+01:00,-3600,2014-03-19 11:34:00+01:00,-3600,True,False,"['kwalitee.py', 'test_index.py']",['b6d1043e6c349e2ee7fe3259d3d0d0a0c4045653'],2,1,3,2,1.0,0.0,0.0
+c19bfea49bb77ba39e8824e49bbe14c989f410c4,Fix test assertRegex,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-03-19 11:58:59+01:00,-3600,2014-03-19 13:41:18+01:00,-3600,True,False,"['test_index.py', 'test_status.py']",['b7c1e806918f59cc34efddb266687de8ff910f09'],3,3,6,2,,,
+4359b515c23bbd3fa7635ecf257fcb75895ad341,README: coverage with nosetests,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-03-19 13:41:59+01:00,-3600,2014-03-19 13:41:59+01:00,-3600,True,False,['README.rst'],['c19bfea49bb77ba39e8824e49bbe14c989f410c4'],1,1,2,1,,,
+96e9e72d66e40f8e42b5494332f641f2c717d79d,pragma: no cover for unused lines,Jiri Kuncar,jiri.kuncar@gmail.com,Jiri Kuncar,jiri.kuncar@gmail.com,2014-03-19 14:09:20+01:00,-3600,2014-03-19 14:09:20+01:00,-3600,True,False,['__init__.py'],['4359b515c23bbd3fa7635ecf257fcb75895ad341'],2,2,4,1,,,
+523c08769b18ba6a8d15d5ca08fb6306b9f70d0e,"Simplify wip test.
+
+* No records are kept for it (status.txt)
+
+* wip should not be part of a word, e.g. ""wipe""",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-19 17:34:53+01:00,-3600,2014-03-20 06:53:12+01:00,-3600,True,False,"['kwalitee.py', 'test_pull_request.py']",['96e9e72d66e40f8e42b5494332f641f2c717d79d'],34,18,52,2,1.0,0.0,0.0
+7df9bce826245dcc2f2616f4f80734e77c47ffec,"Asynchronous refactoring using RQ.
+
+* when a new event arises, it's sent to a background worker and the PR
+  state is set to pending.",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-23 19:35:34+01:00,-3600,2014-03-24 11:22:48+01:00,-3600,True,False,"['Procfile', '__init__.py', 'kwalitee.py', 'worker.py', 'setup.py', 'test_ping.py', 'test_pull_request.py']",['523c08769b18ba6a8d15d5ca08fb6306b9f70d0e'],179,215,394,7,0.0,,0.0
+2d5fb129aa72abd3a7f71111943aea757cccfc7a,"Deployment section in the README
+
+* How to setup the worker in a production environment",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-25 10:05:54+01:00,-3600,2014-03-25 11:36:04+01:00,-3600,True,False,['README.rst'],['7df9bce826245dcc2f2616f4f80734e77c47ffec'],0,34,34,1,,,
+52f15d64fb4b829b8196ff571ed3d24624255e27,PEP8 checks on the whole files.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-20 12:34:46+01:00,-3600,2014-03-26 09:20:37+01:00,-3600,True,False,"['Procfile', 'config.py', 'kwalitee.py', 'setup.py', 'invalid.py.test', 'valid.py.test', 'test_check_file.py', 'test_pull_request.py']",['ee223b5b00fa9c264bafd03477a920f252cfc1b7'],41,250,291,8,0.41025641025641024,0.9914529914529915,0.5726495726495726
+db491b0be644bcae3fca41fd06445aa357b22ee3,"PEP8 errors into the review view.
+
+* The commit messages error displayed into the commit itself and the file
+  related comments are put into the review view (on line 1)",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-26 14:37:05+01:00,-3600,2014-03-26 15:26:37+01:00,-3600,True,False,"['kwalitee.py', 'test_pull_request.py']",['52f15d64fb4b829b8196ff571ed3d24624255e27'],10,40,50,2,0.0,0.0,0.34615384615384615
+3b0c855faa62f47d6b1250200039fda08ba94d32,Fix multiline bullet point seen as signatures.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-26 19:38:36+01:00,-3600,2014-03-26 19:43:37+01:00,-3600,True,False,"['kwalitee.py', 'test_check_message.py']",['f0a041baa34b360f8cee619a33158fb4a8b1088a'],1,14,15,2,0.75,0.75,0.75
+783a92a3ea0f3376be0221a6a499f8df80d38cdf,PyFlakes checks on the whole files.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-26 16:37:13+01:00,-3600,2014-03-26 19:45:28+01:00,-3600,True,False,"['kwalitee.py', 'setup.py', 'error.py.test', 'test_check_file.py', 'test_pull_request.py']",['f0a041baa34b360f8cee619a33158fb4a8b1088a'],4,68,72,5,0.2571428571428571,1.0,1.0
+674ead0477476960dda73a5f2068b0ee49bc62d4,Refactoring.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-27 07:10:07+01:00,-3600,2014-03-27 07:10:07+01:00,-3600,True,False,"['kwalitee.py', 'test_pull_request.py']",['783a92a3ea0f3376be0221a6a499f8df80d38cdf'],27,28,55,2,1.0,1.0,1.0
+6f689fb8e6e427a48cb6a481fd34c7b71ebd0cf9,"Options in config for commits, pep8, flakes, wip.",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-27 07:13:00+01:00,-3600,2014-03-27 07:13:00+01:00,-3600,True,False,"['config.py', 'kwalitee.py', 'test_pull_request.py']",['674ead0477476960dda73a5f2068b0ee49bc62d4'],10,26,36,3,0.42857142857142855,0.42857142857142855,0.42857142857142855
+6e39393690e83802186712f57a71935f7c99a3b8,Fix ignored PEP8_IGNORE option.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-27 11:00:17+01:00,-3600,2014-03-27 11:01:17+01:00,-3600,True,False,"['config.py', 'kwalitee.py', 'error.py.test', 'valid.py.test', 'test_check_file.py']",['ff2c30a99440c86d1c009b72608f00e609e747d9'],5,37,42,5,0.5,0.5,0.5
+3a192d748644746886a4d40cc1de81426de606c7,Read PEP8 ignore from config,Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-03-27 10:32:37+01:00,-3600,2014-03-27 11:17:39+01:00,-3600,True,False,['kwalitee.py'],['ff2c30a99440c86d1c009b72608f00e609e747d9'],0,1,1,1,0.0,0.0,0.0
+8b9aad822ee6ea396da8930aaf443fb12b88d62a,Comment on line with first problem,Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-03-27 11:58:13+01:00,-3600,2014-03-27 11:58:13+01:00,-3600,True,False,['kwalitee.py'],['17bddb0f24f0d7ac503ee0dcaf12865d2c60aa81'],1,4,5,1,0.0,0.0,0.0
+7bf6a11fdd766e1592f6207be198138cd2b8c265,"Using pyHamcrest for testing (Python 2.6 support)
+
+* Enabling Travis testing for 2.6, 2.7, 3.3
+* Adding the corresponding classifiers in setup.py",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-27 11:10:34+01:00,-3600,2014-03-27 13:03:23+01:00,-3600,True,False,"['.travis.yml', 'kwalitee.py', 'setup.py', 'test_check_file.py', 'test_check_message.py', 'test_index.py', 'test_ping.py', 'test_pull_request.py', 'test_status.py']",['8b9aad822ee6ea396da8930aaf443fb12b88d62a'],105,138,243,9,0.0,0.0,0.8888888888888888
+04a188c057fa279fd32fd106d63bdc89c06f5e7f,"Testing the license in python files.
+
+* empty files are ignored (use case: `__init__.py`)
+* new set of codes starting with ""I""
+* fuzzy test that it looks like the GNU GPLv2 (or GNU GPLv3)",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-27 18:20:13+01:00,-3600,2014-03-28 12:23:17+01:00,-3600,True,False,"['config.py', 'kwalitee.py', 'empty.py.test', 'error.py.test', 'invalid.py.test', 'invalid_license.py.test', 'missing_license.py.test', 'valid.py.test', 'valid_license.py.test', 'test_check_file.py', 'test_check_message.py']",['7c49d2cd62041562c96a8f86acb3d82676efc370'],52,275,327,11,0.4157303370786517,0.4157303370786517,0.9325842696629213
+ef4bc501e8fb3f77dcd8b2082193a4f0a510e9ef,Testing the license in Jinja files.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-28 13:19:00+01:00,-3600,2014-03-28 13:26:52+01:00,-3600,True,False,"['kwalitee.py', 'license.html.test', 'test_check_file.py', 'test_pull_request.py']",['04a188c057fa279fd32fd106d63bdc89c06f5e7f'],21,72,93,4,0.22727272727272727,0.8181818181818182,1.0
+5367fad5ec7c8da6e10d6419db4d3eacd787916b,Fix work-in-progress check,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-03-31 13:07:34+02:00,-7200,2014-03-31 13:19:40+02:00,-7200,True,False,['kwalitee.py'],['7ace77ea6f30d47239ecef9b4520c614ba4e4e05'],1,1,2,1,,,
+1971bd251b36c7c85f6a23d36d60149e156637fb,Refactoring the messages error codes.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-04 07:35:19+02:00,-7200,2014-04-04 08:16:19+02:00,-7200,True,False,"['kwalitee.py', 'test_check_message.py']",['a868919e7f93655afdf4657d824c433116c9f109'],38,59,97,2,0.0,1.0,1.0
+3f818dbcb0bfa2b4cd5fd52e76bc3eaa032ba915,"Need more reviewers only appears as a label change.
+
+* in_work if ""WIP"" is in the title
+* in_review if a ""needs more reviewers"" error is found
+* in_integration if no ""needs more reviewers"" errors exist",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-04 08:15:36+02:00,-7200,2014-04-04 10:14:36+02:00,-7200,True,False,"['config.py', 'kwalitee.py', 'test_check_message.py', 'test_pull_request.py']",['1971bd251b36c7c85f6a23d36d60149e156637fb'],19,172,191,4,0.0,0.8813559322033898,0.8813559322033898
+871c10bdd2259789fe725399fbb62f5e89aebf5a,Enabling worker logging on Python 2.6.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-04 11:38:57+02:00,-7200,2014-04-04 11:38:57+02:00,-7200,True,False,['worker.py'],['b8c3c1dcb4cbff71e3ad5170206c40311ba3c2c4'],0,5,5,1,1.0,1.0,1.0
+ce36be9de02cd4df69da11c62a29d4b9b85c31de,"If an error is found, the label is in_review.",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-04 11:39:51+02:00,-7200,2014-04-04 11:39:51+02:00,-7200,True,False,['kwalitee.py'],['871c10bdd2259789fe725399fbb62f5e89aebf5a'],1,3,4,1,0.0,0.0,0.0
+9164bed232030abd8f0319506cf60f8535f85b84,"Fix labels and add better tests.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-07 09:21:36+02:00,-7200,2014-04-07 09:23:38+02:00,-7200,True,False,"['kwalitee.py', 'test_pull_request.py']",['185e3f95beca75173c954b961c1d110ec7816f6d'],13,310,323,2,0.0,0.9838709677419355,0.9838709677419355
+5763e60fb1a3fdb94a1e92fcb1a02abda7621e83,"Tox testing support
+
+* Adds tox.ini to support easy testing in multiple Python
+  versions.
+
+Signed-off-by: Lars Holm Nielsen <lars.holm.nielsen@cern.ch>",Lars Holm Nielsen,lars.holm.nielsen@cern.ch,Lars Holm Nielsen,lars.holm.nielsen@cern.ch,2014-04-08 09:57:25+02:00,-7200,2014-04-08 10:14:12+02:00,-7200,True,False,['tox.ini'],['272921aa003219916f952494e05b673aacf89a67'],0,9,9,1,,,
+44c29bf24549b35293d512f09d88a83d0cfed961,"Local git hooks support
+
+* Adds support for integrating Invenio Kwalitee in local
+  git repository hooks.
+
+Signed-off-by: Lars Holm Nielsen <lars.holm.nielsen@cern.ch>",Lars Holm Nielsen,lars.holm.nielsen@cern.ch,Lars Holm Nielsen,lars.holm.nielsen@cern.ch,2014-04-07 17:48:56+02:00,-7200,2014-04-08 10:14:12+02:00,-7200,True,False,"['README.rst', '__init__.py', 'cli.py', 'config.py', 'hooks.py', 'kwalitee.py', 'setup.py', 'test_cli.py', 'test_get_component.py', 'test_hooks.py']",['5763e60fb1a3fdb94a1e92fcb1a02abda7621e83'],21,691,712,10,0.5073529411764706,0.6764705882352942,0.9852941176470589
+3734822abad82781495b7bb92c3f1ae4c2a3a825,"Big refactoring with tests in mind.
+
+* printed errors are going on stderr
+* using format() instead of '%' as recommended
+* subprocess.Popen instead of os.system
+* factoring stuff out (to ease the tests)
+* using file mock to test prepare-commit-msg
+* some utf-8 for people with non ASCII names
+* six is not required anymore
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-09 12:31:51+02:00,-7200,2014-04-14 15:30:39+02:00,-7200,True,False,"['.coveragerc', '__init__.py', 'cli.py', 'config.py', 'hooks.py', 'kwalitee.py', 'setup.py', 'test_check_file.py', 'test_check_message.py', 'test_cli.py', 'test_get_component.py', 'test_hooks.py']",['05bfc560a5f450413737375134ffd93f6208e679'],399,522,921,12,1.0,1.0,0.8554216867469879
+c55def6f063e5aadd4538a23c260b721d160dd32,"Checks and component names from rst, js and css
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-11 13:24:34+02:00,-7200,2014-04-14 15:30:54+02:00,-7200,True,False,"['hooks.py', 'kwalitee.py', 'license.css.test', 'license.js.test', 'test_check_file.py', 'test_hooks.py']",['3734822abad82781495b7bb92c3f1ae4c2a3a825'],14,103,117,6,0.5454545454545454,0.7272727272727273,1.0
+63e7ba4aeefaddabaa1de15d3c280e200ddd4d15,Coverage measures on all the hooks.,Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-14 16:37:51+02:00,-7200,2014-04-14 16:37:51+02:00,-7200,True,False,"['hooks.py', 'worker.py']",['c55def6f063e5aadd4538a23c260b721d160dd32'],10,6,16,2,0.0,0.0,0.0
+ec03488b4f5b329be7c1299e9fc813e27f5ec057,"hooks: regression fix of introduced deadlock.
+
+* `Popen.wait` may hang. Lars did it correctly the first time...
+  https://docs.python.org/2/library/subprocess.html#subprocess.Popen.wait
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-23 09:28:15+02:00,-7200,2014-04-23 09:28:15+02:00,-7200,True,False,['hooks.py'],['0505783750e8df70ecd18fedb4a08b6721db25ce'],4,4,8,1,,,
+79f0c82624559fbb0ebe31fd83778af087581d1e,"kwalitee: less print
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-24 12:24:29+02:00,-7200,2014-04-24 12:24:29+02:00,-7200,True,False,['kwalitee.py'],['71c778540e5e610dd8b82472fcd654627bd8621c'],4,0,4,1,1.0,1.0,0.0
+ad58f1417d6cd7f0bf16eb7c102c5b8ed7ba7daa,"test: post_commit_hook
+
+* fixing the check message problem with multiline bullet introduced by
+  stripping the lines from the git call output.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-25 09:28:55+02:00,-7200,2014-04-25 09:28:55+02:00,-7200,True,False,"['hooks.py', 'kwalitee.py', 'test_hooks.py']",['1e5ca7d2d255c2e522eb06e6c0286605288fa915'],9,34,43,3,0.5263157894736842,1.0,1.0
+93868b990b8251189125b36025ba67dff3880e75,"linters: PEP257 support.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-30 10:37:39+02:00,-7200,2014-04-30 10:59:10+02:00,-7200,True,False,"['config.py', 'kwalitee.py', 'setup.py', 'valid.py.test', 'test_check_file.py', 'test_hooks.py', 'test_pull_request.py']",['34aa6e4aa1b715bec434c872a839f664ee58870a'],50,103,153,7,0.9259259259259259,0.4074074074074074,0.9259259259259259
+5625930c3c3766bc487ceafa445aa6d59a8df039,"hooks: commit_msg_hook fix.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-30 10:59:18+02:00,-7200,2014-04-30 10:59:18+02:00,-7200,True,False,['hooks.py'],['93868b990b8251189125b36025ba67dff3880e75'],1,1,2,1,1.0,1.0,1.0
+3cc647863b8d0da5e88794a107ac177e83dbb732,"global: PEP257 formatting conformance.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-30 11:25:42+02:00,-7200,2014-05-07 15:09:04+02:00,-7200,True,False,"['__init__.py', 'cli.py', 'config.py', 'hooks.py', 'kwalitee.py', 'version.py', 'worker.py', 'setup.py', 'test_hooks.py']",['5625930c3c3766bc487ceafa445aa6d59a8df039'],44,92,136,9,1.0,0.0,1.0
+60f52f1a21455eb3fdcd2ff7cd2b06277bb0e62f,"travis: testing python 3.4
+
+* Moving the requirements to text files.
+
+* Using travis_retry to bypass Python 3.4 issues.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-04-30 17:34:20+02:00,-7200,2014-05-25 20:04:25+02:00,-7200,True,False,"['.travis.yml', 'requirements-test.txt', 'requirements.txt', 'setup.py', 'tox.ini']",['c493306e3927daa2ea6e29401977cb11642457ba'],26,33,59,5,1.0,1.0,1.0
+060fcc4e4856b1bc7dc0eba0b07d3c734bbf24fd,"global: persistence using a database
+
+* Using a SQLite database to store everything.
+
+* Moving the views.
+
+* Splitting up the cli.
+
+* Splitting up the tasks from kwalitee.
+
+* Adding new check: First line must not end with a dot.
+
+* Supporting alternative signatures (not counted).
+  E.g. Reported-by
+
+* Killing version.py and version number bumped up.
+
+* Updating rq to 0.4.6, required for timeout.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-05-15 07:10:33+02:00,-7200,2014-05-30 08:12:08+02:00,-7200,True,False,"['.coveragerc', 'README.rst', '__init__.py', '__init__.py', 'account.py', 'githooks.py', 'repository.py', 'config.py', 'hooks.py', 'kwalitee.py', 'models.py', 'tasks.py', 'account.html', 'branch.html', 'commit.html', 'helpers.html', 'index.html', 'page.html', 'repository.html', 'status.html', 'views.py', 'wsgi.py', 'requirements.txt', 'setup.py', '__init__.py', '__init__.py', 'test_account.py', 'test_githooks.py', 'test_repository.py', 'test_check_file.py', 'test_check_message.py', 'test_hooks.py', 'test_ping.py', 'test_pull_request.py', 'test_push.py', '__init__.py', 'test_account.py', 'test_branch.py', 'test_commit.py', 'test_index.py', 'test_repository.py', 'test_status.py']",['fd51ee141503dd42a80e1889838282e5b07b505c'],585,3061,3646,42,0.46948818897637795,0.8612204724409449,0.7421259842519685
+d1b53a7d2136dac91e7b1e6262ab42246b1a7be2,"global: features and fixes
+
+* Adding auto creation of unknown accounts.
+  via AUTO_CREATE=True
+
+* Adding creation and update time on models
+
+* Altering model, files is now a dict.
+
+* Supporting pending statuses.
+
+* Supporting per user token.
+
+* Adding alembic to support upcoming migrations.
+
+* Fixing PEP257 output format to look like PEP8 and pyFlakes'.
+
+* Sorting the errors by line number.
+
+* NOTE configure the database location in alembic.ini.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-05-26 08:34:37+00:00,0,2014-06-05 07:16:53+02:00,-7200,True,False,"['README.rst', 'alembic.ini', 'env.py', 'script.py.mako', '.keep', '__init__.py', 'config.py', 'kwalitee.py', 'models.py', 'tasks.py', 'account.html', 'branch.html', 'branches.html', 'commit.html', 'helpers.html', 'index.html', 'repository.html', 'status.html', 'views.py', 'requirements.txt', '__init__.py', 'test_check_file.py', 'test_check_message.py', 'test_pull_request.py', 'test_push.py', 'test_account.py', 'test_branch.py', 'test_branches.py', 'test_commit.py', 'test_repository.py']",['060fcc4e4856b1bc7dc0eba0b07d3c734bbf24fd'],288,1111,1399,30,0.13897280966767372,0.8640483383685801,0.8882175226586103
+102986be782d039198de8e5761c49de72450603d,"kwalitee: PEP257's MATCH and MATCH_DIR
+
+* Ignoring hidden directory by default.
+
+* Ignoring test files by default.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-05-29 11:00:12+02:00,-7200,2014-06-05 07:16:59+02:00,-7200,True,False,"['config.py', 'kwalitee.py', 'test_check_file.py', 'test_pull_request.py']",['d1b53a7d2136dac91e7b1e6262ab42246b1a7be2'],1,45,46,4,0.5833333333333334,0.5833333333333334,1.0
+bb65836f672633b3d2770e049e31af0cc539ae93,"global: pep8 and license
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-06-05 08:39:09+02:00,-7200,2014-06-05 08:43:21+02:00,-7200,True,False,"['env.py', '__init__.py', 'test_check_file.py']",['102986be782d039198de8e5761c49de72450603d'],8,36,44,3,,,
+af6123d510fcfb43495ecfa271b0222f61f49733,"global: refactoring
+
+* Fixes the problem unhandled during the ""pending"" states addition.
+
+* Improves the code coverage.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-06-07 21:12:12+02:00,-7200,2014-06-16 16:59:11+02:00,-7200,True,False,"['config.py', 'kwalitee.py', 'models.py', 'tasks.py', 'views.py', 'invalid_all.py.test', 'invalid_token.py.test', 'test_check_file.py', 'test_pull_request.py', 'test_push.py']",['bb65836f672633b3d2770e049e31af0cc539ae93'],171,243,414,10,0.12903225806451613,1.0,1.0
+1c897b34569586cf1cd747d6ec8b2a554d206731,"global: sane requirements
+
+* Adding back version.py file.
+  http://python-packaging-user-guide.readthedocs.org/en/latest/tutorial.html
+
+* Putting the requirements into setup.py and leaving the
+  requirements.txt file for development mode.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-06-07 21:40:08+02:00,-7200,2014-06-16 16:59:17+02:00,-7200,True,False,"['__init__.py', 'version.py', 'requirements-docs.txt', 'requirements-test.txt', 'setup.py']",['af6123d510fcfb43495ecfa271b0222f61f49733'],22,53,75,5,0.0,0.0,0.0
+40105a65710496e9a1f04d764ebb6bcf133abaa5,"docs: the docs
+
+* Adds building the documentation from travis.
+
+* Bumps version to 0.2rc1
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-06-04 10:14:59+02:00,-7200,2014-06-16 17:04:10+02:00,-7200,True,False,"['.gitignore', '.travis.yml', 'CHANGELOG.rst', 'INSTALL.rst', 'MANIFEST.in', 'README.rst', '.keep', 'aliases.rst', 'invenio_kwalitee.cli.rst', 'invenio_kwalitee.rst', 'modules.rst', 'tests.rst', 'changelog.rst', 'cli.rst', 'conf.py', 'index.rst', 'installation.rst', 'introduction.rst', 'testing.rst', 'config.py', 'hooks.py', 'kwalitee.py', 'models.py', 'version.py', 'views.py', 'requirements.txt', 'run-tests.sh', 'setup.py', '__init__.py']",['1c897b34569586cf1cd747d6ec8b2a554d206731'],182,1424,1606,29,0.0,0.9,1.0
+f0e78daf635b1232af880e84de7f799b6d1f4f1e,"tests: py.test instead of nose
+
+* Replaces nose by py.test because it has colours (and is maintained).
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-06-24 14:25:39+02:00,-7200,2014-06-24 14:36:00+02:00,-7200,True,False,"['.coveragerc', '.gitignore', '.travis.yml', 'testing.rst', 'setup.cfg', 'setup.py', 'tox.ini']",['40105a65710496e9a1f04d764ebb6bcf133abaa5'],22,47,69,7,1.0,1.0,1.0
+01a0c31bf573eb2b0ebfc0114dd4a18462664f73,"global: pytest rewrite
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-07-06 16:55:52+02:00,-7200,2014-07-06 18:22:07+02:00,-7200,True,False,"['INSTALL.rst', '__init__.py', '__init__.py', 'account.py', 'githooks.py', 'repository.py', 'config.py', 'factory.py', 'hooks.py', 'models.py', 'tasks.py', 'views.py', 'worker.py', 'wsgi.py', 'setup.py', 'test_account.py', 'test_githooks.py', 'test_repository.py', 'conftest.py', 'test_hooks.py', 'test_ping.py', 'test_pull_request.py', 'test_push.py', 'utils.py', 'conftest.py', 'test_account.py', 'test_branch.py', 'test_branches.py', 'test_commit.py', 'test_index.py', 'test_repository.py', 'test_status.py']",['f0e78daf635b1232af880e84de7f799b6d1f4f1e'],1956,2014,3970,32,0.6176470588235294,1.0,0.0
+521cf3f51145c0dfa5da92cf795e0561c498a573,"tasks: removed files are ignored
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-07-06 17:17:44+02:00,-7200,2014-07-06 18:22:12+02:00,-7200,True,False,"['tasks.py', 'version.py', 'test_push.py']",['01a0c31bf573eb2b0ebfc0114dd4a18462664f73'],4,9,13,3,0.2,1.0,0.8
+994ed1535764c90cecb4cd97f8c7317a7a825005,"tasks: wip component is ignored for push
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-07-06 17:30:27+02:00,-7200,2014-07-06 18:22:12+02:00,-7200,True,False,"['tasks.py', 'test_push.py']",['521cf3f51145c0dfa5da92cf795e0561c498a573'],3,71,74,2,0.0,0.9090909090909091,0.9090909090909091
+3655a6e20948dcd68461ec02c39ee45fe9c223f8,"docs: py.test in the docs
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-07-06 18:18:27+02:00,-7200,2014-07-06 18:23:06+02:00,-7200,True,False,"['.travis.yml', 'MANIFEST.in', 'conf.py', 'testing.rst']",['994ed1535764c90cecb4cd97f8c7317a7a825005'],23,20,43,4,,,
+53c6643cb60fa19c55a90377e8b810763ac6b285,"global: flake8 and python2 fixes
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-07-06 18:19:02+02:00,-7200,2014-07-06 20:11:20+02:00,-7200,True,False,"['.coveragerc', '.travis.yml', 'CHANGELOG.rst', 'aliases.rst', 'invenio_kwalitee.rst', 'modules.rst', 'tests.rst', 'conf.py', 'testing.rst', 'kwalitee.py', 'models.py', 'version.py', 'test_account.py', 'test_repository.py', 'conftest.py', 'test_hooks.py', 'test_ping.py', 'test_pull_request.py', 'test_push.py', 'utils.py', 'conftest.py', 'test_account.py', 'test_branch.py', 'test_index.py', 'test_repository.py', 'test_status.py']",['3655a6e20948dcd68461ec02c39ee45fe9c223f8'],125,145,270,26,0.0,1.0,0.1
+3fbae371d865ce18c3661df8a8d686210dab2318,"global: fixes
+
+* Sets the name of the application, was picking the factory name.
+
+* Gives context to the worker.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-07-07 11:32:32+02:00,-7200,2014-07-07 13:12:20+02:00,-7200,True,False,"['worker.py', 'wsgi.py', 'tox.ini']",['53c6643cb60fa19c55a90377e8b810763ac6b285'],11,14,25,3,,,
+68bdc17ab105377f168653826b8515859960da1e,"kwalitee: fix sorting
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-07-07 13:12:30+02:00,-7200,2014-07-07 13:12:30+02:00,-7200,True,False,['kwalitee.py'],['3fbae371d865ce18c3661df8a8d686210dab2318'],6,5,11,1,0.0,0.5,0.0
+08fb37021364fe9a4e0c366a2ba08baa4b127a9f,"travis: fix coveralls
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-07-07 14:55:51+02:00,-7200,2014-07-07 14:55:51+02:00,-7200,True,False,['.travis.yml'],['68bdc17ab105377f168653826b8515859960da1e'],1,1,2,1,,,
+d859fd8002c4204fee04b77296a273933b58c43e,"global: application name and import fixes
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-08 11:32:56+02:00,-7200,2014-07-08 11:38:58+02:00,-7200,True,False,"['factory.py', 'wsgi.py']",['ab54430bace9771eac6c899c157725d709329a5f'],2,3,5,2,0.0,0.0,1.0
+c33efa95adb5006d479b2c7e372b0f636ab2a05d,"kwalitee: fix need more reviewers
+
+* Fixes the check that should filter out the Need more reviewers error
+  message.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan@dosimple.ch,Yoan Blanc,yoan@dosimple.ch,2014-07-08 22:33:02+02:00,-7200,2014-07-08 22:38:58+02:00,-7200,True,False,['tasks.py'],['d859fd8002c4204fee04b77296a273933b58c43e'],5,6,11,1,0.0,1.0,0.0
+ac25de8b99c272ce326afcd769c2d4473f3b3972,"kwalitee: 2 new invenio modules addition
+
+* Adds bibauthorid module.
+
+* Adds webauthorlist module.
+
+Signed-off-by: Mateusz Susik <mateuszsusik@gmail.com>",Mateusz Susik,mateuszsusik@gmail.com,Mateusz Susik,mateuszsusik@gmail.com,2014-07-09 16:46:57+02:00,-7200,2014-07-09 16:46:57+02:00,-7200,True,False,['config.py'],['dd9f664179ff4f29a38329709dd37eeb284a6037'],0,2,2,1,,,
+9569ad09e7510dbe73940752b2e483c2c4aeee6f,"kwalitee: fix of wrong modules names
+
+* Removes bibauthorid module.
+
+* Renames webauthorlist to authorlist module.
+
+Signed-off-by: Mateusz Susik <mateuszsusik@gmail.com>",Mateusz Susik,mateuszsusik@gmail.com,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-10 11:18:09+02:00,-7200,2014-07-22 11:05:08+02:00,-7200,True,False,['config.py'],['2efc747971b6be0e49e12beb7b6f87287c88d612'],2,1,3,1,,,
+9a4e7c524a8d822270fe755765189d9c033ff4b0,"hooks: exit code fix
+
+* Fixes problem with hooks exit code, that prevented hooks from aborting
+  the commit.
+
+Signed-off-by: Lars Holm Nielsen <lars.holm.nielsen@cern.ch>",Lars Holm Nielsen,lars.holm.nielsen@cern.ch,Lars Holm Nielsen,lars.holm.nielsen@cern.ch,2014-07-22 12:32:34+02:00,-7200,2014-07-22 12:53:57+02:00,-7200,True,False,"['hooks.py', 'test_hooks.py']",['9569ad09e7510dbe73940752b2e483c2c4aeee6f'],7,9,16,2,0.75,1.0,1.0
+5192a6fce9e56735fc3c49929b3854a5c25cf183,"kwalitee: commit ordering in the database
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan.blanc@cern.ch,Yoan Blanc,yoan.blanc@cern.ch,2014-07-28 06:45:21+02:00,-7200,2014-07-28 08:41:32+02:00,-7200,True,False,"['config.py', 'views.py', 'utils.py']",['5c6fdebe893ea167a5241ea77b51f8559859d368'],3,3,6,3,,,
+93565ab794d5c24b4e7550bdb84dc380e9d94ce7,"kwalitee: warning on non-utf8 files
+
+* Adds an error code if the license is not readable because the file is
+  badly encoded. It previously crashed.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan.blanc@cern.ch,Yoan Blanc,yoan.blanc@cern.ch,2014-07-28 07:09:18+02:00,-7200,2014-07-28 08:43:30+02:00,-7200,True,False,"['kwalitee.py', 'cp1252.py.test', 'valid_license.py.test', 'test_check_file.py']",['5192a6fce9e56735fc3c49929b3854a5c25cf183'],13,54,67,4,0.6,0.6,1.0
+c0bf2f5b2fc560e817a08cb5257dfae02e9476a4,"cli: check message command addition
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-08 16:33:38+02:00,-7200,2014-07-28 08:59:28+02:00,-7200,True,False,"['cli.rst', '__init__.py', 'check.py', 'setup.py', 'test_check.py']",['93565ab794d5c24b4e7550bdb84dc380e9d94ce7'],1,161,162,5,1.0,1.0,1.0
+3215c54faedd817b082645d44bdf7f725c250ca3,"cli: fix check message command test
+
+* Removes the check from Python 3.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan.blanc@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-25 19:48:30+02:00,-7200,2014-07-28 08:59:28+02:00,-7200,True,False,"['__init__.py', 'check.py', 'setup.py', 'test_check.py']",['c0bf2f5b2fc560e817a08cb5257dfae02e9476a4'],27,52,79,4,0.0,1.0,1.0
+80a7e7e261f104045cc99bd447f0a2b2a420af1a,"cli: tests refactoring
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan.blanc@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-25 20:29:29+02:00,-7200,2014-07-28 08:59:29+02:00,-7200,True,False,"['check.py', 'test_check.py', 'conftest.py']",['3215c54faedd817b082645d44bdf7f725c250ca3'],60,68,128,3,0.3333333333333333,1.0,0.0
+e5b7007d69534e378805cd55633e2a71938aa0ec,"cli: using pygit2
+
+* Requires python-dev, libffi-dev and libgit2 packages.
+
+* Requires cffi and pygit2 from PyPI.
+
+Signed-off-by: Yoan Blanc <yoan.blan@cern.ch>",Yoan Blanc,yoan.blanc@cern.ch,Yoan Blanc,yoan.blanc@cern.ch,2014-07-26 00:33:39+02:00,-7200,2014-07-28 09:16:12+02:00,-7200,True,False,"['.travis.yml', '__init__.py', 'check.py', 'setup.py', 'test_check.py']",['80a7e7e261f104045cc99bd447f0a2b2a420af1a'],22,84,106,5,0.8666666666666667,1.0,1.0
+cf487af56742fc6b48fb8fd4ef08d1dcc0276bdd,"cli: colors for checks
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan.blanc@cern.ch,Yoan Blanc,yoan.blanc@cern.ch,2014-07-26 11:49:15+02:00,-7200,2014-07-28 09:38:18+02:00,-7200,True,False,"['check.py', 'kwalitee.py', 'setup.py', 'test_check.py', 'conftest.py']",['e5b7007d69534e378805cd55633e2a71938aa0ec'],19,43,62,5,0.13636363636363635,0.0,0.8636363636363636
+34d7bd0f9e686febd021598d546e9d0348ac4bb3,"cli: be lazy
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>
+Co-authored-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Yoan Blanc,yoan.blanc@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-28 10:43:23+02:00,-7200,2014-07-29 14:27:37+02:00,-7200,True,False,['check.py'],['cf487af56742fc6b48fb8fd4ef08d1dcc0276bdd'],2,0,2,1,1.0,1.0,0.0
+ef67d85cbc7fa1c51272de45155083dce29b36cd,"kwalitee: check whitespaces in docstring D290
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-08-20 14:22:20+02:00,-7200,2014-08-20 14:22:46+02:00,-7200,True,False,"['kwalitee.py', 'invalid_whitespaces.py.test', 'test_check_file.py']",['34d7bd0f9e686febd021598d546e9d0348ac4bb3'],0,40,40,3,0.0,1.0,0.38461538461538464
+e03b58003128d907546e96745124ad4d898cd8c5,docs: authors and change log improvements,Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-28 15:54:01+02:00,-7200,2014-08-20 14:28:03+02:00,-7200,True,False,"['AUTHORS.rst', 'CHANGELOG.rst', 'authors.rst', 'index.rst', 'version.py']",['ef67d85cbc7fa1c51272de45155083dce29b36cd'],1,67,68,5,,,
+b266b34b9f1081f029e2df781ac6bfd4bdb2a15f,"cli: fix the ordering
+
+* Fixes the output ordering so it's consistent between GitPython and
+  pygit2.
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan.blanc@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-28 16:47:25+02:00,-7200,2014-08-20 14:28:29+02:00,-7200,True,False,['check.py'],['e03b58003128d907546e96745124ad4d898cd8c5'],3,2,5,1,0.0,0.0,0.0
+6dc6c7e235db7573e5d6b6376ef3f95d26769ab8,"docs: installing pygit2
+
+Signed-off-by: Yoan Blanc <yoan.blanc@cern.ch>",Yoan Blanc,yoan.blanc@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-28 17:35:29+02:00,-7200,2014-08-20 14:28:29+02:00,-7200,True,False,"['INSTALL.rst', 'cli.rst', 'conf.py', 'check.py']",['b266b34b9f1081f029e2df781ac6bfd4bdb2a15f'],12,49,61,4,1.0,1.0,1.0
+ffbd62d1575ef11722e1ca5ced9c16cfcb9be435,"global: authentication for all requests
+
+* Adds authentication headers for all requests.  (closses #43)
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-31 15:40:45+02:00,-7200,2014-08-20 14:28:30+02:00,-7200,True,False,"['tasks.py', 'views.py']",['6dc6c7e235db7573e5d6b6376ef3f95d26769ab8'],12,16,28,2,0.0,0.0,1.0
+aee03237b9af0d34427147ed73b3b0f9e43f4812,"views: pull request action checker
+
+* Checks pull requests actions - opened, reopened, synchronize.
+  (closes #44)
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2014-07-31 17:00:15+02:00,-7200,2014-08-20 14:28:30+02:00,-7200,True,False,"['views.py', 'test_pull_request.py']",['ffbd62d1575ef11722e1ca5ced9c16cfcb9be435'],0,52,52,2,0.0,0.8636363636363636,0.13636363636363635
+b0737c599a5117e5576034844f109c364aa9ec36,"kwalitee: change of the authors module name
+
+Signed-off-by: Mateusz Susik <mateusz.susik@cern.ch>",Mateusz Susik,mateusz.susik@cern.ch,Mateusz Susik,mateusz.susik@cern.ch,2014-10-13 10:57:16+02:00,-7200,2014-10-13 10:57:16+02:00,-7200,True,False,['config.py'],['aee03237b9af0d34427147ed73b3b0f9e43f4812'],2,1,3,1,,,
+d013454445eefa3c0bd34c616170cfa6adc66cd2,"kwalitee: naming, imports and except checks
+
+* Adds `kwalitee check files <sha>` command.
+
+* Enables import order check. (closes #48)
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-01-19 09:29:13+01:00,-3600,2015-01-19 16:57:45+01:00,-3600,True,False,"['check.py', 'config.py', 'kwalitee.py', 'setup.py', 'missing_license.py.test', 'test_check_file.py', 'test_hooks.py', 'test_pull_request.py']",['b0737c599a5117e5576034844f109c364aa9ec36'],26,144,170,8,0.18888888888888888,0.26666666666666666,1.0
+5250553895b825b0e66e334b66e831cd4e1296fc,"tests: fix pull request comments
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-01-22 23:04:26+01:00,-3600,2015-01-27 16:49:54+01:00,-3600,True,False,"['.gitignore', 'check.py', 'test_pull_request.py']",['d013454445eefa3c0bd34c616170cfa6adc66cd2'],9,12,21,3,1.0,1.0,1.0
+67797b2a70296f4bac8cc95cca65cac4b442c7d2,"config: support for .kwalitee.yml in repo
+
+* Merges global configuration with .kwalitee.yml located in the
+  repository.  (PR #47)
+
+Co-authored-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Harris Tzovanakis,me@drjova.com,Jiri Kuncar,jiri.kuncar@cern.ch,2014-12-17 15:44:43+01:00,-3600,2015-01-28 14:57:22+01:00,-3600,True,False,"['.kwalitee.yml', 'check.py', 'hooks.py', 'tasks.py', 'setup.py', 'test_pull_request.py']",['5250553895b825b0e66e334b66e831cd4e1296fc'],25,157,182,6,0.09090909090909091,0.961038961038961,0.4155844155844156
+fb506002bc88cecf6566e006ca4b28a1105db1ae,"kwalitee: new package name
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-02 11:53:37+01:00,-3600,2015-02-02 13:50:23+01:00,-3600,True,False,"['.travis.yml', 'AUTHORS.rst', 'CHANGELOG.rst', 'INSTALL.rst', 'MANIFEST.in', 'Procfile', 'README.rst', 'env.py', 'aliases.rst', 'kwalitee.cli.rst', 'kwalitee.rst', 'modules.rst', 'authors.rst', 'cli.rst', 'conf.py', 'index.rst', 'installation.rst', 'introduction.rst', 'testing.rst', '__init__.py', '__init__.py', 'account.py', 'check.py', 'githooks.py', 'repository.py', 'config.py', 'factory.py', 'hooks.py', 'kwalitee.py', 'models.py', 'bootstrap.min.css', 'jumbotron-narrow.css', 'favicon.ico', 'tasks.py', 'account.html', 'branch.html', 'branches.html', 'commit.html', 'helpers.html', 'index.html', 'page.html', 'repository.html', 'status.html', 'version.py', 'views.py', 'worker.py', 'wsgi.py', 'setup.py', '__init__.py', 'test_account.py', 'test_check.py', 'test_githooks.py', 'test_repository.py', 'conftest.py', 'invalid_license.py.test', 'license.html.test', 'missing_license.py.test', 'valid.py.test', 'valid_license.py.test', 'test_check_file.py', 'test_check_message.py', 'test_hooks.py', 'test_ping.py', 'test_pull_request.py', 'test_push.py', 'utils.py', '__init__.py', 'conftest.py', 'test_account.py', 'test_branch.py', 'test_branches.py', 'test_commit.py', 'test_index.py', 'test_repository.py', 'test_status.py']",['67797b2a70296f4bac8cc95cca65cac4b442c7d2'],392,391,783,75,0.0,0.0,0.0
+8cd2b53ffe9481913c28368eabe51b44c4ed5337,"docker: initial configuration
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-02 14:30:13+01:00,-3600,2015-02-02 14:35:24+01:00,-3600,True,False,"['.kwalitee.yml', 'Dockerfile', 'fig.yml', 'worker.py']",['fb506002bc88cecf6566e006ca4b28a1105db1ae'],3,79,82,4,,,
+d399a729bbeeab273fb3b860a4c01cccfe8868bb,"Kwalitee v0.2.0c4
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-02 15:20:09+01:00,-3600,2015-02-02 15:38:01+01:00,-3600,True,False,"['CHANGELOG.rst', 'LICENSE', 'MANIFEST.in', 'RELEASE-NOTES.rst', 'introduction.rst', 'version.py', 'setup.cfg', 'setup.py']",['8cd2b53ffe9481913c28368eabe51b44c4ed5337'],43,459,502,8,,,
+62bec368ce1bb1c6958bc056aef45d0beba005ca,"global: environment variables usage addition
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-03 11:46:24+01:00,-3600,2015-02-03 11:46:32+01:00,-3600,True,False,"['fig.yml', 'factory.py', 'models.py']",['d399a729bbeeab273fb3b860a4c01cccfe8868bb'],14,22,36,3,1.0,1.0,1.0
+5aff441e0f1516d0ad203201814186a3e31b7521,"docker: postres database backend
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-03 16:41:22+01:00,-3600,2015-02-03 16:41:22+01:00,-3600,True,False,"['Dockerfile', 'fig.yml']",['62bec368ce1bb1c6958bc056aef45d0beba005ca'],6,13,19,2,,,
+72aacc56c664ff55442ca5cd5eca1f009542d60c,"docker: haproxy configuration
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-03 17:17:42+01:00,-3600,2015-02-03 17:17:42+01:00,-3600,True,False,['fig.yml'],['5aff441e0f1516d0ad203201814186a3e31b7521'],2,10,12,1,,,
+6d3e9a6ac5861ce1a66839d5c116ff81f628f410,"tasks: skip download of deleted files
+
+* Fixes issue when empty file has been created for deleted files.
+  (closes #55)
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-11 13:41:01+01:00,-3600,2015-02-11 14:30:24+01:00,-3600,True,False,"['tasks.py', 'version.py', 'test_pull_request.py', 'utils.py']",['72aacc56c664ff55442ca5cd5eca1f009542d60c'],22,26,48,4,0.0,0.0,1.0
+a77150f37be3ade402ab3a21b25cbcbfda2e7dc1,"models: default autoincrement on primary keys
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-20 17:41:50+01:00,-3600,2015-02-20 17:41:50+01:00,-3600,True,False,['models.py'],['6d3e9a6ac5861ce1a66839d5c116ff81f628f410'],4,4,8,1,,,
+a5f4c92077cb8c9b2a26ba72ef97b1b307532df2,"docker: .dockerignore addition
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-20 17:42:18+01:00,-3600,2015-02-20 17:42:18+01:00,-3600,True,False,['.dockerignore'],['a77150f37be3ade402ab3a21b25cbcbfda2e7dc1'],0,5,5,1,,,
+4846a0f2c94cb9f88c683fe4efff6a4d9833d6b3,"global: usage of # for licence
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-25 11:34:46+01:00,-3600,2015-02-25 15:33:00+01:00,-3600,True,False,"['.travis.yml', 'AUTHORS.rst', 'Dockerfile', 'INSTALL.rst', 'MANIFEST.in', 'README.rst', 'env.py', 'aliases.rst', 'kwalitee.rst', 'modules.rst', 'authors.rst', 'cli.rst', 'conf.py', 'index.rst', 'installation.rst', 'testing.rst', 'fig.yml', '__init__.py', '__init__.py', 'account.py', 'check.py', 'githooks.py', 'repository.py', 'config.py', 'factory.py', 'hooks.py', 'kwalitee.py', 'models.py', 'tasks.py', 'account.html', 'branch.html', 'branches.html', 'commit.html', 'helpers.html', 'index.html', 'page.html', 'repository.html', 'status.html', 'version.py', 'views.py', 'worker.py', 'wsgi.py', 'setup.py', '__init__.py', 'test_account.py', 'test_check.py', 'test_githooks.py', 'test_repository.py', 'conftest.py', 'invalid_license.py.test', 'license.html.test', 'missing_license.py.test', 'valid.py.test', 'valid_license.py.test', 'test_check_file.py', 'test_check_message.py', 'test_hooks.py', 'test_ping.py', 'test_pull_request.py', 'test_push.py', 'utils.py', '__init__.py', 'conftest.py', 'test_account.py', 'test_branch.py', 'test_branches.py', 'test_commit.py', 'test_index.py', 'test_repository.py', 'test_status.py']",['a5f4c92077cb8c9b2a26ba72ef97b1b307532df2'],1222,1222,2444,70,,,
+121559805a797047a83241f1ff511a296936e10e,"Kwalitee v0.2.0rc5
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-02-25 16:46:53+01:00,-3600,2015-02-25 16:46:53+01:00,-3600,True,False,"['.gitignore', 'MANIFEST.in', 'version.py']",['4846a0f2c94cb9f88c683fe4efff6a4d9833d6b3'],1,3,4,3,,,
+fd76b99a5908c087fe2d7233301fb62f7a1fc350,global: canonical repo on inveniosoftware,Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-03-23 16:44:46+01:00,-3600,2015-03-23 16:44:46+01:00,-3600,True,False,"['INSTALL.rst', 'README.rst', 'page.html']",['121559805a797047a83241f1ff511a296936e10e'],6,6,12,3,,,
+56e4e41af95814fbf25ff66b48053fafb46f0aa4,"hooks: fix commit message template configuration
+
+* BETTER Reads 'commit_msg_template' configuration value from
+  `.kwalitee.yml`.  (closes #62)
+
+* BETTER Uses updated 'pep257>=0.5.0' package.
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-03-25 16:30:03+01:00,-3600,2015-03-25 16:30:08+01:00,-3600,True,False,"['hooks.py', 'kwalitee.py', 'setup.py', 'test_check_file.py', 'test_pull_request.py', 'test_push.py']",['fd76b99a5908c087fe2d7233301fb62f7a1fc350'],31,28,59,6,0.0,0.0,1.0
+064b7e9a9e3d0432c1097fed6f665fcad9b0bef9,"docs: itegration of issuetracker extension
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-03-25 16:41:30+01:00,-3600,2015-03-25 16:41:30+01:00,-3600,True,False,"['conf.py', 'requirements-docs.txt']",['56e4e41af95814fbf25ff66b48053fafb46f0aa4'],0,5,5,2,,,
+6fe9c68789a4e4b819421147185057ad2be9f30a,"global: import change of Flask extensions
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-03-25 17:37:03+01:00,-3600,2015-03-25 17:37:03+01:00,-3600,True,False,"['aliases.rst', '__init__.py', 'account.py', 'check.py', 'githooks.py', 'repository.py', 'factory.py', 'models.py']",['064b7e9a9e3d0432c1097fed6f665fcad9b0bef9'],8,8,16,8,,,
+1e1088071b0dc6cf75fc8da2ff7f6362dc93fbc6,"global: disable python 3.4 on travis
+
+* Disables travis tests for python 3.4. (closes #66)
+
+Signed-off-by: Leonardo Rossi <leonardo.r@cern.ch>",Leonardo Rossi,leonardo.r@cern.ch,Leonardo Rossi,leonardo.r@cern.ch,2015-04-22 16:05:31+00:00,0,2015-04-22 16:05:31+00:00,0,True,False,['.travis.yml'],['6fe9c68789a4e4b819421147185057ad2be9f30a'],1,2,3,1,,,
+78c70f7c6865ef9b451a873d3ca64ef6d7365bff,"global: excludes option added
+
+* Adds a new option ""excludes"" to add a list of regular expression of
+  files to exclude from the checks.
+  (closes inveniosoftware/invenio#3022)
+
+Signed-off-by: Leonardo Rossi <leonardo.r@cern.ch>",Leonardo Rossi,leonardo.r@cern.ch,Leonardo Rossi,leonardo.r@cern.ch,2015-04-15 15:11:52+00:00,0,2015-04-23 07:21:31+00:00,0,True,False,"['check.py', 'config.py', 'hooks.py', 'kwalitee.py', 'tasks.py', 'beer.py', 'foo.py', 'excluded.py', 'test_excludes_option.py']",['1e1088071b0dc6cf75fc8da2ff7f6362dc93fbc6'],31,141,172,9,0.5652173913043478,0.43478260869565216,1.0
+98e2b91cd1c0d3253838c764d5c20b3c366f3f7a,"global: fix excludes option
+
+Signed-off-by: Leonardo Rossi <leonardo.r@cern.ch>",Leonardo Rossi,leonardo.r@cern.ch,Leonardo Rossi,leonardo.r@cern.ch,2015-04-29 11:00:49+00:00,0,2015-04-29 11:05:15+00:00,0,True,False,"['check.py', 'kwalitee.py', 'models.py', 'tasks.py', 'test_excludes_option.py']",['78c70f7c6865ef9b451a873d3ca64ef6d7365bff'],12,12,24,5,,,
+33f81fb8ad714c8be85dedf9bccfe0a86eedb45f,"travis: fix for `--use-mirrors` directive
+
+* Removes `--use-mirrors` directive.
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-07-22 22:21:46+02:00,-7200,2015-07-23 18:06:05+02:00,-7200,True,False,['.travis.yml'],['98e2b91cd1c0d3253838c764d5c20b3c366f3f7a'],3,5,8,1,,,
+f78b4c03d2871ac0c0efa17b858e3535d79f9fdb,"scripts: initial release of prepare-release-news
+
+* NEW Initial release of `prepare-release-news` helper script that aids
+  in compiling release notes from git commit log messages.  (closes #71)
+
+* Imports ""as is"" a previous standalone personal script that can be
+  amended later to profit from the kwalitee package ecosystem, e.g. the
+  configuration parts can be moved to `.kwalitee.yml`, etc.
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-07-22 15:28:05+02:00,-7200,2015-07-23 18:06:06+02:00,-7200,True,False,"['.kwalitee.yml', 'prepare-release-news']",['33f81fb8ad714c8be85dedf9bccfe0a86eedb45f'],0,226,226,2,,,
+5c2cacd167d0408c37c4b27ddaaddacdb7dca388,"cli: release notes generator
+
+* INCOMPATIBLE Requires Python 2.7 and higher.
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-07-24 14:22:23+02:00,-7200,2015-07-24 17:38:52+02:00,-7200,True,False,"['.kwalitee.yml', '.travis.yml', '__init__.py', 'prepare.py', 'config.py', 'kwalitee.py', 'prepare-release-news', 'setup.py', 'tox.ini']",['f78b4c03d2871ac0c0efa17b858e3535d79f9fdb'],239,209,448,9,0.19387755102040816,0.41836734693877553,0.41836734693877553
+042f2693e09430558dcc88d85df540f16183bdd0,"travis: automatic pypi deployment
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-07-24 17:57:10+02:00,-7200,2015-07-24 17:57:10+02:00,-7200,True,False,['.travis.yml'],['5c2cacd167d0408c37c4b27ddaaddacdb7dca388'],3,17,20,1,,,
+acb588a5d31ef6c28440b1e041920e57ec75ec36,"Kwalitee v0.2.0rc6
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-07-25 11:10:44+02:00,-7200,2015-07-25 11:12:18+02:00,-7200,True,False,"['CHANGELOG.rst', 'RELEASE-NOTES.rst', 'version.py', 'setup.py']",['042f2693e09430558dcc88d85df540f16183bdd0'],14,15,29,4,,,
+0a15395f371b6595f15b91d1186d1742e2e4ba40,"kwalitee: addition of bullet labels check
+
+* NEW Adds check to validate labels in commit messages.  (closes #75)
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-07-27 11:34:22+02:00,-7200,2015-07-27 11:39:01+02:00,-7200,True,False,"['README.rst', 'prepare.py', 'config.py', 'kwalitee.py', 'test_check_message.py']",['acb588a5d31ef6c28440b1e041920e57ec75ec36'],8,36,44,5,0.6666666666666666,0.6666666666666666,0.8888888888888888
+1117416db125a21a51afbcdeda43160754bd83bb,"travis: fix PyPI password
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-07-27 11:31:49+02:00,-7200,2015-07-27 11:40:02+02:00,-7200,True,False,['.travis.yml'],['0a15395f371b6595f15b91d1186d1742e2e4ba40'],1,1,2,1,,,
+96f0eec33483046376584353297217ca3eb8b84f,"Kwalitee v0.2.0rc7
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-07-27 11:41:04+02:00,-7200,2015-07-27 11:41:04+02:00,-7200,True,False,['version.py'],['1117416db125a21a51afbcdeda43160754bd83bb'],1,1,2,1,,,
+b50eaebdbd0865c82329b49f0e838e6a475c6998,"cli: fix presorting for groupby
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-07-27 12:12:59+02:00,-7200,2015-07-27 12:12:59+02:00,-7200,True,False,['prepare.py'],['96f0eec33483046376584353297217ca3eb8b84f'],1,4,5,1,0.6666666666666666,0.6666666666666666,0.6666666666666666
+e4b1abc7260bf356b760374bf56708dff738e1cb,"cli: fix AMMENDS and unicode issue
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-08-05 13:21:55+02:00,-7200,2015-08-05 13:21:55+02:00,-7200,True,False,['prepare.py'],['b50eaebdbd0865c82329b49f0e838e6a475c6998'],2,2,4,1,,,
+2ac284de88f2dff8656c7ec3e5fe63a950d2cc57,"cli: new check option to skip merge commits
+
+* NEW Adds a new CLI option `-s, --skip-merge-commits` to both
+  `kwalitee check` commands.  (closes #60)
+
+* Adds test cases for both `pygit2` and `GitPython` to read git
+  repository logs and detect merge commits.
+
+* Improves PEP-8 compliance.
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>
+Reviewed-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2015-08-19 16:58:14+02:00,-7200,2015-08-19 20:10:44+02:00,-7200,True,False,"['check.py', 'test_merge_commit_detection.py']",['e4b1abc7260bf356b760374bf56708dff738e1cb'],5,137,142,2,0.45454545454545453,0.9393939393939394,0.0
+4ab5b0ea7f47a39727472dfcf1db2248cedfc513,"Kwalitee v0.2.0rc8
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2015-08-20 11:26:49+02:00,-7200,2015-08-20 11:26:49+02:00,-7200,True,False,"['AUTHORS.rst', 'CHANGELOG.rst', 'RELEASE-NOTES.rst', 'version.py']",['2ac284de88f2dff8656c7ec3e5fe63a950d2cc57'],34,41,75,4,,,
+2f4fb0d8389fcf5a72d934ec991b783409adbc50,"global: port to click library
+
+* INCOMPATIBLE Removal of WSGI server support for managing GitHub
+  hooks. The kwalitee tool is to be run only locally from now on.
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2015-11-19 16:16:35+01:00,-3600,2016-04-26 14:24:47+02:00,-7200,True,False,"['.dockerignore', '.editorconfig', '.travis.yml', 'config', 'CHANGES.rst', 'CONTRIBUTING.rst', 'Dockerfile', 'INSTALL.rst', 'MANIFEST.in', 'README.rst', 'alembic.ini', 'env.py', 'script.py.mako', '.keep', 'kwalitee.cli.rst', 'kwalitee.rst', 'changes.rst', 'conf.py', 'contributing.rst', 'index.rst', 'installation.rst', 'introduction.rst', 'license.rst', 'fig.yml', '__init__.py', '__init__.py', 'account.py', 'check.py', 'githooks.py', 'prepare.py', 'repository.py', 'config.py', 'factory.py', 'hooks.py', 'kwalitee.py', 'models.py', 'bootstrap.min.css', 'jumbotron-narrow.css', 'favicon.ico', 'tasks.py', 'account.html', 'branch.html', 'branches.html', 'commit.html', 'helpers.html', 'index.html', 'page.html', 'repository.html', 'status.html', 'version.py', 'views.py', 'worker.py', 'wsgi.py', 'requirements-devel.txt', 'requirements.txt', 'run-tests.sh', 'setup.cfg', 'setup.py', 'test_account.py', 'test_check.py', 'test_githooks.py', 'test_repository.py', 'conftest.py', 'test_check_file.py', 'test_check_message.py', 'test_excludes_option.py', 'test_hooks.py', 'test_merge_commit_detection.py', 'test_ping.py', 'test_pull_request.py', 'test_push.py', 'utils.py', '__init__.py', 'conftest.py', 'test_account.py', 'test_branch.py', 'test_branches.py', 'test_commit.py', 'test_index.py', 'test_repository.py', 'test_status.py', 'tox.ini']",['4ab5b0ea7f47a39727472dfcf1db2248cedfc513'],5839,989,6828,82,0.7134121483897269,0.12311455360782715,0.5373012637586628
+39e38ad1ae45303d7c318a04cb66e82cd5c17428,"installation: upper limit on dependency versions
+
+* FIX Adds upper version limit on some dependencies such as `pyflakes`,
+  fixing observed runtime issues. (closes #84)
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2016-05-04 15:15:39+02:00,-7200,2016-05-04 15:19:32+02:00,-7200,True,False,['setup.py'],['2f4fb0d8389fcf5a72d934ec991b783409adbc50'],2,1,3,1,,,
+ed59c54a42a981ffa288c8e4772d130eb9bb16e2,"cli: check authors
+
+* NEW Adds new checking option `kwalitee check authors` to check whether
+  the source code committers are also well listed in the AUTHORS or
+  THANKS files. The list of author files is customisable via `authors`
+  directive in `.kwalitee.yml`. The list of author names to exclude from
+  checking (e.g. known second email addresses) is customisable via
+  `exclude_author_names` directive in `.kwalitee.yml`.
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2016-05-04 16:49:02+02:00,-7200,2016-05-10 10:10:54+02:00,-7200,True,False,"['check.py', 'config.py', 'kwalitee.py', 'test_check_authors.py']",['39e38ad1ae45303d7c318a04cb66e82cd5c17428'],10,314,324,4,0.4101123595505618,0.5842696629213483,0.7247191011235955
+7b00be7f2317d5690dc5b43248c33bc73f6f9a86,"cli: author checking encoding fix
+
+* FIX Fixes invalid encoding problems in author checking. (closes #87)
+
+* Completes the alternative author names to exclude so that the author
+  checking works fully in this very repository.
+  (`kwalitee check authors adf1d899..`)
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2016-05-27 10:54:01+02:00,-7200,2016-05-27 13:05:05+02:00,-7200,True,False,"['.kwalitee.yml', 'check.py']",['ed59c54a42a981ffa288c8e4772d130eb9bb16e2'],2,6,8,2,,,
+5cdcbf342777e4d2c2bcfd8182767b3405df1727,"docs: sphinx 1.4.2
+
+* Upgrades to Sphinx 1.4.2, fixes Travis CI build status.
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2016-06-20 09:41:54+02:00,-7200,2016-06-20 09:41:54+02:00,-7200,True,False,"['conf.py', 'setup.py']",['7b00be7f2317d5690dc5b43248c33bc73f6f9a86'],10,4,14,2,0.0,0.0,1.0
+b66798d30ced84aea006819bf494d42adbdd0c0a,"docs: pydocstyle warning fix
+
+* Fixes pydocstyle warning, fixing Travis CI build failure.
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2016-06-21 12:57:26+02:00,-7200,2016-06-21 14:14:31+02:00,-7200,True,False,['kwalitee.py'],['5cdcbf342777e4d2c2bcfd8182767b3405df1727'],2,1,3,1,,,
+e429fb686d8bb8855375cc3ac61b24a944c58d7b,"global: inveniosoftware.org
+
+* Changes `invenio-software.org` to `inveniosoftware.org` to use the
+  same dashless canonical ID everywhere (GitHub, Twitter, Web).
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2016-06-28 14:49:26+02:00,-7200,2016-06-28 14:55:42+02:00,-7200,True,False,"['AUTHORS.rst', 'RELEASE-NOTES.rst', 'setup.cfg', 'setup.py']",['b66798d30ced84aea006819bf494d42adbdd0c0a'],6,6,12,4,,,
+63fbd4059ee6cd262724fe421bcac5208f1bd43b,"global: pep8 fix
+
+* Fixes some pep8 issues.
+
+Signed-off-by: David Caro <david@dcaro.es>",David Caro,dcaroest@redhat.com,David Caro,david@dcaro.es,2016-07-15 15:52:13+02:00,-7200,2016-07-15 17:12:19+02:00,-7200,True,False,"['check.py', 'githooks.py', 'prepare.py', 'config.py', 'kwalitee.py', 'test_check.py', 'test_githooks.py', 'test_check_authors.py', 'test_check_file.py', 'utils.py']",['e429fb686d8bb8855375cc3ac61b24a944c58d7b'],19,27,46,10,0.8888888888888888,0.8888888888888888,0.8888888888888888
+2ab1f74c1014086573e5107b02faab7a94d30b63,"global: trailing dots test
+
+* Adds a check for the trailing dots in the bullets of the commit
+  message.
+
+Signed-off-by: David Caro <david@dcaro.es>",David Caro,david@dcaro.es,David Caro,david@dcaro.es,2016-07-15 17:04:28+02:00,-7200,2016-07-15 20:39:28+02:00,-7200,True,False,"['kwalitee.py', 'test_check_message.py']",['63fbd4059ee6cd262724fe421bcac5208f1bd43b'],12,51,63,2,0.08823529411764706,0.6764705882352942,1.0
+9a9b71252dd1f6ef041f4df942bf77aa9aad09e4,"global: addition of new author
+
+Signed-off-by: Jiri Kuncar <jiri.kuncar@cern.ch>",Jiri Kuncar,jiri.kuncar@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2016-07-18 09:09:32+02:00,-7200,2016-07-18 09:10:05+02:00,-7200,True,False,"['.kwalitee.yml', 'AUTHORS.rst']",['2ab1f74c1014086573e5107b02faab7a94d30b63'],0,2,2,2,,,
+31c309917e08371c4621d420f262bf2ebbd917ab,"global: allow utf8 in commit message
+
+* E.g. the Signed-off-by below contains diacritics and will pass
+  ""kwalitee check message"" after this commit.
+
+* Adds utf8 test cases.
+
+* Fixes minor complaints from kwalitee.
+
+Signed-off-by: Ivan Masár <helix84@centrum.sk>",Ivan Masár,helix84@centrum.sk,Ivan Masár,helix84@centrum.sk,2016-07-27 15:55:41+02:00,-7200,2016-07-28 09:55:07+02:00,-7200,True,False,"['AUTHORS.rst', 'check.py', 'test_check.py', 'conftest.py', 'test_check_message.py']",['9a9b71252dd1f6ef041f4df942bf77aa9aad09e4'],6,30,36,5,0.6470588235294118,1.0,1.0
+a0d6763d768e4fb76c20e9d00ec8cdfc776c12ec,"cli: fix author name in output
+
+* Fixes 'authors: wrong format in error message'. (closes #100)
+
+Signed-off-by: Ivan Masár <helix84@centrum.sk>",Ivan Masár,helix84@centrum.sk,Ivan Masár,helix84@centrum.sk,2016-07-29 16:36:49+02:00,-7200,2016-07-29 16:42:31+02:00,-7200,True,False,['check.py'],['31c309917e08371c4621d420f262bf2ebbd917ab'],1,1,2,1,,,
+96f4c428f0c28a3d8676afd148f7d2b535d0745d,"docs: addition of kanban waffle badge
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2016-08-02 10:28:24+02:00,-7200,2016-08-02 11:11:29+02:00,-7200,True,False,['README.rst'],['a0d6763d768e4fb76c20e9d00ec8cdfc776c12ec'],1,3,4,1,,,
+848570a19b35818f12faa1b39bdd88180ff7a42c,"docs: MAINTAINERS file and LGTM configuration
+
+* Adds the MAINTAINERS file and the initial LGTM configuration.
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2016-09-14 11:01:46+02:00,-7200,2016-09-14 11:06:16+02:00,-7200,True,False,"['.lgtm', 'MAINTAINERS', 'MANIFEST.in', 'run-tests.sh']",['96f4c428f0c28a3d8676afd148f7d2b535d0745d'],1,7,8,4,,,
+a7e1d03a8ea628f53533f6722feb7e37c9b2100b,"travis: fast finish option
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Tibor Simko,tibor.simko@cern.ch,2016-09-14 17:10:47+02:00,-7200,2016-09-14 17:34:32+02:00,-7200,True,False,"['.travis.yml', 'setup.py']",['848570a19b35818f12faa1b39bdd88180ff7a42c'],2,5,7,2,,,
+9124f8f55b15547fef08c6c43cabced314e70674,"docs: move to readthedocs.io
+
+Signed-off-by: Tibor Simko <tibor.simko@cern.ch>",Tibor Simko,tibor.simko@cern.ch,Jiri Kuncar,jiri.kuncar@cern.ch,2016-09-25 13:32:28+02:00,-7200,2016-09-27 18:18:16+02:00,-7200,True,False,"['MANIFEST.in', 'README.rst', 'RELEASE-NOTES.rst', 'conf.py', 'requirements.txt', 'testing.rst']",['a7e1d03a8ea628f53533f6722feb7e37c9b2100b'],8,10,18,6,,,

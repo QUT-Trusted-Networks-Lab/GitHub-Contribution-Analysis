@@ -1,0 +1,146 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+bbd774c96fd0d335da5cfed0c1c53e5362feb61d,initial boilerplate import,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-01-24 17:18:07-05:00,18000,2016-01-24 17:18:07-05:00,18000,True,False,"['.editorconfig', '.gitignore', '.travis.yml', 'AUTHORS.rst', 'CONTRIBUTING.rst', 'HISTORY.rst', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.rst', '__init__.py', 'arwn.py', 'Makefile', 'authors.rst', 'conf.py', 'contributing.rst', 'history.rst', 'index.rst', 'installation.rst', 'make.bat', 'readme.rst', 'usage.rst', 'requirements_dev.txt', 'setup.cfg', 'setup.py', '__init__.py', 'test_arwn.py', 'tox.ini', 'travis_pypi_setup.py']",[],0,1382,1382,29,1.0,1.0,1.0
+dd15abfe9068a08499ff3243040583661af24ece,quick port of collector,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-01-30 11:47:06-05:00,18000,2016-01-30 11:47:06-05:00,18000,True,False,"['arwn.py', 'temperature.py']",['bbd774c96fd0d335da5cfed0c1c53e5362feb61d'],1,240,241,2,0.7482014388489209,0.7482014388489209,0.8848920863309353
+0814fddd221acb8b30b2a91f1399cffc95bfbf9b,add in vendored rfxtrx,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 06:31:02-05:00,18000,2016-02-06 06:31:02-05:00,18000,True,False,"['arwn.py', '__init__.py', 'dummy.py', 'lowlevel.py', 'pyserial.py', 'twistedserial.py', 'requirements_dev.txt', 'setup.py']",['dd15abfe9068a08499ff3243040583661af24ece'],6,1776,1782,8,0.5055276381909548,0.7698492462311558,0.7396984924623116
+195ddb45bad5a46c00d1d571f8f28adc213a88fc,add travis file,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 06:38:54-05:00,18000,2016-02-06 06:38:54-05:00,18000,True,False,['.travis.yml'],['0814fddd221acb8b30b2a91f1399cffc95bfbf9b'],28,14,42,1,,,
+5049cad28759efaf4f30e15449abe8e11407c1fa,remove setup script,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 06:40:46-05:00,18000,2016-02-06 06:40:46-05:00,18000,True,False,['travis_pypi_setup.py'],['195ddb45bad5a46c00d1d571f8f28adc213a88fc'],122,0,122,1,0.0,0.0,0.0
+4fea330c82c9011948e111f866de5defc1589c2f,get imports to work correctly,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 07:24:42-05:00,18000,2016-02-06 07:24:42-05:00,18000,True,False,"['arwn.py', 'setup.py']",['5049cad28759efaf4f30e15449abe8e11407c1fa'],7,8,15,2,,,
+9829cbfda69c42c8ff5e0d7106710097f97dca68,"vendor RFXtrx correctly
+
+This makes is so that RFXtrx won't stomp other installations of
+similar code.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 09:08:35-05:00,18000,2016-02-06 09:08:35-05:00,18000,True,False,"['arwn.py', '__init__.py', '__init__.py', 'setup.py']",['4fea330c82c9011948e111f866de5defc1589c2f'],20,5,25,4,,,
+5bf1487b5e93d3135eb16e19aee0714895715c0b,add bin command for running the service,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 16:23:50-05:00,18000,2016-02-06 16:23:50-05:00,18000,True,False,"['arwn', 'setup.py']",['9829cbfda69c42c8ff5e0d7106710097f97dca68'],0,65,65,2,,,
+f3d1abfa39955c15467e11549ac75a28c9545ef7,fix syntax error,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 20:16:31-05:00,18000,2016-02-06 20:16:31-05:00,18000,True,False,['arwn'],['5bf1487b5e93d3135eb16e19aee0714895715c0b'],1,1,2,1,,,
+98efeb9c0594dc58cff352c840f0b3d419603019,syntax fixes,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 20:20:39-05:00,18000,2016-02-06 20:20:39-05:00,18000,True,False,"['arwn.py', 'setup.py']",['f3d1abfa39955c15467e11549ac75a28c9545ef7'],2,12,14,2,,,
+79041cd4a197d46cf432055f00bb243e68d8266d,update rfx sensors,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 21:08:09-05:00,18000,2016-02-06 21:08:09-05:00,18000,True,False,"['__init__.py', 'lowlevel.py', 'pyserial.py']",['98efeb9c0594dc58cff352c840f0b3d419603019'],12,226,238,3,0.5034013605442177,0.8095238095238095,1.0
+342e9d766cf6219000aad51e4a3df3abb48de67b,address import issues,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 21:08:44-05:00,18000,2016-02-06 21:08:44-05:00,18000,True,False,"['engine.py', 'arwn.py', 'setup.py']",['98efeb9c0594dc58cff352c840f0b3d419603019'],79,12,91,3,0.0,0.0,0.0
+8cf594af70e58c814ce0fbc879c957cc7bcc1b3a,add collector,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 21:09:02-05:00,18000,2016-02-06 21:09:02-05:00,18000,True,False,['arwn-collect.py'],['342e9d766cf6219000aad51e4a3df3abb48de67b'],0,74,74,1,1.0,1.0,1.0
+c671814075453e6f86bf2e7fcfe12ce4ea81bce5,fix type in id field,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-06 21:13:33-05:00,18000,2016-02-06 21:13:33-05:00,18000,True,False,['engine.py'],['a94430cd811d5e5d27e09a874dcadc1b316942ec'],1,1,2,1,,,
+f40e941eef41c840797fb7939582f17f999b1782,update base test,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-07 05:54:24-05:00,18000,2016-02-07 05:54:24-05:00,18000,True,False,['test_arwn.py'],['c671814075453e6f86bf2e7fcfe12ce4ea81bce5'],1,1,2,1,,,
+4be9fa3230279879ff5d097e74932f194f2b9c90,fix setup.py,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-07 05:56:11-05:00,18000,2016-02-07 05:56:11-05:00,18000,True,False,['setup.py'],['f40e941eef41c840797fb7939582f17f999b1782'],1,1,2,1,,,
+c71e47c69777770026c4d9a4e083e6f1e8b4ee3b,update requirements,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-07 06:06:07-05:00,18000,2016-02-07 06:06:07-05:00,18000,True,False,"['setup.py', 'test_arwn.py']",['4be9fa3230279879ff5d097e74932f194f2b9c90'],5,5,10,2,,,
+9ea7d929f0d0ffcb2c17abcc9f60b7ec49a63c3a,updated requirements to pass tox,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-07 06:08:32-05:00,18000,2016-02-07 06:08:32-05:00,18000,True,False,['setup.py'],['c71e47c69777770026c4d9a4e083e6f1e8b4ee3b'],1,1,2,1,,,
+2827ecdff66102d878df538e5276fea2f15eee4d,"delete unneeded modules from rfxtrx
+
+fix logging for module to make it python3 compatible",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-07 06:20:23-05:00,18000,2016-02-07 06:20:23-05:00,18000,True,False,"['dummy.py', 'lowlevel.py', 'pyserial.py', 'twistedserial.py']",['9ea7d929f0d0ffcb2c17abcc9f60b7ec49a63c3a'],139,14,153,4,0.06666666666666667,0.044444444444444446,0.2222222222222222
+378f93e3ec7dac2bc8b7e5d34dc01bc2360c68d1,add pep8 target,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-07 11:11:53-05:00,18000,2016-02-07 11:11:53-05:00,18000,True,False,['tox.ini'],['2827ecdff66102d878df538e5276fea2f15eee4d'],1,7,8,1,,,
+c75caf061b1e5e4e2dcdf119b618fc2c77af2a27,add pep8 to travis,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-07 11:12:18-05:00,18000,2016-02-07 11:12:18-05:00,18000,True,False,['.travis.yml'],['378f93e3ec7dac2bc8b7e5d34dc01bc2360c68d1'],0,1,1,1,,,
+4a5a0c5bfca5c6d70d572dbeb2e7839f614dab0f,log to stdout when running in foreground,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-08 20:07:58-05:00,18000,2016-02-08 20:07:58-05:00,18000,True,False,"['pyserial.py', 'arwn-collect.py']",['c75caf061b1e5e4e2dcdf119b618fc2c77af2a27'],6,10,16,2,1.0,1.0,1.0
+d68e3f50d597aa59b36f48d58e81b38bc8aeb435,"move the collector to a module for testability
+
+This moves the collector core logic into arwn/cmd/collect.py to make
+it much easier to unit test.
+
+We drag in the fixtures/testtools stack as that gives us nice tempdirs
+and log capture for basic testing the cli actually works.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-13 07:28:02-05:00,18000,2016-02-13 07:28:02-05:00,18000,True,False,"['__init__.py', 'collect.py', 'arwn-collect', 'setup.py', 'test-requirements.txt', 'test_arwn_collect.py', 'tox.ini']",['4a5a0c5bfca5c6d70d572dbeb2e7839f614dab0f'],9,96,105,7,0.30303030303030304,1.0,1.0
+4ebefaa08ef4fcace572a51dd998303684ddce35,move to test fixtures,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-13 09:08:16-05:00,18000,2016-02-13 09:08:16-05:00,18000,True,False,"['arwn_fixtures.py', 'test_arwn_collect.py']",['d68e3f50d597aa59b36f48d58e81b38bc8aeb435'],28,54,82,2,1.0,1.0,1.0
+0ab42a6074f8be36e02fea78a1035c2806ebbf8a,fix imports to pass python 3.4,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-13 09:15:02-05:00,18000,2016-02-13 09:15:02-05:00,18000,True,False,['test_arwn_collect.py'],['4ebefaa08ef4fcace572a51dd998303684ddce35'],3,1,4,1,,,
+c1d5d1833c73f0db0803931b5d2e5a16babacd0a,"added mosquitto test fixture
+
+This adds a fixture which spawns a real mosquitto for the duration of
+the test. This takes a couple of seconds to get rolling because the
+spawn needs to actually get the server up. There is also a potential
+race around port allocation, however, it's pretty insignificant.
+
+If mosquitto can't be started, tests are skipped.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-13 11:01:23-05:00,18000,2016-02-13 11:07:10-05:00,18000,True,False,"['arwn_fixtures.py', 'test_mqtt_real.py']",['0ab42a6074f8be36e02fea78a1035c2806ebbf8a'],0,83,83,2,0.3488372093023256,1.0,1.0
+0ffb7e2ab9309cf7eff8c68671609c5061624666,get a message sending test working,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-15 09:38:32-05:00,18000,2016-02-15 09:38:32-05:00,18000,True,False,['test_mqtt_real.py'],['c1d5d1833c73f0db0803931b5d2e5a16babacd0a'],1,25,26,1,0.0,1.0,0.7
+0f2538751f4d589ab2f99823a0be6c01cc7440eb,"only sleep 0.1 s on mosquitto spawn
+
+This reduces the sleep loop interval to 0.1 on mosquitto spawn. It
+turns out we mostly only need one sleep cycle to spawn the server to
+the point of connecting.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-15 09:55:37-05:00,18000,2016-02-15 09:55:37-05:00,18000,True,False,['arwn_fixtures.py'],['0ffb7e2ab9309cf7eff8c68671609c5061624666'],2,2,4,1,,,
+b0e2068a56bf80cb6823629cb11b46471834e466,"mosquitto should only skip if we can't start it
+
+We should only fail if we can't start mosquitto, not if we can't
+connect to it. Because we're using randomized ports this should work
+even if mosquitto is running as a system service.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-15 10:07:07-05:00,18000,2016-02-15 10:07:07-05:00,18000,True,False,['arwn_fixtures.py'],['0f2538751f4d589ab2f99823a0be6c01cc7440eb'],1,4,5,1,,,
+7c0b98d37d7a10b7113d1d0d76fc87bb690e7a06,fix lint error,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-15 10:08:02-05:00,18000,2016-02-15 10:08:02-05:00,18000,True,False,['arwn_fixtures.py'],['b0e2068a56bf80cb6823629cb11b46471834e466'],0,1,1,1,,,
+180dcf1ae3a8d99954ee20b84106c5aab1a390c2,"redo engine logic to have a dedicated packet type
+
+All the testing and logic from here on out is going to be easier if
+I've got a dedicated packet type I can construct to throw on the wire.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-15 12:07:10-05:00,18000,2016-02-15 12:07:10-05:00,18000,True,False,"['engine.py', 'test_mqtt_real.py']",['7c0b98d37d7a10b7113d1d0d76fc87bb690e7a06'],81,99,180,2,0.0,0.0,1.0
+1a395fefcbcc915b432bcc3b4aa72444aec3e91c,be actual python,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-15 13:28:28-05:00,18000,2016-02-15 13:28:28-05:00,18000,True,False,['engine.py'],['180dcf1ae3a8d99954ee20b84106c5aab1a390c2'],3,3,6,1,,,
+7fa2e7ed9db7cb73e1112b91d4d2696ad88beeb5,additional tests for connect / disconnect,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-15 15:49:08-05:00,18000,2016-02-15 15:49:08-05:00,18000,True,False,"['engine.py', 'test_mqtt_real.py']",['1a395fefcbcc915b432bcc3b4aa72444aec3e91c'],5,58,63,2,0.5,1.0,0.4318181818181818
+cef5c9a85bc13184b90e2a01f6193fbedd62ef6b,add retry logic for unparsable bytes,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-15 15:52:48-05:00,18000,2016-02-15 15:52:48-05:00,18000,True,False,['engine.py'],['7fa2e7ed9db7cb73e1112b91d4d2696ad88beeb5'],1,12,13,1,0.0,0.0,1.0
+b02f079e2a30c85be1fa3d5e4ffb30c28eafc9c8,catch a class of issues,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-15 16:03:33-05:00,18000,2016-02-15 16:03:33-05:00,18000,True,False,['engine.py'],['cef5c9a85bc13184b90e2a01f6193fbedd62ef6b'],1,1,2,1,,,
+f1b2d85a2b47b7c1d5483b87aa3adf72f1dcb4f2,"correctly set a will
+
+This correctly sets the will for the engine, which you must do before
+connecting.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-02-15 19:20:56-05:00,18000,2016-02-15 19:20:56-05:00,18000,True,False,"['engine.py', 'test_mqtt_real.py']",['b02f079e2a30c85be1fa3d5e4ffb30c28eafc9c8'],5,25,30,2,0.13333333333333333,1.0,0.8666666666666667
+627750931d431d2ca50c31d0b7c7f36c093a56a6,update engine to do rain total calculations,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 14:28:51+00:00,0,2016-10-11 14:28:51+00:00,0,True,False,['engine.py'],['f1b2d85a2b47b7c1d5483b87aa3adf72f1dcb4f2'],2,44,46,1,0.0,0.08571428571428572,0.0
+51a79f6ce05601be587bdef4982ed1b67033eeb3,move all the on_message code to a handlers infrastructure,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 16:21:51+00:00,0,2016-10-11 16:21:51+00:00,0,True,False,"['engine.py', 'handlers.py']",['627750931d431d2ca50c31d0b7c7f36c093a56a6'],35,95,130,2,1.0,1.0,0.36363636363636365
+e43ec022a08d4cdac02a582de1974719f8a34240,implement wunderground handler,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 17:41:49+00:00,0,2016-10-11 17:41:49+00:00,0,True,False,"['collect.py', 'engine.py', 'handlers.py']",['51a79f6ce05601be587bdef4982ed1b67033eeb3'],6,87,93,3,0.2833333333333333,0.5833333333333334,0.6833333333333333
+c668ffa1c35c517627c84b74ad3a8ae0137447ce,"Fix license, make it apache",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 13:46:55-04:00,14400,2016-10-11 13:46:55-04:00,14400,True,False,['LICENSE'],['e43ec022a08d4cdac02a582de1974719f8a34240'],13,202,215,1,,,
+4584ca2528fad0fa34dcd1514255785254ff47a6,"fix license, bump to 1.0",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 13:48:44-04:00,14400,2016-10-11 13:48:44-04:00,14400,True,False,"['setup.cfg', 'setup.py']",['c668ffa1c35c517627c84b74ad3a8ae0137447ce'],5,5,10,2,,,
+cd46ef16c5320436f0f9884b2c297b7bd7a579b5,fix pep8 issues,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 13:48:52-04:00,14400,2016-10-11 13:48:52-04:00,14400,True,False,"['engine.py', 'handlers.py']",['4584ca2528fad0fa34dcd1514255785254ff47a6'],2,13,15,2,,,
+496f95f555c2be71874069691a9aab3cfed0b3d2,add six to address python 3 issues,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 14:31:05-04:00,14400,2016-10-11 14:31:05-04:00,14400,True,False,"['handlers.py', 'setup.py']",['cd46ef16c5320436f0f9884b2c297b7bd7a579b5'],3,5,8,2,,,
+87f1bf66ac47adbff64e4bd24e5de022b96e6216,move travis to python 3.5,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 14:31:30-04:00,14400,2016-10-11 14:31:30-04:00,14400,True,False,['.travis.yml'],['496f95f555c2be71874069691a9aab3cfed0b3d2'],1,1,2,1,,,
+a929b60b816da84b0a42810eeac196b002503b24,update travis,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 14:36:06-04:00,14400,2016-10-11 14:36:06-04:00,14400,True,False,['.travis.yml'],['87f1bf66ac47adbff64e4bd24e5de022b96e6216'],0,4,4,1,,,
+25c0871900986c99b079664d95de07bcdbe17804,update travis to be like HA,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 14:38:52-04:00,14400,2016-10-11 14:38:52-04:00,14400,True,False,['.travis.yml'],['a929b60b816da84b0a42810eeac196b002503b24'],18,13,31,1,,,
+faac3b2c3dfa3f1808d9e197249504868557070d,fix license,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 15:26:12-04:00,14400,2016-10-11 15:26:12-04:00,14400,True,False,['setup.py'],['25c0871900986c99b079664d95de07bcdbe17804'],1,1,2,1,,,
+cd509dcf4a13fbb2e2d0c57d2673597faf001586,fix up readme,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-11 15:32:01-04:00,14400,2016-10-11 15:32:01-04:00,14400,True,False,['README.rst'],['faac3b2c3dfa3f1808d9e197249504868557070d'],5,2,7,1,,,
+cbedee768c5b817b6abea4eae7c07ec299ef7b09,add support for pidfile,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-12 12:07:00+00:00,0,2016-10-12 12:07:00+00:00,0,True,False,"['collect.py', 'setup.py']",['cd509dcf4a13fbb2e2d0c57d2673597faf001586'],1,6,7,2,0.0,1.0,1.0
+a127a4bc097167ea80043aa736790e807717f751,arwn-daemon script,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-12 09:48:49-04:00,14400,2016-10-12 09:50:17-04:00,14400,True,False,['arwn-daemon'],['cd509dcf4a13fbb2e2d0c57d2673597faf001586'],0,103,103,1,,,
+2aad2f17926f0b5fa348c487c30d3e8820a9e3f1,make pid and log configurable,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-12 13:51:38+00:00,0,2016-10-12 13:51:38+00:00,0,True,False,['collect.py'],['c37f03ec4381f44fe59b8c1d64f583ff02094509'],2,8,10,1,1.0,1.0,1.0
+b70788e32779f98b3d02534b6b1126104037fa7d,fix some of the logging,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-12 14:15:56+00:00,0,2016-10-12 14:15:56+00:00,0,True,False,"['engine.py', 'lowlevel.py']",['2aad2f17926f0b5fa348c487c30d3e8820a9e3f1'],2,2,4,2,,,
+cefd297e3bb2d541f78d0afe4ffe01de31cec657,update topic,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-12 14:18:04+00:00,0,2016-10-12 14:18:04+00:00,0,True,False,['engine.py'],['b70788e32779f98b3d02534b6b1126104037fa7d'],1,1,2,1,,,
+4e8efc69e4fb9dc90432a26aa3ebf10850bf4fa8,fix setting bad data,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-12 15:13:32+00:00,0,2016-10-12 15:13:32+00:00,0,True,False,['handlers.py'],['cefd297e3bb2d541f78d0afe4ffe01de31cec657'],1,4,5,1,0.0,0.0,0.0
+c1a516a048378a353f910cbd52982c4dfa0cb111,update for 1.1.0,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-12 15:23:33-04:00,14400,2016-10-12 15:23:33-04:00,14400,True,False,"['HISTORY.rst', 'README.rst', 'setup.cfg', 'setup.py']",['4e8efc69e4fb9dc90432a26aa3ebf10850bf4fa8'],10,25,35,4,,,
+8e321f0a470abb6f77d024a9c02dcf2b8e45ba35,update wunderground reporting,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-12 15:24:27-04:00,14400,2016-10-12 15:24:27-04:00,14400,True,False,['handlers.py'],['c1a516a048378a353f910cbd52982c4dfa0cb111'],1,1,2,1,,,
+b56f78edc0d181a14463e7af7a382c715febdf3c,"handle unexpected packets better
+
+Someone in my neighborhood seems to have some 433Mhz home control
+units now, so not everything I'm seeing has battery fields. Don't
+explode if we see something else here.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-30 17:26:05-04:00,14400,2016-10-30 17:26:05-04:00,14400,True,False,['engine.py'],['4e8efc69e4fb9dc90432a26aa3ebf10850bf4fa8'],1,1,2,1,,,
+504c70ec753b150ad20f36f35e1c6600a3a0618a,fix __version__,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-30 17:42:36-04:00,14400,2016-10-30 17:42:36-04:00,14400,True,False,['__init__.py'],['71de71909a4095280075634ecab191411ad1ed97'],1,1,2,1,,,
+e4c4fc27143dd0a3a0c44b3039f7f5e3c276e611,Bump version: 1.1.0 → 1.2.0,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-30 17:45:56-04:00,14400,2016-10-30 17:45:56-04:00,14400,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['504c70ec753b150ad20f36f35e1c6600a3a0618a'],3,4,7,3,,,
+37f4f80c27d55e496f4adb56aa0236e9f0491339,make the wundergroun handler use the built in version,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-30 17:47:34-04:00,14400,2016-10-30 17:48:04-04:00,14400,True,False,['handlers.py'],['e4c4fc27143dd0a3a0c44b3039f7f5e3c276e611'],1,3,4,1,,,
+31141ae9e1263193f0675f91634e237b75677d1d,Update history for 1.2.0,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2016-10-30 17:49:35-04:00,14400,2016-10-30 17:49:35-04:00,14400,True,False,['HISTORY.rst'],['37f4f80c27d55e496f4adb56aa0236e9f0491339'],0,5,5,1,,,
+aa3798f42a1ca712ad49bacce39620877a1de59a,Early port over to support rtl_433,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-08 12:09:39+00:00,0,2017-07-08 12:09:39+00:00,0,True,False,['engine.py'],['31141ae9e1263193f0675f91634e237b75677d1d'],27,106,133,1,0.3684210526315789,0.5614035087719298,1.0
+97d6db250f48f5bae92e084c6c9e294c67be129d,simplify looping constructs,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-08 12:43:38+00:00,0,2017-07-08 12:43:38+00:00,0,True,False,"['collect.py', 'engine.py']",['aa3798f42a1ca712ad49bacce39620877a1de59a'],14,12,26,2,1.0,1.0,1.0
+b255dc13484e2577ea9ad6a15ea0778e14c1b86d,"add support for moisture sensors
+
+remove signal from packets sent, it's not really useful and you can't
+get it over 433rtl.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-09 09:53:39+00:00,0,2017-07-09 09:53:39+00:00,0,True,False,['engine.py'],['97d6db250f48f5bae92e084c6c9e294c67be129d'],7,28,35,1,0.07142857142857142,0.0,1.0
+926f3edaa217ddfc01642a724830dd4e40329be0,remove sig in one last place,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-09 09:54:53+00:00,0,2017-07-09 09:54:53+00:00,0,True,False,['engine.py'],['b255dc13484e2577ea9ad6a15ea0778e14c1b86d'],1,1,2,1,,,
+904f2365a9632fab6ca36eedebc8a9088b060116,provide a fallback in case anyone is using this,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-09 10:20:25+00:00,0,2017-07-09 10:20:25+00:00,0,True,False,['engine.py'],['926f3edaa217ddfc01642a724830dd4e40329be0'],6,15,21,1,1.0,1.0,1.0
+ae0e8b3b21a0eed980dfe3ea9933fdbeb031b56e,fix unit tests,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-09 06:27:45-04:00,14400,2017-07-09 06:27:45-04:00,14400,True,False,['test_mqtt_real.py'],['904f2365a9632fab6ca36eedebc8a9088b060116'],1,2,3,1,0.0,1.0,1.0
+2fb92046ae46c7d05b74df9462a12817d14f3aba,Add installer that builds a systemd file,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-09 06:57:35-04:00,14400,2017-07-09 06:57:35-04:00,14400,True,False,['install.sh'],['ae0e8b3b21a0eed980dfe3ea9933fdbeb031b56e'],0,41,41,1,,,
+cc809b7877193092692d9c7261695b939de21b8f,update readme,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-09 06:59:00-04:00,14400,2017-07-09 06:59:00-04:00,14400,True,False,['README.rst'],['2fb92046ae46c7d05b74df9462a12817d14f3aba'],3,3,6,1,,,
+09cef8c595a61d6872104f1717343788baaea6d3,"get better about sending correct units
+
+When using the rfxcom code I was making multiple sensor objects in the
+engine, but now we only keep one. That means we need to be more
+careful about when we set and emit units, as some units have to only
+emit when we send them to mqtt.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-11 11:42:38+00:00,0,2017-07-11 11:42:38+00:00,0,True,False,['engine.py'],['ae0e8b3b21a0eed980dfe3ea9933fdbeb031b56e'],4,6,10,1,0.0,0.0,1.0
+7caa04d404159fa0684ca11c8cfe15626f05f250,better readme,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-11 22:56:06-04:00,14400,2017-07-11 22:56:06-04:00,14400,True,False,"['README.rst', 'config.yml.sample']",['d5bb23324a0c24c48432aada2509e63a9fd438ac'],8,38,46,2,,,
+9c15aa27efdaae2f178577f5f3dda728561a3c0b,more config details,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-12 09:39:41-06:00,21600,2017-07-12 09:39:41-06:00,21600,True,False,['config.yml.sample'],['7caa04d404159fa0684ca11c8cfe15626f05f250'],0,10,10,1,,,
+d65f0ca25e05a506f561fc2b0de53265d3905a64,round rain data to 2 decimal places,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-24 12:54:16+00:00,0,2017-07-24 12:54:16+00:00,0,True,False,['engine.py'],['d5bb23324a0c24c48432aada2509e63a9fd438ac'],2,2,4,1,,,
+a7184a4f8b0373170e1b008d7db0c9098803b0c0,"allow for limiting of device classes for rtl433
+
+Instead of just using the defaults, allow a limited list of device
+classes, which saves on processing time with rtl433.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-24 12:54:47+00:00,0,2017-07-24 12:54:47+00:00,0,True,False,['engine.py'],['d65f0ca25e05a506f561fc2b0de53265d3905a64'],3,10,13,1,1.0,1.0,1.0
+ade674a80864661230c2d8c6148b6c679b6f4487,round rain since midnight to 3 decimal places,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-24 12:58:33+00:00,0,2017-07-24 12:58:33+00:00,0,True,False,['handlers.py'],['6e4c65219ffad5373e907bfb082e1583d42ba18e'],1,1,2,1,,,
+882e9c6a1a16d66fbe1fdcd50f7b4886be28ebbf,Put boundary conditions into moisture sensors,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-25 06:59:43-04:00,14400,2017-07-25 06:59:43-04:00,14400,True,False,['engine.py'],['6e4c65219ffad5373e907bfb082e1583d42ba18e'],0,8,8,1,0.0,0.0,1.0
+74a35ca43d2ee21917813129030fc303625dd60d,testing for rain accumulators,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-25 09:36:54-04:00,14400,2017-07-25 09:36:54-04:00,14400,True,False,"['handlers.py', 'test_handlers.py']",['004a33836feae845a4b7ad188273cd53cb959dc2'],6,206,212,2,0.5436893203883495,0.9514563106796117,0.883495145631068
+1907fb89e53e6dc1c03943a8373404a991bb2508,"clean up pep8 / py35 issues
+
+note to self, actually test on more than py27 before push",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-25 10:05:22-04:00,14400,2017-07-25 10:05:22-04:00,14400,True,False,"['handlers.py', 'test_handlers.py']",['74a35ca43d2ee21917813129030fc303625dd60d'],2,1,3,2,1.0,1.0,1.0
+c8a9a0a8a1f591e7c4199a5c058de68b104e0660,more tests for rain guage counting,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-25 20:35:00-04:00,14400,2017-07-25 20:35:00-04:00,14400,True,False,['test_handlers.py'],['1907fb89e53e6dc1c03943a8373404a991bb2508'],0,52,52,1,0.0,1.0,1.0
+a20bdbc881c186ee4cc6d89fce7f591419b4bd7c,"update rain roll over algorithm
+
+This will take any rain that registers from the last record of the
+day, to the first record of the next day, and put it in the next day
+bucket. This will prevent weird artifacts on Weather Underground where
+the total for yesterday comes in as the first packet of today.
+
+This carry forward logic is pretty heavily tested.
+
+It also reduces the amount of traffic on the MQTT bus, as we're only
+doing the compute totals during a rollover event.",Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-07-26 09:08:57-04:00,14400,2017-07-26 09:08:57-04:00,14400,True,False,"['handlers.py', 'test_handlers.py']",['c8a9a0a8a1f591e7c4199a5c058de68b104e0660'],39,107,146,2,0.5581395348837209,1.0,0.5813953488372093
+6a216d7a3ef73b88495be748e1d6e9a9c6398bb7,tighten up logging to make it easier to understand,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-08-05 07:57:33-04:00,14400,2017-08-05 07:57:33-04:00,14400,True,False,"['collect.py', 'engine.py', 'handlers.py']",['a20bdbc881c186ee4cc6d89fce7f591419b4bd7c'],4,38,42,3,0.0,1.0,1.0
+bbef29446ec47b9ef31ae56070e59152b3441932,better logging,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-08-05 08:13:49-04:00,14400,2017-08-05 08:13:49-04:00,14400,True,False,['engine.py'],['6a216d7a3ef73b88495be748e1d6e9a9c6398bb7'],6,10,16,1,0.75,1.0,1.0
+fb818b966b5df43cac58f50eff4c360626338d38,Fix pep8,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2017-08-05 08:20:15-04:00,14400,2017-08-05 08:20:15-04:00,14400,True,False,['engine.py'],['bbef29446ec47b9ef31ae56070e59152b3441932'],1,2,3,1,,,
+db50b116624bd84e5106f01cba86920dcc6ea036,update some of the install docs,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2018-03-01 10:40:42-05:00,18000,2018-03-01 10:40:42-05:00,18000,True,False,['installation.rst'],['fb818b966b5df43cac58f50eff4c360626338d38'],0,47,47,1,,,
+48ef58294e6ac4c968331ebd66e9d11c0b637dbf,add checks for valid temp ranges,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2018-11-19 12:52:42-05:00,18000,2018-11-19 12:52:42-05:00,18000,True,False,['engine.py'],['bbef29446ec47b9ef31ae56070e59152b3441932'],0,9,9,1,0.0,0.0,1.0
+a7aed265eb2a4f54f8038ae6cd20c0d69b5721a7,update to work with newer rtl433 json output,Sean Dague,sean@dague.net,Sean Dague,sean@dague.net,2020-08-21 05:47:15-04:00,14400,2020-08-21 05:47:15-04:00,14400,True,False,"['collect.py', 'engine.py', 'handlers.py']",['75b8a9f949d4680c4c6233141bf61b222f4c4977'],7,21,28,3,0.2222222222222222,0.2222222222222222,0.8888888888888888

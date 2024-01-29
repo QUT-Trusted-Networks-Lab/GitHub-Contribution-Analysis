@@ -1,0 +1,844 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+399f076cb9460bd967611cb9460c1b5968a66dcc,init,Kenneth Reitz,kreitz@kr2.local,Kenneth Reitz,kreitz@kr2.local,2012-11-23 05:22:10-05:00,18000,2012-11-23 05:22:10-05:00,18000,True,False,['README.rst'],[],0,0,0,1,,,
+6f9cd8dd668a6e814cb7016635c5a852b74f0d2f,Readme,Kenneth Reitz,me@kennethreitz.com,Kenneth Reitz,me@kennethreitz.com,2012-11-23 05:32:51-05:00,18000,2012-11-23 05:32:51-05:00,18000,True,False,['README.rst'],['399f076cb9460bd967611cb9460c1b5968a66dcc'],0,52,52,1,,,
+a2beaade746d3c62506eba673526631edf689b0f,copyright,Kenneth Reitz,me@kennethreitz.com,Kenneth Reitz,me@kennethreitz.com,2012-11-23 05:37:43-05:00,18000,2012-11-23 05:37:43-05:00,18000,True,False,['LICENSE'],['6f9cd8dd668a6e814cb7016635c5a852b74f0d2f'],0,13,13,1,,,
+a7571fb890eb3935bd198e12d9b47ba0b046b307,bunk,Kenneth Reitz,me@kennethreitz.com,Kenneth Reitz,me@kennethreitz.com,2012-11-23 05:39:40-05:00,18000,2012-11-23 05:39:40-05:00,18000,True,False,"['MANIFEST.in', '__init__.py', 'core.py']",['a2beaade746d3c62506eba673526631edf689b0f'],0,1,1,3,,,
+608bb46a623f609ea69f72162769258dca9e9d88,setup.py,Kenneth Reitz,me@kennethreitz.com,Kenneth Reitz,me@kennethreitz.com,2012-11-23 05:40:49-05:00,18000,2012-11-23 05:40:49-05:00,18000,True,False,['setup.py'],['a7571fb890eb3935bd198e12d9b47ba0b046b307'],0,50,50,1,,,
+1b12a7289c81b3e31bd1e6eeb71ba03fc1d706c4,deps,Kenneth Reitz,me@kennethreitz.com,Kenneth Reitz,me@kennethreitz.com,2012-11-23 05:41:03-05:00,18000,2012-11-23 05:41:03-05:00,18000,True,False,['requirements.txt'],['608bb46a623f609ea69f72162769258dca9e9d88'],0,2,2,1,,,
+6dd8766e7646d70fe0e266011524ec66bfd0f206,import from oauthlib,Kenneth Reitz,me@kennethreitz.com,Kenneth Reitz,me@kennethreitz.com,2012-11-23 05:47:50-05:00,18000,2012-11-23 05:47:50-05:00,18000,True,False,"['__init__.py', 'core.py', 'setup.py']",['1b12a7289c81b3e31bd1e6eeb71ba03fc1d706c4'],1,86,87,3,0.40540540540540543,0.40540540540540543,0.5945945945945946
+9a2007f3b7552255b3745e031bde2e566c695af5,import fixes,Kenneth Reitz,me@kennethreitz.com,Kenneth Reitz,me@kennethreitz.com,2012-11-23 05:58:27-05:00,18000,2012-11-23 05:58:27-05:00,18000,True,False,['core.py'],['6dd8766e7646d70fe0e266011524ec66bfd0f206'],3,3,6,1,,,
+b9b2fb7872ed36d6cd71190f262451d1557e8be5,Fixed issue #1,kracekumar,me@kracekumar.com,kracekumar,me@kracekumar.com,2012-12-18 00:14:28+05:18,-19080,2012-12-18 00:14:28+05:18,-19080,True,False,['core.py'],['9a2007f3b7552255b3745e031bde2e566c695af5'],2,2,4,1,,,
+15077af0ff19143e11c78c6114226518656b3e75,Some refactoring to match requests 1.0 and a few tests,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2012-12-18 01:48:37+01:00,-3600,2012-12-18 01:48:37+01:00,-3600,True,False,"['core.py', '__init__.py', 'test_core.py']",['5048e3162bf3ce117b629d84c594267b4af306ba'],46,92,138,3,0.0,1.0,0.0
+21f375ab2a10a3273e3012d99f830ee4ae3f1fe8,"Ops, prints..",Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2012-12-18 09:32:14+01:00,-3600,2012-12-18 09:32:14+01:00,-3600,True,False,['core.py'],['15077af0ff19143e11c78c6114226518656b3e75'],3,1,4,1,1.0,0.0,0.0
+7da0f02206a3d5652867e74ae3e58b6d7708b8cc,"Typo in Readme
+
+There was a typo in the readme.
+
+Yeah.",Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2012-12-19 19:05:34+00:00,0,2012-12-19 19:05:34+00:00,0,True,False,['README.rst'],['5048e3162bf3ce117b629d84c594267b4af306ba'],1,1,2,1,,,
+caee59df208645073f03eca3118bd16899e107b1,The oauth workflow and other signature types,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2012-12-19 21:41:08+01:00,-3600,2012-12-19 21:41:08+01:00,-3600,True,False,['README.rst'],['21f375ab2a10a3273e3012d99f830ee4ae3f1fe8'],11,120,131,1,,,
+e43b607686589216df86f76eb49064a1a9045079,"unicode behavior to python 3
+
+The core uses the python2 function `unicode` which is not present in python 3. Applying `str`when `unicode` is called has the same behaviour and make requests-oauthlib compatible to python 3 (I think).",Martin Trigaux,me@mart-e.be,Martin Trigaux,me@mart-e.be,2012-12-20 01:27:03+01:00,-3600,2012-12-20 01:27:03+01:00,-3600,True,False,['core.py'],['0723c546d1dce2947cbe4a1c9267c331559621e4'],0,3,3,1,,,
+72697f0f8d405b27b26d7b7a8fbc85567a5d0cf1,require at least version 0.3.4 of oauthlib,Mikhail Sobolev,mss@mawhrin.net,Mikhail Sobolev,mss@mawhrin.net,2012-12-29 17:45:41+02:00,-7200,2012-12-29 17:45:41+02:00,-7200,True,False,"['requirements.txt', 'setup.py']",['ba2ea5938dd4da30c963158a33f1a83c3e7d362c'],2,2,4,2,,,
+66021a8b323881519761d4fbab9491f0f0f9a12e,"Use consistent attr name with requests proper.
+
+`body` instead of `data`
+
+Resolves the requests-oauthlib portion of #1096 in
+kennethreitz/requests.",Matt McClure,matt.mcclure@mapmyfitness.com,Matt McClure,matt.mcclure@mapmyfitness.com,2013-01-11 15:11:06-05:00,18000,2013-01-11 15:11:06-05:00,18000,True,False,['core.py'],['ba2ea5938dd4da30c963158a33f1a83c3e7d362c'],1,1,2,1,,,
+d947cc2024433c5bfe6f3bce15793b32ee2ab318,"Added a .gitignore file.
+
+Copied from requests proper.",Matt McClure,matt.mcclure@mapmyfitness.com,Matt McClure,matt.mcclure@mapmyfitness.com,2013-01-11 15:13:17-05:00,18000,2013-01-11 15:13:17-05:00,18000,True,False,['.gitignore'],['ba2ea5938dd4da30c963158a33f1a83c3e7d362c'],0,21,21,1,,,
+f5136ed54a55b456c7e657c0636da94042bb9896,"Update requests_oauthlib/core.py
+
+URL is turned into a unicode object by the signing, too. Leaving it like that will cause UnicodeDecodeError during the httplib2 request call.",Johannes Spielmann,js@shezi.de,Johannes Spielmann,js@shezi.de,2013-01-29 15:29:54+01:00,-3600,2013-01-29 15:29:54+01:00,-3600,True,False,['core.py'],['50c50dcef510ad5eee98b332619a02135014cf8b'],0,3,3,1,0.0,1.0,1.0
+e7b7764cdaa9e360b8d6b0ccd0a8a2ae53a98ea8,we have the url and all headers to make sure none of them is of type unicode,Johannes Spielmann,js@shezi.de,Johannes Spielmann,js@shezi.de,2013-02-11 17:02:02+01:00,-3600,2013-02-11 17:02:02+01:00,-3600,True,False,['core.py'],['f5136ed54a55b456c7e657c0636da94042bb9896'],19,17,36,1,1.0,0.0,0.0
+2f91dbab9cc01495bcb16c739a0d3967bf3e76f7,reversing earlier changes,Johannes Spielmann,js@shezi.de,Johannes Spielmann,js@shezi.de,2013-02-12 09:43:06+01:00,-3600,2013-02-12 09:43:06+01:00,-3600,True,False,['core.py'],['e7b7764cdaa9e360b8d6b0ccd0a8a2ae53a98ea8'],16,15,31,1,0.0,1.0,1.0
+8f674052b0df58e038f6ce74d299ed3ffcd0d0f6,using new `decode` client parameter,Johannes Spielmann,js@shezi.de,Johannes Spielmann,js@shezi.de,2013-02-12 09:43:25+01:00,-3600,2013-02-12 09:43:25+01:00,-3600,True,False,['core.py'],['2f91dbab9cc01495bcb16c739a0d3967bf3e76f7'],2,3,5,1,0.0,1.0,0.0
+e6e2d01bb5baa044deffc876f57a94be499689d2,updating oauthlib requirement,Johannes Spielmann,js@shezi.de,Johannes Spielmann,js@shezi.de,2013-02-12 09:49:51+01:00,-3600,2013-02-12 09:49:51+01:00,-3600,True,False,['setup.py'],['8f674052b0df58e038f6ce74d299ed3ffcd0d0f6'],1,1,2,1,,,
+cfba3f94feca1288047dc12d890990e5af796385,add quotes over url string,Martin Trigaux,me@mart-e.be,Martin Trigaux,me@mart-e.be,2013-02-12 11:50:23+01:00,-3600,2013-02-12 11:50:23+01:00,-3600,True,False,['README.rst'],['50c50dcef510ad5eee98b332619a02135014cf8b'],1,1,2,1,,,
+ccbe6de7c40a0c1a450567db0c4c971b647651ae,StringIO compatible python 2 and 3,Martin Trigaux,me@mart-e.be,Martin Trigaux,me@mart-e.be,2013-02-12 12:31:13+01:00,-3600,2013-02-12 12:31:13+01:00,-3600,True,False,['test_core.py'],['50c50dcef510ad5eee98b332619a02135014cf8b'],2,5,7,1,,,
+cc9724408e1c6406f4c19f2a530944224db49ab4,`decoding` not `decode` (certainly helps to read the source and test it afterwards!),Johannes Spielmann,js@shezi.de,Johannes Spielmann,js@shezi.de,2013-02-12 18:23:05+01:00,-3600,2013-02-12 18:23:05+01:00,-3600,True,False,['core.py'],['e6e2d01bb5baa044deffc876f57a94be499689d2'],2,2,4,1,,,
+5d1747a3e4449b273a166acf4bfe437d1fcaa10e,"Add quotes around string in README.
+
+Follow-up from #19, pointed out by mart-e.",Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-02-21 15:26:17+11:00,-39600,2013-02-21 15:26:17+11:00,-39600,True,False,['README.rst'],['d12e1937d53b051e6b1c534588c3a79e80f32d3c'],1,1,2,1,,,
+3e2f82a535c4ca03fe904c9606fcb0fb90d671be,v0.3.0,Kenneth Reitz,me@kennethreitz.com,Kenneth Reitz,me@kennethreitz.com,2013-03-08 20:12:56-05:00,18000,2013-03-08 20:12:56-05:00,18000,True,False,['setup.py'],['50c50dcef510ad5eee98b332619a02135014cf8b'],1,1,2,1,,,
+d53e30855e0ee50106ea16b8d96d22df5319ce0c,fix: ValueError: GET/HEAD requests should not include body.,Johan Euphrosine,proppy@google.com,Johan Euphrosine,proppy@google.com,2013-03-16 00:59:01+00:00,0,2013-03-16 00:59:01+00:00,0,True,False,['test_core.py'],['53480d20a4c5ee23ed0cf0806f586195ebec9d14'],2,2,4,1,,,
+c1a0f56213f0ff2bccd6c02c6f0440353e7fc048,"Only pass bytes to urllib3.
+
+This should resolve requests-oauthlib's problems with uploading binary
+data, as demonstrated in kennethreitz/requests#1252.",Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-03-29 15:07:14+00:00,0,2013-03-29 15:07:14+00:00,0,True,False,['core.py'],['53480d20a4c5ee23ed0cf0806f586195ebec9d14'],1,17,18,1,0.0,0.0,1.0
+3bc436fa8ac1232a1496f3002b9d97a63a3e97ea,Use decoding parameter instead of hand-rolling.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-03-30 13:31:42+00:00,0,2013-03-30 13:33:43+00:00,0,True,False,['core.py'],['c1a0f56213f0ff2bccd6c02c6f0440353e7fc048'],17,1,18,1,1.0,1.0,0.0
+925d9aedc34e35a98d550a6da654ab3f447121d3,also use POST for testNonFormEncoded,Johan Euphrosine,proppy@google.com,Johan Euphrosine,proppy@google.com,2013-04-02 23:04:19-07:00,25200,2013-04-02 23:04:19-07:00,25200,True,False,['test_core.py'],['d53e30855e0ee50106ea16b8d96d22df5319ce0c'],3,3,6,1,,,
+a9898a2558e62fb06cfa3d0e55ded510fb404eec,OAuth 1 Session,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-04-06 17:25:32+02:00,-7200,2013-04-06 17:25:32+02:00,-7200,True,False,"['__init__.py', 'oauth1_session.py', 'test_oauth1_session.py']",['fe6e571d69c8ec5e09db201ff9f0275d54f9dd53'],1,426,427,3,0.6420454545454546,1.0,0.5340909090909091
+fe918e298dc90fd122526e2680bdb1bbac7be814,Python 3 encoding changes.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-04-06 17:26:29+02:00,-7200,2013-04-06 17:26:29+02:00,-7200,True,False,"['core.py', 'test_core.py']",['a9898a2558e62fb06cfa3d0e55ded510fb404eec'],6,27,33,2,0.8181818181818182,0.0,1.0
+224a420f146eb67f93ee54bacae850f6f4f7e2ea,OAuth2 auth,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-04-06 17:29:13+02:00,-7200,2013-04-06 17:29:13+02:00,-7200,True,False,"['__init__.py', 'oauth2_auth.py', 'test_oauth2_auth.py']",['fe918e298dc90fd122526e2680bdb1bbac7be814'],0,90,90,3,1.0,1.0,0.9019607843137255
+bccaa5aaec41c74636a9e0b63609b26e38be96c3,OAuth 2 session,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-04-06 17:31:57+02:00,-7200,2013-04-06 17:31:57+02:00,-7200,True,False,"['__init__.py', 'oauth2_session.py', 'test_oauth2_session.py']",['224a420f146eb67f93ee54bacae850f6f4f7e2ea'],0,313,313,3,0.7011494252873564,0.8103448275862069,0.5977011494252874
+003f0acaf3885301a745fd911e888d72e03c30b7,Syntax highlighting in the README.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-04-16 19:09:22+01:00,-3600,2013-04-16 19:09:22+01:00,-3600,True,False,['README.rst'],['fe6e571d69c8ec5e09db201ff9f0275d54f9dd53'],18,42,60,1,,,
+9f9dcdf656df770e65da85838a13d3470409b164,"Oauthlib always gives us bytes.
+
+Not only was this a waste of time, the logic was actually bad so it
+reintroduced a bug. Which sucks.",Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-05-02 19:16:50+01:00,-3600,2013-05-02 19:16:50+01:00,-3600,True,False,['core.py'],['48288c3a71aadd87b4bc52395e76e4255a837d7d'],15,0,15,1,1.0,1.0,0.0
+2a46e9dcab3d556c0ced8c5cdd1667be294c0522,Add regression test for posting binary data.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-05-02 21:57:02+01:00,-3600,2013-05-02 21:57:02+01:00,-3600,True,False,"['test.bin', 'test_core.py']",['9f9dcdf656df770e65da85838a13d3470409b164'],0,19,19,2,1.0,1.0,0.0
+12f25c93cd62f3fa717a7ba305433f77d762e9e2,2013,Kenneth Reitz,me@kennethreitz.com,Kenneth Reitz,me@kennethreitz.com,2013-05-04 02:37:30-04:00,14400,2013-05-04 02:37:30-04:00,14400,True,False,['LICENSE'],['ea52687165838b1a35e61aba041f42e2bb89692a'],1,1,2,1,,,
+a7e60304fa5e16dd3fe11b5796e8ea4bf03ae20a,v0.3.1,Kenneth Reitz,me@kennethreitz.com,Kenneth Reitz,me@kennethreitz.com,2013-05-04 02:37:49-04:00,14400,2013-05-04 02:37:49-04:00,14400,True,False,['setup.py'],['12f25c93cd62f3fa717a7ba305433f77d762e9e2'],1,1,2,1,,,
+fde030076e6739e93d0ce4d0ac8cf87ba226e657,Initial Sphinx project,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-05-10 11:52:23-07:00,25200,2013-05-10 13:27:14-07:00,25200,True,False,"['Makefile', 'conf.py', 'index.rst', 'make.bat']",['a7e60304fa5e16dd3fe11b5796e8ea4bf03ae20a'],0,693,693,4,,,
+9098842bc991d3307a93e08b805e54a7d6fdbee2,Initial page that uses autodoc,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-05-10 13:52:17-07:00,25200,2013-05-10 13:52:17-07:00,25200,True,False,"['api.rst', 'index.rst']",['fde030076e6739e93d0ce4d0ac8cf87ba226e657'],0,34,34,2,,,
+4210858dabeb7e593ea1838cec6346e7ffc1c7b7,Correct example in README to use the string and not list,Vinay Raikar,rockraikar@gmail.com,Vinay Raikar,rockraikar@gmail.com,2013-05-13 01:55:46+05:18,-19080,2013-05-13 01:55:46+05:18,-19080,True,False,['README.rst'],['a7e60304fa5e16dd3fe11b5796e8ea4bf03ae20a'],4,4,8,1,,,
+77d9fad99630e696ba12e2f9f7b102ef12045c30,"Python 3 json expects a string, but r.content is bytes",Paul Bonser,misterpib@gmail.com,Paul Bonser,misterpib@gmail.com,2013-05-16 01:26:03+00:00,0,2013-05-16 01:26:03+00:00,0,True,False,['oauth2_session.py'],['a7e60304fa5e16dd3fe11b5796e8ea4bf03ae20a'],2,2,4,1,,,
+400919595a5f4b715172d98b6b2d380fe46e1604,"After a token has been refreshed, retry adding token to url, headers, data",Paul Bonser,misterpib@gmail.com,Paul Bonser,misterpib@gmail.com,2013-05-16 01:27:34+00:00,0,2013-05-16 01:27:34+00:00,0,True,False,['oauth2_session.py'],['77d9fad99630e696ba12e2f9f7b102ef12045c30'],0,2,2,1,0.0,0.0,0.0
+7c2ec68aee3e1a854ae13e42c00a27373a09b338,The URL should always be native.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-05-19 10:13:08+01:00,-3600,2013-05-19 10:13:08+01:00,-3600,True,False,"['core.py', 'test_core.py']",['a7e60304fa5e16dd3fe11b5796e8ea4bf03ae20a'],0,19,19,2,1.0,1.0,0.45454545454545453
+0b1fe5c5423fe500a893ead929df88a6bc142f38,v0.3.2,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-05-21 22:46:28+01:00,-3600,2013-05-21 22:46:28+01:00,-3600,True,False,['setup.py'],['2c72bb7962be37126e173895c13fb5d236cc1bb5'],1,1,2,1,,,
+bb853cca70848440979318207999f3635ca81eb0,Move bulk of README to docs and prepare RTD links.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-22 14:27:34+01:00,-3600,2013-05-22 14:27:34+01:00,-3600,True,False,"['README.rst', 'oauth1_workflow.rst']",['db8faa5f4022030779521c942236f93b9690c4d4'],157,195,352,2,,,
+b46deb551fa05261636a457d33769fe2b5552a32,OAuth2 WebApp workflow.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-22 16:57:08+01:00,-3600,2013-05-22 16:57:08+01:00,-3600,True,False,['oauth2_workflow.rst'],['bb853cca70848440979318207999f3635ca81eb0'],0,5,5,1,,,
+0679b687f18470aee653977ae4b88e050a1ffda6,OAuth2 workflow for real + placeholder for more to come.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-22 17:13:24+01:00,-3600,2013-05-22 17:13:24+01:00,-3600,True,False,['oauth2_workflow.rst'],['b46deb551fa05261636a457d33769fe2b5552a32'],2,64,66,1,,,
+f81f6f4526da3c6c671d181dc765399b0f70eaf0,Update OAuth1 guide to show OAuth1Session.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-22 17:13:44+01:00,-3600,2013-05-22 17:13:44+01:00,-3600,True,False,['oauth1_workflow.rst'],['0679b687f18470aee653977ae4b88e050a1ffda6'],7,62,69,1,,,
+29346d7be10ad70a6b72130168ead18f78c6c761,Add :members: to autoclass,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-05-22 09:37:47-07:00,25200,2013-05-22 09:37:47-07:00,25200,True,False,['api.rst'],['9098842bc991d3307a93e08b805e54a7d6fdbee2'],0,5,5,1,,,
+ded581c48e906bdbf76d3e588ccfc5fcd7af3fdb,Fix include path,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-05-22 09:38:11-07:00,25200,2013-05-22 09:38:11-07:00,25200,True,False,['conf.py'],['29346d7be10ad70a6b72130168ead18f78c6c761'],1,1,2,1,,,
+bf9e989468dd242adcc768c9d09129c5a8cc4ce4,Fix spacing so Sphinx can render properly,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-05-22 09:38:27-07:00,25200,2013-05-22 09:38:27-07:00,25200,True,False,['oauth1_session.py'],['ded581c48e906bdbf76d3e588ccfc5fcd7af3fdb'],0,1,1,1,,,
+9fd979e2dd56294f6e012763a59df4813c38a3a7,Add workflow sections to index.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-22 17:59:45+01:00,-3600,2013-05-22 17:59:45+01:00,-3600,True,False,['index.rst'],['8562ab8f5fc83ac486fa9d02273a931583f77ae9'],0,2,2,1,,,
+e54758c4f2f68b76a1ae20796a23b6a04ceec655,Store the version in the library.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-05-22 19:32:28+01:00,-3600,2013-05-22 19:32:28+01:00,-3600,True,False,"['conf.py', '__init__.py', 'setup.py']",['a55b8612af31722d3cbb5a19e3e94d77c12de2e1'],5,17,22,3,,,
+8eba2820f1fc660e6e2999ce3372ea018717deee,@kennethreitz has the copyright.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-05-22 19:54:19+01:00,-3600,2013-05-22 19:54:19+01:00,-3600,True,False,['conf.py'],['e54758c4f2f68b76a1ae20796a23b6a04ceec655'],1,1,2,1,,,
+22b6414dafd411acd7190598d3f433c73aec6731,Configure intersphinx,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-05-22 23:43:00-07:00,25200,2013-05-22 23:43:00-07:00,25200,True,False,['conf.py'],['8eba2820f1fc660e6e2999ce3372ea018717deee'],1,5,6,1,,,
+b9d2a8c3e2f8a4ae93e868f9a99d876103d3c394,Link to requests,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-05-22 23:43:53-07:00,25200,2013-05-22 23:43:53-07:00,25200,True,False,['oauth2_session.py'],['22b6414dafd411acd7190598d3f433c73aec6731'],2,2,4,1,,,
+3d75193403d9d38c55eef84fb324afb3d1d12909,Link to oauthlib,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-05-23 00:08:23-07:00,25200,2013-05-23 00:08:23-07:00,25200,True,False,"['oauth2_auth.py', 'oauth2_session.py']",['b9d2a8c3e2f8a4ae93e868f9a99d876103d3c394'],8,8,16,2,,,
+67a002030649aadb88ee87aa2196a387e31cd671,RTD link fixes.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-23 08:44:33+01:00,-3600,2013-05-23 08:44:33+01:00,-3600,True,False,['README.rst'],['9fd979e2dd56294f6e012763a59df4813c38a3a7'],3,3,6,1,,,
+6c481d57d52e265353eb133a3e69bff7da20894b,Refreshing tokens + other flows coming soon.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-23 09:50:00+01:00,-3600,2013-05-23 09:50:00+01:00,-3600,True,False,['oauth2_workflow.rst'],['67a002030649aadb88ee87aa2196a387e31cd671'],3,98,101,1,,,
+5df630e7a5ead2ae3aa77feaf56eaf78e1338607,Fix minor errors in oauth 1 workflow.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-23 11:55:32+01:00,-3600,2013-05-23 11:55:32+01:00,-3600,True,False,['oauth1_workflow.rst'],['6c481d57d52e265353eb133a3e69bff7da20894b'],3,3,6,1,,,
+55703600d6615888452ee8d286bd44b66d5f6014,Unicode + indirection fixes.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-23 12:14:44+01:00,-3600,2013-05-23 12:14:44+01:00,-3600,True,False,['oauth1_session.py'],['8eba2820f1fc660e6e2999ce3372ea018717deee'],4,13,17,1,1.0,1.0,1.0
+c500bdae8a5cc38d84b024361efdb97f7577d2bb,"Update tests to set text, not content on responses.",Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-23 12:15:06+01:00,-3600,2013-05-23 12:15:06+01:00,-3600,True,False,['test_oauth2_session.py'],['55703600d6615888452ee8d286bd44b66d5f6014'],6,7,13,1,0.0,1.0,1.0
+12b23291c3243cc4e2807089596cc4f2676d8ba8,Short bitbucket tutorial.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-23 12:24:10+01:00,-3600,2013-05-23 12:24:10+01:00,-3600,True,False,"['bitbucket_tutorial.rst', 'index.rst']",['c500bdae8a5cc38d84b024361efdb97f7577d2bb'],0,43,43,2,,,
+77bf2828501489df250d3bd8996fc149d44ba9f2,Tell providers to return json on token request.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-23 14:20:53+01:00,-3600,2013-05-23 14:20:53+01:00,-3600,True,False,['oauth2_session.py'],['c500bdae8a5cc38d84b024361efdb97f7577d2bb'],1,2,3,1,0.0,1.0,0.0
+3d122182d26746f17ba9101e9444f183e0eab46b,GitHub OAuth 2 tutorial.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-23 14:24:34+01:00,-3600,2013-05-23 14:24:34+01:00,-3600,True,False,"['github_tutorial.rst', 'index.rst']",['12b23291c3243cc4e2807089596cc4f2676d8ba8'],0,37,37,2,,,
+24e327136fa04da724dc9d6fcf4d0f4f2fc74a9f,Bitbucket -> Github copy paste fix.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-23 14:26:26+01:00,-3600,2013-05-23 14:26:26+01:00,-3600,True,False,['github_tutorial.rst'],['3d122182d26746f17ba9101e9444f183e0eab46b'],2,2,4,1,,,
+30e4d1f6b2339d06d848ff9871c21e7b4dc13e22,Google web application OAuth 2 tutorial.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-05-23 16:28:26+01:00,-3600,2013-05-23 16:28:26+01:00,-3600,True,False,"['google_tutorial.rst', 'index.rst']",['24e327136fa04da724dc9d6fcf4d0f4f2fc74a9f'],0,45,45,2,,,
+30998f9d8c8e2a2c3f1eb11cddaa6852605c0beb,OAuth 2.0 grants should be a list,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-05-23 10:07:25-07:00,25200,2013-05-23 10:08:47-07:00,25200,True,False,['oauth2_session.py'],['3d75193403d9d38c55eef84fb324afb3d1d12909'],4,4,8,1,,,
+a5a1ef1734b032f082eaa92af9b4b79614f486de,Update setup.py for downstream packaging.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-05-23 19:36:35+01:00,-3600,2013-05-23 19:36:35+01:00,-3600,True,False,['setup.py'],['a350994018d965ffd72e332e5da439e9b46baac8'],4,6,10,1,,,
+dbb1a738feccf9e78eefc392bf197ef6409c1467,Authors.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-05-24 19:33:51+01:00,-3600,2013-05-24 19:33:51+01:00,-3600,True,False,['AUTHORS.rst'],['a5a1ef1734b032f082eaa92af9b4b79614f486de'],0,22,22,1,,,
+0d2453f2a535623ea8e36fb2a424a2f63363b771,Fix links to oauthlib,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-05-25 14:02:47-07:00,25200,2013-05-25 14:02:47-07:00,25200,True,False,['oauth2_session.py'],['dbb1a738feccf9e78eefc392bf197ef6409c1467'],5,5,10,1,,,
+b6a9bcc3e8c4c47d8c4c2bc47d398e64376041c6,Fix typo in OAuth2Session,Stéphane Raimbault,stephane.raimbault@gmail.com,Stéphane Raimbault,stephane.raimbault@gmail.com,2013-05-30 12:10:41+03:00,-10800,2013-05-30 12:10:41+03:00,-10800,True,False,['oauth2_session.py'],['5e9b79c71da66993b9bb7a8ff6a9957e2584d136'],1,1,2,1,,,
+f7a265dbff2a04f98ea3ba9668fe322251862cc8,Fix another small typo in OAuthSession documentation,Stéphane Raimbault,stephane.raimbault@gmail.com,Stéphane Raimbault,stephane.raimbault@gmail.com,2013-05-30 12:26:19+03:00,-10800,2013-05-30 12:26:19+03:00,-10800,True,False,['oauth2_session.py'],['5e9b79c71da66993b9bb7a8ff6a9957e2584d136'],1,1,2,1,,,
+9db0e48f3c6dbd9b2d03e5ab259171db80fd2bca,Fix oauthlib intersphinx links,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2013-06-04 11:08:09-07:00,25200,2013-06-04 11:08:09-07:00,25200,True,False,['oauth2_session.py'],['898f76ea75accb1bd4c59777cbe4b22bdfad17ab'],5,5,10,1,,,
+51a13ff2d9e2ce8ca130ab6681d7426f272d00c5,Update min version requirement of OAuthLib to 0.4.2. Fix #56.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-06-10 13:27:45+01:00,-3600,2013-06-10 13:27:45+01:00,-3600,True,False,"['requirements.txt', 'setup.py']",['3d9fe79cd92c6c2e36fba993c19b957804cf8d7f'],2,2,4,2,,,
+486ffb7916cbce70d8ce1599915548d49cee4f90,Allow realm to be specified on fetch_request_token.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-06-21 11:52:08+01:00,-3600,2013-06-21 11:52:08+01:00,-3600,True,False,['oauth1_session.py'],['51a13ff2d9e2ce8ca130ab6681d7426f272d00c5'],1,4,5,1,1.0,1.0,0.0
+27aa62d37a2598424be8ed4f70e8e8ad610c5eac,Merge state and state_generator for OAuth2Session. Fix #57.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-06-21 11:52:50+01:00,-3600,2013-06-21 11:52:50+01:00,-3600,True,False,['oauth2_session.py'],['486ffb7916cbce70d8ce1599915548d49cee4f90'],8,10,18,1,1.0,1.0,1.0
+9c1852388fa473367c2fde3cc63638971317b214,Move tutorials into a tutorials doc folder.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-07-09 21:49:20+01:00,-3600,2013-07-09 21:49:20+01:00,-3600,True,False,"['index.rst', 'bitbucket.rst', 'github.rst', 'google.rst', 'tutorials.rst']",['30e4d1f6b2339d06d848ff9871c21e7b4dc13e22'],3,10,13,5,,,
+9f1e8948eb2884e2012d1d74fd74c94981398b67,Make subsections actions.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-07-09 21:59:28+01:00,-3600,2013-07-09 21:59:28+01:00,-3600,True,False,['oauth2_workflow.rst'],['5df630e7a5ead2ae3aa77feaf56eaf78e1338607'],4,8,12,1,,,
+5c5f7d686a294254bce82412dc3fd63c2c750508,Table of contents,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-07-09 22:05:15+01:00,-3600,2013-07-09 22:05:15+01:00,-3600,True,False,['oauth2_workflow.rst'],['9f1e8948eb2884e2012d1d74fd74c94981398b67'],6,13,19,1,,,
+825aa5e68b2d0efbc8121f96d2816dc12a30c546,Auth passthrough on fetch token in OAuth2.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-07-16 09:11:41+01:00,-3600,2013-07-16 09:11:41+01:00,-3600,True,False,['oauth2_session.py'],['8a369b3b1f862f8ac487bb3981e17d41242b59aa'],2,3,5,1,,,
+05c5b9ee98cb935faf932eee3cc663f0fdc39385,Add auth passthrough to refresh token fetch method.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-07-16 18:46:09+01:00,-3600,2013-07-16 18:46:09+01:00,-3600,True,False,['oauth2_session.py'],['825aa5e68b2d0efbc8121f96d2816dc12a30c546'],2,4,6,1,0.0,1.0,0.0
+ff3a37b43a4a1f02c1899b17b867d3d12a13dc93,Check for auth code in fetch_token. Disable SSL req if DEBUG in env.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-07-17 00:54:24+02:00,-7200,2013-07-17 00:54:24+02:00,-7200,True,False,['oauth2_session.py'],['05c5b9ee98cb935faf932eee3cc663f0fdc39385'],3,11,14,1,0.0,0.0,0.0
+53d83a51b7641ebbcaca4e787b36061e25631bcb,Added debug messages to OAuth 2 session.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-07-17 18:26:09+02:00,-7200,2013-07-17 18:26:09+02:00,-7200,True,False,['oauth2_session.py'],['ff3a37b43a4a1f02c1899b17b867d3d12a13dc93'],2,26,28,1,0.08333333333333333,0.08333333333333333,0.08333333333333333
+625f53b881e37acc99e7207a41e8e6afd0edb871,Use raw string syntax for client_id and client_secret. Close issue #59,Federico Frenguelli,synasius@gmail.com,Federico Frenguelli,synasius@gmail.com,2013-07-22 09:43:42+02:00,-7200,2013-07-22 09:43:42+02:00,-7200,True,False,"['README.rst', 'oauth2_workflow.rst']",['53d83a51b7641ebbcaca4e787b36061e25631bcb'],5,5,10,2,,,
+c0fe85ab81f40167f7cabce706c3caa2549ab42d,Update requirements.txt for testing.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-08-10 14:50:19+01:00,-3600,2013-08-10 14:50:19+01:00,-3600,True,False,['requirements.txt'],['4aee8a8e71e0992669f2cb4acdfcc92a7bd99ee0'],1,1,2,1,,,
+5db685319f28a0f9012fb7367667138f8dda465c,0.3.3,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-08-10 15:41:58+01:00,-3600,2013-08-10 15:41:58+01:00,-3600,True,False,['__init__.py'],['c0fe85ab81f40167f7cabce706c3caa2549ab42d'],1,1,2,1,,,
+b9213d73ba11f9039d0908f88f0c7a41309c1a8e,Begin tracking changes.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-08-10 15:51:05+01:00,-3600,2013-08-10 15:51:05+01:00,-3600,True,False,['HISTORY.rst'],['5db685319f28a0f9012fb7367667138f8dda465c'],0,6,6,1,,,
+79694fc164d89d0baba5174da41ebf14b082a4f3,Always return unicode strings from OAuth1Session methods. Fix #55.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-08-10 16:00:20+01:00,-3600,2013-08-10 16:00:20+01:00,-3600,True,False,"['HISTORY.rst', 'oauth1_session.py', 'test_oauth1_session.py']",['b9213d73ba11f9039d0908f88f0c7a41309c1a8e'],14,21,35,3,1.0,1.0,1.0
+b64ca725025a52ed3a410c4c40d98336f97f66bb,"Ignore dist, build and tox files.",Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-08-10 16:01:19+01:00,-3600,2013-08-10 16:01:19+01:00,-3600,True,False,['.gitignore'],['79694fc164d89d0baba5174da41ebf14b082a4f3'],0,4,4,1,,,
+6a8c209541954777946fd41bc042a703e4f7f4e8,Facebook compliance fix and tutorial. Fixes #63.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-08-10 17:12:54+01:00,-3600,2013-08-10 17:12:54+01:00,-3600,True,False,"['HISTORY.rst', 'facebook.rst', 'tutorials.rst', '__init__.py', 'facebook.py', 'oauth2_session.py']",['b64ca725025a52ed3a410c4c40d98336f97f66bb'],0,85,85,6,0.0,0.6521739130434783,0.43478260869565216
+036edad15c70459fab48d27dab2021883d8e6ae1,Only guess content type when none is given. Fix #65.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-08-11 11:09:00+01:00,-3600,2013-08-11 11:09:00+01:00,-3600,True,False,"['HISTORY.rst', 'core.py', 'test_core.py']",['6a8c209541954777946fd41bc042a703e4f7f4e8'],4,24,28,3,0.0,0.0,0.2
+2812a395a9ad86c62976afc774003b6dd5c7898a,Remove last use of Response.content. Fix #44.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-08-12 09:53:21+01:00,-3600,2013-08-12 09:53:21+01:00,-3600,True,False,"['HISTORY.rst', 'oauth1_session.py', 'test_oauth1_session.py']",['036edad15c70459fab48d27dab2021883d8e6ae1'],2,3,5,3,,,
+a3cf1b0d60683b3fe3abaf00aecec87fa1b9976d,Edited and fixed OAuth1 workflow for OAuthSession method.,Imad Mouhtassem,mouhtasi@gmail.com,Imad Mouhtassem,mouhtasi@gmail.com,2013-08-21 15:28:37-04:00,14400,2013-08-21 15:28:37-04:00,14400,True,False,['oauth1_workflow.rst'],['2812a395a9ad86c62976afc774003b6dd5c7898a'],4,9,13,1,,,
+a25974eaed3789633f786a76ca82b64707fc0700,Added tutorial for tumblr. Added self to authors.,Imad Mouhtassem,mouhtasi@gmail.com,Imad Mouhtassem,mouhtasi@gmail.com,2013-08-21 22:13:01-04:00,14400,2013-08-21 22:13:01-04:00,14400,True,False,"['AUTHORS.rst', 'tumblr.rst']",['954bbd9e9e322158c58733b13c144f90196644b0'],0,39,39,2,,,
+040c4c11ffc8b07e231940f74bb35283f11d09bc,Changed tutorial from tabs to spaces. Moved name in authors to be in alphabetical order.,Imad Mouhtassem,mouhtasi@gmail.com,Imad Mouhtassem,mouhtasi@gmail.com,2013-08-21 22:24:44-04:00,14400,2013-08-21 22:24:44-04:00,14400,True,False,"['AUTHORS.rst', 'tumblr.rst']",['a25974eaed3789633f786a76ca82b64707fc0700'],25,25,50,2,,,
+18da1936555be48d4418f06b84ca340ad2463980,Removed stray quotation mark.,Imad Mouhtassem,mouhtasi@gmail.com,Imad Mouhtassem,mouhtasi@gmail.com,2013-08-22 13:57:37-04:00,14400,2013-08-22 13:57:37-04:00,14400,True,False,['tumblr.rst'],['040c4c11ffc8b07e231940f74bb35283f11d09bc'],1,1,2,1,,,
+401247e7d44cc3ae8529702571749fd9b39238fa,Fixed indent from tab to spaces,Imad Mouhtassem,mouhtasi@gmail.com,Imad Mouhtassem,mouhtasi@gmail.com,2013-08-22 18:10:58-04:00,14400,2013-08-22 18:10:58-04:00,14400,True,False,['tumblr.rst'],['18da1936555be48d4418f06b84ca340ad2463980'],1,1,2,1,,,
+4d1e8d9ccdc7064a0b5ceb63fbc9517e3c6e956b,Substantially rewrite the OAuth2 workflow doc.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-08-28 13:46:30+01:00,-3600,2013-08-28 13:46:30+01:00,-3600,True,False,['oauth2_workflow.rst'],['954bbd9e9e322158c58733b13c144f90196644b0'],16,57,73,1,,,
+b771cc2499437b7cef91ce9a6c8687740f5817b2,Correctly space section labels.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-08-28 13:51:07+01:00,-3600,2013-08-28 13:51:07+01:00,-3600,True,False,['oauth2_workflow.rst'],['4d1e8d9ccdc7064a0b5ceb63fbc9517e3c6e956b'],0,4,4,1,,,
+e425d0c6baecce45ccc3120a475e9e61e5993386,Available workflows is properly a subheader.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-08-28 13:52:34+01:00,-3600,2013-08-28 13:52:34+01:00,-3600,True,False,['oauth2_workflow.rst'],['b771cc2499437b7cef91ce9a6c8687740f5817b2'],1,1,2,1,,,
+7c27e7b79d5d7d23aae57232e1ac73f07a7e48c7,Cleaned secure transport detection and fixed one missing case,Arnout van Meer,arnout@fireteam.net,Arnout van Meer,arnout@fireteam.net,2013-09-02 16:05:03+01:00,-3600,2013-09-02 16:05:03+01:00,-3600,True,False,"['oauth2_auth.py', 'oauth2_session.py', 'utils.py']",['13a6f94520ec478b45c4dd3b92886c45f091e5ef'],4,17,21,3,1.0,1.0,1.0
+10edcb2a942c53d51e8a9285b2a7a07ec26d620b,Adjusted setup.py to include compliance_fixes subpackage. I assume we're not using find_packages() intentionally?,Nick Sloan,spam+github@nasloan.com,Nick Sloan,spam+github@nasloan.com,2013-09-04 13:01:23-04:00,14400,2013-09-04 13:01:23-04:00,14400,True,False,['setup.py'],['8af9ef86084f669e647086ff741751534b6ef7f0'],1,1,2,1,,,
+6852daff7c50a2d4e407673de6c3c2afb9594028,"Fix KeyError in facebook_compliance_fix
+
+Facebook does not always send an expiration value in an access token response. When the expiration is not included, a KeyError results. Instead, only attempt to set 'expires_in' if the 'expires' key is included in the response.",Matthew Lanigan,rintaun@gmail.com,Matthew Lanigan,rintaun@gmail.com,2013-09-10 09:02:16+09:00,-32400,2013-09-10 09:02:16+09:00,-32400,True,False,['facebook.py'],['a95054accda500205a8b66208da5f430f598f9fd'],1,3,4,1,1.0,1.0,1.0
+85f6b84723165432277ef42427ae6481f4011207,Prepare for requests 2.0 native str headers. Fix #73.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-09-11 11:17:08+01:00,-3600,2013-09-11 11:17:08+01:00,-3600,True,False,"['core.py', 'test_core.py', 'test_oauth1_session.py']",['3adf3a7f02fb3a82ca50c0a508da0ca95aa60efc'],9,9,18,3,,,
+074fab0c9d07801f1819c825c303613aaedf0fc3,Require requests 2.0.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-09-11 11:18:20+01:00,-3600,2013-09-11 11:18:20+01:00,-3600,True,False,['setup.py'],['85f6b84723165432277ef42427ae6481f4011207'],1,1,2,1,,,
+b6b20589b43ba3f931fdcc5c5403098b32bc209e,Web application example of the OAuth 2 workflow.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-09-11 17:33:22+01:00,-3600,2013-09-11 17:33:22+01:00,-3600,True,False,"['real_world_example.rst', 'tutorials.rst']",['3adf3a7f02fb3a82ca50c0a508da0ca95aa60efc'],0,84,84,2,,,
+7e9badf6702eac360de38ab52686ae5655ebde35,LinkedIn example and compliance fix for OAuth 2.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-09-13 14:11:53+01:00,-3600,2013-09-13 14:11:53+01:00,-3600,True,False,"['linkedin.rst', '__init__.py', 'linkedin.py', 'oauth2_session.py']",['b6b20589b43ba3f931fdcc5c5403098b32bc209e'],0,71,71,4,0.75,0.75,0.5833333333333334
+a23a90ed915211e24bf73f84088baac218967789,Add LinkedIn to tutorials index.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-09-13 14:12:57+01:00,-3600,2013-09-13 14:12:57+01:00,-3600,True,False,['tutorials.rst'],['7e9badf6702eac360de38ab52686ae5655ebde35'],0,1,1,1,,,
+6190bf8247715e53cc5cd79661106d6410aacee7,Adding compliance hook for refresh token response.,Vinod Chandru,vinod.chandru@gmail.com,Vinod Chandru,vinod.chandru@gmail.com,2013-09-23 23:15:47-07:00,25200,2013-09-23 23:15:47-07:00,25200,True,False,['oauth2_session.py'],['a23a90ed915211e24bf73f84088baac218967789'],0,9,9,1,0.0,0.0,0.0
+1dc7e54f626075ed621cf91acecd12433dcc9359,"Compliance Hooks should only be run once, and may be accidentally
+added twice due to the nature of passing in an existing OAuth2Session
+object to add the hooks to. This accounts for that possibility by
+converting them to be sets instead.",Vinod Chandru,vinod.chandru@gmail.com,Vinod Chandru,vinod.chandru@gmail.com,2013-09-23 23:21:06-07:00,25200,2013-09-23 23:21:21-07:00,25200,True,False,['oauth2_session.py'],['6190bf8247715e53cc5cd79661106d6410aacee7'],4,4,8,1,,,
+c98b533d2379aecee13a84bb3f3519b2f06daeaf,Rename core to oauth1_auth for consistency. Fix #79.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-09-25 14:38:53+01:00,-3600,2013-09-25 14:38:53+01:00,-3600,True,False,"['__init__.py', 'oauth1_auth.py']",['0f859891dbaf55e5a8f08806d098f57855e39c7c'],1,1,2,2,,,
+1927dc1636f145f11c88ab83efa39fe1fd2624d9,Bring changelog up to date for 0.4.0.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-09-29 12:40:33+01:00,-3600,2013-09-29 12:40:33+01:00,-3600,True,False,['HISTORY.rst'],['c98b533d2379aecee13a84bb3f3519b2f06daeaf'],3,7,10,1,,,
+c796dae7b105bab3a28b8aefef8ea826d1b3ffa5,Add changelog to package description.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-09-29 12:44:19+01:00,-3600,2013-09-29 12:44:19+01:00,-3600,True,False,"['MANIFEST.in', 'setup.py']",['1927dc1636f145f11c88ab83efa39fe1fd2624d9'],2,3,5,2,,,
+d9191b409a1d6a9bf3990f0f084e7a27a27ade3f,v0.4.0,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-09-29 12:44:56+01:00,-3600,2013-09-29 12:44:56+01:00,-3600,True,False,['__init__.py'],['c796dae7b105bab3a28b8aefef8ea826d1b3ffa5'],1,1,2,1,,,
+bb15ca2edb84ae4895d2f5c04c3f9cee6bafd962,Prefer given state param over generated in authorization url. Fix #82.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2013-10-01 08:47:10+01:00,-3600,2013-10-01 08:47:10+01:00,-3600,True,False,"['HISTORY.rst', 'oauth2_session.py']",['d9191b409a1d6a9bf3990f0f084e7a27a27ade3f'],3,6,9,2,,,
+37549f7fc584d9ad5768affcf09ff5a32db718ad,New docs index with app example.,Andrey Petrov,andrey.petrov@shazow.net,Andrey Petrov,andrey.petrov@shazow.net,2013-10-01 15:30:50+02:00,-7200,2013-10-01 15:30:50+02:00,-7200,True,False,['index.rst'],['bb15ca2edb84ae4895d2f5c04c3f9cee6bafd962'],3,51,54,1,,,
+e1d852f66dc1dbb14c63b65a2947f9bc22ac49dc,tutorial -> example.,Andrey Petrov,andrey.petrov@shazow.net,Andrey Petrov,andrey.petrov@shazow.net,2013-10-01 15:32:31+02:00,-7200,2013-10-01 15:32:31+02:00,-7200,True,False,"['bitbucket.rst', 'examples.rst', 'facebook.rst', 'github.rst', 'google.rst', 'linkedin.rst', 'real_world_example.rst', 'tumblr.rst', 'index.rst']",['37549f7fc584d9ad5768affcf09ff5a32db718ad'],3,3,6,9,,,
+02a68124ab023eb1c201fc4ba60f5695dddceef0,Vendor in the gist example and link to it.,Andrey Petrov,andrey.petrov@shazow.net,Andrey Petrov,andrey.petrov@shazow.net,2013-10-01 15:41:02+02:00,-7200,2013-10-01 15:41:02+02:00,-7200,True,False,"['real_world_example.rst', 'index.rst']",['e1d852f66dc1dbb14c63b65a2947f9bc22ac49dc'],77,78,155,2,,,
+8f877c412d775b5a977d80f39e18bb461d29df17,Fixed per feedback.,Andrey Petrov,andrey.petrov@shazow.net,Andrey Petrov,andrey.petrov@shazow.net,2013-10-01 16:50:12+02:00,-7200,2013-10-01 16:50:12+02:00,-7200,True,False,['real_world_example.rst'],['02a68124ab023eb1c201fc4ba60f5695dddceef0'],6,6,12,1,,,
+191d772d86ffddf7b9dec1b850e51a2435014202,Correct inline URL to Flask.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2013-10-03 09:54:09+01:00,-3600,2013-10-03 09:54:09+01:00,-3600,True,False,['real_world_example.rst'],['2a39ab2d48ecaab9f00f546dab6d1f4d3c319022'],1,1,2,1,,,
+2202dabe6a11961bdf9631eced8f4715d9e4fe99,add compliance fix for Sina Weibo.,Chunliang Lu,aptenom@gmail.com,Chunliang Lu,aptenom@gmail.com,2013-10-20 15:10:40+08:00,-28800,2013-10-20 15:11:33+08:00,-28800,True,False,"['__init__.py', 'weibo.py']",['191d772d86ffddf7b9dec1b850e51a2435014202'],0,25,25,2,1.0,1.0,0.7777777777777778
+6583b47780571c625d01cc220f19b4365a5e8e74,remove the protected_request compliance hook for Sina Weibo. encode the _content of the token response to UTF8 in the access_token_response hook.,Chunliang Lu,aptenom@gmail.com,Chunliang Lu,aptenom@gmail.com,2013-10-20 20:48:04+08:00,-28800,2013-10-20 20:48:04+08:00,-28800,True,False,['weibo.py'],['2202dabe6a11961bdf9631eced8f4715d9e4fe99'],8,1,9,1,0.0,0.0,0.5714285714285714
+3cb8b9ba7f5392ef19617891fc29e8f3d434b693,Ship tests and docs with tarball.,Ralph Bean,rbean@redhat.com,Ralph Bean,rbean@redhat.com,2013-10-31 09:16:13-04:00,14400,2013-10-31 09:16:13-04:00,14400,True,False,['MANIFEST.in'],['191d772d86ffddf7b9dec1b850e51a2435014202'],1,3,4,1,,,
+3777c500404805a57f3a65c0f58130372e7a1a98,fixes #92. Return unmodified request from facebook compliance fix when a ValueError exception is encountered during urldecode.,Nick Sloan,nsloan@rentjungle.com,Nick Sloan,nsloan@rentjungle.com,2013-11-01 14:51:48-04:00,14400,2013-11-01 14:51:48-04:00,14400,True,False,['facebook.py'],['05b166d016048c1227e247f8e16f9a49d05caa20'],1,5,6,1,1.0,1.0,1.0
+ce2ddc38b046cb922246dbb34acea87b770951b4,Commented on reasoning for try: except.,Nick Sloan,nsloan@rentjungle.com,Nick Sloan,nsloan@rentjungle.com,2013-11-03 10:46:04-05:00,18000,2013-11-03 10:46:04-05:00,18000,True,False,['facebook.py'],['3777c500404805a57f3a65c0f58130372e7a1a98'],0,2,2,1,,,
+bb107cc58feb2592858be627a721e6a45b69e7a3,Added an option to request an access token without a valid SSL certificate.,Omer Katz,omer.drow@gmail.com,Omer Katz,omer.drow@gmail.com,2013-12-01 18:55:45+02:00,-7200,2013-12-01 18:55:45+02:00,-7200,True,False,['oauth2_session.py'],['1b5d0c26d74b4987404750b0485f8e81b11e1c0c'],2,3,5,1,,,
+b4739b0afeb5c02f0e09e3754be92b1fdc0c76eb,Fixes #97. Added a method kwarg to the fetch_token endpoint to allow for facebook's GET requests for app tokens.,Nick Sloan,nsloan@rentjungle.com,Nick Sloan,nsloan@rentjungle.com,2013-12-02 11:51:11-05:00,18000,2013-12-02 11:51:11-05:00,18000,True,False,['oauth2_session.py'],['1b5d0c26d74b4987404750b0485f8e81b11e1c0c'],4,11,15,1,0.0,0.0,0.0
+27c7fbd995d5d5d78c8477f67c9f3422b31e682b,Made the method code a bit better. Added to docstring for fetch_token method. Raise ValueError if not GET or POST.,Nick Sloan,nsloan@rentjungle.com,Nick Sloan,nsloan@rentjungle.com,2013-12-03 10:19:30-05:00,18000,2013-12-03 10:19:30-05:00,18000,True,False,['oauth2_session.py'],['b4739b0afeb5c02f0e09e3754be92b1fdc0c76eb'],3,9,12,1,0.0,0.0,0.0
+1c397e9aa547903c1d3e9f5e286b0b222fadc50f,Improved greatly upon the Facebook compliance fix with regard to handling JSON error messages and malformed URL-encoded data.,Nick Sloan,nsloan@rentjungle.com,Nick Sloan,nsloan@rentjungle.com,2013-12-04 11:32:00-05:00,18000,2013-12-04 11:32:00-05:00,18000,True,False,['facebook.py'],['1b5d0c26d74b4987404750b0485f8e81b11e1c0c'],4,9,13,1,1.0,1.0,1.0
+7e97722354f1b59eb97f29aa99102ff1212e33ce,Use parse_qsl instead of urldecode because facebook sends a pipe character in its output for client_credential grants.,Nick Sloan,nsloan@rentjungle.com,Nick Sloan,nsloan@rentjungle.com,2013-12-04 11:50:54-05:00,18000,2013-12-04 11:50:54-05:00,18000,True,False,['facebook.py'],['1c397e9aa547903c1d3e9f5e286b0b222fadc50f'],1,2,3,1,,,
+8e72e1b981f4b2efc33d2f429c7403a369ec7314,Looking for parse_qsl in the wrong module.,Nick Sloan,nsloan@rentjungle.com,Nick Sloan,nsloan@rentjungle.com,2013-12-04 14:41:28-05:00,18000,2013-12-04 14:41:28-05:00,18000,True,False,['facebook.py'],['7e97722354f1b59eb97f29aa99102ff1212e33ce'],1,1,2,1,,,
+ea6cc610e875124912195ae14e70e04dc7066dbe,More sensible way to handle content type checking.,Nick Sloan,nsloan@rentjungle.com,Nick Sloan,nsloan@rentjungle.com,2013-12-04 14:44:55-05:00,18000,2013-12-04 14:44:55-05:00,18000,True,False,['facebook.py'],['8e72e1b981f4b2efc33d2f429c7403a369ec7314'],2,2,4,1,,,
+b49a7a747a96b9378216c56582b0cb166f24b547,Fix check for verifier when fetching access token,Radu Voicilas,radu.voicilas@gmail.com,Radu Voicilas,radu.voicilas@gmail.com,2014-01-13 15:25:43+02:00,-7200,2014-01-13 15:25:43+02:00,-7200,True,False,"['oauth1_session.py', 'test_oauth1_session.py']",['06a87fc57ec85f096ae38d7ccce01db0b5d46096'],1,23,24,2,1.0,1.0,1.0
+c5cad15edc28040f85dba52ceebb18e11bd9e759,Fix incorrect state checking in fetch token due to wrongly initialised state. Fix #105.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-01-29 11:12:19+00:00,0,2014-01-29 11:12:19+00:00,0,True,False,"['oauth2_session.py', 'test_oauth2_session.py']",['c31f0181d4bc756d2789484bff0b23415a9ac0c8'],1,10,11,2,1.0,1.0,1.0
+6a3d6401a707adcccda6c28df45e59450d5ca4df,Fix small Python 3 exception syntax error in oauth 1 session tests.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-01-29 11:14:09+00:00,0,2014-01-29 11:14:09+00:00,0,True,False,['test_oauth1_session.py'],['81377b974ffbeb221d52ac3185fa5eb59e866dba'],1,1,2,1,,,
+5e65c3898af439d02107fbc73e0b067eb0168ab4,"Added a Nota Bene
+
+I wanted to use this example and got the exception InsecureTransportError.
+@ib-lundgren kindly tell me the reason why. 
+As it is not obvious for some of us, I propose to highlight this potential problem.",ihommani,ismaelhommani@gmail.com,ihommani,ismaelhommani@gmail.com,2014-02-13 00:31:40+01:00,-3600,2014-02-13 00:31:40+01:00,-3600,True,False,['real_world_example.rst'],['6a3d6401a707adcccda6c28df45e59450d5ca4df'],0,21,21,1,,,
+9aa95160fa23443aea81b7c57db26522ad65f303,"Remove decode in wrong place.
+
+  File ""[...]/lib/python3.3/site-packages/requests_oauthlib/oauth1_auth.py"", line 70, in __call__
+    r.url = to_native_str(r.url)
+  File ""[...]/lib/python3.3/site-packages/requests_oauthlib/oauth1_auth.py"", line 14, in to_native_str
+    return string.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+Request object have 'url' attribute with 'str' type, not 'bytes' so
+decode in this place is wrong.",Piotr Skamruk,piotr.skamruk@gmail.com,Piotr Skamruk,piotr.skamruk@gmail.com,2014-02-11 12:06:42+01:00,-3600,2014-02-13 10:15:42+01:00,-3600,True,False,['oauth1_auth.py'],['6a3d6401a707adcccda6c28df45e59450d5ca4df'],9,4,13,1,0.0,0.0,0.0
+7057cbee773c1dff1856730ca661cc71abb2506e,"Test for expires_at parameter in oauth 2 tokens. Fix #112.
+
+OAuthlib recently added an expires_at parameter based on expires_in
+which is returned from most OAuth 2 providers. Expires at is simply a
+unix timestamp in the future which can be persisted directly by clients.",Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-03-30 14:11:30+01:00,-3600,2014-03-30 14:11:30+01:00,-3600,True,False,['test_oauth2_session.py'],['0cb31a60e28a2683250123369e9bc71374322d89'],1,9,10,1,0.0,1.0,1.0
+d3d48234991fa07f429f6c508ae112fe74dd68f9,Adding tests and code to allow subclasses of `oauthlib.oauth1.Client`,David Rogers,david@orlandophp.org,David Rogers,david@orlandophp.org,2014-04-01 15:15:05-04:00,14400,2014-04-01 15:15:05-04:00,14400,True,False,"['oauth1_auth.py', 'test_core.py']",['7057cbee773c1dff1856730ca661cc71abb2506e'],2,40,42,2,0.0,1.0,0.0
+89153c55325f6c8dd8867628b82fed24f2f69968,Pass any additional `kwargs` to the `client_class`...,David Rogers,david@orlandophp.org,David Rogers,david@orlandophp.org,2014-04-01 15:46:25-04:00,14400,2014-04-01 15:46:25-04:00,14400,True,False,['oauth1_auth.py'],['d3d48234991fa07f429f6c508ae112fe74dd68f9'],2,2,4,1,,,
+f3b7189ef11477519666632ee5acbd0f1154f635,Pass the `client_class` to `requests_oauthlib.OAuth1` and any additional `kwargs`,David Rogers,david@orlandophp.org,David Rogers,david@orlandophp.org,2014-04-01 15:47:02-04:00,14400,2014-04-01 15:47:02-04:00,14400,True,False,['oauth1_session.py'],['89153c55325f6c8dd8867628b82fed24f2f69968'],2,9,11,1,0.0,1.0,0.0
+8c2c96c4bb45803df2779cfde90868445977ab96,"Set expires_at based on current time, not just an arbitrary timestamp. CC #112.",Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-04-11 17:50:37+01:00,-3600,2014-04-11 17:50:37+01:00,-3600,True,False,['test_oauth2_session.py'],['7057cbee773c1dff1856730ca661cc71abb2506e'],1,2,3,1,,,
+181dc05622deebf03f68dd6b92dfbaa45f1ac836,Add an example for how to refresh oauth 2 tokens with Google.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-04-12 12:20:32+01:00,-3600,2014-04-12 12:20:32+01:00,-3600,True,False,"['examples.rst', 'real_world_example_with_refresh.rst']",['8c2c96c4bb45803df2779cfde90868445977ab96'],0,182,182,2,,,
+3d7a04c1172d3f9d04a6d31ec633d1006f82598b,"Fixed oauth2 workflow doc. A wrong argument name was being used in Web
+Application Flow.
+
+* Fixed doc of oauth2 workflow.
+* Web Application Flow defined a variable called `client_secret`.
+* We intended to use `client_secret`, but were accidentally calling it
+`secret`. Changed `secret` to say `client_secret`.",Akshar Raaj,akshar@agiliq.com,Akshar Raaj,akshar@agiliq.com,2014-04-20 23:45:59+05:18,-19080,2014-04-20 23:45:59+05:18,-19080,True,False,['oauth2_workflow.rst'],['181dc05622deebf03f68dd6b92dfbaa45f1ac836'],1,1,2,1,,,
+59550b9bf103aaee3b30d70d6aeb59778ace34c3,"Re-authorize requests upon redirect.
+
+Fixes requests/requests-oauthlib#116",Dimitri John Ledkov,dimitri.ledkov@canonical.com,Dimitri John Ledkov,dimitri.ledkov@canonical.com,2014-04-22 05:04:59+01:00,-3600,2014-04-22 05:16:52+01:00,-3600,True,False,['oauth1_session.py'],['181dc05622deebf03f68dd6b92dfbaa45f1ac836'],0,9,9,1,1.0,1.0,0.0
+dbad4836fed8d789e77469e2befb0c3a6ad263da,"When signature_type is body, set appropriate content-type header.
+
+Fixes requests/requests-oauthlib#115",Dimitri John Ledkov,dimitri.ledkov@canonical.com,Dimitri John Ledkov,dimitri.ledkov@canonical.com,2014-04-22 03:42:19+01:00,-3600,2014-04-22 10:35:39+01:00,-3600,True,False,['oauth1_auth.py'],['181dc05622deebf03f68dd6b92dfbaa45f1ac836'],2,3,5,1,0.0,0.0,1.0
+65ac9d8b2f61589cf52f135ac99638af30987073,Create a MediaWiki OAuth 1 example,Filippo Valsorda,filosottile.wiki@gmail.com,Filippo Valsorda,filosottile.wiki@gmail.com,2014-05-09 17:44:21+02:00,-7200,2014-05-09 17:44:21+02:00,-7200,True,False,['mediawiki.rst'],['12f3822a1a0f3c265fc1d7c218a6fdb9fa8e0d3a'],0,97,97,1,,,
+e224bf982bb482c416b15662fc3087adaa41fe9f,Add the signed /identify call to MediaWiki example,Filippo Valsorda,filosottile.wiki@gmail.com,Filippo Valsorda,filosottile.wiki@gmail.com,2014-05-10 10:40:17+02:00,-7200,2014-05-10 10:40:17+02:00,-7200,True,False,['mediawiki.rst'],['65ac9d8b2f61589cf52f135ac99638af30987073'],0,20,20,1,,,
+d1dae3f6c6dd71a7ee93ac5ab6d03e2a5b275f18,Add steps comments to the MediaWiki example,Filippo Valsorda,filosottile.wiki@gmail.com,Filippo Valsorda,filosottile.wiki@gmail.com,2014-05-10 10:43:37+02:00,-7200,2014-05-10 10:43:37+02:00,-7200,True,False,['mediawiki.rst'],['e224bf982bb482c416b15662fc3087adaa41fe9f'],0,10,10,1,,,
+5872b4414347646388734a076274e877fc21c10e,"Remove MW /identify b/c it misses checks, ref to lib",Filippo Valsorda,filosottile.wiki@gmail.com,Filippo Valsorda,filippo.valsorda@gmail.com,2014-05-11 17:57:56+02:00,-7200,2014-05-11 18:01:55+02:00,-7200,True,False,['mediawiki.rst'],['d1dae3f6c6dd71a7ee93ac5ab6d03e2a5b275f18'],22,3,25,1,,,
+8d0d997af041abce8a44d08e372464c567f03ead,"Depend on the pycrypto enabled oauthlib in setup.py.
+
+requests-oauthlib requires a pycrypto-enabled oauthlib. This is enabled in requirements.txt, but not when setup.py is called directly.",Nic Cope,negz@spotify.com,Nic Cope,negz@spotify.com,2014-05-14 15:49:39-04:00,14400,2014-05-14 15:52:28-04:00,14400,True,False,['setup.py'],['12f3822a1a0f3c265fc1d7c218a6fdb9fa8e0d3a'],1,1,2,1,,,
+33309df85823bde19fcdd2b21b73db9f1da131ab,Remove unused import. Facebook compliance support python3,Cameron Stitt,cameron@castitt.com,Cameron Stitt,cameron@castitt.com,2014-05-19 19:57:10+10:00,-36000,2014-05-19 19:57:10+10:00,-36000,True,False,['facebook.py'],['12ce97d0d9d718b0e400986a77ef5f85190e7cb2'],2,4,6,1,,,
+6a67cec8e55db63874b6c8dea372f5883d3c11f2,"Update tumblr.rst
+
+Fix error NameError: name 'base_authorization_url' is not defined
+
+Change base_authorization_url to authorization_base_url as is defined in the import",Kevin Ndung'u,kevgathuku@users.noreply.github.com,Kevin Ndung'u,kevgathuku@users.noreply.github.com,2014-05-19 21:40:27+03:00,-10800,2014-05-19 21:40:27+03:00,-10800,True,False,['tumblr.rst'],['60514b9d719ef299a86bc35d496b441931f73ec6'],1,1,2,1,,,
+ad2b60101e6c1119d031fa340de628758896d582,Allow custom clients to force include body with new force_include_body parameter in OAuth 1 auth and session. CC #125.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-04 10:22:58+01:00,-3600,2014-06-04 10:22:58+01:00,-3600,True,False,"['oauth1_auth.py', 'oauth1_session.py']",['151b7d5306138f7ecb4299ac3913cd2a2e72ad6b'],1,13,14,2,0.0,0.625,0.375
+030b5804c4aed19b554874e8390600f9b6871679,Send binary data with content type octet stream. Fix #127.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-04 10:23:49+01:00,-3600,2014-06-04 10:23:49+01:00,-3600,True,False,['test_core.py'],['ad2b60101e6c1119d031fa340de628758896d582'],0,1,1,1,1.0,1.0,0.0
+7ad0053d82c1e50b2225e64bf4c7f98c86859dba,"Use OAuthlibs is_secure_transport method instead of duplicating it.
+
+The method was only recently added to oauthlib.oauth2 (0.6.2) so
+a version bump in requirements/setup.py is needed.",Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-04 13:39:18+01:00,-3600,2014-06-04 13:39:18+01:00,-3600,True,False,"['oauth2_session.py', 'utils.py', 'requirements.txt', 'setup.py']",['030b5804c4aed19b554874e8390600f9b6871679'],15,3,18,4,0.0,0.0,0.0
+0bde23f99686ab39af3b1af767925482c2d484de,Stop piggybacking on oauthlib logging. Fix #85.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-04 13:53:18+01:00,-3600,2014-06-04 13:53:18+01:00,-3600,True,False,"['__init__.py', 'oauth2_session.py']",['7ad0053d82c1e50b2225e64bf4c7f98c86859dba'],2,17,19,2,1.0,1.0,1.0
+3d205a5dbf5067d8086e40db37f251a83c7692ba,Add debug logging to oauth 1 session and auth.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-04 14:29:27+01:00,-3600,2014-06-04 14:29:27+01:00,-3600,True,False,"['oauth1_auth.py', 'oauth1_session.py']",['0bde23f99686ab39af3b1af767925482c2d484de'],3,31,34,2,0.625,0.625,0.875
+3e4f3958daddd3737ec5f40804ac22683da6e206,Raise more informative errors when provider returns non urlencoded error responses. CC #124.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-04 14:59:50+01:00,-3600,2014-06-04 14:59:50+01:00,-3600,True,False,"['oauth1_session.py', 'test_oauth1_session.py']",['3d205a5dbf5067d8086e40db37f251a83c7692ba'],2,27,29,2,0.05,1.0,0.85
+4ae69c281dce3b1e91224d19f67cf9b04ef627a0,Add extra target for setup.py for RSA rather than defaulting to it. CC #120.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-04 15:17:33+01:00,-3600,2014-06-04 15:17:33+01:00,-3600,True,False,['setup.py'],['3e4f3958daddd3737ec5f40804ac22683da6e206'],1,2,3,1,,,
+68181e993ba7a183336fac092ee591ccedb6f8d4,specify py3k support trove classifier,Nar Kumar,neokya@gmail.com,Nar Kumar,neokya@gmail.com,2014-06-06 15:36:13+05:18,-19080,2014-06-06 15:36:13+05:18,-19080,True,False,['setup.py'],['030b5804c4aed19b554874e8390600f9b6871679'],0,3,3,1,,,
+32191547567e9ce0cdec954d0079fb18f85b38ce,Use newly exposed oauth2.is_secure_transport instead of duplicate.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-06 12:09:36+01:00,-3600,2014-06-06 12:09:36+01:00,-3600,True,False,['oauth2_auth.py'],['d88b211bf14410f8a20fce74a031e78229f13880'],2,1,3,1,,,
+561f1acfcbc0b73375597e09c0d81977cd550562,Introduce TokenRequestDenied exception for 40x responses on token fetch. Fix #124.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-06 12:30:06+01:00,-3600,2014-06-06 12:30:06+01:00,-3600,True,False,['oauth1_session.py'],['32191547567e9ce0cdec954d0079fb18f85b38ce'],1,8,9,1,1.0,1.0,0.0
+8eefbc9800769c802836167a4e567ccfae9ac14e,Warn users with an outdated verion of requests. Fix #77.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-06 12:42:24+01:00,-3600,2014-06-06 12:42:24+01:00,-3600,True,False,['__init__.py'],['561f1acfcbc0b73375597e09c0d81977cd550562'],0,6,6,1,,,
+31fb2a43a9ac6720f76a54dc5026f5874f557000,Ensure compliance fixes set _content with bytes type. CC #87.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-06 13:30:12+01:00,-3600,2014-06-06 13:30:12+01:00,-3600,True,False,"['facebook.py', 'linkedin.py', 'weibo.py', 'test_compliance_fixes.py']",['8eefbc9800769c802836167a4e567ccfae9ac14e'],7,75,82,4,1.0,1.0,1.0
+fd60f352c7286f9de12e1d45293e1b892d152a83,Added recent changes to history in preparation for release.,Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-06-06 13:47:57+01:00,-3600,2014-06-06 13:47:57+01:00,-3600,True,False,['HISTORY.rst'],['31fb2a43a9ac6720f76a54dc5026f5874f557000'],0,17,17,1,,,
+c0f425c4084e842dca076cd023e7dddac7829456,Update changelog for 0.4.1 release.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2014-06-06 14:20:12+01:00,-3600,2014-06-06 14:20:12+01:00,-3600,True,False,['HISTORY.rst'],['fd60f352c7286f9de12e1d45293e1b892d152a83'],5,6,11,1,,,
+b6e8fae0b1567b77c37a50ab91c01b25e0dc2581,0.4.1,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2014-06-06 14:20:39+01:00,-3600,2014-06-06 14:20:39+01:00,-3600,True,False,['__init__.py'],['c0f425c4084e842dca076cd023e7dddac7829456'],1,1,2,1,,,
+ad18fb3edbf90c8a8952eff4c727e9207e8fa5df,Add support for wheels.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2014-06-06 14:26:06+01:00,-3600,2014-06-06 14:26:06+01:00,-3600,True,False,['setup.cfg'],['b6e8fae0b1567b77c37a50ab91c01b25e0dc2581'],0,2,2,1,,,
+c58bc1e812d285d37626a66ad3d6a2edfff789a3,Fixed docs about InsecureTransportError,Wiliam Souza,wiliamsouza83@gmail.com,Wiliam Souza,wiliamsouza83@gmail.com,2014-06-18 15:45:58-03:00,10800,2014-06-18 15:45:58-03:00,10800,True,False,['real_world_example.rst'],['ad18fb3edbf90c8a8952eff4c727e9207e8fa5df'],9,5,14,1,,,
+35402f23b4496b82b061ec32f89cbc28c6f35324,"Allow for request timeouts to be specified
+
+By default requests has no timeout, this is risky when using it from a server backend. Similar to the verify that got exposed recently, this adds a timeout parameter, which defaults to the requests default of None, to refresh_token and fetch_token.",RR2DO2,RR2DO2@users.noreply.github.com,RR2DO2,RR2DO2@users.noreply.github.com,2014-07-15 13:12:51+01:00,-3600,2014-07-15 13:12:51+01:00,-3600,True,False,['oauth2_session.py'],['dbb5bb456aaee764403737d3bc50d6a641f64a9b'],5,9,14,1,0.0,0.0,0.0
+46a5801bc5c049188b972662d616dd87a23e3938,Fix issue of redundant oauth rebuilding when redirects,maxint,lnychina@gmail.com,maxint,lnychina@gmail.com,2014-08-12 20:06:37+08:00,-28800,2014-08-12 20:06:37+08:00,-28800,True,False,['oauth1_session.py'],['dbb5bb456aaee764403737d3bc50d6a641f64a9b'],4,20,24,1,1.0,1.0,0.0
+38a96c645bd6347e2cf9a8ab0d134327aa564c8b,removing slash from MANIFEST.in to fix pip install on Windows,Mark Nemec,mark.nemec@skyscanner.net,Mark Nemec,mark.nemec@skyscanner.net,2014-08-13 11:47:15+01:00,-3600,2014-08-13 11:47:15+01:00,-3600,True,False,['MANIFEST.in'],['dbb5bb456aaee764403737d3bc50d6a641f64a9b'],2,2,4,1,,,
+06f3f5927c96d8dac39edb72a7aba329182eecd5,Remove unused comments,maxint,lnychina@gmail.com,maxint,lnychina@gmail.com,2014-08-14 13:26:52+08:00,-28800,2014-08-14 13:26:52+08:00,-28800,True,False,"['.gitignore', 'oauth1_session.py']",['46a5801bc5c049188b972662d616dd87a23e3938'],1,1,2,2,,,
+1aeda8b63382ed0ae6d0a0015a4455071119c7f2,add another compliance for douban,shonenada,shonenada@gmail.com,shonenada,shonenada@gmail.com,2014-08-26 13:51:40+08:00,-28800,2014-08-26 13:51:40+08:00,-28800,True,False,['douban.py'],['dbb5bb456aaee764403737d3bc50d6a641f64a9b'],0,18,18,1,1.0,1.0,1.0
+503146ae39c1c050abf39d2fd5a43595e621cdf7,"Allow headers to be overriden on oauth2.fetch_token
+
+Twitters application-only client credentials flow
+struggle when provided with an accept header. This
+allow users to omit it. Also include a new default
+encoding and charset content type header.",Ib Lundgren,ib.lundgren@gmail.com,Ib Lundgren,ib.lundgren@gmail.com,2014-09-01 18:02:36+01:00,-3600,2014-09-01 18:02:36+01:00,-3600,True,False,"['oauth2_session.py', 'test_compliance_fixes.py']",['3649b2ea9ded2c3e045390f24a43ef31df50f869'],3,13,16,2,0.3333333333333333,0.3333333333333333,0.3333333333333333
+96581eddcee41b7cd5eed49562ba4442a1d05552,"Integrate with Travis CI and Coveralls, and display badges",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-09-05 20:31:18-04:00,14400,2014-09-06 00:48:02-04:00,14400,True,False,"['.travis.yml', 'README.rst']",['503146ae39c1c050abf39d2fd5a43595e621cdf7'],2,24,26,2,,,
+5375a14e41547b2a21e03ec5105260d6d332ea11,Add subclasses for oauth1 exceptions,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-09-09 20:40:26-04:00,14400,2014-09-09 20:40:26-04:00,14400,True,False,['oauth1_session.py'],['503146ae39c1c050abf39d2fd5a43595e621cdf7'],2,15,17,1,1.0,1.0,0.5
+0c4c362fdfcfe5e0024f754314957f4d1badef4b,Allow a base_url parameter for sessions,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-09-10 09:42:03-04:00,14400,2014-09-10 09:42:03-04:00,14400,True,False,"['oauth1_session.py', 'oauth2_session.py']",['503146ae39c1c050abf39d2fd5a43595e621cdf7'],1,24,25,2,0.7272727272727273,0.9090909090909091,0.7272727272727273
+93d4ef5303528d439f2200046995ece44bee3571,"Add `authorized` property to sessions
+
+To make it easier to determine if they are already authorized or not",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-09-10 10:09:24-04:00,14400,2014-09-10 13:12:46-04:00,14400,True,False,"['oauth1_session.py', 'oauth2_session.py']",['d1d617a02f989b02321144321da95ba34983168a'],1,34,35,2,1.0,1.0,1.0
+fa1eab5156f4de1322409b526c4c1326c2190d11,"Update HISTORY.rst, add myself to AUTHORS.rst",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-09-10 13:22:47-04:00,14400,2014-09-10 13:22:47-04:00,14400,True,False,"['AUTHORS.rst', 'HISTORY.rst']",['503146ae39c1c050abf39d2fd5a43595e621cdf7'],0,12,12,2,,,
+5c8cae263d23a769a3f2b370c1cbf83fb4ca825e,Update license to 2014,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-09-10 13:42:12-04:00,14400,2014-09-10 13:42:12-04:00,14400,True,False,"['LICENSE', 'conf.py']",['afe46d74a282cd27102d90fd50ada1e5d0998ca3'],3,3,6,2,,,
+7307707cccdca5f7142e4c3128fb22550620d9e2,"Provide coverage source
+
+So that it doesn't report an artificially low coverage percentage.
+We only care about covering this module, not all modules that
+this module imports.",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-09-10 13:48:31-04:00,14400,2014-09-10 13:49:50-04:00,14400,True,False,['.travis.yml'],['afe46d74a282cd27102d90fd50ada1e5d0998ca3'],1,1,2,1,,,
+93e01d70ae8b78f141af12ed036731adea174712,"Revert ""Allow a base_url parameter for sessions""
+
+This reverts commit 0c4c362fdfcfe5e0024f754314957f4d1badef4b.",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-09-11 10:37:39-04:00,14400,2014-09-11 10:37:39-04:00,14400,True,False,"['oauth1_session.py', 'oauth2_session.py']",['2332862891b3d8b254ec571e6edd99c93850fa8a'],24,1,25,2,0.2727272727272727,0.09090909090909091,0.2727272727272727
+a847beeeb5cbdb9f1f32bc10fa762f9d5f16b230,Remove base_url from HISTORY,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-09-11 10:38:42-04:00,14400,2014-09-11 10:38:42-04:00,14400,True,False,['HISTORY.rst'],['93e01d70ae8b78f141af12ed036731adea174712'],3,0,3,1,,,
+bc1f93f0865e0cdeb36bf48ad6833f3714bc277b,"[FIX] ImportError: cannot import name to_native_string
+
+`requests` lib version should be >= 2.0.0 for `requests.utils.to_native_string` to be available
+
+See: http://stackoverflow.com/a/24955127/798575",Alan Justino da Silva,alan.justino@yahoo.com.br,Alan Justino da Silva,alan.justino@yahoo.com.br,2014-10-09 13:01:38-03:00,10800,2014-10-09 13:01:38-03:00,10800,True,False,['requirements.txt'],['08727f06e738a2594409d54f8fdb0342f2acad87'],1,1,2,1,,,
+0ca92768f7d3d55f9a1e454069e306bd77ceb2d7,v0.4.2,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2014-10-16 18:24:23+01:00,-3600,2014-10-16 18:24:23+01:00,-3600,True,False,['__init__.py'],['ebe3c5d099c4f09f1992626a13249a234597b245'],1,1,2,1,,,
+b94f16472d66f5ed0febb8c1985854f379f7bac3,OAuth1 tests for authorized boolean,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-10-16 14:20:09-04:00,14400,2014-10-16 18:28:11-04:00,14400,True,False,"['oauth1_session.py', 'test_oauth1_session.py']",['0ca92768f7d3d55f9a1e454069e306bd77ceb2d7'],34,87,121,2,1.0,1.0,1.0
+e734eb31021b107150916e96c3c42457e7564c74,Added tests for OAuth2 authorized boolean,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2014-10-16 18:25:53-04:00,14400,2014-10-16 18:28:15-04:00,14400,True,False,['test_oauth2_session.py'],['b94f16472d66f5ed0febb8c1985854f379f7bac3'],0,22,22,1,1.0,1.0,1.0
+bd7af477d360bae5851fbe63a7c294b78f7dfef2,Fix TypeError in TokenMissing class (call to parent),François Chapuis,afnarel@gmail.com,François Chapuis,afnarel@gmail.com,2014-11-28 17:29:31+01:00,-3600,2014-11-28 17:29:31+01:00,-3600,True,False,['oauth1_session.py'],['23fc41baf690bf2771b1417e571fbf9b28440690'],1,1,2,1,,,
+59321173d8672c5701ce0bf2270d779197d25701,MailChimp compliance fixes that work around oauthlib issue #296 (https://github.com/idan/oauthlib/issues/296) and an unreported issue I ran into where oauthlib rejects MailChimp tokens with expires_in set to 0,Matt Walker,matt.r.walker@gmail.com,Matt Walker,matt.r.walker@gmail.com,2015-02-01 22:38:26-06:00,21600,2015-02-01 22:38:26-06:00,21600,True,False,"['__init__.py', 'mailchimp.py', 'test_compliance_fixes.py']",['50e8529807c04d91826ece9d0b02ea4decf2d609'],0,53,53,3,0.5142857142857142,1.0,1.0
+759c4c46973a043013061d4ac1495e51a0543ea0,"Update real_world_example.rst
+
+Code-formatted snippets of code, made the N.B. section adhere to 80-column limit layout.",Gregory Goltsov,gregory@goltsov.info,Gregory Goltsov,gregory@goltsov.info,2015-02-09 17:07:53+00:00,0,2015-02-09 17:07:53+00:00,0,True,False,['real_world_example.rst'],['50e8529807c04d91826ece9d0b02ea4decf2d609'],5,11,16,1,,,
+1260052172fedbe38e37c492b60003e5212046fe,cleanup docstring of OAuth1Session to fix a typo/usage error,Andrew Martin,almartin82@users.noreply.github.com,Andrew Martin,almartin82@users.noreply.github.com,2015-03-28 16:43:35-04:00,14400,2015-03-28 16:43:35-04:00,14400,True,False,['oauth1_session.py'],['50e8529807c04d91826ece9d0b02ea4decf2d609'],1,1,2,1,,,
+66d1ef42982f0d18e7d33b7ee1a476ceb172a1ee,Verify return value of OAuth2 response (#178),Jens Erat,email@jenserat.de,Jens Erat,email@jenserat.de,2015-03-30 20:12:44+02:00,-7200,2015-03-30 20:12:44+02:00,-7200,True,False,['oauth2_session.py'],['c9a2f27a6f83bdf093a10500a027513655b6064c'],0,2,2,1,0.0,0.0,0.0
+f3523b969e93c4bdbd202cc562499af59ac26c57,Check if client exists before referencing client_id,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-02-10 16:54:22-05:00,18000,2015-04-28 08:15:49-04:00,14400,True,False,['oauth2_session.py'],['5e6a88e8fa9441c3d95345f1d41c1325cfec47ca'],1,3,4,1,0.0,0.0,0.0
+1b31cbae21866f25b24d932e8fc55154abbe8c6f,v0.5.0,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2015-05-04 10:53:16+01:00,-3600,2015-05-04 10:53:16+01:00,-3600,True,False,"['HISTORY.rst', '__init__.py']",['81ef170c025b5b071b838e9c8a6373bb98dcdb41'],1,8,9,2,,,
+977571dcb3bb1149a2f3e4e29ef922c6a8a7e805,"Fix a problem that its get method always returns 'not_authed' on Slack
+
+Slack require a URL including 'token'",Eshin Kunishima,omochi@luna.miko.im,Eshin Kunishima,omochi@luna.miko.im,2015-05-10 15:37:44+09:00,-32400,2015-05-10 15:46:18+09:00,-32400,True,False,"['__init__.py', 'slack.py']",['1b31cbae21866f25b24d932e8fc55154abbe8c6f'],0,12,12,2,1.0,1.0,0.5
+9e1ea84d3059638d16b3348740297473e2351ebe,"Update Legacy Application Flow documentation
+
+I added a basic description of the Legacy Application Flow. It's pretty simple, but it took a bit of tooling around so this should save some people the trouble.
+
+I discovered that client_id is not passed from the OAuth2Session or LegacyApplicationClient when fetch_token is called, which I believe to be a bug.",Corwin,CorwinTanner@users.noreply.github.com,Corwin,CorwinTanner@users.noreply.github.com,2015-06-05 15:30:49-05:00,18000,2015-06-05 15:30:49-05:00,18000,True,False,['oauth2_workflow.rst'],['6f23a5867ea7fbc3438079f9f9079e27063d0a9b'],1,18,19,1,,,
+804b4b4e1ec2544420432dce279bac404c378344,"Prune .pyc files when creating a release
+
+Closes #184",Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2015-07-25 20:12:24-05:00,18000,2015-07-25 20:12:24-05:00,18000,True,False,['MANIFEST.in'],['094c71c9169ef4fae02543b5432b0d8ed116e892'],0,1,1,1,,,
+8d3541b56c33f71588ff17f2ca178ee171c1a118,"Adding Backend Application Flow documentation
+
+Backend Application Flow aka Client Credentials Grant.",Martin-Zack Mekkaoui,martin@mekkaoui.fr,Martin-Zack Mekkaoui,martin@mekkaoui.fr,2015-07-28 09:37:32+02:00,-7200,2015-07-28 09:37:32+02:00,-7200,True,False,['oauth2_workflow.rst'],['094c71c9169ef4fae02543b5432b0d8ed116e892'],1,18,19,1,,,
+39e027c54d7d79f51235f2333ee24dec8456791b,Need signedtoken extra for oauthlib dependency,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-08-15 20:13:04-04:00,14400,2015-08-15 20:13:04-04:00,14400,True,False,['requirements.txt'],['59d0545fcda8206192c950724e8463f1bfe18813'],1,1,2,1,,,
+0c0828ae14c8e13b2551e86e3a31c859ef6f4406,opt in to Travis container infrastructure,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-08-15 20:14:59-04:00,14400,2015-08-15 20:14:59-04:00,14400,True,False,['.travis.yml'],['39e027c54d7d79f51235f2333ee24dec8456791b'],0,2,2,1,,,
+abd6ba723cbe9d8175ae92ca0ab92389744f15c0,oauthlib raises a different error from what we expect,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-08-15 20:23:27-04:00,14400,2015-08-15 20:23:27-04:00,14400,True,False,['test_oauth2_session.py'],['0c0828ae14c8e13b2551e86e3a31c859ef6f4406'],2,2,4,1,,,
+cf54dfc3105869a9bfd872470b59f345ea3c4a50,"Response objects should have cookies, not cookes",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-08-15 20:08:07-04:00,14400,2015-08-16 14:39:36-04:00,14400,True,False,['test_oauth1_session.py'],['6518a251b22df8c22f45942e0240c773f75f77ba'],3,3,6,1,,,
+b0e58ee506da2993c394e3f01aad7dca8b139060,"attach the entire response object when raising TokenRequestDenied
+
+so that callers that catch the exception can introspect the response",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-08-15 20:05:15-04:00,14400,2015-08-16 14:44:55-04:00,14400,True,False,"['oauth1_session.py', 'test_oauth1_session.py']",['6518a251b22df8c22f45942e0240c773f75f77ba'],8,21,29,2,1.0,1.0,1.0
+2daddb0131c54e1f16ac053236b253b008b65afc,"[bugfix] Add headers in refresh_token flow
+
+Indeed, we are sending default headers when fetching a token. I thought
+it was logic to also send these same default headers (and offer our
+users the possibility to set their own headers) in the `refresh_token`
+method.
+
+Also, one of the main reason for this is that some applications (the
+Flowdock API for instance) do need those headers to return the
+appropriate content :)",Etienne LAFARGE,etienne.lafarge@datadoghq.com,Etienne LAFARGE,etienne.lafarge@datadoghq.com,2015-08-21 16:54:10-04:00,14400,2015-08-21 16:54:10-04:00,14400,True,False,['oauth2_session.py'],['d07e413b68d69569f6ad5b74f1f82cd3d63aa6f8'],2,8,10,1,0.0,0.0,0.0
+36cf9b0de0025b73fcade409a164bcb3dd6c9d01,Include import in Backend Application Flow docs,Cong,congusbongus@gmail.com,Cong,congusbongus@gmail.com,2015-08-24 12:16:58+10:00,-36000,2015-08-24 12:16:58+10:00,-36000,True,False,['oauth2_workflow.rst'],['d07e413b68d69569f6ad5b74f1f82cd3d63aa6f8'],0,1,1,1,,,
+350a92da92c1a78de4cde5226fe25b854e2a77c4,Add imports for Legacy Application Flow docs,Cong,congusbongus@gmail.com,Cong,congusbongus@gmail.com,2015-08-25 10:26:22+10:00,-36000,2015-08-25 10:26:22+10:00,-36000,True,False,['oauth2_workflow.rst'],['4bceb4a8d32c1a698c3f4b48dd508f5103848b3a'],0,2,2,1,,,
+9188065809f0a783af4c6d83c4562e1be112114b,"When refreshing tokens, pass through **kwargs",Christian Lerrahn,christian@webmarketingexperts.com.au,Christian Lerrahn,christian@webmarketingexperts.com.au,2015-09-18 16:18:18+10:00,-36000,2015-09-18 16:18:18+10:00,-36000,True,False,['oauth2_session.py'],['58a115edf6d2172eaaf0b20d9bfc55179ca8da1a'],1,1,2,1,,,
+c974576e3bcd660b6cef663f4a16d4d48859ab92,Skip rsa tests when dependencies not met,John Vandenberg,jayvdb@gmail.com,John Vandenberg,jayvdb@gmail.com,2015-01-29 17:48:36+11:00,-39600,2015-09-26 07:46:17+10:00,-36000,True,False,['test_oauth1_session.py'],['c68b16f59bb6922338aaa80d1041e049290e5e3c'],1,26,27,1,0.8,1.0,0.0
+1f0795f1d3990b75b607818f54eb05a50b6c4115,"Don't intercept HTTP errors before OAuthlib can handle them
+
+As per https://github.com/requests/requests-oauthlib/issues/178#issuecomment-142280502 - the addition of this line caused a regression; the HTTP errors aren't passed on to OAuthlib anymore breaking the exceptions that would normally be raised.",RR2DO2,RR2DO2@users.noreply.github.com,RR2DO2,RR2DO2@users.noreply.github.com,2015-09-29 11:48:31+01:00,-3600,2015-09-29 11:48:31+01:00,-3600,True,False,['oauth2_session.py'],['c68b16f59bb6922338aaa80d1041e049290e5e3c'],2,0,2,1,1.0,1.0,1.0
+caed9b1bb19742eec9e70f25fc690407488d27df,added note to the real world example explaining its caveats,hellerve,veit.heller@student.htw-berlin.de,hellerve,veit.heller@student.htw-berlin.de,2015-10-22 16:25:11+02:00,-7200,2015-10-22 16:25:11+02:00,-7200,True,False,['real_world_example.rst'],['6c437210b66d384a4e77ad9575e35bc81cbdaaba'],0,6,6,1,,,
+d6bde7d1b3d694f25acffd03e379edd37ba99dfb,rst syntax fix,hellerve,veit.heller@student.htw-berlin.de,hellerve,veit.heller@student.htw-berlin.de,2015-10-22 16:26:31+02:00,-7200,2015-10-22 16:26:31+02:00,-7200,True,False,['real_world_example.rst'],['caed9b1bb19742eec9e70f25fc690407488d27df'],1,1,2,1,,,
+1849a3130adbe2ef498195c3fa80b8e793f57080,fixed the layout of the note,hellerve,veit.heller@student.htw-berlin.de,hellerve,veit.heller@student.htw-berlin.de,2015-10-22 16:57:20+02:00,-7200,2015-10-22 16:57:20+02:00,-7200,True,False,['real_world_example.rst'],['d6bde7d1b3d694f25acffd03e379edd37ba99dfb'],5,4,9,1,,,
+f8037e39a748be376180bf823e0edadcac5e6389,Fix up line-length in note.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2015-10-22 16:09:47+01:00,-3600,2015-10-22 16:09:47+01:00,-3600,True,False,['real_world_example.rst'],['1b1fb98c3779f6d376e51a162680aaf341831609'],4,5,9,1,,,
+e9021aed3ca6eb97bf9b1ab4132b6d4c2b4fb7b5,Fix typo,Devin Sevilla,dasevilla@gmail.com,Devin Sevilla,dasevilla@gmail.com,2015-10-22 10:56:07-07:00,25200,2015-10-22 10:56:07-07:00,25200,True,False,['real_world_example.rst'],['f8037e39a748be376180bf823e0edadcac5e6389'],1,1,2,1,,,
+dd883a82ba8f470e3d8a9675be150ec27b9ebb1d,"Remove misleading README example.
+
+Resolves #205",Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2015-11-18 17:37:15+00:00,0,2015-11-18 17:37:15+00:00,0,True,False,['README.rst'],['bf626f942188c62606f62b12ab1a08888e93bfe3'],13,5,18,1,,,
+37f1e9b5b5583ff998ce295ab94b72e32beb236a,"Added authorization header for token access
+
+This change adds a Basic Auth header into `fetch_token`.
+Why?
+
+The relevant section of the OAuth 2.0 specification, [2.3.1. Client Password](https://tools.ietf.org/html/rfc6749#section-2.3.1) reads:
+
+> Clients in possession of a client password MAY use the
+> HTTP Basic authentication scheme...
+
+But for servers, it reads:
+
+> The authorization server MUST support the
+> HTTP Basic authentication scheme for authenticating clients
+> that were issued a client password.
+
+Clients MAY send Basic Auth,
+but servers MUST accept it.
+Before this commit, `fetch_token` DOES NOT use this scheme.
+Instead, it sends `client_id` and `client_secret` in the body.
+The spec says this about that:
+
+> Including the client credentials in the request-body
+> using the two parameters is NOT RECOMMENDED
+> and SHOULD be limited to clients unable to directly utilize
+> the HTTP Basic authentication scheme...
+
+But for servers, it reads:
+
+> The authorization server MAY support including
+> the client credentials in the request-body...
+
+Clients are NOT RECOMMENDED to send a body,
+and servers MAY accept it.
+So this client DOES something that is NOT RECOMMENDED.
+However, Fixing that would be a breaking change.
+Furthermore, this clearly works for non-compliant OAuth servers.
+""Ain't broke so don't fix it.""
+
+A compliant server may accept Basic Auth and not a request-body.
+Which is the current case for Bitbucket.
+Before this commit, the following is a simple work-around:
+
+```
+    # Fetch the access token
+    basic_auth = HTTPBasicAuth(client_id, client_secret)
+    bitbucket.fetch_token(
+      token_uri,
+      authorization_response=redirect_response,
+      auth=basic_auth)
+```
+
+With a one line change (and 50+ lines of commit message),
+`fetch_token` is now more compliant and works with Bitbucket.",Ian Buchanan,ibuchanan@atlassian.com,Ian Buchanan,ibuchanan@atlassian.com,2015-11-19 17:48:08-05:00,18000,2015-11-19 17:48:08-05:00,18000,True,False,['oauth2_session.py'],['dd883a82ba8f470e3d8a9675be150ec27b9ebb1d'],0,2,2,1,0.0,0.0,0.0
+1d9061187b14a71ec5161d39253d8f7684047138,"Add setters/getters for client_id and access_token
+
+requests-oauthlib wraps WebApplicationClient, so the values
+on that client should be exposed on the wrapper.",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-12-12 13:08:04-05:00,18000,2015-12-12 13:08:04-05:00,18000,True,False,"['oauth2_session.py', 'test_oauth2_session.py']",['4128a1aa44d621b806f457ed18298a9db4862d57'],4,45,49,2,1.0,1.0,1.0
+273d6cec5b615284dcfce39bb3dd3fa393124923,Setter/getter for self.token,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-12-12 14:16:24-05:00,18000,2015-12-12 14:21:31-05:00,18000,True,False,"['oauth2_session.py', 'test_oauth2_session.py']",['1d9061187b14a71ec5161d39253d8f7684047138'],3,30,33,2,0.23809523809523808,1.0,1.0
+62f5cf935f815d8fde33b5f30ae0071f23311e98,Add unittest2 test dependency for Python 2.6,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-12-12 14:27:52-05:00,18000,2015-12-12 14:27:52-05:00,18000,True,False,"['.travis.yml', 'setup.py']",['273d6cec5b615284dcfce39bb3dd3fa393124923'],1,6,7,2,,,
+a272b68c24a5f72f39fb44af51b8e8cdeece00a9,Be more explicit about Travis installing unittest2,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-12-12 14:32:13-05:00,18000,2015-12-12 14:36:03-05:00,18000,True,False,['.travis.yml'],['62f5cf935f815d8fde33b5f30ae0071f23311e98'],1,1,2,1,,,
+76da85aaf02762250729ab86663b56c343cfcc83,Use unittest2 when it is installed,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-12-12 14:38:00-05:00,18000,2015-12-12 14:38:00-05:00,18000,True,False,['test_oauth2_session.py'],['a272b68c24a5f72f39fb44af51b8e8cdeece00a9'],2,5,7,1,,,
+f63905efa1f7746c395073eb6a2dcc533cd480a1,Subclass requests.auth.AuthBase,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-12-13 10:53:36-05:00,18000,2015-12-13 10:56:28-05:00,18000,True,False,"['oauth1_auth.py', 'oauth2_auth.py']",['4128a1aa44d621b806f457ed18298a9db4862d57'],2,4,6,2,,,
+2208fe01796b20385dca29149a628174459c5133,Only set default headers if headers are None,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2015-12-14 11:24:56+00:00,0,2015-12-14 11:24:56+00:00,0,True,False,['oauth2_session.py'],['21ccf0299ffffc48082136b6fe07b85320ddef84'],4,7,11,1,0.0,0.0,0.0
+1ba9946296fef27d887d790eace06b608de6f3c1,Test 3.5 on Travis,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2015-12-14 11:25:42+00:00,0,2015-12-14 11:25:42+00:00,0,True,False,['.travis.yml'],['0f4866aa59aa6d032a890a568febb9a5eef56b87'],0,1,1,1,,,
+c1d8f4f10c627477988505a13338cb541aacadf6,Add tox.ini,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2015-12-14 11:26:00+00:00,0,2015-12-14 11:26:00+00:00,0,True,False,"['.gitignore', 'tox.ini']",['1ba9946296fef27d887d790eace06b608de6f3c1'],1,18,19,2,,,
+f1d5331a22001e744830cac8d80dfb33f9607bb6,v0.6.0,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2015-12-14 12:24:49+00:00,0,2015-12-14 12:24:49+00:00,0,True,False,"['HISTORY.rst', '__init__.py']",['a60d17aedb601b48ad21b0c51b04f3314cc73833'],1,14,15,2,,,
+69957cfb02c2e6e6b0fc8482a9ee8997b4d22ef6,"Preventing sending Basic Auth headers with ""None:None""
+Closes #211",Carles F. Julià,carles.fernandez@upf.edu,Carles F. Julià,carles.fernandez@upf.edu,2015-12-16 13:26:03+01:00,-3600,2015-12-16 13:26:03+01:00,-3600,True,False,['oauth2_session.py'],['f1d5331a22001e744830cac8d80dfb33f9607bb6'],1,2,3,1,0.0,0.0,0.0
+9b124ef89848c785004aa8c9a1d515518df6d1c9,cleaning code and checking that a password was supplied along username,Carles F. Julià,carles.fernandez@upf.edu,Carles F. Julià,carles.fernandez@upf.edu,2015-12-16 15:35:40+01:00,-3600,2015-12-16 15:35:40+01:00,-3600,True,False,['oauth2_session.py'],['69957cfb02c2e6e6b0fc8482a9ee8997b4d22ef6'],2,4,6,1,0.0,0.0,0.0
+de42424f89cf24db014e51a3ea2f272293929b97,making operator precedence more readable,Carles F. Julià,carles.fernandez@upf.edu,Carles F. Julià,carles.fernandez@upf.edu,2015-12-16 16:55:28+01:00,-3600,2015-12-16 16:55:28+01:00,-3600,True,False,['oauth2_session.py'],['9b124ef89848c785004aa8c9a1d515518df6d1c9'],1,1,2,1,,,
+f4748cc2a7e57d05774ab440e2fdbb7444d6b29c,"Cleaning the previous token before fetching a new one, to avoid a TokenExpiredError",Diogo Baeder de Paula Pinto,diogobaeder@yahoo.com.br,Diogo Baeder de Paula Pinto,diogobaeder@yahoo.com.br,2015-12-18 18:52:15-02:00,7200,2015-12-18 18:52:15-02:00,7200,True,False,"['oauth2_session.py', 'test_oauth2_session.py']",['1c15f31ef905dcb078294423f76e74dfa2eeb7e4'],6,32,38,2,0.9166666666666666,0.9166666666666666,0.9166666666666666
+658d0ef829e03979130d63abcbdf5e1d9c7d57aa,"Use requests-mock library, add tests for Slack compliance fix",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-12-23 11:26:01-05:00,18000,2015-12-23 11:54:33-05:00,18000,True,False,"['.travis.yml', 'linkedin.py', 'slack.py', 'setup.py', 'test_compliance_fixes.py']",['a6c72ed8bca44bee139c75135c07767d0f319764'],63,142,205,5,0.609375,1.0,1.0
+b583748568ef5e4d56ff324b9dc88a04763526ab,Users should be able to override the token when using the Slack compliance fix,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2015-12-23 14:01:14-05:00,18000,2015-12-23 14:03:36-05:00,18000,True,False,"['slack.py', 'test_compliance_fixes.py']",['ff2f5160d29e5d056e9e1e4d41dd8b836f1a6933'],14,81,95,2,0.9591836734693877,0.6938775510204082,0.7755102040816326
+37b3a24be021cf630d8a45f2d32fbde72e5fc058,"Don't nullify token before refresh
+
+Avoids issuing requests lacking the Authorization header until a new
+token is fetched",Dejan SANADER,d.sanader@planet-work.com,Dejan SANADER,d.sanader@planet-work.com,2016-01-12 14:17:22+01:00,-3600,2016-01-12 14:17:22+01:00,-3600,True,False,['oauth2_session.py'],['b2ff7a0ef060deaa6c6ccc4a1cb1d54bd3d9d9f3'],4,2,6,1,1.0,1.0,1.0
+fec260aa75e2b9e94a01a15d66f31f918b7475a3,"Adapts previous commit
+
+Keep on using self.post instead of requests.post",Dejan SANADER,d.sanader@planet-work.com,Dejan SANADER,d.sanader@planet-work.com,2016-01-12 15:36:57+01:00,-3600,2016-01-12 15:36:57+01:00,-3600,True,False,['oauth2_session.py'],['37b3a24be021cf630d8a45f2d32fbde72e5fc058'],4,4,8,1,,,
+244628c1c761a08d109f33688cb133c3b3caf418,Rename _refresh flag to withhold_token,Dejan SANADER,d.sanader@planet-work.com,Dejan SANADER,d.sanader@planet-work.com,2016-01-12 17:17:12+01:00,-3600,2016-01-12 17:17:12+01:00,-3600,True,False,['oauth2_session.py'],['fec260aa75e2b9e94a01a15d66f31f918b7475a3'],3,3,6,1,,,
+f0e4710231c2b781551f1444af0e3916fa51f258,Add installation instructions to docs index,Peter Inglesby,peter.inglesby@gmail.com,Peter Inglesby,peter.inglesby@gmail.com,2016-02-05 19:52:32+00:00,0,2016-02-05 19:52:32+00:00,0,True,False,['index.rst'],['25908e5570efbf9683c7341d5971c93baf244ea6'],0,8,8,1,,,
+45fc53a0438f1778e08c14a884050b183747429b,Add **request_kwargs to fetch_request_token and fetch_access_token in oauth1_session to be passed to post-method of requests.session,Christian-E,christian.e@freenet.de,Christian-E,christian.e@freenet.de,2016-02-06 20:46:04+01:00,-3600,2016-02-06 20:46:04+01:00,-3600,True,False,"['oauth1_session.py', 'test_oauth1_session.py']",['25908e5570efbf9683c7341d5971c93baf244ea6'],6,28,34,2,1.0,1.0,0.0
+8d9bb5a6a51b730567c8fd7de99499696b784d3f,minor fix to the previous commit,Christian-E,christian.e@freenet.de,Christian-E,christian.e@freenet.de,2016-02-06 20:57:13+01:00,-3600,2016-02-06 20:57:13+01:00,-3600,True,False,['oauth1_session.py'],['45fc53a0438f1778e08c14a884050b183747429b'],1,1,2,1,,,
+a394903aca619f6fd42fc2207ef932896186ae89,v0.6.1,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2016-02-19 16:03:08+00:00,0,2016-02-19 16:03:08+00:00,0,True,False,"['HISTORY.rst', '__init__.py']",['ccea63ff26d615f03d1e65e8b09c3345ed74909b'],1,12,13,2,,,
+98609d29efe2b13b40cc452fd3d239fbe2177dd3,"Date for 0.4.2 release is added to HISTORY
+
+Date for 0.4.2 is added to HISTORY for properly release tracking.",Vladimir Bolshakov,vovanbo@gmail.com,Vladimir Bolshakov,vovanbo@gmail.com,2016-03-02 14:37:49+03:00,-10800,2016-03-02 14:37:49+03:00,-10800,True,False,['HISTORY.rst'],['a394903aca619f6fd42fc2207ef932896186ae89'],2,2,4,1,,,
+9f01c891b6958d193869be9bbb66378d91db5516,Use client_id and client_secret as basic auth credentials if provided,Paul Oswald,pauloswald@gmail.com,Paul Oswald,pauloswald@gmail.com,2016-03-14 23:29:14+09:00,-32400,2016-03-14 23:29:14+09:00,-32400,True,False,['oauth2_session.py'],['f91120bc0411f7f3996f911814c55bc68967f559'],4,11,15,1,0.0,0.0,0.0
+8c9e0f3787b9a49687865ce923e348723053ffcd,Completely remove username/password basic auth logic branch,Paul Oswald,pauloswald@gmail.com,Paul Oswald,pauloswald@gmail.com,2016-03-15 22:34:38+09:00,-32400,2016-03-15 22:34:38+09:00,-32400,True,False,['oauth2_session.py'],['9f01c891b6958d193869be9bbb66378d91db5516'],10,5,15,1,1.0,1.0,1.0
+5276c168a81ef702f7fb01884aea5098583a184f,Keep the username/password basic auth logic branch,Paul Oswald,pauloswald@gmail.com,Paul Oswald,pauloswald@gmail.com,2016-03-15 23:36:22+09:00,-32400,2016-03-15 23:36:22+09:00,-32400,True,False,['oauth2_session.py'],['8c9e0f3787b9a49687865ce923e348723053ffcd'],5,11,16,1,0.0,0.0,0.0
+0339a870415a40587a60eb6b63b71adf843ec2ec,Google has changed OAuth 2.0 endpoints,Martin-Zack Mekkaoui,martin@mekkaoui.fr,Martin-Zack Mekkaoui,martin@mekkaoui.fr,2016-03-30 09:39:49+02:00,-7200,2016-03-30 09:39:49+02:00,-7200,True,False,['google.rst'],['bd5c8bfbe621e0c517417506b1f0d75b901d1991'],2,2,4,1,,,
+ed7d84bad906fce7cfd63f66cc7a1d8b86669b04,Allows tokens to be refreshed via a proxy,Chris,chris@blahdeblah.co.nz,Chris,chris@blahdeblah.co.nz,2016-05-11 15:10:26+12:00,-43200,2016-05-11 15:10:26+12:00,-43200,True,False,['oauth2_session.py'],['cd175af92e0cb6780705124c2d06dd8987c8a228'],2,2,4,1,,,
+d990e3807d546c31d8784a4080f15003a7cdadaf,"Update google.rst
+
+The url for token and authorization misplaced.",Rendong Liu,steven1227@users.noreply.github.com,Rendong Liu,steven1227@users.noreply.github.com,2016-05-13 16:31:42+09:00,-32400,2016-05-13 16:31:42+09:00,-32400,True,False,['google.rst'],['44d6576aec8cc60cf24e9540ff17098529a0e886'],2,2,4,1,,,
+6c43ce710ddc60bb0fcfe55d78a166564e90a053,Allow explicit bypass of basic auth logic branch,Austin Pua,austinpua@novostormtech.com,Austin Pua,austinpua@novostormtech.com,2016-05-17 17:18:08+08:00,-28800,2016-05-17 17:18:08+08:00,-28800,True,False,['oauth2_session.py'],['29fcbe6873c612e5e3b9ec12b2ceee8d487fd9ac'],1,1,2,1,,,
+05e5e1fd2413c14d14a5556a0856bf896c6cd3ca,Allow fetch_token to run through a proxy,Austin Pua,austinpua@novostormtech.com,Austin Pua,austinpua@novostormtech.com,2016-05-17 17:20:27+08:00,-28800,2016-05-17 17:20:27+08:00,-28800,True,False,['oauth2_session.py'],['6c43ce710ddc60bb0fcfe55d78a166564e90a053'],3,3,6,1,,,
+c93a6365aca6fe7b88a2b8082ed11de0c1c69d62,Added Outlook Calender API example,madhavij,mjouhari411@gmail.com,madhavij,mjouhari411@gmail.com,2016-05-18 18:41:30+05:18,-19080,2016-05-18 18:41:30+05:18,-19080,True,False,['outlook.rst'],['cd175af92e0cb6780705124c2d06dd8987c8a228'],0,37,37,1,,,
+795eeb86b28cbcb92b388f71721b4f455b99a2c1,Mentioned file to example.rst,madhavij,mjouhari411@gmail.com,madhavij,mjouhari411@gmail.com,2016-05-18 22:18:31+05:18,-19080,2016-05-18 22:18:31+05:18,-19080,True,False,['examples.rst'],['c93a6365aca6fe7b88a2b8082ed11de0c1c69d62'],0,1,1,1,,,
+aa8f8147592195e4d77f6f5882f7933ad40e7fc6,"typo in error message
+
+authorization_code vs authorization_response",FoxMaSk,foxmask@users.noreply.github.com,FoxMaSk,foxmask@users.noreply.github.com,2016-06-07 21:31:08+02:00,-7200,2016-06-07 21:31:08+02:00,-7200,True,False,['oauth2_session.py'],['4a0d425ac15a3ffd5ce724a9921c40a66fa4882d'],1,1,2,1,,,
+706b5280f31cb60a0b09b2038b755bddf2ff805a,"add license title
+
+It's not strictly required, but it's useful metadata, and part of the recommended license template text (see http://choosealicense.com/licenses/isc/ and https://opensource.org/licenses/isc-license)",Waldir Pimenta,waldyrious@gmail.com,GitHub,noreply@github.com,2016-07-01 08:14:11+01:00,-3600,2016-07-01 08:14:11+01:00,-3600,True,False,['LICENSE'],['1f498e6a52e14837e89bfa240153c676e48e0d0b'],0,2,2,1,,,
+ed091d296b01550ce8e63bf5663b766a3587083d,v0.6.2,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2016-07-12 17:41:41+01:00,-3600,2016-07-12 17:41:41+01:00,-3600,True,False,"['HISTORY.rst', '__init__.py']",['90ef35112d147b11357a80c6c249e4c3b35c955e'],1,10,11,2,,,
+1f864ec061c0d9f889c2c1b43d819cad863fd5c4,"Update google.rst
+
+updated Google link, API cosole is no longer exist",filinpavel,atmega644@gmail.com,GitHub,noreply@github.com,2016-07-23 13:07:21+07:00,-25200,2016-07-23 13:07:21+07:00,-25200,True,False,['google.rst'],['ed091d296b01550ce8e63bf5663b766a3587083d'],2,2,4,1,,,
+33483808497c8a993dfd388a1a4b11849b487318,"Allow OAuth2 session request() to take client_id and client_secret
+
+Because when doing automatic token refresh, we need a client_id and
+client_secret in order to do HTTP Basic auth.",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2016-08-27 16:29:13-04:00,14400,2016-08-27 17:13:20-04:00,14400,True,False,"['oauth2_session.py', 'test_oauth2_session.py']",['a116d06dbb69ea5eb4fbe46530af27b12ad6d82c'],2,29,31,2,0.44,0.72,0.72
+e36ed6e24f51e56592a466114bfc667d3d614afb,Add requests-mock to tox dependencies.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2016-09-22 12:49:47+01:00,-3600,2016-09-22 12:49:47+01:00,-3600,True,False,['tox.ini'],['e85617a08396215267cee9d5977eac4a6070a29a'],0,2,2,1,,,
+619ed2d77f269196d5af5be82e85ae5721ddc4a6,v0.7.0,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2016-09-22 12:59:52+01:00,-3600,2016-09-22 12:59:52+01:00,-3600,True,False,"['HISTORY.rst', '__init__.py']",['5bb40f82bc8508c6ebda9cfe39105e81d1110280'],1,8,9,2,,,
+9159b5787c09acd4235da09528e84fd90eed3a37,Strips new lines in fetch_token  response body,Tommaso Armstrong,tomm@tomma.so,GitHub,noreply@github.com,2016-10-14 09:51:16+11:00,-39600,2016-10-14 09:51:16+11:00,-39600,True,False,['oauth1_session.py'],['244e83557682951dff0adf29edecd2fa0374586d'],1,1,2,1,,,
+1402e5341e2a1a42773c5a18fd71ae74b96b2d66,Prefer user-supplied auth credentials.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2016-10-14 11:17:30+01:00,-3600,2016-10-14 11:17:30+01:00,-3600,True,False,['oauth2_session.py'],['40a0754e7b38286093bb0f96d7dd659048e02907'],2,4,6,1,,,
+cfc5af9c0d860a2928590da20641d9b22f55bc4b,add a fitbit compliance fix,Brad Pitcher,bradpitcher@gmail.com,Brad Pitcher,bradpitcher@gmail.com,2017-01-24 14:21:28-08:00,28800,2017-01-24 14:21:28-08:00,28800,True,False,"['__init__.py', 'fitbit.py', 'test_compliance_fixes.py']",['476ba75b647d2fb795c08bd97bdac7f38f7daf70'],0,61,61,3,1.0,1.0,1.0
+3b37810aeb7c4d24da1657a5f71d6e693a44162d,test successful fitbit auth calls as well,Brad Pitcher,bradpitcher@gmail.com,Brad Pitcher,bradpitcher@gmail.com,2017-01-24 14:44:43-08:00,28800,2017-01-24 14:44:43-08:00,28800,True,False,['test_compliance_fixes.py'],['cfc5af9c0d860a2928590da20641d9b22f55bc4b'],4,29,33,1,0.0,1.0,1.0
+e6286c671e343877796a3658c0d82d98b9552500,v0.8.0,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2017-02-14 15:15:53+00:00,0,2017-02-14 15:15:53+00:00,0,True,False,"['HISTORY.rst', '__init__.py']",['e1d851d3ae6cdab63bd7fc8af6112fc904c9dca9'],1,12,13,2,,,
+5fe452c49e8345894233fbe6141fd8eca7b5106a,"Make this compatible with plentymarkets
+
+Plentymarkets uses CamelCase for token responses
+
+See here: https://developers.plentymarkets.com/rest-doc/introduction",Pierre Geier,pierre@neocomy.net,Pierre Geier,pierre@neocomy.net,2017-02-16 14:39:22+01:00,-3600,2017-02-16 14:39:22+01:00,-3600,True,False,"['__init__.py', 'plentymarkets.py', 'test_compliance_fixes.py']",['e6286c671e343877796a3658c0d82d98b9552500'],0,75,75,3,0.3269230769230769,0.6538461538461539,1.0
+b0a98d7230d612c4e4b03f251b9a7a67436038bb,"token dictionary remains untouched
+
+token dict in plentymarkets.py remains untouched
+fixed tests for the plentymarkets compliance_fixes",Pierre Geier,pierre@neocomy.net,Pierre Geier,pierre@neocomy.net,2017-02-16 15:03:10+01:00,-3600,2017-02-16 15:03:46+01:00,-3600,True,False,"['plentymarkets.py', 'test_compliance_fixes.py']",['5fe452c49e8345894233fbe6141fd8eca7b5106a'],8,8,16,2,0.0,0.0,0.0
+32e43d7c331883327f814939febbcbfaa7731bb4,"Plenty compliance fix: cleanup
+
+More generic approch to convert the Token to snake case.",Pierre Geier,pierre@neocomy.net,Pierre Geier,pierre@neocomy.net,2017-02-16 15:16:31+01:00,-3600,2017-02-16 15:16:31+01:00,-3600,True,False,['plentymarkets.py'],['b0a98d7230d612c4e4b03f251b9a7a67436038bb'],14,6,20,1,1.0,1.0,0.0
+bb18ec0b656d87e23a0a7b13e7e089c42878332c,Typo in compliance fixes for plentymarkets fixed,Pierre Geier,pierre@neocomy.net,Pierre Geier,pierre@neocomy.net,2017-02-16 16:20:35+01:00,-3600,2017-02-16 16:20:35+01:00,-3600,True,False,['plentymarkets.py'],['32e43d7c331883327f814939febbcbfaa7731bb4'],2,1,3,1,,,
+18498849f42dcf0e745454a73865a2d1ff6cb7f4,"code cleanup in compliance_fixes/__init__.py
+
+Removed double-space and added newline",Pierre Geier,pierre@neocomy.net,Pierre Geier,pierre@neocomy.net,2017-02-16 16:27:23+01:00,-3600,2017-02-16 16:27:23+01:00,-3600,True,False,['__init__.py'],['bb18ec0b656d87e23a0a7b13e7e089c42878332c'],1,1,2,1,,,
+04960e3f2d36ae374f21837ee423dba15ee62ec3,"Added header only auth documentation
+
+Added documentation for header only auth support. This support WSO2 API gateways that will throw 401 if client_id and client_secret are passed in the body POST response.",Brock Palen,brockp@umich.edu,GitHub,noreply@github.com,2017-03-11 11:08:43-05:00,18000,2017-03-11 11:08:43-05:00,18000,True,False,['oauth2_workflow.rst'],['a61814582cd993d5febeb932d0ac0bea51e4fbf1'],0,10,10,1,,,
+5fc1f4a3fe33f7e89b6953303e22b028ed1da2d1,"wso2 BackendApplicationClient example
+
+Example with WSO2 with header only HTTPBasicAuth",Brock Palen,brockp@umich.edu,GitHub,noreply@github.com,2017-03-11 11:35:43-05:00,18000,2017-03-11 11:35:43-05:00,18000,True,False,['wso2.rst'],['04960e3f2d36ae374f21837ee423dba15ee62ec3'],0,31,31,1,,,
+583ac07a7fdb1fe21460c94cae240702844e0b3c,Minor formatting changes.,Cory Benfield,lukasaoz@gmail.com,GitHub,noreply@github.com,2017-03-13 10:06:05+00:00,0,2017-03-13 10:06:05+00:00,0,True,False,['oauth2_workflow.rst'],['5fc1f4a3fe33f7e89b6953303e22b028ed1da2d1'],18,18,36,1,,,
+f15598fb4800974432b5382c99f49d3e1aeaa985,Added example for making Fitbit API calls using the Mobile Application Flow,Matthew Mascioni,matthew.mascioni@mail.utoronto.ca,Matthew Mascioni,matthew.mascioni@mail.utoronto.ca,2017-04-08 00:33:58-04:00,14400,2017-04-08 00:39:27-04:00,14400,True,False,"['examples.rst', 'fitbit.rst']",['c94f2be8ebb4d8453e39676c798bac6fcf2e0e64'],0,41,41,2,,,
+9ded5b8673e373bc4e47e095f6527509ac80879b,Document and add testing for support for Python 3.6,Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2017-04-16 17:20:48-07:00,25200,2017-04-16 17:38:32-07:00,25200,True,False,"['.travis.yml', 'setup.py', 'tox.ini']",['8f5f42735019c108c5f91703f75a9423c1bbb8e4'],1,5,6,3,,,
+cee229f90ec0c0b2cc318d575c8c25fe72452e6d,"Fix bytes/str mixups
+
+Fixes warnigns when running tests with all warnings on:
+
+$ python -b -Wall -m nose
+
+- DeprecationWarning: Please use assertEqual instead.
+- BytesWarning: Comparison between bytes and string",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2017-04-16 17:51:19-07:00,25200,2017-04-16 19:26:23-07:00,25200,True,False,"['test_core.py', 'test_oauth2_session.py']",['47748f6fee8f41ca7b28c950cf18b12001c7fca7'],25,7,32,2,0.0,0.0,0.0
+159b35c99c591664d381ea9949bad06ad88fe9d1,Remove unused alias,Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2017-04-16 20:32:35-07:00,25200,2017-04-16 20:32:35-07:00,25200,True,False,['oauth1_session.py'],['6d341c1538d4fd40125ec68d157393dc68e41fd1'],4,0,4,1,,,
+8c6db4129aea817a4ef760311b2a62c7c0ea1b78,Remove unused empty list as `set()` creates an empty set just fine,Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2017-04-16 21:08:45-07:00,25200,2017-04-16 21:08:45-07:00,25200,True,False,['oauth2_session.py'],['6d341c1538d4fd40125ec68d157393dc68e41fd1'],3,3,6,1,,,
+84ad78ca24e323669a6ceea989390fd7ed9a11bf,"Drop support for Python 2.6
+
+I would humbly like to suggest requests-oauthlib drop support for Python
+2.6.
+
+The last release of Python 2.6 was 2013-10-29, over 3 years ago. It is
+no longer receiving security fixes.
+
+https://www.python.org/dev/peps/pep-0361/
+
+The pip project itself has recently dropped support for 2.6. Their
+numbers estimate that Python 2.6 accounts for ~2% of their downloads.
+
+https://github.com/pypa/pip/pull/4343
+
+For projects that still use Python 2.6, they can continue to pip install
+an older version.
+
+I've tried my best to remove as much 2.6 specific code as I can,
+including the 'Programming Language :: Python :: 2.6' trove classifier
+from setup.py. I've also removed Travis CI testing, which should result
+in faster testing and fewer wasted resources.
+
+Code removed:
+
+- setup.py cleanups due to fewer version complications
+- Testing configuration
+- Logging workaround for missing NullHandler
+- Removed unittest2 dependency and monkey patching
+- StringIO import errors
+
+Thanks for considering.",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2017-04-16 21:03:21-07:00,25200,2017-04-16 21:19:23-07:00,25200,True,False,"['.travis.yml', 'HISTORY.rst', '__init__.py', 'setup.py', 'test_compliance_fixes.py', 'test_core.py', 'test_oauth1_session.py', 'test_oauth2_session.py', 'tox.ini']",['6d341c1538d4fd40125ec68d157393dc68e41fd1'],66,20,86,9,0.0,0.0,0.75
+a31b760798f1bd326dd2c95ab44d943adfca80d9,add documentation for MobileApplicationClient Flow,Pierre CHAISY,pierre.chaisy@milibris.com,Pierre CHAISY,pierre.chaisy@milibris.com,2017-04-26 16:39:48+02:00,-7200,2017-04-26 16:39:48+02:00,-7200,True,False,['oauth2_workflow.rst'],['c7862a0feaa4032d702b32bfb1aa82545a780aa4'],1,25,26,1,,,
+6c28b229c6e56c4c58ed8a3c6a531ab2fd02fdaf,enhancement,Pierre CHAISY,pierre.chaisy@gmail.com,GitHub,noreply@github.com,2017-04-26 22:53:06+02:00,-7200,2017-04-26 22:53:06+02:00,-7200,True,False,['oauth2_workflow.rst'],['2849799cb48b21e9bb395884f6d2843c386a9c32'],1,1,2,1,,,
+13a28a97184d358076af957489e6154e0211301a,use prompt instead of approval_prompt in docs,Ali Vakilzade,ali@vakilzade.com,Ali Vakilzade,ali@vakilzade.com,2017-08-06 21:50:22+04:18,-15480,2017-08-06 21:50:22+04:18,-15480,True,False,"['google.rst', 'real_world_example_with_refresh.rst', 'oauth2_workflow.rst']",['f98e7bd8596ca9e17053728fc9eb9eae254c0d27'],9,9,18,3,,,
+c80c78b212a32e9a3e2ae7d9d174b2b51de48820,"Correct `i.e.` to `e.g.`
+
+Basically, `i.e.` means ""in other words"", and `e.g.` means ""for example"".  Since Google and Twitter are not the only possible options in the two cases, ""for example"" is the correct usage.",Chris Petersen,geek@ex-nerd.com,GitHub,noreply@github.com,2017-09-20 21:30:13-07:00,25200,2017-09-20 21:30:13-07:00,25200,True,False,['README.rst'],['f96f8e1c0d20dce6dc41270dd13b1d8058b025ff'],2,2,4,1,,,
+127328403cdb9b8274b86020f202eed798e57d71,"Include license file in the generated wheel package
+
+The wheel package format supports including the license file. This is
+done using the [metadata] section in the setup.cfg file. For additional
+information on this feature, see:
+
+https://wheel.readthedocs.io/en/stable/index.html#including-the-license-in-the-generated-wheel-file",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2017-10-21 12:48:40-07:00,25200,2017-10-21 12:48:40-07:00,25200,True,False,['setup.cfg'],['53e7a367eb811fc2f719b7a8fb15585c6f773e8a'],0,3,3,1,,,
+76614f7122f413f49d1e3171e865a8a24c7e8646,"Clean up ResourceWarning in setup.py
+
+Always explicitly close files. Use a context manager to make this
+easier. Fixes ResourceWarning when Python has warnings enabled.",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2017-10-21 12:51:20-07:00,25200,2017-10-21 12:51:20-07:00,25200,True,False,['setup.py'],['53e7a367eb811fc2f719b7a8fb15585c6f773e8a'],2,7,9,1,1.0,1.0,1.0
+df2691a479fbbc39e112d22f9fcc87cac0741f9a,Fix docstring typo,Andrey Kislyuk,kislyuk@gmail.com,GitHub,noreply@github.com,2017-10-23 10:26:11-07:00,25200,2017-10-23 10:26:11-07:00,25200,True,False,['oauth2_session.py'],['a0938dc79412575d61e02aa667e4046a4e4d400c'],1,1,2,1,,,
+88873fca308aab53b80bc92eb897c0066875b24c,"Prefer readthedocs.io instead of readthedocs.org for doc links
+
+Read the Docs moved hosting to readthedocs.io instead of readthedocs.org. Fix
+all links in the project.
+
+For additional details, see:
+
+https://blog.readthedocs.com/securing-subdomains/
+
+> Starting today, Read the Docs will start hosting projects from subdomains on
+> the domain readthedocs.io, instead of on readthedocs.org. This change
+> addresses some security concerns around site cookies while hosting user
+> generated data on the same domain as our dashboard.
+
+Update badge link per the documentation:
+
+https://read-the-docs.readthedocs.io/en/latest/badges.html
+
+> If you leave the version argument off, it will default to your latest
+> version. This is probably best to include in your README, since it
+> will stay up to date with your Read the Docs project:",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2018-01-07 09:20:17-08:00,28800,2018-01-07 09:20:58-08:00,28800,True,False,"['README.rst', 'conf.py']",['c472e6bf0468f1bd52b70a64e9aac92bee41c491'],7,7,14,2,,,
+d516fa259f90dd7116f46160c08489b369a44a42,update oauthlib debug envvar with new variable,Renan Traba,hellupline@gmail.com,Renan Traba,hellupline@gmail.com,2018-01-12 16:59:44-02:00,7200,2018-01-12 16:59:44-02:00,7200,True,False,"['real_world_example.rst', 'real_world_example_with_refresh.rst']",['c472e6bf0468f1bd52b70a64e9aac92bee41c491'],2,2,4,2,,,
+ce70039b4a923bbb2f08806762e628f4eb0a10fb,"Remove support for EOL Python 3.3
+
+Python 3.3 is end of life. It is no longer receiving bug fixes,
+including for security issues. It has been EOL since 2017-09-29. For
+additional information, see:
+
+https://devguide.python.org/#status-of-python-branches
+
+Use setuptools python_requires argument to help pip decide what version
+of the library to install.
+
+https://packaging.python.org/tutorials/distributing-packages/#python-requires
+
+> If your project only runs on certain Python versions, setting the
+> python_requires argument to the appropriate PEP 440 version specifier
+> string will prevent pip from installing the project on other Python
+> versions.
+
+https://setuptools.readthedocs.io/en/latest/setuptools.html#new-and-changed-setup-keywords
+
+> python_requires
+>
+> A string corresponding to a version specifier (as defined in PEP 440)
+> for the Python version, used to specify the Requires-Python defined in
+> PEP 345.",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2018-01-13 16:10:00-08:00,28800,2018-01-13 16:10:37-08:00,28800,True,False,"['.travis.yml', 'setup.py', 'tox.ini']",['c472e6bf0468f1bd52b70a64e9aac92bee41c491'],3,2,5,3,,,
+a8a646f9c8389115e1fa47a4923a246794f1ba8b,OAuth1Session token property,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2018-04-11 00:39:17+02:00,-7200,2018-04-19 00:18:00+02:00,-7200,True,False,"['oauth1_session.py', 'test_oauth1_session.py']",['71f268a7a99ac8d67633f2e6950dbe2ba03bec52'],0,58,58,2,0.6382978723404256,1.0,0.9787234042553191
+48e0367d78f1f95389bad94d969f980572fa6a99,Update HISTORY.rst,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2018-05-16 18:59:52+02:00,-7200,2018-05-16 18:59:52+02:00,-7200,True,False,['HISTORY.rst'],['9189e027365921ede7ab5322ef9e1ebd6a5562ab'],1,6,7,1,,,
+0af697cb7e2a9e6c830fe78c7c3a70eca636ea95,Follow oauthlib update.,Fulong Sun,sfl@neusoft.edu.cn,GitHub,noreply@github.com,2018-05-30 10:46:51+08:00,-28800,2018-05-30 10:46:51+08:00,-28800,True,False,['oauth2_session.py'],['b3a9c696290d9919f75407711b9a0d3c6695b24e'],1,1,2,1,,,
+058780ce055a47188fdb94e757d978bb03faf565,Follow oauthlib update.,Fulong Sun,sfl@neusoft.edu.cn,GitHub,noreply@github.com,2018-05-30 10:58:22+08:00,-28800,2018-05-30 10:58:22+08:00,-28800,True,False,['requirements.txt'],['0af697cb7e2a9e6c830fe78c7c3a70eca636ea95'],1,1,2,1,,,
+91298c3a2fc7b461862b4273da2f69d43eeb2346,v1.0.0,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2018-06-04 11:11:10+02:00,-7200,2018-06-04 11:11:10+02:00,-7200,True,False,"['HISTORY.rst', '__init__.py']",['b3a9c696290d9919f75407711b9a0d3c6695b24e'],1,6,7,2,,,
+c1a97f3a790e3afb42aaa02cffa0a01e0715cfee,Follow oauthlib update.,Fulong Sun,sfl@neusoft.edu.cn,GitHub,noreply@github.com,2018-07-13 20:31:52+08:00,-28800,2018-07-13 20:31:52+08:00,-28800,True,False,['setup.py'],['058780ce055a47188fdb94e757d978bb03faf565'],2,2,4,1,,,
+d61b23d8a8567ff371e6d19debfa65114636bd85,'Calender' -> 'Calendar' typo,mbanerjeepalmer,31225563+mbanerjeepalmer@users.noreply.github.com,GitHub,noreply@github.com,2018-07-17 23:39:58+01:00,-3600,2018-07-17 23:39:58+01:00,-3600,True,False,['outlook.rst'],['c61c6fbe19908df5b8bf5d8caacde3448f2e0c49'],2,2,4,1,,,
+f878d2bac90684d822ad1e868dbb9eb7b7475b72,classifiers should be an array,Thilo Maurer,tmaurer@de.ibm.com,Thilo Maurer,tmaurer@de.ibm.com,2018-07-25 17:14:16+02:00,-7200,2018-07-25 17:14:16+02:00,-7200,True,False,['setup.py'],['d57267802da2c2360c38e919dba3836f84da84cc'],2,2,4,1,,,
+1b9fe1a630eb1c91bf12fd70aa2e10ca74ffc0b6,Pin OAuthlib to avoid breakage with 3.0.0 release.,Pieter Ennes,pieter@authentiq.com,Pieter Ennes,pieter@authentiq.com,2018-12-03 16:57:06+00:00,0,2018-12-03 17:09:02+00:00,0,True,False,"['requirements.txt', 'setup.py']",['f8e741dc6a87eecf94e0948b66fe142a79c56fb9'],3,3,6,2,,,
+31b909ca8ceca8d5ce0cda6ab24e843d967734e9,"Replace bare 'except:' with 'except Exception:'
+
+Catching all exceptions is generally considered a bad practice under
+most circumstances as it will also catch KeyboardInterrupt and
+SystemExit. These special cases should be raised to the interpreter to
+allow the Python process to exit.
+
+This fix complies with pycodestyle's error code E722:
+
+https://pycodestyle.readthedocs.io/en/latest/intro.html#error-codes
+
+> do not use bare except, specify exception instead",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2018-12-26 13:30:02-05:00,18000,2018-12-26 13:30:02-05:00,18000,True,False,['oauth1_session.py'],['f8e741dc6a87eecf94e0948b66fe142a79c56fb9'],1,1,2,1,,,
+62610bf3249f8f8b880d16420c1b646acf0edc9e,"Add Travis/tox CI testing for Python 3 and pypy
+
+As supported platforms, they should be tested regularly by CI.",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2018-12-26 13:36:24-05:00,18000,2018-12-26 13:37:24-05:00,18000,True,False,"['.travis.yml', 'setup.py', 'tox.ini']",['f8e741dc6a87eecf94e0948b66fe142a79c56fb9'],1,8,9,3,,,
+2dd4d22b1834a52ddac0221fd1fe6c66163f5600,"Remove dependency of unmaintained nose
+
+The nose project has ceased development. The last commit is from Mar 3,
+2016. From their docs page:
+
+https://nose.readthedocs.io/
+
+> Note to Users
+>
+> Nose has been in maintenance mode for the past several years and will
+> likely cease without a new person/team to take over maintainership.
+> New projects should consider using Nose2, py.test, or just plain
+> unittest/unittest2.
+
+Simplify tests by using the stdlib unittest. One fewer dependency.",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2018-12-26 13:46:25-05:00,18000,2018-12-26 13:46:25-05:00,18000,True,False,"['.gitignore', '.travis.yml', 'tox.ini']",['f8e741dc6a87eecf94e0948b66fe142a79c56fb9'],4,2,6,3,,,
+9d571a8205772173633b991119bb1da76d35b10b,"Fix invalid escape sequence in OAuth1Session docstring
+
+Fixes error of the form:
+
+  requests-oauthlib/requests_oauthlib/oauth1_session.py:282: DeprecationWarning: invalid escape sequence \*
+
+These will deprecation warnings will become an exception in a future
+version of Python.",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2018-12-26 13:52:48-05:00,18000,2018-12-26 13:56:45-05:00,18000,True,False,['oauth1_session.py'],['f8e741dc6a87eecf94e0948b66fe142a79c56fb9'],1,1,2,1,0.0,1.0,0.0
+e7e8edaddf4d6ef93f9c54b053775dda809425ca,"Trim trailing white space throughout the project
+
+Many editors clean up trailing white space on save. By removing it all
+in one go, it helps keep future diffs cleaner by avoiding spurious white
+space changes on unrelated lines.",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2018-12-26 14:00:52-05:00,18000,2018-12-26 14:00:52-05:00,18000,True,False,"['fitbit.rst', 'tumblr.rst', 'wso2.rst', 'index.rst']",['f8e741dc6a87eecf94e0948b66fe142a79c56fb9'],8,6,14,4,,,
+554cb2859796c05938a378cbbac74fdb9d802697,"Remove unused/unlinked docs (#349)
+
+The doc articles mediawiki.rst an wso2.rst aren't linked or referenced
+anywhere and so are not accessible through normal doc interactions.
+Fixes the Sphinx warnings:
+
+  requests-oauthlib/docs/examples/mediawiki.rst: WARNING: document isn't included in any toctree
+  requests-oauthlib/docs/examples/wso2.rst: WARNING: document isn't included in any toctree",Jon Dufresne,jon.dufresne@gmail.com,David Baumgold,david@davidbaumgold.com,2018-12-27 08:53:32-05:00,18000,2018-12-27 14:53:32+01:00,-3600,True,False,"['mediawiki.rst', 'wso2.rst']",['4290a9b508997827a77d4438e2585b1c9097c65f'],139,0,139,2,,,
+b4ec4d5192ce9cec93186953b3741217e0a7165b,"Drop redundant 'requests' in extras_require (#350)
+
+Already included in install_requires, which are always included in the
+requirements. There is no need to list it a second time.",Jon Dufresne,jon.dufresne@gmail.com,David Baumgold,david@davidbaumgold.com,2018-12-27 08:54:12-05:00,18000,2018-12-27 14:54:12+01:00,-3600,True,False,['setup.py'],['554cb2859796c05938a378cbbac74fdb9d802697'],1,1,2,1,,,
+47be072fac995fb26d416442c258e8e043fa558e,Remove unused import 'sys' from test_core.py (#351),Jon Dufresne,jon.dufresne@gmail.com,David Baumgold,david@davidbaumgold.com,2018-12-27 08:54:39-05:00,18000,2018-12-27 14:54:39+01:00,-3600,True,False,['test_core.py'],['b4ec4d5192ce9cec93186953b3741217e0a7165b'],1,0,1,1,,,
+0a3afdb71756ef9ef8ce933edd0c196ea475dc98,"Remove unnecessary alias 'bytes_type' (#352)
+
+Both Python 2 & Python 3 have the type `bytes`. On Python 2, it is an
+alias of str, same as what was previously defined. Makes the code
+slightly more forward compatible with Python 3 syntax.",Jon Dufresne,jon.dufresne@gmail.com,David Baumgold,david@davidbaumgold.com,2018-12-27 10:47:52-05:00,18000,2018-12-27 16:47:52+01:00,-3600,True,False,['test_oauth1_session.py'],['47be072fac995fb26d416442c258e8e043fa558e'],4,2,6,1,,,
+364762ebd1ceceaa63c298311cbd25a3db204680,Mark changes in HISTORY.rst,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2018-12-27 16:58:00+01:00,-3600,2018-12-27 16:58:00+01:00,-3600,True,False,['HISTORY.rst'],['0a3afdb71756ef9ef8ce933edd0c196ea475dc98'],1,4,5,1,,,
+5aa60bf074c8eb30aea42da26b7ebbf97a72053a,"Remove testing workarounds for Python 2.6 (#353)
+
+Python 2.6 has not been supported since
+84ad78ca24e323669a6ceea989390fd7ed9a11bf in the v1.0.0 release.",Jon Dufresne,jon.dufresne@gmail.com,David Baumgold,david@davidbaumgold.com,2018-12-28 08:38:55-05:00,18000,2018-12-28 14:38:55+01:00,-3600,True,False,"['test_oauth1_session.py', 'test_oauth2_session.py']",['364762ebd1ceceaa63c298311cbd25a3db204680'],25,5,30,2,1.0,0.0,0.0
+7435f6f63f452909585a7096ebcbd1d701b3b0bd,"Use more specific asserts
+
+More specific asserts generally result in more informative error
+messages when tests fail. This practice is recommended by the unittest
+docs:
+
+https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertTrue
+
+> This method should also be avoided when more specific methods are
+> available (e.g. assertEqual(a, b) instead of assertTrue(a == b)),
+> because they provide a better error message in case of failure.
+
+Replace assertTrue(isinstance(...)) with assertIsInstance.
+
+Additionally, replace truthiness checks with precise True/False checks.
+This practice is also recommended by the unittest docs:
+
+> assertTrue
+>
+> Note that this is equivalent to bool(expr) is True and not to expr is
+> True (use assertIs(expr, True) for the latter).
+
+Replace assertTrue(...) with assertIs(..., True).",Jon Dufresne,jon.dufresne@gmail.com,Jon Dufresne,jon.dufresne@gmail.com,2018-12-28 08:07:55-05:00,18000,2018-12-29 07:57:59-05:00,18000,True,False,"['test_core.py', 'test_oauth1_session.py', 'test_oauth2_session.py']",['5aa60bf074c8eb30aea42da26b7ebbf97a72053a'],24,24,48,3,,,
+bbc2e13dd490bad611a4a6539c9518a0b48630d2,"Correct dependency for 'rsa' extra (#355)
+
+The RSA tests only pass if 'oauthlib[signedtoken]' is installed.
+'oauthlib[rsa]' is not enough. This brings the dependency in line with
+the requirements.txt file. Skip the test if pyjwt is not installed to
+avoid a test failure due to an ImportError.",Jon Dufresne,jon.dufresne@gmail.com,David Baumgold,david@davidbaumgold.com,2019-01-09 07:02:41-08:00,28800,2019-01-09 16:02:41+01:00,-3600,True,False,"['setup.py', 'test_oauth1_session.py']",['7435f6f63f452909585a7096ebcbd1d701b3b0bd'],1,10,11,2,0.0,1.0,0.0
+4784955f033f078b8e4861bda710a86947594f29,v1.1.0,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-01-09 16:14:04+01:00,-3600,2019-01-09 16:14:04+01:00,-3600,True,False,"['HISTORY.rst', '__init__.py']",['bbc2e13dd490bad611a4a6539c9518a0b48630d2'],1,6,7,2,,,
+4fb0db5d7f388bb05e3252a854cf8c83d57c27d0,Fallback on unittest.mock,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-01-11 15:08:43+01:00,-3600,2019-01-11 15:08:43+01:00,-3600,True,False,"['test_core.py', 'test_oauth1_session.py', 'test_oauth2_session.py']",['4784955f033f078b8e4861bda710a86947594f29'],3,13,16,3,,,
+e859dbd15b842245f0081194d42d5f62972fe614,Avoid requests automatic auth (#279),Ryan Hiebert,ryan@ryanhiebert.com,David Baumgold,david@davidbaumgold.com,2019-01-13 08:03:23-06:00,21600,2019-01-13 15:03:23+01:00,-3600,True,False,"['HISTORY.rst', 'oauth2_session.py', 'test_oauth2_session.py']",['4fb0db5d7f388bb05e3252a854cf8c83d57c27d0'],1,41,42,3,0.9444444444444444,1.0,0.9444444444444444
+0adb58e3944642a2817d8a98ecfeb42239ee34fc,Compatibility with oauthlib 3.0.0,jonathan vanasco,jonathan@2xlp.com,David Baumgold,david@davidbaumgold.com,2018-09-14 19:06:38-04:00,14400,2019-01-14 19:18:34+01:00,-3600,True,False,"['HISTORY.rst', 'oauth2_session.py', 'test_compliance_fixes.py', 'test_oauth2_session.py']",['e859dbd15b842245f0081194d42d5f62972fe614'],76,262,338,4,0.0,0.8494623655913979,0.8494623655913979
+a1ed2debeddd1f9b21d486b44ebeca74609fce67,Fix str/bytes problem,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-01-11 15:25:21+01:00,-3600,2019-01-14 19:18:34+01:00,-3600,True,False,['test_oauth2_session.py'],['0adb58e3944642a2817d8a98ecfeb42239ee34fc'],2,6,8,1,1.0,1.0,1.0
+41706b5543c67cc9632df2af9d4bf48e2fbf3c79,Adjust dependency version specifier,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-01-11 15:21:25+01:00,-3600,2019-01-14 19:18:34+01:00,-3600,True,False,"['requirements.txt', 'setup.py']",['a1ed2debeddd1f9b21d486b44ebeca74609fce67'],3,3,6,2,,,
+53481e3ab661eff2b22c7f3928f5936e5220291b,Add note to HISTORY indicating oauthlib 3.0.0,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-01-11 15:30:04+01:00,-3600,2019-01-14 19:19:20+01:00,-3600,True,False,['HISTORY.rst'],['41706b5543c67cc9632df2af9d4bf48e2fbf3c79'],1,3,4,1,,,
+1495328dea94b38e3675476cb889e2e3a038355b,v1.2.0,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-01-14 19:50:31+01:00,-3600,2019-01-14 19:50:31+01:00,-3600,True,False,"['HISTORY.rst', '__init__.py']",['b3c227a88df5b904ff257b7e39200107ff96ee44'],1,6,7,2,,,
+4ab3e59b7e9fe339c96042107c3f59bdf1afc46a,add instagram compliance fix,Adam Goldschmidt,adamgold7@gmail.com,Adam Goldschmidt,adamgold7@gmail.com,2019-01-27 13:16:07+02:00,-7200,2019-01-27 13:16:07+02:00,-7200,True,False,['instagram.py'],['1495328dea94b38e3675476cb889e2e3a038355b'],0,30,30,1,1.0,1.0,0.3333333333333333
+9e60cf701380151a2515ef1be09eab4fd4f291b7,add tests,Adam Goldschmidt,adamgold7@gmail.com,Adam Goldschmidt,adamgold7@gmail.com,2019-01-30 17:43:52+02:00,-7200,2019-01-30 17:43:52+02:00,-7200,True,False,"['__init__.py', 'instagram.py', 'test_compliance_fixes.py']",['4ab3e59b7e9fe339c96042107c3f59bdf1afc46a'],6,57,63,3,0.38095238095238093,1.0,1.0
+91c27e9d125d6375526fad6e3e8d3aa63c874403,Put Instagram compliance fix in HISTORY,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-02-22 10:51:10+01:00,-3600,2019-02-22 10:51:10+01:00,-3600,True,False,['HISTORY.rst'],['3d8427145cf1c24783bb5d7e7f5bf1b5c0209be6'],1,1,2,1,,,
+bab11cfc1050010696fb226dcdcc4e4091ffe8e8,"Require code formatting with `black`
+
+https://github.com/ambv/black",David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-02-25 16:48:38+01:00,-3600,2019-02-25 16:48:40+01:00,-3600,True,False,['.travis.yml'],['91c27e9d125d6375526fad6e3e8d3aa63c874403'],0,8,8,1,,,
+58bb5b4cde00d42eb10513e979c9fdce24ae9952,Reformatted with `black`,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-02-25 16:52:43+01:00,-3600,2019-02-25 16:52:45+01:00,-3600,True,False,"['conf.py', '__init__.py', 'douban.py', 'facebook.py', 'fitbit.py', 'instagram.py', 'linkedin.py', 'mailchimp.py', 'plentymarkets.py', 'slack.py', 'weibo.py', 'oauth1_auth.py', 'oauth1_session.py', 'oauth2_auth.py', 'oauth2_session.py', 'setup.py', 'test_compliance_fixes.py', 'test_core.py', 'test_oauth1_session.py', 'test_oauth2_auth.py', 'test_oauth2_session.py']",['bab11cfc1050010696fb226dcdcc4e4091ffe8e8'],778,1016,1794,21,0.0,0.6351931330472103,0.3648068669527897
+800976faab3b827a42fa1cb80f13fcc03961d2c9,Add force_querystring argument to fetch_token() method,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-02-25 17:42:07+01:00,-3600,2019-03-21 12:08:38+01:00,-3600,True,False,"['HISTORY.rst', 'oauth2_session.py', 'test_oauth2_session.py']",['c80b2b6d9f518c3cbcc424237a6075de5dcdb2fe'],32,39,71,3,,1.0,1.0
+656881007a4003fb5464c800c51f95c7c4783266,"Updated Microsoft app reg portal link
+
+- Added external link to new application registration portal
+- Removed reference to old portal",Jackson Woods (MSFT),jackson.woods@microsoft.com,GitHub,noreply@github.com,2019-04-17 15:48:18-07:00,25200,2019-04-17 15:48:18-07:00,25200,True,False,['outlook.rst'],['800976faab3b827a42fa1cb80f13fcc03961d2c9'],3,1,4,1,,,
+e19ac082682ecf3ed06cdcc5538e3c4bb2aa7762,GitHub Sponsors,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-06-05 08:31:32+02:00,-7200,2019-06-05 08:31:32+02:00,-7200,True,False,['FUNDING.yml'],['800976faab3b827a42fa1cb80f13fcc03961d2c9'],0,2,2,1,,,
+23dd463ed5d7e5bb6ca3c52bb3ece46602921464,Fix typo in comment: Refernences ~> References,Alex Chan,alex@alexwlchan.net,GitHub,noreply@github.com,2019-08-07 15:14:38+01:00,-3600,2019-08-07 15:14:38+01:00,-3600,True,False,['oauth2_session.py'],['e19ac082682ecf3ed06cdcc5538e3c4bb2aa7762'],1,1,2,1,,,
+e5b490cf16353bf8d3b7125a527fd2bb4e285dd3,Update Google example to Python 3,Petr Messner,petr.messner@gmail.com,David Baumgold,david@davidbaumgold.com,2019-09-18 11:52:27+02:00,-7200,2019-10-21 12:33:49+02:00,-7200,True,False,['google.rst'],['36f24b494a146c60c47bfcdf5a0ae5fbc9a608b9'],3,3,6,1,,,
+0a5d251c7ee924b021a049e3af9de6c5b6680015,Fix spelling paramter -> parameter,Michael Scovetta,michael.scovetta@microsoft.com,David Baumgold,david@davidbaumgold.com,2019-08-21 22:21:51-07:00,25200,2019-10-21 12:34:19+02:00,-7200,True,False,['oauth2_session.py'],['e5b490cf16353bf8d3b7125a527fd2bb4e285dd3'],1,1,2,1,,,
+39a291b44931026d5e9dff76e1ef4592fb7495b2,Add missing import in Backend Application Flow,bfollek,bfollek@gmail.com,David Baumgold,david@davidbaumgold.com,2019-07-07 07:37:55-04:00,14400,2019-10-21 12:35:14+02:00,-7200,True,False,['oauth2_workflow.rst'],['0a5d251c7ee924b021a049e3af9de6c5b6680015'],0,2,2,1,,,
+792f1849089f87da59cb29118053f6d6f1bd199c,v1.3.0,David Baumgold,david@davidbaumgold.com,David Baumgold,david@davidbaumgold.com,2019-11-06 15:39:00+01:00,-3600,2019-11-06 15:39:00+01:00,-3600,True,False,"['HISTORY.rst', '__init__.py']",['39a291b44931026d5e9dff76e1ef4592fb7495b2'],1,6,7,2,,,
+ae5c81d52457271d8f93d34c3c42d43f15ca2c69,Support for OAuth Mutual TLS,Daniel Fett,danielf@yes.com,David Baumgold,david@davidbaumgold.com,2019-11-29 12:45:16+01:00,-3600,2019-12-19 14:46:52+01:00,-3600,True,False,"['oauth2_workflow.rst', 'oauth2_session.py']",['792f1849089f87da59cb29118053f6d6f1bd199c'],0,18,18,2,0.0,0.0,0.0
+630a9e86e06d19ad587fdac82ab30ea06703a989,Add test for OAuth Mutual TLS.,Daniel Fett,danielf@yes.com,David Baumgold,david@davidbaumgold.com,2019-12-19 11:32:33+01:00,-3600,2019-12-19 14:46:52+01:00,-3600,True,False,['test_oauth2_session.py'],['ae5c81d52457271d8f93d34c3c42d43f15ca2c69'],0,19,19,1,1.0,1.0,1.0
+4efb3ed45b87e554c543c684ea956504abfafcc4,Add history entry for OAuth MTLS.,Daniel Fett,danielf@yes.com,David Baumgold,david@davidbaumgold.com,2019-12-19 11:33:57+01:00,-3600,2019-12-19 14:46:52+01:00,-3600,True,False,['HISTORY.rst'],['630a9e86e06d19ad587fdac82ab30ea06703a989'],1,1,2,1,,,
+29ba9afd2f0e5ae4f87ebc4ef4a133c2bbf227b4,Fix formatting with Black.,Daniel Fett,danielf@yes.com,David Baumgold,david@davidbaumgold.com,2019-12-19 12:07:18+01:00,-3600,2019-12-19 14:46:52+01:00,-3600,True,False,['test_oauth2_session.py'],['4efb3ed45b87e554c543c684ea956504abfafcc4'],7,17,24,1,0.0,1.0,1.0
+bafff0bc9dee6b4bfbd77d3c376c03bfa86e7d91,removed outdated linkedin compliance fixes,jtroussard,jacques.troussard@gmail.com,jtroussard,jacques.troussard@gmail.com,2020-02-17 14:54:40-05:00,18000,2020-02-17 14:54:40-05:00,18000,True,False,"['HISTORY.rst', 'linkedin.rst', '__init__.py', 'linkedin.py', 'test_compliance_fixes.py']",['29ba9afd2f0e5ae4f87ebc4ef4a133c2bbf227b4'],69,15,84,5,0.3829787234042553,0.0,0.0851063829787234
+b5918c515f4d71af9c0fb2120f8dd8640776348c,removed outdated linkedin compliance fixes - linkedin example,jtroussard,jacques.troussard@gmail.com,jtroussard,jacques.troussard@gmail.com,2020-02-17 15:17:29-05:00,18000,2020-02-17 15:17:29-05:00,18000,True,False,['linkedin.rst'],['bafff0bc9dee6b4bfbd77d3c376c03bfa86e7d91'],6,10,16,1,,,
+0ee5358b2289f9af9d189ebc19089730286492bd,removed outdated linkedin compliance fixes - test compliance import,jtroussard,jacques.troussard@gmail.com,jtroussard,jacques.troussard@gmail.com,2020-02-17 15:25:19-05:00,18000,2020-02-17 15:25:19-05:00,18000,True,False,['test_compliance_fixes.py'],['b5918c515f4d71af9c0fb2120f8dd8640776348c'],1,0,1,1,,,
+b390aae17e1d853fd5e7ea053d38de02ec5c9dba,"Update docs/examples/linkedin.rst
+
+First I'm seeing f strings. I've always been happy with format method, but I'll check the docs and give these a whirl.
+
+Co-Authored-By: David Baumgold <david@davidbaumgold.com>",Jacques Troussard,jacques.troussard@gmail.com,GitHub,noreply@github.com,2020-02-17 15:45:15-05:00,18000,2020-02-17 15:45:15-05:00,18000,True,False,['linkedin.rst'],['0ee5358b2289f9af9d189ebc19089730286492bd'],1,1,2,1,,,
+3512901c01417a3e44333a0478eff19f841fa9ac,PR comments - formatting,jtroussard,jacques.troussard@gmail.com,jtroussard,jacques.troussard@gmail.com,2020-02-17 15:47:17-05:00,18000,2020-02-17 15:47:17-05:00,18000,True,False,['linkedin.rst'],['0ee5358b2289f9af9d189ebc19089730286492bd'],1,3,4,1,,,
+feafa6d6662a3264181195eb9e6304f26c0eeb4f,PR comments - formatting,jtroussard,jacques.troussard@gmail.com,jtroussard,jacques.troussard@gmail.com,2020-02-17 15:55:43-05:00,18000,2020-02-17 15:55:43-05:00,18000,True,False,['linkedin.rst'],['caccd2eb7aa7f8474562d370353cb49427f7fd6a'],1,1,2,1,,,
+62d8d04f49f731839ccd4a2c448ac08c8a1ab493,"Prefer unittest.mock over external mock package
+
+Prefer using unittest.mock over external mock package to avoid
+extraneous dependencies in Python 3.3+.  Install 'mock' only for older
+Python versions.",Michał Górny,mgorny@gentoo.org,Michał Górny,mgorny@gentoo.org,2020-03-16 12:34:23+01:00,-3600,2020-03-16 12:34:23+01:00,-3600,True,False,"['setup.py', 'test_core.py', 'test_oauth1_session.py', 'test_oauth2_session.py', 'tox.ini']",['d75279c019e3bfbb0d31efb2ccd53c9bd677ed7c'],8,8,16,5,,,
+aad36105a809cc910bf9fafaf84c37a8deeded1f,`OAuth2Session` now honors the `self.verify` value if `verify` is not overridden in `fetch_token` and `refresh_token`. Fixes #404,Sylvain MARIE,sylvain.marie@se.com,Sylvain MARIE,sylvain.marie@se.com,2020-04-09 10:17:04+02:00,-7200,2020-04-09 10:17:04+02:00,-7200,True,False,['oauth2_session.py'],['d75279c019e3bfbb0d31efb2ccd53c9bd677ed7c'],2,2,4,1,,,
+039a613ece49b92f144a3c32dee9768f10da8824,Changelog and authors,Sylvain MARIE,sylvain.marie@se.com,Sylvain MARIE,sylvain.marie@se.com,2020-04-09 10:21:13+02:00,-7200,2020-04-09 10:21:13+02:00,-7200,True,False,"['AUTHORS.rst', 'HISTORY.rst']",['aad36105a809cc910bf9fafaf84c37a8deeded1f'],0,4,4,2,,,
+ddf5e7cb92de6637e2577f1ffeca346c0620d618,Improved changelog,Sylvain MARIE,sylvain.marie@se.com,Sylvain MARIE,sylvain.marie@se.com,2020-04-09 10:24:28+02:00,-7200,2020-04-09 10:24:28+02:00,-7200,True,False,['HISTORY.rst'],['039a613ece49b92f144a3c32dee9768f10da8824'],2,2,4,1,,,
+ad60046350ea36bddd198fd8d8762efc2b73965b,`OAuth2Session` constructor now uses its `client.scope` when a `client` is provided and `scope` is not overridden. Fixes #408,Sylvain MARIE,sylvain.marie@se.com,Sylvain MARIE,sylvain.marie@se.com,2020-04-10 12:20:42+02:00,-7200,2020-04-10 12:20:42+02:00,-7200,True,False,['oauth2_session.py'],['d75279c019e3bfbb0d31efb2ccd53c9bd677ed7c'],1,15,16,1,1.0,1.0,1.0
+be9429aa94959a856faa250080a05ca384a6f530,Changelog update,Sylvain MARIE,sylvain.marie@se.com,Sylvain MARIE,sylvain.marie@se.com,2020-04-10 12:21:06+02:00,-7200,2020-04-10 12:21:06+02:00,-7200,True,False,['HISTORY.rst'],['ad60046350ea36bddd198fd8d8762efc2b73965b'],0,3,3,1,,,
+fe64d5a25f8c65422742e411765b13038e7b27b5,docs: Fix typos in token refresh section of oauth2 worflow,Momo Bel,plopyomomo@gmail.com,GitHub,noreply@github.com,2020-05-12 10:26:08+02:00,-7200,2020-05-12 10:26:08+02:00,-7200,True,False,['oauth2_workflow.rst'],['d75279c019e3bfbb0d31efb2ccd53c9bd677ed7c'],2,2,4,1,,,
+ea71577b55489feeb06e3aa7c34c8f19effd02aa,Don't pass 'files' through to token refresh,Remko Tronçon,remko@el-tramo.be,Remko Tronçon,remko@el-tramo.be,2020-10-02 16:28:59+02:00,-7200,2020-10-02 16:28:59+02:00,-7200,True,False,['oauth2_session.py'],['46f886ccb74652fc9c850ece960edcf2bce765a5'],1,2,3,1,0.0,0.0,0.0
+460521c455ba343a0845a95c125764bb918c165e,Adding refresh_token_request hook,Luke Cousins,luke@cou.si,Luke Cousins,luke@cou.si,2020-12-08 16:20:19+00:00,0,2020-12-08 16:20:19+00:00,0,True,False,['oauth2_session.py'],['46f886ccb74652fc9c850ece960edcf2bce765a5'],0,6,6,1,0.0,0.25,0.0
+2a2ef2e670d11ee943d98044f548f0a24e27f8ba,Fix for #437 - remove erroneous charset param from Content-Type header,Pat Patterson,pat@superpat.com,Pat Patterson,pat@superpat.com,2021-01-27 09:01:23-08:00,28800,2021-01-27 09:01:23-08:00,28800,True,False,['oauth2_session.py'],['46f886ccb74652fc9c850ece960edcf2bce765a5'],2,2,4,1,,,
+63bfe7cc7dff4c8b2e3cb940b1292247db14d1fe,Add tox envs to check RTD docs and pypi docs,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2021-10-30 15:05:26+02:00,-7200,2021-10-30 15:05:26+02:00,-7200,True,False,"['setup.py', 'tox.ini']",['46f886ccb74652fc9c850ece960edcf2bce765a5'],1,20,21,2,,,
+2b76e4c8808a19158bc189a188fab6eeefe4430e,"Moved travis commands into tox
+
+Idea is to put the control in the hands of developers to be sure they can validate all steps executed by Travis the exact same way",Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2021-11-08 10:22:30+01:00,-3600,2021-11-08 10:22:30+01:00,-3600,True,False,"['.travis.yml', 'requirements-test.txt', 'requirements.in', 'requirements.txt', 'tox.ini']",['63bfe7cc7dff4c8b2e3cb940b1292247db14d1fe'],29,41,70,5,,,
+d8f7100fecb7c190838c47e41db03b6b58a69e6b,"Add eBay compliance fix (#456)
+
+* Add eBay compliance fix.
+
+* Fix formatting
+
+* Always provide string, not bytes.
+
+* token_type isn't always present.",Craig Anderson,craiga@craiga.id.au,GitHub,noreply@github.com,2021-11-09 00:37:55+00:00,0,2021-11-08 19:37:55-05:00,18000,True,False,"['AUTHORS.rst', '__init__.py', 'ebay.py', 'oauth2_session.py', 'test_compliance_fixes.py']",['46f886ccb74652fc9c850ece960edcf2bce765a5'],3,55,58,5,1.0,1.0,1.0
+6d7ee4db9aedc26d9d49f0aaf5f7bd88c3b175db,Removed unnecessary spaces,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2021-11-10 22:53:18+01:00,-3600,2021-11-10 22:53:18+01:00,-3600,True,False,['tox.ini'],['2b76e4c8808a19158bc189a188fab6eeefe4430e'],2,2,4,1,,,
+8ebf6946048938adb9e40b37c5681881eb983a07,Added recommanded approach for RTD pipeline,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2021-11-10 23:05:16+01:00,-3600,2021-11-10 23:05:16+01:00,-3600,True,False,"['.readthedocs.yaml', 'requirements.txt', 'tox.ini']",['6d7ee4db9aedc26d9d49f0aaf5f7bd88c3b175db'],3,16,19,3,,,
+c75ddb7aec7aebaafdc2c42b9c303b18b3ed6780,Install current package into sphinx venv.,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2021-11-11 09:42:36+01:00,-3600,2021-11-11 09:42:36+01:00,-3600,True,False,"['.readthedocs.yaml', 'requirements.txt', 'tox.ini']",['8ebf6946048938adb9e40b37c5681881eb983a07'],6,13,19,3,,,
+6681badb9354f1138f1d6b80546682d82e1edfd6,Removed unused static folder settings,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2021-11-11 09:42:48+01:00,-3600,2021-11-11 09:42:48+01:00,-3600,True,False,['conf.py'],['c75ddb7aec7aebaafdc2c42b9c303b18b3ed6780'],1,1,2,1,,,
+e67933ca58d6b7d5233141d7451e9e0907ce9416,Disable error on warning to have a stable integration first,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2021-11-11 09:49:51+01:00,-3600,2021-11-11 09:49:51+01:00,-3600,True,False,['.readthedocs.yaml'],['6681badb9354f1138f1d6b80546682d82e1edfd6'],1,1,2,1,,,
+5abc6f020ba0c4f6a5af44ed3fb4223eb266034d,Fix Sphinx error for oauth1 fetch_token documentation,Jonathan Huot,jonathan.huot@gmail.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-08 09:28:29+01:00,-3600,2021-11-21 11:59:33-05:00,18000,True,False,"['outlook.rst', 'oauth1_session.py']",['f3bebb54f1db932e8d5ab00136f0703b3c740985'],2,2,4,2,,,
+f93416b38ba0752e5dc1dc23b01c4daa942546f1,Removed too generic . preventing adding new files to .github,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 09:17:18+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['.gitignore'],['5abc6f020ba0c4f6a5af44ed3fb4223eb266034d'],1,0,1,1,,,
+e659245d08b5c085ea3e5561094d523e8994f5b5,Initial migration from Travis to GitHub Actions,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 09:18:13+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,"['run-tests.yml', '.travis.yml']",['f93416b38ba0752e5dc1dc23b01c4daa942546f1'],30,58,88,2,,,
+d893491d503f7cb75aa78cfafe6216cb5d9077b4,Fix yaml syntax for env variable,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 09:21:23+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['e659245d08b5c085ea3e5561094d523e8994f5b5'],1,1,2,1,,,
+77b08412ff46e4100c6a9496584ae8cad8a3f5c1,Fix typo of TOXENV,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 09:42:19+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['d893491d503f7cb75aa78cfafe6216cb5d9077b4'],1,1,2,1,,,
+41efad4de0298348abd5ef285b346846875029e8,Cleaner name,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 09:42:25+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['77b08412ff46e4100c6a9496584ae8cad8a3f5c1'],1,1,2,1,,,
+9aaedad40a8111702a1bef4301565f64b147a072,Fix python2.7 tests,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 09:51:34+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,"['requirements-test-27.txt', 'tox.ini']",['41efad4de0298348abd5ef285b346846875029e8'],0,11,11,2,,,
+09aefb2b340df6cf9d5dcf7d8da2d9a875aaf239,Fix pypy27 support,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 09:54:32+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,"['run-tests.yml', 'tox.ini']",['9aaedad40a8111702a1bef4301565f64b147a072'],2,5,7,2,,,
+990b527532836e684a1b75da22d623daeeb778bd,Moved to AndreMiras GH Action,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 17:53:36+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,"['.coveragerc', 'run-tests.yml', 'tox.ini']",['09aefb2b340df6cf9d5dcf7d8da2d9a875aaf239'],5,6,11,3,,,
+b2597a9398410083ea9e4c44140466a2bbe7ff7c,Removed unavailable python versions in GH,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 18:06:10+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['990b527532836e684a1b75da22d623daeeb778bd'],6,0,6,1,,,
+083dba5abcc9c0d73c9ff589796d89aa45b19180,"Revert ""Moved to AndreMiras GH Action""
+
+This reverts commit 3d61653173476de491f2677f31d00778c9970ca2.",Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 18:24:51+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,"['.coveragerc', 'run-tests.yml', 'tox.ini']",['b2597a9398410083ea9e4c44140466a2bbe7ff7c'],6,5,11,3,,,
+6cfe54ae9ce4e7e7fee9dc74eccc72543d8f5ea9,Add convertion of .coverage into lcov,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 18:28:28+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['083dba5abcc9c0d73c9ff589796d89aa45b19180'],1,5,6,1,,,
+3474c5b22258debc4771e5871c509189a1c0059c,Moved lcov into default location as the parameter seems not working,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 18:47:52+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['6cfe54ae9ce4e7e7fee9dc74eccc72543d8f5ea9'],2,2,4,1,,,
+ca9a69089f08d8c412e85ba424918e62f2423a3e,Add coveralls at the end of pipeline,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 20:26:42+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['3474c5b22258debc4771e5871c509189a1c0059c'],1,5,6,1,,,
+65603ffb08cbd7e5030a9497ba63456e6db4fa84,Lcov in both coverallsapp actions,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 20:50:49+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['ca9a69089f08d8c412e85ba424918e62f2423a3e'],10,3,13,1,,,
+4c596dbceb82708fe7807875982732c02f8802e8,Convert into lcov after each tests,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 20:52:55+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['65603ffb08cbd7e5030a9497ba63456e6db4fa84'],1,4,5,1,,,
+719f758c460715b5deb22230a29462ade3b9a1e6,Skip python27 for coveralls (coverage-lcov not present),Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 21:09:45+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['4c596dbceb82708fe7807875982732c02f8802e8'],2,9,11,1,,,
+cf83a6b5fbd7eaa4646e9803de79d93e458aab20,Fix typo,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 21:10:47+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['719f758c460715b5deb22230a29462ade3b9a1e6'],3,3,6,1,,,
+9678858661152764548118f68a294df795da801b,Double-quote is not allowed,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 21:11:55+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['cf83a6b5fbd7eaa4646e9803de79d93e458aab20'],3,3,6,1,,,
+af465bffb4a9d68e9af927f68af4d3b1676f7e41,Removed unecessary pip install,Jonathan Huot,jonathan.huot@refinitiv.com,Jacques Troussard,jacques.troussard@gmail.com,2021-11-24 21:13:48+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['9678858661152764548118f68a294df795da801b'],1,0,1,1,,,
+3d37030436502bc4e49347fa22c5fe46de181f5f,"Add version to coverallsapp action
+
+Co-authored-by: Jacques Troussard <jacques.troussard@gmail.com>",Jonathan Huot,JonathanHuot@users.noreply.github.com,Jacques Troussard,jacques.troussard@gmail.com,2021-12-06 21:06:26+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['run-tests.yml'],['af465bffb4a9d68e9af927f68af4d3b1676f7e41'],1,1,2,1,,,
+59b3b1c1b0edf9e9abedd6058fa51938c8185e5f,Fix local theme of docs,Jonathan Huot,jonathan.huot@gmail.com,Jacques Troussard,jacques.troussard@gmail.com,2021-12-06 21:23:25+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,['conf.py'],['3d37030436502bc4e49347fa22c5fe46de181f5f'],1,1,2,1,,,
+2944df6de5872aa12974dda541f156efeaff37e1,Initial version of contributing guide,Jonathan Huot,jonathan.huot@gmail.com,Jacques Troussard,jacques.troussard@gmail.com,2021-12-06 21:23:43+01:00,-3600,2021-12-06 16:59:39-05:00,18000,True,False,"['contributing.rst', 'index.rst']",['59b3b1c1b0edf9e9abedd6058fa51938c8185e5f'],0,55,55,2,,,
+9c1f83f671a567e67f85b09922f6bd18f7ce937e,add Spotify OAuth 2 Tutorial,Christy Roys,royschristy@gmail.com,Jacques Troussard,jacques.troussard@gmail.com,2021-12-29 11:29:04+05:18,-19080,2021-12-30 16:22:00-05:00,18000,True,False,['spotify.rst'],['2944df6de5872aa12974dda541f156efeaff37e1'],0,49,49,1,,,
+ee2085539d98495c7cd237bd115baac89903afd1,"Update documentation for Python 3 (#435)
+
+* Update documentation for Python 3
+
+Given that Python 2 is out of support, the documenation examples should probably use Python 3 syntax (i.e. print as a function, input instead of raw_input) instead of Python 2 syntax.
+
+* whitespace change
+
+Co-authored-by: jtroussard <jacques.troussard@gmail.com>",George Schizas,gschizas@gmail.com,GitHub,noreply@github.com,2021-12-30 23:48:09+02:00,-7200,2021-12-30 16:48:09-05:00,18000,True,False,['outlook.rst'],['9c1f83f671a567e67f85b09922f6bd18f7ce937e'],4,4,8,1,,,
+fb3ec4e846d807cf3d816447f1a3e1f2a490689f,docs: add the link to the Application Registration Portal (#425),Abdelkrim from Brussels,aboujraf@hotmail.com,GitHub,noreply@github.com,2021-12-30 23:03:33+01:00,-3600,2021-12-30 17:03:33-05:00,18000,True,False,['outlook.rst'],['ee2085539d98495c7cd237bd115baac89903afd1'],1,2,3,1,,,
+75a316bfd9c6db17c38b1b2879764fe8e7bfb2c9,"docs: rearrange and link spotify tutorial (#472)
+
+* Rearrange existing tutorials alphabetically
+* link Spotify tutorial",Christy Roys,royschristy@gmail.com,GitHub,noreply@github.com,2022-01-01 03:10:05+05:18,-19080,2021-12-31 16:52:05-05:00,18000,True,False,['examples.rst'],['fb3ec4e846d807cf3d816447f1a3e1f2a490689f'],2,3,5,1,,,
+00e8156715674452194655eee53922d3280bb2a7,"Update google.rst (#454)
+
+* Update google.rst
+
+https://developers.google.com/identity/protocols/oauth2/openid-connect?hl=en#scope-param
+https://developers.google.com/identity/protocols/oauth2/scopes#oauth2
+
+* non-functional changes to kick off new pipeline
+
+Co-authored-by: jtroussard <jacques.troussard@gmail.com>",王健辉,40563566+mrwangjianhui@users.noreply.github.com,GitHub,noreply@github.com,2022-01-02 07:14:55+08:00,-28800,2022-01-01 18:14:55-05:00,18000,True,False,['google.rst'],['75a316bfd9c6db17c38b1b2879764fe8e7bfb2c9'],3,4,7,1,,,
+337dbe864045308ae35d589719965788f66fd462,"Add Python 3.8 & 3.9 as supported version (#442)
+
+Since Py 3.8 & 3.9 is supported, we should update the identified, as it is shown on PIP and gives wrong impressions that Py 3.8 is not supported",Kaxil Naik,kaxilnaik@gmail.com,GitHub,noreply@github.com,2022-01-01 23:19:31+00:00,0,2022-01-01 18:19:31-05:00,18000,True,False,"['run-tests.yml', 'setup.py', 'tox.ini']",['00e8156715674452194655eee53922d3280bb2a7'],1,7,8,3,,,
+dfbcacbcffa325c12fd3a12ac61d2c023addf92f,Add support for Python 3.10,Hugo van Kemenade,hugovk@users.noreply.github.com,Hugo van Kemenade,hugovk@users.noreply.github.com,2022-01-02 12:50:18+02:00,-7200,2022-01-02 12:50:18+02:00,-7200,True,False,"['run-tests.yml', 'AUTHORS.rst', 'HISTORY.rst', 'setup.py', 'tox.ini']",['337dbe864045308ae35d589719965788f66fd462'],7,12,19,5,,,
+05a25a96522dc64c25224a4862f2342a6978e80d,Update build badge for GitHub Actions (#475),Hugo van Kemenade,hugovk@users.noreply.github.com,GitHub,noreply@github.com,2022-01-02 15:44:36+02:00,-7200,2022-01-02 08:44:36-05:00,18000,True,False,['README.rst'],['337dbe864045308ae35d589719965788f66fd462'],2,2,4,1,,,
+3c1bd8c9b48f4be912220b3634a34b9faef7182a,removes escaped characters,jtroussard,jacques.troussard@gmail.com,jtroussard,jacques.troussard@gmail.com,2022-01-02 14:48:54-05:00,18000,2022-01-02 14:48:54-05:00,18000,True,False,['oauth1_session.py'],['05a25a96522dc64c25224a4862f2342a6978e80d'],1,1,2,1,,,
+3cc4c15b2d2403c0fdee8404a9366b1b4f2c04f7,will this fix coverage diff of -0.0,jtroussard,jacques.troussard@gmail.com,jtroussard,jacques.troussard@gmail.com,2022-01-02 15:21:48-05:00,18000,2022-01-02 15:21:48-05:00,18000,True,False,['oauth1_session.py'],['3c1bd8c9b48f4be912220b3634a34b9faef7182a'],3,0,3,1,,,
+74e2f9ec47c039520d6aaf83ca3fb007ac1c70b8,broke tests reset,jtroussard,jacques.troussard@gmail.com,jtroussard,jacques.troussard@gmail.com,2022-01-02 15:29:29-05:00,18000,2022-01-02 15:29:29-05:00,18000,True,False,['oauth1_session.py'],['3cc4c15b2d2403c0fdee8404a9366b1b4f2c04f7'],1,4,5,1,1.0,0.0,1.0
+7039c5e814328f6fe975f13d6a7a14e0e72cf9c1,Also added support for `access_token_request` hook,Luke Cousins,luke@viovet.co.uk,GitHub,noreply@github.com,2022-01-14 19:03:16+00:00,0,2022-01-14 19:03:16+00:00,0,True,False,['oauth2_session.py'],['460521c455ba343a0845a95c125764bb918c165e'],0,4,4,1,0.0,0.0,0.0
+2c7650ec562ab8655a31e3b558d152be9d1a771d,Add auto publish to pypi when pushing a new tag.,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2022-01-21 19:16:46+01:00,-3600,2022-01-21 19:16:46+01:00,-3600,True,False,['publish-release.yml'],['05a25a96522dc64c25224a4862f2342a6978e80d'],0,26,26,1,,,
+7d194e3d0baa166fa6e9738232f7d2735341745c,Add changelog for 1.3.1,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2022-01-21 19:26:23+01:00,-3600,2022-01-21 19:26:23+01:00,-3600,True,False,"['HISTORY.rst', '__init__.py']",['2c7650ec562ab8655a31e3b558d152be9d1a771d'],4,9,13,2,,,
+ea34bf3e9e5348ccf28c21b46894712ce49997a8,Fix typo in PyPI package name in installation instructions,Kent Frazier,kentfrazier@users.noreply.github.com,Kent Frazier,kentfrazier@users.noreply.github.com,2022-01-26 14:45:47-06:00,21600,2022-01-26 14:45:47-06:00,21600,True,False,['README.rst'],['05a25a96522dc64c25224a4862f2342a6978e80d'],1,1,2,1,,,
+f9d3ebacb3d564e2dd6f09a9998d79fc7551cccd,Update documentation as well,Kent Frazier,kentfrazier@users.noreply.github.com,Kent Frazier,kentfrazier@users.noreply.github.com,2022-01-26 15:05:30-06:00,21600,2022-01-26 15:05:30-06:00,21600,True,False,['index.rst'],['ea34bf3e9e5348ccf28c21b46894712ce49997a8'],1,1,2,1,,,
+dbecd38bb0338f5f5ac468f254e573df3eabca9f,Uses 3.9 for publishing,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2022-01-29 10:55:59+01:00,-3600,2022-01-29 10:55:59+01:00,-3600,True,False,['publish-release.yml'],['7d194e3d0baa166fa6e9738232f7d2735341745c'],4,2,6,1,,,
+b0857c856dc76cc375f72d7c2c5b773bdc55526e,Changed secret's name,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2022-01-29 19:53:14+01:00,-3600,2022-01-29 19:53:14+01:00,-3600,True,False,['publish-release.yml'],['dbecd38bb0338f5f5ac468f254e573df3eabca9f'],1,1,2,1,,,
+04a8d00fd16bfece72d8252b1e1c09f62fa59afc,Add release process,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2022-02-18 22:08:53+01:00,-3600,2022-02-18 22:08:53+01:00,-3600,True,False,['contributing.rst'],['b0857c856dc76cc375f72d7c2c5b773bdc55526e'],1,21,22,1,,,
+9d683eaf97b00ff69b360df181f517f71cae2aea,Doc is generated in py3 only. Removed unicode string,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2022-02-18 22:23:10+01:00,-3600,2022-02-18 22:23:10+01:00,-3600,True,False,"['run-tests.yml', 'conf.py', 'tox.ini']",['04a8d00fd16bfece72d8252b1e1c09f62fa59afc'],10,12,22,3,,,
+bcbb876567ad03a476095bdbeb7e39816a535b2e,Moved into one build to have coverage,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2022-02-18 22:25:03+01:00,-3600,2022-02-18 22:25:03+01:00,-3600,True,False,['run-tests.yml'],['9d683eaf97b00ff69b360df181f517f71cae2aea'],3,1,4,1,,,
+b39b85ecbbda1fda52917dcd00f40390842d1bf8,Fix typo in Rst format,Jonathan Huot,jonathan.huot@gmail.com,Jonathan Huot,jonathan.huot@gmail.com,2022-02-19 09:56:59+01:00,-3600,2022-02-19 09:56:59+01:00,-3600,True,False,['HISTORY.rst'],['5fe8d3de5dd01bc4bb33699f72819bfef1dc0f52'],1,1,2,1,,,
+fc37566262709ce6d0dd1ca3eafa5eb375610f2f,Adding missing declaration,violuke,luke@cou.si,violuke,luke@cou.si,2022-02-19 10:01:54+00:00,0,2022-02-19 10:01:54+00:00,0,True,False,['oauth2_session.py'],['7039c5e814328f6fe975f13d6a7a14e0e72cf9c1'],0,2,2,1,0.0,1.0,0.0
+74b11beab216d7d17e46340006a90d605203881b,Reformatting to please black,violuke,luke@cou.si,violuke,luke@cou.si,2022-02-20 11:00:02+00:00,0,2022-02-20 11:00:02+00:00,0,True,False,['oauth2_session.py'],['a1fd22a030ff529570fd3fa7bd5638c5d1bd64de'],1,3,4,1,0.0,0.0,0.0
+584c9592e4759fa8ebaeadc77494dd6ffc529afb,"Adding tests for the ""access_token_request"" and ""refresh_token_request"" hooks",violuke,luke@cou.si,violuke,luke@cou.si,2022-02-20 11:00:45+00:00,0,2022-02-20 11:00:45+00:00,0,True,False,['test_compliance_fixes.py'],['74b11beab216d7d17e46340006a90d605203881b'],0,55,55,1,0.4222222222222222,1.0,0.9333333333333333
+50472c99848e1347ea9e9c1f32ddb605c1eade3b,Fixing Black formatting,Luke Cousins,luke@cou.si,GitHub,noreply@github.com,2022-02-21 10:29:35+00:00,0,2022-02-21 10:29:35+00:00,0,True,False,['oauth2_session.py'],['584c9592e4759fa8ebaeadc77494dd6ffc529afb'],1,1,2,1,,,
+4e67803e410f2abb5b3894f807cb61df7a7c0316,Fixing tests on Python 2.7,Luke Cousins,luke@cou.si,GitHub,noreply@github.com,2022-02-21 10:29:55+00:00,0,2022-02-21 10:29:55+00:00,0,True,False,['test_compliance_fixes.py'],['50472c99848e1347ea9e9c1f32ddb605c1eade3b'],2,4,6,1,0.0,1.0,1.0
+f9d02d1a3a637db86c8338d6de03bc1ca9fb419a,Fix typos,Kian-Meng Ang,kianmeng@cpan.org,Kian-Meng Ang,kianmeng@cpan.org,2022-07-11 21:12:35+08:00,-28800,2022-07-11 21:12:35+08:00,-28800,True,False,"['oauth2_workflow.rst', 'tox.ini']",['b3decdb65872ba1f59b65f62406949306b673ddb'],3,3,6,2,,,
+ee18ab077bcad0b840c6c3984ae0b86d74cc1995,Give description to tox environments,Kian-Meng Ang,kianmeng@cpan.org,Kian-Meng Ang,kianmeng@cpan.org,2022-07-11 21:17:34+08:00,-28800,2022-07-11 21:17:34+08:00,-28800,True,False,['tox.ini'],['b3decdb65872ba1f59b65f62406949306b673ddb'],0,4,4,1,,,
+4fa3c02495e0d0e3a67656a624f29586a8d8005b,"README.rst: Update the URL for requests
+
+The old destination is no longer working.",Christian Clauss,cclauss@me.com,GitHub,noreply@github.com,2022-07-19 14:41:04+02:00,-7200,2022-07-19 14:41:04+02:00,-7200,True,False,['README.rst'],['b3decdb65872ba1f59b65f62406949306b673ddb'],1,1,2,1,,,
+91cd5f3fe788cb46f4fa55e5a65b2bec030a2771,Add support for Python 3.11 and 3.12,Hugo van Kemenade,hugovk@users.noreply.github.com,Hugo van Kemenade,hugovk@users.noreply.github.com,2023-08-30 00:07:23+03:00,-10800,2023-08-30 00:07:23+03:00,-10800,True,False,"['publish-release.yml', 'run-tests.yml', 'setup.py', 'tox.ini']",['3a2a852e33c691c7e793300ce366a01b6e4b3848'],5,12,17,4,,,

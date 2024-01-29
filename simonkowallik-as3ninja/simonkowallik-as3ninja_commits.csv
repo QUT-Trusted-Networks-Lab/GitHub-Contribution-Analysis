@@ -1,0 +1,467 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+97b37f8545cc9802b3eeeeaeb3b2198356bf3aa7,first commit,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-02 14:22:31+00:00,0,2019-11-02 14:22:31+00:00,0,True,False,"['AUTHORS.rst', 'CONTRIBUTING.rst', 'Dockerfile', 'HISTORY.rst', 'LICENSE', 'MANIFEST.in', 'Makefile', 'Pipfile', 'Pipfile.lock', 'README.rst', '__init__.py', '__main__.py', 'api.py', 'cli.py', 'declaration.py', 'filters.py', 'functions.py', 'gitget.py', 'schema.py', 'settings.py', 'utils.py', 'Makefile', '.DS_Store', '_api.gif', '_api_demo.gif', '_cli.svg', '_curl_api.svg', '_docker_cli.svg', '_docker_ephemeral.svg', '_docker_persistent.svg', 'authors.rst', 'concepts.rst', 'conf.py', 'contributing.rst', 'examples.rst', 'history.rst', 'index.rst', 'installation.rst', 'readme.rst', 'templating.rst', 'todos.rst', 'usage.rst', '.DS_Store', 'README.md', 'declaration.json', 'declaration_with_overlay.json', 'http_path_header.iRule', 'ninja.yaml', 'overlay.json', 'sorry_page.iRule', 'template.j2', 'README.md', 'config.yaml', 'output.json', 'template.j2', 'pytest.ini', 'setup.cfg', 'setup.py', '__init__.py', 'test_cli.py', 'test_declaration.py', 'test_filters.py', 'test_functions.py', 'test_gitget.py', 'test_schema.py', 'test_utils.py', 'include.j2', 'template.j2', 'ninjutsu.j2', 'file.json', 'file.json', 'file.txt', 'file.yaml', 'utf8.txt', 'utils.py', 'tox.ini']",[],0,6636,6636,76,0.5662847790507365,0.8832515002727769,0.7708674304418985
+23d4a5b4acd6a79ffc66f82befa06a16092e8440,add travis.yml,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-02 14:37:34+00:00,0,2019-11-02 14:37:34+00:00,0,True,False,['.travis.yml'],['97b37f8545cc9802b3eeeeaeb3b2198356bf3aa7'],0,15,15,1,,,
+70784980e885b474b136aedfb1da5e176dcdc9ec,Correct Dockerfile,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-02 14:40:32+00:00,0,2019-11-02 14:40:32+00:00,0,True,False,['Dockerfile'],['23d4a5b4acd6a79ffc66f82befa06a16092e8440'],3,3,6,1,,,
+25ddb34dd665dca924ee0d41d6f93338fdb02fb3,update setup.py for sphinx-autodoc-typehints,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-02 14:52:33+00:00,0,2019-11-02 14:52:33+00:00,0,True,False,['setup.py'],['70784980e885b474b136aedfb1da5e176dcdc9ec'],0,1,1,1,,,
+66557dc368526300366d8960279dc026356fbc2d,docs/conf.py temporary remove sphinx_autodoc_typehints,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-02 14:54:51+00:00,0,2019-11-02 14:54:51+00:00,0,True,False,['conf.py'],['25ddb34dd665dca924ee0d41d6f93338fdb02fb3'],1,5,6,1,,,
+f9ca6e962f1d675b77bca4cd8a50a6f88ee7f1d0,"travis, docker and rtd/docs build updates
+
+updates to fix issues with builds for:
+- traivs
+- docker
+- rtd/docs",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-02 17:10:31+00:00,0,2019-11-02 17:21:37+00:00,0,True,False,"['.readthedocs.yaml', '.travis.yml', 'Dockerfile', 'README.rst', 'as3ninja.rst', 'conf.py', '_static', 'modules.rst', 'requirements.txt', 'test_gitget.py']",['66557dc368526300366d8960279dc026356fbc2d'],8,197,205,10,,,
+eb5099a006597e28675e021dc2e300cc3a95a6ca,version/0.1.0 build/boilerplate updates,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-07 20:18:33+01:00,-3600,2019-11-08 08:12:24+01:00,-3600,True,False,"['.dockerignore', '.editorconfig', '.flake8', '.gitattributes', '.gitignore', '.readthedocs.yaml', '.travis.yml', 'CONTRIBUTING.rst', 'MANIFEST.in', 'Makefile', 'Pipfile', 'Pipfile.lock', 'README.md', '_README.rst', '_heading.rst', '.DS_Store', '_heading.rst', 'examples.rst_', 'index.rst', 'installation.rst_', 'readme.rst', 'requirements.txt', '.DS_Store', 'setup.py', 'tox.ini']",['f9ca6e962f1d675b77bca4cd8a50a6f88ee7f1d0'],116,483,599,25,,,
+34c169ef1dd030d38201b90f5333699540649fba,readme update,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-09 21:22:33+01:00,-3600,2019-11-09 21:22:33+01:00,-3600,True,False,['README.md'],['eb5099a006597e28675e021dc2e300cc3a95a6ca'],9,3,12,1,,,
+b00d9e0baac969633e951d6c1bd78ec5ec998d7d,fix #3: Gitget now uses rev-parse to get branch name,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-10 15:05:21+01:00,-3600,2019-11-10 15:05:21+01:00,-3600,True,False,['gitget.py'],['34c169ef1dd030d38201b90f5333699540649fba'],2,2,4,1,,,
+4dfcd8e8e35fd0185545ce92c14904868aee9e9f,"Dockerfile: removed org.label-schema.version
+
+The docker tag should provide the version instead of the
+LABEL org.label-schema.version.",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-10 17:20:22+01:00,-3600,2019-11-10 17:20:22+01:00,-3600,True,False,['Dockerfile'],['b00d9e0baac969633e951d6c1bd78ec5ec998d7d'],1,0,1,1,,,
+a2966d54aedbbfa3731b317217e5cba7c6442b5d,"Gitget compatibility improvement #2
+
+- more reliable checkout of specific commits
+- removed commit length checking. short and long format as well as
+  HEAD~ syntax should now work
+- improved tests",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-16 13:30:17+01:00,-3600,2019-11-16 13:30:17+01:00,-3600,True,False,"['gitget.py', 'test_gitget.py']",['34c169ef1dd030d38201b90f5333699540649fba'],39,76,115,2,1.0,1.0,1.0
+2c6ac744925683d147000b2baa205e9ad642b525,readme: updated travis ci badge,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-16 14:22:28+01:00,-3600,2019-11-16 14:23:10+01:00,-3600,True,False,"['README.md', '_heading.rst']",['34121b7e7491b3fb5dc0cdbd80af1ac25680ce12'],3,3,6,2,,,
+c962befd59f32933c614e0389a77ab8c6a6a300b,"CI updates
+
+- skip specific gitget test for travis
+- flake8 config file update",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-16 14:56:55+01:00,-3600,2019-11-16 15:19:55+01:00,-3600,True,False,"['.flake8', 'test_gitget.py', 'tox.ini']",['2c6ac744925683d147000b2baa205e9ad642b525'],0,7,7,3,,,
+7d709eeb3f91df99df409635264185e8530a7449,"CI test updates for python 3.7 issue37424
+
+- skip gitget test for python3 < 3.7.5 which would run into:
+  https://bugs.python.org/issue37424
+- add 3.7.5 explicitly to travis matrix",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-16 20:36:33+01:00,-3600,2019-11-16 20:36:33+01:00,-3600,True,False,"['.travis.yml', 'test_gitget.py']",['c962befd59f32933c614e0389a77ab8c6a6a300b'],3,5,8,2,,,
+de21fe23b9bff24b64db98f23a78a7ad1f8283d5,"gitget: fix quoting for HEAD~ syntax, add tests",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-11-17 12:16:02+01:00,-3600,2019-11-17 12:36:07+01:00,-3600,True,False,"['gitget.py', 'test_gitget.py']",['7d709eeb3f91df99df409635264185e8530a7449'],0,25,25,2,1.0,1.0,1.0
+7c67309078ff7e814ee12230a4c0fa7575553b83,"update dependency files: Pipfile(.lock), setup.py",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-07 18:08:57+01:00,-3600,2019-12-07 18:08:57+01:00,-3600,True,False,"['Pipfile', 'Pipfile.lock', 'setup.py']",['de21fe23b9bff24b64db98f23a78a7ad1f8283d5'],228,140,368,3,,,
+e8ec76a4a1ec12c966c0a2431eca4bdd8d4ebb82,Dockerfile WORKDIR changed to /,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-07 18:14:18+01:00,-3600,2019-12-07 18:14:18+01:00,-3600,True,False,['Dockerfile'],['7c67309078ff7e814ee12230a4c0fa7575553b83'],2,2,4,1,,,
+9ede9f4cf075b6669899dba8a05bd19920990baf,"major documentation update
+
+- reformat license
+- add support statements (there is no support)
+- general documentation updates
+- reorganized docs",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-07 18:15:15+01:00,-3600,2019-12-07 18:15:15+01:00,-3600,True,False,"['AUTHORS.rst', 'CONTRIBUTING.rst', 'HISTORY.rst', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.md', '_README.rst', 'SUPPORT.rst', '_heading.rst', '_cli.svg', '_curl_api.svg', '_docker_cli.svg', '_docker_ephemeral.svg', '_docker_persistent.svg', '_httpie_api.svg', 'authors.rst', 'concepts.rst', 'contributing.rst', 'CONTRIBUTING.rst', 'history.rst', 'index.rst', 'readme.rst', 'requirements.txt', 'templating.rst', 'usage.rst', 'setup.py']",['e8ec76a4a1ec12c966c0a2431eca4bdd8d4ebb82'],1480,1417,2897,27,,,
+32dbc862dfa8ae995a1d08d5ea12030244d7015b,"API enhancements: routing, custom templ. config files #5, tests
+
+- API routing for /api prefix
+- #5 add support to specify template configuration files for git transform
+- UI/Docs moved to /docs, /redoc",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-07 18:16:31+01:00,-3600,2019-12-07 18:16:31+01:00,-3600,True,False,"['api.py', 'test_api.py']",['9ede9f4cf075b6669899dba8a05bd19920990baf'],25,161,186,2,0.8426966292134831,0.4157303370786517,1.0
+5fe60044e070070562be9b6994572d5de199192b,"add CLI support for ninja.(json|yaml|yml)
+
+Specification of a Template Configuration file when using
+`as3ninja transform` is now optional.
+AS3 Ninja will now try to use ninja.(json|yaml|yml) if no
+file is specified.",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-07 18:17:38+01:00,-3600,2019-12-07 18:17:38+01:00,-3600,True,False,['cli.py'],['32dbc862dfa8ae995a1d08d5ea12030244d7015b'],5,15,20,1,0.0,0.0,0.0
+f536dd1bfcb263c89a1e3088ec9cc0528a3a496c,"enhances schema file identification
+
+Previously AS3Schema looked for as3-schema.json, with 3.16.0 the
+schema file has currently no alias and as3-schema-3.16.0-6.json
+is the only schema file.
+AS3Schema now looks for as3-schema-*.json which works for all
+currently existing versions",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-07 18:18:12+01:00,-3600,2019-12-07 18:18:12+01:00,-3600,True,False,"['schema.py', 'test_schema.py']",['5fe60044e070070562be9b6994572d5de199192b'],8,20,28,2,1.0,1.0,1.0
+05dd58a529c0f60fb65e4af57283ee18e56fcc23,"Vault Integration
+
+- add vault filter
+- add VaultClient function
+- add unit tests
+- update build/test dependencies
+- add vault to Dockerfile
+- add documentation",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-07 18:30:36+01:00,-3600,2019-12-07 18:30:36+01:00,-3600,True,False,"['Dockerfile', 'Pipfile', 'filters.py', 'functions.py', 'settings.py', 'vault.py', 'as3ninja.rst', 'concepts.rst', 'index.rst', 'requirements.txt', 'vault.rst', 'pytest.ini', 'test_vault.py', 'tox.ini']",['f536dd1bfcb263c89a1e3088ec9cc0528a3a496c'],44,1323,1367,14,0.6708860759493671,0.819620253164557,0.6867088607594937
+c1ae8ef6e4563cdc903d5e6863a5cc094455efb1,version 0.2.0,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-08 15:25:30+01:00,-3600,2019-12-08 15:25:30+01:00,-3600,True,False,"['README.md', '__init__.py', 'declaration.py', 'SUPPORT.rst', '_heading.rst', 'history.rst', 'setup.cfg']",['05dd58a529c0f60fb65e4af57283ee18e56fcc23'],14,48,62,7,0.0,1.0,0.0
+69d5488670fcbe8c9d7649e63afb78d392bb72e9,version 0.2.0,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-08 15:30:53+01:00,-3600,2019-12-08 15:30:53+01:00,-3600,True,False,"['.flake8', '.travis.yml', 'AUTHORS.rst', 'CONTRIBUTING.rst', 'Dockerfile', 'HISTORY.rst', 'LICENSE', 'MANIFEST.in', 'Makefile', 'Pipfile', 'Pipfile.lock', 'README.md', '_README.rst', '__init__.py', 'api.py', 'cli.py', 'declaration.py', 'filters.py', 'functions.py', 'gitget.py', 'schema.py', 'settings.py', 'vault.py', 'SUPPORT.rst', '_heading.rst', '_cli.svg', '_curl_api.svg', '_docker_cli.svg', '_docker_ephemeral.svg', '_docker_persistent.svg', '_httpie_api.svg', 'as3ninja.rst', 'authors.rst', 'concepts.rst', 'contributing.rst', 'CONTRIBUTING.rst', 'history.rst', 'index.rst', 'readme.rst', 'requirements.txt', 'templating.rst', 'usage.rst', 'vault.rst', 'pytest.ini', 'setup.cfg', 'setup.py', 'test_api.py', 'test_gitget.py', 'test_schema.py', 'test_vault.py', 'tox.ini']",['34c169ef1dd030d38201b90f5333699540649fba'],1846,3236,5082,51,0.734475374732334,0.7473233404710921,0.7751605995717344
+18c28ddb314566585cdf9523f9f4156b1fe7f9f2,"corrected documentation
+
+- spelling errors
+- shield updates
+- general typos",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-09 22:17:04+01:00,-3600,2019-12-09 22:17:10+01:00,-3600,True,False,"['README.md', 'SUPPORT.rst', '_heading.rst', 'concepts.rst', 'history.rst', 'readme.rst', 'templating.rst', 'vault.rst']",['c1ae8ef6e4563cdc903d5e6863a5cc094455efb1'],41,41,82,8,,,
+5a97888e485131cd03227ebc779eecc4dfd6dd8d,"corrected documentation
+
+- spelling errors
+- shield updates
+- general typos",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-09 22:17:04+01:00,-3600,2019-12-10 01:02:26+01:00,-3600,True,False,"['MANIFEST.in', 'README.md', '_heading.rst', 'logo.png', 'concepts.rst', 'contributing.rst', 'history.rst', 'index.rst', 'readme.rst', 'support.rst', 'templating.rst', 'vault.rst']",['c1ae8ef6e4563cdc903d5e6863a5cc094455efb1'],47,53,100,12,,,
+2b35edd6c24a40ffb76ba6302466aae8d03e9a94,"corrected documentation
+
+- spelling errors
+- shield updates
+- general typos",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-09 22:17:04+01:00,-3600,2019-12-10 01:04:31+01:00,-3600,True,False,"['MANIFEST.in', 'README.md', '_heading.rst', 'logo.png', 'concepts.rst', 'contributing.rst', 'history.rst', 'index.rst', 'readme.rst', 'support.rst', 'templating.rst', 'vault.rst']",['c1ae8ef6e4563cdc903d5e6863a5cc094455efb1'],47,53,100,12,,,
+01af6d6d3489a33c84228c7894e4302137edff88,documentation updates,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-14 11:57:54+01:00,-3600,2019-12-14 11:57:54+01:00,-3600,True,False,"['README.md', 'filters.py', 'contributing.rst', 'CONTRIBUTING.rst', '_heading.rst', '_static', 'readme.rst', 'support.rst', 'templating.rst', 'usage.rst', 'vault.rst']",['c4dd20231cba754adb3e01a1f1fd347ba43f6af3'],72,460,532,11,0.0,1.0,1.0
+0a2604988bbf111738f40bb6dff8ff4b9174dfe3,"Optimized Dockerfile - size down 70% #16
+
+- Size is down to ~140MB from ~520MB
+- Removed vault (100MB) as it is not necessary by default
+- Introduced build stages
+- Changed from Python 3.8 alpine to alpine:3.10 with python 3.7.5 (100MB)",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-15 17:23:38+01:00,-3600,2019-12-15 17:34:47+01:00,-3600,True,False,['Dockerfile'],['01af6d6d3489a33c84228c7894e4302137edff88'],25,53,78,1,,,
+1b53b9b403fa4e4299ec9c89a551c9f81936a007,"api: updates routes, adds redirects",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-31 01:58:48+01:00,-3600,2019-12-31 01:58:48+01:00,-3600,True,False,"['api.py', 'test_api.py']",['0a2604988bbf111738f40bb6dff8ff4b9174dfe3'],25,73,98,2,1.0,1.0,1.0
+45bea27c61808402fa1b2182015fe6b021a621f5,"fix #4: AS3TemplateSyntaxError now loads correct file
+
+- AS3TemplateSyntaxError checks if the jinja2 exception,
+  contains a file name and loads it for error highlighting
+- test added",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-31 02:34:30+01:00,-3600,2019-12-31 02:46:00+01:00,-3600,True,False,"['declaration.py', 'test_declaration.py', 'include.jinja2']",['0a2604988bbf111738f40bb6dff8ff4b9174dfe3'],5,25,30,3,1.0,1.0,0.7857142857142857
+390fb18d555df31d0dd296d58b17276bf2fd577e,"Add python nightly to CI tests
+
+Future proof as3ninja for new python versions.
+CI tests are allowed to fail for nightly.",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-31 14:04:33+01:00,-3600,2019-12-31 14:04:33+01:00,-3600,True,False,"['.travis.yml', 'tox.ini']",['1d03ab99dfcfd9cd8a0b21c8862e4aaff52999aa'],1,7,8,2,,,
+1d58d6d83706009964ef7a005c41f68ef3e037a1,"update test coverage generation for CI in tox
+
+directly generate xml to avoid issues in converting
+.coverage to coverage.xml when codecov is exectued",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-31 15:07:44+01:00,-3600,2019-12-31 15:07:44+01:00,-3600,True,False,['tox.ini'],['390fb18d555df31d0dd296d58b17276bf2fd577e'],1,1,2,1,,,
+493f084602bc79972c2b2ec33387e5b1f3d1cdf2,add test for __main__.py,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2019-12-31 16:42:45+01:00,-3600,2019-12-31 16:43:38+01:00,-3600,True,False,['test_main.py'],['1d58d6d83706009964ef7a005c41f68ef3e037a1'],0,9,9,1,1.0,1.0,1.0
+2d36d9e33d70bda47d33d7eb872de8d3390a264b,"Improve code climate, address bandit finding, update CI
+
+Code Climate and codecov reporting in travis CI only for python 3.8
+
+Handle bandit finding for subprocess.run in gitget
+
+    - Disable bandit finding for `subprocess.run` in `_run_command`.
+    - Leave bandit finding for module import in place (see bandit issue 455)
+    - Add explicit `shell=False` to `subprocess.run`
+    - Add test to check for `shell=False`
+
+Disable bandit jinja2 autoescape finding
+
+    - Autoescaping isn't helpful for the as3ninja use-case,
+      hence it is disabled.",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-01 15:04:47+01:00,-3600,2020-01-01 15:04:47+01:00,-3600,True,False,"['.travis.yml', 'declaration.py', 'gitget.py', 'test_gitget.py']",['493f084602bc79972c2b2ec33387e5b1f3d1cdf2'],7,27,34,4,0.7142857142857143,0.8571428571428571,1.0
+fce09d346ff46d330cd1f6e5dbea2b5a2d8ac512,"Improved Dockerfile, #16, docker test preparation
+
+- alpine version updated to 3.11
+- refactored tests/test_api.py to support API tests of container
+- added tests/test_api_docker.py, which is a link to tests/test_api.py",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-02 13:55:56+01:00,-3600,2020-01-02 13:55:56+01:00,-3600,True,False,"['Dockerfile', 'test_api.py', 'test_api_docker.py']",['2d36d9e33d70bda47d33d7eb872de8d3390a264b'],16,283,299,3,1.0,1.0,0.9310344827586207
+e489ab9a502566f0be0ab011e00bcb4431c37f99,"Travis CI refactoring, api test updates, docker tests
+
+- further updates for api_tests
+- pytest.ini moved and updated
+- travis cleanup / refactoring
+- introduce docker build tests
+- test docker hub images in travis cron
+- removed tox",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-02 19:09:37+01:00,-3600,2020-01-02 19:09:37+01:00,-3600,True,False,"['.travis.yml', 'Makefile', 'install.sh', 'pytest.ini', 'reporting.sh', 'run_tests.sh', 'test_api.py', 'test_api_docker.py', 'tox.ini']",['fce09d346ff46d330cd1f6e5dbea2b5a2d8ac512'],291,130,421,9,0.0,0.0,0.041666666666666664
+79e7f00872090488027f1063d17b863857c7cbcf,"API: /schema/validate status code update + added tests
+
+- fixed #22 : status code is now 400 instead of 404
+- tests updated for status code 400
+- added test for API startup",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-02 22:01:23+01:00,-3600,2020-01-02 22:01:23+01:00,-3600,True,False,"['api.py', 'test_api.py']",['e489ab9a502566f0be0ab011e00bcb4431c37f99'],10,35,45,2,0.0,1.0,1.0
+6d45da762d5f0a8ab6339ed8dd2213afbf9bd400,"Fix #18: Schema exception handling improved
+
+`isinstance` isn't used anymore to differntiate exceptions.
+
+additional updates:
+- fixed typos
+- added test for an old and unsupported schema version
+- added test for validation against version `auto`
+- added test for RefResolutionErrors",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-03 08:55:49+01:00,-3600,2020-01-03 08:55:49+01:00,-3600,True,False,"['schema.py', 'test_schema.py']",['79e7f00872090488027f1063d17b863857c7cbcf'],17,38,55,2,1.0,1.0,1.0
+e5f5a4184a3ae36cf3dac5612e72f2d5a64216c9,"Improve Gitget exception handling and tests
+
+- gitget exception handling improved
+- gitget test updates for `_sh_quote` and `HEAD~`
+- gitget test for TimeoutExpired
+- gitget typo fixes",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-03 09:36:08+01:00,-3600,2020-01-03 09:36:08+01:00,-3600,True,False,"['gitget.py', 'test_gitget.py']",['6d45da762d5f0a8ab6339ed8dd2213afbf9bd400'],23,65,88,2,1.0,1.0,1.0
+65f79b6ad332b036ebbce9476ac4cb5fd9e28663,"Improved and fixed Vault tests, typos fixed
+
+- fixed typos in vault.py
+- fixed fixture_hvacClient -> autospec now works (was misspelled)
+- fixed test formatting issues
+- added test for VaultClient.Client() return value checks",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-03 10:38:00+01:00,-3600,2020-01-03 10:38:00+01:00,-3600,True,False,"['vault.py', 'test_vault.py']",['e5f5a4184a3ae36cf3dac5612e72f2d5a64216c9'],31,32,63,2,0.0,0.0,1.0
+4503495580878f03221cc8f1ff96d5c7299161b9,"Document as3ninja.settings.json #20
+
+- updated settings.py with comments for specific setting
+- created as3ninja_settings.rst doc
+- updated docs/conf.py to ignore __all__
+  (otherwise NinjaSettings wouldn't be included)",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-03 12:34:28+01:00,-3600,2020-01-03 12:37:36+01:00,-3600,True,False,"['settings.py', 'as3ninja_settings.rst', 'conf.py', 'index.rst']",['65f79b6ad332b036ebbce9476ac4cb5fd9e28663'],0,25,25,4,,,
+94bc602b3b47b9127b315a017f4997506117154c,version 0.3.0,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-03 12:38:08+01:00,-3600,2020-01-03 12:38:08+01:00,-3600,True,False,['__init__.py'],['4503495580878f03221cc8f1ff96d5c7299161b9'],1,1,2,1,,,
+f52a2047ebe0cdc28a4883e303733b9414944a14,"Add TemplateConfiguration feature (breaking changes)
+
+This commit introduces breaking changes!
+
+TemplateConfiguration class provides the capability to generate the
+Template Configuration from various input.
+Input can be files or ""in-line"" configurations (dicts), these are then merged.
+The merge functionality has been removed from AS3Declaration entirely,
+AS3Declaration now expects a simple dict as template_configuration.
+
+In addition a Template Configuration File or an ""in-line"" configuration can
+use the as3ninja.include namespace to further include configuration files.
+Nested includes are not supported (an included file cannot include further files)
+and an included file is only processed once (at the first occurance).
+
+Api, Cli and AS3Declaration have been updated accordingly.
+
+Furhter AS3Declaration has a new interface, .declaration and .declaration_asjson
+are now .dict() and .json().
+AS3Declaration has no .template_configuration and .configuration properties anymore,
+AS3TemplateConfiguration is now used for that.
+
+AS3TemplateConfiguration uses a new ""parent"" Class DictLike.
+DictLike makes classes ""feel"" like a dict.
+It adds comparison features, makes dict() class work and provides .get, .keys,
+.values, .items methods.
+It also modifies __repr__ and __str__.
+Any class using DictLike has to set self._dict to the actual target dict, which
+DictLike basically proxies.",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-18 11:31:08+01:00,-3600,2020-01-18 11:31:08+01:00,-3600,True,False,"['api.py', 'cli.py', 'declaration.py', 'templateconfiguration.py', 'utils.py', 'test_cli.py', 'test_declaration.py', 'test_templateconfiguration.py', 'test_utils.py', 'file.json', 'file.yaml', 'include1.yaml', 'include1_relativePath.yaml', 'include2.yaml', 'include3.yaml', 'included1.yaml', 'included2a.yaml', 'included2b.yaml', 'included2c.yaml', 'included3.yaml', 'utils.py']",['94bc602b3b47b9127b315a017f4997506117154c'],324,1154,1478,21,0.5159090909090909,1.0,0.9727272727272728
+1176bf709566cf73de7dbdf8cdb224e193c9c368,"Enhance API transform functionality
+
+transform/git added functionality:
+
+- A Declaration Template File can be specified via declaration_template
+
+Further enhancements:
+- Added tests for transform/git",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-18 12:05:48+01:00,-3600,2020-01-18 12:05:48+01:00,-3600,True,False,"['api.py', 'test_api.py', 'config.yaml', 'template.jinja2']",['f52a2047ebe0cdc28a4883e303733b9414944a14'],15,64,79,4,0.875,1.0,1.0
+53ebf7c6da43db8ac3c6ff7409a5bb99a0002939,"Add TemplateConfiguration feature (breaking changes)
+
+This commit introduces breaking changes!
+
+TemplateConfiguration class provides the capability to generate the
+Template Configuration from various input.
+Input can be files or ""in-line"" configurations (dicts), these are then merged.
+The merge functionality has been removed from AS3Declaration entirely,
+AS3Declaration now expects a simple dict as template_configuration.
+
+In addition a Template Configuration File or an ""in-line"" configuration can
+use the as3ninja.include namespace to further include configuration files.
+Nested includes are not supported (an included file cannot include further files)
+and an included file is only processed once (at the first occurance).
+
+Api, Cli and AS3Declaration have been updated accordingly.
+
+Furhter AS3Declaration has a new interface, .declaration and .declaration_asjson
+are now .dict() and .json().
+AS3Declaration has no .template_configuration and .configuration properties anymore,
+AS3TemplateConfiguration is now used for that.
+
+AS3TemplateConfiguration uses a new ""parent"" Class DictLike.
+DictLike makes classes ""feel"" like a dict.
+It adds comparison features, makes dict() class work and provides .get, .keys,
+.values, .items methods.
+It also modifies __repr__ and __str__.
+Any class using DictLike has to set self._dict to the actual target dict, which
+DictLike basically proxies.",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-19 14:00:04+01:00,-3600,2020-01-19 14:00:04+01:00,-3600,True,False,"['api.py', 'cli.py', 'declaration.py', 'templateconfiguration.py', 'utils.py', 'test_cli.py', 'test_declaration.py', 'test_templateconfiguration.py', 'test_utils.py', 'file.json', 'file.yaml', 'include1.yaml', 'include1_relativePath.yaml', 'include2.yaml', 'include3.yaml', 'included1.yaml', 'included2a.yaml', 'included2b.yaml', 'included2c.yaml', 'included3.yaml', 'utils.py']",['94bc602b3b47b9127b315a017f4997506117154c'],324,1154,1478,21,0.5159090909090909,1.0,0.9727272727272728
+12f28ad80980f597eac391fb599fd56599be5af8,"Enhance CLI interface, add CLI features
+
+Added features:
+
+- explicit command to validate declaration against AS3 schema
+
+Enhancements:
+
+- Improved logging, errors -> stderr, info -> stdout
+- exit code is now 1 for errors, and 0 for non-errors
+- git-transform now allows to specify a declaration template
+- better descriptions
+- Test enhancements + better test coverage",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-19 14:05:36+01:00,-3600,2020-01-19 14:05:36+01:00,-3600,True,False,"['cli.py', 'utils.py', 'test_cli.py', 'test_utils.py', 'config.yaml', 'config2.yaml', 'template.jinja2', 'declaration.json']",['b73e19efb468a004c867340417b07e9c46a97df9'],35,339,374,8,0.54,1.0,0.96
+7c8dd976bf020bae9a3b516745f785d31ff642a7,"Dockerfile: /home owned by as3ninja
+
+/home is used by some CI systems to place files inside the container,
+as the as3ninja container does not run as root, this operation fails
+without ownership + permissions to write to /home.
+
+/home is now owned by as3ninja.as3ninja",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-19 14:06:17+01:00,-3600,2020-01-19 14:06:17+01:00,-3600,True,False,['Dockerfile'],['12f28ad80980f597eac391fb599fd56599be5af8'],1,2,3,1,,,
+c780690c8e0a0383c39c938d9199e325c967ae48,changed version to 'edge',Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-19 14:07:28+01:00,-3600,2020-01-19 14:07:28+01:00,-3600,True,False,['__init__.py'],['7c8dd976bf020bae9a3b516745f785d31ff642a7'],1,1,2,1,,,
+a2daee400c97293384d3432db5fb9130f370823c,"fix merge conflicts of commit b73e19efb468a004c867340417b07e9c46a97df9
+
+Commit b73e19efb468a004c867340417b07e9c46a97df9 introduced merge conflicts
+and the resolved conflicts where not saved before pushing the commit.
+
+This is now solved.",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-19 14:15:55+01:00,-3600,2020-01-19 14:15:58+01:00,-3600,True,False,['api.py'],['c780690c8e0a0383c39c938d9199e325c967ae48'],22,0,22,1,0.0,1.0,1.0
+d896e121e154b5fe633585a4a464d6bc015ebd25,API now handles KeyError exception #28 / missing declaration_template correctly,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-19 19:36:54+01:00,-3600,2020-01-19 19:36:54+01:00,-3600,True,False,['api.py'],['a2daee400c97293384d3432db5fb9130f370823c'],0,1,1,1,0.0,1.0,1.0
+0cf4eb08e132de90a6c60b5abe89687cedbf2db6,"API test fixes for issue #27
+
+- API test fixes for live docker tests
+- run_tests.sh update",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-19 19:39:33+01:00,-3600,2020-01-19 19:39:33+01:00,-3600,True,False,"['run_tests.sh', 'test_api.py', 'template.jinja2']",['d896e121e154b5fe633585a4a464d6bc015ebd25'],10,15,25,3,0.0,1.0,1.0
+19ce575319ae0a91612cda153a59cc073fdaaad2,"Implements a filter for Vault secrets #23
+
+- Implements dict_filter utils function
+- Implements secret.filter
+- Adds tests
+- Adds documentation for secret.filter",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-25 09:12:44+01:00,-3600,2020-01-25 09:38:49+01:00,-3600,True,False,"['utils.py', 'vault.py', 'vault.rst', 'test_utils.py', 'test_vault.py']",['0cf4eb08e132de90a6c60b5abe89687cedbf2db6'],36,389,425,5,0.4166666666666667,0.175,0.44166666666666665
+ee8e94da09817c581d4cd76eb5aba4cb1111abec,Update run_tests.sh to print docker container logs,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-25 09:41:30+01:00,-3600,2020-01-25 09:41:33+01:00,-3600,True,False,['run_tests.sh'],['19ce575319ae0a91612cda153a59cc073fdaaad2'],8,20,28,1,,,
+4e8e7a3010fa767c5a7e607d42e99b06342fa796,Code formatting updates,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-01-25 10:06:19+01:00,-3600,2020-01-25 10:06:19+01:00,-3600,True,False,"['templateconfiguration.py', 'test_api.py', 'test_gitget.py', 'test_main.py', 'test_schema.py', 'test_templateconfiguration.py', 'test_utils.py', 'test_vault.py', 'utils.py']",['ee8e94da09817c581d4cd76eb5aba4cb1111abec'],58,85,143,9,0.39285714285714285,0.9285714285714286,0.6428571428571429
+b792cb1265973d647dad15cce0bed93cb66d4f7f,document TemplateConfiguration,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-15 14:39:08+01:00,-3600,2020-02-15 14:39:08+01:00,-3600,True,False,"['templateconfiguration.py', 'templating.rst']",['4e8e7a3010fa767c5a7e607d42e99b06342fa796'],2,140,142,2,,,
+b3cdfe785294021ac3ab8ddbe08a60fd7894158a,"Move to pyproject.toml and Poetry #14
+
+- Documentation update
+- Dockerfile updated to use poetry
+- Further removed ecosystem boilerplate
+- Updated dependencies",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-15 14:39:50+01:00,-3600,2020-02-15 14:39:50+01:00,-3600,True,False,"['.dockerignore', '.editorconfig', '.flake8', '.gitattributes', '.readthedocs.yaml', 'Dockerfile', 'MANIFEST.in', 'Makefile', 'Pipfile', 'Pipfile.lock', '__init__.py', 'as3ninja.rst', 'contributing.rst', 'requirements.txt', 'usage.rst', 'poetry.lock', 'pyproject.toml', 'setup.cfg', 'setup.py', 'install.sh']",['b792cb1265973d647dad15cce0bed93cb66d4f7f'],1236,1564,2800,20,,,
+9c9f9d0925d010e7df39fc2b6e59be49fb89beb5,fixing travis CI,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-15 14:51:43+01:00,-3600,2020-02-15 14:51:43+01:00,-3600,True,False,['install.sh'],['b3cdfe785294021ac3ab8ddbe08a60fd7894158a'],3,4,7,1,,,
+a454418390cfff42467b8a849210e48abed35fe8,Dockertests: fix race condition (container start time),Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-15 15:30:48+01:00,-3600,2020-02-15 15:30:48+01:00,-3600,True,False,['run_tests.sh'],['9c9f9d0925d010e7df39fc2b6e59be49fb89beb5'],0,3,3,1,,,
+0c9f9238724f234e3bbb975154a1d1f8c0a50461,"Dependency updates, set version 0.4.0",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-15 17:19:06+01:00,-3600,2020-02-15 17:19:06+01:00,-3600,True,False,"['__init__.py', 'requirements.txt', 'poetry.lock', 'pyproject.toml']",['a454418390cfff42467b8a849210e48abed35fe8'],136,62,198,4,,,
+46b610a9e01ffb3f77fad5c1132e16035928fd58,"Add format ckecks to schema validation
+
+format checks for AS3 / F5 formats",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-23 12:59:00+01:00,-3600,2020-02-23 12:59:00+01:00,-3600,True,False,"['schema.py', 'test_schema.py']",['0c9f9238724f234e3bbb975154a1d1f8c0a50461'],18,153,171,2,0.35714285714285715,1.0,0.9795918367346939
+6a1db5bd438cecc06ece09d35ecd90ac2e9c2dc9,"remove $schema from declarations
+
+$schema isn't accepted by AS3 as of today and the declaration would fail.
+
+See: https://github.com/F5Networks/f5-appsvcs-extension/issues/173",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-23 12:59:46+01:00,-3600,2020-02-23 12:59:46+01:00,-3600,True,False,"['declaration.py', 'test_declaration.py']",['46b610a9e01ffb3f77fad5c1132e16035928fd58'],0,22,22,2,0.6363636363636364,1.0,1.0
+c8c093a56a8c66e9d1dabad9e035f1dcad80ebed,"Documentation fixes (formatting, history)",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-23 13:00:28+01:00,-3600,2020-02-23 13:00:28+01:00,-3600,True,False,"['contributing.rst', 'history.rst', 'templating.rst']",['6a1db5bd438cecc06ece09d35ecd90ac2e9c2dc9'],43,25,68,3,,,
+f89cf52f8e04862dc961436200012a8065444d77,edge version: 0.5.0-edge,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-23 13:04:29+01:00,-3600,2020-02-23 13:04:29+01:00,-3600,True,False,"['__init__.py', 'pyproject.toml']",['c8c093a56a8c66e9d1dabad9e035f1dcad80ebed'],2,2,4,2,,,
+fe82fe8722d36fb03a3d4f26637307823f71cf78,"make dockertesting more reliable
+
+when CI environment is slow, docker tests fail due to container
+not being avialable in time",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-23 13:38:26+01:00,-3600,2020-02-23 13:38:33+01:00,-3600,True,False,['run_tests.sh'],['f89cf52f8e04862dc961436200012a8065444d77'],2,20,22,1,,,
+c3015e3f13fb9d4c70c8dfad312161c7b7d057bc,PEP440 compatible versioning for edge + more reliable Dockerfile,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-02-23 14:25:34+01:00,-3600,2020-02-23 14:25:34+01:00,-3600,True,False,"['Dockerfile', '__init__.py', 'pyproject.toml']",['fe82fe8722d36fb03a3d4f26637307823f71cf78'],4,4,8,3,,,
+b7e3c84a2176e8b567cd21351f22d81419678dad,"Improve code quality and formatting
+
+* gitget: subprocess.run check updated
+
+    - Added explicit check=False for pylint / better clarity.
+    - Updated TimeoutExpired exception clause to print full exception info,
+      this prevents issues in cornercases where stderr wasn't available
+
+* cleaned up unused includes
+
+* pylint inline flags
+
+* variable name updates",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-07 12:46:10+01:00,-3600,2020-03-07 12:46:10+01:00,-3600,True,False,"['__init__.py', 'api.py', 'cli.py', 'declaration.py', 'gitget.py', 'schema.py', 'settings.py', 'templateconfiguration.py', 'utils.py', 'vault.py']",['c3015e3f13fb9d4c70c8dfad312161c7b7d057bc'],95,125,220,10,0.0,0.0,0.0
+cc7e12dbe87c24a98169ba4b95a4dd1801efc346,"Refactored jinja2 filters, functions and tests",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-07 12:55:14+01:00,-3600,2020-03-07 12:55:14+01:00,-3600,True,False,"['declaration.py', 'filters.py', '__init__.py', 'filterfunctions.py', 'filters.py', 'functions.py', 'j2ninja.py', 'tests.py', 'vault.py', 'concepts.rst', 'readme.rst', 'templating.rst', 'test_declaration.py', 'test_jinja2_filters.py', 'test_jinja2_functions.py', 'test_jinja2_j2ninja.py']",['b7e3c84a2176e8b567cd21351f22d81419678dad'],220,289,509,16,1.0,1.0,1.0
+be1681ed36ecf1a8349bc1d420160c32b6c0c2c7,"Refactor as3ninja settings module, add unit tests",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-07 12:57:20+01:00,-3600,2020-03-07 12:57:20+01:00,-3600,True,False,"['settings.py', 'test_settings.py']",['cc7e12dbe87c24a98169ba4b95a4dd1801efc346'],63,253,316,2,0.9824561403508771,1.0,1.0
+caa2df8417dd358bdb703836607e4dd802f7ca6b,"Refactor utils.deserialize
+
+simplifies deserialize functionality",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-07 12:58:46+01:00,-3600,2020-03-07 12:58:46+01:00,-3600,True,False,"['utils.py', 'test_utils.py', 'utils.py']",['be1681ed36ecf1a8349bc1d420160c32b6c0c2c7'],109,35,144,3,0.23076923076923078,0.6153846153846154,0.6153846153846154
+76829f5dfa1e45b4469adf8f620aeee9308266ba,update dockertesting script,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-07 13:00:12+01:00,-3600,2020-03-07 13:00:12+01:00,-3600,True,False,['run_tests.sh'],['caa2df8417dd358bdb703836607e4dd802f7ca6b'],4,4,8,1,,,
+076fb490b65006e561d7fd6212e9cdb016fc05c8,version 0.5.0b2+edge,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-07 13:01:06+01:00,-3600,2020-03-07 13:01:06+01:00,-3600,True,False,"['__init__.py', 'pyproject.toml']",['76829f5dfa1e45b4469adf8f620aeee9308266ba'],2,2,4,2,,,
+34952a4230655b1c2828f9f3bc6c91eae7ee4c41,Update dependency versions,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-07 13:46:32+01:00,-3600,2020-03-07 13:46:32+01:00,-3600,True,False,"['Makefile', 'requirements.txt', 'poetry.lock', 'pyproject.toml']",['076fb490b65006e561d7fd6212e9cdb016fc05c8'],113,141,254,4,,,
+6b020dbf8146ec3c4b0af3d87e58d1a8d507c568,Documentation fixes,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-07 14:00:35+01:00,-3600,2020-03-07 14:00:35+01:00,-3600,True,False,"['filters.py', 'as3ninja.jinja2.rst', 'as3ninja.rst']",['34952a4230655b1c2828f9f3bc6c91eae7ee4c41'],16,63,79,3,0.0,1.0,0.0
+dc8feff3890a66e2a9913d8725c9d768848003c7,versioning update to 0.5.0.dev3 for pypi compatibilty,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-08 15:24:30+01:00,-3600,2020-03-08 15:24:30+01:00,-3600,True,False,"['Makefile', '__init__.py', 'pyproject.toml']",['6b020dbf8146ec3c4b0af3d87e58d1a8d507c568'],2,6,8,3,,,
+3c1601dea6b461b994533cf568179c522f619391,"Refactor exceptions #12
+
+- Refactor all exceptions in as3ninja.exceptions
+- Update all modules accordingly
+- Update tests accordingly
+- Code formatting updates",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-08 16:04:39+01:00,-3600,2020-03-08 16:04:39+01:00,-3600,True,False,"['declaration.py', 'exceptions.py', 'gitget.py', 'schema.py', 'templateconfiguration.py', 'utils.py', 'test_declaration.py', 'test_gitget.py', 'test_jinja2_filters.py', 'test_jinja2_functions.py', 'test_jinja2_j2ninja.py', 'test_schema.py', 'test_settings.py', 'test_templateconfiguration.py', 'test_utils.py']",['dc8feff3890a66e2a9913d8725c9d768848003c7'],180,197,377,15,0.0,0.0,0.0
+77c83193630b7926e266fa5d4ed2af78964ba413,DRYed cli declaration output,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-08 16:50:01+01:00,-3600,2020-03-08 16:50:01+01:00,-3600,True,False,['cli.py'],['3c1601dea6b461b994533cf568179c522f619391'],14,17,31,1,1.0,0.0,1.0
+0429ea2170d9bec694fb29e24acf975c235c9c8f,Improve unit tests for as3ninja.settings,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-08 17:37:49+01:00,-3600,2020-03-08 17:37:49+01:00,-3600,True,False,['test_settings.py'],['77c83193630b7926e266fa5d4ed2af78964ba413'],2,36,38,1,1.0,1.0,1.0
+208b249e5fc79381340df828e521f5c1ae774b54,"Adds AS3FormatChecker + Types, API fixes
+
+- Organize AS3 Schema relevant code in schema package
+- Introduce AS3FormatChecker which subclasses jsonschema.FormatChecker
+- Introduce F5IP* types
+- Fix API imports
+- Update/Add tests",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-14 15:10:17+01:00,-3600,2020-03-14 15:10:17+01:00,-3600,True,False,"['api.py', '__init__.py', 'as3schema.py', 'formatcheckers.py', 'types.py', 'test_schema_as3schema.py', 'test_schema_formatcheckers.py', 'test_types.py']",['0429ea2170d9bec694fb29e24acf975c235c9c8f'],114,526,640,8,1.0,1.0,0.76
+64a3f18120d07ced021fc83b34ab3cc090c86fde,remove unused import in schema/as3schema.py,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-14 15:23:23+01:00,-3600,2020-03-14 15:23:23+01:00,-3600,True,False,['as3schema.py'],['208b249e5fc79381340df828e521f5c1ae774b54'],1,0,1,1,,,
+2007cdf21bc7f056765d8a54a17bf3c7e775719e,"Python 3.6 support
+
+- Update Gitget to support python 3.6 (subprocess.run)
+- Update Gitget _run_command to expecting a tuple
+- Gitget test updates
+- Doc updates
+- CI updates
+- pyproject.toml / poetry updates and Makefile update",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-15 14:41:32+01:00,-3600,2020-03-15 14:41:32+01:00,-3600,True,False,"['.travis.yml', 'Makefile', 'README.md', '__init__.py', 'gitget.py', 'as3ninja.rst', 'as3ninja.schema.rst', 'contributing.rst', 'readme.rst', 'poetry.lock', 'pyproject.toml', 'test_gitget.py']",['64a3f18120d07ced021fc83b34ab3cc090c86fde'],83,212,295,12,1.0,1.0,1.0
+3cff1261e6bee1edd5167933099db3a2bf2b3ab0,"documentation updates
+
+- AS3FormatChecker doc fixes
+- general documentation updates",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-15 15:16:46+01:00,-3600,2020-03-15 15:16:49+01:00,-3600,True,False,"['formatcheckers.py', '_cli.svg', 'usage.rst']",['2007cdf21bc7f056765d8a54a17bf3c7e775719e'],61,114,175,3,0.0,1.0,1.0
+b8bd5742d1598a4edb923652dbe5c5788bbcbb3d,version 0.5.0,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-03-15 16:32:31+01:00,-3600,2020-03-15 16:32:31+01:00,-3600,True,False,"['__init__.py', 'pyproject.toml']",['3cff1261e6bee1edd5167933099db3a2bf2b3ab0'],2,2,4,2,,,
+2599b7aa9bc3b28f02a5ba48e58832a6bc8736e5,"version 0.5.0 (#29)
+
+* Add format checking to schema validation for AS3 specific Formats 208b249
+    - Adds AS3FormatChecker (jsonschema compatible FormatChecker)
+    - Add Types (F5IP, F5IPv4, F5IPv6)
+
+* Auto-remove `$schema` from declarations 6a1db5b
+    - `$schema` isn't accepted by AS3 as of today and the declaration would fail. See: https://github.com/F5Networks/f5-appsvcs-extension/issues/173
+
+* PEP440 compatible versioning
+
+* Python 3.6 support 2007cdf
+    - Improved Gitget subprocess.run
+    - Added explicit check=False for pylint / better clarity.
+    - Updated TimeoutExpired exception clause to print full exception info,
+      this prevents issues in cornercases where stderr wasn't available
+    - Support python 3.6 (subprocess.run)
+    - Update Gitget _run_command to expecting a tuple
+
+* Improved code quality and formatting
+    - pylint inline flags
+    - variable name updates
+
+* Refactored jinja2 filters, functions and tests cc7e12d
+
+* Refactored as3ninja settings module, add unit tests be1681e
+
+* Refactored utils.deserialize, simplifies deserialize functionality caa2df8
+
+* Documentation updates and fixes
+
+* Refactor exceptions #12
+    - Refactor all exceptions in as3ninja.exceptions
+    - Update all modules accordingly
+    - Update tests accordingly
+    - Code formatting updates
+
+* Re-organize AS3 Schema relevant code in schema package",Simon Kowallik,github@simonkowallik.com,GitHub,noreply@github.com,2020-03-15 16:52:14+01:00,-3600,2020-03-15 16:52:14+01:00,-3600,True,False,"['.travis.yml', 'Dockerfile', 'Makefile', 'README.md', '__init__.py', 'api.py', 'cli.py', 'declaration.py', 'exceptions.py', 'filters.py', 'gitget.py', '__init__.py', 'filterfunctions.py', 'filters.py', 'functions.py', 'j2ninja.py', 'tests.py', '__init__.py', 'as3schema.py', 'formatcheckers.py', 'settings.py', 'templateconfiguration.py', 'types.py', 'utils.py', 'vault.py', '_cli.svg', 'as3ninja.jinja2.rst', 'as3ninja.rst', 'as3ninja.schema.rst', 'concepts.rst', 'contributing.rst', 'history.rst', 'readme.rst', 'requirements.txt', 'templating.rst', 'usage.rst', 'poetry.lock', 'pyproject.toml', 'run_tests.sh', 'test_declaration.py', 'test_gitget.py', 'test_jinja2_filters.py', 'test_jinja2_functions.py', 'test_jinja2_j2ninja.py', 'test_schema_as3schema.py', 'test_schema_formatcheckers.py', 'test_settings.py', 'test_templateconfiguration.py', 'test_types.py', 'test_utils.py', 'utils.py']",['dab943e77edc32750eb26d9bf831db357dfc1f86'],989,2087,3076,51,0.9250645994832042,1.0,0.9948320413436692
+b6e42bf85a858d0c76ee3069c5a70ef907e387ad,"Security: Dependency updates
+
+Addresses PRs: #31 #32 #33 #34 #35",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-07-30 00:42:21+02:00,-7200,2020-08-05 18:54:13+02:00,-7200,True,False,"['as3ninja.rst', 'requirements.txt', 'poetry.lock', 'pyproject.toml']",['b8bd5742d1598a4edb923652dbe5c5788bbcbb3d'],253,265,518,4,,,
+f677a592f0d8cefd1563aa21551c837ac4ed38cf,"version 0.5.1
+
+[skip ci]",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-07-30 00:50:44+02:00,-7200,2020-08-05 18:54:13+02:00,-7200,True,False,"['__init__.py', 'pyproject.toml']",['b6e42bf85a858d0c76ee3069c5a70ef907e387ad'],2,2,4,2,,,
+03bfecbd18891b295a3ae922b487e8981bcc73f1,"Security: Dependency updates
+
+Addresses PRs: #31 #32 #33 #34 #35",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-07-30 00:42:21+02:00,-7200,2020-08-05 19:03:22+02:00,-7200,True,False,"['as3ninja.rst', 'requirements.txt', 'poetry.lock', 'pyproject.toml']",['2599b7aa9bc3b28f02a5ba48e58832a6bc8736e5'],253,265,518,4,,,
+f9997dfa0e26d481452c727fe2c2a03a811e189a,"version 0.5.1
+
+[skip ci]",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-07-30 00:50:44+02:00,-7200,2020-08-05 19:03:22+02:00,-7200,True,False,"['__init__.py', 'pyproject.toml']",['03bfecbd18891b295a3ae922b487e8981bcc73f1'],2,2,4,2,,,
+a5cd1889e04c7af36a19525ad7e171bed1c9970d,Fix deprecation warning for fastapi #36,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-08-11 10:59:07+02:00,-7200,2020-08-11 10:59:07+02:00,-7200,True,False,['api.py'],['f677a592f0d8cefd1563aa21551c837ac4ed38cf'],1,0,1,1,,,
+9ac149db8928b66235a5200cdb4f864331cd67a5,Fix deserialize false deserialization error,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-08-11 19:39:48+02:00,-7200,2020-08-11 19:39:48+02:00,-7200,True,False,['utils.py'],['a5cd1889e04c7af36a19525ad7e171bed1c9970d'],1,1,2,1,,,
+100e8ef609155905c930ec9d4f424ffa84733822,Fix AS3Declaration TypeError exception on transformation,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 13:34:11+02:00,-7200,2020-09-13 13:34:11+02:00,-7200,True,False,['declaration.py'],['9ac149db8928b66235a5200cdb4f864331cd67a5'],2,2,4,1,,,
+82ec2516b3cfcb91965a591241f86d58c30bc0cb,Add yaml !include support,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 13:39:06+02:00,-7200,2020-09-13 13:39:06+02:00,-7200,True,False,"['utils.py', 'templating.rst', 'poetry.lock', 'test_utils.py', 'circular_RecursionError.yaml', 'double.yaml', 'double_incorrect_usage.yaml', 'double_single_result.yaml', 'explicit.yaml', 'force_list.yaml', '2.yaml', '3.yaml', '1.yaml', 'a.yaml', 'b.yaml', 'c.yaml', 'non_existend_include.yaml', 'single_2.yaml', 'single_all.yaml', 'type_error.yaml', 'utils.py']",['100e8ef609155905c930ec9d4f424ffa84733822'],270,421,691,21,0.0,0.0,0.0
+f27759dcc12533f5c17bf19f936976e2c4cbfc3c,"Type hint improvements
+
+- Improve type hints for AS3Declaration
+- Gitget + CLI typing fixes for depth and repodir
+- Fix initialization of _settings, fixes typing as well
+- Fix typing, replace abc.Mapping with more precise dict checks
+- Other typing updates",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 13:39:51+02:00,-7200,2020-09-13 13:39:51+02:00,-7200,True,False,"['cli.py', 'declaration.py', 'gitget.py', 'settings.py', 'templateconfiguration.py', 'vault.py']",['82ec2516b3cfcb91965a591241f86d58c30bc0cb'],33,34,67,6,0.0,1.0,0.0
+d7e8e7fc4fb14e9027b3edba9fe111df5f6afb95,"Add additional jinj2 filters + functions, add corrections
+
+- filterfunction to_list: Converts a string to a list without spliting charachters
+- Fix bug for readfile filterfunction add contextfunction decorator
+- Add binary type support to base64 functions
+- Add hashlib filterfunctions
+- Add flterfunction env: Read variables from the execution environment",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 13:41:03+02:00,-7200,2020-09-13 13:41:03+02:00,-7200,True,False,"['filterfunctions.py', 'test_jinja2_filters.py']",['f27759dcc12533f5c17bf19f936976e2c4cbfc3c'],17,476,493,2,0.6140350877192983,1.0,0.6754385964912281
+30c226d7030f8eb90b65af5cbe865d67c3965677,Add schema update and version list function to CLI,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 13:44:06+02:00,-7200,2020-09-13 13:44:06+02:00,-7200,True,False,"['cli.py', 'test_cli.py']",['d7e8e7fc4fb14e9027b3edba9fe111df5f6afb95'],1,163,164,2,1.0,1.0,1.0
+c083aeae0c1d746c1b12b62e087f8e4f5ad7fb6c,Code formatting updates,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 13:48:25+02:00,-7200,2020-09-13 13:48:25+02:00,-7200,True,False,"['api.py', 'cli.py', 'templateconfiguration.py', 'vault.py', 'test_cli.py', 'test_jinja2_filters.py']",['30c226d7030f8eb90b65af5cbe865d67c3965677'],54,29,83,6,0.0,0.0,0.0
+185ac6e6a92a13dab0d526281a758879d7da832a,Updated examples,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 13:52:42+02:00,-7200,2020-09-13 13:52:48+02:00,-7200,True,False,"['README.md', 'Makefile', 'README.md', 'config.yaml', 'declaration.j2', 'declaration.json', 'game.irule', 'lesson10.js', 'lesson4.js', 'Makefile', 'README.md', 'all_tenants.yaml', 'template.j2', 'tenant_CakeFactory.yaml', 'tenant_CookieCorp.yaml', 'website.yaml', 'tenant.yaml', 'custom_cookies.yaml', 'website.yaml', 'custom_cookies.yaml', 'tenant.yaml']",['c083aeae0c1d746c1b12b62e087f8e4f5ad7fb6c'],0,616,616,21,0.4393063583815029,0.5375722543352601,1.0
+c9130cb84de50d3435437d90c14ef0a4b5724cc4,Updated dependencies,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 14:01:07+02:00,-7200,2020-09-13 14:01:07+02:00,-7200,True,False,['poetry.lock'],['185ac6e6a92a13dab0d526281a758879d7da832a'],73,51,124,1,,,
+9511c51e6bc1c62ba7512904d965c9ca0afeb529,Updated documentation,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 14:24:04+02:00,-7200,2020-09-13 14:24:04+02:00,-7200,True,False,"['filterfunctions.py', 'as3ninja.rst', 'usage.rst']",['c9130cb84de50d3435437d90c14ef0a4b5724cc4'],1,48,49,3,0.0,1.0,1.0
+48c3d3225040dff5d7779c669ea260b98ccdfa55,Version 0.6.0-dev.1,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 14:25:50+02:00,-7200,2020-09-13 14:25:50+02:00,-7200,True,False,"['__init__.py', 'pyproject.toml']",['9511c51e6bc1c62ba7512904d965c9ca0afeb529'],2,2,4,2,,,
+1f53cf9bf85df790852a05050b8a4ed4825c71f7,udpate doc requirements,Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-13 14:36:52+02:00,-7200,2020-09-13 14:36:52+02:00,-7200,True,False,['requirements.txt'],['48c3d3225040dff5d7779c669ea260b98ccdfa55'],23,22,45,1,,,
+b251c4448abd23cb20ff98171757bb9a43427a79,"Updated lock file + new docker base image
+
+This should also address the previous poetry.lock file issue caused
+by poetry preview build.",Simon Kowallik,github@simonkowallik.com,Simon Kowallik,github@simonkowallik.com,2020-09-14 20:39:55+02:00,-7200,2020-09-14 20:40:00+02:00,-7200,True,False,"['Dockerfile', 'Makefile', 'requirements.txt', 'poetry.lock']",['1f53cf9bf85df790852a05050b8a4ed4825c71f7'],68,116,184,4,,,
+3697e42b99e51887a571953a8167f91fcd9cbe3d,update dependecies,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-24 10:21:49+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,"['requirements.txt', 'poetry.lock', 'pyproject.toml']",['b251c4448abd23cb20ff98171757bb9a43427a79'],909,983,1892,3,,,
+09b4cb6535181458403ef34373604b2a28b1edbc,changes to support updated packages,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-24 10:22:29+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,"['filterfunctions.py', 'filters.py', 'vault.py', 'utils.py']",['3697e42b99e51887a571953a8167f91fcd9cbe3d'],9,8,17,4,,,
+0a71123acdbd419d2fa176be071f290cf3e337a4,add idea to ignore,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-24 14:38:21+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,['.gitignore'],['09b4cb6535181458403ef34373604b2a28b1edbc'],0,1,1,1,,,
+4e9fe44e722e6d8ca4d0b0ed3d42056123f0c724,update docker to build with the latest versions,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-25 00:48:35+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,['Dockerfile'],['0a71123acdbd419d2fa176be071f290cf3e337a4'],5,3,8,1,,,
+3a27d2984dd97c3cb57927e87cbc2e315d9a3684,package updates,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-25 01:12:18+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,"['requirements.txt', 'poetry.lock']",['4e9fe44e722e6d8ca4d0b0ed3d42056123f0c724'],5,5,10,2,,,
+e41c9d3b5a113cf3e8cf72950f60fc8716b7e1ea,force error on schema validation,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-25 01:12:49+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,['test_api.py'],['3a27d2984dd97c3cb57927e87cbc2e315d9a3684'],1,1,2,1,,,
+704de9f1b9614755a7ee2aaccc1b7cdac3a97725,correct issue with click multiple items,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-25 20:51:12+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,['cli.py'],['e41c9d3b5a113cf3e8cf72950f60fc8716b7e1ea'],2,2,4,1,,,
+bd625feed4e30ab57f0046c2014e10cac734997f,incremented version,Nuno Barros,nuno.barros@sap.com,Simon Kowallik,github@simonkowallik.com,2022-08-26 10:11:52+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,"['__init__.py', 'pyproject.toml']",['704de9f1b9614755a7ee2aaccc1b7cdac3a97725'],2,2,4,2,,,
+8bd649b4430b99b9888dd6470d39bc7b3f23283e,remove line causing no configuration to be loaded,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-26 12:36:01+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,['cli.py'],['bd625feed4e30ab57f0046c2014e10cac734997f'],1,0,1,1,,,
+1532b2ede8dc0f5c2a59feaabce4b624c3408e7e,skip tests for non valid schemas,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-26 14:02:40+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,['test_schema_as3schema.py'],['8bd649b4430b99b9888dd6470d39bc7b3f23283e'],0,2,2,1,,,
+31b35dc5667565916969b7aa14bfe3c324d97286,correct test input,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-26 14:40:04+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,['test_cli.py'],['1532b2ede8dc0f5c2a59feaabce4b624c3408e7e'],0,2,2,1,0.0,1.0,1.0
+04c1555619c402e07d9a157706b8ade02da3e921,correct test to work with new schema versions,Nuno Barros,nunofabarros@gmail.com,Simon Kowallik,github@simonkowallik.com,2022-08-26 15:47:09+01:00,-3600,2022-11-19 10:45:52+01:00,-3600,True,False,['test_schema_as3schema.py'],['31b35dc5667565916969b7aa14bfe3c324d97286'],4,3,7,1,0.0,0.0,0.0
+ee625a5530d0e3cba4af24a28e3e4a0efcf49943,"fix: test improvements
+
+- better compatibility with newer as3 schemas
+- test data changes",Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 11:57:45+01:00,-3600,2022-11-19 11:59:23+01:00,-3600,True,False,"['test_api.py', 'test_schema_as3schema.py', 'template.jinja2']",['04c1555619c402e07d9a157706b8ade02da3e921'],10,8,18,3,0.0,0.0,0.0
+3aa5491ecf419f1b570c68a273a829ea9dedcf9e,style: test code style updated,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 12:01:18+01:00,-3600,2022-11-19 12:01:18+01:00,-3600,True,False,"['test_api.py', 'test_cli.py', 'test_declaration.py', 'test_jinja2_filters.py', 'test_schema_as3schema.py', 'test_templateconfiguration.py']",['ee625a5530d0e3cba4af24a28e3e4a0efcf49943'],15,65,80,6,0.2978723404255319,1.0,1.0
+1a03b65a537c3efed0c4e7965823e482e1230d7d,fix: test_cli passes again,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 12:08:52+01:00,-3600,2022-11-19 12:08:52+01:00,-3600,True,False,['test_cli.py'],['3aa5491ecf419f1b570c68a273a829ea9dedcf9e'],1,1,2,1,,,
+6b0fd707048246aafd9594420d6c55337b7043df,style: code style updates,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 12:10:26+01:00,-3600,2022-11-19 12:10:26+01:00,-3600,True,False,"['api.py', 'declaration.py', 'gitget.py']",['1a03b65a537c3efed0c4e7965823e482e1230d7d'],25,27,52,3,,,
+45b6f5bd86685a1d9c6aaacbae3f4e867363f4a3,fix: cli parameters and defaults,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 12:11:17+01:00,-3600,2022-11-19 12:11:17+01:00,-3600,True,False,['cli.py'],['6b0fd707048246aafd9594420d6c55337b7043df'],10,20,30,1,1.0,1.0,0.6
+a4b06cf19588ddcedb28e31d94554595b3584eb8,build: updated dependencies and project definition,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 12:40:09+01:00,-3600,2022-11-19 12:40:29+01:00,-3600,True,False,"['.gitignore', 'Makefile', 'requirements.txt', 'poetry.lock', 'pyproject.toml']",['45b6f5bd86685a1d9c6aaacbae3f4e867363f4a3'],417,452,869,5,,,
+d222b21e00b8fe5c5ac0c89021f2040f61d97917,test: updated test runs + ci,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 12:41:53+01:00,-3600,2022-11-19 12:41:53+01:00,-3600,True,False,"['ci-pipeline.yaml', 'pytest.ini', 'run_tests.sh']",['a4b06cf19588ddcedb28e31d94554595b3584eb8'],4,54,58,3,,,
+817399f2c1017f86a934d0619dcf367a1226f4dc,ci: remove travis,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 12:46:06+01:00,-3600,2022-11-19 12:46:06+01:00,-3600,True,False,"['.travis.yml', 'Makefile']",['d222b21e00b8fe5c5ac0c89021f2040f61d97917'],32,1,33,2,,,
+f877b84e189533a79df15944846495216a302984,ci: add codeclimate upload,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 12:54:28+01:00,-3600,2022-11-19 12:54:28+01:00,-3600,True,False,['ci-pipeline.yaml'],['817399f2c1017f86a934d0619dcf367a1226f4dc'],7,7,14,1,,,
+a7450b944eb5fc5c1c08dd8eb8f4d94504925159,chore: new badges :tada:,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 13:02:23+01:00,-3600,2022-11-19 13:09:32+01:00,-3600,True,False,"['README.md', '_heading.rst']",['f877b84e189533a79df15944846495216a302984'],16,16,32,2,,,
+591d9c06870e1b745686e1d07940ebeec7b47155,chore: add new examples :sparkles:,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 13:12:32+01:00,-3600,2022-11-19 13:12:32+01:00,-3600,True,False,"['usage.rst', 'AS3Ninja.postman_collection.json']",['a7450b944eb5fc5c1c08dd8eb8f4d94504925159'],0,736,736,2,,,
+f64df5e313f57541fe05e57bacfcf4bca06d5292,build: docs build :books:,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 14:18:06+01:00,-3600,2022-11-19 14:18:06+01:00,-3600,True,False,"['.readthedocs.yaml', 'README.md', 'readme.rst']",['591d9c06870e1b745686e1d07940ebeec7b47155'],2,18,20,3,,,
+6080b2a5245f1e03ce9cd9ccff3e8b2363c7e856,docs: updated heading and removed travis,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 14:24:43+01:00,-3600,2022-11-19 14:24:43+01:00,-3600,True,False,"['_heading.rst', 'contributing.rst']",['f64df5e313f57541fe05e57bacfcf4bca06d5292'],6,6,12,2,,,
+675a0a7bdaa5640cfd5355d1ae0159ff809fad44,0.6.0 :rocket:,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-19 14:26:20+01:00,-3600,2022-11-19 14:26:20+01:00,-3600,True,False,"['__init__.py', 'pyproject.toml']",['6080b2a5245f1e03ce9cd9ccff3e8b2363c7e856'],2,2,4,2,,,
+44053e34831c4c6aacdc3013401f04f60311fee0,fix: make test class method static,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-20 12:41:01+01:00,-3600,2022-11-20 12:41:01+01:00,-3600,True,False,['test_utils.py'],['8e3323f1581dac8fa82e533b9d0d64387ea0ebe8'],0,2,2,1,,,
+ae35b89112c44d4e8956a617409ba217002905ee,ci: add pypi releae upload,Simon Kowallik,sk-github@simonkowallik.com,Simon Kowallik,sk-github@simonkowallik.com,2022-11-20 12:57:33+01:00,-3600,2022-11-20 12:57:33+01:00,-3600,True,False,"['release-pypi.yaml', '.travis.yml']",['44053e34831c4c6aacdc3013401f04f60311fee0'],32,37,69,2,,,
+b6804024599e551e035808f29e77cccc5ae3675a,"0.6.1 (#75)
+
+* fix: gh issue #74
+* version: 0.6.1",Simon Kowallik,github@simonkowallik.com,GitHub,noreply@github.com,2023-02-18 11:50:04+01:00,-3600,2023-02-18 11:50:04+01:00,-3600,True,False,"['__init__.py', 'cli.py', 'exceptions.py', 'as3schema.py', 'formatcheckers.py', 'requirements.txt', 'poetry.lock', 'pyproject.toml', 'test_cli.py', 'test_jinja2_filters.py', 'test_schema_as3schema.py', 'errors.json']",['ae35b89112c44d4e8956a617409ba217002905ee'],716,1609,2325,12,0.1076923076923077,0.2923076923076923,0.4153846153846154

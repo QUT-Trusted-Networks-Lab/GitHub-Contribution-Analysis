@@ -1,0 +1,51 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+ae79c451c86289014a0c297c0cf8e45da1b1f76a,Initial code import,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2019-12-13 10:45:53+02:00,-7200,2019-12-13 12:03:05+02:00,-7200,True,False,"['.coveragerc', 'py.yml', '.gitignore', 'LICENSE', 'README.md', '__init__.py', '__main__.py', 'base.py', 'config.py', 'context.py', '__init__.py', 'http.py', 'websocket.py', '__init__.py', 'streams.py', 'requirements-dev.in', 'requirements-dev.txt', 'requirements.in', 'requirements.txt', 'setup.cfg', 'setup.py', '__init__.py', 'test_asgiproxy.py', 'utils.py']",[],0,652,652,24,0.6708860759493671,0.8670886075949367,0.5284810126582279
+ae1a80bfc27022d51a5b2a569c03866e1d1a50fa,"Bump aiohttp from 3.6.2 to 3.7.4
+
+Bumps [aiohttp](https://github.com/aio-libs/aiohttp) from 3.6.2 to 3.7.4.
+- [Release notes](https://github.com/aio-libs/aiohttp/releases)
+- [Changelog](https://github.com/aio-libs/aiohttp/blob/master/CHANGES.rst)
+- [Commits](https://github.com/aio-libs/aiohttp/compare/v3.6.2...v3.7.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Aarni Koskela,akx@iki.fi,2021-02-26 02:42:42+00:00,0,2021-02-26 12:44:39+02:00,-7200,True,False,"['requirements-dev.txt', 'requirements.txt']",['ae79c451c86289014a0c297c0cf8e45da1b1f76a'],28,74,102,2,,,
+f10d211205242f2ac016fd54dc8d23ef1cc7e3db,"Bump py from 1.8.0 to 1.10.0
+
+Bumps [py](https://github.com/pytest-dev/py) from 1.8.0 to 1.10.0.
+- [Release notes](https://github.com/pytest-dev/py/releases)
+- [Changelog](https://github.com/pytest-dev/py/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/py/compare/1.8.0...1.10.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Aarni Koskela,akx@iki.fi,2021-04-20 19:00:14+00:00,0,2021-04-21 10:18:57+03:00,-10800,True,False,['requirements-dev.txt'],['ae1a80bfc27022d51a5b2a569c03866e1d1a50fa'],1,1,2,1,,,
+e63958640fee35dadf63578740cd47ec9444f1cf,Update requirements,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-05-28 09:10:18+03:00,-10800,2021-05-28 09:10:32+03:00,-10800,True,False,['requirements.txt'],['f10d211205242f2ac016fd54dc8d23ef1cc7e3db'],9,9,18,1,,,
+3876b8e86e841693eaf31220f08fc74c40a1339e,Read requirements from txt,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-05-28 08:16:15+03:00,-10800,2021-05-28 09:10:32+03:00,-10800,True,False,['setup.py'],['e63958640fee35dadf63578740cd47ec9444f1cf'],3,10,13,1,1.0,1.0,1.0
+eb50f3219f57f8f794c8e6a8d3ef465380894155,"Update dev deps, add mypy/flake8/black/isort",Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-05-28 08:22:30+03:00,-10800,2021-05-28 09:11:04+03:00,-10800,True,False,"['mypy.ini', 'requirements-dev.in', 'requirements-dev.txt', 'setup.cfg']",['3876b8e86e841693eaf31220f08fc74c40a1339e'],30,118,148,4,,,
+45310e395cad2bed6024cfe929ad2c1ddb290da3,"Make flake8 and mypy happy
+
+Split CI into lint/build/package",Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-05-28 08:58:30+03:00,-10800,2021-05-28 09:22:44+03:00,-10800,True,False,"['py.yml', '__main__.py', 'config.py', 'context.py', 'http.py', 'websocket.py', 'streams.py', 'setup.py']",['eb50f3219f57f8f794c8e6a8d3ef465380894155'],55,131,186,8,0.0,1.0,0.0
+0b8e8959e44ad933f5ac49635361c135221461ef,Add py.typed marker,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-05-28 09:09:17+03:00,-10800,2021-05-28 09:28:31+03:00,-10800,True,False,"['MANIFEST.in', 'py.typed']",['45310e395cad2bed6024cfe929ad2c1ddb290da3'],0,1,1,2,,,
+6b3e7f62e4709275a9042c6273eace54c988d219,Add make_http_scope test helper,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-05-28 10:11:19+03:00,-10800,2021-05-28 10:21:01+03:00,-10800,True,False,"['test_asgiproxy.py', 'utils.py']",['27e0b12a4e8336e5c2d5e4455dd28600d4feabaf'],13,34,47,2,0.0,1.0,0.0
+28c37960c2cd927c08e22196c9a121c542ead22a,Move ExampleComProxyConfig to module,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-05-28 11:05:32+03:00,-10800,2021-05-28 11:05:51+03:00,-10800,True,False,"['configs.py', 'test_asgiproxy.py']",['6b3e7f62e4709275a9042c6273eace54c988d219'],5,7,12,2,1.0,0.0,0.0
+d7c63948d255fb88796bf26523c38b7c2ee9cd4a,"Pass client query string through to upstream unedited
+
+Refs #3",Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-05-28 10:18:27+03:00,-10800,2021-05-28 11:31:05+03:00,-10800,True,False,"['config.py', 'test_asgiproxy.py']",['28c37960c2cd927c08e22196c9a121c542ead22a'],2,35,37,2,1.0,1.0,1.0
+77a44a1b7ce79b244790b3bb0cb2e2daebadd38d,Promote the simple proxy app from the CLI into a public API,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-05-28 10:46:43+03:00,-10800,2021-05-31 14:37:54+03:00,-10800,True,False,"['__main__.py', 'simple_proxy.py', 'test_asgiproxy.py']",['e5f71d0eb90b3be878dbaf513a61d62dadf9c6e1'],26,43,69,3,1.0,0.0,0.0
+f680f2af2d872a10577e5d68e2d22487b36772b2,Add an end-to-end test,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-05-28 10:58:46+03:00,-10800,2021-05-31 14:37:54+03:00,-10800,True,False,"['requirements-dev.in', 'requirements-dev.txt', 'test_e2e.py']",['77a44a1b7ce79b244790b3bb0cb2e2daebadd38d'],1,43,44,3,1.0,1.0,1.0
+3bc2b61f8dc1d1cbb799b47539824951483a2323,Become 0.1,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-07-09 15:21:52+03:00,-10800,2021-07-09 15:21:52+03:00,-10800,True,False,['__init__.py'],['22bad2cdce1e6d0829237e08f5b4292868a3537e'],1,1,2,1,,,
+992a1d62fec29822158387c8a0de7d8b36c692df,Switch to declarative setup.cfg,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-11-25 13:04:06+02:00,-7200,2021-11-25 14:05:33+02:00,-7200,True,False,"['py.yml', 'pyproject.toml', 'requirements.in', 'requirements.txt', 'setup.cfg', 'setup.py']",['3bc2b61f8dc1d1cbb799b47539824951483a2323'],72,32,104,6,0.0,0.0,0.0
+d87b6de5aecc6603d497f18766092465f5fa5a13,Become 0.1.1,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-11-25 13:08:01+02:00,-7200,2021-11-25 14:05:33+02:00,-7200,True,False,['__init__.py'],['992a1d62fec29822158387c8a0de7d8b36c692df'],1,1,2,1,,,
+15dfd855bf8757711c6edde02ff90949eae735d9,requirements-dev: don't depend on requirements.txt,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-12-17 19:23:26+02:00,-7200,2021-12-17 19:27:44+02:00,-7200,True,False,"['requirements-dev.in', 'requirements-dev.txt']",['d87b6de5aecc6603d497f18766092465f5fa5a13'],37,15,52,2,,,
+01001a28e28ce5c0174701e485fca78b3fe0ed7d,requirements-dev: upgrade,Aarni Koskela,akx@iki.fi,Aarni Koskela,akx@iki.fi,2021-12-17 19:25:14+02:00,-7200,2021-12-17 19:27:44+02:00,-7200,True,False,['requirements-dev.txt'],['15dfd855bf8757711c6edde02ff90949eae735d9'],34,39,73,1,,,
+c25dccd0c8d82f2ec05682177db6dee071852f17,"Bump wheel from 0.37.0 to 0.38.1
+
+Bumps [wheel](https://github.com/pypa/wheel) from 0.37.0 to 0.38.1.
+- [Release notes](https://github.com/pypa/wheel/releases)
+- [Changelog](https://github.com/pypa/wheel/blob/main/docs/news.rst)
+- [Commits](https://github.com/pypa/wheel/compare/0.37.0...0.38.1)
+
+---
+updated-dependencies:
+- dependency-name: wheel
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Aarni Koskela,akx@iki.fi,2022-12-26 21:47:24+00:00,0,2022-12-29 11:54:17+02:00,-7200,True,False,['requirements-dev.txt'],['01001a28e28ce5c0174701e485fca78b3fe0ed7d'],1,1,2,1,,,

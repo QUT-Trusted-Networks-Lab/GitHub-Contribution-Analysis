@@ -1,0 +1,17 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+1e07e4b9140a1123e8ea48dec10ec10ff970be3b,Initial commit,山南,zhangpeichaook@163.com,GitHub,noreply@github.com,2020-04-13 15:48:17+08:00,-28800,2020-04-13 15:48:17+08:00,-28800,True,False,"['LICENSE', 'README.md']",[],0,22,22,2,,,
+4537eeab4b2df0a2492e2f3941d8a282adfb2322,#,山南,zhangpeichaook@163.com,山南,zhangpeichaook@163.com,2020-04-13 16:41:01+08:00,-28800,2020-04-13 16:41:01+08:00,-28800,True,False,"['.gitignore', 'requirements.txt', 'setup.py', '__init__.py']",['1e07e4b9140a1123e8ea48dec10ec10ff970be3b'],0,26,26,4,,,
+2d2baced29b25bf62922a50f2c8b249f9fe1ff91,Update setup.py,山南,zhangpeichaook@163.com,山南,zhangpeichaook@163.com,2020-04-13 16:54:12+08:00,-28800,2020-04-13 16:54:12+08:00,-28800,True,False,['setup.py'],['4537eeab4b2df0a2492e2f3941d8a282adfb2322'],3,4,7,1,,,
+92dce004cb64759a1cc0f1635b9243e280e19529,#v0.0.4,山南,zhangpeichaook@163.com,山南,zhangpeichaook@163.com,2020-04-13 17:20:47+08:00,-28800,2020-04-13 17:20:47+08:00,-28800,True,False,"['.gitignore', 'setup.py', 'runtime.py']",['2d2baced29b25bf62922a50f2c8b249f9fe1ff91'],3,12,15,3,1.0,1.0,1.0
+22e1c10ccf3f5667c6ef161a129444bcfe6487f2,#清理目录,山南,zhangpeichaook@163.com,山南,zhangpeichaook@163.com,2020-04-15 09:36:10+08:00,-28800,2020-04-15 09:36:10+08:00,-28800,True,False,"['__init__.py', 'path.py']",['92dce004cb64759a1cc0f1635b9243e280e19529'],0,24,24,2,1.0,0.0,1.0
+f2ca8e5112b2511fc373a0e3e4f13b61bebbbbd8,#v0.0.5,山南,zhangpeichaook@163.com,山南,zhangpeichaook@163.com,2020-04-15 09:38:41+08:00,-28800,2020-04-15 09:38:41+08:00,-28800,True,False,['setup.py'],['22e1c10ccf3f5667c6ef161a129444bcfe6487f2'],1,1,2,1,,,
+e64970cb0261dd5b4e6d3a77ca45450991db079a,#v0.0.6,山南,zhangpeichaook@163.com,山南,zhangpeichaook@163.com,2020-04-16 16:27:41+08:00,-28800,2020-04-16 16:27:41+08:00,-28800,True,False,"['setup.py', 'settings.py']",['f2ca8e5112b2511fc373a0e3e4f13b61bebbbbd8'],1,43,44,2,0.3103448275862069,0.3103448275862069,0.7931034482758621
+9cadc930078e0716e1c58a9898306990769065ed,"#v0.0.8
+
+新增MysqlConnection",山南,zhangpeichaook@163.com,山南,zhangpeichaook@163.com,2020-04-22 15:30:04+08:00,-28800,2020-04-22 15:30:04+08:00,-28800,True,False,"['setup.py', 'connections.py']",['e64970cb0261dd5b4e6d3a77ca45450991db079a'],1,57,58,2,1.0,1.0,0.7567567567567568
+7474c828d660aeb99e8188a13fa677dd7c3dac17,"#v0.0.9
+
+优化Settings加载配置文件的机制",山南,zhangpeichaook@163.com,山南,zhangpeichaook@163.com,2020-04-22 18:12:28+08:00,-28800,2020-04-22 18:12:28+08:00,-28800,True,False,"['setup.py', 'settings.py']",['9cadc930078e0716e1c58a9898306990769065ed'],19,7,26,2,1.0,1.0,0.0
+30b4474634050324e82fceaa7dbbbb2381789d94,"#v0.1.0
+
+Setting类改为继承自configparser.ConfigParser",山南,zhangpeichaook@163.com,山南,zhangpeichaook@163.com,2020-05-01 09:04:02+08:00,-28800,2020-05-01 09:04:02+08:00,-28800,True,False,"['setup.py', 'settings.py']",['7474c828d660aeb99e8188a13fa677dd7c3dac17'],10,4,14,2,0.0,0.0,0.25

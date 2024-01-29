@@ -1,0 +1,253 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+5c77de2cbb277e182cb2b717fd9a614ce5dfeb28,Initial commit,Nirantak Raghav,nirantak.s.r@gmail.com,GitHub,noreply@github.com,2021-04-15 15:28:04+05:18,-19080,2021-04-15 15:28:04+05:18,-19080,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,152,152,3,,,
+8c0d4478fd855ab3e4764ec8347ea985ce985e72,First commit,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-15 17:23:31+05:18,-19080,2021-04-15 17:24:42+05:18,-19080,True,False,"['.editorconfig', '.flake8', 'ISSUE_TEMPLATE.md', '.gitignore', '.pre-commit-config.yaml', 'HISTORY.md', 'MANIFEST.in', 'Makefile', 'README.md', '__init__.py', 'api.py', 'cli.py', 'pyproject.toml', 'requirements.lib.txt', 'requirements.txt', 'setup.cfg', 'setup.py', '__init__.py', 'test_hue_api.py', 'tox.ini']",['5c77de2cbb277e182cb2b717fd9a614ce5dfeb28'],23,379,402,20,1.0,1.0,1.0
+cc8784dea0031a206a1212bf79ace747103dbafa,Bump version: 0.0.1 → 0.1.0,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-15 17:24:48+05:18,-19080,2021-04-15 17:24:48+05:18,-19080,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['8c0d4478fd855ab3e4764ec8347ea985ce985e72'],3,3,6,3,,,
+1f5597d4faddebe3ac2e8d24c5c8b22e6b448e2e,Fix tests and tox,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-15 19:35:14+05:18,-19080,2021-04-15 19:35:14+05:18,-19080,True,False,"['.gitignore', '.python-version', 'CHANGELOG.md', 'HISTORY.md', 'MANIFEST.in', 'requirements.dev.txt', 'requirements.lib.txt', 'requirements.txt', 'setup.py', 'test_api.py', 'test_cli.py', 'test_hue_api.py', 'tox.ini']",['cc8784dea0031a206a1212bf79ace747103dbafa'],82,63,145,13,1.0,1.0,1.0
+018800729977f147e71aae8f84a49b5ab5f3b95a,Update documentation,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-15 20:01:08+05:18,-19080,2021-04-15 20:02:31+05:18,-19080,True,False,"['CHANGELOG.md', 'README.md']",['1f5597d4faddebe3ac2e8d24c5c8b22e6b448e2e'],1,84,85,2,,,
+f8e1e34a5322e48e27bbf54f346fe76459386295,Bump version: 0.1.0 → 0.1.1,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-15 20:03:16+05:18,-19080,2021-04-15 20:03:16+05:18,-19080,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['018800729977f147e71aae8f84a49b5ab5f3b95a'],3,3,6,3,,,
+849031788a3f94e56f64d4deee06cfaf027d0a7b,Add action to publish package on new release,Nirantak Raghav,me@nirantak.com,GitHub,noreply@github.com,2021-04-15 20:33:20+05:18,-19080,2021-04-15 20:33:20+05:18,-19080,True,False,['python-publish.yml'],['f8e1e34a5322e48e27bbf54f346fe76459386295'],0,30,30,1,,,
+a3b7b332c4b0fc982aea676322507ff6bfd1aad7,Add action to run tox,Nirantak Raghav,me@nirantak.com,GitHub,noreply@github.com,2021-04-15 20:51:40+05:18,-19080,2021-04-15 20:51:40+05:18,-19080,True,False,['python-package.yml'],['849031788a3f94e56f64d4deee06cfaf027d0a7b'],0,32,32,1,,,
+a7914a965c8bb4817c11718b28be8d76d7e150c7,Update action workflows,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-15 21:09:27+05:18,-19080,2021-04-15 21:13:47+05:18,-19080,True,False,"['python-package.yml', 'python-publish.yml', 'CHANGELOG.md', 'setup.cfg']",['a3b7b332c4b0fc982aea676322507ff6bfd1aad7'],32,33,65,4,,,
+5d825627d7b8460f7b6c0e52a19ecc88523e5e8e,Fix action workflows,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-15 21:17:26+05:18,-19080,2021-04-15 21:17:26+05:18,-19080,True,False,['python-test.yml'],['a7914a965c8bb4817c11718b28be8d76d7e150c7'],2,2,4,1,,,
+67ca7cd9497cd26f34b4559f1733209305e76b54,Add action for linting,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-15 21:35:39+05:18,-19080,2021-04-15 21:35:39+05:18,-19080,True,False,"['.flake8', 'code-lint.yml', 'python-publish.yml', 'python-test.yml', '.pre-commit-config.yaml', 'Makefile']",['5d825627d7b8460f7b6c0e52a19ecc88523e5e8e'],13,40,53,6,,,
+cf1a53009ad150387cfda8800fdce519362fa0b7,Add action workflow environment,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-15 21:53:23+05:18,-19080,2021-04-15 21:53:23+05:18,-19080,True,False,"['code-lint.yml', 'python-publish.yml', 'python-test.yml']",['67ca7cd9497cd26f34b4559f1733209305e76b54'],3,7,10,3,,,
+693c3e761d06ea90bb09e5bb6a676cbd0e016f44,Use typer for cli,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-16 12:48:05+05:18,-19080,2021-04-16 12:48:25+05:18,-19080,True,False,"['CHANGELOG.md', '__main__.py', 'api.py', 'cli.py', 'requirements.txt', 'setup.py']",['cf1a53009ad150387cfda8800fdce519362fa0b7'],16,20,36,6,0.0,0.0,0.0
+f55fd8a070bd302ed7e78bc932587f1b462ebf55,Add compatibility for Python 3.7+,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-16 12:57:55+05:18,-19080,2021-04-16 13:06:43+05:18,-19080,True,False,"['.python-version', 'CHANGELOG.md', 'api.py', 'setup.py', 'tox.ini']",['693c3e761d06ea90bb09e5bb6a676cbd0e016f44'],3,11,14,5,1.0,1.0,1.0
+cc2dc2539e3c6a710556619fba028990331fe3a0,Fix tests for cli,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-16 13:06:56+05:18,-19080,2021-04-16 13:06:56+05:18,-19080,True,False,['test_cli.py'],['f55fd8a070bd302ed7e78bc932587f1b462ebf55'],5,5,10,1,,,
+6839f37a3d57c3358eb7e790d5d51a66a685527a,Bump version: 0.1.1 → 0.2.0,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-16 13:07:38+05:18,-19080,2021-04-16 13:07:38+05:18,-19080,True,False,"['CHANGELOG.md', '__init__.py', 'setup.cfg', 'setup.py']",['cc2dc2539e3c6a710556619fba028990331fe3a0'],4,4,8,4,,,
+ba54c8bc5625071708bc90e594189599826592cf,Update action workflow environments,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-16 13:13:49+05:18,-19080,2021-04-16 13:13:49+05:18,-19080,True,False,"['code-lint.yml', 'python-publish.yml', 'python-test.yml']",['6839f37a3d57c3358eb7e790d5d51a66a685527a'],3,1,4,3,,,
+52f773085fa50d5c4bb8dc07a84295849209d14d,Add python versions to github action,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-16 13:16:55+05:18,-19080,2021-04-16 13:16:55+05:18,-19080,True,False,['python-test.yml'],['ba54c8bc5625071708bc90e594189599826592cf'],1,1,2,1,,,
+2b8408b59e412311dfec9f077a55fd2a354af4d9,Update action name,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-16 13:23:23+05:18,-19080,2021-04-16 13:23:23+05:18,-19080,True,False,"['python-publish.yml', 'python-test.yml']",['52f773085fa50d5c4bb8dc07a84295849209d14d'],2,2,4,2,,,
+20cb37f2d069e49ba64bd013ed129c7d1901c912,Fix documentation for python version support,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-16 13:48:21+05:18,-19080,2021-04-16 13:48:21+05:18,-19080,True,False,"['CHANGELOG.md', 'README.md']",['2b8408b59e412311dfec9f077a55fd2a354af4d9'],2,1,3,2,,,
+c3ca4279875d9387d485186dba078bd06bf82dcf,Bump version: 0.2.0 → 0.2.1,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-16 13:53:09+05:18,-19080,2021-04-16 13:54:10+05:18,-19080,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['20cb37f2d069e49ba64bd013ed129c7d1901c912'],3,3,6,3,,,
+96e634a7153b28b7c5b04ef820604bd3c21400cc,Refactor code and restructure the package (#1),Nirantak Raghav,me@nirantak.com,GitHub,noreply@github.com,2021-04-20 02:56:51+05:18,-19080,2021-04-20 02:56:51+05:18,-19080,True,False,"['.bumpversion.cfg', '.flake8', 'code-lint.yml', 'python-publish.yml', 'python-test.yml', '.gitignore', '.python-version', 'CHANGELOG.md', 'MANIFEST.in', 'Makefile', 'README.md', 'README.md', '__init__.py', 'api.py', '__init__.py', 'bridge.py', 'colors.py', 'http.py', 'light.py', 'cli.py', '__init__.py', 'bridge.py', 'light.py', 'main.py', 'pyproject.toml', 'requirements.dev.txt', 'requirements.txt', 'setup.py', 'test_api.py', 'test_cli.py', 'tox.ini']",['c3ca4279875d9387d485186dba078bd06bf82dcf'],252,626,878,31,0.5358851674641149,1.0,0.569377990430622
+3dfdf8eff065d87787648d54359c5a578258f259,Bump version: 0.2.1 → 0.3.0,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-20 02:58:31+05:18,-19080,2021-04-20 02:58:31+05:18,-19080,True,False,"['.bumpversion.cfg', 'CHANGELOG.md', '__init__.py']",['96e634a7153b28b7c5b04ef820604bd3c21400cc'],3,3,6,3,,,
+bbbe31198b030745495cff93b9ef984c4ec0b4a6,Fix light power state bug,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-20 15:50:29+05:18,-19080,2021-04-20 15:50:29+05:18,-19080,True,False,"['CHANGELOG.md', 'light.py']",['3dfdf8eff065d87787648d54359c5a578258f259'],7,13,20,2,0.0,0.0,0.0
+2aa91c667abeeacba37f8e486438e984506d630a,Update pre commit hook version,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-20 15:50:48+05:18,-19080,2021-04-20 15:50:48+05:18,-19080,True,False,"['.pre-commit-config.yaml', 'pyproject.toml']",['bbbe31198b030745495cff93b9ef984c4ec0b4a6'],2,2,4,2,,,
+cdd93eeb2c8a7edaabbe6022247eec648df0f99a,Bump version: 0.3.0 → 0.3.1,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-20 15:50:56+05:18,-19080,2021-04-20 15:50:56+05:18,-19080,True,False,"['.bumpversion.cfg', 'CHANGELOG.md', '__init__.py']",['2aa91c667abeeacba37f8e486438e984506d630a'],3,3,6,3,,,
+b527b81add95702696ff57401fb6ec87ee8ca14f,Add custom bumpversion script,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-23 22:12:10+05:18,-19080,2021-04-23 22:12:10+05:18,-19080,True,False,"['.bumpversion.cfg', 'pyproject.toml', 'bumpversion.sh']",['cdd93eeb2c8a7edaabbe6022247eec648df0f99a'],14,58,72,3,,,
+fa26ad32d143c968c1da2d1f0d6d6252b2fe772a,Update black,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-26 14:41:57+05:18,-19080,2021-04-26 14:41:57+05:18,-19080,True,False,"['.pre-commit-config.yaml', 'pyproject.toml']",['b527b81add95702696ff57401fb6ec87ee8ca14f'],7,7,14,2,,,
+bf012f5598cef6f0dc5484cc0a42f36d378d77d4,Update pre-commit hooks,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-28 18:58:30+05:18,-19080,2021-04-28 18:58:30+05:18,-19080,True,False,"['.pre-commit-config.yaml', 'Makefile']",['fa26ad32d143c968c1da2d1f0d6d6252b2fe772a'],3,3,6,2,,,
+db5dae3c0dd8332a96e9dd4bb78982f2526d7f75,Update required packages,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-29 14:28:10+05:18,-19080,2021-04-29 14:28:10+05:18,-19080,True,False,"['.pre-commit-config.yaml', 'Makefile', 'pyproject.toml', 'requirements.txt']",['bf012f5598cef6f0dc5484cc0a42f36d378d77d4'],10,35,45,4,,,
+97c6f1223de6b9920929bc0a0a9551d5075b29de,Update package list,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-04-29 18:54:21+05:18,-19080,2021-04-29 18:54:21+05:18,-19080,True,False,"['Makefile', 'pyproject.toml', 'requirements.lock.txt']",['db5dae3c0dd8332a96e9dd4bb78982f2526d7f75'],6,58,64,3,,,
+102cbec79e78f064736a4f39b5707acdd0d19a49,Update Python and Faker versions,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-05-04 19:15:12+05:18,-19080,2021-05-04 19:15:12+05:18,-19080,True,False,"['.python-version', 'pyproject.toml', 'requirements.lock.txt']",['97c6f1223de6b9920929bc0a0a9551d5075b29de'],5,5,10,3,,,
+733ad7980cd126796b971cf53cab959d3c58ead1,"Bump urllib3 from 1.26.4 to 1.26.5 (#3)
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 1.26.4 to 1.26.5.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/1.26.4...1.26.5)
+
+---
+updated-dependencies:
+- dependency-name: urllib3
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-06-02 12:06:00+05:18,-19080,2021-06-02 12:06:00+05:18,-19080,True,False,['requirements.lock.txt'],['102cbec79e78f064736a4f39b5707acdd0d19a49'],1,1,2,1,,,
+02dc0d69b090096b240330552372501b419d395d,"Add more CLI commands for Hue API (#2)
+
+* Update installed packages
+
+* Update changelog file
+
+* Update publish action to generate releases for tags
+
+* Make temp changes for testing
+
+* Update packages
+
+* GH Release action updates for testing
+
+* Revert changes for testing
+
+* Read changelog for release from file
+
+* Changes for testing
+
+* Fix path string
+
+* Fix path string
+
+* Add build wheel to release
+
+* Revert ""Changes for testing""
+
+This reverts commit a3f7652942439bb326e3f793333d1693ff8adfd7.
+
+* Add rich for cli
+
+* Update python packages
+
+* Update python packages
+
+* Add hue light commands
+
+* Update black
+
+* Update faker
+
+* Add bridge commands
+
+* Add cli help text
+
+* Add pytest plugins
+
+* Restructure tests
+
+* Update packages
+
+* Add tests for bridge api
+
+* Add tests for lights api
+
+* Add tests for http methods
+
+* Change line length to 100
+
+* Add tests for cli
+
+* Minimum python version required is 3.8
+
+* Bump version: 0.3.1 → 0.4.0
+
+* Add current changelog file to gitignore",Nirantak Raghav,me@nirantak.com,GitHub,noreply@github.com,2021-06-14 22:45:50+05:18,-19080,2021-06-14 22:45:50+05:18,-19080,True,False,"['.coveragerc', 'python-publish.yml', 'python-test.yml', '.gitignore', '.pre-commit-config.yaml', '.python-version', 'CHANGELOG.md', 'Makefile', 'README.md', '__init__.py', 'bridge.py', 'colors.py', 'light.py', 'bridge.py', 'console.py', 'light.py', 'main.py', 'pyproject.toml', 'requirements.lock.txt', 'requirements.txt', 'bumpversion.sh', 'test_api.py', '__init__.py', 'test_bridge.py', 'test_http.py', 'test_light.py', 'test_cli.py', '__init__.py', 'test_bridge.py', 'test_light.py', 'test_main.py', 'tox.ini']",['733ad7980cd126796b971cf53cab959d3c58ead1'],106,642,748,32,1.0,1.0,0.9453924914675768
+caa50925631c78c11282369ad8aa6bf45393e95c,Create codeql-analysis.yml,Nirantak Raghav,me@nirantak.com,GitHub,noreply@github.com,2021-06-18 22:42:17+05:18,-19080,2021-06-18 22:42:17+05:18,-19080,True,False,['codeql-analysis.yml'],['02dc0d69b090096b240330552372501b419d395d'],0,40,40,1,,,
+111ab185249bfa049155d471d75f096cca60b7b7,"Update Documentation (#4)
+
+* Update httpx version
+
+* Add mkdocs
+
+* Minor restructure
+
+* Reconfigure mkdocs
+
+* Minor fixes
+
+* Fix filename case
+
+* Refactor codeql action
+
+* Refactor API documentation
+
+* Restructure docs directories
+
+* Add setup for typer-cli
+
+* Refactor CLI documentation
+
+* Minor fixes
+
+* Fix tests
+
+* Bump version: 0.4.0 → 0.4.1",Nirantak Raghav,me@nirantak.com,GitHub,noreply@github.com,2021-06-22 12:49:23+05:18,-19080,2021-06-22 12:49:23+05:18,-19080,True,False,"['.flake8', 'codeql-analysis.yml', '.gitignore', 'CHANGELOG.md', 'Makefile', 'README.md', 'CHANGELOG.md', 'bridge.md', 'light.md', 'cli.md', 'home-lightbulb-outline.ico', 'home-lightbulb-outline.png', 'home-lightbulb.ico', 'home-lightbulb.png', 'index.md', 'license.md', '__init__.py', 'bridge.py', 'light.py', 'bridge.py', 'light.py', 'main.py', 'mkdocs.yml', 'pyproject.toml', 'requirements.dev.txt', 'requirements.lock.txt', 'requirements.txt', 'test_bridge.py', 'test_light.py']",['caa50925631c78c11282369ad8aa6bf45393e95c'],141,623,764,29,0.5656565656565656,1.0,0.7878787878787878
+836911a296a8da31c64c4cca484f3e235758dc34,Update pypi docs link,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-06-22 13:13:11+05:18,-19080,2021-06-22 13:13:11+05:18,-19080,True,False,['pyproject.toml'],['111ab185249bfa049155d471d75f096cca60b7b7'],2,2,4,1,,,
+02a1c98fcfec01d37f622cac6cfa312515703a64,Bump version: 0.4.1 → 0.4.2,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-06-22 13:13:18+05:18,-19080,2021-06-22 13:13:18+05:18,-19080,True,False,['__init__.py'],['836911a296a8da31c64c4cca484f3e235758dc34'],1,1,2,1,,,
+ddb26f0266aa36b7a0f60dad6b5f77356c822d03,"Update python versions and changelog (#5)
+
+* Update python versions
+
+* Add typer-cli to requirements
+
+* Add release links to changelog
+
+* Bump version: 0.4.2 → 0.4.3",Nirantak Raghav,me@nirantak.com,GitHub,noreply@github.com,2021-06-30 20:12:37+05:18,-19080,2021-06-30 20:12:37+05:18,-19080,True,False,"['.python-version', 'CHANGELOG.md', 'Makefile', '__init__.py', 'pyproject.toml', 'requirements.dev.txt', 'requirements.txt', 'bumpversion.sh']",['02a1c98fcfec01d37f622cac6cfa312515703a64'],39,42,81,8,,,
+a5a7672bbf4bf253c4c9bfd5673c82321cff9176,Fix release action changelog pattern,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-06-30 20:50:29+05:18,-19080,2021-06-30 20:50:29+05:18,-19080,True,False,"['python-publish.yml', '.gitignore']",['ddb26f0266aa36b7a0f60dad6b5f77356c822d03'],1,2,3,2,,,
+1b91e16f3daebca7f968873a6aaf039e7ebcb5cd,Update packages,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-07-20 19:00:35+05:18,-19080,2021-07-20 19:00:35+05:18,-19080,True,False,"['.pre-commit-config.yaml', '.python-version', 'colors.py', 'pyproject.toml', 'requirements.txt']",['a5a7672bbf4bf253c4c9bfd5673c82321cff9176'],12,16,28,5,,,
+a8f9dc475ebad154079ba76154716f8bc4d800cb,Update packages,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-07-26 21:03:26+05:18,-19080,2021-07-26 21:03:26+05:18,-19080,True,False,"['pyproject.toml', 'requirements.txt']",['1b91e16f3daebca7f968873a6aaf039e7ebcb5cd'],6,6,12,2,,,
+129f87891ceb5dd494d01b7f16a7ed7b6c05bc83,Add Netlify config,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-07-26 21:14:24+05:18,-19080,2021-07-26 21:14:24+05:18,-19080,True,False,"['README.md', 'netlify.toml']",['a8f9dc475ebad154079ba76154716f8bc4d800cb'],2,23,25,2,,,
+e2bca67a8fbe263380b84137c38ea2289e8ebfe5,Add GA to docs,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-07-26 21:26:21+05:18,-19080,2021-07-26 21:26:21+05:18,-19080,True,False,['mkdocs.yml'],['129f87891ceb5dd494d01b7f16a7ed7b6c05bc83'],0,3,3,1,,,
+a976e1a757f490a09e1bb8f9e3a5633110c86663,Fix env var,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-07-26 21:32:58+05:18,-19080,2021-07-26 21:32:58+05:18,-19080,True,False,['netlify.toml'],['e2bca67a8fbe263380b84137c38ea2289e8ebfe5'],1,1,2,1,,,
+970ae1e8448879509e9f299119f3f66a2a3149cd,Update packages,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-08-12 15:11:11+05:18,-19080,2021-08-12 15:11:11+05:18,-19080,True,False,"['.python-version', 'pyproject.toml', 'requirements.txt']",['a976e1a757f490a09e1bb8f9e3a5633110c86663'],14,12,26,3,,,
+40a4866fa39040323ea74c37937359bb1bc38ff9,Add http post method,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-08-12 15:25:14+05:18,-19080,2021-08-12 15:25:14+05:18,-19080,True,False,"['Makefile', 'http.py', 'test_http.py']",['970ae1e8448879509e9f299119f3f66a2a3149cd'],2,17,19,3,1.0,1.0,1.0
+939dad33fd73bb4676348ed44e1effcf8aa2913d,Fix setting up light power state,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-08-12 15:31:26+05:18,-19080,2021-08-12 15:31:26+05:18,-19080,True,False,['light.py'],['40a4866fa39040323ea74c37937359bb1bc38ff9'],2,2,4,1,,,
+17a057eef3c1755b3edd70bf1d8afd4b207508f1,Update changelog,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-08-12 15:32:13+05:18,-19080,2021-08-12 15:32:13+05:18,-19080,True,False,['CHANGELOG.md'],['939dad33fd73bb4676348ed44e1effcf8aa2913d'],20,5,25,1,,,
+25c251af504dda0c49c80cf3996de283cb846c23,Bump version: 0.4.3 → 0.4.4,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-08-12 15:32:50+05:18,-19080,2021-08-12 15:32:50+05:18,-19080,True,False,"['CHANGELOG.md', '__init__.py']",['17a057eef3c1755b3edd70bf1d8afd4b207508f1'],2,2,4,2,,,
+97afad91e6ecfbe28a092c26e983cf639dd837c2,Fix github action regex,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-08-12 15:46:50+05:18,-19080,2021-08-12 15:46:50+05:18,-19080,True,False,['python-publish.yml'],['25c251af504dda0c49c80cf3996de283cb846c23'],1,1,2,1,,,
+96b6e49dff21a2b4b94f89dfafdb0fbfb8ef9a90,"Update dependencies and add robots.txt (#7)
+
+* Add robots.txt for docs site
+
+* Update python dependencies
+
+* Update changelog
+
+* Fix setting of light power off state
+
+* Bump version: 0.4.4 → 0.4.5",Nirantak Raghav,me@nirantak.com,GitHub,noreply@github.com,2021-09-07 23:16:14+05:18,-19080,2021-09-07 23:16:14+05:18,-19080,True,False,"['.pre-commit-config.yaml', '.python-version', 'CHANGELOG.md', 'robots.txt', '__init__.py', 'light.py', 'pyproject.toml', 'requirements.dev.txt', 'requirements.txt']",['97afad91e6ecfbe28a092c26e983cf639dd837c2'],31,41,72,9,,,
+ae196f2192427ac06e4ba2c74ae23e37c987bda7,Add security.txt,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-09-14 17:14:49+05:18,-19080,2021-09-14 17:32:42+05:18,-19080,True,False,"['.pre-commit-config.yaml', 'security.txt', 'requirements.txt']",['96b6e49dff21a2b4b94f89dfafdb0fbfb8ef9a90'],3,6,9,3,,,
+b8e81850b1a12fdf3e104d8a21e86895ea2ef4d8,Update Python to 3.10,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-10-05 19:54:54+05:18,-19080,2021-10-05 19:54:54+05:18,-19080,True,False,"['code-lint.yml', 'python-publish.yml', 'python-test.yml', '.python-version', 'CHANGELOG.md', 'pyproject.toml', 'requirements.txt']",['ae196f2192427ac06e4ba2c74ae23e37c987bda7'],15,19,34,7,,,
+3a9cf0a5bfeba9cd67d3cc3ebd911d2fa8b1cea4,Update dependencies,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-11-06 19:48:06+05:18,-19080,2021-11-06 19:48:06+05:18,-19080,True,False,"['.pre-commit-config.yaml', 'pyproject.toml', 'requirements.txt']",['b8e81850b1a12fdf3e104d8a21e86895ea2ef4d8'],22,23,45,3,,,
+90ee9b8c2f320e1dc652516f8d4a38659ca4714f,Bump version: 0.4.5 → 0.4.6,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-11-06 19:51:11+05:18,-19080,2021-11-06 19:51:11+05:18,-19080,True,False,"['CHANGELOG.md', '__init__.py']",['3a9cf0a5bfeba9cd67d3cc3ebd911d2fa8b1cea4'],2,2,4,2,,,
+715fb4d05252a337d0ddc95e4b9234669915063a,Update dependencies,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-11-25 15:32:37+05:18,-19080,2021-11-25 15:32:37+05:18,-19080,True,False,"['.pre-commit-config.yaml', 'pyproject.toml', 'requirements.txt']",['90ee9b8c2f320e1dc652516f8d4a38659ca4714f'],13,13,26,3,,,
+bbb49e2e93b6eb1906d67be7bb4c2dad436c345e,Enable caching pip dependencies in Github Actions,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-11-25 15:43:34+05:18,-19080,2021-11-25 15:43:34+05:18,-19080,True,False,"['code-lint.yml', 'python-publish.yml', 'python-test.yml', 'CHANGELOG.md']",['715fb4d05252a337d0ddc95e4b9234669915063a'],2,10,12,4,,,
+98db6c3a442f764dd811e61d3bb9a595af9abe72,Update python to 3.10.1 and dependencies,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2021-12-08 16:07:15+05:18,-19080,2021-12-08 16:07:15+05:18,-19080,True,False,"['.pre-commit-config.yaml', '.python-version', 'CHANGELOG.md', 'security.txt', 'pyproject.toml', 'requirements.txt']",['bbb49e2e93b6eb1906d67be7bb4c2dad436c345e'],49,47,96,6,,,
+51910eb3dcccafd4b965311bf4627974c1554f09,Update packages,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-01-24 19:02:49+05:18,-19080,2022-01-24 19:02:49+05:18,-19080,True,False,"['.pre-commit-config.yaml', '.python-version', 'CHANGELOG.md', 'pyproject.toml', 'requirements.txt']",['98db6c3a442f764dd811e61d3bb9a595af9abe72'],20,20,40,5,,,
+fda8b58f0a368e78f1fbd4a1ddc0bfcd9a46cb5d,Update packages,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-01-31 10:20:41+05:18,-19080,2022-01-31 10:20:41+05:18,-19080,True,False,"['.pre-commit-config.yaml', 'pyproject.toml', 'requirements.txt']",['51910eb3dcccafd4b965311bf4627974c1554f09'],13,13,26,3,,,
+b10e456d0e3138057e6de10955082a71c0c6c9d0,Add more options to set state,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-01-31 10:47:21+05:18,-19080,2022-01-31 10:57:46+05:18,-19080,True,False,['light.py'],['fda8b58f0a368e78f1fbd4a1ddc0bfcd9a46cb5d'],9,34,43,1,0.0,1.0,1.0
+6ca1ecdb72c83646cf62104b051c33b77311c0c2,Bump version: 0.4.6 → 0.4.7,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-01-31 11:02:52+05:18,-19080,2022-01-31 11:02:52+05:18,-19080,True,False,"['CHANGELOG.md', '__init__.py']",['b10e456d0e3138057e6de10955082a71c0c6c9d0'],2,3,5,2,,,
+ea0af59c9fb68b9ebb2e6bddab4e4ca0b3c93ca7,Update packages,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-03-29 17:38:41+05:18,-19080,2022-03-29 17:38:41+05:18,-19080,True,False,"['.pre-commit-config.yaml', '.python-version', 'CHANGELOG.md', 'LICENSE', 'pyproject.toml', 'requirements.txt']",['6ca1ecdb72c83646cf62104b051c33b77311c0c2'],21,25,46,6,,,
+6d95ae99562297c74b428a41347e85b488d523a8,Downgrade click to make it work with typer,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-03-29 17:48:14+05:18,-19080,2022-03-29 17:48:14+05:18,-19080,True,False,['requirements.txt'],['ea0af59c9fb68b9ebb2e6bddab4e4ca0b3c93ca7'],1,1,2,1,,,
+3299a5cd2ef7042cbca77c1f5e2cb5b3e6e31c60,Fix version number rich colour,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-03-29 17:58:45+05:18,-19080,2022-03-29 17:58:45+05:18,-19080,True,False,['main.py'],['6d95ae99562297c74b428a41347e85b488d523a8'],1,1,2,1,,,
+35510c3ea696ef34eb6f437eba5c2337a2679507,Update packages,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-05-18 15:40:07+05:18,-19080,2022-05-18 15:40:07+05:18,-19080,True,False,"['.pre-commit-config.yaml', 'pyproject.toml', 'requirements.dev.txt', 'requirements.txt']",['3299a5cd2ef7042cbca77c1f5e2cb5b3e6e31c60'],20,21,41,4,,,
+719c18e2824b25f24a464249970424032db7ca72,Configure cloudflare pages,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-05-18 16:49:27+05:18,-19080,2022-05-18 16:49:27+05:18,-19080,True,False,"['_headers', '_redirects', 'netlify.toml', 'runtime.txt']",['35510c3ea696ef34eb6f437eba5c2337a2679507'],21,10,31,4,,,
+71859319bfd16efa7edc464a71de08bd6a07a5c4,Configure cloudflare pages,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-05-18 17:14:56+05:18,-19080,2022-05-18 17:14:56+05:18,-19080,True,False,"['README.md', '_headers']",['719c18e2824b25f24a464249970424032db7ca72'],4,4,8,2,,,
+e21dea6ff11edfc387b4ef159f5923a970bb47d6,Configure CF pages and remove GA,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-05-18 17:43:41+05:18,-19080,2022-05-18 17:43:41+05:18,-19080,True,False,"['_headers', 'mkdocs.yml']",['71859319bfd16efa7edc464a71de08bd6a07a5c4'],3,3,6,2,,,
+48e03ae98f1927ba2d1cf677cd16b6e0c2c57263,Create FUNDING.yml,Nirantak Raghav,me@nirantak.com,GitHub,noreply@github.com,2022-07-15 17:07:51+05:18,-19080,2022-07-15 17:07:51+05:18,-19080,True,False,['FUNDING.yml'],['e21dea6ff11edfc387b4ef159f5923a970bb47d6'],0,1,1,1,,,
+7e6e19544495984cb618d3f4d98b5dbee12b8c34,"Update python packages, better CLI error reporting and docs UI update",Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-09-30 15:45:16+05:18,-19080,2022-09-30 15:45:16+05:18,-19080,True,False,"['.coveragerc', '.pre-commit-config.yaml', '.python-version', 'CHANGELOG.md', 'README.md', '__init__.py', 'bridge.py', 'light.py', 'mkdocs.yml', 'pyproject.toml', 'requirements.dev.txt', 'requirements.txt', 'test_bridge.py', 'test_light.py']",['48e03ae98f1927ba2d1cf677cd16b6e0c2c57263'],68,70,138,14,0.0,0.0,0.0
+75d5829dc3556bb5e9498788d594b372468b64d6,Bump version: 0.4.7 → 0.4.8,Nirantak Raghav,me@nirantak.com,Nirantak Raghav,me@nirantak.com,2022-09-30 15:49:45+05:18,-19080,2022-09-30 15:49:45+05:18,-19080,True,False,"['CHANGELOG.md', '__init__.py']",['7e6e19544495984cb618d3f4d98b5dbee12b8c34'],2,2,4,2,,,
+b05d6f3b4138109aacbe656113a444a07e3b23bb,"Bump certifi from 2021.10.8 to 2022.12.7 (#10)
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2021.10.8 to 2022.12.7.
+- [Release notes](https://github.com/certifi/python-certifi/releases)
+- [Commits](https://github.com/certifi/python-certifi/compare/2021.10.08...2022.12.07)
+
+---
+updated-dependencies:
+- dependency-name: certifi
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-01-05 09:49:34+05:18,-19080,2023-01-05 09:49:34+05:18,-19080,True,False,['requirements.txt'],['75d5829dc3556bb5e9498788d594b372468b64d6'],1,1,2,1,,,
+d86b1752f02335aac202ada413c8bc768d621519,"Bump wheel from 0.37.1 to 0.38.1 (#11)
+
+Bumps [wheel](https://github.com/pypa/wheel) from 0.37.1 to 0.38.1.
+- [Release notes](https://github.com/pypa/wheel/releases)
+- [Changelog](https://github.com/pypa/wheel/blob/main/docs/news.rst)
+- [Commits](https://github.com/pypa/wheel/compare/0.37.1...0.38.1)
+
+---
+updated-dependencies:
+- dependency-name: wheel
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Nirantak Raghav <me@nirantak.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-01-05 09:49:59+05:18,-19080,2023-01-05 09:49:59+05:18,-19080,True,False,['requirements.txt'],['b05d6f3b4138109aacbe656113a444a07e3b23bb'],1,1,2,1,,,
+d9ca05c506e6d737badad726d7b082e59667282c,"Bump setuptools from 65.4.1 to 65.5.1 (#12)
+
+Bumps [setuptools](https://github.com/pypa/setuptools) from 65.4.1 to 65.5.1.
+- [Release notes](https://github.com/pypa/setuptools/releases)
+- [Changelog](https://github.com/pypa/setuptools/blob/main/CHANGES.rst)
+- [Commits](https://github.com/pypa/setuptools/compare/v65.4.1...v65.5.1)
+
+---
+updated-dependencies:
+- dependency-name: setuptools
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Nirantak Raghav <me@nirantak.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-01-05 09:58:52+05:18,-19080,2023-01-05 09:58:52+05:18,-19080,True,False,['requirements.txt'],['d86b1752f02335aac202ada413c8bc768d621519'],1,1,2,1,,,

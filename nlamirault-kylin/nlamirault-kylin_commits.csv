@@ -1,0 +1,239 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+5e266ab53c95117c92fe597fd1570e6a7a6b14a4,"Add: documentation
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-05 11:04:43+02:00,-7200,2017-10-05 11:04:43+02:00,-7200,True,False,"['CONTRIBUTING.md', 'ChangeLog.md', 'LICENSE', 'README.md']",[],0,280,280,4,,,
+c33c568c7aa91a15f1debae21c313871c209aa7b,"Add: ignore files
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-05 13:57:26+02:00,-7200,2017-10-05 13:57:26+02:00,-7200,True,False,['.gitignore'],['5e266ab53c95117c92fe597fd1570e6a7a6b14a4'],0,5,5,1,,,
+fa3d370b294b6d6b3efe81f41ad964e4b5661f08,"Add: init project
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-05 13:59:34+02:00,-7200,2017-10-05 13:59:34+02:00,-7200,True,False,"['.gitignore', 'AUTHORS', 'CONTRIBUTING.md', 'ChangeLog', 'Makefile', 'README.md', 'README.rst', '__init__.py', 'exceptions.py', 'log.py', 'version.py', 'teleinfo.py', '__init__.py', 'exceptions.py', 'log.py', 'version.py', 'requirements-dev.txt', 'requirements-test.txt', 'requirements.txt', 'setup.cfg', 'setup.py', 'tox.ini']",['c33c568c7aa91a15f1debae21c313871c209aa7b'],49,693,742,22,0.6273291925465838,0.6273291925465838,0.8385093167701864
+fd6567f739be9675f773b447bdc38ed767ab7f8a,"Update: remove directory
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-05 14:01:34+02:00,-7200,2017-10-05 14:01:34+02:00,-7200,True,False,"['.gitignore', '__init__.py', 'exceptions.py', 'log.py', 'version.py']",['fa3d370b294b6d6b3efe81f41ad964e4b5661f08'],190,1,191,5,0.3625,0.3625,0.1625
+1e565439c1f1af6fd438454bcd1bdb8ef531aeea,"Fix: documentation
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-05 14:07:33+02:00,-7200,2017-10-05 14:07:33+02:00,-7200,True,False,['README.rst'],['fd6567f739be9675f773b447bdc38ed767ab7f8a'],2,2,4,1,,,
+f9cd6a905976620870a0c289c7364eeaeca949c5,"Fix: documentation
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-05 14:07:56+02:00,-7200,2017-10-05 14:07:56+02:00,-7200,True,False,['README.rst'],['1e565439c1f1af6fd438454bcd1bdb8ef531aeea'],3,0,3,1,,,
+533fbca9f7a491db3df83a71286732797bddd728,"Add: init unit tests
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-05 14:39:14+02:00,-7200,2017-10-05 14:39:14+02:00,-7200,True,False,"['.gitignore', 'ChangeLog', '__init__.py', 'exceptions.py', '__init__.py', 'test_kylin.py', 'test_kylin.py~']",['f9cd6a905976620870a0c289c7364eeaeca949c5'],0,69,69,7,1.0,1.0,0.8666666666666667
+ff112e65bed70ea103f48337bf2cc9c35d8dddd9,"Add: unit tests for a valid serial port
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-05 14:46:40+02:00,-7200,2017-10-05 14:46:40+02:00,-7200,True,False,"['ChangeLog', '__init__.py', 'test_kylin.py']",['533fbca9f7a491db3df83a71286732797bddd728'],1,6,7,3,1.0,1.0,1.0
+c9b5ebaf8097b8ae7f5b8eecc8764aad8c636581,"Add: GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-06 09:17:29+02:00,-7200,2017-10-06 09:17:29+02:00,-7200,True,False,"['.gitlab-ci.yml', 'tox.ini']",['ff112e65bed70ea103f48337bf2cc9c35d8dddd9'],1,50,51,2,,,
+d8f64f9bcb5b30610c4a55b9a374f5b8a78a92d2,"Fix: GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-06 09:20:10+02:00,-7200,2017-10-06 09:20:10+02:00,-7200,True,False,['.gitlab-ci.yml'],['c9b5ebaf8097b8ae7f5b8eecc8764aad8c636581'],2,3,5,1,,,
+eeeb463a189463b7c46f7eb6f35dfcffeb6b28f0,"Fix: GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-06 09:21:58+02:00,-7200,2017-10-06 09:21:58+02:00,-7200,True,False,['.gitlab-ci.yml'],['d8f64f9bcb5b30610c4a55b9a374f5b8a78a92d2'],1,1,2,1,,,
+9719eaae3b796950918a3e4aed41ed2ca15eb2e2,"Add: Tests PIP packaging
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-06 09:25:38+02:00,-7200,2017-10-06 09:25:38+02:00,-7200,True,False,['.gitlab-ci.yml'],['eeeb463a189463b7c46f7eb6f35dfcffeb6b28f0'],1,6,7,1,,,
+4f8cf9bb6a948085eb398e717c93f6ca9d5eb61e,"Fix: GitlabCI dependencies
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-06 09:37:46+02:00,-7200,2017-10-06 09:37:46+02:00,-7200,True,False,['.gitlab-ci.yml'],['9719eaae3b796950918a3e4aed41ed2ca15eb2e2'],23,26,49,1,,,
+eb5ad4273eb54847dc9a8e6c7f11518b25ba16fb,"Fix: GitlabCI typo
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-06 09:39:13+02:00,-7200,2017-10-06 09:39:13+02:00,-7200,True,False,['.gitlab-ci.yml'],['4f8cf9bb6a948085eb398e717c93f6ca9d5eb61e'],1,1,2,1,,,
+94e727f5f66622f6fac1260a0c3ef0122bc56680,"Update: read serial
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 10:50:02+02:00,-7200,2017-10-12 10:50:02+02:00,-7200,True,False,"['AUTHORS', 'ChangeLog', 'teleinfo.py', '__init__.py']",['eb5ad4273eb54847dc9a8e6c7f11518b25ba16fb'],52,43,95,4,0.4444444444444444,0.4444444444444444,1.0
+4b8110cbd3a417187173d6da69e624e817816d88,"Update: refactoring read frames
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 10:57:54+02:00,-7200,2017-10-12 10:57:54+02:00,-7200,True,False,['__init__.py'],['94e727f5f66622f6fac1260a0c3ef0122bc56680'],11,21,32,1,1.0,1.0,0.0
+f5ae37794e13d32e28b5fbae973cc1313e54f855,"Fix: GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 11:01:41+02:00,-7200,2017-10-12 11:01:41+02:00,-7200,True,False,['.gitlab-ci.yml'],['4b8110cbd3a417187173d6da69e624e817816d88'],0,9,9,1,,,
+b593e1278d3de1793a07f1af58b3ad3789fd05cf,"Fix: unit tests for valid serial port
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 11:08:18+02:00,-7200,2017-10-12 11:08:18+02:00,-7200,True,False,['test_kylin.py'],['f5ae37794e13d32e28b5fbae973cc1313e54f855'],1,22,23,1,1.0,1.0,1.0
+8704496145fa022b905f1c2e630a2b456bdc132f,"Update: pep8
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 12:55:47+02:00,-7200,2017-10-12 12:55:47+02:00,-7200,True,False,"['__init__.py', 'test_kylin.py']",['b593e1278d3de1793a07f1af58b3ad3789fd05cf'],22,14,36,2,0.0,0.0,1.0
+4e03d6d620eeaa1093461cf831da49125ee9b0bf,"Fix: tests
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 13:08:55+02:00,-7200,2017-10-12 13:08:55+02:00,-7200,True,False,['test_kylin.py'],['8704496145fa022b905f1c2e630a2b456bdc132f'],1,2,3,1,,,
+89ea6219125a8049bbdef2cef85eb1e48108dba8,"Fix: GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 13:10:54+02:00,-7200,2017-10-12 13:10:54+02:00,-7200,True,False,['.gitlab-ci.yml'],['4e03d6d620eeaa1093461cf831da49125ee9b0bf'],9,15,24,1,,,
+1a3d3409f6abf86196206fe5498e427f9b0ac864,"Fix typo GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 13:14:57+02:00,-7200,2017-10-12 13:14:57+02:00,-7200,True,False,['.gitlab-ci.yml'],['89ea6219125a8049bbdef2cef85eb1e48108dba8'],5,5,10,1,,,
+0cbfbd1c803a92445c23f88e3d96fe2726655d5a,"Fix: pep8
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 13:16:50+02:00,-7200,2017-10-12 13:16:50+02:00,-7200,True,False,"['test_kylin.py', 'test_kylin.py~']",['1a3d3409f6abf86196206fe5498e427f9b0ac864'],14,1,15,2,,,
+c943bf14f9948fe0505695901e3b58c13e82ee7c,"Fix: pip install and tests
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 13:38:02+02:00,-7200,2017-10-12 13:38:02+02:00,-7200,True,False,['.gitlab-ci.yml'],['0cbfbd1c803a92445c23f88e3d96fe2726655d5a'],2,2,4,1,,,
+8cba41b13cbbc2abca669ace6b8e1ea8e1a614de,"Update: bump version
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 13:41:00+02:00,-7200,2017-10-12 13:41:00+02:00,-7200,True,False,['version.py'],['c943bf14f9948fe0505695901e3b58c13e82ee7c'],1,1,2,1,,,
+f9bdea9caef190606116e46f90b1b41881dd2971,"Fix: requirements
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 13:58:36+02:00,-7200,2017-10-12 13:58:36+02:00,-7200,True,False,['setup.py'],['8cba41b13cbbc2abca669ace6b8e1ea8e1a614de'],0,7,7,1,,,
+9a3cbb5ed22f7f2cff2f90d6f66c296da23dae4b,"Update: bump version
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 13:59:26+02:00,-7200,2017-10-12 13:59:26+02:00,-7200,True,False,['version.py'],['f9bdea9caef190606116e46f90b1b41881dd2971'],1,1,2,1,,,
+46a18bb785d6a731b80a2297234b586ce73800d4,"Fix: packaging Python
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 14:18:49+02:00,-7200,2017-10-12 14:18:49+02:00,-7200,True,False,"['.gitlab-ci.yml', 'requirements.txt', 'setup.cfg', 'setup.py']",['9a3cbb5ed22f7f2cff2f90d6f66c296da23dae4b'],42,52,94,4,1.0,1.0,1.0
+9a08184a18c7544c5a6b23b6ecc01a26c2def8f1,"Fix: install test into GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 14:21:02+02:00,-7200,2017-10-12 14:21:02+02:00,-7200,True,False,"['.gitlab-ci.yml', 'version.py']",['46a18bb785d6a731b80a2297234b586ce73800d4'],2,2,4,2,,,
+8e13be1ae9ecbbd27a2c8274a28e8d6d13de54e0,"Update: read teleinfo frames
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-12 18:37:56+02:00,-7200,2017-10-12 18:37:56+02:00,-7200,True,False,['teleinfo.py'],['b593e1278d3de1793a07f1af58b3ad3789fd05cf'],1,4,5,1,,,
+284529a84041023c0970533434e2f57f0f74da4a,"Fix: check if serial is present
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-18 10:08:34+02:00,-7200,2017-10-18 10:08:34+02:00,-7200,True,False,['__init__.py'],['dc909ca71091eff603670aad1cfea67e3842b739'],0,2,2,1,1.0,1.0,1.0
+b82657a1f0475cc1cb8942319b0812f09b6c5690,"Update: setup version from library
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-23 16:57:57+02:00,-7200,2017-10-23 16:57:57+02:00,-7200,True,False,['setup.py'],['284529a84041023c0970533434e2f57f0f74da4a'],1,3,4,1,,,
+4324a7f9da3fce3d7bee67a8127752f983f9aaef,"Update: version number
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-23 16:58:16+02:00,-7200,2017-10-23 16:58:16+02:00,-7200,True,False,['version.py'],['b82657a1f0475cc1cb8942319b0812f09b6c5690'],1,1,2,1,,,
+944678106d252f904f56a73c99e667cc8d0cf81b,"Update: remove library
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-23 16:58:32+02:00,-7200,2017-10-23 16:58:32+02:00,-7200,True,False,"['__init__.py', 'requirements.txt']",['4324a7f9da3fce3d7bee67a8127752f983f9aaef'],4,1,5,2,,,
+d910c5bffb2dad8553ba07fa81620cc8faaabaeb,"Fix: remove log
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-23 17:41:50+02:00,-7200,2017-10-23 17:41:50+02:00,-7200,True,False,"['__init__.py', 'log.py']",['944678106d252f904f56a73c99e667cc8d0cf81b'],23,0,23,2,0.0,0.0,0.14285714285714285
+310b17818cf0727e5f5673a93350885338397f63,"Fix: set logger level
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-10-23 17:43:14+02:00,-7200,2017-10-23 17:43:14+02:00,-7200,True,False,['__init__.py'],['d910c5bffb2dad8553ba07fa81620cc8faaabaeb'],0,1,1,1,1.0,1.0,0.0
+6869cb6d0ab84fcb7051abab5d230ac18b8f21f0,"Fix: pep8
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 09:19:32+01:00,-3600,2017-11-15 09:19:32+01:00,-3600,True,False,['setup.py'],['310b17818cf0727e5f5673a93350885338397f63'],33,35,68,1,,,
+266a1a73e04ec1a4d8f4b95c6d7e4aa48055ac23,"Add: GitlabCI badges
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 09:23:46+01:00,-3600,2017-11-15 09:23:46+01:00,-3600,True,False,['README.rst'],['6869cb6d0ab84fcb7051abab5d230ac18b8f21f0'],0,5,5,1,,,
+03936e2f0d6d3dc0fbe0e465dc4724e06ae9442b,"Fix: remove tests
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 09:25:35+01:00,-3600,2017-11-15 09:25:35+01:00,-3600,True,False,['test_kylin.py'],['266a1a73e04ec1a4d8f4b95c6d7e4aa48055ac23'],2,2,4,1,0.0,0.0,0.0
+79f09648f667aacc71b380029e844811488ea437,"Add: some debug for GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 09:31:14+01:00,-3600,2017-11-15 09:31:14+01:00,-3600,True,False,['.gitlab-ci.yml'],['03936e2f0d6d3dc0fbe0e465dc4724e06ae9442b'],0,2,2,1,,,
+33357e7e48367eefcf117a53cbbefd6cdb94ee9f,"Fix: Refactoring setup packages
+
+On GitlabCI, read requirements.txt and requirements-test.txt failed.
+See: https://gitlab.com/nicolas-lamirault/kylin/-/jobs/40406396
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 09:41:44+01:00,-3600,2017-11-15 09:41:44+01:00,-3600,True,False,['setup.py'],['79f09648f667aacc71b380029e844811488ea437'],7,14,21,1,,,
+15a90ce6f1296d072cad9e9e1c7db8baf62cfd10,"Fix: missing import
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 09:49:32+01:00,-3600,2017-11-15 09:49:32+01:00,-3600,True,False,['setup.py'],['33357e7e48367eefcf117a53cbbefd6cdb94ee9f'],1,1,2,1,,,
+11fe2f34c4c48c72f878171c8e4719fe97027dd3,"Fix: pypi tests
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 09:55:47+01:00,-3600,2017-11-15 09:55:47+01:00,-3600,True,False,['.gitlab-ci.yml'],['15a90ce6f1296d072cad9e9e1c7db8baf62cfd10'],0,3,3,1,,,
+3cf9a2ce3ba46bbf842bebf05a0e2d010ea76a0e,"Fix: pypi gitlabci
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 10:05:09+01:00,-3600,2017-11-15 10:05:09+01:00,-3600,True,False,['.gitlab-ci.yml'],['11fe2f34c4c48c72f878171c8e4719fe97027dd3'],3,3,6,1,,,
+593b7925c064c7f50732a7cefff02f5903bb380a,"Fix: pypi gitlabci
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 10:10:52+01:00,-3600,2017-11-15 10:10:52+01:00,-3600,True,False,['.gitlab-ci.yml'],['3cf9a2ce3ba46bbf842bebf05a0e2d010ea76a0e'],3,3,6,1,,,
+267ba6fa22ad21ec2e0750768c1fcc467ebe7d89,"Fix: remove upload to Pypi test
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 10:21:12+01:00,-3600,2017-11-15 10:21:12+01:00,-3600,True,False,['.gitlab-ci.yml'],['593b7925c064c7f50732a7cefff02f5903bb380a'],7,7,14,1,,,
+09898faf76c0d9037957268dc025d3f41278d3be,"Update: refactoring GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 10:32:05+01:00,-3600,2017-11-15 10:32:05+01:00,-3600,True,False,"['.gitlab-ci.yml', '.pypirc', 'README.rst']",['267ba6fa22ad21ec2e0750768c1fcc467ebe7d89'],21,34,55,3,,,
+9e990a48e4177c556c36a1bc0a4c24e1d9362e8b,"Fix: Pypy and GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 10:42:55+01:00,-3600,2017-11-15 10:42:55+01:00,-3600,True,False,['.gitlab-ci.yml'],['09898faf76c0d9037957268dc025d3f41278d3be'],1,1,2,1,,,
+cf07df782d800d07b6684ae1d486494a8f82d46a,"Fix: active virtualenv for Twine
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 10:58:36+01:00,-3600,2017-11-15 10:58:36+01:00,-3600,True,False,['.gitlab-ci.yml'],['9e990a48e4177c556c36a1bc0a4c24e1d9362e8b'],1,1,2,1,,,
+ce939d81fe29d37732ef625a81b31e8a65119197,"Fix: Pypi configuration file
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 12:16:16+01:00,-3600,2017-11-15 12:16:16+01:00,-3600,True,False,['.pypirc'],['cf07df782d800d07b6684ae1d486494a8f82d46a'],0,5,5,1,,,
+65128c74f8e68b1636fb1ea9e6974569b609c640,"Fix: Pypi test server
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 13:01:35+01:00,-3600,2017-11-15 13:01:35+01:00,-3600,True,False,['.pypirc'],['ce939d81fe29d37732ef625a81b31e8a65119197'],1,1,2,1,,,
+9bb5c07dffb726a6245100fab09153ab642aecff,"Update: version number
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 13:49:25+01:00,-3600,2017-11-15 13:49:25+01:00,-3600,True,False,['version.py'],['65128c74f8e68b1636fb1ea9e6974569b609c640'],1,1,2,1,,,
+534a8d7e9339d897f9d7a0f4fbc947338f703aaa,"Fix: pypi URL
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2017-11-15 14:01:17+01:00,-3600,2017-11-15 14:01:17+01:00,-3600,True,False,['.pypirc'],['9bb5c07dffb726a6245100fab09153ab642aecff'],1,1,2,1,,,
+4749cb97d0f8decd552671dad7741746210e54e1,"Fix: Upload to Pypi test
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2018-05-28 12:15:50+02:00,-7200,2018-05-28 12:15:50+02:00,-7200,True,False,['.gitlab-ci.yml'],['534a8d7e9339d897f9d7a0f4fbc947338f703aaa'],1,1,2,1,,,
+476ade2ee93745b9d73e7149180005db6d498c74,"Fix: remove Python 3.3
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2018-05-28 12:22:48+02:00,-7200,2018-05-28 12:22:48+02:00,-7200,True,False,['.gitlab-ci.yml'],['4749cb97d0f8decd552671dad7741746210e54e1'],7,0,7,1,,,
+511fc9206d97d55dd900bd2777a90b8cbb4c2d18,"Update: code quality
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2018-05-28 12:58:16+02:00,-7200,2018-05-28 12:58:16+02:00,-7200,True,False,"['__init__.py', 'exceptions.py', 'test_kylin.py', 'version.py', 'setup.py']",['476ade2ee93745b9d73e7149180005db6d498c74'],26,42,68,5,0.0,0.0,0.0
+32d3cf5133f44735cb2d9d144689402364cb9a58,"Fix: pep8
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2018-05-28 13:05:17+02:00,-7200,2018-05-28 13:05:17+02:00,-7200,True,False,['exceptions.py'],['511fc9206d97d55dd900bd2777a90b8cbb4c2d18'],0,1,1,1,,,
+df1da3d4b01482b306630a0d9c4ea6e5cbb994a2,"Fix: extract version
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2018-05-28 13:05:45+02:00,-7200,2018-05-28 13:05:45+02:00,-7200,True,False,['Makefile'],['32d3cf5133f44735cb2d9d144689402364cb9a58'],2,2,4,1,,,
+3dd2125099a32766c6d616098c6884b5fb118ae2,"Update: version
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2018-06-22 14:38:13+02:00,-7200,2018-06-22 14:38:13+02:00,-7200,True,False,"['version.py', 'setup.py']",['df1da3d4b01482b306630a0d9c4ea6e5cbb994a2'],5,3,8,2,,,
+b9508c362fa23bc4c3efd17c8b8a8360ac2bc920,"Update: project setup
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2019-03-01 09:53:47+01:00,-3600,2019-03-01 09:53:47+01:00,-3600,True,False,"['__init__.py', 'test_kylin.py', 'requirements-test.txt', 'tox.ini']",['9b19dd7b5307820987df1a9501e57959bbde5721'],5,11,16,4,0.0,0.0,0.0
+7bcdb28a55c91d795e4fb002dc63fa8e89b593dc,Add renovate.json,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2020-12-22 14:51:49+00:00,0,2020-12-22 14:51:49+00:00,0,True,False,['renovate.json'],['b9508c362fa23bc4c3efd17c8b8a8360ac2bc920'],0,5,5,1,,,
+f9f4d2a7b9d2980a18bb45c5a24a57905186bbd9,Add .whitesource configuration file,whitesource-bolt-for-github[bot],42819689+whitesource-bolt-for-github[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-11 14:26:33+00:00,0,2021-01-11 14:26:33+00:00,0,True,False,['.whitesource'],['b9508c362fa23bc4c3efd17c8b8a8360ac2bc920'],0,12,12,1,,,
+e9ad2cec8116ebe4ea2793944eb08683962610f2,"serial_is_available: allow udev symlinks
+
+Signed-off-by: Frank Villaro-Dixon <frank@vi-di.fr>",Frank Villaro-Dixon,frank@vi-di.fr,Frank Villaro-Dixon,frank@vi-di.fr,2021-02-01 19:56:07+01:00,-3600,2021-02-01 19:57:51+01:00,-3600,True,False,['__init__.py'],['b9508c362fa23bc4c3efd17c8b8a8360ac2bc920'],0,5,5,1,1.0,1.0,1.0
+afce1586ad4551cdbaa3d4e0b88f79c023be4047,"Add: CICD for Python
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 09:31:20+01:00,-3600,2021-02-04 09:31:20+01:00,-3600,True,False,"['release-drafter.yml', 'python.yml', 'release-drafter.yml', 'Makefile']",['ae0e99322daac52d382946bd01bdbc4d1863eca4'],1,136,137,4,,,
+97646b0a40d454e94dfe98c96803473f6d62a511,"Update: virtualenv for Python 3
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 09:33:18+01:00,-3600,2021-02-04 09:33:18+01:00,-3600,True,False,['Makefile'],['afce1586ad4551cdbaa3d4e0b88f79c023be4047'],1,1,2,1,,,
+b08b4a9f870e1c541ef125e81af815c4c659a126,"Update: dependencies
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 10:54:21+01:00,-3600,2021-02-04 10:54:21+01:00,-3600,True,False,"['python.yml', 'requirements-dev.txt', 'tox.ini']",['97646b0a40d454e94dfe98c96803473f6d62a511'],12,5,17,3,,,
+4897cdf7973c9f863ed4e390f356f85792a189ee,"Update: dependencies
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 10:56:38+01:00,-3600,2021-02-04 10:56:38+01:00,-3600,True,False,['python.yml'],['b08b4a9f870e1c541ef125e81af815c4c659a126'],2,2,4,1,,,
+6a325245844f7bbabce28fb8efa68dde47285689,"Fix: pytest
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 10:58:28+01:00,-3600,2021-02-04 10:58:28+01:00,-3600,True,False,['python.yml'],['4897cdf7973c9f863ed4e390f356f85792a189ee'],2,2,4,1,,,
+f3f140595d681b8dd17f35dc9e6496c61a56348b,"Fix: ga
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 11:04:16+01:00,-3600,2021-02-04 11:04:16+01:00,-3600,True,False,['python.yml'],['6a325245844f7bbabce28fb8efa68dde47285689'],1,2,3,1,,,
+97ee4fd5e2be5919fc8560cfeac28a4fc4b8ed23,"Fix: ga
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 11:06:13+01:00,-3600,2021-02-04 11:06:13+01:00,-3600,True,False,['python.yml'],['f3f140595d681b8dd17f35dc9e6496c61a56348b'],2,2,4,1,,,
+240719c3a73b4d964d8f93ea4f869603c833f03f,"Fix: packaging
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 11:07:58+01:00,-3600,2021-02-04 11:07:58+01:00,-3600,True,False,['python.yml'],['97ee4fd5e2be5919fc8560cfeac28a4fc4b8ed23'],1,2,3,1,,,
+1ad1a910909e6cd1585be9e01783acdc9ce41432,"Update: Github Action
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 11:13:10+01:00,-3600,2021-02-04 11:13:10+01:00,-3600,True,False,"['pypa.yml', 'python.yml']",['240719c3a73b4d964d8f93ea4f869603c833f03f'],5,62,67,2,,,
+59f84c17a09440d471d0938da6bba3f0f3f70507,"Update: bump tag
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 11:13:26+01:00,-3600,2021-02-04 11:13:26+01:00,-3600,True,False,['version.py'],['1ad1a910909e6cd1585be9e01783acdc9ce41432'],1,1,2,1,,,
+cf6a261903a4659c8455c2adb792753c773c14bb,"Update: manage version
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 11:14:32+01:00,-3600,2021-02-04 11:14:32+01:00,-3600,True,False,"['Makefile', 'version.py']",['59f84c17a09440d471d0938da6bba3f0f3f70507'],36,17,53,2,,,
+f2b5044a2591678e9d2c58bf87df3c7fa6eb2185,"Update: remove GitlabCI
+
+Signed-off-by: Nicolas Lamirault <nicolas.lamirault@gmail.com>",Nicolas Lamirault,nicolas.lamirault@gmail.com,Nicolas Lamirault,nicolas.lamirault@gmail.com,2021-02-04 11:15:28+01:00,-3600,2021-02-04 11:15:28+01:00,-3600,True,False,['.gitlab-ci.yml'],['cf6a261903a4659c8455c2adb792753c773c14bb'],83,0,83,1,,,
+b332656389624475297d921d1c7ff9eab8aed126,Update dependency pyserial to v3.5,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2021-03-03 12:15:56+00:00,0,2021-03-03 12:15:56+00:00,0,True,False,['requirements.txt'],['c098a02dc4edb057580d2c3c6bfbe0b346bc1af3'],1,1,2,1,,,
+8a4b094435d7f937b1b71fb9844fe699a59989b7,"BREAKING: add teleinfo standard mode
+
+Signed-off-by: Frank Villaro-Dixon <frank@vi-di.fr>",Frank Villaro-Dixon,frank@vi-di.fr,Frank Villaro-Dixon,frank@vi-di.fr,2021-07-03 15:52:06+02:00,-7200,2021-07-03 15:59:33+02:00,-7200,True,False,"['README.rst', 'deploy.sh', 'teleinfo_historique.py', 'teleinfo_standard.py', '__init__.py', 'setup.py']",['aed5ad20e854f03afc364402ce32ad4d540d86e2'],44,151,195,6,0.6486486486486487,1.0,1.0
+b84d27d565c1d105c191bab953c08233fb1d8036,Update dependency flake8 to v3.9.2,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2021-11-12 09:39:22+00:00,0,2021-11-12 09:39:22+00:00,0,True,False,['setup.py'],['c38ce00b13644c59d14e617ebf7aafe3dbe7afe1'],1,1,2,1,,,
+83c77056e0a008830c85d85e38573a5b2357c4fd,Update dependency flake8 to v4,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2021-12-22 12:40:42+00:00,0,2021-12-22 12:40:42+00:00,0,True,False,['setup.py'],['da968346176d3dfeb685801a84d2d2c1ffad784f'],1,1,2,1,,,
+8c5473742f644c5a8520b4609e1059568ceb8c79,Update dependency pytest to v6,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2021-12-22 12:40:45+00:00,0,2021-12-22 12:40:45+00:00,0,True,False,['setup.py'],['da968346176d3dfeb685801a84d2d2c1ffad784f'],1,1,2,1,,,
+d8bf0450d4b89959299b29ba1c9b97e86e64ec63,Update dependency pytest-cov to v2.12.1,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2021-12-22 13:19:12+00:00,0,2021-12-22 13:19:12+00:00,0,True,False,['setup.py'],['853acb140319655c439426bfb52923f067b0dcbd'],1,1,2,1,,,
+c06e5849acdddae55bef9d7253ca82a91e37d030,Update dependency pytest-cov to v3,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2021-12-22 15:46:45+00:00,0,2021-12-22 15:46:45+00:00,0,True,False,['setup.py'],['9833008bbaa43100a9b16197a6c4fc187e4f5864'],1,1,2,1,,,
+a999be3429c04f37ea98263cb8234253503af6c0,Update dependency pytest to v7,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2022-02-04 11:14:27+00:00,0,2022-02-04 11:14:27+00:00,0,True,False,['setup.py'],['a276c911502bc06ad80ddb2ff03905ea247cd377'],1,1,2,1,,,
+6a7818ed2b291c358d688703af58b766daeae0e4,Update actions/checkout action to v3,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2022-03-01 19:22:43+00:00,0,2022-03-01 19:22:43+00:00,0,True,False,"['pypa.yml', 'python.yml']",['03f98d4e4f82954f4baa83d12adddd6162aa82b1'],2,2,4,2,,,
+7a61a93c86216b5b7c96d51f61c5fc2b8be70e6f,Update actions/setup-python action to v3,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2022-03-03 16:57:58+00:00,0,2022-03-03 16:57:58+00:00,0,True,False,"['pypa.yml', 'python.yml']",['030e79654ebb3d8aff072d849d4ca0f566107ea2'],2,2,4,2,,,
+a633a17feef63e86b4b38109ad0a830e490ea0f8,Update dependency pytest to v7.1.2,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2022-04-23 15:06:54+00:00,0,2022-04-23 15:06:54+00:00,0,True,False,['setup.py'],['59a2ec825d20088cd0255e1ae8f899a517e79d68'],1,1,2,1,,,
+8202765e7b9551400c4cf521420c5801317b5d8f,Update actions/setup-python action to v4,Renovate Bot,bot@renovateapp.com,Renovate Bot,bot@renovateapp.com,2022-06-08 18:51:46+00:00,0,2022-06-08 18:51:46+00:00,0,True,False,"['pypa.yml', 'python.yml']",['490409a59281409d67f84f4ccb3a89c9cf43ee12'],2,2,4,2,,,

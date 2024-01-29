@@ -1,0 +1,1131 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+36ae62a32f28ad1d020601f50170bf42d4a745b9,initial commit,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-01-06 20:17:42+09:00,-32400,2022-01-08 20:50:59+09:00,-32400,True,False,"['.cookiecutter.json', '.darglint', '.flake8', '.gitattributes', 'dependabot.yml', 'labels.yml', 'release-drafter.yml', 'constraints.txt', 'labeler.yml', 'release.yml', 'tests.yml', '.gitignore', '.pre-commit-config.yaml', '.readthedocs.yml', 'CODE_OF_CONDUCT.rst', 'CONTRIBUTING.rst', 'LICENSE.rst', 'README.rst', 'codecov.yml', 'codeofconduct.rst', 'conf.py', 'contributing.rst', 'index.rst', 'license.rst', 'reference.rst', 'requirements.txt', 'usage.rst', 'noxfile.py', 'poetry.lock', 'pyproject.toml', '__init__.py', '__main__.py', '__init__.py', 'base.py', 'vorze.py', 'exceptions.py', 'py.typed', '__init__.py', 'base.py', 'vcsx.py', 'vorze.py', 'utils.py', 'sortedcontainers.pyi', '__init__.py', '__init__.py', 'test_command.py', 'test_vorze.py', '__init__.py', 'test_script.py', 'test_vcsx.py', 'test_vorze.py', 'test_main.py']",[],0,3867,3867,52,0.7620751341681574,0.9069767441860465,0.9677996422182469
+8218db859be107837b9931862d9cf6157539f65c,release 0.0.1,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-01-08 21:15:32+09:00,-32400,2022-01-08 21:15:32+09:00,-32400,True,False,['pyproject.toml'],['36ae62a32f28ad1d020601f50170bf42d4a745b9'],1,1,2,1,,,
+4babd5316b98fd7a25b8bb74f006a9a401b01516,"Bump mypy from 0.930 to 0.931
+
+Bumps [mypy](https://github.com/python/mypy) from 0.930 to 0.931.
+- [Release notes](https://github.com/python/mypy/releases)
+- [Commits](https://github.com/python/mypy/compare/v0.930...v0.931)
+
+---
+updated-dependencies:
+- dependency-name: mypy
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-10 14:28:24+00:00,0,2022-01-10 14:28:24+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['ca999e8c390ffd30100b2267f0cef18afcc0e893'],23,23,46,2,,,
+53bfc21b8a903f5863e73ea277dd9bde47557106,"Bump pypa/gh-action-pypi-publish from 1.4.2 to 1.5.0 (#13)
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from 1.4.2 to 1.5.0.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.4.2...v1.5.0)
+
+---
+updated-dependencies:
+- dependency-name: pypa/gh-action-pypi-publish
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-12 19:44:22+09:00,-32400,2022-01-12 19:44:22+09:00,-32400,True,False,['release.yml'],['8ceb174c356377a3955d1fc2cfdd978858c4749b'],2,2,4,1,,,
+47b29878dcc16a82bab7fde38aa100076baf2990,"Bump nox from 2021.10.1 to 2022.1.7 in /.github/workflows (#12)
+
+Bumps [nox](https://github.com/theacodes/nox) from 2021.10.1 to 2022.1.7.
+- [Release notes](https://github.com/theacodes/nox/releases)
+- [Changelog](https://github.com/theacodes/nox/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/theacodes/nox/compare/2021.10.1...2022.1.7)
+
+---
+updated-dependencies:
+- dependency-name: nox
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-12 10:47:35+00:00,0,2022-01-12 10:47:35+00:00,0,True,False,['constraints.txt'],['53bfc21b8a903f5863e73ea277dd9bde47557106'],1,1,2,1,,,
+9c64c4ce4a19bd354b379fd711d853ca0b9d8d59,"Bump flake8-bugbear from 21.11.29 to 22.1.11 (#15)
+
+Bumps [flake8-bugbear](https://github.com/PyCQA/flake8-bugbear) from 21.11.29 to 22.1.11.
+- [Release notes](https://github.com/PyCQA/flake8-bugbear/releases)
+- [Commits](https://github.com/PyCQA/flake8-bugbear/compare/21.11.29...22.1.11)
+
+---
+updated-dependencies:
+- dependency-name: flake8-bugbear
+  dependency-type: direct:development
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-13 17:39:40+09:00,-32400,2022-01-13 17:39:40+09:00,-32400,True,False,"['poetry.lock', 'pyproject.toml']",['47b29878dcc16a82bab7fde38aa100076baf2990'],5,5,10,2,,,
+21447bd6f24a488c554650533e464db990b157a7,mypy: add stubs for buttplug core.messages,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-01-13 21:39:46+09:00,-32400,2022-01-13 21:39:46+09:00,-32400,True,False,"['__init__.pyi', '__init__.pyi', 'messages.pyi']",['9c64c4ce4a19bd354b379fd711d853ca0b9d8d59'],0,71,71,3,,,
+8e1e1d9a287dbbd2ecd96bc9781d63eedc7705a7,"command: refactor to use protocols
+
+- LinearCommand, RotateCommand, VibrateCommand define protocols for
+  script commands that can be serialized into the respective buttplug
+  types
+- Serialization now uses the native type list/tuple combinations to be
+  compatible with buttplug-py device.send_<type>_cmd() calls (instead of
+  constructing the entire ButtplugMessage ourself)",byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-01-13 22:14:10+09:00,-32400,2022-01-13 22:14:10+09:00,-32400,True,False,"['__init__.py', 'base.py', 'vorze.py', 'test_command.py', 'test_vorze.py']",['21447bd6f24a488c554650533e464db990b157a7'],106,235,341,5,0.09782608695652174,1.0,1.0
+24005a1b097efbe4238424a86f6d92a76178e883,tests: update coverage,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-01-13 22:51:51+09:00,-32400,2022-01-13 22:51:51+09:00,-32400,True,False,"['test_command.py', 'test_vorze.py']",['8e1e1d9a287dbbd2ecd96bc9781d63eedc7705a7'],0,24,24,2,1.0,1.0,1.0
+ab8f76f10c79456fdc3740888748786f34b3cbe7,"command: add VorzeVibrateCommand
+
+- Suitable for use with Afesta/LPEG onarhythm scripts",byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-13 22:43:57+09:00,-32400,2022-01-13 23:34:36+09:00,-32400,True,False,"['__init__.py', 'vorze.py', 'test_vorze.py']",['24005a1b097efbe4238424a86f6d92a76178e883'],1,149,150,3,0.5568181818181818,1.0,1.0
+3271c2e46880332e1552e255cc8301066d1e0a51,script: add vorze vibrate script support,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-13 23:21:08+09:00,-32400,2022-01-13 23:34:36+09:00,-32400,True,False,"['vorze.py', 'test_command.py', 'test_vorze.py', 'test_vorze.py']",['ab8f76f10c79456fdc3740888748786f34b3cbe7'],19,76,95,4,1.0,1.0,1.0
+b33911a88c6d1fcd5e3cba2d55d577be48479dfd,script: add vcsx onarhythm support,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-13 23:31:30+09:00,-32400,2022-01-13 23:34:36+09:00,-32400,True,False,"['vcsx.py', 'test_vcsx.py']",['3271c2e46880332e1552e255cc8301066d1e0a51'],18,77,95,2,1.0,1.0,1.0
+a61ee0f9e9c9625f030f363a96e06e6fc7f20cbe,"build(deps): bump release-drafter/release-drafter from 5.15.0 to 5.16.1 (#17)
+
+Bumps [release-drafter/release-drafter](https://github.com/release-drafter/release-drafter) from 5.15.0 to 5.16.1.
+- [Release notes](https://github.com/release-drafter/release-drafter/releases)
+- [Commits](https://github.com/release-drafter/release-drafter/compare/v5.15.0...v5.16.1)
+
+---
+updated-dependencies:
+- dependency-name: release-drafter/release-drafter
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-14 15:09:49+09:00,-32400,2022-01-14 15:09:49+09:00,-32400,True,False,['release.yml'],['b33911a88c6d1fcd5e3cba2d55d577be48479dfd'],1,1,2,1,,,
+00ac81969fd2f14a43dadf1d92f1df458e8824d9,command: add vorze linear (piston) command support,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-14 16:22:10+09:00,-32400,2022-01-14 17:14:13+09:00,-32400,True,False,"['poetry.lock', 'pyproject.toml', '__init__.py', '__init__.py', 'base.py', 'vorze.py', 'test_vorze.py']",['a61ee0f9e9c9625f030f363a96e06e6fc7f20cbe'],57,306,363,7,0.3263888888888889,0.7291666666666666,0.5
+5362ec6aa1b4fa19e9672bbf849bdd56b477f324,script: add vorze/vcsx piston support,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-14 16:56:06+09:00,-32400,2022-01-14 17:14:13+09:00,-32400,True,False,"['vcsx.py', 'vorze.py', 'test_vcsx.py', 'test_vorze.py']",['00ac81969fd2f14a43dadf1d92f1df458e8824d9'],7,78,85,4,1.0,1.0,1.0
+027c345c65d08ff675aa23b187ed337902c01e50,readme: add script conversion example,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-14 17:11:19+09:00,-32400,2022-01-14 17:14:13+09:00,-32400,True,False,"['README.rst', '__init__.py']",['5362ec6aa1b4fa19e9672bbf849bdd56b477f324'],1,26,27,2,,,
+49b5e55e5b1362682c4ed24062cc628a972b24cb,release 0.0.2,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-14 17:16:09+09:00,-32400,2022-01-14 17:21:09+09:00,-32400,True,False,['pyproject.toml'],['027c345c65d08ff675aa23b187ed337902c01e50'],1,1,2,1,,,
+67f8a35304422c6800c3c9447c2cb1c335509a41,"update cookiecutter (#20)
+
+* update cookiecutter (fix issue with nox and pre-commit install)",bhrevol,96057317+bhrevol@users.noreply.github.com,GitHub,noreply@github.com,2022-01-14 18:27:40+09:00,-32400,2022-01-14 18:27:40+09:00,-32400,True,False,"['.cookiecutter.json', '.flake8', 'dependabot.yml', 'tests.yml', '.pre-commit-config.yaml', 'CODE_OF_CONDUCT.rst', 'README.rst', 'noxfile.py', 'poetry.lock', 'pyproject.toml', '__init__.py', 'base.py', '__init__.pyi', 'messages.pyi', 'sortedcontainers.pyi']",['49b5e55e5b1362682c4ed24062cc628a972b24cb'],121,134,255,15,0.0,0.0,1.0
+b7ea2ec757f44df52ca8f383feb1f076e22fad50,"build(deps-dev): bump pre-commit from 2.16.0 to 2.17.0 (#24)
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.16.0 to 2.17.0.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.16.0...v2.17.0)
+
+---
+updated-dependencies:
+- dependency-name: pre-commit
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-20 18:10:51+09:00,-32400,2022-01-20 18:10:51+09:00,-32400,True,False,['poetry.lock'],['67f8a35304422c6800c3c9447c2cb1c335509a41'],3,3,6,1,,,
+913a050d0d6d825e96f92dddb07eff8e9ccf8c65,script: export generic script types,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-20 18:07:51+09:00,-32400,2022-01-20 18:14:52+09:00,-32400,True,False,['__init__.py'],['b7ea2ec757f44df52ca8f383feb1f076e22fad50'],0,4,4,1,,,
+d0ba882883fd40eecc00c4b646e1787e35ee09e4,ci: disable tests for non-main branches,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-20 18:09:20+09:00,-32400,2022-01-20 18:14:52+09:00,-32400,True,False,['tests.yml'],['913a050d0d6d825e96f92dddb07eff8e9ccf8c65'],2,4,6,1,,,
+1a72188894fef8f67f5e6c1c2a05f7dd07801576,"build(deps): bump sphinx from 4.3.2 to 4.4.0 in /docs
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 4.3.2 to 4.4.0.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/4.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v4.3.2...v4.4.0)
+
+---
+updated-dependencies:
+- dependency-name: sphinx
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-20 09:16:22+00:00,0,2022-01-20 18:19:50+09:00,-32400,True,False,['requirements.txt'],['d0ba882883fd40eecc00c4b646e1787e35ee09e4'],1,1,2,1,,,
+0025a57e8dfef3bb77def6b8f3bb3c197d7ee900,"build(deps): bump release-drafter/release-drafter from 5.16.1 to 5.17.6
+
+Bumps [release-drafter/release-drafter](https://github.com/release-drafter/release-drafter) from 5.16.1 to 5.17.6.
+- [Release notes](https://github.com/release-drafter/release-drafter/releases)
+- [Commits](https://github.com/release-drafter/release-drafter/compare/v5.16.1...v5.17.6)
+
+---
+updated-dependencies:
+- dependency-name: release-drafter/release-drafter
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-20 09:16:22+00:00,0,2022-01-20 18:20:15+09:00,-32400,True,False,['release.yml'],['1a72188894fef8f67f5e6c1c2a05f7dd07801576'],1,1,2,1,,,
+b9490a8dcae9c9307cb61fe7b6373b15d2eff795,"build(deps-dev): bump sphinx from 4.3.2 to 4.4.0
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 4.3.2 to 4.4.0.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/4.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v4.3.2...v4.4.0)
+
+---
+updated-dependencies:
+- dependency-name: sphinx
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-20 09:17:23+00:00,0,2022-01-20 18:22:40+09:00,-32400,True,False,['poetry.lock'],['0025a57e8dfef3bb77def6b8f3bb3c197d7ee900'],4,41,45,1,,,
+64e134df59945d2df27d389ce0f994f9d18b31c3,release 0.0.3,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-01-20 18:23:43+09:00,-32400,2022-01-20 18:23:43+09:00,-32400,True,False,['pyproject.toml'],['b9490a8dcae9c9307cb61fe7b6373b15d2eff795'],1,1,2,1,,,
+79abe6ee242a51d6a5adc83f3204fee4051a0915,"build(deps): bump pyparsing from 3.0.6 to 3.0.7
+
+Bumps [pyparsing](https://github.com/pyparsing/pyparsing) from 3.0.6 to 3.0.7.
+- [Release notes](https://github.com/pyparsing/pyparsing/releases)
+- [Changelog](https://github.com/pyparsing/pyparsing/blob/master/CHANGES)
+- [Commits](https://github.com/pyparsing/pyparsing/compare/pyparsing_3.0.6...pyparsing_3.0.7)
+
+---
+updated-dependencies:
+- dependency-name: pyparsing
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-21 14:41:28+00:00,0,2022-01-26 18:22:45+09:00,-32400,True,False,['poetry.lock'],['64e134df59945d2df27d389ce0f994f9d18b31c3'],3,3,6,1,,,
+36de4e34315f09aacee8f9e95953eb8a825b33fe,"build(deps): bump win32-setctime from 1.0.4 to 1.1.0
+
+Bumps [win32-setctime](https://github.com/Delgan/win32-setctime) from 1.0.4 to 1.1.0.
+- [Release notes](https://github.com/Delgan/win32-setctime/releases)
+- [Commits](https://github.com/Delgan/win32-setctime/compare/1.0.4...1.1.0)
+
+---
+updated-dependencies:
+- dependency-name: win32-setctime
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-24 14:32:36+00:00,0,2022-01-26 18:23:21+09:00,-32400,True,False,['poetry.lock'],['79abe6ee242a51d6a5adc83f3204fee4051a0915'],3,3,6,1,,,
+245a0a25d3695ef80e28a24ff709bbb5f4447b2b,"build(deps): bump identify from 2.4.4 to 2.4.5
+
+Bumps [identify](https://github.com/pre-commit/identify) from 2.4.4 to 2.4.5.
+- [Release notes](https://github.com/pre-commit/identify/releases)
+- [Commits](https://github.com/pre-commit/identify/compare/v2.4.4...v2.4.5)
+
+---
+updated-dependencies:
+- dependency-name: identify
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-24 14:33:14+00:00,0,2022-01-26 18:23:33+09:00,-32400,True,False,['poetry.lock'],['36de4e34315f09aacee8f9e95953eb8a825b33fe'],4,4,8,1,,,
+51fe9af655407471d44f14b3470456a994efb1bd,"build(deps-dev): bump coverage from 6.2 to 6.3
+
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 6.2 to 6.3.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/6.2...6.3)
+
+---
+updated-dependencies:
+- dependency-name: coverage
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-26 14:32:51+00:00,0,2022-01-28 15:31:25+09:00,-32400,True,False,['poetry.lock'],['245a0a25d3695ef80e28a24ff709bbb5f4447b2b'],49,46,95,1,,,
+5878273000746e1005b2d0ffc1c8b6bfa2fdc713,"build(deps): bump bandit from 1.7.1 to 1.7.2
+
+Bumps [bandit](https://github.com/PyCQA/bandit) from 1.7.1 to 1.7.2.
+- [Release notes](https://github.com/PyCQA/bandit/releases)
+- [Commits](https://github.com/PyCQA/bandit/compare/1.7.1...1.7.2)
+
+---
+updated-dependencies:
+- dependency-name: bandit
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-26 14:33:35+00:00,0,2022-01-28 15:31:36+09:00,-32400,True,False,['poetry.lock'],['51fe9af655407471d44f14b3470456a994efb1bd'],4,9,13,1,,,
+2d0c657f8b8e82b9311ffce7cbb3dfb794bc0202,"build(deps-dev): bump coverage from 6.3 to 6.3.1
+
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 6.3 to 6.3.1.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/6.3...6.3.1)
+
+---
+updated-dependencies:
+- dependency-name: coverage
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-02 14:31:54+00:00,0,2022-02-03 14:37:36+09:00,-32400,True,False,['poetry.lock'],['5878273000746e1005b2d0ffc1c8b6bfa2fdc713'],45,42,87,1,,,
+31d45a13776713b5e322d97a562c89521194e57b,"build(deps): bump sphinx-click from 3.0.2 to 3.1.0 in /docs
+
+Bumps [sphinx-click](https://github.com/stephenfin/sphinx-click) from 3.0.2 to 3.1.0.
+- [Release notes](https://github.com/stephenfin/sphinx-click/releases)
+- [Commits](https://github.com/stephenfin/sphinx-click/compare/3.0.2...3.1.0)
+
+---
+updated-dependencies:
+- dependency-name: sphinx-click
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-02 14:29:56+00:00,0,2022-02-03 14:38:03+09:00,-32400,True,False,['requirements.txt'],['2d0c657f8b8e82b9311ffce7cbb3dfb794bc0202'],1,1,2,1,,,
+4724919eec7e89a4a1bb17035dce575cf490afc5,"build(deps): bump charset-normalizer from 2.0.10 to 2.0.11
+
+Bumps [charset-normalizer](https://github.com/ousret/charset_normalizer) from 2.0.10 to 2.0.11.
+- [Release notes](https://github.com/ousret/charset_normalizer/releases)
+- [Changelog](https://github.com/Ousret/charset_normalizer/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/ousret/charset_normalizer/compare/2.0.10...2.0.11)
+
+---
+updated-dependencies:
+- dependency-name: charset-normalizer
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-31 14:33:09+00:00,0,2022-02-03 14:38:35+09:00,-32400,True,False,['poetry.lock'],['31d45a13776713b5e322d97a562c89521194e57b'],3,3,6,1,,,
+8bbb35a49f1a17914028b24d3c74cf5406b92718,"build(deps-dev): bump black from 21.12b0 to 22.1.0
+
+Bumps [black](https://github.com/psf/black) from 21.12b0 to 22.1.0.
+- [Release notes](https://github.com/psf/black/releases)
+- [Changelog](https://github.com/psf/black/blob/main/CHANGES.md)
+- [Commits](https://github.com/psf/black/commits/22.1.0)
+
+---
+updated-dependencies:
+- dependency-name: black
+  dependency-type: direct:development
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-31 14:32:14+00:00,0,2022-02-03 14:38:46+09:00,-32400,True,False,['poetry.lock'],['4724919eec7e89a4a1bb17035dce575cf490afc5'],11,28,39,1,,,
+94f4159ca6d5831f997e86f97202ccd86c1eb6ae,"build(deps): bump pip from 21.3.1 to 22.0.2 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 21.3.1 to 22.0.2.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/commits)
+
+---
+updated-dependencies:
+- dependency-name: pip
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-01-31 14:29:10+00:00,0,2022-02-03 14:38:57+09:00,-32400,True,False,['constraints.txt'],['8bbb35a49f1a17914028b24d3c74cf5406b92718'],1,1,2,1,,,
+65c3f25a5b8b2adcdabef641b1fb00300c4a86d1,"build(deps): bump identify from 2.4.5 to 2.4.7
+
+Bumps [identify](https://github.com/pre-commit/identify) from 2.4.5 to 2.4.7.
+- [Release notes](https://github.com/pre-commit/identify/releases)
+- [Commits](https://github.com/pre-commit/identify/compare/v2.4.5...v2.4.7)
+
+---
+updated-dependencies:
+- dependency-name: identify
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-03 05:41:12+00:00,0,2022-02-03 14:54:22+09:00,-32400,True,False,['poetry.lock'],['94f4159ca6d5831f997e86f97202ccd86c1eb6ae'],3,3,6,1,,,
+fd6c1273211421056017ad80c393fed52dc708e9,"build(deps-dev): bump sphinx-click from 3.0.2 to 3.1.0
+
+Bumps [sphinx-click](https://github.com/stephenfin/sphinx-click) from 3.0.2 to 3.1.0.
+- [Release notes](https://github.com/stephenfin/sphinx-click/releases)
+- [Commits](https://github.com/stephenfin/sphinx-click/compare/3.0.2...3.1.0)
+
+---
+updated-dependencies:
+- dependency-name: sphinx-click
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-03 05:41:09+00:00,0,2022-02-03 14:54:34+09:00,-32400,True,False,['poetry.lock'],['65c3f25a5b8b2adcdabef641b1fb00300c4a86d1'],3,3,6,1,,,
+2257852795310d8803354d8ebd3c7d7f6ae16498,"build(deps): bump pip from 22.0.2 to 22.0.3 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 22.0.2 to 22.0.3.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/22.0.2...22.0.3)
+
+---
+updated-dependencies:
+- dependency-name: pip
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-03 14:30:40+00:00,0,2022-02-04 00:18:01+09:00,-32400,True,False,['constraints.txt'],['fd6c1273211421056017ad80c393fed52dc708e9'],1,1,2,1,,,
+6a5af9cc5e3ac3e146deab52918a0f35cb87e201,"build(deps): bump tomli from 1.2.3 to 2.0.0
+
+Bumps [tomli](https://github.com/hukkin/tomli) from 1.2.3 to 2.0.0.
+- [Release notes](https://github.com/hukkin/tomli/releases)
+- [Changelog](https://github.com/hukkin/tomli/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/hukkin/tomli/compare/1.2.3...2.0.0)
+
+---
+updated-dependencies:
+- dependency-name: tomli
+  dependency-type: indirect
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-03 14:32:49+00:00,0,2022-02-04 00:18:28+09:00,-32400,True,False,['poetry.lock'],['2257852795310d8803354d8ebd3c7d7f6ae16498'],4,4,8,1,,,
+0123305b512004974b12e19ac2e90e95601e0692,"build(deps): bump release-drafter/release-drafter from 5.17.6 to 5.18.1
+
+Bumps [release-drafter/release-drafter](https://github.com/release-drafter/release-drafter) from 5.17.6 to 5.18.1.
+- [Release notes](https://github.com/release-drafter/release-drafter/releases)
+- [Commits](https://github.com/release-drafter/release-drafter/compare/v5.17.6...v5.18.1)
+
+---
+updated-dependencies:
+- dependency-name: release-drafter/release-drafter
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-07 14:31:22+00:00,0,2022-03-04 14:19:50+09:00,-32400,True,False,['release.yml'],['6a5af9cc5e3ac3e146deab52918a0f35cb87e201'],1,1,2,1,,,
+0a19439866fa28e660de6fa47e17e3b4a1b1479f,"build(deps): bump pbr from 5.8.0 to 5.8.1
+
+Bumps [pbr](https://docs.openstack.org/pbr/latest/) from 5.8.0 to 5.8.1.
+
+---
+updated-dependencies:
+- dependency-name: pbr
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-07 14:33:18+00:00,0,2022-03-04 14:20:02+09:00,-32400,True,False,['poetry.lock'],['0123305b512004974b12e19ac2e90e95601e0692'],3,3,6,1,,,
+96775b46fed4fb34b01b38922ec35c62a0849a97,"build(deps): bump tomli from 2.0.0 to 2.0.1
+
+Bumps [tomli](https://github.com/hukkin/tomli) from 2.0.0 to 2.0.1.
+- [Release notes](https://github.com/hukkin/tomli/releases)
+- [Changelog](https://github.com/hukkin/tomli/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/hukkin/tomli/compare/2.0.0...2.0.1)
+
+---
+updated-dependencies:
+- dependency-name: tomli
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-08 14:37:40+00:00,0,2022-03-04 14:20:15+09:00,-32400,True,False,['poetry.lock'],['0a19439866fa28e660de6fa47e17e3b4a1b1479f'],3,3,6,1,,,
+b372c1f80c792be4d4ff0dc80a5aa9e424b5a74e,"build(deps): bump poetry from 1.1.12 to 1.1.13 in /.github/workflows
+
+Bumps [poetry](https://github.com/python-poetry/poetry) from 1.1.12 to 1.1.13.
+- [Release notes](https://github.com/python-poetry/poetry/releases)
+- [Changelog](https://github.com/python-poetry/poetry/blob/1.1.13/CHANGELOG.md)
+- [Commits](https://github.com/python-poetry/poetry/compare/1.1.12...1.1.13)
+
+---
+updated-dependencies:
+- dependency-name: poetry
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-11 14:39:32+00:00,0,2022-03-04 14:20:46+09:00,-32400,True,False,['constraints.txt'],['96775b46fed4fb34b01b38922ec35c62a0849a97'],1,1,2,1,,,
+5c81299010f4917d00eb3390b013845441b1658c,"build(deps): bump identify from 2.4.7 to 2.4.11
+
+Bumps [identify](https://github.com/pre-commit/identify) from 2.4.7 to 2.4.11.
+- [Release notes](https://github.com/pre-commit/identify/releases)
+- [Commits](https://github.com/pre-commit/identify/compare/v2.4.7...v2.4.11)
+
+---
+updated-dependencies:
+- dependency-name: identify
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-23 14:38:43+00:00,0,2022-03-04 14:21:18+09:00,-32400,True,False,['poetry.lock'],['b372c1f80c792be4d4ff0dc80a5aa9e424b5a74e'],3,3,6,1,,,
+d7094704e3ea96979a48c255c29a7b2c645c1962,"build(deps): bump furo from 2022.1.2 to 2022.2.23 in /docs
+
+Bumps [furo](https://github.com/pradyunsg/furo) from 2022.1.2 to 2022.2.23.
+- [Release notes](https://github.com/pradyunsg/furo/releases)
+- [Changelog](https://github.com/pradyunsg/furo/blob/main/docs/changelog.md)
+- [Commits](https://github.com/pradyunsg/furo/compare/2022.01.02...2022.02.23)
+
+---
+updated-dependencies:
+- dependency-name: furo
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-24 14:26:55+00:00,0,2022-03-04 14:21:48+09:00,-32400,True,False,['requirements.txt'],['5c81299010f4917d00eb3390b013845441b1658c'],1,1,2,1,,,
+6efb96e9a2202e96ac0eba14b90dfa7981efed50,"build(deps): bump actions/setup-python from 2.3.1 to 3
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2.3.1 to 3.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.3.1...v3)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-28 14:31:43+00:00,0,2022-03-04 14:21:58+09:00,-32400,True,False,"['release.yml', 'tests.yml']",['d7094704e3ea96979a48c255c29a7b2c645c1962'],3,3,6,2,,,
+9dfcb73bb8d54255010875dfab6884a50dc97755,"build(deps): bump actions/checkout from 2.4.0 to 3
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2.4.0 to 3.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.4.0...v3)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-03-02 14:38:20+00:00,0,2022-03-04 14:22:27+09:00,-32400,True,False,"['labeler.yml', 'release.yml', 'tests.yml']",['6efb96e9a2202e96ac0eba14b90dfa7981efed50'],4,4,8,3,,,
+a83fd8e3e8e644250c338f51a70af92dff857322,"build(deps): bump actions/download-artifact from 2.1.0 to 3
+
+Bumps [actions/download-artifact](https://github.com/actions/download-artifact) from 2.1.0 to 3.
+- [Release notes](https://github.com/actions/download-artifact/releases)
+- [Commits](https://github.com/actions/download-artifact/compare/v2.1.0...v3)
+
+---
+updated-dependencies:
+- dependency-name: actions/download-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-03-03 14:30:32+00:00,0,2022-03-04 14:22:46+09:00,-32400,True,False,['tests.yml'],['9dfcb73bb8d54255010875dfab6884a50dc97755'],1,1,2,1,,,
+5b523f521ce287cd1e1a2c5ecae85f94c7329d49,"build(deps-dev): bump pytest from 6.2.5 to 7.0.1
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.2.5 to 7.0.1.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/6.2.5...7.0.1)
+
+---
+updated-dependencies:
+- dependency-name: pytest
+  dependency-type: direct:development
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-02-14 14:32:33+00:00,0,2022-03-04 14:22:57+09:00,-32400,True,False,['poetry.lock'],['a83fd8e3e8e644250c338f51a70af92dff857322'],5,5,10,1,,,
+add1e9c2d66a38d1886251ba362660e6a7916f01,"build(deps): bump codecov/codecov-action from 2.1.0 to 3.1.0
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 2.1.0 to 3.1.0.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-action/compare/v2.1.0...v3.1.0)
+
+---
+updated-dependencies:
+- dependency-name: codecov/codecov-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-04-22 14:21:11+00:00,0,2022-05-09 17:39:18+09:00,-32400,True,False,['tests.yml'],['5b523f521ce287cd1e1a2c5ecae85f94c7329d49'],1,1,2,1,,,
+5297dcbed32779451377365d028ba2ebd7b78908,"build(deps): bump sphinx-click from 3.1.0 to 4.0.3 in /docs
+
+Bumps [sphinx-click](https://github.com/click-contrib/sphinx-click) from 3.1.0 to 4.0.3.
+- [Release notes](https://github.com/click-contrib/sphinx-click/releases)
+- [Commits](https://github.com/click-contrib/sphinx-click/compare/3.1.0...4.0.3)
+
+---
+updated-dependencies:
+- dependency-name: sphinx-click
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-04-20 14:29:26+00:00,0,2022-05-09 17:39:37+09:00,-32400,True,False,['requirements.txt'],['add1e9c2d66a38d1886251ba362660e6a7916f01'],1,1,2,1,,,
+e79736d3cd9d8f07d165ea3a695f531645636fe3,"build(deps): bump platformdirs from 2.4.1 to 2.5.2
+
+Bumps [platformdirs](https://github.com/platformdirs/platformdirs) from 2.4.1 to 2.5.2.
+- [Release notes](https://github.com/platformdirs/platformdirs/releases)
+- [Changelog](https://github.com/platformdirs/platformdirs/blob/main/CHANGES.rst)
+- [Commits](https://github.com/platformdirs/platformdirs/compare/2.4.1...2.5.2)
+
+---
+updated-dependencies:
+- dependency-name: platformdirs
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-04-18 14:44:06+00:00,0,2022-05-09 17:39:54+09:00,-32400,True,False,['poetry.lock'],['5297dcbed32779451377365d028ba2ebd7b78908'],5,5,10,1,,,
+ed6c58eb36183eb0e16064b2f38081949a1ea1de,"build(deps): bump virtualenv from 20.13.0 to 20.14.1
+
+Bumps [virtualenv](https://github.com/pypa/virtualenv) from 20.13.0 to 20.14.1.
+- [Release notes](https://github.com/pypa/virtualenv/releases)
+- [Changelog](https://github.com/pypa/virtualenv/blob/main/docs/changelog.rst)
+- [Commits](https://github.com/pypa/virtualenv/compare/20.13.0...20.14.1)
+
+---
+updated-dependencies:
+- dependency-name: virtualenv
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-04-11 15:18:00+00:00,0,2022-05-09 17:41:53+09:00,-32400,True,False,['poetry.lock'],['e79736d3cd9d8f07d165ea3a695f531645636fe3'],3,3,6,1,,,
+68c55514054fa9257a9a0c14d1a3c4f0cd649ac4,"build(deps): bump virtualenv in /.github/workflows
+
+Bumps [virtualenv](https://github.com/pypa/virtualenv) from 20.13.0 to 20.14.1.
+- [Release notes](https://github.com/pypa/virtualenv/releases)
+- [Changelog](https://github.com/pypa/virtualenv/blob/main/docs/changelog.rst)
+- [Commits](https://github.com/pypa/virtualenv/compare/20.13.0...20.14.1)
+
+---
+updated-dependencies:
+- dependency-name: virtualenv
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-04-11 15:13:04+00:00,0,2022-05-09 17:42:09+09:00,-32400,True,False,['constraints.txt'],['ed6c58eb36183eb0e16064b2f38081949a1ea1de'],1,1,2,1,,,
+1df015a604ad356bdbd0934a078c423bce50df6f,"build(deps): bump actions/cache from 2.1.7 to 3.0.2
+
+Bumps [actions/cache](https://github.com/actions/cache) from 2.1.7 to 3.0.2.
+- [Release notes](https://github.com/actions/cache/releases)
+- [Changelog](https://github.com/actions/cache/blob/main/RELEASES.md)
+- [Commits](https://github.com/actions/cache/compare/v2.1.7...v3.0.2)
+
+---
+updated-dependencies:
+- dependency-name: actions/cache
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-04-11 15:12:27+00:00,0,2022-05-09 17:42:21+09:00,-32400,True,False,['tests.yml'],['68c55514054fa9257a9a0c14d1a3c4f0cd649ac4'],1,1,2,1,,,
+40851a21568014a0e1439d29edefff36049b448d,"build(deps): bump actions/upload-artifact from 2.3.1 to 3.0.0
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 2.3.1 to 3.0.0.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v2.3.1...v3.0.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-04-08 14:26:58+00:00,0,2022-05-09 17:42:53+09:00,-32400,True,False,['tests.yml'],['1df015a604ad356bdbd0934a078c423bce50df6f'],2,2,4,1,,,
+7749670a109cc9f1612f0d76cf8c981ca9260ce4,"build(deps): bump gitpython from 3.1.26 to 3.1.27
+
+Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.26 to 3.1.27.
+- [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.26...3.1.27)
+
+---
+updated-dependencies:
+- dependency-name: gitpython
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-03-04 05:23:29+00:00,0,2022-05-09 17:43:16+09:00,-32400,True,False,['poetry.lock'],['40851a21568014a0e1439d29edefff36049b448d'],3,3,6,1,,,
+8854e3cca77de0e86c5b17c6ae51d4b4ce2f4015,"build(deps-dev): bump coverage from 6.3.1 to 6.3.2
+
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 6.3.1 to 6.3.2.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/6.3.1...6.3.2)
+
+---
+updated-dependencies:
+- dependency-name: coverage
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-03-04 05:24:32+00:00,0,2022-05-09 17:43:55+09:00,-32400,True,False,['poetry.lock'],['7749670a109cc9f1612f0d76cf8c981ca9260ce4'],42,42,84,1,,,
+2dce05d37b65e23724152231565415ea1e4222c8,"build(deps): bump release-drafter/release-drafter from 5.18.1 to 5.19.0
+
+Bumps [release-drafter/release-drafter](https://github.com/release-drafter/release-drafter) from 5.18.1 to 5.19.0.
+- [Release notes](https://github.com/release-drafter/release-drafter/releases)
+- [Commits](https://github.com/release-drafter/release-drafter/compare/v5.18.1...v5.19.0)
+
+---
+updated-dependencies:
+- dependency-name: release-drafter/release-drafter
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-03-08 14:46:05+00:00,0,2022-05-09 17:44:55+09:00,-32400,True,False,['release.yml'],['8854e3cca77de0e86c5b17c6ae51d4b4ce2f4015'],1,1,2,1,,,
+9a719562077af7ccccf706444b3459ef3898ebcb,"build(deps): bump sphinx from 4.4.0 to 4.5.0 in /docs
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 4.4.0 to 4.5.0.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/4.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v4.4.0...v4.5.0)
+
+---
+updated-dependencies:
+- dependency-name: sphinx
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:40:04+00:00,0,2022-05-09 17:45:23+09:00,-32400,True,False,['requirements.txt'],['2dce05d37b65e23724152231565415ea1e4222c8'],1,1,2,1,,,
+d3c2b2a1d2662c52cdf519acf643ac106836061e,"build(deps): bump zipp from 3.7.0 to 3.8.0
+
+Bumps [zipp](https://github.com/jaraco/zipp) from 3.7.0 to 3.8.0.
+- [Release notes](https://github.com/jaraco/zipp/releases)
+- [Changelog](https://github.com/jaraco/zipp/blob/main/CHANGES.rst)
+- [Commits](https://github.com/jaraco/zipp/compare/v3.7.0...v3.8.0)
+
+---
+updated-dependencies:
+- dependency-name: zipp
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:41:31+00:00,0,2022-05-09 17:46:00+09:00,-32400,True,False,['poetry.lock'],['9a719562077af7ccccf706444b3459ef3898ebcb'],5,5,10,1,,,
+869619c469dc9257191d92ed05c8af799f59cde2,"build(deps): bump filelock from 3.4.2 to 3.6.0
+
+Bumps [filelock](https://github.com/tox-dev/py-filelock) from 3.4.2 to 3.6.0.
+- [Release notes](https://github.com/tox-dev/py-filelock/releases)
+- [Changelog](https://github.com/tox-dev/py-filelock/blob/main/docs/changelog.rst)
+- [Commits](https://github.com/tox-dev/py-filelock/compare/3.4.2...3.6.0)
+
+---
+updated-dependencies:
+- dependency-name: filelock
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:42:14+00:00,0,2022-05-09 17:46:15+09:00,-32400,True,False,['poetry.lock'],['d3c2b2a1d2662c52cdf519acf643ac106836061e'],3,3,6,1,,,
+8592267d370e1af4bacb32a598af0f2048b29f97,"build(deps): bump pip from 22.0.3 to 22.0.4 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 22.0.3 to 22.0.4.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/22.0.3...22.0.4)
+
+---
+updated-dependencies:
+- dependency-name: pip
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:43:10+00:00,0,2022-05-09 17:46:58+09:00,-32400,True,False,['constraints.txt'],['869619c469dc9257191d92ed05c8af799f59cde2'],1,1,2,1,,,
+79d8ef91b211f70dd3b846e26ba30526b7bc3687,"build(deps): bump pyparsing from 3.0.7 to 3.0.8
+
+Bumps [pyparsing](https://github.com/pyparsing/pyparsing) from 3.0.7 to 3.0.8.
+- [Release notes](https://github.com/pyparsing/pyparsing/releases)
+- [Changelog](https://github.com/pyparsing/pyparsing/blob/master/CHANGES)
+- [Commits](https://github.com/pyparsing/pyparsing/compare/pyparsing_3.0.7...pyparsing_3.0.8)
+
+---
+updated-dependencies:
+- dependency-name: pyparsing
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:43:38+00:00,0,2022-05-09 17:47:09+09:00,-32400,True,False,['poetry.lock'],['8592267d370e1af4bacb32a598af0f2048b29f97'],6,6,12,1,,,
+649f591859a60eb4f82736fcc4abcc33c3acfebc,"build(deps): bump click from 8.0.3 to 8.1.3
+
+Bumps [click](https://github.com/pallets/click) from 8.0.3 to 8.1.3.
+- [Release notes](https://github.com/pallets/click/releases)
+- [Changelog](https://github.com/pallets/click/blob/main/CHANGES.rst)
+- [Commits](https://github.com/pallets/click/compare/8.0.3...8.1.3)
+
+---
+updated-dependencies:
+- dependency-name: click
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:47:17+00:00,0,2022-05-09 17:47:36+09:00,-32400,True,False,['poetry.lock'],['79d8ef91b211f70dd3b846e26ba30526b7bc3687'],4,4,8,1,,,
+9ec8aac01c111c3fecba2428228ebc7c04b0f36d,"build(deps): bump typing-extensions from 4.0.1 to 4.2.0
+
+Bumps [typing-extensions](https://github.com/python/typing) from 4.0.1 to 4.2.0.
+- [Release notes](https://github.com/python/typing/releases)
+- [Changelog](https://github.com/python/typing/blob/master/typing_extensions/CHANGELOG.md)
+- [Commits](https://github.com/python/typing/compare/4.0.1...4.2.0)
+
+---
+updated-dependencies:
+- dependency-name: typing-extensions
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:46:22+00:00,0,2022-05-09 17:47:48+09:00,-32400,True,False,['poetry.lock'],['649f591859a60eb4f82736fcc4abcc33c3acfebc'],5,5,10,1,,,
+f3df6b3a0a1201e9e92fe593ff741a3e00d9f04f,"build(deps): bump furo from 2022.2.23 to 2022.4.7 in /docs
+
+Bumps [furo](https://github.com/pradyunsg/furo) from 2022.2.23 to 2022.4.7.
+- [Release notes](https://github.com/pradyunsg/furo/releases)
+- [Changelog](https://github.com/pradyunsg/furo/blob/main/docs/changelog.md)
+- [Commits](https://github.com/pradyunsg/furo/compare/2022.02.23...2022.04.07)
+
+---
+updated-dependencies:
+- dependency-name: furo
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:46:26+00:00,0,2022-05-09 17:48:04+09:00,-32400,True,False,['requirements.txt'],['9ec8aac01c111c3fecba2428228ebc7c04b0f36d'],1,1,2,1,,,
+785aac7e18ae62c0a4db7f580734e2b2e8fd4f1c,"build(deps-dev): bump xdoctest from 0.15.10 to 1.0.0
+
+Bumps [xdoctest](https://github.com/Erotemic/xdoctest) from 0.15.10 to 1.0.0.
+- [Release notes](https://github.com/Erotemic/xdoctest/releases)
+- [Changelog](https://github.com/Erotemic/xdoctest/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/Erotemic/xdoctest/compare/v0.15.10...v1.0.0)
+
+---
+updated-dependencies:
+- dependency-name: xdoctest
+  dependency-type: direct:development
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:47:28+00:00,0,2022-05-09 17:48:30+09:00,-32400,True,False,['poetry.lock'],['f3df6b3a0a1201e9e92fe593ff741a3e00d9f04f'],9,10,19,1,,,
+02deb6b9e2f3deed8e5589dcfe0b82ba4f1babd9,"build(deps-dev): bump pygments from 2.11.2 to 2.12.0
+
+Bumps [pygments](https://github.com/pygments/pygments) from 2.11.2 to 2.12.0.
+- [Release notes](https://github.com/pygments/pygments/releases)
+- [Changelog](https://github.com/pygments/pygments/blob/master/CHANGES)
+- [Commits](https://github.com/pygments/pygments/compare/2.11.2...2.12.0)
+
+---
+updated-dependencies:
+- dependency-name: pygments
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:47:49+00:00,0,2022-05-09 17:48:43+09:00,-32400,True,False,['poetry.lock'],['785aac7e18ae62c0a4db7f580734e2b2e8fd4f1c'],4,4,8,1,,,
+40baa66f8b44376bb06eb953f3dee97543f3657b,"build(deps): bump babel from 2.9.1 to 2.10.1
+
+Bumps [babel](https://github.com/python-babel/babel) from 2.9.1 to 2.10.1.
+- [Release notes](https://github.com/python-babel/babel/releases)
+- [Changelog](https://github.com/python-babel/babel/blob/master/CHANGES.rst)
+- [Commits](https://github.com/python-babel/babel/compare/v2.9.1...v2.10.1)
+
+---
+updated-dependencies:
+- dependency-name: babel
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:48:11+00:00,0,2022-05-09 17:49:11+09:00,-32400,True,False,['poetry.lock'],['02deb6b9e2f3deed8e5589dcfe0b82ba4f1babd9'],4,4,8,1,,,
+da7f9af81638ccee50d1b9030d8f2f20eecad9d3,"build(deps-dev): bump pre-commit-hooks from 4.1.0 to 4.2.0
+
+Bumps [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks) from 4.1.0 to 4.2.0.
+- [Release notes](https://github.com/pre-commit/pre-commit-hooks/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit-hooks/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit-hooks/compare/v4.1.0...v4.2.0)
+
+---
+updated-dependencies:
+- dependency-name: pre-commit-hooks
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:48:31+00:00,0,2022-05-09 17:49:50+09:00,-32400,True,False,['poetry.lock'],['40baa66f8b44376bb06eb953f3dee97543f3657b'],4,4,8,1,,,
+50b60e45d264e39d20dee92054497aee748ff50c,"build(deps): bump beautifulsoup4 from 4.10.0 to 4.11.1
+
+Bumps [beautifulsoup4](https://www.crummy.com/software/BeautifulSoup/bs4/) from 4.10.0 to 4.11.1.
+
+---
+updated-dependencies:
+- dependency-name: beautifulsoup4
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:48:53+00:00,0,2022-05-09 17:50:07+09:00,-32400,True,False,['poetry.lock'],['da7f9af81638ccee50d1b9030d8f2f20eecad9d3'],4,4,8,1,,,
+f671b41af6778d4ed9fe6f5d9a69298d4913b88a,"build(deps-dev): bump pre-commit from 2.17.0 to 2.19.0
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.17.0 to 2.19.0.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.17.0...v2.19.0)
+
+---
+updated-dependencies:
+- dependency-name: pre-commit
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:49:14+00:00,0,2022-05-09 17:50:26+09:00,-32400,True,False,['poetry.lock'],['50b60e45d264e39d20dee92054497aee748ff50c'],4,4,8,1,,,
+caee70a0f213e0ad8ee25f4082e18b068d643b81,"build(deps): bump sphinx from 4.4.0 to 4.5.0
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 4.4.0 to 4.5.0.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/5.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v4.4.0...v4.5.0)
+
+---
+updated-dependencies:
+- dependency-name: sphinx
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:49:55+00:00,0,2022-05-09 17:51:34+09:00,-32400,True,False,['poetry.lock'],['f671b41af6778d4ed9fe6f5d9a69298d4913b88a'],3,3,6,1,,,
+dc1aebfdb5576418dcd0c7a4b25b16fece2d7bfd,"build(deps): bump urllib3 from 1.26.8 to 1.26.9
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 1.26.8 to 1.26.9.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/1.26.9/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/1.26.8...1.26.9)
+
+---
+updated-dependencies:
+- dependency-name: urllib3
+  dependency-type: indirect
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:50:18+00:00,0,2022-05-09 17:51:46+09:00,-32400,True,False,['poetry.lock'],['caee70a0f213e0ad8ee25f4082e18b068d643b81'],4,4,8,1,,,
+46408ada1621298733b3314500844d9083692da8,"build(deps-dev): bump mypy from 0.931 to 0.950
+
+Bumps [mypy](https://github.com/python/mypy) from 0.931 to 0.950.
+- [Release notes](https://github.com/python/mypy/releases)
+- [Commits](https://github.com/python/mypy/compare/v0.931...v0.950)
+
+---
+updated-dependencies:
+- dependency-name: mypy
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:50:38+00:00,0,2022-05-09 17:51:57+09:00,-32400,True,False,['poetry.lock'],['dc1aebfdb5576418dcd0c7a4b25b16fece2d7bfd'],22,26,48,1,,,
+52c8da582a8db05fb1824e74fe0ff9d22c8c47d2,"build(deps): bump jinja2 from 3.0.3 to 3.1.2
+
+Bumps [jinja2](https://github.com/pallets/jinja) from 3.0.3 to 3.1.2.
+- [Release notes](https://github.com/pallets/jinja/releases)
+- [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst)
+- [Commits](https://github.com/pallets/jinja/compare/3.0.3...3.1.2)
+
+---
+updated-dependencies:
+- dependency-name: jinja2
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:51:43+00:00,0,2022-05-09 17:52:38+09:00,-32400,True,False,['poetry.lock'],['46408ada1621298733b3314500844d9083692da8'],4,4,8,1,,,
+5c5d72bb8ab616694989f9ae9b39db8505cfeabd,"build(deps): bump importlib-metadata from 4.10.1 to 4.11.3
+
+Bumps [importlib-metadata](https://github.com/python/importlib_metadata) from 4.10.1 to 4.11.3.
+- [Release notes](https://github.com/python/importlib_metadata/releases)
+- [Changelog](https://github.com/python/importlib_metadata/blob/main/CHANGES.rst)
+- [Commits](https://github.com/python/importlib_metadata/compare/v4.10.1...v4.11.3)
+
+---
+updated-dependencies:
+- dependency-name: importlib-metadata
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:52:06+00:00,0,2022-05-09 17:52:49+09:00,-32400,True,False,['poetry.lock'],['52c8da582a8db05fb1824e74fe0ff9d22c8c47d2'],5,5,10,1,,,
+af2a098d94fd2d6f7687e09f78e7c7bbc6aa6264,"build(deps): bump pbr from 5.8.1 to 5.9.0
+
+Bumps [pbr](https://docs.openstack.org/pbr/latest/) from 5.8.1 to 5.9.0.
+
+---
+updated-dependencies:
+- dependency-name: pbr
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:52:27+00:00,0,2022-05-09 17:53:00+09:00,-32400,True,False,['poetry.lock'],['5c5d72bb8ab616694989f9ae9b39db8505cfeabd'],3,3,6,1,,,
+80f2809c8fea83b4a9c5e1a40d738285b316021d,"build(deps): bump restructuredtext-lint from 1.3.2 to 1.4.0
+
+Bumps [restructuredtext-lint](https://github.com/twolfson/restructuredtext-lint) from 1.3.2 to 1.4.0.
+- [Release notes](https://github.com/twolfson/restructuredtext-lint/releases)
+- [Changelog](https://github.com/twolfson/restructuredtext-lint/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/twolfson/restructuredtext-lint/compare/1.3.2...1.4.0)
+
+---
+updated-dependencies:
+- dependency-name: restructuredtext-lint
+  dependency-type: indirect
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-05-09 08:52:48+00:00,0,2022-05-09 17:53:10+09:00,-32400,True,False,['poetry.lock'],['af2a098d94fd2d6f7687e09f78e7c7bbc6aa6264'],2,2,4,1,,,
+8e7a69b68fd684d8dbf311fb31beee4434460d9a,chore(deps): add renovate.json,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-09-03 08:52:49+00:00,0,2022-09-03 19:08:31+09:00,-32400,True,False,['renovate.json'],['80f2809c8fea83b4a9c5e1a40d738285b316021d'],0,6,6,1,,,
+961cb99ec99ddba16fceb832a732378d29c0c08d,renovate: enable automerge and lockfile updates,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-09-03 19:07:42+09:00,-32400,2022-09-03 19:08:31+09:00,-32400,True,False,['renovate.json'],['8e7a69b68fd684d8dbf311fb31beee4434460d9a'],3,9,12,1,,,
+1564a7cae8c11d3245365404d0cf1224ea6ae07d,chore(deps): update dependency black to v22.8.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-09-03 10:17:09+00:00,0,2022-09-03 19:21:11+09:00,-32400,True,False,['poetry.lock'],['961cb99ec99ddba16fceb832a732378d29c0c08d'],61,84,145,1,,,
+9deecd8cef9092cdff9ca10d87b89757ed0808e0,deps: bump dparse to 0.5.2,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-09-03 19:23:31+09:00,-32400,2022-09-03 19:23:31+09:00,-32400,True,False,['poetry.lock'],['1564a7cae8c11d3245365404d0cf1224ea6ae07d'],4,4,8,1,,,
+48d2f1cd0cdbc439533c54f7b4fddcc731054f97,disable dependabot,bhrevol,96057317+bhrevol@users.noreply.github.com,GitHub,noreply@github.com,2022-09-03 19:39:31+09:00,-32400,2022-09-03 19:39:31+09:00,-32400,True,False,['dependabot.yml'],['9deecd8cef9092cdff9ca10d87b89757ed0808e0'],21,0,21,1,,,
+6c7f2f71bbc4461e340b38071b23f8078d744177,update renovate config,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-09-03 19:47:32+09:00,-32400,2022-09-03 19:48:01+09:00,-32400,True,False,['renovate.json'],['48d2f1cd0cdbc439533c54f7b4fddcc731054f97'],1,7,8,1,,,
+d787d8f1a8c3e270db051d3620f0643ade90d7ad,update renovate,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-09-03 19:49:03+09:00,-32400,2022-09-03 19:49:03+09:00,-32400,True,False,['renovate.json'],['6c7f2f71bbc4461e340b38071b23f8078d744177'],1,1,2,1,,,
+932fcd9d8e6f9bcdcb77ab3972fa88555c1813ea,renovate: fix poetry dev-dependencies,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-09-03 19:52:29+09:00,-32400,2022-09-03 19:52:29+09:00,-32400,True,False,['renovate.json'],['d787d8f1a8c3e270db051d3620f0643ade90d7ad'],1,1,2,1,,,
+09d0ec4d8ef7639d4f81448c2c591836e34712c4,chore(deps): update actions/cache action to v3.0.8,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-09-03 10:49:26+00:00,0,2022-09-03 19:55:04+09:00,-32400,True,False,['tests.yml'],['932fcd9d8e6f9bcdcb77ab3972fa88555c1813ea'],1,1,2,1,,,
+ed9c0626b4bb6563dab7653cb36d1e11cb7bf3ac,chore(deps): update dependency pre-commit-hooks to v4.3.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-09-03 10:35:56+00:00,0,2022-09-03 19:59:15+09:00,-32400,True,False,['poetry.lock'],['09d0ec4d8ef7639d4f81448c2c591836e34712c4'],4,4,8,1,,,
+7d7cab44ffdaa03a54c5495a5b9a1c5730f456bd,chore(deps): update dependency flake8-rst-docstrings to v0.2.7,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-09-03 10:53:11+00:00,0,2022-09-03 19:59:32+09:00,-32400,True,False,['poetry.lock'],['ed9c0626b4bb6563dab7653cb36d1e11cb7bf3ac'],4,4,8,1,,,
+e074259b5c62013a5764751d23378cc89c6d7db2,chore(deps): update dependency pre-commit to v2.20.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-09-03 10:56:55+00:00,0,2022-09-03 20:00:13+09:00,-32400,True,False,['poetry.lock'],['7d7cab44ffdaa03a54c5495a5b9a1c5730f456bd'],3,3,6,1,,,
+5084d42854bf2628ce5708fc660c497bd78a754b,ci: run tests on renovate branches,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-09-03 20:04:25+09:00,-32400,2022-09-03 20:04:25+09:00,-32400,True,False,['tests.yml'],['e074259b5c62013a5764751d23378cc89c6d7db2'],0,1,1,1,,,
+8e9334e0cc9b91c8cfc80804b6d58130b66f90f3,chore(deps): update dependency xdoctest to v1.0.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 11:19:21+00:00,0,2022-09-03 13:35:08+00:00,0,True,False,['poetry.lock'],['5084d42854bf2628ce5708fc660c497bd78a754b'],8,11,19,1,,,
+8c0e168ccdb1ec6cfccaae2a0abf3f4923b17b55,renovate: enable platformAutomerge,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-09-03 22:39:41+09:00,-32400,2022-09-03 22:40:03+09:00,-32400,True,False,"['renovate.json', 'tests.yml']",['8e9334e0cc9b91c8cfc80804b6d58130b66f90f3'],3,4,7,2,,,
+2e48293b41616b8c28848aef3ca60627d2b7e38f,chore(deps): update pypa/gh-action-pypi-publish action to v1.5.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 13:43:50+00:00,0,2022-09-03 13:46:52+00:00,0,True,False,['release.yml'],['8c0e168ccdb1ec6cfccaae2a0abf3f4923b17b55'],2,2,4,1,,,
+7783ab58636ff769a487b8e862a6146907fefd2e,chore(deps): update actions/upload-artifact action to v3.1.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 13:55:49+00:00,0,2022-09-03 17:35:38+00:00,0,True,False,['tests.yml'],['2e48293b41616b8c28848aef3ca60627d2b7e38f'],2,2,4,1,,,
+ac6099dfd8dbae9f1564fcaae1e7683a8eb0176b,chore(deps): update crazy-max/ghaction-github-labeler action to v3.2.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 17:41:48+00:00,0,2022-09-03 17:43:54+00:00,0,True,False,['labeler.yml'],['7783ab58636ff769a487b8e862a6146907fefd2e'],1,1,2,1,,,
+705371b433396649b47f2a83ff2bff083c76d834,chore(deps): update dependency coverage to v6.4.4,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 18:04:05+00:00,0,2022-09-03 18:06:28+00:00,0,True,False,['poetry.lock'],['ac6099dfd8dbae9f1564fcaae1e7683a8eb0176b'],43,52,95,1,,,
+cb48c80d5d1c551cfa477728f253119ada1a9be0,chore(deps): update dependency furo to v2022.6.21,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 18:31:36+00:00,0,2022-09-03 22:01:25+00:00,0,True,False,['requirements.txt'],['705371b433396649b47f2a83ff2bff083c76d834'],1,1,2,1,,,
+d231fa129636d5547df73b50bf186068006fb738,chore(deps): update dependency furo to v2022.6.21,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 22:08:47+00:00,0,2022-09-03 22:10:39+00:00,0,True,False,['poetry.lock'],['cb48c80d5d1c551cfa477728f253119ada1a9be0'],10,25,35,1,,,
+f8c46770cfcfb40fcb714b5405b76d90e37641e4,chore(deps): update dependency mypy to v0.971,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 22:41:09+00:00,0,2022-09-03 22:45:26+00:00,0,True,False,['poetry.lock'],['d231fa129636d5547df73b50bf186068006fb738'],24,24,48,1,,,
+d3239c61d0465cd20f1558b93ce834dc7b3d168a,chore(deps): update dependency pep8-naming to v0.13.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 23:04:46+00:00,0,2022-09-03 23:06:51+00:00,0,True,False,['poetry.lock'],['f8c46770cfcfb40fcb714b5405b76d90e37641e4'],5,4,9,1,,,
+a22026e5aa23fa4c199319529f0a7a2ecc14d171,chore(deps): update dependency pytest to v7.1.3,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 23:28:40+00:00,0,2022-09-03 23:30:34+00:00,0,True,False,['poetry.lock'],['d3239c61d0465cd20f1558b93ce834dc7b3d168a'],17,4,21,1,,,
+4f98260598c5c1318225312ddc074928ab30f194,chore(deps): update dependency pyupgrade to v2.37.3,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-03 23:52:14+00:00,0,2022-09-03 23:54:18+00:00,0,True,False,['poetry.lock'],['a22026e5aa23fa4c199319529f0a7a2ecc14d171'],4,4,8,1,,,
+a97e6d8826b5100abc3b2971c85e59aba799f050,chore(deps): update dependency sphinx-click to v4.3.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-04 00:07:32+00:00,0,2022-09-04 00:10:57+00:00,0,True,False,['requirements.txt'],['4f98260598c5c1318225312ddc074928ab30f194'],1,1,2,1,,,
+851526dc5df7d424921b4ffdfbea94c0b24cb049,chore(deps): update release-drafter/release-drafter action to v5.20.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-04 00:26:38+00:00,0,2022-09-04 00:29:25+00:00,0,True,False,['release.yml'],['a97e6d8826b5100abc3b2971c85e59aba799f050'],1,1,2,1,,,
+b8bab901ccd1c3fe6861510c764ec0ebcc1f8d7b,chore(deps): update dependency flake8-bugbear to v22.8.23,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-04 00:45:34+00:00,0,2022-09-04 03:15:42+00:00,0,True,False,"['poetry.lock', 'base.py']",['851526dc5df7d424921b4ffdfbea94c0b24cb049'],4,4,8,2,,,
+ca648cccb6d955587a7368b274c6f53ae66b092e,fix(deps): update dependency buttplug to ^0.3.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-04 03:24:47+00:00,0,2022-09-04 03:27:37+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['b8bab901ccd1c3fe6861510c764ec0ebcc1f8d7b'],5,4,9,2,,,
+24fc8ccc798dd9576951a7a5995fcdd7dc81dba4,fix(deps): update dependency loguru to ^0.6.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-04 03:48:35+00:00,0,2022-09-04 03:50:32+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['ca648cccb6d955587a7368b274c6f53ae66b092e'],6,6,12,2,,,
+26855e12677f0aed5169f7583f183fe999acec6e,fix(deps): update dependency typing-extensions to v4.3.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-04 04:07:56+00:00,0,2022-09-04 04:10:38+00:00,0,True,False,['poetry.lock'],['24fc8ccc798dd9576951a7a5995fcdd7dc81dba4'],3,3,6,1,,,
+ce935e85730b209ec5a5c48e5c0b5014878eea80,chore(deps): update actions/setup-python action to v4,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-09-04 04:23:43+00:00,0,2022-09-04 16:00:33+09:00,-32400,True,False,"['release.yml', 'tests.yml']",['26855e12677f0aed5169f7583f183fe999acec6e'],3,3,6,2,,,
+faddc2cf6860849bf3fd530622db3005d2ce2b0e,chore(deps): update dependency flake8-bandit to v4,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-04 07:08:20+00:00,0,2022-09-04 12:24:48+00:00,0,True,False,['poetry.lock'],['ce935e85730b209ec5a5c48e5c0b5014878eea80'],44,28,72,1,,,
+bd342f3230f009ad8f392f4a24c2c4b4d600d1f7,chore(deps): update dependency safety to v2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-04 12:28:32+00:00,0,2022-09-04 12:30:24+00:00,0,True,False,['poetry.lock'],['faddc2cf6860849bf3fd530622db3005d2ce2b0e'],11,12,23,1,,,
+19dcf415fe072d9aeb24039e8e774897260d3310,chore(deps): update crazy-max/ghaction-github-labeler action to v4,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-09-04 12:35:53+00:00,0,2022-09-04 22:04:30+09:00,-32400,True,False,['labeler.yml'],['bd342f3230f009ad8f392f4a24c2c4b4d600d1f7'],1,1,2,1,,,
+07ea4156dca74855fd469907bf9e52c10987f20c,chore(deps): update dependency sphinx to v5,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-04 13:08:26+00:00,0,2022-09-04 13:10:33+00:00,0,True,False,['poetry.lock'],['19dcf415fe072d9aeb24039e8e774897260d3310'],8,8,16,1,,,
+fea03016dcc412d7e35982b628fcb0924fe6816c,chore(deps): update dependency sphinx-click to v4,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-04 13:16:09+00:00,0,2022-09-04 17:40:06+00:00,0,True,False,['poetry.lock'],['07ea4156dca74855fd469907bf9e52c10987f20c'],4,4,8,1,,,
+71b5853ca213a6b106e9b44a5e9c216db7027f31,chore(deps): update dependency sphinx to v5,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2022-09-04 17:40:22+00:00,0,2022-09-05 18:12:01+09:00,-32400,True,False,['requirements.txt'],['fea03016dcc412d7e35982b628fcb0924fe6816c'],1,1,2,1,,,
+3d7681730a81c1f6234bb0326feeebfba56a5406,release 0.0.4,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2022-09-05 18:13:08+09:00,-32400,2022-09-05 18:13:08+09:00,-32400,True,False,['pyproject.toml'],['71b5853ca213a6b106e9b44a5e9c216db7027f31'],1,1,2,1,,,
+99333571fc4dbf7c511a1d19f7b1331034401176,chore(deps): update dependency xdoctest to v1.1.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-05 19:27:53+00:00,0,2022-09-05 19:31:13+00:00,0,True,False,['poetry.lock'],['3d7681730a81c1f6234bb0326feeebfba56a5406'],6,6,12,1,,,
+31f90bd303d931fcc47c9a40580d4f6bebca93c2,chore(deps): update dependency flake8-bugbear to v22.9.11,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-11 19:59:03+00:00,0,2022-09-11 20:02:04+00:00,0,True,False,['poetry.lock'],['99333571fc4dbf7c511a1d19f7b1331034401176'],3,3,6,1,,,
+5859e30c02d46896e021c05c05c14f8dac5b97cb,chore(deps): update release-drafter/release-drafter action to v5.21.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-15 12:18:57+00:00,0,2022-09-15 12:22:52+00:00,0,True,False,['release.yml'],['31f90bd303d931fcc47c9a40580d4f6bebca93c2'],1,1,2,1,,,
+353c8189c428273949d078703a0367eaa677de65,chore(deps): update dependency furo to v2022.9.15,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-15 20:20:57+00:00,0,2022-09-15 20:22:48+00:00,0,True,False,['requirements.txt'],['5859e30c02d46896e021c05c05c14f8dac5b97cb'],1,1,2,1,,,
+750173314b37317246e3fc337106210ca89d4d13,chore(deps): update dependency furo to v2022.9.15,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-15 20:28:27+00:00,0,2022-09-15 20:30:56+00:00,0,True,False,['poetry.lock'],['353c8189c428273949d078703a0367eaa677de65'],4,11,15,1,,,
+2161e6dd255eccfc4cf8d5419b596154885d821f,chore(deps): update dependency pyupgrade to v2.38.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-15 23:51:57+00:00,0,2022-09-15 23:54:10+00:00,0,True,False,['poetry.lock'],['750173314b37317246e3fc337106210ca89d4d13'],3,3,6,1,,,
+afc4abffcf3a828137fbc3036d2a455f21983e58,chore(deps): update codecov/codecov-action action to v3.1.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-19 16:32:29+00:00,0,2022-09-19 16:34:32+00:00,0,True,False,['tests.yml'],['2161e6dd255eccfc4cf8d5419b596154885d821f'],1,1,2,1,,,
+caf4429bbce37df7801795ad7ea89013698b5f39,chore(deps): update dependency safety to v2.2.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-19 23:08:47+00:00,0,2022-09-19 23:10:47+00:00,0,True,False,['poetry.lock'],['afc4abffcf3a828137fbc3036d2a455f21983e58'],7,7,14,1,,,
+c8232814d3b3834c111da63b9ab2288443499252,chore(deps): update dependency flake8-bugbear to v22.9.23,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-23 19:48:54+00:00,0,2022-09-23 19:51:12+00:00,0,True,False,['poetry.lock'],['caf4429bbce37df7801795ad7ea89013698b5f39'],3,3,6,1,,,
+ec71e064bdfb3ff1beeacb1834dbd5f2bb78d8ad,chore(deps): update dependency sphinx to v5.2.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-24 17:25:17+00:00,0,2022-09-24 17:27:26+00:00,0,True,False,['requirements.txt'],['c8232814d3b3834c111da63b9ab2288443499252'],1,1,2,1,,,
+76c457b289d66d9b1c92209017e46b2871fafd87,chore(deps): update dependency sphinx to v5.2.0.post0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-24 23:06:26+00:00,0,2022-09-24 23:09:11+00:00,0,True,False,['requirements.txt'],['ec71e064bdfb3ff1beeacb1834dbd5f2bb78d8ad'],1,1,2,1,,,
+989fc552ae6516b9b774f2f7f9b7b9f207e4122a,chore(deps): update dependency pyupgrade to v2.38.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-24 23:12:55+00:00,0,2022-09-24 23:15:02+00:00,0,True,False,['poetry.lock'],['76c457b289d66d9b1c92209017e46b2871fafd87'],3,3,6,1,,,
+aa97aeb88b9cc538e54fc554e21d2810f7a327e3,chore(deps): update dependency sphinx to v5.2.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-25 23:24:35+00:00,0,2022-09-25 23:26:59+00:00,0,True,False,['requirements.txt'],['989fc552ae6516b9b774f2f7f9b7b9f207e4122a'],1,1,2,1,,,
+d30ea37d283f04b0d12667ffc5b60e481f47c94a,chore(deps): update dependency pyupgrade to v2.38.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-26 03:45:05+00:00,0,2022-09-26 03:48:07+00:00,0,True,False,['poetry.lock'],['aa97aeb88b9cc538e54fc554e21d2810f7a327e3'],3,3,6,1,,,
+2692f0a67344dc31f65ef12b5cfcde73d19d7011,chore(deps): update dependency sphinx to v5.2.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-27 17:30:01+00:00,0,2022-09-27 17:32:52+00:00,0,True,False,['requirements.txt'],['d30ea37d283f04b0d12667ffc5b60e481f47c94a'],1,1,2,1,,,
+9b9ba74bfd9a8b7ece498a1094423269648512fd,chore(deps): update dependency mypy to v0.981,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-28 10:49:22+00:00,0,2022-09-28 10:54:26+00:00,0,True,False,['poetry.lock'],['2692f0a67344dc31f65ef12b5cfcde73d19d7011'],25,26,51,1,,,
+bcb434544f3f73c5697fcbac611391db3126c579,chore(deps): update dependency coverage to v6.5.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-29 22:14:47+00:00,0,2022-09-29 22:20:08+00:00,0,True,False,['poetry.lock'],['9b9ba74bfd9a8b7ece498a1094423269648512fd'],51,51,102,1,,,
+a861e981b5b1f9fad893056b905d2ea25dbf864a,chore(deps): update dependency furo to v2022.9.29,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-30 02:19:38+00:00,0,2022-09-30 02:22:42+00:00,0,True,False,['requirements.txt'],['bcb434544f3f73c5697fcbac611391db3126c579'],1,1,2,1,,,
+6aa56418db96c8815b20dc38db0f97cb1ca08b19,chore(deps): update dependency furo to v2022.9.29,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-30 02:27:26+00:00,0,2022-09-30 02:29:34+00:00,0,True,False,['poetry.lock'],['a861e981b5b1f9fad893056b905d2ea25dbf864a'],3,3,6,1,,,
+219e2960fb3b09197b7a6d2c0f26c2aab109c67c,chore(deps): update actions/cache action to v3.0.9,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-30 06:22:46+00:00,0,2022-09-30 06:25:19+00:00,0,True,False,['tests.yml'],['6aa56418db96c8815b20dc38db0f97cb1ca08b19'],1,1,2,1,,,
+221c2a4f8956543b0ab5f7bf7a1500d4a56a9f24,chore(deps): update dependency sphinx to v5.2.3,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-09-30 18:18:16+00:00,0,2022-09-30 18:20:44+00:00,0,True,False,['requirements.txt'],['219e2960fb3b09197b7a6d2c0f26c2aab109c67c'],1,1,2,1,,,
+f9d8c0e80b5c09fca6e97f596b3094caacc0334a,chore(deps): update actions/cache action to v3.0.10,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-03 11:32:59+00:00,0,2022-10-03 11:35:26+00:00,0,True,False,['tests.yml'],['221c2a4f8956543b0ab5f7bf7a1500d4a56a9f24'],1,1,2,1,,,
+8fb8f5a41e5fa9bad32aad0ec316f4aebc9877e4,chore(deps): update dependency mypy to v0.982,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-03 15:58:55+00:00,0,2022-10-03 16:01:05+00:00,0,True,False,['poetry.lock'],['f9d8c0e80b5c09fca6e97f596b3094caacc0334a'],25,25,50,1,,,
+a086833ebb0194a465f09ff249c22f3efe17e775,chore(deps): update dependency pyupgrade to v2.38.4,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-03 23:23:36+00:00,0,2022-10-03 23:26:14+00:00,0,True,False,['poetry.lock'],['8fb8f5a41e5fa9bad32aad0ec316f4aebc9877e4'],4,4,8,1,,,
+e2e79c1941d01596a84746032ab3acb1a2347156,chore(deps): update dependency pyupgrade to v3,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-04 03:04:42+00:00,0,2022-10-04 03:06:53+00:00,0,True,False,['poetry.lock'],['a086833ebb0194a465f09ff249c22f3efe17e775'],4,4,8,1,,,
+85c75ce2d4e51bb16b05c50a5950079f6ad28d2c,chore(deps): update dependency safety to v2.2.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-04 23:22:11+00:00,0,2022-10-04 23:24:24+00:00,0,True,False,['poetry.lock'],['e2e79c1941d01596a84746032ab3acb1a2347156'],3,3,6,1,,,
+63f19c2a89915329681339feedc84259e1b6eb4e,chore(deps): update dependency safety to v2.3.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-05 22:45:56+00:00,0,2022-10-05 22:49:24+00:00,0,True,False,['poetry.lock'],['85c75ce2d4e51bb16b05c50a5950079f6ad28d2c'],3,7,10,1,,,
+8d4f94ede9c238ff52da687bbe893bbbef976c76,chore(deps): update dependency black to v22.10.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-07 01:47:07+00:00,0,2022-10-07 01:52:01+00:00,0,True,False,['poetry.lock'],['63f19c2a89915329681339feedc84259e1b6eb4e'],25,14,39,1,,,
+a4efcbc5e9afc60d251afb88bb7d721a5260e504,fix(deps): update dependency typing-extensions to v4.4.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-07 01:55:36+00:00,0,2022-10-07 01:58:04+00:00,0,True,False,['poetry.lock'],['8d4f94ede9c238ff52da687bbe893bbbef976c76'],3,3,6,1,,,
+b4750613b2e5efd1cf7eb2600ec296fe68869452,chore(deps): update dependency pyupgrade to v3.1.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-10 23:18:56+00:00,0,2022-10-10 23:22:01+00:00,0,True,False,['poetry.lock'],['a4efcbc5e9afc60d251afb88bb7d721a5260e504'],8,17,25,1,,,
+ef1c60da6d45291b0bbc427e838e26ed4ba673bf,chore(deps): update actions/cache action to v3.0.11,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-13 12:23:01+00:00,0,2022-10-13 12:25:16+00:00,0,True,False,['tests.yml'],['b4750613b2e5efd1cf7eb2600ec296fe68869452'],1,1,2,1,,,
+f1af782f0d2160abc08dff6e4565e893d21f8757,chore(deps): update dependency sphinx to v5.3.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-16 11:14:56+00:00,0,2022-10-16 11:17:05+00:00,0,True,False,['requirements.txt'],['ef1c60da6d45291b0bbc427e838e26ed4ba673bf'],1,1,2,1,,,
+69b10faa75fe7c885aef78637c19b67155e887e4,chore(deps): update release-drafter/release-drafter action to v5.21.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-17 19:22:43+00:00,0,2022-10-17 19:25:40+00:00,0,True,False,['release.yml'],['f1af782f0d2160abc08dff6e4565e893d21f8757'],1,1,2,1,,,
+858adf2299356cd7ed7fa607428f075edbd4a113,chore(deps): update crazy-max/ghaction-github-labeler action to v4.1.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-18 22:37:22+00:00,0,2022-10-18 22:39:24+00:00,0,True,False,['labeler.yml'],['69b10faa75fe7c885aef78637c19b67155e887e4'],1,1,2,1,,,
+412e093f2583aea10bd7c3040a598b4236076e8c,chore(deps): update salsify/action-detect-and-tag-new-version action to v2.0.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-21 18:17:54+00:00,0,2022-10-21 18:20:13+00:00,0,True,False,['release.yml'],['858adf2299356cd7ed7fa607428f075edbd4a113'],1,1,2,1,,,
+25e9d91a56ed5510472200fc1b32efd012200b50,chore(deps): update actions/upload-artifact action to v3.1.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-21 21:38:10+00:00,0,2022-10-21 21:40:21+00:00,0,True,False,['tests.yml'],['412e093f2583aea10bd7c3040a598b4236076e8c'],2,2,4,1,,,
+bd6bc7cde5eab11254f9865b461544f6dd15d277,chore(deps): update dependency flake8-bugbear to v22.10.25,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-25 02:45:25+00:00,0,2022-10-25 02:47:41+00:00,0,True,False,['poetry.lock'],['25e9d91a56ed5510472200fc1b32efd012200b50'],5,5,10,1,,,
+aeb7f97ac470c8fa3ab2a0d729991e66112bbb83,chore(deps): update dependency pytest to v7.2.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-25 08:36:44+00:00,0,2022-10-25 08:42:21+00:00,0,True,False,['poetry.lock'],['bd6bc7cde5eab11254f9865b461544f6dd15d277'],17,20,37,1,,,
+1f9d65c79a756a2a19be04b77c7758442c7f9db7,chore(deps): update dependency flake8-bugbear to v22.10.27,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-26 23:30:26+00:00,0,2022-10-26 23:32:57+00:00,0,True,False,['poetry.lock'],['aeb7f97ac470c8fa3ab2a0d729991e66112bbb83'],3,3,6,1,,,
+91464f61b3eec38ac8849d2faeba1b3fb1a5dcff,chore(deps): update dependency pyupgrade to v3.2.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-10-29 23:08:58+00:00,0,2022-10-29 23:13:59+00:00,0,True,False,['poetry.lock'],['1f9d65c79a756a2a19be04b77c7758442c7f9db7'],3,3,6,1,,,
+7fa71801e9e07d1b61e4bf5397750e470128fa93,chore(deps): update dependency mypy to v0.990,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-11-07 21:46:40+00:00,0,2022-11-07 21:51:12+00:00,0,True,False,['poetry.lock'],['91464f61b3eec38ac8849d2faeba1b3fb1a5dcff'],25,32,57,1,,,
+9f5090eb4f009adc23abb98674664af161cd4648,chore(deps): update dependency pyupgrade to v3.2.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-11-10 03:49:19+00:00,0,2022-11-10 03:51:21+00:00,0,True,False,['poetry.lock'],['7fa71801e9e07d1b61e4bf5397750e470128fa93'],3,3,6,1,,,
+7d9f97bafd12a510db04d0b244ca569fb99ef277,chore(deps): update dependency pyupgrade to v3.2.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-11-10 18:10:10+00:00,0,2022-11-10 18:12:58+00:00,0,True,False,['poetry.lock'],['9f5090eb4f009adc23abb98674664af161cd4648'],3,3,6,1,,,
+4213cf95b05e84c585465b3980debbc7b9f8574f,chore(deps): update dependency mypy to v0.991,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-11-14 18:16:52+00:00,0,2022-11-14 18:18:32+00:00,0,True,False,['poetry.lock'],['7d9f97bafd12a510db04d0b244ca569fb99ef277'],31,31,62,1,,,
+47222da246183bec7b2abf0d0328a2ad63e9f37c,chore(deps): update dependency flake8-rst-docstrings to v0.3.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-11-16 11:43:05+00:00,0,2022-11-16 11:45:03+00:00,0,True,False,['poetry.lock'],['4213cf95b05e84c585465b3980debbc7b9f8574f'],5,8,13,1,,,
+ca6a7cd3aae7cc820b8df2ff256447b655b0470e,chore(deps): update dependency safety to v2.3.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-11-22 01:12:09+00:00,0,2022-11-22 01:15:21+00:00,0,True,False,['poetry.lock'],['47222da246183bec7b2abf0d0328a2ad63e9f37c'],3,3,6,1,,,
+744580d8b1488ce9e34155ceaff2dea9028ecc9c,poetry update,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 18:12:53+09:00,-32400,2023-10-11 18:41:35+09:00,-32400,True,False,"['constraints.txt', 'poetry.lock']",['ca6a7cd3aae7cc820b8df2ff256447b655b0470e'],979,997,1976,2,,,
+b813f4827c04a6af5638d645c3406fe9ad37e3d5,ci: run against py 3.11,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 18:16:54+09:00,-32400,2023-10-11 18:41:35+09:00,-32400,True,False,"['tests.yml', 'noxfile.py']",['744580d8b1488ce9e34155ceaff2dea9028ecc9c'],14,13,27,2,,,
+755ee1565c69ebaedeb6d5e2ef69515391f5a178,pre-commit: update stubs,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 18:20:24+09:00,-32400,2023-10-11 18:41:35+09:00,-32400,True,False,"['messages.pyi', 'sortedcontainers.pyi']",['b813f4827c04a6af5638d645c3406fe9ad37e3d5'],2,0,2,2,,,
+7fd2000ca6c565361e2fa68d8cc5a2a37ac12d22,chore(deps): update dependency sphinx-click to v4.4.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 09:42:43+00:00,0,2023-10-11 20:54:32+09:00,-32400,True,False,['requirements.txt'],['755ee1565c69ebaedeb6d5e2ef69515391f5a178'],1,1,2,1,,,
+f183b1a36b599532aa2e8d2e5361de11eabffafb,chore(deps): update crazy-max/ghaction-github-labeler action to v4.2.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 11:53:41+00:00,0,2023-10-11 20:54:48+09:00,-32400,True,False,['labeler.yml'],['7fd2000ca6c565361e2fa68d8cc5a2a37ac12d22'],1,1,2,1,,,
+6051936fe32684e4cc9da0ab007faea50df664dd,chore(deps): update actions/cache action to v3.3.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 11:54:55+00:00,0,2023-10-11 20:55:02+09:00,-32400,True,False,['tests.yml'],['f183b1a36b599532aa2e8d2e5361de11eabffafb'],1,1,2,1,,,
+a5c9a3082a8c32b401937d84b688540b3940d5ea,chore(deps): update dependency furo to v2022.12.7,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 11:55:02+00:00,0,2023-10-11 20:55:41+09:00,-32400,True,False,['requirements.txt'],['6051936fe32684e4cc9da0ab007faea50df664dd'],1,1,2,1,,,
+2ac4393b6ef78c829da67e3a040eb59ac2b69b7f,chore(deps): update codecov/codecov-action action to v3.1.4,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 11:54:48+00:00,0,2023-10-11 20:55:56+09:00,-32400,True,False,['tests.yml'],['a5c9a3082a8c32b401937d84b688540b3940d5ea'],1,1,2,1,,,
+f5f0e22c018ab5d86fff933dd7c37ff23feb0c69,chore(deps): update pypa/gh-action-pypi-publish action to v1.8.10,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 11:55:38+00:00,0,2023-10-11 20:56:10+09:00,-32400,True,False,['release.yml'],['2ac4393b6ef78c829da67e3a040eb59ac2b69b7f'],2,2,4,1,,,
+2ed77956e60a6bba5b984bac5b60216e2f65f9a7,chore(deps): update actions/upload-artifact action to v3.1.3,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 11:55:56+00:00,0,2023-10-11 20:56:24+09:00,-32400,True,False,['tests.yml'],['f5f0e22c018ab5d86fff933dd7c37ff23feb0c69'],2,2,4,1,,,
+74f3df86b6376063f9e50d984908422db587c606,chore(deps): update salsify/action-detect-and-tag-new-version action to v2.0.3,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 11:56:03+00:00,0,2023-10-11 20:56:36+09:00,-32400,True,False,['release.yml'],['2ed77956e60a6bba5b984bac5b60216e2f65f9a7'],1,1,2,1,,,
+9bbc7506aecd0d1c0312d000173610f32a0e13a6,chore(deps): update dependency pyupgrade to v3.15.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 11:56:33+00:00,0,2023-10-11 20:56:52+09:00,-32400,True,False,['poetry.lock'],['74f3df86b6376063f9e50d984908422db587c606'],0,26,26,1,,,
+e9b8472d3e2aad14734c1c83a9066d00bf618b84,fix(deps): update dependency loguru to ^0.7.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 12:13:20+00:00,0,2023-10-11 21:21:37+09:00,-32400,True,False,"['poetry.lock', 'pyproject.toml']",['9bbc7506aecd0d1c0312d000173610f32a0e13a6'],6,6,12,2,,,
+3dfb7fb9b63c92da13fa6a8be761188f891ed0e3,script: add support for converting piston csv to/from funscript,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 20:51:31+09:00,-32400,2023-10-11 21:28:20+09:00,-32400,True,False,"['README.rst', '__init__.py', 'funscript.py']",['e9b8472d3e2aad14734c1c83a9066d00bf618b84'],0,120,120,3,0.11594202898550725,0.4492753623188406,1.0
+74eb8375f52bf9c374c44e1de07b990cd224ec11,script: use excel UTF-8-BOM (utf-8-sig) encoding for CSV,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 20:52:11+09:00,-32400,2023-10-11 21:28:20+09:00,-32400,True,False,"['vorze.py', 'vorze.py', 'test_vorze.py']",['3dfb7fb9b63c92da13fa6a8be761188f891ed0e3'],4,4,8,3,,,
+7cb8cd8ac042296a67fce8ae535656796774ca68,update pypi classifier,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 20:52:56+09:00,-32400,2023-10-11 21:28:20+09:00,-32400,True,False,['pyproject.toml'],['74eb8375f52bf9c374c44e1de07b990cd224ec11'],1,1,2,1,,,
+2ada6c546dd00ab879b46ad987751ec09eaa58cf,chore(deps): update release-drafter/release-drafter action to v5.24.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-11 12:21:51+00:00,0,2023-10-11 21:28:31+09:00,-32400,True,False,['release.yml'],['7cb8cd8ac042296a67fce8ae535656796774ca68'],1,1,2,1,,,
+e43d16f182cd7cf5566dbd097cecc04097a71359,release 0.1.0,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2023-10-11 21:29:03+09:00,-32400,2023-10-11 21:29:03+09:00,-32400,True,False,['pyproject.toml'],['2ada6c546dd00ab879b46ad987751ec09eaa58cf'],1,1,2,1,,,
+c5e410b4af97609b922053518dc4079a69c4d29f,chore(deps): update dependency black to v23,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-10-11 18:31:12+00:00,0,2023-10-11 18:33:39+00:00,0,True,False,['poetry.lock'],['e43d16f182cd7cf5566dbd097cecc04097a71359'],41,35,76,1,,,
+1e0f6862297505c25eab1701df63eb9816bc5332,chore(deps): update dependency pre-commit to v3.5.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-10-13 18:33:30+00:00,0,2023-10-13 18:35:37+00:00,0,True,False,['poetry.lock'],['c5e410b4af97609b922053518dc4079a69c4d29f'],3,3,6,1,,,
+fd7dac7b3e25fffb0af0bef40b9ea242a5d76204,chore(deps): update release-drafter/release-drafter action to v5.25.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-10-17 06:59:01+00:00,0,2023-10-17 07:01:00+00:00,0,True,False,['release.yml'],['1e0f6862297505c25eab1701df63eb9816bc5332'],1,1,2,1,,,
+ae7f250a15deae968a42ad7eac8a22052ef5aeb4,chore(deps): update dependency black to v23.10.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-10-17 18:09:40+00:00,0,2023-10-17 18:11:46+00:00,0,True,False,['poetry.lock'],['fd7dac7b3e25fffb0af0bef40b9ea242a5d76204'],23,19,42,1,,,
+02b36e398b7b3ce2946cbcda8ebb0eb02c38b86c,chore(deps): update dependency mypy to v1.6.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-10-18 06:37:08+00:00,0,2023-10-18 06:39:15+00:00,0,True,False,['poetry.lock'],['ae7f250a15deae968a42ad7eac8a22052ef5aeb4'],28,28,56,1,,,
+31b9c5a695334630139ff482ad58d5ac48b91709,chore(deps): update actions/checkout action to v4,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-19 10:53:38+00:00,0,2023-10-22 19:07:04+09:00,-32400,True,False,"['labeler.yml', 'release.yml', 'tests.yml']",['02b36e398b7b3ce2946cbcda8ebb0eb02c38b86c'],4,4,8,3,,,
+4985631550dcf9fd90189f9954cf53ca699327e5,"build(deps-dev): bump urllib3 from 2.0.6 to 2.0.7
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.0.6 to 2.0.7.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/2.0.6...2.0.7)
+
+---
+updated-dependencies:
+- dependency-name: urllib3
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-17 21:12:52+00:00,0,2023-10-22 19:07:18+09:00,-32400,True,False,['poetry.lock'],['31b9c5a695334630139ff482ad58d5ac48b91709'],3,3,6,1,,,
+a66a40c2220804e4af196b58a90b9b5d6c3ff354,chore(deps): update dependency sphinx-click to v5,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-18 12:32:38+00:00,0,2023-10-22 19:07:29+09:00,-32400,True,False,['requirements.txt'],['4985631550dcf9fd90189f9954cf53ca699327e5'],1,1,2,1,,,
+61082985af4a1a03d3810fa83ea35f9133f1d295,chore(deps): update crazy-max/ghaction-github-labeler action to v5,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-18 12:31:59+00:00,0,2023-10-22 19:07:51+09:00,-32400,True,False,['labeler.yml'],['a66a40c2220804e4af196b58a90b9b5d6c3ff354'],1,1,2,1,,,
+fcba0d370dce10b54c406bcb1cd357799cb98cff,chore(deps): update dependency safety to v2.3.5,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-22 10:07:45+00:00,0,2023-10-22 19:08:17+09:00,-32400,True,False,['poetry.lock'],['61082985af4a1a03d3810fa83ea35f9133f1d295'],31,41,72,1,,,
+4f3222c91163872b65b275e67ed55c79597d83c0,chore(deps): update dependency black to v23,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-22 10:11:56+00:00,0,2023-10-22 19:51:31+09:00,-32400,True,False,['poetry.lock'],['fcba0d370dce10b54c406bcb1cd357799cb98cff'],41,31,72,1,,,
+b11caa020cc68b8953934caa63dc9ae42fc53610,chore(deps): update dependency sphinx to v7,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-22 10:12:31+00:00,0,2023-10-22 19:51:48+09:00,-32400,True,False,['requirements.txt'],['4f3222c91163872b65b275e67ed55c79597d83c0'],1,1,2,1,,,
+76a11943e7de492eabfd15dfe8905d20e1f63470,chore(deps): update dependency safety to v2.3.5,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-22 10:53:08+00:00,0,2023-10-22 20:19:08+09:00,-32400,True,False,['poetry.lock'],['b11caa020cc68b8953934caa63dc9ae42fc53610'],31,41,72,1,,,
+03788f4c0fe7e79c41fc108480cc6563dbac91f9,chore(deps): update dependency furo to v2023,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-22 10:53:11+00:00,0,2023-10-22 20:19:29+09:00,-32400,True,False,['requirements.txt'],['76a11943e7de492eabfd15dfe8905d20e1f63470'],1,1,2,1,,,
+50dd48624d5ba4071c36ec4d1b3ba528ca0a740e,chore(deps): update dependency flake8-bugbear to v23.9.16,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-10-22 15:23:02+00:00,0,2023-10-22 15:25:00+00:00,0,True,False,['poetry.lock'],['03788f4c0fe7e79c41fc108480cc6563dbac91f9'],0,2,2,1,,,
+32747dd47a9cdd588005bc91ad2ebf47ac9ddb18,chore(deps): update dependency sphinx to v7.2.6,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-10-22 18:47:14+00:00,0,2023-10-22 18:49:18+00:00,0,True,False,['poetry.lock'],['50dd48624d5ba4071c36ec4d1b3ba528ca0a740e'],0,12,12,1,,,
+cc9e65ae9476bb8afc10d3e708bf98aa60775e20,chore(deps): update dependency pytest to v7.4.3,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-10-24 22:48:37+00:00,0,2023-10-24 22:50:44+00:00,0,True,False,['poetry.lock'],['32747dd47a9cdd588005bc91ad2ebf47ac9ddb18'],3,3,6,1,,,
+59b3c75fcc6c444aacf19c26d8da994b20bbf9ee,chore(deps): update dependency xdoctest to v1.1.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-10-26 03:33:40+00:00,0,2023-10-26 03:36:07+00:00,0,True,False,['poetry.lock'],['cc9e65ae9476bb8afc10d3e708bf98aa60775e20'],12,10,22,1,,,
+c659f67c9672374f9c1d9c637a40c18859bc9aeb,chore(deps): update dependency black to v23,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-26 06:53:12+00:00,0,2023-10-28 19:30:52+09:00,-32400,True,False,['poetry.lock'],['59b3c75fcc6c444aacf19c26d8da994b20bbf9ee'],41,31,72,1,,,
+407f10d3eb82d9c3afaaf02785c1ad64d10b7d15,chore(deps): update dependency safety to v2.3.5,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-28 10:31:35+00:00,0,2023-10-29 14:03:11+09:00,-32400,True,False,['poetry.lock'],['c659f67c9672374f9c1d9c637a40c18859bc9aeb'],31,41,72,1,,,
+e66b5206223da6898dce142d1dc5037a2feaca2d,chore(deps): update dependency black to v23,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-10-29 05:05:22+00:00,0,2023-10-29 14:19:33+09:00,-32400,True,False,['poetry.lock'],['407f10d3eb82d9c3afaaf02785c1ad64d10b7d15'],41,31,72,1,,,
+3e11cff4f66318cd0b0f1a711e672fb0e0d75ae4,funscript: fix bug where positions could be generated out of order,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-11-01 21:59:33+09:00,-32400,2023-11-01 22:05:30+09:00,-32400,True,False,['funscript.py'],['e66b5206223da6898dce142d1dc5037a2feaca2d'],0,22,22,1,0.9166666666666666,1.0,1.0
+e57672458a7a280d2b77325011dfd56c92719fee,release 0.1.1,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2023-11-01 22:06:15+09:00,-32400,2023-11-01 22:06:15+09:00,-32400,True,False,['pyproject.toml'],['3e11cff4f66318cd0b0f1a711e672fb0e0d75ae4'],1,1,2,1,,,
+38ca0527c4534828ea78e987dc1daf453cf031b1,funscript: drop unnecessary end position actions,byeonhyeok,bhrevol@gmail.com,bhrevol,96057317+bhrevol@users.noreply.github.com,2023-11-02 19:10:15+09:00,-32400,2023-11-02 19:13:14+09:00,-32400,True,False,['funscript.py'],['e57672458a7a280d2b77325011dfd56c92719fee'],32,47,79,1,0.2,1.0,1.0
+384494848908bc3db6176420a1de37c9f2011ee7,release 0.1.2,byeonhyeok,bhrevol@gmail.com,byeonhyeok,bhrevol@gmail.com,2023-11-02 19:13:51+09:00,-32400,2023-11-02 19:13:51+09:00,-32400,True,False,['pyproject.toml'],['38ca0527c4534828ea78e987dc1daf453cf031b1'],1,1,2,1,,,
+2aad9d44d70e6be6a3149a20df0841e24be7d6d4,chore(deps): update dependency black to v23.11.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-11-08 07:45:26+00:00,0,2023-11-08 07:49:46+00:00,0,True,False,['poetry.lock'],['384494848908bc3db6176420a1de37c9f2011ee7'],19,19,38,1,,,
+1b2215336a230f02b0f434b8c72d169f7c23a557,chore(deps): update dependency flake8 to v6,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-11-08 19:45:11+00:00,0,2023-11-08 19:47:37+00:00,0,True,False,['poetry.lock'],['2aad9d44d70e6be6a3149a20df0841e24be7d6d4'],6,0,6,1,,,
+5ba9592e86f7de7907a05289ce33c228f6eb3fc8,chore(deps): update dependency pygments to v2.17.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-11-18 15:46:40+00:00,0,2023-11-18 15:48:23+00:00,0,True,False,['poetry.lock'],['1b2215336a230f02b0f434b8c72d169f7c23a557'],3,10,13,1,,,
+4c7a8683b5647740eaec4484ff5163266c0aca8a,chore(deps): update dependency pygments to v2.17.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-11-19 10:28:24+00:00,0,2023-11-19 10:30:26+00:00,0,True,False,['poetry.lock'],['5ba9592e86f7de7907a05289ce33c228f6eb3fc8'],3,3,6,1,,,
+94fd8a55c8443e49f227d95891bc0136ea09ca25,chore(deps): update dependency sphinx-click to v5.1.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-11-21 17:04:00+00:00,0,2023-11-21 17:05:59+00:00,0,True,False,['requirements.txt'],['4c7a8683b5647740eaec4484ff5163266c0aca8a'],1,1,2,1,,,
+193abb2237b0fedb0e1ede60fbec72c4dc78c835,chore(deps): update dependency sphinx-click to v5.1.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-11-21 18:21:56+00:00,0,2023-11-21 18:23:52+00:00,0,True,False,['poetry.lock'],['94fd8a55c8443e49f227d95891bc0136ea09ca25'],3,3,6,1,,,
+43121b9a1e046a2eb8ca1e7dfac453d4002d07ff,chore(deps): update dependency pygments to v2.17.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-11-21 21:12:37+00:00,0,2023-11-21 21:14:41+00:00,0,True,False,['poetry.lock'],['193abb2237b0fedb0e1ede60fbec72c4dc78c835'],3,3,6,1,,,
+793f552c8e421ebd84adbef0f14c96f287d03536,chore(deps): update pypa/gh-action-pypi-publish action to v1.8.11,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-11-29 14:04:15+00:00,0,2023-11-29 14:06:12+00:00,0,True,False,['release.yml'],['43121b9a1e046a2eb8ca1e7dfac453d4002d07ff'],2,2,4,1,,,
+83200a853266e320a552995b135bc306742d41ff,chore(deps): update dependency isort to v5.13.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-12-09 13:22:31+00:00,0,2023-12-09 13:24:12+00:00,0,True,False,['poetry.lock'],['793f552c8e421ebd84adbef0f14c96f287d03536'],6,305,311,1,,,
+e7ecc30dff4fa3caaaee1c5a2574bf2adade7607,fix(deps): update dependency typing-extensions to v4.9.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-12-10 03:50:05+00:00,0,2023-12-10 03:51:52+00:00,0,True,False,['poetry.lock'],['83200a853266e320a552995b135bc306742d41ff'],3,3,6,1,,,
+aedc1c085f68a85bcecc092595fafcf48a22c72c,chore(deps): update dependency isort to v5.13.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-12-11 22:04:02+00:00,0,2023-12-11 22:05:47+00:00,0,True,False,['poetry.lock'],['e7ecc30dff4fa3caaaee1c5a2574bf2adade7607'],308,3,311,1,,,
+704e3439affb0158b802dc6cb0fb975744194889,chore(deps): update dependency black to v23.12.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-12-12 09:53:44+00:00,0,2023-12-12 09:55:31+00:00,0,True,False,['poetry.lock'],['aedc1c085f68a85bcecc092595fafcf48a22c72c'],20,24,44,1,,,
+80e8fdfee76b1c97c4c81c0c1e693ff60bce2641,chore(deps): update dependency isort to v5.13.2,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-12-13 22:00:17+00:00,0,2023-12-13 22:01:54+00:00,0,True,False,['poetry.lock'],['704e3439affb0158b802dc6cb0fb975744194889'],3,6,9,1,,,
+f855218e7dd96f0f78a97f2f00faa6455062361b,chore(deps): update dependency coverage to v7.3.3,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-12-14 20:37:49+00:00,0,2023-12-14 20:39:35+00:00,0,True,False,['poetry.lock'],['80e8fdfee76b1c97c4c81c0c1e693ff60bce2641'],53,53,106,1,,,
+114509f767e1531f220c7be4cb66af6189e7597a,chore(deps): update dependency coverage to v7.3.4,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-12-20 19:51:03+00:00,0,2023-12-20 19:53:12+00:00,0,True,False,['poetry.lock'],['f855218e7dd96f0f78a97f2f00faa6455062361b'],53,53,106,1,,,
+df0489e49c1d32275370220f9485bf1771705326,chore(deps): update dependency black to v23.12.1,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-12-23 00:07:43+00:00,0,2023-12-23 00:09:00+00:00,0,True,False,['poetry.lock'],['114509f767e1531f220c7be4cb66af6189e7597a'],23,23,46,1,,,
+bc5aef8e6b417e3d703db0a993f4107e53f58c08,chore(deps): update dependency coverage to v7.4.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-12-28 02:03:04+00:00,0,2023-12-28 02:04:50+00:00,0,True,False,['poetry.lock'],['df0489e49c1d32275370220f9485bf1771705326'],53,53,106,1,,,
+cc0514b6fa2edbab43739d5244c1a0303ebfabc2,chore(deps): update dependency pytest to v7.4.4,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-12-31 14:03:47+00:00,0,2023-12-31 14:05:26+00:00,0,True,False,['poetry.lock'],['bc5aef8e6b417e3d703db0a993f4107e53f58c08'],3,3,6,1,,,
+8e23ba83cea8be4e22dd862e18b37bb8f3d60acd,chore(deps): update actions/cache action to v3.3.3,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2024-01-11 18:51:59+00:00,0,2024-01-11 18:53:34+00:00,0,True,False,['tests.yml'],['cc0514b6fa2edbab43739d5244c1a0303ebfabc2'],1,1,2,1,,,
+4c9c8ce5f58e7e798bc7b293ea08be9a90b2caeb,chore(deps): update dependency safety to v3,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2024-01-18 02:06:57+00:00,0,2024-01-18 02:09:00+00:00,0,True,False,['poetry.lock'],['8e23ba83cea8be4e22dd862e18b37bb8f3d60acd'],15,286,301,1,,,
+a918fd80e0f9315603fbd322caf8066584c9cda6,chore(deps): update dependency pre-commit to v3.6.0,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2024-01-18 22:49:23+00:00,0,2024-01-18 22:52:34+00:00,0,True,False,['poetry.lock'],['4c9c8ce5f58e7e798bc7b293ea08be9a90b2caeb'],0,1,1,1,,,

@@ -1,0 +1,156 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+0fb7139d4abe96758d20d35a1263e2d1f72dee19,Initial commit,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-09-08 00:33:12+02:00,-7200,2021-09-08 00:33:12+02:00,-7200,True,False,['a2ln'],[],0,60,60,1,,,
+a9da11be159818f01f95034d701ef6b9bec76e45,Display address on start,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-05 22:22:06+01:00,-3600,2021-11-05 22:22:06+01:00,-3600,True,False,['a2ln'],['0fb7139d4abe96758d20d35a1263e2d1f72dee19'],9,16,25,1,,,
+56ad699750c28a1fca729645fa8c9f9f0c570668,"Added a README.md, .gitignore and LICENSE file",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-06 15:40:26+01:00,-3600,2021-11-06 15:40:26+01:00,-3600,True,False,"['.gitignore', 'LICENSE', 'README.md', 'a2ln']",['a9da11be159818f01f95034d701ef6b9bec76e45'],5,660,665,4,,,
+ac46bde7e214f36973f72bcde4a33552920dfee8,Add contents to .gitignore,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-06 15:56:23+01:00,-3600,2021-11-06 15:56:23+01:00,-3600,True,False,['.gitignore'],['56ad699750c28a1fca729645fa8c9f9f0c570668'],0,1,1,1,,,
+007dbe66c4f7557a7cc6da2556cbdff9698d177f,Remove README.md code block language tag,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-06 17:24:20+01:00,-3600,2021-11-06 17:24:20+01:00,-3600,True,False,['README.md'],['ac46bde7e214f36973f72bcde4a33552920dfee8'],4,4,8,1,,,
+c98351c3e269f6f6703bb1fc915387f84e60904b,Added AUR PKGBUILD and AUR to installation section in README.md,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-07 14:53:23+01:00,-3600,2021-11-07 14:53:23+01:00,-3600,True,False,"['PKGBUILD', 'README.md']",['007dbe66c4f7557a7cc6da2556cbdff9698d177f'],0,18,18,2,,,
+d715c4ec8f857cadade5d7a6736cd3df1ca6fc27,Removed PKGBUILD,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-07 14:56:37+01:00,-3600,2021-11-07 14:56:37+01:00,-3600,True,False,['PKGBUILD'],['c98351c3e269f6f6703bb1fc915387f84e60904b'],15,0,15,1,,,
+af342d1e0274f7c596fb74ba1607b734eb9f6dfe,Fixed/improved the manual installation section,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-07 15:59:54+01:00,-3600,2021-11-07 15:59:54+01:00,-3600,True,False,['README.md'],['d715c4ec8f857cadade5d7a6736cd3df1ca6fc27'],2,1,3,1,,,
+d4736325e5bc112f15fe0ced879f073668b3ee39,Mention runtime dependencies in README.md,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-07 17:06:19+01:00,-3600,2021-11-07 17:06:19+01:00,-3600,True,False,['README.md'],['af342d1e0274f7c596fb74ba1607b734eb9f6dfe'],0,5,5,1,,,
+5739e09f79bf71817299c412557d0efba23928ea,"Improved README.md, added Makefile and requirements.txt",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-09 22:16:46+01:00,-3600,2021-11-09 22:16:46+01:00,-3600,True,False,"['.gitignore', 'Makefile', 'README.md', 'requirements.txt']",['d4736325e5bc112f15fe0ced879f073668b3ee39'],6,32,38,4,,,
+5bb08a99d77c263ba5a8df0fb8521d903b900ac7,Improved Makefile,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-09 22:34:05+01:00,-3600,2021-11-09 22:34:05+01:00,-3600,True,False,['Makefile'],['5739e09f79bf71817299c412557d0efba23928ea'],2,1,3,1,,,
+ac55df61537586f325e9cd7851a9b8f764c64410,Improved README.md,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-11-10 00:47:29+01:00,-3600,2021-11-10 00:47:29+01:00,-3600,True,False,['README.md'],['5bb08a99d77c263ba5a8df0fb8521d903b900ac7'],2,2,4,1,,,
+0d3be78fee54ec26f28e7eec75691b8c10daa829,Improved script and removed printing local address,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2021-12-14 21:13:35+01:00,-3600,2021-12-14 21:13:35+01:00,-3600,True,False,"['README.md', 'a2ln']",['ac55df61537586f325e9cd7851a9b8f764c64410'],38,35,73,2,,,
+31fd838b5aabec0d6597931eff54132d4fb40da8,Stripped the README.md as most information is now available on https://patri9ck.github.io/a2ln/,Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2022-03-27 13:38:21+02:00,-7200,2022-03-27 13:38:21+02:00,-7200,True,False,['README.md'],['0d3be78fee54ec26f28e7eec75691b8c10daa829'],40,2,42,1,,,
+4ae3384f26205923d6185a11e78865bf1deffb87,Added sponsor buttons,Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2022-06-23 17:31:48+02:00,-7200,2022-06-23 17:31:48+02:00,-7200,True,False,['FUNDING.yml'],['31fd838b5aabec0d6597931eff54132d4fb40da8'],0,2,2,1,,,
+ed6e0708c9b43b67f976604c9f08cdd3f94b547b,Changed URL in README.md,Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2022-06-28 23:00:32+02:00,-7200,2022-06-28 23:00:32+02:00,-7200,True,False,['README.md'],['4ae3384f26205923d6185a11e78865bf1deffb87'],1,1,2,1,,,
+cb293224ee804c7c065acbe6f0fff717fc171238,Improved README.md,Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2022-07-01 00:55:26+02:00,-7200,2022-07-01 00:55:26+02:00,-7200,True,False,['README.md'],['ed6e0708c9b43b67f976604c9f08cdd3f94b547b'],1,1,2,1,,,
+458b7da10dc4c0c86ad34e263f67cfdb64d06d6c,Removed custom sponsor links,Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2022-07-01 11:39:00+02:00,-7200,2022-07-01 11:39:00+02:00,-7200,True,False,['FUNDING.yml'],['cb293224ee804c7c065acbe6f0fff717fc171238'],1,0,1,1,,,
+392be5ec81534c840cfe51da1c90051d8f1f774a,"Add encrypted transmission (#4)
+
+* Added encrypted transmission
+
+* Removed exit message printing
+
+* Run Notify.init
+
+* Prettier messages, fixed pairing and more
+
+* Clean-up",Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2022-07-12 23:06:47+02:00,-7200,2022-07-12 23:06:47+02:00,-7200,True,False,['a2ln'],['458b7da10dc4c0c86ad34e263f67cfdb64d06d6c'],27,176,203,1,,,
+2b15c8e51aa96ff6031a256e2bccd7120f1d9fa0,"Use setproctitle, fix memory leak, print synchronized",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2022-07-18 10:10:55+02:00,-7200,2022-07-18 10:10:55+02:00,-7200,True,False,['a2ln'],['392be5ec81534c840cfe51da1c90051d8f1f774a'],16,27,43,1,,,
+c81fd2fe582ab58d3c8738cf1e598551c1950b2d,"Added prettier messages, custom pairing port and QR code pairing (#9)",Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2022-07-26 14:07:16+02:00,-7200,2022-07-26 14:07:16+02:00,-7200,True,False,['a2ln'],['2b15c8e51aa96ff6031a256e2bccd7120f1d9fa0'],52,81,133,1,,,
+c2da77e613d564293d95663dd7ab67e697f2491e,"Formatting, updated license and added dependency",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2022-08-19 22:16:14+02:00,-7200,2022-08-19 22:16:14+02:00,-7200,True,False,"['COPYING', 'README.md', 'a2ln', 'requirements.txt']",['c81fd2fe582ab58d3c8738cf1e598551c1950b2d'],2,73,75,4,,,
+80bf73e071e2d63a0d2e89a72f3121ee90f0f845,"Changed license header, static typing",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2022-08-23 13:50:20+02:00,-7200,2022-08-23 13:50:20+02:00,-7200,True,False,"['README.md', 'a2ln']",['c2da77e613d564293d95663dd7ab67e697f2491e'],47,47,94,2,,,
+b698cdde5b0643a3b321260e55e37b778cf2ac9b,Command line options for the title format and a shell command + code improvements (#11),Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2022-09-10 00:45:51+02:00,-7200,2022-09-10 00:45:51+02:00,-7200,True,False,['a2ln'],['80bf73e071e2d63a0d2e89a72f3121ee90f0f845'],54,82,136,1,,,
+7cee3e479b183d4b0fd3015fad6f3ae025361a2b,Removed horrible start logic,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2022-09-11 12:27:01+02:00,-7200,2022-09-11 12:27:01+02:00,-7200,True,False,['a2ln'],['b698cdde5b0643a3b321260e55e37b778cf2ac9b'],17,5,22,1,,,
+18cdb3e9e16d9579dbaea9bb9228a80fd5a5fdcb,Set minimum library versions,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2022-09-15 18:21:28+02:00,-7200,2022-09-15 18:21:28+02:00,-7200,True,False,['requirements.txt'],['7cee3e479b183d4b0fd3015fad6f3ae025361a2b'],5,5,10,1,,,
+f9f606c99ba8608b4ef228f0a46c8dd4decdc842,Update URL,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2022-09-15 18:21:57+02:00,-7200,2022-09-15 18:21:57+02:00,-7200,True,False,['README.md'],['18cdb3e9e16d9579dbaea9bb9228a80fd5a5fdcb'],1,1,2,1,,,
+b4f94638009a711b623404a9cf2e24f032990830,"First draft, default port (#17)",Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2022-09-28 21:10:59+02:00,-7200,2022-09-28 21:10:59+02:00,-7200,True,False,"['Makefile', 'a2ln', 'a2ln.service']",['f9f606c99ba8608b4ef228f0a46c8dd4decdc842'],25,24,49,3,,,
+982f8e240d91f5daa002d21ef791f50eb1893534,"Removed explicit port, set correct path",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2022-09-28 21:15:06+02:00,-7200,2022-09-28 21:15:06+02:00,-7200,True,False,['a2ln.service'],['b4f94638009a711b623404a9cf2e24f032990830'],1,1,2,1,,,
+5218db6314615cd07d4adb57945e0686f99bf36a,Added support for python3.8 (#21),Jan9103,55753387+Jan9103@users.noreply.github.com,GitHub,noreply@github.com,2022-12-26 17:07:48+01:00,-3600,2022-12-26 17:07:48+01:00,-3600,True,False,['a2ln'],['982f8e240d91f5daa002d21ef791f50eb1893534'],9,8,17,1,,,
+2edbee2152e35a7e358ce5264d5cb0de9d413eee,"Make dependencies debian 11 compatible (#24)
+
+I lowered the minimum version of dependencies.
+For some reason pycairo breaks otherwise.
+I tested it and everything seems to still work just fine.",Jan9103,55753387+Jan9103@users.noreply.github.com,GitHub,noreply@github.com,2022-12-30 12:22:26+01:00,-3600,2022-12-30 12:22:26+01:00,-3600,True,False,['requirements.txt'],['5218db6314615cd07d4adb57945e0686f99bf36a'],3,3,6,1,,,
+560bbd3f3bd7412dca16f14929c0f95a8c498889,"Specifying listening IP (#23)
+
+* Added ability to set custom addresses
+
+* Removed NARGS option
+
+* Changed default IP to * and edited messages",Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2022-12-30 22:34:23+01:00,-3600,2022-12-30 22:34:23+01:00,-3600,True,False,['a2ln'],['2edbee2152e35a7e358ce5264d5cb0de9d413eee'],25,43,68,1,,,
+bcc15cafb06a324f5f74906bf8079d9d6de99704,"Package it for pip (#25)
+
+* Package it for pip
+
+It is now possible to package it and distribute it as python package:
+- build a package: `python3 -m build`
+- install it locally (for testing) `python3 -m pip install ./dist/a2ln_server-1.1.4.tar.gz` (it generates 2 files, which both should work on)
+- publish it to the testing pypi repo: `python3 -m twine upload --repository testpypi dist/*`
+
+Resources:
+- https://packaging.python.org/en/latest/tutorials/packaging-projects
+- https://setuptools.pypa.io/en/latest/userguide/entry_point.html
+
+* General changes
+
+* Further changes
+
+* fixup! General changes
+
+* Further improvements
+
+* Update .gitignore
+
+* Reformat and removed main function start
+
+* Use pip as installation method
+
+* Copy systemd unit file
+
+* Removed build and check whether executing user is root
+
+* Specify return type
+
+Co-authored-by: patri9ck <patri9ck@gmail.com>",Jan9103,55753387+Jan9103@users.noreply.github.com,GitHub,noreply@github.com,2023-01-12 17:04:00+01:00,-3600,2023-01-12 17:04:00+01:00,-3600,True,False,"['.gitignore', 'Makefile', 'pyproject.toml', '__init__.py', 'a2ln.py']",['560bbd3f3bd7412dca16f14929c0f95a8c498889'],39,90,129,5,0.0,0.6666666666666666,1.0
+b0a0a37eb85ad1e38f9a65ba6f29f52864ba7e54,Update to 1.1.6,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-12 17:10:13+01:00,-3600,2023-01-12 17:10:13+01:00,-3600,True,False,['pyproject.toml'],['bcc15cafb06a324f5f74906bf8079d9d6de99704'],1,1,2,1,,,
+582bb8bba0b025c854858292c66691375e27c625,Set prefix to /usr,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-12 17:30:21+01:00,-3600,2023-01-12 17:30:21+01:00,-3600,True,False,['Makefile'],['b0a0a37eb85ad1e38f9a65ba6f29f52864ba7e54'],8,6,14,1,,,
+58776460c1c1e99e084878023c5b768fe428c9d6,Fix Makefile,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-14 16:33:55+01:00,-3600,2023-01-14 16:33:55+01:00,-3600,True,False,['Makefile'],['582bb8bba0b025c854858292c66691375e27c625'],4,6,10,1,,,
+fbfd75754da8e5eb935569f41195d56c22b048fe,Update to 1.1.7,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-14 16:35:00+01:00,-3600,2023-01-14 16:35:00+01:00,-3600,True,False,['pyproject.toml'],['58776460c1c1e99e084878023c5b768fe428c9d6'],1,1,2,1,,,
+3cd33968189c26d3c90d90421b9fca77716552a5,Ignore installed packages,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-14 16:54:15+01:00,-3600,2023-01-14 16:54:15+01:00,-3600,True,False,['Makefile'],['fbfd75754da8e5eb935569f41195d56c22b048fe'],1,1,2,1,,,
+6443463687c6f895ad0ea98e6b1b33f5518f81e6,Removed shebang and added copyright header,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-20 21:31:41+01:00,-3600,2023-01-20 21:31:41+01:00,-3600,True,False,"['__init__.py', 'a2ln.py']",['3cd33968189c26d3c90d90421b9fca77716552a5'],3,16,19,2,,,
+258c9d1b964c81c8da6079a0d34bd3cc1239abd4,"Also remove ""dist"" directory",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-21 16:17:58+01:00,-3600,2023-01-21 16:17:58+01:00,-3600,True,False,['Makefile'],['6443463687c6f895ad0ea98e6b1b33f5518f81e6'],1,1,2,1,,,
+775dfa9fb88ed3528ae8e7801137b94d0a5d7335,"Added ""build"" directory to .gitignore",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-21 16:18:44+01:00,-3600,2023-01-21 16:18:44+01:00,-3600,True,False,['.gitignore'],['258c9d1b964c81c8da6079a0d34bd3cc1239abd4'],0,1,1,1,,,
+4f7fc30070297f5279356361440f683b0b8adfa6,Improve argument parser,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-21 16:32:58+01:00,-3600,2023-01-21 16:32:58+01:00,-3600,True,False,['a2ln.py'],['775dfa9fb88ed3528ae8e7801137b94d0a5d7335'],5,5,10,1,,,
+e2fb9d4f635cc8bdff0bff8e7ec88846806f8673,Add issue template,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-21 20:43:01+01:00,-3600,2023-01-21 20:43:01+01:00,-3600,True,False,"['bug-report.md', 'config.yml', 'feature-request.md', 'question.md']",['4f7fc30070297f5279356361440f683b0b8adfa6'],0,46,46,4,,,
+fed7271aea24e34277bdc542d1448abba4fd1cea,Fix license in pyproject.toml and removed license section from README.md,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-21 20:45:14+01:00,-3600,2023-01-21 20:45:14+01:00,-3600,True,False,"['README.md', 'pyproject.toml']",['e2fb9d4f635cc8bdff0bff8e7ec88846806f8673'],4,1,5,2,,,
+b824d730ed583cd20a9a708c50722ffe00764d01,"More features (#28)
+
+* Added a way to not start the pairing or notification server and added an option for the body format
+
+* Fixed default --body-format value
+
+* Removed unnecessary sleep call
+
+* Small code improvement
+
+* Reformat",Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2023-01-21 22:46:04+01:00,-3600,2023-01-21 22:46:04+01:00,-3600,True,False,['a2ln.py'],['fed7271aea24e34277bdc542d1448abba4fd1cea'],22,38,60,1,0.0,0.0,0.9333333333333333
+098b92d404a615d307c4d45d8183b564b8c687c7,Update to 1.1.8,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-21 22:47:04+01:00,-3600,2023-01-21 22:47:04+01:00,-3600,True,False,['pyproject.toml'],['b824d730ed583cd20a9a708c50722ffe00764d01'],1,1,2,1,,,
+8c362c65d55eaf370a0e520ecd33c9c155c8346f,Store variables,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-21 23:19:20+01:00,-3600,2023-01-21 23:19:20+01:00,-3600,True,False,['a2ln.py'],['098b92d404a615d307c4d45d8183b564b8c687c7'],2,5,7,1,0.0,0.0,1.0
+87a113035cf396cf862423a397bbd829e153da82,Stop server when notification or pairing server died and add extra README for PyPI + reformatting,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-22 14:52:04+01:00,-3600,2023-01-22 14:52:04+01:00,-3600,True,False,"['README.md', 'a2ln.service', 'pypi.md', 'pyproject.toml', 'requirements.txt', 'a2ln.py']",['8c362c65d55eaf370a0e520ecd33c9c155c8346f'],10,17,27,6,,,
+710c08c388db0ac6581b841eb7233e00817aeae6,Improve licensing text,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-22 14:54:30+01:00,-3600,2023-01-22 14:54:30+01:00,-3600,True,False,['README.md'],['87a113035cf396cf862423a397bbd829e153da82'],1,1,2,1,,,
+dca912bbc8dd9140c83395753832099b464d2f2f,Update to 1.1.9,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-22 14:59:09+01:00,-3600,2023-01-22 14:59:09+01:00,-3600,True,False,['pyproject.toml'],['710c08c388db0ac6581b841eb7233e00817aeae6'],1,1,2,1,,,
+1be5a91b8b9009cdee0f55b033f5ab123092caed,"Fix service path to binary when installed as user (#30)
+
+* Fix service path to binary when installed as user
+
+* Use two different systemd unit files instead
+
+---------
+
+Co-authored-by: patri9ck <patri9ck@gmail.com>",Johan Heikkilä,johan.heikkila@gmail.com,GitHub,noreply@github.com,2023-01-28 13:53:07+02:00,-7200,2023-01-28 12:53:07+01:00,-3600,True,False,"['Makefile', 'a2ln-system.service', 'a2ln-user.service']",['dca912bbc8dd9140c83395753832099b464d2f2f'],2,10,12,3,,,
+4422d2a88a59cf4c65c3d6dd3b25986cf9a0cab7,Update to 1.1.10,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-01-28 12:55:30+01:00,-3600,2023-01-28 12:55:30+01:00,-3600,True,False,['pyproject.toml'],['1be5a91b8b9009cdee0f55b033f5ab123092caed'],1,1,2,1,,,
+f9814a062ab17b1b6ca2f05afe45fab57a7e42ed,"Fix a few type annotations for mypy (#29)
+
+* Fix a few type annotations for mypy
+
+* Made more arguments optional
+
+* Made title and body format of NotificationServer optional
+
+* Reformat
+
+* Pass notification port to pairing server
+
+---------
+
+Co-authored-by: patri9ck <patri9ck@gmail.com>",Jan9103,55753387+Jan9103@users.noreply.github.com,GitHub,noreply@github.com,2023-01-28 17:05:43+01:00,-3600,2023-01-28 17:05:43+01:00,-3600,True,False,['a2ln.py'],['4422d2a88a59cf4c65c3d6dd3b25986cf9a0cab7'],15,17,32,1,1.0,1.0,0.0
+bfb2889257e510a7b38bad984e51e25d33707ba8,Renamed some variables,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-05-10 23:27:11+02:00,-7200,2023-05-10 23:27:11+02:00,-7200,True,False,['a2ln.py'],['f9814a062ab17b1b6ca2f05afe45fab57a7e42ed'],17,17,34,1,,,
+8d7affcfc588c8387608011498a156ac8840de37,"Add pausing feature, configuration error checking and removed setproctitle",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-10-29 23:31:11+01:00,-3600,2023-10-29 23:31:11+01:00,-3600,True,False,"['requirements.txt', '__init__.py', 'a2ln.py']",['bfb2889257e510a7b38bad984e51e25d33707ba8'],35,61,96,3,0.0,0.0,0.9
+9026a499afe2d781a5fdac6033b33707a811d5c8,Update to 1.1.11,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-10-29 23:34:54+01:00,-3600,2023-10-29 23:34:54+01:00,-3600,True,False,['pyproject.toml'],['8d7affcfc588c8387608011498a156ac8840de37'],1,1,2,1,,,
+59a64a4e949b1c8b9011876c22932a6b64d9465a,Set shell to true to allow more complex commands,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-10-30 00:00:12+01:00,-3600,2023-10-30 00:00:12+01:00,-3600,True,False,['a2ln.py'],['9026a499afe2d781a5fdac6033b33707a811d5c8'],1,1,2,1,,,
+be8d6fdf9f32a77d5591481af48a3dcc8118440c,Update to 1.1.12,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-10-30 00:00:35+01:00,-3600,2023-10-30 00:00:35+01:00,-3600,True,False,['pyproject.toml'],['59a64a4e949b1c8b9011876c22932a6b64d9465a'],1,1,2,1,,,
+947db66e6b369e260810d5afce00aaea98da493f,"Simpler and safer Makefile, only support for system installation, new command line interface and version command",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-10-30 17:51:46+01:00,-3600,2023-10-30 17:51:46+01:00,-3600,True,False,"['Makefile', 'a2ln-user.service', 'a2ln.service', 'a2ln.py']",['be8d6fdf9f32a77d5591481af48a3dcc8118440c'],113,89,202,4,1.0,1.0,1.0
+73860201e95517b4af766a5f58757c50f79b8b74,Update to 1.1.13,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-10-30 17:52:57+01:00,-3600,2023-10-30 17:52:57+01:00,-3600,True,False,['pyproject.toml'],['947db66e6b369e260810d5afce00aaea98da493f'],1,1,2,1,,,
+4b0204abadc24eed083210cd44a0e6956f8f79fe,Print empty line when server is enabled/disabled,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-10-30 18:11:20+01:00,-3600,2023-10-30 18:11:20+01:00,-3600,True,False,['a2ln.py'],['73860201e95517b4af766a5f58757c50f79b8b74'],0,2,2,1,1.0,1.0,1.0
+2762de6a64a627cdf228c1e8a66fd92e7b52cffa,Print empty line when notifications are toggled,Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2023-10-30 18:12:05+01:00,-3600,2023-10-30 18:12:05+01:00,-3600,True,False,['a2ln.py'],['73860201e95517b4af766a5f58757c50f79b8b74'],2,4,6,1,1.0,1.0,1.0
+5dd1768cb405448120bb215478c6f07f2e7d690a,"Drop Makefile completely, don't send notification port anymore when pairing",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-10-31 10:50:51+01:00,-3600,2023-10-31 10:50:51+01:00,-3600,True,False,"['Makefile', 'a2ln.py']",['2762de6a64a627cdf228c1e8a66fd92e7b52cffa'],60,28,88,2,0.0,0.0,0.5
+cd561e98ca837a5ebd7e5edaa93f5854c698d038,"Clean code up, rename pairing to pair",patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-11-02 23:39:21+01:00,-3600,2023-11-02 23:39:21+01:00,-3600,True,False,['a2ln.py'],['16fbe2ff35ff2e3426c3e9e90d2f97e4a361455a'],29,27,56,1,1.0,0.3333333333333333,0.0
+71d9ca83fa6c841eec4c0b5d1a40cff44b73d5a8,Use correct exit code,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-11-02 23:54:41+01:00,-3600,2023-11-02 23:54:41+01:00,-3600,True,False,['a2ln.py'],['cd561e98ca837a5ebd7e5edaa93f5854c698d038'],9,10,19,1,,,
+41f21abbeff0e8257fccd7eb8660b8074d0087d4,Specify types instead of using underscore,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-12-10 15:35:45+01:00,-3600,2023-12-10 15:35:45+01:00,-3600,True,False,['a2ln.py'],['71d9ca83fa6c841eec4c0b5d1a40cff44b73d5a8'],1,1,2,1,,,
+51a8ff357d206ab27cda3570029e236da625d0a0,Fix systemd unit,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-12-10 15:35:56+01:00,-3600,2023-12-10 15:35:56+01:00,-3600,True,False,['a2ln.service'],['41f21abbeff0e8257fccd7eb8660b8074d0087d4'],1,1,2,1,,,
+49626f52b46a2d8012d304620c58cdb44ed69fa2,Add constant for default port,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-12-10 16:04:34+01:00,-3600,2023-12-10 16:04:34+01:00,-3600,True,False,['a2ln.py'],['51a8ff357d206ab27cda3570029e236da625d0a0'],1,3,4,1,,,
+5a5c0e8236df121c75a272b928110061c2c0de06,Update to 1.1.14,patri9ck,patri9ck@gmail.com,patri9ck,patri9ck@gmail.com,2023-12-10 16:19:15+01:00,-3600,2023-12-10 16:19:15+01:00,-3600,True,False,['pyproject.toml'],['49626f52b46a2d8012d304620c58cdb44ed69fa2'],1,1,2,1,,,
+cd59d6c331b40503be96a7de37d1c7ae816bf298,Add PyPI upload workflow,Patrick,patri9ck@gmail.com,GitHub,noreply@github.com,2023-12-10 20:12:13+01:00,-3600,2023-12-10 20:12:13+01:00,-3600,True,False,['deploy-pypi.yml'],['5a5c0e8236df121c75a272b928110061c2c0de06'],0,27,27,1,,,

@@ -1,0 +1,77 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+822e4859d2b1e1cc0ce9cba91d94a44987d4d784,Initial commit,iyalchyk,97439089+iyalchyk@users.noreply.github.com,GitHub,noreply@github.com,2022-04-11 09:19:05+02:00,-7200,2022-04-11 09:19:05+02:00,-7200,True,False,['README.md'],[],0,2,2,1,,,
+2814dcda112dce080c9c0e90e05ec25d78d28fad,created folders structure,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-04-11 09:29:45+02:00,-7200,2022-04-11 09:30:47+02:00,-7200,True,False,"['test.yml', '.gitignore', 'LICENSE', 'README.md', 'setup.cfg', 'setup.py', '__init__.py', '__init__.py', '__init__.py', 'utils.py', '__init__.py', '__init__.py', '__init__.py', 'tox.ini']",['822e4859d2b1e1cc0ce9cba91d94a44987d4d784'],1,299,300,14,1.0,1.0,1.0
+0629fdb2fefba8fc92961ea9cfa31360acf4863d,added azure utilities,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-04-25 09:13:19+03:00,-10800,2022-04-25 09:13:19+03:00,-10800,True,False,"['setup.cfg', '__init__.py', '__init__.py', 'app.py', 'database.py']",['2814dcda112dce080c9c0e90e05ec25d78d28fad'],4,249,253,5,0.44505494505494503,1.0,0.38461538461538464
+fe04f88805dba3ab2e3c4325e477f121504e9b09,added simple parameters factories,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-05-20 12:21:20+02:00,-7200,2022-05-20 12:21:20+02:00,-7200,True,False,"['setup.cfg', 'param_factory.py']",['0629fdb2fefba8fc92961ea9cfa31360acf4863d'],0,42,42,2,1.0,1.0,1.0
+6b3e1844e585b74dd99083ade60e93cf4ccc1ffd,fixed github checks,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-05-20 12:25:20+02:00,-7200,2022-05-20 12:25:20+02:00,-7200,True,False,"['setup.cfg', 'setup.py', 'param_factory.py']",['fe04f88805dba3ab2e3c4325e477f121504e9b09'],27,31,58,3,,,
+baf6c9ec0ee5c84caa9d2dac7bb82a4a3a5d2bbf,moved logging utilities to a separate script,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-05-20 12:25:42+02:00,-7200,2022-05-20 12:25:42+02:00,-7200,True,False,"['logging.py', 'utils.py']",['6b3e1844e585b74dd99083ade60e93cf4ccc1ffd'],10,19,29,2,1.0,1.0,1.0
+cffb15927ed5c8a3194c0e07adaf0713551f68dc,"Param factory dev (#4)
+
+* added RFC ParamFactory
+
+- added solver = liblinear to l2 penalty LR
+
+* added SVC and LinearSVC
+
+* added MLPClassifier
+
+* added DTC
+
+- changed some parameters from SVC
+
+* added KNC
+
+* Update param_factory.py
+
+* added missing imports for param_factory
+
+* changed Hyperparameters of RFC to reduce time",Samuel Brinkmann,76175242+Priapos1004@users.noreply.github.com,GitHub,noreply@github.com,2022-06-16 09:14:23+02:00,-7200,2022-06-16 09:14:23+02:00,-7200,True,False,['param_factory.py'],['baf6c9ec0ee5c84caa9d2dac7bb82a4a3a5d2bbf'],1,82,83,1,1.0,1.0,1.0
+805d7a6219ea22e3b48c5d5e387d85ca156f6de6,"Data quality (#3)
+
+* structure
+
+* added notebook with data sources for testing
+
+* First commit of DataQuality class with support for missing values and duplicates
+
+* Cleaned up
+
+* added simple timeseries data
+
+* updates according to review
+
+* added identifying and checking for missing values for timeseries dataframes
+
+- renamed printstatements ""missing values"" to ""missing NaN values""
+- added get_missing_indices for DatetimeIndex and PeriodIndex
+
+* deleted unnecessary imports
+
+* updates according to review
+
+* updates according to review
+
+* updates according to review,
+
+* script to test/debug timeseries
+
+* removed notebooks and timeseries debug files
+
+* duplicates support for  timeseries
+
+Co-authored-by: fthiem <felix.thiem@lead.berlin>
+Co-authored-by: Samuel Brinkmann <samuel@brinkmann-familie.de>",tahleen-rahman,59568211+tahleen-rahman@users.noreply.github.com,GitHub,noreply@github.com,2022-06-17 16:35:41+02:00,-7200,2022-06-17 16:35:41+02:00,-7200,True,False,"['data_frame_statistics.py', 'Electric_Production_timeseries.csv', 'census_1000.csv', 'melb_1000.csv', 'test_data_quality.py']",['cffb15927ed5c8a3194c0e07adaf0713551f68dc'],0,2585,2585,5,0.6086956521739131,0.7739130434782608,0.9739130434782609
+2666626f807a5457df1340327383265af80c096a,bugfix,tahleen-rahman,deesharahman@gmail.com,tahleen-rahman,deesharahman@gmail.com,2022-06-19 22:46:35+02:00,-7200,2022-06-19 22:46:35+02:00,-7200,True,False,['data_frame_statistics.py'],['805d7a6219ea22e3b48c5d5e387d85ca156f6de6'],1,1,2,1,,,
+935c16cb6657389b8ece36e8bdf86be26fde3982,added create_pipeline_endpoint and database tools,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-06-20 08:58:11+02:00,-7200,2022-06-20 08:58:11+02:00,-7200,True,False,"['app.py', 'database.py']",['2666626f807a5457df1340327383265af80c096a'],56,169,225,2,0.20833333333333334,1.0,0.2361111111111111
+2163a9ade68a42d7c3e5560cf4b0bf2daf64a2be,added missing dependencies,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-06-20 08:58:31+02:00,-7200,2022-06-20 08:58:31+02:00,-7200,True,False,['setup.cfg'],['935c16cb6657389b8ece36e8bdf86be26fde3982'],1,3,4,1,,,
+00f1be6cb9724d6a16c86f6f341dbcfd105b8460,fixed formatting,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-06-20 08:59:07+02:00,-7200,2022-06-20 08:59:07+02:00,-7200,True,False,"['app.py', 'param_factory.py']",['2163a9ade68a42d7c3e5560cf4b0bf2daf64a2be'],58,77,135,2,0.875,1.0,0.875
+84a4c54cd7d644d2832bacda7b19a5b57141c59a,fixed AzureApp tools,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-06-22 08:25:44+02:00,-7200,2022-06-22 08:25:44+02:00,-7200,True,False,"['setup.cfg', 'app.py']",['00f1be6cb9724d6a16c86f6f341dbcfd105b8460'],40,47,87,2,0.0,1.0,0.75
+d48a45b996224bb0863db3833225f5cc98c005d5,Update README.md,fthiem,98815743+fthiem@users.noreply.github.com,GitHub,noreply@github.com,2022-07-08 12:41:33+02:00,-7200,2022-07-08 12:41:33+02:00,-7200,True,False,['README.md'],['84a4c54cd7d644d2832bacda7b19a5b57141c59a'],0,6,6,1,,,
+65d9ab2670ea26a25f415be214513ceb22d7732c,fixed azureml versions,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-08-23 15:00:32+02:00,-7200,2022-08-23 15:00:32+02:00,-7200,True,False,['setup.cfg'],['84a4c54cd7d644d2832bacda7b19a5b57141c59a'],3,3,6,1,,,
+69937b76c1db2e777fe217a655324014561b5b81,updated toolbox version to 0.0.3,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-08-23 15:01:35+02:00,-7200,2022-08-23 15:01:35+02:00,-7200,True,False,['setup.cfg'],['8874151d583a7544250442fc7700a15c5a4b6298'],1,1,2,1,,,
+475323937fa833e5b6e8a2c4f7eb3effb7a9d94a,updated toolbox version to 0.0.5,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-09-01 03:17:55+02:00,-7200,2022-09-01 03:17:55+02:00,-7200,True,False,"['setup.cfg', '__init__.py', 'postgres.py', 'app.py']",['69937b76c1db2e777fe217a655324014561b5b81'],10,233,243,4,0.1807909604519774,1.0,0.3220338983050847
+e7f8c1f6d9c49924b743a8a220a5527efc58a780,updated toolbox version to 0.0.6,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-09-01 03:25:51+02:00,-7200,2022-09-01 03:25:51+02:00,-7200,True,False,['setup.cfg'],['475323937fa833e5b6e8a2c4f7eb3effb7a9d94a'],1,1,2,1,,,
+58e49b5ae709110434e472f29dc2e7bfb88e3999,added default arguments,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-09-26 14:08:14+02:00,-7200,2022-09-26 14:08:14+02:00,-7200,True,False,"['setup.cfg', 'app.py']",['e7f8c1f6d9c49924b743a8a220a5527efc58a780'],21,21,42,2,,,
+fc02e9dcf4d99ebfd023b7b1ec97b3ca0a19df43,added location and tags,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-09-26 14:48:12+02:00,-7200,2022-09-26 14:48:12+02:00,-7200,True,False,"['setup.cfg', 'app.py']",['58e49b5ae709110434e472f29dc2e7bfb88e3999'],1,5,6,2,0.0,1.0,0.0
+981f080c2d674e4148d0c8b16eef4490374b6085,"renamed workspace_name to workspace_id, added deployment targets for real-time deployments, fixed code style",iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2022-11-11 15:01:16+01:00,-3600,2022-11-11 15:01:16+01:00,-3600,True,False,"['app.py', 'test_data_quality.py']",['fc02e9dcf4d99ebfd023b7b1ec97b3ca0a19df43'],55,75,130,2,0.20833333333333334,0.0,0.20833333333333334
+c3fdd5c833db3897196aec68ed453c33a36bad33,fixed azure version to 1.49.0,iyalchyk,ilya.yalchyk@lead.berlin,iyalchyk,ilya.yalchyk@lead.berlin,2023-02-23 15:28:40+01:00,-3600,2023-02-23 15:28:40+01:00,-3600,True,False,['setup.cfg'],['981f080c2d674e4148d0c8b16eef4490374b6085'],4,9,13,1,,,

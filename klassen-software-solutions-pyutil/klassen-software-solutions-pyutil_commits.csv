@@ -1,0 +1,19 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+67f136da594429a60fd94686f006ae8202ef2cb3,Initial commit,Steven Klassen,klassens@acm.org,GitHub,noreply@github.com,2020-01-27 10:51:57-07:00,25200,2020-01-27 10:51:57-07:00,25200,True,False,"['LICENSE', 'README.md']",[],0,23,23,2,,,
+938c73bd4e78f7b4e346f21336978791a68c0955,WIP: got package working with contract,Steven Klassen,klassens@acm.org,Steven Klassen,klassens@acm.org,2020-01-27 11:57:14-07:00,25200,2020-01-27 11:57:14-07:00,25200,True,False,"['.gitignore', 'Makefile', 'test_contract.py', '__init__.py', '__init__.py', 'contract.py', 'logo.png', 'setup.py']",['67f136da594429a60fd94686f006ae8202ef2cb3'],0,167,167,8,0.7,0.7,1.0
+23d1da18f6c86682182ec82501dc7ea5b5cd67c7,"Completed contract.py
+
+Closes #1",Steven Klassen,klassens@acm.org,Steven Klassen,klassens@acm.org,2020-01-27 12:19:41-07:00,25200,2020-01-27 18:30:31-07:00,25200,True,False,"['.gitignore', 'Doxyfile', 'README.md', 'common.mk', 'configure_common.sh', 'generate_all_h.sh', 'makefile_help.txt', 'README.md', 'license_scanner.py', 'publish.py', 'revision.sh', 'spdx-licenses.json', 'update-build-system.sh', 'update_prereqs.py', 'xcode_analyzer.py', 'common.mk', 'python_analyzer.py', 'common.mk', 'Makefile', 'setup.cfg', 'setup.py']",['938c73bd4e78f7b4e346f21336978791a68c0955'],31,9281,9312,21,0.7636849132176236,0.7783711615487316,0.7997329773030708
+87e5aa491d02f74b3a1de9bf7122581ec7860f8d,"Added the process module
+
+Also added the CI
+Closes #3",Steven Klassen,klassens@acm.org,Steven Klassen,klassens@acm.org,2020-01-28 10:04:54-07:00,25200,2020-01-28 14:41:16-07:00,25200,True,False,"['on-push.yml', 'test_command.py', 'command.py']",['74300b2b9207c4b17535cc6fd5e0ce82b9875f61'],0,184,184,3,0.4383561643835616,0.726027397260274,0.8082191780821918
+ffa39a7dcfa3b95e4c3769fe3ac1b3d5b9632b23,"Adds JSON reading
+
+Closes #2",Steven Klassen,klassens@acm.org,Steven Klassen,klassens@acm.org,2020-01-28 18:00:56-07:00,25200,2020-01-28 18:00:56-07:00,25200,True,False,"['array.json', 'dictionary.json', 'invalid.txt', 'invalid_claim.json', 'test_command.py', 'test_jsonreader.py', 'command.py', 'contract.py', 'jsonreader.py', 'setup.cfg']",['3da343df5d7b79ecd81f27ea6bed57d975c52d56'],2,198,200,10,0.717391304347826,0.9347826086956522,0.9891304347826086
+83136aef996cb5b9054658ff66090dce65bbe29d,Try adding the install before the check to ensure all prereqs are installed,Steven Klassen,klassens@acm.org,Steven Klassen,klassens@acm.org,2020-01-28 18:06:57-07:00,25200,2020-01-28 18:06:57-07:00,25200,True,False,['on-push.yml'],['ffa39a7dcfa3b95e4c3769fe3ac1b3d5b9632b23'],0,1,1,1,,,
+44ded43c378fc42cf2cd28b49fb732070ae2589d,"Converts kss to a proper namespace package
+
+Fixes #6",Steven Klassen,klassens@acm.org,Steven Klassen,klassens@acm.org,2020-02-01 12:06:06-07:00,25200,2020-02-01 12:06:06-07:00,25200,True,False,"['revision.sh', 'update-build-system.sh', 'common.mk', 'somefile.py', 'test_bug6_kss_namespace.py', 'setup.cfg', 'setup.py']",['b503662b28cac65fa39881226dd2c110cdecca8f'],8,21,29,7,1.0,1.0,1.0
+930e6b89ff2631527580728736d54362b3be790a,Added some string utilities,Steven Klassen,klassens@acm.org,Steven Klassen,klassens@acm.org,2020-02-03 15:37:46-07:00,25200,2020-02-03 15:37:46-07:00,25200,True,False,"['test_strings.py', 'strings.py']",['44ded43c378fc42cf2cd28b49fb732070ae2589d'],0,42,42,2,1.0,1.0,1.0
+3ed3d30d4122c9ad34788ff438bb454e0566cbe7,Updated the readme,Steven Klassen,klassens@acm.org,Steven Klassen,klassens@acm.org,2020-02-04 07:27:31-07:00,25200,2020-02-04 07:27:31-07:00,25200,True,False,['README.md'],['930e6b89ff2631527580728736d54362b3be790a'],0,5,5,1,,,

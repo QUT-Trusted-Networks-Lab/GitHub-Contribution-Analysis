@@ -1,0 +1,144 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+0e11ed75f95bc08f250a327eae7b1d6594c3ce63,Initial commit,qubixes,44498096+qubixes@users.noreply.github.com,GitHub,noreply@github.com,2022-03-22 13:07:09+01:00,-3600,2022-03-22 13:07:09+01:00,-3600,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,152,152,3,,,
+adbc00baa51ed0ce7efd16d574ed9e0072adb524,"Initial commit
+
+Originally from the Deviance in Art project, this has been repurposed to be more independent and better documented.",qubixes,44498096+qubixes@users.noreply.github.com,GitHub,noreply@github.com,2022-04-13 17:10:08+02:00,-7200,2022-04-13 17:10:08+02:00,-7200,True,False,"['.gitignore', 'README.md', '__init__.py', 'base.py', 'googleart.py', 'wikiart.py', 'interactive.ipynb', 'requirements.txt', 'setup.py']",['0e11ed75f95bc08f250a327eae7b1d6594c3ce63'],2,665,667,9,0.75,0.9554794520547946,0.6438356164383562
+f8c609b03d2f9e9f2198d56632a5685fa20baf77,Update README with better name for GoogleArt,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 11:11:27+02:00,-7200,2022-05-16 11:11:27+02:00,-7200,True,False,['README.md'],['adbc00baa51ed0ce7efd16d574ed9e0072adb524'],2,2,4,1,,,
+c37217f47c2414890b7b489b90d99ddd621ba648,Add contact details,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 11:17:31+02:00,-7200,2022-05-16 11:17:31+02:00,-7200,True,False,['README.md'],['f8c609b03d2f9e9f2198d56632a5685fa20baf77'],0,11,11,1,,,
+209cab4d4616ab0e2a00bf0a88b25ecf89c183ef,Add SoDa logo,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 11:20:16+02:00,-7200,2022-05-16 11:20:16+02:00,-7200,True,False,['soda_logo.png'],['c37217f47c2414890b7b489b90d99ddd621ba648'],0,0,0,1,,,
+8916c61705b3275b1441d544a3d7022dcce3ccfa,Fix logo URL,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 11:20:59+02:00,-7200,2022-05-16 11:20:59+02:00,-7200,True,False,['README.md'],['209cab4d4616ab0e2a00bf0a88b25ecf89c183ef'],1,1,2,1,,,
+9b36f1ca101eecf39d0b76eac1f36c1cc36aff62,Minor styling issue,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 11:36:51+02:00,-7200,2022-05-16 11:36:51+02:00,-7200,True,False,['README.md'],['8916c61705b3275b1441d544a3d7022dcce3ccfa'],1,3,4,1,,,
+2146959f8a085c713e8938a16c297d1319faee36,Create pylint action,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 11:51:28+02:00,-7200,2022-05-16 11:51:28+02:00,-7200,True,False,['pylint.yml'],['9b36f1ca101eecf39d0b76eac1f36c1cc36aff62'],0,23,23,1,,,
+0fb63c9212b38ba84c73ae319a94f46fb52fb926,Add pylint to PRs,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 11:52:15+02:00,-7200,2022-05-16 11:52:15+02:00,-7200,True,False,['pylint.yml'],['2146959f8a085c713e8938a16c297d1319faee36'],1,1,2,1,,,
+955f6f744064bc6f1effe07b1e5d58887f05649e,Install dependencies for pylint action,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 11:57:53+02:00,-7200,2022-05-16 11:57:53+02:00,-7200,True,False,['pylint.yml'],['0fb63c9212b38ba84c73ae319a94f46fb52fb926'],0,1,1,1,,,
+d4c3530ce4e2720dbee4df885fe78a27ed070689,Remove numpy dependency (#3),Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 12:06:40+02:00,-7200,2022-05-16 12:06:40+02:00,-7200,True,False,"['googleart.py', 'setup.py']",['955f6f744064bc6f1effe07b1e5d58887f05649e'],4,3,7,2,,,
+9a8d4c1f9a56e65d7b0aaa3b8fe207e24e0dbe63,Fix some indentation issues with code example in README,Jonathan de Bruin,jonathandebruinos@gmail.com,Jonathan de Bruin,jonathandebruinos@gmail.com,2022-05-16 12:14:27+02:00,-7200,2022-05-16 12:14:36+02:00,-7200,True,False,['README.md'],['d4c3530ce4e2720dbee4df885fe78a27ed070689'],21,55,76,1,,,
+e41d86522e8deb21f3efe10bab7480c271e5e048,Add import,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 12:15:30+02:00,-7200,2022-05-16 12:15:30+02:00,-7200,True,False,['README.md'],['9a8d4c1f9a56e65d7b0aaa3b8fe207e24e0dbe63'],1,2,3,1,,,
+2c42e60b3cc03117b5d3dd954483adb885b0105e,Add import,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 12:16:46+02:00,-7200,2022-05-16 12:16:46+02:00,-7200,True,False,['README.md'],['e41d86522e8deb21f3efe10bab7480c271e5e048'],0,2,2,1,,,
+8aa9ab5605d1b200618c3198ffbf17f2e6f2d7eb,Update README.md,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-05-16 13:45:09+02:00,-7200,2022-05-16 13:45:09+02:00,-7200,True,False,['README.md'],['2c42e60b3cc03117b5d3dd954483adb885b0105e'],1,1,2,1,,,
+d7dde47879b801d12eb96bd5077ff70b8e35db55,Fix styling PEP8 and PEP257,Jonathan de Bruin,jonathandebruinos@gmail.com,GitHub,noreply@github.com,2022-06-09 14:03:19+02:00,-7200,2022-06-09 14:03:19+02:00,-7200,True,False,"['pylint.yml', '.pylintrc', '__init__.py', 'base.py', 'googleart.py', 'wikiart.py', 'setup.py']",['8aa9ab5605d1b200618c3198ffbf17f2e6f2d7eb'],74,176,250,7,0.3333333333333333,0.0,0.3333333333333333
+2c113de3883ff4afacc11dc41b4a6fbfec0dca8a,"allow missing ""\n"" in the api file",Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-09-30 14:08:15+02:00,-7200,2022-09-30 14:08:15+02:00,-7200,True,False,['wikiart.py'],['d7dde47879b801d12eb96bd5077ff70b8e35db55'],1,1,2,1,,,
+1367d31f8b995600321e1a4674f304e79a96bdef,"Add timeout to WikiArtScraper (#8)
+
+Co-authored-by: Raoul Schram <r.d.schram@uu.nl>",qubixes,44498096+qubixes@users.noreply.github.com,GitHub,noreply@github.com,2022-10-03 09:41:12+02:00,-7200,2022-10-03 09:41:12+02:00,-7200,True,False,['wikiart.py'],['2c113de3883ff4afacc11dc41b4a6fbfec0dca8a'],5,7,12,1,1.0,1.0,0.5
+ec0629ee9c93fa0a3991681c3e668038951092e1,"Updated documentaton and allow geckodriver's path to be specified directly (#7)
+
+* update documentation
+
+* user can specify geckodriver path directly
+
+* Create directory if it doesn't exist
+
+Also remove GoogleArts picture.
+
+* Addition to previous commit
+
+Co-authored-by: Raoul Schram <r.d.schram@uu.nl>",Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-03 09:42:08+02:00,-7200,2022-10-03 09:42:08+02:00,-7200,True,False,"['README.md', 'googleart.py', 'example_artscraper.ipynb', 'interactive.ipynb']",['1367d31f8b995600321e1a4674f304e79a96bdef'],100,240,340,4,,,
+187de7b33a323d8f0d87d64ff1d1cf509fc60eb8,"updated order or decorators (#6)
+
+Apparently it matters (it was giving me error unless @property goes first)",Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-03 09:42:28+02:00,-7200,2022-10-03 09:42:28+02:00,-7200,True,False,['base.py'],['ec0629ee9c93fa0a3991681c3e668038951092e1'],1,1,2,1,,,
+ed01db9140759199697a4e9e372ea1d0c1011e7d,Update googleart.py,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-03 09:44:48+02:00,-7200,2022-10-03 09:44:48+02:00,-7200,True,False,['googleart.py'],['187de7b33a323d8f0d87d64ff1d1cf509fc60eb8'],1,2,3,1,1.0,1.0,0.0
+907edf9c206ebc6d02c444564a94bdf938568f19,setup pip,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,2022-10-04 13:35:54+02:00,-7200,2022-10-04 13:35:54+02:00,-7200,True,False,['setup.cfg'],['ed01db9140759199697a4e9e372ea1d0c1011e7d'],0,3,3,1,,,
+12f67654e66d48f5aa626bc90d83d26ff7898f9f,action to publish releases to pypi / testpypi,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 13:45:32+02:00,-7200,2022-10-04 13:45:32+02:00,-7200,True,False,['python-publish.yml'],['907edf9c206ebc6d02c444564a94bdf938568f19'],0,44,44,1,,,
+6e6194a9b181fd53ae5209f4b0fff8260c4598de,self.timeout is needed by _new_session,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 14:16:05+02:00,-7200,2022-10-04 14:16:05+02:00,-7200,True,False,['wikiart.py'],['12f67654e66d48f5aa626bc90d83d26ff7898f9f'],3,5,8,1,,,
+6712fc49f99d04aea80963a0b7aeb6ba0c09edd6,fix lynt,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 14:19:09+02:00,-7200,2022-10-04 14:19:09+02:00,-7200,True,False,['wikiart.py'],['6e6194a9b181fd53ae5209f4b0fff8260c4598de'],3,0,3,1,,,
+a1868738f512973384ed33e2fffeabf45e766d9f,fix tabs lynt,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 14:20:27+02:00,-7200,2022-10-04 14:20:27+02:00,-7200,True,False,['wikiart.py'],['6712fc49f99d04aea80963a0b7aeb6ba0c09edd6'],2,2,4,1,,,
+62a74e2920ee05c1dcaef19028c4997bfeb3cb8f,update setup description pypi,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 14:26:43+02:00,-7200,2022-10-04 14:26:43+02:00,-7200,True,False,['setup.py'],['a1868738f512973384ed33e2fffeabf45e766d9f'],1,5,6,1,,,
+4a7237fc75b9ef8c31b7bd8bcbcc2e14e6d079e5,Update setup.py,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 14:27:00+02:00,-7200,2022-10-04 14:27:00+02:00,-7200,True,False,['setup.py'],['62a74e2920ee05c1dcaef19028c4997bfeb3cb8f'],1,1,2,1,,,
+f1f8bbcbb10100ecf53ceeca30e302a8a7032fa7,Update setup.py,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 14:29:22+02:00,-7200,2022-10-04 14:29:22+02:00,-7200,True,False,['setup.py'],['4a7237fc75b9ef8c31b7bd8bcbcc2e14e6d079e5'],0,4,4,1,1.0,1.0,1.0
+e8e3fdb505c46f3cc6efde3422170900e04c9cc9,Update setup.py,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 14:30:11+02:00,-7200,2022-10-04 14:30:11+02:00,-7200,True,False,['setup.py'],['f1f8bbcbb10100ecf53ceeca30e302a8a7032fa7'],1,1,2,1,,,
+ee9e894d31969b6a09688c24cf404c29e27a132e,Update setup.py,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 14:41:56+02:00,-7200,2022-10-04 14:41:56+02:00,-7200,True,False,['setup.py'],['e8e3fdb505c46f3cc6efde3422170900e04c9cc9'],5,1,6,1,0.0,0.0,0.0
+eb5f148dbf02b636dcdc2391fe489ab8f146b370,Update python-publish.yml,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 14:47:58+02:00,-7200,2022-10-04 14:47:58+02:00,-7200,True,False,['python-publish.yml'],['ee9e894d31969b6a09688c24cf404c29e27a132e'],1,1,2,1,,,
+e72351188e7c7589ed2487de9574dce9fdf3113a,Update setup.py,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 15:04:08+02:00,-7200,2022-10-04 15:04:08+02:00,-7200,True,False,['setup.py'],['eb5f148dbf02b636dcdc2391fe489ab8f146b370'],1,5,6,1,,,
+b5315337234bd085b952f8803389afbe1d8f438c,Update setup.py,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 15:07:31+02:00,-7200,2022-10-04 15:07:31+02:00,-7200,True,False,['setup.py'],['e72351188e7c7589ed2487de9574dce9fdf3113a'],5,1,6,1,,,
+6a9bf19bb78f1924ea956c6c6bb5188dd74ce3a4,Update python-publish.yml,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 15:10:57+02:00,-7200,2022-10-04 15:10:57+02:00,-7200,True,False,['python-publish.yml'],['b5315337234bd085b952f8803389afbe1d8f438c'],1,1,2,1,,,
+0d393a6667823ab2d765d54a1551bfaf612af786,Update setup.py,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 15:12:24+02:00,-7200,2022-10-04 15:12:24+02:00,-7200,True,False,['setup.py'],['6a9bf19bb78f1924ea956c6c6bb5188dd74ce3a4'],3,0,3,1,,,
+1964189cd4faa1ad2fc973b4a9efda533aa0858e,Update setup.py,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-04 15:15:59+02:00,-7200,2022-10-04 15:15:59+02:00,-7200,True,False,['setup.py'],['0d393a6667823ab2d765d54a1551bfaf612af786'],0,3,3,1,,,
+02eef325b0124a330cfd574cd96f090b8e67d0f5,Update README.md,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-10-06 09:55:43+02:00,-7200,2022-10-06 09:55:43+02:00,-7200,True,False,['README.md'],['1964189cd4faa1ad2fc973b4a9efda533aa0858e'],0,8,8,1,,,
+2317921481902ed2ef13f233be692621ca78ebdc,Create CONTRIBUTING.md,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-12-01 16:43:53+01:00,-3600,2022-12-01 16:43:53+01:00,-3600,True,False,['CONTRIBUTING.md'],['02eef325b0124a330cfd574cd96f090b8e67d0f5'],0,29,29,1,,,
+c880ec9ff55f2c405c3840a327b464ba802a5b22,update readme with contributing info,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-12-01 16:44:40+01:00,-3600,2022-12-01 16:44:40+01:00,-3600,True,False,['README.md'],['2317921481902ed2ef13f233be692621ca78ebdc'],0,10,10,1,,,
+63a9d1871b33de5e828df677343dc615658e2adc,remove links to osmenrich,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2022-12-01 16:45:13+01:00,-3600,2022-12-01 16:45:13+01:00,-3600,True,False,['CONTRIBUTING.md'],['c880ec9ff55f2c405c3840a327b464ba802a5b22'],2,2,4,1,,,
+0e48508425f1825a006b05d8460a9596ffd058fe,Add method to extract artist links from googlearts,Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-03-29 15:57:06+02:00,-7200,2023-03-29 15:57:06+02:00,-7200,True,False,"['__init__.py', 'artist_links.py', 'example_artist_links.ipynb']",['63a9d1871b33de5e828df677343dc615658e2adc'],2,112,114,3,0.0,1.0,1.0
+6879a12bc7326f8a2d428d8af7327a567cd238e8,Add function to extract an artist's works,Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-04-03 16:04:07+02:00,-7200,2023-04-03 16:04:07+02:00,-7200,True,False,"['__init__.py', 'artist_works_metadata.py', 'example_artist_links.ipynb', 'example_artist_works_metadata.ipynb']",['0e48508425f1825a006b05d8460a9596ffd058fe'],5,175,180,4,0.0,1.0,1.0
+8deb511f8b6a5ab2d3792d9695fb1b01a1ac22f4,Add function to extract the description of an artist from Wikipedia,Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-04-04 14:45:30+02:00,-7200,2023-04-04 14:45:30+02:00,-7200,True,False,"['__init__.py', 'artist_works_metadata.py', 'example_artist_works_metadata.ipynb', 'requirements.txt', 'setup.py']",['6879a12bc7326f8a2d428d8af7327a567cd238e8'],6,103,109,5,1.0,1.0,1.0
+7f3217a2bec85f761f18214aa7b1510323e30f95,Extract metadata from wikidata,Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-04-17 11:28:24+02:00,-7200,2023-04-17 11:28:24+02:00,-7200,True,False,"['__init__.py', 'artist_works_metadata.py', 'example_artist_works_metadata.ipynb']",['8deb511f8b6a5ab2d3792d9695fb1b01a1ac22f4'],11,240,251,3,0.5,1.0,1.0
+7f0760778aa87379128fd46de536b0dd45334ce9,"Feedback incorporated (#13)
+
+* add function to extract metadata from wikidata
+
+* add functions for extracting metadata from wikidata
+
+* get artist metadata
+
+* SPARQL query to fetch metadata from wikidata
+
+* fix pylint error about missing timeout argument
+
+* remove txt file with SPARQL query
+
+* add SPARQL query as global string
+
+* display metadata with unrounded coordinates
+
+* Update artscraper/__init__.py
+
+Co-authored-by: qubixes <44498096+qubixes@users.noreply.github.com>
+
+* make SPARQL query more readable
+
+* update examples notebook
+
+* rename files
+
+* change from functions to class
+
+* describe how to obtain all artworks
+
+* transform from functions to class
+
+* illustrate how to collect all artworks
+
+* put random wait time function in separate file
+
+* remove old example notebooks
+
+---------
+
+Co-authored-by: ´Modhurita <´modhurita@gmail.com´>
+Co-authored-by: qubixes <44498096+qubixes@users.noreply.github.com>",Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-05-08 11:13:31+02:00,-7200,2023-05-08 11:13:31+02:00,-7200,True,False,"['README.md', '__init__.py', 'artist_works_metadata.py', 'find_artists.py', 'find_artworks.py', 'functions.py', 'googleart.py', 'example_artist_links.ipynb', 'example_artist_works_metadata.ipynb', 'example_collect_all_artworks.ipynb']",['7f3217a2bec85f761f18214aa7b1510323e30f95'],601,883,1484,10,0.13,0.74,0.04
+b09d3994860a3bfa83e58e155ec656a7b57ce2a7,Update example_collect_all_artworks.ipynb,Javier Garcia-Bernardo,j.garciabernardo@uu.nl,GitHub,noreply@github.com,2023-05-08 11:47:38+02:00,-7200,2023-05-08 11:47:38+02:00,-7200,True,False,['example_collect_all_artworks.ipynb'],['7f0760778aa87379128fd46de536b0dd45334ce9'],12,1,13,1,,,
+fc183347a1ff091e60cabd93284474edb865b06f,"Resolves issue #14 (#17)
+
+* simplify data extraction via SPARQL query
+
+* allow _init__ to have more than 5 parameters
+
+* use different artist for illustration
+
+---------
+
+Co-authored-by: modhurita <´modhurita@gmail.com´>",Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-05-25 20:32:07+02:00,-7200,2023-05-25 20:32:07+02:00,-7200,True,False,"['find_artworks.py', 'example_collect_all_artworks.ipynb']",['b09d3994860a3bfa83e58e155ec656a7b57ce2a7'],148,126,274,2,1.0,0.0,0.0
+119dbad11d4759eefd029eb749bef2d3b6bfd211,Improve package installation instructions,Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-05-30 10:10:27+02:00,-7200,2023-05-30 10:10:27+02:00,-7200,True,False,['README.md'],['fc183347a1ff091e60cabd93284474edb865b06f'],1,1,2,1,,,
+e36c9d09c1c0fb6d72fb8923b4f9546c6f37aaf8,Update release version in setup.py,modhurita,´modhurita@gmail.com´,modhurita,´modhurita@gmail.com´,2023-05-30 10:34:25+02:00,-7200,2023-05-30 10:34:25+02:00,-7200,True,False,['setup.py'],['119dbad11d4759eefd029eb749bef2d3b6bfd211'],1,1,2,1,,,
+5a832f151b63f575e8274afab9965166de0da668,"Correct wikidata ID for date of death property in SPARQL query (#18)
+
+correct wikidata ID for date of death property",Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-07-03 11:15:36+02:00,-7200,2023-07-03 11:15:36+02:00,-7200,True,False,['find_artworks.py'],['e36c9d09c1c0fb6d72fb8923b4f9546c6f37aaf8'],1,1,2,1,,,
+067a7e3165b24b502d3c24c2ef116beb27ae6e8a,"Fix SPARQL query timeout problems
+
+And other problems.",Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-07-10 14:00:48+02:00,-7200,2023-07-10 14:00:48+02:00,-7200,True,False,"['__init__.py', 'base.py', 'find_artists.py', 'find_artworks.py', 'functions.py', 'googleart.py', 'example_collect_all_artworks_error_handling_retrying.ipynb', 'example_collect_all_artworks_url_decoding.ipynb', 'setup.py']",['5a832f151b63f575e8274afab9965166de0da668'],35,1077,1112,9,1.0,1.0,0.4583333333333333
+b55100cb9a2b2cb3717bbd737f1b9e00cddaa507,"Wait after right arrow is clicked (not before) (#23)
+
+wait after clicking right arrow, not before",Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-07-10 16:28:17+02:00,-7200,2023-07-10 16:28:17+02:00,-7200,True,False,['find_artworks.py'],['067a7e3165b24b502d3c24c2ef116beb27ae6e8a'],2,2,4,1,,,
+b6a9f470e57204313ea98926f0ec8f320f0d8d95,We might need to use driver.quit() (#24),qubixes,44498096+qubixes@users.noreply.github.com,GitHub,noreply@github.com,2023-09-07 13:28:06+02:00,-7200,2023-09-07 13:28:06+02:00,-7200,True,False,['googleart.py'],['b55100cb9a2b2cb3717bbd737f1b9e00cddaa507'],1,1,2,1,,,
+05ccad351e6f0f5cd9d31554f0a9f7ddeda5ef13,fix wikipedia-related issues (#27),Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-09-11 11:53:40+02:00,-7200,2023-09-11 11:53:40+02:00,-7200,True,False,"['find_artworks.py', 'example_wikipedia_issues_resolved.ipynb']",['b6a9f470e57204313ea98926f0ec8f320f0d8d95'],35,422,457,2,0.39285714285714285,1.0,1.0
+fc13ed6948b88d87075cc1bfb0803424e6b41bfc,"Fixed filename too long and empty image file errors, removed redundant example notebooks (#29)
+
+* fix filename-too-long issue
+
+* check for empty artwork file
+
+* remove redundant notebooks
+
+* add SHA1 hash to directory names for long urls
+
+* change filename length limit for truncation",Modhurita Mitra,3924929+modhurita@users.noreply.github.com,GitHub,noreply@github.com,2023-11-07 14:11:30+01:00,-3600,2023-11-07 14:11:30+01:00,-3600,True,False,"['googleart.py', 'example_collect_all_artworks.ipynb', 'example_collect_all_artworks_error_handling_retrying.ipynb', 'example_collect_all_artworks_url_decoding.ipynb', 'example_wikipedia_issues_resolved.ipynb']",['05ccad351e6f0f5cd9d31554f0a9f7ddeda5ef13'],1385,87,1472,5,0.0,0.9166666666666666,1.0

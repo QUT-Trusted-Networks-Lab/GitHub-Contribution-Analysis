@@ -1,0 +1,527 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+1e3e988479f12760d017aaac64e2f0f1419eff48,"Importacio inicial de autotest
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@1 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-16 21:07:53+00:00,0,2014-04-16 21:07:53+00:00,0,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",[],0,30,30,3,,,
+73b28759306c433d64da729e67e40daa9ec49dd7,"Es crea un esquelet funcional per poder experimentar.
+
+Algunes parts retornen valors fixats (el walker retorna sempre la
+mateixa llista d'arxius i la configuració també està fixada). S'aniran
+implementant sobre la marxa segons es vegin el que es necessita.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@2 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-18 20:30:48+00:00,0,2014-04-18 20:30:48+00:00,0,True,False,"['config.py', 'main.py', 'reactor.py', 'runner.py', 'walker.py']",['1e3e988479f12760d017aaac64e2f0f1419eff48'],0,97,97,5,1.0,1.0,1.0
+6c7c133ea46d46be22ff9238b8546b3532565535,"S'elimina l'ús de codis ANSI en favor de la llibreria 'blessings'.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@3 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-18 20:38:08+00:00,0,2014-04-18 20:38:08+00:00,0,True,False,"['reactor.py', 'setup.py']",['73b28759306c433d64da729e67e40daa9ec49dd7'],6,9,15,2,1.0,1.0,1.0
+610575218735d12a07a576c4f22523057f44dd82,"Es defineix un entry-point de tipus 'console_script' per automatitzar
+la generació de l'executable.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@4 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-19 17:28:57+00:00,0,2014-04-19 17:28:57+00:00,0,True,False,['setup.py'],['6c7c133ea46d46be22ff9238b8546b3532565535'],0,2,2,1,,,
+db3f44ba6a5af237966bf2906a21eb9428472156,"En les proves fetes en el propi 'autotest' s'ha detectat que resulta
+dificil determinar si el script s'ha executat (la sortida generada per
+execucions consecutives tendeix a ser la mateixa).
+
+Per mirar de resoldre-ho s'ha afegit un comptador d'execució i la data
+i hora a la ""barra"" informativa.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@5 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-19 17:45:31+00:00,0,2014-04-19 17:45:31+00:00,0,True,False,['reactor.py'],['610575218735d12a07a576c4f22523057f44dd82'],4,22,26,1,1.0,1.0,1.0
+60e42961ceccabfa1bf7a2d48d2343071ea501b3,"S'implementa el processament de l'arxiu de configuració:
+
+* s'afegeix el mòdul 'utils.py' que defineix el simbol 'NoDefault' i
+  la classe 'TypedObject'. El primer s'utilitza com un marcador
+  alternatiu a 'None' i la segona utilitza un esquema per determina
+  quines opcions/valors son acceptables.
+
+* en 'config.py' es defineix un esquema senzill i dos funcions per
+  llegir i parsejar (privada) la configuració.
+
+* s'afegeixen jocs de proves per testejar la funcionalitat.
+
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@6 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-19 17:55:39+00:00,0,2014-04-19 17:55:39+00:00,0,True,False,"['config.py', 'utils.py', 'test_config.py', 'test_typed_object.py']",['db3f44ba6a5af237966bf2906a21eb9428472156'],9,293,302,4,1.0,1.0,0.9404761904761905
+d002390b7519e3e96bb4670f8dc3e2e9ea0f0e56,"Es modifica la classe 'TypedObject' per permetre que els validadors de
+les diferents opcions puguin alterar el valor que reben com
+argument. Açò simplificarà definir schemes més complexos en els que un
+validador valida i converteix un objecte JSON en un objecte python.
+
+S'ajusten els validados utilitzats en els tests. S'afegeix un nou test
+a 'TestSetAttr' per verificar que l'opció rep el valor retornat pel
+validador, no el valor original. Cal ampliar l'esquema utilitzat en
+aquest test.
+
+Al fer aquests canvis s'ha detectat un error en la implementació del
+mètode '__setattr__' de 'TypedObject': el valor s'emmagatzema en el
+diccionari '__dict__' de l'objecte quan s'hauria de fer en
+'_values'. Es corregeix i s'afegeix un test per comprovar-ho.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@7 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-19 21:41:09+00:00,0,2014-04-19 21:41:09+00:00,0,True,False,"['utils.py', 'test_config.py', 'test_typed_object.py']",['60e42961ceccabfa1bf7a2d48d2343071ea501b3'],3,16,19,3,1.0,1.0,1.0
+377c3c394a80fec39ba73e633aba2db4cd0af011,"S'afegeix el mòdul 'validators.py' per facilitar definir l'esquema de
+l'arxiu de configuració.
+
+S'inclouen jocs de proves per verificar el funcionament.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@8 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-19 23:06:07+00:00,0,2014-04-19 23:06:07+00:00,0,True,False,"['validators.py', 'test_validators.py']",['d002390b7519e3e96bb4670f8dc3e2e9ea0f0e56'],0,167,167,2,1.0,1.0,1.0
+2f5a225be6e10a4bdf30e1703cf80d055d02d8b8,"Es defineix una nova factoria de validadors per composar (executar en
+seqüència) validadors.
+
+Es defineix el validador 'is_regex'.
+
+S'afegeixen tests per verificar el funcionament.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@9 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 15:25:33+00:00,0,2014-04-20 15:25:33+00:00,0,True,False,"['validators.py', 'test_validators.py']",['377c3c394a80fec39ba73e633aba2db4cd0af011'],0,41,41,2,1.0,1.0,1.0
+80861752722d5be0090ab3d9628e9d9dbc51576e,"Es corregeix un error en el text del missatge d'una excepció.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@10 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 16:08:26+00:00,0,2014-04-20 16:08:26+00:00,0,True,False,['utils.py'],['2f5a225be6e10a4bdf30e1703cf80d055d02d8b8'],1,1,2,1,,,
+9569dae8e461305f5661b02795d0249f7f7e9e7f,"S'afegeix el mòdul 'filters' per definir filtres i factories que
+abstrauen la idea ""estic/no-estic interessat en cert event"". Açò
+permet factoritzar aquest codi fora del gestor d'events, simplificant
+la seva implementació.
+
+S'afegeixen els corresponents tests.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@11 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 17:42:02+00:00,0,2014-04-20 17:42:02+00:00,0,True,False,"['filters.py', 'test_filters.py']",['80861752722d5be0090ab3d9628e9d9dbc51576e'],0,245,245,2,1.0,1.0,0.8905109489051095
+47705d2fc0153e0245aaf2c00cc765003f0f79c2,"Es corregeix un error en el validador 'is_regex': només comprova que
+la regex concordi en un prefix del valor. Es modifica afegint
+explicitament un '$' al final de l'expressió regular per garantir que
+concorda tot el valor.
+
+S'inclou un test per validar-ho.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@12 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 17:58:14+00:00,0,2014-04-20 17:58:14+00:00,0,True,False,"['validators.py', 'test_validators.py']",['9569dae8e461305f5661b02795d0249f7f7e9e7f'],1,5,6,2,1.0,1.0,1.0
+055e830165c648be90924d900aa858d90c0695c8,"Al fer les proves s'ha detectat que les eines emprades en el
+desenvolupament poden generar arxius intermedis (p.e. els editors),
+manipular arxius auxiliars (el control de revisions) etc. provocant
+falsos *events interessants*.
+
+Per mirar d'evitar-ho en lo possible s'ha afegit una opció
+'global_ignores' a la factoria 'simple_event_filter_factory' que
+permet especificat patrons a ignorar globalment.
+
+S'afegeix un test per verificar el funcionament.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@13 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 18:20:01+00:00,0,2014-04-20 18:20:01+00:00,0,True,False,"['filters.py', 'test_filters.py']",['47705d2fc0153e0245aaf2c00cc765003f0f79c2'],1,19,20,2,1.0,1.0,0.5833333333333334
+f4da5f9f2b6df72901e9d08eff1df1cfc4bb96e0,"Tal com ha evolucionat el programa (i la meva comprensió del
+funcionament de 'pyinotify') el mòdul 'walker.py' no és
+necessari. S'elimina.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@14 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 18:35:02+00:00,0,2014-04-20 18:35:02+00:00,0,True,False,['walker.py'],['055e830165c648be90924d900aa858d90c0695c8'],10,0,10,1,0.0,0.0,0.0
+5c22b2a21b94d185db1b4e88d0a38d7906577b42,"Es millora la definició de l'esquema de l'arxiu de configuració:
+aquesta versió permet especificar una llista de *watches* a més d'una
+llista d'exclusió global.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@15 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 18:43:13+00:00,0,2014-04-20 18:43:13+00:00,0,True,False,['config.py'],['f4da5f9f2b6df72901e9d08eff1df1cfc4bb96e0'],2,12,14,1,,,
+46c60245d5a40c5b40dfb83a978a099bab6ddace,"S'ajusta el mòdul 'main.py' als canvis fets en les últimes revisions.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@16 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 19:00:24+00:00,0,2014-04-20 19:00:24+00:00,0,True,False,['main.py'],['5c22b2a21b94d185db1b4e88d0a38d7906577b42'],6,26,32,1,0.0,1.0,0.8421052631578947
+d5a820d0f3b2da18e24efbbec4e01cfa90f75ab5,"Es canvia el valor per defecte de les opcions 'recurse' i
+'auto_add'. Sembla més pràctic que sigui 'True' per defecte.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@17 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 19:02:07+00:00,0,2014-04-20 19:02:07+00:00,0,True,False,['config.py'],['46c60245d5a40c5b40dfb83a978a099bab6ddace'],2,2,4,1,,,
+a3c8b2645ea0fb15b7acc642d0da854735e906f5,"S'afegeix un README amb una mini guia.
+
+S'afegeix l'arxiu 'autotest.cfg' al repositori.
+
+S'afegeix la dependència de 'pyinotify' a 'setup.py'.
+
+Altres canvis menors a 'setup.py'.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@18 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 21:20:26+00:00,0,2014-04-20 21:20:26+00:00,0,True,False,"['README.rst', 'autotest.cfg', 'setup.py']",['d5a820d0f3b2da18e24efbbec4e01cfa90f75ab5'],5,153,158,3,,,
+6b202a25454315c75c4ecb67c8773d8215fff12f,"Al fer proves amb python 2.6 he detectat que l'objecte resultant de
+'validators.is_regex()' (el resultat de 're.compile()') no té un
+atribut '__class__'. Açò fa que falli un dels tests.
+
+Per evitar problemes es comprova que el resultat té un métode 'match'
+(que al cap i a la fi és el que fa servir la resta del codi).
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@19 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 22:12:20+00:00,0,2014-04-20 22:12:20+00:00,0,True,False,['test_validators.py'],['a3c8b2645ea0fb15b7acc642d0da854735e906f5'],2,2,4,1,,,
+9c7391884b581a40323c081fe62c25dea456dc74,"Al fer proves amb python 2.6 s'ha detectat que el mòdul 'subprocess'
+d'aquesta versió no defineix la funció 'check_output'. Es backporta
+(amb modificacions menors) de la versió 2.7 i s'afegeix un test per
+comprovar que el 'runner' funciona.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@20 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 22:33:15+00:00,0,2014-04-20 22:33:15+00:00,0,True,False,"['runner.py', 'test_runner.py']",['6b202a25454315c75c4ecb67c8773d8215fff12f'],1,43,44,2,1.0,1.0,1.0
+a9fa4a09e689ec6d7652b5f98dd6ca135f5c992b,"Python 2.6 no suporta 'dictionary comprehension'. Es substitueixen per
+bucles explicits.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@21 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 22:37:01+00:00,0,2014-04-20 22:37:01+00:00,0,True,False,['utils.py'],['9c7391884b581a40323c081fe62c25dea456dc74'],2,7,9,1,1.0,1.0,1.0
+54f88ec8a8505187bc2585c0b7b45a595cb1b11b,"S'afegeix l'arxiu 'tox.ini' per automatitzar l'execució dels test amb
+les versions de python 2.6 i 2.7.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@22 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-20 22:38:23+00:00,0,2014-04-20 22:38:23+00:00,0,True,False,['tox.ini'],['a9fa4a09e689ec6d7652b5f98dd6ca135f5c992b'],0,13,13,1,,,
+099b28c17666adecf4f49746e6d432018eaac009,"Canvis per fer el codi compatible amb python 3.3 i 3.4. És la meva
+primera experiència amb python 3.x i és molt possible que m'haja
+descuidat algun detall:
+
+* README.rst: Es documenta la compatiblitat amb les version de python.
+
+* autotest/config.py:
+
+  * en python 3.x l'atribut 'message' de les excepcions ha
+    desaparegut. En el seu lloc s'utilitza 'args[0]'.
+
+  * es canvia 'file()' per 'open()'
+
+* autotest/reactor.py: s'activa la funció 'print' per python 2.x
+
+* autotest/runner.py: el tipus del valor retornat en 3.x per la funció
+  'subprocess.check_output' és byte i al imprimir-lo apareix la seva
+  'repr' (no s'imprimeix bé). Segons la documentació afegint el
+  paràmetre 'universal_newlines' es converteix a unicode (i
+  s'imprimeix bé).
+
+* autotest/validators.py:
+
+  * en 3.x 'map' retorna un iterador y el codi espera una llista. Es
+    canvia per una 'list comprehension'.
+
+  * s'implementen els validadors 'is_str' i 'is_unicode' en termes de
+    'six' per fer-los compatibles amb 2.x i 3.x. En el cas de
+    'is_regex' s'implementa en termes d'altres validadors.
+
+* setup.py:
+
+  * es canvia 'file()' per 'open()'
+
+  * s'afegeixen 'classifiers' per les versions de python suportades
+
+  * s'afegeix la dependència de 'six' per la compatibilitat 2.x/3.x
+
+* tests/test_config.py
+* tests/test_validators.py
+
+  s'especifica explicitament el tipus d'algunes cadenes (str 2.x, byte
+  3.x)
+
+* tox.ini: s'afegeixen el entorns py33 i py34
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@23 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 10:35:18+00:00,0,2014-04-21 10:35:18+00:00,0,True,False,"['README.rst', 'config.py', 'reactor.py', 'runner.py', 'validators.py', 'setup.py', 'test_config.py', 'test_validators.py', 'tox.ini']",['54f88ec8a8505187bc2585c0b7b45a595cb1b11b'],19,38,57,9,1.0,1.0,1.0
+cbb1732e40605bad0dd6b50e37e76c57400aed04,"S'afegeix un 'TODO' al repositori.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@24 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 10:36:33+00:00,0,2014-04-21 10:36:33+00:00,0,True,False,['TODO'],['099b28c17666adecf4f49746e6d432018eaac009'],0,9,9,1,,,
+511fca511628739ede4d5788032eefac117e89c2,"S'afegeix un arxiu de llicència. S'actualitza el TODO.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@25 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 10:40:50+00:00,0,2014-04-21 10:40:50+00:00,0,True,False,"['LICENSE', 'TODO']",['cbb1732e40605bad0dd6b50e37e76c57400aed04'],2,674,676,2,,,
+3c5c02b13ecef7630979882ae6297ad42b02bc4d,"'from __future__ import ...' no és un import tradicional, cal que
+aparegui obligatòriament al començament del codi.
+
+Aquest mòdul no era testejat i no s'ha detectat l'error fins que s'ha
+reiniciat el programa. S'afegeix un joc de proves. Cal fer alguns
+canvis al codi de 'reactor.py':
+
+* per simplificar els tests de 'react()' se li afegeix un argument per
+  especificar l'arxiu de sortida ('stdout' per defecte). Es modifiquen
+  els 'print()' per utilitzar aquest arxiu de sortida.
+
+* es mou la creació de la 'Terminal' dins 'react()' per poder
+  passar-li l'arxiu de sortida.
+
+* al executar els tests no existeix una terminal i la seva amplada val
+  'None'. Açò dispara una excepció al intentar calcular l'amplada del
+  camp dins el que centrar el missatge. Es precalcula 'width'
+  comprovant si es tracta d'una tty, en cas negatiu s'utilitza una
+  amplada de 80.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@26 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 11:33:11+00:00,0,2014-04-21 11:33:11+00:00,0,True,False,"['reactor.py', 'test_reactor.py']",['511fca511628739ede4d5788032eefac117e89c2'],9,41,50,2,0.0,1.0,0.0
+52bf3f82ee16cecfb51b8955b00da1b13847ee14,"S'afegeix processament d'opcions de línia d'ordres. Per mantindre al
+compatibilitat amb python 2.6 (i pq. el parser és molt senzill) s'opta
+per 'optparser', encara que estigui *deprecated*.
+
+S'actualitza el TODO.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@27 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 11:45:58+00:00,0,2014-04-21 11:45:58+00:00,0,True,False,"['TODO', 'cmdline.py', 'main.py']",['3c5c02b13ecef7630979882ae6297ad42b02bc4d'],5,22,27,3,0.75,1.0,1.0
+29ea29c4a071b5e7c91e0565b8b0f21478926dea,"Per millorar el rendiment s'afegeix una cache a la classe
+'simple_event_filter_factory'. La idea és que una vegada determinem
+que un arxiu és o no interessant (dispara o no l'execució de la
+comanda), aquest valor no canviarà, seguirà sent o no interessant
+durant la resta de l'execució.
+
+* s'implementa el decorador 'utils.memoize()'.
+
+* s'afegeixen tests per validar-lo
+
+* el mètode 'simple_event_filter_factory.__call__()' delega en un
+  mètode intern memoitzat ('_is_interesting'). Aquest mètode només rep
+  la ruta i nom de l'arxiu.
+
+S'elimina l'entrada del TODO.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@28 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 12:48:02+00:00,0,2014-04-21 12:48:02+00:00,0,True,False,"['TODO', 'filters.py', 'utils.py', 'test_memoize.py']",['52bf3f82ee16cecfb51b8955b00da1b13847ee14'],11,76,87,4,1.0,1.0,0.7884615384615384
+bdba2821bc30941b42650005960da7fffc7d590d,"En el filtre 'simple_event_filter_factory', no trobar el contenidor
+d'un event es considera un error. Açò significaria que estem rebent un
+event per un arxiu ubicat fora dels directoris monitoritzats.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@29 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 12:51:49+00:00,0,2014-04-21 12:51:49+00:00,0,True,False,['filters.py'],['29ea29c4a071b5e7c91e0565b8b0f21478926dea'],4,2,6,1,,,
+4d3fdca3ae5a391f5d18c94f78d43d6e832d2f30,"Fins ara el 'reactor' era executat una vegada el 'runner' havia
+finalitzat. Fàcil de implementar però poc pràctic al executar
+processos lents.
+
+S'ha modificat l'arquitectura de forma que el 'reactor' rep dades
+segons estan disponibles:
+
+* autotest/runner.py: es substitueix 'subprocess.check_output' per
+  l'us directe de 'Popen'. Un bucle llegeix la sortida del procés i
+  l'envia al 'reactor'.
+
+* autotest/reactor.py: es reimplementen els reactors com classes amb
+  els métodes 'start', 'feed' i 'stop'. El runner crida 'start' al
+  començar a executar el procés, 'feed' segons hi han dades
+  disponibles i finalment amb 'stop' informa del codi de sortida.
+
+  Com a prova de concepte s'ha implementat un reactor que preprocessa
+  les dades abans de passar-les a un segon reactor.
+
+* autotest/main.py: s'ajusta la funció 'main' per ensamblar el runner
+  amb el reactor.
+
+S'ajusten els tests.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@30 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 21:31:01+00:00,0,2014-04-21 21:31:01+00:00,0,True,False,"['TODO', 'main.py', 'reactor.py', 'runner.py', 'test_reactor.py', 'test_runner.py']",['bdba2821bc30941b42650005960da7fffc7d590d'],68,219,287,6,0.9887640449438202,1.0,1.0
+a503d32a6611791a5c7f72bc4e63d18060f38f08,"Es simplifica un poc el mètode '__getattr__' de 'TypedObject'.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@31 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 21:50:09+00:00,0,2014-04-21 21:50:09+00:00,0,True,False,['utils.py'],['4d3fdca3ae5a391f5d18c94f78d43d6e832d2f30'],3,1,4,1,0.0,0.0,0.0
+acbc1e44d4d609a2dcd3bb63c87a588f6ee000b9,"S'elimina una entrada del TODO resolta en una revisió anterior.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@32 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 21:59:48+00:00,0,2014-04-21 21:59:48+00:00,0,True,False,['TODO'],['a503d32a6611791a5c7f72bc4e63d18060f38f08'],10,0,10,1,,,
+18aa611616be046b7daf16834fb60b46c94879ae,"S'afegeix un test per verificar que si un event no és exclòs ni inclòs
+per cap watch llavors és exclòs.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@33 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 22:02:09+00:00,0,2014-04-21 22:02:09+00:00,0,True,False,"['TODO', 'test_filters.py']",['acbc1e44d4d609a2dcd3bb63c87a588f6ee000b9'],3,7,10,2,1.0,1.0,1.0
+a3d69638dd329a2c232ebc021b17634f9c64e048,"S'afegeix un test per verificar que el validador construït per la
+classe 'simple_event_filter_factory' dispara una excepció 'ValueError'
+si l'event cau fora de tots els directoris monitoritzats.
+
+No hauria de passar mai, però si passa vull estar assabentat.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@34 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-21 22:16:02+00:00,0,2014-04-21 22:16:02+00:00,0,True,False,['test_filters.py'],['18aa611616be046b7daf16834fb60b46c94879ae'],0,8,8,1,1.0,1.0,1.0
+0006c2b5c3ece7990975847e870518bdf29ae854,"Es renombren els mòduls 'reactor' com 'reporters' i 'filters' com
+'event_filters'. S'ajusten els mòduls afectats.
+
+Que gran és rope per refactoritzar i autotest monitoritzant nosetests
+per verificar ràpidament que tot segueix funcionant!!
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@35 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-22 15:44:33+00:00,0,2014-04-22 15:44:33+00:00,0,True,False,"['event_filters.py', 'main.py', 'reporters.py', 'test_filters.py', 'test_reactor.py']",['a3d69638dd329a2c232ebc021b17634f9c64e048'],12,12,24,5,,,
+f784164a8e72468cf943765753301f5f363d68f5,"Es finalitza el renombrat de mòduls renombrant les classes/funcions i
+ajustant la documentació.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@36 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-22 16:36:00+00:00,0,2014-04-22 16:36:00+00:00,0,True,False,"['main.py', 'reporters.py', 'test_event_filters.py', 'test_reporters.py']",['0006c2b5c3ece7990975847e870518bdf29ae854'],16,20,36,4,,,
+45943334bba8683325ee21c8a49eb15c969d9c09,"S'elimina una entrada del TODO resolta en una revisió anterior.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@37 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-22 17:23:24+00:00,0,2014-04-22 17:23:24+00:00,0,True,False,['TODO'],['f784164a8e72468cf943765753301f5f363d68f5'],3,0,3,1,,,
+c7f64782bc50b2e341c8c18d92a433f1715afdda,"Es documenten els validadors.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@38 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-22 17:23:50+00:00,0,2014-04-22 17:23:50+00:00,0,True,False,['validators.py'],['45943334bba8683325ee21c8a49eb15c969d9c09'],0,44,44,1,,,
+4d819243398c08e0cb9ca1c90049e84532068ea3,"S'elimina una entrada del TODO. Sembla que el problema amb el coverage
+està relacionat d'alguna forma amb els arxius '.pyc'. Recompilant el
+mòdul afectat l'informe mostra el coverage correcte.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@39 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-22 17:33:59+00:00,0,2014-04-22 17:33:59+00:00,0,True,False,['TODO'],['c7f64782bc50b2e341c8c18d92a433f1715afdda'],3,0,3,1,,,
+9b90c19e284ad161a2d2c5a5bdacff48f0a2dedd,"Es resol el problema amb l'amplada de la terminal: per error vaig
+ficar 'is_tty' enlloc de 'is_a_tty'. Per la forma en que està
+dissenyada la classe 'blessings.Terminal' no es disparava cap excepció
+'AttributeError', enlloc d'això retornava 'None'.
+
+S'actualitza el TODO.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@40 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-22 17:38:19+00:00,0,2014-04-22 17:38:19+00:00,0,True,False,"['TODO', 'reporters.py']",['4d819243398c08e0cb9ca1c90049e84532068ea3'],4,1,5,2,,,
+e692c44a08f35499604b984b67f3d3e49849349c,"Primera release (no 'dev').
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@41 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-22 18:20:14+00:00,0,2014-04-22 18:20:14+00:00,0,True,False,['setup.cfg'],['9b90c19e284ad161a2d2c5a5bdacff48f0a2dedd'],2,2,4,1,,,
+f5ec1d33cb87d9bb8842ed15ba6d9183866a3052,"S'afegeix un reporter per facilitar la depuració.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@43 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-23 19:32:47+00:00,0,2014-04-23 19:32:47+00:00,0,True,False,['reporters.py'],['e692c44a08f35499604b984b67f3d3e49849349c'],0,20,20,1,1.0,1.0,1.0
+5de5bc395f9c18064eb08189eb72483b5dd20006,"Es defineixen el validador 'is_float' i la factoria 'all'. S'afegeixen
+tests.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@44 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-23 19:35:23+00:00,0,2014-04-23 19:35:23+00:00,0,True,False,"['validators.py', 'test_validators.py']",['f5ec1d33cb87d9bb8842ed15ba6d9183866a3052'],0,78,78,2,1.0,1.0,1.0
+4727379d32532950c3f0d1e5569f932f838711b8,"S'implementa un filtre per limitar el nombre d'events per
+segon. S'afegeixen tests.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@45 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-24 18:12:00+00:00,0,2014-04-24 18:12:00+00:00,0,True,False,"['TODO', 'autotest.cfg', 'config.py', 'event_filters.py', 'main.py', 'test_event_filters.py']",['5de5bc395f9c18064eb08189eb72483b5dd20006'],3,116,119,6,0.9848484848484849,1.0,0.803030303030303
+00cacec90403c7cfeb1a61b77baf5a0d64a2afbb,"Canvis per compatibilitat amb python 2.6 i 3.x:
+
+* en python 2.6 unittest no defineix 'assertRaisesRegex'. Per 2.6
+  s'utilitza unittest2. S'incorpora com dependència per tox.
+
+* en python 3.x els generados no tenen un mètode 'next()'. Depenent de
+  la funció s'utilitza 'next()' o '__next__()'.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@46 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-24 18:42:01+00:00,0,2014-04-24 18:42:01+00:00,0,True,False,"['test_event_filters.py', 'test_validators.py', 'tox.ini']",['4727379d32532950c3f0d1e5569f932f838711b8'],2,12,14,3,1.0,1.0,1.0
+7d2c742ea5ff8d086baa5abd2d57a420c3b82568,"S'implementa en reporter 'DynamicThrottling' que ajusta dinàmicament
+un throttler en funció de la durada dels tests.
+
+* s'afegeix el mètode 'adjust_delta' a la classe 'throttle_factory'.
+
+* la funció 'make_reporter' es mou al mòdul 'main'. És un detall
+  d'implementació, no una funció genèrica per combinar reporters.
+
+  S'ajusta per incloure el nou reporter i s'ajusta la funció 'main'.
+
+* es defineix el reporter 'Repeater' per combinar reporters. Permet a
+  varis reporters rebre notificacions del runner.
+
+* s'afegeixen tests
+
+* per facilitar els tests s'utilitza el paquet 'mock'. S'afegeix com
+  dependència per tox.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@47 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-25 18:21:04+00:00,0,2014-04-25 18:21:04+00:00,0,True,False,"['event_filters.py', 'main.py', 'reporters.py', 'test_reporters.py', 'tox.ini']",['00cacec90403c7cfeb1a61b77baf5a0d64a2afbb'],4,111,115,5,0.9846153846153847,1.0,0.9384615384615385
+eca8d8ca776ff094a1289a3aae559207f85b215b,"S'incrementa el número de versió.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@48 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-25 18:32:47+00:00,0,2014-04-25 18:32:47+00:00,0,True,False,['setup.py'],['7d2c742ea5ff8d086baa5abd2d57a420c3b82568'],1,1,2,1,,,
+1d2e631ed0b9fa50b865ec9719cd5947f929f78a,"Al anar a registrar el paquet en pypi resulta que ja existeix un
+'autotest'. Per evitar conflictes de noms es converteix en el
+namespace package 'arv.autotest'.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@50 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-25 19:56:50+00:00,0,2014-04-25 19:56:50+00:00,0,True,False,"['__init__.py', '__init__.py', 'cmdline.py', 'config.py', 'event_filters.py', 'main.py', 'reporters.py', 'runner.py', 'utils.py', 'validators.py', 'autotest.cfg', 'setup.py', 'test_config.py', 'test_event_filters.py', 'test_memoize.py', 'test_reporters.py', 'test_runner.py', 'test_typed_object.py', 'test_validators.py']",['eca8d8ca776ff094a1289a3aae559207f85b215b'],37,44,81,19,,,
+1d388432618febeacb01abeeae05c46c2176f9e3,"Es tradueix la descripció a l'anglès i s'incrementa el número de
+revisió.
+
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@51 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-25 20:09:55+00:00,0,2014-04-25 20:09:55+00:00,0,True,False,['setup.py'],['1d2e631ed0b9fa50b865ec9719cd5947f929f78a'],2,2,4,1,,,
+dffd4fe29bd541a77e582ed01202851d31514d40,"S'afegeix un nou testenv a 'tox.ini' per generar un informe de
+cobertura del codi.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@52 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-26 09:57:53+00:00,0,2014-04-26 09:57:53+00:00,0,True,False,['tox.ini'],['1d388432618febeacb01abeeae05c46c2176f9e3'],0,9,9,1,,,
+eb5b5555a9d4ebc50dc590f13b2421e27c2097c2,"S'afegeix un test pel mètode 'adjust_delta' del filtre
+'throttler_factory'.
+
+No li veig molt de sentit al condicional 'delta > 0' en el mètode
+'stop' del reporter 'DynamicThrottling'. S'elimina.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@53 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-26 10:04:46+00:00,0,2014-04-26 10:04:46+00:00,0,True,False,"['TODO', 'reporters.py', 'test_event_filters.py']",['dffd4fe29bd541a77e582ed01202851d31514d40'],4,9,13,3,1.0,1.0,1.0
+734d1f373a3444e2d7aa7f7b3b697ad5d2f91b9e,"Es canvien un parell de test cases per netejar els arixus temporals
+creats.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@54 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-26 10:13:16+00:00,0,2014-04-26 10:13:16+00:00,0,True,False,"['test_config.py', 'test_event_filters.py']",['eb5b5555a9d4ebc50dc590f13b2421e27c2097c2'],1,7,8,2,1.0,1.0,1.0
+c6edf71205395751218c33c21f9301c97a735b19,"Actualitzat el TODO.
+
+
+git-svn-id: file:///tmp/svn/repo/prova/autotest/trunk@55 6fc8c6bf-3316-0410-aa01-e414f6f0c4bf",alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,alex,alex@6fc8c6bf-3316-0410-aa01-e414f6f0c4bf,2014-04-26 10:16:25+00:00,0,2014-04-26 10:16:25+00:00,0,True,False,['TODO'],['734d1f373a3444e2d7aa7f7b3b697ad5d2f91b9e'],1,7,8,1,,,
+7a8150da70989eb3b4d2431c57bfd825f554211c,Add github URL top 'setup.py'.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-04-28 21:35:16+02:00,-7200,2014-04-28 21:35:16+02:00,-7200,True,False,['setup.py'],['c6edf71205395751218c33c21f9301c97a735b19'],1,1,2,1,,,
+500f0f6d767696646d593909aedf42626bb45294,Correcting installation instructions.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-04-28 21:38:34+02:00,-7200,2014-04-28 21:38:34+02:00,-7200,True,False,['README.rst'],['7a8150da70989eb3b4d2431c57bfd825f554211c'],1,1,2,1,,,
+cb65c1625a092f21d3dc872ee1491e6cad9e5789,Update 'README.rst'.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-04-28 21:41:22+02:00,-7200,2014-04-28 21:41:22+02:00,-7200,True,False,['README.rst'],['500f0f6d767696646d593909aedf42626bb45294'],2,2,4,1,,,
+b5a54d3b275ea6d8cabef2ef82d298fd645834e2,Added .gitignore,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-04-29 19:04:25+02:00,-7200,2014-04-29 19:04:25+02:00,-7200,True,False,['.gitignore'],['cb65c1625a092f21d3dc872ee1491e6cad9e5789'],0,56,56,1,,,
+df7dacf6ce4f4205a55c700b243ee1a0b838f52d,Added 'travis.yml' and 'requirements.txt'.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-04-29 19:05:31+02:00,-7200,2014-04-29 19:05:31+02:00,-7200,True,False,"['requirements.txt', 'travis.yml']",['b5a54d3b275ea6d8cabef2ef82d298fd645834e2'],0,14,14,2,,,
+a62627f3f7ff9d8a196f8192f2c2490eeb352c16,Renamed 'travis.yml' to '.travis.yml'.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-04-29 19:09:04+02:00,-7200,2014-04-29 19:09:04+02:00,-7200,True,False,['.travis.yml'],['df7dacf6ce4f4205a55c700b243ee1a0b838f52d'],0,0,0,1,,,
+568ac2853f95aa9f714ddcb0af7cd9fb88cca423,"Testing under python 2.6 requires 'unittest2'. Added the 'test_requirements.txt'
+file and modified '.travis.yml'.",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-04-29 19:17:29+02:00,-7200,2014-04-29 19:17:29+02:00,-7200,True,False,['test_requirements.txt'],['a62627f3f7ff9d8a196f8192f2c2490eeb352c16'],0,1,1,1,,,
+e9b35fa2e59810aaf4b48c306ccd2a929aa49e60,Forgot to add '.travis.yml' (still getting used to git). Added.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-04-29 19:18:52+02:00,-7200,2014-04-29 19:18:52+02:00,-7200,True,False,['.travis.yml'],['568ac2853f95aa9f714ddcb0af7cd9fb88cca423'],0,1,1,1,,,
+b331724cce65c81a30a698b997dc56a878c54211,Added travis passing/failing image to the README.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-04-29 19:24:05+02:00,-7200,2014-04-29 19:24:05+02:00,-7200,True,False,['README.rst'],['e9b35fa2e59810aaf4b48c306ccd2a929aa49e60'],0,3,3,1,,,
+a2d80d543022d1dfa3bdacd6a8cd49acdf69527c,"'unittest2' is not compatible with python 3.x. Remove the
+'test-requirements.txt' file and install 'unittest2' conditionally.",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-04-29 19:26:56+02:00,-7200,2014-04-29 19:26:56+02:00,-7200,True,False,"['.travis.yml', 'test_requirements.txt']",['b331724cce65c81a30a698b997dc56a878c54211'],2,1,3,2,,,
+86d2a951dca1552ef2c01bd49d1a7adcff33af9e,Added a reporter that display test status using libnotify.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-05-22 19:02:32+02:00,-7200,2014-05-22 19:02:32+02:00,-7200,True,False,"['failed.png', 'succeed.png', 'main.py', 'reporters.py', 'setup.py']",['a2d80d543022d1dfa3bdacd6a8cd49acdf69527c'],0,38,38,5,1.0,1.0,1.0
+fc0b6a14649da60bae2f552aa1562b87a0803857,Increase version number.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2014-05-22 19:07:00+02:00,-7200,2014-05-22 19:07:00+02:00,-7200,True,False,['setup.py'],['86d2a951dca1552ef2c01bd49d1a7adcff33af9e'],1,1,2,1,,,
+4582f6538b79a5ad6ee7d853c193fddd878ad871,Made 'make_validator_from_predicate' more robust.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 12:02:45+01:00,-3600,2015-01-04 12:02:45+01:00,-3600,True,False,['validators.py'],['fc0b6a14649da60bae2f552aa1562b87a0803857'],1,5,6,1,1.0,1.0,1.0
+3e218fb288a0ead656063895030e72276973e295,Avoid calling 'main' twice.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 12:40:00+01:00,-3600,2015-01-04 12:40:00+01:00,-3600,True,False,['main.py'],['4582f6538b79a5ad6ee7d853c193fddd878ad871'],2,0,2,1,,,
+8d800c9385cb08630f00c3e5212a76e388afffcb,Add proper error handling to configuration parsing.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 13:11:29+01:00,-3600,2015-01-04 13:11:29+01:00,-3600,True,False,"['config.py', 'main.py']",['3e218fb288a0ead656063895030e72276973e295'],3,12,15,2,0.42857142857142855,1.0,1.0
+c8da4d61e9c18aa4c27150ff8340fa20950f6d1a,Clean up '_parse_config'.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 13:23:23+01:00,-3600,2015-01-04 13:23:23+01:00,-3600,True,False,"['config.py', 'test_typed_object.py']",['8d800c9385cb08630f00c3e5212a76e388afffcb'],9,7,16,2,0.0,0.0,0.0
+4eda1218d393ca37dc35819dc2236f4795bd9083,Get rid of 'TypedObject'.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 14:36:04+01:00,-3600,2015-01-04 14:36:04+01:00,-3600,True,False,"['config.py', 'utils.py', 'validators.py', 'test_typed_object.py', 'test_validators.py']",['c8da4d61e9c18aa4c27150ff8340fa20950f6d1a'],147,76,223,5,0.0,0.0,0.21739130434782608
+1193a76c5b77aa344fd5912a996f5e11d83063a3,Add reporter to preprocess lines.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 18:24:07+01:00,-3600,2015-01-04 18:24:07+01:00,-3600,True,False,"['config.py', 'main.py', 'reporters.py']",['4eda1218d393ca37dc35819dc2236f4795bd9083'],3,66,69,3,1.0,1.0,0.6666666666666666
+f5eba0c644418228a6e1633391603d6c55c3a937,Update TODO.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 18:28:06+01:00,-3600,2015-01-04 18:28:06+01:00,-3600,True,False,['TODO'],['1193a76c5b77aa344fd5912a996f5e11d83063a3'],6,3,9,1,,,
+0fea9da2d0f893cc1067d8132d27b1e71e96efc7,Bump version.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 18:31:14+01:00,-3600,2015-01-04 18:31:14+01:00,-3600,True,False,['setup.py'],['f5eba0c644418228a6e1633391603d6c55c3a937'],1,1,2,1,,,
+9d2986e33dec4d767ad459bb498f4018c89b58a2,Remove dict comprehension to regain python 2.6 compatibility.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 18:37:33+01:00,-3600,2015-01-04 18:37:33+01:00,-3600,True,False,['validators.py'],['0fea9da2d0f893cc1067d8132d27b1e71e96efc7'],2,5,7,1,1.0,1.0,1.0
+d470f19ffa7e5a9102971bdabb0d3f809482f3ca,Bump version number.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 18:41:40+01:00,-3600,2015-01-04 18:41:40+01:00,-3600,True,False,['setup.py'],['9d2986e33dec4d767ad459bb498f4018c89b58a2'],1,1,2,1,,,
+64469417eae59e294996302def59bfa3cb632341,Update README.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-01-04 19:23:26+01:00,-3600,2015-01-04 19:23:26+01:00,-3600,True,False,['README.rst'],['d470f19ffa7e5a9102971bdabb0d3f809482f3ca'],0,43,43,1,,,
+e766f5cac35716af74b862abd43974e8424f460a,Force a test run on startup.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-04-02 12:51:22+02:00,-7200,2015-04-02 12:51:22+02:00,-7200,True,False,['main.py'],['64469417eae59e294996302def59bfa3cb632341'],0,4,4,1,0.0,1.0,1.0
+1b81662b7c9f35a540b91f6e0bd7a9132c0577d7,Bump version number.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-04-02 13:03:47+02:00,-7200,2015-04-02 13:03:47+02:00,-7200,True,False,['setup.py'],['e766f5cac35716af74b862abd43974e8424f460a'],1,1,2,1,,,
+0d02d844488454858d307cfcab1f30d1473404c3,Relax version constraints in requirements.txt,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-04-02 14:42:57+02:00,-7200,2015-04-02 14:42:57+02:00,-7200,True,False,['requirements.txt'],['1b81662b7c9f35a540b91f6e0bd7a9132c0577d7'],3,3,6,1,,,
+9eb04323e50600a99dd56307619d1296afe78ed7,Added python 3.4 to travis configuration.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-04-02 14:47:01+02:00,-7200,2015-04-02 14:47:01+02:00,-7200,True,False,['.travis.yml'],['0d02d844488454858d307cfcab1f30d1473404c3'],0,1,1,1,,,
+128781974b7b9da59dabc377b77a7648f85f5dcc,Moved version dependencies to setup.py.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-04-06 10:38:34+02:00,-7200,2015-04-06 10:38:34+02:00,-7200,True,False,"['requirements.txt', 'setup.py']",['9eb04323e50600a99dd56307619d1296afe78ed7'],6,3,9,2,,,
+5808db1f8ef48fc30add9d1e96975e1bddc134aa,"Reverted previous commit.
+
+I forgot that Travis CI requires a 'requirements.txt' file to be present
+in order to setup the test environment.",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-04-06 10:42:35+02:00,-7200,2015-04-06 10:42:35+02:00,-7200,True,False,"['requirements.txt', 'setup.py']",['128781974b7b9da59dabc377b77a7648f85f5dcc'],3,6,9,2,,,
+5dde685281aeb62581e5a9859130730276699279,Release 0.2.6,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-04-06 12:12:11+02:00,-7200,2015-04-06 12:12:11+02:00,-7200,True,False,['setup.py'],['5808db1f8ef48fc30add9d1e96975e1bddc134aa'],1,1,2,1,,,
+aca52b3bfe93dbd8a9b87ef7b597086482a8b02e,Added MANIFEST.in.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2015-04-06 12:25:43+02:00,-7200,2015-04-06 12:25:43+02:00,-7200,True,False,['MANIFEST.in'],['5dde685281aeb62581e5a9859130730276699279'],0,5,5,1,,,
+8a109a3e63cb3cdbfba59e5b338b1da48b3f7f55,"Fix error in reporter 'DesktopNotifier'.
+
+Replace '&&' by ';' in shell command so that the notifier is called
+even if 'killall' can't call any process.",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2016-04-26 18:09:17+02:00,-7200,2016-04-26 18:09:17+02:00,-7200,True,False,['reporters.py'],['aca52b3bfe93dbd8a9b87ef7b597086482a8b02e'],1,1,2,1,,,
+00fff7a53fe1276178798d8e030555045f306e42,Add a couple of entries to the TODO file.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2016-04-26 18:13:16+02:00,-7200,2016-04-26 18:13:16+02:00,-7200,True,False,['TODO'],['8a109a3e63cb3cdbfba59e5b338b1da48b3f7f55'],0,38,38,1,,,
+959c74446b43e2cb5b834842dda7f9b0cbabbf67,Release 0.2.7,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2016-04-26 18:13:41+02:00,-7200,2016-04-26 18:13:41+02:00,-7200,True,False,"['ChangeLog', 'setup.py']",['00fff7a53fe1276178798d8e030555045f306e42'],1,1,2,2,,,
+18c2e0fdf64d33f0ec39340437b1e900597abeba,"Make the code more PEP8 compliant.
+
+Removed a couple of unused imports and added/removed withespace.
+Passes ""pycodestyle"" checks except for the maximum line length.",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-30 21:17:48+02:00,-7200,2018-08-30 21:17:48+02:00,-7200,True,False,"['cmdline.py', 'config.py', 'event_filters.py', 'main.py', 'reporters.py', 'runner.py', 'utils.py', 'validators.py', 'setup.py', 'test_config.py', 'test_event_filters.py', 'test_memoize.py', 'test_reporters.py', 'test_runner.py', 'test_validators.py']",['00fff7a53fe1276178798d8e030555045f306e42'],53,76,129,15,,,
+e21bfe7ac571b99ae5e61b1ecc184c4db0816b90,"Added "".pytest_cache"" to "".gitignore"".",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-30 21:21:03+02:00,-7200,2018-08-30 21:21:03+02:00,-7200,True,False,['.gitignore'],['18c2e0fdf64d33f0ec39340437b1e900597abeba'],0,1,1,1,,,
+2321a2f02859b28e1270ebb415136292b7558266,"Added conditional import of ""mock"" depending on python version.",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-30 21:24:56+02:00,-7200,2018-08-30 21:24:56+02:00,-7200,True,False,['test_reporters.py'],['e21bfe7ac571b99ae5e61b1ecc184c4db0816b90'],1,5,6,1,,,
+bb48182eae85d30f6eab6d36174ede6991dbcbd1,"Futurized code.
+
+Added dependency from ""future"".",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-30 21:55:03+02:00,-7200,2018-08-30 21:55:03+02:00,-7200,True,False,"['cmdline.py', 'config.py', 'event_filters.py', 'main.py', 'reporters.py', 'runner.py', 'utils.py', 'validators.py', 'setup.py', 'test_config.py', 'test_event_filters.py', 'test_memoize.py', 'test_reporters.py', 'test_runner.py', 'test_validators.py']",['2321a2f02859b28e1270ebb415136292b7558266'],1,30,31,15,,,
+4493f1d25e56a4d223bc67eed38c6b7379273865,"Replaced 'str' by 'bytes' in reporters.
+
+Addapted tests.",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-31 16:09:52+02:00,-7200,2018-08-31 16:09:52+02:00,-7200,True,False,"['reporters.py', 'test_reporters.py']",['bb48182eae85d30f6eab6d36174ede6991dbcbd1'],16,16,32,2,,,
+95b83819a060fd085f7e07590bba1becf36ecffe,"Replaced dependency from ""six"" with ""future.""",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-31 16:26:23+02:00,-7200,2018-08-31 16:26:23+02:00,-7200,True,False,"['validators.py', 'requirements.txt', 'setup.py', 'test_event_filters.py', 'test_reporters.py']",['4493f1d25e56a4d223bc67eed38c6b7379273865'],10,10,20,5,,,
+51f26fe4f84e849c52c232c8f2aeb4fab06b2513,Removed support for python 2.6.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-31 16:28:58+02:00,-7200,2018-08-31 16:28:58+02:00,-7200,True,False,['test_validators.py'],['95b83819a060fd085f7e07590bba1becf36ecffe'],5,1,6,1,,,
+00989bb41b5643ceea770b61b2b7ec564e03bd5c,"Updated test settings.
+
+- removed python 2.6 and 3.3 from travis and tox config.
+
+- replaced ""nosetest"" with ""py.test"" as test runner.
+
+- cleaned up tox.ini making it less verbose.",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-31 16:34:57+02:00,-7200,2018-08-31 16:34:57+02:00,-7200,True,False,"['.travis.yml', 'autotest.cfg', 'tox.ini']",['51f26fe4f84e849c52c232c8f2aeb4fab06b2513'],31,16,47,3,,,
+d1a967e4b449790c62db57a7796a7094671b43f0,Updated README.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-31 16:40:12+02:00,-7200,2018-08-31 16:40:12+02:00,-7200,True,False,['README.rst'],['00989bb41b5643ceea770b61b2b7ec564e03bd5c'],1,2,3,1,,,
+01fd679fddbc1ae4d48eae5736a1fb44c9656686,"Removed python version 3.7 from "".travis.yml"".
+
+Apparently python 3.7 is not available on travis CI.",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-31 16:42:18+02:00,-7200,2018-08-31 16:42:18+02:00,-7200,True,False,['.travis.yml'],['d1a967e4b449790c62db57a7796a7094671b43f0'],1,0,1,1,,,
+c4a331d2f223d1374f57bea7b1cfe7ff96255775,"Updated classifiers in ""setup.py"".
+
+In commits 51f26fe and 00989bb I forgot to update the classifiers in
+order to enumerate the officially suported python versions.",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-31 16:52:50+02:00,-7200,2018-08-31 16:52:50+02:00,-7200,True,False,['setup.py'],['5beee6776ff6111ab0153b6d7745a2025ce755f9'],2,3,5,1,,,
+f28ec068a3d1ec309115b2bd463e6a8c7ef6506b,Added an entry (bug) to the TODO file.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-31 16:56:51+02:00,-7200,2018-08-31 16:56:51+02:00,-7200,True,False,['TODO'],['c4a331d2f223d1374f57bea7b1cfe7ff96255775'],0,10,10,1,,,
+de891c12f5cbc57c34dba827cf22450c16512700,Release 0.2.8,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-31 16:57:33+02:00,-7200,2018-08-31 16:57:33+02:00,-7200,True,False,"['ChangeLog', 'setup.py']",['f28ec068a3d1ec309115b2bd463e6a8c7ef6506b'],1,646,647,2,,,
+dd992db1727b60b4168e5b5d95845422fe9a03db,Format TODO as an org file.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2018-08-31 17:18:14+02:00,-7200,2018-08-31 17:18:14+02:00,-7200,True,False,['TODO'],['de891c12f5cbc57c34dba827cf22450c16512700'],46,78,124,1,,,
+dbe311d2efff0879c05d34ee6ebbb30173bbeb66,Afegides icones de diferents mides.,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2019-01-26 10:29:30+01:00,-3600,2019-01-26 10:29:30+01:00,-3600,True,False,"['failed-128x128.png', 'failed-16x16.png', 'failed-256x256.png', 'failed-32x32.png', 'failed-48x48.png', 'failed-64x64.png', 'failed.png', 'failed.png', 'succeed-128x128.png', 'succeed-16x16.png', 'succeed-256x256.png', 'succeed-32x32.png', 'succeed-48x48.png', 'succeed-64x64.png', 'succeed.png', 'succeed.png']",['dd992db1727b60b4168e5b5d95845422fe9a03db'],0,0,0,14,,,
+2dc3b94d22ed7ab8bbe812aacf8323c2beebdd5b,Release 0.2.9,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2019-01-26 10:30:25+01:00,-3600,2019-01-26 10:30:25+01:00,-3600,True,False,"['ChangeLog', 'setup.py']",['dbe311d2efff0879c05d34ee6ebbb30173bbeb66'],1,13,14,2,,,
+ded5024efc347bf10222de34f97d60e0da7f717e,"Added ""urgency"" to ""notify-send"".",Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2019-08-06 18:03:55+02:00,-7200,2019-08-06 18:03:55+02:00,-7200,True,False,['reporters.py'],['2dc3b94d22ed7ab8bbe812aacf8323c2beebdd5b'],1,3,4,1,1.0,1.0,1.0
+094b992b6d637b773c34b6e86b5acc92e7e49a6f,Release 0.2.10,Alexis Roda,alexis.roda.villalonga@gmail.com,Alexis Roda,alexis.roda.villalonga@gmail.com,2019-08-06 18:05:29+02:00,-7200,2019-08-06 18:05:29+02:00,-7200,True,False,"['ChangeLog', 'setup.py']",['ded5024efc347bf10222de34f97d60e0da7f717e'],1,9,10,2,,,

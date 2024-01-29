@@ -1,0 +1,777 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+b587863a25032baa9b799c92c86904abb4fee133,Initial commit (gathering functions from various personal scripts),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-06-17 00:46:04+02:00,-7200,2013-06-17 00:46:04+02:00,-7200,True,False,"['LICENSE.txt', 'MANIFEST.in', 'README.rst', 'humanfriendly.py', 'humanfriendly_tests.py', 'setup.py']",[],0,206,206,6,1.0,0.7450980392156863,1.0
+9c2bad8815d8f4856828812b219b141f4f4cbeb9,Add format_path() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-06-17 00:56:23+02:00,-7200,2013-06-17 00:56:23+02:00,-7200,True,False,"['humanfriendly.py', 'humanfriendly_tests.py', 'setup.py']",['b587863a25032baa9b799c92c86904abb4fee133'],2,24,26,3,1.0,1.0,1.0
+0aa333f16d718ab172cfe0504542fb3262b7e29c,Use Sphinx to generate documentation,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-06-17 01:21:57+02:00,-7200,2013-06-17 01:21:57+02:00,-7200,True,False,"['.gitignore', 'Makefile', 'README.rst', 'Makefile', 'conf.py', 'index.rst', 'humanfriendly.py', 'setup.py']",['9c2bad8815d8f4856828812b219b141f4f4cbeb9'],13,182,195,8,,,
+9a016b4649a52439903dc8c6e242131807db3b3a,Add format_timespan() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-06-17 02:06:33+02:00,-7200,2013-06-17 02:06:33+02:00,-7200,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['0aa333f16d718ab172cfe0504542fb3262b7e29c'],13,75,88,2,0.0,0.5789473684210527,1.0
+0afd40bdb33dafca11c49ee7103359f602ce353c,Improve documentation by adding lots of examples,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-06-17 02:29:17+02:00,-7200,2013-06-17 02:29:17+02:00,-7200,True,False,"['README.rst', 'conf.py', 'humanfriendly.py']",['9a016b4649a52439903dc8c6e242131807db3b3a'],6,75,81,3,,,
+00aa207de1fb4fcf77d277e5bd004bf131dda284,Improve naming of arguments,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-06-17 02:33:03+02:00,-7200,2013-06-17 02:33:03+02:00,-7200,True,False,"['index.rst', 'humanfriendly.py']",['0afd40bdb33dafca11c49ee7103359f602ce353c'],16,16,32,2,,,
+2c025a202b6cc44642fc786db334298478cecd0a,Add parse_date() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-06-17 03:12:03+02:00,-7200,2013-06-17 03:12:03+02:00,-7200,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['00aa207de1fb4fcf77d277e5bd004bf131dda284'],47,116,163,2,1.0,1.0,1.0
+05cf628f27b6806bbbf1125793587f5dc428b22a,Rename package from `human-friendly' to `humanfriendly',Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-06-27 00:01:43+02:00,-7200,2013-06-27 00:01:43+02:00,-7200,True,False,"['Makefile', 'README.rst', 'humanfriendly.py', 'humanfriendly_tests.py', 'setup.py']",['2c025a202b6cc44642fc786db334298478cecd0a'],10,10,20,5,,,
+866c3b88467bb15cafee0b9a237c63435a94e947,Fix description in setup.py,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-06-27 00:07:11+02:00,-7200,2013-06-27 00:07:11+02:00,-7200,True,False,['setup.py'],['05cf628f27b6806bbbf1125793587f5dc428b22a'],1,1,2,1,,,
+b9732d2a8848dd08b80222427f418fe0667dd68c,Documentation now hosted on Read the Docs :-),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-06-27 00:25:40+02:00,-7200,2013-06-27 00:25:40+02:00,-7200,True,False,"['Makefile', 'README.rst', 'humanfriendly.py', 'humanfriendly_tests.py', 'setup.py']",['866c3b88467bb15cafee0b9a237c63435a94e947'],10,18,28,5,,,
+685218b8b0d538cbaf93d7644401caaf38697e34,Bug fix for format_path(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-07-06 19:28:23+02:00,-7200,2013-07-06 19:28:23+02:00,-7200,True,False,['humanfriendly.py'],['b9732d2a8848dd08b80222427f418fe0667dd68c'],7,7,14,1,,,
+f075924bce4c99b840139592019b10a28443f4a8,Timer class to easily keep track of long running operations,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-07-07 01:13:57+02:00,-7200,2013-07-07 01:13:57+02:00,-7200,True,False,['humanfriendly.py'],['685218b8b0d538cbaf93d7644401caaf38697e34'],8,33,41,1,1.0,1.0,1.0
+6e8a92914b6e278a59162a956479300f5ca552dc,"Move ""Spinner"" class from pip-accel to humanfriendly",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-08-12 01:03:51+02:00,-7200,2013-08-12 01:03:51+02:00,-7200,True,False,"['Makefile', 'humanfriendly.py']",['f075924bce4c99b840139592019b10a28443f4a8'],4,45,49,2,1.0,1.0,0.47058823529411764
+82aa9d0a31ec8b25a02443c7e4480c9487e8c3e5,Bug fix: Don't raise an error in format_path() if $HOME isn't set,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-09-22 20:12:25+02:00,-7200,2013-09-22 20:12:25+02:00,-7200,True,False,['humanfriendly.py'],['6e8a92914b6e278a59162a956479300f5ca552dc'],8,11,19,1,1.0,1.0,1.0
+ac50915eb09f84b7b78aa16fd2682b10b728cc6a,New functions: pluralize() and concatenate() (extracted from existing code),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-09-22 20:27:26+02:00,-7200,2013-09-22 20:27:26+02:00,-7200,True,False,['humanfriendly.py'],['82aa9d0a31ec8b25a02443c7e4480c9487e8c3e5'],12,29,41,1,1.0,1.0,0.0
+1c481d490f35f50fd1193d9e73b564d43368629b,Bug fix for concatenate(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2013-09-22 22:37:37+02:00,-7200,2013-09-22 22:37:37+02:00,-7200,True,False,['humanfriendly.py'],['ac50915eb09f84b7b78aa16fd2682b10b728cc6a'],2,7,9,1,1.0,1.0,1.0
+f106bb48fe80f19420d9150e6833ac92a0fcc059,Update to Python 3.,Philippe Pinard,philippe.pinard@gmail.com,Philippe Pinard,philippe.pinard@gmail.com,2014-04-08 11:55:29+02:00,-7200,2014-04-08 11:55:29+02:00,-7200,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['1c481d490f35f50fd1193d9e73b564d43368629b'],9,9,18,2,,,
+6c4532960cb0f7bea791a453135bff8e9e645ead,Start using travis-ci.org,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-05-10 13:28:44+02:00,-7200,2014-05-10 13:28:44+02:00,-7200,True,False,"['.travis.yml', 'README.rst']",['f106bb48fe80f19420d9150e6833ac92a0fcc059'],0,9,9,2,,,
+38bbdc0e1e1ca3a084f8b56e05972f777a4bbbe7,"Document supported Python versions (2.6, 2.7 & 3.4)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-05-10 13:31:27+02:00,-7200,2014-05-10 13:31:27+02:00,-7200,True,False,"['README.rst', 'humanfriendly.py']",['6c4532960cb0f7bea791a453135bff8e9e645ead'],3,4,7,2,,,
+c57850390b47e12de812238c8fda70d9bf9fc19b,Submit test coverage from travis-ci.org to coveralls.io,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-05-11 00:47:04+02:00,-7200,2014-05-11 00:47:04+02:00,-7200,True,False,"['.travis.yml', 'README.rst']",['38bbdc0e1e1ca3a084f8b56e05972f777a4bbbe7'],1,10,11,2,,,
+9a18c20741f1d9b077f6ab992391463e033c53e4,Use assertRaises() instead of try/except/isinstance in test suite,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-05-11 00:55:55+02:00,-7200,2014-05-11 00:55:55+02:00,-7200,True,False,['humanfriendly_tests.py'],['c57850390b47e12de812238c8fda70d9bf9fc19b'],10,3,13,1,0.0,0.0,0.0
+5ed62843e4e8204dc668d6c794d852439d0979e5,Increase coverage of humanfriendly.concatenate(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-05-11 00:56:16+02:00,-7200,2014-05-11 00:56:16+02:00,-7200,True,False,['humanfriendly_tests.py'],['9a18c20741f1d9b077f6ab992391463e033c53e4'],1,6,7,1,1.0,1.0,1.0
+8fd47e7d6228057287ed9e3651e0a1b526f8eae3,Increase coverage of humanfriendly.Timer(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-05-11 01:08:26+02:00,-7200,2014-05-11 01:08:26+02:00,-7200,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['5ed62843e4e8204dc668d6c794d852439d0979e5'],3,23,26,2,1.0,1.0,1.0
+b7714b15ea6814cf09cff5101b58a4942ce99ecf,Improve coverage of humanfriendly.concatenate(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-05-11 01:16:57+02:00,-7200,2014-05-11 01:16:57+02:00,-7200,True,False,['humanfriendly_tests.py'],['8fd47e7d6228057287ed9e3651e0a1b526f8eae3'],0,1,1,1,1.0,1.0,1.0
+bb16f5f7ae464763602635f0072fcc02ba84976f,Improve coverage of humanfriendly.Timer(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-05-11 01:17:13+02:00,-7200,2014-05-11 01:17:13+02:00,-7200,True,False,['humanfriendly_tests.py'],['b7714b15ea6814cf09cff5101b58a4942ce99ecf'],0,4,4,1,0.0,1.0,1.0
+86eb0392ad9681c0490978dd186752f6aaf24071,Improve coverage of humanfriendly.Spinner(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-05-11 01:17:25+02:00,-7200,2014-05-11 01:17:25+02:00,-7200,True,False,['humanfriendly_tests.py'],['bb16f5f7ae464763602635f0072fcc02ba84976f'],0,16,16,1,1.0,1.0,1.0
+3274a606d43963a7b65965180c30b6cdbdbe8eef,Python 3 compatibility: Make sure sequences passed to concatenate() are lists,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-05-11 01:44:19+02:00,-7200,2014-05-11 01:44:19+02:00,-7200,True,False,['humanfriendly.py'],['86eb0392ad9681c0490978dd186752f6aaf24071'],2,3,5,1,1.0,1.0,1.0
+640fe44ff3e41dd1c7368f04bb1de8847f92eba0,Automatically rate limit the spinner,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-01 03:47:03+02:00,-7200,2014-06-01 03:47:03+02:00,-7200,True,False,['humanfriendly.py'],['3274a606d43963a7b65965180c30b6cdbdbe8eef'],5,9,14,1,1.0,1.0,0.75
+08c74ef0f6c4e2a64ffa0e1f55645cfd0f0c35f2,Enable overriding of label for individual steps of spinner,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-07 16:15:03+02:00,-7200,2014-06-07 16:15:03+02:00,-7200,True,False,['humanfriendly.py'],['640fe44ff3e41dd1c7368f04bb1de8847f92eba0'],4,4,8,1,,,
+d01dffe24a1311b4b403f7edeb029a44dcd64aad,Make the Spinner(label=...) argument optional,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-07 21:46:01+02:00,-7200,2014-06-07 21:46:01+02:00,-7200,True,False,['humanfriendly.py'],['08c74ef0f6c4e2a64ffa0e1f55645cfd0f0c35f2'],3,6,9,1,1.0,1.0,1.0
+2ddf336a0e4c56c0bee6e186f59ca0e33e36f644,Make Timer() resumable,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-08 04:35:52+02:00,-7200,2014-06-08 04:35:52+02:00,-7200,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['d01dffe24a1311b4b403f7edeb029a44dcd64aad'],17,52,69,2,0.75,1.0,0.5
+76b13bbb7e9d9416e1dd5cb7cb9a5ddb0ebb90fd,Enable spinner to show progress counter (percentage),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-08 22:55:52+02:00,-7200,2014-06-08 22:55:52+02:00,-7200,True,False,['humanfriendly.py'],['2ddf336a0e4c56c0bee6e186f59ca0e33e36f644'],3,14,17,1,1.0,0.0,0.0
+e87de239e35472ad84f5775b92d45d23b6e13f24,New prompt_for_choice() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-23 01:57:44+02:00,-7200,2014-06-23 01:57:44+02:00,-7200,True,False,['humanfriendly.py'],['76b13bbb7e9d9416e1dd5cb7cb9a5ddb0ebb90fd'],2,56,58,1,0.0,0.0,1.0
+56a4f21a4ffc588822ce9787248d770351ec08b2,Improve prompt_for_choice(): Clearly present default choice (if any),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-23 02:19:04+02:00,-7200,2014-06-23 02:19:04+02:00,-7200,True,False,['humanfriendly.py'],['e87de239e35472ad84f5775b92d45d23b6e13f24'],2,5,7,1,0.0,0.0,1.0
+eaf002e8eb0e88d1a5e35f6d087e14d2d325b202,Added support for 'B' bytes unit to parse_size,Kory Prince,korylprince@gmail.com,Kory Prince,korylprince@gmail.com,2014-06-26 10:51:00-05:00,18000,2014-06-26 10:51:00-05:00,18000,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['56a4f21a4ffc588822ce9787248d770351ec08b2'],1,4,5,2,1.0,1.0,1.0
+a07e82c2355b63bb510f778ffcb31ba979bb6fd0,Improve the makefile (e.g. adding coverage),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-29 09:38:10+02:00,-7200,2014-06-29 09:38:10+02:00,-7200,True,False,"['Makefile', 'Makefile']",['69108c896a0793dd067820615be4d334faf62b26'],46,39,85,2,,,
+959b601decca3e05722d5a7bab09f190a8b23e16,Unit tests for prompt_for_choice() (bringing coverage back up to 95%),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-29 10:14:46+02:00,-7200,2014-06-29 10:14:46+02:00,-7200,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['a07e82c2355b63bb510f778ffcb31ba979bb6fd0'],11,50,61,2,0.25,0.5357142857142857,0.9285714285714286
+9f3176728d790b3d3d1f51a9b967b88ea3c6edd6,Remove print() left over from working on the unit tests,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-29 10:58:53+02:00,-7200,2014-06-29 10:58:53+02:00,-7200,True,False,['humanfriendly_tests.py'],['959b601decca3e05722d5a7bab09f190a8b23e16'],1,0,1,1,0.0,1.0,0.0
+dad593ce20113869b9ecf42fd7e0b29d38dd3f65,"Restore Python 3.x compatibility (raw_input() -> input())
+
+See https://travis-ci.org/xolox/python-humanfriendly/jobs/28700750",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-29 14:09:17+02:00,-7200,2014-06-29 14:09:17+02:00,-7200,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['9f3176728d790b3d3d1f51a9b967b88ea3c6edd6'],10,18,28,2,0.0,1.0,1.0
+32330adcd6ea990f8fd93a8b97bb6dd7e061560e,"Make timing tests less sensitive to slow test execution*
+
+* See https://travis-ci.org/xolox/python-humanfriendly/jobs/28706938 but
+  the same thing can happen anywhere. When looked at from that perspective
+  the fix I'm committing here really isn't a fix, but I suspect it will be
+  fine :-)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-06-29 15:07:02+02:00,-7200,2014-06-29 15:07:02+02:00,-7200,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['dad593ce20113869b9ecf42fd7e0b29d38dd3f65'],5,6,11,2,1.0,,
+8dbfc79b20709adb53c828f62cdcfa5dfa32e2e6,Adds a few docstring examples,Isaac Cook,isaac@simpload.com,Isaac Cook,isaac@simpload.com,2014-09-03 13:04:33-05:00,18000,2014-09-03 13:04:33-05:00,18000,True,False,['humanfriendly.py'],['32330adcd6ea990f8fd93a8b97bb6dd7e061560e'],4,23,27,1,,,
+1e9765fca5e5f0899fdeffda8d5dc0499f7b0ffd,"Handle the simple case of pluralizing by adding ""s""",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-11-15 19:10:27+01:00,-3600,2014-11-15 19:10:27+01:00,-3600,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['2a73dd7bc2344ba8e3a30d524e15e50874cbe9ca'],9,22,31,2,1.0,1.0,0.7142857142857143
+d0c268e863b3f33ac620a92088c0ac4899ff2f7f,Human friendly boolean coercion,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-11-15 23:14:05+01:00,-3600,2014-11-15 23:14:05+01:00,-3600,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['1e9765fca5e5f0899fdeffda8d5dc0499f7b0ffd'],1,37,38,2,1.0,1.0,1.0
+a6a80106c6ed8df877084575998acea55946ec7a,Support for rounded timestamps,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-11-16 03:49:25+01:00,-3600,2014-11-16 03:49:25+01:00,-3600,True,False,"['humanfriendly.py', 'humanfriendly_tests.py']",['d0c268e863b3f33ac620a92088c0ac4899ff2f7f'],9,13,22,2,1.0,1.0,1.0
+a0581ba59c1eb4f7e95327424631c8f7578ddc62,Support for spinners with an embedded timer :-),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-11-16 04:24:18+01:00,-3600,2014-11-16 04:24:18+01:00,-3600,True,False,['humanfriendly.py'],['a6a80106c6ed8df877084575998acea55946ec7a'],3,9,12,1,1.0,0.3333333333333333,0.0
+f9c2e5ee5577453c90eae570c22fcaa683f89fa9,Coerce empty strings to False,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-11-22 01:30:28+01:00,-3600,2014-11-22 01:30:28+01:00,-3600,True,False,['humanfriendly.py'],['a0581ba59c1eb4f7e95327424631c8f7578ddc62'],2,2,4,1,,,
+0cd192193f1c18d7a29bdcd229890ebc50a98fe8,Add parse_path() shortcut (combination of standard library functions),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2014-11-22 01:32:01+01:00,-3600,2014-11-22 01:32:01+01:00,-3600,True,False,['humanfriendly.py'],['f9c2e5ee5577453c90eae570c22fcaa683f89fa9'],2,15,17,1,1.0,1.0,1.0
+5b79ad2334faf0a3f6db62d691bd9799373dcefb,Update .gitignore (exclude dist/*.zip),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-03-17 18:22:36+01:00,-3600,2015-03-17 18:22:36+01:00,-3600,True,False,['.gitignore'],['0cd192193f1c18d7a29bdcd229890ebc50a98fe8'],1,3,4,1,,,
+27babcd46f95f053607917cdf03b5aff6c95b02c,Change file layout so that all *.py files are in one directory,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-03-17 18:41:36+01:00,-3600,2015-03-17 18:41:36+01:00,-3600,True,False,"['.coveragerc', '.gitignore', 'Makefile', '__init__.py', 'tests.py', 'setup.py']",['5b79ad2334faf0a3f6db62d691bd9799373dcefb'],19,31,50,6,,,
+dffa842b780a95d750f8d18b75b635c968b4b323,Add test for parse_path(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-03-17 18:44:36+01:00,-3600,2015-03-17 18:44:36+01:00,-3600,True,False,['tests.py'],['27babcd46f95f053607917cdf03b5aff6c95b02c'],3,9,12,1,1.0,1.0,1.0
+3190c428da7215f7491a00a4b0bfe6ae8ae15575,Add test for Timer.rounded property,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-03-17 18:48:26+01:00,-3600,2015-03-17 18:48:26+01:00,-3600,True,False,['tests.py'],['dffa842b780a95d750f8d18b75b635c968b4b323'],0,3,3,1,0.0,1.0,1.0
+b80f1f8ee6e10d6c8bba87c22657c1c579006d4b,Support for automatic spinners that animate without step() calls,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-03-17 20:36:28+01:00,-3600,2015-03-17 20:36:28+01:00,-3600,True,False,"['.coveragerc', '.gitignore', '.travis.yml', 'Makefile', '__init__.py', 'tests.py']",['3190c428da7215f7491a00a4b0bfe6ae8ae15575'],7,87,94,6,1.0,1.0,0.22727272727272727
+16401c33581a9b5a68b7fdedfc694f196e0cc529,"Travis CI has been horribly slow lately, let's see if containers help?
+
+For details please refer to the following documentation:
+http://docs.travis-ci.com/user/workers/container-based-infrastructure/",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-03-17 20:43:12+01:00,-3600,2015-03-17 20:43:12+01:00,-3600,True,False,['.travis.yml'],['b80f1f8ee6e10d6c8bba87c22657c1c579006d4b'],0,1,1,1,,,
+bc3dbd185b2095bf9131a3b5f9814625a79582fc,Unbork coverage submission in .travis.yml (YAML keeps tripping me up :-),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-03-17 20:57:16+01:00,-3600,2015-03-17 20:57:16+01:00,-3600,True,False,['.travis.yml'],['16401c33581a9b5a68b7fdedfc694f196e0cc529'],3,3,6,1,,,
+f9b9de5216daa8e359a4909aacecd5c18b58ce51,Multiprocessing coverage using bleeding edge coverage.py & coveralls versions,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-03-17 21:08:55+01:00,-3600,2015-03-17 21:08:55+01:00,-3600,True,False,['.travis.yml'],['bc3dbd185b2095bf9131a3b5f9814625a79582fc'],1,1,2,1,,,
+65877c58f57e886c549b0d9a0df0d2d3388d75a2,Use `Erase in Line' ANSI escape codes to properly clear screen lines,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-03-29 14:49:46+02:00,-7200,2015-03-29 14:49:46+02:00,-7200,True,False,"['__init__.py', 'tests.py']",['f9b9de5216daa8e359a4909aacecd5c18b58ce51'],7,11,18,2,,,
+afc281119a5e2803f4e0a33bb8e2f5d212c159b8,Add another example to documentation of parse_date(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-04-14 21:46:07+02:00,-7200,2015-04-14 21:46:07+02:00,-7200,True,False,['__init__.py'],['65877c58f57e886c549b0d9a0df0d2d3388d75a2'],3,18,21,1,,,
+fe47571125c51f67a3fbd48278e2565ff1186864,"Improve interaction between spinner & verbose log output
+
+The spinner until now didn't end each string of output with a carriage
+return because then the text cursor would jump to the start of the screen
+line and disturb the spinner, however verbose log output and the spinner
+don't interact well because of this, so I've decided to hide the text
+cursor while the spinner is active.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-23 17:29:48+02:00,-7200,2015-05-23 17:29:48+02:00,-7200,True,False,"['__init__.py', 'tests.py']",['afc281119a5e2803f4e0a33bb8e2f5d212c159b8'],6,19,25,2,0.0,0.625,0.625
+02d931ec62164f92ebf9857c5a1635989997ad80,Give spinners a sleep() method,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-23 17:32:34+02:00,-7200,2015-05-23 17:32:34+02:00,-7200,True,False,['__init__.py'],['fe47571125c51f67a3fbd48278e2565ff1186864'],1,9,10,1,1.0,1.0,1.0
+f49aa3a03bbd444064ca6d04912dd776339998d6,Make it possible to use spinners as context managers,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-23 17:53:50+02:00,-7200,2015-05-23 17:53:50+02:00,-7200,True,False,['__init__.py'],['02d931ec62164f92ebf9857c5a1635989997ad80'],6,16,22,1,1.0,1.0,0.6666666666666666
+7caaaa96126a4eebd97b0939e2640649fddc53b2,Add trove classifiers to setup.py,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-25 20:21:53+02:00,-7200,2015-05-25 20:21:53+02:00,-7200,True,False,['setup.py'],['f49aa3a03bbd444064ca6d04912dd776339998d6'],2,28,30,1,,,
+446ae4333765328740b68f3139c097975afcf133,Add a simple command line interface,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-25 21:51:53+02:00,-7200,2015-05-25 21:51:53+02:00,-7200,True,False,"['Makefile', '__init__.py', 'cli.py', 'tests.py', 'setup.py']",['7caaaa96126a4eebd97b0939e2640649fddc53b2'],7,173,180,5,0.4358974358974359,0.6538461538461539,1.0
+1d11e35e7c39053cfeeb89ea1e6ecf9f58c384f5,Support for formatting numbers with thousands separators,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-25 22:59:22+02:00,-7200,2015-05-25 22:59:22+02:00,-7200,True,False,"['__init__.py', 'cli.py', 'tests.py']",['446ae4333765328740b68f3139c097975afcf133'],13,73,86,3,0.8518518518518519,0.9259259259259259,1.0
+b15955531fbf34308bb47e010284f7a41132fcb4,"Additional string formatting functions (compact(), dedent(), etc.)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-26 00:55:51+02:00,-7200,2015-05-26 00:55:51+02:00,-7200,True,False,"['__init__.py', 'tests.py']",['1d11e35e7c39053cfeeb89ea1e6ecf9f58c384f5'],3,102,105,2,1.0,1.0,0.6410256410256411
+1eee507bbb258d5b96945b1a0f87d0be97b80dab,Support for formatting tabular data in simple text tables,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-26 01:19:17+02:00,-7200,2015-05-26 01:19:17+02:00,-7200,True,False,"['__init__.py', 'cli.py', 'tests.py']",['b15955531fbf34308bb47e010284f7a41132fcb4'],8,129,137,3,0.0,0.5753424657534246,0.684931506849315
+58181178a0a69ff359735bf6cab23b56b1445063,Bug fix for Python 3 compatibility,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-26 03:13:18+02:00,-7200,2015-05-26 03:13:18+02:00,-7200,True,False,['__init__.py'],['1eee507bbb258d5b96945b1a0f87d0be97b80dab'],5,7,12,1,,,
+bc6e7d13724a7e3d3ab04c1f07a3425e7f76bdca,"Add humanfriendly.terminal module (ANSI escape sequences, etc.)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-27 00:03:52+02:00,-7200,2015-05-27 00:03:52+02:00,-7200,True,False,"['LICENSE.txt', 'README.rst', 'conf.py', 'index.rst', '__init__.py', 'terminal.py', 'tests.py']",['58181178a0a69ff359735bf6cab23b56b1445063'],19,387,406,7,0.6178861788617886,0.7073170731707317,0.8292682926829268
+9170a8246bd60a42834fc9b89b1eb8191873bd74,Nice rendering of usage messages (see `humanfriendly --help'),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-05-27 01:16:06+02:00,-7200,2015-05-27 01:16:06+02:00,-7200,True,False,"['README.rst', '__init__.py', 'cli.py', 'terminal.py', 'tests.py']",['bc6e7d13724a7e3d3ab04c1f07a3425e7f76bdca'],19,183,202,5,0.703125,1.0,1.0
+c53eed56121ae89ed94b72b1121da3c0bce722fb,Try to reproduce obscure UnicodeDecodeError in setup.py (Python 3.x),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-06-02 19:52:24+02:00,-7200,2015-06-02 19:52:24+02:00,-7200,True,False,['.travis.yml'],['9170a8246bd60a42834fc9b89b1eb8191873bd74'],1,1,2,1,,,
+f9142d8716409c6ca6ffcc2e9320aab8470da68a,Bug fix for obscure UnicodeDecodeError in setup.py (Python 3.x),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-06-02 19:59:27+02:00,-7200,2015-06-02 19:59:27+02:00,-7200,True,False,['setup.py'],['c53eed56121ae89ed94b72b1121da3c0bce722fb'],5,10,15,1,,,
+dbef22977f163a7a2a3d0bee29e9b402ed34eca2,Why not also run the test suite against PyPy?,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-06-02 20:04:21+02:00,-7200,2015-06-02 20:04:21+02:00,-7200,True,False,['.travis.yml'],['f9142d8716409c6ca6ffcc2e9320aab8470da68a'],0,1,1,1,,,
+9944591c570b1c1219a6b38342e50cee49ae51eb,Now tested on PyPy! (also: fixed a UnicodeDecodeError in setup.py),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-06-02 20:13:08+02:00,-7200,2015-06-02 20:13:08+02:00,-7200,True,False,"['README.rst', '__init__.py']",['dbef22977f163a7a2a3d0bee29e9b402ed34eca2'],3,4,7,2,,,
+a1583bf47a5f569e5d135661cb3aaf48c6a5bcd3,Make table formatting `smart' (deal with overflow),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-06-02 23:32:36+02:00,-7200,2015-06-02 23:32:36+02:00,-7200,True,False,"['index.rst', '__init__.py', 'tables.py', 'tests.py', 'pytest.ini']",['9944591c570b1c1219a6b38342e50cee49ae51eb'],54,331,385,5,0.15217391304347827,0.6413043478260869,0.9782608695652174
+aa68ae11c7470e2e6166160b135fe2bbf18d2af5,Right-align table columns with numeric data (and pimp the docs :-),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-06-03 22:33:21+02:00,-7200,2015-06-03 22:33:21+02:00,-7200,True,False,"['pretty-table.png', '__init__.py', 'tables.py', 'terminal.py', 'tests.py']",['a1583bf47a5f569e5d135661cb3aaf48c6a5bcd3'],38,89,127,5,0.0,0.625,0.625
+d1f52b6086c139b70102c30841c7c177fee957ce,Extract tokenize() function from parse_size() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-06-24 22:37:30+02:00,-7200,2015-06-24 22:37:30+02:00,-7200,True,False,['__init__.py'],['aa68ae11c7470e2e6166160b135fe2bbf18d2af5'],22,55,77,1,1.0,1.0,1.0
+3e7eb0a6907b8cb82d7f104bd983bd540baef529,Add parse_timespan() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-06-24 23:06:17+02:00,-7200,2015-06-24 23:06:17+02:00,-7200,True,False,"['__init__.py', 'tests.py']",['d1f52b6086c139b70102c30841c7c177fee957ce'],13,85,98,2,1.0,0.45454545454545453,1.0
+25656b7b0175e047530dc03de0da2a6a791d1128,Start moving functions to separate modules,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-06-28 14:11:30+02:00,-7200,2015-06-28 14:11:30+02:00,-7200,True,False,"['index.rst', '__init__.py', 'text.py']",['3e7eb0a6907b8cb82d7f104bd983bd540baef529'],162,280,442,3,,,
+c66d9ada0422e80308d5db92618fa2fd9c66dc24,Support for rendering usage messages to reStructuredText,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-06-28 14:18:22+02:00,-7200,2015-06-28 14:18:22+02:00,-7200,True,False,"['Makefile', 'README.rst', 'index.rst', '__init__.py', 'terminal.py', 'tests.py', 'text.py', 'usage.py', 'pytest.ini', 'tox.ini']",['25656b7b0175e047530dc03de0da2a6a791d1128'],85,448,533,10,0.5652173913043478,0.7391304347826086,1.0
+9258651fbff946d238e31f7cdb06d08b3f4c28e0,Add humanfriendly.text.split() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-07-19 21:39:41+02:00,-7200,2015-07-19 21:39:41+02:00,-7200,True,False,"['__init__.py', 'tests.py', 'text.py']",['c66d9ada0422e80308d5db92618fa2fd9c66dc24'],6,32,38,3,1.0,1.0,1.0
+02840cd539695377d45508737ce194dbcf6d0340,Added format_length and parse_length functions,Jason Ashworth,jasonin2d@gmail.com,Jason Ashworth,jasonin2d@gmail.com,2015-07-23 07:31:50+10:00,-36000,2015-07-23 07:31:50+10:00,-36000,True,False,"['__init__.py', 'cli.py', 'tests.py']",['9258651fbff946d238e31f7cdb06d08b3f4c28e0'],2,139,141,3,0.9,0.66,1.0
+947a9e385edcdd69456507c9a463fa8856e8762d,Implement and enforce PEP-8 compliance,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-07-28 15:48:16+02:00,-7200,2015-07-28 15:48:16+02:00,-7200,True,False,"['.travis.yml', 'Makefile', 'conf.py', '__init__.py', 'terminal.py', 'tests.py', 'text.py', 'usage.py', 'tox.ini']",['6ba8d4dd46a969c9365802187f0310b249b4e17a'],48,111,159,9,0.0,1.0,0.0
+602e59de8f8feb77cf60a2120e9d9b261d0b4827,"Investigate why flake8 is not picking up settings from tox.ini
+
+https://travis-ci.org/xolox/python-humanfriendly/builds/73013695",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-07-28 16:14:26+02:00,-7200,2015-07-28 16:14:26+02:00,-7200,True,False,['Makefile'],['947a9e385edcdd69456507c9a463fa8856e8762d'],1,1,2,1,,,
+15219120829f5353f9f3fc5874fe392a61261e2c,Bug fix for tox.ini (change [pep8] section to [flake8]),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-07-28 16:28:38+02:00,-7200,2015-07-28 16:28:38+02:00,-7200,True,False,"['Makefile', 'tox.ini']",['602e59de8f8feb77cf60a2120e9d9b261d0b4827'],2,2,4,2,,,
+608734dade28a6ebe09ed6358265fe19600f3023,Implement and enforce PEP-257 compliance,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-08-06 18:28:48+02:00,-7200,2015-08-06 18:28:48+02:00,-7200,True,False,"['Makefile', 'conf.py', 'spinner-basic.gif', 'spinner-with-progress.gif', 'spinner-with-timer.gif', 'index.rst', '__init__.py', 'tables.py', 'terminal.py', 'tests.py', 'text.py', 'usage.py', 'setup.py', 'tox.ini']",['15219120829f5353f9f3fc5874fe392a61261e2c'],117,326,443,14,1.0,1.0,1.0
+9dd505e44ddbff1b5e6ffe99a92dcc947b58d02c,"Issue #6: Support for milleseconds in timespan parsing/formatting
+
+Technically speaking this breaks backwards compatibility but only
+by dropping a nasty (_not_ documented) implementation detail.
+Quoting from the old code:
+
+  # All of the first letters of the time units are unique, so
+  # although this check is not very strict I believe it to be
+  # sufficient.
+
+That no longer worked with [m]illiseconds versus [m]inutes as was
+also evident from the feature request / bug report on GitHub.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-09-10 23:22:44+02:00,-7200,2015-09-10 23:22:44+02:00,-7200,True,False,"['__init__.py', 'tests.py']",['608734dade28a6ebe09ed6358265fe19600f3023'],21,40,61,2,0.0,0.058823529411764705,1.0
+165b864eb9a718f8ff0ac6a03431e611079781fc,Functions to write informational/warning messages to stderr,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-10-21 21:44:15+02:00,-7200,2015-10-21 21:44:15+02:00,-7200,True,False,"['__init__.py', 'terminal.py']",['9dd505e44ddbff1b5e6ffe99a92dcc947b58d02c'],3,35,38,2,1.0,1.0,1.0
+3dc2bc89b512c2538f2204886158693662cff7cf,"Work around flake8-pep257==1.0.3 / pep257==0.7.0 incompatibility
+
+This has already been reported to the flake8-pep257 plug-in issue
+tracker so I'm hoping this is a temporary workaround :-).",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-10-22 04:53:32+02:00,-7200,2015-10-22 04:53:32+02:00,-7200,True,False,"['.travis.yml', 'requirements-flake8.txt']",['165b864eb9a718f8ff0ac6a03431e611079781fc'],0,15,15,2,,,
+ad064848270d9700154164ef59084e9c20937f72,Support readline hints around ANSI escape sequences,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-10-22 04:55:08+02:00,-7200,2015-10-22 04:55:08+02:00,-7200,True,False,"['__init__.py', 'terminal.py']",['3dc2bc89b512c2538f2204886158693662cff7cf'],8,42,50,2,0.8333333333333334,0.8333333333333334,0.8333333333333334
+394912cfa286aaa312b0a3b78fa41991707d3c30,Support for confirmation prompts (y/n) and improved choice prompt,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-10-22 04:57:59+02:00,-7200,2015-10-22 04:57:59+02:00,-7200,True,False,"['Makefile', 'conf.py', 'index.rst', '__init__.py', 'prompts.py', 'tests.py', 'setup.py', 'tox.ini']",['ad064848270d9700154164ef59084e9c20937f72'],104,497,601,8,0.22972972972972974,0.5067567567567568,0.22297297297297297
+65e8529c58c32cd009164505eb3ae04d959f84c0,Group Python 2 vs 3 compatibility in separate module,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-10-22 22:07:21+02:00,-7200,2015-10-22 22:07:21+02:00,-7200,True,False,"['index.rst', '__init__.py', 'compat.py', 'prompts.py', 'tables.py', 'tests.py', 'usage.py']",['394912cfa286aaa312b0a3b78fa41991707d3c30'],42,84,126,7,1.0,1.0,1.0
+bf2e13ff64cc94881ffc0b1a1b031fc88ce29d73,Support custom delimiters in humanfriendly.text.split(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-10-22 22:30:59+02:00,-7200,2015-10-22 22:30:59+02:00,-7200,True,False,"['__init__.py', 'text.py']",['65e8529c58c32cd009164505eb3ae04d959f84c0'],7,25,32,2,,,
+c5d3beec3a73bf3f9506fcd37adf917f0510403b,Move hard coded ANSI text style codes to module dictionary,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-10-22 23:09:55+02:00,-7200,2015-10-22 23:09:55+02:00,-7200,True,False,"['__init__.py', 'terminal.py']",['bf2e13ff64cc94881ffc0b1a1b031fc88ce29d73'],30,26,56,2,1.0,1.0,1.0
+c7907cb0cb7d5149256fd297f54ee462a809c1f0,Proper testing for ANSI escape sequence support,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2015-10-23 01:53:28+02:00,-7200,2015-10-23 01:53:28+02:00,-7200,True,False,"['__init__.py', 'prompts.py', 'tables.py', 'terminal.py', 'tests.py']",['c5d3beec3a73bf3f9506fcd37adf917f0510403b'],32,58,90,5,1.0,1.0,1.0
+874c16afd29b7938a4301235f8de25ee926162bc,It's 2016!,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-01-19 19:33:15+01:00,-3600,2016-01-19 19:33:15+01:00,-3600,True,False,"['LICENSE.txt', 'README.rst', 'conf.py']",['c7907cb0cb7d5149256fd297f54ee462a809c1f0'],3,3,6,3,,,
+bc9dc4ef2566d6b3e3fe3788ee08b4723bbcb83f,Combat PEP-8 E402 warnings with NOQA comments :-),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-01-19 19:34:53+01:00,-3600,2016-01-19 19:34:53+01:00,-3600,True,False,"['conf.py', 'setup.py']",['874c16afd29b7938a4301235f8de25ee926162bc'],3,3,6,2,,,
+ec6f4c24701bd3386fc18603848e34676c6f33d8,"Replace import_module() with conditional dependency on importlib
+
+[less code = better code base :-]",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-01-19 20:11:00+01:00,-3600,2016-01-19 20:11:00+01:00,-3600,True,False,"['__init__.py', 'tests.py', 'usage.py', 'setup.py']",['bc9dc4ef2566d6b3e3fe3788ee08b4723bbcb83f'],43,23,66,4,0.0,0.0,0.0
+92ae945cf5a9d6ccad83d1cdbbaee34d2da5921b,Bug fix: Restore Python 2.6 compatibility (doh!),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-01-19 21:08:04+01:00,-3600,2016-01-19 21:08:04+01:00,-3600,True,False,"['__init__.py', 'setup.py']",['ec6f4c24701bd3386fc18603848e34676c6f33d8'],18,19,37,2,1.0,1.0,1.0
+dec1efbd71efe573f99321245f85d76365e9333e,Fix and silence PEP-257 warnings,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-02 21:57:29+01:00,-3600,2016-02-02 21:57:29+01:00,-3600,True,False,"['__init__.py', 'tables.py', 'terminal.py', 'tox.ini']",['92ae945cf5a9d6ccad83d1cdbbaee34d2da5921b'],16,16,32,4,,,
+0916c425ee0b10a5155b357cf11178ecda6f7e10,Add humanfriendly.sphinx module,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-17 21:06:11+01:00,-3600,2016-02-17 21:06:11+01:00,-3600,True,False,"['conf.py', 'index.rst', '__init__.py', 'sphinx.py', 'terminal.py', 'tests.py', 'usage.py']",['dec1efbd71efe573f99321245f85d76365e9333e'],20,251,271,7,0.5833333333333334,1.0,0.7666666666666667
+eebac8e895ef5ed2c066351cd3051a56394f332c,Move pytest.ini to tox.ini,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-17 21:07:58+01:00,-3600,2016-02-17 21:07:58+01:00,-3600,True,False,"['pytest.ini', 'tox.ini']",['0916c425ee0b10a5155b357cf11178ecda6f7e10'],8,6,14,2,,,
+02e030433d20ac552a9c2bd2bfdd82af2ec234a1,Oh by the way Python 3.5 seems to work fine,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-17 21:08:25+01:00,-3600,2016-02-17 21:08:25+01:00,-3600,True,False,"['README.rst', 'setup.py', 'tox.ini']",['eebac8e895ef5ed2c066351cd3051a56394f332c'],4,5,9,3,,,
+083f4b6c48fda377d0cf6b14ba3f98652b4543e0,Enable Python 3.5 on Travis CI,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-17 21:09:48+01:00,-3600,2016-02-17 21:09:48+01:00,-3600,True,False,['.travis.yml'],['02e030433d20ac552a9c2bd2bfdd82af2ec234a1'],0,1,1,1,,,
+ac37b7fadeada82f29c332345ed19cfa680753f4,"Fix PEP-{8,257} violations in test suite (meh :-)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-18 22:43:11+01:00,-3600,2016-02-18 22:43:11+01:00,-3600,True,False,['tests.py'],['083f4b6c48fda377d0cf6b14ba3f98652b4543e0'],4,7,11,1,1.0,1.0,1.0
+e8aff688fe651c26b69944d8dbe2b4565c405400,Fix non-fatal log format error in prompt_for_choice(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-18 22:48:59+01:00,-3600,2016-02-18 22:48:59+01:00,-3600,True,False,"['__init__.py', 'prompts.py']",['ac37b7fadeada82f29c332345ed19cfa680753f4'],4,4,8,2,,,
+25f39ac46494fa9efe147680736db9913acb7c7d,Add Sphinx extension trove classifier to setup.py,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-20 12:25:31+01:00,-3600,2016-02-20 12:25:31+01:00,-3600,True,False,['setup.py'],['e8aff688fe651c26b69944d8dbe2b4565c405400'],1,2,3,1,,,
+a7a94a9dc204794261d2dded90c90b9a06343e26,"Make conditional importlib dependency compatible with wheels*
+
+While running tox tests of another project of mine that uses the
+humanfriendly package I noticed a traceback when importing the
+humanfriendly package (because importlib was missing). After some
+digging I found that tox uses pip to install packages and pip converts
+source distributions to wheel distributions before/during installation,
+thereby dropping the conditional importlib dependency.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-20 13:20:41+01:00,-3600,2016-02-20 13:20:41+01:00,-3600,True,False,"['__init__.py', 'setup.py']",['25f39ac46494fa9efe147680736db9913acb7c7d'],5,27,32,2,1.0,1.0,1.0
+daf45d77e63571066f5f48452fcab91dbcf1874f,"Figure out setuptools version on Travis CI to analyze build failure*
+
+* https://travis-ci.org/xolox/python-humanfriendly/builds/110585766",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-20 13:34:05+01:00,-3600,2016-02-20 13:34:05+01:00,-3600,True,False,['.travis.yml'],['a7a94a9dc204794261d2dded90c90b9a06343e26'],0,1,1,1,,,
+c9328a2f108f8f84bc752b95714685dca90ee601,"Unbreak conditional importlib dependency*
+
+* https://travis-ci.org/xolox/python-humanfriendly/builds/110585766
+
+  Kind of strange that everything worked fine locally. Then again,
+  I've never used wheel compatible conditional dependencies before
+  so of course my first attempt was bound to fail in same way :-s.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-02-20 13:41:16+01:00,-3600,2016-02-20 13:41:16+01:00,-3600,True,False,"['.travis.yml', '__init__.py', 'setup.py']",['daf45d77e63571066f5f48452fcab91dbcf1874f'],3,2,5,3,,,
+d8c3536d1f66f6370c0ec57622711d9c91c54d6d,"Make usage message parsing a bit more strict
+
+Admittedly this needs a lot more love to make it more robust but
+I lack the time to implement this at the moment. Some day soon! :-)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-03-15 12:33:39+01:00,-3600,2016-03-15 12:33:39+01:00,-3600,True,False,"['__init__.py', 'usage.py']",['c9328a2f108f8f84bc752b95714685dca90ee601'],4,4,8,2,,,
+55d2e2758bddf369ca203a56db0edf01227eac3e,"Improve usage message parsing algorithm (also add a proper test)
+
+Refer to test_parse_usage_tricky() for an example of a usage message that
+is now parsed correctly but would previously confuse the dumb ""parsing""
+algorithm in parse_usage().",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-03-20 17:19:01+01:00,-3600,2016-03-20 17:19:01+01:00,-3600,True,False,"['__init__.py', 'tests.py', 'usage.py']",['d8c3536d1f66f6370c0ec57622711d9c91c54d6d'],17,101,118,3,0.0,0.6666666666666666,1.0
+1df92d7a2fb72044fca3f57301ead136404931e6,"Remove undocumented .strip() from join_lines()
+
+Why I noticed this: It has the potential to eat significant white
+space in usage messages that are marked up in reStructuredText syntax.
+
+Why I decided to change it: The behavior isn't documented and on
+second thought I wouldn't expect a function called join_lines()
+to strip any and all leading/trailing white space.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-04-21 14:30:25+02:00,-7200,2016-04-21 14:30:25+02:00,-7200,True,False,"['__init__.py', 'text.py', 'usage.py']",['55d2e2758bddf369ca203a56db0edf01227eac3e'],6,6,12,3,,,
+1021cac7a2fc77edb2da85c74c5a99001bff63bd,Minor improvements to usage message reformatting,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-04-21 15:50:33+02:00,-7200,2016-04-21 15:50:33+02:00,-7200,True,False,"['__init__.py', 'tests.py', 'usage.py']",['1df92d7a2fb72044fca3f57301ead136404931e6'],12,24,36,3,0.0,0.0,1.0
+6812bf184b2937d8c1157765054764665ef02fc7,Implemented correct handling of prefixes based on IEEE 1540,Daniel Standage,daniel.standage@gmail.com,Daniel Standage,daniel.standage@gmail.com,2016-06-29 20:48:23-06:00,21600,2016-06-29 20:48:23-06:00,21600,True,False,['__init__.py'],['1021cac7a2fc77edb2da85c74c5a99001bff63bd'],5,23,28,1,1.0,0.5,0.0
+a54b07a9b1e13867f94d3bf17febaadfc14846d6,Added unit tests,Daniel Standage,daniel.standage@gmail.com,Daniel Standage,daniel.standage@gmail.com,2016-06-29 20:52:02-06:00,21600,2016-06-29 21:01:18-06:00,21600,True,False,['tests.py'],['6812bf184b2937d8c1157765054764665ef02fc7'],1,7,8,1,1.0,1.0,1.0
+258a4b12bff9043a753585cfbd45e734fe83e466,Add note about IEEE 1541 definitions of units,David D Lowe,daviddlowe.flimm@gmail.com,David D Lowe,daviddlowe.flimm@gmail.com,2016-07-13 22:14:18+01:00,-3600,2016-07-13 22:16:00+01:00,-3600,True,False,"['README.rst', '__init__.py']",['1021cac7a2fc77edb2da85c74c5a99001bff63bd'],1,33,34,2,,,
+4654925459b5a038211c0fbb8a13b9e40fd3512a,Minor improvements to setup script,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-08-08 23:12:00+02:00,-7200,2016-08-08 23:12:00+02:00,-7200,True,False,['setup.py'],['1021cac7a2fc77edb2da85c74c5a99001bff63bd'],8,11,19,1,,,
+0c146ed6db4fcebd35a1e619cb226eec51676efa,Reproduce issue #7 in test suite,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-08-08 23:33:29+02:00,-7200,2016-08-08 23:33:29+02:00,-7200,True,False,['tests.py'],['4654925459b5a038211c0fbb8a13b9e40fd3512a'],1,30,31,1,1.0,1.0,1.0
+7f21920e0db8fcfe7f7dfb239d944909918fc046,Fix issue #7,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-09-28 19:34:16+02:00,-7200,2016-09-28 19:34:16+02:00,-7200,True,False,"['compat.py', 'terminal.py']",['0c146ed6db4fcebd35a1e619cb226eec51676efa'],4,19,23,2,1.0,1.0,1.0
+ce865ab3c6cedf591ab84e50f5a84be8e4331ffa,Don't test tags on Travis CI,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-09-28 19:42:37+02:00,-7200,2016-09-28 19:42:37+02:00,-7200,True,False,['.travis.yml'],['7f21920e0db8fcfe7f7dfb239d944909918fc046'],0,3,3,1,,,
+b864e8902013f74956d6fc37cba72ddef3b50a0b,Release 1.44.8 (fixes #7),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-09-28 19:42:50+02:00,-7200,2016-09-28 19:42:50+02:00,-7200,True,False,['__init__.py'],['ce865ab3c6cedf591ab84e50f5a84be8e4331ffa'],2,2,4,1,,,
+13936fceb7b6ceeb073d64faed7642d768bd8310,"Refactor makefile, switch to py.test, wheel support, etc.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-08-08 23:34:05+02:00,-7200,2016-09-28 20:14:08+02:00,-7200,True,False,"['.travis.yml', 'Makefile', '__init__.py', 'tests.py', 'requirements-checks.txt', 'requirements-flake8.txt', 'requirements-testing.txt', 'check-code-style.sh', 'setup.cfg', 'tox.ini']",['b864e8902013f74956d6fc37cba72ddef3b50a0b'],97,101,198,10,,,
+4c50768e7c157d6faae80c56fc0f11937cee4879,"Reproduce timespan formatting issues reported in #10 and #11
+
+Refer to issues 10 and 11 on GitHub for details:
+ - https://github.com/xolox/python-humanfriendly/issues/10
+ - https://github.com/xolox/python-humanfriendly/issues/11",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-09-28 22:11:47+02:00,-7200,2016-09-28 22:11:47+02:00,-7200,True,False,['tests.py'],['13936fceb7b6ceeb073d64faed7642d768bd8310'],24,32,56,1,0.0,1.0,1.0
+f53fbb37fc01155eb97218c679dd14b8aef0b408,"Resolve timespan formatting issues (#10 and #11)
+
+Refer to issues 10 and 11 on GitHub for details:
+ - https://github.com/xolox/python-humanfriendly/issues/10
+ - https://github.com/xolox/python-humanfriendly/issues/11",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-09-28 22:14:57+02:00,-7200,2016-09-28 22:14:57+02:00,-7200,True,False,['__init__.py'],['4c50768e7c157d6faae80c56fc0f11937cee4879'],7,22,29,1,0.0,0.0,0.0
+bfc09f703b48a23b46ae16e78a9ffa5d99689103,"Restore Python 2.6 compatibility (#10 and #11)
+
+Python 2.6 breakage noticed on Travis CI:
+ - https://travis-ci.org/xolox/python-humanfriendly/builds/163513409
+
+Refer to issues 10 and 11 on GitHub for details:
+ - https://github.com/xolox/python-humanfriendly/issues/10
+ - https://github.com/xolox/python-humanfriendly/issues/11",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-09-28 22:21:35+02:00,-7200,2016-09-28 22:21:35+02:00,-7200,True,False,['__init__.py'],['f53fbb37fc01155eb97218c679dd14b8aef0b408'],2,2,4,1,,,
+08f0d40b853ecad7717b70a40a7e8d3ed6795dd9,Release 1.44.9 (fixes #10 and #11),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-09-28 22:24:42+02:00,-7200,2016-09-28 22:24:42+02:00,-7200,True,False,['__init__.py'],['bfc09f703b48a23b46ae16e78a9ffa5d99689103'],1,1,2,1,,,
+2d02cbc3376f02f4e882341765dc40a3e2ef610e,Stop clearing coverage data on Travis CI :-),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-09-28 22:32:35+02:00,-7200,2016-09-28 22:32:35+02:00,-7200,True,False,['.travis.yml'],['08f0d40b853ecad7717b70a40a7e8d3ed6795dd9'],1,0,1,1,,,
+78f729b7030f9f358a9c8bc0acbe9f306da9e2ec,"Proper support for IEEE 1541 definitions of units?
+
+Refer to issue 4 and pull requests 8 and 9 on GitHub for details:
+ - https://github.com/xolox/python-humanfriendly/issues/4
+ - https://github.com/xolox/python-humanfriendly/pull/8
+ - https://github.com/xolox/python-humanfriendly/pull/9",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-09-29 02:11:24+02:00,-7200,2016-09-29 02:11:24+02:00,-7200,True,False,"['README.rst', '__init__.py', 'tests.py']",['6c3a989e6d62f2b5305c7ea1ec93d6da211ce41e'],101,123,224,3,0.0,0.0,1.0
+4aa69495b60d26e4dc292c4131bc79933e6a43f5,"Release 2.0: Proper support for IEEE 1541 definitions of units? (fixes #4, merges #8 and #9)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-09-29 02:15:54+02:00,-7200,2016-09-29 02:15:54+02:00,-7200,True,False,['__init__.py'],['78f729b7030f9f358a9c8bc0acbe9f306da9e2ec'],1,1,2,1,,,
+f31af7110714f2ed4c5178277b1d9a59c1402bed,Update README.rst for new unit behaviour,David D Lowe,daviddlowe.flimm@gmail.com,David D Lowe,daviddlowe.flimm@gmail.com,2016-09-29 10:13:45+01:00,-3600,2016-09-29 10:13:45+01:00,-3600,True,False,['README.rst'],['4aa69495b60d26e4dc292c4131bc79933e6a43f5'],2,4,6,1,,,
+e617c9a92a62daf02fe74d6416ab1911656fab98,Support for sanitizing terminal output,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-10-09 21:35:51+02:00,-7200,2016-10-09 21:35:51+02:00,-7200,True,False,"['terminal.py', 'tests.py']",['4aa69495b60d26e4dc292c4131bc79933e6a43f5'],2,102,104,2,0.21875,0.21875,1.0
+876e499fdd84cde7346bb3ee761978113ec3b66c,Only use readline hints in prompts when stdin is tty,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-11-30 00:42:25+01:00,-3600,2016-11-30 00:42:25+01:00,-3600,True,False,"['README.rst', 'prompts.py']",['dca67a94b47213e99999b5bd2da947282d7ee19d'],24,40,64,2,1.0,1.0,1.0
+ebe33d20819496f460f1c404054933d5ab9f5e42,"Fix flake8 warning*
+
+* https://travis-ci.org/xolox/python-humanfriendly/jobs/179943252",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-11-30 00:45:32+01:00,-3600,2016-11-30 00:45:32+01:00,-3600,True,False,['setup.py'],['dca67a94b47213e99999b5bd2da947282d7ee19d'],1,2,3,1,,,
+7bc319cd7595a47a495272eceffe9dd61b73fe74,Reproduce parse_date() bug in test suite,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-11-30 00:48:50+01:00,-3600,2016-11-30 00:48:50+01:00,-3600,True,False,['tests.py'],['325f828c5810a7e5a0ad0dc1a8aeab9b60ca75e0'],1,2,3,1,1.0,1.0,1.0
+280346869347179b413940d13456f8167a3b6f09,Fix parse_date() choking on Unicode strings,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-11-30 00:49:59+01:00,-3600,2016-11-30 00:49:59+01:00,-3600,True,False,['__init__.py'],['7bc319cd7595a47a495272eceffe9dd61b73fe74'],2,2,4,1,,,
+9de3bc92ba9b04986ab84d4c9f7b757ba6a11baa,Release 2.2: parse_date() bug fix & interactive prompt improvements,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2016-11-30 00:51:10+01:00,-3600,2016-11-30 00:51:10+01:00,-3600,True,False,['__init__.py'],['280346869347179b413940d13456f8167a3b6f09'],1,1,2,1,,,
+55664d594b36ac3d610a48dc36692fe6510b09d8,Minor improvements to reStructuredText in docstrings,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-10 20:49:50+01:00,-3600,2017-01-10 20:49:50+01:00,-3600,True,False,"['__init__.py', 'text.py']",['9de3bc92ba9b04986ab84d4c9f7b757ba6a11baa'],12,12,24,2,,,
+ed7e8659aa10f43b3cf8c5c8951ee0e1dc550fd2,Reproduce timers being awkward as context managers ...,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-10 21:04:07+01:00,-3600,2017-01-10 21:04:07+01:00,-3600,True,False,['tests.py'],['55664d594b36ac3d610a48dc36692fe6510b09d8'],1,4,5,1,0.0,1.0,1.0
+977f5d2e43d5bd79bfc146c6248e3ea9c1db84dd,Fix timers being awkward as context managers,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-10 21:05:43+01:00,-3600,2017-01-10 21:05:43+01:00,-3600,True,False,['__init__.py'],['ed7e8659aa10f43b3cf8c5c8951ee0e1dc550fd2'],3,13,16,1,1.0,1.0,1.0
+c411dbfcb0b03580ceff824372ce2a7613189ea9,Release 2.2.1: Improve use of timers as context managers,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-10 21:08:16+01:00,-3600,2017-01-10 21:08:16+01:00,-3600,True,False,['__init__.py'],['977f5d2e43d5bd79bfc146c6248e3ea9c1db84dd'],1,1,2,1,,,
+b6dbb3e5ac43245a1fbfcfcf228bb5fb82ac6433,s/readthedocs.org/readthedocs.io/g,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-16 22:01:38+01:00,-3600,2017-01-16 22:01:38+01:00,-3600,True,False,"['Makefile', 'README.rst', '__init__.py', 'cli.py', 'compat.py', 'prompts.py', 'sphinx.py', 'tables.py', 'terminal.py', 'tests.py', 'text.py', 'usage.py', 'setup.py']",['c411dbfcb0b03580ceff824372ce2a7613189ea9'],15,15,30,13,,,
+70b2f947666580253e1d4caf5470aaa37b5e13ec,Improve intersphinx references,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-16 22:01:53+01:00,-3600,2017-01-16 22:01:53+01:00,-3600,True,False,['conf.py'],['b6dbb3e5ac43245a1fbfcfcf228bb5fb82ac6433'],2,2,4,1,,,
+7be2d4b100e19b376feb73d34e3e4947cdfa3a68,Minor improvements to setup script,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-16 22:10:16+01:00,-3600,2017-01-16 22:10:16+01:00,-3600,True,False,['setup.py'],['70b2f947666580253e1d4caf5470aaa37b5e13ec'],20,38,58,1,1.0,1.0,1.0
+87f0194f6575c9c4c22c649519e319cd50b066c1,Bump copyright,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-16 22:10:24+01:00,-3600,2017-01-16 22:10:24+01:00,-3600,True,False,"['LICENSE.txt', 'README.rst', 'conf.py']",['7be2d4b100e19b376feb73d34e3e4947cdfa3a68'],3,3,6,3,,,
+b89fcdfb006104482b6b8b6da4a67637a8aa16df,Switch to monotonic clock for timers (#13),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-16 23:04:41+01:00,-3600,2017-01-16 23:04:41+01:00,-3600,True,False,"['__init__.py', 'compat.py', 'setup.py']",['87f0194f6575c9c4c22c649519e319cd50b066c1'],14,71,85,3,0.22727272727272727,1.0,0.6363636363636364
+936f67f89a30ef2577a7a84e9d3bb1bf0554187d,Release 2.3: Switch to monotonic clock for timers (#13),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-16 23:08:18+01:00,-3600,2017-01-16 23:08:18+01:00,-3600,True,False,['__init__.py'],['b89fcdfb006104482b6b8b6da4a67637a8aa16df'],1,1,2,1,,,
+0f249a7453af70adcb07e5c71bcd61016604b069,Break test suite to reproduce parse_usage() bug,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-17 00:23:20+01:00,-3600,2017-01-17 00:23:20+01:00,-3600,True,False,['tests.py'],['936f67f89a30ef2577a7a84e9d3bb1bf0554187d'],1,28,29,1,0.0,1.0,1.0
+4e577b40e2e736d5243cf40f49cda4fbe55b3613,Fix parse_usage() tripping up on commas in option labels,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-17 00:24:38+01:00,-3600,2017-01-17 00:24:38+01:00,-3600,True,False,['usage.py'],['0f249a7453af70adcb07e5c71bcd61016604b069'],4,7,11,1,0.0,0.0,1.0
+a60cb5b6fde070adebe93203ed88e92002322b22,Release 2.3.1: Fix parsing error in parse_usage(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-17 00:25:44+01:00,-3600,2017-01-17 00:25:44+01:00,-3600,True,False,['__init__.py'],['4e577b40e2e736d5243cf40f49cda4fbe55b3613'],2,2,4,1,,,
+18a3eabb187f531de44eff83013ac6831cfe3330,Bug fix: Don't hard code conditional dependencies in wheels,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-17 00:59:00+01:00,-3600,2017-01-17 00:59:00+01:00,-3600,True,False,"['__init__.py', 'setup.py']",['a60cb5b6fde070adebe93203ed88e92002322b22'],6,7,13,2,1.0,1.0,1.0
+4b48142d485d49246f9d4c2c750ed5e6d13ac6c1,Improve docstrings in setup.py,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-17 01:01:33+01:00,-3600,2017-01-17 01:01:33+01:00,-3600,True,False,['setup.py'],['18a3eabb187f531de44eff83013ac6831cfe3330'],2,2,4,1,,,
+91348ce6e5275120577419e14177795f4ea078be,Remove redundant :py: prefixes in docstrings,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-01-17 01:42:51+01:00,-3600,2017-01-17 01:42:51+01:00,-3600,True,False,"['__init__.py', 'terminal.py']",['4b48142d485d49246f9d4c2c750ed5e6d13ac6c1'],21,21,42,2,,,
+493f0f1b2544729b9ba73d3060e60cc7c55d75c7,Make usage() and show_pager() more user friendly,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-02-14 00:09:48+01:00,-3600,2017-02-14 00:09:48+01:00,-3600,True,False,"['terminal.py', 'tests.py']",['91348ce6e5275120577419e14177795f4ea078be'],17,83,100,2,0.25,0.25,1.0
+7cd113848dd757c90b69d04d0b19c0d2aee8ef62,Restore Python 3 compatibility,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-02-14 00:12:53+01:00,-3600,2017-02-14 00:12:53+01:00,-3600,True,False,['terminal.py'],['493f0f1b2544729b9ba73d3060e60cc7c55d75c7'],2,2,4,1,,,
+323e523af1c864493d0acfe59d4d6484cbc75306,Release 2.4: Make usage() and show_pager() more user friendly,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-02-14 00:13:21+01:00,-3600,2017-02-14 00:13:21+01:00,-3600,True,False,['__init__.py'],['7cd113848dd757c90b69d04d0b19c0d2aee8ef62'],2,2,4,1,,,
+99626187006814dc20697989ad8595b9c1b663b9,"Support min, mins abbreviations for minutes",Brandon Milton,brandon.milton21@gmail.com,Brandon Milton,brandon.milton21@gmail.com,2017-03-24 14:38:58-07:00,25200,2017-03-24 14:38:58-07:00,25200,True,False,['__init__.py'],['323e523af1c864493d0acfe59d4d6484cbc75306'],8,8,16,1,,,
+6d5fb863b6df329097b2daf128ff3cbfded02477,"Add min, mins tests",Brandon Milton,brandon.milton21@gmail.com,Brandon Milton,brandon.milton21@gmail.com,2017-03-24 14:53:15-07:00,25200,2017-03-24 14:53:15-07:00,25200,True,False,['tests.py'],['99626187006814dc20697989ad8595b9c1b663b9'],0,2,2,1,0.0,1.0,1.0
+a42cf9ef528fa1fd6b99fe6cfa9a9dfacc1a7bb7,Silence flake8 complaints,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-05-04 23:08:02+02:00,-7200,2017-05-04 23:08:02+02:00,-7200,True,False,"['prompts.py', 'tests.py', 'tox.ini']",['b29dde9e1046f4220c3f9ce506113f9ab58d5c8e'],27,23,50,3,0.0,0.0,0.0
+921a36481fabb2a2a4ea127421fe10481940a185,Add Python 3.6 to tested versions,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-05-04 23:15:49+02:00,-7200,2017-05-04 23:15:49+02:00,-7200,True,False,"['.travis.yml', 'README.rst', 'prompts.py', 'setup.py', 'tox.ini']",['a42cf9ef528fa1fd6b99fe6cfa9a9dfacc1a7bb7'],5,9,14,5,,,
+d9cf8550844b058f2c29d4b07b0cb7b77540d8f1,"Release 3.0: Support min, mins abbreviations for minutes
+
+I've decided to bump the major version number after merging pull request
+#14 because the `humanfriendly.time_units' data structure was changed.
+
+Even though this module scope variable isn't included in the online
+documentation, nothing stops users from importing it anyway, so this
+change is technically backwards incompatible.
+
+Besides, version numbers are cheap. In fact, they are infinite! :-)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-05-04 23:21:03+02:00,-7200,2017-05-04 23:21:03+02:00,-7200,True,False,['__init__.py'],['921a36481fabb2a2a4ea127421fe10481940a185'],1,1,2,1,,,
+ecbad38eacbe88877cf85cb820f71cc78d4902ea,"Improve usage message parsing and rendering
+
+While working on a new project I noticed that the join_lines()
+call in render_usage() can corrupt lists as observed here:
+
+  https://github.com/xolox/python-rsync-system-backup/blob/ed73787745e706cb6ab76c73acb2480e24d87d7b/README.rst#command-line
+  (check the part after `Supported locations include:')
+
+To be honest I'm not even sure why I added that join_lines()
+call to begin with and I can't think of any good reasons to
+keep it there, so gone it is :-)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-05-06 00:17:45+02:00,-7200,2017-05-06 00:17:45+02:00,-7200,True,False,"['README.rst', '__init__.py', 'usage.py']",['d9cf8550844b058f2c29d4b07b0cb7b77540d8f1'],8,8,16,3,,,
+69ebb3c634162bb249f93442e9e058a257ac88b0,Remove unused import,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-05-06 06:02:15+02:00,-7200,2017-05-06 06:02:15+02:00,-7200,True,False,['usage.py'],['ecbad38eacbe88877cf85cb820f71cc78d4902ea'],1,1,2,1,,,
+318a73f5b8daa3b3e0ea94433911bea2c2a86b13,Auto-encode terminal output to avoid encoding errors,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-05-18 00:45:26+02:00,-7200,2017-05-18 00:45:26+02:00,-7200,True,False,"['cli.py', 'terminal.py']",['69ebb3c634162bb249f93442e9e058a257ac88b0'],32,79,111,2,1.0,1.0,0.0
+5e2b866abdd7742e1690e882b78623adc4ae2a5e,Release 3.2: Auto-encode terminal output to avoid encoding errors,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-05-18 00:55:16+02:00,-7200,2017-05-18 00:55:16+02:00,-7200,True,False,['__init__.py'],['318a73f5b8daa3b3e0ea94433911bea2c2a86b13'],2,2,4,1,,,
+39a641594c44509b87503a27db99662288c78b0c,Reorder functions in humanfriendly.text alphabetically,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-23 23:46:53+02:00,-7200,2017-06-23 23:46:53+02:00,-7200,True,False,['text.py'],['5e2b866abdd7742e1690e882b78623adc4ae2a5e'],88,88,176,1,,,
+709f0c0746f04a9f23f48e66783e463f3de5dcee,Define humanfriendly.text.__all__,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 00:49:08+02:00,-7200,2017-06-24 00:49:08+02:00,-7200,True,False,"['tables.py', 'text.py', 'usage.py']",['39a641594c44509b87503a27db99662288c78b0c'],4,20,24,3,,,
+fcf122dad4749478b5911931b9456a2584b941d1,Add humanfriendly.text.random_string() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 00:49:45+02:00,-7200,2017-06-24 00:49:45+02:00,-7200,True,False,"['tests.py', 'text.py', 'tox.ini']",['709f0c0746f04a9f23f48e66783e463f3de5dcee'],8,27,35,3,0.0,1.0,1.0
+17878d518aa23a82a6e465cef6198da16c4cf8c4,Add humanfriendly.testing module (unittest helpers),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 05:16:56+02:00,-7200,2017-06-24 05:16:56+02:00,-7200,True,False,"['conf.py', 'index.rst', 'testing.py', 'tests.py', 'tox.ini']",['fcf122dad4749478b5911931b9456a2584b941d1'],47,529,576,5,0.89375,0.89375,0.65625
+d757d567e772cffb91b6346613999e35bedc4ea1,Release 3.3: Add random_string() and testing module (unittest helpers),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 05:21:18+02:00,-7200,2017-06-24 05:21:18+02:00,-7200,True,False,['__init__.py'],['17878d518aa23a82a6e465cef6198da16c4cf8c4'],2,2,4,1,,,
+f699a1163111d93b87f3205b2ae4e958058ca281,Release 3.4: Promote command line test function to public API,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 07:39:48+02:00,-7200,2017-06-24 07:39:48+02:00,-7200,True,False,"['__init__.py', 'testing.py', 'tests.py']",['d757d567e772cffb91b6346613999e35bedc4ea1'],40,69,109,3,1.0,0.0,0.0
+f2ebd765e72e923c9f9761bbbcedfafcf41a0022,Unbreak test suite on Python 3 (oops :-p),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 08:01:02+02:00,-7200,2017-06-24 08:01:02+02:00,-7200,True,False,['tests.py'],['f699a1163111d93b87f3205b2ae4e958058ca281'],1,0,1,1,1.0,0.0,0.0
+d9f552938d832b37dc02991b94c5d7ee73d69209,Release 3.4.1: Bug fix for Python 3 syntax incompatibility,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 08:04:42+02:00,-7200,2017-06-24 08:04:42+02:00,-7200,True,False,"['__init__.py', 'testing.py']",['f2ebd765e72e923c9f9761bbbcedfafcf41a0022'],2,2,4,2,,,
+d6edbc36210213c48ab92bd9035ec604d383c38e,Enhance TestCase.assertRaises(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 10:36:18+02:00,-7200,2017-06-24 10:36:18+02:00,-7200,True,False,"['testing.py', 'tests.py']",['d9f552938d832b37dc02991b94c5d7ee73d69209'],0,26,26,2,1.0,1.0,0.23076923076923078
+f929028a038317e9e3beceaf2e654ae362c8c5ff,Bug fix for TestCase.assertRaises(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 10:40:12+02:00,-7200,2017-06-24 10:40:12+02:00,-7200,True,False,['testing.py'],['d6edbc36210213c48ab92bd9035ec604d383c38e'],6,3,9,1,0.0,0.0,1.0
+666ee130d9a7dc26a20579e70bb0c1383cdcd47e,Release 3.5: Enhance TestCase.assertRaises(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 10:45:43+02:00,-7200,2017-06-24 10:45:43+02:00,-7200,True,False,['__init__.py'],['f929028a038317e9e3beceaf2e654ae362c8c5ff'],1,1,2,1,,,
+5b35b6d535027efba3e759b44af7ffa74641f319,Refactor makefile and Travis CI configuration,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 12:37:49+02:00,-7200,2017-06-24 12:37:49+02:00,-7200,True,False,"['.travis.yml', 'Makefile', 'requirements-tests.txt', 'install-on-travis.sh', 'tox.ini']",['666ee130d9a7dc26a20579e70bb0c1383cdcd47e'],17,26,43,5,,,
+c6fb038e9704e75330b8d782246f0027d085eae1,Make retry limit configurable,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 12:43:17+02:00,-7200,2017-06-24 12:43:17+02:00,-7200,True,False,['prompts.py'],['5b35b6d535027efba3e759b44af7ffa74641f319'],10,14,24,1,0.0,0.0,0.0
+f4d5ffb4bc4168a718fffd874fbe1f004fb97494,Release 3.6: Make retry limit configurable,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 12:46:16+02:00,-7200,2017-06-24 12:46:16+02:00,-7200,True,False,['__init__.py'],['c6fb038e9704e75330b8d782246f0027d085eae1'],1,1,2,1,,,
+941c85489fd092db1f05a7c390c0b091b6d98d70,"Improve robustness of Patched{Attribute,Item}",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 22:30:29+02:00,-7200,2017-06-24 22:30:29+02:00,-7200,True,False,['testing.py'],['f4d5ffb4bc4168a718fffd874fbe1f004fb97494'],6,18,24,1,1.0,1.0,0.3333333333333333
+e83902238fa73ed53099ed8573671574266ce041,"Release 3.6.1: Improve robustness of Patched{Attribute,Item}",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-06-24 22:33:44+02:00,-7200,2017-06-24 22:33:44+02:00,-7200,True,False,['__init__.py'],['941c85489fd092db1f05a7c390c0b091b6d98d70'],1,1,2,1,,,
+b119f86b5dc986ecb7595e8e6f7f814d50dea558,#16:Added -S --format-bytes option to use powers of 1024 rather than 1000 from command line.,Steve Barnes,stevenjohn.barnes@ge.com,Steve Barnes,stevenjohn.barnes@ge.com,2017-06-29 14:17:50+01:00,-3600,2017-06-29 14:17:50+01:00,-3600,True,False,['cli.py'],['e83902238fa73ed53099ed8573671574266ce041'],5,13,18,1,0.0,0.0,1.0
+9adbe85bcc0596590e29a3a275b7fd2dc383fc28,"#16:Added Exa, Zetta & Yotta prefixes and tests",Steve Barnes,stevenjohn.barnes@ge.com,Steve Barnes,stevenjohn.barnes@ge.com,2017-06-29 14:18:55+01:00,-3600,2017-06-29 14:18:55+01:00,-3600,True,False,"['__init__.py', 'tests.py']",['b119f86b5dc986ecb7595e8e6f7f814d50dea558'],0,8,8,2,0.0,1.0,1.0
+1e066340aeb411d3f268e6fed40270ff9d875345,Added .pyc to .gitignore,Steve Barnes,stevenjohn.barnes@ge.com,Steve Barnes,stevenjohn.barnes@ge.com,2017-06-29 14:20:40+01:00,-3600,2017-06-29 14:20:40+01:00,-3600,True,False,['.gitignore'],['9adbe85bcc0596590e29a3a275b7fd2dc383fc28'],0,1,1,1,,,
+df719a80bedd35297a8a1585730f19382094e2cf,Customizable skipping of tests,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-01 21:57:46+02:00,-7200,2017-07-01 21:57:46+02:00,-7200,True,False,"['compat.py', 'testing.py', 'tests.py', 'setup.py']",['e83902238fa73ed53099ed8573671574266ce041'],30,115,145,4,1.0,1.0,0.21052631578947367
+c68f103f41277ad11ff3b228e8e75588f14efc16,Release 3.7: Customizable skipping of tests,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-01 22:45:35+02:00,-7200,2017-07-01 22:45:35+02:00,-7200,True,False,['__init__.py'],['df719a80bedd35297a8a1585730f19382094e2cf'],2,2,4,1,,,
+fea697c52c0c9ed6c3f4ee9fa8032eb1fc082191,Release 3.8: Make it easy to mock the $HOME directory,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-02 15:49:20+02:00,-7200,2017-07-02 15:49:20+02:00,-7200,True,False,"['__init__.py', 'testing.py']",['c68f103f41277ad11ff3b228e8e75588f14efc16'],3,39,42,2,1.0,1.0,0.8
+ebb60dc5c07f03908fd9f2bacab8eee9040ef9ed,"Improve humanfriendly.testing.run_cli() (backwards incompatible)
+
+I just wasted quite a bit of time debugging a Python 3.6 incompatibility
+in deb-pkg-tools [1] which was obscured by my naive implementation of
+the humanfriendly.testing.run_cli() function.
+
+This change is backwards incompatible because run_cli() now intercepts
+all exceptions whereas previously it would only intercept SystemExit.
+
+[1] https://travis-ci.org/xolox/python-deb-pkg-tools/builds/251688788",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-10 18:48:06+02:00,-7200,2017-07-10 18:48:06+02:00,-7200,True,False,"['testing.py', 'tests.py']",['fea697c52c0c9ed6c3f4ee9fa8032eb1fc082191'],16,58,74,2,0.0,0.0,0.4642857142857143
+8ca9ac2c00f7c379f52b1233f330f503f98eaa22,Release 4.0: Improve humanfriendly.testing.run_cli() (backwards incompatible),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-10 18:56:17+02:00,-7200,2017-07-10 18:56:17+02:00,-7200,True,False,['__init__.py'],['ebb60dc5c07f03908fd9f2bacab8eee9040ef9ed'],2,2,4,1,,,
+a9c05f1d340335f06e94175d97ed96606005f5df,Always log stderr as well in run_cli(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-10 19:11:26+02:00,-7200,2017-07-10 19:11:26+02:00,-7200,True,False,['testing.py'],['8ca9ac2c00f7c379f52b1233f330f503f98eaa22'],7,10,17,1,0.0,0.0,0.0
+f338c07e293bec27c83461051b910c2ae8766b0c,Release 4.1: Always log stderr as well in run_cli(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-10 19:17:17+02:00,-7200,2017-07-10 19:17:17+02:00,-7200,True,False,['__init__.py'],['a9c05f1d340335f06e94175d97ed96606005f5df'],1,1,2,1,,,
+3b4e70ec2bdf1b723def802e0c98ff1d9534321a,Reconfigure logging in run_cli(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-10 19:34:15+02:00,-7200,2017-07-10 19:34:15+02:00,-7200,True,False,['testing.py'],['f338c07e293bec27c83461051b910c2ae8766b0c'],14,31,45,1,0.6666666666666666,0.6666666666666666,0.6666666666666666
+5897957f86579055b573b63112b87f78555dd453,Release 4.2: Reconfigure logging in run_cli(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-10 19:38:07+02:00,-7200,2017-07-10 19:38:07+02:00,-7200,True,False,['__init__.py'],['3b4e70ec2bdf1b723def802e0c98ff1d9534321a'],1,1,2,1,,,
+62ba75a4f4066af66c8d51a2b64ab99484733266,Don't log duplicate output in run_cli(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-10 19:47:57+02:00,-7200,2017-07-10 19:47:57+02:00,-7200,True,False,['testing.py'],['5897957f86579055b573b63112b87f78555dd453'],7,11,18,1,0.0,0.0,0.0
+7cd8dc5957b67b660280ebeab7c5ba39d8ca8aff,Bug fix for previous commit :-p,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-10 19:52:06+02:00,-7200,2017-07-10 19:52:06+02:00,-7200,True,False,['testing.py'],['62ba75a4f4066af66c8d51a2b64ab99484733266'],1,2,3,1,0.0,0.0,0.0
+487b1778af49f871d8412cf8b54fea6d514cf0b0,Release 4.3: Don't log duplicate output in run_cli(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-10 19:53:40+02:00,-7200,2017-07-10 19:53:40+02:00,-7200,True,False,['__init__.py'],['7cd8dc5957b67b660280ebeab7c5ba39d8ca8aff'],1,1,2,1,,,
+5890f05e01b3a097d9bb6dc19692cd421402f462,Add humanfriendly.testing.touch() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-16 04:42:48+02:00,-7200,2017-07-16 04:42:48+02:00,-7200,True,False,"['testing.py', 'tests.py']",['487b1778af49f871d8412cf8b54fea6d514cf0b0'],2,21,23,2,1.0,1.0,1.0
+14570276b01e5c67ab4fec750f62dff98c88c928,Make touch() create intermediate directories,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-16 04:51:25+02:00,-7200,2017-07-16 04:51:25+02:00,-7200,True,False,"['testing.py', 'tests.py']",['5890f05e01b3a097d9bb6dc19692cd421402f462'],0,21,21,2,1.0,1.0,1.0
+2595efc1ded029e79752a4f900e1f3ce72cfdd58,Add touch() to __all__,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-16 04:52:59+02:00,-7200,2017-07-16 04:52:59+02:00,-7200,True,False,['testing.py'],['14570276b01e5c67ab4fec750f62dff98c88c928'],0,1,1,1,,,
+176119d20ae6236202bf7eb0694d6d9ed8cf9cc8,"Release 4.4: Add humanfriendly.testing.{make_dirs,touch} functions",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-07-16 04:54:28+02:00,-7200,2017-07-16 04:54:28+02:00,-7200,True,False,['__init__.py'],['2595efc1ded029e79752a4f900e1f3ce72cfdd58'],2,2,4,1,,,
+1b6d26f22d5942cdb56b6b25a9131d37e2965703,"Size 1z is now valid 
+
+So change exception case to 1q for parse size.",Steve (Gadget) Barnes,gadgetsteve@hotmail.com,GitHub,noreply@github.com,2017-07-17 09:04:21+01:00,-3600,2017-07-17 09:04:21+01:00,-3600,True,False,['tests.py'],['1e066340aeb411d3f268e6fed40270ff9d875345'],1,1,2,1,,,
+42f34959c3192073c00265e713737c84afbca557,"Added size test cases
+
+Added test cases for new sizes.",Steve (Gadget) Barnes,gadgetsteve@hotmail.com,GitHub,noreply@github.com,2017-07-17 09:35:26+01:00,-3600,2017-07-17 09:35:26+01:00,-3600,True,False,['tests.py'],['1b6d26f22d5942cdb56b6b25a9131d37e2965703'],0,7,7,1,0.0,1.0,1.0
+7bd4abd478b24c83d932cf135b634ec02ed333d5,Add CLI tests for format-byte,Steve (Gadget) Barnes,gadgetsteve@hotmail.com,GitHub,noreply@github.com,2017-07-17 10:22:16+01:00,-3600,2017-07-17 10:22:16+01:00,-3600,True,False,['tests.py'],['42f34959c3192073c00265e713737c84afbca557'],0,7,7,1,0.0,1.0,1.0
+3baf3e60e75ab3dbca8cb6de2a028e076a5c01e8,Aim for more CLI coverage,Steve (Gadget) Barnes,gadgetsteve@hotmail.com,GitHub,noreply@github.com,2017-07-17 21:03:05+01:00,-3600,2017-07-17 21:03:05+01:00,-3600,True,False,['tests.py'],['7bd4abd478b24c83d932cf135b634ec02ed333d5'],1,12,13,1,0.0,1.0,1.0
+29581663445b5b8d158a8e25d1db2909500e4799,Corrected CLI format_length test,Steve (Gadget) Barnes,gadgetsteve@hotmail.com,GitHub,noreply@github.com,2017-07-17 21:11:04+01:00,-3600,2017-07-17 21:11:04+01:00,-3600,True,False,['tests.py'],['3baf3e60e75ab3dbca8cb6de2a028e076a5c01e8'],1,1,2,1,,,
+86c7d68a3636e7d859750f38d03936b747dee9fa,Another correction to test_cli,Steve (Gadget) Barnes,gadgetsteve@hotmail.com,GitHub,noreply@github.com,2017-07-17 21:20:56+01:00,-3600,2017-07-17 21:20:56+01:00,-3600,True,False,['tests.py'],['29581663445b5b8d158a8e25d1db2909500e4799'],1,1,2,1,,,
+8e028b5c89a84d5b45d4a16a63e9ae4cb0fbfb15,"Change cli test from 1.05 mm to 1.05 km
+
+Avoids rounding error",Steve (Gadget) Barnes,gadgetsteve@hotmail.com,GitHub,noreply@github.com,2017-07-17 21:29:18+01:00,-3600,2017-07-17 21:29:18+01:00,-3600,True,False,['tests.py'],['86c7d68a3636e7d859750f38d03936b747dee9fa'],2,2,4,1,,,
+414d1f4139ecb6857428c91c2d77bfe96653ee86,PEP-8 fail,Steve (Gadget) Barnes,gadgetsteve@hotmail.com,GitHub,noreply@github.com,2017-07-17 21:35:36+01:00,-3600,2017-07-17 21:35:36+01:00,-3600,True,False,['tests.py'],['8e028b5c89a84d5b45d4a16a63e9ae4cb0fbfb15'],1,1,2,1,,,
+b0ffac1766a9e4a05a66396b53952eb069e6607b,"Include docs to sdist
+
+Same rationales as for `coloredlogs` and `verboselogs`",Ghislain Antony Vaillant,ghisvail@users.noreply.github.com,GitHub,noreply@github.com,2017-07-29 12:21:12+01:00,-3600,2017-07-29 12:21:12+01:00,-3600,True,False,['MANIFEST.in'],['176119d20ae6236202bf7eb0694d6d9ed8cf9cc8'],0,1,1,1,,,
+202b2a65dfc7ec9062c1f2915da3b5d284eaefb9,Release 4.4.1: Include docs in sdist,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2017-08-07 22:56:11+02:00,-7200,2017-08-07 22:56:11+02:00,-7200,True,False,['__init__.py'],['b0ffac1766a9e4a05a66396b53952eb069e6607b'],2,2,4,1,,,
+e42f66389d585ae5da325efbd39b7300a6320c97,"Fix ImportError exception on Windows
+
+Adding pyreadline as a requirement for Windows fixes the ImportError that occurs where ever readline is used. (Issue #19)",Christopher Goes,ghostofgoes@users.noreply.github.com,Christopher Goes,ghostofgoes@users.noreply.github.com,2017-12-01 18:30:15-07:00,25200,2017-12-01 18:30:15-07:00,25200,True,False,"['.gitignore', 'setup.py']",['202b2a65dfc7ec9062c1f2915da3b5d284eaefb9'],0,8,8,2,1.0,0.0,1.0
+927b1072d15db252f583673b6f4288cd66b6cc90,Try to enable MacOS builds on Travis CI,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-01 22:23:25+01:00,-3600,2018-01-01 22:23:25+01:00,-3600,True,False,"['.travis.yml', 'install-on-travis.sh', 'travis.sh']",['ad1f75c7aaa3c41e067b2bad83dc5a3a37f58d4c'],22,45,67,3,,,
+e843b327c55e3e79107d01f78dcbe79bb34a81d2,Bump copyright,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-01 22:35:16+01:00,-3600,2018-01-01 22:35:16+01:00,-3600,True,False,"['LICENSE.txt', 'README.rst', 'conf.py']",['927b1072d15db252f583673b6f4288cd66b6cc90'],3,3,6,3,,,
+8bf86544f41e668e46dcc06f2e6762ccf0be9eb2,Change Sphinx documentation theme,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-01 22:35:28+01:00,-3600,2018-01-01 22:35:28+01:00,-3600,True,False,['conf.py'],['e843b327c55e3e79107d01f78dcbe79bb34a81d2'],4,1,5,1,,,
+3583b7a8098af8959f5d550ab9b2010ca1722d48,"Try to fix Python 2.6 tests on Travis CI*
+
+* https://travis-ci.org/xolox/python-humanfriendly/builds/323944256",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-04 12:05:20+01:00,-3600,2018-01-04 12:05:20+01:00,-3600,True,False,['requirements-tests.txt'],['8bf86544f41e668e46dcc06f2e6762ccf0be9eb2'],0,4,4,1,,,
+4da89f8561627d8e16924d851d674737ca37a43f,"Fix `Double requirement given' error*
+
+* https://travis-ci.org/xolox/python-humanfriendly/jobs/324990364",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-04 12:35:08+01:00,-3600,2018-01-04 12:35:08+01:00,-3600,True,False,['requirements-tests.txt'],['3583b7a8098af8959f5d550ab9b2010ca1722d48'],1,1,2,1,,,
+77001a6c4fad93b42798370359fa074b5b07533c,"Reduce clock source sensitivity* (MacOS on Travis CI)
+
+* https://travis-ci.org/xolox/python-humanfriendly/jobs/323942024",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-04 12:40:38+01:00,-3600,2018-01-04 12:40:38+01:00,-3600,True,False,['tests.py'],['4da89f8561627d8e16924d851d674737ca37a43f'],9,7,16,1,1.0,0.0,0.0
+8f981991f8b6977c33cdcf350589ee86e5d13904,"Release 4.4.2: Fix import error on Windows, run tests on Mac OS
+
+This fixes #19 by merging #20.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-04 13:06:22+01:00,-3600,2018-01-04 13:06:22+01:00,-3600,True,False,"['README.rst', '__init__.py']",['77001a6c4fad93b42798370359fa074b5b07533c'],3,4,7,2,,,
+91f1109ee81898074d8925aed6337af5381c94b3,"Release 4.5: Extend byte ranges, binary size formatting CLI",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-04 19:12:24+01:00,-3600,2018-01-04 19:12:24+01:00,-3600,True,False,['__init__.py'],['b0a226d9001b575d927efe783ae8a158ec96e2c6'],1,1,2,1,,,
+96656d332bf2a77184e7a862af7fb2ad322c3db9,"Support for bright terminal colors
+
+This fixes #21 by adding support for high intensity colors.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-04 21:18:57+01:00,-3600,2018-01-04 21:18:57+01:00,-3600,True,False,"['README.rst', 'ansi-demo.png', 'cli.py', 'terminal.py', 'tests.py']",['91f1109ee81898074d8925aed6337af5381c94b3'],4,63,67,5,0.0,0.8275862068965517,1.0
+9278d04cf24312fbaa3d838192ccc3c6259022d2,Release 4.6: Support for bright terminal colors (#21),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-04 21:39:16+01:00,-3600,2018-01-04 21:39:16+01:00,-3600,True,False,['__init__.py'],['96656d332bf2a77184e7a862af7fb2ad322c3db9'],1,1,2,1,,,
+b20f92eb50300214a120ed1f62adf7557f2a858b,"Tests for output(), message() and warning()",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-13 18:51:23+01:00,-3600,2018-01-13 18:51:23+01:00,-3600,True,False,['tests.py'],['9278d04cf24312fbaa3d838192ccc3c6259022d2'],1,39,40,1,1.0,1.0,1.0
+a2975289ead084b19f9aac5c43cdfa19fd95cf66,"Support background colors and 256 color mode
+
+Related to issue 35 on the coloredlogs issue tracker:
+https://github.com/xolox/python-coloredlogs/issues/35",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-14 03:22:15+01:00,-3600,2018-01-14 03:22:15+01:00,-3600,True,False,"['ansi-demo.png', 'cli.py', 'terminal.py', 'tests.py']",['b20f92eb50300214a120ed1f62adf7557f2a858b'],41,109,150,4,0.5,0.0,0.5833333333333334
+028b7c2f9688bddf0a45b4ca285c8b43a5c5d8e7,"Release 4.7: Support background colors and 256 color mode
+
+Related to issue 35 on the coloredlogs issue tracker:
+https://github.com/xolox/python-coloredlogs/issues/35",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-14 03:27:44+01:00,-3600,2018-01-14 03:27:44+01:00,-3600,True,False,['__init__.py'],['a2975289ead084b19f9aac5c43cdfa19fd95cf66'],2,2,4,1,,,
+b5fc1651647c57ab355646929743535e0510625f,Improve code consistency,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-20 20:54:10+01:00,-3600,2018-01-20 20:54:10+01:00,-3600,True,False,['__init__.py'],['028b7c2f9688bddf0a45b4ca285c8b43a5c5d8e7'],10,11,21,1,,,
+f8de970b9870b64b4c685a1ea358752f26a98b2a,"Add coerce_pattern() function
+
+I previously created this for vcs-repo-mgr
+and now need the same thing for qpass.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-20 21:12:52+01:00,-3600,2018-01-20 21:12:52+01:00,-3600,True,False,"['__init__.py', 'tests.py']",['b5fc1651647c57ab355646929743535e0510625f'],2,38,40,2,1.0,1.0,1.0
+f1b1d7d4a7e08785f713e3205dd8394579c127a5,Release 4.8: Add coerce_pattern() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-01-20 21:18:47+01:00,-3600,2018-01-20 21:18:47+01:00,-3600,True,False,['__init__.py'],['f8de970b9870b64b4c685a1ea358752f26a98b2a'],1,1,2,1,,,
+77c855d08f25b9e68b00675609c70c3ffe0962f4,Support formatting of RST (reStructuredText) tables,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-03-28 22:35:32+02:00,-7200,2018-03-28 22:35:32+02:00,-7200,True,False,"['tables.py', 'tests.py']",['f1b1d7d4a7e08785f713e3205dd8394579c127a5'],2,88,90,2,0.0,0.5714285714285714,1.0
+933e530ab9c674537904f52f8aa281f509dc1d8a,Release 4.9: Support formatting of RST (reStructuredText) tables,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-03-28 23:17:10+02:00,-7200,2018-03-28 23:17:10+02:00,-7200,True,False,['__init__.py'],['77c855d08f25b9e68b00675609c70c3ffe0962f4'],2,2,4,1,,,
+a58486db7721cae9882ef87f665caab0ca2d0528,Release 4.10: Add Timer.sleep() to sleep at most N seconds,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-03-31 20:30:40+02:00,-7200,2018-03-31 20:30:40+02:00,-7200,True,False,['__init__.py'],['933e530ab9c674537904f52f8aa281f509dc1d8a'],2,28,30,1,1.0,1.0,1.0
+17c6c7f61f066c2f176f4ea46f2a87f6a0c81c23,Release 4.11: Add a changelog (fixes #23),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-04-26 00:14:56+02:00,-7200,2018-04-26 00:14:56+02:00,-7200,True,False,"['CHANGELOG.rst', 'api.rst', 'changelog.rst', 'index.rst', 'readme.rst', '__init__.py']",['a58486db7721cae9882ef87f665caab0ca2d0528'],80,1040,1120,6,,,
+55a51cda9597f35cd1c404411a949c51bfefcdbb,Add 'license' key to setup script,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-04-26 00:23:18+02:00,-7200,2018-04-26 00:23:18+02:00,-7200,True,False,['setup.py'],['17c6c7f61f066c2f176f4ea46f2a87f6a0c81c23'],1,2,3,1,,,
+21232647d479ce6b7ccd8d7b4d0228f88fa040ff,Make format_timespan() accept datetime.timedelta objects (fixes #27),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-04-26 01:06:03+02:00,-7200,2018-04-26 01:06:03+02:00,-7200,True,False,"['__init__.py', 'tests.py']",['55a51cda9597f35cd1c404411a949c51bfefcdbb'],8,35,43,2,0.7142857142857143,0.9285714285714286,0.9285714285714286
+aa0277e22fb6e2f14815cf9284f7c666bd87b834,Release 4.12: Make format_timespan() accept timedelta objects,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-04-26 01:11:20+02:00,-7200,2018-04-26 01:11:20+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['21232647d479ce6b7ccd8d7b4d0228f88fa040ff'],2,12,14,2,,,
+85627a687bba215753d75cc1bd722fa7052eeae3,Add top level heading to API documentation section,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-04-26 10:28:48+02:00,-7200,2018-04-26 10:28:48+02:00,-7200,True,False,['api.rst'],['aa0277e22fb6e2f14815cf9284f7c666bd87b834'],11,20,31,1,,,
+a48fbc6206b22b1529b93593d87206d6cd75c19e,Link to CHANGELOG from README,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-04-26 11:08:52+02:00,-7200,2018-04-26 11:08:52+02:00,-7200,True,False,['README.rst'],['85627a687bba215753d75cc1bd722fa7052eeae3'],3,4,7,1,,,
+bab5cb509d59a704d554b59491c9d2f994313576,Reproduce issue #28 in test suite,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-05-10 11:42:14+02:00,-7200,2018-05-10 11:42:14+02:00,-7200,True,False,['tests.py'],['a48fbc6206b22b1529b93593d87206d6cd75c19e'],1,17,18,1,0.0,1.0,1.0
+f5f8a6c1623d035fcdbe230b5aa6e577e0da110c,Apply patch from issue #28 (follow up to bab5cb5),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-05-10 11:44:43+02:00,-7200,2018-05-10 11:44:43+02:00,-7200,True,False,['cli.py'],['bab5cb509d59a704d554b59491c9d2f994313576'],2,2,4,1,,,
+86f1f543e30d5518a5e8a9d044f09d6486d740cb,Release 4.12.1: Fixes for `humanfriendly --demo' on Python 3 (fixes #28),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-05-10 11:55:04+02:00,-7200,2018-05-10 11:55:04+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['f5f8a6c1623d035fcdbe230b5aa6e577e0da110c'],2,16,18,2,,,
+20a4bbc66ead567bbceb7326c56ff96f7acbe28c,Support for italic text rendering on the terminal,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-09 22:47:01+02:00,-7200,2018-07-09 22:47:01+02:00,-7200,True,False,"['terminal.py', 'tests.py']",['86f1f543e30d5518a5e8a9d044f09d6486d740cb'],4,5,9,2,1.0,1.0,1.0
+a8e54b564854ed6b357588024988b66b5418ccb2,Stop code style checks from breaking my builds (Python 2.6),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-09 22:54:53+02:00,-7200,2018-07-09 22:54:53+02:00,-7200,True,False,['.travis.yml'],['20a4bbc66ead567bbceb7326c56ff96f7acbe28c'],1,0,1,1,,,
+1643aa7de32988e278807ce57b5331c92a37fec8,Release 4.13: Support for italic text rendering on the terminal,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-09 23:33:37+02:00,-7200,2018-07-09 23:33:37+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['a8e54b564854ed6b357588024988b66b5418ccb2'],2,14,16,2,,,
+62438b224905e052ab6e08cd10eb596d0246607d,Support for 24-bit terminal colors,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-13 21:40:03+02:00,-7200,2018-07-13 21:40:03+02:00,-7200,True,False,"['terminal.py', 'tests.py']",['1643aa7de32988e278807ce57b5331c92a37fec8'],4,16,20,2,0.0,0.3,1.0
+88b382029bef8ad809dfc380924837fdbcd56055,Release 4.14: Support for 24-bit terminal colors,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-13 21:43:17+02:00,-7200,2018-07-13 21:43:17+02:00,-7200,True,False,"['CHANGELOG.rst', 'terminal.py']",['62438b224905e052ab6e08cd10eb596d0246607d'],1,23,24,2,,,
+e337adc9a4adde637990a969659e63ab3d2a4b30,Version bumps considered useful 😇,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-13 21:44:15+02:00,-7200,2018-07-13 21:44:29+02:00,-7200,True,False,['__init__.py'],['88b382029bef8ad809dfc380924837fdbcd56055'],2,2,4,1,,,
+1a75069afa4bae7bb9d32974677c3e403a49c1a0,Conversion of HTML to ANSI escape sequences,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-14 02:07:30+02:00,-7200,2018-07-14 02:07:30+02:00,-7200,True,False,"['compat.py', 'terminal.py', 'tests.py']",['e337adc9a4adde637990a969659e63ab3d2a4b30'],4,360,364,3,0.3181818181818182,0.6168831168831169,0.7272727272727273
+d17668150787de342b49563f4f2a13b418fd21ba,Release 4.15: HTML rendering on the terminal 😁,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-14 02:19:48+02:00,-7200,2018-07-14 02:19:48+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['1a75069afa4bae7bb9d32974677c3e403a49c1a0'],2,18,20,2,,,
+4c2a37fd226308583ccc86f54a4f021feefeb9f3,"Bug fixes for HTML to ANSI conversion*
+
+HTML entities should of course be decoded and copied to the output
+stream, but this wasn't actually happening because I had neglected to
+define the handle_charref() and handle_entityref() methods (whose
+definitions are so conveniently given in the documentation of the
+HTMLParser class 😇).",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-14 20:34:02+02:00,-7200,2018-07-14 20:34:02+02:00,-7200,True,False,"['compat.py', 'terminal.py', 'tests.py']",['d17668150787de342b49563f4f2a13b418fd21ba'],11,39,50,3,0.4444444444444444,1.0,1.0
+69888298d2b031b040e222706b592ccd62194724,Restore Python 3 compatibility (broken in 4c2a37fd226),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-14 23:27:18+02:00,-7200,2018-07-14 23:27:18+02:00,-7200,True,False,"['compat.py', 'terminal.py']",['4c2a37fd226308583ccc86f54a4f021feefeb9f3'],3,5,8,2,,,
+5030e70d415044bf876092876f5accea54044c70,Release 4.15.1: Decode entities in HTML to ANSI conversion,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-14 23:35:53+02:00,-7200,2018-07-14 23:35:53+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['69888298d2b031b040e222706b592ccd62194724'],1,13,14,2,,,
+7542d36da3ba85456c9090c2c08cd96a7ca01767,"Improve robustness of HTML to ANSI conversion
+
+Previously an IndexError exception would be raised on malformed HTML
+(more specifically a closing </a> tag without a corresponding opening
+<a> tag).",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-20 23:58:38+02:00,-7200,2018-07-20 23:58:38+02:00,-7200,True,False,"['terminal.py', 'tests.py']",['5030e70d415044bf876092876f5accea54044c70'],9,25,34,2,0.625,1.0,1.0
+0564a155ca236947d11c396395419d83e3045575,Long lines considered bothersome to split up :-p,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 00:15:14+02:00,-7200,2018-07-21 00:15:14+02:00,-7200,True,False,['tests.py'],['7542d36da3ba85456c9090c2c08cd96a7ca01767'],2,9,11,1,0.0,1.0,1.0
+7096e14f7bd0d67e3b7f648a8a2b90f20f168162,"Enable html_to_ansi(data[, callback]) argument",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 00:29:54+02:00,-7200,2018-07-21 00:29:54+02:00,-7200,True,False,['terminal.py'],['0564a155ca236947d11c396395419d83e3045575'],3,4,7,1,,,
+25abe3cee724764b1f87adf2c56854d3a58171bd,HTML to ANSI: Don't preprocess preformatted text,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 00:31:12+02:00,-7200,2018-07-21 00:31:12+02:00,-7200,True,False,"['terminal.py', 'tests.py']",['7096e14f7bd0d67e3b7f648a8a2b90f20f168162'],4,20,24,2,0.3333333333333333,0.0,0.8888888888888888
+457383fba3256297f46f71ab2f83f2b8c87d23db,Add compact_empty_lines() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 11:40:40+02:00,-7200,2018-07-21 11:40:40+02:00,-7200,True,False,"['tests.py', 'text.py']",['25abe3cee724764b1f87adf2c56854d3a58171bd'],2,34,36,2,1.0,1.0,1.0
+f5cfc3a02c3c08c585921d4057e15246aa3ecc05,HTML to ANSI: Vertical whitespace for block tags (like <pre>),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 11:42:00+02:00,-7200,2018-07-21 11:42:00+02:00,-7200,True,False,['terminal.py'],['457383fba3256297f46f71ab2f83f2b8c87d23db'],6,21,27,1,0.0,0.0,0.0
+0b470d2b7500013157f53913c4f2f24bc15014ba,HTML to ANSI: Emit reset code on close,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 12:38:39+02:00,-7200,2018-07-21 12:38:39+02:00,-7200,True,False,['terminal.py'],['f5cfc3a02c3c08c585921d4057e15246aa3ecc05'],0,14,14,1,1.0,1.0,1.0
+c709148ad967449ea83f959a49c38b1a7eb8cb65,Bug fix: Add compact_empty_lines() to __all__,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 12:39:22+02:00,-7200,2018-07-21 12:39:22+02:00,-7200,True,False,['text.py'],['0b470d2b7500013157f53913c4f2f24bc15014ba'],0,1,1,1,,,
+343f1d82316c0c03a554f2943914bf2fd0397630,Miscellaneous reStructuredText syntax fixes,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 12:40:00+02:00,-7200,2018-07-21 12:40:00+02:00,-7200,True,False,['terminal.py'],['c709148ad967449ea83f959a49c38b1a7eb8cb65'],6,4,10,1,,,
+6971adbd889af781bb50b8760834b87bcac79bb2,HTML to ANSI: Add example and screenshot,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 12:41:31+02:00,-7200,2018-07-21 12:41:31+02:00,-7200,True,False,"['html-to-ansi.png', 'terminal.py']",['343f1d82316c0c03a554f2943914bf2fd0397630'],1,27,28,2,,,
+a1743f37e8243a973bd90d90b00883d52b7123d5,Release 4.16: Lots of HTML to ANSI improvements!,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 12:53:00+02:00,-7200,2018-07-21 12:53:00+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['6971adbd889af781bb50b8760834b87bcac79bb2'],2,21,23,2,,,
+59ec663212eaac6e69308c91766b2d3cfcbd7a7b,ANSI to HTML: Emit reset code before changing styles,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 18:31:05+02:00,-7200,2018-07-21 18:31:05+02:00,-7200,True,False,['terminal.py'],['a1743f37e8243a973bd90d90b00883d52b7123d5'],2,3,5,1,0.0,0.0,0.0
+fe22a866954c3f91a03376ac10c5e2397dd37252,Update HTML to ANSI tests after change in 59ec663212e,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 18:54:21+02:00,-7200,2018-07-21 18:54:21+02:00,-7200,True,False,['tests.py'],['59ec663212eaac6e69308c91766b2d3cfcbd7a7b'],14,13,27,1,1.0,0.0,0.0
+6308d43209ecd04ebfbaaa2220173a72bb375f22,Release 4.16.1: More ANSI to HTML improvements (style reset),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-07-21 22:28:40+02:00,-7200,2018-07-21 22:28:40+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['fe22a866954c3f91a03376ac10c5e2397dd37252'],1,10,11,2,,,
+45abbe3ae6251f973ba5a8934d896e85fabff147,"Update docs & changelog about that ""awesome new project"" 😇",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-08-02 19:34:25+02:00,-7200,2018-08-02 19:34:59+02:00,-7200,True,False,"['CHANGELOG.rst', 'terminal.py']",['6308d43209ecd04ebfbaaa2220173a72bb375f22'],12,20,32,2,,,
+51241d106e395f99c289228c8eba6e4fbe0dbc35,"Try to work around broken MacOS builds on Travis CI*
+
+* https://travis-ci.org/xolox/python-humanfriendly/jobs/411396506",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-08-02 22:03:22+02:00,-7200,2018-08-02 22:03:22+02:00,-7200,True,False,['travis.sh'],['45abbe3ae6251f973ba5a8934d896e85fabff147'],0,12,12,1,,,
+cff351de2dc69a25316f395156fd5373f7e55bc2,Add Python 3.7 to tested versions,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-10-20 06:35:23+02:00,-7200,2018-10-20 06:35:23+02:00,-7200,True,False,"['.travis.yml', 'constraints.txt', 'requirements-tests.txt', 'requirements-travis.txt', 'tox.ini']",['51241d106e395f99c289228c8eba6e4fbe0dbc35'],14,36,50,5,,,
+5578a34fe67b358467014634f24f8c8d2acb721b,"Fix Python 2.6 builds, ignore 'coverage combine' return code",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-10-20 06:39:20+02:00,-7200,2018-10-20 06:39:20+02:00,-7200,True,False,"['Makefile', 'constraints.txt']",['cff351de2dc69a25316f395156fd5373f7e55bc2'],2,6,8,2,,,
+434d7a09b150c1435667f00debb715775ea67aef,"Yet more constraints, try to get 3.7 working",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-10-20 06:48:24+02:00,-7200,2018-10-20 06:48:24+02:00,-7200,True,False,"['.travis.yml', 'constraints.txt']",['5578a34fe67b358467014634f24f8c8d2acb721b'],15,12,27,2,,,
+0e0c80cc7b5d6c29deae3ad589928102e421cb2f,Use pip constraints file consistently,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-10-20 07:06:52+02:00,-7200,2018-10-20 07:06:52+02:00,-7200,True,False,"['Makefile', 'check-code-style.sh']",['434d7a09b150c1435667f00debb715775ea67aef'],21,9,30,2,,,
+d7122c981580dd72f40dd0d1a4707fa20b167074,Mention Python 3.7 support in documentation,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-10-20 07:10:26+02:00,-7200,2018-10-20 07:10:26+02:00,-7200,True,False,"['README.rst', 'setup.py']",['0e0c80cc7b5d6c29deae3ad589928102e421cb2f'],3,4,7,2,,,
+e47247fc652646ea3fc3d30a2c47dd14826f26ac,"Add rudimentary caching decorator for functions
+
+Over the years I've used several variations on this function in multiple
+projects and I'd like to consolidate all of those implementations into a
+single one that's properly tested and documented.
+
+Due to the simplicity and lack of external dependencies it seemed kind
+of fitting to include this in the 'humanfriendly' package, which has
+become a form of extended standard library for my Python projects 😇.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-10-20 07:12:21+02:00,-7200,2018-10-20 07:12:21+02:00,-7200,True,False,"['api.rst', 'decorators.py', 'tests.py']",['d7122c981580dd72f40dd0d1a4707fa20b167074'],1,58,59,3,1.0,1.0,1.0
+ace43c9e5b936fc194bf148a2b067f8a0f4d4abd,Release 4.17: Add rudimentary caching decorator for functions,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2018-10-20 07:20:51+02:00,-7200,2018-10-20 07:20:51+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['e47247fc652646ea3fc3d30a2c47dd14826f26ac'],2,20,22,2,,,
+8dbab6e8b9dd7ce77ac6eb4fd164a11956ad0d31,"Use SVG badge for consistency
+
+And use prefer HTTPS links",Hugo,hugovk@users.noreply.github.com,GitHub,noreply@github.com,2018-12-02 23:14:16+02:00,-7200,2018-12-02 23:14:16+02:00,-7200,True,False,['README.rst'],['ace43c9e5b936fc194bf148a2b067f8a0f4d4abd'],3,3,6,1,,,
+9286b0c2bf0926a6516f9a892359bbcca05a5452,"Fix ""invalid escape sequence"" DeprecationWarning (pointed out by Python >= 3.6)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2019-02-21 19:26:28+01:00,-3600,2019-02-21 19:26:28+01:00,-3600,True,False,['__init__.py'],['ace43c9e5b936fc194bf148a2b067f8a0f4d4abd'],2,2,4,1,,,
+c2e291e447fec83fd9a4b6dc63bdfcab829c6fcf,"Try to fix broken builds by pinning pytest-cov
+
+Here's the build failure I encountered:
+https://travis-ci.org/xolox/python-humanfriendly/builds/496643155",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2019-02-21 19:39:02+01:00,-3600,2019-02-21 19:40:02+01:00,-3600,True,False,['constraints.txt'],['9286b0c2bf0926a6516f9a892359bbcca05a5452'],0,4,4,1,,,
+d68e736da9d39c144a7bce0ca6e1601f5e05b619,Fix flake8 warnings breaking builds,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2019-02-21 19:42:58+01:00,-3600,2019-02-21 19:42:58+01:00,-3600,True,False,['tox.ini'],['c2e291e447fec83fd9a4b6dc63bdfcab829c6fcf'],1,1,2,1,,,
+cfa339e6df8d739fd8d98b63a88214358b700b59,"Fix ""off-by-one"" in constraints file 😅",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2019-02-21 19:45:50+01:00,-3600,2019-02-21 19:45:50+01:00,-3600,True,False,['constraints.txt'],['d68e736da9d39c144a7bce0ca6e1601f5e05b619'],1,1,2,1,,,
+dd53b9eef6e565222fb3732545ba4690a6e09d34,"Try to fix Python 3.6 jobs on Travis CI
+
+Related to the following build failure:
+https://travis-ci.org/xolox/python-humanfriendly/builds/496651540",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2019-02-21 19:48:58+01:00,-3600,2019-02-21 19:49:11+01:00,-3600,True,False,['.travis.yml'],['cfa339e6df8d739fd8d98b63a88214358b700b59'],1,1,2,1,,,
+2a32f2473f7732eae2bb3b1f058aaf3a0cac248b,"Try to fix Python 2.6 jobs on Travis CI
+
+Related to the following failure:
+https://travis-ci.org/xolox/python-humanfriendly/builds/496654638",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2019-02-21 19:56:00+01:00,-3600,2019-02-21 19:56:00+01:00,-3600,True,False,['constraints.txt'],['dd53b9eef6e565222fb3732545ba4690a6e09d34'],0,3,3,1,,,
+a6155ff673fbad7538f21a8a0dbb29e2e322b11b,"Try to fix Python 3.4 builds on Travis CI
+
+Adding the 'pip install --upgrade' option in dd53b9eef6e fixed the
+Python 2.6 job on Travis CI but caused the Python 3.4 job to start
+failing with an obscure error related to pkg_resources.
+
+Searching for parts of that error message indicate that upgrading
+pip and/or setuptools may help to resolve the problem.
+
+Here's the failing job:
+https://travis-ci.org/xolox/python-humanfriendly/builds/496657455
+
+And below follows the (relevant) part of the output:
+
+$ scripts/travis.sh pip install --constraint=constraints.txt --requirement=requirements-travis.txt --upgrade
+...
+Installing collected packages: six, scandir, pathlib2, more-itertools, setuptools, attrs, pluggy, py, atomicwrites, pytest, coverage, pytest-cov, pycodestyle, typing, mccabe, entrypoints, pyflakes, flake8, snowballstemmer, pydocstyle, flake8-polyfill, flake8-docstrings, humanfriendly, capturer, coloredlogs, docopt, urllib3, certifi, chardet, idna, requests, coveralls
+  Found existing installation: six 1.10.0
+    Uninstalling six-1.10.0:
+      Successfully uninstalled six-1.10.0
+  Rolling back uninstall of six
+
+Exception:
+Traceback (most recent call last):
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 2813, in _dep_map
+    return self.__dep_map
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 2624, in __getattr__
+    raise AttributeError(attr)
+AttributeError: _DistInfoDistribution__dep_map
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 2804, in _parsed_pkg_info
+    return self._pkg_info
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 2624, in __getattr__
+    raise AttributeError(attr)
+AttributeError: _pkg_info
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pip/basecommand.py"", line 215, in main
+    status = self.run(options, args)
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pip/commands/install.py"", line 342, in run
+    prefix=options.prefix_path,
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pip/req/req_set.py"", line 784, in install
+    **kwargs
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pip/req/req_install.py"", line 851, in install
+    self.move_wheel_files(self.source_dir, root=root, prefix=prefix)
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pip/req/req_install.py"", line 1064, in move_wheel_files
+    isolated=self.isolated,
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pip/wheel.py"", line 247, in move_wheel_files
+    prefix=prefix,
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pip/locations.py"", line 140, in distutils_scheme
+    d = Distribution(dist_args)
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/setuptools/dist.py"", line 321, in __init__
+    _Distribution.__init__(self, attrs)
+  File ""/opt/python/3.4.6/lib/python3.4/distutils/dist.py"", line 280, in __init__
+    self.finalize_options()
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/setuptools/dist.py"", line 389, in finalize_options
+    ep.require(installer=self.fetch_build_egg)
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 2324, in require
+    items = working_set.resolve(reqs, env, installer, extras=self.extras)
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 862, in resolve
+    new_requirements = dist.requires(req.extras)[::-1]
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 2568, in requires
+    dm = self._dep_map
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 2815, in _dep_map
+    self.__dep_map = self._compute_dependencies()
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 2824, in _compute_dependencies
+    for req in self._parsed_pkg_info.get_all('Requires-Dist') or []:
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 2806, in _parsed_pkg_info
+    metadata = self.get_metadata(self.PKG_INFO)
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 1468, in get_metadata
+    value = self._get(self._fn(self.egg_info, name))
+  File ""$VIRTUAL_ENV/lib/python3.4/site-packages/pkg_resources/__init__.py"", line 1577, in _get
+    with open(path, 'rb') as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '$VIRTUAL_ENV/lib/python3.4/site-packages/six-1.10.0.dist-info/METADATA'",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2019-02-21 20:43:57+01:00,-3600,2019-02-21 20:43:57+01:00,-3600,True,False,['.travis.yml'],['2a32f2473f7732eae2bb3b1f058aaf3a0cac248b'],1,2,3,1,,,
+d723aa146cf014a6280c2468f21962ea3da016a9,Add humanfriendly.text.generate_slug() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2019-02-21 21:13:55+01:00,-3600,2019-02-21 21:13:55+01:00,-3600,True,False,"['tests.py', 'text.py']",['a6155ff673fbad7538f21a8a0dbb29e2e322b11b'],3,34,37,2,1.0,1.0,1.0
+03d1db48e8ab4539403a58d7dea7ef0bd6672ae3,Release 4.18: Added humanfriendly.text.generate_slug() function,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2019-02-21 21:21:43+01:00,-3600,2019-02-21 21:21:43+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py']",['d723aa146cf014a6280c2468f21962ea3da016a9'],1,14,15,2,,,
+37d2bcb6344fed5cf2874d2f1f29e4955f0c5903,Drop support for Python 2.6 and 3.0-3.2,Hugo,hugovk@users.noreply.github.com,Hugo,hugovk@users.noreply.github.com,2018-12-04 17:45:37+02:00,-7200,2019-02-23 22:04:24+02:00,-7200,True,False,"['.travis.yml', 'Makefile', 'README.rst', '__init__.py', 'compat.py', 'testing.py', 'setup.py', 'tox.ini']",['03d1db48e8ab4539403a58d7dea7ef0bd6672ae3'],56,10,66,8,1.0,0.625,0.125
+d8b64f68ef0749876924ba6b4a4464be49f8ae3b,Upgrade Python syntax with pyupgrade https://github.com/asottile/pyupgrade,Hugo,hugovk@users.noreply.github.com,Hugo,hugovk@users.noreply.github.com,2018-12-04 17:46:20+02:00,-7200,2019-02-23 22:04:24+02:00,-7200,True,False,"['__init__.py', 'tables.py', 'terminal.py', 'tests.py', 'text.py', 'usage.py']",['37d2bcb6344fed5cf2874d2f1f29e4955f0c5903'],22,22,44,6,,,
+b1db552e30c8277d40346545c191a6e7378b2185,Add python_requires to help pip,Hugo,hugovk@users.noreply.github.com,Hugo,hugovk@users.noreply.github.com,2018-12-04 17:48:57+02:00,-7200,2019-02-23 22:04:24+02:00,-7200,True,False,['setup.py'],['d8b64f68ef0749876924ba6b4a4464be49f8ae3b'],0,1,1,1,,,
+dd6fca64dd33fd3582bed2f571857113d794c26b,Drop support for Python 2.6,Hugo,hugovk@users.noreply.github.com,Hugo,hugovk@users.noreply.github.com,2019-02-23 22:05:34+02:00,-7200,2019-02-23 22:05:34+02:00,-7200,True,False,['constraints.txt'],['b1db552e30c8277d40346545c191a6e7378b2185'],33,0,33,1,,,
+682de9fd9aef4efd178e66afb04cc368b78c5b36,Updates README.rst with svg badge,Nikita Sobolev,mail@sobolevn.me,GitHub,noreply@github.com,2019-03-03 00:04:43+03:00,-10800,2019-03-03 00:04:43+03:00,-10800,True,False,['README.rst'],['03d1db48e8ab4539403a58d7dea7ef0bd6672ae3'],1,1,2,1,,,
+4b6532d6b3cb0ad27d22fcefa60d255b27f0bbe2,Add support for nanoseconds and microseconds time units,François Saint-Jacques,fsaintjacques@gmail.com,François Saint-Jacques,fsaintjacques@gmail.com,2019-06-28 09:34:52-04:00,14400,2019-06-28 09:34:52-04:00,14400,True,False,"['__init__.py', 'tests.py']",['03d1db48e8ab4539403a58d7dea7ef0bd6672ae3'],2,13,15,2,0.0,1.0,1.0
+3030450de13bc71e1aea57514e03736fade7020a,Drop support for EOL Python 3.4,Hugo,hugovk@users.noreply.github.com,Hugo,hugovk@users.noreply.github.com,2019-07-04 18:02:18+03:00,-10800,2019-07-04 18:02:18+03:00,-10800,True,False,"['.travis.yml', 'setup.py', 'tox.ini']",['dd6fca64dd33fd3582bed2f571857113d794c26b'],4,2,6,3,,,
+4e89db30a0eb1478983a7e371a0ff633f285efb8,Stop testing on Python 2.6,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:19:01+01:00,-3600,2020-02-06 00:19:01+01:00,-3600,True,False,"['.travis.yml', 'Makefile', 'README.rst', 'constraints.txt', 'setup.py', 'tox.ini']",['03d1db48e8ab4539403a58d7dea7ef0bd6672ae3'],46,8,54,6,,,
+3bbf3485f281bb348041d89c72eed59985ac1fb7,Followup to previous commit,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:21:59+01:00,-3600,2020-02-06 00:21:59+01:00,-3600,True,False,['.travis.yml'],['4e89db30a0eb1478983a7e371a0ff633f285efb8'],1,1,2,1,,,
+a74e602549a7803ca62ce8e8df9b699f8f623014,Bump copyright to 2020,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:22:16+01:00,-3600,2020-02-06 00:22:16+01:00,-3600,True,False,"['LICENSE.txt', 'README.rst', 'conf.py']",['3bbf3485f281bb348041d89c72eed59985ac1fb7'],4,4,8,3,,,
+7b2965a55ed1b6f30630a65b8d0df612491c7e84,"Normalize tabs in pretty tables
+
+Until now pretty tables did not take the variable width of tab
+characters into account which resulted in tables whose ""line
+drawing characters"" were visually misaligned. Tabs are now
+expanded to spaces using str.expandtabs().",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:25:42+01:00,-3600,2020-02-06 00:25:42+01:00,-3600,True,False,['tables.py'],['a74e602549a7803ca62ce8e8df9b699f8f623014'],4,10,14,1,1.0,1.0,1.0
+9a876d09721a1e472e6dab7fc3dbf6864b4718a5,Black likes double quotes more :-),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:29:03+01:00,-3600,2020-02-06 00:29:03+01:00,-3600,True,False,['sphinx.py'],['7b2965a55ed1b6f30630a65b8d0df612491c7e84'],5,5,10,1,,,
+fcb0167a3d676d9ec08583c29f14dd06083b0f85,Reorder humanfriendly.sphinx functions alphabetically,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:30:06+01:00,-3600,2020-02-06 00:30:06+01:00,-3600,True,False,['sphinx.py'],['9a876d09721a1e472e6dab7fc3dbf6864b4718a5'],28,28,56,1,,,
+bc98de5df18d603b2c0c7cab3b1ac5b38d31cd72,Add :man:`...` role for linking to Linux manual pages (humanfriendly.sphinx),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:36:55+01:00,-3600,2020-02-06 00:36:55+01:00,-3600,True,False,['sphinx.py'],['fcb0167a3d676d9ec08583c29f14dd06083b0f85'],8,32,40,1,1.0,1.0,0.42857142857142855
+4ba2d28fbc850bd2e2b10b484a6f870e2855009d,Add docutils to testing dependencies,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:45:16+01:00,-3600,2020-02-06 00:45:16+01:00,-3600,True,False,"['sphinx.py', 'requirements-tests.txt']",['bc98de5df18d603b2c0c7cab3b1ac5b38d31cd72'],2,5,7,2,,,
+bbe3fbc5fcbfee7f2f9c16d50fdfb2349f06d55f,Use new :man:`...` role in a few places :-),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:46:07+01:00,-3600,2020-02-06 00:46:07+01:00,-3600,True,False,"['CHANGELOG.rst', 'terminal.py', 'testing.py']",['4ba2d28fbc850bd2e2b10b484a6f870e2855009d'],21,19,40,3,,,
+d395ec2f10ab49ec1764924916045469f7ab98b7,Change docutils test dependency,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:47:16+01:00,-3600,2020-02-06 00:47:16+01:00,-3600,True,False,['requirements-tests.txt'],['bbe3fbc5fcbfee7f2f9c16d50fdfb2349f06d55f'],1,1,2,1,,,
+648f8dc96eda33bf58c8d33b62ada1776280f0ce,Fix the test suite,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:56:43+01:00,-3600,2020-02-06 00:56:43+01:00,-3600,True,False,['tests.py'],['d395ec2f10ab49ec1764924916045469f7ab98b7'],1,7,8,1,0.6,1.0,0.6
+b3f6536a3e0ea9255ae362a389877b091b88dcd5,Really fix the test suite 😇,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 00:58:48+01:00,-3600,2020-02-06 00:58:48+01:00,-3600,True,False,['tests.py'],['648f8dc96eda33bf58c8d33b62ada1776280f0ce'],1,1,2,1,,,
+13b4c0528e3b58f79385d766923b6cdd6dcf069d,"Release 5.0: Sphinx :man:`...` role, pretty tables expand tabs, drop Python 2.6",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-06 01:08:49+01:00,-3600,2020-02-06 01:08:49+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py', 'sphinx.py']",['b3f6536a3e0ea9255ae362a389877b091b88dcd5'],3,45,48,3,,,
+49a5408e8ca8ac408eced2a19955ba1941dc0a0b,Enable custom shell script code in MockedProgram,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 15:12:56+01:00,-3600,2020-02-09 15:12:56+01:00,-3600,True,False,"['testing.py', 'tests.py']",['13b4c0528e3b58f79385d766923b6cdd6dcf069d'],5,21,26,2,0.0,1.0,0.9230769230769231
+caed1709480065f970c648ffa3fa80281ea633bb,"Simplify headings in docs/api.rst
+
+Because Sphinx doesn't support nested links in HTML
+output and generates really weird TOC listings.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 15:18:10+01:00,-3600,2020-02-09 15:18:10+01:00,-3600,True,False,['api.rst'],['49a5408e8ca8ac408eced2a19955ba1941dc0a0b'],22,22,44,1,,,
+ae72247f8e69f09758d89b76716ef19fb83c35a8,Define humanfriendly.prompts.__all__,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 15:40:31+01:00,-3600,2020-02-09 15:40:31+01:00,-3600,True,False,['prompts.py'],['caed1709480065f970c648ffa3fa80281ea633bb'],1,14,15,1,,,
+e85f33be85db17fc204e3eedc3c630fec280988d,Define humanfriendly.sphinx.__all__,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 15:41:23+01:00,-3600,2020-02-09 15:41:23+01:00,-3600,True,False,['sphinx.py'],['ae72247f8e69f09758d89b76716ef19fb83c35a8'],1,13,14,1,,,
+ec46d5cb2b603e6776084542d8324ddb2d1621c6,Define humanfriendly.terminal.__all__,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 15:43:06+01:00,-3600,2020-02-09 15:43:06+01:00,-3600,True,False,['terminal.py'],['e85f33be85db17fc204e3eedc3c630fec280988d'],1,37,38,1,,,
+5f66f78d913fcedf940f6b48fc6613cee4d86053,Define humanfriendly.__all__,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 15:46:48+01:00,-3600,2020-02-09 15:46:48+01:00,-3600,True,False,['__init__.py'],['ec46d5cb2b603e6776084542d8324ddb2d1621c6'],6,59,65,1,,,
+46da31dbbb79e32acb5251c11add1a4fd626c1e1,Define humanfriendly.cli.__all__,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 15:47:45+01:00,-3600,2020-02-09 15:47:45+01:00,-3600,True,False,['cli.py'],['5f66f78d913fcedf940f6b48fc6613cee4d86053'],1,16,17,1,,,
+a218af427e27c484c7e8c709f42e37470c39e035,Fix humanfriendly.text.__all__ (generate_slug() wasn't exported 😬),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 15:48:10+01:00,-3600,2020-02-09 15:48:47+01:00,-3600,True,False,['text.py'],['46da31dbbb79e32acb5251c11add1a4fd626c1e1'],1,2,3,1,,,
+66973bfc52539eec548114084ac2f8dd4c20f009,Makefile: Default to Python 3 for development,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 16:01:04+01:00,-3600,2020-02-09 16:01:04+01:00,-3600,True,False,['Makefile'],['a218af427e27c484c7e8c709f42e37470c39e035'],2,3,5,1,,,
+c9b8a877a2143c518c4ffeaefa43c091a9fc682f,Makefile: Make sure flake8 is always up-to-date,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 16:01:22+01:00,-3600,2020-02-09 16:01:22+01:00,-3600,True,False,['Makefile'],['66973bfc52539eec548114084ac2f8dd4c20f009'],1,1,2,1,,,
+2c6f19cfc85260b04b2699978979eabfa2a5f913,Makefile: Silence remaining targets,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 16:01:39+01:00,-3600,2020-02-09 16:01:45+01:00,-3600,True,False,['Makefile'],['c9b8a877a2143c518c4ffeaefa43c091a9fc682f'],9,9,18,1,,,
+adfe498c6c5292a9e48163440a8069b0bfab57d4,"Fix RST references in prompt_for_choice()
+
+Explanation: This function is imported into the main module (for
+backwards compatibility) where it can't use relative references
+to refer to the other functions in ""its own"" (real) module.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 16:02:36+01:00,-3600,2020-02-09 16:02:36+01:00,-3600,True,False,['prompts.py'],['2c6f19cfc85260b04b2699978979eabfa2a5f913'],6,9,15,1,,,
+f758dfbd4de6fa48ebdefd102e55549a714e6acc,Release 6.0: Enable custom shell script code in MockedProgram,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-09 16:34:32+01:00,-3600,2020-02-09 16:34:32+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py']",['adfe498c6c5292a9e48163440a8069b0bfab57d4'],29,91,120,2,,,
+9645edc35dca3bb035ae79245e09a76217ef2e05,Add custom Sphinx role :pypi:`...`,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-10 15:51:26+01:00,-3600,2020-02-10 15:51:26+01:00,-3600,True,False,['sphinx.py'],['f758dfbd4de6fa48ebdefd102e55549a714e6acc'],1,40,41,1,1.0,1.0,0.42857142857142855
+dbc3f7968bb39876627f909e94949f39d91819a9,Minimal testing for :pypi:`...` role,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-10 16:03:52+01:00,-3600,2020-02-10 16:03:52+01:00,-3600,True,False,['tests.py'],['9645edc35dca3bb035ae79245e09a76217ef2e05'],1,3,4,1,0.0,1.0,1.0
+b1d7f0c3b49c8160a795d43d95a5451d2e7f5bac,Investigate MacOS breakage on Travis CI,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-10 16:04:31+01:00,-3600,2020-02-10 16:04:31+01:00,-3600,True,False,['travis.sh'],['dbc3f7968bb39876627f909e94949f39d91819a9'],13,24,37,1,,,
+4b47f976529b5812b860c6720aa745aa61b7a551,How's that for a subtle issue? (let's first see this actually work...),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-10 16:30:58+01:00,-3600,2020-02-10 16:30:58+01:00,-3600,True,False,['travis.sh'],['b1d7f0c3b49c8160a795d43d95a5451d2e7f5bac'],2,2,4,1,,,
+afab4e2ebda220bd40a754cb33029364a77868de,Continue debugging Travis failure on MacOS,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-10 21:43:49+01:00,-3600,2020-02-10 21:47:44+01:00,-3600,True,False,['travis.sh'],['4b47f976529b5812b860c6720aa745aa61b7a551'],6,6,12,1,,,
+68c4f909030b82348d52323132a79d45d9fd6310,What a lovely way to spend my time 😉 (debugging MacOS images provided by Travis CI),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-10 22:00:50+01:00,-3600,2020-02-10 22:00:50+01:00,-3600,True,False,['travis.sh'],['afab4e2ebda220bd40a754cb33029364a77868de'],3,11,14,1,,,
+bec20db6f11f9bea2f780ccc79e09bb9cc5099a7,Release 6.1: Add Sphinx :pypi:`...` role,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-10 22:21:48+01:00,-3600,2020-02-10 22:22:05+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py', 'sphinx.py']",['68c4f909030b82348d52323132a79d45d9fd6310'],8,20,28,3,,,
+ad23b8540f039cf88b3871d5924c48547f6c32e8,"Let's just forget that easy_install ever existed, m'kay?",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 00:43:58+01:00,-3600,2020-02-16 00:43:58+01:00,-3600,True,False,['Makefile'],['bec20db6f11f9bea2f780ccc79e09bb9cc5099a7'],2,1,3,1,,,
+3b5a20fdcc36b6ad0fc484faf2f1553cd6a4c026,Start testing on Python 3.8 and 3.9-dev,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 01:17:31+01:00,-3600,2020-02-16 01:17:31+01:00,-3600,True,False,"['.travis.yml', 'README.rst', 'setup.py', 'tox.ini']",['171069203b6aa54c4d71a445a2b15311d9b07d38'],9,12,21,4,,,
+d1e50a7a107d60a2f6c7effefea0b0cc8b479789,Fix a documentation typo,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 01:43:13+01:00,-3600,2020-02-16 01:43:13+01:00,-3600,True,False,['compat.py'],['3b5a20fdcc36b6ad0fc484faf2f1553cd6a4c026'],1,1,2,1,,,
+801440b922d7253d6537ab6ca871fbe3d4bd983b,Don't drop humanfriendly.compat.unittest just yet,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 01:43:33+01:00,-3600,2020-02-16 01:43:33+01:00,-3600,True,False,['compat.py'],['d1e50a7a107d60a2f6c7effefea0b0cc8b479789'],1,9,10,1,,,
+79f513242eb8f96a8b18c4fb108bddd034f69061,Fixed bug in `parse_length` that rounded floats,Mital Ashok,mital.vaja@googlemail.com,Peter Odding,peter@peterodding.com,2018-02-09 21:01:43+00:00,0,2020-02-16 01:46:11+01:00,-3600,True,False,"['__init__.py', 'tests.py']",['801440b922d7253d6537ab6ca871fbe3d4bd983b'],1,2,3,2,1.0,1.0,1.0
+d2fc59042844f99ae472749d6dc4aedbf624e9f3,Fix format_rst_table omission from humanfriendly.tables.__all__,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 02:05:32+01:00,-3600,2020-02-16 02:05:32+01:00,-3600,True,False,['tables.py'],['a58413673ba058b717827a332b42a82e803e305c'],1,2,3,1,,,
+f3af42fb85186f78fe85e8f3dcfa8ce507805205,"Release 7.0: Enhancements, bug fixes, Python compatibility updates
+
+This contains #24, #32, #33, #35, #36 and some changes of my own.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 02:09:47+01:00,-3600,2020-02-16 02:09:47+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py']",['d2fc59042844f99ae472749d6dc4aedbf624e9f3'],3,26,29,2,,,
+fa82acd55457573afb07b52b72e18e56dbcc72bb,Accept pluralized disk size units (#26),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 02:34:05+01:00,-3600,2020-02-16 02:34:05+01:00,-3600,True,False,['__init__.py'],['f3af42fb85186f78fe85e8f3dcfa8ce507805205'],0,3,3,1,0.0,0.0,1.0
+895cff59f00a07bea088f87a9dc4cf0c2df0082c,Remove errant whitespace from changelog,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 02:34:20+01:00,-3600,2020-02-16 02:34:20+01:00,-3600,True,False,['CHANGELOG.rst'],['fa82acd55457573afb07b52b72e18e56dbcc72bb'],1,1,2,1,,,
+ccea88d609d88cb38482a57f7add9ed550bf50fb,"Reorder humanfriendly.terminal.* functions alphabetically
+
+The ""natural order"" that I started out with disintegrated into chaos
+and no longer made any sense so I decided to accept the diff noise of
+reordering the complete module. At least from now on I don't have to
+think about where to put new functions, like it even matters... 😇",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 02:42:44+01:00,-3600,2020-02-16 02:42:44+01:00,-3600,True,False,['terminal.py'],['895cff59f00a07bea088f87a9dc4cf0c2df0082c'],166,166,332,1,,,
+335a69bae53b57004a6b5190ca66ee48e329a8b5,"Bug fix: Make sure pager is available before trying to run it
+
+Noticed this while testing the humanfriendly command line interface
+on Windows (don't ask 😛) but really this applies to all platforms.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 19:31:53+01:00,-3600,2020-02-16 19:31:53+01:00,-3600,True,False,['terminal.py'],['ccea88d609d88cb38482a57f7add9ed550bf50fb'],6,9,15,1,1.0,1.0,1.0
+a5dcf6609f970d838a45a94589b9126c736247cb,"Enable Windows native support for ANSI escape sequences
+
+This was brought to my attention in the coloredlogs issue tracker:
+
+- https://github.com/xolox/python-coloredlogs/issues/71
+- https://github.com/xolox/python-coloredlogs/pull/72
+
+My experiences with ANSI escape sequences started out as part of the
+coloredlogs package but eventually I moved the support for ANSI escape
+sequences to my humanfriendly package. This explains how it now makes
+sense to integrate the Windows native ANSI escape sequence support in
+the humanfriendly package as well.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 19:37:24+01:00,-3600,2020-02-16 19:37:24+01:00,-3600,True,False,"['cli.py', 'compat.py', 'terminal.py']",['335a69bae53b57004a6b5190ca66ee48e329a8b5'],7,106,113,3,0.4375,0.96875,1.0
+fd6c49e8f4e66aa50e59bf2f18f2c90f60ce60ec,Change PyPI URL,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 20:01:36+01:00,-3600,2020-02-16 20:01:36+01:00,-3600,True,False,"['README.rst', 'compat.py', 'terminal.py']",['a5dcf6609f970d838a45a94589b9126c736247cb'],5,5,10,3,,,
+a0440ecc10d76d57fb48011e54a842b8dc862fc5,Document native Windows ANSI support and colorama fallback,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 20:08:16+01:00,-3600,2020-02-16 20:08:16+01:00,-3600,True,False,"['README.rst', 'terminal.py']",['fd6c49e8f4e66aa50e59bf2f18f2c90f60ce60ec'],7,21,28,2,,,
+917fa6f091e8a220e3cbbc822beacd468ce958b2,Release 7.1: Enable Windows native ANSI support,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-16 20:22:47+01:00,-3600,2020-02-16 20:22:47+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py']",['a0440ecc10d76d57fb48011e54a842b8dc862fc5'],1,29,30,2,,,
+3545a6658cdc73d48d79a4fd7ca4ef4d525c6247,"Fix Python 3 incompatibility (distutils.spawn)
+
+Much to my dismay this morning I ran into the following breakage on a
+Python 3.6 installation based on native Debian /  Ubuntu packages:
+
+  Traceback (most recent call last):
+    File ""..."", line 1, in <module>
+      from coloredlogs.syslog import enable_system_logging
+    File "".../coloredlogs/__init__.py"", line 138, in <module>
+      from humanfriendly import coerce_boolean
+    File "".../humanfriendly/__init__.py"", line 25, in <module>
+      from humanfriendly.tables import format_pretty_table as format_table
+    File "".../humanfriendly/tables.py"", line 32, in <module>
+      from humanfriendly.terminal import (
+    File "".../humanfriendly/terminal.py"", line 26, in <module>
+      import distutils.spawn
+  ModuleNotFoundError: No module named 'distutils.spawn'
+
+To enable local development and testing against lots of Python releases
+I use the ""deadsnakes"" package repository to install 2.7, 3.4, 3.5, 3.6,
+3.7 and 3.8 at the same time. Before committing 335a69bae5 I did check
+the availability of the distutils.spawn module:
+
+peter@peter-mbp> ls -l /usr/lib/python*/distutils/spawn.py
+-rw-r--r-- 1 root root 8,5K nov  7 11:07 /usr/lib/python2.7/distutils/spawn.py
+-rw-r--r-- 1 root root 7,4K mrt 29  2019 /usr/lib/python3.4/distutils/spawn.py
+-rw-r--r-- 1 root root 7,3K nov 24 02:35 /usr/lib/python3.5/distutils/spawn.py
+-rw-r--r-- 1 root root 7,3K okt 28 17:30 /usr/lib/python3.6/distutils/spawn.py
+-rw-r--r-- 1 root root 7,7K okt 28 17:30 /usr/lib/python3.7/distutils/spawn.py
+-rw-r--r-- 1 root root 7,7K okt 28 17:30 /usr/lib/python3.8/distutils/spawn.py
+
+I took this to mean it would be available on all these versions. Clearly
+I was wrong and this broke Python 3 compatibility. This new commit
+should fix the issue by using shutil.which() on Python 3 instead.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-18 13:50:46+01:00,-3600,2020-02-18 13:50:46+01:00,-3600,True,False,"['compat.py', 'terminal.py']",['917fa6f091e8a220e3cbbc822beacd468ce958b2'],5,16,21,2,,,
+ad538da652e0bb6bf775ec491542ec245bb9aff9,Release 7.1.1: Restore Debian/Ubuntu Python 3 compatibility (distutils.spawn),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-02-18 14:12:07+01:00,-3600,2020-02-18 14:12:07+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py']",['3545a6658cdc73d48d79a4fd7ca4ef4d525c6247'],2,50,52,2,,,
+110ff3c7fbc1cb5f8296840ebeeda0bbc8173d7f,"Get rid of broken references and noise in docs
+
+Sphinx was emitting a screen full of warnings about unknown references.
+These were bothering me because I've been working on a new Sphinx
+integration and debugging that involved lots of broken references as
+well 😇 so it was hard to distinguish ""the forest from the trees"".
+
+Additionally the humanfriendly.compat module introduced a lot of noise
+into the generated documentation because imported classes and their
+members were being included in the documentation, now also fixed.
+
+Finally I decided to start using 'sphinx-build -nW' to complain loudly
+when even just one broken reference is found. This should encourage the
+discipline to never introduce broken references again!",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 05:33:22+01:00,-3600,2020-03-01 17:32:47+01:00,-3600,True,False,"['Makefile', 'api.rst', '__init__.py', 'compat.py', 'terminal.py', 'testing.py', 'text.py']",['ad538da652e0bb6bf775ec491542ec245bb9aff9'],23,23,46,7,,,
+6040b0532f0cd81a596b2142068816b47c194c36,Fix unittest deprecation warnings in test suite,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 14:26:27+01:00,-3600,2020-03-01 17:34:57+01:00,-3600,True,False,['tests.py'],['110ff3c7fbc1cb5f8296840ebeeda0bbc8173d7f'],3,3,6,1,,,
+66445a3b006f440278374ef6de0537753b5f6b2f,Support for backwards compatible aliases that emit deprecation warnings,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 03:04:41+01:00,-3600,2020-03-01 17:34:57+01:00,-3600,True,False,"['api.rst', 'deprecation.py', 'sphinx.py', 'tests.py', 'requirements-tests.txt']",['6040b0532f0cd81a596b2142068816b47c194c36'],20,280,300,5,0.6785714285714286,0.6904761904761905,0.6666666666666666
+3d2ca96359d3f22e289f676cc2c239ee3cc749ca,Release 7.2: Support for deprecated imports,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 19:23:10+01:00,-3600,2020-03-01 19:23:10+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py']",['66445a3b006f440278374ef6de0537753b5f6b2f'],2,42,44,2,,,
+ba778c0130a6e343ee639878c535639cb9aeb1d6,Support deprecating positional arguments,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 23:50:07+01:00,-3600,2020-03-01 23:59:05+01:00,-3600,True,False,"['deprecation.py', 'tests.py']",['3d2ca96359d3f22e289f676cc2c239ee3cc749ca'],2,115,117,2,0.6440677966101694,1.0,1.0
+1024a687fdbdd6b1caca7b5002c4cdd75ab27110,Bug fix for previous commit 😬,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-02 00:02:09+01:00,-3600,2020-03-02 00:02:09+01:00,-3600,True,False,['deprecation.py'],['ba778c0130a6e343ee639878c535639cb9aeb1d6'],2,2,4,1,,,
+b8ca31c9e5d6bd3c7869b571943f9485b49cc63a,Another bug fix for the previous~1 commit,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-02 00:10:01+01:00,-3600,2020-03-02 00:10:01+01:00,-3600,True,False,['tests.py'],['1024a687fdbdd6b1caca7b5002c4cdd75ab27110'],3,2,5,1,0.0,0.0,0.0
+dd3fff44b19d1d4caed8c3b12bb19c67d2cb6655,Release 7.3: Support for deprecating positional arguments,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-02 00:12:14+01:00,-3600,2020-03-02 00:13:41+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py']",['b8ca31c9e5d6bd3c7869b571943f9485b49cc63a'],10,26,36,2,,,
+cdede11519074941deac07895ef1afa4200fbfc7,"Adopt ""deprecated aliases"" for existing use cases",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 17:24:51+01:00,-3600,2020-03-02 00:14:24+01:00,-3600,True,False,"['__init__.py', 'cli.py', 'terminal.py', 'tests.py']",['dd3fff44b19d1d4caed8c3b12bb19c67d2cb6655'],58,65,123,4,,,
+6b0f0a57d22348b4d17de8264d74f0c0730551b3,Extract HTML to ANSI functionality to humanfriendly.terminal.html module,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 18:59:13+01:00,-3600,2020-03-02 00:14:25+01:00,-3600,True,False,"['CHANGELOG.rst', 'api.rst', '__init__.py', 'html.py', 'tests.py']",['cdede11519074941deac07895ef1afa4200fbfc7'],420,437,857,5,,,
+e0d037dbe706e89d2e6c3067f9923b33069dd62b,"Start cleaning up support for spinners (extract to separate module)
+
+The original Spinner code was written in 2013 and back then my Python
+coding style was very different - I've since gained seven years of
+experience (and have a much more pronounced style now). This is the
+first of several cleanups intended to improve the Spinner class.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 19:42:38+01:00,-3600,2020-03-02 00:14:25+01:00,-3600,True,False,"['api.rst', '__init__.py', 'cli.py', '__init__.py', 'spinners.py', 'tests.py']",['6b0f0a57d22348b4d17de8264d74f0c0730551b3'],289,319,608,6,,,
+1b79aedef69b9034c7fc7a0b8e1d8b9dbf4036d7,"Improve test skipping based on exception types
+
+The humanfriendly.testing.TestCase class was originally created to
+enable skipping of tests that raise specific exception types on Python
+2.6. This involved patching test methods, which has the unfortunate
+side effect of generating confusing pytest output on test failures.
+
+Since then unittest2 was integrated which provided real skipping
+of tests however removing the old test skipping support from the
+humanfriendly.testing module would have resulted in a backwards
+incompatible change, so I never bothered.
+
+I've now decided to bite the bullet and get this over with:
+
+1. Implement an alternative (finer grained) strategy based on a
+   decorator function that applies to individual test methods.
+
+2. Remove test method wrapping from humanfriendly.testing.TestCase.
+
+This affects the executor and vcs-repo-mgr test suites because
+they depend on the old test method wrapping approach. Both test
+suites will need to be migrated to the skip_on_raise decorator.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 20:40:56+01:00,-3600,2020-03-02 00:24:26+01:00,-3600,True,False,"['CHANGELOG.rst', 'testing.py', 'tests.py']",['e0d037dbe706e89d2e6c3067f9923b33069dd62b'],119,79,198,3,0.0,1.0,1.0
+32a3f69c6157e474469993c7920625b1d9d8e1be,"Stop hiding text cursor when spinner is shown
+
+While the code to hide the text cursor when a spinner is shown seems
+simple enough, I've had it happen to me on numerous occasions that the
+text cursor is successfully hidden but visibility is never restored!
+
+I've now decided that I don't care to investigate what's going on here,
+instead I will simply remove the feature, given that it's such a small
+detail in the grand scheme of things (certainly not worth the bug).",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 21:17:44+01:00,-3600,2020-03-02 00:24:31+01:00,-3600,True,False,['spinners.py'],['1b79aedef69b9034c7fc7a0b8e1d8b9dbf4036d7'],10,3,13,1,1.0,0.0,0.6
+8f4a27741e8d4bde4d6af74303c60229e80e05f6,"Make spinners more customizable
+
+The interval at which the spinner is updated and the characters
+used to draw the animation can now be customized by callers.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-01 21:46:09+01:00,-3600,2020-03-02 00:24:32+01:00,-3600,True,False,"['spinners.py', 'tests.py']",['32a3f69c6157e474469993c7920625b1d9d8e1be'],104,135,239,2,1.0,1.0,1.0
+4b09cc6cbb23b353777588be3a81aa9c70b250a1,Fix broken reference in changelog,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-02 00:27:09+01:00,-3600,2020-03-02 00:27:09+01:00,-3600,True,False,['CHANGELOG.rst'],['8f4a27741e8d4bde4d6af74303c60229e80e05f6'],1,1,2,1,,,
+e5ee7d819c6ee41f0db0c36636b6d8a02698de4b,"Use functools.wraps() in decorator functions
+
+I just realized that the Spinner.__init__() documentation had gone
+missing due to my omission to copy __doc__ and decided that now was
+a good time to consistently adopt the proper solution!",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-02 00:56:15+01:00,-3600,2020-03-02 00:56:15+01:00,-3600,True,False,"['decorators.py', 'deprecation.py', 'testing.py']",['4b09cc6cbb23b353777588be3a81aa9c70b250a1'],3,11,14,3,1.0,1.0,1.0
+96b3bf74cb8118879fa894b173cadd71b3c7c632,"Release 8.0: Make spinners more flexible, adopt deprecated imports
+
+The work on spinners was prompted by the following:
+https://github.com/xolox/python-executor/issues/2
+
+Everything else was me going mad on a refactoring spree 😇",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-02 01:06:08+01:00,-3600,2020-03-02 01:06:08+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py']",['e5ee7d819c6ee41f0db0c36636b6d8a02698de4b'],1,66,67,2,,,
+e942340ecb503760603a2884d367cc8ba5467802,Stop using module variables in test suite,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-06 13:32:10+01:00,-3600,2020-03-06 13:32:10+01:00,-3600,True,False,['tests.py'],['96b3bf74cb8118879fa894b173cadd71b3c7c632'],160,179,339,1,,,
+e9bd13a35f772c3422ab444990098fb902943ebd,Add capture=False support to run_cli(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-06 13:33:11+01:00,-3600,2020-03-06 13:33:11+01:00,-3600,True,False,['testing.py'],['e942340ecb503760603a2884d367cc8ba5467802'],9,21,30,1,0.6666666666666666,0.6666666666666666,0.0
+72ce6340c39762a62d19530cbb569970b27508c5,Improve feature parity with capturer.CaptureOutput,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-06 21:43:26+01:00,-3600,2020-03-06 21:43:26+01:00,-3600,True,False,"['testing.py', 'tests.py']",['e9bd13a35f772c3422ab444990098fb902943ebd'],11,49,60,2,1.0,1.0,1.0
+b47b7648846116598c9b6510c6a1dcb3674a94b3,Improve CaptureOutput documentation,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-06 21:43:26+01:00,-3600,2020-03-06 22:00:13+01:00,-3600,True,False,['testing.py'],['72ce6340c39762a62d19530cbb569970b27508c5'],13,19,32,1,,,
+0adf49a4d31e0b8aa74c24f9aed0883d98064628,Release 8.1: Improved output capturing,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-03-06 21:57:08+01:00,-3600,2020-03-06 22:00:47+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py']",['b47b7648846116598c9b6510c6a1dcb3674a94b3'],2,22,24,2,,,
+b7e6fff6d12e516b04a59f5dfd38d447b4cc8247,Case insensitive dictionaries,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-04-19 02:13:48+02:00,-7200,2020-04-19 02:13:48+02:00,-7200,True,False,"['api.rst', 'case.py', 'tests.py']",['0adf49a4d31e0b8aa74c24f9aed0883d98064628'],1,212,213,3,0.686046511627907,0.8488372093023255,0.6976744186046512
+86163954124cf5b72a455f1a4b57b893528fc970,Fix collections.abc deprecation warnings,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-04-19 02:16:38+02:00,-7200,2020-04-19 02:21:04+02:00,-7200,True,False,['case.py'],['b7e6fff6d12e516b04a59f5dfd38d447b4cc8247'],2,9,11,1,,,
+05d02d4f6ef317edf97aca679411ec6514685243,Release 8.2: Simple case insensitive dictionaries,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-04-19 02:21:49+02:00,-7200,2020-04-19 02:21:49+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['86163954124cf5b72a455f1a4b57b893528fc970'],2,10,12,2,,,
+e0ef4bc2f3d6738aec240d33d469094a3813228f,skip pyreadline dependency on Windows with Python 3.9+,Dirk Thomas,dirk-thomas@users.noreply.github.com,Dirk Thomas,dirk-thomas@users.noreply.github.com,2020-09-02 09:35:55-07:00,25200,2020-09-02 09:35:55-07:00,25200,True,False,"['prompts.py', 'setup.py']",['05d02d4f6ef317edf97aca679411ec6514685243'],3,11,14,2,0.0,1.0,1.0
+fe13274f0255b9d98e98d0b1e28bdd4c122ee9b7,fix linter warnings,Dirk Thomas,dirk-thomas@users.noreply.github.com,Dirk Thomas,dirk-thomas@users.noreply.github.com,2020-09-02 09:43:05-07:00,25200,2020-09-02 09:43:05-07:00,25200,True,False,"['tests.py', 'usage.py']",['05d02d4f6ef317edf97aca679411ec6514685243'],4,4,8,2,,,
+ccbefe56303d9978c91e87f1bfac09e8f6a7004c,"""Bug fix"" for flake8 configuration in tox.ini",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-11-30 23:47:00+01:00,-3600,2020-11-30 23:47:00+01:00,-3600,True,False,['tox.ini'],['05d02d4f6ef317edf97aca679411ec6514685243'],1,1,2,1,,,
+82d2e55ce7cae435360a7c0c8f17fa83dd5cad67,"Bug fix: Pluralize as ""1.5 seconds"" instead of ""1.5 second"" (#43)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-11-30 23:58:25+01:00,-3600,2020-11-30 23:58:25+01:00,-3600,True,False,"['tests.py', 'text.py']",['ccbefe56303d9978c91e87f1bfac09e8f6a7004c'],6,5,11,2,,,
+9ae769b28cd855b255af78930499b5fd6b5b1f11,Add concatenate(conjunction='...') option (#30),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-12-01 00:02:50+01:00,-3600,2020-12-01 00:04:11+01:00,-3600,True,False,"['tests.py', 'text.py']",['82d2e55ce7cae435360a7c0c8f17fa83dd5cad67'],6,18,24,2,1.0,1.0,1.0
+8add13869ae2232eaf0fdfd9098c5b66f1867e4b,Add concatenate(serial_comma=True) option (#30),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-12-01 00:11:32+01:00,-3600,2020-12-01 00:11:32+01:00,-3600,True,False,"['tests.py', 'text.py']",['9ae769b28cd855b255af78930499b5fd6b5b1f11'],3,15,18,2,1.0,1.0,0.0
+f4efa449bfcc671dd07a43d33c19ded9e2346548,Add function to pluralize without count,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-12-01 00:16:15+01:00,-3600,2020-12-01 00:34:22+01:00,-3600,True,False,['text.py'],['8add13869ae2232eaf0fdfd9098c5b66f1867e4b'],6,24,30,1,1.0,1.0,0.0
+6f3d9803f3d258d3e51e33c5e0235cdcb08510f5,Bug fix: Make format_number() support negative numbers (#40),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-12-01 00:43:01+01:00,-3600,2020-12-01 00:43:01+01:00,-3600,True,False,"['__init__.py', 'tests.py']",['f4efa449bfcc671dd07a43d33c19ded9e2346548'],2,7,9,2,1.0,1.0,1.0
+f4323c5aca4a0a4354d075d38f266b409856931e,"""Fix"" silly new flake8 invention (E741)",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-12-01 00:58:14+01:00,-3600,2020-12-01 00:58:14+01:00,-3600,True,False,"['tests.py', 'usage.py']",['6f3d9803f3d258d3e51e33c5e0235cdcb08510f5'],5,5,10,2,,,
+44cbc418c4b53c06ad5428d225254590e4e68aff,"Release 9.0: Assorted bug fixes & enhancements
+
+See the changelog update for details.
+This fixes #30, #40 and #43.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-12-01 01:05:27+01:00,-3600,2020-12-01 01:05:27+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py']",['f4323c5aca4a0a4354d075d38f266b409856931e'],1,30,31,2,,,
+1abbe85eb281fca17ae1cb769d0a23acdd2e1bd8,Add humanfriendly.compat.on_macos(),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2020-12-10 01:09:43+01:00,-3600,2020-12-10 01:11:53+01:00,-3600,True,False,"['CHANGELOG.rst', '__init__.py', 'compat.py']",['44cbc418c4b53c06ad5428d225254590e4e68aff'],3,22,25,3,1.0,1.0,1.0
+140402ee3e4d81a1ad7b4e3f68dff9f5bd98f917,Declare support for and test Python 3.9 final,Hugo van Kemenade,hugovk@users.noreply.github.com,Hugo van Kemenade,hugovk@users.noreply.github.com,2020-12-30 21:10:48+02:00,-7200,2020-12-30 21:10:48+02:00,-7200,True,False,"['.travis.yml', 'setup.py']",['1abbe85eb281fca17ae1cb769d0a23acdd2e1bd8'],1,2,3,2,,,
+31d9b9914497cb17872329dc584d7c80bbefe849,Temporarily pin coloredlogs <= 14.0 to fix test_prompt_for_confirmation,Hugo van Kemenade,hugovk@users.noreply.github.com,Hugo van Kemenade,hugovk@users.noreply.github.com,2020-12-30 23:27:25+02:00,-7200,2020-12-30 23:27:25+02:00,-7200,True,False,['requirements-tests.txt'],['1abbe85eb281fca17ae1cb769d0a23acdd2e1bd8'],1,1,2,1,,,
+b99a59ed261597d015a3944db600b06e8e459d75,Install cryptography < 3 on PyPy2,Hugo van Kemenade,hugovk@users.noreply.github.com,Hugo van Kemenade,hugovk@users.noreply.github.com,2020-12-31 13:48:10+02:00,-7200,2020-12-31 13:51:08+02:00,-7200,True,False,['requirements-travis.txt'],['31d9b9914497cb17872329dc584d7c80bbefe849'],0,2,2,1,,,
+d95d308becaecb194d9fba2b0420bd88b3c11c60,"Declare parallel_read_safe=True in setup
+
+See https://www.sphinx-doc.org/en/master/extdev/index.html#extension-metadata",Blaise Kal,blaisekal@gmail.com,GitHub,noreply@github.com,2021-03-25 11:40:13+01:00,-3600,2021-03-25 11:40:13+01:00,-3600,True,False,['sphinx.py'],['1abbe85eb281fca17ae1cb769d0a23acdd2e1bd8'],0,4,4,1,1.0,1.0,1.0
+fb1171abd1f602e72fb4e5fa38dd0ab1ac220252,Whitespace,Blaise Kal,blaisekal@gmail.com,GitHub,noreply@github.com,2021-03-25 12:05:48+01:00,-3600,2021-03-25 12:05:48+01:00,-3600,True,False,['sphinx.py'],['d95d308becaecb194d9fba2b0420bd88b3c11c60'],1,1,2,1,,,
+5b427bd681c31bc6ba01a8fc310a305fea853573,Bump coloredlogs test dependency to pull in bug fix,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-06-11 12:25:44+02:00,-7200,2021-06-11 12:25:44+02:00,-7200,True,False,['requirements-tests.txt'],['b99a59ed261597d015a3944db600b06e8e459d75'],1,1,2,1,,,
+4218ed36087c822fce7f6ed59df2c7a0b49bd9f0,Bump copyright,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-06-11 12:40:34+02:00,-7200,2021-06-11 12:40:34+02:00,-7200,True,False,"['LICENSE.txt', 'README.rst', 'conf.py']",['5d333424f017c527d874439c926003aa191bce85'],3,3,6,3,,,
+d6c4baab5173095daf532706a48f6fa036a01e69,Improve Sphinx extension metadata (follow up to d95d308beca),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-06-11 12:42:42+02:00,-7200,2021-06-11 12:42:42+02:00,-7200,True,False,['sphinx.py'],['4218ed36087c822fce7f6ed59df2c7a0b49bd9f0'],4,4,8,1,0.0,0.0,0.0
+28bdf7a4a6c6599a6551be3ce4bca84c8902560b,Release 9.2: Sphinx extension metadata,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-06-11 12:52:27+02:00,-7200,2021-06-11 12:52:27+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['d6c4baab5173095daf532706a48f6fa036a01e69'],2,24,26,2,,,
+8eb0f01b0cedd3716aa7998d6da787d06c205037,Fix setup.cfg deprecation warning (s/wheel/bdist_wheel/g),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-06-11 12:54:34+02:00,-7200,2021-06-11 12:54:34+02:00,-7200,True,False,['setup.cfg'],['28bdf7a4a6c6599a6551be3ce4bca84c8902560b'],1,1,2,1,,,
+5bf13d7a66fd63b16fa38ba38dc8a7279acd7f6a,Test on GitHub Actions,Hugo van Kemenade,hugovk@users.noreply.github.com,Hugo van Kemenade,hugovk@users.noreply.github.com,2021-06-11 15:37:17+03:00,-10800,2021-06-11 18:30:53+03:00,-10800,True,False,"['test.yml', '.gitignore']",['28bdf7a4a6c6599a6551be3ce4bca84c8902560b'],0,58,58,2,,,
+2cbca9286e947ec72109fa25e2202bd822447b5f,Remove Travis CI,Hugo van Kemenade,hugovk@users.noreply.github.com,Hugo van Kemenade,hugovk@users.noreply.github.com,2021-06-11 17:24:37+03:00,-10800,2021-06-11 18:30:53+03:00,-10800,True,False,['.travis.yml'],['5bf13d7a66fd63b16fa38ba38dc8a7279acd7f6a'],25,0,25,1,,,
+4e9e0f0334194ca3d8fd1884afdac53b62cd0e8d,Fix some Sphinx documentation errors,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-09-17 22:59:46+02:00,-7200,2021-09-17 22:59:46+02:00,-7200,True,False,['api.rst'],['761ede5e489ea7dda70a16c766c914869b1a3d24'],2,5,7,1,,,
+189e4318c5db44e7a9176b6c688d2bb62fd06636,Change readme badges to GitHub Actions and Codecov (#54),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-09-17 23:01:10+02:00,-7200,2021-09-17 23:01:10+02:00,-7200,True,False,['README.rst'],['4e9e0f0334194ca3d8fd1884afdac53b62cd0e8d'],4,4,8,1,,,
+99402a6702d29cae0dfb5836e5a50cebf01ed095,Update readme to be Python 3 compatible (#56),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-09-17 23:01:49+02:00,-7200,2021-09-17 23:01:49+02:00,-7200,True,False,['README.rst'],['189e4318c5db44e7a9176b6c688d2bb62fd06636'],7,10,17,1,,,
+57cb62523a5e5d9137aa26500d15893714fbb2fb,Mention 'humanfriendly --demo' in readme,Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-09-17 23:02:33+02:00,-7200,2021-09-17 23:02:33+02:00,-7200,True,False,['README.rst'],['99402a6702d29cae0dfb5836e5a50cebf01ed095'],1,7,8,1,,,
+278215d3afb04e37b1e5ad3072038d359309000a,Remove humanfriendly.compat.unittest (#53),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-09-17 23:05:26+02:00,-7200,2021-09-17 23:05:26+02:00,-7200,True,False,['compat.py'],['57cb62523a5e5d9137aa26500d15893714fbb2fb'],6,1,7,1,,,
+9f9f271a9d39c7088ddfd4a1af62a997b1c6d7eb,Incorporate pyreadline3 requirement in setup.py (#45),Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-09-17 23:24:49+02:00,-7200,2021-09-17 23:24:49+02:00,-7200,True,False,['setup.py'],['ae2a7e2fe441b35c50def5b93e6d7416a83d8adb'],14,10,24,1,0.0,0.0,0.0
+6758ac61f906cd8528682003070a57febe4ad3cf,"Release 10.0: Improve Windows compatibility (pyreadline[3])
+
+This fixes #44 by merging #45.",Peter Odding,peter@peterodding.com,Peter Odding,peter@peterodding.com,2021-09-17 23:40:11+02:00,-7200,2021-09-17 23:40:11+02:00,-7200,True,False,"['CHANGELOG.rst', '__init__.py']",['9f9f271a9d39c7088ddfd4a1af62a997b1c6d7eb'],2,31,33,2,,,

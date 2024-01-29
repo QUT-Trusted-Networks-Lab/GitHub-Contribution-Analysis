@@ -1,0 +1,568 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+04890969128d9fac0957dc2da3bc494f40220eed,Initial commit,Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-23 08:59:08-04:00,14400,2022-10-23 08:59:08-04:00,14400,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,151,151,3,,,
+9e5726cecfd7a1625f25eea015466767758a8b25,workflows,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 09:10:49-04:00,14400,2022-10-23 09:10:49-04:00,14400,True,False,"['coverage.yaml', 'lint.yaml']",['04890969128d9fac0957dc2da3bc494f40220eed'],0,35,35,2,,,
+c74268561c38ecba5ed6bc12206fae5e6f78d823,add badges,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 09:14:17-04:00,14400,2022-10-23 09:14:17-04:00,14400,True,False,['README.md'],['9e5726cecfd7a1625f25eea015466767758a8b25'],1,4,5,1,,,
+1ea725f78b99779b47daa705f44a1f8906ce30ed,vscode settings,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 09:19:29-04:00,14400,2022-10-23 09:19:29-04:00,14400,True,False,"['extensions.json', 'settings.json']",['c74268561c38ecba5ed6bc12206fae5e6f78d823'],0,19,19,2,,,
+80c95d7e524dc70c55213967678530320e13c785,coverage and lint rc,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 09:20:59-04:00,14400,2022-10-23 09:20:59-04:00,14400,True,False,"['.coveragerc', '.pylintrc']",['1ea725f78b99779b47daa705f44a1f8906ce30ed'],0,4,4,2,,,
+f0a5d03980d6bbece42950201dd4d19074fa06b8,add init.py,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 09:23:49-04:00,14400,2022-10-23 09:23:49-04:00,14400,True,False,['__init__.py'],['80c95d7e524dc70c55213967678530320e13c785'],0,0,0,1,,,
+6e99333b1895aaab5dab3e63d1e9d2b03b1248bb,initial game implementation,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 10:14:27-04:00,14400,2022-10-23 10:14:27-04:00,14400,True,False,"['coverage.yaml', 'constants.py', 'game.py', 'game_players.py', 'hundred_and_ten_error.py']",['f0a5d03980d6bbece42950201dd4d19074fa06b8'],1,65,66,5,1.0,1.0,0.6521739130434783
+d984273f4c5f60dcaf61f57d43c0703adc50b135,move,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 10:29:52-04:00,14400,2022-10-23 10:29:52-04:00,14400,True,False,"['__init__.py', 'constants.py', 'game.py', 'game_players.py', 'hundred_and_ten_error.py']",['6e99333b1895aaab5dab3e63d1e9d2b03b1248bb'],0,0,0,5,,,
+82aa60b6b388922abf53ede5baea21f4b177b04b,add tests,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 10:47:54-04:00,14400,2022-10-23 10:47:54-04:00,14400,True,False,"['game.py', '__init__.py', 'test_game.py']",['d984273f4c5f60dcaf61f57d43c0703adc50b135'],1,64,65,3,1.0,1.0,1.0
+b376cbce14cf213f7d38521f77ddb310ac1f76e9,requirements files,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 10:50:49-04:00,14400,2022-10-23 10:50:49-04:00,14400,True,False,"['requirements-lint.txt', 'requirements-tests.txt', 'requirements.txt']",['82aa60b6b388922abf53ede5baea21f4b177b04b'],0,3,3,3,,,
+f4ef204c625425b0b02803a02b4398a36e5fd827,add setup.py,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 11:41:56-04:00,14400,2022-10-23 11:41:56-04:00,14400,True,False,['setup.py'],['b376cbce14cf213f7d38521f77ddb310ac1f76e9'],0,25,25,1,,,
+a442937b23f16ce289e4772a8f1f93063aca6d7f,remove commented,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 11:42:08-04:00,14400,2022-10-23 11:42:08-04:00,14400,True,False,['setup.py'],['f4ef204c625425b0b02803a02b4398a36e5fd827'],4,1,5,1,,,
+e8ff20e2abe35f9efcb35881ac9ce1903d14ddf8,try deploy,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 11:54:55-04:00,14400,2022-10-23 11:54:55-04:00,14400,True,False,"['deploy.yaml', 'requirements-publish.txt', 'setup.py']",['a442937b23f16ce289e4772a8f1f93063aca6d7f'],1,24,25,3,,,
+4a1429947bca1b00ec11eb0b60ca77e02bf1a640,fixes,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 11:56:01-04:00,14400,2022-10-23 11:56:01-04:00,14400,True,False,['deploy.yaml'],['e8ff20e2abe35f9efcb35881ac9ce1903d14ddf8'],2,1,3,1,,,
+bdca152c6835c29489096b3e8d74eaf960f8ca18,trying out,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 11:57:50-04:00,14400,2022-10-23 11:57:50-04:00,14400,True,False,"['coverage.yaml', 'deploy.yaml']",['4a1429947bca1b00ec11eb0b60ca77e02bf1a640'],3,3,6,2,,,
+b507409b6d8940441c8a95bf5ef767544df7760c,more trying,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 11:59:06-04:00,14400,2022-10-23 11:59:06-04:00,14400,True,False,"['coverage.yaml', 'deploy.yaml']",['bdca152c6835c29489096b3e8d74eaf960f8ca18'],2,2,4,2,,,
+dc71691be6f4e1c662ff9b51cfa6da17bf05a614,better,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:00:30-04:00,14400,2022-10-23 12:00:30-04:00,14400,True,False,['lint.yaml'],['b507409b6d8940441c8a95bf5ef767544df7760c'],2,2,4,1,,,
+f8a074a102caec19f8b9c1954ef8c2920673c3ff,4,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:01:52-04:00,14400,2022-10-23 12:01:52-04:00,14400,True,False,"['coverage.yaml', 'deploy.yaml', 'lint.yaml']",['dc71691be6f4e1c662ff9b51cfa6da17bf05a614'],3,3,6,3,,,
+e79fff0dfbb7f32c83cb5b028f1661db016f605e,deploy on tag creation,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:12:11-04:00,14400,2022-10-23 12:12:11-04:00,14400,True,False,"['deploy.yaml', 'setup.py']",['f8a074a102caec19f8b9c1954ef8c2920673c3ff'],4,6,10,2,,,
+8a994885ead5e4f5626c76b4dba5b775f6d0b59f,try with other env variable,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:21:26-04:00,14400,2022-10-23 12:21:26-04:00,14400,True,False,"['deploy.yaml', 'setup.py']",['e79fff0dfbb7f32c83cb5b028f1661db016f605e'],2,1,3,2,,,
+2c7bc6aa8cada3d142b9eaef955ed8cf40b04c8f,use requirements too,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:22:44-04:00,14400,2022-10-23 12:22:44-04:00,14400,True,False,['deploy.yaml'],['8a994885ead5e4f5626c76b4dba5b775f6d0b59f'],0,1,1,1,,,
+cbfd79c80dab40561fe3b12b9824d2b89054b048,try tag workflow,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:32:04-04:00,14400,2022-10-23 12:32:04-04:00,14400,True,False,['tag.yaml'],['2c7bc6aa8cada3d142b9eaef955ed8cf40b04c8f'],0,17,17,1,,,
+2c6134b87af58bbe9b7965f8ea93eeb31d03d6ba,dash,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:32:48-04:00,14400,2022-10-23 12:32:48-04:00,14400,True,False,['tag.yaml'],['cbfd79c80dab40561fe3b12b9824d2b89054b048'],1,1,2,1,,,
+cbea41a928078c924be3f17e8a57d2c4c9b9da5a,default to patch,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:34:01-04:00,14400,2022-10-23 12:34:01-04:00,14400,True,False,['tag.yaml'],['2c6134b87af58bbe9b7965f8ea93eeb31d03d6ba'],0,1,1,1,,,
+34746f770fc427ac901b3a8688024c92df88abd8,version,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:38:05-04:00,14400,2022-10-23 12:38:05-04:00,14400,True,False,['tag.yaml'],['cbea41a928078c924be3f17e8a57d2c4c9b9da5a'],1,1,2,1,,,
+a3ca4c2a6074cd95dc3eb09749eef0b7553a39de,try all in one file,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:42:39-04:00,14400,2022-10-23 12:42:39-04:00,14400,True,False,"['deploy.yaml', 'tag.yaml']",['34746f770fc427ac901b3a8688024c92df88abd8'],21,16,37,2,,,
+101491846adb72230dee8ac94075a8633951aae6,needs,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:43:58-04:00,14400,2022-10-23 12:43:58-04:00,14400,True,False,['deploy.yaml'],['a3ca4c2a6074cd95dc3eb09749eef0b7553a39de'],0,1,1,1,,,
+5776578d99326e4388c04a79d5f0e58dd518be61,use outputs,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:47:49-04:00,14400,2022-10-23 12:47:49-04:00,14400,True,False,"['deploy.yaml', 'setup.py']",['101491846adb72230dee8ac94075a8633951aae6'],1,3,4,2,,,
+8ccaeb4125a23386324c1e501d98eefca42161e6,try release version,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 12:59:13-04:00,14400,2022-10-23 12:59:13-04:00,14400,True,False,['deploy.yaml'],['5776578d99326e4388c04a79d5f0e58dd518be61'],2,1,3,1,,,
+4493fa21818f7dd650c67bfbaa98bd16cd1df7a9,try through needs,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 13:00:39-04:00,14400,2022-10-23 13:00:39-04:00,14400,True,False,['deploy.yaml'],['8ccaeb4125a23386324c1e501d98eefca42161e6'],1,2,3,1,,,
+3445e0c9eb579e2754d3f1d739c9939a1f8d838b,debug,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 13:03:43-04:00,14400,2022-10-23 13:03:43-04:00,14400,True,False,['deploy.yaml'],['4493fa21818f7dd650c67bfbaa98bd16cd1df7a9'],0,5,5,1,,,
+8c704f794f48000e6534b4cdf94135a05b701896,more outputs,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 13:09:32-04:00,14400,2022-10-23 13:09:32-04:00,14400,True,False,['deploy.yaml'],['3445e0c9eb579e2754d3f1d739c9939a1f8d838b'],0,3,3,1,,,
+053ee8363f002e709bfee942e12b09ceca2606ea,up,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 13:10:28-04:00,14400,2022-10-23 13:10:28-04:00,14400,True,False,['deploy.yaml'],['8c704f794f48000e6534b4cdf94135a05b701896'],2,2,4,1,,,
+4e88d6472f694ea05bb5580efe44ff09c610a3bb,try,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 13:13:07-04:00,14400,2022-10-23 13:13:07-04:00,14400,True,False,['deploy.yaml'],['053ee8363f002e709bfee942e12b09ceca2606ea'],8,8,16,1,,,
+c3df354ca1c8b90ee85e5d01a43d7bcf53cb61c2,test,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 13:14:41-04:00,14400,2022-10-23 13:14:41-04:00,14400,True,False,['deploy.yaml'],['4e88d6472f694ea05bb5580efe44ff09c610a3bb'],8,9,17,1,,,
+9f830c553cebdc2a0333fd1ade578282b19c2524,try less dashes,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 13:15:42-04:00,14400,2022-10-23 13:15:42-04:00,14400,True,False,['deploy.yaml'],['c3df354ca1c8b90ee85e5d01a43d7bcf53cb61c2'],2,2,4,1,,,
+06d61798fd009785ff07c48909244494f8049461,set for main,Seamus Lowry,spl1owry3@gmail.com,Seamus Lowry,spl1owry3@gmail.com,2022-10-23 13:17:11-04:00,14400,2022-10-23 13:17:11-04:00,14400,True,False,['deploy.yaml'],['9f830c553cebdc2a0333fd1ade578282b19c2524'],6,1,7,1,,,
+9b610a85b15ef44a0f4b0686fc2400b33a35e7af,"chore/readme fixes (#2)
+
+* fix other
+
+* text",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-23 13:25:11-04:00,14400,2022-10-23 13:25:11-04:00,14400,True,False,['README.md'],['d88bd68b30d73a473a15ca7c20c54d8978c208cc'],2,4,6,1,,,
+dc73170bcd93e90ab730c8ea62158a7ef29b3b36,"chore/player data rename (#3)
+
+* rename object
+
+* rename object
+
+* rename property on game
+
+* rename property on players
+
+* rename to people
+
+* rename property on people
+
+* rename property on game",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-23 13:43:27-04:00,14400,2022-10-23 13:43:27-04:00,14400,True,False,"['game.py', 'people.py', 'test_game.py']",['9b610a85b15ef44a0f4b0686fc2400b33a35e7af'],19,19,38,3,,,
+a9e82bec1aba22bb3138ef5fdf3eeaa4325eb5b7,"chore/people refactor (#4)
+
+* initial attempt
+
+* fix some tests
+
+* fix some tests
+
+* fix tests fully
+
+* comments
+
+* organizer tests
+
+* checks against invitee
+
+* remove unnecessary",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-23 17:52:17-04:00,14400,2022-10-23 17:52:17-04:00,14400,True,False,"['constants.py', 'game.py', 'people.py', 'person.py', 'test_game.py']",['dc73170bcd93e90ab730c8ea62158a7ef29b3b36'],40,135,175,5,1.0,1.0,0.8
+34a56861a8eb3509ae1f0fbce96e4773f93e307a,"feature/leave game (#5)
+
+* add round
+
+* add leave game behavior",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-24 16:12:07-04:00,14400,2022-10-24 16:12:07-04:00,14400,True,False,"['constants.py', 'game.py', 'round.py', 'test_person.py', 'test_waiting_for_players_game.py']",['a9e82bec1aba22bb3138ef5fdf3eeaa4325eb5b7'],21,121,142,5,1.0,1.0,0.9347826086956522
+b737f0a8974e2bf525d0cd87847165f1b9be8d6a,"feature/create round (#6)
+
+* add players to round
+
+* change role to game roles
+
+* add role for rounds
+
+* starting game
+
+* test starting the game
+
+* add testing config to VScode settings
+
+* add player info to game start",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-24 17:42:48-04:00,14400,2022-10-24 17:42:48-04:00,14400,True,False,"['settings.json', 'constants.py', 'game.py', 'people.py', 'round.py', 'test_person.py', 'test_start_of_game.py', 'test_waiting_for_players_game.py']",['34a56861a8eb3509ae1f0fbce96e4773f93e307a'],66,174,240,8,1.0,1.0,0.9047619047619048
+52a0549ebb6d701c9485cfaac3d0f9503d92777b,"chore/typing (#7)
+
+* types for person
+
+* types for people
+
+* fix for types for people
+
+* types for round
+
+* type error resolved
+
+* add type checking to pipeline
+
+* fix type issue
+
+* accessibility enum
+
+* add game types",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-24 20:27:58-04:00,14400,2022-10-24 20:27:58-04:00,14400,True,False,"['lint.yaml', 'constants.py', 'game.py', 'people.py', 'person.py', 'round.py', 'requirements-lint.txt', 'test_waiting_for_players_game.py']",['b737f0a8974e2bf525d0cd87847165f1b9be8d6a'],30,57,87,8,1.0,1.0,1.0
+5e0837f6c2bafaa180a1a70a44739186797077e7,"feature/upsert (#8)
+
+* first attepmt
+
+* test upsert
+
+* write people as an extension of list",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-24 23:43:03-04:00,14400,2022-10-24 23:43:03-04:00,14400,True,False,"['game.py', 'people.py', 'person.py', 'round.py', 'test_people.py', 'test_person.py', 'test_start_of_game.py', 'test_waiting_for_players_game.py']",['52a0549ebb6d701c9485cfaac3d0f9503d92777b'],81,182,263,8,1.0,1.0,0.76
+0d3ff17ed4ff3cb207c554ce3ae13bbcbe11a9d6,"feature/next player (#9)
+
+* TDD
+
+* add role add/remove/swap and next player
+
+* add prepassed as a round role
+
+* improve docs",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-25 19:20:53-04:00,14400,2022-10-25 19:20:53-04:00,14400,True,False,"['constants.py', 'game.py', 'people.py', 'person.py', 'round.py', '__init__.py', 'test_start_of_game.py', 'test_waiting_for_players_game.py', '__init__.py', 'test_next_person.py', 'test_people_roles.py', 'test_person.py', 'test_upsert_people.py']",['5e0837f6c2bafaa180a1a70a44739186797077e7'],36,245,281,13,1.0,1.0,0.8656716417910447
+586f8d46aa02961f916768d65f3c096cd73316ce,"feature/bid (#10)
+
+* TDD
+
+* add bidding behavior
+
+* no space
+
+* remove unneeded comment
+
+* reorder ifs",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-26 16:30:52-04:00,14400,2022-10-26 16:30:52-04:00,14400,True,False,"['bid.py', 'constants.py', 'game.py', 'round.py', 'test_bid_comparison.py', 'test_bidding.py', 'test_start_of_game.py', 'test_people_roles.py']",['0d3ff17ed4ff3cb207c554ce3ae13bbcbe11a9d6'],33,449,482,8,1.0,0.8983739837398373,0.8699186991869918
+ae8df2fb3fdf3fda4cacf6a223c923cc00b36b6f,"chore/change package name (#11)
+
+* change package name
+
+* change name in setup
+
+* change deploy branch to test
+
+* commit to try pipeline again
+
+* reset to main",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-26 16:54:00-04:00,14400,2022-10-26 16:54:00-04:00,14400,True,False,"['__init__.py', 'bid.py', 'constants.py', 'game.py', 'hundred_and_ten_error.py', 'people.py', 'person.py', 'round.py', 'setup.py', 'test_bid_comparison.py', 'test_bidding.py', 'test_start_of_game.py', 'test_waiting_for_players_game.py', 'test_next_person.py', 'test_people_roles.py', 'test_person.py', 'test_upsert_people.py']",['586f8d46aa02961f916768d65f3c096cd73316ce'],47,47,94,17,,,
+96ed5abe6a871bf6167b892423a0fa51a5f3f569,"feature/prepass (#12)
+
+* implement prepass handling
+
+* initial test of prepass handling
+
+* assert that prepass is removed
+
+* ensure correct status and test ending round with prepassing
+
+* prepassed player has no available bids",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-26 17:25:09-04:00,14400,2022-10-26 17:25:09-04:00,14400,True,False,"['round.py', 'test_bidding.py']",['ae8df2fb3fdf3fda4cacf6a223c923cc00b36b6f'],3,55,58,2,0.1282051282051282,1.0,0.9743589743589743
+49c5396fdd5a72c702441b0c289f8596b0bffc4a,"feature/seeded deck (#13)
+
+* add test for POC of deck
+
+* POC of random seqencing
+
+* remove uuid from game
+
+* add deck",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-27 16:27:13-04:00,14400,2022-10-27 16:27:13-04:00,14400,True,False,"['constants.py', 'deck.py', 'game.py', '__init__.py', 'test_deck.py', 'test_waiting_for_players_game.py']",['96ed5abe6a871bf6167b892423a0fa51a5f3f569'],5,192,197,6,1.0,1.0,0.9210526315789473
+3e4c8194f9f77a62420313be77323cb331bb066d,"feature/player (#14)
+
+* TDD
+
+* player object with a hand
+
+* comment fix",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-28 16:18:42-04:00,14400,2022-10-28 16:18:42-04:00,14400,True,False,"['.pylintrc', 'bid.py', 'game.py', 'group.py', 'person.py', 'round.py', 'test_bidding.py', 'test_start_of_game.py', 'test_waiting_for_players_game.py', 'test_next_person.py', 'test_people_roles.py', 'test_person.py', 'test_upsert_people.py']",['49c5396fdd5a72c702441b0c289f8596b0bffc4a'],188,189,377,13,1.0,1.0,1.0
+c7f6a18589836b140371ab5300e1f3229a96c338,"feature/deal (#15)
+
+* add deck to round
+
+* add cards to hand at start of game
+
+* check hand size at start of round
+
+* generalize new round",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-28 17:47:56-04:00,14400,2022-10-28 17:47:56-04:00,14400,True,False,"['constants.py', 'game.py', 'round.py', 'test_start_of_game.py']",['3e4c8194f9f77a62420313be77323cb331bb066d'],18,25,43,4,,,0.0
+d109c54f9b2ae2dd10f82a3f32b908b8887df965,"Chore/reuse workflows (#16)
+
+* try with other workflow
+
+* tag
+
+* pass token
+
+* publish using other workflow
+
+* tag at main
+
+* rerun
+
+* try with new name
+
+* new branch
+
+* specify version
+
+* try again
+
+* use on main
+
+* coverage
+
+* use better name
+
+* no need to deploy always
+
+* all on main
+
+* test one more time
+
+* remove branch",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-30 09:28:20-04:00,14400,2022-10-30 09:28:20-04:00,14400,True,False,"['coverage.yaml', 'deploy.yaml', 'lint.yaml']",['c7f6a18589836b140371ab5300e1f3229a96c338'],54,13,67,3,,,
+4d3c68bcde150c37eaa7d2b9f9da76aaa8e6aeac,"chore/test yaml (#17)
+
+* req rename
+
+* rename
+
+* test
+
+* remove",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-30 17:37:40-04:00,14400,2022-10-30 17:37:40-04:00,14400,True,False,['requirements-test.txt'],['d109c54f9b2ae2dd10f82a3f32b908b8887df965'],0,0,0,1,,,
+711011035f1fa16137ec31772571900cb2de85d0,"feature/new round no bidders (#18)
+
+* implement behavior
+
+* tests
+
+* split up tests and test
+
+* move logic to private method
+
+* add 4th round",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-10-31 07:57:49-04:00,14400,2022-10-31 07:57:49-04:00,14400,True,False,"['constants.py', 'game.py', 'group.py', 'round.py', 'test_bidding.py', 'test_end_bidding.py', 'test_next_person.py']",['4d3c68bcde150c37eaa7d2b9f9da76aaa8e6aeac'],142,203,345,7,0.2857142857142857,1.0,0.9285714285714286
+eb8ad0eee8c048c3073fe8e0aa4c8cb8896bc565,"feature/trump selection (#19)
+
+* TDD
+
+* add trump selection and use dataclasses
+
+* no commented code
+
+* put cards back as a prop on the deck
+
+* address linting errors
+
+* add player number and complete end bidding and trump selection cleanup",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-01 18:40:32-04:00,14400,2022-11-01 18:40:32-04:00,14400,True,False,"['bid.py', 'constants.py', 'deck.py', 'game.py', 'group.py', 'round.py', 'test_deck.py', 'test_bidding.py', 'test_end_bidding.py', 'test_start_of_game.py', 'test_trump_selection.py', 'test_waiting_for_players_game.py', 'game_creation.py', 'test_person.py']",['711011035f1fa16137ec31772571900cb2de85d0'],207,268,475,14,1.0,0.0,1.0
+b5937837c4eb5dd587676876b088f8e380608600,"chore/test game setup (#20)
+
+* setup game function
+
+* private waiting for players game
+
+* private bidding game
+
+* private completed no bidders game
+
+* private trump selection game
+
+* private tricks game
+
+* use setup to test bidding
+
+* use setup to test bidding
+
+* use setup to test waiting for players
+
+* rename tests setup to arrange
+
+* comment
+
+* use arrange more
+
+* add a massage function to game arrangement
+
+* comment
+
+* comment",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-01 22:20:54-04:00,14400,2022-11-01 22:20:54-04:00,14400,True,False,"['game.py', 'arrange.py', 'test_bidding.py', 'test_end_bidding.py', 'test_start_of_game.py', 'test_trump_selection.py', 'test_waiting_for_players_game.py', 'game_creation.py']",['eb8ad0eee8c048c3073fe8e0aa4c8cb8896bc565'],219,190,409,8,0.5483870967741935,0.0,0.0
+faf6ffe6c1e688fe75c4a06b2106b52b7829748e,"feature/play card (#21)
+
+* add trick and test
+
+* add ability to play card and test",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-02 17:24:49-04:00,14400,2022-11-02 17:24:49-04:00,14400,True,False,"['constants.py', 'game.py', 'group.py', 'round.py', 'trick.py', 'arrange.py', 'test_play_card.py', '__init__.py', 'test_trick.py']",['b5937837c4eb5dd587676876b088f8e380608600'],12,280,292,9,0.8413793103448276,0.8551724137931035,0.9379310344827586
+fa1b0598e7eee622f583f7a4423064fc63f6ddba,"feature/discard (#22)
+
+* add discard status
+
+* add discard class
+
+* add discard
+
+* discard",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-02 18:15:00-04:00,14400,2022-11-02 18:15:00-04:00,14400,True,False,"['constants.py', 'discard.py', 'game.py', 'round.py', 'arrange.py', 'test_bidding.py', 'test_discard.py', 'test_end_bidding.py', 'test_trump_selection.py']",['faf6ffe6c1e688fe75c4a06b2106b52b7829748e'],17,137,154,9,0.6818181818181818,0.8939393939393939,1.0
+20c5fad328e779d4ea4a4796c16a98606dd64727,"feature/score round (#23)
+
+* TDD
+
+* add round scoring
+
+* remove unneeded",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-03 20:38:58-04:00,14400,2022-11-03 20:38:58-04:00,14400,True,False,"['constants.py', 'game.py', 'round.py', 'arrange.py', 'test_play_card.py', 'test_round_scoring.py', 'test_start_of_game.py']",['fa1b0598e7eee622f583f7a4423064fc63f6ddba'],22,217,239,7,0.7719298245614035,0.6578947368421053,0.8421052631578947
+a0fc2062a2ab7981383d5cf449f26d1f4a04b778,"feature/score game (#24)
+
+* TDD
+
+* add round scoring and bleeding",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-04 16:23:39-04:00,14400,2022-11-04 16:23:39-04:00,14400,True,False,"['constants.py', 'game.py', 'round.py', 'trick.py', 'arrange.py', 'test_game_scoring.py', 'test_play_card.py', 'test_round_scoring.py', 'test_trick.py']",['20c5fad328e779d4ea4a4796c16a98606dd64727'],97,396,493,9,0.6727272727272727,0.8121212121212121,0.9939393939393939
+2d4f85c332ce58cbb7a21057286a0d64d6071875,"chore/actions (#25)
+
+* move bid to action file
+
+* move discard to actions
+
+* action to actions
+
+* move play to actions
+
+* add pass and select trump to actions
+
+* fix tests with act updates
+
+* only interact through the act method
+
+* prep for fall through",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-04 17:05:59-04:00,14400,2022-11-04 17:05:59-04:00,14400,True,False,"['actions.py', 'bid.py', 'discard.py', 'game.py', 'round.py', 'trick.py', 'arrange.py', 'test_bid_comparison.py', 'test_bidding.py', 'test_discard.py', 'test_end_bidding.py', 'test_play_card.py', 'test_round_scoring.py', 'test_trump_selection.py', 'test_trick.py']",['a0fc2062a2ab7981383d5cf449f26d1f4a04b778'],115,142,257,15,1.0,0.14285714285714285,1.0
+14a6795f61f9d79cdd3a45765d2135c2305f0b8b,"chore/comment standardization (#26)
+
+* use three
+
+* use single quotes for coments
+
+* right above improts",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-04 17:10:59-04:00,14400,2022-11-04 17:10:59-04:00,14400,True,False,"['game.py', 'group.py', 'round.py', 'arrange.py']",['2d4f85c332ce58cbb7a21057286a0d64d6071875'],27,23,50,4,,,
+4cb1bc1bea137c65f87b498527449a95aa570c6e,"chore/clean up (#27)
+
+* add check to status
+
+* move check to winner
+
+* clean up game
+
+* clean up round
+
+* clean up round",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-05 08:49:07-04:00,14400,2022-11-05 08:49:07-04:00,14400,True,False,"['game.py', 'round.py']",['14a6795f61f9d79cdd3a45765d2135c2305f0b8b'],228,228,456,2,0.0,1.0,
+6dd222ed0ecf9efbcd775b595e8eeee13ac1064f,"chore/documentation (#28) update #minor version
+
+* mission statement
+
+* allow leaving to empty game
+
+* expose renamed Game in init
+
+* add documentation for joining, inviting, and leaving
+
+* starting the game
+
+* heading
+
+* add passing and unpassing
+
+* more useful exports
+
+* documentation of select trump, discard, and play
+
+* document status
+
+* document reading the game state
+
+* remove testing code
+
+* initial how to play
+
+* typo
+
+* grammar
+
+* list
+
+* tense
+
+* word choice
+
+* too wordy
+
+* specificity
+
+* clarify stealing
+
+* close parens
+
+* discarding
+
+* typo
+
+* caroline edits 1
+
+* try with full tables
+
+* align
+
+* center align
+
+* center other table for comparison
+
+* amounts to options
+
+* center not allowed
+
+* try with div
+
+* center both
+
+* rank column
+
+* Revert ""rank column""
+
+This reverts commit 2ac602a374349a397d78cbfc068285a711616ae6.
+
+* arrow
+
+* center
+
+* scale
+
+* try
+
+* text partial
+
+* add rank to other table
+
+* remove default markdown options
+
+* caroline edits 2
+
+* caroline edits 3",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-06 19:39:10-05:00,18000,2022-11-06 19:39:10-05:00,18000,True,False,"['README.md', '__init__.py', 'game.py', 'test_waiting_for_players_game.py']",['4cb1bc1bea137c65f87b498527449a95aa570c6e'],10,560,570,4,0.0,0.0,0.0
+e56f9eeeb0f29ce21b1080b5369c88dddfaf7cae,"feature/pypi release (#29) #minor version bump for deployment to pypi
+
+* typo
+
+* test pypi deployment change
+
+* new deployment strategies
+
+* try
+
+* try
+
+* try again
+
+* try again
+
+* runs on
+
+* try
+
+* with checkout
+
+* fetch 0
+
+* run number",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-07 17:58:33-05:00,18000,2022-11-07 17:58:33-05:00,18000,True,False,"['deploy-test.yaml', 'deploy.yaml', 'README.md']",['6dd222ed0ecf9efbcd775b595e8eeee13ac1064f'],3,30,33,3,,,
+c5ea227d535563969315306ea0a112a56755d8a4,"feature/card string represetation (#32)
+
+* override card repr
+
+* string representation",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-11 10:02:58-05:00,18000,2022-11-11 10:02:58-05:00,18000,True,False,"['deck.py', 'test_deck.py']",['e56f9eeeb0f29ce21b1080b5369c88dddfaf7cae'],0,10,10,2,1.0,1.0,1.0
+8ef3d564df6452b31c5cf8be0482d2de386e45c0,"feature/machine move (#33) first #major release
+
+* automate flag
+
+* add function to get active players trumps
+
+* start on decisions
+
+* trump selection decision
+
+* discourage bidding without the five
+
+* test decisions
+
+* initial implementation of suggested moves
+
+* test
+
+* add documentation for automated play",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-12 09:09:38-05:00,18000,2022-11-12 09:09:38-05:00,18000,True,False,"['README.md', 'decisions.py', 'game.py', 'group.py', 'round.py', 'arrange.py', '__init__.py', 'test_bid_decision.py', 'test_card_decisions.py', 'test_trump_decision.py', '__init__.py', 'test_automated_play.py']",['c5ea227d535563969315306ea0a112a56755d8a4'],11,432,443,12,1.0,0.8911290322580645,1.0
+763771e1c6028cfa9f5be1f90e04198458224166,"feature/init card with just identity (#34)
+
+* set up card info
+
+* initialize cards pulling in metadata
+
+* fix bid decision tests
+
+* fix card decision tests
+
+* fix trump decision tests
+
+* fix play card tests
+
+* fix trick tests
+
+* fix transcription error in scoring values of black cards",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-13 09:29:47-05:00,18000,2022-11-13 09:29:47-05:00,18000,True,False,"['deck.py', 'test_bid_decision.py', 'test_card_decisions.py', 'test_trump_decision.py', 'test_play_card.py', 'test_person.py', 'test_trick.py']",['8ef3d564df6452b31c5cf8be0482d2de386e45c0'],128,167,295,7,1.0,1.0,1.0
+66cf75f62612a2bab948b8d0cb47908cd788c5ad,"feature/automate mid round (#35)
+
+* automate mid-round implemention
+
+* test",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-19 12:32:16-05:00,18000,2022-11-19 12:32:16-05:00,18000,True,False,"['game.py', 'round.py', 'test_automated_play.py']",['763771e1c6028cfa9f5be1f90e04198458224166'],4,41,45,3,1.0,1.0,1.0
+21c67ddabdd07f03861963e68e3c2a313ec42cd0,"feature/actions (#36)
+
+* action class
+
+* reorder
+
+* rename
+
+* save as select trump
+
+* add events
+
+* fix tests
+
+* get events of game
+
+* return actions taken
+
+* comment
+
+* Revert ""return actions taken""
+
+This reverts commit 475b7b7048fa082a6405b60b56f8b6e32958c4e7.",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-20 15:23:06-05:00,18000,2022-11-20 15:23:06-05:00,18000,True,False,"['actions.py', 'events.py', 'game.py', 'round.py', 'test_game_events.py']",['66cf75f62612a2bab948b8d0cb47908cd788c5ad'],42,220,262,5,0.8125,0.425,0.9375
+905a22c42755bb28d73c51b4ff55a889d4619da2,"feature/original hand (#38)
+
+* add detailed discard
+
+* use detailed discard
+
+* add unfilled hands array to roundstart event
+
+* add actual hand details to the round start
+
+* up max public methods",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-22 07:28:32-05:00,18000,2022-11-22 07:28:32-05:00,18000,True,False,"['.pylintrc', 'actions.py', 'events.py', 'game.py', 'round.py']",['21c67ddabdd07f03861963e68e3c2a313ec42cd0'],8,29,37,5,0.0,0.75,1.0
+839751d75394064681ee377e426a1f2eefdbedd4,"feature/round scores (#37)
+
+* TDD
+
+* add scores by rounds",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-26 10:20:44-05:00,18000,2022-11-26 10:20:44-05:00,18000,True,False,"['game.py', 'round.py', 'test_game_scoring.py']",['905a22c42755bb28d73c51b4ff55a889d4619da2'],1,15,16,3,1.0,0.9166666666666666,1.0
+e42cce264fb13ef8e7cb628a4addd9cbc1a767d8,"bug/always trick end (#40)
+
+* don't include trick end unless ended
+
+* test",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-11-28 21:52:47-05:00,18000,2022-11-28 21:52:47-05:00,18000,True,False,"['round.py', 'test_game_events.py']",['839751d75394064681ee377e426a1f2eefdbedd4'],2,16,18,2,0.0,0.7777777777777778,1.0
+0fb31458953e046afde5633bf98c573835b15dda,"chore/too many methods (#39)
+
+* update lint config
+
+* pare down exposed methods on round",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2022-12-02 19:50:26-05:00,18000,2022-12-02 19:50:26-05:00,18000,True,False,"['.pylintrc', 'game.py', 'round.py']",['e42cce264fb13ef8e7cb628a4addd9cbc1a767d8'],44,27,71,3,0.0,0.0,0.0
+9e2fa900d048dd18191419d3ef7eeeaf28e164f5,"chore/typos (#42) #patch
+
+* one hierarchy fix
+
+* rest of spelling fixes
+
+* try coverage fix
+
+* coverage fix",Seamus Lowry,spl1owry3@gmail.com,GitHub,noreply@github.com,2023-02-04 13:30:11-05:00,18000,2023-02-04 13:30:11-05:00,18000,True,False,"['.coveragerc', 'README.md']",['0fb31458953e046afde5633bf98c573835b15dda'],3,5,8,2,,,

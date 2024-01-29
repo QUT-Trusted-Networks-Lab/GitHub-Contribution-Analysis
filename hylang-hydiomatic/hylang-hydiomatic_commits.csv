@@ -1,0 +1,879 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+32c614d6ef00404f75caecb5364d019444509b46,"Initial import
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-19 23:21:19+01:00,-3600,2014-01-19 23:21:19+01:00,-3600,True,False,"['.gitignore', '.travis.yml', 'GPL', 'LGPL', 'README.md', '__init__.hy', 'core.hy', 'rules.hy', 'setup.sh', '__init__.py', 'hydiomatic_tests.hy']",[],0,975,975,11,,,
+ab061f2bc643feec21a50cd6e0e779a721fd68ce,"hydiomatic.rules: Simplify the * simplification rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-19 23:22:48+01:00,-3600,2014-01-19 23:22:48+01:00,-3600,True,False,['rules.hy'],['32c614d6ef00404f75caecb5364d019444509b46'],3,2,5,1,,,
+7934ccefd78e1c732ec9d0820e56a22e886410e0,"hydiomatic.rules: Add comments above the rules
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-19 23:25:33+01:00,-3600,2014-01-19 23:25:33+01:00,-3600,True,False,['rules.hy'],['ab061f2bc643feec21a50cd6e0e779a721fd68ce'],0,3,3,1,,,
+e0a158db533b187a51c792931c44c87c4bf7913d,"hydiomatic.rules: (+ x (+ ...)) => (+ x ...)
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-19 23:28:35+01:00,-3600,2014-01-19 23:28:35+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['7934ccefd78e1c732ec9d0820e56a22e886410e0'],7,17,24,2,,,
+a46f0cd5341c6a81019cc54d3b57c27781ce807b,"hydiomatic.rules: Remove unneeded imports
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-19 23:35:04+01:00,-3600,2014-01-19 23:35:04+01:00,-3600,True,False,['rules.hy'],['e0a158db533b187a51c792931c44c87c4bf7913d'],4,1,5,1,,,
+598479a9ae5a18adfbcf4c0b52adc4f5e4423a0a,"hydiomatic: Quasiquote > ad-hoc quoting
+
+Many thanks to Nicolas Dandrimont <nicolas.dandrimont@crans.org> for the
+idea and help.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-19 23:36:56+01:00,-3600,2014-01-19 23:36:56+01:00,-3600,True,False,"['core.hy', 'rules.hy']",['a46f0cd5341c6a81019cc54d3b57c27781ce807b'],16,11,27,2,,,
+dffbf6e810b4443ee0b3db17a89ab9f736780aa2,"hydiomatic.rules: Collapse the (* x (* ...)) and (+ x (+ ...)) rules
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-19 23:41:32+01:00,-3600,2014-01-19 23:41:32+01:00,-3600,True,False,['rules.hy'],['598479a9ae5a18adfbcf4c0b52adc4f5e4423a0a'],6,6,12,1,,,
+c6d94089764064729496e396d324157f5b201c0a,".travis.yml: Force all kinds of stuff to get the deps installed
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-19 23:46:40+01:00,-3600,2014-01-19 23:46:40+01:00,-3600,True,False,['.travis.yml'],['dffbf6e810b4443ee0b3db17a89ab9f736780aa2'],1,1,2,1,,,
+05a3a95c15c485d1410a9e2e8bc160912f575f6b,"setup.sh: Try --upgrade...
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 00:42:01+01:00,-3600,2014-01-20 00:42:01+01:00,-3600,True,False,['setup.sh'],['c6d94089764064729496e396d324157f5b201c0a'],2,4,6,1,,,
+b6bd226fed062a1ffac0fb0d0849a2602e573846,".travis.yml: Try wiping
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 00:44:05+01:00,-3600,2014-01-20 00:44:05+01:00,-3600,True,False,['.travis.yml'],['05a3a95c15c485d1410a9e2e8bc160912f575f6b'],1,1,2,1,,,
+ce01ff2dfc674fa656bbf802daeab0d0299cc1d4,"hydiomatic.core: Implement (simplify)
+
+This function takes a form, and applies simplifications until no more
+rules apply.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 00:46:28+01:00,-3600,2014-01-20 00:46:28+01:00,-3600,True,False,"['core.hy', 'hydiomatic_tests.hy']",['b6bd226fed062a1ffac0fb0d0849a2602e573846'],6,38,44,2,,,
+40e6c7691a2e7c595e01674ee4ab9abd9c50206f,"bin/hydiomatic: Small script to launch a REPL
+
+This launches a REPL with hydiomatic pre-imported.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 00:53:29+01:00,-3600,2014-01-20 00:53:29+01:00,-3600,True,False,['hydiomatic'],['ce01ff2dfc674fa656bbf802daeab0d0299cc1d4'],0,2,2,1,,,
+2c59cdb45d69f7030159539dea9489f267117934,"hydiomatic.rules: Add a (+ 0 x) => x rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 00:53:57+01:00,-3600,2014-01-20 00:53:57+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['40e6c7691a2e7c595e01674ee4ab9abd9c50206f'],0,12,12,2,,,
+556a7b651682833ffeb8e9b3ee1f0665797de7e0,"hydiomatic.rules: Add an (* 1 x) => x rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 01:06:25+01:00,-3600,2014-01-20 01:06:25+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['2c59cdb45d69f7030159539dea9489f267117934'],8,17,25,2,,,
+ca378daac88c88d5ca5ede97311b5d92905eb37c,"hydiomatic.rules: Simplify the (?op ?zero x) rules
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 01:10:07+01:00,-3600,2014-01-20 01:10:07+01:00,-3600,True,False,['rules.hy'],['556a7b651682833ffeb8e9b3ee1f0665797de7e0'],5,6,11,1,,,
+c47e1744e7d01992409e7e25632ac00b2228ce9f,"hydiomatic.rules: expression => expr
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 01:12:55+01:00,-3600,2014-01-20 01:12:55+01:00,-3600,True,False,['rules.hy'],['ca378daac88c88d5ca5ede97311b5d92905eb37c'],7,7,14,1,,,
+8bdd832f7a46a5a0ab7d66ce4e3a8f1eac28a81d,"tests: Move a test to a later position
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 01:20:40+01:00,-3600,2014-01-20 01:20:40+01:00,-3600,True,False,['hydiomatic_tests.hy'],['c47e1744e7d01992409e7e25632ac00b2228ce9f'],6,6,12,1,,,
+85155104740dea192b3833af12a4846971c2ef9f,"hydiomatic.rules: Add a `~x => x rule
+
+Many thanks to Nicolas Dandrimont <nicolas.dandrimont@crans.org> for the
+suggestion.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 01:23:36+01:00,-3600,2014-01-20 01:23:36+01:00,-3600,True,False,"['core.hy', 'rules.hy', 'hydiomatic_tests.hy']",['8bdd832f7a46a5a0ab7d66ce4e3a8f1eac28a81d'],1,14,15,3,,,
+e9b5dcab2823025e7db442f427a436d838a3fa4f,"hydiomatic.core: Add support for reaching into lists too
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 01:32:52+01:00,-3600,2014-01-20 01:32:52+01:00,-3600,True,False,"['core.hy', 'hydiomatic_tests.hy']",['85155104740dea192b3833af12a4846971c2ef9f'],1,5,6,2,,,
+235b00336d3cf1c31f2e5da1b052d26ba01532dc,"hydiomatic.rules: Fix a non-idiomacy
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 01:33:58+01:00,-3600,2014-01-20 01:33:58+01:00,-3600,True,False,['rules.hy'],['e9b5dcab2823025e7db442f427a436d838a3fa4f'],1,1,2,1,,,
+80729cc79bad19f8f81f93f0dba814321738346f,"hydiomatic.rules: Code cleanup
+
+In rules/arithmeticᵒ, in the (op zero X) rule, we're going to unify out
+with x anyway, so we can just skip x, and unify with out right away.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 01:44:06+01:00,-3600,2014-01-20 01:44:06+01:00,-3600,True,False,['rules.hy'],['235b00336d3cf1c31f2e5da1b052d26ba01532dc'],4,3,7,1,,,
+2176bb49af9dbd2aead06ff7533feb291514184a,"hydiomatic.rules: Added control structure transform rules
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 02:07:54+01:00,-3600,2014-01-20 02:07:54+01:00,-3600,True,False,"['core.hy', 'rules.hy', 'hydiomatic_tests.hy']",['80729cc79bad19f8f81f93f0dba814321738346f'],4,53,57,3,,,
+682e21f13d14e20308c808b6d176c591241b60ea,"hydiomatic.rules: Added rules about equality
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 02:17:32+01:00,-3600,2014-01-20 02:17:32+01:00,-3600,True,False,"['core.hy', 'rules.hy', 'hydiomatic_tests.hy']",['2176bb49af9dbd2aead06ff7533feb291514184a'],3,44,47,3,,,
+85e8d2018c58e710b6250addc38ec12e2bc03cfc,"tests: Collapse a few test cases together
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 02:19:22+01:00,-3600,2014-01-20 02:19:22+01:00,-3600,True,False,['hydiomatic_tests.hy'],['682e21f13d14e20308c808b6d176c591241b60ea'],19,9,28,1,,,
+d8b8d1488c6c1b34e3a153acc6f68c8617b3d9eb,"Fix the requirements setup stuff
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 12:04:44+01:00,-3600,2014-01-20 12:04:44+01:00,-3600,True,False,"['.travis.yml', 'requirements.txt', 'setup.sh']",['85e8d2018c58e710b6250addc38ec12e2bc03cfc'],7,4,11,3,,,
+953c52ebcb7b275f4a63230126a765fa7f7660f8,"rules/control-structᵒ: (if (not test) a b) => (if-not test a b)
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 12:15:12+01:00,-3600,2014-01-20 12:15:12+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['d8b8d1488c6c1b34e3a153acc6f68c8617b3d9eb'],1,7,8,2,,,
+051e8dd9b911a05f7a95d2bec6dc1d01eb65c892,"rules/control-structᵒ: New rule to transform single-branch if/if-not
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 12:26:24+01:00,-3600,2014-01-20 12:26:24+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['953c52ebcb7b275f4a63230126a765fa7f7660f8'],2,16,18,2,,,
+c5c09c766430b2c51addb7e833eef8f8f3d2ef53,"core: Use a shorter param for simplify-expression
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 13:17:31+01:00,-3600,2014-01-20 13:17:31+01:00,-3600,True,False,['core.hy'],['051e8dd9b911a05f7a95d2bec6dc1d01eb65c892'],8,8,16,1,,,
+a8f4c683b60d7654461719f89622357b7bf24eab,"core: Rename simplify-expression to simplify-step
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 13:18:53+01:00,-3600,2014-01-20 13:18:53+01:00,-3600,True,False,"['core.hy', 'hydiomatic_tests.hy']",['c5c09c766430b2c51addb7e833eef8f8f3d2ef53'],33,33,66,2,,,
+fb4f691ebf3052589288b74209f876c8dacd5af4,"core: Prune unused imports
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 13:19:40+01:00,-3600,2014-01-20 13:19:40+01:00,-3600,True,False,['core.hy'],['a8f4c683b60d7654461719f89622357b7bf24eab'],2,1,3,1,,,
+7bdadaf8b6334d772b26ebbf2d81e3c18bad9fdd,"core: Split out some functions into hydiomatic.utils
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 13:22:30+01:00,-3600,2014-01-20 13:22:30+01:00,-3600,True,False,"['core.hy', 'utils.hy']",['fb4f691ebf3052589288b74209f876c8dacd5af4'],14,31,45,2,,,
+47d8e7b092eaad95dd9641d9bc8f8e00a9aadd85,"core: Optionally allow specifying rules for simplify-step and simplify
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 13:33:22+01:00,-3600,2014-01-20 13:33:22+01:00,-3600,True,False,"['core.hy', 'rules.hy']",['7bdadaf8b6334d772b26ebbf2d81e3c18bad9fdd'],10,12,22,2,,,
+30067ae4ea95fe04aa31a65ba4ce3e8f5c053adb,"bin/hydiomatic: Convert it to a python script
+
+Instead of launching a REPL, make the default behaviour the
+simplification of the first file passed on the command line. With the
+--repl option, it will still launch a repl.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 14:38:58+01:00,-3600,2014-01-20 14:38:58+01:00,-3600,True,False,['hydiomatic'],['47d8e7b092eaad95dd9641d9bc8f8e00a9aadd85'],2,35,37,1,,,
+c2d68ea316074ba68a613950fee23bbc8177074f,"utils: First attempt at a pretty printer
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 15:13:42+01:00,-3600,2014-01-20 15:13:42+01:00,-3600,True,False,"['hydiomatic', 'utils.hy']",['30067ae4ea95fe04aa31a65ba4ce3e8f5c053adb'],2,26,28,2,,,
+a6e66d8cce768391d52d5696f23282e05e4b3ca2,"utils: Add support for reaching into HyDicts too
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-20 15:47:22+01:00,-3600,2014-01-20 15:47:22+01:00,-3600,True,False,"['utils.hy', 'hydiomatic_tests.hy']",['c2d68ea316074ba68a613950fee23bbc8177074f'],5,14,19,2,,,
+7adae9f81e9edd7bc614a41e9f17c7c198591bed,"rules/optimᵒ: New ruleset for code optimisation
+
+There's a single rule in the set at the moment, which when it finds that
+a defn is immediately followed by a let form, will turn the let into a
+setv with tuples and an array of values.
+
+This fixes #1.
+
+Reported-by: Paul Tagliamonte <tag@pault.ag>
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 22:03:32+01:00,-3600,2014-01-20 22:06:10+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['a6e66d8cce768391d52d5696f23282e05e4b3ca2'],1,42,43,2,,,
+8ac468482f6263f858490e4bc942a032590727bc,"tests: Rename a test to conform with the rest
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 22:11:35+01:00,-3600,2014-01-20 22:11:35+01:00,-3600,True,False,['hydiomatic_tests.hy'],['7adae9f81e9edd7bc614a41e9f17c7c198591bed'],1,1,2,1,,,
+aef1f018b43d9b73a5d03ab1912a27564a4193a3,"README.md: Updated the readme with a bit more content
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-20 23:59:10+01:00,-3600,2014-01-20 23:59:10+01:00,-3600,True,False,['README.md'],['8ac468482f6263f858490e4bc942a032590727bc'],1,36,37,1,,,
+0a36a4ac638f382fbe87c33532c1eece53118389,"README.md: Updated the example
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-21 00:00:02+01:00,-3600,2014-01-21 00:00:02+01:00,-3600,True,False,['README.md'],['aef1f018b43d9b73a5d03ab1912a27564a4193a3'],1,1,2,1,,,
+9527938bc3d7acb53bc0447cfc50c4f5323657b2,"README.md: Correct the link to Adderall
+
+This fixes #3.
+
+Reported-by: Abhishek L <abhishek.lekshmanan@gmail.com>
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-21 16:12:03+01:00,-3600,2014-01-21 16:12:03+01:00,-3600,True,False,['README.md'],['0a36a4ac638f382fbe87c33532c1eece53118389'],2,4,6,1,,,
+cdc11a39ff1a6aca556cc2d7ff649509669f9390,"core: Wrap every returned expression within a _wrap_value call
+
+This makes them properly eval'able. Thanks to Nicolas Dandrimont
+<nicolas.dandrimont@crans.org> for the Hy patch, and the suggestion.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-21 22:13:56+01:00,-3600,2014-01-21 22:13:56+01:00,-3600,True,False,['core.hy'],['9527938bc3d7acb53bc0447cfc50c4f5323657b2'],5,6,11,1,,,
+c14fb5d41c661b1623d41a2318543f382785ffe7,"rules/optimᵒ: New (defn foo (x) ...) => (defn foo [x] ...) rule
+
+While (defn foo (x) ...) works by accident, it is neither idiomatic, nor
+correct. Switch it to (defn foo [x] ...) instead.
+
+Requested-by: Nicolas Dandrimont <nicolas.dandrimont@crans.org>
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-22 01:14:08+01:00,-3600,2014-01-22 01:14:08+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['cdc11a39ff1a6aca556cc2d7ff649509669f9390'],2,16,18,2,,,
+5fa01ac426744b1e7178aa6e4606ae88f09a65e4,"rules/optimᵒ: Simplify a rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-22 01:17:18+01:00,-3600,2014-01-22 01:17:18+01:00,-3600,True,False,['rules.hy'],['c14fb5d41c661b1623d41a2318543f382785ffe7'],5,4,9,1,,,
+e1bdb6dfffd63cfc2cce6976bc161482d102050b,"rules/optimᵒ: Make the let -> setv rule work for all cases
+
+In case the let form had bindings that referred to previous bindings,
+setting them as a tuple failed. So what we need, is to use multiple
+setvs. This patch does that, and also simplifies the code of the rule a
+bit.
+
+This fixes #2.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-22 01:36:15+01:00,-3600,2014-01-22 01:36:15+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['5fa01ac426744b1e7178aa6e4606ae88f09a65e4'],19,21,40,2,,,
+d40447f326e0bc2b7ad92f382b75189cf9184aa6,"rules/optimᵒ: Support defun, defn-alias and defun-alias too
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-22 09:27:53+01:00,-3600,2014-01-22 09:27:53+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['e1bdb6dfffd63cfc2cce6976bc161482d102050b'],6,35,41,2,,,
+17eae58bacf04951dac1907012ae5da2bde578a8,"rules/syntaxᵒ: New ruleset
+
+Moved the (defn a (x)) => (defn a [x]) ruleset here, as that is not an
+optimisation.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-22 09:29:52+01:00,-3600,2014-01-22 09:29:52+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['d40447f326e0bc2b7ad92f382b75189cf9184aa6'],23,29,52,2,,,
+bf5d4c531850b341d6d13c3f3b709f958ccf8360,"Simplify two condᵉs
+
+When unifying a single LVar within a condᵉ to N different things, we can
+do that with a memberᵒ instead, which is much clearer, shorter and more
+extensible.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-22 09:31:40+01:00,-3600,2014-01-22 09:31:40+01:00,-3600,True,False,['rules.hy'],['17eae58bacf04951dac1907012ae5da2bde578a8'],6,2,8,1,,,
+e301a1a515aa28e6d69d9ab5d4cf11ebe537a2b1,"bin/hydiomatic: Exit after printing help with no params
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-22 09:44:39+01:00,-3600,2014-01-22 09:44:39+01:00,-3600,True,False,['hydiomatic'],['bf5d4c531850b341d6d13c3f3b709f958ccf8360'],0,3,3,1,,,
+42c256f5f22622caa170f8671b09df6689f3154e,"rules/collectionᵒ: New ruleset
+
+This adds a new ruleset that does transformations related to
+collections. As a start, (get x 0) => (first x).
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 11:57:24+01:00,-3600,2014-01-22 11:57:24+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['e301a1a515aa28e6d69d9ab5d4cf11ebe537a2b1'],0,12,12,2,,,
+4d909de633783f135f636dadeec6341781e86e98,"rules/collectionᵒ: Move it a bit further down
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 11:58:44+01:00,-3600,2014-01-22 11:58:44+01:00,-3600,True,False,['rules.hy'],['42c256f5f22622caa170f8671b09df6689f3154e'],7,7,14,1,,,
+443ef4ff2b4db852b32377c06a9e652f42ce0bdc,"rules/collectionᵒ: Add a (slice x 1) => (rest x) rule
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 12:01:42+01:00,-3600,2014-01-22 12:01:42+01:00,-3600,True,False,['rules.hy'],['4d909de633783f135f636dadeec6341781e86e98'],1,5,6,1,,,
+fb2e224c1f485acb9c95148cf1184f9471591e64,"rules/collectionᵒ: Add a (zero? (len coll)) => (empty? coll) rule
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 12:07:11+01:00,-3600,2014-01-22 12:07:11+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['443ef4ff2b4db852b32377c06a9e652f42ce0bdc'],3,19,22,2,,,
+a94af5fa0af0d3cc69d9c60c4d8c7bfac335305c,"rules/equalityᵒ: Implement even? and odd? transformation rules
+
+This addresses a part of #4.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 12:22:18+01:00,-3600,2014-01-22 12:22:39+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['fb2e224c1f485acb9c95148cf1184f9471591e64'],1,13,14,2,,,
+feab8341594c0d39c01ee2bab680133e3cc885b0,"rules/equalityᵒ: Implement none? => nil? rule
+
+This addresses another part of #4.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 12:24:42+01:00,-3600,2014-01-22 12:24:42+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['a94af5fa0af0d3cc69d9c60c4d8c7bfac335305c'],2,8,10,2,,,
+0ed2d1b8c330933e2b52ce3380b9ffc12c3f8947,"rules/equalityᵒ: Fix the nil? rule
+
+It was lacking some unquotation.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 12:25:55+01:00,-3600,2014-01-22 12:25:55+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['feab8341594c0d39c01ee2bab680133e3cc885b0'],6,6,12,2,,,
+eeeec3559f3cac16643a8b70c831f08858cec827,"rules/syntaxᵒ: Add an isinstance => instance? rule
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 12:28:30+01:00,-3600,2014-01-22 12:28:30+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['0ed2d1b8c330933e2b52ce3380b9ffc12c3f8947'],2,9,11,2,,,
+f37aee53a8c731e3f88c36e97dfdce7e37f0d9ec,"rules/syntaxᵒ: Add a few (instance? type x) => (type? x) rules
+
+This addresses a few points of #4.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 12:32:57+01:00,-3600,2014-01-22 12:33:24+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['eeeec3559f3cac16643a8b70c831f08858cec827'],2,22,24,2,,,
+eeca16d4c8678ef5ced8ba351ccf046f371fb569,"rules/syntaxᵒ: Add a yield-form rule
+
+The previous changes and this together fix #4.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 12:36:47+01:00,-3600,2014-01-22 12:36:47+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['f37aee53a8c731e3f88c36e97dfdce7e37f0d9ec'],2,10,12,2,,,
+816f9a6e56a37f676eb6bc1187047b022832dd29,"rules/syntaxᵒ: It is (yield-from), not (yield-form)
+
+Thanks Nicolas Dandrimont <nicolas.dandrimont@crans.org> for spotting
+the mistake.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 12:44:27+01:00,-3600,2014-01-22 12:44:27+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['eeca16d4c8678ef5ced8ba351ccf046f371fb569'],3,3,6,2,,,
+e529f23c90215eea39c298eb4baa52f40918916f,"bin/hydiomatic: Rewrote it in Hy
+
+We have such a nice language, it was a shame to write this in Python.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 13:34:54+01:00,-3600,2014-01-22 13:34:54+01:00,-3600,True,False,['hydiomatic'],['816f9a6e56a37f676eb6bc1187047b022832dd29'],33,37,70,1,,,
+96c636bc354698e18ea4ae88713724936a6fe836,"rules/syntaxᵒ: Add -> related rules
+
+The first two rules were contributed by Nicolas Dandrimont
+<nicolas.dandrimont@crans.org>, the others build upon that foundation.
+
+These combined can either transform a long chain of calls into a ->
+threading macro, or destructure a short -> into function calls instead.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-22 14:33:00+01:00,-3600,2014-01-22 14:33:00+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['e529f23c90215eea39c298eb4baa52f40918916f'],2,51,53,2,,,
+34f7334b11e8bbb7176537cd3a17a67fa000fa02,"rules/syntaxᵒ: Drop some of the -> rules
+
+The -> rules did not account for some of the properties of the ->
+threading macro, drop them, at least for now. This fixes #5.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-22 22:07:16+01:00,-3600,2014-01-22 22:07:56+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['96c636bc354698e18ea4ae88713724936a6fe836'],35,2,37,2,,,
+fcf546953587cede13796210605723a65c72b336,"rules/collectionᵒ: Add (get coll 1) => (second coll) rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-22 22:16:45+01:00,-3600,2014-01-22 22:16:45+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['34f7334b11e8bbb7176537cd3a17a67fa000fa02'],0,7,7,2,,,
+8c7d4ddec1da43f6ae49319ec0d4717d990b4eaa,"rules/rule: New macro
+
+This macro makes it slightly easier to write new, simple rules.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-23 00:53:29+01:00,-3600,2014-01-23 00:53:29+01:00,-3600,True,False,['rules.hy'],['fcf546953587cede13796210605723a65c72b336'],0,5,5,1,,,
+b7f5df446c17916e026215eb0f79dc6f61cd367d,"rules: Split the rulesets into different files
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-23 12:41:06+01:00,-3600,2014-01-23 12:41:06+01:00,-3600,True,False,"['macros.hy', 'rules.hy', '__init__.hy', 'arithmetico.hy', 'collectiono.hy', 'control_structo.hy', 'equalityo.hy', 'optimo.hy', 'quoteo.hy', 'syntaxo.hy']",['8c7d4ddec1da43f6ae49319ec0d4717d990b4eaa'],204,357,561,10,,,
+f0e5eebd97121f2c51a521d6d7dc1da90f218618,"hydiomatic.rulesets: Code simplification
+
+Use the hydiomatic.macros/rule macro to simplify some of the rules.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-23 13:33:14+01:00,-3600,2014-01-23 13:33:14+01:00,-3600,True,False,"['arithmetico.hy', 'collectiono.hy', 'control_structo.hy', 'equalityo.hy', 'quoteo.hy', 'syntaxo.hy']",['b7f5df446c17916e026215eb0f79dc6f61cd367d'],106,71,177,6,,,
+ae229c879ea2383b47389097a99a2995e2a0af3e,"hydiomatic: Introduce (defrules)
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-23 18:05:48+01:00,-3600,2014-01-23 18:05:48+01:00,-3600,True,False,"['macros.hy', 'arithmetico.hy', 'collectiono.hy', 'control_structo.hy', 'equalityo.hy', 'optimo.hy', 'quoteo.hy', 'syntaxo.hy']",['f0e5eebd97121f2c51a521d6d7dc1da90f218618'],143,142,285,8,,,
+d88442c336c8fcb176091d1a910fe6d347aac0e6,"rules/syntaxᵒ: Add (tuple [a b c]) -> (, a b c) rule
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-23 18:18:57+01:00,-3600,2014-01-23 18:18:57+01:00,-3600,True,False,"['syntaxo.hy', 'hydiomatic_tests.hy']",['ae229c879ea2383b47389097a99a2995e2a0af3e'],2,7,9,2,,,
+a6b2f58d00e3c5b50b79a47242633d32644e43d2,"rules/syntaxᵒ: Implement kwapply => apply rules
+
+With the impending doom of kwapply, lets have a rule that converts it to
+apply.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-23 18:49:46+01:00,-3600,2014-01-23 18:49:46+01:00,-3600,True,False,"['syntaxo.hy', 'hydiomatic_tests.hy']",['d88442c336c8fcb176091d1a910fe6d347aac0e6'],2,28,30,2,,,
+b6b6520c84c0af21b584b93687b885e6dfe378a2,"rulesets.optimo: No need to wrap stuff in eval-and-compile
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-23 18:53:55+01:00,-3600,2014-01-23 18:53:55+01:00,-3600,True,False,['optimo.hy'],['a6b2f58d00e3c5b50b79a47242633d32644e43d2'],4,3,7,1,,,
+8a7ba06b39c125618e1f409b30d4132fb1efd2bc,"tests: Simplify the tests with macros
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-23 19:34:11+01:00,-3600,2014-01-23 19:34:11+01:00,-3600,True,False,['hydiomatic_tests.hy'],['b6b6520c84c0af21b584b93687b885e6dfe378a2'],163,139,302,1,,,
+e32d1178f2ea75b538589481f2dfa9fe77c31938,"hydiomatic.macros: Simplify defrules
+
+With this change, defrules will natively understand two styles of rules:
+
+ [[fresh-vars] `(pattern) `(substitute)]
+
+...and:
+
+ [(some-expression ...)]
+
+If the first value in the rule definition is a HyExpression, the rule
+will be returned as-is. Otherwise, it will be treated as if the contents
+were parameters for the old (rule) function. The old (rule) function is
+gone, and is replaced by a new one used by the defrules macro
+internally.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-23 20:19:14+01:00,-3600,2014-01-23 20:19:14+01:00,-3600,True,False,"['macros.hy', 'arithmetico.hy', 'collectiono.hy', 'control_structo.hy', 'equalityo.hy', 'quoteo.hy', 'syntaxo.hy']",['8a7ba06b39c125618e1f409b30d4132fb1efd2bc'],72,74,146,7,,,
+b9f076c7b23c91a64e713054209b5f7a9f3256b2,"core: Drop the _wrap_value usage
+
+unquote was changed on the sandbox/adderall branch hydiomatic currently
+depends on, to call _wrap_value on stuff that is being unquoted, before
+returning the unquoted form.
+
+This makes it unnecessary to call it ourselves, so drop the import and
+the calls.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-24 00:23:05+01:00,-3600,2014-01-24 00:23:05+01:00,-3600,True,False,['core.hy'],['e32d1178f2ea75b538589481f2dfa9fe77c31938'],6,5,11,1,,,
+ab4826f84de8910a297edef101dbaed84d1580f6,"hydiomatic.utils: Fix a miscast in walk
+
+When the (walk) function traverses a list, it unconditionally turned the
+result into a python list, regardless of what other list-descendant type
+the form was originally. This made forms with lists unevaluatable. To
+fix that, make it back to the type it originally was.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-24 17:09:32+01:00,-3600,2014-01-24 17:09:32+01:00,-3600,True,False,"['utils.hy', 'hydiomatic_tests.hy']",['b9f076c7b23c91a64e713054209b5f7a9f3256b2'],3,6,9,2,,,
+115a2c1c9e36c8a7ab991ada2fd71d6a977101fd,"hydiomatic.utils: Use instance? instead of isinstance
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-24 17:14:02+01:00,-3600,2014-01-24 17:14:02+01:00,-3600,True,False,['utils.hy'],['ab4826f84de8910a297edef101dbaed84d1580f6'],9,9,18,1,,,
+a84d96893cfe2046a141a1991f5701d60502da71,"hydiomatic.utils: Add support for LambdaKeywords and Keywords
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-24 17:19:32+01:00,-3600,2014-01-24 17:19:32+01:00,-3600,True,False,['utils.hy'],['115a2c1c9e36c8a7ab991ada2fd71d6a977101fd'],2,5,7,1,,,
+ef6457b8758e10edc65483a46db96f53e987fa8d,"hydiomatic.utils: Add cons support for hypprint
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-24 17:29:51+01:00,-3600,2014-01-24 17:29:51+01:00,-3600,True,False,['utils.hy'],['a84d96893cfe2046a141a1991f5701d60502da71'],1,3,4,1,,,
+4e5bb2a340fa98b017f504b8bcde0b29f29bebac,"hydiomatic.utils: Add support for native types in hypprint
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-24 17:30:05+01:00,-3600,2014-01-24 17:30:05+01:00,-3600,True,False,['utils.hy'],['ef6457b8758e10edc65483a46db96f53e987fa8d'],3,3,6,1,,,
+765210b9f6eba39d339f57329f1d31f08a0fa508,"hydiomatic.utils: Add support for walking cons forms
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-25 14:31:03+01:00,-3600,2014-01-25 14:31:03+01:00,-3600,True,False,['utils.hy'],['4e5bb2a340fa98b017f504b8bcde0b29f29bebac'],0,3,3,1,,,
+c7f2a1bb2c9a94744285ba00d8251763c60cd6ad,"hydiomatic.macros: Simplify the defrules syntax
+
+Instead of requiring every rule to either specify the list of fresh
+LVars as its first argument, or have a single HyExpression within the
+rule definition list, extract the used LVars automatically, and if the
+rule definition is not a list, turn it into one without further
+processing.
+
+This means that rules can use ?x LVars, and these will automatically
+be (fresh)'d, without the need to specifiy them up front. Also, rules
+that need more work than this, can be specified bare, no need to wrap
+them in a one-element list.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-25 14:31:47+01:00,-3600,2014-01-25 14:31:47+01:00,-3600,True,False,"['macros.hy', 'arithmetico.hy', 'collectiono.hy', 'control_structo.hy', 'equalityo.hy', 'optimo.hy', 'quoteo.hy', 'syntaxo.hy']",['765210b9f6eba39d339f57329f1d31f08a0fa508'],108,109,217,8,,,
+320c37a4f9c2079ea544a9ce16d4d51b99fc78cf,"hydiomatic.utils: Use (string) instead of (str)
+
+We want to be able to print unicode stuff too, so use (string) instead
+of (str).
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-25 15:01:31+01:00,-3600,2014-01-25 15:01:31+01:00,-3600,True,False,['utils.hy'],['c7f2a1bb2c9a94744285ba00d8251763c60cd6ad'],4,4,8,1,,,
+9ffff5108fe8e56cc81977439db55d83c71c9f7c,"bin/hydiomatic: Add a --dry-run option
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-25 15:21:59+01:00,-3600,2014-01-25 15:21:59+01:00,-3600,True,False,['hydiomatic'],['320c37a4f9c2079ea544a9ce16d4d51b99fc78cf'],1,7,8,1,,,
+c3518a4f750956d5e91a81b5ded91132aa129afb,"hydiomatic.utils: Introduce hypformat
+
+hypformat does the same as hypprint, except it returns the string,
+instead of printing it. Also reimplement hypprint in terms of hypformat.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-25 15:41:00+01:00,-3600,2014-01-25 15:41:00+01:00,-3600,True,False,['utils.hy'],['9ffff5108fe8e56cc81977439db55d83c71c9f7c'],3,9,12,1,,,
+b2d628694dd394cc11ee97f9a67309530497affe,"bin/hydiomatic: Implement --diff support
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-25 15:42:32+01:00,-3600,2014-01-25 15:42:32+01:00,-3600,True,False,['hydiomatic'],['c3518a4f750956d5e91a81b5ded91132aa129afb'],6,18,24,1,,,
+2fb8da35c9f0274274b2b18ea817c17ba8b15d43,"hydiomatic.utils: Fix hypprint
+
+(hypprint) can't as easily be reimplemented in terms of (hypformat), so
+don't try.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-25 15:58:15+01:00,-3600,2014-01-25 15:58:15+01:00,-3600,True,False,['utils.hy'],['b2d628694dd394cc11ee97f9a67309530497affe'],2,2,4,1,,,
+a03a65cc62eac584d25f0bdf6d3b3df7186e37fd,"bin/hydiomatic: Simplify the main option handling logic
+
+Instead of nasty nested ifs, use cond.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-25 15:59:38+01:00,-3600,2014-01-25 15:59:38+01:00,-3600,True,False,['hydiomatic'],['2fb8da35c9f0274274b2b18ea817c17ba8b15d43'],17,20,37,1,,,
+71f7fc1e934b0faac0c24164f5d92492dd1c4dbc,"rules/syntaxᵒ: Remove the (tuple [...]) => (, ...) rule
+
+The resulting form was not eval-able, so removed the rule instead.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-25 16:17:10+01:00,-3600,2014-01-25 16:17:10+01:00,-3600,True,False,"['syntaxo.hy', 'hydiomatic_tests.hy']",['a03a65cc62eac584d25f0bdf6d3b3df7186e37fd'],4,0,4,2,,,
+4cdcd219d9e2cf384639d8f84d8c95e7a5e0a8cb,"bin/hydiomatic: Support diffing multiple files
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-25 16:37:10+01:00,-3600,2014-01-25 16:37:10+01:00,-3600,True,False,['hydiomatic'],['71f7fc1e934b0faac0c24164f5d92492dd1c4dbc'],7,11,18,1,,,
+2478efcb68e64abfb0524752521f851e474cd853,"hydiomatic.utils: Drop our custom identity function
+
+Hy master has it, we don't need a copy anymore.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-26 02:48:20+01:00,-3600,2014-01-26 02:48:20+01:00,-3600,True,False,['utils.hy'],['4cdcd219d9e2cf384639d8f84d8c95e7a5e0a8cb'],2,0,2,1,,,
+55174e2457a3fd95e50590c1c99e49f47b4be1a3,"rules/equalityᵒ: Add a (not (is x y)) => (is-not x y) rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-26 15:02:09+01:00,-3600,2014-01-26 15:02:09+01:00,-3600,True,False,"['equalityo.hy', 'hydiomatic_tests.hy']",['2478efcb68e64abfb0524752521f851e474cd853'],2,5,7,2,,,
+3e3b62e696340136be3aa1bb4434bfa2ac3dd0db,"rules/equalityᵒ: Add a (not (= x y)) => (!= x y) rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-26 15:05:49+01:00,-3600,2014-01-26 15:05:49+01:00,-3600,True,False,"['equalityo.hy', 'hydiomatic_tests.hy']",['55174e2457a3fd95e50590c1c99e49f47b4be1a3'],2,5,7,2,,,
+ccaf47bf7bb4ed8007e3159f703b4624abab81ea,"rules/equalityᵒ: Add a (not (in a b)) => (not-in a b) rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-26 15:10:40+01:00,-3600,2014-01-26 15:10:40+01:00,-3600,True,False,"['equalityo.hy', 'hydiomatic_tests.hy']",['3e3b62e696340136be3aa1bb4434bfa2ac3dd0db'],2,5,7,2,,,
+a4e338adb4256a77f08403239ddb66ea28f034fc,"rules/equalityᵒ: Improve the (not (...)) rules
+
+The recently added (not (is ...)), (not (= ...)) and (not (in ...))
+rules only handled two arguments, while the syntax allows for more. We
+should allow for more too.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-26 15:13:24+01:00,-3600,2014-01-26 15:13:24+01:00,-3600,True,False,"['equalityo.hy', 'hydiomatic_tests.hy']",['ccaf47bf7bb4ed8007e3159f703b4624abab81ea'],9,9,18,2,,,
+3551b2635f0a78de3aaadc5868964dd0ef8596f6,"bin/hydiomatic: Use != instead of (not (= ...))
+
+Thanks hydiomatic!
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-26 15:17:06+01:00,-3600,2014-01-26 15:17:06+01:00,-3600,True,False,['hydiomatic'],['a4e338adb4256a77f08403239ddb66ea28f034fc'],1,1,2,1,,,
+93108500ec2945fdc3b629ad62360f35268f969d,"rules/control-structᵒ: Add a (let [...] (do ...)) => (let [...] ...) rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-26 15:44:38+01:00,-3600,2014-01-26 15:44:38+01:00,-3600,True,False,"['control_structo.hy', 'hydiomatic_tests.hy']",['3551b2635f0a78de3aaadc5868964dd0ef8596f6'],2,10,12,2,,,
+653ab5ad7f4269399649bced5026eb09f9751122,"rules/control-structᵒ: Add a loop => while rule
+
+If we see a binding-less loop with recur, turn it into a while loop
+instead.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-26 16:01:08+01:00,-3600,2014-01-26 16:01:08+01:00,-3600,True,False,"['control_structo.hy', 'hydiomatic_tests.hy']",['93108500ec2945fdc3b629ad62360f35268f969d'],2,10,12,2,,,
+ce3437898f28f49e7aeb58984135bf5fd11b9e1e,"rules/control-structᵒ: Add another loop simplification rule
+
+We do not need (do) immediately within a (loop) construct.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-26 16:04:31+01:00,-3600,2014-01-26 16:04:31+01:00,-3600,True,False,"['control_structo.hy', 'hydiomatic_tests.hy']",['653ab5ad7f4269399649bced5026eb09f9751122'],0,11,11,2,,,
+f3451f81901a81e472c8b8dbd40b02f6384741db,"rules/equalityᵒ: nil? is (is None) not (= None)
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-27 16:04:50+01:00,-3600,2014-01-27 16:04:50+01:00,-3600,True,False,"['equalityo.hy', 'hydiomatic_tests.hy']",['ce3437898f28f49e7aeb58984135bf5fd11b9e1e'],4,4,8,2,,,
+3eceb234df6aae5eb2612e0ee7d3df099cb66b2a,"bin/hydiomatic: Force maps to lists for side effects
+
+This makes bin/hydiomatic work on python3, where maps are lazy.
+
+Reported-by: Vasudev Kamath <kamathvasudev@gmail.com>
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-27 16:26:28+01:00,-3600,2014-01-27 16:26:28+01:00,-3600,True,False,['hydiomatic'],['f3451f81901a81e472c8b8dbd40b02f6384741db'],3,3,6,1,,,
+a8e1726a01253d4591deb9a9aa14e0df63c183e0,"bin/hydiomatic: Some lists, less map, more for, very sad
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-01-27 16:39:09+01:00,-3600,2014-01-27 16:39:09+01:00,-3600,True,False,"['hydiomatic', 'utils.hy']",['3eceb234df6aae5eb2612e0ee7d3df099cb66b2a'],5,6,11,2,,,
+924c671129b2ed9d4b4efb96342229b0b836305e,"rules/optimᵒ: Add an anonymus fn simplification rule
+
+When we see an anonymous fn (or lambda), that just wraps another,
+non-builtin fn, simplify it to the wrapped fn, to avoid a function call.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-28 15:56:54+01:00,-3600,2014-01-28 15:56:54+01:00,-3600,True,False,"['optimo.hy', 'hydiomatic_tests.hy']",['a8e1726a01253d4591deb9a9aa14e0df63c183e0'],2,28,30,2,,,
+b4d19c07660db8d06a5d3b1aa529b155ce080dd3,"bin/hydiomatic: Don't do optimᵒ by default
+
+Remove rules/optimᵒ from the rules/default ruleset, as it can lead to
+false positives. Instead, added a --experimental (or -e) option to turn
+on experimental transformations, which, at the moment, is the ones in
+optimᵒ.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-29 09:10:35+01:00,-3600,2014-01-29 09:10:35+01:00,-3600,True,False,"['hydiomatic', 'rules.hy']",['924c671129b2ed9d4b4efb96342229b0b836305e'],10,28,38,2,,,
+2693b232d46ae170dd0896c1fa8fa40fd40e8572,"tests: Test with all rules enabled
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-29 09:19:04+01:00,-3600,2014-01-29 09:19:04+01:00,-3600,True,False,['hydiomatic_tests.hy'],['b4d19c07660db8d06a5d3b1aa529b155ce080dd3'],2,3,5,1,,,
+a7d12111c08a46b734452d775ff0f3bfbd2ba382,"core: Add a simplifications function
+
+The simplifications function does pretty much the same as simplify, but
+it returns not only the last expression, but all of them.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-29 09:36:21+01:00,-3600,2014-01-29 09:36:21+01:00,-3600,True,False,['core.hy'],['2693b232d46ae170dd0896c1fa8fa40fd40e8572'],0,12,12,1,,,
+d66b6ca5ba9b448a23b8b8e1cb131eb97d5b5aab,"bin/hydiomatic.hy: Renamed from bin/hydiomatic
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-29 10:10:59+01:00,-3600,2014-01-29 10:10:59+01:00,-3600,True,False,['hydiomatic.hy'],['a7d12111c08a46b734452d775ff0f3bfbd2ba382'],0,0,0,1,,,
+ee7d8dbaa58a32036045b5328404bb410d15df67,"rules/warningsᵒ: New, experimental ruleset
+
+This ruleset will emit warnings, instead of doing transformations.
+
+Requested-by: Morten Linderud <mcfoxax@gmail.com>
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-30 19:29:19+01:00,-3600,2014-01-30 19:47:55+01:00,-3600,True,False,"['rules.hy', 'warningso.hy']",['d66b6ca5ba9b448a23b8b8e1cb131eb97d5b5aab'],1,62,63,2,,,
+c5797504421cd08d4b1d150a71f107f8e5f117a2,"rules/warningsᵒ: Prefix the warning with ';'
+
+Since the warning goes to stdout too, prefix it with a ;, so when fed
+back to Hy, it will get discarded, and thus, our result will still be a
+valid program.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-30 19:30:37+01:00,-3600,2014-01-30 19:48:34+01:00,-3600,True,False,['warningso.hy'],['ee7d8dbaa58a32036045b5328404bb410d15df67'],1,1,2,1,,,
+a97797cc1a955181f7e2007522e81acc29f3017d,"hydiomatic.core: Bail out earlier if no transformations made
+
+Both simplify and simplifications should bail out if the first
+transformation fails, instead of trying at least twice.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-30 19:39:01+01:00,-3600,2014-01-30 19:48:34+01:00,-3600,True,False,['core.hy'],['c5797504421cd08d4b1d150a71f107f8e5f117a2'],12,14,26,1,,,
+9a41ef903da3163036ada691587b1f4ff2b63aa2,"rules/control-structᵒ: Drop unnecessary (do)s from fn/defn/defun
+
+Requested-by: Abhishek L <abhishek.lekshmanan@gmail.com>
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-30 19:47:08+01:00,-3600,2014-01-30 19:48:34+01:00,-3600,True,False,"['control_structo.hy', 'hydiomatic_tests.hy']",['a97797cc1a955181f7e2007522e81acc29f3017d'],0,14,14,2,,,
+4698ace8d9351e81601cc0565972ef23ce548703,"requirements.txt: Switch hy dependency to hylang/master
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-01-30 19:54:14+01:00,-3600,2014-01-30 19:54:14+01:00,-3600,True,False,['requirements.txt'],['9a41ef903da3163036ada691587b1f4ff2b63aa2'],1,1,2,1,,,
+5606619fb8ad0a0d1023491a2db63b60401158bb,"rules/control-structᵒ: Removed a stale comment
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-01 14:30:09+01:00,-3600,2014-02-01 14:30:09+01:00,-3600,True,False,['control_structo.hy'],['4698ace8d9351e81601cc0565972ef23ce548703'],1,0,1,1,,,
+2f3c4865f2c0bee7f2cef9559becb19133bdedef,"rules: Add support for docstrings
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-01 14:50:20+01:00,-3600,2014-02-01 14:50:20+01:00,-3600,True,False,"['control_structo.hy', 'optimo.hy', 'hydiomatic_tests.hy']",['5606619fb8ad0a0d1023491a2db63b60401158bb'],6,44,50,3,,,
+c61c1e474fc4b045ee0e17a097199d8090592d94,"rules/optimᵒ: Fix the let -> set optimalisation wrt docstrings
+
+When doing the (let [...]) => (setv ...) optimisation, make sure that
+the let is the first, and if we have a docstring, that is actually a
+string, and not another expression.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-01 15:05:26+01:00,-3600,2014-02-01 15:05:26+01:00,-3600,True,False,"['optimo.hy', 'hydiomatic_tests.hy']",['2f3c4865f2c0bee7f2cef9559becb19133bdedef'],1,11,12,2,,,
+f8ecfe1c11e20d9b97faec38bc0079d9385018ca,"rules/warningsᵒ: Add a rule that warns about missing docstrings
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-01 15:43:10+01:00,-3600,2014-02-01 15:43:10+01:00,-3600,True,False,['warningso.hy'],['c61c1e474fc4b045ee0e17a097199d8090592d94'],1,12,13,1,,,
+15b3d15022625fe8e1ffe7396e679584356f30f8,"tests: Add tests for rules/warningsᵒ rules
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-01 16:31:06+01:00,-3600,2014-02-01 16:31:06+01:00,-3600,True,False,['hydiomatic_tests.hy'],['f8ecfe1c11e20d9b97faec38bc0079d9385018ca'],0,23,23,1,,,
+c0e57e2dfed2361cb778c697ee790660daae4e07,"rules/control-structᵒ: Fold two rules together
+
+There were two rules that meant to remove unnecessary (do)s from
+function definitions: one for functions with, and one for functions
+without docstrings. These were folded together into a single rule.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-01 17:53:04+01:00,-3600,2014-02-01 17:53:04+01:00,-3600,True,False,['control_structo.hy'],['15b3d15022625fe8e1ffe7396e679584356f30f8'],8,7,15,1,,,
+4be7b59fcc3cfeb61f6d9edbe1ed04282d0a2b10,"rules/control-structᵒ: Make the (do) removal stricter
+
+When trying to remove unnecessary (do)s from a function, make sure that
+if there is something before the do, it really is a docstring.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-01 17:55:56+01:00,-3600,2014-02-01 17:55:56+01:00,-3600,True,False,"['control_structo.hy', 'hydiomatic_tests.hy']",['c0e57e2dfed2361cb778c697ee790660daae4e07'],1,6,7,2,,,
+3de14813fb7d40fef2fc56dd3a7defc30a3dece3,"hydiomatic.utils: Drop walk
+
+The walk functionality is available on hy master, in hy.contrib.walk,
+use that instead of our own implementation.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-02 09:44:54+01:00,-3600,2014-02-02 09:44:54+01:00,-3600,True,False,"['core.hy', 'macros.hy', 'utils.hy']",['4be7b59fcc3cfeb61f6d9edbe1ed04282d0a2b10'],18,2,20,3,,,
+b8c8bc564f82ac05dc9c6c177b957cc15df86f62,"hydiomatic.rules: Move the warning rules to a separate set
+
+Since warning rules print stuff themselves, they cannot be intermixed
+with other rules, so move them to a separate set. This partially
+addresses #7.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-02 11:04:12+01:00,-3600,2014-02-02 11:04:12+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['3de14813fb7d40fef2fc56dd3a7defc30a3dece3'],3,6,9,2,,,
+14e3aa01d90789f2e3b73ffd6a52ff6627511206,"bin/hydiomatic.hy: Add a --warnings option
+
+With the warnings moved to a separate rule set, we need a way to run our
+code against them. The --warnings option does just that. It does not run
+any other ruleset, just this.
+
+This fixes #7, though not in the way described there, as the results are
+not interleaved, but still.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-02 11:10:28+01:00,-3600,2014-02-02 11:10:28+01:00,-3600,True,False,['hydiomatic.hy'],['b8c8bc564f82ac05dc9c6c177b957cc15df86f62'],2,9,11,1,,,
+0a02e7127a31dccc80323317f74e7a46c5ab381e,"README.md: The script is called bin/hydiomatic.hy now
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-02 11:34:53+01:00,-3600,2014-02-02 11:34:53+01:00,-3600,True,False,['README.md'],['14e3aa01d90789f2e3b73ffd6a52ff6627511206'],2,2,4,1,,,
+61785c0cbac5dc1edccf85b8558c69645acba07f,"README.md: A bit more info about the hydiomatic.hy script
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-02 11:35:38+01:00,-3600,2014-02-02 11:35:38+01:00,-3600,True,False,['README.md'],['0a02e7127a31dccc80323317f74e7a46c5ab381e'],1,4,5,1,,,
+9db1c8e6782ce9eca378cd087fcba97e3626f0b2,".travis.yml: Enable PyPy
+
+Adderall now supports PyPy, we can enable it too!
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-02 16:10:11+01:00,-3600,2014-02-02 16:10:11+01:00,-3600,True,False,['.travis.yml'],['61785c0cbac5dc1edccf85b8558c69645acba07f'],0,1,1,1,,,
+e4761f15b8bcba2eaa104f860465bed8067bc4f9,"bin/hydiomatic.hy: Only run the main body if --name-- is __main__
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-04 09:17:25+01:00,-3600,2014-02-04 09:17:25+01:00,-3600,True,False,['hydiomatic.hy'],['9db1c8e6782ce9eca378cd087fcba97e3626f0b2'],42,44,86,1,,,
+71820cba67fa33e0f088319a3964c95a31a829a9,"bin/hydiomatic.hy: Support --experimental in non-diff mode too
+
+When running in non-diff mode, respect the --experimental setting too.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-04 09:18:38+01:00,-3600,2014-02-04 09:18:38+01:00,-3600,True,False,['hydiomatic.hy'],['e4761f15b8bcba2eaa104f860465bed8067bc4f9'],1,1,2,1,,,
+684095fb5f6d68c0f5e71321e2e1dc5c3ec5956d,"rules/warningsᵒ: Add a firstᵒ + restᵒ => consᵒ warning
+
+When using firstᵒ and restᵒ, with the same list, suggest using consᵒ
+instead.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-04 13:52:25+01:00,-3600,2014-02-04 13:52:25+01:00,-3600,True,False,"['warningso.hy', 'hydiomatic_tests.hy']",['71820cba67fa33e0f088319a3964c95a31a829a9'],1,27,28,2,,,
+b52635a1a7c0ce3f03bf25f70a56565259f8fded,"hydiomatic.rulesets: Be consistent with fresh LVar naming
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-05 09:34:54+01:00,-3600,2014-02-05 09:34:54+01:00,-3600,True,False,"['control_structo.hy', 'optimo.hy', 'syntaxo.hy', 'warningso.hy']",['684095fb5f6d68c0f5e71321e2e1dc5c3ec5956d'],93,93,186,4,,,
+0da1a1de7a48e7193631d385100b932a11fe4810,"rules/optimᵒ: Rename --transform-bindings to --transform-bindings--
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-05 09:36:21+01:00,-3600,2014-02-05 09:36:21+01:00,-3600,True,False,['optimo.hy'],['b52635a1a7c0ce3f03bf25f70a56565259f8fded'],2,2,4,1,,,
+43d53f6257418c8f3f6b5a8e303284a52c571fb8,"hydiomatic.macros: Adderall has prep now, use it
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-05 15:46:22+01:00,-3600,2014-02-05 15:46:22+01:00,-3600,True,False,['macros.hy'],['0da1a1de7a48e7193631d385100b932a11fe4810'],15,4,19,1,,,
+ad6deb26d0604d9c0730fe7f06bb51fb6bb39f71,"hydiomatic.rulesets: Migrate from fresh to prep
+
+To simplify a lot of the more complex rules, migrate from fresh to prep.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-05 15:51:49+01:00,-3600,2014-02-05 15:51:49+01:00,-3600,True,False,"['control_structo.hy', 'optimo.hy', 'syntaxo.hy', 'warningso.hy']",['43d53f6257418c8f3f6b5a8e303284a52c571fb8'],113,113,226,4,,,
+f0e7b7f703b06fc702a0bda650fd9c7876c17627,"rules/control-structᵒ: Add a (try (do ...)) => (try ...) rule
+
+Inspired by code found in snitch, fixes #8.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-02-06 00:49:45+01:00,-3600,2014-02-06 00:49:45+01:00,-3600,True,False,"['control_structo.hy', 'hydiomatic_tests.hy']",['ad6deb26d0604d9c0730fe7f06bb51fb6bb39f71'],0,4,4,2,,,
+dae8f29e410c362dee6e415abc7b57f6eb41f11a,"rules/control-structᵒ: Treat unquote-splice specially when handling ifs
+
+When making suggestions about ifs, that collapse them into when or
+unless, make sure that the body is not unquote-splice-based, because
+that can expand to both branches, in which case the suggestion is wrong.
+
+This addresses one half of #9.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-24 17:04:28+01:00,-3600,2014-02-24 17:09:38+01:00,-3600,True,False,"['control_structo.hy', 'hydiomatic_tests.hy']",['f0e7b7f703b06fc702a0bda650fd9c7876c17627'],4,16,20,2,,,
+973238dbd058f07fe77f0d87a73d72fd5400d6f3,"rules/control-structᵒ: Code cleanup
+
+Fold the if=>when & if-not=>unless rules together, to reduce duplicated
+code.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-24 17:08:53+01:00,-3600,2014-02-24 17:09:38+01:00,-3600,True,False,['control_structo.hy'],['dae8f29e410c362dee6e415abc7b57f6eb41f11a'],8,5,13,1,,,
+f743ac80e077dc8a5df16961c86fb09e7b7cdaef,"rules/equalityᵒ: Add an (if-not (is ...)) => (if (is-not ...)) rule
+
+This rule turns (if-not (is ...) ...) into (if (is-not ...) ...), which
+is more efficient. This addresses the second half of #9.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-24 18:06:16+01:00,-3600,2014-02-24 18:06:16+01:00,-3600,True,False,"['equalityo.hy', 'hydiomatic_tests.hy']",['973238dbd058f07fe77f0d87a73d72fd5400d6f3'],2,7,9,2,,,
+f495f1549feb6e51a141ff9854dcf5ff6feecbc1,"hydiomatic/rules: Change the order of equalityᵒ and control-structᵒ
+
+In order to pick up the new (if-not (is ...)) => (if (is-not ...)) rule
+during a full simplify, pull rules/equalityᵒ up above
+rules/control-structᵒ.
+
+Together with previous changes, this fixes #9 completely.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-24 18:12:32+01:00,-3600,2014-02-24 18:14:03+01:00,-3600,True,False,"['rules.hy', 'hydiomatic_tests.hy']",['f743ac80e077dc8a5df16961c86fb09e7b7cdaef'],1,5,6,2,,,
+8d5942430e04986f11e570428bec6e9c71fb71e0,"requirements.txt: Added toolz>=0.5.2
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-24 18:17:01+01:00,-3600,2014-02-24 18:17:01+01:00,-3600,True,False,['requirements.txt'],['f495f1549feb6e51a141ff9854dcf5ff6feecbc1'],0,1,1,1,,,
+44d18cbf82f9ed86e9a89a4043df7b1dd7a7648a,".travis.yml: Allow external packages
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-24 18:21:08+01:00,-3600,2014-02-24 18:21:08+01:00,-3600,True,False,['.travis.yml'],['8d5942430e04986f11e570428bec6e9c71fb71e0'],1,1,2,1,,,
+d864d037b6e222d7a6dfd7690f419ded0a7723d4,"hydiomatic/utils: Fixed pretty printing of unicode strings
+
+Use (string) instead of (str) when printing HyStrings. Triggered by
+adderall/bitnum.hy.
+
+Signed-off-by: Gergely Nagy <algernon@balabit.hu>",Gergely Nagy,algernon@balabit.hu,Gergely Nagy,algernon@balabit.hu,2014-02-24 19:14:21+01:00,-3600,2014-02-24 19:14:21+01:00,-3600,True,False,['utils.hy'],['44d18cbf82f9ed86e9a89a4043df7b1dd7a7648a'],1,1,2,1,,,
+5f9cd1744922a5fed260c877fb85e9ecdbd18a7e,"hydiomatic.core: Simplify the rule specifications
+
+Instead of wrapping the rules in a function that does a condᵉ, use a
+list of rules instead, executed in isolation, one after the other. This
+gets rid of a few levels of condᵉ.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-03-03 00:33:10+01:00,-3600,2014-03-03 00:33:10+01:00,-3600,True,False,"['core.hy', 'rules.hy']",['d864d037b6e222d7a6dfd7690f419ded0a7723d4'],19,23,42,2,,,
+b9b7b886a4f14033a9e1a009f364df1e2fc48438,"rules/syntaxᵒ: Fix a TypeError in one of the kwapply rules
+
+When looking at a kwapply form, where the applied function starts with a
+dot, make sure that we have a symbol to attach that function to. If we
+don't, another rule shall take precedence. This is accomplished by
+guarding the appropriate part of the form with a typeᵒ.
+
+This change fixes #10.
+
+Reported-by: Zack M. Davis
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-03-04 10:02:26+01:00,-3600,2014-03-04 10:02:26+01:00,-3600,True,False,"['syntaxo.hy', 'hydiomatic_tests.hy']",['5f9cd1744922a5fed260c877fb85e9ecdbd18a7e'],0,6,6,2,,,
+43dcbf7582e926818acbf2a6df6520667185d0af,"bin/hydiomatic.hy: Fix --dry-run
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-03-14 00:14:56+01:00,-3600,2014-03-14 00:14:56+01:00,-3600,True,False,['hydiomatic.hy'],['b9b7b886a4f14033a9e1a009f364df1e2fc48438'],1,1,2,1,,,
+1715160c436c59de90bad1296efe9861932e18e5,"Finalise the hydiomatic 0.1.0 release
+
+Renamed the __init__.hy files to __init__.py, so that setuptools can
+find them, added a NEWS and a setup.py file, and updated
+requirements.txt.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-04-13 22:50:45+02:00,-7200,2014-04-13 22:50:45+02:00,-7200,True,False,"['NEWS', '__init__.py', '__init__.py', 'requirements.txt', 'setup.py']",['43dcbf7582e926818acbf2a6df6520667185d0af'],4,51,55,5,,,
+ae1f9dff7062a2d9b3f7e833ddae6e0a9c076338,"README.md: Added download & version badges
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-04-13 22:52:27+02:00,-7200,2014-04-13 22:52:27+02:00,-7200,True,False,['README.md'],['1715160c436c59de90bad1296efe9861932e18e5'],0,2,2,1,,,
+f73b2f49861291cbbbce261d322eb6c8b634bc1c,include hydiomatic.hy into setup,Tuukka Turto,tuukka.turto@oktaeder.net,Tuukka Turto,tuukka.turto@oktaeder.net,2014-04-14 06:59:12+03:00,-10800,2014-04-14 06:59:12+03:00,-10800,True,False,['setup.py'],['ae1f9dff7062a2d9b3f7e833ddae6e0a9c076338'],0,1,1,1,,,
+a11162117dbfd44ca12eca4bd42885eb3a68b9ea,"Bump version to 0.1.1
+
+Bump the version in setup.py, and add an entry to NEWS.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-04-14 12:19:20+02:00,-7200,2014-04-14 12:20:14+02:00,-7200,True,False,"['NEWS', 'setup.py']",['8c6a354dd0f97a50a230167535e671349f1e4d6e'],1,5,6,2,,,
+01f7b21ecd9c7b2acba379aca0698d0b3739d44a,"bin/hydiomatic.hy: Whitespace cleanup
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-04-24 21:44:27+02:00,-7200,2014-04-24 21:44:27+02:00,-7200,True,False,['hydiomatic.hy'],['a11162117dbfd44ca12eca4bd42885eb3a68b9ea'],2,2,4,1,,,
+d6478d0b6380505d468ed49a399d8eb50e183b48,".travis.yml: Enable python 3.4
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2014-04-30 11:16:04+02:00,-7200,2014-04-30 11:16:04+02:00,-7200,True,False,['.travis.yml'],['01f7b21ecd9c7b2acba379aca0698d0b3739d44a'],0,1,1,1,,,
+746a4dac1b9e4241b8ee983e85cc52f6a2606083,"hydiomatic.utils: Pretty-print is_foo as foo?
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-06-23 15:35:28+02:00,-7200,2015-06-23 15:35:28+02:00,-7200,True,False,['utils.hy'],['d6478d0b6380505d468ed49a399d8eb50e183b48'],3,9,12,1,,,
+938434bbb81cc0e28018fb088ce44df1e2dd0c48,"hydiomatic.utils: Drop HyLambdaKeyword usage
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-06-23 15:36:24+02:00,-7200,2015-06-23 15:36:24+02:00,-7200,True,False,['utils.hy'],['746a4dac1b9e4241b8ee983e85cc52f6a2606083'],2,2,4,1,,,
+6a8fe39554ee6939bedafafa0afe0a813e805536,"rulesets.collectionᵒ: Add (drop-last 1 x) => (butlast x) rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-06-23 15:42:46+02:00,-7200,2015-06-23 15:42:46+02:00,-7200,True,False,"['collectiono.hy', 'hydiomatic_tests.hy']",['938434bbb81cc0e28018fb088ce44df1e2dd0c48'],4,7,11,2,,,
+18bc1a15576c16773ea90aebb07bfb331b10dd04,"hydiomatic.collectionᵒ: Add a (get coll -1) => (last coll) rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-06-23 15:54:34+02:00,-7200,2015-06-23 15:54:34+02:00,-7200,True,False,"['collectiono.hy', 'hydiomatic_tests.hy']",['6a8fe39554ee6939bedafafa0afe0a813e805536'],2,6,8,2,,,
+e3a9397462d210e7ef24448ab00e2c424fa9a304,"hydiomatic.rulesets.control_structᵒ: Add a rule for repeatedly
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-06-23 15:59:52+02:00,-7200,2015-06-23 15:59:52+02:00,-7200,True,False,"['control_structo.hy', 'hydiomatic_tests.hy']",['18bc1a15576c16773ea90aebb07bfb331b10dd04'],3,9,12,2,,,
+11dd4db20a0e4ae03f5557cd105f916e547c294c,"hydiomatic.utils: Add support for non-list coll? types
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-06-24 12:39:13+02:00,-7200,2015-06-24 12:39:13+02:00,-7200,True,False,['utils.hy'],['e3a9397462d210e7ef24448ab00e2c424fa9a304'],0,2,2,1,,,
+9ce280aa0611cafb32f8d5a083494b5d89dfca12,"requirements.txt: Blacklist problematic hy versions
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-06-24 13:44:51+02:00,-7200,2015-06-24 13:44:51+02:00,-7200,True,False,['requirements.txt'],['11dd4db20a0e4ae03f5557cd105f916e547c294c'],1,1,2,1,,,
+8af093dff08dfe43449f0ea860c7e33eb68d5080,".travis.yml: Drop python 3.2, hy dropped support too
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-06-24 13:47:18+02:00,-7200,2015-06-24 13:47:18+02:00,-7200,True,False,['.travis.yml'],['9ce280aa0611cafb32f8d5a083494b5d89dfca12'],1,0,1,1,,,
+4648601f7c8c23bf83e8a0657467e3bac2b501a6,"README.md: Fix badge URLs
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-06-24 13:57:58+02:00,-7200,2015-06-24 13:59:49+02:00,-7200,True,False,['README.md'],['8af093dff08dfe43449f0ea860c7e33eb68d5080'],3,3,6,1,,,
+a66e3ccbbee1e02ffd0e0ac50e67047deb65a360,"hydiomatic.utils: Teach hypprint about None -> nil
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-07-30 14:43:35+02:00,-7200,2015-07-30 14:43:35+02:00,-7200,True,False,['utils.hy'],['4648601f7c8c23bf83e8a0657467e3bac2b501a6'],1,3,4,1,,,
+8c2c171b65162fafcd8f00202088b85b7d3684bc,"hydiomatic.hy: Add a license header
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-07-30 15:00:16+02:00,-7200,2015-07-31 09:40:00+02:00,-7200,True,False,['hydiomatic.hy'],['a66e3ccbbee1e02ffd0e0ac50e67047deb65a360'],0,16,16,1,,,
+f382f79dffff9766bc4caff781a368cae51d685e,"hydiomatic.rules: Start adding rules for the Grand Cleanup
+
+This introduces a rather ugly hack: a set of rules will be run after
+simplification to clean up temporary renames. The reason we do this, is
+because we want to skip applying some rules over and over again: so we
+transform the expression so that the rule doesn't recognise it
+anymore. But in the end, we want to transform it back. The old functions
+that do no cleanup are available under a starred name.
+
+The new rules - not part of the default set - suggest modifications that
+follow the Grand Language Cleanup.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-07-31 09:44:13+02:00,-7200,2015-07-31 09:44:13+02:00,-7200,True,False,"['core.hy', 'rules.hy', 'grand_cleanupo.hy', 'hydiomatic_tests.hy']",['8c2c171b65162fafcd8f00202088b85b7d3684bc'],9,109,118,4,,,
+9af557b86e9528c360e860d8311caae49d0c0a5d,"hydiomatic.hy: Add an option to run the Grand Cleanup rules
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-07-31 09:47:21+02:00,-7200,2015-07-31 09:47:21+02:00,-7200,True,False,['hydiomatic.hy'],['f382f79dffff9766bc4caff781a368cae51d685e'],8,17,25,1,,,
+5922b704f86020925d80a199e0495ec96bb8bbbb,"tests: Add another Grand Cleanup test case
+
+This was failing in an intermediate implementation, add it for safety's
+sake.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-07-31 09:56:01+02:00,-7200,2015-07-31 09:56:01+02:00,-7200,True,False,['hydiomatic_tests.hy'],['9af557b86e9528c360e860d8311caae49d0c0a5d'],1,9,10,1,,,
+aa6b496d77b2e1af655e8612120944f9def8ea01,"Clean up simplified forms recursively
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-07-31 10:41:06+02:00,-7200,2015-07-31 10:41:06+02:00,-7200,True,False,"['core.hy', 'hydiomatic_tests.hy']",['5922b704f86020925d80a199e0495ec96bb8bbbb'],23,32,55,2,,,
+36f123fa261f3c203aacc53612c3b78c3c56f0b4,"grand-cleanupo: Add a rule for for's implicit do
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-07-31 10:55:22+02:00,-7200,2015-07-31 10:55:22+02:00,-7200,True,False,"['grand_cleanupo.hy', 'hydiomatic_tests.hy']",['aa6b496d77b2e1af655e8612120944f9def8ea01'],2,14,16,2,,,
+3464a79a7a8733125b57fd268b3ef73ba804dcad,"grand-cleanupᵒ: Use a relational binding transformation
+
+Implement the [[a b] z] => [a b z nil] transformation in a
+semi-relational way.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-04 11:00:08+02:00,-7200,2015-08-04 11:00:08+02:00,-7200,True,False,['grand_cleanupo.hy'],['eef07359a4fe242ea37f9056d25aa68c852ae5d4'],13,16,29,1,,,
+84514f43d9c829b09a7b0c23c982e5c602754fdc,"grand-cleanupᵒ: Add a rule for the planned cond change
+
+With the grand cleanup, the effect of a test in conde gains an implicit
+do. So the rule cleans up any explicit ones.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-04 11:27:08+02:00,-7200,2015-08-04 11:27:08+02:00,-7200,True,False,"['grand_cleanupo.hy', 'hydiomatic_tests.hy']",['3464a79a7a8733125b57fd268b3ef73ba804dcad'],2,40,42,2,,,
+564ac173bbe2fe50484789138e86dfe0898fb421,"grand-cleanupᵒ: Code cleanup
+
+Merge transform-bindingsᵒ and transform-conditionsᵒ into a single
+function that takes a transformer function.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-04 11:31:13+02:00,-7200,2015-08-04 11:31:13+02:00,-7200,True,False,['grand_cleanupo.hy'],['84514f43d9c829b09a7b0c23c982e5c602754fdc'],15,7,22,1,,,
+4d5b0a21a4bcee659226344cd3604865c53c783a,"grand-cleanupᵒ: Add a rule for the defclass reimagination
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-04 16:50:45+02:00,-7200,2015-08-04 16:50:45+02:00,-7200,True,False,"['grand_cleanupo.hy', 'hydiomatic_tests.hy']",['564ac173bbe2fe50484789138e86dfe0898fb421'],5,93,98,2,,,
+8785f3abb381dfe25cfb137c8339fe914daa9383,"grand-cleanupᵒ: Merge the defclass rules into one
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-05 09:32:49+02:00,-7200,2015-08-05 09:32:49+02:00,-7200,True,False,['grand_cleanupo.hy'],['4d5b0a21a4bcee659226344cd3604865c53c783a'],18,14,32,1,,,
+a16be70f576712382e44a8177fac9cd81171ad4f,"hydiomatic.rulesets: Minor cosmetic cleanup
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-05 09:42:19+02:00,-7200,2015-08-05 09:42:19+02:00,-7200,True,False,"['arithmetico.hy', 'collectiono.hy', 'control_structo.hy', 'equalityo.hy', 'grand_cleanupo.hy', 'optimo.hy', 'syntaxo.hy', 'warningso.hy']",['8785f3abb381dfe25cfb137c8339fe914daa9383'],5,56,61,8,,,
+5deec2076ea8b57cd89315730e55b65ec3d46a02,"grand-cleanupᵒ: Add a slice->cut rule
+
+See hylang/hy#652.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-05 13:09:00+02:00,-7200,2015-08-05 13:09:00+02:00,-7200,True,False,"['grand_cleanupo.hy', 'hydiomatic_tests.hy']",['a16be70f576712382e44a8177fac9cd81171ad4f'],2,8,10,2,,,
+4c2426bce93ab86ef293dff3a8c59db0caef3dd7,"rules/warningsᵒ: Add a FOO -> *foo* suggestion
+
+In Hy, *foo* translates to FOO, but *foo* is more idiomatic, so suggest
+using it instead of the upper-case symbol name. Only catches symbols.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-07 14:00:07+02:00,-7200,2015-08-07 14:00:07+02:00,-7200,True,False,"['warningso.hy', 'hydiomatic_tests.hy']",['5deec2076ea8b57cd89315730e55b65ec3d46a02'],1,25,26,2,,,
+a86fcca18ac3c637356db4e7823365740ac530e9,"grand-cleanupᵒ: Rules for some removed aliases
+
+The throw, catch, progn, defun, lisp-if and lisp-if-not aliases are
+going away, as per hylang/hy#880, add rules to grand-cleanupᵒ that
+suggest the correct symbol names.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-10 08:55:56+02:00,-7200,2015-08-10 08:55:56+02:00,-7200,True,False,"['grand_cleanupo.hy', 'hydiomatic_tests.hy']",['4c2426bce93ab86ef293dff3a8c59db0caef3dd7'],2,48,50,2,,,
+54a89e4ae89785368d54220fbf339301e575cd64,"grand-cleanupᵒ: Add a null->nil rule
+
+Although it doesn't do anything useful, because hypprint will always
+print nil. Still, we should be future proof!
+
+Related to hylang/hy#889.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-12 08:26:49+02:00,-7200,2015-08-12 08:26:49+02:00,-7200,True,False,"['grand_cleanupo.hy', 'hydiomatic_tests.hy']",['a86fcca18ac3c637356db4e7823365740ac530e9'],2,10,12,2,,,
+b40768936aef1a74fa9765700f9444a6eeba01d4,"Require hy & adderall git master
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-13 09:13:28+02:00,-7200,2015-08-13 09:13:28+02:00,-7200,True,False,['requirements.txt'],['54a89e4ae89785368d54220fbf339301e575cd64'],2,2,4,1,,,
+a524b7f84eda068537a4b65d1113fb99a842cff0,"Use xi from contrib.anaphoric.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-13 10:13:03+02:00,-7200,2015-08-13 10:13:03+02:00,-7200,True,False,['core.hy'],['b40768936aef1a74fa9765700f9444a6eeba01d4'],4,5,9,1,,,
+1aa711d0668438d9b091325a49edbfb088fe6ca5,"README.md: Update the Build status badge URL
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-13 10:17:10+02:00,-7200,2015-08-13 10:17:10+02:00,-7200,True,False,['README.md'],['a524b7f84eda068537a4b65d1113fb99a842cff0'],1,1,2,1,,,
+3f71e1622e86caeb24172f30950da94de640d268,"setup.py: Fix the URL, after the move to hylang/
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-13 10:30:31+02:00,-7200,2015-08-13 10:30:31+02:00,-7200,True,False,['setup.py'],['1aa711d0668438d9b091325a49edbfb088fe6ca5'],2,2,4,1,,,
+6a3ae608df320340fb07e0370c247f373e3dcc83,"NEWS.md: Convert to Markdown
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-13 10:31:06+02:00,-7200,2015-08-13 10:31:06+02:00,-7200,True,False,"['NEWS', 'NEWS.md']",['3f71e1622e86caeb24172f30950da94de640d268'],9,11,20,2,,,
+512dda5d9ea76e8e9a43b50eb9a1b343d361467c,"hydiomatic.utils: Use cut instead of slice
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-14 10:53:32+02:00,-7200,2015-08-14 10:53:32+02:00,-7200,True,False,['utils.hy'],['6a3ae608df320340fb07e0370c247f373e3dcc83'],1,1,2,1,,,
+493682667f8927e656387a686a5171eecd7b0e24,"README.md: is_zero => zero?
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-08-14 10:53:58+02:00,-7200,2015-08-14 10:53:58+02:00,-7200,True,False,['README.md'],['512dda5d9ea76e8e9a43b50eb9a1b343d361467c'],2,2,4,1,,,
+41ce2c62c6523d8fbf1b180db54536612b2c09f7,"grand-cleanupᵒ: Add a zipwith -> map rule
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-09-22 11:37:01+02:00,-7200,2015-09-22 11:37:01+02:00,-7200,True,False,"['grand_cleanupo.hy', 'hydiomatic_tests.hy']",['493682667f8927e656387a686a5171eecd7b0e24'],2,8,10,2,,,
+9ce5ec2f8240572d95f543416b1c79c03c3d1c5e,"grand-cleanupᵒ: filterfalse => remove
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-09-22 11:39:30+02:00,-7200,2015-09-22 11:39:30+02:00,-7200,True,False,"['grand_cleanupo.hy', 'hydiomatic_tests.hy']",['41ce2c62c6523d8fbf1b180db54536612b2c09f7'],2,8,10,2,,,
+11e55b150dd18d2c4050887e2f9f863e67e67002,"Update to Hy master syntax
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-10-05 15:05:10+02:00,-7200,2015-10-05 15:05:10+02:00,-7200,True,False,"['hydiomatic.hy', 'core.hy', 'macros.hy', 'grand_cleanupo.hy', 'optimo.hy', 'utils.hy', 'hydiomatic_tests.hy']",['9ce5ec2f8240572d95f543416b1c79c03c3d1c5e'],15,15,30,7,,,
+91c9fe59496d14ae66b5d8ff8d7fe87ccd2f8d6a,"Drop python 2.6 from Travis
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-10-05 15:08:48+02:00,-7200,2015-10-05 15:08:48+02:00,-7200,True,False,['.travis.yml'],['11e55b150dd18d2c4050887e2f9f863e67e67002'],1,0,1,1,,,
+101f0f7125856706f672e340a735319596c1cd47,"Add an explicit monaxhyd dependency
+
+Add an explicit monaxhyd dependency, to override the one from
+adderall. This is needed because we use adderall from git, but via its
+setup.py, which requires an old monaxhyd.
+
+This is temporary, until a new version of Hy gets released.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-10-05 15:12:40+02:00,-7200,2015-10-05 15:12:40+02:00,-7200,True,False,['requirements.txt'],['91c9fe59496d14ae66b5d8ff8d7fe87ccd2f8d6a'],0,1,1,1,,,
+7eeb70b741ae3bde81e216be09a78786d19a4345,"Add a pretty/simplify macro to utils
+
+Also require hydiomatic.utils in bin/hydiomatic.hy, so that it will be
+available on the REPL.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2015-10-11 22:31:59+02:00,-7200,2015-10-11 22:31:59+02:00,-7200,True,False,"['hydiomatic.hy', 'utils.hy']",['101f0f7125856706f672e340a735319596c1cd47'],1,4,5,2,,,
+3934ee83fae64d2a37d608f04be51d355055af10,"Add a rules/jokes ruleset
+
+Inspired by a tweet[1], this adds a -j option and a rules/jokes set,
+that currently transforms boolean symbol names to a Canadian accent.
+
+ [1]: https://twitter.com/_jayphelps/status/704158893849448449
+
+Thus, the symbol `foo?` becomes `foo, eh?`.
+
+Signed-off-by: Gergely Nagy <algernon@madhouse-project.org>",Gergely Nagy,algernon@madhouse-project.org,Gergely Nagy,algernon@madhouse-project.org,2016-03-01 11:24:13+01:00,-3600,2016-03-01 11:24:13+01:00,-3600,True,False,"['hydiomatic.hy', 'rules.hy', 'jokeo.hy', 'hydiomatic_tests.hy']",['7eeb70b741ae3bde81e216be09a78786d19a4345'],15,65,80,4,,,
+f7e56e2810f5331b207680260de64ea290314b9d,"Updates for recent Hy changes
+
+Beyond simple syntax and function signature updates, the biggest changes are in
+the handling/use of--the now missing--`cons`.
+
+Also, some rules have been added that reflect these Hy language changes, as
+well.  They still need tests.  A particularly good test/demo could involve the
+automatic application of these very changes!  Perhaps only a subset could be
+reasonably performed, since some changes (e.g. the ""lifting""/pulling out of
+`cons`es from quoted forms) aren't part of the current rulesets.  We might be
+able to add them, or use the opportunity to demonstrate user-level
+modifications/additions to the rules.",Brandon T. Willard,brandonwillard@gmail.com,Brandon T. Willard,brandonwillard@gmail.com,2018-09-30 22:08:56-05:00,18000,2018-09-30 22:59:05-05:00,18000,True,False,"['.travis.yml', 'hydiomatic.hy', '__init__.py', 'core.hy', 'macros.hy', 'rules.hy', 'arithmetico.hy', 'collectiono.hy', 'control_structo.hy', 'equalityo.hy', 'grand_cleanupo.hy', 'jokeo.hy', 'optimo.hy', 'quoteo.hy', 'syntaxo.hy', 'warningso.hy', 'utils.hy', 'setup.py', '__init__.py', 'test_hydiomatic.hy']",['5d3c95887a76b9502865118e30deb8dbab4d953c'],238,317,555,20,,,
+b0858ab3bfaffffc7e078b5a08d50e97c49eb2a6,Fix console script and add an example to the README,Brandon T. Willard,brandonwillard@gmail.com,Brandon T. Willard,brandonwillard@gmail.com,2018-10-01 12:59:45-05:00,18000,2018-10-01 12:59:45-05:00,18000,True,False,"['README.md', 'syntaxo.hy', 'scripts.hy', 'setup.py', 'test_hydiomatic.hy']",['f7e56e2810f5331b207680260de64ea290314b9d'],52,83,135,5,,,
+150b5893f83541774fffb3328c7361da6a4310dc,Add tests for new rules and disable old style `let/with` conversion,Brandon T. Willard,brandonwillard@gmail.com,Brandon T. Willard,brandonwillard@gmail.com,2018-10-05 17:51:27-05:00,18000,2018-10-05 17:51:27-05:00,18000,True,False,"['core.hy', 'grand_cleanupo.hy', 'syntaxo.hy', 'test_hydiomatic.hy']",['b0858ab3bfaffffc7e078b5a08d50e97c49eb2a6'],175,225,400,4,,,
+ee81f41fa397942c700d361640e6c044372f631f,"Update the version number
+
+Needed to update the version number in order to match the new distribution in
+PyPi.
+
+Closes #17",Brandon T. Willard,brandonwillard@gmail.com,Brandon T. Willard,brandonwillard@gmail.com,2019-05-06 17:56:27-05:00,18000,2019-05-06 17:58:13-05:00,18000,True,False,['setup.py'],['317d2af5f2bc159e1be162f052962c2e5063ec4f'],1,1,2,1,,,
+f4face901710ea51f89f69c8fc1f51900cb5b894,Remove Python 3.4 and update Travis file,Brandon T. Willard,brandonwillard@gmail.com,Brandon T. Willard,brandonwillard@gmail.com,2019-05-06 20:21:09-05:00,18000,2019-05-06 20:21:09-05:00,18000,True,False,"['.travis.yml', 'setup.py']",['ee81f41fa397942c700d361640e6c044372f631f'],3,5,8,2,,,

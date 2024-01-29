@@ -1,0 +1,97 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+a2f938fd5113e64b26381ee608f1dc20d6fb3663,Initial commit.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 08:37:59+02:00,-7200,2015-09-30 08:37:59+02:00,-7200,True,False,['README.md'],[],0,1,1,1,,,
+ad2271f067acf7cd11031a021025c2fd48d95f73,"Problem: There is no documentation.
+
+Solution: Create Sphinx template.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 08:42:24+02:00,-7200,2015-09-30 08:42:24+02:00,-7200,True,False,"['Makefile', 'conf.py', 'index.rst', 'make.bat']",['a2f938fd5113e64b26381ee608f1dc20d6fb3663'],0,701,701,4,,,
+92cf603c5d7aaf86e7e30b84a8bfda4c7c85f1a1,"Problem: Generated documentation files are shown in git commands.
+
+Solution: Add them to ignore list.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 08:43:46+02:00,-7200,2015-09-30 08:43:46+02:00,-7200,True,False,['.gitignore'],['ad2271f067acf7cd11031a021025c2fd48d95f73'],0,1,1,1,,,
+e04334c93f0b3f0b9a22a2d5e0da846390db1956,"Problem: People don't know what this project is about.
+
+Solution: Add short description to README.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 08:52:08+02:00,-7200,2015-09-30 08:52:08+02:00,-7200,True,False,['README.md'],['92cf603c5d7aaf86e7e30b84a8bfda4c7c85f1a1'],1,1,2,1,,,
+899a14d88cbf3815f7518d3f0e031385ec26e01d,"Problem: The documentation is hard to find.
+
+Solution: Add a link to it in the README.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 08:52:42+02:00,-7200,2015-09-30 08:52:42+02:00,-7200,True,False,['README.md'],['e04334c93f0b3f0b9a22a2d5e0da846390db1956'],0,2,2,1,,,
+a4d35811e8dda5c4f53abff046c5aa3756dc1548,"Problem: The documentation lacks an introduction.
+
+Solution: Add it.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 09:10:10+02:00,-7200,2015-09-30 09:10:10+02:00,-7200,True,False,"['index.rst', 'intro.rst']",['899a14d88cbf3815f7518d3f0e031385ec26e01d'],0,12,12,2,,,
+09a01e37dd651737fae83a604913fc1853c9b460,"Problem: There is no code.
+
+Solution: Import initial version from Timeline.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 09:17:35+02:00,-7200,2015-09-30 09:17:35+02:00,-7200,True,False,['__init__.py'],['a4d35811e8dda5c4f53abff046c5aa3756dc1548'],0,223,223,1,0.7161290322580646,0.7161290322580646,0.36774193548387096
+93aabd4e58b6e462f4b67362fb2e14368b4968cc,"Problem: License is unclear.
+
+Solution: Add copy and mention it in readme.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 09:22:08+02:00,-7200,2015-09-30 09:22:08+02:00,-7200,True,False,"['COPYING', 'README.md']",['09a01e37dd651737fae83a604913fc1853c9b460'],0,677,677,2,,,
+00e5b2d913779c333d44c9a6f34e82ee98000219,"Problem: License mentions Timeline.
+
+Solution: Change to humblewx.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 09:30:53+02:00,-7200,2015-09-30 09:30:53+02:00,-7200,True,False,['__init__.py'],['93aabd4e58b6e462f4b67362fb2e14368b4968cc'],4,4,8,1,,,
+6f68bf7a8cb0bcee3801ad20547b9577c089e8e6,"Problem: Copyright line is complex to maintain.
+
+Solution: Shorten it and mention names in AUTHORS.
+
+I'm not sure if this is actually correct, but many projects seem to use
+this pattern.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 09:36:39+02:00,-7200,2015-09-30 09:36:39+02:00,-7200,True,False,"['AUTHORS', '__init__.py']",['00e5b2d913779c333d44c9a6f34e82ee98000219'],1,6,7,2,,,
+026f54e168244c966cab032f49a7c6b485f7f0fa,"Problem: There is no documentation on usage.
+
+Solution: Solution add example and include it in documentation.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 09:50:55+02:00,-7200,2015-09-30 09:50:55+02:00,-7200,True,False,"['index.rst', 'tutorial.rst', 'helloworld.py', '__init__.py']",['6f68bf7a8cb0bcee3801ad20547b9577c089e8e6'],14,29,43,4,0.0,0.0,0.5
+5ae57a10d12c46bd72e0f5dd094ce495dfdfa3fb,"Problem: Generated pyc files clutter git commands.
+
+Solution: Ignore them.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 09:51:30+02:00,-7200,2015-09-30 09:51:30+02:00,-7200,True,False,['.gitignore'],['026f54e168244c966cab032f49a7c6b485f7f0fa'],0,1,1,1,,,
+d25762739b0e61301f2ac4baf94b8f3678449e96,"Problem: Generated tags file clutters git commands.
+
+Solution: Ignore them.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 10:11:18+02:00,-7200,2015-09-30 10:11:18+02:00,-7200,True,False,['.gitignore'],['5ae57a10d12c46bd72e0f5dd094ce495dfdfa3fb'],0,1,1,1,,,
+886c0b2e9307234b31559fb124714adc2ccb726f,"Problem: Tutorial does not demonstrate how dialog and controller interact.
+
+Solution: Add greeting example.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 10:24:54+02:00,-7200,2015-09-30 10:25:02+02:00,-7200,True,False,"['tutorial.rst', 'greeting.py']",['d25762739b0e61301f2ac4baf94b8f3678449e96'],0,44,44,2,1.0,1.0,1.0
+6bdee3edb452ce072639930c747624d098f20d72,"Problem: Name was hard to read.
+
+Solution: Add underscore.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 10:32:40+02:00,-7200,2015-09-30 10:32:40+02:00,-7200,True,False,"['tutorial.rst', 'hello_world.py']",['886c0b2e9307234b31559fb124714adc2ccb726f'],1,1,2,2,,,
+5c87fdc3d17fd596db42bb88af1f082308daffd5,"Problem: Abbreviation might be confusing.
+
+Solution: Spell it out.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 10:33:38+02:00,-7200,2015-09-30 10:33:38+02:00,-7200,True,False,"['index.rst', 'introduction.rst']",['6bdee3edb452ce072639930c747624d098f20d72'],1,1,2,2,,,
+8f9165d17d4793f27fce59c09bb35c4f6c35c870,"Problem: There is no API documentation.
+
+Solution: Create skeleton.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 11:05:26+02:00,-7200,2015-09-30 11:05:26+02:00,-7200,True,False,"['api.rst', 'index.rst']",['5c87fdc3d17fd596db42bb88af1f082308daffd5'],0,35,35,2,,,
+4f02eff67ef19a401b57ff8f1777aed25074d84b,"Problem: XML definition is not documented.
+
+Solution: Add skeleton.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 11:51:15+02:00,-7200,2015-09-30 11:51:15+02:00,-7200,True,False,['api.rst'],['8f9165d17d4793f27fce59c09bb35c4f6c35c870'],0,75,75,1,,,
+188a0a82f55bc90e74bfa71b4ec9e01f9d30cf59,"Problem: XML definition language is unclear.
+
+Solution: Rename to GUI description language.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 13:07:40+02:00,-7200,2015-09-30 13:07:40+02:00,-7200,True,False,['api.rst'],['4f02eff67ef19a401b57ff8f1777aed25074d84b'],36,46,82,1,,,
+7a836cba9acd36418a5d50af9a77f921a54896d0,"Problem: Only wx components can be found.
+
+Solution: Make list of modules searched in configurable.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 13:35:09+02:00,-7200,2015-09-30 13:35:09+02:00,-7200,True,False,"['api.rst', '__init__.py']",['188a0a82f55bc90e74bfa71b4ec9e01f9d30cf59'],3,18,21,2,,,
+77fc8fe44214056754819adf5b1ec6d15b60ef36,Problem: Text has typos.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 14:11:07+02:00,-7200,2015-09-30 14:11:07+02:00,-7200,True,False,['api.rst'],['7a836cba9acd36418a5d50af9a77f921a54896d0'],3,3,6,1,,,
+53e892cc2e57836ac812b734740515e742e1d2c6,Problem: Incorrect cross reference.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 14:26:33+02:00,-7200,2015-09-30 14:26:33+02:00,-7200,True,False,['api.rst'],['77fc8fe44214056754819adf5b1ec6d15b60ef36'],2,2,4,1,,,
+5e7c3066e4053ed0e8efd5703b3e1eb3efda28e5,"Problem: The tuturial is lacking explanations.
+
+Solutions: Flesh out explanations.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-09-30 17:29:01+02:00,-7200,2015-09-30 17:29:01+02:00,-7200,True,False,"['greeting.png', 'hello_world.png', 'tutorial.rst']",['53e892cc2e57836ac812b734740515e742e1d2c6'],0,126,126,3,,,
+8e929e9ce3085825dd9dd6a7ce52ae207c07333f,Problem: There are no installation instructions.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-14 08:16:55+02:00,-7200,2015-10-14 08:16:55+02:00,-7200,True,False,"['index.rst', 'installing.rst']",['979ca991e42385cc372e2bb0b906c8f1b287d4d8'],0,12,12,2,,,
+0e03be330aaf13fed8acfcb4bd98551f3a90ff86,Problem: Can't install in standard Python way.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-15 07:17:54+02:00,-7200,2015-10-15 07:17:54+02:00,-7200,True,False,"['.gitignore', 'MANIFEST.in', 'setup.py']",['6d0ad7524613069fbeccc08a2fab71ab2e9118c8'],1,20,21,3,,,
+c8d3852047e219482923d1ef506ecd6149385857,Problem: The documentation does not reflect recommented way to install.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-15 12:19:03+02:00,-7200,2015-10-15 12:19:03+02:00,-7200,True,False,['installing.rst'],['f357bddf1870eb6dcad6013b3a34178151492152'],6,13,19,1,,,
+8d7d79905c9c9b034c2722839eab91be5029e1e4,Python packaging seems to prefer rst over md.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-15 12:31:40+02:00,-7200,2015-10-15 12:31:40+02:00,-7200,True,False,"['MANIFEST.in', 'README.md', 'README.rst', 'setup.py']",['c8d3852047e219482923d1ef506ecd6149385857'],8,25,33,4,1.0,1.0,1.0
+1fda1731926f7e1b4b836a1e529554c2b2caab9a,Fix formatting.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-15 12:33:39+02:00,-7200,2015-10-15 12:33:39+02:00,-7200,True,False,['README.rst'],['8d7d79905c9c9b034c2722839eab91be5029e1e4'],2,2,4,1,,,
+f392622e0f3f04a526e9a75bc797951b46d13939,Remove needless words in short description.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-15 12:34:00+02:00,-7200,2015-10-15 12:34:00+02:00,-7200,True,False,['README.rst'],['1fda1731926f7e1b4b836a1e529554c2b2caab9a'],1,1,2,1,,,
+124f9a9f296148f8c20656be41a2f6d7094125ff,Problem: Arguments to Dialog.__init__ were inconsistently documented.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 08:09:23+02:00,-7200,2015-10-19 08:09:23+02:00,-7200,True,False,['api.rst'],['f392622e0f3f04a526e9a75bc797951b46d13939'],5,5,10,1,,,
+4bc10f8b69028869f14245eb009274a6a8b68d80,Problem: Typo.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 08:10:57+02:00,-7200,2015-10-19 08:10:57+02:00,-7200,True,False,['api.rst'],['124f9a9f296148f8c20656be41a2f6d7094125ff'],1,1,2,1,,,
+057f96d21789a87c897194656963f658b32fa7ed,Problem: Parameters were not described clear enough.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 08:12:10+02:00,-7200,2015-10-19 08:12:30+02:00,-7200,True,False,['api.rst'],['4bc10f8b69028869f14245eb009274a6a8b68d80'],1,3,4,1,,,
+c6546881393fd23289a584fbf4c6295f9676d413,Problem: Sizer nodes lacked description.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 08:27:15+02:00,-7200,2015-10-19 08:27:15+02:00,-7200,True,False,['api.rst'],['057f96d21789a87c897194656963f658b32fa7ed'],0,32,32,1,,,
+d5bab35c7c56486651dce2d9136d3aa0124300be,Problem: StaticBoxSizerVertical is not documented.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 08:37:23+02:00,-7200,2015-10-19 08:37:23+02:00,-7200,True,False,['api.rst'],['c6546881393fd23289a584fbf4c6295f9676d413'],0,8,8,1,,,
+455650006ea47c2f887db3ca00452f86f6d52472,Problem: There is no example showing the use of variables.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 08:58:44+02:00,-7200,2015-10-19 08:58:44+02:00,-7200,True,False,"['example_variables.rst', 'examples.rst', 'index.rst', 'variables.py']",['d5bab35c7c56486651dce2d9136d3aa0124300be'],0,39,39,4,1.0,1.0,1.0
+cb4ea1215e47b4e7567dc4ae4532bfbc015dc3ac,Problem: There is no example showing how to use sizers.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 09:15:13+02:00,-7200,2015-10-19 09:15:13+02:00,-7200,True,False,"['example_sizers.rst', 'examples.rst', 'sizers.png', 'sizers.py']",['455650006ea47c2f887db3ca00452f86f6d52472'],0,59,59,4,1.0,1.0,1.0
+862dd66b21eaf0815272d76c56e1d450b7adc042,"Problem: Installation instructions are out of place.
+
+Since downloading and installing is one of the first things
+you must do, it should come early.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 12:47:15+02:00,-7200,2015-10-19 12:47:15+02:00,-7200,True,False,['index.rst'],['cb4ea1215e47b4e7567dc4ae4532bfbc015dc3ac'],2,1,3,1,,,
+1e2dac27364befa4ae1d7cfeb3ecfaccbddda4bb,Problem: Sizers example lacked explaining body text.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 13:25:37+02:00,-7200,2015-10-19 13:25:37+02:00,-7200,True,False,"['example_sizers.rst', 'sizers_wx.png', 'sizers.py']",['862dd66b21eaf0815272d76c56e1d450b7adc042'],4,69,73,3,1.0,1.0,1.0
+b1170adb383e7a85830f70a21d1049340d03078f,"Problem: Examples section has a confusing name.
+
+There are no longer only examples.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 13:29:50+02:00,-7200,2015-10-19 13:29:50+02:00,-7200,True,False,"['examples.rst', 'index.rst', 'sizers.rst', 'topics.rst', 'variables.rst']",['1e2dac27364befa4ae1d7cfeb3ecfaccbddda4bb'],9,11,20,5,,,
+e34c7edb6875ba34b15742df29875c2de62e7a16,Problem: Inconsisten header capitalization.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 13:35:48+02:00,-7200,2015-10-19 13:35:48+02:00,-7200,True,False,['api.rst'],['b1170adb383e7a85830f70a21d1049340d03078f'],1,1,2,1,,,
+ab546399a20bc64e2575355c95c17f37f83e2347,Problem: Introduction lack context.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 13:42:38+02:00,-7200,2015-10-19 13:42:38+02:00,-7200,True,False,['introduction.rst'],['e34c7edb6875ba34b15742df29875c2de62e7a16'],2,7,9,1,,,
+48737297e255f1f0cd764cec58e88f74d7e99c63,Problem: There is no documentation for custom components.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-10-19 14:23:35+02:00,-7200,2015-10-19 14:23:35+02:00,-7200,True,False,"['custom_components.rst', 'custom_component.png', 'topics.rst', 'custom_component.py']",['ab546399a20bc64e2575355c95c17f37f83e2347'],0,87,87,4,1.0,1.0,1.0
+38c2f5c65c94268b293e09acaec5e7d9d04d83cd,"Problem: I want to make a new release, but version number is current release.",Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-11-20 08:08:10+01:00,-3600,2015-11-20 08:08:10+01:00,-3600,True,False,['setup.py'],['781108777d9f429bec2a787905ae42701f9f461b'],1,1,2,1,,,
+f8d7e3047db35a9aef9304952a434580bc670383,Problem: I forgot how to make a release.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-11-20 08:08:34+01:00,-3600,2015-11-20 08:08:34+01:00,-3600,True,False,"['index.rst', 'release.rst']",['38c2f5c65c94268b293e09acaec5e7d9d04d83cd'],0,10,10,2,,,
+1950ef040d66089df5718cfbbcff4e2ed6ee61a9,Problem: Important files excluded from release.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-11-21 08:42:18+01:00,-3600,2015-11-21 08:42:18+01:00,-3600,True,False,['MANIFEST.in'],['85a894fb30e13c6fe318f3e915aa2630e6db49b8'],0,2,2,1,,,
+40fa445797d663962dbe89567cb483d412cf15cc,Problem: Version number incorrect for next release.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2015-11-21 08:42:43+01:00,-3600,2015-11-21 08:42:43+01:00,-3600,True,False,['setup.py'],['1950ef040d66089df5718cfbbcff4e2ed6ee61a9'],1,1,2,1,,,
+04c2ca13f3e8ddb259f146e14b8de81e9eb5ac6a,Remove deprecated xml call for Python 3.9,Gwyn Ciesla,gwync@protonmail.com,Gwyn Ciesla,gwync@protonmail.com,2020-09-29 11:19:49-05:00,18000,2020-09-29 11:19:49-05:00,18000,True,False,['__init__.py'],['b92de07a182b7b55abf05e9a4489b79370595fc8'],4,4,8,1,,,
+45c0a3625f47f373080e66e14db2c543890b8f33,Bump version.,Rickard Lindberg,ricli85@gmail.com,Rickard Lindberg,ricli85@gmail.com,2020-12-03 21:00:36+01:00,-3600,2020-12-03 21:00:36+01:00,-3600,True,False,['setup.py'],['67e07e4ad290ee48cf8712897b4c38ad71a617f8'],1,1,2,1,,,

@@ -1,0 +1,74 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+5a282268ddf29781b8572860f57ce9c93577a727,Adds LICENSE and gitignore,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 09:42:04+05:30,-19800,2021-10-03 09:42:04+05:30,-19800,True,False,"['.gitignore', 'LICENSE']",[],0,159,159,2,,,
+f2d48bad4516b58770717f5f422e87ea2f0dc045,Adds initital requirements files,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 10:05:04+05:30,-19800,2021-10-03 10:05:04+05:30,-19800,True,False,"['requirements.in', 'requirements.txt']",['5a282268ddf29781b8572860f57ce9c93577a727'],0,39,39,2,,,
+5ef8e56c7d8f504954966ebc14bbb5017d353f50,"Adds initial code to be able to build a single source
+
+-s path/to/source/tarball/or/zip",Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 11:53:20+05:30,-19800,2021-10-03 11:53:20+05:30,-19800,True,False,"['.gitignore', 'MANIFEST.in', '__init__.py', 'setup.py']",['f2d48bad4516b58770717f5f422e87ea2f0dc045'],0,159,159,4,0.3698630136986301,1.0,1.0
+23974657245ed402772b76dd4a02f61b5d8c8c7c,Uses click.echo instead print,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 11:55:55+05:30,-19800,2021-10-03 11:55:55+05:30,-19800,True,False,['__init__.py'],['5ef8e56c7d8f504954966ebc14bbb5017d353f50'],2,2,4,1,,,
+f9dcc3af3710ac175d51bccbc789845f54b0c5ea,Adds -d/--directory to build all the sources there,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 12:08:44+05:30,-19800,2021-10-03 12:08:44+05:30,-19800,True,False,['__init__.py'],['23974657245ed402772b76dd4a02f61b5d8c8c7c'],7,22,29,1,1.0,0.0,0.0
+1c98e06b2e3feac50fadd2ee059820584b59c4c0,Updates gitignore,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 12:10:29+05:30,-19800,2021-10-03 12:10:29+05:30,-19800,True,False,['.gitignore'],['f9dcc3af3710ac175d51bccbc789845f54b0c5ea'],1,3,4,1,,,
+b62a97f871d5ec37fb69eb63522a35160e450b46,Adds some name,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 12:16:30+05:30,-19800,2021-10-03 12:16:30+05:30,-19800,True,False,['__init__.py'],['1c98e06b2e3feac50fadd2ee059820584b59c4c0'],1,2,3,1,,,
+10fe18cb2d365cc491438513eb7de2c102494de4,Updates the requirements,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 13:40:25+05:30,-19800,2021-10-03 13:40:25+05:30,-19800,True,False,"['MANIFEST.in', 'dev-requirements.in', 'dev-requirements.txt', 'requirements.in', 'requirements.txt']",['b62a97f871d5ec37fb69eb63522a35160e450b46'],25,102,127,5,,,
+17192882a98a24c2bb2c4a4e6c32b5025d417fe2,"Adds -r/--requirement option
+
+Now we can point to any file containing all dependencies to install
+along with hashes. This will only work with hashes available for all
+the dependencies. The file name can be anything.
+
+Example of building such a requirements file using pip-tools
+
+pip-compile --generate-hashes --allow-unsafe \
+  --output-file=requirements.txt requirements.in",Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 13:43:08+05:30,-19800,2021-10-03 13:43:08+05:30,-19800,True,False,['__init__.py'],['10fe18cb2d365cc491438513eb7de2c102494de4'],8,41,49,1,0.0,0.8095238095238095,0.8095238095238095
+c169ec8930cd6a82617e77a065ab38d07ef93558,Small documentation update,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 13:45:17+05:30,-19800,2021-10-03 13:45:17+05:30,-19800,True,False,['__init__.py'],['17192882a98a24c2bb2c4a4e6c32b5025d417fe2'],1,1,2,1,,,
+5151e0d79d6f4cae527d38d39d5d933692d9931c,Adds --sde option,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 13:53:20+05:30,-19800,2021-10-03 13:53:20+05:30,-19800,True,False,['__init__.py'],['c169ec8930cd6a82617e77a065ab38d07ef93558'],1,4,5,1,0.0,0.0,0.0
+c6eb8cfbc05f163378c62e6763ffd98d33c607ca,Adds asaman-generate command,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 17:29:36+05:30,-19800,2021-10-03 17:29:36+05:30,-19800,True,False,"['__init__.py', 'setup.py']",['5151e0d79d6f4cae527d38d39d5d933692d9931c'],0,128,128,2,0.0,0.0,0.0
+666ca0b2669daf037d623c2bb40ade2efffb8142,Adds README file,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 18:00:23+05:30,-19800,2021-10-03 18:00:23+05:30,-19800,True,False,['README.md'],['c6eb8cfbc05f163378c62e6763ffd98d33c607ca'],0,158,158,1,,,
+54a4c93c5e1dcb49df11c373e323e44d15714994,Updates setup,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 18:16:45+05:30,-19800,2021-10-03 18:16:45+05:30,-19800,True,False,['setup.py'],['666ca0b2669daf037d623c2bb40ade2efffb8142'],1,16,17,1,,,
+27aaf0858e8d59307df56028457df85dcc65b73e,Updates dependencies during install,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 19:18:42+05:30,-19800,2021-10-03 19:18:42+05:30,-19800,True,False,"['pyproject.toml', 'setup.py']",['54a4c93c5e1dcb49df11c373e323e44d15714994'],3,15,18,2,,,
+95f8fb8d6d3ae566d9032d2d775a52ca87020533,Renames to asaman,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 21:24:40+05:30,-19800,2021-10-03 21:24:40+05:30,-19800,True,False,['setup.py'],['27aaf0858e8d59307df56028457df85dcc65b73e'],2,2,4,1,,,
+e6264215968dbe4688e1c0731910f218ab5c8940,Changes name,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 21:25:56+05:30,-19800,2021-10-03 21:25:56+05:30,-19800,True,False,['README.md'],['95f8fb8d6d3ae566d9032d2d775a52ca87020533'],1,1,2,1,,,
+fd0d4d826bfb3c9f5a0e7ebadbfb43353c5855c0,Modifies name,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 21:27:59+05:30,-19800,2021-10-03 21:27:59+05:30,-19800,True,False,"['__init__.py', 'setup.py']",['e6264215968dbe4688e1c0731910f218ab5c8940'],2,2,4,2,,,
+63d08c061d7ffb0267c48be5ae5383a69f9961f4,Updates to 0.1.7,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-03 21:34:00+05:30,-19800,2021-10-03 21:34:00+05:30,-19800,True,False,"['README.md', 'setup.py']",['fd0d4d826bfb3c9f5a0e7ebadbfb43353c5855c0'],2,2,4,2,,,
+ae82002dccb1ab7a97e3bb543d0e09c397c402b1,Adds flit as build tool,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-04 14:08:51+05:30,-19800,2021-10-04 14:08:51+05:30,-19800,True,False,"['MANIFEST.in', '__init__.py', 'dev-requirements.in', 'dev-requirements.txt', 'pyproject.toml', 'setup.py']",['63d08c061d7ffb0267c48be5ae5383a69f9961f4'],45,71,116,6,,,
+6e7dba6812e10dd84fb7cba4dab15df97861e429,"Fix typos in README
+
+This commit contains following changes:
+  - Fix typos.
+    - you -> your
+    - via -> by
+  - Remove ""directory"" word.
+      ""directory"" word is being used twice.",Vipul Kumar,kumar@onenetbeyond.org,Vipul Kumar,kumar@onenetbeyond.org,2021-10-04 15:26:00+05:30,-19800,2021-10-04 15:26:00+05:30,-19800,True,False,['README.md'],['63d08c061d7ffb0267c48be5ae5383a69f9961f4'],2,2,4,1,,,
+29768df62aa12c12f20f88fb2f389e0aaf38f8ee,Touch-up the README,Brett Cannon,brett@python.org,Brett Cannon,brett@python.org,2021-10-04 12:13:46-07:00,25200,2021-10-04 12:13:46-07:00,25200,True,False,['README.md'],['63d08c061d7ffb0267c48be5ae5383a69f9961f4'],26,20,46,1,,,
+3009029a08e707801c568687b490ce93970798ed,About formatting,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-05 08:49:11+05:30,-19800,2021-10-05 08:49:11+05:30,-19800,True,False,['pyproject.toml'],['e02e28a7e9c6c127f03c42f3866883eb46821973'],1,1,2,1,,,
+904fb162913e9ea2595c786f68292b02318c22ce,Adds docs,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-05 10:49:38+05:30,-19800,2021-10-05 10:49:38+05:30,-19800,True,False,"['Makefile', 'make.bat', 'conf.py', 'hacking.rst', 'index.rst', 'install.rst']",['3009029a08e707801c568687b490ce93970798ed'],0,164,164,6,,,
+9b52220bd2be6310f4c58f035681e9f12b564aad,Trying to add a readthedocs configuration,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-05 12:12:06+05:30,-19800,2021-10-05 12:12:06+05:30,-19800,True,False,['.readthedocs.yaml'],['904fb162913e9ea2595c786f68292b02318c22ce'],0,11,11,1,,,
+f351d30c3375ddc39e90486c3eb9e21add28f38c,let us try 3.8,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-05 12:12:55+05:30,-19800,2021-10-05 12:12:55+05:30,-19800,True,False,['.readthedocs.yaml'],['9b52220bd2be6310f4c58f035681e9f12b564aad'],1,1,2,1,,,
+2fc38f6ffd1b9bc1e40b48f442af4ee6c5eec000,Adds correct conf.py path,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-05 12:29:36+05:30,-19800,2021-10-05 12:29:36+05:30,-19800,True,False,"['.readthedocs.yaml', 'index.rst']",['f351d30c3375ddc39e90486c3eb9e21add28f38c'],1,3,4,2,,,
+a5dd663f84ed7de3d6c9a9f52e0f4da3cb1509b9,Just format update,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-05 12:31:41+05:30,-19800,2021-10-05 12:31:41+05:30,-19800,True,False,"['README.md', 'conf.py']",['2fc38f6ffd1b9bc1e40b48f442af4ee6c5eec000'],12,11,23,2,,,
+b298ca5c52c95c469bf2761a3f867f859353e570,Uses Furo as theme,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-05 14:35:13+05:30,-19800,2021-10-05 14:35:13+05:30,-19800,True,False,"['.readthedocs.yaml', 'requirements.txt', 'conf.py']",['a5dd663f84ed7de3d6c9a9f52e0f4da3cb1509b9'],1,5,6,3,,,
+c42a96b88985a7f1f068e3d1781407be202d1775,Example action,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-06 09:27:13+05:30,-19800,2021-10-06 09:27:13+05:30,-19800,True,False,['github-actions-demo.yml'],['b298ca5c52c95c469bf2761a3f867f859353e570'],0,17,17,1,,,
+4afd872d1302291e6e0e720fb055f56953f0db95,Adds a dummy test,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-06 09:50:07+05:30,-19800,2021-10-06 09:50:07+05:30,-19800,True,False,"['dev-requirements.in', 'dev-requirements.txt', 'test_requirements.py']",['c42a96b88985a7f1f068e3d1781407be202d1775'],1,29,30,3,1.0,1.0,1.0
+e28f155fbe2b5f9e4baddd1e36777505815a1020,Updates action steps,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-06 09:53:11+05:30,-19800,2021-10-06 09:56:42+05:30,-19800,True,False,['github-actions-demo.yml'],['4afd872d1302291e6e0e720fb055f56953f0db95'],7,8,15,1,,,
+1fa6706f43647a571282c5a1dbb151cbedc063a3,Getting ready for actions,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-06 10:00:06+05:30,-19800,2021-10-06 10:03:18+05:30,-19800,True,False,['github-actions.yml'],['e28f155fbe2b5f9e4baddd1e36777505815a1020'],3,3,6,1,,,
+2482965c709c3c8808b7a620da81deaf919b9045,Updates README,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-06 12:36:43+05:30,-19800,2021-10-06 12:36:43+05:30,-19800,True,False,['README.md'],['e7c9902cce9e3d55a1212288dfa0a33237b5ad6b'],0,4,4,1,,,
+169f3a2f55bf6e48a9b29a88d934831c7060baf9,Fixes development instruction,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-12 12:40:20+05:30,-19800,2021-10-12 12:40:20+05:30,-19800,True,False,['hacking.rst'],['2482965c709c3c8808b7a620da81deaf919b9045'],1,0,1,1,,,
+fc9b67b3f18e67198f278c90655a4471e3cb790e,Adds initial usage docs,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2021-10-13 15:02:58+05:30,-19800,2021-10-13 15:02:58+05:30,-19800,True,False,"['index.rst', 'usage.rst']",['169f3a2f55bf6e48a9b29a88d934831c7060baf9'],0,87,87,2,,,
+ff0c3bcceca64384bf744db83619556c3d95e8b3,"Adds new command line options
+
+--no-hash
+--keep-sources
+--with-index
+--trusted-host",Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-03-08 22:39:25+01:00,-3600,2023-03-08 22:39:25+01:00,-3600,True,False,['__init__.py'],['fc9b67b3f18e67198f278c90655a4471e3cb790e'],18,79,97,1,0.037037037037037035,0.6296296296296297,0.0
+c82d54cfa0ba27bf4b12db1eae77771657bc6b77,Fixes #11 adds docs for the new changes,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-03-09 09:19:01+01:00,-3600,2023-03-09 09:19:01+01:00,-3600,True,False,['usage.rst'],['ff0c3bcceca64384bf744db83619556c3d95e8b3'],1,19,20,1,,,
+526bc7172906f089a7a5b81a12b7f1d760993dae,Updates readme,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-03-09 09:22:06+01:00,-3600,2023-03-09 09:22:06+01:00,-3600,True,False,['README.md'],['c82d54cfa0ba27bf4b12db1eae77771657bc6b77'],0,10,10,1,,,
+6c54353298b25856f4f6991f3b336457d95ac11d,Updates dev requirements,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-03-09 09:25:46+01:00,-3600,2023-03-09 09:25:46+01:00,-3600,True,False,['dev-requirements.txt'],['526bc7172906f089a7a5b81a12b7f1d760993dae'],80,145,225,1,,,
+da631790d5cf664b57d00e7aec0df1317ed3bec3,Adds tomli dependency manually,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-03-09 09:32:46+01:00,-3600,2023-03-09 09:32:46+01:00,-3600,True,False,"['dev-requirements.in', 'dev-requirements.txt']",['6c54353298b25856f4f6991f3b336457d95ac11d'],3,10,13,2,,,
+0b2302b2883a5eff7137c43b8cf02b52fb0accd5,Trying different requirement for CI,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-03-09 09:38:10+01:00,-3600,2023-03-09 09:38:10+01:00,-3600,True,False,"['github-actions.yml', 'dev-ci.txt']",['da631790d5cf664b57d00e7aec0df1317ed3bec3'],1,62,63,2,,,
+743f47747fe8c84438ba1474ea402d8453205ed9,"Fixes #12 verifies sha256sum
+
+Build `h2` package twice and tries to verify
+the sha256sum.",Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-03-09 10:10:12+01:00,-3600,2023-03-09 10:16:44+01:00,-3600,True,False,"['github-actions.yml', 'test.in', 'test.txt']",['a883efe61f9ddc06b90d74081e8fd9344f6cfffc'],1,24,25,3,,,
+85e1d2ac01cb56d86c923bca7a348dd17e7e5fd5,Fixes #16 skips build dependencies from source,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-04-16 09:18:03+02:00,-7200,2023-04-16 09:18:03+02:00,-7200,True,False,"['README.md', '__init__.py', 'requirements.in', 'requirements.txt']",['76c710521592cc5c239222cff8d8b0dab4ed3604'],22,46,68,4,0.0,0.875,0.0
+69b8ea5763deb8c86dc73cbce8a3107cbd4364a5,Updates version,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-04-16 09:20:18+02:00,-7200,2023-04-16 09:20:18+02:00,-7200,True,False,"['__init__.py', 'conf.py']",['85e1d2ac01cb56d86c923bca7a348dd17e7e5fd5'],3,3,6,2,,,
+3ff68fb82175b1c88ef5e7977c92257b2582d6df,Updates dev environment for CI,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-04-16 09:22:38+02:00,-7200,2023-04-16 09:22:38+02:00,-7200,True,False,"['dev-ci.txt', 'dev-requirements.in', 'dev-requirements.txt']",['69b8ea5763deb8c86dc73cbce8a3107cbd4364a5'],146,39,185,3,,,
+aecd4d092b529e70c4495716170b8a2d253cd588,Updates dependency and version,Kushal Das,mail@kushaldas.in,Kushal Das,mail@kushaldas.in,2023-04-21 19:20:16+02:00,-7200,2023-04-21 19:20:16+02:00,-7200,True,False,"['__init__.py', 'conf.py', 'usage.rst', 'pyproject.toml']",['3ea288820d6793756122b8feb2ae82e6926084e1'],3,34,37,4,,,

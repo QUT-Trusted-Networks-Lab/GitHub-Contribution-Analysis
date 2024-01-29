@@ -1,0 +1,678 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+14939881911237661d40d910aa13822f80b867ec,"Initial commit
+
+Copy of latest sigal galleria theme",Arne de Laat,adelaat@nikhef.nl,Arne de Laat,adelaat@nikhef.nl,2016-10-08 16:25:38+02:00,-7200,2016-10-08 16:25:38+02:00,-7200,True,False,"['README', 'classic-loader.gif', 'classic-map.png', 'galleria.classic.css', 'normalize.css', 'style.css', 'style.min.css', 'empty.png', 'fullscreen.png', 'map.png', 'photo.png', 'galleria-1.4.2.min.js', 'galleria.classic.min.js', 'galleria.history.min.js', 'jquery-1.11.1.min.js', 'layers-2x.png', 'layers.png', 'marker-icon-2x.png', 'marker-icon.png', 'marker-shadow.png', 'leaflet.css', 'leaflet.js', 'index.html']",[],0,1633,1633,23,1.0,0.8863049095607235,0.9186046511627907
+7e708b0b27bab08f9637b4ea343dcc0f8de22049,"Remove Map support
+
+Remove Leafet scripts/images/style",Arne de Laat,adelaat@nikhef.nl,Arne de Laat,adelaat@nikhef.nl,2016-10-08 16:26:32+02:00,-7200,2016-10-08 16:26:32+02:00,-7200,True,False,"['README.md', 'layers-2x.png', 'layers.png', 'marker-icon-2x.png', 'marker-icon.png', 'marker-shadow.png', 'leaflet.css', 'leaflet.js', 'index.html']",['14939881911237661d40d910aa13822f80b867ec'],575,10,585,9,0.0,0.09583333333333334,0.06944444444444445
+2882162e2e81325602e97ab31aebf1fa6ef0ff22,Configure galleria preferences,Arne de Laat,adelaat@nikhef.nl,Arne de Laat,adelaat@nikhef.nl,2016-10-08 16:28:10+02:00,-7200,2016-10-08 16:28:10+02:00,-7200,True,False,['index.html'],['7e708b0b27bab08f9637b4ea343dcc0f8de22049'],1,5,6,1,,,
+ef98f7b979f0c963c781d464ebb5bfa2de26caff,Remove Google/Piwik/CDN stuff,Arne de Laat,adelaat@nikhef.nl,Arne de Laat,adelaat@nikhef.nl,2016-10-08 16:55:36+02:00,-7200,2016-10-08 16:55:36+02:00,-7200,True,False,['index.html'],['2882162e2e81325602e97ab31aebf1fa6ef0ff22'],15,0,15,1,,,
+c9ca8b89207f06f39176edfd0ddfef5ff166b8cc,"Show first image when pressing up key, remove map key",Arne de Laat,adelaat@nikhef.nl,Arne de Laat,adelaat@nikhef.nl,2016-10-08 17:14:03+02:00,-7200,2016-10-08 17:14:03+02:00,-7200,True,False,['index.html'],['ef98f7b979f0c963c781d464ebb5bfa2de26caff'],4,1,5,1,,,
+1407d3dd603ff31e817dd9328915d3a035a5b5b2,Remove more map related things,Arne de Laat,adelaat@nikhef.nl,Arne de Laat,adelaat@nikhef.nl,2016-10-08 17:15:26+02:00,-7200,2016-10-08 17:15:26+02:00,-7200,True,False,['index.html'],['c9ca8b89207f06f39176edfd0ddfef5ff166b8cc'],41,0,41,1,,,
+920ed23137ed69c9e1f180646dafbed27f2a9979,"Use 2 space indent
+
+Do not close br tag.",Arne de Laat,adelaat@nikhef.nl,Arne de Laat,adelaat@nikhef.nl,2016-10-08 17:18:10+02:00,-7200,2016-10-08 17:18:10+02:00,-7200,True,False,['index.html'],['1407d3dd603ff31e817dd9328915d3a035a5b5b2'],22,23,45,1,,,
+1cd25a3dfa728d3481800db2483c1b2e55845b73,Update styling and footer.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-04-22 16:46:20+02:00,-7200,2017-04-22 16:46:20+02:00,-7200,True,False,"['galleria.classic.css', 'style.css', 'style.min.css', 'index.html']",['920ed23137ed69c9e1f180646dafbed27f2a9979'],21,12,33,4,,,
+65efb138ead6d4f96d2616f422b3ad83cae2cb40,Disable thumbnails carousel animation.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-04-23 00:36:24+02:00,-7200,2017-04-23 00:36:24+02:00,-7200,True,False,['index.html'],['1cd25a3dfa728d3481800db2483c1b2e55845b73'],0,1,1,1,,,
+a7784a2b7104ed280edbb943181dd6dc2969040b,Remove alternate styles for wide screens.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-04-23 00:40:04+02:00,-7200,2017-04-23 00:40:04+02:00,-7200,True,False,['style.css'],['65efb138ead6d4f96d2616f422b3ad83cae2cb40'],19,0,19,1,,,
+2b8fe1a2cf03942f1ee96b3ea44de256e79798ca,Reduce space beween thumbnails.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-04-23 00:45:37+02:00,-7200,2017-04-23 00:45:37+02:00,-7200,True,False,['style.css'],['a7784a2b7104ed280edbb943181dd6dc2969040b'],0,4,4,1,,,
+3119061258218356c97fdca2264a0d0da754e7f5,Improve scaling,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-04-26 23:25:40+02:00,-7200,2017-04-26 23:25:40+02:00,-7200,True,False,"['style.css', 'index.html']",['2b8fe1a2cf03942f1ee96b3ea44de256e79798ca'],5,11,16,2,,,
+10b023507d7fac05d430debe8cc51b9f1d996f70,More menu to included template,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-04-26 23:26:02+02:00,-7200,2017-04-26 23:26:02+02:00,-7200,True,False,"['index.html', 'menu.html']",['3119061258218356c97fdca2264a0d0da754e7f5'],10,14,24,2,,,
+2f4a5eb4e2792a0df468ef7747d78900e673fd59,Menu styling.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-04-26 23:26:37+02:00,-7200,2017-04-26 23:26:37+02:00,-7200,True,False,['style.css'],['10b023507d7fac05d430debe8cc51b9f1d996f70'],0,38,38,1,,,
+858a43360cfec8bb5c4904c10d1af9661f44b88c,Image height/width fine tuning.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-04-26 23:26:57+02:00,-7200,2017-04-26 23:26:57+02:00,-7200,True,False,['index.html'],['2f4a5eb4e2792a0df468ef7747d78900e673fd59'],1,1,2,1,,,
+507f22d5a405a601fa3ede6d81144e7115ff38b4,Remove unused parts.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-04-26 23:27:13+02:00,-7200,2017-04-26 23:27:13+02:00,-7200,True,False,"['style.css', 'index.html']",['858a43360cfec8bb5c4904c10d1af9661f44b88c'],63,10,73,2,,,
+af10d45b712d8eafed410a3958ad602c486fb473,Add license,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-04-27 10:16:46+02:00,-7200,2017-04-27 10:16:46+02:00,-7200,True,False,['LICENSE.md'],['507f22d5a405a601fa3ede6d81144e7115ff38b4'],0,21,21,1,,,
+abf98a64310c34f94cd8c18ef151391326bb670f,Wrap photo below menu on mobile.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-01 14:17:57+02:00,-7200,2017-05-01 14:17:57+02:00,-7200,True,False,['style.css'],['af10d45b712d8eafed410a3958ad602c486fb473'],0,2,2,1,,,
+86779806440420587be6770cda32b9e53ac39432,Remove text shadows.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-01 14:19:08+02:00,-7200,2017-05-01 14:19:08+02:00,-7200,True,False,['style.css'],['abf98a64310c34f94cd8c18ef151391326bb670f'],1,0,1,1,,,
+61f694e109799f2759355bce523912812fc4933c,Reduce footer font size.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-01 14:19:29+02:00,-7200,2017-05-01 14:19:29+02:00,-7200,True,False,['style.css'],['86779806440420587be6770cda32b9e53ac39432'],0,1,1,1,,,
+d61106f063702231858dc16fc5567ff63a91a8f3,Use vh units to limit max-height for the gallery.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-01 14:31:06+02:00,-7200,2017-05-01 14:31:06+02:00,-7200,True,False,['style.css'],['61f694e109799f2759355bce523912812fc4933c'],1,1,2,1,,,
+33bea9d337d659abcbc6b8c307137a05535d07b6,Rename LICENSE.md to LICENSE,Arne de Laat,arne@delaat.net,GitHub,noreply@github.com,2017-05-02 07:52:50+02:00,-7200,2017-05-02 07:52:50+02:00,-7200,True,False,['LICENSE'],['d61106f063702231858dc16fc5567ff63a91a8f3'],0,0,0,1,,,
+9b09f41b2324bfa82e9a07776cbde90e3b692a8c,Show full gallery menu for each album,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-08 08:27:08+02:00,-7200,2017-05-08 08:27:08+02:00,-7200,True,False,"['full_menu.py', 'index.html', 'menu.html']",['33bea9d337d659abcbc6b8c307137a05535d07b6'],6,83,89,3,0.4482758620689655,1.0,1.0
+ac4b100d6ced01881634f84bab6b83725480eaf3,Reduce side margins.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-08 08:27:25+02:00,-7200,2017-05-08 08:27:25+02:00,-7200,True,False,['style.css'],['9b09f41b2324bfa82e9a07776cbde90e3b692a8c'],1,1,2,1,,,
+e64da67d48152d8d70c26fdef49fd808043427b9,Move author info to the menu,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-09 21:01:37+02:00,-7200,2017-05-09 21:03:49+02:00,-7200,True,False,"['style.css', 'index.html']",['ac4b100d6ced01881634f84bab6b83725480eaf3'],39,7,46,2,,,
+4905ab24a7b84cfdd6a0c93f18f2ccd98f7ae4d5,Reduce space between thumbnails.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-09 21:04:23+02:00,-7200,2017-05-09 21:04:23+02:00,-7200,True,False,['style.css'],['e64da67d48152d8d70c26fdef49fd808043427b9'],1,1,2,1,,,
+9263f7828ea63ee2dc069eaada04babb73ce7c74,Reduce menu font size.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-09 21:04:53+02:00,-7200,2017-05-09 21:04:53+02:00,-7200,True,False,['style.css'],['4905ab24a7b84cfdd6a0c93f18f2ccd98f7ae4d5'],6,5,11,1,,,
+493243335e5831eb6bf5d2c5dbe7903f8255bd12,Use light background and dark text colors.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-09 21:05:09+02:00,-7200,2017-05-09 21:05:09+02:00,-7200,True,False,['style.css'],['9263f7828ea63ee2dc069eaada04babb73ce7c74'],9,10,19,1,,,
+e54ec1e17c4a2be5b49836c622bcab3b089f0e86,"Reset galleria css to original included in sigal.
+Put overwrites in style.css",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-09 21:33:58+02:00,-7200,2017-05-09 21:33:58+02:00,-7200,True,False,"['galleria.classic.css', 'style.css']",['493243335e5831eb6bf5d2c5dbe7903f8255bd12'],3,10,13,2,,,
+7961e63e1b37c68ab529577b91ccc7a86ef60f9d,Update to Galleria v1.5.6,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-09 22:00:31+02:00,-7200,2017-05-09 22:00:31+02:00,-7200,True,False,"['classic-map.png', 'galleria.classic.css', 'style.css', 'galleria-1.4.2.min.js', 'galleria.classic.min.js', 'galleria.history.min.js', 'galleria.min.js', 'index.html']",['e54ec1e17c4a2be5b49836c622bcab3b089f0e86'],228,267,495,8,0.0,0.0,0.0
+fdff1c544f7a1a27678a06970d82854ce4d3ca3c,Update thumbnail borders and opacity and active image highlighting.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-10 08:44:40+02:00,-7200,2017-05-10 08:44:40+02:00,-7200,True,False,['style.css'],['7961e63e1b37c68ab529577b91ccc7a86ef60f9d'],4,16,20,1,,,
+359b334400ce7a84c5f203cee4d8056b22794941,"Set thumbnail background to black to preserve expected effect from opacity.
+Set bottom border to white to blend with background.
+Otherwise the black background will appear as the border.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-10 08:47:46+02:00,-7200,2017-05-10 08:47:46+02:00,-7200,True,False,['style.css'],['fdff1c544f7a1a27678a06970d82854ce4d3ca3c'],2,1,3,1,,,
+a12483dc27748d42c8400d81a14918f1792b29cc,"Use white background for the galleria container,
+Keeps white background on fullscreen.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-11 19:35:00+02:00,-7200,2017-05-11 19:35:00+02:00,-7200,True,False,['style.css'],['359b334400ce7a84c5f203cee4d8056b22794941'],1,1,2,1,,,
+f8cce410a374650d3a124c733d5b89b7ec006c18,Replace fullscreen icon by SVG.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-11 23:33:30+02:00,-7200,2017-05-11 23:33:30+02:00,-7200,True,False,"['style.css', 'fullscreen.png', 'fullscreen.svg', 'fullscreen_exit.svg', 'index.html']",['a12483dc27748d42c8400d81a14918f1792b29cc'],12,30,42,5,,,
+7940315b9f1242f424f6070cdca9724ff461ec51,Remove unused icons.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-11 23:33:55+02:00,-7200,2017-05-11 23:33:55+02:00,-7200,True,False,"['map.png', 'photo.png']",['f8cce410a374650d3a124c733d5b89b7ec006c18'],0,0,0,2,,,
+5c1fa68139391271f58d22501a6f926e0a99b2dd,Make Galleria image map icons black.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-11 23:34:33+02:00,-7200,2017-05-11 23:34:33+02:00,-7200,True,False,['classic-map.png'],['7940315b9f1242f424f6070cdca9724ff461ec51'],0,0,0,1,,,
+20df673ea22b05ca92e92d54566a719dca25a18b,"Only show subalbums for the current ancestors in the menu.
+And highlight the current active album.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-13 17:12:31+02:00,-7200,2017-05-13 17:13:11+02:00,-7200,True,False,"['style.css', 'index.html', 'menu.html']",['5c1fa68139391271f58d22501a6f926e0a99b2dd'],6,10,16,3,,,
+f614740370e8651f7e602c6153b99886a744e50e,Add background to fullscreen button for contrast.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-13 17:14:02+02:00,-7200,2017-05-13 17:14:02+02:00,-7200,True,False,['style.css'],['20df673ea22b05ca92e92d54566a719dca25a18b'],9,11,20,1,,,
+df96ca09ae70078ca8b464fe2e6f01dee65f2fdf,Combine CSS rules and remove background on hover thumbnail navigation.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-13 17:27:44+02:00,-7200,2017-05-13 17:27:44+02:00,-7200,True,False,['style.css'],['f614740370e8651f7e602c6153b99886a744e50e'],7,9,16,1,,,
+79818a7f90b22c5f5af026c33bdb9ef66b53f2c8,Invert colors for the loader spinner.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-15 21:56:54+02:00,-7200,2017-05-15 21:56:54+02:00,-7200,True,False,['classic-loader.gif'],['df96ca09ae70078ca8b464fe2e6f01dee65f2fdf'],0,0,0,1,,,
+81c03397a28cc8b1c9f8bdb4fd8797aaf4747da9,Fix logic for showing submenus at higher depths.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-16 22:04:35+02:00,-7200,2017-05-16 22:04:35+02:00,-7200,True,False,['menu.html'],['79818a7f90b22c5f5af026c33bdb9ef66b53f2c8'],1,1,2,1,,,
+38aae112142a2a792ec30f00aed9c5863895729b,"Update menu style.
+Fix submenu indentation.
+Reduce font-size, fixed line-height, normal font-variant.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-16 22:06:28+02:00,-7200,2017-05-16 22:06:28+02:00,-7200,True,False,['style.css'],['81c03397a28cc8b1c9f8bdb4fd8797aaf4747da9'],7,6,13,1,,,
+ef9ffe0a608922b31d11bcfd4f4695572dcf06ab,"Place author link above the menu.
+Prevents flashing in menu while gallery is loading.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-16 22:07:04+02:00,-7200,2017-05-16 22:07:04+02:00,-7200,True,False,"['style.css', 'index.html']",['38aae112142a2a792ec30f00aed9c5863895729b'],2,3,5,2,,,
+5c673ca36c23f3acb56945b7e8b156d882c2e226,Use larger font-size in menu on touch devices.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-16 22:59:17+02:00,-7200,2017-05-16 22:59:17+02:00,-7200,True,False,['style.css'],['ef9ffe0a608922b31d11bcfd4f4695572dcf06ab'],0,16,16,1,,,
+4381394ca5411f183dc7b21cefe7ea677dc3c986,Each CSS selector on a new line.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-16 23:00:01+02:00,-7200,2017-05-16 23:00:01+02:00,-7200,True,False,['style.css'],['5c673ca36c23f3acb56945b7e8b156d882c2e226'],5,13,18,1,,,
+e35f9f6476840d5e0b2d3b2a53819da71e9f10b4,Remove prints from full_menu plugin.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-16 23:15:52+02:00,-7200,2017-05-16 23:15:52+02:00,-7200,True,False,['full_menu.py'],['4381394ca5411f183dc7b21cefe7ea677dc3c986'],2,0,2,1,1.0,0.0,0.0
+2c5d01286131aef323e8a430c1dbc252d1805b42,Reorder some CSS styles.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-17 20:33:06+02:00,-7200,2017-05-17 20:33:06+02:00,-7200,True,False,['style.css'],['e35f9f6476840d5e0b2d3b2a53819da71e9f10b4'],9,14,23,1,,,
+2fb2a9aa3007f74ec6be1cd380d86ed913cdd88d,Remove unused CSS styles.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-17 20:34:38+02:00,-7200,2017-05-17 20:34:38+02:00,-7200,True,False,['style.css'],['2c5d01286131aef323e8a430c1dbc252d1805b42'],50,1,51,1,,,
+dd614caf5bac2a9dd5898e4a5d30818e17026d29,"Show less of the menu on touch devices, show only:
+- siblings of the current album
+- direct children of the current album
+- ancestors of the current album",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-17 20:43:49+02:00,-7200,2017-05-17 20:43:49+02:00,-7200,True,False,"['style.css', 'menu.html']",['2fb2a9aa3007f74ec6be1cd380d86ed913cdd88d'],8,44,52,2,,,
+5750f79cdc071b061ab0272cc30cf2d9ae59af17,Make controls and thumbnail container same height as thumbnails.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-17 20:44:24+02:00,-7200,2017-05-17 20:44:24+02:00,-7200,True,False,['style.css'],['dd614caf5bac2a9dd5898e4a5d30818e17026d29'],0,3,3,1,,,
+231afd78d902f746a27216b1768a668f4565d7cc,Add padding around images when no JS is available.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-17 20:45:01+02:00,-7200,2017-05-17 20:45:01+02:00,-7200,True,False,"['style.css', 'index.html']",['5750f79cdc071b061ab0272cc30cf2d9ae59af17'],3,12,15,2,,,
+6fd28fbc35c225467c9d42b19e00ee1105fbc162,Ensure the thumbnails have the same height.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-17 20:45:20+02:00,-7200,2017-05-17 20:45:20+02:00,-7200,True,False,['index.html'],['231afd78d902f746a27216b1768a668f4565d7cc'],0,1,1,1,,,
+3f078908639239a329eb950e3ff9f0a6ac11784f,Update jQuery to 3.2.1,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-17 22:27:05+02:00,-7200,2017-05-17 22:27:05+02:00,-7200,True,False,"['jquery-1.11.1.min.js', 'jquery-3.2.1.min.js', 'index.html']",['6fd28fbc35c225467c9d42b19e00ee1105fbc162'],5,5,10,3,1.0,0.9402985074626866,0.835820895522388
+37226a84dc1bd477f8a585305baf6e6174eccec2,"Use animated SVG instead of GIF for the loader indicator.
+Place it in the center of the image stage.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-17 22:32:23+02:00,-7200,2017-05-17 22:32:23+02:00,-7200,True,False,"['classic-loader.gif', 'style.css', 'loader.svg']",['3f078908639239a329eb950e3ff9f0a6ac11784f'],0,25,25,3,,,
+820fd3332acb4b9b3e84df682d3c03912b8b4ba2,"Set image name and datetime in alt, do not use title.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-17 22:33:02+02:00,-7200,2017-05-17 22:33:02+02:00,-7200,True,False,['index.html'],['37226a84dc1bd477f8a585305baf6e6174eccec2'],1,1,2,1,,,
+ba7bb3e6cde79761a0b7ce4888ac8972de48151c,Remove config already set by classic theme.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-18 08:37:30+02:00,-7200,2017-05-18 08:37:30+02:00,-7200,True,False,['index.html'],['820fd3332acb4b9b3e84df682d3c03912b8b4ba2'],1,0,1,1,,,
+43fd2aba648e24ffc97a2d141a96de2fe50e6144,Create LICENSE,Arne de Laat,arne@delaat.net,GitHub,noreply@github.com,2017-05-18 14:41:14+02:00,-7200,2017-05-18 14:41:14+02:00,-7200,True,False,['LICENSE'],['2b8fe1a2cf03942f1ee96b3ea44de256e79798ca'],0,21,21,1,,,
+a8fd5e533839e629ec298b77ef4c2af66e09374b,Update README.md,Arne de Laat,arne@delaat.net,GitHub,noreply@github.com,2017-05-18 19:49:53+02:00,-7200,2017-05-18 19:49:53+02:00,-7200,True,False,['README.md'],['daa3cce54dfea9f25fd390b38daf55996ba8aff7'],3,3,6,1,,,
+da74e567137757d13be00830a413ed15204817ba,"Make the full_menu plugin an installable Python package.
+Convert README to rst.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-18 21:44:46+02:00,-7200,2017-05-18 21:44:46+02:00,-7200,True,False,"['.gitignore', '__init__.py', 'full_menu.py', 'README.rst', 'setup.py']",['a8fd5e533839e629ec298b77ef4c2af66e09374b'],4,30,34,5,,,
+f029ec3d947f6a32dd72a57ecd3af06379a36bb0,Move static and template files into the package.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-19 00:11:44+02:00,-7200,2017-05-19 00:11:44+02:00,-7200,True,False,"['classic-map.png', 'galleria.classic.css', 'normalize.css', 'style.css', 'empty.png', 'fullscreen.svg', 'fullscreen_exit.svg', 'loader.svg', 'galleria.classic.min.js', 'galleria.history.min.js', 'galleria.min.js', 'jquery-3.2.1.min.js', 'index.html', 'menu.html']",['da74e567137757d13be00830a413ed15204817ba'],0,0,0,14,,,
+6c03cb4e97ddd06b51d8cdb553a552ce49e9fad4,Add theme templates and static as package_data.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-19 00:15:03+02:00,-7200,2017-05-19 00:15:03+02:00,-7200,True,False,['setup.py'],['f029ec3d947f6a32dd72a57ecd3af06379a36bb0'],18,27,45,1,,,
+cd1aeae30fb0b45722c158801aae0b6564a390fc,"Add plugin to set the theme to this theme.
+Puts the absolute path to the theme/package dir in the theme settings.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-19 00:16:08+02:00,-7200,2017-05-19 00:16:08+02:00,-7200,True,False,['theme.py'],['6c03cb4e97ddd06b51d8cdb553a552ce49e9fad4'],0,39,39,1,1.0,1.0,1.0
+d10c2e5f4a533c42b5ca085cbde5f0059e250d4a,Add demo gallery.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-19 00:18:26+02:00,-7200,2017-05-19 00:18:26+02:00,-7200,True,False,"['.gitignore', 'Makefile', 'Makefile', 'sigal.conf.py', 'ADL_029217.jpg', 'ADL_047166.jpg', 'ADL_049924.jpg', 'ADL_058445.jpg', 'ADL_067648.jpg', 'ADL_085334.jpg', 'ADL_086401.jpg', 'ADL_097538.jpg', 'ADL_098569.jpg', 'ADL_098589.jpg', 'ADL_106283.jpg', 'DSC_08585.jpg', 'DSC_38973.jpg', 'DSC_46741.jpg', 'DSC_52115.jpg', 'DSC_90998.jpg', 'IMG_19750.jpg', 'IMG_28285.jpg', 'IMG_37962.jpg', 'IMG_4204.jpg', 'IMG_46144.jpg', 'ADL_017921.jpg', 'DSC_105367.jpg', 'DSC_14705.jpg', 'DSC_27850.jpg', 'IMG_0448.jpg']",['cd1aeae30fb0b45722c158801aae0b6564a390fc'],0,45,45,30,,,
+65e71283ab2a324f6ae4860145d84d5712b3c95d,Add travis CI to check if demo builds correctly.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-19 00:20:38+02:00,-7200,2017-05-19 00:20:38+02:00,-7200,True,False,['.travis.yml'],['d10c2e5f4a533c42b5ca085cbde5f0059e250d4a'],0,12,12,1,,,
+19a1b21be8d5e5dd1d0069122c8e8c167eb92002,Not using Font Awesome icons.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-19 07:55:13+02:00,-7200,2017-05-19 07:55:13+02:00,-7200,True,False,['README.rst'],['65e71283ab2a324f6ae4860145d84d5712b3c95d'],3,0,3,1,,,
+e0c5aa3a38494602a0733dc73abbb1072b24f8dd,Add installation instructions and shields to README,Arne de Laat,arne@delaat.net,GitHub,noreply@github.com,2017-05-19 09:53:52+02:00,-7200,2017-05-19 09:53:52+02:00,-7200,True,False,['README.rst'],['19a1b21be8d5e5dd1d0069122c8e8c167eb92002'],1,38,39,1,,,
+e203fa3197326a4a3e8b29ae5cad0758b46e6863,Improve CSS selectors to fix style when using full screen in an iframe.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-20 17:46:33+02:00,-7200,2017-05-20 17:46:33+02:00,-7200,True,False,['style.css'],['e0c5aa3a38494602a0733dc73abbb1072b24f8dd'],22,22,44,1,,,
+f979b36c50638fc3589565e9e7ba56918dd64192,Add comment about theme configuration.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-20 17:46:58+02:00,-7200,2017-05-20 17:46:58+02:00,-7200,True,False,['sigal.conf.py'],['e203fa3197326a4a3e8b29ae5cad0758b46e6863'],1,1,2,1,,,
+7ae02a9d77ec8d19c19676d8ffebc89071383bbc,Add some blank lines in CSS.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-20 18:32:39+02:00,-7200,2017-05-20 18:32:39+02:00,-7200,True,False,['style.css'],['f979b36c50638fc3589565e9e7ba56918dd64192'],0,2,2,1,,,
+12ccbbeb2d40a4b46a60308f077293fabe17b229,Fix no-js styling.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-27 18:56:10+02:00,-7200,2017-05-27 18:56:10+02:00,-7200,True,False,['style.css'],['7ae02a9d77ec8d19c19676d8ffebc89071383bbc'],2,2,4,1,,,
+65710aed708b97097bf4f292a57eeaba0c263467,"Do not render author <p> if no author is given.
+If author_link is set in settings use it.
+If author_link is not set, make author link to root album.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-27 18:57:17+02:00,-7200,2017-05-27 18:57:17+02:00,-7200,True,False,['index.html'],['12ccbbeb2d40a4b46a60308f077293fabe17b229'],3,5,8,1,,,
+99e2d894d9457ed01cc23cd2af1983668f63167b,Add editorconfig.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-27 23:21:18+02:00,-7200,2017-05-27 23:21:18+02:00,-7200,True,False,['.editorconfig'],['65710aed708b97097bf4f292a57eeaba0c263467'],0,21,21,1,,,
+57875474b0e62a90cfc25f873a02cde4917518c2,Use elif instead of separate if statement for exclusive options.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-27 23:22:20+02:00,-7200,2017-05-27 23:22:20+02:00,-7200,True,False,['index.html'],['99e2d894d9457ed01cc23cd2af1983668f63167b'],2,1,3,1,,,
+29ffe49888c53da80fd64deab939dcc90ea71f5e,Fix indent for script in script tag.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-27 23:22:31+02:00,-7200,2017-05-27 23:22:31+02:00,-7200,True,False,['index.html'],['57875474b0e62a90cfc25f873a02cde4917518c2'],30,28,58,1,,,
+fdaeef429c938f975dc27e53ad3122cc5527278f,"Remove copyright/license and encoding from plugin files.
+See LICENSE file for license info.
+UTF-8 is default for Python 3.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-28 16:42:27+02:00,-7200,2017-05-28 16:42:27+02:00,-7200,True,False,"['full_menu.py', 'theme.py']",['29ffe49888c53da80fd64deab939dcc90ea71f5e'],44,0,44,2,,,
+036d13ebca21cabcd17885ab5565115e99e77b9b,Add sorting limitation to full_menu docstring.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-05-28 16:42:50+02:00,-7200,2017-05-28 16:42:50+02:00,-7200,True,False,['full_menu.py'],['fdaeef429c938f975dc27e53ad3122cc5527278f'],0,4,4,1,,,
+147e02480ece5e5e5bae444b268b8e2c37f22404,"Update normalize to v7.
+Use normalize in template.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-06-05 00:47:58+02:00,-7200,2017-06-05 00:49:04+02:00,-7200,True,False,"['normalize.css', 'index.html']",['036d13ebca21cabcd17885ab5565115e99e77b9b'],195,218,413,2,,,
+91d5d9229fa4b427b9e379ae53fff6fcd060bd1f,"Add gallery title setting, make this link to root.
+The author_link is currently not used.
+Author is used in metadata.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-06-05 00:53:32+02:00,-7200,2017-06-05 00:53:32+02:00,-7200,True,False,"['style.css', 'index.html', 'sigal.conf.py']",['147e02480ece5e5e5bae444b268b8e2c37f22404'],8,12,20,3,,,
+871783af977b88dba9fd7eb08b9f942c1360654d,Add deployment of the demo site to gh-pages.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-09-02 16:01:12+02:00,-7200,2017-09-02 16:01:12+02:00,-7200,True,False,['.travis.yml'],['91d5d9229fa4b427b9e379ae53fff6fcd060bd1f'],0,8,8,1,,,
+a9e26e4acb2bde0c8b7c6089735488a5e3a462ec,Add link to demo page in README.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-09-02 16:06:03+02:00,-7200,2017-09-02 16:06:03+02:00,-7200,True,False,['README.rst'],['871783af977b88dba9fd7eb08b9f942c1360654d'],0,3,3,1,,,
+cc819e922b847ea6d4814019b97cfbe73fcb13f8,"Move setup configuration to setup.cfg.
+Update pip install command in readme.
+Add make commands to clean and build dist files.
+Add dist and build files to gitignore.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-09-06 22:03:15+02:00,-7200,2017-09-06 22:03:15+02:00,-7200,True,False,"['.gitignore', 'Makefile', 'README.rst', 'setup.cfg', 'setup.py']",['a9e26e4acb2bde0c8b7c6089735488a5e3a462ec'],32,48,80,5,,,
+5e4d2a95627ebec7bd6ec20c448c764cab72b87a,Change default fonts,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-10-15 19:41:26+02:00,-7200,2017-10-15 19:41:26+02:00,-7200,True,False,"['style.css', 'index.html']",['cc819e922b847ea6d4814019b97cfbe73fcb13f8'],3,1,4,2,,,
+60f828172af6f26746e830f3a92705dd6d90fcc0,"Use gallery title as page title.
+Only add subalbum titles if they dont match name of source directory.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-10-15 19:44:32+02:00,-7200,2017-10-15 19:44:32+02:00,-7200,True,False,['index.html'],['5e4d2a95627ebec7bd6ec20c448c764cab72b87a'],3,3,6,1,,,
+91f2b69c91f7e2fce58953936aec6b14e3902fd5,Fix path to normalize.css,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2017-11-19 20:33:33+01:00,-3600,2017-11-19 20:33:43+01:00,-3600,True,False,['index.html'],['60f828172af6f26746e830f3a92705dd6d90fcc0'],1,1,2,1,,,
+da0233ca02dddc347af56d66762edc11d3f1bad5,"Prevent global scrollbar, only menu should need a scrollbar.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2018-02-19 21:14:46+01:00,-3600,2018-02-19 21:14:46+01:00,-3600,True,False,['style.css'],['91f2b69c91f7e2fce58953936aec6b14e3902fd5'],0,4,4,1,,,
+7a3dae927d6c3b671924f55449f3b81f1aaab658,Prevent wrapping long album names.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2018-11-19 07:53:35+01:00,-3600,2018-11-19 07:53:35+01:00,-3600,True,False,['style.css'],['da0233ca02dddc347af56d66762edc11d3f1bad5'],0,1,1,1,,,
+27f9ffe471ebed1351ef3af613ee7e24ca631ac4,Rename templates for compatibility with latest sigal.,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2018-11-21 08:47:31+01:00,-3600,2018-11-21 08:47:31+01:00,-3600,True,False,"['album.html', 'album_list.html', 'base.html']",['7a3dae927d6c3b671924f55449f3b81f1aaab658'],0,2,2,3,,,
+90758d6e0ac7b787abff0d86ca19ec82be9ff7ee,Add GitHub actions to replace travis CI,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-18 08:50:01+02:00,-7200,2020-08-18 08:50:01+02:00,-7200,True,False,"['demo.yml', 'flake8.yml', '.travis.yml', 'README.rst', 'setup.cfg']",['27f9ffe471ebed1351ef3af613ee7e24ca631ac4'],23,61,84,5,,,
+53f66049ff275dcb97a134dc8b20f8d37424d8f8,Add deploy to gh-pages,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-18 08:52:27+02:00,-7200,2020-08-18 08:52:27+02:00,-7200,True,False,['demo.yml'],['90758d6e0ac7b787abff0d86ca19ec82be9ff7ee'],0,12,12,1,,,
+619c56963433fcf1273d856a28cd507c36ab7372,Fix link in readme to actions,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-18 08:53:46+02:00,-7200,2020-08-18 08:53:46+02:00,-7200,True,False,['README.rst'],['53f66049ff275dcb97a134dc8b20f8d37424d8f8'],1,1,2,1,,,
+40d14c37f44ff6345f7367300d54f9876200596e,Add more testing requirements,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-18 08:55:35+02:00,-7200,2020-08-18 08:55:35+02:00,-7200,True,False,"['demo.yml', 'setup.cfg']",['619c56963433fcf1273d856a28cd507c36ab7372'],1,4,5,2,,,
+3b07bec1bd3aa99c0065a7fd2f1800e9bb15bc4f,Update demo build configuration,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-18 09:02:10+02:00,-7200,2020-08-18 09:02:10+02:00,-7200,True,False,['demo.yml'],['40d14c37f44ff6345f7367300d54f9876200596e'],1,5,6,1,,,
+a73ecc3458cefa4526c5fd1523e08f703ed47800,"Use specific action for checking html5 output
+
+No longer required to install Open JDK.
+Remove validate extras require.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-18 16:16:45+02:00,-7200,2020-08-18 16:16:45+02:00,-7200,True,False,"['demo.yml', 'setup.cfg']",['3b07bec1bd3aa99c0065a7fd2f1800e9bb15bc4f'],10,5,15,2,,,
+c8e5796d358fda859e270d48c32b1997250acb54,Fix isort error,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-18 16:17:38+02:00,-7200,2020-08-18 16:17:38+02:00,-7200,True,False,['full_menu.py'],['a73ecc3458cefa4526c5fd1523e08f703ed47800'],0,1,1,1,,,
+34a3d755dad6677b482d9ae8de1ce141383bea31,Configure flake8/isort,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-18 16:26:40+02:00,-7200,2020-08-18 16:26:40+02:00,-7200,True,False,['setup.cfg'],['c8e5796d358fda859e270d48c32b1997250acb54'],0,7,7,1,,,
+23d741c33335e6dccee78cf0bdfb3ce9e2937eea,Less newlines in githubactions,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-20 18:32:41+02:00,-7200,2020-08-20 18:32:41+02:00,-7200,True,False,['demo.yml'],['34a3d755dad6677b482d9ae8de1ce141383bea31'],5,0,5,1,,,
+61390057492333907ddfe806ad912eb8dcf20b33,Fix isort error,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-20 18:41:54+02:00,-7200,2020-08-20 18:41:54+02:00,-7200,True,False,['full_menu.py'],['23d741c33335e6dccee78cf0bdfb3ce9e2937eea'],1,1,2,1,,,
+493931ed7294791368515fd787865f1333514998,Add information on alternative way of setting the theme,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-22 14:12:03+02:00,-7200,2020-08-22 14:12:03+02:00,-7200,True,False,"['full_menu.py', 'theme.py', 'README.rst']",['61390057492333907ddfe806ad912eb8dcf20b33'],13,23,36,3,1.0,1.0,1.0
+b5b29c1619401a47e711560aa094bbeefac91488,Add movie example to demo,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-22 14:12:12+02:00,-7200,2020-08-22 14:12:12+02:00,-7200,True,False,['S60_050504_1.mp4'],['493931ed7294791368515fd787865f1333514998'],0,0,0,1,,,
+58900cc812d6cf354ee72c6ef27a46ff5025daa1,Install ffmpeg when creating demo,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2020-08-22 15:22:32+02:00,-7200,2020-08-22 15:22:32+02:00,-7200,True,False,['demo.yml'],['b5b29c1619401a47e711560aa094bbeefac91488'],0,4,4,1,,,
+7aad794dafdaac9dfd8f0d873d574a187513888d,Remove badges,Arne de Laat,arne@delaat.net,GitHub,noreply@github.com,2020-10-09 09:45:18+02:00,-7200,2020-10-09 09:45:18+02:00,-7200,True,False,['README.rst'],['58900cc812d6cf354ee72c6ef27a46ff5025daa1'],5,0,5,1,,,
+736afac4d8c6f726941801e5933f28571533108b,"Add content-side of iframe resizer
+
+Inform parent of size and changes to size.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-06 17:36:53+01:00,-3600,2021-02-06 17:36:53+01:00,-3600,True,False,"['style.css', 'iframeResizer.contentWindow.min.js', 'base.html']",['7aad794dafdaac9dfd8f0d873d574a187513888d'],5,10,15,3,1.0,0.9516129032258065,0.9435483870967742
+a2b262a4d1cf9372abe3c9dc356c72cf806414e5,Change date format for images,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-06 17:38:45+01:00,-3600,2021-02-06 17:38:45+01:00,-3600,True,False,['base.html'],['736afac4d8c6f726941801e5933f28571533108b'],1,1,2,1,,,
+73e61196bdd45dbbeb07cc94c34e4ac8a84fb0b8,Update workflow,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-06 17:43:42+01:00,-3600,2021-02-06 17:43:42+01:00,-3600,True,False,['demo.yml'],['a2b262a4d1cf9372abe3c9dc356c72cf806414e5'],3,4,7,1,,,
+e952e6b5ab2644b15012da3161bd3f5aeb9f82ec,Dictionaries are already ordered,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-06 20:15:05+01:00,-3600,2021-02-06 20:15:05+01:00,-3600,True,False,['full_menu.py'],['73e61196bdd45dbbeb07cc94c34e4ac8a84fb0b8'],4,2,6,1,,,
+589d3b72e1a687d8f1c410e3f169bb11fe095b32,"Breadcrumbs contain titles, not names",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-06 20:15:35+01:00,-3600,2021-02-06 20:15:35+01:00,-3600,True,False,['menu.html'],['e952e6b5ab2644b15012da3161bd3f5aeb9f82ec'],1,1,2,1,,,
+306b7aa40e74fa85f13d9b4830f7c80427032022,Skip date if not available,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-06 20:30:27+01:00,-3600,2021-02-06 20:30:27+01:00,-3600,True,False,['base.html'],['589d3b72e1a687d8f1c410e3f169bb11fe095b32'],1,1,2,1,,,
+cbaa606967d20f9002855541a2c3a02ab011fd34,Always load iframe resizer,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-06 20:30:40+01:00,-3600,2021-02-06 20:30:40+01:00,-3600,True,False,['base.html'],['306b7aa40e74fa85f13d9b4830f7c80427032022'],1,1,2,1,,,
+b4b67c13f3710851cae8ed0ebe1ece22a99c7421,Update line heights for menu,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-06 20:49:39+01:00,-3600,2021-02-06 20:49:39+01:00,-3600,True,False,['style.css'],['cbaa606967d20f9002855541a2c3a02ab011fd34'],4,2,6,1,,,
+e32945843fcb0fad5506c71cf0844a7f708dc2a9,Support dark-mode,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-07 11:32:49+01:00,-3600,2021-02-07 11:32:49+01:00,-3600,True,False,['style.css'],['b4b67c13f3710851cae8ed0ebe1ece22a99c7421'],2,36,38,1,,,
+150513ce4fb95c2ebd884f89abbf06afdfb52b49,Make controls more visible in dark mode,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-07 11:47:18+01:00,-3600,2021-02-07 11:47:18+01:00,-3600,True,False,['style.css'],['e32945843fcb0fad5506c71cf0844a7f708dc2a9'],0,9,9,1,,,
+19146a4941cee018a9400a4eede69744f6c35bf8,Fix editorconfig selector,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-08 11:14:56+01:00,-3600,2021-02-08 11:14:56+01:00,-3600,True,False,['.editorconfig'],['150513ce4fb95c2ebd884f89abbf06afdfb52b49'],1,1,2,1,,,
+c71db0ec91f4b08d2dcb4bd51ed06328ae023229,Fix menu showing below gallery when full screen,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-08 15:10:00+01:00,-3600,2021-02-08 15:10:00+01:00,-3600,True,False,['style.css'],['19146a4941cee018a9400a4eede69744f6c35bf8'],1,5,6,1,,,
+ebcf0c8934364be219c925b557c9433c007c4a02,Invert some more icons to be visible in dark mode,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-08 15:12:15+01:00,-3600,2021-02-08 15:12:15+01:00,-3600,True,False,['style.css'],['c71db0ec91f4b08d2dcb4bd51ed06328ae023229'],1,8,9,1,,,
+7dd7128822ef8a3fbdca6df0a4cf615d3254d25f,Use jQuery 3.5.1,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-08 15:12:44+01:00,-3600,2021-02-08 15:12:55+01:00,-3600,True,False,"['jquery-3.2.1.min.js', 'jquery-3.5.1.min.js', 'base.html']",['ebcf0c8934364be219c925b557c9433c007c4a02'],5,3,8,3,0.0,0.18313953488372092,0.17151162790697674
+69464450193dfabc5008b8ecbaf1d75d6ceed208,"Rework some margins
+
+Remove margin on body, add margins (spacing) on menu and gallery.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-02-08 15:26:20+01:00,-3600,2021-02-08 15:26:20+01:00,-3600,True,False,['style.css'],['7dd7128822ef8a3fbdca6df0a4cf615d3254d25f'],4,5,9,1,,,
+dc045c070b7d6eb23db317e769511c43f866931d,Update used actions and rename step names,Arne de Laat,arne@delaat.net,GitHub,noreply@github.com,2021-05-13 14:22:04+02:00,-7200,2021-05-13 14:22:04+02:00,-7200,True,False,['demo.yml'],['69464450193dfabc5008b8ecbaf1d75d6ceed208'],29,22,51,1,,,
+dafcf170d5a1f79d9baa66f89457470c384db718,"Update Makefile, setup.cfg, .editorconfig, and actions",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-08-01 17:04:11+02:00,-7200,2021-08-01 17:05:14+02:00,-7200,True,False,"['.editorconfig', 'demo.yml', 'flake8.yml', 'Makefile', 'setup.cfg']",['dc045c070b7d6eb23db317e769511c43f866931d'],29,46,75,5,,,
+ffa0fe66512aada62ba2778ea2edba28fd34de88,Replace http by https in demo,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-03-25 21:59:47+01:00,-3600,2021-08-01 21:26:24+02:00,-7200,True,False,['sigal.conf.py'],['dafcf170d5a1f79d9baa66f89457470c384db718'],1,1,2,1,,,
+d757dd8709ceb5c68dc184df847bff6a6b9aeb09,Add a few more spaced between file name and date time,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-03-25 22:01:57+01:00,-3600,2021-08-01 21:26:24+02:00,-7200,True,False,['base.html'],['ffa0fe66512aada62ba2778ea2edba28fd34de88'],1,1,2,1,,,
+832207b30decaa1a8b0fa7fb3df811ccba509eda,Enable showing info below photos,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-08-01 21:27:14+02:00,-7200,2021-08-01 21:27:14+02:00,-7200,True,False,"['style.css', 'base.html']",['d757dd8709ceb5c68dc184df847bff6a6b9aeb09'],2,33,35,2,,,
+76084b4713d7213cd44665c514ce0c80eae4d644,"Bump version
+
+Update links to https.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-08-01 22:07:10+02:00,-7200,2021-08-01 22:07:10+02:00,-7200,True,False,"['README.rst', 'setup.cfg']",['d757dd8709ceb5c68dc184df847bff6a6b9aeb09'],5,5,10,2,,,
+3f4a1dab7d1bbf32f5e7419d93d3b707cdada445,Rename workflows,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-12-02 21:26:41+01:00,-3600,2021-12-02 21:26:41+01:00,-3600,True,False,"['demo.yml', 'tests.yml']",['76084b4713d7213cd44665c514ce0c80eae4d644'],5,1,6,2,,,
+afbf87e94b98f1dde97773586bebc4dd93bb1ca7,"Convert README to markdown
+
+Add shields to README.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2021-12-02 21:29:36+01:00,-3600,2021-12-02 21:29:36+01:00,-3600,True,False,"['README.md', 'README.rst', 'setup.cfg']",['3f4a1dab7d1bbf32f5e7419d93d3b707cdada445'],57,57,114,3,,,
+dac598fc2257aa82901eca52733fe8e52cd5c8e4,Update Media properties used in template for new sigal version,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2022-04-30 12:23:44+02:00,-7200,2022-04-30 12:23:44+02:00,-7200,True,False,['base.html'],['afbf87e94b98f1dde97773586bebc4dd93bb1ca7'],11,15,26,1,,,
+d314504621b3b0d36d8248a4ef36d089cd593108,"Remove leaflet static files included by default by sigal
+
+Leaflet is not used by this theme, those static files are unnecessary.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2022-04-30 15:14:28+02:00,-7200,2022-04-30 15:14:28+02:00,-7200,True,False,['theme.py'],['dac598fc2257aa82901eca52733fe8e52cd5c8e4'],0,9,9,1,1.0,1.0,1.0
+ce1cab1b6c22a3278d7d804b0b809695e979bc61,Remove max-height,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2022-05-01 09:40:29+02:00,-7200,2022-05-01 09:40:29+02:00,-7200,True,False,['style.css'],['c22f0736bedd8e2c1a53b9ea0cd98619fa2e8d95'],1,0,1,1,,,
+c436f697e832d8eec5b3772e0d12685b0b0bf3f0,Add dependabot config,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2022-10-28 21:01:23-06:00,21600,2022-10-28 21:01:23-06:00,21600,True,False,['dependabot.yml'],['ce1cab1b6c22a3278d7d804b0b809695e979bc61'],0,6,6,1,,,
+04ef2bd6e52a7c15bed6bc4a913660c201fb7087,"Bump Cyb3r-Jak3/html5validator-action from 0.6.1 to 7.2.0
+
+Bumps [Cyb3r-Jak3/html5validator-action](https://github.com/Cyb3r-Jak3/html5validator-action) from 0.6.1 to 7.2.0.
+- [Release notes](https://github.com/Cyb3r-Jak3/html5validator-action/releases)
+- [Changelog](https://github.com/Cyb3r-Jak3/html5validator-action/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/Cyb3r-Jak3/html5validator-action/compare/v0.6.1...v7.2.0)
+
+---
+updated-dependencies:
+- dependency-name: Cyb3r-Jak3/html5validator-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-29 03:01:48+00:00,0,2022-10-29 03:01:48+00:00,0,True,False,['demo.yml'],['c436f697e832d8eec5b3772e0d12685b0b0bf3f0'],1,1,2,1,,,
+2ac5452b3370435c3ab7d0336a11c95653d69d8f,"Bump peaceiris/actions-gh-pages from 3.8.0 to 3.9.0
+
+Bumps [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) from 3.8.0 to 3.9.0.
+- [Release notes](https://github.com/peaceiris/actions-gh-pages/releases)
+- [Changelog](https://github.com/peaceiris/actions-gh-pages/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/peaceiris/actions-gh-pages/compare/v3.8.0...v3.9.0)
+
+---
+updated-dependencies:
+- dependency-name: peaceiris/actions-gh-pages
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-29 03:01:54+00:00,0,2022-10-29 03:01:54+00:00,0,True,False,['demo.yml'],['c436f697e832d8eec5b3772e0d12685b0b0bf3f0'],1,1,2,1,,,
+50b3c1ddc46e0c419a26a8ea59a2da7e1372369b,"Bump actions/checkout from 2 to 3
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2 to 3.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2...v3)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-29 03:01:56+00:00,0,2022-10-29 03:01:56+00:00,0,True,False,"['demo.yml', 'tests.yml']",['c436f697e832d8eec5b3772e0d12685b0b0bf3f0'],2,2,4,2,,,
+500f3bd3b964131946a1e48bb7e30b6cdcb96683,"Bump actions/setup-python from 2 to 4
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2 to 4.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-29 03:17:28+00:00,0,2022-10-29 03:17:28+00:00,0,True,False,"['demo.yml', 'tests.yml']",['2fbe448f7470482dd200c89ca500ef84efc59983'],2,2,4,2,,,
+aab31454e86a898f0db3997942ee3b02b3ce1fec,Bump Python to 3.11,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2022-12-16 17:10:55+01:00,-3600,2022-12-16 17:10:55+01:00,-3600,True,False,"['demo.yml', 'tests.yml']",['ba335996e7eadc474066b63fa74d1aef95332a9f'],2,2,4,2,,,
+37ab246986d31d8456ace64f43b126739a220550,Add cache and specify file to use for cache hash,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2022-12-16 19:26:34+01:00,-3600,2022-12-16 19:26:34+01:00,-3600,True,False,"['demo.yml', 'tests.yml']",['aab31454e86a898f0db3997942ee3b02b3ce1fec'],0,4,4,2,,,
+94cba8567ccc89af42b8421134553a664276868a,Update badge for GitHub Actions,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2022-12-16 19:42:36+01:00,-3600,2022-12-16 19:42:36+01:00,-3600,True,False,['README.md'],['37ab246986d31d8456ace64f43b126739a220550'],1,1,2,1,,,
+ba5f00740a6b9e19941bbe79678cbdfd61205eb8,Update references to main branch,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2022-12-16 19:42:40+01:00,-3600,2022-12-16 19:42:40+01:00,-3600,True,False,"['demo.yml', 'README.md']",['94cba8567ccc89af42b8421134553a664276868a'],2,2,4,2,,,
+fe4c0840cc26dd5ba35b56c4e054caf84b9f5332,"Bump peaceiris/actions-gh-pages from 3.9.0 to 3.9.1
+
+Bumps [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) from 3.9.0 to 3.9.1.
+- [Release notes](https://github.com/peaceiris/actions-gh-pages/releases)
+- [Changelog](https://github.com/peaceiris/actions-gh-pages/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/peaceiris/actions-gh-pages/compare/v3.9.0...v3.9.1)
+
+---
+updated-dependencies:
+- dependency-name: peaceiris/actions-gh-pages
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-01-09 20:12:26+00:00,0,2023-01-09 20:12:26+00:00,0,True,False,['demo.yml'],['ba5f00740a6b9e19941bbe79678cbdfd61205eb8'],1,1,2,1,,,
+642a31d54d133de75b11398dfa959ee4170099f7,"Bump peaceiris/actions-gh-pages from 3.9.1 to 3.9.2
+
+Bumps [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) from 3.9.1 to 3.9.2.
+- [Release notes](https://github.com/peaceiris/actions-gh-pages/releases)
+- [Changelog](https://github.com/peaceiris/actions-gh-pages/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/peaceiris/actions-gh-pages/compare/v3.9.1...v3.9.2)
+
+---
+updated-dependencies:
+- dependency-name: peaceiris/actions-gh-pages
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-01-23 20:13:54+00:00,0,2023-01-23 20:13:54+00:00,0,True,False,['demo.yml'],['0fef41c1422473a4e43a8c6c1b5beabd1a3d8710'],1,1,2,1,,,
+8409a291a1127ccba5ede94a9cfb4187bb3742a4,"Bump peaceiris/actions-gh-pages from 3.9.2 to 3.9.3
+
+Bumps [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) from 3.9.2 to 3.9.3.
+- [Release notes](https://github.com/peaceiris/actions-gh-pages/releases)
+- [Changelog](https://github.com/peaceiris/actions-gh-pages/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/peaceiris/actions-gh-pages/compare/v3.9.2...v3.9.3)
+
+---
+updated-dependencies:
+- dependency-name: peaceiris/actions-gh-pages
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-04-03 21:12:05+00:00,0,2023-04-03 21:12:05+00:00,0,True,False,['demo.yml'],['7bfb3ee12d395b0590a86ad416fe6a6791713379'],1,1,2,1,,,
+ac2840fa512abc6a58a0c297d6cbf57a680ddd68,Add dependabot for pip and run it on Thursdays,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-06-23 09:09:44+02:00,-7200,2023-06-23 09:09:44+02:00,-7200,True,False,['dependabot.yml'],['35ba0a8e57ea6109cd71778b9f31ee4174b3f2ef'],0,7,7,1,,,
+243ce2c6b020ac6f6231891a2a262732c253bf73,"Update package name and use pyproject.toml
+
+Fix package name to actually allow importing.
+Rename package from 153957_theme to theme_153957.
+Use ruff for linting.
+Add type annotations.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-07-01 17:59:51+02:00,-7200,2023-07-01 17:59:51+02:00,-7200,True,False,"['demo.yml', 'tests.yml', 'Makefile', 'README.md', '__init__.py', 'sigal.conf.py', 'pyproject.toml', 'requirements-ruff.txt', 'setup.cfg', 'setup.py', '__init__.py', 'full_menu.py', 'classic-map.png', 'galleria.classic.css', 'normalize.css', 'style.css', 'empty.png', 'fullscreen.svg', 'fullscreen_exit.svg', 'loader.svg', 'galleria.classic.min.js', 'galleria.history.min.js', 'galleria.min.js', 'iframeResizer.contentWindow.min.js', 'jquery-3.5.1.min.js', 'album.html', 'album_list.html', 'base.html', 'menu.html', 'theme.py']",['ac2840fa512abc6a58a0c297d6cbf57a680ddd68'],94,122,216,30,1.0,1.0,1.0
+e19472de3cabfd19e82443e6efd1bd76033eb6b7,Add tying test and additional annotations,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-07-01 18:42:02+02:00,-7200,2023-07-01 18:42:02+02:00,-7200,True,False,"['tests.yml', 'sigal.conf.py', 'pyproject.toml', 'full_menu.py', 'theme.py']",['243ce2c6b020ac6f6231891a2a262732c253bf73'],5,31,36,5,,,
+35aa50d9cfc32146b4aa5e81ae7fdcdca1a813c8,Ignore invalid module name for default config name,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-07-03 21:52:19+02:00,-7200,2023-07-03 21:52:19+02:00,-7200,True,False,['pyproject.toml'],['e19472de3cabfd19e82443e6efd1bd76033eb6b7'],0,3,3,1,,,
+b63dc0ef9bb3e723343e0369d9ca8e7c7e152746,Add typingtest make target,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-07-04 15:35:54+02:00,-7200,2023-07-04 15:35:54+02:00,-7200,True,False,['Makefile'],['35aa50d9cfc32146b4aa5e81ae7fdcdca1a813c8'],1,5,6,1,,,
+75dbd6302537226fb06953cde7fe5c13931fa834,Use ruff github format in actions,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-07-04 15:54:02+02:00,-7200,2023-07-04 15:54:02+02:00,-7200,True,False,['tests.yml'],['b63dc0ef9bb3e723343e0369d9ca8e7c7e152746'],0,2,2,1,,,
+f4721d9b53913261b70f1e1361439baa9729aa9f,"Bump ruff from 0.0.275 to 0.0.277
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.275 to 0.0.277.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.275...v0.0.277)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-06 20:28:28+00:00,0,2023-07-06 20:28:28+00:00,0,True,False,['requirements-ruff.txt'],['75dbd6302537226fb06953cde7fe5c13931fa834'],1,1,2,1,,,
+1c548a8e4c53a6d8e95f9789b215048be5ae2351,"Bump ruff from 0.0.277 to 0.0.278
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.277 to 0.0.278.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.277...v0.0.278)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-13 20:49:56+00:00,0,2023-07-13 20:49:56+00:00,0,True,False,['requirements-ruff.txt'],['67bd3bae7c4a2ced5c4ac0426f10102d734d2268'],1,1,2,1,,,
+cb041fe3d9f88d75b58c16c05d8c70c26b999348,"Bump ruff from 0.0.278 to 0.0.280
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.278 to 0.0.280.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.278...v0.0.280)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-27 20:13:53+00:00,0,2023-07-27 20:13:53+00:00,0,True,False,['requirements-ruff.txt'],['fd29011aeaec24bb2e9d79df31f6decf3e91efcb'],1,1,2,1,,,
+e982459e4fd266447d862afd15bff8688713bc2f,Easier ruff configuration,Arne de Laat,arne@delaat.net,GitHub,noreply@github.com,2023-07-29 12:12:55+02:00,-7200,2023-07-29 12:12:55+02:00,-7200,True,False,['pyproject.toml'],['cb041fe3d9f88d75b58c16c05d8c70c26b999348'],8,2,10,1,,,
+d42b366cd07437699e33b32ebabbc2edd89740ab,"Bump ruff from 0.0.280 to 0.0.282
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.280 to 0.0.282.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.280...v0.0.282)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-03 20:50:13+00:00,0,2023-08-03 20:50:13+00:00,0,True,False,['requirements-ruff.txt'],['3dd9d9810bee5d7959562d3d8e1ad741aff19718'],1,1,2,1,,,
+ac49124bd4812e03da82ff68b95747e35afd3eb3,"Bump mypy from 1.4.1 to 1.5.0
+
+Bumps [mypy](https://github.com/python/mypy) from 1.4.1 to 1.5.0.
+- [Commits](https://github.com/python/mypy/compare/v1.4.1...v1.5.0)
+
+---
+updated-dependencies:
+- dependency-name: mypy
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-10 20:54:21+00:00,0,2023-08-10 20:54:21+00:00,0,True,False,['pyproject.toml'],['b44fccea006007f57fd4e757d2b1a7e800b03f8f'],1,1,2,1,,,
+c113a85880166f36187987dd1fb799b213c3fbc8,"Bump ruff from 0.0.282 to 0.0.284
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.282 to 0.0.284.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.282...v0.0.284)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-10 20:54:29+00:00,0,2023-08-10 20:54:29+00:00,0,True,False,['requirements-ruff.txt'],['b44fccea006007f57fd4e757d2b1a7e800b03f8f'],1,1,2,1,,,
+09bc9b5d0dd4a095c9da77dab9090ff0fd4d9d18,"Bump mypy from 1.5.0 to 1.5.1
+
+Bumps [mypy](https://github.com/python/mypy) from 1.5.0 to 1.5.1.
+- [Commits](https://github.com/python/mypy/compare/v1.5.0...v1.5.1)
+
+---
+updated-dependencies:
+- dependency-name: mypy
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-17 20:25:47+00:00,0,2023-08-17 20:25:47+00:00,0,True,False,['pyproject.toml'],['49d35822a1ea983136eab3f92c13d9859ad58cd7'],1,1,2,1,,,
+599f17ebc7ea562e72a2badb04542bd8f5a40e63,"Bump ruff from 0.0.284 to 0.0.285
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.284 to 0.0.285.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.284...v0.0.285)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-24 20:50:12+00:00,0,2023-08-24 20:50:12+00:00,0,True,False,['requirements-ruff.txt'],['7f7e1e2c2dfbe1c321b40dcd4ac006a13bb23323'],1,1,2,1,,,
+5e079ccafba1878ddbdb2767d0f2605698905e07,"Bump ruff from 0.0.285 to 0.0.286
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.285 to 0.0.286.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.285...v0.0.286)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-31 20:26:31+00:00,0,2023-08-31 20:26:31+00:00,0,True,False,['requirements-ruff.txt'],['7e50912d4f69587086ed3ee1bc6eea29d284c6e3'],1,1,2,1,,,
+11c75e59acaac2aad3df3527f6b8b4ff0ecf586e,"Bump actions/checkout from 3 to 4
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-07 20:21:07+00:00,0,2023-09-07 20:21:07+00:00,0,True,False,"['demo.yml', 'tests.yml']",['be24f15d5c4bd6c4195d9a6f5b1d7c100deb4d6d'],3,3,6,2,,,
+a902638d68f68c65512f5e6afd7388d05d95628c,"Bump ruff from 0.0.286 to 0.0.287
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.286 to 0.0.287.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.286...v0.0.287)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-07 20:42:14+00:00,0,2023-09-07 20:42:14+00:00,0,True,False,['requirements-ruff.txt'],['be24f15d5c4bd6c4195d9a6f5b1d7c100deb4d6d'],1,1,2,1,,,
+f71860755919c5b212ccb696dd4c5a7ee40adc5e,"Bump ruff from 0.0.287 to 0.0.290
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.287 to 0.0.290.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.287...v0.0.290)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-21 20:53:20+00:00,0,2023-09-21 20:53:20+00:00,0,True,False,['requirements-ruff.txt'],['55769726422835abe076f6cdf5540a8d55aaef64'],1,1,2,1,,,
+c04c8a26a054d894db064e68945507ae99a78058,Update ruff configuration,Arne de Laat,arne@delaat.net,GitHub,noreply@github.com,2023-09-22 07:39:57+02:00,-7200,2023-09-22 07:39:57+02:00,-7200,True,False,['pyproject.toml'],['f71860755919c5b212ccb696dd4c5a7ee40adc5e'],5,2,7,1,,,
+f48affe7216a20eb0cd1b145424b1742b4dadfd8,"Bump sigal from 2.3 to 2.4
+
+Bumps [sigal](https://github.com/saimn/sigal) from 2.3 to 2.4.
+- [Release notes](https://github.com/saimn/sigal/releases)
+- [Changelog](https://github.com/saimn/sigal/blob/main/docs/changelog.rst)
+- [Commits](https://github.com/saimn/sigal/compare/2.3...2.4)
+
+---
+updated-dependencies:
+- dependency-name: sigal
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-05 20:22:31+00:00,0,2023-10-05 20:22:31+00:00,0,True,False,['pyproject.toml'],['435c42cdbda482abdc1cd29fd8eaf12cc829ffa2'],1,1,2,1,,,
+5ae1611b70aeba3aed06f22183419da2fd91b3ae,"Bump mypy from 1.5.1 to 1.6.0
+
+Bumps [mypy](https://github.com/python/mypy) from 1.5.1 to 1.6.0.
+- [Commits](https://github.com/python/mypy/compare/v1.5.1...v1.6.0)
+
+---
+updated-dependencies:
+- dependency-name: mypy
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-12 20:47:46+00:00,0,2023-10-12 20:47:46+00:00,0,True,False,['pyproject.toml'],['2be404bbd8b57b1b3e3cb5ee98a896041582fd47'],1,1,2,1,,,
+0c59b442c0e7c0a8bca37f7c060efa518ef78059,"Bump mypy from 1.6.0 to 1.6.1
+
+Bumps [mypy](https://github.com/python/mypy) from 1.6.0 to 1.6.1.
+- [Changelog](https://github.com/python/mypy/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python/mypy/compare/v1.6.0...v1.6.1)
+
+---
+updated-dependencies:
+- dependency-name: mypy
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-19 20:28:15+00:00,0,2023-10-19 20:28:15+00:00,0,True,False,['pyproject.toml'],['2cac78a16e62f301226b03408cbf947be4360108'],1,1,2,1,,,
+ed6e63d84386a877d374e23d8c7faca9c61377b6,"Bump mypy from 1.6.1 to 1.7.0
+
+Bumps [mypy](https://github.com/python/mypy) from 1.6.1 to 1.7.0.
+- [Changelog](https://github.com/python/mypy/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python/mypy/compare/v1.6.1...v1.7.0)
+
+---
+updated-dependencies:
+- dependency-name: mypy
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-16 20:18:47+00:00,0,2023-11-16 20:18:47+00:00,0,True,False,['pyproject.toml'],['2436678b732880ca63325e598f03d9904d190d3d'],1,1,2,1,,,
+13726a5995b5f32fac5eaa8ef517a362a7042b63,Update ruff use it for formatting,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-11-19 11:16:02+01:00,-3600,2023-11-19 11:16:02+01:00,-3600,True,False,"['Makefile', 'pyproject.toml', 'requirements-ruff.txt']",['fbf722acd6fd1b8420b14d37d1428d72da4ea889'],12,14,26,3,,,
+58b5e307063592961478f5c250c14c2c8aa4a053,"Bump mypy from 1.7.0 to 1.7.1
+
+Bumps [mypy](https://github.com/python/mypy) from 1.7.0 to 1.7.1.
+- [Changelog](https://github.com/python/mypy/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python/mypy/compare/v1.7.0...v1.7.1)
+
+---
+updated-dependencies:
+- dependency-name: mypy
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-23 20:44:04+00:00,0,2023-11-23 20:44:04+00:00,0,True,False,['pyproject.toml'],['13726a5995b5f32fac5eaa8ef517a362a7042b63'],1,1,2,1,,,
+42c108555641de30e25fdfd8fd629a5e0b424470,Run dependabot at specific time of day,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-07 19:49:02+01:00,-3600,2023-12-07 19:49:02+01:00,-3600,True,False,['dependabot.yml'],['c9d59d17c5dcd18234d19c4c0242b1346b40dd2b'],4,6,10,1,,,
+726aa17f6c655e81129abe9671f04d6c5a4ace7e,"Bump actions/setup-python from 4 to 5
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 5.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v4...v5)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-07 18:49:27+00:00,0,2023-12-07 18:49:27+00:00,0,True,False,"['demo.yml', 'tests.yml']",['42c108555641de30e25fdfd8fd629a5e0b424470'],3,3,6,2,,,
+c988a04921ccd5376008c23df5ed37cf4eff28de,"Bump ruff from 0.1.6 to 0.1.7
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.1.6 to 0.1.7.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.1.6...v0.1.7)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-07 18:49:33+00:00,0,2023-12-07 18:49:33+00:00,0,True,False,['requirements-ruff.txt'],['42c108555641de30e25fdfd8fd629a5e0b424470'],1,1,2,1,,,
+244cdbf653b622c1684b6e0d45a5af66a24372a6,"Bump ruff from 0.1.7 to 0.1.8
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.1.7 to 0.1.8.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.1.7...v0.1.8)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-14 07:33:05+00:00,0,2023-12-14 07:33:05+00:00,0,True,False,['requirements-ruff.txt'],['6134f1d26e0e9e016f3d09b47b39b255f97e8b97'],1,1,2,1,,,
+c693e481191b66fe3aa54a870cb47951c79a2e18,"Add additional content to the demo
+
+Show cases for deeper menus, longer menus, multiple videos, etc.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-25 23:34:19+01:00,-3600,2023-12-25 23:34:19+01:00,-3600,True,False,"['ADL_049924.jpg', 'ADL_058445.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_086401_tiny.jpg', 'ADL_071853.jpg', '050504_S60_1.mp4', '101109_ADL_A27.mp4']",['59fdb5df336eb8625e70668469e0d50cdffb47ce'],0,0,0,26,,,
+2525615af336d67d00c4fd6ffdea2292fb2df88c,"Recreate theme from ground up in modern way
+
+Remove Galleria and jQuery.
+Replace normalize by modern-normalize.
+Add Jost font.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-25 23:39:38+01:00,-3600,2023-12-25 23:39:38+01:00,-3600,True,False,"['classic-map.png', 'galleria.classic.css', 'normalize.css', 'style.css', '.htaccess', 'Jost-400.woff2', 'Jost-700.woff2', 'empty.png', 'loader.svg', 'galleria.classic.min.js', 'galleria.history.min.js', 'galleria.min.js', 'iframeResizer.contentWindow.min.js', 'jquery-3.5.1.min.js', 'base.html', 'menu.html']",['c693e481191b66fe3aa54a870cb47951c79a2e18'],1030,314,1344,16,0.0,0.08023774145616643,0.05200594353640416
+981b5c7cf2400b6ad422ddd9823bd1a334842005,"Disable CSS check
+
+It is not aware of some new CSS properties.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-25 23:44:39+01:00,-3600,2023-12-25 23:44:39+01:00,-3600,True,False,['demo.yml'],['2525615af336d67d00c4fd6ffdea2292fb2df88c'],1,1,2,1,,,
+7d6d42ef669577af7c42bf0d1c4ab70ba153b36a,Fix showing first image on load if non targeted,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-25 23:53:53+01:00,-3600,2023-12-25 23:53:53+01:00,-3600,True,False,['base.html'],['981b5c7cf2400b6ad422ddd9823bd1a334842005'],1,1,2,1,,,
+6d9ecde6b7aec4637387d591a7e0df55c3718ba5,Remove trailing slash for void elements,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-26 08:49:43+01:00,-3600,2023-12-26 08:49:43+01:00,-3600,True,False,['base.html'],['7d6d42ef669577af7c42bf0d1c4ab70ba153b36a'],2,2,4,1,,,
+3ca4503613f80199dca47febd6a6bd91f6aca0cc,Fix max height for menu on smaller screens,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-26 08:50:01+01:00,-3600,2023-12-26 08:50:01+01:00,-3600,True,False,['style.css'],['6d9ecde6b7aec4637387d591a7e0df55c3718ba5'],1,4,5,1,,,
+74191834bca7bb3c30915f61fbd4ae64c7a290dd,"Disable phone number detection
+
+Image dates are detected as phone numbers.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-26 09:26:13+01:00,-3600,2023-12-26 09:26:13+01:00,-3600,True,False,['base.html'],['3ca4503613f80199dca47febd6a6bd91f6aca0cc'],0,1,1,1,,,
+622e90b6524fc8a10631651087779944ac59cb69,Fix removal of current class to only affect thumbnails,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-26 09:34:13+01:00,-3600,2023-12-26 09:34:13+01:00,-3600,True,False,['base.html'],['74191834bca7bb3c30915f61fbd4ae64c7a290dd'],1,1,2,1,,,
+af45fbc17a50d3823d5b78b038a65156a9ec6258,Add preloading of next and previous images,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-26 11:39:35+01:00,-3600,2023-12-26 11:39:35+01:00,-3600,True,False,['base.html'],['622e90b6524fc8a10631651087779944ac59cb69'],0,14,14,1,,,
+11c3e24ad78d02806d9ef728857fb822f1d4b936,Fix used offset when clicking on the image,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-26 11:40:11+01:00,-3600,2023-12-26 11:40:11+01:00,-3600,True,False,['base.html'],['af45fbc17a50d3823d5b78b038a65156a9ec6258'],1,1,2,1,,,
+ce1ee142a3d5fa293e9ab3f72dc6fb7cc6c79ec4,"Bump mypy from 1.7.1 to 1.8.0
+
+Bumps [mypy](https://github.com/python/mypy) from 1.7.1 to 1.8.0.
+- [Changelog](https://github.com/python/mypy/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python/mypy/compare/v1.7.1...v1.8.0)
+
+---
+updated-dependencies:
+- dependency-name: mypy
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-28 07:57:33+00:00,0,2023-12-28 07:57:33+00:00,0,True,False,['pyproject.toml'],['11c3e24ad78d02806d9ef728857fb822f1d4b936'],1,1,2,1,,,
+77a6fbd2a43f101371ff810ebef467850ac33267,"Bump ruff from 0.1.8 to 0.1.9
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.1.8 to 0.1.9.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.1.8...v0.1.9)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-28 07:57:47+00:00,0,2023-12-28 07:57:47+00:00,0,True,False,['requirements-ruff.txt'],['11c3e24ad78d02806d9ef728857fb822f1d4b936'],1,1,2,1,,,
+072d7dbfd9a0c89526e89a73403e7b33c05834af,"Update readme
+
+Use GitHub badge for actions.
+Fix typo.
+Remove no longer relevant sources.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-28 23:50:55+01:00,-3600,2023-12-28 23:50:55+01:00,-3600,True,False,['README.md'],['f8bf4715536bc2258a2c16eb8604038772ea6ba1'],12,3,15,1,,,
+1f3430b5eb210bf788b4e30682a2c628f64cd66a,"Add fullscreen toggles
+
+Toggle fullscreen with the 'f' key.
+Enter fullscreen by clicking the fullscreen icon.
+Remove unused CSS.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-28 23:52:32+01:00,-3600,2023-12-28 23:52:32+01:00,-3600,True,False,"['style.css', 'fullscreen.svg', 'fullscreen_exit.svg', 'base.html']",['072d7dbfd9a0c89526e89a73403e7b33c05834af'],21,53,74,4,,,
+6950943823e4033c5e6ead12f886861b9db1c8b7,"Bump version to 4
+
+Remove galleria keyword.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-28 23:54:08+01:00,-3600,2023-12-28 23:54:08+01:00,-3600,True,False,['pyproject.toml'],['1f3430b5eb210bf788b4e30682a2c628f64cd66a'],2,1,3,1,,,
+877d26994875e8ffc6c2c9547dcd786ed3d48f3d,Fix styling in case there is no menu,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-29 00:01:20+01:00,-3600,2023-12-29 00:01:20+01:00,-3600,True,False,"['style.css', 'base.html']",['6950943823e4033c5e6ead12f886861b9db1c8b7'],1,8,9,2,,,
+38ae9aa2d01a95528bbaff7c9c1c1c2aef897f6a,Improve visibility and size of fullscreen icon,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-29 00:17:28+01:00,-3600,2023-12-29 00:17:28+01:00,-3600,True,False,"['style.css', 'base.html']",['877d26994875e8ffc6c2c9547dcd786ed3d48f3d'],3,13,16,2,,,
+7963cfa5c971da1653ae372fe4ee929fb0eb3f1a,Hide fullscreen button if fullscreen is not supported,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-29 00:28:23+01:00,-3600,2023-12-29 00:28:23+01:00,-3600,True,False,['base.html'],['38ae9aa2d01a95528bbaff7c9c1c1c2aef897f6a'],3,11,14,1,,,
+297ceaa8394cbfa060ae4f301c7210af8610a796,Remove unused fullscreen svg file,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-29 15:39:22+01:00,-3600,2023-12-29 15:39:22+01:00,-3600,True,False,['fullscreen.svg'],['7963cfa5c971da1653ae372fe4ee929fb0eb3f1a'],8,0,8,1,,,
+be5322df9a02125fcba7bf4057000ef6875d6864,Externalize JavaScript to external file,Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-29 15:41:46+01:00,-3600,2023-12-29 15:41:46+01:00,-3600,True,False,"['gallery.js', 'base.html']",['297ceaa8394cbfa060ae4f301c7210af8610a796'],121,126,247,2,1.0,0.8658536585365854,1.0
+bad2dc9ad6fd1df9004f831e44e15020ec4fcf16,"Single place to determine media date
+
+Tiny fix for code style.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2023-12-29 16:03:05+01:00,-3600,2023-12-29 16:03:05+01:00,-3600,True,False,['base.html'],['be5322df9a02125fcba7bf4057000ef6875d6864'],6,7,13,1,,,
+91df7c29d80dc2c54947651963e1583fadec0383,"Bump ruff from 0.1.9 to 0.1.11
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.1.9 to 0.1.11.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.1.9...v0.1.11)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-04 07:19:11+00:00,0,2024-01-04 07:19:11+00:00,0,True,False,['requirements-ruff.txt'],['bad2dc9ad6fd1df9004f831e44e15020ec4fcf16'],1,1,2,1,,,
+15d0dab6a497b33c407a192dedf5c8c2168d57f7,"Small cleanup
+
+Correct max line length.
+Remove unnecessary comment.
+Fix indentation and some styles.
+Add description to meta tag and set initial scale for viewport.",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2024-01-09 13:26:40+01:00,-3600,2024-01-09 13:26:40+01:00,-3600,True,False,"['.editorconfig', 'normalize.css', 'style.css', 'base.html']",['728230181e96bf4de82bcc3990d3595d2b68f5e3'],31,15,46,4,,,
+c0db17b94428f529c6f074f0d33628e7bf792b7d,"Add support for head, body_prefix, and body_suffix settings",Arne de Laat,arne@delaat.net,Arne de Laat,arne@delaat.net,2024-01-09 13:32:57+01:00,-3600,2024-01-09 13:32:57+01:00,-3600,True,False,"['README.md', 'base.html']",['15d0dab6a497b33c407a192dedf5c8c2168d57f7'],0,12,12,2,,,

@@ -1,0 +1,320 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+6f54bec75931c181a67126ecc3701ba479a4a7c1,Initial commit,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-04-09 11:36:06+02:00,-7200,2020-04-09 11:36:06+02:00,-7200,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,332,332,3,,,
+bf3e142a969656d22225f39dbb0d76d21f4b58a7,Add code to fix fits files,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-09 15:14:59+02:00,-7200,2020-04-09 15:14:59+02:00,-7200,True,False,"['.gitignore', '__init__.py', '__init__.py', 'fix_file.py']",['6f54bec75931c181a67126ecc3701ba479a4a7c1'],0,256,256,4,0.16,1.0,0.696
+2a6d7a0eb6be145c1c30415609e47aaa94ea3117,Add setup.py,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-09 15:24:57+02:00,-7200,2020-04-09 15:24:57+02:00,-7200,True,False,['setup.py'],['bf3e142a969656d22225f39dbb0d76d21f4b58a7'],0,26,26,1,,,
+67a3e697e96a46d1280000ff870f1b437bcb9175,Fix typos in setup.py,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-09 15:26:08+02:00,-7200,2020-04-09 15:26:08+02:00,-7200,True,False,['setup.py'],['2a6d7a0eb6be145c1c30415609e47aaa94ea3117'],2,2,4,1,,,
+3eb0c706d55ef6082998967c8a9ad19e5acca624,Update README.md,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-04-09 15:32:02+02:00,-7200,2020-04-09 15:32:02+02:00,-7200,True,False,['README.md'],['67a3e697e96a46d1280000ff870f1b437bcb9175'],1,9,10,1,,,
+a68bbf426f0037448520a82058501e7b3805d6d2,Add travis configuration,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-09 15:33:16+02:00,-7200,2020-04-09 15:33:16+02:00,-7200,True,False,['.travis.yml'],['67a3e697e96a46d1280000ff870f1b437bcb9175'],0,9,9,1,,,
+c2d8d88f6f69d050b84835fb0a03aac8560d3436,install pycodestyle on travis,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-09 15:37:25+02:00,-7200,2020-04-09 15:37:25+02:00,-7200,True,False,['.travis.yml'],['ca29a1dfa2ba31465b49a012192339ff79718a7d'],0,1,1,1,,,
+93f6be2cc69322e4c680bea0e38caba7d4158a4a,Attempt at fixing travis cofnig,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-09 15:44:36+02:00,-7200,2020-04-09 15:44:36+02:00,-7200,True,False,['.travis.yml'],['c2d8d88f6f69d050b84835fb0a03aac8560d3436'],1,1,2,1,,,
+e5969e3f4118b2ab6291013905b692ac40b87ac1,"Add missing {} to find command, pep8 setup.py",Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-09 15:53:22+02:00,-7200,2020-04-09 15:53:22+02:00,-7200,True,False,"['.travis.yml', 'setup.py']",['93f6be2cc69322e4c680bea0e38caba7d4158a4a'],3,2,5,2,,,
+cc8106899a09e38a552365b50a3c8c659cf4d641,Update README.md,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-04-09 15:55:20+02:00,-7200,2020-04-09 15:55:20+02:00,-7200,True,False,['README.md'],['e5969e3f4118b2ab6291013905b692ac40b87ac1'],0,1,1,1,,,
+63dcb1488a268d83d7ef912b6814163454533d53,Update README.md,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-04-09 15:55:49+02:00,-7200,2020-04-09 15:55:49+02:00,-7200,True,False,['README.md'],['cc8106899a09e38a552365b50a3c8c659cf4d641'],1,1,2,1,,,
+edb522dd5f0ecb9acab6d85465561e5f9cde17c6,Remove tsubint command line option,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-09 14:00:21+00:00,0,2020-04-09 14:00:21+00:00,0,True,False,['fix_file.py'],['63dcb1488a268d83d7ef912b6814163454533d53'],6,5,11,1,1.0,0.0,1.0
+30476f81ed501e4b12413066303832ef38a784c9,print help if no arguments are given,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-09 14:03:13+00:00,0,2020-04-09 14:03:13+00:00,0,True,False,['fix_file.py'],['edb522dd5f0ecb9acab6d85465561e5f9cde17c6'],0,5,5,1,0.0,1.0,1.0
+a3c4ab8ef621aaacc263b7324bf32f5565fe0957,Add fix for bits to bytes type,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-09 16:35:56+02:00,-7200,2020-04-09 16:35:56+02:00,-7200,True,False,"['README.md', 'fix_file.py']",['30476f81ed501e4b12413066303832ef38a784c9'],3,13,16,2,0.0,1.0,0.0
+5d6477de707dcd3a75b6f44534d823b6239f38b3,Update README.md,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-04-09 16:37:46+02:00,-7200,2020-04-09 16:37:46+02:00,-7200,True,False,['README.md'],['a3c4ab8ef621aaacc263b7324bf32f5565fe0957'],0,7,7,1,,,
+d56a01d0d7766bcab6c2cf8dbc9633e4644dcdfb,Update README.md,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-04-09 16:56:15+02:00,-7200,2020-04-09 16:56:15+02:00,-7200,True,False,['README.md'],['5d6477de707dcd3a75b6f44534d823b6239f38b3'],1,1,2,1,,,
+9cf3ac5a39b86de6c2f6024111891f4d06cd6590,Add tool to read parameterset; add description to fix_file,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-10 11:43:10+00:00,0,2020-04-10 11:47:10+00:00,0,True,False,"['README.md', 'fix_file.py', 'reader.py', 'arts_read_parameterset', 'setup.py']",['d56a01d0d7766bcab6c2cf8dbc9633e4644dcdfb'],4,99,103,5,0.28,1.0,1.0
+e01b04c515ec03b224f9bfabd71315f8fcd3d5a9,Add docs,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-10 12:04:02+00:00,0,2020-04-10 12:04:02+00:00,0,True,False,"['reader.py', 'Makefile', 'fits.rst', 'conf.py', 'index.rst', 'make.bat']",['9cf3ac5a39b86de6c2f6024111891f4d06cd6590'],2,144,146,6,,,
+fef34465dca53ae25e1bd8ad452df13828be1efb,Improve docstrings,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-10 12:13:00+00:00,0,2020-04-10 12:13:00+00:00,0,True,False,"['fix_file.py', 'reader.py']",['e01b04c515ec03b224f9bfabd71315f8fcd3d5a9'],2,3,5,2,,,
+d1075c6a9f6592248d73e3bbd12a7f468701ece3,PEP8,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-10 12:22:22+00:00,0,2020-04-10 12:22:22+00:00,0,True,False,['reader.py'],['fef34465dca53ae25e1bd8ad452df13828be1efb'],1,1,2,1,,,
+6113ececc3adc231a66599bc4619cfba5fd16f60,Make purpose of fix_file clearer,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-04-16 12:41:57+02:00,-7200,2020-04-16 12:41:57+02:00,-7200,True,False,"['README.md', 'fix_file_from_before_20200408.py', 'setup.py']",['d1075c6a9f6592248d73e3bbd12a7f468701ece3'],9,23,32,3,0.0,1.0,1.0
+0374dbeb0e6f731032a0d449e5532566b9331916,Add DOI badge,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-05-19 18:30:52+02:00,-7200,2020-05-19 18:30:52+02:00,-7200,True,False,['README.md'],['6113ececc3adc231a66599bc4619cfba5fd16f60'],1,2,3,1,,,
+deefd0dea650212d6ba222c6203828f6ccb4b54a,Fix typo in case of parsets with spaces around '=',Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-08-29 10:29:32+02:00,-7200,2020-08-29 10:29:32+02:00,-7200,True,False,['reader.py'],['0374dbeb0e6f731032a0d449e5532566b9331916'],1,1,2,1,,,
+885a970594c121ab8fd102aad764cf3af024fabb,travis update: Xenial is now the default linux dist; test python 3.8; ignore operator at end of line warning,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-08-31 11:41:32+02:00,-7200,2020-08-31 11:41:32+02:00,-7200,True,False,['.travis.yml'],['deefd0dea650212d6ba222c6203828f6ccb4b54a'],6,8,14,1,,,
+f6db2c3558e8d87fd412c48f7176884a8a429125,Fix NAXIS2 value if original was not zero,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-09-02 17:50:38+02:00,-7200,2020-09-02 17:50:38+02:00,-7200,True,False,['fix_file_from_before_20200408.py'],['885a970594c121ab8fd102aad764cf3af024fabb'],1,7,8,1,0.0,0.0,0.0
+e4bdc69791999644d8d3364acb91d9678bcf9ee6,Fix typo,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-09-02 17:52:02+02:00,-7200,2020-09-02 17:52:02+02:00,-7200,True,False,['fix_file_from_before_20200408.py'],['f6db2c3558e8d87fd412c48f7176884a8a429125'],1,1,2,1,,,
+4893788ac51271e0ab29aa6d129f149f2f4ba6ad,Add automatic doc generation to travis,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-09-02 19:22:29+02:00,-7200,2020-09-02 19:22:29+02:00,-7200,True,False,['.travis.yml'],['e4bdc69791999644d8d3364acb91d9678bcf9ee6'],0,16,16,1,,,
+5f5456c762a25dc9db870c0f6a8cbe91f0b0be15,"Put version in one place, update to 1.2",Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-02 19:26:51+02:00,-7200,2020-09-02 19:26:51+02:00,-7200,True,False,"['__init__.py', '__version__.py', 'conf.py', 'setup.py']",['4893788ac51271e0ab29aa6d129f149f2f4ba6ad'],3,10,13,4,,,
+0cad991bbb859d249044d27b2a7a4fe8c2139249,Fix path in docs,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-02 19:28:38+02:00,-7200,2020-09-02 19:28:38+02:00,-7200,True,False,['fits.rst'],['5f5456c762a25dc9db870c0f6a8cbe91f0b0be15'],2,2,4,1,,,
+18e7fdd95afb0cfa8f3c753b2e3d5aea14e5cc53,"Need to import os in setup.py; force python3 when executing file
+directly",Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-02 19:29:36+02:00,-7200,2020-09-02 19:29:39+02:00,-7200,True,False,['setup.py'],['0cad991bbb859d249044d27b2a7a4fe8c2139249'],1,2,3,1,,,
+0fcab92a3aec388202a7a738c02605998b201a76,Fix paths,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-02 19:33:00+02:00,-7200,2020-09-02 19:33:00+02:00,-7200,True,False,"['__init__.py', 'setup.py']",['18e7fdd95afb0cfa8f3c753b2e3d5aea14e5cc53'],3,2,5,2,,,
+7b7a92a0f72b66000c452dd9b64678df7ab53ef4,update docs,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-02 19:39:24+02:00,-7200,2020-09-02 19:39:24+02:00,-7200,True,False,['fits.rst'],['0fcab92a3aec388202a7a738c02605998b201a76'],2,2,4,1,,,
+9565def8991670d7c67c8623dfe5965e93e38ebe,Add general coordinates conversion tools,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 14:23:40+02:00,-7200,2020-09-03 14:23:40+02:00,-7200,True,False,"['MANIFEST.in', 'constants.py', 'square_39p1.cb_offsets', 'tools.py']",['7b7a92a0f72b66000c452dd9b64678df7ab53ef4'],0,355,355,4,0.8222222222222222,1.0,0.0
+ca702e37775f2f09a00bf6a86ac9e9265ac29d9a,Remove separate WSRT lon/lat,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 14:25:33+02:00,-7200,2020-09-03 14:25:33+02:00,-7200,True,False,"['constants.py', 'tools.py']",['9565def8991670d7c67c8623dfe5965e93e38ebe'],9,7,16,2,,,
+e372bc00357145b5bdff0afb78f9acf967faa6d6,Add tool to find pulsars in FoV,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 15:47:43+02:00,-7200,2020-09-03 15:47:43+02:00,-7200,True,False,"['README.md', '__init__.py', '__init__.py', 'find_pulsars.py', 'setup.py']",['ca702e37775f2f09a00bf6a86ac9e9265ac29d9a'],6,143,149,5,0.05714285714285714,0.05714285714285714,1.0
+ce15983ce6283c34fe1a1412c6ff1ab4b629727c,update docs,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 15:56:08+02:00,-7200,2020-09-03 15:56:08+02:00,-7200,True,False,['modules.rst'],['e372bc00357145b5bdff0afb78f9acf967faa6d6'],0,13,13,1,,,
+f30898ae75a4de2e7985f2fe193ef3bfd9d0764f,Update version,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 13:59:55+00:00,0,2020-09-03 13:59:55+00:00,0,True,False,['__version__.py'],['ce15983ce6283c34fe1a1412c6ff1ab4b629727c'],1,1,2,1,,,
+da7df35a26866822f4763358dfcceabdb394e130,Add zip_safe=False to setup,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 16:25:18+02:00,-7200,2020-09-03 16:25:18+02:00,-7200,True,False,['setup.py'],['f30898ae75a4de2e7985f2fe193ef3bfd9d0764f'],0,1,1,1,,,
+6d341158ec13b321a08a59f50ab85f83f8c3a381,Need to include package data,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 16:27:14+02:00,-7200,2020-09-03 16:27:14+02:00,-7200,True,False,['setup.py'],['da7df35a26866822f4763358dfcceabdb394e130'],0,1,1,1,,,
+14fe0e595cb79b800c4a5d1df4a6c420734518ba,Update version,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 17:00:45+02:00,-7200,2020-09-03 17:00:45+02:00,-7200,True,False,['__version__.py'],['6d341158ec13b321a08a59f50ab85f83f8c3a381'],1,1,2,1,,,
+6af02f45693f2450e8c7169c9a791c5c7dda58ab,Deploy to pypi on master branch tags,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 17:02:32+02:00,-7200,2020-09-03 17:02:32+02:00,-7200,True,False,['.travis.yml'],['14fe0e595cb79b800c4a5d1df4a6c420734518ba'],5,12,17,1,,,
+ee5df8be36c50f06d8c179451e7378858653a699,Add option to fix FITS file in-place,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 17:06:24+02:00,-7200,2020-09-03 17:06:24+02:00,-7200,True,False,['fix_file_from_before_20200408.py'],['6af02f45693f2450e8c7169c9a791c5c7dda58ab'],3,8,11,1,0.0,0.0,1.0
+9552c7313a03bcfb70b69e610ec6535308c69e91,Update docs,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-03 17:13:33+02:00,-7200,2020-09-03 17:13:33+02:00,-7200,True,False,['index.rst'],['ee5df8be36c50f06d8c179451e7378858653a699'],1,1,2,1,,,
+0c94ce794d2f99613ee9d5aede73b0a690493148,Add tools to download files from ALTA,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-08 15:22:03+02:00,-7200,2020-09-08 15:22:03+02:00,-7200,True,False,"['__init__.py', '__init__.py', 'download_from_alta.py', 'download_helpers.py', 'constants.py', 'setup.py']",['9552c7313a03bcfb70b69e610ec6535308c69e91'],1,200,201,6,0.5384615384615384,0.5384615384615384,0.6263736263736264
+6792be25d2a050b880afa76fe05e3c4d08643466,Add iRODS downloader,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-08 16:09:35+02:00,-7200,2020-09-08 16:12:52+02:00,-7200,True,False,"['download_from_alta.py', 'download_helpers.py', 'setup.py']",['0c94ce794d2f99613ee9d5aede73b0a690493148'],25,84,109,3,0.0,0.0,0.0
+4085e8292213fdc95089c3a2564f431ae9b06f32,Remove unneccessary if name is main,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-08 16:13:22+02:00,-7200,2020-09-08 16:13:22+02:00,-7200,True,False,['download_from_alta.py'],['6792be25d2a050b880afa76fe05e3c4d08643466'],4,0,4,1,,,
+1335dd25e0a1b7097c4552295d1c688626997c83,Update README,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-08 16:26:05+02:00,-7200,2020-09-08 16:26:05+02:00,-7200,True,False,['README.md'],['4085e8292213fdc95089c3a2564f431ae9b06f32'],13,33,46,1,,,
+54076bfd83482380883132c1440071c0d450a55e,Add ALTA modules to docs,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-08 16:47:50+02:00,-7200,2020-09-08 16:47:50+02:00,-7200,True,False,['modules.rst'],['42c235d4b0f311f50f6f020772f9bd793c8c826d'],0,11,11,1,,,
+d7c9963d1beb14552dbefe1c03a90eab5ba3098b,Update version,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-08 16:49:10+02:00,-7200,2020-09-08 16:49:10+02:00,-7200,True,False,['__version__.py'],['54076bfd83482380883132c1440071c0d450a55e'],1,1,2,1,,,
+d6bde12157be6095c535854a4067a3cb756daccc,Use tqdm for download progress bar,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-09 13:46:31+02:00,-7200,2020-09-09 13:46:31+02:00,-7200,True,False,"['download_from_alta.py', 'download_helpers.py']",['d7c9963d1beb14552dbefe1c03a90eab5ba3098b'],8,24,32,2,0.8,0.8,0.2
+d7d3cb841c5bb24bcc029e726c6659f42221e58d,add tqdm to dependencies,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-09 13:49:34+02:00,-7200,2020-09-09 13:49:34+02:00,-7200,True,False,['setup.py'],['d6bde12157be6095c535854a4067a3cb756daccc'],1,2,3,1,,,
+e89e35c884359e1f0ecd3b647bc6c42deda64fcb,Add option to specify search condition and which params to show in find_pulsars,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-09-10 11:12:06+02:00,-7200,2020-09-10 11:12:06+02:00,-7200,True,False,['find_pulsars.py'],['d7d3cb841c5bb24bcc029e726c6659f42221e58d'],17,27,44,1,0.0,0.0,1.0
+f7cbfd7c005d63e3adc28db7f8cd3f1cc91c0536,Add pypi badge,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-09-10 12:17:12+02:00,-7200,2020-09-10 12:17:12+02:00,-7200,True,False,['README.md'],['e89e35c884359e1f0ecd3b647bc6c42deda64fcb'],0,1,1,1,,,
+f51204636601485572cedc8c8a2cf1f2b036f9ea,remove travis file,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-23 12:40:31+01:00,-3600,2020-11-23 12:40:31+01:00,-3600,True,False,['.travis.yml'],['f7cbfd7c005d63e3adc28db7f8cd3f1cc91c0536'],35,0,35,1,,,
+8d46c4c944122c0f0b8762d1d0c520ffb4c9fc74,Add github action for tests/docs,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-23 12:43:16+01:00,-3600,2020-11-23 12:43:16+01:00,-3600,True,False,['ci.yaml'],['f51204636601485572cedc8c8a2cf1f2b036f9ea'],0,58,58,1,,,
+5ad73970b5b528113349d342f2195b08ba452516,Add PYPI deploy to Github action,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-11-23 12:53:15+01:00,-3600,2020-11-23 12:53:15+01:00,-3600,True,False,['ci.yaml'],['8d46c4c944122c0f0b8762d1d0c520ffb4c9fc74'],0,21,21,1,,,
+2e1e66045decfe3a30c771e74138c5ed32faf47e,Add dependabot for actions,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-23 12:53:46+01:00,-3600,2020-11-23 12:53:46+01:00,-3600,True,False,['dependabot.yml'],['5ad73970b5b528113349d342f2195b08ba452516'],0,11,11,1,,,
+6ac4bb833d6975f7f4d208f037412bc0494ead4d,Replace travis badge by Github actions,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-23 12:54:53+01:00,-3600,2020-11-23 12:54:53+01:00,-3600,True,False,['README.md'],['2e1e66045decfe3a30c771e74138c5ed32faf47e'],1,1,2,1,,,
+874d8073bef7ca47139b93a4bd957bc61a2e9dd1,Move to RTD theme for docs,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-23 13:05:34+01:00,-3600,2020-11-23 13:05:34+01:00,-3600,True,False,"['custom.css', 'conf.py']",['2329f2736b7fa5864e50725821ee8e1a22b2a6f1'],3,7,10,2,,,
+289764a4f262cc6232ed32f9936f9cf890013895,Clean up docs of download progress bar,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-23 13:13:43+01:00,-3600,2020-11-23 13:13:43+01:00,-3600,True,False,['download_helpers.py'],['874d8073bef7ca47139b93a4bd957bc61a2e9dd1'],0,7,7,1,1.0,1.0,0.0
+fbea1abd7b66f196ff989b254d32d4da4fcc5140,Refer to gh-pages in README; update docs to note that only API reference is hosted on that page,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-23 13:22:40+01:00,-3600,2020-11-23 13:22:40+01:00,-3600,True,False,"['README.md', 'modules.rst', 'index.rst']",['289764a4f262cc6232ed32f9936f9cf890013895'],2,8,10,3,,,
+f646b03e55c4923c2bfd2ae12c23f5bf452816ae,Implement PSRDADA to IQUV fits converter,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-23 15:33:48+01:00,-3600,2020-11-23 15:33:48+01:00,-3600,True,False,"['README.md', '__version__.py', 'constants.py', 'fix_file_from_before_20200408.py', '__init__.py', 'psrdada_to_fits.py', 'sc3_IQUV.txt', 'sc4_IQUV.txt', 'sbtable-sc4-12tabs-71sbs.txt', 'square_39p1.cb_offsets', 'arts_read_parameterset', 'setup.py']",['e9f66b089b42fed985ebcdb249d4a049ce671cb5'],5,598,603,12,0.0,0.15555555555555556,0.8444444444444444
+a6b38e3c02b48d40e6223003b7083005c56e9950,Update docs to include IQUV converter,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-23 15:36:05+01:00,-3600,2020-11-23 15:36:05+01:00,-3600,True,False,"['modules.rst', 'index.rst']",['f646b03e55c4923c2bfd2ae12c23f5bf452816ae'],1,9,10,2,,,
+ed9c5d8f0909b2be148dc2dac671184045a715bf,Run CI on new releases,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-11-23 15:44:22+01:00,-3600,2020-11-23 15:44:22+01:00,-3600,True,False,['ci.yaml'],['d9dda85e507a8de3808eb4ac03788b1c811c2ddf'],0,3,3,1,,,
+10b6d14022b434ef567e76328fe3112943ee4b0c,Fix CI: run properly on tags,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-11-23 15:47:35+01:00,-3600,2020-11-23 15:47:35+01:00,-3600,True,False,['ci.yaml'],['ed9c5d8f0909b2be148dc2dac671184045a715bf'],6,4,10,1,,,
+b99ed55b088f8e57d2bb737a2a4c334069ddbe95,Fix or syntax in GHA,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-11-23 15:53:00+01:00,-3600,2020-11-23 15:53:00+01:00,-3600,True,False,['ci.yaml'],['10b6d14022b434ef567e76328fe3112943ee4b0c'],1,1,2,1,,,
+d8dad9e4dde7573fc1e99c9196a3a95738cc9160,CI: build package for pypi,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-11-23 15:57:48+01:00,-3600,2020-11-23 15:57:48+01:00,-3600,True,False,['ci.yaml'],['b99ed55b088f8e57d2bb737a2a4c334069ddbe95'],2,2,4,1,,,
+9e7a9b43aceebdb2be8d9f1e2bb4c2e227726961,CI: install wheel for pypi release,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-11-23 16:03:19+01:00,-3600,2020-11-23 16:03:19+01:00,-3600,True,False,['ci.yaml'],['d8dad9e4dde7573fc1e99c9196a3a95738cc9160'],1,3,4,1,,,
+faf74297f8cace86c6c4c0afcbcff4d5fcb77cbb,Update README.md,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-11-23 16:06:25+01:00,-3600,2020-11-23 16:06:25+01:00,-3600,True,False,['README.md'],['9e7a9b43aceebdb2be8d9f1e2bb4c2e227726961'],1,1,2,1,,,
+b228d9e6254f2db5891344a4d00a8e353feebb8a,Update README; fix addition of static files,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-24 17:22:48+01:00,-3600,2020-11-24 17:22:48+01:00,-3600,True,False,"['MANIFEST.in', 'README.md']",['faf74297f8cace86c6c4c0afcbcff4d5fcb77cbb'],2,4,6,2,,,
+c538d0864d94a7ab1c675a74791baef81963586c,bump version,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-24 17:24:29+01:00,-3600,2020-11-24 17:24:29+01:00,-3600,True,False,['__version__.py'],['b228d9e6254f2db5891344a4d00a8e353feebb8a'],1,1,2,1,,,
+12929dfd8e66f8621c27de641938ee948b166192,Fix more missing files,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-24 17:35:41+01:00,-3600,2020-11-24 17:35:41+01:00,-3600,True,False,"['MANIFEST.in', '__version__.py']",['c538d0864d94a7ab1c675a74791baef81963586c'],1,3,4,2,,,
+fc171a2f24140f162603557c9f02e5d0ed550a32,Update MANIFEST.in,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2020-11-24 22:02:03+01:00,-3600,2020-11-24 22:02:03+01:00,-3600,True,False,['MANIFEST.in'],['12929dfd8e66f8621c27de641938ee948b166192'],3,1,4,1,,,
+a99250d827343074048214b700d6978a14407471,Support fits fixing with empty data block,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-26 14:15:29+01:00,-3600,2020-11-26 14:15:29+01:00,-3600,True,False,"['__version__.py', 'fix_file_from_before_20200408.py']",['fc171a2f24140f162603557c9f02e5d0ed550a32'],6,14,20,2,0.0,0.0,1.0
+a6eb1e88bd3c5ab798b2f86aadca9dca8501fa27,Make clear that printed NAXIS2 is value from data,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-11-26 14:18:52+01:00,-3600,2020-11-26 14:18:52+01:00,-3600,True,False,['fix_file_from_before_20200408.py'],['a99250d827343074048214b700d6978a14407471'],1,1,2,1,,,
+3958818c0eb263034bc29dd06184ae74c0e7f175,Justify text of docs,Leon Oostrum,leonoostrum@gmail.com,Leon Oostrum,leonoostrum@gmail.com,2020-12-01 10:41:43+01:00,-3600,2020-12-01 10:41:43+01:00,-3600,True,False,['conf.py'],['6f8e2c2882dc457c865e9655d957d8d63910c558'],0,3,3,1,,,
+91e9b180d81eccdd01c2c60e4a9b9d89d0055cd5,Update README.md,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2021-01-29 14:09:25+01:00,-3600,2021-01-29 14:09:25+01:00,-3600,True,False,['README.md'],['3958818c0eb263034bc29dd06184ae74c0e7f175'],0,2,2,1,,,
+a9f5d1324b3271b2c3c913d357d2c3bd754fcb18,Update email,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2021-02-02 16:18:18+01:00,-3600,2021-02-02 16:18:18+01:00,-3600,True,False,['setup.py'],['91e9b180d81eccdd01c2c60e4a9b9d89d0055cd5'],1,1,2,1,,,
+cf4fa3ed1e6553553fc1b15a267dfcd6904d2c37,"Bump pypa/gh-action-pypi-publish from v1.4.1 to v1.4.2
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from v1.4.1 to v1.4.2.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.4.1...27b31702a0e7fc50959f5ad993c78deac1bdfc29)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-09 06:30:48+00:00,0,2021-02-09 06:30:48+00:00,0,True,False,['ci.yaml'],['a9f5d1324b3271b2c3c913d357d2c3bd754fcb18'],1,1,2,1,,,
+f3174fa1be1b8c3b9fdc849f21c38213277d8ac7,"Bump peaceiris/actions-gh-pages from v3 to v3.8.0
+
+Bumps [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) from v3 to v3.8.0.
+- [Release notes](https://github.com/peaceiris/actions-gh-pages/releases)
+- [Changelog](https://github.com/peaceiris/actions-gh-pages/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/peaceiris/actions-gh-pages/compare/v3...068dc23d9710f1ba62e86896f84735d869951305)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-03-26 06:21:15+00:00,0,2021-03-26 06:21:15+00:00,0,True,False,['ci.yaml'],['774480caaaf922814efa829b40b4f03d1e1209a3'],1,1,2,1,,,
+e8e9d5a58d111db594e7782d307eebc7ff188d63,"Bump actions/setup-python from 2 to 2.2.2
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2 to 2.2.2.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2...v2.2.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-05-12 05:28:10+00:00,0,2021-05-12 05:28:10+00:00,0,True,False,['ci.yaml'],['da01235e92c75240285043e03d7e7bba954eeabf'],3,3,6,1,,,
+7df7912ba92c29799da52af04fe023577bd8d92d,"Bump actions/checkout from 2 to 2.3.4
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2 to 2.3.4.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2...v2.3.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-05-12 05:28:14+00:00,0,2021-05-12 05:28:14+00:00,0,True,False,['ci.yaml'],['da01235e92c75240285043e03d7e7bba954eeabf'],3,3,6,1,,,
+62242d28cae92cee78204951e0ac084fd3e363d8,Add option to plot pulsar locations in CB pattern,Leon Oostrum,l.oostrum@esciencecenter.nl,Leon Oostrum,l.oostrum@esciencecenter.nl,2021-10-15 11:32:49+02:00,-7200,2021-10-15 11:32:49+02:00,-7200,True,False,['find_pulsars.py'],['ec571c9bd0bcc7b9961df07b9a67dd8bb2277a1a'],2,32,34,1,0.625,0.625,0.375
+84cec353972d390966951a0c1037d2dea58b42b2,Bump version,Leon Oostrum,l.oostrum@esciencecenter.nl,Leon Oostrum,l.oostrum@esciencecenter.nl,2021-10-15 11:39:20+02:00,-7200,2021-10-15 11:39:20+02:00,-7200,True,False,['__version__.py'],['4058f56e65736b55b6eebe902624f755c03befbb'],1,1,2,1,,,
+3a7869876cad69bcfad376d59db57cdb13d9dca6,Update year in docs,Leon Oostrum,l.oostrum@esciencecenter.nl,Leon Oostrum,l.oostrum@esciencecenter.nl,2021-10-15 11:43:21+02:00,-7200,2021-10-15 11:43:21+02:00,-7200,True,False,['conf.py'],['84cec353972d390966951a0c1037d2dea58b42b2'],1,1,2,1,,,
+5e961ca9b2840f50c587842e7910e9375e4bef22,Add labels to plot,Leon Oostrum,l.oostrum@esciencecenter.nl,Leon Oostrum,l.oostrum@esciencecenter.nl,2021-10-15 11:44:47+02:00,-7200,2021-10-15 11:44:47+02:00,-7200,True,False,['find_pulsars.py'],['3a7869876cad69bcfad376d59db57cdb13d9dca6'],0,2,2,1,1.0,1.0,0.0
+fd411f5908d4e30eff0165003b53cf1418198202,"Bump actions/checkout from 2.3.4 to 2.3.5
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2.3.4 to 2.3.5.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.3.4...v2.3.5)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-10-18 14:03:56+00:00,0,2021-10-18 14:03:56+00:00,0,True,False,['ci.yaml'],['5e961ca9b2840f50c587842e7910e9375e4bef22'],3,3,6,1,,,
+d1c863a54b976dc147c005eef35f001d7cfb497d,Fix wrong unit in output,Leon Oostrum,l.oostrum@esciencecenter.nl,Leon Oostrum,l.oostrum@esciencecenter.nl,2021-10-22 10:57:55+02:00,-7200,2021-10-22 10:57:55+02:00,-7200,True,False,['find_pulsars.py'],['5e961ca9b2840f50c587842e7910e9375e4bef22'],1,1,2,1,,,
+ab77a3aee5f43076f23a511ce121eb426c5f793f,Update __version__.py,Leon Oostrum,leonoostrum@gmail.com,GitHub,noreply@github.com,2021-10-22 11:01:58+02:00,-7200,2021-10-22 11:01:58+02:00,-7200,True,False,['__version__.py'],['78109f5a4af11f539f8ca4d718a8ec9e90d0079e'],1,1,2,1,,,
+6657d1d888e8446cf5d5c19e8452f17d87b604e5,"Bump actions/checkout from 2.3.5 to 2.4.0
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2.3.5 to 2.4.0.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.3.5...v2.4.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-11-03 14:04:18+00:00,0,2021-11-03 14:04:18+00:00,0,True,False,['ci.yaml'],['ab77a3aee5f43076f23a511ce121eb426c5f793f'],3,3,6,1,,,
+3f9fc2973410cb507b2def0f17bde2f872d3812a,"Bump actions/setup-python from 2.2.2 to 2.3.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2.2.2 to 2.3.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.2.2...v2.3.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-11-17 14:05:54+00:00,0,2021-11-17 14:05:54+00:00,0,True,False,['ci.yaml'],['c3f818ef57e2a94baf91746081c4cf75496faf8d'],3,3,6,1,,,
+6d39253e240e01d8cabe438b87591d1431b417c6,"Bump actions/setup-python from 2.3.0 to 2.3.1
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2.3.0 to 2.3.1.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.3.0...v2.3.1)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-11-29 14:05:44+00:00,0,2021-11-29 14:05:44+00:00,0,True,False,['ci.yaml'],['8d3b998d6c944e425cbed6efa7e31055232c58a5'],3,3,6,1,,,
+4a7edb8bdeba921b3600a96a93b6407e5cd6b811,"Bump pypa/gh-action-pypi-publish from 1.4.2 to 1.5.0
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from 1.4.2 to 1.5.0.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.4.2...v1.5.0)
+
+---
+updated-dependencies:
+- dependency-name: pypa/gh-action-pypi-publish
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-10 14:05:09+00:00,0,2022-01-10 14:05:09+00:00,0,True,False,['ci.yaml'],['f59b0f12c69e55b94c74b8bfc10dcde3797414e8'],1,1,2,1,,,
+62677d5047cf603c495693c4f6b04fc9728a261c,"Bump actions/setup-python from 2.3.1 to 2.3.2
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2.3.1 to 2.3.2.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.3.1...v2.3.2)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-02-04 14:06:21+00:00,0,2022-02-04 14:06:21+00:00,0,True,False,['ci.yaml'],['f59b0f12c69e55b94c74b8bfc10dcde3797414e8'],3,3,6,1,,,
+b6d7e32fed0b273362706d23237ebeea74a369d8,"Bump actions/checkout from 2.4.0 to 3
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2.4.0 to 3.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.4.0...v3)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-03-02 14:07:11+00:00,0,2022-03-02 14:07:11+00:00,0,True,False,['ci.yaml'],['f091145c59196a557f9c25ad6b70304d53819340'],3,3,6,1,,,
+31b4fc9649c70db5a3f9b876e5e188f392c8604b,"Bump actions/setup-python from 2.3.2 to 3.1.1
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2.3.2 to 3.1.1.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.3.2...v3.1.1)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-04-07 14:12:55+00:00,0,2022-04-07 14:12:55+00:00,0,True,False,['ci.yaml'],['0b4330a78686f6e5bb9da790bc28bf5d9b229315'],3,3,6,1,,,
+c2f24e4d4278d4e879907e5e8b399139897b00d9,make setup-python version constraint less specific,Leon Oostrum,l.oostrum@esciencecenter.nl,Leon Oostrum,l.oostrum@esciencecenter.nl,2022-04-07 16:45:21+02:00,-7200,2022-04-07 16:45:21+02:00,-7200,True,False,['ci.yaml'],['31b4fc9649c70db5a3f9b876e5e188f392c8604b'],3,3,6,1,,,
+c17747ddda8c10db4317662700d19baaca3f1751,"Bump actions/setup-python from 3 to 4
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 3 to 4.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-06-09 14:09:46+00:00,0,2022-06-09 14:09:46+00:00,0,True,False,['ci.yaml'],['ff62a1123bfbe669669bd8a72ca0710287896e53'],3,3,6,1,,,
+14160012e6910d3905393e94dacccd012ad3a819,"Bump peaceiris/actions-gh-pages from 3.8.0 to 3.9.0
+
+Bumps [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) from 3.8.0 to 3.9.0.
+- [Release notes](https://github.com/peaceiris/actions-gh-pages/releases)
+- [Changelog](https://github.com/peaceiris/actions-gh-pages/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/peaceiris/actions-gh-pages/compare/v3.8.0...v3.9.0)
+
+---
+updated-dependencies:
+- dependency-name: peaceiris/actions-gh-pages
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-24 14:08:03+00:00,0,2022-10-24 14:08:03+00:00,0,True,False,['ci.yaml'],['78cd1654afd03a41ee39ed30ce9ca5f2d7e94cda'],1,1,2,1,,,
+b1ec58641cc48eba053491af92f8576e9be31de2,"Bump pypa/gh-action-pypi-publish from 1.5.0 to 1.6.4
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from 1.5.0 to 1.6.4.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.5.0...v1.6.4)
+
+---
+updated-dependencies:
+- dependency-name: pypa/gh-action-pypi-publish
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-07 14:01:19+00:00,0,2022-12-07 14:01:19+00:00,0,True,False,['ci.yaml'],['30e8bfe87afcb31c2bd88c7f515e639fcd672fe1'],1,1,2,1,,,
+b8077503c6ea85223e93f229aba5712ef66bdd15,Update Python versions in CI,Leon Oostrum,l.oostrum@esciencecenter.nl,GitHub,noreply@github.com,2022-12-08 13:05:09+01:00,-3600,2022-12-08 13:05:09+01:00,-3600,True,False,['ci.yaml'],['6b497dae4dc2e5304b2f968fc87db79bdf32903b'],5,5,10,1,,,
+25e54eaed10a5b8285fcbcc733ad542adf19fc12,"Bump peaceiris/actions-gh-pages from 3.9.0 to 3.9.2
+
+Bumps [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) from 3.9.0 to 3.9.2.
+- [Release notes](https://github.com/peaceiris/actions-gh-pages/releases)
+- [Changelog](https://github.com/peaceiris/actions-gh-pages/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/peaceiris/actions-gh-pages/compare/v3.9.0...v3.9.2)
+
+---
+updated-dependencies:
+- dependency-name: peaceiris/actions-gh-pages
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-01-17 14:01:00+00:00,0,2023-01-17 14:01:00+00:00,0,True,False,['ci.yaml'],['b8077503c6ea85223e93f229aba5712ef66bdd15'],1,1,2,1,,,
+57b47da87d49c1814c2974db7523eb3d5e52eb11,"Bump peaceiris/actions-gh-pages from 3.9.2 to 3.9.3
+
+Bumps [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) from 3.9.2 to 3.9.3.
+- [Release notes](https://github.com/peaceiris/actions-gh-pages/releases)
+- [Changelog](https://github.com/peaceiris/actions-gh-pages/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/peaceiris/actions-gh-pages/compare/v3.9.2...v3.9.3)
+
+---
+updated-dependencies:
+- dependency-name: peaceiris/actions-gh-pages
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-03-31 14:57:01+00:00,0,2023-03-31 14:57:01+00:00,0,True,False,['ci.yaml'],['83910f5eedd7f57a5087d5059cfcf8ecca7d48cf'],1,1,2,1,,,
+780bd0df23712d6351f2977f2297750adee102af,"Bump pypa/gh-action-pypi-publish from 1.6.4 to 1.8.6
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from 1.6.4 to 1.8.6.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.6.4...v1.8.6)
+
+---
+updated-dependencies:
+- dependency-name: pypa/gh-action-pypi-publish
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-03 14:56:49+00:00,0,2023-05-03 14:56:49+00:00,0,True,False,['ci.yaml'],['83910f5eedd7f57a5087d5059cfcf8ecca7d48cf'],1,1,2,1,,,

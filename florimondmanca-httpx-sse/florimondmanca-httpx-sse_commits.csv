@@ -1,0 +1,45 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+4420175c1e6580fba8cef32ba3b09105785ec0da,Initial commit,florimondmanca,florimond.manca@protonmail.com,florimondmanca,florimond.manca@protonmail.com,2022-11-06 13:45:45+01:00,-3600,2022-11-06 13:47:58+01:00,-3600,True,False,"['.gitignore', 'CHANGELOG.md', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.md', 'azure-pipelines.yml', 'pyproject.toml', 'requirements.txt', 'setup.cfg', 'setup.py', '__init__.py', '_decoders.py', '_exceptions.py', '_models.py', '_transports.py', 'py.typed', '__init__.py', 'test_async_decoders.py', 'test_async_transports.py', 'test_decoders.py', 'test_exceptions.py', 'test_transports.py']",[],0,900,900,23,0.7093023255813954,0.877906976744186,0.9796511627906976
+8bba5cfee8b10eb758a41fb44e21addbe4c84541,Require 100% test coverage,florimondmanca,florimond.manca@protonmail.com,florimondmanca,florimond.manca@protonmail.com,2022-11-06 13:55:12+01:00,-3600,2022-11-06 13:55:12+01:00,-3600,True,False,['setup.cfg'],['4420175c1e6580fba8cef32ba3b09105785ec0da'],1,1,2,1,,,
+6441f23dee3f3b76a21b8c8e9b137d5ae9057acb,Drop unused dev dependencies,florimondmanca,florimond.manca@protonmail.com,florimondmanca,florimond.manca@protonmail.com,2022-11-06 13:57:36+01:00,-3600,2022-11-06 13:57:36+01:00,-3600,True,False,['requirements.txt'],['8bba5cfee8b10eb758a41fb44e21addbe4c84541'],2,0,2,1,,,
+7b09ea8ec00557b32617f79c3aca958b3812c774,Use latest dev dependencies,florimondmanca,florimond.manca@protonmail.com,florimondmanca,florimond.manca@protonmail.com,2022-11-06 13:58:37+01:00,-3600,2022-11-06 14:04:53+01:00,-3600,True,False,['requirements.txt'],['6441f23dee3f3b76a21b8c8e9b137d5ae9057acb'],5,5,10,1,,,
+5aafaa72b41b518c80839e020131332b8746c6fe,Tweaks,florimondmanca,florimond.manca@protonmail.com,florimondmanca,florimond.manca@protonmail.com,2022-11-06 14:02:32+01:00,-3600,2022-11-06 14:04:55+01:00,-3600,True,False,"['_decoders.py', '_models.py', 'test_models.py']",['7b09ea8ec00557b32617f79c3aca958b3812c774'],5,24,29,3,1.0,1.0,0.5
+9291a4fd4e51ace8ca135dad2bdc0a54f97778a4,Add ServerSentEvent.json(),florimondmanca,florimond.manca@protonmail.com,florimondmanca,florimond.manca@protonmail.com,2022-11-06 14:09:34+01:00,-3600,2022-11-06 14:09:34+01:00,-3600,True,False,"['README.md', '_models.py', 'test_models.py']",['5aafaa72b41b518c80839e020131332b8746c6fe'],3,28,31,3,1.0,1.0,1.0
+464caa36974f755d21f41509b14ba62e792ecc74,"Change API, add ASGI test",florimondmanca,florimond.manca@protonmail.com,florimondmanca,florimond.manca@protonmail.com,2022-11-06 15:44:28+01:00,-3600,2022-11-06 15:44:28+01:00,-3600,True,False,"['README.md', 'requirements.txt', '__init__.py', '_api.py', '_decoders.py', '_transports.py', 'test_api.py', 'test_asgi.py', 'test_async_decoders.py', 'test_async_transports.py', 'test_event_source.py', 'test_transports.py']",['9291a4fd4e51ace8ca135dad2bdc0a54f97778a4'],220,298,518,12,1.0,1.0,0.15789473684210525
+b75dd3b726c19c60add6be08b00d0d6fbf763470,Tweaks,florimondmanca,florimond.manca@protonmail.com,florimondmanca,florimond.manca@protonmail.com,2023-02-05 00:52:00+01:00,-3600,2023-02-05 00:57:10+01:00,-3600,True,False,"['azure-pipelines.yml', '_api.py', '_decoders.py', 'test_api.py']",['464caa36974f755d21f41509b14ba62e792ecc74'],4,4,8,4,1.0,1.0,1.0
+61826350c0d236673b2f95b0165cb533121fc018,Release 0.1.0 (#2),Florimond Manca,florimond.manca@protonmail.com,GitHub,noreply@github.com,2023-02-05 01:01:26+01:00,-3600,2023-02-05 01:01:26+01:00,-3600,True,False,"['CHANGELOG.md', 'README.md']",['b75dd3b726c19c60add6be08b00d0d6fbf763470'],3,6,9,2,,,
+9f48a7e3b2863ba5a6ae4f7593ecba8209e3a547,"Add support for any HTTP method (#7)
+
+* fix florimondmanca/httpx-sse/#3
+
+* auto format code
+
+* change docs to use method parameter",Zeit der Forschung,54367033+zeitderforschung@users.noreply.github.com,GitHub,noreply@github.com,2023-03-27 13:54:13+02:00,-7200,2023-03-27 13:54:13+02:00,-7200,True,False,"['README.md', '_api.py', 'test_api.py', 'test_asgi.py']",['61826350c0d236673b2f95b0165cb533121fc018'],12,21,33,4,1.0,1.0,0.5714285714285714
+f57b25918fec00e222e727cbb2144bfdc8fee207,Release 0.2.0 (#9),Florimond Manca,florimond.manca@protonmail.com,GitHub,noreply@github.com,2023-03-27 14:05:07+02:00,-7200,2023-03-27 14:05:07+02:00,-7200,True,False,"['CHANGELOG.md', 'README.md', '__init__.py']",['9f48a7e3b2863ba5a6ae4f7593ecba8209e3a547'],2,8,10,3,,,
+6d606e3a5327ceee56b046b53b9fd313ce67b1a3,Minor typo fix. (#10),Zhao Xiaohong,mrluanma@gmail.com,GitHub,noreply@github.com,2023-03-27 23:42:55+08:00,-28800,2023-03-27 17:42:55+02:00,-7200,True,False,['README.md'],['f57b25918fec00e222e727cbb2144bfdc8fee207'],2,2,4,1,,,
+aa176ef78e5f16ae06530c0a79429efc9f1e2047,"Moved the logic that checks if content_type is text/event-stream (#12)
+
+* Moved the logic that checks if content_type is text/event-stream
+
+* Removed whitespace
+
+* Fixed test_connect_sse_non_event_stream_received test",Daniel Anechitoaie,10779010+danechitoaie@users.noreply.github.com,GitHub,noreply@github.com,2023-04-27 23:14:05+03:00,-10800,2023-04-27 22:14:05+02:00,-7200,True,False,"['_api.py', 'test_api.py']",['6d606e3a5327ceee56b046b53b9fd313ce67b1a3'],5,8,13,2,1.0,1.0,1.0
+8642b9fa9e8d17e4f21c0dfd9e9b04d801d88c6a,Version 0.3.0 (#13),Florimond Manca,florimond.manca@protonmail.com,GitHub,noreply@github.com,2023-04-27 22:21:22+02:00,-7200,2023-04-27 22:21:22+02:00,-7200,True,False,"['CHANGELOG.md', 'README.md', 'pyproject.toml', '__init__.py']",['aa176ef78e5f16ae06530c0a79429efc9f1e2047'],4,10,14,4,,,
+caa27d21892a5d0b8f2e0ce939566355537551c2,"Add __repr__ to ServerSentEvent model (#16)
+
+Fixes #15",Jelle Zijlstra,jelle.zijlstra@gmail.com,GitHub,noreply@github.com,2023-06-01 12:57:18-07:00,25200,2023-06-01 21:57:18+02:00,-7200,True,False,"['_models.py', 'test_models.py']",['8642b9fa9e8d17e4f21c0dfd9e9b04d801d88c6a'],0,18,18,2,1.0,1.0,1.0
+1a8c7aba196a54227d31a62286bddbe5b055e2bb,"Switch to ruff, and update dev deps (#17)",Florimond Manca,florimond.manca@protonmail.com,GitHub,noreply@github.com,2023-06-01 22:21:11+02:00,-7200,2023-06-01 22:21:11+02:00,-7200,True,False,"['Makefile', 'pyproject.toml', 'requirements.txt', 'setup.cfg', '_models.py']",['caa27d21892a5d0b8f2e0ce939566355537551c2'],20,18,38,5,0.0,1.0,0.0
+60a8f3298061c655d014496a53ce58a35ebeab08,Version 0.3.1 (#18),Florimond Manca,florimond.manca@protonmail.com,GitHub,noreply@github.com,2023-06-01 22:22:46+02:00,-7200,2023-06-01 22:22:46+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['1a8c7aba196a54227d31a62286bddbe5b055e2bb'],1,7,8,2,,,
+0b5e9fdb91aa15e782c6643e77e67bb39cdec289,"Nice-ified missing `content-type` (#20)
+
+* Nice-ifying missing content-type
+
+* Moved to headers.get instead of try-Except
+
+* Prevent code from requiring formatting",James Braza,jamesbraza@gmail.com,GitHub,noreply@github.com,2023-12-08 04:19:29-05:00,18000,2023-12-08 10:19:29+01:00,-3600,True,False,['_api.py'],['60a8f3298061c655d014496a53ce58a35ebeab08'],2,2,4,1,,,
+dcb6c7bf6bf89321df965c88b45f69f1333759f6,"Relax content-type check (#22)
+
+Co-authored-by: Daniel Buades Marcos <daniel@buad.es>",Florimond Manca,florimond.manca@protonmail.com,GitHub,noreply@github.com,2023-12-22 08:24:10+01:00,-3600,2023-12-22 08:24:10+01:00,-3600,True,False,"['_api.py', 'test_api.py']",['0b5e9fdb91aa15e782c6643e77e67bb39cdec289'],4,13,17,2,,,
+ebeeaea835db0b5ebd375cfda814c8dc79d5836c,"Test on Python 3.12, and drop 3.7 (#21)",Florimond Manca,florimond.manca@protonmail.com,GitHub,noreply@github.com,2023-12-22 08:43:12+01:00,-3600,2023-12-22 08:43:12+01:00,-3600,True,False,"['azure-pipelines.yml', 'pyproject.toml']",['dcb6c7bf6bf89321df965c88b45f69f1333759f6'],6,6,12,2,,,
+928048ffc9d06595f48778cf7277a74c8e2dc846,Update dev deps (#23),Florimond Manca,florimond.manca@protonmail.com,GitHub,noreply@github.com,2023-12-22 08:45:48+01:00,-3600,2023-12-22 08:45:48+01:00,-3600,True,False,['requirements.txt'],['ebeeaea835db0b5ebd375cfda814c8dc79d5836c'],8,8,16,1,,,
+1b8f7f0f6a1ecca36d1a2f839f306c592e93db34,Version 0.4.0 (#24),Florimond Manca,florimond.manca@protonmail.com,GitHub,noreply@github.com,2023-12-22 08:56:53+01:00,-3600,2023-12-22 08:56:53+01:00,-3600,True,False,"['CHANGELOG.md', 'README.md', '__init__.py']",['928048ffc9d06595f48778cf7277a74c8e2dc846'],2,17,19,3,,,

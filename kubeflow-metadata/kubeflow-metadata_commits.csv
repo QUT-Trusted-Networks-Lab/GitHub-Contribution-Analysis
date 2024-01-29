@@ -1,0 +1,1196 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+d4dc4ccb5d3ae3ddc22bda32b821060c5a7ef057,Initial commit,Jeremy Lewi,jeremy+github@lewi.us,GitHub,noreply@github.com,2019-03-26 18:37:05-07:00,25200,2019-03-26 18:37:05-07:00,25200,True,False,"['LICENSE', 'README.md']",[],0,203,203,2,,,
+91b190d0c742bc1077e903dc703e773dd9d3ce18,Create OWNERS file,Jeremy Lewi,jeremy+github@lewi.us,GitHub,noreply@github.com,2019-03-26 18:40:32-07:00,25200,2019-03-26 18:40:32-07:00,25200,True,False,['OWNERS'],['d4dc4ccb5d3ae3ddc22bda32b821060c5a7ef057'],0,3,3,1,,,
+88fd013c9f1cc99e14618b928fead0fc9d969802,Fix Yaml formatting,Abhishek Gupta,abhishek@google.com,Abhishek Gupta,abhishek@google.com,2019-03-28 09:53:09-07:00,25200,2019-03-28 09:53:09-07:00,25200,True,False,['OWNERS'],['91b190d0c742bc1077e903dc703e773dd9d3ce18'],2,2,4,1,,,
+a1f2cf4d2cd84d48eba05ece51ef48a55d8c1f73,"Roadmap for v0.6 (#2)
+
+* roadmap
+
+* complete
+
+* update links
+
+* add issue links
+
+* fix issue number",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-11 13:48:48-07:00,25200,2019-04-11 13:48:48-07:00,25200,True,False,['roadmap.md'],['9c5d976c28a5934b56643b7d93cf20a4e5e6a2f9'],0,11,11,1,,,
+33a9cf77156289dd37ea2ece1bab95fa6fd239bc,"Add basic gRPC-based server with HTTP endpoints (using grpc-gateway) (#3)
+
+* Add WORKSPACE and Bazel rules.
+
+* Add basic gRPC server with HTTP endpoints (using grpc-gateway).
+
+This sets up the basic scaffolding for the Metadata API server.
+
+* Add run instructions.",Ajay Gopinathan,ajay@gopinathan.net,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-16 14:45:08-07:00,25200,2019-04-16 14:45:08-07:00,25200,True,False,"['.gitignore', 'BUILD.bazel', 'README.md', 'WORKSPACE', 'BUILD.bazel', 'README.md', 'api.pb.go', 'api.pb.gw.go', 'api.proto', 'generate_proto.sh', 'go.mod', 'go.sum', 'BUILD.bazel', 'main.go', 'BUILD.bazel', 'service.go', 'service_test.go']",['a1f2cf4d2cd84d48eba05ece51ef48a55d8c1f73'],1,979,980,17,0.7142857142857143,1.0,0.7755102040816326
+47e5378c5b62bfbdb3d2a7e1db8abdb01c64d8d2,"Use JSON schema to define metadata. (#10)
+
+* init schema
+
+* readme
+
+* change readme
+
+* update readme
+
+* README
+
+* update execution
+
+* add Markdown doc for schema",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-19 07:53:55-07:00,25200,2019-04-19 07:53:55-07:00,25200,True,False,"['go.mod', 'go.sum', 'README.md', 'artifact.json', 'data_set.json', 'executable.json', 'metrics.json', 'model.json', 'workspace.json', 'artifact.md', 'data_set.md', 'executable.md', 'metrics.md', 'model.md', 'workspace.md', 'entity.md', 'execution.md', 'entity.json', 'execution.json', 'artifact.json', 'data_set.json', 'entity.json', 'executable.json', 'execution.json', 'generate_doc.sh', 'schema_test.go']",['33a9cf77156289dd37ea2ece1bab95fa6fd239bc'],137,2270,2407,26,0.10714285714285714,0.10714285714285714,1.0
+d2c6c5ff248a746f93c82297392e2c308246a69f,"Add Prow job for tests (#14)
+
+* add prow job
+
+* fix typo
+
+* run test in copied folder
+
+* rm uncessary files
+
+* rm swagger.json
+
+* rm lib
+
+* add bazel build&test
+
+* export bazel path",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-26 10:34:33-07:00,25200,2019-04-26 10:34:33-07:00,25200,True,False,"['prow_config.yaml', 'unittests.sh', 'app.yaml', 'params.libsonnet', 'workflows.jsonnet', 'workflows.libsonnet', 'base.libsonnet', 'main.jsonnet', 'params.libsonnet']",['47e5378c5b62bfbdb3d2a7e1db8abdb01c64d8d2'],0,393,393,9,,,
+675b1aa3116ff808b8a9c5a6f80019268d42a813,"Add Dockerfile for building service image (#16)
+
+* add Dockerfile
+
+* add comments
+
+* remove gen code step
+
+* rm bazel",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-29 16:31:35-07:00,25200,2019-04-29 16:31:35-07:00,25200,True,False,['Dockerfile'],['d2c6c5ff248a746f93c82297392e2c308246a69f'],0,14,14,1,,,
+9639a35487c55e230e3af1f60a522646154d880e,"Check return value of http.ListenAndServe (#21)
+
+Signed-off-by: terrytangyuan <terrytangyuan@gmail.com>",Yuan (Terry) Tang,terrytangyuan@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-02 23:04:17-04:00,14400,2019-05-02 20:04:17-07:00,25200,True,False,['main.go'],['675b1aa3116ff808b8a9c5a6f80019268d42a813'],1,4,5,1,0.0,1.0,1.0
+bd3d1e34052685cd914f75a59dd0b01608516e33,Add common gitignore patterns (#23),Yuan (Terry) Tang,terrytangyuan@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-08 14:32:34-04:00,14400,2019-05-08 11:32:34-07:00,25200,True,False,['.gitignore'],['9639a35487c55e230e3af1f60a522646154d880e'],2,68,70,1,,,
+359e3144e7e6050433df4e8794f27acf574367e2,"Add ML MetaData as dependency (#25)
+
+* code complete
+
+* add ml_metadata
+
+* update Makefile
+
+* checkout mlmd with a specific tag
+
+* update bazel target
+
+* lint + TODO",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-09 22:59:58-07:00,25200,2019-05-09 22:59:58-07:00,25200,True,False,"['Makefile', 'WORKSPACE', 'go.mod', 'go.sum', 'BUILD.bazel', 'Dockerfile', 'metadata_source.pb.go', 'metadata_store.pb.go', 'metadata_store_service.pb.go', 'BUILD.bazel', 'metadata_source.proto', 'metadata_store.proto', 'metadata_store_service.proto', 'BUILD.bazel', 'BUILD.bazel', 'main.go', 'BUILD.bazel', 'service.go']",['bd3d1e34052685cd914f75a59dd0b01608516e33'],11,8046,8057,18,0.855840927920464,0.9152167909417288,0.8950566141949737
+8b80e4ca5079df3c65128d9d2ece9d3d6e9feeb6,"Add initial API and data model definitions. (#24)
+
+* Add initial API and data model definitions.
+
+This PR introduces some of the core data model concepts that will be
+used by the metadata API server. All the definitions provided will be
+subject to change as we evolve the API definitions in this early stage
+of the project.
+
+* Update service protos
+
+* Update BUILD rule to ignore grpc gateway generated files.",Ajay Gopinathan,ajaygopinathan@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-11 15:16:10-07:00,25200,2019-05-11 15:16:10-07:00,25200,True,False,"['BUILD.bazel', 'BUILD.bazel', 'api.pb.go', 'api.proto', 'service.pb.go', 'service.pb.gw.go', 'service.proto']",['359e3144e7e6050433df4e8794f27acf574367e2'],24,1978,2002,7,0.8653266331658291,1.0,0.8864321608040201
+6e228df35a9f45a747169532d2d56329c93af84d,"Init type spec for model, metrics and workspace (#26)
+
+* add schema for model, metrics, workspace
+
+* code complete
+
+* regen docs md
+
+* add string type to constants",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-14 10:01:18-07:00,25200,2019-05-14 10:01:18-07:00,25200,True,False,"['go.sum', 'README.md', 'artifact.json', 'executable.json', 'metrics.json', 'model.json', 'workspace.json', 'artifact.md', 'executable.md', 'metrics.md', 'model.md', 'workspace.md', 'execution.md', 'execution.json', 'artifact.json', 'data_set.json', 'entity.json', 'executable.json', 'execution.json', 'schema_test.go']",['8b80e4ca5079df3c65128d9d2ece9d3d6e9feeb6'],173,1515,1688,20,1.0,1.0,0.0
+aea9e8bc63fa33f69b08e2af14af3ec5077889c8,"Add JSON schema parser to the server & convert schemas to MLMD types (#15)
+
+* add schema for model, metrics, workspace
+
+* code complete
+
+* regen docs md
+
+* add string type to constants
+
+* code complete
+
+* add mocks
+
+* add tests
+
+* update bazel target
+
+* update README
+
+* fix bazel data
+
+* remove testify
+
+* address comments",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-17 10:58:12-07:00,25200,2019-05-17 10:58:12-07:00,25200,True,False,"['Makefile', 'README.md', 'WORKSPACE', 'go.mod', 'go.sum', 'BUILD.bazel', 'metadata_store_service_client_mock.go', 'BUILD.bazel', 'BUILD.bazel', 'schemajson.go', 'schemajson_test.go', 'schemaset.go', 'schemaset_test.go', 'base.json', 'ext.json', 'main.go', 'BUILD.bazel', 'service.go', 'service_test.go']",['6e228df35a9f45a747169532d2d56329c93af84d'],185,1387,1572,19,0.6126126126126126,0.7567567567567568,0.6422136422136422
+78914e6525cc571d550e795fb05c2bc2f0fd6817,"Beginnings of ArtifactType API (#30)
+
+* Working go build for ml_metadata dependency
+
+* Broken tests.
+
+* Fix tests, update README.
+
+* Address CR comments.
+
+* Try install cmake",Ajay Gopinathan,ajay@gopinathan.net,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-21 14:06:08-07:00,25200,2019-05-21 14:06:08-07:00,25200,True,False,"['BUILD.bazel', 'README.md', 'WORKSPACE', 'api.pb.go', 'api.pb.gw.go', 'api.proto', 'service.pb.go', 'service.pb.gw.go', 'service.proto', 'go.mod', 'go.sum', 'BUILD.bazel', 'metadata_store_service_client_mock.go', 'BUILD.bazel', 'BUILD.bazel', 'main.go', 'BUILD.bazel', 'metadata_store.go', 'schema_service.go', 'schema_service_test.go', 'service.go', 'service_test.go', 'unittests.sh', 'go.mod', 'metadata_store_go_swig.cc', 'metadata_store_go_wrap.go', 'metadata_store.go', 'metadata_store.pb.go', 'metadata_store_service.pb.go']",['aea9e8bc63fa33f69b08e2af14af3ec5077889c8'],634,7521,8155,29,0.9331983805668016,0.9711538461538461,0.8018724696356275
+e7721901676bc1d5ed5571098fd331e3712f5e7e,"Add third_party/ml_metadata README file. (#32)
+
+* Add third_party/ml_metadata README file.
+
+* Fix missing link",Ajay Gopinathan,ajaygopinathan@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-22 12:02:05-07:00,25200,2019-05-22 12:02:05-07:00,25200,True,False,['README.md'],['78914e6525cc571d550e795fb05c2bc2f0fd6817'],0,15,15,1,,,
+22cba073589d1fe7b1db890b5520792439f50d04,"Make schema registration to call metadata service directly instead of MLMD (#31)
+
+* code complete
+
+* update main.go
+
+* update go.mod
+
+* rename constants",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-22 13:06:30-07:00,25200,2019-05-22 13:06:30-07:00,25200,True,False,"['Makefile', 'README.md', 'go.mod', 'go.sum', 'BUILD.bazel', 'register.go', 'register_test.go', 'schemaset.go', 'schemaset_test.go', 'BUILD.bazel', 'main.go', 'BUILD.bazel', 'schema_service.go', 'schema_service_test.go', 'go.mod', 'go.sum']",['e7721901676bc1d5ed5571098fd331e3712f5e7e'],221,266,487,16,1.0,1.0,0.8181818181818182
+cfaee4215dd4fcdd003180738f1ec56778a4b3de,Fix CGO flags for running  on Linux (#34),Ajay Gopinathan,ajaygopinathan@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-23 10:26:28-07:00,25200,2019-05-23 10:26:28-07:00,25200,True,False,['metadata_store_go_wrap.go'],['22cba073589d1fe7b1db890b5520792439f50d04'],12,13,25,1,,,
+e29e5bf879d09dba68e53c95b1698fe379c452dc,"Generate Python client to call REST endpoints using swagger. (#33)
+
+* generate swagger python client
+
+* remove generated code",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-24 14:23:30-07:00,25200,2019-05-24 14:23:30-07:00,25200,True,False,"['.gitignore', 'Makefile', 'BUILD.bazel', 'api.swagger.json', 'generate_proto.sh', 'service.swagger.json']",['cfaee4215dd4fcdd003180738f1ec56778a4b3de'],1,270,271,6,,,
+478d90035de6967dbbc0017d38eda22c07044f08,"Add initial metadata python API (#29)
+
+* init setup
+
+* add unit test
+
+* lint
+
+* reorganize the code
+
+* rename + more comments
+
+* add readme
+
+* add image
+
+* add readme",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-24 14:51:28-07:00,25200,2019-05-24 14:51:28-07:00,25200,True,False,"['.gitignore', 'README.md', '__init__.py', 'concepts.png', 'metadata.py', '__init__.py', 'run_tests.sh', 'test.py']",['e29e5bf879d09dba68e53c95b1698fe379c452dc'],0,324,324,8,0.14383561643835616,1.0,0.4178082191780822
+082e47d5f0ba6889da6725b413e0fb1cade9bfe8,code complete (#37),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-28 16:44:18-07:00,25200,2019-05-28 16:44:18-07:00,25200,True,False,"['Makefile', 'BUILD.bazel', 'Dockerfile', 'metadata_source.pb.go', 'metadata_store.pb.go', 'metadata_store_service.pb.go', 'BUILD.bazel', 'metadata_source.proto', 'metadata_store.proto', 'metadata_store_service.proto', 'unittests.sh']",['478d90035de6967dbbc0017d38eda22c07044f08'],7792,0,7792,11,0.14293628808864267,0.0850415512465374,0.10526315789473684
+3fd50df10e733c3769867c0cbce100c4cd85649d,add myself to the reviews of the python packages (#39),Ning,ngao@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-28 18:34:19-07:00,25200,2019-05-28 18:34:19-07:00,25200,True,False,['OWNERS'],['082e47d5f0ba6889da6725b413e0fb1cade9bfe8'],0,2,2,1,,,
+b014b613617c690141e27c4b36c12f016b1de75b,use bazel to build docker image (#36),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-29 10:32:29-07:00,25200,2019-05-29 10:32:29-07:00,25200,True,False,['Dockerfile'],['3fd50df10e733c3769867c0cbce100c4cd85649d'],1,12,13,1,,,
+bc4d865cb82899b6ac4271b456fab670e94d5863,update the swagger generation code (#38),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-29 16:38:19-07:00,25200,2019-05-29 16:38:19-07:00,25200,True,False,['Makefile'],['b014b613617c690141e27c4b36c12f016b1de75b'],4,7,11,1,,,
+3a6c30d96d5132590ef15781a7e54353add22863,release python sdk (#41),Ning,ngao@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-30 13:40:26-07:00,25200,2019-05-30 13:40:26-07:00,25200,True,False,"['.gitignore', 'Makefile', 'OWNERS', 'README.md', 'build.sh', 'concepts.png', '__init__.py', 'metadata.py', 'setup.py', '__init__.py', 'run_tests.sh', 'test.py']",['bc4d865cb82899b6ac4271b456fab670e94d5863'],2,89,91,12,,,
+ea9256e5a7b6bbff4af42044eb6b02dedc94fcd8,"Add Artifact handlers. (#35)
+
+* Add Artifact handlers.
+
+* Fix types after merge.
+
+* Use parent and proper naming scheme for Artifact and ArtifactTypes.
+
+* Fix tests. We should clone requests before comparing it with response",Ajay Gopinathan,ajaygopinathan@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-30 16:22:21-07:00,25200,2019-05-30 16:22:21-07:00,25200,True,False,"['BUILD.bazel', 'BUILD.bazel', 'api.pb.go', 'api.proto', 'service.pb.go', 'service.pb.gw.go', 'service.proto', 'service.swagger.json', 'register.go', 'BUILD.bazel', 'metadata_store.go', 'service.go', 'service_test.go']",['3a6c30d96d5132590ef15781a7e54353add22863'],544,1777,2321,13,0.2624633431085044,0.624633431085044,0.8181818181818182
+a791257e3bd68fd41a01d6fb3d795a39c5a987a9,add mysql password flag (#42),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-03 11:11:34-07:00,25200,2019-06-03 11:11:34-07:00,25200,True,False,"['Makefile', 'main.go']",['ea9256e5a7b6bbff4af42044eb6b02dedc94fcd8'],5,7,12,2,0.0,1.0,1.0
+be642856fa8922171f073e871045ca187579d473,"Add example requests to the backend API (#43)
+
+* add e2e examples
+
+* more comments
+
+* parameterize script
+
+* reorder ListArtifactTypes and GetArtifactTypes",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-03 15:45:30-07:00,25200,2019-06-03 15:45:30-07:00,25200,True,False,"['service.pb.go', 'service.pb.gw.go', 'service.proto', 'service.swagger.json', 'service.go', 'artifact_model_1.json', 'make_requests.sh']",['a791257e3bd68fd41a01d6fb3d795a39c5a987a9'],249,328,577,7,,,
+51574d22727e55f8ead097709c78a918449d100f,"Add handlers for Execution and ExecutionType. (#44)
+
+* Add Execution and ExecutionType handlers.
+
+* Add handlers for Execution and ExecutionType.
+
+* Fix service method ordering.",Ajay Gopinathan,ajay@gopinathan.net,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-04 15:13:53-07:00,25200,2019-06-04 15:13:53-07:00,25200,True,False,"['api.pb.go', 'api.proto', 'service.pb.go', 'service.pb.gw.go', 'service.proto', 'service.swagger.json', 'metadata_store.go', 'service.go', 'service_test.go']",['be642856fa8922171f073e871045ca187579d473'],183,2510,2693,9,0.4328968903436989,0.6963993453355155,0.8126022913256956
+f40860302570f6b9d15a0a8a0e2508df6e8daeb3,Added issue/pr template. (#46),Guang Ya Liu,gyliu513@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-08 06:23:57+08:00,-28800,2019-06-07 15:23:57-07:00,25200,True,False,"['bug_report.md', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md']",['51574d22727e55f8ead097709c78a918449d100f'],0,64,64,3,,,
+58ba0fdf6dacc83fc188317430854e408c045d57,"Add endpoint to list artifact by type (#47)
+
+* fix list artifacts by type
+
+* rewrite comments",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-07 16:21:56-07:00,25200,2019-06-07 16:21:56-07:00,25200,True,False,"['service.pb.go', 'service.pb.gw.go', 'service.proto', 'service.swagger.json', 'service.go', 'service_test.go', 'make_requests.sh']",['f40860302570f6b9d15a0a8a0e2508df6e8daeb3'],69,235,304,7,0.0,0.3063063063063063,0.9099099099099099
+086cdacd8b45851bb76beae7a19d9609db5d5b88,"Python SDK: implement `log` method to record artifacts (#45)
+
+* add sed command to generate valid swagger
+
+* code complete
+
+* format
+
+* Add interface for logging artifacts.
+
+* type_name should be class variable
+
+* return native python object
+
+* expose id, create_time & add tests for them",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-07 16:39:58-07:00,25200,2019-06-07 16:39:58-07:00,25200,True,False,"['Makefile', 'generate_proto.sh', 'service.swagger.json', 'metadata.py', 'run_tests.sh', 'test.py']",['58ba0fdf6dacc83fc188317430854e408c045d57'],88,168,256,6,0.1016949152542373,1.0,1.0
+1bf828dbcf14e8e8d64d01f8267aa2f2348f1760,"Update API to export MLMD types directly. (#49)
+
+* Update API to export MLMD types directly.
+
+* address cr comments.",Ajay Gopinathan,ajaygopinathan@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-11 13:40:17-07:00,25200,2019-06-11 13:40:17-07:00,25200,True,False,"['BUILD.bazel', 'service.pb.go', 'service.pb.gw.go', 'service.proto', 'service.swagger.json', 'BUILD.bazel', 'register.go', 'BUILD.bazel', 'service.go', 'service_test.go']",['086cdacd8b45851bb76beae7a19d9609db5d5b88'],1219,1186,2405,10,1.0,1.0,0.0
+71cdb0b4dfc29ba4e5a14979c4107f8656e88eaf,add bazel version info (#51),Ning,ngao@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-12 19:10:15-07:00,25200,2019-06-12 19:10:15-07:00,25200,True,False,['README.md'],['1bf828dbcf14e8e8d64d01f8267aa2f2348f1760'],0,4,4,1,,,
+9f90726d94da6bef9ca9eb8c951623ad00135d85,"Update python SDK to adapt new artifact protobuf (#50)
+
+* update python client for new artifact protobuf definition
+
+* ignore openapi_client
+
+* reserve __kf_workspace_ & __kf_run__; add tests
+
+* update make_requests.sh
+
+* fix typo",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-12 22:34:13-07:00,25200,2019-06-12 22:34:13-07:00,25200,True,False,"['.gitignore', 'Makefile', 'service.pb.go', 'service.pb.gw.go', 'service.proto', 'register.go', 'schemaset.go', 'metadata.py', 'test.py', 'artifact_model_1.json']",['71cdb0b4dfc29ba4e5a14979c4107f8656e88eaf'],201,263,464,10,0.0,1.0,1.0
+c1512e39a00094f6da5bb56f1e772c6ff63be186,"Add db options in the server (#52)
+
+* add fake sqlite option
+
+* add options in the message
+
+* add input db type in the message
+
+* add both sqlite and in-memory db support
+
+* set mysql as the default db
+
+* format the codes",Ning,ngao@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-13 12:00:17-07:00,25200,2019-06-13 12:00:17-07:00,25200,True,False,"['Makefile', 'main.go', 'make_requests.sh']",['9f90726d94da6bef9ca9eb8c951623ad00135d85'],10,35,45,3,0.0,1.0,1.0
+c56fd93facb731ff045f4fa88de5f97675eab227,"Add list artifacts by type into Python SDK (#53)
+
+* add list artifact by type method
+
+* filter by workspace name",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-18 23:12:30-07:00,25200,2019-06-18 23:12:30-07:00,25200,True,False,"['metadata.py', 'test.py']",['c1512e39a00094f6da5bb56f1e772c6ff63be186'],31,84,115,2,0.2926829268292683,0.07317073170731707,1.0
+a7e26576500335d52d56ae79c07c397579bdef06,"Demo notebook (#54)
+
+* add list artifact by type method
+
+* filter by workspace name
+
+* add demo notebook
+
+* add pointer to demo notebook
+
+* update notebook",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-19 10:58:34-07:00,25200,2019-06-19 10:58:34-07:00,25200,True,False,"['README.md', 'demo.ipynb']",['c56fd93facb731ff045f4fa88de5f97675eab227'],2,415,417,2,,,
+5143ff39c7d92e401117314adabc02520574f1a7,"Update swagger generation script to avoid duplicated HTTP path (#58)
+
+* udpate sed
+
+* fix overlapped getArtifact and getArtifactType
+
+* remove log",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-20 10:44:49-07:00,25200,2019-06-20 10:44:49-07:00,25200,True,False,"['generate_proto.sh', 'service.swagger.json', 'metadata.py', 'service.go']",['a7e26576500335d52d56ae79c07c397579bdef06'],20,65,85,4,,,
+30551f6e2b60f14965f1b19a729fc34817d356fc,"Kubeflow Metadata UI init (#59)
+
+* Sets up a simple hello world react server
+
+* Artifact list page loads. No functionality
+
+* Generate APIs from swagger definitions
+
+* Regenerate APIs and fetch data in list page
+
+* Add initial Model Details page
+
+* Add unit tests for new pages and components.
+
+* Copies component tests from KFP to Metadata
+
+* Correct generated client libraries and add more tests.
+
+* Removes paging controls from artifact list as they are not currently supported
+
+* Copies more tests from KFP
+
+* Remove build/ files
+
+* Add frontend OWNERS file
+
+* Change ports to 3000
+
+* Fixing frontend server routing",Riley Bauer,34456002+rileyjbauer@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-24 10:26:00-07:00,25200,2019-06-24 10:26:00-07:00,25200,True,False,"['.gitignore', 'Dockerfile', 'OWNERS', 'README.md', 'gen_licenses.js', 'package-lock.json', 'package.json', 'favicon.ico', 'index.html', 'manifest.json', 'package-lock.json', 'package.json', 'server.ts', 'CSSReset.tsx', 'Css.test.tsx', 'Css.tsx', 'TestUtils.ts', '.gitignore', '.swagger-codegen-ignore', 'VERSION', 'api.ts', 'configuration.ts', 'custom.d.ts', 'git_push.sh', 'index.ts', '.gitignore', '.swagger-codegen-ignore', 'VERSION', 'api.ts', 'configuration.ts', 'custom.d.ts', 'git_push.sh', 'index.ts', 'BusyButton.test.tsx', 'BusyButton.tsx', 'Separator.test.tsx', 'Separator.tsx', 'BusyButton.test.tsx.snap', 'Separator.test.tsx.snap', 'Banner.test.tsx', 'Banner.tsx', 'CustomTable.tsx', 'ModelInfo.test.tsx', 'ModelInfo.tsx', 'Router.test.tsx', 'Router.tsx', 'Toolbar.test.tsx', 'Toolbar.tsx', 'Banner.test.tsx.snap', 'ModelInfo.test.tsx.snap', 'Router.test.tsx.snap', 'Toolbar.test.tsx.snap', 'index.tsx', 'Api.test.ts', 'Api.ts', 'Utils.test.ts', 'Utils.ts', 'logo.svg', '404.test.tsx', '404.tsx', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'ModelDetails.test.tsx', 'ModelDetails.tsx', 'Page.tsx', '404.test.tsx.snap', 'ArtifactList.test.tsx.snap', 'ModelDetails.test.tsx.snap', 'react-app-env.d.ts', 'setupTests.ts', 'swagger-config.json', 'LICENSE', 'LICENSE', 'LICENSE', 'tsconfig.json', 'tslint.json']",['5143ff39c7d92e401117314adabc02520574f1a7'],0,23090,23090,76,0.9331046312178388,0.9845626072041166,0.9142367066895368
+f013c64679c11601f964c71001fe5f2f0276d3f8,list-artifacts-returns-empty-list (#64),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-25 14:23:16-07:00,25200,2019-06-25 14:23:15-07:00,25200,True,False,"['service.go', 'service_test.go']",['30551f6e2b60f14965f1b19a729fc34817d356fc'],17,44,61,2,0.0,1.0,1.0
+71890290c0ab16f1c5c7100e2ebf8d8c6e86539b,"Add end-to-end tests to presubmit job (#61)
+
+* add e2e workflow
+
+* fix typo",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-25 16:41:15-07:00,25200,2019-06-25 16:41:15-07:00,25200,True,False,"['Makefile', 'build-images.sh', 'create-cluster.sh', 'setup-services-run-tests.sh', 'tear-down-cluster.sh', 'unittests.sh', 'workflows.libsonnet']",['f013c64679c11601f964c71001fe5f2f0276d3f8'],3,289,292,7,,,
+b36952d6d14b9935ccfba3c63875fac80003b402,Uses correct env variable in frontend server and removes host from backend server (#68),Riley Bauer,34456002+rileyjbauer@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-26 18:09:20-07:00,25200,2019-06-26 18:09:20-07:00,25200,True,False,"['server.ts', 'main.go']",['71890290c0ab16f1c5c7100e2ebf8d8c6e86539b'],5,4,9,2,,,
+f21c0cf0a55728610226529c5ca2b237b57841cd,"Updates client library from new spec and creates Artifact and Model-specific Details Views (#62)
+
+* Updates client library from new spec.
+
+- Adds call to retrieve artifact types and merge with artifacts.
+- Updates Router configuration to conform to API format (artifact type
+  and ID).
+
+* Updates from review
+
+* Refactor to make ArtifactDetails generic and support all types
+
+* Update Dockerfile to prune after builds",Jason Prodonovich,prodonjs@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-27 15:19:26-04:00,14400,2019-06-27 12:19:26-07:00,25200,True,False,"['Dockerfile', 'package-lock.json', 'package.json', 'api.ts', 'ArtifactInfo.test.tsx', 'ArtifactInfo.tsx', 'ModelInfo.test.tsx', 'ModelInfo.tsx', 'Router.tsx', 'ArtifactInfo.test.tsx.snap', 'ModelInfo.test.tsx.snap', 'Router.test.tsx.snap', 'Api.ts', 'Utils.test.ts', 'Utils.ts', 'ArtifactDetails.test.tsx', 'ArtifactDetails.tsx', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'ModelDetails.test.tsx', 'ModelDetails.tsx', 'ArtifactDetails.test.tsx.snap', 'ArtifactList.test.tsx.snap', 'ModelDetails.test.tsx.snap']",['b36952d6d14b9935ccfba3c63875fac80003b402'],1006,1731,2737,24,1.0,1.0,0.0
+104d8fdc640856a8d000f2945a9e1d2476d8c9ce,register kubeflow/alpha/execution (#66),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-28 11:35:39-07:00,25200,2019-06-28 11:35:39-07:00,25200,True,False,"['register.go', 'make_requests.sh']",['f21c0cf0a55728610226529c5ca2b237b57841cd'],3,49,52,2,0.0,0.0,0.125
+750d349c6bbc7c43e2e1334f5083385a61697b88,"Add endpoint for connecting artifacts to executions as input/output (#65)
+
+* code complete
+
+* fix swagger gen
+
+* rename to ListEvents",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-28 12:36:55-07:00,25200,2019-06-28 12:36:55-07:00,25200,True,False,"['generate_proto.sh', 'service.pb.go', 'service.pb.gw.go', 'service.proto', 'service.swagger.json', 'metadata_store.go', 'service.go', 'service_test.go']",['104d8fdc640856a8d000f2945a9e1d2476d8c9ce'],106,734,840,8,0.4019607843137255,0.8104575163398693,0.6503267973856209
+23b1223892e3c77da775bb075f8b43d7a995f251,"Add an license file into the docker image. (#74)
+
+* add grpc-gateway license to docker image
+
+* fix a typo",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-28 14:27:30-07:00,25200,2019-06-28 14:27:30-07:00,25200,True,False,"['Dockerfile', 'service.proto']",['750d349c6bbc7c43e2e1334f5083385a61697b88'],2,5,7,2,,,
+01cbe754300077d878cc890d03f757df39c6570f,auto generate pb.go and swagger (#75),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-28 15:25:29-07:00,25200,2019-06-28 15:25:29-07:00,25200,True,False,"['service.pb.go', 'service.pb.gw.go', 'service.swagger.json']",['23b1223892e3c77da775bb075f8b43d7a995f251'],76,76,152,3,,,
+e4447a4086b0303258c9c109fa3bebd134b483c3,Add homepage entry to allow serving from non-root folder (#80),Jason Prodonovich,prodonjs@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-01 13:11:21-04:00,14400,2019-07-01 10:11:21-07:00,25200,True,False,['package.json'],['01cbe754300077d878cc890d03f757df39c6570f'],0,1,1,1,,,
+67ff003f61e85f4686760d50798b9f469d2005fd,"Add client-side sorting and filtering (#72)
+
+* Add client-side filtering and sorting to ArtifactsList
+
+* Add unit tests and correct snapshots.
+
+- Add mock typestyle implementation to ensure that CSS selector names
+  aren't rewritten by unit tests.",Jason Prodonovich,prodonjs@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-01 15:55:23-04:00,14400,2019-07-01 12:55:23-07:00,25200,True,False,"['typestyle.ts', 'Input.test.tsx', 'Input.tsx', 'Separator.tsx', 'BusyButton.test.tsx.snap', 'Input.test.tsx.snap', 'CustomTable.test.tsx', 'CustomTable.tsx', 'ArtifactInfo.test.tsx.snap', 'Banner.test.tsx.snap', 'CustomTable.test.tsx.snap', 'ModelInfo.test.tsx.snap', 'Router.test.tsx.snap', 'Toolbar.test.tsx.snap', 'Api.ts', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'ArtifactDetails.test.tsx.snap', 'ArtifactList.test.tsx.snap']",['e4447a4086b0303258c9c109fa3bebd134b483c3'],358,19891,20249,19,1.0,1.0,1.0
+fe16b939f1ef9c1661bcd7e72886777f5c2fb662,"Add lineage tracking into Python SDK (#69)
+
+* Rebase master
+
+* address comments",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-03 14:42:12-07:00,25200,2019-07-03 14:42:12-07:00,25200,True,False,"['demo.ipynb', 'metadata.py', 'test.py']",['67ff003f61e85f4686760d50798b9f469d2005fd'],154,371,525,3,0.43243243243243246,0.6756756756756757,0.8108108108108109
+2c9277e8fa9662d38a374f19dc73c00fa7f13944,update pysdk version (#83),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-03 16:16:12-07:00,25200,2019-07-03 16:16:12-07:00,25200,True,False,['setup.py'],['fe16b939f1ef9c1661bcd7e72886777f5c2fb662'],2,2,4,1,,,
+7cfd8ffc94b6c346716e6ba63ad13eac017349fa,add artifacts/execution map to ListEvents() (#84),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-08 14:19:35-07:00,25200,2019-07-08 14:19:35-07:00,25200,True,False,"['service.pb.go', 'service.proto', 'service.swagger.json', 'service.go', 'service_test.go']",['2c9277e8fa9662d38a374f19dc73c00fa7f13944'],83,169,252,5,0.2,0.48333333333333334,1.0
+6969c07062887a542eeb83a72e1c24b2c8633281,"Update model.md (#85)
+
+Typo fix",Pavel Dournov,paveld@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-08 15:20:03-07:00,25200,2019-07-08 15:20:02-07:00,25200,True,False,['model.md'],['7cfd8ffc94b6c346716e6ba63ad13eac017349fa'],1,1,2,1,,,
+f67f96418ff4aeaec5ad9c2f2233c2b2fa2e2495,fix e2e test (#90),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-12 00:09:04-07:00,25200,2019-07-12 00:09:04-07:00,25200,True,False,"['create-cluster.sh', 'app.yaml']",['6969c07062887a542eeb83a72e1c24b2c8633281'],3,2,5,2,,,
+fc0f876eb67c48aed8b553577805da89af215d3e,"Adds grouping/expansion to Artifacts List view - Copied from #82 (#95)
+
+* Adds grouping/expansion to Artifacts List view
+
+* Add clarifying comment and test for row expansion
+
+* Remove unnecessary type/name sorting for groups",Riley Bauer,34456002+rileyjbauer@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-12 12:35:05-07:00,25200,2019-07-12 12:35:05-07:00,25200,True,False,"['Dockerfile', 'package.json', 'CustomTable.test.tsx', 'CustomTable.tsx', 'CustomTable.test.tsx.snap', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'ArtifactList.test.tsx.snap']",['f67f96418ff4aeaec5ad9c2f2233c2b2fa2e2495'],2033,9647,11680,8,,,
+817d4e6c65314626a3b1b4e3f6735a5fe6896961,Fix ArtifactType/ExecutionType listing. Also remove unused mocks. (#86),Ajay Gopinathan,ajaygopinathan@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-15 15:17:24-07:00,25200,2019-07-15 15:17:24-07:00,25200,True,False,"['WORKSPACE', 'BUILD.bazel', 'metadata_store_service_client_mock.go', 'metadata_store.go', 'service.go']",['fc0f876eb67c48aed8b553577805da89af215d3e'],506,5,511,5,0.0,0.0,0.657608695652174
+61eb65bb7755c77d49ecb51e859a47263ecee4d5,update some warning (#92),renyux,dreamryx@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-17 01:35:24+08:00,-28800,2019-07-16 10:35:24-07:00,25200,True,False,['register.go'],['817d4e6c65314626a3b1b4e3f6735a5fe6896961'],2,2,4,1,,,
+5656f3f4cd74e4a3c5e478dd60e323abec1d649e,update docs (#98),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-18 14:38:19-07:00,25200,2019-07-18 14:38:19-07:00,25200,True,False,"['README.md', 'model.json', 'README.md', 'demo.ipynb', 'artifact_model_1.json']",['61eb65bb7755c77d49ecb51e859a47263ecee4d5'],22,16,38,5,,,
+a6221cca60d6ef56447c5e10fb1d428057324a67,change a variable (#100),renyux,dreamryx@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-23 02:56:53+08:00,-28800,2019-07-22 11:56:53-07:00,25200,True,False,['service_test.go'],['5656f3f4cd74e4a3c5e478dd60e323abec1d649e'],5,5,10,1,,,
+9542aeabf94f36b5436da3bfbb45fc5677409b3c,"Update Python library (#99)
+
+* add kfmd-0.1.7.tar.gz
+
+* remove none properties
+
+* update notebook
+
+* add test for demo notebook
+
+* address comments
+
+* fix python import
+
+* remove nbconvert.ipynb",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-22 14:44:53-07:00,25200,2019-07-22 14:44:53-07:00,25200,True,False,"['Makefile', 'demo.ipynb', 'metadata.py', 'setup.py', 'test.py', 'setup-services-run-tests.sh']",['a6221cca60d6ef56447c5e10fb1d428057324a67'],37,75,112,6,0.9230769230769231,1.0,1.0
+b6658596f32844015325c440412e6d02e4bf1fa1,split the dockerfile (#104),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-29 18:02:49-07:00,25200,2019-07-29 18:02:49-07:00,25200,True,False,"['Dockerfile', 'Dockerfile-linux-base']",['9542aeabf94f36b5436da3bfbb45fc5677409b3c'],12,26,38,2,,,
+894eb28e7d521a799c036fe966e2770ece6d5eb7,dockerfile for power (#96),renyux,dreamryx@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-08 09:17:19+08:00,-28800,2019-08-07 18:17:19-07:00,25200,True,False,"['Dockerfile', 'Dockerfile-linux-base.ppc64le']",['b6658596f32844015325c440412e6d02e4bf1fa1'],1,26,27,2,,,
+8d21c17456d2c74649e87b3b6fa2d1dcf4b1ae9d,"in example notebook, uncomment installs; a few typo fixes (#109)",Amy,amy@infosleuth.net,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-08 13:38:58-07:00,25200,2019-08-08 13:38:58-07:00,25200,True,False,"['README.md', 'demo.ipynb', 'metadata.py']",['894eb28e7d521a799c036fe966e2770ece6d5eb7'],6,6,12,3,,,
+ff2789658dcbcc200eff768391e3d11696850157,Regenerates swagger APIs (#112),Riley Bauer,34456002+rileyjbauer@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-16 14:44:09-07:00,25200,2019-08-16 14:44:09-07:00,25200,True,False,['api.ts'],['8d21c17456d2c74649e87b3b6fa2d1dcf4b1ae9d'],0,320,320,1,0.9523809523809523,1.0,0.9523809523809523
+a9a90237a9b54b59b29e3c2ab374645dcdcc3f0a,Displays all properties and custom properties in details page (#111),Riley Bauer,34456002+rileyjbauer@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-19 07:13:31-07:00,25200,2019-08-19 07:13:31-07:00,25200,True,False,"['server.ts', 'Css.tsx', 'ArtifactInfo.tsx', 'CustomTable.tsx', 'ArtifactInfo.test.tsx.snap', 'Utils.ts', 'ArtifactDetails.tsx', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'ArtifactDetails.test.tsx.snap', 'ArtifactList.test.tsx.snap']",['ff2789658dcbcc200eff768391e3d11696850157'],5046,6650,11696,11,1.0,1.0,1.0
+a996369fcae7887a5e65e21a0cd3231f994487fd,"Reorganize artifact list page (#113)
+
+* Reorganize artifact list page
+
+* Updates tests",Riley Bauer,34456002+rileyjbauer@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-19 13:35:30-07:00,25200,2019-08-19 13:35:30-07:00,25200,True,False,"['Api.ts', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'ArtifactList.test.tsx.snap']",['a9a90237a9b54b59b29e3c2ab374645dcdcc3f0a'],4531,3399,7930,4,,,
+7f591f76fdbc93cbe1d4101d2db68771fe48e1c1,"Support update artifact/execution type in metadata (#110)
+
+* support update type
+
+* remove a change
+
+* remove putoption and add a test for artifact
+
+* use struct literal
+
+* add update execution type case",renyux,dreamryx@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-22 07:02:33+08:00,-28800,2019-08-21 16:02:33-07:00,25200,True,False,"['WORKSPACE', 'service.pb.go', 'service.pb.gw.go', 'service.proto', 'service.swagger.json', 'service.go', 'service_test.go', 'artifact_model_1.json', 'make_requests.sh', 'update_execution_type.json', 'update_model_type.json']",['a996369fcae7887a5e65e21a0cd3231f994487fd'],120,792,912,11,0.4072164948453608,0.6082474226804123,0.8814432989690721
+dc0501b22bf09c6cd72599f3e5536679084231f5,"Add executions list, execution details, and side nav (#115)
+
+* WIP add execution list page
+
+* Page is working and much of the redundant logic between the list pages has been moved to Utils
+
+* Rebase and extract custom name renderer
+
+* Adds side nav and tests
+
+* Adds tests for getMetadataValue, rowFilterFn, and rowCompareFn
+
+* Makes ArtifactInfo into generic ResourceInfo and adds ExecutionDetails
+
+* Adds tests for the groupRows function in Utils",Riley Bauer,34456002+rileyjbauer@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-26 07:48:21-07:00,25200,2019-08-26 07:48:21-07:00,25200,True,False,"['CustomTable.test.tsx', 'CustomTable.tsx', 'ModelInfo.tsx', 'ResourceInfo.test.tsx', 'ResourceInfo.tsx', 'Router.tsx', 'ResourceInfo.test.tsx.snap', 'Router.test.tsx.snap', 'Api.ts', 'LocalStorage.ts', 'Utils.test.ts', 'Utils.ts', 'Utils.tsx', 'ArtifactDetails.tsx', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'ExecutionDetails.tsx', 'ExecutionList.tsx', 'SideNav.test.tsx', 'SideNav.tsx', 'ArtifactDetails.test.tsx.snap', 'ArtifactList.test.tsx.snap', 'SideNav.test.tsx.snap']",['7f591f76fdbc93cbe1d4101d2db68771fe48e1c1'],338,2050,2388,23,0.75,1.0,1.0
+4e7cc2b342911b80af0045a967e6d2864e977f11,"improve the necessary input arguments checking for python (#122)
+
+* improve the necessary input arguments checking for python
+
+* remove checking for labels
+
+* fix code error according to zhenghui's comments",renyux,dreamryx@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-07 01:44:15+08:00,-28800,2019-09-06 10:44:15-07:00,25200,True,False,"['metadata.py', 'test.py']",['dc0501b22bf09c6cd72599f3e5536679084231f5'],8,46,54,2,0.0,0.9047619047619048,0.47619047619047616
+04c0aefc98bfc6a6da322cb4213f1c764df62748,"Fix execution details routing (#124)
+
+* Fixes routing to execution details
+
+* Update tests",Riley Bauer,34456002+rileyjbauer@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-06 16:31:19-07:00,25200,2019-09-06 16:31:19-07:00,25200,True,False,"['Router.tsx', 'ArtifactList.test.tsx', 'ArtifactList.test.tsx.snap']",['4e7cc2b342911b80af0045a967e6d2864e977f11'],30,31,61,3,,,
+78d97e29a26d0aa752f0541b591b03ae0e282fe5,Update ml_metadata reference to latest commit (#130),dushyanthsc,43390008+dushyanthsc@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-25 07:40:02-07:00,25200,2019-09-25 07:40:02-07:00,25200,True,False,['WORKSPACE'],['04c0aefc98bfc6a6da322cb4213f1c764df62748'],1,1,2,1,,,
+ca0879fd6bf15dd13ad13628511a0cc8a905710d,Rename SDK to kubeflow-metadata (#131),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-26 05:36:35+08:00,-28800,2019-09-25 14:36:35-07:00,25200,True,False,"['.gitignore', 'Makefile', 'OWNERS', 'README.md', 'build.sh', '__init__.py', '__init__.py', 'metadata.py', 'demo.ipynb', 'setup.py', 'run_tests.sh', 'test.py']",['78d97e29a26d0aa752f0541b591b03ae0e282fe5'],23,28,51,12,,,
+56d69cd2100a3281453ad0776639e65f6c7dca7a,"Add resource watcher to log metadata (#126)
+
+* init code
+
+* CRD Foo informer works
+
+* add Logger struct
+
+* add SIGNAL handling
+
+* add config json file
+
+* add worker queue
+
+* add logic to detect existing objects
+
+* rename to watcher
+
+* add comments for Watcher
+
+* add README
+
+* add more fields to metadata type
+
+* Add Dockerfile & K8s yamls
+
+* split watcher and handler
+
+* add integration test for resource watcher
+
+* remove http client & use grpc server
+
+* update yamls & remove lock
+
+* address comments",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-10 15:43:20-07:00,25200,2019-10-10 15:43:20-07:00,25200,True,False,"['go.mod', 'go.sum', 'setup-services-run-tests.sh', 'Makefile', 'README.md', 'architecture.png', 'Dockerfile', 'resource_list.json', 'role.yaml', 'rolebinding.yaml', 'watcher.yaml', 'metalogger.go', 'main.go', 'watcher.go']",['ca0879fd6bf15dd13ad13628511a0cc8a905710d'],15,740,755,14,0.5566037735849056,0.7594339622641509,1.0
+c173eaf2ed6cc5c3c59335ccb1aceaa039d39cfa,"Owner Updates
+- Added AP, Kwasi
+- Removed Riley",Apoorv Verma [AP],avdaredevil@gmail.com,Apoorv Verma [AP],avdaredevil@gmail.com,2019-10-27 16:51:48-07:00,25200,2019-10-27 16:51:48-07:00,25200,True,False,['OWNERS'],['56d69cd2100a3281453ad0776639e65f6c7dca7a'],1,2,3,1,,,
+173c3cec91633ea0ece749488f297dfbbbc39e63,"Add Bobgy to frontend approver and reviewer (#144)
+
+Hi, I'm the engineer to follow up on @rileyjbauer's work from kubeflow/pipelines team.",Yuan (Bob) Gong,gongyuan94@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-29 20:06:43+08:00,-28800,2019-10-29 05:06:43-07:00,25200,True,False,['OWNERS'],['56d69cd2100a3281453ad0776639e65f6c7dca7a'],0,3,3,1,,,
+ffdb87f772bb3a17380ef50cf76a207392782fb4,"Add Artifact Details tab bar (#139)
+
+* Add TabBar to ArtifactDetails page
+
+* Adds MD2Tabs Implementation copied from Pipelines with modification
+  to default spacing on separator. NOTE: It would be ideal if both
+  repositories could use a common implementation for atoms.
+* Tested visually and updated snapshots
+
+* Add TabBar to ArtifactDetails page
+
+* Adds MD2Tabs Implementation copied from Pipelines with modification
+  to default spacing on separator.
+* Tested visually and updated snapshots
+* Screenshot: https://screenshot.googleplex.com/VF7AgsBKjMM
+* Mock: https://gallery.googleplex.com/projects/MCHbtQVoQ2HCZV4FTvhm3v2g/files/MCEJu8Y2hyDSccyl-plWHUJtkG6GfbwEzBU
+
+* Add tab switching to ArtifactDetails
+
+* Tab switching does not yet push to history
+* Test: Unit tests, regenerated snapshots
+
+* Revert formatting changes
+
+* Revert formatting changes
+
+* Revert formatting to ArtifactDetails.test.tsx
+
+* Revert changes to package-lock.json
+
+* Extract duplicated logic in lifecycle methods",kwasi,kwasi.nti@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-29 15:54:53-07:00,25200,2019-10-29 15:54:53-07:00,25200,True,False,"['MD2Tabs.test.tsx', 'MD2Tabs.tsx', 'MD2Tabs.test.tsx.snap', 'ArtifactDetails.test.tsx', 'ArtifactDetails.tsx', 'ArtifactDetails.test.tsx.snap']",['173c3cec91633ea0ece749488f297dfbbbc39e63'],143,3017,3160,6,,,
+7a1ab029e14bb54b499b6276dc1192bac05ccb95,"Update watcher readme (#142)
+
+* update readme
+
+* add example image",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-29 23:26:52-07:00,25200,2019-10-29 23:26:52-07:00,25200,True,False,"['README.md', 'watcher.yaml', 'watcher_example.png']",['ffdb87f772bb3a17380ef50cf76a207392782fb4'],4,19,23,3,,,
+e3ad9433c0eaf3ecdba7ed9f424168d4f43e5139,"Add retry when connecting metadata store (#157)
+
+* add retry to metadata store
+
+* add retry backoff when failing to connect to MLMD store
+
+* fix typo",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-05 08:40:39-08:00,28800,2019-11-05 08:40:39-08:00,28800,True,False,['main.go'],['3f12f1cb862d3b7b915740ff74cc5477a50bcecb'],7,17,24,1,0.0,0.0,1.0
+fe03245c5778c26b526d092a22a84d0881fc5ae4,Pin ml-metadata dependency to its v0.14.0 (#158),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-05 16:40:59-08:00,28800,2019-11-05 16:40:59-08:00,28800,True,False,['WORKSPACE'],['e3ad9433c0eaf3ecdba7ed9f424168d4f43e5139'],1,1,2,1,,,
+a38effc8774694e1724ba44c44adea7afbe00cc6,"Update Python SDK to use MLMD gRPC service (#156)
+
+* code complete; test passed
+
+* update e2e test
+
+* update comments
+
+* lint
+
+* lint & address comments
+
+* lint with yapf --style '{based_on_style: google, indent_width: 2}'
+
+* Adding Typing Hints; Rewrite docstrings
+
+* address comments
+
+* lint",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-11 17:28:06-08:00,28800,2019-11-11 17:28:06-08:00,28800,True,False,"['.gitignore', 'metadata.py', 'setup.py', 'test.py', 'setup-services-run-tests.sh']",['fe03245c5778c26b526d092a22a84d0881fc5ae4'],331,467,798,5,0.0,0.9215686274509803,0.4117647058823529
+db8fc5c49a9bd39b87ef6c8755b788e9821c23fe,"[MLMD Lineage] Initial Lineage explorer draft implemented (#159)
+
+* Add metadata store protos
+
+* Add generated grpc protos for ml_metadata
+
+* Uses the version from Pipelines
+
+* Add generated grpc protos for ml_metadata
+
+* Bump `react-scripts` to 3.2.0 to support `EXTEND_ESLINT` environment
+  variable, which is needed to `eslintIgnore` generated protos.
+* Add `api:metadata` script to regenerate grpc-web protos for ml_metadata.
+
+* Proxy requests to server to metadata-envoy-service
+
+* Move <rootDir>/__mocks__ into src to work around react-scripts@3.2.0 bug
+  * https://github.com/facebook/create-react-app/issues/7539
+* Add `start-proxy.sh` to port forward to metadata-ui:3000
+* Regenerate ArtifactList.test.tsx.snap
+  - Old snapshots genreated with node 9.9.0 fail in node 12.13 used by
+    docker image
+* Whitelist @jest/* packages in gen_licenses.js and point to
+  third_party/jest/LICENSE
+
+* Switch ArtifactList getArtifactTypes to ml_metadata
+
+* Major changes 1.0
+- Migrated half of lineage components
+- Rewrote all components in TS, updated and optimized to work in codebase
+- Css updated
+- **Erroneous, will fix**
+- Added gitignore
+- Added linter packages
+- Fixed spacing
+
+* Imported all elements
+
+* All of Lineage Explorer added:
+- All lineage components added
+- Card styles for target / execution cards
+- Rewrote the EdgeCavas renderer
+- Dyanmic updates and CSS updates to match live view
+- State diffing and rendering updates
+- Mocked data and presented on UI, via dynamic data
+- Z-indexing logic added to support reverse flipped connectors
+- State logic updated to match standard
+- Es6 Magic and refactor
+- Massive css updates (radio button revamp, et al)
+
+* Move changes to LineageView.tsx, which can then be used once Kwasi's changes are in
+
+* Resolved Kwasi's comments",Apoorv Verma [AP],avdaredevil@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-12 10:07:15-08:00,28800,2019-11-12 10:07:15-08:00,28800,True,False,"['.gitignore', 'gen_grpc_web_protos.sh', 'gen_licenses.js', 'package-lock.json', 'package.json', 'server.ts', 'Css.tsx', 'typestyle.ts', 'metadata_store.proto', 'metadata_store_service.proto', 'EdgeCanvas.css', 'EdgeCanvas.tsx', 'LineChart.d.ts', 'LineageCard.css', 'LineageCard.tsx', 'LineageCardColumn.css', 'LineageCardColumn.tsx', 'LineageCardRow.css', 'LineageCardRow.tsx', 'LineageTypes.ts', 'fonts.scss', 'metadata_store_pb.d.ts', 'metadata_store_pb.js', 'metadata_store_pb_service.d.ts', 'metadata_store_pb_service.js', 'metadata_store_service_pb.d.ts', 'metadata_store_service_pb.js', 'metadata_store_service_pb_service.d.ts', 'metadata_store_service_pb_service.js', 'Api.ts', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'LineageView.tsx', 'Page.tsx', 'ArtifactList.test.tsx.snap', 'start-proxy.sh', 'tsconfig.json', 'tslint.json', 'package-lock.json']",['a38effc8774694e1724ba44c44adea7afbe00cc6'],2193,32361,34554,39,0.5678832116788322,1.0,0.5678832116788322
+8b44fd8a66e7ceff751436d3542a6a4121e7c748,"Add arm64 support for metadata (#164)
+
+Change-Id: Iae5fc1cc8d456fb5554c18f664d05d2e5892359e
+Signed-off-by: Henry Wang <henry.wang@arm.com>
+Jira: ENTOS-1326",MrXinWang,38582160+MrXinWang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-14 03:31:21+08:00,-28800,2019-11-13 11:31:21-08:00,28800,True,False,"['Dockerfile', 'Makefile', 'Dockerfile-linux-base.aarch64']",['db8fc5c49a9bd39b87ef6c8755b788e9821c23fe'],1,27,28,3,,,
+13a4c43da5cb8a561324f767b947161454cfcf00,"Replace MLMD HTTP API requests with gRPC-Web requests to ml_metadata (#165)
+
+* Add metadata store protos
+
+* Add generated grpc protos for ml_metadata
+
+* Uses the version from Pipelines
+
+* Add generated grpc protos for ml_metadata
+
+* Bump `react-scripts` to 3.2.0 to support `EXTEND_ESLINT` environment
+  variable, which is needed to `eslintIgnore` generated protos.
+* Add `api:metadata` script to regenerate grpc-web protos for ml_metadata.
+
+* Proxy requests to server to metadata-envoy-service
+
+* Move <rootDir>/__mocks__ into src to work around react-scripts@3.2.0 bug
+  * https://github.com/facebook/create-react-app/issues/7539
+* Add `start-proxy.sh` to port forward to metadata-ui:3000
+* Regenerate ArtifactList.test.tsx.snap
+  - Old snapshots genreated with node 9.9.0 fail in node 12.13 used by
+    docker image
+* Whitelist @jest/* packages in gen_licenses.js and point to
+  third_party/jest/LICENSE
+
+* Switch ArtifactList getArtifactTypes to ml_metadata
+
+* Switch ArtifactList getArtifacts to ml_metadata
+
+* Use gRPC to fetch ArtifactDetails and ExecutionDetails
+
+* Mock grpc-web network calls
+
+* Use ml_metadata.Artifact in ModelInfo
+
+* Move repeated test model creation to TestUtils
+* Regenerate snapshot: ArtifactDetails.test.tsx.snap
+  - Closing `}` were replaced with `)` in the commit to convert
+    the snapshot to include a generated proto instead of a
+    `Object`
+
+* Use ml_metadata.Exectuion in ExecutionList
+
+* Cleanup unused rpc in ArtifactList
+
+* Fix null check in ExecutionDetails
+
+* Regenerate ArtifactDetails snapshot after merging tabs with gRPC
+
+* Rewrite start-proxy.sh in node
+
+* Rewrite start-proxy.sh in node
+
+* Cosmetic changes to start-proxy.js
+
+* Fix brace styles
+
+* Rewrite gen_gprc_web_protos in node
+
+* Switch from @improbable-eng/grpc-web to grpc-web
+
+* Update grpc-web mock and fix failures in ArtifactDetails.test
+
+* Update Python SDK to use MLMD gRPC service (#156)
+
+* code complete; test passed
+
+* update e2e test
+
+* update comments
+
+* lint
+
+* lint & address comments
+
+* lint with yapf --style '{based_on_style: google, indent_width: 2}'
+
+* Adding Typing Hints; Rewrite docstrings
+
+* address comments
+
+* lint
+
+* [MLMD Lineage] Initial Lineage explorer draft implemented (#159)
+
+* Add metadata store protos
+
+* Add generated grpc protos for ml_metadata
+
+* Uses the version from Pipelines
+
+* Add generated grpc protos for ml_metadata
+
+* Bump `react-scripts` to 3.2.0 to support `EXTEND_ESLINT` environment
+  variable, which is needed to `eslintIgnore` generated protos.
+* Add `api:metadata` script to regenerate grpc-web protos for ml_metadata.
+
+* Proxy requests to server to metadata-envoy-service
+
+* Move <rootDir>/__mocks__ into src to work around react-scripts@3.2.0 bug
+  * https://github.com/facebook/create-react-app/issues/7539
+* Add `start-proxy.sh` to port forward to metadata-ui:3000
+* Regenerate ArtifactList.test.tsx.snap
+  - Old snapshots genreated with node 9.9.0 fail in node 12.13 used by
+    docker image
+* Whitelist @jest/* packages in gen_licenses.js and point to
+  third_party/jest/LICENSE
+
+* Switch ArtifactList getArtifactTypes to ml_metadata
+
+* Major changes 1.0
+- Migrated half of lineage components
+- Rewrote all components in TS, updated and optimized to work in codebase
+- Css updated
+- **Erroneous, will fix**
+- Added gitignore
+- Added linter packages
+- Fixed spacing
+
+* Imported all elements
+
+* All of Lineage Explorer added:
+- All lineage components added
+- Card styles for target / execution cards
+- Rewrote the EdgeCavas renderer
+- Dyanmic updates and CSS updates to match live view
+- State diffing and rendering updates
+- Mocked data and presented on UI, via dynamic data
+- Z-indexing logic added to support reverse flipped connectors
+- State logic updated to match standard
+- Es6 Magic and refactor
+- Massive css updates (radio button revamp, et al)
+
+* Move changes to LineageView.tsx, which can then be used once Kwasi's changes are in
+
+* Resolved Kwasi's comments
+
+* Switch ArtifactList getArtifacts to ml_metadata
+
+* Rewrite start-proxy.sh in node
+
+* Switch from @improbable-eng/grpc-web to grpc-web
+
+* Fix package.json change introduced in rebase
+
+* Render LineageView in ArtifactDetails.LINEAGE_EXPLORER tab
+
+* Update ArtifactDetails snapshot
+
+* Update helper scripts
+
+- Fix extra parentheses in start-proxy.js and
+- Remove gen_grpc_web_protos.sh",kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-13 18:31:34-08:00,28800,2019-11-13 18:31:34-08:00,28800,True,False,"['gen_grpc_web_protos.js', 'gen_grpc_web_protos.sh', 'package-lock.json', 'package.json', 'TestUtils.ts', 'grpc-web.ts', 'ModelInfo.test.tsx', 'ModelInfo.tsx', 'ResourceInfo.test.tsx', 'ResourceInfo.tsx', 'ResourceInfo.test.tsx.snap', 'metadata_store_pb.d.ts', 'metadata_store_pb_service.d.ts', 'metadata_store_pb_service.js', 'metadata_store_service_grpc_web_pb.d.ts', 'metadata_store_service_grpc_web_pb.js', 'metadata_store_service_pb.d.ts', 'metadata_store_service_pb_service.d.ts', 'metadata_store_service_pb_service.js', 'Api.ts', 'Utils.test.ts', 'Utils.tsx', 'ArtifactDetails.test.tsx', 'ArtifactDetails.tsx', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'ExecutionDetails.tsx', 'ExecutionList.tsx', 'Page.tsx', 'ArtifactDetails.test.tsx.snap', 'ArtifactList.test.tsx.snap', 'start-proxy.js', 'start-proxy.sh']",['8b44fd8a66e7ceff751436d3542a6a4121e7c748'],3624,11156,14780,33,0.44754098360655736,0.0,0.4852459016393443
+4d74694510ee1495477968f84cbf452cb13c1c3e,"Python SDK improvements (#167)
+
+* add retry && dedupe
+
+* add Artifact ABC
+
+* add more unit tests
+
+* add more tests; use pytest; add __repr__
+
+* run tests e2e in a fresh env and install every from scratch
+
+* fix typo",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-19 08:57:42-08:00,28800,2019-11-19 08:57:42-08:00,28800,True,False,"['metadata.py', 'setup.py', 'run_tests.sh', 'test.py']",['13a4c43da5cb8a561324f767b947161454cfcf00'],46,251,297,4,0.5578231292517006,0.9251700680272109,0.8775510204081632
+87f0300d1ea4b1698d6d6e2ab53fb399999dee1a,"Tweak Artifact Details page (#172)
+
+* Remove Deployments tab from ArtifactDetails
+
+* Make LineageView a React.Component instead of a Page
+
+* Fix for toolbar state being reset when a tab is changed.
+
+* Update ArtifactDetails tests
+
+* Create <LineageView /> in JSX
+
+* Update ArtifactDetails test snapshot",kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-21 20:37:28-08:00,28800,2019-11-21 20:37:28-08:00,28800,True,False,"['ArtifactDetails.test.tsx', 'ArtifactDetails.tsx', 'LineageView.tsx', 'ArtifactDetails.test.tsx.snap']",['4d74694510ee1495477968f84cbf452cb13c1c3e'],1233,126,1359,4,,,
+248885816b1cd3eab256953bea1c831bb410d13d,update MLMD version to 0.15.1 with bug fixes (#169),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-22 11:38:43-08:00,28800,2019-11-22 11:38:43-08:00,28800,True,False,['WORKSPACE'],['87f0300d1ea4b1698d6d6e2ab53fb399999dee1a'],1,1,2,1,,,
+fc0acf4d960fcbdfdb7a11a65f912e05a7d4b2a9,"Add sphinx docs for Python SDK. (#168)
+
+* update doc strings & add new plugins
+
+* move docs
+
+* add .readthedocs config
+
+* install via setup.py
+
+* lint
+
+* correct path
+
+* use pip
+
+* add requirements
+
+* update theme
+
+* clean up",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-22 14:02:43-08:00,28800,2019-11-22 14:02:43-08:00,28800,True,False,"['.readthedocs.yaml', 'Makefile', 'conf.py', 'index.rst', 'make.bat', 'requirements.txt', 'md.rst', 'metadata.py']",['248885816b1cd3eab256953bea1c831bb410d13d'],36,396,432,8,,,
+3b13af416f3e19da6b8b42d618604752aea0c8d8,"Bump lodash from 4.17.11 to 4.17.15 in /frontend/server (#162)
+
+Bumps [lodash](https://github.com/lodash/lodash) from 4.17.11 to 4.17.15.
+- [Release notes](https://github.com/lodash/lodash/releases)
+- [Commits](https://github.com/lodash/lodash/compare/4.17.11...4.17.15)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-22 21:21:50-08:00,28800,2019-11-22 21:21:50-08:00,28800,True,False,['package-lock.json'],['fc0acf4d960fcbdfdb7a11a65f912e05a7d4b2a9'],3,3,6,1,,,
+09719c2b5883659f60f3aff6f992da8b68805cdc,"Add LineageViewActionBar (#170)
+
+* Add LineageExplorerActionBar to Artifact details page
+
+* Pass artifact name as history root
+
+* Update action bar when an artifact is clicked and support reset()
+
+* Use <button> for breadcrumb history links
+
+https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
+
+* Update LineageView target on navigation from ActionBar
+
+* Supports breadcrumb and reset click
+* Uses mock Artifact constructed at runtime from card title while real data is
+  being merged.
+
+* Update LineageView setter method naming
+
+* Fix key warnings in tests and update snapshots
+
+* Add tests for LineageActionBar
+
+* Type checking and style fixes before PR
+
+* Address review comments",kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-25 07:41:10-08:00,28800,2019-11-25 07:41:10-08:00,28800,True,False,"['LineageActionBar.test.tsx', 'LineageActionBar.tsx', 'LineageCard.tsx', 'LineageCardColumn.tsx', 'LineageCardRow.tsx', 'LineageActionBar.test.tsx.snap', 'ArtifactDetails.tsx', 'LineageView.tsx', 'ArtifactDetails.test.tsx.snap']",['3b13af416f3e19da6b8b42d618604752aea0c8d8'],5108,7249,12357,9,,,
+e82752a4878b172c95782584e1ea4d779721797c,"Tweak lifecycle in EdgeCanvas to avoid setState() in render() (#173)
+
+* Tweak lifecycle in EdgeCanvas to avoid setState() in render()
+
+* Rewrite EdgeCanvas as a React.FC and move CSS into component
+
+* Revert development change to ArtifactDetails
+
+* Use px helper function for edgeCanvas width property",kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-26 16:49:20-08:00,28800,2019-11-26 16:49:20-08:00,28800,True,False,"['EdgeCanvas.css', 'EdgeCanvas.tsx', 'ArtifactDetails.test.tsx.snap']",['09719c2b5883659f60f3aff6f992da8b68805cdc'],138,84,222,3,,,
+e3cb35fe220e54db7a3c5804e0545bf94a01077a,"Fixed linter issues, and updated scripts to work on windows (#175)",Apoorv Verma [AP],avdaredevil@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-28 12:51:03-08:00,28800,2019-11-28 12:51:03-08:00,28800,True,False,"['gen_grpc_web_protos.js', 'package-lock.json', 'package.json', 'ArtifactList.tsx', 'LineageView.tsx']",['e82752a4878b172c95782584e1ea4d779721797c'],78,57,135,5,0.0,0.0,0.0
+f2ec34e68bbc9e22389ae22dfef2215176fff136,"Fix initial state of LineageViewActionBar (#177)
+
+* Fix initial LineageView target
+
+* Make `target` a required propetry for LineageView",kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-01 17:05:04-08:00,28800,2019-12-01 17:05:04-08:00,28800,True,False,"['ArtifactDetails.tsx', 'LineageView.tsx', 'ArtifactDetails.test.tsx.snap']",['e3cb35fe220e54db7a3c5804e0545bf94a01077a'],16,606,622,3,,,
+c091c8e6e1530004c0c25f7bb804d5b3262e9ea1,Created a powershell script to generate data identically to its bash counterpart (#176),Apoorv Verma [AP],avdaredevil@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-02 19:46:57-05:00,18000,2019-12-02 16:46:57-08:00,28800,True,False,['Make-Requests.ps1'],['f2ec34e68bbc9e22389ae22dfef2215176fff136'],0,40,40,1,,,
+c5d738426f424eda7e07047e521fd4d6bb561cf3,"[Windows] Changes to allow docker building on windows (#180)
+
+* Changes to allow building on windows, migrated docker build to a node script
+
+* Readme in script, removed extra deps",Apoorv Verma [AP],avdaredevil@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-06 10:04:50-08:00,28800,2019-12-06 10:04:50-08:00,28800,True,False,"['Dockerfile', 'docker_build.js', 'package.json']",['c091c8e6e1530004c0c25f7bb804d5b3262e9ea1'],2,34,36,3,0.38461538461538464,1.0,1.0
+5b61ddab33343904727863ee23ad5f9ee9ea24bc,"Initial pass of fetching data from gRPC backend and click to update (#179)
+
+* First pass of request real event data
+
+NOTE: Data in LineageCardRow is still mocked so the Artifact needs to be passed
+down.
+
+* Start passing real data to lineage cards
+
+* Mock new RPCs in ArtifactDetails test
+
+* Pass down resource to LineageCardRow
+
+* Add note to optmize calls in LineageView
+
+* Update ArtifactDetails snapshot
+
+* Updates per review comments
+
+* Cleaned up inputExecutions/outputExecutions naming and added a comment
+  for clarity.
+* Cleaned up style and lint",kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-06 14:59:53-08:00,28800,2019-12-06 14:59:53-08:00,28800,True,False,"['LineageCard.tsx', 'LineageCardRow.tsx', 'LineageTypes.ts', 'Utils.tsx', 'ArtifactDetails.test.tsx', 'LineageView.tsx', 'ArtifactDetails.test.tsx.snap']",['c5d738426f424eda7e07047e521fd4d6bb561cf3'],4572,3247,7819,7,,,
+59a170b9fd0ed02fcdb01d3190e2b15c138100c9,[Windows] Follow up to #180 with nits resolved (#181),Apoorv Verma [AP],avdaredevil@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-06 16:09:55-08:00,28800,2019-12-06 16:09:55-08:00,28800,True,False,['docker_build.js'],['5b61ddab33343904727863ee23ad5f9ee9ea24bc'],5,4,9,1,,,
+a7300a538649bfef0594f4df585f3e5c1de588dd,"Reduce EdgeCanvas width to 120px and parameterize card and edge width  (#183)
+
+* Parameterize LineageCardColumn padding and reduce to 40px per UX feedback
+
+* Reduces EdgeCanvas width to 120px
+* Move px() to Css.tsx
+* Migrate LineageCardColumn css to typestyle
+
+* Migrate LineageCard.css to typestyle and refactor edge calculation
+
+* EdgeCanvas width and Card width are now globals
+* Padding between columns is drawn based on EDGE_WIDTH / 2
+
+* Cleanup CSS
+
+* Add transparent border-bottom to execution card title to normalize height
+* Alphabetize keys
+
+* Update test snapshot after reverting dev change to default ArtifactDetails tab",kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-08 13:49:08-08:00,28800,2019-12-08 13:49:08-08:00,28800,True,False,"['Css.tsx', 'EdgeCanvas.tsx', 'LineageCard.css', 'LineageCard.tsx', 'LineageCardColumn.css', 'LineageCardColumn.tsx', 'LineageCss.ts', 'ArtifactDetails.test.tsx.snap']",['59a170b9fd0ed02fcdb01d3190e2b15c138100c9'],257,257,514,8,,,
+bae3123aff34ffbbfa59065f9be6c703f6e5b5aa,"Move LineageView key sizes to LineageView props (#185)
+
+* Move LineageView key sizes to LineageView props
+
+* Make cardWidth and edgeWidth optional parameters to LineageView
+
+* Update ArtifactDetails snapshot after making size params optional",kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-09 16:59:30-08:00,28800,2019-12-09 16:59:30-08:00,28800,True,False,"['Css.tsx', 'EdgeCanvas.tsx', 'LineageCard.tsx', 'LineageCardColumn.tsx', 'LineageCss.ts', 'ArtifactDetails.tsx', 'LineageView.tsx', 'ArtifactDetails.test.tsx.snap']",['a7300a538649bfef0594f4df585f3e5c1de588dd'],96,143,239,8,1.0,1.0,1.0
+f229af8ecd2c345166dd88ace17e7dfe8850a92d,"Add a MLMD context for every `workspace` & update notebook example (#178)
+
+* add Makefile
+
+* update comments
+
+* run tests twice
+
+* uncomment tests
+
+* rename test file to match default pytest discover pattern
+
+* fix integration test
+
+* fix installing python3.6
+
+* update notebook
+
+* update notebook
+
+* rm python-env install
+
+* user virtual env
+
+* reorder tests
+
+* update setup.py with long description and __init__.py with SDK version
+
+* address comments
+
+* add TODO",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-10 11:34:10-08:00,28800,2019-12-10 11:34:10-08:00,28800,True,False,"['Makefile', 'README.md', 'metadata.py', 'demo.ipynb', 'setup.py', '__init__.py', 'run_tests.sh', 'test_metadata.py', 'setup-services-run-tests.sh']",['bae3123aff34ffbbfa59065f9be6c703f6e5b5aa'],302,262,564,9,0.30303030303030304,0.9090909090909091,0.9242424242424242
+f456106e527cb2c6dfb9f886ee939758baf34790,change ubuntu python3.6 PPA (#187),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-11 14:34:32-08:00,28800,2019-12-11 14:34:32-08:00,28800,True,False,['setup-services-run-tests.sh'],['f229af8ecd2c345166dd88ace17e7dfe8850a92d'],1,1,2,1,,,
+72451884a8dbcca3aea5d321d6fed57e68589ebe,Metrics notebook spelling nits (#186),Apoorv Verma [AP],avdaredevil@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-11 15:54:32-08:00,28800,2019-12-11 15:54:32-08:00,28800,True,False,['demo.ipynb'],['f456106e527cb2c6dfb9f886ee939758baf34790'],11,11,22,1,,,
+239b5ac8d076ffb9aa29fd35dce1b86800d64f90,"Add third party licenses into docker image (#182)
+
+* Add files
+
+* Add README.md
+
+* update license.txt location
+
+* fix typo
+
+* check in license file
+
+* add exit 1 for outdated license.txt",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,GitHub,noreply@github.com,2019-12-12 12:55:36-08:00,28800,2019-12-12 12:55:36-08:00,28800,True,False,"['Dockerfile', 'unittests.sh', 'license.txt', 'README.md', 'additional_license_info.csv', 'concatenate_license.py', 'dep.txt', 'dep_repo.manual.csv', 'license_info.csv', 'patch_additional_license_info.py', 'repo.txt']",['72451884a8dbcca3aea5d321d6fed57e68589ebe'],5,10369,10374,11,0.08333333333333333,0.65,1.0
+b544cfe02a35a3da90a623de8edcd96dcaec06d8,"LineageView card loading updates (#188)
+
+* Tweaks to <EdgeCanvas />
+
+* Rename cardArray to cardSkeleton and add documentation
+* Cleanup magic number used to computer marginTop for EdgeCanvas
+* Remove unused type variable
+
+* Skip EdgeCanvas on Column 4.
+
+* Edges are drawn by the reverse edges of Column 5.
+* This change was originally intended for an animation, but is still useful for
+  debugging and to reduce the number of components drawn.
+
+* Load ArtifactTypes for artifact cards
+
+* Update target card to communicate next/prev based on input/output exections
+
+* Revert stale documentation now that next/prev data is passed to EdgeCanvas
+
+* nit: Add newline
+
+* Updates after code review
+
+* Replace lodash dep with the 3 single function imports we're using
+* Remove unnecessary parentheses
+
+* Use Array.forEach in card element loop",kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-13 14:49:36-08:00,28800,2019-12-13 14:49:36-08:00,28800,True,False,"['package-lock.json', 'package.json', 'CustomTable.tsx', 'EdgeCanvas.tsx', 'LineageApi.ts', 'LineageCard.tsx', 'LineageCardColumn.tsx', 'LineageCss.ts', 'LineageUtils.ts', 'Utils.tsx', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'LineageView.tsx', 'ArtifactDetails.test.tsx.snap']",['239b5ac8d076ffb9aa29fd35dce1b86800d64f90'],704,1176,1880,14,1.0,1.0,1.0
+04845993d72930c69289b94e01cd7d258f6557f9,Parallelize loadData() in <LineageView /> (#189),kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-16 14:57:38-08:00,28800,2019-12-16 14:57:38-08:00,28800,True,False,['LineageView.tsx'],['b544cfe02a35a3da90a623de8edcd96dcaec06d8'],31,45,76,1,,,
+2b0debc20320c34060b53ee89e5aebde25f93434,"Use papermill to exec Notebook (#190)
+
+* remove invalidate outputs row
+
+* use papermill to execute notebook
+
+* move test to run_tests.sh
+
+* use python to run notebook
+
+* make python tests
+
+* update to py3.7 for papermill
+
+* use py3.7
+
+* fix testing cluster setup",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-17 17:55:57-08:00,28800,2019-12-17 17:55:57-08:00,28800,True,False,"['demo.ipynb', 'run_tests.sh', 'test_notebook.py', 'setup-services-run-tests.sh']",['04845993d72930c69289b94e01cd7d258f6557f9'],42,309,351,4,1.0,1.0,1.0
+d790ae9aa1d7d04c0ca11b0547013e742a89030e,Fix typo in demo.ipynb (#197),Yuan Tang,terrytangyuan@gmail.com,GitHub,noreply@github.com,2020-01-04 09:46:54-05:00,18000,2020-01-04 09:46:54-05:00,18000,True,False,['demo.ipynb'],['2b0debc20320c34060b53ee89e5aebde25f93434'],1,1,2,1,,,
+85c19a9901e176ea6699749c45d651b7e9660a28,rerun the scripts (#205),Zhenghui Wang,zhenghuiwang@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-15 16:56:24-08:00,28800,2020-01-15 16:56:24-08:00,28800,True,False,['license.txt'],['d790ae9aa1d7d04c0ca11b0547013e742a89030e'],2,0,2,1,,,
+c4afa51a4fe3bac19f911c952f087af7da721f9b,"Execution Grouping Support:
+- Scan for Execution Types
+- Create a map between Execution type name and id
+- Group by Execution Type
+- Reverse build edges from Output Execs to Target
+- Linting warnings resolved
+- Code nits",Apoorv Verma [AP],avdaredevil@gmail.com,Apoorv Verma [AP],avdaredevil@gmail.com,2020-01-06 01:53:08-07:00,25200,2020-01-16 15:15:21-08:00,28800,True,False,"['LineageApi.ts', 'LineageCard.tsx', 'LineageCardColumn.tsx', 'LineageView.tsx']",['85c19a9901e176ea6699749c45d651b7e9660a28'],24,66,90,4,1.0,1.0,1.0
+6197707555a5a2c875f2079888ee3d280a93ccb9,Removed commented code as per @kwasi's comments,Apoorv Verma [AP],avdaredevil@gmail.com,Apoorv Verma [AP],avdaredevil@gmail.com,2020-01-13 13:55:24-08:00,28800,2020-01-16 15:15:21-08:00,28800,True,False,['LineageView.tsx'],['c4afa51a4fe3bac19f911c952f087af7da721f9b'],10,0,10,1,,,
+2494e342b37af942cef82564f237b3a1241f17c2,"[MLMD Lineage] Style changes to scale view for normal laptop screens (#199)
+
+* Style changes to scale view for normal laptop screens
+
+* Scrollbar changes to always show",Apoorv Verma [AP],avdaredevil@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-16 18:18:56-08:00,28800,2020-01-16 18:18:56-08:00,28800,True,False,"['package-lock.json', 'package.json', 'Css.tsx', 'LineageCard.tsx', 'LineageCardRow.css', 'LineageView.tsx']",['f8878efbc86301740c76cc1630479e82cc29fa46'],1340,1847,3187,6,,,
+c831a2a8233b9c84ee2efbcfb06aaf0600bd0b0b,"[MLMD Lineage] Remove LineageView and use version from kubeflow/frontend (#208)
+
+* First example of using the apis from the shared library.
+
+* Use <LineageView> from kwasi/frontend
+
+Will update to kubeflow/frontend once changes are merged
+
+* Delete lineage and mlmd from kubeflow/metadata
+
+* Delete migrated MLMD Apis from metadata project
+
+The relevant classes are available in frontend/mlmd.
+
+* Bump frontend has to version that doesn't require a postinstall
+
+* Update to latest fork of kubeflow/frontend and update deps
+
+* Update deps and remove swagger related scripts for frontend src
+
+* Bump kubeflow/frontend to latest
+
+* Bump to latest version of kwasi/frontend.
+
+This is the last essential change, so this branch is ready for PR once
+frontend changes are merged and synced with outstanding PRs.
+
+* Update package-lock.json
+
+* Point to the latest kubeflow-frontend hash
+
+* Update kubeflow/frontend hash
+
+* Remove calls to getResourceProperty and titleCase, now in kubeflow/frontend
+
+* Remove Util methods moved to kubeflow/frontend
+
+* Revert changes no longer in master
+
+* Add whitespace back to revert a diff
+
+* More whitespace merging
+
+* Remove use local script
+
+* Update hash to latest fork
+
+* Update to latest hash with exported common utils
+
+* Update to latest hash with exported common utils
+
+* Update hash to latest version of kubeflow/frontend:master",kwasi,kwasinti@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-24 14:32:32-08:00,28800,2020-01-24 14:32:32-08:00,28800,True,False,"['gen_grpc_web_protos.js', 'package-lock.json', 'package.json', 'Css.tsx', 'TestUtils.ts', '.gitignore', '.swagger-codegen-ignore', 'VERSION', 'api.ts', 'configuration.ts', 'custom.d.ts', 'git_push.sh', 'index.ts', 'metadata_store.proto', 'metadata_store_service.proto', '.gitignore', '.swagger-codegen-ignore', 'VERSION', 'api.ts', 'configuration.ts', 'custom.d.ts', 'git_push.sh', 'index.ts', 'MD2Tabs.test.tsx', 'MD2Tabs.tsx', 'CustomTable.tsx', 'EdgeCanvas.tsx', 'LineChart.d.ts', 'LineageActionBar.test.tsx', 'LineageActionBar.tsx', 'LineageApi.ts', 'LineageCard.tsx', 'LineageCardColumn.tsx', 'LineageCardRow.css', 'LineageCardRow.tsx', 'LineageCss.ts', 'LineageTypes.ts', 'LineageUtils.ts', 'ModelInfo.test.tsx', 'ModelInfo.tsx', 'ResourceInfo.test.tsx', 'ResourceInfo.tsx', 'LineageActionBar.test.tsx.snap', 'fonts.scss', 'metadata_store_pb.d.ts', 'metadata_store_pb.js', 'metadata_store_service_grpc_web_pb.d.ts', 'metadata_store_service_grpc_web_pb.js', 'metadata_store_service_pb.d.ts', 'metadata_store_service_pb.js', 'Api.test.ts', 'Api.ts', 'Utils.test.ts', 'Utils.tsx', 'ArtifactDetails.test.tsx', 'ArtifactDetails.tsx', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'ExecutionDetails.tsx', 'ExecutionList.tsx', 'LineageView.tsx', 'ArtifactDetails.test.tsx.snap', 'swagger-config.json', 'package-lock.json']",['2494e342b37af942cef82564f237b3a1241f17c2'],37507,4232,41739,64,0.034482758620689655,0.0,0.1006896551724138
+f765d361bad3c469ff4200ad265dabec379ac4ab,Added me and @kwasi as owners of metadata (#209),Apoorv Verma [AP],avdaredevil@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-24 15:41:03-08:00,28800,2020-01-24 15:41:03-08:00,28800,True,False,['OWNERS'],['c831a2a8233b9c84ee2efbcfb06aaf0600bd0b0b'],0,2,2,1,,,
+9de6eca48245325989e35c0f99db10810dd6b5b9,"[MLMD] Refactored server TS code (#210)
+
+* Server fixed, errors removed, errors take place before initialization, types added to TS file
+
+* substr -> slice, succinctness++",Apoorv Verma [AP],avdaredevil@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-26 11:55:03-08:00,28800,2020-01-26 11:55:03-08:00,28800,True,False,['server.ts'],['f765d361bad3c469ff4200ad265dabec379ac4ab'],31,26,57,1,0.0,0.0,0.5714285714285714
+f0d113b519ca2d1346b3e59ad2271d4c8050333a,"[MLMD Lineage] Integrate LineageView changes to add navigation to card resources (#211)
+
+* First example of using the apis from the shared library.
+
+* Use <LineageView> from kwasi/frontend
+
+Will update to kubeflow/frontend once changes are merged
+
+* Delete lineage and mlmd from kubeflow/metadata
+
+* Delete migrated MLMD Apis from metadata project
+
+The relevant classes are available in frontend/mlmd.
+
+* Bump frontend has to version that doesn't require a postinstall
+
+* Update to latest fork of kubeflow/frontend and update deps
+
+* Update deps and remove swagger related scripts for frontend src
+
+* Bump kubeflow/frontend to latest
+
+* Bump to latest version of kwasi/frontend.
+
+This is the last essential change, so this branch is ready for PR once
+frontend changes are merged and synced with outstanding PRs.
+
+* Update package-lock.json
+
+* Point to the latest kubeflow-frontend hash
+
+* Update kubeflow/frontend hash
+
+* Remove calls to getResourceProperty and titleCase, now in kubeflow/frontend
+
+* Remove Util methods moved to kubeflow/frontend
+
+* Revert changes no longer in master
+
+* Add whitespace back to revert a diff
+
+* More whitespace merging
+
+* Remove use local script
+
+* Update hash to latest fork
+
+* Update to latest hash with exported common utils
+
+* Update to latest hash with exported common utils
+
+* Update hash to latest version of kubeflow/frontend:master
+
+* Add method to build routes on ArtifactDetails page
+
+* Fix type error causing during failure to docker build
+
+* Adds redudnant express import, but previous syntax was giving
+  no default export errors
+
+* Bump frontend commit hash
+
+* Switch to latest commit to verify integration
+
+* Update snapshots
+
+* Use latest version of kubeflow/frontend
+
+* Line length nit
+
+* Update to latest frontend hash
+
+* Update snapshots to reflect latest kubeflow/frontend",kwasi,kwasinti@google.com,GitHub,noreply@github.com,2020-02-06 15:31:25-08:00,28800,2020-02-06 15:31:25-08:00,28800,True,False,"['package-lock.json', 'package.json', 'package-lock.json', 'package.json', 'server.ts', 'ArtifactDetails.tsx', 'ArtifactDetails.test.tsx.snap']",['9de6eca48245325989e35c0f99db10810dd6b5b9'],3062,415,3477,7,,,
+a7cfcbaa3f3c0ae2d82e76bbfd832590fa4fcc2a,"Fix broken links and update dependencies (#215)
+
+* Fix broken links in SDK README
+
+* update dependency and tests
+
+* update SDK version to 0.3.1",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,GitHub,noreply@github.com,2020-02-25 16:46:27-08:00,28800,2020-02-25 16:46:27-08:00,28800,True,False,"['README.md', 'metadata.py', 'setup.py', 'run_tests.sh', 'test_metadata.py', 'license.txt']",['f0d113b519ca2d1346b3e59ad2271d4c8050333a'],24,6,30,6,0.06666666666666667,0.0,0.06666666666666667
+7e467e4e6f68c42a6fd3a86070d268813165dafd,"Updated metadata to master upstream changes from kubeflow/frontend, refactored imports",Apoorv Verma [AP],avdaredevil@gmail.com,Apoorv Verma [AP],avdaredevil@gmail.com,2020-02-26 17:34:28-08:00,28800,2020-02-26 17:34:28-08:00,28800,True,False,"['package-lock.json', 'package.json', 'TestUtils.ts', 'MD2Tabs.test.tsx', 'MD2Tabs.tsx', 'CustomTable.tsx', 'ModelInfo.test.tsx', 'ModelInfo.tsx', 'ResourceInfo.test.tsx', 'ResourceInfo.tsx', 'Utils.tsx', 'ArtifactDetails.test.tsx', 'ArtifactDetails.tsx', 'ArtifactList.test.tsx', 'ArtifactList.tsx', 'ExecutionDetails.tsx', 'ExecutionList.tsx']",['a7cfcbaa3f3c0ae2d82e76bbfd832590fa4fcc2a'],2559,3906,6465,17,,,
+1bb0a30076373179f102245841ab44f90e2655fa,Upstreamed all pipeline changes till 2020-03-06. Tackles #217 #149,Apoorv Verma [AP],avdaredevil@gmail.com,Apoorv Verma [AP],avdaredevil@gmail.com,2020-03-06 14:33:36-08:00,28800,2020-03-06 14:33:36-08:00,28800,True,False,"['package-lock.json', 'package.json', 'Css.tsx', 'TestUtils.ts', 'TestUtils.tsx', 'ArtifactLink.tsx', 'CustomTable.test.tsx', 'CustomTable.tsx', 'CustomTableRow.test.tsx', 'CustomTableRow.tsx', 'ResourceInfo.tsx', 'Router.tsx', 'SideNav.tsx', 'Toolbar.test.tsx', 'Toolbar.tsx', 'index.tsx', 'Utils.tsx', '404.tsx', 'ArtifactDetails.tsx', 'ArtifactList.tsx', 'ExecutionDetails.tsx', 'ExecutionList.tsx']",['edb7276aa493fcba382621a06e9e88d14fb07c60'],999,3044,4043,22,0.32727272727272727,0.0,0.0
+680d95f5c72c16c8eb303e452d650abb7e57758a,Fixed tests best I could,Apoorv Verma [AP],avdaredevil@gmail.com,Apoorv Verma [AP],avdaredevil@gmail.com,2020-03-06 16:07:22-08:00,28800,2020-03-09 20:04:55-07:00,25200,True,False,"['TestUtils.tsx', 'CustomTable.test.tsx', 'CustomTable.test.tsx.snap', 'CustomTableRow.test.tsx.snap', 'Router.test.tsx.snap', 'Toolbar.test.tsx.snap', 'Utils.tsx', 'ArtifactDetails.test.tsx', 'ArtifactDetails.tsx', 'ArtifactList.test.tsx', 'ArtifactList.test.tsx.snap']",['1bb0a30076373179f102245841ab44f90e2655fa'],5466,751,6217,11,,,
+fe128d3cf724391458acb51614fe399b4afb74d5,Fixed version for prettier (Feedback from @Bobgy),Apoorv Verma [AP],avdaredevil@gmail.com,Apoorv Verma [AP],avdaredevil@gmail.com,2020-03-09 20:03:53-07:00,25200,2020-03-09 20:04:55-07:00,25200,True,False,['package.json'],['680d95f5c72c16c8eb303e452d650abb7e57758a'],1,1,2,1,,,
+a8e886c14fc6c7e3d287c988c4e451ed851ca1d4,"Use python3 test worker image for integration tests (#223)
+
+* use python3 worker image
+
+* use py3 images only for python tests
+
+* use testWorkerImage for unit test bc bazel
+
+* make sure python3.8 venv installed
+
+* rv exsiting pip installations
+
+* use python3.6",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,GitHub,noreply@github.com,2020-03-16 16:34:22-07:00,25200,2020-03-16 16:34:22-07:00,25200,True,False,"['run_tests.sh', 'build-images.sh', 'setup-services-run-tests.sh', 'workflows.libsonnet']",['edb7276aa493fcba382621a06e9e88d14fb07c60'],58,7,65,4,,,
+25b44da29213968a2c438d24aad3656cc86d0499,"Update metadata docs (#221)
+
+* update metadata docs
+
+* update README",Zhenghui Wang,zhenghuiwang@users.noreply.github.com,GitHub,noreply@github.com,2020-03-16 17:24:21-07:00,25200,2020-03-16 17:24:21-07:00,25200,True,False,"['README.md', 'index.rst', 'metadata.py']",['a8e886c14fc6c7e3d287c988c4e451ed851ca1d4'],6,6,12,3,,,
+ed7fdc8444c749e13f2f77ff8fa6c96c57859f5c,"Replace obsolete ksonnet tests with Tekton. (#251)
+
+* Replace obsolete ksonnet tests with Tekton.
+
+* This only runs the go unittests not the E2E tests.
+
+* Fix.
+
+* Bump the OWNERs files.",Jeremy Lewi,jeremy+github@lewi.us,GitHub,noreply@github.com,2020-11-05 11:08:52-08:00,28800,2020-11-05 11:08:52-08:00,28800,True,False,"['OWNERS', 'prow_config.yaml', 'go-tests-run.yaml', 'app.yaml', 'params.libsonnet', 'workflows.jsonnet', 'workflows.libsonnet', 'base.libsonnet', 'main.jsonnet', 'params.libsonnet']",['04b5e5630721d672049aa46361597c57514e28e6'],400,40,440,10,,,
+86ca46dbe82f91c0a049645e9573b170600be2d7,Update OWNERS,Yuan (Bob) Gong,gongyuan94@gmail.com,GitHub,noreply@github.com,2020-11-09 10:29:08+08:00,-28800,2020-11-09 10:29:08+08:00,-28800,True,False,['OWNERS'],['ed7fdc8444c749e13f2f77ff8fa6c96c57859f5c'],0,1,1,1,,,
+a79a30b55a5176d5a0a7be17b78cde66a41a7958,Update deprecation notice,James Liu,37026441+zijianjoy@users.noreply.github.com,GitHub,noreply@github.com,2021-11-09 09:17:04-08:00,28800,2021-11-09 09:17:04-08:00,28800,True,False,['README.md'],['86ca46dbe82f91c0a049645e9573b170600be2d7'],0,5,5,1,,,
+129884282ec4564b0b1194b4958dd012dbca951d,Add bug link to deprecation notice,James Liu,37026441+zijianjoy@users.noreply.github.com,GitHub,noreply@github.com,2021-11-09 10:13:53-08:00,28800,2021-11-09 10:13:53-08:00,28800,True,False,['README.md'],['a79a30b55a5176d5a0a7be17b78cde66a41a7958'],1,1,2,1,,,
+806b42852599e588d90a7f2ba986ebc43e43c0be,"Update README.md (#265)
+
+* Update README.md
+
+* Update README.md
+
+* Update README.md
+
+Co-authored-by: James Liu <37026441+zijianjoy@users.noreply.github.com>",Thea Lamkin,thea.lamkin@gmail.com,GitHub,noreply@github.com,2021-11-19 13:57:34-08:00,28800,2021-11-19 21:57:34+00:00,0,True,False,['README.md'],['129884282ec4564b0b1194b4958dd012dbca951d'],1,1,2,1,,,
+77c34fb2c7a3d913edb0d15912df7457f411ad55,Update deprecation state,James Liu,37026441+zijianjoy@users.noreply.github.com,GitHub,noreply@github.com,2021-12-01 09:35:26-08:00,28800,2021-12-01 09:35:26-08:00,28800,True,False,['README.md'],['806b42852599e588d90a7f2ba986ebc43e43c0be'],2,2,4,1,,,

@@ -1,0 +1,141 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+309bbb4fbda72a147d27c0806679ddae8b551499,Initial commit,Kent Inverarity,kinverarity@hotmail.com,GitHub,noreply@github.com,2018-07-22 19:00:26+09:30,-34200,2018-07-22 19:00:26+09:30,-34200,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,127,127,3,,,
+7c6ae41f2125e87e0bb07facccbdebec5ed41458,Initial commit.,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-22 21:38:27+09:30,-34200,2018-07-22 21:38:27+09:30,-34200,True,False,"['.gitignore', 'CHANGELOG.md', 'README.md', '__init__.py', '__version__.py', 'requirements.txt', 'setup.py']",['309bbb4fbda72a147d27c0806679ddae8b551499'],86,226,312,7,0.03296703296703297,0.03296703296703297,0.3076923076923077
+2ce6701e6fb397c7ebd866b8eb43645742e2de8d,Work on getting field data available,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-24 22:15:22+09:30,-34200,2018-07-24 22:15:22+09:30,-34200,True,False,['__init__.py'],['7c6ae41f2125e87e0bb07facccbdebec5ed41458'],10,61,71,1,0.7297297297297297,0.7297297297297297,0.43243243243243246
+f7426f91b6f3da8854c4d2b831b0378a30ab40fc,update readme - very early stages,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-24 22:24:07+09:30,-34200,2018-07-24 22:24:07+09:30,-34200,True,False,['README.md'],['2ce6701e6fb397c7ebd866b8eb43645742e2de8d'],1,483,484,1,,,
+28dd41f6c3a0117104c0b214a112ddf5625f0ffc,Fix #3 (open using any filename from the pkg),Kent Inverarity,217928@env.sa.gov.au,Kent Inverarity,217928@env.sa.gov.au,2018-07-27 15:13:20+09:30,-34200,2018-07-27 15:13:20+09:30,-34200,True,False,"['__init__.py', 'Example_AeroMag_MuppetTown_2009.dat', 'Example_AeroMag_MuppetTown_2009.des', 'Example_AeroMag_MuppetTown_2009.dfn', 'Example_AeroMag_MuppetTown_2009.met', 'Example_Gravity_LooneyTunesValley_1930.dat', 'Example_Gravity_LooneyTunesValley_1930.des', 'Example_Gravity_LooneyTunesValley_1930.dfn', 'Example_Gravity_LooneyTunesValley_1930.met', 'Example_Gravity_NeverNeverLand_1904.dat', 'Example_Gravity_NeverNeverLand_1904.des', 'Example_Gravity_NeverNeverLand_1904.dfn', 'Example_Gravity_NeverNeverLand_1904.prj', 'Example_Gravity_Springfield_1989.dat', 'Example_Gravity_Springfield_1989.des', 'Example_Gravity_Springfield_1989.dfn', 'Example_Gravity_Springfield_1989.met', 'Example_GroundMag_Bedrock_6000BC.dat', 'Example_GroundMag_Bedrock_6000BC.des', 'Example_GroundMag_Bedrock_6000BC.dfn', 'Example_GroundMag_Bedrock_6000BC.met', 'Example_GroundMag_HillValley_1985.dat', 'Example_GroundMag_HillValley_1985.des', 'Example_GroundMag_HillValley_1985.dfn', 'Example_GroundMag_HillValley_1985.met', 'Example_Mag_Gondwana_200Ma.dat', 'Example_Mag_Gondwana_200Ma.des', 'Example_Mag_Gondwana_200Ma.dfn', 'Example_Mag_Gondwana_200Ma.met', 'Example_Mag_HillValley_1985.dat', 'Example_Mag_HillValley_1985.des', 'Example_Mag_HillValley_1985.dfn', 'Example_Mag_HillValley_1985.met', 'Example_Rad256_SeasameSt_2008.dat', 'Example_Rad256_SeasameSt_2008.des', 'Example_Rad256_SeasameSt_2008.dfn', 'Example_Rad256_SeasameSt_2008.met', 'Example_Rad_BowsersCastle_2012.dat', 'Example_Rad_BowsersCastle_2012.des', 'Example_Rad_BowsersCastle_2012.dfn', 'Example_Rad_BowsersCastle_2012.met', 'test_assorted.py']",['f7426f91b6f3da8854c4d2b831b0378a30ab40fc'],114,6620,6734,42,1.0,1.0,1.0
+83a07a11bad2918f77f3096541f406e4b9036399,Find .dat file for a given .dfn file,Kent Inverarity,217928@env.sa.gov.au,Kent Inverarity,217928@env.sa.gov.au,2018-07-27 15:23:40+09:30,-34200,2018-07-27 15:23:40+09:30,-34200,True,False,"['__init__.py', 'test_assorted.py']",['28dd41f6c3a0117104c0b214a112ddf5625f0ffc'],1,19,20,2,0.9333333333333333,0.9333333333333333,1.0
+ffa96e37e0e1f920066a2b81fa16173f7f172956,Remove outdated example,Kent Inverarity,217928@env.sa.gov.au,Kent Inverarity,217928@env.sa.gov.au,2018-07-27 15:50:21+09:30,-34200,2018-07-27 15:50:21+09:30,-34200,True,False,['README.md'],['83a07a11bad2918f77f3096541f406e4b9036399'],482,1,483,1,,,
+545584dffc6444ad75df3eea86c0f6b742c09dfa,provide option to join RT= & RT=DATA record types,Kent Inverarity,217928@env.sa.gov.au,Kent Inverarity,217928@env.sa.gov.au,2018-07-27 15:50:41+09:30,-34200,2018-07-27 15:50:41+09:30,-34200,True,False,['__init__.py'],['ffa96e37e0e1f920066a2b81fa16173f7f172956'],4,18,22,1,0.7272727272727273,0.7272727272727273,0.0
+6245fcaab6df2fcb2e79ec45b3672708798ef961,reading into dataframe with pandas chunked ok,Kent Inverarity,217928@env.sa.gov.au,Kent Inverarity,217928@env.sa.gov.au,2018-07-27 16:24:41+09:30,-34200,2018-07-27 16:24:41+09:30,-34200,True,False,['__init__.py'],['545584dffc6444ad75df3eea86c0f6b742c09dfa'],17,27,44,1,0.6666666666666666,0.6666666666666666,0.0
+400458d0773293d5054a104c0642f7a149a57199,parse data as whitespace delim or fixed width cols,Kent Inverarity,217928@env.sa.gov.au,Kent Inverarity,217928@env.sa.gov.au,2018-07-27 17:13:30+09:30,-34200,2018-07-27 17:13:30+09:30,-34200,True,False,['__init__.py'],['6245fcaab6df2fcb2e79ec45b3672708798ef961'],68,52,120,1,0.0,0.0,0.0
+fa417d55ce73571b3c041bf22ba643ddb447808d,add test dataset and code for iterrows & chunks,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-27 21:37:30+09:30,-34200,2018-07-27 21:37:30+09:30,-34200,True,False,"['GA1286_Waveforms.dat', 'GA1286_Waveforms.des', 'GA1286_Waveforms.dfn', 'README.md', 'test_datasets.py']",['400458d0773293d5054a104c0642f7a149a57199'],0,30984,30984,5,1.0,1.0,1.0
+6ec800a09adecf91377dbf978ba26bdd42ea256f,rework the API,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-27 21:46:12+09:30,-34200,2018-07-27 21:46:12+09:30,-34200,True,False,"['__init__.py', 'test_datasets.py']",['fa417d55ce73571b3c041bf22ba643ddb447808d'],6,10,16,2,1.0,1.0,1.0
+728689d6f76d6f9778ce26b37f773f0f31cab915,update readme,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-27 21:58:07+09:30,-34200,2018-07-27 21:58:07+09:30,-34200,True,False,"['README.md', '__init__.py']",['6ec800a09adecf91377dbf978ba26bdd42ea256f'],2,49,51,2,1.0,0.0,1.0
+825b50baf849d7d6ec0763aa69e12d36f89aaed6,update readme examples,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-27 22:18:59+09:30,-34200,2018-07-27 22:18:59+09:30,-34200,True,False,"['README.md', '__init__.py']",['728689d6f76d6f9778ce26b37f773f0f31cab915'],27,29,56,2,0.0,1.0,0.0
+565f4849219833f2ecbc6c5f77c63dea08d95f6f,"Add new example dataset from GA
+
+Contains fields with multiple values (#6)",Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-28 18:34:18+09:30,-34200,2018-07-28 18:34:18+09:30,-34200,True,False,"['Mugrave_WB_MGA52.dat', 'Mugrave_WB_MGA52.des', 'Mugrave_WB_MGA52.dfn', 'README.md']",['825b50baf849d7d6ec0763aa69e12d36f89aaed6'],3,423,426,4,,,
+44b5abec002c76f118361762336578849cc4692e,minor change to API - fields() -> field_names(),Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-28 18:34:50+09:30,-34200,2018-07-28 18:34:50+09:30,-34200,True,False,['README.md'],['565f4849219833f2ecbc6c5f77c63dea08d95f6f'],4,53,57,1,,,
+e8ffad7d49c9e582eee5ef924602952da5628156,should resolve #6 (parse multiple value fields),Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-28 18:35:16+09:30,-34200,2018-07-28 18:35:16+09:30,-34200,True,False,['__init__.py'],['44b5abec002c76f118361762336578849cc4692e'],77,126,203,1,0.9333333333333333,0.9333333333333333,0.6
+88c2fd8ad12101cebd62775dbc36b72618cb9ec1,Add get_field for multiple-value fields,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-28 20:59:28+09:30,-34200,2018-07-28 20:59:28+09:30,-34200,True,False,"['README.md', '__init__.py']",['e8ffad7d49c9e582eee5ef924602952da5628156'],19,350,369,2,1.0,1.0,0.0
+9aa4c9450ba3cdc1eb9d88553f2cf20f48b340ad,shorten README,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-28 21:06:24+09:30,-34200,2018-07-28 21:06:24+09:30,-34200,True,False,['README.md'],['88c2fd8ad12101cebd62775dbc36b72618cb9ec1'],255,43,298,1,,,
+3e594346ea162a8fb3febce4fd290a5031050aa9,"get field definitions by name and interpret NULLs
+
+(Issue #7)",Kent Inverarity,217928@env.sa.gov.au,Kent Inverarity,217928@env.sa.gov.au,2018-07-31 16:33:53+09:30,-34200,2018-07-31 16:33:53+09:30,-34200,True,False,['__init__.py'],['9aa4c9450ba3cdc1eb9d88553f2cf20f48b340ad'],4,23,27,1,0.0,1.0,0.0
+50a4489c386c729f72ffddd1f53af4bea96f0eb6,properly apply NaN to null values (#7),Kent Inverarity,217928@env.sa.gov.au,Kent Inverarity,217928@env.sa.gov.au,2018-07-31 17:26:56+09:30,-34200,2018-07-31 17:26:56+09:30,-34200,True,False,['__init__.py'],['3e594346ea162a8fb3febce4fd290a5031050aa9'],6,10,16,1,0.0,1.0,0.0
+ece130ec06306fe0c53fe5191728ac9dd39109f6,regression tests for #7,Kent Inverarity,217928@env.sa.gov.au,Kent Inverarity,217928@env.sa.gov.au,2018-07-31 17:42:32+09:30,-34200,2018-07-31 17:42:32+09:30,-34200,True,False,['test_datasets.py'],['50a4489c386c729f72ffddd1f53af4bea96f0eb6'],1,10,11,1,1.0,1.0,1.0
+3837bccf122f8ca9070ca40160642522cbd49adf,"use fields or column names for usecols=[] (#6)
+
+e.g.
+
+gdf.df(usecols=['LINE', 'Elev']) is possible
+
+- 'LINE' is both a field and a colum name
+- 'Elev' is a field. It is expanded internally in the
+  gdf.df() method into the column names
+  'Elev[0]', 'Elev[1]' etc.",Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-31 21:21:30+09:30,-34200,2018-07-31 21:21:30+09:30,-34200,True,False,['__init__.py'],['2ed120028a75bcae510ac81e7ede9eecb9faf946'],15,26,41,1,0.75,0.0,0.0
+615764e2b43c42c8ddc7042d6c6a69705fc81cab,use field or column names in gdf.get_field() (#6),Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-31 21:52:14+09:30,-34200,2018-07-31 21:52:14+09:30,-34200,True,False,"['__init__.py', 'test_datasets.py']",['3837bccf122f8ca9070ca40160642522cbd49adf'],14,20,34,2,0.0,0.0,0.0
+713f76d0eb91e79f724de54c1628c3c724954ef9,add regression test for #6,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-31 21:55:53+09:30,-34200,2018-07-31 21:55:53+09:30,-34200,True,False,['test_datasets.py'],['615764e2b43c42c8ddc7042d6c6a69705fc81cab'],0,12,12,1,1.0,1.0,1.0
+f8a42fd2d44239fd70f79cec0aad65daf0ef8be6,Add some details to README,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-31 22:17:55+09:30,-34200,2018-07-31 22:17:55+09:30,-34200,True,False,"['README.md', '__init__.py']",['713f76d0eb91e79f724de54c1628c3c724954ef9'],0,180,180,2,0.0,0.0,0.0
+1149bee5a2b4cf96101ed060b7d03d9f63ff7a0c,update readme,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2018-07-31 22:20:47+09:30,-34200,2018-07-31 22:20:47+09:30,-34200,True,False,['README.md'],['f8a42fd2d44239fd70f79cec0aad65daf0ef8be6'],163,31,194,1,,,
+05b5a3234677b14131209ad36f944a4637b42102,test notebook,Kent Inverarity,None,Kent Inverarity,None,2018-10-31 12:22:22+10:30,-37800,2018-10-31 12:22:22+10:30,-37800,True,False,['Untitled.ipynb'],['1149bee5a2b4cf96101ed060b7d03d9f63ff7a0c'],0,1237,1237,1,,,
+a1b588884a038c5efcf7e0a0d500764006a71bd1,simplify for pypi release,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 11:33:00+10:30,-37800,2019-02-24 11:33:00+10:30,-37800,True,False,"['__init__.py', '__version__.py', 'requirements.txt', 'setup.py']",['1149bee5a2b4cf96101ed060b7d03d9f63ff7a0c'],58,19,77,4,,,
+862b8c2f04364afc439782808c71ae6708c37e1a,black-ify code formatting,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 11:34:32+10:30,-37800,2019-02-24 11:34:32+10:30,-37800,True,False,"['__init__.py', 'test_assorted.py', 'test_datasets.py']",['a1b588884a038c5efcf7e0a0d500764006a71bd1'],146,207,353,3,0.0,0.7272727272727273,0.6818181818181818
+e2a66f1ed90bd0f50f51c988051079799ae6befb,Add Travis CI testing,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 11:36:05+10:30,-37800,2019-02-24 11:36:05+10:30,-37800,True,False,['.travis.yml'],['a1b588884a038c5efcf7e0a0d500764006a71bd1'],0,22,22,1,,,
+f472350505667b3144ca237eb47c6c050952ee4f,add 3.3,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 11:41:23+10:30,-37800,2019-02-24 11:41:23+10:30,-37800,True,False,['.travis.yml'],['e2a66f1ed90bd0f50f51c988051079799ae6befb'],0,1,1,1,,,
+c11be48b12d3c0a013fe649a4c9b5aefb0966803,Fix py2.7 bug,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 11:42:47+10:30,-37800,2019-02-24 11:42:47+10:30,-37800,True,False,['setup.py'],['f472350505667b3144ca237eb47c6c050952ee4f'],1,1,2,1,,,
+b8022677a470612fae021a78ae374e565cfbd0a5,remove 3.4 and 3.7,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 11:46:08+10:30,-37800,2019-02-24 11:46:08+10:30,-37800,True,False,['.travis.yml'],['c11be48b12d3c0a013fe649a4c9b5aefb0966803'],2,0,2,1,,,
+1243bdd0dc0c7af36c26814ecdff308809c65d7a,attempt to improve travis CI config,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 12:32:47+10:30,-37800,2019-02-24 12:32:47+10:30,-37800,True,False,['.travis.yml'],['b8022677a470612fae021a78ae374e565cfbd0a5'],1,2,3,1,,,
+83ac2381a1bd28acecddd4c79f7a4d3caf285b41,"remove py 3.4, too slow",Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 12:36:48+10:30,-37800,2019-02-24 12:36:48+10:30,-37800,True,False,['.travis.yml'],['1243bdd0dc0c7af36c26814ecdff308809c65d7a'],1,1,2,1,,,
+314c746d96113c6db2f974ab968fa66215fd4c7d,add bump2version config file,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 12:40:31+10:30,-37800,2019-02-24 12:40:31+10:30,-37800,True,False,['.bumpversion.cfg'],['a1b588884a038c5efcf7e0a0d500764006a71bd1'],0,10,10,1,,,
+231d5231ece65e4280abee275c20df8c509786ad,refactor code to gdf2.py,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 12:44:07+10:30,-37800,2019-02-24 12:44:07+10:30,-37800,True,False,"['__init__.py', 'gdf2.py']",['314c746d96113c6db2f974ab968fa66215fd4c7d'],260,275,535,2,0.14285714285714285,0.14285714285714285,0.0
+090744e7478fb28fb5b06c9d76a6a9f40b9a82a5,Add tutorial notebooks,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 15:57:11+10:30,-37800,2019-02-24 15:57:11+10:30,-37800,True,False,"['README.md', 'README.md', 'tutorial1.ipynb']",['91940c33f32c8f5b259a7db33dc95a55b8bfde17'],0,1126,1126,3,,,
+7e5042a9376d62a84b712d1135969ae181eea678,Add gdf.nrecords attribute for size of data table,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 16:31:45+10:30,-37800,2019-02-24 16:31:45+10:30,-37800,True,False,['gdf2.py'],['91940c33f32c8f5b259a7db33dc95a55b8bfde17'],1,28,29,1,1.0,1.0,0.9545454545454546
+0a7fe080081ff7557e61435602a3b6b3ad11b53d,"In progress - refactor
+
+What is the deal with this unplanned refactor?
+
+Two engines for reading the .dat file, mostly about
+the format of the output: dask and pandas.
+
+You might want dask vs pandas for different reasons.
+
+Implementation?
+
+gdf = aseg_gdf2.read(..., engine=""pandas"") (or engine=""dask"")
+
+gdf.pandas == aseg_gdf2.PandasEngine object
+gdf.dask == aseg.gdf2.DaskEngine object
+
+both subclasses of Engine as far as possible
+
+gdf.df methods all go to the default engine property (both
+are present)
+
+Beyond that, not sure.",Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-02-24 21:39:17+10:30,-37800,2019-02-24 21:39:17+10:30,-37800,True,False,"['gdf2.py', 'tutorial2.ipynb', 'tutorial3.ipynb']",['7e5042a9376d62a84b712d1135969ae181eea678'],16,5654,5670,3,0.4090909090909091,0.4090909090909091,0.13636363636363635
+0cf9acc359684cf3cd1f060f147d7c2257048bba,"Fix #16 - itertuples problem
+
+df.itertuples() silently fails to handle column names which are not valid
+Python identifiers e.g. Elev[0], Elev[1] and so on.
+
+also fixed a bug where df.iterrows() only has the index=False keyword in
+pandas 0.24+
+
+Signed-off-by: Kent Inverarity <None>",Kent Inverarity,None,Kent Inverarity,None,2019-04-23 05:59:23+09:30,-34200,2019-04-23 05:59:23+09:30,-34200,True,False,['gdf2.py'],['91940c33f32c8f5b259a7db33dc95a55b8bfde17'],2,3,5,1,,,
+44a80298b66788891cea07a182710c698cc42ae9,update for v0.1.1,Kent Inverarity,None,Kent Inverarity,None,2019-04-23 06:09:25+09:30,-34200,2019-04-23 06:09:25+09:30,-34200,True,False,"['.bumpversion.cfg', 'CHANGELOG.md', '__init__.py', 'setup.py']",['0cf9acc359684cf3cd1f060f147d7c2257048bba'],3,7,10,4,,,
+e35c4b0e2927decbaa8ca8714445e8dbb8c11c5e,Bump version: 0.1.1 → 0.1.2,Kent Inverarity,None,Kent Inverarity,None,2019-04-23 06:09:30+09:30,-34200,2019-04-23 06:09:30+09:30,-34200,True,False,"['.bumpversion.cfg', '__init__.py', 'setup.py']",['44a80298b66788891cea07a182710c698cc42ae9'],4,3,7,3,,,
+b58c4db47889f149344a95ad395d3ad976adb8c9,"Mistake with bump2version
+
+Signed-off-by: Kent Inverarity <None>",Kent Inverarity,None,Kent Inverarity,None,2019-04-23 06:11:22+09:30,-34200,2019-04-23 06:11:22+09:30,-34200,True,False,['CHANGELOG.md'],['e35c4b0e2927decbaa8ca8714445e8dbb8c11c5e'],1,1,2,1,,,
+bb59fa0aec4cd121556ab7f4b050590abb01dc93,still a lot of work to do on this refactor,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-07-22 22:15:28+09:30,-34200,2019-07-22 22:15:28+09:30,-34200,True,False,"['README.md', 'gdf2.py']",['e4aa54ae714a6bc3af0f92d9d3b6a8a5ac5202c0'],39,46,85,2,0.0,0.0,1.0
+9e5fd1211617b5ea8d072c159483516a7c840f3b,Update README.md,Kent Inverarity,kinverarity@hotmail.com,GitHub,noreply@github.com,2019-08-30 13:16:56+09:30,-34200,2019-08-30 13:16:56+09:30,-34200,True,False,['README.md'],['bb59fa0aec4cd121556ab7f4b050590abb01dc93'],2,2,4,1,,,
+3bb1eb639dde2937e6bb0b06831a79c756468ee7,"Update tutorials
+
+Still more work. The main stuff is to:
+
+Make field expansion work transparently. ""Elev"" should work the same as [""Elev[0]"", ..., ""Elev[19]""].",Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-09-02 06:53:06+09:30,-34200,2019-09-02 06:53:16+09:30,-34200,True,False,"['gdf2.py', '1 - Quick start.ipynb', '2 - Reading large files by line number.ipynb', '3 - Use dask to read a DAT file too big to fit in memory.ipynb', 'tutorial3.ipynb']",['6b353190fe0220ac1afe9705957cd50adf7b105c'],242,3606,3848,5,0.0,0.6666666666666666,1.0
+b47f7c84c0c97c655d13c632106584ed69bb4c08,Finally update dask/pandas refactor,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-10-20 20:39:30+10:30,-37800,2019-10-20 20:39:30+10:30,-37800,True,False,"['README.md', 'gdf2.py', '1 - Quick start.ipynb', '3 - Use dask to read a DAT file too big to fit in memory.ipynb']",['3bb1eb639dde2937e6bb0b06831a79c756468ee7'],518,846,1364,4,0.42857142857142855,0.42857142857142855,0.2571428571428571
+e95b17c0005ff87131a8d47f9101de607887fc99,Update regression tests for new API,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-10-21 12:10:10+10:30,-37800,2019-10-21 12:10:10+10:30,-37800,True,False,"['setup.py', 'test_assorted.py', 'test_datasets.py']",['b47f7c84c0c97c655d13c632106584ed69bb4c08'],28,57,85,3,0.9230769230769231,1.0,1.0
+b6cafb5a136d00540a01208e8a7570eb44372bb5,Fix nrecords bug,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-10-21 12:16:33+10:30,-37800,2019-10-21 12:17:19+10:30,-37800,True,False,['gdf2.py'],['e95b17c0005ff87131a8d47f9101de607887fc99'],1,11,12,1,1.0,1.0,1.0
+354cd59ea43c4f825c493e7869f4365774736e9c,Add release notes,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-10-21 12:29:31+10:30,-37800,2019-10-21 12:29:31+10:30,-37800,True,False,"['CHANGELOG.md', 'README.md']",['b6cafb5a136d00540a01208e8a7570eb44372bb5'],7,12,19,2,,,
+f562a646afb32f8248dd8bdefeb19caf07c25fcf,Tweak Travis install script,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-10-21 12:31:22+10:30,-37800,2019-10-21 12:31:22+10:30,-37800,True,False,['.travis.yml'],['354cd59ea43c4f825c493e7869f4365774736e9c'],1,1,2,1,,,
+21227b26ce441efce4940ddd037944d3a5091bbe,try different approach,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-10-21 12:33:36+10:30,-37800,2019-10-21 12:33:36+10:30,-37800,True,False,['.travis.yml'],['f562a646afb32f8248dd8bdefeb19caf07c25fcf'],1,1,2,1,,,
+0323aee1a202984a6cbc1d1b1cfc63803d1eb83c,remove py27 testing,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-10-21 12:35:28+10:30,-37800,2019-10-21 12:35:28+10:30,-37800,True,False,['.travis.yml'],['21227b26ce441efce4940ddd037944d3a5091bbe'],1,1,2,1,,,
+57ccf1ce0387a689598144a16654ee7470c7e22d,Bump version: 0.1.2 → 0.2.0,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2019-10-21 12:35:45+10:30,-37800,2019-10-21 12:35:45+10:30,-37800,True,False,"['.bumpversion.cfg', '__init__.py', 'setup.py']",['0323aee1a202984a6cbc1d1b1cfc63803d1eb83c'],3,3,6,3,,,
+f7fce477e3d843ac8eb127eb417b32460e6e39e0,Add get_column_definitions() func to fix method='fixed-widths',Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2020-03-04 22:28:45+10:30,-37800,2020-03-04 22:28:45+10:30,-37800,True,False,['gdf2.py'],['57ccf1ce0387a689598144a16654ee7470c7e22d'],21,58,79,1,0.0,0.92,0.92
+fe28d028d2b85102a02945f186579b90ed493cf0,Add version 0.3 release notes,Kent Inverarity,,Kent Inverarity,,2020-09-16 15:56:03+09:30,-34200,2020-09-16 15:56:03+09:30,-34200,True,False,['README.md'],['f7fce477e3d843ac8eb127eb417b32460e6e39e0'],0,3,3,1,,,
+95b95841dfb276daf5bfa5b08045eece212a8e1f,Bump version: 0.2.0 → 0.3.0,Kent Inverarity,,Kent Inverarity,,2020-09-16 15:56:15+09:30,-34200,2020-09-16 15:56:15+09:30,-34200,True,False,"['.bumpversion.cfg', '__init__.py', 'setup.py']",['fe28d028d2b85102a02945f186579b90ed493cf0'],4,3,7,3,,,
+07283895c7074d12d23baa23ec1b3785d44f252d,Update README.md,Kent Inverarity,kinverarity@hotmail.com,GitHub,noreply@github.com,2020-09-16 16:03:09+09:30,-34200,2020-09-16 16:03:09+09:30,-34200,True,False,['README.md'],['95b95841dfb276daf5bfa5b08045eece212a8e1f'],1,1,2,1,,,
+46fede052d3f54673429493d9fe7e6261a60eeec,Update README.md,Kent Inverarity,kinverarity@hotmail.com,GitHub,noreply@github.com,2020-09-16 16:04:07+09:30,-34200,2020-09-16 16:04:07+09:30,-34200,True,False,['README.md'],['07283895c7074d12d23baa23ec1b3785d44f252d'],1,1,2,1,,,
+82e7a51f506bf18d2d4cef675d8155a06877481c,add all three tutorials,Kent Inverarity,kinverarity@hotmail.com,GitHub,noreply@github.com,2020-09-16 16:05:36+09:30,-34200,2020-09-16 16:05:36+09:30,-34200,True,False,['README.md'],['46fede052d3f54673429493d9fe7e6261a60eeec'],1,3,4,1,,,
+68941907f54d566e5857d0c97a0a928a196c3e8e,Rename 1 - Quick start.ipynb to tutorial1.ipynb,Kent Inverarity,kinverarity@hotmail.com,GitHub,noreply@github.com,2020-09-16 16:06:01+09:30,-34200,2020-09-16 16:06:01+09:30,-34200,True,False,['tutorial1.ipynb'],['82e7a51f506bf18d2d4cef675d8155a06877481c'],0,0,0,1,,,
+8635b614e63910042bf3f5cfdf0d2a63cb83a12d,Rename 2 - Reading large files by line number.ipynb to tutorial2.ipynb,Kent Inverarity,kinverarity@hotmail.com,GitHub,noreply@github.com,2020-09-16 16:06:26+09:30,-34200,2020-09-16 16:06:26+09:30,-34200,True,False,['tutorial2.ipynb'],['68941907f54d566e5857d0c97a0a928a196c3e8e'],0,0,0,1,,,
+ff79b8faab36fc78205fa5919ff2b881d8b5b0ce,Rename 3 - Use dask to read a DAT file too big to fit in memory.ipynb to tutorial3.ipynb,Kent Inverarity,kinverarity@hotmail.com,GitHub,noreply@github.com,2020-09-16 16:06:47+09:30,-34200,2020-09-16 16:06:47+09:30,-34200,True,False,['tutorial3.ipynb'],['8635b614e63910042bf3f5cfdf0d2a63cb83a12d'],0,0,0,1,,,
+25bae8fd4a0d251bcda2ccdd8d9d88c3defcc996,Update .travis.yml,Kent Inverarity,kinverarity@hotmail.com,GitHub,noreply@github.com,2020-09-16 16:09:40+09:30,-34200,2020-09-16 16:09:40+09:30,-34200,True,False,['.travis.yml'],['479f2e39bd29a870485e9615c22ca5f75deb2c1a'],4,2,6,1,,,
+f48005e591adf48f1780e292f9e4ae7a5a42eaa9,Fix regex DeprecationWarning in gdf2.py,dcslagel,dcs@mailworks.org,dcslagel,dcs@mailworks.org,2020-10-04 11:29:24-06:00,21600,2020-10-04 11:29:24-06:00,21600,True,False,['gdf2.py'],['25bae8fd4a0d251bcda2ccdd8d9d88c3defcc996'],2,2,4,1,,,
+eff0c3a82e033e2314c459785a8da2354946a19e,"Add GDF2 class tests
+
+- Add separate test file for GDF2 specific tests
+- Add test for GDF2's repr which will include the number of records
+- Add test for GDF2.get_column_definitions()",dcslagel,dcs@mailworks.org,dcslagel,dcs@mailworks.org,2020-10-11 12:08:28-06:00,21600,2020-10-11 12:08:37-06:00,21600,True,False,['test_gdf2_class.py'],['48a0ee153a58116bd2330e4838ef8489d14bb355'],0,38,38,1,1.0,1.0,1.0
+4af393dbb329548d1c93c0ea86b3bbdfdb782bd1,"Fix GDF2 repr test
+
+- Fix broken assert statements
+- change __repr__ call to check self.nrecords instead of self._nrecords
+  nrecords will call the nrecords() method and check the current number
+  of records.",dcslagel,dcs@mailworks.org,dcslagel,dcs@mailworks.org,2020-10-12 07:39:46-06:00,21600,2020-10-12 07:46:43-06:00,21600,True,False,"['gdf2.py', 'test_gdf2_class.py']",['eff0c3a82e033e2314c459785a8da2354946a19e'],4,3,7,2,0.0,0.0,0.0
+a1c6d0b999e9d6b61b5114ada4fdd8292bf9a55f,"Improve GDF repr test per review
+
+- Revert call to nrecord to  _nrecord so that nrecord is only called
+  when needed because it will take time on larger files.
+- Add code and asserts to demonstrate the _nrecord/nrecord behavior in
+  gdf.__repr__() calls",dcslagel,dcs@mailworks.org,dcslagel,dcs@mailworks.org,2020-10-26 08:04:34-06:00,21600,2020-10-26 08:04:41-06:00,21600,True,False,"['gdf2.py', 'test_gdf2_class.py']",['4af393dbb329548d1c93c0ea86b3bbdfdb782bd1'],4,10,14,2,1.0,1.0,1.0
+9d07c2aad597570f852c4a29ef7ac13ff876c938,"Make GDF2._read_dat lazy
+
+This means changes to GDF2.record_types will be applied when
+using the read engines.",Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2021-02-04 20:47:04+10:30,-37800,2021-02-04 20:47:04+10:30,-37800,True,False,['gdf2.py'],['51cee56ac59373c5513a315353dae855daaa1efe'],13,18,31,1,1.0,1.0,1.0
+d10252816f4f464fef3913d96f1662ad36b48be6,Add experimental dtype support,Kent Inverarity,kinverarity@hotmail.com,Kent Inverarity,kinverarity@hotmail.com,2021-02-05 11:09:21+10:30,-37800,2021-02-05 11:09:21+10:30,-37800,True,False,['gdf2.py'],['93dca7844809d3cde962a2700603f9af596f5202'],0,94,94,1,0.6829268292682927,0.6829268292682927,0.5121951219512195
+56bb34bfcdba3623e4183274961198efc6862aa6,Update versioning,Kent Inverarity,kent@nowhere,Kent Inverarity,kent@nowhere,2023-11-30 13:40:51+10:30,-37800,2023-11-30 13:40:51+10:30,-37800,True,False,"['.bumpversion.cfg', 'python-publish.yml', '.travis.yml', 'requirements.txt', 'setup.py']",['7354eaa072fae50ba833709285859dae31f51e82'],31,41,72,5,,,
+d187a1fd08f1a89bd20a1b1f04b7b2ee5e18c23b,Update,Kent Inverarity,kent@nowhere,Kent Inverarity,kent@nowhere,2023-11-30 13:44:54+10:30,-37800,2023-11-30 13:44:54+10:30,-37800,True,False,['setup.py'],['56bb34bfcdba3623e4183274961198efc6862aa6'],1,0,1,1,,,
+a5f46171c35594d458bc9fddf9ffc0331df69bae,Update,Kent Inverarity,kent@nowhere,Kent Inverarity,kent@nowhere,2023-12-01 14:18:54+10:30,-37800,2023-12-01 14:18:54+10:30,-37800,True,False,"['pyproject.toml', 'requirements.txt', 'setup.py']",['d187a1fd08f1a89bd20a1b1f04b7b2ee5e18c23b'],3,10,13,3,,,

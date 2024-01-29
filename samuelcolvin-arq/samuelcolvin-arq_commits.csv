@@ -1,0 +1,1499 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+19b67923409feb2083c143d6c2d23766f3208613,initial commit,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-21 19:23:45+01:00,-3600,2016-07-21 19:23:45+01:00,-3600,True,False,"['.gitignore', '__init__.py', 'main.py', 'utils.py', 'worker.py']",[],0,246,246,5,0.7398373983739838,0.8943089430894309,0.6504065040650406
+7dd40f3db2c562c0ae947355ee33ba39ed6b3a34,enabling worker asyncio concurrency and much more,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-22 17:50:44+01:00,-3600,2016-07-22 17:50:44+01:00,-3600,True,False,"['main.py', 'utils.py', 'worker.py', 'requirements.txt']",['19b67923409feb2083c143d6c2d23766f3208613'],107,225,332,4,0.8285714285714286,1.0,0.4714285714285714
+71fb33821595e2664dfbcbf37c545af393c599de,add batch mode,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-22 19:19:02+01:00,-3600,2016-07-22 19:19:02+01:00,-3600,True,False,['worker.py'],['7dd40f3db2c562c0ae947355ee33ba39ed6b3a34'],10,29,39,1,0.0,0.0,0.6875
+7434f598379fca0f5d166f086f4a80c7be08fe8d,rename aq > arq,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-27 21:09:34+01:00,-3600,2016-07-27 21:09:34+01:00,-3600,True,False,"['__init__.py', 'main.py', 'utils.py', 'worker.py']",['71fb33821595e2664dfbcbf37c545af393c599de'],2,2,4,4,,,
+70dbe0e857387ecd4996e2e9bd76816f5b71e0c5,adding tests and setup,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-27 22:15:41+01:00,-3600,2016-07-27 22:23:42+01:00,-3600,True,False,"['.travis.yml', 'LICENSE', 'README.md', '__init__.py', 'main.py', 'version.py', 'worker.py', 'requirements.txt', 'setup.cfg', 'setup.py', '__init__.py', 'conftest.py', 'fixtures.py', 'requirements.txt', 'test_dispatch.py']",['7434f598379fca0f5d166f086f4a80c7be08fe8d'],15,287,302,15,1.0,1.0,0.8735632183908046
+141da53aa8209998013c098e94daf011ee44c615,add coverage combine,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-27 22:28:02+01:00,-3600,2016-07-27 22:28:02+01:00,-3600,True,False,['.travis.yml'],['70dbe0e857387ecd4996e2e9bd76816f5b71e0c5'],0,1,1,1,,,
+b6315d2e39ad8ed64548ba1fc285ecfeaa5f3669,starting redis tests,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-27 23:24:39+01:00,-3600,2016-07-27 23:33:42+01:00,-3600,True,False,"['main.py', 'worker.py', 'conftest.py', 'test_dispatch.py']",['141da53aa8209998013c098e94daf011ee44c615'],34,67,101,4,1.0,1.0,1.0
+a850c92e6d52aa72ba3a8d483de71d51d7a9c2b3,"worker class > shadow, worker tests",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-29 12:40:22+01:00,-3600,2016-07-29 12:40:22+01:00,-3600,True,False,"['.gitignore', 'main.py', 'worker.py', 'runtests.sh', 'conftest.py', 'fixtures.py', 'test_dispatch.py', 'test_main.py', 'test_worker.py']",['b6315d2e39ad8ed64548ba1fc285ecfeaa5f3669'],189,306,495,9,1.0,1.0,0.4177215189873418
+274c3d30a26e01df41faa80c4a2c0ac2d6de7971,remove modes,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-29 14:19:04+01:00,-3600,2016-07-29 14:19:04+01:00,-3600,True,False,"['main.py', 'mock_redis.py', 'utils.py', 'worker.py', 'conftest.py', 'fixtures.py', 'test_main.py', 'test_worker.py']",['a850c92e6d52aa72ba3a8d483de71d51d7a9c2b3'],134,186,320,8,0.725,0.7,0.75
+b2324f4c4ee8b51dc54e28e506449d107928b0e0,test fix and arg display tests,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-29 14:55:53+01:00,-3600,2016-07-29 14:55:53+01:00,-3600,True,False,"['main.py', 'mock_redis.py', 'conftest.py', 'fixtures.py', 'test_main.py', 'test_worker.py']",['274c3d30a26e01df41faa80c4a2c0ac2d6de7971'],38,70,108,6,0.9473684210526315,1.0,0.631578947368421
+2030e3d4bd32633b8a693076bd0440e238ab626a,adding click cli and handling exit,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-29 19:09:01+01:00,-3600,2016-07-29 19:09:01+01:00,-3600,True,False,"['cli.py', 'worker.py', 'setup.py', 'conftest.py', 'fixtures.py', 'test_main.py']",['b2324f4c4ee8b51dc54e28e506449d107928b0e0'],37,176,213,6,0.9866666666666667,1.0,0.29333333333333333
+c32ccec68aae6d0730ae8ca47ae24705de24a132,fix tests for cli logging,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-29 19:22:10+01:00,-3600,2016-07-29 19:26:39+01:00,-3600,True,False,"['worker.py', 'test_main.py']",['2030e3d4bd32633b8a693076bd0440e238ab626a'],7,11,18,2,0.4,1.0,0.2
+fe049f97a4ca6cb5c4e425177c2e623aa6d5cd5e,"cli tests and worker,job cleanup",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 15:59:13+01:00,-3600,2016-07-30 16:00:01+01:00,-3600,True,False,"['README.md', 'cli.py', 'main.py', 'worker.py', 'conftest.py', 'test_cli.py', 'test_main.py', 'test_worker.py']",['c32ccec68aae6d0730ae8ca47ae24705de24a132'],92,192,284,8,0.6779661016949152,1.0,1.0
+edf964ae09405328b2908765bef63249cccdee61,cli and more worker tests,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 18:11:30+01:00,-3600,2016-07-30 18:11:30+01:00,-3600,True,False,"['cli.py', 'worker.py', 'conftest.py', 'example.py', 'fixtures.py', 'test_cli.py', 'test_main.py', 'test_worker.py']",['fe049f97a4ca6cb5c4e425177c2e623aa6d5cd5e'],93,191,284,8,0.6833333333333333,0.9833333333333333,0.5
+fd1478afb22757a6cc577cbae7003c7e419619ed,more tests on worker exceptions,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 18:48:40+01:00,-3600,2016-07-30 18:48:40+01:00,-3600,True,False,"['worker.py', 'conftest.py', 'example.py', 'fixtures.py', 'test_worker.py']",['edf964ae09405328b2908765bef63249cccdee61'],24,80,104,5,1.0,1.0,0.22580645161290322
+bf4324cdfcf661ef4c6d5468e261b0c0ba97ef31,setup and deploy,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 19:00:34+01:00,-3600,2016-07-30 19:00:34+01:00,-3600,True,False,['setup.py'],['fd1478afb22757a6cc577cbae7003c7e419619ed'],5,6,11,1,,,
+23e9e90263f48e59095b213a219ca9f9eee1344d,adding example to readme,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 19:25:09+01:00,-3600,2016-07-30 19:25:09+01:00,-3600,True,False,"['README.md', 'setup.py']",['bf4324cdfcf661ef4c6d5468e261b0c0ba97ef31'],6,64,70,2,,,
+a7f97ee5672e12324fac5cd67c42809cad726189,correct readme,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 19:27:49+01:00,-3600,2016-07-30 19:27:49+01:00,-3600,True,False,['README.md'],['23e9e90263f48e59095b213a219ca9f9eee1344d'],4,5,9,1,,,
+4547054f1f766714f5944e206874dd8df40a945c,close shadows on worker close,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 19:33:05+01:00,-3600,2016-07-30 19:33:05+01:00,-3600,True,False,['worker.py'],['a7f97ee5672e12324fac5cd67c42809cad726189'],0,2,2,1,1.0,1.0,1.0
+9e0200ab18fd4f5f7ce2099036efd257046c4433,improved logging,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 21:14:44+01:00,-3600,2016-07-30 21:14:44+01:00,-3600,True,False,"['README.md', 'cli.py', 'logs.py', 'main.py', 'worker.py', 'conftest.py', 'fixtures.py', 'test_main.py', 'test_worker.py']",['4547054f1f766714f5944e206874dd8df40a945c'],188,226,414,9,0.29411764705882354,1.0,0.9705882352941176
+27aeff5fa7de0bc610284f4e97d6a8337d55f674,correct handle_sig logging,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 21:21:45+01:00,-3600,2016-07-30 21:21:45+01:00,-3600,True,False,['worker.py'],['9e0200ab18fd4f5f7ce2099036efd257046c4433'],1,2,3,1,1.0,1.0,0.0
+1f56ee62fda52adff0e53972495e223469a427dd,signal tests and auto shadow_factory,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 22:06:30+01:00,-3600,2016-07-30 22:06:30+01:00,-3600,True,False,"['README.md', 'main.py', 'utils.py', 'worker.py', 'conftest.py', 'example.py', 'fixtures.py', 'test_cli.py', 'test_main.py', 'test_worker.py']",['27aeff5fa7de0bc610284f4e97d6a8337d55f674'],28,125,153,10,0.49230769230769234,1.0,0.0
+c9d884bd02e8f947f6da8afb49a7490b901a0dde,randomised quit queue,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-30 22:17:57+01:00,-3600,2016-07-30 22:17:57+01:00,-3600,True,False,"['utils.py', 'worker.py', 'test_main.py']",['1f56ee62fda52adff0e53972495e223469a427dd'],11,16,27,3,0.6666666666666666,1.0,0.3333333333333333
+c2cde555429479d7f51170580f00406a946885fa,auto deploy to pypi,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-31 11:02:44+01:00,-3600,2016-07-31 11:12:39+01:00,-3600,True,False,"['.travis.yml', 'version.py']",['c9d884bd02e8f947f6da8afb49a7490b901a0dde'],15,17,32,2,,,
+641a36526bffb30d0c96d3d41ba9820126f1efc0,"improving test coverage, rearrange function order",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-31 12:56:23+01:00,-3600,2016-07-31 12:56:23+01:00,-3600,True,False,"['logs.py', 'mock_redis.py', 'worker.py', 'conftest.py', 'fixtures.py', 'test_main.py', 'test_worker.py']",['c2cde555429479d7f51170580f00406a946885fa'],69,137,206,7,1.0,0.9166666666666666,0.6458333333333334
+cdd36a6f65ad5517e4266b1485a0cd199802d63e,"uprev aioredis, add get_redis_conn, better redis close",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-31 14:34:59+01:00,-3600,2016-07-31 14:34:59+01:00,-3600,True,False,"['main.py', 'mock_redis.py', 'utils.py', 'worker.py', 'setup.py']",['641a36526bffb30d0c96d3d41ba9820126f1efc0'],5,18,23,5,1.0,1.0,1.0
+9d2b0fc0a35e6fcf82d39cf1064bdd018b767c24,add binding of direct methods,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-31 16:00:52+01:00,-3600,2016-07-31 16:00:52+01:00,-3600,True,False,"['main.py', 'worker.py', 'test_main.py', 'test_worker.py']",['cdd36a6f65ad5517e4266b1485a0cd199802d63e'],14,81,95,4,1.0,1.0,0.9811320754716981
+f98ae5481c5b36d55bb314a0018b0a9d8c9c5950,"adding run_worker util, uprev.",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-31 20:06:08+01:00,-3600,2016-07-31 20:06:08+01:00,-3600,True,False,"['README.md', 'test_tools.py', 'utils.py', 'version.py', 'setup.py', 'conftest.py', 'fixtures.py', 'test_main.py']",['9d2b0fc0a35e6fcf82d39cf1064bdd018b767c24'],10,73,83,8,1.0,1.0,0.5365853658536586
+8873600d3bc425feca49f37b0e798b9a1455a770,AbstractWorker > BaseWorker and worker kwargs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-31 21:41:29+01:00,-3600,2016-07-31 21:41:29+01:00,-3600,True,False,"['README.md', 'test_tools.py', 'testing.py', 'worker.py', 'setup.py', 'conftest.py', 'example.py', 'fixtures.py', 'test_cli.py', 'test_main.py', 'test_worker.py']",['f98ae5481c5b36d55bb314a0018b0a9d8c9c5950'],304,307,611,11,0.0,0.0,1.0
+57ea62d05164f451c55da4ff3283617e48e7a040,more to ConnectionSettings,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-31 22:13:23+01:00,-3600,2016-07-31 22:13:23+01:00,-3600,True,False,"['utils.py', 'worker.py', 'test_main.py']",['8873600d3bc425feca49f37b0e798b9a1455a770'],15,30,45,3,1.0,1.0,1.0
+6c36c0b2df935fe1df4cdc2e01623dbb4b945711,move and expand settings tests,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-07-31 23:02:48+01:00,-3600,2016-07-31 23:11:51+01:00,-3600,True,False,"['worker.py', 'test_main.py', 'test_utils.py', 'test_worker.py']",['57ea62d05164f451c55da4ff3283617e48e7a040'],10,22,32,4,1.0,1.0,1.0
+9817dff816aa4c7ffdac374f0980233ea69152a3,add support for job timeouts,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-04 12:07:19+01:00,-3600,2016-08-04 12:07:19+01:00,-3600,True,False,"['README.md', 'worker.py', 'fixtures.py', 'test_main.py', 'test_worker.py']",['6c36c0b2df935fe1df4cdc2e01623dbb4b945711'],9,44,53,5,0.3,1.0,0.7333333333333333
+6f1c47c3a5ee624d6df22ca5286049bc0ee19b63,improved logging with ellipsis,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-04 12:27:18+01:00,-3600,2016-08-04 12:27:18+01:00,-3600,True,False,"['main.py', 'utils.py', 'worker.py', 'test_worker.py']",['9817dff816aa4c7ffdac374f0980233ea69152a3'],17,15,32,4,0.0,1.0,1.0
+a983d4afddf348df46c86c78f78e42b2ff0d3e06,moving to seperate loggers for work and jobs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-04 12:44:26+01:00,-3600,2016-08-04 12:44:26+01:00,-3600,True,False,"['logs.py', 'testing.py', 'worker.py', 'test_main.py', 'test_worker.py']",['6f1c47c3a5ee624d6df22ca5286049bc0ee19b63'],49,64,113,5,0.6923076923076923,1.0,0.9230769230769231
+c3900e95c45eb5683bcbfb3119a223d2aa98751d,prevent repeat worker close,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-04 13:10:47+01:00,-3600,2016-08-04 13:10:47+01:00,-3600,True,False,"['worker.py', 'test_main.py', 'test_worker.py']",['a983d4afddf348df46c86c78f78e42b2ff0d3e06'],19,21,40,3,0.5,0.5,0.5
+260e3a1b145cf8f0f24406eb409ff9264e6531c4,commented out test for repeat close,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-04 16:56:21+01:00,-3600,2016-08-05 12:41:57+01:00,-3600,True,False,"['worker.py', 'test_worker.py']",['c3900e95c45eb5683bcbfb3119a223d2aa98751d'],1,34,35,2,1.0,1.0,0.0
+f403be029eed12afc8825d23737f4b3cf8c90991,correcting asyncio loop usage in tests,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-05 14:50:35+01:00,-3600,2016-08-05 14:50:35+01:00,-3600,True,False,"['testing.py', 'worker.py', 'test_worker.py']",['260e3a1b145cf8f0f24406eb409ff9264e6531c4'],28,29,57,3,1.0,1.0,0.0
+aab7b8c1875c5d20c96f03dccb96b10ac9ac5428,"uprev., better support for RedisMixin inheritance",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-05 15:22:19+01:00,-3600,2016-08-05 15:22:19+01:00,-3600,True,False,"['utils.py', 'version.py']",['f403be029eed12afc8825d23737f4b3cf8c90991'],3,3,6,2,,,
+0e13031e86781d1acbea4d183f1281ade658b6af,import sorting,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-05 15:53:44+01:00,-3600,2016-08-05 15:53:44+01:00,-3600,True,False,"['.travis.yml', 'cli.py', 'main.py', 'testing.py', 'utils.py', 'worker.py', 'runtests.sh', 'isort_test.sh', 'requirements.txt']",['aab7b8c1875c5d20c96f03dccb96b10ac9ac5428'],10,21,31,9,,,
+15c6fcccf9b894371b975847230babd52a66e386,settings on worker and imporved ConnectionSettings,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-07 13:12:23+01:00,-3600,2016-08-07 13:34:58+01:00,-3600,True,False,"['.travis.yml', 'utils.py', 'worker.py', 'fixtures.py', 'test_utils.py']",['0e13031e86781d1acbea4d183f1281ade658b6af'],5,62,67,5,1.0,0.6428571428571429,0.4642857142857143
+05384b6eaaa30d658e2344b7ff425ed830c7b062,improving README,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-07 17:11:45+01:00,-3600,2016-08-07 17:24:42+01:00,-3600,True,False,"['README.md', 'README.md', '__init__.py', 'jobs.py', 'test_arq.py', 'test_rq.py']",['15c6fcccf9b894371b975847230babd52a66e386'],5,151,156,6,1.0,1.0,1.0
+03b82d63b3f5461ee18278ac1abb2f0e349582ff,future readme improvements,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-07 22:59:39+01:00,-3600,2016-08-07 23:03:48+01:00,-3600,True,False,['README.md'],['05384b6eaaa30d658e2344b7ff425ed830c7b062'],14,11,25,1,,,
+d8f793f7f00bf8618f5556571856aa53de0f4ec1,usage .coveragerc instead of setup.cfg,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-07 23:18:09+01:00,-3600,2016-08-07 23:18:09+01:00,-3600,True,False,"['.coveragerc', 'runtests.sh', 'setup.cfg', 'fixtures.py', 'isort_test.sh', 'test_worker.py']",['03b82d63b3f5461ee18278ac1abb2f0e349582ff'],47,42,89,6,1.0,1.0,0.4444444444444444
+44dc8b2c23735e8cbfcea390a0e7ee9cb70eda69,explain strange use of getattr in RedisMixin init,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-07 23:20:16+01:00,-3600,2016-08-07 23:20:16+01:00,-3600,True,False,['utils.py'],['d8f793f7f00bf8618f5556571856aa53de0f4ec1'],0,2,2,1,,,
+281a3df78cc17b5676491360b3c8e9aebaaa57f3,test for custom settings,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-11 11:53:26+01:00,-3600,2016-08-11 11:53:26+01:00,-3600,True,False,"['fixtures.py', 'test_worker.py']",['44dc8b2c23735e8cbfcea390a0e7ee9cb70eda69'],1,34,35,2,1.0,1.0,1.0
+ceaed489b0f3b46efb2b82cb26ea90a2b92d45d1,uprev.,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-11 14:49:04+01:00,-3600,2016-08-11 14:49:04+01:00,-3600,True,False,['version.py'],['281a3df78cc17b5676491360b3c8e9aebaaa57f3'],1,1,2,1,,,
+6522aa832be1a4c70fdb47e24134528cf6a7c2e4,"seperating jobs, reseting epoch",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-11 18:36:00+01:00,-3600,2016-08-11 18:36:00+01:00,-3600,True,False,"['__init__.py', 'jobs.py', 'main.py', 'utils.py', 'setup.py', 'test_main.py']",['ceaed489b0f3b46efb2b82cb26ea90a2b92d45d1'],40,52,92,6,1.0,1.0,0.0
+4223f48deff18bcfd47b5beb70a18740346c3928,adding datetime job,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-11 19:45:18+01:00,-3600,2016-08-11 19:45:18+01:00,-3600,True,False,"['jobs.py', 'main.py', 'utils.py', 'fixtures.py', 'isort_test.sh', 'test_customisation.py', 'test_worker.py']",['6522aa832be1a4c70fdb47e24134528cf6a7c2e4'],29,165,194,7,1.0,1.0,0.5125
+aa9b0ff74803e7b7062323ac974225b95ed6e706,adding RaiseWorker and job_class tests,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-11 20:26:17+01:00,-3600,2016-08-11 21:02:38+01:00,-3600,True,False,"['testing.py', 'worker.py', 'test_customisation.py', 'test_worker.py']",['4223f48deff18bcfd47b5beb70a18740346c3928'],13,62,75,4,1.0,0.2903225806451613,0.9032258064516129
+3fe4e14930aafb971044dca80a838a3958c622ee,improving worker job_class logic,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-11 21:28:29+01:00,-3600,2016-08-11 21:28:29+01:00,-3600,True,False,"['worker.py', 'test_customisation.py', 'test_main.py']",['aa9b0ff74803e7b7062323ac974225b95ed6e706'],16,27,43,3,0.0,1.0,0.9
+6329d21ff1d041efe6d3e3bedde752db65162b70,improve datetime encoding and worker shadow checks,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-12 11:22:45+01:00,-3600,2016-08-12 11:22:45+01:00,-3600,True,False,"['jobs.py', 'utils.py', 'worker.py', 'requirements.txt', 'test_customisation.py', 'test_main.py']",['3fe4e14930aafb971044dca80a838a3958c622ee'],24,77,101,6,1.0,1.0,1.0
+d7c0b8aae8d2438bd45cabbe0de50746b73ab879,correct timestamp,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-12 11:43:54+01:00,-3600,2016-08-12 11:43:54+01:00,-3600,True,False,"['utils.py', 'test_utils.py']",['6329d21ff1d041efe6d3e3bedde752db65162b70'],2,12,14,2,1.0,1.0,1.0
+24e847d9f51aa52f7dc63fac4c7717e3e741b203,correcting __all__s,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-12 12:50:42+01:00,-3600,2016-08-12 12:50:42+01:00,-3600,True,False,"['__init__.py', 'testing.py', 'utils.py', 'version.py', 'test_utils.py']",['d7c0b8aae8d2438bd45cabbe0de50746b73ab879'],5,7,12,5,,,
+dfbef6ee5dd40dca5d3c70babef8d20314a95a95,use ms for DatetimeJob,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-12 14:47:12+01:00,-3600,2016-08-12 14:47:12+01:00,-3600,True,False,"['jobs.py', 'utils.py', 'worker.py', 'test_customisation.py', 'test_utils.py', 'test_worker.py']",['24e847d9f51aa52f7dc63fac4c7717e3e741b203'],15,33,48,6,1.0,1.0,1.0
+a6eb4b68f8caf86498a591db685cda7411195be6,batch > burst,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-12 15:46:06+01:00,-3600,2016-08-12 15:46:06+01:00,-3600,True,False,"['cli.py', 'worker.py', 'conftest.py', 'test_cli.py', 'test_customisation.py', 'test_main.py', 'test_worker.py']",['dfbef6ee5dd40dca5d3c70babef8d20314a95a95'],53,52,105,7,1.0,0.0,1.0
+7812602375b8bd9790bf26add0f17bd29def5111,add 'existing_shaddows' and 'reuse',Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-12 16:40:59+01:00,-3600,2016-08-12 16:40:59+01:00,-3600,True,False,"['worker.py', 'test_customisation.py', 'test_worker.py']",['a6eb4b68f8caf86498a591db685cda7411195be6'],20,55,75,3,0.7931034482758621,0.8620689655172413,0.5517241379310345
+ef8ea131a25bf2daf5a2f14b7cdb126280970d65,_settings > settings,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-12 18:05:21+01:00,-3600,2016-08-12 18:05:21+01:00,-3600,True,False,"['utils.py', 'worker.py', 'fixtures.py']",['7812602375b8bd9790bf26add0f17bd29def5111'],6,6,12,3,,,
+13a3f5785cafc9b47ec307bd01a51de7f674662e,complete coverage for the sake of it,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-12 18:58:57+01:00,-3600,2016-08-12 18:58:57+01:00,-3600,True,False,"['testing.py', 'utils.py', 'worker.py', 'test_utils.py', 'test_worker.py']",['ef8ea131a25bf2daf5a2f14b7cdb126280970d65'],4,16,20,5,1.0,1.0,0.8571428571428571
+7fa53a4e607b2ca36053f768396bd445b9e99620,adding docstrings to all public methods and classes,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-12 21:26:02+01:00,-3600,2016-08-12 21:27:15+01:00,-3600,True,False,"['jobs.py', 'logs.py', 'main.py', 'testing.py', 'utils.py', 'worker.py', 'test_cli.py', 'test_main.py', 'test_worker.py']",['13a3f5785cafc9b47ec307bd01a51de7f674662e'],104,282,386,9,0.8723404255319149,1.0,0.8723404255319149
+6bb00a095caeb733a43f4d2d7d3a725f6224bf2f,improving support for custom queues,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-13 12:19:54+01:00,-3600,2016-08-13 12:19:54+01:00,-3600,True,False,"['main.py', 'worker.py', 'test_customisation.py', 'test_main.py', 'test_worker.py']",['7fa53a4e607b2ca36053f768396bd445b9e99620'],16,35,51,5,0.5,0.5,1.0
+45fee404074d11df79bdd15dafdba7c7fc5aee75,replacing runtest.sh with Makefile,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-14 11:08:14+01:00,-3600,2016-08-14 11:11:09+01:00,-3600,True,False,"['.travis.yml', 'Makefile', 'runtests.sh', 'requirements.txt']",['6bb00a095caeb733a43f4d2d7d3a725f6224bf2f'],22,46,68,4,,,
+e6a6901670c408f7d605403cb6c0b96a47a03b78,adding sphinx docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-14 12:38:53+01:00,-3600,2016-08-14 12:38:53+01:00,-3600,True,False,"['.editorconfig', '.gitignore', '.travis.yml', 'Makefile', 'jobs.py', 'logs.py', 'main.py', 'testing.py', 'utils.py', 'worker.py', 'Makefile', 'conf.py', 'index.rst', 'usage.rst', 'requirements.txt']",['45fee404074d11df79bdd15dafdba7c7fc5aee75'],5,602,607,15,,,
+67a5ce507b5a8e52f0acf572ac14203fe9abfc4d,isort tests,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-14 12:58:20+01:00,-3600,2016-08-14 12:58:20+01:00,-3600,True,False,"['conftest.py', 'example.py', 'fixtures.py', 'test_cli.py', 'test_customisation.py', 'test_main.py', 'test_utils.py', 'test_worker.py']",['e6a6901670c408f7d605403cb6c0b96a47a03b78'],17,16,33,8,,,
+c52266abd6e8a374b1fbaa5e019a3b8823b53bc7,improving documentation,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-14 13:25:12+01:00,-3600,2016-08-14 13:25:12+01:00,-3600,True,False,"['Makefile', 'jobs.py', 'main.py', 'testing.py', 'utils.py', 'worker.py', 'conf.py', 'index.rst', 'requirements.txt']",['67a5ce507b5a8e52f0acf572ac14203fe9abfc4d'],13,55,68,9,,,
+4ff84e2f9d7674fb2595243d6d875742ae54457c,"uprev, update readme",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-14 13:32:47+01:00,-3600,2016-08-14 13:32:47+01:00,-3600,True,False,"['README.md', 'version.py', 'conf.py', 'setup.py']",['c52266abd6e8a374b1fbaa5e019a3b8823b53bc7'],100,2,102,4,,,
+080f027ec318c4e4bc45bea21eeda3e12ad01651,add dependencies to docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-14 13:57:37+01:00,-3600,2016-08-14 15:30:15+01:00,-3600,True,False,['index.rst'],['4ff84e2f9d7674fb2595243d6d875742ae54457c'],2,19,21,1,,,
+5e70358691be8046b796f8bb9e8268e565111b72,"correct utils docs, add version",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-14 15:44:34+01:00,-3600,2016-08-14 15:44:34+01:00,-3600,True,False,"['conf.py', 'index.rst']",['080f027ec318c4e4bc45bea21eeda3e12ad01651'],3,4,7,2,,,
+c463344c8ebfe9f501f4a47443a26e494010f278,"improving docs, usage and docstrings",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-14 21:16:08+01:00,-3600,2016-08-14 21:16:08+01:00,-3600,True,False,"['README.md', 'README.rst', 'jobs.py', 'main.py', 'testing.py', 'utils.py', 'worker.py', 'conf.py', 'index.rst', 'usage.rst', 'setup.py']",['5e70358691be8046b796f8bb9e8268e565111b72'],53,144,197,11,0.4444444444444444,1.0,0.4444444444444444
+fd5ba87c0c68f3a1c2339e11effb5d8fdf3e7175,use README.rst in setup,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-14 21:20:53+01:00,-3600,2016-08-14 21:20:53+01:00,-3600,True,False,['setup.py'],['c463344c8ebfe9f501f4a47443a26e494010f278'],12,4,16,1,,,
+46b509d3af0f058fe6c2ea9a642e0abe67c75f1b,update link in readme,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-14 21:22:57+01:00,-3600,2016-08-14 21:22:57+01:00,-3600,True,False,['README.rst'],['fd5ba87c0c68f3a1c2339e11effb5d8fdf3e7175'],2,2,4,1,,,
+3745d22c093a9c5f73baf6eef7cdcd61999b83ab,use pytest-isort,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-08-15 16:56:11+01:00,-3600,2016-08-15 16:56:11+01:00,-3600,True,False,"['.editorconfig', 'Makefile', 'isort_test.sh', 'requirements.txt']",['46b509d3af0f058fe6c2ea9a642e0abe67c75f1b'],9,3,12,4,,,
+ff31ce998bedd87cd4b41b38ada230c2469e31fa,Fix typo,Ivlev Denis,ivlevdenis.ru@gmail.com,GitHub,noreply@github.com,2016-09-15 00:26:17+04:00,-14400,2016-09-15 00:26:17+04:00,-14400,True,False,['usage.rst'],['3745d22c093a9c5f73baf6eef7cdcd61999b83ab'],1,1,2,1,,,
+658662a0ff18fd0f7e54df521b73ee3029ff226d,fixes with latest py.test,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-09-15 15:05:43+01:00,-3600,2016-09-15 15:21:29+01:00,-3600,True,False,"['setup.cfg', 'conftest.py', 'fixtures.py', 'test_customisation.py', 'test_main.py', 'test_worker.py']",['cdaba99f6474c512e7115634c9e59f83b276fdc4'],64,64,128,6,,,
+ba85f53903604b34c0b8d3c517aa8a457e59408e,fixing typos in docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-09-15 15:22:01+01:00,-3600,2016-09-15 15:22:01+01:00,-3600,True,False,"['jobs.py', 'logs.py', 'main.py', 'worker.py', 'conf.py', 'index.rst', 'usage.rst']",['658662a0ff18fd0f7e54df521b73ee3029ff226d'],47,52,99,7,1.0,1.0,1.0
+c751e51c66e1ec1e45974bf1e9c26dc7deb70b17,correct beginning of docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-09-15 16:04:20+01:00,-3600,2016-09-15 16:04:20+01:00,-3600,True,False,['index.rst'],['ba85f53903604b34c0b8d3c517aa8a457e59408e'],6,8,14,1,,,
+372ec2732df46fb7defd0eda8e7276d7bc11f6ee,adding ga,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-09-15 20:00:48+01:00,-3600,2016-09-15 20:00:48+01:00,-3600,True,False,['layout.html'],['c751e51c66e1ec1e45974bf1e9c26dc7deb70b17'],0,12,12,1,,,
+c2468963a62aa9165f3075ad3491948318d26947,adding typing hinting and mypy check,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-09-17 21:23:19+01:00,-3600,2016-09-17 21:23:19+01:00,-3600,True,False,"['Makefile', '__init__.py', 'jobs.py', 'main.py', 'utils.py', 'worker.py', 'requirements.txt']",['372ec2732df46fb7defd0eda8e7276d7bc11f6ee'],26,31,57,7,0.6,1.0,0.12
+ea16e1e504e83c6e94446945117c00b70fd3ff38,making sphinx strict,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-09-17 21:32:03+01:00,-3600,2016-09-17 21:35:51+01:00,-3600,True,False,"['utils.py', 'Makefile', 'conf.py']",['c2468963a62aa9165f3075ad3491948318d26947'],2,8,10,3,,,
+c9ac80f1ca8eda6096f2de637646948fb9bcf68a,utils docstrings and python/typeshed#554 comment,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-09-18 09:33:24+01:00,-3600,2016-09-18 09:33:24+01:00,-3600,True,False,['utils.py'],['ea16e1e504e83c6e94446945117c00b70fd3ff38'],1,4,5,1,1.0,1.0,1.0
+efb64c804b869ad2965e9c9af50b6081b745ebb5,move JobSerialisationError raise to jobs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-09-18 11:35:02+01:00,-3600,2016-09-18 11:35:02+01:00,-3600,True,False,"['jobs.py', 'main.py']",['c9ac80f1ca8eda6096f2de637646948fb9bcf68a'],9,10,19,2,0.0,1.0,1.0
+47e8e9af53ddfad55cae59b442348c6e9440c374,preventing double error printing with worker cli,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-06 16:36:04+00:00,0,2016-12-06 16:36:04+00:00,0,True,False,"['worker.py', 'test_customisation.py', 'test_worker.py']",['efb64c804b869ad2965e9c9af50b6081b745ebb5'],6,8,14,3,,,
+70a76ecad91024cf002a5e4713993a72a984ced0,upreving,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-06 16:44:14+00:00,0,2016-12-06 16:44:14+00:00,0,True,False,"['Makefile', 'utils.py', 'setup.cfg', 'setup.py', 'requirements.txt', 'test_main.py', 'test_worker.py']",['47e8e9af53ddfad55cae59b442348c6e9440c374'],23,29,52,7,,,
+da702840b259717d19fc6886ba559952845fbe0b,switching to '__direct' not '_direct',Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-06 16:48:07+00:00,0,2016-12-06 16:48:07+00:00,0,True,False,"['main.py', 'worker.py', 'test_main.py']",['70a76ecad91024cf002a5e4713993a72a984ced0'],7,7,14,3,,,
+ea03a63a7d6c523bcc9ec10ddad8823fc896d0a9,moving testing utils to pytest-toolbox,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-06 19:38:05+00:00,0,2016-12-06 19:38:05+00:00,0,True,False,"['testing.py', 'conftest.py', 'requirements.txt', 'test_main.py', 'test_worker.py']",['da702840b259717d19fc6886ba559952845fbe0b'],193,30,223,5,0.024691358024691357,0.0,0.18518518518518517
+94f1ba3d32ff8fe7869d0fee38b6c6c141f19598,uprev version and add latest python,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-06 19:43:58+00:00,0,2016-12-06 19:43:58+00:00,0,True,False,"['.travis.yml', 'version.py']",['ea03a63a7d6c523bcc9ec10ddad8823fc896d0a9'],1,7,8,2,,,
+6a8c7c35776d652df76c6c106f0d98f132e01783,allow python 3.6 to fail,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-06 19:50:53+00:00,0,2016-12-06 19:50:53+00:00,0,True,False,['.travis.yml'],['94f1ba3d32ff8fe7869d0fee38b6c6c141f19598'],0,1,1,1,,,
+980f09acdf39590cdfb0956361c886db27029298,fixing tests with python 3.6,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-06 20:14:43+00:00,0,2016-12-06 20:16:48+00:00,0,True,False,"['Makefile', 'test_utils.py', 'test_worker.py']",['6a8c7c35776d652df76c6c106f0d98f132e01783'],7,6,13,3,1.0,0.0,0.0
+cc7b3ae66c01f43f565798eed5ffc9e47cfc8e70,prevent logs disabling other logs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-06 20:54:52+00:00,0,2016-12-06 20:54:52+00:00,0,True,False,"['logs.py', 'setup.cfg']",['980f09acdf39590cdfb0956361c886db27029298'],2,2,4,2,,,
+fd06c7b7e1ba3d55125f68cc0c5c772a8c360827,re-enabled codecov reporting,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-06 22:08:46+00:00,0,2016-12-06 22:08:46+00:00,0,True,False,['.travis.yml'],['cc7b3ae66c01f43f565798eed5ffc9e47cfc8e70'],1,1,2,1,,,
+d26e77a743d0e1b88ebf7941266422a148c58445,use library version in docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-06 22:15:10+00:00,0,2016-12-06 22:15:10+00:00,0,True,False,['conf.py'],['fd06c7b7e1ba3d55125f68cc0c5c772a8c360827'],4,5,9,1,,,
+02858f16efcef4ba7bc169c2fdd621c349c7d4e8,fix integration with mock,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-08 18:38:45+00:00,0,2016-12-08 18:38:45+00:00,0,True,False,"['main.py', 'requirements.txt', 'test_main.py', 'test_utils.py']",['d26e77a743d0e1b88ebf7941266422a148c58445'],5,19,24,4,1.0,1.0,1.0
+ac509240f3f184a3804f80f267525db4a72bb883,correct comment,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-08 18:53:36+00:00,0,2016-12-08 18:53:36+00:00,0,True,False,['main.py'],['02858f16efcef4ba7bc169c2fdd621c349c7d4e8'],1,1,2,1,,,
+e905a206f8dc1fed189ebae7c1b6f1bfaba398a1,add 'concurrency_enabled' flag to aid in testing,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-08 19:26:37+00:00,0,2016-12-08 19:26:37+00:00,0,True,False,"['main.py', 'test_main.py']",['ac509240f3f184a3804f80f267525db4a72bb883'],9,27,36,2,1.0,1.0,0.0
+128765d39ad5755e1ed2a59c69e82cf478707a42,python 3.6 is not allowed to fail,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-08 19:29:10+00:00,0,2016-12-08 19:29:10+00:00,0,True,False,['.travis.yml'],['e905a206f8dc1fed189ebae7c1b6f1bfaba398a1'],1,0,1,1,,,
+ce13a60c68ba8d7becf5194425428f112e41c4a6,uprev and correct commend,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-09 12:58:47+00:00,0,2016-12-09 12:58:47+00:00,0,True,False,"['utils.py', 'version.py']",['128765d39ad5755e1ed2a59c69e82cf478707a42'],2,2,4,2,,,
+1d8882cfe17d318f04c36f4769047ec90c1935d4,changes to utils,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2016-12-22 17:37:13+00:00,0,2016-12-22 17:37:13+00:00,0,True,False,['utils.py'],['ce13a60c68ba8d7becf5194425428f112e41c4a6'],3,3,6,1,,,
+ce9da2da383455656bef2d233bc02d822b323305,"Initial Update (#2)
+
+* Update coverage from 4.2 to 4.3.1
+
+* Update pyflakes from 1.3.0 to 1.5.0
+
+* Update pytest-sugar from 0.7.1 to 0.8.0
+
+* Update docutils from 0.12 to 0.13.1
+
+* Update typed-ast from 0.6.1 to 0.6.3
+
+* Update sphinx from 1.4.6 to 1.5.1
+
+* Update ghp-import from 0.4.1 to 0.5.4",pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-01-16 17:31:16+01:00,-3600,2017-01-16 16:31:16+00:00,0,True,False,['requirements.txt'],['1d8882cfe17d318f04c36f4769047ec90c1935d4'],7,7,14,1,,,
+7ee731748c6c8b12fb570d9a594c36660a6b1cea,CI tweaks and temporary uprev.,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-01-16 16:39:12+00:00,0,2017-01-16 16:41:48+00:00,0,True,False,"['.travis.yml', 'utils.py', 'version.py', 'setup.cfg', 'check_tag.py']",['ce9da2da383455656bef2d233bc02d822b323305'],7,21,28,5,,,
+48c7b612b17342ed670b579b10aee0164948732c,Update coverage from 4.3.1 to 4.3.3 (#4),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-01-17 15:42:33+01:00,-3600,2017-01-17 14:42:33+00:00,0,True,False,['requirements.txt'],['7ee731748c6c8b12fb570d9a594c36660a6b1cea'],1,1,2,1,,,
+81139d11073ad7749ee11744a7854fd89eb8d125,simplifying redis settings,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-01-17 17:00:48+00:00,0,2017-01-17 17:00:48+00:00,0,True,False,"['utils.py', 'worker.py', 'index.rst', 'fixtures.py', 'test_customisation.py', 'test_utils.py']",['48c7b612b17342ed670b579b10aee0164948732c'],130,35,165,6,0.07407407407407407,0.18518518518518517,0.12962962962962962
+2103b5bc946776d01e65abd7c25cddeaef84a795,adding auto deploy docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-01-17 19:44:50+00:00,0,2017-01-17 19:44:50+00:00,0,True,False,"['.travis.yml', 'HISTORY.rst', 'Makefile', 'utils.py', 'version.py', 'index.rst', 'check_tag.py']",['81139d11073ad7749ee11744a7854fd89eb8d125'],9,54,63,7,,,
+afbc69bafa4bc11057fc5103389e26dd96cff4f5,reset deploy:on for docs deploy,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-01-17 19:54:15+00:00,0,2017-01-17 19:54:15+00:00,0,True,False,['.travis.yml'],['2103b5bc946776d01e65abd7c25cddeaef84a795'],1,1,2,1,,,
+71366a7c879004648daadc296d2862a46771a2d2,set version to 0.3,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-01-19 13:21:19+00:00,0,2017-01-19 13:21:19+00:00,0,True,False,"['HISTORY.rst', 'version.py']",['afbc69bafa4bc11057fc5103389e26dd96cff4f5'],3,2,5,2,,,
+c50b5a7e4fea879af5715588985d92c5f83baa92,Update coverage from 4.3.3 to 4.3.4 (#5),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-01-19 14:35:24+01:00,-3600,2017-01-19 13:35:24+00:00,0,True,False,['requirements.txt'],['71366a7c879004648daadc296d2862a46771a2d2'],1,1,2,1,,,
+6b85bbe2b34e617181290b3ca6c5bc9c55755cd4,correct deploying,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-01-19 13:38:33+00:00,0,2017-01-19 13:38:33+00:00,0,True,False,"['.travis.yml', 'check_tag.py']",['c50b5a7e4fea879af5715588985d92c5f83baa92'],5,3,8,2,,,
+197b812ac1b7701618d4253c351b8a72c87956e0,add 3.6 to setup classifiers,Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2017-01-19 16:06:09+00:00,0,2017-01-19 16:06:09+00:00,0,True,False,['setup.py'],['6b85bbe2b34e617181290b3ca6c5bc9c55755cd4'],0,1,1,1,,,
+cecde21b2b9e0c2f8c79198ea3fb0804729e0ec5,fixing signal handling,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-01-20 12:59:52+00:00,0,2017-01-20 13:37:23+00:00,0,True,False,"['HISTORY.rst', 'version.py', 'worker.py', 'example.py', 'test_cli.py', 'test_worker.py']",['197b812ac1b7701618d4253c351b8a72c87956e0'],22,91,113,6,0.6363636363636364,1.0,0.4772727272727273
+ee57e3b7c899969d8099a04b1f08a179703cd7bf,improved preventing new jobs starting when the worker is stopping,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-01-20 16:23:52+00:00,0,2017-01-20 16:23:52+00:00,0,True,False,"['HISTORY.rst', 'version.py', 'worker.py', 'setup.cfg', 'example.py', 'requirements.txt', 'test_cli.py', 'test_worker.py']",['cecde21b2b9e0c2f8c79198ea3fb0804729e0ec5'],31,36,67,8,1.0,0.0,1.0
+a61f3f29a7d6b0e934d13d67c871ea93866da566,Update sphinx from 1.5.1 to 1.5.2 (#6),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-01-22 13:31:08+01:00,-3600,2017-01-22 12:31:08+00:00,0,True,False,['requirements.txt'],['ee57e3b7c899969d8099a04b1f08a179703cd7bf'],1,1,2,1,,,
+b2ff5421418b9be658d202f30d97aa21adbd3f77,switch SIGRTMIN to just SIGUSR1,Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2017-01-24 17:05:58+00:00,0,2017-01-24 17:05:58+00:00,0,True,False,['worker.py'],['a61f3f29a7d6b0e934d13d67c871ea93866da566'],1,1,2,1,,,
+ac420ec520fab826c62705d2ca32e18bf2f2fd54,"prepare to deploy SIGRTMIN change, fix #8",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-01-24 17:28:27+00:00,0,2017-01-24 17:29:59+00:00,0,True,False,"['HISTORY.rst', 'version.py']",['b2ff5421418b9be658d202f30d97aa21adbd3f77'],2,3,5,2,,,
+19aaa643e0f11a87afb14caa176bd1a0c6952587,renaming logging entities to more sensible names,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-01-25 14:45:03+00:00,0,2017-01-25 14:45:03+00:00,0,True,False,"['HISTORY.rst', 'logs.py', 'version.py']",['7e51f67657741eb9a24a3db15f295610fb52755f'],7,11,18,3,,,
+41bc45d948426ce69a797dc142e34872aa4cadfa,Update pytest from 3.0.5 to 3.0.6 (#7),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-01-30 23:43:54+01:00,-3600,2017-01-30 22:43:54+00:00,0,True,False,['requirements.txt'],['19aaa643e0f11a87afb14caa176bd1a0c6952587'],1,1,2,1,,,
+287351c21db2e6125b56a193805b5bf1ef34f018,Update pycodestyle from 2.2.0 to 2.3.1 (#12),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-02-01 11:36:28+01:00,-3600,2017-02-01 10:36:28+00:00,0,True,False,['requirements.txt'],['41bc45d948426ce69a797dc142e34872aa4cadfa'],1,1,2,1,,,
+2b77271ae04eba81a8de228c829e2f6cbbe06dea,Update flake8 from 3.2.1 to 3.3.0 (#13),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-02-10 13:06:04+01:00,-3600,2017-02-10 12:06:04+00:00,0,True,False,['requirements.txt'],['287351c21db2e6125b56a193805b5bf1ef34f018'],1,1,2,1,,,
+bc5829c0b12b3e4c4f88ce97ae6230f4d2a59b4c,changing with logger is used for finishing log messages,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-10 12:12:45+00:00,0,2017-02-10 12:12:45+00:00,0,True,False,"['logs.py', 'worker.py']",['2b77271ae04eba81a8de228c829e2f6cbbe06dea'],16,8,24,2,1.0,0.0,0.0
+697fa9b532d2cc9da4c1d1a004587815005a473b,add startup and shutdown commands,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-10 13:32:09+00:00,0,2017-02-10 13:32:26+00:00,0,True,False,"['main.py', 'version.py', 'worker.py', 'fixtures.py', 'test_worker.py']",['bc5829c0b12b3e4c4f88ce97ae6230f4d2a59b4c'],5,52,57,5,1.0,1.0,0.5806451612903226
+33b3c63deb49ae6b5b6baff8e82024e0a76a7e64,implement Concurrent class,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-10 16:25:56+00:00,0,2017-02-10 16:25:56+00:00,0,True,False,"['HISTORY.rst', 'main.py', 'worker.py', 'fixtures.py', 'test_main.py']",['697fa9b532d2cc9da4c1d1a004587815005a473b'],57,72,129,5,0.0,0.0,0.0
+e80ce4231fa0adc88dc1f6662836d6c13c08ea93,"preparing for deploy, switching auto deploy",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-10 17:21:44+00:00,0,2017-02-10 17:21:44+00:00,0,True,False,"['.travis.yml', 'HISTORY.rst', 'Makefile', 'README.rst', 'version.py', 'requirements.txt']",['33b3c63deb49ae6b5b6baff8e82024e0a76a7e64'],12,9,21,6,,,
+3a21b9953dcd733e2dbe7a6c9109347d8519f7df,tweak makefile,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-10 18:54:49+00:00,0,2017-02-10 18:54:49+00:00,0,True,False,['Makefile'],['e80ce4231fa0adc88dc1f6662836d6c13c08ea93'],1,1,2,1,,,
+291a0fe0a5bcc58ab3b59b1589c265e935c95b6d,Update pytest-toolbox from 0.1 to 0.2 (#14),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-02-11 17:36:00+01:00,-3600,2017-02-11 16:36:00+00:00,0,True,False,['requirements.txt'],['3a21b9953dcd733e2dbe7a6c9109347d8519f7df'],1,1,2,1,,,
+96881c38cab3cb57c0db13f8f73884585a9170c8,fix Concurrent binding,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-11 19:06:48+00:00,0,2017-02-11 19:06:48+00:00,0,True,False,"['HISTORY.rst', 'main.py', 'version.py', 'worker.py', 'fixtures.py', 'test_main.py']",['291a0fe0a5bcc58ab3b59b1589c265e935c95b6d'],11,61,72,6,1.0,1.0,0.9655172413793104
+810168cd7364e81e714593bc1d544509b4f970f3,slightly improve binding logic,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-11 19:20:56+00:00,0,2017-02-11 19:27:54+00:00,0,True,False,['main.py'],['96881c38cab3cb57c0db13f8f73884585a9170c8'],15,14,29,1,0.0,0.0,0.0
+9bc426b08f4a6e38584b6952beae921868b3966f,using gather rather than wait,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-13 17:51:11+00:00,0,2017-02-13 17:51:46+00:00,0,True,False,"['HISTORY.rst', 'version.py', 'worker.py', 'test_worker.py']",['810168cd7364e81e714593bc1d544509b4f970f3'],24,9,33,4,0.26666666666666666,0.26666666666666666,0.7333333333333333
+fe82664d2c964a328feaf48fa8ce719525648263,implementing health check,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-15 10:20:17+00:00,0,2017-02-15 10:20:17+00:00,0,True,False,"['HISTORY.rst', 'testing.py', 'worker.py', 'test_main.py', 'test_utils.py']",['9bc426b08f4a6e38584b6952beae921868b3966f'],3,78,81,5,0.3620689655172414,0.9655172413793104,0.3448275862068966
+2d2f5e0f9958a6f6684c93ebe776d0f2ddd47042,adding --check cli option,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-15 11:13:38+00:00,0,2017-02-15 11:13:38+00:00,0,True,False,"['HISTORY.rst', 'cli.py', 'version.py', 'worker.py', 'test_cli.py', 'test_worker.py']",['fe82664d2c964a328feaf48fa8ce719525648263'],7,70,77,6,1.0,1.0,0.9142857142857143
+80d503b995177f2100df56d621d11c5a05df1f32,"Update typed-ast to 1.0.1 (#16)
+
+* Update typed-ast from 0.6.3 to 1.0.1
+
+* switch from mypy-lang to mypy
+
+* remove typed-ast requirement
+
+* fix mypy warnings",pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-02-17 21:53:07+01:00,-3600,2017-02-17 20:53:07+00:00,0,True,False,"['Makefile', 'requirements.txt']",['2d2f5e0f9958a6f6684c93ebe776d0f2ddd47042'],3,2,5,2,,,
+8d8c9178c39e08aaa0f995322627895262c84fdd,simplifying health check output,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-20 10:42:20+00:00,0,2017-02-20 10:42:20+00:00,0,True,False,"['worker.py', 'test_main.py']",['80d503b995177f2100df56d621d11c5a05df1f32'],20,8,28,2,1.0,0.0,0.6363636363636364
+05ceabca29413653e34ad0e3488db886edfd901e,"adding 'shutdown' method to actor close, tweak healthcheck",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-20 11:07:08+00:00,0,2017-02-20 11:07:08+00:00,0,True,False,"['main.py', 'worker.py', 'test_main.py', 'test_worker.py']",['8d8c9178c39e08aaa0f995322627895262c84fdd'],9,12,21,4,0.3333333333333333,1.0,0.6666666666666666
+a6c59dc3911fc3ca7445decd7b98d3b1979e6935,improving docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-20 12:16:18+00:00,0,2017-02-20 12:16:18+00:00,0,True,False,"['HISTORY.rst', 'main.py', 'demo.py', 'index.rst', 'usage.rst']",['05ceabca29413653e34ad0e3488db886edfd901e'],36,116,152,5,1.0,1.0,1.0
+1667afc79a92f99834a8b6445ca7c38b9805e74d,re implementing 'reusable',Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-25 15:20:17+00:00,0,2017-02-25 15:20:17+00:00,0,True,False,"['worker.py', 'index.rst', 'usage.rst', 'test_worker.py']",['a6c59dc3911fc3ca7445decd7b98d3b1979e6935'],21,46,67,4,0.9375,1.0,0.1875
+66bc17efea0d93e6b4415c661c12ef348596664a,uprev and update HISTORY,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-25 15:26:56+00:00,0,2017-02-25 15:26:56+00:00,0,True,False,"['HISTORY.rst', 'version.py']",['1667afc79a92f99834a8b6445ca7c38b9805e74d'],1,5,6,2,,,
+c0c232ef5e8b44d7b90be847ecd58539b45f3c92,adding 'shadow_kwargs' method,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-25 18:21:19+00:00,0,2017-02-25 18:21:19+00:00,0,True,False,"['HISTORY.rst', 'version.py', 'worker.py']",['66bc17efea0d93e6b4415c661c12ef348596664a'],6,22,28,3,1.0,1.0,1.0
+9af75486fcd4f6e5b83c90fec0967dfbcb8e722d,add tests for docs 'demo.py',Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-02-25 18:21:36+00:00,0,2017-02-25 18:21:36+00:00,0,True,False,['test_doc_example.py'],['c0c232ef5e8b44d7b90be847ecd58539b45f3c92'],0,17,17,1,1.0,1.0,0.0
+1b876cc040e50a55fd461aa00705153cc064926d,Update sphinx from 1.5.2 to 1.5.3 (#17),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-02-26 15:13:17+01:00,-3600,2017-02-26 14:13:17+00:00,0,True,False,['requirements.txt'],['9af75486fcd4f6e5b83c90fec0967dfbcb8e722d'],1,1,2,1,,,
+a0769a3f24255e2ff166554e79fe993bcd075326,Update pytest from 3.0.6 to 3.0.7 (#22),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-03-15 13:48:18+01:00,-3600,2017-03-15 12:48:18+00:00,0,True,False,['requirements.txt'],['1b876cc040e50a55fd461aa00705153cc064926d'],1,1,2,1,,,
+288077653f15ea3a1b316a3a99262daa2009c15a,Update pytz from 2016.10 to 2017.2 (#24),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-03-30 15:44:37+02:00,-7200,2017-03-30 14:44:37+01:00,-3600,True,False,['requirements.txt'],['a0769a3f24255e2ff166554e79fe993bcd075326'],1,1,2,1,,,
+538df9a1a92b61a1bd154c8de05c894b1c636870,Update pytest-mock from 1.5.0 to 1.6.0 (#25),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-03-31 11:48:52+02:00,-7200,2017-03-31 10:48:52+01:00,-3600,True,False,['requirements.txt'],['288077653f15ea3a1b316a3a99262daa2009c15a'],1,1,2,1,,,
+6be60d92ba10f2ebdb8471bc5599126cf7dafe9d,Update sphinx from 1.5.3 to 1.5.4 (#26),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-04-02 19:22:14+02:00,-7200,2017-04-02 18:22:14+01:00,-3600,True,False,['requirements.txt'],['538df9a1a92b61a1bd154c8de05c894b1c636870'],1,1,2,1,,,
+63b5670aceca0929acff3b2faa856890bfd38a4b,Update sphinx from 1.5.4 to 1.5.5 (#27),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-04-05 11:47:22+02:00,-7200,2017-04-05 10:47:22+01:00,-3600,True,False,['requirements.txt'],['6be60d92ba10f2ebdb8471bc5599126cf7dafe9d'],1,1,2,1,,,
+1099e625f573cabbf5cd319a3e465554beefcc99,"stop job exception, fix #21",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-04-14 16:45:19+01:00,-3600,2017-04-14 16:45:19+01:00,-3600,True,False,"['worker.py', 'fixtures.py', 'test_worker.py']",['63b5670aceca0929acff3b2faa856890bfd38a4b'],17,66,83,3,0.84375,0.15625,0.71875
+005e188724ba2b20e8780c8624f15b6e938057a6,"flushdb in MockRedis, fix #23",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-04-14 16:49:02+01:00,-3600,2017-04-14 16:49:02+01:00,-3600,True,False,"['testing.py', 'test_utils.py']",['1099e625f573cabbf5cd319a3e465554beefcc99'],0,14,14,2,1.0,1.0,0.8
+e0e1f09dfe8814daebd99c2fe9c7869e98b9a35f,"fixing linting, working on variable log length",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-04-14 16:59:34+01:00,-3600,2017-04-14 16:59:34+01:00,-3600,True,False,"['jobs.py', 'utils.py', 'worker.py', 'test_worker.py']",['005e188724ba2b20e8780c8624f15b6e938057a6'],12,19,31,4,1.0,1.0,1.0
+a9aceb9bb06391e967e169fb6110923e635c4626,"allow configurable log length, fix #28",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-04-14 17:08:43+01:00,-3600,2017-04-14 17:08:43+01:00,-3600,True,False,"['worker.py', 'test_worker.py']",['e0e1f09dfe8814daebd99c2fe9c7869e98b9a35f'],6,22,28,2,1.0,1.0,0.9166666666666666
+63426e4c9756b284306cdae74767e8d4ced5fb84,uprev,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-04-14 17:13:57+01:00,-3600,2017-04-14 17:17:48+01:00,-3600,True,False,"['HISTORY.rst', 'version.py']",['a9aceb9bb06391e967e169fb6110923e635c4626'],1,7,8,2,,,
+5354293959edabdb99d78671b5e1144d5b8d835e,"Update mypy to 0.510 (#30)
+
+* Update mypy from 0.471 to 0.510
+
+* fix linting",pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-05-06 12:35:08+02:00,-7200,2017-05-06 11:35:08+01:00,-3600,True,False,"['.gitignore', 'Makefile', 'worker.py', 'requirements.txt']",['63426e4c9756b284306cdae74767e8d4ced5fb84'],3,5,8,4,,,
+92e4b5dbc28b63948a720b31ba06c7ac0f2fd991,"adding trove classifier, fix #29",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-06 11:35:27+01:00,-3600,2017-05-06 11:35:27+01:00,-3600,True,False,['setup.py'],['5354293959edabdb99d78671b5e1144d5b8d835e'],0,1,1,1,,,
+a9b7d6037850b829bd7bfe83b461c62e23e3c66e,uprev,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-06 11:36:45+01:00,-3600,2017-05-06 11:36:45+01:00,-3600,True,False,"['HISTORY.rst', 'version.py']",['92e4b5dbc28b63948a720b31ba06c7ac0f2fd991'],1,6,7,2,,,
+59a11d61ab3dada97082b300aee748681ba9bc1f,Update coverage from 4.3.4 to 4.4 (#31),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-05-10 11:33:57+02:00,-7200,2017-05-10 10:33:57+01:00,-3600,True,False,['requirements.txt'],['a9b7d6037850b829bd7bfe83b461c62e23e3c66e'],1,1,2,1,,,
+eecf585bd9e61854723270d0109c54cdc19de47f,Update mypy from 0.510 to 0.511 (#32),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-05-10 11:34:13+02:00,-7200,2017-05-10 10:34:13+01:00,-3600,True,False,['requirements.txt'],['59a11d61ab3dada97082b300aee748681ba9bc1f'],1,1,2,1,,,
+97cf99374af18e610ba491a3d078783c9db936d8,Update pytest-cov from 2.4.0 to 2.5.0 (#33),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-05-10 11:34:23+02:00,-7200,2017-05-10 10:34:23+01:00,-3600,True,False,['requirements.txt'],['eecf585bd9e61854723270d0109c54cdc19de47f'],1,1,2,1,,,
+a7ad62ee24260efbf9e9791bea47340431fca3a9,Update pytest-cov from 2.5.0 to 2.5.1 (#34),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-05-17 22:53:17+02:00,-7200,2017-05-17 21:53:17+01:00,-3600,True,False,['requirements.txt'],['97cf99374af18e610ba491a3d078783c9db936d8'],1,1,2,1,,,
+d15dda826c106d428388d765d19adfdc2db0792f,Update coverage from 4.4 to 4.4.1 (#36),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-05-17 22:53:31+02:00,-7200,2017-05-17 21:53:31+01:00,-3600,True,False,['requirements.txt'],['a7ad62ee24260efbf9e9791bea47340431fca3a9'],1,1,2,1,,,
+3356172b7f03d62a766f31d12a5c4b6a78e895df,Update sphinx from 1.5.5 to 1.6.1 (#37),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-05-17 22:53:42+02:00,-7200,2017-05-17 21:53:42+01:00,-3600,True,False,['requirements.txt'],['d15dda826c106d428388d765d19adfdc2db0792f'],1,1,2,1,,,
+bdc8d64e37331c2b2a4821df671745d598873158,implementing reusable drains,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-22 16:43:08+01:00,-3600,2017-05-22 16:43:08+01:00,-3600,True,False,"['drain.py', 'jobs.py', 'main.py', 'testing.py', 'worker.py', 'example.py', 'fixtures.py', 'test_worker.py']",['a9b7d6037850b829bd7bfe83b461c62e23e3c66e'],105,239,344,8,0.4050632911392405,0.5443037974683544,0.3670886075949367
+9ff28a7a14303f73940aa0e634af5374f6c12542,adding coverage for Drain,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-22 17:42:12+01:00,-3600,2017-05-22 17:42:12+01:00,-3600,True,False,"['Makefile', 'drain.py', 'main.py', 'worker.py', 'fixtures.py', 'test_main.py', 'test_worker.py']",['bdc8d64e37331c2b2a4821df671745d598873158'],48,90,138,7,0.9047619047619048,0.8571428571428571,1.0
+ffba6bf692e77de0aafd56eb0fb7ba80c522eca2,removing python 3.5 support,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-22 17:48:02+01:00,-3600,2017-05-22 17:48:02+01:00,-3600,True,False,"['.travis.yml', 'index.rst', 'setup.py']",['9ff28a7a14303f73940aa0e634af5374f6c12542'],5,3,8,3,,,
+ec511e4498ea2f8f0b98ed265b3e403a39491465,cleanup with just py3.6,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-22 18:02:20+01:00,-3600,2017-05-22 18:04:13+01:00,-3600,True,False,"['HISTORY.rst', 'jobs.py', 'main.py', 'version.py', 'worker.py', 'index.rst']",['ffba6bf692e77de0aafd56eb0fb7ba80c522eca2'],25,24,49,6,1.0,0.16666666666666666,0.8333333333333334
+bcc79d029baafa0a3daa54f7d7a5f6c805f9be2b,simplify Job,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-22 18:20:12+01:00,-3600,2017-05-22 18:20:12+01:00,-3600,True,False,"['HISTORY.rst', 'drain.py', 'jobs.py', 'worker.py', 'test_main.py']",['ec511e4498ea2f8f0b98ed265b3e403a39491465'],57,46,103,5,1.0,1.0,0.4444444444444444
+7e43edd896ecdd32788fb744b93ce469cbcc260b,move reenqueue to actors,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-22 18:42:04+01:00,-3600,2017-05-22 18:42:04+01:00,-3600,True,False,"['drain.py', 'jobs.py', 'main.py', 'worker.py', 'fixtures.py', 'test_worker.py']",['bcc79d029baafa0a3daa54f7d7a5f6c805f9be2b'],34,31,65,6,0.0,0.0,0.5
+a55d14971742cb94afe16af26eb5c143e57f3ff2,cleanup and add docs for drain,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-23 10:36:50+01:00,-3600,2017-05-23 10:36:50+01:00,-3600,True,False,"['drain.py', 'jobs.py', 'main.py', 'utils.py', 'worker.py', 'index.rst', 'test_main.py', 'test_worker.py']",['7e43edd896ecdd32788fb744b93ce469cbcc260b'],28,47,75,8,0.0,0.0,1.0
+8805485212da644b3af935b9566c65bc931b48d3,Update pytest from 3.0.7 to 3.1.0 (#42),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-05-23 11:37:19+02:00,-7200,2017-05-23 10:37:19+01:00,-3600,True,False,['requirements.txt'],['3356172b7f03d62a766f31d12a5c4b6a78e895df'],1,1,2,1,,,
+5beaf48a33cd52fb805470c26971a6e4d8b4fe6a,add `raise_task_exception` to Drain,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-23 12:05:25+01:00,-3600,2017-05-23 12:05:25+01:00,-3600,True,False,"['__init__.py', 'drain.py', 'conftest.py', 'test_drain.py']",['710d8a4201cce00a1badfd8b46307920e890211c'],4,80,84,4,0.6481481481481481,1.0,0.8888888888888888
+fd29b50f7b752a2641f1d876a384f1441de8491a,adding `burst_mode` to Drain,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-05-23 17:35:19+01:00,-3600,2017-05-23 17:38:32+01:00,-3600,True,False,"['drain.py', 'worker.py', 'test_drain.py', 'test_main.py']",['5beaf48a33cd52fb805470c26971a6e4d8b4fe6a'],20,22,42,4,1.0,1.0,0.0
+2fec809fedc08e566ec592f6e881ed826babc41c,Update sphinx from 1.6.1 to 1.6.2,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2017-05-28 22:08:54+01:00,-3600,2017-05-28 22:08:54+01:00,-3600,True,False,['requirements.txt'],['fd29b50f7b752a2641f1d876a384f1441de8491a'],1,1,2,1,,,
+8dd196ed231f8e275e23257438029eb5151442b3,Update pytest from 3.1.0 to 3.1.1,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2017-05-31 19:01:57+01:00,-3600,2017-05-31 19:01:57+01:00,-3600,True,False,['requirements.txt'],['fd29b50f7b752a2641f1d876a384f1441de8491a'],1,1,2,1,,,
+b63a97fbb37b228c28774796c0202a7a0c81a513,set release date,Samuel Colvin,samcolvin@gmail.com,Samuel Colvin,s@muelcolvin.com,2017-06-01 12:11:58+01:00,-3600,2017-06-01 12:21:36+01:00,-3600,True,False,"['HISTORY.rst', 'drain.py']",['fd29b50f7b752a2641f1d876a384f1441de8491a'],2,3,5,2,0.0,0.0,0.0
+28b639d8f7dfc7994c63e5b628f3cb59164336c5,fixing isort and repeat health check logs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-01 12:44:12+01:00,-3600,2017-06-01 12:44:12+01:00,-3600,True,False,"['HISTORY.rst', 'drain.py', 'worker.py', 'conftest.py', 'test_drain.py', 'test_worker.py']",['0ac12da57f32fa63ad72eb95d6a9c29220885f48'],4,13,17,6,0.0,0.0,0.0
+84e574af2e4d506c93079c25ddabe15cffc62e8a,tests for not repeating health checks,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-01 12:56:54+01:00,-3600,2017-06-01 12:56:54+01:00,-3600,True,False,"['worker.py', 'test_worker.py']",['28b639d8f7dfc7994c63e5b628f3cb59164336c5'],7,35,42,2,1.0,1.0,0.0
+a15ee0ec25856b7ad8d9e353a97d53ae1cc938ee,adding async-timeout,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-05 16:52:54+01:00,-3600,2017-06-05 16:52:54+01:00,-3600,True,False,"['HISTORY.rst', 'Makefile', 'version.py', 'worker.py', 'setup.py', 'conftest.py', 'test_main.py', 'test_worker.py']",['13e50d43fdab6e1730b0c01619358f63e38f7f62'],15,27,42,8,0.0,0.0,1.0
+92c65ef0b1d369c396151a7f1d04521f5e36205f,switch wait > Semaphore,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-05 17:45:52+01:00,-3600,2017-06-05 17:47:21+01:00,-3600,True,False,"['HISTORY.rst', 'drain.py', 'logs.py', 'utils.py', 'test_main.py', 'test_worker.py']",['a15ee0ec25856b7ad8d9e353a97d53ae1cc938ee'],24,31,55,6,0.0,0.0,0.0
+838bd58f2385464e9494f0b65511cd54a00fa3b6,add timeout and retry logic to create_redis_pool,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-05 18:36:43+01:00,-3600,2017-06-05 18:51:52+01:00,-3600,True,False,"['HISTORY.rst', 'utils.py', 'worker.py', 'test_utils.py']",['92c65ef0b1d369c396151a7f1d04521f5e36205f'],6,41,47,4,0.2608695652173913,1.0,0.7391304347826086
+a5d1e724e54fbd07f03b6cdd567a1fb76b64c4b6,correcting setup,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-05 19:01:09+01:00,-3600,2017-06-05 20:52:46+01:00,-3600,True,False,"['HISTORY.rst', 'version.py', 'setup.py']",['838bd58f2385464e9494f0b65511cd54a00fa3b6'],12,20,32,3,,,
+419c00a0ef7ae5cbb9a167c0d8a7cc6335dc2e83,Update pytest from 3.1.1 to 3.1.2 (#48),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-06-14 13:38:00+02:00,-7200,2017-06-14 12:38:00+01:00,-3600,True,False,['requirements.txt'],['a5d1e724e54fbd07f03b6cdd567a1fb76b64c4b6'],1,1,2,1,,,
+3c0d7f0be86e56f2126cd4587babc1e22a0ed7c3,"add set encoding, fix #49",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-21 19:54:39+01:00,-3600,2017-06-21 19:54:39+01:00,-3600,True,False,"['HISTORY.rst', 'jobs.py', 'setup.cfg', 'test_main.py']",['419c00a0ef7ae5cbb9a167c0d8a7cc6335dc2e83'],19,53,72,4,1.0,1.0,0.5
+5cc3bf5dbd6fed79bda68bc4616135f49e8cac62,"scheduled tasks (#50)
+
+* splitting Concurrent to add Bindable class
+
+* working on next_datetime
+
+* next_cron working
+
+* add weekday to next_cron
+
+* cleaning up next_cron
+
+* add microseconds to next_cron
+
+* adding cron decorator
+
+* adding cron to actors
+
+* cron working
+
+* cron tests with mocked now
+
+* adding unique option to cron and tests
+
+* configure isort and uprev",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2017-06-22 18:39:03+01:00,-3600,2017-06-22 18:39:03+01:00,-3600,True,False,"['HISTORY.rst', 'Makefile', 'main.py', 'utils.py', 'worker.py', 'setup.cfg', 'fixtures.py', 'requirements.txt', 'test_cron.py', 'test_utils.py']",['3c0d7f0be86e56f2126cd4587babc1e22a0ed7c3'],43,489,532,10,0.4351851851851852,0.7314814814814815,0.4212962962962963
+85c6c7a939bbc919af15dde06fc1e18550ca1058,"switch to_unix_ms, add to_unix_ms_tz",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-23 11:10:13+01:00,-3600,2017-06-23 11:10:13+01:00,-3600,True,False,"['HISTORY.rst', 'jobs.py', 'main.py', 'utils.py', 'version.py', 'index.rst', 'test_cron.py']",['5cc3bf5dbd6fed79bda68bc4616135f49e8cac62'],10,21,31,7,1.0,1.0,1.0
+d6b945459a32ec1f40488a41dffe2bb70466c5b1,rename ellipsis > truncate,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-23 11:13:06+01:00,-3600,2017-06-23 11:13:06+01:00,-3600,True,False,"['jobs.py', 'utils.py', 'worker.py', 'index.rst']",['85c6c7a939bbc919af15dde06fc1e18550ca1058'],6,6,12,4,,,
+df78a618d2fdca9759eaef08b74d5f7abf53a82c,moving docs examples into their own files,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-23 11:23:01+01:00,-3600,2017-06-23 11:23:01+01:00,-3600,True,False,"['Makefile', 'direct_enqueuing.py', 'main_demo.py', 'multiple_queues.py', 'worker_customisation.py', 'usage.rst', 'test_doc_example.py']",['d6b945459a32ec1f40488a41dffe2bb70466c5b1'],51,54,105,7,1.0,1.0,0.8571428571428571
+2b5b124fb32d13419f657d517cf4a52bd551b665,"adding docs for cron, fix #51",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-23 11:50:51+01:00,-3600,2017-06-23 11:50:51+01:00,-3600,True,False,"['main.py', 'cron.py', 'direct_enqueuing.py', 'usage.rst']",['df78a618d2fdca9759eaef08b74d5f7abf53a82c'],9,36,45,4,1.0,1.0,1.0
+65bd9e6cad650a5b9a1f9fed0426ef8758e47ccc,typo in docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-06-23 16:51:17+01:00,-3600,2017-06-23 16:51:17+01:00,-3600,True,False,['usage.rst'],['2b5b124fb32d13419f657d517cf4a52bd551b665'],1,1,2,1,,,
+2bfd2d0927d2573ce413b50e6fc1db2574efd290,Update pytest from 3.1.2 to 3.1.3 (#54),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-07-08 14:55:40+02:00,-7200,2017-07-08 13:55:40+01:00,-3600,True,False,['requirements.txt'],['65bd9e6cad650a5b9a1f9fed0426ef8758e47ccc'],1,1,2,1,,,
+9aebd8a98e3e262bbe8cfebecedbde02fd0d83c1,Update sphinx from 1.6.2 to 1.6.3 (#52),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-07-08 14:55:48+02:00,-7200,2017-07-08 13:55:48+01:00,-3600,True,False,['requirements.txt'],['2bfd2d0927d2573ce413b50e6fc1db2574efd290'],1,1,2,1,,,
+c87df6d2f6cab4587ccb8716819c9ff2edc070bb,Update mypy from 0.511 to 0.520 (#55),pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-07-11 00:35:20+02:00,-7200,2017-07-10 23:35:20+01:00,-3600,True,False,['requirements.txt'],['9aebd8a98e3e262bbe8cfebecedbde02fd0d83c1'],1,1,2,1,,,
+2129ec83ba188518d83ad2c6c12bbe81611ad1bf,uprev and add pyup.yml,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-16 14:44:55+01:00,-3600,2017-08-16 14:44:55+01:00,-3600,True,False,"['.pyup.yml', 'requirements.txt', 'test_worker.py']",['c87df6d2f6cab4587ccb8716819c9ff2edc070bb'],13,14,27,3,,,
+ea6a85c174fb821b87357d61ced2caf06a350b3d,"show redis version, fix #64",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-16 15:10:23+01:00,-3600,2017-08-16 15:10:23+01:00,-3600,True,False,"['utils.py', 'worker.py']",['2129ec83ba188518d83ad2c6c12bbe81611ad1bf'],4,18,22,2,0.8181818181818182,0.8181818181818182,1.0
+f29478b5e2d512293e52982d48cd516d78233202,"log successfull conections, fix #67, uprev",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-16 15:22:35+01:00,-3600,2017-08-16 15:22:35+01:00,-3600,True,False,"['HISTORY.rst', 'utils.py', 'version.py', 'test_utils.py']",['ea6a85c174fb821b87357d61ced2caf06a350b3d'],2,24,26,4,0.7142857142857143,1.0,1.0
+f1a6629b9f8ceeaaffbe17358ca8c3109262ed0a,correcting symbol,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-16 15:45:11+01:00,-3600,2017-08-16 15:45:11+01:00,-3600,True,False,"['main.py', 'test_main.py']",['f29478b5e2d512293e52982d48cd516d78233202'],6,6,12,2,,,
+fd369c2e480d23ec4e2284169439f85be74097e9,"implement job ids, fix #53",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-16 16:22:59+01:00,-3600,2017-08-16 16:23:59+01:00,-3600,True,False,"['HISTORY.rst', 'jobs.py', 'version.py', 'worker.py', 'fixtures.py', 'test_customisation.py', 'test_doc_example.py', 'test_main.py', 'test_worker.py']",['f1a6629b9f8ceeaaffbe17358ca8c3109262ed0a'],57,97,154,9,0.9285714285714286,1.0,0.6428571428571429
+cc4bc1e98d3b6b32bddc9a5b0ece9a86694d0219,correct mess in log_redis_info,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-16 17:29:17+01:00,-3600,2017-08-16 17:29:17+01:00,-3600,True,False,"['HISTORY.rst', 'utils.py', 'version.py', 'test_utils.py']",['fd369c2e480d23ec4e2284169439f85be74097e9'],4,21,25,4,1.0,1.0,1.0
+0716957a859e0b9907f7869f6a06a526cfb13eba,only save job on task in drain if reenqueing,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-17 15:58:34+01:00,-3600,2017-08-17 15:58:34+01:00,-3600,True,False,['drain.py'],['cc4bc1e98d3b6b32bddc9a5b0ece9a86694d0219'],1,2,3,1,1.0,1.0,0.0
+0f507a014ed6cac6275e9dd62b2f9044327ed956,adding semaphore timeouts to drains,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-17 16:35:57+01:00,-3600,2017-08-17 16:40:00+01:00,-3600,True,False,"['HISTORY.rst', 'drain.py', 'version.py', 'test_drain.py']",['0716957a859e0b9907f7869f6a06a526cfb13eba'],3,36,39,4,0.65,0.75,0.65
+54de0328234c78e45f2cec2a57a119e6e069dacc,adding key count to redis info,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-17 16:51:00+01:00,-3600,2017-08-17 16:51:00+01:00,-3600,True,False,"['HISTORY.rst', 'utils.py', 'test_utils.py']",['0f507a014ed6cac6275e9dd62b2f9044327ed956'],4,11,15,3,1.0,1.0,1.0
+c764765f78af1ea3c7456682b0850dfd30a1ae33,tweak redis log msg format,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-17 17:00:49+01:00,-3600,2017-08-17 17:00:49+01:00,-3600,True,False,"['utils.py', 'test_utils.py']",['54de0328234c78e45f2cec2a57a119e6e069dacc'],6,6,12,2,,,
+19f0a889e3d29bb437a6d96c428188776f92400d,get_redis_pool lock to avoid multiple pool being created,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-19 18:59:08+01:00,-3600,2017-08-19 18:59:08+01:00,-3600,True,False,"['HISTORY.rst', 'drain.py', 'utils.py', 'version.py', 'test_main.py']",['c764765f78af1ea3c7456682b0850dfd30a1ae33'],7,19,26,5,0.3333333333333333,0.8333333333333334,0.16666666666666666
+6abdf05700f10cc45668db585fdee6f6adf8a44a,create_connection_timeout and settings repr,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-21 23:51:07+01:00,-3600,2017-08-22 00:30:10+01:00,-3600,True,False,"['HISTORY.rst', 'utils.py', 'version.py', 'setup.py', 'test_utils.py']",['19f0a889e3d29bb437a6d96c428188776f92400d'],6,16,22,5,0.8,1.0,1.0
+4686da98a5a23784baafa481a556be94c6f96d58,extract pool creation from RedisMixin,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-22 13:22:42+01:00,-3600,2017-08-22 13:22:42+01:00,-3600,True,False,"['HISTORY.rst', 'Makefile', 'main.py', 'testing.py', 'utils.py', 'test_utils.py']",['6abdf05700f10cc45668db585fdee6f6adf8a44a'],43,55,98,6,0.4,1.0,0.0
+e63f04c2c38d39c38c2fbab48ee4b382bea7c6bf,improve create_pool_lenient,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-23 13:08:20+01:00,-3600,2017-08-23 13:08:20+01:00,-3600,True,False,"['HISTORY.rst', 'utils.py']",['4686da98a5a23784baafa481a556be94c6f96d58'],3,7,10,2,,,
+4515b377a99e81ce1f82d76beeec169832ed0763,uprev.,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-08-25 11:33:08+01:00,-3600,2017-08-25 11:33:08+01:00,-3600,True,False,"['HISTORY.rst', 'version.py']",['e63f04c2c38d39c38c2fbab48ee4b382bea7c6bf'],2,2,4,2,,,
+63a372e95068b82be3953b1d6eb14f861a72b04c,"Scheduled monthly dependency update for November (#72)
+
+* Update flake8 from 3.4.1 to 3.5.0
+
+* Update mypy from 0.521 to 0.540
+
+* Update pytest from 3.2.1 to 3.2.3
+
+* Update pytest-mock from 1.6.2 to 1.6.3
+
+* Update pytz from 2017.2 to 2017.3
+
+* Update sphinx from 1.6.3 to 1.6.5
+
+* fix brittle tests for redis version",pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-11-16 00:20:04+01:00,-3600,2017-11-15 23:20:04+00:00,0,True,False,"['requirements.txt', 'test_utils.py']",['4515b377a99e81ce1f82d76beeec169832ed0763'],7,8,15,2,,,
+5c312b5d5d1f09e7b95e8b47098ca921ad2cc664,"better signal handling (#73)
+
+* better signal handling, fix #47
+
+* fix tests, remove HandledExit
+
+* correct handle_sig_force",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2017-11-16 01:01:45+00:00,0,2017-11-16 01:01:45+00:00,0,True,False,"['HISTORY.rst', 'version.py', 'worker.py', 'conftest.py', 'example.py', 'test_worker.py']",['63a372e95068b82be3953b1d6eb14f861a72b04c'],29,30,59,6,0.0,0.0,1.0
+b9f15379538db5a40655831d378d217962c651ea,"remove finished tasks from drain.pending_tasks (#74)
+
+* remove finished tasks from drain.pendign_tasks
+
+* raise exception on cancelled drain tasks, fix #46",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2017-11-16 11:45:49+00:00,0,2017-11-16 11:45:49+00:00,0,True,False,"['HISTORY.rst', 'drain.py', 'test_worker.py']",['5c312b5d5d1f09e7b95e8b47098ca921ad2cc664'],5,16,21,3,0.6666666666666666,0.6666666666666666,0.6666666666666666
+cf80536b64c7126c7e85c8346730b2095e3ce544,"docker/aiohttp demo (#75)
+
+* adding docker/aiohttp demo
+
+* adding aiohttp docs, fix #69
+
+* add history",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2017-11-16 14:11:33+00:00,0,2017-11-16 14:11:33+00:00,0,True,False,"['.gitignore', 'HISTORY.rst', 'drain.py', 'Dockerfile', 'README.md', 'app.py', 'build.sh', 'docker-compose.yml', 'requirements.txt', 'aiohttp.py', 'usage.rst', 'setup.py']",['b9f15379538db5a40655831d378d217962c651ea'],14,319,333,12,0.7432432432432432,1.0,0.7027027027027027
+45bc9d75e406675defbc449db1568538d2d7082c,fix link to demo in docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-11-16 14:21:47+00:00,0,2017-11-16 14:21:47+00:00,0,True,False,['usage.rst'],['cf80536b64c7126c7e85c8346730b2095e3ce544'],1,1,2,1,,,
+ae02442849b9712b52b0f949c895f35ab0fc44ec,tweak docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2017-11-16 14:32:49+00:00,0,2017-11-16 14:32:49+00:00,0,True,False,['conf.py'],['45bc9d75e406675defbc449db1568538d2d7082c'],2,2,4,1,,,
+e2a89be31374f8f00d3787e965bf730cb96e80fa,"integration with aioredis 1.0 (#76)
+
+* starting integration with aioredis 1
+
+* simplify with aioredis 1.0
+
+* fix coverage and tests
+
+* uprev, tweaks",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2017-11-27 16:43:34+00:00,0,2017-11-27 16:43:34+00:00,0,True,False,"['HISTORY.rst', 'drain.py', 'main.py', 'testing.py', 'utils.py', 'version.py', 'worker.py', 'app.py', 'setup.py', 'conftest.py', 'fixtures.py', 'test_drain.py', 'test_utils.py', 'test_worker.py']",['ae02442849b9712b52b0f949c895f35ab0fc44ec'],138,109,247,14,0.0,0.0,0.25
+93672a7f80ed52fedc50c59ca76263f2ae6679e3,"netlify build PRs (#77)
+
+* adding requirements.txt
+
+* add runtime.txt",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2017-11-27 16:58:20+00:00,0,2017-11-27 16:58:20+00:00,0,True,False,"['Makefile', 'requirements.txt', 'requirements.txt', 'runtime.txt', 'requirements.txt']",['e2a89be31374f8f00d3787e965bf730cb96e80fa'],2,8,10,5,,,
+7930f198bbf73d6a6c8e9ad23e40367edf838385,"Scheduled monthly dependency update for December (#78)
+
+* Update aiohttp from 2.3.2 to 2.3.5
+
+* Update aiohttp-session from 1.2.0 to 2.1.0
+
+* Update uvloop from 0.8.1 to 0.9.1
+
+* Update coverage from 4.4.1 to 4.4.2
+
+* Update mypy from 0.540 to 0.550
+
+* Update pytest from 3.2.3 to 3.3.0
+
+* Update pytest-aiohttp from 0.1.3 to 0.2.0
+
+* Update pytest-timeout from 1.2.0 to 1.2.1",pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2017-12-11 17:08:40+01:00,-3600,2017-12-11 16:08:40+00:00,0,True,False,"['requirements.txt', 'requirements.txt']",['93672a7f80ed52fedc50c59ca76263f2ae6679e3'],8,8,16,2,,,
+f0b4b8b4db2df0c950069f98d5d62c104912e48d,"Scheduled monthly dependency update for January (#79)
+
+* Update aiohttp from 2.3.5 to 2.3.7
+
+* Update mypy from 0.550 to 0.560
+
+* Update pytest from 3.3.0 to 3.3.1
+
+* Update pytest-aiohttp from 0.2.0 to 0.3.0",pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2018-01-10 16:36:23+01:00,-3600,2018-01-10 15:36:23+00:00,0,True,False,"['requirements.txt', 'requirements.txt']",['7930f198bbf73d6a6c8e9ad23e40367edf838385'],4,4,8,2,,,
+279ee98462d570cc3cdf63e582c61f318e62f671,fix for msgpack > 0.5.6,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2018-05-28 13:39:56+01:00,-3600,2018-05-28 13:39:56+01:00,-3600,True,False,"['jobs.py', 'setup.py', 'test_main.py']",['f0b4b8b4db2df0c950069f98d5d62c104912e48d'],7,7,14,3,,,1.0
+5aa97b087eb6365c0b42966676de9809ee8492f5,"Scheduled monthly dependency update for May (#83)
+
+* Update aiohttp from 2.3.7 to 3.1.3
+
+* Update aiohttp-session from 2.1.0 to 2.3.0
+
+* Update sphinx from 1.6.5 to 1.7.4
+
+* Update coverage from 4.4.2 to 4.5.1
+
+* Update isort from 4.2.15 to 4.3.4
+
+* Update mypy from 0.560 to 0.590
+
+* Update pycodestyle from 2.3.1 to 2.4.0
+
+* Update pytest from 3.3.1 to 3.5.1
+
+* Update pytest-mock from 1.6.3 to 1.9.0
+
+* Update pytest-sugar from 0.9.0 to 0.9.1
+
+* Update pytest-toolbox from 0.2 to 0.4
+
+* Update pytz from 2017.3 to 2018.4
+
+* fix tests",pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2018-05-28 14:50:53+02:00,-7200,2018-05-28 13:50:53+01:00,-3600,True,False,"['.gitignore', 'requirements.txt', 'requirements.txt', 'conftest.py', 'requirements.txt', 'test_cron.py']",['279ee98462d570cc3cdf63e582c61f318e62f671'],15,16,31,6,,,
+52f56ac8589792aaddb90801613a54f8a7ff7ed3,uprev,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2018-05-28 13:54:24+01:00,-3600,2018-05-28 13:54:24+01:00,-3600,True,False,"['HISTORY.rst', 'version.py']",['5aa97b087eb6365c0b42966676de9809ee8492f5'],1,5,6,2,,,
+61c48e7b52e567cda7484c52e714bff0e52b5d2c,ignore vscode config and pipenv default env (#86),Po-Hsien Chu,stegben.benjamin@gmail.com,Samuel Colvin,samcolvin@gmail.com,2018-05-29 19:11:56+08:00,-28800,2018-05-29 12:11:56+01:00,-3600,True,False,['.gitignore'],['52f56ac8589792aaddb90801613a54f8a7ff7ed3'],0,2,2,1,,,
+51708106011ef3ffde7b84c6edd9b70b7acb0841,trim tailing space (#91),Po-Hsien Chu,stegben.benjamin@gmail.com,Samuel Colvin,samcolvin@gmail.com,2018-07-09 17:50:49+08:00,-28800,2018-07-09 10:50:49+01:00,-3600,True,False,['.editorconfig'],['61c48e7b52e567cda7484c52e714bff0e52b5d2c'],0,1,1,1,,,
+23b57b6ddb8abda47a4d303a6fdd4c78ac1461d3,"Scheduled monthly dependency update for July (#89)
+
+* Update aiohttp from 3.1.3 to 3.3.2
+
+* Update aiohttp-session from 2.3.0 to 2.5.1
+
+* Update chevron from 0.11.1 to 0.12.1
+
+* Update uvloop from 0.9.1 to 0.10.2
+
+* Update sphinx from 1.7.4 to 1.7.5
+
+* Update sphinxcontrib-websupport from 1.0.1 to 1.1.0
+
+* Update mypy from 0.590 to 0.610
+
+* Update pycodestyle from 2.3.1 to 2.4.0
+
+* Update pyflakes from 1.6.0 to 2.0.0
+
+* Update pytest from 3.5.1 to 3.6.2
+
+* Update pytest-isort from 0.1.0 to 0.2.0
+
+* Update pytest-mock from 1.9.0 to 1.10.0
+
+* Update pytest-timeout from 1.2.1 to 1.3.0
+
+* Update pytz from 2018.4 to 2018.5
+
+* reset pycodestyle
+
+* fix typing for new mypy",pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2018-07-09 13:08:43+02:00,-7200,2018-07-09 12:08:43+01:00,-3600,True,False,"['Makefile', '__init__.py', 'drain.py', 'jobs.py', 'main.py', 'worker.py', 'requirements.txt', 'requirements.txt', 'requirements.txt']",['51708106011ef3ffde7b84c6edd9b70b7acb0841'],34,35,69,9,,,
+7d44d1db21cc4c8eb0c6e24f510f6ba054a72f25,"simplifying job encode and decode (#93)
+
+* simplifying job encode and decode
+
+* tweaks
+
+* test returning jobs",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2018-07-13 16:29:11+01:00,-3600,2018-07-13 16:29:11+01:00,-3600,True,False,"['HISTORY.rst', 'jobs.py', 'main.py', 'worker.py', 'test_main.py', 'test_worker.py']",['23b57b6ddb8abda47a4d303a6fdd4c78ac1461d3'],46,93,139,6,0.0,0.9791666666666666,0.5416666666666666
+2cfea6c04170c5ad32da41ba70d31c1947565519,"Use f-string in main_demo code example (#106)
+
+Use f-strings because support for 3.5 was dropped and no reason not to.",Mariatta,Mariatta@users.noreply.github.com,Samuel Colvin,samcolvin@gmail.com,2018-11-15 02:32:20-08:00,28800,2018-11-15 10:32:20+00:00,0,True,False,['main_demo.py'],['7d44d1db21cc4c8eb0c6e24f510f6ba054a72f25'],1,1,2,1,,,
+fa9c3e8c1b662722cdd72c98341af27ffdb1abfa,Add missing functions for MockRedis (#105),Pavel Fokin,pavel.fokin@opensoftdev.ru,Samuel Colvin,samcolvin@gmail.com,2018-11-15 12:33:23+02:00,-7200,2018-11-15 10:33:23+00:00,0,True,False,"['testing.py', 'test_utils.py']",['2cfea6c04170c5ad32da41ba70d31c1947565519'],0,23,23,2,1.0,1.0,0.6470588235294118
+8f2033be500d056fe31ada81689868fe244ed0bf,"Scheduled monthly dependency update for November (#104)
+
+* Update aiohttp from 3.3.2 to 3.4.4
+
+* Update aiohttp-session from 2.5.1 to 2.7.0
+
+* Update chevron from 0.12.1 to 0.13.1
+
+* Update uvloop from 0.10.2 to 0.11.3
+
+* Update sphinx from 1.7.5 to 1.8.1
+
+* Update flake8 from 3.5.0 to 3.6.0
+
+* Update mypy from 0.610 to 0.641
+
+* Update pycodestyle from 2.3.1 to 2.4.0
+
+* Update pytest from 3.6.2 to 3.9.3
+
+* Update pytest-cov from 2.5.1 to 2.6.0
+
+* Update pytest-isort from 0.2.0 to 0.2.1
+
+* Update pytest-timeout from 1.3.0 to 1.3.2
+
+* Update pytz from 2018.5 to 2018.7
+
+* fix linting
+
+* remove 'coverage combine'",pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2018-11-15 03:40:45-08:00,28800,2018-11-15 11:40:45+00:00,0,True,False,"['Makefile', 'worker.py', 'requirements.txt', 'requirements.txt', 'setup.cfg', 'requirements.txt', 'test_cli.py', 'test_customisation.py', 'test_main.py', 'test_worker.py']",['fa9c3e8c1b662722cdd72c98341af27ffdb1abfa'],32,35,67,10,,,
+409f6e75422c779100c569f5f4a091c8431733d4,uprev,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2018-11-15 11:41:51+00:00,0,2018-11-15 11:44:31+00:00,0,True,False,"['HISTORY.rst', 'version.py']",['8f2033be500d056fe31ada81689868fe244ed0bf'],3,3,6,2,,,
+0aaa850a81df746f9d088e269ccc9288a4202f80,"WIP Complete Rewrite (#110)
+
+* starting complete rewrite
+
+* implement function calling
+
+* worker working
+
+* lintign
+
+* fixing tests and formatting
+
+* fix travis
+
+* using seconds not ms where possible
+
+* starting main tests
+
+* fix travis
+
+* more worker tests
+
+* worker tests
+
+* startup and shutdown tests
+
+* cron and more tests
+
+* rewrite docs
+
+* fix --burst
+
+* tweak",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2019-03-01 18:19:55+00:00,0,2019-03-01 18:19:55+00:00,0,True,False,"['.codecov.yml', '.editorconfig', '.travis.yml', 'HISTORY.rst', 'Makefile', '__init__.py', 'cli.py', 'connections.py', 'constants.py', 'cron.py', 'drain.py', 'jobs.py', 'logs.py', 'main.py', 'testing.py', 'utils.py', 'version.py', 'worker.py', 'Dockerfile', 'README.md', 'app.py', 'build.sh', 'docker-compose.yml', 'requirements.txt', 'aiohttp.py', 'cron.py', 'direct_enqueuing.py', 'main_demo.py', 'multiple_queues.py', 'worker_customisation.py', 'index.rst', 'old-docs.zip', 'usage.rst', 'README.md', '__init__.py', 'jobs.py', 'test_arq.py', 'test_rq.py', 'setup.cfg', 'setup.py', 'conftest.py', 'example.py', 'fixtures.py', 'requirements.txt', 'test_cli.py', 'test_cron.py', 'test_customisation.py', 'test_doc_example.py', 'test_drain.py', 'test_jobs.py', 'test_main.py', 'test_utils.py', 'test_worker.py']",['409f6e75422c779100c569f5f4a091c8431733d4'],3842,1378,5220,53,0.15449202350965574,0.0,0.42737195633921077
+bba1b1dd998de6daa5224ef8adbde123e1a96e34,"log exception.extra, remove msgpack references",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-01 19:54:52+00:00,0,2019-03-01 19:54:52+00:00,0,True,False,"['README.rst', 'cli.py', 'jobs.py', 'worker.py', 'setup.cfg', 'test_jobs.py', 'test_worker.py']",['0aaa850a81df746f9d088e269ccc9288a4202f80'],11,40,51,7,0.7142857142857143,0.7619047619047619,0.2857142857142857
+6ddfca38079aff496bcb0cb128fe168258c12017,catch picking errors,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-01 20:39:56+00:00,0,2019-03-01 20:39:56+00:00,0,True,False,"['worker.py', 'test_cron.py', 'test_main.py', 'test_worker.py']",['bba1b1dd998de6daa5224ef8adbde123e1a96e34'],15,65,80,4,0.7777777777777778,0.7777777777777778,0.4722222222222222
+3e15b3d98c9dbbb382bb59c427f78c7a94f8c1fd,improve coverage,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-03 11:01:37+00:00,0,2019-03-03 11:01:37+00:00,0,True,False,"['constants.py', 'worker.py', 'test_cron.py', 'test_utils.py', 'test_worker.py']",['6ddfca38079aff496bcb0cb128fe168258c12017'],12,67,79,5,0.35714285714285715,0.9285714285714286,0.6071428571428571
+856b4194504385efa5013b8fb782f3064e38b28f,more docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-03 11:59:27+00:00,0,2019-03-03 11:59:27+00:00,0,True,False,"['worker.py', 'deferred.py', 'index.rst', 'usage.rst', 'test_utils.py']",['3e15b3d98c9dbbb382bb59c427f78c7a94f8c1fd'],96,170,266,5,0.5833333333333334,0.5833333333333334,0.5833333333333334
+4e6567a38dd0ae2552221bd07a019d2709ac12dc,rename RetryJob > Retry,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-03 12:01:01+00:00,0,2019-03-03 12:01:01+00:00,0,True,False,"['__init__.py', 'worker.py', 'index.rst', 'test_worker.py']",['856b4194504385efa5013b8fb782f3064e38b28f'],9,9,18,4,,,
+bd91e8be9c35389b41ff8b84d9a09cd70836777f,more docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-03 12:38:09+00:00,0,2019-03-03 12:38:09+00:00,0,True,False,"['cron.py', 'deferred.py', 'job_ids.py', 'job_results.py', 'main_demo.py', 'index.rst', 'setup.py']",['4e6567a38dd0ae2552221bd07a019d2709ac12dc'],28,128,156,7,0.09433962264150944,1.0,1.0
+daf877301aacbc958368c455c4dc372c71311685,more docs,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-03 13:01:41+00:00,0,2019-03-03 13:01:41+00:00,0,True,False,"['worker.py', 'main_demo.py', 'retry.py', 'slow_job.py', 'slow_job_output.txt', 'index.rst']",['bd91e8be9c35389b41ff8b84d9a09cd70836777f'],5,93,98,6,0.9047619047619048,0.9047619047619048,0.9047619047619048
+4f1a00e86ba638453098cd836ffeb4c6d4224a83,improve docs by adding code Reference section,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-03 21:00:46+00:00,0,2019-03-03 21:00:46+00:00,0,True,False,"['connections.py', 'cron.py', 'jobs.py', 'worker.py', 'index.rst']",['daf877301aacbc958368c455c4dc372c71311685'],37,133,170,5,0.0,0.5365853658536586,0.24390243902439024
+278093b302fae78ad79185baf8cd241d17012dae,update history,Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-03-05 16:57:03+00:00,0,2019-03-05 16:57:03+00:00,0,True,False,['HISTORY.rst'],['4f1a00e86ba638453098cd836ffeb4c6d4224a83'],1,1,2,1,,,
+b8c20f073324a856418fdd5c2068669ffad24631,"upreving packages (#112)
+
+* upreving packages
+
+* more",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2019-03-05 17:08:43+00:00,0,2019-03-05 17:08:43+00:00,0,True,False,"['requirements.txt', 'requirements.txt']",['278093b302fae78ad79185baf8cd241d17012dae'],13,11,24,2,,,
+98982eb301c7963c8eb9d6e5f1da637abcdba10d,allow setting job_try when enqueueing job (#113),Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2019-03-06 14:06:18+00:00,0,2019-03-06 14:06:18+00:00,0,True,False,"['HISTORY.rst', '__init__.py', 'connections.py', 'jobs.py', 'worker.py', 'conftest.py', 'test_jobs.py', 'test_main.py', 'test_worker.py']",['b8c20f073324a856418fdd5c2068669ffad24631'],53,103,156,9,0.40476190476190477,0.8571428571428571,1.0
+f911cf3426f2c9d8f936ba06a5f5642cb2e7c826,"watch mode (#114)
+
+* watch mode
+
+* tests and docs
+
+* tweak worker
+
+* improve cli",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2019-03-06 18:40:33+00:00,0,2019-03-06 18:40:33+00:00,0,True,False,"['.gitignore', 'HISTORY.rst', 'Makefile', 'cli.py', 'version.py', 'worker.py', 'index.rst', 'setup.py', 'test_cli.py', 'test_cron.py', 'test_jobs.py', 'test_main.py', 'test_worker.py']",['98982eb301c7963c8eb9d6e5f1da637abcdba10d'],44,107,151,13,0.4864864864864865,0.918918918918919,0.4594594594594595
+d410c4b2f626891438bae978d323f13884930844,"ctx in worker, all_jobs_results and cwd",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-06 18:42:22+00:00,0,2019-03-06 18:42:22+00:00,0,True,False,"['HISTORY.rst', '__init__.py', 'cli.py', 'connections.py', 'worker.py', 'test_jobs.py']",['f911cf3426f2c9d8f936ba06a5f5642cb2e7c826'],9,41,50,6,0.38461538461538464,0.9615384615384616,0.9230769230769231
+183ce56bea6fec533b8c74c966140d08212a9d0c,sort all_job_results,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-06 18:48:01+00:00,0,2019-03-06 18:48:01+00:00,0,True,False,"['HISTORY.rst', 'connections.py']",['d410c4b2f626891438bae978d323f13884930844'],2,4,6,2,1.0,1.0,1.0
+9848edde6f3701942fa4dcfd08ac120921af7337,fix Worker redis_settings error,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-03-12 22:21:51+00:00,0,2019-03-12 22:21:51+00:00,0,True,False,"['HISTORY.rst', 'connections.py', 'version.py', 'worker.py']",['183ce56bea6fec533b8c74c966140d08212a9d0c'],4,10,14,4,0.0,1.0,1.0
+2105f142534903d9e05b1f8b83991470dacefcdd,"add run_check (#116)
+
+* add run_check, fix #115
+
+* fix job results
+
+* better exception message",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2019-03-15 15:19:37+00:00,0,2019-03-15 15:19:37+00:00,0,True,False,"['HISTORY.rst', 'jobs.py', 'version.py', 'worker.py', 'test_jobs.py', 'test_worker.py']",['9848edde6f3701942fa4dcfd08ac120921af7337'],10,106,116,6,0.9315068493150684,0.9726027397260274,0.9315068493150684
+5d67dc422727e63ae4cb1221e9251adbae46b026,use pipeline rather than gather,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-04-17 19:43:18+01:00,-3600,2019-04-17 19:43:18+01:00,-3600,True,False,"['HISTORY.rst', 'Makefile', 'connections.py']",['2105f142534903d9e05b1f8b83991470dacefcdd'],4,9,13,3,0.0,0.0,0.0
+3145d085904835bddcef615371c5d378770bbcf6,"correct history, catch any error on pickling job result",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-04-22 19:41:52+01:00,-3600,2019-04-22 19:41:52+01:00,-3600,True,False,"['HISTORY.rst', 'version.py', 'worker.py']",['5d67dc422727e63ae4cb1221e9251adbae46b026'],7,11,18,3,,,
+61d524c13f48451ed4bd587e852a4c748d95e0ed,Compatible with Python 3.6 (#122),小明,ciici123@hotmail.com,Samuel Colvin,s@muelcolvin.com,2019-04-23 02:45:12+08:00,-28800,2019-04-22 19:46:42+01:00,-3600,True,False,"['.travis.yml', 'HISTORY.rst', 'worker.py', 'setup.py']",['3145d085904835bddcef615371c5d378770bbcf6'],10,14,24,4,,,
+3183b25310013bacc39b942bd92175f3787d274b,"Scheduled monthly dependency update for April (#119)
+
+* Update sphinx from 1.8.4 to 2.0.0
+
+* Update black from 18.9b0 to 19.3b0
+
+* Update coverage from 4.5.2 to 4.5.3
+
+* Update isort from 4.3.10 to 4.3.16
+
+* Update pytest from 4.3.0 to 4.4.0
+
+* Update pytest-mock from 1.10.1 to 1.10.3",pyup.io bot,github-bot@pyup.io,Samuel Colvin,samcolvin@gmail.com,2019-04-23 15:15:21+02:00,-7200,2019-04-23 14:15:21+01:00,-3600,True,False,"['requirements.txt', 'requirements.txt']",['61d524c13f48451ed4bd587e852a4c748d95e0ed'],6,6,12,2,,,
+1434646b48c45bd27e392f0162976404e4d8021d,"Pickle dicts (#123)
+
+* dicts when pickling and better error catching
+
+* returning JobResult and JobDef
+
+* fix linting, tests for unpicklable
+
+* more tests for pickling
+
+* correct docs",Samuel Colvin,samcolvin@gmail.com,GitHub,noreply@github.com,2019-04-23 15:05:39+01:00,-3600,2019-04-23 15:05:39+01:00,-3600,True,False,"['.gitignore', 'HISTORY.rst', 'connections.py', 'jobs.py', 'version.py', 'worker.py', 'job_results.py', 'test_jobs.py', 'test_main.py', 'test_worker.py']",['3183b25310013bacc39b942bd92175f3787d274b'],89,206,295,10,1.0,1.0,0.47058823529411764
+bb05e19db93f2aa2e0e2869654fc712111c359d4,"add support for different queues (#127)
+
+* add support for different queues
+
+* make worker queue var name consistent
+
+* make queue name constant more obvious
+
+* add health check support for different queues
+
+* Update arq/worker.py
+
+Co-Authored-By: Samuel Colvin <samcolvin@gmail.com>
+
+* add test for setting health check key on worker",Nikolay Tsutsarin,leluch.contacts@gmail.com,Samuel Colvin,samcolvin@gmail.com,2019-05-14 15:13:52+03:00,-10800,2019-05-14 13:13:52+01:00,-3600,True,False,"['connections.py', 'constants.py', 'jobs.py', 'worker.py', 'test_main.py', 'test_worker.py']",['1434646b48c45bd27e392f0162976404e4d8021d'],29,74,103,6,0.2972972972972973,0.7567567567567568,0.918918918918919
+26135d338046006581a05eb12f805ccb7d0d1dfd,uprev,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-05-14 13:18:02+01:00,-3600,2019-05-14 13:18:02+01:00,-3600,True,False,"['HISTORY.rst', 'version.py']",['bb05e19db93f2aa2e0e2869654fc712111c359d4'],1,5,6,2,,,
+c12c83de11561e8a3f6129ab89247030e6739160,"fixing worker semaphore (#128)
+
+* fixing worker semaphore
+
+* add tests for many expired jobs
+
+* tweak history",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-05-14 14:57:13+01:00,-3600,2019-05-14 14:57:13+01:00,-3600,True,False,"['HISTORY.rst', 'Makefile', 'version.py', 'worker.py', 'test_worker.py']",['26135d338046006581a05eb12f805ccb7d0d1dfd'],5,28,33,5,0.875,1.0,0.125
+11f7ccc1956078a6634ff0eb484a0340e193bf59,"Scheduled monthly dependency update for May (#125)
+
+* Update sphinx from 2.0.0 to 2.0.1
+
+* Update isort from 4.3.16 to 4.3.17
+
+* Update pytest from 4.4.0 to 4.4.1
+
+* Update pytest-mock from 1.10.3 to 1.10.4",pyup.io bot,github-bot@pyup.io,Samuel Colvin,s@muelcolvin.com,2019-05-14 15:57:29+02:00,-7200,2019-05-14 14:57:29+01:00,-3600,True,False,"['requirements.txt', 'requirements.txt']",['c12c83de11561e8a3f6129ab89247030e6739160'],4,4,8,2,,,
+b50824b9d29a48ddf068e720e260fc96c126e45e,improved error when a job is aborted,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-07-30 13:07:04+01:00,-3600,2019-07-30 13:07:04+01:00,-3600,True,False,"['HISTORY.rst', 'worker.py', 'test_worker.py']",['11f7ccc1956078a6634ff0eb484a0340e193bf59'],10,98,108,3,0.273972602739726,0.4931506849315068,0.0
+b645cce15ef03f9fa51757ae3aa4160ae165cc4e,uprev,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-07-30 13:11:06+01:00,-3600,2019-07-30 13:11:06+01:00,-3600,True,False,"['HISTORY.rst', 'version.py']",['b50824b9d29a48ddf068e720e260fc96c126e45e'],3,3,6,2,,,
+c4e89b36e2b6d95359048ab5fbac89a602201791,fix for python 3.6,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-07-30 13:14:18+01:00,-3600,2019-07-30 13:14:18+01:00,-3600,True,False,['test_worker.py'],['b645cce15ef03f9fa51757ae3aa4160ae165cc4e'],2,5,7,1,1.0,1.0,0.0
+06c05d5dbec2be0fcead140e17d09d86b0ead13f,prevent duplicate jobs when result exists (#138),Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-08-02 16:26:05+01:00,-3600,2019-08-02 16:26:05+01:00,-3600,True,False,"['HISTORY.rst', 'connections.py', 'test_worker.py']",['c4e89b36e2b6d95359048ab5fbac89a602201791'],1,20,21,3,0.8888888888888888,0.8888888888888888,0.8888888888888888
+b2d397ae3b07340674f6f0edad144beaf4d4ef54,"non retry mode (#140)
+
+* non retry mode
+
+* update history, fix #139
+
+* adding max_burst_jobs
+
+* history",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-08-02 17:34:22+01:00,-3600,2019-08-02 17:34:22+01:00,-3600,True,False,"['.gitignore', 'HISTORY.rst', 'version.py', 'worker.py', 'test_worker.py']",['06c05d5dbec2be0fcead140e17d09d86b0ead13f'],8,55,63,5,0.3333333333333333,0.3333333333333333,0.0
+f0fa671e6056593390e1b829c45e5a16b87212f8,"Custom serializers (#143)
+
+* feat: add ability to specify custom serializer and deserializer functions
+
+* feat: add _serialize, _deserialize arguments to create_pool
+
+* fix: add back PickleError for backward compatibility
+
+* chore: format code
+
+* fix: apply code review suggestions
+
+* chore: add tests for custom serializers
+
+* chore: add docs paragraph about serializers and an example
+
+* chore: make serializer type hints stricter and define constants in arq.jobs
+
+* chore: make serialization functions public and uniform the names to *lizer
+
+* fix: pass _job_*lizer arguments to recursive call of create_pool
+
+* chore: make job_*lizer arguments public in create_pool
+
+* chore: remove unnecessary defer in serializer example
+
+* chore: add precise error value when testing incompatible serializers
+
+* chore: format code
+
+* chore: add history entry
+
+* chore: make the serializer arguments in ArqRedis public
+
+* chore: adjust indentation in serialization tests
+
+* fix: serializationerror tests
+
+* chore: fix ArqRedis' docstring",Michele Lacchia,michelelacchia@gmail.com,Samuel Colvin,s@muelcolvin.com,2019-08-11 17:43:37+02:00,-7200,2019-08-11 16:43:37+01:00,-3600,True,False,"['HISTORY.rst', 'connections.py', 'jobs.py', 'worker.py', 'custom_serialization_msgpack.py', 'index.rst', 'conftest.py', 'requirements.txt', 'test_jobs.py', 'test_main.py', 'test_utils.py', 'test_worker.py']",['b2d397ae3b07340674f6f0edad144beaf4d4ef54'],71,283,354,12,0.4962962962962963,0.8592592592592593,0.34814814814814815
+3b35919dc6d5ee3935e7f3a0435ed280871d0eb1,"Feat worker limit (#142)
+
+* feat: add queue_read_limit to limit the number of job IDs read at each poll
+
+* fix: set offset to None in case the limit is not specified
+
+* chore: format code
+
+* fix: set queue_read_limit to max_jobs if not specified
+
+* chore: refactor worker poll iteration into a separate method and write tests for queue_read_limit
+
+* chore: add history note
+
+* chore: format code
+
+* chore: format docstring
+
+* fix: remove additional call to Redis introduced by mistake
+
+* chore: remove unneeded call to create_pool in queue_read_limit tests
+
+* chore: assign queue_read_limit in one line
+
+* chore: increase delay in queue_read_limit tests for CI systems
+
+* chore: fix linting errors
+
+* fix remaining sleeps",Michele Lacchia,michelelacchia@gmail.com,Samuel Colvin,s@muelcolvin.com,2019-08-11 20:41:36+02:00,-7200,2019-08-11 19:41:36+01:00,-3600,True,False,"['HISTORY.rst', 'worker.py', 'conftest.py', 'test_worker.py']",['f0fa671e6056593390e1b829c45e5a16b87212f8'],16,82,98,4,0.3,1.0,0.96
+6a750a232a072b14f3cc7a0e7b9f35c438b0576f,"implement queued_jobs, fix #145 (#146)",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-08-11 20:21:12+01:00,-3600,2019-08-11 20:21:12+01:00,-3600,True,False,"['HISTORY.rst', 'connections.py', 'test_main.py']",['3b35919dc6d5ee3935e7f3a0435ed280871d0eb1'],6,60,66,3,0.22916666666666666,1.0,0.8958333333333334
+697d55d1f5ceeeee63638ebbc4ccdd9b153148d3,uprev,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-08-11 20:21:50+01:00,-3600,2019-08-11 20:21:50+01:00,-3600,True,False,"['HISTORY.rst', 'version.py']",['6a750a232a072b14f3cc7a0e7b9f35c438b0576f'],2,2,4,2,,,
+52332ecda06bfc7a4bb813d44c91ab999fb073e1,"better logic for deserializing (#149)
+
+* better logic for deserializing
+
+* cleanup and history
+
+* fix tests
+
+* test coverage",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-08-21 19:45:59+01:00,-3600,2019-08-21 19:45:59+01:00,-3600,True,False,"['HISTORY.rst', 'jobs.py', 'version.py', 'worker.py', 'test_jobs.py', 'test_main.py', 'test_worker.py']",['697d55d1f5ceeeee63638ebbc4ccdd9b153148d3'],52,112,164,7,1.0,1.0,1.0
+921911cca703f7329e92c39c01ae64d65fa29cb0,fix run_check(xmax_burst_jobs=...) logic (#150),Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-08-21 20:31:22+01:00,-3600,2019-08-21 20:31:22+01:00,-3600,True,False,"['HISTORY.rst', 'worker.py', 'test_worker.py']",['52332ecda06bfc7a4bb813d44c91ab999fb073e1'],6,25,31,3,1.0,1.0,0.8666666666666667
+d764f624ebd06ce165b94e2774da504c99825444,history date,Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-08-21 20:58:50+01:00,-3600,2019-08-21 20:58:50+01:00,-3600,True,False,['HISTORY.rst'],['921911cca703f7329e92c39c01ae64d65fa29cb0'],1,1,2,1,,,
+5c4a1e42d92775ad802de39cbc2e3e6a6afb8da6,"fix for max_burst_jobs and improve coverage (#152)
+
+* fix for max_burst_jobs and improve coverage
+
+* add history
+
+* fix for python 3.6",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-08-30 15:45:01+01:00,-3600,2019-08-30 15:45:01+01:00,-3600,True,False,"['HISTORY.rst', 'version.py', 'worker.py', 'test_worker.py']",['d764f624ebd06ce165b94e2774da504c99825444'],9,91,100,4,0.7313432835820896,0.7313432835820896,0.44776119402985076
+0917b6f2ad68f268dd50459e8123fe5c95c69453,"handle multiexec errors (#153)
+
+* handle multiexec errors, fix #131
+
+* history
+
+* fix coverage",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-08-30 16:27:08+01:00,-3600,2019-08-30 16:27:08+01:00,-3600,True,False,"['HISTORY.rst', 'connections.py', 'worker.py', 'conftest.py', 'test_main.py', 'test_worker.py']",['5c4a1e42d92775ad802de39cbc2e3e6a6afb8da6'],5,36,41,6,0.85,0.95,0.6
+fd59bfc7614f0322c1af7ba8bac07885c21c49b3,"use worker.main() in tests, uprev",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-08-30 16:31:23+01:00,-3600,2019-08-30 16:32:11+01:00,-3600,True,False,"['HISTORY.rst', 'version.py', 'test_worker.py']",['0917b6f2ad68f268dd50459e8123fe5c95c69453'],6,6,12,3,,,
+588ddabc56100157c0dbb9cfb66d1fb84d31d1a3,"Support for Redis Sentinel (#151)
+
+* Support for Redis Sentinel
+
+* Add  to ReddisSettings definition
+
+* Fix wrong reference to sentinel client.
+
+* mend
+
+* I need a beer
+
+* Specify master in RedisSettings
+
+* Clean up sentinel config.
+
+* Fix import.
+
+* Fixes linting and test_settings_changed
+
+* Change definition of pool_factory
+
+* Undoing previous commit
+
+* Working tests for sentinel
+
+* Fix linting
+
+* Update Changelog
+
+* fix changelog",Pratheek Rebala,pratheekrebala@gmail.com,Samuel Colvin,s@muelcolvin.com,2019-10-28 11:31:41-04:00,14400,2019-10-28 16:31:41+01:00,-3600,True,False,"['HISTORY.rst', 'connections.py', 'test_utils.py']",['fd59bfc7614f0322c1af7ba8bac07885c21c49b3'],17,43,60,3,1.0,0.0,1.0
+b69ac546583c77cf5008ef886debc77f1ec0c747,"Fix abort_job invalid expire time in setex (#156)
+
+* Fix abort_job invalid expire time in setex
+
+* Fix lint errors
+
+* Update HISTORY and tests
+
+* Fix lint error",Dmitry Vasilishin,vasilishin.d.o@gmail.com,Samuel Colvin,s@muelcolvin.com,2019-10-28 18:01:56+02:00,-7200,2019-10-28 17:01:56+01:00,-3600,True,False,"['HISTORY.rst', 'worker.py', 'test_worker.py']",['588ddabc56100157c0dbb9cfb66d1fb84d31d1a3'],1,11,12,3,1.0,1.0,1.0
+3daa98c5d7514b49ba74f1c7bcbd610bd3d6b0d4,uprev,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-10-28 16:28:59+00:00,0,2019-10-28 16:28:59+00:00,0,True,False,"['HISTORY.rst', 'version.py']",['b69ac546583c77cf5008ef886debc77f1ec0c747'],2,2,4,2,,,
+0eab73ba4624c9b5cdb7215265ce92b259960de5,"Fix cron scheduling on a specific queue (#159)
+
+* Fix cron scheduling on a specific queue
+
+* Fix lint",Dmitry Vasilishin,vasilishin.d.o@gmail.com,Samuel Colvin,s@muelcolvin.com,2019-11-01 12:56:41+02:00,-7200,2019-11-01 11:56:41+01:00,-3600,True,False,"['HISTORY.rst', 'worker.py', 'test_cron.py']",['3daa98c5d7514b49ba74f1c7bcbd610bd3d6b0d4'],1,17,18,3,1.0,1.0,1.0
+1cf6d157fd5eb0596b8003fe835cc3250347d296,uprev,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-11-01 11:03:41+00:00,0,2019-11-01 11:03:41+00:00,0,True,False,"['HISTORY.rst', 'version.py']",['0eab73ba4624c9b5cdb7215265ce92b259960de5'],2,2,4,2,,,
+8247f9db5f476a236d37ad6ca79c68d4f73324ff,fix typo in docs.,Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2019-11-04 10:48:53+00:00,0,2019-11-04 10:48:53+00:00,0,True,False,['retry.py'],['1cf6d157fd5eb0596b8003fe835cc3250347d296'],1,1,2,1,,,
+ca2b9eefd88b7dd563f83d23ff81f7c8c30a4cab,"Include queue_name when returning job object after performing enqueue_job (#160)
+
+* Include queue_name when retrning job defintion after enqueue_job
+
+* Add test for enqueue_job with non-default queue name
+
+* Fix linting errors, update HISTORY.rst",Pratheek Rebala,pratheekrebala@gmail.com,Samuel Colvin,s@muelcolvin.com,2019-11-08 09:55:05-05:00,18000,2019-11-08 14:55:05+00:00,0,True,False,"['HISTORY.rst', 'connections.py', 'test_jobs.py']",['8247f9db5f476a236d37ad6ca79c68d4f73324ff'],5,13,18,3,1.0,1.0,0.0
+feb954d2f653b4858fcfd3621be941ad267fd0b4,uprev and fix history,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-11-13 17:20:03+00:00,0,2019-11-13 17:20:03+00:00,0,True,False,"['HISTORY.rst', 'version.py']",['ca2b9eefd88b7dd563f83d23ff81f7c8c30a4cab'],2,2,4,2,,,
+4166fddb994162f9ffe65f1981ec26deaccd51e8,"Add py.typed file (#163)
+
+* Add py.typed
+
+* Add HISTORY entry
+
+* tweak history
+
+* tweak history ... again",Steinthor Palsson,steini90@gmail.com,Samuel Colvin,s@muelcolvin.com,2019-11-15 16:02:53-05:00,18000,2019-11-15 21:02:53+00:00,0,True,False,"['HISTORY.rst', 'py.typed', 'setup.py']",['feb954d2f653b4858fcfd3621be941ad267fd0b4'],0,5,5,3,,,
+1c920d404b4772f281e5d4b51b6eed56beaa3773,"Added the SSL option for RedisSettings dataclass (#165)
+
+* Added the SSL option for RedisSettings dataclass
+
+* Updated HISTORY.rst
+
+* Fixed linter errors",Valeryi Savich,Relrin78@gmail.com,Samuel Colvin,s@muelcolvin.com,2019-12-19 14:08:43+02:00,-7200,2019-12-19 12:08:43+00:00,0,True,False,"['HISTORY.rst', 'connections.py', 'test_utils.py']",['4166fddb994162f9ffe65f1981ec26deaccd51e8'],4,8,12,3,0.0,0.0,0.0
+7c83a1d2ab90a0a811dabae0f6905788151a0737,uprev,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2019-12-19 12:11:08+00:00,0,2019-12-19 12:11:08+00:00,0,True,False,"['HISTORY.rst', 'version.py']",['1c920d404b4772f281e5d4b51b6eed56beaa3773'],3,3,6,2,,,
+1b6c545d5a9062113b0788b5c7550fa14a9ba946,fix Worker typing (#169),Bachynin Ivan,16745500+vanyakosmos@users.noreply.github.com,GitHub,noreply@github.com,2020-02-07 20:31:22+02:00,-7200,2020-02-07 18:31:22+00:00,0,True,False,['worker.py'],['7c83a1d2ab90a0a811dabae0f6905788151a0737'],1,1,2,1,,,
+532ed2170a3702fde1206de29182f32d9e8f8ec1,"Make password setting Optional[str] for RedisSettings (#177)
+
+`None` is a valid value for the password prop in `RedisSettings`",Erik Lattimore,elatt@users.noreply.github.com,GitHub,noreply@github.com,2020-04-21 13:22:08-04:00,14400,2020-04-21 18:22:08+01:00,-3600,True,False,['connections.py'],['1b6c545d5a9062113b0788b5c7550fa14a9ba946'],1,1,2,1,,,
+3fec03c93f323d7daeed65fe72d66e996a652ca9,"adding python 3.8 (#178)
+
+* adding python 3.8
+
+* move to github actions
+
+* fix tests
+
+* fixing python 3.8 tests
+
+* fix formatting
+
+* fix readme",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2020-04-22 14:37:40+01:00,-3600,2020-04-22 14:37:40+01:00,-3600,True,False,"['ci.yml', '.gitignore', '.pyup.yml', '.travis.yml', 'HISTORY.rst', 'Makefile', 'README.md', 'README.rst', 'version.py', 'worker.py', 'setup.cfg', 'setup.py', 'conftest.py', 'requirements.txt', 'test_utils.py', 'test_worker.py']",['532ed2170a3702fde1206de29182f32d9e8f8ec1'],103,196,299,16,1.0,1.0,0.4444444444444444
+20b40fd6d83ee82bfa9a7e738fd743f261b58b4c,"fix concurrency with multiple workers (#180)
+
+* fix concurrency with multiple workers
+
+* update history",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2020-04-23 11:16:30+01:00,-3600,2020-04-23 11:16:30+01:00,-3600,True,False,"['HISTORY.rst', 'version.py', 'worker.py', 'test_worker.py']",['3fec03c93f323d7daeed65fe72d66e996a652ca9'],9,27,36,4,0.35714285714285715,0.7142857142857143,1.0
+eee0b661de1288f9d0a17fcdd4838743303c94c2,"working on full mypy coverage (#181)
+
+* working on full mypy coverage
+
+* fix errors
+
+* mypy coverage for worker.py
+
+* typing tests and coverage
+
+* fix linting
+
+* fixing use of Protcol and Literal in older python
+
+* trying to fix coverage
+
+* fix coverage
+
+* fix coverage
+
+* tweak cli.py",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2020-04-24 16:42:25+01:00,-3600,2020-04-24 16:42:25+01:00,-3600,True,False,"['.codecov.yml', '.coveragerc', 'ci.yml', 'HISTORY.rst', 'LICENSE', 'MANIFEST.in', 'Makefile', 'cli.py', 'connections.py', 'cron.py', 'jobs.py', 'logs.py', 'typing.py', 'utils.py', 'worker.py', 'setup.cfg', 'setup.py', 'requirements.txt', 'test_jobs.py', 'test_utils.py']",['20b40fd6d83ee82bfa9a7e738fd743f261b58b4c'],216,378,594,20,0.3584905660377358,0.9433962264150944,0.9433962264150944
+27aeca5990c52dd49dd79acd69c785b26f5ace84,prepare for v0.19 release,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2020-04-24 16:43:34+01:00,-3600,2020-04-24 16:53:29+01:00,-3600,True,False,"['ci.yml', 'HISTORY.rst', 'Makefile', 'version.py']",['eee0b661de1288f9d0a17fcdd4838743303c94c2'],4,9,13,4,,,
+b6fa9ba8ea339258d64fdcdb0ba42299680d1fad,add VERSION to __init__,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2020-04-24 17:12:00+01:00,-3600,2020-04-24 17:15:12+01:00,-3600,True,False,['__init__.py'],['27aeca5990c52dd49dd79acd69c785b26f5ace84'],0,1,1,1,,,
+c285d82a521259eb719c36e662fd8c7222c31964,"Use builtin timestamp and fix timezone issues (#185)
+
+* Use builtin timestamp and fix timezone issues
+
+* Add hisotry and docstring",Kassym Dorsel,kdorsel@users.noreply.github.com,GitHub,noreply@github.com,2020-05-06 06:14:17-04:00,14400,2020-05-06 11:14:17+01:00,-3600,True,False,"['HISTORY.rst', 'utils.py']",['b6fa9ba8ea339258d64fdcdb0ba42299680d1fad'],10,8,18,2,0.0,0.0,0.0
+d58daeeaeaf0e78f9b30f7a5df79b44a00ca1003,add funding link,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2020-05-29 11:57:30+01:00,-3600,2020-05-29 11:57:30+01:00,-3600,True,False,['FUNDING.yml'],['c285d82a521259eb719c36e662fd8c7222c31964'],0,1,1,1,,,
+e55b8edd086b675e1a895b57f4b37302afadf7ae,"Introduce default queue name to ArqRedis (#191)
+
+* Introduce default queue name to ArqRedis
+
+* Update arq/worker.py
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>
+
+* Update HISTORY.rst
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>",Tin Tvrtković,tinchester@gmail.com,GitHub,noreply@github.com,2020-06-25 19:15:57+02:00,-7200,2020-06-25 18:15:57+01:00,-3600,True,False,"['HISTORY.rst', 'connections.py', 'utils.py', 'worker.py', 'conftest.py', 'test_jobs.py', 'test_main.py']",['d58daeeaeaf0e78f9b30f7a5df79b44a00ca1003'],10,42,52,7,0.34615384615384615,0.34615384615384615,0.46153846153846156
+9a34818c5a35e373218f08ae4bad077ff0cbca0d,Add parameter `ctx` to Worker docstring (#188),Tim Hughes,thughes@thegoldfish.org,GitHub,noreply@github.com,2020-06-25 18:16:15+01:00,-3600,2020-06-25 18:16:15+01:00,-3600,True,False,['worker.py'],['e55b8edd086b675e1a895b57f4b37302afadf7ae'],0,1,1,1,,,
+48c57d656c6c6063ec899cc6366d43d8bdb35012,"Option to disable registration of signal handlers (#183)
+
+* Option to disable registration of signal handlers
+
+Used when you want to listen to signal handlers on your own
+
+* Fix typo
+
+* Switch to positive var name
+
+* Update HISTORY.rst
+
+* Update test_worker.py
+
+* Fix typing
+
+* Better naming
+
+* Fix naming
+
+* fix linting
+
+* fix tests
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Kassym Dorsel,kdorsel@users.noreply.github.com,GitHub,noreply@github.com,2020-06-29 10:05:22-04:00,14400,2020-06-29 15:05:22+01:00,-3600,True,False,"['HISTORY.rst', 'worker.py', 'test_worker.py']",['9a34818c5a35e373218f08ae4bad077ff0cbca0d'],2,29,31,3,0.09523809523809523,0.8571428571428571,1.0
+16e6028e47a38eb77781e079874d4b5461769320,"windows event loop sig handler (#187)
+
+* except not implemented error for windows when adding sig handler to event loop
+
+* fix the dumb quoting lint error
+
+* used sammy-colvins make format and make lint and seems gucci
+
+* oy vey single quotes we meet again
+
+* well the make format command does not get along with the git workflows which is annoying
+
+* Update arq/worker.py
+
+Accepting @samuelcolvin's suggestion to remove the 'oy vey'
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>
+
+* added coverage pragma thingy to  NotImplementedError
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>",jesse,jessekrubin@gmail.com,GitHub,noreply@github.com,2020-06-29 09:13:09-07:00,25200,2020-06-29 17:13:09+01:00,-3600,True,False,['worker.py'],['48c57d656c6c6063ec899cc6366d43d8bdb35012'],1,4,5,1,1.0,1.0,1.0
+b8dd9ee62570eb9a71478d1b60cc8cdfd2c954a5,"Remove gather (#194)
+
+* Break out a gather call into individual awaits
+
+* Use a pipeline for less I/O
+
+* Add changelog",Tin Tvrtković,tinchester@gmail.com,GitHub,noreply@github.com,2020-07-01 11:07:02+02:00,-7200,2020-07-01 10:07:02+01:00,-3600,True,False,"['HISTORY.rst', 'worker.py']",['16e6028e47a38eb77781e079874d4b5461769320'],7,9,16,2,,,
+841d1b95e42be40b7f4bbdc839d8d20e77b4815e,"support python3.9 and pydantic 1.7 (#214)
+
+* support python3.9 and pydantic 1.7
+
+* linting
+
+* uprev mypy",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2020-10-26 13:38:11+00:00,0,2020-10-26 13:38:11+00:00,0,True,False,"['ci.yml', 'connections.py', 'requirements.txt', 'requirements.txt', 'setup.py', 'requirements.txt', 'test_utils.py']",['b8dd9ee62570eb9a71478d1b60cc8cdfd2c954a5'],8,66,74,7,0.4722222222222222,1.0,1.0
+88afd6183283dcdf506f9331fd202f9f39ef83ac,prepare for release,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2020-10-26 13:40:51+00:00,0,2020-10-26 13:40:51+00:00,0,True,False,"['HISTORY.rst', 'version.py']",['841d1b95e42be40b7f4bbdc839d8d20e77b4815e'],2,3,5,2,,,
+0d432505ba5503643d0d73380ab7601415d74067,"Bump pygments from 2.7.2 to 2.7.4 in /docs (#234)
+
+Bumps [pygments](https://github.com/pygments/pygments) from 2.7.2 to 2.7.4.
+- [Release notes](https://github.com/pygments/pygments/releases)
+- [Changelog](https://github.com/pygments/pygments/blob/master/CHANGES)
+- [Commits](https://github.com/pygments/pygments/compare/2.7.2...2.7.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-21 15:55:02+01:00,-3600,2021-04-21 15:55:02+01:00,-3600,True,False,['requirements.txt'],['88afd6183283dcdf506f9331fd202f9f39ef83ac'],1,1,2,1,,,
+d594c9c470175adb3279ed639cc7bea7f9da9223,"Added queue_name attribute to JobResult (#198)
+
+* Added queue_name attribute to job result
+
+* cope with old jobs where queue_name ""q"" is not available
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Connor Charles,ccharles.gb@gmail.com,GitHub,noreply@github.com,2021-04-21 16:04:52+01:00,-3600,2021-04-21 16:04:52+01:00,-3600,True,False,"['jobs.py', 'worker.py', 'test_jobs.py']",['0d432505ba5503643d0d73380ab7601415d74067'],4,27,31,3,0.0,0.9090909090909091,0.6818181818181818
+c2c5c4ab60e30d2c44f9f41a331dd22c1e93dd41,"Fix issue where pool serializer would not be same as worker (#203)
+
+The issue was encountered when initializing redis through RedisSettings only
+instead of explicitly setting the arq connection pool.
+
+If cron was used and `job_serializer` was not `pickle` the cron item would be
+serialized with pickle.dumps and then attempted to deserialize with the configured
+`job_deserializer` in worker, causing an error.
+
+Quick workaround is to create the pool yourself, otherwise always use the
+pickle serializer.
+
+Co-authored-by: Olav Frengstad <olav@tiny-mesh.com>",lafka,olav@fwt.no,GitHub,noreply@github.com,2021-04-21 19:35:17+02:00,-7200,2021-04-21 18:35:17+01:00,-3600,True,False,['worker.py'],['d594c9c470175adb3279ed639cc7bea7f9da9223'],1,3,4,1,0.0,0.0,1.0
+2d94498fbfd6c9e651c691335a4a0fd5fbd1c116,Fix coroutine name in docs (#207),Facundo Maero,facundojmaero@gmail.com,GitHub,noreply@github.com,2021-04-21 14:38:14-03:00,10800,2021-04-21 18:38:14+01:00,-3600,True,False,['index.rst'],['c2c5c4ab60e30d2c44f9f41a331dd22c1e93dd41'],1,1,2,1,,,
+439794a92b070350920f531537342de614c4e045,Use asyncio.run() in examples (#226),C. Mangla,cmangla@users.noreply.github.com,GitHub,noreply@github.com,2021-04-21 19:38:07+01:00,-3600,2021-04-21 19:38:07+01:00,-3600,True,False,"['custom_serialization_msgpack.py', 'deferred.py', 'job_ids.py', 'job_results.py', 'main_demo.py', 'retry.py', 'slow_job.py']",['2d94498fbfd6c9e651c691335a4a0fd5fbd1c116'],14,7,21,7,,,
+7342e50de4717518daecba5239c5a5436be64e0f,"Fix to allow custom serializers (#215)
+
+* Fix to allow custom serializers
+
+This fixes an issue where custom serializers are not used if the
+job is enqueued from the ctx within an existing task.
+
+* Fix formatting
+
+* Add unit test to show regression
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Tim Orme,TimothyOrme@gmail.com,GitHub,noreply@github.com,2021-04-21 12:14:59-07:00,25200,2021-04-21 20:14:59+01:00,-3600,True,False,['test_main.py'],['439794a92b070350920f531537342de614c4e045'],0,46,46,1,0.5675675675675675,1.0,1.0
+16db9fc1ae0efeb4cc320ed220eb46ecdb0f7ba0,"Feature: allow keeping results forever (#205)
+
+* add tests for keep result forever
+
+* feat: disable expiry if keep_result_forever=True
+
+Similarly to keep_result argument to Worker or Function, this new
+variable forces the value set to never expire
+
+* tweak comment
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Pavel Savchenko,asfaltboy@gmail.com,GitHub,noreply@github.com,2021-04-21 20:15:45+01:00,-3600,2021-04-21 20:15:45+01:00,-3600,True,False,"['cron.py', 'worker.py', 'test_worker.py']",['7342e50de4717518daecba5239c5a5436be64e0f'],6,45,51,3,0.5625,0.78125,0.625
+cca11e46b7c8ebbd5e17eae1ca3b51eb8739feb7,"Add example for sync jobs to docs (#232)
+
+* Add example for sync jobs to docs
+
+* Include imports in example sync_job",C. Mangla,cmangla@users.noreply.github.com,GitHub,noreply@github.com,2021-04-21 21:56:37+01:00,-3600,2021-04-21 21:56:37+01:00,-3600,True,False,"['sync_job.py', 'index.rst']",['16db9fc1ae0efeb4cc320ed220eb46ecdb0f7ba0'],0,28,28,2,1.0,1.0,1.0
+5c64caf59c696d059dd0581b112ed063d08cbb5b,"Cron refactor (#200)
+
+* Refactor cron queueing
+
+* Avoid edge case for cron scheduling by clamping cron window
+
+* Keep in-progress for cronjobs for 1s
+
+* Simplify cron enqueue
+
+* Add type annotation
+
+* change keep_cronjob_progress, cleanup
+
+* fix mypy
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Tin Tvrtković,tinchester@gmail.com,GitHub,noreply@github.com,2021-04-24 20:49:23+02:00,-7200,2021-04-24 19:49:23+01:00,-3600,True,False,"['constants.py', 'cron.py', 'worker.py', 'test_cron.py']",['cca11e46b7c8ebbd5e17eae1ca3b51eb8739feb7'],18,55,73,4,0.0,0.0,0.0
+8996603c7a45410f227d69a0a2b101b4632b072e,"Fix Worker and Job to catch CancelledException. (#213)
+
+* Fix Worker and Job to catch CancelledException.
+
+* Update arq/jobs.py
+
+Co-authored-by: Tomasz Trębski <kornicameister@gmail.com>
+
+Co-authored-by: Tomasz Trębski <kornicameister@gmail.com>",Stephen Granade,stephen@granades.com,GitHub,noreply@github.com,2021-04-25 04:28:43-05:00,18000,2021-04-25 10:28:43+01:00,-3600,True,False,"['jobs.py', 'worker.py']",['5c64caf59c696d059dd0581b112ed063d08cbb5b'],3,3,6,2,,,
+dde0ea97979e6227cc395166a4dcfd38293214fd,"Add method to cancel jobs (#212)
+
+* Add functionality to abort tasks.
+
+* Update documentation of new job abort feature.
+
+* Get rid of abort keys on job completion or cancellation in Worker.
+
+* Change abort options to default to aborting jobs on a call to `abort()`.
+
+* Fix linter issues.
+
+* Fix bug where cancelled jobs wouldn't be re-tried again.
+
+* Fix Worker and Job to catch CancelledException.
+
+* Apply suggestions from code review
+
+* tweaks and change abort icon
+
+* fix docs, rename abort_jobs -> allow_abort_jobs
+
+* use sorted set for abort job_ids
+
+* switch to cancelling job the job function
+
+* fix tests
+
+* linting
+
+* improve test coverage
+
+* linting
+
+* remove async-timeout as dependency
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Stephen Granade,stephen@granades.com,GitHub,noreply@github.com,2021-04-25 12:35:21-05:00,18000,2021-04-25 18:35:21+01:00,-3600,True,False,"['constants.py', 'jobs.py', 'worker.py', 'job_abort.py', 'index.rst', 'setup.py', 'requirements.txt', 'test_worker.py']",['8996603c7a45410f227d69a0a2b101b4632b072e'],26,221,247,8,0.16551724137931034,0.8206896551724138,0.35172413793103446
+0eaa748bae96d771c5f4ffe60ca1892240702970,"create worker pool with worker's queue (#218)
+
+* create worker pool with worker's queue
+
+* add test
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Egor Panfilov,erakli@users.noreply.github.com,GitHub,noreply@github.com,2021-04-26 12:50:05+03:00,-10800,2021-04-26 10:50:05+01:00,-3600,True,False,"['worker.py', 'test_main.py']",['dde0ea97979e6227cc395166a4dcfd38293214fd'],1,28,29,2,0.8695652173913043,0.8695652173913043,1.0
+1d56a690a40cceab28939166643c0818b042d652,"rename pole -> poll (#242)
+
+* renme pole -> poll
+
+* tweak test",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2021-04-26 11:23:07+01:00,-3600,2021-04-26 11:23:07+01:00,-3600,True,False,"['jobs.py', 'test_jobs.py', 'test_main.py', 'test_worker.py']",['0eaa748bae96d771c5f4ffe60ca1892240702970'],26,46,72,4,0.5,0.5,0.5
+279aeae4fde8b6354559fac2b7a30ab078cf7bee,uprev and update history,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2021-04-26 11:35:39+01:00,-3600,2021-04-26 11:35:39+01:00,-3600,True,False,"['HISTORY.rst', 'version.py']",['1d56a690a40cceab28939166643c0818b042d652'],1,14,15,2,,,
+8ee04f96934684c9b8f8278df0530ae9fad1be4a,"CI improvements (#243)
+
+* CI improvements
+
+* typos
+
+* fix linting, skip macos tests",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2021-04-26 12:54:29+01:00,-3600,2021-04-26 12:54:29+01:00,-3600,True,False,"['ci.yml', 'Makefile', 'jobs.py', 'typing.py', 'requirements.txt', 'setup.cfg', 'requirements-linting.txt', 'requirements-testing.txt']",['279aeae4fde8b6354559fac2b7a30ab078cf7bee'],32,57,89,8,,,
+118308ae21ec5d85b644bcf426d8da9a7d4762d7,"log_redis_info (#255)
+
+* log_redis_info, fix #254
+
+* uprev
+
+* linting and fix CI",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2021-07-06 12:20:03+01:00,-3600,2021-07-06 12:20:03+01:00,-3600,True,False,"['ci.yml', 'connections.py', 'version.py']",['8ee04f96934684c9b8f8278df0530ae9fad1be4a'],6,13,19,3,1.0,1.0,1.0
+12538efc8202874241473f45c1786556fcc4696f,fix package importing in example (#261),cdpath,11472839+cdpath@users.noreply.github.com,GitHub,noreply@github.com,2021-09-02 20:29:29+08:00,-28800,2021-09-02 13:29:29+01:00,-3600,True,False,['sync_job.py'],['118308ae21ec5d85b644bcf426d8da9a7d4762d7'],1,1,2,1,,,
+0b90da8ea385f76ea7a3cabbd38c64ad9416c896,fix: arq is incompatible for aioredis>=2.0.0 (#258),Prakash Prajapati,paxprajapati@gmail.com,GitHub,noreply@github.com,2021-09-02 17:57:51+05:27,-19620,2021-09-02 13:30:51+01:00,-3600,True,False,['setup.py'],['12538efc8202874241473f45c1786556fcc4696f'],1,1,2,1,,,
+759fe03023afdb714618230929b5d4eb76c74ce4,auto setting version on release,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2021-09-02 13:39:21+01:00,-3600,2021-09-02 13:39:21+01:00,-3600,True,False,"['ci.yml', 'version.py']",['0b90da8ea385f76ea7a3cabbd38c64ad9416c896'],5,5,10,2,,,
+1fb9842698ca4a01a7f91011b04c9e515c4b0dd0,"Fix jobs timeout (#248)
+
+* Fix jobs timeout #247
+
+* Bump codecov-action to v1.5.2
+
+* Fix test
+
+Co-authored-by: Kirill Matveev <kirill.matveev@akvelon.com>",kiriusm2,64863567+kiriusm2@users.noreply.github.com,GitHub,noreply@github.com,2021-09-02 16:16:06+03:00,-10800,2021-09-02 14:16:06+01:00,-3600,True,False,"['worker.py', 'test_worker.py']",['759fe03023afdb714618230929b5d4eb76c74ce4'],3,19,22,2,1.0,1.0,0.14285714285714285
+5f6162c94816d4b4302e9c8666da1f4a46cac228,Update index.rst (#266),Marcelo Trylesinski,marcelotryle@gmail.com,GitHub,noreply@github.com,2021-10-15 21:26:51+02:00,-7200,2021-10-15 20:26:51+01:00,-3600,True,False,['index.rst'],['1fb9842698ca4a01a7f91011b04c9e515c4b0dd0'],1,1,2,1,,,
+7cc5cf28c78eddd6c7bf5367c81e405474196e50,Improve some docs wording (#285),Johannes,johtso@gmail.com,GitHub,noreply@github.com,2022-01-26 10:29:25+00:00,0,2022-01-26 10:29:25+00:00,0,True,False,['index.rst'],['5f6162c94816d4b4302e9c8666da1f4a46cac228'],1,1,2,1,,,
+e015d3d73fea669c921793ed766f77399dfe5b72,"fix error when cron jobs were terminanted (#273)
+
+fixes #253",Toby Mao,toby.mao@gmail.com,GitHub,noreply@github.com,2022-01-26 03:20:41-08:00,28800,2022-01-26 11:20:41+00:00,0,True,False,"['worker.py', 'test_cron.py']",['7cc5cf28c78eddd6c7bf5367c81e405474196e50'],1,20,21,2,0.9285714285714286,0.9285714285714286,0.9285714285714286
+5bc175dbc0b666ffb7cf41d81f3613273ac79059,add on_job_start and on_job_end hooks (#274),Toby Mao,toby.mao@gmail.com,GitHub,noreply@github.com,2022-01-26 03:22:02-08:00,28800,2022-01-26 11:22:02+00:00,0,True,False,"['worker.py', 'test_worker.py']",['e015d3d73fea669c921793ed766f77399dfe5b72'],0,42,42,2,0.23529411764705882,0.7647058823529411,0.8823529411764706
+e3979ce3e8ae1f51524d13b008ab12919cffc889,Correct argument docstring definition (#278),Sondre Lillebø Gundersen,sondrelg@live.no,GitHub,noreply@github.com,2022-01-26 13:40:58+01:00,-3600,2022-01-26 12:40:58+00:00,0,True,False,['worker.py'],['5bc175dbc0b666ffb7cf41d81f3613273ac79059'],2,2,4,1,,,
+59ba542e9c0d5aa5036bfc00daedc587e5fd1ffd,"fix tests and uprev test dependencies (#288)
+
+* fix tests and uprev test dependencies
+
+* fixing build
+
+* isort colours
+
+* uprev test deps
+
+* drop python 3.6 support
+
+* remove broken test
+
+* trying to fix tests :poop:
+
+* uprev dirty-equals
+
+* revent codecov breaking builds
+
+* uprev dirty-equals
+
+* fix cli tests
+
+* comments and reinstate test_redis_sentinel_failure test
+
+* fix for 3.7, formatting",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-03-04 14:33:46+00:00,0,2022-03-04 14:33:46+00:00,0,True,False,"['.codecov.yml', 'ci.yml', 'Makefile', 'cli.py', 'connections.py', 'version.py', 'worker.py', 'pyproject.toml', 'setup.cfg', 'setup.py', 'conftest.py', 'requirements-linting.txt', 'requirements-testing.txt', 'test_cli.py', 'test_cron.py', 'test_jobs.py', 'test_main.py', 'test_utils.py', 'test_worker.py']",['e3979ce3e8ae1f51524d13b008ab12919cffc889'],121,165,286,19,0.0,0.8064516129032258,0.8064516129032258
+7e9198a54d50ff5cd2bca1a25d199af43c2ac256,Add link to available settings for WorkerSettings (#279),Jonas Krüger Svensson,jonas-ks@hotmail.com,GitHub,noreply@github.com,2022-03-04 15:48:51+01:00,-3600,2022-03-04 14:48:51+00:00,0,True,False,['main_demo.py'],['59ba542e9c0d5aa5036bfc00daedc587e5fd1ffd'],1,2,3,1,,,
+fe185b791b2aa7d5f7f326def8d1eb9b17f844f2,"Allow setting job_id on cron jobs (#293)
+
+* Allow setting job_id on cron jobs
+
+* Add tests for cron job singleton",Jonas Krüger Svensson,jonas.svensson@intility.no,GitHub,noreply@github.com,2022-03-04 17:16:08+01:00,-3600,2022-03-04 16:16:08+00:00,0,True,False,"['cron.py', 'worker.py', 'test_cron.py']",['7e9198a54d50ff5cd2bca1a25d199af43c2ac256'],2,70,72,3,0.8636363636363636,0.9318181818181818,0.8636363636363636
+763826a2f602dc981e50a5e8696787cbed9de06f,Fix docs typo (#296),Johannes,johtso@gmail.com,GitHub,noreply@github.com,2022-03-08 19:50:17+00:00,0,2022-03-08 19:50:17+00:00,0,True,False,['index.rst'],['fe185b791b2aa7d5f7f326def8d1eb9b17f844f2'],1,1,2,1,,,
+77031fd492d680828a92f2ac01e024d72efd5c23,"support aioredis v2 (#259)
+
+* support aioredis 2
+
+* use psetex for float ttl
+
+* health_check_interval + 1 sec
+
+* fix health_check_interval psetex
+
+* encoder context to encode/decode on per-request basis
+
+* fix hiredis parser
+
+* remove excessive comments
+
+* update docstrings, pipe commands in run_job, gather in enqueue_job, expire in ms
+
+* fix mypy, tweak tests
+
+* using latest aioredis
+
+* switch how latest aioredis is installed
+
+* fix install
+
+* fixing worker tests removing encoder_context usage
+
+* removing usage of encoder_context
+
+* removing parser and encoder_context
+
+* tweak test_abort_job
+
+* tests at last passing!
+
+* switch to redis from aioredis
+
+* cleanup
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Yolley,Yolley@users.noreply.github.com,GitHub,noreply@github.com,2022-03-09 19:10:04+03:00,-10800,2022-03-09 16:10:04+00:00,0,True,False,"['.gitignore', 'connections.py', 'jobs.py', 'worker.py', 'pyproject.toml', 'setup.py', 'conftest.py', 'requirements-linting.txt', 'test_cli.py', 'test_jobs.py', 'test_main.py', 'test_utils.py', 'test_worker.py']",['763826a2f602dc981e50a5e8696787cbed9de06f'],180,180,360,13,1.0,0.875,0.0
+96005595a52833b4a20426d922665fefc0b2a77a,"support python 3.10 (#298)
+
+* support python 3.10, fix #282
+
+* fix get_event_loop usage",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-03-09 17:39:45+00:00,0,2022-03-09 17:39:45+00:00,0,True,False,"['ci.yml', 'setup.py', 'conftest.py', 'test_cli.py', 'test_worker.py']",['77031fd492d680828a92f2ac01e024d72efd5c23'],5,6,11,5,,,0.0
+22ee862d2450be779dd90a2d832b3d7a98608962,add history for 0.23a1,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2022-03-09 17:47:40+00:00,0,2022-03-09 17:47:40+00:00,0,True,False,['HISTORY.rst'],['96005595a52833b4a20426d922665fefc0b2a77a'],0,26,26,1,,,
+c3ac93e99fc9d2430c4d576423afa4a9117f0cfa,"the enqueue_time in context can use the direct timezone (#281)
+
+* the enqueue_time in context can use the direct timezone
+
+* fix
+
+* can set timezone in workSetting class
+
+* fix for comment
+
+* resolve conflict
+
+* fix lint
+
+* fix unit test
+
+* black files
+
+* black files
+
+* fix the unknown/failed unit tests
+
+* fix ut
+
+* black for py39
+
+* fix mypy
+
+* tweaks and fixes
+
+* linting
+
+* support 3.7
+
+* fix coverage
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Ethon,48890023@qq.com,GitHub,noreply@github.com,2022-03-15 21:10:08+08:00,-28800,2022-03-15 13:10:08+00:00,0,True,False,"['constants.py', 'utils.py', 'conftest.py', 'requirements-linting.txt', 'requirements-testing.txt', 'test_cron.py', 'test_utils.py']",['22ee862d2450be779dd90a2d832b3d7a98608962'],5,96,101,7,1.0,1.0,0.94
+415810c5b94ab2898bb76d693f10e8699c3eb11a,Add the username option to RedisSettings (#299),Ula Dzhuraboev,46541238+ula@users.noreply.github.com,GitHub,noreply@github.com,2022-03-28 07:34:42-04:00,14400,2022-03-28 12:34:42+01:00,-3600,True,False,"['connections.py', 'test_utils.py']",['c3ac93e99fc9d2430c4d576423afa4a9117f0cfa'],3,11,14,2,0.16666666666666666,0.6666666666666666,0.6666666666666666
+4c70063bd62046fb94f0a0b5096bf0a35b62b26a,pin jinja.,Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-03-28 12:37:46+01:00,-3600,2022-03-28 12:37:46+01:00,-3600,True,False,['requirements.txt'],['415810c5b94ab2898bb76d693f10e8699c3eb11a'],0,1,1,1,,,
+31a302d917d1c7e70240594c57216614ceef9b38,"add v0.23 history (#326)
+
+* add v0.23 history
+
+* uprev black to fix linting
+
+* fix docs build
+
+* test on push
+
+* bump
+
+* fix conflicts
+
+* remove markupsafe",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-23 12:59:04+01:00,-3600,2022-08-23 12:59:04+01:00,-3600,True,False,"['ci.yml', 'HISTORY.rst', 'requirements-linting.txt']",['4c70063bd62046fb94f0a0b5096bf0a35b62b26a'],1,7,8,3,,,
+40c88036c9dd0306434e30c12653a38ee0fb15eb,"change primary branch name, correct python_requires",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2022-08-23 13:06:01+01:00,-3600,2022-08-23 13:06:01+01:00,-3600,True,False,"['ci.yml', 'README.md', 'setup.py']",['31a302d917d1c7e70240594c57216614ceef9b38'],5,5,10,3,,,
+70083bae80fb421cf5fb5dc8bcbd38c721b00ecc,"Add --custom-log-dict CLI option (#294)
+
+* Add --custom-log-dict CLI option
+
+This points at an import path for a dictionary (e.g. myproject.logging.CONFIG_DICT)
+that Arq can configure its logging with instead of using the default configuration.
+
+* Add tests for --custom-log-dict CLI option
+
+Includes a workaround for deprecation warnings for asyncio.get_event_loop()
+(as described in https://github.com/pytest-dev/pytest-asyncio/issues/212),
+following the mocking out done in https://github.com/samuelcolvin/arq/pull/298.
+
+Also, as requested in review, use import_string to handle the import, and
+if it's an invalid import path than let it raise an ImportError to inform
+the user.
+
+* Update black to 22.3.0 to handle Click 8.10+
+
+See https://github.com/psf/black/issues/2964 for the error that was
+happening in CI and the versions of black and Click that work together.
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",isobelhooper,isobel.hooper@cambridgequantum.com,GitHub,noreply@github.com,2022-08-23 13:06:20+01:00,-3600,2022-08-23 13:06:20+01:00,-3600,True,False,"['cli.py', 'test_cli.py']",['40c88036c9dd0306434e30c12653a38ee0fb15eb'],2,38,40,2,0.7333333333333333,1.0,0.0
+3c6603a5803ef65b71d74ec34dc3a4b4ef903fe8,"Remove noqa F401 (#310)
+
+* Remove noqa F401
+
+* Update __init__.py
+
+* add version to __init__.py
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Weiliang Li,to.be.impressive@gmail.com,GitHub,noreply@github.com,2022-08-23 21:13:41+09:00,-32400,2022-08-23 13:13:41+01:00,-3600,True,False,['__init__.py'],['70083bae80fb421cf5fb5dc8bcbd38c721b00ecc'],4,18,22,1,,,
+9f89664c227065adc3d3687848c4a7c8386a52a9,"Fix: crash in case of not installed pytz (#318)
+
+* Fix: no crash in case of not installed pytz
+
+* Update arq/utils.py
+
+Co-authored-by: Marcelo Trylesinski <marcelotryle@gmail.com>
+
+* use single quotes
+
+Co-authored-by: Marcelo Trylesinski <marcelotryle@gmail.com>
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Dmytro Nikolayev,dnikolayev@gmail.com,GitHub,noreply@github.com,2022-08-23 15:19:45+03:00,-10800,2022-08-23 12:19:45+00:00,0,True,False,['utils.py'],['3c6603a5803ef65b71d74ec34dc3a4b4ef903fe8'],1,1,2,1,,,
+df79de95a7a4cd6588fa43a67866858e007476fb,added return statement in the doc (#322),Pandian Muninathan,pandian.m@hotmail.com,GitHub,noreply@github.com,2022-08-23 18:35:09+05:18,-19080,2022-08-23 14:17:09+01:00,-3600,True,False,['sync_job.py'],['9f89664c227065adc3d3687848c4a7c8386a52a9'],1,1,2,1,,,
+8f450befb044553e70a4b68b526654062f7cb4da,"test on python 3.11 (#327)
+
+* test on python 3.11
+
+* uprev actions dependencies
+
+* add 3.11 to classifers
+
+* fix coverage
+
+* stop coverage multiprocessing
+
+* coverage[toml]",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-23 14:21:59+01:00,-3600,2022-08-23 14:21:59+01:00,-3600,True,False,"['.coveragerc', 'ci.yml', 'Makefile', 'pyproject.toml', 'setup.py', 'requirements-testing.txt']",['df79de95a7a4cd6588fa43a67866858e007476fb'],21,10,31,6,,,
+374cdf8fd53e7d580086966845110607990574d0,"Improve docs for parameter _expires in enqueue_job (#313)
+
+* Improve docs for parameter _expires in enqueue_job
+
+* Update arq/connections.py
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>",Piotr Janiszewski,13190648+iamlikeme@users.noreply.github.com,GitHub,noreply@github.com,2022-08-23 15:22:13+02:00,-7200,2022-08-23 14:22:13+01:00,-3600,True,False,['connections.py'],['8f450befb044553e70a4b68b526654062f7cb4da'],1,2,3,1,0.0,0.0,0.0
+ae822ec2f2f6c996ec31386ad2ddfd3b24c517ec,"using pip-compile to pin dependencies (#328)
+
+* using pip-compile to pin dependencies
+
+* remove sub-deps from docs/requirements.in
+
+* fix docs build",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-23 15:07:52+01:00,-3600,2022-08-23 15:07:52+01:00,-3600,True,False,"['requirements.in', 'requirements.txt', 'requirements-linting.in', 'requirements-linting.txt', 'requirements-testing.in', 'requirements-testing.txt']",['374cdf8fd53e7d580086966845110607990574d0'],6,225,231,6,,,
+97d3da982fc433098577894f745df5ca9b63983d,uprev docs-dependencies (#330),Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-23 15:17:13+01:00,-3600,2022-08-23 14:17:13+00:00,0,True,False,"['conf.py', 'requirements.in', 'requirements.txt']",['ae822ec2f2f6c996ec31386ad2ddfd3b24c517ec'],20,12,32,3,,,
+b4b40adda6cec2abc51c39636c4037f52990bca1,"Fix/redis ssl support (#323)
+
+* Update the setting to fully support SSL configs
+
+* Update the setting to fully support SSL configs
+
+* Update tests accordingly
+
+* Fix single quotes
+
+* Pin click to fix a clash with balck
+
+* More explicit Value error matching in test
+
+* Fix issue with merge",Nicolas Chaulet,nicolas.chaulet@gmail.com,GitHub,noreply@github.com,2022-08-23 18:00:51+02:00,-7200,2022-08-23 17:00:51+01:00,-3600,True,False,"['connections.py', 'test_utils.py']",['97d3da982fc433098577894f745df5ca9b63983d'],18,25,43,2,0.45454545454545453,0.45454545454545453,0.45454545454545453
+980d85eff21aa017fc2285f0bcfc9062c1c5f945,"Fix recursion while waiting for redis connection (#311)
+
+* Fix recursion while waiting for redis connection
+
+`Arq` has ability to retry connections to redis in case of problems.
+That is a nice feature, but it crashes after hundreds of attempts
+reaching maximal recursion depth. This change modifies re-try algorithm
+from recursion to iteration avoiding the limit.
+
+In practice it would be nice to have ability to wait forever as issue
+with redis instance should not kill worker process, but that is a
+separate change that can be built on top.
+
+Fixes exception when retrying redis connection many times:
+  RecursionError: maximum recursion depth exceeded while getting the str of an object
+
+* speedup test
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",nierob,nierob@users.noreply.github.com,GitHub,noreply@github.com,2022-08-23 18:38:03+02:00,-7200,2022-08-23 16:38:03+00:00,0,True,False,"['connections.py', 'test_utils.py']",['b4b40adda6cec2abc51c39636c4037f52990bca1'],34,39,73,2,1.0,1.0,1.0
+a5e6742e6ca07bfbdda323a6ec948c81a9abb76d,"uprev test dependencies (#331)
+
+* uprev test dependencies
+
+* add requirements-setup.txt, fix mypy
+
+* simplify file structure
+
+* using newer redis_types
+
+* fix linting",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-23 17:39:27+01:00,-3600,2022-08-23 17:39:27+01:00,-3600,True,False,"['ci.yml', 'Makefile', 'connections.py', 'jobs.py', 'worker.py', 'requirements.txt', 'all.txt', 'docs.in', 'docs.txt', 'linting.in', 'linting.txt', 'setup.txt', 'testing.in', 'testing.txt', 'setup.py', 'requirements-linting.in', 'requirements-testing.in', 'requirements-testing.txt']",['980d85eff21aa017fc2285f0bcfc9062c1c5f945'],191,176,367,18,0.3333333333333333,0.7777777777777778,0.7777777777777778
+1b5f8633e9bd1facad8ec2fb331cf7d1b39632ae,switch from watchgod to watchfiles (#332),Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-23 18:15:50+01:00,-3600,2022-08-23 18:15:50+01:00,-3600,True,False,"['cli.py', 'index.rst', 'pyproject.toml', 'setup.txt', 'setup.py', 'test_cli.py']",['a5e6742e6ca07bfbdda323a6ec948c81a9abb76d'],12,15,27,6,,,
+0eafa845f7ecbe47094f11bc84f401eede7776a7,switch examples from aiohttp to httpx (#333),Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-23 18:22:30+01:00,-3600,2022-08-23 18:22:30+01:00,-3600,True,False,"['main_demo.py', 'retry.py']",['1b5f8633e9bd1facad8ec2fb331cf7d1b39632ae'],20,18,38,2,0.0,0.0,0.0
+f2e3b2a69183be43a6a43b28034519437e2cdadc,simplify linting dependencies,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2022-08-23 18:52:38+01:00,-3600,2022-08-23 18:52:38+01:00,-3600,True,False,"['linting.in', 'linting.txt']",['0eafa845f7ecbe47094f11bc84f401eede7776a7'],8,2,10,2,,,
+2d7455114e71d6bff44d40903b297434389ee041,"Simplify dependencies, drop pydantic as a dependency. (#334)
+
+* simplify deps, drop pydantic as a dependency
+
+* linting
+
+* add pydantic to test deps
+
+* add tests for import_string
+
+* bump",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-23 19:18:54+01:00,-3600,2022-08-23 19:18:54+01:00,-3600,True,False,"['cli.py', 'cron.py', 'utils.py', 'worker.py', 'docs.in', 'linting.in', 'setup.txt', 'testing.in', 'testing.txt', 'setup.py', 'test_utils.py']",['f2e3b2a69183be43a6a43b28034519437e2cdadc'],33,73,106,11,1.0,1.0,1.0
+f154687a940294fab992b517c180202e8cac3e6a,"tweak ci a little (#335)
+
+* tweak ci a little
+
+* revert 1 :-(",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-23 19:27:18+01:00,-3600,2022-08-23 19:27:18+01:00,-3600,True,False,['ci.yml'],['2d7455114e71d6bff44d40903b297434389ee041'],1,0,1,1,,,
+be6c7634406a76c973be25a0e8c8fccf950b5974,add pre-commit and use it in ci (#337),Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-24 11:14:05+01:00,-3600,2022-08-24 11:14:05+01:00,-3600,True,False,"['ci.yml', '.pre-commit-config.yaml', 'Makefile', 'slow_job_output.txt']",['f154687a940294fab992b517c180202e8cac3e6a'],6,29,35,4,,,
+76fd0a30925e5bf33456378d89eb0957b0890930,"unix_socket_path in RedisSettings (#336)
+
+* from rebase
+
+* update: testing requirements
+
+* Update tests/conftest.py
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>
+
+* update: testing requirements
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>",Lazaros Toumanidis,lazToum@users.noreply.github.com,GitHub,noreply@github.com,2022-08-24 13:22:10+03:00,-10800,2022-08-24 11:22:10+01:00,-3600,True,False,"['connections.py', 'testing.in', 'testing.txt', 'conftest.py', 'test_jobs.py', 'test_utils.py']",['be6c7634406a76c973be25a0e8c8fccf950b5974'],5,58,63,6,0.04,0.28,0.96
+d6ea422abc9de5288282c4d31b0610332f48c409,"Allow user to configure a default job expiry-extra length (#303)
+
+* Allow user to configure a default job expiry length
+
+Previously, expires_extra_ms in arq/connections.py set a default expiry
+of 1 day from when a job was expected to start to when it would expire
+if no expiry was set in enqueue_job().
+
+This commit keeps that as the default, but allows both ArqRedis and Worker
+to have a larger default expiry configured, as self.expires_extra_ms.
+
+expires_extra_ms is also moved to arq/constants.py along with other
+shared constants.
+
+* Add test for time-to-live of job keys based on expires_extra_ms",isobelhooper,isobel.hooper@cambridgequantum.com,GitHub,noreply@github.com,2022-08-24 12:48:10+01:00,-3600,2022-08-24 12:48:10+01:00,-3600,True,False,"['connections.py', 'constants.py', 'worker.py', 'test_worker.py']",['76fd0a30925e5bf33456378d89eb0957b0890930'],7,38,45,4,0.0,0.6428571428571429,0.21428571428571427
+5e7152b8649178b2d3db1c7183794f51d722cffc,"test against multiple redis versions (#340)
+
+* test against multiple redis versions
+
+* fix matrix",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-30 11:47:16+01:00,-3600,2022-08-30 11:47:16+01:00,-3600,True,False,['ci.yml'],['d6ea422abc9de5288282c4d31b0610332f48c409'],8,16,24,1,,,
+593a61bba1643a70923ba608761de98dbdcaf7d9,"fix: info commands are not allowed inside transactions at least in redis 6.2.3 (#338)
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Jerzy Kurowski,jerzy-kurowski@yandex.ru,GitHub,noreply@github.com,2022-08-30 16:54:49+06:00,-21600,2022-08-30 11:54:49+01:00,-3600,True,False,['connections.py'],['5e7152b8649178b2d3db1c7183794f51d722cffc'],1,1,2,1,,,
+dbb16b5e62c20bad371c5e210667844086622e52,"switch to pyproject (#341)
+
+* switch to pyproject
+
+* fix compatibility between requirements files
+
+* add pointless setup.py, fix coverage",Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-08-30 13:01:38+01:00,-3600,2022-08-30 13:01:38+01:00,-3600,True,False,"['ci.yml', 'LICENSE', 'MANIFEST.in', 'Makefile', '__main__.py', 'version.py', 'pyproject.toml', 'all.txt', 'pyproject.txt', 'testing.txt', 'setup.py']",['593a61bba1643a70923ba608761de98dbdcaf7d9'],84,104,188,11,,,
+3d50f6106e49dd3918ead3c386c33294513adf9a,remove unused `runtime.txt`,Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-09-02 18:42:48+01:00,-3600,2022-09-02 18:42:48+01:00,-3600,True,False,['runtime.txt'],['dbb16b5e62c20bad371c5e210667844086622e52'],1,0,1,1,,,
+123501a7d8ae991aa820d90be47c434d559c9323,"Support abort for deferred tasks (#307)
+
+* Support abort for deferred tasks
+
+* fix imports
+
+* fix mypy
+
+* fixes related to PR 307
+
+* lint fixes
+
+* lint fixes
+
+* reversed changes
+
+* fix linter
+
+* fix avoiding race condition
+
+* fix test
+
+* fix lint
+
+* fix lint",antoine-collet,antoine.collet@gmail.com,GitHub,noreply@github.com,2022-09-05 11:22:09+02:00,-7200,2022-09-05 10:22:09+01:00,-3600,True,False,"['jobs.py', 'test_worker.py']",['3d50f6106e49dd3918ead3c386c33294513adf9a'],0,37,37,2,0.07142857142857142,1.0,0.07142857142857142
+7a6fd031edc5c4576a522926087c017aeb86890b,fix flakey test,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2022-09-05 11:25:25+01:00,-3600,2022-09-05 11:25:25+01:00,-3600,True,False,['test_cron.py'],['123501a7d8ae991aa820d90be47c434d559c9323'],2,2,4,1,,,
+bdd049173c45346124b91f6821499e81beafe974,add v0.24 to history,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2022-09-05 11:49:38+01:00,-3600,2022-09-05 11:49:38+01:00,-3600,True,False,['HISTORY.rst'],['7a6fd031edc5c4576a522926087c017aeb86890b'],0,20,20,1,,,
+63f36a17504240825a9cd22832da7117734d94d4,fix docs deploy,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2022-09-05 12:10:38+01:00,-3600,2022-09-05 12:10:38+01:00,-3600,True,False,"['ci.yml', 'Makefile']",['bdd049173c45346124b91f6821499e81beafe974'],1,13,14,2,,,
+bfec1828dfe3ab2bd3b40f2112ca82b76a3a555b,store correct docs path,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2022-09-05 12:13:56+01:00,-3600,2022-09-05 12:13:56+01:00,-3600,True,False,['ci.yml'],['63f36a17504240825a9cd22832da7117734d94d4'],2,2,4,1,,,
+d30d56b92afbf8ca4c97e250f773325f4ea030b8,bump build,Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2022-09-05 12:25:56+01:00,-3600,2022-09-05 12:25:56+01:00,-3600,True,False,[],['bfec1828dfe3ab2bd3b40f2112ca82b76a3a555b'],0,0,0,0,,,
+1495be6c234509df1dfdc0db620388d909c8cdb8,"fix license key in pyproject.toml
+
+ref https://github.com/pydantic/pydantic/pull/4520#issuecomment-1248994390",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2022-09-16 10:19:57+01:00,-3600,2022-09-16 10:19:57+01:00,-3600,True,False,"['version.py', 'pyproject.toml']",['d30d56b92afbf8ca4c97e250f773325f4ea030b8'],2,2,4,2,,,
+047431152e2d885a1abeced83af49cb6878283c0,"Allow to opt-out from logging results (#352)
+
+* Add attribute Worker.log_results
+
+* Do not log result when Worker.log_results is False
+
+* Add description for the new parameter",Piotr Janiszewski,13190648+iamlikeme@users.noreply.github.com,GitHub,noreply@github.com,2022-11-18 10:03:22+01:00,-3600,2022-11-18 09:03:22+00:00,0,True,False,"['worker.py', 'test_worker.py']",['1495be6c234509df1dfdc0db620388d909c8cdb8'],1,16,17,2,0.8,0.8,0.2
+9ce2fd6ae4694584ec8b0ff78a1e4e3359ae3a44,"Add timezone support for cron jobs (#354)
+
+* Test that next_cron preserves tzinfo
+
+* Add Worker.timezone attribute
+
+* Pass timezone aware now to run_cron
+
+* Make tests work in 3.7
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Piotr Janiszewski,13190648+iamlikeme@users.noreply.github.com,GitHub,noreply@github.com,2022-11-18 10:40:36+01:00,-3600,2022-11-18 09:40:36+00:00,0,True,False,"['worker.py', 'test_cron.py', 'test_worker.py']",['047431152e2d885a1abeced83af49cb6878283c0'],2,31,33,3,0.875,0.875,1.0
+1f91c0bab5549fcb4dbefd4f3805f8eae69bfc82,connections: fix pipeline usage for exists command (#366),Utkarsh Gupta,utkarshgupta137@gmail.com,GitHub,noreply@github.com,2022-11-29 23:03:04+05:18,-19080,2022-11-29 17:45:04+00:00,0,True,False,['connections.py'],['9ce2fd6ae4694584ec8b0ff78a1e4e3359ae3a44'],1,1,2,1,,,
+6f68086797bc1de00f30d2f2d2a0b480898215ef,"Fix race condition causing status not_found (#362)
+
+Checking job status consited of three separate calls to Redis,
+where the first one checked if result is present and the second
+checked if job is in progress. If a job got completed between
+these two calls Job.status() would erroneously return status
+not_found.
+
+The solution is to make all the calls to Redis in one transaction.",Piotr Janiszewski,13190648+iamlikeme@users.noreply.github.com,GitHub,noreply@github.com,2022-12-01 12:56:03+01:00,-3600,2022-12-01 11:56:03+00:00,0,True,False,['jobs.py'],['1f91c0bab5549fcb4dbefd4f3805f8eae69bfc82'],6,11,17,1,0.0,1.0,1.0
+e9452c5386b3046dbb426723f88d0089deaeac58,"Adds after_job_end hook (#355)
+
+* Adds after_job_end hook
+
+* Fixes test",Christopher Bailey,cbailey@mort.is,GitHub,noreply@github.com,2022-12-01 06:56:53-05:00,18000,2022-12-01 11:56:53+00:00,0,True,False,"['worker.py', 'test_worker.py']",['6f68086797bc1de00f30d2f2d2a0b480898215ef'],1,12,13,2,0.3333333333333333,0.5555555555555556,0.7777777777777778
+12456eeb6708e9a36d33c7ab8bc6341dd57ef9be,"Raise ResultNotFound when Job.result() finds no job and no result (#364)
+
+* Raise ResultNotFound when Job.result() finds no job and no result
+
+Job.result() assumed that a result will eventually show up in Redis.
+This assumption does not hold for jobs which are not in the queue
+and jobs which do not keep result. In such cases Job.result() would
+hang forever (or until the optional timeout is reached).
+
+This PR changes Job.result() so that it raises a new exception
+ResultNotFound, rather than waiting forever, if result is not found
+and the job is not in the queue.
+
+* Subclass ResultNotFound from RuntimeError
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>
+
+* Add message when raising ResultNotFound
+
+* Improve docstring for Job.result()
+
+* Handle ResultNotFound in Job.abort()
+
+* Update arq/jobs.py
+
+Co-authored-by: Samuel Colvin <samcolvin@gmail.com>",Piotr Janiszewski,13190648+iamlikeme@users.noreply.github.com,GitHub,noreply@github.com,2022-12-02 12:05:41+01:00,-3600,2022-12-02 11:05:41+00:00,0,True,False,"['jobs.py', 'test_jobs.py', 'test_worker.py']",['e9452c5386b3046dbb426723f88d0089deaeac58'],11,67,78,3,0.6333333333333333,0.0,0.6333333333333333
+2d45f5362f5e553118d572dded1e801657d0d01f,use 3.11.0 for testing (#367),Samuel Colvin,s@muelcolvin.com,GitHub,noreply@github.com,2022-12-02 11:32:53+00:00,0,2022-12-02 11:32:53+00:00,0,True,False,['ci.yml'],['12456eeb6708e9a36d33c7ab8bc6341dd57ef9be'],1,1,2,1,,,
+af1704290d9d9f9aae28d7255ebb91dbdc2f7efa,"feat: signal handler to wait for task completion before shutting down (#345)
+
+* feat: k8s signal handler to wait for task completion before shutting down
+
+* refactor: signal handler to be more generic
+
+* refactor: rename to job_completion_wait, split signal handler to a new
+function
+tests: add test for new signal handler flow
+
+* fix: use asyncio.TimeoutError to support python3.7
+
+* Update arq/worker.py
+
+Co-authored-by: Samuel Colvin <s@muelcolvin.com>",Jonas Krüger Svensson,jonas.svensson@intility.no,GitHub,noreply@github.com,2022-12-02 13:58:11+01:00,-3600,2022-12-02 12:58:11+00:00,0,True,False,"['worker.py', 'test_worker.py']",['2d45f5362f5e553118d572dded1e801657d0d01f'],16,105,121,2,0.10126582278481013,0.620253164556962,0.7088607594936709
+b6dda0ec36c75910d1be3e242dfbf211866f85d6,"uprev, prepare for release",Samuel Colvin,s@muelcolvin.com,Samuel Colvin,s@muelcolvin.com,2022-12-02 13:13:39+00:00,0,2022-12-02 13:13:39+00:00,0,True,False,"['HISTORY.rst', 'version.py']",['af1704290d9d9f9aae28d7255ebb91dbdc2f7efa'],1,13,14,2,,,
+430df07aef0a3bb6341b540292b27426b5a36fa8,"Prevent worker getting stuck in terminating state (#370)
+
+* tests: add failing test that proves #369 bug, self.task is not updated correctly
+
+* fix: ensure updates of self.task are performed when self.allow_pick_jobs is set to False. close #369",Jonas Krüger Svensson,jonas.svensson@intility.no,GitHub,noreply@github.com,2022-12-06 17:00:11+01:00,-3600,2022-12-06 16:00:11+00:00,0,True,False,"['worker.py', 'test_worker.py']",['b6dda0ec36c75910d1be3e242dfbf211866f85d6'],11,15,26,2,0.0,1.0,0.0
+e6ff0909d71fc9feb86f735797f49c81ba74ce5a,Fix redis pipeline created and not used (#374),Piotr Janiszewski,13190648+iamlikeme@users.noreply.github.com,GitHub,noreply@github.com,2022-12-14 15:15:52+01:00,-3600,2022-12-14 14:15:52+00:00,0,True,False,['jobs.py'],['430df07aef0a3bb6341b540292b27426b5a36fa8'],3,4,7,1,0.0,0.0,0.0
+f29a8a7ceae654c1b8f9256edb8dd7a9da923acf,"Bump certifi from 2022.6.15 to 2022.12.7 in /requirements (#373)
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2022.6.15 to 2022.12.7.
+- [Release notes](https://github.com/certifi/python-certifi/releases)
+- [Commits](https://github.com/certifi/python-certifi/compare/2022.06.15...2022.12.07)
+
+---
+updated-dependencies:
+- dependency-name: certifi
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-14 14:18:25+00:00,0,2022-12-14 14:18:25+00:00,0,True,False,['docs.txt'],['e6ff0909d71fc9feb86f735797f49c81ba74ce5a'],6,2,8,1,,,
+bfa8e68fff7063e792f4a5deef0f778eb549d73c,Use instance's default queue for queued_jobs default (#368),Matthew Martin,phy1729@gmail.com,GitHub,noreply@github.com,2022-12-14 14:19:32+00:00,0,2022-12-14 14:19:32+00:00,0,True,False,['connections.py'],['f29a8a7ceae654c1b8f9256edb8dd7a9da923acf'],1,3,4,1,1.0,1.0,1.0
+e0cd916988ebed6d01c26a4d3e9128aa2bf22a7d,"Docs: Add details about reusing a unique job id (#391)
+
+See: 
+* https://github.com/samuelcolvin/arq/pull/138#issuecomment-523589365
+* https://github.com/samuelcolvin/arq/issues/221",Ross Nordstrom,nordstrom.ross@gmail.com,GitHub,noreply@github.com,2023-03-19 06:02:21-06:00,21600,2023-03-19 12:02:21+00:00,0,True,False,['index.rst'],['bfa8e68fff7063e792f4a5deef0f778eb549d73c'],1,1,2,1,,,
+9109c2e59d2b13fa59d246da03d19d7844a6fa19,Delete setup.py (#398),stradivari96,xiang1016127637@gmail.com,GitHub,noreply@github.com,2023-05-20 17:36:34+02:00,-7200,2023-05-20 08:36:34-07:00,25200,True,False,['setup.py'],['e0cd916988ebed6d01c26a4d3e9128aa2bf22a7d'],28,0,28,1,,,
+ab2dda2011ab27007650c4918d3704f3bf7ac13d,"🔨 Adding a job counter to address Semaphore issues (#408)
+
+* 🔨 Adding a job counter to address Semaphore issues
+
+* 🧪 Test function for semaphore blocker",Rishabh Mittal,mittalrishabh181@gmail.com,GitHub,noreply@github.com,2023-10-30 23:27:26+05:18,-19080,2023-10-30 19:09:26+01:00,-3600,True,False,"['worker.py', 'test_worker.py']",['9109c2e59d2b13fa59d246da03d19d7844a6fa19'],4,51,55,2,0.21052631578947367,0.02631578947368421,0.42105263157894735

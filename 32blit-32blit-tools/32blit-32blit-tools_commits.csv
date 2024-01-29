@@ -1,0 +1,631 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+c25a989133e57f0e8d5d064ab1d89b13a74c54dd,Initial commit,Philip Howard,github@gadgetoid.com,Philip Howard,github@gadgetoid.com,2020-02-17 13:16:43+00:00,0,2020-02-17 13:16:43+00:00,0,True,False,"['.gitignore', '.stickler.yml', '.travis.yml', 'LICENSE', 'Makefile', 'README.md', '_bootstrap.md', '_bootstrap.sh', '_bootstrap_remotes.sh', 'install.sh', '.coveragerc', 'CHANGELOG.txt', 'LICENSE.txt', 'MANIFEST.in', 'pyproject.toml', 'setup.cfg', 'setup.py', 'test_setup.py', 'tox.ini', '__init__.py', 'uninstall.sh']",[],0,627,627,21,,,
+7871bbca5a400fecf28ea3cc17855d1711fba37c,Initial Commit,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-17 14:07:56+00:00,0,2020-02-17 14:07:56+00:00,0,True,False,"['Makefile', 'README.md', '_bootstrap.md', '_bootstrap.sh', '_bootstrap_remotes.sh', 'install.sh', '__init__.py', '.coveragerc', 'CHANGELOG.txt', 'LICENSE.txt', 'MANIFEST.in', 'README.md', 'pyproject.toml', 'setup.cfg', 'setup.py', 'test_setup.py', 'tox.ini', '__init__.py', '__main__.py', 'builder.py', 'image.py', 'map.py', 'raw.py', 'sprite.py', 'core.py', 'uninstall.sh']",['c25a989133e57f0e8d5d064ab1d89b13a74c54dd'],369,333,702,26,0.697841726618705,0.697841726618705,0.8129496402877698
+3301ee85ea69077423e05217aafd16fdc2d21b13,Build out raw conversion,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-17 16:03:16+00:00,0,2020-02-17 16:03:16+00:00,0,True,False,"['__init__.py', 'image.py', 'map.py', 'raw.py', 'sprite.py', 'core.py', 'packer.py']",['7871bbca5a400fecf28ea3cc17855d1711fba37c'],20,213,233,7,0.8387096774193549,0.717741935483871,0.45161290322580644
+fb0c7c53e622711543e7a1c11e1ecd6c0818617b,Tidy up README,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-17 16:06:46+00:00,0,2020-02-17 16:06:46+00:00,0,True,False,['README.md'],['3301ee85ea69077423e05217aafd16fdc2d21b13'],17,11,28,1,,,
+78a62a8fb0f9630b3aef6daf19078744b666adc4,Flesh out packer,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-17 17:24:32+00:00,0,2020-02-17 17:24:32+00:00,0,True,False,"['__init__.py', 'image.py', 'map.py', 'raw.py', 'sprite.py', 'core.py', 'packer.py']",['fb0c7c53e622711543e7a1c11e1ecd6c0818617b'],61,107,168,7,0.02631578947368421,0.6052631578947368,0.0
+36cb0e442d6e716d6cb658647d85b7f0e34cf27f,Sprite builder,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-17 23:29:03+00:00,0,2020-02-17 23:29:03+00:00,0,True,False,"['sprite.py', 'core.py']",['78a62a8fb0f9630b3aef6daf19078744b666adc4'],5,176,181,2,0.3511450381679389,0.6259541984732825,0.5114503816793893
+f8c9fc778d7bd9a7bc05a3d08e4b252b92de4b0a,"Refactor palette handling, add support for gpl, pal",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-19 10:38:34+00:00,0,2020-02-19 10:38:34+00:00,0,True,False,"['sprite.py', 'core.py', 'palette.py']",['36cb0e442d6e716d6cb658647d85b7f0e34cf27f'],64,138,202,3,1.0,1.0,0.725
+322546b8763eaff9c15edfb2c8003ac5be6b8538,"Refactor, functional builder",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-19 14:42:24+00:00,0,2020-02-19 14:42:24+00:00,0,True,False,"['__init__.py', 'map.py', 'sprite.py', 'core.py', 'palette.py', 'packer.py']",['f8c9fc778d7bd9a7bc05a3d08e4b252b92de4b0a'],123,269,392,6,0.8152173913043478,0.9565217391304348,0.4782608695652174
+6e079e675099a65ab454e041ad29a5cee9bfff56,Drop broken join support for now,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-19 14:51:47+00:00,0,2020-02-19 14:51:47+00:00,0,True,False,['packer.py'],['322546b8763eaff9c15edfb2c8003ac5be6b8538'],12,3,15,1,1.0,0.0,1.0
+1c14c062721094f5e0a527e611c6a28d22ce0f14,Fix Tiled 1-indexed tiles,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-19 16:07:29+00:00,0,2020-02-19 16:07:29+00:00,0,True,False,"['map.py', 'raw.py']",['6e079e675099a65ab454e041ad29a5cee9bfff56'],3,4,7,2,1.0,1.0,1.0
+76f27f0a6a5d15892d067b6b9f3ffd9d6e55a094,Fudge output to existing sprite format,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-19 16:08:11+00:00,0,2020-02-19 16:08:11+00:00,0,True,False,['sprite.py'],['1c14c062721094f5e0a527e611c6a28d22ce0f14'],5,32,37,1,0.08695652173913043,0.391304347826087,0.0
+565c7eced01b5a3061ee1e2c0c749e1fe2fcf3b4,Packaging fixes,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-19 16:34:25+00:00,0,2020-02-19 16:34:25+00:00,0,True,False,"['MANIFEST.in', 'README.md', 'tox.ini']",['76f27f0a6a5d15892d067b6b9f3ffd9d6e55a094'],18,13,31,3,,,
+0fab11112100d941b5954c07a14c547ea6c41043,Linting and bug fixes,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-19 17:04:31+00:00,0,2020-02-19 17:04:31+00:00,0,True,False,"['setup.cfg', 'tox.ini', '__init__.py', '__main__.py', 'image.py', 'map.py', 'raw.py', 'sprite.py', 'core.py', 'palette.py', 'packer.py']",['565c7eced01b5a3061ee1e2c0c749e1fe2fcf3b4'],44,45,89,11,0.6666666666666666,0.3333333333333333,0.0
+1c15df0c3e0fe5955dc0679c86531c50ae5b9113,"Refactor, tidy, lint",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 15:39:51+00:00,0,2020-02-20 15:39:51+00:00,0,True,False,"['__init__.py', 'image.py', 'map.py', 'raw.py', 'sprite.py', 'core.py', 'assetbuilder.py', 'outputformat.py', 'palette.py', 'tool.py', 'packer.py']",['0fab11112100d941b5954c07a14c547ea6c41043'],485,456,941,11,0.36363636363636365,0.36363636363636365,1.0
+69be687fea2c7b843182541d7646a979c6a7ac2c,"Deal with bytes, simplify",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 16:36:53+00:00,0,2020-02-20 16:36:53+00:00,0,True,False,"['image.py', 'map.py', 'raw.py', 'assetbuilder.py', 'outputformat.py', 'packer.py']",['1c15df0c3e0fe5955dc0679c86531c50ae5b9113'],113,85,198,6,0.0,0.0,0.0
+766462d4a40dbfe4c1f41b944abba7ae5b5dd939,"Fixes, comments and tidying",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 17:07:34+00:00,0,2020-02-20 17:07:34+00:00,0,True,False,"['image.py', 'map.py', 'raw.py', 'outputformat.py', 'packer.py']",['69be687fea2c7b843182541d7646a979c6a7ac2c'],41,50,91,5,1.0,0.75,1.0
+c662ea2ec00b6fe99a7960b4a2b7212908c95e0c,WIP CMake config generator tool,Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-02-19 18:05:36+00:00,0,2020-02-20 19:50:24+00:00,0,True,False,"['__init__.py', 'cmake.py']",['766462d4a40dbfe4c1f41b944abba7ae5b5dd939'],1,86,87,2,0.2962962962962963,0.3148148148148148,1.0
+476f310b5f8a525be706f059e93bc0c681790822,Overload pack --output to supply destination path,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 20:49:58+00:00,0,2020-02-20 20:49:58+00:00,0,True,False,['packer.py'],['766462d4a40dbfe4c1f41b944abba7ae5b5dd939'],2,9,11,1,0.0,0.0,1.0
+6cfcd4c7c52c55a8ea967c80d992da81c9e2af28,Track all output files depending on outputformat,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 21:15:30+00:00,0,2020-02-20 21:15:30+00:00,0,True,False,['cmake.py'],['5e2383795964859ced96f344c84e58e4996d90b1'],2,14,16,1,0.0,0.0,1.0
+0938b9ca9294fc56a7cbc7814aa14fda38d9ab7b,Slight tweak of warning output,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 21:21:26+00:00,0,2020-02-20 21:21:26+00:00,0,True,False,['packer.py'],['6cfcd4c7c52c55a8ea967c80d992da81c9e2af28'],1,1,2,1,,,
+a00d9eba6c3faf60bcbb0003a6424db3c94e8d2e,Bugfixes and workarounds for Windows path foibles in CMake,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 22:20:07+00:00,0,2020-02-20 22:20:07+00:00,0,True,False,"['cmake.py', 'packer.py']",['0938b9ca9294fc56a7cbc7814aa14fda38d9ab7b'],9,15,24,2,0.2,0.2,1.0
+685cc2168d0286424d54d0a58768bf706a3bb47c,Linting fixes,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 22:32:22+00:00,0,2020-02-20 22:32:22+00:00,0,True,False,['cmake.py'],['a00d9eba6c3faf60bcbb0003a6424db3c94e8d2e'],4,4,8,1,,,
+72c6d4c7d5eb449481e0f00df05c657197a7eb66,Apply isort,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 22:41:52+00:00,0,2020-02-20 22:41:52+00:00,0,True,False,"['setup.py', 'tox.ini', '__main__.py', 'image.py', 'assetbuilder.py', 'cmake.py', 'packer.py']",['685cc2168d0286424d54d0a58768bf706a3bb47c'],10,16,26,7,,,
+e96e355cb58ec54808d2eaba5600e62724a2ea93,Fix glaring import errors,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 23:11:26+00:00,0,2020-02-20 23:11:26+00:00,0,True,False,"['image.py', 'map.py', 'raw.py', 'cmake.py', 'packer.py']",['72c6d4c7d5eb449481e0f00df05c657197a7eb66'],8,8,16,5,,,
+af7fd81b76b729b8e5021d2e90b49aaf5ba3a93a,Fix dependencies,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 23:11:44+00:00,0,2020-02-20 23:11:44+00:00,0,True,False,['setup.cfg'],['e96e355cb58ec54808d2eaba5600e62724a2ea93'],2,4,6,1,,,
+cbcf33de2f3c048406b55be3c67b3aefc691c298,Add very basic tests,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 23:11:59+00:00,0,2020-02-20 23:11:59+00:00,0,True,False,['test_setup.py'],['af7fd81b76b729b8e5021d2e90b49aaf5ba3a93a'],0,39,39,1,1.0,1.0,1.0
+1b125c2f5c85ccb7211f4c02d0246c3c132d2fe6,"Fix travis, oh dear",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 23:15:05+00:00,0,2020-02-20 23:15:05+00:00,0,True,False,['.travis.yml'],['cbcf33de2f3c048406b55be3c67b3aefc691c298'],6,4,10,1,,,
+96b3879d0ded47a16bdbe360558eb9f7c378b284,Prep for v0.0.2,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 23:20:59+00:00,0,2020-02-20 23:20:59+00:00,0,True,False,"['Makefile', 'CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['1b125c2f5c85ccb7211f4c02d0246c3c132d2fe6'],3,18,21,5,,,
+4a869fe278e1375e11f5db4e07a5b183617b7fbb,Fix packaging mishap,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 23:48:42+00:00,0,2020-02-20 23:48:42+00:00,0,True,False,"['setup.cfg', 'test_setup.py']",['96b3879d0ded47a16bdbe360558eb9f7c378b284'],2,10,12,2,,,
+6bf1ec9a911ae135675a0395c3224ccf51f5f482,Prep for v0.0.3,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-20 23:50:16+00:00,0,2020-02-20 23:50:16+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['4a869fe278e1375e11f5db4e07a5b183617b7fbb'],2,12,14,4,,,
+e3a9e8f89f7608e3b25514802610b1f8302d363b,Payload size is just the image data size,Charlie Birks,charlie@daftgames.net,GitHub,noreply@github.com,2020-02-21 12:42:19+00:00,0,2020-02-21 12:42:19+00:00,0,True,False,['image.py'],['6bf1ec9a911ae135675a0395c3224ccf51f5f482'],1,1,2,1,,,
+45db4949ab5c957195a6bd86a1e4398fd1510773,Update metadata,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-21 16:46:48+00:00,0,2020-02-21 16:46:48+00:00,0,True,False,['setup.cfg'],['4a9618269162d3bafe8016278dc9731bc3be4e98'],3,4,7,1,,,
+2cb997ac08e6e222ae397e599dc9f5a95b74a86f,Default to packed,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-21 16:47:26+00:00,0,2020-02-21 16:47:26+00:00,0,True,False,['image.py'],['45db4949ab5c957195a6bd86a1e4398fd1510773'],3,1,4,1,1.0,0.0,0.0
+e401d617980fe8a758d5b8dad41b4999d41d4416,Drop redundant fstring,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-21 16:48:23+00:00,0,2020-02-21 16:48:23+00:00,0,True,False,['packer.py'],['2cb997ac08e6e222ae397e599dc9f5a95b74a86f'],1,1,2,1,,,
+e7bddd5175425c0878395f5e954958d5296c9aed,Expand test coverage,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-21 16:48:56+00:00,0,2020-02-21 16:48:56+00:00,0,True,False,"['test_map.py', 'test_raw.py', 'test_setup.py']",['e401d617980fe8a758d5b8dad41b4999d41d4416'],1,48,49,3,1.0,1.0,1.0
+60080422470f235ceba8394a8b33c98c13773e92,Update README,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-21 20:40:11+00:00,0,2020-02-21 20:40:11+00:00,0,True,False,"['.gitignore', 'README.md', 'README.md']",['e7bddd5175425c0878395f5e954958d5296c9aed'],0,62,62,3,,,
+958bf7b3df0dea9c8d14d6bbcae57e11037272cb,Attempt to fix an issue that was actually my local Python env being horribly broken,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-22 14:06:59+00:00,0,2020-02-22 14:06:59+00:00,0,True,False,"['Makefile', 'README.md', 'setup.cfg']",['60080422470f235ceba8394a8b33c98c13773e92'],6,9,15,3,,,
+1d2289b97faef95b8ac7619810f60abcd43cb5be,Prep for v0.0.4,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-22 14:15:51+00:00,0,2020-02-22 14:15:51+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['958bf7b3df0dea9c8d14d6bbcae57e11037272cb'],2,14,16,4,,,
+6152b22ed19fe8089f6dfae4e3303130c5c5859d,Start flasher tool,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-22 15:14:08+00:00,0,2020-02-22 15:14:08+00:00,0,True,False,"['setup.cfg', '__init__.py', 'flasher.py']",['1d2289b97faef95b8ac7619810f60abcd43cb5be'],2,97,99,3,0.711864406779661,0.847457627118644,1.0
+74b190af11876515c35e0de6a6fffb7f1dbcf002,Fix duplicate name,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-22 15:33:00+00:00,0,2020-02-22 15:33:00+00:00,0,True,False,['flasher.py'],['6152b22ed19fe8089f6dfae4e3303130c5c5859d'],1,1,2,1,,,
+3d16e1120edd95f813d9090273003aef7d02147d,CrLf to Lf,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-22 15:50:15+00:00,0,2020-02-22 15:50:15+00:00,0,True,False,"['assetbuilder.py', 'outputformat.py', 'palette.py', 'tool.py', 'flasher.py']",['74b190af11876515c35e0de6a6fffb7f1dbcf002'],488,488,976,5,,,
+e28d81d58a5b6faad90e72d2f52244e0f4e1a0b0,shebang!,Jonathan Williamson,jon@pimoroni.com,Jonathan Williamson,jon@pimoroni.com,2020-02-22 15:53:00+00:00,0,2020-02-22 15:53:00+00:00,0,True,False,['flasher.py'],['3d16e1120edd95f813d9090273003aef7d02147d'],0,2,2,1,,,
+decd5f792fd94d6e461c06441f8d1d52aa5bcbb2,Support 32blit filename.bin shorthand flashing,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-22 16:53:52+00:00,0,2020-02-22 16:54:20+00:00,0,True,False,"['__init__.py', 'flasher.py']",['e28d81d58a5b6faad90e72d2f52244e0f4e1a0b0'],22,43,65,2,0.5714285714285714,0.0,0.0
+42c394195e9578626340705afd3358d910db7032,Fix linting errors,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-22 19:57:52+00:00,0,2020-02-22 19:57:52+00:00,0,True,False,"['__init__.py', 'flasher.py']",['decd5f792fd94d6e461c06441f8d1d52aa5bcbb2'],10,5,15,2,,,
+b0fddd7e244069a88f0039fd56712cdbd2a9c471,"Pack images by default, attempt 2",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-22 20:15:50+00:00,0,2020-02-22 20:15:50+00:00,0,True,False,"['image.py', 'assetbuilder.py', 'tool.py']",['42c394195e9578626340705afd3358d910db7032'],10,16,26,3,1.0,0.6666666666666666,1.0
+ea2d70ff5f3eec1922430535783ad9eb316051c3,"Generate a length constant for assets
+
+Slightly redundant for the header-only path, but included for completeness.",Charlie Birks,charlie@daftgames.net,GitHub,noreply@github.com,2020-02-23 18:15:50+00:00,0,2020-02-23 18:15:50+00:00,0,True,False,['outputformat.py'],['b0fddd7e244069a88f0039fd56712cdbd2a9c471'],3,6,9,1,1.0,1.0,0.0
+a1b83c2b815974e98fcdbb7a4a29a4f0cd48c45f,Remove text where binary name should be,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-27 14:21:16+00:00,0,2020-02-27 15:40:28+00:00,0,True,False,['__init__.py'],['1b6567a7352a39063b44a95fde190fa98caf4f2c'],1,1,2,1,,,
+4c4e709d644d6209a067355638ee05354f21e69f,Raise Palette parse errors for argparse,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-27 14:21:31+00:00,0,2020-02-27 15:40:28+00:00,0,True,False,"['image.py', 'palette.py']",['a1b83c2b815974e98fcdbb7a4a29a4f0cd48c45f'],3,16,19,2,1.0,1.0,1.0
+3513efef3f8a0cc4c16203d40fce1f11452e7617,"Bugfixes, tweaks and more tests
+
+This set of changes addresses the neglected CLI invocations of the various tools, fixing default values and making commands behave as expected.",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-27 15:38:35+00:00,0,2020-02-27 15:40:29+00:00,0,True,False,"['test_image_cli.py', 'test_map_cli.py', 'image.py', 'raw.py', 'assetbuilder.py', 'outputformat.py', 'palette.py', 'tool.py']",['4c4e709d644d6209a067355638ee05354f21e69f'],33,182,215,8,0.7816091954022989,0.9540229885057471,1.0
+23eb7eedb20f59750729e729eb5999b2dc091a86,"More testing, various fixes, target py37",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-27 16:14:25+00:00,0,2020-02-27 16:14:25+00:00,0,True,False,"['.travis.yml', 'test_image_cli.py', 'test_map.py', 'test_map_cli.py', 'test_raw.py', 'test_setup.py', 'tox.ini', 'flasher.py']",['3513efef3f8a0cc4c16203d40fce1f11452e7617'],12,33,45,8,1.0,1.0,1.0
+3fc76e6df774bbc56394eac4a491af2cbac8faf2,"Expand test coverage, tweak --packed",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-27 16:48:01+00:00,0,2020-02-27 16:48:01+00:00,0,True,False,"['test_image_cli.py', 'test_raw.py', 'image.py']",['23eb7eedb20f59750729e729eb5999b2dc091a86'],19,83,102,3,0.35,1.0,1.0
+6540fe3cebc1dc0799bd92edd85ce244f89dc655,"Prep for 0.0.5, crlf to lf",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-02-27 17:54:42+00:00,0,2020-02-27 17:54:42+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', 'test_image_cli.py', 'test_map.py', 'test_map_cli.py', 'test_raw.py', 'test_setup.py', '__init__.py']",['3fc76e6df774bbc56394eac4a491af2cbac8faf2'],314,330,644,9,,,
+c1fb3d31503f360504f3581dd55c4f24449d36ef,Initial font tool,Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-02-29 17:06:01+00:00,0,2020-02-29 17:06:01+00:00,0,True,False,"['__init__.py', 'font.py']",['6540fe3cebc1dc0799bd92edd85ce244f89dc655'],1,98,99,2,0.1896551724137931,0.5,1.0
+c4573f2468106a9eebb1471f4d2751700c463108,"Add support for converting TTF files with freetype
+
+This is a port of a C++ tool based on code from another project...",Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-02-29 18:04:39+00:00,0,2020-02-29 18:04:39+00:00,0,True,False,"['setup.cfg', 'font.py']",['c1fb3d31503f360504f3581dd55c4f24449d36ef'],3,71,74,2,0.075,0.075,1.0
+1e6e0549b0ddcb9ce57f4df6b74ab69796102acf,"Add a flash command to the flasher
+
+""32blit flash flash""...",Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-08-17 13:05:57+01:00,-3600,2020-08-17 13:20:38+01:00,-3600,True,False,['flasher.py'],['ea07218a33b9aa3c0057e3a556d1e5e0835dd11b'],4,15,19,1,0.5,1.0,0.25
+37222e54a2045648f13318b164c70a3b6a341d51,"Support ""all"" as port to send to run command on all connected devices",Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-08-17 13:58:23+01:00,-3600,2020-08-17 13:58:23+01:00,-3600,True,False,['flasher.py'],['1e6e0549b0ddcb9ce57f4df6b74ab69796102acf'],9,19,28,1,1.0,0.6666666666666666,1.0
+28d3a7dc7acfaec058b9e6b22594cf74b6d30022,(Barely) test flasher,Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-09-17 20:17:28+01:00,-3600,2020-09-17 20:17:28+01:00,-3600,True,False,['test_setup.py'],['37222e54a2045648f13318b164c70a3b6a341d51'],0,4,4,1,1.0,1.0,1.0
+493a147950740f0cf202d569fec17745fa648e20,"Clamp palette bit length to 1
+
+Otherwise it ends up trying to pack single colour images to 0bpp",Charlie Birks,charlie@daftgames.net,GitHub,noreply@github.com,2020-09-21 23:19:10+01:00,-3600,2020-09-21 23:19:10+01:00,-3600,True,False,['palette.py'],['ea07218a33b9aa3c0057e3a556d1e5e0835dd11b'],1,1,2,1,,,
+b3b46753ba90790b5f7e7051f3dcc7438c968a36,"Set palette transparent colour in get_entry if there isn't one
+
+To filter out multiple alpha=0 colours even when there is no user-specified transparent colour",Charlie Birks,charlie@daftgames.net,GitHub,noreply@github.com,2020-09-21 23:23:11+01:00,-3600,2020-09-21 23:23:11+01:00,-3600,True,False,['palette.py'],['493a147950740f0cf202d569fec17745fa648e20'],0,4,4,1,0.0,0.0,0.0
+cc52bb75baeb6683d6d9da8efb8f619e064995e7,"Add a couple of image tests
+
+One with a single colour, the other with many colours but all of them transparent",Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-09-21 23:40:02+01:00,-3600,2020-09-22 10:34:14+01:00,-3600,True,False,['test_image_cli.py'],['b3b46753ba90790b5f7e7051f3dcc7438c968a36'],1,32,33,1,1.0,1.0,1.0
+58320e71856590bdce93111d4e0ba9a7ec3e2e31,Useful error for .tmx -1 issue,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-24 17:54:42+01:00,-3600,2020-09-24 17:54:42+01:00,-3600,True,False,['map.py'],['51f9855f9195c2593fb207ce62e4d3ee48d2d1a1'],4,7,11,1,1.0,1.0,1.0
+ba4258371e73a98a2b9e258fab04fd752e222486,Added __init__ so modules are recognised,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-24 17:55:08+01:00,-3600,2020-09-24 17:55:08+01:00,-3600,True,False,"['__init__.py', '__init__.py', '__init__.py']",['58320e71856590bdce93111d4e0ba9a7ec3e2e31'],0,0,0,3,,,
+46750e9dc07e7e15f2f88c686b3d39ca3fd89d09,Prep for v0.0.6,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-25 11:54:00+01:00,-3600,2020-09-25 11:54:00+01:00,-3600,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py', 'map.py']",['ba4258371e73a98a2b9e258fab04fd752e222486'],3,21,24,5,,,
+103b09b48af8f7e4d2f007a6a0afb1a3d7321eda,"Add metadata packing tool
+
+Allows title, description, version, icon and splash to be packed and prepended to a 32blit .bin file.
+
+icon should be an 8x8 .png
+splash should be a 128x96 .png
+
+Images can be configured just like the asset pipeline- packed, unpacked, paletted, etc
+
+Example metadata.yml:
+
+```yml
+title: Rocks & Diamonds
+description: A game of rocks and diamonds
+version: v1.0.0
+icon:
+  file: icon-8x8.png
+splash:
+  file: splash-128x96.png
+```",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-24 23:51:17+01:00,-3600,2020-09-25 19:57:57+01:00,-3600,True,False,"['__init__.py', 'metadata.py']",['46750e9dc07e7e15f2f88c686b3d39ca3fd89d09'],2,106,108,2,0.323943661971831,0.323943661971831,0.8732394366197183
+954503bd71216f7da94067a37c95eb562cb2e0ca,Minor tweaks and consistency fixes,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-25 00:17:14+01:00,-3600,2020-09-25 19:57:58+01:00,-3600,True,False,['metadata.py'],['103b09b48af8f7e4d2f007a6a0afb1a3d7321eda'],18,16,34,1,1.0,1.0,0.0
+3efb052eccc1f6d489121d2b9bb18c4013240cd0,Switch metadata to end of bin,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-25 16:53:50+01:00,-3600,2020-09-25 19:57:58+01:00,-3600,True,False,['metadata.py'],['954503bd71216f7da94067a37c95eb562cb2e0ca'],9,24,33,1,0.14285714285714285,0.14285714285714285,1.0
+3c8e322eaefd9ab4d54484b53521e5a394cc9b44,"Limit title, desc and version lengths",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-25 16:58:45+01:00,-3600,2020-09-25 19:57:58+01:00,-3600,True,False,['metadata.py'],['3efb052eccc1f6d489121d2b9bb18c4013240cd0'],0,9,9,1,0.0,0.0,1.0
+72407622ad5592ea95eef3059233d7db933c5940,Linting fixes,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-25 19:49:20+01:00,-3600,2020-09-25 19:58:52+01:00,-3600,True,False,"['test_image_cli.py', 'test_setup.py', '__init__.py', 'font.py', 'map.py', 'metadata.py']",['3c8e322eaefd9ab4d54484b53521e5a394cc9b44'],16,18,34,6,1.0,1.0,0.0
+90bfa734beca05755e205882dfc7e55ef23f6c62,Add metadata tests,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-25 19:49:37+01:00,-3600,2020-09-25 19:58:52+01:00,-3600,True,False,['test_metadata.py'],['72407622ad5592ea95eef3059233d7db933c5940'],0,89,89,1,1.0,1.0,0.6111111111111112
+18467de5ace3abb175c7787af6733a65d6b5158f,Add test for #15,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-27 22:03:29+01:00,-3600,2020-09-27 22:03:29+01:00,-3600,True,False,['test_packer_cli.py'],['965cfc3b899834c2cd3f7a1037f2bc4dc6e946fc'],0,92,92,1,1.0,1.0,0.8727272727272727
+e5d7607eb0d9c5a2a02cfb970206d78ffca0ee3f,Prefix palette path with working dir for #15,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-27 22:03:59+01:00,-3600,2020-09-27 22:03:59+01:00,-3600,True,False,['packer.py'],['18467de5ace3abb175c7787af6733a65d6b5158f'],0,4,4,1,0.0,0.0,1.0
+3a6832c4e5eda1ea8cd959fff5b60cc1027a2b7f,More robust fix for #15,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-27 22:25:05+01:00,-3600,2020-09-27 22:25:05+01:00,-3600,True,False,['packer.py'],['e5d7607eb0d9c5a2a02cfb970206d78ffca0ee3f'],6,19,25,1,0.16666666666666666,0.0,0.0
+6aec6f68bb5301b2ab269e9962799002501698da,"Add author field, prefix metadata fields",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-28 11:54:34+01:00,-3600,2020-09-28 11:54:34+01:00,-3600,True,False,"['test_metadata.py', 'metadata.py']",['965cfc3b899834c2cd3f7a1037f2bc4dc6e946fc'],8,14,22,2,0.2,0.2,1.0
+c4cbeca33552215d9646fcb8938061d8552bea3d,"Refactor, fixed length
+
+Refactors the metadata to used fixed-length, null terminated strings.
+
+Additionally adds a 4-byte CRC32 of the binary file, plus a 16 byte (null terminated) timestamp.
+
+* `BLITMETA`
+* Metadata length, 2 bytes
+* CRC32, 4 bytes
+* Timestamp - 20200101T121212, 16 bytes, null terminated
+* Title, 25 bytes null terminated (24 char string)
+* Description, 129 bytes null terminated (128 char string)
+* Version, 17 bytes null terminated (16 char string)
+* Author, 17 bytes null terminated (16 char string)
+* Icon - raw/packed sprite
+* Splash - raw/packed sprite",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-28 12:41:07+01:00,-3600,2020-09-28 12:41:07+01:00,-3600,True,False,['metadata.py'],['6aec6f68bb5301b2ab269e9962799002501698da'],11,20,31,1,0.3333333333333333,0.3333333333333333,1.0
+afae8acdf234ccf3ae415adbf40909a63ba393bb,Switch encoding from utf-8 to ASCII,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-28 12:50:39+01:00,-3600,2020-09-28 12:50:39+01:00,-3600,True,False,['metadata.py'],['c4cbeca33552215d9646fcb8938061d8552bea3d'],8,8,16,1,,,
+3129e48d583eee65663813e7355b117afb62ea8f,Add directory support to flash save,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-09-29 14:27:26+01:00,-3600,2020-09-29 14:27:26+01:00,-3600,True,False,['flasher.py'],['965cfc3b899834c2cd3f7a1037f2bc4dc6e946fc'],4,9,13,1,0.2,1.0,0.2
+a002727abfb46eb3cc3d9c7376eb692c06410c94,Prep for v0.0.7,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-01 09:35:21+01:00,-3600,2020-10-01 09:35:21+01:00,-3600,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['88a81d27e7d59f5dee0434bd7ea21d65862f09d2'],2,16,18,4,,,
+470f31c10ee6fb4de6bc527b7662703b709d60cb,"Typo, fix #11",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-01 09:36:11+01:00,-3600,2020-10-01 09:36:11+01:00,-3600,True,False,['setup.cfg'],['a002727abfb46eb3cc3d9c7376eb692c06410c94'],1,1,2,1,,,
+6dc3618922c28d014c104b65b05e1935959a508a,"Use logger, errors to stderr",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-01 11:10:04+01:00,-3600,2020-10-01 11:10:04+01:00,-3600,True,False,"['test_packer_cli.py', '__init__.py', 'font.py', 'image.py', 'assetbuilder.py', 'palette.py', 'tool.py', 'cmake.py', 'flasher.py', 'metadata.py', 'packer.py']",['470f31c10ee6fb4de6bc527b7662703b709d60cb'],36,59,95,11,0.1111111111111111,0.1111111111111111,0.8888888888888888
+4e7ff445832c451047df4c848bee112f6ed38b06,Output only ERROR by default,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-01 16:05:11+01:00,-3600,2020-10-01 16:05:11+01:00,-3600,True,False,['__init__.py'],['6dc3618922c28d014c104b65b05e1935959a508a'],4,3,7,1,1.0,1.0,0.0
+6ac0e26f7b82e61d6d79c53b684bee3039bc2453,Add options to depends for #22,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 13:25:02+01:00,-3600,2020-10-02 13:25:02+01:00,-3600,True,False,['cmake.py'],['4e7ff445832c451047df4c848bee112f6ed38b06'],4,11,15,1,0.0,0.0,1.0
+a4d0ea5238e106a45bfb80cc455644eac77cb3ed,Accidentally a print,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 13:31:58+01:00,-3600,2020-10-02 13:31:58+01:00,-3600,True,False,['cmake.py'],['6ac0e26f7b82e61d6d79c53b684bee3039bc2453'],2,0,2,1,1.0,1.0,0.0
+f7ef211114a155bf0049000a20407eff03525e5b,"Add autoreset, info command and minor fixes to flasher",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 14:07:52+01:00,-3600,2020-10-02 14:07:52+01:00,-3600,True,False,['flasher.py'],['07292199efc4493448695c2a5ba6b22b0f77f9cd'],7,29,36,1,1.0,1.0,0.75
+cfb43e6562cab559fe5f3f6954266ab97c17ed64,Allow cmake t tool to understand metadata configs,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 16:17:00+01:00,-3600,2020-10-02 16:17:00+01:00,-3600,True,False,['cmake.py'],['a4d0ea5238e106a45bfb80cc455644eac77cb3ed'],0,20,20,1,0.5625,0.5625,1.0
+11073de28f733a64d556339a83871692099b2bb4,Make icon and splash optionl,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 16:23:54+01:00,-3600,2020-10-02 16:23:54+01:00,-3600,True,False,['cmake.py'],['cfb43e6562cab559fe5f3f6954266ab97c17ed64'],8,16,24,1,1.0,1.0,1.0
+8bf11c069cfd7684c344a7e7896c96d9dad0a3d0,Support abs path in cmake metadata,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 16:32:16+01:00,-3600,2020-10-02 16:32:16+01:00,-3600,True,False,['cmake.py'],['11073de28f733a64d556339a83871692099b2bb4'],2,10,12,1,0.0,0.0,1.0
+9ba9d4c8f55c2a89338ed3ddec066b656d91821f,Add tests for  cmake input,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 16:32:48+01:00,-3600,2020-10-02 16:32:48+01:00,-3600,True,False,"['conftest.py', 'test_cmake.py', 'test_image_cli.py', 'test_map_cli.py', 'test_metadata.py', 'test_packer_cli.py']",['8bf11c069cfd7684c344a7e7896c96d9dad0a3d0'],28,66,94,6,1.0,1.0,0.5238095238095238
+9ce5e3187730394b0a9d7615e5e3fe6bb6bd5df9,Fix broken asset cmake gen,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 17:21:15+01:00,-3600,2020-10-02 17:21:15+01:00,-3600,True,False,['cmake.py'],['9ba9d4c8f55c2a89338ed3ddec066b656d91821f'],1,1,2,1,,,
+c10b7ac6f0c22912d0a095aeabf1574699f62da6,Empty cmake file when no metadata inputs,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 20:28:04+01:00,-3600,2020-10-02 20:28:04+01:00,-3600,True,False,"['test_cmake.py', 'cmake.py']",['9ce5e3187730394b0a9d7615e5e3fe6bb6bd5df9'],2,34,36,2,0.9523809523809523,0.9523809523809523,0.47619047619047616
+ccd28e61e074b1d5f3bbfac0ee5127a6cb201041,Open closed port after reset,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 20:45:41+01:00,-3600,2020-10-02 20:45:41+01:00,-3600,True,False,['flasher.py'],['f7ef211114a155bf0049000a20407eff03525e5b'],1,11,12,1,1.0,1.0,0.0
+85bec116200aba5b1df4d76d32a3216fde9a30a7,Prep for v0.0.8,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-02 22:12:22+01:00,-3600,2020-10-02 22:12:22+01:00,-3600,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['0f2629bfe8d3fc02fc86e429ef8c925abb38ffcb'],2,22,24,4,,,
+4091cdd2761583670784dbdd45ea114142e4191b,Add test for and fix #28,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-03 20:18:21+01:00,-3600,2020-10-03 20:18:21+01:00,-3600,True,False,"['test_cmake.py', 'cmake.py']",['c10b7ac6f0c22912d0a095aeabf1574699f62da6'],0,31,31,2,0.8888888888888888,0.8888888888888888,0.5
+db63bb79aaedfba270712efba96d5d8ba04dd6ad,Add support for rereloc'd binaries,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-03 21:26:27+01:00,-3600,2020-10-03 21:30:16+01:00,-3600,True,False,['metadata.py'],['d8af524ea1a055ed590a9659539d2859a80a87f2'],2,7,9,1,0.0,0.0,1.0
+bb47142ba6c4b1982687876028248d7249e944a5,Prep for v0.0.9,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-05 19:43:49+01:00,-3600,2020-10-05 19:43:49+01:00,-3600,True,False,"['CHANGELOG.txt', 'setup.cfg', '__init__.py']",['6a339dfdbbf418e9a7e755e003f03389fcef1788'],2,8,10,3,,,
+3e75d9c735433212753d7deac5ce55b120353c8e,Errant README update,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-08 00:32:36+01:00,-3600,2020-10-08 00:32:36+01:00,-3600,True,False,['README.md'],['bb47142ba6c4b1982687876028248d7249e944a5'],0,6,6,1,,,
+161843719a252fd9ebe9301a7f55bbfbdb18bb3e,"Revert payload size to entire image size
+
+The full size is what the unpacking actually wants, the out-of-bounds
+error that caused me to change this was caused by an off-by-one error.",Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-11-06 12:43:23+00:00,0,2020-11-06 12:43:28+00:00,0,True,False,['image.py'],['3e75d9c735433212753d7deac5ce55b120353c8e'],1,1,2,1,,,
+8b7a597b28b5b909e5c9020a809948f75a08acdf,Handle 256 colour images by using a palette size of 0,Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-11-06 14:03:37+00:00,0,2020-11-06 14:03:37+00:00,0,True,False,['image.py'],['161843719a252fd9ebe9301a7f55bbfbdb18bb3e'],5,2,7,1,,,
+90e20f1e91fe0e69f4c36fa033f8a51ac29c1917,"Change byte_count to uint32, remove unused rows/cols",Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-11-06 15:34:17+00:00,0,2020-11-06 15:34:17+00:00,0,True,False,['image.py'],['8b7a597b28b5b909e5c9020a809948f75a08acdf'],2,1,3,1,1.0,0.0,0.0
+4b853e10cd2324c45c2a54fd2374b80cc997c78a,Parse blit games with construct,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-08 00:34:40+01:00,-3600,2020-11-09 10:14:27+00:00,0,True,False,"['setup.cfg', 'metadata.py']",['466eefecbf74da0cab8402b4835dde991ad2cf61'],55,92,147,2,1.0,1.0,0.0
+d843fee41c7710b93741628e6a5a497cecdb94fc,Pass tests whee!,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-09 16:28:23+01:00,-3600,2020-11-09 10:14:27+00:00,0,True,False,"['conftest.py', 'test_cmake.py', 'test_image_cli.py', 'test_map_cli.py', 'test_metadata.py', 'test_packer_cli.py', 'metadata.py']",['4b853e10cd2324c45c2a54fd2374b80cc997c78a'],23,23,46,7,0.0,0.0,1.0
+8a373dba83f51a0fa2297f3e579f3916a276f4ad,Support metadata parsing and image dumping,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-10-09 17:58:04+01:00,-3600,2020-11-09 10:14:27+00:00,0,True,False,"['test_metadata.py', 'metadata.py']",['d843fee41c7710b93741628e6a5a497cecdb94fc'],13,120,133,2,0.07692307692307693,0.36923076923076925,1.0
+4efe41a4cb8ba32ebcb2994f1cd550323360c28c,"More struct to core, update for #32, imimage use struct",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-09 11:30:20+00:00,0,2020-11-09 11:30:20+00:00,0,True,False,"['image.py', 'palette.py', 'struct.py', 'metadata.py']",['8a373dba83f51a0fa2297f3e579f3916a276f4ad'],113,139,252,4,1.0,1.0,0.5294117647058824
+314147b92fb7f885ef0b5e219d707eb1950b0138,Calculate image size,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-09 12:39:10+00:00,0,2020-11-09 12:39:10+00:00,0,True,False,"['image.py', 'struct.py']",['4efe41a4cb8ba32ebcb2994f1cd550323360c28c'],4,4,8,2,1.0,0.0,0.0
+847f0dc0dbf7d705af513772a24d92940651580e,Linting fixes,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-09 12:42:24+00:00,0,2020-11-09 12:42:24+00:00,0,True,False,"['image.py', 'struct.py']",['314147b92fb7f885ef0b5e219d707eb1950b0138'],6,5,11,2,,,
+d215f1409322273fc85767b7084f6319ce7bd29d,Prep for v0.1.0,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-09 14:09:45+00:00,0,2020-11-09 14:09:45+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['2a028482daf2d7c09f2dc1ca294b0d261aef94b9'],2,16,18,4,,,
+484f4085900be29756ba399a06a268646ff4e587,"Add GitHub actions workflow (#34)
+
+* Add GitHub actions workflow
+* Update working dir
+* Drop unsupported Python versions",Philip Howard,phil@pimoroni.com,GitHub,noreply@github.com,2020-11-14 21:01:35+00:00,0,2020-11-14 21:01:35+00:00,0,True,False,['test.yml'],['d215f1409322273fc85767b7084f6319ce7bd29d'],0,37,37,1,,,
+0a1e92c15aee247d50136842f5cc4b32a2b71812,Remove .travis.yml,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-14 21:05:47+00:00,0,2020-11-14 21:05:47+00:00,0,True,False,['.travis.yml'],['484f4085900be29756ba399a06a268646ff4e587'],23,0,23,1,,,
+07622d7e7f10358c058a01db8bd753e4642bec09,Require construct 2.9,Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-10-15 12:48:35+01:00,-3600,2020-11-15 21:59:15+00:00,0,True,False,['setup.cfg'],['88cd2c1bf30ee75074fe857856efdc8d67b3468f'],1,1,2,1,,,
+32b2269962149e6c63621fe1bc8eaf03fc436aaa,Fix save shortcut,Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-10-15 12:49:08+01:00,-3600,2020-11-15 21:59:15+00:00,0,True,False,['__init__.py'],['07622d7e7f10358c058a01db8bd753e4642bec09'],1,1,2,1,,,
+dc5f5c10efb7185e40c76bbdb4682d49b19e13e3,Add basic list/delete commands,Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-10-15 12:47:31+01:00,-3600,2020-11-15 21:59:15+00:00,0,True,False,"['struct.py', 'flasher.py']",['32b2269962149e6c63621fe1bc8eaf03fc436aaa'],2,54,56,2,0.038461538461538464,1.0,0.038461538461538464
+dcc7dbcf84cca83474eb2101e63af90a0d883963,Align size,Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-11-10 20:31:01+00:00,0,2020-11-15 21:59:15+00:00,0,True,False,['flasher.py'],['dc5f5c10efb7185e40c76bbdb4682d49b19e13e3'],1,1,2,1,,,
+97ce31524a57d7a48d3708e0112a86edc9b56d7e,"Catch errors parsing metadata when listing
+
+Just continue without metadata for the current game",Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-11-10 20:40:31+00:00,0,2020-11-15 21:59:15+00:00,0,True,False,['flasher.py'],['dcc7dbcf84cca83474eb2101e63af90a0d883963'],1,5,6,1,0.0,0.0,0.0
+cbf6bd2da200f48cbf1000a0126e321e2b4d12f5,Allow deleting by either offset or block,Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daftgames.net,2020-11-10 20:47:40+00:00,0,2020-11-15 21:59:15+00:00,0,True,False,['flasher.py'],['97ce31524a57d7a48d3708e0112a86edc9b56d7e'],2,9,11,1,0.0,1.0,0.4
+cb0b8666fda9968bc9e926bc42a623dc20e4ad84,Include variables for metadata fields in the CMake file,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2020-11-16 13:26:00+00:00,0,2020-11-16 13:26:00+00:00,0,True,False,['cmake.py'],['88cd2c1bf30ee75074fe857856efdc8d67b3468f'],6,6,12,1,,,
+d11f35fd76b1d62d690d6f36b5a823975e737a20,Update test,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2020-11-16 14:34:59+00:00,0,2020-11-16 14:53:28+00:00,0,True,False,['test_cmake.py'],['cb0b8666fda9968bc9e926bc42a623dc20e4ad84'],1,9,10,1,0.0,1.0,0.0
+554666d9a73db6ed8a0d2805a67445175cc5c488,Add metadata --icns arg,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-16 22:45:27+00:00,0,2020-11-16 22:45:27+00:00,0,True,False,"['struct.py', 'metadata.py']",['6329dac48d8bd486eddb2c1365efe8bb7b4126a4'],2,50,52,2,0.13043478260869565,0.8260869565217391,1.0
+61ce7a24cd3ba4f1df7a91ecccffd5e5a5ea6a7f,Apply isort,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-16 22:48:59+00:00,0,2020-11-16 22:48:59+00:00,0,True,False,"['font.py', 'struct.py', 'metadata.py']",['554666d9a73db6ed8a0d2805a67445175cc5c488'],14,11,25,3,,,
+38597800eb4e3530d528826332cbf89c03b5f121,Add test for icns,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-16 22:58:19+00:00,0,2020-11-16 22:58:19+00:00,0,True,False,['test_metadata.py'],['61ce7a24cd3ba4f1df7a91ecccffd5e5a5ea6a7f'],0,27,27,1,1.0,1.0,0.17647058823529413
+8c1b18e02593ddca95e9f366c87399036a475c80,Prep for v0.1.1,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-17 11:01:00+00:00,0,2020-11-17 11:01:00+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['19d09312187dc826565bbfe4dc5905abe3d3d853'],2,14,16,4,,,
+10adc2d37231fdca8c73c51fe09aa85c56c64016,Correct small bug in tox.ini,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-19 15:49:08+00:00,0,2020-11-19 15:49:08+00:00,0,True,False,['tox.ini'],['8c1b18e02593ddca95e9f366c87399036a475c80'],1,1,2,1,,,
+32711890e1e3f03fe7ec441809f50910ebf67114,Use fresh class instances for each papacked asset,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-19 15:49:51+00:00,0,2020-11-19 15:49:51+00:00,0,True,False,"['test_packer_cli.py', '__init__.py', 'font.py', 'image.py', 'assetbuilder.py', 'tool.py', 'packer.py']",['10adc2d37231fdca8c73c51fe09aa85c56c64016'],38,38,76,7,1.0,1.0,0.0
+bbeaf9f15f059bd8fdb3c2ad0cc0f4320b49bb3c,Find images when not in working dir,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-26 12:32:59+00:00,0,2020-11-26 12:32:59+00:00,0,True,False,['metadata.py'],['32711890e1e3f03fe7ec441809f50910ebf67114'],3,7,10,1,0.5,0.5,0.5
+2119f45fa7a110e7296c80781b7d27cb01b65c67,"Don't require bin file for metadata tool
+
+When generating an icon for a macOS build, there isn't one",Charlie Birks,charlie@daft.games,Phil Howard,phil@gadgetoid.com,2020-11-17 13:19:16+00:00,0,2020-11-27 11:33:37+00:00,0,True,False,['metadata.py'],['98a2a223e6a5c5309eafaaf2728eb919ac144806'],7,14,21,1,0.0,0.0,1.0
+48d9775e7acb44380a7cb46113a6ca842b1ebb55,Require one of --file or --config,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-27 11:58:31+00:00,0,2020-11-27 11:58:31+00:00,0,True,False,"['test_metadata.py', 'metadata.py']",['2119f45fa7a110e7296c80781b7d27cb01b65c67'],1,5,6,2,0.3333333333333333,0.3333333333333333,1.0
+135275ced1e3d8357800e9dc2ad2f4ad596fd7df,Prep for v0.1.2,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-11-30 12:52:31+00:00,0,2020-11-30 12:52:31+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['a5a8042d01cdd7e5a00a54961b4a021d44598c6e'],2,18,20,4,,,
+7fcf0ce63a306782e984525d074c7fae1b36ff2a,Fix asset path handling for #40,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-01 11:14:53+00:00,0,2020-12-01 11:14:53+00:00,0,True,False,"['assetbuilder.py', 'packer.py']",['135275ced1e3d8357800e9dc2ad2f4ad596fd7df'],2,7,9,2,0.0,0.0,0.75
+7c4848ed41c3c1d3676549a6d90ac0743e652f9e,"QA, test and linting tweaks",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-01 11:15:10+00:00,0,2020-12-01 11:15:10+00:00,0,True,False,"['test_cmake.py', 'tox.ini', 'assetbuilder.py', 'struct.py', 'flasher.py', 'metadata.py', 'packer.py']",['7fcf0ce63a306782e984525d074c7fae1b36ff2a'],28,27,55,7,,,
+2fd1666f83be16aed5418d71a32314f1ddc1a4d1,Prep for v0.1.3,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-02 11:41:03+00:00,0,2020-12-02 11:41:03+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['4f9c1a8cd14890c7d4ec204959d92f3908e88ac1'],2,12,14,4,,,
+a6551c769c0ecd826b33fab2fae8f0758e7bf2e5,Import reloc tool with minimal changes,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2020-12-08 11:50:58+00:00,0,2020-12-08 11:50:58+00:00,0,True,False,"['__init__.py', 'relocs.py']",['2fd1666f83be16aed5418d71a32314f1ddc1a4d1'],1,100,101,2,0.25925925925925924,0.25925925925925924,1.0
+c07b95654c94b3cd13bcef2c9f0066a73e24463a,Tidy up reloc tool a little,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2020-12-08 11:56:34+00:00,0,2020-12-08 11:56:34+00:00,0,True,False,['relocs.py'],['a6551c769c0ecd826b33fab2fae8f0758e7bf2e5'],9,7,16,1,,,
+b2e55d3a54e00067d95030a7a126a9575e2c03ed,Add the new dep,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2020-12-08 12:03:15+00:00,0,2020-12-08 12:03:15+00:00,0,True,False,['setup.cfg'],['c07b95654c94b3cd13bcef2c9f0066a73e24463a'],0,1,1,1,,,
+61d922b69476921c3e3935da28af7d6cc46d7267,Add test coverage for relocs,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-08 19:40:21+00:00,0,2020-12-08 19:40:21+00:00,0,True,False,"['conftest.py', 'test_relocs.py', 'doom-fire.bin', 'doom-fire.elf']",['b2e55d3a54e00067d95030a7a126a9575e2c03ed'],0,48,48,4,1.0,1.0,0.6
+988a5e7776b7aa431dd8a5cf9e9ddc4458fa4a3c,Prep for v0.1.4,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-08 19:55:36+00:00,0,2020-12-08 19:55:36+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['5ebdebcfaa22613c130d04ce8b5c3dae82e78384'],2,12,14,4,,,
+1c61e321ecc1beb2170440d34b3dc7dd03e82470,Add version tool,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-08 20:15:47+00:00,0,2020-12-08 20:15:47+00:00,0,True,False,"['test_version.py', 'tox.ini', '__init__.py', 'version.py']",['988a5e7776b7aa431dd8a5cf9e9ddc4458fa4a3c'],2,32,34,4,0.9166666666666666,0.9166666666666666,1.0
+384ca2cfcd6d7dc2aca92c4ecb81c41d03b6a328,Cleanup version tool and test,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-08 20:59:05+00:00,0,2020-12-08 20:59:05+00:00,0,True,False,"['test_version.py', 'version.py']",['1c61e321ecc1beb2170440d34b3dc7dd03e82470'],5,1,6,2,,,
+1e5ad5fb35d535defe23e828d7973618a1c4f287,Add formatting for wildcard asset names,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-08 21:21:31+00:00,0,2020-12-08 21:21:31+00:00,0,True,False,"['test_packer_cli.py', 'assets_invalid_input.yml', 'assets_relative.yml', 'assets_wildcard_default.yml', 'assets_wildcard_format.yml', 'image.png', 'invalid.blah', 'level_01.tmx', 'level_02.tmx', 'palette.act', 'packer.py']",['b39ea6ef03e46b1cbd085efb8267563ec1f8d59f'],50,124,174,11,0.0,0.5714285714285714,0.0
+39da36f5ece41510335b02bf8b4f3dc3c83c53da,Prep for v0.2.0,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-08 21:50:19+00:00,0,2020-12-08 21:50:19+00:00,0,True,False,"['Makefile', 'README.md', 'CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py', 'metadata.py']",['8b07e9802c4911d251fb6696da789330a7c320fa'],27,166,193,7,,,
+bc14beb759fd6ee22dfc57342dad60543c38e4a5,Add file associations and category,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-11 20:06:41+00:00,0,2020-12-11 20:06:41+00:00,0,True,False,"['struct.py', 'metadata.py']",['39da36f5ece41510335b02bf8b4f3dc3c83c53da'],2,35,37,2,0.0,0.0,1.0
+565a65684e9bdd73afd07277e00a611965792eef,"Allow assets to have an array of options
+
+To generate multiple outputs from the same file, this is useful for fonts.",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2020-12-12 18:25:06+00:00,0,2020-12-12 18:25:06+00:00,0,True,False,['packer.py'],['39da36f5ece41510335b02bf8b4f3dc3c83c53da'],3,8,11,1,0.0,0.0,1.0
+7cb6ad9b19d129b5ad8a6cb24d7dc6413b9ddcf3,Test multi-output assets,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2020-12-13 14:02:45+00:00,0,2020-12-13 14:08:23+00:00,0,True,False,"['test_packer_cli.py', 'assets_multi_out.yml']",['565a65684e9bdd73afd07277e00a611965792eef'],0,33,33,2,0.0,1.0,0.0
+b65c3c698e8661075f733b276d0dc81d2e82126d,Ensure RST is flushed to device before closing,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-17 17:09:31+00:00,0,2020-12-17 17:09:31+00:00,0,True,False,['flasher.py'],['39da36f5ece41510335b02bf8b4f3dc3c83c53da'],1,5,6,1,0.75,1.0,0.0
+3e10d503e22f65b5a4b2dff2d8f37a9a278a44dd,RLE-ish variant of packed sprites,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2020-12-17 23:36:25+00:00,0,2020-12-17 23:36:25+00:00,0,True,False,"['image.py', 'struct.py']",['39da36f5ece41510335b02bf8b4f3dc3c83c53da'],2,44,46,2,0.0,0.0,1.0
+64e913bc3ecb0c56965412ad2061f157a4ad9356,Support 32blit flash filename.blit,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-18 09:44:47+00:00,0,2020-12-18 09:44:47+00:00,0,True,False,['__init__.py'],['39da36f5ece41510335b02bf8b4f3dc3c83c53da'],5,8,13,1,0.0,0.0,1.0
+51ce4e8db4d7f022e00c5061eed62ba1c8e7f9b4,Improve break_even,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2020-12-18 12:31:54+00:00,0,2020-12-18 12:31:54+00:00,0,True,False,['image.py'],['3e10d503e22f65b5a4b2dff2d8f37a9a278a44dd'],3,2,5,1,1.0,1.0,0.0
+ec9ecaf46d09aa57bf0c9a072b41db6db2791202,Remove whitespace,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-18 23:00:32+00:00,0,2020-12-18 23:00:32+00:00,0,True,False,['image.py'],['9de4c3660209eda57146766a69ce5909d2a6db1d'],1,1,2,1,,,
+3c90e527c72f18828c56ab70f8de7260d76c6ee1,Prep for v0.3.0,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-18 23:01:44+00:00,0,2020-12-18 23:01:44+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['ec9ecaf46d09aa57bf0c9a072b41db6db2791202'],2,16,18,4,,,
+9a404778467b411f4ea5bf3a88b8a387aaef211f,"Fix 32blit thing.blit
+
+It did the same thing as `32blit flash thing.blit` instead of saving to SD (like it used to do)",Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2020-12-19 10:33:48+00:00,0,2020-12-19 10:33:48+00:00,0,True,False,['__init__.py'],['3c90e527c72f18828c56ab70f8de7260d76c6ee1'],1,1,2,1,,,
+e2ed0630a1124a37e5370197b2e728747ccef6fd,Minor linting tweak,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-21 20:02:09+00:00,0,2020-12-21 20:02:09+00:00,0,True,False,['struct.py'],['50d063a0685d7c137b98cbe7e3e79266da6da061'],1,1,2,1,,,
+e426cc137eaf405e3ea02061674a7831b167d621,Prep for v0.3.1,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2020-12-21 20:08:36+00:00,0,2020-12-21 20:08:36+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['e2ed0630a1124a37e5370197b2e728747ccef6fd'],2,12,14,4,,,
+5846efff2b79c33a9141f7ca3f531233de79cd0c,"Handle multiple sets of options in the CMake tool
+
+Missed in #52",Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2020-12-30 16:21:22+00:00,0,2020-12-30 16:21:22+00:00,0,True,False,['cmake.py'],['e426cc137eaf405e3ea02061674a7831b167d621'],3,9,12,1,0.0,0.0,1.0
+7615860a86ecaaab878809cd4d456bf19f62494e,"Allow a user specified port with no VID/PID info
+
+Happens with WSL.",Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2020-12-31 15:35:38+00:00,0,2020-12-31 15:35:38+00:00,0,True,False,['flasher.py'],['e426cc137eaf405e3ea02061674a7831b167d621'],0,4,4,1,1.0,0.0,1.0
+f8bf9479cee2748d0f39a69db74d42200613b91a,Add URL field from @Daft-Freak patch,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-02 11:32:01+00:00,0,2021-01-02 11:32:01+00:00,0,True,False,['struct.py'],['bc14beb759fd6ee22dfc57342dad60543c38e4a5'],0,2,2,1,,,
+4cd071b958f2274dc9f1c6cb6547d2ddb44100a1,Test cmake multi output,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-02 11:50:48+00:00,0,2021-01-02 11:50:48+00:00,0,True,False,['test_cmake.py'],['40e005e6c1befc7e0b1e56ec8125838cbc480f37'],0,18,18,1,1.0,1.0,0.0
+72ce8f2b9b371bb1f6c6c12bff583c9f94bd88bb,Fix whitespace,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-02 11:50:59+00:00,0,2021-01-02 11:50:59+00:00,0,True,False,['flasher.py'],['4cd071b958f2274dc9f1c6cb6547d2ddb44100a1'],1,1,2,1,,,
+593165e40b8dad11696f51f8266132a85be3675f,"Metadata tests include URL, use resources",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-02 12:33:50+00:00,0,2021-01-02 12:33:50+00:00,0,True,False,"['test_metadata.py', 'metadata-basic.yml', 'metadata-file-associations.yml', 'no-icon.png', 'no-image.png']",['f8bf9479cee2748d0f39a69db74d42200613b91a'],34,41,75,5,1.0,0.0,0.0
+eb30ae85d4541c16a9fd7a94e7de5bede447f254,Flesh out URL support in metadata,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-02 12:35:49+00:00,0,2021-01-02 12:35:49+00:00,0,True,False,"['struct.py', 'metadata.py']",['593165e40b8dad11696f51f8266132a85be3675f'],4,10,14,2,0.0,0.0,1.0
+63197878c2196726296f4c1a326f030a291a8c87,Add working path support to build icns,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-02 12:36:46+00:00,0,2021-01-02 12:36:46+00:00,0,True,False,['metadata.py'],['eb30ae85d4541c16a9fd7a94e7de5bede447f254'],2,4,6,1,0.0,1.0,0.0
+6c4559d42aca9712533802bd476fe166ab929eef,Add cmake test resources,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-02 12:37:15+00:00,0,2021-01-02 12:37:15+00:00,0,True,False,"['assets_multi_out.yml', 'image.png']",['72ce8f2b9b371bb1f6c6c12bff583c9f94bd88bb'],0,2,2,2,,,
+ebac3f74dc224a0147c82fbc6293d83948839d45,Prep for v0.3.2,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-02 12:53:42+00:00,0,2021-01-02 12:53:42+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['6c4559d42aca9712533802bd476fe166ab929eef'],2,14,16,4,,,
+d1faba19d10a87ab04dcb1615beaa1a9a88f0b76,Prep for v0.4.0,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-02 16:59:52+00:00,0,2021-01-02 16:59:52+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['6e41857d6ee3b3fd6dc3cf87ba83aec932b4c320'],2,18,20,4,,,
+48ed2056e59a64f5786fd61d6304d70d07b4c5a5,Ignore IDEA project and venv,Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2020-12-28 19:27:08+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,['.gitignore'],['d1faba19d10a87ab04dcb1615beaa1a9a88f0b76'],0,2,2,1,,,
+a2288757724bce227e28e48cadf25db1f408274f,"Re-arrange the package structure
+
+Moves OutputFormat and AssetBuilder into the asset subpackage. Moves
+Implementations into formatters and builders respectively. Makes the
+minimal code changes required to for everything to work.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-01 08:03:19+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,"['test_image_cli.py', 'test_map.py', 'test_map_cli.py', 'test_raw.py', 'test_setup.py', '__init__.py', 'builder.py', '__init__.py', 'font.py', 'image.py', 'map.py', 'raw.py', 'formatter.py', '__init__.py', 'c.py', 'raw.py', 'metadata.py', 'packer.py']",['48ed2056e59a64f5786fd61d6304d70d07b4c5a5'],86,97,183,18,,,
+fade5c9fe058a9885d1ecfc27810853e2ad1d767,"Remove unnecessary code
+
+ - Methods which only call the superclass
+ - Duplicated operations
+ - Let __str__ fall back to __repr__",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-01 08:29:49+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,"['font.py', 'raw.py', 'formatter.py', 'c.py', 'raw.py']",['a2288757724bce227e28e48cadf25db1f408274f'],17,0,17,5,0.0,0.0,0.0
+47bcf8ef4ba43fb3543d0597dcb1bdb972e73b74,"Rewrite C code generator
+
+This adds wrapping and basic indentation to generated initializers
+and hopefully makes the code easier to read too.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-01 08:35:01+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,['c.py'],['fade5c9fe058a9885d1ecfc27810853e2ad1d767'],35,40,75,1,0.0,0.0,0.6666666666666666
+756dfff0708c293434879586df0c9fd0a7752057,"Remove the build() method of OutputFormat
+
+Instead, just make output() return the dict of component fragments.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-01 10:06:36+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,"['builder.py', 'formatter.py', 'c.py']",['47bcf8ef4ba43fb3543d0597dcb1bdb972e73b74'],14,11,25,3,0.0,0.0,1.0
+48a54acf1f6b28164fcf665774ba22e37d893a58,"Clean-up formatters
+
+ - Rename output() to fragments()
+ - Make arguments less wordy
+ - Reverse symbol and data arguments
+
+The symbol name is on the left-hand side of a declaration, so make
+it the left-most argument.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-01 10:50:49+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,"['builder.py', 'formatter.py', 'c.py', 'raw.py']",['756dfff0708c293434879586df0c9fd0a7752057'],19,21,40,4,,,1.0
+cc7d72deafbc2e78ba17d274dc65a83661286d83,"Make output formatters instances of OutputFormat
+
+... rather than being subclasses. Formatters are implemented by
+defining static functions and decorating them. The new formatter
+takes its name from the decorated function, and attributes are
+passed to the decorator.
+
+The decorator registers the function with the base class, so that
+formatters can be looked up by name or by extension.
+
+This is inspired by the @property decorator.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-01 10:32:06+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,"['builder.py', 'formatter.py', 'c.py', 'raw.py', 'tool.py', 'cmake.py', 'packer.py']",['48a54acf1f6b28164fcf665774ba22e37d893a58'],132,140,272,7,1.0,1.0,0.7058823529411765
+d2db808fa41d39d4fcea5791c9627b282fd1dd52,"Make all formatters have components
+
+Formatters which only generate a single file and use the supplied
+filename directly should have components=(None, ). The OutputFormat
+decorator sets this value by default if no components are supplied.
+
+This also makes join() functions handle all components at the same
+and return a dict, the same way fragments() functions do.
+
+This will allow the removal of a lot of special-case code that tries
+to handle the different return types of formatters.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-02 11:56:18+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,"['formatter.py', 'c.py', 'raw.py', 'tool.py']",['cc7d72deafbc2e78ba17d274dc65a83661286d83'],21,20,41,4,,,1.0
+4d11268799a0905449faee120a60bdbd3c4dac8b,"Implement AssetWriter
+
+This class represents the process of turning a collection of assets
+into a set of output files. To use it, you create an instance, add
+(symbol, data) pairs, and then when you are finished, call write().
+
+This replaces the Tool.output() method, and the entire AssetTarget
+class. It also handles guessing the output format from the path.
+
+It has some extra features the others don't. It can sort the assets
+before writing, and it can generate a report detailing the assets
+and files it generated.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-02 15:20:44+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,"['test_packer_cli.py', 'builder.py', 'writer.py', 'tool.py', 'cmake.py', 'packer.py']",['d2db808fa41d39d4fcea5791c9627b282fd1dd52'],117,89,206,6,0.0,0.0,0.0
+468ec101d654e8498dcf79f16ac067564d8e9b82,"Only handle lists in join()
+
+Now that all formatting is controlled by AssetWriter there is no
+reason for OutputFormat.join() to deal with individual objects.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-02 16:27:50+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,"['c.py', 'raw.py']",['4d11268799a0905449faee120a60bdbd3c4dac8b'],7,2,9,2,0.0,0.0,0.6
+addda072758a803e0b6c007807bf88a1e59df54f,"Rename OutputFormat to AssetFormatter
+
+This is for consistency with the package layout.
+
+Note: you may notice there is no Asset class. That's because an
+asset is simply a byte string bound to a symbol name. As such, it
+can be represented by a tuple.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-02 16:47:18+00:00,0,2021-01-02 17:23:39+00:00,0,True,False,"['builder.py', 'formatter.py', 'c.py', 'raw.py', 'writer.py', 'cmake.py']",['468ec101d654e8498dcf79f16ac067564d8e9b82'],16,16,32,6,,,
+c1b8aaac1eff4c95032b4b795d05e72ca5ff34d2,"Use importlib.import_module() to load implementations
+
+load_module() will happily load a module multiple times, which has
+no side effects for formatters, but will cause problems with builders
+later. import_module() will only load a module once.
+
+Also, no need to bind the imported module to a name.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-05 19:10:24+00:00,0,2021-01-05 19:21:53+00:00,0,True,False,['formatter.py'],['addda072758a803e0b6c007807bf88a1e59df54f'],1,2,3,1,,,
+a862eb2a4f326639ed7cca16ad5a228629d97fb0,"Put the right path into the ImageAsset
+
+If we adjusted the path, pass the adjusted one into ImageAsset options.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-07 08:23:42+00:00,0,2021-01-12 19:39:35+00:00,0,True,False,['metadata.py'],['e0bbe191705e19b3763687b33e16aa68235d4215'],2,2,4,1,,,
+ef91bb5f770410da838c01c24e8d68311ba91a81,"Fix transparent colour palette update
+
+When adding a transparent colour to the palette, self.transparent
+was set to the last palette entry, ie the most recently added colour,
+but this was done before adding the new colour. Meaning the wrong
+colour was set transparent.
+
+Also remove redundant check that no transparent colour exists.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-10 11:13:04+00:00,0,2021-01-12 19:39:35+00:00,0,True,False,['palette.py'],['a862eb2a4f326639ed7cca16ad5a228629d97fb0'],4,3,7,1,,,
+2ff859601f1629e5147acb6ec0f11ff3f3e1aa78,"Split out RLE code into functions and re-implement with a generator
+
+This splits the RLE code into two functions. One to count repetitions
+and the other to build the RLE'd bytes. Note that the repeat count
+includes the initial instance, ie 1 means the value appeared once.
+This is different to the binary representation, where repeat count
+of 1 means the value appears twice in the output. This is necessary
+in order to make the for loop work.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-04 07:05:55+00:00,0,2021-01-12 19:39:35+00:00,0,True,False,['image.py'],['ef91bb5f770410da838c01c24e8d68311ba91a81'],28,38,66,1,1.0,1.0,1.0
+825a8e08d38b04e91523ee4bb5c2ca1bf716241e,"Use textwrap.dedent to clean up formatting in cmake tool
+
+Also adds indentation to the output and switches to the cleaner
+write_text() instead of open() and write().
+
+It also slightly tweaks the usage in C formatter to be in-line
+with standard practices for formatting this type of code.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-12 16:39:34+00:00,0,2021-01-12 19:48:32+00:00,0,True,False,"['c.py', 'cmake.py']",['2ff859601f1629e5147acb6ec0f11ff3f3e1aa78'],27,46,73,2,0.125,0.125,0.875
+3bc5d2fca6d3129c515c018f921b3be91925ed2e,"Remove get_general_options()
+
+This code does nothing, and is duplicated in two places.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-12 16:45:26+00:00,0,2021-01-12 19:49:30+00:00,0,True,False,"['cmake.py', 'packer.py']",['825a8e08d38b04e91523ee4bb5c2ca1bf716241e'],22,0,22,2,0.125,0.125,0.0
+02f9a51731b470f87852f8e155b0a416e3812d45,"Move Tool.prepare() into AssetTool
+
+This method is not used outside of AssetTool and subclasses.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-12 18:56:42+00:00,0,2021-01-12 19:49:30+00:00,0,True,False,"['builder.py', 'tool.py']",['3bc5d2fca6d3129c515c018f921b3be91925ed2e'],8,5,13,2,0.0,0.0,0.0
+c256e2ddd085ecc34e070affffbeeeb2a3365083,"Only check for a config argument once
+
+Tidies up cmake and packer initialization a bit. Note that this code
+is duplicated between the two. That will be refactored out later.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-12 19:35:35+00:00,0,2021-01-12 19:49:30+00:00,0,True,False,"['cmake.py', 'packer.py']",['02f9a51731b470f87852f8e155b0a416e3812d45'],9,5,14,2,1.0,1.0,0.0
+b19f68f03b30eed1957bfaed67a5b501ace2b533,"Move common code from CMake and Packer into Tool
+
+Moves the YAML loading and working/output path setup into Tool. This
+code is identical between the two classes, except for Packer being
+able to accept a list of files on the CLI.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-12 21:56:53+00:00,0,2021-01-13 00:22:27+00:00,0,True,False,"['tool.py', 'cmake.py', 'packer.py']",['c256e2ddd085ecc34e070affffbeeeb2a3365083'],55,26,81,3,1.0,0.7727272727272727,0.0
+5fed6b376d16a1cc190187c08640453bb711ad7b,"Workaround coveralls 422 errors
+
+Upstream issue described here:
+
+https://github.com/TheKevJames/coveralls-python/issues/252
+
+Sicne that bug is still in progress it is likely this will need to be
+revisited in the future.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-13 12:10:20+00:00,0,2021-01-13 12:22:38+00:00,0,True,False,['test.yml'],['b19f68f03b30eed1957bfaed67a5b501ace2b533'],2,2,4,1,,,
+13a6ca627a4c2744b1e412ca74103cf6d3999b26,"Fix the raw_binary joiner
+
+This function slipped through the refactoring because it isn't used
+in any of the tests or examples. Rename the argument to ""fragments""
+for consistency, and fetch the data to be joined from the None key
+because this joiner only produces one output file and doesn't add a
+suffix to it.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-13 23:51:24+00:00,0,2021-01-13 23:51:24+00:00,0,True,False,['raw.py'],['5fed6b376d16a1cc190187c08640453bb711ad7b'],2,2,4,1,,,
+88220dc590e1a24f4458ee3cff5a044e6b8b7fae,"Add a general test for AssetFormatters
+
+This tests all declared formatters automatically. It checks that
+they produce the components that they declare, ie
+
+    result.keys() == formatter.components
+
+It does not check the content of the fragments, but will catch
+completely broken formatters.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-14 11:39:17+00:00,0,2021-01-14 11:50:11+00:00,0,True,False,['test_asset.py'],['13a6ca627a4c2744b1e412ca74103cf6d3999b26'],0,16,16,1,1.0,1.0,1.0
+9abf91da9171431c0067ac8052795dcecb49a0c4,"Make Metadata use the generic config loader
+
+Use the method introduced in b19f68f. There is no need to check for
+missing keys, as it is done again later.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-20 01:20:34+00:00,0,2021-01-20 04:07:29+00:00,0,True,False,['metadata.py'],['88220dc590e1a24f4458ee3cff5a044e6b8b7fae'],26,7,33,1,0.42857142857142855,0.42857142857142855,0.0
+bd6608fb9f2cbecc13c7c29809990a4d7786a813,Clean up Metadata parsing and printing code,Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-20 04:29:56+00:00,0,2021-01-20 04:29:56+00:00,0,True,False,['metadata.py'],['9abf91da9171431c0067ac8052795dcecb49a0c4'],22,15,37,1,1.0,1.0,0.0
+3ac98ab9002ed064f7df6b7ae0cb67d660ab5832,"Fix metadata dump
+
+This function previously only supported PK and RW type images. That
+code is rewritten in two lines. The RL implementation is a bit more
+complex however.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-20 10:29:25+00:00,0,2021-01-20 10:29:25+00:00,0,True,False,['metadata.py'],['bd6608fb9f2cbecc13c7c29809990a4d7786a813'],16,18,34,1,0.0,1.0,1.0
+85b7d7fdb7621c020f380b8a21dc9a825b36e528,Remap and struct options for tmx maps,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-26 11:59:56+00:00,0,2021-01-26 11:59:56+00:00,0,True,False,"['test_map.py', 'map.py', 'raw.py']",['1f341c85e861089b571a1c052e4c874739badb78'],17,86,103,3,0.5454545454545454,1.0,1.0
+97467bf3086edf74d6001f413999a8c2daefc07c,Add empty tile ID to struct,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-26 12:29:20+00:00,0,2021-01-26 12:29:20+00:00,0,True,False,"['test_map.py', 'map.py']",['85b7d7fdb7621c020f380b8a21dc9a825b36e528'],2,2,4,2,,,
+111ff4f05300f4021968810d5327305c194ea39a,Add test for sorted map layers,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-26 14:31:51+00:00,0,2021-01-26 14:31:51+00:00,0,True,False,['test_map.py'],['97467bf3086edf74d6001f413999a8c2daefc07c'],0,24,24,1,0.0,1.0,1.0
+3d7409dc236e8a0e4823a1448e01fd58c78f4d85,Sort map layers,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-26 14:32:00+00:00,0,2021-01-26 14:32:00+00:00,0,True,False,['map.py'],['111ff4f05300f4021968810d5327305c194ea39a'],2,4,6,1,0.0,1.0,1.0
+a3dde927fcba4415506a635e5e6998233df6bab8,Prep for v0.5.0,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-01-26 15:09:08+00:00,0,2021-01-26 15:09:08+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['ce8fc64868a94a7b77e57447abc66155b92e2028'],2,24,26,4,,,
+db0f57a189cd68b9c8327ad8dc561b6d12d7d034,Move quantize_image into Palette class,Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-21 08:47:16+00:00,0,2021-01-27 01:14:49+00:00,0,True,False,"['image.py', 'palette.py']",['a3dde927fcba4415506a635e5e6998233df6bab8'],17,17,34,2,0.0,1.0,0.0
+ecc5f6c862ec48073cf62190f3124781b3133a38,"Refactor image packing code into a Construct Adapter
+
+This allows using parse() and build() directly on 8 bit indexed
+pixels, without having to worry about the packing format. Just set
+type to None or leave it out entirely and ImageCompressor will
+select the best mode. Or specify a mode, and ImageCompressor will
+use it.
+
+In order to make this work the image struct had to be cleaned up a
+little, and the parsed object representation is a bit different.
+Most of the information is now nested under 'data' which calculates
+the size field internally (and it is no longer exposed) and the
+thing that used to be called 'data' is now 'data.pixels'.
+
+This also brings together code that was spread around into a single
+module, core.compression.
+
+Also adds tests specifically targeting the parsing code.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-21 11:12:10+00:00,0,2021-01-27 01:14:49+00:00,0,True,False,"['test_image_struct.py', 'image.py', 'compression.py', 'palette.py', 'struct.py', 'metadata.py']",['db0f57a189cd68b9c8327ad8dc561b6d12d7d034'],123,185,308,6,1.0,1.0,0.027777777777777776
+8e089226d081229e89fe80d628a853d354fd89f2,"Clean up Palette code and add some tests
+
+Removes some unused code, simplifies tostruct(), and tests that
+get_entry() does the right thing with and without strict mode.
+
+Also adds an __iter__ method to Palette, which is not actually
+used, but is just added for completeness.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-23 00:17:06+00:00,0,2021-01-27 22:20:23+00:00,0,True,False,"['test_palette.py', 'palette.py']",['ecc5f6c862ec48073cf62190f3124781b3133a38'],23,71,94,2,0.0,1.0,1.0
+85be59a61bce792b17a6019ba010ade5d65f7de3,"Auto-register all Tools and load them dynamically
+
+This makes all Tools get loaded dynamically, without having to load
+individually import each one and add them to the argparse machinery.
+
+The typemap for builders is extended with a boolean value for each
+filename extension. If true, the builder is registered as the default
+handler for this extension. This is to prevent clashes where multiple
+builders can handle the same filetype, eg tiles and raw.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-10 18:18:34+00:00,0,2021-01-27 22:20:40+00:00,0,True,False,"['__init__.py', 'builder.py', 'font.py', 'image.py', 'map.py', 'raw.py', 'tool.py', 'packer.py']",['8e089226d081229e89fe80d628a853d354fd89f2'],58,91,149,8,1.0,1.0,1.0
+a218843b7c027e2d75fd6b175e9bc374ef13592c,"Split AssetBuilder into two classes
+
+AssetTool now contains all the argument parsing code. It is pretty much
+the same as the old AssetBuilder except without any code to convert
+assets. The new AssetBuilder class has all of that, and is now static
+code and instances, like AssetWriter.
+
+This is still quite messy, but the two halves can now be refactored
+independently.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-07 08:34:11+00:00,0,2021-01-27 22:20:40+00:00,0,True,False,"['test_map.py', 'test_raw.py', 'builder.py', 'font.py', 'image.py', 'map.py', 'raw.py', 'metadata.py', 'packer.py']",['85be59a61bce792b17a6019ba010ade5d65f7de3'],269,333,602,9,0.5428571428571428,0.9714285714285714,0.0
+161f2b79a2402d709ee1c86de515fdac17d14ab8,"Make Tools call AssetBuilders directly
+
+...instead of going through the AssetTool interface. This works by
+unpacking the options dicts directly to keyword arguments. Default
+arguments are added to the builders to account for cases where the
+matching options are missing from the dict.
+
+Implements a function to construct symbol names, rather than having
+a different implementation in Packer and AssetTool.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-10 10:09:24+00:00,0,2021-01-27 22:21:49+00:00,0,True,False,"['builder.py', 'font.py', 'image.py', 'metadata.py', 'packer.py']",['a218843b7c027e2d75fd6b175e9bc374ef13592c'],48,56,104,5,0.0,1.0,0.0
+e8da36fb1f7a7f0edb6ded354afd1246a6095a48,"Make AssetSource into a function
+
+This removes a tonne of argument parsing code.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-10 16:35:18+00:00,0,2021-01-27 22:21:54+00:00,0,True,False,"['test_packer_cli.py', 'metadata.py', 'packer.py']",['161f2b79a2402d709ee1c86de515fdac17d14ab8'],42,29,71,3,0.0,0.0,0.0
+0ee52a940e44051e29c74f4d6bd297619aacc473,"Make packer only use AssetBuilders, not AssetTools
+
+This removes the final pieces of code that directly call into argparse
+objects.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-10 17:07:45+00:00,0,2021-01-27 22:21:54+00:00,0,True,False,"['builder.py', 'packer.py']",['e8da36fb1f7a7f0edb6ded354afd1246a6095a48'],34,18,52,2,0.2222222222222222,0.2222222222222222,0.2222222222222222
+dd20a77a252b072ab06d1834a70552f4c4349d35,"Remove build() and prepare_options() methods of AssetTool
+
+Since tools are no longer called externally, these methods are
+redundant.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-10 22:35:31+00:00,0,2021-01-27 22:21:54+00:00,0,True,False,['builder.py'],['0ee52a940e44051e29c74f4d6bd297619aacc473'],29,2,31,1,0.0,0.8823529411764706,0.0
+7164f9e1ca0a0bec87d4d67ab5eee5df267c52fb,"Handle type specified in packer yaml
+
+This is done by unpacking and repacking the file_opts during the
+function call.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-27 11:42:11+00:00,0,2021-01-27 22:21:54+00:00,0,True,False,"['font.py', 'packer.py']",['dd20a77a252b072ab06d1834a70552f4c4349d35'],14,7,21,2,1.0,1.0,1.0
+6d0260fd3cd3d8ff5b2b6493b4a51b532a9837b5,"Separate serial code into a re-usable library
+
+This still needs more work to tidy up the logging and progress bar
+code, much of which is still in the wrong place.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2020-12-23 01:32:17+00:00,0,2021-01-27 22:21:54+00:00,0,True,False,"['blitserial.py', 'flasher.py']",['7164f9e1ca0a0bec87d4d67ab5eee5df267c52fb'],158,198,356,2,1.0,1.0,1.0
+0daca126ed76d0b4cc51007123f2736923b09083,"Port to click
+
+This ports all commands to click for argument parsing and updates
+all tests so that they continue to work. This has to be done in
+one step as the new and old systems can't really co-exist.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-27 14:02:52+00:00,0,2021-01-29 02:12:03+00:00,0,True,False,"['setup.cfg', 'conftest.py', 'test_cmake.py', 'test_image_cli.py', 'test_map.py', 'test_map_cli.py', 'test_metadata.py', 'test_packer_cli.py', 'test_raw.py', 'test_relocs.py', 'test_setup.py', 'test_version.py', '__init__.py', 'builder.py', 'font.py', 'image.py', 'map.py', 'raw.py', 'blitserial.py', 'palette.py', 'yamlloader.py', 'cmake.py', 'flasher.py', 'metadata.py', 'packer.py', 'relocs.py', 'version.py']",['6d0260fd3cd3d8ff5b2b6493b4a51b532a9837b5'],921,503,1424,27,0.4942084942084942,0.10038610038610038,0.0
+d310a157672f7f8cc586cef0199c24ca2f1aabba,Move test files into one resources dir,Phil Howard,phil@gadgetoid.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-27 20:22:28+00:00,0,2021-01-29 02:12:03+00:00,0,True,False,"['conftest.py', 'assets_invalid_input.yml', 'assets_multi_out.yml', 'assets_relative.yml', 'assets_wildcard_default.yml', 'assets_wildcard_format.yml', 'doom-fire.bin', 'doom-fire.elf', 'image.png', 'invalid.blah', 'level_01.tmx', 'level_02.tmx', 'metadata-basic.yml', 'metadata-file-associations.yml', 'no-icon.png', 'no-image.png', 'palette.act', 'assets_multi_out.yml', 'image.png']",['0daca126ed76d0b4cc51007123f2736923b09083'],3,1,4,19,,,
+85a3eb74feaccfb63b3cce2d83e7a002c879d49e,"Add install command and help for flash commands
+
+This is a smarter version of `flash flash` and `flash sd`. If no
+destination is specified, .blit files are written to flash, and
+all others are written to the root of the SD card. If a destination
+is specified, then all files are written to that directory on the
+SD card.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-01-29 19:09:48+00:00,0,2021-01-30 07:17:25+00:00,0,True,False,"['__init__.py', 'blitserial.py', 'flasher.py']",['d310a157672f7f8cc586cef0199c24ca2f1aabba'],15,33,48,3,1.0,1.0,0.0
+f2cc99e4767e5f409b739faea661f9ee8647becc,Allow --port option to come before or after flash subcommand,Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-02-01 18:57:52+00:00,0,2021-02-04 12:45:11+00:00,0,True,False,['flasher.py'],['85a3eb74feaccfb63b3cce2d83e7a002c879d49e'],3,9,12,1,1.0,1.0,0.0
+cae28d2d1eaf0b1d41f8cc99319f4e10e41dbdad,"Correctly handle components (None, ) in CMake tool
+
+Fixes #69",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-02-06 15:41:33+00:00,0,2021-02-06 15:41:33+00:00,0,True,False,['cmake.py'],['f2cc99e4767e5f409b739faea661f9ee8647becc'],4,4,8,1,,,
+20e207c12db16966d3d185ac8951f23b58b4859b,"Allow ""auto"" as a port
+
+It must be the first port specified. Any other ports will be ignored.
+This is the bare minimum needed for ""make flash"" to work.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2021-02-09 17:07:04+00:00,0,2021-02-09 17:07:04+00:00,0,True,False,['flasher.py'],['cae28d2d1eaf0b1d41f8cc99319f4e10e41dbdad'],1,1,2,1,,,
+94fdfc0f3a1b8a0fa10c7aa76584cf03c240f0c7,Prep for v0.6.0,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-02-10 17:19:02+00:00,0,2021-02-10 17:19:17+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['f72aecacdaa21a0a19f33b8b6d19cde16990071a'],2,16,18,4,,,
+22a997de82ab55ce2bf8f0081646677d1893a97d,"Set minimum version number
+
+If click is not fixed to a minimum version number it has the potential to crash the 32blit tool when executed resulting in a broken build of a 32blit game.",LordEidi,lordeidi@swordlord.com,GitHub,noreply@github.com,2021-02-11 20:48:23+01:00,-3600,2021-02-11 20:48:23+01:00,-3600,True,False,['setup.cfg'],['94fdfc0f3a1b8a0fa10c7aa76584cf03c240f0c7'],1,1,2,1,,,
+deb11a221c7dbd14ff2f377413d2558d8c4b447e,Add launch command,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-02-18 17:35:24+00:00,0,2021-02-18 17:35:24+00:00,0,True,False,"['__init__.py', 'blitserial.py', 'flasher.py']",['94fdfc0f3a1b8a0fa10c7aa76584cf03c240f0c7'],1,13,14,3,1.0,1.0,1.0
+fa886293cc67d38f5d3f8fba46677f408f77de62,Stop sending files if an error is sent back,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-02-18 17:46:56+00:00,0,2021-02-18 17:46:56+00:00,0,True,False,['blitserial.py'],['deb11a221c7dbd14ff2f377413d2558d8c4b447e'],0,5,5,1,0.0,1.0,0.0
+b13b711e6ea18b7830ebeea3ba8922bb0085bf6b,Add a launch flag to install,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-02-18 17:48:51+00:00,0,2021-02-18 17:48:51+00:00,0,True,False,"['blitserial.py', 'flasher.py']",['fa886293cc67d38f5d3f8fba46677f408f77de62'],3,22,25,2,0.0,0.0,0.0
+c02e6574a117310b48aad189e94ccc9e861cf046,Include URL and category in the CMake output,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-02-18 18:15:27+00:00,0,2021-02-18 18:31:57+00:00,0,True,False,"['test_cmake.py', 'cmake.py']",['94fdfc0f3a1b8a0fa10c7aa76584cf03c240f0c7'],0,9,9,2,0.0,0.25,1.0
+99ea4b1bf865b54c323e450301f56389393ea7b9,"Support for 16bit tmx tile indexes, replaces #74
+
+Adds support for TMX tile indexes that are greater than 255 tiles, this means 8x8 tile size sprite sheets greater than 128x128 in size can be used and the right tile IDs will be output, rather than throwing an error.
+
+The data output is still uint8_t so a `TMX` struct that treats the layer data as `uint16_t` is required.
+
+16bit tile data is currently for **advanced** users only, and will not work with `Map` or `TileMap` which both assume 8bit indexes.",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-02-22 13:17:56+00:00,0,2021-02-22 13:28:59+00:00,0,True,False,"['test_map.py', 'map.py']",['cf704dd5ba98bec728b23686d2e4de7e1485cee5'],11,47,58,2,0.5217391304347826,0.0,0.5217391304347826
+fb9948596d4d71d21ceee9564156b4a1e33cc67c,Prep for v0.6.1,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-02-22 15:30:52+00:00,0,2021-02-22 15:30:52+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['b21d1e22e8d4eb5bac9dfffdf43ec20e36e2fb0a'],2,18,20,4,,,
+310a21a4d6c929910f5f85e7701b35ed30af2247,Fix build badge,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-02-22 15:38:30+00:00,0,2021-02-22 15:38:30+00:00,0,True,False,"['README.md', 'README.md']",['fb9948596d4d71d21ceee9564156b4a1e33cc67c'],2,2,4,2,,,
+0bfe070a6ce35c68944ecddf02de4a191a6c9a06,Mask out the transform bits from Tiled,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-02-23 12:02:05+00:00,0,2021-02-23 12:31:59+00:00,0,True,False,['map.py'],['310a21a4d6c929910f5f85e7701b35ed30af2247'],1,2,3,1,,,
+8fa80b4ec988e3c7fd6833cd46e23a44f2e18a82,Output tile transforms,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-02-23 12:34:43+00:00,0,2021-02-23 12:34:43+00:00,0,True,False,['map.py'],['0bfe070a6ce35c68944ecddf02de4a191a6c9a06'],4,9,13,1,0.0,0.0,0.0
+cdf19b71c6dcd13e01ec993cfec4d8964377362d,Escape quotes in metadata in CMake tool,Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2021-03-10 14:28:29+00:00,0,2021-03-10 14:28:29+00:00,0,True,False,['cmake.py'],['310a21a4d6c929910f5f85e7701b35ed30af2247'],3,9,12,1,0.0,0.0,1.0
+a2c926a17d609441d26dc4ccad020f63f8841e7d,"Test python 3.8, fix some QA errors",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-03-18 10:07:41+00:00,0,2021-03-18 10:07:41+00:00,0,True,False,"['tox.ini', 'map.py', 'blitserial.py']",['a129c2463367260c163ef61f491f2e42f64fc070'],3,3,6,3,,,
+c3df8573b18ffed39d497e6eb1501b9006134275,"Bail if no valid input files found, for #66
+
+This change will cause the asset builder to bail early if no valid input files are found.
+
+Files are filtered based on whether they actually exist and the target will bail early if it has missing sources.
+
+Note: since glob is open-ended it will fail if it finds nothing, but can't offer any guarantee it'll find what a user expects.",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-03-18 10:07:55+00:00,0,2021-03-18 10:23:17+00:00,0,True,False,"['assets_file_missing.yml', 'assets_one_file_missing.yml', 'test_packer_cli.py', 'packer.py']",['a2c926a17d609441d26dc4ccad020f63f8841e7d'],2,37,39,4,0.0,0.8888888888888888,0.8888888888888888
+e6d7bfb46e0060a77a0171e4ccbb3f850a980693,"New map struct, only output transforms if there are any
+
+... or always in the non-struct case",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-03-26 14:43:24+00:00,0,2021-03-26 14:43:24+00:00,0,True,False,['map.py'],['8fa80b4ec988e3c7fd6833cd46e23a44f2e18a82'],1,15,16,1,0.0,0.0,0.0
+93793b5c8e3c827010c3789c9e37996d7673a864,Fix tests,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-04-12 14:50:55+01:00,-3600,2021-04-12 14:50:55+01:00,-3600,True,False,['test_map.py'],['e6d7bfb46e0060a77a0171e4ccbb3f850a980693'],5,5,10,1,,,
+516b3331c1eb0dd36a2bc6e5620496d8c5ffadf8,Restore logging config,Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2021-05-21 12:01:38+01:00,-3600,2021-05-21 12:01:38+01:00,-3600,True,False,['__init__.py'],['a39719abb99f97c862bc83350917a6c1e8385b96'],2,8,10,1,1.0,1.0,1.0
+f9c65a70daf9326457531d72794284cc8933e695,"Add basic project setup tool
+
+Grabs the boilerplate and customises it a little",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-05-21 12:08:26+01:00,-3600,2021-05-21 20:04:55+01:00,-3600,True,False,"['__init__.py', 'setup.py']",['a520a742450c8da97f88f6c0ce74ac0038093e02'],0,53,53,2,0.0,1.0,0.0
+6ad411311e8864033b0dfcb8f6e053bf80f99603,Attempt to verify the evnironment before setup prompts,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-05-21 12:09:20+01:00,-3600,2021-05-21 20:04:55+01:00,-3600,True,False,['setup.py'],['f9c65a70daf9326457531d72794284cc8933e695'],1,39,40,1,0.0,0.0,0.0
+45ef4bb08b20e64b1ae15438d1773772f36f1adf,Actually install the sdk,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-05-21 12:24:06+01:00,-3600,2021-05-21 20:04:55+01:00,-3600,True,False,['setup.py'],['6ad411311e8864033b0dfcb8f6e053bf80f99603'],2,12,14,1,1.0,1.0,1.0
+87e71ad65454ecf14842308e7141baa74c222848,Optionally generate VS code config,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-05-21 12:35:09+01:00,-3600,2021-05-21 20:04:55+01:00,-3600,True,False,['setup.py'],['45ef4bb08b20e64b1ae15438d1773772f36f1adf'],1,29,30,1,0.0,1.0,0.9090909090909091
+23419fc076b9d60f829bd362a51d55d1edae94e0,"Optionally generate VS config
+
+Yay, repetition",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-05-21 12:49:46+01:00,-3600,2021-05-21 20:04:55+01:00,-3600,True,False,['setup.py'],['87e71ad65454ecf14842308e7141baa74c222848'],1,77,78,1,0.0,0.6081081081081081,0.972972972972973
+5ecd5935db9ed4edb45fa84854dc9ba9163be6f9,Fix some windows path issues,Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daft.games,2021-05-21 16:00:21+01:00,-3600,2021-05-23 17:32:58+01:00,-3600,True,False,['setup.py'],['23419fc076b9d60f829bd362a51d55d1edae94e0'],6,11,17,1,0.75,0.75,0.0
+c4d0eff2fa4f222115bda31ab255ba90bdb29218,Fix windows paths in generated VS Code config,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-05-24 15:26:59+01:00,-3600,2021-05-24 15:26:59+01:00,-3600,True,False,['setup.py'],['5ecd5935db9ed4edb45fa84854dc9ba9163be6f9'],2,2,4,1,,,
+7d16254a30f2aa0422d0402c5017de452e8e1b49,"Test that generated configs parse
+
+Usually because a windows path isn't escaped right",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-05-24 15:27:59+01:00,-3600,2021-05-24 15:27:59+01:00,-3600,True,False,['test_setup.py'],['c4d0eff2fa4f222115bda31ab255ba90bdb29218'],0,39,39,1,1.0,1.0,1.0
+a704f566e1dec35ead94404a7deb34ff2972d010,Add test for Setup tool,Phil Howard,phil@gadgetoid.com,Charlie Birks,charlie@daft.games,2021-05-24 14:23:12+01:00,-3600,2021-05-24 15:32:11+01:00,-3600,True,False,['test-setup.yml'],['7d16254a30f2aa0422d0402c5017de452e8e1b49'],0,61,61,1,,,
+e867fa4915858a570db4438b6e5a55c502b4a74b,Extra feed back at the end,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-05-24 15:42:07+01:00,-3600,2021-05-24 15:42:07+01:00,-3600,True,False,['setup.py'],['a704f566e1dec35ead94404a7deb34ff2972d010'],1,5,6,1,0.0,0.0,0.0
+8e5dc982d662e4418d6bdd913c641add677da49f,"Find the VS provided Arm toolchain
+
+This is enough to find all the tools if you're running in a developer command prompt.",Charlie Birks,charlie@daftgames.net,Charlie Birks,charlie@daft.games,2021-05-24 15:48:50+01:00,-3600,2021-05-24 16:01:57+01:00,-3600,True,False,['setup.py'],['e867fa4915858a570db4438b6e5a55c502b4a74b'],4,12,16,1,0.0,0.0,0.0
+3a97fcd207437ece61755165e3e2fcce59864990,Prep for v0.7.0,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-05-26 15:20:37+01:00,-3600,2021-05-26 15:20:37+01:00,-3600,True,False,"['CHANGELOG.txt', 'setup.cfg', '__init__.py']",['8f520e780322c1063e62cbd3acf3706c54b09902'],2,10,12,3,,,
+3b5d9514c4082cd8540ec0cbb4b779976a456d9b,"Move freetype import
+
+Pip is annoyingly bad at installing the wheel with the freetype library
+on both macOS and Windows. Move the import so that you can at least use
+the other tools.",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2020-11-30 20:24:18+00:00,0,2021-06-07 15:17:44+01:00,-3600,True,False,['font.py'],['3a97fcd207437ece61755165e3e2fcce59864990'],1,2,3,1,0.0,0.0,0.0
+7ef3cbe7715af2aa99546049082d5a8f70fc6ab5,"Add an image font test
+
+There were no font tests, now there is one",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-06-07 16:00:52+01:00,-3600,2021-06-07 16:00:52+01:00,-3600,True,False,"['8x8font.png', 'test_font.py']",['3b5d9514c4082cd8540ec0cbb4b779976a456d9b'],0,21,21,2,0.0,1.0,1.0
+7da77ec18372846f2fdaeb20719ea91316e51ab2,"Handle more image font layouts
+
+Multiple rows",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-06-07 16:07:10+01:00,-3600,2021-06-07 16:07:10+01:00,-3600,True,False,"['8x8font_rows.png', 'test_font.py', 'font.py']",['7ef3cbe7715af2aa99546049082d5a8f70fc6ab5'],5,33,38,3,0.0,0.7619047619047619,0.7619047619047619
+1389ae5b67e515d9e5f365e529738c1f8fcd57fc,"Remove bonus ()
+
+Didn't forget what language I was writing...",Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2021-06-07 18:04:42+01:00,-3600,2021-06-07 18:04:42+01:00,-3600,True,False,['test_font.py'],['7da77ec18372846f2fdaeb20719ea91316e51ab2'],4,4,8,1,,,
+8e7511c8cf052c120f7dffb361a4041565ece6e1,"Fix GIMP palette handling and add test
+
+Fixes:
+- unix line endings
+- Name/Columns headers
+- comments
+- values seperated by spaces
+- entries with no label
+
+Can now successfully read everything I have in /usr/share/gimp/2.0/palettes",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-06-07 19:24:04+01:00,-3600,2021-06-07 20:35:32+01:00,-3600,True,False,"['test_palette.py', 'palette.py']",['3a97fcd207437ece61755165e3e2fcce59864990'],3,30,33,2,1.0,1.0,0.8823529411764706
+fef86035afabd7c9b4bdef9809f4ea342cd786b2,Cleanup unused methods in Metadata,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-06-07 17:57:19+01:00,-3600,2021-06-07 20:36:40+01:00,-3600,True,False,['metadata.py'],['3a97fcd207437ece61755165e3e2fcce59864990'],6,0,6,1,0.0,0.0,0.0
+4943f51fef751baa239742dca7144bbdacb7204f,Cleanup unused icns helper,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-06-07 19:45:07+01:00,-3600,2021-06-07 20:36:40+01:00,-3600,True,False,['struct.py'],['fef86035afabd7c9b4bdef9809f4ea342cd786b2'],9,0,9,1,0.0,0.0,0.0
+ea7ac2183baf1ce6110ea9155dce3f449cb9ebd0,Remove print(ports) in flash_cli,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-06-07 19:55:11+01:00,-3600,2021-06-07 20:36:40+01:00,-3600,True,False,['flasher.py'],['4943f51fef751baa239742dca7144bbdacb7204f'],1,0,1,1,0.0,0.0,0.0
+19f82c6ae39d2a99755d6d359d4d62aba6ffafe4,"Remove reset-to-firmware code
+
+No longer necessary... or possible. Also, the recommended `install` command was already not doing it",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-06-07 20:00:24+01:00,-3600,2021-06-07 20:36:40+01:00,-3600,True,False,"['blitserial.py', 'flasher.py']",['ea7ac2183baf1ce6110ea9155dce3f449cb9ebd0'],28,0,28,2,0.0,0.0,0.3076923076923077
+ab04aea354a6858a8236296a7c0fc2ef9d0339ab,Move import,Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2021-06-07 20:39:42+01:00,-3600,2021-06-07 20:39:42+01:00,-3600,True,False,['test_palette.py'],['8e7511c8cf052c120f7dffb361a4041565ece6e1'],3,3,6,1,0.0,1.0,1.0
+9e1c158ba724476f136cfb0de7c76eefa4cbac52,Add DFU tool,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-06-14 10:26:07+01:00,-3600,2021-06-14 12:05:29+01:00,-3600,True,False,"['test_dfu_cli.py', '__init__.py', 'dfu.py', 'dfu.py']",['3a97fcd207437ece61755165e3e2fcce59864990'],0,272,272,4,0.5681818181818182,1.0,0.8181818181818182
+200598a5eddace7348498b5bc929b24af3f2224f,Fix coverage badge,Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2021-06-15 14:55:15+01:00,-3600,2021-06-15 14:55:15+01:00,-3600,True,False,['README.md'],['018a62e33f2498e3db65c67b79035e599ae7129f'],1,1,2,1,,,
+fb39d1d4a4044ba0c01c8969a6d9a693d7a1bc39,"Test python 3.9, fix linting issues",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-06-14 10:27:45+01:00,-3600,2021-06-15 15:57:23+01:00,-3600,True,False,"['test_setup.py', 'tox.ini', '__init__.py', 'map.py', 'setup.py']",['9e1c158ba724476f136cfb0de7c76eefa4cbac52'],10,17,27,5,,,
+4f3cbec79fcee137690e53c13342220f427f7f4f,"Add filename to flasher output
+
+Add the filename after ""Flashing"" so that it's clear what file is being processed if you, for example, run:
+
+`for f in examples/*/*.blit; do 32blit install $f; done`
+
+Rename the input stream ""file"" to ""input_file"" so it doesn't shadow the ""file"" Pathlib in the outer scope.",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-06-15 16:58:01+01:00,-3600,2021-06-15 16:58:01+01:00,-3600,True,False,['blitserial.py'],['4cf623e026d68f5c9074f0f04bb9da81f4fa5f0c'],3,3,6,1,,,
+d15acd0d4365071da3afba31cc1a69919aafe90f,Add test for setup cli,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-06-15 17:19:11+01:00,-3600,2021-06-15 17:32:27+01:00,-3600,True,False,"['test.yml', '32blit.toolchain', 'test_setup_cli.py']",['4cf623e026d68f5c9074f0f04bb9da81f4fa5f0c'],0,41,41,3,0.15789473684210525,1.0,1.0
+22500545312a89b265ab7969c980adf80841d496,Remove unused imports,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-10-07 14:35:55+01:00,-3600,2021-10-07 14:35:55+01:00,-3600,True,False,"['blitserial.py', 'struct.py', 'metadata.py']",['1d5ee6846768ed0b3fb1c72b1a2ffa3c3e7eaad8'],4,0,4,3,,,
+3c0c728edc21b71dc20e740b4361537445bb61d9,"Tweak tests
+
+Fix a few linting errors.
+
+Move the inline binary blobs in test_font into .bin files in test_resources.",Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-10-07 14:36:22+01:00,-3600,2021-10-07 14:36:22+01:00,-3600,True,False,"['8x8font.bin', '8x8font_rows.bin', 'test_dfu_cli.py', 'test_font.py', 'test_palette.py', 'test_setup_cli.py']",['22500545312a89b265ab7969c980adf80841d496'],33,8,41,6,1.0,0.0,0.0
+32b8529838db69365a958e5b984197668cf1909b,Prep for v0.7.1,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2021-10-07 15:02:38+01:00,-3600,2021-10-07 15:02:38+01:00,-3600,True,False,"['CHANGELOG.txt', 'setup.cfg', '__init__.py']",['018b869e1ab7785fc1042172489fdf0b6e7d0c98'],2,13,15,3,,,
+2910ba884a8065ac109263a146646598eed4a16d,"Add references to the GOT from ITCM code to the reloc list
+
+Now ITCM code that references variables works.",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-11-28 20:54:15+00:00,0,2021-11-29 11:59:59+00:00,0,True,False,['relocs.py'],['32b8529838db69365a958e5b984197668cf1909b'],1,26,27,1,0.0,0.0,0.0
+553a8d7531754550c3967838f0f8f4b95b4da1ac,"Add the addresses in long calls from ITCM to flash to the reloc list
+
+This depends on the veneers being one 32-bit instruction followed by the address.",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-11-28 22:44:21+00:00,0,2021-11-29 11:59:59+00:00,0,True,False,['relocs.py'],['2910ba884a8065ac109263a146646598eed4a16d'],0,29,29,1,0.0,0.0,0.0
+625beab9756274ce923d62d166a3a96a2e32d9b6,"Add ITCM reloc test
+
+The executable here just prints a message repeatedly",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-12-01 10:41:13+00:00,0,2021-12-01 10:41:13+00:00,0,True,False,"['itcm-test.bin', 'itcm-test.elf', 'test_relocs.py']",['553a8d7531754550c3967838f0f8f4b95b4da1ac'],0,27,27,3,1.0,1.0,0.5263157894736842
+e62c711e4141372b6d5600acfb2fe375f979b02d,Prep for v0.7.2,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2022-01-27 14:01:25+00:00,0,2022-01-27 14:01:25+00:00,0,True,False,"['test-setup.yml', 'CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py', 'relocs.py']",['60363615a8c42e69044f0eb55816240b5d5f3cfc'],7,36,43,6,,,
+4e2b1155ca74481ad8781de607e72d2cd8b84c65,Validate metadata image sizes,Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2022-02-17 15:17:09+00:00,0,2022-02-17 15:17:09+00:00,0,True,False,['metadata.py'],['e62c711e4141372b6d5600acfb2fe375f979b02d'],8,16,24,1,0.0,0.0,0.0
+e72fd94c97b0ffa26e4df5b464ae856b11fa6d50,Split metadata dumping to a function,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2022-02-19 19:56:37+00:00,0,2022-02-19 19:56:37+00:00,0,True,False,['metadata.py'],['4e2b1155ca74481ad8781de607e72d2cd8b84c65'],32,35,67,1,0.0,0.0,0.0
+e399009eafd09c9df9e731ec58f7f98d8f30c355,"Validate the metadata if we have --config but not --file
+
+Instead of allowing it and doing nothing",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2022-02-19 20:02:35+00:00,0,2022-02-19 20:02:35+00:00,0,True,False,['metadata.py'],['e72fd94c97b0ffa26e4df5b464ae856b11fa6d50'],3,3,6,1,,,
+ac1b8886547a5591dcbac0d9f93b59e2d67b5bae,"Add an invalid splash test
+
+Also tests validating without --file",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2022-02-19 20:08:47+00:00,0,2022-02-19 20:08:47+00:00,0,True,False,"['metadata-invalid-splash.yml', 'test_metadata.py']",['e399009eafd09c9df9e731ec58f7f98d8f30c355'],0,17,17,2,1.0,1.0,1.0
+c68b9ab98a5212ec406ce251c8fd896e07b212ca,"Test metadata dump
+
+I just changed it and it has no coverage... I'll be good and add some :)",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2022-02-19 20:23:01+00:00,0,2022-02-19 20:31:18+00:00,0,True,False,"['doom-fire.blit', 'test_metadata.py']",['ac1b8886547a5591dcbac0d9f93b59e2d67b5bae'],0,8,8,2,1.0,1.0,1.0
+eb8551470ba3cb082c3162b00c0fb11bdf76e0f5,Add option to generate a source file with pico binary info,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2022-02-20 14:33:20+00:00,0,2022-06-02 12:36:53+01:00,-3600,True,False,"['test_metadata.py', 'struct.py', 'metadata.py']",['7ec4b88d1ab892d0cc578d439c34d9c22ff8062f'],16,81,97,3,0.2727272727272727,0.9090909090909091,0.06818181818181818
+2c76dd025c0baa67ad82444ee2bb01d97c7aca00,"Set break_on_hyphens=False to optimise C output
+
+Causes `TextWrapper.fill` to use a simpler regex, speeding up big arrays a bit.
+
+Makes a clean debug build of the voxel example ~1 second faster (from a ~18s single-threaded build)",Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2022-08-30 17:08:18+01:00,-3600,2022-08-30 17:08:18+01:00,-3600,True,False,['c.py'],['7ec4b88d1ab892d0cc578d439c34d9c22ff8062f'],1,1,2,1,,,
+0cb51030641c31abe91e9a1e40719429333de9e3,Support outputting a standalone metadata file,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2021-05-27 23:37:53+01:00,-3600,2022-09-09 22:15:05+01:00,-3600,True,False,['metadata.py'],['2209fbcc2bd64a8cea7d4370bf47f5affc9d774a'],4,15,19,1,0.0,0.0,0.0
+fbed258be3f75009fc1e6d507f579ac97af6b8d3,Standalone metadata test,Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2022-09-09 22:21:07+01:00,-3600,2022-09-09 22:21:07+01:00,-3600,True,False,['test_metadata.py'],['0cb51030641c31abe91e9a1e40719429333de9e3'],0,17,17,1,1.0,1.0,0.25
+d69670554a392e327dbe622703ab0b3b9c9e2852,"Add a test for dumping images from metadata
+
+Coveralls made me do it.",Charlie Birks,charlie@daft.games,Charlie Birks,charlie@daft.games,2022-09-09 23:24:59+01:00,-3600,2022-09-09 23:24:59+01:00,-3600,True,False,['test_metadata.py'],['fbed258be3f75009fc1e6d507f579ac97af6b8d3'],0,15,15,1,1.0,1.0,1.0
+a36122fd2bc68f76e61e38b1877ecad601179b4c,Prep for v0.7.3,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2023-01-13 12:22:56+00:00,0,2023-01-13 12:22:56+00:00,0,True,False,"['CHANGELOG.txt', 'README.md', 'setup.cfg', '__init__.py']",['9b128523da1b92ec171fd7ba127d4fb1ed2208dd'],2,18,20,4,,,
+3c316c0b38b4a54c7201483203eebae672ede2e0,"Use pytest instead of py.test
+
+Apparently `py.test` is no longer a supported way of referring to
+the pytest module.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2023-03-05 01:41:07+00:00,0,2023-03-05 01:41:07+00:00,0,True,False,['tox.ini'],['a36122fd2bc68f76e61e38b1877ecad601179b4c'],1,1,2,1,,,
+e2e3ecfb6b6c336c7006527794f8950d58eeee62,"Test all extant Python versions
+
+""3.10"" needs quotes, otherwise it becomes 3.1.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2023-03-06 20:41:46+00:00,0,2023-03-07 00:41:59+00:00,0,True,False,['test.yml'],['3c316c0b38b4a54c7201483203eebae672ede2e0'],1,1,2,1,,,
+78513797676875773d880f8b1ab55726d755670c,"Fix bug when deleting from flash
+
+The terminating null should be sent after the offset. Sending it before
+causes the offset to be 256x too big, because it is little endian.
+
+Also adds a log message, not shown by default.",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2023-03-05 01:06:33+00:00,0,2023-03-08 14:26:51+00:00,0,True,False,['blitserial.py'],['fe28b55feb97e7437210c89904762adac4fbb1fa'],1,3,4,1,1.0,1.0,1.0
+aaf9331dd744a66b3b47b262116660f1f10bddb4,"Use ""self.port"" instead of ""serial.port"" in error message",Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2023-03-06 22:25:29+00:00,0,2023-03-08 14:26:51+00:00,0,True,False,['blitserial.py'],['78513797676875773d880f8b1ab55726d755670c'],1,1,2,1,,,
+2d46a29e486f6585245372f923f3112c884b5ec8,Add unit tests for BlitSerial,Alistair Buxton,a.j.buxton@gmail.com,Alistair Buxton,a.j.buxton@gmail.com,2023-03-07 00:36:34+00:00,0,2023-03-08 14:34:29+00:00,0,True,False,['test_blitserial.py'],['aaf9331dd744a66b3b47b262116660f1f10bddb4'],0,185,185,1,0.4728682170542636,1.0,0.9689922480620154
+8943efd071c27de9226ceb5dd7ee6ac809d2be3c,Fix the build badge,Charlie Birks,charlie@daft.games,GitHub,noreply@github.com,2023-03-10 14:37:58+00:00,0,2023-03-10 14:37:58+00:00,0,True,False,['README.md'],['fe28b55feb97e7437210c89904762adac4fbb1fa'],1,1,2,1,,,
+87857a27d57cf0bd898c81ea4a17cdf08c3fa181,Fix README build badge.,Phil Howard,phil@gadgetoid.com,Phil Howard,phil@gadgetoid.com,2023-05-17 14:02:34+01:00,-3600,2023-05-17 14:02:34+01:00,-3600,True,False,['README.md'],['ae1782baeca0d47a09565ff9d72ea1c9e439bf15'],1,1,2,1,,,

@@ -1,0 +1,861 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+60a629607394e5e9eb7e2585928953b51268c8ea,initial commit,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-01 15:20:00+01:00,-3600,2021-12-01 15:20:00+01:00,-3600,True,False,"['.gitignore', 'settings.json', 'LICENSE', 'MANIFEST.in', 'README.md', '__init__.py', 'about.py', 'colorizer.py', 'component.py', 'constants.py', 'data_classes.py', 'getters.py', '__init__.py', 'da.py', 'emoji.py', 'en.py', 'no.py', 'se.py', 'da_lexicon_v1.csv', 'emoji_v1.json', 'en_lexicon_v1.txt', 'no_lexicon_v1.txt', 'se_lexicon_v1.txt', '__init__.py', 'test_getters.py', 'test_lexicon.py', 'util.py', 'visualize.py', 'asent_tutorial.ipynb', 'demo.py', 'da_v1.md', 'emoji_v1.md', 'no_v1.md', 'se_v1.md', 'emoji_sentiment_creator.py', 'emoji_utf8_lexicon.txt', 'Makefile', 'index.rst', 'requirements.txt', 'requirements.txt', 'setup.py']",[],0,28605,28605,41,0.4583333333333333,0.8119047619047619,0.7833333333333333
+c3df15bbffb7a7d0e93056287be40e6d9c2b267a,rm vscode,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-01 15:31:28+01:00,-3600,2021-12-01 15:31:28+01:00,-3600,True,False,"['.gitignore', 'settings.json']",['60a629607394e5e9eb7e2585928953b51268c8ea'],9,2,11,2,,,
+9da18bb0c41d1c40391fed3db6de82a5e749d8fb,Getted tests to work,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-04 19:16:06+01:00,-3600,2021-12-04 19:16:06+01:00,-3600,True,False,"['README.md', '__init__.py', 'component.py', 'data_classes.py', 'getters.py', 'da.py', 'emoji.py', 'en.py', 'no.py', 'se.py', 'test_getters.py', 'utils.py', 'settings.json']",['c3df15bbffb7a7d0e93056287be40e6d9c2b267a'],152,355,507,13,0.0,0.4225352112676056,0.0
+955116db945bf6d983c2530db814bbbb4a609dbe,initial workflow push,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 11:33:00+01:00,-3600,2021-12-05 11:33:00+01:00,-3600,True,False,"['01_bugs.md', '02_docs.md', '03_feature-request.md', 'config.yml', 'documentation.yml', 'publish_to_pypi.yml', 'pytest-cov-comment.yml', 'pytest_mac_catalina.yml', 'about.py', 'setup.py']",['9da18bb0c41d1c40391fed3db6de82a5e749d8fb'],2,198,200,10,,,
+a3206520d96c61e5ed3abb42851712c280360434,added coverage run,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 12:08:51+01:00,-3600,2021-12-05 12:08:51+01:00,-3600,True,False,['run_coverage.py'],['955116db945bf6d983c2530db814bbbb4a609dbe'],0,36,36,1,,,
+705204c19f776bc04c4c3785936d3d135e917016,updated requirements,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 12:09:04+01:00,-3600,2021-12-05 12:09:04+01:00,-3600,True,False,"['requirements.txt', 'setup.py']",['a3206520d96c61e5ed3abb42851712c280360434'],3,3,6,2,,,
+1f0058bf6a5fbdbc55b13e98f11e17263c83cb8d,removed test from coverage,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 12:09:19+01:00,-3600,2021-12-05 12:09:19+01:00,-3600,True,False,['.coveragerc'],['705204c19f776bc04c4c3785936d3d135e917016'],0,3,3,1,,,
+79f381a73ded190b321cafad913aad273c1a1ce8,Addded logo to readme,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 12:09:34+01:00,-3600,2021-12-05 12:09:34+01:00,-3600,True,False,"['README.md', 'logo_dark.png', 'logo_red_font.png']",['1f0058bf6a5fbdbc55b13e98f11e17263c83cb8d'],4,51,55,3,,,
+6df97b92696af1c2318ebbff618c6c2b7311c55a,first readme update,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 12:23:25+01:00,-3600,2021-12-05 12:23:25+01:00,-3600,True,False,['README.md'],['79f381a73ded190b321cafad913aad273c1a1ce8'],34,9,43,1,,,
+fb90cd3e1975910515354a7194db102e4f69dda7,updated requirements,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 12:43:17+01:00,-3600,2021-12-05 12:43:17+01:00,-3600,True,False,['requirements.txt'],['6df97b92696af1c2318ebbff618c6c2b7311c55a'],0,15,15,1,,,
+7ace6da38a93be8bb1b9bddfa597e4c526b8b06f,fixed ignored,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 13:43:57+01:00,-3600,2021-12-05 13:43:57+01:00,-3600,True,False,['.gitignore'],['fb90cd3e1975910515354a7194db102e4f69dda7'],2,16,18,1,,,
+0ec82c10ed510435005db1d06a77f5ae3ebac7d0,updated readme moving more to docs,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 14:59:07+01:00,-3600,2021-12-05 14:59:07+01:00,-3600,True,False,['README.md'],['7ace6da38a93be8bb1b9bddfa597e4c526b8b06f'],15,0,15,1,,,
+f9e545996ba4c45e07f9081d4852880413a50e19,bumped version id,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 14:59:22+01:00,-3600,2021-12-05 14:59:22+01:00,-3600,True,False,['about.py'],['0ec82c10ed510435005db1d06a77f5ae3ebac7d0'],1,1,2,1,,,
+f0dcae15bafe825a20693203791a640293c0d2f8,updated readme w. cit info,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 14:59:34+01:00,-3600,2021-12-05 14:59:34+01:00,-3600,True,False,['README.md'],['f9e545996ba4c45e07f9081d4852880413a50e19'],62,10,72,1,,,
+9a5cddfd689066844fd82f2f0e48d7dfd5b94707,cleaning up the repo,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 14:59:52+01:00,-3600,2021-12-05 14:59:52+01:00,-3600,True,False,"['colorizer.py', 'asent_tutorial.ipynb']",['f0dcae15bafe825a20693203791a640293c0d2f8'],264,0,264,2,0.6470588235294118,0.0,0.0
+9869ffeba65337b18f9bfbf73b105252d5cf7fa2,Initial documentation commit,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 15:00:11+01:00,-3600,2021-12-05 15:00:11+01:00,-3600,True,False,"['favicon.ico', 'icon.png', 'icon_dark.png', 'asent.component.rst', 'asent.data_classes.rst', 'asent.getters.rst', 'asent.utils.rst', 'asent.visualize.rst', 'conf.py', 'customizing.rst', 'faq.rst', 'icon.png', 'logo_black_font.png', 'index.rst', 'installation.rst', 'introduction.rst', 'lang.danish.rst', 'lang.emoji.rst', 'lang.english.rst', 'lang.norwegian.rst', 'lang.swedish.rst', 'model_workings.rst', 'news.rst', 'introduction.ipynb']",['9a5cddfd689066844fd82f2f0e48d7dfd5b94707'],21,362,383,24,,,
+ea8576e4296965f932eca39865e986c31771314f,simplified tests,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 15:03:29+01:00,-3600,2021-12-05 15:03:29+01:00,-3600,True,False,['pytest_mac_catalina.yml'],['9869ffeba65337b18f9bfbf73b105252d5cf7fa2'],26,0,26,1,,,
+5e99b7303e82e88c0770c1b97e345e2ed3ea00ff,added matplotlib to requirements,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 15:33:39+01:00,-3600,2021-12-05 15:33:39+01:00,-3600,True,False,"['requirements.txt', 'setup.py']",['ea8576e4296965f932eca39865e986c31771314f'],1,2,3,2,,,
+e7ba6163c8f20cf7603f6628c22b067ccca820ed,General update of documentation,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 15:33:55+01:00,-3600,2021-12-05 15:33:55+01:00,-3600,True,False,"['about.py', 'component.py', 'constants.py', 'data_classes.py', 'getters.py', 'visualize.py', 'asent.component.rst', 'asent.data_classes.rst', 'asent.getters.rst', 'asent.utils.rst', 'asent.visualize.rst', 'index.rst']",['5e99b7303e82e88c0770c1b97e345e2ed3ea00ff'],47,71,118,12,0.0,0.6923076923076923,0.6923076923076923
+cf63c47305f361a3feda662ffa4a35f971a447fe,updated code quality,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 15:39:23+01:00,-3600,2021-12-05 15:39:23+01:00,-3600,True,False,"['getters.py', 'da.py', 'utils.py']",['e7ba6163c8f20cf7603f6628c22b067ccca820ed'],12,5,17,3,0.3333333333333333,0.0,0.3333333333333333
+a5f6d7657ae8a74f0a2ac8c4d82ca2236916a29c,fixed logo not rendering,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 15:41:06+01:00,-3600,2021-12-05 15:41:06+01:00,-3600,True,False,['README.md'],['cf63c47305f361a3feda662ffa4a35f971a447fe'],1,1,2,1,,,
+0beda60f7f3fb4fa24f15a14599a3a8c573415c8,resized logo,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 15:41:50+01:00,-3600,2021-12-05 15:41:50+01:00,-3600,True,False,['README.md'],['a5f6d7657ae8a74f0a2ac8c4d82ca2236916a29c'],1,1,2,1,,,
+7b091fd00d51c7dc8c3c86db46eeeb8ab083a58c,fixed pytest CI,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 18:01:03+01:00,-3600,2021-12-05 18:01:03+01:00,-3600,True,False,['pytest-cov-comment.yml'],['0beda60f7f3fb4fa24f15a14599a3a8c573415c8'],4,9,13,1,,,
+1390ab92480b949a7567d6ceb6af7cc160261581,fixed invalid CI,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 18:20:49+01:00,-3600,2021-12-05 18:20:49+01:00,-3600,True,False,['pytest-cov-comment.yml'],['7b091fd00d51c7dc8c3c86db46eeeb8ab083a58c'],1,1,2,1,,,
+dc7543e35540126b83ff45a96c5153795530c27e,fixed error in workflow,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 18:29:13+01:00,-3600,2021-12-05 18:29:13+01:00,-3600,True,False,['pytest-cov-comment.yml'],['1390ab92480b949a7567d6ceb6af7cc160261581'],2,5,7,1,,,
+c9ee67b58a88e388c2f12c04147538b8bce1eb86,updated toctree,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 18:30:58+01:00,-3600,2021-12-05 18:30:58+01:00,-3600,True,False,['index.rst'],['dc7543e35540126b83ff45a96c5153795530c27e'],1,1,2,1,,,
+13f817d925508d23b2a2cc7f6e9c07942a535a62,updating indexes,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 18:34:25+01:00,-3600,2021-12-05 18:34:25+01:00,-3600,True,False,['index.rst'],['c9ee67b58a88e388c2f12c04147538b8bce1eb86'],2,5,7,1,,,
+9ce8b56374f1a6e12f01af6f4cd7d89221b60674,excluded ubuntu py3.9 to avoid running it twice,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 18:35:12+01:00,-3600,2021-12-05 18:35:12+01:00,-3600,True,False,['pytest-cov-comment.yml'],['13f817d925508d23b2a2cc7f6e9c07942a535a62'],3,3,6,1,,,
+5015e2c0f71f517972870b288f11ed807f8bb3fb,fixed coverage badge,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 18:39:27+01:00,-3600,2021-12-05 18:39:27+01:00,-3600,True,False,"['pytest-cov-comment.yml', 'README.md']",['9ce8b56374f1a6e12f01af6f4cd7d89221b60674'],3,3,6,2,,,
+ed6f399ce0f8a4f8c149e3d08910b85c9fd5bfde,updated workflow,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 20:23:52+01:00,-3600,2021-12-05 20:23:52+01:00,-3600,True,False,['pytest-cov-comment.yml'],['5015e2c0f71f517972870b288f11ed807f8bb3fb'],1,1,2,1,,,
+1e1f8ac52ccff81f443a9d716993eba512424528,fixed cit,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 20:24:20+01:00,-3600,2021-12-05 20:24:20+01:00,-3600,True,False,['README.md'],['ed6f399ce0f8a4f8c149e3d08910b85c9fd5bfde'],1,1,2,1,,,
+d905b041d70a48791e5e35baca167eee0e5b3d52,updating readme,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 20:50:36+01:00,-3600,2021-12-05 20:50:36+01:00,-3600,True,False,['README.md'],['1e1f8ac52ccff81f443a9d716993eba512424528'],3,4,7,1,,,
+75b11c0981281be8bad21dfeeadca862070473a2,fixed workflow to correct secret name,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 20:56:15+01:00,-3600,2021-12-05 20:56:15+01:00,-3600,True,False,['pytest-cov-comment.yml'],['d905b041d70a48791e5e35baca167eee0e5b3d52'],1,1,2,1,,,
+07425c9ab0765c334eaf80b1b714d5291d70acf4,removed broken link,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 21:00:07+01:00,-3600,2021-12-05 21:00:07+01:00,-3600,True,False,['README.md'],['75b11c0981281be8bad21dfeeadca862070473a2'],2,2,4,1,,,
+f29dee72a6528730e7fa343058bac4d8609e07e4,added needed links,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-05 21:01:28+01:00,-3600,2021-12-05 21:01:28+01:00,-3600,True,False,['README.md'],['07425c9ab0765c334eaf80b1b714d5291d70acf4'],1,2,3,1,,,
+8045025c67dc8fcca1697d4e7b009695ae8fe599,minor fixes,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-06 09:40:08+01:00,-3600,2021-12-06 09:40:08+01:00,-3600,True,False,['README.md'],['f29dee72a6528730e7fa343058bac4d8609e07e4'],1,10,11,1,,,
+6a4bb17255deea66b5da97b927225c5e5a217591,formatted to black,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-06 22:47:42+01:00,-3600,2021-12-06 22:47:42+01:00,-3600,True,False,['visualize.py'],['8045025c67dc8fcca1697d4e7b009695ae8fe599'],3,9,12,1,0.0,1.0,1.0
+32f6d954bc429788d540c1dc79ec81b0cfd1b229,add images,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-25 15:38:56+01:00,-3600,2021-12-25 15:38:56+01:00,-3600,True,False,"['doc_polarity.png', 'token_polarity.png']",['6a4bb17255deea66b5da97b927225c5e5a217591'],0,0,0,2,,,
+8e07d9346d4c539db41baac2ac8bbc2b60d4e850,updated manifest.in,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-25 16:01:17+01:00,-3600,2021-12-25 16:01:17+01:00,-3600,True,False,"['MANIFEST.in', 'about.py']",['32f6d954bc429788d540c1dc79ec81b0cfd1b229'],4,4,8,2,,,
+4b07bb1eefe776282cb7bdfc3272dfcdfe3ceaa1,added an introduction,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-25 17:42:10+01:00,-3600,2021-12-25 17:42:10+01:00,-3600,True,False,['introduction.ipynb'],['8e07d9346d4c539db41baac2ac8bbc2b60d4e850'],0,329,329,1,,,
+63889e26613fe9122a9f736a16b850ea99b88e21,added model pred,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-25 17:46:19+01:00,-3600,2021-12-25 17:46:19+01:00,-3600,True,False,['model_pred.png'],['4b07bb1eefe776282cb7bdfc3272dfcdfe3ceaa1'],0,0,0,1,,,
+1f915f2526c601fe3b10191ca5f7dfb447980486,updated readme,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-25 17:49:58+01:00,-3600,2021-12-25 17:49:58+01:00,-3600,True,False,['README.md'],['63889e26613fe9122a9f736a16b850ea99b88e21'],4,8,12,1,,,
+974f1a02316640a3f437e48c99e490a7bea53220,added working introduction,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-25 17:50:14+01:00,-3600,2021-12-25 17:50:14+01:00,-3600,True,False,['introduction.ipynb'],['1f915f2526c601fe3b10191ca5f7dfb447980486'],15,15,30,1,,,
+0695b7d48b0573b961a54f1cbbb17376b46cd104,minor documentation tweak,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-25 17:50:26+01:00,-3600,2021-12-25 17:50:26+01:00,-3600,True,False,['getters.py'],['974f1a02316640a3f437e48c99e490a7bea53220'],2,1,3,1,1.0,0.0,0.0
+34b19b2015e549b7c1c08a22738f8f72cf73264a,updated manifest,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-25 18:03:35+01:00,-3600,2021-12-25 18:03:35+01:00,-3600,True,False,['MANIFEST.in'],['0695b7d48b0573b961a54f1cbbb17376b46cd104'],3,5,8,1,,,
+540259dea7a88d98ed0e4780fef1e9aaa1948cbb,added version id to init,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 00:59:36+01:00,-3600,2021-12-26 00:59:36+01:00,-3600,True,False,['__init__.py'],['34b19b2015e549b7c1c08a22738f8f72cf73264a'],3,5,8,1,,,
+83450b2bd784f6337e78741cd9792b87efd5d926,fixed name issue,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 01:00:24+01:00,-3600,2021-12-26 01:00:24+01:00,-3600,True,False,"['component.py', 'en.py', 'no.py', 'se.py', 'visualize.py']",['540259dea7a88d98ed0e4780fef1e9aaa1948cbb'],22,59,81,5,1.0,1.0,1.0
+2ee75949bbc25444f92eafd955a35460e8311f6b,fixed negation,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 01:00:45+01:00,-3600,2021-12-26 01:00:45+01:00,-3600,True,False,"['about.py', 'getters.py']",['83450b2bd784f6337e78741cd9792b87efd5d926'],16,12,28,2,1.0,1.0,0.4
+017d399865c9795a3ea40e1d7b559c33d0b9ffbf,added sv pred,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 10:49:01+01:00,-3600,2021-12-26 10:49:01+01:00,-3600,True,False,['model_pred_sv.png'],['2ee75949bbc25444f92eafd955a35460e8311f6b'],0,0,0,1,,,
+ba02d84d86f4a8dd63558ab69bda4b00c04b127a,another sv pred,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 10:53:50+01:00,-3600,2021-12-26 10:53:50+01:00,-3600,True,False,['model_pred_sv1.png'],['017d399865c9795a3ea40e1d7b559c33d0b9ffbf'],0,0,0,1,,,
+f0f023914e5bed847929dcb8d9e7aca8f6915a92,added tut img,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 10:56:37+01:00,-3600,2021-12-26 10:56:37+01:00,-3600,True,False,['dep_parse.png'],['ba02d84d86f4a8dd63558ab69bda4b00c04b127a'],0,0,0,1,,,
+a599f555efbe3db21cb609fe4009ee1a01696c3a,extensive documentation update,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 11:05:47+01:00,-3600,2021-12-26 11:05:47+01:00,-3600,True,False,"['conf.py', 'customizing.rst', 'faq.rst', 'Screenshot 2021-12-07 at 20.46.02.png', 'model_pred_sv2.png', 'index.rst', 'introduction.rst', 'index.rst', 'index.rst', 'lang.danish.rst', 'lang.emoji.rst', 'lang.english.rst', 'lang.norwegian.rst', 'lang.swedish.rst', 'customizing_your_pipeline.ipynb', 'introduction.ipynb']",['f0f023914e5bed847929dcb8d9e7aca8f6915a92'],86,1531,1617,16,,,
+84e16db0c98f82b3105e6e60ba546b7c0dc57d1a,update test to accomodate recent changes,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 11:06:19+01:00,-3600,2021-12-26 11:06:19+01:00,-3600,True,False,"['about.py', 'getters.py', 'test_getters.py']",['a599f555efbe3db21cb609fe4009ee1a01696c3a'],30,13,43,3,0.0,0.0,0.0
+c2f5ae6b93fd983c723317264c1cd9049be356b2,add sphinx design to doc req,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 11:06:31+01:00,-3600,2021-12-26 11:06:31+01:00,-3600,True,False,['requirements.txt'],['84e16db0c98f82b3105e6e60ba546b7c0dc57d1a'],1,2,3,1,,,
+99378cdcdf1efc5b63fbd30795907124cedb0e84,grammatical fixes to the documentation,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 11:13:27+01:00,-3600,2021-12-26 11:13:27+01:00,-3600,True,False,"['customizing.rst', 'customizing_your_pipeline.ipynb']",['c2f5ae6b93fd983c723317264c1cd9049be356b2'],16,16,32,2,,,
+d2d9715224f27b2c81208944161b41fed0382fb9,updated documentation,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 18:41:45+01:00,-3600,2021-12-26 18:41:45+01:00,-3600,True,False,['languages.rst'],['99378cdcdf1efc5b63fbd30795907124cedb0e84'],0,99,99,1,,,
+d1b7415c365b8ca3687ebd155dafcf16f1a5af89,updated documentation,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 18:41:54+01:00,-3600,2021-12-26 18:41:54+01:00,-3600,True,False,"['index.rst', 'index.rst', 'index.rst', 'lang.danish.rst', 'lang.emoji.rst', 'lang.english.rst', 'lang.norwegian.rst', 'lang.swedish.rst', 'news.rst', 'customizing_your_pipeline.ipynb']",['d2d9715224f27b2c81208944161b41fed0382fb9'],70,28,98,10,,,
+834551a5e967bd28c36dad3f6be3291e13b0880d,cleanup,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 18:44:09+01:00,-3600,2021-12-26 18:44:09+01:00,-3600,True,False,"['demo.py', 'da_v1.md', 'emoji_v1.md', 'no_v1.md', 'se_v1.md', 'settings.json']",['d1b7415c365b8ca3687ebd155dafcf16f1a5af89'],51,0,51,6,,,
+abcb7268bab05ba6c695d12ff18a0a668abf4c66,improved test suite,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 19:10:55+01:00,-3600,2021-12-26 19:10:55+01:00,-3600,True,False,"['test_components.py', 'test_getters.py', 'test_visualize.py']",['834551a5e967bd28c36dad3f6be3291e13b0880d'],35,93,128,3,0.875,1.0,0.1875
+a0fe9c41f0cffdd47ed99db10c40b619dcace2fe,updated test for wider coverage,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 19:20:39+01:00,-3600,2021-12-26 19:20:39+01:00,-3600,True,False,"['test_getters.py', 'requirements.txt']",['abcb7268bab05ba6c695d12ff18a0a668abf4c66'],3,4,7,2,,,
+20fe9b1ea70c98137044e86d614785671afd6e66,added black autoformat workflow,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 19:37:10+01:00,-3600,2021-12-26 19:37:10+01:00,-3600,True,False,['black_formatter.yml'],['a0fe9c41f0cffdd47ed99db10c40b619dcace2fe'],0,16,16,1,,,
+3710102500bbf085ea0c3879676b53e869d5f7a6,added force argument to components,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 19:38:44+01:00,-3600,2021-12-26 19:38:44+01:00,-3600,True,False,"['en.py', 'no.py', 'se.py']",['20fe9b1ea70c98137044e86d614785671afd6e66'],3,3,6,3,,,
+d6da09a4ec0eea41776e0f1c0e937a8bd0a4ac7b,added force arg to components,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 19:52:25+01:00,-3600,2021-12-26 19:52:25+01:00,-3600,True,False,"['en.py', 'no.py', 'se.py']",['3710102500bbf085ea0c3879676b53e869d5f7a6'],10,14,24,3,0.0,1.0,0.0
+a23bd9ab09e8fb8b7ff062d01cbe246bf7ec4722,renamed se to sv,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 19:52:36+01:00,-3600,2021-12-26 19:52:36+01:00,-3600,True,False,['sv_lexicon_v1.txt'],['d6da09a4ec0eea41776e0f1c0e937a8bd0a4ac7b'],0,0,0,1,,,
+90ad0b846ff7e6175d22ef6f19e4f8043aa0ff31,updated tests for wider coverage,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 19:52:48+01:00,-3600,2021-12-26 19:52:48+01:00,-3600,True,False,"['test_components.py', 'test_getters.py']",['a23bd9ab09e8fb8b7ff062d01cbe246bf7ec4722'],12,12,24,2,0.16666666666666666,0.0,0.16666666666666666
+12ada341fd20aa2a8e4dad1cd9acfabe7e9c61d0,updated black  workflow,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 20:07:58+01:00,-3600,2021-12-26 20:07:58+01:00,-3600,True,False,['black_formatter.yml'],['90ad0b846ff7e6175d22ef6f19e4f8043aa0ff31'],13,8,21,1,,,
+deedeb2e297d2342ba958288b09ae0c0803c306e,fixed tests,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 21:04:58+01:00,-3600,2021-12-26 21:04:58+01:00,-3600,True,False,"['getters.py', 'test_getters.py']",['12ada341fd20aa2a8e4dad1cd9acfabe7e9c61d0'],8,7,15,2,1.0,0.0,1.0
+314c7f3230a158ab75e6bd267eabe88e75ccbf9a,updated requirements,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 21:34:57+01:00,-3600,2021-12-26 21:34:57+01:00,-3600,True,False,['requirements.txt'],['deedeb2e297d2342ba958288b09ae0c0803c306e'],1,2,3,1,,,
+8e2722840c70f2bd3cdb123fd83caca186120fa8,formatted to black 🕶,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 21:35:20+01:00,-3600,2021-12-26 21:35:20+01:00,-3600,True,False,"['about.py', 'constants.py', 'data_classes.py', 'getters.py', '__init__.py', 'da.py', 'emoji.py', 'en.py', 'no.py', 'se.py', 'test_lexicon.py', 'visualize.py', 'emoji_sentiment_creator.py', 'run_coverage.py', 'conf.py']",['314c7f3230a158ab75e6bd267eabe88e75ccbf9a'],41,58,99,15,0.0,1.0,0.3333333333333333
+2b0c6881098c999b7788d7d83e9f1ad8b99a7ae4,added test to data classes,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 21:48:10+01:00,-3600,2021-12-26 21:48:10+01:00,-3600,True,False,['test_data_classes.py'],['8e2722840c70f2bd3cdb123fd83caca186120fa8'],0,42,42,1,1.0,1.0,1.0
+d1df00aaa33f35bf63881ae94202d7a26e196e85,removed unused function,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 21:57:17+01:00,-3600,2021-12-26 21:57:17+01:00,-3600,True,False,['visualize.py'],['2b0c6881098c999b7788d7d83e9f1ad8b99a7ae4'],5,5,10,1,0.0,0.0,0.0
+1b3e8053a8fe5b7444df0f7fc86c36174373cf97,extended test suite,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 21:57:26+01:00,-3600,2021-12-26 21:57:26+01:00,-3600,True,False,['test_getters.py'],['d1df00aaa33f35bf63881ae94202d7a26e196e85'],1,6,7,1,0.0,0.0,0.0
+e6d97f0f797cfb2e324d3ae5b36db132b6ad726c,Fixed bug with missing no lexicon 🪲,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 22:02:34+01:00,-3600,2021-12-26 22:02:34+01:00,-3600,True,False,['MANIFEST.in'],['1b3e8053a8fe5b7444df0f7fc86c36174373cf97'],1,1,2,1,,,
+28495aac394eb71db007c79e6ccb2a539238315c,Fixed bug with missing no lexicon 🪲,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 22:03:06+01:00,-3600,2021-12-26 22:03:06+01:00,-3600,True,False,['about.py'],['e6d97f0f797cfb2e324d3ae5b36db132b6ad726c'],1,1,2,1,,,
+a9b2361c361680d98fae8f081a009529d961c24a,minor formatting,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 22:04:24+01:00,-3600,2021-12-26 22:04:24+01:00,-3600,True,False,['data_classes.py'],['28495aac394eb71db007c79e6ccb2a539238315c'],2,4,6,1,,,
+b46d8963044be20aa94b927c3c726fe95ceaadb5,converted workflow to the official implementation ⬛️,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 22:09:44+01:00,-3600,2021-12-26 22:09:44+01:00,-3600,True,False,['black_formatter.yml'],['a9b2361c361680d98fae8f081a009529d961c24a'],6,5,11,1,,,
+8c7974e14730c2de75ea681c4b217c25b0024e6b,formatted to black 🕶,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 22:11:02+01:00,-3600,2021-12-26 22:11:02+01:00,-3600,True,False,['test_data_classes.py'],['b46d8963044be20aa94b927c3c726fe95ceaadb5'],10,54,64,1,0.0,1.0,1.0
+608ea157db708dbd7c580b8e70538f87af49c46c,Fixed bug when dealing with empty strings,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 22:22:32+01:00,-3600,2021-12-26 22:22:32+01:00,-3600,True,False,"['getters.py', 'test_getters.py']",['8c7974e14730c2de75ea681c4b217c25b0024e6b'],13,28,41,2,0.6,0.6,0.4
+c05533442379aacb776f0ff7b42c78c10e40108c,Minor updates to documentation,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 22:31:55+01:00,-3600,2021-12-26 22:31:55+01:00,-3600,True,False,"['customizing.rst', 'faq.rst', 'introduction.rst', 'languages.rst', 'news.rst']",['608ea157db708dbd7c580b8e70538f87af49c46c'],32,44,76,5,,,
+d3d82df521fe08f9aa488a95d2a99c9b22bb1786,bumbed version number to accomodate new changes,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 22:42:13+01:00,-3600,2021-12-26 22:42:13+01:00,-3600,True,False,"['about.py', 'news.rst']",['c05533442379aacb776f0ff7b42c78c10e40108c'],3,12,15,2,,,
+0974bcc37fa25e0e68e9017c1ec3b95ac1f63051,include the sv lexicon,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 22:44:35+01:00,-3600,2021-12-26 22:44:35+01:00,-3600,True,False,"['MANIFEST.in', 'about.py']",['d3d82df521fe08f9aa488a95d2a99c9b22bb1786'],2,2,4,2,,,
+758de96ca4434b7e1c29010418d58b7663bca2c8,Extended coverage of tests,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-26 22:53:21+01:00,-3600,2021-12-26 22:53:21+01:00,-3600,True,False,"['about.py', 'test_getters.py', 'test_lexicon.py', 'utils.py']",['0974bcc37fa25e0e68e9017c1ec3b95ac1f63051'],3,10,13,4,1.0,1.0,1.0
+f4717f506622c5833b1f39c8c544d5c752a18352,format to black 🕶,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-27 11:41:20+01:00,-3600,2021-12-27 11:41:20+01:00,-3600,True,False,['test_lexicon.py'],['758de96ca4434b7e1c29010418d58b7663bca2c8'],2,2,4,1,,,
+816514ce0e53d694f78b152e36d738e1c76735c6,added tests to tutorials,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 14:37:44+01:00,-3600,2021-12-31 14:37:44+01:00,-3600,True,False,"['run_ipynb.yml', '.gitignore', 'customizing_your_pipeline.ipynb', 'introduction.ipynb', 'requirements.txt']",['f4717f506622c5833b1f39c8c544d5c752a18352'],45,47,92,5,,,
+3411957d80d663db01ac83444da9473ff23bb3b3,updated tutorials workflow,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 14:47:19+01:00,-3600,2021-12-31 14:47:19+01:00,-3600,True,False,['run_tutorials.yml'],['816514ce0e53d694f78b152e36d738e1c76735c6'],1,5,6,1,,,
+99b4c0ff34dcbefb07bf822f98327afdb3612e55,minor fixes to black workflow,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 14:51:51+01:00,-3600,2021-12-31 14:51:51+01:00,-3600,True,False,['black_formatter.yml'],['3411957d80d663db01ac83444da9473ff23bb3b3'],1,9,10,1,,,
+704bd9a72e2e2923278b1d02dbb7cfd249e065dc,Added description to workflow,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 14:55:46+01:00,-3600,2021-12-31 14:55:46+01:00,-3600,True,False,['black_formatter.yml'],['99b4c0ff34dcbefb07bf822f98327afdb3612e55'],0,3,3,1,,,
+6ea50a69b5663cb402cd1ecff8e2b3eb55725f3f,minor fix,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 15:07:04+01:00,-3600,2021-12-31 15:07:04+01:00,-3600,True,False,['run_tutorials.yml'],['704bd9a72e2e2923278b1d02dbb7cfd249e065dc'],1,1,2,1,,,
+e69af4c0fcd6344f0a4adab3439ea35281b84512,check that workflow fails if tut. fails,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 15:16:18+01:00,-3600,2021-12-31 15:16:18+01:00,-3600,True,False,['introduction.ipynb'],['6ea50a69b5663cb402cd1ecff8e2b3eb55725f3f'],0,9,9,1,,,
+d07f387c620d873c3ae7cc53f64a2b4d024f6e4a,Tutorials no longer raises a valueError,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 15:19:39+01:00,-3600,2021-12-31 15:19:39+01:00,-3600,True,False,['introduction.ipynb'],['e69af4c0fcd6344f0a4adab3439ea35281b84512'],9,0,9,1,,,
+ccf9b581cb35519b11daf2c25a7bb1c732e96270,Added analysis visualizer,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 16:12:42+01:00,-3600,2021-12-31 16:12:42+01:00,-3600,True,False,"['data_classes.py', 'getters.py', 'test_visualize.py', 'visualize.py']",['f4717f506622c5833b1f39c8c544d5c752a18352'],26,94,120,4,0.013888888888888888,0.3333333333333333,0.6944444444444444
+0c7ca7f13c7c98d3f93c9d72d519ccd26d4dad5a,updated documentation,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 16:33:09+01:00,-3600,2021-12-31 16:33:09+01:00,-3600,True,False,"['README.md', 'visualize.py', 'asent.visualize.rst', 'customizing.rst', 'model_analysis.png', 'model_analysis1.png', 'introduction.rst']",['ccf9b581cb35519b11daf2c25a7bb1c732e96270'],9,37,46,7,0.0,1.0,0.0
+31d4bf093ad30708dfd95ca93f47bcab4fc537b2,added test,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 16:33:17+01:00,-3600,2021-12-31 16:33:17+01:00,-3600,True,False,['test_visualize.py'],['0c7ca7f13c7c98d3f93c9d72d519ccd26d4dad5a'],0,1,1,1,,,
+58d8de0c21cf60ef8b88b6bce5b81f1ad3255a1d,formatted to black,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2021-12-31 16:34:32+01:00,-3600,2021-12-31 16:34:32+01:00,-3600,True,False,"['getters.py', 'test_visualize.py', 'visualize.py']",['31d4bf093ad30708dfd95ca93f47bcab4fc537b2'],3,11,14,3,0.0,0.0,1.0
+001f88fa2d0023c101393bb0cc35adf1a26816d3,updated test suite,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-01-01 15:41:11+01:00,-3600,2022-01-01 15:41:11+01:00,-3600,True,False,['test_visualize.py'],['58d8de0c21cf60ef8b88b6bce5b81f1ad3255a1d'],0,11,11,1,1.0,1.0,0.0
+db26b58a8b4986167710c0971db987ffe29dcedf,Added overview of components,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-01-01 16:01:05+01:00,-3600,2022-01-01 16:01:05+01:00,-3600,True,False,"['__init__.py', '__init__.py', 'da.py', 'en.py', 'no.py', 'sv.py', 'utils.py', 'asent.component.rst', 'customizing_your_pipeline.ipynb', 'introduction.ipynb']",['5096231ddeffb05394b7c60b5a1910dbdb24aee2'],27,107,134,10,1.0,1.0,1.0
+122a37bb995c601308b235252a53216f682ca073,fixed unraised error,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-01-02 09:59:59+01:00,-3600,2022-01-02 09:59:59+01:00,-3600,True,False,['visualize.py'],['db26b58a8b4986167710c0971db987ffe29dcedf'],1,1,2,1,,,
+5eff3ef70644ec388eab022891ec6a715702e237,bumping version id,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-01-02 10:03:54+01:00,-3600,2022-01-02 10:03:54+01:00,-3600,True,False,['about.py'],['122a37bb995c601308b235252a53216f682ca073'],1,1,2,1,,,
+2aeb98707925895aa316d75d77a152581f04554f,Updated readme,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-01-02 10:04:32+01:00,-3600,2022-01-02 10:04:32+01:00,-3600,True,False,['README.md'],['5eff3ef70644ec388eab022891ec6a715702e237'],1,1,2,1,,,
+88353a59d3498636f6fd04f1e6741607994efe2e,added more tests with intensifiers,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-01-02 10:18:01+01:00,-3600,2022-01-02 10:18:01+01:00,-3600,True,False,"['test_getters.py', 'test_lexicon.py', 'test_utils.py']",['2aeb98707925895aa316d75d77a152581f04554f'],13,27,40,3,1.0,1.0,1.0
+b01678ac514e34fd30853625f7d714fb9cb26b54,added cap_diff when testiing intensifiers,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-01-02 10:21:09+01:00,-3600,2022-01-02 10:21:09+01:00,-3600,True,False,['test_getters.py'],['88353a59d3498636f6fd04f1e6741607994efe2e'],0,1,1,1,,,
+02f529c48437b953134b26e596aef8bb9eadad8c,added intensifier to visualize tests,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-01-02 10:23:26+01:00,-3600,2022-01-02 10:23:26+01:00,-3600,True,False,['test_visualize.py'],['b01678ac514e34fd30853625f7d714fb9cb26b54'],0,1,1,1,,,
+88a5843770d21dae20da8c09fdbd4991ee8a15c1,updated news,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-01-02 10:41:19+01:00,-3600,2022-01-02 10:41:19+01:00,-3600,True,False,['news.rst'],['02f529c48437b953134b26e596aef8bb9eadad8c'],0,6,6,1,,,
+de55a32476849feac05918053c3538c0e642f968,Agumenty links in readme,Martin Bernstorff,martinbernstorff@gmail.com,Martin Bernstorff,martinbernstorff@gmail.com,2022-01-05 14:17:42+01:00,-3600,2022-01-05 14:17:42+01:00,-3600,True,False,['README.md'],['88a5843770d21dae20da8c09fdbd4991ee8a15c1'],4,4,8,1,,,
+a411756d31ecc1a74f1a262623dfa311e9b67ef9,Misc.,Martin Bernstorff,martinbernstorff@gmail.com,Martin Bernstorff,martinbernstorff@gmail.com,2022-01-07 10:42:22+01:00,-3600,2022-01-07 10:42:22+01:00,-3600,True,False,"['Miniforge3-MacOSX-arm64.sh', 'requirements.txt']",['de55a32476849feac05918053c3538c0e642f968'],1,234085,234086,2,,,
+399d925973fa8bd0aff4fc16ad7311b1af294e8c,Misc.,Martin Bernstorff,ryqiem@gmail.com,Martin Bernstorff,ryqiem@gmail.com,2022-01-07 11:04:31+01:00,-3600,2022-01-07 11:04:31+01:00,-3600,True,False,"['customizing_your_pipeline.ipynb', 'introduction.ipynb']",['a411756d31ecc1a74f1a262623dfa311e9b67ef9'],449,121,570,2,,,
+89a22cf92a71ae143c037dc9dfee30f466b2c350,Fix missing links and references to separate project,Emil Stenström,emil@emilstenstrom.se,GitHub,noreply@github.com,2022-01-08 18:10:21+01:00,-3600,2022-01-08 18:10:21+01:00,-3600,True,False,['README.md'],['88a5843770d21dae20da8c09fdbd4991ee8a15c1'],5,5,10,1,,,
+e83a3f071bee320f52ec34dacb92dc0f179e9598,Delete Miniforge3-MacOSX-arm64.sh,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-01-08 20:28:18+01:00,-3600,2022-01-08 20:28:18+01:00,-3600,True,False,['Miniforge3-MacOSX-arm64.sh'],['5155c7a6d4bb2fbae2cec160818daa5648aebdfa'],234084,0,234084,1,,,
+fa88a914d867a9794a88f197a630bf76b87fa57c,Update requirements.txt,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-01-08 20:29:10+01:00,-3600,2022-01-08 20:29:10+01:00,-3600,True,False,['requirements.txt'],['e83a3f071bee320f52ec34dacb92dc0f179e9598'],1,1,2,1,,,
+bc3c1f617d01a3689172b36bd64d77caba68bc5e,Update tutorials/customizing_your_pipeline.ipynb,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-01-08 20:29:20+01:00,-3600,2022-01-08 20:29:20+01:00,-3600,True,False,['customizing_your_pipeline.ipynb'],['fa88a914d867a9794a88f197a630bf76b87fa57c'],1,1,2,1,,,
+0a1cca9ffab6c512b1980fd687a1cc75d56fe43d,Update tutorials/introduction.ipynb,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-01-08 20:29:26+01:00,-3600,2022-01-08 20:29:26+01:00,-3600,True,False,['introduction.ipynb'],['bc3c1f617d01a3689172b36bd64d77caba68bc5e'],1,1,2,1,,,
+de3d9ac18b9506bc56b6d1e9024f0a5ec910b309,updated ignore,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-02-02 10:54:23+01:00,-3600,2022-02-02 10:54:23+01:00,-3600,True,False,['.gitignore'],['e8f1aeaca7b3252f3337fabf8c5bd6a65d9df158'],0,6,6,1,,,
+5217f0d01063005a2dfe98982bb99e00c935f629,Updated CI,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-02-02 10:56:10+01:00,-3600,2022-02-02 10:56:10+01:00,-3600,True,False,"['dependabot.yml', 'pytest-cov-comment.yml']",['de3d9ac18b9506bc56b6d1e9024f0a5ec910b309'],4,30,34,2,,,
+5bdd5e4a5364d532f4a81018e1fd5b0057632d43,set black version,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-04-05 16:05:30+02:00,-7200,2022-04-05 16:05:30+02:00,-7200,True,False,['black_formatter.yml'],['e8f1aeaca7b3252f3337fabf8c5bd6a65d9df158'],2,4,6,1,,,
+bf8d09691c6745333953b41c84279cfb72c72089,set black version,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-04-05 16:05:51+02:00,-7200,2022-04-05 16:05:51+02:00,-7200,True,False,['requirements.txt'],['5bdd5e4a5364d532f4a81018e1fd5b0057632d43'],1,1,2,1,,,
+e329779d42594b26e01761b3224415197d18b070,updating run in Colab link,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-04-05 16:30:35+02:00,-7200,2022-04-05 16:30:35+02:00,-7200,True,False,['customizing.rst'],['98b4dc8f7e9e7bcb41a956c4e03ad9e601d16be9'],1,1,2,1,,,
+3fd8d95e468b5aef0b1c106cef6de3520f213d21,Added note to tutorial,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-05 16:47:04+02:00,-7200,2022-04-05 16:47:04+02:00,-7200,True,False,"['customizing.rst', 'customizing_your_pipeline.ipynb']",['e329779d42594b26e01761b3224415197d18b070'],42,465,507,2,,,
+49530295857d8f1c28dfca0fba3018c741251f0f,ignore customizing pipeline test,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-05 16:49:01+02:00,-7200,2022-04-05 16:49:01+02:00,-7200,True,False,['run_tutorials.yml'],['3fd8d95e468b5aef0b1c106cef6de3520f213d21'],0,1,1,1,,,
+1775c6ae1c766f6387d07db6ac2b1c68cd9396bf,intro notebook tests as intended,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-05 17:15:56+02:00,-7200,2022-04-05 17:15:56+02:00,-7200,True,False,['introduction.ipynb'],['49530295857d8f1c28dfca0fba3018c741251f0f'],28,54,82,1,,,
+9b68836842bd4f06e4019ff535220a58b68813da,updated workflows,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-05 17:17:39+02:00,-7200,2022-04-05 17:17:39+02:00,-7200,True,False,['pytest-cov-comment.yml'],['1775c6ae1c766f6387d07db6ac2b1c68cd9396bf'],6,6,12,1,,,
+1407d90408a0554572a4f127189c2f5b1104f572,removed boilerplate test code,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-05 17:17:47+02:00,-7200,2022-04-05 17:17:47+02:00,-7200,True,False,"['.coveragerc', 'run_coverage.py']",['9b68836842bd4f06e4019ff535220a58b68813da'],39,0,39,2,,,
+98a9e5ea6cdf00f6675342ede80ebcc4a4906952,bumped workflows versions,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-05 17:18:36+02:00,-7200,2022-04-05 17:18:36+02:00,-7200,True,False,"['publish_to_pypi.yml', 'run_tutorials.yml']",['1407d90408a0554572a4f127189c2f5b1104f572'],4,4,8,2,,,
+4af51ea01acdd85c4329d647a838e5b9709db615,updated black requirements,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-05 17:31:42+02:00,-7200,2022-04-05 17:31:42+02:00,-7200,True,False,['requirements.txt'],['98a9e5ea6cdf00f6675342ede80ebcc4a4906952'],2,2,4,1,,,
+6cc515b25999b3bc63f3a209aa2e828a0a6cbd38,relaxed black version,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-05 17:34:53+02:00,-7200,2022-04-05 17:34:53+02:00,-7200,True,False,"['black_formatter.yml', 'requirements.txt']",['4af51ea01acdd85c4329d647a838e5b9709db615'],3,1,4,2,,,
+ffedeed83c6fcaceb6c2a26692dfe845b7fc52a4,updated setup,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-05 17:52:14+02:00,-7200,2022-04-05 17:52:14+02:00,-7200,True,False,"['about.py', 'setup.cfg', 'setup.py']",['6cc515b25999b3bc63f3a209aa2e828a0a6cbd38'],31,86,117,3,,,
+9244dbca8f86becd5c77bd7aa00b81bec3c4dc13,formatted to black,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-05 17:56:40+02:00,-7200,2022-04-05 17:56:40+02:00,-7200,True,False,['setup.py'],['ffedeed83c6fcaceb6c2a26692dfe845b7fc52a4'],3,1,4,1,,,
+79fd19ef28b01e3a76c448da9f0681e188b60734,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.24 to 1.1.25
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.24 to 1.1.25.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.24...v1.1.25)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-04-06 23:42:11+00:00,0,2022-04-06 23:42:11+00:00,0,True,False,['pytest-cov-comment.yml'],['9244dbca8f86becd5c77bd7aa00b81bec3c4dc13'],1,1,2,1,,,
+3467ddcce82744d0d60552108a764c25ab75dd2f,"Fixed error causing workflow to pass
+
+Fixed error causing workflow to pass when using tee operator",Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-04-12 18:28:19+02:00,-7200,2022-04-12 18:28:19+02:00,-7200,True,False,['pytest-cov-comment.yml'],['a4faf14efa75ea042d95250d57698b1977322674'],4,3,7,1,,,
+15203e8d5bb69ad8c8fbc6f5d0861a6278d5f587,":arrow_up: Bump schneegans/dynamic-badges-action from 1.2.0 to 1.3.0
+
+Bumps [schneegans/dynamic-badges-action](https://github.com/schneegans/dynamic-badges-action) from 1.2.0 to 1.3.0.
+- [Release notes](https://github.com/schneegans/dynamic-badges-action/releases)
+- [Changelog](https://github.com/Schneegans/dynamic-badges-action/blob/master/changelog.md)
+- [Commits](https://github.com/schneegans/dynamic-badges-action/compare/v1.2.0...v1.3.0)
+
+---
+updated-dependencies:
+- dependency-name: schneegans/dynamic-badges-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-04-18 23:37:17+00:00,0,2022-04-18 23:37:17+00:00,0,True,False,['pytest-cov-comment.yml'],['806453a6637204079f0e5bcaa1449549b1f482dc'],1,1,2,1,,,
+2a2e15ad32f1d531ace80c0600c7a2c7b10dbe30,Update pytest-cov-comment.yml,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-04-19 12:07:52+02:00,-7200,2022-04-19 12:07:52+02:00,-7200,True,False,['pytest-cov-comment.yml'],['15203e8d5bb69ad8c8fbc6f5d0861a6278d5f587'],0,1,1,1,,,
+a391e3a25129ecfa8598b83305212529f80be98b,fixed negation,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-19 15:20:35+02:00,-7200,2022-04-19 15:20:35+02:00,-7200,True,False,['visualize.py'],['806453a6637204079f0e5bcaa1449549b1f482dc'],1,1,2,1,,,
+d95bddee0a9e96911c241f72798eb680a249fddc,set force to True as default,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-19 15:21:31+02:00,-7200,2022-04-19 15:21:31+02:00,-7200,True,False,"['component.py', 'da.py', 'en.py', 'no.py', 'sv.py']",['a391e3a25129ecfa8598b83305212529f80be98b'],5,5,10,5,,,
+5c7ad45020610c22e11cf111cf31afde2a712083,fixed images,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-19 15:23:54+02:00,-7200,2022-04-19 15:23:54+02:00,-7200,True,False,"['model_analysis.png', 'model_analysis1.png']",['d95bddee0a9e96911c241f72798eb680a249fddc'],0,0,0,2,,,
+f490df48089621897bbf094f7387c3bac039cbbf,bumped version,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-04-19 15:24:41+02:00,-7200,2022-04-19 15:24:41+02:00,-7200,True,False,['about.py'],['5c7ad45020610c22e11cf111cf31afde2a712083'],1,1,2,1,,,
+b818210c73c23a768c3cd26ce1156cd08fbd3e9f,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.25 to 1.1.28
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.25 to 1.1.28.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.25...v1.1.28)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-04-26 23:35:08+00:00,0,2022-04-26 23:35:08+00:00,0,True,False,['pytest-cov-comment.yml'],['afbfebef6477b5143bd9183839e7c0e7d0640999'],1,1,2,1,,,
+58dfb1b01ae6c3926a0660a6c74263cc269a1311,Update pytest-cov-comment.yml,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-04-28 15:38:18+02:00,-7200,2022-04-28 15:38:18+02:00,-7200,True,False,['pytest-cov-comment.yml'],['b818210c73c23a768c3cd26ce1156cd08fbd3e9f'],0,1,1,1,,,
+a851e1c91f53a52d2adcdbcf7067feb40c0b8190,":arrow_up: Update spacy requirement
+
+Updates the requirements on [spacy](https://github.com/explosion/spaCy) to permit the latest version.
+- [Release notes](https://github.com/explosion/spaCy/releases)
+- [Commits](https://github.com/explosion/spaCy/compare/v3.0.0...v3.3.0)
+
+---
+updated-dependencies:
+- dependency-name: spacy
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-04-29 23:29:09+00:00,0,2022-04-29 23:29:09+00:00,0,True,False,['requirements.txt'],['afbfebef6477b5143bd9183839e7c0e7d0640999'],1,1,2,1,,,
+ecf17f894939812e6dbf97e7017ed2aa0dcc0e17,Update pytest-cov-comment.yml,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-04-30 12:04:04+02:00,-7200,2022-04-30 12:04:04+02:00,-7200,True,False,['pytest-cov-comment.yml'],['a851e1c91f53a52d2adcdbcf7067feb40c0b8190'],0,1,1,1,,,
+bf4b98ace05477fd3210bb5944663ce0310a8518,":arrow_up: Bump actions/setup-python from 3 to 4
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 3 to 4.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-06-08 23:36:04+00:00,0,2022-06-08 23:36:04+00:00,0,True,False,"['publish_to_pypi.yml', 'pytest-cov-comment.yml', 'run_tutorials.yml']",['675f3dc414b73939b3f0d1cf175e0a685c628d02'],4,4,8,3,,,
+3bfd1c88294656144a7ce643bbbee3916bc84b39,fix-docs,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-06-13 10:57:30+02:00,-7200,2022-06-13 10:57:30+02:00,-7200,True,False,['documentation.yml'],['c6d8ab62b12d7a4adf0b68e93de03611fd1c80fa'],7,3,10,1,,,
+1c1d0deab5bc9ac3d53ab0d2192f23dd3d43e71d,Delete requirements.txt,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-06-13 10:58:04+02:00,-7200,2022-06-13 10:58:04+02:00,-7200,True,False,['requirements.txt'],['3bfd1c88294656144a7ce643bbbee3916bc84b39'],6,0,6,1,,,
+4036f7a17ad2ab4eacc94b71984bcbb968d4c1c2,Update requirements.txt,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-06-13 10:58:30+02:00,-7200,2022-06-13 10:58:30+02:00,-7200,True,False,['requirements.txt'],['1c1d0deab5bc9ac3d53ab0d2192f23dd3d43e71d'],2,2,4,1,,,
+e390b38ec9eda376c08dc0850a8d45fa828b2c35,":arrow_up: Update sphinx requirement
+
+Updates the requirements on [sphinx](https://github.com/sphinx-doc/sphinx) to permit the latest version.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/5.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v4.5.0...v5.0.1)
+
+---
+updated-dependencies:
+- dependency-name: sphinx
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-06-13 23:47:03+00:00,0,2022-06-13 23:47:03+00:00,0,True,False,['requirements.txt'],['6873cb902a790a2aff5d3645a6f95aa4a7a91665'],1,1,2,1,,,
+0b11d8f01810b15520efd683ac1f60836b12f760,":arrow_up: Bump furo from 2022.4.7 to 2022.6.21
+
+Bumps [furo](https://github.com/pradyunsg/furo) from 2022.4.7 to 2022.6.21.
+- [Release notes](https://github.com/pradyunsg/furo/releases)
+- [Changelog](https://github.com/pradyunsg/furo/blob/main/docs/changelog.md)
+- [Commits](https://github.com/pradyunsg/furo/compare/2022.04.07...2022.06.21)
+
+---
+updated-dependencies:
+- dependency-name: furo
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-06-22 00:06:14+00:00,0,2022-06-22 00:06:14+00:00,0,True,False,['requirements.txt'],['6873cb902a790a2aff5d3645a6f95aa4a7a91665'],1,1,2,1,,,
+46c19f3d75320a132843a66b875b3d4083d030d3,merged gitignore,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:02:36+02:00,-7200,2022-06-27 18:02:36+02:00,-7200,True,False,['.gitignore'],['6873cb902a790a2aff5d3645a6f95aa4a7a91665'],0,5,5,1,,,
+7b5ce297e971f2280f2a869d76729a037fbbdcef,Added common utils,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:04:59+02:00,-7200,2022-06-27 18:04:59+02:00,-7200,True,False,"['en.py', 'no.py', 'sv.py', 'utils.py']",['46c19f3d75320a132843a66b875b3d4083d030d3'],58,20,78,4,0.0,0.0,0.0
+1d7ce288aa9347f206ed473cbf2edd66dcea911f,converted afinn to default,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:05:18+02:00,-7200,2022-06-27 18:05:18+02:00,-7200,True,False,"['da.py', 'da_lexicon_afinn_v1.txt', 'da_lexicon_sentida_lemma_v1.csv', 'languages.rst']",['7b5ce297e971f2280f2a869d76729a037fbbdcef'],13,3577,3590,4,,,
+3131d686a9bf7fbe02d5be0618dec4707ba437f8,fixed path,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:06:28+02:00,-7200,2022-06-27 18:06:28+02:00,-7200,True,False,['da.py'],['1d7ce288aa9347f206ed473cbf2edd66dcea911f'],1,1,2,1,,,
+3e89fdd7edad095fca45b596f6beb235fe5249ae,moved tests out of package install,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:06:36+02:00,-7200,2022-06-27 18:06:36+02:00,-7200,True,False,"['__init__.py', 'test_data_classes.py', 'test_getters.py', 'test_utils.py', 'test_visualize.py']",['3131d686a9bf7fbe02d5be0618dec4707ba437f8'],0,0,0,5,,,
+aff8054e9c0a722de1a4f75f35ed33f8b0c860c3,bumped version id,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:06:55+02:00,-7200,2022-06-27 18:06:55+02:00,-7200,True,False,['about.py'],['3e89fdd7edad095fca45b596f6beb235fe5249ae'],1,1,2,1,,,
+aad004baa840f8c978caf22937f5d425cf295145,ran tests,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:29:45+02:00,-7200,2022-06-27 18:29:45+02:00,-7200,True,False,"['getters.py', 'da.py', 'test_getters.py']",['aff8054e9c0a722de1a4f75f35ed33f8b0c860c3'],13,11,24,3,1.0,0.5,1.0
+0e424534e1b32b6f9c148cb0259cb19be56d0668,added lexicons to manifest,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:31:25+02:00,-7200,2022-06-27 18:31:25+02:00,-7200,True,False,['MANIFEST.in'],['aad004baa840f8c978caf22937f5d425cf295145'],1,2,3,1,,,
+bbbc31eb63fcc584e6ff0dbb1252017890854d36,formatted to black,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:33:00+02:00,-7200,2022-06-27 18:33:00+02:00,-7200,True,False,['utils.py'],['0e424534e1b32b6f9c148cb0259cb19be56d0668'],0,1,1,1,,,
+94777a0c74a95c1104ae3619e4361597fda20c97,fixed spacy pipelines,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:42:03+02:00,-7200,2022-06-27 18:42:03+02:00,-7200,True,False,"['news.rst', 'requirements.txt', 'requirements.txt']",['99d6b58d235633d849eef3dac610a1fe18faea11'],4,11,15,3,,,
+d8997e5e2a439820c7054100b176d468a84f7438,added dependabot,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:43:43+02:00,-7200,2022-06-27 18:43:43+02:00,-7200,True,False,['dependabot.yml'],['94777a0c74a95c1104ae3619e4361597fda20c97'],2,2,4,1,,,
+45a078aa8d349538940505a9d81a6b24ae83807f,added citation.cff,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:49:23+02:00,-7200,2022-06-27 18:49:23+02:00,-7200,True,False,['citation.cff'],['d8997e5e2a439820c7054100b176d468a84f7438'],0,11,11,1,,,
+01e5652749f41b346554373a43cfd0577bec2224,fixed error in requirements,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:51:47+02:00,-7200,2022-06-27 18:51:47+02:00,-7200,True,False,['requirements.txt'],['45a078aa8d349538940505a9d81a6b24ae83807f'],1,1,2,1,,,
+7298e5bb2c0694c29a78abbb0a56880d256afa8b,ran pre-commit on all files,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:54:42+02:00,-7200,2022-06-27 18:54:42+02:00,-7200,True,False,"['.flake8', '.pre-commit-config.yaml', '__init__.py', 'component.py', 'constants.py', 'data_classes.py', 'getters.py', '__init__.py', 'da.py', 'emoji.py', 'en.py', 'no.py', 'sv.py', 'utils.py', 'visualize.py', 'emoji_sentiment_creator.py', 'requirements.txt', 'setup.cfg', 'setup.py', 'test_data_classes.py', 'test_getters.py', 'test_visualize.py']",['01e5652749f41b346554373a43cfd0577bec2224'],164,224,388,22,1.0,0.6333333333333333,0.2
+d18f8fac1de7c788d6b4ad52f2dc59480a7f97df,ran pre-commit hooks on all files,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:57:28+02:00,-7200,2022-06-27 18:57:28+02:00,-7200,True,False,"['documentation.yml', 'data_classes.py', 'getters.py', 'en.py', 'no.py', 'sv.py', 'visualize.py', 'emoji_sentiment_creator.py', 'conf.py', 'setup.py', 'test_visualize.py']",['7298e5bb2c0694c29a78abbb0a56880d256afa8b'],23,7,30,11,0.0,0.0,0.0
+135404246bc47dd09337d5b5c2045b9d1c3c535a,update faq,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 18:58:54+02:00,-7200,2022-06-27 18:58:54+02:00,-7200,True,False,['faq.rst'],['d18f8fac1de7c788d6b4ad52f2dc59480a7f97df'],1,1,2,1,,,
+52866f2ee60404037414e5976f06e35adef46a79,updated news,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 19:23:16+02:00,-7200,2022-06-27 19:23:16+02:00,-7200,True,False,"['about.py', 'news.rst']",['135404246bc47dd09337d5b5c2045b9d1c3c535a'],2,3,5,2,,,
+c3716619e51ad0f613b8c8f11ff386992fd30955,fixed typing,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 19:23:23+02:00,-7200,2022-06-27 19:23:23+02:00,-7200,True,False,['data_classes.py'],['52866f2ee60404037414e5976f06e35adef46a79'],6,8,14,1,,,
+cb392aeb8a3e86fa4d9ef3baf7ea4b5fc72fb069,fixed runtime typing,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 19:23:58+02:00,-7200,2022-06-27 19:23:58+02:00,-7200,True,False,['.pre-commit-config.yaml'],['c3716619e51ad0f613b8c8f11ff386992fd30955'],0,1,1,1,,,
+fa2af93d4f24a5c38bf95b224d659ed1961e567c,updated typing,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 19:27:39+02:00,-7200,2022-06-27 19:27:39+02:00,-7200,True,False,['data_classes.py'],['cb392aeb8a3e86fa4d9ef3baf7ea4b5fc72fb069'],3,3,6,1,,,
+74170813378c824bf7257e92cf8debd800c85a06,fixed typing,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 19:28:49+02:00,-7200,2022-06-27 19:28:49+02:00,-7200,True,False,['data_classes.py'],['fa2af93d4f24a5c38bf95b224d659ed1961e567c'],1,1,2,1,,,
+4a1a32f8e1d4bc609219ee43c68ee5ccf5d5ec7e,fixed manifest.in name,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 19:43:08+02:00,-7200,2022-06-27 19:43:08+02:00,-7200,True,False,['MANIFEST.in'],['74170813378c824bf7257e92cf8debd800c85a06'],1,1,2,1,,,
+a7a78a7e66df9293d7371ea81e529fcddc9c26e9,fixed type,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 19:47:35+02:00,-7200,2022-06-27 19:47:35+02:00,-7200,True,False,['data_classes.py'],['4a1a32f8e1d4bc609219ee43c68ee5ccf5d5ec7e'],2,2,4,1,,,
+c434b6f76297082d471b5e3fe4dd5997cef6408c,fixed list typing,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 19:48:47+02:00,-7200,2022-06-27 19:48:47+02:00,-7200,True,False,['data_classes.py'],['a7a78a7e66df9293d7371ea81e529fcddc9c26e9'],2,2,4,1,,,
+18256bece982826fda44359affb3ec6488f06a1f,remove unused file,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 19:51:32+02:00,-7200,2022-06-27 19:51:32+02:00,-7200,True,False,['model_workings.rst'],['c434b6f76297082d471b5e3fe4dd5997cef6408c'],19,0,19,1,,,
+278529e6e8ffab727e4332f6284113239b7a8ccf,Update requirements.txt,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-06-27 20:41:50+02:00,-7200,2022-06-27 20:41:50+02:00,-7200,True,False,['requirements.txt'],['746bab35fd4d5ac86f5f31e2ec220fe1ae55b63e'],2,2,4,1,,,
+d6dd04259ced826d266b062d324ed8b2dd6194b0,fixing versions for documentation,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-06-27 20:57:58+02:00,-7200,2022-06-27 20:57:58+02:00,-7200,True,False,['requirements.txt'],['278529e6e8ffab727e4332f6284113239b7a8ccf'],2,2,4,1,,,
+48bb78f3e09e85f974e39b34d6370f60daee2f2d,updated documentation,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 21:03:57+02:00,-7200,2022-06-27 21:03:57+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'README.md', 'faq.rst']",['94777a0c74a95c1104ae3619e4361597fda20c97'],13,70,83,3,,,
+5911675d86be73d3da4e845c9e4d5e6478234ca0,moved citation from readme to .cff,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-27 21:05:48+02:00,-7200,2022-06-27 21:05:48+02:00,-7200,True,False,['README.md'],['5d25f9c7a59cf25e427ca333446371106e6234b7'],12,0,12,1,,,
+ac00072fcf896854667dbe8c1c0db738b909f8ea,added Chen Skiena lexicons,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 11:07:55+02:00,-7200,2022-06-28 11:07:55+02:00,-7200,True,False,"['af_lexicon_chen_skiena_2014_v1.txt', 'an_lexicon_chen_skiena_2014_v1.txt', 'ar_lexicon_chen_skiena_2014_v1.txt', 'az_lexicon_chen_skiena_2014_v1.txt', 'be_lexicon_chen_skiena_2014_v1.txt', 'bg_lexicon_chen_skiena_2014_v1.txt', 'bn_lexicon_chen_skiena_2014_v1.txt', 'br_lexicon_chen_skiena_2014_v1.txt', 'bs_lexicon_chen_skiena_2014_v1.txt', 'ca_lexicon_chen_skiena_2014_v1.txt', 'cs_lexicon_chen_skiena_2014_v1.txt', 'cy_lexicon_chen_skiena_2014_v1.txt', 'da_lexicon_chen_skiena_2014_v1.txt', 'de_lexicon_chen_skiena_2014_v1.txt', 'el_lexicon_chen_skiena_2014_v1.txt', 'eo_lexicon_chen_skiena_2014_v1.txt', 'es_lexicon_chen_skiena_2014_v1.txt', 'et_lexicon_chen_skiena_2014_v1.txt', 'eu_lexicon_chen_skiena_2014_v1.txt', 'fa_lexicon_chen_skiena_2014_v1.txt', 'fi_lexicon_chen_skiena_2014_v1.txt', 'fo_lexicon_chen_skiena_2014_v1.txt', 'fr_lexicon_chen_skiena_2014_v1.txt', 'fy_lexicon_chen_skiena_2014_v1.txt', 'ga_lexicon_chen_skiena_2014_v1.txt', 'gd_lexicon_chen_skiena_2014_v1.txt', 'gl_lexicon_chen_skiena_2014_v1.txt', 'gu_lexicon_chen_skiena_2014_v1.txt', 'he_lexicon_chen_skiena_2014_v1.txt', 'hi_lexicon_chen_skiena_2014_v1.txt', 'hr_lexicon_chen_skiena_2014_v1.txt', 'ht_lexicon_chen_skiena_2014_v1.txt', 'hu_lexicon_chen_skiena_2014_v1.txt', 'hy_lexicon_chen_skiena_2014_v1.txt', 'ia_lexicon_chen_skiena_2014_v1.txt', 'id_lexicon_chen_skiena_2014_v1.txt', 'io_lexicon_chen_skiena_2014_v1.txt', 'is_lexicon_chen_skiena_2014_v1.txt', 'it_lexicon_chen_skiena_2014_v1.txt', 'ja_lexicon_chen_skiena_2014_v1.txt', 'ka_lexicon_chen_skiena_2014_v1.txt', 'km_lexicon_chen_skiena_2014_v1.txt', 'kn_lexicon_chen_skiena_2014_v1.txt', 'ko_lexicon_chen_skiena_2014_v1.txt', 'ku_lexicon_chen_skiena_2014_v1.txt', 'ky_lexicon_chen_skiena_2014_v1.txt', 'la_lexicon_chen_skiena_2014_v1.txt', 'lb_lexicon_chen_skiena_2014_v1.txt', 'lt_lexicon_chen_skiena_2014_v1.txt', 'lv_lexicon_chen_skiena_2014_v1.txt', 'mk_lexicon_chen_skiena_2014_v1.txt', 'mr_lexicon_chen_skiena_2014_v1.txt', 'ms_lexicon_chen_skiena_2014_v1.txt', 'mt_lexicon_chen_skiena_2014_v1.txt', 'nl_lexicon_chen_skiena_2014_v1.txt', 'nn_lexicon_chen_skiena_2014_v1.txt', 'no_lexicon_chen_skiena_2014_v1.txt', 'pl_lexicon_chen_skiena_2014_v1.txt', 'pt_lexicon_chen_skiena_2014_v1.txt', 'rm_lexicon_chen_skiena_2014_v1.txt', 'ro_lexicon_chen_skiena_2014_v1.txt', 'ru_lexicon_chen_skiena_2014_v1.txt', 'sk_lexicon_chen_skiena_2014_v1.txt', 'sl_lexicon_chen_skiena_2014_v1.txt', 'sq_lexicon_chen_skiena_2014_v1.txt', 'sr_lexicon_chen_skiena_2014_v1.txt', 'sv_lexicon_chen_skiena_2014_v1.txt', 'sw_lexicon_chen_skiena_2014_v1.txt', 'ta_lexicon_chen_skiena_2014_v1.txt', 'te_lexicon_chen_skiena_2014_v1.txt', 'th_lexicon_chen_skiena_2014_v1.txt', 'tk_lexicon_chen_skiena_2014_v1.txt', 'tl_lexicon_chen_skiena_2014_v1.txt', 'tr_lexicon_chen_skiena_2014_v1.txt', 'uk_lexicon_chen_skiena_2014_v1.txt', 'ur_lexicon_chen_skiena_2014_v1.txt', 'uz_lexicon_chen_skiena_2014_v1.txt', 'vi_lexicon_chen_skiena_2014_v1.txt', 'vo_lexicon_chen_skiena_2014_v1.txt', 'wa_lexicon_chen_skiena_2014_v1.txt', 'yi_lexicon_chen_skiena_2014_v1.txt', 'zh_lexicon_chen_skiena_2014_v1.txt', 'zhw_lexicon_chen_skiena_2014_v1.txt']",['5911675d86be73d3da4e845c9e4d5e6478234ca0'],0,167705,167705,83,,,
+2ce82d34366f633162c8a4ee1ed9d329747b7963,simplified existing codebase,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 11:08:16+02:00,-7200,2022-06-28 11:08:16+02:00,-7200,True,False,"['da.py', 'en.py', 'no.py', 'sv.py', 'utils.py']",['ac00072fcf896854667dbe8c1c0db738b909f8ea'],75,72,147,5,0.0,0.0,0.0
+531cc67efd71f948b9b14a3f44af55b2c3b372c5,added code for creating new language lexicons,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 11:09:20+02:00,-7200,2022-06-28 11:09:20+02:00,-7200,True,False,['add_new_language.py'],['2ce82d34366f633162c8a4ee1ed9d329747b7963'],0,26,26,1,,,
+bbbdf682977e281442c7850755fb59001a4fc03b,removed autogenerated lexicons from def. lang,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 11:11:42+02:00,-7200,2022-06-28 11:11:42+02:00,-7200,True,False,"['da.py', 'en.py', 'no.py', 'sv.py']",['531cc67efd71f948b9b14a3f44af55b2c3b372c5'],18,0,18,4,,,
+9f356cb7eb6800b1e06313dada7310fc84b5fa17,rixed errors in paths,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 11:23:17+02:00,-7200,2022-06-28 11:23:17+02:00,-7200,True,False,"['no.py', 'sv.py']",['bbbdf682977e281442c7850755fb59001a4fc03b'],3,3,6,2,,,
+d4af4bfc06e3c1ac8bf8826af49c253f5d69059d,added autoconstructed language lexicons along with tests,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 11:24:11+02:00,-7200,2022-06-28 11:24:11+02:00,-7200,True,False,"['autoconstructed.py', 'test_all_langs.py']",['9f356cb7eb6800b1e06313dada7310fc84b5fa17'],0,97,97,2,0.175,1.0,0.175
+c9b98cd90256f69c969ee5e73b6bd54921bfb835,removed mypy,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 11:28:28+02:00,-7200,2022-06-28 11:28:28+02:00,-7200,True,False,['setup.cfg'],['d4af4bfc06e3c1ac8bf8826af49c253f5d69059d'],4,0,4,1,,,
+4b0a32d3d274e766eec48012acbb2bbc46b0202d,changed word rating seperator,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 11:39:19+02:00,-7200,2022-06-28 11:39:19+02:00,-7200,True,False,"['af_lexicon_chen_skiena_2014_v1.txt', 'an_lexicon_chen_skiena_2014_v1.txt', 'ar_lexicon_chen_skiena_2014_v1.txt', 'az_lexicon_chen_skiena_2014_v1.txt', 'be_lexicon_chen_skiena_2014_v1.txt', 'bg_lexicon_chen_skiena_2014_v1.txt', 'bn_lexicon_chen_skiena_2014_v1.txt', 'br_lexicon_chen_skiena_2014_v1.txt', 'bs_lexicon_chen_skiena_2014_v1.txt', 'ca_lexicon_chen_skiena_2014_v1.txt', 'cs_lexicon_chen_skiena_2014_v1.txt', 'cy_lexicon_chen_skiena_2014_v1.txt', 'da_lexicon_chen_skiena_2014_v1.txt', 'de_lexicon_chen_skiena_2014_v1.txt', 'el_lexicon_chen_skiena_2014_v1.txt', 'eo_lexicon_chen_skiena_2014_v1.txt', 'es_lexicon_chen_skiena_2014_v1.txt', 'et_lexicon_chen_skiena_2014_v1.txt', 'eu_lexicon_chen_skiena_2014_v1.txt', 'fa_lexicon_chen_skiena_2014_v1.txt', 'fi_lexicon_chen_skiena_2014_v1.txt', 'fo_lexicon_chen_skiena_2014_v1.txt', 'fr_lexicon_chen_skiena_2014_v1.txt', 'fy_lexicon_chen_skiena_2014_v1.txt', 'ga_lexicon_chen_skiena_2014_v1.txt', 'gd_lexicon_chen_skiena_2014_v1.txt', 'gl_lexicon_chen_skiena_2014_v1.txt', 'gu_lexicon_chen_skiena_2014_v1.txt', 'he_lexicon_chen_skiena_2014_v1.txt', 'hi_lexicon_chen_skiena_2014_v1.txt', 'hr_lexicon_chen_skiena_2014_v1.txt', 'ht_lexicon_chen_skiena_2014_v1.txt', 'hu_lexicon_chen_skiena_2014_v1.txt', 'hy_lexicon_chen_skiena_2014_v1.txt', 'ia_lexicon_chen_skiena_2014_v1.txt', 'id_lexicon_chen_skiena_2014_v1.txt', 'io_lexicon_chen_skiena_2014_v1.txt', 'is_lexicon_chen_skiena_2014_v1.txt', 'it_lexicon_chen_skiena_2014_v1.txt', 'ja_lexicon_chen_skiena_2014_v1.txt', 'ka_lexicon_chen_skiena_2014_v1.txt', 'km_lexicon_chen_skiena_2014_v1.txt', 'kn_lexicon_chen_skiena_2014_v1.txt', 'ko_lexicon_chen_skiena_2014_v1.txt', 'ku_lexicon_chen_skiena_2014_v1.txt', 'ky_lexicon_chen_skiena_2014_v1.txt', 'la_lexicon_chen_skiena_2014_v1.txt', 'lb_lexicon_chen_skiena_2014_v1.txt', 'lt_lexicon_chen_skiena_2014_v1.txt', 'lv_lexicon_chen_skiena_2014_v1.txt', 'mk_lexicon_chen_skiena_2014_v1.txt', 'mr_lexicon_chen_skiena_2014_v1.txt', 'ms_lexicon_chen_skiena_2014_v1.txt', 'mt_lexicon_chen_skiena_2014_v1.txt', 'nl_lexicon_chen_skiena_2014_v1.txt', 'nn_lexicon_chen_skiena_2014_v1.txt', 'no_lexicon_chen_skiena_2014_v1.txt', 'pl_lexicon_chen_skiena_2014_v1.txt', 'pt_lexicon_chen_skiena_2014_v1.txt', 'rm_lexicon_chen_skiena_2014_v1.txt', 'ro_lexicon_chen_skiena_2014_v1.txt', 'ru_lexicon_chen_skiena_2014_v1.txt', 'sk_lexicon_chen_skiena_2014_v1.txt', 'sl_lexicon_chen_skiena_2014_v1.txt', 'sq_lexicon_chen_skiena_2014_v1.txt', 'sr_lexicon_chen_skiena_2014_v1.txt', 'sv_lexicon_chen_skiena_2014_v1.txt', 'sw_lexicon_chen_skiena_2014_v1.txt', 'ta_lexicon_chen_skiena_2014_v1.txt', 'te_lexicon_chen_skiena_2014_v1.txt', 'th_lexicon_chen_skiena_2014_v1.txt', 'tk_lexicon_chen_skiena_2014_v1.txt', 'tl_lexicon_chen_skiena_2014_v1.txt', 'tr_lexicon_chen_skiena_2014_v1.txt', 'uk_lexicon_chen_skiena_2014_v1.txt', 'ur_lexicon_chen_skiena_2014_v1.txt', 'uz_lexicon_chen_skiena_2014_v1.txt', 'vi_lexicon_chen_skiena_2014_v1.txt', 'vo_lexicon_chen_skiena_2014_v1.txt', 'wa_lexicon_chen_skiena_2014_v1.txt', 'yi_lexicon_chen_skiena_2014_v1.txt', 'zh_lexicon_chen_skiena_2014_v1.txt', 'zhw_lexicon_chen_skiena_2014_v1.txt']",['c9b98cd90256f69c969ee5e73b6bd54921bfb835'],167705,167705,335410,83,,,
+d22d6424504ac17bec67c67050c52a00972e0d72,added test for german,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 11:39:47+02:00,-7200,2022-06-28 11:39:47+02:00,-7200,True,False,"['__init__.py', 'test_getters.py']",['4b0a32d3d274e766eec48012acbb2bbc46b0202d'],0,2,2,2,,,
+5f3b2f18a56abbb03da7b6ed00ed9fa7dc020da3,changed word rating seperator,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 11:40:17+02:00,-7200,2022-06-28 11:40:17+02:00,-7200,True,False,['add_new_language.py'],['d22d6424504ac17bec67c67050c52a00972e0d72'],1,1,2,1,,,
+2b2ce4dff4136930c1e592da475765afbfff16dd,Added documentation for new languages,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-06-28 14:45:18+02:00,-7200,2022-06-28 14:45:18+02:00,-7200,True,False,"['about.py', 'autoconstructed.py', 'conf.py', 'index.rst', 'languages.rst', 'news.rst']",['5f3b2f18a56abbb03da7b6ed00ed9fa7dc020da3'],71,2206,2277,6,0.0,1.0,0.0
+8aa068d5e06e6a0596a2523ae3065ae8bb6f4744,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.28 to 1.1.29
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.28 to 1.1.29.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.28...v1.1.29)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-06-28 23:29:38+00:00,0,2022-06-28 23:29:38+00:00,0,True,False,['pytest-cov-comment.yml'],['5911675d86be73d3da4e845c9e4d5e6478234ca0'],1,1,2,1,,,
+62c4e074bf7e46012045c2e53e15c7de0a6fb83b,added esperanto,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-07-01 14:04:39+02:00,-7200,2022-07-01 14:04:39+02:00,-7200,True,False,['languages.rst'],['2b2ce4dff4136930c1e592da475765afbfff16dd'],1,24,25,1,,,
+3bcd3c13c5a05cf0550bf217fd255d78907b97a2,Added description to readme,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-07-01 14:04:53+02:00,-7200,2022-07-01 14:04:53+02:00,-7200,True,False,['README.md'],['62c4e074bf7e46012045c2e53e15c7de0a6fb83b'],1,4,5,1,,,
+715f2ded01dfa98546f926e056fa6eaf63c42c95,Update README.md,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-07-01 14:06:05+02:00,-7200,2022-07-01 14:06:05+02:00,-7200,True,False,['README.md'],['89d03866847c0e9b6e7477b6b6aa33efaf6350ff'],1,1,2,1,,,
+46b858bdbf397780e64270892e53557bcf9a587a,fixed missing language in tests,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-07-05 09:44:41+02:00,-7200,2022-07-05 09:44:41+02:00,-7200,True,False,"['requirements.txt', 'test_getters.py']",['3bcd3c13c5a05cf0550bf217fd255d78907b97a2'],1,3,4,2,1.0,1.0,1.0
+6b9ee4dd4db4ce995bbe9373110eed9f7764bf89,updated readme,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-07-05 10:18:30+02:00,-7200,2022-07-05 10:18:30+02:00,-7200,True,False,['README.md'],['46b858bdbf397780e64270892e53557bcf9a587a'],3,1,4,1,,,
+4ec0729d936e1499a13b23874a4f94ddcb92a3f1,updated tests,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-07-05 10:35:34+02:00,-7200,2022-07-05 10:35:34+02:00,-7200,True,False,['test_getters.py'],['5911675d86be73d3da4e845c9e4d5e6478234ca0'],3,8,11,1,0.0,0.0,0.0
+eeef9f10e077ebff19ff10615ffa5ee7b3082652,updatred readme,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-07-05 10:35:55+02:00,-7200,2022-07-05 10:35:55+02:00,-7200,True,False,['README.md'],['e49bc10cc0e4d3f9e72be0ac7aa55096804c8e12'],1,1,2,1,,,
+4447831748d682664def1d71b85c15af62cb8efa,fixed spelling errors in readme.,KennethEnevoldsen,kennethcenevolsen@gmail.com,KennethEnevoldsen,kennethcenevolsen@gmail.com,2022-07-05 10:42:43+02:00,-7200,2022-07-05 10:42:43+02:00,-7200,True,False,['README.md'],['eeef9f10e077ebff19ff10615ffa5ee7b3082652'],1,1,2,1,,,
+03601d87d06225eb75644a4dc416f705339c8171,":arrow_up: Update spacy requirement
+
+Updates the requirements on [spacy](https://github.com/explosion/spaCy) to permit the latest version.
+- [Release notes](https://github.com/explosion/spaCy/releases)
+- [Commits](https://github.com/explosion/spaCy/compare/v3.0.0...v3.4.0)
+
+---
+updated-dependencies:
+- dependency-name: spacy
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-07-12 23:29:38+00:00,0,2022-07-12 23:29:38+00:00,0,True,False,['requirements.txt'],['4447831748d682664def1d71b85c15af62cb8efa'],1,1,2,1,,,
+9a6351bee4b2a8c5f59991fe5439307b84f731bd,feat: Added two additional intensifiers for Danish,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-07-25 13:21:20+02:00,-7200,2022-07-25 13:21:20+02:00,-7200,True,False,['da.py'],['548f460dc2b474b7aff1e088b736ea8177c386ee'],0,2,2,1,,,
+21f121dafc406a2fb6e357b06fdac70a8d6f5f40,feat: Added two additional intensifers for Danish,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-07-25 13:22:25+02:00,-7200,2022-07-25 13:22:25+02:00,-7200,True,False,['about.py'],['9a6351bee4b2a8c5f59991fe5439307b84f731bd'],1,1,2,1,,,
+f0801968f82d0a82e70f1def7c7f736115def695,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.29 to 1.1.32
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.29 to 1.1.32.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.29...v1.1.32)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-08-10 23:44:01+00:00,0,2022-08-10 23:44:01+00:00,0,True,False,['pytest-cov-comment.yml'],['21f121dafc406a2fb6e357b06fdac70a8d6f5f40'],1,1,2,1,,,
+f424d1744329a46c352c2be93c16d09d3c33ccd9,"Resolved issue with overwriting
+lp in the introduction doc page",Tom Aarsen,Cubiegamedev@gmail.com,Tom Aarsen,Cubiegamedev@gmail.com,2022-08-19 12:34:45+02:00,-7200,2022-08-19 12:34:45+02:00,-7200,True,False,['introduction.rst'],['b93016f744095dcc4e3ea11e19f93c6833a0b0f5'],4,4,8,1,,,
+ac2c2c669674a48cbbc0fbcf3003d7c0114cb769,ci: remove pyupgrade from pre-commit hook,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2022-08-26 12:12:07+02:00,-7200,2022-08-26 12:12:07+02:00,-7200,True,False,['.pre-commit-config.yaml'],['ff97e73b3fc5320a2492a7a7d74040019d3aefc4'],6,0,6,1,,,
+4caa5a1977fdea6f465e94a2fe52b1fdd51aa338,fix: Sentence bounderies are now considered when check negations and intensifiers,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2022-08-26 12:28:56+02:00,-7200,2022-08-26 12:28:56+02:00,-7200,True,False,"['about.py', 'getters.py', 'news.rst', 'test_bugs.py']",['ac2c2c669674a48cbbc0fbcf3003d7c0114cb769'],5,44,49,4,0.7857142857142857,0.7857142857142857,1.0
+65a9de9023e7055b9a045e2e6de211000a217c7f,docs: updated example in readme,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2022-08-26 12:29:29+02:00,-7200,2022-08-26 12:29:29+02:00,-7200,True,False,['README.md'],['4caa5a1977fdea6f465e94a2fe52b1fdd51aa338'],2,3,5,1,,,
+f68bb55206aa54a74147fd1734c941a2a140d653,fix: update prediciton visualiser handle overlapping spans,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2022-08-26 13:33:37+02:00,-7200,2022-08-26 13:33:37+02:00,-7200,True,False,"['about.py', 'visualize.py', 'requirements.txt', 'setup.cfg', 'test_visualize.py']",['70ccaaf70ba19b0174665a3cb1a20126db975b3f'],7,70,77,5,0.05555555555555555,0.2222222222222222,0.8703703703703703
+219a29f814a1e0283f1022b2bee941ceba0f0d76,docs: Updated documentation,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2022-08-26 13:49:12+02:00,-7200,2022-08-26 13:49:12+02:00,-7200,True,False,"['asent.visualize.rst', 'model_pred.png', 'introduction.rst', 'news.rst', 'introduction.ipynb']",['f68bb55206aa54a74147fd1734c941a2a140d653'],35,260,295,5,,,
+9b8f7a7bfee5ff2787765f713555774e891e4824,test: Updated spacy pipelines for test,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2022-08-26 13:58:38+02:00,-7200,2022-08-26 13:58:38+02:00,-7200,True,False,"['requirements.txt', 'test_getters.py']",['219a29f814a1e0283f1022b2bee941ceba0f0d76'],9,9,18,2,1.0,1.0,1.0
+0b6f707f4fe72159e7b80d499c92649868ce8167,ci: Added mypy and darglint,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2022-08-26 15:06:22+02:00,-7200,2022-08-26 15:06:22+02:00,-7200,True,False,"['.darglint', '.pre-commit-config.yaml', 'component.py', 'data_classes.py', 'getters.py', 'autoconstructed.py', 'da.py', 'en.py', 'no.py', 'sv.py', 'utils.py', 'visualize.py', 'setup.cfg']",['9b8f7a7bfee5ff2787765f713555774e891e4824'],89,188,277,13,0.16,0.8666666666666667,0.4266666666666667
+956acde5990ad1a652d370ebd52b7d884667f0ac,tests: Updated pipeline for tutorials,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2022-08-26 15:07:10+02:00,-7200,2022-08-26 15:07:10+02:00,-7200,True,False,['requirements.txt'],['0b6f707f4fe72159e7b80d499c92649868ce8167'],1,1,2,1,,,
+54552b448dfe2ea665df79d71edf54f827dd2b38,ci: replaced black ci with pre-commit ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2022-08-26 15:09:20+02:00,-7200,2022-08-26 15:09:20+02:00,-7200,True,False,"['black_formatter.yml', 'pre-commit.yml']",['956acde5990ad1a652d370ebd52b7d884667f0ac'],21,16,37,2,,,
+2ffb2d98cdc9658977370def60d3b1e24a950a79,build: Relaxed version requirements,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2022-08-26 15:26:13+02:00,-7200,2022-08-26 15:26:13+02:00,-7200,True,False,"['visualize.py', 'news.rst', 'requirements.txt', 'setup.cfg', 'requirements.txt']",['54552b448dfe2ea665df79d71edf54f827dd2b38'],4,18,22,5,0.0,0.0,0.0
+f9d9d24b788ef6889d1ab7dc6b921e78e34725a4,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.32 to 1.1.33
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.32 to 1.1.33.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.32...v1.1.33)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-08-29 23:34:27+00:00,0,2022-08-29 23:34:27+00:00,0,True,False,['pytest-cov-comment.yml'],['70b10efa2c304cc5649181bc486cdadaadd3c67d'],1,1,2,1,,,
+daff21b1ff07c053d59e0abb4a6100cc7af80999,Update pytest-cov-comment.yml,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-08-30 09:30:46+02:00,-7200,2022-08-30 09:30:46+02:00,-7200,True,False,['pytest-cov-comment.yml'],['f9d9d24b788ef6889d1ab7dc6b921e78e34725a4'],0,1,1,1,,,
+df296d1ba772a26a1c1cbed273fb87680a30cd4c,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/myint/docformatter: v1.3.1 → v1.5.0](https://github.com/myint/docformatter/compare/v1.3.1...v1.5.0)
+- [github.com/psf/black: 22.3.0 → 22.8.0](https://github.com/psf/black/compare/22.3.0...22.8.0)
+- [github.com/PyCQA/flake8: 4.0.1 → 5.0.4](https://github.com/PyCQA/flake8/compare/4.0.1...5.0.4)
+- [github.com/pre-commit/mirrors-mypy: v0.961 → v0.971](https://github.com/pre-commit/mirrors-mypy/compare/v0.961...v0.971)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-09-05 16:38:19+00:00,0,2022-09-05 16:38:19+00:00,0,True,False,['.pre-commit-config.yaml'],['c71693031da4cd40ef1d780dbb16c3023f5dc462'],4,4,8,1,,,
+9c14c4968674da667d0736b6069862ff5b4bec78,"[pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,2022-09-05 16:39:42+00:00,0,2022-09-05 16:39:42+00:00,0,True,False,"['test_getters.py', 'test_visualize.py']",['df296d1ba772a26a1c1cbed273fb87680a30cd4c'],3,0,3,2,,,
+8a8033c89a0adb9edce7ab3c286b055799e0d28d,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.33 to 1.1.35
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.33 to 1.1.35.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.33...v1.1.35)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-09-06 23:39:02+00:00,0,2022-09-06 23:39:02+00:00,0,True,False,['pytest-cov-comment.yml'],['3e1af40eea027ba4833bfb5232dd97a11773efd0'],1,1,2,1,,,
+e34095d1e236fb3cfc170b58634475522eeb9706,Update pytest-cov-comment.yml,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-09-07 09:25:24+02:00,-7200,2022-09-07 09:25:24+02:00,-7200,True,False,['pytest-cov-comment.yml'],['8a8033c89a0adb9edce7ab3c286b055799e0d28d'],0,2,2,1,,,
+c555b5ecb5c6b663ded1d96288f5d8aa8819d906,style: removed trailing whitespace,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-09-07 09:26:35+02:00,-7200,2022-09-07 09:26:35+02:00,-7200,True,False,['pytest-cov-comment.yml'],['e34095d1e236fb3cfc170b58634475522eeb9706'],1,1,2,1,,,
+6bcd8f5a72b1237300e4b1f17d7b73d80c40f1c7,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- https://github.com/myint/docformatter → https://github.com/PyCQA/docformatter",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-09-19 16:38:08+00:00,0,2022-09-19 16:38:08+00:00,0,True,False,['.pre-commit-config.yaml'],['4cb6732ddc471c4dd4eafc56ea2b1c050545a88e'],1,1,2,1,,,
+c2800b13e2ee059bf016756156f4aef0690b99f4,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/add-trailing-comma: v2.2.3 → v2.3.0](https://github.com/asottile/add-trailing-comma/compare/v2.2.3...v2.3.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-09-26 16:38:19+00:00,0,2022-09-26 16:38:19+00:00,0,True,False,['.pre-commit-config.yaml'],['edcdfcf3c6bea89c0fdb85ea12bd30b53159fb2f'],1,1,2,1,,,
+c2e07aa5312787dbc54f94610b74702fd95c4d91,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-mypy: v0.971 → v0.981](https://github.com/pre-commit/mirrors-mypy/compare/v0.971...v0.981)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-03 16:39:45+00:00,0,2022-10-03 16:39:45+00:00,0,True,False,['.pre-commit-config.yaml'],['dec90fbbb6e702b7fe167742c551a458e5514efb'],1,1,2,1,,,
+886c515b939448f44e8c4968dc18472d89d0e532,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 22.8.0 → 22.10.0](https://github.com/psf/black/compare/22.8.0...22.10.0)
+- [github.com/pre-commit/mirrors-mypy: v0.981 → v0.982](https://github.com/pre-commit/mirrors-mypy/compare/v0.981...v0.982)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-10 16:38:13+00:00,0,2022-10-10 16:38:13+00:00,0,True,False,['.pre-commit-config.yaml'],['3c489f6382484b383afcfb14f0e68aa21388bfac'],2,2,4,1,,,
+f45573617d7dcbe4d3642f3eab3d828686830484,":arrow_up: Bump schneegans/dynamic-badges-action from 1.3.0 to 1.5.0
+
+Bumps [schneegans/dynamic-badges-action](https://github.com/schneegans/dynamic-badges-action) from 1.3.0 to 1.5.0.
+- [Release notes](https://github.com/schneegans/dynamic-badges-action/releases)
+- [Changelog](https://github.com/Schneegans/dynamic-badges-action/blob/master/changelog.md)
+- [Commits](https://github.com/schneegans/dynamic-badges-action/compare/v1.3.0...v1.5.0)
+
+---
+updated-dependencies:
+- dependency-name: schneegans/dynamic-badges-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-11 00:21:59+00:00,0,2022-10-11 00:21:59+00:00,0,True,False,['pytest-cov-comment.yml'],['3c489f6382484b383afcfb14f0e68aa21388bfac'],1,1,2,1,,,
+bea04de50af67c7b8f4b259bc4608f72e2174577,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.35 to 1.1.36
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.35 to 1.1.36.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.35...v1.1.36)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-12 23:24:02+00:00,0,2022-10-12 23:24:02+00:00,0,True,False,['pytest-cov-comment.yml'],['1227b54d7993e07a6e5b175a0dfdd4b02a0389ee'],1,1,2,1,,,
+7438be91f85e34a707175529a1429987d815b845,":arrow_up: Bump schneegans/dynamic-badges-action from 1.5.0 to 1.6.0
+
+Bumps [schneegans/dynamic-badges-action](https://github.com/schneegans/dynamic-badges-action) from 1.5.0 to 1.6.0.
+- [Release notes](https://github.com/schneegans/dynamic-badges-action/releases)
+- [Changelog](https://github.com/Schneegans/dynamic-badges-action/blob/master/changelog.md)
+- [Commits](https://github.com/schneegans/dynamic-badges-action/compare/v1.5.0...v1.6.0)
+
+---
+updated-dependencies:
+- dependency-name: schneegans/dynamic-badges-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-13 23:28:38+00:00,0,2022-10-13 23:28:38+00:00,0,True,False,['pytest-cov-comment.yml'],['2a36e139f39bee47023a8ce82b3bdf9c9697fe69'],1,1,2,1,,,
+04b4dd1f9742723b037e8cbce3427167e454802a,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.36 to 1.1.37
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.36 to 1.1.37.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Changelog](https://github.com/MishaKav/pytest-coverage-comment/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.36...v1.1.37)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-10-20 23:59:44+00:00,0,2022-10-20 23:59:44+00:00,0,True,False,['pytest-cov-comment.yml'],['8f353e0f5fc962008065217f783beeecf684c77f'],1,1,2,1,,,
+f5348623907b123c9272cbe5faee927d773a496f,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-mypy: v0.982 → v0.990](https://github.com/pre-commit/mirrors-mypy/compare/v0.982...v0.990)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-11-14 16:38:53+00:00,0,2022-11-14 16:38:53+00:00,0,True,False,['.pre-commit-config.yaml'],['04af49a73c65b32bc7cddbbadd1b8bd1bf75dba6'],1,1,2,1,,,
+685c049785b9b98e911c6b83f39b3184ce200f37,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-mypy: v0.990 → v0.991](https://github.com/pre-commit/mirrors-mypy/compare/v0.990...v0.991)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-11-21 16:37:06+00:00,0,2022-11-21 16:37:06+00:00,0,True,False,['.pre-commit-config.yaml'],['c29c0c8547c26fc3352bdd42a2ef86930e0bb8a6'],1,1,2,1,,,
+26c9de3bcc398d63e3894a3d6550dddb8cc65d2c,Update LICENSE,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-11-28 16:13:38+01:00,-3600,2022-11-28 16:13:38+01:00,-3600,True,False,['LICENSE'],['e087385be7974d023f66debfe90958892d775686'],1,1,2,1,,,
+2f6704bd73d72a90055b8ff1f7dad8af7abd3baf,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/flake8: 5.0.4 → 6.0.0](https://github.com/PyCQA/flake8/compare/5.0.4...6.0.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-11-28 16:41:59+00:00,0,2022-11-28 16:41:59+00:00,0,True,False,['.pre-commit-config.yaml'],['26c9de3bcc398d63e3894a3d6550dddb8cc65d2c'],1,1,2,1,,,
+c931c00b806080193ff5e5e4f6fccc6a042cfc57,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.37 to 1.1.39
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.37 to 1.1.39.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Changelog](https://github.com/MishaKav/pytest-coverage-comment/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.37...v1.1.39)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-11-29 23:07:02+00:00,0,2022-11-29 23:07:02+00:00,0,True,False,['pytest-cov-comment.yml'],['bfd8f9123c19724274cdfb7d286762cb80b90469'],1,1,2,1,,,
+8fed89293f0efbf35f1eb2bdc1e3162381dfef7f,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.39 to 1.1.40
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.39 to 1.1.40.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Changelog](https://github.com/MishaKav/pytest-coverage-comment/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.39...v1.1.40)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-02 23:08:14+00:00,0,2022-12-02 23:08:14+00:00,0,True,False,['pytest-cov-comment.yml'],['0fb7adccc714a0fab0ab86995d93b959f39db3b3'],1,1,2,1,,,
+ff1a26937e0a1877508aeeb9e96827f7c67acb94,ci: removed duplicate pre-commit ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-12-04 22:41:08+01:00,-3600,2022-12-04 22:41:08+01:00,-3600,True,False,['pre-commit.yml'],['617b7d5b34e13bb2a96baec2496c00c17873eaa0'],16,0,16,1,,,
+a5776bc2aade2d013767aa96994b34a413dcf791,":arrow_up: Bump sphinx-notes/pages from 2 to 3
+
+Bumps [sphinx-notes/pages](https://github.com/sphinx-notes/pages) from 2 to 3.
+- [Release notes](https://github.com/sphinx-notes/pages/releases)
+- [Commits](https://github.com/sphinx-notes/pages/compare/v2...v3)
+
+---
+updated-dependencies:
+- dependency-name: sphinx-notes/pages
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-05 23:12:02+00:00,0,2022-12-05 23:12:02+00:00,0,True,False,['documentation.yml'],['ff1a26937e0a1877508aeeb9e96827f7c67acb94'],1,1,2,1,,,
+ee523889d372639bdcbf4b70c93f7f0ba8bcf8a0,Update documentation.yml,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2022-12-06 10:44:34+01:00,-3600,2022-12-06 10:44:34+01:00,-3600,True,False,['documentation.yml'],['a7d62eae9dab41325f1d0b463ee603e609e2b442'],1,1,2,1,,,
+6063ae3c73d6393501cd598c0c680e03d319d380,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 22.10.0 → 22.12.0](https://github.com/psf/black/compare/22.10.0...22.12.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-12 16:38:49+00:00,0,2022-12-12 16:38:49+00:00,0,True,False,['.pre-commit-config.yaml'],['ee523889d372639bdcbf4b70c93f7f0ba8bcf8a0'],1,1,2,1,,,
+26fad22662bd022662ec6a3a83f7052e9d46ba5b,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.40 to 1.1.41
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.40 to 1.1.41.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Changelog](https://github.com/MishaKav/pytest-coverage-comment/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.40...v1.1.41)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-23 23:05:26+00:00,0,2022-12-23 23:05:26+00:00,0,True,False,['pytest-cov-comment.yml'],['11e5a340c6338257245fcf7f79ee31335af1e41d'],1,1,2,1,,,
+203803192d5cd67d66ba889f74c3e17cface271f,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pycqa/isort: 5.10.1 → 5.11.4](https://github.com/pycqa/isort/compare/5.10.1...5.11.4)
+- [github.com/asottile/add-trailing-comma: v2.3.0 → v2.4.0](https://github.com/asottile/add-trailing-comma/compare/v2.3.0...v2.4.0)
+- [github.com/PyCQA/docformatter: v1.5.0 → v1.5.1](https://github.com/PyCQA/docformatter/compare/v1.5.0...v1.5.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-26 16:39:22+00:00,0,2022-12-26 16:39:22+00:00,0,True,False,['.pre-commit-config.yaml'],['8ff0b6f7864d0b575f7610e585979c1e83b6195f'],3,3,6,1,,,
+9be1561053b9f652995d8bee860781342a72ff82,"[pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,2022-12-26 16:40:19+00:00,0,2022-12-26 16:40:20+00:00,0,True,False,['add_new_language.py'],['203803192d5cd67d66ba889f74c3e17cface271f'],3,4,7,1,,,
+fd74d01094efd13a73382f844844b24f5d7a37ac,":arrow_up: Bump MishaKav/pytest-coverage-comment from 1.1.41 to 1.1.42
+
+Bumps [MishaKav/pytest-coverage-comment](https://github.com/MishaKav/pytest-coverage-comment) from 1.1.41 to 1.1.42.
+- [Release notes](https://github.com/MishaKav/pytest-coverage-comment/releases)
+- [Changelog](https://github.com/MishaKav/pytest-coverage-comment/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/MishaKav/pytest-coverage-comment/compare/v1.1.41...v1.1.42)
+
+---
+updated-dependencies:
+- dependency-name: MishaKav/pytest-coverage-comment
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-01-09 23:15:52+00:00,0,2023-01-09 23:15:52+00:00,0,True,False,['pytest-cov-comment.yml'],['8ff0b6f7864d0b575f7610e585979c1e83b6195f'],1,1,2,1,,,
+b3dea6d20fdeea05dbb390cd7a7568e78ca6a745,"Use encoding UTF-8 when reading 'da' CSV Files
+
+Without explicitly specifying UTF-8, under certain circumstances it defaults to 'ascii' breaking this.",Andreas Louca,andreas@louca.dev,GitHub,noreply@github.com,2023-01-22 18:32:00-08:00,28800,2023-01-22 18:32:00-08:00,28800,True,False,['da.py'],['453ed19050611da368e45a6e1f4f2eb8709ad645'],1,1,2,1,,,
+19fe7c545f0608ce3be0b6c3600c9c1e421f0695,bumbed version id with latest version,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2023-01-23 14:44:56+01:00,-3600,2023-01-23 14:44:56+01:00,-3600,True,False,['about.py'],['438509937abf157f849ac8192413cec25e2d33c4'],1,1,2,1,,,
+604c1956031441c47bd605f0d29a3e0617f4082a,ci: add dependabot,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 13:38:02+01:00,-3600,2023-02-01 13:38:02+01:00,-3600,True,False,['dependabot_automerge.yml'],['8ff0b6f7864d0b575f7610e585979c1e83b6195f'],0,29,29,1,,,
+2aa548c2f6fa0d9ce6b3f080c98aea4f9f6f863d,build: updated build to use a pyproject.toml,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 20:23:42+01:00,-3600,2023-02-01 20:23:42+01:00,-3600,True,False,"['.darglint', '.flake8', 'MANIFEST.in', 'pyproject.toml', 'requirements.txt', 'setup.cfg', 'setup.py']",['604c1956031441c47bd605f0d29a3e0617f4082a'],130,128,258,7,,,
+fec65457a34296a27012b9a260ce35ad0a941e7e,ci: Added stalebot,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 20:24:05+01:00,-3600,2023-02-01 20:24:05+01:00,-3600,True,False,['tests.yml'],['2aa548c2f6fa0d9ce6b3f080c98aea4f9f6f863d'],0,79,79,1,,,
+5b60ec144552cc7bea9ddd457be22d79e4f3bf1d,ci: updated tests workflow,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 20:24:48+01:00,-3600,2023-02-01 20:24:48+01:00,-3600,True,False,"['documentation.yml', 'publish_to_pypi.yml', 'pytest-cov-comment.yml', 'run_tutorials.yml', 'requirements.txt', 'customizing_your_pipeline.ipynb', 'introduction.ipynb', 'requirements.txt']",['fec65457a34296a27012b9a260ce35ad0a941e7e'],168,41,209,8,,,
+4f38d4267671bae2f2c9c6716e9e27ae7672e49b,ci: added semantic release,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 20:27:32+01:00,-3600,2023-02-01 20:27:32+01:00,-3600,True,False,['release.yml'],['5b60ec144552cc7bea9ddd457be22d79e4f3bf1d'],0,46,46,1,,,
+11b21cefed4e3e0522e689ecd239524683f0a6f2,docs: updated docs with new changes,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 20:27:45+01:00,-3600,2023-02-01 20:27:45+01:00,-3600,True,False,"['faq.rst', 'installation.rst']",['4f38d4267671bae2f2c9c6716e9e27ae7672e49b'],10,26,36,2,,,
+c90b005154db5d536475468e804981cba00032e2,ci: added stalebot,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 20:27:55+01:00,-3600,2023-02-01 20:27:55+01:00,-3600,True,False,['stale.yml'],['11b21cefed4e3e0522e689ecd239524683f0a6f2'],0,19,19,1,,,
+9c7ad4794f5f22ba256f2f5c9cca55624ebabdda,style: update pre-commit,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 20:42:53+01:00,-3600,2023-02-01 20:42:53+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'component.py', 'constants.py', 'data_classes.py', 'getters.py', 'visualize.py', 'add_new_language.py', 'requirements.txt', 'test_getters.py']",['c90b005154db5d536475468e804981cba00032e2'],152,173,325,9,0.041666666666666664,0.5,0.4166666666666667
+89983ed8b4ff24379e7d19cce6e513fa79002f24,build: change to src structure,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 20:44:00+01:00,-3600,2023-02-01 20:44:00+01:00,-3600,True,False,"['__init__.py', 'about.py', 'component.py', 'constants.py', 'data_classes.py', 'getters.py', '__init__.py', 'autoconstructed.py', 'da.py', 'emoji.py', 'en.py', 'no.py', 'sv.py', 'af_lexicon_chen_skiena_2014_v1.txt', 'an_lexicon_chen_skiena_2014_v1.txt', 'ar_lexicon_chen_skiena_2014_v1.txt', 'az_lexicon_chen_skiena_2014_v1.txt', 'be_lexicon_chen_skiena_2014_v1.txt', 'bg_lexicon_chen_skiena_2014_v1.txt', 'bn_lexicon_chen_skiena_2014_v1.txt', 'br_lexicon_chen_skiena_2014_v1.txt', 'bs_lexicon_chen_skiena_2014_v1.txt', 'ca_lexicon_chen_skiena_2014_v1.txt', 'cs_lexicon_chen_skiena_2014_v1.txt', 'cy_lexicon_chen_skiena_2014_v1.txt', 'da_lexicon_afinn_v1.txt', 'da_lexicon_chen_skiena_2014_v1.txt', 'da_lexicon_sentida_lemma_v1.csv', 'de_lexicon_chen_skiena_2014_v1.txt', 'el_lexicon_chen_skiena_2014_v1.txt', 'emoji_v1.json', 'en_lexicon_v1.txt', 'eo_lexicon_chen_skiena_2014_v1.txt', 'es_lexicon_chen_skiena_2014_v1.txt', 'et_lexicon_chen_skiena_2014_v1.txt', 'eu_lexicon_chen_skiena_2014_v1.txt', 'fa_lexicon_chen_skiena_2014_v1.txt', 'fi_lexicon_chen_skiena_2014_v1.txt', 'fo_lexicon_chen_skiena_2014_v1.txt', 'fr_lexicon_chen_skiena_2014_v1.txt', 'fy_lexicon_chen_skiena_2014_v1.txt', 'ga_lexicon_chen_skiena_2014_v1.txt', 'gd_lexicon_chen_skiena_2014_v1.txt', 'gl_lexicon_chen_skiena_2014_v1.txt', 'gu_lexicon_chen_skiena_2014_v1.txt', 'he_lexicon_chen_skiena_2014_v1.txt', 'hi_lexicon_chen_skiena_2014_v1.txt', 'hr_lexicon_chen_skiena_2014_v1.txt', 'ht_lexicon_chen_skiena_2014_v1.txt', 'hu_lexicon_chen_skiena_2014_v1.txt', 'hy_lexicon_chen_skiena_2014_v1.txt', 'ia_lexicon_chen_skiena_2014_v1.txt', 'id_lexicon_chen_skiena_2014_v1.txt', 'io_lexicon_chen_skiena_2014_v1.txt', 'is_lexicon_chen_skiena_2014_v1.txt', 'it_lexicon_chen_skiena_2014_v1.txt', 'ja_lexicon_chen_skiena_2014_v1.txt', 'ka_lexicon_chen_skiena_2014_v1.txt', 'km_lexicon_chen_skiena_2014_v1.txt', 'kn_lexicon_chen_skiena_2014_v1.txt', 'ko_lexicon_chen_skiena_2014_v1.txt', 'ku_lexicon_chen_skiena_2014_v1.txt', 'ky_lexicon_chen_skiena_2014_v1.txt', 'la_lexicon_chen_skiena_2014_v1.txt', 'lb_lexicon_chen_skiena_2014_v1.txt', 'lt_lexicon_chen_skiena_2014_v1.txt', 'lv_lexicon_chen_skiena_2014_v1.txt', 'mk_lexicon_chen_skiena_2014_v1.txt', 'mr_lexicon_chen_skiena_2014_v1.txt', 'ms_lexicon_chen_skiena_2014_v1.txt', 'mt_lexicon_chen_skiena_2014_v1.txt', 'nl_lexicon_chen_skiena_2014_v1.txt', 'nn_lexicon_chen_skiena_2014_v1.txt', 'no_lexicon_chen_skiena_2014_v1.txt', 'no_lexicon_v1.txt', 'pl_lexicon_chen_skiena_2014_v1.txt', 'pt_lexicon_chen_skiena_2014_v1.txt', 'rm_lexicon_chen_skiena_2014_v1.txt', 'ro_lexicon_chen_skiena_2014_v1.txt', 'ru_lexicon_chen_skiena_2014_v1.txt', 'sk_lexicon_chen_skiena_2014_v1.txt', 'sl_lexicon_chen_skiena_2014_v1.txt', 'sq_lexicon_chen_skiena_2014_v1.txt', 'sr_lexicon_chen_skiena_2014_v1.txt', 'sv_lexicon_chen_skiena_2014_v1.txt', 'sv_lexicon_v1.txt', 'sw_lexicon_chen_skiena_2014_v1.txt', 'ta_lexicon_chen_skiena_2014_v1.txt', 'te_lexicon_chen_skiena_2014_v1.txt', 'th_lexicon_chen_skiena_2014_v1.txt', 'tk_lexicon_chen_skiena_2014_v1.txt', 'tl_lexicon_chen_skiena_2014_v1.txt', 'tr_lexicon_chen_skiena_2014_v1.txt', 'uk_lexicon_chen_skiena_2014_v1.txt', 'ur_lexicon_chen_skiena_2014_v1.txt', 'uz_lexicon_chen_skiena_2014_v1.txt', 'vi_lexicon_chen_skiena_2014_v1.txt', 'vo_lexicon_chen_skiena_2014_v1.txt', 'wa_lexicon_chen_skiena_2014_v1.txt', 'yi_lexicon_chen_skiena_2014_v1.txt', 'zh_lexicon_chen_skiena_2014_v1.txt', 'zhw_lexicon_chen_skiena_2014_v1.txt', 'utils.py', 'visualize.py']",['9c7ad4794f5f22ba256f2f5c9cca55624ebabdda'],0,0,0,104,,,
+00499e9a5af8a7d01dc000f6d9b765a0484c110d,v0.6.0,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 20:47:01+01:00,-3600,2023-02-01 20:47:01+01:00,-3600,True,False,['pyproject.toml'],['89983ed8b4ff24379e7d19cce6e513fa79002f24'],1,0,1,1,,,
+52b63809ff56dc376c8f74f518600170e698afac,docs: updated documentation,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 21:00:38+01:00,-3600,2023-02-01 21:00:38+01:00,-3600,True,False,"['conf.py', 'customizing.rst', 'index.rst', 'introduction.rst', 'pyproject.toml', 'about.py']",['00499e9a5af8a7d01dc000f6d9b765a0484c110d'],12,36,48,6,,,
+da69d283fdabe2635a4e8d4b1f1a59f62713d5c9,docs: fixed error in tutorials req.,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 21:10:26+01:00,-3600,2023-02-01 21:10:26+01:00,-3600,True,False,['requirements.txt'],['52fb827a2bd87059e02ec556a9565dbf52f4651c'],1,1,2,1,,,
+5e0a75b0700572fb9fc63658ca7e0be2cebc8e8f,docs: fixed version for tutorial req.,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 21:12:49+01:00,-3600,2023-02-01 21:12:49+01:00,-3600,True,False,['requirements.txt'],['da69d283fdabe2635a4e8d4b1f1a59f62713d5c9'],1,1,2,1,,,
+c5bd7a02304a472c0a6078e03a94191326e54a26,ci: removed pyupgrade from ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-01 21:17:08+01:00,-3600,2023-02-01 21:17:08+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'data_classes.py']",['5e0a75b0700572fb9fc63658ca7e0be2cebc8e8f'],9,6,15,2,,,
+544fc9cb4d54fd2be27f709ca154e91b7b5b4f8d,build: Change python requirement,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-02 09:55:55+01:00,-3600,2023-02-02 09:55:55+01:00,-3600,True,False,['pyproject.toml'],['c5bd7a02304a472c0a6078e03a94191326e54a26'],2,1,3,1,,,
+aacc0dfd344ce4bd69363ad7d849e0f5aa6f23eb,ci: fix semantic release,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-08 11:57:30+01:00,-3600,2023-02-08 11:57:30+01:00,-3600,True,False,['release.yml'],['544fc9cb4d54fd2be27f709ca154e91b7b5b4f8d'],1,1,2,1,,,
+51994d984367555d30ffc55e31e62a9737723d4e,ci: Update python versions tested,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-08 12:08:19+01:00,-3600,2023-02-08 12:08:19+01:00,-3600,True,False,['tests.yml'],['aacc0dfd344ce4bd69363ad7d849e0f5aa6f23eb'],1,1,2,1,,,
+01e8cb61a863732186c53b8b464bc1b1a5dbf149,docs: update python req. badge,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-08 12:26:05+01:00,-3600,2023-02-08 12:26:05+01:00,-3600,True,False,['README.md'],['e02dcb36261b6e4a568ee0c3a4cb0d9c01c272de'],1,1,2,1,,,
+5727d34e3cf89f81a539f25560c302187a877420,v0.6.1,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-08 22:22:38+01:00,-3600,2023-02-08 22:22:38+01:00,-3600,True,False,[],['01e8cb61a863732186c53b8b464bc1b1a5dbf149'],0,0,0,0,,,
+8cb3434d68f0aa122720937da3e07d52d1ebb146,"0.7.0
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-02-08 21:23:40+00:00,0,2023-02-08 21:23:40+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['5727d34e3cf89f81a539f25560c302187a877420'],1,22,23,2,,,
+ff4439687b763427df568815f84751cad0a4d6d2,ci: update depandabot to not update ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-09 00:39:09+01:00,-3600,2023-02-09 00:39:09+01:00,-3600,True,False,['dependabot.yml'],['8cb3434d68f0aa122720937da3e07d52d1ebb146'],9,13,22,1,,,
+ebfa424400331181efca1df4bc591d7c439f8ceb,build: updated spacy dependency to 3.5,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-09 00:45:21+01:00,-3600,2023-02-09 00:45:21+01:00,-3600,True,False,['pyproject.toml'],['ff4439687b763427df568815f84751cad0a4d6d2'],1,1,2,1,,,
+edcd96a7f2382ea435b7a5dac9888f44cbc6d64b,ci: updated when cov. comment are created,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-09 00:46:57+01:00,-3600,2023-02-09 00:46:57+01:00,-3600,True,False,['tests.yml'],['ebfa424400331181efca1df4bc591d7c439f8ceb'],1,1,2,1,,,
+40a8d49731c5b2c100da1e64493a78bdeb7ea2e1,docs: fix badge,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2023-02-14 14:02:25+01:00,-3600,2023-02-14 14:02:25+01:00,-3600,True,False,['README.md'],['edcd96a7f2382ea435b7a5dac9888f44cbc6d64b'],1,1,2,1,,,
+4bd152db47e3888805d60cf0fa0c17687ed53dd1,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 22.12.0 → 23.1.0](https://github.com/psf/black/compare/22.12.0...23.1.0)
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.239 → v0.0.248](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.239...v0.0.248)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-02-20 16:42:43+00:00,0,2023-02-20 16:42:43+00:00,0,True,False,['.pre-commit-config.yaml'],['40a8d49731c5b2c100da1e64493a78bdeb7ea2e1'],2,2,4,1,,,
+036b6115153b82bd75ae26e869494a30084137db,"[pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,2023-02-20 16:42:51+00:00,0,2023-02-20 16:42:51+00:00,0,True,False,"['getters.py', 'test_getters.py']",['4bd152db47e3888805d60cf0fa0c17687ed53dd1'],2,1,3,2,,,
+5635aacc900ed366deedbb111934c664da52aa15,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.248 → v0.0.252](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.248...v0.0.252)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-02-27 16:41:50+00:00,0,2023-02-27 16:41:50+00:00,0,True,False,['.pre-commit-config.yaml'],['840138195317c8d0095513669621cf54b586af2a'],1,1,2,1,,,
+52da656af19e3c972afe07e7094a2f3dbc991549,ci: fix coverage badge by installing package in editable mode,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-02-28 11:41:18+01:00,-3600,2023-02-28 11:41:18+01:00,-3600,True,False,['tests.yml'],['aefb8cea0b891f89480cc81caed7ebd22285bdbc'],1,1,2,1,,,
+e1bbdb74b3550073e8143b90692d75e9e1fc7204,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.252 → v0.0.254](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.252...v0.0.254)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-03-06 16:45:09+00:00,0,2023-03-06 16:45:09+00:00,0,True,False,['.pre-commit-config.yaml'],['52da656af19e3c972afe07e7094a2f3dbc991549'],1,1,2,1,,,
+bfe842446028ecae62899a684f2099f75b8ed2ae,fix: Updated spacy dependency,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2023-03-08 13:15:44+01:00,-3600,2023-03-08 13:15:44+01:00,-3600,True,False,['pyproject.toml'],['57bd49ad9757d5e78f1c80d482cdc7a7206d1a75'],0,1,1,1,,,
+c98a89dadedc2d76debda9f86c00f23fdb9f0ca6,"0.7.1
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-03-08 12:17:01+00:00,0,2023-03-08 12:17:01+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['bfe842446028ecae62899a684f2099f75b8ed2ae'],1,8,9,2,,,
+ee1c10c53e9bd0a1a7f8e2eb5b257d2c66877b9a,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.254 → v0.0.257](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.254...v0.0.257)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-03-20 16:42:47+00:00,0,2023-03-20 16:42:47+00:00,0,True,False,['.pre-commit-config.yaml'],['c98a89dadedc2d76debda9f86c00f23fdb9f0ca6'],1,1,2,1,,,
+310400955c2d0bd2bd0afabf9cfb489f0f8f0c2e,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.257 → v0.0.259](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.257...v0.0.259)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-03-27 16:42:22+00:00,0,2023-03-27 16:42:22+00:00,0,True,False,['.pre-commit-config.yaml'],['ef5bd86106291eb91cb1980dfc4c0a7dc62b9671'],1,1,2,1,,,
+460b1f636a52c72f872589d35e44886ac5eb2b52,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.1.0 → 23.3.0](https://github.com/psf/black/compare/23.1.0...23.3.0)
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.259 → v0.0.260](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.259...v0.0.260)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-04-03 16:50:44+00:00,0,2023-04-03 16:50:44+00:00,0,True,False,['.pre-commit-config.yaml'],['9c9ac1098634771020f9e6438b5c4a114e4902ac'],2,2,4,1,,,
+6e0e779497e26e4c17d1fd03fbd831ddd44c04d7,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/docformatter: v1.5.1 → v1.6.3](https://github.com/PyCQA/docformatter/compare/v1.5.1...v1.6.3)
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.260 → v0.0.262](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.260...v0.0.262)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-04-24 16:43:47+00:00,0,2023-04-24 16:43:47+00:00,0,True,False,['.pre-commit-config.yaml'],['e0efce538e39b37414b9542a170430236dcc7efa'],2,2,4,1,,,
+24f3a424251c84dc3104f8fd09a20df2a2c2cc0b,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/docformatter: v1.6.3 → v1.6.4](https://github.com/PyCQA/docformatter/compare/v1.6.3...v1.6.4)
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.262 → v0.0.263](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.262...v0.0.263)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-01 16:45:55+00:00,0,2023-05-01 16:45:55+00:00,0,True,False,['.pre-commit-config.yaml'],['d608a3e569fc51b510c142ffdeb8fdbfe413d62c'],2,2,4,1,,,
+856ce9767c0b623cd52459c11f4f2ccbbc2881df,"[pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,2023-05-01 16:46:57+00:00,0,2023-05-01 16:46:58+00:00,0,True,False,"['add_new_language.py', 'component.py', 'getters.py']",['24f3a424251c84dc3104f8fd09a20df2a2c2cc0b'],4,4,8,3,,,
+05c1535d067091ce85a65d92ae96173c8749d82c,build: Removed upper bound on dev dependencies,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-05-01 18:50:47-07:00,25200,2023-05-01 18:50:47-07:00,25200,True,False,"['.pre-commit-config.yaml', 'pyproject.toml']",['57bd49ad9757d5e78f1c80d482cdc7a7206d1a75'],11,11,22,2,,,
+067d716795f9e388bfea211e7b3487185fcb2570,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/docformatter: v1.6.4 → v1.6.5](https://github.com/PyCQA/docformatter/compare/v1.6.4...v1.6.5)
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.263 → v0.0.265](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.263...v0.0.265)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-08 16:45:29+00:00,0,2023-05-08 16:45:29+00:00,0,True,False,['.pre-commit-config.yaml'],['02189cea74664c256781ffcfb99558a15901a216'],2,2,4,1,,,
+f0b1099c39fe8ae406140f1e9f7d5ce478cb8ae1,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.265 → v0.0.267](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.265...v0.0.267)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-15 16:42:10+00:00,0,2023-05-15 16:42:10+00:00,0,True,False,['.pre-commit-config.yaml'],['d4ed05eeab687d8d636dd43f1bd2aeb893db85a3'],1,1,2,1,,,
+527157b372edf7871e807e41e63cc4a163926ffe,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/docformatter: v1.6.5 → v1.7.1](https://github.com/PyCQA/docformatter/compare/v1.6.5...v1.7.1)
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.267 → v0.0.269](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.267...v0.0.269)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-22 16:41:45+00:00,0,2023-05-22 16:41:45+00:00,0,True,False,['.pre-commit-config.yaml'],['a3b34d7521d727821c5096c8b2f7d52eb84ee745'],2,2,4,1,,,
+fba1c0a96e0bf67e25f4e38b26364cf4a408f341,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.269 → v0.0.270](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.269...v0.0.270)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-29 16:41:38+00:00,0,2023-05-29 16:41:38+00:00,0,True,False,['.pre-commit-config.yaml'],['e9c2ddcbbc79327eb235a7d9640833990d062c77'],1,1,2,1,,,
+2bbb38744771bd91092af174eedfccf30e51a544,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/add-trailing-comma: v2.4.0 → v2.5.1](https://github.com/asottile/add-trailing-comma/compare/v2.4.0...v2.5.1)
+- [github.com/PyCQA/docformatter: v1.7.1 → v1.7.2](https://github.com/PyCQA/docformatter/compare/v1.7.1...v1.7.2)
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.270 → v0.0.272](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.270...v0.0.272)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-12 16:45:00+00:00,0,2023-06-12 16:45:00+00:00,0,True,False,['.pre-commit-config.yaml'],['c7b980a638ef183b220b0b080a2404c65a8fa3ce'],3,3,6,1,,,
+68126afd7c10c01d4164adb17815bcc74402f403,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/docformatter: v1.7.2 → v1.7.3](https://github.com/PyCQA/docformatter/compare/v1.7.2...v1.7.3)
+- [github.com/charliermarsh/ruff-pre-commit: v0.0.272 → v0.0.275](https://github.com/charliermarsh/ruff-pre-commit/compare/v0.0.272...v0.0.275)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-26 16:44:23+00:00,0,2023-06-26 16:44:23+00:00,0,True,False,['.pre-commit-config.yaml'],['a1b8eda9c0128f556214ac0890e4a5d52a624cc9'],2,2,4,1,,,
+f543423f05c451b2b3aba1ee2a239bef6470070a,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/add-trailing-comma: v2.5.1 → v3.0.0](https://github.com/asottile/add-trailing-comma/compare/v2.5.1...v3.0.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-03 16:48:32+00:00,0,2023-07-03 16:48:32+00:00,0,True,False,['.pre-commit-config.yaml'],['2fd442f9e1a98991ff2761b991856f5de02118ff'],1,1,2,1,,,
+e0990b588078a3ff8cb5f6599982d1a0f4982943,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/docformatter: v1.7.3 → v1.7.4](https://github.com/PyCQA/docformatter/compare/v1.7.3...v1.7.4)
+- https://github.com/charliermarsh/ruff-pre-commit → https://github.com/astral-sh/ruff-pre-commit
+- [github.com/astral-sh/ruff-pre-commit: v0.0.275 → v0.0.277](https://github.com/astral-sh/ruff-pre-commit/compare/v0.0.275...v0.0.277)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-10 16:47:28+00:00,0,2023-07-10 16:47:28+00:00,0,True,False,['.pre-commit-config.yaml'],['45289c713233324e9e7cc1da9f63f59499a5d3b4'],3,3,6,1,,,
+f35545471f9f09f0d3b8a13da080ce18d086db44,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/PyCQA/docformatter: v1.7.4 → v1.7.5](https://github.com/PyCQA/docformatter/compare/v1.7.4...v1.7.5)
+- [github.com/psf/black: 23.3.0 → 23.7.0](https://github.com/psf/black/compare/23.3.0...23.7.0)
+- [github.com/astral-sh/ruff-pre-commit: v0.0.277 → v0.0.278](https://github.com/astral-sh/ruff-pre-commit/compare/v0.0.277...v0.0.278)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-17 16:48:44+00:00,0,2023-07-17 16:48:44+00:00,0,True,False,['.pre-commit-config.yaml'],['fc61cbf34f65596e0d11caecabcb95c9c226aa50'],3,3,6,1,,,
+210c8a8cd1771c919de19a2db079af93f4a5f442,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.0.278 → v0.0.280](https://github.com/astral-sh/ruff-pre-commit/compare/v0.0.278...v0.0.280)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-24 16:44:34+00:00,0,2023-07-24 16:44:34+00:00,0,True,False,['.pre-commit-config.yaml'],['392bb9d761d8c8aff20e8a4f74f0c09b7faa6c00'],1,1,2,1,,,
+df2ccae8378736b3f31c6b6794406a9a2f50977a,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/asottile/add-trailing-comma: v3.0.0 → v3.0.1](https://github.com/asottile/add-trailing-comma/compare/v3.0.0...v3.0.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-31 16:49:33+00:00,0,2023-07-31 16:49:33+00:00,0,True,False,['.pre-commit-config.yaml'],['d604f2fcf47ce243837f85a6a650afbc25b3f51c'],1,1,2,1,,,
+ec95beb1cc774639087446a04073e55ad561edde,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.0.280 → v0.0.282](https://github.com/astral-sh/ruff-pre-commit/compare/v0.0.280...v0.0.282)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-07 16:46:26+00:00,0,2023-08-07 16:46:26+00:00,0,True,False,['.pre-commit-config.yaml'],['6910380a3bb7cd48a7edcdd953ebf1a154d9cc10'],1,1,2,1,,,
+499ad72b3db2049d4a3dd633483f1b6b119f9729,fix: Removed upper bound,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2023-08-08 10:35:13+02:00,-7200,2023-08-08 10:35:13+02:00,-7200,True,False,['pyproject.toml'],['a0af9c5763860b0fab070c77b1931006263e4b9f'],7,7,14,1,,,
+ce9608e696f32d507f6e02991fa3542fa3581645,Update release.yml,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2023-08-08 10:52:56+02:00,-7200,2023-08-08 10:52:56+02:00,-7200,True,False,['release.yml'],['499ad72b3db2049d4a3dd633483f1b6b119f9729'],1,1,2,1,,,
+355000967ddbd5d74f9982748890237a04b281c1,Update release.yml,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,GitHub,noreply@github.com,2023-08-08 11:00:42+02:00,-7200,2023-08-08 11:00:42+02:00,-7200,True,False,['release.yml'],['ce9608e696f32d507f6e02991fa3542fa3581645'],1,1,2,1,,,
+bf7a040777c52fb30ad5d4ee5c6a08491af4cf72,"0.7.2
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-08-08 09:01:39+00:00,0,2023-08-08 09:01:39+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['355000967ddbd5d74f9982748890237a04b281c1'],1,7,8,2,,,
+3847f624da918b91eed54813663bf33f089bd7bf,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.0.282 → v0.0.284](https://github.com/astral-sh/ruff-pre-commit/compare/v0.0.282...v0.0.284)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-14 16:46:49+00:00,0,2023-08-14 16:46:49+00:00,0,True,False,['.pre-commit-config.yaml'],['bf7a040777c52fb30ad5d4ee5c6a08491af4cf72'],1,1,2,1,,,
+1c1a92bc90611b5ff1cc570f16217ccf2c81db7e,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.0.284 → v0.0.285](https://github.com/astral-sh/ruff-pre-commit/compare/v0.0.284...v0.0.285)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-21 16:46:54+00:00,0,2023-08-21 16:46:54+00:00,0,True,False,['.pre-commit-config.yaml'],['76313c49cd67114b41a71cde137d78cc14b324ff'],1,1,2,1,,,
+bc09b924164a804a42c86f936f66f8ebd4186a24,docs: lock requirementns,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-08-22 14:07:23+02:00,-7200,2023-08-22 14:07:23+02:00,-7200,True,False,['pyproject.toml'],['227bac70c64c20cd2e69a0c1f5ccf55199e7746e'],39,17,56,1,,,
+b03583442487170af46b627be635edc48996b5ee,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.0.285 → v0.0.286](https://github.com/astral-sh/ruff-pre-commit/compare/v0.0.285...v0.0.286)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-28 16:47:43+00:00,0,2023-08-28 16:47:43+00:00,0,True,False,['.pre-commit-config.yaml'],['bc09b924164a804a42c86f936f66f8ebd4186a24'],1,1,2,1,,,
+dce2f58fa25c552314e7766438538db89867091c,fix: update docs dependencies,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 10:30:31+02:00,-7200,2023-09-04 10:30:31+02:00,-7200,True,False,['pyproject.toml'],['2a38b8db72deb3e1804ff18d5e9fb8159ef07fce'],2,2,4,1,,,
+38db5517ebde5f066972fac0a5914eb5c4894bb2,"0.7.3
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-09-04 08:32:16+00:00,0,2023-09-04 08:32:16+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['dce2f58fa25c552314e7766438538db89867091c'],1,11,12,2,,,
+75932a848902f656b79ff30f6a190feb09f4f1a2,fix: Added option,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 11:24:01+02:00,-7200,2023-09-04 11:24:01+02:00,-7200,True,False,"['component.py', 'data_classes.py', 'visualize.py', 'test_visualize.py']",['38db5517ebde5f066972fac0a5914eb5c4894bb2'],36,86,122,4,0.0975609756097561,1.0,0.0
+dba36c2e58e205d2d0ad2f151d5f517fb9d692bb,"0.7.4
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-09-04 09:29:20+00:00,0,2023-09-04 09:29:20+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['e8c64a73a7d83908a854293133227e61d8cc2312'],1,7,8,2,,,
+f24fde5e4163a82dcc5be1d4b694cac5fc80c8d5,ci: Updated documentation ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 11:42:23+02:00,-7200,2023-09-04 11:42:23+02:00,-7200,True,False,"['documentation.yml', 'pyproject.toml']",['38db5517ebde5f066972fac0a5914eb5c4894bb2'],5,2,7,2,,,
+4e762104edcf3b41fe0c237fb1e0d2e5809e9dbf,fix: error in pyproject.toml,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 11:48:18+02:00,-7200,2023-09-04 11:48:18+02:00,-7200,True,False,['pyproject.toml'],['1ad7008b226ca45c8c01d7acd90dc19388d6047e'],1,1,2,1,,,
+1c5a1773ec21061f80f5ff2e8adce91d5376ef44,"0.7.5
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-09-04 09:49:10+00:00,0,2023-09-04 09:49:10+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['4e762104edcf3b41fe0c237fb1e0d2e5809e9dbf'],1,7,8,2,,,
+bab750c798de9bd5179063aa2f1792871888c54e,ci: update docs ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 12:37:27+02:00,-7200,2023-09-04 12:37:27+02:00,-7200,True,False,"['documentation.yml', 'pyproject.toml']",['4e762104edcf3b41fe0c237fb1e0d2e5809e9dbf'],1,2,3,2,,,
+14405e47c9cfd903e1e81ff5a9c38af413225311,ci: Move to cruft template,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 13:17:34+02:00,-7200,2023-09-04 13:17:34+02:00,-7200,True,False,"['.cookiecutter.json', '.cruft.json', 'check_for_rej.yml', 'cruft.yml', 'dependabot_automerge.yml', 'documentation.yml', 'pre-commit.yml', 'release.yml', 'stale.yml', 'stalebot.yml', 'static_type_checks.yml', 'tests.yml', '.pre-commit-config.yaml', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'pyproject.toml', 'tasks.py']",['bab750c798de9bd5179063aa2f1792871888c54e'],143,1195,1338,17,0.6865079365079365,0.7777777777777778,0.8095238095238095
+6a5f5340c852807c08efa44822e92df2152bfd51,chore: remove .venv from gitignore,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 13:19:08+02:00,-7200,2023-09-04 13:19:08+02:00,-7200,True,False,['.gitignore'],['14405e47c9cfd903e1e81ff5a9c38af413225311'],0,3,3,1,,,
+6dd0f15c9e2c93fbf855daa394527219e222aef0,fix: Require 3.9,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 13:23:25+02:00,-7200,2023-09-04 13:23:25+02:00,-7200,True,False,"['tests.yml', 'README.md', 'pyproject.toml']",['6a5f5340c852807c08efa44822e92df2152bfd51'],4,4,8,3,,,
+7d778deaf2be613e6d271005471228fd01a84c2b,style: applied new linter,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 15:09:59+02:00,-7200,2023-09-04 15:09:59+02:00,-7200,True,False,"['component.py', 'data_classes.py', 'getters.py', 'da.py', 'emoji.py', 'en.py', 'no.py', 'sv.py', 'utils.py', 'visualize.py', 'test_all_langs.py', 'test_bugs.py', 'test_data_classes.py', 'test_getters.py', 'test_utils.py', 'test_visualize.py']",['6dd0f15c9e2c93fbf855daa394527219e222aef0'],119,116,235,16,0.0,1.0,0.0
+57660c5bb675cb818bad52a55a609f48f5d32f27,chore: remove tox files,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 15:15:39+02:00,-7200,2023-09-04 15:15:39+02:00,-7200,True,False,['.gitignore'],['7d778deaf2be613e6d271005471228fd01a84c2b'],0,3,3,1,,,
+9af3abaf5b34edf1569d602f97a270a715aaa7fa,ci: Added requirements to test development,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 15:16:00+02:00,-7200,2023-09-04 15:16:00+02:00,-7200,True,False,['pyproject.toml'],['57660c5bb675cb818bad52a55a609f48f5d32f27'],0,3,3,1,,,
+818b2a55bdb8be2294337990696da68c235a4b21,fix: ran static type checks,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 15:24:38+02:00,-7200,2023-09-04 15:24:38+02:00,-7200,True,False,"['pyproject.toml', 'getters.py', 'visualize.py']",['b345c41b8ea493315c7cacb1553251d3bfdddfd7'],7,8,15,3,,,
+95ba4c7c525a173638a6de9de88477d77a890f61,docs: removed badged from readme,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 15:47:08+02:00,-7200,2023-09-04 15:47:08+02:00,-7200,True,False,['README.md'],['818b2a55bdb8be2294337990696da68c235a4b21'],2,0,2,1,,,
+3b0b23ffa3407475818b228bd461d13698f8f52f,ci: updated docs ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 15:52:19+02:00,-7200,2023-09-04 15:52:19+02:00,-7200,True,False,['documentation.yml'],['95ba4c7c525a173638a6de9de88477d77a890f61'],1,2,3,1,,,
+39fb29016ee54e2b034b6c5dd9f7502dd5d86bca,rerun ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 15:53:59+02:00,-7200,2023-09-04 15:53:59+02:00,-7200,True,False,[],['3b0b23ffa3407475818b228bd461d13698f8f52f'],0,0,0,0,,,
+27a5812978d37a5c49b5df39cbe211a9f0fd2d31,rerun ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 17:40:37+02:00,-7200,2023-09-04 17:40:37+02:00,-7200,True,False,[],['39fb29016ee54e2b034b6c5dd9f7502dd5d86bca'],0,0,0,0,,,
+7e38eac5e03444039dc8094b69656c80bd5b5dec,ci: fix pytest args,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 17:53:07+02:00,-7200,2023-09-04 17:53:07+02:00,-7200,True,False,['pyproject.toml'],['27a5812978d37a5c49b5df39cbe211a9f0fd2d31'],1,1,2,1,,,
+c1bf06317d35793da6f3cc7ab65916400de2b9bb,fix: update types to match 3.9,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 18:03:47+02:00,-7200,2023-09-04 18:03:47+02:00,-7200,True,False,['data_classes.py'],['7e38eac5e03444039dc8094b69656c80bd5b5dec'],2,2,4,1,,,
+f0d18b8a8f65fec942baa916b852d70e01f853f8,fix: Update dependencies to include pyright,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 18:10:25+02:00,-7200,2023-09-04 18:10:25+02:00,-7200,True,False,"['pyproject.toml', 'visualize.py']",['c1bf06317d35793da6f3cc7ab65916400de2b9bb'],3,6,9,2,,,
+3a9473ff62e6937b25c21bbb09165cda2c8c574c,ci: Updated ci requirements,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 18:12:53+02:00,-7200,2023-09-04 18:12:53+02:00,-7200,True,False,"['documentation.yml', 'pyproject.toml']",['f0d18b8a8f65fec942baa916b852d70e01f853f8'],2,1,3,2,,,
+dde290fdf9e3e95a4fca5a4612c2b372e67cd062,ci: ensure token for documentation,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 18:15:33+02:00,-7200,2023-09-04 18:15:33+02:00,-7200,True,False,['documentation.yml'],['3a9473ff62e6937b25c21bbb09165cda2c8c574c'],1,2,3,1,,,
+7365765f3cfd867c3bd7597c47df7d834b8897a7,ci: fix pytest ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 18:17:52+02:00,-7200,2023-09-04 18:17:52+02:00,-7200,True,False,['pyproject.toml'],['dde290fdf9e3e95a4fca5a4612c2b372e67cd062'],1,1,2,1,,,
+df4caae79d9d0346f9cb2332ac1fda2ddc3378db,"0.7.6
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-09-04 16:23:54+00:00,0,2023-09-04 16:23:54+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['7365765f3cfd867c3bd7597c47df7d834b8897a7'],24,1400,1424,2,,,
+698143efe35b719c2b4e1fc590990a0a71701227,ci: debugging static type check,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 18:26:08+02:00,-7200,2023-09-04 18:26:08+02:00,-7200,True,False,['static_type_checks.yml'],['df4caae79d9d0346f9cb2332ac1fda2ddc3378db'],0,4,4,1,,,
+71f042c503efdc2dcc79ea3ee3d02f09e9c3b6ca,ci: debug pyright,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 18:27:30+02:00,-7200,2023-09-04 18:27:30+02:00,-7200,True,False,['static_type_checks.yml'],['698143efe35b719c2b4e1fc590990a0a71701227'],1,1,2,1,,,
+0bb6984d5af407648e06a27c48907558c7897cef,ci: debug pyright,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 18:29:15+02:00,-7200,2023-09-04 18:29:15+02:00,-7200,True,False,['static_type_checks.yml'],['71f042c503efdc2dcc79ea3ee3d02f09e9c3b6ca'],0,1,1,1,,,
+69925b2306c255119889c0f4493309a03a4b5ff1,ci: fix ci for docs,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 18:54:35+02:00,-7200,2023-09-04 18:54:35+02:00,-7200,True,False,['documentation.yml'],['0bb6984d5af407648e06a27c48907558c7897cef'],1,1,2,1,,,
+8f3e8df9c1d7ce45bb6773eb6edaf98e9914d850,ci: clean up static type check ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-04 18:59:54+02:00,-7200,2023-09-04 18:59:54+02:00,-7200,True,False,['static_type_checks.yml'],['69925b2306c255119889c0f4493309a03a4b5ff1'],5,0,5,1,,,
+d754016908c4e3c1f1ef538b716ba405c41fd324,add mult. proc functionality,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:12:43+02:00,-7200,2023-09-18 18:12:43+02:00,-7200,True,False,"['component.py', 'data_classes.py', 'getters.py', 'test_component.py', 'test_data_classes.py']",['8f3e8df9c1d7ce45bb6773eb6edaf98e9914d850'],256,440,696,5,0.6717557251908397,0.9083969465648855,0.6564885496183206
+341ecdbe6bdc5fca387fb6caff6dab301bb4b0a1,fix: remove type hints for docstrings,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:13:32+02:00,-7200,2023-09-18 18:13:32+02:00,-7200,True,False,['component.py'],['d754016908c4e3c1f1ef538b716ba405c41fd324'],2,2,4,1,,,
+60d3c637742586065af8d07f2573962b942eea6c,fix: hide component utility function from docs,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:17:15+02:00,-7200,2023-09-18 18:17:15+02:00,-7200,True,False,['component.py'],['341ecdbe6bdc5fca387fb6caff6dab301bb4b0a1'],2,2,4,1,,,
+0e9c61cbddfaf82260b4849e2a472d4ea563c6a3,feat: updated pre-commit,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:26:24+02:00,-7200,2023-09-18 18:26:24+02:00,-7200,True,False,"['.pre-commit-config.yaml', '__init__.py', 'xx.py', 'tasks.py', 'test_bugs.py', 'test_component.py', 'test_getters.py', 'test_visualize.py']",['60d3c637742586065af8d07f2573962b942eea6c'],16,13,29,8,,,
+26429faec5861a61ae83af112ad6bac444c81147,fix: ran static type checks,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:29:48+02:00,-7200,2023-09-18 18:29:48+02:00,-7200,True,False,['data_classes.py'],['0e9c61cbddfaf82260b4849e2a472d4ea563c6a3'],3,3,6,1,,,
+a3e3d9840933ab8217be9518cc6287e8146d3437,fix: unsure dynamic function is not hidden,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:37:41+02:00,-7200,2023-09-18 18:37:41+02:00,-7200,True,False,"['component.py', 'test_visualize.py']",['26429faec5861a61ae83af112ad6bac444c81147'],2,4,6,2,,,
+bc96a20bdc4ce898f5258efb6f1617eba24cc1df,fix: ran static type check,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:42:01+02:00,-7200,2023-09-18 18:42:01+02:00,-7200,True,False,['visualize.py'],['8f3e8df9c1d7ce45bb6773eb6edaf98e9914d850'],1,1,2,1,,,
+a155574bd3c4303c73c1582fa6f49bb66a2728db,fix: ran static type check,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:44:25+02:00,-7200,2023-09-18 18:44:25+02:00,-7200,True,False,['visualize.py'],['bc96a20bdc4ce898f5258efb6f1617eba24cc1df'],1,1,2,1,,,
+4f5a23d52b962997081f6f49d89caf24a749b758,"0.7.7
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-09-18 16:44:45+00:00,0,2023-09-18 16:44:45+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['bc96a20bdc4ce898f5258efb6f1617eba24cc1df'],1,20,21,2,,,
+a728945fdee8945aeb1587bf8d3cb76d8d12d77d,ci: update static type check,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:51:23+02:00,-7200,2023-09-18 18:51:23+02:00,-7200,True,False,['static_type_checks.yml'],['db5bc4a3e3bb1c57b1889181844266a259300cbc'],1,1,2,1,,,
+5dbcb9576a5f1293ec416ae8910e52df4aa7c371,"0.7.8
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-09-18 16:51:48+00:00,0,2023-09-18 16:51:48+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['db5bc4a3e3bb1c57b1889181844266a259300cbc'],1,10,11,2,,,
+0c4a0ae4211bad1d868685c59c54014cf6339278,fix: static type check,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:52:45+02:00,-7200,2023-09-18 18:52:45+02:00,-7200,True,False,['visualize.py'],['a728945fdee8945aeb1587bf8d3cb76d8d12d77d'],2,2,4,1,,,
+7f92e1896e496609586782b1557d5cabde3e93d0,Merge branch 'main' into add_functionality_for_multiprocessing,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 18:54:23+02:00,-7200,2023-09-18 18:54:23+02:00,-7200,True,False,"['static_type_checks.yml', 'CHANGELOG.md', 'pyproject.toml', 'visualize.py']",['a3e3d9840933ab8217be9518cc6287e8146d3437'],5,33,38,4,,,
+32019d73eec8f9ad2791389d8540abd04d07b213,"0.7.9
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-09-18 16:55:54+00:00,0,2023-09-18 16:55:54+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['d7bd5a9722831dcd74944ea9314b1105deef842b'],1,16,17,2,,,
+f3c7235ab6ae78a49814c3f12bd554ede739ce75,ci: update static type check ci,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 19:26:52+02:00,-7200,2023-09-18 19:26:52+02:00,-7200,True,False,['static_type_checks.yml'],['7f92e1896e496609586782b1557d5cabde3e93d0'],1,1,2,1,,,
+f06f30776710a7409570549c6db8a9be366bb0a2,ci: test pyright,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 19:30:13+02:00,-7200,2023-09-18 19:30:13+02:00,-7200,True,False,['static_type_checks.yml'],['ce2a7ffcb93fe8f810fa99cd8fb151eb3b8582c4'],1,2,3,1,,,
+88db7932c1d524a2a7fd7fa07d2782052ebc9485,ci: debug pyright,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 19:31:43+02:00,-7200,2023-09-18 19:31:43+02:00,-7200,True,False,['static_type_checks.yml'],['f06f30776710a7409570549c6db8a9be366bb0a2'],1,1,2,1,,,
+8c7c8cb0a7170a4e0f634b59279c9eda3984aef2,ci: clean up after debugging,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 19:33:26+02:00,-7200,2023-09-18 19:33:26+02:00,-7200,True,False,['static_type_checks.yml'],['88db7932c1d524a2a7fd7fa07d2782052ebc9485'],2,1,3,1,,,
+1bbaa6a13a38907dffb1d147cf6c75c4b2ec9492,fix: issue with cmap,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-09-18 19:39:35+02:00,-7200,2023-09-18 19:39:35+02:00,-7200,True,False,['visualize.py'],['93f5b2e86bacafab761640f4d178eafd39acbec9'],1,1,2,1,,,
+24e3bcf7f886394689dc1f534a6b61afc61c27f7,"0.8.0
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-09-18 17:44:56+00:00,0,2023-09-18 17:44:56+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['1bbaa6a13a38907dffb1d147cf6c75c4b2ec9492'],1,66,67,2,,,
+dc98c783f0534d0a4089df5f0e520ee4b4d1c3ae,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.0.287 → v0.0.291](https://github.com/astral-sh/ruff-pre-commit/compare/v0.0.287...v0.0.291)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-25 16:49:32+00:00,0,2023-09-25 16:49:32+00:00,0,True,False,['.pre-commit-config.yaml'],['24e3bcf7f886394689dc1f534a6b61afc61c27f7'],1,1,2,1,,,
+ae5643303a180fbfbe028e1613d3482e3a991bf2,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.9.1 → 23.10.0](https://github.com/psf/black/compare/23.9.1...23.10.0)
+- [github.com/astral-sh/ruff-pre-commit: v0.0.291 → v0.1.1](https://github.com/astral-sh/ruff-pre-commit/compare/v0.0.291...v0.1.1)
+- [github.com/pre-commit/pre-commit-hooks: v4.4.0 → v4.5.0](https://github.com/pre-commit/pre-commit-hooks/compare/v4.4.0...v4.5.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-23 16:30:42+00:00,0,2023-10-23 16:30:42+00:00,0,True,False,['.pre-commit-config.yaml'],['e142f6e1a0bb8b3533f763ff9e4c3137d57bf442'],3,3,6,1,,,
+c3fd8bc254612efb8013e207e62ad8ea86f5eda1,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.10.0 → 23.10.1](https://github.com/psf/black/compare/23.10.0...23.10.1)
+- [github.com/astral-sh/ruff-pre-commit: v0.1.1 → v0.1.3](https://github.com/astral-sh/ruff-pre-commit/compare/v0.1.1...v0.1.3)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-30 16:30:32+00:00,0,2023-10-30 16:30:32+00:00,0,True,False,['.pre-commit-config.yaml'],['b1bb3b73757121d956779d6ea9da639a03288ab2'],2,2,4,1,,,
+7d5ff045cf99d6112318ba5d6ee370ba4480f853,ci: update cruft,pre-commit-ci[bot],pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-30 16:31:01+00:00,0,2023-10-30 16:31:01+00:00,0,True,False,['.cruft.json'],['b1bb3b73757121d956779d6ea9da639a03288ab2'],1,1,2,1,,,
+ad45222c7f6ed372bbf94cfe8e4e74325ce122da,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.1.3 → v0.1.4](https://github.com/astral-sh/ruff-pre-commit/compare/v0.1.3...v0.1.4)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-06 16:30:41+00:00,0,2023-11-06 16:30:41+00:00,0,True,False,['.pre-commit-config.yaml'],['3528672c47cddf9fb6a504530e83a16b13f3d114'],1,1,2,1,,,
+7a51a2826d9575aaeb6921380e88e1682e493bda,Fix visualization bugs in asent module,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-09 13:32:44+01:00,-3600,2023-11-09 13:32:44+01:00,-3600,True,False,['visualize.py'],['1bbaa6a13a38907dffb1d147cf6c75c4b2ec9492'],4,5,9,1,0.0,1.0,0.0
+543d3142d8e60dbe83b6dba68221386591574a8b,Add sample analysis script for trump speech,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-09 13:35:54+01:00,-3600,2023-11-09 13:35:54+01:00,-3600,True,False,"['Analysis_of_trump_speech.ipynb', 'trump_speech.txt']",['7a51a2826d9575aaeb6921380e88e1682e493bda'],0,842,842,2,,,
+304b275305ae7d908d34f13f8098c594e172caa2,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.10.1 → 23.11.0](https://github.com/psf/black/compare/23.10.1...23.11.0)
+- [github.com/astral-sh/ruff-pre-commit: v0.1.4 → v0.1.5](https://github.com/astral-sh/ruff-pre-commit/compare/v0.1.4...v0.1.5)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-13 16:30:43+00:00,0,2023-11-13 16:30:43+00:00,0,True,False,['.pre-commit-config.yaml'],['373459ec3a4010d93adf95c215774167bfb5a75c'],2,2,4,1,,,
+b6d6e94bf5a99e9025382cf54fa4598858f060ac,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.1.5 → v0.1.6](https://github.com/astral-sh/ruff-pre-commit/compare/v0.1.5...v0.1.6)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-20 16:30:21+00:00,0,2023-11-20 16:30:21+00:00,0,True,False,['.pre-commit-config.yaml'],['9ac45e9618fc277adca9fcda1c727bd3efd246e8'],1,1,2,1,,,
+a6ea3774760bf62974d55eac1a1aec74e38e2367,"fix: Fix sentiment scaling issue with ""but"" conjunction",Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-21 15:13:20+01:00,-3600,2023-11-21 15:13:20+01:00,-3600,True,False,['getters.py'],['543d3142d8e60dbe83b6dba68221386591574a8b'],7,9,16,1,0.0,0.0,0.0
+7bf6e22f003eb3c97f579fc2e83e9b87679a8fd5,"Add makefile with installation, linting, testing,
+and static type checking",Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-21 15:13:33+01:00,-3600,2023-11-21 15:13:33+01:00,-3600,True,False,['makefile'],['a6ea3774760bf62974d55eac1a1aec74e38e2367'],0,16,16,1,,,
+b9b29be27b5bc4f45325f44cc901a6c3916674a8,"0.8.1
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-11-21 14:22:36+00:00,0,2023-11-21 14:22:36+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['0c40613b3a13a745fabbb38f55501fdb5fdffd96'],1,91,92,2,,,
+95fb8375c03dd4530adef34c3bb5d4ddbedbf24f,"fix: Added additonal documentation to multi sent
+processing",Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-27 21:41:22+01:00,-3600,2023-11-27 21:41:22+01:00,-3600,True,False,"['multi_sentence.png', 'introduction.rst', 'introduction.ipynb', 'data_classes.py']",['b9b29be27b5bc4f45325f44cc901a6c3916674a8'],18,185,203,4,1.0,1.0,1.0
+cd72fe8d246e7c5034f17eb4a0b0459936f1112b,Added docs serve to makefile,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-27 21:41:48+01:00,-3600,2023-11-27 21:41:48+01:00,-3600,True,False,"['.gitignore', 'makefile']",['95fb8375c03dd4530adef34c3bb5d4ddbedbf24f'],1,6,7,2,,,
+d4f94d0ddd7bfb4fc8847aa2beecb1861c542899,"0.8.2
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-11-27 20:46:03+00:00,0,2023-11-27 20:46:03+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['cd72fe8d246e7c5034f17eb4a0b0459936f1112b'],1,13,14,2,,,
+444bdb64e2fe3bfe14a808d2d505dd13df3f9165,fix: Added sentence-prediction visualizer,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-30 20:13:29+01:00,-3600,2023-11-30 20:13:29+01:00,-3600,True,False,"['model_sentence_prediction.png', 'introduction.rst', 'introduction.ipynb', 'visualize.py', 'test_visualize.py']",['cd72fe8d246e7c5034f17eb4a0b0459936f1112b'],107,148,255,5,0.0,0.8723404255319149,0.0
+15f6799653d18779b1e36b30064c1045ccc68ea2,docs: Added example analysis of speech,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-30 20:13:45+01:00,-3600,2023-11-30 20:13:45+01:00,-3600,True,False,"['index.rst', 'Analysis_of_trump_speech.ipynb']",['444bdb64e2fe3bfe14a808d2d505dd13df3f9165'],189,78,267,2,,,
+42a6b754de0e7947453bb1d266ddb1f1f2c6a427,"0.8.3
+
+Automatically generated by python-semantic-release",github-actions,github-actions@github.com,github-actions,github-actions@github.com,2023-11-30 19:18:25+00:00,0,2023-11-30 19:18:25+00:00,0,True,False,"['CHANGELOG.md', 'pyproject.toml']",['392370dab5e14617d08ffd628b2fb98ba91d6f90'],1,16,17,2,,,
+b01cec6ddead200d7b48a985b95e9e26a7493020,docs: fix broken link,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-30 20:21:32+01:00,-3600,2023-11-30 20:21:32+01:00,-3600,True,False,['conf.py'],['42a6b754de0e7947453bb1d266ddb1f1f2c6a427'],1,1,2,1,,,
+5622adc0c42377bd1fb5e8bc6f7e3ec4570f956e,docs: Update page title,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-30 20:32:38+01:00,-3600,2023-11-30 20:32:38+01:00,-3600,True,False,"['introduction.rst', 'Analysis_of_trump_speech.ipynb']",['b01cec6ddead200d7b48a985b95e9e26a7493020'],12,5,17,2,,,
+565fb014e58b25a10018135eb01ef9acb336a702,docs: make sure analysis is added,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-30 20:43:20+01:00,-3600,2023-11-30 20:43:20+01:00,-3600,True,False,"['index.rst', 'Analysis_of_trump_speech.ipynb']",['5622adc0c42377bd1fb5e8bc6f7e3ec4570f956e'],5,5,10,2,,,
+3ba118acd12046eaf1ce973449f774041f62ebc9,docs: rename tutorial,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-30 20:51:53+01:00,-3600,2023-11-30 20:51:53+01:00,-3600,True,False,"['index.rst', 'analysis_of_a_speech.ipynb']",['565fb014e58b25a10018135eb01ef9acb336a702'],1,1,2,2,,,
+d1e021f3740dea6bbbb354f46621f8b0d058a351,docs: removed outdated docs requirements,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,Kenneth Enevoldsen,kennethcenevoldsen@gmail.com,2023-11-30 21:05:13+01:00,-3600,2023-11-30 21:05:13+01:00,-3600,True,False,"['documentation.yml', 'conf.py', 'analysis_of_a_speech.ipynb', 'requirements.txt']",['3ba118acd12046eaf1ce973449f774041f62ebc9'],7,5,12,4,,,
+69e3e46f3ba0d726941035d0d4df2657497896b9,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.1.6 → v0.1.7](https://github.com/astral-sh/ruff-pre-commit/compare/v0.1.6...v0.1.7)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-11 16:31:19+00:00,0,2023-12-11 16:31:19+00:00,0,True,False,['.pre-commit-config.yaml'],['d1e021f3740dea6bbbb354f46621f8b0d058a351'],1,1,2,1,,,
+ad94dd414fbb693a0b3e783b39a8a5d6dfc708c8,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.11.0 → 23.12.0](https://github.com/psf/black/compare/23.11.0...23.12.0)
+- [github.com/astral-sh/ruff-pre-commit: v0.1.7 → v0.1.8](https://github.com/astral-sh/ruff-pre-commit/compare/v0.1.7...v0.1.8)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-18 16:31:08+00:00,0,2023-12-18 16:31:08+00:00,0,True,False,['.pre-commit-config.yaml'],['c8afc07d8d738d07990b931c15185da116aff016'],2,2,4,1,,,
+2370460b3a085a315195985e1ebaba5a9bef6fe6,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/psf/black: 23.12.0 → 23.12.1](https://github.com/psf/black/compare/23.12.0...23.12.1)
+- [github.com/astral-sh/ruff-pre-commit: v0.1.8 → v0.1.9](https://github.com/astral-sh/ruff-pre-commit/compare/v0.1.8...v0.1.9)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-25 16:31:00+00:00,0,2023-12-25 16:31:00+00:00,0,True,False,['.pre-commit-config.yaml'],['13917af81c6ac0489ea3963a2adf69837c87ae73'],2,2,4,1,,,
+0dd84022d72fa72afcd33c3e4823759de6f251a2,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.1.9 → v0.1.11](https://github.com/astral-sh/ruff-pre-commit/compare/v0.1.9...v0.1.11)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-08 16:31:17+00:00,0,2024-01-08 16:31:17+00:00,0,True,False,['.pre-commit-config.yaml'],['ded762a9cdaec1955f25fb53209324ea9b4c4b37'],1,1,2,1,,,
+d3b7340046c3fee9e973ce27be68163509028961,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.1.11 → v0.1.13](https://github.com/astral-sh/ruff-pre-commit/compare/v0.1.11...v0.1.13)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-15 16:30:26+00:00,0,2024-01-15 16:30:26+00:00,0,True,False,['.pre-commit-config.yaml'],['a051a559ce0bf9ff33360cdf6987e188e892b2f2'],1,1,2,1,,,
+c05c076005d52df3fc7426cd4a1c317ccd77f1ac,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/astral-sh/ruff-pre-commit: v0.1.13 → v0.1.14](https://github.com/astral-sh/ruff-pre-commit/compare/v0.1.13...v0.1.14)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-22 16:30:23+00:00,0,2024-01-22 16:30:23+00:00,0,True,False,['.pre-commit-config.yaml'],['b17984024a676573f401290ab6381747b7d779d9'],1,1,2,1,,,

@@ -1,0 +1,17 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+823b8eb6957f7032268537ae201ebfb8e44c279a,Add router authentication and basic GET methods,Radomír Bosák,radomir.bosak@gmail.com,Radomír Bosák,radomir.bosak@gmail.com,2020-05-02 17:30:44+09:00,-32400,2020-05-02 17:30:44+09:00,-32400,True,False,"['README.md', '__init__.py', '__version__.py', 'cli.py', 'humax.py', 'run_humax.py', 'setup.py']",[],0,345,345,7,0.4744525547445255,0.6277372262773723,0.6861313868613139
+7eac9af98f9cb7139b6c0f16d6401f8f09633d49,License under MIT,Radomír Bosák,radomir.bosak@gmail.com,Radomír Bosák,radomir.bosak@gmail.com,2020-05-02 18:52:16+09:00,-32400,2020-05-02 18:52:16+09:00,-32400,True,False,['README.md'],['823b8eb6957f7032268537ae201ebfb8e44c279a'],0,6,6,1,,,
+40b6d14a9810b58d8c09cebd67e856d40450e211,Create Makefile to help with packaging,Radomír Bosák,radomir.bosak@gmail.com,Radomír Bosák,radomir.bosak@gmail.com,2020-05-02 19:02:11+09:00,-32400,2020-05-02 19:02:11+09:00,-32400,True,False,['Makefile'],['7eac9af98f9cb7139b6c0f16d6401f8f09633d49'],0,11,11,1,,,
+949c430b3e78ab26fa020ef3d29ba8c8d5c28840,Add installation instructions,Radomír Bosák,radomir.bosak@gmail.com,Radomír Bosák,radomir.bosak@gmail.com,2020-05-02 19:05:06+09:00,-32400,2020-05-02 19:05:06+09:00,-32400,True,False,['README.md'],['40b6d14a9810b58d8c09cebd67e856d40450e211'],0,13,13,1,,,
+74003841d329af6228067705e61f599cc17ef1d6,"Add bash completion
+
+Fixes #6.",Radomír Bosák,radomir.bosak@gmail.com,Radomír Bosák,radomir.bosak@gmail.com,2020-05-03 09:44:17+09:00,-32400,2020-05-03 09:46:16+09:00,-32400,True,False,['humax'],['949c430b3e78ab26fa020ef3d29ba8c8d5c28840'],0,59,59,1,,,
+145d05f5664ee5740b38a0eaec7adfb96455e0f2,"Add fish shell completion
+
+Fixes #7.",Radomír Bosák,radomir.bosak@gmail.com,Radomír Bosák,radomir.bosak@gmail.com,2020-05-03 09:44:35+09:00,-32400,2020-05-03 09:46:24+09:00,-32400,True,False,"['Makefile', 'README.md', 'humax.fish']",['74003841d329af6228067705e61f599cc17ef1d6'],0,45,45,3,,,
+a2ab0a2cd626b77ac8796ad6dd9a1e2f6594623c,Fix readme heading levels,Radomír Bosák,radomir.bosak@gmail.com,Radomír Bosák,radomir.bosak@gmail.com,2020-05-03 09:47:12+09:00,-32400,2020-05-03 09:47:12+09:00,-32400,True,False,['README.md'],['145d05f5664ee5740b38a0eaec7adfb96455e0f2'],1,1,2,1,,,
+6acb33b3c2991e3ceb38a01d46b330d3db9b026a,"Log in to router only when needed
+
+This speeds up some commands, such as list-methods and makes shell
+completion independent on network.",Radomír Bosák,radomir.bosak@gmail.com,Radomír Bosák,radomir.bosak@gmail.com,2020-05-03 09:51:59+09:00,-32400,2020-05-03 09:51:59+09:00,-32400,True,False,['cli.py'],['a2ab0a2cd626b77ac8796ad6dd9a1e2f6594623c'],1,3,4,1,0.0,0.0,1.0
+f23499d58c28fa8ba15115f3790cbeb645195f0b,Add Makefile shortcut to local-reinstallation to ease development,Radomír Bosák,radomir.bosak@gmail.com,Radomír Bosák,radomir.bosak@gmail.com,2020-05-03 09:56:13+09:00,-32400,2020-05-03 09:56:13+09:00,-32400,True,False,['Makefile'],['6acb33b3c2991e3ceb38a01d46b330d3db9b026a'],0,3,3,1,,,

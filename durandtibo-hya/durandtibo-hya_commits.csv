@@ -1,0 +1,564 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+c72c3ce19f0f1abc9e5683efe034bbf8e477ee30,Initial commit,Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 17:06:04-08:00,28800,2023-01-06 17:06:04-08:00,28800,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,159,159,3,,,
+8df4621c105ac8b045983309702bfd4bb623208b,Setup repo (#1),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 17:20:24-08:00,28800,2023-01-06 17:20:24-08:00,28800,True,False,"['.flake8', '.pre-commit-config.yaml', 'CODEOWNERS', 'Makefile', 'environment.yaml', 'poetry.lock', 'pyproject.toml']",['c72c3ce19f0f1abc9e5683efe034bbf8e477ee30'],0,1631,1631,7,,,
+86ccb36cf76957fd58f9b253dc5e29b97c1fca82,Add `ResolverRegistry` (#2),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 18:55:07-08:00,28800,2023-01-06 18:55:07-08:00,28800,True,False,"['poetry.lock', 'pyproject.toml', '__init__.py', 'registry.py', '__init__.py', 'test_registry.py']",['8df4621c105ac8b045983309702bfd4bb623208b'],2,122,124,6,0.5932203389830508,1.0,0.5932203389830508
+85cd7b2d60823a14948f44f9aa41bed5b459c27e,Add CI workflow (#3),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 19:01:13-08:00,28800,2023-01-06 19:01:13-08:00,28800,True,False,['ci.yaml'],['86ccb36cf76957fd58f9b253dc5e29b97c1fca82'],0,64,64,1,,,
+8fedf037910bbc2267c0f4f3902ff36f7148bdd0,Add nightly workflow (#4),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 19:07:46-08:00,28800,2023-01-06 19:07:46-08:00,28800,True,False,['nightly.yaml'],['85cd7b2d60823a14948f44f9aa41bed5b459c27e'],0,49,49,1,,,
+60b26043f92bcca3accaac2f001e8f16dd99e865,Add some resolvers (#5),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 19:30:58-08:00,28800,2023-01-06 19:30:58-08:00,28800,True,False,"['pyproject.toml', '__init__.py', 'registry.py', 'resolvers.py', 'test_registry.py', 'test_resolvers.py']",['8fedf037910bbc2267c0f4f3902ff36f7148bdd0'],4,318,322,6,1.0,1.0,1.0
+5e223dfb9eac37f0f11220324d370915ceace800,Add PyTorch resolvers (#6),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 19:49:43-08:00,28800,2023-01-06 19:49:43-08:00,28800,True,False,"['pyproject.toml', '__init__.py', 'import_utils.py', 'pytorch.py', 'test_pytorch.py']",['60b26043f92bcca3accaac2f001e8f16dd99e865'],1,60,61,5,1.0,1.0,1.0
+cd3d8f6d4c6ad67a1ac6e73358dca94d1d06061c,Update README (#7),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 20:05:24-08:00,28800,2023-01-06 20:05:24-08:00,28800,True,False,['README.md'],['5e223dfb9eac37f0f11220324d370915ceace800'],2,81,83,1,,,
+feb279a85dfbbf6fd0f934a4ce8523f2b3c5069b,Add documentation (#8),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 20:22:50-08:00,28800,2023-01-06 20:22:50-08:00,28800,True,False,"['docs.yaml', 'get_started.md', 'index.md', 'mkdocs.yml']",['cd3d8f6d4c6ad67a1ac6e73358dca94d1d06061c'],0,199,199,4,,,
+2d70ec3ca6d9cb94e3293501a6a223fff3be4a02,Clean and improve resolvers (#9),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 21:17:23-08:00,28800,2023-01-06 21:17:23-08:00,28800,True,False,"['pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['feb279a85dfbbf6fd0f934a4ce8523f2b3c5069b'],90,49,139,3,0.0,0.0,0.0
+ee661d4f0331410e51e47eb1be9564d348e47113,Add resolver documentation (#10),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 21:22:09-08:00,28800,2023-01-06 21:22:09-08:00,28800,True,False,"['resolvers.md', 'mkdocs.yml']",['2d70ec3ca6d9cb94e3293501a6a223fff3be4a02'],0,183,183,2,,,
+b81dfa465d7aea6a554413b961f217ecc388e8df,Add workflow to publish a PyPI package (#11),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 21:28:16-08:00,28800,2023-01-06 21:28:16-08:00,28800,True,False,"['pypi.yaml', 'Makefile', 'pyproject.toml']",['ee661d4f0331410e51e47eb1be9564d348e47113'],2,26,28,3,,,
+cc11e419b9cf9bcdc163a7e6bc77d55a2885486a,Add github related files (#12),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 21:34:48-08:00,28800,2023-01-06 21:34:48-08:00,28800,True,False,"['CONTRIBUTING.md', 'bug-report.yml', 'feature-request.yml', 'PULL_REQUEST_TEMPLATE.md', 'pypi.yaml']",['b81dfa465d7aea6a554413b961f217ecc388e8df'],1,128,129,5,,,
+5f371524f9ab8efbcc6ceb5e54be60e4eaf19c3c,Create CODE_OF_CONDUCT.md (#13),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 21:39:41-08:00,28800,2023-01-06 21:39:41-08:00,28800,True,False,['CODE_OF_CONDUCT.md'],['cc11e419b9cf9bcdc163a7e6bc77d55a2885486a'],0,128,128,1,,,
+de9671d530b21ceee3c6c315ab09b65c9292884a,Release `0.0.1` (#14),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 21:56:10-08:00,28800,2023-01-06 21:56:10-08:00,28800,True,False,['pyproject.toml'],['5f371524f9ab8efbcc6ceb5e54be60e4eaf19c3c'],2,2,4,1,,,
+773edf5da90cb9171d1d4628974499ff70e140ae,Add `to_path` resolver (#15),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-06 22:12:37-08:00,28800,2023-01-06 22:12:37-08:00,28800,True,False,"['resolvers.md', 'pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['de9671d530b21ceee3c6c315ab09b65c9292884a'],1,27,28,4,1.0,1.0,1.0
+1ec4c64f07128a85277881977788bb730bc1c8df,Update dependencies (#16),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-07 11:43:10-08:00,28800,2023-01-07 11:43:10-08:00,28800,True,False,"['poetry.lock', 'pyproject.toml']",['773edf5da90cb9171d1d4628974499ff70e140ae'],9,9,18,2,,,
+b63b9a3e2ceac2dcf6753b70079e0cd2563c440c,Rename `beaface` to `hya` (#17),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-08 20:05:36-08:00,28800,2023-01-08 20:05:36-08:00,28800,True,False,"['.flake8', 'CONTRIBUTING.md', 'bug-report.yml', 'ci.yaml', 'Makefile', 'README.md', 'get_started.md', 'index.md', 'resolvers.md', 'mkdocs.yml', 'environment.yaml', 'poetry.lock', 'pyproject.toml', '__init__.py', '__init__.py', 'import_utils.py', 'pytorch.py', 'registry.py', 'resolvers.py', 'test_pytorch.py', 'test_registry.py', 'test_resolvers.py']",['1ec4c64f07128a85277881977788bb730bc1c8df'],146,150,296,22,1.0,1.0,1.0
+aecac49e44a32131bb786257e78e7a13d58495c0,Release new package (#18),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-08 20:22:04-08:00,28800,2023-01-08 20:22:04-08:00,28800,True,False,['pyproject.toml'],['b63b9a3e2ceac2dcf6753b70079e0cd2563c440c'],1,1,2,1,,,
+66dc0a544b6ec9029c42ef7604758bd62ad312b7,Update PyPI workflow (#19),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-08 20:30:41-08:00,28800,2023-01-08 20:30:41-08:00,28800,True,False,['pypi.yaml'],['aecac49e44a32131bb786257e78e7a13d58495c0'],1,1,2,1,,,
+71cba5c08f77771addcba328406e287bb8afe6f6,New version (#20),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-08 20:36:05-08:00,28800,2023-01-08 20:36:05-08:00,28800,True,False,['pyproject.toml'],['66dc0a544b6ec9029c42ef7604758bd62ad312b7'],1,1,2,1,,,
+6ad2d45d1336e05d83218fa6265a13381310077b,Release version 0.0.2 (#21),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-08 20:41:15-08:00,28800,2023-01-08 20:41:15-08:00,28800,True,False,['pyproject.toml'],['71cba5c08f77771addcba328406e287bb8afe6f6'],1,1,2,1,,,
+1a41497b2114082c816711c14a4bef4214f51003,Add `ceildiv` resolver (#22),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-11 17:22:04-08:00,28800,2023-01-11 17:22:04-08:00,28800,True,False,"['poetry.lock', 'pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['6ad2d45d1336e05d83218fa6265a13381310077b'],17,35,52,4,1.0,1.0,1.0
+7cfc724f71ffb8f6e8472cbe19f95151fa9034a1,Release version 0.0.3 (#23),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-11 17:27:59-08:00,28800,2023-01-11 17:27:59-08:00,28800,True,False,['pyproject.toml'],['1a41497b2114082c816711c14a4bef4214f51003'],1,1,2,1,,,
+9447c299f4160e25d91c59072d7eab9c7e3fd070,Add `max` and `min` resolvers (#24),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-11 18:24:39-08:00,28800,2023-01-11 18:24:39-08:00,28800,True,False,"['pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['7cfc724f71ffb8f6e8472cbe19f95151fa9034a1'],1,51,52,3,1.0,1.0,1.0
+dc2d8e3b4ed933700637709e09b9aba6a2d4925a,Release version `0.0.4` (#25),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-11 18:31:01-08:00,28800,2023-01-11 18:31:01-08:00,28800,True,False,['pyproject.toml'],['9447c299f4160e25d91c59072d7eab9c7e3fd070'],1,1,2,1,,,
+22784920ae48ad9f83706b76e63445fb8cfe80c3,Add PI resolver (#26),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-19 21:06:03-08:00,28800,2023-01-19 21:06:03-08:00,28800,True,False,"['pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['dc2d8e3b4ed933700637709e09b9aba6a2d4925a'],18,33,51,3,1.0,1.0,1.0
+be5ae887ca0010ea900fb68cc54b2ab6af365b86,Release version `0.0.5` (#27),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-19 21:11:37-08:00,28800,2023-01-19 21:11:37-08:00,28800,True,False,['pyproject.toml'],['22784920ae48ad9f83706b76e63445fb8cfe80c3'],1,1,2,1,,,
+e19197fdf9c7b076033a2b28c178d551284ebb01,Add asinh resolver (#28),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-20 15:12:36-08:00,28800,2023-01-20 15:12:36-08:00,28800,True,False,"['pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['be5ae887ca0010ea900fb68cc54b2ab6af365b86'],1,22,23,3,1.0,1.0,1.0
+0b36ca1adddd1cec56f60fea7b1916ad505b89c4,Add asinh resolver (#29),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-20 15:18:04-08:00,28800,2023-01-20 15:18:04-08:00,28800,True,False,"['pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['e19197fdf9c7b076033a2b28c178d551284ebb01'],1,22,23,3,1.0,1.0,1.0
+a6aaa5ab8efb76f3718690bb98fc8c4a4f54c4c0,Add log and log10 resolvers (#30),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-20 15:42:19-08:00,28800,2023-01-20 15:42:19-08:00,28800,True,False,"['pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['0b36ca1adddd1cec56f60fea7b1916ad505b89c4'],1,50,51,3,1.0,1.0,1.0
+c999bc49f307b444b2c949b933bbc9d9f589268a,Add exp resolver (#31),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-20 15:56:25-08:00,28800,2023-01-20 15:56:25-08:00,28800,True,False,"['pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['a6aaa5ab8efb76f3718690bb98fc8c4a4f54c4c0'],1,22,23,3,1.0,1.0,1.0
+9a15cb35892d6104137b5f205134ec129b390e11,Release version `0.0.6` (#32),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-01-20 16:00:52-08:00,28800,2023-01-20 16:00:52-08:00,28800,True,False,['pyproject.toml'],['c999bc49f307b444b2c949b933bbc9d9f589268a'],1,1,2,1,,,
+c277db0957dfe354cd7a2b124dd82ee8577378d3,Update dependencies and add badge (#33),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-02-05 13:12:31-08:00,28800,2023-02-05 13:12:31-08:00,28800,True,False,"['.pre-commit-config.yaml', 'README.md', 'index.md', 'poetry.lock', 'pyproject.toml']",['9a15cb35892d6104137b5f205134ec129b390e11'],125,141,266,5,,,
+bd2f51d9f9f530abeaaf877fac29902cb4244b18,Add extra badge (#34),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-02-05 13:36:28-08:00,28800,2023-02-05 13:36:28-08:00,28800,True,False,"['README.md', 'index.md']",['c277db0957dfe354cd7a2b124dd82ee8577378d3'],0,8,8,2,,,
+676abad05666d3dadb82d654630dc38454b2bd9a,Update nightly workflow (#35),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-02-18 09:17:48-08:00,28800,2023-02-18 09:17:48-08:00,28800,True,False,['nightly.yaml'],['bd2f51d9f9f530abeaaf877fac29902cb4244b18'],0,26,26,1,,,
+f23e89529b9857c101a9d4af9bf6fd74770867b6,Add dtype resolver (#36),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-03-18 20:33:15-07:00,25200,2023-03-18 20:33:15-07:00,25200,True,False,"['poetry.lock', 'pyproject.toml', 'pytorch.py', 'test_pytorch.py']",['676abad05666d3dadb82d654630dc38454b2bd9a'],188,497,685,4,1.0,1.0,1.0
+dd60053fe01358bfa14e34e046b44b8301c139b3,Update CI workflow (#37),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-03-18 21:44:40-07:00,25200,2023-03-18 21:44:40-07:00,25200,True,False,"['ci.yaml', 'Makefile', 'poetry.lock', 'pytorch.py', 'test_pytorch.py']",['f23e89529b9857c101a9d4af9bf6fd74770867b6'],45,173,218,5,1.0,1.0,1.0
+d71ec4094bf43296591f30e51c4245a8379ad0a4,Update nightly workflow (#38),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-03-18 21:57:57-07:00,25200,2023-03-18 21:57:57-07:00,25200,True,False,"['ci.yaml', 'nightly.yaml']",['dd60053fe01358bfa14e34e046b44b8301c139b3'],4,145,149,2,,,
+cef0b6a94020bfea27b1401e363a67f694096d75,Release version `0.0.7` (#39),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-03-18 22:05:50-07:00,25200,2023-03-18 22:05:50-07:00,25200,True,False,['pyproject.toml'],['d71ec4094bf43296591f30e51c4245a8379ad0a4'],1,1,2,1,,,
+d59c94771c1a16af10a88c83d8eed935b251a175,Add path resolver (#40),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-03-22 17:58:08-07:00,25200,2023-03-22 17:58:08-07:00,25200,True,False,"['pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['cef0b6a94020bfea27b1401e363a67f694096d75'],1,18,19,3,1.0,1.0,1.0
+309fb75bd6449e91465318adf0ed2cc46148de32,Release version `0.0.8` (#41),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-03-22 18:06:03-07:00,25200,2023-03-22 18:06:03-07:00,25200,True,False,"['poetry.lock', 'pyproject.toml']",['d59c94771c1a16af10a88c83d8eed935b251a175'],59,60,119,2,,,
+9b6d276866e90952c7848843d348bdbbde25554b,Add `len` resolver (#42),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-04-03 17:47:24-07:00,25200,2023-04-03 17:47:24-07:00,25200,True,False,"['pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['309fb75bd6449e91465318adf0ed2cc46148de32'],1,22,23,3,1.0,1.0,1.0
+3f055de5c272378fbc27ea0a8beeef49449225b9,Replace flake8 by ruff (#43),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-04-03 18:28:14-07:00,25200,2023-04-03 18:28:14-07:00,25200,True,False,"['.pre-commit-config.yaml', 'Makefile', 'poetry.lock', 'pyproject.toml', '__init__.py', 'registry.py', 'test_pytorch.py', 'test_registry.py', 'test_resolvers.py']",['9b6d276866e90952c7848843d348bdbbde25554b'],211,241,452,9,,,
+f50906625ae128974c9f87c8378b51429df40d11,Release version `0.0.9` (#44),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-04-03 23:43:54-07:00,25200,2023-04-03 23:43:54-07:00,25200,True,False,"['.pre-commit-config.yaml', 'pyproject.toml']",['3f055de5c272378fbc27ea0a8beeef49449225b9'],2,2,4,2,,,
+a2e3f44d18fc796465cc7b872bfe42d1b140d10c,Remove codecov dependency (#45),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-04-13 07:41:58-07:00,25200,2023-04-13 07:41:58-07:00,25200,True,False,"['.pre-commit-config.yaml', 'poetry.lock', 'pyproject.toml']",['f50906625ae128974c9f87c8378b51429df40d11'],105,137,242,3,,,
+c2a5e2eda86cb2a839e77c930915f1324fcdbdb5,Update dependencies (#46),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-04-14 19:47:00-07:00,25200,2023-04-14 19:47:00-07:00,25200,True,False,"['.flake8', 'poetry.lock', 'pyproject.toml']",['a2e3f44d18fc796465cc7b872bfe42d1b140d10c'],40,24,64,3,,,
+b67b836de91b91c2763b84b5099181151e9613e7,Improve some tests (#47),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-04-14 20:17:57-07:00,25200,2023-04-14 20:17:57-07:00,25200,True,False,"['pyproject.toml', 'test_pytorch.py', 'test_registry.py']",['c2a5e2eda86cb2a839e77c930915f1324fcdbdb5'],5,5,10,3,,,
+3dde90270cd1ff10844b17a3f6d3a39ac159438b,Improve nightly workflow (#48),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-12 20:40:22-07:00,25200,2023-05-12 20:40:22-07:00,25200,True,False,['nightly.yaml'],['b67b836de91b91c2763b84b5099181151e9613e7'],2,38,40,1,,,
+e059fbc753b7cc50821fff14870765fccf016696,Create dependency-review.yml (#49),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-19 09:21:52-07:00,25200,2023-05-19 09:21:52-07:00,25200,True,False,['dependency-review.yml'],['3dde90270cd1ff10844b17a3f6d3a39ac159438b'],0,20,20,1,,,
+65ad2237bbca9a6e763c5aab8156c85aa0c3da00,Create dependabot.yml (#50),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-19 10:09:28-07:00,25200,2023-05-19 10:09:28-07:00,25200,True,False,['dependabot.yml'],['e059fbc753b7cc50821fff14870765fccf016696'],0,11,11,1,,,
+258959deb33e326e63796a5c10f7bf3a88305a29,"Bump pymdown-extensions from 9.11 to 10.0 (#51)
+
+Bumps [pymdown-extensions](https://github.com/facelessuser/pymdown-extensions) from 9.11 to 10.0.
+- [Release notes](https://github.com/facelessuser/pymdown-extensions/releases)
+- [Commits](https://github.com/facelessuser/pymdown-extensions/compare/9.11...10.0)
+
+---
+updated-dependencies:
+- dependency-name: pymdown-extensions
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-19 10:28:16-07:00,25200,2023-05-19 10:28:16-07:00,25200,True,False,['poetry.lock'],['65ad2237bbca9a6e763c5aab8156c85aa0c3da00'],4,17,21,1,,,
+b5aefc414827358f7787dde865b8a25552e68ace,"Bump ruff from 0.0.261 to 0.0.269 (#52)
+
+Bumps [ruff](https://github.com/charliermarsh/ruff) from 0.0.261 to 0.0.269.
+- [Release notes](https://github.com/charliermarsh/ruff/releases)
+- [Changelog](https://github.com/charliermarsh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/charliermarsh/ruff/compare/v0.0.261...v0.0.269)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-19 11:03:12-07:00,25200,2023-05-19 11:03:12-07:00,25200,True,False,"['poetry.lock', 'pyproject.toml']",['258959deb33e326e63796a5c10f7bf3a88305a29'],20,20,40,2,,,
+daec51f3bc78155b2f47c7f23aec075b88b06a05,"Bump mkdocs-material from 8.5.11 to 9.1.13 (#53)
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 8.5.11 to 9.1.13.
+- [Release notes](https://github.com/squidfunk/mkdocs-material/releases)
+- [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG)
+- [Upgrade guide](https://github.com/squidfunk/mkdocs-material/blob/master/docs/upgrade.md)
+- [Commits](https://github.com/squidfunk/mkdocs-material/compare/8.5.11...9.1.13)
+
+---
+updated-dependencies:
+- dependency-name: mkdocs-material
+  dependency-type: direct:development
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-19 11:15:13-07:00,25200,2023-05-19 11:15:13-07:00,25200,True,False,"['poetry.lock', 'pyproject.toml']",['b5aefc414827358f7787dde865b8a25552e68ace'],9,109,118,2,,,
+805e8feb0ae7e8548232d85958675869b2d86b16,"Bump docformatter from 1.6.0 to 1.7.0 (#54)
+
+Bumps [docformatter](https://github.com/PyCQA/docformatter) from 1.6.0 to 1.7.0.
+- [Release notes](https://github.com/PyCQA/docformatter/releases)
+- [Changelog](https://github.com/PyCQA/docformatter/blob/v1.7.0/CHANGELOG.md)
+- [Commits](https://github.com/PyCQA/docformatter/compare/v1.6.0...v1.7.0)
+
+---
+updated-dependencies:
+- dependency-name: docformatter
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-19 11:28:21-07:00,25200,2023-05-19 11:28:21-07:00,25200,True,False,['poetry.lock'],['daec51f3bc78155b2f47c7f23aec075b88b06a05'],3,3,6,1,,,
+81fc644edfe9868c9f83fcf3b244f46722e327dc,"Bump torch from 2.0.0 to 2.0.1 (#55)
+
+Bumps [torch](https://github.com/pytorch/pytorch) from 2.0.0 to 2.0.1.
+- [Release notes](https://github.com/pytorch/pytorch/releases)
+- [Changelog](https://github.com/pytorch/pytorch/blob/main/RELEASE.md)
+- [Commits](https://github.com/pytorch/pytorch/compare/v2.0.0...v2.0.1)
+
+---
+updated-dependencies:
+- dependency-name: torch
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-19 11:42:53-07:00,25200,2023-05-19 11:42:53-07:00,25200,True,False,['poetry.lock'],['805e8feb0ae7e8548232d85958675869b2d86b16'],301,22,323,1,,,
+d6c0e3b71ce2f04a86874cbf8b12b7aca49a1819,Update dependencies (#56),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-19 22:46:03-07:00,25200,2023-05-19 22:46:03-07:00,25200,True,False,"['.pre-commit-config.yaml', 'Makefile', 'poetry.lock', 'pyproject.toml']",['81fc644edfe9868c9f83fcf3b244f46722e327dc'],146,83,229,4,,,
+cfa39d541be5bc7f3bd33b379fe732eaa215ee49,Update CI workflow (#57),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-19 23:03:59-07:00,25200,2023-05-19 23:03:59-07:00,25200,True,False,"['ci.yaml', 'README.md', 'pyproject.toml']",['d6c0e3b71ce2f04a86874cbf8b12b7aca49a1819'],16,80,96,3,,,
+ecf847aa89074726b2c457fb969abe8070357377,Renaming (#58),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-20 09:38:09-07:00,25200,2023-05-20 09:38:09-07:00,25200,True,False,"['ci.yaml', 'nightly.yaml', 'index.md', '__init__.py', 'imports.py', 'registry.py', 'test_imports.py']",['cfa39d541be5bc7f3bd33b379fe732eaa215ee49'],10,25,35,7,1.0,1.0,1.0
+62610bbab542c917a2a1201ee3684f64d1003493,Clean CI pipeline (#59),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-20 10:01:23-07:00,25200,2023-05-20 10:01:23-07:00,25200,True,False,['ci.yaml'],['ecf847aa89074726b2c457fb969abe8070357377'],11,6,17,1,,,
+b02b74f799403b36aee81d153da1b60c11c733a0,Release version `0.0.10` (#60),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-20 18:56:00-07:00,25200,2023-05-20 18:56:00-07:00,25200,True,False,['pyproject.toml'],['62610bbab542c917a2a1201ee3684f64d1003493'],1,1,2,1,,,
+369131afb6931564ba14c02039780895bf743452,Refactor nightly workflows (#61),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-21 22:47:59-07:00,25200,2023-05-21 22:47:59-07:00,25200,True,False,"['nightly-package.yaml', 'nightly.yaml', 'pyproject.toml']",['b02b74f799403b36aee81d153da1b60c11c733a0'],101,107,208,3,,,
+8c4c6c5819f08a27b0124b43a97217e97ee44780,"Bump mkdocstrings from 0.19.1 to 0.21.2 (#62)
+
+Bumps [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings) from 0.19.1 to 0.21.2.
+- [Release notes](https://github.com/mkdocstrings/mkdocstrings/releases)
+- [Changelog](https://github.com/mkdocstrings/mkdocstrings/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/mkdocstrings/mkdocstrings/compare/0.19.1...0.21.2)
+
+---
+updated-dependencies:
+- dependency-name: mkdocstrings
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-22 10:07:56-07:00,25200,2023-05-22 10:07:56-07:00,25200,True,False,"['poetry.lock', 'pyproject.toml']",['369131afb6931564ba14c02039780895bf743452'],7,74,81,2,,,
+41b51d40b0078af267d14280b4c65c6ac0fc7b2e,"Bump mkdocs-material from 9.1.13 to 9.1.14 (#65)
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.1.13 to 9.1.14.
+- [Release notes](https://github.com/squidfunk/mkdocs-material/releases)
+- [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG)
+- [Commits](https://github.com/squidfunk/mkdocs-material/compare/9.1.13...9.1.14)
+
+---
+updated-dependencies:
+- dependency-name: mkdocs-material
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-22 10:24:05-07:00,25200,2023-05-22 10:24:05-07:00,25200,True,False,['poetry.lock'],['8c4c6c5819f08a27b0124b43a97217e97ee44780'],3,3,6,1,,,
+f8ecfc9eae50e5f7a4e7a0d44a0a3c9f47d61364,"Bump coverage from 6.5.0 to 7.2.5 (#64)
+
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 6.5.0 to 7.2.5.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/6.5.0...7.2.5)
+
+---
+updated-dependencies:
+- dependency-name: coverage
+  dependency-type: direct:development
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-22 10:26:44-07:00,25200,2023-05-22 10:26:44-07:00,25200,True,False,"['poetry.lock', 'pyproject.toml']",['41b51d40b0078af267d14280b4c65c6ac0fc7b2e'],53,54,107,2,,,
+b6bcb87af844d4978ab6cce34dd0c95e344328fa,Update dependencies (#66),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-22 13:09:00-07:00,25200,2023-05-22 13:09:00-07:00,25200,True,False,"['.pre-commit-config.yaml', 'Makefile', 'poetry.lock', 'pyproject.toml', 'resolvers.py']",['f8ecfc9eae50e5f7a4e7a0d44a0a3c9f47d61364'],98,51,149,5,1.0,1.0,1.0
+f7d61bdeda5c483585d761e06079bbf9477d9aa9,Test several omegaconf versions (#67),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-23 17:50:41-07:00,25200,2023-05-23 17:50:41-07:00,25200,True,False,"['ci.yaml', 'nightly-package.yaml', 'nightly.yaml', 'poetry.lock', 'pyproject.toml']",['b6bcb87af844d4978ab6cce34dd0c95e344328fa'],10,145,155,5,,,
+4bf5b3c072060f4669fccbf852d709abe0395a65,Release version `0.0.11` (#68),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-23 17:55:03-07:00,25200,2023-05-23 17:55:03-07:00,25200,True,False,['pyproject.toml'],['f7d61bdeda5c483585d761e06079bbf9477d9aa9'],1,1,2,1,,,
+ca1a3f0953ba330496fa964b43e3685b551ebeca,Improve workflows (#69),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-23 20:19:29-07:00,25200,2023-05-23 20:19:29-07:00,25200,True,False,"['ci.yaml', 'nightly-package.yaml', 'nightly.yaml']",['4bf5b3c072060f4669fccbf852d709abe0395a65'],0,6,6,3,,,
+4056354a3253282d16fb0d82f2cfac7b52843949,Reformat code blocks (#70),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-05-26 20:10:09-07:00,25200,2023-05-26 20:10:09-07:00,25200,True,False,"['.pre-commit-config.yaml', 'resolvers.md', 'poetry.lock', 'pyproject.toml', 'registry.py']",['ca1a3f0953ba330496fa964b43e3685b551ebeca'],87,99,186,5,0.0,1.0,0.0
+263ecfdb361acefb11419fdf2de4838911d2164f,"Bump coverage from 7.2.6 to 7.2.7 (#73)
+
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 7.2.6 to 7.2.7.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/7.2.6...7.2.7)
+
+---
+updated-dependencies:
+- dependency-name: coverage
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-12 07:12:41-07:00,25200,2023-06-12 07:12:41-07:00,25200,True,False,['poetry.lock'],['4056354a3253282d16fb0d82f2cfac7b52843949'],54,129,183,1,,,
+1064cc3b28b57042382ce8b898872db20624806d,"Bump docformatter from 1.7.1 to 1.7.2 (#75)
+
+Bumps [docformatter](https://github.com/PyCQA/docformatter) from 1.7.1 to 1.7.2.
+- [Release notes](https://github.com/PyCQA/docformatter/releases)
+- [Changelog](https://github.com/PyCQA/docformatter/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/PyCQA/docformatter/compare/v1.7.1...v1.7.2)
+
+---
+updated-dependencies:
+- dependency-name: docformatter
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-12 19:44:16-07:00,25200,2023-06-12 19:44:16-07:00,25200,True,False,['poetry.lock'],['263ecfdb361acefb11419fdf2de4838911d2164f'],4,4,8,1,,,
+d2c30bdac836f27b2972ede023dbdfd299250cc5,"Bump pytest from 7.3.1 to 7.3.2 (#74)
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 7.3.1 to 7.3.2.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/7.3.1...7.3.2)
+
+---
+updated-dependencies:
+- dependency-name: pytest
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-12 22:20:24-07:00,25200,2023-06-12 22:20:24-07:00,25200,True,False,['poetry.lock'],['1064cc3b28b57042382ce8b898872db20624806d'],4,4,8,1,,,
+67fcc81e95a12ffc2c6dd2b6f813bc2c2afa4590,"Bump mkdocs-material from 9.1.14 to 9.1.15 (#72)
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.1.14 to 9.1.15.
+- [Release notes](https://github.com/squidfunk/mkdocs-material/releases)
+- [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG)
+- [Commits](https://github.com/squidfunk/mkdocs-material/compare/9.1.14...9.1.15)
+
+---
+updated-dependencies:
+- dependency-name: mkdocs-material
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-24 23:00:26-07:00,25200,2023-06-24 23:00:26-07:00,25200,True,False,['poetry.lock'],['d2c30bdac836f27b2972ede023dbdfd299250cc5'],3,3,6,1,,,
+f040f85083e8e23646d5727e504f13b8c0e17e54,"Bump pre-commit from 3.3.2 to 3.3.3 (#76)
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 3.3.2 to 3.3.3.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v3.3.2...v3.3.3)
+
+---
+updated-dependencies:
+- dependency-name: pre-commit
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-24 23:07:59-07:00,25200,2023-06-24 23:07:59-07:00,25200,True,False,['poetry.lock'],['67fcc81e95a12ffc2c6dd2b6f813bc2c2afa4590'],70,4,74,1,,,
+273ab210669ec3d4539c298550e0e8ac643ce7f6,Update dependencies (#77),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-06-24 23:23:35-07:00,25200,2023-06-24 23:23:35-07:00,25200,True,False,"['.pre-commit-config.yaml', 'poetry.lock', 'pyproject.toml']",['f040f85083e8e23646d5727e504f13b8c0e17e54'],213,217,430,3,,,
+fbc1fe046c96bee5751b7f75d1018dfa90f3b9e5,Update workflows (#78),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-06-24 23:35:54-07:00,25200,2023-06-24 23:35:54-07:00,25200,True,False,"['ci.yaml', 'nightly-package.yaml', 'nightly-tests.yaml']",['273ab210669ec3d4539c298550e0e8ac643ce7f6'],6,2,8,3,,,
+02055c32b8f0d8d2624071442d3f4accc110fbbf,"Bump mkdocs-material from 9.1.17 to 9.1.19 (#84)
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.1.17 to 9.1.19.
+- [Release notes](https://github.com/squidfunk/mkdocs-material/releases)
+- [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG)
+- [Commits](https://github.com/squidfunk/mkdocs-material/compare/9.1.17...9.1.19)
+
+---
+updated-dependencies:
+- dependency-name: mkdocs-material
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-26 23:25:44-07:00,25200,2023-07-26 23:25:44-07:00,25200,True,False,['poetry.lock'],['fbc1fe046c96bee5751b7f75d1018dfa90f3b9e5'],3,3,6,1,,,
+8ed73752cdb8b3266bad5f7e09d52f358c0d252c,"Bump docformatter from 1.7.3 to 1.7.5 (#82)
+
+Bumps [docformatter](https://github.com/PyCQA/docformatter) from 1.7.3 to 1.7.5.
+- [Release notes](https://github.com/PyCQA/docformatter/releases)
+- [Changelog](https://github.com/PyCQA/docformatter/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/PyCQA/docformatter/compare/v1.7.3...v1.7.5)
+
+---
+updated-dependencies:
+- dependency-name: docformatter
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-26 23:34:39-07:00,25200,2023-07-26 23:34:39-07:00,25200,True,False,['poetry.lock'],['02055c32b8f0d8d2624071442d3f4accc110fbbf'],3,3,6,1,,,
+8594edb2789508cf0da127a49e493f50dea5a1c8,"Bump ruff from 0.0.275 to 0.0.284 (#89)
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.275 to 0.0.284.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.275...v0.0.284)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-19 11:20:08-07:00,25200,2023-08-19 11:20:08-07:00,25200,True,False,['poetry.lock'],['8ed73752cdb8b3266bad5f7e09d52f358c0d252c'],18,18,36,1,,,
+45b0c818b4f09dbf826cb007b20389fdbc6d1371,"Bump pylint from 2.17.4 to 2.17.5 (#86)
+
+Bumps [pylint](https://github.com/pylint-dev/pylint) from 2.17.4 to 2.17.5.
+- [Release notes](https://github.com/pylint-dev/pylint/releases)
+- [Commits](https://github.com/pylint-dev/pylint/compare/v2.17.4...v2.17.5)
+
+---
+updated-dependencies:
+- dependency-name: pylint
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-19 11:28:43-07:00,25200,2023-08-19 11:28:43-07:00,25200,True,False,['poetry.lock'],['8594edb2789508cf0da127a49e493f50dea5a1c8'],7,7,14,1,,,
+a10dd095a61fd73fa2b02a872160117fabe24064,"Bump ruff from 0.0.284 to 0.0.285 (#92)
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.0.284 to 0.0.285.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.284...v0.0.285)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-23 23:10:59-07:00,25200,2023-08-23 23:10:59-07:00,25200,True,False,['poetry.lock'],['45b0c818b4f09dbf826cb007b20389fdbc6d1371'],18,18,36,1,,,
+a725dee52c57c1daeaead8abf933b106c06fd8e4,"Bump coverage from 7.2.7 to 7.3.0 (#90)
+
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 7.2.7 to 7.3.0.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/7.2.7...7.3.0)
+
+---
+updated-dependencies:
+- dependency-name: coverage
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-23 23:11:37-07:00,25200,2023-08-23 23:11:37-07:00,25200,True,False,['poetry.lock'],['a10dd095a61fd73fa2b02a872160117fabe24064'],62,54,116,1,,,
+1c2201862d267c7c20ece57a1320605645cbb5e3,"Bump mkdocs-material from 9.1.19 to 9.1.21 (#87)
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.1.19 to 9.1.21.
+- [Release notes](https://github.com/squidfunk/mkdocs-material/releases)
+- [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG)
+- [Commits](https://github.com/squidfunk/mkdocs-material/compare/9.1.19...9.1.21)
+
+---
+updated-dependencies:
+- dependency-name: mkdocs-material
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-23 23:12:08-07:00,25200,2023-08-23 23:12:08-07:00,25200,True,False,['poetry.lock'],['a725dee52c57c1daeaead8abf933b106c06fd8e4'],9,12,21,1,,,
+5887ce2094b12e8bf7fbcc33fe6f9f9ed230ec33,"Bump certifi from 2023.5.7 to 2023.7.22 (#91)
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2023.5.7 to 2023.7.22.
+- [Commits](https://github.com/certifi/python-certifi/compare/2023.05.07...2023.07.22)
+
+---
+updated-dependencies:
+- dependency-name: certifi
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-23 23:12:35-07:00,25200,2023-08-23 23:12:35-07:00,25200,True,False,['poetry.lock'],['1c2201862d267c7c20ece57a1320605645cbb5e3'],3,3,6,1,,,
+cae34060679378fff17cba9a7908d732e8e02a8e,"Bump black from 23.3.0 to 23.7.0 (#81)
+
+Bumps [black](https://github.com/psf/black) from 23.3.0 to 23.7.0.
+- [Release notes](https://github.com/psf/black/releases)
+- [Changelog](https://github.com/psf/black/blob/main/CHANGES.md)
+- [Commits](https://github.com/psf/black/compare/23.3.0...23.7.0)
+
+---
+updated-dependencies:
+- dependency-name: black
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-08-23 23:12:58-07:00,25200,2023-08-23 23:12:58-07:00,25200,True,False,['poetry.lock'],['5887ce2094b12e8bf7fbcc33fe6f9f9ed230ec33'],27,24,51,1,,,
+6cfdf7ad99b644a716f177f512d9986fbd966041,Update dependencies (#93),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-08-24 07:08:22-07:00,25200,2023-08-24 07:08:22-07:00,25200,True,False,"['.pre-commit-config.yaml', 'poetry.lock', 'pyproject.toml', 'pytorch.py', 'resolvers.py']",['cae34060679378fff17cba9a7908d732e8e02a8e'],305,558,863,5,1.0,1.0,1.0
+b31b903587fc68e2bd828fa3f6b4bd295a1ebb32,Improve code style (#94),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-08-24 07:18:02-07:00,25200,2023-08-24 07:18:02-07:00,25200,True,False,"['Makefile', 'pyproject.toml', '__init__.py', 'imports.py', 'pytorch.py', 'registry.py', 'resolvers.py', 'test_imports.py', 'test_pytorch.py', 'test_registry.py', 'test_resolvers.py']",['6cfdf7ad99b644a716f177f512d9986fbd966041'],19,103,122,11,0.6935483870967742,1.0,0.967741935483871
+cf95580a7060f4226385bd564c3d5084e89aacae,Improve workflows (#95),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-08-24 13:06:10-07:00,25200,2023-08-24 13:06:10-07:00,25200,True,False,"['ci.yaml', 'nightly-package.yaml', 'nightly-tests.yaml', 'README.md', 'poetry.lock', 'pyproject.toml']",['b31b903587fc68e2bd828fa3f6b4bd295a1ebb32'],89,105,194,6,,,
+3825a1b40e106ca1246946d0f389f3cce061c5ab,Improve resolvers and registry (#96),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-08-24 13:43:27-07:00,25200,2023-08-24 13:43:27-07:00,25200,True,False,"['README.md', 'pyproject.toml', 'imports.py', 'pytorch.py', 'registry.py', 'test_imports.py']",['cf95580a7060f4226385bd564c3d5084e89aacae'],17,78,95,6,0.3103448275862069,1.0,1.0
+96a4df07502d873b323fe9fd1821972a8391ec93,Release version `0.0.12` (#97),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-08-24 14:36:32-07:00,25200,2023-08-24 14:36:32-07:00,25200,True,False,['pyproject.toml'],['3825a1b40e106ca1246946d0f389f3cce061c5ab'],1,1,2,1,,,
+a840496a2c06406b3dd8ae0d4ed9e262a168323f,Minor improvements and update dependencies (#100),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-08-30 19:57:53-07:00,25200,2023-08-30 19:57:53-07:00,25200,True,False,"['ci.yaml', '.pre-commit-config.yaml', 'Makefile', 'README.md', 'poetry.lock', 'pyproject.toml']",['96a4df07502d873b323fe9fd1821972a8391ec93'],45,51,96,6,,,
+010a009e376f78d9ccd14cf8ab9ef5af185e8c25,Update dependencies and CI workflow (#101),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-09-03 21:53:48-07:00,25200,2023-09-03 21:53:48-07:00,25200,True,False,"['ci.yaml', '.pre-commit-config.yaml', 'poetry.lock', 'pyproject.toml']",['a840496a2c06406b3dd8ae0d4ed9e262a168323f'],345,213,558,4,,,
+711c53d8cc583557680910d74c26ad77a9e752a7,Refactor workflows (#107),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-09-15 14:54:10-07:00,25200,2023-09-15 14:54:10-07:00,25200,True,False,"['ci.yaml', 'coverage.yaml', 'doctest.yaml', 'format.yaml', 'nightly-tests.yaml', 'test-deps.yaml', 'test.yaml']",['010a009e376f78d9ccd14cf8ab9ef5af185e8c25'],519,352,871,7,,,
+743ed54b91b7ab902a8c6cabd84dc14be09f8a26,Update dependencies (#108),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-09-15 15:36:14-07:00,25200,2023-09-15 15:36:14-07:00,25200,True,False,"['.pre-commit-config.yaml', 'poetry.lock', 'pyproject.toml']",['711c53d8cc583557680910d74c26ad77a9e752a7'],228,226,454,3,,,
+64baa22091b0104b57190a4f4490adb250bddfdd,Add optional braceexpand dependency (#109),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-09-15 17:32:47-07:00,25200,2023-09-15 17:32:47-07:00,25200,True,False,"['poetry.lock', 'pyproject.toml', 'imports.py', 'test_imports.py']",['743ed54b91b7ab902a8c6cabd84dc14be09f8a26'],5,84,89,4,0.5581395348837209,1.0,1.0
+45b57005960f020d9b89eb80b2674d0c1f6e3326,Add braceexpand resolver (#110),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-09-15 18:19:32-07:00,25200,2023-09-15 18:19:32-07:00,25200,True,False,"['pyproject.toml', '__init__.py', 'braceexpand_.py', 'test_braceexpand.py']",['64baa22091b0104b57190a4f4490adb250bddfdd'],3,86,89,4,0.575,1.0,1.0
+b90a2b49f23612226497324aceffce44be9b2e07,Add braceexpand workflow (#111),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-09-15 18:38:46-07:00,25200,2023-09-15 18:38:46-07:00,25200,True,False,['test-deps.yaml'],['45b57005960f020d9b89eb80b2674d0c1f6e3326'],0,49,49,1,,,
+0ab943ff5b1790b70a37704422a8a2c6ed4318ce,Release version `0.0.13` (#112),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-09-15 18:58:20-07:00,25200,2023-09-15 18:58:20-07:00,25200,True,False,['pyproject.toml'],['b90a2b49f23612226497324aceffce44be9b2e07'],1,1,2,1,,,
+03c6b5bbf0f10f6d8cb374b09f81dc51b3325892,Fix PyPI deployment pipeline (#113),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-09-15 19:11:53-07:00,25200,2023-09-15 19:11:53-07:00,25200,True,False,['pypi.yaml'],['0ab943ff5b1790b70a37704422a8a2c6ed4318ce'],1,1,2,1,,,
+c8fa8cfc92be76a89e2aea6ee09f2188a5dafeff,Rename modules (#114),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-09-15 23:59:17-07:00,25200,2023-09-15 23:59:17-07:00,25200,True,False,"['pyproject.toml', '__init__.py', 'torch_.py', 'test_torch.py']",['03c6b5bbf0f10f6d8cb374b09f81dc51b3325892'],3,3,6,4,,,
+9fc934664d54eecceb3e7a1cd40274236be28f81,Update dependencies and workflows (#125),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-10-09 15:14:44-07:00,25200,2023-10-09 15:14:44-07:00,25200,True,False,"['coverage.yaml', 'doctest.yaml', 'format.yaml', 'nightly-package.yaml', 'test-deps.yaml', '.pre-commit-config.yaml', 'environment.yaml', 'poetry.lock', 'pyproject.toml']",['c8fa8cfc92be76a89e2aea6ee09f2188a5dafeff'],554,382,936,9,,,
+9b6b8cb899ff47ef92ae3e51a77a148bd3ff2e3f,Release version `0.0.14` (#126),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-10-09 15:49:46-07:00,25200,2023-10-09 15:49:46-07:00,25200,True,False,"['ci.yaml', 'nightly-tests.yaml', 'pre-commit.yaml', 'pyproject.toml']",['9fc934664d54eecceb3e7a1cd40274236be28f81'],1,32,33,4,,,
+c12fca83718174ac3941a0f32f8d6a7900ee4fb3,Update README.md (#127),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-10-09 16:13:24-07:00,25200,2023-10-09 16:13:24-07:00,25200,True,False,"['README.md', 'pyproject.toml']",['9b6b8cb899ff47ef92ae3e51a77a148bd3ff2e3f'],1,4,5,2,,,
+33756fef487b2d673a18a930e7c1b48270a01b91,"Bump urllib3 from 2.0.4 to 2.0.6 (#120)
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.0.4 to 2.0.6.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/2.0.4...2.0.6)
+
+---
+updated-dependencies:
+- dependency-name: urllib3
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-09 17:05:10-07:00,25200,2023-10-09 17:05:10-07:00,25200,True,False,['poetry.lock'],['c12fca83718174ac3941a0f32f8d6a7900ee4fb3'],0,20,20,1,,,
+5cf8d3073e83e641244ef860719869db24b9faa9,Update Makefile (#128),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-10-09 21:00:51-07:00,25200,2023-10-09 21:00:51-07:00,25200,True,False,['Makefile'],['33756fef487b2d673a18a930e7c1b48270a01b91'],2,1,3,1,,,
+930508408173650553976d715261c994552fb7e3,"Bump pre-commit from 3.4.0 to 3.5.0 (#129)
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 3.4.0 to 3.5.0.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v3.4.0...v3.5.0)
+
+---
+updated-dependencies:
+- dependency-name: pre-commit
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-16 01:20:59-08:00,28800,2023-11-16 01:20:59-08:00,28800,True,False,['poetry.lock'],['5cf8d3073e83e641244ef860719869db24b9faa9'],3,3,6,1,,,
+bafdc277e1c87740e28a7acf7f38be31482b711c,"Bump urllib3 from 2.0.6 to 2.0.7 (#131)
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.0.6 to 2.0.7.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/2.0.6...2.0.7)
+
+---
+updated-dependencies:
+- dependency-name: urllib3
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-16 09:53:46-08:00,28800,2023-11-16 09:53:46-08:00,28800,True,False,['poetry.lock'],['930508408173650553976d715261c994552fb7e3'],3,3,6,1,,,
+d9628457cdd85c3345cb0dc5e8c0e6d17bb44a9e,"Bump mkdocs-material from 9.4.4 to 9.4.8 (#137)
+
+Bumps [mkdocs-material](https://github.com/squidfunk/mkdocs-material) from 9.4.4 to 9.4.8.
+- [Release notes](https://github.com/squidfunk/mkdocs-material/releases)
+- [Changelog](https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG)
+- [Commits](https://github.com/squidfunk/mkdocs-material/compare/9.4.4...9.4.8)
+
+---
+updated-dependencies:
+- dependency-name: mkdocs-material
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-17 09:12:41-08:00,28800,2023-11-17 09:12:41-08:00,28800,True,False,['poetry.lock'],['bafdc277e1c87740e28a7acf7f38be31482b711c'],8,8,16,1,,,
+cd9cc85de8bda141c24d962fecd7ee78c4e3e211,"Bump black from 23.9.1 to 23.11.0 (#139)
+
+Bumps [black](https://github.com/psf/black) from 23.9.1 to 23.11.0.
+- [Release notes](https://github.com/psf/black/releases)
+- [Changelog](https://github.com/psf/black/blob/main/CHANGES.md)
+- [Commits](https://github.com/psf/black/compare/23.9.1...23.11.0)
+
+---
+updated-dependencies:
+- dependency-name: black
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Thibaut Durand <durand.tibo@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-18 01:35:04-08:00,28800,2023-11-18 01:35:04-08:00,28800,True,False,['poetry.lock'],['d9628457cdd85c3345cb0dc5e8c0e6d17bb44a9e'],23,19,42,1,,,
+b0b6273aed894ee961177b43036fe2eaca8426e8,Update dependencies and workflows (#147),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-11-28 13:04:03+13:00,-46800,2023-11-27 16:04:03-08:00,28800,True,False,"['nightly-package.yaml', 'test-deps.yaml', '.pre-commit-config.yaml', 'Makefile', 'poetry.lock', 'pyproject.toml']",['cd9cc85de8bda141c24d962fecd7ee78c4e3e211'],256,413,669,6,,,
+4b91ab4f9a24399d8a306d54677319cc23a0509e,Release version `0.1.0` (#151),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-11 15:11:04-08:00,28800,2023-12-11 15:11:04-08:00,28800,True,False,"['.pre-commit-config.yaml', 'README.md', 'poetry.lock', 'pyproject.toml']",['b0b6273aed894ee961177b43036fe2eaca8426e8'],67,68,135,4,,,
+58baf02b121644b61972ba4336ba6a3e3dfd2cc0,Support for python 3.12 (#152),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-11 16:15:20-08:00,28800,2023-12-11 16:15:20-08:00,28800,True,False,"['nightly-package.yaml', 'test-deps.yaml', 'test.yaml', 'Makefile', 'README.md', 'poetry.lock', 'pyproject.toml']",['4b91ab4f9a24399d8a306d54677319cc23a0509e'],23,36,59,7,,,
+04a418fd98a5249bfcb6de3ab299db6dd7f17f2c,Update nightly workflow (#153),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-11 16:30:25-08:00,28800,2023-12-11 16:30:25-08:00,28800,True,False,"['nightly-package.yaml', 'README.md']",['58baf02b121644b61972ba4336ba6a3e3dfd2cc0'],11,109,120,2,,,
+d70901b723267df85577a09f82cd54564d6eeb1e,Release version `0.1.1` (#154),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-11 16:40:31-08:00,28800,2023-12-11 16:40:31-08:00,28800,True,False,"['README.md', 'pyproject.toml']",['04a418fd98a5249bfcb6de3ab299db6dd7f17f2c'],1,2,3,2,,,
+3f530218ddde64d8b09f2e18ce14848f21eef93e,Update nightly workflow (#155),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-11 18:07:37-08:00,28800,2023-12-11 18:07:37-08:00,28800,True,False,['nightly-package.yaml'],['d70901b723267df85577a09f82cd54564d6eeb1e'],10,6,16,1,,,
+94b6eccb17b876c7c662986eb7f4d86e35116601,Improve docstrings (#164),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-25 21:51:57-08:00,28800,2023-12-25 21:51:57-08:00,28800,True,False,"['pyproject.toml', 'braceexpand_.py', 'imports.py', 'registry.py', 'resolvers.py', 'torch_.py']",['3f530218ddde64d8b09f2e18ce14848f21eef93e'],134,86,220,6,0.3673469387755102,0.0,0.02040816326530612
+80d52cbf9e873393ff7f9b1441b68735a925a91a,Update dependencies and workflows (#165),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-25 22:03:49-08:00,28800,2023-12-25 22:03:49-08:00,28800,True,False,"['docs.yaml', 'nightly-package.yaml', 'test-deps.yaml', 'test.yaml', '.pre-commit-config.yaml', 'Makefile', 'poetry.lock', 'pyproject.toml']",['94b6eccb17b876c7c662986eb7f4d86e35116601'],237,273,510,8,,,
+9f5a58d62a6f9345f1f76d81e525a610b5f249dd,Update documentation (#166),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-25 23:03:50-08:00,28800,2023-12-25 23:03:50-08:00,28800,True,False,"['index.md', 'registry.md', 'resolvers.md', 'mkdocs.yml']",['80d52cbf9e873393ff7f9b1441b68735a925a91a'],3,37,40,4,,,
+7ec807e1910c96c10a8cbb64d0fcb11c04ef5f71,Release version `0.1.2` (#167),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-25 23:20:11-08:00,28800,2023-12-25 23:20:11-08:00,28800,True,False,"['README.md', 'pyproject.toml']",['9f5a58d62a6f9345f1f76d81e525a610b5f249dd'],1,2,3,2,,,
+aeb8080f033c3d64ab1d1f827c819c606dbfd3ca,Improve code style (#168),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-31 20:58:34-08:00,28800,2023-12-31 20:58:34-08:00,28800,True,False,"['poetry.lock', 'pyproject.toml', '__init__.py', 'braceexpand_.py', 'imports.py', 'registry.py', 'resolvers.py', 'torch_.py', 'test_braceexpand.py', 'test_imports.py', 'test_registry.py', 'test_resolvers.py', 'test_torch.py']",['7ec807e1910c96c10a8cbb64d0fcb11c04ef5f71'],174,522,696,13,0.0,1.0,1.0
+42bd55ad8843a9218156b98d65fd80131a753b8a,Release version `0.1.3` (#169),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-31 21:35:42-08:00,28800,2023-12-31 21:35:42-08:00,28800,True,False,['pyproject.toml'],['aeb8080f033c3d64ab1d1f827c819c606dbfd3ca'],1,1,2,1,,,
+361797f1c4c632370fa6f802b739eead6113ff36,Update badges (#170),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-31 21:45:53-08:00,28800,2023-12-31 21:45:53-08:00,28800,True,False,"['README.md', 'index.md', 'pyproject.toml']",['42bd55ad8843a9218156b98d65fd80131a753b8a'],17,45,62,3,,,
+e98389a0cc12237a8f410c1ca16d68c737ea6c54,Update readme (#171),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2023-12-31 21:54:49-08:00,28800,2023-12-31 21:54:49-08:00,28800,True,False,['README.md'],['361797f1c4c632370fa6f802b739eead6113ff36'],5,14,19,1,,,
+674f826fd89d48bd79175f812e66f67da4e5b0aa,"Bump jinja2 from 3.1.2 to 3.1.3 (#173)
+
+Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.2 to 3.1.3.
+- [Release notes](https://github.com/pallets/jinja/releases)
+- [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst)
+- [Commits](https://github.com/pallets/jinja/compare/3.1.2...3.1.3)
+
+---
+updated-dependencies:
+- dependency-name: jinja2
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-17 13:54:30-08:00,28800,2024-01-17 13:54:30-08:00,28800,True,False,['poetry.lock'],['e98389a0cc12237a8f410c1ca16d68c737ea6c54'],3,23,26,1,,,
+36308ee1240365794bedcff54b463d40015a6c2f,Remove sha1 resolver (#176),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2024-01-17 15:52:10-08:00,28800,2024-01-17 15:52:10-08:00,28800,True,False,"['.pre-commit-config.yaml', 'poetry.lock', 'pyproject.toml', 'resolvers.py', 'test_resolvers.py']",['674f826fd89d48bd79175f812e66f67da4e5b0aa'],83,44,127,5,0.9090909090909091,0.0,0.0
+1e9871a380bef32f14fbc7214b85f8c63627bb67,Update documentation and add numpy dep (#177),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2024-01-17 16:57:33-08:00,28800,2024-01-17 16:57:33-08:00,28800,True,False,"['poetry.lock', 'pyproject.toml', 'imports.py', 'resolvers.py', 'torch_.py', 'test_imports.py']",['36308ee1240365794bedcff54b463d40015a6c2f'],3,162,165,6,0.2717391304347826,1.0,1.0
+188fd8b08a6675c9520d7dc437eeb68f73dd1398,Update numpy array resolver (#178),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2024-01-17 17:11:56-08:00,28800,2024-01-17 17:11:56-08:00,28800,True,False,"['test-deps.yaml', '__init__.py', 'numpy_.py', 'test_numpy.py']",['1e9871a380bef32f14fbc7214b85f8c63627bb67'],1,141,142,4,0.24242424242424243,1.0,1.0
+2c6bc6225598cd646ae251ac044eddbd75d4d565,Update package tests workflow (#179),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2024-01-17 20:25:38-08:00,28800,2024-01-17 20:25:38-08:00,28800,True,False,"['nightly-package.yaml', '__init__.py', 'package_checks.py']",['188fd8b08a6675c9520d7dc437eeb68f73dd1398'],31,132,163,3,1.0,1.0,1.0
+291cf72aad3c3d8ec6aa00dd41793162032c68bf,Rename torch resolvers (#180),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2024-01-17 22:50:23-08:00,28800,2024-01-17 22:50:23-08:00,28800,True,False,"['resolvers.md', 'pyproject.toml', 'torch_.py', 'package_checks.py', 'test_torch.py']",['2c6bc6225598cd646ae251ac044eddbd75d4d565'],19,16,35,5,1.0,1.0,1.0
+6e4d21f0fa5112cb7e176ead6cff22fd3fd82eb6,Release version `0.2.0` (#181),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2024-01-17 23:06:50-08:00,28800,2024-01-17 23:06:50-08:00,28800,True,False,"['README.md', 'pyproject.toml']",['291cf72aad3c3d8ec6aa00dd41793162032c68bf'],13,14,27,2,,,
+cf72d420275e1e41324b18957c06522f16f1a20a,Update dependencies and workflows (#183),Thibaut Durand,durand.tibo@gmail.com,GitHub,noreply@github.com,2024-01-28 00:04:54-08:00,28800,2024-01-28 00:04:54-08:00,28800,True,False,"['coverage.yaml', 'dependency-review.yml', 'docs.yaml', 'doctest.yaml', 'format.yaml', 'nightly-package.yaml', 'pre-commit.yaml', 'pypi.yaml', 'test-deps.yaml', 'test.yaml', '.pre-commit-config.yaml', 'poetry.lock', 'pyproject.toml', 'test_imports.py']",['6e4d21f0fa5112cb7e176ead6cff22fd3fd82eb6'],221,222,443,14,1.0,1.0,1.0

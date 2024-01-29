@@ -1,0 +1,634 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+c3d8cd74723e448bcd1a125c6335b65ee9b34f3f,Initial commit,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2012-11-15 11:22:30-08:00,28800,2012-11-15 11:22:30-08:00,28800,True,False,['README.md'],[],0,4,4,1,,,
+e445040370eec29aabea455813b578893fbb8cf4,"Add a license file.
+
+For the moment, kennethreitz is listed as the copyright holder, but we
+may want to change this depending on who originally wrote the code.",Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2012-11-15 19:28:30+00:00,0,2012-11-15 19:28:30+00:00,0,True,False,['LICENSE'],['c3d8cd74723e448bcd1a125c6335b65ee9b34f3f'],0,13,13,1,,,
+4c8ed1a4014d4557941c56c083d0c7bfcfe8e446,Add requirements.txt.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2012-11-15 19:30:33+00:00,0,2012-11-15 19:30:33+00:00,0,True,False,['requirements.txt'],['e445040370eec29aabea455813b578893fbb8cf4'],0,2,2,1,,,
+9507e3795bb574bfcda9eeb1eb126c878abbf9fa,Add a .gitignore file.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2012-11-15 19:31:48+00:00,0,2012-11-15 19:31:48+00:00,0,True,False,['.gitignore'],['4c8ed1a4014d4557941c56c083d0c7bfcfe8e446'],0,3,3,1,,,
+76b3e6d3a0a0df2645d7ae21519c810e75a3b4c3,"Add original kerberos code.
+
+This code is just copy-pasted from the version in Requests. I have made
+no stylistic changes of any kind. I have not tested this code. I have
+made enough changes for the parser not to complain at me.",Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2012-11-15 19:47:18+00:00,0,2012-11-15 19:47:18+00:00,0,True,False,"['__init__.py', 'kerberos.py']",['9507e3795bb574bfcda9eeb1eb126c878abbf9fa'],0,136,136,2,1.0,1.0,1.0
+9d5932e2ad83ab320a91dd34451afaa11ae66f91,Add setup.py.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2012-11-15 19:48:59+00:00,0,2012-11-15 19:48:59+00:00,0,True,False,['setup.py'],['76b3e6d3a0a0df2645d7ae21519c810e75a3b4c3'],0,9,9,1,,,
+686ad4e9cc69e2b1cf0028feb4cca40e8dd37d49,"Add authors file.
+
+Stole the author from git blame on Requests.",Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2012-11-15 19:54:57+00:00,0,2012-11-15 19:54:57+00:00,0,True,False,['AUTHORS'],['9d5932e2ad83ab320a91dd34451afaa11ae66f91'],0,1,1,1,,,
+3a4a0951fdc17a40e7824b7dcc11f50cb37d453f,Fix import statement.,Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2012-11-16 21:09:44-05:00,18000,2012-11-16 21:09:44-05:00,18000,True,False,['__init__.py'],['686ad4e9cc69e2b1cf0028feb4cca40e8dd37d49'],1,1,2,1,,,
+afd8e75a4976ef2b902a8c0e8674f70fb7cffc75,"Some refactoring (mostly renaming r to response)
+
+Also some PEP8 changes and some de-duplication of compatibility efforts.",Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2012-11-16 21:34:39-05:00,18000,2012-11-16 21:34:39-05:00,18000,True,False,['kerberos.py'],['3a4a0951fdc17a40e7824b7dcc11f50cb37d453f'],48,48,96,1,1.0,1.0,1.0
+b659ffbb90701833643bb96ee2343389d5669b2b,Prepare for inevitable distribution.,Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2012-11-23 20:25:30-05:00,18000,2012-11-23 20:25:30-05:00,18000,True,False,"['HISTORY.rst', 'MANIFEST.in', 'README.rst', '__init__.py', 'setup.py']",['afd8e75a4976ef2b902a8c0e8674f70fb7cffc75'],4,45,49,5,,,
+0f3924368adc4582cee24c9a7bc0091855e5b3b5,Stop using kerberos as k,Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2012-11-23 21:14:20-05:00,18000,2012-11-23 21:14:20-05:00,18000,True,False,"['README.md', 'kerberos.py']",['b659ffbb90701833643bb96ee2343389d5669b2b'],11,9,20,2,1.0,1.0,1.0
+20ba31b15546b725fe2a99748a922d113f4ffcf9,"Uniformity. Premature optimization. Simplify.
+
+I had already started swapping out the C-style string formatting options with
+``str.format()`` I finished that to make the code more uniform.
+
+``_negotiate_value()`` used ``re.compile`` every time it was called, which is
+expensive. I ""cached"" the regular expression object so it should offer a small
+improvement to those using this excessively.
+
+Finally, in ``HTTPKerberosAuth.__init__`` there was a check if kerberos was
+None before trying to use it. That is unnecessary since this is now a separate
+module.",Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2012-11-23 22:15:26-05:00,18000,2012-11-23 22:15:26-05:00,18000,True,False,['kerberos.py'],['0f3924368adc4582cee24c9a7bc0091855e5b3b5'],16,21,37,1,1.0,1.0,1.0
+891201731ac2508bce6b131ec9936d21b5ce245b,Fixed setup.py.,Alexander Dutton,alexander.dutton@it.ox.ac.uk,Alexander Dutton,alexander.dutton@it.ox.ac.uk,2013-01-24 11:23:26+00:00,0,2013-01-24 11:23:26+00:00,0,True,False,"['MANIFEST.in', 'requirements.txt', 'setup.py']",['20ba31b15546b725fe2a99748a922d113f4ffcf9'],16,17,33,3,,,
+0d09ea7da61df4a0cb27b069626b4c14a1e18a48,"Added dist, build and egg dirs to .gitignore.",Alexander Dutton,alexander.dutton@it.ox.ac.uk,Alexander Dutton,alexander.dutton@it.ox.ac.uk,2013-01-24 11:24:01+00:00,0,2013-01-24 11:24:01+00:00,0,True,False,['.gitignore'],['891201731ac2508bce6b131ec9936d21b5ce245b'],0,4,4,1,,,
+19c39a1a6c37ab0c86d634bcc3504329b3be4033,"Significant refactor for 1.1.0 API
+
+Rename kerberos module to kerberos_. Our kerberos module itself imports
+kerberos, expecting to get the kerberos package, but it currently gets itself,
+which means none of the kerberos library routines are actually available and
+everything is a non-starter. This follows PEP8 for what to do when you have a
+variable that conflicts with a builtin. Add a trailing _.
+
+Handle errors more sensibly: If authentication fails, the server response will
+be passed to the user. This is likely to be a 401. A 403 would indicate
+successful authentication with an unauthorized user. If the client requires
+mutual authentication (the default, similar to SSL certificate validation in
+requests proper), an exception will be raised so that the user does not have the
+opportunity to accept an untrusted response. If they're okay without requiring
+mutual authentication, then they can specify that when constructing their
+HTTPKerberosAuth object.
+
+1.x API Change: Request objects no longer have a send mechanism. We need to
+either generate a session and send with that or just use the connection
+connected to the response object. This was essentially stolen from HTTPDigest
+authentication.
+
+Fix incorrect implementation of mutual authentication. Performing another
+request during mutual authentication does not make sense. We're authenticating
+the response we already received.
+
+Allow different settings for mutual authentication:
+
+  * REQUIRED: all responses will be authenticated with the exception of errors.
+    Errors will have their contents and headers stripped. If a non-error
+    response cannot be authenticated, a MutualAuthenticationError exception will
+    be raised.
+  * OPTIONAL: mutual authentication will be attempted if supported, and if
+    supported and failed, a MutualAuthenticationError exception will be raised.
+    Responses which do not support mutual authentication will be returned
+    directly to the user.
+  * DISABLED: mutual authentication will not be attempted, even if supported.
+
+Support authentication of redirects, sanitize untrusted responses.
+
+  * Track multiple contexts so that if/when we can authenticate redirects, we can
+    support redirects to different hosts.
+  * We want to be able to return unauthenticated errors to the user because they
+    can be helpful in debugging, but we want to ensure that their content isn't
+    used because the user is trusting us not to give them untrusted data. Hence
+    the SanitizedResponse class.
+
+Use user supplied options when retransmitting authenticated requests
+
+Generate a test suite.",Michael Komitee,mkomitee@gmail.com,Michael Komitee,mkomitee@gmail.com,2013-02-10 19:37:00-05:00,18000,2013-03-09 11:00:56-05:00,18000,True,False,"['__init__.py', 'exceptions.py', 'kerberos.py', 'kerberos_.py', 'test_requests_kerberos.py']",['faaee6c461dd2513f90fecc427c169915ec93be9'],142,671,813,5,0.20496894409937888,0.9192546583850931,0.9006211180124224
+4b323aad66eb313b2324cac938c531c0ed10d76a,Updating README so users aren't completely lost,Michael Komitee,mkomitee@gmail.com,Michael Komitee,mkomitee@gmail.com,2013-03-09 11:54:00-05:00,18000,2013-03-09 11:54:00-05:00,18000,True,False,['README.rst'],['19c39a1a6c37ab0c86d634bcc3504329b3be4033'],3,56,59,1,,,
+5999581686499df236c80a5ffa122e16cf323882,"Document authentication failures and logging
+
+Add some documentation explaining how client authentication failures are
+communicated to the caller.
+
+Add some documentation explaining how logging is setup and available.",Michael Komitee,mkomitee@gmail.com,Michael Komitee,mkomitee@gmail.com,2013-03-20 21:36:02-04:00,14400,2013-03-20 21:40:03-04:00,14400,True,False,['README.rst'],['4b323aad66eb313b2324cac938c531c0ed10d76a'],0,19,19,1,,,
+2cf665e5c8f215adb06986b01e9a00b882f4e950,"Add NullHandler to loggers to prevent spurious error messages
+
+Supporting python 2.6+",Michael Komitee,mkomitee@gmail.com,Michael Komitee,mkomitee@gmail.com,2013-03-20 21:41:01-04:00,14400,2013-03-20 21:41:01-04:00,14400,True,False,"['__init__.py', 'compat.py']",['5999581686499df236c80a5ffa122e16cf323882'],0,19,19,2,1.0,1.0,1.0
+10097a02ec265902f9528e948c7690535cf8b9cf,"Setup.py breaks if kerberos is not already installed.
+
+When trying to install requests-kerberos setup.py cannot import
+requets_kerberos.  Doing this causes a problem where requirements.txt
+causes kerberos to be downloaded.  However, it is not yet installed
+when requests-kerberos's setup.py is evaluated.  Since setup.py
+imports requests_kerberos, and requests_kerberos import kerberos, the
+installation fails.
+
+See https://gist.github.com/pcn/5209734 for an example.
+
+This commit fixes the problem by using the compiler module to parse
+__init__.py, but doesn't evaluate it.  It then searches for the node
+whose name is __version__ and uses the constant that would be assigned
+to it for setup.py.
+
+It does mean that version has to be a constant.  I don't think that'd
+be a problem.",Peter C. Norton,pn@knewton.com,Peter C. Norton,pn@knewton.com,2013-03-21 13:46:24-04:00,14400,2013-03-21 13:46:24-04:00,14400,True,False,['setup.py'],['faaee6c461dd2513f90fecc427c169915ec93be9'],2,19,21,1,,,
+251e13b96ed10e48b69ccf5d625d673a5507f222,"Remove REQUIRED, OPTIONAL, DISABLED from default exports
+
+Prevent polluting the callers namespace with generically named constants.",Michael Komitee,mkomitee@gmail.com,Michael Komitee,mkomitee@gmail.com,2013-03-21 22:42:06-04:00,14400,2013-03-21 22:42:06-04:00,14400,True,False,['__init__.py'],['2cf665e5c8f215adb06986b01e9a00b882f4e950'],1,1,2,1,,,
+b5b7e0f684bab9e0a17e58e576c76dbe3b411ae5,"Remove unnecessary commented lines
+
+These were left over from when we required unittest2.",Michael Komitee,mkomitee@gmail.com,Michael Komitee,mkomitee@gmail.com,2013-03-21 22:48:21-04:00,14400,2013-03-21 22:48:21-04:00,14400,True,False,['test_requests_kerberos.py'],['251e13b96ed10e48b69ccf5d625d673a5507f222'],4,0,4,1,,,
+a76e9feef8b806ab94d3470c87c9ced4e392167c,"Version 0.2
+
+I can fix up the README with history later and fix up PyPI to reflect it.",Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2013-03-26 17:11:24-04:00,14400,2013-03-26 17:11:24-04:00,14400,True,False,['__init__.py'],['1c8f85bfb56143ae19d73a98eac6acd0c68f94fa'],1,1,2,1,,,
+f8cc164050901401cb0235b0de3204209d4ea1ba,"Handle additional uncaught GSSErrors
+
+kerberos.authGSSClientStep() can raise a GSSError on a mutual authentication
+failure instead of just setting the returncode to -1 as would be expected from
+the underlying C library calls. Catch that GSSError and return False so that we
+handle the mutual authentication failure appropriately.
+
+Also, since every other kerberos call can raise a GSSError, prophylactically
+wrap kerberos.authGSSClientResponse() in such a way as to prevent other
+GSSErrors from reaching the user. In this case we'll return the 401 to the user
+just as we do when authentication fails in other ways.",Michael Komitee,komitee@deshaw.com,Michael Komitee,komitee@deshaw.com,2013-04-05 16:10:59-04:00,14400,2013-04-05 16:10:59-04:00,14400,True,False,['kerberos_.py'],['a76e9feef8b806ab94d3470c87c9ced4e392167c'],3,15,18,1,0.0,0.0,1.0
+e8f20987b4c7ec20c61457772ab41b51a6c7e1ef,"Fixing assertions regarding mocks not being called; resetting mocks
+
+We need to reset mocks between tests if we want to be sure when we assert
+whether or not they've been called and what they've been called with because if
+we don't, they may have been called during other tests.
+
+We mock.assert_not_called() isn't a thing, but it always returns a Truthy value
+because it's a mock, and any method not defined will actually exist and return a
+mock which is truthy. My head hurts. We need to assert that the special .called
+parameter is False.",Michael Komitee,komitee@deshaw.com,Michael Komitee,komitee@deshaw.com,2013-04-05 16:51:56-04:00,14400,2013-04-05 16:51:56-04:00,14400,True,False,['test_requests_kerberos.py'],['f8cc164050901401cb0235b0de3204209d4ea1ba'],8,14,22,1,1.0,1.0,1.0
+d08f3d4e2d9795d72cab2f53bb6da20253a4f800,"Test to ensure that authGSSClientStep during mutual auth raises the right exception.
+
+Prevent regression of the leaking GSSError's we recently saw on mutual auth
+failures.",Michael Komitee,komitee@deshaw.com,Michael Komitee,komitee@deshaw.com,2013-04-05 16:54:23-04:00,14400,2013-04-05 16:54:23-04:00,14400,True,False,['test_requests_kerberos.py'],['e8f20987b4c7ec20c61457772ab41b51a6c7e1ef'],0,22,22,1,1.0,1.0,1.0
+5b2812177f9780bb1c9d6ab9908398600df91e75,"Flipping assertion around, assertFalse(x) instead of assertTrue(not x)",Michael Komitee,mkomitee@gmail.com,Michael Komitee,mkomitee@gmail.com,2013-04-06 11:37:51-04:00,14400,2013-04-06 11:37:51-04:00,14400,True,False,['test_requests_kerberos.py'],['d08f3d4e2d9795d72cab2f53bb6da20253a4f800'],1,1,2,1,,,
+df06eed334f7fbfd8403ebb565746fcbeec051a0,Fixed calculating the host with port,Jose Castro Leon,jose.castro.leon@cern.ch,Jose Castro Leon,jose.castro.leon@cern.ch,2013-05-23 15:54:04+02:00,-7200,2013-05-23 15:54:04+02:00,-7200,True,False,['kerberos_.py'],['e59058486d669ebd690aa12c144c88936709d96c'],2,2,4,1,,,
+2063d685ee27040b15282a0cfe8781c077acb4ce,"Add @josecastroleon to AUTHORS.
+
+Release v0.3",Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2013-06-02 17:28:53-04:00,14400,2013-06-02 17:28:53-04:00,14400,True,False,"['AUTHORS', 'HISTORY.rst', '__init__.py']",['df06eed334f7fbfd8403ebb565746fcbeec051a0'],4,15,19,3,,,
+5fe64b2d47d7a2522ee813dee50f6c4ae53b9e2a,"Update requirements to depend on requests>=1.1.0
+
+The latest version of requests is 1.2.3 and pinning requests-kerberos's
+required version to exactly 1.1.0 means it can't be used by an app that
+already has a pinned requirement on requests 1.2.3
+
+Refs #14",David Pursehouse,david.pursehouse@gmail.com,David Pursehouse,david.pursehouse@gmail.com,2013-09-24 12:25:08+09:00,-32400,2013-09-24 12:25:35+09:00,-32400,True,False,['requirements.txt'],['2063d685ee27040b15282a0cfe8781c077acb4ce'],1,1,2,1,,,
+42cbb93403a6f4ce228b198350ff66adbf8673db,Minor fixes in the README,David Pursehouse,david.pursehouse@gmail.com,David Pursehouse,david.pursehouse@gmail.com,2013-09-24 12:31:00+09:00,-32400,2013-09-24 12:31:00+09:00,-32400,True,False,['README.rst'],['2063d685ee27040b15282a0cfe8781c077acb4ce'],4,4,8,1,,,
+47af8b54ce83154729c8973290ffb68819d44c6a,Add myself to the authors list,David Pursehouse,david.pursehouse@gmail.com,David Pursehouse,david.pursehouse@gmail.com,2013-10-25 10:21:53+09:00,-32400,2013-10-25 10:21:53+09:00,-32400,True,False,['AUTHORS'],['37b03b5c77eafd1f20edef5ecd10cc830b120e52'],0,1,1,1,,,
+f6e5fd24ca22c247f3364d9c260d625b80d70bef,Update history for version 0.4,David Pursehouse,david.pursehouse@gmail.com,David Pursehouse,david.pursehouse@gmail.com,2013-10-25 10:22:07+09:00,-32400,2013-10-25 10:22:07+09:00,-32400,True,False,['HISTORY.rst'],['47af8b54ce83154729c8973290ffb68819d44c6a'],0,6,6,1,,,
+3f9e7b443cd51102f1f3122c7303a9889e0167d6,"Fix hangs on streaming uploads
+
+After the server responds with a ""401 Unauthorized"",
+requests_kerberos.HTTPKerberosAuth.handle_response() gets called and
+it resends the request with ""Authorization"" header.
+
+When doing streaming uploads, however, this gets stuck because the
+body data (a file-like object) is already consumed at the first
+attempt of sending the request and empty.
+
+To fix this, rewind the file-like object to where it was before the
+initial send call.",Akira Kitada,akitada@gmail.com,Akira Kitada,akitada@gmail.com,2013-11-24 15:39:00+09:00,-32400,2013-11-24 15:39:00+09:00,-32400,True,False,['kerberos_.py'],['01b062804774c4667fc9e3b8d82a63c81598a203'],0,10,10,1,1.0,1.0,0.7142857142857143
+151aa8117691643ccc1b48a2612f3e210211e0ec,Add dependenices to enable './setup.py test' command,Jack Riches,j@Jacks-MacBook-Air-2.local,Jack Riches,j@Jacks-MacBook-Air-2.local,2014-01-09 23:49:15+00:00,0,2014-01-09 23:49:15+00:00,0,True,False,['setup.py'],['e52eb13210a10f8f26615033059efb0c73efe645'],0,2,2,1,,,
+6a62a6d54d1323213c660e598064b262c7ce8c0f,Allow non-HTTP service principal with HTTPKerberosAuth kwarg,Jack Riches,j@Jacks-MacBook-Air-2.local,Jack Riches,j@Jacks-MacBook-Air-2.local,2014-01-10 00:00:17+00:00,0,2014-01-10 00:00:17+00:00,0,True,False,"['kerberos_.py', 'test_requests_kerberos.py']",['e52eb13210a10f8f26615033059efb0c73efe645'],2,15,17,2,1.0,1.0,0.5833333333333334
+f213e3edb97c4b549fb0f03af9a64712fb382ffd,"Fix-up setup.py
+
+- Closes #30",Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2014-02-15 13:11:09-06:00,21600,2014-02-15 13:11:09-06:00,21600,True,False,['setup.py'],['b072ca717ca2d034d5680cd5a72fcc29dfe2ae67'],23,24,47,1,1.0,1.0,1.0
+5729ce52821a003356126afe7067514dfc08d2a1,Travis time.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2014-02-15 19:43:10+00:00,0,2014-02-15 19:43:10+00:00,0,True,False,['.travis.yml'],['b072ca717ca2d034d5680cd5a72fcc29dfe2ae67'],0,7,7,1,,,
+b857ef4e10b80223f022704e57a6c9eedd8c19f1,"Actually, we don't support 3.3.",Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2014-02-15 19:46:08+00:00,0,2014-02-15 19:46:08+00:00,0,True,False,['.travis.yml'],['5729ce52821a003356126afe7067514dfc08d2a1'],1,0,1,1,,,
+6bb37839d93730cf8e79a91ec708b84c893ea74e,Update HISTORY for 0.5,Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2014-05-20 20:08:10-05:00,18000,2014-05-20 20:08:10-05:00,18000,True,False,['HISTORY.rst'],['a5e6e989022122e24f3ed4e86bbaa5ae261053f4'],0,11,11,1,,,
+5e5a5bcc8818b6781c7b22cc80ef8ef04a909d6a,"Bump module version to 0.5
+
+Why was this not already at 0.4?",Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2014-05-20 20:09:55-05:00,18000,2014-05-20 20:09:55-05:00,18000,True,False,['__init__.py'],['6bb37839d93730cf8e79a91ec708b84c893ea74e'],1,1,2,1,,,
+3a02400d68ab999784c5b30114ecdfd3123b5498,Use wheel,Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2014-05-20 20:34:50-05:00,18000,2014-05-20 20:34:50-05:00,18000,True,False,['setup.cfg'],['5e5a5bcc8818b6781c7b22cc80ef8ef04a909d6a'],0,2,2,1,,,
+41ddcd5e9af9c5b3745dbf9df93b0ad5b932d4be,Add author and author_email params,Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2014-05-20 20:36:17-05:00,18000,2014-05-20 20:36:17-05:00,18000,True,False,['setup.py'],['3a02400d68ab999784c5b30114ecdfd3123b5498'],0,2,2,1,,,
+20b18f49e329522492a3965888fd831e7444fdd9,Add Python 3 testing to Travis.,Cory Benfield,cory.benfield@metaswitch.com,Cory Benfield,cory.benfield@metaswitch.com,2014-06-17 09:12:52+01:00,-3600,2014-06-17 09:12:52+01:00,-3600,True,False,['.travis.yml'],['5e5a5bcc8818b6781c7b22cc80ef8ef04a909d6a'],0,2,2,1,,,
+0dce914140370f68018b281d817d79e37dd40d94,"Revert ""Add Python 3 testing to Travis.""
+
+This reverts commit 20b18f49e329522492a3965888fd831e7444fdd9.",Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2014-06-17 09:16:57+01:00,-3600,2014-06-17 09:16:57+01:00,-3600,True,False,['.travis.yml'],['20b18f49e329522492a3965888fd831e7444fdd9'],2,0,2,1,,,
+9c1e08cc17bb6950455a85d33d391ecd2bce6eb6,"Handle mutual authentication
+
+Make certain that responses always pass through handle_other() to provide mutual
+authentication before returning them to the user.",Michael Komitee,komitee@deshaw.com,Michael Komitee,mkomitee@gmail.com,2014-08-08 17:47:42-04:00,14400,2014-08-23 17:04:06-04:00,14400,True,False,"['kerberos_.py', 'test_requests_kerberos.py']",['0dce914140370f68018b281d817d79e37dd40d94'],1,5,6,2,0.0,1.0,1.0
+a159a65e47dc0fcfc0a2cdc2166bb2338b4cc169,Fix log message typo,jacobtolar,accounts@sheckel.net,jacobtolar,accounts@sheckel.net,2014-10-09 10:03:23-05:00,18000,2014-10-09 10:03:23-05:00,18000,True,False,['kerberos_.py'],['0dce914140370f68018b281d817d79e37dd40d94'],1,1,2,1,,,
+e875897616f255bdb39d2710a3599fd33d013c0f,Changes for v0.6,Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2014-11-04 12:22:58-06:00,21600,2014-11-04 12:22:58-06:00,21600,True,False,['HISTORY.rst'],['3c83ee70affec8da8916ce7cb6f97805c04e1636'],0,13,13,1,,,
+6112aa7012ad8f156219dc4724d8cd75b5ffa020,Bump module version,Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2014-11-04 12:24:25-06:00,21600,2014-11-04 12:24:25-06:00,21600,True,False,['__init__.py'],['e875897616f255bdb39d2710a3599fd33d013c0f'],1,1,2,1,,,
+620ae6beea37d02cdf227ff0cee3cffe49a7bbda,"Prevent infinite recursion when GSSErrors occurs
+
+When calling log.exception you do not need to pass an exception object,
+it will fetch it from the stack automatically. Passing the exception
+object in results in infinite recursion.
+
+      File "".../lib/python2.6/site-packages/requests_kerberos/kerberos_.py"", line 117, in generate_request_header
+        log.exception(e)
+      File ""/usr/lib64/python2.6/logging/__init__.py"", line 1088, in exception
+        self.error(*((msg,) + args), **{'exc_info': 1})
+      File ""/usr/lib64/python2.6/logging/__init__.py"", line 1082, in error
+        self._log(ERROR, msg, args, **kwargs)
+      File ""/usr/lib64/python2.6/logging/__init__.py"", line 1173, in _log
+        self.handle(record)
+      File ""/usr/lib64/python2.6/logging/__init__.py"", line 1183, in handle
+        self.callHandlers(record)
+      File ""/usr/lib64/python2.6/logging/__init__.py"", line 1220, in callHandlers
+        hdlr.handle(record)
+      File ""/usr/lib64/python2.6/logging/__init__.py"", line 679, in handle
+        self.emit(record)
+      File ""/usr/lib64/python2.6/logging/__init__.py"", line 804, in emit
+        self.handleError(record)
+      File ""/usr/lib64/python2.6/logging/__init__.py"", line 733, in handleError
+        traceback.print_exception(ei[0], ei[1], ei[2], None, sys.stderr)
+      File ""/usr/lib64/python2.6/traceback.py"", line 126, in print_exception
+        lines = format_exception_only(etype, value)
+      File ""/usr/lib64/python2.6/traceback.py"", line 179, in format_exception_only
+        return [_format_final_exc_line(stype, value)]
+      File ""/usr/lib64/python2.6/traceback.py"", line 205, in _format_final_exc_line
+        valuestr = _some_str(value)
+      File ""/usr/lib64/python2.6/traceback.py"", line 214, in _some_str
+        return str(value)
+    RuntimeError: maximum recursion depth exceeded while getting the str of an object",Evan Borgstrom,eborgstrom@linkedin.com,Evan Borgstrom,eborgstrom@linkedin.com,2014-11-05 15:41:44-08:00,28800,2014-11-05 15:41:44-08:00,28800,True,False,['kerberos_.py'],['6112aa7012ad8f156219dc4724d8cd75b5ffa020'],12,8,20,1,1.0,0.75,0.0
+ce02450ee3cf773b012efcd9379c97689d0189d2,"Fix HTTPKerberosAuth not to treat non-file as a file
+
+Ensure pos is set to None when the body is not a file
+so that HTTPKerberosAuth detects the type of the body correctly.",Akira Kitada,akitada@gmail.com,Akira Kitada,akitada@gmail.com,2014-11-13 00:57:38+09:00,-32400,2014-11-13 01:12:58+09:00,-32400,True,False,['kerberos_.py'],['71dd4880d8e6ac912e562fee4b2b814a2109da42'],1,5,6,1,,,
+ccc3b5c035e3d59039f51be77d47638e5df25c95,Prepare version 0.6.1,Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2014-11-14 19:48:37-06:00,21600,2014-11-14 19:48:37-06:00,21600,True,False,"['HISTORY.rst', '__init__.py']",['1453972c9bdab17b5386a56a6a8215182e200a72'],3,12,15,2,,,
+d2732e4717fac7fe4bb191880190c2be6183675e,Prevent infinite recursion when server responds with 401 to an authentication attempt.,Carson Lam,carson.lam@safe.com,Carson Lam,carson.lam@safe.com,2014-11-17 14:50:50-08:00,28800,2014-11-17 14:50:50-08:00,28800,True,False,['kerberos_.py'],['ccc3b5c035e3d59039f51be77d47638e5df25c95'],4,5,9,1,0.0,0.0,1.0
+c68bf96a11adbd8c33e1dfc06d250cb246d5799c,"Update 401->200 response test to stop failing, and add a 401->401 response test.",Carson Lam,carson.lam@safe.com,Carson Lam,carson.lam@safe.com,2014-11-18 17:38:40-08:00,28800,2014-11-18 17:38:40-08:00,28800,True,False,['test_requests_kerberos.py'],['d2732e4717fac7fe4bb191880190c2be6183675e'],2,42,44,1,0.0,1.0,1.0
+83de077bc44b5c55023761407d769aead6e19881,"Add kerberos-sspi as an alternative backend
+
+kerberos-sspi package is an API level equivalent with kerberos
+package but uses windows sspi (through pywin32)",gentoo90,gentoo90@gmail.com,gentoo90,gentoo90@gmail.com,2014-07-02 22:34:51+03:00,-10800,2015-01-31 11:40:55+02:00,-7200,True,False,['kerberos_.py'],['ccc3b5c035e3d59039f51be77d47638e5df25c95'],1,4,5,1,,,
+60e0362930c1e678edf91ae381e9e9c924fa0355,Choose required kerberos package depending on platform,gentoo90,gentoo90@gmail.com,gentoo90,gentoo90@gmail.com,2014-07-06 12:41:28+03:00,-10800,2015-01-31 11:40:55+02:00,-7200,True,False,"['.travis.yml', 'requirements.txt', 'setup.py']",['83de077bc44b5c55023761407d769aead6e19881'],1,8,9,3,,,
+9e34c106ea6981493033264692a32975d3dee445,"Stop logging on otherwise acceptable responses
+
+cloudera/hue developers were seeing a large number of log errors for
+200 status code responses. Instead of slowly growing a list of status codes
+to not log an error message for, let's just not log the message if the response
+code is ""ok"" (`200 <= status_code < 400`, vaguely speaking).",Ian Cordasco,sigmavirus24@users.noreply.github.com,Ian Cordasco,sigmavirus24@users.noreply.github.com,2015-02-24 08:33:47-06:00,21600,2015-02-24 08:33:47-06:00,21600,True,False,['kerberos_.py'],['ccc3b5c035e3d59039f51be77d47638e5df25c95'],2,3,5,1,0.0,0.0,1.0
+62f81842dd5c55898114c7616b6c3f556c3f61e2,"Handle Mutual Authentication and prevent ∞ recursion
+
+Closes #42",Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2015-04-12 09:56:19-05:00,18000,2015-04-12 09:56:21-05:00,18000,True,False,['kerberos_.py'],['c68bf96a11adbd8c33e1dfc06d250cb246d5799c'],4,8,12,1,1.0,1.0,0.0
+d23fc4427176aa73129a74deaf205ded114c0c04,Fix up the tests,Ian Cordasco,graffatcolmingov@gmail.com,Ian Cordasco,graffatcolmingov@gmail.com,2015-04-12 12:11:07-05:00,18000,2015-04-12 12:11:07-05:00,18000,True,False,['test_requests_kerberos.py'],['62f81842dd5c55898114c7616b6c3f556c3f61e2'],9,15,24,1,1.0,1.0,0.0
+e7940973d7914b48c50fa569d35f94ab77a16614,"Return the 401 Unauthorized response if we've tried to handle it before, but still got a 401.
+
+This means the user really isn't authorized to access the resource.",Carson Lam,carson.lam@safe.com,Carson Lam,carson.lam@safe.com,2015-04-14 23:00:27-07:00,25200,2015-04-14 23:00:27-07:00,25200,True,False,['kerberos_.py'],['d23fc4427176aa73129a74deaf205ded114c0c04'],0,5,5,1,0.0,0.0,0.0
+ac5e907a9b57f17b4dd592282366e6a22be0213a,0.7.0,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2015-05-04 16:57:44+01:00,-3600,2015-05-04 16:57:44+01:00,-3600,True,False,"['HISTORY.rst', '__init__.py']",['05bc753d7d7e6eeeacb2be3415fb1609f77c1c00'],1,12,13,2,,,
+c3918fc17780173738a04a5f864c4c847e41217b,"Update kerberos_.py
+
+Add support for delegating credentials.  Pass GSS_C_DELEG_FLAG when delegation is requested.",rriggs,colorado.rob@gmail.com,Joshua Warburton,jjw@irax.com,2013-10-01 14:42:48-05:00,18000,2015-05-22 23:53:09+01:00,-3600,True,False,['kerberos_.py'],['ac5e907a9b57f17b4dd592282366e6a22be0213a'],6,16,22,1,0.375,0.375,0.625
+cf3d1e8c9cb0d1307c1ab32cc56cbfe05aa0b879,fixed tests broken by delegation support,Joshua Warburton,jjw@irax.com,Joshua Warburton,jjw@irax.com,2014-04-18 01:47:40+01:00,-3600,2015-05-22 23:53:09+01:00,-3600,True,False,['test_requests_kerberos.py'],['c3918fc17780173738a04a5f864c4c847e41217b'],7,7,14,1,,,
+60602cf07ec554e3b0e9c6545eab00444081f232,added test for delegation,Joshua Warburton,jjw@irax.com,Joshua Warburton,jjw@irax.com,2014-04-20 00:26:30+01:00,-3600,2015-05-22 23:53:09+01:00,-3600,True,False,['test_requests_kerberos.py'],['cf3d1e8c9cb0d1307c1ab32cc56cbfe05aa0b879'],0,40,40,1,0.0,1.0,1.0
+288a3d8748fd7178c64ea88aa698636762f8bad3,Removed magic numbers,Joshua Warburton,jjw@irax.com,Joshua Warburton,jjw@irax.com,2014-11-19 22:21:10+00:00,0,2015-05-22 23:53:09+01:00,-3600,True,False,['test_requests_kerberos.py'],['60602cf07ec554e3b0e9c6545eab00444081f232'],36,74,110,1,0.13636363636363635,1.0,1.0
+e1a6f490ba94712842e4d5a3354ad19a936df146,"Logged exceptions that occur in generate_request_header
+
+Also fixed the potential for an uninitiated variable in one of the except blocks",Joshua Warburton,jjw@irax.com,Joshua Warburton,jjw@irax.com,2015-05-22 23:52:12+01:00,-3600,2015-05-23 00:01:54+01:00,-3600,True,False,"['kerberos_.py', 'test_requests_kerberos.py']",['288a3d8748fd7178c64ea88aa698636762f8bad3'],8,15,23,2,0.0,0.5714285714285714,1.0
+3479e271a425ddfa76789d6d034528c8011d8e81,Fix for Python 3 on Windows,Anthony Truchet,a.truchet@criteo.com,Anthony Truchet,a.truchet@criteo.com,2015-08-21 17:53:48+02:00,-7200,2015-08-21 17:53:48+02:00,-7200,True,False,"['setup.py', 'test_requests_kerberos.py']",['ac5e907a9b57f17b4dd592282366e6a22be0213a'],21,29,50,2,,,
+e4ae8778c10b4891593460d3a0d75429ccbccf60,"Specify conditional dependencies such that they're recognized by bdist_wheel.
+
+On Windows, use kerberos-sspi because it's much easier to get installed.
+On other platforms, use pykerberos instead of kerberos for Python 3 support.",Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2015-08-23 19:51:29-07:00,25200,2015-08-23 20:28:47-07:00,25200,True,False,"['requirements.txt', 'setup.py']",['ac5e907a9b57f17b4dd592282366e6a22be0213a'],10,9,19,2,,,
+86bdf67ffda3d2039bf18f73d4652b7d741ae710,"Require pykerberos >= 1.1.8.
+
+It includes handling for krb5 version numbers with string suffixes, which happens to be the case on Travis CI.",Carson Lam,carson.lam@safe.com,Carson Lam,carson.lam@safe.com,2015-08-24 10:10:01-07:00,25200,2015-08-24 10:10:01-07:00,25200,True,False,"['requirements.txt', 'setup.py']",['e4ae8778c10b4891593460d3a0d75429ccbccf60'],2,2,4,2,,,
+e5350152474c3c2841ec5d424f29a1b960a25fd7,Test 3.4 also.,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2015-08-25 09:04:02+01:00,-3600,2015-08-25 09:07:25+01:00,-3600,True,False,['.travis.yml'],['ac5e907a9b57f17b4dd592282366e6a22be0213a'],0,1,1,1,,,
+e2c671733a491be5f32fb8d1c938f8edec4eda44,v0.8.0,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2016-01-07 18:15:47+00:00,0,2016-01-07 18:15:47+00:00,0,True,False,"['HISTORY.rst', '__init__.py']",['27e5d006d9e8182b05e9e366301a7fc890529113'],1,8,9,2,,,
+47b178c1846c277545565ae2783c021905b596bf,"working fix for mutual auth from winrm
+
+fixes #65, fixes #68 - adds preemptive auth
+updated tests for changed args and added tests for preemptive/not
+updated readme for new arg",nitzmahone,mdavis@ansible.com,nitzmahone,mdavis@ansible.com,2016-04-11 19:23:34-07:00,25200,2016-04-19 12:36:14-07:00,25200,True,False,"['README.rst', 'exceptions.py', 'kerberos_.py', 'test_requests_kerberos.py']",['e2c671733a491be5f32fb8d1c938f8edec4eda44'],43,103,146,4,0.5454545454545454,1.0,0.0
+c464cc0035a5552ab28b9e8c3eee7a5904f33996,add support for principal and hostname override,nitzmahone,mdavis@ansible.com,nitzmahone,mdavis@ansible.com,2016-04-20 15:13:42-07:00,25200,2016-05-02 13:21:44-07:00,25200,True,False,"['README.rst', 'kerberos_.py', 'test_requests_kerberos.py']",['ee5c29154f40b3138fef82d6457343368d7866ca'],13,111,124,3,0.061224489795918366,0.9591836734693877,0.8979591836734694
+69ed5ee2a2c061281e446d99c9a355df8c164a16,v0.9.0,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2016-05-06 09:12:36+01:00,-3600,2016-05-06 09:12:36+01:00,-3600,True,False,"['HISTORY.rst', '__init__.py']",['d824b8c5387eddb315144d1a34eaa40d584adbeb'],1,8,9,2,,,
+4c66b13f9c53382502d8fe394191657eaee29e5c,"make mutual auth error sanitization optional
+
+added test coverage, doc update",nitzmahone,mdavis@ansible.com,nitzmahone,mdavis@ansible.com,2016-05-16 14:24:43-07:00,25200,2016-05-16 14:24:43-07:00,25200,True,False,"['README.rst', 'kerberos_.py', 'test_requests_kerberos.py']",['c464cc0035a5552ab28b9e8c3eee7a5904f33996'],5,31,36,3,0.14285714285714285,0.8571428571428571,0.8571428571428571
+7b035a3fcb32b79770513c65b1e2db59958fa4af,fix isinstance asserts to be py2.6 friendly,nitzmahone,mdavis@ansible.com,nitzmahone,mdavis@ansible.com,2016-05-16 14:55:15-07:00,25200,2016-05-16 14:55:15-07:00,25200,True,False,['test_requests_kerberos.py'],['4c66b13f9c53382502d8fe394191657eaee29e5c'],2,2,4,1,,,
+a312feb7c3535d4196ab4ec46f3193c037a3983a,remove line continuation,nitzmahone,mdavis@ansible.com,nitzmahone,mdavis@ansible.com,2016-05-16 19:05:34-07:00,25200,2016-05-16 19:05:34-07:00,25200,True,False,['kerberos_.py'],['7b035a3fcb32b79770513c65b1e2db59958fa4af'],2,2,4,1,,,
+5f7445dfc0d7956f7bd525197b348fd023867c26,Block use of `principal` argument when using kerberos-sspi (i.e. Windows).,Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-05-16 23:14:54-07:00,25200,2016-05-16 23:14:54-07:00,25200,True,False,"['README.rst', 'kerberos_.py', 'test_requests_kerberos.py']",['69ed5ee2a2c061281e446d99c9a355df8c164a16'],1,22,23,3,0.75,0.75,0.6666666666666666
+5ee7f9cb2200e9f3c563d6afe8747360b146cbde,Fix unit tests when running with kerberos-sspi.,Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-05-16 23:37:57-07:00,25200,2016-05-16 23:37:57-07:00,25200,True,False,['test_requests_kerberos.py'],['5f7445dfc0d7956f7bd525197b348fd023867c26'],9,14,23,1,0.0,1.0,1.0
+cd68579dcfc32514a9f8bb6eebf924c2bdf2bc4a,No context manager for assertRaises on py26...,Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-05-16 23:51:52-07:00,25200,2016-05-16 23:51:52-07:00,25200,True,False,['test_requests_kerberos.py'],['5ee7f9cb2200e9f3c563d6afe8747360b146cbde'],2,1,3,1,0.0,0.0,0.0
+9fcb4be515e3ce507e9bab8302443ad41640299e,"Fix the fix. Never pass `principal` when using kerberos-sspi, even when None.",Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-05-17 00:23:12-07:00,25200,2016-05-17 00:23:12-07:00,25200,True,False,['kerberos_.py'],['d68716f40c1306e94cb289acc2ef0630a4d72d60'],2,5,7,1,0.0,0.0,0.0
+3a533dd3b85e5543f8835cdbbbb27b5edcd5c876,"Use conditional keyword arguments with clientInit_complete.assert_called_with().
+
+Necessary for tests to pass on Windows with kerberos-sspi.",Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-05-17 00:36:34-07:00,25200,2016-05-17 00:36:34-07:00,25200,True,False,['test_requests_kerberos.py'],['9fcb4be515e3ce507e9bab8302443ad41640299e'],17,36,53,1,0.0,1.0,1.0
+470957ae254fb47780b87169a5e6e25034be29bf,Fix syntax highlighting in readme code blocks.,Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-05-17 00:41:07-07:00,25200,2016-05-17 00:41:07-07:00,25200,True,False,['README.rst'],['b86ced24d162e8e283080a85ca06719de16e2376'],7,7,14,1,,,
+524e8579d06f61fa7d001f64888b97ecbd469199,Refactor kerberos-sspi and principal handling.,Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-05-17 13:28:51-07:00,25200,2016-05-17 14:08:50-07:00,25200,True,False,['kerberos_.py'],['3a533dd3b85e5543f8835cdbbbb27b5edcd5c876'],5,5,10,1,,,
+75d29584a0c40a17a0bed8f228707bf53f703fdc,v0.10.0,Cory Benfield,lukasaoz@gmail.com,Cory Benfield,lukasaoz@gmail.com,2016-05-18 13:20:36+01:00,-3600,2016-05-18 13:20:36+01:00,-3600,True,False,"['HISTORY.rst', '__init__.py']",['2bbc8def452607f49a0a3519903a3eec36df9163'],1,9,10,2,,,
+13c20d366e33cd04c1637a774e799254f0e7a75b,"Revert ""Merge pull request #73 from rbcarson/windows-principal-workaround-71""
+
+This reverts commit b87f71b90e38725af14dc787b822045196c254aa, reversing
+changes made to b86ced24d162e8e283080a85ca06719de16e2376.",Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-05-28 20:26:11-07:00,25200,2016-05-28 20:26:11-07:00,25200,True,False,"['README.rst', 'kerberos_.py', 'test_requests_kerberos.py']",['75d29584a0c40a17a0bed8f228707bf53f703fdc'],67,20,87,3,0.875,0.15625,0.1875
+5f21904b3184b716614169f7eb92e69907813e3f,Bring back reverted fixes.,Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-05-28 20:46:44-07:00,25200,2016-05-28 20:46:44-07:00,25200,True,False,['test_requests_kerberos.py'],['13c20d366e33cd04c1637a774e799254f0e7a75b'],3,3,6,1,,,
+dd66aa92d512d14f58aef9f10d256ccecd8244a2,Swap kerberos-sspi with winkerberos.,Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-05-28 20:49:24-07:00,25200,2016-05-28 20:49:24-07:00,25200,True,False,"['kerberos_.py', 'requirements.txt', 'setup.py', 'test_requests_kerberos.py']",['5f21904b3184b716614169f7eb92e69907813e3f'],5,5,10,4,,,
+14fe8875d8c986681502b2fe681d9055a805b8a2,Require at least WinKerberos 0.4.0.,Carson Lam,carsonyylam@gmail.com,Carson Lam,carsonyylam@gmail.com,2016-06-01 20:26:19-07:00,25200,2016-06-01 20:26:19-07:00,25200,True,False,"['requirements.txt', 'setup.py']",['dd66aa92d512d14f58aef9f10d256ccecd8244a2'],2,2,4,2,,,
+0976054c719f3e0d356a9721df9584efc63860e0,"add license title
+
+same rationale as https://github.com/requests/requests-oauthlib/pull/242",Waldir Pimenta,waldyrious@gmail.com,GitHub,noreply@github.com,2016-07-05 23:36:18+01:00,-3600,2016-07-05 23:36:18+01:00,-3600,True,False,['LICENSE'],['75d29584a0c40a17a0bed8f228707bf53f703fdc'],0,2,2,1,,,
+cd615536b77fffa38f2a2f372293d0ee5a204635,Require at least WinKerberos 0.5.0.,Carson Lam,carson.lam@safe.com,Carson Lam,carson.lam@safe.com,2016-10-24 10:29:23-07:00,25200,2016-10-24 10:29:23-07:00,25200,True,False,"['requirements.txt', 'setup.py']",['14fe8875d8c986681502b2fe681d9055a805b8a2'],2,2,4,2,,,
+bc57f3ab804fb86a5da6517ae63a7ffe25c80f1d,Add WinKerberos-specific blurb for custom principal.,Carson Lam,carson.lam@safe.com,Carson Lam,carson.lam@safe.com,2016-11-01 17:12:54-07:00,25200,2016-11-01 17:12:54-07:00,25200,True,False,['README.rst'],['cd615536b77fffa38f2a2f372293d0ee5a204635'],1,5,6,1,,,
+99c2428aaa44f6e6ecfac42b4259c5d856acca7f,v0.11.0,Carson Lam,carson.lam@safe.com,Carson Lam,carson.lam@safe.com,2016-11-02 11:23:16-07:00,25200,2016-11-02 11:23:16-07:00,25200,True,False,"['HISTORY.rst', '__init__.py']",['815c857f58f23513a599ca6cfa87f890547f611e'],1,7,8,2,,,
+a545b08c0cbba326bea68a22b6c27a877724d13b,add a note on delegation to the README,Anders Ossowicki,aowi@novozymes.com,Anders Ossowicki,aowi@novozymes.com,2017-02-01 16:31:20+01:00,-3600,2017-02-01 16:31:20+01:00,-3600,True,False,['README.rst'],['99c2428aaa44f6e6ecfac42b4259c5d856acca7f'],0,17,17,1,,,
+b33b88c4e8df5a2203e69678da42a1058c7066a0,correct spelling mistake,Edward Betts,edward@4angle.com,Edward Betts,edward@4angle.com,2017-09-01 21:51:36+01:00,-3600,2017-09-01 21:51:36+01:00,-3600,True,False,['kerberos_.py'],['38979f88990ede507a44d3360d83119dee221a11'],1,1,2,1,,,
+5e9fcf76f889ce6dd86e832b51bdde002fd9762a,"Take ownership and prepare for fork
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-21 15:42:37-05:00,18000,2017-11-21 15:42:37-05:00,18000,True,False,"['AUTHORS', 'LICENSE']",['dfd3014434ff61b8ac7a24412510df88ec47fa31'],1,4,5,2,,,
+0d481cea3479cd60f96582e3165b2cb39bfd3173,"Rename to requests_gssapi
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-21 15:53:37-05:00,18000,2017-11-21 16:01:49-05:00,18000,True,False,"['.gitignore', '.travis.yml', 'README.rst', '__init__.py', 'compat.py', 'exceptions.py', 'gssapi_.py', 'setup.py', 'test_requests_gssapi.py']",['5e9fcf76f889ce6dd86e832b51bdde002fd9762a'],94,89,183,9,,,
+bf61755f4c1804f22dadf74db37099514a61542d,"Drop winkerberos support
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-21 15:56:32-05:00,18000,2017-11-21 16:01:54-05:00,18000,True,False,"['gssapi_.py', 'requirements.txt', 'setup.py', 'test_requests_gssapi.py']",['0d481cea3479cd60f96582e3165b2cb39bfd3173'],16,5,21,4,,,
+b613a760ce75151c6ef2354e5dd6ee8f9802c5ef,"Port main code to python-gssapi
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-21 15:57:55-05:00,18000,2017-11-21 16:01:54-05:00,18000,True,False,['gssapi_.py'],['bf61755f4c1804f22dadf74db37099514a61542d'],44,29,73,1,1.0,0.3333333333333333,0.3333333333333333
+cdb739c195178271ac68b312ab955d5a43a5f74e,"Port tests to python-gssapi
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-21 15:58:30-05:00,18000,2017-11-22 15:03:53-05:00,18000,True,False,['test_requests_gssapi.py'],['b613a760ce75151c6ef2354e5dd6ee8f9802c5ef'],206,131,337,1,1.0,0.0,0.0
+81c1b5ca57a684672793d824df22f7cb1d3950ba,"Style fixups, and gating flake8
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-22 15:28:55-05:00,18000,2017-11-22 15:28:55-05:00,18000,True,False,"['.travis.yml', 'compat.py', 'exceptions.py', 'gssapi_.py', 'test_requests_gssapi.py']",['cdb739c195178271ac68b312ab955d5a43a5f74e'],124,122,246,5,1.0,0.0,0.0
+6414af3fb8115bdbe2a74dd00780fafa31399bea,"Add python-3.6 to gating
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-22 15:30:58-05:00,18000,2017-11-22 15:30:58-05:00,18000,True,False,['.travis.yml'],['81c1b5ca57a684672793d824df22f7cb1d3950ba'],0,1,1,1,,,
+5ea2b029b30492c756425876eb041b5649ab41bd,"Install flake8 before trying to use it in gate
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-22 15:42:16-05:00,18000,2017-11-22 15:42:16-05:00,18000,True,False,['.travis.yml'],['6414af3fb8115bdbe2a74dd00780fafa31399bea'],1,7,8,1,,,
+66fb4a95dc8d8de9e24f4a83d6159326ebe1c06d,"Make Travis builds work
+
+- Work around Ubuntu not packaging flake8
+- Fix requirements and setup dependencies
+- Drop python-2.6 support (python-gssapi doesn't work)
+- Call nosetests for portability
+- Move manipulation logic into scripts
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-22 15:46:08-05:00,18000,2017-11-22 16:16:27-05:00,18000,True,False,"['.travis.install.sh', '.travis.sh', '.travis.yml', 'requirements.txt', 'setup.py']",['5ea2b029b30492c756425876eb041b5649ab41bd'],12,20,32,5,,,
+f49c3591605a5dd853efe98773f356aaad1a25da,"Add HTTPSPNEGOAuth (and retain HTTPKerberosAuth as a shim)
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>
+Resolves: #1",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-22 17:23:30-05:00,18000,2017-12-14 13:46:37-05:00,18000,True,False,"['README.rst', '__init__.py', 'gssapi_.py', 'setup.py', 'test_requests_gssapi.py']",['66fb4a95dc8d8de9e24f4a83d6159326ebe1c06d'],54,57,111,5,,,
+07531ffa410d8304a1bdaebec1d3f832faa84193,"Add SPNEGOExchangeError (and retain KerberosExchangeError as a shim)
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>
+Resolves: #1",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-22 17:28:08-05:00,18000,2017-12-14 13:46:37-05:00,18000,True,False,"['exceptions.py', 'gssapi_.py', 'test_requests_gssapi.py']",['f49c3591605a5dd853efe98773f356aaad1a25da'],9,13,22,3,,,
+55e56f01974ed41888a2bc4dd400bbac1bd71572,"Remove final mentions of Kerberos in source tree
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-11-22 17:31:01-05:00,18000,2017-12-14 13:46:37-05:00,18000,True,False,['test_requests_gssapi.py'],['07531ffa410d8304a1bdaebec1d3f832faa84193'],1,1,2,1,,,
+f5c8c80b454125e5265119f8efbce71acb269851,"Make shim into its own wrapper subclass
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-12-07 15:44:32-05:00,18000,2017-12-14 13:46:37-05:00,18000,True,False,"['__init__.py', 'compat.py', 'test_requests_gssapi.py']",['55e56f01974ed41888a2bc4dd400bbac1bd71572'],30,51,81,3,1.0,1.0,0.0
+cc66236a2d8a337e3935f396a02f92dd88a737e4,"Rename force_preemptive to opportunistic_auth
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-12-07 15:58:11-05:00,18000,2017-12-14 13:46:37-05:00,18000,True,False,"['compat.py', 'gssapi_.py', 'test_requests_gssapi.py']",['f5c8c80b454125e5265119f8efbce71acb269851'],4,17,21,3,1.0,1.0,1.0
+910372b50c07e399e5b7987d9ecc9a836c3ea078,"Allow passing in creds explicitly (deprecates principal)
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-12-07 16:26:48-05:00,18000,2017-12-14 13:46:37-05:00,18000,True,False,"['compat.py', 'gssapi_.py', 'test_requests_gssapi.py']",['cc66236a2d8a337e3935f396a02f92dd88a737e4'],14,42,56,3,1.0,1.0,0.6818181818181818
+725e5f9d106275e1ed099a55f6c92e7ee95ec055,"Deprecate service and hostname_override in favor of explicit names
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-12-07 16:42:05-05:00,18000,2017-12-14 13:46:37-05:00,18000,True,False,"['compat.py', 'gssapi_.py', 'test_requests_gssapi.py']",['910372b50c07e399e5b7987d9ecc9a836c3ea078'],19,42,61,3,0.0,0.0,0.6666666666666666
+68bada2a544958c5267c556096874a963d518c52,"Update docs for deprecation changes and new features
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-12-07 16:50:14-05:00,18000,2017-12-14 13:46:37-05:00,18000,True,False,"['README.rst', 'gssapi_.py']",['725e5f9d106275e1ed099a55f6c92e7ee95ec055'],15,42,57,2,,,
+2abbcbfed217952bd4cb30b739bbe453bad1257f,"Properly use base64 for request headers
+
+This wasn't needed for requests-kerberos because pykerberos
+automatically base64 encodes and decodes messages from Kerberos, which
+is a behavior I do not like at all.
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-12-14 15:24:57-05:00,18000,2017-12-19 12:28:19-05:00,18000,True,False,"['gssapi_.py', 'test_requests_gssapi.py']",['68bada2a544958c5267c556096874a963d518c52'],60,69,129,2,,,
+cc010d4304e4d753712976206c752903e1a1a422,"Use the correct GSSAPI nametype (hostbased_service)
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-12-14 15:47:22-05:00,18000,2017-12-19 12:28:19-05:00,18000,True,False,"['README.rst', 'compat.py', 'gssapi_.py', 'test_requests_gssapi.py']",['2abbcbfed217952bd4cb30b739bbe453bad1257f'],19,26,45,4,0.5,0.75,0.25
+b9128d329fec6358631a1a8d38cd56480417522f,"Release version 1.0.0
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>
+Resolves: #5",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2017-12-14 15:52:52-05:00,18000,2017-12-19 12:28:19-05:00,18000,True,False,"['HISTORY.rst', '__init__.py']",['cc010d4304e4d753712976206c752903e1a1a422'],1,9,10,2,,,
+4bb65c86c496176074e8fb56e56a7fe84ddc80aa,"Makefile with srpm target for corp.
+
+https://docs.pagure.org/copr.copr/user_documentation.html#make-srpm",Jan Pazdziora,jpazdziora@redhat.com,Robbie Harwood,rharwood@redhat.com,2018-01-16 12:00:06+01:00,-3600,2018-01-28 08:12:40+01:00,-3600,True,False,['Makefile'],['b9128d329fec6358631a1a8d38cd56480417522f'],0,4,4,1,,,
+a41831e5d03ad6ee1776592638bc57f5a0b3c159,"Fix invalid escape sequence ""\s""
+
+To prevent interference of escaping in strings with escaping in regex
+strings regex one should be marked as raw.
+
+Resolves: #9",Stanislav Levin,slev@altlinux.org,Robbie Harwood,rharwood@redhat.com,2018-07-02 16:10:04+03:00,-10800,2018-07-05 11:48:07-04:00,14400,True,False,['gssapi_.py'],['4bb65c86c496176074e8fb56e56a7fe84ddc80aa'],1,1,2,1,,,
+a16eccecda5e0a44e5e8bd01baf33f1bbeab6520,"Added missing trove classifier for license
+
+Now PYPI should be able to recognise license.",Sorin Sbarnea,ssbarnea@users.noreply.github.com,Robbie Harwood,rharwood@redhat.com,2018-08-02 15:33:26+01:00,-3600,2018-08-02 16:13:23-04:00,14400,True,False,['setup.py'],['a41831e5d03ad6ee1776592638bc57f5a0b3c159'],0,3,3,1,,,
+2847146e3ce5090f0a5ab8d8cc5a9eb8a9082a57,"README: fix opportunistic_auth example
+
+The HTTPSPNEGOAuth constructor uses a keyword argument named
+""opportunistic_auth"", not ""opportunistic_authentication"". Fix the
+example in the README to reflect this.",Ken Dreyer,kdreyer@redhat.com,Robbie Harwood,rharwood@redhat.com,2019-04-01 15:32:19-06:00,21600,2019-04-10 13:38:45-04:00,14400,True,False,['README.rst'],['a16eccecda5e0a44e5e8bd01baf33f1bbeab6520'],1,1,2,1,,,
+ea0be78e9eb78fc1d78cf5ebcf6c924e97b2989d,"Release version 1.0.1
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2019-04-10 15:42:43-04:00,14400,2019-04-10 15:45:42-04:00,14400,True,False,"['HISTORY.rst', '__init__.py']",['2847146e3ce5090f0a5ab8d8cc5a9eb8a9082a57'],1,9,10,2,,,
+7e6312c19435f65ad15a700c259ec6cd7ed85755,"[Travis] Test against python-3.7 as well
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2019-04-12 13:13:15-04:00,14400,2019-04-12 13:14:04-04:00,14400,True,False,['.travis.yml'],['ea0be78e9eb78fc1d78cf5ebcf6c924e97b2989d'],3,6,9,1,,,
+475fff533ba6e99a59c2507df0b22e061cd0fb36,"Add information about MutualAuthenticationError to README.rst
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>
+Resolves: #15",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2019-05-16 15:19:51-04:00,14400,2019-05-17 16:32:31-04:00,14400,True,False,['README.rst'],['7e6312c19435f65ad15a700c259ec6cd7ed85755'],0,20,20,1,,,
+498da2e55f98847c9eeb698f50ac00a2e252cacd,"Disable mutual authentication by default
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2019-05-16 15:39:59-04:00,14400,2019-05-17 16:32:31-04:00,14400,True,False,"['README.rst', 'compat.py', 'gssapi_.py', 'test_requests_gssapi.py']",['475fff533ba6e99a59c2507df0b22e061cd0fb36'],44,55,99,4,0.5714285714285714,0.8571428571428571,0.8571428571428571
+c09d1e35e128cde10c4a0de77ac71d85d59e1d05,"Release version 1.1.0
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2019-05-21 10:51:42-04:00,14400,2019-05-21 10:51:42-04:00,14400,True,False,"['HISTORY.rst', '__init__.py']",['498da2e55f98847c9eeb698f50ac00a2e252cacd'],1,7,8,2,,,
+c90ea114303d8d0927081d4b7f709a524d0765ae,"Update README to include section on setup
+
+Cherry-picked-from: requests-kerberos#131
+
+[rharwood@redhat.com: phrasing cleanups, commit message tweaks]",Sam Cook,sam@samcook.dev,Robbie Harwood,rharwood@redhat.com,2019-05-24 16:27:29-04:00,14400,2019-05-24 16:32:59-04:00,14400,True,False,['README.rst'],['c09d1e35e128cde10c4a0de77ac71d85d59e1d05'],2,17,19,1,,,
+e8b5393b1f00dd4e3f7f9a1dda463561a204dfde,Fix redos bug around Negotiate expression,Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2020-02-06 13:11:13-05:00,18000,2020-02-18 14:06:28-05:00,18000,True,False,['gssapi_.py'],['c90ea114303d8d0927081d4b7f709a524d0765ae'],2,1,3,1,,,
+dba7c1cde1a7f47a6227ee2bdea54c194217038c,"Release version 1.1.1
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2020-02-18 15:32:09-05:00,18000,2020-02-18 15:32:09-05:00,18000,True,False,"['HISTORY.rst', '__init__.py']",['e8b5393b1f00dd4e3f7f9a1dda463561a204dfde'],1,7,8,2,,,
+c9e429c50d990051519114c5455d1eb13260b4bc,"Add support for specifing an explicit GSSAPI mech
+
+Add support for passing an explicit mech through to gssapi's
+`SecurityContext` constructor. This allows overriding the auto-detected
+mechanism, and enabling support for RFC4178 SPNEGO.
+
+Fixes #18",Ben Roberts,ben.roberts@gsacapital.com,Robbie Harwood,rharwood@redhat.com,2019-07-12 17:38:26+01:00,-3600,2020-02-18 15:53:32-05:00,18000,True,False,"['README.rst', 'gssapi_.py', 'test_requests_gssapi.py']",['dba7c1cde1a7f47a6227ee2bdea54c194217038c'],15,59,74,3,0.0,1.0,0.9473684210526315
+c37603aa37ab15a57f179d396fe19a917e012af6,"Release version 1.2.0
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2020-02-18 15:57:13-05:00,18000,2020-02-18 15:57:13-05:00,18000,True,False,"['HISTORY.rst', '__init__.py']",['c9e429c50d990051519114c5455d1eb13260b4bc'],1,6,7,2,,,
+681747d45af567d74db339ea960d1e798caf3e9b,Rename requests_gssapi to httpx_gssapi,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-17 22:26:21-04:00,14400,2020-03-17 22:26:21-04:00,14400,True,False,"['__init__.py', 'compat.py', 'exceptions.py', 'gssapi_.py', 'test_httpx_gssapi.py']",['c37603aa37ab15a57f179d396fe19a917e012af6'],0,0,0,5,,,
+fa9114474f9935d3f499fe3960e6f966e3f3f279,Port to httpx,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-17 22:27:32-04:00,14400,2020-03-17 22:27:32-04:00,14400,True,False,"['__init__.py', 'compat.py', 'exceptions.py', 'gssapi_.py', 'test_httpx_gssapi.py']",['681747d45af567d74db339ea960d1e798caf3e9b'],876,638,1514,5,0.9900990099009901,0.04950495049504951,0.11386138613861387
+3bd6b1ff1c8ce2ef018c4a2d0cc66346c36b8156,Update all meta data to reflect httpx,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-17 22:32:47-04:00,14400,2020-03-17 22:32:47-04:00,14400,True,False,"['.gitignore', 'AUTHORS', 'HISTORY.rst', 'LICENSE', 'README.rst', 'requirements.txt', 'setup.cfg', 'setup.py']",['fa9114474f9935d3f499fe3960e6f966e3f3f279'],95,133,228,8,0.0,0.0,0.0
+79b097b06e77396a342d729cd7a8e996431b4a68,Swap out travis for github actions,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-17 22:37:49-04:00,14400,2020-03-17 22:37:49-04:00,14400,True,False,"['publish.yml', 'tests.yml', '.travis.install.sh', '.travis.sh', '.travis.yml']",['3bd6b1ff1c8ce2ef018c4a2d0cc66346c36b8156'],30,95,125,5,,,
+ee55bac2ba03bfdc218fef543f96b536da1cf989,Update copr makefile,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-17 22:39:00-04:00,14400,2020-03-17 22:39:00-04:00,14400,True,False,['Makefile'],['79b097b06e77396a342d729cd7a8e996431b4a68'],3,3,6,1,,,
+86332c65290d8608f1fb5cd53462354fb3e1b3ad,Switch to versioneer to simplify version handling,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-17 22:54:42-04:00,14400,2020-03-17 22:54:42-04:00,14400,True,False,"['.gitattributes', 'MANIFEST.in', '__init__.py', '_version.py', 'setup.cfg', 'setup.py', 'versioneer.py']",['ee55bac2ba03bfdc218fef543f96b536da1cf989'],16,2357,2373,7,0.27807486631016043,0.24812834224598931,0.6631016042780749
+0f8677f1abacef0b4c07e9e9b33bcee29bffb2a8,Install build tools for tests,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-17 23:25:52-04:00,14400,2020-03-17 23:26:03-04:00,14400,True,False,['tests.yml'],['86332c65290d8608f1fb5cd53462354fb3e1b3ad'],0,4,4,1,,,
+e2c995352f69871455741eedb9dc37aaa04a7613,Install krb5-kdc instead of krb5-user,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-17 23:30:25-04:00,14400,2020-03-17 23:30:25-04:00,14400,True,False,['tests.yml'],['0f8677f1abacef0b4c07e9e9b33bcee29bffb2a8'],1,1,2,1,,,
+9794fc1817cd6a42aff6d3811deb2791f9c4780d,Install libkrb5-dev,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-17 23:34:34-04:00,14400,2020-03-17 23:34:34-04:00,14400,True,False,['tests.yml'],['e2c995352f69871455741eedb9dc37aaa04a7613'],1,1,2,1,,,
+f2b83f71c423430abfc128351dae0d660a441951,"Fix naming of older libraries in README
+
+There was no httpx_kerberos, and fix typo of requests_gssapi.",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2020-03-19 13:37:30-04:00,14400,2020-03-19 13:37:30-04:00,14400,True,False,['README.rst'],['9794fc1817cd6a42aff6d3811deb2791f9c4780d'],2,2,4,1,,,
+29cc5d6cb4b9ec002d6459a0a53db782bd3507a2,Move context creation to its own method,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-22 12:59:54-04:00,14400,2020-03-22 12:59:54-04:00,14400,True,False,['gssapi_.py'],['f8b4d89945d2d7201651523b860763ae3e073e88'],23,35,58,1,0.0,1.0,1.0
+4b1b0d2dfcd762a0a8c355747d695e0254e54779,Support configuring logger level via HTTPX_GSSAPI_LOG_LEVEL environment variable,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-22 16:14:08-04:00,14400,2020-03-22 16:14:08-04:00,14400,True,False,"['__init__.py', 'test_httpx_gssapi.py']",['29cc5d6cb4b9ec002d6459a0a53db782bd3507a2'],1,7,8,2,,,
+9dbee0e53020f77608105003192b0c9b181f240a,Abstract GSSError handling into a decorator to simplify internal code,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-22 13:26:07-04:00,14400,2020-03-22 16:14:17-04:00,14400,True,False,['gssapi_.py'],['4b1b0d2dfcd762a0a8c355747d695e0254e54779'],21,38,59,1,1.0,1.0,1.0
+314c598a69b447a5a36af62bcbba9726f48c23ba,Remove HTTPKerberosAuth shim,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-03-22 15:50:27-04:00,14400,2020-03-22 16:14:23-04:00,14400,True,False,"['HISTORY.rst', '__init__.py', 'compat.py', 'test_httpx_gssapi.py']",['9dbee0e53020f77608105003192b0c9b181f240a'],123,21,144,4,0.6666666666666666,0.0,0.6666666666666666
+8cb5296f19ba7eafcd9f9ec820a3d09a3d0ce880,"Refactor authentication flow
+
+Solves the concurrency issue brought up in pythongssapi/requests-gssapi#8 by passing the context around through the flow instead of storing it in a global dictionary.
+
+Inlined authenticate_user() because it didn't do anything more than set the auth header and handle_401() because it became unnecessarily complicated.",Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-05-22 16:36:24-04:00,14400,2020-05-22 16:36:24-04:00,14400,True,False,"['tests.yml', 'exceptions.py', 'gssapi_.py', 'test_httpx_gssapi.py']",['314c598a69b447a5a36af62bcbba9726f48c23ba'],115,75,190,4,0.0,0.0,0.0
+33dc1d9234611b8da8b11abb7755995b5d8d3451,Move tests into a package,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2020-05-22 16:44:00-04:00,14400,2020-05-22 16:44:00-04:00,14400,True,False,"['__init__.py', 'test_mocked.py']",['8cb5296f19ba7eafcd9f9ec820a3d09a3d0ce880'],0,0,0,2,,,
+858b9a39041b2c9ea950485af6e488640593647d,Add 3.9 to test environments,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-01-26 15:58:06-05:00,18000,2021-01-26 15:58:06-05:00,18000,True,False,"['tests.yml', '.gitignore', 'requirements.txt', 'setup.cfg']",['33dc1d9234611b8da8b11abb7755995b5d8d3451'],4,25,29,4,,,
+6d1b0830646706ad6ca19360ef1fac869dddef91,Refactor for httpx 0.16,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-01-26 15:58:55-05:00,18000,2021-01-26 15:58:55-05:00,18000,True,False,"['exceptions.py', 'gssapi_.py']",['858b9a39041b2c9ea950485af6e488640593647d'],24,44,68,2,1.0,1.0,0.0
+6112d63eca4205867625278bbd68f32fa4de48da,Add end-to-end tests with a custom http server,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-01-26 16:00:19-05:00,18000,2021-01-26 16:00:19-05:00,18000,True,False,"['requirements.txt', 'setup.cfg', 'conftest.py', 'test_end_to_end.py']",['6d1b0830646706ad6ca19360ef1fac869dddef91'],1,152,153,4,1.0,1.0,0.5609756097560976
+14cead1918253a644129c5959acc48a57dff5a3f,Add krb5 server packages,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-01-26 16:09:50-05:00,18000,2021-01-26 16:09:50-05:00,18000,True,False,['tests.yml'],['6112d63eca4205867625278bbd68f32fa4de48da'],1,1,2,1,,,
+a49425ed9fa338457ba1fa0c0b630f336cce1617,Enable CodeCov CI,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-01-27 15:24:14-05:00,18000,2021-01-27 15:24:14-05:00,18000,True,False,['tests.yml'],['14cead1918253a644129c5959acc48a57dff5a3f'],2,2,4,1,,,
+ef8e00f779144ee34448666bf74f591328ad0ff7,Merge release/deploy CD into publish and attach artifacts to GH release,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-01-27 15:27:28-05:00,18000,2021-01-27 15:27:28-05:00,18000,True,False,['publish.yml'],['a49425ed9fa338457ba1fa0c0b630f336cce1617'],23,18,41,1,,,
+6b7be3d5d432b9e22136a049c7aff0fa17c637e4,Update HISTORY.rst for the 0.1 release,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-01-27 15:30:24-05:00,18000,2021-01-27 15:31:16-05:00,18000,True,False,['HISTORY.rst'],['ef8e00f779144ee34448666bf74f591328ad0ff7'],2,1,3,1,,,
+85d40bb48e576500ec5246f6c211f20089dcef3c,Fix README formatting so PyPI doesn't yell,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-01-27 16:36:32-05:00,18000,2021-01-27 16:36:32-05:00,18000,True,False,['README.rst'],['6b7be3d5d432b9e22136a049c7aff0fa17c637e4'],1,1,2,1,,,
+30347c72861d1377986ddb6993dfc417b5ac5849,Switch to ncipollo/release-action for releasing,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-01-27 17:51:12-05:00,18000,2021-01-27 17:51:12-05:00,18000,True,False,['publish.yml'],['85d40bb48e576500ec5246f6c211f20089dcef3c'],6,4,10,1,,,
+8e2caac74e37d7a20c0c4504720c33760cd51742,Fix long_description_content_type in setup.py,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-01-27 18:00:12-05:00,18000,2021-01-27 18:00:12-05:00,18000,True,False,['setup.py'],['30347c72861d1377986ddb6993dfc417b5ac5849'],1,1,2,1,,,
+50a7bfe371f314345782f937644b42447dfe261b,Update required httpx version for v0.17,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-04-02 17:56:27-04:00,14400,2021-04-02 17:56:27-04:00,14400,True,False,"['requirements.txt', 'setup.cfg']",['8e2caac74e37d7a20c0c4504720c33760cd51742'],2,2,4,2,,,
+93622fb062c3ef47713b62587d4b7974e29d8e48,Update required httpx version for v0.18,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-04-27 10:57:39-04:00,14400,2021-04-27 10:57:39-04:00,14400,True,False,"['exceptions.py', 'requirements.txt']",['50a7bfe371f314345782f937644b42447dfe261b'],4,4,8,2,,,
+a5301b259c59311a6870391ad30f31dd386152c1,Update setup.cfg to match requirements.txt,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-06-17 19:08:21-04:00,14400,2021-06-17 19:08:21-04:00,14400,True,False,['setup.cfg'],['93622fb062c3ef47713b62587d4b7974e29d8e48'],1,1,2,1,,,
+952fc48a34455952c74c87edba21ecf739c4e69d,Run tests when setup.cfg changes,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-06-17 19:09:39-04:00,14400,2021-06-17 19:09:39-04:00,14400,True,False,['tests.yml'],['a5301b259c59311a6870391ad30f31dd386152c1'],0,1,1,1,,,
+1fed409d8d1d7c91c81183b171af4592ac28503a,Install setuptools and wheel for pip before test deps,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-06-17 19:11:29-04:00,14400,2021-06-17 19:11:29-04:00,14400,True,False,['tests.yml'],['952fc48a34455952c74c87edba21ecf739c4e69d'],0,1,1,1,,,
+6933afe084de923343a014cf65d879e3ddf11d70,Refactor logging to use % formatting for performance,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-07-12 14:31:42-04:00,14400,2021-07-12 14:31:42-04:00,14400,True,False,['gssapi_.py'],['1fed409d8d1d7c91c81183b171af4592ac28503a'],9,10,19,1,0.0,0.0,0.0
+e18f4f79a3367fa3012d282078af6ad38f4dc71d,"Add Contributor Covenant's code of conduct
+
+Signed-off-by: Robbie Harwood <rharwood@redhat.com>",Robbie Harwood,rharwood@redhat.com,Robbie Harwood,rharwood@redhat.com,2021-08-12 12:36:23-04:00,14400,2021-08-17 11:10:41-04:00,14400,True,False,['CODE_OF_CONDUCT.md'],['6933afe084de923343a014cf65d879e3ddf11d70'],0,134,134,1,,,
+d4660c57e7f6e8a290533ee9f6d89522b7c406c5,Update required httpx version for v0.19,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-08-20 13:07:08-04:00,14400,2021-08-20 13:07:08-04:00,14400,True,False,"['requirements.txt', 'setup.cfg']",['6933afe084de923343a014cf65d879e3ddf11d70'],2,2,4,2,,,
+3f22aecc1ffc5b8550eed271e9cb6950b1ad5ee1,Update required httpx version for v0.20,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-10-13 09:06:21-04:00,14400,2021-10-13 09:06:21-04:00,14400,True,False,"['requirements.txt', 'setup.cfg']",['c7f7d3b74dd2607f6c6850dd5f9592451cfdcc0e'],2,2,4,2,,,
+c0eb5163a77ebe48fa2fbe8b59857d870fbf5f26,Update required httpx version for v0.21,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-11-15 13:26:56-05:00,18000,2021-11-15 13:26:56-05:00,18000,True,False,"['requirements.txt', 'setup.cfg']",['3f22aecc1ffc5b8550eed271e9cb6950b1ad5ee1'],2,2,4,2,,,
+39b08789d6d3467ba1ab5a6e4b959262ef80207b,Add 3.10 support,Ádám Lippai,adam@rigo.sk,aiudirog,aiudirog@gmail.com,2021-12-15 19:23:22+01:00,-3600,2021-12-15 21:16:08-05:00,18000,True,False,"['tests.yml', 'setup.cfg']",['c0eb5163a77ebe48fa2fbe8b59857d870fbf5f26'],1,2,3,2,,,
+b8bcf05f9f1b0be6ee5006bba079d90f19d98d89,Add 3.10 to tox configuration,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2021-12-15 22:25:54-05:00,18000,2021-12-15 22:25:54-05:00,18000,True,False,['setup.cfg'],['39b08789d6d3467ba1ab5a6e4b959262ef80207b'],1,2,3,1,,,
+859cce9532175d7600fb806f5ed432dfc43e8181,Configure dependabot,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2022-02-03 21:49:23-05:00,18000,2022-02-03 21:49:23-05:00,18000,True,False,['dependabot.yml'],['b8bcf05f9f1b0be6ee5006bba079d90f19d98d89'],0,12,12,1,,,
+895eb81dda01b5daaf374edff25fbeb01973b574,Consolidate CI/CD into a single workflow,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2022-02-03 21:58:28-05:00,18000,2022-02-03 21:58:37-05:00,18000,True,False,"['ci.yml', 'publish.yml', 'tests.yml']",['859cce9532175d7600fb806f5ed432dfc43e8181'],94,97,191,3,,,
+218d41d7fcbf21898058b4656e76efa83e1e9859,Remove requirements.txt in favor of pure setup.cfg to let dependabot properly handle upgrades,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2022-02-03 22:10:11-05:00,18000,2022-02-03 22:10:11-05:00,18000,True,False,"['ci.yml', 'requirements.txt', 'setup.cfg']",['895eb81dda01b5daaf374edff25fbeb01973b574'],6,6,12,3,,,
+3d70ac36354f221e67901ec5ea5d36c68a90b92c,Remove apostrophe in setup.cfg,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2022-02-03 22:18:25-05:00,18000,2022-02-03 22:19:06-05:00,18000,True,False,['setup.cfg'],['218d41d7fcbf21898058b4656e76efa83e1e9859'],1,1,2,1,,,
+6efed5e6fa1ac92ed87599cc3271c86281c71904,Update required httpx version for v0.22,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2022-02-03 22:39:52-05:00,18000,2022-02-03 22:40:16-05:00,18000,True,False,['setup.cfg'],['3d70ac36354f221e67901ec5ea5d36c68a90b92c'],1,1,2,1,,,
+8c29be63421b560051ebb1a82b831210982e268e,"Bump actions/setup-python from 2.3.1 to 2.3.2
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2.3.1 to 2.3.2.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.3.1...v2.3.2)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,aiudirog,aiudirog@gmail.com,2022-02-04 16:26:05+00:00,0,2022-02-04 21:58:35-05:00,18000,True,False,['ci.yml'],['6efed5e6fa1ac92ed87599cc3271c86281c71904'],3,3,6,1,,,
+30ca2f98c5abc7bd9fee56bf636b240a1952ac09,"Bump actions/setup-python from 2.3.2 to 3.1.2
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2.3.2 to 3.1.2.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.3.2...v3.1.2)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,aiudirog,aiudirog@gmail.com,2022-04-11 16:41:41+00:00,0,2022-05-24 02:15:06-04:00,14400,True,False,['ci.yml'],['8c29be63421b560051ebb1a82b831210982e268e'],3,3,6,1,,,
+04f844d139b016f61d062c886be8aca9f59c5a18,"Bump actions/checkout from 2.4.0 to 3.0.2
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2.4.0 to 3.0.2.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.4.0...v3.0.2)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,aiudirog,aiudirog@gmail.com,2022-05-24 06:15:26+00:00,0,2022-05-24 02:25:50-04:00,14400,True,False,['ci.yml'],['30ca2f98c5abc7bd9fee56bf636b240a1952ac09'],3,3,6,1,,,
+d88de2d63cc0504428bf3b7befedc636d1239bfc,Update required httpx version for v0.23,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2022-05-24 02:26:47-04:00,14400,2022-05-24 02:26:47-04:00,14400,True,False,['setup.cfg'],['04f844d139b016f61d062c886be8aca9f59c5a18'],1,1,2,1,,,
+3cb802f1978627551a5a6021b3e6a17026dc7969,Dropped support for Python 3.6 and declared support for 3.11,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2023-05-03 00:11:29-04:00,14400,2023-05-03 00:11:29-04:00,14400,True,False,"['ci.yml', 'setup.cfg']",['d88de2d63cc0504428bf3b7befedc636d1239bfc'],3,3,6,2,,,
+f2cb83c9f058fe9966d80d01897c40ee59e5a4f8,Update required httpx version for v0.24,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2023-05-03 00:14:06-04:00,14400,2023-05-03 00:14:06-04:00,14400,True,False,['setup.cfg'],['3cb802f1978627551a5a6021b3e6a17026dc7969'],1,1,2,1,,,
+f7e30244885f373d4dc37f42e2868defdd51cbab,"Bump actions/checkout from 3.0.2 to 3.5.2 (#29)
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 3.0.2 to 3.5.2.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v3.0.2...v3.5.2)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-03 00:17:50-04:00,14400,2023-05-03 00:17:50-04:00,14400,True,False,['ci.yml'],['f2cb83c9f058fe9966d80d01897c40ee59e5a4f8'],3,3,6,1,,,
+69d14ba62181b538b24e05f25f403f5d2d9c8860,"Bump actions/setup-python from 3.1.2 to 4.6.0 (#28)
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 3.1.2 to 4.6.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v3.1.2...v4.6.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-03 00:21:21-04:00,14400,2023-05-03 00:21:21-04:00,14400,True,False,['ci.yml'],['f7e30244885f373d4dc37f42e2868defdd51cbab'],3,3,6,1,,,
+ecaf55082de7d98b1cf4e13f0c6f82c5cac9edb4,"Bump actions/setup-python from 4.6.0 to 4.7.0 (#32)
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4.6.0 to 4.7.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v4.6.0...v4.7.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-20 20:23:17-04:00,14400,2023-09-20 20:23:17-04:00,14400,True,False,['ci.yml'],['69d14ba62181b538b24e05f25f403f5d2d9c8860'],3,3,6,1,,,
+5fd61e1da831183f499e350c710c88df16418f78,"Bump actions/checkout from 3.5.2 to 3.5.3 (#31)
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 3.5.2 to 3.5.3.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v3.5.2...v3.5.3)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-20 20:28:46-04:00,14400,2023-09-20 20:28:46-04:00,14400,True,False,['ci.yml'],['ecaf55082de7d98b1cf4e13f0c6f82c5cac9edb4'],3,3,6,1,,,
+f5a09b2cf82756a72e9534d8be84cb6c7ee22d5b,Update required httpx version for v0.25,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2023-09-20 20:31:21-04:00,14400,2023-09-20 20:31:21-04:00,14400,True,False,['setup.cfg'],['5fd61e1da831183f499e350c710c88df16418f78'],1,1,2,1,,,
+2077111b49ab3d3a82192d2d66049d2954564844,"Bump actions/checkout from 3.5.3 to 4.1.1 (#37)
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 3.5.3 to 4.1.1.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v3.5.3...v4.1.1)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-20 13:04:28-05:00,18000,2023-12-20 13:04:28-05:00,18000,True,False,['ci.yml'],['f5a09b2cf82756a72e9534d8be84cb6c7ee22d5b'],3,3,6,1,,,
+723ab4c8f4b900174a6a172c6698ed78ad07e553,"Bump actions/setup-python from 4.7.0 to 5.0.0 (#39)
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4.7.0 to 5.0.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v4.7.0...v5.0.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-20 13:04:47-05:00,18000,2023-12-20 13:04:47-05:00,18000,True,False,['ci.yml'],['2077111b49ab3d3a82192d2d66049d2954564844'],3,3,6,1,,,
+895a85407895ae26526f3f9202029b8acbdd70f3,Add Python 3.12 testing to CI/CD,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2023-12-20 13:07:33-05:00,18000,2023-12-20 13:07:45-05:00,18000,True,False,"['ci.yml', 'setup.cfg']",['723ab4c8f4b900174a6a172c6698ed78ad07e553'],3,4,7,2,,,
+216e79929de3782443717fd6470de45376f9a1a4,Update versioneer to support Python 3.12,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2023-12-20 13:09:55-05:00,18000,2023-12-20 13:09:55-05:00,18000,True,False,"['_version.py', 'versioneer.py']",['895a85407895ae26526f3f9202029b8acbdd70f3'],425,1043,1468,2,0.0,0.2574712643678161,0.8183908045977012
+951ff972f2729ca019832fc6bb28256570cbf18d,Update required httpx version for v0.26,Roger Aiudi,aiudirog@gmail.com,Roger Aiudi,aiudirog@gmail.com,2023-12-20 13:11:06-05:00,18000,2023-12-20 13:11:06-05:00,18000,True,False,['setup.cfg'],['216e79929de3782443717fd6470de45376f9a1a4'],1,1,2,1,,,

@@ -1,0 +1,49 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+d00d1e4fa345850b76d945a3ec3da655867f1b15,Initial commit,Aleksandar Radivojević,sandorex@tuta.io,GitHub,noreply@github.com,2022-03-13 14:56:45+01:00,-3600,2022-03-13 14:56:45+01:00,-3600,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,332,332,3,,,
+adaf732d16dac4bab5327b75934765bf7cbee38a,Initial Commit,Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-03-13 22:17:00+01:00,-3600,2022-03-13 22:17:00+01:00,-3600,True,False,"['README.md', '__init__.py', '__main__.py', '__init__.py', 'main.py', '__init__.py', '__init__.py', 'abacus.py', 'magic.py', '__init__.py', 'basic_prompt.py', '__init__.py', 'inferred_multi.py']",['d00d1e4fa345850b76d945a3ec3da655867f1b15'],2,306,308,13,0.75,0.8660714285714286,0.7321428571428571
+5124f3404b2eea66b943b98d0daed7b9b0231e69,"Cleanup and minor changes
+preparing for proper pip packaging",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-03-14 20:17:20+01:00,-3600,2022-03-14 20:17:20+01:00,-3600,True,False,"['config.py', '__init__.py', 'abacus.py', 'magic.py', '__init__.py', 'aliases.py', 'basic_prompt.py', 'inferred_multi.py']",['adaf732d16dac4bab5327b75934765bf7cbee38a'],48,93,141,8,0.0,0.0,0.0
+a8efa2dcfefc5d3b22f35a6ae5e8249be97fbae7,Packaging first version,Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-03-14 20:55:21+01:00,-3600,2022-03-14 20:55:21+01:00,-3600,True,False,"['__init__.py', 'main.py', 'pyproject.toml']",['5124f3404b2eea66b943b98d0daed7b9b0231e69'],2,38,40,3,1.0,1.0,1.0
+a8829240099963076d557590ffd730563c788a40,"Now abacus will start IPython session itself
+It can finally be used standalone",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-03-14 22:01:06+01:00,-3600,2022-03-14 22:01:06+01:00,-3600,True,False,"['main.py', 'pyproject.toml']",['a8efa2dcfefc5d3b22f35a6ae5e8249be97fbae7'],2,18,20,2,1.0,1.0,1.0
+6bf3171d0ec3a489ba7a6c992894c5b38da9df0c,Fixing pyproject.toml,Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-03-14 22:01:57+01:00,-3600,2022-03-14 22:01:57+01:00,-3600,True,False,['pyproject.toml'],['a8829240099963076d557590ffd730563c788a40'],1,1,2,1,,,
+ff8099360ac01c89ee8094ea54a9c3aa21cf69f9,Increment version,Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-03-14 22:02:45+01:00,-3600,2022-03-14 22:02:45+01:00,-3600,True,False,['__init__.py'],['6bf3171d0ec3a489ba7a6c992894c5b38da9df0c'],2,2,4,1,,,
+c9edd4047421652516281bc164d005fb2f1dec11,"Minor changes
+Commiting before changing license to GPL cause of QT",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-03-15 19:11:31+01:00,-3600,2022-03-15 19:11:31+01:00,-3600,True,False,"['main.py', 'config.py', 'abacus.py', 'basic_prompt.py', 'inferred_multi.py']",['ff8099360ac01c89ee8094ea54a9c3aa21cf69f9'],4,23,27,5,0.0,0.6666666666666666,1.0
+f6020ad3895bc40ed9a09c0f374c13e768f41af0,Changing to GPL license,Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-03-15 19:32:39+01:00,-3600,2022-03-15 19:32:39+01:00,-3600,True,False,"['LICENSE', '__init__.py', '__main__.py', '__init__.py', 'main.py', 'config.py', '__init__.py', '__init__.py', 'abacus.py', 'magic.py', '__init__.py', 'aliases.py', '__init__.py', 'basic_prompt.py', '__init__.py', 'inferred_multi.py', 'pyproject.toml']",['c9edd4047421652516281bc164d005fb2f1dec11'],280,890,1170,17,,,
+56f66b48fdd48c8e2719ae6e2749a462cafddf4e,"Major rewrite 0.2.0
+- Made a base console class so i could run same code with and without IPython cause of the future web version
+- Major improvements in transformations:
+   - Multiplication is implied if an non callable name is called
+   - Equal and not equal checks with symbols are automatically converted to sympy variant (currently limited to one comparison `a == b`)
+- Basic console version with very limited REPL
+- Probably some others things that i missed",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-04-01 21:32:53+02:00,-7200,2022-04-01 21:32:53+02:00,-7200,True,False,"['__init__.py', '__main__.py', 'main.py', 'basic_console.py', 'config.py', 'console.py', '__init__.py', 'abacus.py', 'magic.py', 'inferred_multi.py', '__init__.py', '__init__.py', 'aliases.py', 'ipython_console.py', '__init__.py', 'prompt.py', 'main.py', '__init__.py', 'auto_symbol.py', 'implied_multiplication.py', 'pyproject.toml', 'tox.ini']",['f6020ad3895bc40ed9a09c0f374c13e768f41af0'],331,699,1030,22,0.9390243902439024,0.8252032520325203,0.991869918699187
+a2a004be39f62f5ba8a5f212612adf6877dba7f2,"Improved auto symbol compare transformation
+Now if there is any symbol in a compare with Eq being the first op then it will be transformed into sympy Eq or Ne respectively",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-04-02 16:33:07+02:00,-7200,2022-04-02 16:33:07+02:00,-7200,True,False,['auto_symbol.py'],['56f66b48fdd48c8e2719ae6e2749a462cafddf4e'],1,12,13,1,1.0,0.0,1.0
+893ea97f1fa7ae4ab29cbb7471a2c412cc01f032,"Added build CI
+It builds wheel package and pyinstaller executable from latest master",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-04-04 20:14:33+02:00,-7200,2022-04-04 20:14:33+02:00,-7200,True,False,"['build.yml', '.gitignore', '__init__.py', '__main__.py', 'console.py', 'ipython_console.py', 'main_basic.py', 'main_ipython.py', 'about.txt', 'android-chrome-192x192.png', 'android-chrome-512x512.png', 'apple-touch-icon.png', 'favicon-16x16.png', 'favicon-32x32.png', 'favicon.ico', 'site.webmanifest', 'abacus-basic.spec', 'abacus.spec', 'pyproject.toml', 'update-version-ci.py']",['a2a004be39f62f5ba8a5f212612adf6877dba7f2'],10,242,252,20,1.0,1.0,1.0
+4b6982ec4dd6e9b0446ac0f86cca90c7071b7197,"Improving the README file
+It's unfinished but good enough for now",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-04-04 20:16:50+02:00,-7200,2022-04-04 20:16:50+02:00,-7200,True,False,['README.md'],['893ea97f1fa7ae4ab29cbb7471a2c412cc01f032'],3,26,29,1,,,
+c9d1577c0a25a62fa5075c17591b0b370793678c,"Bug fixes and cleanup
+Fixed issues with tokenization of multiline strings, there is no longer any extra lines
+Renamed IConsole to ShellBase and all console mentions are renamed to shell
+ShellBase.run_file is now working properly
+Added init file that sets up the user namespace
+Added simple debug extension
+Bump version to 0.2.2
+
+Removed the CI for now
+Removed pyinstaller stuff as it's not working properly
+BasicShell is now currently broken",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-04-19 23:43:13+02:00,-7200,2022-04-19 23:43:13+02:00,-7200,True,False,"['build.yml', 'launch.json', '__init__.py', '__main__.py', 'basic.py', '__init__.py', 'basic_shell.py', 'main.py', '__init__.py', 'auto_symbol.py', 'debug.py', 'implied_multiplication.py', 'ipython.py', '__init__.py', '__init__.py', 'aliases.py', 'ipython_shell.py', 'main.py', '__init__.py', 'prompt.py', 'main.py', '__init__.py', 'init.pyi', 'shell.py', 'implied_multiplication.py', 'about.txt', 'android-chrome-192x192.png', 'android-chrome-512x512.png', 'apple-touch-icon.png', 'favicon-16x16.png', 'favicon-32x32.png', 'favicon.ico', 'site.webmanifest', 'abacus-basic.spec', 'abacus.spec', 'pyproject.toml']",['4b6982ec4dd6e9b0446ac0f86cca90c7071b7197'],380,552,932,36,0.41509433962264153,0.41509433962264153,0.5377358490566038
+520c5ae9178efc8246cf9db2433a37df4c3bed70,"Updating readme file, and license in pyproject.toml",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-04-20 14:00:36+02:00,-7200,2022-04-20 14:00:36+02:00,-7200,True,False,"['README.md', 'pyproject.toml']",['c9d1577c0a25a62fa5075c17591b0b370793678c'],5,17,22,2,,,
+4a3addbc27a7fe8735d176d4b5a4cbab88dc90aa,"Moved to the hatch build system
+The version is automatically set when building from vcs",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-04-20 14:24:32+02:00,-7200,2022-04-20 14:24:32+02:00,-7200,True,False,"['.gitignore', '__init__.py', '__init__.py', 'init.pyi', 'hatch.toml', 'pyproject.toml', 'update-version-ci.py', 'tox.ini']",['520c5ae9178efc8246cf9db2433a37df4c3bed70'],58,37,95,8,0.0,0.0,0.0
+10e2c4e4392b1f57322cf5f5553ca8022325f3f5,"Testing, cleanup and fixes
+Fixed basic console
+Added coverage, testing configuration
+Added formatting configuration with black and isort
+Formatted all the code
+
+Removed extensions entirely
+Removed debug extension temporarily
+Merged transformers into a single one",Sandorex,rzhw3h@gmail.com,Sandorex,rzhw3h@gmail.com,2022-04-21 16:24:09+02:00,-7200,2022-04-21 16:24:09+02:00,-7200,True,False,"['.coveragerc', 'settings.json', 'README.md', '__init__.py', '__main__.py', 'basic.py', 'basic_shell.py', 'main.py', 'auto_symbol.py', 'debug.py', 'implied_multiplication.py', 'ipython.py', '__init__.py', 'aliases.py', 'ipython_shell.py', 'main.py', 'prompt.py', 'main.py', 'init.pyi', 'shell.py', '__init__.py', '__main__.py', 'test_tokenization.py', 'tokenizer.py', 'transformer.py', 'hatch.toml', 'pyproject.toml', 'tox.ini']",['4a3addbc27a7fe8735d176d4b5a4cbab88dc90aa'],618,765,1383,28,0.0,0.0,0.0

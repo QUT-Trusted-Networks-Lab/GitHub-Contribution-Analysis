@@ -1,0 +1,71 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+4cfb752fa77abfae6e908828540744abd1ea2736,Initial commit,Qu Tang,tqshelly@gmail.com,GitHub,noreply@github.com,2019-10-10 11:08:54-04:00,14400,2019-10-10 11:08:54-04:00,14400,True,False,"['.gitignore', 'README.md']",[],0,106,106,2,,,
+d611414c6b0a733294b23ffc636ae8cdc4c822dc,Init project with poetry,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-10 12:26:20-04:00,14400,2019-10-10 12:26:20-04:00,14400,True,False,"['README.md', 'README.rst', '__init__.py', 'poetry.lock', 'pyproject.toml', '__init__.py', 'test_arus_stream_metawear.py']",['4cfb752fa77abfae6e908828540744abd1ea2736'],2,321,323,7,1.0,1.0,1.0
+77d0e843296b5b32c3a1767008549c656211b895,Get rid of immature poetry,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-10 12:58:05-04:00,14400,2019-10-10 12:58:05-04:00,14400,True,False,"['.gitignore', 'Pipfile', 'Pipfile.lock', 'README.md', '__init__.py', 'poetry.lock', 'pyproject.toml', 'requirements.txt', 'setup.py', '__init__.py', 'test_arus_stream_metawear.py']",['d611414c6b0a733294b23ffc636ae8cdc4c822dc'],424,72,496,11,0.0,0.0,0.0
+49ab1504ee48ff974d17a5402078041f4a51776e,Update pipfile lock,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-10 13:02:48-04:00,14400,2019-10-10 13:02:48-04:00,14400,True,False,['Pipfile.lock'],['77d0e843296b5b32c3a1767008549c656211b895'],2,111,113,1,,,
+76d12c825aa7b6a988a14bf46017b681bb558e8d,"Add metawear stream
+
+1. Add example to test the metawear stream
+2. Add class for metawear stream and timestamp corrector
+3. Update dependencies",qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-10 15:19:58-04:00,14400,2019-10-10 15:19:58-04:00,14400,True,False,"['.gitignore', 'Pipfile', 'Pipfile.lock', '__init__.py', 'metawear_stream.py', 'metawear_timestamp_corrector.py', 'use_metawear_stream.py', 'requirements.txt']",['49ab1504ee48ff974d17a5402078041f4a51776e'],131,264,395,8,0.5568181818181818,0.8636363636363636,0.6818181818181818
+66bece4d06bccb5af60edb3eadad83c11cb089f0,Bump up package version to 1.0.0,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-10 15:20:20-04:00,14400,2019-10-10 15:20:20-04:00,14400,True,False,['setup.py'],['76d12c825aa7b6a988a14bf46017b681bb558e8d'],1,1,2,1,,,
+7c57b04fabb96cfb2fa86012d588749bdc8380a4,Add auto-generated doc using pdoc3,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-10 15:45:28-04:00,14400,2019-10-10 15:45:28-04:00,14400,True,False,"['Pipfile', '__init__.py', 'corrector.py', 'stream.py', 'corrector.html', 'index.html', 'metawear_stream.html', 'metawear_timestamp_corrector.html', 'stream.html', 'use_metawear_stream.py', 'config.mako', 'credits.mako', 'css.mako', 'head.mako', 'html.mako', 'logo.mako', 'pdf.mako', 'text.mako']",['66bece4d06bccb5af60edb3eadad83c11cb089f0'],4,2688,2692,18,,,
+3555647cafed68c61b56bfa7c2383188f7f356ba,"Replace building system and update documentation
+
+1. Use poetry instead of pipenv
+2. Update README
+3. Update documentation",qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-11 17:27:26-04:00,14400,2019-10-11 17:27:26-04:00,14400,True,False,"['.gitignore', 'Pipfile', 'README.md', '__init__.py', 'stream.py', 'doc.py', 'index.html', 'metawear_stream.html', 'metawear_timestamp_corrector.html', 'corrector.html', 'index.html', 'stream.html', 'poetry.lock', 'pyproject.toml', 'requirements.txt', 'config.mako']",['7c57b04fabb96cfb2fa86012d588749bdc8380a4'],851,919,1770,16,,,
+ca9bdcde9578cf103cd86f06877cd071be156495,Remove old setup.py,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-11 17:28:32-04:00,14400,2019-10-11 17:28:32-04:00,14400,True,False,['setup.py'],['3555647cafed68c61b56bfa7c2383188f7f356ba'],31,0,31,1,,,
+8f438a83d910eec258c0825e47c997d42a81d924,Remove old pipfile,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-11 17:31:18-04:00,14400,2019-10-11 17:31:18-04:00,14400,True,False,['Pipfile'],['ca9bdcde9578cf103cd86f06877cd071be156495'],20,0,20,1,,,
+a300bb6a052c95b78d4be6016595cbd187f9159a,Fix typo in pyproject file,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-11 17:32:44-04:00,14400,2019-10-11 17:32:44-04:00,14400,True,False,['pyproject.toml'],['8f438a83d910eec258c0825e47c997d42a81d924'],3,0,3,1,,,
+37024b8fa7c3eedc35f0454911f6b2fb24c5c027,Update README and documentation,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-11 17:49:24-04:00,14400,2019-10-11 17:49:24-04:00,14400,True,False,"['README.md', 'index.html']",['a300bb6a052c95b78d4be6016595cbd187f9159a'],6,9,15,2,,,
+73ac2af818b7670ed25717e5b66d59e459f449af,"build: update dependency versions
+
+1. Bump minimal `arus` package version to 0.4.0
+2. Add semantic release package as dev dependency",qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 17:20:44-04:00,14400,2019-10-31 17:20:44-04:00,14400,True,False,"['poetry.lock', 'pyproject.toml']",['37024b8fa7c3eedc35f0454911f6b2fb24c5c027'],28,150,178,2,,,
+84a9b54edc030a5fbd914b67a5caf169e6b602c6,"refactor: make package compatible with arus ^0.4.0
+
+1. Rename `chunk_size` to `window_size` in `MetawearStream` class constructor arguments
+2. Rename `session_begin` to `start_time` in `MetawearStream` class constructor arguments
+
+BREAKING CHANGE: `MetawearStream` class constructor signature change",qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 17:23:19-04:00,14400,2019-10-31 17:23:19-04:00,14400,True,False,"['stream.py', 'use_metawear_stream.py']",['73ac2af818b7670ed25717e5b66d59e459f449af'],16,12,28,2,0.0,0.0,1.0
+b095ad14cdbea0913abe5222a943cb643f377640,"ci: add continuous integration, testing and deployment
+
+Close #3",qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 17:23:58-04:00,14400,2019-10-31 17:23:58-04:00,14400,True,False,"['ci.yml', 'test.yml']",['84a9b54edc030a5fbd914b67a5caf169e6b602c6'],0,92,92,2,,,
+a3d7189552c715c69e6e5576abd2836e75a79211,ci: install linux system dependency before building,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 17:28:48-04:00,14400,2019-10-31 17:28:48-04:00,14400,True,False,['ci.yml'],['b095ad14cdbea0913abe5222a943cb643f377640'],0,3,3,1,,,
+31c1e384a5a4bb49b90d6c3c78724228e2d496da,ci: add boost headers as system dependency,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 17:39:52-04:00,14400,2019-10-31 17:39:52-04:00,14400,True,False,['ci.yml'],['a3d7189552c715c69e6e5576abd2836e75a79211'],1,3,4,1,,,
+8961a8a33ddb52bb2af62c4ea8354d9fb54d1163,ci: add bluetooth headers to system dependency,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 17:42:23-04:00,14400,2019-10-31 17:42:23-04:00,14400,True,False,['ci.yml'],['31c1e384a5a4bb49b90d6c3c78724228e2d496da'],1,2,3,1,,,
+d7a0626764c6927abfa12c54d982b96591605197,ci: add configuration for semantic release,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 17:46:41-04:00,14400,2019-10-31 17:46:41-04:00,14400,True,False,['pyproject.toml'],['8961a8a33ddb52bb2af62c4ea8354d9fb54d1163'],0,5,5,1,,,
+bbdd201d42a080d4c19e23cbc409eed154ebd360,"1.0.1
+
+Automatically generated by python-semantic-release",semantic-release,semantic-release,github actions,tqshelly@gmail.com,2019-10-31 21:51:47+00:00,0,2019-10-31 21:51:47+00:00,0,True,False,['pyproject.toml'],['d7a0626764c6927abfa12c54d982b96591605197'],1,1,2,1,,,
+789072dfda401689f5a5b7bdf89d00868737e4b3,ci: do not release to pypi due to dependency on github repo,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 17:54:45-04:00,14400,2019-10-31 17:54:45-04:00,14400,True,False,['ci.yml'],['d7a0626764c6927abfa12c54d982b96591605197'],6,0,6,1,,,
+d62a5a491b83b44513017a93db269db43425f68f,docs: add linux system requirement in README,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 17:56:48-04:00,14400,2019-10-31 17:56:48-04:00,14400,True,False,['README.md'],['ee06e1fbf2f8ccf1e9ccda9529b3f31bdc2f1549'],0,8,8,1,,,
+60bb3b226321eb489064315a9bdac70d2d7d0a0c,"ci: remove and ignore docs folder
+
+Now we are using CI for documentation building",qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 17:57:48-04:00,14400,2019-10-31 17:57:48-04:00,14400,True,False,"['.gitignore', 'corrector.html', 'index.html', 'stream.html']",['d62a5a491b83b44513017a93db269db43425f68f'],858,2,860,4,,,
+970ed1435eef47fb11e78a56957629de62d62bba,ci: pull latest change first before running semantic release,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 18:01:23-04:00,14400,2019-10-31 18:01:23-04:00,14400,True,False,['ci.yml'],['60bb3b226321eb489064315a9bdac70d2d7d0a0c'],0,1,1,1,,,
+211fd214d4fe82d50f9046b149423c2f3db9ba25,ci: specify branch for git pull,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 18:07:12-04:00,14400,2019-10-31 18:07:12-04:00,14400,True,False,['ci.yml'],['970ed1435eef47fb11e78a56957629de62d62bba'],1,1,2,1,,,
+60f3be8c579fe9cb2130fc232d64bd4c52a12918,"1.0.2
+
+Automatically generated by python-semantic-release",semantic-release,semantic-release,github actions,tqshelly@gmail.com,2019-10-31 22:10:27+00:00,0,2019-10-31 22:10:27+00:00,0,True,False,['pyproject.toml'],['211fd214d4fe82d50f9046b149423c2f3db9ba25'],1,1,2,1,,,
+72aecb65f2ce8211ace40ca6244123996553a933,ci: add os dependencies to test.yml,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-10-31 18:21:18-04:00,14400,2019-10-31 18:21:18-04:00,14400,True,False,['test.yml'],['211fd214d4fe82d50f9046b149423c2f3db9ba25'],0,6,6,1,,,
+7bf750318f9bceb4263c6f768a6bbca5b0e582e5,"build: use the official pymetawear 0.12.0
+
+BREAKING CHANGE: use pymetawear ^0.12.0 on pypi",qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-11-02 16:44:13-04:00,14400,2019-11-02 16:44:13-04:00,14400,True,False,"['poetry.lock', 'pyproject.toml']",['72aecb65f2ce8211ace40ca6244123996553a933'],13,9,22,2,,,
+c6dbcb66a81ef8ae2de3b0e1e436aee46196c0df,ci: add steps to release to pypi,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-11-02 16:45:39-04:00,14400,2019-11-02 16:45:39-04:00,14400,True,False,['ci.yml'],['7bf750318f9bceb4263c6f768a6bbca5b0e582e5'],0,6,6,1,,,
+2456647d22de9d75c34fdc7aadbeed8be2930a40,ci: update apt repo before installing system dependencies,qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-11-02 16:55:10-04:00,14400,2019-11-02 16:55:10-04:00,14400,True,False,"['ci.yml', 'test.yml']",['c6dbcb66a81ef8ae2de3b0e1e436aee46196c0df'],0,2,2,2,,,
+cda0b8db3d0820d7cab0d7e3cc1627a407fd9fff,"1.0.3
+
+Automatically generated by python-semantic-release",semantic-release,semantic-release,github actions,tqshelly@gmail.com,2019-11-02 21:02:36+00:00,0,2019-11-02 21:02:36+00:00,0,True,False,['pyproject.toml'],['7e5a6fd32a95e7488f0de14b9a4ef2282e1e48eb'],1,1,2,1,,,
+30798b0fae3da8214b4651e002f7caf7ba7383ff,"docs: update README
+
+1. Add badges. Close #4
+2. Update installation instructions.",qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-11-02 17:09:12-04:00,14400,2019-11-02 17:09:12-04:00,14400,True,False,['README.md'],['7e5a6fd32a95e7488f0de14b9a4ef2282e1e48eb'],5,9,14,1,,,
+1120fd3544a64c83f540db47f60bbbf0fd673962,"1.0.4
+
+Automatically generated by python-semantic-release",semantic-release,semantic-release,github actions,tqshelly@gmail.com,2019-11-02 21:19:29+00:00,0,2019-11-02 21:19:29+00:00,0,True,False,['pyproject.toml'],['ceb6ee004da88a26af234053b88f1b0522c04746'],1,1,2,1,,,
+393a5d7e28f6c9e0a05acc8c70051df1c00b2fc3,"build: Update dependency versions
+
+1. Update arus package to 0.4.13",qutang,tqshelly@gmail.com,qutang,tqshelly@gmail.com,2019-12-16 10:32:06-05:00,18000,2019-12-16 10:32:06-05:00,18000,True,False,['poetry.lock'],['1120fd3544a64c83f540db47f60bbbf0fd673962'],93,518,611,1,,,
+b5d387c0d3c806aa274b47bbce83b32ca28b25ae,Update README.md,Qu Tang,tqshelly@gmail.com,GitHub,noreply@github.com,2019-12-28 18:57:00-05:00,18000,2019-12-28 18:57:00-05:00,18000,True,False,['README.md'],['393a5d7e28f6c9e0a05acc8c70051df1c00b2fc3'],1,5,6,1,,,

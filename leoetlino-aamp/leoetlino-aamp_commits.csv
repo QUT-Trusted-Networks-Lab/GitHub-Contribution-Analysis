@@ -1,0 +1,109 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+4e379574f5f944f2385d7263db99dbeae8848f51,Initial commit,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-17 10:43:03+02:00,-7200,2018-08-18 23:26:31+02:00,-7200,True,False,"['.gitignore', 'LICENSE', 'MANIFEST.in', 'README.md', '__init__.py', '__main__.py', 'aamp.py', 'botw_hashed_names.py', 'botw_hashed_names.txt', 'parameters.py', 'util.py', 'yaml_util.py', 'fastentrypoints.py', 'setup.py', 'show_section_order.py', 'DamageReactionTable.bxml', 'Player_Link.baiprog', 'TBox_Field_Stone.bxml', 'TreasureBox.baiprog', 'master_field.bksky']",[],0,55929,55929,20,0.47068676716917923,0.542713567839196,0.7554438860971524
+b0d8ed2ba9cec6d4c0a6467034cf21cefefcecda,Remove dead code,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-19 00:12:43+02:00,-7200,2018-08-19 00:12:43+02:00,-7200,True,False,['aamp.py'],['4e379574f5f944f2385d7263db99dbeae8848f51'],10,0,10,1,0.0,0.0,0.0
+db486928431e7a37e2b809d82f6263c2dabcfd3f,Add setters,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-19 09:56:22+02:00,-7200,2018-08-19 09:56:41+02:00,-7200,True,False,['parameters.py'],['b0d8ed2ba9cec6d4c0a6467034cf21cefefcecda'],0,12,12,1,1.0,1.0,0.0
+9194f10336036dba5fbc8b304dc4cef880f19f4f,Add some documentation,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-19 09:50:18+02:00,-7200,2018-08-19 09:57:44+02:00,-7200,True,False,['README.md'],['db486928431e7a37e2b809d82f6263c2dabcfd3f'],0,53,53,1,,,
+1199c22a956c0fed8fc717035e23d95112a0d256,Update documentation on pypi,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-19 10:03:11+02:00,-7200,2018-08-19 10:03:11+02:00,-7200,True,False,['setup.py'],['9194f10336036dba5fbc8b304dc4cef880f19f4f'],1,1,2,1,,,
+d03b8ade349d8f428d188e2a48074df151be4fdc,"Fix typing issue
+
+Can't use the class name for its own member functions.",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-19 12:22:25+02:00,-7200,2018-08-19 12:22:52+02:00,-7200,True,False,"['parameters.py', 'setup.py']",['1199c22a956c0fed8fc717035e23d95112a0d256'],2,2,4,2,,,
+c5cbc57de40aeddb9d9fc82aefe4d236c698088f,"Add basic support for quats
+
+Allows quat parameters to be loaded and saved. Note that the lerp stuff
+is currently ignored.",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-19 20:11:56+02:00,-7200,2018-08-19 20:12:33+02:00,-7200,True,False,"['aamp.py', 'parameters.py', 'yaml_util.py', 'setup.py']",['d03b8ade349d8f428d188e2a48074df151be4fdc'],2,21,23,4,0.8181818181818182,0.8181818181818182,0.5454545454545454
+d0a9798d3a4f10216cced4fa8c2d2d215db5754c,Remove some numbered names from hashed_names,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-20 19:49:38+02:00,-7200,2018-08-20 19:49:38+02:00,-7200,True,False,['botw_hashed_names.txt'],['c5cbc57de40aeddb9d9fc82aefe4d236c698088f'],29,6,35,1,,,
+03c6e192cccaa862a04833be1225a2b24ecc3ed5,Merge Zeikken's hashed_names,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-20 20:22:31+02:00,-7200,2018-08-20 20:56:24+02:00,-7200,True,False,['botw_hashed_names.txt'],['d0a9798d3a4f10216cced4fa8c2d2d215db5754c'],11,13989,14000,1,,,
+a2d5f3e1e671e0987f01a3939d0dae41302cd643,"Guess names using numbered name strings
+
+Numbered names (e.g. ClimateDefines_0) are common in AAMP files,
+because the format lacks support for proper arrays.
+
+These are put in a file that is separate from the regular
+hashed_names.txt to avoid having to generate hundreds of entries
+that differ only in the number and to avoid making having a huge list.",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-20 20:06:20+02:00,-7200,2018-08-20 21:02:04+02:00,-7200,True,False,"['botw_hashed_names.txt', 'botw_numbered_names.py', 'botw_numbered_names.txt', 'yaml_util.py', 'generate_numbered_names.py', 'remove_numbered_from_hashed_names.py']",['03c6e192cccaa862a04833be1225a2b24ecc3ed5'],11062,331,11393,6,0.5384615384615384,0.5384615384615384,0.5384615384615384
+3fb3297c94bdf568cfc615f4853676e774f4bc84,Bump version,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-20 21:03:54+02:00,-7200,2018-08-20 21:05:57+02:00,-7200,True,False,"['MANIFEST.in', 'setup.py']",['a2d5f3e1e671e0987f01a3939d0dae41302cd643'],1,2,3,2,,,
+248b0ea11babb4172e4f1f112fd6e32ae4a7a7f4,Add some entries that were removed by mistake,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-20 21:10:22+02:00,-7200,2018-08-20 21:11:32+02:00,-7200,True,False,"['botw_hashed_names.txt', 'setup.py']",['3fb3297c94bdf568cfc615f4853676e774f4bc84'],1,921,922,2,,,
+fc9ca9ca58362a693ab05dcaf2e577136c179b70,Add support for curve parameters,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-20 22:04:54+02:00,-7200,2018-08-20 22:05:08+02:00,-7200,True,False,"['aamp.py', 'parameters.py', 'yaml_util.py', 'setup.py']",['248b0ea11babb4172e4f1f112fd6e32ae4a7a7f4'],2,23,25,4,0.0,0.2222222222222222,1.0
+65c5846d195dd1c35857fa44bc6246e5de640868,Add AI to hashed_names,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-08-21 10:46:05+02:00,-7200,2018-08-21 10:46:26+02:00,-7200,True,False,"['botw_hashed_names.txt', 'setup.py']",['fc9ca9ca58362a693ab05dcaf2e577136c179b70'],2,2,4,2,,,
+b4b1e832a7ee3ef511f04f7bcd054d9211f3f96d,"yaml_util: Test with indices that start with 1
+
+For some reason Nintendo uses 1-based indices in some cases...
+therefore we need to test indices up to idx + 1 (included),
+not just idx.",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 11:07:01+02:00,-7200,2018-09-15 11:07:01+02:00,-7200,True,False,['yaml_util.py'],['65c5846d195dd1c35857fa44bc6246e5de640868'],1,1,2,1,,,
+f4b87acc93768a04deed2eac18cf6afe439827dd,"yaml_util: Memoize numbered names guessing results
+
+Sometimes the same keys are used in several objects. This allows us to
+skip many redundant checks.",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 11:12:22+02:00,-7200,2018-09-15 11:12:22+02:00,-7200,True,False,['yaml_util.py'],['b4b1e832a7ee3ef511f04f7bcd054d9211f3f96d'],0,2,2,1,,,
+dac283c23cfb292b2f89742d6bbf98be3c1ad231,Add Tuta to hashed_names,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 11:17:37+02:00,-7200,2018-09-15 11:17:37+02:00,-7200,True,False,['botw_hashed_names.txt'],['f4b87acc93768a04deed2eac18cf6afe439827dd'],0,1,1,1,,,
+cc38a7f5c921fa16dc76e621583108f56322d7f5,main: Refactor arg parsing into separate functions,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 11:29:54+02:00,-7200,2018-09-15 11:29:54+02:00,-7200,True,False,"['__main__.py', 'setup.py']",['dac283c23cfb292b2f89742d6bbf98be3c1ad231'],10,15,25,2,1.0,1.0,1.0
+58c30cd8449034117ecc70e884d0e41ed26a0a07,"Add a single unified command for both conversions
+
+And keep xxx_to_xxx for backwards compatibility reasons.",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 11:55:07+02:00,-7200,2018-09-15 11:55:07+02:00,-7200,True,False,"['__main__.py', 'setup.py']",['cc38a7f5c921fa16dc76e621583108f56322d7f5'],44,35,79,2,1.0,0.0,0.0
+7796edcfe05033512f1101594c175b8e22c62da8,Bump version,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 11:56:52+02:00,-7200,2018-09-15 11:56:52+02:00,-7200,True,False,['setup.py'],['58c30cd8449034117ecc70e884d0e41ed26a0a07'],1,1,2,1,,,
+25ba34cfa7314c0a05c755460e08489dfbfedcf2,yaml_util: Handle 'es' plurals,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 16:35:33+02:00,-7200,2018-09-15 16:35:50+02:00,-7200,True,False,"['yaml_util.py', 'setup.py']",['7796edcfe05033512f1101594c175b8e22c62da8'],1,5,6,2,0.0,0.0,0.0
+0b1d2acf0ff5ae384c4e35f5caf98cd0259ea188,yaml_util: Handle more suffixes,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 16:41:10+02:00,-7200,2018-09-15 16:41:10+02:00,-7200,True,False,"['yaml_util.py', 'setup.py']",['25ba34cfa7314c0a05c755460e08489dfbfedcf2'],6,6,12,2,,,
+b1b2b5c5d661241e131947c5732c8cadb2c2a02c,"numbered_names: Add State_%d
+
+Used in rgbw",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 16:48:51+02:00,-7200,2018-09-15 16:49:01+02:00,-7200,True,False,['botw_numbered_names.txt'],['0b1d2acf0ff5ae384c4e35f5caf98cd0259ea188'],0,1,1,1,,,
+eccbe84d76fc0055cddf95110aff68358de40492,yaml_util: Test with 1-based indices,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 16:49:21+02:00,-7200,2018-09-15 16:49:21+02:00,-7200,True,False,['yaml_util.py'],['b1b2b5c5d661241e131947c5732c8cadb2c2a02c'],13,16,29,1,0.0,0.0,0.0
+9fd5444f1026bc02054c0e5a2ff36f29660ae88d,"Add more names
+
+DamageParam and a few other files don't have any unknown names anymore.",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-09-15 18:04:41+02:00,-7200,2018-09-15 18:04:41+02:00,-7200,True,False,"['botw_hashed_names.txt', 'botw_numbered_names.txt']",['eccbe84d76fc0055cddf95110aff68358de40492'],0,53,53,2,,,
+857d57fc5e642b94aef19f4f5092199e69c870cf,"Write all parameter lists before writing objects
+
+While not strictly necessary, this makes the layout of generated files
+closer to Nintendo-produced files and prevents aamptool from choking
+on them as it assumes ""root nodes"" (parameter lists) to be stored
+contiguously (which is not guaranteed).",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-10-13 23:23:57+02:00,-7200,2018-10-13 23:23:57+02:00,-7200,True,False,['aamp.py'],['9fd5444f1026bc02054c0e5a2ff36f29660ae88d'],5,10,15,1,0.0,0.0,1.0
+c984fe95ce4ffab382b0861499599e39f0d10fd9,"test_data: add a simpler AAMP with a complex structure
+
+Adds an aiprog which, like all other aiprogs, uses lists, objects,
+and nested parameter lists, but is shorter and thus simpler to
+understand and analyse for debugging.",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-10-13 23:25:49+02:00,-7200,2018-10-13 23:25:49+02:00,-7200,True,False,['AddAutoPlacementCreator.baiprog'],['857d57fc5e642b94aef19f4f5092199e69c870cf'],0,0,0,1,,,
+371c3025c12244c33ee6bf27b82640d5456a6d4e,Add a script to test roundtrip conversion,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-10-14 00:02:23+02:00,-7200,2018-10-14 00:05:08+02:00,-7200,True,False,['test.py'],['c984fe95ce4ffab382b0861499599e39f0d10fd9'],0,21,21,1,1.0,1.0,1.0
+9d2e8eea9d729c187a7e390824e62ee3d9649c28,Use versioneer for versioning,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-10-14 00:08:38+02:00,-7200,2018-10-14 00:09:08+02:00,-7200,True,False,"['.gitattributes', 'MANIFEST.in', '__init__.py', '_version.py', 'setup.cfg', 'setup.py', 'versioneer.py']",['371c3025c12244c33ee6bf27b82640d5456a6d4e'],1,2358,2359,7,0.28343949044585987,0.2537154989384289,0.6656050955414012
+ac8bd5d1214913a4d03243a7a433c952b4bebacb,Extract converter functionality into reusable module,Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-10-29 15:41:55+01:00,-3600,2018-10-29 15:41:55+01:00,-3600,True,False,"['__main__.py', 'converters.py']",['9d2e8eea9d729c187a7e390824e62ee3d9649c28'],18,29,47,2,1.0,1.0,1.0
+06268f7997da506cfc69f2b37c7a1cc6574b3ac4,"botw_hashed_names: Add ""AS""
+
+AS had been accidentally removed",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-12-07 20:51:18+01:00,-3600,2018-12-07 20:51:18+01:00,-3600,True,False,['botw_hashed_names.txt'],['ac8bd5d1214913a4d03243a7a433c952b4bebacb'],0,1,1,1,,,
+d4fe89d0618c7e140a51a7c216e8842bcfa80982,Fix incorrect usage of open(),Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-12-17 21:49:31+01:00,-3600,2018-12-17 21:49:31+01:00,-3600,True,False,['__main__.py'],['06268f7997da506cfc69f2b37c7a1cc6574b3ac4'],2,3,5,1,0.0,0.0,1.0
+3f2716eead76d387637ec783f9f7aae80237709f,"Optimize parsing by not tracking strings unless needed
+
+Only keep track of strings if it is useful (i.e. when converting to
+a human readable representation).
+
+And get rid of useless encode() + decode() calls.",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-12-23 12:30:06+01:00,-3600,2018-12-23 12:30:06+01:00,-3600,True,False,"['aamp.py', 'converters.py']",['d4fe89d0618c7e140a51a7c216e8842bcfa80982'],6,9,15,2,1.0,1.0,0.0
+04cad028d3caf8edac36dbf5b95be74c8d877201,"Remove _get_param_data_size
+
+_get_param_data_size causes many unnecessary calculations and checks.
+Simplify the parsing process by ""inlining"" the useful parts of it.",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-12-23 12:32:48+01:00,-3600,2018-12-23 12:40:43+01:00,-3600,True,False,['aamp.py'],['3f2716eead76d387637ec783f9f7aae80237709f'],58,9,67,1,1.0,1.0,0.0
+f056b828e5f7ff98f9dfdc63466bcb44810cf22a,"Optimise _parse_param_str
+
+Use bytes.find() as a faster way to strlen().",Léo Lam,leo@innovatetechnologi.es,Léo Lam,leo@innovatetechnologi.es,2018-12-23 12:51:10+01:00,-3600,2018-12-23 12:51:10+01:00,-3600,True,False,['aamp.py'],['04cad028d3caf8edac36dbf5b95be74c8d877201'],4,1,5,1,0.0,0.0,1.0
+a02eb5c00d23d295931fc414c6e8eda9888b8da3,Added get_bytes() to Writer for convenience,Joshua Walton,joshuawaltonm@gmail.com,Joshua Walton,joshuawaltonm@gmail.com,2019-04-06 18:08:56+01:00,-3600,2019-04-06 18:08:56+01:00,-3600,True,False,['aamp.py'],['f056b828e5f7ff98f9dfdc63466bcb44810cf22a'],0,6,6,1,1.0,1.0,1.0
+7ff59b4667ef6bb6b114e927f732a8df2253cc4a,Update PyYAML dependency,Léo Lam,leo@leolam.fr,Léo Lam,leo@leolam.fr,2019-07-07 22:18:30+02:00,-7200,2019-07-07 22:31:35+02:00,-7200,True,False,"['converters.py', 'setup.py']",['90d722d33357af5af9809a3fc83b9ceaecf943c1'],2,2,4,2,,,
+af16fe7a0f6c4db2af623b82f6b85c31449519ec,gitignore: Ignore .mypy_cache,Léo Lam,leo@leolam.fr,Léo Lam,leo@leolam.fr,2019-08-22 14:24:13+08:00,-28800,2019-08-22 14:24:13+08:00,-28800,True,False,['.gitignore'],['7ff59b4667ef6bb6b114e927f732a8df2253cc4a'],0,1,1,1,,,
+9f99ba80f13bf5014270607f5d99834c5f0a00de,ci: Add travis configuration file,Léo Lam,leo@leolam.fr,Léo Lam,leo@leolam.fr,2019-08-22 14:25:13+08:00,-28800,2019-08-22 14:25:13+08:00,-28800,True,False,['.travis.yml'],['af16fe7a0f6c4db2af623b82f6b85c31449519ec'],0,6,6,1,,,
+52df5c63d2998c572dce3cefe2da448b7e72d1eb,yaml_util: Fix Curve yaml constructor,Léo Lam,leo@leolam.fr,Léo Lam,leo@leolam.fr,2019-08-23 12:18:56+08:00,-28800,2019-08-23 12:18:56+08:00,-28800,True,False,['yaml_util.py'],['9f99ba80f13bf5014270607f5d99834c5f0a00de'],1,1,2,1,,,
+02c8da65cb6cc6ed1ee168e310c7a43f416a9602,test_data: Add aglccr file (to test curves),Léo Lam,leo@leolam.fr,Léo Lam,leo@leolam.fr,2019-08-23 12:20:02+08:00,-28800,2019-08-23 12:20:02+08:00,-28800,True,False,['master_field.baglccr'],['52df5c63d2998c572dce3cefe2da448b7e72d1eb'],0,0,0,1,,,
+ee7bfc4a0c34eca79395f11adcefde67851c6716,Workaround for AAMP->YAML without names from reader,Caleb Smith,calebdixonsmith@gmail.com,Caleb Smith,calebdixonsmith@gmail.com,2019-09-16 11:03:38-05:00,18000,2019-09-16 11:03:38-05:00,18000,True,False,['yaml_util.py'],['02c8da65cb6cc6ed1ee168e310c7a43f416a9602'],1,5,6,1,0.0,0.5,0.5
+a16b630bb2015f0b2f1e6d92d151e2b24e26402c,Use dataclasses for structures (#3),Caleb Smith,calebdixonsmith@gmail.com,Léo Lam,leo@innovatetechnologi.es,2019-10-23 13:11:24-05:00,18000,2019-10-23 20:11:24+02:00,-7200,True,False,"['parameters.py', 'yaml_util.py', 'setup.py']",['c5b527c920b412154fdc52a2709864fb730ea6c6'],43,30,73,3,0.0,0.0,0.6470588235294118
+e5679f19583f226501aad474170aa5402bd83cf4,"Improve hash->name without reader
+
+I looked more closely at how the AAMP reader is used in `_get_pstruct_name` and realized that I could keep most of the code to get names even without the reader, rather than just skipping to returning the hash.",Caleb Smith,calebdixonsmith@gmail.com,GitHub,noreply@github.com,2019-11-13 09:04:41-06:00,21600,2019-11-13 09:04:41-06:00,21600,True,False,['yaml_util.py'],['a16b630bb2015f0b2f1e6d92d151e2b24e26402c'],5,4,9,1,1.0,1.0,1.0
+c73a63898255d6b524477f9eebfd4ad7a4a497ef,Fix recursion in U32 `__repr__`,Caleb Smith,caleb@myrvmail.com,Caleb Smith,caleb@myrvmail.com,2019-12-30 11:01:56-06:00,21600,2019-12-30 11:01:56-06:00,21600,True,False,['parameters.py'],['2a9df16a508883599a15c4478ddd0709cb3d128b'],2,1,3,1,0.0,0.0,0.0
+bb9991e0a7c9effacad4bcae3d58a38637282cff,travis: Test on Python 3.7 and 3.8 too,Léo Lam,leo@leolam.fr,Léo Lam,leo@leolam.fr,2019-12-30 18:22:43+01:00,-3600,2019-12-30 18:22:59+01:00,-3600,True,False,['.travis.yml'],['2a9df16a508883599a15c4478ddd0709cb3d128b'],0,2,2,1,,,
+6670f3975a3c310043e588bc197009b48cbe34a3,Clean up trailing whitespace,Léo Lam,leo@leolam.fr,Léo Lam,leo@leolam.fr,2020-01-17 21:26:09+01:00,-3600,2020-01-17 21:35:31+01:00,-3600,True,False,['aamp.py'],['da83feeadd59ac3134c947fc8c52cf3df8e4c4e9'],1,1,2,1,,,
+ed99df8c27ba95f0e6983f473543efcb51a1607e,"Fix data corruption bug in parameter data reuse logic
+
+Fixes a data corruption bug in the parameter data reuse logic that
+could occur when a match with an offset that is not divisible by 4
+is found. The offset writer would round down the offset to the
+nearest multiple of 4, which results in data corruption.
+
+This also adds offset representability checks to the placeholder
+offset writers in order to catch similar bugs.
+
+A test case has been added.
+
+Fixes #7",Léo Lam,leo@leolam.fr,Léo Lam,leo@leolam.fr,2020-01-17 21:07:48+01:00,-3600,2020-01-17 21:35:31+01:00,-3600,True,False,"['aamp.py', 'util.py', 'Enemy_Ganon.baiprog']",['6670f3975a3c310043e588bc197009b48cbe34a3'],0,7,7,3,0.6666666666666666,0.6666666666666666,0.6666666666666666

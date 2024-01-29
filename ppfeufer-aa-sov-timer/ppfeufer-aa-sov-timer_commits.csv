@@ -1,0 +1,755 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+da8b4dc203c3279b9129b3fb6dbda6e80feb5d9c,Initial commit,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2020-11-10 01:36:04+01:00,-3600,2020-11-10 01:36:04+01:00,-3600,True,False,"['LICENSE', 'README.md']",[],0,675,675,2,,,
+4cf613239f7a03c49fc40ffcb29d62c3978cb5ce,blanco module initialized,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 02:12:12+01:00,-3600,2020-11-10 02:12:12+01:00,-3600,True,False,"['black.yml', 'pre-commit.yml', 'pypi-package-build-test.yml', 'pypi-release.yml', '.gitignore', '.pre-commit-config.yaml', 'MANIFEST.in', 'setup.py', '__init__.py', 'admin.py', 'app_settings.py', 'apps.py', 'auth_hooks.py', '0001_initial.py', '__init__.py', 'models.py', 'aa-bootstrap-fix.css', 'aa-bootstrap-fix.min.css', 'dataTables.rowGroup.min.js', 'dataTables.rowGroup.min.min.js', 'datetime.js', 'datetime.min.js', 'datetime.min.min.js', 'rowGroup.bootstrap.min.css', 'rowGroup.bootstrap.min.min.css', 'rowGroup.dataTables.min.css', 'rowGroup.dataTables.min.min.css', 'tasks.py', 'base.html', 'dashboard.html', 'h1.html', 'urls.py', 'utils.py', 'views.py']",['da8b4dc203c3279b9129b3fb6dbda6e80feb5d9c'],0,808,808,34,0.8644859813084113,0.7663551401869159,0.6869158878504673
+01a3827cffe2fc0d781afe43ce5561846f5c85e3,readme changed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 02:13:56+01:00,-3600,2020-11-10 02:13:56+01:00,-3600,True,False,['README.md'],['4cf613239f7a03c49fc40ffcb29d62c3978cb5ce'],1,1,2,1,,,
+42df9138891e56d4cffa4a93e24dca9d54b37d3b,esi provider added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 02:20:59+01:00,-3600,2020-11-10 02:22:29+01:00,-3600,True,False,['providers.py'],['01a3827cffe2fc0d781afe43ce5561846f5c85e3'],0,17,17,1,,,
+60d96651b5cf4678ccb560893cd551e7e64befa7,added django-eveuniverse as dependency,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 05:42:12+01:00,-3600,2020-11-10 05:42:12+01:00,-3600,True,False,['setup.py'],['42df9138891e56d4cffa4a93e24dca9d54b37d3b'],1,4,5,1,,,
+a62d0ca3a1cb709e7370596d12486668287777b7,built datatable,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 05:43:10+01:00,-3600,2020-11-10 05:43:10+01:00,-3600,True,False,"['aa-sov-timer.css', 'aa-sov-timer.min.css', 'swagger.json', 'dashboard.html', 'table.html', 'urls.py', 'views.py']",['60d96651b5cf4678ccb560893cd551e7e64befa7'],63,191,254,7,0.0,1.0,1.0
+1517c625699a8042f935400b602c5da56db73460,remaining time added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 08:46:00+01:00,-3600,2020-11-10 08:46:00+01:00,-3600,True,False,"['aa-sov-timer.css', 'aa-sov-timer.min.css', 'dashboard.html', 'views.py']",['a62d0ca3a1cb709e7370596d12486668287777b7'],16,122,138,4,0.0,1.0,1.0
+fff690f298e436ae07f4b17abd572da30247c98e,empty target element before adding content again,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 09:06:00+01:00,-3600,2020-11-10 09:06:00+01:00,-3600,True,False,['dashboard.html'],['1517c625699a8042f935400b602c5da56db73460'],0,1,1,1,,,
+de49030a730a220318ddfe3e393d7c96168afec4,duplicate check removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 09:50:27+01:00,-3600,2020-11-10 09:50:27+01:00,-3600,True,False,['dashboard.html'],['fff690f298e436ae07f4b17abd572da30247c98e'],14,8,22,1,,,
+7e516598076e95a67bdbe153a69e08fa0ecd8b62,"improve performance on remaining time countdown
+
+Thanks to Erik Kalkoken for the hint!",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 16:06:36+01:00,-3600,2020-11-10 16:06:53+01:00,-3600,True,False,"['dashboard.html', 'views.py']",['de49030a730a220318ddfe3e393d7c96168afec4'],77,82,159,2,0.0,1.0,1.0
+1ba4453268e00ba3199b940f16c6045977bfa860,js fixes and adm added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 17:50:02+01:00,-3600,2020-11-10 17:50:02+01:00,-3600,True,False,"['dashboard.html', 'table.html', 'views.py']",['7e516598076e95a67bdbe153a69e08fa0ecd8b62'],52,77,129,3,0.0,0.0,1.0
+52dca69b4a49b5c536b69a5f9aa13862384f191c,screenshot added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 17:55:16+01:00,-3600,2020-11-10 17:55:16+01:00,-3600,True,False,['aa-sov-timer.jpg'],['1ba4453268e00ba3199b940f16c6045977bfa860'],0,0,0,1,,,
+7d57e459678ba11393cdeef4c8a444a7c1aac830,readme updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 18:13:00+01:00,-3600,2020-11-10 18:13:00+01:00,-3600,True,False,['README.md'],['52dca69b4a49b5c536b69a5f9aa13862384f191c'],0,86,86,1,,,
+f3ba4a898c64335a970298aa8c075ba25c365b94,"changelog added, version set",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-10 18:15:17+01:00,-3600,2020-11-10 18:15:17+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['7d57e459678ba11393cdeef4c8a444a7c1aac830'],1,14,15,2,,,
+39ce680ebb34b54950d651204e104e4c3429a25f,added filter for active campaigns and killboard link to active campaigns,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 07:39:05+01:00,-3600,2020-11-11 07:39:05+01:00,-3600,True,False,"['dashboard.html', 'views.py']",['f3ba4a898c64335a970298aa8c075ba25c365b94'],18,55,73,2,0.0,0.0,1.0
+7aa23aa8cb11c2b9bcc259ca2517a4a9c640afe4,javascript extracted to its own file,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:08:27+01:00,-3600,2020-11-11 08:08:27+01:00,-3600,True,False,"['aa-sov-timer.js', 'aa-sov-timer.min.js', 'dashboard.html']",['39ce680ebb34b54950d651204e104e4c3429a25f'],164,213,377,3,0.13333333333333333,0.6296296296296297,1.0
+6c4789aedc87963f45084d00611043561871068c,[FIX] zkb_icon has no corresponding argument,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:21:21+01:00,-3600,2020-11-11 08:21:21+01:00,-3600,True,False,['views.py'],['7aa23aa8cb11c2b9bcc259ca2517a4a9c640afe4'],1,1,2,1,,,
+22ba59eb85ef77b19dc47f7b13edc0687db0053c,moved zkillboard icon to static files,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:26:56+01:00,-3600,2020-11-11 08:26:56+01:00,-3600,True,False,"['zkillboard.png', 'views.py']",['6c4789aedc87963f45084d00611043561871068c'],1,1,2,2,,,
+99c96ad6e033f8e970eaa4f1c579aec6647c0eba,style for zkillboard icon,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:27:21+01:00,-3600,2020-11-11 08:27:21+01:00,-3600,True,False,"['aa-sov-timer.css', 'aa-sov-timer.min.css']",['22ba59eb85ef77b19dc47f7b13edc0687db0053c'],1,5,6,2,,,
+3bd5abaf24de772e511b6a9718bdc2d9f9287a45,add leading 0 to attackers and defenders score if below 10%,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:31:56+01:00,-3600,2020-11-11 08:31:56+01:00,-3600,True,False,['views.py'],['99c96ad6e033f8e970eaa4f1c579aec6647c0eba'],0,4,4,1,0.0,0.0,1.0
+81017e958d1b7534927797358ce2b83b6be49c92,[FIX] Identifier 'remaining_time_in_seconds' is not in camel case.,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:35:46+01:00,-3600,2020-11-11 08:35:46+01:00,-3600,True,False,"['aa-sov-timer.js', 'aa-sov-timer.min.js']",['3bd5abaf24de772e511b6a9718bdc2d9f9287a45'],5,5,10,2,,,
+fa42ab8aac8c5e5ceadcb24b5f3d973e7bffb4b3,[FIX] better variable name,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:37:31+01:00,-3600,2020-11-11 08:37:31+01:00,-3600,True,False,"['aa-sov-timer.js', 'aa-sov-timer.min.js']",['81017e958d1b7534927797358ce2b83b6be49c92'],11,11,22,2,,,
+8efdb530b64133f8e7fcb71fd94da93d2ccbe19b,[FIX] Missing semicolon,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:39:50+01:00,-3600,2020-11-11 08:39:50+01:00,-3600,True,False,['aa-sov-timer.js'],['fa42ab8aac8c5e5ceadcb24b5f3d973e7bffb4b3'],1,1,2,1,,,
+edda9281a440f48e2c7f3291f86d08fe0ff4b2a4,[FIX] moment is not defined,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:41:14+01:00,-3600,2020-11-11 08:41:14+01:00,-3600,True,False,['aa-sov-timer.js'],['8efdb530b64133f8e7fcb71fd94da93d2ccbe19b'],1,1,2,1,,,
+a2d28fa3d712e5af363b22d40018d851e1eef8ab,[FIX] strings must use single quotes,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:41:46+01:00,-3600,2020-11-11 08:41:46+01:00,-3600,True,False,['aa-sov-timer.js'],['edda9281a440f48e2c7f3291f86d08fe0ff4b2a4'],1,1,2,1,,,
+f6913c720e6e152c6ae78fc03a143f374bb98439,[FIX] Identifier 'sov_campaign_table' is not in camel case.,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:42:44+01:00,-3600,2020-11-11 08:42:44+01:00,-3600,True,False,"['aa-sov-timer.js', 'aa-sov-timer.min.js']",['a2d28fa3d712e5af363b22d40018d851e1eef8ab'],5,5,10,2,,,
+7cc4d51807e99c354c29e6f7d6b4cae1c9a1ab88,[FIX] unnecessary if removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:43:53+01:00,-3600,2020-11-11 08:43:53+01:00,-3600,True,False,"['aa-sov-timer.js', 'aa-sov-timer.min.js']",['f6913c720e6e152c6ae78fc03a143f374bb98439'],45,34,79,2,1.0,1.0,0.0
+bf429d55d2f87006361f099db0c5ca464db4464c,v0.2.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 08:49:32+01:00,-3600,2020-11-11 08:49:32+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['7cc4d51807e99c354c29e6f7d6b4cae1c9a1ab88'],1,9,10,2,,,
+abeafceb634ab4a30777b2fca4dcfe16402774eb,screenshot updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 10:50:16+01:00,-3600,2020-11-11 10:50:16+01:00,-3600,True,False,['aa-sov-timer.jpg'],['bf429d55d2f87006361f099db0c5ca464db4464c'],0,0,0,1,,,
+baff22b60f342339c8d987bb1ec62c025dee64d0,moved campaign update to scheduled task,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 16:35:13+01:00,-3600,2020-11-11 16:35:13+01:00,-3600,True,False,"['README.md', 'aa-sov-timer.jpg', '0002_aasovtimercampaigns.py', 'models.py', 'providers.py', 'tasks.py', 'utils.py', 'views.py']",['abeafceb634ab4a30777b2fca4dcfe16402774eb'],38,201,239,8,0.38461538461538464,1.0,1.0
+cd3bd0f76c9f90ff7fe22c1991077115b54d6120,[FIX] Method could be a function,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 16:47:59+01:00,-3600,2020-11-11 16:47:59+01:00,-3600,True,False,"['models.py', 'tasks.py']",['baff22b60f342339c8d987bb1ec62c025dee64d0'],2,3,5,2,,,
+f7827e120af6d71e015968c354ee1fbefa173ddf,an empty line too much,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 16:48:51+01:00,-3600,2020-11-11 16:48:51+01:00,-3600,True,False,['views.py'],['cd3bd0f76c9f90ff7fe22c1991077115b54d6120'],1,0,1,1,,,
+ea68043017aca7a3a5d7d36a49b1798a5b016232,[STYLE] active campaign marked,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 20:09:44+01:00,-3600,2020-11-11 20:09:44+01:00,-3600,True,False,"['aa-sov-timer.css', 'aa-sov-timer.min.css', 'aa-sov-timer.js', 'aa-sov-timer.min.js', 'dashboard.html', 'table.html', 'views.py']",['f7827e120af6d71e015968c354ee1fbefa173ddf'],7,18,25,7,1.0,1.0,0.0
+2fb16be19175c43b86036d75da12f2f332a07eed,moved structures update to scheduled task,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-11 21:16:03+01:00,-3600,2020-11-11 21:16:03+01:00,-3600,True,False,"['0002_aasovtimercampaigns.py', '0002_aasovtimercampaigns_aasovtimerstructures.py', 'models.py', 'aa-sov-timer.js', 'tasks.py', 'views.py']",['ea68043017aca7a3a5d7d36a49b1798a5b016232'],53,174,227,6,0.14583333333333334,0.14583333333333334,1.0
+fe710e7f8b060dc554b4f260ed2b45b5ff21feae,readme updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-12 00:12:50+01:00,-3600,2020-11-12 00:12:50+01:00,-3600,True,False,['README.md'],['2fb16be19175c43b86036d75da12f2f332a07eed'],1,1,2,1,,,
+c1d675ffa8b6d35b902a632c89d577dad836840b,release v0.3.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-12 00:21:55+01:00,-3600,2020-11-12 00:21:55+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['46fde96b118a8c96cbbac79ac92d970eea3dde78'],1,12,13,2,,,
+f5b5ea0364f42c285701c0fab9b0163d03336227,logging tweaked,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-12 20:49:45+01:00,-3600,2020-11-12 20:49:45+01:00,-3600,True,False,['tasks.py'],['c1d675ffa8b6d35b902a632c89d577dad836840b'],4,20,24,1,0.0,0.5,1.0
+6abbc99e70b2bc3493e35f0441823317101a5da5,task runtime limit reduced to 10 seconds,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-12 20:50:03+01:00,-3600,2020-11-12 20:50:03+01:00,-3600,True,False,['tasks.py'],['f5b5ea0364f42c285701c0fab9b0163d03336227'],1,1,2,1,,,
+8434a29ff6168f2960075c71a5695dae43b7d792,removed commented code,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 03:30:46+01:00,-3600,2020-11-13 03:30:46+01:00,-3600,True,False,['views.py'],['6abbc99e70b2bc3493e35f0441823317101a5da5'],4,0,4,1,,,
+d441bec7b48414b554278d5265632e480d478428,introduced cache and transactions,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 11:15:22+01:00,-3600,2020-11-13 11:15:22+01:00,-3600,True,False,['tasks.py'],['8434a29ff6168f2960075c71a5695dae43b7d792'],73,82,155,1,0.0,0.25,1.0
+25c6eade24a1432365fa8e0e94c43968f302272f,moved all ESI calls to the task,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 12:33:13+01:00,-3600,2020-11-13 12:33:13+01:00,-3600,True,False,"['0003_auto_20201113_1033.py', 'models.py', 'tasks.py', 'views.py']",['d441bec7b48414b554278d5265632e480d478428'],24,153,177,4,0.0,0.6666666666666666,1.0
+e3ae0d159f7b59a1173645d5935f2a58026c234b,commented code removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 14:54:48+01:00,-3600,2020-11-13 14:54:48+01:00,-3600,True,False,['tasks.py'],['25c6eade24a1432365fa8e0e94c43968f302272f'],1,0,1,1,,,
+abce7b2bd8480066a8f1cb31e9ab2124315f71ea,progress trend icons added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 15:17:22+01:00,-3600,2020-11-13 15:17:22+01:00,-3600,True,False,"['aa-sov-timer.css', 'aa-sov-timer.min.css', 'MaterialIcons-Regular.ttf', 'MaterialIcons-Regular.woff2', 'README.md', 'aa-sov-timer.js', 'aa-sov-timer.min.js', 'table.html', 'views.py']",['e3ae0d159f7b59a1173645d5935f2a58026c234b'],19,163,182,9,0.0,0.06779661016949153,1.0
+bf100aac64c9da410d1fcebd777ee557333d4b54,screenshot updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 15:17:34+01:00,-3600,2020-11-13 15:17:34+01:00,-3600,True,False,['aa-sov-timer.jpg'],['abce7b2bd8480066a8f1cb31e9ab2124315f71ea'],0,0,0,1,,,
+f45294c4341b1486481ef491952ab3d67c0ad518,too many lines at the end ...,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 15:20:11+01:00,-3600,2020-11-13 15:20:11+01:00,-3600,True,False,['README.md'],['bf100aac64c9da410d1fcebd777ee557333d4b54'],3,0,3,1,,,
+d2b5e1f350c98e704e9b94bc67f62de8fd7cb56e,import command added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 16:28:38+01:00,-3600,2020-11-13 16:28:38+01:00,-3600,True,False,"['__init__.py', 'sovtimer_load_initial_data.py']",['1e42e5cd2b91e2623541e22833164d4906e693e3'],0,173,173,2,0.12844036697247707,0.12844036697247707,0.8899082568807339
+b031f4467f492fb20cf2a70b43f1563e622767cb,only one instance of the task at a time ...,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 18:49:11+01:00,-3600,2020-11-13 18:49:11+01:00,-3600,True,False,['tasks.py'],['d2b5e1f350c98e704e9b94bc67f62de8fd7cb56e'],3,4,7,1,,,
+b375bb22699d8942683687b6500c8c1960e888b3,moved progress tracking to DB and task instead of client-side cache,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 20:44:59+01:00,-3600,2020-11-13 20:44:59+01:00,-3600,True,False,"['0004_auto_20201113_1856.py', 'models.py', 'tasks.py', 'views.py']",['b031f4467f492fb20cf2a70b43f1563e622767cb'],71,89,160,4,1.0,1.0,0.0
+565d4c4f65f0deca36f2d690436dc357b6d5c20e,command should be changed as well ...,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 21:07:18+01:00,-3600,2020-11-13 21:07:18+01:00,-3600,True,False,['sovtimer_load_initial_data.py'],['b375bb22699d8942683687b6500c8c1960e888b3'],2,14,16,1,0.0,0.0,1.0
+f933c0cab60864237f275408f21f69f386f5b78d,pushing v0.4.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 21:18:18+01:00,-3600,2020-11-13 21:18:18+01:00,-3600,True,False,"['CHANGELOG.md', 'README.md', '__init__.py']",['565d4c4f65f0deca36f2d690436dc357b6d5c20e'],12,35,47,3,,,
+b86a4c5087b2d943ad9960ec17295f4262646739,unused import removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-13 21:22:08+01:00,-3600,2020-11-13 21:22:08+01:00,-3600,True,False,['views.py'],['f933c0cab60864237f275408f21f69f386f5b78d'],1,0,1,1,,,
+32c9e339df70d575ad76f6ce4a18b0e25c6fdd85,adding models.TextChoices,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-14 08:29:43+01:00,-3600,2020-11-14 08:29:43+01:00,-3600,True,False,"['0005_auto_20201114_0720.py', 'models.py']",['b86a4c5087b2d943ad9960ec17295f4262646739'],1,35,36,2,,,
+1bff5cbde874d343281f0439648cd71116d61da0,css class name fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-15 12:46:01+01:00,-3600,2020-11-15 12:46:01+01:00,-3600,True,False,"['aa-bootstrap-fix.css', 'aa-bootstrap-fix.min.css', 'base.html']",['32c9e339df70d575ad76f6ce4a18b0e25c6fdd85'],4,4,8,3,,,
+d5b0a807a7440cf339f21200e9595f2da518d8c0,progress logic improved,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-15 20:33:52+01:00,-3600,2020-11-15 20:33:52+01:00,-3600,True,False,"['sovtimer_load_initial_data.py', 'tasks.py']",['1bff5cbde874d343281f0439648cd71116d61da0'],20,49,69,2,0.0,0.4,1.0
+a7945f70629038b61e97a69db06210e11e7057c8,progress display improved,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-15 20:34:17+01:00,-3600,2020-11-15 20:34:17+01:00,-3600,True,False,"['aa-sov-timer.css', 'aa-sov-timer.min.css', 'aa-sov-timer.js', 'aa-sov-timer.min.js', 'table.html', 'views.py']",['d5b0a807a7440cf339f21200e9595f2da518d8c0'],15,33,48,6,0.0,0.0,1.0
+d7c1f6426408f3b7d4e8ce1e8b161d13c266f2a5,change log updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-15 20:36:08+01:00,-3600,2020-11-15 20:36:28+01:00,-3600,True,False,['CHANGELOG.md'],['a7945f70629038b61e97a69db06210e11e7057c8'],0,8,8,1,,,
+9a6739fa8b696ae3ca73201b80023be4ab73704f,v0.5.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-15 20:39:37+01:00,-3600,2020-11-15 20:39:37+01:00,-3600,True,False,['__init__.py'],['d7c1f6426408f3b7d4e8ce1e8b161d13c266f2a5'],1,1,2,1,,,
+9491340d0de5dbe5283853c74dd1b7b7655eb205,[FIX] use of wrong variable,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-15 20:58:13+01:00,-3600,2020-11-15 20:58:13+01:00,-3600,True,False,['views.py'],['9a6739fa8b696ae3ca73201b80023be4ab73704f'],1,1,2,1,,,
+c672f3961f1a357251741b0b0323b6ef26fc8cc3,screenshot updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-16 19:26:13+01:00,-3600,2020-11-16 19:26:13+01:00,-3600,True,False,['aa-sov-timer.jpg'],['9491340d0de5dbe5283853c74dd1b7b7655eb205'],0,0,0,1,,,
+0efee3c2a83606e1aefc02201fdd337dd1e6fa3e,"minimum django-eveuniverse version raised to 0.6.1
+
+see: https://gitlab.com/ErikKalkoken/django-eveuniverse/-/commit/613ab41eab08734c0822e6199c2a36c3100eb7e4",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-11-18 07:52:38+01:00,-3600,2020-11-18 07:52:38+01:00,-3600,True,False,['setup.py'],['c672f3961f1a357251741b0b0323b6ef26fc8cc3'],1,1,2,1,,,
+4069c13e4a148abab03f6204973d3e43a4d6b871,pre-commit config extended,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-03 10:25:31+01:00,-3600,2020-12-03 10:25:31+01:00,-3600,True,False,"['.flake8', '.pre-commit-config.yaml', 'CONTRIBUTING.md']",['0efee3c2a83606e1aefc02201fdd337dd1e6fa3e'],9,67,76,3,,,
+f87f8b38731f8fb1d0003d8d413939ba6c1aeee9,chain github workflow jobs,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-10 12:19:21+01:00,-3600,2020-12-10 12:19:21+01:00,-3600,True,False,"['automated-checks.yml', 'black.yml', 'pre-commit.yml', 'pypi-package-build-test.yml']",['4069c13e4a148abab03f6204973d3e43a4d6b871'],72,64,136,4,,,
+2fe70a661116bdc57dbd9973145e62ca40758434,makefile added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-12 14:15:33+01:00,-3600,2020-12-12 14:15:33+01:00,-3600,True,False,"['Makefile', '.gitkeep']",['f87f8b38731f8fb1d0003d8d413939ba6c1aeee9'],0,23,23,2,,,
+3dc691d29006a94ffbce72d97c825724d311fc4f,Bootstrap classes in template fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-16 18:22:37+01:00,-3600,2020-12-16 18:22:37+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py', 'dashboard.html', 'table.html']",['2fe70a661116bdc57dbd9973145e62ca40758434'],17,32,49,4,,,
+2e0dc98dea27ac842557f628ef9bdfcdbb199e68,minor code optimizations and formatting,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2020-12-24 20:40:43+01:00,-3600,2020-12-24 20:40:43+01:00,-3600,True,False,"['aa-sov-timer.js', 'aa-sov-timer.min.js']",['3dc691d29006a94ffbce72d97c825724d311fc4f'],37,31,68,2,1.0,1.0,0.0
+130ccdf7c76dfca3fd037d797df334567749837f,github workflow updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-11 10:02:16+01:00,-3600,2021-01-11 10:02:16+01:00,-3600,True,False,['automated-checks.yml'],['2e0dc98dea27ac842557f628ef9bdfcdbb199e68'],10,45,55,1,,,
+179960b9716ad9de597bb416ba32e67c228a4fdd,changed the way we deal with UTC,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-27 18:00:19+01:00,-3600,2021-01-27 18:00:19+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py', 'aa-sov-timer.js', 'aa-sov-timer.min.js', 'dashboard.html', 'views.py']",['130ccdf7c76dfca3fd037d797df334567749837f'],8,14,22,6,0.12903225806451613,1.0,0.8709677419354839
+c71c7d9aed3f6bc85f67f2a174e83663447d6b99,added defender logos,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-29 22:25:02+01:00,-3600,2021-01-29 22:25:02+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py', 'aa-sov-timer.css', 'aa-sov-timer.min.css', 'views.py']",['179960b9716ad9de597bb416ba32e67c228a4fdd'],10,30,40,5,0.0,0.0,1.0
+8106d403d118e4b98074a40fdb95d081e46faa82,screenshot updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-29 22:36:04+01:00,-3600,2021-01-29 22:36:04+01:00,-3600,True,False,['aa-sov-timer.jpg'],['c71c7d9aed3f6bc85f67f2a174e83663447d6b99'],0,0,0,1,,,
+6ad231f01eae050911e2456380df7b2416d1a4b0,"let's use the right url, shall we?",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-31 12:29:05+01:00,-3600,2021-01-31 12:29:05+01:00,-3600,True,False,"['CHANGELOG.md', 'setup.py', '__init__.py']",['8106d403d118e4b98074a40fdb95d081e46faa82'],2,9,11,3,,,
+65dcbfcc11b20ffd6809502d2b1131bbc1856a33,date fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-01-31 12:58:35+01:00,-3600,2021-01-31 12:58:35+01:00,-3600,True,False,['CHANGELOG.md'],['6ad231f01eae050911e2456380df7b2416d1a4b0'],1,1,2,1,,,
+ff669da2aaf8eae76599f45948fe130c800875be,[FIX] alt attribute for alliance logos,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-02-17 11:38:31+01:00,-3600,2021-02-17 11:39:46+01:00,-3600,True,False,"['CHANGELOG.md', 'views.py']",['65dcbfcc11b20ffd6809502d2b1131bbc1856a33'],1,8,9,2,,,
+6f4948a33470533c6e0594e062c9d5c737c7a065,added explanation for ADM,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-02-17 11:40:55+01:00,-3600,2021-02-17 11:40:55+01:00,-3600,True,False,"['CHANGELOG.md', 'table.html']",['ff669da2aaf8eae76599f45948fe130c800875be'],2,14,16,2,,,
+1f6eb0b8524063988c5979fe28d9862c3f012cf3,new version set,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-02-17 11:41:18+01:00,-3600,2021-02-17 11:41:18+01:00,-3600,True,False,['__init__.py'],['6f4948a33470533c6e0594e062c9d5c737c7a065'],1,1,2,1,,,
+3b5fd3ac13cf7af53da1153271ef846bcf402cc7,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-03-04 12:21:53+01:00,-3600,2021-03-04 12:21:53+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'setup.py', '__init__.py', 'admin.py', 'app_settings.py', 'apps.py', 'auth_hooks.py', '__init__.py', 'sovtimer_load_initial_data.py', '__init__.py', 'models.py', 'providers.py', 'tasks.py', 'urls.py', 'utils.py', 'views.py']",['1f6eb0b8524063988c5979fe28d9862c3f012cf3'],30,3,33,16,,,
+bba71d4e689676271a3df7be461c1e6eb4a80e3f,dotlan links fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-03-24 17:19:32+01:00,-3600,2021-03-24 17:33:41+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py', 'views.py']",['3b5fd3ac13cf7af53da1153271ef846bcf402cc7'],8,36,44,3,0.0,0.0,1.0
+f99bcc1c099d49b27c179a43d2d49704e493fa04,isort added to pre-commit checks,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-03-24 20:15:29+01:00,-3600,2021-03-24 20:15:29+01:00,-3600,True,False,"['.isort.cfg', '.pre-commit-config.yaml', 'setup.py', 'auth_hooks.py', 'sovtimer_load_initial_data.py', '0003_auto_20201113_1033.py', 'tasks.py', 'urls.py', 'views.py']",['bba71d4e689676271a3df7be461c1e6eb4a80e3f'],25,25,50,9,,,
+12022d4b46957eca25bbc3b5d2340b9e6ba9316f,workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-05-01 18:51:52+02:00,-7200,2021-05-01 18:51:52+02:00,-7200,True,False,"['automated-checks.yml', '.pre-commit-config.yaml']",['f99bcc1c099d49b27c179a43d2d49704e493fa04'],18,2,20,2,,,
+f2125c803f6b212d7d9da6d6f8c9e689e4fa06c2,github workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-05-02 14:34:27+02:00,-7200,2021-05-02 14:34:27+02:00,-7200,True,False,"['automated-checks.yml', 'pypi-release.yml']",['12022d4b46957eca25bbc3b5d2340b9e6ba9316f'],3,8,11,2,,,
+56d15a6679998d38cb3c671a186277f48208ae69,[FIX] workflow release trigger,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-05-05 15:17:30+02:00,-7200,2021-05-05 15:17:30+02:00,-7200,True,False,['pypi-release.yml'],['f2125c803f6b212d7d9da6d6f8c9e689e4fa06c2'],1,1,2,1,,,
+5173447c641ba99b062f2e41e1664b27d8ea5e2f,pre-commit updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-05-07 21:50:10+02:00,-7200,2021-05-07 21:50:10+02:00,-7200,True,False,"['.editorconfig', '.pre-commit-config.yaml', 'apps.py', 'sovtimer_load_initial_data.py', 'datetime.js', 'utils.py', 'views.py']",['56d15a6679998d38cb3c671a186277f48208ae69'],65,115,180,7,0.0,0.0,1.0
+cef1f4455c4bd63b1671ffe466f8fdb55fbe2268,model graph added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-06-11 21:08:12+02:00,-7200,2021-06-11 21:08:12+02:00,-7200,True,False,"['Makefile', 'aa-sov-timer-models.png']",['5173447c641ba99b062f2e41e1664b27d8ea5e2f'],0,3,3,2,,,
+a1968c57c27fd65755995f97b6c3bf942fcd9c4a,performance improvement,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-06-19 04:01:22+02:00,-7200,2021-06-19 04:01:22+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py', 'views.py']",['cef1f4455c4bd63b1671ffe466f8fdb55fbe2268'],3,20,23,3,0.0,0.0,1.0
+126c8ae21188f98233078fa79bbb016b5100a7d2,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-06-19 04:02:24+02:00,-7200,2021-06-19 04:02:24+02:00,-7200,True,False,['.pre-commit-config.yaml'],['a1968c57c27fd65755995f97b6c3bf942fcd9c4a'],5,5,10,1,,,
+1abf32b5325b3d967b157d11bb7c2e42ed602c5c,github workflows and templates,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-07-08 10:05:08+02:00,-7200,2021-07-08 10:05:08+02:00,-7200,True,False,"['bug_report.md', 'config.yml', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md', 'automated-checks.yml']",['126c8ae21188f98233078fa79bbb016b5100a7d2'],0,96,96,5,,,
+9ae319f17bed2cac4b553c6e23806c681362628b,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-07-08 10:05:46+02:00,-7200,2021-07-08 10:05:46+02:00,-7200,True,False,['.pre-commit-config.yaml'],['1abf32b5325b3d967b157d11bb7c2e42ed602c5c'],2,2,4,1,,,
+b9cb5f95b755d662286f1dbfe798aaefb795c9b7,Tested for compatibility with Python 3.9 and Django 3.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-07-08 10:06:45+02:00,-7200,2021-07-08 10:06:45+02:00,-7200,True,False,"['CHANGELOG.md', 'setup.py', '__init__.py']",['9ae319f17bed2cac4b553c6e23806c681362628b'],1,10,11,3,,,
+a9e998019ca33d6020309283de34b6dc1b1baa82,move to the right directory,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-07-08 10:27:28+02:00,-7200,2021-07-08 10:27:28+02:00,-7200,True,False,"['bug_report.md', 'config.yml', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md']",['b9cb5f95b755d662286f1dbfe798aaefb795c9b7'],0,0,0,4,,,
+e1a1157f68385b6b752cf325d232edfe1a8a8980,"added total, upcoming (< 4 hrs) and active timers to the table head",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-08-06 23:21:13+02:00,-7200,2021-08-06 23:21:22+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'CHANGELOG.md', '__init__.py', 'aa-sov-timer.js', 'aa-sov-timer.min.js', 'table.html']",['a9e998019ca33d6020309283de34b6dc1b1baa82'],17,80,97,6,0.47368421052631576,1.0,0.6842105263157895
+8cc72eb3f2a55e2ca86465660dc5be61d58e729f,PR template changed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-08-06 23:23:48+02:00,-7200,2021-08-06 23:23:48+02:00,-7200,True,False,['PULL_REQUEST_TEMPLATE.md'],['e1a1157f68385b6b752cf325d232edfe1a8a8980'],2,0,2,1,,,
+cc1306af4828f986e94a0cdab559f64eda5306b8,image added to changelog,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-08-06 23:28:44+02:00,-7200,2021-08-06 23:28:44+02:00,-7200,True,False,['CHANGELOG.md'],['8cc72eb3f2a55e2ca86465660dc5be61d58e729f'],0,1,1,1,,,
+a72bac990fe93565bdba9ab3aa60f5bfd00c8f50,image updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-08-12 08:27:31+02:00,-7200,2021-08-12 08:27:31+02:00,-7200,True,False,['aa-sov-timer.jpg'],['cc1306af4828f986e94a0cdab559f64eda5306b8'],0,0,0,1,,,
+eff6293870e0d88d7c7eaabaa2ce39f5c3f775cf,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-23 14:38:07+02:00,-7200,2021-09-23 14:38:07+02:00,-7200,True,False,['.pre-commit-config.yaml'],['a72bac990fe93565bdba9ab3aa60f5bfd00c8f50'],5,5,10,1,,,
+4370e0754fe0dbf17f1198ff2e4baf6da019e719,code of conduct added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-23 14:42:27+02:00,-7200,2021-09-23 14:42:27+02:00,-7200,True,False,['CODE_OF_CONDUCT.md'],['eff6293870e0d88d7c7eaabaa2ce39f5c3f775cf'],0,133,133,1,,,
+8a28036a563e3c3f9b2debab06e9163e58eda675,readme updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-23 14:42:41+02:00,-7200,2021-09-23 14:42:41+02:00,-7200,True,False,['README.md'],['4370e0754fe0dbf17f1198ff2e4baf6da019e719'],6,14,20,1,,,
+6c19912e6654daf16b08a33c447666c205d1143b,screenshot updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-23 14:42:53+02:00,-7200,2021-09-23 14:42:53+02:00,-7200,True,False,['aa-sov-timer.jpg'],['8a28036a563e3c3f9b2debab06e9163e58eda675'],0,0,0,1,,,
+aba6ae454f632107a87e30d5965f77c4f5b07ce8,background colors added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-23 14:44:14+02:00,-7200,2021-09-23 14:44:14+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py', 'aa-sov-timer.css', 'aa-sov-timer.min.css']",['6c19912e6654daf16b08a33c447666c205d1143b'],2,23,25,4,,,
+4e97fe138b2c0925b7fe5ba14595a6e4e15cbfbd,nonsense file removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 11:44:52+02:00,-7200,2021-09-24 11:45:46+02:00,-7200,True,False,"['dataTables.rowGroup.min.min.js', 'datetime.min.min.js', 'rowGroup.bootstrap.min.min.css', 'rowGroup.dataTables.min.min.css']",['aba6ae454f632107a87e30d5965f77c4f5b07ce8'],4,0,4,4,0.0,0.14285714285714285,0.16666666666666666
+465f1830fc8a9c40f710cee75c5fa34434d7c845,use minified js,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 11:46:34+02:00,-7200,2021-09-24 11:46:34+02:00,-7200,True,False,['dashboard.html'],['4e97fe138b2c0925b7fe5ba14595a6e4e15cbfbd'],1,1,2,1,,,
+2344a320e228d2baad6fa58f1339410bac0a8004,changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 11:48:50+02:00,-7200,2021-09-24 11:49:00+02:00,-7200,True,False,['CHANGELOG.md'],['465f1830fc8a9c40f710cee75c5fa34434d7c845'],1,14,15,1,,,
+c010b922be30f562f1ae7cdf5ec6dea74f9f9997,better way of implementing background colours for campaigns,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 11:51:40+02:00,-7200,2021-09-24 11:51:40+02:00,-7200,True,False,"['aa-sov-timer.css', 'aa-sov-timer.min.css', 'aa-sov-timer.js', 'aa-sov-timer.min.js']",['2344a320e228d2baad6fa58f1339410bac0a8004'],10,9,19,4,,,
+ba309de96a42f6b09328ef44976b97b0eec0d69b,material icon font updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 13:11:02+02:00,-7200,2021-09-24 13:11:22+02:00,-7200,True,False,"['CHANGELOG.md', 'aa-sov-timer.css', 'aa-sov-timer.min.css', 'MaterialIcons-Regular.codepoints', 'MaterialIcons-Regular.ttf', 'MaterialIcons-Regular.woff2', 'README.md', 'MaterialIcons-Regular.woff2']",['c010b922be30f562f1ae7cdf5ec6dea74f9f9997'],8,1887,1895,8,,,
+f3b46d9f7e4fd39d46c6feec936e3087fe0addd2,non needed files removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 13:57:41+02:00,-7200,2021-09-24 13:57:41+02:00,-7200,True,False,"['admin.py', 'app_settings.py', 'swagger.json']",['ba309de96a42f6b09328ef44976b97b0eec0d69b'],39,0,39,3,0.0,0.0,0.0
+eee4291bbdbd4df2e486fad117de37fffed22aef,not needed code removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 13:58:44+02:00,-7200,2021-09-24 13:58:44+02:00,-7200,True,False,"['providers.py', 'utils.py', 'views.py']",['f3b46d9f7e4fd39d46c6feec936e3087fe0addd2'],78,2,80,3,0.7631578947368421,0.7631578947368421,0.7631578947368421
+9cb7c11d28d2b503c6d7ab82eb795a1eae7eafb7,test framework added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 13:59:32+02:00,-7200,2021-09-24 13:59:32+02:00,-7200,True,False,"['.coveragerc', '.editorconfig', 'automated-checks.yml', '.gitignore', 'Makefile', 'codecov.yml', 'runtests.py', '__init__.py', 'celery.py', 'settings.py', 'urls.py', 'wsgi.py', 'tox.ini']",['eee4291bbdbd4df2e486fad117de37fffed22aef'],8,470,478,13,,,
+5516ffa4122cc6f80cd915d12079d7a5be02097c,module name fixed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 14:04:10+02:00,-7200,2021-09-24 14:04:10+02:00,-7200,True,False,['tox.ini'],['9cb7c11d28d2b503c6d7ab82eb795a1eae7eafb7'],1,1,2,1,,,
+572da4a43bf48fa32af96455074f13c0cf0972c6,integration test added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 14:26:16+02:00,-7200,2021-09-24 14:26:16+02:00,-7200,True,False,"['__init__.py', 'test_integration.py', 'utils.py']",['5516ffa4122cc6f80cd915d12079d7a5be02097c'],0,90,90,3,0.29411764705882354,1.0,0.29411764705882354
+563909ba601e403f417b347c9c8f1d6eb3784572,first ajax call test,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 15:03:12+02:00,-7200,2021-09-24 15:03:12+02:00,-7200,True,False,"['allianceauth.json', 'load_allianceauth.py', 'utils.py', 'test_ajax_calls.py', 'test_integration.py']",['572da4a43bf48fa32af96455074f13c0cf0972c6'],0,246,246,5,0.16666666666666666,0.4305555555555556,1.0
+5de47370dfc7bffe96fc2ef0bfce2dadb92538b1,"tests need `""allianceauth-app-utils""`",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 15:10:46+02:00,-7200,2021-09-24 15:10:46+02:00,-7200,True,False,['settings.py'],['563909ba601e403f417b347c9c8f1d6eb3784572'],4,1,5,1,,,
+0d7cb88de28da549b93b96d0b042b5587765c8c0,wrong file,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 15:16:14+02:00,-7200,2021-09-24 15:16:14+02:00,-7200,True,False,"['settings.py', 'tox.ini']",['5de47370dfc7bffe96fc2ef0bfce2dadb92538b1'],1,2,3,2,,,
+6761ec92b5094fdf818c4ac1e3f88ee6034b0bee,codecov badge added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 15:35:08+02:00,-7200,2021-09-24 15:35:08+02:00,-7200,True,False,['README.md'],['629c7a02215b28e6a1d5525688990f236190e190'],0,1,1,1,,,
+c855762e57072ed5f9fb4e64d72ded793b1e0313,[FIX] css syntax,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 15:39:20+02:00,-7200,2021-09-24 15:39:20+02:00,-7200,True,False,"['aa-sov-timer.css', 'aa-sov-timer.min.css']",['6761ec92b5094fdf818c4ac1e3f88ee6034b0bee'],2,2,4,2,,,
+956ab183746b9f8bb224673566dfdded836b4cc2,version bumped to v0.6.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 15:46:12+02:00,-7200,2021-09-24 15:46:12+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['c855762e57072ed5f9fb4e64d72ded793b1e0313'],2,6,8,2,,,
+bb90b1a15212df92c83fa35b6f817a32e4f5c5df,changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 15:53:18+02:00,-7200,2021-09-24 15:53:18+02:00,-7200,True,False,['CHANGELOG.md'],['956ab183746b9f8bb224673566dfdded836b4cc2'],0,1,1,1,,,
+0236fc8cc1d5529eb12510898652463ca977d069,screenshots updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 16:08:24+02:00,-7200,2021-09-24 16:08:24+02:00,-7200,True,False,"['README.md', 'aa-sov-timer-dark-mode.jpg', 'aa-sov-timer-light-mode.jpg', 'aa-sov-timer.jpg']",['bb90b1a15212df92c83fa35b6f817a32e4f5c5df'],1,5,6,4,,,
+4152a16a28aa37c1627e32912e53478b1e976731,markdown syntax fix,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-24 16:15:24+02:00,-7200,2021-09-24 16:15:24+02:00,-7200,True,False,['README.md'],['0236fc8cc1d5529eb12510898652463ca977d069'],1,1,2,1,,,
+3711c207fb261d6ece9bfd974c611a0345852f4c,test suite and GH workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-10-14 10:31:52+02:00,-7200,2021-10-14 10:31:52+02:00,-7200,True,False,"['automated-checks.yml', 'pypi-release.yml', '.gitignore', 'tox.ini']",['4152a16a28aa37c1627e32912e53478b1e976731'],32,60,92,4,,,
+232ba72a78b05b18cb92586589d4ad3419a0e870,test for ajax call added,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-10-14 12:24:31+02:00,-7200,2021-10-14 12:24:31+02:00,-7200,True,False,"['load_sovtimer.py', 'sovtimer.json', 'test_ajax_calls.py']",['3711c207fb261d6ece9bfd974c611a0345852f4c'],0,267,267,3,0.1375,0.1375,1.0
+4bacc85fc1c37863b30b82989912f909d7491b28,Test suite updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-04 18:56:42+01:00,-3600,2021-11-04 18:56:42+01:00,-3600,True,False,"['automated-checks.yml', '.pre-commit-config.yaml', 'settings.py', 'tox.ini']",['232ba72a78b05b18cb92586589d4ad3419a0e870'],16,48,64,4,,,
+a61c13c5f9992160e733781c93c63ebc4192046d,Version bumped to v1.0.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-04 18:57:58+01:00,-3600,2021-11-04 18:57:58+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['4bacc85fc1c37863b30b82989912f909d7491b28'],1,8,9,2,,,
+fad8b53e5c6c36b604166ce8b911472e61bcbc74,setup.py updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-26 02:54:14+01:00,-3600,2021-11-26 02:54:14+01:00,-3600,True,False,['setup.py'],['a61c13c5f9992160e733781c93c63ebc4192046d'],33,57,90,1,,,
+bf14b3a4a7013daeb1ccf92383174f80fa505796,tox test suite updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-26 02:57:04+01:00,-3600,2021-11-26 02:57:04+01:00,-3600,True,False,"['automated-checks.yml', 'tox.ini']",['fad8b53e5c6c36b604166ce8b911472e61bcbc74'],7,51,58,2,,,
+23e7dad8f1418702c9d2ac2d02b7ab37dea22b99,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-26 02:57:58+01:00,-3600,2021-11-26 02:57:58+01:00,-3600,True,False,['.pre-commit-config.yaml'],['bf14b3a4a7013daeb1ccf92383174f80fa505796'],4,4,8,1,,,
+85559855ee265343d139f01a46c7a73fad9ff873,GH Templates updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-26 02:59:42+01:00,-3600,2021-11-26 02:59:42+01:00,-3600,True,False,"['bug_report.md', 'feature_request.md']",['23e7dad8f1418702c9d2ac2d02b7ab37dea22b99'],2,4,6,2,,,
+3b4b606670096b97ef3d30e817b695488f9f15c9,Contribution guidelines updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-26 03:00:30+01:00,-3600,2021-11-26 03:00:30+01:00,-3600,True,False,['CONTRIBUTING.md'],['85559855ee265343d139f01a46c7a73fad9ff873'],2,22,24,1,,,
+4833070c41ab73c1b517746f906754d46677f342,"Minimum requirements updated
+
+  - Python 3.7
+  - Alliance Auth v2.9.3",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-11-30 08:25:54+01:00,-3600,2021-11-30 08:25:54+01:00,-3600,True,False,"['automated-checks.yml', '.pre-commit-config.yaml', 'CHANGELOG.md', 'setup.py', '__init__.py', 'tox.ini']",['3b4b606670096b97ef3d30e817b695488f9f15c9'],61,20,81,6,,,
+e0b089270b439add367225e3f38796886e4928ab,configs updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-12-29 20:30:17+01:00,-3600,2021-12-29 20:30:17+01:00,-3600,True,False,"['.isort.cfg', '.pre-commit-config.yaml', 'runtests.py', 'setup.py', 'apps.py', 'auth_hooks.py', 'sovtimer_load_initial_data.py', '0001_initial.py', '0002_aasovtimercampaigns_aasovtimerstructures.py', '0003_auto_20201113_1033.py', '0004_auto_20201113_1856.py', '0005_auto_20201114_0720.py', 'models.py', 'providers.py', 'tasks.py', 'load_allianceauth.py', 'load_sovtimer.py', 'test_ajax_calls.py', 'test_integration.py', 'utils.py', 'urls.py', 'utils.py', 'views.py', 'celery.py', 'settings.py', 'urls.py', 'wsgi.py']",['4833070c41ab73c1b517746f906754d46677f342'],10,80,90,27,,,
+152d7441d85d74d8d1c374f7a6846d95b4275bac,Makefile updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-12-30 18:21:43+01:00,-3600,2021-12-30 18:21:43+01:00,-3600,True,False,['Makefile'],['e0b089270b439add367225e3f38796886e4928ab'],0,4,4,1,,,
+e883470d09164c6f9a857375e4439a956b737030,AA>=2.9.4 is testing for Python 3.11 and so do we,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-12-30 18:21:56+01:00,-3600,2021-12-30 18:21:56+01:00,-3600,True,False,"['automated-checks.yml', 'setup.py', 'tox.ini']",['152d7441d85d74d8d1c374f7a6846d95b4275bac'],3,7,10,3,,,
+b7dc2c4a0a7126891395832c2584680d630bcfed,`const` instead of `let` where ever appropriate,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-12 16:31:11+01:00,-3600,2022-01-12 16:31:11+01:00,-3600,True,False,"['aa-sov-timer.js', 'aa-sov-timer.min.js']",['e883470d09164c6f9a857375e4439a956b737030'],34,34,68,2,,,
+55976b40515b05ba51b1f3075ec955190c88d5f2,Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-12 16:32:37+01:00,-3600,2022-01-12 16:32:37+01:00,-3600,True,False,['CHANGELOG.md'],['b7dc2c4a0a7126891395832c2584680d630bcfed'],0,13,13,1,,,
+bbccb18f2981e81f8c7b3f2bea5c0bb1c631dc5d,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-12 16:34:35+01:00,-3600,2022-01-12 16:34:35+01:00,-3600,True,False,['.pre-commit-config.yaml'],['55976b40515b05ba51b1f3075ec955190c88d5f2'],2,2,4,1,,,
+6334ee14eeeadbd18f17bb5fe5b3de8105687429,Version bumped to 1.2.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-12 21:16:47+01:00,-3600,2022-01-12 21:16:47+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['bbccb18f2981e81f8c7b3f2bea5c0bb1c631dc5d'],2,2,4,2,,,
+7e569c39051f10fbc9b427f8f825398ba7b57b79,`models.TextChoices` refactored for better code readability,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-27 12:30:04+01:00,-3600,2022-01-27 12:30:04+01:00,-3600,True,False,"['CHANGELOG.md', 'models.py']",['6334ee14eeeadbd18f17bb5fe5b3de8105687429'],10,16,26,2,,,
+f2e37ac52bdbcfd77b268d0563e64a5e8ed3fb7b,JS updates,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-27 12:48:43+01:00,-3600,2022-01-27 12:48:43+01:00,-3600,True,False,"['aa-sov-timer.js', 'aa-sov-timer.min.js', 'dashboard.html', 'table.html']",['7e569c39051f10fbc9b427f8f825398ba7b57b79'],18,17,35,4,,,
+49391fb0fa53505ce2959c717761acbd384aad33,Use `AaSovtimerCampaigns.Type` instead of hard coded mapping,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-27 13:05:51+01:00,-3600,2022-01-27 13:05:51+01:00,-3600,True,False,['views.py'],['f2e37ac52bdbcfd77b268d0563e64a5e8ed3fb7b'],8,1,9,1,,,
+e107ce9cbd1cee393a1d79e070b2beb8e2cee602,Models renamed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-29 17:25:50+01:00,-3600,2022-01-29 17:25:50+01:00,-3600,True,False,"['sovtimer_load_initial_data.py', '0006_rename_models.py', 'models.py', 'tasks.py', 'load_sovtimer.py', 'sovtimer.json', 'views.py']",['49391fb0fa53505ce2959c717761acbd384aad33'],84,108,192,7,,,
+af82ce3ac6c70307056cb8e3be0bede75ad679bf,Cleanup models,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-29 20:03:38+01:00,-3600,2022-01-29 20:03:38+01:00,-3600,True,False,"['sovtimer_load_initial_data.py', '0007_cleanup_models.py', 'models.py', 'tasks.py', 'table.html', 'load_sovtimer.py', 'sovtimer.json', 'views.py']",['e107ce9cbd1cee393a1d79e070b2beb8e2cee602'],117,137,254,8,1.0,0.47058823529411764,0.0
+692f77b54147ffd0f2d4e1cc8e9e114e94972e38,Task refactored,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-29 21:38:26+01:00,-3600,2022-01-29 21:38:26+01:00,-3600,True,False,['tasks.py'],['af82ce3ac6c70307056cb8e3be0bede75ad679bf'],12,6,18,1,0.0,0.0,1.0
+978d8c7aa870e9bf25da4a86e2c262e2a8e03fff,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-29 23:32:17+01:00,-3600,2022-01-29 23:39:08+01:00,-3600,True,False,['.pre-commit-config.yaml'],['692f77b54147ffd0f2d4e1cc8e9e114e94972e38'],2,2,4,1,,,
+b257c7df78be3df05fb33b8a25ad1c10398e8993,remove quotes,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-29 23:40:29+01:00,-3600,2022-01-29 23:40:29+01:00,-3600,True,False,['.pre-commit-config.yaml'],['978d8c7aa870e9bf25da4a86e2c262e2a8e03fff'],2,2,4,1,,,
+a1466b45fa38758b757ffeab30e70d507bf9e563,Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-29 23:46:53+01:00,-3600,2022-01-29 23:46:53+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'CHANGELOG.md']",['b257c7df78be3df05fb33b8a25ad1c10398e8993'],1,2,3,2,,,
+ae6410269c8833413d4f33882c816d3af88c4dec,Added check for merge conflicts to pre-commit config,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 11:53:06+01:00,-3600,2022-01-30 11:53:06+01:00,-3600,True,False,['.pre-commit-config.yaml'],['a1466b45fa38758b757ffeab30e70d507bf9e563'],0,1,1,1,,,
+c92d5e6295873f3c961d327e3624fb10b2525491,Migration update,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 12:38:43+01:00,-3600,2022-01-30 12:38:43+01:00,-3600,True,False,"['0007_cleanup_models.py', 'models.py']",['c0c6de27294977da5b2eebf1cad7c847a4ad6a5b'],41,37,78,2,,,
+74e9a96702a4dd7e494e10bb08976ea57ccb85c0,Useragent introduced for ESI calls,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 13:19:15+01:00,-3600,2022-01-30 13:19:46+01:00,-3600,True,False,"['CHANGELOG.md', 'constants.py', 'providers.py']",['c92d5e6295873f3c961d327e3624fb10b2525491'],1,24,25,3,,,
+db3d2bed906b0d88f88aac1d6e5a98292d19b57f,Code modernized,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 13:23:35+01:00,-3600,2022-01-30 13:24:24+01:00,-3600,True,False,"['CHANGELOG.md', 'views.py']",['74e9a96702a4dd7e494e10bb08976ea57ccb85c0'],64,42,106,2,1.0,1.0,0.0
+f6c20162fd2fcc3cbe675830d71c3227d1fad352,Not every line needs to be an f-string ...,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 13:33:23+01:00,-3600,2022-01-30 13:33:23+01:00,-3600,True,False,['views.py'],['db3d2bed906b0d88f88aac1d6e5a98292d19b57f'],6,6,12,1,,,
+d90838aa5bbd75339209342e4368e28c91c02ad3,Unused imports removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 13:36:37+01:00,-3600,2022-01-30 13:36:37+01:00,-3600,True,False,['0006_rename_models.py'],['f6c20162fd2fcc3cbe675830d71c3227d1fad352'],2,1,3,1,,,
+8f703f3e16497fa20684d4a6567c896767242194,Switched to `allianceauth-app-utils` for logging,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 14:24:43+01:00,-3600,2022-01-30 14:25:17+01:00,-3600,True,False,"['CHANGELOG.md', 'setup.py', 'tasks.py', 'utils.py', 'views.py']",['d90838aa5bbd75339209342e4368e28c91c02ad3'],30,6,36,5,0.0,0.0,1.0
+57cfae242200e03d06c148b5aea92305bed65e72,Images for README moved to their own directory,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 14:33:20+01:00,-3600,2022-01-30 14:33:20+01:00,-3600,True,False,"['README.md', 'aa-sov-timer-dark-mode.jpg', 'aa-sov-timer-light-mode.jpg']",['8f703f3e16497fa20684d4a6567c896767242194'],2,2,4,3,,,
+f820d6d47acaeb702d4a2be74140773db820261d,Images for CHANGELOG to their own directory,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 14:36:32+01:00,-3600,2022-01-30 14:36:32+01:00,-3600,True,False,"['CHANGELOG.md', '128572686-b01869c4-005e-4141-a28f-7bd286c301f0.png']",['57cfae242200e03d06c148b5aea92305bed65e72'],1,1,2,2,,,
+b43748f55794103f5db4c1035b98b98813b18084,Added logging to campaign and structure fetch from ESI,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 14:40:13+01:00,-3600,2022-01-30 14:40:13+01:00,-3600,True,False,['models.py'],['f820d6d47acaeb702d4a2be74140773db820261d'],6,25,31,1,1.0,1.0,1.0
+efab50cb032df7562b0d7e3d63e6edd2b12c3c1c,Make coverage reports a bit more informative,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 14:46:32+01:00,-3600,2022-01-30 14:46:32+01:00,-3600,True,False,"['Makefile', 'tox.ini']",['b43748f55794103f5db4c1035b98b98813b18084'],2,2,4,2,,,
+57d07dab56d32dabeafc9b99f24311850b638928,Version bumped to v1.3.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 15:01:11+01:00,-3600,2022-01-30 15:01:11+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['efab50cb032df7562b0d7e3d63e6edd2b12c3c1c'],1,4,5,2,,,
+ca1b0fb0ab023092caee71e9f028b6b629903c58,Update instructions added to changelog,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 15:17:54+01:00,-3600,2022-01-30 15:17:54+01:00,-3600,True,False,['CHANGELOG.md'],['57d07dab56d32dabeafc9b99f24311850b638928'],0,15,15,1,,,
+c98ebc2fcf9916bb87364b46b3c36ff633129841,fixed unused variable warning,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-01-30 15:19:19+01:00,-3600,2022-01-30 15:19:19+01:00,-3600,True,False,['sovtimer_load_initial_data.py'],['ca1b0fb0ab023092caee71e9f028b6b629903c58'],4,1,5,1,1.0,1.0,0.0
+50952a1ed79821152ca029db8db4a3aa91eb1d66,Using `path` in URL config instead of soon-to-be removed `url`,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-02-02 11:02:02+01:00,-3600,2022-02-02 11:02:02+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'CHANGELOG.md', 'urls.py']",['c98ebc2fcf9916bb87364b46b3c36ff633129841'],9,9,18,3,,,
+ef10d9b1ac71bbbb187195bb66913243d83d9eaf,Version bumped to v1.3.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-02-02 12:58:17+01:00,-3600,2022-02-02 12:58:17+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['50952a1ed79821152ca029db8db4a3aa91eb1d66'],1,4,5,2,,,
+22478c18ab8206963bbae8973e30b54c684ffb1a,[FIX] cannot import name 'ugettext_lazy' from 'django.utils.translation',Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-02-27 16:00:31+01:00,-3600,2022-02-27 16:00:31+01:00,-3600,True,False,"['CHANGELOG.md', 'auth_hooks.py']",['ef10d9b1ac71bbbb187195bb66913243d83d9eaf'],1,6,7,2,,,
+e36debb9681b026c573e714aebbb319f492f67e7,Version bumped to v1.4.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-02-28 11:11:05+01:00,-3600,2022-02-28 11:11:05+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py', 'urls.py']",['22478c18ab8206963bbae8973e30b54c684ffb1a'],3,5,8,3,,,
+1299b3dcea1710440e7d79d7a83a63865b884856,"Switched to `setup.cfg` as config file, since `setup.py` is deprecated",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-02 19:43:19+01:00,-3600,2022-03-02 19:43:19+01:00,-3600,True,False,"['automated-checks.yml', 'pypi-release.yml', '.pre-commit-config.yaml', 'CHANGELOG.md', 'Makefile', 'pyproject.toml', 'setup.cfg', 'setup.py', 'tox.ini']",['e36debb9681b026c573e714aebbb319f492f67e7'],86,79,165,9,,,
+efb3d0b457e8f5ee47b2db7e1de1dcee1ac2c728,Deprecation removed,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-02 19:45:26+01:00,-3600,2022-03-02 19:45:26+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py', 'settings.py']",['1299b3dcea1710440e7d79d7a83a63865b884856'],4,4,8,3,,,
+38fc48c5b14ef1d84c8f5355e28bb4371e2ed520,Test suite for AA 3.x and Django 4,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-02 19:51:48+01:00,-3600,2022-03-02 19:51:48+01:00,-3600,True,False,"['automated-checks.yml', 'CHANGELOG.md', 'settings_aa3x.py', 'tox.ini']",['efb3d0b457e8f5ee47b2db7e1de1dcee1ac2c728'],14,372,386,4,,,
+f160cb4c9a616cef0c680b1cf91aa49b7d1c6065,Version bumped to v1.5.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-03-03 00:30:55+01:00,-3600,2022-03-03 00:30:55+01:00,-3600,True,False,"['CHANGELOG.md', '__init__.py']",['527687101300c336e2c6f53bfe3427ec4c71dc25'],1,4,5,2,,,
+ea05c37f6683ddd00db4a2ca90b4637daafe075f,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-04-24 14:22:22+02:00,-7200,2022-04-24 14:22:22+02:00,-7200,True,False,['.pre-commit-config.yaml'],['f160cb4c9a616cef0c680b1cf91aa49b7d1c6065'],5,5,10,1,,,
+e43bd7770a0d6b8c5580635d2cd1efe01f0e0b9a,Build test updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-04-24 14:22:36+02:00,-7200,2022-04-24 14:22:36+02:00,-7200,True,False,['automated-checks.yml'],['ea05c37f6683ddd00db4a2ca90b4637daafe075f'],0,7,7,1,,,
+70e983c6c032cbeaa910c75299aec267552ce3ec,JS modernized,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-04-24 14:23:06+02:00,-7200,2022-04-24 14:23:06+02:00,-7200,True,False,"['CHANGELOG.md', 'aa-sov-timer.js', 'aa-sov-timer.min.js']",['e43bd7770a0d6b8c5580635d2cd1efe01f0e0b9a'],9,19,28,3,1.0,0.0,0.15
+7bbb19dbc6f922a0d289b624252deb737810f251,pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-05-01 07:59:07+02:00,-7200,2022-05-01 07:59:07+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'views.py']",['70e983c6c032cbeaa910c75299aec267552ce3ec'],1,15,16,2,,,
+5731a0e3dedef35d881d55eafad620863fbdd875,"""Buy me a coffee"" added",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-05-08 22:02:58+02:00,-7200,2022-05-08 22:02:58+02:00,-7200,True,False,"['FUNDING.yml', 'README.md']",['7bbb19dbc6f922a0d289b624252deb737810f251'],0,3,3,2,,,
+67a3aafba57dca29dbe23e878b70240e24096b74,pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-05-20 22:26:16+02:00,-7200,2022-05-20 22:26:16+02:00,-7200,True,False,['.pre-commit-config.yaml'],['5731a0e3dedef35d881d55eafad620863fbdd875'],3,6,9,1,,,
+2bc0a8f31d9228f3efbb7b4426ebd8bfdc883b2d,[FIX] Attackers default score in DB,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-05-25 14:29:27+02:00,-7200,2022-05-25 14:29:27+02:00,-7200,True,False,"['automated-checks.yml', 'CHANGELOG.md', '0008_fix_campaign_attackers_score.py', 'models.py']",['67a3aafba57dca29dbe23e878b70240e24096b74'],2,25,27,4,,,
+a13c207d259b5b0c13afffd7083c9110862ddfbc,Version bumped to v1.5.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-05-25 14:31:37+02:00,-7200,2022-05-25 14:31:37+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['2bc0a8f31d9228f3efbb7b4426ebd8bfdc883b2d'],1,4,5,2,,,
+f574928395207ed0e4ebc3685461cff3df80a545,Break the browser cache on static files when updating,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-05-25 14:43:45+02:00,-7200,2022-05-25 14:43:45+02:00,-7200,True,False,"['CHANGELOG.md', 'dashboard.html', '__init__.py', 'sovtimer_versioned_static.py', 'test_templatetags.py']",['a13c207d259b5b0c13afffd7083c9110862ddfbc'],3,72,75,5,1.0,1.0,1.0
+aeb767297ec35fdea21dc8715a5877e894cc94f1,Updated tox tests for the new alpha version of Alliance Auth 3,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-07 10:35:18+02:00,-7200,2022-06-07 10:35:18+02:00,-7200,True,False,['tox.ini'],['f574928395207ed0e4ebc3685461cff3df80a545'],2,6,8,1,,,
+5e30c8f4e785405ee624d67fb81a4a5b25108d75,Use bundled filterdropdown javascript,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-07 12:02:10+02:00,-7200,2022-07-07 12:02:10+02:00,-7200,True,False,['dashboard.html'],['aeb767297ec35fdea21dc8715a5877e894cc94f1'],1,1,2,1,,,
+f7187ee2254d74cbc4cb4d3a130c820dbffb41c9,Removed unused JavaScript,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-07 12:56:51+02:00,-7200,2022-07-07 12:56:51+02:00,-7200,True,False,"['dataTables.rowGroup.min.js', 'rowGroup.bootstrap.min.css', 'rowGroup.dataTables.min.css', 'dashboard.html']",['5e30c8f4e785405ee624d67fb81a4a5b25108d75'],29,1,30,4,0.0,0.16279069767441862,0.13953488372093023
+02942b1e614365135576e8d31676f10824a290c7,pre-commit updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-11 08:44:38+02:00,-7200,2022-07-11 08:44:38+02:00,-7200,True,False,"['automated-checks.yml', '.pre-commit-config.yaml']",['f7187ee2254d74cbc4cb4d3a130c820dbffb41c9'],7,7,14,2,,,
+24e329b207632fec383f00035ff60d591e2cdaa3,Min requirement: allianceauth>=2.14.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-11 08:45:24+02:00,-7200,2022-07-11 08:45:24+02:00,-7200,True,False,['setup.cfg'],['02942b1e614365135576e8d31676f10824a290c7'],1,1,2,1,,,
+82cfd3bd7919362e6449f9186e8937671e9549f3,tox tests updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-11 08:45:46+02:00,-7200,2022-07-11 08:45:46+02:00,-7200,True,False,['tox.ini'],['24e329b207632fec383f00035ff60d591e2cdaa3'],1,1,2,1,,,
+d1098f256d25bf0b413daea78310d97e6ed907e5,Version bumped to v1.6.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-07-11 08:47:49+02:00,-7200,2022-07-11 08:47:49+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['82cfd3bd7919362e6449f9186e8937671e9549f3'],1,14,15,2,,,
+96f8e2353d65867444a1d01c62a29da9928986ad,[CHANGE] No longer testing for AA alpha versions,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-08-27 12:37:11+02:00,-7200,2022-08-27 12:47:44+02:00,-7200,True,False,"['automated-checks.yml', '.pre-commit-config.yaml', 'CHANGELOG.md', 'setup.cfg', 'aa-bootstrap-fix.css', 'aa-sov-timer.css', 'aa-sov-timer.min.css', 'settings.py', 'settings_aa3x.py', 'tox.ini']",['20f0a0eb6e7900f3e2aa12d93d4abade10eb32c0'],402,103,505,10,,,
+cb2336eedaf1820c1d79912a7c2c0b1ab0edbfa9,[MISC] GitHub templates updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-16 15:58:29+02:00,-7200,2022-09-16 15:58:29+02:00,-7200,True,False,"['feature_request.md', 'PULL_REQUEST_TEMPLATE.md']",['96f8e2353d65867444a1d01c62a29da9928986ad'],4,3,7,2,,,
+3592255b7bcc7c5db0d035b9b24e25fbbdd357c7,[MISC] pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-16 16:00:52+02:00,-7200,2022-09-16 16:00:52+02:00,-7200,True,False,['.pre-commit-config.yaml'],['cb2336eedaf1820c1d79912a7c2c0b1ab0edbfa9'],5,5,10,1,,,
+b0db3ff0c9d686b47c3f11777b272780e3f8237c,[CHANGE] Test suite updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-09-16 16:02:35+02:00,-7200,2022-09-16 16:02:35+02:00,-7200,True,False,"['automated-checks.yml', 'Makefile', 'settings.py', 'tox.ini']",['3592255b7bcc7c5db0d035b9b24e25fbbdd357c7'],21,109,130,4,,,
+aba99f2fb33df1da5ab3dc99cdfe0257a3e956f3,[MISC] GitHub workflow files and PR template updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-12 12:42:07+02:00,-7200,2022-10-12 12:42:07+02:00,-7200,True,False,"['PULL_REQUEST_TEMPLATE.md', 'automated-checks.yml', '.pre-commit-config.yaml']",['b0db3ff0c9d686b47c3f11777b272780e3f8237c'],17,27,44,3,,,
+e08431f14ff4c308af9e044123e000f0d391d9d5,[REMOVED] Auto retry for ESI and OS errors in tasks,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-12 12:43:56+02:00,-7200,2022-10-12 12:43:56+02:00,-7200,True,False,"['CHANGELOG.md', 'tasks.py']",['aba99f2fb33df1da5ab3dc99cdfe0257a3e956f3'],22,12,34,2,,,
+6a557106a12fa303bfbe5440e63fb11757ec66a4,[MISC] Makefile updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-12 12:45:04+02:00,-7200,2022-10-12 12:45:04+02:00,-7200,True,False,['Makefile'],['e08431f14ff4c308af9e044123e000f0d391d9d5'],2,1,3,1,,,
+8776a7bbce266115501d28ec7bd99fd4ad076790,[CHANGE] Model graph updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-12 12:45:56+02:00,-7200,2022-10-12 12:45:56+02:00,-7200,True,False,['aa-sov-timer-models.png'],['6a557106a12fa303bfbe5440e63fb11757ec66a4'],0,0,0,1,,,
+af8b90ca90c9c504a49a6efe05b84ea6f8d377cb,[CHANGE] Version bumped to v1.7.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-12 13:00:02+02:00,-7200,2022-10-12 13:00:02+02:00,-7200,True,False,"['CHANGELOG.md', 'setup.cfg', '__init__.py']",['8776a7bbce266115501d28ec7bd99fd4ad076790'],3,15,18,3,,,
+1e5188e8b9308a1b65f54ef2a20e358e783dc247,[CHANGE] Moved CSS and JS to their own bundled templates,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-12 13:07:38+02:00,-7200,2022-10-12 13:07:38+02:00,-7200,True,False,"['CHANGELOG.md', 'base.html', 'aa-sov-timer-css.html', 'aa-sov-timer-js.html', 'datatables-datetime-js.html', 'dashboard.html']",['af8b90ca90c9c504a49a6efe05b84ea6f8d377cb'],25,31,56,6,,,
+c6990be8980f58304bb941b24afd96687b25ce53,[REMOVED] Unused template tags,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-12 13:21:53+02:00,-7200,2022-10-12 13:21:53+02:00,-7200,True,False,['dashboard.html'],['1e5188e8b9308a1b65f54ef2a20e358e783dc247'],2,0,2,1,,,
+15461fa640e9a9e0daf59f77beed7b777efc6f3e,[MISC] Test suite updated - Python 3.11 tests no longer allowed to fail,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-10-31 23:21:46+01:00,-3600,2022-10-31 23:21:46+01:00,-3600,True,False,['automated-checks.yml'],['c6990be8980f58304bb941b24afd96687b25ce53'],20,22,42,1,,,
+9c99acc8af384648b492e3811f55e9665530377c,[MICS] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-27 10:39:34+01:00,-3600,2023-01-27 10:39:34+01:00,-3600,True,False,"['.pre-commit-config.yaml', 'urls.py']",['15461fa640e9a9e0daf59f77beed7b777efc6f3e'],13,13,26,2,,,
+d28787813445866b4e7c72ef943e63ce6c7f6592,[MISC] GH workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-01-27 10:39:46+01:00,-3600,2023-01-27 10:39:46+01:00,-3600,True,False,"['automated-checks.yml', 'pypi-release.yml']",['9c99acc8af384648b492e3811f55e9665530377c'],3,3,6,2,,,
+b0a1c42cfef25b0229bdf6c6ab0335866c20df01,[MISC] GH workflows updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-03-26 14:30:14+02:00,-7200,2023-03-26 14:30:14+02:00,-7200,True,False,"['automated-checks.yml', 'pypi-release.yml']",['d28787813445866b4e7c72ef943e63ce6c7f6592'],6,5,11,2,,,
+a64b88f7e0c571792aa6360bba4d0c93cd54911d,[ADDED] Language files,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-12 09:23:48+02:00,-7200,2023-04-12 09:23:48+02:00,-7200,True,False,"['Makefile', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['b0a1c42cfef25b0229bdf6c6ab0335866c20df01'],4,983,987,9,,,
+cd6d045a2fb49b497bac7d7a438a7d3491a14f09,"Translated using Weblate (Russian)
+
+Currently translated at 4.1% (1 of 24 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-13 10:41:16+00:00,0,2023-04-13 10:41:16+00:00,0,True,False,['django.po'],['a64b88f7e0c571792aa6360bba4d0c93cd54911d'],10,10,20,1,,,
+b3f90f5c5fd592c37fe017a85b54e8a0b84b7289,"Translated using Weblate (German)
+
+Currently translated at 100.0% (24 of 24 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/de/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-13 10:41:16+00:00,0,2023-04-13 10:41:16+00:00,0,True,False,['django.po'],['cd6d045a2fb49b497bac7d7a438a7d3491a14f09'],31,34,65,1,,,
+5ff830e55742af76a190ad5fb30bc05a08fc667e,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-13 10:41:16+00:00,0,2023-04-13 10:41:16+00:00,0,True,False,"['django.mo', 'django.mo']",['b3f90f5c5fd592c37fe017a85b54e8a0b84b7289'],0,0,0,2,,,
+c3795d1454a4f0eee2a1d7cee65f447d7d25e14e,"[REMOVED] Codacy checks from GH workflows, too unreliable availability",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-13 22:35:42+02:00,-7200,2023-04-13 22:35:42+02:00,-7200,True,False,['automated-checks.yml'],['c28410047f2f69077c8e1158532f79ab80a71372'],34,1,35,1,,,
+28440a36b4781f371529bc2146bc443c4e1563c6,[ADDED] Translation section to contribution guide,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-13 22:36:01+02:00,-7200,2023-04-13 22:36:01+02:00,-7200,True,False,['CONTRIBUTING.md'],['c3795d1454a4f0eee2a1d7cee65f447d7d25e14e'],0,10,10,1,,,
+9b0eb720b52710e87744cf9f3281b3667cd7e981,[CHANGE] Version bumped to v1.8.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-13 22:38:16+02:00,-7200,2023-04-13 22:38:16+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['28440a36b4781f371529bc2146bc443c4e1563c6'],2,9,11,2,,,
+6677531f5319e703b7fd18478093c251ab324fbb,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (24 of 24 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-16 17:29:08+00:00,0,2023-04-16 17:29:08+00:00,0,True,False,['django.po'],['9b0eb720b52710e87744cf9f3281b3667cd7e981'],24,28,52,1,,,
+78d097eee70e27223006eedb5ef59dc9451e7d29,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-16 17:29:08+00:00,0,2023-04-16 17:29:08+00:00,0,True,False,['django.mo'],['6677531f5319e703b7fd18478093c251ab324fbb'],0,0,0,1,,,
+111813894b404a5fca95f6a991d323c96adc56a8,[CHANGE] Version bumped to v1.9.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-16 19:42:29+02:00,-7200,2023-04-16 19:42:29+02:00,-7200,True,False,"['CHANGELOG.md', '__init__.py']",['c6fd7e664f396c2cb75e475555c6026c210df8e8'],2,9,11,2,,,
+1592f8dea9432f8872482fb06d6543a928f0494a,[FIX] Date in changelog,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-16 19:49:37+02:00,-7200,2023-04-16 19:49:37+02:00,-7200,True,False,['CHANGELOG.md'],['111813894b404a5fca95f6a991d323c96adc56a8'],1,1,2,1,,,
+7cfc1bf8a1fc8b02e5d312d1f6405b36dc639bb3,[CHANGE] Makefile updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 00:03:19+02:00,-7200,2023-04-19 00:03:19+02:00,-7200,True,False,['Makefile'],['1592f8dea9432f8872482fb06d6543a928f0494a'],16,20,36,1,,,
+d335b96e33de862ca09dea85cce4d4cd515b2699,[ADDED] Ukrainian translation file,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 01:29:47+02:00,-7200,2023-04-19 01:29:47+02:00,-7200,True,False,"['Makefile', 'django.pot', 'django.po']",['7cfc1bf8a1fc8b02e5d312d1f6405b36dc639bb3'],0,248,248,3,,,
+f464264c2109d864fd47ea9379cf514bbfa32c6a,"[CHANGE] Plural forms for Russian and Ukrainian translations
+
+Set according to » https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 11:24:53+02:00,-7200,2023-04-19 11:24:53+02:00,-7200,True,False,"['django.po', 'django.po']",['d335b96e33de862ca09dea85cce4d4cd515b2699'],7,2,9,2,,,
+9b4b1b740a4dafd9bf19927fc4b70621f94931a2,[CHANGE] Final plural-form for ru and uk,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-19 19:31:10+02:00,-7200,2023-04-19 19:31:10+02:00,-7200,True,False,"['django.po', 'django.po']",['f464264c2109d864fd47ea9379cf514bbfa32c6a'],2,4,6,2,,,
+77d1dea76c7bc699254053da2f730b4c6b179408,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (24 of 24 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-21 14:50:17+00:00,0,2023-04-21 14:50:17+00:00,0,True,False,['django.po'],['9b4b1b740a4dafd9bf19927fc4b70621f94931a2'],3,3,6,1,,,
+6ce4f06826f9298e2d67153e7486b02b0f7e2ea8,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-04-21 14:50:17+00:00,0,2023-04-21 14:50:17+00:00,0,True,False,['django.mo'],['77d1dea76c7bc699254053da2f730b4c6b179408'],0,0,0,1,,,
+66de7f856fe3a0bdb1226cb20b514c7fd2462625,[CHANGE] Moved the build process to PEP 621 / pyproject.toml,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-26 09:29:04+02:00,-7200,2023-04-26 09:29:04+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'MANIFEST.in', 'pyproject.toml', 'setup.cfg', '__init__.py']",['21ae923131236d3a6ec60a44a30da8ea8d5ffaa7'],67,58,125,5,,,
+b53f1561c2ee872081b16e1c50a12498de90de23,[MISC] md files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-26 10:17:50+02:00,-7200,2023-04-26 10:17:50+02:00,-7200,True,False,"['CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'README.md']",['e100efa21d33af1c9147deb2f7e1e9582ffe9b80'],43,102,145,3,,,
+a4fda8ccb4ebe2a9d4ac50b34b699772979fc35c,[CHANGE] Version bumped to v1.10.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-26 10:19:07+02:00,-7200,2023-04-26 10:20:44+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['b53f1561c2ee872081b16e1c50a12498de90de23'],1,12,13,2,,,
+d919e061c3cfc0315089fbca8fa61ed67bd5d984,[FIX] Grammar,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-04-26 10:24:37+02:00,-7200,2023-04-26 10:24:37+02:00,-7200,True,False,['CHANGELOG.md'],['a4fda8ccb4ebe2a9d4ac50b34b699772979fc35c'],1,1,2,1,,,
+ed9507dfd400cfd025c2a3baf6acdfe7b08bb46b,"Translated using Weblate (Ukrainian)
+
+Currently translated at 20.8% (5 of 24 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/uk/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-12 20:50:34+00:00,0,2023-05-12 20:50:34+00:00,0,True,False,['django.po'],['d919e061c3cfc0315089fbca8fa61ed67bd5d984'],14,14,28,1,,,
+6815bc6ee36b8e4af8be0066134776b241e9553f,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-12 20:50:34+00:00,0,2023-05-12 20:50:34+00:00,0,True,False,['django.mo'],['ed9507dfd400cfd025c2a3baf6acdfe7b08bb46b'],0,0,0,1,,,
+82232214e99716a911c13a5737d73fe64e84ff2a,"Translated using Weblate (German)
+
+Currently translated at 100.0% (24 of 24 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/de/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-19 23:43:41+00:00,0,2023-05-19 23:43:41+00:00,0,True,False,['django.po'],['4719000bee95ae5573fb5832642d2a1b5a5a23e8'],2,2,4,1,,,
+b9a9d6542f549f292b3f990956d2cbe88ff757f9,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,noreply@weblate.org,Weblate,noreply@weblate.org,2023-05-19 23:43:41+00:00,0,2023-05-19 23:43:41+00:00,0,True,False,['django.mo'],['82232214e99716a911c13a5737d73fe64e84ff2a'],0,0,0,1,,,
+86586d1b713dc6ac24dc29d38bdcf6948404edbf,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-23 22:00:03+02:00,-7200,2023-07-23 22:00:03+02:00,-7200,True,False,"['.pre-commit-config.yaml', '0001_initial.py', '0002_aasovtimercampaigns_aasovtimerstructures.py', '0003_auto_20201113_1033.py', '0004_auto_20201113_1856.py', '0005_auto_20201114_0720.py', '0006_rename_models.py', '0007_cleanup_models.py', '0008_fix_campaign_attackers_score.py']",['4719000bee95ae5573fb5832642d2a1b5a5a23e8'],27,31,58,9,,,
+c98d9c5fed7c827c6e099ec7eaec1cf9ea4a6b70,"Translated using Weblate (Ukrainian)
+
+Currently translated at 37.5% (9 of 24 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-26 12:39:53+00:00,0,2023-07-26 12:39:53+00:00,0,True,False,['django.po'],['eb255fa6a90a0f04aa51ec415e13803787377dc8'],6,6,12,1,,,
+c2f2ee2030c64a4a72e045d62ea9fac0d7b41806,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-26 12:39:54+00:00,0,2023-07-26 12:39:54+00:00,0,True,False,['django.mo'],['c98d9c5fed7c827c6e099ec7eaec1cf9ea4a6b70'],0,0,0,1,,,
+f5721b181330f4421c352a3cbcb5aeec4f74a270,[REMOVE] Coverage upload to Codacy from GH workflow,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-26 15:13:37+02:00,-7200,2023-07-26 15:13:37+02:00,-7200,True,False,['automated-checks.yml'],['85c8bcdcb8b2b4434c53e80d21a56207d5c569b7'],7,1,8,1,,,
+cdd2062fea6384abbb126a907ebc03d594a7547a,"Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 8.3% (2 of 24 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/zh_Hans/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-27 16:35:17+00:00,0,2023-07-27 16:35:17+00:00,0,True,False,['django.po'],['f5721b181330f4421c352a3cbcb5aeec4f74a270'],9,9,18,1,,,
+8ff32412d925b33421933ce7e6ff4ad5a2e103e2,"Translated using Weblate (Japanese)
+
+Currently translated at 8.3% (2 of 24 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ja/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-27 16:35:17+00:00,0,2023-07-27 16:35:17+00:00,0,True,False,['django.po'],['cdd2062fea6384abbb126a907ebc03d594a7547a'],9,9,18,1,,,
+9371b5a20f6f706f4742f2849b55517df48539d5,"Translated using Weblate (Korean)
+
+Currently translated at 8.3% (2 of 24 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-27 16:35:17+00:00,0,2023-07-27 16:35:17+00:00,0,True,False,['django.po'],['8ff32412d925b33421933ce7e6ff4ad5a2e103e2'],9,10,19,1,,,
+6f876268f12aa42ec3c82fbac1c6396ed3781ff7,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-27 16:35:17+00:00,0,2023-07-27 16:35:17+00:00,0,True,False,"['django.mo', 'django.mo', 'django.mo']",['9371b5a20f6f706f4742f2849b55517df48539d5'],0,0,0,3,,,
+ec335536db4dffe222706b14c34c53fe92464746,[ADD] Footer to promote help with the app translation,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-27 23:57:35+02:00,-7200,2023-07-27 23:57:35+02:00,-7200,True,False,"['CHANGELOG.md', 'django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'aa-sov-timer.css', 'aa-sov-timer.min.css', 'base.html', 'app-translation-footer.html']",['ff04de2247c15b80f08b8644f35cc30720c94d6a'],21,181,202,15,,,
+3ac1f6c969f79f6bf806272cb13bc8332f36ca90,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (26 of 26 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-29 23:45:08+00:00,0,2023-07-29 23:45:08+00:00,0,True,False,['django.po'],['ec335536db4dffe222706b14c34c53fe92464746'],5,9,14,1,,,
+36cfe838a603687aa9effef56ffa8b0c55b87f2b,"Translated using Weblate (German)
+
+Currently translated at 100.0% (26 of 26 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-29 23:45:08+00:00,0,2023-07-29 23:45:08+00:00,0,True,False,['django.po'],['3ac1f6c969f79f6bf806272cb13bc8332f36ca90'],6,10,16,1,,,
+7eab4ad1e386b817eec1648a917ff934599d5682,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-29 23:45:08+00:00,0,2023-07-29 23:45:08+00:00,0,True,False,"['django.mo', 'django.mo']",['36cfe838a603687aa9effef56ffa8b0c55b87f2b'],0,0,0,2,,,
+5d66ecce3477b4387ce5dbe2fe96a2ce32be4226,[CHANGE] Version bumped to v1.10.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-30 02:57:44+02:00,-7200,2023-07-30 02:57:44+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['73d93cce68d6f476eb811afc321fe4ede8dff200'],1,4,5,2,,,
+f407265594a590abec8d189e3f489467f2e32c3e,[CHANGE] Easier to translate,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-30 18:54:12+02:00,-7200,2023-07-30 18:54:12+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'app-translation-footer.html']",['3da0be2f28e4aa41892c37808961875776e6baad'],111,93,204,11,,,
+7b2d867706ef5eb96894be1685eb522032cc37e7,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-07-30 23:20:48+02:00,-7200,2023-07-30 23:20:48+02:00,-7200,True,False,"['.eslintrc.json', '.pre-commit-config.yaml', 'aa-sov-timer.js', 'aa-sov-timer.min.js', 'celery.py']",['f407265594a590abec8d189e3f489467f2e32c3e'],22,92,114,5,,,1.0
+34598a9698a59475b237827c15c785a27449b9a3,"Translated using Weblate (German)
+
+Currently translated at 100.0% (26 of 26 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-31 17:40:01+00:00,0,2023-07-31 17:40:01+00:00,0,True,False,['django.po'],['7b2d867706ef5eb96894be1685eb522032cc37e7'],13,5,18,1,,,
+f5f35809855ffd24d6e1f136a101886b57ac562e,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (26 of 26 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-31 17:40:01+00:00,0,2023-07-31 17:40:01+00:00,0,True,False,['django.po'],['34598a9698a59475b237827c15c785a27449b9a3'],14,6,20,1,,,
+47199153f556cda160122d1f2d4221ab03d0bdab,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-07-31 17:40:01+00:00,0,2023-07-31 17:40:01+00:00,0,True,False,"['django.mo', 'django.mo']",['f5f35809855ffd24d6e1f136a101886b57ac562e'],0,0,0,2,,,
+ab7c829ccbf3d097b4dda9a5328ec963aab0cfd4,"Translated using Weblate (German)
+
+Currently translated at 100.0% (26 of 26 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-09 15:40:06+00:00,0,2023-08-09 15:40:06+00:00,0,True,False,['django.po'],['f847303d5da94bd11826667dbef9d9b87a95724e'],1,1,2,1,,,
+041d84e855eabaa1fb19da5bf2f24f2e47743777,[REMOVE] Unnecessary variable,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-10 20:16:38+02:00,-7200,2023-08-10 20:16:38+02:00,-7200,True,False,['tasks.py'],['7b2d867706ef5eb96894be1685eb522032cc37e7'],5,1,6,1,1.0,0.0,0.0
+61745b9ebcb154b8a30a9b88b1e072749ef89037,[CHANGE] `try` block restructured in `update_sov_campaigns` task,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-10 20:17:36+02:00,-7200,2023-08-10 20:17:36+02:00,-7200,True,False,['tasks.py'],['041d84e855eabaa1fb19da5bf2f24f2e47743777'],5,5,10,1,0.0,1.0,1.0
+81dae937495a30cb21d7b8e8c157c5939b5d2bdb,[FIX] Bootstrap CSS fix,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-13 13:04:09+02:00,-7200,2023-08-13 13:04:09+02:00,-7200,True,False,"['CHANGELOG.md', 'aa-bootstrap-fix.css', 'aa-bootstrap-fix.min.css']",['e5704368ef35e7f44cad945400a1edaa8192de75'],6,10,16,3,,,
+d00fdb2eae00081f65f6e76f6728a0f1904d2fb0,[REMOVE] Duplicated pre-commit checks,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-13 13:04:34+02:00,-7200,2023-08-13 13:04:34+02:00,-7200,True,False,['.pre-commit-config.yaml'],['81dae937495a30cb21d7b8e8c157c5939b5d2bdb'],8,0,8,1,,,
+9e264a99f2e5675b2ca061d33622132e102ed431,[CHANGE] Version bumped to v1.10.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-13 13:05:28+02:00,-7200,2023-08-13 13:05:28+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['d00fdb2eae00081f65f6e76f6728a0f1904d2fb0'],1,4,5,2,,,
+1fee6a05977dc1ab3e89c460ea8147f2bc2a84ac,"Translated using Weblate (Spanish)
+
+Currently translated at 100.0% (26 of 26 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-16 08:40:09+00:00,0,2023-08-16 08:40:09+00:00,0,True,False,['django.po'],['b3cada25f4422bf9cc80658943dfda1e122a08b3'],32,37,69,1,,,
+cc775896aae22fd14fe0747515a314026f3ca311,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-16 08:40:09+00:00,0,2023-08-16 08:40:09+00:00,0,True,False,['django.mo'],['1fee6a05977dc1ab3e89c460ea8147f2bc2a84ac'],0,0,0,1,,,
+5f8ea9704d126a545630cc0b87cdc6438ff4ba36,[CHANGE] Version bumped to v1.11.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-16 11:40:34+02:00,-7200,2023-08-16 11:40:34+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['be93046898c18d927652d68e5a0e2f5ac5a06ee0'],1,8,9,2,,,
+c335116393ed045979f6d6a95de78ee8e1a6d29f,"[MISC] pre-commit, linting and source-maps",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-29 02:54:49+02:00,-7200,2023-08-29 02:54:49+02:00,-7200,True,False,"['.eslintrc.json', 'bug_report.md', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md', '.pre-commit-config.yaml', '.pylintrc', '.stylelintrc.json', 'CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'README.md', 'pyproject.toml', 'aa-bootstrap-fix.min.css', 'aa-bootstrap-fix.min.css.map', 'aa-sov-timer.css', 'aa-sov-timer.min.css', 'aa-sov-timer.min.css.map', 'tox.ini']",['eedb6f4d6a269e77f0d0ea96e398406a7c571300'],277,326,603,18,,,
+da10f3e18ae9ef30fd0000c1730c735c65e42bf9,[MISC] pre-commit config updated and applied,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-31 08:38:59+02:00,-7200,2023-08-31 08:38:59+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'pyproject.toml', 'aa-sov-timer.min.js', 'aa-sov-timer.min.js.map']",['c335116393ed045979f6d6a95de78ee8e1a6d29f'],9,11,20,4,,,
+18bc48471fcc0eb4561aebdc6109edaff79b2027,[MISC] codecov config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-31 09:05:22+02:00,-7200,2023-08-31 09:05:22+02:00,-7200,True,False,['codecov.yml'],['da10f3e18ae9ef30fd0000c1730c735c65e42bf9'],3,2,5,1,,,
+4e09694502e8403fbdf943a7a0ac552c74505bbb,"Translated using Weblate (German)
+
+Currently translated at 100.0% (26 of 26 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/de/
+
+Translated using Weblate (German)
+
+Currently translated at 100.0% (26 of 26 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-29 00:55:02+00:00,0,2023-08-31 07:05:31+00:00,0,True,False,['django.po'],['18bc48471fcc0eb4561aebdc6109edaff79b2027'],1,1,2,1,,,
+25bc5840a02726b7d5ea7fe5c7c4621a446c2b26,"Translated using Weblate (Korean)
+
+Currently translated at 100.0% (26 of 26 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-29 00:55:02+00:00,0,2023-08-31 07:05:31+00:00,0,True,False,['django.po'],['4e09694502e8403fbdf943a7a0ac552c74505bbb'],27,30,57,1,,,
+03ae79e9337fc57e943ad0ea3cc229fe0622db06,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-08-29 00:55:02+00:00,0,2023-08-31 07:05:31+00:00,0,True,False,['django.mo'],['25bc5840a02726b7d5ea7fe5c7c4621a446c2b26'],0,0,0,1,,,
+3060790f48047fc895aba6ec39c9011ffab6fb49,[CHANGE] Version bumped to v1.12.0,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-08-31 09:55:10+02:00,-7200,2023-08-31 09:55:10+02:00,-7200,True,False,"['CHANGELOG.md', 'README.md', 'pyproject.toml']",['88cb47c0846f3616e73ada20e3120a0a1e890a6c'],1,35,36,3,,,
+c1e6c49faad354ba8aad09d83c5fcc6099b7abb8,"Translated using Weblate (Korean)
+
+Currently translated at 100.0% (26 of 26 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-02 14:40:23+00:00,0,2023-09-02 14:40:23+00:00,0,True,False,['django.po'],['808cc68b2828d1a30be899997f19b873cc6f7a49'],4,4,8,1,,,
+ea3c02256e953cf66605c3ec6896bd38475b807d,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-02 14:40:23+00:00,0,2023-09-02 14:40:23+00:00,0,True,False,['django.mo'],['c1e6c49faad354ba8aad09d83c5fcc6099b7abb8'],0,0,0,1,,,
+38bb5f3054f8ec4be605d28924bf2756b029dbee,[CHANGE] Version bumped to v1.12.1,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-02 19:57:48+02:00,-7200,2023-09-02 19:57:48+02:00,-7200,True,False,"['CHANGELOG.md', 'README.md', 'pyproject.toml']",['a6b83e414afb760afe3d9a58726ac999c3f17f49'],6,12,18,3,,,
+6ef37c00f97267615bc36129677537f64f9f07e7,[FIX] Restore issue templates,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-05 16:29:11+02:00,-7200,2023-09-05 16:29:11+02:00,-7200,True,False,"['bug_report.md', 'feature_request.md', 'dependabot.yml', '.pre-commit-config.yaml']",['e17184c2556c2c8440e794b9d1563b9cd9ff6a83'],12,28,40,4,,,
+8f4a00e693640c75c5bd15dd9d1d1bf8f3fc3fb1,[MISC] Contribution guidelines updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-13 02:04:43+02:00,-7200,2023-09-13 02:04:43+02:00,-7200,True,False,['CONTRIBUTING.md'],['501fa29fd61cb989f355b5410257111299829c3a'],35,88,123,1,,,
+778f6e535334e6bb21fc0b5605effff51f9dc0f9,[MISC] pre-commit and GH workflow configs updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-18 17:15:56+02:00,-7200,2023-09-18 17:15:56+02:00,-7200,True,False,"['automated-checks.yml', '.pre-commit-config.yaml', 'CONTRIBUTING.md']",['8f4a00e693640c75c5bd15dd9d1d1bf8f3fc3fb1'],19,37,56,3,,,
+f527f2846ce5e9acec7b978422d935887053780a,[FIX] Pylint issues,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-19 15:25:34+02:00,-7200,2023-09-19 15:25:34+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'sovtimer_load_initial_data.py', 'models.py', 'views.py']",['778f6e535334e6bb21fc0b5605effff51f9dc0f9'],23,38,61,4,0.0,0.0,1.0
+1162f5b3b8d04e619be79144de6b04a13f6774c0,[CHANGE] Use keyword arguments wherever possible,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-19 16:03:16+02:00,-7200,2023-09-19 16:03:16+02:00,-7200,True,False,"['__init__.py', 'apps.py', 'auth_hooks.py', 'constants.py', 'sovtimer_load_initial_data.py', 'models.py', 'providers.py', 'tasks.py', 'sovtimer_versioned_static.py', 'load_allianceauth.py', 'load_sovtimer.py', 'utils.py', 'test_ajax_calls.py', 'test_integration.py', 'test_templatetags.py', 'utils.py', 'urls.py', 'views.py']",['f527f2846ce5e9acec7b978422d935887053780a'],98,146,244,18,0.7777777777777778,1.0,0.8518518518518519
+9aa7eadfe73bfd59ac3904a461de6079f4ec3db8,[MISC] Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-19 16:03:58+02:00,-7200,2023-09-19 16:03:58+02:00,-7200,True,False,['CHANGELOG.md'],['1162f5b3b8d04e619be79144de6b04a13f6774c0'],0,8,8,1,,,
+eacff0d772c4320d032f2ca27bd2d030b5c088cc,[MISC] Images moved to root directory,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-19 16:23:03+02:00,-7200,2023-09-19 16:23:03+02:00,-7200,True,False,"['CHANGELOG.md', 'README.md', '128572686-b01869c4-005e-4141-a28f-7bd286c301f0.png', 'aa-sov-timer-dark-mode.jpg', 'aa-sov-timer-light-mode.jpg']",['f5bd23c685da0a2f837b2c3af20a4f7160c7f42d'],3,3,6,5,,,
+ff27da0e3c6b070ca71cc558e572dda2c6ba2fa7,[ADD] Image directory for Weblate,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-19 16:23:27+02:00,-7200,2023-09-19 16:23:27+02:00,-7200,True,False,['.gitkeep'],['eacff0d772c4320d032f2ca27bd2d030b5c088cc'],0,0,0,1,,,
+2ee94eda1ac4fc9f3a9f423d0223c5c4f8d6e09e,[FIX] Missing `<tr>` tag,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-19 16:26:10+02:00,-7200,2023-09-19 16:26:10+02:00,-7200,True,False,"['CHANGELOG.md', 'table.html']",['ff27da0e3c6b070ca71cc558e572dda2c6ba2fa7'],9,12,21,2,,,
+6d82c9a6dfb5e84996302e8f08f067d56da5212d,"[MISC] Spelling and grammar is important, even in comments",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-19 16:35:09+02:00,-7200,2023-09-19 16:35:09+02:00,-7200,True,False,"['auth_hooks.py', 'sovtimer_load_initial_data.py', 'providers.py', 'tasks.py', 'sovtimer_versioned_static.py', 'load_allianceauth.py', 'load_sovtimer.py', 'test_ajax_calls.py', 'test_integration.py', 'utils.py', 'views.py']",['2ee94eda1ac4fc9f3a9f423d0223c5c4f8d6e09e'],30,68,98,11,1.0,1.0,1.0
+cb7bb86009e57715ea7b8aab44bd6342506ee81c,[MISC] Translation files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-19 16:36:16+02:00,-7200,2023-09-19 16:36:16+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['6d82c9a6dfb5e84996302e8f08f067d56da5212d'],178,483,661,10,,,
+22070643d8d1012cba8f27367ba7de7114e2f072,[FIX] Grammar in PR template,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 11:06:32+02:00,-7200,2023-09-20 11:06:32+02:00,-7200,True,False,['PULL_REQUEST_TEMPLATE.md'],['cb7bb86009e57715ea7b8aab44bd6342506ee81c'],1,1,2,1,,,
+347d5643e70524d433e669b41f48976ed46a273e,[ADD] pre-commit.ci configuration,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 18:16:14+02:00,-7200,2023-09-20 18:16:14+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'README.md']",['22070643d8d1012cba8f27367ba7de7114e2f072'],0,16,16,2,,,
+a9a25205a4f62040bd9d4016794dd0e1569feac8,"Translated using Weblate (German)
+
+Currently translated at 100.0% (32 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-20 15:40:35+00:00,0,2023-09-20 16:16:25+00:00,0,True,False,['django.po'],['347d5643e70524d433e669b41f48976ed46a273e'],26,15,41,1,,,
+32f228bae43d587c3fc386c262d0cb16000f9d13,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-20 15:40:35+00:00,0,2023-09-20 16:16:25+00:00,0,True,False,['django.mo'],['a9a25205a4f62040bd9d4016794dd0e1569feac8'],0,0,0,1,,,
+fafbb8fbe931093495b596ee9a999db4f5a7d7f6,[CHANGE] Version bumped to v1.12.2,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-20 18:35:30+02:00,-7200,2023-09-20 18:35:30+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['d0d0471dc53641287bb3e2c433865ccd68e793f9'],1,4,5,2,,,
+d9927739be01e3f693e215c10073d53fc057bba1,[FIX] `actions/checkout` version in GH workflows,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-21 00:31:21+02:00,-7200,2023-09-21 00:31:21+02:00,-7200,True,False,"['automated-checks.yml', 'potential-duplicates.yml', 'pypi-release.yml', 'README.md']",['30219c871419a341b5dda3b1d2bbad8f074e860c'],6,43,49,4,,,
+5f9c16f2b49d76fa95879ab5483b26996576f7da,[CHANGE] Ensure the task only runs one instance at a time,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-21 11:55:43+02:00,-7200,2023-09-21 11:55:43+02:00,-7200,True,False,"['CHANGELOG.md', 'tasks.py']",['d9927739be01e3f693e215c10073d53fc057bba1'],10,23,33,2,0.75,1.0,1.0
+89c64f05787c5e61a9d579174ff09d5a732c9268,"Translated using Weblate (Spanish)
+
+Currently translated at 84.3% (27 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-22 16:21:12+00:00,0,2023-09-22 16:21:12+00:00,0,True,False,['django.po'],['5f9c16f2b49d76fa95879ab5483b26996576f7da'],8,8,16,1,,,
+ec2f71c131fb372f7a15288ff9fbf0cb66c657c5,"Translated using Weblate (Korean)
+
+Currently translated at 84.3% (27 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-22 16:21:12+00:00,0,2023-09-22 16:21:12+00:00,0,True,False,['django.po'],['89c64f05787c5e61a9d579174ff09d5a732c9268'],7,6,13,1,,,
+bbaad00843ae8e5fd2df1e8e8e7b83724d069014,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (32 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/
+
+Translated using Weblate (Russian)
+
+Currently translated at 84.3% (27 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-22 16:21:13+00:00,0,2023-09-22 16:21:13+00:00,0,True,False,['django.po'],['ec2f71c131fb372f7a15288ff9fbf0cb66c657c5'],23,12,35,1,,,
+6b74f482e6fde8f0a32c1da823d56c64c06dc712,"Translated using Weblate (Ukrainian)
+
+Currently translated at 31.2% (10 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-22 16:21:13+00:00,0,2023-09-22 16:21:13+00:00,0,True,False,['django.po'],['bbaad00843ae8e5fd2df1e8e8e7b83724d069014'],8,8,16,1,,,
+de4fa775e25961aad0407516c560c1a35ada73a7,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-22 16:21:13+00:00,0,2023-09-22 16:21:13+00:00,0,True,False,"['django.mo', 'django.mo', 'django.mo', 'django.mo']",['6b74f482e6fde8f0a32c1da823d56c64c06dc712'],0,0,0,4,,,
+645ac3f78695ab5d15e865d6bfd6d3c74b26411a,[FIX] Capitalization for translatable strings,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-23 00:55:43+02:00,-7200,2023-09-23 00:55:43+02:00,-7200,True,False,"['CHANGELOG.md', 'Makefile', 'auth_hooks.py', '0009_alter_campaign_options_and_more.py', 'models.py', 'dashboard.html', 'table.html']",['191f14748b65e74e3185a4c628bdb65afd2a8bd7'],15,57,72,7,,,
+c3e7636079f4654aeff553bd5c4aaab6ab0d973e,[MISC] Translation files updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-23 00:56:35+02:00,-7200,2023-09-23 00:56:35+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['645ac3f78695ab5d15e865d6bfd6d3c74b26411a'],131,209,340,10,,,
+a58c16523dda2d8e43dfb5e6c7afa952b02e1509,"Translated using Weblate (German)
+
+Currently translated at 100.0% (32 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-23 00:06:20+00:00,0,2023-09-23 00:06:20+00:00,0,True,False,['django.po'],['c3e7636079f4654aeff553bd5c4aaab6ab0d973e'],25,3,28,1,,,
+68dfff7ba3d7c9fe55ea373015da2c7019755aef,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-23 00:06:21+00:00,0,2023-09-23 00:06:21+00:00,0,True,False,['django.mo'],['a58c16523dda2d8e43dfb5e6c7afa952b02e1509'],0,0,0,1,,,
+5f4f118f944bf9dd7ce7b11d9f8d4fcabad15e90,[REMOVE] Wrong option from Makefile,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-23 09:58:51+02:00,-7200,2023-09-23 09:58:51+02:00,-7200,True,False,['Makefile'],['8821e1ec241484a3207062299b0bc7d79cdfa987'],1,0,1,1,,,
+eafe239d09a5e1c110a719356963524dccf5878d,"Translated using Weblate (German)
+
+Currently translated at 100.0% (32 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/de/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:12:27+00:00,0,2023-09-24 13:12:27+00:00,0,True,False,['django.po'],['5f4f118f944bf9dd7ce7b11d9f8d4fcabad15e90'],1,1,2,1,,,
+678dddbc52e1156d6dd03c8fda5080e97f1d8167,"Translated using Weblate (Spanish)
+
+Currently translated at 62.5% (20 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/es/
+
+Translated using Weblate (Spanish)
+
+Currently translated at 62.5% (20 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/es/
+
+Translated using Weblate (Spanish)
+
+Currently translated at 62.5% (20 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/es/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:12:27+00:00,0,2023-09-24 13:12:27+00:00,0,True,False,['django.po'],['eafe239d09a5e1c110a719356963524dccf5878d'],3,3,6,1,,,
+03d2098f7b8bdeed17c36011e9676242012507b0,"Translated using Weblate (French)
+
+Currently translated at 0.0% (0 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/fr/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:12:27+00:00,0,2023-09-24 13:12:27+00:00,0,True,False,['django.po'],['678dddbc52e1156d6dd03c8fda5080e97f1d8167'],5,7,12,1,,,
+4deba9b76fbc967564beeada00284d2e439fa8cd,"Translated using Weblate (Italian)
+
+Currently translated at 0.0% (0 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/it/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:12:27+00:00,0,2023-09-24 13:12:27+00:00,0,True,False,['django.po'],['03d2098f7b8bdeed17c36011e9676242012507b0'],5,7,12,1,,,
+48b5ecfb1ccad11f99b1100ab3cf1b8ed38d60f5,"Translated using Weblate (Japanese)
+
+Currently translated at 6.2% (2 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ja/
+
+Translated using Weblate (Japanese)
+
+Currently translated at 6.2% (2 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ja/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:12:28+00:00,0,2023-09-24 13:12:28+00:00,0,True,False,['django.po'],['4deba9b76fbc967564beeada00284d2e439fa8cd'],4,4,8,1,,,
+21027b841baab22acc393e31dd1f49701fa2cc61,"Translated using Weblate (Korean)
+
+Currently translated at 62.5% (20 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ko/
+
+Translated using Weblate (Korean)
+
+Currently translated at 62.5% (20 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ko/
+
+Translated using Weblate (Korean)
+
+Currently translated at 62.5% (20 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ko/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:12:28+00:00,0,2023-09-24 13:12:28+00:00,0,True,False,['django.po'],['48b5ecfb1ccad11f99b1100ab3cf1b8ed38d60f5'],6,6,12,1,,,
+6440237070a95bc523aee9488e9eb5c9a8becbf5,"Translated using Weblate (Russian)
+
+Currently translated at 65.6% (21 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/
+
+Translated using Weblate (Russian)
+
+Currently translated at 65.6% (21 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/
+
+Translated using Weblate (Russian)
+
+Currently translated at 65.6% (21 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:12:28+00:00,0,2023-09-24 13:12:28+00:00,0,True,False,['django.po'],['21027b841baab22acc393e31dd1f49701fa2cc61'],4,4,8,1,,,
+2f7f6cd772c92979033fd21320c80e2752f55306,"Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 6.2% (2 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/zh_Hans/
+
+Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 6.2% (2 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/zh_Hans/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:12:28+00:00,0,2023-09-24 13:12:28+00:00,0,True,False,['django.po'],['6440237070a95bc523aee9488e9eb5c9a8becbf5'],2,2,4,1,,,
+5dea87bd179126ab65d81c384accf18592d7c270,"Translated using Weblate (Ukrainian)
+
+Currently translated at 25.0% (8 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/uk/
+
+Translated using Weblate (Ukrainian)
+
+Currently translated at 25.0% (8 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/uk/
+
+Translated using Weblate (Ukrainian)
+
+Currently translated at 25.0% (8 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/uk/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:12:28+00:00,0,2023-09-24 13:12:28+00:00,0,True,False,['django.po'],['2f7f6cd772c92979033fd21320c80e2752f55306'],3,3,6,1,,,
+214e220c9810304314582b1a4f0ed6be15ea8ca7,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-09-24 13:12:28+00:00,0,2023-09-24 13:12:28+00:00,0,True,False,"['django.mo', 'django.mo', 'django.mo', 'django.mo', 'django.mo', 'django.mo', 'django.mo', 'django.mo']",['5dea87bd179126ab65d81c384accf18592d7c270'],0,0,0,8,,,
+abf3f3ca3bdc81e0d35a7454ce64b82f08eccb1a,[MISC] Forcing Weblate to sync both ways,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-24 16:23:27+02:00,-7200,2023-09-24 16:23:27+02:00,-7200,True,False,"['django.po', 'django.pot', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po', 'django.po']",['8dd2b61be6d332705878e263f0a5061c27aafbb0'],28,28,56,10,,,
+5ece6c6cbea0ecc7e368a05ce3dd8c716c9475fc,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.49.0 → v8.50.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.49.0...v8.50.0)
+- [github.com/adamchainz/django-upgrade: 1.14.1 → 1.15.0](https://github.com/adamchainz/django-upgrade/compare/1.14.1...1.15.0)
+- [github.com/asottile/pyupgrade: v3.11.0 → v3.13.0](https://github.com/asottile/pyupgrade/compare/v3.11.0...v3.13.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-25 20:27:02+00:00,0,2023-09-25 20:27:02+00:00,0,True,False,['.pre-commit-config.yaml'],['abf3f3ca3bdc81e0d35a7454ce64b82f08eccb1a'],3,3,6,1,,,
+96d837b6ab297a4798aca25bc21ce9142cd4e094,[CHANGE] Switched from development to master,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 16:34:52+02:00,-7200,2023-09-26 16:34:52+02:00,-7200,True,False,"['dependabot.yml', '.pre-commit-config.yaml', 'CONTRIBUTING.md']",['24793f5ad80a7be0fd065d765455606f437e6aa4'],12,76,88,3,,,
+70490f8e6e3faea8740ffd42d84bf59c2e66b155,[CHANGE] Test suite updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 16:36:22+02:00,-7200,2023-09-26 16:36:22+02:00,-7200,True,False,"['automated-checks.yml', 'pypi-release.yml', 'CHANGELOG.md', 'pyproject.toml', 'base.py', 'local.py', 'tox.ini']",['96d837b6ab297a4798aca25bc21ce9142cd4e094'],99,175,274,7,,,
+a1f5e97ebfa6bb3ef80c956f78dccd39508cdf9d,[CHANGE] Version bumped to v1.12.3,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 16:37:00+02:00,-7200,2023-09-26 16:37:00+02:00,-7200,True,False,"['CHANGELOG.md', 'pyproject.toml']",['70490f8e6e3faea8740ffd42d84bf59c2e66b155'],1,3,4,2,,,
+085e9df63758793490c77b6c6172e68c875144f7,[MISC] Changelog updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-26 16:38:09+02:00,-7200,2023-09-26 16:38:09+02:00,-7200,True,False,['CHANGELOG.md'],['a1f5e97ebfa6bb3ef80c956f78dccd39508cdf9d'],0,1,1,1,,,
+19cf7730830bd49819a1b0dc581fb60c02fcd73e,[MISC] tox tests updated and simplified,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-09-28 18:47:53+02:00,-7200,2023-09-28 18:47:53+02:00,-7200,True,False,"['automated-checks.yml', 'Makefile', 'pyproject.toml', 'tox.ini']",['3e24a7c5a277c6d84add911c553c9759849c5c59'],24,24,48,4,,,
+e867c02eb98307af185bb0b6faf5576f38238a1f,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/tox-dev/pyproject-fmt: 1.1.0 → 1.2.0](https://github.com/tox-dev/pyproject-fmt/compare/1.1.0...1.2.0)
+- [github.com/pylint-dev/pylint: v3.0.0a7 → v3.0.0](https://github.com/pylint-dev/pylint/compare/v3.0.0a7...v3.0.0)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,Peter Pfeufer,info@ppfeufer.de,2023-10-02 20:22:02+00:00,0,2023-10-03 13:47:36+02:00,-7200,True,False,['.pre-commit-config.yaml'],['23c3dcf53392a512d0a7891d9de8790d43daa456'],2,2,4,1,,,
+fc52696b730188f2d704c24def9f87fa7e0c9492,[MISC] Dependencies in pre-commit config updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-10-03 13:48:24+02:00,-7200,2023-10-03 13:48:24+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'Makefile', 'tox.ini']",['e867c02eb98307af185bb0b6faf5576f38238a1f'],17,19,36,3,,,
+4bd727e0669d8d50b39ac7344d0f74e770a614fa,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/pre-commit-hooks: v4.4.0 → v4.5.0](https://github.com/pre-commit/pre-commit-hooks/compare/v4.4.0...v4.5.0)
+- [github.com/pre-commit/mirrors-eslint: v8.50.0 → v8.51.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.50.0...v8.51.0)
+- [github.com/editorconfig-checker/editorconfig-checker.python: 2.7.2 → 2.7.3](https://github.com/editorconfig-checker/editorconfig-checker.python/compare/2.7.2...2.7.3)
+- [github.com/asottile/pyupgrade: v3.13.0 → v3.15.0](https://github.com/asottile/pyupgrade/compare/v3.13.0...v3.15.0)
+- [github.com/abravalheri/validate-pyproject: v0.14 → v0.15](https://github.com/abravalheri/validate-pyproject/compare/v0.14...v0.15)
+- [github.com/pylint-dev/pylint: v3.0.0 → v3.0.1](https://github.com/pylint-dev/pylint/compare/v3.0.0...v3.0.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-16 17:24:21+00:00,0,2023-10-16 17:24:21+00:00,0,True,False,['.pre-commit-config.yaml'],['fc52696b730188f2d704c24def9f87fa7e0c9492'],6,6,12,1,,,
+2c2a8973c564ba797c0fb8e42a94e86c13cda142,"Translated using Weblate (Russian)
+
+Currently translated at 100.0% (32 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/ru/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-03 16:43:03+00:00,0,2023-10-16 20:32:42+00:00,0,True,False,['django.po'],['f2382cd3768ea9b23896f0273e8e263e7088eb84'],29,8,37,1,,,
+9a19fe443e69aa1ea3b7ea5d500a0bdb6f8500e3,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2023-10-03 16:43:03+00:00,0,2023-10-16 20:32:42+00:00,0,True,False,['django.mo'],['2c2a8973c564ba797c0fb8e42a94e86c13cda142'],0,0,0,1,,,
+8ee7d9b3ca0db50700bce115f8bd0d69a8383e3c,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.51.0 → v8.53.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.51.0...v8.53.0)
+- [github.com/thibaudcolas/pre-commit-stylelint: v15.10.3 → v15.11.0](https://github.com/thibaudcolas/pre-commit-stylelint/compare/v15.10.3...v15.11.0)
+- [github.com/psf/black: 23.9.1 → 23.11.0](https://github.com/psf/black/compare/23.9.1...23.11.0)
+- [github.com/tox-dev/pyproject-fmt: 1.2.0 → 1.5.1](https://github.com/tox-dev/pyproject-fmt/compare/1.2.0...1.5.1)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-11-13 17:32:04+00:00,0,2023-11-13 17:32:04+00:00,0,True,False,['.pre-commit-config.yaml'],['45dec48a9c1d86e94af062f98e7a3b5c0084031f'],4,4,8,1,,,
+d2e03e4318807172d24f1cd9f12bec2d259a8c97,[MISC] pre-commit dependencies updated,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-11-15 18:18:45+01:00,-3600,2023-11-15 18:18:45+01:00,-3600,True,False,['.pre-commit-config.yaml'],['a49db4fab9e5b4db1fa104956ab62ed49524984a'],3,3,6,1,,,
+5ef4f375ace04106c377cdc9750c878879446d25,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.53.0 → v8.55.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.53.0...v8.55.0)
+- [github.com/tox-dev/pyproject-fmt: 1.5.1 → 1.5.3](https://github.com/tox-dev/pyproject-fmt/compare/1.5.1...1.5.3)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-04 17:24:10+00:00,0,2023-12-04 17:24:10+00:00,0,True,False,['.pre-commit-config.yaml'],['d2e03e4318807172d24f1cd9f12bec2d259a8c97'],2,2,4,1,,,
+23741415b24ed22373db2a2a38e0108201b211c7,"Bump actions/setup-python from 4 to 5
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 5.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v4...v5)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-07 10:32:25+00:00,0,2023-12-07 10:32:25+00:00,0,True,False,"['automated-checks.yml', 'pypi-release.yml']",['1e79258a06843ba04f8506fa2cbd026f71f9cb51'],5,5,10,2,,,
+0dc2e6e061acd5234619b3c0b143446c129b4776,"Bump actions/upload-artifact from 3 to 4
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 3 to 4.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 10:30:58+00:00,0,2023-12-15 10:30:58+00:00,0,True,False,['automated-checks.yml'],['8b34e31661e97c3a70d2c940c594ecdcfdb02ee5'],2,2,4,1,,,
+205e82ac2574bf5407487fbf0bc973f5fc92c1c7,Update automated-checks.yml,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 11:47:32+01:00,-3600,2023-12-15 11:47:32+01:00,-3600,True,False,['automated-checks.yml'],['0dc2e6e061acd5234619b3c0b143446c129b4776'],43,11,54,1,,,
+bd7cc32474311d77e8a4162addb601a621a069b1,Update pypi-release.yml,Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2023-12-15 11:47:46+01:00,-3600,2023-12-15 11:47:46+01:00,-3600,True,False,['pypi-release.yml'],['205e82ac2574bf5407487fbf0bc973f5fc92c1c7'],1,1,2,1,,,
+0e9f76ee6fcc129a2d0f399e33a993348c68e896,"[pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/pre-commit/mirrors-eslint: v8.55.0 → v9.0.0-alpha.0](https://github.com/pre-commit/mirrors-eslint/compare/v8.55.0...v9.0.0-alpha.0)
+- [github.com/thibaudcolas/pre-commit-stylelint: v15.11.0 → v16.1.0](https://github.com/thibaudcolas/pre-commit-stylelint/compare/v15.11.0...v16.1.0)
+- [github.com/PyCQA/isort: 5.12.0 → 5.13.2](https://github.com/PyCQA/isort/compare/5.12.0...5.13.2)
+- [github.com/psf/black: 23.11.0 → 23.12.1](https://github.com/psf/black/compare/23.11.0...23.12.1)
+- [github.com/pylint-dev/pylint: v3.0.1 → v3.0.3](https://github.com/pylint-dev/pylint/compare/v3.0.1...v3.0.3)",pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,GitHub,noreply@github.com,2024-01-01 17:22:14+00:00,0,2024-01-01 17:22:14+00:00,0,True,False,['.pre-commit-config.yaml'],['3cf82e2b009b7af6973088e689bc765306e73f8f'],5,5,10,1,,,
+7f7ce4b1a29432a070706cc42372755275bfe1c6,[FIX] Dependencies,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2024-01-01 23:36:59+01:00,-3600,2024-01-01 23:36:59+01:00,-3600,True,False,"['.pre-commit-config.yaml', '.stylelintrc.json']",['0e9f76ee6fcc129a2d0f399e33a993348c68e896'],8,7,15,2,,,
+c445b1e75df3190b7a8522e4f9362b39f238f2ed,"Translated using Weblate (French)
+
+Currently translated at 6.2% (2 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/fr/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-11 21:04:29+00:00,0,2024-01-11 21:04:29+00:00,0,True,False,['django.po'],['5603570061a9580376f9408ef564a3a61d479adb'],8,9,17,1,,,
+234900c857adbe077544fa4ba58457702cdf2fdb,"Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 18.7% (6 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/zh_Hans/
+
+Translated using Weblate (Chinese (Simplified))
+
+Currently translated at 18.7% (6 of 32 strings)
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/zh_Hans/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-11 21:04:29+00:00,0,2024-01-11 21:04:29+00:00,0,True,False,['django.po'],['c445b1e75df3190b7a8522e4f9362b39f238f2ed'],7,9,16,1,,,
+1f0790bc58c18818db5d56b06446e93a9f1f0904,"Update translation files
+
+Updated by ""Squash Git commits"" hook in Weblate.
+
+Translation: Alliance Auth Apps/AA Sov Timer
+Translate-URL: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-sov-timer/",Weblate,weblate@ppfeufer.de,Weblate,weblate@ppfeufer.de,2024-01-11 21:04:29+00:00,0,2024-01-11 21:04:29+00:00,0,True,False,"['django.mo', 'django.mo']",['234900c857adbe077544fa4ba58457702cdf2fdb'],0,0,0,2,,,

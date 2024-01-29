@@ -1,0 +1,67 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+858781a51a91058e7aaa2e936134f2ef226568f2,Initial commit,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 13:34:15-04:00,14400,2015-08-30 13:34:15-04:00,14400,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,83,83,3,,,
+696199f79182a4aa279a45ecb6358be13ca14d69,Update the README with the goal of the project.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 13:41:22-04:00,14400,2015-08-30 13:41:22-04:00,14400,True,False,"['.gitignore', 'README.md']",['858781a51a91058e7aaa2e936134f2ef226568f2'],2,10,12,2,,,
+8f90a6bf2fc782a8e92e551b9cafcda17a2d42e9,Pay homage to HTTPie.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 13:53:46-04:00,14400,2015-08-30 13:53:46-04:00,14400,True,False,['README.md'],['696199f79182a4aa279a45ecb6358be13ca14d69'],0,5,5,1,,,
+97c58a6533dda0aa935428be023b0bcd60038a13,Start a basic server.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 14:52:04-04:00,14400,2015-08-30 14:52:04-04:00,14400,True,False,"['__init__.py', 'server.py', 'requirements-dev.txt']",['8f90a6bf2fc782a8e92e551b9cafcda17a2d42e9'],0,25,25,3,1.0,1.0,1.0
+322413acad736f25fd8018f3b09addbbf8a95471,Include a setup.py for packaging.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 15:39:26-04:00,14400,2015-08-30 15:39:26-04:00,14400,True,False,"['__init__.py', 'server.py', 'setup.py']",['97c58a6533dda0aa935428be023b0bcd60038a13'],0,57,57,3,,,
+f294e86b8af5d81e5c0fa37baa98f9bc4f60d433,Stop using the demo app.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 20:48:34-04:00,14400,2015-08-30 20:48:34-04:00,14400,True,False,"['application.py', 'server.py', 'requirements-dev.txt']",['322413acad736f25fd8018f3b09addbbf8a95471'],3,21,24,3,1.0,1.0,1.0
+1e975a0827ce7945cae50243d266757ffe417b6c,Load plugins from HTTPie.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 20:51:16-04:00,14400,2015-08-30 20:51:16-04:00,14400,True,False,['server.py'],['f294e86b8af5d81e5c0fa37baa98f9bc4f60d433'],2,2,4,1,1.0,1.0,1.0
+231032feb003b2e26e57a7f7e21a65072ba55fe8,Make HTTPie a requirement.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 20:51:51-04:00,14400,2015-08-30 20:51:51-04:00,14400,True,False,"['requirements-dev.txt', 'setup.py']",['1e975a0827ce7945cae50243d266757ffe417b6c'],1,1,2,2,,,
+a45fa33a5fbf5b90d5da3880641ae361b2d6abb4,Use an environment.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 20:53:45-04:00,14400,2015-08-30 20:53:45-04:00,14400,True,False,"['application.py', 'server.py']",['231032feb003b2e26e57a7f7e21a65072ba55fe8'],1,2,3,2,1.0,1.0,1.0
+9ebb3fc6a67fde8611c0cbeab92ec9a003af8d2d,Get HTTPie args. Set the Server header.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 21:15:53-04:00,14400,2015-08-30 21:15:53-04:00,14400,True,False,"['__init__.py', 'application.py', 'server.py', 'setup.py']",['a45fa33a5fbf5b90d5da3880641ae361b2d6abb4'],3,9,12,4,1.0,1.0,1.0
+66521cf720264e1cf87eb2869188ef137334b5bf,"Ponies!!
+
+I got the basics of HTTPony working.",Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 22:24:30-04:00,14400,2015-08-30 22:24:30-04:00,14400,True,False,"['application.py', 'server.py']",['9ebb3fc6a67fde8611c0cbeab92ec9a003af8d2d'],2,17,19,2,1.0,1.0,1.0
+794c430376ab0514915ef0441c7c75023624178c,Show request data.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 22:49:53-04:00,14400,2015-08-30 22:49:53-04:00,14400,True,False,['application.py'],['66521cf720264e1cf87eb2869188ef137334b5bf'],0,8,8,1,0.0,1.0,1.0
+ea875b1cecd154400381969c7c1b165dccd77db8,"Delete CONTENT_LENGTH and CONTENT_TYPE if empty.
+
+For some reason, the WSGI server puts these things in the
+environment even when they were not in the request.
+Their presence messes up the output in those cases.",Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 23:17:46-04:00,14400,2015-08-30 23:17:46-04:00,14400,True,False,['application.py'],['794c430376ab0514915ef0441c7c75023624178c'],0,7,7,1,0.0,1.0,1.0
+ba789e73679d4b5f8b1d17309e7faf9a0bae2606,Update the README with examples.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-30 23:30:00-04:00,14400,2015-08-30 23:30:00-04:00,14400,True,False,"['README.md', 'server.py']",['ea875b1cecd154400381969c7c1b165dccd77db8'],2,32,34,2,,,
+e67a2fd63bd54c5da6339fbb8ea2eba904ab5496,Add Sphinx as a dev tool.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-31 08:53:56-04:00,14400,2015-08-31 08:53:56-04:00,14400,True,False,['requirements-dev.txt'],['ba789e73679d4b5f8b1d17309e7faf9a0bae2606'],0,1,1,1,,,
+7be263dd71e3a706304debd70f079ca1aadc2bf9,Document the project.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-31 09:02:59-04:00,14400,2015-08-31 09:02:59-04:00,14400,True,False,"['Makefile', '.gitkeep', '.gitkeep', 'conf.py', 'index.rst']",['e67a2fd63bd54c5da6339fbb8ea2eba904ab5496'],0,487,487,5,,,
+4d6aae429d9858dfc83cf2a771d5bde6a5fb0c33,Use the RTD theme.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-31 09:08:22-04:00,14400,2015-08-31 09:08:22-04:00,14400,True,False,['conf.py'],['7be263dd71e3a706304debd70f079ca1aadc2bf9'],1,1,2,1,,,
+6b1775be94e0584c3663147e3720bd3584facfff,More documentation updates.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-31 09:20:13-04:00,14400,2015-08-31 09:20:13-04:00,14400,True,False,"['README.md', 'index.rst', 'releases.rst']",['4d6aae429d9858dfc83cf2a771d5bde6a5fb0c33'],0,25,25,3,,,
+3e12febdc0e84af8bf8b4b517bc9715be8dc4c57,Link to the README on GitHub.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-31 09:24:02-04:00,14400,2015-08-31 09:24:02-04:00,14400,True,False,['index.rst'],['6b1775be94e0584c3663147e3720bd3584facfff'],0,2,2,1,,,
+162b55f5ef60008dbc469817a6ae81a89c19dcea,Packaging updates.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-31 11:23:56-04:00,14400,2015-08-31 11:23:56-04:00,14400,True,False,"['AUTHORS', 'MANIFEST.in', 'requirements-dev.txt', 'requirements.txt', 'setup.py']",['3e12febdc0e84af8bf8b4b517bc9715be8dc4c57'],1,18,19,5,,,
+a81da935642e47f6fe263a7bb99a12ee881f5168,Add release info to long description and set the date.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-31 11:27:51-04:00,14400,2015-08-31 11:27:51-04:00,14400,True,False,"['releases.rst', 'setup.py']",['162b55f5ef60008dbc469817a6ae81a89c19dcea'],3,6,9,2,,,
+bac7231cc6fd6713ca8c4f2b901c8afea19e1ee5,Point back to GitHub.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2015-08-31 12:19:12-04:00,14400,2015-08-31 12:19:12-04:00,14400,True,False,['index.rst'],['a81da935642e47f6fe263a7bb99a12ee881f5168'],0,2,2,1,,,
+6b35d6c142b127b20ce4a94fbce8681556a0c6dd,"Fix broken install from HTTPie API changes.
+
+Fixes #10",Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2016-10-20 10:57:38-04:00,14400,2016-10-20 10:57:38-04:00,14400,True,False,"['LICENSE', 'conf.py', 'releases.rst', '__init__.py', 'application.py', 'server.py', 'requirements.txt', 'setup.py']",['bac7231cc6fd6713ca8c4f2b901c8afea19e1ee5'],13,21,34,8,0.0,1.0,1.0
+2ab090602b0cc0d9fda5e86d196a189958ac2b57,fixing for python 3 (#11),Patrick Pierson,patrickpierson@users.noreply.github.com,Matt Layman,matthewlayman@gmail.com,2016-11-03 07:41:31-05:00,18000,2016-11-03 08:41:31-04:00,14400,True,False,['server.py'],['6b35d6c142b127b20ce4a94fbce8681556a0c6dd'],1,1,2,1,,,
+27a80df3d848db99d93abff0025c215b03b5df15,"Initial test setup at python frederick (#12)
+
+* updating copyright
+
+* initial tests",Patrick Pierson,patrickpierson@users.noreply.github.com,Matt Layman,matthewlayman@gmail.com,2016-11-19 11:25:30-05:00,18000,2016-11-19 11:25:30-05:00,18000,True,False,"['AUTHORS', 'LICENSE', 'conf.py', '__init__.py', 'application.py', 'server.py', '__init__.py', 'test_server.py', 'requirements-dev.txt', 'setup.py']",['2ab090602b0cc0d9fda5e86d196a189958ac2b57'],9,25,34,10,1.0,1.0,1.0
+ad80587c614e459000f9bee227b21657d70972ba,add tox (#13),Chris Malone,surefoot@gmail.com,Matt Layman,matthewlayman@gmail.com,2016-11-19 12:01:16-05:00,18000,2016-11-19 12:01:16-05:00,18000,True,False,"['AUTHORS', 'requirements-dev.txt', 'tox.ini']",['27a80df3d848db99d93abff0025c215b03b5df15'],0,12,12,3,,,
+26d57b6b879d64da5e90beab211bf064b466bae8,fixes #7 and should answer all of matts inputs from the previous pr (#16),Patrick Pierson,patrickpierson@users.noreply.github.com,Matt Layman,matthewlayman@gmail.com,2016-11-23 20:17:12-05:00,18000,2016-11-23 20:17:12-05:00,18000,True,False,"['server.py', 'test_server.py']",['ad80587c614e459000f9bee227b21657d70972ba'],4,31,35,2,1.0,1.0,1.0
+bd2628fdfb597b58be7e9b36fc065937757d8138,"Add a Travis config file. (#17)
+
+Fixes #5",Matt Layman,matthewlayman@gmail.com,GitHub,noreply@github.com,2016-11-24 10:24:19-05:00,18000,2016-11-24 10:24:19-05:00,18000,True,False,"['.travis.yml', 'tox.ini']",['26d57b6b879d64da5e90beab211bf064b466bae8'],0,32,32,2,,,
+337332ba21ef96e18a604cd140b38ecc89216781,"Add AppVeyor configuration. (#21)
+
+Fixes #18",Matt Layman,matthewlayman@gmail.com,GitHub,noreply@github.com,2016-11-25 09:09:24-05:00,18000,2016-11-25 09:09:24-05:00,18000,True,False,['appveyor.yml'],['bd2628fdfb597b58be7e9b36fc065937757d8138'],0,10,10,1,,,
+873c672042ce4db5792814d12b55f5303ec357b3,"Add flake8 checking to Travis. (#22)
+
+Fixes #14",Matt Layman,matthewlayman@gmail.com,GitHub,noreply@github.com,2016-11-26 18:32:10-05:00,18000,2016-11-26 18:32:10-05:00,18000,True,False,"['.travis.yml', 'application.py', 'server.py', 'tox.ini']",['337332ba21ef96e18a604cd140b38ecc89216781'],9,22,31,4,0.0,,
+5f7e005d4403a0333377c96080281f834d728b24,"Include metadata needed for building a wheel. (#23)
+
+Fixes #20",Matt Layman,matthewlayman@gmail.com,GitHub,noreply@github.com,2016-11-26 20:12:45-05:00,18000,2016-11-26 20:12:45-05:00,18000,True,False,['setup.cfg'],['873c672042ce4db5792814d12b55f5303ec357b3'],0,5,5,1,,,
+23a80e1b14eb9dcac5957d9c2bf9b3d5431ab1ec,"Use pytest as the test runner. (#24)
+
+* Use pytest as the test runner.
+
+* Only test HTTPony.
+
+This should avoid testing extra stuff that was happening in the macOS
+environment.",Matt Layman,matthewlayman@gmail.com,GitHub,noreply@github.com,2016-11-26 21:19:24-05:00,18000,2016-11-26 21:19:24-05:00,18000,True,False,"['application.py', 'requirements-dev.txt', 'tox.ini']",['5f7e005d4403a0333377c96080281f834d728b24'],2,6,8,3,,,
+169f0df6d0d315a411ec1099473fc7ad4d0efd5c,Add some parser tests. (#26),Matt Layman,matthewlayman@gmail.com,GitHub,noreply@github.com,2016-11-26 22:00:49-05:00,18000,2016-11-26 22:00:49-05:00,18000,True,False,"['server.py', 'test_parser.py']",['23a80e1b14eb9dcac5957d9c2bf9b3d5431ab1ec'],5,49,54,2,1.0,1.0,1.0
+5af404d647a8dac8a043b64ea09882589b3b5247,Update copyright year.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2017-10-06 14:53:10-04:00,14400,2017-10-06 14:53:10-04:00,14400,True,False,"['LICENSE', 'conf.py', '__init__.py', 'application.py', 'server.py', '__init__.py', 'test_parser.py', 'setup.py']",['169f0df6d0d315a411ec1099473fc7ad4d0efd5c'],8,8,16,8,,,
+7deb95c893d50f59c6c3fc0efd3350f014512649,Format with Black and update copyright year.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2019-05-07 16:24:49-04:00,14400,2019-05-07 16:24:49-04:00,14400,True,False,"['.gitignore', 'LICENSE', 'conf.py', '__init__.py', 'application.py', 'server.py', '__init__.py', 'test_parser.py', 'test_server.py', 'setup.py']",['5af404d647a8dac8a043b64ea09882589b3b5247'],148,138,286,10,1.0,1.0,1.0
+0ce2c529f1c4fc742fd5a00a0fe1588d98ae3f45,Update the Travis support matrix.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2019-05-07 16:44:20-04:00,14400,2019-05-07 16:44:20-04:00,14400,True,False,"['.travis.yml', 'releases.rst', 'setup.py', 'tox.ini']",['7deb95c893d50f59c6c3fc0efd3350f014512649'],13,27,40,4,,,
+889ee2476afce7514c6211b268bfaf2e75eeba87,Use Black line lengths.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2019-05-07 16:49:28-04:00,14400,2019-05-07 16:49:28-04:00,14400,True,False,['setup.cfg'],['0ce2c529f1c4fc742fd5a00a0fe1588d98ae3f45'],0,3,3,1,,,
+e553008c779d958086be94abc4dd6696d7de66f1,Remove old requirements.txt.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2019-05-07 17:02:48-04:00,14400,2019-05-07 17:02:48-04:00,14400,True,False,['requirements.txt'],['889ee2476afce7514c6211b268bfaf2e75eeba87'],4,0,4,1,,,
+ee64cf1607235f50f72dda834c2b26b7b4c8bdcd,Remove reference to requirements.txt.,Matt Layman,matthewlayman@gmail.com,Matt Layman,matthewlayman@gmail.com,2019-05-07 17:04:15-04:00,14400,2019-05-07 17:04:15-04:00,14400,True,False,['MANIFEST.in'],['e553008c779d958086be94abc4dd6696d7de66f1'],1,0,1,1,,,

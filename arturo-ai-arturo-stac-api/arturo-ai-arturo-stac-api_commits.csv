@@ -1,0 +1,2742 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+220bae5f3a98c541f2723787368d8f47e3a1efed,first-commit,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2020-06-16 23:14:05-05:00,18000,2020-06-16 23:14:05-05:00,18000,True,False,[],[],0,0,0,0,,,
+933e93992d9d0dbef32057b15aa4dd8127e49b07,"first pr (#1)
+
+first-pr",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-06-23 12:37:09-05:00,18000,2020-06-23 12:37:09-05:00,18000,True,False,"['cicd.yaml', '.gitignore', '.pre-commit-config.yaml', 'Dockerfile', 'LICENSE', 'Makefile', 'Pipfile', 'Pipfile.lock', 'README.md', 'VERSION', 'alembic.ini', 'README', 'env.py', 'script.py.mako', '131aab4d9e49_create_tables.py', 'docker-compose.yml', 'pytest.ini', 'ingest_joplin.py', '__init__.py', 'app.py', '__init__.py', 'base_crud.py', 'collection_crud.py', 'item_crud.py', 'tokens.py', 'errors.py', '__init__.py', 'database.py', 'decompose.py', 'links.py', 'schemas.py', '__init__.py', 'collection.py', 'conformance.py', 'item.py', 'mgmt.py', 'settings.py', '__init__.py', 'dependencies.py', '__init__.py', '__init__.py', 'test_crud.py', 'conftest.py', 'test_collection.json', 'test_item.json', '__init__.py', 'test_collection.py', 'test_conformance.py', 'test_item.py', 'test_mgmt.py']",['220bae5f3a98c541f2723787368d8f47e3a1efed'],0,4705,4705,50,0.4743263853584138,0.8190137264870361,0.9211997966446365
+03369c5c351b46284a0b49163245f149f6f77d03,"store db reader/writer dependencies in starlette app.state (#3)
+
+* store db reader/writer dependencies in starlette app.state
+
+* remove useless if
+
+* shutdown reader on app shutdown, remove reader/writer deps
+
+* Revert ""shutdown reader on app shutdown, remove reader/writer deps""
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2020-08-11 20:57:00-04:00,14400,2020-08-11 19:57:00-05:00,18000,True,False,"['app.py', 'dependencies.py']",['933e93992d9d0dbef32057b15aa4dd8127e49b07'],29,13,42,2,0.0,0.0,0.0
+3db36fcb18ca6fdca22b4cd4a75ffacbb07e5bba,"update stac-pydantic version (#5)
+
+* update stac-pydantic version
+
+* version gate uvicorn",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-08-11 20:14:33-05:00,18000,2020-08-11 20:14:33-05:00,18000,True,False,"['Pipfile', 'Pipfile.lock']",['03369c5c351b46284a0b49163245f149f6f77d03'],172,176,348,2,,,
+74532b21da73135cb24012656fa3a53ce0132479,remove cloudfront ttl param (#7),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-08-15 19:41:40-05:00,18000,2020-08-15 19:41:40-05:00,18000,True,False,['item.py'],['3db36fcb18ca6fdca22b4cd4a75ffacbb07e5bba'],3,1,4,1,1.0,1.0,0.0
+e5c3d17689f34cdfacfc0ad7e082b98c653c837c,"add stac extensions (#8)
+
+* add stac extensions
+
+* make nullable",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-08-15 19:58:23-05:00,18000,2020-08-15 19:58:23-05:00,18000,True,False,"['131aab4d9e49_create_tables.py', 'settings.py']",['74532b21da73135cb24012656fa3a53ce0132479'],5,7,12,2,0.0,1.0,1.0
+a151aed6bcde1fa6f6ffc4f9006f2f0a8f057aae,commit writer first (#9),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-08-15 20:38:57-05:00,18000,2020-08-15 20:38:57-05:00,18000,True,False,['base_crud.py'],['e5c3d17689f34cdfacfc0ad7e082b98c653c837c'],2,2,4,1,,,
+e5e746c4c8eb74dbff00e1f4c650a000ccc5b478,use fastapi exception handlers (#10),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-08-15 21:04:30-05:00,18000,2020-08-15 21:04:30-05:00,18000,True,False,"['app.py', 'base_crud.py', 'collection_crud.py', 'item_crud.py', 'errors.py', 'collection.py', 'item.py', 'test_collection.py', 'test_item.py']",['a151aed6bcde1fa6f6ffc4f9006f2f0a8f057aae'],175,89,264,9,1.0,0.584070796460177,0.09734513274336283
+cffebbaa99801e4ba88d19c626ffb1a4d0ac8963,use pydantic for settings (#11),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-08-15 21:47:26-05:00,18000,2020-08-15 21:47:26-05:00,18000,True,False,"['app.py', 'database.py', 'decompose.py', 'schemas.py', 'settings.py', 'conftest.py']",['e5e746c4c8eb74dbff00e1f4c650a000ccc5b478'],50,52,102,6,1.0,1.0,1.0
+698be3051a5c7c98f385ba736e1091a0030ebb1a,"refactor (#15)
+
+* create stac-sprint dev branch
+
+* improve local development (#12)
+
+* use postgis official image, update migration command
+
+* remove comment
+
+* update dockerfile
+
+* improve makefile
+
+* update readme
+
+* add pre-commit, make pre-commit happy
+
+* update pipfile
+
+* add settings injection (#13)
+
+* add settings injection
+
+* update cicd
+
+* decouple transactions and core endpoints (#14)
+
+* define base clients, add transaction client (#16)
+
+* define base clients, add transaction client
+
+* use absolute imports
+
+* cleanup
+
+* add transactions router factory (#17)
+
+* add transactions router factory
+
+* add create_app method
+
+* add collection router factory (#19)
+
+* improve postgres clients
+
+* rename api models
+
+* add collection router factory
+
+* add item collection route
+
+* add item router factory (#20)
+
+* standardize input (#21)
+
+* whoops
+
+* remove apiresponse
+
+* add empty request
+
+* update endpoint
+
+* fix some things
+
+* configure api extensions (#22)
+
+* create request body models
+
+* add stac api extensions to api settings
+
+* helper method to check if api extension is enabled
+
+* parametrize transaction extension
+
+* parametrize query extension
+
+* parametrize context extension
+
+* parametrize field extension
+
+* set model base
+
+* simplify app creation (#23)
+
+* add tiles add on, consolidate core endpoints (#24)
+
+* template simple tiles router
+
+* update dockerfile
+
+* update pipfile
+
+* add more tiles links
+
+* finish tiles client
+
+* create stac router
+
+* request kwargs (#25)
+
+* pass through request
+
+* rearrange
+
+* remove dependency
+
+* remove references to dependency
+
+* fix everything
+
+* unify core spec (#26)
+
+* unify core spec
+
+* update tests
+
+* cleanup
+
+* update docstrings
+
+* add get search to router factory (#27)
+
+* update titiler version, update openapi
+
+* fix item uri
+
+* updates (#28)
+
+* update dependencies
+
+* updates
+
+* update dockerfile
+
+* add tiles link
+
+* add wmts link, add link titles
+
+* add api module (#29)
+
+* update tests, fix bugs (#30)
+
+* don't mutate orm objects
+
+* oops
+
+* update tests
+
+* remove echo
+
+* add api test cases
+
+* add api test cases
+
+* fix test
+
+* update conformance (#31)
+
+* add conformance routes to factory
+
+* remove comment
+
+* update test
+
+* move liveliness probe (#32)
+
+* enable sql echo
+
+* optimize sql (#33)
+
+* faster count
+
+* remove a select
+
+* optimize fetching collection children
+
+* remove id from default sort
+
+* use a join
+
+* fix paging
+
+* raise notfounderror
+
+* update test
+
+* dont raise
+
+* update titiler (#34)
+
+* update branch rules",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-08-31 21:47:03-05:00,18000,2020-08-31 21:47:03-05:00,18000,True,False,"['.pre-commit-config.yaml', 'Dockerfile', 'Makefile', 'Pipfile', 'Pipfile.lock', 'README.md', 'env.py', '131aab4d9e49_create_tables.py', 'docker-compose.yml', 'ingest_joplin.py', '__init__.py', 'app.py', 'models.py', 'routers.py', 'routes.py', 'app.py', '__init__.py', 'base.py', 'base_crud.py', 'collection_crud.py', 'item_crud.py', '__init__.py', 'base.py', 'core.py', 'tokens.py', 'transactions.py', '__init__.py', 'ogc.py', 'config.py', 'errors.py', 'database.py', 'decompose.py', 'links.py', 'ogc.py', 'schemas.py', 'openapi.py', 'collection.py', 'conformance.py', 'item.py', 'mgmt.py', 'settings.py', 'dependencies.py', '__init__.py', 'test_api.py', 'test_crud.py', 'test_postgres.py', 'conftest.py', 'test_collection.py', 'test_conformance.py', 'test_item.py']",['cffebbaa99801e4ba88d19c626ffb1a4d0ac8963'],1708,2594,4302,50,0.2260061919504644,0.8606811145510835,0.0
+3dbc328a62f4f0fb46d6d5c87ac530bced2d2939,"update titiler (#35)
+
+* update titiler
+
+* add gunicorn
+
+* add .env.example",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-02 17:57:19-05:00,18000,2020-09-02 17:57:19-05:00,18000,True,False,"['.env.example', 'Dockerfile', 'Makefile', 'Pipfile', 'Pipfile.lock', 'app.py', 'routers.py', 'links.py']",['698be3051a5c7c98f385ba736e1091a0030ebb1a'],44,66,110,8,1.0,1.0,1.0
+17e45ae644078674c554eefe81132f0234d88fad,"1.0.0-beta.2 (#38)
+
+* bump stac-pydantic
+
+* update index, ingest script
+
+* update test data
+
+* update pipfile
+
+* update pipfile
+
+* oops
+
+* update pipfile
+
+* eo:gsd -> gsd",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-09 20:13:58-05:00,18000,2020-09-09 20:13:58-05:00,18000,True,False,"['Pipfile', 'Pipfile.lock', 'ingest_joplin.py', 'database.py', 'test_collection.json', 'test_item.json', 'test_item.py']",['3dbc328a62f4f0fb46d6d5c87ac530bced2d2939'],103,111,214,7,1.0,1.0,1.0
+dff00d162b193b4c08a6bceadf5548e743cddf7c,update lock (#41),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-09 20:48:14-05:00,18000,2020-09-09 20:48:14-05:00,18000,True,False,['Pipfile.lock'],['17e45ae644078674c554eefe81132f0234d88fad'],1,1,2,1,,,
+bdcdf420f391e7baacede00c413b41a000093fb0,"add stac_extensions to orm (#42)
+
+* add stac_extensions to orm models
+
+* update collection getterdict
+
+* update item getterdict
+
+* update test data",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-09 21:31:21-05:00,18000,2020-09-09 21:31:21-05:00,18000,True,False,"['database.py', 'decompose.py', 'test_collection.json', 'test_item.json']",['dff00d162b193b4c08a6bceadf5548e743cddf7c'],1,8,9,4,0.0,1.0,1.0
+e84fa19bd8d56bec0a831d7c20c78779c11bed37,"add collection summaries (#43)
+
+* update collection orm model
+
+* update migration
+
+* update test data
+
+* update collection getterdict",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-09 22:07:24-05:00,18000,2020-09-09 22:07:24-05:00,18000,True,False,"['131aab4d9e49_create_tables.py', 'database.py', 'decompose.py', 'test_collection.json', 'test_item.json']",['bdcdf420f391e7baacede00c413b41a000093fb0'],257,428,685,5,0.0,1.0,1.0
+463983f685a143bcec76a0f3d79b122382a4669f,"store item stac version in db (#44)
+
+* store item stac version in db
+
+* fix migration
+
+* update config
+
+* oops",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-10 19:24:12-05:00,18000,2020-09-10 19:24:12-05:00,18000,True,False,"['131aab4d9e49_create_tables.py', 'config.py', 'database.py', 'decompose.py']",['e84fa19bd8d56bec0a831d7c20c78779c11bed37'],2,5,7,4,0.0,1.0,1.0
+83b42304e1c886f93567878752429cca8c615da4,"fix get pagination (#45)
+
+* fix get pagination
+
+* updates",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-11 22:10:20-05:00,18000,2020-09-11 22:10:20-05:00,18000,True,False,['core.py'],['463983f685a143bcec76a0f3d79b122382a4669f'],2,19,21,1,0.0,0.0,0.0
+b657ca3e5080baa0374e8dc1289435a38662b803,"allow exclusion of required stac fields (#46)
+
+* allow exclusion of required stac fields
+
+* fix bbox creation
+
+* update success case
+
+* update openapi",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-11 23:13:32-05:00,18000,2020-09-11 23:13:32-05:00,18000,True,False,"['app.py', 'routers.py', 'base.py', 'core.py', 'schemas.py', 'openapi.py', 'test_item.py']",['83b42304e1c886f93567878752429cca8c615da4'],47,48,95,7,1.0,1.0,1.0
+fce40e5dcb1d833674cf883468c0f918c21f0d30,bugfix (#47),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-23 18:22:36-05:00,18000,2020-09-23 18:22:36-05:00,18000,True,False,['core.py'],['b657ca3e5080baa0374e8dc1289435a38662b803'],1,1,2,1,,,
+e32d0fc9c412aecc5fb335f70e77971f7816d1d9,"improve query validation (#49)
+
+* better query validation
+
+* bugfix
+
+* add test",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-24 15:17:22-05:00,18000,2020-09-24 15:17:22-05:00,18000,True,False,"['schemas.py', 'test_item.py']",['fce40e5dcb1d833674cf883468c0f918c21f0d30'],2,27,29,2,0.2,0.1,1.0
+fb47dedfbc45df4488f7fa169b76ca1b30a420f1,"release-1.0.0 (#51)
+
+* add setup.py
+
+* major version
+
+* add changelog
+
+* resolve mismatches
+
+* update readme
+
+* update readme
+
+* update readme
+
+* update setup.py",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-09-25 18:57:25-05:00,18000,2020-09-25 18:57:25-05:00,18000,True,False,"['.gitignore', 'CHANGELOG.txt', 'Dockerfile', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py']",['e32d0fc9c412aecc5fb335f70e77971f7816d1d9'],289,217,506,7,,,
+8e203122004f5e86160fe0580866c0372a436257,"rework api configuration (#54)
+
+* add base api extension
+
+* add transaction extension
+
+* add stacapi dataclass, register extensions
+
+* register core
+
+* add tiles extension
+
+* add context extension
+
+* add fields extension
+
+* add query extension
+
+* add sort extension
+
+* finish integrating extensions with core client
+
+* make optional
+
+* set default
+
+* add liveliness probe
+
+* inject settings
+
+* remove some settings
+
+* fix some things
+
+* start to remove dead code
+
+* fix more things
+
+* update api test cases
+
+* fix type hint, update tests",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-10-31 12:04:51-05:00,18000,2020-10-31 12:04:51-05:00,18000,True,False,"['__init__.py', 'app.py', '__init__.py', 'context.py', 'extension.py', 'fields.py', 'query.py', 'sort.py', 'tiles.py', 'transaction.py', 'models.py', 'routers.py', 'app.py', 'base.py', 'base.py', 'core.py', 'config.py', 'links.py', 'test_api.py', 'conftest.py']",['fb47dedfbc45df4488f7fa169b76ca1b30a420f1'],461,530,991,20,1.0,0.7843137254901961,0.0
+391793d993383e1bfff385e22fab3fd841eed3a6,add router middleware deco (#52),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-10-31 12:28:40-05:00,18000,2020-10-31 12:28:40-05:00,18000,True,False,['middleware.py'],['8e203122004f5e86160fe0580866c0372a436257'],0,34,34,1,1.0,1.0,1.0
+457cf8250b78c1e6e6fd519589b99ccee04eff43,"add db connection, tiles endpoint (#55)
+
+* setup database connection
+
+* update tiles, add tags
+
+* remove cloudfront stuff",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-10-31 13:23:27-05:00,18000,2020-10-31 13:23:27-05:00,18000,True,False,"['app.py', 'tiles.py', 'transaction.py']",['391793d993383e1bfff385e22fab3fd841eed3a6'],2,64,66,3,0.5777777777777777,1.0,1.0
+ce1161c31364f8accea59a7a36f40eca2d59d2a1,"update TiTiler version (#61)
+
+* update TiTiler version
+
+* remove unused module",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2020-11-22 16:57:44-05:00,18000,2020-11-22 15:57:44-06:00,21600,True,False,"['setup.py', 'tiles.py']",['457cf8250b78c1e6e6fd519589b99ccee04eff43'],11,4,15,2,1.0,0.0,0.0
+016b12146f1d6a7db14909ed141d0846580345ea,relock (#62),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2020-11-22 17:55:17-06:00,21600,2020-11-22 17:55:17-06:00,21600,True,False,"['Pipfile.lock', 'setup.py']",['ce1161c31364f8accea59a7a36f40eca2d59d2a1'],204,289,493,2,,,
+e93c9b1ac24b3906563e8424bb892f992f20ac4b,add bulk transactions client (#59),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-01-11 19:29:06-06:00,21600,2021-01-11 19:29:06-06:00,21600,True,False,"['base.py', 'transactions.py', 'test_postgres.py', 'conftest.py']",['016b12146f1d6a7db14909ed141d0846580345ea'],15,137,152,4,0.5428571428571428,1.0,0.5428571428571428
+5a8d953f8038bd43fd40c8e9aeb9ef8c844663f4,"switch to attrs (#73)
+
+* switch to attrs
+
+* use attrs in api, models",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-01-20 20:20:01-06:00,21600,2021-01-20 20:20:01-06:00,21600,True,False,"['Pipfile.lock', 'setup.py', 'app.py', 'context.py', 'extension.py', 'fields.py', 'query.py', 'sort.py', 'tiles.py', 'transaction.py', 'models.py', 'base.py', 'base.py', 'core.py', 'tokens.py', 'transactions.py', 'ogc.py', 'links.py']",['e93c9b1ac24b3906563e8424bb892f992f20ac4b'],435,502,937,18,,,
+383824216de5993fe1eafe448acb41fe4bdcbf8d,"decouple database connection from api layer (#74)
+
+* create Session object wrapping fastapi_utils
+
+* add Session to core, try it out with /collections endpoint
+
+* init session on app creation
+
+* push Session lower
+
+* remove db middlewares and event hooks
+
+* relock
+
+* finish updating core
+
+* update pagination client
+
+* remove PostgresClient from core
+
+* remove PostgresClient from pagination, switch to mixin
+
+* add lookup_id staticmethod
+
+* make private method
+
+* refactor transactions
+
+* client tests working
+
+* resource tests working
+
+* lock pygeos to 0.8
+
+* oops
+
+* do exception handling in one place
+
+* remove old code
+
+* switch back to pygeos 0.9
+
+* update except",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-01-26 17:18:48-06:00,21600,2021-01-26 17:18:48-06:00,21600,True,False,"['Dockerfile', 'Pipfile.lock', 'setup.py', 'app.py', 'app.py', 'base.py', 'core.py', 'session.py', 'tokens.py', 'transactions.py', '__init__.py', 'dependencies.py', 'conftest.py', 'test_collection.py', 'test_item.py']",['5a8d953f8038bd43fd40c8e9aeb9ef8c844663f4'],601,510,1111,15,0.4948453608247423,0.14432989690721648,0.0
+84598a8ad7dc945e48f7833267bc26818a80d592,"fix precommit (#75)
+
+* add tox, update pre-commit config, lint
+
+* add precommit check
+
+* fix syntax
+
+* remove python-version
+
+* switch pre-commit to 3.8",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-01-26 18:15:41-06:00,21600,2021-01-26 18:15:41-06:00,21600,True,False,"['cicd.yaml', '.pre-commit-config.yaml', 'env.py', '131aab4d9e49_create_tables.py', '__init__.py', '__init__.py', '__init__.py', 'routes.py', 'core.py', 'session.py', '__init__.py', 'database.py', 'decompose.py', 'schemas.py', 'tox.ini']",['383824216de5993fe1eafe448acb41fe4bdcbf8d'],36,76,112,15,1.0,1.0,1.0
+d561b318b0794b6e101727aa893f250b31275ce2,"release-1.1.0 (#76)
+
+* update version, changelog
+
+* bring back VERSION file
+
+* update image tag
+
+* try another tag
+
+* switch to postgis image
+
+* revert db changes, remove pipenv cache
+
+* remove pipenv cache, it was the problem",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-01-28 22:26:26-06:00,21600,2021-01-28 22:26:26-06:00,21600,True,False,"['cicd.yaml', 'CHANGELOG.txt', 'VERSION', 'setup.py']",['84598a8ad7dc945e48f7833267bc26818a80d592'],9,12,21,4,,,
+4f0ba30a2300fc3273aca83ed6e118def2529b75,"test use of custom sqlalchemy model (#70)
+
+* add test case for using custom sqlalchemy models
+
+* remove cache-pipenv step
+
+* prefix filename with test_
+
+* update session management",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-01-28 23:57:40-06:00,21600,2021-01-28 23:57:40-06:00,21600,True,False,"['schemas.py', '__init__.py', 'test_custom_models.py']",['d561b318b0794b6e101727aa893f250b31275ce2'],0,73,73,3,0.3076923076923077,1.0,0.3076923076923077
+3cd885639caaefd521d354a7f70ce86eea4e36e5,"Add bulk upload api (#77)
+
+* WIP add bulk upload api
+
+* Fix client
+
+* Include router
+
+* Lint
+
+* Fix types
+
+* Fix tests
+
+* Try to fix tests
+
+* Apply suggestions from code review
+
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>
+
+* Use engine from session
+
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Kyle Barron,kylebarron2@gmail.com,GitHub,noreply@github.com,2021-01-29 19:34:20-07:00,25200,2021-01-29 20:34:20-06:00,21600,True,False,"['.gitignore', '__init__.py', 'transaction.py', 'app.py', 'base.py', 'transactions.py', 'config.py', 'schemas.py', 'test_postgres.py', 'conftest.py']",['4f0ba30a2300fc3273aca83ed6e118def2529b75'],32,75,107,10,0.15789473684210525,1.0,0.0
+7d4c9572981e935de2521441878f3ffb78f6b9b7,"add docstrings (#82)
+
+* add docstrings for api extensions
+
+* lots of docstrings
+
+* add pydocstyle to precommit
+
+* make pydocstyle happy
+
+* correct language_version
+
+* Update stac_api/api/app.py
+
+Co-authored-by: Vincent Sarago <vincent.sarago@gmail.com>
+
+* Update stac_api/clients/base.py
+
+Co-authored-by: Vincent Sarago <vincent.sarago@gmail.com>
+
+Co-authored-by: Vincent Sarago <vincent.sarago@gmail.com>",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-02-02 21:57:13-06:00,21600,2021-02-02 21:57:13-06:00,21600,True,False,"['.pre-commit-config.yaml', 'setup.py', '__init__.py', '__init__.py', 'app.py', '__init__.py', 'context.py', 'extension.py', 'fields.py', 'query.py', 'sort.py', 'tiles.py', 'transaction.py', 'middleware.py', 'models.py', 'routes.py', '__init__.py', 'base.py', '__init__.py', 'core.py', 'session.py', 'tokens.py', 'transactions.py', '__init__.py', 'ogc.py', 'config.py', 'errors.py', '__init__.py', 'database.py', 'decompose.py', 'links.py', 'ogc.py', 'schemas.py', 'openapi.py']",['3cd885639caaefd521d354a7f70ce86eea4e36e5'],234,565,799,34,0.4976958525345622,1.0,0.4838709677419355
+f14e68e300852091ae257a9dcd50e5d1a250c32d,"add mkdocs (#84)
+
+* add docstrings for api extensions
+
+* add mkdocs
+
+* pre-commit use python3.8
+
+* custom colors
+
+* Update CHANGES.md
+
+Co-authored-by: Kyle Barron <kylebarron2@gmail.com>
+
+* lots of docstrings
+
+* add pydocstyle to precommit
+
+* make pydocstyle happy
+
+* correct language_version
+
+* Update stac_api/api/app.py
+
+Co-authored-by: Vincent Sarago <vincent.sarago@gmail.com>
+
+* Update stac_api/clients/base.py
+
+Co-authored-by: Vincent Sarago <vincent.sarago@gmail.com>
+
+* add API docs
+
+* Update docs/stylesheets/extra.css
+
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>
+Co-authored-by: Kyle Barron <kylebarron2@gmail.com>
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2021-02-07 21:07:11-05:00,18000,2021-02-07 20:07:11-06:00,21600,True,False,"['deploy_mkdocs.yml', '.gitignore', 'CHANGELOG.txt', 'CHANGES.md', 'CONTRIBUTING.md', 'README.md', 'contributing.md', 'index.md', 'release-notes.md', 'extra.css', 'mkdocs.yml', 'setup.py']",['7d4c9572981e935de2521441878f3ffb78f6b9b7'],15,240,255,12,,,
+65e7970bf302d4bd615cd20f70befa04c54e36ec,update mkdocs ci (#88),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-02-07 20:17:48-06:00,21600,2021-02-07 20:17:48-06:00,21600,True,False,['deploy_mkdocs.yml'],['f14e68e300852091ae257a9dcd50e5d1a250c32d'],1,0,1,1,,,
+b9a46420f0ec73e0b4aea10647d16e658c1c30b2,"update readme (#85)
+
+* update usage
+
+* update readme
+
+* remove duplicate session",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-02-07 20:30:46-06:00,21600,2021-02-07 20:30:46-06:00,21600,True,False,['README.md'],['65e7970bf302d4bd615cd20f70befa04c54e36ec'],10,16,26,1,,,
+0ed181559e5201f76dd1b797b2cb202fe87f13e2,update readme (#90),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-02-07 20:44:01-06:00,21600,2021-02-07 20:44:01-06:00,21600,True,False,['README.md'],['b9a46420f0ec73e0b4aea10647d16e658c1c30b2'],1,1,2,1,,,
+abe1108b24dc0e9dfe0ad24c1e8c03a95974ecc9,don't raise exceptions on conflicts (#94),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-02-16 23:30:42-06:00,21600,2021-02-16 23:30:42-06:00,21600,True,False,['ingest_joplin.py'],['0ed181559e5201f76dd1b797b2cb202fe87f13e2'],1,4,5,1,0.0,1.0,1.0
+7ca0c8790ac64bbd359e88933ef94f25ece5b383,seperate postgres specific settings (#96),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-02-21 20:42:50-06:00,21600,2021-02-21 20:42:50-06:00,21600,True,False,"['app.py', 'config.py', 'conftest.py']",['abe1108b24dc0e9dfe0ad24c1e8c03a95974ecc9'],17,25,42,3,,,
+0e09285a41c2e08c3eeefbcad32b46cc2747a19b,"add extra_hosts so host.docker.internal works on linux, change pgport to not conflict with default pg on host systems (#101)",David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2021-03-02 12:13:34-06:00,21600,2021-03-02 12:13:34-06:00,21600,True,False,['docker-compose.yml'],['7ca0c8790ac64bbd359e88933ef94f25ece5b383'],4,8,12,1,,,
+6f7f342fcc1b16f0075759b6fb66b9139efe15d5,"change datetime field to use timestamptz (#100) (#102)
+
+linting
+
+install pre-commit so I actually do ALL the expected linting
+
+uggh difference in black line length",David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2021-03-02 13:48:22-06:00,21600,2021-03-02 13:48:22-06:00,21600,True,False,"['77c019af60bf_use_timestamptz_rather_than_timestamp.py', 'config.py', 'database.py']",['0e09285a41c2e08c3eeefbcad32b46cc2747a19b'],1,42,43,3,1.0,1.0,1.0
+bb7ec4b272b5e19e9b7aa92a45b3c876fe35f3e6,"stac utils switch (#105)
+
+* mention arturo
+
+* update repo url
+
+* replace arturo-ai with stac-utils
+
+* update stac-pydantic version pin",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-03-02 15:57:53-06:00,21600,2021-03-02 15:57:53-06:00,21600,True,False,"['CHANGES.md', 'CONTRIBUTING.md', 'Makefile', 'README.md', 'mkdocs.yml', 'setup.py']",['6f7f342fcc1b16f0075759b6fb66b9139efe15d5'],25,25,50,6,,,
+4836ba56bc1e14c85b76e29928deb660ed8af316,"reorganize code into submodules (#106)
+
+* move api code to submodule
+
+* add symlink
+
+* fix symlink
+
+* fastapi_stac -> stac_fastapi
+
+* update symlink
+
+* add app routes, update imports
+
+* rename
+
+* add backend submodule
+
+* add symlink
+
+* update imports
+
+* add extensions submodule, move core extensions from api
+
+* add extensions symlink
+
+* move bulk transactions to third party extensions
+
+* move tiles extension to third_party
+
+* backend.client -> backend.core
+
+* define third party clients next to the extension
+
+* remove third party clients from core
+
+* correct package names
+
+* create postgres submodule, move the sqlalchemy code
+
+* move config
+
+* update extension imports
+
+* move errors
+
+* move openapi
+
+* fix tests
+
+* add types submodule for shared types, finish moving db code, save progress on seperation of concerns...
+
+* lint everything, remove mypy for now
+
+* update pytest.ini
+
+* Updates to submodules PR (#109)
+
+* Consolidate image building to only use docker-compose
+
+The makefile was building a named image, which was the same image as
+the docker-compose app service image, but they were not the same
+name. This commit consolidates the building and running of the image
+through the app service of the docker-compose, and absorbes the
+.env.example file into the env setup in docker-compose.yml
+
+* Use docker network instead of external hosts.
+
+* Add stac_fastapi_server package.
+
+This brings in the logic of stac_api.app into it's own
+subpackage. This is used by the development environment to spin up
+stac-fastapi via docker-compose
+
+* Read joplin data locally.
+
+The remotely hosted joplin data was failing the ingest as they do not
+have a ""links"" property, which makes them invalid STAC - the previous
+server didn't complain, but that was breaking the ingest into
+stac-fastapi.
+
+This adds an empty link properties to the data downloaded from the remote location.
+
+* Add fields to ApiSettings.
+
+This pulls in the settings fields taken from
+stac_api.config.ApiSettings.
+
+* Don't build separate image for migration.
+
+The migration container uses the same image as the app, but before
+this change a new image was being built off the same docker
+container. This moves migraitons to both depend on app and use it's
+image.
+It also mounts the source into the volume in case the dev is testing
+changes to migrations or the ingest script.
+
+* Pip install subpackages in the Dockerfile
+
+* Structure dependencies in setup.py's
+
+Restructure the Dockerfile to copy only what it needs as it installs
+the subpackages. This will help catch dependency errors.
+
+* Delete old stac_api package
+
+* Add version to stac-fastapi-server
+
+* Add a publish script.
+
+This will be used by CI to publish on tags.
+
+* Add publish GitHub action.
+
+This will publish stac-fastapi to pypi on any tag.
+
+* Fix broken import
+
+* Pull top level package version from api version
+
+* Pin stac-pydantic to 1.3.8
+
+* Move search to polygon method out of types.
+
+Has dependency on shapely, which can be avoided in the types subproject.
+
+* Use Optional in param as it's possible to pass None
+
+* Refactor set logic
+
+* Pin sqlalchemy to 1.3.23
+
+* Move global settings registry into stac-fastapi.types
+
+Settings are used in the types subproject, which is the base
+layer. This change makes the global instance of the settings that is
+set by the API to be held in the types subproject to avoid circular dependencies.
+
+* Move logic to include query fields in Fields to postgres client.
+
+This logic requires settings that are specific to the postgres
+client. Move this logic into the postgres client subpackage and remove
+from the pydantic validator chain.
+
+* Fixes from pre-commit formatting and linting
+
+* lint
+
+* rename postgres package to sqlalchemy
+
+* rename PostgresSettings to SqlalchemySettings
+
+* update readme
+
+* relock types pipfile
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-03-24 20:39:53-05:00,18000,2021-03-24 20:39:53-05:00,18000,True,False,"['.env.example', 'publish.yml', '.pre-commit-config.yaml', 'Dockerfile', 'Makefile', 'README.md', 'env.py', 'docker-compose.yml', 'pytest.ini', 'ingest_joplin.py', 'publish', 'setup.py', '__init__.py', '__init__.py', 'app.py', '__init__.py', '__init__.py', '__init__.py', 'ogc.py', 'config.py', '__init__.py', 'ogc.py', 'api', 'extensions', 'server', 'sqlalchemy', 'types', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py', '__init__.py', 'app.py', 'config.py', 'errors.py', 'middleware.py', 'models.py', 'openapi.py', 'routes.py', 'version.py', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py', '__init__.py', '__init__.py', 'context.py', 'fields.py', 'query.py', 'sort.py', 'transaction.py', '__init__.py', 'bulk_transactions.py', 'tiles.py', 'version.py', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py', '__init__.py', 'app.py', 'version.py', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py', '__init__.py', 'config.py', 'core.py', '__init__.py', 'database.py', 'decompose.py', 'links.py', 'schemas.py', 'session.py', 'tokens.py', 'transactions.py', 'version.py', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py', '__init__.py', 'config.py', 'core.py', 'errors.py', 'extension.py', 'search.py', 'version.py', 'test_api.py', 'test_postgres.py', 'conftest.py', 'collection.json', 'index.geojson', 'test_custom_models.py', 'tox.ini']",['bb7ec4b272b5e19e9b7aa92a45b3c876fe35f3e6'],706,5151,5857,96,1.0,0.017543859649122806,0.45614035087719296
+d69ff00d141299a8f48e82ab138a004410e4ae48,"update mkdocs setup (#111)
+
+* update mkdocs setup
+
+* remove comments",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-03-24 22:00:54-05:00,18000,2021-03-24 22:00:54-05:00,18000,True,False,"['deploy_mkdocs.yml', 'CONTRIBUTING.md', 'README.md', 'mkdocs.yml']",['4836ba56bc1e14c85b76e29928deb660ed8af316'],51,56,107,4,,,
+10db3244744cb5032853743e0dcf1766fc0e3def,"update package name (#112)
+
+* update package name
+
+* update lock
+
+* also fix setup.py",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-03-24 22:16:19-05:00,18000,2021-03-24 22:16:19-05:00,18000,True,False,"['Pipfile', 'Pipfile.lock', 'setup.py']",['d69ff00d141299a8f48e82ab138a004410e4ae48'],8,4,12,3,,,
+e98f0a334fdef32cd01e950d579eef25e869ec8a,"rename CI and update docs dependencies (#114)
+
+💯 💯 💯",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2021-03-29 21:06:19-04:00,14400,2021-03-29 20:06:19-05:00,18000,True,False,"['cicd.yaml', 'deploy_mkdocs.yml', 'setup.py']",['10db3244744cb5032853743e0dcf1766fc0e3def'],4,3,7,3,,,
+ea030af04d47d9a7f2e8f4ed299f2ca096825f61,"fix tiles extension (#118)
+
+* add tiles extra to extensions setup.py with titiler dependency
+
+* move TileLinks to extensions package, bring back TilesClient, expose titiler route prefix
+
+* add tiles extension test case
+
+* also add route_prefix to the client, so we can use it for link generation",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-03-29 21:21:39-05:00,18000,2021-03-29 21:21:39-05:00,18000,True,False,"['setup.py', 'tiles.py', 'links.py', 'test_tiles_extension.py']",['e98f0a334fdef32cd01e950d579eef25e869ec8a'],66,188,254,4,0.07246376811594203,0.6231884057971014,0.4492753623188406
+d660438dd0f6d4e0ecb69bf806d6af07fb31fc7f,"Create .dockerignore (#95)
+
+* Create .dockerignore
+
+* ignore nested __pycache__",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-03-29 21:36:33-05:00,18000,2021-03-29 21:36:33-05:00,18000,True,False,['.dockerignore'],['ea030af04d47d9a7f2e8f4ed299f2ca096825f61'],0,11,11,1,,,
+99dd44beb750146df3619ab6673bc7a830b737f0,"Convert to using namespace packaging and setup.py (#125)
+
+* add .envrc to .*ignore
+
+* submodules all as one package
+
+* submodules all as one package
+
+* use namespace packages
+
+* remove setup.py from pgrest
+
+* update cicd workflow",David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2021-04-20 12:56:01-05:00,18000,2021-04-20 12:56:01-05:00,18000,True,False,"['.dockerignore', 'cicd.yaml', '.gitignore', '.pre-commit-config.yaml', 'Dockerfile', 'Pipfile', 'Pipfile.lock', 'docker-compose.yml', 'api', 'README.md', 'setup.py', '__init__.py', 'app.py', 'config.py', 'errors.py', 'middleware.py', 'models.py', 'openapi.py', 'routes.py', 'version.py', 'extensions', 'README.md', 'setup.py', '__init__.py', '__init__.py', 'context.py', 'fields.py', 'query.py', 'sort.py', 'transaction.py', '__init__.py', 'bulk_transactions.py', 'tiles.py', 'version.py', 'README.md', 'server', 'sqlalchemy', 'README.md', 'alembic.ini', 'README', 'env.py', 'script.py.mako', '131aab4d9e49_create_tables.py', '77c019af60bf_use_timestamptz_rather_than_timestamp.py', 'pytest.ini', 'setup.py', '__init__.py', 'app.py', 'config.py', 'core.py', '__init__.py', 'database.py', 'decompose.py', 'links.py', 'schemas.py', 'session.py', 'tokens.py', 'transactions.py', 'version.py', '__init__.py', '__init__.py', 'test_api.py', '__init__.py', 'test_postgres.py', 'conftest.py', 'collection.json', 'index.geojson', 'test_collection.json', 'test_item.json', '__init__.py', 'test_custom_models.py', 'test_tiles_extension.py', '__init__.py', 'test_collection.py', 'test_conformance.py', 'test_item.py', 'test_mgmt.py', 'types', 'README.md', 'setup.py', '__init__.py', 'config.py', 'core.py', 'errors.py', 'extension.py', 'search.py', 'version.py', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py', '__init__.py', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py', 'Pipfile', 'Pipfile.lock', 'README.md', 'setup.py', 'version.py', 'tox.ini']",['d660438dd0f6d4e0ecb69bf806d6af07fb31fc7f'],3739,254,3993,110,1.0,1.0,1.0
+a0f0e896402772c440d9fa2357d4ec4a97aa0f71,"fix readme formating (#128)
+
+* fix readme formating
+
+* fix mkdocs",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2021-04-28 11:35:51-04:00,14400,2021-04-28 10:35:51-05:00,18000,True,False,"['deploy_mkdocs.yml', 'README.md']",['99dd44beb750146df3619ab6673bc7a830b737f0'],7,20,27,2,,,
+af0750ff5daa7a3977c371987ce8deddb240e107,"set env variable in doc actions (#129)
+
+* set env variable in doc actions
+
+* Update .github/workflows/deploy_mkdocs.yml",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2021-04-28 12:02:44-04:00,14400,2021-04-28 11:02:44-05:00,18000,True,False,['deploy_mkdocs.yml'],['a0f0e896402772c440d9fa2357d4ec4a97aa0f71'],1,9,10,1,,,
+c3dd27d0a2f5129f36904dd521d7bff22460c306,Update README.md (#130),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-04-28 20:29:58-05:00,18000,2021-04-28 20:29:58-05:00,18000,True,False,['README.md'],['af0750ff5daa7a3977c371987ce8deddb240e107'],0,4,4,1,,,
+178a625996bd08a00e4c5ec6af0ef5731d077e9e,Fix docker-compose usage of ingest_joplin.py. (#133),Alex G Rice,alex@radiant.earth,GitHub,noreply@github.com,2021-05-17 15:25:03-06:00,21600,2021-05-17 16:25:03-05:00,18000,True,False,"['docker-compose.yml', 'ingest_joplin.py']",['c3dd27d0a2f5129f36904dd521d7bff22460c306'],5,5,10,2,0.0,1.0,1.0
+0bcf3f30b465fb6f5d52f98519b8c1c689653c43,Set landing page ID,Nathan Zimmerman,npzimmerman@gmail.com,Nathan Zimmerman,npzimmerman@gmail.com,2021-06-01 11:56:18-05:00,18000,2021-06-01 11:56:18-05:00,18000,True,False,['core.py'],['178a625996bd08a00e4c5ec6af0ef5731d077e9e'],0,3,3,1,0.0,1.0,1.0
+8097d9af931ddfaf6500ce056a0918d80a1bc6da,Include unset (default) fields on landing page response (#140),Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-06-07 23:57:25-05:00,18000,2021-06-07 21:57:25-07:00,25200,True,False,['app.py'],['178a625996bd08a00e4c5ec6af0ef5731d077e9e'],1,1,2,1,,,
+ad9f31655926bdacd908263fa34190b8e5cfb150,"Use ""items"", not ""item"" in collection links. (#141)
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-06-08 01:07:25-04:00,14400,2021-06-07 22:07:25-07:00,25200,True,False,['links.py'],['8097d9af931ddfaf6500ce056a0918d80a1bc6da'],4,4,8,1,,,
+5aace26e0ae38b8faec41223bf18515119b12103,"Avoid use of leading slash for urljoins (#143)
+
+* Avoid use of leading slash for urljoins
+
+* lint
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-06-08 00:21:02-05:00,18000,2021-06-07 22:21:02-07:00,25200,True,False,"['ingest_joplin.py', 'tiles.py', 'core.py', 'links.py']",['ad9f31655926bdacd908263fa34190b8e5cfb150'],18,14,32,4,0.0,0.0,0.0
+4b991a7bc39b0d7c6d01f841a1f527277e3f9b32,"Include collection ID in ItemURI (#138)
+
+* Include collection ID in ItemURI
+
+* update other usages of ItemUri
+
+* fix tests
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-06-08 00:53:47-05:00,18000,2021-06-07 22:53:47-07:00,25200,True,False,"['models.py', 'tiles.py', 'core.py', 'transactions.py', 'test_postgres.py', 'conftest.py', 'test_tiles_extension.py', 'core.py']",['5aace26e0ae38b8faec41223bf18515119b12103'],18,32,50,8,0.0,1.0,0.14285714285714285
+62755579539522fdea912c3f0fa2987c69f336f9,landing page links to /collections endpoint (#146),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-06-07 23:03:10-07:00,25200,2021-06-07 23:03:10-07:00,25200,True,False,['core.py'],['4b991a7bc39b0d7c6d01f841a1f527277e3f9b32'],5,11,16,1,0.0,1.0,1.0
+d311cffcc54508b862d59e6efe2c50b39b3c86ee,linting,Nathan Zimmerman,npzimmerman@gmail.com,Nathan Zimmerman,npzimmerman@gmail.com,2021-06-08 10:03:41-05:00,18000,2021-06-08 10:03:41-05:00,18000,True,False,['core.py'],['0bcf3f30b465fb6f5d52f98519b8c1c689653c43'],1,0,1,1,,,
+6d468b2c2403d9aedaf674292e8d50e56b22cc08,"Add title configuration to service and core client (#139)
+
+* Add title configuration to service and core client
+
+* Fix merge issue that caused duplicate fields
+
+* Remove old TODO
+
+* lint
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-06-12 00:50:21-05:00,18000,2021-06-11 22:50:21-07:00,25200,True,False,"['app.py', 'core.py']",['8d51f6db0d8679dba966e7e61712a2b58e242267'],4,7,11,2,,,
+8c48f18c0e974361bc5b008eddd867bd40605cd4,add stac types with TypedDict,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-12 22:06:37-07:00,25200,2021-06-12 22:06:37-07:00,25200,True,False,['stac.py'],['6d468b2c2403d9aedaf674292e8d50e56b22cc08'],0,56,56,1,,,
+733b6f2c40b43e5126b97614816918a03a1f3a7e,update stac core signatures,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-12 22:19:14-07:00,25200,2021-06-12 22:19:14-07:00,25200,True,False,['core.py'],['8c48f18c0e974361bc5b008eddd867bd40605cd4'],26,37,63,1,0.0,1.0,0.0
+06b91ea990e35c45f9671d76f183632c12e438e0,"Refactor generic code out of sqlalchemy backend implementation (#149)
+
+* Moved landing page client end point into base class as this is generic to all backend implementations as well as link types from sqlalchemy as they are not database specific
+
+* Update stac_fastapi/types/stac_fastapi/types/core.py
+
+* move links back
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Richard Smith,richard.d.smith@stfc.ac.uk,GitHub,noreply@github.com,2021-06-15 05:44:07+01:00,-3600,2021-06-14 21:44:07-07:00,25200,True,False,"['core.py', 'core.py']",['6d468b2c2403d9aedaf674292e8d50e56b22cc08'],57,54,111,2,0.0,0.0,0.0
+a32fe5569972c062d8d8b801ec2e319b40e9ba4b,Moved sqlalchemy class to sqlalchemy codebase and more generic link classes to types. closes #153,rsmith013,richard.d.smith@stfc.ac.uk,rsmith013,richard.d.smith@stfc.ac.uk,2021-06-16 16:36:55+01:00,-3600,2021-06-16 16:36:55+01:00,-3600,True,False,"['database.py', 'decompose.py', 'search.py', 'core.py', 'links.py', 'search.py']",['06b91ea990e35c45f9671d76f183632c12e438e0'],27,26,53,6,,,
+f6a9007e74691143110fe0d3ec947bede024b99c,Updating abstract base class all_collections signature to match the one implemented in sqlalchemy backend. closes #154 (#156),Richard Smith,richard.d.smith@stfc.ac.uk,GitHub,noreply@github.com,2021-06-17 07:48:27+01:00,-3600,2021-06-16 23:48:27-07:00,25200,True,False,['core.py'],['06b91ea990e35c45f9671d76f183632c12e438e0'],1,1,2,1,,,
+342ac5659cf23b07bf0a556cd8e14922fd8e8fb1,expose id/description/stac_version through api layer,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-17 00:04:06-07:00,25200,2021-06-17 00:04:06-07:00,25200,True,False,"['app.py', 'core.py']",['f6a9007e74691143110fe0d3ec947bede024b99c'],6,15,21,2,0.75,1.0,1.0
+95265d04f096036ad06bbfe2d1ce471d20f36d2e,"PGStac  (#126)
+
+* add .envrc to .*ignore
+
+* submodules all as one package
+
+* submodules all as one package
+
+* use namespace packages
+
+* remove setup.py from pgrest
+
+* update cicd workflow
+
+* cherry pick pgstac branch to updated package layout
+
+* allow async endpoints
+
+* core modifications needed for pgstac
+
+* cleanup
+
+* cleanup
+
+* setup console scripts
+
+* get transaction api working
+
+* bring in pgstac
+
+* remove old pgrest
+
+* bring Dockerfile over
+
+* cherrypicks
+
+* add removed readme back
+
+* linting, add gzip middleware
+
+* move mangum to awslambda extras
+
+* sorts
+
+* fixes for precommit
+
+* fixes for precommit
+
+* uggh pydocstyle
+
+* pgstac tests and fixes from tests
+
+* get test runners working
+
+* linting
+
+* tag for db compatible with pgstac
+
+* db docker uses different ENV vars
+
+* linted too hard
+
+* test cleanup
+
+* docker env fixes, documentation
+
+* docker env fixes, documentation
+
+* switch from gzip to brotli
+
+* Update stac_fastapi/api/stac_fastapi/api/app.py
+
+Co-authored-by: Kyle Barron <kylebarron2@gmail.com>
+
+* Update stac_fastapi/pgstac/setup.py
+
+Co-authored-by: Kyle Barron <kylebarron2@gmail.com>
+
+* Update stac_fastapi/pgstac/README.md
+
+Co-authored-by: Kyle Barron <kylebarron2@gmail.com>
+
+* fix issues in links for base_url and items relations type
+
+* fix docstring quotes
+
+* add item_id, collection_id in response to #138
+
+* update pypgstac version
+
+* fix parent link
+
+* change id key to items_id in delete_item
+
+* update version of pgstac
+
+* Update docker-compose.yml
+
+call pgstac app as python module rather than using the cli command
+
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>
+
+* Update stac_fastapi/pgstac/README.md
+
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>
+
+* Update stac_fastapi/pgstac/stac_fastapi/pgstac/models/links.py
+
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>
+
+* Update stac_fastapi/pgstac/tests/clients/test_postgres.py
+
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>
+
+* Update stac_fastapi/pgstac/tests/clients/test_postgres.py
+
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>
+
+* Apply suggestions from code review
+
+remove unused load_test_data fixtures
+
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>
+
+* fixes from code review. remove unused/debug logging. remove unused functions. add type hints.
+
+* add import for asyncpg.pool for type hint
+
+* add default for initial pool and connection value
+
+* use request.json() because we are adding in the paging token to the POST request
+
+* linting fixes
+
+* make docker-compose use reload=false for uvicorn to avoid any issues with venvs
+
+* increase number of connections on pg instance, only mount scripts and stac_fastapi directories
+
+* move test data and add test data to both pgstac and sqlalchemy in docker, make no collections return empty array
+
+* fix test for collections returning empty array rather than not found
+
+* add exclude_unset=True when dumping data to json to add in transactions extension
+
+Co-authored-by: Kyle Barron <kylebarron2@gmail.com>
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>",David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2021-06-17 20:22:48-05:00,18000,2021-06-17 18:22:48-07:00,25200,True,False,"['cicd.yaml', 'Dockerfile', 'Makefile', 'docker-compose.yml', 'ingest_joplin.py', 'app.py', 'routes.py', 'transaction.py', 'bulk_transactions.py', 'tiles.py', 'README.md', 'setup.py', '__init__.py', 'app.py', 'config.py', 'core.py', 'db.py', '__init__.py', 'links.py', 'schemas.py', 'transactions.py', 'search.py', 'version.py', '__init__.py', '__init__.py', 'test_api.py', '__init__.py', 'test_postgres.py', 'conftest.py', 'collection.json', 'index.geojson', 'test_collection.json', 'test_item.json', '__init__.py', 'test_collection.py', 'test_conformance.py', 'test_item.py', 'test_mgmt.py', 'setup.py', 'app.py', 'core.py', 'database.py', 'search.py', 'conftest.py', 'collection.json', 'index.geojson', 'config.py', 'search.py', 'tox.ini']",['f6a9007e74691143110fe0d3ec947bede024b99c'],193,5298,5491,49,0.4996949359365467,0.8462477120195241,0.4069554606467358
+7a3fe732b9377f3fcf69e97252a9ea1076bdcaaf,link factories return dictionaries,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-22 18:41:18-07:00,25200,2021-06-22 18:41:18-07:00,25200,True,False,['links.py'],['f729a412c71b29923fdf5736b93441db3778a90e'],20,20,40,1,,,
+393891349170d4b7eb8222d9e87fac8d0841a5d0,update landing page,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-22 19:10:09-07:00,25200,2021-06-22 19:10:09-07:00,25200,True,False,"['core.py', 'stac.py']",['7a3fe732b9377f3fcf69e97252a9ea1076bdcaaf'],42,58,100,2,0.0,1.0,1.0
+28da01f2e1cc507d0a87735d0e362b1a8d0ebb79,update sqlalchemy conformance,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-22 19:12:15-07:00,25200,2021-06-22 19:12:15-07:00,25200,True,False,['core.py'],['393891349170d4b7eb8222d9e87fac8d0841a5d0'],3,3,6,1,,,
+69580df094dd9b56db71627953112a68976d510a,define collection getterdict logic on sqlalchemy client,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-22 20:11:46-07:00,25200,2021-06-22 20:11:46-07:00,25200,True,False,"['core.py', 'links.py', 'stac.py']",['28da01f2e1cc507d0a87735d0e362b1a8d0ebb79'],2,46,48,3,0.23529411764705882,1.0,1.0
+aa33c35350907c32712fe363778f680b9058a0d7,update collection endpoints of sqlalchemy backend,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-22 20:14:51-07:00,25200,2021-06-22 20:14:51-07:00,25200,True,False,['core.py'],['69580df094dd9b56db71627953112a68976d510a'],8,8,16,1,1.0,1.0,1.0
+717ab6f821b87372842d05c03db9ac5ae753991c,do the same for items and itemcollections,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-28 21:40:21-07:00,25200,2021-06-28 21:40:21-07:00,25200,True,False,"['core.py', 'stac.py']",['aa33c35350907c32712fe363778f680b9058a0d7'],61,96,157,2,0.0,1.0,1.0
+fa11e967995ac0df1ad844e7814dae81892116ae,correct response types,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-28 21:43:16-07:00,25200,2021-06-28 21:43:16-07:00,25200,True,False,['core.py'],['717ab6f821b87372842d05c03db9ac5ae753991c'],3,3,6,1,,,
+3989240a7386668cf10d6ab47158241abb8ddb02,"start to work on transactions extensions, running into some issues, need to define (de)serialization in the same place",Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-28 22:08:08-07:00,25200,2021-06-28 22:08:08-07:00,25200,True,False,['transactions.py'],['fa11e967995ac0df1ad844e7814dae81892116ae'],2,43,45,1,0.11538461538461539,1.0,1.0
+8ff7803931359a7a322246a08d1967b39b3ebef3,define serialization in one place,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-28 22:59:11-07:00,25200,2021-06-28 22:59:11-07:00,25200,True,False,['serializers.py'],['3989240a7386668cf10d6ab47158241abb8ddb02'],0,142,142,1,0.10714285714285714,1.0,0.34523809523809523
+123e8ce04d01d328c42c6c435116f167dba74caa,use serializers in core client,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-28 23:01:09-07:00,25200,2021-06-28 23:01:09-07:00,25200,True,False,['core.py'],['8ff7803931359a7a322246a08d1967b39b3ebef3'],85,22,107,1,1.0,0.0,0.0
+5104917dec1150d7f9c95836f715fa4914020aea,use serializers in transactions extension,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-06-28 23:38:50-07:00,25200,2021-06-28 23:38:50-07:00,25200,True,False,"['app.py', 'serializers.py', 'transactions.py']",['123e8ce04d01d328c42c6c435116f167dba74caa'],75,51,126,3,1.0,0.0,0.13636363636363635
+d13ed995acef47d6765f0b88934907eb8ec46cdd,adding changes from isort,rsmith013,richard.d.smith@stfc.ac.uk,rsmith013,richard.d.smith@stfc.ac.uk,2021-06-29 15:39:36+01:00,-3600,2021-06-29 15:39:36+01:00,-3600,True,False,['search.py'],['869f949fbfc624e1be1f3a17e3eb1f8c4a73c2c8'],2,0,2,1,,,
+9ef100d3de3283a8ea54e9abfc63b38bdd49da0c,"return 400 status codes for bad requests instead of 422 (#174)
+
+* return 400 status codes for bad requests instead of 422
+
+* cleanup
+
+* update pgstac test cases",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-07-03 12:29:20-07:00,25200,2021-07-03 12:29:20-07:00,25200,True,False,"['errors.py', 'test_item.py', 'test_item.py']",['51c5bb3c694a56984ff4445ff625b32126154943'],7,18,25,3,0.0,1.0,1.0
+dbddebc19d45bccc5125680d5af2bc96fee7878f,fix import from merge,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-03 13:42:16-07:00,25200,2021-07-03 13:42:16-07:00,25200,True,False,['serializers.py'],['20d826edf9512420034f85f0e87d4704431b1a48'],5,1,6,1,,,
+8cea6bb1ab7bf7e79cc3aeb7e1ac243402da9573,"configure response model behavior, defaults to no response models",Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-03 13:59:55-07:00,25200,2021-07-03 13:59:55-07:00,25200,True,False,"['app.py', 'config.py']",['dbddebc19d45bccc5125680d5af2bc96fee7878f'],8,21,29,2,0.0,0.0,1.0
+2e2ce3db544d7e61b6a3694202b7578d880c6b23,"start to work on tests, fix some bugs along the way",Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-03 14:33:19-07:00,25200,2021-07-03 14:33:19-07:00,25200,True,False,"['core.py', 'serializers.py', 'transactions.py', 'test_postgres.py', 'conftest.py']",['8cea6bb1ab7bf7e79cc3aeb7e1ac243402da9573'],31,50,81,5,0.16666666666666666,0.5,0.0
+b5b261fac0850d682c13ed2459f10d70d81bbaf6,rebuild docs on changes to python files (#176),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-07-04 09:50:43-07:00,25200,2021-07-04 09:50:43-07:00,25200,True,False,['deploy_mkdocs.yml'],['9ef100d3de3283a8ea54e9abfc63b38bdd49da0c'],1,2,3,1,,,
+9295030333737f2e1332218c10155c1cb00ec31d,Update to stac_pydantic 2.0.0,Nathan Zimmerman,npzimmerman@gmail.com,Nathan Zimmerman,npzimmerman@gmail.com,2021-07-07 09:00:11-05:00,18000,2021-07-08 14:36:27-05:00,18000,True,False,"['CHANGES.md', 'setup.py', 'app.py', 'config.py', 'errors.py', 'models.py', 'openapi.py', 'setup.py', 'tiles.py', 'setup.py', 'core.py', 'links.py', 'schemas.py', 'setup.py', 'core.py', 'decompose.py', 'schemas.py', 'test_item.py', 'setup.py', 'core.py', 'links.py']",['b5b261fac0850d682c13ed2459f10d70d81bbaf6'],55,92,147,21,0.0,0.75,0.75
+f1e5fbc11c11478af0bd789dacecb7334c548ff1,Fix test imports,Nathan Zimmerman,npzimmerman@gmail.com,Nathan Zimmerman,npzimmerman@gmail.com,2021-07-07 10:25:24-05:00,18000,2021-07-08 14:36:27-05:00,18000,True,False,"['test_item.py', 'test_item.py']",['9295030333737f2e1332218c10155c1cb00ec31d'],2,2,4,2,,,
+cbac663c4241197c0fb04297a035f6d5b2707915,Add migration for pydantic 2.0,Nathan Zimmerman,npzimmerman@gmail.com,Nathan Zimmerman,npzimmerman@gmail.com,2021-07-08 08:54:26-05:00,18000,2021-07-08 14:36:27-05:00,18000,True,False,"['ingest_joplin.py', 'links.py', 'collection.json', 'index.geojson', 'test_collection.json', 'test_item.json', '407037cb1636_add_stac_1_0_0_fields.py', 'database.py', 'transactions.py', 'test_collection.json', 'test_item.json', 'collection.json', 'index.geojson']",['f1e5fbc11c11478af0bd789dacecb7334c548ff1'],191,223,414,13,0.8333333333333334,1.0,0.8333333333333334
+a547ee2cef78a04c1dde33672ea678d9f7963f63,Make pgstac client title/description configurable,Nathan Zimmerman,npzimmerman@gmail.com,Nathan Zimmerman,npzimmerman@gmail.com,2021-07-08 15:15:20-05:00,18000,2021-07-08 15:15:20-05:00,18000,True,False,"['config.py', 'openapi.py', 'core.py', 'links.py', '407037cb1636_add_stac_1_0_0_fields.py']",['cbac663c4241197c0fb04297a035f6d5b2707915'],18,51,69,5,0.75,1.0,1.0
+8124ee11e51d65615d0022ebbede618c3f40b19e,Fix getterdict and pydantic use of datetime,Nathan Zimmerman,npzimmerman@gmail.com,Nathan Zimmerman,npzimmerman@gmail.com,2021-07-08 16:38:38-05:00,18000,2021-07-08 16:38:38-05:00,18000,True,False,"['database.py', 'decompose.py']",['a547ee2cef78a04c1dde33672ea678d9f7963f63'],3,3,6,2,,,
+b3c64abf7ba4c3d68c993c9df637e24dcb0721d9,Wait for app-pgstac app before joplin ingest (#182),Jon Duckworth,jon@radiant.earth,GitHub,noreply@github.com,2021-07-09 00:03:25-04:00,14400,2021-07-08 22:03:25-06:00,21600,True,False,"['docker-compose.yml', 'wait-for-it.sh']",['b5b261fac0850d682c13ed2459f10d70d81bbaf6'],3,194,197,2,,,
+6e6272359df20a252488782760838c17954b9fde,"add PGStac in the available namespaces (#183)
+
+* add PGStac in the available namespaces
+
+* rename loadjoplin builds to match with application",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2021-07-09 15:58:34+02:00,-7200,2021-07-09 07:58:34-06:00,21600,True,False,"['README.md', 'docker-compose.yml']",['b3c64abf7ba4c3d68c993c9df637e24dcb0721d9'],8,20,28,2,,,
+3868b291150a56046266c733c6e1dbf3723a3731,Fighting with tests...,Nathan Zimmerman,npzimmerman@gmail.com,Nathan Zimmerman,npzimmerman@gmail.com,2021-07-12 11:22:14-05:00,18000,2021-07-12 11:22:14-05:00,18000,True,False,"['core.py', 'test_item.py', 'core.py']",['8124ee11e51d65615d0022ebbede618c3f40b19e'],2,7,9,3,0.0,0.8,0.8
+a992ac50bf097d8b4b32f5429e32f218a7b58cd0,everything working but fields extension,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-12 23:10:58-05:00,18000,2021-07-12 23:10:58-05:00,18000,True,False,"['tiles.py', 'core.py', 'serializers.py', 'transactions.py', 'config.py', 'core.py']",['2e2ce3db544d7e61b6a3694202b7578d880c6b23'],24,21,45,6,0.0,0.0,1.0
+b9aa0f774629285a023a28969ce6e9c71e309de7,reimplement fields extension w/ pydantic syntax,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-12 23:19:07-05:00,18000,2021-07-12 23:19:07-05:00,18000,True,False,['core.py'],['a992ac50bf097d8b4b32f5429e32f218a7b58cd0'],8,12,20,1,0.0,0.0,0.0
+851926fbd99b81edd66142fa0bb5fc9d270e197f,remove the old code,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-12 23:33:31-05:00,18000,2021-07-12 23:33:31-05:00,18000,True,False,"['database.py', 'decompose.py', 'schemas.py', 'transactions.py']",['b9aa0f774629285a023a28969ce6e9c71e309de7'],220,20,240,4,0.6041666666666666,0.0,0.0
+8cf684e8e9bc3b84da8be7bbacbb783ea5113414,update pgstac links,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-13 06:36:44-05:00,18000,2021-07-13 06:36:44-05:00,18000,True,False,['links.py'],['851926fbd99b81edd66142fa0bb5fc9d270e197f'],68,66,134,1,1.0,1.0,
+9b1d92efcba4cb34eb6d16d3b23e8ea82c4a2d1e,use base landing page in pgstac,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-13 06:38:48-05:00,18000,2021-07-13 06:38:48-05:00,18000,True,False,['core.py'],['8cf684e8e9bc3b84da8be7bbacbb783ea5113414'],58,1,59,1,1.0,0.0,0.0
+bc12d815ab355bf1b836f230ac2e7f87e11e99ac,remove pydantic from pgstac core,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-13 09:24:08-05:00,18000,2021-07-13 09:24:08-05:00,18000,True,False,['core.py'],['9b1d92efcba4cb34eb6d16d3b23e8ea82c4a2d1e'],22,18,40,1,1.0,0.6,1.0
+a568d871396c65c7a514bb7d2dfbb669798a17ae,Fix datetime filter construction,Nathan Zimmerman,npzimmerman@gmail.com,Nathan Zimmerman,npzimmerman@gmail.com,2021-07-13 10:10:47-05:00,18000,2021-07-13 10:10:47-05:00,18000,True,False,"['core.py', 'transactions.py']",['3868b291150a56046266c733c6e1dbf3723a3731'],6,5,11,2,0.0,0.0,1.0
+f70231d4c2c4a8cff66b198879e16f7eec46c898,lint,Nathan Zimmerman,npzimmerman@gmail.com,Nathan Zimmerman,npzimmerman@gmail.com,2021-07-13 11:54:16-05:00,18000,2021-07-13 11:54:16-05:00,18000,True,False,"['core.py', 'database.py', 'decompose.py', 'core.py']",['a568d871396c65c7a514bb7d2dfbb669798a17ae'],12,6,18,4,1.0,1.0,1.0
+f44a736d7613e3a041dc172edcb3f71b59b1d6d1,most pgstac test cases are working,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-14 00:35:44-05:00,18000,2021-07-14 00:35:44-05:00,18000,True,False,"['core.py', 'transactions.py', 'test_postgres.py', 'test_item.py']",['bc12d815ab355bf1b836f230ac2e7f87e11e99ac'],21,26,47,4,0.0,1.0,0.0
+a6475e2b1790d18086dcc3d03ad45e44043019db,expose response class on the api,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-14 08:23:36-05:00,18000,2021-07-14 08:23:36-05:00,18000,True,False,['app.py'],['f44a736d7613e3a041dc172edcb3f71b59b1d6d1'],0,10,10,1,0.0,0.0,1.0
+e4eb208a820e2b94a9dc8bc0c5965916e980e3bd,"optional response models in transaction extension, align pgstac with base classes",Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-14 08:27:20-05:00,18000,2021-07-14 08:27:20-05:00,18000,True,False,"['transaction.py', 'app.py', 'core.py', 'transactions.py', 'conftest.py', 'app.py', 'conftest.py']",['a6475e2b1790d18086dcc3d03ad45e44043019db'],42,52,94,7,1.0,0.0,0.0
+29d0ad49979140b3d1264f8b1dd008132bb7557b,bump pgstac version to 0.2.7 and fix lt/lte gt/gte,David Bitner,bitner@dbspatial.com,David Bitner,bitner@dbspatial.com,2021-07-14 15:36:42-05:00,18000,2021-07-14 15:36:42-05:00,18000,True,False,"['setup.py', 'search.py']",['6e6272359df20a252488782760838c17954b9fde'],3,3,6,2,,,
+7c915b30809a5a80419c092f841a00a37ae5230c,update cicd to use 0.2.7 pgstac image,David Bitner,bitner@dbspatial.com,David Bitner,bitner@dbspatial.com,2021-07-14 15:44:22-05:00,18000,2021-07-14 15:44:22-05:00,18000,True,False,['cicd.yaml'],['29d0ad49979140b3d1264f8b1dd008132bb7557b'],1,1,2,1,,,
+81deecd218babb9f2ff14bbb049ce94c625f516d,"docker pull timing out for new pgimage in ci, making timeout longer",David Bitner,bitner@dbspatial.com,David Bitner,bitner@dbspatial.com,2021-07-14 15:46:44-05:00,18000,2021-07-14 15:46:44-05:00,18000,True,False,['cicd.yaml'],['7c915b30809a5a80419c092f841a00a37ae5230c'],2,2,4,1,,,
+4e4442718e3ed3992e57c1d0a9eec1281d9aec72,small change to docs to trigger ci,David Bitner,bitner@dbspatial.com,David Bitner,bitner@dbspatial.com,2021-07-14 16:57:56-05:00,18000,2021-07-14 16:57:56-05:00,18000,True,False,['README.md'],['81deecd218babb9f2ff14bbb049ce94c625f516d'],1,1,2,1,,,
+e3111f0c302962d51200c4028d047ff07575ce88,"remove pydantic from extensions, add async base client, break up route registration, update tests",Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-18 11:30:27-07:00,25200,2021-07-18 11:30:27-07:00,25200,True,False,"['app.py', 'routes.py', 'transaction.py', 'bulk_transactions.py', 'tiles.py', 'core.py', 'db.py', 'transactions.py', 'transactions.py', 'test_api.py', 'test_postgres.py', 'conftest.py', 'test_item.json', 'test_tiles_extension.py', 'core.py']",['e4eb208a820e2b94a9dc8bc0c5965916e980e3bd'],276,656,932,15,1.0,1.0,0.3831417624521073
+dbdeab7a17b7aa5ac813d60a334b03b213cab9f9,remove pgstac schemas,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-18 12:20:51-07:00,25200,2021-07-18 12:20:51-07:00,25200,True,False,['schemas.py'],['e3111f0c302962d51200c4028d047ff07575ce88'],44,0,44,1,,,
+bd825cfdb79d0b8cf36dc8849eff302c4e20c6fa,remove more unnecessary pydantic references,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-18 13:01:14-07:00,25200,2021-07-18 13:01:14-07:00,25200,True,False,['links.py'],['dbdeab7a17b7aa5ac813d60a334b03b213cab9f9'],3,0,3,1,0.0,0.0,0.0
+7ccdffc5d1f3e0fa08015dd48c21f590e596e0d7,ensure optional fields don't break serialiation if they are not present,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-18 13:07:18-07:00,25200,2021-07-18 13:07:18-07:00,25200,True,False,['serializers.py'],['bd825cfdb79d0b8cf36dc8849eff302c4e20c6fa'],1,1,2,1,,,
+9b940b9cc26390dd23b7f0498ce070f67e539144,Apply suggestions from code review,Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-07-18 15:24:13-05:00,18000,2021-07-18 15:24:13-05:00,18000,True,False,"['app.py', 'core.py', 'app.py']",['f14e13343c988fee9aecd2d25ddc6d948db9ef9f'],3,1,4,3,,,
+7e782536bdd9ceabafb108abe922144f27089caf,"update geometries in sqlalchemy backend (#177)
+
+* fix updating geometries in sqlalchemy backend
+
+* remove print
+
+* add test cases",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-07-18 21:02:59-05:00,18000,2021-07-18 19:02:59-07:00,25200,True,False,"['transactions.py', 'test_postgres.py', 'test_item.py']",['45df95a9baedc9fcb5a97699ba499e27262b0afb'],2,52,54,3,0.45454545454545453,1.0,0.5454545454545454
+bfa203ead6452556adeac698b8c67097dad8cdc6,fix sqlalchemy timezone test case,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-18 20:09:05-07:00,25200,2021-07-18 20:09:05-07:00,25200,True,False,"['database.py', 'test_item.py']",['f70231d4c2c4a8cff66b198879e16f7eec46c898'],8,12,20,2,,0.0,
+9a5a8d5dea83450f9a38f856a647a640788f8b70,lint,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-18 20:14:42-07:00,25200,2021-07-18 20:14:42-07:00,25200,True,False,"['ingest_joplin.py', 'config.py']",['bfa203ead6452556adeac698b8c67097dad8cdc6'],2,1,3,2,,,
+d62eb2c331f93f1eb4559bb6aac3df7ed7b8f441,fix datetime serialization issues with pgstac test cases,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-18 20:26:31-07:00,25200,2021-07-18 20:26:31-07:00,25200,True,False,"['core.py', 'test_postgres.py', 'test_item.py']",['9a5a8d5dea83450f9a38f856a647a640788f8b70'],8,10,18,3,0.0,1.0,1.0
+c9a75fc38c70c35201b17df137686b137a22e78d,return response class directly,Jeff Albrecht,geospatialjeff@gmail.com,Jeff Albrecht,geospatialjeff@gmail.com,2021-07-19 17:28:36-07:00,25200,2021-07-19 17:28:36-07:00,25200,True,False,"['app.py', 'routes.py', 'transaction.py', 'app.py']",['43f80a71f1f2918fa4809ea0db145d7ba451852a'],13,38,51,4,0.7777777777777778,1.0,1.0
+6a9395d03485396319159ac9d38ac143c198e316,use setup.cfg metadata to set package version,vincentsarago,vincent.sarago@gmail.com,vincentsarago,vincent.sarago@gmail.com,2021-07-20 10:40:38+02:00,-7200,2021-07-20 10:40:38+02:00,-7200,True,False,"['setup.cfg', 'setup.py', 'setup.cfg', 'setup.py', 'setup.cfg', 'setup.py', 'setup.cfg', 'setup.py', 'setup.cfg', 'setup.py']",['7e782536bdd9ceabafb108abe922144f27089caf'],50,15,65,10,,,
+56f692654f964a548f5c0b06222e085f27b8ee3b,Update development DB pgstac image to 0.2.7,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 11:19:46-04:00,14400,2021-07-23 11:19:46-04:00,14400,True,False,['docker-compose.yml'],['653b0228c60c9482733fef24ce7f6b04529741d4'],1,1,2,1,,,
+ed12b12628650aff128987b01e93fda9ebce5005,Use wait-for-it.sh script for loading sqlalchemy dev data,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 11:20:04-04:00,14400,2021-07-23 11:20:04-04:00,14400,True,False,['docker-compose.yml'],['56f692654f964a548f5c0b06222e085f27b8ee3b'],1,1,2,1,,,
+917df090ef68c450545443bc436b1bbaec46cf94,"Fix #168
+
+Also add more specific type annotations",Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 18:24:52-04:00,14400,2021-07-23 18:24:52-04:00,14400,True,False,['links.py'],['a831b8f2c0a7a8225e0e4c5e3521286ce8ac7ca3'],25,30,55,1,0.0,1.0,1.0
+018d71fda3fa1f8f71317f66683654a8d2c9e7b2,Update to pgstac 0.2.8,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 19:50:54-04:00,14400,2021-07-23 19:50:54-04:00,14400,True,False,"['docker-compose.yml', 'setup.py']",['917df090ef68c450545443bc436b1bbaec46cf94'],4,4,8,2,,,
+5bf88f436a9eade3cef486d3f80bd1a55ef33510,"Use default=attr.Factory for consistency
+
+As a novice attrs user I was confused about the factory= parameter,
+which is just syntatic sugar for a default with an attr.Factory. The
+default=attr.Factory is used in other similar scenarios, and this
+aligns with the other examples for readability",Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 19:51:30-04:00,14400,2021-07-23 19:51:30-04:00,14400,True,False,['app.py'],['018d71fda3fa1f8f71317f66683654a8d2c9e7b2'],1,1,2,1,,,
+f34bd9bda5fca78add96301a74a27480a8c6b2af,Add a note about fixing or removing config_openapi,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 19:53:16-04:00,14400,2021-07-23 19:53:16-04:00,14400,True,False,['openapi.py'],['5bf88f436a9eade3cef486d3f80bd1a55ef33510'],0,2,2,1,,,
+174821ab91acef3f45cf05bc020e7656ffe8335d,"Type annotations, guards and refactors to pgstac core client",Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 19:54:35-04:00,14400,2021-07-23 19:59:40-04:00,14400,True,False,['core.py'],['f34bd9bda5fca78add96301a74a27480a8c6b2af'],30,26,56,1,0.0,0.0,0.0
+808b385b523852c29898e9e69d7319c8967ebb7a,Return ItemCollection instead of ORJson,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 19:56:45-04:00,14400,2021-07-23 19:59:44-04:00,14400,True,False,['core.py'],['174821ab91acef3f45cf05bc020e7656ffe8335d'],2,2,4,1,,,
+b6c45d5aedc2b57b6425b19cd0ce3de764f3d8f0,"Update STAC test data to 1.0
+
+Include eo etension in collection as the summary entries reference it",Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 20:00:32-04:00,14400,2021-07-23 20:00:32-04:00,14400,True,False,"['test_collection.json', 'test_item.json']",['808b385b523852c29898e9e69d7319c8967ebb7a'],2,2,4,2,,,
+1ff8324aeaabfba9ea84a64463ffd8aafa498eaf,Pass stac-pydantic Item through `json` for proper serialization,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 20:23:24-04:00,14400,2021-07-23 20:23:24-04:00,14400,True,False,['core.py'],['b6c45d5aedc2b57b6425b19cd0ce3de764f3d8f0'],1,3,4,1,,,
+22c23a42e822d429bf6b9183babdd49c0822330c,"Convert sqlalchemy Decimal type to float.
+
+Otherwise this throws a JSON serialization error",Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 20:24:11-04:00,14400,2021-07-23 20:24:11-04:00,14400,True,False,['serializers.py'],['1ff8324aeaabfba9ea84a64463ffd8aafa498eaf'],1,1,2,1,,,
+844fddae7d70778e1ea76a3a3915f0ba9f9f192c,"Allow routes to return responses directly
+
+This is done by the tile extension to perform a redirect",Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 22:02:20-04:00,14400,2021-07-23 22:02:20-04:00,14400,True,False,['routes.py'],['22c23a42e822d429bf6b9183babdd49c0822330c'],14,28,42,1,1.0,1.0,1.0
+a9c87aa52f9a5488e045eb69b6b898c5aecc81e4,Return Dict from tiler route,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 22:03:16-04:00,14400,2021-07-23 22:03:16-04:00,14400,True,False,['tiles.py'],['844fddae7d70778e1ea76a3a3915f0ba9f9f192c'],3,3,6,1,,,
+87a984c5f2a5ecc9547dcfe6179c7053a574f304,"Move db geometry str -> dict conversion to serializer
+
+This logic was previosly just in the transaction extension, but is
+required across all deserializations",Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 22:03:44-04:00,14400,2021-07-23 22:03:44-04:00,14400,True,False,"['serializers.py', 'transactions.py']",['a9c87aa52f9a5488e045eb69b6b898c5aecc81e4'],2,2,4,2,0.0,0.0,0.0
+3e74d0128cd81db29b8f5c52534576074e69176c,Formatting and linting,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 22:22:38-04:00,14400,2021-07-23 22:22:38-04:00,14400,True,False,"['routes.py', 'core.py', 'links.py', 'env.py', '131aab4d9e49_create_tables.py', '407037cb1636_add_stac_1_0_0_fields.py', 'core.py']",['87a984c5f2a5ecc9547dcfe6179c7053a574f304'],35,24,59,7,0.09090909090909091,0.0,0.0
+b850bd53aa4ffce434cc220a67db7563a5a2db62,isort,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 22:44:35-04:00,14400,2021-07-23 22:44:35-04:00,14400,True,False,"['env.py', '131aab4d9e49_create_tables.py', '407037cb1636_add_stac_1_0_0_fields.py']",['3e74d0128cd81db29b8f5c52534576074e69176c'],6,3,9,3,,,
+6d84c8fc4306bd8ff4ca3f955165338f17f3aba4,"Use total=False for TypedDict
+
+TypedDicts require that either all attributes are considered required,
+or None. Because STAC has optional attributes that we don't want users
+to put ""None"" into (and therefore make the serialized responses have
+""null"" values in fields, which produces invalid STAC), it's better to
+allow all fields to be optional. This allows users to utilize the type
+information in the TypedDict when constructing STAC objects, but
+not be told by type hinting to supply optional fields they don't
+have. This produces some type errors around direct dict access to
+fields of the potential for the dict key to not be present.",Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 22:49:39-04:00,14400,2021-07-23 22:49:39-04:00,14400,True,False,['stac.py'],['b850bd53aa4ffce434cc220a67db7563a5a2db62'],10,9,19,1,,,
+5e2f20ab822a99be4f2aacd5660588bd8fb639b9,Specify type of search_request,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 22:52:29-04:00,14400,2021-07-23 22:52:29-04:00,14400,True,False,['app.py'],['6d84c8fc4306bd8ff4ca3f955165338f17f3aba4'],2,2,4,1,,,
+48ceeda25c6f714450e8c2adda2eba388709d166,Fix docstring in sqlalchemy.__init__,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 22:52:42-04:00,14400,2021-07-23 22:52:42-04:00,14400,True,False,['__init__.py'],['5e2f20ab822a99be4f2aacd5660588bd8fb639b9'],1,1,2,1,,,
+002099fe73e88e17f09b3a86424382474f65eb25,Fix contributing doc dev install commands,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 22:55:44-04:00,14400,2021-07-23 22:55:44-04:00,14400,True,False,['CONTRIBUTING.md'],['48ceeda25c6f714450e8c2adda2eba388709d166'],2,2,4,1,,,
+80da19aa2f68a5808879fe0cb238f28bc286fb55,"Add validation tests for sqlalchemy
+
+This commit adds pystac as a development dependency, and adds tests
+around collection and item fetching to validate the output of the API routes",Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 23:08:52-04:00,14400,2021-07-23 23:24:16-04:00,14400,True,False,"['setup.py', 'test_collection.py', 'test_item.py']",['002099fe73e88e17f09b3a86424382474f65eb25'],0,46,46,3,0.4666666666666667,1.0,1.0
+618157f3243497f2ef13508a9940a5d57f3f072e,Fix collection validation test,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 23:16:02-04:00,14400,2021-07-23 23:51:55-04:00,14400,True,False,"['serializers.py', 'test_collection.json']",['80da19aa2f68a5808879fe0cb238f28bc286fb55'],1,2,3,2,0.0,1.0,0.0
+e908317c445cae92499186ae90b85253ed37cf36,"Fix item validation test.
+
+Required changing the Item to make it valid for EO, which included
+removing existing invalid bands objects from properties and setting on
+the assets. Did this via grabbing example JSON from a Planetary Computer
+landsat-8-c2-l2 Item",Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 23:19:11-04:00,14400,2021-07-23 23:51:55-04:00,14400,True,False,['test_item.json'],['618157f3243497f2ef13508a9940a5d57f3f072e'],82,325,407,1,,,
+5dc408a1a0e30867a349292545bc5f16712605e5,Add jsonschema validation test to pgstac,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 23:28:49-04:00,14400,2021-07-23 23:51:55-04:00,14400,True,False,"['test_collection.py', 'test_item.py']",['e908317c445cae92499186ae90b85253ed37cf36'],0,55,55,2,0.0,1.0,0.4473684210526316
+532c16b283a8aaff916573e96ddbfabbc263ee6e,Fix collection type capatilization,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 23:29:15-04:00,14400,2021-07-23 23:51:55-04:00,14400,True,False,['test_collection.json'],['5dc408a1a0e30867a349292545bc5f16712605e5'],1,1,2,1,,,
+96332c7d13e8ee0fac062de24b2b2591089b27d3,Update to stac-pydantic 2.0.1,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 23:35:10-04:00,14400,2021-07-23 23:51:55-04:00,14400,True,False,"['setup.py', 'setup.py', 'setup.py', 'setup.py', 'setup.py']",['532c16b283a8aaff916573e96ddbfabbc263ee6e'],5,5,10,5,,,
+26550e85a6a2604098f39e61770e77a7095f884c,Update test item to valid STAC 1.0 item,Rob Emanuele,rdemanuele@gmail.com,Rob Emanuele,rdemanuele@gmail.com,2021-07-23 23:38:27-04:00,14400,2021-07-23 23:51:55-04:00,14400,True,False,['test_item.json'],['96332c7d13e8ee0fac062de24b2b2591089b27d3'],82,326,408,1,,,
+bd6f6613e2c3969d5a68fa33509c5b4deb3e7aa3,"Update version to 2.0.0 (#195)
+
+* Fix publish script
+
+* Change versions to 2.0.0
+
+* Update CHANGELOG",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-07-26 17:31:06-04:00,14400,2021-07-26 17:31:06-04:00,14400,True,False,"['CHANGES.md', 'publish', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['50605015ec72043309bfea5163d753fab6358d77'],14,14,28,7,,,
+27de10e64a570767b8ae394be22e211404bb6349,"collection title is optional in landing page links (#198)
+
+* collection title is optional
+
+* add test case",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2021-07-26 21:04:20-06:00,21600,2021-07-26 21:04:20-06:00,21600,True,False,"['test_postgres.py', 'core.py']",['bd6f6613e2c3969d5a68fa33509c5b4deb3e7aa3'],2,17,19,2,1.0,1.0,0.0
+78fa9d0003da5c24cb0496173521c851ffd32739,wait for 5432 to be available before running apps in docker (#208),David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2021-08-07 16:02:42-05:00,18000,2021-08-07 14:02:42-07:00,25200,True,False,['docker-compose.yml'],['27de10e64a570767b8ae394be22e211404bb6349'],2,2,4,1,,,
+f617cf6caf3b392131f0bc8234fb23d575055a8e,"adding `item_serializer` and `item_table` to `BulkTransactionsClient` (#210)
+
+* adding serializer and item_table for bulk transactions
+
+* remove hard coding of database.Item and replace with self.item_table
+
+* lint
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",David Raleigh,davidraleigh@gmail.com,GitHub,noreply@github.com,2021-08-07 17:18:20-04:00,14400,2021-08-07 14:18:20-07:00,25200,True,False,"['transactions.py', 'test_postgres.py']",['78fa9d0003da5c24cb0496173521c851ffd32739'],11,18,29,2,0.0,1.0,0.0
+9ef8601a1dfbf69c7a634eb255af2d84327b6294,Preserve relative paths on link generation (#199),Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-08-10 20:54:15-05:00,18000,2021-08-10 19:54:15-06:00,21600,True,False,"['links.py', 'test_item.py', 'core.py']",['f617cf6caf3b392131f0bc8234fb23d575055a8e'],20,47,67,3,1.0,1.0,1.0
+e6c8e269ce02d1bb89d6309c5e7b19e38b9945d6,"remove shapely from requirement in stac_fastapi.pgstac (#225)
+
+* remove shapely from requirement in stac_fastapi.pgstac
+
+* add shapely in dev requirements",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2021-08-12 20:46:51+02:00,-7200,2021-08-12 14:46:51-04:00,14400,True,False,"['CHANGES.md', 'setup.py']",['9ef8601a1dfbf69c7a634eb255af2d84327b6294'],1,3,4,2,,,
+8e3eb9967ae8c3327650499c043f4c711580b98d,"Fix test-* make targets (#230)
+
+* Add make target for running database
+
+* Fix test-pgstac make target
+
+* Add joplin dependency to test-sqlalchemy target
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Jon Duckworth,jon@radiant.earth,GitHub,noreply@github.com,2021-08-12 17:22:09-04:00,14400,2021-08-12 17:22:09-04:00,14400,True,False,['Makefile'],['e6c8e269ce02d1bb89d6309c5e7b19e38b9945d6'],3,17,20,1,,,
+faaec6fa7cbb07fb826aee53c68dacbabc6c23a9,"Enable conformance class configuration (#214)
+
+* Allow configuration of conformance classes
+
+* Remove conformance override in pgstac
+
+* Add base and extension conformance distinction
+
+* Add default extensions to assuage attrs",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-08-13 16:21:40-05:00,18000,2021-08-13 17:21:40-04:00,14400,True,False,"['transaction.py', 'bulk_transactions.py', 'tiles.py', 'core.py', 'core.py', 'test_item.py', 'core.py', 'extension.py']",['8e3eb9967ae8c3327650499c043f4c711580b98d'],38,79,117,8,0.5714285714285714,1.0,1.0
+8c78311a89d0fa25bfb46b60a2ac041bfdec82d9,"Fix/add landing page links (#229)
+
+* Failing test for search link, use fixture for landing page fetch
+
+* Fix search link type (#219)
+
+* Add test for conformance path in pgstac (#218)
+
+* Remove unnecessary asyncs
+
+* Add failing test for service-desc link
+
+* Add service-desc link to landing page in pgstac (#217)
+
+* Parameterize link tests
+
+* Add root link to landing page in pgstac (#216)
+
+* Add comments on test parameters structure
+
+* Add joplin dependency to test-sqlalchemy target
+
+* Add equivalent sqlalchemy tests
+
+* Get OpenAPI endpoint from app
+
+* Update mocked request for sqlalchemy tests
+
+* Fix httpx deprecation warning in pgstac tests
+
+* Make OpenAPI endpoint configurable",Jon Duckworth,jon@radiant.earth,GitHub,noreply@github.com,2021-08-18 16:20:10-04:00,14400,2021-08-18 16:20:10-04:00,14400,True,False,"['Makefile', 'app.py', 'test_postgres.py', 'conftest.py', 'test_conformance.py', 'test_item.py', 'test_postgres.py', 'test_conformance.py', 'config.py', 'core.py']",['faaec6fa7cbb07fb826aee53c68dacbabc6c23a9'],39,184,223,10,0.5892857142857143,1.0,0.5892857142857143
+63ad916781c57fe9d30e4044a5ef31afef78b992,"fix readme install section (#234)
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2021-08-18 23:18:03+02:00,-7200,2021-08-18 17:18:03-04:00,14400,True,False,"['Dockerfile', 'README.md']",['8c78311a89d0fa25bfb46b60a2ac041bfdec82d9'],12,18,30,2,,,
+ec645745538634c85e06a42f6045b3c2b7276c21,"Correct response codes for bad/unusable bboxes (#235)
+
+* Correct response codes for bad/unusable bboxes
+
+* lint
+
+* Remove bare exceptions
+
+* Remove 501 usage from bbox handling
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-08-18 16:34:32-05:00,18000,2021-08-18 17:34:32-04:00,14400,True,False,"['core.py', 'test_item.py', 'core.py', 'test_item.py']",['63ad916781c57fe9d30e4044a5ef31afef78b992'],3,52,55,4,0.5555555555555556,0.5555555555555556,0.5555555555555556
+3903cb2cc10ac5180f04506ff9b081536e143407,"Add extension schemas to landing (#237)
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-08-18 16:50:50-05:00,18000,2021-08-18 17:50:50-04:00,14400,True,False,"['context.py', 'fields.py', 'query.py', 'sort.py', 'transaction.py', 'bulk_transactions.py', 'tiles.py', 'test_item.py', 'core.py', 'extension.py']",['ec645745538634c85e06a42f6045b3c2b7276c21'],9,62,71,10,0.11764705882352941,1.0,1.0
+e590e75a7907acb9ea396044e76907af0e2102b7,"Add filter extension (#165)
+
+* first pass at adding filter extension
+
+* Fixing implementation. Added conformance classes to extensions so that they can be picked up dynamically in the core client for exposing the server conformance classes.
+
+* implemented queryables endpoints in collections and landing page. Also modified  to use a string to avoid having to import the Extension classes.
+
+* removing unused import and fixing pre-commit errors
+
+* fixing pre-commit errors
+
+* Update filter.py
+
+* updated base conformance classes
+
+* refactoring structure of filter extension to make use of async framework. Modified async classes to use name based extension matching. Matching base core client.
+
+* added async BaseFiltersClient
+
+* client is union of async and base client; add default value
+
+* Uncomment async endpoint logic
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Richard Smith,richard.d.smith@stfc.ac.uk,GitHub,noreply@github.com,2021-08-18 23:23:07+01:00,-3600,2021-08-18 18:23:07-04:00,14400,True,False,"['config.py', '__init__.py', 'fields.py', 'filter.py', 'core.py', 'core.py']",['3903cb2cc10ac5180f04506ff9b081536e143407'],23,185,208,6,0.1276595744680851,0.9893617021276596,0.5425531914893617
+fee20f4944bcc6b297baf7dacf387e53a1ee2b7b,"re-formatting collections endpoint to match spec.  (#232)
+
+* re-formatting collections endpoint to match spec. closes #231
+
+* Add collections list implementations; address related tests
+
+* Fix remaining tests
+
+* Add links to collections list
+
+* Correct types for Collections
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Richard Smith,richard.d.smith@stfc.ac.uk,GitHub,noreply@github.com,2021-08-18 23:28:54+01:00,-3600,2021-08-18 18:28:54-04:00,14400,True,False,"['core.py', 'core.py', 'conftest.py', 'core.py', 'stac.py']",['e590e75a7907acb9ea396044e76907af0e2102b7'],14,67,81,5,0.0,1.0,1.0
+76deabd73d4a26e44a3a28aa63ff9424cf2d5660,"Return empty item collection instead of error when searching (#233)
+
+* now returning empty collection when collection exists, and error if no collection exists
+
+* fixed linting issues
+
+* fixed docstring linting issues
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Zoe Statman-Weil,zstatmanweil@gmail.com,GitHub,noreply@github.com,2021-08-18 15:34:01-07:00,25200,2021-08-18 18:34:01-04:00,14400,True,False,"['core.py', 'test_item.py']",['fee20f4944bcc6b297baf7dacf387e53a1ee2b7b'],10,42,52,2,0.0,1.0,0.1875
+58c668f19d033782d35de167c0c759313341c574,"Add method for search links (#236)
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-08-18 17:37:53-05:00,18000,2021-08-18 18:37:53-04:00,14400,True,False,['core.py'],['76deabd73d4a26e44a3a28aa63ff9424cf2d5660'],0,8,8,1,0.0,1.0,1.0
+d2cdb5799c8421457b47805319dee76c10653662,"Update to STAC API 1.0.0-beta.3 (#239)
+
+* Remove stac_version and stac_extensions from ItemCollection
+
+See https://github.com/radiantearth/stac-api-spec/blob/master/CHANGELOG.md#v100-beta3---2020-08-06
+
+* Update filter extension conformance classes
+
+* Remove duplicate conformance_classes definition
+
+* Update core conformance classes to beta.3",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-08-19 15:38:47-04:00,14400,2021-08-19 14:38:47-05:00,18000,True,False,"['fields.py', 'filter.py', 'test_api.py', 'core.py', 'test_api.py', 'conformance.py', 'core.py', 'stac.py']",['58c668f19d033782d35de167c0c759313341c574'],39,92,131,8,1.0,1.0,0.0
+969fead36ee2c9badd74da9fad291486195a491c,"Upgrade to pgstac 0.3.2 (#238)
+
+* Add pgstac run and shell commands to Makefile
+
+* Update to pgstac 0.3.2
+
+* Account for null features.
+
+See https://github.com/stac-utils/pgstac/issues/45
+
+* Set the collection features outside loop",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-08-20 13:44:21-04:00,14400,2021-08-20 12:44:21-05:00,18000,True,False,"['Makefile', 'docker-compose.yml', 'setup.py', 'core.py']",['d2cdb5799c8421457b47805319dee76c10653662'],4,13,17,4,,,
+fa64c58c78fd02d8611bfd747379104791b9378a,"Update pgstac to return 400 on invalid date parameter. (#240)
+
+* Update pgstac to return 400 on invalid date parameter.
+
+Also allow backends to raise their own InvalidQueryParameter
+exceptions, which will be translated into a 400 by exception
+handling. This is another option for backends that want to handle
+query parameter validation in other ways besides stac-pydantic model validation.
+
+* Remove print added to tests
+
+* Remove unused json import
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-08-20 13:59:37-04:00,14400,2021-08-20 12:59:37-05:00,18000,True,False,"['errors.py', 'core.py', 'test_api.py', 'test_api.py', 'errors.py']",['969fead36ee2c9badd74da9fad291486195a491c'],8,56,64,5,0.8,0.8,0.0
+b0e9d91e9ce59f95bef7135947a405add9468c04,"Specify platform for apps in docker-compose, so build works on M1 machines. (#241)",Edward Keeble,edkeeble@users.noreply.github.com,GitHub,noreply@github.com,2021-08-26 13:03:28-03:00,10800,2021-08-26 12:03:28-04:00,14400,True,False,['docker-compose.yml'],['fa64c58c78fd02d8611bfd747379104791b9378a'],0,2,2,1,,,
+285e24fc3ca074a8f4ca7070348d43e3b5c35c65,"Add Support for CQL JSON to Stac FastAPI PGStac Backend (#209)
+
+* wait for 5432 to be available before running apps in docker
+
+* allow filter item in search for CQL search
+
+* bump required pgstac version to v0.3.0
+
+* update pgstac dependency to 0.3.1
+
+* Update docker to pgstac 0.3.1. Fix #179 (enforce limit range). Tests for CQL
+
+* Update docker to pgstac 0.3.1. Fix #179 (enforce limit range). Tests for CQL
+
+* test for cql search
+
+* make tests wait for database to be running
+
+* bump pgstac version to 0.3.3
+
+* update pgstac test_item_search_get_filter_cql to reflect 200 with empty features array rather than 404
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2021-08-26 12:30:43-05:00,18000,2021-08-26 13:30:43-04:00,14400,True,False,"['Makefile', 'docker-compose.yml', 'setup.py', 'search.py', 'test_api.py', 'test_item.py']",['b0e9d91e9ce59f95bef7135947a405add9468c04'],17,96,113,6,0.4307692307692308,1.0,0.0
+b29d171a536ff88060b04fed4535bb124ff0352a,"Update to 2.1.0 (#243)
+
+* Add note in README about using Docker for Windows with --platform
+
+* Add CI to test generating docs.
+
+This will catch errors around doc build failures on PRs.
+
+This generates docs through a containerized environment, as opposed to
+the GitHub Action, which builds it's own environment. We may want to
+consider utilizing the dockerized environment for the action as well
+to reduce any sync issues
+
+* Add brotli_asgi to stac_fastapi.api
+
+* Add pull request template.
+
+* Update pypi shield in README
+
+* Fix alt text for license sheild
+
+* Refactor changelog
+
+This commit modifies the changelog to be more in line with changelogs
+of other stac-utils projects, and fit more to the 'keep a changelog' pattern.
+
+* Update CHANGELOG for 2.1.0
+
+* Update versions to 2.1.0",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-08-26 22:27:31-04:00,14400,2021-08-26 22:27:31-04:00,14400,True,False,"['pull_request_template.md', 'cicd.yaml', 'CHANGES.md', 'Dockerfile.docs', 'Makefile', 'README.md', 'docker-compose.docs.yml', 'setup.py', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['285e24fc3ca074a8f4ca7070348d43e3b5c35c65'],21,142,163,13,,,
+a68d280d9d67586683bbc53d18288981234aa46f,"Pin FastAPI to avoid OpenAPI docs rendering issues (#246)
+
+* Reorder install order in docker build; remove tiles from extension
+
+titiler depends on an earlier version of FastAPI and doesn't allow the
+dockerized server to have the FastAPI version dictated by the
+stac-fastapi setup.
+
+* Pin fastapi in stac_fastapi.types; remove from other packages.
+
+This pins fastapi to 0.67.* in stac_fastapi.types, and has all other
+packages rely on that dependency to pull in the correct version. This
+also adds a missing dependency on stac_fastapi.types in
+stac_fastapi.api.
+
+Fixes #242
+
+* Remove tiler tests.
+
+This breaks the dockerized tests as titiler isn't installed in the
+docker image anymore. Based on the outcome of #245, these (and ideally
+more robust tests) can be re-added, or the tiles extension will be
+dropped completely.
+
+* Add changelog entry
+
+* Install types first in CI, as it's the base subpackage
+
+* Remove stac_fastapi.extensions[tiles] from test install.
+
+I do not know why, but installing the tiles extra re-installs
+stac-fastapi.types in a way that breaks an import.",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-08-27 16:36:02-04:00,14400,2021-08-27 16:36:02-04:00,14400,True,False,"['cicd.yaml', 'CHANGES.md', 'Dockerfile', 'setup.py', 'setup.py', 'setup.py', 'setup.py', 'test_tiles_extension.py', 'setup.py']",['b29d171a536ff88060b04fed4535bb124ff0352a'],87,13,100,9,1.0,0.6046511627906976,0.3953488372093023
+8cce4fb449d6bdb36a788e959bce6012cd6f83e6,fix pip installs (#248),Darren Wiens,dkwiens@gmail.com,GitHub,noreply@github.com,2021-09-01 08:16:08-07:00,25200,2021-09-01 11:16:08-04:00,14400,True,False,['README.md'],['a68d280d9d67586683bbc53d18288981234aa46f'],2,2,4,1,,,
+9c32fb879a69e982506f71acf9aa7dbf0e2cc758,"Set limit in sqlalchemy backend between 1 and 10000 (#251)
+
+* set limit in sqlalchemy between 1 and 10000
+
+* pre commit
+
+* remove .vscode
+
+* update changelog
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Jonathan Healy,jonathan.d.healy@gmail.com,GitHub,noreply@github.com,2021-09-11 19:40:19-07:00,25200,2021-09-11 20:40:19-06:00,21600,True,False,"['CHANGES.md', 'search.py', 'test_api.py']",['8cce4fb449d6bdb36a788e959bce6012cd6f83e6'],1,36,37,3,1.0,1.0,0.0
+c9654af3b81f888cc5bd39962df6bca4439cb937,"Fixed OAS conformance URL (#263)
+
+* Fixed OAS conformance URL
+
+Closes https://github.com/stac-utils/stac-fastapi/issues/255
+
+* update changelog
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Tom Augspurger,taugspurger@microsoft.com,GitHub,noreply@github.com,2021-09-12 22:39:43-05:00,18000,2021-09-12 21:39:43-06:00,21600,True,False,"['CHANGES.md', 'conformance.py']",['9c32fb879a69e982506f71acf9aa7dbf0e2cc758'],1,2,3,2,,,
+069f0b17e4edc45ef624f89ccf74763f125df716,"Fix #259 (stac_validator error NULL in title element (#260)
+
+* * Modified BaseCoreClient::landing_page to add the collection.get('id') in case title is NULL.
+  This fixes issue 259 where stac_validator would mark having a NULL in the title element.
+
+* * Modified the test as per stac_validator, NULL strings as titles is against spec.
+
+* Update CHANGES.md
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>",Brian G. Maddox,brian.maddox@gmail.com,GitHub,noreply@github.com,2021-09-12 23:54:40-04:00,14400,2021-09-12 21:54:40-06:00,21600,True,False,"['CHANGES.md', 'test_postgres.py', 'core.py']",['c9654af3b81f888cc5bd39962df6bca4439cb937'],3,4,7,3,,,
+2347e6b590a589a643ea0cd6655b0244dbc4d48d,"Add tests for 3d bbox in test_api.py (#254)
+
+* test 3d bbox
+
+* pre-commit
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Jonathan Healy,jonathan.d.healy@gmail.com,GitHub,noreply@github.com,2021-09-13 12:39:33-07:00,25200,2021-09-13 13:39:33-06:00,21600,True,False,"['test_api.py', 'test_api.py']",['069f0b17e4edc45ef624f89ccf74763f125df716'],0,35,35,2,1.0,1.0,0.0
+d0e756029d1029a1e8986851aaa1e00d59cd4e46,"Convert ge to gte and le to lte in sqlalchemy backend (#252)
+
+* allow for gte and lte
+
+* import operator in core.py
+
+* pre-commit
+
+* clean up core
+
+* change operators in api search
+
+* add test cases for pgstac
+
+* run pre-commit
+
+* remove plus one in gt tests
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Jonathan Healy,jonathan.d.healy@gmail.com,GitHub,noreply@github.com,2021-09-21 06:48:40-07:00,25200,2021-09-21 09:48:40-04:00,14400,True,False,"['test_api.py', 'core.py', 'search.py', 'test_api.py', 'search.py']",['2347e6b590a589a643ea0cd6655b0244dbc4d48d'],8,55,63,5,0.8571428571428571,0.8571428571428571,0.0
+f9ea999a30f21fb70f5fd6c099770ea2af5a0909,"Fix typo in changelog (#244)
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-09-21 09:54:02-04:00,14400,2021-09-21 08:54:02-05:00,18000,True,False,['CHANGES.md'],['d0e756029d1029a1e8986851aaa1e00d59cd4e46'],1,1,2,1,,,
+2ffaf12f7a4f249469455cb082f97747845ebbd2,"Fix collection links in the return of the collection list endpoint (#269)
+
+* Fix return of the collection list
+
+Add test
+
+Update changelog
+
+* Fix return of the collection list
+
+Add test
+
+Update changelog
+
+* Lint
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Aaron Su,xunzesu@outlook.com,GitHub,noreply@github.com,2021-09-21 10:45:22-04:00,14400,2021-09-21 09:45:22-05:00,18000,True,False,"['CHANGES.md', 'core.py', 'test_collection.py']",['f9ea999a30f21fb70f5fd6c099770ea2af5a0909'],1,51,52,3,0.0,0.0,1.0
+381b869eaee902824037729a3492e53a462c3523,"add middleware option to enable custom configuration (#267)
+
+* add middleware option to enable custom configuration
+
+* update changelog
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2021-09-21 17:11:21+02:00,-7200,2021-09-21 17:11:21+02:00,-7200,True,False,"['CHANGES.md', 'app.py']",['2ffaf12f7a4f249469455cb082f97747845ebbd2'],2,6,8,2,0.0,1.0,1.0
+1ae63d5b73fa512bc1b0948c42656a5dbc5caed8,"document the postgis>=3 requirement of the sqlalchemy backend (#250)
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Nico Mandery,nico@nmandery.net,GitHub,noreply@github.com,2021-09-21 17:35:40+02:00,-7200,2021-09-21 10:35:40-05:00,18000,True,False,['README.md'],['381b869eaee902824037729a3492e53a462c3523'],0,3,3,1,,,
+e283d20b573370433e4882a436ef8cd8137ed912,"include `stac_version` to default search attributes: #253 (#268)
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Jason Kinyua,20385376+jaysnm@users.noreply.github.com,GitHub,noreply@github.com,2021-09-21 18:44:40+03:00,-10800,2021-09-21 10:44:40-05:00,18000,True,False,['fields.py'],['1ae63d5b73fa512bc1b0948c42656a5dbc5caed8'],0,1,1,1,,,
+27d2d2afbd6c7c754f60d5efdea3af9967bd9b34,"Add non interval date time query to sqlalchemy backend (#262)
+
+* add non interval date to searc request
+
+* add datetime test
+
+* check first 18 chanracters of datetime
+
+* add comment about non inerval data
+
+* test multiple datetime formats
+
+* erase duplicate test date
+
+* run pre-commit
+
+* run pre-commit
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Jonathan Healy,jonathan.d.healy@gmail.com,GitHub,noreply@github.com,2021-09-21 08:53:30-07:00,25200,2021-09-21 10:53:30-05:00,18000,True,False,"['core.py', 'test_api.py']",['e283d20b573370433e4882a436ef8cd8137ed912'],3,28,31,2,0.0,0.9,0.0
+a3c88c12f7c136157c62bdeb2367bd229d644368,"Test alternate geometries in pgstac and sqlalchemy (#264)
+
+* add point, line string tests to sqlalchemy
+
+* add point, line string tests to pgstac
+
+* run pre-commit
+
+* change varianle name fromo poly to geom in sqlalchemy core
+
+* run pre-commit
+
+* lint
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Jonathan Healy,jonathan.d.healy@gmail.com,GitHub,noreply@github.com,2021-09-21 09:04:18-07:00,25200,2021-09-21 11:04:18-05:00,18000,True,False,"['test_api.py', 'core.py', 'test_api.py']",['27d2d2afbd6c7c754f60d5efdea3af9967bd9b34'],6,85,91,3,0.45161290322580644,1.0,0.0
+710665dda16506930e46c31669bc89eefd0b4401,"Version 2.1.1 (#247)
+
+* Version 2.1.1
+
+* Add changes missed in 2.1.1 release
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-09-21 12:29:21-04:00,14400,2021-09-21 11:29:21-05:00,18000,True,False,"['CHANGES.md', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['a3c88c12f7c136157c62bdeb2367bd229d644368'],9,18,27,6,,,
+27e134589107654920c2f1dba54773c8c85d4e1a,"Set collection_id on search for pgstac get_item; update to pgstac 0.3.4 (#270)
+
+* Update to pgstac 0.3.4
+
+* Include collection_id in get_item search.
+
+I've seen strange behavior described in
+https://github.com/stac-utils/pgstac/issues/58, where searching only
+by an Item ID was returning the incorrect Item. Specifyng the
+Collection ID, which this method should be doing, solved this in my case.
+
+* Fix NotFoundError message
+
+* Update CHANGELOG",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-09-23 11:35:09-04:00,14400,2021-09-23 10:35:09-05:00,18000,True,False,"['CHANGES.md', 'docker-compose.yml', 'setup.py', 'core.py']",['710665dda16506930e46c31669bc89eefd0b4401'],4,7,11,4,0.0,1.0,0.0
+00f5ca3bd83a0cdceb3e388d6eb7b8de56a9364e,"Add collection field to default list of fields to include in output (#276)
+
+* Add collection field to default list of fields to include in output
+
+* Update changelog
+
+* Linting
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Robin Wilson,robin@rtwilson.com,GitHub,noreply@github.com,2021-10-18 21:07:12+01:00,-3600,2021-10-18 16:07:12-04:00,14400,True,False,"['CHANGES.md', 'fields.py']",['27e134589107654920c2f1dba54773c8c85d4e1a'],0,2,2,2,,,
+97e0439d26ab439bdfe71ae90e01541c5ca06986,"Added tips and tricks document to the docs folder (#277)
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Robin Wilson,robin@rtwilson.com,GitHub,noreply@github.com,2021-10-18 21:13:14+01:00,-3600,2021-10-18 16:13:14-04:00,14400,True,False,['tips-and-tricks.md'],['00f5ca3bd83a0cdceb3e388d6eb7b8de56a9364e'],0,29,29,1,,,
+6cef4d4c9789639dfd50095fc1310af6a23b624c,"Allow custom models for search GET and items endpoints (#271)
+
+* Allow ItemCollectionUri and SearchGetRequest models to be overridden
+
+This allows setting a different default limit
+
+* Enable usage of custom search model in pgstac
+
+* Update CHANGES.md",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-10-18 16:16:35-04:00,14400,2021-10-18 16:16:35-04:00,14400,True,False,"['CHANGES.md', 'app.py', 'core.py']",['97e0439d26ab439bdfe71ae90e01541c5ca06986'],8,18,26,3,0.0,1.0,0.5
+607e182d517dce8eb3fa4a42898ecf5fae8384a6,"Update get_item in sqlalchemy backend (#275)
+
+* query by item and collection id
+
+* add get item test
+
+* add parameters
+
+* run pre-commit
+
+* Alter items table to have primary key on both id and collection_id
+
+* run pre-commit
+
+* run pre-commit
+
+* Update CHANGES
+
+Co-authored-by: Robin Wilson <robin@rtwilson.com>
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Jonathan Healy,jonathan.d.healy@gmail.com,GitHub,noreply@github.com,2021-10-19 07:20:31-07:00,25200,2021-10-19 10:20:31-04:00,14400,True,False,"['CHANGES.md', '821aa04011e8_change_pri_key_for_item.py', 'core.py', 'database.py', 'test_postgres.py']",['6cef4d4c9789639dfd50095fc1310af6a23b624c'],2,53,55,5,0.3793103448275862,1.0,0.20689655172413793
+8222b4093336dc858e18ac7d628cd8798857290b,"Version 2.2.0 (#278)
+
+* Update changelog for 2.2.0
+
+* Update versions to 2.2.0",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-10-19 11:01:51-04:00,14400,2021-10-19 10:01:51-05:00,18000,True,False,"['CHANGES.md', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['607e182d517dce8eb3fa4a42898ecf5fae8384a6'],11,18,29,6,,,
+31778fe970422b9322598ed38a8452db4a7b1b63,"Return existing links in pgstac (#282)
+
+* Add venv to ignore files
+
+* Add run-joplin-pgstac make command
+
+* Modify ingest logic to update if exists
+
+* Add license to collections; test license link
+
+* Fix bug where existing links were not returned
+
+* Update CHANGES
+
+* Use get_links instead of new _extended_links
+
+Explain why we resolve the href for extra_links in get_links
+
+* Test item extra_links with relative href",Rob Emanuele,rdemanuele@gmail.com,GitHub,noreply@github.com,2021-11-02 10:18:31-04:00,14400,2021-11-02 10:18:31-04:00,14400,True,False,"['.dockerignore', '.gitignore', 'CHANGES.md', 'Makefile', 'ingest_joplin.py', 'core.py', 'links.py', 'test_collection.json', 'test_item.json', 'test_collection.py', 'test_item.py', 'collection.json']",['8222b4093336dc858e18ac7d628cd8798857290b'],43,107,150,12,0.9230769230769231,1.0,0.0
+3219b65a850926b622197ee6a7c3f5fb07c0d5cf,"Add 'filter' to the list of extensions (#280)
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Denis Rykov,rykovd@gmail.com,GitHub,noreply@github.com,2021-11-04 22:07:54+01:00,-3600,2021-11-04 15:07:54-06:00,21600,True,False,['mkdocs.yml'],['31778fe970422b9322598ed38a8452db4a7b1b63'],0,1,1,1,,,
+cad5e5c6fa29bcf0f93c2bd24f7c776360f84972,"Ensure limit 0 searches return 400 (#296)
+
+* Ensure limit 0 searches return 400
+
+* Update changelog",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-11-24 18:02:24-05:00,18000,2021-11-24 16:02:24-07:00,25200,True,False,"['CHANGES.md', 'search.py', 'test_api.py', 'search.py', 'test_api.py']",['3219b65a850926b622197ee6a7c3f5fb07c0d5cf'],2,16,18,5,1.0,1.0,1.0
+185b09ce43ddeb94135c4c95ce33d64b8d201f67,"Fix content-type of /api response (#287)
+
+* Fix content-type of /api response
+
+* Add to changelog
+
+* Reduce footprint of openapi fix",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-11-30 10:19:12-05:00,18000,2021-11-30 09:19:12-06:00,21600,True,False,"['CHANGES.md', 'app.py', 'openapi.py', 'test_api.py', 'test_api.py']",['cad5e5c6fa29bcf0f93c2bd24f7c776360f84972'],2,57,59,5,1.0,1.0,1.0
+c844034788792cddd65f4a97912e28974d9af080,"Set content-type to geojson for search results (#288)
+
+* Set content-type to geojson for search results
+
+* Update changelog
+
+* Test for ORJSON availability
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-11-30 11:08:57-05:00,18000,2021-11-30 10:08:57-06:00,21600,True,False,"['CHANGES.md', 'app.py', 'models.py', 'test_api.py', 'test_api.py']",['185b09ce43ddeb94135c4c95ce33d64b8d201f67'],17,74,91,5,0.32,1.0,1.0
+2d78ca01df061d0586396b9d6879738e4c6420db,Use pythonic variable names where possible (#304),Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-12-01 18:22:30-05:00,18000,2021-12-01 17:22:30-06:00,21600,True,False,"['app.py', 'models.py', 'context.py', 'filter.py', 'transaction.py', 'bulk_transactions.py', 'tiles.py', 'core.py', 'test_api.py', 'test_api.py', 'core.py']",['c844034788792cddd65f4a97912e28974d9af080'],64,64,128,11,,,
+33611f7da569488641dac7bb23efd43feb219f98,"refactoring to create dynamic request model (#213)
+
+* refactoring to create dynamic request model
+
+* Correcting missed reference to configurable pagination class and updating conformance classes.
+
+* Changing pydantic limit model to have max/min [skip ci]
+
+* fixing against test suite for sqlalchemy
+
+* wrapping function calls to make get and post request models
+
+* working to pass tests for pgstac
+
+* changed constraints on limit parameter to pass test
+
+* fixing against pgstac tests
+
+* adding changelog entry",Richard Smith,richard.d.smith@stfc.ac.uk,GitHub,noreply@github.com,2021-12-02 14:08:22+00:00,0,2021-12-02 08:08:22-06:00,21600,True,False,"['CHANGES.md', 'app.py', 'models.py', '__init__.py', '__init__.py', 'fields.py', 'request.py', '__init__.py', 'filter.py', 'request.py', '__init__.py', 'pagination.py', 'token_pagination.py', '__init__.py', 'query.py', 'request.py', '__init__.py', 'request.py', 'sort.py', 'bulk_transactions.py', 'app.py', 'core.py', '__init__.py', 'query.py', 'transactions.py', 'search.py', 'conftest.py', 'app.py', 'core.py', '__init__.py', 'query.py', 'database.py', 'transactions.py', 'conftest.py', 'core.py', 'extension.py', 'search.py']",['2d78ca01df061d0586396b9d6879738e4c6420db'],407,791,1198,37,0.0,0.16666666666666666,0.3333333333333333
+9ea1f2a595f641ad3de66f88d2bbf0a75f388063,Use pgstac queryextension (#306),Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-12-07 11:01:07-06:00,21600,2021-12-07 11:01:07-06:00,21600,True,False,['app.py'],['33611f7da569488641dac7bb23efd43feb219f98'],1,1,2,1,,,
+76e8d64663b79f65a986596f9ad968e008fbf445,"Enable context extension by default (#211)
+
+* enable search context extension #207
+
+* advertise conformance to STAC Spec 1.0.0-beta.2
+
+* did run ""make test"" to let isort do its thing
+
+* Enable `ContextExtension` by default
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",Jason Kinyua,20385376+jaysnm@users.noreply.github.com,GitHub,noreply@github.com,2021-12-08 00:21:17+03:00,-10800,2021-12-07 15:21:17-06:00,21600,True,False,"['CHANGES.md', 'app.py', 'app.py']",['9ea1f2a595f641ad3de66f88d2bbf0a75f388063'],1,6,7,3,,,
+79c0cee7795b95a9ffc5f350c62d4bf69fcc2875,"Update item transactions in SQLAlchemy (#303)
+
+* query by item and collection id
+
+* add get item test
+
+* add parameters
+
+* run pre-commit
+
+* Alter items table to have primary key on both id and collection_id
+
+* update update_item route
+
+* add delete_item changes
+
+* run pre-commit
+
+* run pre-commit
+
+* clean up
+
+* fix query in update/delete items
+
+* run pre commit
+
+* create duplicate item ids, different collections test
+
+* create duplicate item ids, delete item test
+
+* create duplicate item ids, update item test
+
+* clarify tests
+
+* create duplicate item, different collections test in postgres
+
+* remove app client 2 in conftest
+
+Co-authored-by: Robin Wilson <robin@rtwilson.com>
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Jonathan Healy,jonathan.d.healy@gmail.com,GitHub,noreply@github.com,2021-12-10 15:07:56-08:00,28800,2021-12-10 18:07:56-05:00,18000,True,False,"['transactions.py', 'test_postgres.py', 'test_item.py']",['76e8d64663b79f65a986596f9ad968e008fbf445'],4,185,189,3,0.0,1.0,0.736
+c948dbfcd12fff0939d0bc3ecb907878ee217416,"Remove `tiles` extension demo (#309)
+
+* Remove titiler demo extension
+
+* Update changelog",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-12-14 11:57:25-06:00,21600,2021-12-14 11:57:25-06:00,21600,True,False,"['CHANGES.md', 'Makefile', 'mkdocs.yml', 'config.py', 'setup.py', '__init__.py', '__init__.py', 'tiles.py', 'README.md', 'links.py', 'links.py']",['79c0cee7795b95a9ffc5f350c62d4bf69fcc2875'],310,5,315,11,0.24468085106382978,0.0,0.18085106382978725
+256ae3dbc81c6a067f1d18f600d119f62b1bb662,"Pgstac v0.4.0b (#308)
+
+* Added conf property to pgstac search model
+
+* Added filter-lang and filter-crs properties to FilterExtensionPostRequest to conform with the Queryables spec
+
+* Updated create_post_request_model to use the passed in base_model rather than hardcoded BaseSearchPostRequest.
+
+* Updated pgstac _search_base to use aliases when generating json from search request model.
+
+* updates to support pgstac 0.4.0
+
+Co-authored-by: Edward Keeble <edward@developmentseed.org>
+Co-authored-by: Edward Keeble <edkeeble@users.noreply.github.com>
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2021-12-14 15:19:20-06:00,21600,2021-12-14 15:19:20-06:00,21600,True,False,"['docker-compose.yml', 'models.py', 'request.py', 'setup.py', 'core.py', 'search.py', 'conftest.py', 'test_item.py', 'search.py']",['c948dbfcd12fff0939d0bc3ecb907878ee217416'],10,180,190,9,0.05263157894736842,0.8646616541353384,0.07518796992481203
+a1e32cb3d32d3a7f031275296b98309b0c6be1cf,Use provided GET search basemodel (#310),Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2021-12-19 13:40:51-06:00,21600,2021-12-19 13:40:51-06:00,21600,True,False,"['CHANGES.md', 'models.py']",['256ae3dbc81c6a067f1d18f600d119f62b1bb662'],2,4,6,2,,,
+f352c0c5466046378cd8a0b82176481c52b8e874,"Change geometry type in the items table (#299)
+
+Update the the geometry from Polygon to the more general Geometry type",Daniel Wiesmann,yellowcap@users.noreply.github.com,GitHub,noreply@github.com,2022-01-07 02:34:23+00:00,0,2022-01-06 21:34:23-05:00,18000,True,False,"['CHANGES.md', '5909bd10f2e6_change_item_geometry_column_type.py', 'database.py', 'test_api.py', 'test_item_multipolygon.json']",['a1e32cb3d32d3a7f031275296b98309b0c6be1cf'],1,505,506,5,1.0,1.0,0.56
+2f8e96bbdbad588e3b5df7f28dda5bd737228fcc,"Apply necessary environment variables for example docker-compose (#313)
+
+* Apply necessary environment variables for example docker-compose
+
+* Add to changelog",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2022-01-07 14:23:39-06:00,21600,2022-01-07 14:23:39-06:00,21600,True,False,"['CHANGES.md', 'docker-compose.yml']",['f352c0c5466046378cd8a0b82176481c52b8e874'],1,5,6,2,,,
+9ef0d693f54b1b75f92b8f1514aa169202a2d4f1,"Upgrade to pgstac 0.4.2 (#321)
+
+* Upgrade to pgstac 0.4.2
+
+* Update changelog",Matthew McFarland,mmcfarland@gmail.com,GitHub,noreply@github.com,2022-01-11 17:27:52-05:00,18000,2022-01-11 17:27:52-05:00,18000,True,False,"['CHANGES.md', 'docker-compose.yml', 'setup.py']",['2f8e96bbdbad588e3b5df7f28dda5bd737228fcc'],2,3,5,3,,,
+93debff74dac3723f5d181186ea441e97eca4681,"Change of datetime type in BaseSearchGetRequest + test improvement (#318)
+
+* updated gitignore
+
+* added new test item
+
+* added second item to tests
+
+* removed Dict as an option for base get search
+
+* simplifies temporal tests so they only address a datetime search
+
+* updated change log
+
+* modified gitignore
+
+* updated changelog to reflect actual PR number
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Zoe Statman-Weil,zstatmanweil@gmail.com,GitHub,noreply@github.com,2022-01-12 11:23:02-08:00,28800,2022-01-12 13:23:02-06:00,21600,True,False,"['.gitignore', 'CHANGES.md', 'test_item2.json', 'test_item.py', 'search.py']",['9ef0d693f54b1b75f92b8f1514aa169202a2d4f1'],7,738,745,5,0.0,1.0,0.0
+caf6a14819b8554c25baeadefaae63e1769ba28c,"Change type of example collection to 'Collection' (#314)
+
+* Change type of example collection to 'Collection'
+
+The STAC API states that collections must have a 'type' of 'Collection', but the example data had a collection with a type of 'collection' which caused various other tools to fail when processing this collection (see https://github.com/stac-utils/pystac-client/issues/129)
+
+* Update Changelog
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Robin Wilson,robin@rtwilson.com,GitHub,noreply@github.com,2022-01-12 19:27:05+00:00,0,2022-01-12 13:27:05-06:00,21600,True,False,"['CHANGES.md', 'collection.json']",['93debff74dac3723f5d181186ea441e97eca4681'],2,3,5,2,,,
+a7437c1cf2fbd88d61d37f1a3b648e8222cf7a7a,"Throw 400s for invalid datetime formats (#323)
+
+* Throw 400s for bad datetime formats
+
+* update changelog",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2022-01-13 18:16:22-06:00,21600,2022-01-13 17:16:22-07:00,25200,True,False,"['CHANGES.md', 'core.py', 'search.py', 'test_item.py', 'core.py', 'test_item.py']",['caf6a14819b8554c25baeadefaae63e1769ba28c'],8,48,56,6,0.0,1.0,1.0
+6990df1bf9199f76ea603eb0ef8717b07a4b1105,"Fixing import statement to address issue #324 (#325)
+
+* Fixing import statement to address issue #324
+
+* updating changelog
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Richard Smith,richard.d.smith@stfc.ac.uk,GitHub,noreply@github.com,2022-01-14 00:23:07+00:00,0,2022-01-13 17:23:07-07:00,25200,True,False,"['CHANGES.md', 'models.py']",['a7437c1cf2fbd88d61d37f1a3b648e8222cf7a7a'],1,2,3,2,,,
+d5c9d6cdc4c29588ae4fbe1cf5427a5ce5cde66a,"upgrade to use pgstac/pypgstac 0.4.3 (#326)
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2022-01-13 18:28:57-06:00,21600,2022-01-13 17:28:57-07:00,25200,True,False,"['CHANGES.md', 'docker-compose.yml', 'setup.py']",['6990df1bf9199f76ea603eb0ef8717b07a4b1105'],3,3,6,3,,,
+7a97d6cac4764eacff3fb37aab3b9497dfa3d1b7,"Update to 1.0.0-beta.4 (#298)
+
+* Add beta4 conformance classes and suggested docs url
+
+* Remove old docs link
+
+* Add test for service-doc
+
+* Remove println
+
+* Update changelog",Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2022-01-18 09:44:48-06:00,21600,2022-01-18 10:44:48-05:00,18000,True,False,"['CHANGES.md', 'app.py', 'context.py', 'fields.py', 'filter.py', 'query.py', 'sort.py', 'transaction.py', 'test_conformance.py', 'test_conformance.py', 'config.py', 'conformance.py', 'core.py']",['d5c9d6cdc4c29588ae4fbe1cf5427a5ce5cde66a'],34,58,92,13,0.0,1.0,1.0
+44f03c59c8a73bf74692ef7d86935a47bdfb8e84,"Update docker compose for sqlalchemy (#330)
+
+* Update docker compose for sqlalchemy 
+
+Unless I'm missing something, these variables are only needed for pgstac?
+
+* Remove gdal env variables from sqlalchemy compose
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Jonathan Healy,jonathan.d.healy@gmail.com,GitHub,noreply@github.com,2022-01-18 09:57:29-08:00,28800,2022-01-18 11:57:29-06:00,21600,True,False,['docker-compose.yml'],['7a97d6cac4764eacff3fb37aab3b9497dfa3d1b7'],5,0,5,1,,,
+5dc8e0eb63d9cc07663968ed5ed9505e753bf298,Update to version 2.3.0 (#332),Nathan Zimmerman,npzimmerman@gmail.com,GitHub,noreply@github.com,2022-01-18 13:41:53-06:00,21600,2022-01-18 13:41:53-06:00,21600,True,False,"['CHANGES.md', 'VERSION', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['44f03c59c8a73bf74692ef7d86935a47bdfb8e84'],6,17,23,7,,,
+1e3ba0a22ebcd6007c04aeb9b50c634b2e8bc5b7,"bump uvicorn version to resolve websockets security vulnerability (#343)
+
+* bump uvicorn version to resolve websockets security vulnerability
+
+* pin version to 0.17, update changelog",Josh Clark,96131149+jclark-indigoag@users.noreply.github.com,GitHub,noreply@github.com,2022-01-28 17:01:50-05:00,18000,2022-01-28 15:01:50-07:00,25200,True,False,"['CHANGES.md', 'setup.py', 'setup.py']",['5dc8e0eb63d9cc07663968ed5ed9505e753bf298'],3,3,6,3,,,
+157b6bbf325e03402ff934eb401f2b9a1dba6fa3,"Only use `add` method when the value is not ellipsis (#339)
+
+* Only use `add` method when the value is not ellipsis
+
+* add unittest to ensure all properties are returned when requested in search
+
+* changelog entry for #339
+
+* changelog entry for #339
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Nico Mandery,nico@nmandery.net,GitHub,noreply@github.com,2022-02-01 03:22:42+01:00,-3600,2022-01-31 19:22:42-07:00,25200,True,False,"['CHANGES.md', 'request.py', 'test_api.py']",['1e3ba0a22ebcd6007c04aeb9b50c634b2e8bc5b7'],1,24,25,3,0.0,0.0,0.05555555555555555
+7eb47b311ec021b23a4515e9566be82c9d56b04d,"update fastapi requirements (#337)
+
+* update fastapi requirements
+
+* fastapi >=0.73",Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2022-02-15 00:43:30+01:00,-3600,2022-02-14 16:43:30-07:00,25200,True,False,"['CHANGES.md', 'setup.py']",['157b6bbf325e03402ff934eb401f2b9a1dba6fa3'],3,3,6,2,,,
+959c64f423e66a15bcd587988157447e181e1df9,Fix CHANGES repo link (#347),Anthony Lukach,anthonylukach@gmail.com,GitHub,noreply@github.com,2022-02-15 13:53:17-07:00,25200,2022-02-15 21:53:17+01:00,-3600,True,False,['pull_request_template.md'],['7eb47b311ec021b23a4515e9566be82c9d56b04d'],1,1,2,1,,,
+1d58d23e5ced7fd6ea6fca0cce04bae6c60b3c4a,"Convenience method to allow customizing route dependencies (#295)
+
+* Support customizing route dependencies
+
+* Refactor to support direct method calls
+
+* Lint fixup
+
+* Reorg for legibility, code organization
+
+* Lint fix
+
+* Lint fix
+
+* Add missing import
+
+* Use app router
+
+* Lint fix
+
+* Ensure dependencies persist if attached to router
+
+* Cleanup comments
+
+* Add tests for stac_api core
+
+* Cleanup
+
+* Apply isort
+
+* Add to changelog
+
+* Add docstring
+
+* Format code
+
+Co-authored-by: Vincent Sarago <vincent.sarago@gmail.com>",Anthony Lukach,anthonylukach@gmail.com,GitHub,noreply@github.com,2022-02-15 15:01:11-07:00,25200,2022-02-15 23:01:11+01:00,-3600,True,False,"['cicd.yaml', 'CHANGES.md', 'app.py', 'routes.py', 'test_api.py']",['959c64f423e66a15bcd587988157447e181e1df9'],12,220,232,5,0.6417910447761194,1.0,0.8208955223880597
+c27bf8210fa25b31e265ed1c13ec6768f30e968f,update PR template to put related issues in a list so GH will show the rich formatting of them (#359),Phil Varner,pvarner@element84.com,GitHub,noreply@github.com,2022-02-27 12:37:17-05:00,18000,2022-02-27 10:37:17-07:00,25200,True,False,['pull_request_template.md'],['1d58d23e5ced7fd6ea6fca0cce04bae6c60b3c4a'],1,2,3,1,,,
+6c22bad84422151ed2ddfe53dd5242f7f83772d3,"align error response with api spec (#361)
+
+* align error response with api spec
+
+* lint
+
+* update changelog",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-02-28 07:56:45-07:00,25200,2022-02-28 07:56:45-07:00,25200,True,False,"['CHANGES.md', 'errors.py']",['c27bf8210fa25b31e265ed1c13ec6768f30e968f'],3,22,25,2,1.0,1.0,1.0
+81015a153c1d9f36d8e12f17a1bf67370396f472,"Pgstac cql2text (#346)
+
+* add support for cql2-text with pgstac
+
+* update changelog
+
+* peg pygeofilter tag, remove comments in docker-compose
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>",David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2022-03-10 16:50:48-06:00,21600,2022-03-10 16:50:48-06:00,21600,True,False,"['CHANGES.md', 'Makefile', 'docker-compose.yml', 'request.py', 'setup.py', 'core.py', 'search.py', 'test_postgres.py', 'test_item.py']",['6c22bad84422151ed2ddfe53dd5242f7f83772d3'],33,188,221,9,0.04132231404958678,0.9917355371900827,0.0
+bb1543f22c3846ad3d486537df3f3271f8fb550a,fix sqlalchemy bulk item insertion (#358),Phil Varner,philvarner@gmail.com,GitHub,noreply@github.com,2022-03-25 13:25:18-04:00,14400,2022-03-25 12:25:18-05:00,18000,True,False,"['CHANGES.md', 'CONTRIBUTING.md', 'bulk_transactions.py', 'test_postgres.py']",['81015a153c1d9f36d8e12f17a1bf67370396f472'],11,23,34,4,,,
+06f610e74ca5eb1b28756ce66b508d5f974dd559,remove sqlalchemy dev dep on pytest-asyncio - unused and printing warning about asyncio_mode not being defined (#389),Phil Varner,philvarner@gmail.com,GitHub,noreply@github.com,2022-03-26 14:38:36-04:00,14400,2022-03-26 12:38:36-06:00,21600,True,False,"['setup.py', 'test_api.py']",['bb1543f22c3846ad3d486537df3f3271f8fb550a'],2,0,2,2,0.0,0.0,1.0
+c8c8819a0abc69e6bd4d1d40d1e0d8bf07ceac47,"fix search, next, and prev media types (#393)
+
+* update root POST /search link, next, and prev links to use application/geojson instead of application/json
+
+* pre-commit fixup",Phil Varner,pvarner@element84.com,GitHub,noreply@github.com,2022-04-14 15:09:01-04:00,14400,2022-04-14 14:09:01-05:00,18000,True,False,"['links.py', 'test_conformance.py', 'core.py']",['06f610e74ca5eb1b28756ce66b508d5f974dd559'],17,25,42,3,1.0,1.0,0.0
+99ce774e5aca2c7a81068202131749e65a5bfa98,"Improve RFC 3339 datetime handling (#368)
+
+* improve RFC 3339 datetime handling
+
+* install build-essential
+
+* sudo, rearrange files
+
+* gapt -> apt
+
+* install build-essential in docker img
+
+* move ciso8601 dep
+
+* fix typing for parse_interval function
+
+* fix import of parse_interval
+
+* more changes for datetimes
+
+* get the types right
+
+* remove unnecessary parens
+
+* remove classmethod
+
+* add some interval tests
+
+* replace rfc3339_str with pystac.utils.datetime_to_str
+
+* fix search datetime parameter parsing to support empty string as open end of interval
+
+* rename methods
+
+* fix accidental method name repacement for parse_rfc3339
+
+* update tests for double open ended temporal interval
+
+* fix handling of empty string open-ended interval
+
+* fix test that was successful with double-open-ended datetime interval to now fail
+
+* replace ciso8601 with python-dateutil
+
+* Revert ""replace ciso8601 with python-dateutil""
+
+This reverts commit 9f400f413dfe9566c55d92331662b793aedd36c3.
+
+* add pystac dependency to types
+
+* add double-open-ended tests to pgstac tests
+
+* skip mixed open-ended in pgstac
+
+* skip datetime interval empty string in pgstac
+
+* maybe just await the test
+
+* Bump black version to avoid https://github.com/psf/black/issues/2964
+
+* lint
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Phil Varner,pvarner@element84.com,GitHub,noreply@github.com,2022-04-14 15:32:40-04:00,14400,2022-04-14 14:32:40-05:00,18000,True,False,"['.pre-commit-config.yaml', 'Dockerfile.docs', 'README.md', 'setup.py', 'models.py', 'setup.py', 'core.py', 'test_item.py', 'setup.py', 'core.py', 'serializers.py', 'test_item.py', 'setup.py', 'rfc3339.py', 'search.py', 'test_rfc3339.py']",['c8c8819a0abc69e6bd4d1d40d1e0d8bf07ceac47'],98,267,365,16,0.5909090909090909,0.13636363636363635,1.0
+e61b32cf0353fa5b4b5bfc6bc76d60c135f4aa79,"enable hot reloading (#392)
+
+* * refactor makefile targets to be more clear and work better for dev
+* rework multi-stage Dockerfile build to run faster and remove unused
+  directives
+* update README with better instructions for running
+
+* readd pgstac asyncio config
+
+* enable hot-reloading for apps
+
+* update changelog",Phil Varner,philvarner@gmail.com,GitHub,noreply@github.com,2022-04-14 15:44:37-04:00,14400,2022-04-14 14:44:37-05:00,18000,True,False,"['CHANGES.md', 'Dockerfile', 'Makefile', 'README.md', 'docker-compose.yml', 'README.md']",['99ce774e5aca2c7a81068202131749e65a5bfa98'],69,77,146,6,,,
+93c4b1ae0da8cf539d2dd801a0c0137448cfd759,"refactor Makefile and Dockerfile, and update README with better dev instructions (#391)
+
+* * refactor makefile targets to be more clear and work better for dev
+* rework multi-stage Dockerfile build to run faster and remove unused
+  directives
+* update README with better instructions for running
+
+* readd pgstac asyncio config
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Phil Varner,philvarner@gmail.com,GitHub,noreply@github.com,2022-04-14 15:48:39-04:00,14400,2022-04-14 14:48:39-05:00,18000,True,False,[],['e61b32cf0353fa5b4b5bfc6bc76d60c135f4aa79'],0,0,0,0,,,
+8e70b18373cc55760e99dd9b9d8e0939ae38edc9,"pgstac: move asyncio-mode config into pytest.ini and remove unnecessary pytest.mark.asyncio tags (#390)
+
+* pgstac: move asyncio-mode config into pytest.ini and remove unnecessary pytest.mark.asyncio tags
+
+* Pin pytest-asyncio version in pgstac
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Phil Varner,philvarner@gmail.com,GitHub,noreply@github.com,2022-04-15 12:42:32-04:00,14400,2022-04-15 11:42:32-05:00,18000,True,False,"['Makefile', 'pytest.ini', 'setup.py', 'test_api.py', 'test_postgres.py', 'conftest.py', 'test_collection.py', 'test_conformance.py', 'test_item.py', 'test_mgmt.py']",['93c4b1ae0da8cf539d2dd801a0c0137448cfd759'],101,6,107,10,,,
+43f72f4917b0ca1eb329d9ef4ef6bc001b7e1d0d,"add dependabot configuration (#388)
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Phil Varner,philvarner@gmail.com,GitHub,noreply@github.com,2022-04-15 13:56:34-04:00,14400,2022-04-15 12:56:34-05:00,18000,True,False,['dependabot.yml'],['8e70b18373cc55760e99dd9b9d8e0939ae38edc9'],0,34,34,1,,,
+77b368fc44a174f5e4d20bb89821f212bcf638f4,"change transactions clients method signatures to match use, allow result of None to return 204 (#387)
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Phil Varner,philvarner@gmail.com,GitHub,noreply@github.com,2022-04-15 16:43:54-04:00,14400,2022-04-15 15:43:54-05:00,18000,True,False,"['routes.py', 'core.py', 'transactions.py', 'transactions.py', 'core.py']",['43f72f4917b0ca1eb329d9ef4ef6bc001b7e1d0d'],47,80,127,5,0.0,1.0,0.06666666666666667
+bda2412537297cbeaa61265e7088f896cf6faa36,"update all conformance classes to 1.0.0-rc.1 and fix several extension cc URIs with extra forward-slash (#383)
+
+* update all conformance classes to 1.0.0-rc.1 and fix several extension cc URIs with extra forward-slash
+
+* add collections conformance class, update Changelog
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Phil Varner,philvarner@gmail.com,GitHub,noreply@github.com,2022-04-15 16:47:21-04:00,14400,2022-04-15 15:47:21-05:00,18000,True,False,"['CHANGES.md', 'context.py', 'fields.py', 'filter.py', 'query.py', 'sort.py', 'transaction.py', 'conformance.py']",['77b368fc44a174f5e4d20bb89821f212bcf638f4'],26,31,57,8,,,
+a3185b4dccb64f96928d3ccbbe27efb556845eb3,"Fix docs (#373)
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Denis Rykov,rykovd@gmail.com,GitHub,noreply@github.com,2022-04-18 13:08:44+01:00,-3600,2022-04-18 07:08:44-05:00,18000,True,False,['mkdocs.yml'],['bda2412537297cbeaa61265e7088f896cf6faa36'],4,5,9,1,,,
+6c00058bf901a42e5b78a82d81002951c17a1607,"POST a feature collection to the items route (#367)
+
+* process feature collection
+
+* add insert feature colllection test
+
+* tests pass
+
+* run pre-commit
+
+* clean up test
+
+* run pre-commit again
+
+* Update changelog
+
+* return none
+
+* pre-commit
+
+* Update return type of create_item function
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Jonathan Healy,jonathan.d.healy@gmail.com,GitHub,noreply@github.com,2022-04-18 10:11:44-07:00,25200,2022-04-18 12:11:44-05:00,18000,True,False,"['CHANGES.md', 'transactions.py', 'test_postgres.py']",['a3185b4dccb64f96928d3ccbbe27efb556845eb3'],3,41,44,3,0.16,1.0,0.0
+526501be27640edb924a4bced3e570405fe955a7,"add 3.9 and 3.10 to CI matrix, update several GH actions (#382)
+
+* add 3.9 and 3.10 to CI matrix, update several GH actions
+
+* Fix unclosed brackets in cicd file
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Phil Varner,philvarner@gmail.com,GitHub,noreply@github.com,2022-04-19 00:52:04-04:00,14400,2022-04-18 21:52:04-07:00,25200,True,False,"['cicd.yaml', 'deploy_mkdocs.yml', 'publish.yml']",['6c00058bf901a42e5b78a82d81002951c17a1607'],8,11,19,3,,,
+162a1a2c324b4c2bfe3451f7ae19d7840a0e0452,"PgSTAC: API hydration of search result items (#397)
+
+* Upgrade to pgstac 0.5.1
+
+Initial changes to get most tests passing.
+
+* Add option to hydrate pgstac search results in API
+
+* Support fields extension in nohydrate mode
+
+* Updates to hydrate and filter functionality.
+
+This was done in a pairing session with @mmcfarland
+
+* Fix fields extensions and reduce number of loops
+
+* Tolerate missing required attributes with fields extension
+
+Use of the fields extension can result in the return of invalid stac
+items if excludes is used on required attributes. When injecting item
+links, don't attempt to build links for which needed attributes aren't
+available. When API Hydrate is enabled, the required attributes are
+preserved prior to filtering and are used in the link generation.
+
+* Run pgstac tests in db and api hydrate mode
+
+* Merge dicts within lists during hydration
+
+In practice, an asset on a base_item and an item may have mergable
+dicts (ie, raster bands).
+
+* Add note on settings in readme
+
+* Pass request to base_item_cache
+
+This will be used by implementors who need app state which is stored on
+request.
+
+* Upgrade pypgstac and use included hydrate function
+
+The hydrate function was improved and moved to pypgstac so it could be
+used in other projects outside of stac-fastapi. It was developed with a
+corresponding dehydrate function to ensure parity between the two.
+
+The version of pypgstac is unpublished and pinned to a draft commit at
+the point and will be upgraded subsequently.
+
+* Improve fields extension implementation
+
+Correctly supports deeply nested property keys in both include and
+exclude, as well as improves variable naming, comments, and test cases.
+
+* Remove unused error type
+
+* adjust tests for changes in api
+
+* remove print statements
+
+* add bbox back to items in tests
+
+* Upgrade pgstac
+
+* Fix conformance test fixtures
+
+* Fix sqlalchemy test with new status for FK error
+
+* Align fields ext behavior for invalid includes
+
+* Lint
+
+* Changelog
+
+* Remove psycopg install dependency
+
+* Relax dependency version of pgstac to 0.6.* series
+
+* Update dev environment to pgstac 0.6.2
+
+* Changelog fix
+
+Co-authored-by: Rob Emanuele <rdemanuele@gmail.com>
+Co-authored-by: Ubuntu <planetarycomputer@pct-bitner-vm.kko0dpzi4g3udak2ovyb5nsdte.ax.internal.cloudapp.net>",Matt McFarland,mmcfarland@microsoft.com,GitHub,noreply@github.com,2022-05-13 20:26:16-04:00,14400,2022-05-13 20:26:16-04:00,14400,True,False,"['CHANGES.md', 'docker-compose.yml', 'errors.py', 'README.md', 'setup.py', 'config.py', 'core.py', 'base_item_cache.py', 'utils.py', 'test_postgres.py', 'conftest.py', 'test2_collection.json', 'test2_item.json', 'test_conformance.py', 'test_item.py', 'test_item.py']",['526501be27640edb924a4bced3e570405fe955a7'],77,975,1052,16,0.6339285714285714,0.7410714285714286,0.38392857142857145
+226bdc0b20474c5d81d273abee4d10bc13874977,"Added bulk item inserts for pgstac implementation (#411)
+
+* Added bulk item inserts for pgstac implementation
+
+* Updated changelog",mshalak-nix,57914365+mshalak-nix@users.noreply.github.com,GitHub,noreply@github.com,2022-06-16 21:26:10+03:00,-10800,2022-06-16 13:26:10-05:00,18000,True,False,"['CHANGES.md', 'bulk_transactions.py', 'app.py', 'transactions.py', 'test_postgres.py', 'conftest.py']",['162a1a2c324b4c2bfe3451f7ae19d7840a0e0452'],6,90,96,6,0.5882352941176471,1.0,0.23529411764705882
+52438a12a11554c4cbb782e3577d953170f7e142,Bugfix: List collection ID in NotFoundError (#420),Anthony Lukach,anthonylukach@gmail.com,GitHub,noreply@github.com,2022-07-08 15:28:34-06:00,21600,2022-07-08 15:28:34-06:00,21600,True,False,['core.py'],['226bdc0b20474c5d81d273abee4d10bc13874977'],1,1,2,1,,,
+0e4fea3b17b509f01f83bf03cc523296c21b098c,"Make item geometry and bbox nullable for sqlalchemy backend (#398)
+
+Closes #350",Daniel Wiesmann,yellowcap@users.noreply.github.com,GitHub,noreply@github.com,2022-07-13 16:40:10+01:00,-3600,2022-07-13 11:40:10-04:00,14400,True,False,"['CHANGES.md', '7016c1bf3fbf_make_item_geometry_and_bbox_nullable.py', 'setup.py', 'database.py', 'serializers.py', 'test_api.py', 'test_item_geometry_null.json']",['52438a12a11554c4cbb782e3577d953170f7e142'],6,247,253,7,0.8604651162790697,0.9302325581395349,0.6046511627906976
+048340680075e87fa0ea384a03dd424bf8f04d9a,pin pygeofilter to version instead of github (#426),Vincent Sarago,vincent.sarago@gmail.com,GitHub,noreply@github.com,2022-07-21 15:33:59+02:00,-7200,2022-07-21 08:33:59-05:00,18000,True,False,['setup.py'],['0e4fea3b17b509f01f83bf03cc523296c21b098c'],1,1,2,1,,,
+4f55ba47c44fbd584daeb3110a293aeb2f5fb0ec,Remove duplicated code (#428),Denis Rykov,rykovd@gmail.com,GitHub,noreply@github.com,2022-07-28 16:16:42+02:00,-7200,2022-07-28 08:16:42-06:00,21600,True,False,['core.py'],['048340680075e87fa0ea384a03dd424bf8f04d9a'],2,0,2,1,1.0,0.0,0.0
+1faabd3881e0e7339ab8f92757cbd654a0456007,"Fix media type for queryables endpoints (#421)
+
+* Fix media type for queryables endpoints
+
+* Add CHANGELOG entry for #421
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Jon Duckworth,duckontheweb@gmail.com,GitHub,noreply@github.com,2022-07-28 10:24:08-04:00,14400,2022-07-28 08:24:08-06:00,21600,True,False,"['CHANGES.md', 'models.py', 'filter.py', 'test_api.py']",['4f55ba47c44fbd584daeb3110a293aeb2f5fb0ec'],4,29,33,4,1.0,1.0,1.0
+286fd986486691984700b4ca6f51eac2677eb480,"Update filter conformance classes (#417)
+
+* Update filter.py
+
+* Update stac_fastapi/extensions/stac_fastapi/extensions/core/filter/filter.py
+
+* Update item search filter conformance class
+
+* Update filter conformance class, add features filter conformance class
+
+* linting
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>
+Co-authored-by: Jeff Albrecht <jeff@arturo.ai>",Matthias Mohr,webmaster@mamo-net.de,GitHub,noreply@github.com,2022-07-31 04:43:37+02:00,-7200,2022-07-30 20:43:37-06:00,21600,True,False,['filter.py'],['1faabd3881e0e7339ab8f92757cbd654a0456007'],3,5,8,1,,,
+b7580fe4a526b1a868596af0784540ffde0251ec,"Fix/forwarding headers (#415)
+
+* Respect forwarding headers in pgstac
+
+* Respect forwarding headers in sqlalchemy
+
+* Linting fixes
+
+* Moved to proxy header middleware
+
+* add makefile command to run api test cases
+
+* bugfix, make method static
+
+* add unittests for proxy header middleware
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Tom Christian,64801328+captaincoordinates@users.noreply.github.com,GitHub,noreply@github.com,2022-08-01 11:14:30-07:00,25200,2022-08-01 12:14:30-06:00,21600,True,False,"['.gitignore', 'CHANGES.md', 'Makefile', 'app.py', 'middleware.py', 'test_middleware.py', 'test_api.py', 'test_collection.py', 'test_item.py', 'test_api.py', 'test_collection.py', 'test_item.py']",['286fd986486691984700b4ca6f51eac2677eb480'],4,611,615,12,0.4910941475826972,0.8625954198473282,0.4122137404580153
+f27dc9a0f473a638ed0be4a5e320bee2e2eb476a,"Add support for APIRouter prefix (#429)
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Denis Rykov,rykovd@gmail.com,GitHub,noreply@github.com,2022-08-01 22:38:30+02:00,-7200,2022-08-01 14:38:30-06:00,21600,True,False,"['CHANGES.md', 'app.py', 'filter.py', 'transaction.py', 'bulk_transactions.py', 'core.py', 'links.py', 'test_api.py', 'conftest.py', 'test_conformance.py', 'test_item.py', 'core.py', 'requests.py']",['b7580fe4a526b1a868596af0784540ffde0251ec'],25,94,119,13,0.43902439024390244,0.43902439024390244,1.0
+c1d940f94be82825ccc8d027f91097119eed5931,remove print (#438),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-08-01 15:09:29-06:00,21600,2022-08-01 15:09:29-06:00,21600,True,False,['middleware.py'],['f27dc9a0f473a638ed0be4a5e320bee2e2eb476a'],1,0,1,1,1.0,1.0,0.0
+fa658f74170f93fc2952daca08bfc7f1a1f733ef,"Fix joplin pgstac (#418)
+
+* Remove useless variables in loadjoplin-pgstac
+
+* Fix database container port mapping
+
+* Bump pgstac version
+
+* expose stac db on 5439 local port
+
+* loadjoplin-pgstac depends on database
+
+Co-authored-by: Jon Duckworth <duckontheweb@gmail.com>
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Rémi Cresson,remi.cresson@inrae.fr,GitHub,noreply@github.com,2022-08-01 23:46:33+02:00,-7200,2022-08-01 15:46:33-06:00,21600,True,False,['docker-compose.yml'],['c1d940f94be82825ccc8d027f91097119eed5931'],6,1,7,1,,,
+c535acae74259d9db5ad26b7034eb3950fee491d,"remove `router_middleware` function (dead code) (#439)
+
+* remove dead code
+
+* update changelog",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-08-01 16:20:42-06:00,21600,2022-08-01 16:20:42-06:00,21600,True,False,"['CHANGES.md', 'middleware.py']",['fa658f74170f93fc2952daca08bfc7f1a1f733ef'],28,2,30,2,0.0,0.0,0.0
+d2fcf1337e1895f882545ab5839d6514af5bd238,"Use collection_id path parameter Items Transactions endpoints (#425)
+
+* Add collection_id path parameter and check against Item collection property
+
+* Fix unformatted f-strings
+
+* Fix Item PUT endpoint per #385
+
+* Update API tests to use new PUT paths
+
+* Make equivalent changes to sqlalchemy backend
+
+* Add CHANGELOG entry for #425
+
+* Fix failing tests from previous merge
+
+* Return 400 for Item id or collection conflicts",Jon Duckworth,jon@regrow.ag,GitHub,noreply@github.com,2022-08-02 13:50:09-04:00,14400,2022-08-02 11:50:09-06:00,21600,True,False,"['CHANGES.md', 'ingest_joplin.py', 'test_api.py', 'transaction.py', 'transactions.py', 'test_api.py', 'test_postgres.py', 'conftest.py', 'test_item.py', 'transactions.py', 'test_api.py', 'test_postgres.py', 'test_item.py', 'feature.geojson', 'core.py', 'stac.py']",['c535acae74259d9db5ad26b7034eb3950fee491d'],76,332,408,16,0.006622516556291391,1.0,0.0728476821192053
+e6b353a9638f2e2d6030dd409718ff6eecaa176e,"Return added Item/Collection in Transactions response (#424)
+
+* Add collection_id path parameter and check against Item collection property
+
+* Fix unformatted f-strings
+
+* Fix Item PUT endpoint per #385
+
+* Update API tests to use new PUT paths
+
+* Make equivalent changes to sqlalchemy backend
+
+* Add CHANGELOG entry for #425
+
+* Fix failing tests from previous merge
+
+* Return 400 for Item id or collection conflicts
+
+* Add failing tests
+
+* Return added Item/Collection from Transactions endpoints
+
+* Format changes
+
+* Add CHANGES entry for #424
+
+* Get Transactions Item response collection id from path parameter
+
+* remove duplicate test cases
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Jon Duckworth,jon@regrow.ag,GitHub,noreply@github.com,2022-08-02 14:00:33-04:00,14400,2022-08-02 12:00:33-06:00,21600,True,False,"['CHANGES.md', 'transactions.py', 'test_collection.py', 'test_item.py']",['d2fcf1337e1895f882545ab5839d6514af5bd238'],4,49,53,4,0.0,0.0,0.15789473684210525
+0d36b76ce85b2328c6df9bc7de57d42e287d1efe,"dont break on app startup when pagination extension is not included (#444)
+
+* dont break on app startup when pagination extension is not included
+
+* update changelog
+
+* better variable names",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-08-04 05:20:36-06:00,21600,2022-08-04 05:20:36-06:00,21600,True,False,"['CHANGES.md', 'app.py']",['e6b353a9638f2e2d6030dd409718ff6eecaa176e'],2,7,9,2,0.0,1.0,1.0
+397acac5639b362a2521c55759bc87b715330934,"add default CORS middleware (#441)
+
+* add default CORS middleware
+
+* test that default cors middleware is working",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-08-04 05:39:45-06:00,21600,2022-08-04 05:39:45-06:00,21600,True,False,"['app.py', 'middleware.py', 'test_middleware.py']",['0d36b76ce85b2328c6df9bc7de57d42e287d1efe'],3,60,63,3,0.23529411764705882,1.0,1.0
+364fcebef1773d3c9846b164f7ec1af7d9cf3d11,"Prep 2.4.0 (#445)
+
+* bump versions
+
+* update changelog",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-08-04 06:10:50-06:00,21600,2022-08-04 06:10:50-06:00,21600,True,False,"['CHANGES.md', 'VERSION', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['397acac5639b362a2521c55759bc87b715330934'],6,16,22,7,,,
+4369424d2a1976121b5319dd1a840168046949a8,include stac_extensions when ingesting joplin test dataset (#446),Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-08-04 07:08:12-06:00,21600,2022-08-04 07:08:12-06:00,21600,True,False,['ingest_joplin.py'],['364fcebef1773d3c9846b164f7ec1af7d9cf3d11'],1,0,1,1,0.0,0.0,0.0
+9f236be795606047621d35e4a96ae39dec97480e,"replace ciso8601 with pyiso8601 (#448)
+
+* replace ciso8601 with pyiso8601
+
+* update changelog
+
+* test types package in ci",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-08-05 11:15:36-06:00,21600,2022-08-05 11:15:36-06:00,21600,True,False,"['cicd.yaml', 'CHANGES.md', 'setup.py', 'rfc3339.py']",['4369424d2a1976121b5319dd1a840168046949a8'],6,24,30,4,0.0,1.0,1.0
+5e1ea82bd6be86e71689c4194e0e96f5c656723a,"update versions, prep changelog (#449)",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-08-05 11:27:12-06:00,21600,2022-08-05 11:27:12-06:00,21600,True,False,"['CHANGES.md', 'VERSION', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['9f236be795606047621d35e4a96ae39dec97480e'],6,16,22,7,,,
+b880bb3c8cbe3c282b6ac50788fe31bee575e536,"Quote password in the PostgreSQL connection string (#457)
+
+* quote password
+
+* update change log",Prayag,89916385+pt-cervest@users.noreply.github.com,GitHub,noreply@github.com,2022-09-15 15:31:59+01:00,-3600,2022-09-15 10:31:59-04:00,14400,True,False,"['CHANGES.md', 'config.py']",['5e1ea82bd6be86e71689c4194e0e96f5c656723a'],7,23,30,2,,,
+926698034f836ed4db13e03c9c33257c4a86020a,Locked pygeoif==0.7 (#466),Ivica Matić,ivica-matic@outlook.com,GitHub,noreply@github.com,2022-09-30 20:19:30+01:00,-3600,2022-09-30 15:19:30-04:00,14400,True,False,['setup.py'],['b880bb3c8cbe3c282b6ac50788fe31bee575e536'],0,1,1,1,,,
+d1daa927249f52efab8ce5f64827493e8d029749,"remove create_sync_endpoint, run sync functions in background thread (#471)
+
+* remove create_sync_endpoint, run sync functions in background thread
+
+* remove _create_endpoint instance methods
+
+* pass response class to filter extension endpoints",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-10-02 16:11:50-04:00,14400,2022-10-02 14:11:50-06:00,21600,True,False,"['app.py', 'routes.py', 'filter.py', 'transaction.py', 'bulk_transactions.py']",['926698034f836ed4db13e03c9c33257c4a86020a'],144,51,195,5,0.4230769230769231,0.0,0.0
+25879afe94296eb82b94b523bfa2871b686e035a,"Add 'servers' and 'description' in OpenAPI (#459)
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Stijn Caerts,StijnCaerts@users.noreply.github.com,GitHub,noreply@github.com,2022-10-02 22:20:21+02:00,-7200,2022-10-02 14:20:21-06:00,21600,True,False,['app.py'],['d1daa927249f52efab8ce5f64827493e8d029749'],1,5,6,1,1.0,1.0,1.0
+fbdd9931721a73fbbf54646f853ef720dfb25268,"Pgstac queryables (#474)
+
+* add queryables
+
+* bump pgstac version
+
+* add tests for queryables
+
+* make id refer to current url
+
+* update content type, add changelog",David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2022-10-05 08:52:42-05:00,18000,2022-10-05 08:52:42-05:00,18000,True,False,"['CHANGES.md', 'docker-compose.yml', 'transaction.py', 'app.py', '__init__.py', 'filter.py', 'test_api.py', 'conftest.py']",['25879afe94296eb82b94b523bfa2871b686e035a'],5,77,82,8,0.42857142857142855,1.0,0.023809523809523808
+9ee7cb100a64773a87f3d53f413dd1bbee41a9c9,"Queryables 404 for non-existent collection ids (#482)
+
+* Queryables 404's for non-existent collection
+
+Return a not-found response if pgstac does not return a queryable
+object when passed a non-existing collection id.
+
+* Changelog",Matt McFarland,mmcfarland@microsoft.com,GitHub,noreply@github.com,2022-10-25 15:35:14-04:00,14400,2022-10-25 15:35:14-04:00,14400,True,False,"['CHANGES.md', 'docker-compose.yml', 'filter.py', 'test_api.py']",['fbdd9931721a73fbbf54646f853ef720dfb25268'],2,17,19,4,0.7142857142857143,1.0,0.0
+06218c585a5171852842f5cc12de743c46bb2bba,"Add bbox and datetime to /collections/{collectionId}/items (#477)
+
+* Add bbox and datetime to ItemCollectionUri
+
+Imported str2list function from stac_fastapi.types.search
+as already have dependency on it.
+
+* Add bbox and datetime to ABC item_collection
+
+Using same type signature as get_search
+
+* Add bbox and datetime to PgStac item_collection
+
+Used the same base_args -> clean from the search routes
+Probably not necessary in this situation but thought
+I'd keep it similar (and extensible).
+
+* Update CHANGES.md
+
+* Add bbox and datetime to SQLAlchemy item_collection
+
+Copy the bbox and datetime filtering from the search routes
+
+* Fix: convert SQLAlchemy bbox to list[int]
+
+* Add item_collection bbox/datetime tests",Chris Arderne,chris@rdrn.me,GitHub,noreply@github.com,2022-11-07 15:18:37+00:00,0,2022-11-07 09:18:37-06:00,21600,True,False,"['CHANGES.md', 'models.py', 'core.py', 'test_api.py', 'core.py', 'test_api.py', 'core.py']",['9ee7cb100a64773a87f3d53f413dd1bbee41a9c9'],8,172,180,7,0.0,0.7709923664122137,0.0
+bb53a185dfc7984b0da4410974605c73602269ad,"Bumpallowedpygeofilter (#487)
+
+* bump allowable versions of pygeofilter to include .2.x
+
+* deps: floor pygeofilter at v0.2
+
+* deps: ceil fastapi belowe 0.87
+
+Co-authored-by: Pete Gadomski <pete.gadomski@gmail.com>",David Bitner,bitner@dbspatial.com,GitHub,noreply@github.com,2022-11-17 09:15:35-06:00,21600,2022-11-17 08:15:35-07:00,25200,True,False,"['setup.py', 'setup.py']",['06218c585a5171852842f5cc12de743c46bb2bba'],3,2,5,2,,,
+3d362d2fd9271ce915513b995bc9c52e42647b15,"Ensure items endpoint is geojson (#488)
+
+* fix: items endpoint is geojson
+
+* chore: update changelog
+
+Co-authored-by: Jeff Albrecht <geospatialjeff@gmail.com>",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2022-11-17 08:30:25-07:00,25200,2022-11-17 08:30:25-07:00,25200,True,False,"['CHANGES.md', 'app.py', 'test_api.py', 'test_api.py']",['bb53a185dfc7984b0da4410974605c73602269ad'],3,15,18,4,1.0,1.0,1.0
+b94704f50e32d1ee152d4fa73aa9278cac5b4a1a,"Prep 2.4.2 release (#501)
+
+* update changelog
+
+* bump versions
+
+* formatting
+
+* gitlab -> github
+
+* add if
+
+* roll our own pre-commit action
+
+* formatting",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-11-25 11:24:10-07:00,25200,2022-11-25 11:24:10-07:00,25200,True,False,"['cicd.yaml', '.pre-commit-config.yaml', 'CHANGES.md', 'VERSION', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['3d362d2fd9271ce915513b995bc9c52e42647b15'],16,21,37,9,,,
+b00370e4ad673ec5b6237d482632762b39d97f7c,"Add environment variable to disable Transaction extension in provided `pgstac` app (#495)
+
+* Add environment variable to disable Transaction ext in pgstac app
+
+* revert disable transactions env var
+
+* Add ENABLED_EXTENSIONS env var for pgstac app
+
+* fix quotes",Jake Herrmann,jtherrmann1@gmail.com,GitHub,noreply@github.com,2022-11-25 09:40:09-09:00,32400,2022-11-25 11:40:09-07:00,25200,True,False,['app.py'],['b94704f50e32d1ee152d4fa73aa9278cac5b4a1a'],11,27,38,1,,,
+d53e7921c82d86fc00e23f4d9bc336a945739031,"Release 2.4.3 (#502)
+
+* bump versions
+
+* update changelog",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2022-11-25 11:47:22-07:00,25200,2022-11-25 11:47:22-07:00,25200,True,False,"['CHANGES.md', 'VERSION', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['b00370e4ad673ec5b6237d482632762b39d97f7c'],6,19,25,7,,,
+97b091127e41b24a600cdbc49466074562f554ae,Allow url encoded queries (#504),Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2022-11-28 23:01:09-07:00,25200,2022-11-28 23:01:09-07:00,25200,True,False,"['CHANGES.md', 'core.py', 'test_api.py', 'core.py', 'test_api.py']",['d53e7921c82d86fc00e23f4d9bc336a945739031'],5,23,28,5,1.0,1.0,0.0
+f69c11abf8430edd9df5f5f0927e56afba20be27,"Correct path in register_update_item docstring (#507)
+
+* Correct path in register_update_item docstring
+
+* Add #507 to changelog",Brendan McAndrew,19274445+bmcandr@users.noreply.github.com,GitHub,noreply@github.com,2022-12-22 14:55:49-05:00,18000,2022-12-22 12:55:49-07:00,25200,True,False,"['CHANGES.md', 'transaction.py']",['97b091127e41b24a600cdbc49466074562f554ae'],1,2,3,2,,,
+c3d7c144a88b2a27545eec5055a7a3b0a54ea967,"chore: fixup changelog (#509)
+
+Adds link targets and dates",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-01-02 13:09:25-07:00,25200,2023-01-02 21:09:25+01:00,-3600,True,False,['CHANGES.md'],['f69c11abf8430edd9df5f5f0927e56afba20be27'],18,18,36,1,,,
+da012a635b1c0185d40595db11c76ac9f110d796,"Update pgstac to v0.6.12 (#511)
+
+* deps: update pgstac to v0.6.12
+
+We have a floating v0.6.* dependency in code, but our CI contains deps on (two
+different) older pgstac versions. This commit updates those references to point
+to https://github.com/stac-utils/pgstac/releases/tag/v0.6.12, and contains some
+sidecar yaml linting.
+
+* chore: update changelog",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-01-17 15:29:09-07:00,25200,2023-01-17 15:29:09-07:00,25200,True,False,"['cicd.yaml', 'CHANGES.md', 'docker-compose.yml']",['c3d7c144a88b2a27545eec5055a7a3b0a54ea967'],10,13,23,3,,,
+15b21b014c360dd2938b5a6f87e1732822e585f2,"Use stac-api-validator in ci (#508)
+
+* feat: add validation via stac-api-validator
+
+Includes a local validation script and a CI job.
+
+* fix: get_item response is geojson
+
+* fix, pgstac: self link, item collection endpoint
+
+* fix: don't add context extension to landing page
+
+* deps: update uvicorn to non-yanked version
+
+* fix: exclude optional collection values
+
+If we're not using response models, we can't automagically exclude none values.
+
+* fix: add required links to item collection
+
+sqlalchemy",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-01-18 04:51:16-07:00,25200,2023-01-18 04:51:16-07:00,25200,True,False,"['cicd.yaml', 'validate', 'app.py', 'setup.py', 'core.py', 'links.py', 'test_api.py', 'setup.py', 'core.py', 'serializers.py', 'test_api.py', 'conftest.py', 'core.py']",['da012a635b1c0185d40595db11c76ac9f110d796'],25,200,225,13,0.7540983606557377,0.2786885245901639,0.4262295081967213
+c32d5bc4979961493eea4276548012f1155f8e86,"Add 3.11 to test matrix (#500)
+
+* Add 3.11 to test matrix
+
+* gitlab -> github
+
+* add if
+
+* dont install server extra
+
+* roll our own pre-commit action
+
+* pin dev version of pypgstac[psycopg]
+
+* remove pypgstac from dev, add psycopg extra to install
+
+* pin pypgstac
+
+* revert change sto pgstac deps
+
+* bump uvicorn to 0.19.0
+
+* whoops
+
+* fix: define __str__ for Queryables
+
+Needed for 3.11 support.
+
+Co-authored-by: Anthony Shaw <anthony.p.shaw@gmail.com>
+Co-authored-by: Pete Gadomski <pete.gadomski@gmail.com>",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2023-01-18 08:57:08-07:00,25200,2023-01-18 08:57:08-07:00,25200,True,False,"['cicd.yaml', 'setup.py', 'setup.py', 'query.py']",['15b21b014c360dd2938b5a6f87e1732822e585f2'],3,12,15,4,1.0,1.0,1.0
+3db04da73b6a65367e4a94f7262067c61650225d,chore: update changelog for #508 (#512),Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-01-18 13:19:25-07:00,25200,2023-01-18 13:19:25-07:00,25200,True,False,['CHANGES.md'],['c32d5bc4979961493eea4276548012f1155f8e86'],1,9,10,1,,,
+759ef1759dcfa7dabf0565607ce4b30fab17dac4,"Bump pre-commit dep versions (#518)
+
+* deps: bump pre-commit dep versions
+
+Needed to pick up https://github.com/PyCQA/isort/pull/2078
+
+* lint: rename some ambiguous variables",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-01-31 10:31:12-07:00,25200,2023-01-31 10:31:12-07:00,25200,True,False,"['.pre-commit-config.yaml', 'test_item.py', 'test_item.py']",['3db04da73b6a65367e4a94f7262067c61650225d'],9,9,18,3,,,
+90e158d5555b2e14e9546bb57497c5d884f8159b,"[pgstac] Delete items using collection id (#520)
+
+* fix, pgstac: delete items with collection id
+
+* chore: update changelog",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-02-06 08:30:51-07:00,25200,2023-02-06 08:30:51-07:00,25200,True,False,"['CHANGES.md', 'db.py', 'transactions.py', 'test_api.py']",['759ef1759dcfa7dabf0565607ce4b30fab17dac4'],5,71,76,4,0.5135135135135135,1.0,1.0
+94f6e2cda09a7d440f56a731e64111f1cfe87bc7,"Rework update_openapi function. (#523)
+
+* Rework update_openapi function.
+
+* Update changelog.
+
+* Additional documentation and add removed code back as deprecated.
+
+* chore: fixup changelog
+
+* refactor: move VndOaiResponse back to old location
+
+---------
+
+Co-authored-by: Pete Gadomski <pete.gadomski@gmail.com>",Erik Seglem,erik.seglem@gmail.com,GitHub,noreply@github.com,2023-02-07 08:05:23-05:00,18000,2023-02-07 06:05:23-07:00,25200,True,False,"['CHANGES.md', 'openapi.py', 'test_api.py']",['90e158d5555b2e14e9546bb57497c5d884f8159b'],20,54,74,3,1.0,1.0,0.625
+955c34ebeadf3376cbd508ac8c3d3debe5c0904e,"Support intersects for GET requests (#521)
+
+* fix: support intersects for GET requests
+
+* chore: update changelog",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-02-07 11:07:50-07:00,25200,2023-02-07 11:07:50-07:00,25200,True,False,"['CHANGES.md', 'core.py', 'test_api.py', 'core.py', 'test_api.py', 'core.py', 'search.py']",['94f6e2cda09a7d440f56a731e64111f1cfe87bc7'],1,43,44,7,0.0,0.8285714285714286,0.0
+edc97e9a68da64b4cc6d09c9ed120d2fdbb41127,"Replace values above limit with limit value. (#526)
+
+* Set limit to max value rather than error. Fixes #496.
+
+* Update limit tests.
+
+* Update changelog.",Erik Seglem,erik.seglem@gmail.com,GitHub,noreply@github.com,2023-02-09 08:15:58-05:00,18000,2023-02-09 06:15:58-07:00,25200,True,False,"['CHANGES.md', 'test_api.py', 'test_api.py', 'search.py', 'test_limit.py']",['955c34ebeadf3376cbd508ac8c3d3debe5c0904e'],5,52,57,5,1.0,1.0,1.0
+1ded5a51e0ad0bcaedc852da26b9b4c9ec4e114b,fix: increase wait timeout to 60 seconds (#529),Preston Hartzell,preston.hartzell@gmail.com,GitHub,noreply@github.com,2023-02-16 14:21:10-05:00,18000,2023-02-16 12:21:10-07:00,25200,True,False,['docker-compose.yml'],['edc97e9a68da64b4cc6d09c9ed120d2fdbb41127'],1,3,4,1,,,
+7f60b8a94e1d24933650647401947d4512056dfb,"[sqlalchemy] Return 404 for missing collection on /items (#528)
+
+* fix: return 404 for missing collection on /items
+
+sqlalchemy
+
+* chore: update changelog",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-02-17 08:09:25-07:00,25200,2023-02-17 15:09:25+00:00,0,True,False,"['CHANGES.md', 'core.py', 'test_item.py']",['1ded5a51e0ad0bcaedc852da26b9b4c9ec4e114b'],1,4,5,3,0.0,0.0,0.0
+7ba0a4098767a69265e7b1ab7f8952599f11160c,"Add backend-specific dockerfiles, publish images (#525)
+
+* ci: bump pgstac
+
+* ci, docker: add backend-specific dockerfiles
+
+* Add changelog entry
+
+---------
+
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-02-23 13:42:50-08:00,28800,2023-02-23 13:42:50-08:00,28800,True,False,"['cicd.yaml', 'CHANGES.md', 'README.md', 'docker-compose.docs.yml', 'docker-compose.yml', 'Dockerfile', 'Dockerfile.docs', 'Dockerfile.pgstac', 'Dockerfile.sqlalchemy', 'docker-compose.pgstac.yml', 'docker-compose.sqlalchemy.yml']",['7f60b8a94e1d24933650647401947d4512056dfb'],4,204,208,11,,,
+24824679661fcb34030126de766033e828895d19,"docs, fix: tags for ghcr images (#531)
+
+We'll need to change these to tagged versions once a tagged version is released.",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-02-27 14:06:08-08:00,28800,2023-02-27 14:06:08-08:00,28800,True,False,['README.md'],['7ba0a4098767a69265e7b1ab7f8952599f11160c'],2,2,4,1,,,
+1de7b8b270d6c564718cf41fc3cd68acb5edb16a,"Add nginx service as second docker-compose stack (#503)
+
+* add nginx service to docker-compose, proxy pgstac and sqlalchemy apps
+
+* Update docker-compose.yml
+
+Co-authored-by: Christian Wygoda <103508637+c-wygoda@users.noreply.github.com>
+
+* feat: add nginx proxy in own docker-compose file
+
+Includes a Makefile rule to run it, and some documentation in README.md. Also
+adds a markdownlint silencer and one or two touchups to the whitespace.
+
+* Update changelog
+
+---------
+
+Co-authored-by: Christian Wygoda <103508637+c-wygoda@users.noreply.github.com>
+Co-authored-by: Pete Gadomski <pete.gadomski@gmail.com>
+Co-authored-by: Nathan Zimmerman <npzimmerman@gmail.com>",Jeff Albrecht,geospatialjeff@gmail.com,GitHub,noreply@github.com,2023-02-27 15:13:15-07:00,25200,2023-02-27 22:13:15+00:00,0,True,False,"['CHANGES.md', 'Makefile', 'README.md', 'docker-compose.nginx.yml', 'nginx.conf', 'app.py', 'app.py']",['24824679661fcb34030126de766033e828895d19'],1,75,76,7,1.0,1.0,1.0
+6db83a9c05d200d43e83c19a585fcf7f0d9e6396,"chore: remove tox (#536)
+
+These were all the references to it that I could find.",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-03-01 14:52:03-08:00,28800,2023-03-01 14:52:03-08:00,28800,True,False,"['.dockerignore', '.gitignore', 'pyproject.toml', 'tox.ini']",['1de7b8b270d6c564718cf41fc3cd68acb5edb16a'],18,11,29,4,,,
+3b517e6dd0eb8d79d5737fb55d51020b33b91736,"Update filter conformance uris (#540)
+
+* fix: update filter conformance uris
+
+* fix: names, add more conformance",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-03-08 12:53:43-07:00,25200,2023-03-08 12:53:43-07:00,25200,True,False,"['CHANGES.md', 'filter.py']",['6db83a9c05d200d43e83c19a585fcf7f0d9e6396'],14,21,35,2,,,
+aa755f57aead801a353743d662eca48f9e6f0224,"Update pgstac to v0.7.1 (#535)
+
+* deps: bump pgstac to v0.7.1
+
+* ci: only build packages on main or tags
+
+* ci: don't log on services
+
+* ci: up timeout minutes
+
+* chore: update changelog
+
+* test: add sorting test
+
+Confirming that https://github.com/stac-utils/stac-fastapi/issues/514 is fixed with pgstac v0.7.0.",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-03-09 07:35:36-07:00,25200,2023-03-09 07:35:36-07:00,25200,True,False,"['cicd.yaml', 'packages.yml', 'CHANGES.md', 'docker-compose.yml', 'docker-compose.pgstac.yml', 'docker-compose.sqlalchemy.yml', 'setup.py', 'test_api.py']",['3b517e6dd0eb8d79d5737fb55d51020b33b91736'],50,102,152,8,0.35,0.65,0.35
+07aaa4660d1a84273a4a6e5f22762cebcb4077a9,"ci, fix: remove incorrect needs (#542)",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-03-09 07:52:12-07:00,25200,2023-03-09 07:52:12-07:00,25200,True,False,['packages.yml'],['aa755f57aead801a353743d662eca48f9e6f0224'],1,0,1,1,,,
+66a049293c93f23d7d11da6271e275c6c75b8a94,"Release v2.4.4 (#543)
+
+* release: v2.4.4
+
+* fix, docs: tag naming scheme in RELEASING",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-03-14 06:45:55-06:00,21600,2023-03-14 06:45:55-06:00,21600,True,False,"['CHANGES.md', 'RELEASING.md', 'VERSION', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['07aaa4660d1a84273a4a6e5f22762cebcb4077a9'],7,25,32,8,,,
+3edb62ec91a1eacfbfae8a12646b0422943c34ec,"Rename default branch (#544)
+
+* feat: s/master/main/ for this repo
+
+Also update the PR checklist a little bit
+
+* chore: update changelog",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-03-16 07:25:10-06:00,21600,2023-03-16 07:25:10-06:00,21600,True,False,"['pull_request_template.md', 'cicd.yaml', 'deploy_mkdocs.yml', 'packages.yml', 'CHANGES.md', 'README.md', 'README.md']",['66a049293c93f23d7d11da6271e275c6c75b8a94'],18,21,39,7,,,
+1ca37cde438b3716d2ab9e193e2d7bef51844d4f,"Fixing images used in docker composes files (#547)
+
+* Update reference to images (latest is now main)
+
+* Update reference to images (latest is now main)",Luca Fabbri,lucafbb@gmail.com,GitHub,noreply@github.com,2023-03-20 18:23:15+01:00,-3600,2023-03-20 17:23:15+00:00,0,True,False,"['docker-compose.pgstac.yml', 'docker-compose.sqlalchemy.yml']",['3edb62ec91a1eacfbfae8a12646b0422943c34ec'],3,3,6,2,,,
+01bc0d58697743e870a768b0d486dde7bd567d9f,"Avoid fstring in queries (#554)
+
+* Avoid fstring in queries
+
+* Reorder import
+
+* chore: update changelog
+
+---------
+
+Co-authored-by: Pete Gadomski <pete.gadomski@gmail.com>",Anthony Lukach,anthonylukach@gmail.com,GitHub,noreply@github.com,2023-03-30 14:04:19-07:00,25200,2023-03-30 21:04:19+00:00,0,True,False,"['CHANGES.md', 'db.py']",['1ca37cde438b3716d2ab9e193e2d7bef51844d4f'],7,13,20,2,0.0,1.0,0.0
+d8e3edad3254dd59945de755a2f212603f7fcb29,"Remove ceil on fastapi version (#556)
+
+* deps: remove ceil on fastapi version
+
+It was added for some reason, but the reason appears to be lost in time.
+
+* test: fix for new TestClient
+
+Described here: https://github.com/tiangolo/fastapi/releases/tag/0.87.0",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-04-04 16:01:55-06:00,21600,2023-04-04 16:01:55-06:00,21600,True,False,"['test_api.py', 'setup.py']",['01bc0d58697743e870a768b0d486dde7bd567d9f'],4,4,8,2,,,
+4a5d72f3339b0c35cea583feb5f429655859911e,release: v2.4.5 (#557),Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-04-05 08:01:31-06:00,21600,2023-04-05 08:01:31-06:00,21600,True,False,"['CHANGES.md', 'VERSION', 'version.py', 'version.py', 'version.py', 'version.py', 'version.py']",['d8e3edad3254dd59945de755a2f212603f7fcb29'],7,10,17,7,,,
+42b5588d8081cfa48162febd5eda7364b28ef0ef,Improve logging of pgSTAC tests (#564),Anthony Lukach,anthonylukach@gmail.com,GitHub,noreply@github.com,2023-04-28 04:30:48-07:00,25200,2023-04-28 05:30:48-06:00,21600,True,False,"['Makefile', 'conftest.py']",['4a5d72f3339b0c35cea583feb5f429655859911e'],16,20,36,2,1.0,0.0,0.0
+2f2faa2301cb3557a392b1c91c494a17491ba25c,"Add tooling to make customization of DB Connection possible (#538)
+
+* Add functionality to customize db connection retrieval
+
+* Add test for customizing the connection_getter
+
+* Cleanup
+
+* isort fixes
+
+* flake8 fix
+
+* Update typing
+
+---------
+
+Co-authored-by: David Bitner <bitner@dbspatial.com>",Anthony Lukach,anthonylukach@gmail.com,GitHub,noreply@github.com,2023-05-04 11:32:47-07:00,25200,2023-05-04 12:32:47-06:00,21600,True,False,"['core.py', 'db.py', 'transactions.py', 'test_postgres.py']",['42b5588d8081cfa48162febd5eda7364b28ef0ef'],93,142,235,4,1.0,1.0,0.0
+8bbec405591a155492d334cc4129bc13ac768376,"Remove backend repos (#555)
+
+* feat: remove backend repos
+
+* docs: fix readme
+
+* docs: more doc fixups
+
+* fix, tests: add httpx to dev dependencies
+
+* fix: remove wait-for-it script
+
+* docs, fix: nav",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-05-09 12:28:36-06:00,21600,2023-05-09 18:28:36+00:00,0,True,False,"['dependabot.yml', 'cicd.yaml', 'deploy_mkdocs.yml', 'packages.yml', '.pre-commit-config.yaml', 'CHANGES.md', 'Dockerfile', 'Dockerfile.docs', 'Makefile', 'README.md', 'docker-compose.docs.yml', 'docker-compose.nginx.yml', 'docker-compose.yml', 'Dockerfile.pgstac', 'Dockerfile.sqlalchemy', 'docker-compose.pgstac.yml', 'docker-compose.sqlalchemy.yml', 'tips-and-tricks.md', 'mkdocs.yml', 'nginx.conf', 'pyproject.toml', 'ingest_joplin.py', 'publish', 'validate', 'wait-for-it.sh', 'setup.py', 'README.md', 'pytest.ini', 'setup.cfg', 'setup.py', '__init__.py', 'app.py', 'config.py', 'core.py', 'db.py', '__init__.py', 'filter.py', 'query.py', '__init__.py', 'links.py', 'transactions.py', 'base_item_cache.py', 'search.py', 'utils.py', 'version.py', '__init__.py', '__init__.py', 'test_api.py', '__init__.py', 'test_postgres.py', 'conftest.py', 'collection.json', 'index.geojson', 'test2_collection.json', 'test2_item.json', 'test_collection.json', 'test_item.json', 'test_item2.json', '__init__.py', 'test_collection.py', 'test_conformance.py', 'test_item.py', 'test_mgmt.py', 'README.md', 'alembic.ini', 'README', 'env.py', 'script.py.mako', '131aab4d9e49_create_tables.py', '407037cb1636_add_stac_1_0_0_fields.py', '5909bd10f2e6_change_item_geometry_column_type.py', '7016c1bf3fbf_make_item_geometry_and_bbox_nullable.py', '77c019af60bf_use_timestamptz_rather_than_timestamp.py', '821aa04011e8_change_pri_key_for_item.py', 'pytest.ini', 'setup.cfg', 'setup.py', '__init__.py', 'app.py', 'config.py', 'core.py', '__init__.py', 'query.py', '__init__.py', 'database.py', 'search.py', 'serializers.py', 'session.py', 'tokens.py', 'transactions.py', 'version.py', '__init__.py', '__init__.py', 'test_api.py', '__init__.py', 'test_postgres.py', 'conftest.py', 'test_collection.json', 'test_item.json', 'test_item_geometry_null.json', 'test_item_multipolygon.json', '__init__.py', 'test_custom_models.py', '__init__.py', 'test_collection.py', 'test_conformance.py', 'test_item.py', 'test_mgmt.py', 'collection.json', 'feature.geojson', 'index.geojson']",['2f2faa2301cb3557a392b1c91c494a17491ba25c'],16607,196,16803,111,0.5908176330711542,0.1521858423266874,0.6178891531004207
+0fa2c85fc38208e7ad8dfac95351697b577a3d69,"Update iso8601 requirement in /stac_fastapi/types (#570)
+
+Updates the requirements on [iso8601](https://github.com/micktwomey/pyiso8601) to permit the latest version.
+- [Release notes](https://github.com/micktwomey/pyiso8601/releases)
+- [Commits](https://github.com/micktwomey/pyiso8601/compare/1.0.2...1.1.0)
+
+---
+updated-dependencies:
+- dependency-name: iso8601
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-09 12:36:18-06:00,21600,2023-05-09 12:36:18-06:00,21600,True,False,['setup.py'],['8bbec405591a155492d334cc4129bc13ac768376'],1,1,2,1,,,
+d0b6907e4da408da007ac34b90806a0fc41389f1,"Bump actions/setup-python from 3 to 4 (#569)
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 3 to 4.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Pete Gadomski <pete.gadomski@gmail.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-05-09 18:38:10+00:00,0,2023-05-09 18:38:10+00:00,0,True,False,"['cicd.yaml', 'deploy_mkdocs.yml', 'publish.yml']",['0fa2c85fc38208e7ad8dfac95351697b577a3d69'],3,3,6,3,,,
+feffe2bf9fe8bcef3ac72fbd1e79fc7c88a50126,"ci, fix: gh pages deploy (#571)",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-05-09 14:12:34-06:00,21600,2023-05-09 20:12:34+00:00,0,True,False,['deploy_mkdocs.yml'],['d0b6907e4da408da007ac34b90806a0fc41389f1'],6,6,12,1,,,
+f1f234b645a6f00c225f54da05f0d0fc3395716b,release: v2.4.6 (#572),Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-05-10 09:46:00-06:00,21600,2023-05-10 11:46:00-04:00,14400,True,False,"['CHANGES.md', 'VERSION', 'version.py', 'version.py', 'version.py']",['feffe2bf9fe8bcef3ac72fbd1e79fc7c88a50126'],5,14,19,5,,,
+ed98341d3b0774403d72b5be936f7744e2556953,"fix, docs: changelog was wrong for 2.4.5",Pete Gadomski,pete.gadomski@gmail.com,Pete Gadomski,pete.gadomski@gmail.com,2023-05-11 06:15:48-06:00,21600,2023-05-11 06:15:48-06:00,21600,True,False,['CHANGES.md'],['f1f234b645a6f00c225f54da05f0d0fc3395716b'],6,0,6,1,,,
+74a7909d28107856ebe04b030e43fd8c04e62141,"Update request body types for Transaction Extension spec and client (#574)
+
+* Update request body for Transaction Extension spec
+
+A POST against an items endpoint should accept an Item or ItemCollection
+
+https://github.com/radiantearth/stac-api-spec/blob/master/ogcapi-features/extensions/transaction/README.md#methods
+
+Add literal values to the stac_types `type` attribute in order to allow fastapi a
+discriminator value for parsing the request body to the correct TypedDict.
+
+* Changelog
+
+* feat: add a simple smoke test
+
+It doesn't exercise much, but at least it demonstrates what we're trying to do.
+
+---------
+
+Co-authored-by: Pete Gadomski <pete.gadomski@gmail.com>",Matt McFarland,mmcfarland@microsoft.com,GitHub,noreply@github.com,2023-05-12 10:27:19-04:00,14400,2023-05-12 08:27:19-06:00,21600,True,False,"['CHANGES.md', 'transaction.py', 'test_transaction.py', 'core.py', 'stac.py']",['ed98341d3b0774403d72b5be936f7744e2556953'],12,146,158,5,0.725,1.0,0.6125
+ced2e434c1f0b9440f4a866722c2dd094347a53e,"Use ruff for pre-commit checks; replaces isort and flake8 (#549)
+
+* Use ruff for pre-commit checks; replaces isort and flake8
+
+* Update changelog to include link to this PR
+
+* feat: switch to ruff
+
+* feat: apply formatting changes
+
+* deps: pre-commit autoupdate
+
+* fixup some black formatting
+
+* fixup, docs: changelog
+
+* fix: add I to ruff rules
+
+---------
+
+Co-authored-by: Pete Gadomski <pete.gadomski@gmail.com>",jpolchlo,jpolchlo@users.noreply.github.com,GitHub,noreply@github.com,2023-05-16 12:34:41-04:00,14400,2023-05-16 10:34:41-06:00,21600,True,False,"['.pre-commit-config.yaml', 'CHANGES.md', 'CONTRIBUTING.md', 'pyproject.toml', '__init__.py', 'app.py', 'config.py', 'errors.py', 'middleware.py', 'models.py', 'openapi.py', 'routes.py', 'version.py', '__init__.py', 'context.py', 'fields.py', 'request.py', 'filter.py', 'request.py', '__init__.py', 'pagination.py', 'token_pagination.py', 'query.py', 'sort.py', 'transaction.py', 'bulk_transactions.py', 'version.py', '__init__.py', 'config.py', 'core.py', 'extension.py', 'links.py', 'requests.py', 'rfc3339.py', 'search.py', 'stac.py', 'version.py']",['74a7909d28107856ebe04b030e43fd8c04e62141'],182,185,367,37,0.0,0.9,1.0
+b82aab4ddc9e6bb1356f1881451ad2589212fd48,release: v2.4.7 (#575),Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-05-17 09:29:23-06:00,21600,2023-05-17 09:29:23-06:00,21600,True,False,"['CHANGES.md', 'VERSION', 'version.py', 'version.py', 'version.py']",['ced2e434c1f0b9440f4a866722c2dd094347a53e'],5,8,13,5,,,
+9b12aa9ec709f559bae40329b0b0cabd016fc874,"feat: update to API v1.0.0, and extension versions (#578)",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-06-07 15:13:18-06:00,21600,2023-06-07 15:13:18-06:00,21600,True,False,"['CHANGES.md', 'config.py', 'context.py', 'fields.py', 'filter.py', 'request.py', 'query.py', 'sort.py', 'transaction.py', 'conformance.py', 'core.py']",['b82aab4ddc9e6bb1356f1881451ad2589212fd48'],19,19,38,11,,,
+5d94f78365d6ac2d3d153a6c519baaf3efc045e0,release: v2.4.8 (#579),Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-06-08 13:48:20-06:00,21600,2023-06-08 13:48:20-06:00,21600,True,False,"['CHANGES.md', 'VERSION', 'version.py', 'version.py', 'version.py']",['9b12aa9ec709f559bae40329b0b0cabd016fc874'],5,12,17,5,,,
+c2e4ad98b46635b48d91cc7b572666c610083d38,"Chore(deps): Update iso8601 requirement in /stac_fastapi/types (#580)
+
+Updates the requirements on [iso8601](https://github.com/micktwomey/pyiso8601) to permit the latest version.
+- [Release notes](https://github.com/micktwomey/pyiso8601/releases)
+- [Changelog](https://github.com/micktwomey/pyiso8601/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/micktwomey/pyiso8601/compare/1.0.2...2.0.0)
+
+---
+updated-dependencies:
+- dependency-name: iso8601
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-06-12 07:30:41-06:00,21600,2023-06-12 07:30:41-06:00,21600,True,False,['setup.py'],['5d94f78365d6ac2d3d153a6c519baaf3efc045e0'],1,1,2,1,,,
+b9cedf353eae9aaad76c3a9a1e886bfb7c5e04ff,"fix, tests: silence httpx warning (#577)",Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-06-12 15:00:11-06:00,21600,2023-06-12 21:00:11+00:00,0,True,False,['test_api.py'],['c2e4ad98b46635b48d91cc7b572666c610083d38'],1,1,2,1,,,
+8b696bde67c7b956c8e93af3f99034e7c28939f3,deps: ceil pydantic below 2 (#594),Pete Gadomski,pete.gadomski@gmail.com,GitHub,noreply@github.com,2023-09-06 07:36:22-06:00,21600,2023-09-06 07:36:22-06:00,21600,True,False,"['setup.py', 'setup.py', 'setup.py']",['b9cedf353eae9aaad76c3a9a1e886bfb7c5e04ff'],3,3,6,3,,,
+ded2283f74d4f5722dd251a45c448e842ae9f219,Fix typos in doc (#596),Luca Fabbri,l.fabbri@bopen.eu,GitHub,noreply@github.com,2023-09-08 13:37:41+02:00,-7200,2023-09-08 05:37:41-06:00,21600,True,False,['middleware.py'],['8b696bde67c7b956c8e93af3f99034e7c28939f3'],1,1,2,1,,,
+587e38b409ef7c78ff831cd1b93089763540930b,"Chore(deps): Bump actions/checkout from 3 to 4 (#598)
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v3...v4)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-11 05:20:44-06:00,21600,2023-09-11 05:20:44-06:00,21600,True,False,"['cicd.yaml', 'deploy_mkdocs.yml', 'publish.yml']",['ded2283f74d4f5722dd251a45c448e842ae9f219'],4,4,8,3,,,
+0a54bf0eb2523650401883e4482031279b2822bf,"Handle x-forwarded-host header (#586)
+
+* Handle x-forwarded-host header
+
+* chore: update changelog
+
+---------
+
+Co-authored-by: Pete Gadomski <pete.gadomski@gmail.com>",renzodf,renzodf@gmail.com,GitHub,noreply@github.com,2023-09-13 13:50:32+02:00,-7200,2023-09-13 11:50:32+00:00,0,True,False,"['CHANGES.md', 'middleware.py', 'test_middleware.py']",['587e38b409ef7c78ff831cd1b93089763540930b'],0,12,12,3,0.0,0.0,1.0
+f07af60f75ee2ff9ac6b855ec92ea4cfe3e91adf,update extensions to latest versions (#606),Stijn Caerts,StijnCaerts@users.noreply.github.com,GitHub,noreply@github.com,2023-10-03 13:07:15+02:00,-7200,2023-10-03 05:07:15-06:00,21600,True,False,"['fields.py', 'query.py', 'sort.py', 'transaction.py']",['0a54bf0eb2523650401883e4482031279b2822bf'],5,4,9,4,,,
+925a9bbc686dcb1f17808719ab9863c08b92ea36,"Chore(deps): Update iso8601 requirement in /stac_fastapi/types (#608)
+
+Updates the requirements on [iso8601](https://github.com/micktwomey/pyiso8601) to permit the latest version.
+- [Release notes](https://github.com/micktwomey/pyiso8601/releases)
+- [Changelog](https://github.com/micktwomey/pyiso8601/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/micktwomey/pyiso8601/compare/1.0.2...2.1.0)
+
+---
+updated-dependencies:
+- dependency-name: iso8601
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-09 05:15:52-06:00,21600,2023-10-09 05:15:52-06:00,21600,True,False,['setup.py'],['f07af60f75ee2ff9ac6b855ec92ea4cfe3e91adf'],1,1,2,1,,,
+2cb8359d7de74d2877f0d8540246cb20c597bee5,"CQL2-JSON filter conformance class link (#612)
+
+* add cql2_json, fix link
+
+* add changelog",Jonathan Healy,jonathan.d.healy@gmail.com,GitHub,noreply@github.com,2023-10-23 18:15:19+08:00,-28800,2023-10-23 06:15:19-04:00,14400,True,False,"['CHANGES.md', 'filter.py']",['925a9bbc686dcb1f17808719ab9863c08b92ea36'],1,3,4,2,,,
+d035774605e740cf1577682e3a07bb65f9021be1,"Allow specifying insert method for bulk transactions (#614)
+
+* Added method parameter to bulk_item_insert route in order to allow more flexibility in how data is loaded into the DB
+
+* Add method param to AsyncBaseBulkTransactionsClient, which pgstac inherits from
+
+* Moved method on to the Items base model for bulk transaction request
+
+* Updated docs and changelog with bulk transactions method parameter",Edward Keeble,edkeeble@users.noreply.github.com,GitHub,noreply@github.com,2023-10-25 07:26:15-03:00,10800,2023-10-25 06:26:15-04:00,14400,True,False,"['CHANGES.md', 'bulk_transactions.py']",['2cb8359d7de74d2877f0d8540246cb20c597bee5'],6,31,37,2,0.0,1.0,0.0
+c74eb687c693cb5925d78d58da50e7c99b931780,Add Elasticsearch backend (#616),vprivat-ads,146961743+vprivat-ads@users.noreply.github.com,GitHub,noreply@github.com,2023-11-06 13:58:13+01:00,-3600,2023-11-06 12:58:13+00:00,0,True,False,['README.md'],['d035774605e740cf1577682e3a07bb65f9021be1'],1,2,3,1,,,
+09dac221d86fe70035aa6cddbc9a3f0de304aff5,release: v2.4.9 (#618),Edward Keeble,edkeeble@users.noreply.github.com,GitHub,noreply@github.com,2023-11-17 10:06:03-04:00,14400,2023-11-17 07:06:03-07:00,25200,True,False,"['CHANGES.md', 'VERSION', 'version.py', 'version.py', 'version.py']",['c74eb687c693cb5925d78d58da50e7c99b931780'],6,15,21,5,,,
+3b5b0938528925539d4f21ab79c83f9de8f7e939,"Chore(deps): Bump actions/setup-python from 4 to 5 (#619)
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 5.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v4...v5)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-12-11 17:09:33-07:00,25200,2023-12-11 17:09:33-07:00,25200,True,False,"['cicd.yaml', 'deploy_mkdocs.yml', 'publish.yml']",['09dac221d86fe70035aa6cddbc9a3f0de304aff5'],3,3,6,3,,,

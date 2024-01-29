@@ -1,0 +1,215 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+ba9bcdf5dd54e10e74f8b447453c349d908e778d,Initial commit,Colearo Lu,ColearoLu@iCloud.com,GitHub,noreply@github.com,2018-01-24 19:43:06+08:00,-28800,2018-01-24 19:43:06+08:00,-28800,True,False,"['LICENSE', 'README.md']",[],0,676,676,2,,,
+858336a0d41609f7b6e7fede8932cb228cb5a11e,"add words gram generation
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-26 12:19:23+08:00,-28800,2018-01-26 12:19:23+08:00,-28800,True,False,"['dict.lex', 'huhu_seg.py']",['ba9bcdf5dd54e10e74f8b447453c349d908e778d'],0,584670,584670,2,1.0,1.0,0.8333333333333334
+50f6a8d9c53c660614a36118881b6c8a9770b628,"add three-word chunks generation method
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 00:19:48+08:00,-28800,2018-01-27 00:19:48+08:00,-28800,True,False,"['dict.lex', 'huhu_seg.py']",['858336a0d41609f7b6e7fede8932cb228cb5a11e'],11,136,147,2,0.4019607843137255,0.3235294117647059,0.8529411764705882
+353a9173e0fc5b8eb016c3209a79f46d5f06fbbd,"complete Segmentor and now works for simple segmentation
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 13:03:29+08:00,-28800,2018-01-27 13:03:29+08:00,-28800,True,False,['huhu_seg.py'],['50f6a8d9c53c660614a36118881b6c8a9770b628'],18,126,144,1,0.5274725274725275,0.7362637362637363,1.0
+27b8317efa912d351e3f0cd6d8f5e8b7b66ce909,"add test.py to show how to use
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 13:06:51+08:00,-28800,2018-01-27 13:06:51+08:00,-28800,True,False,"['huhu_seg.py', 'test.py']",['353a9173e0fc5b8eb016c3209a79f46d5f06fbbd'],8,13,21,2,,,
+e44f14ccf9738feee43b120cdebb24b3c3ddb70c,"update the dict
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 13:10:05+08:00,-28800,2018-01-27 13:10:05+08:00,-28800,True,False,"['dict.segd', 'huhu_seg.py']",['27b8317efa912d351e3f0cd6d8f5e8b7b66ce909'],1,584490,584491,2,,,
+086114c6e50cb487969a6234eb0e85c4721170a6,"remove the old dict
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 13:10:39+08:00,-28800,2018-01-27 13:10:39+08:00,-28800,True,False,['dict.lex'],['e44f14ccf9738feee43b120cdebb24b3c3ddb70c'],584489,0,584489,1,,,
+39c87a7dcd503cfb4c7e686a4d8cd9ced2b6c8c7,"update the README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 13:15:44+08:00,-28800,2018-01-27 13:15:44+08:00,-28800,True,False,['README.md'],['086114c6e50cb487969a6234eb0e85c4721170a6'],1,5,6,1,,,
+a11834d332beb332799c3fcd599ada5149f097af,"update the README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 13:26:21+08:00,-28800,2018-01-27 13:26:21+08:00,-28800,True,False,['README.md'],['39c87a7dcd503cfb4c7e686a4d8cd9ced2b6c8c7'],2,23,25,1,,,
+6e51ae40bb24ccac5353a4f68ce8c187faa8ed85,"update the README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 13:29:17+08:00,-28800,2018-01-27 13:29:17+08:00,-28800,True,False,['README.md'],['a11834d332beb332799c3fcd599ada5149f097af'],3,3,6,1,,,
+638df87b9c99bd467ecf2358a268e10105e0ae44,"update the README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 13:30:35+08:00,-28800,2018-01-27 13:30:35+08:00,-28800,True,False,['README.md'],['6e51ae40bb24ccac5353a4f68ce8c187faa8ed85'],1,1,2,1,,,
+0ded6f2a6d74298d4cc3293a70b3cb17d0500b4f,"update the README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 13:36:32+08:00,-28800,2018-01-27 13:36:32+08:00,-28800,True,False,['README.md'],['638df87b9c99bd467ecf2358a268e10105e0ae44'],0,6,6,1,,,
+914c19a19c7fe7000cfe41ea4f7d47bdc738d423,Delete LICENSE,Colearo Lu,ColearoLu@iCloud.com,GitHub,noreply@github.com,2018-01-27 13:41:42+08:00,-28800,2018-01-27 13:41:42+08:00,-28800,True,False,['LICENSE'],['0ded6f2a6d74298d4cc3293a70b3cb17d0500b4f'],674,0,674,1,,,
+f23ad418ecada4b916a5100e83567197f5c3cf28,Create LICENSE,Colearo Lu,ColearoLu@iCloud.com,GitHub,noreply@github.com,2018-01-27 13:42:40+08:00,-28800,2018-01-27 13:42:40+08:00,-28800,True,False,['LICENSE'],['914c19a19c7fe7000cfe41ea4f7d47bdc738d423'],0,674,674,1,,,
+b525022b81d14f1f98e4b98f9c8fcebfd9086ce8,"update the README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-27 22:44:10+08:00,-28800,2018-01-27 22:44:10+08:00,-28800,True,False,['README.md'],['f23ad418ecada4b916a5100e83567197f5c3cf28'],1,2,3,1,,,
+2cadc84329bf73a26dbc696a5256364f402ad62a,"add keywords extraction based on tf-idf alghrithm
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-31 01:16:39+08:00,-28800,2018-01-31 01:16:39+08:00,-28800,True,False,"['test_tfidf.py', 'tfidf.py']",['b525022b81d14f1f98e4b98f9c8fcebfd9086ce8'],0,94,94,2,1.0,1.0,1.0
+6be3a4e0783f2afa5e865b5b63e1db28819aab72,"add idf model
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-31 01:17:13+08:00,-28800,2018-01-31 01:17:13+08:00,-28800,True,False,['wiki_idf_986891'],['2cadc84329bf73a26dbc696a5256364f402ad62a'],0,1669733,1669733,1,,,
+0a5b4ebd098cb8a704282582eb69a893f59410a7,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-31 01:25:43+08:00,-28800,2018-01-31 01:25:43+08:00,-28800,True,False,['README.md'],['6be3a4e0783f2afa5e865b5b63e1db28819aab72'],1,23,24,1,,,
+128e0cb8f93b3e508b57aa612c35aff47504e38f,"refine the code
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-01-31 15:25:28+08:00,-28800,2018-01-31 15:25:28+08:00,-28800,True,False,"['huhu_seg.py', 'tfidf.py']",['0a5b4ebd098cb8a704282582eb69a893f59410a7'],19,40,59,2,1.0,0.3076923076923077,1.0
+4458389246257dbd525aff76eb03616cdb22c028,"add TextRank algrithm support for keywords extraction
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 10:55:30+08:00,-28800,2018-02-01 10:55:30+08:00,-28800,True,False,"['huhu_seg.py', 'test_textrank.py', 'textrank.py', 'tfidf.py']",['128e0cb8f93b3e508b57aa612c35aff47504e38f'],5,183,188,4,0.10434782608695652,0.1826086956521739,0.9478260869565217
+4a7c1cb47a38e64bf3afa1875e09a432e987c8d1,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 11:15:03+08:00,-28800,2018-02-01 11:15:03+08:00,-28800,True,False,['README.md'],['4458389246257dbd525aff76eb03616cdb22c028'],2,60,62,1,,,
+a04e6d049ef9715fc9ce1e45870220a786bd5d37,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 11:19:31+08:00,-28800,2018-02-01 11:19:31+08:00,-28800,True,False,['README.md'],['4a7c1cb47a38e64bf3afa1875e09a432e987c8d1'],2,1,3,1,,,
+f027527c9b1e47b7eac7c701364d7d7d385a87b8,update README,Colearo Lu,ColearoLu@iCloud.com,GitHub,noreply@github.com,2018-02-01 11:37:03+08:00,-28800,2018-02-01 11:37:03+08:00,-28800,True,False,['README.md'],['a04e6d049ef9715fc9ce1e45870220a786bd5d37'],8,15,23,1,,,
+228ed82facd59c866a730558ee2f5786c1ef4694,update README,Colearo Lu,ColearoLu@iCloud.com,GitHub,noreply@github.com,2018-02-01 11:38:05+08:00,-28800,2018-02-01 11:38:05+08:00,-28800,True,False,['README.md'],['f027527c9b1e47b7eac7c701364d7d7d385a87b8'],5,5,10,1,,,
+43a4764fd2f7ef1bb5179c20da14b11b63eff47e,"update dir tree
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 14:11:45+08:00,-28800,2018-02-01 14:11:45+08:00,-28800,True,False,"['test.py', 'test_textrank.py', 'test_tfidf.py']",['228ed82facd59c866a730558ee2f5786c1ef4694'],1,4,5,3,,,
+273e70f451a8cb5568fd455f5cf85d2551c79c51,"refine the directory tree
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 17:14:02+08:00,-28800,2018-02-01 17:14:02+08:00,-28800,True,False,"['setup.py', '__init__.py', 'huhu_seg.py', 'dict.segd', 'wiki_idf_986891.segd', 'textrank.py', 'tfidf.py', 'test.py', 'test_textrank.py', 'test_tfidf.py']",['43a4764fd2f7ef1bb5179c20da14b11b63eff47e'],14,63,77,10,,,
+971e9629900f60883cdb64a7e334019d34182228,"update the segmentor
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 17:17:38+08:00,-28800,2018-02-01 17:17:38+08:00,-28800,True,False,"['segmentor.py', 'test.py']",['273e70f451a8cb5568fd455f5cf85d2551c79c51'],1,1,2,2,,,
+db8f7257f979eabc1dcb3503edefee2bb2db7ee1,"add README.rst
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 17:35:16+08:00,-28800,2018-02-01 17:35:16+08:00,-28800,True,False,['README.rst'],['971e9629900f60883cdb64a7e334019d34182228'],0,154,154,1,,,
+b70d37f6cc253e4908e3d054cd5560b5f57bd13f,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 17:36:34+08:00,-28800,2018-02-01 17:36:34+08:00,-28800,True,False,['README.md'],['db8f7257f979eabc1dcb3503edefee2bb2db7ee1'],0,6,6,1,,,
+49caef3dfa6316105612e88947f6caac209f4554,Update README.rst,Colearo Lu,ColearoLu@iCloud.com,GitHub,noreply@github.com,2018-02-01 17:52:32+08:00,-28800,2018-02-01 17:52:32+08:00,-28800,True,False,['README.rst'],['b70d37f6cc253e4908e3d054cd5560b5f57bd13f'],35,31,66,1,,,
+f2657cd18f4337319a58862704bc186184343aca,Update README.rst,Colearo Lu,ColearoLu@iCloud.com,GitHub,noreply@github.com,2018-02-01 17:53:35+08:00,-28800,2018-02-01 17:53:35+08:00,-28800,True,False,['README.rst'],['49caef3dfa6316105612e88947f6caac209f4554'],1,2,3,1,,,
+4210cbd5b86b36e023576fcb545899d960ead86a,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 19:58:06+08:00,-28800,2018-02-01 19:58:06+08:00,-28800,True,False,"['README.md', 'README.rst']",['f2657cd18f4337319a58862704bc186184343aca'],0,10,10,2,,,
+dae0ba756f111a8c960809ac87399899c8a8fe53,"refine the API and package module names
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 20:04:55+08:00,-28800,2018-02-01 20:04:55+08:00,-28800,True,False,"['README.md', 'README.rst', 'setup.py', 'textrank.py', 'tfidf.py', 'test_textrank.py', 'test_tfidf.py']",['4210cbd5b86b36e023576fcb545899d960ead86a'],23,22,45,7,,,
+afddb2dcb13033dead22f8be99f12c3b6c148619,"refine the code
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 20:28:50+08:00,-28800,2018-02-01 20:28:50+08:00,-28800,True,False,"['README.md', 'README.rst', 'setup.py', 'textrank.py', 'tfidf.py', 'test_tfidf.py']",['dae0ba756f111a8c960809ac87399899c8a8fe53'],141,118,259,6,,,
+2ba49312aacc346eea1ff8e75672b445ee0fedf6,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-01 20:35:17+08:00,-28800,2018-02-01 20:35:17+08:00,-28800,True,False,"['README.rst', 'setup.py']",['afddb2dcb13033dead22f8be99f12c3b6c148619'],112,137,249,2,,,
+85568bb2f7b933afb125d815da2ee635f4555cba,"fix a bug when char is '/'
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-03 14:07:27+08:00,-28800,2018-02-03 14:07:27+08:00,-28800,True,False,['segmentor.py'],['2ba49312aacc346eea1ff8e75672b445ee0fedf6'],1,5,6,1,0.3333333333333333,0.3333333333333333,1.0
+6bb281d1c739d1296d49952f25ec148228a0115a,"update stop_words dict
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-03 14:21:45+08:00,-28800,2018-02-03 14:21:45+08:00,-28800,True,False,"['stop_words.segd', 'segmentor.py']",['85568bb2f7b933afb125d815da2ee635f4555cba'],1,33,34,2,0.9090909090909091,0.9090909090909091,1.0
+524db93873b3f5d0b845581fe4c1cd0bbac9d3a3,"fix a bug in textrank
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-06 19:44:59+08:00,-28800,2018-02-06 19:44:59+08:00,-28800,True,False,"['dict.segd', 'stop_words.segd', 'segmentor.py', 'textrank.py']",['6bb281d1c739d1296d49952f25ec148228a0115a'],3,37,40,4,0.0,0.0,1.0
+d272204b14f8526b7d214363a88146d471df79b0,"add SimHash support to compute the similarity of texts
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-09 10:59:49+08:00,-28800,2018-02-09 10:59:49+08:00,-28800,True,False,"['setup.py', 'simhash.py', 'tfidf.py', 'test_simhash.py', 'test_tfidf.py']",['524db93873b3f5d0b845581fe4c1cd0bbac9d3a3'],6,135,141,5,0.6166666666666667,0.6166666666666667,0.0
+b78f80c9a7abd419dd8525d185121b9e408b3bf9,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-09 11:31:16+08:00,-28800,2018-02-09 11:31:16+08:00,-28800,True,False,['README.md'],['d272204b14f8526b7d214363a88146d471df79b0'],0,68,68,1,,,
+852f991b71e8b43979bb29fa20dbaff8814f95cf,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-09 11:33:05+08:00,-28800,2018-02-09 11:33:05+08:00,-28800,True,False,['README.md'],['b78f80c9a7abd419dd8525d185121b9e408b3bf9'],1,1,2,1,,,
+abf15bde826b2173d0cac32eefcc421660728031,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-09 11:43:44+08:00,-28800,2018-02-09 11:43:44+08:00,-28800,True,False,['README.rst'],['852f991b71e8b43979bb29fa20dbaff8814f95cf'],0,72,72,1,,,
+838313299f97b84d285683d482089c0ec9a10b06,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-09 11:44:55+08:00,-28800,2018-02-09 11:44:55+08:00,-28800,True,False,['README.rst'],['abf15bde826b2173d0cac32eefcc421660728031'],1,2,3,1,,,
+ac3231a0934eca3632e2ae7cb7014125470dde79,"update SimHash
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-02-09 11:55:09+08:00,-28800,2018-02-09 11:55:09+08:00,-28800,True,False,"['segmentor.py', 'simhash.py']",['838313299f97b84d285683d482089c0ec9a10b06'],2,11,13,2,1.0,1.0,0.7777777777777778
+3c3c71e6ac1f53fad6f26c4a49511003049c31b2,"refine the segmentor code logic
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-05 10:45:54+08:00,-28800,2018-03-05 10:45:54+08:00,-28800,True,False,['segmentor.py'],['ac3231a0934eca3632e2ae7cb7014125470dde79'],3,3,6,1,,,0.0
+329fab800c24a235c2719024e95824453a6d16b5,"add tfidf weights computing of all words in extract_kw()
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-05 10:47:17+08:00,-28800,2018-03-05 10:47:17+08:00,-28800,True,False,['tfidf.py'],['3c3c71e6ac1f53fad6f26c4a49511003049c31b2'],0,3,3,1,0.0,0.0,0.0
+dd5025403478f344a795fff5948cab904135b0ff,"fix a bug in simhash
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-05 10:47:48+08:00,-28800,2018-03-05 10:47:48+08:00,-28800,True,False,['simhash.py'],['329fab800c24a235c2719024e95824453a6d16b5'],1,1,2,1,,,
+120c33b6eff430ea41d7004d23f9488ebd8eec75,"add BoW model
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-05 11:12:29+08:00,-28800,2018-03-05 11:12:29+08:00,-28800,True,False,"['README.md', 'bow.py', 'test_bow.py']",['dd5025403478f344a795fff5948cab904135b0ff'],0,210,210,3,1.0,1.0,0.6410256410256411
+30fde81a57f2930d2048c5326a9cfec9c25d03cb,"make simhash testing passages conform to bow testing ones
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-05 11:23:42+08:00,-28800,2018-03-05 11:23:42+08:00,-28800,True,False,"['README.md', 'test_simhash.py']",['120c33b6eff430ea41d7004d23f9488ebd8eec75'],82,109,191,2,,,
+b1ad4a297e4089e48e3f3684aa13e3bf67d14f41,"add weight similarity comparision of Bag-of-words model
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-07 11:02:01+08:00,-28800,2018-03-07 11:02:01+08:00,-28800,True,False,['bow.py'],['30fde81a57f2930d2048c5326a9cfec9c25d03cb'],5,20,25,1,1.0,1.0,0.0
+7fab3e0dee07865ba26375f7742e35c564226b59,"add demo text clustring implementation
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-07 11:02:58+08:00,-28800,2018-03-07 11:02:58+08:00,-28800,True,False,"['clustering.py', 'test_clustering.py']",['b1ad4a297e4089e48e3f3684aa13e3bf67d14f41'],0,149,149,2,0.10606060606060606,0.3484848484848485,0.30303030303030304
+2942e83abeb71087e608669c64aa089ee9925422,"update README.rst
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-07 11:09:09+08:00,-28800,2018-03-07 11:09:09+08:00,-28800,True,False,"['README.rst', 'setup.py']",['7fab3e0dee07865ba26375f7742e35c564226b59'],1,10,11,2,,,
+dabd8d4c02a941fe57572825e62afcdc0a3a3b97,"update README.rst
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-07 11:10:39+08:00,-28800,2018-03-07 11:10:39+08:00,-28800,True,False,['README.rst'],['2942e83abeb71087e608669c64aa089ee9925422'],4,4,8,1,,,
+531dd7a19c165d036326ffefec561c94b9529805,"update support of text clustering
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-07 14:57:02+08:00,-28800,2018-03-07 14:57:02+08:00,-28800,True,False,"['clustering.py', 'test_clustering.py']",['dabd8d4c02a941fe57572825e62afcdc0a3a3b97'],12,11,23,2,,,
+082b813e17ffdbf1197eb1824e0fd03eaceb8dcb,"update bag-of-word model and text clustering
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-08 20:27:30+08:00,-28800,2018-03-08 20:27:30+08:00,-28800,True,False,"['bow.py', 'clustering.py', 'simhash.py']",['531dd7a19c165d036326ffefec561c94b9529805'],31,135,166,3,0.5168539325842697,0.5168539325842697,0.550561797752809
+e3dd4b41af7bd51206610a819d8d6fbdba5e46d9,"refine clustering and vow
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-09 23:58:05+08:00,-28800,2018-03-09 23:58:05+08:00,-28800,True,False,"['bow.py', 'clustering.py']",['082b813e17ffdbf1197eb1824e0fd03eaceb8dcb'],16,35,51,2,0.0,0.0,0.0
+d94fb8ed792b27c454bda083e1d79475e5f62a66,"fix bugs and refine the code
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-26 13:47:26+08:00,-28800,2018-03-26 13:47:26+08:00,-28800,True,False,"['bow.py', 'clustering.py', 'dict.segd', 'stop_words.segd', 'textrank.py', 'tfidf.py', 'test_textrank.py', 'test_tfidf.py']",['e3dd4b41af7bd51206610a819d8d6fbdba5e46d9'],61,114,175,8,0.8108108108108109,0.3783783783783784,1.0
+e8543049692ccf975d49b86f82597016658e2e82,"fix bugs and refine the code
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-26 13:51:27+08:00,-28800,2018-03-26 13:51:27+08:00,-28800,True,False,['test_textrank.py'],['d94fb8ed792b27c454bda083e1d79475e5f62a66'],1,0,1,1,,,
+bffb44c4696d35f887fb512c89f46f3696d07be7,"add support of person's name identification with hmm model
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-26 13:53:12+08:00,-28800,2018-03-26 13:53:12+08:00,-28800,True,False,"['hmm.py', 'nr.segd', 'nr.tr.segd', 'trie.py', 'test.py', 'test_hmm.py', 'test_trie.py']",['e8543049692ccf975d49b86f82597016658e2e82'],3,22545,22548,7,0.4306569343065693,0.5766423357664233,0.8832116788321168
+4b583732091c54f7597e0e1793657bb4422e49c2,"add support of person's name identification in segmentor
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-26 13:53:52+08:00,-28800,2018-03-26 13:53:52+08:00,-28800,True,False,['segmentor.py'],['bffb44c4696d35f887fb512c89f46f3696d07be7'],9,203,212,1,0.22023809523809523,0.3273809523809524,0.9345238095238095
+6ce29b8c4449f739d9c9e466cc597d6464f37f9b,"add msr corpus testing
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-26 13:55:03+08:00,-28800,2018-03-26 13:55:03+08:00,-28800,True,False,"['msr_test.utf8', 'test_file_seg.py']",['4b583732091c54f7597e0e1793657bb4422e49c2'],0,4018,4018,2,1.0,1.0,1.0
+5deea03037a36d48078726f1e1d923f1a3100eca,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-26 14:19:13+08:00,-28800,2018-03-26 14:19:13+08:00,-28800,True,False,['README.md'],['6ce29b8c4449f739d9c9e466cc597d6464f37f9b'],1,34,35,1,,,
+933f00fe18b0e31c4e73b0b7a8e498ad7ebfdb0a,"fix bugs
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-26 14:19:36+08:00,-28800,2018-03-26 14:19:36+08:00,-28800,True,False,"['segmentor.py', 'test.py']",['5deea03037a36d48078726f1e1d923f1a3100eca'],3,2,5,2,1.0,1.0,0.0
+123d94fb83ed1b334cfa2e42ff22ca261116c4ca,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-26 14:25:42+08:00,-28800,2018-03-26 14:25:42+08:00,-28800,True,False,['README.rst'],['933f00fe18b0e31c4e73b0b7a8e498ad7ebfdb0a'],5,14,19,1,,,
+fd32ac829e5af9f96bef66df17cc8fbcb79fa5bc,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-26 14:27:07+08:00,-28800,2018-03-26 14:27:07+08:00,-28800,True,False,['README.rst'],['123d94fb83ed1b334cfa2e42ff22ca261116c4ca'],1,1,2,1,,,
+7e30778c7e3746df82cfa37d05af091d2ffccbbb,"update README
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-26 14:33:21+08:00,-28800,2018-03-26 14:33:21+08:00,-28800,True,False,['README.md'],['fd32ac829e5af9f96bef66df17cc8fbcb79fa5bc'],3,4,7,1,,,
+d2848b184b5d6a2cb4c27bec130149fc1a195010,"fix a bug in trie-tree
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-03-27 17:24:24+08:00,-28800,2018-03-27 17:24:24+08:00,-28800,True,False,['trie.py'],['7e30778c7e3746df82cfa37d05af091d2ffccbbb'],2,2,4,1,1.0,1.0,0.0
+417b848e4e15b39864962370c1c55c7ee864b504,"update version to 0.4.8
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-04-08 08:27:43+08:00,-28800,2018-04-08 08:27:43+08:00,-28800,True,False,"['setup.py', 'bow.py', 'clustering.py', 'hotspot.py', 'dict.segd', 'segmentor.py', 'textrank.py', 'tfidf.py', 'topic.py', 'test.py', 'test_textrank.py', 'test_trie.py']",['d2848b184b5d6a2cb4c27bec130149fc1a195010'],46,190,236,12,0.23008849557522124,0.24778761061946902,0.21238938053097345
+4c7d1bd812a2fec4c27734784f216fd3750b0e1b,"refine the code and add new helper funcs
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-04-27 11:09:20+08:00,-28800,2018-04-27 11:09:20+08:00,-28800,True,False,"['bow.py', 'clustering.py', 'hotspot.py', 'segmentor.py', 'topic.py']",['417b848e4e15b39864962370c1c55c7ee864b504'],27,41,68,5,0.0,0.0,0.0
+9ba501038cb462b0886b0f7afe9228aa96eecb29,"update stop words dict
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-04-29 10:54:54+08:00,-28800,2018-04-29 10:54:54+08:00,-28800,True,False,['stop_words.segd'],['4c7d1bd812a2fec4c27734784f216fd3750b0e1b'],0,1,1,1,,,
+f63fe8c82b1e68932f1e313df7659404499dcc8e,"update version to 0.4.29
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-04-29 10:57:13+08:00,-28800,2018-04-29 10:57:13+08:00,-28800,True,False,"['README.md', 'setup.py']",['9ba501038cb462b0886b0f7afe9228aa96eecb29'],2,6,8,2,,,
+f00f325a33d6e3ac40c94978f02d3c24f042e284,"update version to 0.4.29
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-04-29 11:01:21+08:00,-28800,2018-04-29 11:01:21+08:00,-28800,True,False,"['README.md', 'README.rst']",['f63fe8c82b1e68932f1e313df7659404499dcc8e'],1,8,9,2,,,
+60694012b83bab483783ff93f1bcd776c68e26a8,"clean code
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-04-30 16:51:57+08:00,-28800,2018-04-30 16:51:57+08:00,-28800,True,False,"['setup.py', 'clustering.py', 'dict.segd']",['f00f325a33d6e3ac40c94978f02d3c24f042e284'],85,2,87,3,1.0,1.0,0.6212121212121212
+a248f9d183313f3c02f7d8004311de8760c629a0,"clean code
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-04-30 17:02:48+08:00,-28800,2018-04-30 17:02:48+08:00,-28800,True,False,"['setup.py', 'bow.py']",['60694012b83bab483783ff93f1bcd776c68e26a8'],2,1,3,2,,,
+3ba83dd384738d5ca0d8ec17119cf1af11d7a3e7,"segmentor.py:fix a bug
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-06-01 23:49:57+08:00,-28800,2018-06-01 23:49:57+08:00,-28800,True,False,['segmentor.py'],['a248f9d183313f3c02f7d8004311de8760c629a0'],1,1,2,1,,,
+1c7e27d4079c0a58b3a4030bd1ef3de70411ccbe,"update cluster size computing method
+
+Signed-off-by: Colearo <colearolu@icloud.com>",Colearo,colearolu@icloud.com,Colearo,colearolu@icloud.com,2018-06-01 23:51:13+08:00,-28800,2018-06-01 23:51:13+08:00,-28800,True,False,['clustering.py'],['3ba83dd384738d5ca0d8ec17119cf1af11d7a3e7'],5,4,9,1,1.0,1.0,0.0

@@ -1,0 +1,136 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+dbad6990b4cf9a6a1794fa2cd1334546a34a6fbf,Initial commit,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-04-26 04:58:38-04:00,14400,2021-04-26 04:58:38-04:00,14400,True,False,"['.gitignore', '.gitignore', 'profiles_settings.xml', 'kubernator.iml', 'misc.xml', 'modules.xml', 'vcs.xml', 'LICENSE', 'README.md', 'build.py', 'pyproject.toml', 'setup.py', '__init__.py', 'api.py', 'app.py', 'helm.py', 'k8s.py', 'k8s_api.py', 'kops.py', 'proc.py', 'template.py', 'tf.py', '.kubernator.py', 'pre-start.py', 'test_app.py']",[],0,3044,3044,25,0.6877688998156115,0.7719729563614014,0.6459741856177013
+91302e674e7c58459e4b4cdb3bd2522f2701ec9d,Fix bugs in TF and kops plugins and proc utility,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-04-27 02:58:29-04:00,14400,2021-04-27 02:58:29-04:00,14400,True,False,"['kops.py', 'proc.py', 'tf.py', '.kubernator.py', 'pre-start.py', 'test_app.py']",['dbad6990b4cf9a6a1794fa2cd1334546a34a6fbf'],63,77,140,6,0.125,1.0,0.875
+76918c56e3a7d2464c1bc17cb08a0482126e897e,Loading K8S API directly results in a wrongly interpreted CRD definitions,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-04-27 18:05:13-04:00,14400,2021-04-27 18:05:13-04:00,14400,True,False,"['k8s.py', 'kops.py']",['91302e674e7c58459e4b4cdb3bd2522f2701ec9d'],19,23,42,2,0.0,1.0,1.0
+bab5a6722a9f7da9543a66f7fdc8e49b5e7c60a7,"Fix logging for unchanged K8S resource
+In TF make sure to reconfigure, disable input and upgrade if permitted",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-05 09:25:36-04:00,14400,2021-05-05 09:25:36-04:00,14400,True,False,"['k8s.py', 'tf.py']",['76918c56e3a7d2464c1bc17cb08a0482126e897e'],3,6,9,2,0.0,1.0,1.0
+76393f2f22cc00bdcfd8b2d7b5742b6fe8a37ad6,Add pre-patch trace log of the resource manifest,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-05 10:12:21-04:00,14400,2021-05-05 10:12:21-04:00,14400,True,False,['k8s.py'],['bab5a6722a9f7da9543a66f7fdc8e49b5e7c60a7'],0,1,1,1,0.0,1.0,0.0
+f27a1f3cd9345fcb2f3eede9c1f54d06ed82f9d8,Be even more verbose with current and merged resource tracing,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-05 10:43:32-04:00,14400,2021-05-05 10:43:32-04:00,14400,True,False,['k8s.py'],['76393f2f22cc00bdcfd8b2d7b5742b6fe8a37ad6'],0,2,2,1,0.0,1.0,0.0
+f6e8ca216c366b9630ee18d72e5be27911f658e0,Templates now resolve values within the variables recuresively,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-05 17:04:11-04:00,14400,2021-05-05 17:04:11-04:00,14400,True,False,"['api.py', 'test_templates.py']",['f27a1f3cd9345fcb2f3eede9c1f54d06ed82f9d8'],3,48,51,2,0.2608695652173913,1.0,1.0
+12c9ebd3a971ab3beec212d2113b1ab5d4302801,Add ability to modify immutable objects via delete and recreate with cascade control,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-06 02:58:51-04:00,14400,2021-05-06 02:58:51-04:00,14400,True,False,"['k8s.py', 'k8s_api.py']",['f6e8ca216c366b9630ee18d72e5be27911f658e0'],26,110,136,2,0.42857142857142855,0.0,0.4142857142857143
+a1a6bff5ae7bbf2a7be91f104147139caa9ffd1b,Fix syntactical error in Orphan,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-06 03:30:18-04:00,14400,2021-05-06 03:30:18-04:00,14400,True,False,['k8s_api.py'],['12c9ebd3a971ab3beec212d2113b1ab5d4302801'],1,1,2,1,,,
+2c05458d0ffb0e6f065286fd1bf146b3b25860d2,Skip format validation on a None value,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-06 03:39:42-04:00,14400,2021-05-06 03:39:42-04:00,14400,True,False,['k8s_api.py'],['a1a6bff5ae7bbf2a7be91f104147139caa9ffd1b'],1,0,1,1,,,
+e03fac38f27a32eef7affd8c1eeafbd3538d1b4c,Fix patching when using custom object with partial function,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-06 09:28:43-04:00,14400,2021-05-06 09:28:43-04:00,14400,True,False,['k8s_api.py'],['2c05458d0ffb0e6f065286fd1bf146b3b25860d2'],3,8,11,1,0.0,0.0,0.0
+08dc231bc1df235edc0e5321707930297549cd88,When loading manifests skip empty ones,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-06 09:48:13-04:00,14400,2021-05-06 09:48:13-04:00,14400,True,False,['k8s_api.py'],['e03fac38f27a32eef7affd8c1eeafbd3538d1b4c'],2,2,4,1,,0.0,
+7d2e08d2a1f84ba2eea11842c0759e011e7a9c84,"kOps incorrectly detecting rollout restart requiring ""--yes""",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-07 13:07:11-04:00,14400,2021-05-07 13:07:11-04:00,14400,True,False,['kops.py'],['08dc231bc1df235edc0e5321707930297549cd88'],3,2,5,1,,,
+21906fc6fb097b7549f249bedaccf57b3e5a5fe7,Deployment needs to be subject of immutable changes as well,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-07 13:11:01-04:00,14400,2021-05-07 13:11:01-04:00,14400,True,False,['k8s.py'],['7d2e08d2a1f84ba2eea11842c0759e011e7a9c84'],2,3,5,1,0.0,1.0,1.0
+8ad196ffff1faff738d5345b3560f71c7e83c412,"Added Istio plugin
+
+Fixed namespace parsing being recognized as a namespaced object
+Fixed logging date formatted for TTY console logger
+K8S API cleanups",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-09 00:28:58-04:00,14400,2021-05-09 00:28:58-04:00,14400,True,False,"['api.py', 'app.py', 'istio.py', 'k8s.py', 'k8s_api.py', 'kops.py', 'tf.py']",['21906fc6fb097b7549f249bedaccf57b3e5a5fe7'],44,263,307,7,0.18115942028985507,0.5942028985507246,0.6231884057971014
+0f94b010994ec30352183863032432c76a201024,Return existing resource when attempting to add,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-12 04:31:58-04:00,14400,2021-05-12 04:31:58-04:00,14400,True,False,['k8s_api.py'],['8ad196ffff1faff738d5345b3560f71c7e83c412'],1,1,2,1,,,
+52e50f708d869e2727b59544e0ba88d442f8262d,Fix operator precedence when not running in dry-run mode,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-12 04:59:18-04:00,14400,2021-05-12 04:59:18-04:00,14400,True,False,['istio.py'],['0f94b010994ec30352183863032432c76a201024'],1,1,2,1,,,
+565c3d3a843106597c668f002aa9c724ff3d106c,Fix dry-run logic,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-12 05:15:40-04:00,14400,2021-05-12 05:15:40-04:00,14400,True,False,['kops.py'],['52e50f708d869e2727b59544e0ba88d442f8262d'],4,7,11,1,0.0,0.0,1.0
+f69fe9561a08fa278ff2953a641211ca9ef05206,Need to wait for kops process to finish,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-13 23:04:13-04:00,14400,2021-05-13 23:04:13-04:00,14400,True,False,['kops.py'],['565c3d3a843106597c668f002aa9c724ff3d106c'],1,1,2,1,,,
+171e42df9ce77a500b5663579f4b5040f0bc29f9,Fix passing stdin not working with run,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-14 20:35:30-04:00,14400,2021-05-14 20:35:30-04:00,14400,True,False,"['proc.py', 'proc_tests.py', 'templates_tests.py']",['f69fe9561a08fa278ff2953a641211ca9ef05206'],13,57,70,3,1.0,1.0,0.7
+55b8bcf542959c53d5e9b1a8ce74324cb26a4b4e,In apply mode add cluster validation to kOps,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-15 06:05:36-04:00,14400,2021-05-15 06:05:36-04:00,14400,True,False,"['kops.py', 'proc.py', 'proc_tests.py']",['171e42df9ce77a500b5663579f4b5040f0bc29f9'],5,36,41,3,0.4074074074074074,0.2962962962962963,0.8888888888888888
+2d50f0fd358180537e8844c73fe691bc1354f891,Fix Kubernator bug with missing argument invocation,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-15 16:28:52-04:00,14400,2021-05-15 16:28:52-04:00,14400,True,False,['kops.py'],['55b8bcf542959c53d5e9b1a8ce74324cb26a4b4e'],1,2,3,1,0.0,0.0,1.0
+e8b8c38d906ddbe916ebf88e7517d1a1e2827e3a,"Upgrade to Kubernetes Client 1.17
+Add create_resource method to allow creating resources
+Resources are now identified by group/kind/name/[namespace]",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-16 07:47:24-04:00,14400,2021-05-16 07:47:24-04:00,14400,True,False,"['build.py', 'istio.py', 'k8s.py', 'k8s_api.py']",['2d50f0fd358180537e8844c73fe691bc1354f891'],15,26,41,4,0.875,1.0,0.5
+f45ac5c09f086d71fc74f021eacad9ab75c81f84,Validation needs to happen after kubeconfig is exported,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-17 04:32:26-04:00,14400,2021-05-17 04:32:26-04:00,14400,True,False,['kops.py'],['e8b8c38d906ddbe916ebf88e7517d1a1e2827e3a'],19,21,40,1,0.0,0.0,1.0
+1bd3203a34d813fb6de09327f4ae3e67dd40ee5f,StatefulSet updates for forbidden fields require a different failure handling,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-20 05:03:52-04:00,14400,2021-05-20 05:03:52-04:00,14400,True,False,['k8s.py'],['f45ac5c09f086d71fc74f021eacad9ab75c81f84'],1,7,8,1,0.0,0.0,0.0
+f6b93c43421a7b8c55b5d81941f8c99c6839b7c4,Add StorageClass mutator,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-05-21 07:19:54-04:00,14400,2021-05-21 07:19:54-04:00,14400,True,False,['k8s.py'],['1bd3203a34d813fb6de09327f4ae3e67dd40ee5f'],0,1,1,1,0.0,1.0,1.0
+afeac67d6a307773e8259fe57f327f997432f45f,Taking Kubernator Open Source,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-09-15 00:26:05-04:00,14400,2021-09-15 00:26:05-04:00,14400,True,False,"['LICENSE', 'README.md', 'build.py', '__init__.py', 'api.py', 'app.py', 'helm.py', 'istio.py', 'k8s.py', 'k8s_api.py', 'kops.py', 'proc.py', 'template.py', 'tf.py', 'proc_tests.py', 'templates_tests.py']",['f6b93c43421a7b8c55b5d81941f8c99c6839b7c4'],54,454,508,16,0.0,1.0,1.0
+8a492f6ce85406108d28c821b850a0f090f6e22e,Add GHA and fix build errors,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-09-15 06:23:15-04:00,14400,2021-09-15 06:23:15-04:00,14400,True,False,"['kubernator.yml', 'build.py', 'template.py', 'tf.py']",['afeac67d6a307773e8259fe57f327f997432f45f'],5,62,67,4,0.0,1.0,1.0
+b13a0e89df397593c6f334e3e63d539ed06ba4b4,Readme cleanup and badges,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-09-16 00:56:35-04:00,14400,2021-09-16 00:56:35-04:00,14400,True,False,['README.md'],['8a492f6ce85406108d28c821b850a0f090f6e22e'],4,20,24,1,,,
+6afae5ce7160b5ec8e32550fd062a27ac4ac59f6,Release version 0.0.1,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-09-16 01:26:17-04:00,14400,2021-09-16 01:26:17-04:00,14400,True,False,['build.py'],['b13a0e89df397593c6f334e3e63d539ed06ba4b4'],1,2,3,1,0.0,1.0,1.0
+b61751d18ee777598b6f612d06653b6812bd44a7,Started 1.0.0.dev,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-09-16 01:27:36-04:00,14400,2021-09-16 01:27:36-04:00,14400,True,False,['build.py'],['6afae5ce7160b5ec8e32550fd062a27ac4ac59f6'],1,1,2,1,,,
+ba3e53642041077fc6bfc4f10f9526736a72b2f0,Refine CI,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-10-01 22:20:20-04:00,14400,2021-10-01 22:29:49-04:00,14400,True,False,['kubernator.yml'],['b61751d18ee777598b6f612d06653b6812bd44a7'],14,27,41,1,,,
+a0afad1e91eba15478884270c9de79052b901007,"Release 0.0.2
+
+Constrain jsonschema<4.0",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-10-20 21:16:44-04:00,14400,2021-10-20 21:41:37-04:00,14400,True,False,"['kubernator.yml', 'build.py']",['bfd0612ae644a859f41cae3f59ade9125761e279'],2,7,9,2,0.0,1.0,1.0
+46bde2f3da41904a9876e809d498c713d1d09aa3,Start 1.0.0.dev,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2021-10-21 22:51:42-04:00,14400,2021-10-21 22:51:42-04:00,14400,True,False,['build.py'],['ca3013e50e242dbad5a091778115d1cb455af9d4'],1,1,2,1,,,
+85597872a92f2d86006c7b239041481234da04b0,Upgrade to Jinja2 3.1.x (#3),Arcadiy Ivanov,arcadiy@ivanov.biz,GitHub,noreply@github.com,2022-11-20 01:02:14-05:00,18000,2022-11-20 01:02:14-05:00,18000,True,False,"['kubernator.yml', 'build.py', 'api.py']",['ca3013e50e242dbad5a091778115d1cb455af9d4'],5,7,12,3,0.0,1.0,1.0
+19ea138c76f2a5767654877150c62a780b2cd88d,"Fix include/exclude confusion in app
+Fix Istio precheck/validate and version parsing",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-08-07 15:31:38-04:00,14400,2023-08-07 15:48:00-04:00,14400,True,False,"['kubernator.yml', 'markdown.xml', 'README.md', 'build.py', '__main__.py', 'app.py', 'istio.py']",['d2075c2e8cbaa6ff515a9908f9041c255d13bce8'],7,42,49,7,0.0,1.0,1.0
+f13093d5824a7f22fcf1ee5e2ae9bff23499228b,"New plugin registration infrastructure
+New plugins: awscli, eks, terragrunt, terraform (renamed from tf)",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-04 15:58:52-05:00,18000,2023-12-12 04:44:51-05:00,18000,True,False,"['misc.xml', 'build.py', 'api.py', 'app.py', 'awscli.py', 'eks.py', 'helm.py', 'istio.py', 'k8s.py', 'k8s_api.py', 'kops.py', 'kubeconfig.py', 'kubectl.py', 'minikube.py', 'template.py', 'terraform.py', 'terragrunt.py', 'tf.py', 'property_dict_tests.py']",['19ea138c76f2a5767654877150c62a780b2cd88d'],240,1439,1679,19,0.6216640502354788,0.8634222919937206,0.783359497645212
+c8f944a99946890d3f1b87bcaa0fd811868e995a,Release 1.0.0,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-12 04:53:36-05:00,18000,2023-12-12 04:53:36-05:00,18000,True,False,['build.py'],['b19333f3fefb91b26392761830b06a3ac1afdec6'],1,1,2,1,,,
+d015bf9360e9cf3046f60189d457fb981a6deb99,"Fix plugins not being a package and not being packaged
+Add Dockerfile
+Plugin names are now in the `_name` field for deconfliction
+Add version printout",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-12 21:18:09-05:00,18000,2023-12-12 21:31:07-05:00,18000,True,False,"['kubernator.yml', 'Dockerfile', 'build.py', '__init__.py', 'api.py', 'app.py', '__init__.py', 'awscli.py', 'eks.py', 'helm.py', 'istio.py', 'k8s.py', 'kops.py', 'kubeconfig.py', 'kubectl.py', 'minikube.py', 'template.py', 'terraform.py', 'terragrunt.py']",['c8f944a99946890d3f1b87bcaa0fd811868e995a'],24,88,112,19,0.5833333333333334,0.9166666666666666,1.0
+6c83f2ed348a42150ee762f5f52911845c69c4b4,Add permissions to write to GHCR,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-12 21:57:14-05:00,18000,2023-12-12 21:57:14-05:00,18000,True,False,['kubernator.yml'],['bf62be492e6b3e343b4310b82ce4359f349c1c1e'],0,3,3,1,,,
+e9feacd447d871f47f78e1342ea4ee142624d11e,Update documentation to include the use of dockerized Kubernator,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-12 22:20:55-05:00,18000,2023-12-12 22:20:55-05:00,18000,True,False,['README.md'],['6c83f2ed348a42150ee762f5f52911845c69c4b4'],1,11,12,1,,,
+bc973c6ea6a699a893af3d0d574d0ffb2d038e06,"Fix Istio plugin and add informative logging
+Add JSON Path and tests
+Fix Terragrunt binary name
+Move K8S imports from global to local in prep for library versioning",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-15 01:18:50-05:00,18000,2023-12-15 01:25:01-05:00,18000,True,False,"['build.py', 'api.py', 'app.py', 'istio.py', 'k8s.py', 'terragrunt.py', 'deployment.json', 'jsonpath_tests.py']",['e9feacd447d871f47f78e1342ea4ee142624d11e'],32,340,372,8,0.5,0.9230769230769231,0.8653846153846154
+3339499bce6d66c62866845e3074e570a76e4b57,Release 1.0.2,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-15 01:37:45-05:00,18000,2023-12-15 01:37:45-05:00,18000,True,False,['build.py'],['b8408f71d63560cdd8055c61d5b89db9c8811068'],1,1,2,1,,,
+1aa8d7ef747d9d4f8de8ec16bc272e0960be5fe9,Fix TF binary not requiring to be copied,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-15 12:33:59-05:00,18000,2023-12-15 12:36:08-05:00,18000,True,False,"['build.py', 'terraform.py']",['9b4eb66e900e271009fe111e1e96ceece35b2480'],4,2,6,2,1.0,0.0,0.0
+fdd60284717d40fb384cad0357c625bcb468c037,Add git to Docker image,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-15 13:05:08-05:00,18000,2023-12-15 13:05:08-05:00,18000,True,False,"['Dockerfile', 'build.py']",['f96b359d05f1d4ad98ac01cb578767a62c79a69e'],1,4,5,2,,,
+9e355e7c4b57bd6172a1513f7e541abb6d3f7666,Fix the use of prepend_os_path with temporary directories,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-15 15:26:56-05:00,18000,2023-12-15 15:26:56-05:00,18000,True,False,"['build.py', 'api.py', 'awscli.py', 'helm.py', 'istio.py', 'kubectl.py', 'terraform.py', 'terragrunt.py']",['fdd60284717d40fb384cad0357c625bcb468c037'],7,8,15,8,1.0,1.0,1.0
+472cd53e996f2cfea921cd24c1cbd6c3609cb9aa,"Add dynamic selection of K8S python client based on connection version
+Docker build will no longer tag development build as latest",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-17 11:49:54-05:00,18000,2023-12-17 11:51:21-05:00,18000,True,False,"['Dockerfile', 'build.py', 'smoke_clear_cache_tests.py', 'smoke_version_tests.py', 'test_support.py', '__init__.py', 'api.py', 'app.py', 'istio.py', 'k8s.py']",['9e355e7c4b57bd6172a1513f7e541abb6d3f7666'],21,222,243,10,0.3076923076923077,0.45054945054945056,0.6593406593406593
+06c0cb13f3285098b164a987acc8bd098444590e,"Add minikube
+
+Fix env use in proc runner
+Normalize plugin call stanza
+Shutdown handler now always runs in the final regardless of the failure state",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-18 18:26:27-05:00,18000,2023-12-18 18:28:00-05:00,18000,True,False,"['app.py', 'awscli.py', 'eks.py', 'helm.py', 'istio.py', 'kubectl.py', 'minikube.py', 'terraform.py', 'terragrunt.py', 'proc.py']",['82a1dd2db9d1546287f7a7fe4ae5fcdf4a15e00f'],70,160,230,10,0.5733333333333334,0.9333333333333333,0.6266666666666667
+1c212a357a1b8a74172109502447ab3d5f1e6448,Add ability to start the minikube cluster fresh,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-18 23:39:18-05:00,18000,2023-12-18 23:41:15-05:00,18000,True,False,['minikube.py'],['06c0cb13f3285098b164a987acc8bd098444590e'],14,30,44,1,0.8461538461538461,1.0,0.8461538461538461
+58838f6d775886420299338a6f5b0e5a4424752f,Fix integration tests,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-19 00:08:38-05:00,18000,2023-12-19 00:08:38-05:00,18000,True,False,"['smoke_clear_cache_tests.py', 'smoke_version_tests.py', 'test_support.py']",['d7e906fec6216347e5dd694e75b200b2aa556aac'],7,24,31,3,,,
+8833e8ec9fb243f3de016b55c275d227507f89c8,"The workaround for K8S Python client bug in v1.20 has been fixed
+in v1.25. This adds a workaround for the workaround.
+
+Added integration tests
+
+fixes #17",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-19 03:40:43-05:00,18000,2023-12-19 04:15:29-05:00,18000,True,False,"['.kubernator.py', 'manifests.yaml', 'issue_17_tests.py', 'smoke_clear_cache_tests.py', 'smoke_version_tests.py', 'test_support.py', 'k8s.py', 'k8s_api.py']",['58838f6d775886420299338a6f5b0e5a4424752f'],6,78,84,8,0.9,0.9,1.0
+f004ed6bb2bad9bdd6e7c5c4b950f0b4e616c767,Fix itest failure on Python 10,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-19 04:21:52-05:00,18000,2023-12-19 04:21:52-05:00,18000,True,False,['app.py'],['8833e8ec9fb243f3de016b55c275d227507f89c8'],1,1,2,1,,,
+1fd7a89a968b1866d2387f7f0841a581c2818816,Release v1.0.6,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-19 08:57:52-05:00,18000,2023-12-19 08:57:52-05:00,18000,True,False,['build.py'],['89835834e7ea90fda0bff4b77ff822855eb39cd2'],1,1,2,1,,,
+2ee91dcb614a9e5a7d6908201d420425ffcc19c0,Prepare 1.0.7 [skip ci],Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-19 09:05:01-05:00,18000,2023-12-19 09:05:01-05:00,18000,True,False,['build.py'],['155062a27bcb194cd503db6831c4e74f15520b94'],1,1,2,1,,,
+f7300566adf4f95b48ecf9cea4a87f435d403822,"Fix istio using a wrong k8s.client variable
+Also fix istio not excluding `*.istio.y[a]ml` from k8s from the current dir
+
+fixes #23",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-19 10:44:58-05:00,18000,2023-12-19 10:45:04-05:00,18000,True,False,"['.kubernator.py', 'test.istio.yaml', 'issue_23_tests.py', 'istio.py']",['2ee91dcb614a9e5a7d6908201d420425ffcc19c0'],1,132,133,4,1.0,1.0,1.0
+4350c4c52b62d28caa77009fcaaf21b24846c4bd,"Don't create a directory per minikube profile
+Use native minikube profiles",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-19 11:00:59-05:00,18000,2023-12-19 11:00:59-05:00,18000,True,False,['minikube.py'],['6c81be4ccd1a1b6d7e3f7c595a01b80da9a8e9d7'],3,3,6,1,,,
+d7bebd5029dd0d8496e7ea021fb13482b959b198,Also don't run cache delete during tests to prevent the wiping,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-19 11:08:32-05:00,18000,2023-12-19 11:08:32-05:00,18000,True,False,['smoke_clear_cache_tests.py'],['4350c4c52b62d28caa77009fcaaf21b24846c4bd'],29,0,29,1,0.0,0.0,0.0
+dcb80896b58b46613fb4ac7036f090d795c524cc,Release v1.0.7,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-19 11:34:26-05:00,18000,2023-12-19 11:53:43-05:00,18000,True,False,['build.py'],['767a6cdfa3205255f33e001e7b94d5e0382781ac'],1,1,2,1,,,
+7d625815c8273458bbff49cbde724851ec97bfa3,"Fix git repository caching logic (due to fetch restrictions)
+
+fixes #27",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-20 13:49:34-05:00,18000,2023-12-20 14:01:39-05:00,18000,True,False,"['vcs.xml', 'build.py', '.kubernator.py', 'git.tar.gz', 'issue_27_tests.py', 'api.py']",['fbda35a66203e40f886b7f485eae9dd5eee87c91'],9,65,74,6,0.7333333333333333,0.0,0.5333333333333333
+d1d3810c87b3ee3aa65ab7d841c868dd0eb90997,Release 1.0.8,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-20 14:13:18-05:00,18000,2023-12-20 14:13:18-05:00,18000,True,False,['build.py'],['2505055795758f559a6d5440a24473787a47fc65'],1,1,2,1,,,
+322222991dc49fdae38d3619657041d5905c7de1,"Full smoke test
+Cleanup temporary directories
+Kubectl is now driven by the context.k8s.server_version if version is blank",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-21 01:10:00-05:00,18000,2023-12-21 01:10:00-05:00,18000,True,False,"['build.py', '.kubernator.py', 'full_smoke_tests.py', 'api.py', 'helm.py', 'istio.py', 'kubectl.py', 'minikube.py', 'terraform.py', 'terragrunt.py']",['7561958e56623f3afe27ecf9a0320bf9a06e1386'],6,79,85,10,0.6521739130434783,1.0,0.8260869565217391
+02f1799a1f3b41d841dfe92cbcf51dd801bfe493,"Test on MacOS Homebrew
+
+Autodetect between Docker and HyperKit on MacOS
+Fixes for istioctl for MacOS/Darwin
+
+fixes #22",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-23 00:10:12-05:00,18000,2023-12-24 11:43:24-05:00,18000,True,False,"['kubernator.yml', 'README.md', 'full_smoke_tests.py', 'issue_17_tests.py', 'issue_23_tests.py', 'issue_27_tests.py', 'api.py', 'istio.py', 'minikube.py', 'templates_tests.py']",['36e36ffce4d44e704f25cb927c599d607a7898c2'],17,117,134,10,0.0,0.0,0.32432432432432434
+be300d6e6a684fbe0caeb6f00da7055de5b7eb9a,Release v1.0.9,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-24 12:27:49-05:00,18000,2023-12-24 12:28:36-05:00,18000,True,False,['build.py'],['e0c79e184c79c1157c25c1a8f99acabb16c3039a'],1,1,2,1,,,
+77d4640fd02990e862491e338a8b32e763c5a99b,"Update README.md
+
+Fix documentation",Arcadiy Ivanov,arcadiy@ivanov.biz,GitHub,noreply@github.com,2023-12-24 12:32:32-05:00,18000,2023-12-24 12:32:32-05:00,18000,True,False,['README.md'],['dc157c42c03d911e782bfd9ff24c2e94ccb9d920'],1,1,2,1,,,
+ae007a1b16fb869008fb0a02cce1f9cb7b35713f,Start v1.0.10 [skip ci],Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-24 12:33:18-05:00,18000,2023-12-24 12:33:18-05:00,18000,True,False,['build.py'],['77d4640fd02990e862491e338a8b32e763c5a99b'],1,1,2,1,,,
+323dba5be52520db407fabab3f6e24ab8761a439,Fix path logging,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-25 14:05:13-05:00,18000,2023-12-25 14:05:13-05:00,18000,True,False,['minikube.py'],['ae007a1b16fb869008fb0a02cce1f9cb7b35713f'],1,1,2,1,,,
+0e477d8747b2a43a8c303cc629429282f84b7cc4,"Implement field validation in K8S Plugin
+
+Default all field validation to Strict
+Default all field validation warnings to fatal.
+
+related to https://github.com/kubernetes/kubernetes/issues/122480
+
+fixes #35",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-26 03:02:08-05:00,18000,2023-12-26 03:09:46-05:00,18000,True,False,"['.kubernator.py', 'manifests.yaml', 'issue_35_tests.py', 'test_support.py', 'k8s.py', 'k8s_api.py']",['3f2589857ec86a2a618c65bf1c9de8c1269488e7'],8,204,212,6,0.30275229357798167,0.5137614678899083,0.5137614678899083
+c2f06a17e5456aba14bb88da446089fd7f01f249,Release 1.0.10,Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-26 03:43:46-05:00,18000,2023-12-26 03:43:46-05:00,18000,True,False,['build.py'],['6fd53632830837b4dc08ef667ba4c7ca5c393dab'],1,1,2,1,,,
+8e067dfc49f384573c2863547db0408b4dab52d1,Prepare 1.0.11 [skip ci],Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-26 10:12:54-05:00,18000,2023-12-26 10:12:54-05:00,18000,True,False,['build.py'],['e26a8a8d8d900f27cfd763ec35b5413f9918ab75'],1,1,2,1,,,
+36123128d9145fee43618e8d8831f421688cfd7d,"Improve 400 error messaging (report as modification failure)
+Fix K8S Client not supporting `field_validation` on custom objects
+
+fixes #39
+fixes #40",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-27 03:10:40-05:00,18000,2023-12-27 03:17:52-05:00,18000,True,False,"['build.py', 'k8s.py', 'k8s_api.py']",['8e067dfc49f384573c2863547db0408b4dab52d1'],11,19,30,3,0.8333333333333334,1.0,1.0
+dafae304759a2d390253d554c8561d9446f77590,"Force git to clobber tags in the git cache
+Release 1.0.12
+
+fixes #43",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2023-12-29 14:46:40-05:00,18000,2023-12-29 14:46:40-05:00,18000,True,False,"['build.py', 'api.py']",['33a60fc8f9721c84663ed6818a8c87621c3a96fa'],2,2,4,2,,,
+4013cb9d6b7f4d50bad763ce3ea8f8ccca0a1cdf,"Patch Kubernetes Client libraries
+
+Patch for field_validation and urllib3 deprecated API use
+
+Allow to control patching via k8s plugin
+Add tests for client generation w/ and w/o patching
+
+fixes #45",Arcadiy Ivanov,arcadiy@ivanov.biz,Arcadiy Ivanov,arcadiy@ivanov.biz,2024-01-03 02:33:25-05:00,18000,2024-01-03 12:13:21-05:00,18000,True,False,"['Dockerfile', 'build.py', '.kubernator.py', 'manifests.yaml', '.kubernator.py', 'manifests.yaml', 'issue_35_tests.py', 'smoke_pre_cache_tests.py', '_k8s_client_patches.py', 'api.py', 'app.py', 'k8s.py', 'k8s_api.py', 'minikube.py']",['230e592585ad37c30fdebb3bb66bd5e09e7f29ca'],75,894,969,14,0.0989010989010989,0.04395604395604396,0.5054945054945055

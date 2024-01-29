@@ -1,0 +1,566 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+3ccc404ba721fd71f84045e2f7ebaada00926749,initial commit,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 01:52:01+03:00,-10800,2018-09-01 01:52:01+03:00,-10800,True,False,"['CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'ISSUE_TEMPLATE.md', 'PULL_REQUEST_TEMPLATE.md', '.gitignore', 'LICENCE', 'README.md', 'configuration.json.example', 'configuration_test.json.example', 'Makefile', 'kutana-logo-512.png', 'kutana-logo-dark-512.png', 'conf.py', 'controllers.rst', 'executors.rst', 'index.rst', 'make.bat', 'plugins.rst', 'special-updates.rst', 'kutana.controllers.rst', 'kutana.environments.rst', 'kutana.plugins.norm.rst', 'kutana.plugins.rst', 'kutana.rst', 'kutana.tools.rst', 'modules.rst', 'echo.py', 'list.py', 'run.py', '__init__.py', '__init__.py', 'basiccontroller.py', 'dumping.py', 'vk.py', '__init__.py', 'vk.py', 'vk_helpers.py', 'exceptions.py', 'executor.py', 'kutana.py', '__init__.py', 'data.py', '__init__.py', 'dumping.py', 'vk.py', 'plugin.py', 'shortcuts.py', '__init__.py', 'functions.py', 'structures.py', 'requirements.txt', 'author.png', 'benchmarks.py', 'girl.ogg', 'test_controller_vk.py', 'test_executors.py', 'test_framework.py', 'test_miscellaneous.py', 'test_plugins.py']",[],0,2865,2865,59,0.5126050420168067,0.6900093370681606,0.6283846872082166
+05be4b0386ff8c2e8f374e44118ab197ecc87475,Add new-style issue template,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 02:21:05+03:00,-10800,2018-09-01 02:21:05+03:00,-10800,True,False,['bug-or-feature-issue.md'],['3ccc404ba721fd71f84045e2f7ebaada00926749'],0,42,42,1,,,
+a713cb7d0d49b1067a064a90be49b5449608812e,tided up .github folder,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 02:24:35+03:00,-10800,2018-09-01 02:24:35+03:00,-10800,True,False,['ISSUE_TEMPLATE.md'],['05be4b0386ff8c2e8f374e44118ab197ecc87475'],36,0,36,1,,,
+008916c4feea5a17cb30db95f6d1ea7d2608a72a,separated issue template into 'bug report' and 'feature request',Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 02:45:03+03:00,-10800,2018-09-01 02:47:42+03:00,-10800,True,False,"['bug-report.md', 'feature-reqeust.md']",['f236d22ebcc48caf68d956561707d38345bbc4d5'],5,26,31,2,,,
+a5e06b525e62292185074d0004822174227c9b6e,added readthedocs badge and integrated travis CI,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 03:01:13+03:00,-10800,2018-09-01 03:02:19+03:00,-10800,True,False,"['.travis.yml', 'README.md']",['008916c4feea5a17cb30db95f6d1ea7d2608a72a'],0,12,12,2,,,
+e099afe4f32128556fe1921108d90f071ee92a0b,fixed some style issues; changed name and structure of norm submodule,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 12:51:27+03:00,-10800,2018-09-01 12:51:27+03:00,-10800,True,False,"['kutana.plugins.converters.rst', 'kutana.plugins.norm.rst', 'kutana.plugins.rst', 'list.py', 'run.py', '__init__.py', 'dumping.py', 'vk.py', 'vk.py', 'vk_helpers.py', 'exceptions.py', 'executor.py', 'kutana.py', '__init__.py', 'dumping.py', 'vk.py', 'data.py', '__init__.py', 'plugin.py', 'shortcuts.py', 'functions.py', 'structures.py', 'benchmarks.py', 'test_controller_vk.py', 'test_executors.py', 'test_framework.py', 'test_miscellaneous.py', 'test_plugins.py']",['a5e06b525e62292185074d0004822174227c9b6e'],194,246,440,28,0.84,0.92,1.0
+f88cd90dfed4aa7fff2140b4d8e9b76cbbd0a28e,small style fixes,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 13:06:05+03:00,-10800,2018-09-01 13:06:05+03:00,-10800,True,False,"['run.py', 'dumping.py', 'vk.py', 'kutana.py', 'benchmarks.py', 'test_executors.py', 'test_plugins.py']",['ca181ceb2138ec811700b0b6a1b5ce748537ec3c'],11,6,17,7,,,
+908114e9f4d251a1fbc5e48d1a2f8155ee36c679,created separate file for logger,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 13:12:56+03:00,-10800,2018-09-01 13:12:56+03:00,-10800,True,False,"['__init__.py', 'vk.py', 'executor.py', 'kutana.py', 'logger.py', 'functions.py']",['f88cd90dfed4aa7fff2140b4d8e9b76cbbd0a28e'],26,25,51,6,,,
+051fc1b34e2e0eaf3e3a55353ad0a6ee39b9c01a,removed unused import,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 13:19:43+03:00,-10800,2018-09-01 13:19:43+03:00,-10800,True,False,"['README.md', 'kutana.py']",['908114e9f4d251a1fbc5e48d1a2f8155ee36c679'],5,7,12,2,,,
+591da6dfacac7aa716ae024285e78ea6afdd45a1,disable check for import * in __init__ for lgtm; added .lgtm.yml,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 13:52:55+03:00,-10800,2018-09-01 14:03:11+03:00,-10800,True,False,"['.lgtm.yml', '__init__.py', 'structures.py']",['13604e99059169bd05d88e736600426d689ebf13'],8,18,26,3,1.0,1.0,1.0
+ec85f7d21549793468e5e538be5efb1538bef127,better coverage; added coveralls,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 16:45:26+03:00,-10800,2018-09-01 16:50:42+03:00,-10800,True,False,"['.travis.yml', 'README.md', '__init__.py', 'basiccontroller.py', 'vk.py', 'vk_helpers.py', 'executor.py', 'kutana.py', 'vk.py', 'structures.py', 'test_controller_vk.py', 'test_executors.py', 'test_miscellaneous.py', 'plugin_memory.py']",['591da6dfacac7aa716ae024285e78ea6afdd45a1'],28,142,170,14,0.78125,1.0,0.765625
+4f6a3fa01c9ca0820268a58e4493dad21af6477a,code duplicate removed,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 17:04:17+03:00,-10800,2018-09-01 17:04:17+03:00,-10800,True,False,"['vk_helpers.py', 'test_executors.py', 'test_miscellaneous.py']",['ec85f7d21549793468e5e538be5efb1538bef127'],37,31,68,3,0.8,1.0,0.8
+7c0a79a12f88e31aa3bc12adb805968ebeb121f8,more coverage,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 17:14:40+03:00,-10800,2018-09-01 17:14:40+03:00,-10800,True,False,['test_plugins.py'],['4f6a3fa01c9ca0820268a58e4493dad21af6477a'],5,23,28,1,0.0,1.0,0.8333333333333334
+1c5ba251ab3c191ad8f2c0faab8e380c67db2675,moved lgtm up,Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2018-09-01 17:21:16+03:00,-10800,2018-09-01 17:21:16+03:00,-10800,True,False,['README.md'],['d7436cbd80a15ed8d154b56d79f7dea11ac86059'],1,0,1,1,,,
+6964752a52b307b168189623faa2915a3630aee7,Update README.md,Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2018-09-01 19:38:52+03:00,-10800,2018-09-01 19:38:52+03:00,-10800,True,False,['README.md'],['1c5ba251ab3c191ad8f2c0faab8e380c67db2675'],5,8,13,1,,,
+b29d905b964f6b4a58d5632a2b9808f87907a227,fixed typo in docs,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-01 19:41:58+03:00,-10800,2018-09-01 19:42:32+03:00,-10800,True,False,"['kutana.rst', 'vk.py']",['6964752a52b307b168189623faa2915a3630aee7'],2,10,12,2,,,
+c810a393e2965cf97aad980353c81d22c4148259,small docs addition,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-02 23:18:25+03:00,-10800,2018-09-02 23:18:25+03:00,-10800,True,False,['plugins.rst'],['b29d905b964f6b4a58d5632a2b9808f87907a227'],19,20,39,1,,,
+d2563ee40c592a187ea165b2b4f01b3917007d7c,added pypi package,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 00:26:40+03:00,-10800,2018-09-03 00:26:40+03:00,-10800,True,False,"['.travis.yml', '__init__.py', 'setup.py']",['c810a393e2965cf97aad980353c81d22c4148259'],2,68,70,3,1.0,1.0,1.0
+2f5fee81b127281ace7b909b4c526ee2408c6fa2,fixed .travis.yml,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 00:31:17+03:00,-10800,2018-09-03 00:32:55+03:00,-10800,True,False,['.travis.yml'],['d2563ee40c592a187ea165b2b4f01b3917007d7c'],1,2,3,1,,,
+b49fc43acea7c77eeffd9e442ea77bff6fbd303d,fixed .travis.yml,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 00:31:17+03:00,-10800,2018-09-03 00:41:54+03:00,-10800,True,False,['.travis.yml'],['d2563ee40c592a187ea165b2b4f01b3917007d7c'],1,2,3,1,,,
+3ac9c2a638ffbff5dc0c79074ace58df3171ca11,build setting .travis.yml,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 00:48:35+03:00,-10800,2018-09-03 00:49:02+03:00,-10800,True,False,['.travis.yml'],['b49fc43acea7c77eeffd9e442ea77bff6fbd303d'],2,0,2,1,,,
+ecc46f131bcd16c3a8669aeefc04f853d61d6b41,changed version for pypi package,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 00:57:04+03:00,-10800,2018-09-03 00:57:04+03:00,-10800,True,False,"['__init__.py', 'setup.py']",['f154168bd85cc91046a7efb0f21345cfb55774ef'],2,2,4,2,,,
+88a8c8797951954305209a0d96b661a7182dd24f,test; build; publish,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 01:16:19+03:00,-10800,2018-09-03 01:16:19+03:00,-10800,True,False,"['.travis.yml', '__init__.py', 'setup.py']",['ecc46f131bcd16c3a8669aeefc04f853d61d6b41'],2,4,6,3,,,
+71e3a2ad20d470f07c1381c14e75ecc656d142ae,test; build; publish,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 01:16:30+03:00,-10800,2018-09-03 01:16:30+03:00,-10800,True,False,['.travis.yml'],['88a8c8797951954305209a0d96b661a7182dd24f'],14,16,30,1,,,
+9d875f0f7fc9e7b1ffeddc05c2e04bfa1a71bb18,test; build; deploy,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 01:17:31+03:00,-10800,2018-09-03 01:22:52+03:00,-10800,True,False,['.travis.yml'],['71e3a2ad20d470f07c1381c14e75ecc656d142ae'],13,13,26,1,,,
+bcc74746615f509b52e7e6521bdc01ab23f5b4c3,added pypi package,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 01:33:11+03:00,-10800,2018-09-03 01:33:11+03:00,-10800,True,False,"['.travis.yml', 'README.md']",['9d875f0f7fc9e7b1ffeddc05c2e04bfa1a71bb18'],1,3,4,2,,,
+a92344d873621ab81f9d755e66f01230348d5874,test; build; deploy,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 01:34:57+03:00,-10800,2018-09-03 01:44:27+03:00,-10800,True,False,"['.travis.yml', 'README.md', '__init__.py', 'setup.py']",['bcc74746615f509b52e7e6521bdc01ab23f5b4c3'],12,5,17,4,,,
+b32477e0a95809bff48a7128511de0fed0b4dfdc,hotfix,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 02:01:50+03:00,-10800,2018-09-03 02:01:50+03:00,-10800,True,False,['setup.py'],['a92344d873621ab81f9d755e66f01230348d5874'],1,1,2,1,,,
+a169234cbbe415f9cb75bde1dbf2c6fd1b7c7e95,hotfix,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-03 02:01:50+03:00,-10800,2018-09-03 02:04:30+03:00,-10800,True,False,"['__init__.py', 'setup.py']",['a92344d873621ab81f9d755e66f01230348d5874'],3,3,6,2,,,
+607ed9acb485f9526b3ea44b684da9524762563c,reworked environments; updated docs; added features; changed version;,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-04 02:17:54+03:00,-10800,2018-09-04 02:17:54+03:00,-10800,True,False,"['README.md', 'configuration.json.example', 'configuration_test.json.example', 'controller.rst', 'controllers.rst', 'executor.rst', 'executors.rst', 'index.rst', 'plugin.rst', 'plugins.rst', 'special-updates.rst', 'kutana.controllers.rst', 'kutana.controllers.vk.rst', 'kutana.environments.rst', 'kutana.rst', 'echo.py', 'list.py', 'run.py', '__init__.py', 'basiccontroller.py', 'dumping.py', '__init__.py', 'vk.py', 'vk_helpers.py', '__init__.py', 'vk.py', 'executor.py', 'kutana.py', '__init__.py', 'dumping.py', 'vk.py', 'plugin.py', 'shortcuts.py', 'functions.py', 'setup.py', 'benchmarks.py', 'author.png', 'girl.ogg', 'sample.json', 'test_controller_vk.py', 'test_executors.py', 'test_miscellaneous.py', 'test_plugins.py']",['0ce944129533a4d0a07dc60b3a3c90557177b397'],651,835,1486,43,0.8728813559322034,1.0,1.0
+027ea231665aecdaf8a31229328dcdae5695f217,style fixes,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-04 02:25:34+03:00,-10800,2018-09-04 02:25:34+03:00,-10800,True,False,"['__init__.py', 'vk.py', 'test_miscellaneous.py']",['607ed9acb485f9526b3ea44b684da9524762563c'],3,3,6,3,,,
+d8492ebf789326c4e8aa69efcad20a9e07504c92,fixed unused import,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-04 02:39:08+03:00,-10800,2018-09-04 02:39:08+03:00,-10800,True,False,['executor.py'],['027ea231665aecdaf8a31229328dcdae5695f217'],1,0,1,1,,,
+77ff8f5c334f6a71847298f679db8a6801bf74fa,small fixes,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-04 03:02:18+03:00,-10800,2018-09-04 03:06:17+03:00,-10800,True,False,"['index.rst', 'benchmarks.py', 'test_executors.py']",['d8492ebf789326c4e8aa69efcad20a9e07504c92'],3,6,9,3,,,
+c2b891c7edf0bc578c5bbd8dfe88d9de18b8698d,"tided up packages; merged converters and controllers; TODO: docs, tests",Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-04 13:03:06+03:00,-10800,2018-09-04 13:03:06+03:00,-10800,True,False,"['__init__.py', 'basic.py', 'basiccontroller.py', 'dumping.py', '__init__.py', 'converter.py', 'methodclasses.py', 'vkcontroller.py', 'vkcontrollerdata.py', 'kutana.py', 'logger.py', 'plugin.py', 'plugindata.py', '__init__.py', '__init__.py', 'dumping.py', 'test_controller_vk.py', 'test_executors.py', 'test_miscellaneous.py', 'plugin_memory.py']",['77ff8f5c334f6a71847298f679db8a6801bf74fa'],218,220,438,20,0.0,0.16666666666666666,0.0
+4622dad491f88d4b4a119afb36f3fd8af2a686d0,fixed tests; updated docs,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-04 14:16:12+03:00,-10800,2018-09-04 14:16:12+03:00,-10800,True,False,"['controller.rst', 'executor.rst', 'kutana.controllers.rst', 'kutana.controllers.vk.rst', 'kutana.plugins.converters.rst', 'kutana.plugins.rst', 'kutana.rst', 'basic.py', 'methodclasses.py', 'test_controller_vk.py', 'test_executors.py']",['c2b891c7edf0bc578c5bbd8dfe88d9de18b8698d'],101,64,165,11,1.0,1.0,1.0
+ab7ab22bd35621d217aacefb761dd83f7644864b,small style fix + version change,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-04 14:43:37+03:00,-10800,2018-09-04 14:43:37+03:00,-10800,True,False,"['__init__.py', 'setup.py', 'test_controller_vk.py']",['4622dad491f88d4b4a119afb36f3fd8af2a686d0'],3,2,5,3,,,
+3735885a674c00342c89d6e6cf625bab40d62bd2,simplified readme.md,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-04 14:51:05+03:00,-10800,2018-09-04 14:51:05+03:00,-10800,True,False,['README.md'],['bb44b03e3782b024a18b1873d6102485dd942af2'],2,0,2,1,,,
+dc8a30194224c78ae03c14163a93914b6448ce76,changed tag's names for deploy; removed __version__ from kutana,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-05 22:26:17+03:00,-10800,2018-09-05 22:26:17+03:00,-10800,True,False,"['__init__.py', 'setup.py']",['3735885a674c00342c89d6e6cf625bab40d62bd2'],2,2,4,2,,,
+d5432511710f8fae6e15c3a14bd728e4bc6734de,modified DumpingController,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-06 17:28:51+03:00,-10800,2018-09-06 17:31:12+03:00,-10800,True,False,"['dumping.py', 'setup.py']",['dc8a30194224c78ae03c14163a93914b6448ce76'],7,11,18,2,1.0,1.0,0.3333333333333333
+3188aa7a98de622adb0c524a3603e56fc8c7cbf5,small docs update; added Makefile,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-06 18:01:32+03:00,-10800,2018-09-06 18:01:32+03:00,-10800,True,False,"['Makefile', 'modules.rst']",['d5432511710f8fae6e15c3a14bd728e4bc6734de'],0,13,13,2,,,
+036a28561a5e9362a82e7e27e71ad08fd4794423,updated docs; fixed critical bug,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-06 23:11:35+03:00,-10800,2018-09-06 23:11:35+03:00,-10800,True,False,"['environment.rst', 'index.rst', 'recipes.rst', 'modules.rst', 'echo.py', 'list.py', 'prefix.py', 'methodclasses.py', 'vkcontrollerdata.py', 'plugin.py', 'structures.py']",['3188aa7a98de622adb0c524a3603e56fc8c7cbf5'],10,144,154,11,1.0,1.0,0.0
+e04bc29d18de6c7c9c171b9c785a9b88be1ffdda,added test,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-07 00:07:33+03:00,-10800,2018-09-07 00:07:33+03:00,-10800,True,False,['test_plugins.py'],['036a28561a5e9362a82e7e27e71ad08fd4794423'],0,32,32,1,1.0,1.0,0.9583333333333334
+746fd78268a6f10dc0072334ffc8d1fbeb4b8062,hotfix of load_plugins,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-07 00:42:29+03:00,-10800,2018-09-07 00:46:56+03:00,-10800,True,False,"['functions.py', 'setup.py']",['9e74d3ea527ed975b19db0f92c0d3b70d9c1d0ce'],8,5,13,2,0.0,1.0,0.0
+b40fdb1ee953899bf3123630c823ec48ded9a6b4,added reference to kutana-plugins,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-07 01:31:25+03:00,-10800,2018-09-07 01:31:25+03:00,-10800,True,False,['README.md'],['746fd78268a6f10dc0072334ffc8d1fbeb4b8062'],0,1,1,1,,,
+50e4353f5688c81e40b8fb8ec113d4493586ef27,changed plugin registration; changed order to priority; added priority to callbacks; changed dumping to debug; changed tests,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-09 03:07:55+03:00,-10800,2018-09-09 03:07:55+03:00,-10800,True,False,"['README.md', 'environment.rst', 'executor.rst', 'plugin.rst', 'recipes.rst', 'kutana.controllers.rst', 'echo.py', 'prefix.py', '__init__.py', 'debug.py', 'converter.py', 'vkcontroller.py', 'executor.py', 'plugin.py', 'functions.py', 'benchmarks.py', 'test_controller_vk.py', 'test_executors.py', 'test_framework.py', 'test_miscellaneous.py', 'test_plugins.py']",['b40fdb1ee953899bf3123630c823ec48ded9a6b4'],141,236,377,21,0.8648648648648649,1.0,1.0
+0eaa6486902f77c63f792dbae1a3eaf068090773,improved priorities; extended plugins; added early callbacks; changed VKResponse; added __slots__; changed plugins' registration,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-10 03:46:12+03:00,-10800,2018-09-10 03:46:12+03:00,-10800,True,False,"['executor.rst', 'plugin.rst', 'recipes.rst', 'special-updates.rst', 'kutana.controllers.vk.rst', 'echo.py', 'list.py', 'prefix.py', 'statistics.py', 'debug.py', 'vkcontroller.py', 'vkcontrollerdata.py', 'vkwrappers.py', 'executor.py', 'kutana.py', 'plugin.py', 'benchmarks.py', 'test_controller_vk.py', 'test_executors.py', 'test_miscellaneous.py', 'test_plugins.py']",['50e4353f5688c81e40b8fb8ec113d4493586ef27'],141,316,457,21,0.8780487804878049,0.573170731707317,0.35365853658536583
+3d6a69ae59ff67c22b2cbfffc283f1e9cef5b8e2,changed default priorities,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-10 18:20:13+03:00,-10800,2018-09-10 18:20:13+03:00,-10800,True,False,"['executor.rst', 'plugin.rst', 'recipes.rst', 'prefix.py', 'executor.py', 'plugin.py', 'test_executors.py', 'test_plugins.py']",['0eaa6486902f77c63f792dbae1a3eaf068090773'],21,21,42,8,,,
+c10091b380eb1400167d9bbac258ee823f34e244,updated callbacks' structure; changed structures; optimized code; fixed typo,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-11 12:53:23+03:00,-10800,2018-09-11 12:53:23+03:00,-10800,True,False,"['plugin.rst', 'recipes.rst', 'list.py', 'prefix.py', 'vkcontroller.py', 'vkcontrollerdata.py', 'executor.py', 'plugin.py', 'structures.py', 'benchmarks.py', 'test_controller_vk.py', 'test_plugins.py', 'plugin_memory.py']",['3d6a69ae59ff67c22b2cbfffc283f1e9cef5b8e2'],80,100,180,13,1.0,1.0,0.0
+94c546bef696b09d34ebbbb9155be96cacb9f346,fixed important bug,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-11 13:03:48+03:00,-10800,2018-09-11 13:03:48+03:00,-10800,True,False,"['vkcontroller.py', 'kutana.py']",['c10091b380eb1400167d9bbac258ee823f34e244'],3,3,6,2,,,
+49dd0d8acf577a4393879f39ca38aa5fc7620494,added recipe; it's possible to use vk's  outside of engine now,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-11 20:01:52+03:00,-10800,2018-09-11 20:01:52+03:00,-10800,True,False,"['recipes.rst', 'vkcontroller.py']",['94c546bef696b09d34ebbbb9155be96cacb9f346'],11,51,62,2,0.0,0.5,1.0
+4ad5261db03a543fbaf77cac04b25162114b670c,bugfix; ability to user VKControllers outside of Kutana,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-12 01:25:54+03:00,-10800,2018-09-12 01:25:54+03:00,-10800,True,False,"['index.rst', 'recipes.rst', 'run.py', 'vkcontroller.py', 'test_controller_vk.py']",['49dd0d8acf577a4393879f39ca38aa5fc7620494'],12,92,104,5,0.43902439024390244,1.0,0.8780487804878049
+e5abef032f9903f703aa7788f77953f4ba36a885,bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-12 01:28:43+03:00,-10800,2018-09-12 01:28:43+03:00,-10800,True,False,['setup.py'],['4ad5261db03a543fbaf77cac04b25162114b670c'],1,1,2,1,,,
+fd3efbfce455e1f6c3ce631ea86aa564b1c941b6,fixed execute error catching,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-12 01:51:35+03:00,-10800,2018-09-12 01:51:35+03:00,-10800,True,False,"['vkcontroller.py', 'test_controller_vk.py']",['e5abef032f9903f703aa7788f77953f4ba36a885'],6,11,17,2,0.0,0.4,0.0
+a5eba5576e1e1f5db7ff0a7e953085edf5298fdd,possible bug fix,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-12 23:57:43+03:00,-10800,2018-09-12 23:57:43+03:00,-10800,True,False,['vkcontroller.py'],['75ccbd8c4c0f9ba1134639e4d847cfad76cc0848'],1,1,2,1,,,
+87e2fefe391b4112c0f43681a3974f7f79b99ec1,fixed huge bug,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-13 21:25:52+03:00,-10800,2018-09-13 21:26:50+03:00,-10800,True,False,"['kutana.py', 'setup.py']",['d6adbead01d8b4eabcc39a939cce9a25d5af26a6'],2,9,11,2,1.0,1.0,0.75
+751d80a3ee70b30aa2aa1b23a3f2e0c343d57cc9,bug fixes; added execute_pause,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-14 00:50:01+03:00,-10800,2018-09-14 00:50:15+03:00,-10800,True,False,"['echo.py', 'vkcontroller.py', 'functions.py']",['87e2fefe391b4112c0f43681a3974f7f79b99ec1'],4,20,24,3,0.7777777777777778,1.0,0.8888888888888888
+ba97229b9fc728b74842677a86f31148c5ce56ab,new version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-14 00:52:49+03:00,-10800,2018-09-14 00:52:49+03:00,-10800,True,False,['setup.py'],['751d80a3ee70b30aa2aa1b23a3f2e0c343d57cc9'],1,1,2,1,,,
+af3cc21e69c2dde7b6a54e22e66fbbc0c671652e,small fix,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-14 01:06:34+03:00,-10800,2018-09-14 01:06:34+03:00,-10800,True,False,['echo.py'],['ba97229b9fc728b74842677a86f31148c5ce56ab'],1,1,2,1,,,
+e6c12da62d9a904603e2e71824b33ce81b63b3ac,extended docs; added processpollexecutor inside kutana; fixed getting link for the attachmnet in vk,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-17 17:07:41+03:00,-10800,2018-09-17 17:07:41+03:00,-10800,True,False,"['environment.rst', 'echo.py', 'converter.py', 'kutana.py']",['af3cc21e69c2dde7b6a54e22e66fbbc0c671652e'],5,17,22,4,0.14285714285714285,0.0,0.8571428571428571
+ff3b8fd5342456d89adb261f0043dd1b0ab6d373,fix,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-17 20:55:00+03:00,-10800,2018-09-17 20:55:00+03:00,-10800,True,False,['vkcontroller.py'],['e6c12da62d9a904603e2e71824b33ce81b63b3ac'],5,3,8,1,0.5,0.0,0.0
+4f95e95809f9c58975df2a5bf375d9f2cdbcd354,reorganized package; bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-17 22:52:01+03:00,-10800,2018-09-17 22:52:22+03:00,-10800,True,False,"['index.rst', 'kutana.rst', 'kutana.tools.rst', '__init__.py', 'debug.py', 'converter.py', 'vkcontroller.py', 'functions.py', 'kutana.py', 'plugin.py', 'plugindata.py', 'structures.py', '__init__.py', 'setup.py']",['ff3b8fd5342456d89adb261f0043dd1b0ab6d373'],61,38,99,14,,,
+5f3c6e6fedd9e936930858c7761b1680bf30aac2,rearranged modules,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-18 01:17:54+03:00,-10800,2018-09-18 01:18:55+03:00,-10800,True,False,"['kutana.controller_vk.rst', 'kutana.controllers.rst', 'kutana.rst', '__init__.py', 'controller_basic.py', 'controller_debug.py', '__init__.py', 'converter.py', 'vkcontroller.py', 'vkcontrollerdata.py', 'vkwrappers.py', '__init__.py', 'test_miscellaneous.py']",['ce2eeaff987d75b931dd0230e32e0af5a15f1276'],57,37,94,13,,,
+e3abd445460de1133844d6869893989ff0c96215,better docs,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-18 01:44:02+03:00,-10800,2018-09-18 01:46:47+03:00,-10800,True,False,"['.readthedocs.yml', 'index.rst']",['5f3c6e6fedd9e936930858c7761b1680bf30aac2'],3,6,9,2,,,
+46ff5116c1cef6eaef35daccc5095367b8483e9b,cleaned readme.md,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-18 02:17:50+03:00,-10800,2018-09-18 02:17:50+03:00,-10800,True,False,['README.md'],['e3abd445460de1133844d6869893989ff0c96215'],7,0,7,1,,,
+50d3fd61b70357305ba3ad4a13a86d22c02a0fa6,aiohttp boosted min python version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-18 02:28:28+03:00,-10800,2018-09-18 02:28:28+03:00,-10800,True,False,['README.md'],['46ff5116c1cef6eaef35daccc5095367b8483e9b'],1,1,2,1,,,
+6851c4ddf9e067b17b91f21001c7f1e8b6c99623,added storage; updated docs,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-18 21:04:07+03:00,-10800,2018-09-18 21:04:07+03:00,-10800,True,False,"['index.rst', 'kutana.rst', 'kutana.py']",['50d3fd61b70357305ba3ad4a13a86d22c02a0fa6'],5,49,54,3,1.0,1.0,0.0
+5c00c34c5747d918ebdb9ebff1b8a6fc71e79dc3,fix,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-18 21:20:34+03:00,-10800,2018-09-18 21:20:34+03:00,-10800,True,False,['vkcontroller.py'],['6851c4ddf9e067b17b91f21001c7f1e8b6c99623'],1,3,4,1,0.0,0.0,0.0
+2f9fe7e539d18dd10a65c058b9c9c5dcd0f0f928,small change in get_path,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-20 13:11:22+03:00,-10800,2018-09-20 13:11:22+03:00,-10800,True,False,['functions.py'],['5c00c34c5747d918ebdb9ebff1b8a6fc71e79dc3'],3,0,3,1,0.0,0.0,0.0
+ae113cf79f8b10abbd035f9a062edf0a2f25dda9,optimizations; bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-20 16:35:19+03:00,-10800,2018-09-20 16:35:19+03:00,-10800,True,False,"['kutana.controller_vk.rst', '__init__.py', 'vkcontroller.py', 'vkcontrollerdata.py', 'vkwrappers.py', 'setup.py']",['2f9fe7e539d18dd10a65c058b9c9c5dcd0f0f928'],81,58,139,6,1.0,1.0,1.0
+8bc08267247f7deb1f4ffdc975806be2fcb3341c,added requirements; fixed vkwrappers,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-20 16:57:52+03:00,-10800,2018-09-20 16:57:52+03:00,-10800,True,False,"['vkwrappers.py', 'requirements.txt']",['ae113cf79f8b10abbd035f9a062edf0a2f25dda9'],5,7,12,2,,,
+4a6ff33c2102a339ef277d1c53ac2898743aa635,removed unused imports from tests,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-21 02:53:53+03:00,-10800,2018-09-21 02:53:53+03:00,-10800,True,False,"['test_controller_vk.py', 'test_executors.py']",['9683fa0938e06cd283962a477920c95507adad2d'],3,2,5,2,,,
+4b41321402e1a59a568ce69feebbe3e89b21f423,undone special names for controller; bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-21 03:30:49+03:00,-10800,2018-09-21 03:30:49+03:00,-10800,True,False,"['kutana.rst', 'kutana.py', 'setup.py']",['4a6ff33c2102a339ef277d1c53ac2898743aa635'],34,6,40,3,0.0,0.0,1.0
+7969d70d8ed4d9bbbfb8157a6de83ac5a75cb451,hotfixes; optimizations,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-21 03:35:12+03:00,-10800,2018-09-21 03:35:12+03:00,-10800,True,False,['setup.py'],['8795df2c351a45c8a0e32a7fa6deea2cd8b28b83'],1,1,2,1,,,
+6d09a40fc0ae1b6abd169bcbe93047ca6447e330,removed bash-like splitting in on_startswith_text's args; added message splitting in reply,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-22 02:29:19+03:00,-10800,2018-09-22 02:32:22+03:00,-10800,True,False,"['vkwrappers.py', 'plugin.py', 'setup.py', 'test_controller_vk.py', 'test_plugins.py']",['7969d70d8ed4d9bbbfb8157a6de83ac5a75cb451'],13,61,74,5,0.05405405405405406,1.0,0.2702702702702703
+4e9d940e995ddff90a222bb5505b5ac2f9986e03,"added ""forward_messages"" to sending messages; fixed bug in send_message",Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-30 15:02:10+03:00,-10800,2018-09-30 15:02:10+03:00,-10800,True,False,"['environment.rst', 'vkcontroller.py']",['6d09a40fc0ae1b6abd169bcbe93047ca6447e330'],9,9,18,2,0.0,0.0,0.0
+499df67b39ed4cfbfb0c073636c363ebb2243345,"added ""forward_messages"" to reply;",Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-09-30 19:59:05+03:00,-10800,2018-09-30 19:59:05+03:00,-10800,True,False,"['vkcontroller.py', 'vkwrappers.py']",['4e9d940e995ddff90a222bb5505b5ac2f9986e03'],4,6,10,2,0.0,1.0,0.0
+6acca570f8dbf446e8facf01cb4207f9088c8f52,fixed kutana.running field; styled example,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-01 19:22:24+03:00,-10800,2018-10-01 19:22:24+03:00,-10800,True,False,"['echo.py', 'list.py', 'prefix.py', 'statistics.py', 'kutana.py']",['499df67b39ed4cfbfb0c073636c363ebb2243345'],1,16,17,5,0.0,1.0,1.0
+1230dff4316c5cbb350598d2b041e2e005e8765a,simplified tests; enchanced debugcontroller; made small optimizations; clarified documentation,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-03 19:41:48+03:00,-10800,2018-10-03 19:41:48+03:00,-10800,True,False,"['README.md', 'index.rst', 'controller_debug.py', 'vkcontroller.py', 'vkwrappers.py', 'test_controller_vk.py', 'test_executors.py', 'test_plugins.py']",['6acca570f8dbf446e8facf01cb4207f9088c8f52'],39,79,118,8,0.35714285714285715,0.39285714285714285,0.39285714285714285
+dfb8ad537636da5c9575a467889d9bda62a1cea2,removed ability to call raw_request on vkcontroller; added tests for DebugController; added terminal coverage to Makefile,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-03 20:03:49+03:00,-10800,2018-10-03 20:03:49+03:00,-10800,True,False,"['Makefile', 'vkcontroller.py', 'test_controller_debug.py', 'test_controller_vk.py']",['1230dff4316c5cbb350598d2b041e2e005e8765a'],4,40,44,4,1.0,1.0,0.8181818181818182
+45757b36523b814ef9a5cb099a2cd33df4b23db8,enchanced DebugController; small optimization; added recipe to docs;,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-04 19:02:53+03:00,-10800,2018-10-04 19:02:53+03:00,-10800,True,False,"['recipes.rst', 'controller_debug.py', 'vkcontroller.py', 'kutana.py', 'test_controller_debug.py']",['dfb8ad537636da5c9575a467889d9bda62a1cea2'],42,86,128,5,1.0,1.0,1.0
+bc9480a8f2cebec99be97af89a8f4b30bb2fd427,bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-04 22:41:39+03:00,-10800,2018-10-04 22:41:39+03:00,-10800,True,False,['setup.py'],['45757b36523b814ef9a5cb099a2cd33df4b23db8'],1,1,2,1,,,
+4907bac02362e194a997a7e80f4261784e2fb23b,bumped version; changed name of organization,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-04 22:45:26+03:00,-10800,2018-10-04 22:45:26+03:00,-10800,True,False,"['README.md', 'setup.py']",['bc9480a8f2cebec99be97af89a8f4b30bb2fd427'],8,8,16,2,,,
+dd082295d89ea191a027e43c97d2d1a750365a5b,replaced lgtm with codebeat,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-04 23:27:47+03:00,-10800,2018-10-04 23:27:47+03:00,-10800,True,False,['README.md'],['4907bac02362e194a997a7e80f4261784e2fb23b'],1,1,2,1,,,
+0073628f5fe48cce5230b1d9aab3b0431d554c25,simplified functions.py,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-04 23:43:38+03:00,-10800,2018-10-04 23:43:38+03:00,-10800,True,False,['functions.py'],['dd082295d89ea191a027e43c97d2d1a750365a5b'],13,16,29,1,,,
+b2fce88bba191363d2fb17962ab74fb11f0ca276,improved functions.py,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-05 00:02:55+03:00,-10800,2018-10-05 00:34:14+03:00,-10800,True,False,['functions.py'],['0073628f5fe48cce5230b1d9aab3b0431d554c25'],7,18,25,1,0.0,1.0,1.0
+b623c50ab66b8f5246f8e6d1b44a4164e4b2cd53,improved load_plugins and added tests,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-05 01:23:18+03:00,-10800,2018-10-05 01:23:18+03:00,-10800,True,False,"['functions.py', 'test_miscellaneous.py', 'empty.py', 'my_file', 'plugin_my_file.py']",['b2fce88bba191363d2fb17962ab74fb11f0ca276'],17,48,65,5,1.0,1.0,1.0
+9dcd295a8e1937c7d3b543ca970f45b1415ee220,"first stable release (#22)
+
+* added ""forward_messages"" to sending messages; fixed bug in send_message
+
+* added ""forward_messages"" to reply;
+
+* fixed kutana.running field; styled example
+
+* simplified tests; enchanced debugcontroller; made small optimizations; clarified documentation
+
+* removed ability to call raw_request on vkcontroller; added tests for DebugController; added terminal coverage to Makefile
+
+* enchanced DebugController; small optimization; added recipe to docs;
+
+* bumped version
+
+* bumped version; changed name of organization
+
+* replaced lgtm with codebeat
+
+* simplified functions.py
+
+* improved functions.py
+
+* improved load_plugins and added tests",Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2018-10-15 20:37:05+03:00,-10800,2018-10-15 20:37:05+03:00,-10800,True,False,"['Makefile', 'README.md', 'environment.rst', 'index.rst', 'recipes.rst', 'echo.py', 'list.py', 'prefix.py', 'statistics.py', 'controller_debug.py', 'vkcontroller.py', 'vkwrappers.py', 'functions.py', 'kutana.py', 'setup.py', 'test_controller_debug.py', 'test_controller_vk.py', 'test_executors.py', 'test_miscellaneous.py', 'test_plugins.py', 'empty.py', 'my_file', 'plugin_my_file.py']",['9f048b5a6dee4d60338d66575813210a63087ff1'],92,274,366,23,0.5641025641025641,1.0,0.7051282051282052
+13cefa24e094158bcf4ba4e99304b3cf8d1a2bd4,"Update README.md (#23)
+
+Fixed example",Sergey Abroskin,41290484+MerdedSpade@users.noreply.github.com,Michael Krukov,krukov.michael@ya.ru,2018-10-20 09:20:06+00:00,0,2018-10-20 12:20:06+03:00,-10800,True,False,['README.md'],['b623c50ab66b8f5246f8e6d1b44a4164e4b2cd53'],1,1,2,1,,,
+82392ccaf1991b0ad4c5fb6455e943e905605dd5,"Translate. (#25)
+
+* Create README_RU.md
+
+* Update README_RU.md
+
+Not ended
+
+* Перевод
+
+* Добавлен Русский вариант
+
+* Update README_RU.md
+
+* Update README_RU.md
+
+* Update README_RU.md
+
+* Update README_RU.md
+
+* Update README_RU.md
+
+* Update README_RU.md
+
+Co-Authored-By: MerdedSpade <minepixelproject@gmail.com>
+
+* Update README_RU.md
+
+Co-Authored-By: MerdedSpade <minepixelproject@gmail.com>
+
+* Update README_RU.md
+
+Co-Authored-By: MerdedSpade <minepixelproject@gmail.com>
+
+* Create CONTRIBUTORS.md
+
+* Update README.md
+
+* Update README.md
+
+* Update and rename README_RU.md to README.ru.md
+
+* Update README.ru.md
+
+* Update README.md
+
+* Update CONTRIBUTORS.md",Sergey Abroskin,41290484+MerdedSpade@users.noreply.github.com,Michael Krukov,krukov.michael@ya.ru,2018-10-24 00:50:52+03:00,-10800,2018-10-24 00:50:52+03:00,-10800,True,False,"['CONTRIBUTORS.md', 'README.md', 'README.ru.md']",['13cefa24e094158bcf4ba4e99304b3cf8d1a2bd4'],0,81,81,3,,,
+7b1fd9f5666ab6528aabdd62532b2d3f8f57cfc0,patched dependency,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-31 01:04:43+03:00,-10800,2018-10-31 01:04:43+03:00,-10800,True,False,['setup.py'],['82392ccaf1991b0ad4c5fb6455e943e905605dd5'],3,3,6,1,,,
+545f800c7ad6b0570209813e19f8564d8d2de585,"v1.0.1 patched dependency (#31)
+
+* added ""forward_messages"" to sending messages; fixed bug in send_message
+
+* added ""forward_messages"" to reply;
+
+* fixed kutana.running field; styled example
+
+* simplified tests; enchanced debugcontroller; made small optimizations; clarified documentation
+
+* removed ability to call raw_request on vkcontroller; added tests for DebugController; added terminal coverage to Makefile
+
+* enchanced DebugController; small optimization; added recipe to docs;
+
+* bumped version
+
+* bumped version; changed name of organization
+
+* replaced lgtm with codebeat
+
+* simplified functions.py
+
+* improved functions.py
+
+* improved load_plugins and added tests
+
+* Update README.md (#23)
+
+Fixed example
+
+* Translate. (#25)
+
+* Create README_RU.md
+
+* Update README_RU.md
+
+Not ended
+
+* Перевод
+
+* Добавлен Русский вариант
+
+* Update README_RU.md
+
+* Update README_RU.md
+
+* Update README_RU.md
+
+* Update README_RU.md
+
+* Update README_RU.md
+
+* Update README_RU.md
+
+Co-Authored-By: MerdedSpade <minepixelproject@gmail.com>
+
+* Update README_RU.md
+
+Co-Authored-By: MerdedSpade <minepixelproject@gmail.com>
+
+* Update README_RU.md
+
+Co-Authored-By: MerdedSpade <minepixelproject@gmail.com>
+
+* Create CONTRIBUTORS.md
+
+* Update README.md
+
+* Update README.md
+
+* Update and rename README_RU.md to README.ru.md
+
+* Update README.ru.md
+
+* Update README.md
+
+* Update CONTRIBUTORS.md
+
+* patched dependency",Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2018-10-31 01:08:35+03:00,-10800,2018-10-31 01:08:35+03:00,-10800,True,False,"['CONTRIBUTORS.md', 'README.md', 'README.ru.md', 'setup.py']",['9dcd295a8e1937c7d3b543ca970f45b1415ee220'],4,85,89,4,,,
+ac7a59e6975df5b57499aaf05bf6ccf7a57a3a29,version bump,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-10-31 01:22:43+03:00,-10800,2018-10-31 01:22:43+03:00,-10800,True,False,['setup.py'],['93c4e828151369f671f44212a6ef3ae8b112a4c6'],1,1,2,1,,,
+46395fa53f5ef472bf0945fe262e4205b105eb2b,removed kutana-plugins,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-11-18 19:14:36+03:00,-10800,2018-11-18 19:14:36+03:00,-10800,True,False,"['README.md', 'README.ru.md']",['ac7a59e6975df5b57499aaf05bf6ccf7a57a3a29'],5,1,6,2,,,
+185c3490116d3e8a3ab75342be604fe9afc88cd2,added info about kubot,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2018-11-19 21:37:40+03:00,-10800,2018-11-19 21:37:40+03:00,-10800,True,False,"['README.md', 'README.ru.md']",['46395fa53f5ef472bf0945fe262e4205b105eb2b'],8,12,20,2,,,
+02a6a84f7122abd35ff706dff2469d77a990a93d,Edited example's code to be more adequate,Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2018-12-10 22:56:58+03:00,-10800,2018-12-10 22:56:58+03:00,-10800,True,False,['run.py'],['185c3490116d3e8a3ab75342be604fe9afc88cd2'],1,1,2,1,,,
+1f2bb584978b0762413b553e9ccc44eb3d88b120,"kutana 2.0.0 - big changes (#35)
+
+* renamed controllers to managers in code; removed structures; changed objdicts to dicts;
+
+* environment is now a class; attachments no longed passed to callbacks; bumped version; docs reduced
+
+* fixed example/; fixed bug
+
+* fixed tests; fixed coverage; fixed example; added metrics to example
+
+* betted docs; style improvements
+
+* removed meta; improved docs; fixed tests; improved Makefile
+
+* removed unnecessary style
+
+* improved signature check; added note to docs
+
+* fixed small issues
+
+* added telegram support (no docs and tests for now); fixed some bugs
+
+* reverted run.py in example; fixed tests; added todos;
+
+* made 'reply' and 'send_message' more agile; better tg support; better docs
+
+* better organization and inheritance
+
+* simplified tests; removed not important features; working on tests
+
+* added tests; increased coverage; fixed some inconsistencies
+
+* added better coverage; tests now don't require internet or tokens; better docs
+
+* renamed convert_to* to create* for convinience
+
+* removed unused imports; added comments
+
+* removed unnecessary pass statement
+
+* more style fixes",Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2018-12-29 23:42:50+03:00,-10800,2018-12-29 23:42:50+03:00,-10800,True,False,"['.coveragerc', '.gitignore', 'Makefile', 'README.md', 'README.ru.md', 'conf.py', 'controller.rst', 'environment.rst', 'executor.rst', 'index.rst', 'kutana.rst', 'plugin.rst', 'recipes.rst', 'special-updates.rst', 'kutana.controller_vk.rst', 'kutana.environment.rst', 'kutana.exceptions.rst', 'kutana.executor.rst', 'kutana.functions.rst', 'kutana.kutana.rst', 'kutana.logger.rst', 'kutana.manager.basic.rst', 'kutana.manager.debug.rst', 'kutana.manager.rst', 'kutana.manager.tg.environment.rst', 'kutana.manager.tg.manager.rst', 'kutana.manager.tg.rst', 'kutana.manager.vk.environment.rst', 'kutana.manager.vk.manager.rst', 'kutana.manager.vk.rst', 'kutana.plugin.rst', 'kutana.rst', 'echo.py', 'list.py', 'metrics.py', 'prefix.py', 'send_image.py', 'pizza.png', 'statistics.py', 'run.py', '__init__.py', 'controller_basic.py', 'controller_debug.py', '__init__.py', 'converter.py', 'vkwrappers.py', 'environment.py', 'exceptions.py', 'executor.py', 'functions.py', 'kutana.py', 'logger.py', '__init__.py', 'basic.py', 'debug.py', '__init__.py', 'environment.py', 'manager.py', '__init__.py', 'environment.py', 'manager.py', 'plugin.py', 'structures.py', 'requirements.txt', 'setup.py', 'benchmarks.py', 'author.png', 'girl.ogg', 'test_controller_debug.py', 'test_controller_vk.py', 'test_executors.py', 'test_framework.py', 'test_manager_debug.py', 'test_manager_tg.py', 'test_manager_vk.py', 'test_miscellaneous.py', 'test_plugins.py', 'plugin_my_file.py', 'plugin_memory.py', 'test_plugins_callbacks.py']",['02a6a84f7122abd35ff706dff2469d77a990a93d'],2035,3300,5335,80,0.7893491124260354,0.8994082840236687,0.9751479289940829
+0a0f323f3fe8e4b763100db7c34b6d6e6e4a2643,renamed executor's '__call__' to 'process'; added lines between docstrings and classes' names; better docs; removed questionable structures,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-01-08 19:28:51+03:00,-10800,2019-01-08 19:28:51+03:00,-10800,True,False,"['conf.py', 'environment.py', 'exceptions.py', 'executor.py', 'kutana.py', 'basic.py', 'debug.py', 'environment.py', 'manager.py', 'environment.py', 'manager.py', 'plugin.py', 'requirements.txt', 'setup.py', 'test_miscellaneous.py', 'test_plugins.py']",['1f2bb584978b0762413b553e9ccc44eb3d88b120'],82,156,238,16,0.0,0.0,0.0
+6cab9763fed7dabe1eebcd21aa9955c56051b733,changed order of imports in setup; improved look of Kutana.ensure_future; fixed tests for newer version of aiohttp,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-01-11 13:39:28+03:00,-10800,2019-01-11 13:39:28+03:00,-10800,True,False,"['kutana.py', 'setup.py', 'test_manager_tg.py', 'test_manager_vk.py']",['0a0f323f3fe8e4b763100db7c34b6d6e6e4a2643'],102,119,221,4,1.0,1.0,0.2
+ddd86254364b94af99865ee3cebb947b201ead13,docs improvement; renamed load_configuration; removed unused file; small refactor,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-01-14 01:49:05+03:00,-10800,2019-01-14 01:53:24+03:00,-10800,True,False,"['Makefile', 'README.md', 'README.ru.md', 'configuration_test.json.example', 'index.rst', 'run.py', '__init__.py', 'functions.py', '__init__.py', '__init__.py', 'test_miscellaneous.py']",['6cab9763fed7dabe1eebcd21aa9955c56051b733'],41,64,105,11,0.0,0.0,0.0
+7ee3c6ac6cd015859a9b74fa150f450678c4d35b,small style change,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-01-14 02:00:00+03:00,-10800,2019-01-14 02:00:00+03:00,-10800,True,False,['functions.py'],['ddd86254364b94af99865ee3cebb947b201ead13'],1,1,2,1,,,
+a680110e433feb4f2e09779c4bff0d6d47e34327,added telegram requests' delay; fixed Makefile,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-01-14 15:26:23+03:00,-10800,2019-01-14 15:26:23+03:00,-10800,True,False,"['Makefile', 'manager.py', 'setup.py']",['7ee3c6ac6cd015859a9b74fa150f450678c4d35b'],10,24,34,3,0.2,0.2,0.0
+d0a4ca07dbe3e18cb51be9d95fd363480d0df441,fixed Makefile; improved  function,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-01-14 22:44:42+03:00,-10800,2019-01-14 22:44:42+03:00,-10800,True,False,"['Makefile', '__init__.py', 'functions.py', 'plugin.py']",['a680110e433feb4f2e09779c4bff0d6d47e34327'],34,28,62,4,1.0,1.0,0.0
+527078337c2c9ecdaaac8e0c1c022d0dce50127f,changed vk api version to 5.92; fixed vk's send_message to add 'random_id' if needed; refactored VKManager's code; fixed tests,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-01-17 23:00:43+03:00,-10800,2019-01-17 23:00:43+03:00,-10800,True,False,"['functions.py', 'manager.py', 'setup.py', 'test_manager_vk.py']",['d0a4ca07dbe3e18cb51be9d95fd363480d0df441'],91,94,185,4,0.0,0.0,0.0
+0d8b7eb53b051dae3a487ee244d31a4362a8b2e6,added docstrings to some managers' classes; added more correct limit systems,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-01-18 02:29:00+03:00,-10800,2019-01-18 02:29:00+03:00,-10800,True,False,"['manager.py', 'manager.py', 'setup.py']",['527078337c2c9ecdaaac8e0c1c022d0dce50127f'],15,42,57,3,1.0,1.0,0.0
+d16bcb25ea3cffba84bdb38f2e7a4dcd721d0dc8,"Update to 2.1.3 (#37)
+
+* renamed executor's '__call__' to 'process'; added lines between docstrings and classes' names; better docs; removed questionable structures
+
+* changed order of imports in setup; improved look of Kutana.ensure_future; fixed tests for newer version of aiohttp
+
+* docs improvement; renamed load_configuration; removed unused file; small refactor
+
+* small style change
+
+* added telegram requests' delay; fixed Makefile
+
+* fixed Makefile; improved  function
+
+* changed vk api version to 5.92; fixed vk's send_message to add 'random_id' if needed; refactored VKManager's code; fixed tests
+
+* added docstrings to some managers' classes; added more correct limit systems",Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2019-01-18 18:47:16+03:00,-10800,2019-01-18 18:47:16+03:00,-10800,True,False,"['Makefile', 'README.md', 'README.ru.md', 'configuration_test.json.example', 'conf.py', 'index.rst', 'run.py', '__init__.py', 'environment.py', 'exceptions.py', 'executor.py', 'functions.py', 'kutana.py', 'basic.py', 'debug.py', '__init__.py', 'environment.py', 'manager.py', '__init__.py', 'environment.py', 'manager.py', 'plugin.py', 'requirements.txt', 'setup.py', 'test_manager_tg.py', 'test_manager_vk.py', 'test_miscellaneous.py', 'test_plugins.py']",['37191b75e8de353182f3b046c824a1404e92ffc1'],347,499,846,28,0.0,0.8,0.0
+746dc52fab8d35f66ba91a81b68faad42c9b7baa,fixed vk's interaction with uploading docs; added more adequate logging; fixed tests;,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-01-19 14:15:02+03:00,-10800,2019-01-19 14:15:02+03:00,-10800,True,False,"['run.py', '__init__.py', 'logger.py', 'environment.py', 'manager.py', 'setup.py', 'test_executors.py', 'test_manager_vk.py', 'test_miscellaneous.py']",['0d8b7eb53b051dae3a487ee244d31a4362a8b2e6'],13,37,50,9,0.6,0.6,0.6
+1dbb5a38dbb0514587e764bd952dabe44be788d2,fixed typo,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-01-19 14:22:07+03:00,-10800,2019-01-19 14:22:07+03:00,-10800,True,False,"['manager.py', 'manager.py', 'test_manager_vk.py']",['746dc52fab8d35f66ba91a81b68faad42c9b7baa'],21,21,42,3,,,
+5424d82053b36bbd7e8f9660dabcbe317c35af11,"update 2.2.0 (#38)
+
+* renamed executor's '__call__' to 'process'; added lines between docstrings and classes' names; better docs; removed questionable structures
+
+* changed order of imports in setup; improved look of Kutana.ensure_future; fixed tests for newer version of aiohttp
+
+* docs improvement; renamed load_configuration; removed unused file; small refactor
+
+* small style change
+
+* added telegram requests' delay; fixed Makefile
+
+* fixed Makefile; improved  function
+
+* changed vk api version to 5.92; fixed vk's send_message to add 'random_id' if needed; refactored VKManager's code; fixed tests
+
+* added docstrings to some managers' classes; added more correct limit systems
+
+* fixed vk's interaction with uploading docs; added more adequate logging; fixed tests;
+
+* fixed typo",Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2019-01-19 14:52:35+03:00,-10800,2019-01-19 14:52:35+03:00,-10800,True,False,"['run.py', '__init__.py', 'logger.py', 'manager.py', 'environment.py', 'manager.py', 'setup.py', 'test_executors.py', 'test_manager_vk.py', 'test_miscellaneous.py']",['d16bcb25ea3cffba84bdb38f2e7a4dcd721d0dc8'],37,61,98,10,0.6,0.6,0.6
+96707262ca826f331d8b24948314e86415229f89,"Added convenience method, updated documentation (#39)
+
+* added convenience method replace_method; renamed Environment's parent_environment to parent; some minor fixes
+
+* removed unused imports",Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2019-02-03 14:38:48+03:00,-10800,2019-02-03 14:38:48+03:00,-10800,True,False,"['index.rst', 'metrics.py', 'prefix.py', 'environment.py', 'setup.py', 'benchmarks.py', 'test_environments.py', 'test_executors.py', 'test_framework.py', 'test_miscellaneous.py', 'test_plugins.py', 'test_plugins_callbacks.py']",['17107c015bd55d416941037539a2d75d834ca1ec'],27,89,116,12,1.0,1.0,0.8461538461538461
+6254bc2e9359732ab68e3bef9ae62650220f5348,"update 2.3.0 (#41)
+
+- Added convenience method replace_method
+- Renamed Environment's parent_environment to parent
+- Updated documentation
+- Some minor fixes",Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2019-02-03 15:01:42+03:00,-10800,2019-02-03 15:01:42+03:00,-10800,True,False,"['index.rst', 'metrics.py', 'prefix.py', 'environment.py', 'setup.py', 'benchmarks.py', 'test_environments.py', 'test_executors.py', 'test_framework.py', 'test_miscellaneous.py', 'test_plugins.py', 'test_plugins_callbacks.py']",['17107c015bd55d416941037539a2d75d834ca1ec'],27,89,116,12,1.0,1.0,0.8461538461538461
+a977e18b53ee09290fd280380f6f7843a8e97a26,minor style fixes,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-02-03 15:16:31+03:00,-10800,2019-02-03 15:16:31+03:00,-10800,True,False,['metrics.py'],['96707262ca826f331d8b24948314e86415229f89'],0,2,2,1,,,
+92d532eeeff22b35df1f6232e690f242990ece27,fixed bug,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-02-03 17:03:14+03:00,-10800,2019-02-03 17:06:25+03:00,-10800,True,False,"['manager.py', 'setup.py']",['5696d84abc1d9a8a538cfd81aad92f66735414d4'],18,20,38,2,0.0,1.0,1.0
+869088195dec7fd8e29c892c9645c4a20d05d751,fixed #42; added tests,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-02-20 02:18:37+03:00,-10800,2019-02-20 02:18:44+03:00,-10800,True,False,"['environment.py', 'test_environments.py']",['92d532eeeff22b35df1f6232e690f242990ece27'],2,35,37,2,1.0,1.0,0.9130434782608695
+f2a16ad7eef80e8ffe2f95dc4ab9742a0c718ce7,bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-02-20 02:21:57+03:00,-10800,2019-02-20 02:21:57+03:00,-10800,True,False,['setup.py'],['869088195dec7fd8e29c892c9645c4a20d05d751'],1,1,2,1,,,
+6a396bacdf48fdfccbad47bd1e7ad7a7cd04a8a6,implemented #43; fixed tests,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-02-20 03:16:43+03:00,-10800,2019-02-20 03:16:43+03:00,-10800,True,False,"['environment.py', 'test_environments.py', 'test_manager_vk.py']",['f2a16ad7eef80e8ffe2f95dc4ab9742a0c718ce7'],14,52,66,3,0.2692307692307692,1.0,0.6538461538461539
+e8cf38aadd524bb2ce21c8b1b1b99784725d43a4,added uvloop,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-02-20 12:49:19+03:00,-10800,2019-02-20 12:49:19+03:00,-10800,True,False,"['__init__.py', 'requirements.txt']",['6a396bacdf48fdfccbad47bd1e7ad7a7cd04a8a6'],0,9,9,2,,,
+a0fbd96f629904d4dc169c86f09c6e7f574893a4,added tests; improved docs;,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-02-20 13:36:54+03:00,-10800,2019-02-20 13:36:54+03:00,-10800,True,False,"['index.rst', 'test_environments.py']",['e8cf38aadd524bb2ce21c8b1b1b99784725d43a4'],6,47,53,2,0.0,1.0,1.0
+fa20eca4f3c88f6e9db210472cf2d27acb700f12,added tests; improved coverage,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-02-20 16:56:42+03:00,-10800,2019-02-20 16:56:42+03:00,-10800,True,False,"['__init__.py', 'test_environments.py']",['a0fbd96f629904d4dc169c86f09c6e7f574893a4'],1,16,17,2,1.0,1.0,1.0
+b83ac7a674ccf1024fe26ad30a2ef31b3ebf0604,increased time for request to complete; fixed bug with long messages; added tests for bug,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-02-25 01:28:31+03:00,-10800,2019-02-25 02:33:43+03:00,-10800,True,False,"['manager.py', 'setup.py', 'test_manager_vk.py']",['fa20eca4f3c88f6e9db210472cf2d27acb700f12'],4,37,41,3,0.0,0.75,0.75
+cb04135a3567c3049823a8c7d168f9d4f867995a,fixed readme,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-03 03:38:19+03:00,-10800,2019-03-03 03:38:19+03:00,-10800,True,False,['README.md'],['b83ac7a674ccf1024fe26ad30a2ef31b3ebf0604'],1,1,2,1,,,
+604267147fb9b516f9f071d510f0cc4c0a36f815,fixed readme,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-03 03:39:16+03:00,-10800,2019-03-03 03:39:16+03:00,-10800,True,False,['README.md'],['cb04135a3567c3049823a8c7d168f9d4f867995a'],9,15,24,1,,,
+bda07c68f937d29c76d1e189bf4e3a8a9559a000,updated docs; changed many APIs; added priorities; removed 'early'-related code; check CHANGELOG.md file,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-04 02:54:09+03:00,-10800,2019-03-04 02:54:09+03:00,-10800,True,False,"['.travis.yml', 'CHANGELOG.md', 'Makefile', 'index.rst', 'echo.py', 'list.py', 'prefix.py', 'statistics.py', '__init__.py', 'environment.py', 'executor.py', 'functions.py', 'kutana.py', 'loaders.py', 'environment.py', 'plugin.py', 'utils.py', 'setup.py', 'test_environments.py', 'test_executors.py', 'test_miscellaneous.py', 'test_plugins.py', 'plugin_my_file.py', 'test_plugins_callbacks.py']",['604267147fb9b516f9f071d510f0cc4c0a36f815'],424,516,940,24,0.5,0.6666666666666666,0.0
+2bd7f196d6e3db1d60699751a94e24cd7e601341,fixed for python3.5; removed empty lines,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-04 02:56:41+03:00,-10800,2019-03-04 03:06:06+03:00,-10800,True,False,"['plugin.py', 'test_environments.py']",['bda07c68f937d29c76d1e189bf4e3a8a9559a000'],5,3,8,2,,,
+a25ceab0e99baf4fdb279dae0ecaba1b2d40accb,cleaned files; removed keyword arguments to plugin's callbacks; fixed docs and examples,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-07 15:04:34+03:00,-10800,2019-03-07 15:04:34+03:00,-10800,True,False,"['CHANGELOG.md', 'README.md', 'README.ru.md', 'index.rst', 'echo.py', 'plugin.py', 'setup.py', 'benchmarks.py', 'test_manager_debug.py', 'test_plugins.py']",['2bd7f196d6e3db1d60699751a94e24cd7e601341'],104,66,170,10,1.0,1.0,1.0
+aebc917334fa8ce289a598e886574f9379b941d7,renamed Kutana's instances to app; updated Plugin's on_startup,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-07 16:09:30+03:00,-10800,2019-03-07 16:09:30+03:00,-10800,True,False,"['CHANGELOG.md', 'README.md', 'README.ru.md', 'index.rst', 'list.py', 'run.py', '__init__.py', 'executor.py', 'kutana.py', 'plugin.py', 'test_framework.py', 'test_kutana.py', 'test_miscellaneous.py', 'test_plugins.py', 'plugin_my_file.py']",['a25ceab0e99baf4fdb279dae0ecaba1b2d40accb'],216,190,406,15,0.25,0.0,0.75
+5453d0b0428ac7b8fd0fcbe45336bc7104155f38,removed 'load_value' function; updated documentaion,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-07 17:01:02+03:00,-10800,2019-03-07 17:01:02+03:00,-10800,True,False,"['CHANGELOG.md', 'README.md', 'README.ru.md', 'index.rst', 'kutana.executor.rst', 'kutana.functions.rst', 'kutana.loaders.rst', 'kutana.rst', 'kutana.utils.rst', 'list.py', 'run.py', '__init__.py', 'kutana.py', '__init__.py', '__init__.py', 'utils.py', 'test_miscellaneous.py']",['aebc917334fa8ce289a598e886574f9379b941d7'],113,66,179,17,0.0,0.0,0.0
+95c13e6b2defd657bc25b679df79800803b6afb5,updated docs and comments,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-07 17:09:15+03:00,-10800,2019-03-07 17:09:15+03:00,-10800,True,False,"['README.md', 'README.ru.md', 'configuration.json.example', 'configuration.json.example', 'run.py', 'environment.py', 'kutana.py', 'logger.py', 'basic.py', 'debug.py', '__init__.py', 'environment.py', 'manager.py', 'environment.py', 'manager.py', 'plugin.py', 'setup.py']",['5453d0b0428ac7b8fd0fcbe45336bc7104155f38'],63,72,135,17,,,
+3c0e356e2fc7a9d929f153f4c3134f1300ca4731,simplified managers; updated documentation; fixed tests,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-07 20:56:34+03:00,-10800,2019-03-07 20:56:34+03:00,-10800,True,False,"['CHANGELOG.md', 'kutana.manager.basic.rst', 'kutana.manager.manager.rst', 'kutana.manager.rst', 'statistics.py', '__init__.py', 'environment.py', 'kutana.py', 'debug.py', 'manager.py', 'manager.py', 'manager.py', 'test_manager_tg.py', 'test_manager_vk.py', 'test_miscellaneous.py']",['95c13e6b2defd657bc25b679df79800803b6afb5'],81,99,180,15,1.0,1.0,1.0
+bb72679bf72799336ca03383bc07902b3aaeca35,added 'Plugin.on_message' decorator,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-09 15:35:40+03:00,-10800,2019-03-09 15:36:03+03:00,-10800,True,False,"['CHANGELOG.md', 'plugin.py', 'test_miscellaneous.py', 'test_plugins.py']",['3c0e356e2fc7a9d929f153f4c3134f1300ca4731'],5,46,51,4,1.0,1.0,1.0
+864fa92bb4f56839eb393398dfa217f266f132b7,fixed bug; updated tests; renamed test_framefork.py,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-09 19:09:35+03:00,-10800,2019-03-09 19:09:35+03:00,-10800,True,False,"['kutana.py', 'benchmarks.py', 'test_environments.py', 'test_kutana.py', 'test_manager_debug.py', 'test_manager_tg.py', 'test_plugins.py', 'test_plugins_callbacks.py', 'testing_tools.py']",['bb72679bf72799336ca03383bc07902b3aaeca35'],37,44,81,9,1.0,1.0,1.0
+abe8fd3fbb6683abf0d68f4ad4691f026e44da1d,tuned readme,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-03-17 01:12:09+03:00,-10800,2019-03-17 01:12:09+03:00,-10800,True,False,"['README.md', 'README.ru.md']",['864fa92bb4f56839eb393398dfa217f266f132b7'],18,14,32,2,,,
+ef8d99d970dd1d5aa45f539fb3523d61db8cc61d,"Refined interfaces and documentation
+
+- Added more examples
+- Updated README
+- Updated documentation
+- Updated CI scripts
+- Updated setup
+- Rebranded engine to library
+- Updated tests",Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-05-29 18:52:33+03:00,-10800,2019-05-29 18:53:59+03:00,-10800,True,False,"['.readthedocs.yml', '.travis.yml', 'CHANGELOG.md', 'Makefile', 'README.md', 'README.ru.md', 'index.rst', 'document.py', 'echo.py', 'environment.py', 'image.py', 'keyboard.py', 'list.py', 'metrics.py', 'plugins.py', 'prefix.py', 'statistics.py', '__init__.py', 'environment.py', 'kutana.py', 'debug.py', 'environment.py', 'environment.py', 'setup.py', 'test_environments.py', 'test_kutana.py', 'test_manager_debug.py', 'test_manager_tg.py', 'test_manager_vk.py', 'test_miscellaneous.py', 'test_plugins.py']",['abe8fd3fbb6683abf0d68f4ad4691f026e44da1d'],239,343,582,31,1.0,1.0,0.9
+751ea226074cfb42b4233f1ebfe0f6f29ad584bf,Removed 'stable' branch,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-05-29 19:15:42+03:00,-10800,2019-05-29 20:22:37+03:00,-10800,True,False,['.travis.yml'],['ef8d99d970dd1d5aa45f539fb3523d61db8cc61d'],5,6,11,1,,,
+4382ffffa095a7dd5cdc36eb0a3c5da191d58806,Fixed typo,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-05-29 20:26:41+03:00,-10800,2019-05-29 20:26:51+03:00,-10800,True,False,"['README.md', '__init__.py', 'setup.py']",['751ea226074cfb42b4233f1ebfe0f6f29ad584bf'],4,4,8,3,,,
+508b79fdcce9dae80a0db5c2ec7f04800d427c9e,Updated workflow with documents; Updated docs,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-06-10 15:50:26+03:00,-10800,2019-06-10 15:50:26+03:00,-10800,True,False,"['CHANGELOG.md', 'Makefile', 'index.rst', 'document.py', 'audio.mp3', 'pizza.png', 'pizza.png', 'environment.py', 'requirements.txt', 'setup.py', 'test_manager_vk.py']",['4382ffffa095a7dd5cdc36eb0a3c5da191d58806'],12,39,51,11,0.75,0.75,0.75
+2e557faa06719d17ef34ef2e0a349994eaae0e62,Removed cache from travis,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-06-10 16:00:58+03:00,-10800,2019-06-10 16:00:58+03:00,-10800,True,False,['.travis.yml'],['508b79fdcce9dae80a0db5c2ec7f04800d427c9e'],8,0,8,1,,,
+1b75a50ca6977bb10496fed37c73ed04fe9a910f,Removed uvloop from requirements.txt,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-06-10 16:06:28+03:00,-10800,2019-06-10 16:06:28+03:00,-10800,True,False,"['__init__.py', 'requirements.txt']",['2e557faa06719d17ef34ef2e0a349994eaae0e62'],7,0,7,2,,,
+bbf8e1722a6039338f873d7a5106ced07689320b,Minor rename,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-06-10 16:09:14+03:00,-10800,2019-06-10 16:09:14+03:00,-10800,True,False,"['documents.py', 'audio.mp3', 'pizza.png']",['1b75a50ca6977bb10496fed37c73ed04fe9a910f'],0,0,0,3,,,
+36b7d7fb4b5d610805b3e17b0c272d003d1a62f0,Updated comment for VKManager,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-07-16 19:21:58+03:00,-10800,2019-07-16 19:21:58+03:00,-10800,True,False,['manager.py'],['bbf8e1722a6039338f873d7a5106ced07689320b'],0,3,3,1,,,
+1afb793b26057c7a60def9944cb2ad2213080d9d,Fixed issue with telegram document,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-09-06 18:06:19+03:00,-10800,2019-09-06 18:06:19+03:00,-10800,True,False,"['manager.py', 'test_manager_tg.py']",['36b7d7fb4b5d610805b3e17b0c272d003d1a62f0'],11,38,49,2,0.0,1.0,0.9130434782608695
+db145d20e549f1c1ec7149c2cfcc0074b09f424e,Bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-09-06 18:13:47+03:00,-10800,2019-09-06 18:13:47+03:00,-10800,True,False,"['CHANGELOG.md', 'setup.py']",['1afb793b26057c7a60def9944cb2ad2213080d9d'],1,4,5,2,,,
+2aa143dfba09d35835ec8b0bf330a0dbdc4ae81e,Updated docs and fixed name in tests,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2019-09-06 18:30:11+03:00,-10800,2019-09-06 18:30:11+03:00,-10800,True,False,"['environment.py', 'manager.py', 'test_manager_tg.py']",['db145d20e549f1c1ec7149c2cfcc0074b09f424e'],4,8,12,3,1.0,1.0,1.0
+828a03d5632f178d6afc670632b7af470dd7c472,"Add license scan report and status (#45)
+
+* Add license scan report and status
+
+Signed-off-by: fossabot <badges@fossa.io>
+
+* Update README.md",fossabot,badges@fossa.io,Michael Krukov,krukov.michael@ya.ru,2019-09-26 08:45:12-07:00,25200,2019-09-26 18:45:12+03:00,-10800,True,False,['README.md'],['2aa143dfba09d35835ec8b0bf330a0dbdc4ae81e'],0,5,5,1,,,
+f00c85bfcf832ecfddb2f535662fd10c6987715e,"Add json import (#47)
+
+* Add json import
+
+* Add json import in the Russian README",Даниил Николаев,dannevergame@gmail.com,Michael Krukov,krukov.michael@ya.ru,2020-01-02 19:12:42+04:00,-14400,2020-01-02 18:12:42+03:00,-10800,True,False,"['README.md', 'README.ru.md']",['828a03d5632f178d6afc670632b7af470dd7c472'],0,4,4,2,,,
+94abb4ef701ea42c1636edb543864b9185c81ebe,"v4.0.0 (#46)
+
+* Released new version with updated API and more
+
+* Updated workflows
+
+* Fixed workflows
+
+* Updated CHANGELOG.md
+
+* Added get method to context
+
+* Fixed minor issues
+
+* Improved ABC for _get_keys
+
+* Fixed default kwargs in some methods
+
+* Fixed tests
+
+* removed codacy
+
+* Fix coverage reporting
+
+* Fix coverage reporting 2
+
+* Fixed workflows
+
+* Adde method to get backends
+
+* Udpated tests
+
+* Added extensions to plugins from backends; Added vk.on_payload decorator; Updated example; Updated tests; Fixed issue with uploading attachments
+
+* Fixed example",Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2020-01-14 03:39:52+03:00,-10800,2020-01-14 03:39:52+03:00,-10800,True,False,"['.coveragerc', 'check.yml', 'deploy.yml', '.gitignore', '.travis.yml', 'CHANGELOG.md', 'CONTRIBUTORS.md', 'LICENCE', 'Makefile', 'README.md', 'README.ru.md', 'Makefile', 'conf.py', 'index.rst', 'make.bat', 'kutana.backend.rst', 'kutana.backends.debug.rst', 'kutana.backends.rst', 'kutana.backends.telegram.rst', 'kutana.backends.vkontakte.rst', 'kutana.context.rst', 'kutana.environment.rst', 'kutana.exceptions.rst', 'kutana.handler.rst', 'kutana.helpers.rst', 'kutana.kutana.rst', 'kutana.loaders.rst', 'kutana.logger.rst', 'kutana.manager.debug.rst', 'kutana.manager.manager.rst', 'kutana.manager.rst', 'kutana.manager.tg.environment.rst', 'kutana.manager.tg.manager.rst', 'kutana.manager.tg.rst', 'kutana.manager.vk.environment.rst', 'kutana.manager.vk.manager.rst', 'kutana.manager.vk.rst', 'kutana.plugin.rst', 'kutana.router.rst', 'kutana.routers.rst', 'kutana.rst', 'kutana.storage.rst', 'kutana.storages.naive_memory.rst', 'kutana.storages.rst', 'kutana.update.rst', 'kutana.utils.rst', 'modules.rst', '.gitignore', 'config.json.example', 'configuration.json.example', 'audio.ogg', 'pizza.png', 'contexts.py', 'documents.py', 'audio.mp3', 'echo.py', 'environment.py', 'image.py', 'keyboard.py', 'metrics.py', 'plugins.py', 'prefix.py', 'quest.py', 'statistics.py', 'run.py', '__init__.py', 'backend.py', '__init__.py', 'debug.py', 'telegram.py', '__init__.py', 'backend.py', 'extensions.py', 'context.py', 'environment.py', 'exceptions.py', 'handler.py', 'helpers.py', 'kutana.py', 'loaders.py', 'logger.py', '__init__.py', 'debug.py', 'manager.py', '__init__.py', 'environment.py', 'manager.py', '__init__.py', 'environment.py', 'manager.py', 'plugin.py', 'router.py', 'routers.py', 'storage.py', '__init__.py', 'naive_memory.py', 'update.py', 'utils.py', 'make.bat', 'pytest.ini', 'requirements.txt', 'setup.cfg', 'setup.py', 'benchmarks.py', 'sample.json', 'test_environments.py', 'test_kutana.py', 'test_manager_debug.py', 'test_manager_tg.py', 'test_manager_vk.py', 'test_miscellaneous.py', 'test_plugins.py', 'my_file', 'plugin_my_file.py', 'plugin_memory.py', 'test_plugins_callbacks.py', 'testing_tools.py', 'single_plugin.py', 'multiple_plugins.py', 'no_plugins.py', 'test_context.py', 'test_exception.py', 'test_helpers.py', 'test_kutana.py', 'test_loaders.py', 'test_plugin.py', 'test_router.py', 'test_state.py', 'test_storage.py', 'test_telegram.py', 'test_telegram_data.py', 'test_update.py', 'test_vkontakte.py', 'test_vkontakte_data.py', 'test_vkontakte_extensions.py', 'testing_tools.py', 'tox.ini']",['f00c85bfcf832ecfddb2f535662fd10c6987715e'],5046,4219,9265,137,0.011111111111111112,0.05925925925925926,0.0
+492dc750c58d9c660cc415465644d097918199df,Fixed deploy workflow,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-01-14 03:48:04+03:00,-10800,2020-01-14 03:48:04+03:00,-10800,True,False,['deploy.yml'],['94abb4ef701ea42c1636edb543864b9185c81ebe'],1,5,6,1,,,
+98ea21f7c2aa23d36b51a216ecc9a79279323fe9,Fixed deploy workflow [x2],Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-01-14 03:50:57+03:00,-10800,2020-01-14 03:50:57+03:00,-10800,True,False,['deploy.yml'],['492dc750c58d9c660cc415465644d097918199df'],1,1,2,1,,,
+b794db1231e59698a4d7dbf58a5758a4418b94a5,Updated docs,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-01-14 04:11:45+03:00,-10800,2020-01-14 04:11:45+03:00,-10800,True,False,"['kutana.backends.rst', 'kutana.backends.vkontakte.backend.rst', 'kutana.backends.vkontakte.extensions.rst', 'kutana.backends.vkontakte.rst', 'modules.rst', 'context.py', 'kutana.py']",['98ea21f7c2aa23d36b51a216ecc9a79279323fe9'],16,47,63,7,,,
+adf92b5e070663b33d1afd8f6365bd3b2f688ee8,Fixed docs,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-01-14 04:18:21+03:00,-10800,2020-01-14 04:18:21+03:00,-10800,True,False,['conf.py'],['b794db1231e59698a4d7dbf58a5758a4418b94a5'],0,4,4,1,,,
+8c3ac1d678ac121e1cde95a117ab393f96d9bdfd,"Updated to 4.1.0; Fixed bug in commands; Improved backends's public API (#48)
+
+* Updated to 4.1.0; Fixed bug in commands; Improved backends's public API
+
+* Made 'resolve_screen_name' public
+
+* Changed commend in stream.py",Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2020-01-15 03:37:16+03:00,-10800,2020-01-15 03:37:16+03:00,-10800,True,False,"['CHANGELOG.md', 'quest.py', 'stream.py', 'telegram.py', 'backend.py', 'plugin.py', 'routers.py', 'setup.py', 'test_backends_api.py', 'test_telegram.py', 'test_vkontakte.py']",['adf92b5e070663b33d1afd8f6365bd3b2f688ee8'],68,214,282,11,0.7721518987341772,1.0,0.6962025316455697
+0cd5628351db238a6254ef0f17f57f21cc7b8988,"Added Terminal backend
+
+- Added new (example) plugin for stopping the bot
+- Updated stream (example) plugin
+- Added tests for new features",Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-01-17 01:35:11+03:00,-10800,2020-01-17 01:35:11+03:00,-10800,True,False,"['stopper.py', 'stream.py', '__init__.py', 'terminal.py', 'test_terminal.py']",['8c3ac1d678ac121e1cde95a117ab393f96d9bdfd'],3,82,85,5,1.0,1.0,0.6976744186046512
+d8ec4cfc68cf50d9245d032690cb69fd4825e6a9,Updated examples and improved error messages,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-01-17 16:06:05+03:00,-10800,2020-01-17 16:06:05+03:00,-10800,True,False,"['CHANGELOG.md', 'documents.py', 'telegram.py', 'backend.py', 'setup.py']",['0cd5628351db238a6254ef0f17f57f21cc7b8988'],4,11,15,5,1.0,1.0,1.0
+44b9ccf1d6cd33c93a3e3dc38556405017fbcc85,Improved storage,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-01-18 02:07:24+03:00,-10800,2020-01-18 02:07:24+03:00,-10800,True,False,"['CHANGELOG.md', 'index.rst', 'kutana.backends.rst', 'kutana.backends.terminal.rst', 'keyboard.py', 'stream.py', 'backend.py', 'debug.py', 'telegram.py', 'terminal.py', 'backend.py', 'extensions.py', 'context.py', 'kutana.py', 'storage.py', 'naive_memory.py', 'setup.py', 'test_backends_api.py', 'test_context.py', 'test_storage.py', 'testing_tools.py']",['d8ec4cfc68cf50d9245d032690cb69fd4825e6a9'],49,91,140,21,1.0,1.0,1.0
+c6c2a91bf08490f4f6e67104c4783d10cd293be4,Removed FOSSA,Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2020-02-07 00:59:03+03:00,-10800,2020-02-07 00:59:03+03:00,-10800,True,False,['README.md'],['44b9ccf1d6cd33c93a3e3dc38556405017fbcc85'],4,0,4,1,,,
+30e328c5be4f7046521009b0e68acbdc16c031db,Fixed signals for windows users,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-02-10 00:59:12+03:00,-10800,2020-02-10 00:59:12+03:00,-10800,True,False,"['kutana.py', 'setup.py']",['c6c2a91bf08490f4f6e67104c4783d10cd293be4'],2,2,4,2,,,
+c29b1f7debca916a4cd42e52ace878d2b33bc485,Fixed event handling for Windows,mkrukov,mkrukov@bestplace.pro,mkrukov,mkrukov@bestplace.pro,2020-02-22 20:57:54+03:00,-10800,2020-02-22 20:57:54+03:00,-10800,True,False,"['kutana.py', 'test_kutana.py']",['30e328c5be4f7046521009b0e68acbdc16c031db'],5,22,27,2,1.0,1.0,1.0
+f412e647606d30159f35bd8f5ebf5f7e00b2547e,Added tests for windows,mkrukov,mkrukov@bestplace.pro,mkrukov,mkrukov@bestplace.pro,2020-02-22 21:02:10+03:00,-10800,2020-02-22 21:02:10+03:00,-10800,True,False,['check.yml'],['c29b1f7debca916a4cd42e52ace878d2b33bc485'],1,2,3,1,,,
+d544ba817b90a08b7511aa0cf9af1e0976a1395d,Fixed style,mkrukov,mkrukov@bestplace.pro,mkrukov,mkrukov@bestplace.pro,2020-02-22 21:02:42+03:00,-10800,2020-02-22 21:02:42+03:00,-10800,True,False,['kutana.py'],['f412e647606d30159f35bd8f5ebf5f7e00b2547e'],2,1,3,1,,,
+ec6ca9668a7c4066cdaa7f021b940483d9fde225,Fixed deps for windows,mkrukov,mkrukov@bestplace.pro,mkrukov,mkrukov@bestplace.pro,2020-02-22 21:08:09+03:00,-10800,2020-02-22 21:08:09+03:00,-10800,True,False,['requirements.txt'],['d544ba817b90a08b7511aa0cf9af1e0976a1395d'],4,4,8,1,,,
+861f926f188e3b3e4e607ad51736b22d8e21a632,Fixed Terminal for windows,mkrukov,mkrukov@bestplace.pro,mkrukov,mkrukov@bestplace.pro,2020-02-22 21:28:33+03:00,-10800,2020-02-22 21:28:33+03:00,-10800,True,False,"['terminal.py', 'requirements.txt']",['ec6ca9668a7c4066cdaa7f021b940483d9fde225'],5,20,25,2,1.0,1.0,1.0
+475a3153604cead0fecf75cb5f4807ce567eb206,Udpated code for windows,mkrukov,mkrukov@bestplace.pro,mkrukov,mkrukov@bestplace.pro,2020-02-22 21:34:40+03:00,-10800,2020-02-22 21:34:40+03:00,-10800,True,False,"['terminal.py', 'requirements.txt', 'test_terminal.py']",['861f926f188e3b3e4e607ad51736b22d8e21a632'],7,11,18,3,1.0,1.0,1.0
+7c1cdfd41350b9e6cb84d74a358cf53c2f1bec9a,Bumped versions; fixed workflows and test,mkrukov,mkrukov@bestplace.pro,mkrukov,mkrukov@bestplace.pro,2020-02-22 21:40:57+03:00,-10800,2020-02-22 21:40:57+03:00,-10800,True,False,"['check.yml', 'CHANGELOG.md', 'terminal.py', 'setup.py']",['475a3153604cead0fecf75cb5f4807ce567eb206'],3,5,8,4,,,
+e14d5aa508ce5d8af2a08530dc8ebf13a8f69ce8,Updated workflows,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-02-22 22:56:48+03:00,-10800,2020-02-22 22:56:48+03:00,-10800,True,False,['deploy.yml'],['7c1cdfd41350b9e6cb84d74a358cf53c2f1bec9a'],1,1,2,1,,,
+620686eda24593e4c6dbc67873381b61b3af12da,Bugfixes and bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-04-01 19:03:26+03:00,-10800,2020-04-01 19:03:26+03:00,-10800,True,False,"['CHANGELOG.md', 'backend.py', 'context.py', 'routers.py', 'setup.py', 'test_context.py', 'test_plugin.py', 'test_vkontakte.py']",['e14d5aa508ce5d8af2a08530dc8ebf13a8f69ce8'],3,57,60,8,1.0,1.0,1.0
+e6aafb01264e8e0be9f2d7cd974f56124e26aef1,Update CHANGELOG.md,Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2020-04-01 19:06:00+03:00,-10800,2020-04-01 19:06:00+03:00,-10800,True,False,['CHANGELOG.md'],['620686eda24593e4c6dbc67873381b61b3af12da'],0,1,1,1,,,
+5276703f8e87572939095fbb1994721d1cd81937,Fixed bug with merging of different routers; Added test,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-04-18 20:10:16+03:00,-10800,2020-04-18 20:10:16+03:00,-10800,True,False,"['CHANGELOG.md', 'index.rst', 'kutana.py', 'router.py', 'setup.py', 'test_router.py']",['e6aafb01264e8e0be9f2d7cd974f56124e26aef1'],8,91,99,6,0.061224489795918366,1.0,1.0
+6b83c83321ba901cdbc635ebb881ae7f2478c651,Fixed typo,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-04-18 23:07:17+03:00,-10800,2020-04-18 23:07:17+03:00,-10800,True,False,['CHANGELOG.md'],['5276703f8e87572939095fbb1994721d1cd81937'],1,1,2,1,,,
+efbb2558d82329cc04306163c8313a24aea4f914,Fixed some issues; Added more routers; Updated docs and tests,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-05-02 15:16:49+03:00,-10800,2020-05-02 15:22:11+03:00,-10800,True,False,"['CHANGELOG.md', 'debug.py', 'backend.py', 'extensions.py', 'kutana.py', 'plugin.py', 'router.py', 'routers.py', 'test_plugin.py', 'test_router.py']",['6b83c83321ba901cdbc635ebb881ae7f2478c651'],87,220,307,10,0.8365384615384616,0.9038461538461539,0.7211538461538461
+b4ecd2aca477dc291b157f1499b846a7723247c9,Fixed style issue,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-05-02 15:24:59+03:00,-10800,2020-05-02 15:24:59+03:00,-10800,True,False,['extensions.py'],['efbb2558d82329cc04306163c8313a24aea4f914'],1,0,1,1,,,
+b747c4143a36ef6c7cd4d07dee2e060c53c21d9d,Bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-05-02 15:52:18+03:00,-10800,2020-05-02 15:52:18+03:00,-10800,True,False,['setup.py'],['b4ecd2aca477dc291b157f1499b846a7723247c9'],1,1,2,1,,,
+596d5713911286f49a55bd14b27adec5becbce66,"Added router for vkontakte's chat events (#53)
+
+* Added router for vkontakte's chat events
+* Added tests",Konstantin,23290721+sakost@users.noreply.github.com,GitHub,noreply@github.com,2020-05-11 19:16:50+03:00,-10800,2020-05-11 19:16:50+03:00,-10800,True,False,"['extensions.py', 'test_vkontakte_extensions.py']",['b747c4143a36ef6c7cd4d07dee2e060c53c21d9d'],0,146,146,2,0.5047619047619047,0.8095238095238095,0.5904761904761905
+0c4b3afb7eec626db2c3b29709034c712da4b36c,Large refactor,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-05-11 20:17:50+03:00,-10800,2020-05-11 20:17:50+03:00,-10800,True,False,"['CHANGELOG.md', 'index.rst', 'keyboard.py', 'quest.py', 'statistics.py', 'extensions.py', 'plugin.py', 'setup.py', 'test_deprecated.py', 'test_kutana.py', 'test_plugin.py', 'test_state.py', 'test_vkontakte_extensions.py']",['596d5713911286f49a55bd14b27adec5becbce66'],41,101,142,13,1.0,1.0,0.1891891891891892
+ca6ea140b0c5a03ded7b4e739d1fc26d638f920b,Update CONTRIBUTORS.md,Michael Krukov,krukov.michael@ya.ru,GitHub,noreply@github.com,2020-05-12 00:39:41+03:00,-10800,2020-05-12 00:39:41+03:00,-10800,True,False,['CONTRIBUTORS.md'],['0c4b3afb7eec626db2c3b29709034c712da4b36c'],0,1,1,1,,,
+6e7ac346fa86493c77af7722558fa1ef6d3d693b,Allow spaces before and after prefix in commands,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-06-22 00:05:25+03:00,-10800,2020-06-22 00:05:35+03:00,-10800,True,False,"['kutana.py', 'routers.py', 'test_plugin.py', 'testing_tools.py']",['ca6ea140b0c5a03ded7b4e739d1fc26d638f920b'],2,30,32,4,0.9444444444444444,1.0,0.9444444444444444
+d4f9464c310009594a8dd1a4ef5e7eb50dbdbd4f,Fixed style,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-06-26 23:16:04+03:00,-10800,2020-06-26 23:16:04+03:00,-10800,True,False,"['plugin.py', 'routers.py']",['6e7ac346fa86493c77af7722558fa1ef6d3d693b'],6,6,12,2,,,
+2c62c7a87f13769c0e64a88aeeb2d02bb24b344c,Minor tweak for echo command,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-08-06 01:48:50+03:00,-10800,2020-08-06 01:48:50+03:00,-10800,True,False,['echo.py'],['d4f9464c310009594a8dd1a4ef5e7eb50dbdbd4f'],1,1,2,1,,,
+3f38dde196ef249998d6ba8a6ea5bcc8cab96872,Added command stripping #55,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-08-08 18:42:32+03:00,-10800,2020-08-08 18:42:32+03:00,-10800,True,False,"['CHANGELOG.md', 'Makefile', 'run.py', 'telegram.py', 'setup.py', 'test_telegram.py', 'test_telegram_data.py']",['2c62c7a87f13769c0e64a88aeeb2d02bb24b344c'],10,56,66,7,0.0,1.0,0.96
+2653866979829471d253a14a827ac375be3f3cb3,vk-callback; closes #54; +misc chores,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-08-20 05:59:26+03:00,-10800,2020-08-20 05:59:26+03:00,-10800,True,False,"['CHANGELOG.md', 'Makefile', 'config.json.example', 'stream.py', 'run.py', 'backend.py', '__init__.py', '__init__.py', 'backend.py', 'callback.py', 'longpoll.py', 'helpers.py', 'kutana.py', 'test_backends_api.py', 'test_helpers.py', 'test_vkontakte.py']",['3f38dde196ef249998d6ba8a6ea5bcc8cab96872'],142,536,678,16,0.5139442231075697,0.5657370517928287,0.7689243027888446
+c03347085ba5c52c2237ff5efe7ffb804a02b641,Refactor; Improved stability on high load; Removed storage related code,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-08-24 12:14:15+03:00,-10800,2020-08-24 12:14:15+03:00,-10800,True,False,"['CHANGELOG.md', 'Makefile', 'index.rst', 'kutana.backends.rst', 'kutana.backends.vkontakte.callback.rst', 'kutana.backends.vkontakte.longpoll.rst', 'kutana.backends.vkontakte.rst', 'kutana.rst', 'kutana.storage.rst', 'kutana.storages.naive_memory.rst', 'kutana.storages.rst', 'quest.py', 'debug.py', 'backend.py', 'extensions.py', 'longpoll.py', 'context.py', 'handler.py', 'kutana.py', 'plugin.py', 'router.py', 'storage.py', '__init__.py', 'naive_memory.py', 'test_context.py', 'test_router.py', 'test_state.py', 'test_storage.py', 'testing_tools.py']",['2653866979829471d253a14a827ac375be3f3cb3'],518,98,616,29,0.3521739130434783,0.1,0.2826086956521739
+971a7e13644f0553cf9d5aa7e44643c2e1b7b11b,Refactor,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-08-24 12:37:31+03:00,-10800,2020-08-24 12:37:31+03:00,-10800,True,False,"['CHANGELOG.md', 'backend.py', 'debug.py', 'telegram.py', 'terminal.py', 'backend.py', 'callback.py', 'longpoll.py', 'context.py', 'kutana.py', 'test_context.py', 'test_telegram.py', 'test_terminal.py', 'test_vkontakte.py']",['c03347085ba5c52c2237ff5efe7ffb804a02b641'],65,62,127,14,0.0,0.0,0.0
+137f77814f4dc560b74e481d6fd0d7f23a72d869,Refactored duplicated code,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-08-24 14:00:19+03:00,-10800,2020-08-24 14:00:19+03:00,-10800,True,False,['plugin.py'],['971a7e13644f0553cf9d5aa7e44643c2e1b7b11b'],36,15,51,1,0.0,0.0,0.045454545454545456
+e4dfddb59b155fe7338929f4ecb1b87516951af5,Refactoring,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-08-25 03:28:13+03:00,-10800,2020-08-25 03:28:13+03:00,-10800,True,False,"['backend.py', 'callback.py', 'longpoll.py']",['137f77814f4dc560b74e481d6fd0d7f23a72d869'],38,27,65,3,1.0,1.0,0.0
+1632de1571357a95936385117b865dfc6a9a7965,Reverted host refactor,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-08-25 03:30:30+03:00,-10800,2020-08-25 03:30:30+03:00,-10800,True,False,['callback.py'],['e4dfddb59b155fe7338929f4ecb1b87516951af5'],2,2,4,1,,,
+de83deac35c9834601902687071b55989e812248,"WIP on 4.4.0
+
+Reworked basic application invocation;
+Implemented basic storage;
+Updated codestyle",Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-11-05 23:06:22+03:00,-10800,2020-11-05 23:06:30+03:00,-10800,True,False,"['.DS_Store', '.gitignore', 'README.md', 'index.rst', 'config.example.yml', 'config.json.example', 'contexts.py', 'documents.py', 'echo.py', 'give_image.py', 'image.py', 'keyboard.py', 'metrics.py', 'plugins.py', 'quest.py', 'statistics.py', 'stopper.py', 'stream.py', 'run.py', '__init__.py', '__main__.py', 'backend.py', 'cli.py', 'context.py', 'helpers.py', 'kutana.py', 'plugin.py', 'storage.py', 'storages.py', 'single_plugin.py', 'multiple_plugins.py', 'test_kutana.py', 'test_plugin.py', 'test_storage.py', 'test_telegram.py', 'test_vkontakte.py', 'test_vkontakte_extensions.py', 'testing_tools.py']",['1632de1571357a95936385117b865dfc6a9a7965'],117,750,867,38,0.7868421052631579,0.8842105263157894,0.8
+ed573b89e48d7e1be9097496e98726247e86a89d,Greatly reduced support for graffiti,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-11-05 23:17:32+03:00,-10800,2020-11-05 23:17:32+03:00,-10800,True,False,"['CHANGELOG.md', 'Makefile', 'index.rst', 'documents.py', 'backend.py', 'cli.py', 'test_vkontakte.py']",['de83deac35c9834601902687071b55989e812248'],67,16,83,7,0.38461538461538464,0.38461538461538464,0.5384615384615384
+738cd74c08da827d436da730087f95e61112f867,Improved CLI interface,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-11-05 23:31:58+03:00,-10800,2020-11-05 23:31:58+03:00,-10800,True,False,"['README.md', 'cli.py']",['ed573b89e48d7e1be9097496e98726247e86a89d'],3,29,32,2,0.0,0.0,1.0
+1dbb51609c4916cdb69b2a14ff346081f3fe4c00,Implemented Storage for mongo; Updated functionality for backends,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-12-29 01:42:39+03:00,-10800,2020-12-29 01:42:39+03:00,-10800,True,False,"['CHANGELOG.md', 'config.example.yml', 'backend.py', 'debug.py', 'telegram.py', 'backend.py', 'cli.py', 'kutana.py', 'storage.py', '__init__.py', 'memory.py', 'mongodb.py', 'requirements.txt', 'setup.py', 'test_kutana.py', 'test_storages.py']",['738cd74c08da827d436da730087f95e61112f867'],16,248,264,16,0.7753623188405797,0.8478260869565217,0.7681159420289855
+e4ed43a6bd7175aaaa27498c101629d7e60cf6f9,Fixed tests and linting issues,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-12-29 01:59:48+03:00,-10800,2020-12-29 01:59:48+03:00,-10800,True,False,"['kutana.py', '__init__.py', 'mongodb.py', 'test_storages.py']",['1dbb51609c4916cdb69b2a14ff346081f3fe4c00'],22,28,50,4,1.0,1.0,1.0
+94b89a78fa3a41697b7340f99180905ff102cef5,Fixed requirements,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-12-31 19:36:20+03:00,-10800,2020-12-31 19:36:20+03:00,-10800,True,False,['setup.py'],['e4ed43a6bd7175aaaa27498c101629d7e60cf6f9'],3,3,6,1,,,
+ae21bf23b461ec39d30cc93caeec510169fca5e8,Improved CLI interface; Added notes to README,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-12-31 19:47:41+03:00,-10800,2020-12-31 19:47:41+03:00,-10800,True,False,"['README.md', 'setup.py']",['94b89a78fa3a41697b7340f99180905ff102cef5'],3,10,13,2,,,
+51128676476f5c82142b4fcc484d5ad93279823a,Improved exceptions reporting and UX while debugging,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2020-12-31 20:27:35+03:00,-10800,2020-12-31 20:27:35+03:00,-10800,True,False,"['cli.py', 'kutana.py', 'setup.py', 'test_kutana.py']",['ae21bf23b461ec39d30cc93caeec510169fca5e8'],16,26,42,4,0.5714285714285714,0.5714285714285714,1.0
+1bee0c76c5f80ee57ad611c144cb58b1a67dd954,Updated gitignore; Fixed issue with main_loop,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-01-03 20:48:06+03:00,-10800,2021-01-03 20:48:06+03:00,-10800,True,False,"['.DS_Store', '.gitignore', 'kutana.py']",['51128676476f5c82142b4fcc484d5ad93279823a'],0,3,3,3,1.0,1.0,1.0
+41f1484a636e14dda46bdfd2fd49f9e7cc62815e,Refactored README; Added sqlite storage,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-01-05 03:17:11+03:00,-10800,2021-01-05 03:17:11+03:00,-10800,True,False,"['.gitignore', 'README.md', 'config.example.yml', 'cli.py', '__init__.py', 'memory.py', 'sqlite.py', 'test_storages.py']",['1bee0c76c5f80ee57ad611c144cb58b1a67dd954'],46,154,200,8,1.0,0.875,0.7625
+ce87aa40987bfb88aade66a5ca3ee017dff24d31,Updated example,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-01-06 04:10:38+03:00,-10800,2021-01-06 04:10:38+03:00,-10800,True,False,"['.gitignore', 'README.md']",['41f1484a636e14dda46bdfd2fd49f9e7cc62815e'],0,11,11,2,,,
+a48b0dc1bd9d9875d8193b05c5cbfe5d60678800,Unififed sections in config file and updated example,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-01-09 11:45:30+03:00,-10800,2021-01-09 11:45:30+03:00,-10800,True,False,"['config.example.yml', 'cli.py']",['ce87aa40987bfb88aade66a5ca3ee017dff24d31'],5,13,18,2,1.0,0.0,1.0
+517d44660a96f839c08a9891b4cec8345ee9b713,Added tests for translation; Updated documentation a bit; Reworked plugins,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-01-13 21:06:11+03:00,-10800,2021-01-13 21:06:11+03:00,-10800,True,False,"['CHANGELOG.md', 'Makefile', 'index.rst', 'kutana.cli.rst', 'kutana.i18n.cli.rst', 'kutana.i18n.pluralization.rst', 'kutana.i18n.rst', 'kutana.i18n.translator.rst', 'kutana.rst', 'kutana.storage.rst', 'kutana.storages.memory.rst', 'kutana.storages.mongodb.rst', 'kutana.storages.rst', 'kutana.storages.sqlite.rst', 'config.example.yml', 'contexts.py', 'documents.py', 'echo.py', 'give_image.py', 'en.yml', 'ru.yml', 'image.py', 'keyboard.py', 'metrics.py', 'plugins.py', 'quest.py', 'statistics.py', 'stopper.py', 'stream.py', 'waiter.py', '__init__.py', 'cli.py', '__init__.py', 'cli.py', 'pluralization.py', 'translator.py', 'loaders.py', 'setup.py', 'en.yml', 'ru.yml', 'test_i18n.py']",['a48b0dc1bd9d9875d8193b05c5cbfe5d60678800'],335,698,1033,41,0.2897196261682243,0.34579439252336447,0.7757009345794392
+2a97a35e3305283a9a949615d2402bfc6fc556c6,Updated AnyMessageRouter and docs,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-01-13 21:12:42+03:00,-10800,2021-01-13 21:12:42+03:00,-10800,True,False,"['CHANGELOG.md', 'index.rst', 'routers.py']",['517d44660a96f839c08a9891b4cec8345ee9b713'],9,12,21,3,,,
+bbc9314d158e5826983fc44912383a66002fd20a,Updated requirements,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-01-13 23:39:24+03:00,-10800,2021-01-13 23:39:24+03:00,-10800,True,False,"['requirements.txt', 'setup.py']",['2a97a35e3305283a9a949615d2402bfc6fc556c6'],1,3,4,2,,,
+636edc3d25cf5f0fe00196eccf14199cbaf3e589,Updated Makefile; Upgraded plugin example in README,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-01-24 16:57:14+03:00,-10800,2021-01-24 16:57:14+03:00,-10800,True,False,"['Makefile', 'README.md']",['bbc9314d158e5826983fc44912383a66002fd20a'],2,5,7,2,,,
+46de1dd06c0215f74aa8cb9990e8e41c2d693ae6,Added more helpers; Updated vk-specific handlers; Fixes #57,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-02-08 10:58:16+03:00,-10800,2021-02-08 10:58:16+03:00,-10800,True,False,"['CHANGELOG.md', 'kb.py', 'plugins.py', 'extensions.py', 'helpers.py', 'plugin.py', 'test_helpers.py', 'test_plugin.py', 'test_vkontakte_extensions.py']",['636edc3d25cf5f0fe00196eccf14199cbaf3e589'],19,154,173,9,0.7241379310344828,0.8390804597701149,0.9195402298850575
+106920248c99d662094e89fe19760dded1ceac35,Removed sample plugins from examples,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-02-08 10:58:40+03:00,-10800,2021-02-08 10:58:45+03:00,-10800,True,False,['kb.py'],['46de1dd06c0215f74aa8cb9990e8e41c2d693ae6'],41,0,41,1,0.8571428571428571,0.0,0.0
+fb155d50d1cba3aec79b26ab1a0b0c83be3a012a,Updated CHANGELOG,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-02-08 11:03:09+03:00,-10800,2021-02-08 11:03:09+03:00,-10800,True,False,['CHANGELOG.md'],['106920248c99d662094e89fe19760dded1ceac35'],0,2,2,1,,,
+1e9838c6b7f5ac4d0b42bf1ee76a0ed1578466fa,feat: on_* methods on plugins now can used used multiple times and have priority,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-02-28 04:11:25+03:00,-10800,2021-02-28 04:11:25+03:00,-10800,True,False,"['CHANGELOG.md', 'index.rst', 'context.py', 'kutana.py', 'plugin.py', 'test_kutana.py', 'test_plugin.py']",['fb155d50d1cba3aec79b26ab1a0b0c83be3a012a'],81,114,195,7,1.0,1.0,0.0
+c66d7444e4caae1c98ab6d51916e5ccc35227ffd,chores: bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-02-28 04:27:14+03:00,-10800,2021-02-28 04:27:14+03:00,-10800,True,False,['CHANGELOG.md'],['1e9838c6b7f5ac4d0b42bf1ee76a0ed1578466fa'],1,1,2,1,,,
+ed3e08cb66ecc5a60bf3472a2ed367cea200e689,chores: bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-02-28 04:27:48+03:00,-10800,2021-02-28 04:27:48+03:00,-10800,True,False,['setup.py'],['c66d7444e4caae1c98ab6d51916e5ccc35227ffd'],1,1,2,1,,,
+65541eb35cd80bd825b9494afb6aac9aee9f8575,fix: corrected sleep in execute_loop in  'vkontakte' backend,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-03-04 18:51:22+03:00,-10800,2021-03-04 18:51:22+03:00,-10800,True,False,['backend.py'],['ed3e08cb66ecc5a60bf3472a2ed367cea200e689'],3,1,4,1,1.0,1.0,0.0
+6f3f2c1c2d09525abd54266bf4235fbe97768cbb,chores: bumped version and copyright date,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-03-05 11:18:09+03:00,-10800,2021-03-05 11:18:09+03:00,-10800,True,False,['setup.py'],['65541eb35cd80bd825b9494afb6aac9aee9f8575'],2,2,4,1,,,
+ac52a71430922e93489892eaca9e67ed34e6142a,fix: raw_request don't raise on falsy response (only on None/missing),Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-03-08 00:03:58+03:00,-10800,2021-03-08 00:03:58+03:00,-10800,True,False,['backend.py'],['6f3f2c1c2d09525abd54266bf4235fbe97768cbb'],1,1,2,1,,,
+75270eb3b652eb2dda3956181467e6c27d6d37b6,chores: bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-03-08 00:04:30+03:00,-10800,2021-03-08 00:04:30+03:00,-10800,True,False,['setup.py'],['ac52a71430922e93489892eaca9e67ed34e6142a'],1,1,2,1,,,
+f541d8f184f001d98562a54150e38d552c7cd8e0,fix: plugin's decorators should return initial functions,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-03-15 00:11:45+03:00,-10800,2021-03-15 00:11:45+03:00,-10800,True,False,"['extensions.py', 'plugin.py']",['75270eb3b652eb2dda3956181467e6c27d6d37b6'],2,2,4,2,,,
+39473c5cc30de01132a2e2d114d34140d47e9976,chores: bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-03-15 00:18:37+03:00,-10800,2021-03-15 00:18:37+03:00,-10800,True,False,['setup.py'],['f541d8f184f001d98562a54150e38d552c7cd8e0'],1,1,2,1,,,
+41a0fdb8f3ac1822e37f392ccdee2b39b5a0d799,fix: corrected merge of 'PayloadRouter'; closes #61,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-04-26 01:26:13+03:00,-10800,2021-04-26 01:26:53+03:00,-10800,True,False,"['CHANGELOG.md', 'extensions.py', 'kutana.py', 'router.py', 'setup.py', 'test_router.py']",['39473c5cc30de01132a2e2d114d34140d47e9976'],9,37,46,6,1.0,1.0,1.0
+2356647059be1f7451b5644be6313a8ea554c452,feat: added support for expect_sender for telegram 'callback_query',Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-05-05 15:36:26+03:00,-10800,2021-05-05 15:36:26+03:00,-10800,True,False,"['telegram.py', 'test_telegram.py', 'test_telegram_data.py']",['41a0fdb8f3ac1822e37f392ccdee2b39b5a0d799'],2,33,35,3,0.7272727272727273,1.0,1.0
+7dfdcec07cd5162df138473e90eeb7d4e23915b1,fix: corrected expect_sender for tg updates,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-05-06 18:16:16+03:00,-10800,2021-05-06 18:16:16+03:00,-10800,True,False,['telegram.py'],['2356647059be1f7451b5644be6313a8ea554c452'],1,1,2,1,,,
+d8103c41d132ccd4d7f6106f3fa9f07215573132,fix: corrected tests,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-05-06 22:01:29+03:00,-10800,2021-05-06 22:01:29+03:00,-10800,True,False,['test_telegram.py'],['7dfdcec07cd5162df138473e90eeb7d4e23915b1'],1,1,2,1,,,
+583b4f75547fddec3ca1dfc26ab17c7e1c0b3c46,feat: now vkontakte images returned are largest accessible; bumped version,Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-05-24 08:01:25+03:00,-10800,2021-05-24 08:01:25+03:00,-10800,True,False,"['CHANGELOG.md', 'backend.py', 'setup.py']",['d8103c41d132ccd4d7f6106f3fa9f07215573132'],2,13,15,3,0.875,0.875,1.0
+f2271a3a956c547cf26cf03d96714c9c1bfa6cf9,feat: added on_callback; updated debug backend; updated reply; updated docs and tests (closes #58),Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-08-23 14:28:27+03:00,-10800,2021-08-23 14:31:22+03:00,-10800,True,False,"['CHANGELOG.md', 'debug.py', 'backend.py', 'extensions.py', 'context.py', 'plugin.py', 'setup.py', 'test_context.py', 'test_vkontakte.py', 'test_vkontakte_data.py', 'test_vkontakte_extensions.py']",['583b4f75547fddec3ca1dfc26ab17c7e1c0b3c46'],12,191,203,11,0.6347826086956522,0.9043478260869565,0.7913043478260869
+902f9d521c10c6c7ccabb1387ee3d87db5e2eba6,feat: on_commands ignores prefix when bot mentioned (closes #59),Michael Krukov,krukov.michael@ya.ru,Michael Krukov,krukov.michael@ya.ru,2021-08-23 16:02:12+03:00,-10800,2021-08-23 16:03:15+03:00,-10800,True,False,"['CHANGELOG.md', 'debug.py', 'telegram.py', 'terminal.py', 'backend.py', 'kutana.py', 'logger.py', 'plugin.py', 'routers.py', 'update.py', 'test_plugin.py', 'test_vkontakte_extensions.py', 'testing_tools.py']",['f2271a3a956c547cf26cf03d96714c9c1bfa6cf9'],100,121,221,13,0.0,0.30434782608695654,0.782608695652174
+c5d7f9f0f32eda87d4e28c240bbabe034d9fb162,feat: closed #65; refactored docs; updated tests; fixed support for newer python versions,Michael Kryukov,kryukov.ms@ya.ru,Michael Kryukov,kryukov.ms@ya.ru,2021-11-04 03:08:50+03:00,-10800,2021-11-04 03:08:50+03:00,-10800,True,False,"['CHANGELOG.md', 'Makefile', 'index.rst', 'backend.py', 'kutana.py', 'routers.py', 'test_vkontakte.py', 'test_vkontakte_data.py']",['902f9d521c10c6c7ccabb1387ee3d87db5e2eba6'],48,67,115,8,0.0,1.0,1.0
+d4686fbf7615bb85ffa29f3ad0d7bfa02c3601c2,fix: tweaked changelog and no-cover pragmas,Michael Kryukov,kryukov.ms@ya.ru,Michael Kryukov,kryukov.ms@ya.ru,2021-11-04 03:11:06+03:00,-10800,2021-11-04 03:11:06+03:00,-10800,True,False,"['CHANGELOG.md', 'kutana.py']",['c5d7f9f0f32eda87d4e28c240bbabe034d9fb162'],2,3,5,2,,,
+a3c6cd0edcfd56147acd22585c43d99491c20c23,docs: updated licence date,Michael Kryukov,kryukov.ms@yandex.ru,Michael Kryukov,kryukov.ms@yandex.ru,2021-11-04 03:17:32+03:00,-10800,2021-11-04 03:17:32+03:00,-10800,True,False,['LICENCE'],['d4686fbf7615bb85ffa29f3ad0d7bfa02c3601c2'],1,1,2,1,,,
+4de539c50a6d7ad32b75c0a209d4d7062138fa81,build: bumped version,Michael Kryukov,kryukov.ms@yandex.ru,Michael Kryukov,kryukov.ms@yandex.ru,2021-11-11 23:32:28+03:00,-10800,2021-11-11 23:32:28+03:00,-10800,True,False,"['make.bat', 'setup.py']",['a3c6cd0edcfd56147acd22585c43d99491c20c23'],36,1,37,2,,,
+52d3623d56ab7283e5bb4363fa37a9edf3f38dd0,fix: reorganized requirements; fixed rtd build,Michael Kryukov,kryukov.ms@yandex.ru,Michael Kryukov,kryukov.ms@yandex.ru,2021-11-17 02:41:28+03:00,-10800,2021-11-17 02:41:28+03:00,-10800,True,False,"['.readthedocs.yml', 'requirements.txt', 'requirements.txt']",['4de539c50a6d7ad32b75c0a209d4d7062138fa81'],8,9,17,3,,,
+d611358940d4574e83bd5177489fe3dadc030a52,bumped version to v5.2.0; added support for title (Telegram); minor fixes here and there,Michael Kryukov,kryukov.ms@yandex.ru,Michael Kryukov,kryukov.ms@yandex.ru,2022-04-24 20:22:45+03:00,-10800,2022-04-24 20:22:45+03:00,-10800,True,False,"['CHANGELOG.md', 'documents.py', 'ru.yml', 'telegram.py', 'helpers.py', 'cli.py', 'update.py', 'setup.py', 'test_helpers.py', 'test_telegram.py']",['52d3623d56ab7283e5bb4363fa37a9edf3f38dd0'],38,104,142,10,0.7647058823529411,0.9411764705882353,0.8823529411764706
+15feb6e5f7239d5f9911146e1deff50169267c93,"ci: moved to python3 3.8, 3.9, 3.10",Michael Kryukov,kryukov.ms@yandex.ru,Michael Kryukov,kryukov.ms@yandex.ru,2022-04-24 20:27:25+03:00,-10800,2022-04-24 20:27:25+03:00,-10800,True,False,"['check.yml', 'deploy.yml']",['d611358940d4574e83bd5177489fe3dadc030a52'],2,2,4,2,,,
+386c6cdd9740a3979c1e7cd1b956d4ca9fc7a775,ci: 3.10 can't be specified as int,Michael Kryukov,kryukov.ms@yandex.ru,Michael Kryukov,kryukov.ms@yandex.ru,2022-04-24 20:30:05+03:00,-10800,2022-04-24 20:30:05+03:00,-10800,True,False,"['check.yml', 'deploy.yml']",['15feb6e5f7239d5f9911146e1deff50169267c93'],2,2,4,2,,,
+03840f4b847bf2dd7b7c3ff9cd03fb1fc0923ec2,feat: removed loop argument for semaphore,Michael Kryukov,kryukov.ms@yandex.ru,Michael Kryukov,kryukov.ms@yandex.ru,2022-04-24 20:38:06+03:00,-10800,2022-04-24 20:38:06+03:00,-10800,True,False,"['CHANGELOG.md', 'kutana.py']",['386c6cdd9740a3979c1e7cd1b956d4ca9fc7a775'],3,2,5,2,1.0,0.0,1.0
+02cf0ec38a5112a9b856583d5decaa421f71c8fa,fix: removed loop arguments,Michael Kryukov,kryukov.ms@yandex.ru,Michael Kryukov,kryukov.ms@yandex.ru,2022-04-24 20:57:46+03:00,-10800,2022-04-24 20:57:46+03:00,-10800,True,False,"['CHANGELOG.md', 'telegram.py', 'callback.py', 'kutana.py']",['03840f4b847bf2dd7b7c3ff9cd03fb1fc0923ec2'],9,6,15,4,1.0,0.0,0.0
+57926f1f88efc32b6f6d19ba35b2753f0a11b704,build: tweaked Makefile,Michael Kryukov,kryukov.ms@yandex.ru,Michael Kryukov,kryukov.ms@yandex.ru,2022-04-24 22:26:13+03:00,-10800,2022-04-24 22:26:13+03:00,-10800,True,False,['Makefile'],['02cf0ec38a5112a9b856583d5decaa421f71c8fa'],2,2,4,1,,,
+92fd73b9fc35a217ae544840315234139a36eb54,"Removed unused parameter (#67)
+
+Parameter 'localized' is not used, remove it",Lumo,34482855+daeeros@users.noreply.github.com,GitHub,noreply@github.com,2022-10-23 13:27:46+04:00,-14400,2022-10-23 12:27:46+03:00,-10800,True,False,['plugin.py'],['57926f1f88efc32b6f6d19ba35b2753f0a11b704'],1,1,2,1,,,1.0
+cb1039c86b353feb24d943460e2235d4767a3f75,kutana 6.0: removed excessive functionality; stabilized core functions; updated current API versions; updated tests; cleaned documentation,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-07-05 20:02:18+03:00,-10800,2023-07-05 20:02:18+03:00,-10800,True,False,"['CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'bug-report.md', 'feature-reqeust.md', 'PULL_REQUEST_TEMPLATE.md', 'check.yml', 'deploy.yml', '.readthedocs.yml', 'CHANGELOG.md', 'LICENCE', 'Makefile', 'README.md', 'Makefile', 'kutana-logo-512.png', 'kutana-logo-dark-512.png', 'conf.py', 'index.md', 'index.rst', 'make.bat', 'requirements.txt', 'kutana.backend.rst', 'kutana.backends.debug.rst', 'kutana.backends.rst', 'kutana.backends.telegram.rst', 'kutana.backends.terminal.rst', 'kutana.backends.vkontakte.backend.rst', 'kutana.backends.vkontakte.callback.rst', 'kutana.backends.vkontakte.extensions.rst', 'kutana.backends.vkontakte.longpoll.rst', 'kutana.backends.vkontakte.rst', 'kutana.cli.rst', 'kutana.context.rst', 'kutana.exceptions.rst', 'kutana.handler.rst', 'kutana.helpers.rst', 'kutana.i18n.cli.rst', 'kutana.i18n.pluralization.rst', 'kutana.i18n.rst', 'kutana.i18n.translator.rst', 'kutana.kutana.rst', 'kutana.loaders.rst', 'kutana.logger.rst', 'kutana.plugin.rst', 'kutana.router.rst', 'kutana.routers.rst', 'kutana.rst', 'kutana.storage.rst', 'kutana.storages.memory.rst', 'kutana.storages.mongodb.rst', 'kutana.storages.rst', 'kutana.storages.sqlite.rst', 'kutana.update.rst', 'modules.rst', 'config.example.yml', 'documents.py', 'echo.py', 'flipping.py', 'en.yml', 'ru.yml', 'metrics.py', 'plugins.py', 'waiter.py', '__init__.py', '__main__.py', 'backend.py', '__init__.py', 'debug.py', 'telegram.py', 'terminal.py', '__init__.py', 'backend.py', 'base.py', 'callback.py', 'extensions.py', 'longpoll.py', 'cli.py', 'context.py', 'decorators.py', 'exceptions.py', 'handler.py', 'helpers.py', '__init__.py', 'cli.py', 'pluralization.py', 'translator.py', 'kutana.py', 'loaders.py', 'logger.py', 'plugin.py', 'router.py', 'routers.py', 'storage.py', '__init__.py', 'memory.py', 'mongodb.py', 'sqlite.py', 'update.py', 'pytest.ini', 'requirements.txt', 'setup.py', 'single_plugin.py', 'plugin.py', 'plugin.py', 'en.yml', 'ru.yml', '__init__.py', 'plugin.py', 'plugin.py', 'utils.py', 'multiple_plugins.py', 'no_plugins.py', 'plugins.py', 'test_attachments.py', 'test_backends_api.py', 'test_context.py', 'test_decorators.py', 'test_deprecated.py', 'test_exception.py', 'test_exceptions.py', 'test_helpers.py', 'test_i18n.py', 'test_kutana.py', 'test_loaders.py', 'test_plugin.py', 'test_plugins.py', 'test_plugins_extensions.py', 'test_router.py', 'test_routers.py', 'test_storage.py', 'test_storages.py', 'test_telegram.json', 'test_telegram.py', 'test_telegram_data.py', 'test_terminal.py', 'test_update.py', 'test_vkontakte.py', 'test_vkontakte_callback.py', 'test_vkontakte_data.py', 'test_vkontakte_extensions.py', 'test_vkontakte_longpoll.json', 'test_vkontakte_longpoll.py', 'testing_tools.py']",['92fd73b9fc35a217ae544840315234139a36eb54'],6442,3637,10079,142,0.13040494166094715,0.09402882635552505,0.2903225806451613
+eff165440e233f58ba938b2f5bfc898e37a77f16,feat: added on_match again; tweaked ci/cd,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-07-09 17:54:19+03:00,-10800,2023-07-09 17:54:19+03:00,-10800,True,False,"['check.yml', 'deploy.yml', 'Makefile', 'plugin.py', 'plugin.py', 'plugin.py', 'test_loaders.py', 'test_plugins.py']",['cb1039c86b353feb24d943460e2235d4767a3f75'],11,95,106,8,0.6170212765957447,0.9574468085106383,0.9361702127659575
+9fac87ae65ffadd6ef395cf44f07dc3bc11cba22,fix: corrected requirements,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-07-09 18:05:20+03:00,-10800,2023-07-09 18:05:20+03:00,-10800,True,False,"['requirements.txt', 'setup.py']",['eff165440e233f58ba938b2f5bfc898e37a77f16'],2,3,5,2,,,
+31305508d2d7225099cf2b7cf8f8ca9b041651e1,fix: fail-under 75,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-07-09 18:31:17+03:00,-10800,2023-07-09 18:31:17+03:00,-10800,True,False,['check.yml'],['9fac87ae65ffadd6ef395cf44f07dc3bc11cba22'],1,1,2,1,,,
+96190bf800ed6c1a89726104fc1cee3ab75aaf60,fix: encoding on windows?,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-07-09 18:35:22+03:00,-10800,2023-07-09 18:35:22+03:00,-10800,True,False,['test_vkontakte_longpoll.py'],['31305508d2d7225099cf2b7cf8f8ca9b041651e1'],3,9,12,1,0.0,1.0,1.0
+e7c2842e667f5a6106fd639fa7fbb7b333d076e3,fix: run with just config,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-08-10 02:37:53+03:00,-10800,2023-08-10 02:37:53+03:00,-10800,True,False,['__main__.py'],['96190bf800ed6c1a89726104fc1cee3ab75aaf60'],2,4,6,1,0.0,0.0,1.0
+3e6001a9f81ed1e2e28e85234b4117e8705c7dbf,fix: image base,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-08-10 15:22:50+03:00,-10800,2023-08-10 15:23:32+03:00,-10800,True,False,['router.py'],['e7c2842e667f5a6106fd639fa7fbb7b333d076e3'],1,1,2,1,,,
+2c68eb32757b8e390705714a3907f6d37d19bc20,feat: use post for vk,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-08-13 00:16:15+03:00,-10800,2023-08-13 00:16:15+03:00,-10800,True,False,['base.py'],['3e6001a9f81ed1e2e28e85234b4117e8705c7dbf'],1,1,2,1,,,
+5c8d38ae7ad94500a8197db8bfb859f046fd0d08,fix: use post and use data,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-08-13 00:20:40+03:00,-10800,2023-08-13 00:20:40+03:00,-10800,True,False,"['base.py', 'test_vkontakte_longpoll.json', 'test_vkontakte_longpoll.py']",['2c68eb32757b8e390705714a3907f6d37d19bc20'],11,11,22,3,,,
+16a046c70bfc3aff1edd6af26769749997b235a1,feat: make vk's method public,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-09-07 17:55:25+03:00,-10800,2023-09-07 17:55:25+03:00,-10800,True,False,['base.py'],['5c8d38ae7ad94500a8197db8bfb859f046fd0d08'],2,2,4,1,,,
+509c9d7385e3a339771c62a9499347746075ef4a,fix: raise exception on errors,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2023-12-03 15:09:10+03:00,-10800,2023-12-03 15:09:10+03:00,-10800,True,False,['base.py'],['16a046c70bfc3aff1edd6af26769749997b235a1'],1,1,2,1,,0.0,
+d01326a0a869042855c9f9cd7541d71fd8125aa7,"fix(examples): removed unused imports, functions and f-string",Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 12:21:37+03:00,-10800,2024-01-08 12:21:37+03:00,-10800,True,False,['flipping.py'],['509c9d7385e3a339771c62a9499347746075ef4a'],8,3,11,1,0.0,0.0,0.0
+4a74f582ac39b7023453f6ce3e22347b99472494,refactor(tg): tweaked _get_user_statuses_tg (suggested by #81),Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 12:30:33+03:00,-10800,2024-01-08 12:30:33+03:00,-10800,True,False,['decorators.py'],['d01326a0a869042855c9f9cd7541d71fd8125aa7'],2,1,3,1,0.0,0.0,1.0
+3d23313369681029502f47bf061f4ea9d53d4f0c,feat(tg): proper file name for uploading documents e.t.c.,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 13:16:21+03:00,-10800,2024-01-08 13:16:21+03:00,-10800,True,False,"['telegram.py', 'test_telegram.json', 'test_telegram.py']",['4a74f582ac39b7023453f6ce3e22347b99472494'],18,27,45,3,1.0,1.0,1.0
+336c9dc7e3584ae72ecd13a665498b7da4e396a1,fix(tg): file_name is optional (fixes #83),Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 13:17:52+03:00,-10800,2024-01-08 13:17:52+03:00,-10800,True,False,"['video.mp4', 'documents.py', 'telegram.py']",['3d23313369681029502f47bf061f4ea9d53d4f0c'],2,12,14,3,0.0,1.0,1.0
+434d98dfa5ab8e4bb85b1b0c5c52fd5637db1499,infr: moved to ruff and poetry; updated changelog; logo is backl; updated workflows,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 14:45:47+03:00,-10800,2024-01-08 14:45:47+03:00,-10800,True,False,"['check.yml', 'deploy.yml', '.gitignore', 'CHANGELOG.md', 'CONTRIBUTORS.md', 'Makefile', 'README.md', 'kutana-logo-512.png', 'kutana-logo-dark-512.png', 'poetry.lock', 'pyproject.toml', 'pytest.ini', 'requirements.txt', 'setup.cfg', 'setup.py', 'tox.ini']",['336c9dc7e3584ae72ecd13a665498b7da4e396a1'],127,1162,1289,16,,,
+48fe84e638bdf6eef2086aac9b7fc47c56414485,refactor: applied ruff's formatting and fixed linting issues,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 14:48:47+03:00,-10800,2024-01-08 14:48:47+03:00,-10800,True,False,"['__init__.py', '__main__.py', 'telegram.py', 'base.py', 'callback.py', 'extensions.py', 'longpoll.py', 'context.py', 'helpers.py', 'kutana.py', 'loaders.py', 'router.py', 'memory.py', 'mongodb.py', 'sqlite.py', 'update.py', '__init__.py', 'test_context.py', 'test_decorators.py', 'test_plugins_extensions.py', 'test_storages.py', 'test_telegram.py']",['434d98dfa5ab8e4bb85b1b0c5c52fd5637db1499'],107,256,363,22,0.25,0.7785714285714286,0.7571428571428571
+34dc7df9a3a9e8ed5ac3710c0583c637cd803466,fix(cicd): use bash for scripts; correct steps for publish,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 14:54:30+03:00,-10800,2024-01-08 14:54:30+03:00,-10800,True,False,"['check.yml', 'deploy.yml']",['48fe84e638bdf6eef2086aac9b7fc47c56414485'],13,12,25,2,,,
+c647af747c5bb877cd543e9debe979ecda1d91b9,fix(cicd): attempt to fix windows pipelines; improved deploy,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 15:22:39+03:00,-10800,2024-01-08 15:22:43+03:00,-10800,True,False,"['check.yml', 'deploy.yml']",['34dc7df9a3a9e8ed5ac3710c0583c637cd803466'],12,16,28,2,,,
+5b3942c0aec1a2d2c61c58b16307c49774afde5a,fix(cicd): proper Makefile content,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 15:29:25+03:00,-10800,2024-01-08 15:29:25+03:00,-10800,True,False,['Makefile'],['c647af747c5bb877cd543e9debe979ecda1d91b9'],2,2,4,1,,,
+f115ae5e0cdc15827f8e7c22a248b7fa4506ef49,fix(cicd): proper Makefile content (2),Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 15:33:15+03:00,-10800,2024-01-08 15:33:15+03:00,-10800,True,False,['Makefile'],['5b3942c0aec1a2d2c61c58b16307c49774afde5a'],3,1,4,1,,,
+6fd70ef4746e67ad692a5fbca260099b4ae9386c,fix(cicd): proper Makefile content (3),Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 15:56:01+03:00,-10800,2024-01-08 15:56:01+03:00,-10800,True,False,['Makefile'],['f115ae5e0cdc15827f8e7c22a248b7fa4506ef49'],8,8,16,1,,,
+a0f070834d8aeb0db3cd99bf8ba02139ade20e75,fix(cicd): proper Makefile content (4),Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 16:03:27+03:00,-10800,2024-01-08 16:03:27+03:00,-10800,True,False,['check.yml'],['6fd70ef4746e67ad692a5fbca260099b4ae9386c'],1,1,2,1,,,
+82cff317cc7327033e7a3dff87551098983c2cf4,fix(cicd): proper Makefile content (5),Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 16:15:36+03:00,-10800,2024-01-08 16:15:36+03:00,-10800,True,False,"['check.yml', 'Makefile']",['a0f070834d8aeb0db3cd99bf8ba02139ade20e75'],2,2,4,2,,,
+0d8919bca6d6adab279b23ed4493f36efc1fc1be,fix(cicd): proper Makefile content (6),Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 16:18:13+03:00,-10800,2024-01-08 16:18:13+03:00,-10800,True,False,['Makefile'],['82cff317cc7327033e7a3dff87551098983c2cf4'],1,1,2,1,,,
+3127adfb506d93ac163d5b7f1a11139fd53cf3d3,fix(cicd): proper Makefile content (7),Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 16:27:54+03:00,-10800,2024-01-08 16:27:54+03:00,-10800,True,False,"['check.yml', 'deploy.yml', 'Makefile']",['0d8919bca6d6adab279b23ed4493f36efc1fc1be'],2,6,8,3,,,
+d79034ed05599994a5f4691aa0bbf58d11e61deb,fix(cicd): proper Makefile content (8),Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 16:42:53+03:00,-10800,2024-01-08 16:42:53+03:00,-10800,True,False,"['check.yml', 'deploy.yml']",['3127adfb506d93ac163d5b7f1a11139fd53cf3d3'],4,0,4,2,,,
+4fc87d7c338442c8ab0b7c5f3106ce21cec41bda,feat: drop support for windows (just removed tests),Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-08 16:46:33+03:00,-10800,2024-01-08 16:46:33+03:00,-10800,True,False,"['check.yml', 'Makefile']",['d79034ed05599994a5f4691aa0bbf58d11e61deb'],11,10,21,2,,,
+d31df9690109b7189cd30a4ee58a1105ea0839ad,fix(cicd): proper env for deployment,Michael Kryukov,mkrukov@bestplace.pro,Michael Kryukov,mkrukov@bestplace.pro,2024-01-10 00:06:22+03:00,-10800,2024-01-10 00:06:22+03:00,-10800,True,False,['deploy.yml'],['4fc87d7c338442c8ab0b7c5f3106ce21cec41bda'],2,2,4,1,,,

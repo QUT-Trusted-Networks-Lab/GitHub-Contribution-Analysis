@@ -1,0 +1,427 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+320518d2d36572341df56b16a2e87130b0177377,Initial commit,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-05-05 15:47:25+02:00,-7200,2020-05-07 21:15:21+02:00,-7200,True,False,"['config.yml', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', '.gitignore', '.pre-commit-config.yaml', 'LICENSE', 'Makefile', 'README.md', 'checkpointing.md', 'examples.md', 'mnist.py', 'nevergrad.md', 'plugins.md', 'structure.md', 'tips.md', 'mypy.ini', 'pyproject.toml', 'dev.txt', 'main.txt', 'setup.py', '__init__.py', '__init__.py', 'auto.py', 'test_auto.py', '__init__.py', '_submit.py', 'core.py', 'job_environment.py', 'logger.py', 'plugins.py', 'submission.py', 'test_core.py', 'test_plugins.py', 'test_utils.py', 'utils.py', 'helpers.py', '__init__.py', '_local.py', 'debug.py', 'local.py', 'test_debug.py', 'test_local.py', 'py.typed', '__init__.py', '_sbatch_test_record.txt', 'slurm.py', 'test_slurm.py', 'test_documentation.py', 'test_helpers.py']",[],0,5564,5564,49,0.5464104423495286,0.7864394488759971,0.7857142857142857
+8e0b27f4a1db42e75aa91e7eef7ea6fcb32fee54,add description,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-05-14 13:51:19+02:00,-7200,2020-05-14 13:57:34+02:00,-7200,True,False,['setup.py'],['320518d2d36572341df56b16a2e87130b0177377'],0,2,2,1,,,
+66138cf0938f8341f5aed05cd92d33ef944f55d6,add project_urls to setup.py,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-05-14 14:03:10+02:00,-7200,2020-05-14 14:03:10+02:00,-7200,True,False,['setup.py'],['8e0b27f4a1db42e75aa91e7eef7ea6fcb32fee54'],0,4,4,1,,,
+401dd3adc7d2924bd957b2be4c45fffac639e76e,Update README.md,Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2020-05-20 08:25:34+02:00,-7200,2020-05-20 08:25:34+02:00,-7200,True,False,['README.md'],['66138cf0938f8341f5aed05cd92d33ef944f55d6'],1,0,1,1,,,
+8b3f5f71d27bb4b93b44f7cb108a502bf621d2cd,Update README.md,Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2020-06-01 15:30:16+02:00,-7200,2020-06-01 15:30:16+02:00,-7200,True,False,['README.md'],['401dd3adc7d2924bd957b2be4c45fffac639e76e'],1,1,2,1,,,
+f5ef9fa239de4eb1a45a76c7b556dcf62542c77e,"Add support for retrieving the list of hostnames of the job in slurm (#1)
+
+* Add support for retrieving the list of hostnames of the jov in slurm
+
+* fix formatting errors and add missing type annotations
+
+* fixing pylint errors
+
+* Simplify the virtual dispatch to fetch the hostnames by overriding the property 'hostname'
+
+* Add missing contributor
+
+* Fix remarks on JobEnvironment: provide a reasonable default and use a more generic type
+
+* Fix review: Remove @staticmethod and replace by private methods",Quentin Duval,QuentinDuval@users.noreply.github.com,GitHub,noreply@github.com,2020-06-03 20:58:05+02:00,-7200,2020-06-03 20:58:05+02:00,-7200,True,False,"['README.md', 'job_environment.py', 'slurm.py', 'test_slurm.py']",['8b3f5f71d27bb4b93b44f7cb108a502bf621d2cd'],2,158,160,4,0.5348837209302325,0.8372093023255814,1.0
+d1d0ad6e2568c3d2279a3eb99f532e8e196a6743,Allow generic overrides,Jeremy Rapin,jrapin@fb.com,Jeremy Rapin,jrapin@fb.com,2020-06-16 19:50:14+02:00,-7200,2020-06-16 19:50:14+02:00,-7200,True,False,"['auto.py', 'test_auto.py']",['f5ef9fa239de4eb1a45a76c7b556dcf62542c77e'],4,10,14,2,0.6666666666666666,0.6666666666666666,1.0
+491199a13a3a6b40513e99c05bba3c59d724f8fe,simpler,Jeremy Rapin,jrapin@fb.com,Jeremy Rapin,jrapin@fb.com,2020-06-16 19:52:43+02:00,-7200,2020-06-16 19:52:43+02:00,-7200,True,False,['auto.py'],['d1d0ad6e2568c3d2279a3eb99f532e8e196a6743'],3,2,5,1,1.0,1.0,0.0
+988482b627183db758a52c95badf9b73b9ee7c0f,format,Jeremy Rapin,jrapin@fb.com,Jeremy Rapin,jrapin@fb.com,2020-06-16 20:32:22+02:00,-7200,2020-06-16 20:32:22+02:00,-7200,True,False,"['auto.py', 'test_auto.py']",['491199a13a3a6b40513e99c05bba3c59d724f8fe'],4,10,14,2,0.14285714285714285,0.14285714285714285,1.0
+63b3af71fad082bc43c241cb47fb347402c74ba0,"Fix: Node list suffix parsing removes leading zeros (#4)
+
+* Fix: Node list suffix parsing removes leading zeros
+
+* The .hostnames property in slurm job environment currently casts
+the suffix ids to integers to expand the ranges. However, this
+strips the leading zeros and returns invalid hostnames. This
+commit fixes this
+
+* Added a couple of tests to check for this as well
+
+* Fix format error",Jose Javier,josejavier.gonzalez.ortiz@gmail.com,GitHub,noreply@github.com,2020-06-17 04:47:33-04:00,14400,2020-06-17 10:47:33+02:00,-7200,True,False,"['slurm.py', 'test_slurm.py']",['f5ef9fa239de4eb1a45a76c7b556dcf62542c77e'],1,6,7,2,0.2,1.0,1.0
+22d5a6a5910900a36d457ef48996c9cc36a0cb5d,"Warn instead of raising error when executor.batch() empty (#8)
+
+* Warn instead of raising error when executor.batch() empty
+
+* Take @jrapin's comments into account and fix test
+
+* Fix formatting and use correct pytest syntax
+
+* Fix format to make circleci happy
+
+* Fix annoying ""make check_format""",Louis Martin,louismartincs@gmail.com,GitHub,noreply@github.com,2020-06-29 16:13:17+02:00,-7200,2020-06-29 16:13:17+02:00,-7200,True,False,"['core.py', 'test_core.py']",['63b3af71fad082bc43c241cb47fb347402c74ba0'],2,5,7,2,0.0,0.0,1.0
+04494d1ba80be40560d2b5192c2f0f2c2f5fb4b0,Add SUBMITIT_EXECUTOR variable for env detection (#7),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2020-07-03 11:25:27+02:00,-7200,2020-07-03 11:25:27+02:00,-7200,True,False,"['job_environment.py', 'test_plugins.py', 'local.py', '_sbatch_test_record.txt', 'slurm.py', 'test_slurm.py']",['4906064392493ddcb6fa19f79b726518264825b0'],14,14,28,6,0.0,0.0,0.0
+8e5421693dd56a0eb4dff206701578b5ce2a8a14,release new version,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-08-25 18:09:35+02:00,-7200,2020-08-25 18:09:35+02:00,-7200,True,False,['__init__.py'],['04494d1ba80be40560d2b5192c2f0f2c2f5fb4b0'],1,1,2,1,,,
+9b90185538036f7279eb93b0b161082ee7a42cab,Fix linter and isort (#15),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2020-08-25 21:58:40+02:00,-7200,2020-08-25 21:58:40+02:00,-7200,True,False,"['Makefile', 'mnist.py', 'utils.py', 'slurm.py']",['8e5421693dd56a0eb4dff206701578b5ce2a8a14'],5,6,11,4,,,
+ca25f9e6c0684b7d3d714ba9997f05bc07c532db,"bump isort version to 5
+
+* remove -rc flag (now default behavior)
+* add float_to_top=true (to keep old behavior)
+* bump pylint to 2.6 for compatibility",Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-08-26 10:42:05+02:00,-7200,2020-08-26 11:02:50+02:00,-7200,True,False,"['Makefile', 'pyproject.toml', 'dev.txt', '__init__.py', 'plugins.py']",['9b90185538036f7279eb93b0b161082ee7a42cab'],11,12,23,5,,,
+89fbe3144fa5ad3674178ecba8fd53da21f072ca,add conda as install method and badges,Roberto Panai,robertopanai@sardus.it,gwenzek,gwenzek@users.noreply.github.com,2020-08-27 08:15:17-04:00,14400,2020-09-03 17:35:59+02:00,-7200,True,False,['README.md'],['ca25f9e6c0684b7d3d714ba9997f05bc07c532db'],2,6,8,1,,,
+63bc28c1b9158d41f0e75a2b7598206ab160558d,pin isort version,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-09-24 15:32:19+02:00,-7200,2020-09-24 15:32:19+02:00,-7200,True,False,"['pyproject.toml', 'dev.txt']",['89fbe3144fa5ad3674178ecba8fd53da21f072ca'],5,2,7,2,,,
+265d47c8a8b550ee87f9faad2bc61b1f7a6a27ff,"Force utf8 encoding in setup (#26)
+
+Force utf8 encoding in setup (#26)
+Co-authored-by: Jeremy Rapin <jrapin@fb.com>",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2020-09-24 15:35:31+02:00,-7200,2020-09-24 15:35:31+02:00,-7200,True,False,['setup.py'],['63bc28c1b9158d41f0e75a2b7598206ab160558d'],1,1,2,1,,,
+e6fc6b2532a2ea480f08747816f14c53f526ef04,"Add `mem-per-gpu` and `mem-per-cpu` options (#22)
+
+* Add `mem-per-gpu` and `mem-per-cpu` options
+* Fix default value check and make new test record
+
+Signed-off-by: Max Ehrlich <max.ehr@gmail.com>",Max Ehrlich,max.ehr@gmail.com,GitHub,noreply@github.com,2020-09-24 09:38:39-04:00,14400,2020-09-24 15:38:39+02:00,-7200,True,False,"['_sbatch_test_record.txt', 'slurm.py', 'test_slurm.py']",['265d47c8a8b550ee87f9faad2bc61b1f7a6a27ff'],5,4,9,3,0.0,0.0,0.0
+e6b29fdc7a33f220e6ec8086cbc41a76595cbe44,bump black version,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-09-24 16:59:35+02:00,-7200,2020-09-24 17:02:18+02:00,-7200,True,False,['dev.txt'],['e6fc6b2532a2ea480f08747816f14c53f526ef04'],1,1,2,1,,,
+3aa45cfb0b3918e87ffc919852e5f16e12990a0b,"upgrade to isort 5.5.3
+
+disable float_to_top, because it knows want to remove the empty line between
+the header and the first import.
+Also people generally know to not put import in the middle of a file.",Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-09-24 17:37:06+02:00,-7200,2020-09-24 17:37:06+02:00,-7200,True,False,"['pyproject.toml', 'dev.txt']",['e6b29fdc7a33f220e6ec8086cbc41a76595cbe44'],2,2,4,2,,,
+4d096f4f0493a3253b263ac792d7b7ae6021a841,add failing test for weakref,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-10-02 17:01:32+02:00,-7200,2020-10-02 17:01:32+02:00,-7200,True,False,['test_pickle.py'],['3aa45cfb0b3918e87ffc919852e5f16e12990a0b'],0,33,33,1,1.0,1.0,1.0
+218ffa4fea1a7df15f4d5f2a23fed893b18f31f1,fix DebugJobEnvironment,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-10-13 10:19:22+02:00,-7200,2020-10-13 10:32:15+02:00,-7200,True,False,"['__init__.py', 'debug.py', 'test_debug.py', 'test_pickle.py']",['4d096f4f0493a3253b263ac792d7b7ae6021a841'],5,32,37,4,1.0,1.0,1.0
+fc7020884fc2c77676984dd343db025d5a251979,"Move all dumps to cloudpickle (#30)
+
+* Move all dumps to cloudpickle
+
+Co-authored-by: Jeremy Rapin <jrapin@fb.com>",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2020-10-22 10:59:26+02:00,-7200,2020-10-22 10:59:26+02:00,-7200,True,False,"['submission.py', 'test_core.py', 'utils.py', 'test_local.py']",['218ffa4fea1a7df15f4d5f2a23fed893b18f31f1'],9,13,22,4,1.0,1.0,1.0
+e37fcf219e7aac0914a73f2642ada7a6d6c091c4,"add release to Makefile
+
+release 1.1.3",Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-10-22 12:07:12+02:00,-7200,2020-10-22 12:42:20+02:00,-7200,True,False,"['Makefile', '__init__.py']",['fc7020884fc2c77676984dd343db025d5a251979'],2,9,11,2,,,
+8c18305f03e9d6e92088e5224f14ebd71b1f70b5,"in debug mode, enter postmorterm when job fails",Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-11-06 09:46:22+01:00,-3600,2020-11-06 14:18:29+01:00,-3600,True,False,"['mypy.ini', 'debug.py']",['e37fcf219e7aac0914a73f2642ada7a6d6c091c4'],1,14,15,2,0.0,1.0,1.0
+ee67ad3ef58f75f69df241fecef1f4472863445a,"[Proposition] Replace JobPlaceHolder by unintialized job (#32)
+
+Co-authored-by: Jeremy Rapin <jrapin@fb.com>",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2020-11-09 21:23:23+01:00,-3600,2020-11-09 21:23:23+01:00,-3600,True,False,"['core.py', 'test_core.py']",['e37fcf219e7aac0914a73f2642ada7a6d6c091c4'],34,8,42,2,0.0,0.0,0.3076923076923077
+aa011b07805fab41ff4da522636631b31a3a24a8,"Register jobs which are unpickled (#31)
+
+* jobpickleregistration
+
+* order
+
+* upd
+
+* group
+
+* use original_job_id = job._job_id
+
+Co-authored-by: Jeremy Rapin <jrapin@fb.com>
+Co-authored-by: gwenzek <gwenzek@users.noreply.github.com>",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2020-11-09 21:23:59+01:00,-3600,2020-11-09 21:23:59+01:00,-3600,True,False,"['core.py', 'test_core.py']",['ee67ad3ef58f75f69df241fecef1f4472863445a'],2,27,29,2,1.0,1.0,1.0
+b8c72df8671ea86cf5fed1c7cbf7f67175c3ea17,add failing test related to #11,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-11-26 10:58:55+01:00,-3600,2020-11-26 10:58:55+01:00,-3600,True,False,"['Makefile', '__init__.py', 'helpers.py', 'test_pickle.py']",['abf1993cef94b84c480fc0d7dc7676700996e700'],4,44,48,4,1.0,1.0,1.0
+932fecd83e5cfc86441d0e397f9e930974764165,"Solve batch issue with auto executor (#38)
+
+* Solve batch issue with auto executor
+
+* black
+
+* Version bump
+
+Co-authored-by: Jeremy Rapin <jrapin@fb.com>",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2020-12-01 09:02:08+01:00,-3600,2020-12-01 09:02:08+01:00,-3600,True,False,"['__init__.py', 'auto.py', 'test_auto.py', 'core.py']",['b8c72df8671ea86cf5fed1c7cbf7f67175c3ea17'],5,22,27,4,0.6428571428571429,0.6428571428571429,0.7857142857142857
+f76c6635f7d7f705a5f7340461bd250f35ae08c0,"Try to fix #11 by using absolute import in _submit.py
+
+Also add missing copyrightheader",Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2020-12-04 14:12:27+01:00,-3600,2020-12-04 14:12:27+01:00,-3600,True,False,"['_submit.py', 'test_pickle.py']",['932fecd83e5cfc86441d0e397f9e930974764165'],1,7,8,2,,,
+a64ecec5ba84c31a340816d9d1a070aa39e15a79,Fix typo in DebugExecutor import,Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-01-07 15:08:37+01:00,-3600,2021-01-07 15:08:37+01:00,-3600,True,False,['__init__.py'],['f76c6635f7d7f705a5f7340461bd250f35ae08c0'],1,2,3,1,,,
+593046019f3425ebb067397cf19af5236b2ad73c,Removing because not really needed and linter complained,Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-01-07 15:11:52+01:00,-3600,2021-01-07 15:11:52+01:00,-3600,True,False,['__init__.py'],['a64ecec5ba84c31a340816d9d1a070aa39e15a79'],1,0,1,1,,,
+25319d858d43ea534ce7a474bd0abe4981b4e159,"Adding SnapshotManager (#1598)
+
+* Adding SnapshotManager
+
+This allows users to create a snapshot of the current `git` repository
+and launch the job from this snapshot.  This can prevent jobs that
+are slow to start or requeued from picking up local changes
+
+* use rsync instead of explicitly iterating over files in python
+
+* addressing @gwenzek's comments
+
+* lint
+
+* adding rsync to Circle CI config
+
+* Check that rsync is installed in SnapshotManager and change cache keys
+
+* Install rsync in `test_coverage` job and lint...
+
+* f""--files-from={tfile.name}"" -> ""--files-from"", tfile.name
+
+* Change type of `exclude` from `Optional[List[str]]` to `Sequence[str]`
+
+* Rename SnapshotManager to RsyncSnapshot and move into helpers
+
+Also adding brief description in docs",Matt Le,lematt1991@gmail.com,GitHub,noreply@github.com,2021-01-15 06:45:31-05:00,18000,2021-01-15 12:45:31+01:00,-3600,True,False,"['config.yml', 'structure.md', 'helpers.py', 'test_helpers.py']",['2f784bae911cc1ce9112fb742499c5f55e239aa1'],1,93,94,4,1.0,1.0,0.7692307692307693
+d5e9b3f7d46713e1bef1f2be65021d8531c412ab,"add another rsync test
+
+introduces conftest.py for sharing fixtures among tests",Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-01-15 14:37:58+01:00,-3600,2021-01-15 14:38:46+01:00,-3600,True,False,"['conftest.py', 'helpers.py', 'test_helpers.py']",['25319d858d43ea534ce7a474bd0abe4981b4e159'],21,39,60,3,1.0,1.0,1.0
+ea4c5ae69af49dfcd331b9a5b2a371d7dfdbebea,cleanup test_utils.py,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-01-15 15:19:18+01:00,-3600,2021-01-15 15:44:31+01:00,-3600,True,False,['test_utils.py'],['d5e9b3f7d46713e1bef1f2be65021d8531c412ab'],49,25,74,1,0.0,0.0,0.0
+c95a54bea310414b3d12367efbde689e0a58b11a,remove package_conda_env code,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-01-15 15:34:48+01:00,-3600,2021-01-15 15:44:32+01:00,-3600,True,False,['utils.py'],['ea4c5ae69af49dfcd331b9a5b2a371d7dfdbebea'],47,0,47,1,0.6829268292682927,0.0,0.0
+a17c43a348ede63b788c225e5dcdb9b41060908e,upload coverage report to circleCI,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-01-15 15:44:12+01:00,-3600,2021-01-15 15:44:34+01:00,-3600,True,False,"['config.yml', 'Makefile']",['c95a54bea310414b3d12367efbde689e0a58b11a'],5,5,10,2,,,
+d6ff12aee11cd6dfeeff85f0b935165a00691d8e,add submit_array for submitting an list of checkpointable (#1591),gwenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2021-01-15 16:08:17+01:00,-3600,2021-01-15 16:08:17+01:00,-3600,True,False,"['core.py', 'test_debug.py', 'test_local.py']",['a17c43a348ede63b788c225e5dcdb9b41060908e'],2,67,69,3,0.4444444444444444,1.0,1.0
+0f9f919aea25ac877f5664498113c2e311570a5a,add missing copyright,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-01-26 21:47:06+01:00,-3600,2021-01-26 21:47:06+01:00,-3600,True,False,['conftest.py'],['d6ff12aee11cd6dfeeff85f0b935165a00691d8e'],0,6,6,1,,,
+36d09724c24ded8326889a9b5c1321bd9f2becd9,restrict test_documentation to two folders for faster test,Guillaume Wenzek,gwenzek@users.noreply.github.com,gwenzek,gwenzek@users.noreply.github.com,2021-01-25 22:01:37+01:00,-3600,2021-01-27 17:07:41+01:00,-3600,True,False,['test_documentation.py'],['0f9f919aea25ac877f5664498113c2e311570a5a'],37,32,69,1,0.0,0.0,0.0
+02cff897f9701624b0065ed7c7aece7fb2545913,add failing tests for #1600,Guillaume Wenzek,gwenzek@users.noreply.github.com,gwenzek,gwenzek@users.noreply.github.com,2021-01-26 16:48:15+01:00,-3600,2021-01-27 17:07:41+01:00,-3600,True,False,"['conftest.py', 'test_local.py', 'test_slurm.py']",['36d09724c24ded8326889a9b5c1321bd9f2becd9'],2,39,41,3,0.18181818181818182,1.0,1.0
+01eedd3ff2226189effac7e62f13597cc5180096,quote stdout and stderr before writing them in the sbatch file,Guillaume Wenzek,gwenzek@users.noreply.github.com,gwenzek,gwenzek@users.noreply.github.com,2021-01-26 16:00:05+01:00,-3600,2021-01-27 17:07:41+01:00,-3600,True,False,"['local.py', '_sbatch_test_record.txt', 'slurm.py']",['02cff897f9701624b0065ed7c7aece7fb2545913'],23,19,42,3,0.5,0.25,0.25
+142b2af4986ab957ae274e8e7bdbb9b4b4ca96b0,minor improvement to RsyncSnapshot,Guillaume Wenzek,gwenzek@users.noreply.github.com,gwenzek,gwenzek@users.noreply.github.com,2021-01-26 16:53:53+01:00,-3600,2021-01-27 17:07:41+01:00,-3600,True,False,['helpers.py'],['01eedd3ff2226189effac7e62f13597cc5180096'],3,3,6,1,,,
+417a015a537aa265c61ce18a283faadc466b4332,weird_dir -> weird_tmp_path,Guillaume Wenzek,gwenzek@users.noreply.github.com,gwenzek,gwenzek@users.noreply.github.com,2021-01-27 10:20:33+01:00,-3600,2021-01-27 17:07:41+01:00,-3600,True,False,"['conftest.py', 'test_local.py', 'test_slurm.py']",['142b2af4986ab957ae274e8e7bdbb9b4b4ca96b0'],8,8,16,3,,,
+8087c1395bb30e60e1cf7a98965e73030f42493a,Don't rely on signals for preemption/timeout detection. (#1603),gwenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2021-01-29 14:39:43+01:00,-3600,2021-01-29 14:39:43+01:00,-3600,True,False,"['conftest.py', 'core.py', 'job_environment.py', 'utils.py', 'slurm.py', 'test_slurm.py']",['417a015a537aa265c61ce18a283faadc466b4332'],28,156,184,6,0.6538461538461539,0.9871794871794872,0.9487179487179487
+eb8d652ef75068b5f7a85696319e55a5cc57fe94,"Load numpy first if available (#1604)
+
+Co-authored-by: Jeremy Rapin <jrapin@fb.com>",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-01-29 14:54:51+01:00,-3600,2021-01-29 14:54:51+01:00,-3600,True,False,['submission.py'],['8087c1395bb30e60e1cf7a98965e73030f42493a'],0,6,6,1,,,
+eb64127e14599d653e3868b9eee193a1ce9403a0,bump version to 1.2.0,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-01-29 15:01:13+01:00,-3600,2021-01-29 15:01:13+01:00,-3600,True,False,['__init__.py'],['eb8d652ef75068b5f7a85696319e55a5cc57fe94'],1,1,2,1,,,
+7ecf477327df4ebdf8d1a2f825b5e88ba97cbf53,"Fix links in pypi description (#1605)
+
+* Fix links in pypi description
+
+Co-authored-by: Jeremy Rapin <jrapin@fb.com>",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-02-01 17:47:28+01:00,-3600,2021-02-01 17:47:28+01:00,-3600,True,False,['setup.py'],['eb64127e14599d653e3868b9eee193a1ce9403a0'],1,30,31,1,1.0,1.0,1.0
+bf0a15df5d38daba98c4e7151a61036081ddb30d,"Ignore mem_gb=None in autoexec (#1607)
+
+* Ignore mem_gb=0 in autoexec
+
+* Ignore None
+
+* drop all None parameters
+
+Co-authored-by: Jeremy Rapin <jrapin@fb.com>
+Co-authored-by: gwenzek <gwenzek@users.noreply.github.com>",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-02-09 16:38:57+01:00,-3600,2021-02-09 16:38:57+01:00,-3600,True,False,"['auto.py', 'test_slurm.py']",['7ecf477327df4ebdf8d1a2f825b5e88ba97cbf53'],2,17,19,2,0.8888888888888888,0.8888888888888888,1.0
+de807ba7a65e78b59186b221fad0dc74bc2a66d3,release 1.2.1,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-02-10 12:19:06+01:00,-3600,2021-02-10 12:19:06+01:00,-3600,True,False,['__init__.py'],['bf0a15df5d38daba98c4e7151a61036081ddb30d'],1,1,2,1,,,
+6309444ff1c0f1c6eabe33eb8f86c11ad01aa2e2,"Trigger checkpointing on SIGTERM (#1615)
+
+* add integration script to test preemption
+
+* checkpoint on SIGTERM
+
+* remove SIGUSR1 from local executor
+
+* signal_delay_s is used for SIGTERM
+
+* log SIGUSR1 and SIGCONT
+
+* add NodeList to SlurmInfoWatcher
+
+* version 1.3.0",gwenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2021-03-18 14:40:22+01:00,-3600,2021-03-18 14:40:22+01:00,-3600,True,False,"['Makefile', 'preemption.py', '__init__.py', 'job_environment.py', 'local.py', '_sbatch_test_record.txt', 'slurm.py', 'test_slurm.py']",['de807ba7a65e78b59186b221fad0dc74bc2a66d3'],40,129,169,8,0.09090909090909091,1.0,0.6136363636363636
+6dbfa2c8eb3a2b1d9d5e1257abcd1aa333a9551a,"add stderr_to_stdout option (#1611)
+
+* add stderr_to_stdout option to update_parameters
+
+* proper testing for the slurm case
+
+* stderr_to_stdout shouldn't be passed to slurm !",gwenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2021-03-23 12:08:49+01:00,-3600,2021-03-23 12:08:49+01:00,-3600,True,False,"['Makefile', 'auto.py', 'test_auto.py', 'core.py', 'test_core.py', 'local.py', 'slurm.py', 'test_slurm.py']",['6309444ff1c0f1c6eabe33eb8f86c11ad01aa2e2'],37,104,141,8,0.7358490566037735,0.37735849056603776,1.0
+a559304fce4a0461a8352281f4a24a55dcfe4648,Add QOS parameter per #1610,sgbaird,45469701+sgbaird@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-03-17 02:38:14-06:00,21600,2021-03-23 17:43:49+01:00,-3600,True,False,['slurm.py'],['6dbfa2c8eb3a2b1d9d5e1257abcd1aa333a9551a'],0,1,1,1,0.0,0.0,0.0
+4a79584c1fd72d3a325ae597797115f67cac2463,"Fixing deadlock when command prints a lot to stderr (#1609)
+
+* Fixing deadlock when command prints a lot to stderr
+
+Currently, only stdout is read on the fly. If the stderr pipe fills up,
+then, the subprocess will deadlock when trying to write to stderr.
+As the parent process, only reads to stdout, and waits for the process
+to finish, this will never resolve. This uses instead the select
+function to find which file descriptor can be read from.
+
+* formatting
+
+* fixing test compatibility python3.6
+
+* refactoring to make linter happy
+
+* making type system happy
+
+* finally linter is happy
+
+* extra comments
+
+* use raw buffers
+
+* better implementation
+
+* make linter happy
+
+* use executor for test
+
+* specialize copy_streams code
+
+* work on unbuffered io
+
+Co-authored-by: Guillaume Wenzek <gwenzek@users.noreply.github.com>",Alexandre Défossez,adefossez@users.noreply.github.com,GitHub,noreply@github.com,2021-03-25 09:41:52+01:00,-3600,2021-03-25 09:41:52+01:00,-3600,True,False,"['test_utils.py', 'utils.py']",['a559304fce4a0461a8352281f4a24a55dcfe4648'],18,78,96,2,0.125,1.0,0.525
+2736b95476c36b2fd9f9ee40102ead03935abe4b,"Reuse sigusr1 for preemption and timeout (#1615 rollback) (#1618)
+
+This PR is a rollback of #1615 .
+SIGTERM is also used for OOM and by scancel. We can't use it for preemption. Fundamentally this make submitit requires the cluster to have preempt_send_user_signal",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-04-01 15:33:42+02:00,-7200,2021-04-01 15:33:42+02:00,-7200,True,False,"['__init__.py', 'job_environment.py', 'helpers.py', 'local.py', '_sbatch_test_record.txt', 'slurm.py', 'test_slurm.py']",['4a79584c1fd72d3a325ae597797115f67cac2463'],24,22,46,7,0.0,0.0,1.0
+c2d08bc3536c11dbd4bf6f42c8b1af68ffe6f37e,Add verbose_srun parameter for slurm (#1623),timlacroix,timothee.lax@gmail.com,GitHub,noreply@github.com,2021-05-12 10:39:16+02:00,-7200,2021-05-12 10:39:16+02:00,-7200,True,False,"['local.py', 'slurm.py']",['2736b95476c36b2fd9f9ee40102ead03935abe4b'],1,7,8,2,0.0,0.0,0.0
+51f950bb9240fddd65fe4d7c9c52a5fb7a9d6454,Fix typo (#1621),Pierre Andrews,pierre.andrews@gmail.com,GitHub,noreply@github.com,2021-05-12 10:39:52+02:00,-7200,2021-05-12 10:39:52+02:00,-7200,True,False,['core.py'],['c2d08bc3536c11dbd4bf6f42c8b1af68ffe6f37e'],1,1,2,1,,,
+48ad0ff9fc1159f7f7dd45f899381179c2d92187,fix env variable. add visible_gpus param for LocalExecutor,Timothee Lacroix,timothee.lax@gmail.com,Timothee Lacroix,timothee.lax@gmail.com,2021-06-03 13:49:21+00:00,0,2021-06-03 13:55:09+00:00,0,True,False,['local.py'],['51f950bb9240fddd65fe4d7c9c52a5fb7a9d6454'],3,17,20,1,0.0,0.0,1.0
+17e58ff4736acb6253c5e0933f239d48587b6aaf,Fix typo in example (#1629),Lyndon Duong,lyndond@users.noreply.github.com,GitHub,noreply@github.com,2021-06-04 13:01:38-04:00,14400,2021-06-04 19:01:38+02:00,-7200,True,False,['examples.md'],['51f950bb9240fddd65fe4d7c9c52a5fb7a9d6454'],1,1,2,1,,,
+8da0fc2ae63ec5cb1259fa1e0b1f23bb35011069,Update structure.md (#1626),Sterling Baird,45469701+sgbaird@users.noreply.github.com,GitHub,noreply@github.com,2021-06-04 11:05:15-06:00,21600,2021-06-04 19:05:15+02:00,-7200,True,False,['structure.md'],['17e58ff4736acb6253c5e0933f239d48587b6aaf'],1,1,2,1,,,
+7cff4791c2bfd57aa734b7df1d17a47f15bb58b3,"Asyncio methods for job (#1622)
+
+* typo
+
+* asyncio results for jobs
+
+* cleanup
+
+* add test for results_as_completed and remove the need for coroutine
+
+* typo doc
+
+* cleanup some code as per review
+
+* fix lint
+
+* format
+
+* make proxy object
+
+* rename to awaitable()
+
+* remove proxy extras",Pierre Andrews,pierre.andrews@gmail.com,GitHub,noreply@github.com,2021-06-11 16:53:33+02:00,-7200,2021-06-11 16:53:33+02:00,-7200,True,False,"['examples.md', 'dev.txt', 'core.py', 'test_async.py', 'slurm.py']",['8da0fc2ae63ec5cb1259fa1e0b1f23bb35011069'],1,147,148,5,0.7530864197530864,1.0,0.41975308641975306
+eb82cef281f6ffa7407b05960e9c8afa0ab9115e,Add stubs for pkg-resources (#1635),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-06-14 10:49:38+02:00,-7200,2021-06-14 10:49:38+02:00,-7200,True,False,['dev.txt'],['7cff4791c2bfd57aa734b7df1d17a47f15bb58b3'],0,1,1,1,,,
+bf9c20c99d151b246825decfbaf7c17eca96980f,"Numbers of small cleanup, improvements of Rsync (#1634)
+
+* allow fractional GB
+
+fixup! allow fractional GB
+
+* skip RsyncSnapshot tests when no rsync
+
+fixup! skip RsyncSnapshot tests when no rsync
+
+* refactor MockSlurm
+
+* move job state manipulation out of MockedSubprocess
+
+* add missing license header
+
+* call set_job_state from fake sbatch
+
+* use tmp dir in test_auto.py
+
+* add stdout/stderr to debug jobs
+
+* use dedicated log folder for integration test
+
+* use `git clone` in RsyncSnapshot
+
+* save os.environ before starting a debug job
+
+* add installable_pypi to test the full package publishing chain
+
+* fix lint issue
+
+* upgrade to black 21.4
+
+* black Pierre changes",gwenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2021-06-17 22:35:33+02:00,-7200,2021-06-17 22:35:33+02:00,-7200,True,False,"['.gitignore', 'Makefile', 'preemption.py', 'pyproject.toml', 'dev.txt', 'auto.py', 'test_auto.py', 'core.py', 'job_environment.py', 'test_core.py', 'utils.py', 'helpers.py', 'debug.py', 'local.py', 'slurm.py', 'test_slurm.py', 'test_helpers.py']",['eb82cef281f6ffa7407b05960e9c8afa0ab9115e'],204,346,550,17,0.7457627118644068,0.9661016949152542,1.0
+e4c3f03405a3db3ec3c4a92a788bc254e16eaa71,Fix lint (#1638),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-07-08 16:41:22+02:00,-7200,2021-07-08 16:41:22+02:00,-7200,True,False,"['auto.py', 'local.py']",['38c6dd994968578eea8c797aa814e73fd1e4c852'],2,2,4,2,,,
+60373618228e1b9f3cb7a593523a07ce203caf67,Ignore mypy issue in test (#1640),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-07-12 18:06:16+02:00,-7200,2021-07-12 18:06:16+02:00,-7200,True,False,['test_core.py'],['e4c3f03405a3db3ec3c4a92a788bc254e16eaa71'],1,1,2,1,,,
+55f53f9f3f72dc3934a9a6906b8b3c40f3fd7964,"make all defaults None, only write parameter when its not None (#1637)",timlacroix,timothee.lax@gmail.com,GitHub,noreply@github.com,2021-07-18 14:11:35+02:00,-7200,2021-07-18 14:11:35+02:00,-7200,True,False,['slurm.py'],['60373618228e1b9f3cb7a593523a07ce203caf67'],7,7,14,1,,,
+208198eed20ca77d609bf96b0e89a75bc4ba43eb,Make ntasks-per-node optional (#1644),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-08-16 11:03:00+02:00,-7200,2021-08-16 11:03:00+02:00,-7200,True,False,"['_sbatch_test_record.txt', 'slurm.py']",['55f53f9f3f72dc3934a9a6906b8b3c40f3fd7964'],2,1,3,2,,,
+6f9e1f67178b08b050576fe6bc02e4555568128a,"Add arbitrary slurm srun_args parameter (#1645)
+
+* add_srun_args
+
+* @jrapin's comments",timlacroix,timothee.lax@gmail.com,GitHub,noreply@github.com,2021-08-20 15:41:42+02:00,-7200,2021-08-20 15:41:42+02:00,-7200,True,False,"['_sbatch_test_record.txt', 'slurm.py', 'test_slurm.py']",['208198eed20ca77d609bf96b0e89a75bc4ba43eb'],6,10,16,3,0.0,0.25,0.25
+94855a4fec7524ca2f48e2916cb4ef09504e044c,Update docs to use branch main (#1646),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-09-07 19:37:37+02:00,-7200,2021-09-07 19:37:37+02:00,-7200,True,False,"['README.md', 'structure.md']",['6f9e1f67178b08b050576fe6bc02e4555568128a'],4,4,8,2,,,
+2c4a46c10fd08de09fa485a22f2c6a777f8f3620,Fix pylint issues (#1647),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-09-07 20:05:47+02:00,-7200,2021-09-07 20:05:47+02:00,-7200,True,False,"['core.py', 'helpers.py']",['94855a4fec7524ca2f48e2916cb4ef09504e044c'],2,5,7,2,0.0,0.0,1.0
+d85b7abf73d094dd11c4a89343afa88f8908b316,1.4.0,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-09-14 16:17:13+02:00,-7200,2021-09-14 16:17:13+02:00,-7200,True,False,['__init__.py'],['2c4a46c10fd08de09fa485a22f2c6a777f8f3620'],1,1,2,1,,,
+cef0288e2f1577682ec899ebf7a87014f2fa09d0,Add job paths to JobEnvironment (#1648),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-09-15 09:32:03+02:00,-7200,2021-09-15 09:32:03+02:00,-7200,True,False,"['job_environment.py', 'submission.py']",['d85b7abf73d094dd11c4a89343afa88f8908b316'],2,11,13,2,1.0,1.0,1.0
+3c2156869b3964f781be45d64a403473b6397c46,Add monitor jobs + test,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-23 02:14:31-07:00,25200,2021-09-23 02:14:31-07:00,25200,True,False,"['helpers.py', 'test_helpers.py']",['cef0288e2f1577682ec899ebf7a87014f2fa09d0'],1,104,105,2,0.4406779661016949,0.4406779661016949,0.13559322033898305
+3eb2c942bb14d13065694a3a3ab3095fa9e6c06c,apply black,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-23 02:24:15-07:00,25200,2021-09-23 02:24:15-07:00,25200,True,False,"['helpers.py', 'test_helpers.py']",['3c2156869b3964f781be45d64a403473b6397c46'],18,17,35,2,1.0,1.0,1.0
+68986d40a4936c2d910651365aa7a17a48edfa63,Lint and correct,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-23 02:42:27-07:00,25200,2021-09-23 02:42:27-07:00,25200,True,False,"['helpers.py', 'test_helpers.py']",['3eb2c942bb14d13065694a3a3ab3095fa9e6c06c'],6,3,9,2,0.0,0.0,0.5
+747a2f66f4ac4a747a213fa0155b22a5aa3e2dfd,Lint + correct,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-23 02:51:12-07:00,25200,2021-09-23 02:51:12-07:00,25200,True,False,"['helpers.py', 'test_helpers.py']",['68986d40a4936c2d910651365aa7a17a48edfa63'],4,7,11,2,0.0,0.0,0.0
+185dc06bf262543613945945851f60443d03fa3b,Improve printing of failed jobs,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-23 05:00:20-07:00,25200,2021-09-23 05:00:20-07:00,25200,True,False,"['helpers.py', 'test_helpers.py']",['747a2f66f4ac4a747a213fa0155b22a5aa3e2dfd'],3,3,6,2,,,
+73a70236552668dd5bbc7735132a57a5d2fca44d,Add logger line in core.py,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-23 06:16:48-07:00,25200,2021-09-23 06:16:48-07:00,25200,True,False,['core.py'],['185dc06bf262543613945945851f60443d03fa3b'],0,3,3,1,0.0,1.0,1.0
+f039a31103a9f866b07d5a253c80cd9db2d509bd,Apply black,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-23 06:20:12-07:00,25200,2021-09-23 06:20:12-07:00,25200,True,False,['core.py'],['73a70236552668dd5bbc7735132a57a5d2fca44d'],3,1,4,1,1.0,0.0,0.0
+d041aa263c7fca42f795930923414bddaa3d24ec,"Put default job.state to not refresh state, and add mode option to job.get_info but keep default at force",Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-23 07:41:56-07:00,25200,2021-09-23 07:41:56-07:00,25200,True,False,"['core.py', 'helpers.py', 'test_helpers.py']",['f039a31103a9f866b07d5a253c80cd9db2d509bd'],27,20,47,3,0.0,0.0,1.0
+bb035a22b97075001099819adc7900beb6ed2747,Lint + black,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-23 07:48:31-07:00,25200,2021-09-23 07:48:31-07:00,25200,True,False,"['helpers.py', 'debug.py', 'local.py', 'test_helpers.py']",['d041aa263c7fca42f795930923414bddaa3d24ec'],4,4,8,4,,,
+5d20ab152957a712baebf3ab8f6a40c5b40a688d,Black + lint,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-23 07:55:27-07:00,25200,2021-09-23 07:55:27-07:00,25200,True,False,"['debug.py', 'local.py']",['bb035a22b97075001099819adc7900beb6ed2747'],2,2,4,2,,,
+72eb4d2ef58edf54312a841c0a84f4f7c4319b9c,Modifying following feedback,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-24 02:41:09-07:00,25200,2021-09-24 02:41:09-07:00,25200,True,False,"['helpers.py', 'test_helpers.py']",['5d20ab152957a712baebf3ab8f6a40c5b40a688d'],28,16,44,2,1.0,1.0,0.0
+a82318ca6afcef7e492324f29451f666250e6481,Add return type,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-24 02:43:03-07:00,25200,2021-09-24 02:43:03-07:00,25200,True,False,['helpers.py'],['72eb4d2ef58edf54312a841c0a84f4f7c4319b9c'],1,3,4,1,0.0,0.0,1.0
+c66db66fc1a8f44c0cf861cde0f4b2286c7d491b,simplify monitor jobs,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-24 05:13:20-07:00,25200,2021-09-24 05:13:20-07:00,25200,True,False,['helpers.py'],['a82318ca6afcef7e492324f29451f666250e6481'],9,9,18,1,,,
+11d8f87f785669e8a01aa9773a107f9180a63b09,"Check installable as a wheel (#1651)
+
+* Check installable as a wheel
+
+Co-authored-by: Jeremy Rapin <jrapin@fb.com>",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-09-24 15:23:30+02:00,-7200,2021-09-24 15:23:30+02:00,-7200,True,False,"['Makefile', 'pyproject.toml', 'job_environment.py', 'utils.py', 'slurm.py']",['dac5c6b76a81401aa7d44a32357872ebf92b968a'],15,13,28,5,1.0,1.0,1.0
+c500e11ec301944738c1733cf2ba590b963a03b5,"Add line to sync state with monitor_jobs, mainly to avoid inconsistencies with .done()",Marc Szafraniec,mszafraniec@devfair0219.h2.fair,Marc Szafraniec,mszafraniec@devfair0219.h2.fair,2021-09-30 07:27:05-07:00,25200,2021-09-30 07:27:05-07:00,25200,True,False,['helpers.py'],['11d8f87f785669e8a01aa9773a107f9180a63b09'],0,2,2,1,0.0,0.0,1.0
+1d8de6cde3ebe6e232d92794509fcb9adf7b112c,move from setuptools to flit,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-11-30 12:16:21+01:00,-3600,2021-11-30 12:16:21+01:00,-3600,True,False,"['Makefile', 'pyproject.toml', 'setup.py', '__init__.py', 'test_documentation.py']",['b9830478a6f3f8e5626a12245a3a309c0c64fb02'],82,52,134,5,0.0,0.0,0.0
+0d8c6e04a2c0314478ecd8e7a157b842c2acb9c0,move url edit to a pre-release action,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-11-30 14:07:33+01:00,-3600,2021-11-30 14:07:33+01:00,-3600,True,False,"['Makefile', 'pyproject.toml', 'test_core.py', 'test_documentation.py', 'test_pickle.py']",['1d8de6cde3ebe6e232d92794509fcb9adf7b112c'],26,62,88,5,1.0,1.0,1.0
+ec95960b8f443f6f74534cb65d39b0099acf00ed,rm requirements.txt files,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-11-30 14:15:18+01:00,-3600,2021-11-30 14:15:18+01:00,-3600,True,False,"['dev.txt', 'main.txt']",['0d8c6e04a2c0314478ecd8e7a157b842c2acb9c0'],22,0,22,2,,,
+1d7b2271c72fd5b6b5b315db5272c5b74ad7a46b,fixup! move url edit to a pre-release action,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2021-11-30 14:24:17+01:00,-3600,2021-11-30 14:24:17+01:00,-3600,True,False,['Makefile'],['ec95960b8f443f6f74534cb65d39b0099acf00ed'],1,1,2,1,,,
+a6964336f8c6876068740fe55081c0b67f1d0155,Fix typing in documentation test (#1662),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2021-12-07 13:38:56+01:00,-3600,2021-12-07 13:38:56+01:00,-3600,True,False,['test_documentation.py'],['1d7b2271c72fd5b6b5b315db5272c5b74ad7a46b'],4,4,8,1,,,
+e37899bce0c7c58e3cc46ecb5b7fa8ce941fc3d7,Add account parameter of slurm (#1664),Anirudh Thatipelli,thatipellianirudh@gmail.com,GitHub,noreply@github.com,2021-12-09 17:20:36+05:30,-19800,2021-12-09 12:50:36+01:00,-3600,True,False,['slurm.py'],['a6964336f8c6876068740fe55081c0b67f1d0155'],0,1,1,1,0.0,0.0,0.0
+ed42b267dd2c305cca93a48c33980c961b7fa305,Ignore mypy on signal (#1671),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2022-03-04 14:36:02+01:00,-3600,2022-03-04 14:36:02+01:00,-3600,True,False,['local.py'],['e37899bce0c7c58e3cc46ecb5b7fa8ce941fc3d7'],1,1,2,1,,,
+a4049cfb2e63422ecd62e8e9197ef87fc24237c3,Fix typos in map_array() docstring and contribution guide (#1670),Shashank Shekhar,10473376+sshkhr@users.noreply.github.com,GitHub,noreply@github.com,2022-03-04 05:36:46-08:00,28800,2022-03-04 14:36:46+01:00,-3600,True,False,"['CONTRIBUTING.md', 'core.py']",['ed42b267dd2c305cca93a48c33980c961b7fa305'],2,2,4,2,,,
+29e2d2b24a752a8d21fef97efd148d4d1ce57f1c,Fix pandas slicing key error (#1669),mbchang,mbchang@users.noreply.github.com,GitHub,noreply@github.com,2022-03-04 05:39:07-08:00,28800,2022-03-04 14:39:07+01:00,-3600,True,False,['mnist.py'],['a4049cfb2e63422ecd62e8e9197ef87fc24237c3'],0,1,1,1,0.0,1.0,0.0
+295f628a1889f45dae007db020cdc18628591921,Use try/finally in context manager (#1672),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2022-03-14 12:24:44+01:00,-3600,2022-03-14 12:24:44+01:00,-3600,True,False,['utils.py'],['29e2d2b24a752a8d21fef97efd148d4d1ce57f1c'],4,6,10,1,1.0,1.0,1.0
+e39f3594d35708902124296892bc185649206440,"Fix DebugExecutor (#1673)
+
+* release 1.4.1 using flit
+
+* fix DebugExecutor
+
+* version bump",Guillaume Wenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2022-03-31 09:41:21+02:00,-7200,2022-03-31 09:41:21+02:00,-7200,True,False,"['Makefile', '__init__.py', 'debug.py']",['295f628a1889f45dae007db020cdc18628591921'],7,13,20,3,0.6666666666666666,1.0,1.0
+a42fc5cda35d0a035927d260b5001553110b1a13,"Add %a and %A options in slurm directory names (#1674)
+
+* Add %a and %A options in slurm directory names
+
+* add test_jobpaths
+
+Co-authored-by: Marc Szafraniec <mszafraniec@devfair0219.h2.fair>
+Co-authored-by: Guillaume Wenzek <gwenzek@users.noreply.github.com>",MarcSzafraniec,mszafraniec@fb.com,GitHub,noreply@github.com,2022-03-31 10:45:41+02:00,-7200,2022-03-31 10:45:41+02:00,-7200,True,False,"['Makefile', 'pyproject.toml', 'core.py', 'job_environment.py', 'test_utils.py', 'utils.py', 'test_slurm.py']",['e39f3594d35708902124296892bc185649206440'],13,31,44,7,1.0,1.0,1.0
+d1032862f1aee6ae57315b5c5618a5e0ccd91581,Prevent 0 task per node (#1652),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2022-03-31 12:52:29+02:00,-7200,2022-03-31 12:52:29+02:00,-7200,True,False,['slurm.py'],['a42fc5cda35d0a035927d260b5001553110b1a13'],1,1,2,1,,,
+f6a37a1096fb89f9a521afadf43b61cc007d8d83,"Improve monitor jobs with formatting and callable (#1675)
+
+* Improve monitor jobs with formatting and callable
+
+* Lint helpers
+
+* Renaming variables to match better with as_completed
+
+Co-authored-by: Marc Szafraniec <mszafraniec@devfair0219.h2.fair>",MarcSzafraniec,mszafraniec@fb.com,GitHub,noreply@github.com,2022-04-01 13:57:38+02:00,-7200,2022-04-01 13:57:38+02:00,-7200,True,False,['helpers.py'],['d1032862f1aee6ae57315b5c5618a5e0ccd91581'],20,35,55,1,1.0,1.0,0.0
+71c0a42cf69c7c44784dc4050cec9563845e7fab,"Escape all sbatch arguments (#1678)
+
+* escape all arguments before calling sbatch
+
+fix #1658
+
+* fix submission file for job arrays
+
+* _shlex.join
+
+* command is already escaped",Guillaume Wenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2022-04-07 22:35:14+02:00,-7200,2022-04-07 22:35:14+02:00,-7200,True,False,"['test_utils.py', 'utils.py', '_sbatch_test_record.txt', 'slurm.py', 'test_slurm.py']",['f6a37a1096fb89f9a521afadf43b61cc007d8d83'],40,31,71,5,0.6666666666666666,0.6666666666666666,1.0
+124654fd18b4a616e641da699a2ed17ee61a7b60,"Intermediate submission (#1676)
+
+* Add option to submit within a batch context
+
+* use DelayedJob inside the `batch` context
+
+* make submission time more explicit in testing
+
+Co-authored-by: Jeremy Rapin <jrapin@fb.com>",Guillaume Wenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2022-04-07 22:41:18+02:00,-7200,2022-04-07 22:41:18+02:00,-7200,True,False,"['Makefile', 'core.py', 'test_async.py', 'test_core.py']",['71c0a42cf69c7c44784dc4050cec9563845e7fab'],19,102,121,4,0.5818181818181818,1.0,1.0
+80566ace74f5792f5cdab007f55d20a3bac15552,use poll instead of select (#1686),timlacroix,timothee.lax@gmail.com,GitHub,noreply@github.com,2022-05-04 11:54:48+02:00,-7200,2022-05-04 11:54:48+02:00,-7200,True,False,['utils.py'],['124654fd18b4a616e641da699a2ed17ee61a7b60'],4,7,11,1,0.0,0.0,0.0
+bcf4296d8962a654c8faedcc70739e6a751f9dd3,"Update nevergrad.md (#1683)
+
+thanks",Sam Grayson,sam@samgrayson.me,GitHub,noreply@github.com,2022-05-04 04:58:37-05:00,18000,2022-05-04 11:58:37+02:00,-7200,True,False,['nevergrad.md'],['80566ace74f5792f5cdab007f55d20a3bac15552'],1,1,2,1,,,
+dc0a24c4214165240bb26616ccc64870750bfbed,Add information for cluster config and preemption (#1680),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2022-05-04 12:02:39+02:00,-7200,2022-05-04 12:02:39+02:00,-7200,True,False,['checkpointing.md'],['bcf4296d8962a654c8faedcc70739e6a751f9dd3'],1,2,3,1,,,
+32d7d4ddf242c3e2e112b23cade07115a83035da,"`make integration` should also run `pip install --upgrade` (#1688)
+
+Signed-off-by: Guillaume Wenzek <gwenzek@users.noreply.github.com>",Guillaume Wenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2022-05-04 12:02:58+02:00,-7200,2022-05-04 12:02:58+02:00,-7200,True,False,['Makefile'],['dc0a24c4214165240bb26616ccc64870750bfbed'],1,6,7,1,,,
+2be1bb3bff6f872a4e0ef6f0d6322a7c28bfb9b5,make a git tag on `make release` (#1691),Guillaume Wenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2022-05-31 14:11:36+02:00,-7200,2022-05-31 14:11:36+02:00,-7200,True,False,"['Makefile', '__init__.py']",['32d7d4ddf242c3e2e112b23cade07115a83035da'],3,8,11,2,,,
+b8bacd5ce5d6e689a9b29b9c59c25d3bb33a619a,[NCCL Conflict] Use USR2 instead of USR1 (#1697),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2022-07-12 05:48:23+02:00,-7200,2022-07-12 05:48:23+02:00,-7200,True,False,"['job_environment.py', 'local.py', '_sbatch_test_record.txt', 'slurm.py', 'test_slurm.py']",['2be1bb3bff6f872a4e0ef6f0d6322a7c28bfb9b5'],13,33,46,5,0.75,1.0,1.0
+cc357acd90df9ec204c6c102ab0c6fa10e756fea,Use SIGHUP as default for preemption signal (#1701),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2022-07-13 16:35:21+02:00,-7200,2022-07-13 16:35:21+02:00,-7200,True,False,"['job_environment.py', 'local.py', '_sbatch_test_record.txt']",['b8bacd5ce5d6e689a9b29b9c59c25d3bb33a619a'],5,5,10,3,,,
+3f4538df6884d52cfa7e1e83c6ab8a5d3bc61ccf,"Revert to using USR2 (""cleaner"" option) (#1702)",Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2022-07-13 19:28:08+02:00,-7200,2022-07-13 19:28:08+02:00,-7200,True,False,"['pyproject.toml', '__init__.py', 'job_environment.py', 'test_core.py', 'debug.py', 'local.py', 'test_debug.py', 'test_local.py', '_sbatch_test_record.txt']",['cc357acd90df9ec204c6c102ab0c6fa10e756fea'],55,33,88,9,0.0,0.0,0.0
+e5ac282718122196e83facaebe7f123dde5158e8,"Add helper class to facilitate PyTorch distributed initialization (#1703)
+
+It is not as straightforward as it could be to initialize PyTorch distributed in a job scheduled with submitit. These changes introduce a helper class that maps the relevant job environment properties and export them as environment variables to easily setup PyTorch distributed with the (default) env:// initialization method.
+
+Tested on a toy job (included as a complete example).",Patrick Labatut,60359573+patricklabatut@users.noreply.github.com,GitHub,noreply@github.com,2022-07-20 10:41:10+02:00,-7200,2022-07-20 10:41:10+02:00,-7200,True,False,"['examples.md', 'torch_distributed.py', 'helpers.py']",['3f4538df6884d52cfa7e1e83c6ab8a5d3bc61ccf'],0,156,156,3,0.45652173913043476,1.0,1.0
+398f804cd0fccc57c23971f3183f94348f49af14,upgrade mypy,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2022-07-20 19:01:35+02:00,-7200,2022-07-20 19:01:35+02:00,-7200,True,False,"['mypy.ini', 'pyproject.toml']",['e5ac282718122196e83facaebe7f123dde5158e8'],7,8,15,2,,,
+21fa520a3ba9667bb325b896f104b7de8c782782,bump pylint,Guillaume Wenzek,gwenzek@users.noreply.github.com,Guillaume Wenzek,gwenzek@users.noreply.github.com,2022-07-20 19:11:19+02:00,-7200,2022-07-20 19:11:19+02:00,-7200,True,False,"['pyproject.toml', '__init__.py']",['398f804cd0fccc57c23971f3183f94348f49af14'],3,2,5,2,,,
+7c19440a096a9714cd8218f071f638f82b00fb93,Add a helper for temporary removing slurm and submitit env variables (#1699),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2022-08-02 14:49:46+02:00,-7200,2022-08-02 14:49:46+02:00,-7200,True,False,"['config.yml', 'pyproject.toml', 'test_core.py', 'utils.py', 'helpers.py', 'test_helpers.py']",['21fa520a3ba9667bb325b896f104b7de8c782782'],28,75,103,6,0.08695652173913043,0.8043478260869565,0.9565217391304348
+f446b6bf78682e265ece56fb59ed6a8f0297608b,Option to overwrite exported variables in TorchDistributedEnvironment (#1705),qasfb,36480216+qasfb@users.noreply.github.com,GitHub,noreply@github.com,2022-08-02 16:28:22+02:00,-7200,2022-08-02 16:28:22+02:00,-7200,True,False,['helpers.py'],['7c19440a096a9714cd8218f071f638f82b00fb93'],4,12,16,1,0.0,1.0,0.0
+10faf2448acf73267493de25ffeed004b6f5c42a,"Fix truncation of ""Executor"" in executor class name (#1693)",Tom McTiernan,tmct@users.noreply.github.com,GitHub,noreply@github.com,2022-08-23 16:20:05+01:00,-3600,2022-08-23 17:20:05+02:00,-7200,True,False,['core.py'],['f446b6bf78682e265ece56fb59ed6a8f0297608b'],1,1,2,1,,,
+f4ead42bb670f286d4e1a9ba3d93192a11ed046a,Skip unnecessary file checks (#1694),Tom McTiernan,tmct@users.noreply.github.com,GitHub,noreply@github.com,2022-08-23 16:21:37+01:00,-3600,2022-08-23 17:21:37+02:00,-7200,True,False,['submission.py'],['10faf2448acf73267493de25ffeed004b6f5c42a'],2,3,5,1,0.0,0.0,1.0
+96073e7d83dc96aad27c92f5f0865911627fabf0,Add missing copyright header,Lowik Chanussot,lowik@fb.com,Lowik Chanussot,lowik@fb.com,2022-09-22 00:00:06+02:00,-7200,2022-09-22 00:00:06+02:00,-7200,True,False,['torch_distributed.py'],['f4ead42bb670f286d4e1a9ba3d93192a11ed046a'],0,6,6,1,,,
+4cf1462d7216f9dcc530daeb703ce07c37cf9d72,Add a timeout to scontrol requeue + explicitely delete function before pickling (#1713),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2022-09-28 10:58:38+02:00,-7200,2022-09-28 10:58:38+02:00,-7200,True,False,"['submission.py', 'slurm.py']",['96073e7d83dc96aad27c92f5f0865911627fabf0'],2,5,7,2,0.0,0.0,1.0
+f834db5469326470f316bdd99d0199279ec5b9cd,Add singularity compatibility #1608 (#1729),Guillaume Wenzek,gwenzek@users.noreply.github.com,GitHub,noreply@github.com,2023-08-16 09:28:14+02:00,-7200,2023-08-16 09:28:14+02:00,-7200,True,False,['slurm.py'],['4cf1462d7216f9dcc530daeb703ce07c37cf9d72'],4,8,12,1,,,0.0
+109f7c7f098de6775397e2b84826d59101a29a9f,Add nodelist/mail params/dependency as first class slurm parameters (#1740),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-08-16 16:00:41+02:00,-7200,2023-08-16 16:00:41+02:00,-7200,True,False,"['preemption.py', 'slurm.py']",['f834db5469326470f316bdd99d0199279ec5b9cd'],3,10,13,2,0.0,0.3333333333333333,0.0
+85fc640e7d7ebe8fd9c1fa7a026fe4bd33a75270,Update version tag to 1.4.6 for release (#1743),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-09-21 10:30:08+02:00,-7200,2023-09-21 10:30:08+02:00,-7200,True,False,['__init__.py'],['109f7c7f098de6775397e2b84826d59101a29a9f'],1,1,2,1,,,
+71a431eda0d1b365c94aec78bb5bc9ecfcb2a0a5,Update mypy (and CI python version to 3.8) (#1747),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-10-04 13:25:22+02:00,-7200,2023-10-04 13:25:22+02:00,-7200,True,False,"['config.yml', 'README.md', 'pyproject.toml', 'job_environment.py', 'test_core.py', 'test_plugins.py', 'helpers.py', 'test_debug.py', 'test_local.py', 'slurm.py', 'test_slurm.py']",['85fc640e7d7ebe8fd9c1fa7a026fe4bd33a75270'],71,70,141,11,1.0,1.0,1.0
+0f7b12098f1dae105f6d0827a0387eeddab1b3dc,Update black and isort versions (#1749),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-10-05 10:39:02+02:00,-7200,2023-10-05 10:39:02+02:00,-7200,True,False,"['pyproject.toml', 'auto.py', 'test_core.py', 'debug.py', 'local.py', 'slurm.py']",['71a431eda0d1b365c94aec78bb5bc9ecfcb2a0a5'],10,3,13,6,,,
+83898f0a3d9d20a2d5efbc215a3e4d708701f3c4,Update pylint version (#1751),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-10-05 11:59:29+02:00,-7200,2023-10-05 11:59:29+02:00,-7200,True,False,['pyproject.toml'],['0f7b12098f1dae105f6d0827a0387eeddab1b3dc'],1,1,2,1,,,
+5fb1f6db507ed562f72a9a45b0c4a0218306c894,Enable python executable selection for local executor (#1750),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-10-05 14:25:51+02:00,-7200,2023-10-05 14:25:51+02:00,-7200,True,False,"['test_auto.py', 'local.py', 'slurm.py']",['83898f0a3d9d20a2d5efbc215a3e4d708701f3c4'],8,13,21,3,1.0,1.0,0.0
+ce400ffbf977cd0e4fbc1b8ad07e4a592a4abef2,Make local job instances picklable (#1746),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-10-05 14:36:43+02:00,-7200,2023-10-05 14:36:43+02:00,-7200,True,False,"['local.py', 'test_local.py']",['5fb1f6db507ed562f72a9a45b0c4a0218306c894'],25,62,87,2,0.6818181818181818,1.0,1.0
+c25dd60185b8738792237fe8e23853ea1a1e6fe6,Add an option for not using srun (#1745),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-10-05 14:49:21+02:00,-7200,2023-10-05 14:49:21+02:00,-7200,True,False,"['submission.py', 'helpers.py', 'slurm.py']",['ce400ffbf977cd0e4fbc1b8ad07e4a592a4abef2'],7,15,22,3,0.0,0.0,0.0
+e8600a2b9e9cbe05751ab433bbaba2ae960d8ac2,Update version to 1.5.0 (and drop support for Python 3.6 and 3.7) (#1752),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-10-05 14:53:35+02:00,-7200,2023-10-05 14:53:35+02:00,-7200,True,False,"['pyproject.toml', '__init__.py', 'debug.py']",['c25dd60185b8738792237fe8e23853ea1a1e6fe6'],4,3,7,3,,,
+c4c5dace53e72d9f4ab2f0b2650008c7e2a90e1c,Add optional setup step for local executor (#1754),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-11-09 18:15:53+01:00,-3600,2023-11-09 18:15:53+01:00,-3600,True,False,"['local.py', 'test_local.py']",['e8600a2b9e9cbe05751ab433bbaba2ae960d8ac2'],6,29,35,2,0.7058823529411765,1.0,0.7647058823529411
+07f21fa1234e34151874c00d80c345e215af4967,Bump version to 1.5.1 (#1755),Jérémy Rapin,jrapin.github@gmail.com,GitHub,noreply@github.com,2023-11-09 18:20:43+01:00,-3600,2023-11-09 18:20:43+01:00,-3600,True,False,['__init__.py'],['c4c5dace53e72d9f4ab2f0b2650008c7e2a90e1c'],1,1,2,1,,,

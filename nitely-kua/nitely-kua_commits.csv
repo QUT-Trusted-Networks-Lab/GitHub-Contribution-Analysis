@@ -1,0 +1,38 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+cec9bf481e09a7889a0d97543f7123c6b1405a47,Initial commit,nitely,ecastroborsani@gmail.com,nitely,ecastroborsani@gmail.com,2016-08-28 14:04:08-03:00,10800,2016-08-28 14:04:08-03:00,10800,True,False,"['.coveragerc', '.editorconfig', '.gitignore', '.travis.yml', 'CHANGELOG.md', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.md', 'benchmarks.py', 'Makefile', 'api.rst', 'changelog.rst', 'conf.py', 'index.rst', 'installation.rst', 'license.rst', 'make.bat', '__init__.py', 'routes.py', 'requirements.txt', 'requirements_dev.txt', 'runtests.py', 'setup.py', '__init__.py', 'tests_routes.py']",[],0,1659,1659,26,0.7911392405063291,0.7911392405063291,0.9050632911392406
+121553c9396b4107b047899fa64b8156e4f2266a,"Feature/badges (#1)
+
+* Badges
+
+* readthedocs build with pyt3.5
+
+* coverage omit benchmarks
+
+* Readme docs
+
+* moar tests",Esteban Castro Borsani,nitely@users.noreply.github.com,GitHub,noreply@github.com,2016-08-28 20:18:48+02:00,-7200,2016-08-28 20:18:48+02:00,-7200,True,False,"['.coveragerc', 'README.md', 'environment.yml', 'readthedocs.yml', 'tests_routes.py']",['cec9bf481e09a7889a0d97543f7123c6b1405a47'],3,74,77,5,1.0,1.0,1.0
+adbb796f6ff41f264781ccb63cb9ece6b91c9fd3,"Feature/wildcard (#3)
+
+* add operator any
+
+* public api
+
+* readme usage update
+
+* fix var precedence
+
+* type annotations
+
+* max_depth param
+
+* fix match multiple any-vars",Esteban Castro Borsani,nitely@users.noreply.github.com,GitHub,noreply@github.com,2017-07-04 07:36:44-03:00,10800,2017-07-04 07:36:44-03:00,10800,True,False,"['README.md', '__init__.py', 'routes.py', 'tests_routes.py']",['121553c9396b4107b047899fa64b8156e4f2266a'],61,232,293,4,0.045714285714285714,0.7428571428571429,0.8914285714285715
+eee96fc6ae941a7184d264ddf2835eade93da33f,bump version,nitely,ecastroborsani@gmail.com,nitely,ecastroborsani@gmail.com,2017-07-04 07:40:45-03:00,10800,2017-07-04 07:40:45-03:00,10800,True,False,"['CHANGELOG.md', '__init__.py']",['adbb796f6ff41f264781ccb63cb9ece6b91c9fd3'],1,8,9,2,,,
+178dbb3db22ae38f504c2a9a5b525749da91fbea,readme usage link,nitely,ecastroborsani@gmail.com,nitely,ecastroborsani@gmail.com,2017-07-04 07:52:43-03:00,10800,2017-07-04 07:52:43-03:00,10800,True,False,['README.md'],['eee96fc6ae941a7184d264ddf2835eade93da33f'],0,2,2,1,,,
+6ffc9d0426e87a34cf8c3f8e7aedac6d35e59cb6,"Prevents bundling 'tests' dir in wheels, etc. (#8)
+
+exclude tests from dist",Philip Horger,campadrenalin@gmail.com,Esteban Castro Borsani,ecastroborsani@gmail.com,2018-08-31 14:07:08-07:00,25200,2018-08-31 18:07:08-03:00,10800,True,False,['setup.py'],['178dbb3db22ae38f504c2a9a5b525749da91fbea'],1,1,2,1,,,
+305530d69bc400b801280b1faae6547bfb7f34ee,"Draft type stubs for kua (#10)
+
+* Draft type stubs for kua
+
+* Draft type stubs for kua",austinjp,austinjp@users.noreply.github.com,GitHub,noreply@github.com,2022-07-16 07:11:01+02:00,-7200,2022-07-15 22:11:01-07:00,25200,True,False,"['__init__.pyi', 'py.typed', 'routes.pyi', 'requirements.txt']",['6ffc9d0426e87a34cf8c3f8e7aedac6d35e59cb6'],0,25,25,4,,,

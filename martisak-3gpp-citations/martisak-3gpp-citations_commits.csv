@@ -1,0 +1,442 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+226503aabe84667cad6422eb2e581a440ed21004,Initial commit,Martin Isaksson,martin.isaksson@ericsson.com,Martin Isaksson,martin.isaksson@ericsson.com,2017-06-11 19:02:14+02:00,-7200,2017-06-11 19:02:14+02:00,-7200,True,False,"['3gpp-citations.py', 'README.md']",[],0,88,88,2,,,
+f6980deb6683b8416d72751f09edfcd59a220124,Parsing dates,Martin Isaksson,martin.isaksson@ericsson.com,Martin Isaksson,martin.isaksson@ericsson.com,2017-06-17 12:12:45+02:00,-7200,2017-06-17 12:12:45+02:00,-7200,True,False,"['3gpp-citations.py', '3gpp.bib', 'README.md']",['226503aabe84667cad6422eb2e581a440ed21004'],9,2670,2679,3,,,
+2935d2de0e66037fae704201e708c78fc948f2c7,"Changed a print-statement to be more Python 3 friendly, as suggested by @peremen",Martin Isaksson,martin.isaksson@ericsson.com,Martin Isaksson,martin.isaksson@ericsson.com,2017-12-03 21:41:15+01:00,-3600,2017-12-03 21:41:15+01:00,-3600,True,False,['3gpp-citations.py'],['f6980deb6683b8416d72751f09edfcd59a220124'],4,7,11,1,,,
+0292c91889edace94d82a70499e27b3d5608c3ea,Requirements,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2018-01-25 22:45:00+01:00,-3600,2018-01-25 22:45:00+01:00,-3600,True,False,['requirements.txt'],['2935d2de0e66037fae704201e708c78fc948f2c7'],0,10,10,1,,,
+4ac5902fe5620cad5267249525bd32adf9474736,38-series,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2018-01-25 22:45:29+01:00,-3600,2018-01-25 22:45:29+01:00,-3600,True,False,['3gpp_38-series.bib'],['0292c91889edace94d82a70499e27b3d5608c3ea'],0,494,494,1,,,
+10c7452141da7145eaaa819803b201aa2091d9b2,Fix deprectation warning,Martin Isaksson,martin.isaksson@ericsson.com,Martin Isaksson,martin.isaksson@ericsson.com,2019-01-11 16:25:16+01:00,-3600,2019-01-11 16:25:16+01:00,-3600,True,False,['3gpp-citations.py'],['2935d2de0e66037fae704201e708c78fc948f2c7'],1,1,2,1,,,
+ac581f8d68bb3191dd974d372326f1bd2247afdb,"Argparse, and xelatex option
+
+Now using argparse, which has the option `--xelatex` that adds `\-` in the URL.",Martin Isaksson,martin.isaksson@ericsson.com,Martin Isaksson,martin.isaksson@ericsson.com,2019-01-14 13:11:48+01:00,-3600,2019-01-14 13:11:48+01:00,-3600,True,False,"['3gpp-citations.py', 'README.md', 'requirements.txt']",['2414bab1ef14703eff74faafa192920b2de5acc1'],76,164,240,3,0.0,0.24,1.0
+ac10482aa82015b29234e1fe664242911a4955f5,Fix: Changes in requirements after security alert on request,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-01-16 09:14:03+01:00,-3600,2019-02-05 11:50:36+01:00,-3600,True,False,['requirements.txt'],['ac581f8d68bb3191dd974d372326f1bd2247afdb'],5,2,7,1,,,
+d4e037ae86ddfda7ca47d3e93d3822040eb08578,"Documentation: Add issue tracker badge in README
+
+Adding a shield (shields.io) for the number of open issues in Github
+to the README.md text.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 10:29:42+01:00,-3600,2019-02-05 11:50:51+01:00,-3600,True,False,['README.md'],['ac10482aa82015b29234e1fe664242911a4955f5'],0,2,2,1,,,
+b06135138ec23a753d3af6c2d4098927d5aae0f9,"Documentation: Add License badge
+
+Added LICENSE in #4, so now we're adding a badge for it. Because who doesn't
+like more badges?",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 10:37:25+01:00,-3600,2019-02-05 11:50:56+01:00,-3600,True,False,['README.md'],['d4e037ae86ddfda7ca47d3e93d3822040eb08578'],1,1,2,1,,,
+1834fbe52c1860ebc4cb8284663f4819996c2be3,"Create License
+
+Choosing MIT license to be permissive.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 10:35:32+01:00,-3600,2019-02-05 11:51:00+01:00,-3600,True,False,['LICENSE'],['b06135138ec23a753d3af6c2d4098927d5aae0f9'],0,21,21,1,,,
+a889aaa3961260b001b9cf22abe77c9f45e035f1,"Create .gitigore
+
+The .gitignore file is based on
+https://github.com/github/gitignore/blob/master/Python.gitignore",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 12:54:32+01:00,-3600,2019-02-05 12:54:32+01:00,-3600,True,False,['.gitignore'],['1834fbe52c1860ebc4cb8284663f4819996c2be3'],0,116,116,1,,,
+d7b27f0f94d4802954130a3f1a0c2f523d89a9d5,"Create Makefile
+
+This Makefile contains a test target so that one can run `make test`. There
+is a `init` target as well for installing dependencies.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 13:52:52+01:00,-3600,2019-02-05 13:52:52+01:00,-3600,True,False,['Makefile'],['a889aaa3961260b001b9cf22abe77c9f45e035f1'],0,7,7,1,,,
+4474a6818a146d28861d33656d3508c232d84823,"Refactor: Move output files to output directory
+
+The generated example .bib-files are moved to the `output` directory to keep
+the directory clean.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 13:55:50+01:00,-3600,2019-02-05 13:55:50+01:00,-3600,True,False,"['3gpp.bib', '3gpp_38-series.bib']",['d7b27f0f94d4802954130a3f1a0c2f523d89a9d5'],0,0,0,2,,,
+7a3c0be9519cdca53482dc6252c657a61499a2c4,"Create setup.py
+
+A stub setup.py is created in the root directory.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 13:57:49+01:00,-3600,2019-02-05 13:57:49+01:00,-3600,True,False,['setup.py'],['4474a6818a146d28861d33656d3508c232d84823'],0,16,16,1,,,
+96a4946fbb383279e18644a300fb06aba2950dee,"Refactor: Move Python files to module
+
+Moved `3gpp-citations.py` to `3gpp-citations` module directory and created
+empty `__init__.py`.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 13:58:59+01:00,-3600,2019-02-05 13:58:59+01:00,-3600,True,False,"['3gpp-citations.py', '__init__.py']",['7a3c0be9519cdca53482dc6252c657a61499a2c4'],0,0,0,2,,,
+d26aa581c15236f042338a2f0c10786afb8b4a94,"Add `data` to .gitignore
+
+The `data` directory contains input data, such as Excel exports from the
+3GPP-portal. We want to hide it from `git status`.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 14:00:24+01:00,-3600,2019-02-05 14:00:24+01:00,-3600,True,False,['.gitignore'],['96a4946fbb383279e18644a300fb06aba2950dee'],0,3,3,1,,,
+ab257dbd3f1e930a3c5432c796d284aec3b922cf,"Fix: Backport open to Python 2 in setup.py
+
+In setup.py, we open the `README.md` file for use as a long description,
+and we used a Python 3-way of opening the file. Importing `open` from `io`
+solves this problem.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 14:20:24+01:00,-3600,2019-02-05 14:20:24+01:00,-3600,True,False,['setup.py'],['d26aa581c15236f042338a2f0c10786afb8b4a94'],0,1,1,1,,,
+9c66ea5ce1e1a94072f4eb0f4d05ae21538c6a6c,"Refactor: Rename submodule
+
+Renaming submodule 3gpp-citations (not valid name) to standardcitations. To be
+able to use this as before (in order to have no changes in functionality) we add
+the `3gpp-citations` script.
+
+This affects `setup.py` slightly.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 15:35:24+01:00,-3600,2019-02-05 15:35:24+01:00,-3600,True,False,"['3gpp-citations', 'setup.py', '__init__.py', 'standardcitations.py']",['ab257dbd3f1e930a3c5432c796d284aec3b922cf'],2,9,11,4,,,
+be0661e71e75334f19264e81c36da4b69ca5d567,"Create MANIFEST.in
+
+MANIFEST.in tells Distutils what files to include in the source distribution,
+i.e. this file decides what gets included when running for example
+`python setup.py install sdist`.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-05 21:39:36+01:00,-3600,2019-02-05 21:39:36+01:00,-3600,True,False,['MANIFEST.in'],['9c66ea5ce1e1a94072f4eb0f4d05ae21538c6a6c'],0,2,2,1,,,
+2549cdde998eba5bfdfe0b806c28cf043cdd4503,"Enhancement: Add generated bib-files as examples
+
+This is a change in `setup.py` where we add the files to
+`setup(data_files=...)`. They will be installed with the package.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-06 19:03:25+01:00,-3600,2019-02-06 19:03:25+01:00,-3600,True,False,['setup.py'],['be0661e71e75334f19264e81c36da4b69ca5d567'],0,1,1,1,,,
+068c1f5fd05dbbe11e445cac05868737c737455b,"Refactor: Rename output to examples
+
+The directory containing .bib-files is renamed to examples, and all
+references to it are changed as well.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-06 19:09:03+01:00,-3600,2019-02-06 19:09:03+01:00,-3600,True,False,"['MANIFEST.in', '3gpp.bib', '3gpp_38-series.bib', 'setup.py']",['2549cdde998eba5bfdfe0b806c28cf043cdd4503'],2,3,5,4,,,
+0fdaa0fa237815a3ea037afc60aaca4ea17873d1,"Enhancement: Author information in setup.py
+
+Added my name and email in `setup()`.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-06 19:19:43+01:00,-3600,2019-02-06 19:19:43+01:00,-3600,True,False,['setup.py'],['068c1f5fd05dbbe11e445cac05868737c737455b'],0,2,2,1,,,
+6f910e6c17b6f2eaefd8dc7489003b6a516fe00f,"Enhancement: Prepare package for testing with py.test
+
+Include dependencies for py.test in requirements.txt and setup.py. Modification
+in Makefile to run tests.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-06 19:30:20+01:00,-3600,2019-02-06 19:30:20+01:00,-3600,True,False,"['Makefile', 'requirements.txt', 'setup.py']",['0fdaa0fa237815a3ea037afc60aaca4ea17873d1'],2,23,25,3,,,
+578b8726fc49b04c2c3d3b2097307ab5a6e580d3,"Fix: Upgrade pyyaml to 4.2b4
+
+This is a security fix regarding
+[CVE-2017-18342](https://nvd.nist.gov/vuln/detail/CVE-2017-18342). Fixed
+by upgrading ´pyyaml` to 4.2b4.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-06 19:46:02+01:00,-3600,2019-02-06 19:46:02+01:00,-3600,True,False,['requirements.txt'],['f89b38d2bab8bd803c3c8683c05c8c178b90a746'],1,1,2,1,,,
+d27e8c2b6cb1b6c5c895d6151d5fa62fab6b1c82,"Enhancement: Using Travis CI and Coveralls
+
+Create .travis.yml that runs testcases and uploads code coverage to Coveralls.
+At the same time, display a code coverage badge on the README.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-06 19:53:50+01:00,-3600,2019-02-06 19:53:50+01:00,-3600,True,False,"['.travis.yml', 'README.md']",['578b8726fc49b04c2c3d3b2097307ab5a6e580d3'],1,13,14,2,,,
+54a1bcda5c1476a15ce1b7e00dca3c794282e236,"Enhancement: Add placeholder test
+
+This is adding a test placeholder that only contains `pass`. This will
+allow py.test to exit with exitcode 0, which in turn will make Travis complete
+the that part of the build without issues.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-06 20:08:38+01:00,-3600,2019-02-06 20:08:38+01:00,-3600,True,False,['test_placeholder.py'],['d27e8c2b6cb1b6c5c895d6151d5fa62fab6b1c82'],0,2,2,1,1.0,1.0,1.0
+b83b900bc09a7a7989cec0b21545b7f598b3653a,"Fix: Long line in EPILOG
+
+The EPILOG constant contains an example bibtex entry that had a very long
+line. Adding line-break takes care of the PEP-8 issue that was found with
+py.test.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-06 20:13:15+01:00,-3600,2019-02-06 20:13:15+01:00,-3600,True,False,['standardcitations.py'],['54a1bcda5c1476a15ce1b7e00dca3c794282e236'],2,3,5,1,,,
+cb5c92c4d7eddb21ea9b1376b5458068482904ef,"Enhancement: Travis build badge on README
+
+Now proudly displaying build status on the README with a badge.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-06 20:25:49+01:00,-3600,2019-02-06 20:25:49+01:00,-3600,True,False,['README.md'],['b83b900bc09a7a7989cec0b21545b7f598b3653a'],1,1,2,1,,,
+6104a32cf8e84bbeed88845a8f9edacdc7a351df,"Documentation: Add WASP acknowledgment to README
+
+Add a small statement to the README that this work was supported by WASP.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-07 11:33:19+01:00,-3600,2019-02-07 11:39:04+01:00,-3600,True,False,['README.md'],['cb5c92c4d7eddb21ea9b1376b5458068482904ef'],0,6,6,1,,,
+521e69767956ac7715242c22eb026618081c2dba,"Documentation: Add Contribution guide
+
+Adding contribution guide as CONTRIBUTING.md with link from README.md. Adding
+also a link to Gitter IM which we intend to use as a community forum.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-07 16:28:27+01:00,-3600,2019-02-07 16:28:27+01:00,-3600,True,False,"['CONTRIBUTING.md', 'README.md']",['6104a32cf8e84bbeed88845a8f9edacdc7a351df'],1,51,52,2,,,
+e4f2187f253f0ad8fbb62e60c1a2d0a5e0ba528b,"Test: Adding test-cases for the parse_args function.
+
+The parse_args function is responsible for setting the input and output
+filenames as an option. There is also a flag for XeLaTeX. This commit
+adds three test cases.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-07 17:26:27+01:00,-3600,2019-02-07 17:26:27+01:00,-3600,True,False,['test_parse_args.py'],['6104a32cf8e84bbeed88845a8f9edacdc7a351df'],0,44,44,1,1.0,1.0,1.0
+613832e4a619a810e1508597507e9218e589d5e2,Documentation: Replace Refactoring tag with Refactor,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-07 17:42:03+01:00,-3600,2019-02-07 17:42:03+01:00,-3600,True,False,['CONTRIBUTING.md'],['d431fadbf7078bdcc96f88f533d7fb3bc745ba3e'],3,3,6,1,,,
+508eb17c293c3eedd2c7ebf17ca474205d84bc62,"Fix: Removed check if module is running as main program
+
+The check `if __name__ == '__main__'` is unnecessary when using a script
+as an entry point and only reduces code coverage. Hence we remove the check.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-07 17:52:02+01:00,-3600,2019-02-07 18:08:50+01:00,-3600,True,False,['standardcitations.py'],['613832e4a619a810e1508597507e9218e589d5e2'],8,0,8,1,,,
+b09548f797813dcc962e5f69d63bd504266e1d68,"Test: Add a test case with flipped input and output fields
+
+Make sure that the input and output files are read correctly
+even when they are entered in another order",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-08 09:18:40+01:00,-3600,2019-02-08 09:18:40+01:00,-3600,True,False,['test_parse_args.py'],['508eb17c293c3eedd2c7ebf17ca474205d84bc62'],1,15,16,1,1.0,1.0,1.0
+dc9eab5fe69ab33a5513944f25e8473f116ab44a,"Test: Align Makefile with Travis CI
+
+Align the command `make test` with the command run in Travis.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-08 09:21:22+01:00,-3600,2019-02-08 09:21:22+01:00,-3600,True,False,['Makefile'],['b09548f797813dcc962e5f69d63bd504266e1d68'],1,1,2,1,,,
+9def9255252fc0c64729ee247960e16b49e71ceb,"Test: Drop py.test in before_script.
+
+Py.test was running the coverage report twice, dropped the one in the
+before-script.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-08 09:21:53+01:00,-3600,2019-02-08 09:26:42+01:00,-3600,True,False,['.travis.yml'],['dc9eab5fe69ab33a5513944f25e8473f116ab44a'],1,0,1,1,,,
+39148e2329bbdbc666e375e3a4759ea8cf842843,"Test: Remove placeholder test
+
+The placeholder test was used to get around an exit-code 5 issue when there
+were not test cases. Now we have test-cases so this can be removed.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-08 09:24:33+01:00,-3600,2019-02-08 09:26:56+01:00,-3600,True,False,['test_placeholder.py'],['9def9255252fc0c64729ee247960e16b49e71ceb'],2,0,2,1,0.0,0.0,0.0
+af82e8227fb42cc2f21efa14ab7c3ef7b509de2b,"Refactor: Extract method for parsing row
+
+Extract method `parse_row` for parsing a row in the Excel sheet.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-08 09:32:28+01:00,-3600,2019-02-08 09:32:28+01:00,-3600,True,False,['standardcitations.py'],['39148e2329bbdbc666e375e3a4759ea8cf842843'],3,13,16,1,1.0,1.0,1.0
+9506e009837bb6a00ba4f9e1652aaa1f17c47eda,"Refactor: Rename variable
+
+Renamed `type` (reserved word) to `doctype`.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-08 09:34:16+01:00,-3600,2019-02-08 09:34:16+01:00,-3600,True,False,['standardcitations.py'],['af82e8227fb42cc2f21efa14ab7c3ef7b509de2b'],2,2,4,1,,,
+b219ee9f463426a5e528d36efc1b97dd64860e42,"Refactor: Extract method for formatting entry
+
+The function `format_entry(number, title, doctype, url)` was extracted. This
+function returns the formatted bibtex-entry as a dict.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-08 09:38:53+01:00,-3600,2019-02-08 10:02:51+01:00,-3600,True,False,['standardcitations.py'],['9506e009837bb6a00ba4f9e1652aaa1f17c47eda'],10,18,28,1,1.0,1.0,0.0
+166cb7ba12a587edc2ea5c48b2b35f1cc24cef96,"Test: Create test cases for format_entry
+
+We add test cases to verify the that entry
+ - type is `dict`
+ - ENTRYTYPE is `techreport`
+ - contains the expected information (from input)",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-08 14:05:03+01:00,-3600,2019-02-08 14:05:03+01:00,-3600,True,False,['test_format_entry.py'],['b219ee9f463426a5e528d36efc1b97dd64860e42'],0,77,77,1,1.0,1.0,1.0
+cadf87fc1685bb607183aaee68da289feb7dab76,"Documentation: Add Test tag to CONTRIBUTING.md
+
+We are using the Test tag to tag any commit that improves on test cases.
+We now add this to the documentation.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-08 14:08:05+01:00,-3600,2019-02-08 14:08:05+01:00,-3600,True,False,['CONTRIBUTING.md'],['166cb7ba12a587edc2ea5c48b2b35f1cc24cef96'],1,5,6,1,,,
+82e33e939db6e51ca689834611a099184a8bd936,"Refactor: Extract method for formatting url
+
+The url field is slightly different if the xelatex is used. In such
+case it inclides ""\-"".",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-09 00:01:44+01:00,-3600,2019-02-09 00:08:09+01:00,-3600,True,False,['standardcitations.py'],['cadf87fc1685bb607183aaee68da289feb7dab76'],6,17,23,1,1.0,1.0,1.0
+a601a033550bdb9bad41c2fac1d564ba9e2b1c4e,"Test: New tests for `format_url`.
+
+Adding tests for formatting of the url with or without xelatex, where we use
+`\-` to indicate hyphenation.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-09 00:14:02+01:00,-3600,2019-02-10 01:27:29+01:00,-3600,True,False,['test_format_url.py'],['82e33e939db6e51ca689834611a099184a8bd936'],0,33,33,1,1.0,1.0,1.0
+266de4cef7f5d93622abbef80e34ff43f1b71ab3,"Documentation: Added introduction
+
+The purpose was missing. Fixed!",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 00:56:32+01:00,-3600,2019-02-10 01:27:55+01:00,-3600,True,False,['README.md'],['a601a033550bdb9bad41c2fac1d564ba9e2b1c4e'],0,3,3,1,,,
+d3ed5f5a3923a097bd9b4dcf258fc3db65781bfc,"Refactor: Extract method parse_date
+
+We extract the method parse_date and rewrite it to actually parse the date.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 01:21:17+01:00,-3600,2019-02-10 01:27:55+01:00,-3600,True,False,['standardcitations.py'],['266de4cef7f5d93622abbef80e34ff43f1b71ab3'],5,21,26,1,1.0,1.0,1.0
+f445da7731d02dfa76a48b328e5aa30788b26e2e,"Test: Add test case for date_format
+
+The test is designed to test that the parsed date is correct, and that the
+output is string.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 01:22:44+01:00,-3600,2019-02-10 01:27:55+01:00,-3600,True,False,['test_parse_date.py'],['d3ed5f5a3923a097bd9b4dcf258fc3db65781bfc'],0,19,19,1,1.0,1.0,1.0
+e5fa0610ccab39ae1de3a9dbbd9cfcc6fcf44701,"Fix: Removed sys module
+
+sys was unused, removed.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 18:51:55+01:00,-3600,2019-02-10 18:51:55+01:00,-3600,True,False,['standardcitations.py'],['a17e3f0b35fa76e565d9673450b0e9dd1f496d18'],1,0,1,1,,,
+545e25ce522d34dd28668257fdb07318811f4259,"Refactor: Extract method get_bibdatabase
+
+Extracted method for creating an empty BibDatabase",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 18:55:40+01:00,-3600,2019-02-10 18:55:40+01:00,-3600,True,False,['standardcitations.py'],['e5fa0610ccab39ae1de3a9dbbd9cfcc6fcf44701'],2,12,14,1,1.0,1.0,1.0
+211995c886bce11f400733ec6f354598218cd5a8,"Test: Add test for get_bibdatabase
+
+Test that we can create an empty database of the correct type.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 19:00:59+01:00,-3600,2019-02-10 19:00:59+01:00,-3600,True,False,['test_get_bibdatabase.py'],['545e25ce522d34dd28668257fdb07318811f4259'],0,19,19,1,1.0,1.0,1.0
+d35d8390f49165c98f3ec9149069c05f48f63674,"Refactor: Extract method get_workbook
+
+We extract a method for opening the first sheet of a workbook.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 19:25:03+01:00,-3600,2019-02-10 19:25:03+01:00,-3600,True,False,['standardcitations.py'],['211995c886bce11f400733ec6f354598218cd5a8'],3,12,15,1,1.0,1.0,1.0
+a550baaac967bda27f24e9d61ed642c5091c3f32,"Test: Add test for get_workbook
+
+We add a test case for opening a workbook and returning the first sheet. We use
+an input file that is derived from an exported file from the 3gpp portal.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 19:26:26+01:00,-3600,2019-02-10 19:29:12+01:00,-3600,True,False,"['test_get_workbook.py', 'test_input.xlsx']",['d35d8390f49165c98f3ec9149069c05f48f63674'],0,17,17,2,1.0,1.0,1.0
+6fa110fac6025f58a8f52164296a7ee44c279bd6,"Test: Add testcase for the parse_row function
+
+Test the parse row function by reading the `test_input.xlsx` workbook
+and reading the first (real) row.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 19:45:16+01:00,-3600,2019-02-10 19:45:16+01:00,-3600,True,False,['test_parse_row.py'],['a550baaac967bda27f24e9d61ed642c5091c3f32'],0,23,23,1,1.0,1.0,1.0
+45a931cb1017129620cb1f864d81cf17e81d06b7,"Refactor: Rename variable `row` => `release_row`
+
+The name row was re-used from earlier, which made the code hard to read.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 20:14:49+01:00,-3600,2019-02-10 20:14:49+01:00,-3600,True,False,['standardcitations.py'],['6fa110fac6025f58a8f52164296a7ee44c279bd6'],3,4,7,1,0.0,0.0,1.0
+f517c60ce5ab30ffb4e3f9b747e859b682b007ae,"Refactor: Extract method get_entry
+
+Extract method for parsing an entire row and generating an entry.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 20:47:55+01:00,-3600,2019-02-10 20:47:55+01:00,-3600,True,False,['standardcitations.py'],['45a931cb1017129620cb1f864d81cf17e81d06b7'],36,45,81,1,0.0,1.0,1.0
+55fe092c0f120c6f1e8ffc6ae1493a6891d65e23,"Test: Add test case for get_entry
+
+The get_entry method is tested by reading the test data and reading
+the first real row. The test checks that the entry contains some
+expected information.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 20:48:30+01:00,-3600,2019-02-10 20:48:30+01:00,-3600,True,False,['test_get_entry.py'],['f517c60ce5ab30ffb4e3f9b747e859b682b007ae'],0,23,23,1,1.0,1.0,1.0
+c095c12f34349378120ee2fa9296ffc9fb8a3809,"Test: Add test case for reading empty row
+
+If the row in the Excel sheet is empty the get_entry function
+should return None",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 20:59:00+01:00,-3600,2019-02-10 20:59:00+01:00,-3600,True,False,['test_get_entry.py'],['55fe092c0f120c6f1e8ffc6ae1493a6891d65e23'],0,15,15,1,1.0,1.0,1.0
+3454dd90087e8df8aeadb93bba0244fa0e8529f6,"Refactor: Pull up/move method for creating workbook
+
+Since we call the `get_workbook` in each test case we lift this up to the
+`setup_module` function.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 21:02:18+01:00,-3600,2019-02-10 21:02:18+01:00,-3600,True,False,['test_get_entry.py'],['c095c12f34349378120ee2fa9296ffc9fb8a3809'],8,10,18,1,0.0,0.0,0.0
+ce84d87b8b257fa01e2e293a1d304f20bcc6ed52,"Refactor: Extract method `write_bibtex`
+
+Extract the method for writing the database to a file.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 22:03:44+01:00,-3600,2019-02-10 22:03:44+01:00,-3600,True,False,['standardcitations.py'],['3454dd90087e8df8aeadb93bba0244fa0e8529f6'],7,15,22,1,1.0,1.0,1.0
+100eb726f04370984fd31cae2457f7aa5d473603,"Test: Add test cases for `write_bibtex`
+
+We test that the output on stdput or to file matches the expected when
+reading from the `test_input.xlsx` file.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 22:57:06+01:00,-3600,2019-02-10 22:58:29+01:00,-3600,True,False,['test_write_bibtex.py'],['ce84d87b8b257fa01e2e293a1d304f20bcc6ed52'],0,62,62,1,1.0,1.0,1.0
+ffdb5c0b954bf1c56fbb2c7623aeeffb8d645520,"Refactor: Inline Temp
+
+Inlining number of rows (ws.max_row - 1).",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-10 23:15:39+01:00,-3600,2019-02-10 23:15:39+01:00,-3600,True,False,['standardcitations.py'],['100eb726f04370984fd31cae2457f7aa5d473603'],4,1,5,1,0.0,0.0,0.0
+e0a6e0008b08388cdce7f3f7e7fb523a6867d788,"Test: Add test for main function
+
+This test tests the entire pipeline in context. The tests check that
+the output file starts with the correct word and that there are three
+items in the file. Complete correctness is tested elsewhere.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 09:57:56+01:00,-3600,2019-02-11 09:57:56+01:00,-3600,True,False,['test_main.py'],['ffdb5c0b954bf1c56fbb2c7623aeeffb8d645520'],0,32,32,1,1.0,1.0,1.0
+84a321f78fb97f82a7873deea7b90e132cac4a0b,"Enhancement: Improve Makefile by adding clean targets.
+
+Add two targets, clean-build and clean-pyc. The first removes `build`,
+`dist` and `.egg`-files, and the second removes all `.pyc` and. `.pyo`.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 10:28:54+01:00,-3600,2019-02-11 10:28:54+01:00,-3600,True,False,['Makefile'],['e0a6e0008b08388cdce7f3f7e7fb523a6867d788'],2,11,13,1,,,
+1a45d3d0ebdcb55e305ab8f56d21958071d81755,"Enhancement: Add build target to Makefile
+
+Run `python setup.py sdist bdist_wheel` with `make build`",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 10:31:34+01:00,-3600,2019-02-11 10:31:34+01:00,-3600,True,False,['Makefile'],['84a321f78fb97f82a7873deea7b90e132cac4a0b'],0,3,3,1,,,
+c282622fcc3204ea5d067349f8a8d77f3648708a,"Fix: Changes in setup.py before PyPI deployment.
+
+In order to deploy our package we fix a few things in setup.py
+such as the install requirements.
+
+We also switch to setuptools if it is installed.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 10:53:32+01:00,-3600,2019-02-11 10:53:32+01:00,-3600,True,False,['setup.py'],['1a45d3d0ebdcb55e305ab8f56d21958071d81755'],3,13,16,1,,,
+3827de16e1b10598baaadaca49b382886c2a8744,"Enhancement: Automatic PyPI deployment of tags.
+
+Adding automatic deployment of tags in Travis.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 10:55:13+01:00,-3600,2019-02-11 10:55:13+01:00,-3600,True,False,['.travis.yml'],['c282622fcc3204ea5d067349f8a8d77f3648708a'],1,9,10,1,,,
+77e65a0add2e77921d1985fa75d67c26d62d068e,Release: Change version to v1.0.0,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 10:58:05+01:00,-3600,2019-02-11 11:09:30+01:00,-3600,True,False,['setup.py'],['3827de16e1b10598baaadaca49b382886c2a8744'],1,1,2,1,,,
+1c46b388438e33ddb601995523a3408c5e2e519c,"Documentation: Add installation instructions
+
+Since our package is on PyPI, we can add installation instructions.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 11:04:21+01:00,-3600,2019-02-11 11:09:37+01:00,-3600,True,False,['README.md'],['77e65a0add2e77921d1985fa75d67c26d62d068e'],0,4,4,1,,,
+a7f4c7d588ea83845337e0ab33a186644e605a2f,Documentation: Add PyPI version badge,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 11:12:49+01:00,-3600,2019-02-11 11:12:49+01:00,-3600,True,False,['README.md'],['1c46b388438e33ddb601995523a3408c5e2e519c'],1,1,2,1,,,
+a8ada1ba48b63da435521fbdce04a7140befe2b4,Documentation: Python 2.7.10 message in README,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 11:43:05+01:00,-3600,2019-02-11 11:43:05+01:00,-3600,True,False,['README.md'],['a7f4c7d588ea83845337e0ab33a186644e605a2f'],0,2,2,1,,,
+15ef1ba4c2fb47436ad6e8669c441988fe922698,"Refactor: Rename method parse_row to parse_excel_row
+
+This function parses an Excel row, so we'll rename it to parse_excel_row
+to better reflect what it does.
+
+Renaming is done in standardcitation.py and in test_parse_excel_row.py
+(which itself is renamed by this commit)",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 11:59:43+01:00,-3600,2019-02-11 11:59:43+01:00,-3600,True,False,"['standardcitations.py', 'test_parse_excel_row.py']",['a8ada1ba48b63da435521fbdce04a7140befe2b4'],4,7,11,2,1.0,1.0,1.0
+c5b255da0f174bf05740dc731ed1668616fd3b6d,Documentation: Fix typos in the description.,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-11 12:07:08+01:00,-3600,2019-02-11 12:07:08+01:00,-3600,True,False,['README.md'],['15ef1ba4c2fb47436ad6e8669c441988fe922698'],2,2,4,1,,,
+624336aca3c0b375134d66b3a986f39917fa5aba,"Test: Add validation of url to test_format_url.
+
+Add a test of the validity of the url. We are using the package `validators`,
+which means we are updating requirements and setup as well.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 12:06:38+01:00,-3600,2019-02-12 12:06:38+01:00,-3600,True,False,"['requirements.txt', 'setup.py', 'test_format_url.py']",['c5b255da0f174bf05740dc731ed1668616fd3b6d'],4,8,12,3,1.0,1.0,1.0
+57edb89fc79b0bb24dab8e1c684a9dc2cd87fa0d,Test: Improve readability of test_parse_excel_row,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 13:05:01+01:00,-3600,2019-02-12 13:05:01+01:00,-3600,True,False,['test_parse_excel_row.py'],['624336aca3c0b375134d66b3a986f39917fa5aba'],1,3,4,1,,,
+8b3a5aba3fab5f0ceb11f39d05b01222c954ef27,Test: Improve readability of test_parse_args,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 13:05:36+01:00,-3600,2019-02-12 13:05:36+01:00,-3600,True,False,['test_parse_args.py'],['57edb89fc79b0bb24dab8e1c684a9dc2cd87fa0d'],1,2,3,1,,,
+28cb78930e8dcfd8c6381b22742d630ac15b765d,Test: Improve readability of test_write_bibtex,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 13:06:00+01:00,-3600,2019-02-12 13:06:00+01:00,-3600,True,False,['test_write_bibtex.py'],['8b3a5aba3fab5f0ceb11f39d05b01222c954ef27'],3,8,11,1,,,
+0604caded54fd28a41c98dd85960769559cb3b37,"Test: Improve test_get_entry by validating date fields
+
+Adding a check on year, month and day fields by allowing them to be within
+a range. Implicitly checks if they are integers by converting to int first.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 13:09:00+01:00,-3600,2019-02-12 13:09:00+01:00,-3600,True,False,['test_get_entry.py'],['28cb78930e8dcfd8c6381b22742d630ac15b765d'],0,5,5,1,1.0,1.0,1.0
+3b0cc2c8da38cdf3d19590edd64631f88f8e32f7,Test: Improve readability of test_format_entry,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 13:11:26+01:00,-3600,2019-02-12 13:11:26+01:00,-3600,True,False,['test_format_entry.py'],['0604caded54fd28a41c98dd85960769559cb3b37'],2,3,5,1,,,
+2e345541b6977567e49b9ba6679192572503ab7c,"Test: Test required and relevant fields exist in test_format_entry
+
+This adds a few lines checking that required fields for @techreport exist.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 13:11:53+01:00,-3600,2019-02-12 13:11:53+01:00,-3600,True,False,['test_format_entry.py'],['3b0cc2c8da38cdf3d19590edd64631f88f8e32f7'],4,9,13,1,,,
+164d78d2e57adc6ceddc79b348a9ca4ce483a39f,"Test: Add test_get_entry_required_fields test
+
+This test makes sure we didn't remove required fields from the get_entry_format
+function.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 13:13:26+01:00,-3600,2019-02-12 13:13:26+01:00,-3600,True,False,['test_get_entry.py'],['2e345541b6977567e49b9ba6679192572503ab7c'],0,16,16,1,1.0,1.0,1.0
+0a657a8189290518fdf4f87fc1f31ed293bfc9ab,Test: Improve readability of test_get_entry,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 13:14:16+01:00,-3600,2019-02-12 13:14:16+01:00,-3600,True,False,['test_get_entry.py'],['164d78d2e57adc6ceddc79b348a9ca4ce483a39f'],1,3,4,1,,,
+36566de3544f9f746c8ad2db3e154e1ed4867f9f,Update issue templates,Martin Isaksson,martin.isaksson@gmail.com,GitHub,noreply@github.com,2019-02-12 13:26:35+01:00,-3600,2019-02-12 13:26:35+01:00,-3600,True,False,"['bug_report.md', 'feature_request.md']",['0a657a8189290518fdf4f87fc1f31ed293bfc9ab'],0,58,58,2,,,
+7a4e33b4639ec4b9aa8a3bf9412acdf05f6bc2ba,Create CODE_OF_CONDUCT.md,Martin Isaksson,martin.isaksson@gmail.com,GitHub,noreply@github.com,2019-02-12 13:30:01+01:00,-3600,2019-02-12 13:30:01+01:00,-3600,True,False,['CODE_OF_CONDUCT.md'],['36566de3544f9f746c8ad2db3e154e1ed4867f9f'],0,76,76,1,,,
+55768513bcdd7a5966daa1921852df61a58451fb,"Documentation: Add link to CODE_OF_CONDUCT in README.md
+
+Since we created a CODE_OF_CONDUCT, we should link to it in the documentation.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 13:30:51+01:00,-3600,2019-02-12 13:30:51+01:00,-3600,True,False,['README.md'],['7a4e33b4639ec4b9aa8a3bf9412acdf05f6bc2ba'],1,1,2,1,,,
+1845c6b5c51ead46af9351d35d68b86d76d88110,"Fix: Lint missing-docstring
+
+Add docstring to standardcitations.py and 3gpp-citations:
+
+This project aims to generate BiBTeX (http://www.bibtex.org/) files that
+can be used when citing 3GPP (3gpp.org) specifications. The input is a document
+list exported from the  3GPP Portal (https://portal.3gpp.org/).",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 13:46:02+01:00,-3600,2019-02-12 13:46:02+01:00,-3600,True,False,"['3gpp-citations', 'standardcitations.py']",['55768513bcdd7a5966daa1921852df61a58451fb'],0,12,12,2,,,
+96a859e9c9ee48625764c3303dc2fbc4ea0178dd,"Fix: Lint superfluous-parens
+
+We had a superfluous parenthesis around a print statement which was
+solved by `from __future__ import print_function`. We had to reorder
+the imports to avoid further wrong-import-order lint errors.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 14:49:09+01:00,-3600,2019-02-12 15:14:09+01:00,-3600,True,False,['standardcitations.py'],['1845c6b5c51ead46af9351d35d68b86d76d88110'],1,2,3,1,,,
+018cf6d5beff3d3f25c353b6f883e8951d9d4d30,"Enhancement: Add pylint module
+
+We add pylint module and a `lint` make target for our convenience.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 14:53:31+01:00,-3600,2019-02-12 15:14:14+01:00,-3600,True,False,"['Makefile', 'requirements.txt']",['96a859e9c9ee48625764c3303dc2fbc4ea0178dd'],0,4,4,2,,,
+263b2a79ee97adf42d5a84dcc8a0750c3573f0f8,"Fix: lint anomalous-backslash-in-string
+
+We fix a lint warning by 1) adding an r to make the docstring raw and
+2) disabling the first pylint warning with a comment.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 15:02:12+01:00,-3600,2019-02-12 15:27:36+01:00,-3600,True,False,['standardcitations.py'],['018cf6d5beff3d3f25c353b6f883e8951d9d4d30'],2,5,7,1,1.0,1.0,1.0
+4c669304e2353bea3e0584bd021f69cc49308ff2,"Fix: Lint literal-comparison
+
+We compared a string to """" which was a no-no.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 15:14:42+01:00,-3600,2019-02-12 15:27:54+01:00,-3600,True,False,['standardcitations.py'],['263b2a79ee97adf42d5a84dcc8a0750c3573f0f8'],1,1,2,1,,,
+20079149ff18094d21ef2bd816b554cefdbc6dab,"Fix: Lint superfluous-parens
+
+Removing superfluous parenthesis around if statement.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 15:15:34+01:00,-3600,2019-02-12 15:27:54+01:00,-3600,True,False,['standardcitations.py'],['4c669304e2353bea3e0584bd021f69cc49308ff2'],1,1,2,1,,,
+71b5ce696ed3cf06611823ca8ce4c94ae37cf43c,"Fix: Lint bad-continuation
+
+Remove three spaces to make line continuation conform to pylint standards.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 15:17:02+01:00,-3600,2019-02-12 15:27:54+01:00,-3600,True,False,['standardcitations.py'],['20079149ff18094d21ef2bd816b554cefdbc6dab'],1,1,2,1,,,
+913339dccf72be1e5b10834135448925d7cd1715,"Refactor: Rename variable
+
+This fixes a invalid-name lint warning in `get_bibdatabase` for `db` which
+was anyways never a good name.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 15:29:42+01:00,-3600,2019-02-12 15:29:42+01:00,-3600,True,False,['standardcitations.py'],['71b5ce696ed3cf06611823ca8ce4c94ae37cf43c'],3,3,6,1,,,
+53e61329e80ef0c6976630e1ba500d4f0ec06f4a,"Refactor: Rename variable ws
+
+This fixes a invalid-name lint warning in `get_workbook` for `ws` which
+was anyways never a good name for a worksheet",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 15:31:15+01:00,-3600,2019-02-12 15:31:15+01:00,-3600,True,False,['standardcitations.py'],['913339dccf72be1e5b10834135448925d7cd1715'],2,2,4,1,,,
+09f6e283ac51a01b2c53459768f1ee234d0519a3,"Refactor: Rename variable db
+
+This fixes a invalid-name lint warning in `write_bibtex` for `db` which
+was anyways never a good name. Renamed to bib_database.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 15:37:03+01:00,-3600,2019-02-12 15:37:03+01:00,-3600,True,False,['standardcitations.py'],['53e61329e80ef0c6976630e1ba500d4f0ec06f4a'],3,3,6,1,,,
+9063587afc3fdd385f775611337d0f83a3e63cf9,"Refactor: Rename variable db
+
+This fixes a invalid-name lint warning in `main` for `db` which
+was anyways never a good name. Renamed to bib_database.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 15:44:22+01:00,-3600,2019-02-12 15:44:22+01:00,-3600,True,False,['standardcitations.py'],['09f6e283ac51a01b2c53459768f1ee234d0519a3'],4,4,8,1,,,
+62f5e416c7e6d3f632bb13fbe9c5ee6b21b3b681,"Refactor: Rename variable db
+
+This fixes a invalid-name lint warning in `main` for `wd` which
+was anyways never a good name. Renamed to worksheet.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 15:45:44+01:00,-3600,2019-02-12 15:45:44+01:00,-3600,True,False,['standardcitations.py'],['9063587afc3fdd385f775611337d0f83a3e63cf9'],3,3,6,1,,,
+b9cd60bb67b7df75ba6179b4dd09b6b5ecc80f61,"Refactor: Rename method get_workbook to get_worksheet
+
+This function returns a worksheet from a workbook so it makes sense
+to name it `get_worksheet`.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-12 16:02:12+01:00,-3600,2019-02-12 16:02:12+01:00,-3600,True,False,"['standardcitations.py', 'test_get_entry.py', 'test_get_worksheet.py', 'test_parse_excel_row.py', 'test_write_bibtex.py']",['62f5e416c7e6d3f632bb13fbe9c5ee6b21b3b681'],12,12,24,5,,,
+2d56842d83d4f0878e81ce4d1e5e47097cc40fa2,"Refactor: Clean dependencies
+
+Move all dependencies to `setup()`, and add an extra target so that all
+(including test)  dependencies can be installed with `pip install .[test]`.
+
+This change is reflected also in the Travis build configuration which is
+updated to Python 3.7.
+
+requirements.txt is therefore no longer needed and removed.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 14:32:17+01:00,-3600,2019-02-13 14:51:16+01:00,-3600,True,False,"['.travis.yml', 'requirements.txt', 'setup.py']",['b9cd60bb67b7df75ba6179b4dd09b6b5ecc80f61'],43,18,61,3,,,
+a54f0d484fec2a4046958570e60ce8fa317fef99,"Test: Adding pylint and flakes to the test make target.
+
+Add pylint and flakes to the `make test` target forces us to deal with
+issues in the test-functions by making the automatic builds fail.
+
+This is reflected also in .travis.yml so that the same tests are run
+both locally and on Travis.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 14:39:08+01:00,-3600,2019-02-13 14:55:54+01:00,-3600,True,False,"['.travis.yml', 'Makefile']",['2d56842d83d4f0878e81ce4d1e5e47097cc40fa2'],2,7,9,2,,,
+57f8341e1bbafe01e67c672e2a63765bb36cc0a9,"Test: Fix unused argument 'module' (unused-argument) in test_format_entry
+
+Removing the `module` argument in setup_module since it was not used.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:04:18+01:00,-3600,2019-02-13 15:04:18+01:00,-3600,True,False,['test_format_entry.py'],['a54f0d484fec2a4046958570e60ce8fa317fef99'],1,1,2,1,,,
+72b54c46c0a13c210a29efd358b966062475854a,"Test: Fix unused argument 'module' (unused-argument) in test_get_entry
+
+Removing the `module` argument in setup_module since it was not used.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:05:50+01:00,-3600,2019-02-13 15:05:50+01:00,-3600,True,False,['test_get_entry.py'],['57f8341e1bbafe01e67c672e2a63765bb36cc0a9'],1,1,2,1,,,
+99123ecd56741a53dabb4174dc5e896d9d65af3e,"Test: Fix unidiomatic-typecheck lint warning in test_format_entry
+
+Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck).
+Replace `type()` with `isinstance()`.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:06:45+01:00,-3600,2019-02-13 15:06:45+01:00,-3600,True,False,['test_format_entry.py'],['72b54c46c0a13c210a29efd358b966062475854a'],1,1,2,1,,,
+082308b52fabd301ccc39810e4056c3a41fb40af,"Test: Fix lint warning unidiomatic-typecheck in test_get_bibdatabase
+
+Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+Changing type() to isinstance(., BibDatabase).",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:08:24+01:00,-3600,2019-02-13 15:08:24+01:00,-3600,True,False,['test_get_bibdatabase.py'],['99123ecd56741a53dabb4174dc5e896d9d65af3e'],1,1,2,1,,,
+b66ff3f7cc70097e5fe3b611ea12bb167254af71,"Test: Fix lint warning wrong-import-order in test_format_url.py
+
+Reorder imports to get rid of warning.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:12:51+01:00,-3600,2019-02-13 15:12:51+01:00,-3600,True,False,['test_format_url.py'],['082308b52fabd301ccc39810e4056c3a41fb40af'],1,1,2,1,,,
+dda0b5c17cd6d3680b01163d1c83dcf0e48c904b,Test: Remove unnecessary print in test_format_url,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:16:05+01:00,-3600,2019-02-13 15:16:05+01:00,-3600,True,False,['test_format_url.py'],['b66ff3f7cc70097e5fe3b611ea12bb167254af71'],1,0,1,1,0.0,0.0,0.0
+63ed8024ece1e955c4ff5ea6254f567b76e2093e,"Test: Fix lint warning anomalous-backslash-in-string
+
+Anomalous backslash in string: '\-'. String constant might be missing an r
+prefix. (anomalous-backslash-in-string). So we add prefix in two places.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:18:44+01:00,-3600,2019-02-13 15:18:44+01:00,-3600,True,False,['test_format_url.py'],['dda0b5c17cd6d3680b01163d1c83dcf0e48c904b'],2,2,4,1,,,
+d75bd148e6f1d237b0071c987b27dc89af496897,"Test: Fix lint warning invalid-name in test_get_worksheet
+
+Variable name `ws` doesn't conform to snake_case naming style (invalid-name),
+so we rename it to `worksheet`.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:19:36+01:00,-3600,2019-02-13 15:19:36+01:00,-3600,True,False,['test_get_worksheet.py'],['63ed8024ece1e955c4ff5ea6254f567b76e2093e'],2,2,4,1,,,
+8500994f4ff75e5767cb788a3319667755db28bc,"Test: Fix lint warning invalid-name in test_write_bibtex
+
+Variable name `ws` doesn't conform to snake_case naming style (invalid-name),
+so we rename it to `worksheet` in two instances (in test_write_bibtex_file and
+test_write_bibtex_stdout).",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:21:26+01:00,-3600,2019-02-13 15:21:26+01:00,-3600,True,False,['test_write_bibtex.py'],['d75bd148e6f1d237b0071c987b27dc89af496897'],4,4,8,1,,,
+f709f43544efc4cb49f60854d2c0e79c98cdc19b,"Test: Add multiple Python version to Travis
+
+This change is for Travis to run tests on Python 2.7, 3.5, 3.6 and 3.7.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:27:23+01:00,-3600,2019-02-13 15:27:23+01:00,-3600,True,False,['.travis.yml'],['8500994f4ff75e5767cb788a3319667755db28bc'],1,5,6,1,,,
+dc66697a2e739f60aa0e63f709ef00699a563145,"Release version 1.1.0
+
+Update setup.py with new version number.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-13 15:54:50+01:00,-3600,2019-02-13 15:54:50+01:00,-3600,True,False,['setup.py'],['4fc495d24c7db31ce35e03b601e4f0b4bb149cf1'],1,1,2,1,,,
+db889faf7dbacfa4b46ebb200099af42185514f2,"Documentation: Installation instructions
+
+Removing the note about Python 2.7 and adding information on how to install
+the test dependencies.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 09:20:21+01:00,-3600,2019-02-14 09:20:21+01:00,-3600,True,False,['README.md'],['dc66697a2e739f60aa0e63f709ef00699a563145'],2,4,6,1,,,
+b6ae796fade3b2053df7a9f855703825111ffe4c,"Enhancement: Add Trove classification
+
+Add Trove classification according to PEP-301
+(https://www.python.org/dev/peps/pep-0301/#distutils-trove-classification).",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 09:49:33+01:00,-3600,2019-02-14 09:49:33+01:00,-3600,True,False,['setup.py'],['db889faf7dbacfa4b46ebb200099af42185514f2'],0,21,21,1,,,
+a0130e7dbf86cc7241acbfff833866c778fd1691,"Documentation: Add PyPI badges for downloads and version numbers
+
+Trove classification in setup.py should mean we can use the version number
+badge from shields.io.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 09:52:14+01:00,-3600,2019-02-14 09:52:14+01:00,-3600,True,False,['README.md'],['b6ae796fade3b2053df7a9f855703825111ffe4c'],1,1,2,1,,,
+e61d96ce2902083e9ecbef597901e63a6ad80652,"Release version 1.1.1
+
+We have updated Trove classification and documentation. To make sure this
+change goes through at PyPI we need to create a release.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 09:53:41+01:00,-3600,2019-02-14 09:53:41+01:00,-3600,True,False,['setup.py'],['a0130e7dbf86cc7241acbfff833866c778fd1691'],1,1,2,1,,,
+083a43be62cc6e0f305f3578995bf3e4244db023,"Fix: PyPI URL pointed to test-server
+
+Correct url is https://pypi.org/project/3gpp-citations/",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 10:04:03+01:00,-3600,2019-02-14 10:04:03+01:00,-3600,True,False,['README.md'],['e61d96ce2902083e9ecbef597901e63a6ad80652'],1,1,2,1,,,
+2496a99312f318768fa23345e6a7380b48b5b521,"Documentation: Add badges
+
+Add badges for Code Climate maintainability and Github repo hit count.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 13:39:54+01:00,-3600,2019-02-14 13:39:54+01:00,-3600,True,False,['README.md'],['083a43be62cc6e0f305f3578995bf3e4244db023'],1,1,2,1,,,
+5097b3f31681e6480e5ec7afd94c05fd744ad3a3,"Enhancement: Add clean target to Makefile
+
+Clean target depends on clean-build and clean-pyc",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 18:53:36+01:00,-3600,2019-02-14 18:53:36+01:00,-3600,True,False,['Makefile'],['2496a99312f318768fa23345e6a7380b48b5b521'],0,2,2,1,,,
+afe3c966d10f4a7e5caa0edf9b54557ac0e360fa,"Fix: Update setup.py to best practices level
+
+We update setup() with classifiers, python_requires, etc to comply
+with best practices.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 21:57:51+01:00,-3600,2019-02-14 21:57:51+01:00,-3600,True,False,['setup.py'],['5097b3f31681e6480e5ec7afd94c05fd744ad3a3'],29,21,50,1,,,
+684b1cd01e80d4ad1e292f3d032ad36efc6cc44a,Refactor: Remove unused imports from setup.py,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 22:02:28+01:00,-3600,2019-02-14 22:02:28+01:00,-3600,True,False,['setup.py'],['afe3c966d10f4a7e5caa0edf9b54557ac0e360fa'],3,0,3,1,,,
+9bc77616ab25d911a4193f116dfc58cdcbd17e6c,Release version 1.1.3,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 22:03:37+01:00,-3600,2019-02-14 22:03:37+01:00,-3600,True,False,['setup.py'],['684b1cd01e80d4ad1e292f3d032ad36efc6cc44a'],1,1,2,1,,,
+78983632e7d408288c6e958131b8f4024ac94454,"Fix: Adding python-coveralls=2.9.1 to test requirements
+
+After removing requirements.txt, coveralls was not working and sometimes
+failing the build. We also needed the dependency coverage=4.5.2.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-14 22:37:55+01:00,-3600,2019-02-14 22:48:34+01:00,-3600,True,False,['setup.py'],['9bc77616ab25d911a4193f116dfc58cdcbd17e6c'],0,2,2,1,,,
+b014b4fe3b3d7817e6f90955361b9c03fd4d57c9,"Fix: Replaced license in setup with single statement.
+
+The issue is that the multiple lines in the `License` field are causing the
+rest of the file to be interpreted as the `Long-Description`.
+
+See https://github.com/pypa/twine/issues/454 and
+https://github.com/pypa/setuptools/issues/1390",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-15 16:11:06+01:00,-3600,2019-02-15 16:11:06+01:00,-3600,True,False,['setup.py'],['78983632e7d408288c6e958131b8f4024ac94454'],1,1,2,1,,,
+8457e079ac5fa9f837d5ab5b58d0c71ada9b046f,Release version 1.1.4,Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-15 16:12:45+01:00,-3600,2019-02-15 16:12:45+01:00,-3600,True,False,['setup.py'],['b014b4fe3b3d7817e6f90955361b9c03fd4d57c9'],1,1,2,1,,,
+6269c34ce909a0077942425224bd7bb23f9f7c3f,"Enhancement: Build wheel on PyPI deployment.
+
+We add the bdist_wheel target beside the already existing sdist target to the
+PyPI deployment stage on Travis.
+
+See https://docs.travis-ci.com/user/deployment/pypi/",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-15 16:33:04+01:00,-3600,2019-02-15 16:33:04+01:00,-3600,True,False,['.travis.yml'],['8457e079ac5fa9f837d5ab5b58d0c71ada9b046f'],0,1,1,1,,,
+94221a738d50c12eff3853f3740f091640fefd3c,"Enhancement: Update base image to Bionic
+
+We upgrade the base image used for CI testing on Travis to Bionic.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-02-27 10:02:24+01:00,-3600,2019-02-27 10:02:24+01:00,-3600,True,False,['.travis.yml'],['6269c34ce909a0077942425224bd7bb23f9f7c3f'],1,1,2,1,,,
+f936447217d03b862f1127113bc9d84a302fddf1,"Documentation: Add link to SW testing presentation in README
+
+We add the link to the presentation made in the WASP course workshop to
+the README.",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-03-06 10:06:23+01:00,-3600,2019-03-06 10:06:23+01:00,-3600,True,False,['README.md'],['94221a738d50c12eff3853f3740f091640fefd3c'],0,4,4,1,,,
+74c1ba4574e1a6efe4749f17ebeb6a4ca4b46b52,"Documentation: Fix issues from Markdown lint
+
+Change small issues found my Markdown lint (mdl).",Martin Isaksson,martin.isaksson@gmail.com,Martin Isaksson,martin.isaksson@gmail.com,2019-03-06 11:47:01+01:00,-3600,2019-03-06 11:47:01+01:00,-3600,True,False,['README.md'],['f936447217d03b862f1127113bc9d84a302fddf1'],7,10,17,1,,,

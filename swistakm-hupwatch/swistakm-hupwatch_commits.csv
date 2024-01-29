@@ -1,0 +1,14 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+1cecdbaa72fb258f16608cc9b10c3be25c9b8193,Initial commit,Michał Jaworski,swistakm@gmail.com,Michał Jaworski,swistakm@gmail.com,2016-01-27 11:14:15+01:00,-3600,2016-01-27 11:14:15+01:00,-3600,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,91,91,3,,,
+c41f92401907f0406d70eaf9a3fdcf61eeced761,initial implementation of hupwatch,mjaworski,mjaworski@opera.com,mjaworski,mjaworski@opera.com,2016-01-27 14:41:22+01:00,-3600,2016-01-27 14:41:22+01:00,-3600,True,False,"['__init__.py', 'args_parser.py', 'command.py', 'service.py', 'setup.py']",['1cecdbaa72fb258f16608cc9b10c3be25c9b8193'],0,354,354,5,0.17391304347826086,1.0,0.9565217391304348
+64aa97e541271adf1df505b56d143e372f0c9283,update README,mjaworski,mjaworski@opera.com,mjaworski,mjaworski@opera.com,2016-01-27 16:34:08+01:00,-3600,2016-01-27 16:40:51+01:00,-3600,True,False,['README.md'],['c41f92401907f0406d70eaf9a3fdcf61eeced761'],1,101,102,1,,,
+49f4f52de69042eb2e2cb9bdd83c8cbd13fc51ae,"remove reduntant version, add MANIFEST.in, bump version",mjaworski,mjaworski@opera.com,mjaworski,mjaworski@opera.com,2016-01-27 16:44:16+01:00,-3600,2016-01-27 16:44:16+01:00,-3600,True,False,"['MANIFEST.in', '__init__.py', 'command.py']",['64aa97e541271adf1df505b56d143e372f0c9283'],4,3,7,3,,,
+ec6d5b011c126b0a6d858c3a627e91264845189e,"minor udpates:
+
+* update README
+* fix some docstrings
+* update default arguments
+* do not terminate the old process if a new one is not
+  alive after the warmup period",mjaworski,mjaworski@opera.com,mjaworski,mjaworski@opera.com,2016-01-27 18:10:27+01:00,-3600,2016-01-27 18:10:27+01:00,-3600,True,False,"['README.md', 'args_parser.py', 'command.py']",['49f4f52de69042eb2e2cb9bdd83c8cbd13fc51ae'],67,145,212,3,0.0,1.0,1.0
+9d8d07050acf18ef9d6e7d0ce35834a488a56916,bump version,mjaworski,mjaworski@opera.com,mjaworski,mjaworski@opera.com,2016-01-27 18:12:24+01:00,-3600,2016-01-27 18:12:24+01:00,-3600,True,False,['__init__.py'],['ec6d5b011c126b0a6d858c3a627e91264845189e'],1,1,2,1,,,
+5cef5bdadd0b0ca34b390aea38834eb3ce70cac1,docs: fix typo in usage and update README.md,mjaworski,mjaworski@opera.com,mjaworski,mjaworski@opera.com,2016-01-27 18:17:56+01:00,-3600,2016-01-27 18:17:56+01:00,-3600,True,False,"['README.md', 'args_parser.py']",['9d8d07050acf18ef9d6e7d0ce35834a488a56916'],1,13,14,2,,,

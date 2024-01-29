@@ -1,0 +1,304 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+71303c7cc304255808fc23be5999c12bee96db79,Initial commit,Yuvi Panda,yuvipanda@gmail.com,GitHub,noreply@github.com,2018-04-02 18:06:58-07:00,25200,2018-04-02 18:06:58-07:00,25200,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,304,304,3,,,
+00cda6ac0ae99d1774113e56f1ef59fe34809963,Initial commit,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-02 18:07:27-07:00,25200,2018-04-02 18:07:27-07:00,25200,True,False,"['Pipfile', 'Pipfile.lock', 'kubessh.py']",['71303c7cc304255808fc23be5999c12bee96db79'],0,283,283,3,0.6612903225806451,1.0,1.0
+2400616ae5fc5d68bf67183db6f0eb5666534044,"Implement ssh server ourselves
+
+The asyncssh project is wonderful. Implementing our own
+ssh server was easy. We can control authentication and spawning
+much better in our own implementation, unlikein OpenSSH.",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-03 01:30:50-07:00,25200,2018-04-03 01:30:50-07:00,25200,True,False,"['Pipfile', 'Pipfile.lock', 'asyncserver.py', 'kubessh.py']",['00cda6ac0ae99d1774113e56f1ef59fe34809963'],66,212,278,4,0.21739130434782608,1.0,0.7391304347826086
+934c30a32f9a5f6a3ea05177ec251c1e8521826b,"Allow sshing in with no explicit command
+
+This fixes double echoing of stdin to stdout.
+
+Thanks to @bd808 for the pointer",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-03 11:25:46-07:00,25200,2018-04-03 11:25:46-07:00,25200,True,False,['asyncserver.py'],['2400616ae5fc5d68bf67183db6f0eb5666534044'],1,10,11,1,1.0,1.0,1.0
+59e51daea31d6c44c760342b49a8a05863bfa251,Make kubessh into a real python package,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-04 20:52:56-07:00,25200,2018-04-04 21:04:02-07:00,25200,True,False,"['__init__.py', 'server.py', 'shell.py', 'setup.py']",['934c30a32f9a5f6a3ea05177ec251c1e8521826b'],1,19,20,4,,,
+9d6db026c9cbbf2e52ed3bc6458865d373ab4b1a,Make default namespace to spawn in configurable,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-04 21:17:31-07:00,25200,2018-04-04 21:17:31-07:00,25200,True,False,"['server.py', 'shell.py']",['59e51daea31d6c44c760342b49a8a05863bfa251'],7,22,29,2,0.0,1.0,1.0
+8f91e8a9570fe2fd965d1f0478803dcfd035a1e0,Fill out README file a bit better,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-04 22:46:42-07:00,25200,2018-04-04 22:46:42-07:00,25200,True,False,['README.md'],['9d6db026c9cbbf2e52ed3bc6458865d373ab4b1a'],2,30,32,1,,,
+13baeebdd96fde8da677c921614480ed9efe4edd,Allow configuring the host private key,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-04 22:56:20-07:00,25200,2018-04-04 22:56:20-07:00,25200,True,False,['server.py'],['8f91e8a9570fe2fd965d1f0478803dcfd035a1e0'],4,23,27,1,0.0,1.0,1.0
+5e26bdcc926166f96df1849c23bffee1a76aaa68,Allow configuring port to listen on,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-04 22:58:42-07:00,25200,2018-04-04 22:58:42-07:00,25200,True,False,['server.py'],['13baeebdd96fde8da677c921614480ed9efe4edd'],3,9,12,1,0.0,1.0,0.0
+59394e5df7bd5e8189aef9b6b1105c6ba6145a2e,"Handle initial terminal size properly
+
+Still need to sort out resizing",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-04 23:20:32-07:00,25200,2018-04-04 23:20:32-07:00,25200,True,False,"['server.py', 'shell.py']",['5e26bdcc926166f96df1849c23bffee1a76aaa68'],3,4,7,2,1.0,1.0,0.0
+4d398f85c811178a9bf3fb69b8fd6fc8ee4b392a,Allow users to specify custom image to run,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-05 10:15:24-07:00,25200,2018-04-05 10:15:24-07:00,25200,True,False,"['Pipfile', 'Pipfile.lock', 'server.py', 'shell.py']",['59394e5df7bd5e8189aef9b6b1105c6ba6145a2e'],16,52,68,4,1.0,1.0,1.0
+98eb4742a08e1d620f1aa6c264c75fe5f7270eac,Add a console entrypoint to kubessh,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-05 13:55:44-07:00,25200,2018-04-05 13:55:44-07:00,25200,True,False,['setup.py'],['4d398f85c811178a9bf3fb69b8fd6fc8ee4b392a'],0,5,5,1,,,
+221df9d0ed143c865e0d8f75f7c289af4f5de6a0,Pass client terminal size changes to spawned shell,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-08 18:59:08-07:00,25200,2018-04-08 18:59:52-07:00,25200,True,False,['server.py'],['98eb4742a08e1d620f1aa6c264c75fe5f7270eac'],8,31,39,1,0.0,0.0,1.0
+f0d56b0eaae3ceadc8cd324cf00e07199bd05031,Read current kubernetes namespace from correct path,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-08 19:00:00-07:00,25200,2018-04-08 19:00:00-07:00,25200,True,False,['server.py'],['221df9d0ed143c865e0d8f75f7c289af4f5de6a0'],2,2,4,1,,,
+174313d4611c204320ace1bb21a1a54b5d39fac6,Do not block main thread when waiting for pod to spawn,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-08 19:00:30-07:00,25200,2018-04-08 19:00:30-07:00,25200,True,False,['shell.py'],['f0d56b0eaae3ceadc8cd324cf00e07199bd05031'],2,2,4,1,,,
+d32f4c212304d20b96376c7d65e08f4537f39b50,Update pipenv dependencies to match reality,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-08 19:06:04-07:00,25200,2018-04-08 19:06:04-07:00,25200,True,False,"['Pipfile', 'Pipfile.lock', 'setup.py']",['174313d4611c204320ace1bb21a1a54b5d39fac6'],3,123,126,3,,,
+f6fc441f6ac0a67662bef54653b50e1ca32e2fc9,Be explicit when allocating threads,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-08 19:17:42-07:00,25200,2018-04-08 19:17:42-07:00,25200,True,False,['server.py'],['d32f4c212304d20b96376c7d65e08f4537f39b50'],2,7,9,1,,,
+b692a9ae27b6d3db98c440ca0fa14d88ae645146,Don't block main thread when making k8s API requests,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-08 20:02:56-07:00,25200,2018-04-08 20:02:56-07:00,25200,True,False,['shell.py'],['f6fc441f6ac0a67662bef54653b50e1ca32e2fc9'],6,32,38,1,0.4,1.0,0.8
+045b1006e3dfbc3b02eefe9065a4952f2e0bed94,Shell can return async generator to report progress,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-08 21:54:37-07:00,25200,2018-04-08 21:54:37-07:00,25200,True,False,"['server.py', 'shell.py']",['b692a9ae27b6d3db98c440ca0fa14d88ae645146'],3,22,25,2,0.0,0.3,1.0
+c8185a9846800a1c694295f588a2f83de39911e6,Add simple helm chart with RBAC,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-09 11:10:09-07:00,25200,2018-04-09 11:10:09-07:00,25200,True,False,"['Dockerfile', '.helmignore', 'chartpress.yaml', 'Chart.yaml', '_helpers.tpl', 'deployment.yaml', 'rbac.yaml', 'service.yaml', 'values.yaml']",['045b1006e3dfbc3b02eefe9065a4952f2e0bed94'],0,229,229,9,,,
+fb8de2b82805fdb7266b1304c4db7d8967741611,Grant permission to exec into pods,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-09 11:51:08-07:00,25200,2018-04-09 11:51:08-07:00,25200,True,False,['rbac.yaml'],['c8185a9846800a1c694295f588a2f83de39911e6'],1,1,2,1,,,
+679709b1b179d72a081b9e78b04bdce3a6a4620c,Require a server host key to be set before installing,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-09 11:51:21-07:00,25200,2018-04-09 11:51:44-07:00,25200,True,False,"['deployment.yaml', 'secret.yaml']",['fb8de2b82805fdb7266b1304c4db7d8967741611'],0,24,24,2,,,
+f8f606b8d02d055ef69c6b106bbd2074748d652d,"Do not crash process when argument parsing fails
+
+The world is filled with random scanners that will try to
+ssh into your boxes for you. This prevents kubessh from crashing
+when one of them tries a random command.
+
+Fixes #2",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-10 13:24:12-07:00,25200,2018-04-10 13:24:12-07:00,25200,True,False,"['server.py', 'shell.py']",['679709b1b179d72a081b9e78b04bdce3a6a4620c'],5,12,17,2,0.8333333333333334,1.0,1.0
+21421894c1c62ee2f8bebc7e98f38b691d6e59c0,Update helm chart docker image tag,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-10 13:28:08-07:00,25200,2018-04-10 13:28:08-07:00,25200,True,False,"['Chart.yaml', 'values.yaml']",['f8f606b8d02d055ef69c6b106bbd2074748d652d'],2,2,4,2,,,
+08fb0a926ae6ca3a4aff38dcb69b6e46f06b27fa,"Refactor to use traitlets for config
+
+- Admins can control config of pod spawned with a template
+- Add a simple test for deserialization",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-10 17:32:26-07:00,25200,2018-04-10 17:32:26-07:00,25200,True,False,"['Pipfile', 'Pipfile.lock', 'serialization.py', 'server.py', 'shell.py']",['21421894c1c62ee2f8bebc7e98f38b691d6e59c0'],147,435,582,5,0.9487179487179487,0.0,0.0
+85472d85318cfff21af5749d57aba9ea16a2ab00,"Refactor 'Shell' into UserPod and Shell
+
+A single UserPod might have multiple shells
+executed in it.",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-11 18:03:06-07:00,25200,2018-04-11 18:03:06-07:00,25200,True,False,"['server.py', 'shell.py']",['08fb0a926ae6ca3a4aff38dcb69b6e46f06b27fa'],32,59,91,2,0.2,0.0,0.4
+0500adffcb4997fb1fb8265152d9825afdf45e57,Properly mark required arguments to UserPod,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-11 18:06:45-07:00,25200,2018-04-11 18:06:45-07:00,25200,True,False,['shell.py'],['85472d85318cfff21af5749d57aba9ea16a2ab00'],7,3,10,1,0.0,0.0,1.0
+4fa5714c13349145131f62023b07516889b95bee,Make authenticator configurable,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-13 16:43:01-07:00,25200,2018-04-13 16:43:01-07:00,25200,True,False,"['__init__.py', 'dummy.py', 'server.py']",['0500adffcb4997fb1fb8265152d9825afdf45e57'],9,39,48,3,,,
+735e45e330a74e7e6a8bb84d73dd2248a66df4fb,"Add a GitHubAuthenticator & make it default
+
+- Fetches keys from GitHub to validate users
+- More secure default than dummy!",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-13 17:20:52-07:00,25200,2018-04-13 17:21:53-07:00,25200,True,False,"['github.py', 'server.py', 'setup.py']",['4fa5714c13349145131f62023b07516889b95bee'],2,31,33,3,1.0,1.0,1.0
+b935df1be95d8e68dc167c130ffc65348d4fa8b0,Update helm chart to work with traitlets,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-13 17:28:41-07:00,25200,2018-04-13 17:38:28-07:00,25200,True,False,"['chartpress.yaml', 'Dockerfile', 'kubessh_config.py', 'Chart.yaml', 'deployment.yaml', 'values.yaml']",['735e45e330a74e7e6a8bb84d73dd2248a66df4fb'],7,4,11,6,,,
+8d264c2691a1dbf21d48da20e31df63a042ad57e,Add missing traitlets dependency,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-13 17:38:36-07:00,25200,2018-04-13 17:38:36-07:00,25200,True,False,['setup.py'],['b935df1be95d8e68dc167c130ffc65348d4fa8b0'],0,1,1,1,,,
+a848de80f2008ed3795715b75b1948d18efc48da,Fix logging so exceptions are not swallowed,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-13 18:13:05-07:00,25200,2018-04-13 18:13:05-07:00,25200,True,False,['server.py'],['8d264c2691a1dbf21d48da20e31df63a042ad57e'],1,11,12,1,1.0,1.0,0.8333333333333334
+01863eb58359e2777f653657898cacc28d86adb9,"Properly validate SSH keys
+
+Earlier we were letting anyone in :)",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-13 18:39:01-07:00,25200,2018-04-13 18:39:36-07:00,25200,True,False,['github.py'],['a848de80f2008ed3795715b75b1948d18efc48da'],10,9,19,1,1.0,1.0,1.0
+99deebb320f778d80c88538e64b55d85f507cd4d,Update helm chart,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-13 18:40:54-07:00,25200,2018-04-13 18:40:54-07:00,25200,True,False,"['Chart.yaml', 'values.yaml']",['01863eb58359e2777f653657898cacc28d86adb9'],2,2,4,2,,,
+bbba5944ca42fd93bff5ddf27872f9fe0b719c1a,Allow explicitly setting nodePort for ssh service,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-14 14:14:34-07:00,25200,2018-04-14 14:14:34-07:00,25200,True,False,"['service.yaml', 'values.yaml']",['99deebb320f778d80c88538e64b55d85f507cd4d'],0,4,4,2,,,
+91fc74e27ff7a162f1a30aa1c0e238f18b79cd2d,"Do not mount service account in user pod by default
+
+More secure default option",yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-14 14:33:42-07:00,25200,2018-04-14 14:33:42-07:00,25200,True,False,"['Chart.yaml', 'values.yaml', 'shell.py']",['bbba5944ca42fd93bff5ddf27872f9fe0b719c1a'],2,3,5,3,,,
+e23ea2ae78d4b1f3365ecc77a92d06f68795f923,Update README with better wording,yuvipanda,yuvipanda@gmail.com,yuvipanda,yuvipanda@gmail.com,2018-04-19 20:24:19-07:00,25200,2018-04-19 20:24:19-07:00,25200,True,False,['README.md'],['91fc74e27ff7a162f1a30aa1c0e238f18b79cd2d'],1,6,7,1,,,
+94c89463eefc3599944bc20ad809d6151826ef37,"Bump pyyaml from 3.12 to 5.1
+
+Bumps [pyyaml](https://github.com/yaml/pyyaml) from 3.12 to 5.1.
+- [Release notes](https://github.com/yaml/pyyaml/releases)
+- [Changelog](https://github.com/yaml/pyyaml/blob/master/CHANGES)
+- [Commits](https://github.com/yaml/pyyaml/compare/3.12...5.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2019-10-18 16:28:29+00:00,0,2019-10-18 16:28:29+00:00,0,True,False,['Pipfile.lock'],['e23ea2ae78d4b1f3365ecc77a92d06f68795f923'],258,174,432,1,,,
+1ba69aab744079cb8ccfbf18ce5e56af7913699e,"Move from Pipfile to requirements.txt
+
+I no longer use pipenv",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-24 11:27:09-08:00,28800,2020-01-24 11:27:09-08:00,28800,True,False,"['Pipfile', 'Pipfile.lock', 'requirements.txt']",['d8e1a5da821bd01ea51074a535a49080569cdd2a'],400,5,405,3,,,
+ce9f553b3983d6320ae7b0ea8901176bea781520,"Remove version pins from setup.py
+
+These don't work anymore, and I had no specific reason
+for them",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-24 13:28:31-08:00,28800,2020-01-24 13:28:31-08:00,28800,True,False,['setup.py'],['1ba69aab744079cb8ccfbf18ce5e56af7913699e'],5,5,10,1,,,
+80f65755f9a92c511cfd0aceb384766c9a50febf,Fix issues with upgrading to latest asyncssh,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-24 13:41:47-08:00,28800,2020-01-24 13:41:47-08:00,28800,True,False,['server.py'],['ce9f553b3983d6320ae7b0ea8901176bea781520'],2,2,4,1,,,
+ac846d6fd46cbc8e2a9a50f33a8d943d2ec0c0e6,Upgrade version of kubectl used,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-24 13:43:21-08:00,28800,2020-01-24 13:43:21-08:00,28800,True,False,['Dockerfile'],['80f65755f9a92c511cfd0aceb384766c9a50febf'],2,2,4,1,,,
+e1c46f168401f6d5a3ce6cb19f7673ce9c30e1a2,Use python 3.8 in our images,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-24 13:44:32-08:00,28800,2020-01-24 13:44:32-08:00,28800,True,False,['Dockerfile'],['ac846d6fd46cbc8e2a9a50f33a8d943d2ec0c0e6'],1,1,2,1,,,
+88793ba1ddcb4ea977757210fc129f46f669b8e5,"Load kubernetes configuration properly
+
+- Check for in-cluster config first, since that is most
+  likely where we are going to be running
+- Catch better exception for when the incluster config
+  does not exist",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-24 14:06:58-08:00,28800,2020-01-24 14:06:58-08:00,28800,True,False,['shell.py'],['e1c46f168401f6d5a3ce6cb19f7673ce9c30e1a2'],2,2,4,1,,,
+f14a1beb2376240c9f9fc15771de9a97829b6ebe,Require allowed users to be explicitly listed,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-24 14:32:07-08:00,28800,2020-01-24 14:32:07-08:00,28800,True,False,['github.py'],['88793ba1ddcb4ea977757210fc129f46f669b8e5'],0,14,14,1,1.0,1.0,1.0
+901bceb34bc7dbdaca59ee43eb9a8bcdafca5951,asdfblahdsdff,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-24 14:43:14-08:00,28800,2020-01-24 15:39:53-08:00,28800,True,False,"['kubessh_config.py', 'github.py', 'requirements.txt', 'setup.py']",['f14a1beb2376240c9f9fc15771de9a97829b6ebe'],2,15,17,4,1.0,1.0,1.0
+395592c9cd2070e6c00fb75f60b5cd987948068c,"Add configmap & a kubessh_config.py
+
+Let's do the configuration reading in python, rather
+than in helm templates!",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-31 12:52:04-08:00,28800,2020-01-31 13:23:10-08:00,28800,True,False,"['Dockerfile', 'configmap.yaml', 'deployment.yaml', 'values.yaml']",['901bceb34bc7dbdaca59ee43eb9a8bcdafca5951'],0,28,28,4,,,
+dd30c45d7d3af89c2384e69ff197b7974b1b270d,"Rip out user specified image
+
+Let's start with the simplest things possible",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-31 13:52:27-08:00,28800,2020-01-31 13:52:27-08:00,28800,True,False,"['server.py', 'shell.py']",['395592c9cd2070e6c00fb75f60b5cd987948068c'],46,2,48,2,0.7692307692307693,0.7692307692307693,0.07692307692307693
+bc40494c2c1bf40c041eae223226d0482ed5f971,"Send keep_alive packets from the server
+
+Also switch to newer 'listen' method rather than create_server",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-31 14:05:09-08:00,28800,2020-01-31 14:05:09-08:00,28800,True,False,['server.py'],['dd30c45d7d3af89c2384e69ff197b7974b1b270d'],2,3,5,1,1.0,1.0,1.0
+76f0ed72f8f69e1c23d7a0563710e6df89741a1c,Pull in podTemplate from config,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-31 14:18:04-08:00,28800,2020-01-31 14:23:31-08:00,28800,True,False,['kubessh_config.py'],['bc40494c2c1bf40c041eae223226d0482ed5f971'],1,4,5,1,,,
+6c96ccd2b4e9509c74408ec2c75bf9e039ea6620,Expand {username} in podspec,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-31 14:39:25-08:00,28800,2020-01-31 14:41:30-08:00,28800,True,False,['shell.py'],['76f0ed72f8f69e1c23d7a0563710e6df89741a1c'],1,23,24,1,1.0,0.4,1.0
+a62e9250492692a134ecbc8a02750a5aa9d2edc0,Set default user shell to a login bash shell,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-31 15:22:20-08:00,28800,2020-01-31 15:22:20-08:00,28800,True,False,['shell.py'],['6c96ccd2b4e9509c74408ec2c75bf9e039ea6620'],1,5,6,1,,,
+9eff19071d1da8cb340ce9370861d5162dde64ad,"Turn on debug mode by default
+
+So we can get real stack traces from exceptions",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-31 15:42:58-08:00,28800,2020-01-31 15:46:21-08:00,28800,True,False,['kubessh_config.py'],['a62e9250492692a134ecbc8a02750a5aa9d2edc0'],0,1,1,1,,,
+a798dbf0bb3c543c2036ea8c68755bca8c685ee5,Fix pod deletion when completed,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-01-31 15:50:37-08:00,28800,2020-01-31 15:50:37-08:00,28800,True,False,['shell.py'],['9eff19071d1da8cb340ce9370861d5162dde64ad'],2,2,4,1,,,
+cbff81f1b92b6591aae297c6736e3a38ac9cd23d,"Turn off agent forwarding by default
+
+I consider this a security vulnerability that is pretty
+serious. Not sure we should allow people to turn it on.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-03 10:04:29-08:00,28800,2020-02-03 10:04:29-08:00,28800,True,False,['server.py'],['a798dbf0bb3c543c2036ea8c68755bca8c685ee5'],0,1,1,1,1.0,1.0,1.0
+6b574aa4a6353e5886674075b2c19a49eb3e260a,"Add daemon to clean up completed pods
+
+When a user shell exits, the pod goes into 'Complete' state.
+This does not *seem* to be removed by autoscaler - that
+needs more testing. In the meantime, we have a separate
+daemon that just cleans up completed pods every 30s.
+
+Will try to keep functionality like this split into different
+processes that do not share memory, to keep life simple for
+everyone. Let's try do *all* our state storage in k8s objects.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-03 10:52:09-08:00,28800,2020-02-03 11:01:19-08:00,28800,True,False,"['deployment.yaml', 'cleanup.py']",['cbff81f1b92b6591aae297c6736e3a38ac9cd23d'],1,83,84,2,1.0,1.0,0.75
+f06b4e7866c387936f21f3ec292c4254308f5d67,Setup CI to publish charts,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-10 16:07:36+05:30,-19800,2020-02-10 16:11:41+05:30,-19800,True,False,"['publish-chart.yaml', 'dev-requirements.txt', 'chartpress.yaml']",['6b574aa4a6353e5886674075b2c19a49eb3e260a'],2,25,27,3,,,
+96e861cf97bf9ab5d9dc8d45bf086a82cb42f8ac,Actually make chartpress a dev-requirement,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-10 16:13:56+05:30,-19800,2020-02-10 16:13:56+05:30,-19800,True,False,['dev-requirements.txt'],['f06b4e7866c387936f21f3ec292c4254308f5d67'],0,1,1,1,,,
+1402246318869ff95869bbae8c670437e037da73,Setup SSH key for push access to gh-pages,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-10 16:18:04+05:30,-19800,2020-02-10 16:18:04+05:30,-19800,True,False,['publish-chart.yaml'],['96e861cf97bf9ab5d9dc8d45bf086a82cb42f8ac'],0,5,5,1,,,
+f31ffb17ff931e5074f667513313ff7bd36e5701,Set up SSH Key & Docker Login credentials in CI,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-10 16:31:00+05:30,-19800,2020-02-10 16:31:00+05:30,-19800,True,False,['publish-chart.yaml'],['1402246318869ff95869bbae8c670437e037da73'],0,6,6,1,,,
+68341117e1156881153ff74d2cf604e86af39251,"Make SSH key permissions more restrictive
+
+Let's appease the git gods",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-10 16:34:21+05:30,-19800,2020-02-10 16:34:21+05:30,-19800,True,False,['publish-chart.yaml'],['f31ffb17ff931e5074f667513313ff7bd36e5701'],0,1,1,1,,,
+07e815e48b69236232c871a4068106f2d4027a1a,"Use an action to set up Helm
+
+I wonder if the PATH is set automatically!?",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-10 16:54:09+05:30,-19800,2020-02-10 16:54:09+05:30,-19800,True,False,['publish-chart.yaml'],['68341117e1156881153ff74d2cf604e86af39251'],0,4,4,1,,,
+2a5e12c18990b0dde9fab87ad46628fdc5514c05,Provide a more specific version of helm,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-10 16:56:12+05:30,-19800,2020-02-10 16:56:12+05:30,-19800,True,False,['publish-chart.yaml'],['07e815e48b69236232c871a4068106f2d4027a1a'],1,1,2,1,,,
+bdc220d11e3a6a2ffe2e85ffc6eb02f9fd6850d7,"Try saying 'latest' for helm version
+
+IDK how this works",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-10 16:57:37+05:30,-19800,2020-02-10 16:57:37+05:30,-19800,True,False,['publish-chart.yaml'],['2a5e12c18990b0dde9fab87ad46628fdc5514c05'],1,1,2,1,,,
+0a17e25901ed6b6be2717f6fb167cfa4323a80c5,Set user identities to make git happy,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-10 17:00:57+05:30,-19800,2020-02-10 17:00:57+05:30,-19800,True,False,['publish-chart.yaml'],['bdc220d11e3a6a2ffe2e85ffc6eb02f9fd6850d7'],0,2,2,1,,,
+0eb5234166f9c358c607f1d8afa66c1fb3d03df8,"Don't include ssh key import time in HTTP timeout
+
+Apparently 1s is too short for this some of the time",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-21 11:04:49+05:30,-19800,2020-02-21 11:04:49+05:30,-19800,True,False,['github.py'],['0a17e25901ed6b6be2717f6fb167cfa4323a80c5'],3,3,6,1,,,
+869e2fb3aa79c8c1f1e0e2b00d0aad48bf8c7d21,"Support running non-tty commands
+
+- Not all commands require ttys, and many will provide wrong
+  output when a tty is present.
+- Create an appropriate kind of process depending on what our
+  ssh client wants
+- Remove unnecessary 'Shell' object, as it could just be a
+  method
+
+Fixes #15",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 00:43:54+05:30,-19800,2020-02-28 01:07:43+05:30,-19800,True,False,"['server.py', 'shell.py']",['0eb5234166f9c358c607f1d8afa66c1fb3d03df8'],69,59,128,2,0.0,0.0,1.0
+bcbe5be7770ef58141886d9735cb5396aae3ea62,"Random hacking around to see what I can do with socat
+
+I had strung together a way to do 'direct' TCP connections as:
+
+KubeSSH -> socat (stdio) -> kubectl exec (stdio, websocket, socat) -> socat -> target
+
+This has several advantages:
+
+1. RBAC for auth
+2. KubeSSH and User Pod don't need to be on same network
+3. Easy to reason about
+
+And many disadvantages:
+
+1. Absolutely terrible performance
+2. This is nuts
+
+I decided to use kubectl port-forward instead of kubectl exec, since
+port-forard uses socat in the background to do the thing I'm trying to
+do. In the future, there should be a different backend that just uses
+network connections. Until then...",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 14:10:57+05:30,-19800,2020-02-28 18:26:41+05:30,-19800,True,False,"['__init__.py', 'shell.py']",['869e2fb3aa79c8c1f1e0e2b00d0aad48bf8c7d21'],8,80,88,2,0.125,0.5208333333333334,0.6041666666666666
+ddca13c58126c4989968ac8b4f8cea587af3c090,"Use kubectl port-forward to implement direct tcp connections
+
+- Runs a single kubectl port-forward process per eonnection
+  request, and uses asyncio to push traffic to it
+- This uses socat in the background, but all the bugs and
+  settings are handled for us automaticlaly by kubectl
+- We are still sending TCP over websocket, which is a PITA
+  performance-wise. But that's SSH already anyway.
+- WORKS WITH VSCODE!
+- Needs tests",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 16:31:34+05:30,-19800,2020-02-28 18:30:19+05:30,-19800,True,False,"['__init__.py', 'shell.py']",['bcbe5be7770ef58141886d9735cb5396aae3ea62'],32,34,66,2,0.6363636363636364,1.0,0.6363636363636364
+18692a9fad3c4c525840b9978f82ff4fc80d0678,Add simpervisor as a requirement,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 17:20:09+05:30,-19800,2020-02-28 18:30:19+05:30,-19800,True,False,"['app.py', 'setup.py']",['ddca13c58126c4989968ac8b4f8cea587af3c090'],1,2,3,2,,,
+ef61fdff947523d809c3c493f679d34b7d013233,"Use deterministic pod names
+
+We were using labels + selectors to determine which user
+was on which pod. This is extremely useful when you have many
+pods per user. However, we do not support that yet. We also need
+to make a netwrok call to figure out name of pod - something needed
+for port-forward and exec.
+
+So we go back to the JupyterHub tactic of using a predictable
+pod name, so we can get it without having to hit the network.
+
+Cleanup and document a little bit of ensure_running while there
+
+Also move server.py to app.py, because I could not be bothered
+to do appropriate git surgery",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 17:20:37+05:30,-19800,2020-02-28 18:30:19+05:30,-19800,True,False,"['shell.py', 'setup.py']",['18692a9fad3c4c525840b9978f82ff4fc80d0678'],35,56,91,2,0.0,0.0,1.0
+c0e9cf60fb2b6995ba41c23fe0626cb75174b88a,"Do not hard code my user pod name in the code
+
+Now there is at least a chance it will work for other
+people.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 17:25:07+05:30,-19800,2020-02-28 18:30:19+05:30,-19800,True,False,['__init__.py'],['ef61fdff947523d809c3c493f679d34b7d013233'],3,18,21,1,0.3333333333333333,0.5,0.8333333333333334
+c594be94256e732c4fd7e6431f2b91fb5e59ad21,"Rename 'shell' to 'pod'
+
+More accurate",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 18:12:03+05:30,-19800,2020-02-28 18:30:19+05:30,-19800,True,False,"['app.py', '__init__.py', 'pod.py']",['c0e9cf60fb2b6995ba41c23fe0626cb75174b88a'],10,10,20,3,,,
+a963ae5bb100b4880bfd805626b90d6a95428d1f,Add __main__ file so we can execute kubessh,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 18:12:24+05:30,-19800,2020-02-28 18:30:19+05:30,-19800,True,False,['__main__.py'],['c594be94256e732c4fd7e6431f2b91fb5e59ad21'],0,4,4,1,,,
+bdacb176b8c4065a95db98f401a1c3d239b59c55,Move non-auth functionality to BaseServer class,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 18:25:51+05:30,-19800,2020-02-28 18:30:19+05:30,-19800,True,False,"['__init__.py', 'server.py']",['a963ae5bb100b4880bfd805626b90d6a95428d1f'],87,100,187,2,,,
+16341424a488f434f8c5b1de80b641810aa1bfb4,"Switch to a more full-featured base image
+
+Most demos involve python in some form or other, so this
+gives us that all. Plus, it helps set LC_ and other variables
+too.
+
+Also helps us run as non-root :)",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 19:00:22+05:30,-19800,2020-02-28 19:00:22+05:30,-19800,True,False,['pod.py'],['bdacb176b8c4065a95db98f401a1c3d239b59c55'],1,1,2,1,,,
+3a383ebe7dd6c682508ff1f471fbf2d3c020b734,Add *one* test,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-02-28 19:05:57+05:30,-19800,2020-02-28 19:05:57+05:30,-19800,True,False,['test_userpod.py'],['16341424a488f434f8c5b1de80b641810aa1bfb4'],0,9,9,1,1.0,1.0,1.0
+972405925b2c051cc6a9ffd8a3a8e981ffb73d6b,Make port forwarding work on all namespaces,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-03 14:42:27+05:30,-19800,2020-03-03 14:42:27+05:30,-19800,True,False,"['app.py', 'pod.py', 'server.py']",['3a383ebe7dd6c682508ff1f471fbf2d3c020b734'],4,13,17,3,,,
+a24b2ad5bb9d3e7bafe72325dec29179c6c67357,"Add port-forwarding permission
+
+Required for direct-tcp connections to work",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-03 15:38:45+05:30,-19800,2020-03-03 15:38:45+05:30,-19800,True,False,['rbac.yaml'],['972405925b2c051cc6a9ffd8a3a8e981ffb73d6b'],1,1,2,1,,,
+25fbf62b204043a05dde3389e6a1d068009448af,Name DummyAuthenticator to be consistent with GitHubAuthenticator,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-14 19:20:10+05:30,-19800,2020-03-14 19:20:10+05:30,-19800,True,False,['dummy.py'],['a24b2ad5bb9d3e7bafe72325dec29179c6c67357'],1,1,2,1,,,
+322291489fac7e2f971771b28428e285a7448315,"Handle port-forward processes properly
+
+- Cache and re-use processes, so we try to have as few port-forward
+  processes as possible
+- Terminate them when we are done with the connection",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-14 19:37:19+05:30,-19800,2020-03-14 19:37:19+05:30,-19800,True,False,['server.py'],['25fbf62b204043a05dde3389e6a1d068009448af'],24,46,70,1,0.5,1.0,0.25
+c1a0e7b53528698e05441e62ed58960ca164c095,"Add a FIXME, remove a FIXME",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-15 02:49:37+05:30,-19800,2020-03-15 02:49:37+05:30,-19800,True,False,['server.py'],['322291489fac7e2f971771b28428e285a7448315'],1,2,3,1,,,
+419fabfdbce8d235650d6092873c75506628fab6,"Use same logger throughout application
+
+Before this, each class seems to be getting its own logger
+object, without inheriting the parent's logging config.
+This seems to not match my experience with other apps
+using traitlets, but that's ok. Passing 'log' explicilty
+to instance creation does what I want. Without it,
+a new 'traitlet' logger was created for each class,
+and it didn't have appropriate level set - causing the
+logging messages to be swallowed.",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-03-16 01:25:26+05:30,-19800,2020-03-16 01:25:46+05:30,-19800,True,False,"['app.py', 'dummy.py']",['c1a0e7b53528698e05441e62ed58960ca164c095'],2,6,8,2,1.0,1.0,1.0
+919f82522d48060809ec02366681cde7e4ce1103,"fix crash on window size change
+
+See https://github.com/yuvipanda/kubessh/issues/18",Michael Voelske,michael.voelske@uni-weimar.de,Michael Voelske,michael.voelske@uni-weimar.de,2020-04-16 17:05:26+02:00,-7200,2020-04-16 17:05:26+02:00,-7200,True,False,['pod.py'],['419fabfdbce8d235650d6092873c75506628fab6'],3,4,7,1,,,
+c51b859202561f594713198c307f2294a6c67485,"add rudimentary Gitlab authenticator
+
+Add a basic Gitlab authenticator that allows all public keys users have added to
+their account, just like the Github one; the only difference for now is the
+ability to specify a URL to a self-hosted Gitlab instance. Future API-based
+functionality may be worthwile, such as allowing access control via Gitlab user
+groups.",Michael Voelske,michael.voelske@uni-weimar.de,Michael Voelske,michael.voelske@uni-weimar.de,2020-04-17 10:47:03+02:00,-7200,2020-04-17 12:05:03+02:00,-7200,True,False,"['kubessh_config.py', 'gitlab.py']",['419fabfdbce8d235650d6092873c75506628fab6'],2,52,54,2,1.0,1.0,1.0
+716bcb0fb5fb8b346d65e5704547a8d041031131,"gitlab-auth: default to gitlab.com instance and add allowed_users
+
+Use the public gitlab.com by default. Add an allowed_users setting that defaults
+to disallowing all users, but can be configured to allow every user of the
+gitlab instance",Michael Voelske,michael.voelske@uni-weimar.de,Michael Voelske,michael.voelske@uni-weimar.de,2020-04-17 17:59:52+02:00,-7200,2020-04-17 17:59:52+02:00,-7200,True,False,"['kubessh_config.py', 'gitlab.py']",['c51b859202561f594713198c307f2294a6c67485'],3,20,23,2,1.0,1.0,1.0
+eb8c44922604731c5a31515d71e4d585e19d958b,"add capability to create PersistentVolumeClaims along with user Pods
+
+add a new values.yaml key 'pvcTemplates' that specifies a list of
+PersistentVolumeClaims to create along with user pods. Example usage:
+
+  pvcTemplates:
+  - kind: PersistentVolumeClaim
+    apiVersion: v1
+    metadata:
+      name: kubessh-homedir-{username}
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 32Gi
+      storageClassName: ceph-rbd
+
+The referenced storage class must previously have been configured in the
+kubernetes cluster.",Michael Voelske,michael.voelske@uni-weimar.de,Michael Voelske,michael.voelske@uni-weimar.de,2020-04-21 11:46:05+02:00,-7200,2020-04-21 11:46:05+02:00,-7200,True,False,"['kubessh_config.py', 'pod.py', 'serialization.py']",['60ebbc9a736832b9a6297833d3c7aaf2c874f7dc'],4,45,49,3,0.46153846153846156,0.46153846153846156,1.0
+813ef3bbe192c23d219e6d7f058dc21a7098d597,add error handling for PVC creation,Michael Voelske,michael.voelske@uni-weimar.de,Michael Voelske,michael.voelske@uni-weimar.de,2020-04-21 17:06:41+02:00,-7200,2020-04-21 17:06:41+02:00,-7200,True,False,['pod.py'],['eb8c44922604731c5a31515d71e4d585e19d958b'],10,18,28,1,0.0,0.0,1.0
+ceded812a3eb5ca5fdfad848faaa0073f5d9a2d0,propagate default_namespace from config,Michael Voelske,michael.voelske@uni-weimar.de,Michael Voelske,michael.voelske@uni-weimar.de,2020-04-21 17:14:48+02:00,-7200,2020-04-21 17:14:48+02:00,-7200,True,False,['kubessh_config.py'],['60ebbc9a736832b9a6297833d3c7aaf2c874f7dc'],0,2,2,1,,,
+0ace4e71c1ec784a9de9ddbcf10ebeb9fb9c2261,fix logging in UserPod,Michael Voelske,michael.voelske@uni-weimar.de,Michael Voelske,michael.voelske@uni-weimar.de,2020-04-21 17:17:48+02:00,-7200,2020-04-21 17:17:48+02:00,-7200,True,False,"['app.py', 'pod.py']",['60ebbc9a736832b9a6297833d3c7aaf2c874f7dc'],3,6,9,2,1.0,1.0,1.0
+8f30e21b3ceac38d58b17403ffd1a1518365f8c1,fix erroneous pvc name access in error handling,Michael Voelske,michael.voelske@uni-weimar.de,Michael Voelske,michael.voelske@uni-weimar.de,2020-04-21 17:18:59+02:00,-7200,2020-04-21 17:18:59+02:00,-7200,True,False,['pod.py'],['813ef3bbe192c23d219e6d7f058dc21a7098d597'],1,1,2,1,,,
+f45e4c596df317a818c494b2a596323ee707a444,add rbac permission for handling persistent volumes,Michael Voelske,michael.voelske@uni-weimar.de,Michael Voelske,michael.voelske@uni-weimar.de,2020-05-04 15:29:07+02:00,-7200,2020-05-04 15:29:07+02:00,-7200,True,False,"['rbac.yaml', 'pod.py']",['3f0efc2f2a0e36dd5b2703d87f01107eb373e525'],1,2,3,2,,,
+82e105b36a67d1658257fc36fc759fc5c1d534e7,"Fix traitlets commandline parameter parsing
+
+It wasn't working at all before this, since we never
+called the parent's initialize() method",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-06-25 16:39:22+05:30,-19800,2020-06-25 16:39:22+05:30,-19800,True,False,['app.py'],['3d453ea9520bca35c3cac4f951d8a587fb9b35ce'],0,1,1,1,1.0,1.0,0.0
+570f8b73c8c78d5de77fb4a6f4f13f6ac2d22b23,Add docs on contributing,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-06-25 16:40:16+05:30,-19800,2020-06-25 16:40:16+05:30,-19800,True,False,"['Makefile', 'conf.py', 'index.md', 'setup.md', 'index.md', 'make.bat', 'requirements.txt']",['82e105b36a67d1658257fc36fc759fc5c1d534e7'],0,215,215,7,,,
+cdfe382df0981b546174600b7956d905c49bf7d1,Use pydata sphinx theme,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-06-25 16:44:44+05:30,-19800,2020-06-25 16:44:44+05:30,-19800,True,False,"['conf.py', 'requirements.txt']",['570f8b73c8c78d5de77fb4a6f4f13f6ac2d22b23'],2,3,5,2,,,
+41b9424ed7397d9cd3102afb7169563742af422f,"Sync README.md with documentation
+
+Add a few badges too",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-06-25 17:04:12+05:30,-19800,2020-06-25 17:04:12+05:30,-19800,True,False,"['README.md', 'index.md']",['cdfe382df0981b546174600b7956d905c49bf7d1'],1,42,43,2,,,
+54f7338d9e3c090151b4f034dc30591578f26a69,"Put badges only on README.md
+
+Not on documentation page!
+
+Add a PyPI badge too",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-06-25 17:07:02+05:30,-19800,2020-06-25 17:07:02+05:30,-19800,True,False,"['README.md', 'index.md']",['41b9424ed7397d9cd3102afb7169563742af422f'],3,5,8,2,,,
+e1506d00e28e293716e2e9abcb4b1ecc106bbac3,Add missing kubessh_dummy_config.py file,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-06-27 00:44:53+05:30,-19800,2020-06-27 00:44:53+05:30,-19800,True,False,['kubessh_dummy_config.py'],['54f7338d9e3c090151b4f034dc30591578f26a69'],0,7,7,1,,,
+6a0237ea5adaa0a4a3c7c7208e4ea52b27f913ba,"Use `apps/v1` for Deployment object
+
+Required in modern versions of k8s",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-07-06 12:36:54+05:30,-19800,2020-07-06 12:36:54+05:30,-19800,True,False,['deployment.yaml'],['e1506d00e28e293716e2e9abcb4b1ecc106bbac3'],1,1,2,1,,,
+2068e920968ed6a2b138781c25716c9855de9f60,Provide useful error message when hostKey is missing,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-07-06 12:37:27+05:30,-19800,2020-07-06 12:37:27+05:30,-19800,True,False,"['secret.yaml', 'values.yaml']",['6a0237ea5adaa0a4a3c7c7208e4ea52b27f913ba'],1,4,5,2,,,
+74f768c7b73d1d80df192a1bd6346222f3563c25,Add simple installation docs,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-07-06 13:31:38+05:30,-19800,2020-07-06 13:31:38+05:30,-19800,True,False,"['index.md', 'install.md']",['2068e920968ed6a2b138781c25716c9855de9f60'],0,172,172,2,,,
+ad73b9a5d4fb96a0936884e15d0c2b659592cd84,"Mention where the kubessh image tag comes from
+
+Earlier, we had a rogue tag that was probably an ancient
+relic. Now, this won't work unless people run `chartpress`,
+which is what we want",YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-07-06 13:32:13+05:30,-19800,2020-07-06 13:32:13+05:30,-19800,True,False,['values.yaml'],['74f768c7b73d1d80df192a1bd6346222f3563c25'],1,1,2,1,,,
+f68801a5dabe7f9569f80b87807324c2c9c9223b,Add docs on customizing user pod,YuviPanda,yuvipanda@gmail.com,YuviPanda,yuvipanda@gmail.com,2020-07-06 19:02:20+05:30,-19800,2020-07-06 19:02:20+05:30,-19800,True,False,"['index.md', 'pod-template.md', 'index.md']",['ad73b9a5d4fb96a0936884e15d0c2b659592cd84'],1,85,86,3,,,
+ba6350b671f37d1bdcc7db9c19d39c26fef6ef85,Update README.md,Yuvi Panda,yuvipanda@gmail.com,GitHub,noreply@github.com,2020-11-23 11:42:55+05:30,-19800,2020-11-23 11:42:55+05:30,-19800,True,False,['README.md'],['f68801a5dabe7f9569f80b87807324c2c9c9223b'],2,5,7,1,,,

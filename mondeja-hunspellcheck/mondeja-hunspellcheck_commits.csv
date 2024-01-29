@@ -1,0 +1,196 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+6a04e6f4b043cbf3d1653639fec0f8dcbc8a4b43,Added Hunspell available dictionaries discovering logic for Unix,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-06 13:23:06+02:00,-7200,2021-04-06 13:23:06+02:00,-7200,True,False,"['.bumpversion.cfg', '.editorconfig', '.gitignore', 'LICENSE', 'MANIFEST.in', 'README.md', '__init__.py', 'cli.py', 'hunspell.py', 'setup.cfg', 'setup.py', 'test_hunspell.py']",[],0,308,308,12,1.0,1.0,0.7868852459016393
+9abd9f402aa5b84b2aeb3b737bdfad5a99139749,Continue development,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-06 19:19:06+02:00,-7200,2021-04-06 19:19:06+02:00,-7200,True,False,"['.bumpversion.cfg', 'README.md', '__init__.py', 'cli.py', '__init__.py', '__init__.py', 'language.py', 'personal_dict.py', 'hunspell.py', 'setup.cfg', 'test_cli_language.py', 'test_cli_personal_dict.py', 'test_hunspell.py']",['6a04e6f4b043cbf3d1653639fec0f8dcbc8a4b43'],56,365,421,13,0.2,1.0,0.6057142857142858
+bf29b2e15f926c840122fdea492a5862436f6694,Continue development,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-07 13:59:30+02:00,-7200,2021-04-07 13:59:30+02:00,-7200,True,False,"['.pre-commit-config.yaml', '.yamllint', 'README.md', '__init__.py', '__init__.py', 'files.py', 'language.py', 'personal_dict.py', 'version.py', '__init__.py', 'dictionaries.py', 'version.py', 'setup.cfg', 'test_cli_files.py', 'test_cli_language.py', 'test_cli_personal_dict.py', 'test_cli_version.py', 'test_hunspell_dictionaries.py', 'test_hunspell_version.py']",['9abd9f402aa5b84b2aeb3b737bdfad5a99139749'],74,881,955,19,0.14792899408284024,0.5650887573964497,0.7041420118343196
+2bf86852f6457639deab09efa4305e12850fe8a1,Implemented basic spell cheking.,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-07 19:31:34+02:00,-7200,2021-04-07 19:31:34+02:00,-7200,True,False,"['pre-commit-autoupdate.yml', 'pre-commit.yml', 'update-copyright-years-in-license-file.yml', '__init__.py', '__init__.py', 'spellcheck.py', 'spellchecker.py', 'test_cli_language.py', 'test_spellchecker.py']",['bf29b2e15f926c840122fdea492a5862436f6694'],3,588,591,9,0.21301775147928995,0.7100591715976331,0.0650887573964497
+1aa4f102411f63a6456bb63051dce109ab0995d5,First alpha release,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-08 12:42:39+02:00,-7200,2021-04-08 12:42:39+02:00,-7200,True,False,"['dependabot.yml', 'ci.yml', 'README.md', '__init__.py', '__init__.py', 'files.py', 'language.py', 'languages.py', 'spellchecker.py', 'setup.cfg', 'test_cli_files.py', 'test_cli_language.py', 'test_cli_personal_dict.py', 'test_cli_version.py', 'test_txt_implementation.py', 'test_spellchecker.py']",['2bf86852f6457639deab09efa4305e12850fe8a1'],122,511,633,16,0.6347826086956522,0.991304347826087,0.7739130434782608
+9b4215a4662b0d2dccead4555a82fefb83615b48,Add documentation,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-08 13:41:37+02:00,-7200,2021-04-08 13:41:37+02:00,-7200,True,False,"['.bumpversion.cfg', '.editorconfig', '.readthedocs.yml', '.yamllint', 'README.md', 'Makefile', 'api.rst', 'conf.py', 'index.rst', 'install.rst', 'make.bat', 'tutorial.rst', '__init__.py', 'languages.py', 'dictionaries.py', 'spellcheck.py', 'version.py', 'spellchecker.py', 'setup.cfg', 'test_txt_implementation.py', 'test_spellchecker.py']",['1aa4f102411f63a6456bb63051dce109ab0995d5'],121,350,471,21,,,
+c4fef47254cdc8d875ec07369fd7dc101aa49542,Document public API,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 10:06:09+02:00,-7200,2021-04-09 10:06:09+02:00,-7200,True,False,"['README.md', 'override-styles.css', 'api.rst', 'conf.py', '__init__.py', '__init__.py', 'languages.py', 'version.py', 'exceptions.py', 'dictionaries.py', 'spellcheck.py', 'spellchecker.py', 'test_cli_language.py', 'test_cli_personal_dict.py', 'test_cli_version.py']",['9b4215a4662b0d2dccead4555a82fefb83615b48'],81,301,382,15,0.2,0.0,0.4
+f0c2f6d6b2f72dfc95f6aa91ab018659c7ff197d,Add __init__.py file for coverage,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 10:08:18+02:00,-7200,2021-04-09 10:08:18+02:00,-7200,True,False,['__init__.py'],['c4fef47254cdc8d875ec07369fd7dc101aa49542'],0,1,1,1,,,
+4e0f115df5c9e8f4454570412eff9a852ec8a8f4,Implement programatic interface building,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 11:00:38+02:00,-7200,2021-04-09 11:00:38+02:00,-7200,True,False,"['api.rst', 'conf.py', 'tutorial.rst', '__init__.py', 'exceptions.py', 'dictionaries.py', 'spellchecker.py', 'test_txt_implementation.py']",['f0c2f6d6b2f72dfc95f6aa91ab018659c7ff197d'],7,205,212,8,0.2876712328767123,1.0,0.5068493150684932
+1ea1ba5f79def17873024c35f459121d68a4dd9f,Remove uneeded argument,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 11:03:00+02:00,-7200,2021-04-09 11:03:00+02:00,-7200,True,False,"['README.md', 'spellchecker.py']",['4e0f115df5c9e8f4454570412eff9a852ec8a8f4'],2,1,3,2,0.0,0.0,1.0
+3a932c23cad89e6e69424ef0041a9ae65e7007a8,Improve LANG environment variable handling to avoid polluting user environmental variables namespace,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 11:17:17+02:00,-7200,2021-04-09 11:17:17+02:00,-7200,True,False,"['.bumpversion.cfg', '__init__.py', 'dictionaries.py', 'version.py', 'setup.cfg']",['1ea1ba5f79def17873024c35f459121d68a4dd9f'],7,13,20,5,0.0,0.0,1.0
+c7870cab0e72602dfdc2166803019f3a7ea1f55b,Improve programatic API interface builiding,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 11:46:18+02:00,-7200,2021-04-09 11:46:18+02:00,-7200,True,False,"['tutorial.rst', 'test_txt_implementation.py']",['3a932c23cad89e6e69424ef0041a9ae65e7007a8'],22,58,80,2,0.1111111111111111,1.0,0.0
+1d734131d1539eb2a615de2fbd2cf3a3c4578870,Add support for '-i' option in hunspell call (input encoding),Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 11:52:55+02:00,-7200,2021-04-09 11:52:55+02:00,-7200,True,False,"['spellcheck.py', 'spellchecker.py']",['c7870cab0e72602dfdc2166803019f3a7ea1f55b'],1,15,16,2,0.0,1.0,0.0
+d2e31fd681a7904d8e6e8b86b7f2728799b7591b,Improvements and fixes for documentation,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 12:18:23+02:00,-7200,2021-04-09 12:18:23+02:00,-7200,True,False,"['api.rst', 'conf.py', 'index.rst', 'tutorial.rst', '__init__.py', 'dictionaries.py', 'spellchecker.py']",['1d734131d1539eb2a615de2fbd2cf3a3c4578870'],8,18,26,7,,,
+a8246be0bfca2f5b618f31c0373a6a724b85a44f,Add support for multiple personal dictionaries in calls,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 13:09:51+02:00,-7200,2021-04-09 13:09:51+02:00,-7200,True,False,"['index.rst', 'tutorial.rst', '__init__.py', 'files.py', 'personal_dicts.py', 'spellcheck.py', 'spellchecker.py', 'test_cli_files.py', 'test_cli_language.py', 'test_cli_personal_dict.py', 'test_cli_personal_dicts.py', 'test_cli_version.py', 'test_txt_implementation.py', 'test_spellchecker.py']",['d2e31fd681a7904d8e6e8b86b7f2728799b7591b'],228,274,502,14,0.0,0.0,0.0
+091393041207a2f4b549f42db7a553a8ec3a4bda,Add support for personal dictionaries files by globs,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 13:38:30+02:00,-7200,2021-04-09 13:38:30+02:00,-7200,True,False,"['tutorial.rst', '__init__.py', 'files.py', 'personal_dicts.py', 'spellcheck.py', 'test_cli_personal_dicts.py']",['a8246be0bfca2f5b618f31c0373a6a724b85a44f'],22,50,72,6,0.0,0.0,1.0
+4990031a6614879a83291e73fd7e6ef9e38dac4e,Add more tests,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 14:20:01+02:00,-7200,2021-04-09 14:20:01+02:00,-7200,True,False,"['spellchecker.py', 'setup.cfg', 'test_hunspell_dictionaries.py', 'test_spellchecker.py']",['091393041207a2f4b549f42db7a553a8ec3a4bda'],7,80,87,4,0.4782608695652174,0.4782608695652174,0.4782608695652174
+a6386df6bb11afb711980b54f6b8fb0ec0867f1b,Fix errors in documentation,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 14:53:50+02:00,-7200,2021-04-09 14:53:50+02:00,-7200,True,False,"['.bumpversion.cfg', 'conf.py', '__init__.py', 'spellchecker.py', 'setup.cfg']",['4990031a6614879a83291e73fd7e6ef9e38dac4e'],13,13,26,5,,,
+e11298bc933028fdaa8fbc1046c77a0dafa442e0,Add support for '-i' Hunspell option (input encoding) in CLI extension,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-09 15:22:02+02:00,-7200,2021-04-09 15:22:02+02:00,-7200,True,False,"['tutorial.rst', '__init__.py', 'test_cli_encoding.py', 'test_cli_files.py', 'test_cli_language.py', 'test_cli_personal_dicts.py', 'test_cli_version.py', 'test_hunspell_dictionaries.py', 'test_txt_implementation.py']",['a6386df6bb11afb711980b54f6b8fb0ec0867f1b'],9,159,168,9,0.20987654320987653,0.7654320987654321,0.7654320987654321
+12eaf2914b302314288e2c186d929ba918738a5b,Fix style error with sphinx_rtd_theme v0.5.2,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-10 12:54:39+02:00,-7200,2021-04-10 12:54:39+02:00,-7200,True,False,['override-styles.css'],['e11298bc933028fdaa8fbc1046c77a0dafa442e0'],0,6,6,1,,,
+ef5f38e1291342b8955d93305ceabd4cc423f86f,Update pre-commit hooks versions (#5),github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-12 09:24:32+02:00,-7200,2021-04-12 09:24:32+02:00,-7200,True,False,['.pre-commit-config.yaml'],['12eaf2914b302314288e2c186d929ba918738a5b'],2,2,4,1,,,
+70c0ce61aefabaf2ebc16fb97919a8db0204840c,Improve 'extend_argument_parser' function name,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-12 09:59:46+02:00,-7200,2021-04-12 09:59:46+02:00,-7200,True,False,"['api.rst', 'tutorial.rst', '__init__.py', '__init__.py', 'test_cli_encoding.py', 'test_cli_files.py', 'test_cli_language.py', 'test_cli_personal_dicts.py', 'test_cli_version.py', 'test_txt_implementation.py']",['ef5f38e1291342b8955d93305ceabd4cc423f86f'],53,61,114,10,0.0,1.0,0.5
+e12ab8b057b5675ada1de2ef0e5f5e8ad44b6de1,Bump version,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-12 10:11:42+02:00,-7200,2021-04-12 10:11:42+02:00,-7200,True,False,"['.bumpversion.cfg', '__init__.py', 'spellchecker.py', 'setup.cfg']",['70c0ce61aefabaf2ebc16fb97919a8db0204840c'],4,11,15,4,0.0,0.0,0.0
+9c33ae50dd2cacac23f5dcdb42259abcacf93ad4,Generate CHANGELOG from Github releases inside documentation,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-12 10:42:44+02:00,-7200,2021-04-12 10:42:44+02:00,-7200,True,False,"['changelog.rst', 'conf.py', 'index.rst', 'setup.cfg']",['e12ab8b057b5675ada1de2ef0e5f5e8ad44b6de1'],0,12,12,4,,,
+23e6e49374cdca4772bc566aa212cee44d1fb4a8,Hide changelog entries in documentation toctree index,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-12 10:56:19+02:00,-7200,2021-04-12 10:56:19+02:00,-7200,True,False,"['override-styles.css', 'index.rst']",['9c33ae50dd2cacac23f5dcdb42259abcacf93ad4'],1,6,7,2,,,
+21980a9a14dd3b0856a73733db14ea8143db6e70,Autoupdate documentation copyright years with CI,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-13 10:02:16+02:00,-7200,2021-04-13 10:02:16+02:00,-7200,True,False,"['update-copyright-years-in-license-file.yml', 'update-copyright-years.yml', 'conf.py']",['23e6e49374cdca4772bc566aa212cee44d1fb4a8'],20,30,50,3,,,
+bdeef194f11c30564ee8b85d1ac4f95e432e4b6b,Update pre-commit hooks versions (#7),github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-19 09:26:14+02:00,-7200,2021-04-19 09:26:14+02:00,-7200,True,False,['.pre-commit-config.yaml'],['21980a9a14dd3b0856a73733db14ea8143db6e70'],2,2,4,1,,,
+28275263db41a1e31e58041f3c0c8cbcc16eeaf9,"Bump pytest from 6.2.1 to 6.2.3 (#16)
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.2.1 to 6.2.3.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/6.2.1...6.2.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-22 09:45:15+02:00,-7200,2021-04-22 09:45:15+02:00,-7200,True,False,['setup.cfg'],['bdeef194f11c30564ee8b85d1ac4f95e432e4b6b'],1,1,2,1,,,
+cc7806264a2732bf53b3bd1b43a825742b650de6,"Bump pre-commit from 2.9.3 to 2.12.1 (#15)
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.9.3 to 2.12.1.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.9.3...v2.12.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-22 09:45:29+02:00,-7200,2021-04-22 09:45:29+02:00,-7200,True,False,['setup.cfg'],['28275263db41a1e31e58041f3c0c8cbcc16eeaf9'],1,1,2,1,,,
+aaafd6a03e40e80541d78443ac812bfa2f6043c4,"Bump flake8 from 3.8.4 to 3.9.1 (#14)
+
+Bumps [flake8](https://gitlab.com/pycqa/flake8) from 3.8.4 to 3.9.1.
+- [Release notes](https://gitlab.com/pycqa/flake8/tags)
+- [Commits](https://gitlab.com/pycqa/flake8/compare/3.8.4...3.9.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-22 10:07:37+02:00,-7200,2021-04-22 10:07:37+02:00,-7200,True,False,['setup.cfg'],['cc7806264a2732bf53b3bd1b43a825742b650de6'],2,2,4,1,,,
+fece9a8ce91a0347abce30d83b73dbb6e5b41448,"Bump yamllint from 1.25.0 to 1.26.1 (#13)
+
+Bumps [yamllint](https://github.com/adrienverge/yamllint) from 1.25.0 to 1.26.1.
+- [Release notes](https://github.com/adrienverge/yamllint/releases)
+- [Changelog](https://github.com/adrienverge/yamllint/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/adrienverge/yamllint/compare/v1.25.0...v1.26.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-22 10:07:52+02:00,-7200,2021-04-22 10:07:52+02:00,-7200,True,False,['setup.cfg'],['aaafd6a03e40e80541d78443ac812bfa2f6043c4'],2,2,4,1,,,
+94185128d8b53d56eb009534462d98882c1a0fa7,"Bump sphinx-github-changelog from 1.0.2 to 1.0.8 (#11)
+
+Bumps [sphinx-github-changelog](https://github.com/ewjoachim/sphinx-github-changelog) from 1.0.2 to 1.0.8.
+- [Release notes](https://github.com/ewjoachim/sphinx-github-changelog/releases)
+- [Changelog](https://github.com/ewjoachim/sphinx-github-changelog/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/ewjoachim/sphinx-github-changelog/compare/1.0.2...1.0.8)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-22 10:08:02+02:00,-7200,2021-04-22 10:08:02+02:00,-7200,True,False,['setup.cfg'],['fece9a8ce91a0347abce30d83b73dbb6e5b41448'],2,2,4,1,,,
+c9b2fa257b7118ce63f7066208555b0a5d025dad,"Bump pre-commit/action from v2.0.2 to v2.0.3 (#8)
+
+Bumps [pre-commit/action](https://github.com/pre-commit/action) from v2.0.2 to v2.0.3.
+- [Release notes](https://github.com/pre-commit/action/releases)
+- [Commits](https://github.com/pre-commit/action/compare/v2.0.2...9b88afc9cd57fd75b655d5c71bd38146d07135fe)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-22 10:11:23+02:00,-7200,2021-04-22 10:11:23+02:00,-7200,True,False,['pre-commit.yml'],['94185128d8b53d56eb009534462d98882c1a0fa7'],1,1,2,1,,,
+7631a1061d7b50f3542db2242c543168be5477d0,"Bump sphinx from 3.5.3 to 3.5.4 (#9)
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.5.3 to 3.5.4.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/4.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/commits/v3.5.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-22 10:11:36+02:00,-7200,2021-04-22 10:11:36+02:00,-7200,True,False,['setup.cfg'],['c9b2fa257b7118ce63f7066208555b0a5d025dad'],2,2,4,1,,,
+f954094b086cc9a58f55ea16403da8485c6c5dba,"Bump isort from 5.7.0 to 5.8.0 (#12)
+
+Bumps [isort](https://github.com/pycqa/isort) from 5.7.0 to 5.8.0.
+- [Release notes](https://github.com/pycqa/isort/releases)
+- [Changelog](https://github.com/PyCQA/isort/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/pycqa/isort/compare/5.7.0...5.8.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-22 10:11:51+02:00,-7200,2021-04-22 10:11:51+02:00,-7200,True,False,['setup.cfg'],['7631a1061d7b50f3542db2242c543168be5477d0'],2,2,4,1,,,
+fe082206bfea8e9fe9fc9fb6ae0e249681bb22d0,"Bump pytest-cov from 2.10.1 to 2.11.1 (#10)
+
+Bumps [pytest-cov](https://github.com/pytest-dev/pytest-cov) from 2.10.1 to 2.11.1.
+- [Release notes](https://github.com/pytest-dev/pytest-cov/releases)
+- [Changelog](https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest-cov/compare/v2.10.1...v2.11.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-04-22 10:14:54+02:00,-7200,2021-04-22 10:14:54+02:00,-7200,True,False,['setup.cfg'],['f954094b086cc9a58f55ea16403da8485c6c5dba'],2,2,4,1,,,
+225167fcb2615fe3e98efff0b400c0fd75d72ce2,Replace Dependabot by Renovate,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-22 14:56:23+02:00,-7200,2021-04-22 14:56:23+02:00,-7200,True,False,"['dependabot.yml', 'renovate.json5']",['fe082206bfea8e9fe9fc9fb6ae0e249681bb22d0'],17,22,39,2,,,
+c544cda7fc0b4b57ebd0046892de1781346fade3,Launch 'pre-commit autoupdate' workflow twice a year,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-22 18:38:57+02:00,-7200,2021-04-22 18:38:57+02:00,-7200,True,False,['pre-commit-autoupdate.yml'],['225167fcb2615fe3e98efff0b400c0fd75d72ce2'],1,1,2,1,,,
+5a0648130603ae221b288a58aba17967f5ef5168,Add documentation build workflow to CI,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-04-23 14:02:02+02:00,-7200,2021-04-23 14:02:02+02:00,-7200,True,False,"['docs-build.yml', '.readthedocs.yml', 'setup.cfg']",['c544cda7fc0b4b57ebd0046892de1781346fade3'],2,42,44,3,,,
+89405bab4d28636d01274f78abb43befaefd4d22,Add dinamic 'looks_like_a_word' creator function,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-06-04 14:16:50+02:00,-7200,2021-06-04 14:16:50+02:00,-7200,True,False,"['.bumpversion.cfg', 'api.rst', 'tutorial.rst', '__init__.py', 'spellchecker.py', 'word.py', 'setup.cfg', 'test_txt_implementation.py', 'test_spellchecker.py', 'test_word.py']",['5a0648130603ae221b288a58aba17967f5ef5168'],61,211,272,10,0.0,1.0,0.0
+c9ef6d41e6f4cb564a15a2a5d8880734d2f98552,Add CLI arguments to customize 'look_like_a_word' behaviour,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-06-04 19:27:48+02:00,-7200,2021-06-04 19:27:48+02:00,-7200,True,False,"['README.md', 'tutorial.rst', '__init__.py', 'spellcheck.py', 'test_cli_encoding.py', 'test_cli_files.py', 'test_cli_language.py', 'test_cli_personal_dicts.py', 'test_cli_version.py', 'test_txt_implementation.py']",['89405bab4d28636d01274f78abb43befaefd4d22'],36,218,254,10,0.0,0.13821138211382114,0.056910569105691054
+d48daf5723916ba0a40748d479da7d5c21e483cc,Fix error in tutorial,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-06-04 19:39:43+02:00,-7200,2021-06-04 19:39:43+02:00,-7200,True,False,['tutorial.rst'],['c9ef6d41e6f4cb564a15a2a5d8880734d2f98552'],0,3,3,1,,,
+7ccc90b0e6f5c4100f00e3048b67041a10d7c2de,Add CLI arguments to control spellchecking report,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-06-04 21:06:31+02:00,-7200,2021-06-04 21:06:31+02:00,-7200,True,False,"['.bumpversion.cfg', 'tutorial.rst', '__init__.py', '__init__.py', 'setup.cfg', 'test_cli_encoding.py', 'test_cli_files.py', 'test_cli_language.py', 'test_cli_personal_dicts.py', 'test_cli_version.py', 'test_txt_implementation.py']",['d48daf5723916ba0a40748d479da7d5c21e483cc'],11,284,295,11,0.0,0.05732484076433121,0.05732484076433121
+2d79fb5fe738e1dcc30a24b3e37409613c64c722,Add option to ignore words containing two or more uppercase letters,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-06-04 21:31:16+02:00,-7200,2021-06-04 21:31:16+02:00,-7200,True,False,"['.bumpversion.cfg', 'tutorial.rst', '__init__.py', '__init__.py', 'word.py', 'setup.cfg', 'test_cli_encoding.py', 'test_cli_files.py', 'test_cli_language.py', 'test_cli_personal_dicts.py', 'test_cli_version.py', 'test_txt_implementation.py', 'test_word.py']",['7ccc90b0e6f5c4100f00e3048b67041a10d7c2de'],104,172,276,13,0.0,0.3235294117647059,0.058823529411764705
+916fe7504b92a6989a376cb8d35d77421abdd335,Ignore some lines in coverage report,Álvaro Mondéjar,mondejar1994@gmail.com,Álvaro Mondéjar,mondejar1994@gmail.com,2021-06-04 21:42:50+02:00,-7200,2021-06-04 21:42:50+02:00,-7200,True,False,"['__init__.py', 'spellchecker.py']",['2d79fb5fe738e1dcc30a24b3e37409613c64c722'],19,23,42,2,0.0,0.0,0.0
+a87280d9342bd56e3db64eef0cfc0e19ccc96aea,Add pre-commit repo-stream updater,Álvaro Mondéjar Rubio,mondejar1994@gmail.com,Álvaro Mondéjar Rubio,mondejar1994@gmail.com,2021-06-15 19:45:13+02:00,-7200,2021-06-15 19:45:13+02:00,-7200,True,False,['.pre-commit-config.yaml'],['916fe7504b92a6989a376cb8d35d77421abdd335'],0,7,7,1,,,
+e9872cac3a2b614d67998fbfa05bc452f04efac7,Add 'dev-extras-required' pre-commit hook,Álvaro Mondéjar Rubio,mondejar1994@gmail.com,Álvaro Mondéjar Rubio,mondejar1994@gmail.com,2021-06-15 21:01:13+02:00,-7200,2021-06-15 21:01:13+02:00,-7200,True,False,"['.pre-commit-config.yaml', 'setup.cfg']",['a87280d9342bd56e3db64eef0cfc0e19ccc96aea'],0,5,5,2,,,
+ab51bf6b6d53a485e6ed2f842e7198c01a61cf1b,Update dependency flake8 to v3.9.2,Renovate Bot,bot@renovateapp.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2021-07-01 00:11:20+00:00,0,2021-07-01 01:44:04+00:00,0,True,False,['setup.cfg'],['e9872cac3a2b614d67998fbfa05bc452f04efac7'],2,2,4,1,,,
+3a4697029e9565643cf02ddb922930509a532e48,Update dependency pytest to v6.2.4,Renovate Bot,bot@renovateapp.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2021-07-01 01:44:22+00:00,0,2021-07-01 03:12:03+00:00,0,True,False,['setup.cfg'],['ab51bf6b6d53a485e6ed2f842e7198c01a61cf1b'],3,3,6,1,,,
+7abdad4b17c60a0e1bc604d995f630f80fe036aa,Update precommit hook PyCQA/flake8 to v3.9.2,Renovate Bot,bot@renovateapp.com,renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2021-07-01 03:12:23+00:00,0,2021-07-01 04:26:33+00:00,0,True,False,['.pre-commit-config.yaml'],['3a4697029e9565643cf02ddb922930509a532e48'],2,2,4,1,,,
+eed05f8e6224570973befe008024a202f11408e6,"Update shogo82148/actions-upload-release-asset action to v1.3.0 (#33)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>",renovate[bot],29139614+renovate[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-01 10:37:41+02:00,-7200,2021-07-01 10:37:41+02:00,-7200,True,False,['ci.yml'],['7abdad4b17c60a0e1bc604d995f630f80fe036aa'],1,1,2,1,,,
+578ad9847d65fdbe1b777c113ddac9c24829feb8,"Update precommit hook mondeja/repo-stream to v1.1.0 (#32)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>",renovate[bot],29139614+renovate[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-01 10:39:16+02:00,-7200,2021-07-01 10:39:16+02:00,-7200,True,False,['.pre-commit-config.yaml'],['eed05f8e6224570973befe008024a202f11408e6'],1,1,2,1,,,
+a99d2e890d3ae8b5e13198053229a2911080757b,"Update precommit hook pre-commit/pre-commit-hooks to v4 (#35)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>",renovate[bot],29139614+renovate[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-01 12:32:15+02:00,-7200,2021-07-01 12:32:15+02:00,-7200,True,False,['.pre-commit-config.yaml'],['578ad9847d65fdbe1b777c113ddac9c24829feb8'],1,1,2,1,,,
+37c60e61a980968000ba502bbd75c707f43b68b2,Update pre-commit hooks versions (#24),github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-01 13:20:42+02:00,-7200,2021-07-01 13:20:42+02:00,-7200,True,False,['.pre-commit-config.yaml'],['a99d2e890d3ae8b5e13198053229a2911080757b'],4,4,8,1,,,
+03caf2f9fc69dbfefdfaabbde039a855eb325f78,"Update dependency isort to v5.9.1 (#23)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>",renovate[bot],29139614+renovate[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-01 13:22:20+02:00,-7200,2021-07-01 13:22:20+02:00,-7200,True,False,['setup.cfg'],['37c60e61a980968000ba502bbd75c707f43b68b2'],2,2,4,1,,,
+54a8c555ff05d03e40b23850d98d9f2822b0cfd4,"Update dependency pytest-cov to v2.12.1 (#26)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>",renovate[bot],29139614+renovate[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-01 13:22:50+02:00,-7200,2021-07-01 13:22:50+02:00,-7200,True,False,['setup.cfg'],['03caf2f9fc69dbfefdfaabbde039a855eb325f78'],2,2,4,1,,,
+00a20f5fa2008ba4e2bd541b68d3daf87adcebc7,"Update peter-evans/create-pull-request action to v3.10.0 (#28)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>",renovate[bot],29139614+renovate[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-01 13:23:05+02:00,-7200,2021-07-01 13:23:05+02:00,-7200,True,False,['pre-commit-autoupdate.yml'],['54a8c555ff05d03e40b23850d98d9f2822b0cfd4'],1,1,2,1,,,
+ea01e848a0e4e6e274e73addb2cfd431a28f3897,"Add editorconfig linting (#27)
+
+* repo-stream update
+
+* Update .pre-commit-config.yaml
+
+* Update .editorconfig",Álvaro Mondéjar,mondejar1994@gmail.com,GitHub,noreply@github.com,2021-07-01 13:23:37+02:00,-7200,2021-07-01 13:23:37+02:00,-7200,True,False,"['.editorconfig', '.pre-commit-config.yaml']",['00a20f5fa2008ba4e2bd541b68d3daf87adcebc7'],8,5,13,2,,,
+2aa33f4457052a0ced3a03015b3ae4762b766608,"Update dependency pre-commit to v2.13.0 (#25)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>",renovate[bot],29139614+renovate[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-01 13:25:32+02:00,-7200,2021-07-01 13:25:32+02:00,-7200,True,False,['setup.cfg'],['ea01e848a0e4e6e274e73addb2cfd431a28f3897'],1,1,2,1,,,
+06f7bd87686b6d7311b4a9bb58f9052fe10108cf,"Update precommit hook mondeja/pre-commit-hooks to v1.5.2 (#31)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>",renovate[bot],29139614+renovate[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-01 18:34:20+02:00,-7200,2021-07-01 18:34:20+02:00,-7200,True,False,['.pre-commit-config.yaml'],['2aa33f4457052a0ced3a03015b3ae4762b766608'],1,1,2,1,,,
+50bb5e5f2e2a2e45ae759f475ac152456c35ebd5,"Update precommit hook asottile/pyupgrade to v2.20.0 (#30)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>",renovate[bot],29139614+renovate[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-04 15:23:19+02:00,-7200,2021-07-04 15:23:19+02:00,-7200,True,False,['.pre-commit-config.yaml'],['06f7bd87686b6d7311b4a9bb58f9052fe10108cf'],1,1,2,1,,,
+5501d3ce683ee609a7fcd8ef750aa033d6a45928,"Update precommit hook PyCQA/isort to v5.9.2 (#29)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>",renovate[bot],29139614+renovate[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-07-08 12:59:26+02:00,-7200,2021-07-08 12:59:26+02:00,-7200,True,False,['.pre-commit-config.yaml'],['50bb5e5f2e2a2e45ae759f475ac152456c35ebd5'],1,1,2,1,,,
+5229255184d36c159e306db07f8a07314158359a,Disable Renovate dependency dashboard,Álvaro Mondéjar,mondejar1994@gmail.com,GitHub,noreply@github.com,2021-08-30 11:23:43+02:00,-7200,2021-08-30 11:23:43+02:00,-7200,True,False,['renovate.json5'],['5501d3ce683ee609a7fcd8ef750aa033d6a45928'],0,1,1,1,,,
+8db36cdfcc5aa17948a9bf0c24885ea39badbb5a,Update license badge logo,Álvaro Mondéjar,mondejar1994@gmail.com,GitHub,noreply@github.com,2021-09-07 12:59:58+02:00,-7200,2021-09-07 12:59:58+02:00,-7200,True,False,['README.md'],['5229255184d36c159e306db07f8a07314158359a'],1,1,2,1,,,
+c6bd734ec8c1b890ad48d3c798bc4f63ee266a77,Add support for Python 3.10 (#37),Álvaro Mondéjar,mondejar1994@gmail.com,GitHub,noreply@github.com,2021-10-06 11:58:24+02:00,-7200,2021-10-06 11:58:24+02:00,-7200,True,False,"['ci.yml', '.pre-commit-config.yaml', 'setup.cfg']",['8db36cdfcc5aa17948a9bf0c24885ea39badbb5a'],8,7,15,3,,,
+8349ac4dc256b646d6e93e7b3cefabe42e9a45b7,Delete renovate.json5,Álvaro Mondéjar,mondejar1994@gmail.com,GitHub,noreply@github.com,2021-11-08 15:04:41+01:00,-3600,2021-11-08 15:04:41+01:00,-3600,True,False,['renovate.json5'],['c6bd734ec8c1b890ad48d3c798bc4f63ee266a77'],23,0,23,1,,,
+20a27702b5a7e33b570fadfcbaba45e5265dd5fa,Add token to pre-commit autoupdate workflow (#39),Álvaro Mondéjar,mondejar1994@gmail.com,GitHub,noreply@github.com,2022-01-01 20:20:53+01:00,-3600,2022-01-01 20:20:53+01:00,-3600,True,False,['pre-commit-autoupdate.yml'],['8349ac4dc256b646d6e93e7b3cefabe42e9a45b7'],0,1,1,1,,,
+d7195146e8df8449a61ba1c89a134cec26713739,"Update license copyright year(s) (#40)
+
+* docs(license): update copyright year(s)
+
+* docs(license): update copyright year(s)
+
+Co-authored-by: github-actions <github-actions@github.com>",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-02 12:50:00+01:00,-3600,2022-01-02 12:50:00+01:00,-3600,True,False,"['LICENSE', 'conf.py']",['20a27702b5a7e33b570fadfcbaba45e5265dd5fa'],2,2,4,2,,,
+9829842628a2cf507b7544cbb7fa51e078b83b56,"Update pre-commit hooks versions (#38)
+
+Co-authored-by: mondeja <mondeja@users.noreply.github.com>",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-01-04 07:10:36+01:00,-3600,2022-01-04 07:10:36+01:00,-3600,True,False,['.pre-commit-config.yaml'],['d7195146e8df8449a61ba1c89a134cec26713739'],10,10,20,1,,,
+a879f5cbe4bc68915959af424ef358fdc47ffebd,"Update license copyright year(s) (#42)
+
+* docs(license): update copyright year(s)",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-01-03 17:49:32+01:00,-3600,2023-01-03 17:49:32+01:00,-3600,True,False,"['LICENSE', 'conf.py']",['9829842628a2cf507b7544cbb7fa51e078b83b56'],2,2,4,2,,,
+acb936d9c5ce1f08a51b2204ddd4a82ef55c6593,"Drop support for Python < 3.7 (#43)
+
+* Drop support for Python < 3.7
+
+* Fix errors
+
+* Fix linting
+
+* Fix docs dependencies",Álvaro Mondéjar,mondejar1994@gmail.com,GitHub,noreply@github.com,2023-01-04 17:48:27+01:00,-3600,2023-01-04 17:48:27+01:00,-3600,True,False,"['.bumpversion.cfg', 'ci.yml', 'docs-build.yml', 'pre-commit-autoupdate.yml', 'pre-commit.yml', 'update-copyright-years.yml', '.gitignore', '.pre-commit-config.yaml', '.readthedocs.yml', 'README.md', 'conf.py', '__init__.py', '__init__.py', 'dictionaries.py', 'spellcheck.py', 'version.py', 'setup.cfg']",['a879f5cbe4bc68915959af424ef358fdc47ffebd'],123,83,206,17,,,
+4ac3d60737389fd3f1f32d79a6b6ffc36a558db3,Update actions versions in CI,Álvaro Mondéjar Rubio,mondejar1994@gmail.com,Álvaro Mondéjar Rubio,mondejar1994@gmail.com,2023-01-04 17:55:53+01:00,-3600,2023-01-04 17:55:53+01:00,-3600,True,False,['ci.yml'],['acb936d9c5ce1f08a51b2204ddd4a82ef55c6593'],11,11,22,1,,,

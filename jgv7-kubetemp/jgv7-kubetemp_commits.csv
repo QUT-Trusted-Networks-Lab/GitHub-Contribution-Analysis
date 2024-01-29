@@ -1,0 +1,214 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+66b3ebe591d37bd60631d7bd97b665829f7210e2,Initial commit,Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-03-28 22:41:07-07:00,25200,2019-03-28 22:41:07-07:00,25200,True,False,"['.gitignore', 'LICENSE', 'README.md']",[],0,127,127,3,,,
+8118ca9173f923ab0f266dc7d628e17db7e56cd2,updated,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 00:14:37-07:00,25200,2019-03-29 00:14:37-07:00,25200,True,False,"['__init__.py', 'core.py']",['66b3ebe591d37bd60631d7bd97b665829f7210e2'],0,70,70,2,1.0,1.0,1.0
+e82eba6e2f161edfe587f9e92a53276bc3fe6dd0,updated,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 00:26:43-07:00,25200,2019-03-29 00:26:43-07:00,25200,True,False,"['README.md', 'core.py']",['8118ca9173f923ab0f266dc7d628e17db7e56cd2'],2,1,3,2,,,
+f83582a51c47ceb014a1f0b2abdf34b30138ed66,added cli tool and setup.py,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 00:27:06-07:00,25200,2019-03-29 00:27:06-07:00,25200,True,False,"['kubetemp', 'setup.py']",['e82eba6e2f161edfe587f9e92a53276bc3fe6dd0'],0,44,44,2,,,
+268e600576dcec39a3d57ef9f0a658a7144a4494,added cli to setuptools,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 00:29:58-07:00,25200,2019-03-29 00:29:58-07:00,25200,True,False,['setup.py'],['f83582a51c47ceb014a1f0b2abdf34b30138ed66'],0,1,1,1,,,
+a434f7343bd9ae27600d61662dbc2d93aaa30401,fixed small bug,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 00:42:15-07:00,25200,2019-03-29 00:42:15-07:00,25200,True,False,"['README.md', 'core.py']",['268e600576dcec39a3d57ef9f0a658a7144a4494'],1,14,15,2,1.0,1.0,1.0
+f54f6a8da234b5088c7ac689957954e46fd420ab,updated installation instructions,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 08:45:23-07:00,25200,2019-03-29 08:45:23-07:00,25200,True,False,"['README.md', 'setup.py']",['a434f7343bd9ae27600d61662dbc2d93aaa30401'],2,8,10,2,,,
+24e253d1c937ff77092bacf7af410ffaff5ea8b7,updated installation instructions,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 08:45:57-07:00,25200,2019-03-29 08:45:57-07:00,25200,True,False,['README.md'],['f54f6a8da234b5088c7ac689957954e46fd420ab'],2,2,4,1,,,
+19f7d606a6a4a573a8ac94b288141d80d4730f76,updated installation instructions,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 08:46:27-07:00,25200,2019-03-29 08:46:27-07:00,25200,True,False,['README.md'],['24e253d1c937ff77092bacf7af410ffaff5ea8b7'],2,2,4,1,,,
+ec393c50ff2faa7078c8d1d41a5ac78ce345f250,updated installation instructions,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 08:46:55-07:00,25200,2019-03-29 08:46:55-07:00,25200,True,False,['README.md'],['19f7d606a6a4a573a8ac94b288141d80d4730f76'],1,1,2,1,,,
+bd08811b03a45259c806b89f67f9af8b08a2f3be,updated description,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 08:51:18-07:00,25200,2019-03-29 08:51:18-07:00,25200,True,False,"['README.md', 'setup.py']",['ec393c50ff2faa7078c8d1d41a5ac78ce345f250'],2,2,4,2,,,
+dc4be2dc12d64285efd936ca58cfeca96c008914,added .travis.yml,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 09:10:11-07:00,25200,2019-03-29 09:10:11-07:00,25200,True,False,['.travis.yml'],['bd08811b03a45259c806b89f67f9af8b08a2f3be'],0,8,8,1,,,
+51b86f250c6e5f7e61cef10e42cdd4e26dfc54b0,add tests,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 09:17:25-07:00,25200,2019-03-29 09:17:25-07:00,25200,True,False,"['.travis.yml', 'test_core.py']",['dc4be2dc12d64285efd936ca58cfeca96c008914'],0,13,13,2,1.0,1.0,1.0
+337e10f5302b6b7f05e6b0b654591a61e16a8e2f,removed update_params,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 09:39:10-07:00,25200,2019-03-29 09:39:10-07:00,25200,True,False,"['.travis.yml', 'kubetemp', '__init__.py', 'core.py', 'test1.tmpl', 'test2.tmpl', 'test_core.py']",['51b86f250c6e5f7e61cef10e42cdd4e26dfc54b0'],21,19,40,7,0.0,0.0,0.0
+f0e9e9676912712e37eb3617b0f5dee31eea663b,add tests for check valid path,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 09:44:33-07:00,25200,2019-03-29 09:44:33-07:00,25200,True,False,"['core.py', 'test_core.py']",['337e10f5302b6b7f05e6b0b654591a61e16a8e2f'],10,11,21,2,0.0,0.0,0.0
+ede6bde78f351dc8c4ab06f4a4951eb8536bf25c,add test files,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 09:44:54-07:00,25200,2019-03-29 09:44:54-07:00,25200,True,False,"['params.json', 'params.yaml']",['f0e9e9676912712e37eb3617b0f5dee31eea663b'],0,6,6,2,,,
+8e46ce6fad2c464402ff956504ccc33611dfa009,more tests,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 09:57:41-07:00,25200,2019-03-29 09:57:41-07:00,25200,True,False,"['core.py', 'test_core.py']",['ede6bde78f351dc8c4ab06f4a4951eb8536bf25c'],1,34,35,2,1.0,1.0,1.0
+bf5597483eb6f55711ed28cdab2289800951656e,more tests,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 10:08:32-07:00,25200,2019-03-29 10:08:32-07:00,25200,True,False,"['params.yml', 'test_core.py']",['8e46ce6fad2c464402ff956504ccc33611dfa009'],3,36,39,2,1.0,1.0,1.0
+750296e95031f2c92cb21fbb2bcf8089350f485d,more tests,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 10:18:25-07:00,25200,2019-03-29 10:18:25-07:00,25200,True,False,"['core.py', 'test_core.py']",['bf5597483eb6f55711ed28cdab2289800951656e'],2,22,24,2,1.0,1.0,1.0
+0ac686ade01a2706a9541da7288bbaa9a54937eb,cleanup,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 10:24:12-07:00,25200,2019-03-29 10:24:12-07:00,25200,True,False,"['test2.tmpl', 'test_core.py']",['750296e95031f2c92cb21fbb2bcf8089350f485d'],2,12,14,2,1.0,1.0,1.0
+1fde649e182b80bfa843701ccd67d923213fbf32,removing python 3.7 due to frequent travis failures,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 10:26:51-07:00,25200,2019-03-29 10:26:51-07:00,25200,True,False,['.travis.yml'],['0ac686ade01a2706a9541da7288bbaa9a54937eb'],1,0,1,1,,,
+9869574809155714d859784125e73e44d76a155a,added build tag,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 10:27:35-07:00,25200,2019-03-29 10:27:35-07:00,25200,True,False,['README.md'],['1fde649e182b80bfa843701ccd67d923213fbf32'],0,3,3,1,,,
+250877509e54fe8b310a40cccfca5aeb72f1145a,don't support any python 2.7,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 10:32:22-07:00,25200,2019-03-29 10:32:22-07:00,25200,True,False,['test_core.py'],['9869574809155714d859784125e73e44d76a155a'],4,4,8,1,,,
+87f52a73e077d89521839d7b073b4aacb7a6184e,updated to version 0.1,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 10:39:12-07:00,25200,2019-03-29 10:39:12-07:00,25200,True,False,"['.gitignore', 'setup.py']",['250877509e54fe8b310a40cccfca5aeb72f1145a'],1,4,5,2,,,
+11b4cfcbee9b0b557276b7582b246818f9084645,cleaned up package meta-data (#1),Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-03-29 10:59:07-07:00,25200,2019-03-29 10:59:07-07:00,25200,True,False,['setup.py'],['87f52a73e077d89521839d7b073b4aacb7a6184e'],6,17,23,1,,,
+5d94d07892df67c843aa97b9f71d8a09e7477dfd,cleaned up package meta-data (#2),Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-03-29 11:01:00-07:00,25200,2019-03-29 11:01:00-07:00,25200,True,False,[],['11b4cfcbee9b0b557276b7582b246818f9084645'],0,0,0,0,,,
+76f21bae34ce4a3d5bc2a69c19d71c6ef539c3c5,"Increment version to 0.1.2 (#3)
+
+* cleaned up package meta-data
+
+* added versions to package
+
+* updated info
+
+* updated
+
+* updated
+
+* increment version to v0.1.2
+
+* fix tests",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-03-29 12:55:07-07:00,25200,2019-03-29 12:55:07-07:00,25200,True,False,['setup.py'],['5d94d07892df67c843aa97b9f71d8a09e7477dfd'],2,3,5,1,,,
+6daf8a9c4bd99244bdf742860c639be612938b16,"Add usage instructions (#4)
+
+Add usage instructions (#4)",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-03-29 13:26:50-07:00,25200,2019-03-29 13:26:50-07:00,25200,True,False,"['README.md', 'kubetemp']",['76f21bae34ce4a3d5bc2a69c19d71c6ef539c3c5'],4,60,64,2,,,
+fc83591384e182a608764f2e062d2391e54a8852,"Remove YAML depreciation error (#5)
+
+Remove YAML depreciation error (#5)",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-03-29 13:31:13-07:00,25200,2019-03-29 13:31:13-07:00,25200,True,False,['core.py'],['6daf8a9c4bd99244bdf742860c639be612938b16'],1,1,2,1,,,
+20ec057ff1566d7db10407c0fd8bbc9cc314c143,"Increment version (#6)
+
+Increment version (#6)",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-03-29 13:38:37-07:00,25200,2019-03-29 13:38:37-07:00,25200,True,False,['setup.py'],['fc83591384e182a608764f2e062d2391e54a8852'],1,1,2,1,,,
+739370b4dec6aba98c4464d876c3f889e1effbfd,"Accept templates from STDIN (#7)
+
+Accept templates from STDIN (#7)",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-03-29 15:19:51-07:00,25200,2019-03-29 15:19:51-07:00,25200,True,False,"['README.md', 'kubetemp', '__init__.py', 'core.py', 'setup.py', 'test1.tmpl', 'test_core.py']",['20ec057ff1566d7db10407c0fd8bbc9cc314c143'],40,36,76,7,0.0,0.0,0.0
+f7dca2c1fc0fe344c3f7978055fec19aa6669498,"Use yaml.safe_load (#8)
+
+PyYAML<=3.13",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-03-29 15:29:43-07:00,25200,2019-03-29 15:29:43-07:00,25200,True,False,['core.py'],['739370b4dec6aba98c4464d876c3f889e1effbfd'],1,1,2,1,,,
+3b4d4a348c7374760f6c1879f66de67dcfbf75bb,incrementing version to v0.2.0,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-03-29 15:32:30-07:00,25200,2019-03-29 15:32:30-07:00,25200,True,False,['setup.py'],['f7dca2c1fc0fe344c3f7978055fec19aa6669498'],1,1,2,1,,,
+6ac6382f130587158fa00ecddceb9c493a1fb110,"Added CLI testing (#9)
+
+Added CLI testing and automated deployments to PyPI",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-03-29 16:51:04-07:00,25200,2019-03-29 16:51:04-07:00,25200,True,False,"['.travis.yml', 'kubetemp', 'cli.py', 'setup.py', 'test.tmpl', 'test_cli.py']",['3b4d4a348c7374760f6c1879f66de67dcfbf75bb'],35,120,155,6,1.0,1.0,0.8305084745762712
+a04dd49c35a40751d3e7e67ed1d3526975d52724,"Add badges (#10)
+
+* cleaned up package meta-data
+
+* added versions to package
+
+* updated info
+
+* updated
+
+* updated
+
+* increment version to v0.1.2
+
+* fix tests
+
+* added usage instructions
+
+* cleanup
+
+* cleanup
+
+* remove depreciation warning
+
+* increment version
+
+* finished refactor
+
+* updated README
+
+* incremented version
+
+* use yaml.safe_load()
+
+* increment version
+
+* added cli testing
+
+* added CLI testing
+
+* updated
+
+* added deploy instructions to travis.yml
+
+* test deployment
+
+* test pypi deploy
+
+* updated deployment process
+
+* adding badges",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-01 18:42:41-07:00,25200,2019-04-01 18:42:41-07:00,25200,True,False,['README.md'],['6ac6382f130587158fa00ecddceb9c493a1fb110'],0,2,2,1,,,
+828bea9b29410a802e10510d851a9993511fbe3c,"Add coveralls tracking (#11)
+
+* cleaned up package meta-data
+
+* added versions to package
+
+* updated info
+
+* updated
+
+* updated
+
+* increment version to v0.1.2
+
+* fix tests
+
+* added usage instructions
+
+* cleanup
+
+* cleanup
+
+* remove depreciation warning
+
+* increment version
+
+* finished refactor
+
+* updated README
+
+* incremented version
+
+* use yaml.safe_load()
+
+* increment version
+
+* added cli testing
+
+* added CLI testing
+
+* updated
+
+* added deploy instructions to travis.yml
+
+* test deployment
+
+* test pypi deploy
+
+* updated deployment process
+
+* adding badges
+
+* updated
+
+* updated
+
+* try to fix coverage
+
+* add coverage badge",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-03 16:29:47-07:00,25200,2019-04-03 16:29:47-07:00,25200,True,False,"['.travis.yml', 'README.md']",['a04dd49c35a40751d3e7e67ed1d3526975d52724'],2,7,9,2,,,
+119066ac9e436636d4d1ddd4a745fa647d96b83c,"Add linting checks (#15)
+
+* init
+
+* fix test",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-03 17:20:26-07:00,25200,2019-04-03 17:20:26-07:00,25200,True,False,"['.travis.yml', 'test_cli.py']",['828bea9b29410a802e10510d851a9993511fbe3c'],1,2,3,2,,,
+8a2da1d5de1c51e9c875dab69ff53f0ab42a1eb2,init (#18),Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-03 17:51:48-07:00,25200,2019-04-03 17:51:48-07:00,25200,True,False,['README.md'],['119066ac9e436636d4d1ddd4a745fa647d96b83c'],0,2,2,1,,,
+95810dcc5f71a2b0ceb11ead7ed4c809ede2d68f,updated (#19),Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-03 17:57:19-07:00,25200,2019-04-03 17:57:19-07:00,25200,True,False,['README.md'],['8a2da1d5de1c51e9c875dab69ff53f0ab42a1eb2'],1,1,2,1,,,
+e553c02651a156c13af85eabc4f636b40181ec37,"Use entrypoints  (#20)
+
+* Init.
+
+* renamed cli function
+
+* iterate version
+
+* added version option",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-04 13:58:54-07:00,25200,2019-04-04 13:58:54-07:00,25200,True,False,"['kubetemp', 'cli.py', 'setup.py', 'test_cli.py']",['95810dcc5f71a2b0ceb11ead7ed4c809ede2d68f'],15,13,28,4,,,
+630e1035aa33c29d70dce74f358e6c8f06143d69,"Streamline versioning using TRAVIS_TAG (#21)
+
+* updated
+
+* updated
+
+* tag version
+
+* testing
+
+* updated",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-04 14:47:42-07:00,25200,2019-04-04 14:47:42-07:00,25200,True,False,"['.travis.yml', '__init__.py', 'cli.py', 'setup.py']",['e553c02651a156c13af85eabc4f636b40181ec37'],3,3,6,4,,,
+1e41f664dd3861d434dc5d5d1764ae7debd15264,updated,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-04-04 14:54:14-07:00,25200,2019-04-04 14:54:14-07:00,25200,True,False,['.travis.yml'],['630e1035aa33c29d70dce74f358e6c8f06143d69'],0,1,1,1,,,
+b2e6abef19d149e5527885685f796f91ea9f3e0a,debugging,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-04-04 14:57:29-07:00,25200,2019-04-04 14:57:29-07:00,25200,True,False,['.travis.yml'],['1e41f664dd3861d434dc5d5d1764ae7debd15264'],1,1,2,1,,,
+0d25b6060bce300aafcadcfa12180b25ccc746f1,updated,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-04-04 14:59:34-07:00,25200,2019-04-04 14:59:34-07:00,25200,True,False,['.travis.yml'],['b2e6abef19d149e5527885685f796f91ea9f3e0a'],1,1,2,1,,,
+b9f43cca508b47fa2252075c12c90a00f3043a56,removed,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-04-04 15:06:42-07:00,25200,2019-04-04 15:06:42-07:00,25200,True,False,['.travis.yml'],['0d25b6060bce300aafcadcfa12180b25ccc746f1'],2,0,2,1,,,
+4b026b064f02b851c6d0164c8e8a7bf9c32c3dba,updated,Jared Vasquez,jared.vasquez@cern.ch,Jared Vasquez,jared.vasquez@cern.ch,2019-04-04 15:14:21-07:00,25200,2019-04-04 15:14:21-07:00,25200,True,False,['.travis.yml'],['b9f43cca508b47fa2252075c12c90a00f3043a56'],0,2,2,1,,,
+19fde9c56b9921040f98b23b8de8974c2edea6d2,updated (#22),Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-04 16:54:23-07:00,25200,2019-04-04 16:54:23-07:00,25200,True,False,['.travis.yml'],['4b026b064f02b851c6d0164c8e8a7bf9c32c3dba'],1,2,3,1,,,
+34b068557b5bb99ca1db12c32a347c99b13d0c92,"Set up CI with Azure Pipelines (#23)
+
+Set up CI with Azure Pipelines (#23)",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-13 14:28:40-07:00,25200,2019-04-13 14:28:40-07:00,25200,True,False,"['README.md', 'azure-pipelines.yml']",['19fde9c56b9921040f98b23b8de8974c2edea6d2'],1,35,36,2,,,
+8339463586e2af148aa0bb9958115e2e65d6ce09,"format readme (#24)
+
+format readme (#24)",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-13 14:33:57-07:00,25200,2019-04-13 14:33:57-07:00,25200,True,False,['README.md'],['34b068557b5bb99ca1db12c32a347c99b13d0c92'],1,0,1,1,,,
+d7a4a202c96e6ddd4f75dcc1ff6de45601f4975e,"Run installs separately (#25)
+
+Run installs separately (#25)",Jared Vasquez,jared.vasquez@yale.edu,GitHub,noreply@github.com,2019-04-13 15:35:30-07:00,25200,2019-04-13 15:35:30-07:00,25200,True,False,"['README.md', 'azure-pipelines.yml']",['8339463586e2af148aa0bb9958115e2e65d6ce09'],3,6,9,2,,,
+af5528fffc491ddb35b6904b913910065b21f975,Init. (#26),Jared Vasquez,jared.physics@gmail.com,GitHub,noreply@github.com,2019-06-21 17:39:15-07:00,25200,2019-06-21 17:39:15-07:00,25200,True,False,['README.md'],['d7a4a202c96e6ddd4f75dcc1ff6de45601f4975e'],4,4,8,1,,,

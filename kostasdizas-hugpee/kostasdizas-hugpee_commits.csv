@@ -1,0 +1,42 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+27b760f7a7ae72dec24dcb73cf647bab2566685d,Initial commit,Kostas Dizas,kdizas@gmail.com,Kostas Dizas,kdizas@gmail.com,2015-10-27 21:14:57+00:00,0,2015-10-27 21:14:57+00:00,0,True,False,"['.gitignore', 'LICENSE']",[],0,79,79,2,,,
+ac60aa1155433886bd39efcc10c4b1aa63785614,First commit,Kostas Dizas,kdizas@gmail.com,Kostas Dizas,kdizas@gmail.com,2015-10-27 22:17:49+00:00,0,2015-10-27 22:20:17+00:00,0,True,False,"['README.md', '__init__.py', 'setup.cfg', 'setup.py']",['27b760f7a7ae72dec24dcb73cf647bab2566685d'],0,259,259,4,0.22794117647058823,0.2867647058823529,0.19117647058823528
+9bb7edf0792f793890f48fd8d6bd4622bb54fd4a,added a warning about compatibility,Kostas Dizas,kdizas@gmail.com,Kostas Dizas,kdizas@gmail.com,2015-10-27 22:46:54+00:00,0,2015-10-27 22:46:54+00:00,0,True,False,['README.md'],['ac60aa1155433886bd39efcc10c4b1aa63785614'],0,6,6,1,,,
+3224a1cd556f1ad653e1f2d7be1c70d8394f75b9,fixed the working example to actually work,Kostas Dizas,kdizas@gmail.com,Kostas Dizas,kdizas@gmail.com,2015-10-28 13:43:38+00:00,0,2015-10-28 13:43:38+00:00,0,True,False,['README.md'],['9bb7edf0792f793890f48fd8d6bd4622bb54fd4a'],1,12,13,1,,,
+4fae6c488b8a5d3f8e0ffefcf6a590f30f150942,fixing an error when the key was not provided,Kostas Dizas,kdizas@gmail.com,Kostas Dizas,kdizas@gmail.com,2015-10-28 13:45:38+00:00,0,2015-10-28 13:45:38+00:00,0,True,False,['__init__.py'],['3224a1cd556f1ad653e1f2d7be1c70d8394f75b9'],3,3,6,1,,,
+ddd9faa1ccaeedb17ad828afc059fde1d730e962,removing badge from readme,Kostas Dizas,kdizas@gmail.com,Kostas Dizas,kdizas@gmail.com,2015-10-28 13:50:23+00:00,0,2015-10-28 13:50:59+00:00,0,True,False,['README.md'],['4fae6c488b8a5d3f8e0ffefcf6a590f30f150942'],3,0,3,1,,,
+1251d05b4daa7dc37b95224334e978ba00625abf,Updated README,Kostas Dizas,kdizas@gmail.com,Kostas Dizas,kdizas@gmail.com,2017-01-17 13:41:07+00:00,0,2017-01-17 13:41:07+00:00,0,True,False,['README.md'],['ddd9faa1ccaeedb17ad828afc059fde1d730e962'],6,0,6,1,,,
+82bfeb5cdab7b78f8e8ebdff579ba72760e8f4a0,Create python-publish.yml,Kostas Dizas,254960+kostasdizas@users.noreply.github.com,GitHub,noreply@github.com,2020-09-25 23:17:17+01:00,-3600,2020-09-25 23:17:17+01:00,-3600,True,False,['python-publish.yml'],['1251d05b4daa7dc37b95224334e978ba00625abf'],0,31,31,1,,,
+f0e05afec6543a55ec7b7cc09531cd1b7677a496,minor version bump,kostasdizas,254960+kostasdizas@users.noreply.github.com,kostasdizas,254960+kostasdizas@users.noreply.github.com,2020-09-25 23:58:05+01:00,-3600,2020-09-25 23:58:05+01:00,-3600,True,False,"['Pipfile', 'Pipfile.lock', '__init__.py', 'setup.cfg', 'setup.py']",['82bfeb5cdab7b78f8e8ebdff579ba72760e8f4a0'],21,118,139,5,,,
+d1ff97a05a2b8e93921a66c71967341b7ee7d855,"Bump urllib3 from 1.25.10 to 1.26.5 (#1)
+
+Bumps [urllib3](https://github.com/urllib3/urllib3) from 1.25.10 to 1.26.5.
+- [Release notes](https://github.com/urllib3/urllib3/releases)
+- [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- [Commits](https://github.com/urllib3/urllib3/compare/1.25.10...1.26.5)
+
+---
+updated-dependencies:
+- dependency-name: urllib3
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-06-17 10:02:26+01:00,-3600,2021-06-17 10:02:26+01:00,-3600,True,False,['Pipfile.lock'],['f0e05afec6543a55ec7b7cc09531cd1b7677a496'],16,13,29,1,,,
+bd3e1fca42cf7a5ad320a9074f15a0061b77cbd0,Bump certifi from 2021.5.30 to 2022.12.7 (#2),dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-11 08:40:27+00:00,0,2022-12-11 08:40:27+00:00,0,True,False,['Pipfile.lock'],['d1ff97a05a2b8e93921a66c71967341b7ee7d855'],17,22,39,1,,,
+f2c87a4d4ae894331cfd29e635c56ecc0f9d8ed2,Bump requests from 2.28.1 to 2.31.0 (#3),dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-18 12:45:42+01:00,-3600,2023-07-18 12:45:42+01:00,-3600,True,False,['Pipfile.lock'],['bd3e1fca42cf7a5ad320a9074f15a0061b77cbd0'],16,89,105,1,,,
+b85f10adf513d81b2efe911ed766b419d5fcd668,"Bump certifi from 2023.5.7 to 2023.7.22 (#4)
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2023.5.7 to 2023.7.22.
+- [Commits](https://github.com/certifi/python-certifi/compare/2023.05.07...2023.07.22)
+
+---
+updated-dependencies:
+- dependency-name: certifi
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-27 14:17:00+01:00,-3600,2023-07-27 14:17:00+01:00,-3600,True,False,['Pipfile.lock'],['f2c87a4d4ae894331cfd29e635c56ecc0f9d8ed2'],84,84,168,1,,,
+9afe5062030d14b0f1ada52d44cc2f0423584cd5,Bump urllib3 from 2.0.4 to 2.0.7 (#6),dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-10-19 01:54:52+01:00,-3600,2023-10-19 01:54:52+01:00,-3600,True,False,['Pipfile.lock'],['b85f10adf513d81b2efe911ed766b419d5fcd668'],81,98,179,1,,,

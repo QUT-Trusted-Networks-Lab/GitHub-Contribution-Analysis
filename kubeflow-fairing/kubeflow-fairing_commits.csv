@@ -1,0 +1,1360 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+ef2c2ea8b808fbda4c05532cd5426b56471c602c,Initial commit,Jeremy Lewi,jeremy+github@lewi.us,GitHub,noreply@github.com,2018-09-03 14:29:21-07:00,25200,2018-09-03 14:29:21-07:00,25200,True,False,"['LICENSE', 'README.md']",[],0,203,203,2,,,
+d09daa05aaae6b2a95b0a7c23edde2d23658b89f,Create an initial OWNERs file,Jeremy Lewi,jeremy+github@lewi.us,GitHub,noreply@github.com,2018-09-03 14:32:02-07:00,25200,2018-09-03 14:32:02-07:00,25200,True,False,['OWNERS'],['ef2c2ea8b808fbda4c05532cd5426b56471c602c'],0,5,5,1,,,
+70732cf2c5be8c2cb710a16a7575def98274ff3f,"Migrate wbuchwalter/fairing (#5)
+
+* init
+
+* fix 1
+
+* refactoring
+
+* add Volumes
+
+* add Command to tensorboard
+
+* parallelism + completion
+
+* Add Kubeflow backend
+
+* skeleton for serving
+
+* update doc
+
+* remove dependency on metaparticle_pkg
+
+* update doc
+
+* Update README.md
+
+* add distributed training
+
+* rename examples
+
+* update dockerfile
+
+* refactoring
+
+* simple serving
+
+* refactor strategy and architecture
+
+* fix distributed
+
+* fix serving, update documentation
+
+* update doc
+
+* Update README.md
+
+* update doc
+
+* Update README.md
+
+* refactor strategies/architectures
+
+* remove unused import
+
+* remove backend from doc
+
+* clean examples
+
+* half working pbt
+
+* write scalar summaries
+
+* reimplement using class decorator
+
+* rename example
+
+* population based training first complete draft
+
+* update documentation
+
+* Update README.md
+
+* Create LICENSE
+
+* clean samples
+
+* add Perturb exploration function for PBT
+
+* PBT: set Perturb as default explorer
+
+* make build() optional for basic strategy
+
+* fix build func
+
+* Jupyter notebook integration
+
+* use kubeflow backend for notebook
+
+* rename project
+
+* Renaming to fairing
+
+* metaml/notebook.py -> fairing/notebook.py
+
+* Update README.md
+
+* refactoring + testing
+
+* refactor + unit testing
+
+* add circleci
+
+* trigger circleci
+
+* change circleci base image
+
+* change circleci base image
+
+* circleci: display version
+
+* update circleci
+
+* update circleci
+
+* Rename config.yaml to config.yml
+
+* [CI] fix indent
+
+* [CI] update dependencies installation
+
+* add IPython dep
+
+* add IPython dep
+
+* [CI] change checksum for caching
+
+* [CI] disable caching
+
+* [CI] change dependencies for Jupyter
+
+* [CI] attempt fix
+
+* [CI] attempt fix
+
+* [CI] attempt fix
+
+* [CI] attempt fix
+
+* [CI] attempt fix
+
+* [CI] generate test artifacts
+
+* [CI] generate test artifacts
+
+* abstract builder
+
+* isolate dockerfile generation
+
+* implementation of knative builder
+
+* fetches logs for knative builds
+
+* publish by default
+
+* automatically download metaparticle compiler
+
+* tfjob V1Alpha2
+
+* implement volume for knative builds
+
+* correctly select default builder
+
+* allow custom base_image, optional requirements.txt
+
+* delay build uuid generation
+
+* extract unique id creation logic
+
+* generate unique names for tfjobs
+
+* use logger.warn instead of print
+
+* delegate log streaming to Backends
+
+* Add doc for KF + Jupyter
+
+* make stream_logs optional
+
+* Update README
+
+* add support for namespace
+
+* bump version
+
+* implement review comments",William Buchwalter,wbuchwalter@gmail.com,k8s-ci-robot,k8s-ci-robot@users.noreply.github.com,2018-11-06 14:47:14-05:00,18000,2018-11-06 11:47:14-08:00,28800,True,False,"['config.yml', '.gitignore', 'Dockerfile.dev', 'Dockerfile.jupyter', 'Makefile', 'README.md', 'main.py', 'requirements.txt', 'main.py', 'requirements.txt', 'main.py', 'requirements.txt', 'README.md', 'TfJob.ipynb', 'main.py', 'requirements.txt', 'main.py', 'requirements.txt', 'main.py', 'requirements.txt', '__init__.py', '__init__.py', 'architecture.py', '__init__.py', 'basic.py', 'distributed.py', '__init__.py', 'basic.py', '__init__.py', 'backend.py', 'kubeflow.py', 'native.py', '__init__.py', 'builder.py', 'container_image_builder.py', 'docker.py', 'dockerfile.py', '__init__.py', 'knative.py', '__init__.py', 'build.py', 'build_template.py', 'metaparticle.py', 'notebook_helper.py', 'options.py', 'serve.py', '__init__.py', 'basic.py', 'hp.py', '__init__.py', 'exploit.py', 'explore.py', 'pbt.py', 'train.py', 'utils.py', 'setup.py', 'test_build.py', 'test_builder.py', 'test_dockerfile.py', 'test_basic_arch.py', 'test_basic_strat.py', 'test_train.py', 'test_utils.py']",['d09daa05aaae6b2a95b0a7c23edde2d23658b89f'],2,3225,3227,63,0.6316901408450705,0.9640845070422536,0.7140845070422536
+668f5e90daf2f84d5ff3f76c28fdf3fffbc32deb,"Add fairing container builder (#9)
+
+* initial commit
+
+* remove coc",Matt Rickard,m@rickard.email,k8s-ci-robot,k8s-ci-robot@users.noreply.github.com,2018-11-07 16:28:29-08:00,28800,2018-11-07 16:28:29-08:00,28800,True,False,"['CONTRIBUTING.md', '.gitignore', 'Dockerfile', 'Gopkg.lock', 'Gopkg.toml', 'Makefile', 'build.go', 'cmd.go', 'version.go', 'fairing.go', 'template.go', 'template_test.go', 'fairing.go', 'ipython_kernel_config.py', 'development.md', '__init__.py', 'example.ipynb', 'fairing.py', 'tf_smoke.py', 'boilerplate.sh', 'boilerplate.Dockerfile.txt', 'boilerplate.Makefile.txt', 'boilerplate.go.txt', 'boilerplate.py', 'boilerplate.py.txt', 'boilerplate.sh.txt', 'dep.sh', 'gofmt.sh', 'gometalinter.json', 'gometalinter.sh', 'notebook.yaml', 'build.go', 'constants.go', 'gcp.go', 'tag.go', 'version.go', 'skaffold.yaml', 'test.sh', '.gitattributes', '.gitignore', '.travis.yml', 'CONTRIBUTING.md', 'Gopkg.lock', 'Gopkg.toml', 'LICENSE', 'README.md', 'cloudbuild.yaml', 'crane.md', 'crane_append.md', 'crane_config.md', 'crane_copy.md', 'crane_delete.md', 'crane_digest.md', 'crane_ls.md', 'crane_manifest.md', 'crane_pull.md', 'crane_push.md', 'crane_rebase.md', 'README.md', 'main.go', 'main.go', 'rebase.md', 'rebase.png', 'rebase_cloudbuild.yaml', 'README.md', 'main.go', 'README.md', 'commands.go', 'config.go', 'filestuff.go', 'flatname.go', 'local.go', 'main.go', 'publish.go', 'publish_test.go', 'resolve.go', 'kenobi', 'kenobi', 'main.go', 'test.yaml', 'anon.go', 'anon_test.go', 'auth.go', 'authn.go', 'basic.go', 'basic_test.go', 'bearer.go', 'bearer_test.go', 'doc.go', 'helper.go', 'helper_test.go', 'README.md', 'doc.go', 'k8schain.go', 'k8schain_test.go', 'main.go', 'test.yaml', 'main.go', 'test.yaml', 'main.go', 'test.yaml', 'main.go', 'test.yaml', 'keychain.go', 'keychain_test.go', 'multikeychain.go', 'multikeychain_test.go', 'append.go', 'config.go', 'copy.go', 'delete.go', 'digest.go', 'get.go', 'list.go', 'manifest.go', 'pull.go', 'push.go', 'rebase.go', 'root.go', 'doc.go', 'gc.go', 'list.go', 'root.go', 'build.go', 'doc.go', 'gobuild.go', 'gobuild_test.go', 'options.go', 'doc.go', 'daemon.go', 'daemon_test.go', 'default.go', 'default_test.go', 'doc.go', 'options.go', 'publish.go', 'doc.go', 'fixed_test.go', 'resolve.go', 'resolve_test.go', 'check.go', 'digest.go', 'digest_test.go', 'errors.go', 'ref.go', 'ref_test.go', 'registry.go', 'registry_test.go', 'repository.go', 'repository_test.go', 'tag.go', 'tag_test.go', 'config.go', 'doc.go', 'image.go', 'image_test.go', 'options.go', 'write.go', 'write_test.go', 'doc.go', 'doc.go', 'image.go', 'image_test.go', 'doc.go', 'list.go', 'list_test.go', 'hash.go', 'hash_test.go', 'image.go', 'index.go', 'layer.go', 'manifest.go', 'manifest_test.go', 'doc.go', 'mutate.go', 'mutate_test.go', 'rebase.go', 'rebase_test.go', 'bar', 'foo', 'overwritten_file.tar', 'source_image.tar', '.wh.foo.txt', 'bar.txt', 'foo.txt', 'whiteout_image.tar', 'compressed.go', 'configlayer_test.go', 'doc.go', 'image.go', 'uncompressed.go', 'with.go', 'platform.go', 'doc.go', 'image.go', 'image_test.go', 'delete.go', 'delete_test.go', 'doc.go', 'error.go', 'error_test.go', 'image.go', 'image_test.go', 'list.go', 'list_test.go', 'mount.go', 'options.go', 'basic.go', 'basic_test.go', 'bearer.go', 'bearer_test.go', 'doc.go', 'ping.go', 'ping_test.go', 'scope.go', 'transport.go', 'transport_test.go', 'write.go', 'write_test.go', 'doc.go', 'image.go', 'image_test.go', 'layer.go', 'layer_test.go', 'bar', 'bat', 'baz', 'content.tar', 'foo', 'no_manifest.tar', 'test_bundle.tar', 'test_image_1.tar', 'test_image_2.tar', 'write.go', 'write_test.go', 'types.go', 'and_closer.go', 'and_closer_test.go', 'nop.go', 'verify.go', 'verify_test.go', 'zip.go', 'zip_test.go', 'zz_deepcopy_generated.go', 'boilerplate.go.txt', 'update-code-gen.sh', 'update-deps.sh', 'LICENSE', 'README.md', 'trap_others.go', 'trap_windows.go', 'trap_windows_1.4.go', '.gitignore', '.travis.yml', 'LICENSE', 'README.md', 'appveyor.yml', 'bench_test.go', 'errors.go', 'errors_test.go', 'example_test.go', 'format_test.go', 'stack.go', 'stack_test.go', '.gitignore', '.travis.yml', 'CHANGELOG.md', 'LICENSE', 'README.md', 'alt_exit.go', 'alt_exit_test.go', 'appveyor.yml', 'doc.go', 'entry.go', 'entry_test.go', 'example_basic_test.go', 'example_hook_test.go', 'exported.go', 'formatter.go', 'formatter_bench_test.go', 'hook_test.go', 'hooks.go', 'README.md', 'syslog.go', 'syslog_test.go', 'test.go', 'test_test.go', 'json_formatter.go', 'json_formatter_test.go', 'logger.go', 'logger_bench_test.go', 'logrus.go', 'logrus_test.go', 'terminal_bsd.go', 'terminal_check_appengine.go', 'terminal_check_notappengine.go', 'terminal_linux.go', 'text_formatter.go', 'text_formatter_test.go', 'writer.go', '.gitignore', '.mailmap', '.travis.yml', 'LICENSE.txt', 'README.md', 'args.go', 'bash_completions.go', 'bash_completions.md', 'bash_completions_test.go', 'cobra.go', 'README.md', 'add.go', 'add_test.go', 'golden_test.go', 'helpers.go', 'init.go', 'init_test.go', 'license_agpl.go', 'license_apache_2.go', 'license_bsd_clause_2.go', 'license_bsd_clause_3.go', 'license_gpl_2.go', 'license_gpl_3.go', 'license_lgpl.go', 'license_mit.go', 'licenses.go', 'project.go', 'project_test.go', 'root.go', 'LICENSE.golden', 'main.go.golden', 'root.go.golden', 'test.go.golden', 'main.go', 'cobra_test.go', 'command.go', 'command_notwin.go', 'command_test.go', 'command_win.go', 'cmd_test.go', 'man_docs.go', 'man_docs.md', 'man_docs_test.go', 'man_examples_test.go', 'md_docs.go', 'md_docs.md', 'md_docs_test.go', 'rest_docs.go', 'rest_docs.md', 'rest_docs_test.go', 'util.go', 'yaml_docs.go', 'yaml_docs.md', 'yaml_docs_test.go', 'zsh_completions.go', 'zsh_completions_test.go', '.gitignore', '.travis.yml', 'LICENSE', 'README.md', 'bool.go', 'bool_slice.go', 'bool_slice_test.go', 'bool_test.go', 'count.go', 'count_test.go', 'duration.go', 'example_test.go', 'export_test.go', 'flag.go', 'flag_test.go', 'float32.go', 'float64.go', 'golangflag.go', 'golangflag_test.go', 'int.go', 'int32.go', 'int64.go', 'int8.go', 'int_slice.go', 'int_slice_test.go', 'ip.go', 'ip_slice.go', 'ip_slice_test.go', 'ip_test.go', 'ipmask.go', 'ipnet.go', 'ipnet_test.go', 'string.go', 'string_array.go', 'string_array_test.go', 'string_slice.go', 'string_slice_test.go', 'uint.go', 'uint16.go', 'uint32.go', 'uint64.go', 'uint8.go', 'uint_slice.go', 'uint_slice_test.go', 'all.sh', 'gofmt.sh', 'golint.sh', '.gitattributes', '.gitignore', 'AUTHORS', 'CONTRIBUTING.md', 'CONTRIBUTORS', 'LICENSE', 'PATENTS', 'README.md', 'acme.go', 'acme_test.go', 'autocert.go', 'autocert_test.go', 'cache.go', 'cache_test.go', 'example_test.go', 'listener.go', 'renewal.go', 'renewal_test.go', 'jws.go', 'jws_test.go', 'types.go', 'types_test.go', 'argon2.go', 'argon2_test.go', 'blake2b.go', 'blamka_amd64.go', 'blamka_amd64.s', 'blamka_generic.go', 'blamka_ref.go', 'base64.go', 'bcrypt.go', 'bcrypt_test.go', 'blake2b.go', 'blake2bAVX2_amd64.go', 'blake2bAVX2_amd64.s', 'blake2b_amd64.go', 'blake2b_amd64.s', 'blake2b_generic.go', 'blake2b_ref.go', 'blake2b_test.go', 'blake2x.go', 'register.go', 'blake2s.go', 'blake2s_386.go', 'blake2s_386.s', 'blake2s_amd64.go', 'blake2s_amd64.s', 'blake2s_generic.go', 'blake2s_ref.go', 'blake2s_test.go', 'blake2x.go', 'register.go', 'block.go', 'blowfish_test.go', 'cipher.go', 'const.go', 'bn256.go', 'bn256_test.go', 'constants.go', 'curve.go', 'example_test.go', 'gfp12.go', 'gfp2.go', 'gfp6.go', 'optate.go', 'twist.go', 'cast5.go', 'cast5_test.go', 'chacha20poly1305.go', 'chacha20poly1305_amd64.go', 'chacha20poly1305_amd64.s', 'chacha20poly1305_generic.go', 'chacha20poly1305_noasm.go', 'chacha20poly1305_test.go', 'chacha20poly1305_vectors_test.go', 'codereview.cfg', 'asn1.go', 'asn1.go', 'asn1_test.go', 'builder.go', 'cryptobyte_test.go', 'example_test.go', 'string.go', 'const_amd64.h', 'const_amd64.s', 'cswap_amd64.s', 'curve25519.go', 'curve25519_test.go', 'doc.go', 'freeze_amd64.s', 'ladderstep_amd64.s', 'mont25519_amd64.go', 'mul_amd64.s', 'square_amd64.s', 'ed25519.go', 'ed25519_test.go', 'const.go', 'edwards25519.go', 'sign.input.gz', 'example_test.go', 'hkdf.go', 'hkdf_test.go', 'chacha_generic.go', 'chacha_test.go', 'example_test.go', 'md4.go', 'md4_test.go', 'md4block.go', 'auth.go', 'auth_test.go', 'example_test.go', 'box.go', 'box_test.go', 'example_test.go', 'example_test.go', 'secretbox.go', 'secretbox_test.go', 'ocsp.go', 'ocsp_test.go', 'armor.go', 'armor_test.go', 'encode.go', 'canonical_text.go', 'canonical_text_test.go', 'clearsign.go', 'clearsign_test.go', 'elgamal.go', 'elgamal_test.go', 'errors.go', 'keys.go', 'keys_test.go', 'compressed.go', 'compressed_test.go', 'config.go', 'encrypted_key.go', 'encrypted_key_test.go', 'literal.go', 'ocfb.go', 'ocfb_test.go', 'one_pass_signature.go', 'opaque.go', 'opaque_test.go', 'packet.go', 'packet_test.go', 'private_key.go', 'private_key_test.go', 'public_key.go', 'public_key_test.go', 'public_key_v3.go', 'public_key_v3_test.go', 'reader.go', 'signature.go', 'signature_test.go', 'signature_v3.go', 'signature_v3_test.go', 'symmetric_key_encrypted.go', 'symmetric_key_encrypted_test.go', 'symmetrically_encrypted.go', 'symmetrically_encrypted_test.go', 'userattribute.go', 'userattribute_test.go', 'userid.go', 'userid_test.go', 'read.go', 'read_test.go', 's2k.go', 's2k_test.go', 'write.go', 'write_test.go', 'libotr_test_helper.c', 'otr.go', 'otr_test.go', 'smp.go', 'pbkdf2.go', 'pbkdf2_test.go', 'bmp-string.go', 'bmp-string_test.go', 'crypto.go', 'crypto_test.go', 'errors.go', 'bench_test.go', 'rc2.go', 'rc2_test.go', 'mac.go', 'mac_test.go', 'pbkdf.go', 'pbkdf_test.go', 'pkcs12.go', 'pkcs12_test.go', 'safebags.go', 'poly1305.go', 'poly1305_test.go', 'sum_amd64.go', 'sum_amd64.s', 'sum_arm.go', 'sum_arm.s', 'sum_ref.go', 'ripemd160.go', 'ripemd160_test.go', 'ripemd160block.go', 'hsalsa20.go', 'salsa2020_amd64.s', 'salsa208.go', 'salsa20_amd64.go', 'salsa20_ref.go', 'salsa_test.go', 'salsa20.go', 'salsa20_test.go', 'example_test.go', 'scrypt.go', 'scrypt_test.go', 'doc.go', 'hashes.go', 'keccakf.go', 'keccakf_amd64.go', 'keccakf_amd64.s', 'register.go', 'sha3.go', 'sha3_test.go', 'shake.go', 'keccakKats.json.deflate', 'xor.go', 'xor_generic.go', 'xor_unaligned.go', 'client.go', 'client_test.go', 'example_test.go', 'forward.go', 'keyring.go', 'keyring_test.go', 'server.go', 'server_test.go', 'testdata_test.go', 'benchmark_test.go', 'buffer.go', 'buffer_test.go', 'certs.go', 'certs_test.go', 'channel.go', 'cipher.go', 'cipher_test.go', 'client.go', 'client_auth.go', 'client_auth_test.go', 'client_test.go', 'common.go', 'connection.go', 'doc.go', 'example_test.go', 'handshake.go', 'handshake_test.go', 'kex.go', 'kex_test.go', 'keys.go', 'keys_test.go', 'knownhosts.go', 'knownhosts_test.go', 'mac.go', 'mempipe_test.go', 'messages.go', 'messages_test.go', 'mux.go', 'mux_test.go', 'server.go', 'session.go', 'session_test.go', 'streamlocal.go', 'tcpip.go', 'tcpip_test.go', 'terminal.go', 'terminal_test.go', 'util.go', 'util_bsd.go', 'util_linux.go', 'util_plan9.go', 'util_solaris.go', 'util_windows.go', 'agent_unix_test.go', 'banner_test.go', 'cert_test.go', 'dial_unix_test.go', 'doc.go', 'forward_unix_test.go', 'session_test.go', 'test_unix_test.go', 'testdata_test.go', 'doc.go', 'keys.go', 'testdata_test.go', 'transport.go', 'transport_test.go', 'cipher.go', 'tea_test.go', 'twofish.go', 'twofish_test.go', 'block.go', 'cipher.go', 'xtea_test.go', 'xts.go', 'xts_test.go', '.gitattributes', '.gitignore', 'AUTHORS', 'CONTRIBUTING.md', 'CONTRIBUTORS', 'LICENSE', 'PATENTS', 'README.md', 'codereview.cfg', 'asm.s', 'asm_plan9_386.s', 'asm_plan9_amd64.s', 'asm_plan9_arm.s', 'const_plan9.go', 'dir_plan9.go', 'env_plan9.go', 'errors_plan9.go', 'mkall.sh', 'mkerrors.sh', 'mksyscall.pl', 'mksysnum_plan9.sh', 'pwd_go15_plan9.go', 'pwd_plan9.go', 'race.go', 'race0.go', 'str.go', 'syscall.go', 'syscall_plan9.go', 'syscall_test.go', 'zsyscall_plan9_386.go', 'zsyscall_plan9_amd64.go', 'zsyscall_plan9_arm.go', 'zsysnum_plan9.go', '.gitignore', 'README.md', 'affinity_linux.go', 'asm_darwin_386.s', 'asm_darwin_amd64.s', 'asm_darwin_arm.s', 'asm_darwin_arm64.s', 'asm_dragonfly_amd64.s', 'asm_freebsd_386.s', 'asm_freebsd_amd64.s', 'asm_freebsd_arm.s', 'asm_linux_386.s', 'asm_linux_amd64.s', 'asm_linux_arm.s', 'asm_linux_arm64.s', 'asm_linux_mips64x.s', 'asm_linux_mipsx.s', 'asm_linux_ppc64x.s', 'asm_linux_s390x.s', 'asm_netbsd_386.s', 'asm_netbsd_amd64.s', 'asm_netbsd_arm.s', 'asm_openbsd_386.s', 'asm_openbsd_amd64.s', 'asm_openbsd_arm.s', 'asm_solaris_amd64.s', 'bluetooth_linux.go', 'cap_freebsd.go', 'constants.go', 'creds_test.go', 'dev_darwin.go', 'dev_darwin_test.go', 'dev_dragonfly.go', 'dev_dragonfly_test.go', 'dev_freebsd.go', 'dev_linux.go', 'dev_linux_test.go', 'dev_netbsd.go', 'dev_netbsd_test.go', 'dev_openbsd.go', 'dev_openbsd_test.go', 'dev_solaris_test.go', 'dirent.go', 'endian_big.go', 'endian_little.go', 'env_unix.go', 'errors_freebsd_386.go', 'errors_freebsd_amd64.go', 'errors_freebsd_arm.go', 'export_test.go', 'flock.go', 'flock_linux_32bit.go', 'gccgo.go', 'gccgo_c.c', 'gccgo_linux_amd64.go', 'Dockerfile', 'mkall.go', 'mksysnum.pl', 'types.go', 'mkall.sh', 'mkerrors.sh', 'mkpost.go', 'mksyscall.pl', 'mksyscall_solaris.pl', 'mksysctl_openbsd.pl', 'mksysnum_darwin.pl', 'mksysnum_dragonfly.pl', 'mksysnum_freebsd.pl', 'mksysnum_netbsd.pl', 'mksysnum_openbsd.pl', 'mmap_unix_test.go', 'openbsd_pledge.go', 'openbsd_test.go', 'pagesize_unix.go', 'race.go', 'race0.go', 'sockcmsg_linux.go', 'sockcmsg_unix.go', 'str.go', 'syscall.go', 'syscall_bsd.go', 'syscall_bsd_test.go', 'syscall_darwin.go', 'syscall_darwin_386.go', 'syscall_darwin_amd64.go', 'syscall_darwin_arm.go', 'syscall_darwin_arm64.go', 'syscall_dragonfly.go', 'syscall_dragonfly_amd64.go', 'syscall_freebsd.go', 'syscall_freebsd_386.go', 'syscall_freebsd_amd64.go', 'syscall_freebsd_arm.go', 'syscall_freebsd_test.go', 'syscall_linux.go', 'syscall_linux_386.go', 'syscall_linux_amd64.go', 'syscall_linux_amd64_gc.go', 'syscall_linux_arm.go', 'syscall_linux_arm64.go', 'syscall_linux_mips64x.go', 'syscall_linux_mipsx.go', 'syscall_linux_ppc64x.go', 'syscall_linux_s390x.go', 'syscall_linux_sparc64.go', 'syscall_linux_test.go', 'syscall_netbsd.go', 'syscall_netbsd_386.go', 'syscall_netbsd_amd64.go', 'syscall_netbsd_arm.go', 'syscall_openbsd.go', 'syscall_openbsd_386.go', 'syscall_openbsd_amd64.go', 'syscall_openbsd_arm.go', 'syscall_solaris.go', 'syscall_solaris_amd64.go', 'syscall_solaris_test.go', 'syscall_test.go', 'syscall_unix.go', 'syscall_unix_gc.go', 'syscall_unix_test.go', 'timestruct.go', 'timestruct_test.go', 'types_darwin.go', 'types_dragonfly.go', 'types_freebsd.go', 'types_netbsd.go', 'types_openbsd.go', 'types_solaris.go', 'zerrors_darwin_386.go', 'zerrors_darwin_amd64.go', 'zerrors_darwin_arm.go', 'zerrors_darwin_arm64.go', 'zerrors_dragonfly_amd64.go', 'zerrors_freebsd_386.go', 'zerrors_freebsd_amd64.go', 'zerrors_freebsd_arm.go', 'zerrors_linux_386.go', 'zerrors_linux_amd64.go', 'zerrors_linux_arm.go', 'zerrors_linux_arm64.go', 'zerrors_linux_mips.go', 'zerrors_linux_mips64.go', 'zerrors_linux_mips64le.go', 'zerrors_linux_mipsle.go', 'zerrors_linux_ppc64.go', 'zerrors_linux_ppc64le.go', 'zerrors_linux_s390x.go', 'zerrors_linux_sparc64.go', 'zerrors_netbsd_386.go', 'zerrors_netbsd_amd64.go', 'zerrors_netbsd_arm.go', 'zerrors_openbsd_386.go', 'zerrors_openbsd_amd64.go', 'zerrors_openbsd_arm.go', 'zerrors_solaris_amd64.go', 'zptrace386_linux.go', 'zptracearm_linux.go', 'zptracemips_linux.go', 'zptracemipsle_linux.go', 'zsyscall_darwin_386.go', 'zsyscall_darwin_amd64.go', 'zsyscall_darwin_arm.go', 'zsyscall_darwin_arm64.go', 'zsyscall_dragonfly_amd64.go', 'zsyscall_freebsd_386.go', 'zsyscall_freebsd_amd64.go', 'zsyscall_freebsd_arm.go', 'zsyscall_linux_386.go', 'zsyscall_linux_amd64.go', 'zsyscall_linux_arm.go', 'zsyscall_linux_arm64.go', 'zsyscall_linux_mips.go', 'zsyscall_linux_mips64.go', 'zsyscall_linux_mips64le.go', 'zsyscall_linux_mipsle.go', 'zsyscall_linux_ppc64.go', 'zsyscall_linux_ppc64le.go', 'zsyscall_linux_s390x.go', 'zsyscall_linux_sparc64.go', 'zsyscall_netbsd_386.go', 'zsyscall_netbsd_amd64.go', 'zsyscall_netbsd_arm.go', 'zsyscall_openbsd_386.go', 'zsyscall_openbsd_amd64.go', 'zsyscall_openbsd_arm.go', 'zsyscall_solaris_amd64.go', 'zsysctl_openbsd_386.go', 'zsysctl_openbsd_amd64.go', 'zsysctl_openbsd_arm.go', 'zsysnum_darwin_386.go', 'zsysnum_darwin_amd64.go', 'zsysnum_darwin_arm.go', 'zsysnum_darwin_arm64.go', 'zsysnum_dragonfly_amd64.go', 'zsysnum_freebsd_386.go', 'zsysnum_freebsd_amd64.go', 'zsysnum_freebsd_arm.go', 'zsysnum_linux_386.go', 'zsysnum_linux_amd64.go', 'zsysnum_linux_arm.go', 'zsysnum_linux_arm64.go', 'zsysnum_linux_mips.go', 'zsysnum_linux_mips64.go', 'zsysnum_linux_mips64le.go', 'zsysnum_linux_mipsle.go', 'zsysnum_linux_ppc64.go', 'zsysnum_linux_ppc64le.go', 'zsysnum_linux_s390x.go', 'zsysnum_linux_sparc64.go', 'zsysnum_netbsd_386.go', 'zsysnum_netbsd_amd64.go', 'zsysnum_netbsd_arm.go', 'zsysnum_openbsd_386.go', 'zsysnum_openbsd_amd64.go', 'zsysnum_openbsd_arm.go', 'ztypes_darwin_386.go', 'ztypes_darwin_amd64.go', 'ztypes_darwin_arm.go', 'ztypes_darwin_arm64.go', 'ztypes_dragonfly_amd64.go', 'ztypes_freebsd_386.go', 'ztypes_freebsd_amd64.go', 'ztypes_freebsd_arm.go', 'ztypes_linux_386.go', 'ztypes_linux_amd64.go', 'ztypes_linux_arm.go', 'ztypes_linux_arm64.go', 'ztypes_linux_mips.go', 'ztypes_linux_mips64.go', 'ztypes_linux_mips64le.go', 'ztypes_linux_mipsle.go', 'ztypes_linux_ppc64.go', 'ztypes_linux_ppc64le.go', 'ztypes_linux_s390x.go', 'ztypes_linux_sparc64.go', 'ztypes_netbsd_386.go', 'ztypes_netbsd_amd64.go', 'ztypes_netbsd_arm.go', 'ztypes_openbsd_386.go', 'ztypes_openbsd_amd64.go', 'ztypes_openbsd_arm.go', 'ztypes_solaris_amd64.go', 'asm_windows_386.s', 'asm_windows_amd64.s', 'dll_windows.go', 'env_windows.go', 'eventlog.go', 'exec_windows.go', 'memory_windows.go', 'mksyscall.go', 'race.go', 'race0.go', 'export_test.go', 'key.go', 'mksyscall.go', 'registry_test.go', 'syscall.go', 'value.go', 'zsyscall_windows.go', 'security_windows.go', 'service.go', 'str.go', 'log.go', 'service.go', 'event.go', 'install.go', 'log.go', 'log_test.go', 'beep.go', 'install.go', 'main.go', 'manage.go', 'service.go', 'go12.c', 'go12.go', 'go13.go', 'config.go', 'mgr.go', 'mgr_test.go', 'service.go', 'security.go', 'service.go', 'svc_test.go', 'sys_386.s', 'sys_amd64.s', 'syscall.go', 'syscall_test.go', 'syscall_windows.go', 'syscall_windows_test.go', 'types_windows.go', 'types_windows_386.go', 'types_windows_amd64.go', 'zsyscall_windows.go']",['70732cf2c5be8c2cb710a16a7575def98274ff3f'],0,278914,278914,1030,0.5373183139534884,0.7541061046511628,0.7321765988372093
+616d61087b9a0131e2d201bbb35f8fe83b1939b1,add r2d4 to approvers (#14),Matt Rickard,m@rickard.email,k8s-ci-robot,k8s-ci-robot@users.noreply.github.com,2018-11-08 07:22:26-08:00,28800,2018-11-08 07:22:26-08:00,28800,True,False,['OWNERS'],['668f5e90daf2f84d5ff3f76c28fdf3fffbc32deb'],0,1,1,1,,,
+e6d459dc8413ffd3e8c4b0771a2ec79c74c383ab,fix license in setup.py (#16),Matt Rickard,m@rickard.email,k8s-ci-robot,k8s-ci-robot@users.noreply.github.com,2018-11-09 08:23:46-08:00,28800,2018-11-09 08:23:46-08:00,28800,True,False,['setup.py'],['616d61087b9a0131e2d201bbb35f8fe83b1939b1'],1,1,2,1,,,
+ff7a9631eddce9aaad41223c76798a1ac4b1230a,"Update readme & url in setup.py (#17)
+
+* update docs & url in setup.py
+
+* fix description in setup.py",William Buchwalter,wbuchwalter@gmail.com,k8s-ci-robot,k8s-ci-robot@users.noreply.github.com,2018-11-12 13:34:23-05:00,18000,2018-11-12 10:34:23-08:00,28800,True,False,"['README.md', 'setup.py']",['e6d459dc8413ffd3e8c4b0771a2ec79c74c383ab'],6,4,10,2,,,
+0e8df03267c94dfc5fccf33c58cb26f92ce581d6,"Fix licence classifier in setup.py (#19)
+
+* fix licence classifier in setup.py
+
+* revert dev version bump",William Buchwalter,wbuchwalter@gmail.com,k8s-ci-robot,k8s-ci-robot@users.noreply.github.com,2018-11-13 11:39:15-05:00,18000,2018-11-13 08:39:15-08:00,28800,True,False,['setup.py'],['ff7a9631eddce9aaad41223c76798a1ac4b1230a'],1,1,2,1,,,
+4a9b3b19b0bfbe24781b5c6544b80b2f0980349e,"Add Python2 support (#18)
+
+* pasteurize & first pass for py2 support
+
+* small fix in README
+
+* fix logger & image version
+
+* fix logger and base images",William Buchwalter,wbuchwalter@gmail.com,k8s-ci-robot,k8s-ci-robot@users.noreply.github.com,2018-11-14 17:08:24-05:00,18000,2018-11-14 14:08:24-08:00,28800,True,False,"['.gitignore', 'Dockerfile.dev', 'Makefile', 'README.md', 'TfJob.ipynb', 'main.py', '__init__.py', 'architecture.py', 'basic.py', 'distributed.py', 'basic.py', '__init__.py', 'backend.py', 'kubeflow.py', 'native.py', '__init__.py', 'builder.py', 'container_image_builder.py', 'docker_builder.py', 'dockerfile.py', '__init__.py', 'knative.py', 'build.py', 'build_template.py', 'metaparticle.py', 'notebook_helper.py', 'options.py', 'serve.py', '__init__.py', 'basic.py', 'hp.py', '__init__.py', 'exploit.py', 'explore.py', 'pbt.py', 'train.py', 'utils.py', 'setup.py', 'test_build.py', 'test_builder.py', 'test_dockerfile.py', 'test_basic_arch.py', 'test_basic_strat.py', 'test_train.py', 'test_utils.py']",['0e8df03267c94dfc5fccf33c58cb26f92ce581d6'],44,345,389,45,0.5,0.0,1.0
+d9e556d2fed8f49c06c0a78c24c9c67b83d26907,"Refactor APIs (#20)
+
+* draft refactor
+
+* draft refactor v2
+
+* clean merge
+
+* add kubeflow jobs and logs
+
+* add kubeflow distributed jobs
+
+* review pass
+
+* remove extra statement",William Buchwalter,wbuchwalter@gmail.com,k8s-ci-robot,k8s-ci-robot@users.noreply.github.com,2018-11-21 14:47:00-05:00,18000,2018-11-21 11:47:00-08:00,28800,True,False,"['README.md', 'main.py', 'main.py', 'requirements.txt', 'main.py', 'main.py', 'main.py', 'requirements.txt', 'main.py', '__init__.py', 'architecture.py', '__init__.py', 'basic.py', 'distributed.py', '__init__.py', 'basic.py', '__init__.py', 'backend.py', 'kubeflow.py', '__init__.py', 'manager.py', 'native.py', '__init__.py', 'builder.py', 'container_image_builder.py', 'docker_builder.py', 'dockerfile.py', 'knative.py', 'build.py', 'build_template.py', 'config.py', 'metaparticle.py', 'options.py', 'serve.py', 'basic.py', 'hp.py', 'exploit.py', 'explore.py', 'pbt.py', 'train.py', '__init__.py', 'base.py', '__init__.py', 'decorators.py', 'deployment.py', '__init__.py', 'decorators.py', 'deployment.py', 'runtime.py', 'utils.py', 'test_build.py', 'test_builder.py', 'test_dockerfile.py', 'test_basic_arch.py', 'test_basic_strat.py', 'test_train.py', 'test_utils.py']",['4a9b3b19b0bfbe24781b5c6544b80b2f0980349e'],1895,802,2697,57,0.34120171673819744,0.0,0.41630901287553645
+8087c0b4e4ae5007b7a21177047e8b8412be382e,"Integrate append builder, rewritten in python (#29)
+
+* Remove fairing Go subproject
+
+* Vendor in google/containerregistry fork
+
+* Add fairing append builder
+
+* Add append example
+
+* Fixes
+
+* disable mount parameter temporarily
+
+* review changes
+
+* set default registry",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2018-12-03 10:58:08-08:00,28800,2018-12-03 10:58:08-08:00,28800,True,False,"['LICENSE', '__init__.py', '__init__.py', 'docker_creds_.py', 'docker_name_.py', 'monitor_.py', '__init__.py', 'docker_creds_.py', 'docker_http_.py', 'docker_image_.py', 'docker_session_.py', 'save_.py', '__init__.py', 'append_.py', 'docker_creds_.py', 'docker_digest_.py', 'docker_http_.py', 'docker_image_.py', 'docker_session_.py', 'util_.py', 'v1_compat_.py', '__init__.py', 'append_.py', 'docker_creds_.py', 'docker_digest_.py', 'docker_http_.py', 'docker_image_.py', 'docker_image_list_.py', 'docker_session_.py', 'oci_compat_.py', 'save_.py', 'v2_compat_.py', 'requirements.txt', '__init__.py', '__init__.py', 'metadata_.py', '__init__.py', 'nested_.py', 'retry_.py', 'transport_pool_.py', 'main.py', 'requirements.txt', 'manager.py', '__init__.py', '__init__.py', 'append.py', 'dockerfile.py', 'notebook_helper.py', 'deployment.py', 'utils.py', '.gitignore', 'Dockerfile', 'Gopkg.lock', 'Gopkg.toml', 'Makefile', 'build.go', 'cmd.go', 'version.go', 'fairing.go', 'template.go', 'template_test.go', 'fairing.go', 'development.md', '__init__.py', 'example.ipynb', 'fairing.py', 'tf_smoke.py', 'boilerplate.sh', 'boilerplate.Makefile.txt', 'boilerplate.go.txt', 'boilerplate.py', 'boilerplate.sh.txt', 'dep.sh', 'gometalinter.json', 'gometalinter.sh', 'notebook.yaml', 'build.go', 'constants.go', 'gcp.go', 'tag.go', 'version.go', 'skaffold.yaml', 'test.sh', '.gitattributes', '.gitignore', '.travis.yml', 'CONTRIBUTING.md', 'Gopkg.lock', 'Gopkg.toml', 'LICENSE', 'README.md', 'cloudbuild.yaml', 'crane.md', 'crane_append.md', 'crane_config.md', 'crane_copy.md', 'crane_delete.md', 'crane_digest.md', 'crane_ls.md', 'crane_manifest.md', 'crane_pull.md', 'crane_push.md', 'crane_rebase.md', 'README.md', 'main.go', 'main.go', 'rebase.md', 'rebase.png', 'rebase_cloudbuild.yaml', 'README.md', 'main.go', 'README.md', 'commands.go', 'config.go', 'filestuff.go', 'flatname.go', 'local.go', 'main.go', 'publish.go', 'publish_test.go', 'resolve.go', 'kenobi', 'kenobi', 'main.go', 'anon.go', 'anon_test.go', 'auth.go', 'authn.go', 'basic.go', 'basic_test.go', 'bearer.go', 'bearer_test.go', 'doc.go', 'helper.go', 'helper_test.go', 'README.md', 'doc.go', 'k8schain.go', 'k8schain_test.go', 'main.go', 'test.yaml', 'main.go', 'test.yaml', 'main.go', 'test.yaml', 'main.go', 'test.yaml', 'keychain.go', 'keychain_test.go', 'multikeychain.go', 'multikeychain_test.go', 'append.go', 'config.go', 'copy.go', 'delete.go', 'digest.go', 'get.go', 'list.go', 'manifest.go', 'pull.go', 'push.go', 'rebase.go', 'root.go', 'doc.go', 'gc.go', 'list.go', 'root.go', 'build.go', 'doc.go', 'gobuild.go', 'gobuild_test.go', 'options.go', 'doc.go', 'daemon.go', 'daemon_test.go', 'default.go', 'default_test.go', 'doc.go', 'options.go', 'publish.go', 'doc.go', 'fixed_test.go', 'resolve.go', 'resolve_test.go', 'check.go', 'digest.go', 'digest_test.go', 'errors.go', 'ref.go', 'ref_test.go', 'registry.go', 'registry_test.go', 'repository.go', 'repository_test.go', 'tag.go', 'tag_test.go', 'config.go', 'doc.go', 'image.go', 'image_test.go', 'options.go', 'write.go', 'write_test.go', 'doc.go', 'doc.go', 'image.go', 'image_test.go', 'doc.go', 'list.go', 'list_test.go', 'hash.go', 'hash_test.go', 'image.go', 'index.go', 'layer.go', 'manifest.go', 'manifest_test.go', 'doc.go', 'mutate.go', 'mutate_test.go', 'rebase.go', 'rebase_test.go', 'bar', 'foo', 'overwritten_file.tar', 'source_image.tar', '.wh.foo.txt', 'bar.txt', 'foo.txt', 'whiteout_image.tar', 'compressed.go', 'configlayer_test.go', 'doc.go', 'image.go', 'uncompressed.go', 'with.go', 'platform.go', 'doc.go', 'image.go', 'image_test.go', 'delete.go', 'delete_test.go', 'doc.go', 'error.go', 'error_test.go', 'image.go', 'image_test.go', 'list.go', 'list_test.go', 'mount.go', 'options.go', 'basic.go', 'basic_test.go', 'bearer.go', 'bearer_test.go', 'doc.go', 'ping.go', 'ping_test.go', 'scope.go', 'transport.go', 'transport_test.go', 'write.go', 'write_test.go', 'doc.go', 'image.go', 'image_test.go', 'layer.go', 'layer_test.go', 'bar', 'bat', 'baz', 'content.tar', 'foo', 'no_manifest.tar', 'test_bundle.tar', 'test_image_1.tar', 'test_image_2.tar', 'write.go', 'write_test.go', 'types.go', 'and_closer.go', 'and_closer_test.go', 'nop.go', 'verify.go', 'verify_test.go', 'zip.go', 'zip_test.go', 'zz_deepcopy_generated.go', 'boilerplate.go.txt', 'update-code-gen.sh', 'update-deps.sh', 'LICENSE', 'README.md', 'trap_others.go', 'trap_windows.go', 'trap_windows_1.4.go', '.gitignore', '.travis.yml', 'LICENSE', 'README.md', 'appveyor.yml', 'bench_test.go', 'errors.go', 'errors_test.go', 'example_test.go', 'format_test.go', 'stack.go', 'stack_test.go', '.gitignore', '.travis.yml', 'CHANGELOG.md', 'LICENSE', 'README.md', 'alt_exit.go', 'alt_exit_test.go', 'appveyor.yml', 'doc.go', 'entry.go', 'entry_test.go', 'example_basic_test.go', 'example_hook_test.go', 'exported.go', 'formatter.go', 'formatter_bench_test.go', 'hook_test.go', 'hooks.go', 'README.md', 'syslog.go', 'syslog_test.go', 'test.go', 'test_test.go', 'json_formatter.go', 'json_formatter_test.go', 'logger.go', 'logger_bench_test.go', 'logrus.go', 'logrus_test.go', 'terminal_bsd.go', 'terminal_check_appengine.go', 'terminal_check_notappengine.go', 'terminal_linux.go', 'text_formatter.go', 'text_formatter_test.go', 'writer.go', '.gitignore', '.mailmap', '.travis.yml', 'LICENSE.txt', 'README.md', 'args.go', 'bash_completions.go', 'bash_completions.md', 'bash_completions_test.go', 'cobra.go', 'README.md', 'add.go', 'add_test.go', 'golden_test.go', 'helpers.go', 'init.go', 'init_test.go', 'license_agpl.go', 'license_apache_2.go', 'license_bsd_clause_2.go', 'license_bsd_clause_3.go', 'license_gpl_2.go', 'license_gpl_3.go', 'license_lgpl.go', 'license_mit.go', 'licenses.go', 'project.go', 'project_test.go', 'root.go', 'main.go.golden', 'root.go.golden', 'test.go.golden', 'main.go', 'cobra_test.go', 'command.go', 'command_notwin.go', 'command_test.go', 'command_win.go', 'cmd_test.go', 'man_docs.go', 'man_docs.md', 'man_docs_test.go', 'man_examples_test.go', 'md_docs.go', 'md_docs.md', 'md_docs_test.go', 'rest_docs.go', 'rest_docs.md', 'rest_docs_test.go', 'util.go', 'yaml_docs.go', 'yaml_docs.md', 'yaml_docs_test.go', 'zsh_completions.go', 'zsh_completions_test.go', '.gitignore', '.travis.yml', 'LICENSE', 'README.md', 'bool.go', 'bool_slice.go', 'bool_slice_test.go', 'bool_test.go', 'count.go', 'count_test.go', 'duration.go', 'example_test.go', 'export_test.go', 'flag.go', 'flag_test.go', 'float32.go', 'float64.go', 'golangflag.go', 'golangflag_test.go', 'int.go', 'int32.go', 'int64.go', 'int8.go', 'int_slice.go', 'int_slice_test.go', 'ip.go', 'ip_slice.go', 'ip_slice_test.go', 'ip_test.go', 'ipmask.go', 'ipnet.go', 'ipnet_test.go', 'string.go', 'string_array.go', 'string_array_test.go', 'string_slice.go', 'string_slice_test.go', 'uint.go', 'uint16.go', 'uint32.go', 'uint64.go', 'uint8.go', 'uint_slice.go', 'uint_slice_test.go', 'all.sh', 'gofmt.sh', 'golint.sh', '.gitattributes', '.gitignore', 'AUTHORS', 'CONTRIBUTING.md', 'CONTRIBUTORS', 'LICENSE', 'PATENTS', 'README.md', 'acme.go', 'acme_test.go', 'autocert.go', 'autocert_test.go', 'cache.go', 'cache_test.go', 'example_test.go', 'listener.go', 'renewal.go', 'renewal_test.go', 'jws.go', 'jws_test.go', 'types.go', 'types_test.go', 'argon2.go', 'argon2_test.go', 'blake2b.go', 'blamka_amd64.go', 'blamka_amd64.s', 'blamka_generic.go', 'blamka_ref.go', 'base64.go', 'bcrypt.go', 'bcrypt_test.go', 'blake2b.go', 'blake2bAVX2_amd64.go', 'blake2bAVX2_amd64.s', 'blake2b_amd64.go', 'blake2b_amd64.s', 'blake2b_generic.go', 'blake2b_ref.go', 'blake2b_test.go', 'blake2x.go', 'register.go', 'blake2s.go', 'blake2s_386.go', 'blake2s_386.s', 'blake2s_amd64.go', 'blake2s_amd64.s', 'blake2s_generic.go', 'blake2s_ref.go', 'blake2s_test.go', 'blake2x.go', 'register.go', 'block.go', 'blowfish_test.go', 'cipher.go', 'const.go', 'bn256.go', 'bn256_test.go', 'constants.go', 'curve.go', 'example_test.go', 'gfp12.go', 'gfp2.go', 'gfp6.go', 'optate.go', 'twist.go', 'cast5.go', 'cast5_test.go', 'chacha20poly1305.go', 'chacha20poly1305_amd64.go', 'chacha20poly1305_amd64.s', 'chacha20poly1305_generic.go', 'chacha20poly1305_noasm.go', 'chacha20poly1305_test.go', 'chacha20poly1305_vectors_test.go', 'codereview.cfg', 'asn1.go', 'asn1.go', 'asn1_test.go', 'builder.go', 'cryptobyte_test.go', 'example_test.go', 'string.go', 'const_amd64.h', 'const_amd64.s', 'cswap_amd64.s', 'curve25519.go', 'curve25519_test.go', 'doc.go', 'freeze_amd64.s', 'ladderstep_amd64.s', 'mont25519_amd64.go', 'mul_amd64.s', 'square_amd64.s', 'ed25519.go', 'ed25519_test.go', 'const.go', 'edwards25519.go', 'sign.input.gz', 'example_test.go', 'hkdf.go', 'hkdf_test.go', 'chacha_generic.go', 'chacha_test.go', 'example_test.go', 'md4.go', 'md4_test.go', 'md4block.go', 'auth.go', 'auth_test.go', 'example_test.go', 'box.go', 'box_test.go', 'example_test.go', 'example_test.go', 'secretbox.go', 'secretbox_test.go', 'ocsp.go', 'ocsp_test.go', 'armor.go', 'armor_test.go', 'encode.go', 'canonical_text.go', 'canonical_text_test.go', 'clearsign.go', 'clearsign_test.go', 'elgamal.go', 'elgamal_test.go', 'errors.go', 'keys.go', 'keys_test.go', 'compressed.go', 'compressed_test.go', 'config.go', 'encrypted_key.go', 'encrypted_key_test.go', 'literal.go', 'ocfb.go', 'ocfb_test.go', 'one_pass_signature.go', 'opaque.go', 'opaque_test.go', 'packet.go', 'packet_test.go', 'private_key.go', 'private_key_test.go', 'public_key.go', 'public_key_test.go', 'public_key_v3.go', 'public_key_v3_test.go', 'reader.go', 'signature.go', 'signature_test.go', 'signature_v3.go', 'signature_v3_test.go', 'symmetric_key_encrypted.go', 'symmetric_key_encrypted_test.go', 'symmetrically_encrypted.go', 'symmetrically_encrypted_test.go', 'userattribute.go', 'userattribute_test.go', 'userid.go', 'userid_test.go', 'read.go', 'read_test.go', 's2k.go', 's2k_test.go', 'write.go', 'write_test.go', 'libotr_test_helper.c', 'otr.go', 'otr_test.go', 'smp.go', 'pbkdf2.go', 'pbkdf2_test.go', 'bmp-string.go', 'bmp-string_test.go', 'crypto.go', 'crypto_test.go', 'errors.go', 'bench_test.go', 'rc2.go', 'rc2_test.go', 'mac.go', 'mac_test.go', 'pbkdf.go', 'pbkdf_test.go', 'pkcs12.go', 'pkcs12_test.go', 'safebags.go', 'poly1305.go', 'poly1305_test.go', 'sum_amd64.go', 'sum_amd64.s', 'sum_arm.go', 'sum_arm.s', 'sum_ref.go', 'ripemd160.go', 'ripemd160_test.go', 'ripemd160block.go', 'hsalsa20.go', 'salsa2020_amd64.s', 'salsa208.go', 'salsa20_amd64.go', 'salsa20_ref.go', 'salsa_test.go', 'salsa20.go', 'salsa20_test.go', 'example_test.go', 'scrypt.go', 'scrypt_test.go', 'doc.go', 'hashes.go', 'keccakf.go', 'keccakf_amd64.go', 'keccakf_amd64.s', 'register.go', 'sha3.go', 'sha3_test.go', 'shake.go', 'keccakKats.json.deflate', 'xor.go', 'xor_generic.go', 'xor_unaligned.go', 'client.go', 'client_test.go', 'example_test.go', 'forward.go', 'keyring.go', 'keyring_test.go', 'server.go', 'server_test.go', 'testdata_test.go', 'benchmark_test.go', 'buffer.go', 'buffer_test.go', 'certs.go', 'certs_test.go', 'channel.go', 'cipher.go', 'cipher_test.go', 'client.go', 'client_auth.go', 'client_auth_test.go', 'client_test.go', 'common.go', 'connection.go', 'doc.go', 'example_test.go', 'handshake.go', 'handshake_test.go', 'kex.go', 'kex_test.go', 'keys.go', 'keys_test.go', 'knownhosts.go', 'knownhosts_test.go', 'mac.go', 'mempipe_test.go', 'messages.go', 'messages_test.go', 'mux.go', 'mux_test.go', 'server.go', 'session.go', 'session_test.go', 'streamlocal.go', 'tcpip.go', 'tcpip_test.go', 'terminal.go', 'terminal_test.go', 'util.go', 'util_bsd.go', 'util_linux.go', 'util_plan9.go', 'util_solaris.go', 'util_windows.go', 'agent_unix_test.go', 'banner_test.go', 'cert_test.go', 'dial_unix_test.go', 'doc.go', 'forward_unix_test.go', 'session_test.go', 'test_unix_test.go', 'testdata_test.go', 'doc.go', 'keys.go', 'testdata_test.go', 'transport.go', 'transport_test.go', 'cipher.go', 'tea_test.go', 'twofish.go', 'twofish_test.go', 'block.go', 'cipher.go', 'xtea_test.go', 'xts.go', 'xts_test.go', '.gitattributes', '.gitignore', 'AUTHORS', 'CONTRIBUTING.md', 'CONTRIBUTORS', 'LICENSE', 'PATENTS', 'README.md', 'codereview.cfg', 'asm.s', 'asm_plan9_386.s', 'asm_plan9_amd64.s', 'asm_plan9_arm.s', 'const_plan9.go', 'dir_plan9.go', 'env_plan9.go', 'errors_plan9.go', 'mkall.sh', 'mkerrors.sh', 'mksyscall.pl', 'mksysnum_plan9.sh', 'pwd_go15_plan9.go', 'pwd_plan9.go', 'race.go', 'race0.go', 'str.go', 'syscall.go', 'syscall_plan9.go', 'syscall_test.go', 'zsyscall_plan9_386.go', 'zsyscall_plan9_amd64.go', 'zsyscall_plan9_arm.go', 'zsysnum_plan9.go', '.gitignore', 'README.md', 'affinity_linux.go', 'asm_darwin_386.s', 'asm_darwin_amd64.s', 'asm_darwin_arm.s', 'asm_darwin_arm64.s', 'asm_dragonfly_amd64.s', 'asm_freebsd_386.s', 'asm_freebsd_amd64.s', 'asm_freebsd_arm.s', 'asm_linux_386.s', 'asm_linux_amd64.s', 'asm_linux_arm.s', 'asm_linux_arm64.s', 'asm_linux_mips64x.s', 'asm_linux_mipsx.s', 'asm_linux_ppc64x.s', 'asm_linux_s390x.s', 'asm_netbsd_386.s', 'asm_netbsd_amd64.s', 'asm_netbsd_arm.s', 'asm_openbsd_386.s', 'asm_openbsd_amd64.s', 'asm_openbsd_arm.s', 'asm_solaris_amd64.s', 'bluetooth_linux.go', 'cap_freebsd.go', 'constants.go', 'creds_test.go', 'dev_darwin.go', 'dev_darwin_test.go', 'dev_dragonfly.go', 'dev_dragonfly_test.go', 'dev_freebsd.go', 'dev_linux.go', 'dev_linux_test.go', 'dev_netbsd.go', 'dev_netbsd_test.go', 'dev_openbsd.go', 'dev_openbsd_test.go', 'dev_solaris_test.go', 'dirent.go', 'endian_big.go', 'endian_little.go', 'env_unix.go', 'errors_freebsd_386.go', 'errors_freebsd_amd64.go', 'errors_freebsd_arm.go', 'export_test.go', 'flock.go', 'flock_linux_32bit.go', 'gccgo.go', 'gccgo_c.c', 'gccgo_linux_amd64.go', 'Dockerfile', 'mkall.go', 'mksysnum.pl', 'types.go', 'mkall.sh', 'mkerrors.sh', 'mkpost.go', 'mksyscall.pl', 'mksyscall_solaris.pl', 'mksysctl_openbsd.pl', 'mksysnum_darwin.pl', 'mksysnum_dragonfly.pl', 'mksysnum_freebsd.pl', 'mksysnum_netbsd.pl', 'mksysnum_openbsd.pl', 'mmap_unix_test.go', 'openbsd_pledge.go', 'openbsd_test.go', 'pagesize_unix.go', 'race.go', 'race0.go', 'sockcmsg_linux.go', 'sockcmsg_unix.go', 'str.go', 'syscall.go', 'syscall_bsd.go', 'syscall_bsd_test.go', 'syscall_darwin.go', 'syscall_darwin_386.go', 'syscall_darwin_amd64.go', 'syscall_darwin_arm.go', 'syscall_darwin_arm64.go', 'syscall_dragonfly.go', 'syscall_dragonfly_amd64.go', 'syscall_freebsd.go', 'syscall_freebsd_386.go', 'syscall_freebsd_amd64.go', 'syscall_freebsd_arm.go', 'syscall_freebsd_test.go', 'syscall_linux.go', 'syscall_linux_386.go', 'syscall_linux_amd64.go', 'syscall_linux_amd64_gc.go', 'syscall_linux_arm.go', 'syscall_linux_arm64.go', 'syscall_linux_mips64x.go', 'syscall_linux_mipsx.go', 'syscall_linux_ppc64x.go', 'syscall_linux_s390x.go', 'syscall_linux_sparc64.go', 'syscall_linux_test.go', 'syscall_netbsd.go', 'syscall_netbsd_386.go', 'syscall_netbsd_amd64.go', 'syscall_netbsd_arm.go', 'syscall_openbsd.go', 'syscall_openbsd_386.go', 'syscall_openbsd_amd64.go', 'syscall_openbsd_arm.go', 'syscall_solaris.go', 'syscall_solaris_amd64.go', 'syscall_solaris_test.go', 'syscall_test.go', 'syscall_unix.go', 'syscall_unix_gc.go', 'syscall_unix_test.go', 'timestruct.go', 'timestruct_test.go', 'types_darwin.go', 'types_dragonfly.go', 'types_freebsd.go', 'types_netbsd.go', 'types_openbsd.go', 'types_solaris.go', 'zerrors_darwin_386.go', 'zerrors_darwin_amd64.go', 'zerrors_darwin_arm.go', 'zerrors_darwin_arm64.go', 'zerrors_dragonfly_amd64.go', 'zerrors_freebsd_386.go', 'zerrors_freebsd_amd64.go', 'zerrors_freebsd_arm.go', 'zerrors_linux_386.go', 'zerrors_linux_amd64.go', 'zerrors_linux_arm.go', 'zerrors_linux_arm64.go', 'zerrors_linux_mips.go', 'zerrors_linux_mips64.go', 'zerrors_linux_mips64le.go', 'zerrors_linux_mipsle.go', 'zerrors_linux_ppc64.go', 'zerrors_linux_ppc64le.go', 'zerrors_linux_s390x.go', 'zerrors_linux_sparc64.go', 'zerrors_netbsd_386.go', 'zerrors_netbsd_amd64.go', 'zerrors_netbsd_arm.go', 'zerrors_openbsd_386.go', 'zerrors_openbsd_amd64.go', 'zerrors_openbsd_arm.go', 'zerrors_solaris_amd64.go', 'zptrace386_linux.go', 'zptracearm_linux.go', 'zptracemips_linux.go', 'zptracemipsle_linux.go', 'zsyscall_darwin_386.go', 'zsyscall_darwin_amd64.go', 'zsyscall_darwin_arm.go', 'zsyscall_darwin_arm64.go', 'zsyscall_dragonfly_amd64.go', 'zsyscall_freebsd_386.go', 'zsyscall_freebsd_amd64.go', 'zsyscall_freebsd_arm.go', 'zsyscall_linux_386.go', 'zsyscall_linux_amd64.go', 'zsyscall_linux_arm.go', 'zsyscall_linux_arm64.go', 'zsyscall_linux_mips.go', 'zsyscall_linux_mips64.go', 'zsyscall_linux_mips64le.go', 'zsyscall_linux_mipsle.go', 'zsyscall_linux_ppc64.go', 'zsyscall_linux_ppc64le.go', 'zsyscall_linux_s390x.go', 'zsyscall_linux_sparc64.go', 'zsyscall_netbsd_386.go', 'zsyscall_netbsd_amd64.go', 'zsyscall_netbsd_arm.go', 'zsyscall_openbsd_386.go', 'zsyscall_openbsd_amd64.go', 'zsyscall_openbsd_arm.go', 'zsyscall_solaris_amd64.go', 'zsysctl_openbsd_386.go', 'zsysctl_openbsd_amd64.go', 'zsysctl_openbsd_arm.go', 'zsysnum_darwin_386.go', 'zsysnum_darwin_amd64.go', 'zsysnum_darwin_arm.go', 'zsysnum_darwin_arm64.go', 'zsysnum_dragonfly_amd64.go', 'zsysnum_freebsd_386.go', 'zsysnum_freebsd_amd64.go', 'zsysnum_freebsd_arm.go', 'zsysnum_linux_386.go', 'zsysnum_linux_amd64.go', 'zsysnum_linux_arm.go', 'zsysnum_linux_arm64.go', 'zsysnum_linux_mips.go', 'zsysnum_linux_mips64.go', 'zsysnum_linux_mips64le.go', 'zsysnum_linux_mipsle.go', 'zsysnum_linux_ppc64.go', 'zsysnum_linux_ppc64le.go', 'zsysnum_linux_s390x.go', 'zsysnum_linux_sparc64.go', 'zsysnum_netbsd_386.go', 'zsysnum_netbsd_amd64.go', 'zsysnum_netbsd_arm.go', 'zsysnum_openbsd_386.go', 'zsysnum_openbsd_amd64.go', 'zsysnum_openbsd_arm.go', 'ztypes_darwin_386.go', 'ztypes_darwin_amd64.go', 'ztypes_darwin_arm.go', 'ztypes_darwin_arm64.go', 'ztypes_dragonfly_amd64.go', 'ztypes_freebsd_386.go', 'ztypes_freebsd_amd64.go', 'ztypes_freebsd_arm.go', 'ztypes_linux_386.go', 'ztypes_linux_amd64.go', 'ztypes_linux_arm.go', 'ztypes_linux_arm64.go', 'ztypes_linux_mips.go', 'ztypes_linux_mips64.go', 'ztypes_linux_mips64le.go', 'ztypes_linux_mipsle.go', 'ztypes_linux_ppc64.go', 'ztypes_linux_ppc64le.go', 'ztypes_linux_s390x.go', 'ztypes_linux_sparc64.go', 'ztypes_netbsd_386.go', 'ztypes_netbsd_amd64.go', 'ztypes_netbsd_arm.go', 'ztypes_openbsd_386.go', 'ztypes_openbsd_amd64.go', 'ztypes_openbsd_arm.go', 'ztypes_solaris_amd64.go', 'asm_windows_386.s', 'asm_windows_amd64.s', 'dll_windows.go', 'env_windows.go', 'eventlog.go', 'exec_windows.go', 'memory_windows.go', 'mksyscall.go', 'race.go', 'race0.go', 'export_test.go', 'key.go', 'mksyscall.go', 'registry_test.go', 'syscall.go', 'value.go', 'zsyscall_windows.go', 'security_windows.go', 'service.go', 'str.go', 'log.go', 'service.go', 'event.go', 'install.go', 'log.go', 'log_test.go', 'beep.go', 'install.go', 'main.go', 'manage.go', 'service.go', 'go12.c', 'go12.go', 'go13.go', 'config.go', 'mgr.go', 'mgr_test.go', 'service.go', 'security.go', 'service.go', 'svc_test.go', 'sys_386.s', 'sys_amd64.s', 'syscall.go', 'syscall_test.go', 'syscall_windows.go', 'syscall_windows_test.go', 'types_windows.go', 'types_windows_386.go', 'types_windows_amd64.go', 'zsyscall_windows.go', 'setup.py']",['d9e556d2fed8f49c06c0a78c24c9c67b83d26907'],278659,7082,285741,1074,0.46427769250926515,0.24769775015909856,0.2642814360049414
+6c1f5bb75047264a07d9b438415938c29ba45d46,"add basic instructions for appender on kf gke (#32)
+
+* add basic instructions for appender on kf gke
+
+* add patch for 0.3.x
+
+* review feedback, new base image",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2018-12-10 07:57:40-08:00,28800,2018-12-10 07:57:40-08:00,28800,True,False,"['README.md', 'demo.ipynb', 'pre-0.4-patch.yaml']",['8087c0b4e4ae5007b7a21177047e8b8412be382e'],0,290,290,3,,,
+57a59d6bbf306b9e140c552d13532104dc7fc719,avoid launching both chief and worker jobs when running a non distributed job (#50),Hamed,hamedhsn@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-01-09 19:01:43+00:00,0,2019-01-09 11:01:43-08:00,28800,True,False,"['decorators.py', 'deployment.py', 'setup.py']",['6c1f5bb75047264a07d9b438415938c29ba45d46'],5,7,12,3,0.5,1.0,0.5
+e30f6d1bb70d52454ff5d35c8043c4a3ffb407a1,tests: fix tests (#56),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-01-11 13:38:58-08:00,28800,2019-01-11 13:38:58-08:00,28800,True,False,['test_dockerfile.py'],['57a59d6bbf306b9e140c552d13532104dc7fc719'],3,3,6,1,,,
+e1ec48300a0da2375e599430897133f75bf1e029,deploy: optionally print out manifests (#58),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-01-11 18:02:53-08:00,28800,2019-01-11 18:02:53-08:00,28800,True,False,"['decorators.py', 'deployment.py']",['e30f6d1bb70d52454ff5d35c8043c4a3ffb407a1'],3,12,15,2,0.0,1.0,0.375
+d362cd913d95b3f8e3a731db4a7ffd1787ab3bef,notebook_helper: remove magic commands (#55),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-01-11 18:04:28-08:00,28800,2019-01-11 18:04:28-08:00,28800,True,False,"['notebook_helper.py', 'test_notebook_helper.py', 'magic_command.ipynb']",['e1ec48300a0da2375e599430897133f75bf1e029'],2,278,280,3,1.0,1.0,0.8333333333333334
+fe2debd75954b0353f1ae97c2c8115e57fe7b70a,"Update deps (#59)
+
+* setup.py: add requests
+
+* setup.py: add tornado",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-01-11 18:06:02-08:00,28800,2019-01-11 18:06:02-08:00,28800,True,False,['setup.py'],['d362cd913d95b3f8e3a731db4a7ffd1787ab3bef'],0,2,2,1,,,
+f82e75e78874f16ceaee756445100bb7fef96b58,Adding myself to the reviewers list (#60),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-01-14 10:06:43-08:00,28800,2019-01-14 10:06:43-08:00,28800,True,False,['OWNERS'],['fe2debd75954b0353f1ae97c2c8115e57fe7b70a'],0,1,1,1,,,
+d28a1c7c2c94621197a47ee729c920af5983692c,update tfjob to v1beta1 (#61),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-01-18 15:51:23-08:00,28800,2019-01-18 15:51:23-08:00,28800,True,False,"['manager.py', 'deployment.py']",['f82e75e78874f16ceaee756445100bb7fef96b58'],3,3,6,2,,,
+51083730090874b188c001d06b47e3fa817a321a,"Refactored tfjob version, optional output, added resource_limits  (#62)
+
+* Make output optional
+
+* Added limits for fairing
+
+* Whoops
+
+* decode -> encode",Chris Van Pelt,vanpelt@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-01-22 13:36:58-08:00,28800,2019-01-22 13:36:58-08:00,28800,True,False,"['__init__.py', 'manager.py', 'append.py', 'deployment.py', 'deployment.py']",['d28a1c7c2c94621197a47ee729c920af5983692c'],46,58,104,5,0.0,1.0,0.625
+e287047abf11d91e5ab2ec88e716ab4d73592111,"Refactor (#64)
+
+* refactor builder/deployer/preprocessor interfaces
+
+* update examples
+
+* remove broken tests
+
+* update examples
+
+* add files to run locally, preprocessor fixes
+
+* use requirements.txt in setup.py
+
+* cascade cleanup of jobs
+
+* fix full_notebook preprocessor
+
+* dont set uuid in init
+
+* update readme
+
+* uncomment cleanup code
+
+* xgboost example rename
+
+* move import to top of file
+
+* add docstrings",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-02-05 12:58:03-08:00,28800,2019-02-05 12:58:03-08:00,28800,True,False,"['Dockerfile', 'Dockerfile.dev', 'Dockerfile.jupyter', 'Makefile', 'README.md', 'docker_name_.py', 'docker_session_.py', 'requirements.txt', 'transport_pool_.py', 'requirements.txt', 'main.py', 'README.md', 'demo.ipynb', 'main.py', 'pre-0.4-patch.yaml', 'README.md', 'main.py', 'main.py', 'requirements.txt', 'main.py', 'requirements.txt', 'fairing-kubeflow-gke.ipynb', 'fairing-xgboost.ipynb', 'requirements.txt', 'main.py', '__init__.py', '__init__.py', 'append.py', 'base_builder.py', 'builder.py', '__init__.py', 'cluster.py', 'context_source.py', 'gcs_context.py', '__init__.py', 'docker.py', 'dockerfile.py', 'knative.py', 'build.py', 'build_template.py', '__init__.py', 'gcp.py', 'config.py', '__init__.py', 'constants.py', '__init__.py', 'deployer.py', '__init__.py', 'job.py', '__init__.py', 'tfjob.py', '__init__.py', 'manager.py', '__init__.py', 'notebook_util.py', 'notebook_helper.py', '__init__.py', 'base.py', 'converted_notebook.py', 'full_notebook.py', 'runtime_config.py', 'base.py', 'decorators.py', 'decorators.py', 'runtime.py', 'utils.py', 'ipython_kernel_config.py', 'notebook_pod.yaml', 'requirements.txt', 'setup.py', 'skaffold.yaml', 'test_dockerfile.py', 'test_notebook_helper.py', 'test_utils.py', 'magic_command.ipynb']",['51083730090874b188c001d06b47e3fa817a321a'],1946,1216,3162,75,0.12994350282485875,0.096045197740113,0.0
+826b323b1a1d99779e7cb613fdd8e61b4a2c3470,format files (#66),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-02-08 11:09:59-08:00,28800,2019-02-08 11:09:59-08:00,28800,True,False,"['__init__.py', '__init__.py', '__init__.py', 'append.py', 'base_builder.py', 'builder.py', '__init__.py', 'cluster.py', 'context_source.py', 'gcs_context.py', '__init__.py', 'docker.py', 'dockerfile.py', 'gcp.py', 'config.py', 'constants.py', '__init__.py', 'deployer.py', 'job.py', 'tfjob.py', '__init__.py', 'manager.py', 'notebook_util.py', '__init__.py', 'base.py', 'converted_notebook.py', 'full_notebook.py', 'runtime_config.py', 'utils.py']",['e287047abf11d91e5ab2ec88e716ab4d73592111'],317,182,499,29,0.5714285714285714,1.0,0.7142857142857143
+282cd155c6046b9c3c99cd657af963f96f3d64b7,Add rpasricha to Fairing reviewers (#70),Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-02-15 15:43:14-08:00,28800,2019-02-15 15:43:14-08:00,28800,True,False,['OWNERS'],['826b323b1a1d99779e7cb613fdd8e61b4a2c3470'],0,1,1,1,,,
+aeced566b5f7262c2c7042be5effe52712492ce6,"Updating approvers list (#72)
+
+* Adding jlewi to approvers list
+
+* Add rpasricha to Fairing reviewers (#70)
+
+* Adding rpasricha and myself to approvers list
+
+Also removing wbuchwalter for time being as he has not been active with Fairing lately
+
+* Adding jlewi to approvers list
+
+* Adding rpasricha and myself to approvers list
+
+Also removing wbuchwalter for time being as he has not been active with Fairing lately",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-02-20 05:26:21-08:00,28800,2019-02-20 05:26:21-08:00,28800,True,False,['OWNERS'],['282cd155c6046b9c3c99cd657af963f96f3d64b7'],3,2,5,1,,,
+c95779705938e40579c0edb284798f9074179096,"Add push switch to builders (#67)
+
+* add push bool to builders
+
+* dont mask push function",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-02-20 08:57:16-08:00,28800,2019-02-20 08:57:16-08:00,28800,True,False,"['Dockerfile', 'append.py', 'base_builder.py', 'cluster.py', 'gcs_context.py', 'docker.py', 'manager.py']",['aeced566b5f7262c2c7042be5effe52712492ce6'],17,50,67,7,0.47368421052631576,0.9473684210526315,0.0
+132f99d75bcd8dd8377e87aed5d317eede5aa6a0,"Add a basic function preprocessor (#68)
+
+* add function preprocessor
+
+* add example
+
+* add docstring
+
+* rename to remote_train
+
+* add docstrings",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-02-20 11:59:01-08:00,28800,2019-02-20 11:59:01-08:00,28800,True,False,"['main.py', 'append.py', 'config.py', 'job.py', 'function_shim.py', 'base.py', 'function.py', 'runtime_config.py']",['c95779705938e40579c0edb284798f9074179096'],69,139,208,8,0.0,1.0,0.375
+27357f8cb107e429e105f0b29837f59e9027c732,"Add Travis setup and Fairing config tests (#77)
+
+* Add Travis configuration and config test
+
+* Update cluster builder to not load kube config on construction
+
+* Add reset method to config and update tests
+
+* Remove requirements pip install from .travis.yml",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-02-21 14:53:30-08:00,28800,2019-02-21 14:53:30-08:00,28800,True,False,"['config.yml', '.travis.yml', 'cluster.py', 'config.py', 'config_test.py']",['132f99d75bcd8dd8377e87aed5d317eede5aa6a0'],29,63,92,5,0.37037037037037035,1.0,0.6296296296296297
+2f9fbc7b0386c3b261ae9eda4bd638d20e53a3e4,"Modified function preprocessor to use cloudpickle (#85)
+
+* Modified function preprocessor to use cloudpickle
+
+* Added notebook example
+
+* Added a TODO item",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-02-26 13:58:38-08:00,28800,2019-02-26 13:58:38-08:00,28800,True,False,"['hello-world.ipynb', 'main.py', 'config.py', '__init__.py', 'function_shim.py', 'notebook_util.py', 'function.py', 'requirements.txt', 'test_function_preprocessor.py']",['27357f8cb107e429e105f0b29837f59e9027c732'],21,140,161,9,0.6,1.0,0.8
+1e3ce15771c73add333ba90de3d13cb2f4d5913b,"Add GCP deployer (#86)
+
+* Add GCP deployer
+
+* Update API request to use Python client library",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-02-27 13:31:24-08:00,28800,2019-02-27 13:31:24-08:00,28800,True,False,"['append.py', 'config.py', '__init__.py', 'gcp.py', 'utils.py', 'requirements.txt']",['2f9fbc7b0386c3b261ae9eda4bd638d20e53a3e4'],2,64,66,6,0.3611111111111111,1.0,0.8055555555555556
+23f9017c329f5d3c4cbe42da7b240869166dfeb9,"Add cloud build Dockerfile and build steps (#92)
+
+* Add cloud build Dockerfile and build steps
+
+* Update dockerfile and cloudbuild.yaml",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-01 12:35:51-08:00,28800,2019-03-01 12:35:51-08:00,28800,True,False,"['.dockerignore', 'Dockerfile.test', 'cloudbuild.yaml']",['1e3ce15771c73add333ba90de3d13cb2f4d5913b'],0,156,156,3,,,
+21fbf1d4bfc0a24428fb4fed926ef6cdb196dc39,"Testing gcb build triggers
+
+minor fix in readme",Abhishek Gupta,abhishek@google.com,GitHub,noreply@github.com,2019-03-01 16:02:42-08:00,28800,2019-03-01 16:02:42-08:00,28800,True,False,['README.md'],['23f9017c329f5d3c4cbe42da7b240869166dfeb9'],2,3,5,1,,,
+736c025e6d77f135bda345e5030398d5d2ef654a,"Add Serving Deployer (#91)
+
+* add prediction example
+
+* add serving deployer
+
+* set path_prefix correctly in docker and cluster builders
+
+* add path_prefix as workdir in dockerfile
+
+* remove restart policy, since cannot be put in deployment spec
+
+* add wait for service endpoint helper in k8s manager
+
+* dont throw error if executable not set in preprocessor
+
+* fix up runtime configs
+
+* review feedback
+
+* more review feedback",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-01 16:17:29-08:00,28800,2019-03-01 16:17:29-08:00,28800,True,False,"['HousingServe.py', 'HousingTrain.py', 'README.md', 'data_description.txt', 'sample_submission.csv', 'test.csv', 'train.csv', 'requirements.txt', 'trained_ames_model.dat', 'base_builder.py', 'cluster.py', 'docker.py', 'dockerfile.py', 'config.py', '__init__.py', 'serving.py', 'manager.py', 'base.py', 'runtime_config.py']",['21fbf1d4bfc0a24428fb4fed926ef6cdb196dc39'],11,5211,5222,19,0.408,0.84,0.632
+7e65e9d0870f3ef0c2bf9f9da19bb68933f5fc9f,some fixes and improvements (#97),Hamed,hamedhsn@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-05 17:49:59+00:00,0,2019-03-05 09:49:59-08:00,28800,True,False,"['main.py', 'append.py', 'base_builder.py', 'cluster.py', 'docker.py', 'config.py', 'job.py', 'tfjob.py']",['736c025e6d77f135bda345e5030398d5d2ef654a'],25,58,83,8,1.0,1.0,0.68
+c4225f2bf6da36f3834874b2a16b20f5d23430c8,Removing pining exact versions of the dependencies (#98),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-05 10:08:00-08:00,28800,2019-03-05 10:08:00-08:00,28800,True,False,['requirements.txt'],['7e65e9d0870f3ef0c2bf9f9da19bb68933f5fc9f'],11,11,22,1,,,
+9dc25687c4eb9648456f4ce9d3a8ee522fd9ad22,explicitly set restart_policy to never for job (#96),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-06 13:32:49-08:00,28800,2019-03-06 13:32:49-08:00,28800,True,False,['job.py'],['c4225f2bf6da36f3834874b2a16b20f5d23430c8'],0,1,1,1,1.0,1.0,1.0
+0dfae8eed762dae1db389faa4338845da352d00b,"Check additional locations when retrieving project_id and credentials (#103)
+
+* Update guess_project_name to check more credential options
+
+* Add guess_project_name tests
+
+* Upgrade pytest in travis config",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-07 07:55:01-08:00,28800,2019-03-07 07:55:01-08:00,28800,True,False,"['.travis.yml', 'gcp.py', 'test_gcp_creds.py']",['9dc25687c4eb9648456f4ce9d3a8ee522fd9ad22'],10,47,57,3,1.0,1.0,1.0
+c2d8e7b7d5e4984bb40541aea3e76d4647b37433,Removing reviewers who are not active (#105),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-07 10:39:44-08:00,28800,2019-03-07 10:39:44-08:00,28800,True,False,['OWNERS'],['0dfae8eed762dae1db389faa4338845da352d00b'],3,0,3,1,,,
+af33f40b097e30ab257ac91f9860e0cbda9ebaf8,Update readme (#107),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-11 13:20:39-07:00,25200,2019-03-11 13:20:39-07:00,25200,True,False,['README.md'],['c2d8e7b7d5e4984bb40541aea3e76d4647b37433'],4,4,8,1,,,
+b9222a05344ac2de537ee82539feb0f206e8b31a,remove set_model/get_model from config (#114),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-14 11:38:27-07:00,25200,2019-03-14 11:38:27-07:00,25200,True,False,['config.py'],['af33f40b097e30ab257ac91f9860e0cbda9ebaf8'],6,0,6,1,0.0,0.0,0.0
+f4f3dc3039745abe3c62aa5bb3a0a4896568dec5,update distributed training example (#115),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-14 11:52:27-07:00,25200,2019-03-14 11:52:27-07:00,25200,True,False,['main.py'],['b9222a05344ac2de537ee82539feb0f206e8b31a'],1,0,1,1,,,
+2be195c0b8b48d310ac3ded9d4b3b895fd8d10b0,add custom labels to deployer (#113),Hamed,hamedhsn@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-14 20:41:00+00:00,0,2019-03-14 13:41:00-07:00,25200,True,False,"['job.py', 'serving.py', 'tfjob.py', 'manager.py']",['f4f3dc3039745abe3c62aa5bb3a0a4896568dec5'],9,17,26,4,1.0,1.0,0.0
+570da925220e82aa39ebc525bb39d446f32c1624,"Update examples (#117)
+
+* Update examples
+
+* Update kubeflow-gke, kubernetes examples to use base preprocessor",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-15 11:36:58-07:00,25200,2019-03-15 11:36:58-07:00,25200,True,False,"['main.py', 'main.py', 'fairing-kubeflow-gke.ipynb', 'fairing-xgboost.ipynb', 'hello-world.ipynb', 'trained_ames_model.dat', 'main.py']",['2be195c0b8b48d310ac3ded9d4b3b895fd8d10b0'],176,143,319,7,,,
+7f7a66687ceab3ed2838ad29e3ff4b04afe351ab,"Kubeflow credentials, tarfile fixes, unit tests (#112)
+
+* Set credentials and service account for Kubeflow jobs
+
+* Fix job deletion args
+
+* Tarfile fixes: dereference files and don't add recursively
+
+* Add basic integration test
+
+* Split unit tests into a separate dir, update Travis config
+
+* Test updates and skip additional duplicates
+
+* Add main module to function preprocessor tests
+
+* Update output_map preprocessor argument to use None as default
+
+* Add mount_credentials flag to tfjob deployer
+
+* Update training function output in integration test
+
+* Reverse context map and add duplicate warnings",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-15 16:18:57-07:00,25200,2019-03-15 16:18:57-07:00,25200,True,False,"['.travis.yml', 'Dockerfile.test', 'cloudbuild.yaml', 'job.py', 'tfjob.py', 'base.py', 'converted_notebook.py', 'full_notebook.py', 'function.py', 'test_kubeflow_training.py', 'test_gcp_creds.py', 'config_test.py', 'test_function_preprocessor.py']",['570da925220e82aa39ebc525bb39d446f32c1624'],24,106,130,13,0.21568627450980393,0.0,0.9607843137254902
+8729d9120c2631aa1f904ed564f5374fe4d71e67,"Update to ReadMe.md (#116)
+
+* Initial review and suggestions for the Fairing readme.md file.
+
+* Edits and revisions to the example section.
+
+* Testing using bookmarks on GitHub
+
+* Another test of bookmarks in Github
+
+* Removing bookmark attempt.
+
+* Update ReadMe.md
+
+Revisions and corrections.
+
+* Update ReadMe.md
+
+More revisions.
+
+* Update ReadMe.MD, correcting markdown error
+
+* Update readme.md, with a small text fix
+
+* Update ReadMe.md 
+
+Ensure that Kubeflow Fairing name is consistent.
+
+* Update readme.md
+
+Removes features section and updates introduction.
+
+* Update readme.md
+
+Correcting install-from location.",Joe Liedtke,joe.liedtke@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-18 14:54:20-07:00,25200,2019-03-18 14:54:20-07:00,25200,True,False,['README.md'],['7f7a66687ceab3ed2838ad29e3ff4b04afe351ab'],41,64,105,1,,,
+dea5a365075c692b0b46f70f858328636b5c6cb5,"Make prediction endpoint deployment work with function preprocessor in a notebook (#120)
+
+* Added support for creating endpoint using function preprocessor
+
+1. Made function preprocessor compatible with prediction deployment jobs
+2. Corrected a typo in TFJob deployer
+3. Created an example for train and deploy of xgboost in gcp
+
+* Fixing #119
+
+* Fixing a minor bug and adding input_files param to function preprocessor
+
+* Added TODO items
+
+* Adding Dockerfile for the predict example
+
+* Renamed example notebook to show it is meant for notebooks running locally
+
+* Removing redundant set builder call
+
+* Fixing typos and minor changes",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-18 16:38:20-07:00,25200,2019-03-18 16:38:20-07:00,25200,True,False,"['.gitignore', 'Dockerfile', 'requirements.txt', 'xgboost-train-and-deploy-in-gcp-from-local-notebook.ipynb', 'tfjob.py', 'function_shim.py', 'base.py', 'function.py']",['8729d9120c2631aa1f904ed564f5374fe4d71e67'],8,387,395,8,0.6153846153846154,0.6153846153846154,0.6153846153846154
+50d5e440d1de7fed11fc953e3c95ae35a529274d,"Adding scale tier as a pass through option to GCP deployer (#130)
+
+* Adding scale tier as a pass through option to GCP deployer
+
+* Adding scale tier as a pass through option to GCP deployer
+
+* Added an example for GPU test on GCP ML engine",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-19 09:48:26-07:00,25200,2019-03-19 09:48:26-07:00,25200,True,False,"['hello-world-gpu-pytorch.py', 'gcp.py']",['dea5a365075c692b0b46f70f858328636b5c6cb5'],3,42,45,2,1.0,1.0,0.9
+08cb8c6ea71af7e453fc708d71c8007c9219f5b5,"Update README.md (#133)
+
+Updating with suggestions from peer-review process.",Joe Liedtke,joe.liedtke@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-19 14:06:22-07:00,25200,2019-03-19 14:06:22-07:00,25200,True,False,['README.md'],['50d5e440d1de7fed11fc953e3c95ae35a529274d'],10,13,23,1,,,
+a234e3cdd43e9c04801a30a9ea04a082f3460ddf,"Setting docker command in docker builder (#132)
+
+* Setting docker command in docker builder
+
+Fixes #131
+
+* Added tests and made docker command optional
+
+* Fixing some typos",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-19 16:26:40-07:00,25200,2019-03-19 16:26:40-07:00,25200,True,False,"['docker.py', 'dockerfile.py', 'test_dockerfile.py']",['08cb8c6ea71af7e453fc708d71c8007c9219f5b5'],6,50,56,3,0.8055555555555556,1.0,0.9444444444444444
+d2d059a323a769f84f07ebe2217d7c9c6e80b9fb,"GCP Serving Deployer (#134)
+
+* Add GCP Serving deployer
+
+* Add default deployment args and example notebook
+
+* Add unit tests for GCPServing deployer",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-20 10:53:47-07:00,25200,2019-03-20 10:53:47-07:00,25200,True,False,"['deploy-to-gcp.ipynb', 'gcpserving.py', 'test_gcpserving.py']",['a234e3cdd43e9c04801a30a9ea04a082f3460ddf'],0,433,433,3,0.5669291338582677,0.7086614173228346,0.7086614173228346
+933bef4d2c57dec6c854857631dcde963c409430,"Refactor Service Account Credentials (#136)
+
+* Add credentials in base builder
+
+* Refactor credential mounting into Job deployer
+
+* Move credential mounting to Kubernetes manager
+
+* Integration tests
+
+* Update interface to use a list of pod_spec_mutators
+
+* Update integration tests",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-22 09:22:51-07:00,25200,2019-03-22 09:22:51-07:00,25200,True,False,"['gcp.py', 'job.py', 'tfjob.py', 'manager.py', 'test_kubeflow_training.py']",['d2d059a323a769f84f07ebe2217d7c9c6e80b9fb'],39,141,180,5,0.52,1.0,0.4666666666666667
+63edaacc420460f9ea225471ae0026e1ead2ae4c,"add more context (#138)
+
+* add more context
+
+* use it from notebooks",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-22 10:20:50-07:00,25200,2019-03-22 10:20:50-07:00,25200,True,False,['README.md'],['933bef4d2c57dec6c854857631dcde963c409430'],3,5,8,1,,,
+97426294ffaf76e0611ad33111fb5ac0bd07a23e,add pod spec mutators for cluster builder (#137),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-22 15:44:08-07:00,25200,2019-03-22 15:44:08-07:00,25200,True,False,['cluster.py'],['63edaacc420460f9ea225471ae0026e1ead2ae4c'],1,9,10,1,0.0,1.0,0.5
+2674108b9a5cd02b516f400372d0c96783e30591,"High level APIs for train and deploy in notebooks (#135)
+
+* [WIP] Draft high level APIs for train and deploy in notebooks
+
+* Refactor Service Account Credentials (#136)
+
+* Add credentials in base builder
+
+* Refactor credential mounting into Job deployer
+
+* Move credential mounting to Kubernetes manager
+
+* Integration tests
+
+* Update interface to use a list of pod_spec_mutators
+
+* Update integration tests
+
+* add more context (#138)
+
+* add more context
+
+* use it from notebooks
+
+* Refractored the classes into a separate package and common utils
+
+* [WIP] Draft high level APIs for train and deploy in notebooks
+
+* Refractored the classes into a separate package and common utils
+
+* Refractored location of util functions and minor changes
+
+* Addressing comments on defualt arg value",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-22 16:42:08-07:00,25200,2019-03-22 16:42:08-07:00,25200,True,False,"['xgboost-high-level-apis.ipynb', '__init__.py', '__init__.py', 'tasks.py', 'utils.py', 'utils.py']",['97426294ffaf76e0611ad33111fb5ac0bd07a23e'],1,360,361,6,1.0,1.0,0.5416666666666666
+ae8496c72aa3163d88ca7c763ea9d2d34ebe7bd9,jupyter requires tornando lower than 6 (#140),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-25 16:36:16-07:00,25200,2019-03-25 16:36:16-07:00,25200,True,False,['requirements.txt'],['2674108b9a5cd02b516f400372d0c96783e30591'],1,1,2,1,,,
+d4b76be0a503d76a108a53644156f7e57d95a125,"Full notebook preprocessor updates (#142)
+
+* Add input_files to full_notebook preprocessor and update jupyter command
+
+* Normalize input paths in base preprocessor
+
+* Add todo for configuration and check if notebook file has been provided",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-27 17:24:04-07:00,25200,2019-03-27 17:24:04-07:00,25200,True,False,"['base.py', 'full_notebook.py']",['ae8496c72aa3163d88ca7c763ea9d2d34ebe7bd9'],8,22,30,2,0.0,1.0,0.18181818181818182
+fac21a2f96e032fc90aaaeee3e6a58c685142936,lint the examples a bit (#147),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-27 17:48:44-07:00,25200,2019-03-27 17:48:44-07:00,25200,True,False,"['main.py', 'main.py', 'main.py', 'main.py']",['d4b76be0a503d76a108a53644156f7e57d95a125'],24,6,30,4,1.0,0.0,0.0
+90346cb86e56e6d16eca5df34d36f05ef3d27df1,"Adding code coverage for pytest tests (#151)
+
+* Adding code coverage for pytest tests
+
+* Explicitly scanning only source dir to find packages and exclude tests package",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-28 13:51:57-07:00,25200,2019-03-28 13:51:57-07:00,25200,True,False,"['Dockerfile.test', 'cloudbuild.yaml', 'setup.py', '__init__.py', '__init__.py', '__init__.py']",['fac21a2f96e032fc90aaaeee3e6a58c685142936'],3,3,6,6,,,
+dc6fce8192446e26be4e963e1d7d23002af2f855,"Added abstraction for different backends/environments (#144)
+
+* Added abstraction for different backends/environments
+
+* Fixing minor bugs
+
+* Added tests and some backend api changes
+
+Added namespace as arg to backends
+Fixed #148
+Added tests for backend api
+
+* Full notebook preprocessor updates (#142)
+
+* Add input_files to full_notebook preprocessor and update jupyter command
+
+* Normalize input paths in base preprocessor
+
+* Add todo for configuration and check if notebook file has been provided
+
+* lint the examples a bit (#147)
+
+*  Adding code coverage for pytest tests (#151)
+
+* Adding code coverage for pytest tests
+
+* Explicitly scanning only source dir to find packages and exclude tests package
+
+* Refractored tests into gcp and non gcp specific
+
+also added backed interface
+
+* Added abstraction for different backends/environments
+
+* Fixing minor bugs
+
+* Added tests and some backend api changes
+
+Added namespace as arg to backends
+Fixed #148
+Added tests for backend api
+
+* Refractored tests into gcp and non gcp specific
+
+also added backed interface
+
+* Minor changes to constants and error message
+
+* Minor chanes to xgboost-high-level-apis.ipynb",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-29 09:46:17-07:00,25200,2019-03-29 09:46:17-07:00,25200,True,False,"['xgboost-high-level-apis.ipynb', '__init__.py', 'backends.py', 'gcp.py', 'constants.py', 'tasks.py', 'test_high_level_apis.py', 'test_kubeflow_training.py', '__init__.py', 'conftest.py', 'requirements.txt', 'test_gcp_high_level_apis.py', 'test_gcs_access.py', 'test_kubeflow_training.py']",['90346cb86e56e6d16eca5df34d36f05ef3d27df1'],133,434,567,14,1.0,1.0,0.6639344262295082
+331f85feaf19595482d48213beb78aad4c6c1c94,"Installing requirements earlier and fixing issues with cluster builder (#158)
+
+* Installing requirements earlier and fixing some issues with cluster builder
+
+* Added tests and refactored some code to make testing easier
+
+* simplifying dockerfile logic and changing tests correpondingly",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-29 15:31:09-07:00,25200,2019-03-29 15:31:09-07:00,25200,True,False,"['cluster.py', 'gcs_context.py', 'docker.py', 'dockerfile.py', 'base.py', 'test_kubeflow_training.py', 'test_dockerfile.py', 'test_base_preprocessor.py']",['dc6fce8192446e26be4e963e1d7d23002af2f855'],16,84,100,8,0.5535714285714286,1.0,0.9285714285714286
+4b8e5a6a0217265f9e3cc961749440bb0f51e4fd,"Skip creating secret in context preparer (#159)
+
+We do this in the pod_spec_mutator functions now",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-03-29 15:55:09-07:00,25200,2019-03-29 15:55:09-07:00,25200,True,False,['gcs_context.py'],['331f85feaf19595482d48213beb78aad4c6c1c94'],36,1,37,1,0.4375,0.0,0.4375
+cd3b0581c2a70c352ac2f66432bc2e023e3fbc7c,"Add prediction client (#157)
+
+* Add prediction client
+
+* review feedback
+
+* update example",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-02 12:59:20-07:00,25200,2019-04-02 12:59:20-07:00,25200,True,False,"['xgboost-high-level-apis.ipynb', 'xgboost-train-and-deploy-in-gcp-from-local-notebook.ipynb', 'serving.py', 'manager.py', 'tasks.py']",['4b8e5a6a0217265f9e3cc961749440bb0f51e4fd'],14,17,31,5,0.5,0.75,0.75
+71398a065463043b28a4aa6842aa2df49b0799b9,create bucket if it doesnt exist (#165),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-02 13:05:20-07:00,25200,2019-04-02 13:05:20-07:00,25200,True,False,['gcp.py'],['cd3b0581c2a70c352ac2f66432bc2e023e3fbc7c'],1,10,11,1,1.0,1.0,1.0
+bd8313d9a4e4dd3b69a840e7cf0ea0d2326d720e,"Update full_notebook preprocessor to use Papermill (#162)
+
+* Update full_notebook preprocessor to use papermill
+
+* Add Papermill to requirements
+
+* Add tests for full_notebook preprocessor
+
+* Remove Papermill from requirements",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-02 13:39:19-07:00,25200,2019-04-02 13:39:19-07:00,25200,True,False,"['base.py', 'full_notebook.py', 'test_full_notebook.py', 'test_notebook.ipynb', 'test_full_notebook_preprocessor.py', 'test_notebook.ipynb']",['71398a065463043b28a4aa6842aa2df49b0799b9'],5,151,156,6,0.8888888888888888,0.3888888888888889,0.6666666666666666
+9eba1793be715b8e82a178d56c5da830299b1d0d,Updating authors and description in setup.py (#169),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-02 15:51:19-07:00,25200,2019-04-02 15:51:19-07:00,25200,True,False,['setup.py'],['bd8313d9a4e4dd3b69a840e7cf0ea0d2326d720e'],7,2,9,1,,,
+882ecbd0e307dbdd64621c568c20d33b747da913,Default Kubeflow backends to Job (#175),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-03 11:24:49-07:00,25200,2019-04-03 11:24:49-07:00,25200,True,False,['backends.py'],['9eba1793be715b8e82a178d56c5da830299b1d0d'],3,2,5,1,,,
+1ebf579b3a48bc2b4a9f6cdd5a17926d7b6fc051,call get_service_external_endpoint correctly (#177),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-03 14:34:50-07:00,25200,2019-04-03 14:34:50-07:00,25200,True,False,['serving.py'],['882ecbd0e307dbdd64621c568c20d33b747da913'],1,1,2,1,,,
+0671a6d60efe49702124b3f14ff6c68923930399,"Update full notebook tests and convert absolute to relative paths (#171)
+
+* Update full notebook tests and convert absolute to relative paths
+
+* Use os.path.isabs to check for absolute path",Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-03 14:38:49-07:00,25200,2019-04-03 14:38:49-07:00,25200,True,False,"['full_notebook.py', 'requirements.txt', 'test_full_notebook.py', 'test_full_notebook_preprocessor.py']",['1ebf579b3a48bc2b4a9f6cdd5a17926d7b6fc051'],8,27,35,4,0.625,0.625,0.125
+ed0b30c3c5cad4b7d12c763805872b6d9782e970,Add unique label to cluster builder job (#178),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-03 15:12:49-07:00,25200,2019-04-03 15:12:49-07:00,25200,True,False,['cluster.py'],['0671a6d60efe49702124b3f14ff6c68923930399'],1,2,3,1,0.0,1.0,1.0
+a7ca7fb8ea4c06d765e2c8b6680d0e72cb5d3d79,Add job config to GCP deployer (#172),Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-03 15:20:50-07:00,25200,2019-04-03 15:20:50-07:00,25200,True,False,"['gcp.py', 'test_gcp.py']",['ed0b30c3c5cad4b7d12c763805872b6d9782e970'],15,133,148,2,0.7441860465116279,1.0,0.9883720930232558
+27d0f30f66b025be6d71c9d5ed084016d45ee8ea,"Adding necessary pod spec mutators to cluster builder in the high level api (#180)
+
+* Adding get builder function to backend api
+
+* Fixing a minor bug in serving deployer
+
+* minor fix
+
+* Removing debug print statements
+
+* Adding get builder function to backend api
+
+* Fixing a minor bug in serving deployer
+
+* minor fix
+
+* Removing debug print statements
+
+* Added delete to serving deployer and added tests
+
+* Skippping prediction calls in tests
+
+* Addressing PR feedbacks and increasing timeout for cloud build",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-04 11:59:18-07:00,25200,2019-04-04 11:59:18-07:00,25200,True,False,"['Dockerfile.test', 'cloudbuild.yaml', 'xgboost-high-level-apis.ipynb', 'backends.py', 'serving.py', 'tasks.py', 'utils.py', 'test_running_in_notebooks.py']",['a7ca7fb8ea4c06d765e2c8b6680d0e72cb5d3d79'],38,178,216,8,0.2682926829268293,1.0,0.4634146341463415
+62542905dff51762b14e3414091342e4114de3fc,Adding myself to approvers (#182),Abhishek Gupta,abhi.gupta@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-04 14:59:20-07:00,25200,2019-04-04 14:59:20-07:00,25200,True,False,['OWNERS'],['27d0f30f66b025be6d71c9d5ed084016d45ee8ea'],0,1,1,1,,,
+c5f713c05804ea32836e678b5ae5b5fbab056b15,"Fix prediction (#181)
+
+* fix prediction endpoint
+
+* fix examples
+
+* fix other example
+
+* read_input expects file array
+
+* review feedback
+
+* feedback
+
+* flatten",Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-04 15:35:19-07:00,25200,2019-04-04 15:35:19-07:00,25200,True,False,"['xgboost-high-level-apis.ipynb', 'xgboost-train-and-deploy-in-gcp-from-local-notebook.ipynb', 'tasks.py']",['62542905dff51762b14e3414091342e4114de3fc'],30,18,48,3,1.0,1.0,0.0
+564776c50d52942a42acec6280a8fd6be8812849,updated requirements for Kubernetes client lib (#186),Abhishek Gupta,abhi.gupta@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-04 21:51:18-07:00,25200,2019-04-04 21:51:18-07:00,25200,True,False,['requirements.txt'],['c5f713c05804ea32836e678b5ae5b5fbab056b15'],1,1,2,1,,,
+aa0cbe617fcc3b5e7fc8ff95f31c0f5a619d6712,"Test improvements and minor fixes for storage client auth (#187)
+
+* Test improvements
+
+* Adding numpy to requirements",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-05 13:55:54-07:00,25200,2019-04-05 13:55:54-07:00,25200,True,False,"['.gitignore', 'Dockerfile.test', 'gcp.py', 'requirements.txt', 'test_high_level_apis.py', 'test_kubeflow_training.py', 'test_gcp_high_level_apis.py', 'test_gcs_access.py']",['564776c50d52942a42acec6280a8fd6be8812849'],31,54,85,8,1.0,1.0,1.0
+a9bb9d5cc1c9f1d75efa31198ddbdccfe176b7bf,Bumping version to 0.5 (#188),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-05 14:19:54-07:00,25200,2019-04-05 14:19:54-07:00,25200,True,False,['setup.py'],['aa0cbe617fcc3b5e7fc8ff95f31c0f5a619d6712'],1,1,2,1,,,
+46f6e17921841a939b3501eceffc3c2cfb9094c6,"Adds process descriptions to xgboost-high-level-apis.ipynb. (#190)
+
+* Adds process descriptions to xgboost-high-level-apis.ipynb.
+
+* Update xgboost-high-level-apis.ipynb
+
+Adds reviewer suggestions, changes headings to sentence case.",Joe Liedtke,joe.liedtke@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-08 08:02:27-07:00,25200,2019-04-08 08:02:27-07:00,25200,True,False,['xgboost-high-level-apis.ipynb'],['a9bb9d5cc1c9f1d75efa31198ddbdccfe176b7bf'],7,77,84,1,,,
+3fff15ab570ed68bfe80fee99ad70d6160c536c8,cut v0.5.2,Matt Rickard,mrick@google.com,Matt Rickard,mrick@google.com,2019-04-08 10:59:21-07:00,25200,2019-04-08 10:59:21-07:00,25200,True,False,['setup.py'],['46f6e17921841a939b3501eceffc3c2cfb9094c6'],1,1,2,1,,,
+0e304490223a585300753e6fe4e356a040cd1e0e,Add labels to deployment (#205),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-10 10:58:41-07:00,25200,2019-04-10 10:58:41-07:00,25200,True,False,['job.py'],['642530567d0255f88b0f83b0a40b3325c303bfa2'],1,2,3,1,0.0,1.0,1.0
+dc601b8498f8c9f13d27e5659e7ef898a585d215,"Create issue_label_bot.yaml (#211)
+
+for issue label bot",Hamel Husain,hamelsmu@github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-12 21:16:02-07:00,25200,2019-04-12 21:16:02-07:00,25200,True,False,['issue_label_bot.yaml'],['0e304490223a585300753e6fe4e356a040cd1e0e'],0,4,4,1,,,
+b69139ff86f1d87870858ddf56d6140f83fd21e6,Remove rpasricha from owners file (#210),Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-13 11:27:59-07:00,25200,2019-04-13 11:27:59-07:00,25200,True,False,['OWNERS'],['dc601b8498f8c9f13d27e5659e7ef898a585d215'],1,0,1,1,,,
+208176ac40cb5b6d1b697c3cd4bc4f85ba112c18,update documentation on xgboost example notebook (#214),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-15 15:31:09-07:00,25200,2019-04-15 15:31:09-07:00,25200,True,False,['xgboost-high-level-apis.ipynb'],['b69139ff86f1d87870858ddf56d6140f83fd21e6'],1,1,2,1,,,
+4fc76bebf10c375b266821a91e67c0d5a5530069,"Add logging, set working directory and service type. (#207)
+
+* Add logging, set working directory and service type.
+
+* For AppendBuilder set working directory to /app so that files are on
+  the python path
+
+* Set default to ClusterIP for the service.
+  Related to #206
+
+  There's some ongoing discussion about the right long term solution but
+  I think its better to lock things down in the short term.
+
+* Add more logging.
+
+* Print out the full in cluster URL of the service.
+
+* * config.run should return preprocessor, builder, deployer so that people
+  can access them.
+
+* Make the type of endpoint configurable e.g. ClusterIP or LoadBalancer.
+
+* Fix the path.
+
+* Restore backends.py
+
+* Add logging.
+
+* Remove logging.",Jeremy Lewi,jeremy+github@lewi.us,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-15 19:39:05-07:00,25200,2019-04-15 19:39:05-07:00,25200,True,False,"['append.py', 'base_builder.py', 'cluster.py', 'docker.py', 'config.py', 'serving.py', 'tasks.py', 'base.py']",['208176ac40cb5b6d1b697c3cd4bc4f85ba112c18'],26,51,77,8,0.0,1.0,0.8888888888888888
+dfe76ad198fc1d6de983ec850768cc3b5d347ad3,"Fix a typo in reference to service_type to fix postsubmit tests (#215)
+
+* Switch default service type back to LoadBalancer because the notebook
+  test currently depends on that and there's no easy way to override it
+  in the notebook.
+
+* I didn't actually run the post-submit tests because I'm not sure how.
+
+Related to #206",Jeremy Lewi,jeremy+github@lewi.us,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-16 14:55:07-07:00,25200,2019-04-16 14:55:07-07:00,25200,True,False,['serving.py'],['4fc76bebf10c375b266821a91e67c0d5a5530069'],2,6,8,1,,,
+079654d9efbd6733934cfc6709c97e3c4754be13,placeholder prow config (#220),Matt Rickard,m@rickard.email,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-22 13:35:45-07:00,25200,2019-04-22 13:35:45-07:00,25200,True,False,['prow_config.yaml'],['dfe76ad198fc1d6de983ec850768cc3b5d347ad3'],0,1,1,1,,,
+2402811647c0e3e6d6d9a599c57899cbbf209261,"Making tests run parallel (#218)
+
+* Making tests run in parallel
+
+* Update the machine type and minor changes to requriements.txt
+
+* Update to travis config
+
+* Fixing the version of urlliib3 to resovle some conflicts
+
+* placeholder prow config (#220)
+
+* Making tests run in parallel
+
+* Update the machine type and minor changes to requriements.txt
+
+* Update to travis config
+
+* Fixing the version of urlliib3 to resovle some conflicts",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-22 13:43:44-07:00,25200,2019-04-22 13:43:44-07:00,25200,True,False,"['.travis.yml', 'Dockerfile.test', 'cloudbuild.yaml', 'dockerfile.py', 'base.py', 'requirements.txt']",['079654d9efbd6733934cfc6709c97e3c4754be13'],9,17,26,6,0.5,1.0,0.5
+3660213d04c197bf18b7dff063a12dfff077fccd,Integrate GCP Serving deployer with deployer interface (#189),Rajiv Pasricha,rpasricha@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-22 16:30:08-07:00,25200,2019-04-22 16:30:08-07:00,25200,True,False,"['gcpserving.py', 'test_gcpserving.py']",['2402811647c0e3e6d6d9a599c57899cbbf209261'],42,43,85,2,1.0,1.0,1.0
+52ff67209a596d931e670fd3e02df6db2f91ac3e,Updates readme.md to refer users to the docs site (#231),Joe Liedtke,joeliedtke@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-04-29 16:59:34-07:00,25200,2019-04-29 16:59:34-07:00,25200,True,False,['README.md'],['3660213d04c197bf18b7dff063a12dfff077fccd'],115,13,128,1,,,
+f18e14241deeefb9f65049109c63de2bd78180b1,"Added tests for converted notebook preprocessor (#226)
+
+* Added tests for converted notebook preprocessor
+
+* Removing debug print statement",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-08 13:32:36-07:00,25200,2019-05-08 13:32:36-07:00,25200,True,False,['test_converted_notebook_preprocessor.py'],['52ff67209a596d931e670fd3e02df6db2f91ac3e'],0,35,35,1,1.0,1.0,1.0
+b0f7f46b28934d7abd987ec67cc628bcd622287f,"Adding fairing specific user agent to GCP calls (#238)
+
+* Adding fairing specific user agent to gcp calls
+
+* Updating logic for setting user agent
+
+Fixing minor bug related to tf-job
+
+* Delete unwanted file -  api_spec.json
+
+* Chaning a unit test to integration test
+
+* updating ci kubeflow cluster name
+
+* removing unused imports
+
+* Now appending user agnet instead of replacing",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-08 15:50:47-07:00,25200,2019-05-08 15:50:47-07:00,25200,True,False,"['Dockerfile.test', 'cloudbuild.yaml', '__init__.py', 'constants.py', 'gcp.py', 'gcpserving.py', 'tfjob.py', 'http_utils.py', 'conftest.py', 'test_user_agent.py', 'test_gcp.py', 'test_http_utils.py']",['f18e14241deeefb9f65049109c63de2bd78180b1'],7,142,149,12,1.0,1.0,0.8241758241758241
+1f4dcfecb53f5ed2b9b306b1111b4d11ad2fe305,"Plans for Q2 (#245)
+
+* Plans for Q2
+
+* updates
+
+* updates",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-13 16:31:09-07:00,25200,2019-05-13 16:31:09-07:00,25200,True,False,['roadmap.md'],['b0f7f46b28934d7abd987ec67cc628bcd622287f'],0,11,11,1,,,
+e2bd1cf36bc82039c96161ea7589eff7a53ffb8f,"Add Fairing Prow tests (#247)
+
+* add prow tests
+
+* remove travis config
+
+* fix typo
+
+* modify cloudbuild yaml for new project
+
+* fix
+
+* add verbosity back
+
+* Bring back .travis.yml temporarily until the setup works reliably
+
+* Addressed comments from Karthik, enabled cloud build integration test
+
+* fix ci cluster name",Abhishek Gupta,abhi.gupta@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-13 16:49:09-07:00,25200,2019-05-13 16:49:09-07:00,25200,True,False,"['cloudbuild.yaml', 'gcp.py', 'prow_config.yaml', 'e2e.sh', 'unit.sh', '422d521c05aa905df949868143b26445f5e4eda5.yaml', '61c7da4756c8ba149637bf4a9e1805258fbead96.yaml', 'app.yaml', 'params.libsonnet', 'workflows.jsonnet', 'workflows.libsonnet', 'base.libsonnet', 'k.libsonnet', 'k8s.libsonnet', 'swagger.json', 'main.jsonnet', 'params.libsonnet']",['1f4dcfecb53f5ed2b9b306b1111b4d11ad2fe305'],7,76041,76048,17,1.0,1.0,0.0
+7268ad08f4bf6cbb4bc95a28c4a1d23d7a396860,bumping the version (#249),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-16 10:44:55-07:00,25200,2019-05-16 10:44:55-07:00,25200,True,False,"['__init__.py', 'setup.py', 'test_user_agent.py']",['e2bd1cf36bc82039c96161ea7589eff7a53ffb8f'],4,5,9,3,,,
+08c81437fd9ed720cf4b780e25097fef9fa16cd6,"Added native support for LightGBM  (#252)
+
+* Added support for LightGBM
+
+* Added support for LightGBM",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-16 18:33:27-07:00,25200,2019-05-16 18:33:27-07:00,25200,True,False,"['Dockerfile', 'simple-training.ipynb', '__init__.py', 'lightgbm.py', 'test_lightgbm.py']",['7268ad08f4bf6cbb4bc95a28c4a1d23d7a396860'],0,433,433,5,0.3869047619047619,1.0,0.6607142857142857
+3c9a37c968516324aa0ddbc4633a55eac2680c3e,Added distribution training support (#259),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-22 08:24:15-07:00,25200,2019-05-22 08:24:15-07:00,25200,True,False,"['distributed-training.ipynb', 'requirements.txt', 'lightgbm.py', 'lightgbm_dist_training_init.py', 'utils.py', 'base.py', 'test_running_in_notebooks.py', 'test_lightgbm.py']",['08c81437fd9ed720cf4b780e25097fef9fa16cd6'],72,453,525,8,0.546875,0.5,0.4140625
+0fcbe95c3e31a945dd37efec9a4e6f327cec7f29,return job name from deployer (#261),Hamed,hamedhsn@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-28 18:13:56+01:00,-3600,2019-05-28 10:13:56-07:00,25200,True,False,"['config.py', 'gcp.py', 'job.py', 'tasks.py']",['3c9a37c968516324aa0ddbc4633a55eac2680c3e'],2,6,8,4,0.5,1.0,1.0
+2af4bbe344ab7fc397e7e7b8ee58ebc505d88051,"Added resource specification for pods in LightGBM API (#262)
+
+* added pod resource specificaton to lightgbm API
+
+* added pod resource specificaton to lightgbm API
+
+* removing crcmod
+
+crcmod actually slows the download speed!
+
+* minor edits",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-29 12:06:20-07:00,25200,2019-05-29 12:06:20-07:00,25200,True,False,"['distributed-training.ipynb', 'lightgbm.py', 'utils.py', 'utils.py', 'test_utils.py']",['0fcbe95c3e31a945dd37efec9a4e6f327cec7f29'],12,103,115,5,0.5409836065573771,0.5409836065573771,0.5409836065573771
+097f7d980037fa6ab2758c5305d09d02145d6b48,Updating gsutil to improve speed (#264),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-05-29 14:10:22-07:00,25200,2019-05-29 14:10:22-07:00,25200,True,False,['Dockerfile'],['2af4bbe344ab7fc397e7e7b8ee58ebc505d88051'],4,9,13,1,,,
+6a1a35be943a0adffcd8cc173bd6b11dbb8621fe,copies weight file if it exists,Karthik Ramasamy,karthikv2k@gmail.com,Karthik Ramasamy,karthikv2k@gmail.com,2019-05-31 14:22:17-07:00,25200,2019-05-31 14:22:17-07:00,25200,True,False,"['storage.py', 'lightgbm.py', 'test_lightgbm.py']",['097f7d980037fa6ab2758c5305d09d02145d6b48'],24,153,177,3,0.5,0.6326530612244898,0.8163265306122449
+cbac06f2512dab910fbe996371f6aac9b6807381,updated integration test,Karthik Ramasamy,karthikv2k@gmail.com,Karthik Ramasamy,karthikv2k@gmail.com,2019-05-31 14:32:55-07:00,25200,2019-05-31 14:32:55-07:00,25200,True,False,['test_running_in_notebooks.py'],['6a1a35be943a0adffcd8cc173bd6b11dbb8621fe'],0,1,1,1,1.0,1.0,1.0
+df0fd5bfaf8d47cece5423b0d0af1288b2d436b6,Support hostname as a serving endpoint (#266),Takeaki Matsumoto,tkak.matsumoto@gmail.com,Karthik Ramasamy,karthikv2k@users.noreply.github.com,2019-06-01 08:27:33+09:00,-32400,2019-05-31 16:27:33-07:00,25200,True,False,['manager.py'],['44784ca87c59dee56e91c36690f6c02d4233e6dd'],1,1,2,1,,,
+9fdc9aafbb1b4cc3895854d996d4035244573adc,add backofflimit to avoid job recreation (#269),Hamed,hamedhsn@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-03 21:31:38+01:00,-3600,2019-06-03 13:31:38-07:00,25200,True,False,['job.py'],['df0fd5bfaf8d47cece5423b0d0af1288b2d436b6'],1,3,4,1,0.0,1.0,1.0
+16589d098624dbec8201b1f01ca8149edf40a70e,"Added issue/pr template. (#270)
+
+* Added issue/pr template.
+
+* minor fix
+
+```fairing.version -> fairing.__version__```",Guang Ya Liu,gyliu513@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-06 14:18:11+08:00,-28800,2019-06-05 23:18:11-07:00,25200,True,False,"['bug_report.md', 'feature_request.md', 'PULL_REQUEST_TEMPLATE.md']",['9fdc9aafbb1b4cc3895854d996d4035244573adc'],0,66,66,3,,,
+6da86a8cbc8a8764d045145afe9575a000ebc363,add name to container (#272),Hamed,hamedhsn@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-10 17:27:08+01:00,-3600,2019-06-10 09:27:08-07:00,25200,True,False,['job.py'],['16589d098624dbec8201b1f01ca8149edf40a70e'],0,1,1,1,0.0,1.0,1.0
+c7d83ce81d2ac5c5ef2ee083593e60ec3612525e,Added support for data parallel mode in LightGBM (#276),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-13 13:24:16-07:00,25200,2019-06-13 13:24:16-07:00,25200,True,False,"['distributed-training-data-parallel.ipynb', 'lightgbm.py', 'lightgbm_dist_training_init.py', 'utils.py', 'test_lightgbm.py']",['6da86a8cbc8a8764d045145afe9575a000ebc363'],39,402,441,5,0.19548872180451127,0.22556390977443608,0.7593984962406015
+fb526758757ae79fe129fd1942edb12cdb3404e9,PyTorch notebook examples (#241),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-13 13:32:19-07:00,25200,2019-06-13 13:32:19-07:00,25200,True,False,"['mnist.ipynb', 'requirements.txt']",['c7d83ce81d2ac5c5ef2ee083593e60ec3612525e'],0,313,313,2,,,
+cad6980cef246e593d472338acd5375ac2e08247,"Adding different entry point options to Train Job API (#279)
+
+* Making builder selection logic better for GKE backend
+
+* Making builder selection logic better for GKE backend
+
+* Added different entrypoint options to train job api
+
+* clearing cell outputs
+
+* minor fixes",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-13 14:38:14-07:00,25200,2019-06-13 14:38:14-07:00,25200,True,False,"['main.ipynb', 'train.ipynb', 'backends.py', 'gcp.py', 'tasks.py', 'utils.py', 'base.py', 'function.py', 'test_notebook.py']",['fb526758757ae79fe129fd1942edb12cdb3404e9'],48,340,388,9,0.0,0.0,0.2112676056338028
+c83ff8653a0744de6cfb65bffe584dc892a074da,minor bug fix (#280),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-13 17:26:19-07:00,25200,2019-06-13 17:26:19-07:00,25200,True,False,"['tasks.py', 'utils.py']",['cad6980cef246e593d472338acd5375ac2e08247'],2,2,4,2,,,
+3ad4eebb28821f0aaee3b75d228175db0ed971cc,remove useless set_model (#278),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-18 00:40:11+08:00,-28800,2019-06-17 09:40:11-07:00,25200,True,False,"['main.py', 'main.py']",['c83ff8653a0744de6cfb65bffe584dc892a074da'],2,0,2,2,,,
+1ea92ef8a7e9bb7ee9bde92c7da05b7c4e153192,"Add ability to specify context_source for k8s backends (#281)
+
+* Add ability to specify context_source for k8s backends
+
+* Make ClusterBuilder raises Error when context_source is undefined
+
+* Change context_source to build_context_source in backend
+
+* Fix integration test",Takeaki Matsumoto,tkak.matsumoto@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-19 13:08:33+09:00,-32400,2019-06-18 21:08:33-07:00,25200,True,False,"['backends.py', 'cluster.py', 'test_kubeflow_training.py']",['3ad4eebb28821f0aaee3b75d228175db0ed971cc'],11,18,29,3,0.6,1.0,0.0
+e34aa74688ad646cda87291b727f920cb881609a,update examples to add set_preprocessor (#285),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-19 16:26:32+08:00,-28800,2019-06-19 01:26:32-07:00,25200,True,False,"['main.py', 'hello-world-gpu-pytorch.py', 'main.py', 'main.py', 'main.py', 'main.py']",['1ea92ef8a7e9bb7ee9bde92c7da05b7c4e153192'],28,41,69,6,,,
+d2912bf3e7cad6888b682e778a1907ef42f119fb,Check python version for function preprocessor (#291),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-21 22:52:37+08:00,-28800,2019-06-21 07:52:37-07:00,25200,True,False,"['function_shim.py', 'function.py', 'test_py_version_checking.py']",['e34aa74688ad646cda87291b727f920cb881609a'],1,64,65,3,0.9411764705882353,1.0,0.6176470588235294
+20dbc93902779b62ea84f378b4aa560a5a38f878,"Implement AWSBackend and S3Context (#263)
+
+* Change aws-secret implement
+
+* Implement AWSBackend and S3Context
+
+* Fix some design
+
+* Add ability to specify bucket_name
+
+* Add creating ECR repo function",Takeaki Matsumoto,tkak.matsumoto@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-23 01:54:12+09:00,-32400,2019-06-22 09:54:12-07:00,25200,True,False,"['backends.py', 's3_context.py', 'aws.py', 'constants.py', 'manager.py', 'requirements.txt']",['d2912bf3e7cad6888b682e778a1907ef42f119fb'],1,230,231,6,0.5822784810126582,1.0,0.31645569620253167
+5ba6fe09c59b9378525415e97947b0c53973452e,Warn users who are using function preprocessor and not in notebook (#292),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-23 01:20:12+08:00,-28800,2019-06-22 10:20:12-07:00,25200,True,False,['function.py'],['20dbc93902779b62ea84f378b4aa560a5a38f878'],0,9,9,1,0.0,1.0,0.0
+c68bfb1d5e0d62a564774e7202e9626052222463,Add xgboost example for gke on prem (#301),Lun-Kai Hsu,lunkai@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-26 17:01:19-07:00,25200,2019-06-26 17:01:19-07:00,25200,True,False,['xgboost-gkeop.ipynb'],['5ba6fe09c59b9378525415e97947b0c53973452e'],0,318,318,1,,,
+c0bc3dfa75a13172e4c635ef4f7620dc02d6d75a,allow user input service type (#294),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-27 08:05:19+08:00,-28800,2019-06-26 17:05:19-07:00,25200,True,False,"['backends.py', 'tasks.py']",['c68bfb1d5e0d62a564774e7202e9626052222463'],6,8,14,2,1.0,1.0,0.0
+48eea390e420e8c13970f2cdfa6f80c70c1908e4,"upgrade tfjobs version (#297)
+
+* upgrade tfjobs version
+
+* tidy up the tfjob variables to constants",Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-27 08:05:27+08:00,-28800,2019-06-26 17:05:27-07:00,25200,True,False,"['xgboost-high-level-apis.ipynb', 'constants.py', 'tfjob.py', 'manager.py']",['c0bc3dfa75a13172e4c635ef4f7620dc02d6d75a'],19,20,39,4,,,
+081b1b5dadb621d4465e29d774237167cbf46708,add jinchihe to owners (#303),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-27 22:49:19+08:00,-28800,2019-06-27 07:49:19-07:00,25200,True,False,['OWNERS'],['48eea390e420e8c13970f2cdfa6f80c70c1908e4'],0,2,2,1,,,
+fb868d9d9749e0fb67adf81c9d5ff57fe24ee53c,fix notebook for gke on prem (#306),Lun-Kai Hsu,lunkai@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-06-27 13:31:23-07:00,25200,2019-06-27 13:31:23-07:00,25200,True,False,['xgboost-gkeop.ipynb'],['081b1b5dadb621d4465e29d774237167cbf46708'],4,20,24,1,,,
+c353cf6e57537fda61a7313fb56aabc61515e7d6,Better error message when tf-job version mismatch (#305),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-09 03:06:36+08:00,-28800,2019-07-08 12:06:36-07:00,25200,True,False,['manager.py'],['fb868d9d9749e0fb67adf81c9d5ff57fe24ee53c'],7,11,18,1,1.0,1.0,0.0
+f695dc2d96966e671d84cecc425b785ac32eea3f,support kfserving in fairing (#299),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-11 16:26:55+08:00,-28800,2019-07-11 01:26:55-07:00,25200,True,False,"['main.py', 'config.py', 'constants.py', '__init__.py', 'kfserving.py', 'manager.py', 'kfserving.py']",['c353cf6e57537fda61a7313fb56aabc61515e7d6'],5,233,238,7,0.5546875,0.6953125,0.578125
+b9d1b4107ed6a2691741b285fafce23220c3cd15,upgrading ks version for e2e testing (#313),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-11 14:51:06-07:00,25200,2019-07-11 14:51:06-07:00,25200,True,False,['app.yaml'],['f695dc2d96966e671d84cecc425b785ac32eea3f'],1,1,2,1,,,
+f4f52fa8c59a087e0fda61c738b664a20c9b7eba,Specifying exact containers while log tailing (#317),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-15 17:13:23-07:00,25200,2019-07-15 17:13:23-07:00,25200,True,False,"['Dockerfile.test', 'cluster.py', 'job.py', 'tfjob.py']",['b9d1b4107ed6a2691741b285fafce23220c3cd15'],4,8,12,4,0.75,1.0,1.0
+640474978d229ed04a6658440882bf4c261162d0,Add a option to let user cleanup tfjob (#311),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-16 09:37:24+08:00,-28800,2019-07-15 18:37:24-07:00,25200,True,False,"['tfjob.py', 'manager.py', 'test_kubeflow_training.py']",['f4f52fa8c59a087e0fda61c738b664a20c9b7eba'],5,50,55,3,0.23333333333333334,1.0,0.4666666666666667
+e6204b2ce9a8f821a59598268909b91e4bcf0cd2,"add preprocessor to convert notebook to code (#310)
+
+* add preprocessor to convert notebook (#229)
+* add filter to strip out everything except fairing:include-cell
+* add preprocessor to generate code from notebook and create an entrypoint
+
+* add unit test for preprocessor with fire and the new filter
+
+* update preprocessors
+- check for existing files with the same name; if exists, create a tempfile
+- remove generated files while unit-testing preprocessors",Chun-Hsiang Wang,abcdefgs0324@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-15 20:15:25-07:00,25200,2019-07-15 20:15:25-07:00,25200,True,False,"['converted_notebook.py', 'test_converted_notebook_preprocessor.py', 'test_notebook.ipynb', 'test_notebook.py']",['640474978d229ed04a6658440882bf4c261162d0'],14,133,147,4,0.46808510638297873,0.6382978723404256,0.7872340425531915
+f43a4a3675e43cb736b690a07f22490b54523867,Defaulting to current namespace instead of kubeflow namespace (#318),Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-16 21:18:35-07:00,25200,2019-07-16 21:18:35-07:00,25200,True,False,"['xgboost-high-level-apis.ipynb', 'backends.py', 'cluster.py', 'gcs_context.py', 'lightgbm.py', 'tasks.py', 'test_kubeflow_training.py']",['e6204b2ce9a8f821a59598268909b91e4bcf0cd2'],24,38,62,7,1.0,0.6923076923076923,0.0
+700f3b4158e2b1a3e87859c2f4eab1d112676e0d,fix one message issue and classify constants (#321),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-18 22:22:12+08:00,-28800,2019-07-18 07:22:12-07:00,25200,True,False,"['constants.py', 'job.py', 'serving.py']",['f43a4a3675e43cb736b690a07f22490b54523867'],9,14,23,3,0.0,1.0,0.0
+4f9e007365101443e1230ee206980ed6014f7d31,"Avoid converting to different path if running preprocessor multiple times (#320)
+
+* Avoid converting to different path if run multiple times.
+
+* Change path to absolute path to fix preprocessors path error.
+
+* Fix style.
+
+* Let not_overwrite flag to be private and add a test case for it.
+
+* Change test case name.
+
+* Always overwrite the file except the overwrite flag is False.
+
+* Fix error message.",Chun-Hsiang Wang,abcdefgs0324@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-21 20:06:52-07:00,25200,2019-07-21 20:06:52-07:00,25200,True,False,"['converted_notebook.py', 'test_converted_notebook_preprocessor.py']",['700f3b4158e2b1a3e87859c2f4eab1d112676e0d'],11,19,30,2,0.7142857142857143,1.0,0.42857142857142855
+de359a7b6b90364ea3f3a280efcd11001838e9bf,support pod_spec_mutators for Serving deployer (#327),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-07-31 06:07:51+08:00,-28800,2019-07-30 15:07:51-07:00,25200,True,False,['serving.py'],['4f9e007365101443e1230ee206980ed6014f7d31'],1,4,5,1,0.3333333333333333,1.0,0.6666666666666666
+1fec478eb3e6c34282211c232ccfc798042f7893,Add logging to preprocessor. (#334),Chun-Hsiang Wang,abcdefgs0324@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-03 12:29:50-07:00,25200,2019-08-03 12:29:50-07:00,25200,True,False,['converted_notebook.py'],['de359a7b6b90364ea3f3a280efcd11001838e9bf'],0,4,4,1,0.3333333333333333,0.3333333333333333,1.0
+25e3ced4dc82ef0ad089f5e66f3285a3f62c2d5d,fix integration tests problem (#337),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-06 06:49:49+08:00,-28800,2019-08-05 15:49:49-07:00,25200,True,False,['e2e.sh'],['1fec478eb3e6c34282211c232ccfc798042f7893'],0,2,2,1,,,
+fd87ddcd668de0929c67490280fda3c897957496,fix mini message problems in conf (#331),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-06 07:19:50+08:00,-28800,2019-08-05 16:19:50-07:00,25200,True,False,['config.py'],['25e3ced4dc82ef0ad089f5e66f3285a3f62c2d5d'],2,3,5,1,1.0,1.0,1.0
+b3504ac57dc241e79d13e7afab09507bb3719c10,support mounting pvc for job deployer (#325),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-07 03:04:49+08:00,-28800,2019-08-06 12:04:49-07:00,25200,True,False,"['backends.py', 'constants.py', 'utils.py', 'tasks.py', 'test_pvc_mounting.py']",['fd87ddcd668de0929c67490280fda3c897957496'],10,154,164,5,0.5517241379310345,1.0,0.28735632183908044
+8a350ea2c453e2e06f2b7e534de88a2936f9711a,Changes for #323 (#339),shikha130vv,32208501+shikha130vv@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-07 02:44:50+05:30,-19800,2019-08-06 14:14:50-07:00,25200,True,False,['function.py'],['b3504ac57dc241e79d13e7afab09507bb3719c10'],4,0,4,1,1.0,0.0,1.0
+4d30a905a0071a107a73798160fa8e75306ecacd,"Disabling a test that is causing a timeout in the presubmit tests (#343)
+
+* Running tests sequentially for debugging test timeout
+
+* disabling a test
+
+* Disabling a test that is causing a timeout in presubmit test
+
+* reverting a minor change",Karthik Ramasamy,karthikv2k@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-13 22:02:24-07:00,25200,2019-08-13 22:02:24-07:00,25200,True,False,['test_gcs_access.py'],['8a350ea2c453e2e06f2b7e534de88a2936f9711a'],8,8,16,1,0.0,0.0,0.0
+be8d42957077cb9844fcaed0f8cada8c74a982fc,"apply pylint testing (#300)
+
+* apply_pylint_testing
+
+* fix some pylint errors",Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-14 21:12:25+08:00,-28800,2019-08-14 06:12:25-07:00,25200,True,False,"['.pylintrc', 'main.py', 'hello-world-gpu-pytorch.py', 'main.py', 'main.py', 'main.py', 'main.py', 'main.py', 'HousingServe.py', 'HousingTrain.py', 'main.py', '__init__.py', '__init__.py', 'backends.py', 'append.py', 'base_builder.py', 'builder.py', 'cluster.py', 'context_source.py', 'gcs_context.py', 's3_context.py', 'docker.py', 'dockerfile.py', 'aws.py', 'gcp.py', 'config.py', '__init__.py', 'deployer.py', 'gcp.py', 'gcpserving.py', 'job.py', 'kfserving.py', 'serving.py', 'tfjob.py', 'lightgbm.py', 'lightgbm_dist_training_init.py', 'utils.py', 'function_shim.py', 'http_utils.py', 'manager.py', 'utils.py', 'tasks.py', 'utils.py', 'notebook_util.py', 'base.py', 'converted_notebook.py', 'full_notebook.py', 'function.py', 'runtime_config.py', 'utils.py', 'ipython_kernel_config.py', 'setup.py', 'test_full_notebook.py', 'test_high_level_apis.py', 'test_kubeflow_training.py', 'test_py_version_checking.py', 'conftest.py', 'test_gcp_high_level_apis.py', 'test_gcs_access.py', 'test_running_in_notebooks.py', 'test_user_agent.py', 'test_pvc_mounting.py', 'test_dockerfile.py', 'test_gcp_creds.py', 'config_test.py', 'test_gcp.py', 'test_gcpserving.py', 'kfserving.py', 'test_lightgbm.py', 'test_utils.py', 'test_base_preprocessor.py', 'test_converted_notebook_preprocessor.py', 'test_full_notebook_preprocessor.py', 'test_function_preprocessor.py', 'test_notebook.py', 'test_http_utils.py', 'workflows.libsonnet']",['4d30a905a0071a107a73798160fa8e75306ecacd'],746,1504,2250,77,0.10909090909090909,0.8545454545454545,0.509090909090909
+c6c075dece72135f5883abfe2a296894d74a2367,update owner for jinchihe (#345),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-14 23:14:26+08:00,-28800,2019-08-14 08:14:26-07:00,25200,True,False,['OWNERS'],['be8d42957077cb9844fcaed0f8cada8c74a982fc'],2,1,3,1,,,
+87c1185cde356939494ff4e9631c0b490b27153a,"Azure backend support (#322)
+
+* Implement Azure backend support
+
+This is a summary of our modifications to the official project:
+* Added an Azure version of sample xgboost-high-level-apis-azure.ipynb
+* Added a KubeflowAzureBackend
+* Added an Azure Storage based context
+* Added Azure related helper functions and classes
+* Added Azure related constants
+* Added Azure library to requirements
+
+In fairing/constants/constants.py you can find the secrets required for
+the code to work and how to create them.
+
+* Unit test for Azure credentials
+
+* Fix service_type error
+
+The error got introduced with the commit that allows users to
+set the service_type via the API.
+
+As a fix, getting rid of the overwritten functions in AzureBackend
+because they are equal to the ones in the KubernetesBackend (parent).
+
+* Fix local variable reference
+
+The local variable `tail` was referenced before assignment in
+certain code paths.
+
+* Integration test for prediction with Azure backend
+
+* Allow specifying which tests to run
+
+Changing the syntax in the entrypoint keeps the original default
+behaviour but also allows specifying which tests to run. This could
+be used to run only a specific integration test or exclude some
+folders from the test run.
+
+* Code cleanup and an additional test
+
+Cleanup mostly based on pylint recommendations.
+
+* Align environment variable names
+
+* Ignore Azure integration tests in Cloud Build
+
+* Align secret names with Kubeflow scripts
+
+The name `azcreds` was used as the name of the secret at
+https://github.com/kubeflow/kubeflow/blob/2f94612ce62eaa2a5ba23da7c0515b65dac380a7/scripts/azure/util.sh#L100
+
+This change aligns with the script above in that if secrets are set
+that way, they will be picked up correctly.
+
+* Refactor to a single sample using many backends
+
+To avoid code duplication, the Azure-specific sample notebook was
+removed and the existing sample was modified to contain changes
+required to use different backends.
+
+* Skipping GCPManagedBackend test
+
+* Impoting pytest
+
+* updating the correct test this time and enabling only one test file
+
+* enabling all tests
+
+* Fix pylint issues",Ville Rantala,ville.rantala@microsoft.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-23 17:27:20+03:00,-10800,2019-08-23 07:27:20-07:00,25200,True,False,"['Dockerfile.test', 'cloudbuild.yaml', 'xgboost-high-level-apis.ipynb', 'backends.py', 'azurestorage_context.py', 'azure.py', 'constants.py', 'manager.py', 'tasks.py', 'requirements.txt', 'test_azure_file_uploader.py', 'test_running_in_notebooks.py', 'test_gcp_high_level_apis.py', 'test_running_in_notebooks.py', 'helpers.py', 'test_azure.py']",['c6c075dece72135f5883abfe2a296894d74a2367'],63,537,600,16,0.5993589743589743,0.9967948717948718,0.34294871794871795
+5325a19e7de81580fff746ee47b5dccf5aaf2437,"Fix bug in predict in examples. (#335)
+
+* Fix bug in predict in examples.
+
+* Install dependencies while running examples.
+
+* Fix.
+
+* Fix test integration error.
+
+* Fix typo.
+
+* Fix tornado error.
+
+* Rollback.
+
+* Fix.
+
+* Upgrade version of tornado.
+
+* Fix.
+
+* Fix tornado.
+
+* Fix pylint.
+
+* Making prediction output JSON serializable
+
+* adding missing arg in predict fn
+
+* reverting a change
+
+* enabling all tests",Chun-Hsiang Wang,chunhsiang@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-26 02:16:21-07:00,25200,2019-08-26 02:16:21-07:00,25200,True,False,"['Dockerfile.test', 'HousingServe.py', 'requirements.txt', 'xgboost-gkeop.ipynb', 'xgboost-high-level-apis.ipynb', 'xgboost-train-and-deploy-in-gcp-from-local-notebook.ipynb', 'requirements.txt', 'e2e.sh']",['87c1185cde356939494ff4e9631c0b490b27153a'],13,41,54,8,,,1.0
+929cfdb455366a9bebc0df676f3461308db32f1b,fix minor problems in tests (#356),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-29 04:01:55+08:00,-28800,2019-08-28 13:01:55-07:00,25200,True,False,['test_pvc_mounting.py'],['5325a19e7de81580fff746ee47b5dccf5aaf2437'],12,9,21,1,0.0,1.0,0.0
+4172e7bb99cbfe0f7e2bcd26525b59044034c9e0,Disable istio injection (#348),Hiroyuki Tanaka,aflc0x@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-29 17:01:56+09:00,-32400,2019-08-29 01:01:56-07:00,25200,True,False,['cluster.py'],['929cfdb455366a9bebc0df676f3461308db32f1b'],0,1,1,1,0.0,1.0,1.0
+cd8b46020c7f7a8bef2aa71c7503fb2ab182a846,Updating issue bot configs (#358),Rishabh Budhiraja,rishabh.budhiraja@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-08-30 00:49:00+05:30,-19800,2019-08-29 12:19:00-07:00,25200,True,False,['issue_label_bot.yaml'],['4172e7bb99cbfe0f7e2bcd26525b59044034c9e0'],2,2,4,1,,,
+c09f982a690e62791b98682be16d54d0dc09405a,"Azure backend to work in custom namespaces (#362)
+
+After this change, it is possible to use the Azure backend and storage
+context in custom namespaces. Previously, the code was defaulting to
+namespace `kubeflow` which might not be the right one in multi-user
+multi-namespace setup.",Ville Rantala,ville.rantala@microsoft.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-05 19:47:09+03:00,-10800,2019-09-05 09:47:09-07:00,25200,True,False,"['backends.py', 'azurestorage_context.py']",['cd8b46020c7f7a8bef2aa71c7503fb2ab182a846'],5,7,12,2,1.0,1.0,0.0
+68d1e2275bbd7ef0d145b7584490780574ed1b03,Update docstrings under kubernetes and functions (#346),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-10 01:01:20+08:00,-28800,2019-09-09 10:01:20-07:00,25200,True,False,"['function_shim.py', 'http_utils.py', 'manager.py', 'utils.py', 'utils.py']",['c09f982a690e62791b98682be16d54d0dc09405a'],9,153,162,5,,,
+c744c2039ba63bcd39887c8967288c1032b1def4,"Changes for Base_image comming from a private docker registry on GCP … (#365)
+
+* Changes for Base_image comming from a private docker registry on GCP #308
+
+* changes for unit test
+
+* unit test
+
+* last line",shikha130vv,32208501+shikha130vv@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-10 15:30:56+05:30,-19800,2019-09-10 03:00:56-07:00,25200,True,False,"['backends.py', 'docker.py', 'constants.py', 'test_docker.py']",['68d1e2275bbd7ef0d145b7584490780574ed1b03'],1,74,75,4,0.6470588235294118,1.0,0.6666666666666666
+c5be73f0f6304a37ebea21f9aa1d97156a9e4e8e,make fairing as a subpackage in kubeflow (#359),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-12 10:14:23+08:00,-28800,2019-09-11 19:14:23-07:00,25200,True,False,"['bug_report.md', 'Dockerfile', 'main.py', 'hello-world-gpu-pytorch.py', 'main.py', 'main.py', 'main.py', 'main.py', 'main.py', 'distributed-training-data-parallel.ipynb', 'distributed-training.ipynb', 'simple-training.ipynb', 'deploy-to-gcp.ipynb', 'fairing-kubeflow-gke.ipynb', 'fairing-xgboost.ipynb', 'hello-world.ipynb', 'HousingServe.py', 'xgboost-gkeop.ipynb', 'xgboost-high-level-apis.ipynb', 'xgboost-train-and-deploy-in-gcp-from-local-notebook.ipynb', 'mnist.ipynb', 'main.py', 'main.ipynb', '__init__.py', '__init__.py', '__init__.py', 'backends.py', '__init__.py', '__init__.py', 'append.py', 'base_builder.py', 'builder.py', '__init__.py', 'azurestorage_context.py', 'cluster.py', 'context_source.py', 'gcs_context.py', 's3_context.py', '__init__.py', 'docker.py', 'dockerfile.py', '__init__.py', 'aws.py', 'azure.py', 'docker.py', 'gcp.py', 'storage.py', 'config.py', '__init__.py', 'constants.py', '__init__.py', 'deployer.py', '__init__.py', 'gcp.py', 'gcpserving.py', '__init__.py', 'job.py', '__init__.py', 'kfserving.py', '__init__.py', 'serving.py', '__init__.py', 'tfjob.py', '__init__.py', 'lightgbm.py', 'lightgbm_dist_training_init.py', 'utils.py', '__init__.py', 'function_shim.py', 'http_utils.py', '__init__.py', 'manager.py', 'utils.py', '__init__.py', 'tasks.py', 'utils.py', '__init__.py', 'notebook_util.py', '__init__.py', 'base.py', 'converted_notebook.py', 'full_notebook.py', 'function.py', 'runtime_config.py', 'utils.py', 'requirements.txt', 'setup.py', 'skaffold.yaml', '__init__.py', 'test_azure_file_uploader.py', 'test_running_in_notebooks.py', 'test_full_notebook.py', 'test_high_level_apis.py', 'test_kubeflow_training.py', 'test_py_version_checking.py', 'conftest.py', 'test_gcp_high_level_apis.py', 'test_gcs_access.py', 'test_running_in_notebooks.py', 'test_user_agent.py', 'test_pvc_mounting.py', 'test_dockerfile.py', 'test_azure.py', 'test_docker.py', 'test_gcp_creds.py', 'config_test.py', 'test_gcp.py', 'test_gcpserving.py', 'kfserving.py', 'test_lightgbm.py', 'test_utils.py', 'test_base_preprocessor.py', 'test_converted_notebook_preprocessor.py', 'test_full_notebook_preprocessor.py', 'test_function_preprocessor.py', 'test_http_utils.py', 'workflows.libsonnet']",['c744c2039ba63bcd39887c8967288c1032b1def4'],267,284,551,117,0.0,1.0,0.0
+840c272c11452696e4be8e2e5d8f547949da4dc7,update kubeflow-fairing version to 0.6.0 (#378),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-16 21:28:38+08:00,-28800,2019-09-16 06:28:38-07:00,25200,True,False,"['__init__.py', 'setup.py']",['c5be73f0f6304a37ebea21f9aa1d97156a9e4e8e'],2,2,4,2,,,
+7aa973cbb6e38d5802a74d6f171817dd9dfd0e99,Add aws examples (#374),Jiaxin Shan,seedjeffwan@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-17 17:49:28-07:00,25200,2019-09-17 17:49:28-07:00,25200,True,False,"['backend.ipynb', 'ecr.ipynb', 'train.ipynb', 'xgboost-high-level-apis.ipynb']",['840c272c11452696e4be8e2e5d8f547949da4dc7'],4,355,359,4,,,
+2884034d509cfad6eb73824c8bfb2035eb95becb,Fix serving deployer issue for aws (#372),Jiaxin Shan,seedjeffwan@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-17 18:09:29-07:00,25200,2019-09-17 18:09:29-07:00,25200,True,False,['backends.py'],['7aa973cbb6e38d5802a74d6f171817dd9dfd0e99'],2,4,6,1,1.0,1.0,0.0
+7d7e9d15d507b4b07e50249fd6b7a5878806122f,"option to select tfjob version + adding annotation parameter (#351)
+
+* add annotations to metadata
+
+* Inject different TF_JOB_VERSION using env variable",Hamed,hamedhsn@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-19 02:31:00+01:00,-3600,2019-09-18 18:31:00-07:00,25200,True,False,"['constants.py', 'job.py', 'manager.py']",['2884034d509cfad6eb73824c8bfb2035eb95becb'],4,18,22,3,0.875,1.0,0.625
+b3db9a548b51eea93250c662defe6470283943b3,"cluster builder should use a job not a pod #349 (#379)
+
+* [WIP]:#349 cluster builder should use a job not a pod
+
+* #349 cluster builder should use a job not a pod
+
+* #349 Missed a comma
+
+* Fix pytlint warning
+
+* Adding cleanup flag for job deletion
+
+* Fix test error
+
+* Fix pylint errors
+
+* Fix pylint errors again",Chakradhar N R,38882990+nrchakradhar@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-20 06:07:00+05:30,-19800,2019-09-19 17:37:00-07:00,25200,True,False,['cluster.py'],['7d7e9d15d507b4b07e50249fd6b7a5878806122f'],14,39,53,1,0.0,1.0,0.9
+9063fe0298ababda72003d4ccd98af1ab7afdb79,Fix python compatibility issue (#377),Jiaxin Shan,seedjeffwan@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-24 16:27:59-07:00,25200,2019-09-24 16:27:59-07:00,25200,True,False,"['function_shim.py', 'function.py', 'test_py_version_checking.py']",['b3db9a548b51eea93250c662defe6470283943b3'],8,7,15,3,,,
+11a4c0f25140054d5d1cda7ca981001827ff972b,Use service type ClusterIP by default (#376),Jiaxin Shan,seedjeffwan@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-24 16:45:58-07:00,25200,2019-09-24 16:45:58-07:00,25200,True,False,"['xgboost-high-level-apis.ipynb', 'backends.py', 'serving.py', 'tasks.py']",['9063fe0298ababda72003d4ccd98af1ab7afdb79'],9,6,15,4,,,
+7a34a35b1e32d04bb4d7ba37873ad7b0636041b6,"generate docstring for config, deplyer, frameworks (#354)",Hamed,hamedhsn@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-09-25 14:06:00+01:00,-3600,2019-09-25 06:06:00-07:00,25200,True,False,"['config.py', 'deployer.py', 'gcp.py', 'gcpserving.py', 'job.py', 'kfserving.py', 'serving.py', 'tfjob.py', 'lightgbm.py', 'utils.py']",['11a4c0f25140054d5d1cda7ca981001827ff972b'],72,292,364,10,,,
+18ee22776c16e66cf38d81c233ff4f013b6b06ff,"add docstring for backends (#390)
+
+fix python lint issue",Zhen Ou Yun,zoyun@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-10 17:22:52+08:00,-28800,2019-10-10 02:22:52-07:00,25200,True,False,['backends.py'],['7a34a35b1e32d04bb4d7ba37873ad7b0636041b6'],8,193,201,1,0.0,0.0,0.0
+ffebbe6529441f38ebcb13db9bb4c34883eb3b7c,Add the code comment (#389),Leilei Hu,leileihu@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-10 18:06:52+08:00,-28800,2019-10-10 03:06:52-07:00,25200,True,False,['base.py'],['18ee22776c16e66cf38d81c233ff4f013b6b06ff'],11,44,55,1,,,
+269c85aeef71893c5618b1614e9ff8ff005efe4d,Add the comments (#391),Leilei Hu,leileihu@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-11 14:59:38+08:00,-28800,2019-10-10 23:59:38-07:00,25200,True,False,['full_notebook.py'],['ffebbe6529441f38ebcb13db9bb4c34883eb3b7c'],2,15,17,1,,,
+a92b742240ae27eefef588e5ce4314a43979c4a5,Add the comments for the python API functions. (#392),Leilei Hu,leileihu@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-11 14:59:46+08:00,-28800,2019-10-10 23:59:46-07:00,25200,True,False,['function.py'],['269c85aeef71893c5618b1614e9ff8ff005efe4d'],5,14,19,1,,,
+51e56fb135b6d8c9ad4c5e48637bfbcabb2ae173,"#383 Use absolute paths (#386)
+
+* [WIP]#383 Use absolute paths
+
+* Fix build
+
+* Fix build issues
+
+* Chaning init to see if python paths are fixed",Chakradhar N R,38882990+nrchakradhar@users.noreply.github.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-11 14:13:41+05:30,-19800,2019-10-11 01:43:41-07:00,25200,True,False,"['__init__.py', '__init__.py', 'backends.py', 'append.py', 'base_builder.py', 'azurestorage_context.py', 'cluster.py', 'gcs_context.py', 's3_context.py', 'docker.py', 'dockerfile.py', 'aws.py', 'azure.py', 'docker.py', 'gcp.py', 'config.py', 'gcp.py', 'gcpserving.py', 'job.py', 'kfserving.py', 'serving.py', 'tfjob.py', 'lightgbm.py', 'http_utils.py', 'manager.py', 'utils.py', 'tasks.py', 'utils.py', 'base.py', 'converted_notebook.py', 'full_notebook.py', 'function.py', 'test_high_level_apis.py']",['a92b742240ae27eefef588e5ce4314a43979c4a5'],122,122,244,33,,,
+501adb8bd7ddb699a136b4f13268be67aa88a597,"Doc fairing comment4 (#393)
+
+* Add the comments
+
+* Add the code comments for the python source",Leilei Hu,leileihu@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-14 17:52:37+08:00,-28800,2019-10-14 02:52:37-07:00,25200,True,False,['converted_notebook.py'],['51e56fb135b6d8c9ad4c5e48637bfbcabb2ae173'],1,60,61,1,,,
+3fb8dbc5970008a60eb4832550053aa1f2f215dd,"Fix Gcp creds for workload identity (#395)
+
+* Fix check for guessing builder, and add gcp creds test
+
+* add service account to pod spec if workload identity
+
+* Update pod spec template for service account if no credentials secret
+
+* cleanup notebook
+
+* Disabled tests for launching jobs in default namespace",Abhishek Gupta,abhishek@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-15 11:02:08-07:00,25200,2019-10-15 11:02:08-07:00,25200,True,False,"['xgboost-high-level-apis.ipynb', 'backends.py', 'gcs_context.py', 'gcp.py', 'constants.py', 'job.py', 'test_gcp_high_level_apis.py']",['501adb8bd7ddb699a136b4f13268be67aa88a597'],18,29,47,7,0.25,0.25,0.0
+0cc639870ea3f773c5ae8a53c0ab16d4cda2ea6c,Movei kaniko image to constants (#398),Andrey Petrov,dalfos@mail.ru,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-17 15:08:39+03:00,-10800,2019-10-17 05:08:39-07:00,25200,True,False,"['azurestorage_context.py', 'gcs_context.py', 's3_context.py', 'constants.py']",['3fb8dbc5970008a60eb4832550053aa1f2f215dd'],3,7,10,4,,,
+4f76abaff65074df7d34e451bc7de40aa1e4c0fd,"Upgrade presubmits CI cluster to 0.7 (#399)
+
+* testing new ci cluster
+
+* fix some namespaces to kubeflow-fairing
+
+* missed one test
+
+* fix defualt namespace
+
+* Update TfJob version to 1
+
+* fixed all tests in common
+
+* Fixed GCP tests
+
+* Updated lightgbm notebook to auth for docker credentials
+
+* fix notebook format and gcs access error message
+
+* Switch the ci to final 0.7 ci KF deployment for fairing
+
+* Remove unneeded artifact-dir param for pytlint tests
+
+* --src_dir is not valid as well
+
+* bring back the flags after revert in testing infra
+
+* lint fixes
+
+* Revert workflow.libsonnet to original state",Abhishek Gupta,abhishek@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-19 15:15:37-07:00,25200,2019-10-19 15:15:37-07:00,25200,True,False,"['cloudbuild.yaml', 'distributed-training.ipynb', 'constants.py', 'job.py', 'test_full_notebook.py', 'test_kubeflow_training.py', 'test_gcp_high_level_apis.py', 'test_gcs_access.py']",['0cc639870ea3f773c5ae8a53c0ab16d4cda2ea6c'],28,57,85,8,1.0,1.0,0.9333333333333333
+8aeb57101e0daaaf1b4ade436e36f84722e6c437,docString for cloud aws (#402),Zhen Ou Yun,zoyun@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-20 06:37:36+08:00,-28800,2019-10-19 15:37:36-07:00,25200,True,False,['aws.py'],['4f76abaff65074df7d34e451bc7de40aa1e4c0fd'],0,46,46,1,,,
+f2463a0b3a04a38c8c3d870f99ca1e4b0d477df5,Add doc to notebook (#401),Xiao Kou,kxiaoxa@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-21 10:33:37+08:00,-28800,2019-10-20 19:33:37-07:00,25200,True,False,['notebook_util.py'],['8aeb57101e0daaaf1b4ade436e36f84722e6c437'],0,3,3,1,,,
+0676881151ea99cb7631e639a39e8cb065b9026d,Pass pod_spec_mutators to builder BaseTask class (#397),Andrey Petrov,dalfos@mail.ru,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-21 21:20:07+03:00,-10800,2019-10-21 11:20:07-07:00,25200,True,False,['tasks.py'],['f2463a0b3a04a38c8c3d870f99ca1e4b0d477df5'],0,1,1,1,0.0,0.0,0.0
+58c67efacc5bacbbdad3f91607cccfce4a563fd9,"add member comments to some methods (#396)
+
+* add member comments to some methods
+
+* correct code comment format
+
+* correct  code comments format using pyment
+
+* fix pylint error",Zhan Wei Wang,huan145@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-23 11:00:14+08:00,-28800,2019-10-22 20:00:14-07:00,25200,True,False,"['append.py', 'base_builder.py', 'builder.py', 'azurestorage_context.py', 'cluster.py', 'context_source.py', 'gcs_context.py', 's3_context.py', 'docker.py', 'dockerfile.py']",['0676881151ea99cb7631e639a39e8cb065b9026d'],26,57,83,10,,,
+7c93e888c3fc98bdf5fb0140e90f6407ce7a807b,Add doc into ml_task (#400),Xiao Kou,kxiaoxa@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-24 01:18:58+08:00,-28800,2019-10-23 10:18:58-07:00,25200,True,False,"['tasks.py', 'utils.py', 'notebook_util.py']",['58c67efacc5bacbbdad3f91607cccfce4a563fd9'],7,24,31,3,,,
+41b2a5e043a6cfd45694194541d97912d73cf329,allow setting custom dockerfile for ClusterBuilder (#405),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-10-31 01:38:54+08:00,-28800,2019-10-30 10:38:54-07:00,25200,True,False,"['cluster.py', 'docker.py', 'dockerfile.py', 'Dockerfile.test', 'test_kubeflow_training.py']",['7c93e888c3fc98bdf5fb0140e90f6407ce7a807b'],23,49,72,5,0.2631578947368421,0.0,0.47368421052631576
+f9466a7bfde69fd0b1b0a7af451d3d4b9091d67a,generate docs for fairing APIs (#338),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-01 21:47:25+08:00,-28800,2019-11-01 06:47:25-07:00,25200,True,False,"['.gitignore', 'doc-gen.sh', 'basic.css', 'badge_only.css', 'theme.css', 'doctools.js', 'documentation_options.js', 'file.png', 'Inconsolata-Bold.ttf', 'Inconsolata-Regular.ttf', 'Inconsolata.ttf', 'Lato-Bold.ttf', 'Lato-Regular.ttf', 'lato-bold.eot', 'lato-bold.ttf', 'lato-bold.woff', 'lato-bold.woff2', 'lato-bolditalic.eot', 'lato-bolditalic.ttf', 'lato-bolditalic.woff', 'lato-bolditalic.woff2', 'lato-italic.eot', 'lato-italic.ttf', 'lato-italic.woff', 'lato-italic.woff2', 'lato-regular.eot', 'lato-regular.ttf', 'lato-regular.woff', 'lato-regular.woff2', 'RobotoSlab-Bold.ttf', 'RobotoSlab-Regular.ttf', 'roboto-slab-v7-bold.eot', 'roboto-slab-v7-bold.ttf', 'roboto-slab-v7-bold.woff', 'roboto-slab-v7-bold.woff2', 'roboto-slab-v7-regular.eot', 'roboto-slab-v7-regular.ttf', 'roboto-slab-v7-regular.woff', 'roboto-slab-v7-regular.woff2', 'fontawesome-webfont.eot', 'fontawesome-webfont.svg', 'fontawesome-webfont.ttf', 'fontawesome-webfont.woff', 'fontawesome-webfont.woff2', 'jquery-3.4.1.js', 'jquery.js', 'modernizr.min.js', 'theme.js', 'language_data.js', 'minus.png', 'plus.png', 'pygments.css', 'searchtools.js', 'underscore-1.3.1.js', 'underscore.js', 'genindex.html', 'index.html', 'kubeflow.fairing.backends.html', 'kubeflow.fairing.builders.append.html', 'kubeflow.fairing.builders.cluster.html', 'kubeflow.fairing.builders.docker.html', 'kubeflow.fairing.builders.html', 'kubeflow.fairing.cloud.html', 'kubeflow.fairing.constants.html', 'kubeflow.fairing.deployers.gcp.html', 'kubeflow.fairing.deployers.html', 'kubeflow.fairing.deployers.job.html', 'kubeflow.fairing.deployers.kfserving.html', 'kubeflow.fairing.deployers.serving.html', 'kubeflow.fairing.deployers.tfjob.html', 'kubeflow.fairing.frameworks.html', 'kubeflow.fairing.functions.html', 'kubeflow.fairing.html', 'kubeflow.fairing.kubernetes.html', 'kubeflow.fairing.ml_tasks.html', 'kubeflow.fairing.notebook.html', 'kubeflow.fairing.preprocessors.html', 'kubeflow.html', 'modules.html', 'objects.inv', 'py-modindex.html', 'search.html', 'searchindex.js', 'kubeflow.fairing.backends.md', 'kubeflow.fairing.builders.append.md', 'kubeflow.fairing.builders.cluster.md', 'kubeflow.fairing.builders.docker.md', 'kubeflow.fairing.builders.md', 'kubeflow.fairing.cloud.md', 'kubeflow.fairing.constants.md', 'kubeflow.fairing.deployers.gcp.md', 'kubeflow.fairing.deployers.job.md', 'kubeflow.fairing.deployers.kfserving.md', 'kubeflow.fairing.deployers.md', 'kubeflow.fairing.deployers.serving.md', 'kubeflow.fairing.deployers.tfjob.md', 'kubeflow.fairing.frameworks.md', 'kubeflow.fairing.functions.md', 'kubeflow.fairing.kubernetes.md', 'kubeflow.fairing.md', 'kubeflow.fairing.ml_tasks.md', 'kubeflow.fairing.notebook.md', 'kubeflow.fairing.preprocessors.md', 'kubeflow.md', 'modules.md', 'backends.py', 'append.py', 'tasks.py', 'converted_notebook.py', 'full_notebook.py', 'test_gcp_high_level_apis.py', 'test_gcs_access.py']",['41b2a5e043a6cfd45694194541d97912d73cf329'],52,28736,28788,112,0.48715124816446403,0.5418502202643172,0.6948115516397455
+7cef6b0243012c6ff72dd1dc59f1dab35ce6a8c5,disable xgboost_high_level_api notebook run temproarily (#410),Abhishek Gupta,abhishek@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-01 13:15:41-07:00,25200,2019-11-01 13:15:41-07:00,25200,True,False,['test_running_in_notebooks.py'],['f9466a7bfde69fd0b1b0a7af451d3d4b9091d67a'],13,16,29,1,0.0,0.0,0.0
+20a6a6dc4c09a62683a3835f214556792e817954,Enhance kfserving integration (#407),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-02 08:15:42+08:00,-28800,2019-11-01 17:15:42-07:00,25200,True,False,"['main.py', 'constants.py', 'kfserving.py', 'manager.py', 'requirements.txt', 'kfserving.py']",['7cef6b0243012c6ff72dd1dc59f1dab35ce6a8c5'],118,164,282,6,0.0,0.0,0.0
+c6708acc5a5864d9ce1d308068c596f97cb19f74,"Add annotations param to TfJob (#406)
+
+* Add annotations param to TfJob
+
+* Fix line lenght
+
+* Add param desc",Andrey Petrov,dalfos@mail.ru,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-04 04:41:40+03:00,-10800,2019-11-03 17:41:40-08:00,28800,True,False,['tfjob.py'],['20a6a6dc4c09a62683a3835f214556792e817954'],2,4,6,1,1.0,1.0,0.0
+858766f9e702148e69c55fb424f2c9954ede542c,release kubeflow-fairing 0.7 and add doc links (#412),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-05 01:49:41+08:00,-28800,2019-11-04 09:49:41-08:00,28800,True,False,"['README.md', '__init__.py', 'setup.py']",['c6708acc5a5864d9ce1d308068c596f97cb19f74'],2,8,10,3,,,
+d9594e3fc0861ed1ee663fe65fde99430cb5084c,update kfserving version (#415),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-08 12:14:19+08:00,-28800,2019-11-07 20:14:19-08:00,28800,True,False,"['requirements.txt', 'setup.py']",['858766f9e702148e69c55fb424f2c9954ede542c'],3,4,7,2,,,
+eae741fd4be136dada476e35fa076154529b3c42,"Fixed xgboost run in notebook test (#414)
+
+* testing the notebook test
+
+* try removing predict call
+
+* confirmed failure at predict calls.
+
+* add delay before prediction call
+
+* Check if the fairing_backend is causing the issue
+
+* remove root cause of URL mess that causes connection error
+
+* Switch back to running full tests
+
+* remove todo comment",Abhishek Gupta,abhishek@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-07 21:12:20-08:00,28800,2019-11-07 21:12:20-08:00,28800,True,False,"['.gitignore', 'manager.py', 'test_running_in_notebooks.py']",['d9594e3fc0861ed1ee663fe65fde99430cb5084c'],17,22,39,3,1.0,1.0,1.0
+9b0d4ed4796ba349ac6067bbd802ff1d6454d015,host kubeflow fairing API docs to readthedocs.io (#416),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-08 17:38:13+08:00,-28800,2019-11-08 01:38:13-08:00,28800,True,False,"['.pylintrc', 'README.md', 'doc-gen.sh', 'Makefile', 'conf.py', 'basic.css', 'badge_only.css', 'theme.css', 'doctools.js', 'documentation_options.js', 'file.png', 'Inconsolata-Bold.ttf', 'Inconsolata-Regular.ttf', 'Inconsolata.ttf', 'Lato-Bold.ttf', 'Lato-Regular.ttf', 'lato-bold.eot', 'lato-bold.ttf', 'lato-bold.woff', 'lato-bold.woff2', 'lato-bolditalic.eot', 'lato-bolditalic.ttf', 'lato-bolditalic.woff', 'lato-bolditalic.woff2', 'lato-italic.eot', 'lato-italic.ttf', 'lato-italic.woff', 'lato-italic.woff2', 'lato-regular.eot', 'lato-regular.ttf', 'lato-regular.woff', 'lato-regular.woff2', 'RobotoSlab-Bold.ttf', 'RobotoSlab-Regular.ttf', 'roboto-slab-v7-bold.eot', 'roboto-slab-v7-bold.ttf', 'roboto-slab-v7-bold.woff', 'roboto-slab-v7-bold.woff2', 'roboto-slab-v7-regular.eot', 'roboto-slab-v7-regular.ttf', 'roboto-slab-v7-regular.woff', 'roboto-slab-v7-regular.woff2', 'fontawesome-webfont.eot', 'fontawesome-webfont.svg', 'fontawesome-webfont.ttf', 'fontawesome-webfont.woff', 'fontawesome-webfont.woff2', 'jquery-3.4.1.js', 'jquery.js', 'modernizr.min.js', 'theme.js', 'language_data.js', 'minus.png', 'plus.png', 'pygments.css', 'searchtools.js', 'underscore-1.3.1.js', 'underscore.js', 'genindex.html', 'index.html', 'kubeflow.fairing.backends.html', 'kubeflow.fairing.builders.append.html', 'kubeflow.fairing.builders.cluster.html', 'kubeflow.fairing.builders.docker.html', 'kubeflow.fairing.builders.html', 'kubeflow.fairing.cloud.html', 'kubeflow.fairing.constants.html', 'kubeflow.fairing.deployers.gcp.html', 'kubeflow.fairing.deployers.html', 'kubeflow.fairing.deployers.job.html', 'kubeflow.fairing.deployers.kfserving.html', 'kubeflow.fairing.deployers.serving.html', 'kubeflow.fairing.deployers.tfjob.html', 'kubeflow.fairing.frameworks.html', 'kubeflow.fairing.functions.html', 'kubeflow.fairing.html', 'kubeflow.fairing.kubernetes.html', 'kubeflow.fairing.ml_tasks.html', 'kubeflow.fairing.notebook.html', 'kubeflow.fairing.preprocessors.html', 'kubeflow.html', 'modules.html', 'objects.inv', 'py-modindex.html', 'search.html', 'searchindex.js', 'index.rst', 'make.bat', 'kubeflow.fairing.backends.md', 'kubeflow.fairing.builders.append.md', 'kubeflow.fairing.builders.cluster.md', 'kubeflow.fairing.builders.docker.md', 'kubeflow.fairing.builders.md', 'kubeflow.fairing.cloud.md', 'kubeflow.fairing.constants.md', 'kubeflow.fairing.deployers.gcp.md', 'kubeflow.fairing.deployers.job.md', 'kubeflow.fairing.deployers.kfserving.md', 'kubeflow.fairing.deployers.md', 'kubeflow.fairing.deployers.serving.md', 'kubeflow.fairing.deployers.tfjob.md', 'kubeflow.fairing.frameworks.md', 'kubeflow.fairing.functions.md', 'kubeflow.fairing.kubernetes.md', 'kubeflow.fairing.md', 'kubeflow.fairing.ml_tasks.md', 'kubeflow.fairing.notebook.md', 'kubeflow.fairing.preprocessors.md', 'kubeflow.md', 'modules.md', 'kubeflow.fairing.backends.rst', 'kubeflow.fairing.builders.append.rst', 'kubeflow.fairing.builders.cluster.rst', 'kubeflow.fairing.builders.docker.rst', 'kubeflow.fairing.builders.rst', 'kubeflow.fairing.cloud.rst', 'kubeflow.fairing.constants.rst', 'kubeflow.fairing.deployers.gcp.rst', 'kubeflow.fairing.deployers.job.rst', 'kubeflow.fairing.deployers.kfserving.rst', 'kubeflow.fairing.deployers.rst', 'kubeflow.fairing.deployers.serving.rst', 'kubeflow.fairing.deployers.tfjob.rst', 'kubeflow.fairing.frameworks.rst', 'kubeflow.fairing.functions.rst', 'kubeflow.fairing.kubernetes.rst', 'kubeflow.fairing.ml_tasks.rst', 'kubeflow.fairing.notebook.rst', 'kubeflow.fairing.preprocessors.rst', 'kubeflow.fairing.rst', 'kubeflow.rst', 'modules.rst']",['eae741fd4be136dada476e35fa076154529b3c42'],28686,816,29502,132,0.5120967741935484,0.4574780058651026,0.3047409579667644
+fd86fc70302db3a9c80a54abbd2175be6ef1c387,"Test PyPI pre-releases but allow for failures (#423)
+
+Using `python setup.py install` will install PyPI pre-releases of
+packages while `pip install -r requirements.txt` won't do that. This
+lead to CI tests failing as reported in #421. This commit updates the CI
+build setup to run two parallell tests, one where we don't use
+pre-releases and one where we do but allow them to fail and won't wait
+on the run to complete either.
+
+ref: https://github.com/jupyterhub/kubespawner/issues/370#issuecomment-555622221
+Fixes #421",Erik Sundell,erik.i.sundell@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-21 22:39:29+01:00,-3600,2019-11-21 13:39:29-08:00,28800,True,False,['.travis.yml'],['9b0d4ed4796ba349ac6067bbd802ff1d6454d015'],7,20,27,1,,,
+6aa16435b4d518dcef0a2ab3aa6b6fab079eb767,fix logical bug (#420),Leilei Hu,leileihu@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-22 11:19:28+08:00,-28800,2019-11-21 19:19:28-08:00,28800,True,False,['backends.py'],['fd86fc70302db3a9c80a54abbd2175be6ef1c387'],6,0,6,1,1.0,1.0,1.0
+13de6aaedaaf331eeeca1447fd9022926dfb878d,"Add a simple fairing job example by using private-registry on Jupyter-notebook.  (#419)
+
+* build, deploy job with private registry on notebook
+
+* build, deploy job with private registry on notebook
+
+* remove output in notebook",Lee MyoungHwan,amaramusic@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-21 23:47:28-08:00,28800,2019-11-21 23:47:28-08:00,28800,True,False,['hello-world-with-private-registry.ipynb'],['6aa16435b4d518dcef0a2ab3aa6b6fab079eb767'],0,113,113,1,,,
+f43ce780554fe79b4a729bd666ae6c69812b98bb,update kaniko image from version v0.7.0 to 0.14.0 (#427),Francis,fenglixa@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-11-26 17:01:10+08:00,-28800,2019-11-26 01:01:10-08:00,28800,True,False,['constants.py'],['13de6aaedaaf331eeeca1447fd9022926dfb878d'],1,1,2,1,,,
+ddd1054be07ecfcd9b16028662089d89dce91dcd,Correct the function's output alert message. (#429),Leilei Hu,leileihu@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-04 10:24:57+08:00,-28800,2019-12-03 18:24:57-08:00,28800,True,False,['config.py'],['f43ce780554fe79b4a729bd666ae6c69812b98bb'],1,1,2,1,,,
+66dc13cea59b471ceb4a68e5d776f77acc579231,"Avoid import Imputer error for different sklearn verions (#431)
+
+* Avoid import Imputer error for different sklearn verions
+
+* update to correct the format",Francis,fenglixa@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-06 16:44:51+08:00,-28800,2019-12-06 00:44:51-08:00,28800,True,False,"['deploy-to-gcp.ipynb', 'fairing-xgboost.ipynb', 'HousingTrain.py', 'xgboost-train-and-deploy-in-gcp-from-local-notebook.ipynb']",['ddd1054be07ecfcd9b16028662089d89dce91dcd'],5,17,22,4,,,
+a2113d2894da7bfc9d218cf22bbcb8ab9b607520,Fix remote_train issue in xgboost-train (#433),Francis,fenglixa@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2019-12-12 17:20:32+08:00,-28800,2019-12-12 01:20:32-08:00,28800,True,False,"['Dockerfile', 'requirements.txt']",['66dc13cea59b471ceb4a68e5d776f77acc579231'],1,2,3,2,,,
+13f6e21a23f5a01339df90ead25b26e3d4814eef,"Fix problem connect breaken (#438)
+
+* Fix connect breaken problem while following logs after deploying
+
+* Fix connect breaken problem while following logs after deploying",Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-03 00:07:40+08:00,-28800,2020-01-02 08:07:40-08:00,28800,True,False,"['manager.py', 'requirements.txt']",['a2113d2894da7bfc9d218cf22bbcb8ab9b607520'],1,5,6,2,,,
+7f0491f54ee9f4428e97605b17b20ea23a2fb78b,Using Kubeflow-tfjob SDK to deploy TFJob (#435),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-03 12:41:41+08:00,-28800,2020-01-02 20:41:41-08:00,28800,True,False,"['tfjob.py', 'manager.py', 'requirements.txt']",['13f6e21a23f5a01339df90ead25b26e3d4814eef'],46,41,87,3,0.0,0.0,1.0
+f4c74a1cb55e91831514777175bc96806f255f0e,Support deploying pytorchjob using Kubeflow Fairing (#436),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-04 01:21:40+08:00,-28800,2020-01-03 09:21:40-08:00,28800,True,False,"['config.py', 'constants.py', '__init__.py', 'pytorchjob.py', 'manager.py', 'requirements.txt', 'test_kubeflow_training.py']",['7f0491f54ee9f4428e97605b17b20ea23a2fb78b'],0,173,173,7,0.6547619047619048,0.9166666666666666,0.6309523809523809
+f8dd1518f2ac48a1e888eb7b12aae82b6f0959c6,"Reset CI tests to ensure stability (#443)
+
+* faster test runs
+
+* narrow tests
+
+* Reduce concurrency on tests
+
+* revert to running all tests
+
+* Switch to newer ci cluster",Abhishek Gupta,abhishek@google.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-13 16:13:09-08:00,28800,2020-01-13 16:13:09-08:00,28800,True,False,"['cloudbuild.yaml', 'test_running_in_notebooks.py']",['f4c74a1cb55e91831514777175bc96806f255f0e'],2,3,5,2,,,
+827fddb30c2600a32aa87817fffdc19f6643d304,fix executable-baseprep (#445),pshiko,pshiko.sparrow@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-15 06:05:20+09:00,-32400,2020-01-14 13:05:20-08:00,28800,True,False,['base.py'],['f8dd1518f2ac48a1e888eb7b12aae82b6f0959c6'],0,2,2,1,0.0,0.0,0.0
+e1d0998717778befda9c04d77cadc49043897db0,"Feature/add streaming logging for aiplatform (#444)
+
+* simple impl
+
+* use v2 api
+
+* bug fix
+
+* added dependency on google-cloud-logging
+
+* added param
+
+* add args and docstring of GCPManagedBackend
+
+* add stream log option to example
+
+* add strip and fix example
+
+* pylint
+
+* don't use len as condition",pshiko,pshiko.sparrow@gmail.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-15 10:55:33+09:00,-32400,2020-01-14 17:55:33-08:00,28800,True,False,"['hello-world-gpu-pytorch.py', 'backends.py', 'gcp.py', 'requirements.txt']",['827fddb30c2600a32aa87817fffdc19f6643d304'],6,92,98,4,0.19047619047619047,0.19047619047619047,0.8809523809523809
+c9615dcbc19cf25e49c5bc6397d64817a1b460b4,Refresh the deploy service process. (#442),Leilei Hu,leileihu@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-15 12:01:32+08:00,-28800,2020-01-14 20:01:32-08:00,28800,True,False,['README.md'],['e1d0998717778befda9c04d77cadc49043897db0'],1,6,7,1,,,
+18933d1c4545533d949dfb5b562cbc167570e6ed,Release kubeflow-fairing 0.7.1 (#446),Jin Chi He,hejinchi@cn.ibm.com,Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,2020-01-16 01:09:35+08:00,-28800,2020-01-15 09:09:35-08:00,28800,True,False,['setup.py'],['c9615dcbc19cf25e49c5bc6397d64817a1b460b4'],1,1,2,1,,,
+7e4c23c47a6b0544a722d04e1f9910c2f283a4f6,"minio context source for vanilla k8s (#458)
+
+* minio context source for vanilla k8s
+
+* add minio creds for kaniko pod spec
+
+* fix linting issues",Adhita Selvaraj,adhita94@gmail.com,GitHub,noreply@github.com,2020-02-13 14:42:18-08:00,28800,2020-02-13 14:42:18-08:00,28800,True,False,"['minio_context.py', 'k8s.py']",['18933d1c4545533d949dfb5b562cbc167570e6ed'],0,114,114,2,0.5,1.0,0.25609756097560976
+dc61c4c88f233edaf22b13bbfb184ded0ed877a4,Fairing supports user specify the deployers name (#466),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-02-23 12:10:46+08:00,-28800,2020-02-22 20:10:46-08:00,28800,True,False,"['job.py', 'kfserving.py', 'pytorchjob.py', 'tfjob.py']",['7e4c23c47a6b0544a722d04e1f9910c2f283a4f6'],14,18,32,4,0.0,0.3333333333333333,1.0
+ce32ccd33ab9323ca52a52c3c2aafc9ba601a482,Add Kubeflow Fairing E2E Sample (#464),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-02-24 13:44:47+08:00,-28800,2020-02-23 21:44:47-08:00,28800,True,False,"['README.md', 'main.py', 'Dockerfile', 'README.md', 'mnist.py', 'mnist_e2e_on_prem.ipynb']",['dc61c4c88f233edaf22b13bbfb184ded0ed877a4'],22,1522,1544,6,0.03821656050955414,0.5732484076433121,0.6624203821656051
+19f2e0cee5adac97b27d67944bb83429f6d8bf0b,Fix duplicated code in cluster builder (#471),Kubernetes Prow Robot,k8s-ci-robot@users.noreply.github.com,GitHub,noreply@github.com,2020-03-04 14:14:38-08:00,28800,2020-03-04 14:14:38-08:00,28800,True,False,"['minio_context.py', 's3_context.py']",['ce32ccd33ab9323ca52a52c3c2aafc9ba601a482'],9,4,13,2,0.6,0.0,1.0
+81a3ab7c54050fd4f1f08ae8e97038e2235eb1a5,Support deployer to remote k8s cluster (#467),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-03-10 01:47:40+08:00,-28800,2020-03-09 10:47:40-07:00,25200,True,False,"['job.py', 'kfserving.py', 'pytorchjob.py', 'tfjob.py', 'manager.py']",['19f2e0cee5adac97b27d67944bb83429f6d8bf0b'],18,101,119,5,0.17647058823529413,0.9019607843137255,0.0
+4ae68d884472e32a47c01d4d6f4528745b210ac5,Enhance the logging info output in the debug model (#447),Leilei Hu,leileihu@cn.ibm.com,GitHub,noreply@github.com,2020-03-11 10:37:35+08:00,-28800,2020-03-10 19:37:35-07:00,25200,True,False,"['config.py', 'constants.py', 'lightgbm_dist_training_init.py']",['81a3ab7c54050fd4f1f08ae8e97038e2235eb1a5'],3,20,23,3,,,
+1345f556341b5127416d5d7583e676f65666f1c9,Use secure transport mode for Azure Storage Accounts only (#477),Bernd Verst,berndverst@users.noreply.github.com,GitHub,noreply@github.com,2020-03-13 01:58:39-07:00,25200,2020-03-13 01:58:39-07:00,25200,True,False,['azure.py'],['4ae68d884472e32a47c01d4d6f4528745b210ac5'],1,2,3,1,0.0,1.0,0.0
+85da7f2bea6de7b517d35518173b6c4e3119de31,"Support IBM cloud as backend (#479)
+
+* support IBM Cloud
+
+* Support IBM Cloud Backends",Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-03-20 09:54:36+08:00,-28800,2020-03-19 18:54:36-07:00,25200,True,False,"['backends.py', 'cos_context.py', 'ibm_cloud.py', 'constants.py', 'requirements.txt', 'test_ibm_cloud.py']",['1345f556341b5127416d5d7583e676f65666f1c9'],2,252,254,6,0.7,1.0,0.39166666666666666
+f5928283f02b9f172e36d0b0207f94708271afa2,Add podman builder and example (#474),mochiliu3000,mochiliu3000@gmail.com,GitHub,noreply@github.com,2020-03-30 17:19:53+08:00,-28800,2020-03-30 02:19:53-07:00,25200,True,False,"['main_ocp.py', '__init__.py', 'podman.py', 'config.py', 'test_podman.py']",['85da7f2bea6de7b517d35518173b6c4e3119de31'],0,229,229,5,0.16346153846153846,1.0,0.8461538461538461
+943ae327284bd554b38b70dc791e6d22a8c8f0b3,update raodmap for 2020 (#476),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-04-09 08:41:44+08:00,-28800,2020-04-08 17:41:44-07:00,25200,True,False,['roadmap.md'],['f5928283f02b9f172e36d0b0207f94708271afa2'],10,16,26,1,,,
+8b08bf7d2703c97901efe8a80717eeccb1133194,"Updates azure requirements (#482)
+
+The `azure` library is deprecated. This uses the correct libraries. This also has the side effect that a lot fewer azure dependencies are being installed. No code changes are necessary.",Bernd Verst,berndverst@users.noreply.github.com,GitHub,noreply@github.com,2020-04-08 18:33:44-07:00,25200,2020-04-08 18:33:44-07:00,25200,True,False,['requirements.txt'],['943ae327284bd554b38b70dc791e6d22a8c8f0b3'],1,2,3,1,,,
+b1065c68f93b13389b19a21a17c8ca3d60fa75b7,"Modify cluster builder example with minio context (#484)
+
+* Modify cluster builder example to use minio context
+
+* Modify cluster builder example to use minio context",mochiliu3000,mochiliu3000@gmail.com,GitHub,noreply@github.com,2020-04-10 16:53:47+08:00,-28800,2020-04-10 01:53:47-07:00,25200,True,False,"['main.py', 'requirements.txt']",['8b08bf7d2703c97901efe8a80717eeccb1133194'],9,83,92,2,0.8947368421052632,1.0,0.6842105263157895
+33b8ef2ee469921db1e31b1b9bf7d06a46191758,release kubeflow-fairing 0.7.2 (#485),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-04-11 08:47:47+08:00,-28800,2020-04-10 17:47:47-07:00,25200,True,False,"['__init__.py', 'setup.py']",['b1065c68f93b13389b19a21a17c8ca3d60fa75b7'],2,2,4,2,,,
+e0d44e870b467bbd773f836a8b1b648b79019dd1,add funtions to apply kubernetes objects (#483),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-04-17 21:39:07+08:00,-28800,2020-04-17 06:39:07-07:00,25200,True,False,"['manager.py', 'utils.py', '__init__.py', 'test_buck_apply.py']",['33b8ef2ee469921db1e31b1b9bf7d06a46191758'],2,203,205,4,0.375,0.375,0.3
+6717b3d3806c8093adf1186bc819ad887238f287,Support specifying GPU resource (#488),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-04-26 14:55:28+08:00,-28800,2020-04-25 23:55:28-07:00,25200,True,False,"['utils.py', 'test_utils.py']",['e0d44e870b467bbd773f836a8b1b648b79019dd1'],2,26,28,2,0.9,0.9,0.75
+1142d68658597f18099625c486c0e4e8400d0c09,"bump KANIKO_IMAGE to include important fixes (#493)
+
+* bump KANIKO_IMAGE to include important fixes
+
+* remove dupe constant definition in minio context",Ian Coffey,ian.coffey@gmail.com,GitHub,noreply@github.com,2020-05-14 04:56:22-04:00,14400,2020-05-14 01:56:22-07:00,25200,True,False,"['minio_context.py', 'constants.py']",['6717b3d3806c8093adf1186bc819ad887238f287'],3,1,4,2,,,
+b100779dba04feb774e396cfa0e15862e3d170f4,use single snapshot in minio context to reduce build time for large layers (#490),Ian Coffey,ian.coffey@gmail.com,GitHub,noreply@github.com,2020-05-14 23:14:58-04:00,14400,2020-05-14 20:14:58-07:00,25200,True,False,['minio_context.py'],['1142d68658597f18099625c486c0e4e8400d0c09'],1,2,3,1,0.0,1.0,0.0
+1792e6e72ecbd6d84ca65d687ce344c9e7ef9d1f,fix job deployer type-o (#498),Ian Coffey,icoffey@vmware.com,GitHub,noreply@github.com,2020-06-02 11:26:15-04:00,14400,2020-06-02 08:26:15-07:00,25200,True,False,"['constants.py', 'job.py']",['b100779dba04feb774e396cfa0e15862e3d170f4'],2,2,4,2,,,
+a934c764f6359bf2d5340af0919b424c9c8b364e,add grpcio dependency and fix one bug (#500),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-06-09 13:01:19+08:00,-28800,2020-06-08 22:01:19-07:00,25200,True,False,"['kfserving.py', 'requirements.txt']",['1792e6e72ecbd6d84ca65d687ce344c9e7ef9d1f'],1,2,3,2,,,
+804916bd71c32de45afa2a4ecba9607f4283e990,Allow user specify existing image (#501),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-06-09 16:25:18+08:00,-28800,2020-06-09 01:25:18-07:00,25200,True,False,"['__init__.py', 'base_builder.py', 'builder.py', 'setup.py']",['a934c764f6359bf2d5340af0919b424c9c8b364e'],5,7,12,4,0.0,1.0,1.0
+b2a6a89a0ef1404994333d2f261337962cd9b716,Detach GPU from TFJob PS Spec (#505),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-06-17 17:18:42+08:00,-28800,2020-06-17 02:18:42-07:00,25200,True,False,['tfjob.py'],['804916bd71c32de45afa2a4ecba9607f4283e990'],2,19,21,1,1.0,1.0,1.0
+a9447fe22b5c1128bb3424bc73ee7d74e7f29263,update readme file for how to install kubeflow fairing (#507),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-06-18 17:34:06+08:00,-28800,2020-06-18 02:34:06-07:00,25200,True,False,['README.md'],['b2a6a89a0ef1404994333d2f261337962cd9b716'],2,9,11,1,,,
+7a93c7b3809e8900852dd74bf13e01050afea8bf,add requirements to avoid tornado AttributeError (#509),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-06-18 17:38:08+08:00,-28800,2020-06-18 02:38:08-07:00,25200,True,False,['requirements.txt'],['a9447fe22b5c1128bb3424bc73ee7d74e7f29263'],0,1,1,1,,,
+950d8054ac4f4761179b02c0af0c49288ace4e3a,fix problem that cannot find requirements.txt (#510),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-06-18 17:38:16+08:00,-28800,2020-06-18 02:38:16-07:00,25200,True,False,"['MANIFEST.in', 'setup.py']",['7a93c7b3809e8900852dd74bf13e01050afea8bf'],2,3,5,2,,,
+d81fc121c7efb0d528a858a5651a1457ea940a6f,Set output_map on TrainJob (#511),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-06-19 17:21:58+08:00,-28800,2020-06-19 02:21:58-07:00,25200,True,False,['tasks.py'],['950d8054ac4f4761179b02c0af0c49288ace4e3a'],4,4,8,1,,,
+7c46973f49934f683dadefb43f85dcdaf2259586,Release kubeflow-fairing 1.0.0 (#512),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-06-20 16:28:39+08:00,-28800,2020-06-20 01:28:39-07:00,25200,True,False,"['__init__.py', 'setup.py']",['d81fc121c7efb0d528a858a5651a1457ea940a6f'],2,2,4,2,,,
+01a173cad5bed015e5d1489e7636f1c9ec6e7060,Fix bug for V1alpha2TensorRTSpec ImportError (#522),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-07-07 17:01:58+08:00,-28800,2020-07-07 02:01:58-07:00,25200,True,False,"['kfserving.py', 'requirements.txt']",['7c46973f49934f683dadefb43f85dcdaf2259586'],5,5,10,2,,,
+384d3bf324b37272ef115970885717989080e4c9,Support configuring environment variables (#515),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-07-07 17:29:58+08:00,-28800,2020-07-07 02:29:58-07:00,25200,True,False,"['utils.py', 'test_utils.py']",['01a173cad5bed015e5d1489e7636f1c9ec6e7060'],1,52,53,2,1.0,1.0,0.775
+314f8cf7984ac1071f381ce8104da65e82afb661,Support mount secret and config map for deployer (#520),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-07-07 17:59:57+08:00,-28800,2020-07-07 02:59:57-07:00,25200,True,False,"['constants.py', 'utils.py']",['384d3bf324b37272ef115970885717989080e4c9'],11,38,49,2,0.0,0.0,0.0
+94b2706625dbb0af6cc87c5eddd30895e2d7f2e3,Release kubeflow-fairing v1.0.1 (#523),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-07-07 20:12:01+08:00,-28800,2020-07-07 05:12:01-07:00,25200,True,False,"['__init__.py', 'setup.py']",['314f8cf7984ac1071f381ce8104da65e82afb661'],2,2,4,2,,,
+752a4e0f4d7ca48ca802e5baf2103033ebeb6de3,Update OWNERS (#518),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-07-09 14:14:54+08:00,-28800,2020-07-08 23:14:54-07:00,25200,True,False,['OWNERS'],['94b2706625dbb0af6cc87c5eddd30895e2d7f2e3'],3,1,4,1,,,
+7a3e1f319865cd788230fad3d2e0991014ce81f4,Fix broken PredictionEndpoint (#524),jer0nim0,jeroenfranken@gmail.com,GitHub,noreply@github.com,2020-07-09 08:40:54+02:00,-7200,2020-07-08 23:40:54-07:00,25200,True,False,['tasks.py'],['752a4e0f4d7ca48ca802e5baf2103033ebeb6de3'],2,2,4,1,,,
+1349b3db27c21522852695fd0d2fe6cf11f0335c,Enhance mnist example in Kubeflow Fairing (#527),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-08-04 17:32:20+08:00,-28800,2020-08-04 02:32:20-07:00,25200,True,False,"['input.json', 'mnist_e2e_on_prem.ipynb']",['7a3e1f319865cd788230fad3d2e0991014ce81f4'],517,362,879,2,,,
+53acc7fe2e0d91cf2c7165828099fe59c4028186,add sub_path option to volume_mounts (#528),Minkyu Choi,chiming3@gmail.com,GitHub,noreply@github.com,2020-08-07 12:02:19+09:00,-32400,2020-08-06 20:02:19-07:00,25200,True,False,['utils.py'],['1349b3db27c21522852695fd0d2fe6cf11f0335c'],2,3,5,1,,,
+40feba7d7eed7a0ad2383fae89256b0a8e6714bb,fix broken link in README (#533),Gang Pu,pugangxa@cn.ibm.com,GitHub,noreply@github.com,2020-08-17 14:52:17+08:00,-28800,2020-08-16 23:52:17-07:00,25200,True,False,['README.md'],['53acc7fe2e0d91cf2c7165828099fe59c4028186'],1,1,2,1,,,
+927feb09a165e7a1334816f4f602ab24db521524,"update fairing/lightgbm retries to scale with num_machines (#532)
+
+This allows for fairing lightgbm wrapper, to scale well with the
+number of machines, and still retains the existing functionality
+for cases with smaller num_machines ( 500 ).",Aakarsh Gopi,aakarsh.g2012@gmail.com,GitHub,noreply@github.com,2020-08-17 04:10:18-04:00,14400,2020-08-17 01:10:18-07:00,25200,True,False,['utils.py'],['40feba7d7eed7a0ad2383fae89256b0a8e6714bb'],5,8,13,1,0.0,0.0,1.0
+b675f43cc9893c01562bccd1b1529e1d1177b632,Add pugangxa as reviewer (#534),Gang Pu,pugangxa@cn.ibm.com,GitHub,noreply@github.com,2020-08-17 16:46:19+08:00,-28800,2020-08-17 01:46:19-07:00,25200,True,False,['OWNERS'],['927feb09a165e7a1334816f4f602ab24db521524'],0,2,2,1,,,
+fddd3983f7ae4fd44017308eeded2fcdb9ed29fd,Release Kubeflow Fairing 1.0.2 (#535),Jin Chi He,hejinchi@cn.ibm.com,GitHub,noreply@github.com,2020-08-18 10:45:31+08:00,-28800,2020-08-17 19:45:31-07:00,25200,True,False,"['__init__.py', 'setup.py']",['b675f43cc9893c01562bccd1b1529e1d1177b632'],2,2,4,2,,,
+9ca6a1138529b3f0b21979d62c7cb1f303bc52e0,Add conditional statement to dockerfile considering user of base image (#536),Minkyu Choi,chiming3@gmail.com,GitHub,noreply@github.com,2020-09-02 15:05:06+09:00,-32400,2020-09-01 23:05:06-07:00,25200,True,False,"['cluster.py', 'docker.py', 'dockerfile.py', 'podman.py', 'test_dockerfile.py']",['fddd3983f7ae4fd44017308eeded2fcdb9ed29fd'],11,55,66,5,0.0,1.0,0.717948717948718
+476b4bbfc06c4c4c7494834e71d6c09de4fc36f5,"Fix for failing Training Job on py 3.8+ (#541)
+
+* Training Job fails on py 3.8+ and cloudpickle f.e. 1.4.1. This commit should fix this issue
+
+* fixed lint issue",Eugene Zapolsky,eugene.zapolsky@gmail.com,GitHub,noreply@github.com,2020-09-10 12:25:46+03:00,-10800,2020-09-10 02:25:46-07:00,25200,True,False,['function.py'],['9ca6a1138529b3f0b21979d62c7cb1f303bc52e0'],4,6,10,1,0.0,0.0,0.0
+e62a6c818b15496a06823c419850db2904b450a6,Fix dockerfile processing behavior of cluster builder (#542),Minkyu Choi,chiming3@gmail.com,GitHub,noreply@github.com,2020-09-11 11:28:14+09:00,-32400,2020-09-10 19:28:14-07:00,25200,True,False,['cluster.py'],['476b4bbfc06c4c4c7494834e71d6c09de4fc36f5'],0,5,5,1,0.0,1.0,1.0
+6aa5506c7338af6ecff6ac76ef1910a32efb02fd,Add node selector for pod_spec_mutator (#560),W. Choi,39936847+Aachunella@users.noreply.github.com,GitHub,noreply@github.com,2021-08-26 11:34:04+09:00,-32400,2021-08-25 19:34:04-07:00,25200,True,False,['utils.py'],['e62a6c818b15496a06823c419850db2904b450a6'],0,17,17,1,1.0,1.0,0.375

@@ -1,0 +1,11 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+11e3cc9d5f541d95260aa12e6d57771cac8f9763,initial commit,Stefan Seemayer,stefan@seemayer.de,Stefan Seemayer,stefan@seemayer.de,2016-11-26 21:30:58+01:00,-3600,2016-11-26 21:30:58+01:00,-3600,True,False,"['.editorconfig', '.gitignore', 'hug_middleware_cors.py', 'index.html', 'server.py']",[],0,213,213,5,1.0,1.0,0.09523809523809523
+7fed66335a7e7b5d153beaf8ff83b4b8e5340b74,whitespace,Stefan Seemayer,stefan@seemayer.de,Stefan Seemayer,stefan@seemayer.de,2016-11-26 21:32:59+01:00,-3600,2016-11-26 21:32:59+01:00,-3600,True,False,['server.py'],['11e3cc9d5f541d95260aa12e6d57771cac8f9763'],1,0,1,1,,,
+d07533b1980e6cd98906121c0b23b77f0835ec31,Add README and LICENSE,Stefan Seemayer,stefan@seemayer.de,Stefan Seemayer,stefan@seemayer.de,2016-11-26 21:42:10+01:00,-3600,2016-11-26 21:42:10+01:00,-3600,True,False,"['LICENSE', 'README.md']",['7fed66335a7e7b5d153beaf8ff83b4b8e5340b74'],0,47,47,2,,,
+979112e282c61cebc52a4e06b386bfdb7d386c24,add demo instructions,Stefan Seemayer,stefan@seemayer.de,Stefan Seemayer,stefan@seemayer.de,2016-11-26 21:46:17+01:00,-3600,2016-11-26 21:46:17+01:00,-3600,True,False,['README.md'],['d07533b1980e6cd98906121c0b23b77f0835ec31'],0,7,7,1,,,
+f42f1139578cd639f636fb43a6295cff4b694e52,Add setup.py,Stefan Seemayer,stefan@seemayer.de,Stefan Seemayer,stefan@seemayer.de,2016-12-20 12:59:31+01:00,-3600,2016-12-20 12:59:31+01:00,-3600,True,False,"['README.md', 'setup.py']",['979112e282c61cebc52a4e06b386bfdb7d386c24'],3,53,56,2,,,
+a0840147e315dea0ffeced728837897670d581fa,"Fix Issue #1 - Parameterized Urls
+- regex match parameterized paths to their respective routes
+- automatcially add OPTIONS to list of allowed methods
+- add tests
+- change server.py to provide test cases",Imad,chiliconsql@gmail.com,Imad,chiliconsql@gmail.com,2017-05-19 11:33:15-07:00,25200,2017-05-19 11:33:15-07:00,25200,True,False,"['hug_middleware_cors.py', 'server.py', 'tests.py']",['f42f1139578cd639f636fb43a6295cff4b694e52'],6,119,125,3,0.8,0.6875,0.975

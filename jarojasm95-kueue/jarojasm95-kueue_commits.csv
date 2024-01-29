@@ -1,0 +1,42 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+5025fc57da3cff36425676d9763a0059c76d19fe,Initial commit,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,GitHub,noreply@github.com,2020-12-10 00:26:37-07:00,25200,2020-12-10 00:26:37-07:00,25200,True,False,['.gitignore'],[],0,129,129,1,,,
+53143e320d41cbd5626becfbe24be5a24fabb388,Create LICENSE,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,GitHub,noreply@github.com,2020-12-10 00:33:12-07:00,25200,2020-12-10 00:33:12-07:00,25200,True,False,['LICENSE'],['5025fc57da3cff36425676d9763a0059c76d19fe'],0,21,21,1,,,
+addfb9400ca521dd73bef776a4bf2b2c4446f1ec,Working consumer & e2e tests,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-11 13:39:55-07:00,25200,2020-12-11 13:39:55-07:00,25200,True,False,"['.dockerignore', '.gitignore', 'Dockerfile', 'LICENSE', 'Chart.yaml', 'NOTES.txt', '_helpers.tpl', 'deployment.yaml', 'ingress.yaml', 'service.yaml', 'values.yaml', '.helmignore', 'Chart.lock', 'Chart.yaml', 'kafka.yaml', 'kafkacat.yaml', 'values.yaml', 'kind.yaml', '__init__.py', 'config.py', 'task.py', 'poetry.lock', 'poetry.toml', 'pyproject.toml', '__init__.py', 'conftest.py', 'test_something.py', 'helm.py', 'kind.py', 'tasks.py']",['53143e320d41cbd5626becfbe24be5a24fabb388'],21,2556,2577,30,0.5947136563876652,0.8414096916299559,0.40969162995594716
+7b3b0ab8ae1fc52b963d2e724e16ebe07cff1c3b,Add workflow,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-11 14:36:19-07:00,25200,2020-12-11 14:36:19-07:00,25200,True,False,['docker-image.yml'],['addfb9400ca521dd73bef776a4bf2b2c4446f1ec'],0,18,18,1,,,
+213eeae375a9831de79e444355c3cf568d58fdb0,Add flakehell to workflow,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-11 21:11:01-07:00,25200,2020-12-11 21:11:01-07:00,25200,True,False,"['docker-image.yml', 'Dockerfile', 'helm.py']",['7b3b0ab8ae1fc52b963d2e724e16ebe07cff1c3b'],11,11,22,3,,,
+2075a6e9f45071c35dcb494af0ed74e65864e883,delete,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-11 21:19:35-07:00,25200,2020-12-11 21:19:35-07:00,25200,True,False,"['docker-image.yml', 'Dockerfile']",['213eeae375a9831de79e444355c3cf568d58fdb0'],58,0,58,2,,,
+f36d3075221127b2167b38eed69c383c27ad5984,use bare runner,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-11 21:22:36-07:00,25200,2020-12-11 21:22:36-07:00,25200,True,False,['build.yml'],['2075a6e9f45071c35dcb494af0ed74e65864e883'],0,24,24,1,,,
+03c599c1f2e7f9e08a7a805a654cc98efb3a0848,rename,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-11 21:23:37-07:00,25200,2020-12-11 21:23:37-07:00,25200,True,False,['build.yml'],['f36d3075221127b2167b38eed69c383c27ad5984'],1,1,2,1,,,
+fddcf577c4c2ed0482c2286e28ab21a3c4daf8cf,remove poetry.toml,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-11 21:26:07-07:00,25200,2020-12-11 21:26:07-07:00,25200,True,False,['poetry.toml'],['03c599c1f2e7f9e08a7a805a654cc98efb3a0848'],3,0,3,1,,,
+567a92d6c31707a56d0bd63a8be194ec058fa655,Add env,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-11 21:28:16-07:00,25200,2020-12-11 21:28:16-07:00,25200,True,False,['build.yml'],['fddcf577c4c2ed0482c2286e28ab21a3c4daf8cf'],0,3,3,1,,,
+c340595cfa929cf15bc068fbe625f2148122ba3d,revert license,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-11 21:35:03-07:00,25200,2020-12-11 21:35:03-07:00,25200,True,False,['LICENSE'],['567a92d6c31707a56d0bd63a8be194ec058fa655'],201,21,222,1,,,
+c2a55f4598f7f0770eb3e5b8a78a6717c4145899,"Flesh out task consumer and producer (#2)
+
+
+- Added robust consumer and task proxy/decorator
+- Updated tests
+- Improved pytest fixtures",Jose Rojas,39174181+jarojasm95@users.noreply.github.com,GitHub,noreply@github.com,2020-12-19 19:30:25-07:00,25200,2020-12-19 19:30:25-07:00,25200,True,False,"['build.yml', '.gitignore', '__init__.py', '_types.py', 'config.py', 'consumer.py', 'task.py', 'poetry.lock', 'pyproject.toml', 'conftest.py', 'test_consumer.py', 'test_something.py', 'kind.py', 'tasks.py']",['23405b0ac3fabd6cac5a37a746a649fc49d3c6e6'],324,644,968,14,0.5420875420875421,0.7508417508417509,0.67003367003367
+b15e364c62fcd8daec2796b81247d45a907688e5,"Add README (#3)
+
+
+- Added README
+- Added workflow for publishing to PyPi
+- Updated pyproject metadata",Jose Rojas,39174181+jarojasm95@users.noreply.github.com,GitHub,noreply@github.com,2020-12-19 21:42:51-07:00,25200,2020-12-19 21:42:51-07:00,25200,True,False,"['python-publish.yml', 'README.md', 'pyproject.toml']",['c2a55f4598f7f0770eb3e5b8a78a6717c4145899'],2,82,84,3,,,
+69e5873951c31fae4ea2b1df597f9ab1b980b7e7,Cleanup python publish workflow,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-19 21:47:41-07:00,25200,2020-12-19 21:47:41-07:00,25200,True,False,['python-publish.yml'],['b15e364c62fcd8daec2796b81247d45a907688e5'],4,2,6,1,,,
+dab34179c23f48afb5e731dc3f8a5f2e211f2aa4,Create codeql-analysis.yml,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,GitHub,noreply@github.com,2020-12-19 21:56:38-07:00,25200,2020-12-19 21:56:38-07:00,25200,True,False,['codeql-analysis.yml'],['69e5873951c31fae4ea2b1df597f9ab1b980b7e7'],0,67,67,1,,,
+630b4634e435417abf45790049542bd03662e033,"Improve integration tests (#4)
+
+
+- Fix code example
+- Split up integration tests
+- Improve fixtures",Jose Rojas,39174181+jarojasm95@users.noreply.github.com,GitHub,noreply@github.com,2020-12-20 12:26:11-07:00,25200,2020-12-20 12:26:11-07:00,25200,True,False,"['README.md', 'consumer.py', 'task.py', 'pyproject.toml', 'conftest.py', 'test_consumer.py', 'test_integration.py', 'helm.py']",['dab34179c23f48afb5e731dc3f8a5f2e211f2aa4'],78,143,221,8,0.0,0.8974358974358975,0.07692307692307693
+e6f04065c565961b172060ef06dfcae9ebce83bc,Fix python publish workflow,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,Jose Rojas,39174181+jarojasm95@users.noreply.github.com,2020-12-20 12:43:53-07:00,25200,2020-12-20 12:43:53-07:00,25200,True,False,['python-publish.yml'],['630b4634e435417abf45790049542bd03662e033'],2,2,4,1,,,
+ca6f906b915ef25fb5c2e03d3477a0808258d247,"Add unit tests and run them as part of CI (#5)
+
+
+- Added few unit tests around task consumer
+- Added ""pytest"" step to CI workflow
+- Added badges to README
+- Added lazy initialization to kafka consumer 
+- Dropped python version to 3.7
+- Added pytest --integration flag for integration tests",Jose Rojas,39174181+jarojasm95@users.noreply.github.com,GitHub,noreply@github.com,2020-12-23 21:38:22-07:00,25200,2020-12-23 21:38:22-07:00,25200,True,False,"['build.yml', 'python-publish.yml', 'README.md', 'consumer.py', 'poetry.lock', 'pyproject.toml', 'conftest.py', 'test_consumer_base.py', 'test_integration.py']",['e6f04065c565961b172060ef06dfcae9ebce83bc'],189,369,558,9,1.0,1.0,1.0

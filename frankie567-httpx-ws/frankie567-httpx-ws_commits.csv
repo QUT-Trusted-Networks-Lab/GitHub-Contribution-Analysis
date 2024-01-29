@@ -1,0 +1,242 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+d7bae7d270d5864822d4bdcf62470f691f8a665c,Boostrap project,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-22 09:17:03+01:00,-3600,2022-11-22 09:17:03+01:00,-3600,True,False,"['.editorconfig', 'FUNDING.yml', 'build.yml', '.gitignore', 'LICENSE', 'README.md', '__init__.py', 'py.typed', 'pyproject.toml', '__init__.py', 'conftest.py']",[],0,350,350,11,1.0,1.0,1.0
+8828265dfb8179f7b3c8a1ff8818d8c24d512093,Start implementing API and ASGI transport,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-22 15:54:56+01:00,-3600,2022-11-22 15:54:56+01:00,-3600,True,False,"['__init__.py', '_api.py', 'transport.py', 'pyproject.toml', 'conftest.py', 'test_api.py']",['d7bae7d270d5864822d4bdcf62470f691f8a665c'],1,338,339,6,0.6774193548387096,0.9170506912442397,0.631336405529954
+848ff12d16458edfa0a5b3f1a44bec780acd1498,Improve transport exceptions,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-22 16:39:35+01:00,-3600,2022-11-22 16:39:35+01:00,-3600,True,False,['transport.py'],['8828265dfb8179f7b3c8a1ff8818d8c24d512093'],5,16,21,1,1.0,1.0,1.0
+e9145ddf5d5f5c05c7bc8af03854ac0de30cb3f0,Add test for upgrade error,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-22 16:44:19+01:00,-3600,2022-11-22 16:44:19+01:00,-3600,True,False,"['__init__.py', 'test_api.py']",['848ff12d16458edfa0a5b3f1a44bec780acd1498'],3,28,31,2,1.0,1.0,1.0
+dddbd80f859ba29b8697dae5132ed17941d65d02,Change API so base methods work with pure wsproto Event,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-22 16:50:03+01:00,-3600,2022-11-22 16:50:03+01:00,-3600,True,False,"['_api.py', 'test_api.py']",['e9145ddf5d5f5c05c7bc8af03854ac0de30cb3f0'],7,8,15,2,,,
+afd8c69b61ba170b4168e923d5e5e9430287590c,Add helper send methods,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-22 17:09:36+01:00,-3600,2022-11-22 17:09:36+01:00,-3600,True,False,"['_api.py', 'test_api.py']",['dddbd80f859ba29b8697dae5132ed17941d65d02'],11,118,129,2,1.0,1.0,0.7407407407407407
+c423b5117ea2b434371596eddeb3b3d06584d4b7,Add receive methods helpers,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-22 17:23:52+01:00,-3600,2022-11-22 17:23:52+01:00,-3600,True,False,"['__init__.py', '_api.py', 'pyproject.toml', 'test_api.py']",['afd8c69b61ba170b4168e923d5e5e9430287590c'],17,159,176,4,1.0,1.0,1.0
+c919f306ee2dfe1edcad62d4cbd967076c8770df,Add sync version of the API,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-22 17:45:24+01:00,-3600,2022-11-22 17:45:24+01:00,-3600,True,False,"['__init__.py', '_api.py', 'test_api.py']",['c423b5117ea2b434371596eddeb3b3d06584d4b7'],12,101,113,3,1.0,1.0,0.7538461538461538
+163192e67ce7a5284ba9a1e12a61af96a7be79dc,Add rudimentary documentation,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-22 18:29:47+01:00,-3600,2022-11-22 18:29:47+01:00,-3600,True,False,['README.md'],['c919f306ee2dfe1edcad62d4cbd967076c8770df'],0,32,32,1,,,
+8ca74454165ebab2ea229ea11fe15ed7fd11ca7b,Revamp unit tests so they work against a real Uvicorn server,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-23 10:03:52+01:00,-3600,2022-11-23 10:03:52+01:00,-3600,True,False,"['conftest.py', 'test_api.py']",['163192e67ce7a5284ba9a1e12a61af96a7be79dc'],133,169,302,2,0.0,1.0,0.0
+8dbbcd46e201f24d89b6a61c00e717f2d383a8e0,Add tests for ASGIWebSocketTransport,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-23 11:27:30+01:00,-3600,2022-11-23 11:27:30+01:00,-3600,True,False,"['transport.py', 'test_transport.py']",['8ca74454165ebab2ea229ea11fe15ed7fd11ca7b'],7,141,148,2,0.8068181818181818,1.0,0.6818181818181818
+c2046115a385dc3141c59593172367a8f7fba68c,Add missing uvicorn dev dependency,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-23 11:28:21+01:00,-3600,2022-11-23 11:28:21+01:00,-3600,True,False,['pyproject.toml'],['8dbbcd46e201f24d89b6a61c00e717f2d383a8e0'],0,1,1,1,,,
+a8377bcccb270cb4081817f8bc6a66786381a687,Try to use Unix socket to serve apps during testing,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-23 14:30:59+01:00,-3600,2022-11-23 14:30:59+01:00,-3600,True,False,"['conftest.py', 'test_api.py']",['c2046115a385dc3141c59593172367a8f7fba68c'],71,100,171,2,0.7037037037037037,1.0,0.6296296296296297
+fefbeb3a8cad73778d4ce775a22dafecc7c3433b,Add max_bytes parameter to all receive methods,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-23 15:15:23+01:00,-3600,2022-11-23 15:15:23+01:00,-3600,True,False,['_api.py'],['a8377bcccb270cb4081817f8bc6a66786381a687'],18,28,46,1,1.0,1.0,0.0
+2c636f9fb032cf8252ae01d6b15a19c128c795b8,Swallow WebSocketDisconnect during unit tests,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-23 15:30:23+01:00,-3600,2022-11-23 15:30:23+01:00,-3600,True,False,['test_api.py'],['fefbeb3a8cad73778d4ce775a22dafecc7c3433b'],48,104,152,1,0.0,1.0,0.42857142857142855
+1cf8c2f4c5b9fb61aebbace4a73f429d2c9ad86d,Install uvicorn[standard] dev dep,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-23 15:46:20+01:00,-3600,2022-11-23 15:46:20+01:00,-3600,True,False,['pyproject.toml'],['2c636f9fb032cf8252ae01d6b15a19c128c795b8'],1,1,2,1,,,
+1c9f76f5b5555708692a22840ba990430d576377,Improve test Uvicorn servers so they shutdown gracefully,François Voron,fvoron@gmail.com,GitHub,noreply@github.com,2022-11-23 15:33:31+00:00,0,2022-11-23 15:33:31+00:00,0,True,False,['conftest.py'],['1cf8c2f4c5b9fb61aebbace4a73f429d2c9ad86d'],8,11,19,1,1.0,1.0,1.0
+3ba5581c355c497d3c37f742ca4db00a280461b1,Add GitHub issue config and template,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-24 08:26:44+01:00,-3600,2022-11-24 08:26:44+01:00,-3600,True,False,"['bug_report.md', 'config.yml']",['1c9f76f5b5555708692a22840ba990430d576377'],0,36,36,2,,,
+f4c64030f1fce83eba46a06c6569f762dfa739b5,Tweak conftest,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-24 10:56:37+01:00,-3600,2022-11-24 10:56:37+01:00,-3600,True,False,['conftest.py'],['3ba5581c355c497d3c37f742ca4db00a280461b1'],2,23,25,1,0.0,1.0,1.0
+08edb6883bde7d42c399da461b36743aeaa23a7f,Tweak close methods,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-24 11:05:39+01:00,-3600,2022-11-24 11:05:39+01:00,-3600,True,False,"['_api.py', 'conftest.py']",['f4c64030f1fce83eba46a06c6569f762dfa739b5'],11,17,28,2,1.0,1.0,0.0
+672245edaec640e0d71fc5462cdaf7074effc51d,Test against uvicorn websockets impl,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-24 11:06:12+01:00,-3600,2022-11-24 11:06:12+01:00,-3600,True,False,['conftest.py'],['08edb6883bde7d42c399da461b36743aeaa23a7f'],1,1,2,1,,,
+a48aceef5cfa9f3f93ca8959b3ea618f2e3208ad,Tweak events handling,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-24 12:35:45+01:00,-3600,2022-11-24 12:35:45+01:00,-3600,True,False,['_api.py'],['672245edaec640e0d71fc5462cdaf7074effc51d'],14,19,33,1,1.0,1.0,1.0
+9e6f64d399f0795f39b7059bcd03d96b15580dda,Fix unit tests by adding sleeps,François Voron,fvoron@gmail.com,GitHub,noreply@github.com,2022-11-24 11:47:19+00:00,0,2022-11-24 11:47:19+00:00,0,True,False,"['conftest.py', 'test_api.py']",['a48aceef5cfa9f3f93ca8959b3ea618f2e3208ad'],3,15,18,2,1.0,1.0,1.0
+8e02981d6f72712a62f32eed78ec2b7256e22352,Improve API,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-24 13:04:38+01:00,-3600,2022-11-24 13:04:38+01:00,-3600,True,False,"['README.md', '_api.py', 'test_api.py']",['9e6f64d399f0795f39b7059bcd03d96b15580dda'],33,108,141,3,1.0,1.0,0.0
+06b43da48aa3577d60a019094358234c456ca330,Fix ASGI example,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-24 13:15:21+01:00,-3600,2022-11-24 13:15:21+01:00,-3600,True,False,['README.md'],['8e02981d6f72712a62f32eed78ec2b7256e22352'],2,2,4,1,,,
+8ec4367c45547623488b01c5d9a64d8b01ea97b5,"Bump version 0.0.0 → 0.1.0
+
+> ⚠️ This is a very young project. Expect bugs 🐛
+
+Features
+--------
+
+* `connect_ws` helper to talk to WebSockets synchronously.
+* `aconnect_ws` helper to talk to WebSockets asynchronously.
+* `ASGIWebSocketTransport` to test WebSockets in ASGI apps directly.",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-24 13:15:42+01:00,-3600,2022-11-24 13:15:42+01:00,-3600,True,False,['__init__.py'],['06b43da48aa3577d60a019094358234c456ca330'],1,1,2,1,,,
+644700b006aaefd481c386a00c58afb536f65eb6,Update README warning,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-24 13:18:21+01:00,-3600,2022-11-24 13:18:21+01:00,-3600,True,False,['README.md'],['8ec4367c45547623488b01c5d9a64d8b01ea97b5'],1,1,2,1,,,
+c6f041c82197376b1fb1443eae228a542d1d0233,docs: update README.md [skip ci],allcontributors[bot],46447321+allcontributors[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-11-24 16:23:29+00:00,0,2022-11-24 16:23:29+00:00,0,True,False,['README.md'],['644700b006aaefd481c386a00c58afb536f65eb6'],0,25,25,1,,,
+1eea06b9b0bce2d93b73cd492e694c9059f8f6b7,docs: create .all-contributorsrc [skip ci],allcontributors[bot],46447321+allcontributors[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-11-24 16:23:30+00:00,0,2022-11-24 16:23:30+00:00,0,True,False,['.all-contributorsrc'],['c6f041c82197376b1fb1443eae228a542d1d0233'],0,26,26,1,,,
+9908ac55dcd342c73a4db3076304cd08052cf976,"#2 Add ping method (#8)
+
+* Add ping method (#2)
+
+* add optional arguement paylod to ping",Kousik Mitra,kousikmitra12@gmail.com,GitHub,noreply@github.com,2022-11-24 21:42:12+05:18,-19080,2022-11-24 17:24:12+01:00,-3600,True,False,"['_api.py', 'test_api.py']",['f65bfaa06bc0fb0970d5fd6b6e8116c032465237'],0,39,39,2,0.30303030303030304,1.0,1.0
+6cf015422179ec02190332656834f236809de4df,"docs: add kousikmitra as a contributor for code (#10)
+
+* docs: update README.md [skip ci]
+
+* docs: update .all-contributorsrc [skip ci]
+
+Co-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",allcontributors[bot],46447321+allcontributors[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-11-24 17:24:46+01:00,-3600,2022-11-24 17:24:46+01:00,-3600,True,False,"['.all-contributorsrc', 'README.md']",['9908ac55dcd342c73a4db3076304cd08052cf976'],1,11,12,2,,,
+a42509e0c93406e92317050c3941f94c62ab6497,Move contributors,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-24 17:26:52+01:00,-3600,2022-11-24 17:26:52+01:00,-3600,True,False,['README.md'],['6cf015422179ec02190332656834f236809de4df'],26,26,52,1,,,
+047408bd0a6e55d1d6b20d947ecce2b90324a3e0,Fix test name,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-25 09:30:56+01:00,-3600,2022-11-25 09:30:56+01:00,-3600,True,False,['test_api.py'],['a42509e0c93406e92317050c3941f94c62ab6497'],1,1,2,1,,,
+cea1ab7ce4aeea0a89c23e76976be1ba9b9c5d89,Ensure we have minimal required versions of httpx and httpcore in deps,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-25 10:45:09+01:00,-3600,2022-11-25 10:45:09+01:00,-3600,True,False,['pyproject.toml'],['047408bd0a6e55d1d6b20d947ecce2b90324a3e0'],1,2,3,1,,,
+a4b5d6debf063f9d2040e5ce9e68249796f132e0,"Bump version 0.1.0 → 0.1.1
+
+Features
+--------
+
+* Add a `.ping` method. Thanks @kousikmitra 🎉
+
+Improvements
+------------
+
+* Pin lower bound version of `httpx` and `httpcore` dependencies
+    * `httpx>=0.23.1`
+    * `httpcore>=0.16.1`",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-25 10:46:53+01:00,-3600,2022-11-25 10:46:53+01:00,-3600,True,False,['__init__.py'],['cea1ab7ce4aeea0a89c23e76976be1ba9b9c5d89'],1,1,2,1,,,
+49a1a147f015d29bccdccddffd8a7a4348936925,Implement auto ping respond,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-25 15:32:18+01:00,-3600,2022-11-25 15:32:18+01:00,-3600,True,False,"['_api.py', 'conftest.py', 'test_api.py']",['a4b5d6debf063f9d2040e5ce9e68249796f132e0'],10,89,99,3,1.0,1.0,0.5882352941176471
+206520993af940cae6b8bbfe910e9d7a941c3875,Revamp receive implementation with a background thread,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-25 16:12:47+01:00,-3600,2022-11-25 16:12:47+01:00,-3600,True,False,['_api.py'],['49a1a147f015d29bccdccddffd8a7a4348936925'],37,64,101,1,0.30434782608695654,0.0,0.9130434782608695
+19c393b3ed6b1df298c3c17be32f1563790929ed,Implement ping-pong handling,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-25 16:51:56+01:00,-3600,2022-11-25 16:51:56+01:00,-3600,True,False,"['_api.py', '_ping.py', 'test_api.py']",['206520993af940cae6b8bbfe910e9d7a941c3875'],27,118,145,3,0.6825396825396826,0.9047619047619048,1.0
+5d1f288fb4d262737c75cc1580a99c5242515df3,Add timeout handling for async receive,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-25 17:12:24+01:00,-3600,2022-11-25 17:12:24+01:00,-3600,True,False,['_api.py'],['19c393b3ed6b1df298c3c17be32f1563790929ed'],1,1,2,1,,,
+28c49e1b74f3ba3b554366d979b2b1cf48ac32c7,Add parameters to control message and queue size,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-25 17:32:07+01:00,-3600,2022-11-25 17:32:07+01:00,-3600,True,False,['_api.py'],['5d1f288fb4d262737c75cc1580a99c5242515df3'],15,46,61,1,0.0,1.0,0.0
+557096f873a54f0a5607e532cc12669396e5adab,Add a sleep in transport receive to let it yield to the event loop,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-25 18:46:17+01:00,-3600,2022-11-25 18:46:17+01:00,-3600,True,False,['transport.py'],['28c49e1b74f3ba3b554366d979b2b1cf48ac32c7'],0,2,2,1,1.0,1.0,1.0
+cb446505bb2a7e91c05436f8a1e40d7c9ff523ac,Setup mkdocs,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 09:33:07+01:00,-3600,2022-11-27 09:33:07+01:00,-3600,True,False,"['README.md', 'index.md', 'mkdocs.yml', 'pyproject.toml']",['557096f873a54f0a5607e532cc12669396e5adab'],2,46,48,4,,,
+9ee90fc662abea927a3ec60a1ec7a2921e04181f,Add docstrings for session classes,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 11:21:21+01:00,-3600,2022-11-27 11:21:21+01:00,-3600,True,False,"['reference.md', '_api.py', 'mkdocs.yml', 'pyproject.toml', 'test_api.py']",['cb446505bb2a7e91c05436f8a1e40d7c9ff523ac'],74,578,652,5,0.0,0.9388235294117647,0.7505882352941177
+6880c523e99949374ff4614a993baab945117c4f,Complete docs,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 11:53:19+01:00,-3600,2022-11-27 11:53:19+01:00,-3600,True,False,"['README.md', 'httpx_ws.md', 'asgi.md', 'quickstart.md', '_api.py', 'mkdocs.yml']",['9ee90fc662abea927a3ec60a1ec7a2921e04181f'],115,220,335,6,0.0,1.0,0.0
+f118d29755965502a0f0e4a78c57013447ec4c05,Setup docs build,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 11:56:32+01:00,-3600,2022-11-27 11:56:32+01:00,-3600,True,False,"['docs.yml', 'mkdocs.yml', 'pyproject.toml']",['6880c523e99949374ff4614a993baab945117c4f'],1,58,59,3,,,
+4d596039c0828185d446b7469b65200c65c05430,Update README,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 12:01:35+01:00,-3600,2022-11-27 12:01:35+01:00,-3600,True,False,['README.md'],['f118d29755965502a0f0e4a78c57013447ec4c05'],4,11,15,1,,,
+979a26ac1498f0c4cc65974a92c2b0987f28ab51,"Bump version 0.1.1 → 0.2.0
+
+Improvements
+------------
+
+* Documentation is live ➡️ https://frankie567.github.io/httpx-ws/
+* Revamp implementation with a background thread/task receiving messages
+* Automatic management of ping/pong events",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 12:02:28+01:00,-3600,2022-11-27 12:02:28+01:00,-3600,True,False,['__init__.py'],['4d596039c0828185d446b7469b65200c65c05430'],1,1,2,1,,,
+6df403237f5ab1c19cad7a48f382d45d82c82ab5,Fix documentation link in pyproject,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 13:51:47+01:00,-3600,2022-11-27 13:51:47+01:00,-3600,True,False,['pyproject.toml'],['979a26ac1498f0c4cc65974a92c2b0987f28ab51'],1,1,2,1,,,
+f8e5ae8af2d9319df92b0ad29e82eb50206b9458,Ensure to close stream when calling close,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 15:27:18+01:00,-3600,2022-11-27 15:27:29+01:00,-3600,True,False,"['_api.py', 'test_api.py']",['6df403237f5ab1c19cad7a48f382d45d82c82ab5'],0,8,8,2,1.0,1.0,0.75
+cfae1371c0f121d578a3f012fe4ce0669d201a3c,Make sure some unit tests correctly close the websocket session,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 15:57:12+01:00,-3600,2022-11-27 15:57:12+01:00,-3600,True,False,['test_api.py'],['f8e5ae8af2d9319df92b0ad29e82eb50206b9458'],12,12,24,1,,,
+c67b8617b8038266863931cc28c191d4f0341439,Greatly improve network errors handling,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 18:13:04+01:00,-3600,2022-11-27 18:13:04+01:00,-3600,True,False,"['__init__.py', '_api.py', 'test_api.py']",['cfae1371c0f121d578a3f012fe4ce0669d201a3c'],27,107,134,3,0.0,0.9393939393939394,0.696969696969697
+c9cde3687aa1f77aa710b664e6f76081e7554a5a,Add missing unit tests,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-27 18:16:26+01:00,-3600,2022-11-27 18:16:26+01:00,-3600,True,False,['test_api.py'],['c67b8617b8038266863931cc28c191d4f0341439'],0,112,112,1,1.0,1.0,0.660377358490566
+972cb459b905145e7e7178c841d5034fa287c8b0,Handle immediate close in ASGI transport,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-28 09:56:16+01:00,-3600,2022-11-28 09:56:16+01:00,-3600,True,False,"['transport.py', 'test_transport.py']",['c9cde3687aa1f77aa710b664e6f76081e7554a5a'],0,13,13,2,1.0,1.0,0.7777777777777778
+f02e1f2557b4b659bad36c34a5070a6d20044997,"Bump version 0.2.0 → 0.2.1
+
+Improvements
+------------
+
+* Handle immediate close from the server in ASGI transport
+* Improve network errors handling",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-28 09:58:54+01:00,-3600,2022-11-28 09:58:54+01:00,-3600,True,False,['__init__.py'],['972cb459b905145e7e7178c841d5034fa287c8b0'],1,1,2,1,,,
+d36ccac5face7dc0dfdc5f6c5e7cbca123b598a2,Add automatic keepalive ping mechanism,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-28 14:28:32+01:00,-3600,2022-11-28 14:28:32+01:00,-3600,True,False,"['README.md', '_api.py', 'test_api.py']",['f02e1f2557b4b659bad36c34a5070a6d20044997'],9,273,282,3,0.5487804878048781,1.0,0.3902439024390244
+ded3317a811b20d4d490185f2f98da5ae1cf2dd9,"Bump version 0.2.1 → 0.2.2
+
+Improvements
+------------
+
+* Automatic keepalive ping mechanism",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-28 15:22:36+01:00,-3600,2022-11-28 15:22:36+01:00,-3600,True,False,['__init__.py'],['d36ccac5face7dc0dfdc5f6c5e7cbca123b598a2'],1,1,2,1,,,
+92f274e5f6bb871e895cba5ce82af45af06d618d,Use new GitHub syntax for warning in README,François Voron,fvoron@gmail.com,GitHub,noreply@github.com,2022-11-28 15:44:57+01:00,-3600,2022-11-28 15:44:57+01:00,-3600,True,False,['README.md'],['ded3317a811b20d4d490185f2f98da5ae1cf2dd9'],1,3,4,1,,,
+1c2dc5b81336104354a29c041b65e6c5d64a8fca,Add mechanism to stop thread early when they're stuck in a waiting operation,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-29 16:27:46+01:00,-3600,2022-11-29 16:27:46+01:00,-3600,True,False,['_api.py'],['92f274e5f6bb871e895cba5ce82af45af06d618d'],28,79,107,1,0.0,0.4090909090909091,0.13636363636363635
+bace66f4434493e526198f41d79c84f70d98bb9e,"Bump version 0.2.2 → 0.2.3
+
+Improvements
+------------
+
+* When closing, stop background threads early when they're stuck in a waiting operation",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-29 16:31:20+01:00,-3600,2022-11-29 16:31:20+01:00,-3600,True,False,['__init__.py'],['1c2dc5b81336104354a29c041b65e6c5d64a8fca'],1,1,2,1,,,
+e5afdb1a5108c9d659b23a3fbe72dceac883f97c,Use Ruff for sorting imports,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-11-30 14:31:40+01:00,-3600,2022-11-30 14:31:40+01:00,-3600,True,False,"['README.md', 'pyproject.toml']",['bace66f4434493e526198f41d79c84f70d98bb9e'],6,3,9,2,,,
+f3f16bd427865578bf9d53ba256e6c81408a255d,Fix #15: make sure default HTTPX client is closed (#16),François Voron,fvoron@gmail.com,GitHub,noreply@github.com,2022-12-27 10:21:51+01:00,-3600,2022-12-27 10:21:51+01:00,-3600,True,False,"['_api.py', 'test_api.py']",['e5afdb1a5108c9d659b23a3fbe72dceac883f97c'],18,122,140,2,0.0,1.0,0.22580645161290322
+aa5514271ee34fddef88dc875aab802bc13eaa72,"Bump version 0.2.3 → 0.2.4
+
+Bug fixes
+---------
+
+* Fix #15: make sure default HTTPX client is closed.",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2022-12-27 10:23:09+01:00,-3600,2022-12-27 10:23:09+01:00,-3600,True,False,['__init__.py'],['f3f16bd427865578bf9d53ba256e6c81408a255d'],1,1,2,1,,,
+94b0959f91d0057e8ff2625a132bd8096dbf6159,"docs: add davidbrochart as a contributor for platform (#21)
+
+* docs: update README.md [skip ci]
+
+* docs: update .all-contributorsrc [skip ci]
+
+Co-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",allcontributors[bot],46447321+allcontributors[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-01-02 10:12:02+01:00,-3600,2023-01-02 10:12:02+01:00,-3600,True,False,"['.all-contributorsrc', 'README.md']",['aa5514271ee34fddef88dc875aab802bc13eaa72'],0,10,10,2,,,
+527c6aab5202cf04784caab0a97bf2416f18d833,"Fix #19: when both todo task and wait task are done in _wait_until_closed, make sure to always return the todo task result",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-01-02 15:20:11+01:00,-3600,2023-01-02 15:20:28+01:00,-3600,True,False,['_api.py'],['94b0959f91d0057e8ff2625a132bd8096dbf6159'],2,2,4,1,,,
+aaf3fdf0c3f0a7b4f27ce79082c5a0e3e52de733,Fix typings,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-01-02 15:27:59+01:00,-3600,2023-01-02 15:27:59+01:00,-3600,True,False,['transport.py'],['527c6aab5202cf04784caab0a97bf2416f18d833'],4,4,8,1,,,
+a47449ed1ddd315a6797c9a73d45112e11372570,"Bump version 0.2.4 → 0.2.5
+
+Bug fixes
+---------
+
+* Fix #19: when both todo task and wait task are done in `_wait_until_closed`, make sure to always return the todo task result",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-01-02 15:38:13+01:00,-3600,2023-01-02 15:38:13+01:00,-3600,True,False,['__init__.py'],['aaf3fdf0c3f0a7b4f27ce79082c5a0e3e52de733'],1,1,2,1,,,
+126013926d12e067afebe9d78fe05a50619c9fbf,"Fix case where we try to schedule tasks in new threadpool during client close
+
+See https://github.com/frankie567/httpx-ws/issues/19#issuecomment-1368995731",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-01-02 18:12:43+01:00,-3600,2023-01-02 18:12:43+01:00,-3600,True,False,['_api.py'],['a47449ed1ddd315a6797c9a73d45112e11372570'],3,6,9,1,0.0,1.0,0.0
+7d6f22634bf5c1567476bb43555135f3c7d2ff77,"Bump version 0.2.5 → 0.2.6
+
+Bug fixes
+---------
+
+* Fix case where we try to schedule tasks in new threadpool during client close",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-01-03 09:17:28+01:00,-3600,2023-01-03 09:17:28+01:00,-3600,True,False,['__init__.py'],['126013926d12e067afebe9d78fe05a50619c9fbf'],1,1,2,1,,,
+ec95f5384c09f8bd79e87f22cf525fa63795b91c,Update md-buttons URL,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-02-14 17:10:39+01:00,-3600,2023-02-14 17:10:39+01:00,-3600,True,False,['README.md'],['7d6f22634bf5c1567476bb43555135f3c7d2ff77'],1,1,2,1,,,
+9c2518cb05eefb79c44b9b75ba9b2edc2cc66daa,Set pytest-asyncio strict mode,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-02-15 11:48:02+01:00,-3600,2023-02-15 11:48:02+01:00,-3600,True,False,['pyproject.toml'],['ec95f5384c09f8bd79e87f22cf525fa63795b91c'],1,1,2,1,,,
+d2cb132559d6630082a0cd92df62cef8386a6d2e,Add support for subprotocols (#24),François Voron,fvoron@gmail.com,GitHub,noreply@github.com,2023-02-15 11:54:51+01:00,-3600,2023-02-15 11:54:51+01:00,-3600,True,False,"['_api.py', 'test_api.py']",['9c2518cb05eefb79c44b9b75ba9b2edc2cc66daa'],4,98,102,2,0.4225352112676056,1.0,0.7183098591549296
+f0388081d8e004cafbc45f1593020f32ad1ac43f,Add docs for subprotocols,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-02-15 12:02:36+01:00,-3600,2023-02-15 12:02:36+01:00,-3600,True,False,"['subprotocols.md', 'mkdocs.yml']",['d2cb132559d6630082a0cd92df62cef8386a6d2e'],0,30,30,2,,,
+f0e9eefe643c99ed691e8393df55be6ec14b511b,"Bump version 0.2.6 → 0.3.0
+
+New features
+------------
+
+* Add support for subprotocols [[Doccumentation](https://frankie567.github.io/httpx-ws/usage/subprotocols/)]
+    * Thanks @davidbrochart for the idea and feedback 👍",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-02-15 12:03:09+01:00,-3600,2023-02-15 12:03:09+01:00,-3600,True,False,['__init__.py'],['f0388081d8e004cafbc45f1593020f32ad1ac43f'],1,1,2,1,,,
+8dc29698a10848b6b2d68f1203f175d4a0297513,Fix #30: handle server error in ASGI transport,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-04-15 13:45:45+02:00,-7200,2023-04-15 13:45:45+02:00,-7200,True,False,"['transport.py', 'test_transport.py']",['f0e9eefe643c99ed691e8393df55be6ec14b511b'],1,21,22,2,0.1111111111111111,1.0,0.8888888888888888
+28259d215a6d34da4a50106b6f72b387de2208df,Remove useless docstring on event_loop fixture,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-04-15 13:46:46+02:00,-7200,2023-04-15 13:46:46+02:00,-7200,True,False,['conftest.py'],['8dc29698a10848b6b2d68f1203f175d4a0297513'],1,0,1,1,,,
+937dd917a90443e1946779df7f8339c9cbc9b74e,"docs: add ysmu as a contributor for bug (#31)
+
+* docs: update README.md [skip ci]
+
+* docs: update .all-contributorsrc [skip ci]
+
+---------
+
+Co-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",allcontributors[bot],46447321+allcontributors[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-04-15 13:48:13+02:00,-7200,2023-04-15 13:48:13+02:00,-7200,True,False,"['.all-contributorsrc', 'README.md']",['28259d215a6d34da4a50106b6f72b387de2208df'],3,13,16,2,,,
+4d79e0db869fee7678e139c2ed5b7911e6d42e88,"Bump version 0.3.0 → 0.3.1
+
+Bug fixes
+---------
+
+* Fix #30: ASGI transport now correctly handles server errors and closes the WebSocket instead of hanging. Thanks @ysmu 🎉",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-04-15 13:48:29+02:00,-7200,2023-04-15 13:48:29+02:00,-7200,True,False,['__init__.py'],['937dd917a90443e1946779df7f8339c9cbc9b74e'],1,1,2,1,,,
+a94cfb53e1eedaedad1852df67705eb440fd9bf5,Drop Python 3.7 support,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-06-27 15:10:49+02:00,-7200,2023-06-27 15:10:49+02:00,-7200,True,False,"['build.yml', 'docs.yml', '_api.py', 'mkdocs.yml', 'pyproject.toml', 'conftest.py']",['4d79e0db869fee7678e139c2ed5b7911e6d42e88'],21,7,28,6,,,
+53ce8bbc53f5ffcf93f0c44db24e988bbb09a5cf,Use Starlette lifespan instead of on_startup,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-06-27 15:12:44+02:00,-7200,2023-06-27 15:12:44+02:00,-7200,True,False,['conftest.py'],['a94cfb53e1eedaedad1852df67705eb440fd9bf5'],2,4,6,1,1.0,1.0,1.0
+f0e4d4b124d3ca7b0a85178f8294c22542841ce5,"Bump version 0.3.1 → 0.4.0
+
+Breaking changes
+----------------
+
+* Drop Python 3.7 support",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-06-27 15:15:31+02:00,-7200,2023-06-27 15:15:31+02:00,-7200,True,False,['__init__.py'],['53ce8bbc53f5ffcf93f0c44db24e988bbb09a5cf'],1,1,2,1,,,
+d868919d5ab5d3e4514d554712e027e8a0a9abfb,"Fixes `httpcore` import in `httpx_ws/_api.py` (#36)
+
+* Fixes `httpcore` import in `httpx_ws/_api.py`
+
+* Replace `httpcore.backends` import in `httpx_ws/_api.py`
+
+* Replace `httpcore.backends` import in `httpx_ws/transport.py`
+
+* Bump `httpcore` in `pyproject.toml`
+
+* Remove `NetworkStream` import from `transport.py`
+
+* Fix `httpcore` import in `tests/test_api.py`",Sam Foreman,saforem2@gmail.com,GitHub,noreply@github.com,2023-07-06 08:48:49-05:00,18000,2023-07-06 15:48:49+02:00,-7200,True,False,"['_api.py', 'transport.py', 'pyproject.toml', 'test_api.py']",['f0e4d4b124d3ca7b0a85178f8294c22542841ce5'],4,4,8,4,,,
+cdc712667fae5c7d883a5da092aa2207bbc76361,"docs: add saforem2 as a contributor for bug (#37)
+
+* docs: update README.md [skip ci]
+
+* docs: update .all-contributorsrc [skip ci]
+
+---------
+
+Co-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",allcontributors[bot],46447321+allcontributors[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-07-06 15:49:06+02:00,-7200,2023-07-06 15:49:06+02:00,-7200,True,False,"['.all-contributorsrc', 'README.md']",['d868919d5ab5d3e4514d554712e027e8a0a9abfb'],1,12,13,2,,,
+e44e1fa9cfa9268930e47e4aaca585a9f0182c39,"Bump version 0.4.0 → 0.4.1
+
+Bug fixes
+---------
+
+* Fix import issue with `httpcore>=0.17.3`. Thanks @saforem2 🚀",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-07-06 15:52:16+02:00,-7200,2023-07-06 15:52:16+02:00,-7200,True,False,['__init__.py'],['cdc712667fae5c7d883a5da092aa2207bbc76361'],1,1,2,1,,,
+31b6683b80d0a4d8cce5f78fd6bf23e209d6360e,Fix #40: handle large message buffering (#44),François Voron,fvoron@gmail.com,GitHub,noreply@github.com,2023-08-08 11:53:13+02:00,-7200,2023-08-08 11:53:13+02:00,-7200,True,False,"['_api.py', 'test_api.py']",['e44e1fa9cfa9268930e47e4aaca585a9f0182c39'],0,85,85,2,0.08823529411764706,0.5,0.5882352941176471
+760a073c86498a0f8093458c7308540761ad8be1,start_blocking_portal was moved in anyio 4 (#48),Marc-Antoine Parent,maparent@acm.org,GitHub,noreply@github.com,2023-09-07 02:12:28-04:00,14400,2023-09-07 08:12:28+02:00,-7200,True,False,['transport.py'],['31b6683b80d0a4d8cce5f78fd6bf23e209d6360e'],1,1,2,1,,,
+f9f2555603f40053f84adf6890e6cda245294b18,"docs: add maparent as a contributor for bug, and code (#51)
+
+* docs: update README.md [skip ci]
+
+* docs: update .all-contributorsrc [skip ci]
+
+---------
+
+Co-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",allcontributors[bot],46447321+allcontributors[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-09-07 08:13:09+02:00,-7200,2023-09-07 08:13:09+02:00,-7200,True,False,"['.all-contributorsrc', 'README.md']",['760a073c86498a0f8093458c7308540761ad8be1'],0,11,11,2,,,
+3759cf0273d89ce04060af32352348af99dbbf6b,Tweak Ruff configuration,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-09-07 08:35:34+02:00,-7200,2023-09-07 08:35:34+02:00,-7200,True,False,['pyproject.toml'],['f9f2555603f40053f84adf6890e6cda245294b18'],1,2,3,1,,,
+fb3841f1209cadb57266425bdde605f0837ad98a,Fix some wsproto imports,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-09-07 08:35:42+02:00,-7200,2023-09-07 08:35:42+02:00,-7200,True,False,"['_api.py', 'transport.py']",['3759cf0273d89ce04060af32352348af99dbbf6b'],4,4,8,2,,,
+8f5e5b42eddf60bef1d64c08d22f12dae995632b,Fix #34: handle subprotocols corrrectly in `ASGIWebSocketTransport`,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-09-27 08:47:00+02:00,-7200,2023-09-27 08:47:00+02:00,-7200,True,False,"['transport.py', 'test_transport.py']",['fb3841f1209cadb57266425bdde605f0837ad98a'],1,29,30,2,0.7391304347826086,1.0,1.0
+1e1c252c2b678f8cc475e1c1546980a784f19702,"Bump version 0.4.1 → 0.4.2
+
+Bug fixes
+---------
+
+* Fix anyio `start_blocking_portal` import. Thanks @maparent 🎉
+* Fix #40: handle large message buffering
+* Fix #34: handle subprotocols corrrectly in `ASGIWebSocketTransport`",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-09-27 08:50:38+02:00,-7200,2023-09-27 08:50:38+02:00,-7200,True,False,['__init__.py'],['8f5e5b42eddf60bef1d64c08d22f12dae995632b'],1,1,2,1,,,
+08ac1c4dbad39d724951d309f20007c23af35eb4,Move to Ruff for formatting,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-11-16 10:11:08+01:00,-3600,2023-11-16 10:11:08+01:00,-3600,True,False,['pyproject.toml'],['1e1c252c2b678f8cc475e1c1546980a784f19702'],3,2,5,1,,,
+a43a1e256d8f07ad2b986210af21e18818cc2a4f,Fix #56: return proper accept response headers with ASGIWebSocketTransport,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-11-16 10:11:52+01:00,-3600,2023-11-16 10:11:52+01:00,-3600,True,False,"['transport.py', 'test_transport.py']",['08ac1c4dbad39d724951d309f20007c23af35eb4'],21,87,108,2,0.23076923076923078,0.5961538461538461,0.6346153846153846
+08ddaedac192b5cb86ad025fd5018aa2c4ad76e3,Fix #57: bump httpcore dependency,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-12-04 09:38:07+01:00,-3600,2023-12-04 09:38:07+01:00,-3600,True,False,['pyproject.toml'],['a43a1e256d8f07ad2b986210af21e18818cc2a4f'],1,1,2,1,,,
+3aa69591509c965065a8c6f3055607a69db8d7a7,Fix pytest-asyncio warning,François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-12-04 09:39:31+01:00,-3600,2023-12-04 09:39:31+01:00,-3600,True,False,['conftest.py'],['08ddaedac192b5cb86ad025fd5018aa2c4ad76e3'],8,0,8,1,0.0,0.0,0.0
+269b40297bcb121f126534163032a027b4bb97af,"Bump version 0.4.2 → 0.4.3
+
+Bug fixes & improvements
+------------------------
+
+* Fix #57: compatibility with `httpx>=0.25.2`",François Voron,fvoron@gmail.com,François Voron,fvoron@gmail.com,2023-12-04 09:40:55+01:00,-3600,2023-12-04 09:40:55+01:00,-3600,True,False,['__init__.py'],['3aa69591509c965065a8c6f3055607a69db8d7a7'],1,1,2,1,,,

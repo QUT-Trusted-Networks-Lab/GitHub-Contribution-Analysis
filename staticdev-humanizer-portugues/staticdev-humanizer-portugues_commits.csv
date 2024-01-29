@@ -1,0 +1,1554 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+09b7b8354e4552bf24fbbfee4a59fe363cdce129,Initial commit,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-17 11:47:12-03:00,10800,2018-03-17 11:47:12-03:00,10800,True,False,"['.gitignore', 'LICENSE']",[],0,122,122,2,,,
+09698150e3c445705f961d1c3dc30fe16b2c5698,commit inicial,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-17 12:37:47-03:00,10800,2018-03-17 12:37:47-03:00,10800,True,False,"['.gitignore', 'MANIFEST.in', 'README.rst', 'Makefile', 'nature.css_t', 'pygments.css', 'theme.conf', 'conf.py', 'index.rst', '__init__.py', 'compat.py', 'filesize.py', 'i18n.py', 'list.py', 'humanize.mo', 'humanize.po', 'number.py', 'time.py', 'setup.cfg', 'setup.py', '__init__.py', 'base.py', 'filesize.py', 'number.py', 'time.py', 'tox.ini']",['09b7b8354e4552bf24fbbfee4a59fe363cdce129'],1,1910,1911,26,0.3765541740674956,0.7655417406749556,0.9023090586145648
+c3fd84e6f5f83e7b1a1d865b64930d0cd5a42aae,#1 modificacoes no setup e estrutura do pacote,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-17 13:03:18-03:00,10800,2018-03-17 13:03:18-03:00,10800,True,False,"['README.rst', '__init__.py', '__init__.py', 'compat.py', 'filesize.py', 'i18n.py', 'list.py', 'humanize.mo', 'humanize.po', 'number.py', 'time.py', 'version.py', 'setup.py']",['09698150e3c445705f961d1c3dc30fe16b2c5698'],50,83,133,13,1.0,1.0,0.0
+91402e0b4ae9fe423fbf107dc78e3e09bb6a8854,#1 correcao imports testes unitarios,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-17 13:06:14-03:00,10800,2018-03-17 13:06:14-03:00,10800,True,False,"['filesize.py', 'number.py', 'time.py']",['c3fd84e6f5f83e7b1a1d865b64930d0cd5a42aae'],3,3,6,3,,,
+b41c362be96887e12a502054f69a1b6faf5c07a5,#2 remocao de localizacao,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-17 13:29:43-03:00,10800,2018-03-17 13:29:43-03:00,10800,True,False,"['.gitignore', 'MANIFEST.in', '__init__.py', 'i18n.py', 'humanize.mo', 'humanize.po', 'number.py', 'time.py']",['91402e0b4ae9fe423fbf107dc78e3e09bb6a8854'],427,53,480,8,0.4864864864864865,0.0,0.05405405405405406
+acdd61806cf0131fe997989ebeec1e5ee7615f7d,#2 correcao de bug e atualizacao de exemplos,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-18 11:44:04-03:00,10800,2018-03-18 11:44:04-03:00,10800,True,False,"['README.rst', 'time.py']",['b41c362be96887e12a502054f69a1b6faf5c07a5'],22,24,46,2,1.0,1.0,0.0
+fa2ed46906598d31d3fdf12deb564985402bb87a,correcao setup,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-18 12:06:27-03:00,10800,2018-03-18 12:06:27-03:00,10800,True,False,['setup.py'],['acdd61806cf0131fe997989ebeec1e5ee7615f7d'],1,1,2,1,,,
+721b55f5363ce8047dad710bd8421fc10d504485,#1 removendo distutils,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-18 16:39:14-03:00,10800,2018-03-18 16:39:14-03:00,10800,True,False,['setup.py'],['fa2ed46906598d31d3fdf12deb564985402bb87a'],4,1,5,1,,,
+2e5ca9d2847882af223e9920d95edaed397391bd,#1 informacao versao pypi,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-18 16:40:14-03:00,10800,2018-03-18 16:40:14-03:00,10800,True,False,['README.rst'],['721b55f5363ce8047dad710bd8421fc10d504485'],2,11,13,1,,,
+81ca2cc3648acd1d47e583fca38c5727f5844eb2,staticdev,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-18 16:47:32-03:00,10800,2018-03-18 16:47:32-03:00,10800,True,False,['README.rst'],['2e5ca9d2847882af223e9920d95edaed397391bd'],1,3,4,1,,,
+a7df4b8295790961e36e38297b9b979717f9d012,#3 limpeza,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-18 16:49:42-03:00,10800,2018-03-18 16:49:42-03:00,10800,True,False,"['Makefile', 'nature.css_t', 'pygments.css', 'theme.conf', 'conf.py', 'index.rst']",['81ca2cc3648acd1d47e583fca38c5727f5844eb2'],599,0,599,6,,,
+113ed316353efedce4a0c4bbe397d32af3a3487c,Delete tox.ini,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 09:38:19-03:00,10800,2018-03-19 09:38:19-03:00,10800,True,False,['tox.ini'],['a7df4b8295790961e36e38297b9b979717f9d012'],7,0,7,1,,,
+6f0943439f3dc6125c5cd9e199ded07e73b42feb,#3 integracao inicial travis,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 10:50:48-03:00,10800,2018-03-19 10:50:48-03:00,10800,True,False,['.travis.yml'],['113ed316353efedce4a0c4bbe397d32af3a3487c'],0,32,32,1,,,
+62553a9d2db0a44f0afc9f998bccaec1fe34117b,Update .travis.yml,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 12:47:15-03:00,10800,2018-03-19 12:47:15-03:00,10800,True,False,['.travis.yml'],['6f0943439f3dc6125c5cd9e199ded07e73b42feb'],3,0,3,1,,,
+d1c02c0c9a613c079550a28028ffa124bb15fe31,Create install.sh,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 12:51:30-03:00,10800,2018-03-19 12:51:30-03:00,10800,True,False,['install.sh'],['62553a9d2db0a44f0afc9f998bccaec1fe34117b'],0,23,23,1,,,
+bb935b245d231f6702b4513a5b236208a783e499,Create run.sh,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 12:53:46-03:00,10800,2018-03-19 12:53:46-03:00,10800,True,False,['run.sh'],['d1c02c0c9a613c079550a28028ffa124bb15fe31'],0,22,22,1,,,
+04a359154f597d3387523106c964f498bc69a278,Update .travis.yml,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 12:54:57-03:00,10800,2018-03-19 12:54:57-03:00,10800,True,False,['.travis.yml'],['bb935b245d231f6702b4513a5b236208a783e499'],0,4,4,1,,,
+ea4a62ba1f40357ba325a5b93f09303c921f9251,Update .travis.yml,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 13:02:41-03:00,10800,2018-03-19 13:02:41-03:00,10800,True,False,['.travis.yml'],['04a359154f597d3387523106c964f498bc69a278'],0,2,2,1,,,
+f091f576af0873f5193d67518ed3b2ba5d6d54c2,Update .travis.yml,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 13:04:51-03:00,10800,2018-03-19 13:04:51-03:00,10800,True,False,['.travis.yml'],['ea4a62ba1f40357ba325a5b93f09303c921f9251'],1,1,2,1,,,
+01578b5bc038e1e0127febd098968b85daa4d039,Update .travis.yml,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 13:07:27-03:00,10800,2018-03-19 13:07:27-03:00,10800,True,False,['.travis.yml'],['f091f576af0873f5193d67518ed3b2ba5d6d54c2'],0,1,1,1,,,
+bc2f02af327cc30e82e25328b279337d2b77d738,Update time.py,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 13:24:44-03:00,10800,2018-03-19 13:24:44-03:00,10800,True,False,['time.py'],['01578b5bc038e1e0127febd098968b85daa4d039'],3,3,6,1,,,
+f2dcdae96566e765984761e9ac91b98b00d736a8,#3,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 13:26:49-03:00,10800,2018-03-19 13:26:49-03:00,10800,True,False,['time.py'],['bc2f02af327cc30e82e25328b279337d2b77d738'],3,3,6,1,,,
+44c4e0c4057d606ff3c092fef0bde4ac1730e636,#3,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 13:28:30-03:00,10800,2018-03-19 13:28:30-03:00,10800,True,False,['time.py'],['f2dcdae96566e765984761e9ac91b98b00d736a8'],1,1,2,1,,,
+f301f411104a44a8371b79840634c009e81f76e6,#3 correcao de testes unitarios e bugs,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-19 19:01:25-03:00,10800,2018-03-19 19:01:25-03:00,10800,True,False,"['README.rst', 'time.py', 'number.py', 'time.py']",['44c4e0c4057d606ff3c092fef0bde4ac1730e636'],130,126,256,4,0.0,0.0,1.0
+5c235dbf9119bdb95f42f9259ea1e5a6bb89e493,#3 mudanca de versao,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-19 19:08:58-03:00,10800,2018-03-19 19:08:58-03:00,10800,True,False,"['version.py', 'setup.py']",['f301f411104a44a8371b79840634c009e81f76e6'],5,7,12,2,,,
+f0a565424d48fbff81a48b1d8fb71def8132f470,#4 rodando codecov,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 21:08:14-03:00,10800,2018-03-19 21:08:14-03:00,10800,True,False,['.travis.yml'],['5c235dbf9119bdb95f42f9259ea1e5a6bb89e493'],0,2,2,1,,,
+a1a4f046d27853749ae387bacdfc036a37faafbc,#4 instalacao do codecov,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-03-19 21:11:27-03:00,10800,2018-03-19 21:11:27-03:00,10800,True,False,['install.sh'],['f0a565424d48fbff81a48b1d8fb71def8132f470'],0,2,2,1,,,
+72b9c71a7678619714da839c88c658ccaece6e48,#4 teste coverage,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-19 22:02:45-03:00,10800,2018-03-19 22:02:45-03:00,10800,True,False,"['run.sh', 'time.py']",['a1a4f046d27853749ae387bacdfc036a37faafbc'],2,2,4,2,,,
+612445d1af95e5c56d6f55d770d3834a3e77668c,#4 badge de codecov,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-19 22:09:25-03:00,10800,2018-03-19 22:09:25-03:00,10800,True,False,['README.rst'],['72b9c71a7678619714da839c88c658ccaece6e48'],1,4,5,1,,,
+b2156ad3531a7181c85a266dffedb4595c1717df,#4 drop support py2,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-19 22:12:58-03:00,10800,2018-03-19 22:12:58-03:00,10800,True,False,['.travis.yml'],['612445d1af95e5c56d6f55d770d3834a3e77668c'],3,0,3,1,,,
+17c83b0cc7974f224e202cce8f845bbcd4b2f462,#4 teste travis pip3,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-19 22:20:08-03:00,10800,2018-03-19 22:20:08-03:00,10800,True,False,['install.sh'],['b2156ad3531a7181c85a266dffedb4595c1717df'],1,1,2,1,,,
+e572a0697fecba22a871d6fd46898d4199d5e684,#4 drop osx,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-19 22:24:37-03:00,10800,2018-03-19 22:24:37-03:00,10800,True,False,"['.travis.yml', 'install.sh']",['17c83b0cc7974f224e202cce8f845bbcd4b2f462'],34,3,37,2,,,
+031c5be7a11d1c634c531f929b8975f13443b3d3,#4 correcoes de bugs e criacao de testes unitarios,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-20 19:14:37-03:00,10800,2018-03-20 19:14:37-03:00,10800,True,False,"['run.sh', 'README.rst', '__init__.py', 'compat.py', 'filesize.py', 'list.py', 'number.py', 'time.py', 'version.py', '__init__.py', 'filesize.py', 'list.py', 'number.py', 'time.py']",['e572a0697fecba22a871d6fd46898d4199d5e684'],79,84,163,14,0.0,0.36,1.0
+95b6e76d47f5cf4a8c9ac812cd02a2f5c39c60a3,#4 travis/run.sh,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-20 19:17:25-03:00,10800,2018-03-20 19:17:25-03:00,10800,True,False,['run.sh'],['031c5be7a11d1c634c531f929b8975f13443b3d3'],0,12,12,1,,,
+67af076f655844a4ba4bf2fc3be108741d89ce61,#5 trocando list_to_phrase para naturallist,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-20 19:32:06-03:00,10800,2018-03-20 19:32:06-03:00,10800,True,False,"['README.rst', '__init__.py', 'list.py', 'list.py']",['95b6e76d47f5cf4a8c9ac812cd02a2f5c39c60a3'],9,9,18,4,,,
+cadc740d12fe3c096eacdbaf5c3a633bfe49974f,versao final revisada,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-20 19:39:47-03:00,10800,2018-03-20 19:39:47-03:00,10800,True,False,"['README.rst', 'version.py']",['67af076f655844a4ba4bf2fc3be108741d89ce61'],2,2,4,2,,,
+1151e90d862c8aead474bdbd14c98c244c0ece09,melhorias finais,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-03-20 19:56:31-03:00,10800,2018-03-20 19:56:31-03:00,10800,True,False,"['version.py', 'setup.cfg', 'setup.py']",['cadc740d12fe3c096eacdbaf5c3a633bfe49974f'],7,4,11,3,1.0,1.0,0.0
+faa162e8d73c0de0702d319a2457adee078cc378,#6 tdd e doc,Thiago,thiagocavila@gmail.com,Thiago,thiagocavila@gmail.com,2018-07-04 18:30:36-03:00,10800,2018-07-04 18:30:36-03:00,10800,True,False,"['README.rst', 'time.py']",['1151e90d862c8aead474bdbd14c98c244c0ece09'],7,7,14,2,,,
+ff1d9a3440ae4053986dcb5e91610dcfae95979e,#6 tentativa de correção,Thiago,thiagocavila@gmail.com,Thiago,thiagocavila@gmail.com,2018-07-04 18:43:04-03:00,10800,2018-07-04 18:43:04-03:00,10800,True,False,"['.gitignore', 'time.py', 'version.py']",['faa162e8d73c0de0702d319a2457adee078cc378'],2,4,6,3,,,
+c4048cd23729b9cf6b95f2e302fc89b4907a21f4,#7 nova funcao naturalclock testada,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-07-07 04:27:32-03:00,10800,2018-07-07 04:27:32-03:00,10800,True,False,"['.travis.yml', 'README.rst', 'time.py', 'version.py', 'setup.py', 'time.py']",['ff1d9a3440ae4053986dcb5e91610dcfae95979e'],22,176,198,6,0.3114754098360656,0.5573770491803278,0.9672131147540983
+0d60e6e9a3f225a034a18637a322baba5cff412f,#7 retirando testes python3.7 travis ainda nao suporta,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-07-07 04:31:43-03:00,10800,2018-07-07 04:31:43-03:00,10800,True,False,"['.travis.yml', 'setup.py']",['c4048cd23729b9cf6b95f2e302fc89b4907a21f4'],4,4,8,2,,,
+26bad09ccb2add2e73607384b34d3c49b2e50531,#7 correcao documentacao,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-07-07 04:54:45-03:00,10800,2018-07-07 04:54:45-03:00,10800,True,False,['README.rst'],['0d60e6e9a3f225a034a18637a322baba5cff412f'],2,2,4,1,,,
+19481bae77f8ff627175ceb26ea182e5b0d15a5c,Update version.py,Thiago C. D'Ávila,thiagocavila@gmail.com,GitHub,noreply@github.com,2018-07-07 04:56:53-03:00,10800,2018-07-07 04:56:53-03:00,10800,True,False,['version.py'],['26bad09ccb2add2e73607384b34d3c49b2e50531'],1,1,2,1,,,
+5de75fdf0795c01f2f8e081ec10b18c31133700e,#8 correcao hora formal,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2018-07-07 16:29:12-03:00,10800,2018-07-07 16:29:12-03:00,10800,True,False,"['time.py', 'version.py', 'time.py']",['19481bae77f8ff627175ceb26ea182e5b0d15a5c'],9,21,30,3,0.0,0.0,1.0
+be1d0db342c7cbae7719122e994b1a9c9509ddc5,#9 versão alpha,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 11:58:13-02:00,7200,2018-12-29 11:58:13-02:00,7200,True,False,"['.travis.yml', 'README.md', 'README.rst', 'version.py', 'setup.py', 'time.py']",['5de75fdf0795c01f2f8e081ec10b18c31133700e'],153,143,296,6,,,
+ef210c1dda8d75503841c281866f8f1fd3b958b0,#9 parando de usar strftime,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 12:13:20-02:00,7200,2018-12-29 12:13:20-02:00,7200,True,False,"['time.py', 'version.py']",['be1d0db342c7cbae7719122e994b1a9c9509ddc5'],18,17,35,2,,,
+652842d23b2eb308401955f75aacd3a8a037b1dc,#9 correção testes unitários,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 12:17:19-02:00,7200,2018-12-29 12:17:19-02:00,7200,True,False,"['time.py', 'version.py']",['ef210c1dda8d75503841c281866f8f1fd3b958b0'],2,2,4,2,,,
+7481cbf95255085f00b5ccad40522f2cfb543c77,#9 upgrade dist travis,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 12:22:56-02:00,7200,2018-12-29 12:22:56-02:00,7200,True,False,"['.travis.yml', 'version.py']",['652842d23b2eb308401955f75aacd3a8a037b1dc'],4,4,8,2,,,
+4a2e4fe241e7509046f30afb02fdd649c8672971,#10 novos scripts travis,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 12:51:35-02:00,7200,2018-12-29 12:51:35-02:00,7200,True,False,"['.travis.yml', 'run.sh', 'version.py', 'install', 'run-tests']",['7481cbf95255085f00b5ccad40522f2cfb543c77'],30,65,95,5,,,
+964871c301603df95ccac1052c6159cb43a3bf62,#10 novo teste config,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 13:05:42-02:00,7200,2018-12-29 13:05:42-02:00,7200,True,False,"['.travis.yml', '__init__.py', 'version.py', 'install', 'setup.py']",['4a2e4fe241e7509046f30afb02fdd649c8672971'],26,25,51,5,1.0,1.0,1.0
+6ccc8eaae801f9f39b90da8f218726f92e35c560,#10 novo teste,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 13:14:05-02:00,7200,2018-12-29 13:14:05-02:00,7200,True,False,"['.travis.yml', 'install']",['964871c301603df95ccac1052c6159cb43a3bf62'],3,0,3,2,,,
+8b4c9969bc22f23e01c550be329024cc511f2da9,#10 go on,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 13:26:15-02:00,7200,2018-12-29 13:26:15-02:00,7200,True,False,['setup.py'],['6ccc8eaae801f9f39b90da8f218726f92e35c560'],11,5,16,1,,,
+b807ab783e5cec735d73b73fad329dd835ec8d0f,#10 mais um,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 13:29:56-02:00,7200,2018-12-29 13:29:56-02:00,7200,True,False,['install'],['8b4c9969bc22f23e01c550be329024cc511f2da9'],1,1,2,1,,,
+5060b59edd13470d21664ad314e686daa4cd24c0,#10 comentando parte inutil,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 13:31:53-02:00,7200,2018-12-29 13:31:53-02:00,7200,True,False,['install'],['b807ab783e5cec735d73b73fad329dd835ec8d0f'],3,3,6,1,,,
+9d46f674e46c5e5fb244b2424c7949be8c72f582,#10 nunca desistir,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 13:38:26-02:00,7200,2018-12-29 13:38:26-02:00,7200,True,False,['install'],['5060b59edd13470d21664ad314e686daa4cd24c0'],1,6,7,1,,,
+b09fc53919f6d298d348cf79383b87e6b9fc18de,#10 quase la,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 13:40:21-02:00,7200,2018-12-29 13:40:21-02:00,7200,True,False,['install'],['9d46f674e46c5e5fb244b2424c7949be8c72f582'],1,1,2,1,,,
+39c08b1887852b9655291a3d427388eda1d8d20b,#10 agora vai,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 13:44:22-02:00,7200,2018-12-29 13:44:22-02:00,7200,True,False,"['.travis.yml', 'install', 'run-tests', 'run.sh']",['b09fc53919f6d298d348cf79383b87e6b9fc18de'],51,14,65,4,,,
+e5775dda71548fbad818134ec895e124b88bb7db,#10 caminho errado,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 13:46:09-02:00,7200,2018-12-29 13:46:09-02:00,7200,True,False,['.travis.yml'],['39c08b1887852b9655291a3d427388eda1d8d20b'],1,1,2,1,,,
+ede6f8c189d29390ad07789fa0415e40bd61db9a,#10 env: BUILD_SDIST=true,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2018-12-29 13:50:42-02:00,7200,2018-12-29 13:50:42-02:00,7200,True,False,['.travis.yml'],['e5775dda71548fbad818134ec895e124b88bb7db'],0,1,1,1,,,
+fec0fffe5c4dd43cde73cbfc2acf319c2298aef9,Update README.md,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-12-29 14:03:01-02:00,7200,2018-12-29 14:03:01-02:00,7200,True,False,['README.md'],['ede6f8c189d29390ad07789fa0415e40bd61db9a'],1,0,1,1,,,
+c731796e6d2a424c6d2824665f3a369b5666b657,Update README.md,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2018-12-30 23:33:57-02:00,7200,2018-12-30 23:33:57-02:00,7200,True,False,['README.md'],['fec0fffe5c4dd43cde73cbfc2acf319c2298aef9'],1,1,2,1,,,
+9f9671f9d2c0179969cd7bc30c1f34538ea83ff7,#12 corrigido,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2019-01-11 04:54:34-02:00,7200,2019-01-11 04:54:34-02:00,7200,True,False,"['CONTRIBUTING.md', 'MANIFEST.in']",['c731796e6d2a424c6d2824665f3a369b5666b657'],1,12,13,2,,,
+eb46cea785c0794816a1900c6d05f25a4519502c,#11 unit tests,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2019-01-11 04:57:13-02:00,7200,2019-01-11 04:57:13-02:00,7200,True,False,"['__init__.py', 'time.py']",['9f9671f9d2c0179969cd7bc30c1f34538ea83ff7'],1,5,6,2,0.0,1.0,1.0
+de878890a412df292ea71567bdfb2f64e3d2f59b,#12 completando conitributing,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2019-01-11 05:03:52-02:00,7200,2019-01-11 05:03:52-02:00,7200,True,False,['CONTRIBUTING.md'],['eb46cea785c0794816a1900c6d05f25a4519502c'],1,3,4,1,,,
+f50fb057eb7ebb3a10d97302fdf40364a8778d17,#11 corrigido erro,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2019-01-11 05:18:10-02:00,7200,2019-01-11 05:18:10-02:00,7200,True,False,['time.py'],['de878890a412df292ea71567bdfb2f64e3d2f59b'],7,22,29,1,0.0,0.0,1.0
+25d682639d722ce6ad8f030c6f79f7d2f4d549c7,Versão pylinted,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2019-08-22 19:23:01-03:00,10800,2019-08-22 19:23:01-03:00,10800,True,False,"['README.md', 'filesize.py', 'list.py', 'number.py', 'time.py', 'base.py', 'filesize.py', 'list.py', 'number.py', 'time.py']",['f50fb057eb7ebb3a10d97302fdf40364a8778d17'],351,394,745,10,0.38095238095238093,1.0,0.9047619047619048
+9466684df92746a6aadbb885fb0e6da0ae88e8f5,Update versão,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2019-08-22 19:25:46-03:00,10800,2019-08-22 19:25:46-03:00,10800,True,False,['__init__.py'],['25d682639d722ce6ad8f030c6f79f7d2f4d549c7'],3,4,7,1,,,
+454533e232f1764468bc03bdd95d679d41453866,Setup corrections,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2019-08-26 22:22:09-03:00,10800,2019-08-26 22:22:09-03:00,10800,True,False,['setup.py'],['9466684df92746a6aadbb885fb0e6da0ae88e8f5'],12,12,24,1,1.0,1.0,1.0
+4488ede72dea9a2ab37e46b57aee4acd0b588f01,#13 Base pyproject and version bump,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2020-03-01 21:48:29-03:00,10800,2020-03-01 21:48:29-03:00,10800,True,False,"['__init__.py', 'poetry.lock', 'pyproject.toml', 'setup.py']",['454533e232f1764468bc03bdd95d679d41453866'],3,168,171,4,,,
+fd8e4f3216cd76831a26e5dacd1c82caddc5625f,Updates docs,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2020-03-01 21:48:36-03:00,10800,2020-03-01 21:48:36-03:00,10800,True,False,['CONTRIBUTING.md'],['4488ede72dea9a2ab37e46b57aee4acd0b588f01'],4,6,10,1,,,
+6c04bfbd59c7222d1a506a59f05ee3deb511b167,pre-commit,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2020-03-04 21:46:44-03:00,10800,2020-03-04 21:46:44-03:00,10800,True,False,"['.pre-commit-config.yaml', 'pyproject.toml']",['fd8e4f3216cd76831a26e5dacd1c82caddc5625f'],2,21,23,2,,,
+1fd3a02bd978dcf13b49b36cc825c667da1178ae,Update readme,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2020-03-05 21:57:45-03:00,10800,2020-03-05 21:57:45-03:00,10800,True,False,['README.md'],['6c04bfbd59c7222d1a506a59f05ee3deb511b167'],1,2,3,1,,,
+7bbb1be9e1054fe677e762e28c6e01a9d514d830,Flake8 and black updates,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2020-03-05 22:19:52-03:00,10800,2020-03-05 22:19:52-03:00,10800,True,False,"['.flake8', '.pre-commit-config.yaml', '__init__.py', 'poetry.lock', 'pyproject.toml', 'run.sh', 'setup.py', '__init__.py', 'filesize.py', 'list.py', 'number.py', 'time.py', 'filesize.py', 'list.py', 'number.py', 'time.py']",['1fd3a02bd978dcf13b49b36cc825c667da1178ae'],307,1050,1357,16,0.0,1.0,1.0
+21d460269b0a6d5742916a57a0721d47d9f40ada,Fixed test suite and added nox,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2020-04-04 10:11:47-03:00,10800,2020-04-04 10:11:47-03:00,10800,True,False,"['.gitignore', 'MANIFEST.in', 'noxfile.py', 'poetry.lock', 'pyproject.toml', 'setup.py', '__init__.py', 'test_filesize.py', 'test_list.py', 'test_number.py', 'test_time.py']",['7bbb1be9e1054fe677e762e28c6e01a9d514d830'],124,281,405,11,1.0,1.0,0.6857142857142857
+d673b5b40888f44eeb1298935a51c330de354fba,Travis nox configurations,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2020-04-04 10:17:40-03:00,10800,2020-04-04 10:17:40-03:00,10800,True,False,"['.travis.yml', 'run.sh']",['21d460269b0a6d5742916a57a0721d47d9f40ada'],26,5,31,2,,,
+97c3f539f82c467c4e02b062af12268dcc106fa9,Complexity and function name refactors,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2020-04-04 14:26:27-03:00,10800,2020-04-04 14:26:27-03:00,10800,True,False,"['.gitignore', 'README.md', 'noxfile.py', '__init__.py', 'filesize.py', 'list.py', 'number.py', 'time.py', 'test_filesize.py', 'test_list.py', 'test_number.py', 'test_time.py']",['d673b5b40888f44eeb1298935a51c330de354fba'],156,193,349,12,1.0,1.0,0.0
+67265726fa53fab4c7c758554dcd7a3e7bdee584,Poetry version control,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2020-04-04 14:30:32-03:00,10800,2020-04-04 14:30:32-03:00,10800,True,False,"['poetry.lock', 'pyproject.toml', '__init__.py']",['97c3f539f82c467c4e02b062af12268dcc106fa9'],19,15,34,3,,,
+250c5e2e322888bc7756f726a7df1c2480604916,Updated package description,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2020-04-04 14:33:38-03:00,10800,2020-04-04 14:33:38-03:00,10800,True,False,['pyproject.toml'],['67265726fa53fab4c7c758554dcd7a3e7bdee584'],1,1,2,1,,,
+634969f4194f930c9bc6ed336d5fedf88bedc98d,Update .travis.yml,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2020-04-04 14:40:48-03:00,10800,2020-04-04 14:40:48-03:00,10800,True,False,['.travis.yml'],['250c5e2e322888bc7756f726a7df1c2480604916'],9,3,12,1,,,
+440c366be78cd53e86d27f0768940c330ae7ba02,Fixed imports and __all__ in init,Thiago D'Ávila,thiagocavila@gmail.com,Thiago D'Ávila,thiagocavila@gmail.com,2020-04-04 15:03:05-03:00,10800,2020-04-04 15:03:05-03:00,10800,True,False,"['humanizer_portugues', '__init__.py']",['67265726fa53fab4c7c758554dcd7a3e7bdee584'],0,26,26,2,,,
+61697b66a5f4f694c95aa0178e4888e00645cfc2,Added mypy,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-06 06:19:57-03:00,10800,2020-04-06 06:19:57-03:00,10800,True,False,"['mypy.ini', 'noxfile.py', 'poetry.lock', 'pyproject.toml']",['cc4a61d12699c5d377fd0b2c4ee4e64bfe199a62'],3,73,76,4,1.0,1.0,1.0
+4d0775c5589ef09a409eeecba52ef7759b768b3c,Fix noxfile,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-06 07:08:55-03:00,10800,2020-04-06 07:08:55-03:00,10800,True,False,"['humanizer_portugues', 'noxfile.py']",['61697b66a5f4f694c95aa0178e4888e00645cfc2'],5,23,28,2,0.0,1.0,0.25
+eb632c94c9670cb8c5381050044b0ad48b6416c0,Fix mypy.ini,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-07 21:08:57-03:00,10800,2020-04-07 21:08:57-03:00,10800,True,False,['mypy.ini'],['4d0775c5589ef09a409eeecba52ef7759b768b3c'],1,1,2,1,,,
+ec1f18d9fb92c66f313cb9a172605453a4963bf8,Fix mypy.ini 2,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-08 18:09:29-03:00,10800,2020-04-08 18:09:29-03:00,10800,True,False,['mypy.ini'],['eb632c94c9670cb8c5381050044b0ad48b6416c0'],1,1,2,1,,,
+d40926d088c644928bf029690cf8314436b5d9a3,#15 GitHub Actions basic tests workflow,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-11 16:20:05-03:00,10800,2020-04-11 16:20:05-03:00,10800,True,False,"['tests.yml', 'README.md']",['ec1f18d9fb92c66f313cb9a172605453a4963bf8'],0,19,19,2,,,
+844fe928d4027e127bfb637c5ba1f53c5340de73,#15 Added Coverage workflow,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-12 06:53:47-03:00,10800,2020-04-12 06:53:47-03:00,10800,True,False,"['coverage.yml', 'noxfile.py']",['d40926d088c644928bf029690cf8314436b5d9a3'],0,24,24,2,1.0,1.0,1.0
+f035e22d59a3c4256ea51db0008849018c50b21a,#15 Coverage configuration,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-12 07:00:06-03:00,10800,2020-04-12 07:00:06-03:00,10800,True,False,['pyproject.toml'],['844fe928d4027e127bfb637c5ba1f53c5340de73'],1,9,10,1,,,
+ab440c4fed51a39d7f7184230ad984bd14ce4400,#15 100% tests passing,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-12 07:22:23-03:00,10800,2020-04-12 07:22:23-03:00,10800,True,False,"['noxfile.py', 'poetry.lock', 'pyproject.toml', 'time.py']",['f035e22d59a3c4256ea51db0008849018c50b21a'],7,133,140,4,1.0,1.0,
+5402244f4d6a0b35784fdc336ceb8d9078103df8,#15 removing Travis-CI,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-12 07:22:36-03:00,10800,2020-04-12 07:22:36-03:00,10800,True,False,"['.travis.yml', 'README.md']",['ab440c4fed51a39d7f7184230ad984bd14ce4400'],14,0,14,2,,,
+83f6b13e7cb73815ff86361bad6cf8083fccab47,#15 release workflow,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-12 22:17:54-03:00,10800,2020-04-12 22:17:54-03:00,10800,True,False,['release.yml'],['5402244f4d6a0b35784fdc336ceb8d9078103df8'],0,18,18,1,,,
+68af46f04c31b0850aa9f7e21911463b4f9aec6e,#16 added typeguard and updated dependencies,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-21 16:05:28-03:00,10800,2020-04-21 16:05:28-03:00,10800,True,False,"['noxfile.py', 'poetry.lock', 'pyproject.toml']",['83f6b13e7cb73815ff86361bad6cf8083fccab47'],84,111,195,3,1.0,1.0,1.0
+df95ff129a71b8848abca64dca08c0b9f94d4eeb,#17 add release drafter,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-04-23 21:52:25-03:00,10800,2020-04-23 21:52:25-03:00,10800,True,False,"['release-drafter.yml', 'release-drafter.yml']",['68af46f04c31b0850aa9f7e21911463b4f9aec6e'],0,39,39,2,,,
+7ca48ee8bb35aaac45220062463ed0bfe4551409,Labels and templates,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-02 20:15:29-03:00,10800,2020-05-02 20:15:29-03:00,10800,True,False,['release-drafter.yml'],['df95ff129a71b8848abca64dca08c0b9f94d4eeb'],23,25,48,1,,,
+77afeb3e278d61bd046bcedc2c7e2c960a69fca5,Improved pre-commit,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-02 20:25:48-03:00,10800,2020-05-02 20:25:48-03:00,10800,True,False,['.pre-commit-config.yaml'],['7ca48ee8bb35aaac45220062463ed0bfe4551409'],13,30,43,1,,,
+f0979b8c8a32a9682270c766c0eea8f9a8d14a0d,Added pre-commit badge,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-02 20:28:31-03:00,10800,2020-05-02 20:28:31-03:00,10800,True,False,['README.md'],['77afeb3e278d61bd046bcedc2c7e2c960a69fca5'],0,1,1,1,,,
+96f3c27d81811e8f56e2ed0bcc8368b70b5aa585,Added constrains,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-02 20:39:42-03:00,10800,2020-05-02 20:39:42-03:00,10800,True,False,"['constraints.txt', 'coverage.yml', 'release.yml', 'tests.yml']",['aa8f2b02b95b76a18cbe5d9788173231950ce88a'],31,39,70,4,,,
+1522669a1da1429c0aa909a5551b696dc57ab68a,Updated tests,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-02 21:01:00-03:00,10800,2020-05-02 21:01:00-03:00,10800,True,False,['tests.yml'],['96f3c27d81811e8f56e2ed0bcc8368b70b5aa585'],6,25,31,1,,,
+4a37edc18a16a51ae4e9b5baa6c17ddcd4d8efc8,Removed windows,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-02 21:04:12-03:00,10800,2020-05-02 21:04:12-03:00,10800,True,False,['tests.yml'],['1522669a1da1429c0aa909a5551b696dc57ab68a'],26,7,33,1,,,
+8acba1bc93bf52c118914cfbe40def9c9fd0a701,Bump version,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-02 22:00:18-03:00,10800,2020-05-02 22:00:18-03:00,10800,True,False,['pyproject.toml'],['5b93e2522f3472e62594755641b94d998902e42e'],1,1,2,1,,,
+e42a7ac4f1ca21d6e9bfea4797aacc099b322923,Dependabot configs,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-03 11:07:20-03:00,10800,2020-05-03 11:07:20-03:00,10800,True,False,"['config.yml', 'dependabot.yml']",['8acba1bc93bf52c118914cfbe40def9c9fd0a701'],0,35,35,2,,,
+20783094f63845bd012a019c99fb3f1e2daace90,Dependabot configs 2,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-03 11:26:12-03:00,10800,2020-05-03 11:26:12-03:00,10800,True,False,"['config.yml', 'constraints.txt']",['e42a7ac4f1ca21d6e9bfea4797aacc099b322923'],2,2,4,2,,,
+d1478c08f584d4be8d590f288663fd1066f0323a,Upgrades nox downgrades pip,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-03 11:36:23-03:00,10800,2020-05-03 11:36:23-03:00,10800,True,False,['constraints.txt'],['20783094f63845bd012a019c99fb3f1e2daace90'],2,2,4,1,,,
+a82aa453f53d328743e88bd2bbdaf1c296593198,Upgrades pip,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-03 11:42:35-03:00,10800,2020-05-03 11:42:35-03:00,10800,True,False,['constraints.txt'],['d1478c08f584d4be8d590f288663fd1066f0323a'],1,1,2,1,,,
+9fca20bf6bc31533e5ca7eedc788238838c7f76a,"Bump click from 7.1.1 to 7.1.2
+
+Bumps [click](https://github.com/pallets/click) from 7.1.1 to 7.1.2.
+- [Release notes](https://github.com/pallets/click/releases)
+- [Changelog](https://github.com/pallets/click/blob/master/CHANGES.rst)
+- [Commits](https://github.com/pallets/click/compare/7.1.1...7.1.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-03 14:51:17+00:00,0,2020-05-03 14:51:17+00:00,0,True,False,['poetry.lock'],['4af398d2b492ad7354a018ccd659a69f8ba8d353'],4,4,8,1,,,
+b61729fb68247735c0407b6a935c866e9a27b270,"Bump atomicwrites from 1.3.0 to 1.4.0
+
+Bumps [atomicwrites](https://github.com/untitaker/python-atomicwrites) from 1.3.0 to 1.4.0.
+- [Release notes](https://github.com/untitaker/python-atomicwrites/releases)
+- [Commits](https://github.com/untitaker/python-atomicwrites/compare/1.3.0...1.4.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-03 14:51:54+00:00,0,2020-05-03 14:51:54+00:00,0,True,False,['poetry.lock'],['4af398d2b492ad7354a018ccd659a69f8ba8d353'],5,4,9,1,,,
+6a6567d85adf4a41bfe600fe74b6f6f70febdb1f,Fix workflow,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-03 11:59:24-03:00,10800,2020-05-03 11:59:24-03:00,10800,True,False,['dependabot.yml'],['a82aa453f53d328743e88bd2bbdaf1c296593198'],0,1,1,1,,,
+a4010a5b04b656db8e9766d9fbc42cd4909cb996,Fix 2 dependabot workflow,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-03 12:21:38-03:00,10800,2020-05-03 12:21:38-03:00,10800,True,False,['dependabot.yml'],['6a6567d85adf4a41bfe600fe74b6f6f70febdb1f'],1,1,2,1,,,
+64779effc4dccaefd46bc9940ecf0269f0c41e05,"Bump virtualenv from 20.0.18 to 20.0.19
+
+Bumps [virtualenv](https://github.com/pypa/virtualenv) from 20.0.18 to 20.0.19.
+- [Release notes](https://github.com/pypa/virtualenv/releases)
+- [Changelog](https://github.com/pypa/virtualenv/blob/master/docs/changelog.rst)
+- [Commits](https://github.com/pypa/virtualenv/compare/20.0.18...20.0.19)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-03 15:36:37+00:00,0,2020-05-03 15:36:37+00:00,0,True,False,['poetry.lock'],['54685523cf18312dc859d0f64e60cd37c64d9200'],6,6,12,1,,,
+c69056f3b6f3715ea29ea705988502fd751a9fdb,"Bump safety from 1.8.7 to 1.9.0
+
+Bumps [safety](https://github.com/pyupio/safety) from 1.8.7 to 1.9.0.
+- [Release notes](https://github.com/pyupio/safety/releases)
+- [Changelog](https://github.com/pyupio/safety/blob/master/HISTORY.rst)
+- [Commits](https://github.com/pyupio/safety/compare/1.8.7...1.9.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-03 15:57:54+00:00,0,2020-05-03 15:57:54+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['474aa3e760333fd3439f5d31c2522a23271f7196'],94,13,107,2,,,
+7cee78db24f61ef1a34902263c4094199e07d446,Bump version,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-03 13:20:18-03:00,10800,2020-05-03 13:20:18-03:00,10800,True,False,['pyproject.toml'],['fd975ad956bb0a0a179cb50ad6753a9ac0fb587b'],1,1,2,1,,,
+84df78ad4d0d18c12d730cd1c00d083202cf2b8b,Fix dependabot workflow 3,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-04 21:01:43-03:00,10800,2020-05-04 21:01:43-03:00,10800,True,False,"['config.yml', 'release-drafter.yml']",['a4010a5b04b656db8e9766d9fbc42cd4909cb996'],1,7,8,2,,,
+6fd9017d336ee02bbc5833b7d741954e748ad17f,Fix dependabot workflow 4,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-04 21:08:05-03:00,10800,2020-05-04 21:08:05-03:00,10800,True,False,['config.yml'],['84df78ad4d0d18c12d730cd1c00d083202cf2b8b'],1,1,2,1,,,
+3a9ddc6c4935991b063ea9eb01a61a7d3119f77b,"Bump gitdb from 4.0.4 to 4.0.5
+
+Bumps [gitdb](https://github.com/gitpython-developers/gitdb) from 4.0.4 to 4.0.5.
+- [Release notes](https://github.com/gitpython-developers/gitdb/releases)
+- [Commits](https://github.com/gitpython-developers/gitdb/compare/4.0.4...4.0.5)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-05 09:15:40+00:00,0,2020-05-05 09:15:40+00:00,0,True,False,['poetry.lock'],['0942d3ce5840ae45067669d4152b481b73c195c6'],3,3,6,1,,,
+11899cae22e8b7c48df454dc46bd16396084cfd5,"Bump gitpython from 3.1.1 to 3.1.2
+
+Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.1 to 3.1.2.
+- [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- [Changelog](https://github.com/gitpython-developers/GitPython/blob/master/CHANGES)
+- [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.1...3.1.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-05 09:17:05+00:00,0,2020-05-05 09:17:05+00:00,0,True,False,['poetry.lock'],['0942d3ce5840ae45067669d4152b481b73c195c6'],3,3,6,1,,,
+28c0990208fbbf1808128e1c96e744dc0b73462d,Original script dependabot workflow,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-05 08:17:23-03:00,10800,2020-05-05 08:17:23-03:00,10800,True,False,['dependabot.yml'],['6fd9017d336ee02bbc5833b7d741954e748ad17f'],3,4,7,1,,,
+33ac6b1806e8e2ab596366a577d31feb91d5ebc3,"Bump smmap from 3.0.2 to 3.0.4
+
+Bumps [smmap](https://github.com/gitpython-developers/smmap) from 3.0.2 to 3.0.4.
+- [Release notes](https://github.com/gitpython-developers/smmap/releases)
+- [Commits](https://github.com/gitpython-developers/smmap/compare/v3.0.2...v3.0.4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-05 12:15:43+00:00,0,2020-05-05 12:15:43+00:00,0,True,False,['poetry.lock'],['95859295f166726e06b9799e9813546f03157457'],3,3,6,1,,,
+ab6969c7c17cab859653572ac5cb4ede5833eba5,"Update dependabot.yml
+
+Added dependabot-preview user",Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2020-05-06 12:53:32-03:00,10800,2020-05-06 12:53:32-03:00,10800,True,False,['dependabot.yml'],['8180b9856646c5187f95e8734184bdad2dfc3c79'],1,1,2,1,,,
+1746a137a8eb6d55b3a1199627a57fe2950f0b63,"Bump regex from 2020.4.4 to 2020.5.7
+
+Bumps [regex](https://bitbucket.org/mrabarnett/mrab-regex) from 2020.4.4 to 2020.5.7.
+- [Commits](https://bitbucket.org/mrabarnett/mrab-regex/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-08 09:15:55+00:00,0,2020-05-08 09:15:55+00:00,0,True,False,['poetry.lock'],['ab6969c7c17cab859653572ac5cb4ede5833eba5'],22,22,44,1,,,
+4179dd86a9ae01189f0ee83a0a08a66d2b159afa,"Update dependabot.yml
+
+New version of github-script 0.9.0",Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2020-05-09 13:43:40-03:00,10800,2020-05-09 13:43:40-03:00,10800,True,False,['dependabot.yml'],['bc4e1048680dea730ffe8e0e571b4d8a77fb4daf'],5,4,9,1,,,
+ed71ace9e2829336081b91de5ae138d18b53989d,"Bump pytest from 5.4.1 to 5.4.2
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 5.4.1 to 5.4.2.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/5.4.1...5.4.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-11 10:24:34+00:00,0,2020-05-11 10:24:34+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['4179dd86a9ae01189f0ee83a0a08a66d2b159afa'],5,5,10,2,,,
+515e69e4d201cdabe723732e0190c019bbc9155a,"Bump appdirs from 1.4.3 to 1.4.4
+
+Bumps [appdirs](https://github.com/ActiveState/appdirs) from 1.4.3 to 1.4.4.
+- [Release notes](https://github.com/ActiveState/appdirs/releases)
+- [Changelog](https://github.com/ActiveState/appdirs/blob/master/CHANGES.rst)
+- [Commits](https://github.com/ActiveState/appdirs/compare/1.4.3...1.4.4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-11 10:25:02+00:00,0,2020-05-11 10:25:02+00:00,0,True,False,['poetry.lock'],['4179dd86a9ae01189f0ee83a0a08a66d2b159afa'],3,3,6,1,,,
+fb2462adc909529e76ec4710c68f074cf02537d6,Darglint config,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-11 21:14:39-03:00,10800,2020-05-11 21:14:39-03:00,10800,True,False,['.darglint'],['7cee78db24f61ef1a34902263c4094199e07d446'],0,2,2,1,,,
+13410396d258d75a412d11141f325c3e12d464cf,"Bump flake8 from 3.7.9 to 3.8.1
+
+Bumps [flake8](https://gitlab.com/pycqa/flake8) from 3.7.9 to 3.8.1.
+- [Release notes](https://gitlab.com/pycqa/flake8/tags)
+- [Commits](https://gitlab.com/pycqa/flake8/compare/3.7.9...3.8.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-12 09:17:48+00:00,0,2020-05-12 09:17:48+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['c5ad39572c433615bd86baf5d0221a60851d357b'],28,19,47,2,,,
+15981dafbf83950d15535ac66891f9d90980310f,Pre-commit,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-12 08:25:37-03:00,10800,2020-05-12 08:25:37-03:00,10800,True,False,"['.pre-commit-config.yaml', 'poetry.lock', 'pyproject.toml']",['fb2462adc909529e76ec4710c68f074cf02537d6'],18,131,149,3,,,
+adaf25ef139a42563d1080ddd63fd53557f2344a,Typing and docstrings,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-12 15:32:53-03:00,10800,2020-05-12 15:32:53-03:00,10800,True,False,"['noxfile.py', 'filesize.py', 'list.py', 'number.py', 'time.py', '__init__.py', 'base.py', 'test_filesize.py', 'test_list.py', 'test_number.py', 'test_time.py']",['15981dafbf83950d15535ac66891f9d90980310f'],140,315,455,11,0.0,0.5405405405405406,0.7522522522522522
+f7d30ff8456861c3f7452c1fd9178a96a4f48e30,Poetry lock,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-12 15:37:20-03:00,10800,2020-05-12 15:37:20-03:00,10800,True,False,['poetry.lock'],['adaf25ef139a42563d1080ddd63fd53557f2344a'],63,54,117,1,,,
+796b4adb96992bf6f566979db45e6db66d2c50bb,flake8-import-order,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-12 15:55:57-03:00,10800,2020-05-12 15:55:57-03:00,10800,True,False,"['.flake8', 'noxfile.py', 'poetry.lock', 'pyproject.toml']",['870f1a24c4422cbaeb3e069dcd390b40c59c7acc'],27,3,30,4,0.0,0.0,0.0
+5eb9512184b0dd4560cb941c84f65eb882d929cf,New nox config,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-12 16:21:10-03:00,10800,2020-05-12 16:21:10-03:00,10800,True,False,['noxfile.py'],['86ef0535a207f75c1d536b30f8002ea74efb9b27'],67,112,179,1,0.4642857142857143,1.0,1.0
+e90fdc798be409083b795ace1feedbb79078e33d,Typeguard fixes,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-12 21:49:43-03:00,10800,2020-05-12 21:49:43-03:00,10800,True,False,"['number.py', 'time.py']",['5eb9512184b0dd4560cb941c84f65eb882d929cf'],42,31,73,2,1.0,0.6,0.2
+1a9748564e448d21dffdce58b15142eca7df4536,Bump version,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-13 07:28:26-03:00,10800,2020-05-13 07:28:26-03:00,10800,True,False,['pyproject.toml'],['30d5fcda984154d88d3533c28c553ae4e894f51a'],1,1,2,1,,,
+6433b36a2db9de658eaca6652a4428795933962f,"Bump toml from 0.10.0 to 0.10.1
+
+Bumps [toml](https://github.com/uiri/toml) from 0.10.0 to 0.10.1.
+- [Release notes](https://github.com/uiri/toml/releases)
+- [Changelog](https://github.com/uiri/toml/blob/master/RELEASE.rst)
+- [Commits](https://github.com/uiri/toml/compare/0.10.0...0.10.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-14 09:18:56+00:00,0,2020-05-14 09:18:56+00:00,0,True,False,['poetry.lock'],['1a9748564e448d21dffdce58b15142eca7df4536'],5,4,9,1,,,
+b75485cf69eff7785144539b4c787c081c008e2e,"Bump regex from 2020.5.7 to 2020.5.13
+
+Bumps [regex](https://bitbucket.org/mrabarnett/mrab-regex) from 2020.5.7 to 2020.5.13.
+- [Commits](https://bitbucket.org/mrabarnett/mrab-regex/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-14 09:19:22+00:00,0,2020-05-14 09:19:22+00:00,0,True,False,['poetry.lock'],['1a9748564e448d21dffdce58b15142eca7df4536'],23,23,46,1,,,
+37fb625be65d28755d2f3228d7ce47df772db195,"Bump regex from 2020.5.13 to 2020.5.14
+
+Bumps [regex](https://bitbucket.org/mrabarnett/mrab-regex) from 2020.5.13 to 2020.5.14.
+- [Commits](https://bitbucket.org/mrabarnett/mrab-regex/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-15 09:31:50+00:00,0,2020-05-15 09:31:50+00:00,0,True,False,['poetry.lock'],['5cdc68e02d0683e61c5b03254d523285abf5babf'],22,22,44,1,,,
+2c27fc980279590d5172f68e6d8c2e6d95bba4f9,Pull trigger,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-15 19:27:41-03:00,10800,2020-05-15 19:27:41-03:00,10800,True,False,"['coverage.yml', 'tests.yml']",['b6995ad848ac98b7b4ee15563b7046f66ba5037f'],2,2,4,2,,,
+e26d6fe5d99d8947c2bd95e5dd8a4b1ebac9f5b1,Gitattr,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-17 18:14:09-03:00,10800,2020-05-17 18:14:09-03:00,10800,True,False,['.gitattributes'],['2c27fc980279590d5172f68e6d8c2e6d95bba4f9'],0,1,1,1,,,
+a0b416e839a33c176556fab523e06ede55ecda80,"Bump more-itertools from 8.2.0 to 8.3.0
+
+Bumps [more-itertools](https://github.com/more-itertools/more-itertools) from 8.2.0 to 8.3.0.
+- [Release notes](https://github.com/more-itertools/more-itertools/releases)
+- [Commits](https://github.com/more-itertools/more-itertools/compare/v8.2.0...v8.3.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-18 10:15:57+00:00,0,2020-05-18 10:15:57+00:00,0,True,False,['poetry.lock'],['731add8751546565dcc75a6080cf75db2f0a3fe8'],3,3,6,1,,,
+7fea23810969249bc1c2db0bdfaf6b00a7e475cb,"Bump codecov from 2.0.22 to 2.1.0
+
+Bumps [codecov](https://github.com/codecov/codecov-python) from 2.0.22 to 2.1.0.
+- [Release notes](https://github.com/codecov/codecov-python/releases)
+- [Changelog](https://github.com/codecov/codecov-python/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-python/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-19 09:22:44+00:00,0,2020-05-19 09:22:44+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['d458a4014f3f19618781f60d773b90a947a8f0d2'],5,4,9,2,,,
+29fc8b2a2e531e72fbf2908e1969077f1be7afbf,"Bump packaging from 20.3 to 20.4
+
+Bumps [packaging](https://github.com/pypa/packaging) from 20.3 to 20.4.
+- [Release notes](https://github.com/pypa/packaging/releases)
+- [Changelog](https://github.com/pypa/packaging/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pypa/packaging/compare/20.3...20.4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-19 09:24:04+00:00,0,2020-05-19 09:24:04+00:00,0,True,False,['poetry.lock'],['d458a4014f3f19618781f60d773b90a947a8f0d2'],3,3,6,1,,,
+3cee4e10e4e9b67eea1e94d4dbbc9dcdacffaef8,Refactor actions,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-19 20:57:09-03:00,10800,2020-05-19 20:57:09-03:00,10800,True,False,"['constraints.txt', 'coverage.yml', 'release-drafter.yml', 'release.yml', 'tests.yml']",['e26d6fe5d99d8947c2bd95e5dd8a4b1ebac9f5b1'],22,89,111,5,,,
+7b43b0a2d639884bdcca422f476eb9737c6a7133,Comment windows,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-19 21:18:28-03:00,10800,2020-05-19 21:18:28-03:00,10800,True,False,"['tests.yml', '.pre-commit-config.yaml']",['3cee4e10e4e9b67eea1e94d4dbbc9dcdacffaef8'],2,2,4,2,,,
+ed6400ffc2305ad3d89eb6f42a846ab1e4140086,"Bump flake8-black from 0.1.1 to 0.1.2
+
+Bumps [flake8-black](https://github.com/peterjc/flake8-black) from 0.1.1 to 0.1.2.
+- [Release notes](https://github.com/peterjc/flake8-black/releases)
+- [Commits](https://github.com/peterjc/flake8-black/compare/v0.1.1...v0.1.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-20 00:26:56+00:00,0,2020-05-20 00:26:56+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['06c4e77e18556de76b626dcea5a7dad694d20afc'],4,4,8,2,,,
+63fd2795759a6d846ec94f01ff28d6e736587111,"Bump virtualenv from 20.0.20 to 20.0.21
+
+Bumps [virtualenv](https://github.com/pypa/virtualenv) from 20.0.20 to 20.0.21.
+- [Release notes](https://github.com/pypa/virtualenv/releases)
+- [Changelog](https://github.com/pypa/virtualenv/blob/20.0.21/docs/changelog.rst)
+- [Commits](https://github.com/pypa/virtualenv/compare/20.0.20...20.0.21)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-20 09:35:15+00:00,0,2020-05-20 09:35:15+00:00,0,True,False,['poetry.lock'],['3d0509066f7912e822b719118925d32d38b8cb07'],3,3,6,1,,,
+f703f9f12df852dae70df8f90b9a7f626f57b7f0,"Bump flake8-black from 0.1.2 to 0.2.0
+
+Bumps [flake8-black](https://github.com/peterjc/flake8-black) from 0.1.2 to 0.2.0.
+- [Release notes](https://github.com/peterjc/flake8-black/releases)
+- [Commits](https://github.com/peterjc/flake8-black/compare/v0.1.2...v0.2.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-21 09:18:41+00:00,0,2020-05-21 09:18:41+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['14475f92e975568ddcd6895d7165b0b187165220'],5,5,10,2,,,
+d9ba0d56b29edda11ba2b721e3f6de32aa584665,"Bump codecov from 2.1.0 to 2.1.1
+
+Bumps [codecov](https://github.com/codecov/codecov-python) from 2.1.0 to 2.1.1.
+- [Release notes](https://github.com/codecov/codecov-python/releases)
+- [Changelog](https://github.com/codecov/codecov-python/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-python/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-21 09:21:44+00:00,0,2020-05-21 09:21:44+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['d73711ffee17bbbbaeb29e162571d2d38110f865'],4,4,8,2,,,
+fb413fbcfb44383db343ef8601fdbdd1144e0d52,Remove pytest-cov,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-21 18:19:38-03:00,10800,2020-05-21 18:19:38-03:00,10800,True,False,['noxfile.py'],['7b43b0a2d639884bdcca422f476eb9737c6a7133'],3,13,16,1,1.0,1.0,1.0
+7fe661a4a9611289541dc140dc57c7113ebc1c6b,Remove pytest-cov 2,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-21 18:20:07-03:00,10800,2020-05-21 18:20:07-03:00,10800,True,False,"['poetry.lock', 'pyproject.toml']",['fb413fbcfb44383db343ef8601fdbdd1144e0d52'],22,2,24,2,,,
+381adecaf987ea7cb6ebb07919f7583ec0158804,Merge coverage report to tests.yml,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-21 18:49:51-03:00,10800,2020-05-21 18:49:51-03:00,10800,True,False,"['coverage.yml', 'tests.yml']",['7fe661a4a9611289541dc140dc57c7113ebc1c6b'],36,9,45,2,,,
+88022dd54404a1172c80b72ee0e187d6ed36bd4e,Updated dependencies,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-21 19:12:03-03:00,10800,2020-05-21 19:12:03-03:00,10800,True,False,['poetry.lock'],['381adecaf987ea7cb6ebb07919f7583ec0158804'],17,17,34,1,,,
+35b86cc52ab5759cf04d9fb188ed1aa48b2d92fb,Bump version,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-21 19:44:54-03:00,10800,2020-05-21 19:44:54-03:00,10800,True,False,['pyproject.toml'],['d312cb917c1e1c143aefb48fdf1b66a0b031bd15'],1,1,2,1,,,
+f51021dfc45bced2cddaf2126565ca62e5fb93fa,Fix toml,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-21 19:49:55-03:00,10800,2020-05-21 19:49:55-03:00,10800,True,False,['poetry.lock'],['35b86cc52ab5759cf04d9fb188ed1aa48b2d92fb'],1,1,2,1,,,
+241132b7d2e9b66fc66ed52f9f5328b4d84fcb85,"Bump flake8-black from 0.1.2 to 0.2.0
+
+Bumps [flake8-black](https://github.com/peterjc/flake8-black) from 0.1.2 to 0.2.0.
+- [Release notes](https://github.com/peterjc/flake8-black/releases)
+- [Commits](https://github.com/peterjc/flake8-black/compare/v0.1.2...v0.2.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-22 09:19:05+00:00,0,2020-05-22 09:19:05+00:00,0,True,False,['poetry.lock'],['f51021dfc45bced2cddaf2126565ca62e5fb93fa'],5,5,10,1,,,
+771f31aa17081ab04c88413a0a66d0d2d03ed2d8,"Bump identify from 1.4.15 to 1.4.16
+
+Bumps [identify](https://github.com/chriskuehl/identify) from 1.4.15 to 1.4.16.
+- [Release notes](https://github.com/chriskuehl/identify/releases)
+- [Commits](https://github.com/chriskuehl/identify/compare/v1.4.15...v1.4.16)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-22 09:19:39+00:00,0,2020-05-22 09:19:39+00:00,0,True,False,['poetry.lock'],['f51021dfc45bced2cddaf2126565ca62e5fb93fa'],5,5,10,1,,,
+9847b9a57f631758263415b5261487f0be844a60,"Bump flake8 from 3.8.1 to 3.8.2
+
+Bumps [flake8](https://gitlab.com/pycqa/flake8) from 3.8.1 to 3.8.2.
+- [Release notes](https://gitlab.com/pycqa/flake8/tags)
+- [Commits](https://gitlab.com/pycqa/flake8/compare/3.8.1...3.8.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-25 10:27:17+00:00,0,2020-05-25 10:27:17+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['8c32ca9976ff8c361258d67b3746d9cc56639763'],5,5,10,2,,,
+eb6f3c8ad2762eb49188155d055e51a2a54a8b30,"Bump identify from 1.4.16 to 1.4.17
+
+Bumps [identify](https://github.com/chriskuehl/identify) from 1.4.16 to 1.4.17.
+- [Release notes](https://github.com/chriskuehl/identify/releases)
+- [Commits](https://github.com/chriskuehl/identify/compare/v1.4.16...v1.4.17)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-05-27 09:18:52+00:00,0,2020-05-27 09:18:52+00:00,0,True,False,['poetry.lock'],['012d2ef7f618c93bde3725b2966e0db7f39c7004'],3,3,6,1,,,
+c067b360f160ce63718ac2e57c88220ebeb725e2,Release workflow,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-28 18:43:44-03:00,10800,2020-05-28 18:43:44-03:00,10800,True,False,['release.yml'],['cf4a0a37d84c0c7cdc3af4e3e3184bfa7d5e532a'],11,41,52,1,,,
+2ab6eaf5eb5de58c9463a02e387842db10d54c28,2.3.2,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-05-28 19:26:50-03:00,10800,2020-05-28 19:26:50-03:00,10800,True,False,['pyproject.toml'],['290177b35fac0ca6c9661c8c99d186fe228381c5'],1,1,2,1,,,
+c19ca4b767f568aa6d10e3c8fd6ff814660fd6d0,"Bump gitpython from 3.1.2 to 3.1.3
+
+Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.2 to 3.1.3.
+- [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- [Changelog](https://github.com/gitpython-developers/GitPython/blob/master/CHANGES)
+- [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.2...3.1.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-01 11:12:08+00:00,0,2020-06-01 11:12:08+00:00,0,True,False,['poetry.lock'],['fc011eb85b0b03df517550ab8f78187e350871a1'],3,3,6,1,,,
+64e262f89929d229c2e75d87c0a99d45fa08bbef,"Bump identify from 1.4.17 to 1.4.18
+
+Bumps [identify](https://github.com/chriskuehl/identify) from 1.4.17 to 1.4.18.
+- [Release notes](https://github.com/chriskuehl/identify/releases)
+- [Commits](https://github.com/chriskuehl/identify/compare/v1.4.17...v1.4.18)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-01 11:12:41+00:00,0,2020-06-01 11:12:41+00:00,0,True,False,['poetry.lock'],['fc011eb85b0b03df517550ab8f78187e350871a1'],3,3,6,1,,,
+255135686f44f4d0422b96d8a4ce1f08ed29b1b5,"Bump wcwidth from 0.1.9 to 0.2.2
+
+Bumps [wcwidth](https://github.com/jquast/wcwidth) from 0.1.9 to 0.2.2.
+- [Release notes](https://github.com/jquast/wcwidth/releases)
+- [Commits](https://github.com/jquast/wcwidth/compare/0.1.9...0.2.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-02 09:32:47+00:00,0,2020-06-02 09:32:47+00:00,0,True,False,['poetry.lock'],['d80554415cbc9a47491cdda9fd16e79623864b0f'],4,4,8,1,,,
+bf8e036b0d5f97ba5671df886fac0a5df43e63a1,"Bump typeguard from 2.7.1 to 2.8.0
+
+Bumps [typeguard](https://github.com/agronholm/typeguard) from 2.7.1 to 2.8.0.
+- [Release notes](https://github.com/agronholm/typeguard/releases)
+- [Changelog](https://github.com/agronholm/typeguard/blob/master/docs/versionhistory.rst)
+- [Commits](https://github.com/agronholm/typeguard/compare/2.7.1...2.8.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-03 09:29:49+00:00,0,2020-06-03 09:29:49+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['386982d5d15c9b581f4ab009833234ee7cfb4aa4'],5,5,10,2,,,
+7ae0dec9419eb06be7248f43ba4fa42fe9639796,"Bump wcwidth from 0.2.2 to 0.2.3
+
+Bumps [wcwidth](https://github.com/jquast/wcwidth) from 0.2.2 to 0.2.3.
+- [Release notes](https://github.com/jquast/wcwidth/releases)
+- [Commits](https://github.com/jquast/wcwidth/compare/0.2.2...0.2.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-03 09:30:26+00:00,0,2020-06-03 09:30:26+00:00,0,True,False,['poetry.lock'],['386982d5d15c9b581f4ab009833234ee7cfb4aa4'],3,3,6,1,,,
+7b3ef41a251cbbdac78b000483b80530d6715b8a,"Bump nodeenv from 1.3.5 to 1.4.0
+
+Bumps [nodeenv](https://github.com/ekalinin/nodeenv) from 1.3.5 to 1.4.0.
+- [Release notes](https://github.com/ekalinin/nodeenv/releases)
+- [Changelog](https://github.com/ekalinin/nodeenv/blob/master/CHANGES)
+- [Commits](https://github.com/ekalinin/nodeenv/compare/1.3.5...1.4.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-03 09:31:04+00:00,0,2020-06-03 09:31:04+00:00,0,True,False,['poetry.lock'],['386982d5d15c9b581f4ab009833234ee7cfb4aa4'],2,2,4,1,,,
+cf961b1e36d5f65c36f3594838511f9eda497c21,"Bump mypy from 0.770 to 0.780
+
+Bumps [mypy](https://github.com/python/mypy) from 0.770 to 0.780.
+- [Release notes](https://github.com/python/mypy/releases)
+- [Commits](https://github.com/python/mypy/compare/v0.770...v0.780)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-04 09:38:44+00:00,0,2020-06-04 09:38:44+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['99906b8e0f2702a5495cc9d8bc980227916fd72e'],17,17,34,2,,,
+896dadc464deb2db8cf1f07e484606bb9e6a3143,"Bump pytest from 5.4.2 to 5.4.3
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 5.4.2 to 5.4.3.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/5.4.2...5.4.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-04 09:40:32+00:00,0,2020-06-04 09:40:32+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['15b16c132c26a16f51e752639a1a4033fe245fdd'],5,5,10,2,,,
+e26696a5e5ecd99756d0de2a31a141848ebc6be6,"Bump codecov from 2.1.3 to 2.1.4
+
+Bumps [codecov](https://github.com/codecov/codecov-python) from 2.1.3 to 2.1.4.
+- [Release notes](https://github.com/codecov/codecov-python/releases)
+- [Changelog](https://github.com/codecov/codecov-python/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-python/commits/v2.1.4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-04 09:42:39+00:00,0,2020-06-04 09:42:39+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['4aa24c40f31278a7c4a41cf91ef9465207ee5fc2'],5,6,11,2,,,
+c2c316f86b7622a496da13994245bd56c1e4b99d,"Bump identify from 1.4.18 to 1.4.19
+
+Bumps [identify](https://github.com/chriskuehl/identify) from 1.4.18 to 1.4.19.
+- [Release notes](https://github.com/chriskuehl/identify/releases)
+- [Commits](https://github.com/chriskuehl/identify/compare/v1.4.18...v1.4.19)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-05 09:22:35+00:00,0,2020-06-05 09:22:35+00:00,0,True,False,['poetry.lock'],['7f18900f35d512fae47989b106a75233a6f869ab'],3,3,6,1,,,
+9ad6aee4a3b01c26f01146535840caca63abdb83,"Bump stevedore from 1.32.0 to 2.0.0
+
+Bumps [stevedore](https://docs.openstack.org/stevedore/latest/) from 1.32.0 to 2.0.0.
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-05 09:23:07+00:00,0,2020-06-05 09:23:07+00:00,0,True,False,['poetry.lock'],['7f18900f35d512fae47989b106a75233a6f869ab'],5,4,9,1,,,
+e38f69766034538143e95690b6fdd52a016ce7b0,"Bump importlib-metadata from 1.6.0 to 1.6.1
+
+Bumps [importlib-metadata](http://importlib-metadata.readthedocs.io/) from 1.6.0 to 1.6.1.
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-08 10:19:27+00:00,0,2020-06-08 10:19:27+00:00,0,True,False,['poetry.lock'],['becc3b105c4ea74ea79fd8a6d92ad52bc7366506'],4,4,8,1,,,
+cbe07163780923066362fbb16627a5a6c27fd96b,"Bump wcwidth from 0.2.3 to 0.2.4
+
+Bumps [wcwidth](https://github.com/jquast/wcwidth) from 0.2.3 to 0.2.4.
+- [Release notes](https://github.com/jquast/wcwidth/releases)
+- [Commits](https://github.com/jquast/wcwidth/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-08 10:19:44+00:00,0,2020-06-08 10:19:44+00:00,0,True,False,['poetry.lock'],['becc3b105c4ea74ea79fd8a6d92ad52bc7366506'],3,3,6,1,,,
+03f47c6798ca2bd824bf57348a22302d4682abba,"Bump certifi from 2020.4.5.1 to 2020.4.5.2
+
+Bumps [certifi](https://github.com/certifi/python-certifi) from 2020.4.5.1 to 2020.4.5.2.
+- [Release notes](https://github.com/certifi/python-certifi/releases)
+- [Commits](https://github.com/certifi/python-certifi/compare/2020.04.05.1...2020.04.05.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-08 10:20:09+00:00,0,2020-06-08 10:20:09+00:00,0,True,False,['poetry.lock'],['becc3b105c4ea74ea79fd8a6d92ad52bc7366506'],3,3,6,1,,,
+a1beeba04ee8b0957e2b877e05f466aa0ce1531c,"Bump typeguard from 2.8.0 to 2.9.1
+
+Bumps [typeguard](https://github.com/agronholm/typeguard) from 2.8.0 to 2.9.1.
+- [Release notes](https://github.com/agronholm/typeguard/releases)
+- [Changelog](https://github.com/agronholm/typeguard/blob/master/docs/versionhistory.rst)
+- [Commits](https://github.com/agronholm/typeguard/compare/2.8.0...2.9.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-08 10:20:38+00:00,0,2020-06-08 10:20:38+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['becc3b105c4ea74ea79fd8a6d92ad52bc7366506'],7,7,14,2,,,
+09c86be365f9493e500434722675f44eed61e22d,"Bump regex from 2020.5.14 to 2020.6.8
+
+Bumps [regex](https://bitbucket.org/mrabarnett/mrab-regex) from 2020.5.14 to 2020.6.8.
+- [Commits](https://bitbucket.org/mrabarnett/mrab-regex/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-08 10:21:06+00:00,0,2020-06-08 10:21:06+00:00,0,True,False,['poetry.lock'],['becc3b105c4ea74ea79fd8a6d92ad52bc7366506'],22,22,44,1,,,
+a5203e5a604cfd0468f950f520672d7c12e74e45,Tests upgrade,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-08 19:40:36-03:00,10800,2020-06-08 19:40:36-03:00,10800,True,False,['tests.yml'],['b2ba50ac9b48e9aaeac783078d18c07239bbddfa'],7,49,56,1,,,
+554baf23d6b57e1a59746454a72e1d83b56917d1,Update README.md,Thiago C. D'Ávila,thiagocavila@ufmg.br,GitHub,noreply@github.com,2020-06-08 21:07:55-03:00,10800,2020-06-08 21:07:55-03:00,10800,True,False,['README.md'],['2aa6f3a633c4c42cc1aea8020eb7b92eca88c7cf'],0,1,1,1,,,
+0586959580ccb298c2d9ea4af45a9985937b2de9,"Bump flake8 from 3.8.2 to 3.8.3
+
+Bumps [flake8](https://gitlab.com/pycqa/flake8) from 3.8.2 to 3.8.3.
+- [Release notes](https://gitlab.com/pycqa/flake8/tags)
+- [Commits](https://gitlab.com/pycqa/flake8/compare/3.8.2...3.8.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-09 09:16:30+00:00,0,2020-06-09 09:16:30+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['554baf23d6b57e1a59746454a72e1d83b56917d1'],5,5,10,2,,,
+d9eab77eb84ced41b960820e2289ff9aeae3a95d,"Bump pre-commit from 2.4.0 to 2.5.1
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.4.0 to 2.5.1.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.4.0...v2.5.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>",dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-10 09:36:35+00:00,0,2020-06-10 09:36:35+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['6b50a4190893c0c6cfeefafa355df119f4ee5bd9'],5,5,10,2,,,
+cdc27c28e1bbcc6ea624c1f7aa0da98fc49e9d9d,Update Dependabot config file,dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-10 12:29:58+00:00,0,2020-06-10 12:29:58+00:00,0,True,False,"['config.yml', 'dependabot.yml']",['1d10bbd6442db7c9e516ffbef3fb30ecaed99e2e'],20,20,40,2,,,
+1a9a3770adc7455bd07298167b5ff6236793123b,"Bump release-drafter/release-drafter from v5.8.0 to v5.11.0
+
+Bumps [release-drafter/release-drafter](https://github.com/release-drafter/release-drafter) from v5.8.0 to v5.11.0.
+- [Release notes](https://github.com/release-drafter/release-drafter/releases)
+- [Commits](https://github.com/release-drafter/release-drafter/compare/v5.8.0...06d4616a80cd7c09ea3cf12214165ad6c1859e67)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-10 12:31:25+00:00,0,2020-06-10 12:31:25+00:00,0,True,False,"['release-drafter.yml', 'release.yml']",['401cdc09c2b7a5f31b8493a723ed49754e015560'],2,2,4,2,,,
+31a24a2184972d41d7cd2c0f34cd6f5fa308fcd1,"Bump pypa/gh-action-pypi-publish from v1.1.0 to v1.2.2
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from v1.1.0 to v1.2.2.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.1.0...6a02ab807dd289aa281becac7152f29621389dd1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-10 12:31:26+00:00,0,2020-06-10 12:31:26+00:00,0,True,False,['release.yml'],['401cdc09c2b7a5f31b8493a723ed49754e015560'],2,2,4,1,,,
+0b8bda47f429564daf1610223bbe969004a87564,"Bump actions/cache from v1.2.0 to v2
+
+Bumps [actions/cache](https://github.com/actions/cache) from v1.2.0 to v2.
+- [Release notes](https://github.com/actions/cache/releases)
+- [Commits](https://github.com/actions/cache/compare/v1.2.0...b8204782bbb5f872091ecc5eb9cb7d004e35b1fa)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-10 12:31:26+00:00,0,2020-06-10 12:31:26+00:00,0,True,False,['tests.yml'],['401cdc09c2b7a5f31b8493a723ed49754e015560'],1,1,2,1,,,
+c09235fd546fbe3aa48b8e1533481ef30085ceef,"Bump actions/checkout from v2.1.1 to v2.2.0
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from v2.1.1 to v2.2.0.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.1.1...aabbfeb2ce60b5bd82389903509092c4648a9713)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-10 12:31:27+00:00,0,2020-06-10 12:31:27+00:00,0,True,False,"['release.yml', 'tests.yml']",['401cdc09c2b7a5f31b8493a723ed49754e015560'],2,2,4,2,,,
+ca250542712da5c153d1613d2a247875c3021fce,"Bump pip from 20.1 to 20.1.1 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.1 to 20.1.1.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/20.1...20.1.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-10 12:31:28+00:00,0,2020-06-10 12:31:28+00:00,0,True,False,['constraints.txt'],['401cdc09c2b7a5f31b8493a723ed49754e015560'],1,1,2,1,,,
+e59b25294e1637d4bb9f60bed812fa9e948e75d6,"Bump poetry from 1.0.5 to 1.0.9 in /.github/workflows
+
+Bumps [poetry](https://github.com/python-poetry/poetry) from 1.0.5 to 1.0.9.
+- [Release notes](https://github.com/python-poetry/poetry/releases)
+- [Changelog](https://github.com/python-poetry/poetry/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-poetry/poetry/compare/1.0.5...1.0.9)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-10 12:45:35+00:00,0,2020-06-10 12:45:35+00:00,0,True,False,['constraints.txt'],['530977d20599fa09a9c10b99955915858c353b83'],1,1,2,1,,,
+fcaf79e6a9d29225179ca41495990463afa2c35e,"Bump nox from 2019.11.9 to 2020.5.24 in /.github/workflows
+
+Bumps [nox](https://github.com/theacodes/nox) from 2019.11.9 to 2020.5.24.
+- [Release notes](https://github.com/theacodes/nox/releases)
+- [Changelog](https://github.com/theacodes/nox/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/theacodes/nox/compare/2019.11.9...2020.5.24)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-10 12:49:24+00:00,0,2020-06-10 12:49:24+00:00,0,True,False,['constraints.txt'],['2a50d17245afc29328b8b040089f71587d7db7c9'],1,1,2,1,,,
+c2795177317d7511572c037dfca0940a67eea6a1,Update dependabot,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-10 21:12:44-03:00,10800,2020-06-10 21:12:44-03:00,10800,True,False,"['dependabot.yml', '.pre-commit-config.yaml']",['9aa4e45868d07196b047a33d08b6905c4e7806a8'],19,19,38,2,,,
+d721c718bb82195f85c1004dbb1639de52acab59,Remove release-drafter workflow,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-11 15:00:43-03:00,10800,2020-06-11 15:00:43-03:00,10800,True,False,['release-drafter.yml'],['d25259e25b9c59ca1e78076ccc6dfa948f7daf55'],15,0,15,1,,,
+70c516a8a263faa2b993ae95104368ca488ce497,Updates pre-commit,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-11 15:02:59-03:00,10800,2020-06-11 15:02:59-03:00,10800,True,False,['.pre-commit-config.yaml'],['d25259e25b9c59ca1e78076ccc6dfa948f7daf55'],2,2,4,1,,,
+57544e7e380457470f9af7155eb65d3e8f5a635d,Remove importlib_metadata,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-11 15:27:33-03:00,10800,2020-06-11 15:27:33-03:00,10800,True,False,"['poetry.lock', 'pyproject.toml', '__init__.py']",['e0e1603831ffc7d621511f98a0275c9ae6ec6896'],23,13,36,3,,,
+2471aec4550eb7a904d9d6fd695e5985fe0673e4,"Bump codecov from 2.1.4 to 2.1.7
+
+Bumps [codecov](https://github.com/codecov/codecov-python) from 2.1.4 to 2.1.7.
+- [Release notes](https://github.com/codecov/codecov-python/releases)
+- [Changelog](https://github.com/codecov/codecov-python/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-python/compare/v2.1.4...v2.1.7)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-15 09:01:18+00:00,0,2020-06-15 09:01:18+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['4d8f6102a9414565bdf8bd72364fd1cb06fa619b'],7,7,14,2,,,
+2130e07567abae49456c77c8acd1c751fa024838,Upgrade workflow,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-15 19:16:37-03:00,10800,2020-06-15 19:16:37-03:00,10800,True,False,['dependabot.yml'],['07a528d6e710b1160b1961bd2faae83b02f51cb7'],4,4,8,1,,,
+d275121f479df50373552247a947170811737258,"Bump actions/checkout from v2.2.0 to v2.3.0
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from v2.2.0 to v2.3.0.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.2.0...b4483adec309c0d01a5435c5e24eb40de5773ad9)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-17 09:00:56+00:00,0,2020-06-17 09:00:56+00:00,0,True,False,"['release.yml', 'tests.yml']",['64cc9a283751e46f03aea6a8ce36c2e792364469'],2,2,4,2,,,
+f0ca03554d202260a308c6f16dea6f1cb0ec07f9,nox-mypy,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-18 19:55:02-03:00,10800,2020-06-18 19:55:02-03:00,10800,True,False,"['README.md', 'conf.py', 'mypy.ini', 'noxfile.py']",['1b3e94f441a2684c5d466dab1d706ee1ec3338ce'],7,14,21,4,1.0,1.0,1.0
+70b7ed67c7e5e807dece7ca6cfe05b4c5ff7fd1e,"Bump actions/checkout from v2.3.0 to v2.3.1
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from v2.3.0 to v2.3.1.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.3.0...28c7f3d2b5162b5ddd3dfd9a45aa55eaf396478b)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-19 09:00:54+00:00,0,2020-06-19 09:00:54+00:00,0,True,False,"['release.yml', 'tests.yml']",['692be93f9f50f0ceceeabe85e3a4596bb18c73a0'],2,2,4,2,,,
+9dcbc6cf611773457e257a25e9fd646fd825f4de,Add pygments,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-20 12:23:40-03:00,10800,2020-06-20 12:23:40-03:00,10800,True,False,"['noxfile.py', 'poetry.lock', 'pyproject.toml']",['84d2a753e487e45fb28dc3ea6f2d5e17b3f15110'],3,47,50,3,1.0,0.3,1.0
+d9d5d24c55fa3bb21c729319a41a81c850817157,"Bump pypa/gh-action-pypi-publish from v1.2.2 to v1.3.0
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from v1.2.2 to v1.3.0.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.2.2...00ef3b81828a3fa69f3434842ce50ec3981351b0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-22 09:01:13+00:00,0,2020-06-22 09:01:13+00:00,0,True,False,['release.yml'],['84d2a753e487e45fb28dc3ea6f2d5e17b3f15110'],2,2,4,1,,,
+9960d8132f3d4e031831ae0189b01ae149685480,"Bump mypy from 0.780 to 0.781
+
+Bumps [mypy](https://github.com/python/mypy) from 0.780 to 0.781.
+- [Release notes](https://github.com/python/mypy/releases)
+- [Commits](https://github.com/python/mypy/compare/v0.780...v0.781)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-22 09:01:57+00:00,0,2020-06-22 09:01:57+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['84d2a753e487e45fb28dc3ea6f2d5e17b3f15110'],17,18,35,2,,,
+c27751cf08760db889f74656e2e6d8b9f4fc618f,"Bump mypy from 0.781 to 0.782
+
+Bumps [mypy](https://github.com/python/mypy) from 0.781 to 0.782.
+- [Release notes](https://github.com/python/mypy/releases)
+- [Commits](https://github.com/python/mypy/compare/v0.781...v0.782)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-23 09:01:34+00:00,0,2020-06-23 09:01:34+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['35aa032da662b5f19c18521eafff144cf46f8654'],17,17,34,2,,,
+2348aec707ca5a15992d99b33682288c250d931f,Poetry update,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-23 08:08:09-03:00,10800,2020-06-23 08:08:09-03:00,10800,True,False,['poetry.lock'],['9dcbc6cf611773457e257a25e9fd646fd825f4de'],22,22,44,1,,,
+47c631d5b65d8d99d3376afe6542760037e3e8b6,Coverage session,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-23 12:50:43-03:00,10800,2020-06-23 12:50:43-03:00,10800,True,False,['noxfile.py'],['8cfdfe538da64ca245bde2661fbe111516614c0e'],2,7,9,1,1.0,1.0,1.0
+8a35687ccdd3bd30906e25a179c4753a80d80b6f,"Bump mypy from 0.780 to 0.782
+
+Bumps [mypy](https://github.com/python/mypy) from 0.780 to 0.782.
+- [Release notes](https://github.com/python/mypy/releases)
+- [Commits](https://github.com/python/mypy/compare/v0.780...v0.782)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-06-24 09:01:26+00:00,0,2020-06-24 09:01:26+00:00,0,True,False,['poetry.lock'],['5bf82b70f45de51de551765121fb6c9ea9366005'],17,17,34,1,,,
+ee97aa07734e10bd7870668ef7e01b5d53889c63,Typeguard enforcement,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-24 19:11:14-03:00,10800,2020-06-24 19:11:14-03:00,10800,True,False,"['tests.yml', 'noxfile.py']",['4fec8e557560b923aa312d4a9aac1768e6721f30'],1,2,3,2,,,
+858db670671bf54d18ffcbbf63a396be863e5f53,Strict mypy 1,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-25 08:45:13-03:00,10800,2020-06-25 08:45:13-03:00,10800,True,False,"['mypy.ini', 'list.py', 'py.typed', 'time.py', 'base.py', 'test_time.py']",['b9517bb41725c8123f77637f17eac9ea7103ebac'],24,59,83,6,0.06060606060606061,0.9696969696969697,1.0
+587c76dcb356290b4b63ecce43734dd08ef945ff,Strict mypy,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-06-30 19:21:19-03:00,10800,2020-06-30 19:21:19-03:00,10800,True,False,"['base.py', 'test_filesize.py', 'test_list.py', 'test_number.py', 'test_time.py']",['858db670671bf54d18ffcbbf63a396be863e5f53'],62,58,120,5,0.5,1.0,1.0
+08527a8f6ca27f1ea6ba6f935470a821c0341ce5,"Bump codecov/codecov-action from v1.0.7 to v1.0.10
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.0.7 to v1.0.10.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.0.7...f3570723ef743f6942b6a480461ed0cd6c0f9baa)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-02 09:01:51+00:00,0,2020-07-02 09:01:51+00:00,0,True,False,['tests.yml'],['e26bbe24e1740ea5ea87908c9838251cfc6c3633'],1,1,2,1,,,
+4d04ac5131fa7b1ed382767a259cba07e39842a4,"Bump pre-commit from 2.5.1 to 2.6.0
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.5.1 to 2.6.0.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.5.1...v2.6.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-02 09:02:21+00:00,0,2020-07-02 09:02:21+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['e26bbe24e1740ea5ea87908c9838251cfc6c3633'],5,5,10,2,,,
+7dc7d3cf54912f8d4c202cca77565a6022582350,Enable Windows tests,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-06 17:42:52-03:00,10800,2020-07-06 17:42:52-03:00,10800,True,False,"['tests.yml', 'poetry.lock', 'pyproject.toml']",['80a167a20095936af5c9ae10ffff4b86af6f217e'],36,39,75,3,,,
+4800599a3d443a63606c1ce86364680552c6949d,"Bump pypa/gh-action-pypi-publish from v1.3.0 to v1.3.1
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from v1.3.0 to v1.3.1.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.3.0...bce3b74dbf8cc32833ffba9d15f83425c1a736e0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-09 09:00:45+00:00,0,2020-07-09 09:00:45+00:00,0,True,False,['release.yml'],['d8d6eaac6e05d83b08eb27b0123a81acdd109e8a'],2,2,4,1,,,
+5cd135376747faa3810f0756a35a2c854fd8d55b,"Bump salsify/action-detect-and-tag-new-version from v1.0.3 to v2.0.1
+
+Bumps [salsify/action-detect-and-tag-new-version](https://github.com/salsify/action-detect-and-tag-new-version) from v1.0.3 to v2.0.1.
+- [Release notes](https://github.com/salsify/action-detect-and-tag-new-version/releases)
+- [Commits](https://github.com/salsify/action-detect-and-tag-new-version/compare/v1.0.3...e4e25f0bab8e458580a7bdaad885e7d6fcd697d6)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-14 09:01:45+00:00,0,2020-07-14 09:01:45+00:00,0,True,False,['release.yml'],['5760601f3375d657ad0537fd2e6bd3e5a17071ff'],1,1,2,1,,,
+4234640a0d2c408e9ed116933194e82251397bf8,"Bump codecov from 2.1.7 to 2.1.8
+
+Bumps [codecov](https://github.com/codecov/codecov-python) from 2.1.7 to 2.1.8.
+- [Release notes](https://github.com/codecov/codecov-python/releases)
+- [Changelog](https://github.com/codecov/codecov-python/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-python/compare/v2.1.7...2.1.8)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-16 09:01:24+00:00,0,2020-07-16 09:01:24+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['7e5495e7b2ab57ecb67b3f924142a4e1337a4f64'],7,7,14,2,,,
+40d8ac1bdcbd4dad52e52cdd6b3f7c9a546bc8ea,Add Readthedocs,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-19 16:23:52-03:00,10800,2020-07-19 16:23:52-03:00,10800,True,False,"['.flake8', 'dependabot.yml', 'tests.yml', '.readthedocs.yml', 'CODE_OF_CONDUCT.rst', 'CONTRIBUTING.md', 'CONTRIBUTING.rst', 'LICENSE.rst', 'README.md', 'README.rst', 'codeofconduct.rst', 'contributing.rst', 'index.rst', 'license.rst', 'requirements.txt', 'poetry.lock', 'pyproject.toml']",['07c5dd15b70c581756bf916e41042b270f1098c4'],225,938,1163,17,,,
+9af5ca123a174208376388712430570e1fe8aab3,"Bump codecov/codecov-action from v1.0.10 to v1.0.11
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.0.10 to v1.0.11.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.0.10...6d208f5b527841fb050f92f778e86cb808dacdcb)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-19 19:29:30+00:00,0,2020-07-19 19:29:30+00:00,0,True,False,['tests.yml'],['8eecf7ae15183c6cf0ea1f5ec84f9537954e25ea'],1,1,2,1,,,
+9dcd954cca119625386fc8ed2170f8b7b5337f65,Fix code visualization,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-19 16:53:30-03:00,10800,2020-07-19 16:53:30-03:00,10800,True,False,['README.rst'],['40d8ac1bdcbd4dad52e52cdd6b3f7c9a546bc8ea'],54,54,108,1,,,
+ecc37ef6fbaeacaa470d3429fa1b3ce2d6af72df,2.3.3,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-19 17:30:40-03:00,10800,2020-07-19 17:30:40-03:00,10800,True,False,['pyproject.toml'],['b679645c8881d093ebd87642d408703acf206721'],1,1,2,1,,,
+37dcb5e0a40162352b011aad83b4c405dbeb0978,Review codecov,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-20 07:37:55-03:00,10800,2020-07-20 07:37:55-03:00,10800,True,False,"['codecov.yml', 'poetry.lock', 'pyproject.toml']",['ecc37ef6fbaeacaa470d3429fa1b3ce2d6af72df'],19,10,29,3,,,
+a39b29b080cfead877931926686cf8cb600c722d,Pipefail release workflow,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-20 18:52:36-03:00,10800,2020-07-20 18:52:36-03:00,10800,True,False,['release.yml'],['37dcb5e0a40162352b011aad83b4c405dbeb0978'],1,7,8,1,,,
+6062fefda6574705ea2d100a2a5b9b6b2cccda1b,"Bump actions/setup-python from v2 to v2.1.1
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from v2 to v2.1.1.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2...0c28554988f6ccf1a4e2818e703679796e41a214)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-21 05:26:16+00:00,0,2020-07-21 05:26:16+00:00,0,True,False,"['release.yml', 'tests.yml']",['0f3eccb8ca35724d5c59d6dca2fd7e4cc08ac608'],2,2,4,2,,,
+6107c2143f624b937f278bb5e13b44ae1972090c,Flake8 / pre-commit / nox review,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-21 17:19:45-03:00,10800,2020-07-21 17:19:45-03:00,10800,True,False,"['.flake8', '.pre-commit-config.yaml', 'noxfile.py', 'poetry.lock', 'pyproject.toml', 'base.py', 'test_filesize.py', 'test_list.py', 'test_number.py', 'test_time.py']",['41bd8ffc073001592b60dd9bc8981d49de77251f'],61,333,394,10,0.0,0.2631578947368421,1.0
+d9038b51084fd1550b5ce58a45bab997fb831da6,"Bump poetry from 1.0.9 to 1.0.10 in /.github/workflows
+
+Bumps [poetry](https://github.com/python-poetry/poetry) from 1.0.9 to 1.0.10.
+- [Release notes](https://github.com/python-poetry/poetry/releases)
+- [Changelog](https://github.com/python-poetry/poetry/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-poetry/poetry/compare/1.0.9...1.0.10)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-22 05:31:15+00:00,0,2020-07-22 05:31:15+00:00,0,True,False,['constraints.txt'],['6107c2143f624b937f278bb5e13b44ae1972090c'],1,1,2,1,,,
+91faa548fec3eee3459ec7f6e2162e01ce02e3da,"Bump reorder-python-imports from 2.3.1 to 2.3.2
+
+Bumps [reorder-python-imports](https://github.com/asottile/reorder_python_imports) from 2.3.1 to 2.3.2.
+- [Release notes](https://github.com/asottile/reorder_python_imports/releases)
+- [Commits](https://github.com/asottile/reorder_python_imports/commits/v2.3.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-22 05:32:42+00:00,0,2020-07-22 05:32:42+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['6107c2143f624b937f278bb5e13b44ae1972090c'],6,6,12,2,,,
+037c8cf653c3992d984270fc32b84a0766f39db2,Add Pycharm and VSCode to .gitignore,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-22 17:30:47-03:00,10800,2020-07-22 17:30:47-03:00,10800,True,False,['.gitignore'],['0b487b53e8d3c98d408e208321792b09b572bd0b'],1,4,5,1,,,
+9296fad31223ba31a549a5bcf81b75ec0bc79723,"Bump codecov/codecov-action from v1.0.11 to v1.0.12
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.0.11 to v1.0.12.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.0.11...07127fde53bc3ccd346d47ab2f14c390161ad108)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-23 05:20:14+00:00,0,2020-07-23 05:20:14+00:00,0,True,False,['tests.yml'],['e7321acb692e28ccd15d9d02555cea9cf2c818ce'],1,1,2,1,,,
+0f3f70e4a4c3e73c9bfe8a5e387dafe58d3c5bbf,Fix init,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-23 19:16:12-03:00,10800,2020-07-23 19:16:12-03:00,10800,True,False,"['README.rst', '__init__.py', 'time.py', 'test_init.py']",['0b7081382acc6ac64da690c54e605aeaf6e32ccb'],66,145,211,4,1.0,1.0,1.0
+029bc8a1b6247ab80b2f489a70c67c8b4cda05b8,2.3.4,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-23 19:36:02-03:00,10800,2020-07-23 19:36:02-03:00,10800,True,False,['pyproject.toml'],['d857cd992d8769c42e31ae9f4c5d1e301f1a43ab'],1,1,2,1,,,
+71b11c8be5a59ce9aaeb93171ed638cf616bdf29,Move darglint configuration to .flake8,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-07-24 18:37:51-03:00,10800,2020-07-24 18:37:51-03:00,10800,True,False,"['.darglint', '.flake8']",['029bc8a1b6247ab80b2f489a70c67c8b4cda05b8'],2,2,4,2,,,
+b0ca025d9e5e4ce8aed6ad1be97a474802c910dc,"Bump pip from 20.1.1 to 20.2 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.1.1 to 20.2.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/20.1.1...20.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-29 05:33:44+00:00,0,2020-07-29 05:33:44+00:00,0,True,False,['constraints.txt'],['72ed6b3b2ef81b9811e359b698a340093effdb89'],1,1,2,1,,,
+3fd2de241d61944356b4b9034ad18a9376e7d0fc,"Bump pytest from 5.4.3 to 6.0.0
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 5.4.3 to 6.0.0.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/5.4.3...6.0.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-30 05:09:32+00:00,0,2020-07-30 05:09:32+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['0b33c958851c0590df463cf05b95deb2096558f8'],20,20,40,2,,,
+06e10861bc43aece8da7d68a5b4d87cb19a55b10,"Bump coverage from 5.2 to 5.2.1
+
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 5.2 to 5.2.1.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/coverage-5.2...coverage-5.2.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-30 05:10:32+00:00,0,2020-07-30 05:10:32+00:00,0,True,False,['poetry.lock'],['0b33c958851c0590df463cf05b95deb2096558f8'],35,35,70,1,,,
+8e7569d591ebae507ecf3716573f73020f5f300a,"Bump darglint from 1.5.1 to 1.5.2
+
+Bumps [darglint](https://github.com/raddessi/SublimeLinter-contrib-darglint) from 1.5.1 to 1.5.2.
+- [Release notes](https://github.com/raddessi/SublimeLinter-contrib-darglint/releases)
+- [Commits](https://github.com/raddessi/SublimeLinter-contrib-darglint/commits)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-30 06:29:12+00:00,0,2020-07-30 06:29:12+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['38a0093a982c2545651d88c13f9e143d0db54ef1'],5,5,10,2,,,
+617a1fc39db9bb920115d49d49b0ea8b874bb10c,"Bump reorder-python-imports from 2.3.2 to 2.3.5
+
+Bumps [reorder-python-imports](https://github.com/asottile/reorder_python_imports) from 2.3.2 to 2.3.5.
+- [Release notes](https://github.com/asottile/reorder_python_imports/releases)
+- [Commits](https://github.com/asottile/reorder_python_imports/compare/v2.3.2...v2.3.5)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-30 07:46:34+00:00,0,2020-07-30 07:46:34+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['54538750eef7ffa77a7c1f026b30f3afcefd06bc'],5,5,10,2,,,
+235832c4caad5a21262549489792caed4fa17857,"Bump pre-commit-hooks from 3.1.0 to 3.2.0
+
+Bumps [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks) from 3.1.0 to 3.2.0.
+- [Release notes](https://github.com/pre-commit/pre-commit-hooks/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit-hooks/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit-hooks/compare/v3.1.0...v3.2.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-31 05:04:45+00:00,0,2020-07-31 05:04:45+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['cea52ec77cfeaaf9bf8c3a68618c56289033b9f9'],5,5,10,2,,,
+261ec34f62cea8fc71300a1ceb46767eadc01db2,"Bump pytest from 6.0.0 to 6.0.1
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.0.0 to 6.0.1.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/6.0.0...6.0.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-07-31 05:39:35+00:00,0,2020-07-31 05:39:35+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['1d63a7f1e28a8b3c632fc0a38bfc23fadcf08325'],5,5,10,2,,,
+64be6da9ecc5466edd87770ce1e10a366e17d8d9,"Bump pip from 20.2 to 20.2.1 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.2 to 20.2.1.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/20.2...20.2.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-05 05:54:21+00:00,0,2020-08-05 05:54:21+00:00,0,True,False,['constraints.txt'],['36434c68322c48038255fb093869d5ecec3772b2'],1,1,2,1,,,
+2657f4b5d8348115fae81112868578894bd6232c,"Bump actions/checkout from v2.3.1 to v2.3.2
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from v2.3.1 to v2.3.2.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.3.1...2036a08e25fa78bbd946711a407b529a0a1204bf)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-10 05:15:54+00:00,0,2020-08-10 05:15:54+00:00,0,True,False,"['release.yml', 'tests.yml']",['03f9327f06f98062fbdcf6a88f0f0ecd4627d14e'],2,2,4,2,,,
+54824e9f72976e3b4c5079a9f2c9da40a1ddfd9a,"Bump sphinx from 3.1.2 to 3.2.0
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.1.2 to 3.2.0.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.1.2...v3.2.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-10 05:17:59+00:00,0,2020-08-10 05:17:59+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['03f9327f06f98062fbdcf6a88f0f0ecd4627d14e'],5,5,10,2,,,
+b0fa58bdd0801e2085492985a8b9f93d9b528fb7,"Bump sphinx from 3.1.2 to 3.2.0 in /docs
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.1.2 to 3.2.0.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.1.2...v3.2.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-10 05:50:27+00:00,0,2020-08-10 05:50:27+00:00,0,True,False,['requirements.txt'],['03f9327f06f98062fbdcf6a88f0f0ecd4627d14e'],1,1,2,1,,,
+9029cc68a4e8abe09dace353f2740c2c936aec1d,"Bump pip from 20.2.1 to 20.2.2 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.2.1 to 20.2.2.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/20.2.1...20.2.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-12 05:09:08+00:00,0,2020-08-12 05:09:08+00:00,0,True,False,['constraints.txt'],['2ab184e9047504c20718d8c8af7f264a962f2385'],1,1,2,1,,,
+2b69c9b6a03d71a31be49a0b3bb1ce4b78bb36df,"Bump actions/setup-python from v2.1.1 to v2.1.2
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from v2.1.1 to v2.1.2.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.1.1...24156c231c5e9d581bde27d0cdbb72715060ea51)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-12 05:10:23+00:00,0,2020-08-12 05:10:23+00:00,0,True,False,"['release.yml', 'tests.yml']",['2ab184e9047504c20718d8c8af7f264a962f2385'],2,2,4,2,,,
+c8165f28280e915345e5a27d54fa38fcbdda5c6d,Remove black session from contributing,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-08-16 10:57:34-03:00,10800,2020-08-16 10:57:34-03:00,10800,True,False,['CONTRIBUTING.rst'],['7c4a5ee69045a210ca9a424b6a93906b223e85e9'],3,2,5,1,,,
+c469d26e3e44c448331ab8a6b3fc9a4deac3f0f4,"Bump sphinx from 3.2.0 to 3.2.1
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.2.0 to 3.2.1.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.2.0...v3.2.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-17 05:19:48+00:00,0,2020-08-17 05:19:48+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['54f4285f79b0f929c91a4a9a0166568334f79493'],5,5,10,2,,,
+4f23324d824594bb06c393a5c7bea1d4ce21efe4,"Bump sphinx from 3.2.0 to 3.2.1 in /docs
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.2.0 to 3.2.1.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.2.0...v3.2.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-17 05:51:02+00:00,0,2020-08-17 05:51:02+00:00,0,True,False,['requirements.txt'],['99d759d043124500fba51d1b45af2a2d9c9c3595'],1,1,2,1,,,
+91302c69c339b2f4d26d5cdebf165e3118e15058,"Bump codecov/codecov-action from v1.0.12 to v1.0.13
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.0.12 to v1.0.13.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.0.12...6004246f47ab62d32be025ce173b241cd84ac58e)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-18 05:04:25+00:00,0,2020-08-18 05:04:25+00:00,0,True,False,['tests.yml'],['e6c62c37d310d38f528be36ef20bcd831bd47499'],1,1,2,1,,,
+5a695041505b5270b0c9fc8e864e241dca3b9200,"Bump actions/github-script from v2 to v3
+
+Bumps [actions/github-script](https://github.com/actions/github-script) from v2 to v3.
+- [Release notes](https://github.com/actions/github-script/releases)
+- [Commits](https://github.com/actions/github-script/compare/v2...626af12fe9a53dc2972b48385e7fe7dec79145c9)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-24 05:23:32+00:00,0,2020-08-24 05:23:32+00:00,0,True,False,['dependabot.yml'],['3aee7566298d0eb7e2af25bcb31e832b89c5fccf'],1,1,2,1,,,
+2cb869c1f3c55798a0c5f3d7740e64da2bb3f199,"Bump nox from 2020.5.24 to 2020.8.22 in /.github/workflows
+
+Bumps [nox](https://github.com/theacodes/nox) from 2020.5.24 to 2020.8.22.
+- [Release notes](https://github.com/theacodes/nox/releases)
+- [Changelog](https://github.com/theacodes/nox/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/theacodes/nox/compare/2020.5.24...2020.8.22)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-24 05:24:05+00:00,0,2020-08-24 05:24:05+00:00,0,True,False,['constraints.txt'],['3aee7566298d0eb7e2af25bcb31e832b89c5fccf'],1,1,2,1,,,
+87fa960e9887f122f3968b1ad25eefef67020dc7,"Bump darglint from 1.5.2 to 1.5.3
+
+Bumps [darglint](https://github.com/raddessi/SublimeLinter-contrib-darglint) from 1.5.2 to 1.5.3.
+- [Release notes](https://github.com/raddessi/SublimeLinter-contrib-darglint/releases)
+- [Commits](https://github.com/raddessi/SublimeLinter-contrib-darglint/commits)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-24 05:25:17+00:00,0,2020-08-24 05:25:17+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['3aee7566298d0eb7e2af25bcb31e832b89c5fccf'],5,6,11,2,,,
+eb3b33e76defd6f490d18efd96669489bbf8e1d7,"Bump pre-commit from 2.6.0 to 2.7.1
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.6.0 to 2.7.1.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.6.0...v2.7.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-24 07:12:44+00:00,0,2020-08-24 07:12:44+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['2316c6d38b2016525df278907f9a36cfcb701be4'],5,5,10,2,,,
+ec1a1bb6ff5742b281bdb70f1c9c74d51caa86dc,"Bump xdoctest from 0.13.0 to 0.14.0
+
+Bumps [xdoctest](https://github.com/Erotemic/xdoctest) from 0.13.0 to 0.14.0.
+- [Release notes](https://github.com/Erotemic/xdoctest/releases)
+- [Changelog](https://github.com/Erotemic/xdoctest/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/Erotemic/xdoctest/compare/0.13.0...0.14.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-27 05:19:20+00:00,0,2020-08-27 05:19:20+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['9e3967012e3b2e361c7489e66c63563a4165a57b'],5,5,10,2,,,
+6cfc3247379dbe76cc108b9556bdfab1b112beaf,"Bump black from 19.10b0 to 20.8b1
+
+Bumps [black](https://github.com/psf/black) from 19.10b0 to 20.8b1.
+- [Release notes](https://github.com/psf/black/releases)
+- [Changelog](https://github.com/psf/black/blob/master/CHANGES.md)
+- [Commits](https://github.com/psf/black/commits)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-08-27 06:25:17+00:00,0,2020-08-27 06:25:17+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['734b99369a508ca0487c832b881a24296d349b3a'],9,11,20,2,,,
+30d8336295f99248947a43fbc61c4eb854840cce,"Bump sphinx-autobuild from 0.7.1 to 2020.9.1
+
+Bumps [sphinx-autobuild](https://github.com/GaretJax/sphinx_autobuild) from 0.7.1 to 2020.9.1.
+- [Release notes](https://github.com/GaretJax/sphinx_autobuild/releases)
+- [Commits](https://github.com/GaretJax/sphinx_autobuild/commits)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-01 06:23:48+00:00,0,2020-09-01 06:23:48+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['70562c0d61e8c31530e554a7a2ed8707d1340d53'],65,14,79,2,,,
+7d014f6d625531090bb3c2b53f99f3f0d63b52ef,"Bump darglint from 1.5.3 to 1.5.4
+
+Bumps [darglint](https://github.com/raddessi/SublimeLinter-contrib-darglint) from 1.5.3 to 1.5.4.
+- [Release notes](https://github.com/raddessi/SublimeLinter-contrib-darglint/releases)
+- [Commits](https://github.com/raddessi/SublimeLinter-contrib-darglint/commits)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-07 05:06:31+00:00,0,2020-09-07 05:06:31+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['b8cbc7000bc28bb56798b09fa16c1ac593da3473'],5,5,10,2,,,
+7b537ce8e6f3086732c67c4bd7ae65441196ce3c,"Bump pip from 20.2.2 to 20.2.3 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.2.2 to 20.2.3.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/20.2.2...20.2.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-09 05:04:11+00:00,0,2020-09-09 05:04:11+00:00,0,True,False,['constraints.txt'],['9f863ae72c0322f0cbdaeb5676c7468054f88a97'],1,1,2,1,,,
+9635d5cfee6f0111f28ac64d94940d07d90c7451,Nox refactor,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-09-12 18:02:53-03:00,10800,2020-09-12 18:02:53-03:00,10800,True,False,"['tests.yml', 'noxfile.py', 'base.py']",['5ea58e29432a6e08555b4e4820762b3c5437d885'],67,94,161,3,0.1111111111111111,1.0,0.1111111111111111
+3c73a476fdabf60f0e736d0ed77ec3b6df1eb1d2,"Bump coverage from 5.2.1 to 5.3
+
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 5.2.1 to 5.3.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/coverage-5.2.1...coverage-5.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-14 05:21:04+00:00,0,2020-09-14 05:21:04+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['0e264815271356fa12140fadbcaac4ab56424b43'],37,37,74,2,,,
+81ebe7f38c13de4ad1d9bb9bdc811735de793981,"Bump pygments from 2.6.1 to 2.7.0
+
+Bumps [pygments](https://github.com/pygments/pygments) from 2.6.1 to 2.7.0.
+- [Release notes](https://github.com/pygments/pygments/releases)
+- [Changelog](https://github.com/pygments/pygments/blob/master/CHANGES)
+- [Commits](https://github.com/pygments/pygments/compare/2.6.1...2.7.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-14 06:59:54+00:00,0,2020-09-14 06:59:54+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['e4d4ad1c78d746c302d7e1040161e7a35ab0d775'],5,5,10,2,,,
+9549918ab2c19b1ba1e046e5bd3c30295d2788ee,"Bump xdoctest from 0.14.0 to 0.15.0
+
+Bumps [xdoctest](https://github.com/Erotemic/xdoctest) from 0.14.0 to 0.15.0.
+- [Release notes](https://github.com/Erotemic/xdoctest/releases)
+- [Changelog](https://github.com/Erotemic/xdoctest/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/Erotemic/xdoctest/compare/0.14.0...0.15.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-14 07:08:41+00:00,0,2020-09-14 07:08:41+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['556456c579318bd5897a7db270dbac8547eaf99a'],8,10,18,2,,,
+2cb9df7de8dfa913a102b389deaf32a424f06cef,"Bump pytest from 6.0.1 to 6.0.2
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.0.1 to 6.0.2.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/6.0.1...6.0.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-14 07:12:36+00:00,0,2020-09-14 07:12:36+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['91f7d630430ad436a00b700003c87e2c3ee2fc88'],5,5,10,2,,,
+0e25a9b2163893a120087ff5f77fe5457a209682,Remove comment,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-09-14 20:21:07-03:00,10800,2020-09-14 20:21:07-03:00,10800,True,False,['.flake8'],['c9378a48e700b3a34e1cb9e9155d36ce74ad94ff'],1,0,1,1,,,
+a9903412a6ebb111196341d644069f5d3ccf04cc,"Bump pygments from 2.7.0 to 2.7.1
+
+Bumps [pygments](https://github.com/pygments/pygments) from 2.7.0 to 2.7.1.
+- [Release notes](https://github.com/pygments/pygments/releases)
+- [Changelog](https://github.com/pygments/pygments/blob/master/CHANGES)
+- [Commits](https://github.com/pygments/pygments/compare/2.7.0...2.7.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-18 05:08:26+00:00,0,2020-09-18 05:08:26+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['0e25a9b2163893a120087ff5f77fe5457a209682'],6,5,11,2,,,
+c4c6cb4bcd8c32e064a09f9e0dbaa984f667bb09,Bump prettier to 2.1.2,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2020-09-19 14:48:25-03:00,10800,2020-09-19 14:48:25-03:00,10800,True,False,['.pre-commit-config.yaml'],['f14655a1a6b6582b7e75370dad9d09c7a1d85dfb'],1,1,2,1,,,
+e0afb4412fd7ea62c73d37e9cdc7f85e5b096e6f,"Bump flake8-rst-docstrings from 0.0.13 to 0.0.14
+
+Bumps [flake8-rst-docstrings](https://github.com/peterjc/flake8-rst-docstrings) from 0.0.13 to 0.0.14.
+- [Release notes](https://github.com/peterjc/flake8-rst-docstrings/releases)
+- [Commits](https://github.com/peterjc/flake8-rst-docstrings/compare/v0.0.13...v0.0.14)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-23 06:14:15+00:00,0,2020-09-23 06:14:15+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['48b5f790c12beb39f1d35a58178881078c0ac0ed'],4,4,8,2,,,
+6c5b2a3c6faaab9b9208b1a2942506f4c482941c,"Bump actions/checkout from v2.3.2 to v2.3.3
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from v2.3.2 to v2.3.3.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.3.2...a81bbbf8298c0fa03ea29cdc473d45769f953675)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-24 05:23:11+00:00,0,2020-09-24 05:23:11+00:00,0,True,False,"['release.yml', 'tests.yml']",['72c0a6c8a016ef4c22b3880b19b114a9e8129edf'],2,2,4,2,,,
+6f0ea819e55babd863c480fbf1dfea3322f496b1,"Bump pytest from 6.0.2 to 6.1.0
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.0.2 to 6.1.0.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/6.0.2...6.1.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-28 05:39:25+00:00,0,2020-09-28 05:39:25+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['72c4ae437e61d816ff93229a5320af52816f30e5'],18,5,23,2,,,
+d0207e75298c412428011ac6e3095f332b86f330,"Bump pypa/gh-action-pypi-publish from v1.3.1 to v1.4.1
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from v1.3.1 to v1.4.1.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.3.1...54b39fb9371c0b3a6f9f14bb8a67394defc7a806)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-09-28 05:39:49+00:00,0,2020-09-28 05:39:49+00:00,0,True,False,['release.yml'],['72c4ae437e61d816ff93229a5320af52816f30e5'],2,2,4,1,,,
+ba934e079b513bb55f123a01299b652006b698ce,"Bump actions/setup-python from v2.1.2 to v2.1.3
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from v2.1.2 to v2.1.3.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.1.2...c181ffa198a1248f902bc2f7965d2f9a36c2d7f6)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-01 05:36:39+00:00,0,2020-10-01 05:36:39+00:00,0,True,False,"['release.yml', 'tests.yml']",['c38150006fa7ed1aaed776df5e58742b8202a381'],2,2,4,2,,,
+fe2a60287f1a630653dab4f4d04fbd7048177cdb,"Bump poetry from 1.0.10 to 1.1.0 in /.github/workflows
+
+Bumps [poetry](https://github.com/python-poetry/poetry) from 1.0.10 to 1.1.0.
+- [Release notes](https://github.com/python-poetry/poetry/releases)
+- [Changelog](https://github.com/python-poetry/poetry/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-poetry/poetry/compare/1.0.10...1.1.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-02 05:20:05+00:00,0,2020-10-02 05:20:05+00:00,0,True,False,['constraints.txt'],['039aff342abcb429da49d1689bcc3b796f72ad95'],1,1,2,1,,,
+47fd7281f9fccfcbfa6e2ab262f640a16eb0ea79,"Bump flake8 from 3.8.3 to 3.8.4
+
+Bumps [flake8](https://gitlab.com/pycqa/flake8) from 3.8.3 to 3.8.4.
+- [Release notes](https://gitlab.com/pycqa/flake8/tags)
+- [Commits](https://gitlab.com/pycqa/flake8/compare/3.8.3...3.8.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-05 05:40:21+00:00,0,2020-10-05 05:40:21+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['4ba1ad5a416976f68724ddb2b6b7280bf75439bf'],5,5,10,2,,,
+01aa44311c555ce1867537fe0bb0b13b53535a4f,"Bump darglint from 1.5.4 to 1.5.5
+
+Bumps [darglint](https://github.com/raddessi/SublimeLinter-contrib-darglint) from 1.5.4 to 1.5.5.
+- [Release notes](https://github.com/raddessi/SublimeLinter-contrib-darglint/releases)
+- [Commits](https://github.com/raddessi/SublimeLinter-contrib-darglint/commits)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-05 07:05:05+00:00,0,2020-10-05 07:05:05+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['577e1586aaf5e0533576121dbcf4471107b41672'],5,5,10,2,,,
+899eba0f480b4ec43a21d5a57abf3bb7cc4242e0,"Bump pytest from 6.1.0 to 6.1.1
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.1.0 to 6.1.1.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/6.1.0...6.1.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-05 07:10:03+00:00,0,2020-10-05 07:10:03+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['efbf8fd73b5fa76239270a1c3ecc71951c2f84e1'],5,5,10,2,,,
+476a48ca778d9d0d6f545fa2d0f196b1628bcadc,"Bump poetry from 1.1.0 to 1.1.1 in /.github/workflows
+
+Bumps [poetry](https://github.com/python-poetry/poetry) from 1.1.0 to 1.1.1.
+- [Release notes](https://github.com/python-poetry/poetry/releases)
+- [Changelog](https://github.com/python-poetry/poetry/blob/1.1.1/CHANGELOG.md)
+- [Commits](https://github.com/python-poetry/poetry/compare/1.1.0...1.1.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-06 05:23:23+00:00,0,2020-10-06 05:23:23+00:00,0,True,False,['constraints.txt'],['cdafa9029c21c9699ab6e11e49562b0ab2f62601'],1,1,2,1,,,
+f3dacf57c483c28d78a067b4dcba54403168355c,"Bump poetry from 1.1.1 to 1.1.2 in /.github/workflows
+
+Bumps [poetry](https://github.com/python-poetry/poetry) from 1.1.1 to 1.1.2.
+- [Release notes](https://github.com/python-poetry/poetry/releases)
+- [Changelog](https://github.com/python-poetry/poetry/blob/1.1.2/CHANGELOG.md)
+- [Commits](https://github.com/python-poetry/poetry/compare/1.1.1...1.1.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-07 05:22:10+00:00,0,2020-10-07 05:22:10+00:00,0,True,False,['constraints.txt'],['b3f1b98004cd37c6183c461189867fb9b858c422'],1,1,2,1,,,
+13ffacf0f455395b0836a62094eb2b076ef61fcc,"Bump mypy from 0.782 to 0.790
+
+Bumps [mypy](https://github.com/python/mypy) from 0.782 to 0.790.
+- [Release notes](https://github.com/python/mypy/releases)
+- [Commits](https://github.com/python/mypy/compare/v0.782...v0.790)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-12 05:42:24+00:00,0,2020-10-12 05:42:24+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['7be1303ba9da6fca242651f72b04fc6b49652c62'],316,284,600,2,,,
+e744a04829b6437b32322e25ec0e139ee3fd857f,"Bump actions/setup-python from v2.1.3 to v2.1.4
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from v2.1.3 to v2.1.4.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.1.3...41b7212b1668f5de9d65e9c82aa777e6bbedb3a8)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-15 05:22:29+00:00,0,2020-10-15 05:22:29+00:00,0,True,False,"['release.yml', 'tests.yml']",['66c1d374c4d1dc37d9163339bec40f250b664dfc'],2,2,4,2,,,
+8127a0422b8ad6a16a2514ef483e76e4ffc477d4,"Bump poetry from 1.1.2 to 1.1.3 in /.github/workflows
+
+Bumps [poetry](https://github.com/python-poetry/poetry) from 1.1.2 to 1.1.3.
+- [Release notes](https://github.com/python-poetry/poetry/releases)
+- [Changelog](https://github.com/python-poetry/poetry/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-poetry/poetry/compare/1.1.2...1.1.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-15 05:26:53+00:00,0,2020-10-15 05:26:53+00:00,0,True,False,['constraints.txt'],['5d761d338680f28dacd45a883105033519320d7d'],1,1,2,1,,,
+ca83f80c65d5c24c13d8a43e7ec09e931ba008ae,"Bump codecov/codecov-action from v1.0.13 to v1.0.14
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.0.13 to v1.0.14.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.0.13...7d5dfa54903bd909319c580a00535b483d1efcf3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-19 05:43:15+00:00,0,2020-10-19 05:43:15+00:00,0,True,False,['tests.yml'],['7a02afd7ec133eedf096bae7ba460ec89b395b2b'],1,1,2,1,,,
+a77c8f8c93f2c44402d375fb093ef7448c5e7786,"Bump pip from 20.2.3 to 20.2.4 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.2.3 to 20.2.4.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/20.2.3...20.2.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-19 05:43:18+00:00,0,2020-10-19 05:43:18+00:00,0,True,False,['constraints.txt'],['7a02afd7ec133eedf096bae7ba460ec89b395b2b'],1,1,2,1,,,
+7b2ffcd3e902c253f040402373f2952c46eeedc9,"Bump release-drafter/release-drafter from v5.11.0 to v5.12.0
+
+Bumps [release-drafter/release-drafter](https://github.com/release-drafter/release-drafter) from v5.11.0 to v5.12.0.
+- [Release notes](https://github.com/release-drafter/release-drafter/releases)
+- [Commits](https://github.com/release-drafter/release-drafter/compare/v5.11.0...b9f2371793e8304920e7b5f28d0b1d762ad0757e)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-20 05:03:24+00:00,0,2020-10-20 05:03:24+00:00,0,True,False,['release.yml'],['94053af8cd7934d10f874c3c0800513cb6b58484'],1,1,2,1,,,
+e95fd87c94391b22433b8de5fc35e4f9f9c95e83,"Bump typeguard from 2.9.1 to 2.10.0
+
+Bumps [typeguard](https://github.com/agronholm/typeguard) from 2.9.1 to 2.10.0.
+- [Release notes](https://github.com/agronholm/typeguard/releases)
+- [Changelog](https://github.com/agronholm/typeguard/blob/master/docs/versionhistory.rst)
+- [Commits](https://github.com/agronholm/typeguard/compare/2.9.1...2.10.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-20 05:05:33+00:00,0,2020-10-20 05:05:33+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['94053af8cd7934d10f874c3c0800513cb6b58484'],5,5,10,2,,,
+50178df1809280b51023c32f419b5d6d2edee808,"Bump release-drafter/release-drafter from v5.12.0 to v5.12.1
+
+Bumps [release-drafter/release-drafter](https://github.com/release-drafter/release-drafter) from v5.12.0 to v5.12.1.
+- [Release notes](https://github.com/release-drafter/release-drafter/releases)
+- [Commits](https://github.com/release-drafter/release-drafter/compare/v5.12.0...3782ccd1a495040818a9e5d0e8bc4ed22d3b1361)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-21 05:19:58+00:00,0,2020-10-21 05:19:58+00:00,0,True,False,['release.yml'],['cbf89278ece074b504b0d2ab8761d5ab53b768b7'],1,1,2,1,,,
+79d9c08e849e489363eeb41cba2872a1364b7848,"Bump pre-commit-hooks from 3.2.0 to 3.3.0
+
+Bumps [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks) from 3.2.0 to 3.3.0.
+- [Release notes](https://github.com/pre-commit/pre-commit-hooks/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit-hooks/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit-hooks/compare/v3.2.0...v3.3.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-21 05:21:31+00:00,0,2020-10-21 05:21:31+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['cbf89278ece074b504b0d2ab8761d5ab53b768b7'],5,5,10,2,,,
+00bde2c9ac9d5d2c316b36ab2eb8add6abf8c89e,"Bump poetry from 1.1.3 to 1.1.4 in /.github/workflows
+
+Bumps [poetry](https://github.com/python-poetry/poetry) from 1.1.3 to 1.1.4.
+- [Release notes](https://github.com/python-poetry/poetry/releases)
+- [Changelog](https://github.com/python-poetry/poetry/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-poetry/poetry/compare/1.1.3...1.1.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-26 05:41:39+00:00,0,2020-10-26 05:41:39+00:00,0,True,False,['constraints.txt'],['ddb65cce1a055c606f63a1850cd8db889f4ab199'],1,1,2,1,,,
+f5a482433f8e1693daf1b8d80a70cceb92d75d14,"Bump pygments from 2.7.1 to 2.7.2
+
+Bumps [pygments](https://github.com/pygments/pygments) from 2.7.1 to 2.7.2.
+- [Release notes](https://github.com/pygments/pygments/releases)
+- [Changelog](https://github.com/pygments/pygments/blob/master/CHANGES)
+- [Commits](https://github.com/pygments/pygments/compare/2.7.1...2.7.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-26 05:47:20+00:00,0,2020-10-26 05:47:20+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['ddb65cce1a055c606f63a1850cd8db889f4ab199'],5,11,16,2,,,
+577a4c6dc82cd1123753f6c7b73822d900b00d3b,"Bump pytest from 6.1.1 to 6.1.2
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.1.1 to 6.1.2.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/6.1.1...6.1.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-29 05:24:48+00:00,0,2020-10-29 05:24:48+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['da08758806c2d958673d82aafa7dfbf5ca7c9c51'],8,11,19,2,,,
+c742285acaeb61b54b3697565ce08654092e13a5,"Bump pre-commit from 2.7.1 to 2.8.1
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.7.1 to 2.8.1.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.7.1...v2.8.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-29 06:54:18+00:00,0,2020-10-29 06:54:18+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['3a7f97623cdb3613819139bc5b02739fdb4d1152'],5,5,10,2,,,
+eb02bb200e0f8fa33387166f22b909c4efea07f6,"Bump reorder-python-imports from 2.3.5 to 2.3.6
+
+Bumps [reorder-python-imports](https://github.com/asottile/reorder_python_imports) from 2.3.5 to 2.3.6.
+- [Release notes](https://github.com/asottile/reorder_python_imports/releases)
+- [Commits](https://github.com/asottile/reorder_python_imports/compare/v2.3.5...v2.3.6)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-02 05:41:08+00:00,0,2020-11-02 05:41:08+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['af99a3dac86cae8a87fd3e4cf90f21950a3cfd66'],5,5,10,2,,,
+ee2fad9f7c52920b4dc0012b8bb02ed132df3027,"Bump pre-commit from 2.8.1 to 2.8.2
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.8.1 to 2.8.2.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.8.1...v2.8.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-02 07:42:46+00:00,0,2020-11-02 07:42:46+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['210451075e9f71a2dcc0187d2eb8d9deb29f67f0'],5,5,10,2,,,
+7ac7c004e9995ec1b8f898f1d21c4c225e0d666e,"Bump sphinx from 3.2.1 to 3.3.0
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.2.1 to 3.3.0.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.2.1...v3.3.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-03 05:26:13+00:00,0,2020-11-03 05:26:13+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['16d6e12bdce6ed4c3337eb6cc7237852aa347585'],6,6,12,2,,,
+bc05277de967c141de175389059ce7d037cfcb44,"Bump sphinx from 3.2.1 to 3.3.0 in /docs
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.2.1 to 3.3.0.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.2.1...v3.3.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-03 05:54:36+00:00,0,2020-11-03 05:54:36+00:00,0,True,False,['requirements.txt'],['580d4ddf1f13581a5145c37fd10b06a4dbf08680'],1,1,2,1,,,
+76b44835d1ba9e5c2f204440ce10199f24f7665a,"Bump actions/checkout from v2.3.3 to v2.3.4
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from v2.3.3 to v2.3.4.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.3.3...5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-04 05:26:23+00:00,0,2020-11-04 05:26:23+00:00,0,True,False,"['release.yml', 'tests.yml']",['070558e22f58e358fc0a9161f4f7d066f6ba4b37'],2,2,4,2,,,
+65f4af8f93eb4397d91c0ef74db5f7464a1d8509,Fix Prettier pre-commit,static,thiagocavila@gmail.com,static,thiagocavila@gmail.com,2020-11-12 07:28:23+01:00,-3600,2020-11-12 07:28:23+01:00,-3600,True,False,['.pre-commit-config.yaml'],['27abb292464729ee330b427525792070d03f9b1b'],2,2,4,1,,,
+cbf53332f4726768ff1519fec38ca6afd55de558,"Bump sphinx from 3.3.0 to 3.3.1
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.3.0 to 3.3.1.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.3.0...v3.3.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-13 05:28:55+00:00,0,2020-11-13 05:28:55+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['5ac9058d29c4669fe1450988e6dbe99afc27167f'],5,5,10,2,,,
+8efb27c2d764be9e31a814c3a43831250c9b357a,"Bump sphinx from 3.3.0 to 3.3.1 in /docs
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.3.0 to 3.3.1.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.3.0...v3.3.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-13 05:53:11+00:00,0,2020-11-13 05:53:11+00:00,0,True,False,['requirements.txt'],['bd2c241b64f6d480527f260b5d6715529ce4a2b3'],1,1,2,1,,,
+823276ab56a728c99fa6fdc67ed59ceafcd151c7,Fix poetry build-system,static,thiagocavila@gmail.com,static,thiagocavila@gmail.com,2020-11-14 10:58:00+01:00,-3600,2020-11-14 10:58:00+01:00,-3600,True,False,['pyproject.toml'],['27abb292464729ee330b427525792070d03f9b1b'],2,2,4,1,,,
+8cfb90638af0fd600ed379616784e68adde56d82,"Bump codecov/codecov-action from v1.0.14 to v1.0.15
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.0.14 to v1.0.15.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.0.14...239febf655bba88b16ff5dea1d3135ea8663a1f9)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-17 05:20:30+00:00,0,2020-11-17 05:20:30+00:00,0,True,False,['tests.yml'],['51a8425cd8468d22f69641412696edbe37945748'],1,1,2,1,,,
+779187f26ec9aa7f62c2e74a85148259e00fa522,"Bump darglint from 1.5.5 to 1.5.6
+
+Bumps [darglint](https://github.com/raddessi/SublimeLinter-contrib-darglint) from 1.5.5 to 1.5.6.
+- [Release notes](https://github.com/raddessi/SublimeLinter-contrib-darglint/releases)
+- [Commits](https://github.com/raddessi/SublimeLinter-contrib-darglint/commits)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-23 05:42:33+00:00,0,2020-11-23 05:42:33+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['49283f71c56278bb84342f0ee36d1d4a67f1c995'],6,8,14,2,,,
+fe741e3163ca1f3921554506cafa5395884fdb6c,"Bump pre-commit from 2.8.2 to 2.9.0
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.8.2 to 2.9.0.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.8.2...v2.9.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-23 08:04:56+00:00,0,2020-11-23 08:04:56+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['850a8779d59ca8a565425e471345f5eaf57df4a8'],5,5,10,2,,,
+431149ff8ed475fb176a241d28a522f4bf9f4a95,"Bump flake8-bugbear from 20.1.4 to 20.11.1
+
+Bumps [flake8-bugbear](https://github.com/PyCQA/flake8-bugbear) from 20.1.4 to 20.11.1.
+- [Release notes](https://github.com/PyCQA/flake8-bugbear/releases)
+- [Commits](https://github.com/PyCQA/flake8-bugbear/compare/20.1.4...20.11.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-24 05:35:29+00:00,0,2020-11-24 05:35:29+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['618f32fabe3f1fe8283178fe0ce82878ba9872e8'],5,8,13,2,,,
+ab53759b0e1f5281c23258a08c05e84cce0ca7f0,"Bump darglint from 1.5.6 to 1.5.8
+
+Bumps [darglint](https://github.com/raddessi/SublimeLinter-contrib-darglint) from 1.5.6 to 1.5.8.
+- [Release notes](https://github.com/raddessi/SublimeLinter-contrib-darglint/releases)
+- [Commits](https://github.com/raddessi/SublimeLinter-contrib-darglint/commits)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-24 07:10:26+00:00,0,2020-11-24 07:10:26+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['eed799e39d05caedcd90aa922e88970b61252fb8'],5,5,10,2,,,
+05b7f0c399528e2500303a0acb25dd4fb29ba94e,"Bump pre-commit from 2.9.0 to 2.9.2
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.9.0 to 2.9.2.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.9.0...v2.9.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-11-26 05:33:11+00:00,0,2020-11-26 05:33:11+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['c5fbb73a71e58b6f2b84b27fb30e1b4cccd533be'],5,5,10,2,,,
+2de5c2c06f422598daa21420385f8d04ba3adc21,"Bump pip from 20.2.4 to 20.3 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.2.4 to 20.3.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/20.2.4...20.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-01 05:41:34+00:00,0,2020-12-01 05:41:34+00:00,0,True,False,['constraints.txt'],['862ea7c201b4b3ffadcaeb778ecef5c13f7add7f'],1,1,2,1,,,
+2a96c289764fd1c4ed3ea254d78df12fd4440772,"Bump pip from 20.3 to 20.3.1 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.3 to 20.3.1.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/commits)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-04 05:23:20+00:00,0,2020-12-04 05:23:20+00:00,0,True,False,['constraints.txt'],['c504499dfe7412802d771c0fd1ba7d93422a16f1'],1,1,2,1,,,
+53d2aa721cc6bbdb8b676c63f513e15265cac8a9,"Bump pygments from 2.7.2 to 2.7.3
+
+Bumps [pygments](https://github.com/pygments/pygments) from 2.7.2 to 2.7.3.
+- [Release notes](https://github.com/pygments/pygments/releases)
+- [Changelog](https://github.com/pygments/pygments/blob/master/CHANGES)
+- [Commits](https://github.com/pygments/pygments/compare/2.7.2...2.7.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-07 05:50:24+00:00,0,2020-12-07 05:50:24+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['8258e790d2dd0900de79814aa0cd560dfa5dea28'],5,5,10,2,,,
+786b924aa605c0ea1344b4e3469afe8ea22c53c3,"Bump pre-commit from 2.9.2 to 2.9.3
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.9.2 to 2.9.3.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.9.2...v2.9.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-08 05:28:04+00:00,0,2020-12-08 05:28:04+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['ac33342429b0779a937819e4f87b31479ec3131f'],5,5,10,2,,,
+eb538cedde67c32156bf5fd2bc2783a293533710,"Bump pytest from 6.1.2 to 6.2.0
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.1.2 to 6.2.0.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/6.1.2...6.2.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-14 05:45:21+00:00,0,2020-12-14 05:45:21+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['f7851b4dcea5eeca2372934798db2cf428134d0a'],9,8,17,2,,,
+5c18979d07db1236be0c91df3c261b469811c85e,"Bump pip from 20.3.1 to 20.3.2 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.3.1 to 20.3.2.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/20.3.1...20.3.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-15 05:25:05+00:00,0,2020-12-15 05:25:05+00:00,0,True,False,['constraints.txt'],['d3d8400fae56de16716105dfa5449960d537f639'],1,1,2,1,,,
+260eb5389df16d75e431a02ac8231f6a8b68052d,"Bump pip from 20.3.2 to 20.3.3 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.3.2 to 20.3.3.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/20.3.2...20.3.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-16 05:23:46+00:00,0,2020-12-16 05:23:46+00:00,0,True,False,['constraints.txt'],['e1c7245a4b47dc7cfecac0b78c910c2953b7205a'],1,1,2,1,,,
+f3ab91d84cdd584c5f4b6af583b312d77ddb1484,"Bump pytest from 6.2.0 to 6.2.1
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.2.0 to 6.2.1.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/6.2.0...6.2.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-16 05:28:23+00:00,0,2020-12-16 05:28:23+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['e1c7245a4b47dc7cfecac0b78c910c2953b7205a'],5,5,10,2,,,
+424272e31faf7b90811077aacddb124c016c1426,"Bump pre-commit-hooks from 3.3.0 to 3.4.0
+
+Bumps [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks) from 3.3.0 to 3.4.0.
+- [Release notes](https://github.com/pre-commit/pre-commit-hooks/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit-hooks/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit-hooks/compare/v3.3.0...v3.4.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-16 07:14:02+00:00,0,2020-12-16 07:14:02+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['aa0c5479d17c3d98c4e4aa5120969f8a819ea240'],5,5,10,2,,,
+cba3c50d670b106392bdcac4aa1b318dbc927eb1,"Bump actions/setup-python from v2.1.4 to v2.2.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from v2.1.4 to v2.2.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.1.4...8c5ea631b2b2d5d8840cf4a2b183a8a0edc1e40d)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-18 05:22:48+00:00,0,2020-12-18 05:22:48+00:00,0,True,False,"['release.yml', 'tests.yml']",['167619245df2dd92eb6b96debb78f23243244441'],2,2,4,2,,,
+34809feca24228a49c1d7e0220028eb44e5392df,"Bump codecov/codecov-action from v1.0.15 to v1.1.0
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.0.15 to v1.1.0.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.0.15...7de43a7373de21874ae196a78f8eb633fcf7f0c4)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-18 05:22:48+00:00,0,2020-12-18 05:22:48+00:00,0,True,False,['tests.yml'],['167619245df2dd92eb6b96debb78f23243244441'],1,1,2,1,,,
+5e39b16a23170203478351de90303fe7113a1287,"Bump actions/setup-python from v2.2.0 to v2.2.1
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from v2.2.0 to v2.2.1.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.2.0...3105fb18c05ddd93efea5f9e0bef7a03a6e9e7df)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-21 05:41:34+00:00,0,2020-12-21 05:41:34+00:00,0,True,False,"['release.yml', 'tests.yml']",['6bd6c2793b2e6e7cda288d78a2732a7c370ab3bb'],2,2,4,2,,,
+3983eb751b5d6a524a04bea4295424b44ea0a30b,"Bump sphinx from 3.3.1 to 3.4.0
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.3.1 to 3.4.0.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.3.1...v3.4.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-21 05:45:19+00:00,0,2020-12-21 05:45:19+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['6bd6c2793b2e6e7cda288d78a2732a7c370ab3bb'],7,7,14,2,,,
+003623d368f2b59f6358233d6b236dc67cab2c96,"Bump coverage from 5.3 to 5.3.1
+
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 5.3 to 5.3.1.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/coverage-5.3...coverage-5.3.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-21 05:45:56+00:00,0,2020-12-21 05:45:56+00:00,0,True,False,['poetry.lock'],['6bd6c2793b2e6e7cda288d78a2732a7c370ab3bb'],35,50,85,1,,,
+56b310f1dc3a77dd872e7e27c4c1e087116fc803,"Bump sphinx from 3.3.1 to 3.4.0 in /docs
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.3.1 to 3.4.0.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.3.1...v3.4.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-21 06:42:02+00:00,0,2020-12-21 06:42:02+00:00,0,True,False,['requirements.txt'],['cdf20141afbcb29b88be9a54f3ed3cc07f23de7d'],1,1,2,1,,,
+76626754990eba42381f33f50e81b9f8c87f6bb6,"Bump safety from 1.9.0 to 1.10.0
+
+Bumps [safety](https://github.com/pyupio/safety) from 1.9.0 to 1.10.0.
+- [Release notes](https://github.com/pyupio/safety/releases)
+- [Changelog](https://github.com/pyupio/safety/blob/master/HISTORY.rst)
+- [Commits](https://github.com/pyupio/safety/compare/1.9.0...1.10.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-21 08:20:35+00:00,0,2020-12-21 08:20:35+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['0bc6300224b19c719171d34d90d4a62bbe60eb1d'],5,5,10,2,,,
+2caf37bafc8fd15a8a6060f20dbd25fa0dc39353,"Bump codecov/codecov-action from v1.1.0 to v1.1.1
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.1.0 to v1.1.1.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.1.0...1fc7722ded4708880a5aea49f2bfafb9336f0c8d)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-22 05:06:37+00:00,0,2020-12-22 05:06:37+00:00,0,True,False,['tests.yml'],['eec2b3acfa1a265ee171ccbec955b42b00fb6cd6'],1,1,2,1,,,
+1074334cc775534cf8362f05ff437c3278b7b795,"Bump sphinx from 3.4.0 to 3.4.1
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.4.0 to 3.4.1.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.4.0...v3.4.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-25 05:24:25+00:00,0,2020-12-25 05:24:25+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['be1553323dba19153518a957a56dfaa6481bddfc'],5,5,10,2,,,
+a4c9486dc9e27670772f15e2eef636d98927eef9,"Bump sphinx from 3.4.0 to 3.4.1 in /docs
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.4.0 to 3.4.1.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.4.0...v3.4.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-25 05:47:35+00:00,0,2020-12-25 05:47:35+00:00,0,True,False,['requirements.txt'],['742943c882e11e041c2da0a6b40e72f52dfaede1'],1,1,2,1,,,
+8022877a9c5fc35fa7edff169773de8afa568b7b,"Bump release-drafter/release-drafter from v5.12.1 to v5.13.0
+
+Bumps [release-drafter/release-drafter](https://github.com/release-drafter/release-drafter) from v5.12.1 to v5.13.0.
+- [Release notes](https://github.com/release-drafter/release-drafter/releases)
+- [Commits](https://github.com/release-drafter/release-drafter/compare/v5.12.1...4d1215c66d92eba9557a55da848b2281a1a19235)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-12-28 05:40:59+00:00,0,2020-12-28 05:40:59+00:00,0,True,False,['release.yml'],['2fbac9c3d84b04a11695588c48e2116161401f4f'],1,1,2,1,,,
+39235796a96730e4683a5221cda706f8b190e84d,"Bump nox from 2020.8.22 to 2020.12.31 in /.github/workflows
+
+Bumps [nox](https://github.com/theacodes/nox) from 2020.8.22 to 2020.12.31.
+- [Release notes](https://github.com/theacodes/nox/releases)
+- [Changelog](https://github.com/theacodes/nox/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/theacodes/nox/compare/2020.8.22...2020.12.31)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-01 05:45:11+00:00,0,2021-01-01 05:45:11+00:00,0,True,False,['constraints.txt'],['a880429a8926a343f7f8bfc9a3539fbad4c0bc19'],1,1,2,1,,,
+9ea196aa2f0d2e14a0f340b412d147c65c5e9b3b,"Bump safety from 1.10.0 to 1.10.1
+
+Bumps [safety](https://github.com/pyupio/safety) from 1.10.0 to 1.10.1.
+- [Release notes](https://github.com/pyupio/safety/releases)
+- [Changelog](https://github.com/pyupio/safety/blob/master/HISTORY.rst)
+- [Commits](https://github.com/pyupio/safety/compare/1.10.0...1.10.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-04 05:40:06+00:00,0,2021-01-04 05:40:06+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['db88d854ffe9632e9f8d043603bafc242d612fe4'],5,5,10,2,,,
+24f1ebe21a2a891c693c9d14910899a2e2b64f19,"Bump codecov/codecov-action from v1.1.1 to v1.2.0
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.1.1 to v1.2.0.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.1.1...a92c414703a4bba586f6df7fcc885c9d0bdff772)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-05 05:15:03+00:00,0,2021-01-05 05:15:03+00:00,0,True,False,['tests.yml'],['e8f983b7ec77ad378e8e221a013d168ecbae33bd'],1,1,2,1,,,
+c0438bd48e7f46effad8a07ef00533125584ff1f,"Bump sphinx from 3.4.1 to 3.4.2
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.4.1 to 3.4.2.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.4.1...v3.4.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-05 05:15:23+00:00,0,2021-01-05 05:15:23+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['e8f983b7ec77ad378e8e221a013d168ecbae33bd'],5,5,10,2,,,
+1a85cc1b18967fa1b7496a02d6d116da3d19da65,"Bump sphinx from 3.4.1 to 3.4.2 in /docs
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.4.1 to 3.4.2.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.4.1...v3.4.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-05 05:39:09+00:00,0,2021-01-05 05:39:09+00:00,0,True,False,['requirements.txt'],['7aeb4af29f428d27ead8bf7d9bf021bec7002f25'],1,1,2,1,,,
+ab3a46e534f3acc4fa3c1593c61f91b9f87f1b21,"Bump codecov/codecov-action from v1.2.0 to v1.2.1
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.2.0 to v1.2.1.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.2.0...e156083f13aff6830c92fc5faa23505779fbf649)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-06 05:05:11+00:00,0,2021-01-06 05:05:11+00:00,0,True,False,['tests.yml'],['e87217e60056815b321e13381b90c86828a52326'],1,1,2,1,,,
+0f627f064269c4fa96c50ee3df92c7f56c04ccdc,Add Github Labeler,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-01-07 17:37:51+01:00,-3600,2021-01-07 17:37:51+01:00,-3600,True,False,"['labels.yml', 'dependabot.yml', 'labeler.yml']",['b6cd2eb66210c6b6d19305073c0118232606d337'],22,85,107,3,,,
+039a2b7fc9d3f3db22fa9cf4265e7628d84e9187,"Bump sphinx from 3.4.2 to 3.4.3 in /docs
+
+Bumps [sphinx](https://github.com/sphinx-doc/sphinx) from 3.4.2 to 3.4.3.
+- [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+- [Changelog](https://github.com/sphinx-doc/sphinx/blob/3.x/CHANGES)
+- [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.4.2...v3.4.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-08 05:45:44+00:00,0,2021-01-08 05:45:44+00:00,0,True,False,['requirements.txt'],['ffafb3debd70f8b156268c00fb54d3c0a8a5db42'],1,1,2,1,,,
+e572ffd501a19026da8b3199d156fa8b001ea02f,Support Python 3.9,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-01-15 23:09:07+01:00,-3600,2021-01-15 23:09:07+01:00,-3600,True,False,"['constraints.txt', 'tests.yml', 'noxfile.py', 'pyproject.toml']",['ffafb3debd70f8b156268c00fb54d3c0a8a5db42'],138,38,176,4,0.6506024096385542,0.0,0.1927710843373494
+9a927c19fee7449ae8bcf32cc0273039b8742e0f,Pre-commit and lock,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-01-15 23:13:05+01:00,-3600,2021-01-15 23:13:05+01:00,-3600,True,False,"['noxfile.py', 'poetry.lock']",['e572ffd501a19026da8b3199d156fa8b001ea02f'],432,532,964,2,,,
+e20b6d93cb52783f90ba566cdf384311ce08c236,Nox-poetry install sessions,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-01-15 23:16:37+01:00,-3600,2021-01-15 23:16:37+01:00,-3600,True,False,['tests.yml'],['9a927c19fee7449ae8bcf32cc0273039b8742e0f'],1,1,2,1,,,
+dbc3587bcb0fccd634be30b31f58e9f0bb1afa2f,Coverage fix,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-01-15 23:20:17+01:00,-3600,2021-01-15 23:20:17+01:00,-3600,True,False,['tests.yml'],['e20b6d93cb52783f90ba566cdf384311ce08c236'],4,45,49,1,,,
+a34140d48d872679718cc22390f4ce55ca3a7720,"Update actions/checkout requirement to v2.3.4
+
+Updates the requirements on [actions/checkout](https://github.com/actions/checkout) to permit the latest version.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/commits/5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-15 22:26:49+00:00,0,2021-01-15 22:26:49+00:00,0,True,False,['labeler.yml'],['9648aa164d8702de66b3cd3babe6c078a589c491'],1,1,2,1,,,
+5b83440c78e25d34e06d20a56e502da521f51886,2.4.0,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-01-15 23:27:25+01:00,-3600,2021-01-15 23:27:25+01:00,-3600,True,False,['pyproject.toml'],['9648aa164d8702de66b3cd3babe6c078a589c491'],1,1,2,1,,,
+b94ecb484136672b7c084b14043b17a5eba15674,"Bump nox from 2020.8.22 to 2020.12.31 in /.github/workflows
+
+Bumps [nox](https://github.com/theacodes/nox) from 2020.8.22 to 2020.12.31.
+- [Release notes](https://github.com/theacodes/nox/releases)
+- [Changelog](https://github.com/theacodes/nox/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/theacodes/nox/compare/2020.8.22...2020.12.31)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-18 05:42:49+00:00,0,2021-01-18 05:42:49+00:00,0,True,False,['constraints.txt'],['efa96c9afe4e223a3aae7a74784fce3108a2997a'],1,1,2,1,,,
+d637adacd69a3262cd4ed84a55f14bbb05329382,"Bump codecov/codecov-action from v1.1.1 to v1.2.1
+
+Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.1.1 to v1.2.1.
+- [Release notes](https://github.com/codecov/codecov-action/releases)
+- [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/codecov/codecov-action/compare/v1.1.1...e156083f13aff6830c92fc5faa23505779fbf649)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-18 05:43:00+00:00,0,2021-01-18 05:43:00+00:00,0,True,False,['tests.yml'],['efa96c9afe4e223a3aae7a74784fce3108a2997a'],1,1,2,1,,,
+2a12ae0b7c4252d1aeeb6051242dfe1f31a571ff,"Bump actions/download-artifact from v2.0.7 to v2.0.8
+
+Bumps [actions/download-artifact](https://github.com/actions/download-artifact) from v2.0.7 to v2.0.8.
+- [Release notes](https://github.com/actions/download-artifact/releases)
+- [Commits](https://github.com/actions/download-artifact/compare/v2.0.7...4a7a711286f30c025902c28b541c10e147a9b843)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-18 05:43:01+00:00,0,2021-01-18 05:43:01+00:00,0,True,False,['tests.yml'],['efa96c9afe4e223a3aae7a74784fce3108a2997a'],1,1,2,1,,,
+ee4d0c7d6a68edf24d029a336b37c915ce2ca9c6,"Bump actions/upload-artifact from v2.2.1 to v2.2.2
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from v2.2.1 to v2.2.2.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v2.2.1...e448a9b857ee2131e752b06002bf0e093c65e571)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-18 05:43:01+00:00,0,2021-01-18 05:43:01+00:00,0,True,False,['tests.yml'],['efa96c9afe4e223a3aae7a74784fce3108a2997a'],2,2,4,1,,,
+f20f04c967d1ba58fc6d8936cfca57b1dc0f83cc,Update poetry,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-01-19 19:58:34+01:00,-3600,2021-01-19 19:58:34+01:00,-3600,True,False,"['constraints.txt', 'poetry.lock']",['61078e1a273c67f9617497d87ea23a649a425fd1'],318,283,601,2,,,
+d6869b4a7345454d53e127f3c4bc9d312136abd5,Add  to Release drafter,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-01-21 08:31:50+01:00,-3600,2021-01-21 08:31:50+01:00,-3600,True,False,['release-drafter.yml'],['9d3dc2c34704e6b26fa33ff9d19a120916aed4eb'],0,2,2,1,,,
+921eb638105213abbf1f202d37c96a0893111467,"Bump pip from 20.3.3 to 21.0 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 20.3.3 to 21.0.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/20.3.3...21.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-25 05:34:42+00:00,0,2021-01-25 05:34:42+00:00,0,True,False,['constraints.txt'],['1909c315a5842d3879d68d53723a79dbc9f8fb7a'],1,1,2,1,,,
+d4d2ca3da2ee295fb71a07ea3ddd9ff5b2a0cc79,"Bump pytest from 6.2.1 to 6.2.2
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.2.1 to 6.2.2.
+- [Release notes](https://github.com/pytest-dev/pytest/releases)
+- [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pytest-dev/pytest/compare/6.2.1...6.2.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-26 05:20:17+00:00,0,2021-01-26 05:20:17+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['1909c315a5842d3879d68d53723a79dbc9f8fb7a'],5,5,10,2,,,
+4c02590256a1f572c83f594b2a54434e98907368,"Bump xdoctest from 0.15.0 to 0.15.2
+
+Bumps [xdoctest](https://github.com/Erotemic/xdoctest) from 0.15.0 to 0.15.2.
+- [Release notes](https://github.com/Erotemic/xdoctest/releases)
+- [Changelog](https://github.com/Erotemic/xdoctest/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/Erotemic/xdoctest/compare/0.15.0...0.15.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-26 18:14:22+00:00,0,2021-01-26 18:14:22+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['4a5a49514a97f8a840a5322ff4f7811ee37d5861'],5,6,11,2,,,
+91217a7824c510e5677b94bf19e6a9d547581f10,"Bump coverage from 5.3.1 to 5.4
+
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 5.3.1 to 5.4.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/coverage-5.3.1...coverage-5.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-27 05:26:34+00:00,0,2021-01-27 05:26:34+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['77e1a0641eed33089273812477837d208a21567e'],52,52,104,2,,,
+0ba12b73dc4393f8e0ff4dbb2c5d9b0cb14a6670,"Bump pre-commit from 2.9.3 to 2.10.0
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.9.3 to 2.10.0.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.9.3...v2.10.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-28 05:22:07+00:00,0,2021-01-28 05:22:07+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['3d33cdc684e3121820572245040af2356eefe797'],5,5,10,2,,,
+378d7d9ca9e3f03b795154a98b200a88d6a11c7f,"Bump xdoctest from 0.15.2 to 0.15.3
+
+Bumps [xdoctest](https://github.com/Erotemic/xdoctest) from 0.15.2 to 0.15.3.
+- [Release notes](https://github.com/Erotemic/xdoctest/releases)
+- [Changelog](https://github.com/Erotemic/xdoctest/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/Erotemic/xdoctest/compare/0.15.2...0.15.3)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-29 05:19:57+00:00,0,2021-01-29 05:19:57+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['defeb429ad0a7c5fd4c32bbc63acaf99269b846c'],6,6,12,2,,,
+278184daaa9d81040574ae652f3af6db1b5860bc,"Bump mypy from 0.790 to 0.800
+
+Bumps [mypy](https://github.com/python/mypy) from 0.790 to 0.800.
+- [Release notes](https://github.com/python/mypy/releases)
+- [Commits](https://github.com/python/mypy/compare/v0.790...v0.800)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-01-29 20:38:58+00:00,0,2021-01-29 20:38:58+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['0e243da59afc1bda402d56535d1abd8a6160de0e'],17,25,42,2,,,
+a18bc5271610f1a71190427f3e3de52806672119,"Bump pip from 21.0 to 21.0.1 in /.github/workflows
+
+Bumps [pip](https://github.com/pypa/pip) from 21.0 to 21.0.1.
+- [Release notes](https://github.com/pypa/pip/releases)
+- [Changelog](https://github.com/pypa/pip/blob/master/NEWS.rst)
+- [Commits](https://github.com/pypa/pip/compare/21.0...21.0.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-01 05:47:28+00:00,0,2021-02-01 05:47:28+00:00,0,True,False,['constraints.txt'],['105e89ffa18f0bdef1dc5a1dc937ab8d2b27b1fc'],1,1,2,1,,,
+8f2aa5385991c8eb51cfdd718ab256b5872683e8,"Bump xdoctest from 0.15.3 to 0.15.4
+
+Bumps [xdoctest](https://github.com/Erotemic/xdoctest) from 0.15.3 to 0.15.4.
+- [Release notes](https://github.com/Erotemic/xdoctest/releases)
+- [Changelog](https://github.com/Erotemic/xdoctest/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/Erotemic/xdoctest/compare/0.15.3...0.15.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-01 05:50:11+00:00,0,2021-02-01 05:50:11+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['105e89ffa18f0bdef1dc5a1dc937ab8d2b27b1fc'],6,25,31,2,,,
+c7720cfd00a4a5bc2f509f14021912edf894c90d,"Bump virtualenv from 20.4.0 to 20.4.2 in /.github/workflows
+
+Bumps [virtualenv](https://github.com/pypa/virtualenv) from 20.4.0 to 20.4.2.
+- [Release notes](https://github.com/pypa/virtualenv/releases)
+- [Changelog](https://github.com/pypa/virtualenv/blob/main/docs/changelog.rst)
+- [Commits](https://github.com/pypa/virtualenv/compare/20.4.0...20.4.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-02 05:19:06+00:00,0,2021-02-02 05:19:06+00:00,0,True,False,['constraints.txt'],['105e89ffa18f0bdef1dc5a1dc937ab8d2b27b1fc'],1,1,2,1,,,
+6e31a496a8c54cf6ea95c5e617ff19e0088803ae,Ignore CVE-2020-28476 affecting tornado,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-02-03 19:35:50+01:00,-3600,2021-02-03 19:35:50+01:00,-3600,True,False,['noxfile.py'],['d6869b4a7345454d53e127f3c4bc9d312136abd5'],1,3,4,1,,,
+301b00dc086754eb6ccdadc6753c2cf169ec519c,"Bump darglint from 1.5.8 to 1.6.0
+
+Bumps [darglint](https://github.com/raddessi/SublimeLinter-contrib-darglint) from 1.5.8 to 1.6.0.
+- [Release notes](https://github.com/raddessi/SublimeLinter-contrib-darglint/releases)
+- [Commits](https://github.com/raddessi/SublimeLinter-contrib-darglint/commits)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-03 18:47:33+00:00,0,2021-02-03 18:47:33+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['11cd2db3003463925d756683cc4fdefd951b0cdd'],5,5,10,2,,,
+2df19ccd8db6988db82fad165c60d98c89e215d9,"Bump actions/cache from v2 to v2.1.4
+
+Bumps [actions/cache](https://github.com/actions/cache) from v2 to v2.1.4.
+- [Release notes](https://github.com/actions/cache/releases)
+- [Commits](https://github.com/actions/cache/compare/v2...26968a09c0ea4f3e233fdddbafd1166051a095f6)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-08 05:24:52+00:00,0,2021-02-08 05:24:52+00:00,0,True,False,['tests.yml'],['e22f7567aadc95a069d12d0d1fb6d1782f64ee17'],1,1,2,1,,,
+f042aee4689ea89f6f4fd8efe4b8aa860de51e8a,"Bump nox-poetry from 0.7.1 to 0.8.1 in /.github/workflows
+
+Bumps [nox-poetry](https://github.com/cjolowicz/nox-poetry) from 0.7.1 to 0.8.1.
+- [Release notes](https://github.com/cjolowicz/nox-poetry/releases)
+- [Commits](https://github.com/cjolowicz/nox-poetry/compare/v0.7.1...v0.8.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-08 05:26:32+00:00,0,2021-02-08 05:26:32+00:00,0,True,False,['constraints.txt'],['e22f7567aadc95a069d12d0d1fb6d1782f64ee17'],1,1,2,1,,,
+9858faeac4b9966e0152ca7139b6ddff3d32b7a1,"Bump reorder-python-imports from 2.3.6 to 2.4.0
+
+Bumps [reorder-python-imports](https://github.com/asottile/reorder_python_imports) from 2.3.6 to 2.4.0.
+- [Release notes](https://github.com/asottile/reorder_python_imports/releases)
+- [Commits](https://github.com/asottile/reorder_python_imports/compare/v2.3.6...v2.4.0)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-08 05:27:01+00:00,0,2021-02-08 05:27:01+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['e22f7567aadc95a069d12d0d1fb6d1782f64ee17'],5,5,10,2,,,
+4297bf54fac30c59e1f5ff54b2a4f15377e4debf,"Bump pre-commit from 2.10.0 to 2.10.1
+
+Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 2.10.0 to 2.10.1.
+- [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- [Changelog](https://github.com/pre-commit/pre-commit/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/pre-commit/pre-commit/compare/v2.10.0...v2.10.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-08 20:38:15+00:00,0,2021-02-08 20:38:15+00:00,0,True,False,"['poetry.lock', 'pyproject.toml']",['f21923a046a99270d7770f6bf3a8bb6d8c862fee'],5,5,10,2,,,
+003141f18ef3a1eddddb50c5fc795712ed9589d8,"Bump pypa/gh-action-pypi-publish from v1.4.1 to v1.4.2
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from v1.4.1 to v1.4.2.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.4.1...27b31702a0e7fc50959f5ad993c78deac1bdfc29)
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-09 05:16:54+00:00,0,2021-02-09 05:16:54+00:00,0,True,False,['release.yml'],['f21923a046a99270d7770f6bf3a8bb6d8c862fee'],2,2,4,1,,,
+929aa9f4b361cc36064e4e1914420e1f5ddb0f56,Archive notes,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-02-13 15:56:22+01:00,-3600,2021-02-13 15:56:22+01:00,-3600,True,False,"['README.rst', 'pyproject.toml']",['2373d96cf3ea7673140923e9daf217716b416763'],7,9,16,2,,,
+6a24e3552ee5ef6447194c7f451d7aa14c9502de,2.4.1,staticdev,thiagocavila@gmail.com,staticdev,thiagocavila@gmail.com,2021-02-13 16:00:32+01:00,-3600,2021-02-13 16:00:32+01:00,-3600,True,False,['pyproject.toml'],['4ae8fad05e5237b9e5a2ca86e215a9a72df47ea5'],1,1,2,1,,,

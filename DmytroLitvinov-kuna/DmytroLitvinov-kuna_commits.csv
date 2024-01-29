@@ -1,0 +1,1230 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+a3db351fff6b20e8d521ce79db9ffab391b53a20,Generate template,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-28 20:02:38+03:00,-10800,2017-10-28 20:02:38+03:00,-10800,True,False,"['.editorconfig', 'ISSUE_TEMPLATE.md', '.gitignore', 'vcs.xml', 'workspace.xml', '.travis.yml', 'AUTHORS.rst', 'CONTRIBUTING.rst', 'HISTORY.rst', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.rst', '.gitignore', 'Makefile', 'authors.rst', 'conf.py', 'contributing.rst', 'history.rst', 'index.rst', 'installation.rst', 'make.bat', 'readme.rst', 'usage.rst', '__init__.py', 'cli.py', 'kuna.py', 'requirements_dev.txt', 'setup.cfg', 'setup.py', '__init__.py', 'test_kuna.py', 'tox.ini', 'travis_pypi_setup.py']",[],0,1686,1686,34,1.0,1.0,1.0
+1c9186a4ae87ef53fbaeca3a0cc2e8fe4a123ad2,Add public methods without unittests,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-28 21:26:10+03:00,-10800,2017-10-29 15:49:44+02:00,-7200,True,False,"['.gitignore', 'vcs.xml', 'workspace.xml', '.travis.yml', 'CONTRIBUTING.rst', 'HISTORY.rst', 'README.rst', 'kuna.py', 'requirements_dev.txt', 'setup.cfg', 'setup.py', 'test_kuna.py', 'tox.ini']",['a3db351fff6b20e8d521ce79db9ffab391b53a20'],235,199,434,13,0.6666666666666666,0.6666666666666666,0.6666666666666666
+6d9f6583bfe1548fee261f62e44b9bd8ae492b72,Changelog for upcoming release 0.2.0,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-29 15:51:48+02:00,-7200,2017-10-29 15:59:11+02:00,-7200,True,False,"['HISTORY.rst', 'setup.cfg']",['1c9186a4ae87ef53fbaeca3a0cc2e8fe4a123ad2'],0,9,9,2,,,
+a9fe8a7c83caad229b3c251879516f5166cd2a47,Bump version: 0.1.0 → 0.2.0,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-29 16:00:12+02:00,-7200,2017-10-29 16:00:12+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['6d9f6583bfe1548fee261f62e44b9bd8ae492b72'],3,3,6,3,,,
+4fd9f6cb677b2f574e32af9b5908e254a67c66bd,Add User methods (#5),Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,GitHub,noreply@github.com,2017-10-29 21:10:06+02:00,-7200,2017-10-29 21:10:06+02:00,-7200,True,False,"['HISTORY.rst', 'kuna.py', 'setup.cfg', 'test_kuna.py']",['a9fe8a7c83caad229b3c251879516f5166cd2a47'],30,142,172,4,0.8913043478260869,0.8913043478260869,0.34782608695652173
+4585c308014e10c1836c56ef34122e95e49c1b10,Update HISTORY,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-29 21:12:25+02:00,-7200,2017-10-29 21:12:25+02:00,-7200,True,False,['HISTORY.rst'],['4fd9f6cb677b2f574e32af9b5908e254a67c66bd'],7,5,12,1,,,
+b88110e578ddcd06df315831a5df70d14844100a,Bump version: 0.2.0 → 0.2.1,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-29 21:12:36+02:00,-7200,2017-10-29 21:12:36+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['4585c308014e10c1836c56ef34122e95e49c1b10'],3,3,6,3,,,
+5847dc41f4c6143556ba9fbf3afd0435bac75ebd,Refactor: speed up with string concatenation and change code of getting signature; improve docs (#7),Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,GitHub,noreply@github.com,2017-10-31 10:58:12+02:00,-7200,2017-10-31 10:58:12+02:00,-7200,True,False,"['.travis.yml', 'AUTHORS.rst', 'README.rst', 'index.rst', 'readme.rst', 'usage.rst', 'kuna.py', 'requirements_dev.txt']",['b88110e578ddcd06df315831a5df70d14844100a'],51,47,98,8,0.4,0.4,1.0
+a3942417dbca5b6328645e6d774364756bd2650d,Changelog for release 0.2.2.,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-31 11:03:14+02:00,-7200,2017-10-31 11:03:14+02:00,-7200,True,False,['HISTORY.rst'],['5847dc41f4c6143556ba9fbf3afd0435bac75ebd'],0,8,8,1,,,
+ed5a60fa9a3996295820f87fb43af744d0dd9a38,Bump version: 0.2.1 → 0.2.2,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-31 11:03:22+02:00,-7200,2017-10-31 11:03:22+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['a3942417dbca5b6328645e6d774364756bd2650d'],3,3,6,3,,,
+28c7507636d8d839ffaeea7a0e306c99e658619c,Fix error in HISTORY.rst,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-31 11:09:44+02:00,-7200,2017-10-31 11:09:44+02:00,-7200,True,False,['HISTORY.rst'],['ed5a60fa9a3996295820f87fb43af744d0dd9a38'],1,1,2,1,,,
+95ab63912cf32b6b1ef7307cc787488e27e5aaaa,Fix travis.yml,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-31 11:54:00+02:00,-7200,2017-10-31 11:54:00+02:00,-7200,True,False,['.travis.yml'],['28c7507636d8d839ffaeea7a0e306c99e658619c'],1,14,15,1,,,
+99fabdfb1ba83c98ea156d5e9bbfa8bdd3b3bf2d,Add new pair (#8),Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,GitHub,noreply@github.com,2017-10-31 22:00:47+02:00,-7200,2017-10-31 22:00:47+02:00,-7200,True,False,['kuna.py'],['95ab63912cf32b6b1ef7307cc787488e27e5aaaa'],2,2,4,1,,,
+dbae24d5f9e6c1e7e8fbb96617983937dcf9f196,Changelog for upcoming release 0.2.3.,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-31 22:21:24+02:00,-7200,2017-10-31 22:21:24+02:00,-7200,True,False,['HISTORY.rst'],['99fabdfb1ba83c98ea156d5e9bbfa8bdd3b3bf2d'],0,6,6,1,,,
+8ac6d1f1aae2aae19a8d06d8a74b8cbb78c25b32,Bump version: 0.2.2 → 0.2.3,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-10-31 22:21:40+02:00,-7200,2017-10-31 22:21:40+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['dbae24d5f9e6c1e7e8fbb96617983937dcf9f196'],3,3,6,3,,,
+7603aa440ed114c289b1e2e614bc7f749c6e013d,Fix bug with assorted params for generate signature; Changelog for upcoming release 0.2.4,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-11-07 23:00:56+02:00,-7200,2017-11-07 23:00:56+02:00,-7200,True,False,"['HISTORY.rst', 'kuna.py']",['8ac6d1f1aae2aae19a8d06d8a74b8cbb78c25b32'],1,8,9,2,1.0,1.0,0.0
+6e7458690830a4261770f5dd4a70c5090b94af03,Bump version: 0.2.3 → 0.2.4,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-11-07 23:01:05+02:00,-7200,2017-11-07 23:01:05+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['7603aa440ed114c289b1e2e614bc7f749c6e013d'],3,3,6,3,,,
+3888e66a81d5c27f3f470cb22946e5ecd564f91d,Create CODE_OF_CONDUCT.md,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,GitHub,noreply@github.com,2017-11-12 20:34:37+02:00,-7200,2017-11-12 20:34:37+02:00,-7200,True,False,['CODE_OF_CONDUCT.md'],['6e7458690830a4261770f5dd4a70c5090b94af03'],0,46,46,1,,,
+0b91da3850c158ff042314cdfdd55983d8d7e818,"Fix market pair golos-gbg and also add new pairs (#9)
+
+* Fix market pair golos-gbg and also add new pairs
+
+* Changelog for upcoming release 0.2.5.",Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,GitHub,noreply@github.com,2017-12-31 11:10:58+02:00,-7200,2017-12-31 11:10:58+02:00,-7200,True,False,"['HISTORY.rst', 'kuna.py']",['3888e66a81d5c27f3f470cb22946e5ecd564f91d'],1,8,9,2,,,
+6fec212ccd43dec9e4bf8ed5d1e42fd1a9d88493,Bump version: 0.2.4 → 0.2.5,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2017-12-31 11:13:51+02:00,-7200,2017-12-31 11:13:51+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['0b91da3850c158ff042314cdfdd55983d8d7e818'],3,3,6,3,,,
+321867927099ad07ce6758f98c73e454c30d2e25,Changelog for upcoming release 0.2.6.,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-01-06 10:13:55+02:00,-7200,2018-01-06 10:13:55+02:00,-7200,True,False,"['HISTORY.rst', 'kuna.py']",['6fec212ccd43dec9e4bf8ed5d1e42fd1a9d88493'],1,7,8,2,,,
+f5cc27ac28bae4438a87f17b15bacae8a47d4239,Bump version: 0.2.5 → 0.2.6,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-01-06 10:15:18+02:00,-7200,2018-01-06 10:15:18+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['321867927099ad07ce6758f98c73e454c30d2e25'],3,3,6,3,,,
+81808c3c2072111055e424cbe1cdc2c32a4505c0,Fix HISTORY file,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-02-03 19:03:56+02:00,-7200,2018-02-03 19:03:56+02:00,-7200,True,False,['HISTORY.rst'],['f5cc27ac28bae4438a87f17b15bacae8a47d4239'],1,1,2,1,,,
+85f33cea5713d841ed8f422e976834d1cbcd6df5,Changelog for upcoming release 0.2.7,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-02-09 13:02:05+02:00,-7200,2018-02-09 13:02:05+02:00,-7200,True,False,"['HISTORY.rst', 'kuna.py']",['81808c3c2072111055e424cbe1cdc2c32a4505c0'],2,8,10,2,,,
+e1d631e23845153b8d18c4f9ad37c98dba0bf3e1,Bump version: 0.2.6 → 0.2.7,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-02-09 13:02:56+02:00,-7200,2018-02-09 13:02:56+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['85f33cea5713d841ed8f422e976834d1cbcd6df5'],3,3,6,3,,,
+da98d449cd22f051f768a62e1a73c00d7aa4d1c3,Fix gramma error,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-02-09 13:20:24+02:00,-7200,2018-02-09 13:20:24+02:00,-7200,True,False,['HISTORY.rst'],['e1d631e23845153b8d18c4f9ad37c98dba0bf3e1'],1,1,2,1,,,
+78ad489c19718704e9f7b0438bd89fa7c8ab31c4,Changelog for upcoming release 0.2.8; fix response code; add newpairs,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-02-13 21:02:52+02:00,-7200,2018-02-13 21:02:52+02:00,-7200,True,False,"['HISTORY.rst', 'kuna.py']",['da98d449cd22f051f768a62e1a73c00d7aa4d1c3'],2,8,10,2,,,
+8b6756738fe5665b7655397066fa265de8f37167,Bump version: 0.2.7 → 0.2.8,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-02-14 08:35:12+02:00,-7200,2018-02-14 08:35:12+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['78ad489c19718704e9f7b0438bd89fa7c8ab31c4'],3,3,6,3,,,
+5acaafbf2fc2230cf172524a2b43885478b1ce51,Changelog for upcoming release 0.2.9; add new pair,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-03-11 20:32:15+02:00,-7200,2018-03-11 20:32:15+02:00,-7200,True,False,"['HISTORY.rst', 'kuna.py']",['8b6756738fe5665b7655397066fa265de8f37167'],1,8,9,2,,,
+c4223683a052995b6135563aa87e4050a0491e3d,Bump version: 0.2.8 → 0.2.9,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-03-11 20:34:39+02:00,-7200,2018-03-11 20:34:39+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['5acaafbf2fc2230cf172524a2b43885478b1ce51'],3,3,6,3,,,
+d85a671b24ebb9129e06e0132743cd77ecea96d3,Add section about deploy,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-03-11 20:37:23+02:00,-7200,2018-03-11 20:37:23+02:00,-7200,True,False,['README.rst'],['c4223683a052995b6135563aa87e4050a0491e3d'],0,5,5,1,,,
+e14cdcb9c4f5f15d837795baaa86d9c34ccdfa9a,Add support of new pairs. Changelog for upcoming release 0.2.10.,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-03-17 13:51:56+02:00,-7200,2018-03-17 13:51:56+02:00,-7200,True,False,"['HISTORY.rst', 'kuna.py']",['d85a671b24ebb9129e06e0132743cd77ecea96d3'],1,7,8,2,,,
+6570cfc9b7f34d12a2e3d7b1449cdd61c6fe183d,Bump version: 0.2.9 → 0.2.10,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-03-17 13:54:56+02:00,-7200,2018-03-17 13:54:56+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['e14cdcb9c4f5f15d837795baaa86d9c34ccdfa9a'],3,3,6,3,,,
+fa4e15e9946febaca0d53fc5f5f50831032dc976,Reorganize paris as in UI at kuna,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-03-20 22:44:27+02:00,-7200,2018-03-20 22:44:27+02:00,-7200,True,False,['kuna.py'],['6570cfc9b7f34d12a2e3d7b1449cdd61c6fe183d'],3,3,6,1,,,
+8bbf15e2a1f34264ef3abaab667359ce2a5494ad,Changelog for upcoming release 0.2.11.,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-03-20 23:03:38+02:00,-7200,2018-03-20 23:03:38+02:00,-7200,True,False,"['HISTORY.rst', 'kuna.py']",['fa4e15e9946febaca0d53fc5f5f50831032dc976'],1,7,8,2,,,
+d45dca4eb7729068238762b59534d09aebd34e34,Bump version: 0.2.10 → 0.2.11,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-03-20 23:03:52+02:00,-7200,2018-03-20 23:03:52+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['8bbf15e2a1f34264ef3abaab667359ce2a5494ad'],3,3,6,3,,,
+14abc456156bb0a8bf75e963a0678dd6fb69054e,Remove market pair after Kuna's post,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-04-06 21:41:31+03:00,-10800,2018-04-06 21:41:31+03:00,-10800,True,False,"['HISTORY.rst', 'kuna.py']",['d45dca4eb7729068238762b59534d09aebd34e34'],1,7,8,2,,,
+643b9966dd7fdb3490e6d5152a532474701c0d6f,Bump version: 0.2.11 → 0.2.12,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-04-06 21:41:42+03:00,-10800,2018-04-06 21:41:42+03:00,-10800,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['14abc456156bb0a8bf75e963a0678dd6fb69054e'],3,3,6,3,,,
+9e3dc3b1278f0dca9a6156b30b56d9314b2b461f,Remove a strict binding to market pairs; add changelog,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-04-29 11:41:45+03:00,-10800,2018-04-29 11:41:45+03:00,-10800,True,False,"['HISTORY.rst', 'kuna.py']",['643b9966dd7fdb3490e6d5152a532474701c0d6f'],19,12,31,2,0.0,0.0,0.16666666666666666
+1c80b4b26d862dc9302b23576ff28452a6fccdf5,Bump version: 0.2.12 → 0.3.0,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-04-29 11:41:58+03:00,-10800,2018-04-29 11:41:58+03:00,-10800,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['9e3dc3b1278f0dca9a6156b30b56d9314b2b461f'],3,3,6,3,,,
+bf50e7c3dc61543dbd1baa339dd2e2984ee3c871,Refactor travis file,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-04-29 11:54:07+03:00,-10800,2018-04-29 11:54:07+03:00,-10800,True,False,['.travis.yml'],['1c80b4b26d862dc9302b23576ff28452a6fccdf5'],13,20,33,1,,,
+6e012b4abf15961cdc113087148b2bcde7ab8b71,Add pyup configuration file,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-04-29 13:26:48+03:00,-10800,2018-04-29 13:26:48+03:00,-10800,True,False,['.pyup.yml'],['bf50e7c3dc61543dbd1baa339dd2e2984ee3c871'],0,17,17,1,,,
+fcdb56f70bf12a1b92763cf8de06288c68c498cf,"Update dependencies
+
+* Update pip from 8.1.2 to 10.0.1
+
+* Update wheel from 0.29.0 to 0.31.0
+
+* Update flake8 from 2.6.0 to 3.5.0
+
+* Update tox from 2.3.1 to 3.0.0
+
+* Update coverage from 4.1 to 4.5.1
+
+* Update sphinx from 1.6.5 to 1.7.4
+
+* Update cryptography from 1.7 to 2.2.2
+
+* Update pyyaml from 3.11 to 3.12
+
+* Update twine from 1.9.1 to 1.11.0",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-04-29 12:37:30+02:00,-7200,2018-04-29 13:37:30+03:00,-10800,True,False,['requirements_dev.txt'],['6e012b4abf15961cdc113087148b2bcde7ab8b71'],9,9,18,1,,,
+6fad88ffe01e643ea6246fe1dee6c599fadf633d,"Make tonce more granular (#12)
+
+Currently, there is no way to send more than one request per second without triggering `tonce` errors",Vsevolod Lobko,seva@sevik.org,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-05-11 12:48:43+03:00,-10800,2018-05-11 12:48:43+03:00,-10800,True,False,['kuna.py'],['fcdb56f70bf12a1b92763cf8de06288c68c498cf'],1,1,2,1,,,
+bcd1777e9caa4640d121f40b7e492bc472b37730,Changelog for upcoming release 0.3.1.,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-05-11 12:55:02+03:00,-10800,2018-05-11 12:55:02+03:00,-10800,True,False,"['AUTHORS.rst', 'HISTORY.rst']",['6fad88ffe01e643ea6246fe1dee6c599fadf633d'],1,6,7,2,,,
+9cdeddf285ce683cb13e3dde6bbba7e579baf6fa,Bump version: 0.3.0 → 0.3.1,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-05-11 12:55:14+03:00,-10800,2018-05-11 12:55:14+03:00,-10800,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['bcd1777e9caa4640d121f40b7e492bc472b37730'],3,3,6,3,,,
+c6f43351c4f3b552e160beb21198c21c596d5187,Fix HISTORY.rst for Pypi,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-05-11 13:13:32+03:00,-10800,2018-05-11 13:13:32+03:00,-10800,True,False,['HISTORY.rst'],['9cdeddf285ce683cb13e3dde6bbba7e579baf6fa'],3,3,6,1,,,
+4d7496a8746f7ce6bbce8caf584063bdfcddcde1,Bump version: 0.3.1 → 0.3.2,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-05-11 13:14:27+03:00,-10800,2018-05-11 13:14:27+03:00,-10800,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['c6f43351c4f3b552e160beb21198c21c596d5187'],3,3,6,3,,,
+1c54f040175d7e8a88b3cce80b5c5d015e0b0e54,Add changelog,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-05-11 13:18:06+03:00,-10800,2018-05-11 13:18:06+03:00,-10800,True,False,['HISTORY.rst'],['4d7496a8746f7ce6bbce8caf584063bdfcddcde1'],0,6,6,1,,,
+e7213a5ed0045fc71a24d234c896fe0f83a34a50,"Update wheel from 0.31.0 to 0.31.1.
+
+Scheduled weekly dependency update for week 19",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-05-15 06:18:00+02:00,-7200,2018-05-15 07:18:00+03:00,-10800,True,False,['requirements_dev.txt'],['1c54f040175d7e8a88b3cce80b5c5d015e0b0e54'],1,1,2,1,,,
+caba41d5ba8551387949938b1698b7369b882fa1,"Scheduled weekly dependency update for week 22 (#14)
+
+
+
+
+
+### Update [Sphinx](https://pypi.org/project/Sphinx) from **1.7.4** to **1.7.5**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 1.7.5
+   ```
+   =====================================
+
+Bugs fixed
+----------
+
+* 4924: html search: Upper characters problem in any other languages
+* 4932: apidoc: some subpackage is ignored if sibling subpackage contains a
+  module starting with underscore
+* 4863, 4938, 4939: i18n doesn&#39;t handle node.title correctly tat used for
+  contents, topic, admonition, table and section.
+* 4913: i18n: literal blocks in bullet list are not translated
+* 4962: C++, raised TypeError on duplicate declaration.
+* 4825: C++, properly parse expr roles and give better error messages when
+  (escaped) line breaks are present.
+* C++, properly use ``desc_addname`` nodes for prefixes of names.
+* C++, parse pack expansions in function calls.
+* 4915, 4916: links on search page are broken when using dirhtml builder
+* 4969: autodoc: constructor method should not have return annotation
+* latex: deeply nested enumerated list which is beginning with non-1 causes
+  LaTeX engine crashed
+* 4978: latex: shorthandoff is not set up for Brazil locale
+* 4928: i18n: Ignore dot-directories like .git/ in LC_MESSAGES/
+* 4946: py domain: type field could not handle &quot;None&quot; as a type
+* 4979: latex: Incorrect escaping of curly braces in index entries
+* 4956: autodoc: Failed to extract document from a subclass of the class on
+  mocked module
+* 4973: latex: glossary directive adds whitespace to each item
+* 4980: latex: Explicit labels on code blocks are duplicated
+* 4919: node.asdom() crashes if toctree has :numbered: option
+* 4914: autodoc: Parsing error when using dataclasses without default values
+* 4931: autodoc: crashed when handler for autodoc-skip-member raises an error
+* 4931: autodoc: crashed when subclass of mocked class are processed by
+  napoleon module
+* 5007: sphinx-build crashes when error log contains a &quot;%&quot; character
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/sphinx
+  - Changelog: https://pyup.io/changelogs/sphinx/
+  - Homepage: http://sphinx-doc.org/
+</details>",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-06-04 22:47:56+02:00,-7200,2018-06-04 23:47:56+03:00,-10800,True,False,['requirements_dev.txt'],['e7213a5ed0045fc71a24d234c896fe0f83a34a50'],1,1,2,1,,,
+8d293d479d42e35249daa98c7d85b021f6358220,Add configuration file for bots,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-07-13 07:53:57+03:00,-10800,2018-07-13 07:53:57+03:00,-10800,True,False,['config.yml'],['1c54f040175d7e8a88b3cce80b5c5d015e0b0e54'],0,33,33,1,,,
+c73ea9f461bd75791b189a291eb41ce61f535489,"Scheduled weekly dependency update for week 31 (#19)
+
+
+
+
+
+### Update [pip](https://pypi.org/project/pip) from **10.0.1** to **18.0**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 18.0
+   ```
+   =================
+
+Process
+-------
+
+- Switch to a Calendar based versioning scheme.
+- Formally document our deprecation process as a minimum of 6 months of deprecation
+  warnings.
+- Adopt and document NEWS fragment writing style.
+- Switch to releasing a new, non bug fix version of pip every 3 months.
+
+Deprecations and Removals
+-------------------------
+
+- Remove the legacy format from pip list. (3651, 3654)
+- Dropped support for Python 3.3. (3796)
+- Remove support for cleaning up egg fragment postfixes. (4174)
+- Remove the shim for the old get-pip.py location. (5520)
+
+  For the past 2 years, it&#39;s only been redirecting users to use the newer
+  https://bootstrap.pypa.io/get-pip.py location.
+
+Features
+--------
+
+- Introduce a new --prefer-binary flag, to prefer older wheels over newer source packages. (3785)
+- Improve autocompletion function on file name completion after options
+  which have ``&lt;file&gt;``, ``&lt;dir&gt;`` or ``&lt;path&gt;`` as metavar. (4842, 5125)
+- Add support for installing PEP 518 build dependencies from source. (5229)
+- Improve status message when upgrade is skipped due to only-if-needed strategy. (5319)
+
+Bug Fixes
+---------
+
+- Update pip&#39;s self-check logic to not use a virtualenv specific file and honor cache-dir. (3905)
+- Remove compiled pyo files for wheel packages. (4471)
+- Speed up printing of newly installed package versions. (5127)
+- Restrict install time dependency warnings to directly-dependant packages. (5196, 5457)
+
+  Warning about the entire package set has resulted in users getting confused as
+  to why pip is printing these warnings.
+- Improve handling of PEP 518 build requirements: support environment markers and extras. (5230, 5265)
+- Remove username/password from log message when using index with basic auth. (5249)
+- Remove trailing os.sep from PATH directories to avoid false negatives. (5293)
+- Fix &quot;pip wheel pip&quot; being blocked by the &quot;don&#39;t use pip to modify itself&quot; check. (5311, 5312)
+- Disable pip&#39;s version check (and upgrade message) when installed by a different package manager. (5346)
+
+  This works better with Linux distributions where pip&#39;s upgrade message may
+  result in users running pip in a manner that modifies files that should be
+  managed by the OS&#39;s package manager.
+- Check for file existence and unlink first when clobbering existing files during a wheel install. (5366)
+- Improve error message to be more specific when no files are found as listed in as listed in PKG-INFO. (5381)
+- Always read ``pyproject.toml`` as UTF-8. This fixes Unicode handling on Windows and Python 2. (5482)
+- Fix a crash that occurs when PATH not set, while generating script location warning. (5558)
+- Disallow packages with ``pyproject.toml`` files that have an empty build-system table. (5627)
+
+Vendored Libraries
+------------------
+
+- Update CacheControl to 0.12.5.
+- Update certifi to 2018.4.16.
+- Update distro to 1.3.0.
+- Update idna to 2.7.
+- Update ipaddress to 1.0.22.
+- Update pkg_resources to 39.2.0 (via setuptools).
+- Update progress to 1.4.
+- Update pytoml to 0.1.16.
+- Update requests to 2.19.1.
+- Update urllib3 to 1.23.
+
+Improved Documentation
+----------------------
+
+- Document how to use pip with a proxy server. (512, 5574)
+- Document that the output of pip show is in RFC-compliant mail header format. (5261)
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/pip
+  - Changelog: https://pyup.io/changelogs/pip/
+  - Homepage: https://pip.pypa.io/
+</details>
+
+
+
+
+
+### Update [tox](https://pypi.org/project/tox) from **3.0.0** to **3.1.3**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 3.1.2
+   ```
+   ------------------
+
+Bugfixes
+^^^^^^^^
+
+- Revert &quot;Fix bug with incorrectly defactorized dependencies (`772 &lt;https://github.com/tox-dev/tox/issues/772&gt;`_)&quot; due to a regression (`(799) &lt;https://github.com/tox-dev/tox/issues/899&gt;`_) - by :user:`obestwalter`
+   ```
+   
+  
+  
+   ### 3.1.1
+   ```
+   ------------------
+
+Bugfixes
+^^^^^^^^
+
+- PyPi documentation for ``3.1.0`` is broken. Added test to check for this, and
+  fix it by :user:`gaborbernat`. (`879
+  &lt;https://github.com/tox-dev/tox/issues/879&gt;`_)
+   ```
+   
+  
+  
+   ### 3.1.0
+   ```
+   ------------------
+
+Bugfixes
+^^^^^^^^
+
+- Add ``ignore_basepython_conflict``, which determines whether conflicting
+  ``basepython`` settings for environments containing default factors, such as
+  ``py27`` or ``django18-py35``, should be ignored or result in warnings. This
+  was a common source of misconfiguration and is rarely, if ever, desirable from
+  a user perspective - by :user:`stephenfin` (`477 &lt;https://github.com/tox-dev/tox/issues/477&gt;`_)
+- Fix bug with incorrectly defactorized dependencies (deps passed to pip were not de-factorized) - by :user:`bartsanchez` (`706 &lt;https://github.com/tox-dev/tox/issues/706&gt;`_)
+
+
+Features
+^^^^^^^^
+
+- Add support for multiple PyPy versions using default factors. This allows you
+  to use, for example, ``pypy27`` knowing that the correct intepreter will be
+  used by default - by :user:`stephenfin` (`19 &lt;https://github.com/tox-dev/tox/issues/19&gt;`_)
+- Add support to explicitly invoke interpreter directives for environments with
+  long path lengths. In the event that ``tox`` cannot invoke scripts with a
+  system-limited shebang (e.x. a Linux host running a Jenkins Pipeline), a user
+  can set the environment variable ``TOX_LIMITED_SHEBANG`` to workaround the
+  system&#39;s limitation (e.x. ``export TOX_LIMITED_SHEBANG=1``) - by :user:`jdknight` (`794 &lt;https://github.com/tox-dev/tox/issues/794&gt;`_)
+- introduce a constants module to be used internally and as experimental API - by :user:`obestwalter` (`798 &lt;https://github.com/tox-dev/tox/issues/798&gt;`_)
+- Make ``py2`` and ``py3`` aliases also resolve via ``py`` on windows by :user:`asottile`. This enables the following things:
+  ``tox -e py2`` and ``tox -e py3`` work on windows (they already work on posix); and setting ``basepython=python2`` or ``basepython=python3`` now works on windows. (`856 &lt;https://github.com/tox-dev/tox/issues/856&gt;`_)
+- Replace the internal version parsing logic from the not well tested `PEP-386 &lt;https://www.python.org/dev/peps/pep-0386/&gt;`_ parser for the more general `PEP-440 &lt;https://www.python.org/dev/peps/pep-0440/&gt;`_. `packaging &gt;= 17.1 &lt;https://pypi.org/project/packaging/&gt;`_ is now an install dependency by :user:`gaborbernat`. (`860 &lt;https://github.com/tox-dev/tox/issues/860&gt;`_)
+
+
+Documentation
+^^^^^^^^^^^^^
+
+- extend the plugin documentation and make lot of small fixes and improvements - by :user:`obestwalter` (`797 &lt;https://github.com/tox-dev/tox/issues/797&gt;`_)
+- tidy up tests - remove unused fixtures, update old cinstructs, etc. - by :user:`obestwalter` (`799 &lt;https://github.com/tox-dev/tox/issues/799&gt;`_)
+- Various improvements to documentation: open browser once documentation generation is done, show Github/Travis info on documentation page, remove duplicate header for changelog, generate unreleased news as DRAFT on top of changelog, make the changelog page more compact and readable (width up to 1280px) by :user:`gaborbernat` (`859 &lt;https://github.com/tox-dev/tox/issues/859&gt;`_)
+
+
+Miscellaneous
+^^^^^^^^^^^^^
+
+- filter out unwanted files in package - by :user:`obestwalter` (`754 &lt;https://github.com/tox-dev/tox/issues/754&gt;`_)
+- make the already existing implicit API explicit - by :user:`obestwalter` (`800 &lt;https://github.com/tox-dev/tox/issues/800&gt;`_)
+- improve tox quickstart and corresponding tests - by :user:`obestwalter` (`801 &lt;https://github.com/tox-dev/tox/issues/801&gt;`_)
+- tweak codecov settings via .codecov.yml - by :user:`obestwalter` (`802 &lt;https://github.com/tox-dev/tox/issues/802&gt;`_)
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/tox
+  - Changelog: https://pyup.io/changelogs/tox/
+  - Docs: https://tox.readthedocs.org/
+</details>
+
+
+
+
+
+### Update [Sphinx](https://pypi.org/project/Sphinx) from **1.7.5** to **1.7.6**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 1.7.6
+   ```
+   ==============================
+
+Dependencies
+------------
+
+Incompatible changes
+--------------------
+
+Deprecated
+----------
+
+Features added
+--------------
+
+Bugs fixed
+----------
+
+* 5037: LaTeX ``\sphinxupquote{}`` breaks in Russian
+* sphinx.testing uses deprecated pytest API; ``Node.get_marker(name)``
+* 5016: crashed when recommonmark.AutoStrictify is enabled
+* 5022: latex: crashed with docutils package provided by Debian/Ubuntu
+* 5009: latex: a label for table is vanished if table does not have a caption
+* 5048: crashed with numbered toctree
+* 2410: C, render empty argument lists for macros.
+* C++, fix lookup of full template specializations with no template arguments.
+* 4667: C++, fix assertion on missing references in global scope when using
+  intersphinx. Thanks to Alan M. Carroll.
+* 5019: autodoc: crashed by Form Feed Character
+* 5032: autodoc: loses the first staticmethod parameter for old styled classes
+* 5036: quickstart: Typing Ctrl-U clears the whole of line
+* 5066: html: &quot;relations&quot; sidebar is not shown by default
+* 5091: latex: curly braces in index entries are not handled correctly
+* 5070: epub: Wrong internal href fragment links
+* 5104: apidoc: Interface of ``sphinx.apidoc:main()`` has changed
+* 5076: napoleon raises RuntimeError with python 3.7
+* 5125: sphinx-build: Interface of ``sphinx:main()`` has changed
+* sphinx-build: ``sphinx.cmd.build.main()`` refers ``sys.argv`` instead of given
+  argument
+* 5146: autosummary: warning is emitted when the first line of docstring ends
+  with literal notation
+* autosummary: warnings of autosummary indicates wrong location (refs: 5146)
+* 5143: autodoc: crashed on inspecting dict like object which does not support
+  sorting
+
+Testing
+--------
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/sphinx
+  - Changelog: https://pyup.io/changelogs/sphinx/
+  - Homepage: http://sphinx-doc.org/
+</details>
+
+
+
+
+
+### Update [cryptography](https://pypi.org/project/cryptography) from **2.2.2** to **2.3**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 2.3
+   ```
+   ~~~~~~~~~~~~~~~~
+
+* **SECURITY ISSUE:**
+  :meth:`~cryptography.hazmat.primitives.ciphers.AEADDecryptionContext.finalize_with_tag`
+  allowed tag truncation by default which can allow tag forgery in some cases.
+  The method now enforces the ``min_tag_length`` provided to the
+  :class:`~cryptography.hazmat.primitives.ciphers.modes.GCM` constructor.
+  *CVE-2018-10903*
+* Added support for Python 3.7.
+* Added :meth:`~cryptography.fernet.Fernet.extract_timestamp` to get the
+  authenticated timestamp of a :doc:`Fernet &lt;/fernet&gt;` token.
+* Support for Python 2.7.x without ``hmac.compare_digest`` has been deprecated.
+  We will require Python 2.7.7 or higher (or 2.7.6 on Ubuntu) in the next
+  ``cryptography`` release.
+* Fixed multiple issues preventing ``cryptography`` from compiling against
+  LibreSSL 2.7.x.
+* Added
+  :class:`~cryptography.x509.CertificateRevocationList.get_revoked_certificate_by_serial_number`
+  for quick serial number searches in CRLs.
+* The :class:`~cryptography.x509.RelativeDistinguishedName` class now
+  preserves the order of attributes. Duplicate attributes now raise an error
+  instead of silently discarding duplicates.
+* :func:`~cryptography.hazmat.primitives.keywrap.aes_key_unwrap` and
+  :func:`~cryptography.hazmat.primitives.keywrap.aes_key_unwrap_with_padding`
+  now raise :class:`~cryptography.hazmat.primitives.keywrap.InvalidUnwrap` if
+  the wrapped key is an invalid length, instead of ``ValueError``.
+
+.. _v2-2-2:
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/cryptography
+  - Changelog: https://pyup.io/changelogs/cryptography/
+  - Repo: https://github.com/pyca/cryptography
+</details>
+
+
+
+
+
+### Update [PyYAML](https://pypi.org/project/PyYAML) from **3.12** to **3.13**.
+
+
+*The bot wasn't able to find a changelog for this release. [Got an idea?](https://github.com/pyupio/changelogs/issues/new)*
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/pyyaml
+  - Homepage: http://pyyaml.org/wiki/PyYAML
+</details>",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-08-06 19:11:54+02:00,-7200,2018-08-06 20:11:54+03:00,-10800,True,False,['requirements_dev.txt'],['25e1378073f188c747da7ea0ad9bfc947991cd05'],5,5,10,1,,,
+8797a019ac195f97a7610fcb1a966cd0ff15a781,"Scheduled weekly dependency update for week 33 (#21)
+
+
+
+
+
+### Update [tox](https://pypi.org/project/tox) from **3.1.3** to **3.2.1**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 3.2.0
+   ```
+   ------------------
+
+Features
+^^^^^^^^
+
+- Switch pip invocations to use the module ``-m pip`` instead of direct invocation. This could help
+  avoid some of the shebang limitations.  - by :user:`gaborbernat` (`935 &lt;https://github.com/tox-dev/tox/issues/935&gt;`_)
+- Ability to specify package requirements for the tox run via the ``tox.ini`` (``tox`` section under key ``requires`` - PEP-508 style): can be used to specify both plugin requirements or build dependencies. - by :user:`gaborbernat` (`783 &lt;https://github.com/tox-dev/tox/issues/783&gt;`_)
+- Allow to run multiple tox instances in parallel by providing the
+  ``--parallel--safe-build`` flag. - by :user:`gaborbernat` (`849 &lt;https://github.com/tox-dev/tox/issues/849&gt;`_)
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/tox
+  - Changelog: https://pyup.io/changelogs/tox/
+  - Docs: https://tox.readthedocs.org/
+</details>
+
+
+
+
+
+### Update [Sphinx](https://pypi.org/project/Sphinx) from **1.7.6** to **1.7.7**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 1.7.7
+   ```
+   =====================================
+
+Bugs fixed
+----------
+
+* 5198: document not in toctree warning when including files only for parallel
+  builds
+* LaTeX: reduce &quot;Token not allowed in a PDF string&quot; hyperref warnings in latex
+  console output (refs: 5236)
+* LaTeX: suppress &quot;remreset Warning: The remreset package is obsolete&quot; in latex
+  console output with recent LaTeX (refs: 5237)
+* 5234: PDF output: usage of PAPER environment variable is broken since Sphinx
+  1.5
+* LaTeX: fix the :confval:`latex_engine` documentation regarding Latin Modern
+  font with XeLaTeX/LuaLateX (refs: 5251)
+* 5280: autodoc: Fix wrong type annotations for complex typing
+* autodoc: Optional types are wrongly rendered
+* 5291: autodoc crashed by ForwardRef types
+* 5211: autodoc: No docs generated for functools.partial functions
+* 5306: autodoc: ``getargspec()`` raises NameError for invalid typehints
+* 5298: imgmath: math_number_all causes equations to have two numbers in html
+* 5294: sphinx-quickstart blank prompts in PowerShell
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/sphinx
+  - Changelog: https://pyup.io/changelogs/sphinx/
+  - Homepage: http://sphinx-doc.org/
+</details>
+
+
+
+
+
+### Update [cryptography](https://pypi.org/project/cryptography) from **2.3** to **2.3.1**.
+
+
+*The bot wasn't able to find a changelog for this release. [Got an idea?](https://github.com/pyupio/changelogs/issues/new)*
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/cryptography
+  - Changelog: https://pyup.io/changelogs/cryptography/
+  - Repo: https://github.com/pyca/cryptography
+</details>",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-08-20 08:12:44-07:00,25200,2018-08-20 18:12:44+03:00,-10800,True,False,['requirements_dev.txt'],['c73ea9f461bd75791b189a291eb41ce61f535489'],3,3,6,1,,,
+0ed7fe8e2b4974aca6ac9d5eb93fea1614486d3b,"Scheduled weekly dependency update for week 36 (#23)
+
+* Update watchdog from 0.8.3 to 0.9.0
+
+* Update sphinx from 1.7.7 to 1.7.9",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-09-10 07:59:48-07:00,25200,2018-09-10 17:59:48+03:00,-10800,True,False,['requirements_dev.txt'],['8797a019ac195f97a7610fcb1a966cd0ff15a781'],2,2,4,1,,,
+078dd3aa26987435c6284b2dcea1be8bbb2ddc8d,Add badge with downloads,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-09-21 12:29:33+03:00,-10800,2018-09-21 12:29:33+03:00,-10800,True,False,['README.rst'],['0ed7fe8e2b4974aca6ac9d5eb93fea1614486d3b'],0,3,3,1,,,
+67b7622bafe2d8e75cc05307fbc86eb2e5a51795,Update sphinx from 1.7.9 to 1.8.0 (#24),pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-09-21 02:31:01-07:00,25200,2018-09-21 12:31:01+03:00,-10800,True,False,['requirements_dev.txt'],['078dd3aa26987435c6284b2dcea1be8bbb2ddc8d'],1,1,2,1,,,
+a2dcd59444bcdccf3cfb100f9ad49dbdf6319b42,"Scheduled weekly dependency update for week 38 (#25)
+
+
+
+
+
+### Update [tox](https://pypi.org/project/tox) from **3.2.1** to **3.4.0**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 3.4.0
+   ```
+   ------------------
+
+Bugfixes
+^^^^^^^^
+
+- add ``--exists-action w`` to default pip flags to handle better VCS dependencies (`pip documentation on this &lt;https://pip.pypa.io/en/latest/reference/pip/exists-action-option&gt;`_) - by :user:`gaborbernat` (`503 &lt;https://github.com/tox-dev/tox/issues/503&gt;`_)
+- instead of assuming the Python version from the base python name ask the interpreter to reveal the version for the ``ignore_basepython_conflict`` flag - by :user:`gaborbernat` (`908 &lt;https://github.com/tox-dev/tox/issues/908&gt;`_)
+- PEP-517 packaging fails with sdist already exists, fixed via ensuring the dist folder is empty before invoking the backend and `pypa/setuptools 1481 &lt;https://github.com/pypa/setuptools/pull/1481&gt;`_ - by :user:`gaborbernat` (`1003 &lt;https://github.com/tox-dev/tox/issues/1003&gt;`_)
+
+
+Features
+^^^^^^^^
+
+- add ``commands_pre`` and ``commands_post`` that run before and after running
+  the ``commands`` (setup runs always, commands only if setup suceeds, teardown always - all
+  run until the first failing command)  - by :user:`gaborbernat` (`167 &lt;https://github.com/tox-dev/tox/issues/167&gt;`_)
+- ``pyproject.toml`` config support initially by just inline the tox.ini under ``tool.tox.legacy_tox_ini`` key; config source priority order is ``pyproject.toml``, ``tox.ini`` and then ``setup.cfg`` - by :user:`gaborbernat` (`814 &lt;https://github.com/tox-dev/tox/issues/814&gt;`_)
+- use the os environment variable ``TOX_SKIP_ENV`` to filter out tox environment names from the run list (set by ``envlist``)  - by :user:`gaborbernat` (`824 &lt;https://github.com/tox-dev/tox/issues/824&gt;`_)
+- always set ``PIP_USER=0`` (do not install into the user site package, but inside the virtual environment created) and ``PIP_NO_DEPS=0`` (installing without dependencies can cause broken package installations) inside tox - by :user:`gaborbernat` (`838 &lt;https://github.com/tox-dev/tox/issues/838&gt;`_)
+- tox will inject some environment variables that to indicate a command is running within tox: ``TOX_WORK_DIR`` env var is set to the tox work directory,
+  ``TOX_ENV_NAME`` is set to the current running tox environment name, ``TOX_ENV_DIR`` is set to the current tox environments working dir - by :user:`gaborbernat` (`847 &lt;https://github.com/tox-dev/tox/issues/847&gt;`_)
+- While running tox invokes various commands (such as building the package, pip installing dependencies and so on), these were printed in case they failed as Python arrays. Changed the representation to a shell command, allowing the users to quickly replicate/debug the failure on their own - by :user:`gaborbernat` (`851 &lt;https://github.com/tox-dev/tox/issues/851&gt;`_)
+- skip missing interpreters value from the config file can now be overridden via the ``--skip-missing-interpreters`` cli flag - by :user:`gaborbernat` (`903 &lt;https://github.com/tox-dev/tox/issues/903&gt;`_)
+- keep additional environments config order when listing them - by :user:`gaborbernat` (`921 &lt;https://github.com/tox-dev/tox/issues/921&gt;`_)
+- allow injecting config value inside the ini file dependent of the fact that we&#39;re connected to an interactive shell or not  - by :user:`gaborbernat` (`947 &lt;https://github.com/tox-dev/tox/issues/947&gt;`_)
+- do not build sdist if skip install is specified for the envs to be run - by :user:`gaborbernat` (`974 &lt;https://github.com/tox-dev/tox/issues/974&gt;`_)
+- when verbosity level increases above two start passing through verbosity flags to pip - by :user:`gaborbernat` (`982 &lt;https://github.com/tox-dev/tox/issues/982&gt;`_)
+- when discovering the interpreter to use check if the tox host Python matches and use that if so - by :user:`gaborbernat` (`994 &lt;https://github.com/tox-dev/tox/issues/994&gt;`_)
+- ``-vv`` will print out why a virtual environment is re-created whenever this operation is triggered - by :user:`gaborbernat` (`1004 &lt;https://github.com/tox-dev/tox/issues/1004&gt;`_)
+
+
+Documentation
+^^^^^^^^^^^^^
+
+- clarify that ``python`` and ``pip`` refer to the virtual environments executable - by :user:`gaborbernat` (`305 &lt;https://github.com/tox-dev/tox/issues/305&gt;`_)
+- add Sphinx and mkdocs example of generating documentation via tox - by :user:`gaborbernat` (`374 &lt;https://github.com/tox-dev/tox/issues/374&gt;`_)
+- specify that ``setup.cfg`` tox configuration needs to be inside the ``tox:tox`` namespace - by :user:`gaborbernat` (`545 &lt;https://github.com/tox-dev/tox/issues/545&gt;`_)
+   ```
+   
+  
+  
+   ### 3.3.0
+   ```
+   ------------------
+
+Bugfixes
+^^^^^^^^
+
+- fix ``TOX_LIMITED_SHEBANG`` when running under python3 - by :user:`asottile` (`931 &lt;https://github.com/tox-dev/tox/issues/931&gt;`_)
+
+
+Features
+^^^^^^^^
+
+- `PEP-517 &lt;https://www.python.org/dev/peps/pep-0517/&gt;`_ source distribution support (create a
+  ``.package`` virtual environment to perform build operations inside) by :user:`gaborbernat` (`573 &lt;https://github.com/tox-dev/tox/issues/573&gt;`_)
+- `flit &lt;https://flit.readthedocs.io&gt;`_ support via implementing ``PEP-517`` by :user:`gaborbernat` (`820 &lt;https://github.com/tox-dev/tox/issues/820&gt;`_)
+- packaging now is exposed as a hook via ``tox_package(session, venv)`` - by :user:`gaborbernat` (`951 &lt;https://github.com/tox-dev/tox/issues/951&gt;`_)
+
+
+Miscellaneous
+^^^^^^^^^^^^^
+
+- Updated the VSTS build YAML to use the latest jobs and pools syntax - by :user:`davidstaheli` (`955 &lt;https://github.com/tox-dev/tox/issues/955&gt;`_)
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/tox
+  - Changelog: https://pyup.io/changelogs/tox/
+  - Docs: https://tox.readthedocs.org/
+</details>
+
+
+
+
+
+### Update [Sphinx](https://pypi.org/project/Sphinx) from **1.8.0** to **1.8.1**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 1.8.1
+   ```
+   =====================================
+
+Incompatible changes
+--------------------
+
+* LaTeX ``\pagestyle`` commands have been moved to the LaTeX template. No
+  changes in PDF, except possibly if ``\sphinxtableofcontents``, which
+  contained them, had been customized in :file:`conf.py`. (refs: 5455)
+
+Bugs fixed
+----------
+
+* 5418: Incorrect default path for sphinx-build -d/doctrees files
+* 5421: autodoc emits deprecation warning for :confval:`autodoc_default_flags`
+* 5422: lambda object causes PicklingError on storing environment
+* 5417: Sphinx fails to build with syntax error in Python 2.7.5
+* 4911: add latexpdf to make.bat for non make-mode
+* 5436: Autodoc does not work with enum subclasses with properties/methods
+* 5437: autodoc: crashed on modules importing eggs
+* 5433: latex: ImportError: cannot import name &#39;DEFAULT_SETTINGS&#39;
+* 5431: autodoc: ``autofunction`` emits a warning for callable objects
+* 5457: Fix TypeError in error message when override is prohibited
+* 5453: PDF builds of &#39;howto&#39; documents have no page numbers
+* 5463: mathbase: math_role and MathDirective was disappeared in 1.8.0
+* 5454: latex: Index has disappeared from PDF for Japanese documents
+* 5432: py domain: ``:type:`` field can&#39;t process ``:term:`` references
+* 5426: py domain: TypeError has been raised for class attribute
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/sphinx
+  - Changelog: https://pyup.io/changelogs/sphinx/
+  - Homepage: http://sphinx-doc.org/
+</details>
+
+
+
+
+
+### Update [twine](https://pypi.org/project/twine) from **1.11.0** to **1.12.0**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 1.12.0
+   ```
+   * :feature:`395 major` Add ``twine check`` command to check long description
+* :feature:`392 major` Drop support for Python 3.3
+* :feature:`363` Empower ``--skip-existing`` for Artifactory repositories
+* :bug:`367` Avoid MD5 when Python is compiled in FIPS mode
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/twine
+  - Changelog: https://pyup.io/changelogs/twine/
+  - Docs: https://twine.readthedocs.io/
+</details>",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-09-24 12:56:58-07:00,25200,2018-09-24 22:56:58+03:00,-10800,True,False,['requirements_dev.txt'],['67b7622bafe2d8e75cc05307fbc86eb2e5a51795'],3,3,6,1,,,
+2720c4e3751d7c424d8160658a69db18173fd4c4,"Scheduled weekly dependency update for week 39 (#26)
+
+
+
+
+
+### Update [wheel](https://pypi.org/project/wheel) from **0.31.1** to **0.32.0**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 0.32.0
+   ```
+   - Removed wheel signing and verifying features
+- Removed the &quot;wheel install&quot; and &quot;wheel installscripts&quot; commands
+- Added the ``wheel pack`` command
+- Allowed multiple license files to be specified using the ``license_files``
+  option
+- Deprecated the ``license_file`` option
+- Eliminated duplicate lines from generated requirements in
+  ``.dist-info/METADATA`` (thanks to Wim Glenn for the contribution)
+- Fixed handling of direct URL specifiers in requirements
+  (PR by Benoit Pierre)
+- Fixed canonicalization of extras (PR by Benoit Pierre)
+- Warn when the deprecated ``[wheel]`` section is used in ``setup.cfg``
+  (PR by Jon Dufresne)
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/wheel
+  - Changelog: https://pyup.io/changelogs/wheel/
+  - Repo: https://github.com/pypa/wheel
+</details>
+
+
+
+
+
+### Update [twine](https://pypi.org/project/twine) from **1.12.0** to **1.12.1**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 1.12.1
+   ```
+   * :bug:`404` Fix regression with upload exit code
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/twine
+  - Changelog: https://pyup.io/changelogs/twine/
+  - Docs: https://twine.readthedocs.io/
+</details>",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-10-02 07:48:09-07:00,25200,2018-10-02 17:48:09+03:00,-10800,True,False,['requirements_dev.txt'],['a2dcd59444bcdccf3cfb100f9ad49dbdf6319b42'],2,2,4,1,,,
+c24a4c9b22b407c93603a3d787d77557f5239d6c,"Scheduled weekly dependency update for week 41 (#28)
+
+* Update pip from 18.0 to 18.1
+
+* Update wheel from 0.32.0 to 0.32.1
+
+* Update tox from 3.4.0 to 3.5.2",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-10-15 22:01:22-07:00,25200,2018-10-16 08:01:22+03:00,-10800,True,False,['requirements_dev.txt'],['2720c4e3751d7c424d8160658a69db18173fd4c4'],3,3,6,1,,,
+d6396b0441f9634bb5858fcb5549e565098a63bd,"Scheduled weekly dependency update for week 42 (#29)
+
+
+
+
+
+### Update [wheel](https://pypi.org/project/wheel) from **0.32.1** to **0.32.2**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 0.32.2
+   ```
+   - Fixed build number appearing in the ``.dist-info`` directory name
+- Made wheel file name parsing more permissive
+- Fixed wrong Python tag in wheels converted from eggs
+  (PR by John T. Wodder II)
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/wheel
+  - Changelog: https://pyup.io/changelogs/wheel/
+  - Repo: https://github.com/pypa/wheel
+</details>",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-10-23 06:00:48-07:00,25200,2018-10-23 16:00:48+03:00,-10800,True,False,['requirements_dev.txt'],['c24a4c9b22b407c93603a3d787d77557f5239d6c'],1,1,2,1,,,
+7cc87bcb84ee8a1104906485bd9042f6a4130ea0,"Scheduled weekly dependency update for week 43 (#30)
+
+
+
+
+
+### Update [flake8](https://pypi.org/project/flake8) from **3.5.0** to **3.6.0**.
+
+
+<details>
+  <summary>Changelog</summary>
+  
+  
+   ### 3.6.0
+   ```
+   -------------------
+
+You can view the `3.6.0 milestone`_ on GitLab for more details.
+
+New Dependency Information
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- pycodestyle has been updated to &gt;= 2.4.0, &lt; 2.5.0 (See also `GitLab381`_,
+  `GitLab415`_, `GitLab!212`_, `GitLab!230`_, `GitLab!231`_)
+
+- Pyflakes has been updated to &gt;= 2.0.0, &lt; 2.1.0 (See also `GitLab422`_,
+  `GitLab!239`_)
+
+- flake8 requires python 2.x &gt;= 2.7 or python 3.x &gt;= 3.4 (See also
+  `GitLab!225`_)
+
+Features
+~~~~~~~~
+
+- Add ``paths`` to allow local plugins to exist outside of ``sys.path`` (See
+  also `GitLab379`_, `GitLab!211`_)
+
+- Copy ``setup.cfg`` files to the temporary git hook execution directory (See
+  also `GitLab!215`_)
+
+- Only skip a file if `` flake8: noqa`` is on a line by itself (See also
+  `GitLab453`_, `GitLab!219`_)
+
+- Provide a better user experience for broken plugins (See also `GitLab!221`_)
+
+- Report ``E902`` when a file passed on the command line does not exist (See
+  also `GitLab405`_, `GitLab!227`_)
+
+- Add ``--extend-ignore`` for extending the default ``ignore`` instead of
+  overriding it (See also `GitLab!233`_)
+
+Bugs Fixed
+~~~~~~~~~~
+
+- Respect a formatter&#39;s newline setting when printing (See also `GitLab!222`_)
+
+- Fix leaking of processes in the legacy api (See also `GitLab410`_,
+  `GitLab!228`_)
+
+- Fix a ``SyntaxWarning`` for an invalid escape sequence (See also
+  `GitLab!244`_)
+
+- Fix ``DeprecationWarning`` due to import of ``abc`` classes from the
+  ``collections`` module (See also `GitLab!249`_)
+
+- Defer ``setuptools`` import to improve flake8 startup time (See also
+  `GitLab365`_, `GitLab!250`_)
+
+- Fix inconsistent line endings in ``FileProcessor.lines`` when running under
+  python 3.x (See also `GitLab457`_, `GitLab!255`_)
+
+
+.. all links
+.. _3.6.0 milestone:
+    https://gitlab.com/pycqa/flake8/milestones/21
+
+.. issue links
+.. _GitLab365:
+    https://gitlab.com/pycqa/flake8/issues/365
+.. _GitLab379:
+    https://gitlab.com/pycqa/flake8/issues/379
+.. _GitLab381:
+    https://gitlab.com/pycqa/flake8/issues/381
+.. _GitLab405:
+    https://gitlab.com/pycqa/flake8/issues/405
+.. _GitLab410:
+    https://gitlab.com/pycqa/flake8/issues/410
+.. _GitLab415:
+    https://gitlab.com/pycqa/flake8/issues/415
+.. _GitLab422:
+    https://gitlab.com/pycqa/flake8/issues/422
+.. _GitLab453:
+    https://gitlab.com/pycqa/flake8/issues/453
+.. _GitLab457:
+    https://gitlab.com/pycqa/flake8/issues/457
+
+.. merge request links
+.. _GitLab!211:
+    https://gitlab.com/pycqa/flake8/merge_requests/211
+.. _GitLab!212:
+    https://gitlab.com/pycqa/flake8/merge_requests/212
+.. _GitLab!215:
+    https://gitlab.com/pycqa/flake8/merge_requests/215
+.. _GitLab!219:
+    https://gitlab.com/pycqa/flake8/merge_requests/219
+.. _GitLab!221:
+    https://gitlab.com/pycqa/flake8/merge_requests/221
+.. _GitLab!222:
+    https://gitlab.com/pycqa/flake8/merge_requests/222
+.. _GitLab!225:
+    https://gitlab.com/pycqa/flake8/merge_requests/225
+.. _GitLab!227:
+    https://gitlab.com/pycqa/flake8/merge_requests/227
+.. _GitLab!228:
+    https://gitlab.com/pycqa/flake8/merge_requests/228
+.. _GitLab!230:
+    https://gitlab.com/pycqa/flake8/merge_requests/230
+.. _GitLab!231:
+    https://gitlab.com/pycqa/flake8/merge_requests/231
+.. _GitLab!233:
+    https://gitlab.com/pycqa/flake8/merge_requests/233
+.. _GitLab!239:
+    https://gitlab.com/pycqa/flake8/merge_requests/239
+.. _GitLab!244:
+    https://gitlab.com/pycqa/flake8/merge_requests/244
+.. _GitLab!249:
+    https://gitlab.com/pycqa/flake8/merge_requests/249
+.. _GitLab!250:
+    https://gitlab.com/pycqa/flake8/merge_requests/250
+.. _GitLab!255:
+    https://gitlab.com/pycqa/flake8/merge_requests/255
+   ```
+   
+  
+</details>
+
+
+ 
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/flake8
+  - Changelog: https://pyup.io/changelogs/flake8/
+  - Repo: https://gitlab.com/pycqa/flake8
+</details>
+
+
+
+
+
+### Update [tox](https://pypi.org/project/tox) from **3.5.2** to **3.5.3**.
+
+
+*The bot wasn't able to find a changelog for this release. [Got an idea?](https://github.com/pyupio/changelogs/issues/new)*
+
+<details>
+  <summary>Links</summary>
+  
+  - PyPI: https://pypi.org/project/tox
+  - Docs: https://tox.readthedocs.org/
+</details>",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-10-29 09:19:12-07:00,25200,2018-10-29 18:19:12+02:00,-7200,True,False,['requirements_dev.txt'],['d6396b0441f9634bb5858fcb5549e565098a63bd'],2,2,4,1,,,
+22ed67fe5aaf386e0a201b05d242e8036ec5652e,Update twitter link,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,GitHub,noreply@github.com,2018-11-08 21:48:24+02:00,-7200,2018-11-08 21:48:24+02:00,-7200,True,False,['README.rst'],['7cc87bcb84ee8a1104906485bd9042f6a4130ea0'],1,1,2,1,,,
+70a508924dda2a5bd370da817108e0e100ce9706,Remove email from README,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,GitHub,noreply@github.com,2018-11-08 21:50:19+02:00,-7200,2018-11-08 21:50:19+02:00,-7200,True,False,['README.rst'],['22ed67fe5aaf386e0a201b05d242e8036ec5652e'],1,1,2,1,,,
+129397fed438827797275f1c5ba4d97b3669cf44,Changelog for upcoming release 0.3.3.,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-11-08 21:52:58+02:00,-7200,2018-11-08 21:52:58+02:00,-7200,True,False,['HISTORY.rst'],['70a508924dda2a5bd370da817108e0e100ce9706'],0,6,6,1,,,
+e3c48f465bf5bf2473d912e8547e96cd618a3706,Bump version: 0.3.2 → 0.3.3,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2018-11-08 22:08:59+02:00,-7200,2018-11-08 22:08:59+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['129397fed438827797275f1c5ba4d97b3669cf44'],3,3,6,3,,,
+234b1218d1675a90c7468101fd43d28e1a9dff26,"Scheduled weekly dependency update for week 45 (#31)
+
+* Update sphinx from 1.8.1 to 1.8.2
+
+* Update cryptography from 2.3.1 to 2.4.1",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-11-12 08:30:09-08:00,28800,2018-11-12 18:30:09+02:00,-7200,True,False,['requirements_dev.txt'],['e3c48f465bf5bf2473d912e8547e96cd618a3706'],2,2,4,1,,,
+aba8c3643640c34003521eb306d2ed56567a33f4,"Scheduled weekly dependency update for week 46 (#32)
+
+* Update wheel from 0.32.2 to 0.32.3
+
+* Update coverage from 4.5.1 to 4.5.2",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-11-19 07:24:16-08:00,28800,2018-11-19 17:24:16+02:00,-7200,True,False,['requirements_dev.txt'],['234b1218d1675a90c7468101fd43d28e1a9dff26'],2,2,4,1,,,
+97a7a6006b38919d9a75687fb1a23bb8a815f8fb,Update cryptography from 2.4.1 to 2.4.2 (#33),pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-11-26 08:15:03-08:00,28800,2018-11-26 18:15:03+02:00,-7200,True,False,['requirements_dev.txt'],['aba8c3643640c34003521eb306d2ed56567a33f4'],1,1,2,1,,,
+8ef8c7609a935b90d838540ebca5e774f2f334c2,Update tox from 3.5.3 to 3.6.0 (#34),pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-12-22 07:41:11-08:00,28800,2018-12-22 17:41:11+02:00,-7200,True,False,['requirements_dev.txt'],['97a7a6006b38919d9a75687fb1a23bb8a815f8fb'],1,1,2,1,,,
+b13f1aef284bb0c5c2660c8fda0e9a0eaf238aa8,Update tox from 3.6.0 to 3.6.1 (#35),pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-12-24 09:35:10-08:00,28800,2018-12-24 19:35:10+02:00,-7200,True,False,['requirements_dev.txt'],['8ef8c7609a935b90d838540ebca5e774f2f334c2'],1,1,2,1,,,
+5a716ce8d21bb58043376575d9941b85a6f93b75,Update sphinx from 1.8.2 to 1.8.3 (#36),pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2018-12-31 09:08:04-08:00,28800,2018-12-31 19:08:04+02:00,-7200,True,False,['requirements_dev.txt'],['b13f1aef284bb0c5c2660c8fda0e9a0eaf238aa8'],1,1,2,1,,,
+8d8a623ce6db45ab687a35613c701ba50e8126f0,"Scheduled weekly dependency update for week 07 (#42)
+
+* Update pip from 18.1 to 19.0.2
+
+* Update wheel from 0.32.3 to 0.33.0
+
+* Update flake8 from 3.6.0 to 3.7.5
+
+* Update tox from 3.6.1 to 3.7.0
+
+* Update sphinx from 1.8.3 to 1.8.4
+
+* Update cryptography from 2.4.2 to 2.5
+
+* Update twine from 1.12.1 to 1.13.0",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,DmytroLitvinov@users.noreply.github.com,2019-02-21 10:33:26+02:00,-7200,2019-02-21 10:33:26+02:00,-7200,True,False,['requirements_dev.txt'],['5a716ce8d21bb58043376575d9941b85a6f93b75'],7,7,14,1,,,
+d4262e621b74d8a870201d9a81c1349d8ad85cee,"Scheduled weekly dependency update for week 15 (#50)
+
+* Update pip from 19.0.2 to 19.0.3
+
+* Update wheel from 0.33.0 to 0.33.1
+
+* Update flake8 from 3.7.5 to 3.7.7
+
+* Update tox from 3.7.0 to 3.8.6
+
+* Update coverage from 4.5.2 to 4.5.3
+
+* Update sphinx from 1.8.4 to 2.0.1
+
+* Update cryptography from 2.5 to 2.6.1
+
+* Update pyyaml from 3.13 to 5.1",pyup.io bot,github-bot@pyup.io,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2019-04-16 18:27:41+02:00,-7200,2019-04-16 19:27:41+03:00,-10800,True,False,['requirements_dev.txt'],['8d8a623ce6db45ab687a35613c701ba50e8126f0'],8,8,16,1,,,
+2fd42ea41b579e943c6f4dac6e6a857279805c84,"Bump cryptography from 2.6.1 to 3.2 (#69)
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 2.6.1 to 3.2.
+- [Release notes](https://github.com/pyca/cryptography/releases)
+- [Changelog](https://github.com/pyca/cryptography/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/2.6.1...3.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2020-10-28 14:29:11+02:00,-7200,2020-10-28 14:29:11+02:00,-7200,True,False,['requirements_dev.txt'],['d4262e621b74d8a870201d9a81c1349d8ad85cee'],1,1,2,1,,,
+3d31ebcb227cb5185089d2d5d221e15a094c50e6,"Bump cryptography from 3.2 to 3.3.2 (#70)
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 3.2 to 3.3.2.
+- [Release notes](https://github.com/pyca/cryptography/releases)
+- [Changelog](https://github.com/pyca/cryptography/blob/master/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/3.2...3.3.2)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-02-10 07:58:33+02:00,-7200,2021-02-10 07:58:33+02:00,-7200,True,False,['requirements_dev.txt'],['2fd42ea41b579e943c6f4dac6e6a857279805c84'],1,1,2,1,,,
+7ca20814b4f9943fc35c7cf44e4d00c835cc0826,"Rewrite email of author, change link to Kuna's documentation",Dmytro Litvinov,litvinov.dmytro.it@gmail.com,Dmytro Litvinov,litvinov.dmytro.it@gmail.com,2021-03-24 09:20:05+02:00,-7200,2021-03-24 09:20:05+02:00,-7200,True,False,"['.gitignore', 'README.rst', 'readme.rst', '__init__.py', 'setup.py']",['3d31ebcb227cb5185089d2d5d221e15a094c50e6'],8,6,14,5,,,
+14ae47fb31c1421a4251677dda80478f5635a7f0,"Bump pyyaml from 5.1 to 5.4 (#72)
+
+Bumps [pyyaml](https://github.com/yaml/pyyaml) from 5.1 to 5.4.
+- [Release notes](https://github.com/yaml/pyyaml/releases)
+- [Changelog](https://github.com/yaml/pyyaml/blob/master/CHANGES)
+- [Commits](https://github.com/yaml/pyyaml/compare/5.1...5.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2021-03-26 09:09:58+02:00,-7200,2021-03-26 09:09:58+02:00,-7200,True,False,['requirements_dev.txt'],['7ca20814b4f9943fc35c7cf44e4d00c835cc0826'],1,1,2,1,,,
+4b9d8aecd3fd46f731ab453e59d6835738f9c88b,Hide secret.py where placed secret keys,kazanzhy,dkazanzhy@gmail.com,kazanzhy,dkazanzhy@gmail.com,2021-04-25 23:06:43+03:00,-10800,2021-04-25 23:06:43+03:00,-10800,True,False,['.gitignore'],['14ae47fb31c1421a4251677dda80478f5635a7f0'],0,4,4,1,,,
+78cd3675584a40627aec3f8725e8726064392fbd,Implement version 3 and add new methods,kazanzhy,dkazanzhy@gmail.com,kazanzhy,dkazanzhy@gmail.com,2021-04-25 23:06:58+03:00,-10800,2021-04-25 23:06:58+03:00,-10800,True,False,['kuna.py'],['4b9d8aecd3fd46f731ab453e59d6835738f9c88b'],129,468,597,1,0.920863309352518,1.0,0.5035971223021583
+32e64a7307ce09f4b7dc7ad0f72aac752cbde214,Change version and add myself to contributors,kazanzhy,dkazanzhy@gmail.com,kazanzhy,dkazanzhy@gmail.com,2021-04-25 23:08:44+03:00,-10800,2021-04-25 23:08:44+03:00,-10800,True,False,"['AUTHORS.rst', '__init__.py']",['78cd3675584a40627aec3f8725e8726064392fbd'],1,3,4,2,,,
+01494bfbc15987a2b925ca7990e8704767c9457b,"Create secret.py
+
+For testing purposes",Dmytro Kazanzhy,dkazanzhy@gmail.com,GitHub,noreply@github.com,2021-04-26 00:20:51+03:00,-10800,2021-04-26 00:20:51+03:00,-10800,True,False,['secret.py'],['32e64a7307ce09f4b7dc7ad0f72aac752cbde214'],0,2,2,1,,,
+42f713ea4ef21126b10d62522232416a638adf70,Add tests for publicAPI and KunaCodesAPI,kazanzhy,dkazanzhy@gmail.com,kazanzhy,dkazanzhy@gmail.com,2021-04-26 01:44:10+03:00,-10800,2021-04-26 01:44:10+03:00,-10800,True,False,"['kuna.py', 'test_kuna.py']",['01494bfbc15987a2b925ca7990e8704767c9457b'],30,169,199,2,1.0,1.0,1.0
+e9f3134ddcae2b12c901471651a89993d22752cb,Add tests for Trade and Merchant API,kazanzhy,dkazanzhy@gmail.com,kazanzhy,dkazanzhy@gmail.com,2021-04-27 01:37:27+03:00,-10800,2021-04-27 01:37:27+03:00,-10800,True,False,"['kuna.py', 'test_kuna.py']",['42f713ea4ef21126b10d62522232416a638adf70'],35,102,137,2,1.0,1.0,1.0
+9b4a55d6285566a44e117cc81a00a876efbe2ccc,Add some new methods,kazanzhy,dkazanzhy@gmail.com,kazanzhy,dkazanzhy@gmail.com,2021-04-27 02:14:12+03:00,-10800,2021-04-27 02:14:12+03:00,-10800,True,False,"['kuna.py', 'test_kuna.py']",['e9f3134ddcae2b12c901471651a89993d22752cb'],21,61,82,2,1.0,1.0,1.0
+222c8ee05ed693dccf6289b5788382fcf3b64069,Library requests is not needed,kazanzhy,dkazanzhy@gmail.com,kazanzhy,dkazanzhy@gmail.com,2021-04-27 23:53:26+03:00,-10800,2021-04-27 23:53:26+03:00,-10800,True,False,"['kuna.py', 'setup.py']",['9b4a55d6285566a44e117cc81a00a876efbe2ccc'],27,12,39,2,1.0,0.0,1.0
+a7ddca36f6a4caef7ead8265d104a087da9fadfb,Add changelog for new verion,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 09:28:02+03:00,-10800,2021-04-28 09:28:02+03:00,-10800,True,False,['HISTORY.rst'],['222c8ee05ed693dccf6289b5788382fcf3b64069'],0,7,7,1,,,
+e291acba110e5259899d167fcc37def69b787163,"Upgrade requirements, improve testing for package",Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 09:29:44+03:00,-10800,2021-04-28 09:29:44+03:00,-10800,True,False,"['.travis.yml', '__init__.py', 'kuna.py', 'requirements_dev.txt', 'setup.py', 'test_kuna.py', 'tox.ini']",['a7ddca36f6a4caef7ead8265d104a087da9fadfb'],28,37,65,7,,,
+7ed3d8403e7b59bd787bc06b128ea5b834c572a0,Run linter black and fix flake8 errors,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 09:38:28+03:00,-10800,2021-04-28 09:38:33+03:00,-10800,True,False,"['__init__.py', 'cli.py', 'kuna.py']",['e291acba110e5259899d167fcc37def69b787163'],120,249,369,3,0.1440677966101695,1.0,0.0423728813559322
+c30f813d053fc279b0e288c677f403e1f064323d,Run black on whole project,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 10:02:48+03:00,-10800,2021-04-28 10:02:48+03:00,-10800,True,False,"['conf.py', 'setup.py', 'test_kuna.py', 'travis_pypi_setup.py']",['7ed3d8403e7b59bd787bc06b128ea5b834c572a0'],135,149,284,4,1.0,1.0,1.0
+fb9ebc48c4b642c4447aa4afd4b8107071a46e66,Change library for updating version,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 10:05:37+03:00,-10800,2021-04-28 10:05:37+03:00,-10800,True,False,['requirements_dev.txt'],['c30f813d053fc279b0e288c677f403e1f064323d'],1,1,2,1,,,
+9697761d28c68d15a4a65e5b3ba99366e2da6811,Fix bumpversion config,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 10:07:13+03:00,-10800,2021-04-28 10:07:13+03:00,-10800,True,False,['setup.cfg'],['fb9ebc48c4b642c4447aa4afd4b8107071a46e66'],4,4,8,1,,,
+ecae30be85f28b645265416a56593cea0d3dd94c,Bump version: 0.3.3 → 0.4.0,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 10:07:16+03:00,-10800,2021-04-28 10:07:16+03:00,-10800,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['9697761d28c68d15a4a65e5b3ba99366e2da6811'],4,3,7,3,,,
+56e5cfbc8175796a66d0cf668d0f3ae1a4e3151e,Update README.md,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 10:13:20+03:00,-10800,2021-04-28 10:13:20+03:00,-10800,True,False,['README.rst'],['64bd1c3de5aa9e9610ce1aa64421571e13dfbe56'],7,0,7,1,,,
+1ccdb7d396d58e389366a0be8a35f7e8bb1337c8,Update contact,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 10:16:31+03:00,-10800,2021-04-28 10:17:34+03:00,-10800,True,False,['AUTHORS.rst'],['56e5cfbc8175796a66d0cf668d0f3ae1a4e3151e'],1,1,2,1,,,
+e53326a7091ff72bea6360f45e9e25176670a650,Update usage,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 10:22:03+03:00,-10800,2021-04-28 10:22:03+03:00,-10800,True,False,['usage.rst'],['1ccdb7d396d58e389366a0be8a35f7e8bb1337c8'],1,1,2,1,,,
+b271176814c6ed3796eb2150a4ee9ac99b3b7f3a,Update CONTRIBUTING.rst file,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 10:22:13+03:00,-10800,2021-04-28 10:22:13+03:00,-10800,True,False,['CONTRIBUTING.rst'],['e53326a7091ff72bea6360f45e9e25176670a650'],1,1,2,1,,,
+c73382c2734d10d36dd00f56fb7c8d2e76e008e4,Update usage,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-04-28 10:25:38+03:00,-10800,2021-04-28 10:25:38+03:00,-10800,True,False,['usage.rst'],['b271176814c6ed3796eb2150a4ee9ac99b3b7f3a'],1,1,2,1,,,
+b1182135400b6f038f02dcdb09946ac3d7809131,Update pip from 21.1 to 21.1.1,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-03 18:16:02+03:00,-10800,2021-05-03 18:16:02+03:00,-10800,True,False,['requirements_dev.txt'],['c73382c2734d10d36dd00f56fb7c8d2e76e008e4'],1,1,2,1,,,
+e26b07863bf060e6aa2c05d94d50759412cb86d0,Update black from 21.4b1 to 21.4b2,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-03 18:16:02+03:00,-10800,2021-05-03 18:16:02+03:00,-10800,True,False,['requirements_dev.txt'],['b1182135400b6f038f02dcdb09946ac3d7809131'],1,1,2,1,,,
+b54902eefd123b5fa2ab8cce527676b9d364cab0,Update watchdog from 2.0.3 to 2.1.1,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-10 18:15:03+03:00,-10800,2021-05-10 18:15:03+03:00,-10800,True,False,['requirements_dev.txt'],['668dff47af01ae582becf8cc0d010e6ef3b80f45'],1,1,2,1,,,
+cf2708e798760155b1eb0f173fdde2f81892dc65,Update flake8 from 3.9.1 to 3.9.2,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-10 18:15:03+03:00,-10800,2021-05-10 18:15:03+03:00,-10800,True,False,['requirements_dev.txt'],['b54902eefd123b5fa2ab8cce527676b9d364cab0'],1,1,2,1,,,
+33539d7cca400279d18200b33cd5197d56812371,Update black from 21.4b2 to 21.5b0,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-10 18:15:04+03:00,-10800,2021-05-10 18:15:04+03:00,-10800,True,False,['requirements_dev.txt'],['cf2708e798760155b1eb0f173fdde2f81892dc65'],1,1,2,1,,,
+ebe12db0feae922561b1c33ccba2d335f6e35c98,Update tox from 3.23.0 to 3.23.1,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-10 18:15:05+03:00,-10800,2021-05-10 18:15:05+03:00,-10800,True,False,['requirements_dev.txt'],['33539d7cca400279d18200b33cd5197d56812371'],1,1,2,1,,,
+358eb78ddbbb73660cbec5a0c2ae77c07fbce698,Update sphinx from 3.5.4 to 4.0.0,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-10 18:15:05+03:00,-10800,2021-05-10 18:15:05+03:00,-10800,True,False,['requirements_dev.txt'],['ebe12db0feae922561b1c33ccba2d335f6e35c98'],1,1,2,1,,,
+b3f140159f144eaf0b465c3b9cb66c8e1015fce8,Update pip from 21.1.1 to 21.1.2,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-24 18:14:04+03:00,-10800,2021-05-24 18:14:04+03:00,-10800,True,False,['requirements_dev.txt'],['44924a2e78d2dd68058198358b775565736aa2c5'],1,1,2,1,,,
+d23940263ed615c41b9eab8e062548067cebd534,Update watchdog from 2.1.1 to 2.1.2,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-24 18:14:05+03:00,-10800,2021-05-24 18:14:05+03:00,-10800,True,False,['requirements_dev.txt'],['b3f140159f144eaf0b465c3b9cb66c8e1015fce8'],1,1,2,1,,,
+33a79f46bf647472799d5f313a261c00edaca01b,Update black from 21.5b0 to 21.5b1,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-24 18:14:05+03:00,-10800,2021-05-24 18:14:05+03:00,-10800,True,False,['requirements_dev.txt'],['d23940263ed615c41b9eab8e062548067cebd534'],1,1,2,1,,,
+355d2a62e12ce2a90d74ce99917773d4ba77281f,Update sphinx from 4.0.0 to 4.0.2,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-24 18:14:06+03:00,-10800,2021-05-24 18:14:06+03:00,-10800,True,False,['requirements_dev.txt'],['33a79f46bf647472799d5f313a261c00edaca01b'],1,1,2,1,,,
+538ff79bab6f4f71b14566dfe29ad6abb326b6cf,Update black from 21.5b1 to 21.5b2,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-05-31 18:14:08+03:00,-10800,2021-05-31 18:14:08+03:00,-10800,True,False,['requirements_dev.txt'],['2e2116e327e35203b2f95f7f44c00f95e140f2ce'],1,1,2,1,,,
+258e2dbd0bff54959682821e5559bda7d55e80ed,Update black from 21.5b2 to 21.6b0,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-06-14 18:15:02+03:00,-10800,2021-06-14 18:15:02+03:00,-10800,True,False,['requirements_dev.txt'],['533c9584a2e75d444ebb12b5c6328c91bcc59dd8'],1,1,2,1,,,
+4f56b283d34d10267a274cb0e68abfad5e6db6f6,Update pip from 21.1.2 to 21.2.4,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-10-11 18:22:17+03:00,-10800,2021-10-11 18:22:17+03:00,-10800,True,False,['requirements_dev.txt'],['d1235b22e2331591f7fce15e77040dda18ff69fc'],1,1,2,1,,,
+a75ce8b2b9478dbdead9828d7b3b923e877a5223,Update wheel from 0.36.2 to 0.37.0,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-10-11 18:22:18+03:00,-10800,2021-10-11 18:22:18+03:00,-10800,True,False,['requirements_dev.txt'],['4f56b283d34d10267a274cb0e68abfad5e6db6f6'],1,1,2,1,,,
+253cfa6cd9fc7acb457dcca0a44ebce23345a854,Update watchdog from 2.1.2 to 2.1.6,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-10-11 18:22:18+03:00,-10800,2021-10-11 18:22:18+03:00,-10800,True,False,['requirements_dev.txt'],['a75ce8b2b9478dbdead9828d7b3b923e877a5223'],1,1,2,1,,,
+b3fd2ee1bdc0ee930e2e856dd7f3ef641b6bb558,Update flake8 from 3.9.2 to 4.0.1,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-10-11 18:22:18+03:00,-10800,2021-10-11 18:22:18+03:00,-10800,True,False,['requirements_dev.txt'],['253cfa6cd9fc7acb457dcca0a44ebce23345a854'],1,1,2,1,,,
+cbb18c0b05162131e718a600bd2549e8d50db552,Update black from 21.6b0 to 21.9b0,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-10-11 18:22:19+03:00,-10800,2021-10-11 18:22:19+03:00,-10800,True,False,['requirements_dev.txt'],['b3fd2ee1bdc0ee930e2e856dd7f3ef641b6bb558'],1,1,2,1,,,
+05ae71895d950f5a64b5217e025228ca015ef4aa,Update tox from 3.23.1 to 3.24.4,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-10-11 18:22:19+03:00,-10800,2021-10-11 18:22:19+03:00,-10800,True,False,['requirements_dev.txt'],['cbb18c0b05162131e718a600bd2549e8d50db552'],1,1,2,1,,,
+80235b406d555fd7b5f4ee7c98eeb95f063cb6c5,Update coverage from 5.5 to 6.0.1,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-10-11 18:22:19+03:00,-10800,2021-10-11 18:22:19+03:00,-10800,True,False,['requirements_dev.txt'],['05ae71895d950f5a64b5217e025228ca015ef4aa'],1,1,2,1,,,
+07176b0aa34410ded3073a83a928ddca52d1734a,Update sphinx from 4.0.2 to 4.2.0,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-10-11 18:22:20+03:00,-10800,2021-10-11 18:22:20+03:00,-10800,True,False,['requirements_dev.txt'],['80235b406d555fd7b5f4ee7c98eeb95f063cb6c5'],1,1,2,1,,,
+df528668dcbd38920b56ec8f9ae1bcbadb59d951,Update cryptography from 3.4.7 to 35.0.0,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-10-11 18:22:20+03:00,-10800,2021-10-11 18:22:20+03:00,-10800,True,False,['requirements_dev.txt'],['07176b0aa34410ded3073a83a928ddca52d1734a'],1,1,2,1,,,
+2a93e7ce0084d4285b87f4213661b55bfe11e91d,Update twine from 3.4.1 to 3.4.2,pyup-bot,github-bot@pyup.io,pyup-bot,github-bot@pyup.io,2021-10-11 18:22:20+03:00,-10800,2021-10-11 18:22:20+03:00,-10800,True,False,['requirements_dev.txt'],['df528668dcbd38920b56ec8f9ae1bcbadb59d951'],1,1,2,1,,,
+a5488ebaef308a1ed1f3714df7ba07b4a8b93f65,Fix issue #80,kazanzhy,dkazanzhy@gmail.com,kazanzhy,dkazanzhy@gmail.com,2021-10-14 17:25:42+03:00,-10800,2021-10-14 17:25:42+03:00,-10800,True,False,['__init__.py'],['14ae47fb31c1421a4251677dda80478f5635a7f0'],0,1,1,1,,,
+51565ddfa40fc46cbbb734e7d302c96247cee218,Changelog for upcoming release 0.4.1.,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-10-14 19:30:43+03:00,-10800,2021-10-14 19:30:43+03:00,-10800,True,False,['HISTORY.rst'],['44d1ffc69064cb52fb20f3725e491221307ae827'],0,6,6,1,,,
+f1f6d12c00d2ddc6492d253a6ee752be6b5ba5df,Bump version: 0.4.0 → 0.4.1,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-10-14 19:30:55+03:00,-10800,2021-10-14 19:30:55+03:00,-10800,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['51565ddfa40fc46cbbb734e7d302c96247cee218'],3,3,6,3,,,
+3e8c5014b6824727465763029651391c86995883,fix: Fix ImportError #(100),Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-12-28 13:14:30+02:00,-7200,2021-12-28 13:14:30+02:00,-7200,True,False,"['__init__.py', 'setup.py']",['f1f6d12c00d2ddc6492d253a6ee752be6b5ba5df'],1,3,4,2,,,
+6c30445b0f072f5967e078c09515ada7c68d4840,Changelog for upcoming release 0.4.2.,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-12-28 13:17:34+02:00,-7200,2021-12-28 13:17:34+02:00,-7200,True,False,['HISTORY.rst'],['cba00b1da7d3c99e1d310ebd03f0d6d46baa3975'],0,7,7,1,,,
+bcb04fa61b84a8835c1635be5cb164628eefd05e,Bump version: 0.4.1 → 0.4.2,Dmytro Litvinov,me@dmytrolitvinov.com,Dmytro Litvinov,me@dmytrolitvinov.com,2021-12-28 13:18:13+02:00,-7200,2021-12-28 13:18:13+02:00,-7200,True,False,"['__init__.py', 'setup.cfg', 'setup.py']",['6c30445b0f072f5967e078c09515ada7c68d4840'],3,3,6,3,,,
+d2f4c9cfe0696ebf336cdc34f325ff3dc0c850e1,Update README.rst,Dmytro Litvinov,me@dmytrolitvinov.com,GitHub,noreply@github.com,2022-08-23 17:33:31+03:00,-10800,2022-08-23 17:33:31+03:00,-10800,True,False,['README.rst'],['bcb04fa61b84a8835c1635be5cb164628eefd05e'],7,0,7,1,,,
+c95f83a4311635e725126f5e083749ee84a0c3b1,"Bump wheel from 0.37.0 to 0.38.1
+
+Bumps [wheel](https://github.com/pypa/wheel) from 0.37.0 to 0.38.1.
+- [Release notes](https://github.com/pypa/wheel/releases)
+- [Changelog](https://github.com/pypa/wheel/blob/main/docs/news.rst)
+- [Commits](https://github.com/pypa/wheel/compare/0.37.0...0.38.1)
+
+---
+updated-dependencies:
+- dependency-name: wheel
+  dependency-type: direct:development
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2022-12-26 21:43:14+00:00,0,2022-12-26 21:43:14+00:00,0,True,False,['requirements_dev.txt'],['d2f4c9cfe0696ebf336cdc34f325ff3dc0c850e1'],1,1,2,1,,,
+861d3ab8c55985e09a23fa37b6149fbe16924641,"Bump cryptography from 35.0.0 to 39.0.1
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 35.0.0 to 39.0.1.
+- [Release notes](https://github.com/pyca/cryptography/releases)
+- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/35.0.0...39.0.1)
+
+---
+updated-dependencies:
+- dependency-name: cryptography
+  dependency-type: direct:development
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,GitHub,noreply@github.com,2023-02-08 02:11:30+00:00,0,2023-02-08 02:11:30+00:00,0,True,False,['requirements_dev.txt'],['e3088695203aece5ca7f64adda11580e2531621a'],1,1,2,1,,,

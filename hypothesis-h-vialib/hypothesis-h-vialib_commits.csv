@@ -1,0 +1,210 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+cab099eac62406cb29909a1040ea841faeae7955,Intial cookiecutter layout,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2020-08-28 12:31:40+01:00,-3600,2020-08-28 12:31:40+01:00,-3600,True,False,"['.cookiecutter.json', '.coveragerc', 'pythonpackage.yml', '.gitignore', '.isort.cfg', '.pydocstyle', '.pylintrc', '.python-version', 'LICENSE', 'MANIFEST.in', 'Makefile', 'check_that_git_working_tree_is_clean.sh', 'install-python.sh', 'next_version.py', 'replay_cookie_cutter.py', 'pytest.ini', 'requirements.txt', 'setup.cfg', 'setup.py', '.pydocstyle', '.pylintrc', '__init__.py', 'conftest.py', '__init__.py', '__init__.py', 'tox.ini']",[],0,842,842,26,0.7410071942446043,0.6690647482014388,0.5611510791366906
+2276c0c1f2b06273b705822cb0e5a3563dd5b3f6,"Adding the configuration component from Via 3
+
+This is in use in Via 3, Via and LMS. This will be in use in the
+upcoming Via HTML.",Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2020-08-28 12:32:17+01:00,-3600,2020-08-28 12:35:45+01:00,-3600,True,False,"['README.md', '__init__.py', '_flat_dict.py', '_params.py', 'configuration.py', '_flat_dict_test.py', '_params_test.py', 'configuration_test.py']",['cab099eac62406cb29909a1040ea841faeae7955'],0,526,526,8,0.6798029556650246,1.0,0.8374384236453202
+2976735af7ca909cba8ad9731ba7756a0fac6ad9,Removing no-cover comments from pre-split,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2020-08-28 13:10:21+01:00,-3600,2020-08-28 13:10:21+01:00,-3600,True,False,['configuration.py'],['2276c0c1f2b06273b705822cb0e5a3563dd5b3f6'],4,5,9,1,,,
+6b79d22aaad824837d8898b7031be1b00152885b,"Add a value to the good parameter list to allow ad-hoc feature flags
+
+This is so we don't have to edit this every time there is something new",Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2020-09-02 16:32:33+01:00,-3600,2020-09-02 16:32:33+01:00,-3600,True,False,['_params.py'],['a2cc4c534db8cbbc36213d17795f131358954e25'],0,1,1,1,,,
+532ee5b629b0ba0534490c753a5590bb1199c8be,Added client classes from LMS,Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2021-02-08 15:56:32+01:00,-3600,2021-02-08 17:11:53+01:00,-3600,True,False,"['__init__.py', 'client.py', 'client_test.py']",['80c766e73fc0490aa618b13f8f5952b5c7c07ded'],0,109,109,3,1.0,1.0,0.675
+d14158e839e0405aaef42294fd694ec97e5de346,Add a helpers for expiry times,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-05 17:47:32+00:00,0,2021-02-08 16:26:11+00:00,0,True,False,"['__init__.py', 'expiry.py', '__init__.py', 'expiry_test.py']",['532ee5b629b0ba0534490c753a5590bb1199c8be'],0,197,197,4,1.0,1.0,0.8571428571428571
+be63e6afc80652577703284cb0069e00250100bc,Add classes for creating JWT based tokens,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-05 17:47:51+00:00,0,2021-02-08 16:26:11+00:00,0,True,False,"['setup.cfg', 'exceptions.py', '__init__.py', 'token.py', 'token_test.py']",['d14158e839e0405aaef42294fd694ec97e5de346'],1,322,323,5,1.0,1.0,0.6771653543307087
+d977e872c3444b7483e6f554f16d08aa8773879f,"Add new secure URL signing routines
+
+We really should have taken 5 minutes to discuss how we were going to use
+these, but in the end we've come down on the side of signing the entire
+URL. This meant the existing stuff wasn't actually very convenient for that.
+
+This packs all the goods into one routine.",Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-09 15:01:03+00:00,0,2021-02-09 15:15:11+00:00,0,True,False,"['__init__.py', 'url.py', 'url_test.py']",['be63e6afc80652577703284cb0069e00250100bc'],0,180,180,3,1.0,1.0,0.6867469879518072
+74eff2ab5fbd0b76fea42bc135b4f404c3216d35,Remove the old URL token routines,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-09 15:02:06+00:00,0,2021-02-09 15:15:11+00:00,0,True,False,"['__init__.py', 'token.py', 'token_test.py']",['d977e872c3444b7483e6f554f16d08aa8773879f'],189,4,193,3,0.0,0.0,0.3780487804878049
+45617cffd93dd542dae51e1270ce7196ee139e61,Fix a timezoneless date in the tests,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-09 16:56:27+01:00,-3600,2021-02-09 16:06:01+00:00,0,True,False,['url_test.py'],['74eff2ab5fbd0b76fea42bc135b4f404c3216d35'],2,4,6,1,1.0,1.0,1.0
+406e45acee1542630f014f4d9ae760a13b81b4a5,Use ViaSecureURL to sign urls on ViaClient,Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2021-02-08 18:21:59+01:00,-3600,2021-02-09 18:24:20+01:00,-3600,True,False,"['client.py', 'client_test.py']",['45617cffd93dd542dae51e1270ce7196ee139e61'],18,29,47,2,1.0,1.0,0.3333333333333333
+5fc971967811ddee563037301ed6a3c7a9776a38,Add classes for generating verifiable but arbitrary tokens,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-09 19:58:53+01:00,-3600,2021-02-09 19:09:10+00:00,0,True,False,"['__init__.py', 'nonce.py', 'nonce_test.py']",['406e45acee1542630f014f4d9ae760a13b81b4a5'],0,83,83,3,1.0,1.0,0.8823529411764706
+8d2402958acd67f9377864ad6657e61d808f6406,Add cookie helper methods for creating secure cookies,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-05 19:46:15+00:00,0,2021-02-09 19:13:26+00:00,0,True,False,"['__init__.py', 'cookie.py', 'cookie_test.py']",['5fc971967811ddee563037301ed6a3c7a9776a38'],0,208,208,3,1.0,1.0,0.39759036144578314
+873946918f721870079121165c60c823449b1748,Move to fixed length hash based signatures for URLs,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-10 13:05:41+01:00,-3600,2021-02-10 13:39:05+00:00,0,True,False,"['url.py', 'url_test.py']",['8d2402958acd67f9377864ad6657e61d808f6406'],13,33,46,2,1.0,1.0,1.0
+efedf13d297435bb04274f9f2dc98fcf57d414f2,Use Blake2b hash and base 64 to reduce the length from 204 chars to 150,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-10 13:58:43+01:00,-3600,2021-02-10 13:39:05+00:00,0,True,False,['url.py'],['873946918f721870079121165c60c823449b1748'],3,11,14,1,,,
+71d23fc92bd93bb753cc939716dea54eff330376,"Explain the use of ""h"" instead of ""url_hash"" or something more descriptive",Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-10 14:35:45+01:00,-3600,2021-02-10 13:39:05+00:00,0,True,False,['url.py'],['efedf13d297435bb04274f9f2dc98fcf57d414f2'],2,6,8,1,,,
+a87aef120cbf1f9c2e89d4ff8a19f3e609c8834c,"A very indirect port of the code in Via 3 used for ViaHTML linking
+
+This extends the capability of the client to be able to talk to
+ViaHTML as well as Via 3.",Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-09 19:42:29+01:00,-3600,2021-02-10 16:58:51+00:00,0,True,False,"['setup.cfg', 'client.py', 'client_test.py']",['71d23fc92bd93bb753cc939716dea54eff330376'],43,146,189,3,1.0,1.0,0.07142857142857142
+81de2a12beed800bd3f0e98060dc27c6557f4db1,Pre-emptively add slashes to prevent ViaHTML redirects for bare hostnames,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-10 17:26:12+00:00,0,2021-02-10 17:53:32+00:00,0,True,False,"['client.py', 'client_test.py']",['a87aef120cbf1f9c2e89d4ff8a19f3e609c8834c'],1,31,32,2,1.0,1.0,0.5555555555555556
+95e937516c018e0869f98e4df6940dc547e10c82,Add SameSite=None and Secure to cookies to allow them in iframes,Jon Betts,jon.betts@hypothes.is,Sean Hammond,seanh@users.noreply.github.com,2021-02-10 18:39:05+00:00,0,2021-02-10 18:51:42+00:00,0,True,False,"['cookie.py', 'cookie_test.py']",['81de2a12beed800bd3f0e98060dc27c6557f4db1'],5,26,31,2,0.0,1.0,0.45454545454545453
+f85ef36dd819dcc2346e1f3cfeeb06cd9f2fc0b9,Pass through the secure setting to the parent constructor,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-10 18:54:59+00:00,0,2021-02-10 19:26:43+00:00,0,True,False,['cookie.py'],['95e937516c018e0869f98e4df6940dc547e10c82'],2,3,5,1,,,
+1d78052d035eafdf6c7a20402ab7d6e55e1d241c,"Add options to surpress adding in defaults
+
+This allows us to extract the config as provided by the client without
+any additional values they didn't send. This means we can check if they
+sent any at all.",Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-02-19 18:06:03+00:00,0,2021-02-22 17:27:57+00:00,0,True,False,"['_params.py', 'configuration.py', '_params_test.py']",['f85ef36dd819dcc2346e1f3cfeeb06cd9f2fc0b9'],14,49,63,3,1.0,0.5384615384615384,0.23076923076923078
+661d307558d16c8f516a57e08212a6581a37f336,Add blocked_for param for checkmate blocked pages,Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2021-02-26 11:49:36+01:00,-3600,2021-02-26 17:37:51+01:00,-3600,True,False,"['client.py', 'client_test.py']",['1d78052d035eafdf6c7a20402ab7d6e55e1d241c'],1,41,42,2,1.0,1.0,0.5555555555555556
+d1df3479453060ba9ea8e88c00a890c6f2a2cf19,Disable URL signing for viahtml,Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2021-02-26 16:06:55+01:00,-3600,2021-03-04 12:59:34+01:00,-3600,True,False,"['client.py', 'client_test.py']",['661d307558d16c8f516a57e08212a6581a37f336'],6,7,13,2,,,0.0
+c6cd732e4c4fdad8c1004ce0c33645710851a4a2,Remove un-used cookie and nonce work,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-03-22 14:17:21+00:00,0,2021-03-22 16:19:27+00:00,0,True,False,"['__init__.py', 'cookie.py', 'nonce.py', 'cookie_test.py', 'nonce_test.py']",['d1df3479453060ba9ea8e88c00a890c6f2a2cf19'],313,0,313,5,0.1328125,0.0,0.46875
+db0e1fe08f27c957ff0e5e4a5272cb12d26924bd,"Make LMS mode optional
+
+Make the `via.client.requestConfigFromFrame.*` options, which put the
+client into ""LMS mode"", optional.
+
+LMS will pass these two options itself to `ViaClient.url_for()`'s
+`options` argument.
+
+This is needed for when Via 3 is being run in a non-LMS context. In that
+context we don't want the client to receive the `requestConfigFromFrame`
+options.",Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2021-04-09 18:07:31+01:00,-3600,2021-04-13 13:44:12+01:00,-3600,True,False,"['client.py', 'client_test.py']",['c6cd732e4c4fdad8c1004ce0c33645710851a4a2'],8,1,9,2,0.0,0.0,0.5
+e793f229bfff32aebcd27ad3d2c0a9b39e5fc2ea,"Replay cookiecutter to add support for Python 3.7, 3.8 and 3.9",Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-04-15 18:55:16+01:00,-3600,2021-04-16 13:57:27+01:00,-3600,True,False,"['pythonpackage.yml', '.pylintrc', '.python-version', 'Makefile', 'install-python.sh', 'next_version.py', 'setup.py', '.pylintrc', 'tox.ini']",['db0e1fe08f27c957ff0e5e4a5272cb12d26924bd'],48,118,166,9,0.0,0.0,1.0
+a2d66663c6950b107ba12daed9106c89d7a1e783,Adding Python classifiers,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-04-16 13:54:17+01:00,-3600,2021-04-16 13:57:27+01:00,-3600,True,False,['setup.cfg'],['e793f229bfff32aebcd27ad3d2c0a9b39e5fc2ea'],0,3,3,1,,,
+beadd5152deca9b286bf5b27341d860f79e1583b,Update the cookie cutter template,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-05-06 11:57:21+01:00,-3600,2021-05-06 12:20:59+01:00,-3600,True,False,"['.pydocstyle', '.pylintrc', 'Makefile', '.pylintrc', 'tox.ini']",['a2d66663c6950b107ba12daed9106c89d7a1e783'],25,33,58,5,,,
+f2589f67f3ec6917763f547a3867c16bfe8c0382,Remove the unused replay script,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-05-06 11:57:37+01:00,-3600,2021-05-06 12:20:59+01:00,-3600,True,False,['replay_cookie_cutter.py'],['beadd5152deca9b286bf5b27341d860f79e1583b'],165,0,165,1,0.5454545454545454,0.24242424242424243,0.8181818181818182
+30f3ea790de3a997e8c904493a88edd2ba5f1f47,Remove reference to Via 3,Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2021-05-18 13:20:48+01:00,-3600,2021-05-18 13:47:08+01:00,-3600,True,False,['README.md'],['f2589f67f3ec6917763f547a3867c16bfe8c0382'],1,1,2,1,,,
+3ddfb1945b36b1435c9d32a90e20f5701d98a493,Remove support for Python <3.8,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-05-19 13:17:55+01:00,-3600,2021-05-19 15:59:42+01:00,-3600,True,False,"['.coveragerc', '.python-version', 'setup.cfg']",['30f3ea790de3a997e8c904493a88edd2ba5f1f47'],6,7,13,3,,,
+fab39cbf8da1e0d065d8418dd41ce5bb1e725e3f,Remove local install python in favour of hdev and fix tests,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-06-04 12:43:11+01:00,-3600,2021-06-04 16:51:39+01:00,-3600,True,False,"['Makefile', 'install-python.sh', 'pyproject.toml', 'tox.ini']",['3ddfb1945b36b1435c9d32a90e20f5701d98a493'],60,10,70,4,,,
+8170f6a4040cd7c18ce41e34ce83fa75c307ecab,"Add `ignoreOtherConfiguration` to the `hypothesisConfig`
+
+Related to https://github.com/hypothesis/viahtml/pull/192
+
+On the above PR viahtml make the `window.hypothesisConfig`
+non-configurable and non-writable.
+
+In addition to the above, we have added an `ignoreOtherConfiguration` to
+disregard other (JSON or non-JSON) configurations and prevent options to
+be merged.",Eduardo Sanz García,esanzgar@gmail.com,Eduardo,esanzgar@users.noreply.github.com,2021-06-10 13:31:47+02:00,-7200,2021-06-14 13:34:43+02:00,-7200,True,False,"['client.py', 'client_test.py']",['fab39cbf8da1e0d065d8418dd41ce5bb1e725e3f'],0,2,2,2,1.0,1.0,0.0
+e68d1c1c520446463911de3153aa72c42683d84c,"Whitelist `ignoreOtherConfiguration` option for the client
+
+Pass this nwe option, `ignoreOtherConfiguration`, to the client.",Eduardo Sanz García,esanzgar@gmail.com,Eduardo,esanzgar@users.noreply.github.com,2021-06-15 12:01:03+02:00,-7200,2021-06-15 12:30:24+02:00,-7200,True,False,"['_params.py', '_params_test.py']",['8170f6a4040cd7c18ce41e34ce83fa75c307ecab'],0,5,5,2,0.0,1.0,1.0
+47eec72aa0cce93101b0d07c672069683ede9d6d,Add product metadata to the `pyproject.toml` file,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-07-16 15:29:48+01:00,-3600,2021-07-16 16:15:41+01:00,-3600,True,False,['pyproject.toml'],['e68d1c1c520446463911de3153aa72c42683d84c'],0,4,4,1,,,
+cc034ff9baea3c75b64fb0fcbf5a57c0933f3049,Lint fix,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2021-07-16 15:35:15+01:00,-3600,2021-07-16 16:15:41+01:00,-3600,True,False,['url.py'],['47eec72aa0cce93101b0d07c672069683ede9d6d'],1,1,2,1,,,
+7b4e75c24e16363a11fe446b0a9f24c54becc70b,Add max_age arg to ViaSecureURL.create(),Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2021-09-08 15:56:31+01:00,-3600,2021-09-08 16:50:51+01:00,-3600,True,False,"['url.py', 'url_test.py']",['cc034ff9baea3c75b64fb0fcbf5a57c0933f3049'],4,20,24,2,1.0,1.0,0.0
+53ad179958a5c2f9dd6d3e238961ce1561c3d0bd,"Allow ""contentProvider"" flag to be passed through
+
+This lets LMS set the content provider with config",Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2022-05-10 18:14:50+01:00,-3600,2022-05-11 14:33:15+01:00,-3600,True,False,['_params.py'],['7b4e75c24e16363a11fe446b0a9f24c54becc70b'],0,1,1,1,,,
+c5d5bc6229a56fb128f5b80c53baf52fc41c4fd5,Unrelated lint fixes,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2022-05-10 18:32:14+01:00,-3600,2022-05-11 14:33:15+01:00,-3600,True,False,['url.py'],['53ad179958a5c2f9dd6d3e238961ce1561c3d0bd'],1,1,2,1,,,
+d6a7557fc7ad70706d83989101e32b1de65c9ca0,Update cookie cutter template to fix linting warnings.,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2022-06-14 12:55:35+01:00,-3600,2022-06-14 13:47:13+01:00,-3600,True,False,"['.cookiecutter.json', '.pylintrc', '.pylintrc']",['c5d5bc6229a56fb128f5b80c53baf52fc41c4fd5'],8,6,14,3,,,
+774617b5596bba73b5141c61e9f8f7faf5926ee1,Lint fix for circular imports,Jon Betts,jon.betts@hypothes.is,Jon Betts,jon.betts@hypothes.is,2022-06-14 13:10:37+01:00,-3600,2022-06-14 13:47:13+01:00,-3600,True,False,['url.py'],['d6a7557fc7ad70706d83989101e32b1de65c9ca0'],1,2,3,1,,,
+6784175f734cd0cf98a0e9f1f78879536f479470,Apply the new pypackage cookiecutter template,Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2022-08-24 18:59:10+01:00,-3600,2022-08-29 17:16:15+01:00,-3600,True,False,"['.cookiecutter.json', 'cookiecutter.json', 'head.md', 'install_requires', '.coveragerc', 'dependabot.yml', 'ci.yml', 'pypi.yml', 'pythonpackage.yml', '.gitignore', '.isort.cfg', '.pydocstyle', '.pylintrc', '.python-version', 'LICENSE', 'MANIFEST.in', 'Makefile', 'README.md', 'check_that_git_working_tree_is_clean.sh', 'make_python', 'make_template', 'next_version.py', 'pyproject.toml', 'pytest.ini', 'requirements.txt', 'setup.cfg', 'setup.py', 'client.py', '.pydocstyle', '.pylintrc', '__init__.py', 'sanity_test.py', 'pyproject.toml', '__init__.py', 'expiry_test.py', 'tox.ini']",['774617b5596bba73b5141c61e9f8f7faf5926ee1'],684,654,1338,36,0.2698412698412698,0.5079365079365079,0.0
+792af40cf903b462668faffe38a611b96034e40b,Apply updates from cookiecutter,Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2022-09-26 20:27:56+01:00,-3600,2022-10-03 11:29:47+01:00,-3600,True,False,['setup.cfg'],['6784175f734cd0cf98a0e9f1f78879536f479470'],0,1,1,1,,,
+b2615f7048e3cbfbdb0557a47cdab47aea3f27ac,"Upgrade to the latest Python patch versions
+
+Python 3.8.9 doesn't work on Apple Silicon so this upgrade is necessary to get
+the development environment working on newer MacBooks. Plus it's good to keep
+up to date with patch versions anyway.
+
+The upgrade was done by changing the Python version numbers in the
+`cookiecutter.json` file then running `make template`. It only changes a
+couple of files because most places only specify the major and minor
+version not the patch (`Makefile`, GitHub Actions workflows, etc).",Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2022-10-03 12:37:56+01:00,-3600,2022-10-03 15:18:18+01:00,-3600,True,False,"['cookiecutter.json', '.python-version', 'make_python']",['792af40cf903b462668faffe38a611b96034e40b'],4,4,8,3,,,
+36f868ad7fad90b95389f3f8470046eb2ac0d8fd,"Pin to tox<4
+
+Pin to tox<4 to avoid breakage caused by tox 4.0.0 backwards-incompatibilities.
+
+See https://github.com/hypothesis/cookiecutter-pyapp-test/pull/6 for details.",Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2022-12-08 14:56:55+00:00,0,2022-12-08 16:06:43+00:00,0,True,False,"['ci.yml', 'make_python', 'tox.ini']",['b2615f7048e3cbfbdb0557a47cdab47aea3f27ac'],7,7,14,3,,,
+1e352c96522c9c8cc7181ed6dc99614a6ae8c9e5,Apply updates from cookiecutter,Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2022-12-08 16:56:08+00:00,0,2022-12-12 15:29:40+00:00,0,True,False,"['head.md', 'ci.yml', 'Makefile', 'README.md', 'tox.ini']",['36f868ad7fad90b95389f3f8470046eb2ac0d8fd'],5,5,10,5,,,
+10640cce8c7814f58449ca7ac0a03ef97def2879,"Include hardcoded outputs on token tests
+
+This will make it easier to validate the change to another JWT library.",Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2022-12-22 16:47:33+01:00,-3600,2023-01-11 09:49:35+01:00,-3600,True,False,"['deps', 'token_test.py', 'tox.ini']",['1e352c96522c9c8cc7181ed6dc99614a6ae8c9e5'],0,18,18,3,1.0,1.0,0.0
+5be8250a3d78fa102d3a5cf2a65c865f18373d67,"Replace PyJWT by python-jose
+
+python-jose offers JWE functionality that we want to use and we also
+already use it on the LMS project.",Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2022-12-22 17:12:19+01:00,-3600,2023-01-11 09:49:35+01:00,-3600,True,False,"['install_requires', 'setup.cfg', 'token.py', 'token_test.py']",['10640cce8c7814f58449ca7ac0a03ef97def2879'],25,30,55,4,0.0,0.0,0.0
+8d68693f29060aa91a41ff7a1bdc3a2685843262,"Secret AES encryption helper
+
+Allows to encrypt dictionaries using AES and encode both the cipher text
+and IV in a base64 encoded string.",Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2022-12-20 15:34:12+01:00,-3600,2023-01-11 09:54:54+01:00,-3600,True,False,"['__init__.py', 'secrets.py', 'secrets_test.py']",['5be8250a3d78fa102d3a5cf2a65c865f18373d67'],0,120,120,3,0.7671232876712328,1.0,0.6027397260273972
+2571e0716c532d4096e9bc3a0bf45844bf906a41,"Take headers in url_for
+
+Take an optional `headers` parameters which wild be sent AES encoded
+over the wire to Via.",Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2022-12-20 15:34:45+01:00,-3600,2023-01-11 09:54:54+01:00,-3600,True,False,"['client.py', 'client_test.py']",['8d68693f29060aa91a41ff7a1bdc3a2685843262'],3,29,32,2,0.0,1.0,0.13333333333333333
+0fbd4b41ee29d0e146aefbab662ce7fd6bc7d1c4,Rename SecureSecrets to Encryption,Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2022-12-22 14:38:33+01:00,-3600,2023-01-11 09:54:54+01:00,-3600,True,False,"['client.py', '__init__.py', 'encryption.py', 'client_test.py', 'encryption_test.py']",['2571e0716c532d4096e9bc3a0bf45844bf906a41'],25,25,50,5,,,
+fab19b46e3be9ba936943976c3751177f543485b,"Switch over JWEs
+
+Instead of our own mix of base64,AES,iv... just use JWE for the same
+functionality.",Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2022-12-22 18:14:10+01:00,-3600,2023-01-11 09:54:54+01:00,-3600,True,False,"['encryption.py', 'encryption_test.py']",['0fbd4b41ee29d0e146aefbab662ce7fd6bc7d1c4'],75,32,107,2,0.53125,0.0,0.40625
+0223b8cbd87c08c7fb0721ab1a0fb3063216bc6f,"Insert __copyright_year into cookiecutter.json
+
+This is needed to prevent the cookiecutter from updating the copyright year in
+the LICENSE file to the current year every new year. See:
+
+https://github.com/hypothesis/cookiecutters/pull/105",Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-01-11 14:38:00+00:00,0,2023-01-11 15:05:48+00:00,0,True,False,['cookiecutter.json'],['fab19b46e3be9ba936943976c3751177f543485b'],3,7,10,1,,,
+3e6eec2412fb4a3debd588af10db60bdb2067bed,"Insert ""pypi"": ""yes"" into cookiecutter.json
+
+This is needed to prevent the cookiecutter from removing the PyPI support from
+this project now that PyPI is optional. See:
+
+https://github.com/hypothesis/cookiecutters/pull/104",Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-01-11 15:26:56+00:00,0,2023-01-11 15:37:49+00:00,0,True,False,['cookiecutter.json'],['0223b8cbd87c08c7fb0721ab1a0fb3063216bc6f'],1,2,3,1,,,
+847937bf31dea64c54d5d78f5706435f2e88e4a0,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",GitHub Actions Cookiecutter Workflow,unknown,Sean Hammond,seanh@users.noreply.github.com,2023-01-12 18:45:49+00:00,0,2023-01-12 18:51:00+00:00,0,True,False,['README.md'],['3e6eec2412fb4a3debd588af10db60bdb2067bed'],1,1,2,1,,,
+f5c3dffc468b487e9e36f46cf572d39e0d57d960,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-01-24 12:51:20+00:00,0,2023-01-24 13:23:58+00:00,0,True,False,['ci.yml'],['847937bf31dea64c54d5d78f5706435f2e88e4a0'],0,10,10,1,,,
+088ed39b00897dfb7117f55bff900a14b4c31b7a,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-03-14 12:34:39+00:00,0,2023-03-14 12:44:49+00:00,0,True,False,['pyproject.toml'],['f5c3dffc468b487e9e36f46cf572d39e0d57d960'],0,2,2,1,,,
+3c27d721bc3a99f9e70ccfcfd7251c970c56a420,Expose an enum with the different content types,Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2023-05-03 09:53:34+02:00,-7200,2023-05-31 12:57:50+02:00,-7200,True,False,"['__init__.py', 'client.py', 'client_test.py']",['088ed39b00897dfb7117f55bff900a14b4c31b7a'],37,26,63,3,0.0,0.0,0.0
+932aaafe7edd60daa7cd445c48ec3337009e5540,Support for the video content type,Marcos Prieto,marcospri@gmail.com,Marcos Prieto,marcospri@gmail.com,2023-05-03 09:59:06+02:00,-7200,2023-05-31 12:57:50+02:00,-7200,True,False,"['client.py', 'client_test.py']",['3c27d721bc3a99f9e70ccfcfd7251c970c56a420'],3,10,13,2,1.0,1.0,0.0
+e3d518e382d944024772dca7b3ee7a8b53be5767,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-06-05 09:27:06+00:00,0,2023-06-05 10:34:16+01:00,-3600,True,False,"['.gitignore', 'Makefile', 'pyproject.toml', 'tox.ini']",['932aaafe7edd60daa7cd445c48ec3337009e5540'],2,10,12,4,,,
+4486ea70189d85aa6d8fa7700129f7001325df7d,"Fix generation of Via `/video/youtube` URLs
+
+We changed Via's `/video` endpoint to `/video/youtube`:
+
+https://github.com/hypothesis/via/pull/980
+
+Update h-vialib's Via URL generation to generate `/video/youtube` URLs
+instead of just `/video` ones.",Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-06-13 12:10:49+01:00,-3600,2023-06-13 12:49:20+01:00,-3600,True,False,"['client.py', 'client_test.py']",['e3d518e382d944024772dca7b3ee7a8b53be5767'],3,8,11,2,,,
+d61e169f7eb3b6f8f3c9dc08599354619d73b81b,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-07-01 00:12:21+00:00,0,2023-07-03 10:43:03+01:00,-3600,True,False,['pyproject.toml'],['4486ea70189d85aa6d8fa7700129f7001325df7d'],1,1,2,1,,,
+5de305d69d7a7df1c05c1d51a99e6ecc661ec1d7,Fix `make template` crash,Sean Hammond,seanh@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-07-11 11:03:53+01:00,-3600,2023-07-11 13:03:03+01:00,-3600,True,False,['make_template'],['d61e169f7eb3b6f8f3c9dc08599354619d73b81b'],1,1,2,1,,,
+1e67f82ecf1c27eda7022f48e9be73e3d5dccddd,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-07-11 12:51:37+00:00,0,2023-07-11 15:15:02+01:00,-3600,True,False,"['pyproject.toml', 'factory_boy.py', 'tox.ini']",['5de305d69d7a7df1c05c1d51a99e6ecc661ec1d7'],1,14,15,3,1.0,1.0,1.0
+70bd9450f22162387eb138228bc4f02d9297177c,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-09-19 09:44:56+00:00,0,2023-09-19 10:53:04+01:00,-3600,True,False,"['ci.yml', 'slack.yml', 'tox.ini']",['1e67f82ecf1c27eda7022f48e9be73e3d5dccddd'],1,18,19,3,,,
+d45169bd1dd6abbf1137465cde639ab7d67c143d,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-09-19 10:02:38+00:00,0,2023-09-19 11:14:08+01:00,-3600,True,False,['slack.yml'],['70bd9450f22162387eb138228bc4f02d9297177c'],2,3,5,1,,,
+5f337fc22a2cb93b8900833c5a1f2017b778da22,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-10-03 17:00:20+00:00,0,2023-10-03 18:28:48+01:00,-3600,True,False,"['ci.yml', 'pyproject.toml', 'setup.cfg', 'pyproject.toml', 'tox.ini']",['d45169bd1dd6abbf1137465cde639ab7d67c143d'],9,12,21,5,,,
+e5784a642b1777b42502b93c4439b00be7c8782b,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2023-10-18 09:52:36+00:00,0,2023-10-18 17:16:49+01:00,-3600,True,False,['tox.ini'],['5f337fc22a2cb93b8900833c5a1f2017b778da22'],1,1,2,1,,,
+98f75fcca417f7bcd108ef339eb330b626397346,"Apply updates from cookiecutter
+
+This automated commit applies the latest updates from our cookiecutters [1] to
+this repo.
+
+[1]: https://github.com/hypothesis/cookiecutters",github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,Sean Hammond,seanh@users.noreply.github.com,2024-01-18 13:53:18+00:00,0,2024-01-18 14:00:56+00:00,0,True,False,['pyproject.toml'],['e5784a642b1777b42502b93c4439b00be7c8782b'],0,1,1,1,,,

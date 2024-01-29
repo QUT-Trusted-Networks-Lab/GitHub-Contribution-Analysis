@@ -1,0 +1,531 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+bef502db4278e8f73e0b7a2afd2cbd0095c2eff8,initial commit,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2019-10-31 11:44:28+00:00,0,2019-10-31 11:44:28+00:00,0,True,False,"['.gitignore', 'MANIFEST.in', 'README.md', '__init__.py', 'admin.py', 'apps.py', 'auth_hooks.py', 'bot.py', 'about.py', 'members.py', 'context.py', 'launcher.py', 'models.py', 'urls.py', 'views.py', 'setup.py']",[],0,395,395,16,0.7086614173228346,0.8503937007874016,0.7874015748031497
+7330e2a210db226c25191f474eccc305f1372e70,add more commands,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2019-10-31 14:16:56+00:00,0,2019-10-31 14:16:56+00:00,0,True,False,"['bot.py', 'members.py', 'timers.py']",['bef502db4278e8f73e0b7a2afd2cbd0095c2eff8'],1,75,76,3,0.1111111111111111,1.0,1.0
+9631cbd1d049671f693f5d0f28dd171c6ca057b5,add more parts,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2019-11-08 14:50:27+00:00,0,2019-11-08 14:50:27+00:00,0,True,False,"['bot.py', 'members.py', 'decorators.py', 'bot_conf.py']",['7330e2a210db226c25191f474eccc305f1372e70'],11,38,49,4,1.0,1.0,1.0
+a0cfdff99e4fcc891ff73557e6a24d8c568473bd,readme,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2019-11-08 15:25:36+00:00,0,2019-11-08 15:25:36+00:00,0,True,False,['README.md'],['9631cbd1d049671f693f5d0f28dd171c6ca057b5'],1,29,30,1,,,
+01b563afc7197f51dff4153d8588bc8fdcf35015,update,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-05-24 17:26:52+08:00,-28800,2020-05-24 17:26:52+08:00,-28800,True,False,"['bot.py', '__init__.poy', 'about.py', 'members.py', '__init__.py', 'bot_conf.py']",['a0cfdff99e4fcc891ff73557e6a24d8c568473bd'],12,70,82,6,0.0,0.8936170212765957,0.8936170212765957
+a2c0818e6cdee2b320c0b236831ab4b84915da99,typo,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-05-24 17:32:34+08:00,-28800,2020-05-24 17:32:34+08:00,-28800,True,False,"['MANIFEST.in', '__init__.py']",['01b563afc7197f51dff4153d8588bc8fdcf35015'],0,1,1,2,,,
+b00993387e92a308b330c7c5e7020b43afc9cdea,discord embad limits,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-05-24 17:46:11+08:00,-28800,2020-05-24 17:46:11+08:00,-28800,True,False,['members.py'],['a2c0818e6cdee2b320c0b236831ab4b84915da99'],3,12,15,1,0.0,0.0,1.0
+082825f8beab0060efbbb586094fee21ee07fca9,some minor changes,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-05-24 20:30:30+08:00,-28800,2020-05-24 20:31:08+08:00,-28800,True,False,"['bot.py', 'members.py', 'views.py']",['b00993387e92a308b330c7c5e7020b43afc9cdea'],39,11,50,3,0.25,0.25,0.0
+9cee7aef6352f36989a2a01782bd67380a5b77ed,add sov,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-26 00:06:32+08:00,-28800,2020-06-26 00:06:32+08:00,-28800,True,False,"['bot.py', 'members.py', 'sov.py', 'providers.py']",['082825f8beab0060efbbb586094fee21ee07fca9'],2,152,154,4,0.1,0.1,1.0
+19778735d2512184e4c26c503e723bede4a839d8,mote everywhere,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-26 00:15:29+08:00,-28800,2020-06-26 00:15:29+08:00,-28800,True,False,['bot.py'],['9cee7aef6352f36989a2a01782bd67380a5b77ed'],0,2,2,1,1.0,1.0,1.0
+8318428631f6749e7e88af831fcb002ab043bb5e,not everywhere,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-26 00:20:50+08:00,-28800,2020-06-26 00:20:50+08:00,-28800,True,False,['bot.py'],['19778735d2512184e4c26c503e723bede4a839d8'],1,1,2,1,,,
+5b219d99f9e1fb141cc2868a5da94e6cb8a86be4,and not or,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-26 00:24:33+08:00,-28800,2020-06-26 00:24:33+08:00,-28800,True,False,['bot.py'],['8318428631f6749e7e88af831fcb002ab043bb5e'],1,1,2,1,,,
+1b92fe1157f09adc948dce03ce28f604e308e017,make sov prettier,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-26 19:28:46+08:00,-28800,2020-06-26 19:28:46+08:00,-28800,True,False,['sov.py'],['5b219d99f9e1fb141cc2868a5da94e6cb8a86be4'],4,17,21,1,0.0,0.0,1.0
+e31722cd0dba2c5870bb88cb19425142d351c7e4,first run ADM command,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-26 20:05:47+08:00,-28800,2020-06-26 20:05:47+08:00,-28800,True,False,"['bot.py', 'sov.py']",['1b92fe1157f09adc948dce03ce28f604e308e017'],1,62,63,2,0.05128205128205128,0.05128205128205128,1.0
+14f894a02ce47c82c81adcdc8250c28e67ecff1b,remove creator it was for testing,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-26 20:06:24+08:00,-28800,2020-06-26 20:06:24+08:00,-28800,True,False,['about.py'],['e31722cd0dba2c5870bb88cb19425142d351c7e4'],3,3,6,1,1.0,0.0,0.0
+de87e7068d47382a4e4f47de4c5440d2826bc8fe,group by region,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-26 21:17:51+08:00,-28800,2020-06-26 21:17:51+08:00,-28800,True,False,['sov.py'],['14f894a02ce47c82c81adcdc8250c28e67ecff1b'],16,31,47,1,0.0,0.0,1.0
+e2e8ea08358382b53987ff501473ad7766d98e1d,filter on constel and system,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-26 21:34:37+08:00,-28800,2020-06-26 21:34:37+08:00,-28800,True,False,['sov.py'],['de87e7068d47382a4e4f47de4c5440d2826bc8fe'],11,24,35,1,0.0,0.0,1.0
+bfc1540cc825bf8a43cc1f465733a0b3e67cfc4b,Whoops,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-26 21:46:28+08:00,-28800,2020-06-26 21:46:28+08:00,-28800,True,False,['sov.py'],['e2e8ea08358382b53987ff501473ad7766d98e1d'],9,0,9,1,0.0,0.0,0.0
+c8479fd42bac890d0b39b58abc04660b7114d086,add dotlan maps,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-27 00:06:50+08:00,-28800,2020-06-27 00:06:50+08:00,-28800,True,False,['sov.py'],['bfc1540cc825bf8a43cc1f465733a0b3e67cfc4b'],3,9,12,1,0.0,0.0,1.0
+9121771822e46980557f2825dd6715d2e65b406e,add info:wq,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-28 22:59:28+08:00,-28800,2020-06-28 22:59:28+08:00,-28800,True,False,"['__init__.py', 'about.py', 'sov.py', 'setup.py']",['c8479fd42bac890d0b39b58abc04660b7114d086'],4,18,22,4,0.0,0.3,1.0
+d7c1122d192c84a9150550101e51a1cc8d2e79e2,typo,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-28 23:01:38+08:00,-28800,2020-06-28 23:01:38+08:00,-28800,True,False,['sov.py'],['9121771822e46980557f2825dd6715d2e65b406e'],1,1,2,1,,,
+a99f715628f329269964f32d4c84610eb01bce61,add altcorp,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-29 10:25:23+08:00,-28800,2020-06-29 10:25:23+08:00,-28800,True,False,"['__init__.py', 'members.py']",['d7c1122d192c84a9150550101e51a1cc8d2e79e2'],2,49,51,2,0.0,0.0,1.0
+736821febe995debbea863b8e517a417a41ff20f,change base level,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-06-29 16:04:02+08:00,-28800,2020-06-29 16:04:02+08:00,-28800,True,False,"['__init__.py', 'sov.py']",['a99f715628f329269964f32d4c84610eb01bce61'],3,3,6,2,,,
+8e0cd052c9e8b2e479fa8dfd00dd8df590d2de52,add unlinked dudes,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-08-08 12:35:07+08:00,-28800,2020-08-08 12:35:07+08:00,-28800,True,False,['members.py'],['736821febe995debbea863b8e517a417a41ff20f'],49,84,133,1,0.0,0.0,1.0
+f1750022ad7f46eda34f1af936114d6464acad29,version,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-08-08 12:45:28+08:00,-28800,2020-08-08 12:45:28+08:00,-28800,True,False,['__init__.py'],['8e0cd052c9e8b2e479fa8dfd00dd8df590d2de52'],1,1,2,1,,,
+6240051f4e4242c82ef576af43c61ddf5212660c,add sov,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-08-19 19:13:48+08:00,-28800,2020-08-19 19:13:48+08:00,-28800,True,False,"['__init__.py', 'sov.py']",['f1750022ad7f46eda34f1af936114d6464acad29'],2,117,119,2,0.0,0.0,1.0
+ac7c48812d8fc3d53ec98df22c64c55f282b1ad6,I'll do this my self!,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-08-29 11:28:47+08:00,-28800,2020-08-29 11:29:21+08:00,-28800,True,False,['about.py'],['6240051f4e4242c82ef576af43c61ddf5212660c'],0,28,28,1,0.0,1.0,1.0
+fd30f0a11b75843177426f16d363e174b60f5426,version bump,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-08-29 12:52:06+08:00,-28800,2020-08-29 12:52:06+08:00,-28800,True,False,['__init__.py'],['ac7c48812d8fc3d53ec98df22c64c55f282b1ad6'],1,1,2,1,,,
+994c26e4c8a1c6ed8698910432b58ffea44d6648,Shitnacks,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-09-01 09:26:29+08:00,-28800,2020-09-01 09:26:29+08:00,-28800,True,False,"['bot.py', 'zkill.py']",['fd30f0a11b75843177426f16d363e174b60f5426'],0,124,124,2,0.5833333333333334,0.75,0.7666666666666667
+56a97702f2cd638f1bc77137e2d90675d8c9af06,Shitnacks admin omly,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-09-01 09:31:35+08:00,-28800,2020-09-01 09:31:35+08:00,-28800,True,False,['zkill.py'],['994c26e4c8a1c6ed8698910432b58ffea44d6648'],0,3,3,1,0.0,0.0,1.0
+2994b918235ba686371aa03d1ec0608759767129,V Bump,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-09-01 09:32:19+08:00,-28800,2020-09-01 09:32:19+08:00,-28800,True,False,['__init__.py'],['56a97702f2cd638f1bc77137e2d90675d8c9af06'],1,1,2,1,,,
+c1c92ad5d7fcd10f9cb6c40ffb6fc3719c63f14d,add new_channel,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-09-13 18:19:24+08:00,-28800,2020-09-13 18:19:24+08:00,-28800,True,False,"['__init__.py', 'about.py']",['2994b918235ba686371aa03d1ec0608759767129'],1,39,40,2,0.0,0.0,1.0
+d0485b32827207995e881114471d0d2ee5e3a30f,add Auth Cog,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-21 13:25:08+10:00,-36000,2020-09-21 13:25:08+10:00,-36000,True,False,['auth.py'],['082825f8beab0060efbbb586094fee21ee07fca9'],0,53,53,1,0.19047619047619047,1.0,1.0
+62919d08f0c91f43093b4a947fc6238f9b11d9fa,"Add Requirements, Py3.6, Versioning",Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-21 13:25:58+10:00,-36000,2020-09-21 13:25:58+10:00,-36000,True,False,"['__init__.py', 'setup.py']",['d0485b32827207995e881114471d0d2ee5e3a30f'],3,25,28,2,,,
+a9266953855a9a056c95854da6a6d4434a73659a,import auth cog,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-21 13:26:22+10:00,-36000,2020-09-21 13:26:22+10:00,-36000,True,False,['bot.py'],['62919d08f0c91f43093b4a947fc6238f9b11d9fa'],0,1,1,1,,,
+fe0cdfee024d9e30613284221b749bb1f4d61784,Include all .py files,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-21 13:26:44+10:00,-36000,2020-09-21 13:26:44+10:00,-36000,True,False,['MANIFEST.in'],['a9266953855a9a056c95854da6a6d4434a73659a'],1,1,2,1,,,
+d757887b4097a4d8ac960a2d8ec81f605e4761e3,"Redo Installation, add features",Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-21 13:27:10+10:00,-36000,2020-09-21 13:27:10+10:00,-36000,True,False,['README.md'],['fe0cdfee024d9e30613284221b749bb1f4d61784'],14,36,50,1,,,
+dec51ae28b7596c92edb9189cd2d33b17a12e35d,unneeded about footer,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-21 13:31:02+10:00,-36000,2020-09-21 13:31:02+10:00,-36000,True,False,['auth.py'],['d757887b4097a4d8ac960a2d8ec81f605e4761e3'],1,1,2,1,1.0,0.0,0.0
+625308e87cf6f51c18509cb674a923c966f7cdc0,typo in import,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-21 14:19:48+10:00,-36000,2020-09-21 14:19:48+10:00,-36000,True,False,['setup.py'],['dec51ae28b7596c92edb9189cd2d33b17a12e35d'],1,1,2,1,,,
+4c7d12c127ee30f3ca1f68536e7438829ae37050,Add Versioning,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-21 14:32:51+10:00,-36000,2020-09-21 14:32:51+10:00,-36000,True,False,['apps.py'],['625308e87cf6f51c18509cb674a923c966f7cdc0'],1,2,3,1,,,
+8880b0063d128d25c97b4299227c11abd2722e19,Add Versioning,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-21 14:38:28+10:00,-36000,2020-09-21 14:38:28+10:00,-36000,True,False,"['CHANGELOG.md', 'setup.py']",['4c7d12c127ee30f3ca1f68536e7438829ae37050'],1,14,15,2,,,
+200427dac0afcc149447ca60e7d5641a008359a2,Version Bump,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-21 14:46:33+10:00,-36000,2020-09-21 14:46:33+10:00,-36000,True,False,"['CHANGELOG.md', '__init__.py']",['8880b0063d128d25c97b4299227c11abd2722e19'],2,2,4,2,,,
+33f4fe5eff877eae895cdc5bb67ebaf4571c641b,check for authanalitics before pulling zkill data,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-25 12:08:55+10:00,-36000,2020-09-25 12:08:55+10:00,-36000,True,False,['members.py'],['5f56541324b9652dc589b98e7cb8d27d903d492f'],7,16,23,1,0.0,0.0,1.0
+4c89a7fd2e25a342eebe7cebc21b0842d0ab043f,Move Changelog,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-25 12:17:19+10:00,-36000,2020-09-25 12:17:19+10:00,-36000,True,False,['CHANGELOG.md'],['78be06e0f1ff113acd2be7ad8df0e314a8f0aa0c'],0,0,0,1,,,
+2fb6b9e230bbba1b137824d91b251e9c861e5930,orphaned MR items,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-25 12:17:39+10:00,-36000,2020-09-25 12:17:39+10:00,-36000,True,False,"['bot.py', 'setup.py']",['4c89a7fd2e25a342eebe7cebc21b0842d0ab043f'],16,0,16,2,,,
+a36e8e3db05e7ba132ea8c42bf9e600acfa7e92e,move hardcoded IDs to django settings,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-25 13:36:28+10:00,-36000,2020-09-25 13:36:28+10:00,-36000,True,False,"['README.md', 'sov.py']",['2fb6b9e230bbba1b137824d91b251e9c861e5930'],5,16,21,2,,,
+3eca7eb3885b6037b84ee03cc14527842251ac44,Move admin user id to django settigns,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-25 13:42:54+10:00,-36000,2020-09-25 13:42:54+10:00,-36000,True,False,"['README.md', 'about.py']",['a36e8e3db05e7ba132ea8c42bf9e600acfa7e92e'],2,3,5,2,,,
+e8e319e76430fb62aa3b7bb194126f1ccae03e72,use django settings,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-29 12:23:57+10:00,-36000,2020-09-29 12:23:57+10:00,-36000,True,False,['about.py'],['3eca7eb3885b6037b84ee03cc14527842251ac44'],1,1,2,1,,,
+0d8f508a3156f76cf32788d739f29adebbc20b0c,correct authanalitics logic,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-29 12:28:27+10:00,-36000,2020-09-29 12:28:27+10:00,-36000,True,False,['members.py'],['e8e319e76430fb62aa3b7bb194126f1ccae03e72'],3,4,7,1,,,
+41ad9c30def96a9bce407c71e6f5a49b11afcbc4,"Allow AA to Queue messages, we consume them ourselves",Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-29 12:47:35+10:00,-36000,2020-09-29 12:47:35+10:00,-36000,True,False,['tasks.py'],['0d8f508a3156f76cf32788d739f29adebbc20b0c'],0,22,22,1,1.0,1.0,0.5
+63f0e6dd7d59f17ab1bb53ed02dba882e7b06fdc,Fetch tasks from celery,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-29 12:48:28+10:00,-36000,2020-09-29 12:48:28+10:00,-36000,True,False,['bot.py'],['41ad9c30def96a9bce407c71e6f5a49b11afcbc4'],7,44,51,1,0.2857142857142857,1.0,1.0
+c83c13968ba18e8d1078c694a78a3a847e03ded3,Document additiona task queue,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-29 16:26:05+10:00,-36000,2020-09-29 16:26:05+10:00,-36000,True,False,['README.md'],['63f0e6dd7d59f17ab1bb53ed02dba882e7b06fdc'],0,7,7,1,,,
+109e17da6cd06b97fa24857378a54aa0ad09d2ac,Add task variants,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-29 16:26:35+10:00,-36000,2020-09-29 16:26:35+10:00,-36000,True,False,['bot.py'],['c83c13968ba18e8d1078c694a78a3a847e03ded3'],14,23,37,1,0.6666666666666666,1.0,1.0
+ec4a3967e3a5f966769cdc4b0ef215880cb18f4c,Use get_site_url,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-29 18:28:38+10:00,-36000,2020-09-29 18:28:38+10:00,-36000,True,False,['auth.py'],['109e17da6cd06b97fa24857378a54aa0ad09d2ac'],7,4,11,1,1.0,0.0,0.0
+15bf278c85c52fa988701fdc27b93e0bd81614a2,add !time base cog,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-29 18:28:51+10:00,-36000,2020-09-29 18:28:51+10:00,-36000,True,False,"['app_settings.py', 'bot.py', 'time.py']",['ec4a3967e3a5f966769cdc4b0ef215880cb18f4c'],27,87,114,3,0.6363636363636364,1.0,1.0
+5c4ca1702989304879cc08b7ba68d0406e10a96c,Create_dm because ewww,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-29 18:43:27+10:00,-36000,2020-09-29 18:43:27+10:00,-36000,True,False,['bot.py'],['15bf278c85c52fa988701fdc27b93e0bd81614a2'],6,3,9,1,1.0,0.0,0.0
+7b9dba8f0f6b4a25f36803c2bc2d443ae77a33c0,Mark branch,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-29 18:59:40+10:00,-36000,2020-09-29 18:59:40+10:00,-36000,True,False,['__init__.py'],['5c4ca1702989304879cc08b7ba68d0406e10a96c'],0,1,1,1,,,
+fde5c4341918f8fbdef70003e54de7249341a644,Shiny Models to use,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-30 02:33:28+10:00,-36000,2020-09-30 02:33:28+10:00,-36000,True,False,"['admin.py', '0001_initial.py', '0002_auto_20200929_1625.py', '__init__.py', 'models.py']",['7b9dba8f0f6b4a25f36803c2bc2d443ae77a33c0'],1,132,133,5,1.0,1.0,1.0
+47b7cc54879c37526be71dbe61e29ae24983214b,Public Release,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-30 11:48:48+10:00,-36000,2020-09-30 11:48:48+10:00,-36000,True,False,"['bot.py', 'about.py', 'members.py', 'sov.py', 'timers.py', 'zkill.py']",['fde5c4341918f8fbdef70003e54de7249341a644'],133,8,141,6,0.7166666666666667,0.3,0.23333333333333334
+514f548dd4b98c9821d241aef46030c231f6a6ca,Check for timerboard installed,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-30 11:49:21+10:00,-36000,2020-09-30 11:49:21+10:00,-36000,True,False,['app_settings.py'],['47b7cc54879c37526be71dbe61e29ae24983214b'],1,4,5,1,1.0,1.0,1.0
+cd38151aed6efa6e787331af98193509d9cbe439,document ids,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-30 11:49:36+10:00,-36000,2020-09-30 11:49:36+10:00,-36000,True,False,['README.md'],['514f548dd4b98c9821d241aef46030c231f6a6ca'],0,1,1,1,,,
+49de5b64acb344c363b38363681715393b395f69,Server_Name display,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-30 11:49:55+10:00,-36000,2020-09-30 11:49:55+10:00,-36000,True,False,['admin.py'],['cd38151aed6efa6e787331af98193509d9cbe439'],3,3,6,1,,,
+b39e9834408ed915fd5c6065aaaf1d65472002c8,move logs to debug,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-30 12:13:47+10:00,-36000,2020-09-30 12:13:47+10:00,-36000,True,False,['bot.py'],['49de5b64acb344c363b38363681715393b395f69'],17,16,33,1,0.0,0.0,0.0
+24f286af1d89b5363a2eb2505044fcc7f191baae,Moar Logs,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-09-30 12:14:10+10:00,-36000,2020-09-30 12:14:10+10:00,-36000,True,False,"['auth.py', 'timers.py']",['b39e9834408ed915fd5c6065aaaf1d65472002c8'],4,6,10,2,,,
+23690697e95aaeb3247a3f4fbe449853a4780133,update queue to a queue,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-09-30 17:07:53+08:00,-28800,2020-09-30 17:09:38+08:00,-28800,True,False,"['bot.py', 'bot_tasks.py', 'setup.py']",['24f286af1d89b5363a2eb2505044fcc7f191baae'],25,64,89,3,1.0,1.0,1.0
+e0e0545ac45c4835104990f1acf92f3a9f222bb8,fix up channels,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-09-30 17:16:50+08:00,-28800,2020-09-30 17:16:50+08:00,-28800,True,False,['bot_tasks.py'],['23690697e95aaeb3247a3f4fbe449853a4780133'],1,1,2,1,,,
+914aaf7bd7bb159255b23004c25fc4a1229bca64,stop thinking in DB layer,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-10-05 01:19:52+10:00,-36000,2020-10-05 01:19:52+10:00,-36000,True,False,"['admin.py', '0001_initial.py', '0002_auto_20200929_1625.py', 'models.py']",['25b29d5accbdce41af555fd06cd2c7c5248629ee'],44,20,64,4,,,
+74d7df56b2fa26866529bea0ef49b00e3f694051,More authanalitics checks,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-10-11 23:17:15+10:00,-36000,2020-10-11 23:17:15+10:00,-36000,True,False,['members.py'],['914aaf7bd7bb159255b23004c25fc4a1229bca64'],11,13,24,1,0.0,0.0,1.0
+529507c095b2961303e4a31be70602537ae7525b,Do the dirty on Decorator async,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-10-11 23:51:45+10:00,-36000,2020-10-11 23:51:45+10:00,-36000,True,False,['decorators.py'],['74d7df56b2fa26866529bea0ef49b00e3f694051'],0,4,4,1,,,
+cc664b2f70dc1d4f5705e559be1a23b3b95f8fb7,Add !orphans,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2020-10-12 17:02:03+10:00,-36000,2020-10-12 17:02:03+10:00,-36000,True,False,"['README.md', 'auth.py']",['529507c095b2961303e4a31be70602537ae7525b'],3,53,56,2,0.0,0.0,1.0
+5a5ba41397a03651c9c388adb28ce9ee23780fc6,fix no group bug,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-10-13 18:46:57+08:00,-28800,2020-10-13 18:46:57+08:00,-28800,True,False,['members.py'],['cc664b2f70dc1d4f5705e559be1a23b3b95f8fb7'],3,5,8,1,0.0,0.0,1.0
+8633b015b522151a606b46b827ea35e861bf6386,rejig permisions a bit,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-10-13 20:17:32+08:00,-28800,2020-10-13 20:17:32+08:00,-28800,True,False,"['bot.py', 'about.py', 'auth.py', 'members.py', 'sov.py', 'timers.py']",['5a5ba41397a03651c9c388adb28ce9ee23780fc6'],11,17,28,6,0.0,0.5,1.0
+5124a5bc398b85540e853f29f01eea6dcfb60dff,Update README.md,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2020-10-25 23:33:03+10:00,-36000,2020-10-25 23:33:03+10:00,-36000,True,False,['README.md'],['8633b015b522151a606b46b827ea35e861bf6386'],2,2,4,1,,,
+e778ec3231ee3d275fb9d58b8c7f692e7aeb5362,Update README.md,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2020-10-26 00:16:16+10:00,-36000,2020-10-26 00:16:16+10:00,-36000,True,False,['README.md'],['5124a5bc398b85540e853f29f01eea6dcfb60dff'],1,1,2,1,,,
+f61b254c716e645a6197f36595eb67ff7f729a1f,rework channel commands,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-11-01 13:42:07+08:00,-28800,2020-11-01 13:42:17+08:00,-28800,True,False,"['bot.py', 'about.py']",['e778ec3231ee3d275fb9d58b8c7f692e7aeb5362'],7,51,58,2,1.0,1.0,1.0
+c61272b96a007c6b5b501e501ccf0197bb73ace8,fix posgres compat,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-11-08 08:34:39+08:00,-28800,2020-11-08 08:34:39+08:00,-28800,True,False,"['0002_auto_20201108_0033.py', 'models.py']",['f61b254c716e645a6197f36595eb67ff7f729a1f'],2,25,27,2,,,
+dd60b278eeb0c709ed8bfeec0efee928b4e31d7b,fix up task queue params,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-11-09 15:24:13+08:00,-28800,2020-11-09 15:24:18+08:00,-28800,True,False,['bot.py'],['f929e7e928b09bf6e65cd90548777851f0906cac'],1,1,2,1,,,
+1d3cc7e0e7bfe4c4de87c4f58eed958149dfd563,Message Queue,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-11-10 09:06:31+08:00,-28800,2020-11-10 09:06:31+08:00,-28800,True,False,"['bot.py', 'bot_tasks.py']",['dd60b278eeb0c709ed8bfeec0efee928b4e31d7b'],17,59,76,2,0.16666666666666666,1.0,0.36666666666666664
+cd40d6354da13111c54af93473137d58fbba6018,admins as an array,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2020-12-04 17:43:51+08:00,-28800,2020-12-04 17:50:24+08:00,-28800,True,False,"['app_settings.py', 'about.py', 'auth.py']",['1d3cc7e0e7bfe4c4de87c4f58eed958149dfd563'],7,15,22,3,1.0,1.0,1.0
+8e2844320f760bc9f700e7d441909378bc5cb797,"Adds Remindme and Easteregg dev cog (#12)
+
+* add easteregg cog for non useful things
+
+* Add basic remindme
+
+* correct missing import
+
+* pass not return potato
+
+* Document all cogs",Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 13:33:24+10:00,-36000,2021-01-02 13:33:24+10:00,-36000,True,False,"['README.md', 'bot.py', 'eastereggs.py', 'remind.py', 'timers.py']",['cd40d6354da13111c54af93473137d58fbba6018'],6,145,151,5,0.3333333333333333,0.3333333333333333,0.3333333333333333
+83f80660ccb541227325da642caff1431345f426,"Postgres and Docker compat (#13)
+
+* new migration
+
+* redis url
+
+Co-authored-by: AaronKable <aaronkable@gmail.com>",Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 14:01:22+10:00,-36000,2021-01-02 14:01:22+10:00,-36000,True,False,"['bot.py', '0001_initial.py', '0002_auto_20201108_0033.py']",['8e2844320f760bc9f700e7d441909378bc5cb797'],27,4,31,3,,,
+40ad09a2ec26a9d32319462bb5b8bc7faf7b6d6e,Version Bump 0.2.0a,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 14:06:40+10:00,-36000,2021-01-02 14:06:40+10:00,-36000,True,False,['CHANGELOG.md'],['83f80660ccb541227325da642caff1431345f426'],1,13,14,1,,,
+254cde7e311d56a55fcd01c2cbb66ac5599cee89,Version Bump 0.2.0a,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 14:07:45+10:00,-36000,2021-01-02 14:07:45+10:00,-36000,True,False,['__init__.py'],['40ad09a2ec26a9d32319462bb5b8bc7faf7b6d6e'],2,2,4,1,,,
+2208f36ae413c68bd452065d1e8b2264fdfd50f5,Document Channel/Direct Message feature,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 14:32:38+10:00,-36000,2021-01-02 14:32:38+10:00,-36000,True,False,['README.md'],['254cde7e311d56a55fcd01c2cbb66ac5599cee89'],2,21,23,1,,,
+67daa694af66a1f1e4ac92662fd6e8d407a49233,"Formatting Spam (#15)
+
+* add easteregg cog for non useful things
+
+* Add basic remindme
+
+* correct missing import
+
+* pass not return potato
+
+* Document all cogs
+
+* Formatting Spam, Some logging
+
+* Formatting Spam
+
+* Update Manifest for any cog supports",Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 17:59:50+10:00,-36000,2021-01-02 17:59:50+10:00,-36000,True,False,"['MANIFEST.in', 'admin.py', 'app_settings.py', 'about.py', 'auth.py', 'eastereggs.py', 'members.py', 'remind.py', 'sov.py', 'time.py', 'timers.py', 'decorators.py', 'providers.py']",['2208f36ae413c68bd452065d1e8b2264fdfd50f5'],188,191,379,13,0.16666666666666666,0.3333333333333333,1.0
+8f47089f41577b6b955635c6b35a0aca94f5a3a0,Version Bump 0.2.1a,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 18:00:15+10:00,-36000,2021-01-02 18:00:15+10:00,-36000,True,False,['__init__.py'],['67daa694af66a1f1e4ac92662fd6e8d407a49233'],1,1,2,1,,,
+ace5133859b7afc15c242c50c465ab1f4d7ca0de,Version Bump 0.2.1a,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 18:03:39+10:00,-36000,2021-01-02 18:03:39+10:00,-36000,True,False,['CHANGELOG.md'],['8f47089f41577b6b955635c6b35a0aca94f5a3a0'],0,4,4,1,,,
+1e45b143a2129144fd3cba0b974205e7e4df4077,"fix string return on Servers model (#18)
+
+* add easteregg cog for non useful things
+
+* Add basic remindme
+
+* correct missing import
+
+* pass not return potato
+
+* Document all cogs
+
+* Formatting Spam, Some logging
+
+* Formatting Spam
+
+* Update Manifest for any cog supports
+
+* fix string return on Servers model",Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 20:07:08+10:00,-36000,2021-01-02 20:07:08+10:00,-36000,True,False,['models.py'],['ace5133859b7afc15c242c50c465ab1f4d7ca0de'],2,5,7,1,,,
+bb5f97a95c1f37ebe7bc90698bccc2368f952841,"Remove Click (#19)
+
+* add easteregg cog for non useful things
+
+* Add basic remindme
+
+* correct missing import
+
+* pass not return potato
+
+* Document all cogs
+
+* Formatting Spam, Some logging
+
+* Formatting Spam
+
+* Update Manifest for any cog supports
+
+* fix string return on Servers model
+
+* remove click",Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 20:38:08+10:00,-36000,2021-01-02 20:38:08+10:00,-36000,True,False,['bot_conf.py'],['1e45b143a2129144fd3cba0b974205e7e4df4077'],8,6,14,1,0.0,0.0,0.0
+7aff3c8c90788a023f791f09474e2a6f6b3e76a0,Version Bump 0.2.2a,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 20:38:40+10:00,-36000,2021-01-02 20:38:40+10:00,-36000,True,False,['__init__.py'],['bb5f97a95c1f37ebe7bc90698bccc2368f952841'],1,1,2,1,,,
+a2eccf6e8dec361befd16fde0650793f0bc38992,remove click (again),Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2021-01-02 21:04:49+10:00,-36000,2021-01-02 21:04:49+10:00,-36000,True,False,"['launcher.py', 'setup.py']",['7aff3c8c90788a023f791f09474e2a6f6b3e76a0'],5,1,6,2,,,
+4507256c1c3895e27a0316e59839ae92f33f514b,Version Bump 0.2.3a,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 21:13:26+10:00,-36000,2021-01-02 21:13:26+10:00,-36000,True,False,['__init__.py'],['a2eccf6e8dec361befd16fde0650793f0bc38992'],1,1,2,1,,,
+306265db1173c624218660d0ac92f83d2b54664c,Version bump 0.2.3a,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 21:15:14+10:00,-36000,2021-01-02 21:15:14+10:00,-36000,True,False,['CHANGELOG.md'],['4507256c1c3895e27a0316e59839ae92f33f514b'],0,5,5,1,,,
+656a87edb468244e8ed2ccb18a63e88c9ca03ed1,remove click (again(again)),Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2021-01-02 21:59:08+10:00,-36000,2021-01-02 21:59:08+10:00,-36000,True,False,['bot_conf.py'],['306265db1173c624218660d0ac92f83d2b54664c'],1,1,2,1,,,
+4a501cf7a2017e12ea705c342465f3b86be1deee,Version Bump 0.2.4a,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 22:00:28+10:00,-36000,2021-01-02 22:00:28+10:00,-36000,True,False,['__init__.py'],['656a87edb468244e8ed2ccb18a63e88c9ca03ed1'],1,1,2,1,,,
+dd27c8858d149c65bb68f5098143a283594fcbde,Notate updates needed to Discord Application,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2021-01-02 22:15:41+10:00,-36000,2021-01-02 22:15:41+10:00,-36000,True,False,['README.md'],['656a87edb468244e8ed2ccb18a63e88c9ca03ed1'],0,4,4,1,,,
+93fe9631a84bd99c0065094e422016d344adfefb,correct task example,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2021-01-02 22:24:43+10:00,-36000,2021-01-02 22:24:43+10:00,-36000,True,False,['README.md'],['945f6b56640dae023a208350c610785aa23fbd5e'],3,4,7,1,,,
+1c54d851875720ba4dd2508792dc6c3a2e997314,Update CHANGELOG.md,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-02 22:27:11+10:00,-36000,2021-01-02 22:27:11+10:00,-36000,True,False,['CHANGELOG.md'],['93fe9631a84bd99c0065094e422016d344adfefb'],1,1,2,1,,,
+a72db0a31642d214b1d5f479059c3a9332465f27,Settings are Arrays now,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2021-01-02 22:47:29+10:00,-36000,2021-01-02 22:47:29+10:00,-36000,True,False,['README.md'],['1c54d851875720ba4dd2508792dc6c3a2e997314'],5,5,10,1,,,
+3c95f180a0144c15fdad7ecb50397be4cacdddc6,make cogs an option,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2021-01-02 22:12:42+08:00,-28800,2021-01-02 22:12:42+08:00,-28800,True,False,"['README.md', 'app_settings.py', 'bot.py']",['a72db0a31642d214b1d5f479059c3a9332465f27'],12,24,36,3,,,
+1b0102899c24c4b04fb344d9adb4072372796b06,Change verbose_name,Rebecca Claire Murphy,hi@rcm.dev,Rebecca Claire Murphy,hi@rcm.dev,2021-01-02 11:25:51-05:00,18000,2021-01-02 11:25:51-05:00,18000,True,False,['apps.py'],['a72db0a31642d214b1d5f479059c3a9332465f27'],1,1,2,1,,,
+55ef231aec9af85e4b0ad1fa94ca2bab32adc14f,Use BROKER_URL for Redis,Rebecca Claire Murphy,hi@rcm.dev,Rebecca Claire Murphy,hi@rcm.dev,2021-01-02 12:09:47-05:00,18000,2021-01-02 12:12:24-05:00,18000,True,False,['bot.py'],['7ba570845b4450a65a12989b01a8440f7368f866'],16,16,32,1,,,
+4f7d221078d77146ad0015b412d412fa5a07e933,API Improvements,Rebecca Claire Murphy,hi@rcm.dev,Rebecca Claire Murphy,hi@rcm.dev,2021-01-02 14:40:45-05:00,18000,2021-01-02 15:00:38-05:00,18000,True,False,"['bot_tasks.py', 'tasks.py']",['7ba570845b4450a65a12989b01a8440f7368f866'],10,32,42,2,1.0,1.0,1.0
+945b2759365826bd6c30d381560282c978d5fc7f,Add 3rd party support,Rebecca Claire Murphy,hi@rcm.dev,Rebecca Claire Murphy,hi@rcm.dev,2021-01-02 18:57:43-05:00,18000,2021-01-02 19:10:32-05:00,18000,True,False,"['app_settings.py', 'auth_hooks.py', 'bot.py']",['7ba570845b4450a65a12989b01a8440f7368f866'],29,35,64,3,0.6666666666666666,1.0,1.0
+a6012affbccad5db50f8028096a1c0b3fd59b17a,Add shims,Rebecca Claire Murphy,hi@rcm.dev,Rebecca Claire Murphy,hi@rcm.dev,2021-01-02 19:46:39-05:00,18000,2021-01-02 19:46:39-05:00,18000,True,False,"['README.md', 'bot_tasks.py', 'tasks.py']",['4f7d221078d77146ad0015b412d412fa5a07e933'],11,32,43,3,1.0,1.0,0.9230769230769231
+7171ff7ca3f9cfbfef4fc349cced1474574bb603,Fix typo,Rebecca Claire Murphy,hi@rcm.dev,Rebecca Claire Murphy,hi@rcm.dev,2021-01-02 20:03:00-05:00,18000,2021-01-02 20:03:00-05:00,18000,True,False,['README.md'],['a6012affbccad5db50f8028096a1c0b3fd59b17a'],1,1,2,1,,,
+f63c3d4da0323c10c3dbdb433f256083787560d2,Fix another typo while I'm at it,Rebecca Claire Murphy,hi@rcm.dev,Rebecca Claire Murphy,hi@rcm.dev,2021-01-02 20:06:41-05:00,18000,2021-01-02 20:06:41-05:00,18000,True,False,['README.md'],['7171ff7ca3f9cfbfef4fc349cced1474574bb603'],1,1,2,1,,,
+edf37c07e6873e6348b01b32a467ae03c7151338,Update README.md,Rebecca Claire Murphy,hi@rcm.dev,Rebecca Claire Murphy,hi@rcm.dev,2021-01-02 21:53:26-05:00,18000,2021-01-02 21:53:26-05:00,18000,True,False,['README.md'],['945b2759365826bd6c30d381560282c978d5fc7f'],0,12,12,1,,,
+dc1b0b9f652c2f019aba6b5f362452f5b26c5178,Notate new tasks,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-05 21:34:58+10:00,-36000,2021-01-05 21:34:58+10:00,-36000,True,False,['README.md'],['016c1c01492a7e045dd2bb1beb23853dc2b5714b'],1,2,3,1,,,
+4e867dc4026dbdedea3214d124aca7aa9bfe24a4,Version Bump 0.2.5a,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-05 21:37:02+10:00,-36000,2021-01-05 21:37:02+10:00,-36000,True,False,['CHANGELOG.md'],['dc1b0b9f652c2f019aba6b5f362452f5b26c5178'],0,7,7,1,,,
+3978d41b88d47e57cb59f90c98ec5fa9a4ea0370,Version Bump 0.2.5a,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-05 21:37:57+10:00,-36000,2021-01-05 21:37:57+10:00,-36000,True,False,['__init__.py'],['4e867dc4026dbdedea3214d124aca7aa9bfe24a4'],1,1,2,1,,,
+f12cee0052bcf972d86068254b16055176e5829a,Add Integrations,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-01-05 22:29:21+10:00,-36000,2021-01-05 22:29:21+10:00,-36000,True,False,['README.md'],['3978d41b88d47e57cb59f90c98ec5fa9a4ea0370'],0,4,4,1,,,
+4b3387e6b3aaa4d3c97c3cef07079c3faeed002b,"rebrand aastatistics
+
+rebrand aastatistics
+
+typo
+
+typo
+
+char_stats
+
+4th time",root,ben@haresign.net,root,ben@haresign.net,2021-01-19 21:24:02+00:00,0,2021-01-19 23:03:14+00:00,0,True,False,"['README.md', 'app_settings.py', 'members.py']",['5a5468174262330c4b9a28733fa2033ba08afbae'],15,15,30,3,,,
+cf9c6187f9ab67c48eda7a6c681b6082c232b183,Fixing timezones integration for !time command (#31),Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2021-01-26 15:06:21+01:00,-3600,2021-01-27 00:06:21+10:00,-36000,True,False,['time.py'],['16a960e43e3ca2e53c3e89fa1f991252aa69f3e0'],4,6,10,1,1.0,1.0,1.0
+dc44c6e16138788bcb4f504dc870dac77ac44d0c,make the !time command great again (#32),Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2021-02-05 09:59:18+01:00,-3600,2021-02-05 18:59:18+10:00,-36000,True,False,['time.py'],['cf9c6187f9ab67c48eda7a6c681b6082c232b183'],12,80,92,1,0.0,0.0,1.0
+bc79558de03f41023777763eead75b8d7ffcc80d,Version Bump 0.3.0,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-02-05 19:02:21+10:00,-36000,2021-02-05 19:02:21+10:00,-36000,True,False,['__init__.py'],['dc44c6e16138788bcb4f504dc870dac77ac44d0c'],1,1,2,1,,,
+2008254e9d2c0d579149b1ad274bf154eaed0923,Version Bump 0.3.0,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-02-05 19:10:19+10:00,-36000,2021-02-05 19:10:19+10:00,-36000,True,False,['CHANGELOG.md'],['bc79558de03f41023777763eead75b8d7ffcc80d'],3,13,16,1,,,
+74c6ce86e08bc878d9d6e86e3e394ae35745c3e3,"[FIX] handling non existent characters
+
+This fixed the following error when the character is not registered in Auth
+
+Command raised an exception: DoesNotExist: EveCharacter matching query does not exist.",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-02-05 13:42:25+01:00,-3600,2021-02-05 13:42:25+01:00,-3600,True,False,['members.py'],['2008254e9d2c0d579149b1ad274bf154eaed0923'],83,97,180,1,0.0,0.0,1.0
+d608c79680f1b85de5517c4fcbc0c2c23b30c72d,add deployment stuffs,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2021-02-06 08:00:31+08:00,-28800,2021-02-06 08:00:31+08:00,-28800,True,False,"['config.yml', 'Makefile']",['2008254e9d2c0d579149b1ad274bf154eaed0923'],0,66,66,2,,,
+b326419030178594a952a874e8d0dee453bbbb7e,v0.3.1,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2021-02-06 08:06:51+08:00,-28800,2021-02-06 08:15:17+08:00,-28800,True,False,"['CHANGELOG.md', '__init__.py']",['162dd918e10dc7e1acb712e2465c5442e73468c8'],2,8,10,2,,,
+9bcb07eb6c148ff8d818abfa658f9e6a44a945e2,Updated config.yml,Aaron,aaronkable@gmail.com,Aaron,aaronkable@gmail.com,2021-02-06 08:16:56+08:00,-28800,2021-02-06 08:16:56+08:00,-28800,True,False,['config.yml'],['b326419030178594a952a874e8d0dee453bbbb7e'],1,0,1,1,,,
+b98ce5360dcfc9fe47cbb25419182a6d560fb295,add badge,AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2021-02-06 08:23:48+08:00,-28800,2021-02-06 08:23:48+08:00,-28800,True,False,['README.md'],['b326419030178594a952a874e8d0dee453bbbb7e'],0,2,2,1,,,
+e8d47b18327f7c654c246d8961ff5b32ecdcdbb9,fix screenshot (#36),Ben,ben@haresign.net,GitHub,noreply@github.com,2021-02-07 12:51:13+00:00,0,2021-02-07 22:51:13+10:00,-36000,True,False,['README.md'],['8deced5087a1314a0faecc37ca07b659f0cc033c'],1,1,2,1,,,
+01ebb87ab727d3f3f970731014402e6a4aa75221,"Add Role List, and fix deploy",AaronKable,aaronkable@gmail.com,AaronKable,aaronkable@gmail.com,2021-02-14 17:19:22+08:00,-28800,2021-02-14 17:19:22+08:00,-28800,True,False,"['config.yml', 'about.py']",['b98ce5360dcfc9fe47cbb25419182a6d560fb295'],1,36,37,2,0.0,0.0,1.0
+9d2b81f42fabcf04aac4a22e45fb2e3c9caf22a6,Add service is active checks,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2021-02-27 18:48:00+10:00,-36000,2021-02-27 18:48:00+10:00,-36000,True,False,['app_settings.py'],['a72db0a31642d214b1d5f479059c3a9332465f27'],0,8,8,1,1.0,1.0,1.0
+19286c89374d639c9d4fe0a0cfefa8d64eeb078a,Add Services Hook with commands,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2021-02-27 21:47:34+10:00,-36000,2021-02-27 21:47:34+10:00,-36000,True,False,"['app_settings.py', 'auth.py', 'services.py']",['d948373641086fb57c0dd7ee9b297ef10ef658b2'],9,188,197,3,0.03305785123966942,0.03305785123966942,1.0
+044fce4f5f426a59c896b3a3d628e0e56e960e9b,fixing the install command,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-03-10 12:43:46+01:00,-3600,2021-03-10 12:43:46+01:00,-3600,True,False,['README.md'],['597748fd830d05c8a5e455b543c3b3d97a371974'],1,1,2,1,,,
+ecdc70254b46fd7aef87bacf01b7988503196ad1,Mild formatting changes,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2021-03-26 13:07:03+10:00,-36000,2021-03-26 13:07:03+10:00,-36000,True,False,['services.py'],['19286c89374d639c9d4fe0a0cfefa8d64eeb078a'],3,5,8,1,0.0,0.0,1.0
+4dcb90b531c5752af53343da923591acd161d616,"Add price checks (#40)
+
+* Add price checks
+
+following commands are added with this
+!price » checks Jita and aAmarr market for comparison
+!jita » checks the Jita market
+!amarr » checks the Amarr market
+
+* code optimized
+
+* comment fixed",Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2021-05-05 15:32:15+02:00,-7200,2021-05-05 23:32:15+10:00,-36000,True,False,['price_check.py'],['93b4757d1c9433844a0031c56e84dec73a17d518'],0,195,195,1,0.24299065420560748,0.24299065420560748,0.24299065420560748
+d355a1c3d2d2737582eb55ae9cb0c61af7550cbd,Document Price Check cog,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-05-05 23:35:16+10:00,-36000,2021-05-05 23:35:16+10:00,-36000,True,False,['README.md'],['4dcb90b531c5752af53343da923591acd161d616'],1,6,7,1,,,
+959c78f622b4abd6b9b021f2a6279d30e0ad2f37,Use Django application registry,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-05-05 23:44:14+10:00,-36000,2021-05-05 23:44:14+10:00,-36000,True,False,['app_settings.py'],['d355a1c3d2d2737582eb55ae9cb0c61af7550cbd'],3,4,7,1,,,
+dca7623738222e112dfd2383641e45247dafba62,Add Price Check to defauly loaded cogs,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-05-05 23:44:42+10:00,-36000,2021-05-05 23:44:42+10:00,-36000,True,False,['app_settings.py'],['959c78f622b4abd6b9b021f2a6279d30e0ad2f37'],1,2,3,1,,,
+f1d6f1f03b36cd97ea999374057dbfcd5b871110,Version bump 0.4.0,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-05-05 23:44:54+10:00,-36000,2021-05-05 23:44:54+10:00,-36000,True,False,['__init__.py'],['dca7623738222e112dfd2383641e45247dafba62'],1,1,2,1,,,
+f84424dadf66aeeacbedaa7d36e03ce78230f8f2,Version Bump 0.4.0,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-05-05 23:53:43+10:00,-36000,2021-05-05 23:53:43+10:00,-36000,True,False,['CHANGELOG.md'],['f1d6f1f03b36cd97ea999374057dbfcd5b871110'],0,6,6,1,,,
+671076fc0e0515ad7420fa0ae56e97e87e8b8b8f,Standardise Perms and Reacts using Decoraters,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 16:17:06+10:00,-36000,2021-07-09 16:17:06+10:00,-36000,True,False,"['bot.py', 'about.py', 'auth.py', 'members.py', 'services.py', 'sov.py', 'timers.py', 'decorators.py']",['5ae83c2b855dad4fef5d26edc8a822001d71d954'],47,49,96,8,1.0,1.0,0.0
+def7c554aa8196042c112fae272c8a20539d77b7,Document Logging,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 20:37:30+10:00,-36000,2021-07-09 20:37:30+10:00,-36000,True,False,['README.md'],['671076fc0e0515ad7420fa0ae56e97e87e8b8b8f'],0,13,13,1,,,
+0035ea7ddedb560d179ed9dac72344b50bfea128,remove unused import,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 20:37:49+10:00,-36000,2021-07-09 20:37:49+10:00,-36000,True,False,['about.py'],['def7c554aa8196042c112fae272c8a20539d77b7'],1,0,1,1,,,
+af7c347a7dd3d9315ec1dbe3e1f3c7680dc2ceb7,Standardise logging,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 21:25:16+10:00,-36000,2021-07-09 21:25:16+10:00,-36000,True,False,"['bot.py', 'about.py', 'eastereggs.py', 'members.py', 'price_check.py', 'remind.py', 'sov.py', 'time.py', 'timers.py']",['0035ea7ddedb560d179ed9dac72344b50bfea128'],20,9,29,9,,,
+5e7913426097df4d0b87bd802223ff6fece6f87f,access denied reacc is a setting,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 21:26:12+10:00,-36000,2021-07-09 21:26:12+10:00,-36000,True,False,['app_settings.py'],['af7c347a7dd3d9315ec1dbe3e1f3c7680dc2ceb7'],1,2,3,1,,,
+39489431e4b2dabe61d86ee83959532618e14afb,Move settings,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 21:56:31+10:00,-36000,2021-07-09 21:56:31+10:00,-36000,True,False,['app_settings.py'],['5e7913426097df4d0b87bd802223ff6fece6f87f'],9,15,24,1,0.0,0.0,0.0
+898abd8b9b9961d1ec7b6ef420a5ec65ed9ccdb8,Add myself to about <3,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 21:56:48+10:00,-36000,2021-07-09 21:56:48+10:00,-36000,True,False,['about.py'],['39489431e4b2dabe61d86ee83959532618e14afb'],1,1,2,1,,,
+02d96ff76da678d23e812d98c8e5d928d8fc2a65,new settings setting,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 21:56:57+10:00,-36000,2021-07-09 21:56:57+10:00,-36000,True,False,"['auth.py', 'services.py', 'decorators.py']",['898abd8b9b9961d1ec7b6ef420a5ec65ed9ccdb8'],6,6,12,3,,,
+10e055d4866a3c0e88bce752ac38ffc856c32524,Version Bump v0.5.0,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 23:08:32+10:00,-36000,2021-07-09 23:08:32+10:00,-36000,True,False,['__init__.py'],['02d96ff76da678d23e812d98c8e5d928d8fc2a65'],1,1,2,1,,,
+cde8eb0d23249b8b139d9a1a8735c5961f8a13f5,Document Settings,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 23:26:32+10:00,-36000,2021-07-09 23:26:32+10:00,-36000,True,False,['README.md'],['10e055d4866a3c0e88bce752ac38ffc856c32524'],0,17,17,1,,,
+1967309b95a17d69a2a366d0bbe843ffa759419f,Move prefix into settings,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-09 23:26:47+10:00,-36000,2021-07-09 23:26:47+10:00,-36000,True,False,"['app_settings.py', 'bot.py']",['cde8eb0d23249b8b139d9a1a8735c5961f8a13f5'],2,3,5,2,,,
+e92aaa3ca6601a0a00af79a3e6d9f42c46e21d4c,Version Bump v0.5.1,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-07-10 00:22:10+10:00,-36000,2021-07-10 00:22:10+10:00,-36000,True,False,['__init__.py'],['35f45b992a0193dd9f6b7b514d184ef5073cef2f'],1,1,2,1,,,
+51d80ebc1f3805f82776a92863c7566354c33488,Update Classifiers,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2021-07-10 00:25:44+10:00,-36000,2021-07-10 00:25:44+10:00,-36000,True,False,['setup.py'],['e92aaa3ca6601a0a00af79a3e6d9f42c46e21d4c'],1,2,3,1,,,
+923f7c5175625f677d83a523b1a30637dc01199f,some missed bracked on decorators,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-10 00:45:05+10:00,-36000,2021-07-10 00:45:05+10:00,-36000,True,False,['services.py'],['1967309b95a17d69a2a366d0bbe843ffa759419f'],2,2,4,1,,,
+1f7069e179f08a4484258dcd491a8569ede6124a,Extra decorater options,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-10 20:05:07+10:00,-36000,2021-07-10 20:05:07+10:00,-36000,True,False,['decorators.py'],['923f7c5175625f677d83a523b1a30637dc01199f'],7,53,60,1,0.5428571428571428,0.5428571428571428,1.0
+c91c005c4329c0ef24a27633302e0dd333e06e28,Accept perms from corpstats-two,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-10 20:05:23+10:00,-36000,2021-07-10 20:05:23+10:00,-36000,True,False,['members.py'],['1f7069e179f08a4484258dcd491a8569ede6124a'],3,3,6,1,,,
+643977a33053197c1a5746e1f9b131b8c0590252,Update Readme,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-10 20:45:04+10:00,-36000,2021-07-10 20:45:04+10:00,-36000,True,False,['CHANGELOG.md'],['8016fecce4d087d44622e319b43762c77e06ce0a'],0,19,19,1,,,
+266d69d6ee0f484d143f83f89cc4ceafaab33b2c,version bump 0.5.2,Joel Falknau,ozirascal@gmail.com,Joel Falknau,ozirascal@gmail.com,2021-07-10 20:45:18+10:00,-36000,2021-07-10 20:45:18+10:00,-36000,True,False,['__init__.py'],['643977a33053197c1a5746e1f9b131b8c0590252'],1,1,2,1,,,
+f5b9e7f9368f6d3ae0616606e4d705b31cbd5df3,"pin aioredis to versions below 2.0.0
+
+until issue #45 is fixed",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-08-02 23:15:36+02:00,-7200,2021-08-02 23:15:36+02:00,-7200,True,False,['setup.py'],['266d69d6ee0f484d143f83f89cc4ceafaab33b2c'],1,1,2,1,,,
+6e5c0a0849de6b721ab88cf2a8c2c60deb1cf032,Update __init__.py,Aaron,aaronkable@gmail.com,GitHub,noreply@github.com,2021-08-03 07:07:32+08:00,-28800,2021-08-03 07:07:32+08:00,-28800,True,False,['__init__.py'],['af58cac4dac9bf109147d37093b0d9d03f4d9de4'],1,1,2,1,,,
+85d062e77e3d931f5413b6e118152b719f6113e8,"Optimize and speed thing up a bit
+
+» Reduce SQL queries
+» Use Django's own method to determine the URL",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2021-09-02 16:27:32+02:00,-7200,2021-09-02 16:27:32+02:00,-7200,True,False,['time.py'],['6e5c0a0849de6b721ab88cf2a8c2c60deb1cf032'],2,8,10,1,0.0,0.0,1.0
+57510520c367f8fb6241bb753b79c90b2cfc4c2b,"Slash Re-Write (#55)
+
+* Add new command
+
+* add empties
+
+* add list roles
+
+* fix list roles
+
+* clear empty roles
+
+* basic delete channel
+
+* list cats, and read only
+
+* help_admin
+
+* fix read role
+
+* God mode
+
+* Ariel Aprooved
+
+* add reaction roles
+
+* update aioredis version restriction
+
+* Update setup.py
+
+* remove invalid emojis
+
+* add reaction first
+
+* too much bloody sov.......
+
+* can we chagne the adm level again...
+
+* add moverole
+
+* add pos
+
+* slash and pycord
+
+* fix messages and queue and start on readme
+
+* public
+
+* Reaction Roles on any DB schema
+
+* tweaks
+
+* rr notes
+
+* style and typos and fixes
+
+* https://tenor.com/view/face-palm-oh-no-oh-god-damnit-damn-gif-10780870
+
+* version of deps
+
+* Bug fixes and updates
+
+* Bug fixes
+
+* Bug fixes
+
+* Bug fixes
+
+* Readme and reqs
+
+Co-authored-by: Kevin McKernan <kevin@mckernan.in>",Aaron,aaronkable@gmail.com,GitHub,noreply@github.com,2022-02-02 15:56:45+08:00,-28800,2022-02-02 15:56:45+08:00,-28800,True,False,"['.pre-commit-config.yaml', 'CHANGELOG.md', 'MANIFEST.in', 'README.md', '__init__.py', 'admin.py', 'app_settings.py', 'apps.py', 'auth_hooks.py', 'bot.py', 'bot_tasks.py', 'about.py', 'admin.py', 'auth.py', 'members.py', 'price_check.py', 'reaction_roles.py', 'remind.py', 'services.py', 'sov.py', 'time.py', 'timers.py', 'decorators.py', '0001_initial.py', '0002_reactionrolebinding_reactionrolemessage.py', '0003_authbotconfiguration.py', '0004_settings.py', '0005_rr_fixes_blank_admins.py', 'models.py', 'tasks.py', 'urls.py', 'bot_conf.py', 'setup.py']",['81efaf8ec2997d0d1baf814e7a022f25b5cd363d'],421,1034,1455,33,0.5288888888888889,0.3688888888888889,0.4444444444444444
+bad058b325246930a91e184aa7030a23838cb6f1,readme updates,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-02 16:02:15+08:00,-28800,2022-02-02 16:02:15+08:00,-28800,True,False,['README.md'],['57510520c367f8fb6241bb753b79c90b2cfc4c2b'],4,4,8,1,,,
+a8a2bcb3198b630227ae964aa78ee5d418eee153,stable branch,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-02 16:02:40+08:00,-28800,2022-02-02 16:02:40+08:00,-28800,True,False,['__init__.py'],['bad058b325246930a91e184aa7030a23838cb6f1'],1,1,2,1,,,
+f3ec95958cfeabc8cc3293bb85bcaf12c3d5ae87,readme stuff,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-02 16:19:02+08:00,-28800,2022-02-02 16:19:02+08:00,-28800,True,False,['README.md'],['a8a2bcb3198b630227ae964aa78ee5d418eee153'],17,22,39,1,,,
+fbba62724b5b359c5ba5cfbba0c8add6fbf5b509,swap spell checker,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-02 16:39:45+08:00,-28800,2022-02-02 16:39:45+08:00,-28800,True,False,['README.md'],['f3ec95958cfeabc8cc3293bb85bcaf12c3d5ae87'],5,5,10,1,,,
+37f542226b9ad60e8b21d674101e9062171d3953,Lock reqs,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-02 18:34:06+08:00,-28800,2022-02-02 18:34:06+08:00,-28800,True,False,['setup.py'],['fbba62724b5b359c5ba5cfbba0c8add6fbf5b509'],2,2,4,1,,,
+1152ef5592dca3fe39df3486afe8149103015785,auto import wat now...,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-03 21:00:50+08:00,-28800,2022-02-03 21:00:50+08:00,-28800,True,False,['reaction_roles.py'],['37f542226b9ad60e8b21d674101e9062171d3953'],1,0,1,1,,,
+2eec95ad458edaed4fec75b2eea4ccfe054be4ce,Update Z Bot!,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-04 17:54:01+08:00,-28800,2022-02-04 17:54:01+08:00,-28800,True,False,"['README.md', '__init__.py', 'setup.py']",['1152ef5592dca3fe39df3486afe8149103015785'],3,3,6,3,,,
+a02fed6ac278a16ac034c2d0d27f26d09f8e65f4,deps/version,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-04 21:56:56+08:00,-28800,2022-02-04 21:56:56+08:00,-28800,True,False,"['README.md', '__init__.py', 'setup.py']",['2eec95ad458edaed4fec75b2eea4ccfe054be4ce'],3,3,6,3,,,
+fed830cf17e15f50e50df82e2322d2d855fce667,depos and reorder importing django,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-05 08:43:07+08:00,-28800,2022-02-05 08:43:07+08:00,-28800,True,False,"['bot.py', 'setup.py']",['a02fed6ac278a16ac034c2d0d27f26d09f8e65f4'],12,8,20,2,1.0,1.0,1.0
+26b9c41b4f0aabe8e1d6246b4aa591d67389c242,fix bot conf,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-05 08:53:45+08:00,-28800,2022-02-05 09:00:09+08:00,-28800,True,False,"['__init__.py', 'bot_conf.py']",['fed830cf17e15f50e50df82e2322d2d855fce667'],2,3,5,2,,,
+0bfc206a5b19113a77db01546caf5ee964c0a234,hard coded is bad,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-05 09:07:27+08:00,-28800,2022-02-05 09:07:27+08:00,-28800,True,False,"['__init__.py', 'admin.py']",['26b9c41b4f0aabe8e1d6246b4aa591d67389c242'],3,3,6,2,,,
+f2b7aa6ccfdfad17f638f42bccc519ef8f89d6e0,dont stall on failures,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-06 19:27:09+08:00,-28800,2022-02-06 19:27:09+08:00,-28800,True,False,['bot_tasks.py'],['0bfc206a5b19113a77db01546caf5ee964c0a234'],1,4,5,1,1.0,1.0,1.0
+2ff7070bc256f5644c8d8ec20e1a84b1bd457fae,update admin and update Sov to slash,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-09 18:34:42+08:00,-28800,2022-02-09 18:34:42+08:00,-28800,True,False,"['admin.py', 'sov.py']",['f2b7aa6ccfdfad17f638f42bccc519ef8f89d6e0'],126,157,283,2,0.0,0.3076923076923077,0.0
+4c31251f77c308bfcf3c29fc151fd8b0d2f17eef,limit sov commands...,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-02-09 18:58:29+08:00,-28800,2022-02-09 18:58:29+08:00,-28800,True,False,['sov.py'],['2ff7070bc256f5644c8d8ec20e1a84b1bd457fae'],5,24,29,1,0.0,0.0,0.0
+835ba88561c51181d95edc44f836f83195ef22fb,"Aa3x / Django4 compat (#59)
+
+* [FIX] cannot import name 'url' from 'django.conf.urls'
+
+* Unused imports removed",Peter Pfeufer,ppfeufer@users.noreply.github.com,GitHub,noreply@github.com,2022-02-28 09:07:46+01:00,-3600,2022-02-28 16:07:46+08:00,-28800,True,False,['urls.py'],['4c31251f77c308bfcf3c29fc151fd8b0d2f17eef'],9,2,11,1,,,
+bd56cee25bc20cd09c59a0a1fca13510cf6581f0,whoops,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-03-27 12:09:59+08:00,-28800,2022-03-27 12:09:59+08:00,-28800,True,False,['admin.py'],['835ba88561c51181d95edc44f836f83195ef22fb'],3,3,6,1,,,
+e7a23ca4d2d21da9e96598d3d3b5a47e44bbf295,"8Ball and other updates (#60)
+
+* tikle made me do it
+
+* tikle made me do it again
+
+* tikle made me do it again
+
+* tikle made me do it again, again
+
+* dont upset shvo
+
+* Add 8ball again
+
+* revert time
+
+* rem signals, and update settings
+
+* Versions
+
+* Version Bump",Aaron,aaronkable@gmail.com,GitHub,noreply@github.com,2022-05-01 17:30:12+08:00,-28800,2022-05-01 17:30:12+08:00,-28800,True,False,"['__init__.py', 'app_settings.py', 'apps.py', 'abuse.py', 'eightball.py', 'time.py', 'setup.py']",['bd56cee25bc20cd09c59a0a1fca13510cf6581f0'],3,123,126,7,0.2,1.0,1.0
+31b36d5b9182a6d48ee79f8304d5d164a2ef28b6,dep updates and message context updates,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-06-04 20:42:14+08:00,-28800,2022-06-05 19:02:15+08:00,-28800,True,False,"['__init__.py', 'bot.py', 'members.py', 'tasks.py', 'setup.py']",['e7a23ca4d2d21da9e96598d3d3b5a47e44bbf295'],20,41,61,5,0.9285714285714286,1.0,0.42857142857142855
+2b8d057f334d8a1565d2e9500f8cd956d5be6856,slashify lookup and altcorp and fix up the perm decorators,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-06-05 18:56:07+08:00,-28800,2022-06-05 19:02:34+08:00,-28800,True,False,"['members.py', 'decorators.py']",['31b36d5b9182a6d48ee79f8304d5d164a2ef28b6'],65,117,182,2,0.8918918918918919,1.0,0.32432432432432434
+5260aa8c3aee08f5f211e1ad4997f9804de7f0bc,prod server bot doesnt have intentes....,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-06-05 19:13:15+08:00,-28800,2022-06-05 19:13:15+08:00,-28800,True,False,['bot.py'],['2b8d057f334d8a1565d2e9500f8cd956d5be6856'],1,1,2,1,1.0,0.0,0.0
+3968b7576049fcc6e34af2f9c58f07d3dee7872f,things i do for init....,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-06-05 19:41:44+08:00,-28800,2022-06-05 19:41:44+08:00,-28800,True,False,['eightball.py'],['5260aa8c3aee08f5f211e1ad4997f9804de7f0bc'],0,4,4,1,1.0,1.0,0.0
+4e44533463f1cd41738eb110e96a99ce39993b94,"Remove `timezones` related logic
+
+With v1.10.0 the aa-timezones app provides its own cog, since I feel it's better suited there.",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2022-06-07 16:34:05+02:00,-7200,2022-06-07 16:35:53+02:00,-7200,True,False,['time.py'],['3968b7576049fcc6e34af2f9c58f07d3dee7872f'],69,5,74,1,1.0,1.0,0.0
+a088f6c0aaf3d3759fc74231be5f56308112ee27,"Add server deets to auth, and add force sync admin cmmand",Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-06-10 15:31:44+08:00,-28800,2022-06-10 15:31:44+08:00,-28800,True,False,"['admin.py', 'auth.py']",['3968b7576049fcc6e34af2f9c58f07d3dee7872f'],1,45,46,2,0.0,1.0,0.4
+72e488b40f7ed483a01892ed5ff0d0d22be83e77,fix task docstring,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-06-14 08:03:27+08:00,-28800,2022-06-14 08:03:27+08:00,-28800,True,False,['tasks.py'],['5daf974093f3efc4e9783869bbf029d114a1341c'],4,4,8,1,,,
+bca41fe40e492cd3ef46adeb66f9a052acb77f59,add startup checks and heaps of logging,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-06-14 17:12:19+08:00,-28800,2022-06-14 17:12:19+08:00,-28800,True,False,"['app_settings.py', 'bot.py']",['72e488b40f7ed483a01892ed5ff0d0d22be83e77'],6,69,75,2,0.0,1.0,0.6666666666666666
+48d338aa930d089f4d40243dc79709a1fe763127,quick changelog,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-06-14 17:43:19+08:00,-28800,2022-06-14 17:43:19+08:00,-28800,True,False,['CHANGELOG.md'],['bca41fe40e492cd3ef46adeb66f9a052acb77f59'],0,17,17,1,,,
+82e21a4318772fef7b78467b7fa53fc372ab556b,Add new screenshot,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-06-20 18:22:46+08:00,-28800,2022-06-20 18:22:46+08:00,-28800,True,False,['README.md'],['48d338aa930d089f4d40243dc79709a1fe763127'],2,2,4,1,,,
+a6ad1c73feb4c7c5bf170092b7a81bef76df3408,Fix link to aa-timezones,Kaylee Syntax,107586113+ksyntax@users.noreply.github.com,GitHub,noreply@github.com,2022-06-24 20:05:00-07:00,25200,2022-06-24 20:05:00-07:00,25200,True,False,['README.md'],['82e21a4318772fef7b78467b7fa53fc372ab556b'],1,1,2,1,,,
+0b281a3ecd0f77466e8387e077e52e9d5d37d88a,very verbose startup Errors!,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-07-02 15:52:11+08:00,-28800,2022-07-02 15:52:11+08:00,-28800,True,False,['bot.py'],['82e21a4318772fef7b78467b7fa53fc372ab556b'],3,8,11,1,0.0,0.0,1.0
+700ca55211d9bdbed851d5ba4cf0e1eed37d1a45,Version Bump,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-07-02 15:52:38+08:00,-28800,2022-07-02 15:52:38+08:00,-28800,True,False,['__init__.py'],['0b281a3ecd0f77466e8387e077e52e9d5d37d88a'],1,1,2,1,,,
+cb09695ef8aa94778e7d71279fd16873f1a70900,3.1.1,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-07-02 15:57:41+08:00,-28800,2022-07-02 15:58:12+08:00,-28800,True,False,['CHANGELOG.md'],['e90d89640b393b80d940fb27ccd04e18ba78314a'],0,6,6,1,,,
+459a3f4d265906777e032865f5b95c6e5f82f5d2,Add overide for bot token,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-07-07 06:48:54+08:00,-28800,2022-07-07 06:48:54+08:00,-28800,True,False,"['app_settings.py', 'bot.py']",['cb09695ef8aa94778e7d71279fd16873f1a70900'],3,11,14,2,,,
+911529a9648241faa1c670d72f9cf0424e5c560d,update readme,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-07-07 08:26:46+08:00,-28800,2022-07-07 08:26:46+08:00,-28800,True,False,['README.md'],['459a3f4d265906777e032865f5b95c6e5f82f5d2'],0,7,7,1,,,
+2aca06aea3c566e79df1e773fcbdf0f3ad0489df,3.1.2,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-07-07 08:27:39+08:00,-28800,2022-07-07 08:27:39+08:00,-28800,True,False,"['CHANGELOG.md', '__init__.py']",['911529a9648241faa1c670d72f9cf0424e5c560d'],1,6,7,2,,,
+7e86b5331efd6fb1bfddf37112d8e6e3bad40d9f,swap search,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-07-23 18:59:17+08:00,-28800,2022-07-23 18:59:17+08:00,-28800,True,False,['sov.py'],['2aca06aea3c566e79df1e773fcbdf0f3ad0489df'],7,25,32,1,0.3333333333333333,0.3333333333333333,0.3333333333333333
+ed8832fb54ee5c1559c163bbfe676a3db2a9156f,return on failure,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-07-23 19:05:57+08:00,-28800,2022-07-23 19:05:57+08:00,-28800,True,False,['sov.py'],['7e86b5331efd6fb1bfddf37112d8e6e3bad40d9f'],2,2,4,1,,,
+d4ead5a8411f6bca784fcfbff542b00ceb8b4e6c,not hidden replies,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-07-23 19:10:09+08:00,-28800,2022-07-23 19:10:09+08:00,-28800,True,False,['sov.py'],['ed8832fb54ee5c1559c163bbfe676a3db2a9156f'],4,4,8,1,,,
+24dbaba381747a1a1a675349fdbf2beb052f1689,first pass ETA consumer,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-08-18 17:07:09+08:00,-28800,2022-08-18 17:07:09+08:00,-28800,True,False,"['bot.py', 'bot_tasks.py', 'tasks.py']",['d4ead5a8411f6bca784fcfbff542b00ceb8b4e6c'],11,107,118,3,0.08571428571428572,0.0,0.7
+24e65d44545b0b7cc479f847213041d60e635038,Add Tassk Rate Limits,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-08-18 20:22:36+08:00,-28800,2022-08-18 20:22:36+08:00,-28800,True,False,"['CHANGELOG.md', 'README.md', '__init__.py', 'app_settings.py', 'bot.py', 'bot_tasks.py']",['24dbaba381747a1a1a675349fdbf2beb052f1689'],7,62,69,6,0.0,0.0,1.0
+f5893cc93ddf5103122f6631093e3246f6626380,add admin stats,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-08-19 16:00:25+08:00,-28800,2022-08-19 16:00:25+08:00,-28800,True,False,"['bot.py', 'bot_tasks.py', 'admin.py']",['24e65d44545b0b7cc479f847213041d60e635038'],1,81,82,3,0.5833333333333334,0.9833333333333333,1.0
+8b7b9b50d06eb8ac52e11fea3bfce14d17a3b135,add some logging,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-08-19 20:05:05+08:00,-28800,2022-08-19 20:05:05+08:00,-28800,True,False,"['bot.py', 'admin.py', 'setup.py']",['f5893cc93ddf5103122f6631093e3246f6626380'],22,48,70,3,0.1875,0.0,1.0
+0ba0a60940677f9e924774ba4c24c4d2e436b074,update how we count users and remove excess from auth,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-09-03 07:36:18+08:00,-28800,2022-09-03 07:36:18+08:00,-28800,True,False,"['about.py', 'auth.py']",['8b7b9b50d06eb8ac52e11fea3bfce14d17a3b135'],2,6,8,2,0.0,1.0,1.0
+c58e21699238aee3a1fd5398871a1294704a19cc,add stuff to pre-commit just to annoy aaron,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 01:16:37+10:00,-36000,2022-09-17 01:16:37+10:00,-36000,True,False,['.pre-commit-config.yaml'],['0ba0a60940677f9e924774ba4c24c4d2e436b074'],3,26,29,1,,,
+4faa43f3e4d84f2d016a1a274c2a90ad4496d841,precommit just updated itself,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 16:30:50+10:00,-36000,2022-09-17 16:30:50+10:00,-36000,True,False,['.pre-commit-config.yaml'],['c58e21699238aee3a1fd5398871a1294704a19cc'],1,1,2,1,,,
+9e5f69063d422fa2b44becdf4705d88e02aa35be,pre-commit spam,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 16:33:20+10:00,-36000,2022-09-17 16:33:20+10:00,-36000,True,False,"['apps.py', 'auth_hooks.py', 'bot.py', 'about.py', 'auth.py', 'eastereggs.py', 'members.py', 'sov.py', 'timers.py', 'launcher.py', 'models.py', 'tasks.py', 'urls.py']",['4faa43f3e4d84f2d016a1a274c2a90ad4496d841'],491,531,1022,13,,,
+b8def9938b521b4e0b5394beba551d04d41d24f3,open up py-cord with stable 2.0 release,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 16:33:37+10:00,-36000,2022-09-17 16:33:37+10:00,-36000,True,False,['setup.py'],['9e5f69063d422fa2b44becdf4705d88e02aa35be'],1,2,3,1,,,
+ce85312d9d7c894589d8e5b9e8fec5ddb2d71672,more pre-committ,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 16:34:33+10:00,-36000,2022-09-17 16:34:33+10:00,-36000,True,False,"['MANIFEST.in', 'bot_conf.py']",['b8def9938b521b4e0b5394beba551d04d41d24f3'],17,17,34,2,,,
+4db9a428864a8ae5871f04a05d4101700813d7f3,Add Welcome/Goodbye Cog,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 16:34:55+10:00,-36000,2022-09-17 16:34:55+10:00,-36000,True,False,"['README.md', 'admin.py', 'app_settings.py', 'welcomegoodbye.py', '0006_goodbyemessage_welcomemessage.py']",['ce85312d9d7c894589d8e5b9e8fec5ddb2d71672'],2,186,188,5,0.14285714285714285,0.14285714285714285,1.0
+4d18ee6713d348669d88f5394e6e20117ee4075f,handle no messages configured in a more informative way,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 16:41:35+10:00,-36000,2022-09-17 16:41:35+10:00,-36000,True,False,['welcomegoodbye.py'],['4db9a428864a8ae5871f04a05d4101700813d7f3'],0,5,5,1,0.0,0.0,1.0
+3025b897aaf00ea25f39ab52bcb75cff22b4a07d,properly pass memberid here,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 17:00:11+10:00,-36000,2022-09-17 17:00:11+10:00,-36000,True,False,['welcomegoodbye.py'],['4d18ee6713d348669d88f5394e6e20117ee4075f'],2,2,4,1,,,
+92eea1a5abe979d253f76591b91a650af3cd4c4e,use correct permission,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 17:05:45+10:00,-36000,2022-09-17 17:05:45+10:00,-36000,True,False,['welcomegoodbye.py'],['3025b897aaf00ea25f39ab52bcb75cff22b4a07d'],2,2,4,1,,,
+93822937198714d26f95b4948eedb85ab4df83d9,correctly filter unuthenticated messages,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 17:16:49+10:00,-36000,2022-09-17 17:16:49+10:00,-36000,True,False,['welcomegoodbye.py'],['92eea1a5abe979d253f76591b91a650af3cd4c4e'],3,2,5,1,,,
+0931f04cecdebfec1f82a2a208cec2a99f8d7b20,do i need to define an exception,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 17:24:59+10:00,-36000,2022-09-17 17:24:59+10:00,-36000,True,False,['welcomegoodbye.py'],['93822937198714d26f95b4948eedb85ab4df83d9'],2,2,4,1,,,
+c1c215148514961fdff57d30f61c83cb10a9320b,"Need to wait, give AA a chance to save a joined to DiscordUsers",Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 18:23:14+10:00,-36000,2022-09-17 18:23:14+10:00,-36000,True,False,['welcomegoodbye.py'],['0931f04cecdebfec1f82a2a208cec2a99f8d7b20'],5,7,12,1,0.0,0.0,1.0
+da4d6ffabfea3248230481f255ca4e3bd605959a,add isort pre-commit,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 21:02:50+10:00,-36000,2022-09-17 21:02:50+10:00,-36000,True,False,"['.pre-commit-config.yaml', 'admin.py', 'app_settings.py', 'apps.py', 'auth_hooks.py', 'bot.py', 'bot_tasks.py', 'about.py', 'abuse.py', 'admin.py', 'auth.py', 'eastereggs.py', 'eightball.py', 'members.py', 'price_check.py', 'reaction_roles.py', 'remind.py', 'services.py', 'sov.py', 'time.py', 'timers.py', 'decorators.py', 'welcomegoodbye.py', 'launcher.py', '0001_initial.py', '0002_reactionrolebinding_reactionrolemessage.py', '0006_goodbyemessage_welcomemessage.py', 'models.py', 'tasks.py', 'bot_conf.py', 'setup.py']",['56c73e8d1fc7165449f0a3756184ddf420287578'],182,226,408,31,0.0,0.0,1.0
+54f056a3824a67bbc118bf6c1186b0313fa0b7c5,tweak isort,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 21:06:15+10:00,-36000,2022-09-17 21:06:15+10:00,-36000,True,False,"['.isort.cfg', 'admin.py', 'bot.py', 'bot_tasks.py', 'about.py', 'abuse.py', 'admin.py', 'auth.py', 'eastereggs.py', 'eightball.py', 'members.py', 'reaction_roles.py', 'services.py', 'sov.py', 'time.py', 'timers.py', 'decorators.py', 'welcomegoodbye.py', 'models.py', 'tasks.py']",['da4d6ffabfea3248230481f255ca4e3bd605959a'],38,75,113,20,,,
+ae71b98721ff592e9e11c6761a949196bdd5997c,Version Bump 3.3.0,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 21:09:41+10:00,-36000,2022-09-17 21:09:41+10:00,-36000,True,False,"['.isort.cfg', 'CHANGELOG.md', '__init__.py']",['54f056a3824a67bbc118bf6c1186b0313fa0b7c5'],1,6,7,3,,,
+e403b4d93fdd1290eec055586d54af5e0a144c39,add past quote cog work,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 21:26:52+10:00,-36000,2022-09-17 21:26:52+10:00,-36000,True,False,"['quote.py', 'models.py']",['ae71b98721ff592e9e11c6761a949196bdd5997c'],0,147,147,2,0.18666666666666668,0.5466666666666666,0.18666666666666668
+4080aaa93eaef3438733d7a2188ccccdf85609eb,Quote migration,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-18 11:59:30+10:00,-36000,2022-09-18 11:59:30+10:00,-36000,True,False,['0007_quotemessage.py'],['e403b4d93fdd1290eec055586d54af5e0a144c39'],0,27,27,1,,,
+137557bfdd6d6dc72e1b62d31d3ae9daeba4c230,update readme for all cogs,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-18 12:02:43+10:00,-36000,2022-09-18 12:02:43+10:00,-36000,True,False,['README.md'],['ae71b98721ff592e9e11c6761a949196bdd5997c'],2,6,8,1,,,
+41cd9c979589c350a7f77cc2d77b99cb73006800,add requirement for allianceauth.services.discord,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-18 15:17:03+10:00,-36000,2022-09-18 15:17:03+10:00,-36000,True,False,['README.md'],['137557bfdd6d6dc72e1b62d31d3ae9daeba4c230'],0,2,2,1,,,
+a53256a01627832054c0edb970645c44a9c57f7d,add past quote cog work,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-17 21:26:52+10:00,-36000,2022-09-19 13:28:42+10:00,-36000,True,False,"['quote.py', 'models.py']",['41cd9c979589c350a7f77cc2d77b99cb73006800'],0,147,147,2,0.18666666666666668,0.5466666666666666,0.18666666666666668
+99703d68ced58fa6adeb11aa6a310c1826ffcc3c,Quote migration,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-18 11:59:30+10:00,-36000,2022-09-19 13:28:42+10:00,-36000,True,False,['0007_quotemessage.py'],['a53256a01627832054c0edb970645c44a9c57f7d'],0,27,27,1,,,
+911cb9c484c68271c3213ec7e3e45d5c32894116,update sender_is_admin decorator to new admin DB,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 14:30:33+10:00,-36000,2022-09-19 14:30:33+10:00,-36000,True,False,"['app_settings.py', 'decorators.py']",['51dff827b2d83a97d0f8936e805a70c6cbb6bde9'],8,9,17,2,0.0,1.0,0.0
+0d95382637f77effdd4b07266e909f3f9f0fdf44,isort,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 14:31:10+10:00,-36000,2022-09-19 14:31:10+10:00,-36000,True,False,"['quote.py', '0007_quotemessage.py']",['911cb9c484c68271c3213ec7e3e45d5c32894116'],23,31,54,2,0.5,0.75,0.5
+a949b240549344e829a178beda880cb9f8e45067,add deleted flag to channel,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 14:31:47+10:00,-36000,2022-09-19 14:31:47+10:00,-36000,True,False,"['0008_channels_deleted.py', 'models.py']",['0d95382637f77effdd4b07266e909f3f9f0fdf44'],0,19,19,2,,,
+f04b530ff6d07aded6eead33050e1f9f476f6c8c,add Models cog,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 14:32:10+10:00,-36000,2022-09-19 14:32:10+10:00,-36000,True,False,['models.py'],['a949b240549344e829a178beda880cb9f8e45067'],0,110,110,1,0.6935483870967742,1.0,0.6290322580645161
+18eb7bd03fede4d80022118b721849e564c1660a,add models and qouote to cogs,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 14:44:41+10:00,-36000,2022-09-19 14:44:41+10:00,-36000,True,False,"['README.md', 'app_settings.py']",['f04b530ff6d07aded6eead33050e1f9f476f6c8c'],16,23,39,2,,,
+f86272a795d08336b89d8a1c8f474abeece6b3c8,add Slash command error handling,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 20:18:05+10:00,-36000,2022-09-19 20:18:05+10:00,-36000,True,False,['bot.py'],['18eb7bd03fede4d80022118b721849e564c1660a'],1,10,11,1,0.7142857142857143,0.7142857142857143,0.0
+3fbfd481114730d5e8f66ea5dca9d401fa2c356a,slashify,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 20:18:25+10:00,-36000,2022-09-19 20:18:25+10:00,-36000,True,False,['eastereggs.py'],['f86272a795d08336b89d8a1c8f474abeece6b3c8'],22,4,26,1,0.0,0.0,0.0
+6434b707e0414d58d4f5b42c85f6600870d66854,slashify,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 20:18:40+10:00,-36000,2022-09-19 20:18:40+10:00,-36000,True,False,['remind.py'],['3fbfd481114730d5e8f66ea5dca9d401fa2c356a'],43,17,60,1,1.0,1.0,1.0
+2b00307f2834996e778cb958bce6135e31190de4,fixes to populate,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 20:20:59+10:00,-36000,2022-09-19 20:20:59+10:00,-36000,True,False,['models.py'],['6434b707e0414d58d4f5b42c85f6600870d66854'],10,6,16,1,,,
+ed0cf49f8db3d40cbae42b1b53bd1d76a4026498,"decorators to support slash commands, probably breaks prefixes",Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 20:23:32+10:00,-36000,2022-09-19 20:23:32+10:00,-36000,True,False,['decorators.py'],['2b00307f2834996e778cb958bce6135e31190de4'],14,12,26,1,,,
+db7f2360e455b2cca9928591b5f3e0798dc845d7,Custom NotAuthenticated Exception,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 22:20:59+10:00,-36000,2022-09-19 22:20:59+10:00,-36000,True,False,['exceptions.py'],['ed0cf49f8db3d40cbae42b1b53bd1d76a4026498'],0,13,13,1,1.0,1.0,1.0
+fa813e6885a0fbd7db578ee9af6e93ca978f8b1c,swap exceptions to NotAuthenticated,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 22:21:18+10:00,-36000,2022-09-19 22:21:18+10:00,-36000,True,False,['decorators.py'],['db7f2360e455b2cca9928591b5f3e0798dc845d7'],4,21,25,1,1.0,1.0,1.0
+913123b189501b95a492ee299c01f6cd9cbb0ddd,slashify,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 22:21:41+10:00,-36000,2022-09-19 22:21:41+10:00,-36000,True,False,['about.py'],['fa813e6885a0fbd7db578ee9af6e93ca978f8b1c'],15,9,24,1,1.0,0.0,0.0
+bf8967d95e315e2a6dfaad47a35989f533f488ca,make populate ephemeral,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 22:21:58+10:00,-36000,2022-09-19 22:21:58+10:00,-36000,True,False,['models.py'],['913123b189501b95a492ee299c01f6cd9cbb0ddd'],1,2,3,1,0.0,1.0,1.0
+2c92251c03ce0ed7bae0ebbebe3fd3dc30ddb8cc,fix reminder calc,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 22:22:07+10:00,-36000,2022-09-19 22:22:07+10:00,-36000,True,False,['remind.py'],['bf8967d95e315e2a6dfaad47a35989f533f488ca'],14,7,21,1,0.0,0.0,1.0
+f0aebefbcf9922cd0d3aa1d59558546becb594bb,add NotAuthenticated to errorhandling,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 22:22:19+10:00,-36000,2022-09-19 22:22:19+10:00,-36000,True,False,['bot.py'],['2c92251c03ce0ed7bae0ebbebe3fd3dc30ddb8cc'],0,3,3,1,1.0,1.0,0.0
+24d927c9b6424b234f4d2b4e73b3118905d72761,isort pre-commit spam,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 22:33:08+10:00,-36000,2022-09-19 22:33:08+10:00,-36000,True,False,"['app_settings.py', 'bot.py', 'abuse.py', 'eastereggs.py', 'eightball.py', 'members.py', 'models.py', 'price_check.py', 'quote.py', 'remind.py', 'services.py', 'sov.py', 'timers.py', 'decorators.py', 'exceptions.py', 'welcomegoodbye.py']",['f0aebefbcf9922cd0d3aa1d59558546becb594bb'],107,63,170,16,,,
+0b3bbae12012ebb6e6288fe124aa587759c5f0c3,use get_site_url instead,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-19 22:33:41+10:00,-36000,2022-09-19 22:33:41+10:00,-36000,True,False,['about.py'],['24d927c9b6424b234f4d2b4e73b3118905d72761'],11,5,16,1,1.0,0.0,0.0
+c83a2817d2f18384ca84b2fd412e6610e6b10478,Add save quote permission to django,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-21 21:38:36+10:00,-36000,2022-09-21 21:38:36+10:00,-36000,True,False,['models.py'],['0b3bbae12012ebb6e6288fe124aa587759c5f0c3'],16,8,24,1,,,
+dddcb618db37692b9107b079d127575ff6a4a39a,rewrite quote cog entirely using MessageCommands and Modals and other black magic,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-21 21:39:12+10:00,-36000,2022-09-21 21:39:12+10:00,-36000,True,False,['quote.py'],['c83a2817d2f18384ca84b2fd412e6610e6b10478'],91,102,193,1,1.0,1.0,0.1
+9f0f64236c27113eda63c3f18e73a46d0bd79888,tidy,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-21 21:39:27+10:00,-36000,2022-09-21 21:39:27+10:00,-36000,True,False,['about.py'],['dddcb618db37692b9107b079d127575ff6a4a39a'],2,0,2,1,,,
+e8f65b780927e966f2e54a4ce32205b12e4ef16f,corrected a few errors,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-21 21:39:52+10:00,-36000,2022-09-21 21:39:52+10:00,-36000,True,False,['models.py'],['9f0f64236c27113eda63c3f18e73a46d0bd79888'],14,16,30,1,0.3333333333333333,1.0,1.0
+49a17b014cb9edacb17ceb693f9a57664f38f83b,add a shim to decorators until we move entirely off prefix commands,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-09-21 22:23:02+10:00,-36000,2022-09-21 22:23:02+10:00,-36000,True,False,['decorators.py'],['e8f65b780927e966f2e54a4ce32205b12e4ef16f'],4,16,20,1,1.0,1.0,1.0
+9316e6308c8452fc3678db6f117bc752479971ba,Update the empty roles commnad to be more usefull,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-09-28 19:04:04+08:00,-28800,2022-09-28 19:04:04+08:00,-28800,True,False,['admin.py'],['41cd9c979589c350a7f77cc2d77b99cb73006800'],3,14,17,1,0.0,1.0,1.0
+d40f7d0605e0658aac33d3e0364d89fb93581475,version b1,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-09-28 19:06:54+08:00,-28800,2022-09-28 19:06:54+08:00,-28800,True,False,['__init__.py'],['9316e6308c8452fc3678db6f117bc752479971ba'],1,1,2,1,,,
+61ae03746ed272b0d6638a1242db4323e616c60b,"Drop circle, use actions",Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-10-06 12:23:46+08:00,-28800,2022-10-06 12:23:46+08:00,-28800,True,False,"['config.yml', 'main.yml', 'publish.yml', 'Makefile']",['d40f7d0605e0658aac33d3e0364d89fb93581475'],51,105,156,4,,,
+d09e171cd34150d8050fbe9c1d52bd5f10504a02,update make,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-10-06 12:25:13+08:00,-28800,2022-10-06 12:25:13+08:00,-28800,True,False,['Makefile'],['61ae03746ed272b0d6638a1242db4323e616c60b'],2,1,3,1,,,
+38622e1ea34b59a08bc527ceb4f0d2c2ca81db45,lets just check it builds,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-10-06 12:27:25+08:00,-28800,2022-10-06 12:27:25+08:00,-28800,True,False,['main.yml'],['d09e171cd34150d8050fbe9c1d52bd5f10504a02'],15,15,30,1,,,
+9f3acfce6a5d55e635e5d554e2ac6c8d44155ba6,fix description of recall,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-10-11 13:40:26+10:00,-36000,2022-10-11 13:40:26+10:00,-36000,True,False,['quote.py'],['49a17b014cb9edacb17ceb693f9a57664f38f83b'],1,1,2,1,,,
+e06af3080ac6ed58425b18fee36859d3ba8c841c,update pre-commit,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-10-11 14:45:56+10:00,-36000,2022-10-11 14:45:56+10:00,-36000,True,False,['.pre-commit-config.yaml'],['9f3acfce6a5d55e635e5d554e2ac6c8d44155ba6'],1,1,2,1,,,
+fd181f635ca067fa971e6bfe824a65886af989e7,Version Bump 3.4.0b1,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2022-10-11 14:49:39+10:00,-36000,2022-10-11 14:49:39+10:00,-36000,True,False,['__init__.py'],['a7f8ffb813841a8e57a92fc02acbe5c6df5fa268'],1,1,2,1,,,
+ec58b148686a96822a55d3da07cf43d13bff4bf8,missing migration,Ariel Rin,joel.falknau@gmail.com,Ariel Rin,joel.falknau@gmail.com,2022-10-22 12:58:52+10:00,-36000,2022-10-22 12:58:52+10:00,-36000,True,False,"['0009_alter_quotemessage_options.py', 'models.py']",['c761206fa209030ab6a6468de8c9223b3b438d32'],2,20,22,2,,,
+fb0a84a3a273f43e4cb3490d4e21f36151b91528,Version bump 3.4.0.b2,Ariel Rin,joel.falknau@gmail.com,Ariel Rin,joel.falknau@gmail.com,2022-10-22 13:00:55+10:00,-36000,2022-10-22 13:00:55+10:00,-36000,True,False,['__init__.py'],['ec58b148686a96822a55d3da07cf43d13bff4bf8'],1,1,2,1,,,
+b321053763abd37bce7530ea2ba267a64898d89d,"Update README.md
+
+Add lookup permissions",Nick,sticker94@live.com,GitHub,noreply@github.com,2022-12-04 20:11:03-07:00,25200,2022-12-04 20:11:03-07:00,25200,True,False,['README.md'],['5ba73424846f19613513d40548fa5fffe6ac2872'],1,6,7,1,,,
+05f004fb9cc6b60eda22639574319c895594d028,"Update README.md
+
+Format correction",Nick,sticker94@live.com,GitHub,noreply@github.com,2022-12-04 20:12:59-07:00,25200,2022-12-04 20:12:59-07:00,25200,True,False,['README.md'],['b321053763abd37bce7530ea2ba267a64898d89d'],1,1,2,1,,,
+4a5a28c400694afe1b73b257fc8a1d26ada5a78a,invstigate using views in bot messages,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-12-13 13:41:09+08:00,-28800,2022-12-13 13:41:09+08:00,-28800,True,False,"['__init__.py', 'bot_tasks.py', 'tasks.py']",['5ba73424846f19613513d40548fa5fffe6ac2872'],6,16,22,3,1.0,1.0,0.0
+b7e1bf436ca042f9b05bbaab864a6e048daa89c1,Give all errors log time,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-12-18 20:57:41+08:00,-28800,2022-12-18 20:57:41+08:00,-28800,True,False,['bot.py'],['4a5a28c400694afe1b73b257fc8a1d26ada5a78a'],0,3,3,1,1.0,1.0,0.0
+2cf94c30c2924fbdab9ce90c4c5c130845144769,b4,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2022-12-18 21:34:37+08:00,-28800,2022-12-18 21:34:37+08:00,-28800,True,False,['__init__.py'],['b7e1bf436ca042f9b05bbaab864a6e048daa89c1'],1,1,2,1,,,
+1f7a7c11a4129071292182cfadad58da95869022,Error handling re-work,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-01-10 19:05:19+08:00,-28800,2023-01-10 19:05:19+08:00,-28800,True,False,"['bot.py', 'decorators.py', 'exceptions.py']",['2cf94c30c2924fbdab9ce90c4c5c130845144769'],3,8,11,3,0.25,0.25,0.25
+b80741de05bd2dfcc097b8c01278e0453cc74766,vbump,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-01-10 19:07:12+08:00,-28800,2023-01-10 19:07:12+08:00,-28800,True,False,['__init__.py'],['1f7a7c11a4129071292182cfadad58da95869022'],2,2,4,1,,,
+05a818d729ef269ad085817b3456cb143baacb98,add more info to the altcorp command,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-01-17 10:30:13+08:00,-28800,2023-01-17 10:30:13+08:00,-28800,True,False,['members.py'],['b80741de05bd2dfcc097b8c01278e0453cc74766'],37,57,94,1,0.0,0.0,1.0
+c29e10e28ac07a3c4ba4874240a5322fa5ea1e23,beta bump,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-01-17 10:30:47+08:00,-28800,2023-01-17 10:30:47+08:00,-28800,True,False,['__init__.py'],['05a818d729ef269ad085817b3456cb143baacb98'],1,1,2,1,,,
+4fc085fecd6dd95c16ad6d0bb1f994bf19553c33,missing import,Ariel Rin,ozirascal@gmail.com,GitHub,noreply@github.com,2023-01-24 00:01:14+10:00,-36000,2023-01-24 00:01:14+10:00,-36000,True,False,['welcomegoodbye.py'],['c29e10e28ac07a3c4ba4874240a5322fa5ea1e23'],0,1,1,1,,,
+fde3220a40003e79c6224ed0fe385048924de0f7,Add sync command,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-02-02 19:56:04+08:00,-28800,2023-02-02 19:56:04+08:00,-28800,True,False,['admin.py'],['c29e10e28ac07a3c4ba4874240a5322fa5ea1e23'],0,19,19,1,1.0,1.0,0.0
+5cea434e649ea1c814d4584ff9fa89c2f58b9639,b7,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-02-02 19:56:32+08:00,-28800,2023-02-02 19:56:32+08:00,-28800,True,False,['__init__.py'],['fde3220a40003e79c6224ed0fe385048924de0f7'],1,1,2,1,,,
+d65cec6f6a70fdabf263f9988547cb4ac91b6924,add user sync context menu options,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-03-06 21:08:26+08:00,-28800,2023-03-06 21:08:26+08:00,-28800,True,False,['admin.py'],['dadc512e5c5f8e48c6ddb50359136a8861dd4383'],0,21,21,1,1.0,1.0,0.0
+e285330de299907d345fa44d8c0255af47daafc6,version,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-03-06 21:10:07+08:00,-28800,2023-03-06 21:10:07+08:00,-28800,True,False,['__init__.py'],['d65cec6f6a70fdabf263f9988547cb4ac91b6924'],1,1,2,1,,,
+02740bf9e84965fef51bff1d4ca9efa5a5dde052,versdion 3.4.0,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-03-31 11:59:12+08:00,-28800,2023-03-31 11:59:12+08:00,-28800,True,False,['__init__.py'],['e285330de299907d345fa44d8c0255af47daafc6'],2,2,4,1,,,
+d6d5053e0af75202845b0f524ad711ca94c12368,add server command,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-01 15:45:27+08:00,-28800,2023-04-01 15:45:27+08:00,-28800,True,False,['about.py'],['02740bf9e84965fef51bff1d4ca9efa5a5dde052'],0,37,37,1,0.0,1.0,1.0
+1a0d770dd6709f6f87c03a129650707413015a8e,b1,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-01 15:45:49+08:00,-28800,2023-04-01 15:45:49+08:00,-28800,True,False,['__init__.py'],['d6d5053e0af75202845b0f524ad711ca94c12368'],2,2,4,1,,,
+e955c6e2c06c196e5077f00bde81547ac1e0c2b9,Add more insults,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-01 17:33:09+08:00,-28800,2023-04-01 17:33:09+08:00,-28800,True,False,"['__init__.py', 'abuse.py']",['1a0d770dd6709f6f87c03a129650707413015a8e'],2,22,24,2,0.0,1.0,1.0
+d336d561dd2998f8e3f56e458bebe2ba1291c37d,more abuse cog stuff,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-01 17:37:01+08:00,-28800,2023-04-01 17:37:01+08:00,-28800,True,False,"['__init__.py', 'abuse.py']",['e955c6e2c06c196e5077f00bde81547ac1e0c2b9'],3,9,12,2,0.0,1.0,1.0
+1f0a2f38e2e6377bed8426548f3b5c2c6f827016,Add Prom Exporter for slash commands,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-19 16:33:15+08:00,-28800,2023-04-19 16:33:15+08:00,-28800,True,False,['prom_export.py'],['d336d561dd2998f8e3f56e458bebe2ba1291c37d'],0,31,31,1,1.0,1.0,1.0
+92f8c843d4ff57a4ecb47885c526d166676628f8,Add prom to readme,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-19 16:34:22+08:00,-28800,2023-04-19 16:34:22+08:00,-28800,True,False,['README.md'],['1f0a2f38e2e6377bed8426548f3b5c2c6f827016'],0,1,1,1,,,
+524283919c01f670993b0d7717577f602723fc05,v bump:,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-19 16:34:45+08:00,-28800,2023-04-19 16:34:45+08:00,-28800,True,False,['__init__.py'],['92f8c843d4ff57a4ecb47885c526d166676628f8'],1,1,2,1,,,
+9524a3f919275973f773a517f811a5048aaacb20,Add ESS,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-25 19:28:35+08:00,-28800,2023-04-25 19:28:35+08:00,-28800,True,False,"['app_settings.py', 'admin.py', 'ess.py']",['524283919c01f670993b0d7717577f602723fc05'],1,55,56,3,0.2,1.0,0.2
+935e03bbbc46b798fb0e00c35e94bbe7f8bfaca1,update aioredis,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-29 11:10:02+08:00,-28800,2023-04-29 11:10:13+08:00,-28800,True,False,"['bot.py', 'ess.py', 'setup.py']",['9524a3f919275973f773a517f811a5048aaacb20'],54,3,57,3,0.8,0.0,0.8
+98e461ba55ed4e4e47fc2004350a1fb19ecd123b,mend,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-29 11:10:42+08:00,-28800,2023-04-29 11:10:42+08:00,-28800,True,False,['__init__.py'],['935e03bbbc46b798fb0e00c35e94bbe7f8bfaca1'],2,2,4,1,,,
+1c03e5dddc29f0d47415d968e960bfe946c8db1c,add task events and prom exporter,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-29 15:00:37+08:00,-28800,2023-04-29 15:00:37+08:00,-28800,True,False,"['app_settings.py', 'bot_tasks.py', 'eightball.py', 'models.py', 'prom_export.py']",['98e461ba55ed4e4e47fc2004350a1fb19ecd123b'],13,30,43,5,0.7692307692307693,0.7692307692307693,0.38461538461538464
+a678fe5c48b04e0cbe5b644f0a47a1ea2af8fcfb,vbump?,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-29 15:01:05+08:00,-28800,2023-04-29 15:01:05+08:00,-28800,True,False,['__init__.py'],['1c03e5dddc29f0d47415d968e960bfe946c8db1c'],2,2,4,1,,,
+2340a914f20c75ae23078067e518f0527e1e4df1,add default as false for settings,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-29 15:05:57+08:00,-28800,2023-04-29 15:05:57+08:00,-28800,True,False,['app_settings.py'],['a678fe5c48b04e0cbe5b644f0a47a1ea2af8fcfb'],1,1,2,1,,,
+27ac014d2ac9347d7093276e835a7e15b0813ae4,max length of params on failure tasks,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-29 15:19:28+08:00,-28800,2023-04-29 15:19:28+08:00,-28800,True,False,['prom_export.py'],['2340a914f20c75ae23078067e518f0527e1e4df1'],2,2,4,1,,,
+d10180c7023192d62874682e5be79bbbd7e61923,propperly slice: max length of params on failure tasks,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-29 15:20:43+08:00,-28800,2023-04-29 15:20:43+08:00,-28800,True,False,['prom_export.py'],['27ac014d2ac9347d7093276e835a7e15b0813ae4'],2,2,4,1,,,
+1f033d5d29dacb2b4e78396e06ab78bbf3c55a04,send bad command contexts to the error channel if setup too with stack traces,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-29 15:42:28+08:00,-28800,2023-04-29 15:42:28+08:00,-28800,True,False,"['bot.py', 'eightball.py', 'prom_export.py']",['d10180c7023192d62874682e5be79bbbd7e61923'],8,19,27,3,0.0,0.0,0.0
+fa2598914ef90d06f2f405635fb1d9a7e4bf0fcc,typo in 8ball,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-29 15:42:55+08:00,-28800,2023-04-29 15:42:55+08:00,-28800,True,False,['eightball.py'],['1f033d5d29dacb2b4e78396e06ab78bbf3c55a04'],1,1,2,1,,,
+735204a4fabc5e8ed48bef4e9cc625e91684049d,update context from bad command,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-29 15:59:06+08:00,-28800,2023-04-29 15:59:06+08:00,-28800,True,False,['bot.py'],['fa2598914ef90d06f2f405635fb1d9a7e4bf0fcc'],1,4,5,1,0.0,0.0,0.0
+d5ecdb0c975d00f4ebcbf6d408e882e02913d498,Add facwar demo cog,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-30 19:46:42+08:00,-28800,2023-04-30 19:46:42+08:00,-28800,True,False,['facwar.py'],['735204a4fabc5e8ed48bef4e9cc625e91684049d'],0,98,98,1,0.06060606060606061,0.06060606060606061,0.06060606060606061
+a1b18381ed1aa4601835f50374707e88d523e957,version,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-04-30 19:47:13+08:00,-28800,2023-04-30 19:47:13+08:00,-28800,True,False,['__init__.py'],['d5ecdb0c975d00f4ebcbf6d408e882e02913d498'],1,1,2,1,,,
+5e93485b1cc9ce1968b4a3a33c937756ac722ae7,swap to pyredis from aioredis,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-05-07 14:07:33+08:00,-28800,2023-05-07 14:07:33+08:00,-28800,True,False,['bot.py'],['a1b18381ed1aa4601835f50374707e88d523e957'],1,1,2,1,,,
+b001339433122ce468c451e7e15a6b943e04b859,vbump minor,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-05-07 14:10:19+08:00,-28800,2023-05-07 14:10:19+08:00,-28800,True,False,['__init__.py'],['5e93485b1cc9ce1968b4a3a33c937756ac722ae7'],2,2,4,1,,,
+5a0c18dc41c459652ad59bdfa59c6e4b7d0e420f,update deps,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-05-07 14:24:55+08:00,-28800,2023-05-07 14:24:55+08:00,-28800,True,False,['setup.py'],['b001339433122ce468c451e7e15a6b943e04b859'],1,1,2,1,,,
+170e1eb3a88406cce0491711ed33ec9c75cd2d7c,Fix reqs,Aaron,aaronkable@gmail.com,GitHub,noreply@github.com,2023-05-07 21:18:13+08:00,-28800,2023-05-07 21:18:13+08:00,-28800,True,False,['setup.py'],['5a0c18dc41c459652ad59bdfa59c6e4b7d0e420f'],1,1,2,1,,,
+4b34f6b39c5bb8c25e4ce49786aa011b7565e3f1,version,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-05-07 22:17:13+08:00,-28800,2023-05-07 22:17:13+08:00,-28800,True,False,['__init__.py'],['170e1eb3a88406cce0491711ed33ec9c75cd2d7c'],1,1,2,1,,,
+d27103d0cfee02406de381113023f0e2d944a33c,Add cache buster trial...,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-05-18 18:48:17+08:00,-28800,2023-05-18 18:48:17+08:00,-28800,True,False,"['app_settings.py', 'bot.py', 'bot_tasks.py', 'tasks.py']",['4b34f6b39c5bb8c25e4ce49786aa011b7565e3f1'],4,27,31,4,1.0,1.0,1.0
+fc53cdf3e21d52b0687f3cde4fd3af94c735f571,b1wq,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-05-18 18:49:03+08:00,-28800,2023-05-18 18:49:03+08:00,-28800,True,False,['__init__.py'],['d27103d0cfee02406de381113023f0e2d944a33c'],2,2,4,1,,,
+0bf778a581b54daa4f1e4b42c966f16429388fd4,add more logs,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-05-18 18:55:28+08:00,-28800,2023-05-18 18:55:28+08:00,-28800,True,False,"['__init__.py', 'bot_tasks.py']",['fc53cdf3e21d52b0687f3cde4fd3af94c735f571'],2,3,5,2,0.0,0.0,1.0
+7b812743af7d80413f18deeb36abc5ca55051fcb,kwargs ~- args,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-05-18 18:58:02+08:00,-28800,2023-05-18 18:58:02+08:00,-28800,True,False,"['__init__.py', 'bot_tasks.py']",['0bf778a581b54daa4f1e4b42c966f16429388fd4'],3,3,6,2,,,
+1258a6e6080740050923a0bff16b60e685b212a0,"[FIX] Auth Link
+
+Discord fucked up their MD parsing and MD is not needed here …",Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-27 22:18:02+02:00,-7200,2023-06-27 22:18:02+02:00,-7200,True,False,['about.py'],['7b812743af7d80413f18deeb36abc5ca55051fcb'],2,2,4,1,,,
+3faa698d5630a267019acef5ef4e450dc1f98092,[FIX] Anothr one,Peter Pfeufer,info@ppfeufer.de,Peter Pfeufer,info@ppfeufer.de,2023-06-27 23:16:25+02:00,-7200,2023-06-27 23:16:25+02:00,-7200,True,False,['auth.py'],['1258a6e6080740050923a0bff16b60e685b212a0'],2,2,4,1,,,
+527a7bd57804db3a0562c22328f1186fac1736b1,Update __init__.py,Aaron,aaronkable@gmail.com,GitHub,noreply@github.com,2023-06-28 07:26:16+08:00,-28800,2023-06-28 07:26:16+08:00,-28800,True,False,['__init__.py'],['4e0e70fac1bf0844413899127eb53bf87dedbcf4'],1,1,2,1,,,
+d9192ed52a60608c65f4bab1f0fce7ea5ade3292,Add basic B@# ticket system that Marsbar requested,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-06-30 20:25:13+08:00,-28800,2023-06-30 20:25:13+08:00,-28800,True,False,"['admin.py', 'members.py', 'tickets.py', '0010_alter_discordbot_options_ticketgroups.py', '0011_alter_ticketgroups_options_and_more.py', 'models.py']",['7b812743af7d80413f18deeb36abc5ca55051fcb'],8,187,195,6,0.6851851851851852,1.0,0.4444444444444444
+e20ca384ee4c3a4e933673cbc48bcbeb8fa4da29,QOL some ticket stuff,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-06-30 21:08:24+08:00,-28800,2023-06-30 21:08:24+08:00,-28800,True,False,['tickets.py'],['d9192ed52a60608c65f4bab1f0fce7ea5ade3292'],2,2,4,1,,,
+9d0a67f07b91c922f2da5c37c11b3250bf8812cf,Back into beta,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-01 08:05:35+08:00,-28800,2023-07-01 08:05:35+08:00,-28800,True,False,['__init__.py'],['692386bd2383b99b6a9f69f3391b504932059f22'],1,1,2,1,,,
+1dcfe4a782d7ea9e6217f9533da9bd78334ac5a6,Add close ticket command,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-01 17:01:47+08:00,-28800,2023-07-01 17:01:47+08:00,-28800,True,False,"['__init__.py', 'tickets.py']",['9d0a67f07b91c922f2da5c37c11b3250bf8812cf'],4,21,25,2,1.0,1.0,1.0
+5d3b545bb05cf7644fd24de90d74e952b03a005f,fix the help command,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-01 17:15:06+08:00,-28800,2023-07-01 17:15:06+08:00,-28800,True,False,['tickets.py'],['1dcfe4a782d7ea9e6217f9533da9bd78334ac5a6'],2,2,4,1,,,
+391ad35bfbe9be033cbc7934ef08df1beb9d8a09,configurable price check hostname,Mary,spiltfish@aim.com,Mary,spiltfish@aim.com,2023-07-20 22:10:30-07:00,25200,2023-07-20 22:10:30-07:00,25200,True,False,"['README.md', 'app_settings.py', 'price_check.py']",['5d3b545bb05cf7644fd24de90d74e952b03a005f'],1,10,11,3,,,
+65941e86e41b1ba87b771ca1865c2fea1ae9a331,Update __init__.py,Aaron,aaronkable@gmail.com,GitHub,noreply@github.com,2023-07-21 17:15:41+08:00,-28800,2023-07-21 17:15:41+08:00,-28800,True,False,['__init__.py'],['e95fcdcfd55c57b895aa226f591c0cdb5f216edf'],1,1,2,1,,,
+46a0a1fa51dc7ef1b001ec440fcac92809c94a79,swap to flit,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-21 21:35:08+08:00,-28800,2023-07-21 21:35:08+08:00,-28800,True,False,"['LICENSE', 'README.md', '__init__.py', 'pyproject.toml', 'setup.py']",['88824c7a4681cd0a5e790e491ccb5e6ebf240cb0'],4,56,60,5,,,
+3165d86cc09ebdc4cc5475d0e72c32c48e6d5c2c,tidy up build,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-21 21:39:13+08:00,-28800,2023-07-21 21:39:13+08:00,-28800,True,False,"['Makefile', 'pyproject.toml']",['46a0a1fa51dc7ef1b001ec440fcac92809c94a79'],2,7,9,2,,,
+b620a6cdb48779c18e2da559237030efbfe9b300,remove setup.py,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-21 21:39:39+08:00,-28800,2023-07-21 21:39:39+08:00,-28800,True,False,['setup.py'],['3165d86cc09ebdc4cc5475d0e72c32c48e6d5c2c'],47,0,47,1,,,
+dde69efda675fcce1a42704abc1e63847a3811a6,change test build versions,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-21 21:41:02+08:00,-28800,2023-07-21 21:41:02+08:00,-28800,True,False,['main.yml'],['b620a6cdb48779c18e2da559237030efbfe9b300'],2,1,3,1,,,
+e421a8ef56c3505705a3fcb9ea055092cc9c6213,version bump,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-21 21:41:55+08:00,-28800,2023-07-21 21:41:55+08:00,-28800,True,False,['__init__.py'],['dde69efda675fcce1a42704abc1e63847a3811a6'],1,1,2,1,,,
+ce05b51926d9e2531e5e1d4eb6280a66763e8db8,Ariel is :thumbdown:,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-26 17:12:19+08:00,-28800,2023-07-26 17:12:19+08:00,-28800,True,False,['about.py'],['e421a8ef56c3505705a3fcb9ea055092cc9c6213'],0,7,7,1,1.0,1.0,1.0
+51b28530fb60943eaa1e4ce28f018c2ef783fdf6,how did this ever work? Fetch user not Get user. Get users has cache issues on startup of bot.,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-28 16:46:03+08:00,-28800,2023-07-28 16:51:02+08:00,-28800,True,False,['bot_tasks.py'],['ce05b51926d9e2531e5e1d4eb6280a66763e8db8'],6,8,14,1,1.0,1.0,0.0
+a3aca84df7b01b08f429ae3cc0df8380b13215e9,Add a can send check to see if it helps,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-28 16:53:52+08:00,-28800,2023-07-28 16:53:52+08:00,-28800,True,False,['bot_tasks.py'],['51b28530fb60943eaa1e4ce28f018c2ef783fdf6'],12,14,26,1,0.0,1.0,0.0
+1eccd89582fee6dc89f4650be5f80a4265573cad,Add logging for failures,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-28 16:55:35+08:00,-28800,2023-07-28 16:55:35+08:00,-28800,True,False,['bot_tasks.py'],['a3aca84df7b01b08f429ae3cc0df8380b13215e9'],0,6,6,1,0.6,1.0,0.0
+cd5e18441aad808bc90c253dd75e570fb93be863,Version,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-07-28 16:57:49+08:00,-28800,2023-07-28 16:57:49+08:00,-28800,True,False,['__init__.py'],['1eccd89582fee6dc89f4650be5f80a4265573cad'],1,1,2,1,,,
+a4c8ccf9569fcd68c88425d9791ef14620b8d2d6,Transifex Integration,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2023-10-08 21:27:27+10:00,-36000,2023-10-08 21:27:27+10:00,-36000,True,False,['transifex.yml'],['cd5e18441aad808bc90c253dd75e570fb93be863'],0,10,10,1,,,
+6cf0275e7f93620cf0b8aa840bc305ed5381eae7,create source translation files,Ariel Rin,ozirascal@gmail.com,Ariel Rin,ozirascal@gmail.com,2023-10-08 22:13:40+10:00,-36000,2023-10-08 22:13:40+10:00,-36000,True,False,"['django.mo', 'django.po']",['a4c8ccf9569fcd68c88425d9791ef14620b8d2d6'],0,38,38,2,,,
+a5607f228da08dd5379e6d608b5a325f59420d59,abuse 2.0,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-10-12 21:07:21+08:00,-28800,2023-10-12 21:07:21+08:00,-28800,True,False,['abuse_two.py'],['cd5e18441aad808bc90c253dd75e570fb93be863'],0,32,32,1,1.0,1.0,1.0
+4770a45050f78a16b2953890561b2ec676017561,Add files to channels for testing,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-10-23 19:57:21+08:00,-28800,2023-10-23 19:57:21+08:00,-28800,True,False,"['bot_tasks.py', 'tasks.py']",['57336937f571470427b01a7eb45eb00785aa4ca2'],4,18,22,2,0.0,0.0,0.0
+e3d49701567183824c3690356ff0b8f29039e74e,Add reverse tickets,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-10-29 20:15:03+08:00,-28800,2023-10-29 20:15:03+08:00,-28800,True,False,['tickets.py'],['4770a45050f78a16b2953890561b2ec676017561'],1,15,16,1,1.0,1.0,0.0
+f64b1d4cd94043c85d17bb4cc2de833e1033cef8,Add files to reverse tickets,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-10-29 20:23:05+08:00,-28800,2023-10-29 20:23:05+08:00,-28800,True,False,['tickets.py'],['e3d49701567183824c3690356ff0b8f29039e74e'],1,7,8,1,1.0,1.0,0.0
+bf038f9887f3a65689b1f865bf3b0741ba947056,Fix up the ticket cog selector,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-11-06 16:09:31+08:00,-28800,2023-11-06 16:09:31+08:00,-28800,True,False,['tickets.py'],['f64b1d4cd94043c85d17bb4cc2de833e1033cef8'],33,19,52,1,1.0,0.0,1.0
+608328de7e07942059ac9d54303ea3aeb389e44d,Version bump and readme updates,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-11-06 16:25:50+08:00,-28800,2023-11-06 16:25:50+08:00,-28800,True,False,"['README.md', '__init__.py', 'app_settings.py']",['bf038f9887f3a65689b1f865bf3b0741ba947056'],55,79,134,3,,,
+006880a97fa5f84222a701aa0f944459d4aa601d,Add ticket to top of readme,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-11-06 16:28:13+08:00,-28800,2023-11-06 16:28:13+08:00,-28800,True,False,['README.md'],['608328de7e07942059ac9d54303ea3aeb389e44d'],0,2,2,1,,,
+1af5cd0d956d42ff46201da14fb393ea18311601,move the arial abuse cog,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-11-06 16:29:04+08:00,-28800,2023-11-06 16:29:04+08:00,-28800,True,False,"['about.py', 'abuse_two.py']",['006880a97fa5f84222a701aa0f944459d4aa601d'],7,7,14,2,,,
+fa1f8fc04269af8453f440b9358ccfa892fdb4f2,re-add the interaction response to fix the 'no respose' bug,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-11-06 18:37:28+08:00,-28800,2023-11-06 18:37:28+08:00,-28800,True,False,['tickets.py'],['1af5cd0d956d42ff46201da14fb393ea18311601'],1,1,2,1,,,
+1835d1961387c6751d1315e920560a831d2d4535,3.7.1,Aaron Kable,aaronkable@gmail.com,Aaron Kable,aaronkable@gmail.com,2023-11-06 18:39:30+08:00,-28800,2023-11-06 18:39:30+08:00,-28800,True,False,['__init__.py'],['fa1f8fc04269af8453f440b9358ccfa892fdb4f2'],1,1,2,1,,,

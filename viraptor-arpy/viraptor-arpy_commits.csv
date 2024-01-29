@@ -1,0 +1,188 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+304a1112f272d98ae2f7abbc6fcc2a3587b6fd7f,initial version of arpy module,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2010-08-05 03:02:58+01:00,-3600,2010-08-05 03:02:58+01:00,-3600,True,False,['__init__.py'],[],0,261,261,1,0.5,0.4189189189189189,0.6621621621621622
+d7d1fe05b6af00fd97d9fe5d238b077bd8a298c9,added packaging / pypi stuff,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2010-08-05 03:17:36+01:00,-3600,2010-08-05 03:17:36+01:00,-3600,True,False,"['MANIFEST', 'arpy.py', 'setup.py']",['304a1112f272d98ae2f7abbc6fcc2a3587b6fd7f'],0,16,16,3,,,
+f79c0631c58f85317f12e1aba5d301ae5e560caa,make name unicode,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2010-08-05 03:30:16+01:00,-3600,2010-08-05 03:30:16+01:00,-3600,True,False,['setup.py'],['d7d1fe05b6af00fd97d9fe5d238b077bd8a298c9'],1,1,2,1,,,
+50b8924fc12c0c76f2115d92202e8159b332b691,one underscore -> two underscores,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2010-08-05 03:30:37+01:00,-3600,2010-08-05 03:30:37+01:00,-3600,True,False,['arpy.py'],['f79c0631c58f85317f12e1aba5d301ae5e560caa'],10,10,20,1,,,
+f0cbd805050835b0c4add08f7ebb2f21c88ac0d2,update the license information,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2011-02-08 22:51:26+00:00,0,2011-02-08 22:51:26+00:00,0,True,False,"['arpy.py', 'setup.py']",['50b8924fc12c0c76f2115d92202e8159b332b691'],0,30,30,2,,,
+5b5551c64cdde6ccc36c28b6718aeb9a17e0daa3,bump version to include license in pypi,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2011-02-08 22:56:55+00:00,0,2011-02-08 22:56:55+00:00,0,True,False,['setup.py'],['f0cbd805050835b0c4add08f7ebb2f21c88ac0d2'],1,1,2,1,,,
+e1c678b9dde2d41a04a8937a6f1b0539ec237654,comment change - ...keys() not ...values(),K. Richard Pixley,rich@noir.com,K. Richard Pixley,rich@noir.com,2011-02-08 18:33:38-08:00,28800,2011-02-08 18:33:38-08:00,28800,True,False,['arpy.py'],['5b5551c64cdde6ccc36c28b6718aeb9a17e0daa3'],2,2,4,1,,,
+2797917b07a8129bbb41f0b1b8933f4061aa291b,"remove any trailing slashes from member name, regardless of header type.",K. Richard Pixley,rich@noir.com,K. Richard Pixley,rich@noir.com,2011-02-08 18:35:53-08:00,28800,2011-02-08 18:35:53-08:00,28800,True,False,['arpy.py'],['e1c678b9dde2d41a04a8937a6f1b0539ec237654'],3,4,7,1,,,0.0
+e960a504a67446aa028c4afe72cbb8fc15a356e1,open file in binary mode.,K. Richard Pixley,rich@noir.com,K. Richard Pixley,rich@noir.com,2011-02-08 18:37:35-08:00,28800,2011-02-08 18:37:35-08:00,28800,True,False,['arpy.py'],['2797917b07a8129bbb41f0b1b8933f4061aa291b'],1,1,2,1,,,
+ee0736080f6f0f2da44fe2ba847487940f4bddaa,gnu symbols are an acceptable header that doesn't need to be name patched.,K. Richard Pixley,rich@noir.com,K. Richard Pixley,rich@noir.com,2011-02-08 18:41:11-08:00,28800,2011-02-08 18:41:11-08:00,28800,True,False,['arpy.py'],['e960a504a67446aa028c4afe72cbb8fc15a356e1'],0,3,3,1,0.0,0.0,1.0
+bd5242428c7f8882bae6f3c281602e11aec4502d,allow whitespace at the end of a name,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2011-02-12 21:13:53+00:00,0,2011-02-12 21:13:53+00:00,0,True,False,['arpy.py'],['ee0736080f6f0f2da44fe2ba847487940f4bddaa'],1,1,2,1,,,
+0478ac4e86c2998b8157c53f0314aa3bcf2fe13f,allow printing unknown headers,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2011-02-12 21:15:11+00:00,0,2011-02-12 21:15:11+00:00,0,True,False,['arpy.py'],['bd5242428c7f8882bae6f3c281602e11aec4502d'],1,1,2,1,,,
+d05b192df4e2286e1bc6409c78d6491b70ef9843,add header name for symbol section,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2011-02-12 21:16:03+00:00,0,2011-02-12 21:16:03+00:00,0,True,False,['arpy.py'],['0478ac4e86c2998b8157c53f0314aa3bcf2fe13f'],0,1,1,1,,,
+8446727c9df67cfa2106679aa261f8dc9b287e41,read file information from gnu headers too,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2011-02-12 21:20:11+00:00,0,2011-02-12 21:20:11+00:00,0,True,False,['arpy.py'],['d05b192df4e2286e1bc6409c78d6491b70ef9843'],1,1,2,1,,,
+77ef9589ca27cc3b6060a1cf5f197c4568d6c6f3,add description and increase version,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2011-02-12 21:21:02+00:00,0,2011-02-12 21:21:02+00:00,0,True,False,['setup.py'],['8446727c9df67cfa2106679aa261f8dc9b287e41'],1,4,5,1,,,
+8a06963c8c9e3f3fe94079b999c26d56deb7f2e0,Added tag 0.2.0 for changeset 790c3f0453a1,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2011-02-12 21:23:22+00:00,0,2011-02-12 21:23:22+00:00,0,True,False,[],['77ef9589ca27cc3b6060a1cf5f197c4568d6c6f3'],0,0,0,0,,,
+fb110abdbb8bd39fe713250033ee5e017a251ac4,use setuptools + add some tests,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2011-02-15 01:09:34+00:00,0,2011-02-15 01:09:34+00:00,0,True,False,"['setup.py', '__init__.py', 'empty.ar', 'gnu_mixed.ar', 'gnu_multi_names.ar', 'gnu_single_name.ar', 'normal.ar', 'test_gnu.py', 'test_normal.py']",['8a06963c8c9e3f3fe94079b999c26d56deb7f2e0'],1,68,69,9,1.0,1.0,1.0
+bee95d3694a0bd9cebe39bbde9615e81f9d7b30a,fix test for gnu files,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2011-02-15 01:09:59+00:00,0,2011-02-15 01:09:59+00:00,0,True,False,['arpy.py'],['fb110abdbb8bd39fe713250033ee5e017a251ac4'],1,1,2,1,,,
+4979bfc554258bf19d9db5c26aa96f518dd03d2f,add fileobj support,Henning Peters,pete@dexterslab.de,Henning Peters,pete@dexterslab.de,2012-06-02 18:17:56+02:00,-7200,2012-06-02 18:17:56+02:00,-7200,True,False,"['arpy.py', 'test_normal.py']",['bee95d3694a0bd9cebe39bbde9615e81f9d7b30a'],3,12,15,2,1.0,1.0,0.0
+0a471cef8e47fbeda6e5f38c6311d092312940fb,Add the tox file and ignore trash,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-23 20:37:25+00:00,0,2013-03-23 20:37:25+00:00,0,True,False,"['.hgignore', 'tox.ini']",['4979bfc554258bf19d9db5c26aa96f518dd03d2f'],0,9,9,2,,,
+e1b61dad4e08e08dfd70d885fc964cd951c9913d,Adding tests for contents and seeking,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-23 20:52:32+00:00,0,2013-03-23 20:52:32+00:00,0,True,False,"['contents.ar', 'test_contents.py']",['0a471cef8e47fbeda6e5f38c6311d092312940fb'],0,34,34,2,1.0,1.0,1.0
+aad8e647f8a583458bd16f98fe2abba8d2316535,First stab at python 3.x compliance,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-23 21:01:46+00:00,0,2013-03-23 21:01:46+00:00,0,True,False,"['.hgignore', 'arpy.py', 'test_contents.py', 'test_gnu.py', 'test_normal.py', 'tox.ini']",['e1b61dad4e08e08dfd70d885fc964cd951c9913d'],25,26,51,6,,,
+10c5bc8ecffdb71633b6c7246ae36cb153130855,Pypy also works perfectly fine,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-23 21:11:19+00:00,0,2013-03-23 21:11:19+00:00,0,True,False,['tox.ini'],['aad8e647f8a583458bd16f98fe2abba8d2316535'],1,1,2,1,,,
+8975ece6eb309f404f04f45d3c2e756ea9a204de,Add some file.seek testing,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-23 21:56:01+00:00,0,2013-03-23 21:56:01+00:00,0,True,False,['test_contents.py'],['10c5bc8ecffdb71633b6c7246ae36cb153130855'],11,35,46,1,1.0,1.0,1.0
+6083484c00806ccc1e87811373bdfce20ea3dc3e,More failure tests,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-23 22:07:52+00:00,0,2013-03-23 22:07:52+00:00,0,True,False,"['.hgignore', 'arpy.py', 'test_contents.py', 'test_failures.py', 'test_normal.py']",['8975ece6eb309f404f04f45d3c2e756ea9a204de'],5,43,48,5,1.0,1.0,1.0
+b5bf76f2caeadacd82f410d7cd9986a7cf8ea089,Fix BSD format support,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-24 00:35:48+00:00,0,2013-03-24 00:35:48+00:00,0,True,False,"['arpy.py', 'bsd_mixed.ar', 'bsd_multi_names.ar', 'bsd_single_name.ar', 'test_bsd.py']",['6083484c00806ccc1e87811373bdfce20ea3dc3e'],3,53,56,5,0.9583333333333334,0.9583333333333334,1.0
+07a6e64f96a34a25ae21c4f0da8ca1e73a969e88,Test the symbols table handling,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-24 01:00:12+00:00,0,2013-03-24 01:00:12+00:00,0,True,False,"['sym.ar', 'test_normal.py']",['b5bf76f2caeadacd82f410d7cd9986a7cf8ea089'],0,11,11,2,1.0,1.0,1.0
+4af76d178ee1c8d99732835c6c98887d19f3abb9,Remove redundant code,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-24 01:03:42+00:00,0,2013-03-24 01:03:42+00:00,0,True,False,['arpy.py'],['07a6e64f96a34a25ae21c4f0da8ca1e73a969e88'],9,2,11,1,0.3333333333333333,0.3333333333333333,0.0
+21bc0a5d237f8a09bb89f5cc9419e3d809a9e6a5,Add some failure tests for 100% coverage,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-24 01:19:33+00:00,0,2013-03-24 01:19:33+00:00,0,True,False,['test_failures.py'],['4af76d178ee1c8d99732835c6c98887d19f3abb9'],0,11,11,1,1.0,1.0,1.0
+5e97ce7382173e23a7e39adba213e5f40188647a,Add coverage testing to tox,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-24 01:19:45+00:00,0,2013-03-24 01:19:45+00:00,0,True,False,['tox.ini'],['21bc0a5d237f8a09bb89f5cc9419e3d809a9e6a5'],1,4,5,1,,,
+7364bb922bb7cad23d1629ef224ee4478d2ed5de,Add metadata for version 1.0.0,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-24 01:37:53+00:00,0,2013-03-24 01:37:53+00:00,0,True,False,['setup.py'],['5e97ce7382173e23a7e39adba213e5f40188647a'],3,11,14,1,,,
+5ada0644c59b24fd8d0b0bb5cfda515bbcd89e92,Added tag 1.0.0 for changeset d072d1fb1c4d,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-24 01:52:07+00:00,0,2013-03-24 01:52:07+00:00,0,True,False,[],['7364bb922bb7cad23d1629ef224ee4478d2ed5de'],0,0,0,0,,,
+279e43144a3817d3994908243fb23c30198eb2eb,Adding travis integration,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-03-24 02:20:33+00:00,0,2013-03-24 02:20:33+00:00,0,True,False,['.travis.yml'],['5ada0644c59b24fd8d0b0bb5cfda515bbcd89e92'],0,7,7,1,,,
+d463b2b69132b6dbdc57a4b41ec39309d2274482,Add gitignore file,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 20:00:49+01:00,-3600,2013-06-30 20:00:49+01:00,-3600,True,False,['.gitignore'],['279e43144a3817d3994908243fb23c30198eb2eb'],0,7,7,1,,,
+13b7206ef982973a436e387defea3c3b95b8b0c6,"Add contents iteration to the archive
+
+Make the iteration possible on Archive objects. It returns each of the
+files from the archive. Name or header details can be retrieved from
+attribute .header(.name)",Helmut Grohne,helmut@subdivi.de,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 20:19:25+01:00,-3600,2013-06-30 20:19:25+01:00,-3600,True,False,['arpy.py'],['d463b2b69132b6dbdc57a4b41ec39309d2274482'],0,12,12,1,1.0,1.0,1.0
+b10f36a98929788ffc888aae414c5236b52af7a1,Add tests for iteration,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 20:21:46+01:00,-3600,2013-06-30 20:21:46+01:00,-3600,True,False,['test_normal.py'],['13b7206ef982973a436e387defea3c3b95b8b0c6'],0,10,10,1,1.0,1.0,1.0
+e1927756e3feb6f162e382f3b56a7b54a247ff90,"Allow operations on not seekable objects
+
+Make sure that not seekable objects can be used with this library.
+Implement reading to a position as a seek replacement and fail on
+seeking backwards.",Helmut Grohne,helmut@subdivi.de,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 21:25:58+01:00,-3600,2013-06-30 21:25:58+01:00,-3600,True,False,['arpy.py'],['3529d3bbdf29008f301e328e9fb245a93cd8c2b2'],11,32,43,1,1.0,1.0,0.9333333333333333
+798c0fcf15f586eef22a61dd6d9869aaecc550fe,"Remove unnecessary check
+
+Seeking to negative offsets is already a ValueError. On nonseekable
+streams seek() itself will fail too.
+This brings back 100% coverage.",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 21:29:56+01:00,-3600,2013-06-30 21:29:56+01:00,-3600,True,False,['arpy.py'],['e1927756e3feb6f162e382f3b56a7b54a247ff90'],2,0,2,1,0.0,0.0,0.0
+d221a065ae1443517e30e46c0651fa01e90f0d35,Add tests for the stream scenarios,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 21:31:14+01:00,-3600,2013-06-30 21:31:14+01:00,-3600,True,False,['test_contents.py'],['798c0fcf15f586eef22a61dd6d9869aaecc550fe'],1,48,49,1,1.0,1.0,1.0
+d58a9e1dbf15c284ac2c5acc7cf633024f094191,"Add seekability detection
+
+Detect whether the underlaying storage is seekable in order to speed
+up skipping over large files. In case of non-seekable streams, arpy
+still reverts to reading.",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 21:50:10+01:00,-3600,2013-06-30 21:50:10+01:00,-3600,True,False,"['arpy.py', 'test_contents.py']",['d221a065ae1443517e30e46c0651fa01e90f0d35'],2,22,24,2,1.0,1.0,0.9444444444444444
+e936d0423488dad54367f480d04c700d8c064d9f,Add readme file,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 22:10:07+01:00,-3600,2013-06-30 22:10:07+01:00,-3600,True,False,['README.md'],['0e7a074066e09d538bca763726b0d65d613eb5b4'],0,38,38,1,,,
+c977ebe451c0d898c518f144f4aa6d272de8fa60,"Add classifiers, move to github",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 22:15:39+01:00,-3600,2013-06-30 22:15:39+01:00,-3600,True,False,['setup.py'],['e936d0423488dad54367f480d04c700d8c064d9f'],2,4,6,1,,,
+739965d397d567f6f11ddc7944c159f20eadb9f9,"Version 1.1.0
+
+Added stream support, iteration of main archive, travis-ci integration.",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 22:17:39+01:00,-3600,2013-06-30 22:17:39+01:00,-3600,True,False,['setup.py'],['c977ebe451c0d898c518f144f4aa6d272de8fa60'],1,1,2,1,,,
+acb65c32b0f1aa21c780347651d6be2f53ef70a3,Keep the ar files in source package,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 22:26:50+01:00,-3600,2013-06-30 22:26:50+01:00,-3600,True,False,"['.gitignore', 'MANIFEST.in']",['739965d397d567f6f11ddc7944c159f20eadb9f9'],0,2,2,2,,,
+4805c15a3c858798dbe4e40393fca679fa850768,"Version 1.1.1
+
+Add missing test .ar files to the source dist.",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-06-30 22:30:15+01:00,-3600,2013-06-30 22:30:15+01:00,-3600,True,False,['setup.py'],['acb65c32b0f1aa21c780347651d6be2f53ef70a3'],1,1,2,1,,,
+efc7b8075aa8907cf80fae755f534be12706d78f,Support Python 3.2,Corey Farwell,coreyf@rwell.org,Corey Farwell,coreyf@rwell.org,2013-11-20 12:47:28-08:00,28800,2013-11-20 12:47:28-08:00,28800,True,False,['setup.py'],['4805c15a3c858798dbe4e40393fca679fa850768'],1,1,2,1,,,
+8d92ea99f2d254d2cdf84098989260e5f6e5f27d,Might as well add the 3.2 classifier as well,Corey Farwell,coreyf@rwell.org,Corey Farwell,coreyf@rwell.org,2013-11-20 12:57:37-08:00,28800,2013-11-20 12:57:37-08:00,28800,True,False,['setup.py'],['efc7b8075aa8907cf80fae755f534be12706d78f'],0,1,1,1,,,
+c7d9b9f698fbc06f6030f5657f84f605754c1b4d,Support Python 3.2 with tox,Corey Farwell,coreyf@rwell.org,Corey Farwell,coreyf@rwell.org,2013-11-20 13:43:19-08:00,28800,2013-11-20 13:43:19-08:00,28800,True,False,['tox.ini'],['8d92ea99f2d254d2cdf84098989260e5f6e5f27d'],1,1,2,1,,,
+f137d86a7c55694a57074d4db1e9c98875ed5457,Run tests on Python 3.2,Corey Farwell,coreyf@rwell.org,Corey Farwell,coreyf@rwell.org,2013-11-20 13:43:45-08:00,28800,2013-11-20 13:43:45-08:00,28800,True,False,['.travis.yml'],['c7d9b9f698fbc06f6030f5657f84f605754c1b4d'],0,1,1,1,,,
+3880df1918367748a710f8c72663cc1d3ca426e0,Get some flake/pep compliance in,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-12-12 23:15:05+00:00,0,2013-12-12 23:15:05+00:00,0,True,False,"['test_bsd.py', 'test_contents.py', 'test_failures.py', 'test_gnu.py', 'test_normal.py']",['ae91df93d669799b5480fc073180bc90d3b97df1'],6,11,17,5,,,
+e85628319a555b71537ddc22bd457b6c3d34c508,Add flake8 checking to tox/travis,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-12-12 23:18:13+00:00,0,2013-12-12 23:18:13+00:00,0,True,False,"['.travis.yml', 'tox.ini']",['3880df1918367748a710f8c72663cc1d3ca426e0'],8,22,30,2,,,
+9d4941dc2fd051364a18cdd38bb36b7ae2415bea,Get back to original python selector,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-12-12 23:30:18+00:00,0,2013-12-12 23:30:18+00:00,0,True,False,['.travis.yml'],['e85628319a555b71537ddc22bd457b6c3d34c508'],10,9,19,1,,,
+856983dbdc977bf6f4820f093593ad75411f8b13,Moving more flake8 config into tox.ini,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-12-12 23:35:47+00:00,0,2013-12-12 23:35:47+00:00,0,True,False,"['.travis.yml', 'tox.ini']",['9d4941dc2fd051364a18cdd38bb36b7ae2415bea'],2,3,5,2,,,
+6c47e3da5b412aed692a2bcdef8ea8f8b6e8043c,Python 3.2 missing in readme,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2013-12-12 23:39:41+00:00,0,2013-12-12 23:39:52+00:00,0,True,False,['README.md'],['562274ac90be1d51fc9f9d07ccf135e63b5a8eaf'],1,1,2,1,,,
+8ef502eea4704075977155f27342f59cf6e88293,"Add seekable() method to ArchiveFileData
+
+I've got an `ar` file that contains a `tar.xz` file, and I'm using
+Python 2.7.6 with the `backports.lzma` package to try to extract it:
+
+    import arpy
+    import backports.lzma as lzma
+    import tarfile
+    ar = arpy.Archive('at_3.1.13-2_amd64.deb')
+    ar.read_all_headers()
+    fileobj = lzma.open(ar.archived_files['data.tar.xz'])
+    tarfile.open(fileobj=fileobj)
+
+This causes the following error:
+
+    AttributeError: 'ArchiveFileData' object has no attribute 'seekable'
+
+I think `backports.lzma` is checking for a `seekable()` method because
+Python 3 streams are `io` objects. Really, it shouldn't assume this on
+Python 2. But since `arpy` also supports Python 3, let's add a
+`seekable()` method to `ArchiveFileData`.",Alan Grosskurth,code@alan.grosskurth.ca,Alan Grosskurth,code@alan.grosskurth.ca,2014-04-06 00:14:46-07:00,25200,2014-04-06 00:45:20-07:00,25200,True,False,['arpy.py'],['6c47e3da5b412aed692a2bcdef8ea8f8b6e8043c'],0,3,3,1,1.0,1.0,1.0
+f5a97ddea25dbee08603cc77d6bf488f23a255ad,Whitespace cleanup and empty except fix,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 15:08:01+10:00,-36000,2020-05-10 15:08:01+10:00,-36000,True,False,['arpy.py'],['28d56c3667349abd2d87b5503c8ed0cd2f810065'],8,8,16,1,,,
+b257c70525d270b3c677801d1bc99ecf9380f381,"Contents are seekable only if the archive is
+
+Test the behaviour too.",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 15:17:05+10:00,-36000,2020-05-10 15:17:05+10:00,-36000,True,False,"['arpy.py', 'test_contents.py']",['f5a97ddea25dbee08603cc77d6bf488f23a255ad'],1,10,11,2,1.0,1.0,1.0
+73237d6628c6c4b3b3c8401ed088411efef78f7d,"Version 1.1.2
+
+Support seekable()",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 15:18:07+10:00,-36000,2020-05-10 15:18:24+10:00,-36000,True,False,['setup.py'],['b257c70525d270b3c677801d1bc99ecf9380f381'],1,1,2,1,,,
+11d0f662223a17deac245d695fe038895d76c2e3,Bye python2,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 16:31:08+10:00,-36000,2020-05-10 16:31:08+10:00,-36000,True,False,"['setup.py', 'tox.ini']",['73237d6628c6c4b3b3c8401ed088411efef78f7d'],5,4,9,2,,,
+d60a22974ee158ccc6aa478bf6ee40155ab1fe41,Bye python2 on travis,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 16:34:04+10:00,-36000,2020-05-10 16:34:04+10:00,-36000,True,False,['.travis.yml'],['11d0f662223a17deac245d695fe038895d76c2e3'],4,3,7,1,,,
+bd27340e47e94481b2c1fab39ffeb7ba31cf2d4c,Pypy v3 only,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 16:35:52+10:00,-36000,2020-05-10 16:35:52+10:00,-36000,True,False,"['.travis.yml', 'tox.ini']",['d60a22974ee158ccc6aa478bf6ee40155ab1fe41'],2,2,4,2,,,
+d258df4c70c07318e762991865c37003e1f1f839,Mark types,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 18:00:45+10:00,-36000,2020-05-10 18:00:45+10:00,-36000,True,False,['arpy.py'],['bd27340e47e94481b2c1fab39ffeb7ba31cf2d4c'],25,42,67,1,0.75,0.7083333333333334,0.875
+b6028683a69e6e8c3e4062d40aa9b3e8ff1fcf1d,Test the seek return value,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 18:04:35+10:00,-36000,2020-05-10 18:04:35+10:00,-36000,True,False,"['arpy.py', 'test_contents.py']",['d258df4c70c07318e762991865c37003e1f1f839'],5,8,13,2,1.0,1.0,1.0
+0d259aaabed3a84f28125177155748cedc89d212,Ignore mypy stuff,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 18:05:24+10:00,-36000,2020-05-10 18:05:24+10:00,-36000,True,False,['.gitignore'],['b6028683a69e6e8c3e4062d40aa9b3e8ff1fcf1d'],0,1,1,1,,,
+737cf0c3c16eae2ddf60e15eee2f1cb680e2d2fe,Run mypy test,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 18:05:35+10:00,-36000,2020-05-10 18:05:35+10:00,-36000,True,False,['.travis.yml'],['0d259aaabed3a84f28125177155748cedc89d212'],0,2,2,1,,,
+1c04bebc6866046d1877caac97562ee2a15157a0,py3.5 compatible format,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 18:12:02+10:00,-36000,2020-05-10 18:12:02+10:00,-36000,True,False,['arpy.py'],['737cf0c3c16eae2ddf60e15eee2f1cb680e2d2fe'],8,4,12,1,,,
+4c9390fe5893f7a428bb735d872f49a41a3999e3,Move import to the top,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 18:15:49+10:00,-36000,2020-05-10 18:15:49+10:00,-36000,True,False,['arpy.py'],['1c04bebc6866046d1877caac97562ee2a15157a0'],1,1,2,1,1.0,1.0,1.0
+81cec98464f9cb34e41d8f04289497f47d8c74fa,Cast instead of variable types,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 18:16:17+10:00,-36000,2020-05-10 18:16:17+10:00,-36000,True,False,['arpy.py'],['4c9390fe5893f7a428bb735d872f49a41a3999e3'],4,4,8,1,,,
+c142a93474bc29aa1d67b5b1e4c8739cf23a1599,"Exclude pypy3 from mypy tests
+
+typed-ast doesn't work in pypy3.",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 18:27:19+10:00,-36000,2020-05-10 18:27:19+10:00,-36000,True,False,['.travis.yml'],['81cec98464f9cb34e41d8f04289497f47d8c74fa'],1,5,6,1,,,
+851ec86da806e76804c5e9ddf19a713c04d9ce97,Also don't install mypy,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-10 18:29:40+10:00,-36000,2020-05-10 18:29:40+10:00,-36000,True,False,['.travis.yml'],['c142a93474bc29aa1d67b5b1e4c8739cf23a1599'],2,1,3,1,,,
+92d7dcaa1f7d3d5c5fcf40b607235e27e443ee4d,Test bad Archive usage,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-11 18:02:56+10:00,-36000,2020-05-11 18:02:56+10:00,-36000,True,False,['test_failures.py'],['851ec86da806e76804c5e9ddf19a713c04d9ce97'],0,3,3,1,1.0,1.0,1.0
+22c4f2d9f35a3111be3da5b61e3d4d6ecd7efc18,Clarify versions in README,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-11 18:03:58+10:00,-36000,2020-05-11 18:03:58+10:00,-36000,True,False,['README.md'],['92d7dcaa1f7d3d5c5fcf40b607235e27e443ee4d'],3,3,6,1,,,
+420a76a074c6833e84882be5ea4d737c908b4751,Add python 3.8 testing,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-11 18:20:33+10:00,-36000,2020-05-11 18:20:33+10:00,-36000,True,False,"['setup.py', 'tox.ini']",['7fbeff25b273c4d549c356a7da3aef56a00aa32a'],1,2,3,2,,,
+f2e744fbfb4517479cd0b4c9b2e33f7d10c2febb,Test 3.8 on travis,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-11 18:21:50+10:00,-36000,2020-05-11 18:21:50+10:00,-36000,True,False,['.travis.yml'],['420a76a074c6833e84882be5ea4d737c908b4751'],0,1,1,1,,,
+0717281535d125d8f203ee6a123587df7068e5c0,Version 2.0.0,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-11 18:23:11+10:00,-36000,2020-05-11 18:23:11+10:00,-36000,True,False,['setup.py'],['f2e744fbfb4517479cd0b4c9b2e33f7d10c2febb'],1,1,2,1,,,
+04c349d87e8af74339c46ec998491c2ea6338109,"Version 2.0.1
+
+Fix the pypi description",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-11 18:26:39+10:00,-36000,2020-05-11 18:26:39+10:00,-36000,True,False,['setup.py'],['0717281535d125d8f203ee6a123587df7068e5c0'],2,2,4,1,,,
+b5c22b3fb58a6ee9f07683323849b3d80e31b3a6,"Support windows archives
+
+They have no uid and gid so those have to become optional.",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-24 22:12:43+10:00,-36000,2020-05-24 22:12:43+10:00,-36000,True,False,['arpy.py'],['04c349d87e8af74339c46ec998491c2ea6338109'],2,8,10,1,0.0,0.0,0.0
+82d7360e12cf35107247fea2b755922513a4ce1e,Test the behaviour for windows files,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-26 19:31:12+10:00,-36000,2020-05-26 19:31:12+10:00,-36000,True,False,"['test_normal.py', 'windows.ar']",['b5c22b3fb58a6ee9f07683323849b3d80e31b3a6'],1,10,11,2,1.0,1.0,1.0
+47443481d38859e6e48f742ae6b1c7dc8ed3d6a1,"Version 2.1.0
+
+Support windows archives with no uid/gid",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-26 19:35:37+10:00,-36000,2020-05-26 19:35:37+10:00,-36000,True,False,['setup.py'],['3ddadab9e4221cc0ef8283a31dbd6d118a786bd5'],1,1,2,1,,,
+1437531491916873e06083a973952284cb737fd1,"Test with specific exception
+
+Mostly to satisfy sonarcloud",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-26 19:53:10+10:00,-36000,2020-05-26 19:53:10+10:00,-36000,True,False,['test_contents.py'],['47443481d38859e6e48f742ae6b1c7dc8ed3d6a1'],1,1,2,1,,,
+0bcf123ce59b0d583e4f23f5ae044653310e01b0,zipfile-like API,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-27 20:21:54+10:00,-36000,2020-05-27 20:21:54+10:00,-36000,True,False,"['arpy.py', 'test_contents.py']",['1437531491916873e06083a973952284cb737fd1'],1,79,80,2,0.423728813559322,1.0,0.9830508474576272
+b33803c5f5f372bcdecaf7d709761b28a6fbef39,Fix bugs,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-27 20:40:37+10:00,-36000,2020-05-27 20:40:37+10:00,-36000,True,False,"['arpy.py', 'test_contents.py']",['0bcf123ce59b0d583e4f23f5ae044653310e01b0'],7,9,16,2,1.0,1.0,1.0
+a622db7891d42d36e087df0dbbfd12abd1a3f5ef,Add context manager support,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-27 20:40:48+10:00,-36000,2020-05-27 20:40:48+10:00,-36000,True,False,"['arpy.py', 'test_contents.py']",['b33803c5f5f372bcdecaf7d709761b28a6fbef39'],0,22,22,2,1.0,1.0,0.6428571428571429
+d9bbb36bcb9de44ecf57d69d991b9171b0d98199,Make formatting py3.5 compatible,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-27 20:43:58+10:00,-36000,2020-05-27 20:47:52+10:00,-36000,True,False,['arpy.py'],['a622db7891d42d36e087df0dbbfd12abd1a3f5ef'],2,2,4,1,,,
+285c9299d6e0d69c86ed3dc971b8c64f90de410a,Update descriptions,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2020-05-27 20:56:37+10:00,-36000,2020-05-27 20:56:37+10:00,-36000,True,False,"['README.md', 'arpy.py']",['d9bbb36bcb9de44ecf57d69d991b9171b0d98199'],2,28,30,2,,,
+9b1e72da3db0a110d147c09d1f4580f188cf44f3,Added base code and test to support thin archive,crazyhouse33,hugo.alonso@etu.u-bordeaux.fr,crazyhouse33,hugo.alonso@etu.u-bordeaux.fr,2020-12-29 22:33:02+01:00,-3600,2020-12-29 22:33:02+01:00,-3600,True,False,"['arpy.py', 'ext_lib.c.o', 'test_thin.py', 'thin.ar']",['36b113d213f44860babff4d475007882b3a8698b'],328,409,737,4,0.9090909090909091,0.7454545454545455,0.6545454545454545
+4b8489ee54be8a7835b6fdf53b85da00791231ba,Reducing opened file descriptors,crazyhouse33,hugo.alonso@etu.u-bordeaux.fr,crazyhouse33,hugo.alonso@etu.u-bordeaux.fr,2020-12-29 23:20:30+01:00,-3600,2020-12-29 23:20:30+01:00,-3600,True,False,['arpy.py'],['9b1e72da3db0a110d147c09d1f4580f188cf44f3'],27,5,32,1,0.0,0.875,0.875
+5cff28922a6727a442efec281065d42fbbd19251,Revert indentation,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2021-01-13 20:23:46+11:00,-39600,2021-01-13 20:23:46+11:00,-39600,True,False,['arpy.py'],['4b8489ee54be8a7835b6fdf53b85da00791231ba'],363,363,726,1,,,
+7d5d58b4d15dd67fba164b9a8276e15764425152,Make sure nosetest includes this,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2021-01-13 20:33:44+11:00,-39600,2021-01-13 20:33:44+11:00,-39600,True,False,['__init__.py'],['5cff28922a6727a442efec281065d42fbbd19251'],0,0,0,1,,,
+0ce19201a27f8e52c62b3872518c9c759535c814,Report missing lines,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2021-01-13 20:34:23+11:00,-39600,2021-01-13 20:34:23+11:00,-39600,True,False,['tox.ini'],['7d5d58b4d15dd67fba164b9a8276e15764425152'],1,1,2,1,,,
+2b84b453ac5f03262fe064b5175c0e5f9b568a0f,"Use a class to define file format
+
+This may come useful in the future if there are more formats.",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2021-01-13 20:36:21+11:00,-39600,2021-01-13 20:36:21+11:00,-39600,True,False,['arpy.py'],['0ce19201a27f8e52c62b3872518c9c759535c814'],6,3,9,1,0.0,0.0,0.0
+11edf814dd0f7ae77f49fc369b25b477a2d00336,"Open file as binary
+
+Fixes the test as well",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2021-01-13 20:36:49+11:00,-39600,2021-01-13 20:36:49+11:00,-39600,True,False,['arpy.py'],['2b84b453ac5f03262fe064b5175c0e5f9b568a0f'],1,1,2,1,,,
+2acc2e68ba76bb94ba445e4a9ebb3dab69fb8228,Fix and test incomplete reads from thin archives,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2021-01-13 20:55:05+11:00,-39600,2021-01-13 20:55:05+11:00,-39600,True,False,"['arpy.py', 'test_thin.py']",['11edf814dd0f7ae77f49fc369b25b477a2d00336'],5,14,19,2,1.0,1.0,1.0
+87bf1c940a805f109a6a15a50fbee997a60a93fc,Remove unused import,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2021-01-13 20:56:01+11:00,-39600,2021-01-13 20:56:01+11:00,-39600,True,False,['test_thin.py'],['2acc2e68ba76bb94ba445e4a9ebb3dab69fb8228'],1,0,1,1,,,
+a9e256720b4808ac16bf58bb0bb652278618fb5b,Satisfy sonar,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2021-01-13 20:59:21+11:00,-39600,2021-01-13 20:59:21+11:00,-39600,True,False,['test_thin.py'],['87bf1c940a805f109a6a15a50fbee997a60a93fc'],7,11,18,1,1.0,1.0,1.0
+851f4964a0a77cedd95587186572a6f73e55f55e,Make sonar more happy,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2021-01-13 21:11:40+11:00,-39600,2021-01-13 21:11:40+11:00,-39600,True,False,['test_thin.py'],['a9e256720b4808ac16bf58bb0bb652278618fb5b'],3,4,7,1,,,
+647138b5371dcb9984b5d0f229a8bb8455e98f5e,"Version 2.2.0
+
+Add thin format support",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2021-01-13 21:34:32+11:00,-39600,2021-01-13 21:34:32+11:00,-39600,True,False,['setup.py'],['e26faf234791ece9c542f6a5b4cc2b697b3daa00'],1,1,2,1,,,
+b6105a6b6a6af6ea2edfe0c112e33068c2ba7e1c,"Better support MSVC .libs by using NULL char terminators when detected
+
+MSVC likes to use NULL character terminators instead of
+newlines (\n) for their listing, which causes parsing to not
+work correctly, usually with this error:
+
+    arpy.ArchiveFormatError: file references a name not present in the index
+
+This is fixed by detecting NULL character usage and
+using that delimiter accordingly.
+
+Some very helpful inspiration that led to figuring this out:
+ * https://www.winehq.org/pipermail/wine-patches/2013-April/123863.html (winedump/lib.c)
+ * https://substrate.dev/rustdocs/latest/object/pe/
+ * http://hmelnov.icc.ru/geos/scripts/WWWBinV.dll/ShowR?COFF_LIB.rfi
+ * http://www.textfiles.com/programming/FORMATS/lib.txt
+ * https://www.ntcore.com/files/richsign.htm
+ * http://bytepointer.com/resources/pietrek_lib_file_format.htm",Albert Huang,alberthdev@users.noreply.github.com,Albert Huang,alberthdev@users.noreply.github.com,2021-10-03 23:53:52-04:00,14400,2021-10-03 23:53:52-04:00,14400,True,False,['arpy.py'],['647138b5371dcb9984b5d0f229a8bb8455e98f5e'],2,8,10,1,0.0,1.0,1.0
+fb0ac528d65e14c802a84f7abdad7edde1586fa6,Improved typing a little,KOLANICH,kolan_n@mail.ru,KOLANICH,kolan_n@mail.ru,2022-06-09 17:00:03+03:00,-10800,2022-06-09 17:00:03+03:00,-10800,True,False,['arpy.py'],['647138b5371dcb9984b5d0f229a8bb8455e98f5e'],8,8,16,1,0.75,0.75,0.75
+c0305e3c8fcbc7330f68d6126858e0954ae1decc,Allowed to run the tests directly without using pytest.,KOLANICH,kolan_n@mail.ru,KOLANICH,kolan_n@mail.ru,2022-06-09 17:02:39+03:00,-10800,2022-06-09 17:02:39+03:00,-10800,True,False,"['test_bsd.py', 'test_contents.py', 'test_failures.py', 'test_gnu.py', 'test_normal.py', 'test_thin.py']",['647138b5371dcb9984b5d0f229a8bb8455e98f5e'],0,18,18,6,,,
+c05b08829be39b78b6baad7a936032dbe0b96fe1,"Partially revert signatures from pull 19
+
+Mypy fails to mark IOBase.__exit__ as returning a bool.
+See https://github.com/python/typeshed/issues/8055",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2022-06-11 14:17:12+10:00,-36000,2022-06-11 14:18:04+10:00,-36000,True,False,['arpy.py'],['8c57058e68f3a2817227db176668bc0adba22f9c'],2,2,4,1,,,
+84105f33f2cd4fce112e06bc85aa18852d7b88af,Add a trivial debug when running the module,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2022-06-11 14:53:04+10:00,-36000,2022-06-11 14:53:04+10:00,-36000,True,False,['arpy.py'],['c05b08829be39b78b6baad7a936032dbe0b96fe1'],0,9,9,1,,,
+93d9a87b2fbeb50076c1d25a7b5984b8a512fc71,Add a test for null-separated entries,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2022-06-11 14:56:50+10:00,-36000,2022-06-11 14:56:50+10:00,-36000,True,False,"['msvc_lib.ar', 'test_gnu.py']",['7a5816378dfed096fb55056695887bb4d17a96ee'],0,9,9,2,1.0,1.0,1.0
+9e96a06ce6725b47fa1dd4894fb2a7c0b3878f71,Mark support for new pythons,Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2022-06-11 14:59:56+10:00,-36000,2022-06-11 14:59:56+10:00,-36000,True,False,"['setup.py', 'test_normal.py']",['93d9a87b2fbeb50076c1d25a7b5984b8a512fc71'],1,5,6,2,1.0,1.0,1.0
+68233a171c01e2242225baf084dac5c14562ef8d,"Version 2.3.0
+
+Support for mscv generated libs and some small polish.",Stanisław Pitucha,viraptor@gmail.com,Stanisław Pitucha,viraptor@gmail.com,2022-06-11 15:00:15+10:00,-36000,2022-06-11 15:00:15+10:00,-36000,True,False,['setup.py'],['9e96a06ce6725b47fa1dd4894fb2a7c0b3878f71'],1,1,2,1,,,

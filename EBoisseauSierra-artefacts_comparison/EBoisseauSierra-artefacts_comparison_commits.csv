@@ -1,0 +1,40 @@
+Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
+9a1baeb683f0c094383afdc185b4b9c68f81f2de,"feat: Track codebase
+
+Signed-off-by: Étienne Boisseau-Sierra <etienne.boisseau.sierra@gmail.com>",Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,2023-01-24 14:42:42+00:00,0,2023-01-24 14:42:42+00:00,0,True,False,"['pr_lint.yml', 'release.yml', '.gitignore', '.pre-commit-config.yaml', '.versionrc', 'LICENSE', 'MANIFEST.in', 'README.md', 'VERSION', '__init__.py', '__main__.py', 'cli.py', 'compare.py', 'csv_parser.py', 'report.py', 'requirements.txt', 'setup.cfg', 'setup.py', '__init__.py', 'test_compare.py', 'test_csv_parser.py', 'test_report.py']",[],0,1254,1254,22,0.17669172932330826,0.9285714285714286,0.9887218045112782
+417a2f259c81bdd5b19a5154f36a278facc9b16b,"fix: Add optional dependency to build package
+
+Signed-off-by: Étienne Boisseau-Sierra <etienne.boisseau.sierra@gmail.com>",Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,2023-01-24 14:46:10+00:00,0,2023-01-24 14:46:10+00:00,0,True,False,['setup.py'],['9a1baeb683f0c094383afdc185b4b9c68f81f2de'],1,1,2,1,,,
+a845ec2bb088f4859c841538917bcdb92617a07a,chore(release): 0.1.0,Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,2023-01-24 14:48:11+00:00,0,2023-01-24 14:48:11+00:00,0,True,False,"['CHANGELOG.md', 'VERSION']",['417a2f259c81bdd5b19a5154f36a278facc9b16b'],0,16,16,2,,,
+8fa8ae1fcc3bdf6c8f3f727f75069e826551cd4b,"fix: Report correct number of untouched artefacts
+
+Signed-off-by: Étienne Boisseau-Sierra <etienne.boisseau.sierra@gmail.com>",Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,2023-01-24 16:00:14+00:00,0,2023-01-24 16:00:14+00:00,0,True,False,['report.py'],['a845ec2bb088f4859c841538917bcdb92617a07a'],1,1,2,1,,,
+289f240384201dd7dc2c81dc210fa1812ea11286,chore(release): 0.1.1,Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,2023-01-24 16:00:44+00:00,0,2023-01-24 16:00:44+00:00,0,True,False,"['CHANGELOG.md', 'VERSION']",['8fa8ae1fcc3bdf6c8f3f727f75069e826551cd4b'],1,8,9,2,,,
+f6fb8823882a92687914c4686f345ea89510867d,"fix: Correctly identify modified files (#1)
+
+* tests: Add a file that gets modified to test cases
+
+Signed-off-by: Étienne Boisseau-Sierra <etienne.boisseau.sierra@gmail.com>
+
+* tests: Test list_modified_files
+
+Signed-off-by: Étienne Boisseau-Sierra <etienne.boisseau.sierra@gmail.com>
+
+* fix: Add list of modified files to report
+
+Signed-off-by: Étienne Boisseau-Sierra <etienne.boisseau.sierra@gmail.com>
+
+* fix: Fix list of added/deleted files to exclude _modified_ files
+
+Signed-off-by: Étienne Boisseau-Sierra <etienne.boisseau.sierra@gmail.com>
+
+* feat: Define list of modified files
+
+Signed-off-by: Étienne Boisseau-Sierra <etienne.boisseau.sierra@gmail.com>
+
+* tests: Include modified files in Report tests
+
+Signed-off-by: Étienne Boisseau-Sierra <etienne.boisseau.sierra@gmail.com>
+
+Signed-off-by: Étienne Boisseau-Sierra <etienne.boisseau.sierra@gmail.com>",Étienne Boisseau-Sierra,37387755+EBoisseauSierra@users.noreply.github.com,GitHub,noreply@github.com,2023-01-25 16:17:00+00:00,0,2023-01-25 16:17:00+00:00,0,True,False,"['compare.py', 'report.py', 'test_compare.py', 'test_report.py']",['289f240384201dd7dc2c81dc210fa1812ea11286'],5,184,189,4,0.0,0.954248366013072,1.0
+2c5c1ea70a1ee6d94df3e433cacc48beb85c3378,chore(release): 0.2.0,Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,Étienne Boisseau-Sierra,etienne.boisseau.sierra@gmail.com,2023-01-25 16:19:02+00:00,0,2023-01-25 16:19:02+00:00,0,True,False,"['CHANGELOG.md', 'VERSION']",['f6fb8823882a92687914c4686f345ea89510867d'],1,8,9,2,,,
