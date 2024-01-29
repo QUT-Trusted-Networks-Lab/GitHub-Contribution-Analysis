@@ -50,8 +50,9 @@ def extract_commits(repo_path):
     print(f"Extracting data from repository: {repo_path}...")
     try:
         for commit in Repository(repo_path).traverse_commits():
-            if commit.in_main_branch == True and commit.merge == False:
-                commit_data = {
+            try:
+                if commit.in_main_branch and not commit.merge:
+                    commit_data = {
                     'Hash': commit.hash,
                     'Commit Message': commit.msg,
                     'Author Name': commit.author.name,
@@ -76,8 +77,11 @@ def extract_commits(repo_path):
                     'dmm_unit_size': commit.dmm_unit_size,
                     'dmm_unit_complexity': commit.dmm_unit_complexity,
                     'dmm_unit_interfacing': commit.dmm_unit_interfacing
-                }  
-                commits_data.append(commit_data)
+                }
+                    commits_data.append(commit_data)
+            except Exception as e:
+                print(f"Error reading commit {commit.hash}: {e}")
+                continue  # Skip the problematic commit and continue
         print(f"Repository {repo_path} extracted successfully.\n")
     except FileNotFoundError:
         print(f"Repository {repo_path} not found. Skipping...")
@@ -85,7 +89,7 @@ def extract_commits(repo_path):
     except Exception as e:
         print(f"Error processing repository {repo_path}: {e}")
         return None
-    return commits_data
+    return commits_data 
 
 #--------------------------------------------------------------------------------------------------------------
 
