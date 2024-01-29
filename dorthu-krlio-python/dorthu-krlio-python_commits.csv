@@ -1,9 +1,0 @@
-Hash,Commit Message,Author Name,Author Email,Committor Name,Committor Email,Author Date,Author Timezone,Committor Date,Committor Timezone,in_main_branch,merge,modified_files,parents,deletions,insertions,lines,files,dmm_unit_size,dmm_unit_complexity,dmm_unit_interfacing
-0d8425ca59d78fe4432837665e253dcbe58bb65c,Initial Commit - working get/create link,Dorthu,dorthu2@gmail.com,Dorthu,dorthu2@gmail.com,2017-02-17 20:31:00-05:00,18000,2017-02-17 20:31:00-05:00,18000,True,False,"['.gitignore', 'README.md', 'README.rst', '__init__.py', 'setup.py']",[],0,171,171,5,1.0,1.0,1.0
-625b69bac2a203791899a6374eedff4c7e8a4121,"Use API
-
-Use the krlio api instead of scraping the site.  This removes dependencies
-on BeautifulSoup.  Also removed future and enum34 from setup.py since they
-weren't needed.",Dorthu,dorthu2@gmail.com,Dorthu,dorthu2@gmail.com,2017-02-18 09:48:01-05:00,18000,2017-02-18 09:49:50-05:00,18000,True,False,"['README.md', '__init__.py', 'setup.py']",['0d8425ca59d78fe4432837665e253dcbe58bb65c'],17,17,34,3,1.0,1.0,1.0
-6cde7f28b97f31acac99cec0758945fa651b5907,Now getting JSON from POST /link,Dorthu,dorthu2@gmail.com,Dorthu,dorthu2@gmail.com,2017-02-18 12:04:21-05:00,18000,2017-02-18 12:04:21-05:00,18000,True,False,"['__init__.py', 'setup.py']",['625b69bac2a203791899a6374eedff4c7e8a4121'],2,2,4,2,,,
-1e64eee766ae2e0354504fac48fb4f13da1cd6c1,Fixed misspelled class name,Will Smith,wsmith@linode.com,Will Smith,wsmith@linode.com,2017-06-05 10:29:01-04:00,14400,2017-06-05 10:29:01-04:00,14400,True,False,['__init__.py'],['6cde7f28b97f31acac99cec0758945fa651b5907'],1,1,2,1,,,
