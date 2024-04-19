@@ -2,31 +2,24 @@
 from pydriller import *
 import pandas as pd
 from pandas import *
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 from dateutil.relativedelta import relativedelta
 import csv
 import os
 
+matplotlib.use('Agg')
+
 #--------------------------------------------------------------------------------------------------------------
 
 # Insert the paths to the repositories you want to analyse:
 
-f = open('github_top800.csv')
+f = open('github_top800.csv') # Insert CSV file here!
 reader = csv.reader(f)
 repo_paths=[]
 for r in reader:
     repo_paths.append(r[0])
-
-# repo_paths = [
-#     'http://github.com/pythological/unification/',
-#     'https://github.com/dontcare/httpparser',
-#     'https://github.com/0xproject/0x-monorepo',
-#     'https://github.com/cab202/quty',
-#     'https://github.com/jupyter/jupyter',
-#     'https://github.com/Kanaries/Rath',
-#     'https://github.com/jupyterhub/jupyterhub',
-#     'https://github.com/trimstray/the-book-of-secret-knowledge'
 
 print(repo_paths[0])
 #--------------------------------------------------------------------------------------------------------------
@@ -70,13 +63,10 @@ def extract_commits(repo_path):
                     'Author Timezone': commit.author_timezone,                           
                     'Committor Date': commit.committer_date,
                     'Committor Timezone': commit.committer_timezone,
-                    # 'Branches': commit.branches, # Redundant given in_main_branch is True always
                     'in_main_branch': commit.in_main_branch, # Arguably redundant given in_main_branch is always true
                     'merge': commit.merge, # Arguably redundant given merge is always false
                     'modified_files': [file.filename for file in commit.modified_files],
                     'parents': commit.parents,
-                    # 'project_name': commit.project_name, # This is redundant data
-                    # 'project_path': commit.project_path, # This is redundant data
                     'deletions': commit.deletions,
                     'insertions': commit.insertions,
                     'lines': commit.lines,
@@ -352,4 +342,5 @@ def perform_analysis(df, github_name, analysis_csv_path):
         print(f"Analysis data exported to CSV successfully in {analysis_csv_path}") 
 
 # # Run the script
-main()
+if __name__ == '__main__':
+    main()
