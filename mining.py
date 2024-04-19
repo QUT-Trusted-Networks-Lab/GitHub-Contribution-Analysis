@@ -19,9 +19,9 @@ f = open('Set_90000_100000.csv') # Insert CSV file here!
 reader = csv.reader(f)
 repo_paths=[]
 for r in reader:
-    repo_paths.append(r[0])
+    repo_paths.append(r[2])
 
-print(repo_paths[0])
+print(repo_paths[2])
 #--------------------------------------------------------------------------------------------------------------
 
 # Extract the name of the repository from the URL and create an appropriately named folder
