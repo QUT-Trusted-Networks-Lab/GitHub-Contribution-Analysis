@@ -15,7 +15,7 @@ matplotlib.use('Agg')
 
 # Insert the paths to the repositories you want to analyse:
 
-f = open('github_top800.csv') # Insert CSV file here!
+f = open('Set_90000_100000.csv') # Insert CSV file here!
 reader = csv.reader(f)
 repo_paths=[]
 for r in reader:
